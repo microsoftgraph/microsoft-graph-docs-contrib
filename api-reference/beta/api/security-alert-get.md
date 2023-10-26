@@ -15,6 +15,8 @@ Namespace: microsoft.graph.security
 
 Get the properties and relationships of an [alert](../resources/security-alert.md) in an organization based on the specified alert **id** property.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -42,7 +44,7 @@ GET /security/alerts_v2/{alertId}
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

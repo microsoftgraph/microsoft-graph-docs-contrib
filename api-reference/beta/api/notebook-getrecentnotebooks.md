@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get a list of [recentNotebook](../resources/recentnotebook.md) instances that have been accessed by the signed-in user.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -28,8 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=includePersonalNotebooks-value)
-GET /users/{id | userPrincipalName}/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=includePersonalNotebooks-value)
+GET /me/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks={includePersonalNotebooks})
+GET /users/{id | userPrincipalName}/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks={includePersonalNotebooks})
 ```
 
 The `{id | userPrincipalName}` for the user must match the user encoded in the authorization token used to make the request.
@@ -81,6 +83,10 @@ GET https://graph.microsoft.com/beta/me/onenote/notebooks/getRecentNotebooks(inc
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/recent-notebooks-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/recent-notebooks-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

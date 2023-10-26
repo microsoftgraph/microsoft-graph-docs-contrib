@@ -17,6 +17,8 @@ Create a new [externalItem](../resources/externalconnectors-externalitem.md).
 
 This API can be used to create a custom item. The containing [externalConnection](../resources/externalconnectors-externalconnection.md) must have a [schema](../resources/externalconnectors-schema.md) registered of the corresponding type.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -91,7 +93,7 @@ If successful, this method returns `200 OK` response code.
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -165,7 +167,7 @@ Content-type: application/json
 #### Response
 <!-- markdownlint-enable MD024 -->
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

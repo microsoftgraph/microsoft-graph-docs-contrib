@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Update the properties of a [browserSite](../resources/browsersite.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -118,7 +120,7 @@ Content-length: 387
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

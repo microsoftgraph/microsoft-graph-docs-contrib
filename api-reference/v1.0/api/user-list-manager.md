@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Returns the user or organizational contact assigned as the user's manager. Optionally, you can expand the manager's chain up to the root node.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -62,7 +64,7 @@ This method supports the `$select` and `$expand` [OData query parameters](/graph
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -121,7 +123,7 @@ GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/manager
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 >**Note**: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -194,7 +196,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-The following is an example of the response. Transitive managers are displayed hierarchically.
+The following example shows the response. Transitive managers are displayed hierarchically.
 
 >**Note**: The response object shown here might be shortened for readability.
 <!-- {

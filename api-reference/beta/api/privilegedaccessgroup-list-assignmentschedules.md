@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Get a list of the [privilegedAccessGroupAssignmentSchedule](../resources/privilegedaccessgroupassignmentschedule.md) objects and their properties.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -32,11 +34,13 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/privilegedAccess/group/assignmentSchedules?$filter=groupId eq 'groupId'
-GET /identityGovernance/privilegedAccess/group/assignmentSchedules?$filter=principalId eq 'principalId'
+GET /identityGovernance/privilegedAccess/group/assignmentSchedules?$filter=groupId eq '{groupId}'
+GET /identityGovernance/privilegedAccess/group/assignmentSchedules?$filter=principalId eq '{principalId}'
 ```
 
-## Optional query parameters
+## Query parameters
+This method requires the `$filter` (`eq`) query parameter to scope the request to a **principalId** or a **groupId**.
+
 This method supports the `$select`, `$filter`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
@@ -45,7 +49,7 @@ This method supports the `$select`, `$filter`, and `$expand` OData query paramet
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -62,7 +66,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/assignmentSchedules?filter=principalId eq '3cce9d87-3986-4f19-8335-7ed075408ca2'
+GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/assignmentSchedules?$filter=groupId eq '2b5ed229-4072-478d-9504-a047ebd4b07d' and principalId eq '3cce9d87-3986-4f19-8335-7ed075408ca2'
 ```
 
 # [C#](#tab/csharp)
@@ -100,7 +104,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/a
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -113,10 +117,10 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/privilegedAccess/group/assignmentSchedules",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.privilegedAccessGroupAssignmentSchedule",
-      "id": "8ba569e8-7024-f5f8-91ec-9b75d92897f1",
+      "id": "2b5ed229-4072-478d-9504-a047ebd4b07d_member_dce168aa-2909-4f10-8cc9-c98e82d8b507",
       "scheduleInfo": {
         "startDateTime": "2022-04-11T11:50:06.343Z",
         "recurrence": null,
@@ -128,7 +132,7 @@ Content-Type: application/json
       },
       "createdDateTime": "2023-01-11T11:50:06.343Z",
       "modifiedDateTime": null,
-      "createdUsing": "String",
+      "createdUsing": null,
       "status": "Provisioned",
       "accessId": "member",
       "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2",

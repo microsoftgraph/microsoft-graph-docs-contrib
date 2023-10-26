@@ -12,6 +12,8 @@ Namespace: microsoft.graph.termStore
 
 Create a new [term](../resources/termstore-term.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -42,7 +44,7 @@ POST /sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/children
 ## Request body
 In the request body, supply a JSON representation of the [term](../resources/termstore-term.md) object.
 
-The following table shows the properties that are required when you create the [term](../resources/termstore-term.md) object.
+The following table lists the properties that are required when you create the [term](../resources/termstore-term.md) object.
 
 |Property|Type|Description|
 |:---|:---|:---|

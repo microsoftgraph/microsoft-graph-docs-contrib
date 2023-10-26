@@ -22,6 +22,8 @@ The report includes:
 - Dial-out calls: Total number of dial-out calls over the selected period
 - Time of use: Total dial-out time (in seconds) over the selected period
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -62,7 +64,7 @@ In the request URL, provide the following query parameters with values.
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -123,7 +125,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/getPstnOnlineMee
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

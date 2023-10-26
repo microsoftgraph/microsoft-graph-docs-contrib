@@ -23,6 +23,8 @@ The following policy validations are performed for the display name and mail nic
 
 This API only returns the first validation failure that is encountered. If the properties fail multiple validations, only the first validation failure is returned. However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy. To learn more about configuring naming policies, see [Configure naming policy](/azure/active-directory/users-groups-roles/groups-naming-policy#configure-naming-policy-in-powershell).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -57,7 +59,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful and there are no validation errors, the method returns `204 No Content` response code. It does not return anything in the response body.
+If successful and there are no validation errors, the method returns `204 No Content` response code. It doesn't return anything in the response body.
 
 If the request is invalid, the method returns `400 Bad Request` response code. An error message with details about the invalid request is returned in the response body.
 

@@ -16,6 +16,8 @@ Restore a  [deletedChat](../resources/deletedchat.md) to an active [chat](../res
 
 >**Note:** This operation is not supported for non-admin users.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -41,7 +43,7 @@ POST /teamwork/deletedChats/{deletedChatId}/undoDelete
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -97,7 +99,7 @@ POST https://graph.microsoft.com/beta/teamwork/deletedChats/19:64dedcac16b74a209
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

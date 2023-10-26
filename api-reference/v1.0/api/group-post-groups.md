@@ -22,6 +22,8 @@ To get properties that are _not_ returned by default, do a [GET operation](group
 
 > **Note**: Although Microsoft Teams is built on Microsoft 365 groups, you can't currently create a team via this API. You can use the other group APIs to manage a team that has been created in the Microsoft Teams UI.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -57,14 +59,14 @@ POST /groups
 
 In the request body, supply a JSON representation of the [group](../resources/group.md) object.
 
-The following table shows the properties that are required when you create the [group](../resources/group.md). Specify other writable properties as necessary for your group.
+The following table lists the properties that are required when you create the [group](../resources/group.md). Specify other writable properties as necessary for your group.
 
 | Property        | Type    | Description                                                                                                                                                                                                                                                                                                                                |
 | :-------------- | :------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | displayName     | String  | The name to display in the address book for the group. Maximum length: 256 characters. Required.                                                                                                                                                                                                                                           |
 | mailEnabled     | Boolean | Set to `true` for mail-enabled groups. Required.                                                                                                                                                                                                                                                                                           |
 | mailNickname    | String  | The mail alias for the group, unique for Microsoft 365 groups in the organization. Maximum length is 64 characters. This property can contain only characters in the [ASCII character set 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) except the following: ` @ () \ [] " ; : <> , SPACE`. Required. |
-| securityEnabled | Boolean | Set to `true` for security-enabled groups, including Microsoft 365 groups. Required. **Note:** Groups created using the Microsoft Azure portal always have **securityEnabled** initially set to `true`.                                                                                                                                    |
+| securityEnabled | Boolean | Set to `true` for security-enabled groups, including Microsoft 365 groups. Required. **Note:** Groups created using the Microsoft Entra admin center or the Azure portal always have **securityEnabled** initially set to `true`.                                                                                                                                    |
 
 > [!IMPORTANT]
 >
@@ -154,7 +156,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response. The value of the **preferredDataLocation** property is inherited from the group creator's preferred data location.
+The following example shows the response. The value of the **preferredDataLocation** property is inherited from the group creator's preferred data location.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -171,30 +173,30 @@ Content-type: application/json
 
 {
     "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
-	  "deletedDateTime": null,
-	  "classification": null,
-	  "createdDateTime": "2018-12-22T00:51:37Z",
-	  "description": "Self help community for library",
-	  "displayName": "Library Assist",
-	  "groupTypes": [
-	      "Unified"
-	  ],
-	  "mail": "library7423@contoso.com",
-	  "mailEnabled": true,
-	  "mailNickname": "library",
-	  "onPremisesLastSyncDateTime": null,
-	  "onPremisesSecurityIdentifier": null,
-	  "onPremisesSyncEnabled": null,
-	  "preferredDataLocation": "CAN",
-	  "proxyAddresses": [
-	      "SMTP:library7423@contoso.com"
-	  ],
-	  "renewedDateTime": "2018-12-22T00:51:37Z",
-	  "resourceBehaviorOptions": [],
-	  "resourceProvisioningOptions": [],
-	  "securityEnabled": false,
-	  "visibility": "Public",
-	  "onPremisesProvisioningErrors": []
+      "deletedDateTime": null,
+      "classification": null,
+      "createdDateTime": "2018-12-22T00:51:37Z",
+      "description": "Self help community for library",
+      "displayName": "Library Assist",
+      "groupTypes": [
+          "Unified"
+      ],
+      "mail": "library7423@contoso.com",
+      "mailEnabled": true,
+      "mailNickname": "library",
+      "onPremisesLastSyncDateTime": null,
+      "onPremisesSecurityIdentifier": null,
+      "onPremisesSyncEnabled": null,
+      "preferredDataLocation": "CAN",
+      "proxyAddresses": [
+          "SMTP:library7423@contoso.com"
+      ],
+      "renewedDateTime": "2018-12-22T00:51:37Z",
+      "resourceBehaviorOptions": [],
+      "resourceProvisioningOptions": [],
+      "securityEnabled": false,
+      "visibility": "Public",
+      "onPremisesProvisioningErrors": []
 }
 ```
 
@@ -321,11 +323,13 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Create a Microsoft 365 group that can be assigned to an Azure AD role
+<a name='example-3-create-a-microsoft-365-group-that-can-be-assigned-to-an-azure-ad-role'></a>
+
+### Example 3: Create a Microsoft 365 group that can be assigned to a Microsoft Entra role
 
 #### Request
 
-The following is an example of the request. The calling user must be assigned the _RoleManagement.ReadWrite.Directory_ permission to set the **isAssignableToRole** property or update the membership of such groups.
+The following example shows a request. The calling user must be assigned the _RoleManagement.ReadWrite.Directory_ permission to set the **isAssignableToRole** property or update the membership of such groups.
 
 A group with **isAssignableToRole** property set to `true` cannot be of dynamic membership type, its **securityEnabled** must be set to `true`, and **visibility** can only be `Private`.
 
@@ -394,11 +398,11 @@ Content-Type: application/json
 
 ---
 
-> **Note:** A group with **isAssignableToRole** property set to `true` cannot be of dynamic membership type and cannot have an owner. For more information, see [Using a group to manage Azure AD role assignments](https://go.microsoft.com/fwlink/?linkid=2103037).
+> **Note:** A group with **isAssignableToRole** property set to `true` cannot be of dynamic membership type and cannot have an owner. For more information, see [Using a group to manage Microsoft Entra role assignments](https://go.microsoft.com/fwlink/?linkid=2103037).
 
 #### Response
 
-The following is an example of the response. It includes only default properties. The value of the **preferredDataLocation** property is inherited from the group creator's preferred data location.
+The following example shows the response. It includes only default properties. The value of the **preferredDataLocation** property is inherited from the group creator's preferred data location.
 
 <!-- {
   "blockType": "response",

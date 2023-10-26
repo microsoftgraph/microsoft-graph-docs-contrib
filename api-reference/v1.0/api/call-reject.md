@@ -17,6 +17,8 @@ The bot is expected to answer or reject the call before the call times out. The 
 
 This API does not end existing calls that have already been answered. Use [delete call](../api/call-delete.md) to end a call.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -47,7 +49,7 @@ In the request body, provide a JSON object with the following parameters.
 |callbackUri|String|This allows bots to provide a specific callback URI for the current call to receive later notifications. If this property has not been set, the bot's global callback URI will be used instead. This must be `https`.|
 
 ## Response
-If successful, this method returns a `202 Accepted` response code. It does not return anything in the response body.
+If successful, this method returns a `202 Accepted` response code. It doesn't return anything in the response body.
 
 ## Examples
 The following examples show how to call this API.

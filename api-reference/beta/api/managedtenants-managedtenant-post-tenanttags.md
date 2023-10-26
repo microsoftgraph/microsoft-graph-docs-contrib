@@ -14,6 +14,8 @@ Namespace: microsoft.graph.managedTenants
 
 Create a new [tenantTag](../resources/managedtenants-tenanttag.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -42,7 +44,7 @@ POST /tenantRelationships/managedTenants/tenantTags
 ## Request body
 In the request body, supply a JSON representation of the [tenantTag](../resources/managedtenants-tenanttag.md) object.
 
-The following table shows the properties that are required when you create the [tenantTag](../resources/managedtenants-tenanttag.md).
+The following table lists the properties that are required when you create the [tenantTag](../resources/managedtenants-tenanttag.md).
 
 |Property|Type|Description|
 |:---|:---|:---|

@@ -24,6 +24,8 @@ error message:
 This action differs from [Delete](event-delete.md) in that **Cancel** is available to only the organizer, and lets
 the organizer send a custom message to the attendees about the cancellation.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -65,7 +67,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
+If successful, this method returns `202 Accepted` response code. It doesn't return anything in the response body.
 
 ## Example
 Here is an example of how to call this API.

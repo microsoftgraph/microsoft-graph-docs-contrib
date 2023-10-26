@@ -11,9 +11,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Details user and application sign-in activity for a tenant (directory). You must have an Azure AD Premium P1 or P2 license to download sign-in logs using the Microsoft Graph API. 
+Details user and application sign-in activity for a tenant (directory). You must have a Microsoft Entra ID P1 or P2 license to download sign-in logs using the Microsoft Graph API. 
 
-The [Azure AD data retention policies](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) govern the availability of sign-in logs.
+The [Microsoft Entra data retention policies](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) govern the availability of sign-in logs.
 
 ## Methods
 
@@ -25,8 +25,8 @@ The [Azure AD data retention policies](/azure/active-directory/reports-monitorin
 ## Properties
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
-|appDisplayName|String|App name displayed in the Azure portal. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
-|appId|String|Unique GUID representing the app ID in the Azure Active Directory. <br/><br/> Supports `$filter` (`eq`).|
+|appDisplayName|String|App name displayed in the Microsoft Entra admin center. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
+|appId|String|Unique GUID representing the app ID in the Microsoft Entra ID. <br/><br/> Supports `$filter` (`eq`).|
 |appliedConditionalAccessPolicies|[appliedConditionalAccessPolicy](appliedconditionalaccesspolicy.md) collection|Provides a list of conditional access policies that are triggered by the corresponding sign-in activity.|
 |clientAppUsed|String|Identifies the client used for the sign-in activity. Modern authentication clients include `Browser`, `modern clients`. Legacy authentication clients include `Exchange ActiveSync`, `IMAP`, `MAPI`, `SMTP`, `POP`, and `other clients`. <br/><br/> Supports `$filter` (`eq`).|
 |conditionalAccessStatus|conditionalAccessStatus| Reports status of an activated conditional access policy. Possible values are: `success`, `failure`, `notApplied`, and `unknownFutureValue`. <br/><br/> Supports `$filter` (`eq`).|
@@ -39,11 +39,11 @@ The [Azure AD data retention policies](/azure/active-directory/reports-monitorin
 |location|[signInLocation](signinlocation.md)|Provides the city, state, and country code where the sign-in originated. <br/><br/> Supports `$filter` (`eq`, `startsWith`) on **city**, **state**, and **countryOrRegion** properties.|
 |resourceDisplayName|String|Name of the resource the user signed into. <br/><br/> Supports `$filter` (`eq`).|
 |resourceId|String|ID of the resource that the user signed into. <br/><br/> Supports `$filter` (`eq`).|
-|riskDetail|riskDetail|Provides the 'reason' behind a specific state of a risky user, sign-in or a risk event. The possible values are: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. The value `none` means that no action has been performed on the user or sign-in so far.  Supports `$filter` (`eq`).<br>**Note:** Details for this property require an Azure AD Premium P2 license. Other licenses return the value `hidden`.|
+|riskDetail|riskDetail|Provides the 'reason' behind a specific state of a risky user, sign-in or a risk event. The possible values are: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. The value `none` means that no action has been performed on the user or sign-in so far.  Supports `$filter` (`eq`).<br>**Note:** Details for this property require a Microsoft Entra ID P2 license. Other licenses return the value `hidden`.|
 |riskEventTypes|riskEventType collection|Risk event types associated with the sign-in. The possible values are: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`,  `generic`, and `unknownFutureValue`. <br/><br/> Supports `$filter` (`eq`).|
 |riskEventTypes_v2|String collection|The list of risk event types associated with the sign-in. Possible values: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`,  `generic`, or `unknownFutureValue`. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
-|riskLevelAggregated|riskLevel|Aggregated risk level. The possible values are: `none`, `low`, `medium`, `high`, `hidden`, and `unknownFutureValue`. The value `hidden` means the user or sign-in wasn't enabled for Azure AD Identity Protection. <br/><br/> Supports `$filter` (`eq`). <br> **Note:** Details for this property are only available for Azure AD Premium P2 customers. All other customers are returned `hidden`.|
-|riskLevelDuringSignIn|riskLevel|Risk level during sign-in. The possible values are: `none`, `low`, `medium`, `high`, `hidden`, and `unknownFutureValue`. The value `hidden` means the user or sign-in wasn't enabled for Azure AD Identity Protection. <br/><br/> Supports `$filter` (`eq`).  <br>**Note:** Details for this property are only available for Azure AD Premium P2 customers. All other customers are returned `hidden`.|
+|riskLevelAggregated|riskLevel|Aggregated risk level. The possible values are: `none`, `low`, `medium`, `high`, `hidden`, and `unknownFutureValue`. The value `hidden` means the user or sign-in wasn't enabled for Microsoft Entra ID Protection. <br/><br/> Supports `$filter` (`eq`). <br> **Note:** Details for this property are only available for Microsoft Entra ID P2 customers. All other customers are returned `hidden`.|
+|riskLevelDuringSignIn|riskLevel|Risk level during sign-in. The possible values are: `none`, `low`, `medium`, `high`, `hidden`, and `unknownFutureValue`. The value `hidden` means the user or sign-in wasn't enabled for Microsoft Entra ID Protection. <br/><br/> Supports `$filter` (`eq`).  <br>**Note:** Details for this property are only available for Microsoft Entra ID P2 customers. All other customers are returned `hidden`.|
 |riskState|riskState|Reports status of the risky user, sign-in, or a risk event. The possible values are: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`. <br/><br/> Supports `$filter` (`eq`).|
 |status|[signInStatus](signinstatus.md)|Sign-in status. Includes the error code and description of the error (if there's a sign-in failure). <br/><br/> Supports `$filter` (`eq`) on **errorCode** property.|
 |userDisplayName|String|Display name of the user that initiated the sign-in. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
@@ -105,4 +105,3 @@ Here's a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

@@ -15,6 +15,8 @@ Namespace: microsoft.graph.industryData
 
 Perform validations applicable for the specific instance of the data connector.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,7 +47,7 @@ POST /external/industryData/inboundFlows/{inboundFlowId}/dataConnector/validate
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -105,7 +107,7 @@ POST https://graph.microsoft.com/beta/external/industryData/dataConnectors/8c010
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

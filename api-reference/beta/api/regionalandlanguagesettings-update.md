@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Update some or all of the properties of a [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -29,13 +31,15 @@ One of the following permissions is required to call this API. To learn more, in
 To update all of a user's regional and language settings:
 <!-- { "blockType": "ignored" } -->
 ```http
-PUT /settings/regionalAndLanguageSettings
+PUT /me/settings/regionalAndLanguageSettings
+PUT /users/{user-id | userPrincipalName}/settings/regionalAndLanguageSettings
 ```
 
 To update a subset of the properties of a user's regional and language settings:
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /settings/regionalAndLanguageSettings
+PATCH /me/settings/regionalAndLanguageSettings
+PATCH /users/{user-id | userPrincipalName}/settings/regionalAndLanguageSettings
 ```
 
 ## Request headers
@@ -46,12 +50,12 @@ PATCH /settings/regionalAndLanguageSettings
 
 ## Request body
  **PUT**: In the request body, supply a [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md) object.
- 
+
  **PATCH**: Only supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
- 
+
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 
@@ -59,7 +63,7 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -105,7 +109,7 @@ Content-type: application/json
         "languageOverrides": [
             {
                 "languageTag": "fr",
-                "translationBehavior": "Yes" 
+                "translationBehavior": "Yes"
             }
         ]
      }
@@ -148,7 +152,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "name": "put_regionalAndLanguageSettings"
@@ -161,7 +165,7 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -221,7 +225,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "name": "patch_regionalAndLanguageSettings"

@@ -16,6 +16,8 @@ Retrieve the [serviceUpdateMessage](../resources/serviceupdatemessage.md) resour
 
 This operation retrieves all service update messages that exist for the tenant.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -45,7 +47,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 |Prefer:<br>odata.maxpagesize={x} | Set the maximum page size preference. The maximum page size cannot be greater than 1000. If not specified, the default page size is 100. Optional.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

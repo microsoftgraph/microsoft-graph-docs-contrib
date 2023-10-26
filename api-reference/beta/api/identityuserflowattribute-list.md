@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Retrieve a list of [identityUserFlowAttribute](../resources/identityuserflowattribute.md) objects.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -25,10 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)| Not supported.|
 |Application|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 
-The work or school account needs to belong to one of the following roles:
-
-* Global Administrator
-* External Identity User Flow Attribute Administrator
+[!INCLUDE [rbac-user-flows-attributes-apis](../includes/rbac-for-apis/rbac-user-flows-attributes-apis.md)]
 
 ## HTTP request
 
@@ -46,7 +45,7 @@ GET /identity/userFlowAttributes
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -56,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -106,7 +105,7 @@ GET https://graph.microsoft.com/beta/identity/userFlowAttributes
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 **Note:** The response object shown here might be shortened for readability.
 
@@ -136,8 +135,8 @@ Content-type: application/json
           "displayName": "Hobby",
           "description": "Your hobby",
           "userFlowAttributeType": "custom",
-          "dataType": "string",
-      },
+          "dataType": "string"
+      }
     ]
 }
 ```

@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 List existing jobs for a given application instance (service principal).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -40,7 +42,7 @@ GET /servicePrincipals/{id}/synchronization/jobs/
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

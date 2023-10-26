@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Disable and delete the [meetingRegistration](../resources/meetingregistration.md) of an [onlineMeeting](../resources/onlinemeeting.md) on behalf of the organizer.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -39,7 +41,7 @@ DELETE /me/onlineMeetings/{id}/registration
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

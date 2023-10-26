@@ -19,6 +19,8 @@ This method saves the message in the **Sent Items** folder.
 
 Alternatively, [send a new message](../api/user-sendmail.md) in a single operation.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -49,7 +51,7 @@ Since this method sends an already existing draft message, specifying a request 
 
 ## Response
 
-If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
+If successful, this method returns `202 Accepted` response code. It doesn't return anything in the response body.
 
 ## Examples
 

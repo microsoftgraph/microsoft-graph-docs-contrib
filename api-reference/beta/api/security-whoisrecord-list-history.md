@@ -1,5 +1,5 @@
 ---
-title: "List whoisHistoryRecords"
+title: "List history"
 description: "Get a list of whoisHistoryRecord objects for a whoisRecord, including the properties and relationships of each whoisHistoryRecord object."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# List whoisHistoryRecords for a whoisRecord
+# List history
 
 Namespace: microsoft.graph.security
 
@@ -15,7 +15,9 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Get a list of [whoisHistoryRecord](../resources/security-whoishistoryrecord.md) objects for a [whoisRecord](../resources/security-whoisrecord.md), including the properties and relationships of each [whoisHistoryRecord](../resources/security-whoishistoryrecord.md) object.
+Get the history for a [whoisRecord](../resources/security-whoisrecord.md), as represented by a collection of [whoisHistoryRecord](../resources/security-whoishistoryrecord.md) resources.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -36,7 +38,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /security/threatIntelligence/hosts/{hostId}/whois/history
-GET /security/threatIntelligence/whoisRecord/{id}/history
+GET /security/threatIntelligence/whoisRecords/{id}/history
 ```
 
 ## Optional query parameters
@@ -58,7 +60,7 @@ This method supports the `$count`, `$select`, `$skip`, and `$top` OData query pa
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -94,7 +96,7 @@ GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/contoso.c
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Get the reviewers for an [access review instance](../resources/accessreviewinstance.md), irrespective of whether or not they have received a notification. The reviewers are represented by an [accessReviewReviewer](../resources/accessreviewreviewer.md) object. A list of zero or more objects are returned, including all of their nested properties.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -46,7 +48,7 @@ The default page size for this API is 100 **accessReviewReviewer** objects. To i
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

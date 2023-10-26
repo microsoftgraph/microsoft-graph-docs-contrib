@@ -1,6 +1,6 @@
 ---
 title: "Remove multiTenantOrganizationMember"
-description: "Remove a tenant from a multi-tenant organization."
+description: "Remove a tenant from a multitenant organization."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove a tenant from a multi-tenant organization. A tenant can be removed in the following scenarios:
+Remove a tenant from a multitenant organization. A tenant can be removed in the following scenarios:
 
 * An active member tenant can remove itself.
 * An active owner tenant can remove any other tenant.
@@ -20,6 +20,8 @@ Remove a tenant from a multi-tenant organization. A tenant can be removed in the
 * An active owner tenant can remove itself as long as there is no other active tenant remaining, thereby deleting the entire multi-tenant organization.
 
 To allow for asynchronous processing, you must wait for **up to 2 hours** before removal of a tenant is completed.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -48,7 +50,7 @@ DELETE /tenantRelationships/multiTenantOrganization/tenants/{tenantId}
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

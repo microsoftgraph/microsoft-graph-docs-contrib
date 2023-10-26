@@ -3,7 +3,7 @@ title: "Delete deviceLink"
 description: "Removes the link between the branch and the CPE device, effectively removing the connection and associated configuration between them."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 
@@ -13,6 +13,8 @@ Namespace: microsoft.graph.networkaccess
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Removes the link between the branch and the CPE device, effectively removing the connection and associated configuration between them.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /networkAccess/connectivity/branches/{branchSiteId}/deviceLinks/{deviceLinkId}/$ref
+DELETE /networkAccess/connectivity/branches/{branchSiteId}/deviceLinks/{deviceLinkId}
 ```
 
 ## Request headers
@@ -41,7 +43,7 @@ DELETE /networkAccess/connectivity/branches/{branchSiteId}/deviceLinks/{deviceLi
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -92,7 +94,7 @@ DELETE https://graph.microsoft.com/beta/networkAccess/connectivity/branches/{bra
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

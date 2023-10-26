@@ -19,6 +19,8 @@ For more information about how to handle operations, see [commsOperation](../res
 
 >**Note:** Inviting multiple participants in one request is only supported for group calls.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -1048,7 +1050,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

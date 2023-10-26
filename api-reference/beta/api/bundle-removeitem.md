@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Remove an item from a [bundle][].
 
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -39,7 +41,7 @@ DELETE /drive/bundles/{bundle-id}/children/{item-id}
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -72,7 +74,7 @@ DELETE https://graph.microsoft.com/beta/drive/bundles/{bundle-id}/children/{item
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "response" } -->
 

@@ -15,8 +15,10 @@ Namespace: microsoft.graph
 
 Get the instances (occurrences) of an event for a specified time range. 
 
-If the event is a `seriesMaster` type, this returns the
+If the event is a `seriesMaster` type, this API returns the
 occurrences and exceptions of the event in the specified time range.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -61,7 +63,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 | Prefer: outlook.timezone  | string | Use this to specify the time zone for start and end times in the response. If not specified, those time values are returned in UTC. Optional. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

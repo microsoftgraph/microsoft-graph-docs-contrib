@@ -11,8 +11,10 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Delete a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object. You cannot delete built-in roles. This feature requires an Azure AD Premium P1 or P2 license.
+Delete a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object. You can't delete built-in roles. This feature requires a Microsoft Entra ID P1 or P2 license.
 
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -41,17 +43,17 @@ DELETE /roleManagement/directory/roleDefinitions/{id}
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 
 ### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -100,7 +102,7 @@ DELETE https://graph.microsoft.com/v1.0/roleManagement/directory/roleDefinitions
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -120,4 +122,3 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
-

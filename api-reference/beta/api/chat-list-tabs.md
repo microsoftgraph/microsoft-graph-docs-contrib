@@ -17,6 +17,8 @@ Retrieve the list of [tabs](../resources/teamstab.md) in the specified [chat](..
 
 > **Note**: If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the tabs pinned in the meeting will be listed. 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -46,7 +48,7 @@ This method supports the `$filter`, `$select`, and `$expand` [OData query parame
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a `200 OK` response code and a collection of [tabs](../resources/teamstab.md) objects in the response body.
@@ -55,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Example 1: List all the tabs in the chat along with associated Teams app
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -105,7 +107,7 @@ GET https://graph.microsoft.com/beta/chats/19:d65713bc498c4a428c71ef9353e6ce20@t
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability. 
 
 <!-- {
@@ -186,7 +188,7 @@ Content-type: application/json
 
 ### Example 2: List all the tabs belonging to a specific app in a chat
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -236,7 +238,7 @@ GET https://graph.microsoft.com/beta/chats/19:d65713bc498c4a428c71ef9353e6ce20@t
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability. 
 
 <!-- {

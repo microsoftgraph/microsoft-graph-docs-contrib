@@ -1,5 +1,5 @@
 ---
-title: "managedDevice: reprovisionCloudPc"
+title: "managedDevice: reprovisionCloudPc (deprecated)"
 description: "Reprovision Cloud PC with an Intune managed device ID. "
 author: "RuiHou105"
 ms.localizationpriority: medium
@@ -7,13 +7,18 @@ ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# managedDevice: reprovisionCloudPc
+# managedDevice: reprovisionCloudPc (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+> [!CAUTION]
+> This API is deprecated and will stop returning data on September 30, 2023. Going forward, use the [reprovision](../api/cloudpc-reprovision.md) API.
+
 Reprovision a Cloud PC with an Intune [managed device](../resources/cloudpc.md) ID.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -44,7 +49,7 @@ POST /deviceManagement/managedDevices/{managedDeviceId}/reprovisionCloudPc
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -53,7 +58,6 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-
 
 # [HTTP](#tab/http)
 <!-- {

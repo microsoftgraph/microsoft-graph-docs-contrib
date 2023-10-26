@@ -17,6 +17,8 @@ Get the properties of an [insightsSettings](../resources/insightssettings.md) ob
 
 To learn how to customize privacy for people insights in an organization, see [Customize people insights privacy in Microsoft Graph](/graph/insights-customize-people-insights-privacy).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [permissions](/graph/permissions-reference).
@@ -42,7 +44,7 @@ GET /organization/{organizationId}/settings/peopleInsights
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -52,7 +54,7 @@ If successful, this method returns a `200 OK` response code and an [insightsSett
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -100,7 +102,7 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/peop
 
 ### Response
 
-The following is an example of the response. 
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {

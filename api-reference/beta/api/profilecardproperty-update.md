@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Update the properties of a [profileCardProperty](../resources/profilecardproperty.md) object, identified by its **directoryPropertyName** property.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -63,7 +65,7 @@ If successful, this method returns a `200 OK` response code and an updated [prof
 
 ### Request
 
-The following example adds a localized label `Kostnads Senter` for the locale `no-NB`.
+The following example adds a localized label `Kostnadssenter` for the locale `no-NB`.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -82,7 +84,7 @@ Content-type: application/json; charset=utf-8
       "localizations": [
         {
           "languageTag": "no-NB",
-          "displayName": "Kostnads Senter"
+          "displayName": "Kostnadssenter"
         }
       ]
     }
@@ -126,7 +128,7 @@ Content-type: application/json; charset=utf-8
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -152,7 +154,7 @@ Content-type: application/json; charset=utf-8
         },
         {
           "languageTag": "no-NB",
-          "displayName": "Kostnads Senter"
+          "displayName": "Kostnadssenter"
         }
       ]
     }

@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Update one or more tenant-level [settings](../resources/sharepointsettings.md) for SharePoint and OneDrive.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -148,7 +150,7 @@ Content-length: 1323
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

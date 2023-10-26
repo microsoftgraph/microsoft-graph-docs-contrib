@@ -3,7 +3,7 @@ title: "Get policyRule"
 description: "Retrieve information about a specific forwarding rule."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 
@@ -13,6 +13,8 @@ Namespace: microsoft.graph.networkaccess
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve information about a specific forwarding rule.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET networkAccess/forwardingRule
+GET /networkaccess/forwardingPolicies/{forwardingPolicyId}/policyRules/{ruleId}
 ```
 
 ## Optional query parameters
@@ -44,7 +46,7 @@ This method does not support any OData query parameters.
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -61,7 +63,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/networkaccess/forwardingPolicies/{forwardingPolicyId}/policyRules/{RuleId)
+GET https://graph.microsoft.com/beta/networkaccess/forwardingPolicies/{forwardingPolicyId}/policyRules/{ruleId}
 ```
 
 # [C#](#tab/csharp)
@@ -95,7 +97,7 @@ GET https://graph.microsoft.com/beta/networkaccess/forwardingPolicies/{forwardin
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -108,23 +110,23 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-            "@odata.type": "#microsoft.graph.networkaccess.m365ForwardingRule",
-            "id": "d42ec55a-d7de-4624-835e-0c5d2eb47cb9",
-            "name": "M365 Exchange Fqdn rule 1",
-            "ruleType": "fqdn",
-            "action": "forward",
-            "protocol": "tcp",
-            "ports": [
-                "80",
-                "443"
-            ],
-            "category": "default",
-            "destinations": [
-                {
-                    "@odata.type": "#microsoft.graph.networkaccess.fqdn",
-                    "value": "autodiscover.*.onmicrosoft.com"
-                }
-            ]
+    "@odata.type": "#microsoft.graph.networkaccess.m365ForwardingRule",
+    "id": "d42ec55a-d7de-4624-835e-0c5d2eb47cb9",
+    "name": "M365 Exchange Fqdn rule 1",
+    "ruleType": "fqdn",
+    "action": "forward",
+    "protocol": "tcp",
+    "ports": [
+        "80",
+        "443"
+    ],
+    "category": "default",
+    "destinations": [
+        {
+            "@odata.type": "#microsoft.graph.networkaccess.fqdn",
+            "value": "autodiscover.*.onmicrosoft.com"
         }
+    ]
+}
 ```
 

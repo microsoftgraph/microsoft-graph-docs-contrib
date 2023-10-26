@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Get the final attachment for a subject rights request. The attachment is a zip file that contains all the files that were included by the privacy administrator.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -46,7 +48,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this function will redirect to the Microsoft Azure blob storage link with the SAS token and return a `200` response code.
+If successful, this function will redirect to the Microsoft Azure blob storage link with the SAS token and return a `200 OK` response code.
 
 ## Examples
 
@@ -59,7 +61,7 @@ If successful, this function will redirect to the Microsoft Azure blob storage l
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRightsRequestId}/getFinalAttachment
+GET https://graph.microsoft.com/beta/privacy/subjectRightsRequests/4ef5e3e6-545b-4b5f-a8b4-ff4f9980d7a9/getFinalAttachment
 ```
 
 # [C#](#tab/csharp)
@@ -100,6 +102,6 @@ GET https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRight
 }
 -->
 ``` http
-HTTP/1.1 200 
+HTTP/1.1 200 OK
 ```
 

@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 Read the properties and relationships of a [riskDetection](../resources/riskdetection.md) object.
 
 >[!NOTE]
->You must have an Azure AD Premium P1 or P2 license to use the risk detection API.
+>You must have a Microsoft Entra ID P1 or P2 license to use the risk detection API.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,7 +47,7 @@ This method supports some of the OData query parameters to help customize the re
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -144,5 +146,3 @@ Content-type: application/json
   ]
 }
 ```
-
-

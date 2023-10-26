@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Get the real-time connection status information, such as **signInStatus** or **daysSinceLastUse**, for a Cloud PC.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -38,7 +40,7 @@ In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|cloudPcId|String|The id of the Cloud PC.|
+|cloudPcId|String|The ID of the Cloud PC.|
 
 
 ## Request headers
@@ -47,7 +49,7 @@ In the request URL, provide the following query parameters with values.
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -56,7 +58,7 @@ If successful, this function returns a `200 OK` response code and a Stream in th
 ## Examples
 
 ### Request
-The following is an example of a request.
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -92,6 +94,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/ge
 [!INCLUDE [sample-code](../includes/snippets/php/cloudpcreportsthisgetrealtimeremoteconnectionstatus-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcreportsthisgetrealtimeremoteconnectionstatus-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/cloudpcreportsthisgetrealtimeremoteconnectionstatus-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -99,7 +105,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/ge
 ---
 
 ### Response
-The following is an example of the response
+Here's an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Create a new directory extension definition, represented by an [extensionProperty](../resources/extensionproperty.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -58,7 +60,7 @@ If successful, this method returns a `201 Created` response code and a new [exte
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

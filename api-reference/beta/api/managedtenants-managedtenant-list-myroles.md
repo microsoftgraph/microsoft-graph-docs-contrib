@@ -18,6 +18,8 @@ For information on the types of delegated relationships between a Managed Servic
 - [Delegated administration privileges](/partner-center/dap-faq) (DAP)
 - [Granular delegated admin privileges](/partner-center/gdap-introduction) (GDAP)
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -50,7 +52,7 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -109,7 +111,7 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/myRoles
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

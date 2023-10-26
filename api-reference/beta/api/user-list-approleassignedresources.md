@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Get the service principals to which the user has an app role assignment either directly or through group membership.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -47,7 +49,7 @@ This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$select`, 
 | ConsistencyLevel | eventual. This header is required when calling this API. For more information about the use of **ConsistencyLevel**, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries). |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -104,7 +106,7 @@ ConsistencyLevel: eventual
 ---
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

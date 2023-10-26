@@ -15,6 +15,8 @@ Namespace: microsoft.graph.ediscovery
 
 Adds a siteSource to a legalHold object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -47,7 +49,7 @@ POST /compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}/siteSources
 
 In the request body, supply a JSON representation of the [siteSource](../resources/ediscovery-sitesource.md) object.
 
-The following table shows the properties that are required when you create the [siteSource](../resources/ediscovery-sitesource.md).
+The following table lists the properties that are required when you create the [siteSource](../resources/ediscovery-sitesource.md).
 
 |Property|Type|Description|
 |:---|:---|:---|

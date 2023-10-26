@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Delete an existing user activity for your app.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -52,7 +54,7 @@ If successful, this method returns the `204 No Content` response code if the act
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -102,7 +104,7 @@ DELETE https://graph.microsoft.com/beta/me/activities/13881113971988980728
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

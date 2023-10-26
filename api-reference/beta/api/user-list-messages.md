@@ -32,6 +32,8 @@ There are two scenarios where an app can get messages in another user's mail fol
 * If the app has application permissions, or,
 * If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a mail folder with that user, or, has given delegated access to that user. See [details and an example](/graph/outlook-share-messages-folders).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -91,7 +93,7 @@ Failing to do this results in the following error:
 | Prefer: outlook.body-content-type | string | The format of the **body** and **uniqueBody** properties to be returned in. Values can be "text" or "html". If the header is not specified, the **body** and **uniqueBody** properties are returned in HTML format. Optional. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -146,7 +148,7 @@ GET https://graph.microsoft.com/beta/me/messages?$select=sender,subject
 ---
 
 #### Response
-The following is an example of the response. To get the next page of messages, apply the URL returned in `@odata.nextLink` to a subsequent GET request.
+The following example shows the response. To get the next page of messages, apply the URL returned in `@odata.nextLink` to a subsequent GET request.
 
 <!-- {
   "blockType": "response",
@@ -226,7 +228,7 @@ GET https://graph.microsoft.com/beta/me/messages?$filter=MentionsPreview/IsMenti
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -310,7 +312,7 @@ Prefer: outlook.body-content-type="text"
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 
 <!--
 Note: The response includes a `Preference-Applied: outlook.body-content-type` header to acknowledge the `Prefer: outlook.body-content-type` request header.

@@ -14,6 +14,8 @@ Namespace: microsoft.graph.security
 
 Delete a [categoryTemplate](../resources/security-categorytemplate.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -30,8 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /security/labels/categories/{categoryTemplateId}/$ref
-DELETE /security/labels/retentionLabels/{retentionLabelId}/descriptors/categoryTemplate/$ref
+DELETE /security/labels/categories/{categoryTemplateId}
+DELETE /security/labels/retentionLabels/{retentionLabelId}/descriptors/categoryTemplate
 ```
 
 ## Request headers
@@ -40,7 +42,7 @@ DELETE /security/labels/retentionLabels/{retentionLabelId}/descriptors/categoryT
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -95,7 +97,7 @@ DELETE https://graph.microsoft.com/beta/security/labels/categories/{categoryTemp
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 >
 <!-- {
   "blockType": "response",

@@ -22,6 +22,9 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | Method | Return Type |Description |
 | ------ | ----------- | ---------- |
 | [Get virtualEventWebinar](../api/virtualeventwebinar-get.md) | [virtualEventWebinar](../resources/virtualeventwebinar.md) | Read the properties and relationships of a [virtualEventWebinar](../resources/virtualeventwebinar.md) object. |
+| [List by user role](../api/virtualeventwebinar-getbyuserrole.md) | [virtualEventWebinar](../resources/virtualeventwebinar.md) collection | Get a **virtualEventWebinar** collection where the signed-in user is either the organizer or a coorganizer. |
+| [List by user ID and role](../api/virtualeventwebinar-getbyuseridandrole.md) | [virtualEventWebinar](../resources/virtualeventwebinar.md) collection | Get a **virtualEventWebinar** collection where the specified user is either the organizer or a coorganizer. |
+
 
 ## Properties
 
@@ -59,7 +62,8 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | Relationship | Type | Description |
 | ------------ | ---- | ----------- |
 | presenters | [virtualEventPresenter](../resources/virtualeventpresenter.md) collection | Presenters' information of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md).|
-| registration | [virtualEventRegistration](../resources/virtualeventregistration.md) | Registration configuration of the webinar. |
+| registrationConfiguration | [virtualEventRegistrationConfiguration](../resources/virtualeventregistrationconfiguration.md) | Registration configuration of the webinar. |
+| registrations | [virtualEventRegistration](../resources/virtualeventregistration.md) collection | Registration records of the webinar. |
 | sessions | [virtualEventSession](../resources/virtualeventsession.md)  collection | Sessions of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
 
 ## JSON representation

@@ -14,6 +14,8 @@ Namespace: microsoft.graph.security
 
 Read the properties and relationships of a [retentionLabel](../resources/security-retentionlabel.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -21,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|RecordsManagement.Read.All, RecordsManagement.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not Supported.|
-|Application|Not supported.|
+|Application|RecordsManagement.Read.All, RecordsManagement.ReadWrite.All|
 
 ## HTTP request
 
@@ -43,7 +45,7 @@ This method supports the expand OData query parameters to help customize the res
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

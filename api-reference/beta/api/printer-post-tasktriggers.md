@@ -17,6 +17,8 @@ Create a new [task trigger](../resources/printtasktrigger.md) on the specified [
 
 >**Note:** The appId used to generate an access token for creating a task trigger should be the same appId that was used to create the corresponding task definition.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -48,7 +50,7 @@ If successful, this method returns a `201 Created` response code and a [printTas
 
 ## Example
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -96,7 +98,7 @@ POST https://graph.microsoft.com/beta/print/printers/ae63f617-4856-4b45-8ea9-69d
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {

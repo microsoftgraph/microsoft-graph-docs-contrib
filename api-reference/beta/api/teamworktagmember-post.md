@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Create a new [teamworkTagMember](../resources/teamworktagmember.md) object in a team.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -42,7 +44,7 @@ POST /teams/{team-Id}/tags/{teamworkTag-Id}/members
 ## Request body
 In the request body, supply a JSON representation of the [teamworkTagMember](../resources/teamworktagmember.md) object.
 
-The following table shows the properties that are required when you create the [teamworkTagMember](../resources/teamworktagmember.md).
+The following table lists the properties that are required when you create the [teamworkTagMember](../resources/teamworktagmember.md).
 
 |Property|Type|Description|
 |:---|:---|:---|

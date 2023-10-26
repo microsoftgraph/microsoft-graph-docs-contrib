@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get the order of identityUserFlowAttributeAssignments being collected within a user flow.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -42,7 +44,7 @@ GET /identity/b2xUserFlows/{b2xIdentityUserFlowId}/userAttributeAssignments/getO
 
 ## Function parameters
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

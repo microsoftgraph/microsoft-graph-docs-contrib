@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Update the properties of an [alert](../resources/security-alert.md) object in an organization based on the specified alert **id** property.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -114,7 +116,7 @@ Content-length: 2450
 ---
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

@@ -17,6 +17,8 @@ Retrieve the properties and relationships of a [profile](../resources/profile.md
 
 The **profile** resource exposes various rich properties that are descriptive of the user as [relationships](../resources/profile.md#relationships), for example, anniversaries and education activities. To get one of these navigation properties, use the corresponding GET method on that property. See the [methods](../resources/profile.md) exposed by **profile**.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -49,7 +51,7 @@ This method supports the `$select` query parameter. Specify a list of properties
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -109,7 +111,7 @@ GET https://graph.microsoft.com/beta/me/profile
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -351,7 +353,7 @@ GET https://graph.microsoft.com/beta/me/profile?$expand=names($select=first,last
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

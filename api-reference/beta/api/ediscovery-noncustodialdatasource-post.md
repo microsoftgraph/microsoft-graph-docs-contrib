@@ -15,6 +15,8 @@ Namespace: microsoft.graph.ediscovery
 
 Create a new [noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -47,7 +49,7 @@ POST /compliance/ediscovery/cases/{caseId}/noncustodialDataSources
 
 In the request body, supply a JSON representation of the [noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md) object.
 
-The following table shows the properties that are required when you create the [noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md).
+The following table lists the properties that are required when you create the [noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md).
 
 |Property|Type|Description|
 |:---|:---|:---|

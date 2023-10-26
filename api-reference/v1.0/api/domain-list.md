@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Retrieve a list of domain objects.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -83,7 +85,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 | Accept         | application/json; |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

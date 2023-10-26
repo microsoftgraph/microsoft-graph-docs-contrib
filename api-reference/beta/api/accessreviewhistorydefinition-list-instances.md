@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Retrieve the [instances](../resources/accessreviewhistoryinstance.md) of an [access review history definition](../resources/accessreviewhistorydefinition.md) created in the last 30 days.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,7 +48,7 @@ GET /identityGovernance/accessReviews/historyDefinitions/{accessReviewHistoryDef
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

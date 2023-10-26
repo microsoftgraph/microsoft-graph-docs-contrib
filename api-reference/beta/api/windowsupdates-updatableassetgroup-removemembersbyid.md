@@ -16,6 +16,8 @@ Remove members of the same type from an [updatableAssetGroup](../resources/windo
 
 You can also use the method [removeMembers](windowsupdates-updatableassetgroup-removemembers.md) to remove members.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -53,7 +55,7 @@ The following table shows the parameters that can be used with this action.
 
 ## Response
 
-If successful, this action returns a `202 Accepted` response code. It does not return anything in the response body.
+If successful, this action returns a `202 Accepted` response code. It doesn't return anything in the response body.
 
 ## Examples
 

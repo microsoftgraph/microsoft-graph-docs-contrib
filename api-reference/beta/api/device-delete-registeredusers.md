@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Remove a user as a registered user of the device.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -27,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
-The calling user must also be in one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference): *Global Administrator*, *Intune Administrator*, or *Windows 365 Administrator*.
+The calling user must also be in one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference): *Global Administrator*, *Intune Administrator*, or *Windows 365 Administrator*.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -35,7 +37,7 @@ The calling user must also be in one of the following [Azure AD roles](/azure/ac
 DELETE /devices/{id}/registeredUsers/{id}/$ref
 ```
 > [!CAUTION]
-> If `/$ref` is not appended to the request and the calling app has permissions to manage the user who is a registered user of the device, the user will also be deleted from Azure Active Directory (Azure AD); otherwise, a `403 Forbidden` error is returned. You can restore deleted users through the [Restore deleted items API](directory-deleteditems-restore.md).
+> If `/$ref` is not appended to the request and the calling app has permissions to manage the user who is a registered user of the device, the user will also be deleted from Microsoft Entra ID; otherwise, a `403 Forbidden` error is returned. You can restore deleted users through the [Restore deleted items API](directory-deleteditems-restore.md).
 
 ## Request headers
 | Name       | Description|
@@ -43,7 +45,7 @@ DELETE /devices/{id}/registeredUsers/{id}/$ref
 | Authorization  | Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -119,5 +121,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-

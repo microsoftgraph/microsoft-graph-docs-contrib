@@ -1,5 +1,5 @@
 ---
-title: "List notes"
+title: "List authoredNotes"
 description: "Get the authoredNote resources from the notes navigation property."
 author: "skadam-msft"
 ms.localizationpriority: medium
@@ -7,12 +7,14 @@ ms.prod: "compliance"
 doc_type: apiPageType
 ---
 
-# List notes
+# List authoredNotes
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the list of authored notes associated with a subject rights request. 
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,7 +47,7 @@ This method does not support the [OData query parameters](/graph/query-parameter
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a **participant** object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 | Permission type | Permissions (from least to most privileged) |
@@ -40,7 +42,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a `200 OK` response code and a [participant](../resources/participant.md) object in the response body.
@@ -140,7 +142,8 @@ Content-Type: application/json
    "id":"7e1b4346-85a6-4bdd-abe3-d11c5d420efe",
    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#communications/calls('7531d31f-d10d-44de-802f-c569dbca451c')/participants/$entity",
    "metadata":null,
-   "recordingInfo":null
+   "recordingInfo":null,
+   "preferredDisplayName":null
 }
 ```
 

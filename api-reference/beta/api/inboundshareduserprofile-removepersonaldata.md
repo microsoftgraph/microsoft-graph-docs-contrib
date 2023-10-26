@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Create a request to remove the personal data for an [inboundSharedUserProfile](../resources/inboundshareduserprofile.md). 
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,7 +48,7 @@ POST /directory/inboundSharedUserProfiles/{userId}/removePersonalData
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

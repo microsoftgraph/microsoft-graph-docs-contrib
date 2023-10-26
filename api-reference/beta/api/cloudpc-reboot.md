@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Reboot a specific Cloud PC.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -53,7 +55,7 @@ POST /deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/reboot
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -61,7 +63,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1: Reboot the cloudPC for the adminstrator
+### Example 1: Reboot the cloudPC for the administrator
 
 #### Request
 

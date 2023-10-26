@@ -15,6 +15,8 @@ Namespace: microsoft.graph.industryData
 
 Update the properties of an [inboundFlow](../resources/industrydata-inboundflow.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -119,7 +121,7 @@ Content-length: 246
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

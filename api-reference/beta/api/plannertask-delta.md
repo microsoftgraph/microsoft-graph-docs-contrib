@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get newly created, updated, or deleted [tasks](../resources/plannertask.md) in either a Planner [plan](../resources/plannerplan.md) or assigned to the signed-in user without having to perform a full read of the entire resource collection. For details, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -55,7 +57,7 @@ Tracking changes incurs a round of one or more **delta** function calls. If you 
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -69,7 +71,7 @@ The following example shows a request for the delta on **plannerTask** objects i
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -118,7 +120,7 @@ GET https://graph.microsoft.com/beta/planner/tasks/delta
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -240,7 +242,7 @@ The following example shows a request for the delta on **plannerTask** objects a
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -289,7 +291,7 @@ GET https://graph.microsoft.com/beta/me/planner/tasks/delta
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

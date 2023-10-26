@@ -14,6 +14,8 @@ Namespace: microsoft.graph.windowsUpdates
 
 Delete a [deploymentAudience](../resources/windowsupdates-deploymentaudience.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -39,7 +41,7 @@ DELETE /admin/windows/updates/deploymentAudiences/{deploymentAudienceId}
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -90,7 +92,7 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudience
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -20,6 +20,8 @@ The following validations are performed for the display name and mail nickname p
 
 This API returns with the first failure encountered. If one or more properties fail multiple validations, only the property with the first validation failure is returned. However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -54,7 +56,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful and there are no validation errors, the method returns `204 No Content` response code. It does not return anything in the response body.
+If successful and there are no validation errors, the method returns `204 No Content` response code. It doesn't return anything in the response body.
 
 If the request is invalid, the method returns `400 Bad Request` response code. An error message with details about the invalid request is returned in the response body.
 

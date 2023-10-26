@@ -16,6 +16,8 @@ Stop an [access review stage](../resources/accessReviewStage.md) that is `inProg
 
 The [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects will always reflect the last decisions recorded across all stages at that given time, regardless of the status of the stages.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -43,7 +45,7 @@ POST /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefiniti
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

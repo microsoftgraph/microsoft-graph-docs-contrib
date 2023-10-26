@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get a list of capabilities for the [printer](../resources/printer.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -44,7 +46,7 @@ If successful, this method returns a `200 OK` response code and a [printerCapabi
 ## Example
 The following example shows how to call this API.
 ##### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -90,7 +92,7 @@ GET https://graph.microsoft.com/beta/print/printers/{id}/getCapabilities
 ---
 
 ##### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

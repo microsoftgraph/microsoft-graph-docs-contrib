@@ -65,7 +65,7 @@ includes the encoded, desired parameters.
 | Prefer | string  | odata.maxpagesize={x}. Optional. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

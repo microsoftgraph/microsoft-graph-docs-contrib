@@ -18,6 +18,8 @@ List the [updatableAsset](../resources/windowsupdates-updatableasset.md) resourc
 > [!NOTE]
 > This API has a [known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=13634) related to deployments created via Intune.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -45,7 +47,7 @@ GET /admin//windows/updates/deploymentAudiences/{deploymentAudienceId}/members
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -124,3 +126,10 @@ Content-Type: application/json
 }
 ```
 
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api/windowsupdates-deploymentaudience-list-members.md:
+      Failed to parse enumeration values for type microsoft.graph.audience. Table requires a column header named one of the following: Member, Name, Value"
+  ]
+} -->

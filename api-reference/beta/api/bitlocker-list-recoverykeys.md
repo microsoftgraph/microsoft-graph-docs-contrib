@@ -16,6 +16,8 @@ Get a list of the [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) o
 
 This operation does not return the **key** property. For information about how to read the **key** property, see [Get bitlockerRecoveryKey](bitlockerrecoverykey-get.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -70,7 +72,7 @@ The response might also contain an `odata.nextLink`, which you can use to page t
 |ocp-client-version|The version of the client application performing the API call. This header is used for debugging purposes. Optional.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -81,7 +83,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Example 1: Retrieve a list of BitLocker keys in the tenant
 
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -98,7 +100,7 @@ ocp-client-version: "1.2"
 
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -133,7 +135,7 @@ Content-Type: application/json
 ### Example 2: Retrieve a list of BitLocker keys filtered by **deviceId**
 
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -151,7 +153,7 @@ ocp-client-version: "1.2"
 
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

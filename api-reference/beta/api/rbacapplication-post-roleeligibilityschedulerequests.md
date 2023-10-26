@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Create a new [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) object. This operation allows both admins and eligible users to add, revoke, or extend eligible assignments.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -132,7 +134,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -253,7 +255,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response. The request returns a response object that shows the status of previously eligible assignment changes as `Revoked`. The principal will no longer see their previously eligible role.
+The following example shows the response. The request returns a response object that shows the status of previously eligible assignment changes as `Revoked`. The principal will no longer see their previously eligible role.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

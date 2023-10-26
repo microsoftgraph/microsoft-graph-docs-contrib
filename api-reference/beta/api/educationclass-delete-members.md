@@ -17,6 +17,8 @@ Remove an [educationUser](../resources/educationuser.md) from an [educationClass
 
 >**Note:** Teachers _and_ students are in the class **members** collection. Before calling this API, ensure that the **educationUser** you are removing is not a teacher.  Get the list of teachers by calling [educationclass_list_teachers](educationclass-list-teachers.md) and verifying the user ID of the user to be removed is not in the returned teacher list.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -37,7 +39,7 @@ DELETE /education/classes/{id}/members/{userId}/$ref
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 
 ## Response
@@ -45,7 +47,7 @@ If successful, this method returns a `204 No Content` response code and an empty
 
 ## Example
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -68,7 +70,7 @@ DELETE https://graph.microsoft.com/beta/education/classes/11003/members/14008
 ---
 
 ### Response
-The following is an example of the response. 
+The following example shows the response.
 <!-- {
   "blockType": "response"
 } -->

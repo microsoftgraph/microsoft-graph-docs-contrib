@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Restore a [document set version](../resources/documentsetversion.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -37,7 +39,7 @@ POST /sites/{siteId}/lists/{listId}/items/{itemId}/documentSetVersions/{document
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -98,7 +100,7 @@ POST https://graph.microsoft.com/v1.0/sites/root/lists/Documents/items/2/documen
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

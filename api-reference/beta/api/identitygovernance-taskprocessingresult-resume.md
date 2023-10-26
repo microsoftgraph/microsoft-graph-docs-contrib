@@ -15,6 +15,8 @@ Namespace: microsoft.graph.identityGovernance
 
 Resume a task processing result that's `inProgress`. In the default case an Azure Logic Apps system-assigned managed identity calls this API. For more information, see: [Lifecycle Workflows extensibility approach](/azure/active-directory/governance/lifecycle-workflow-extensibility).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -126,7 +128,7 @@ Content-length: 155
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -26,6 +26,8 @@ You can use the `$expand` query parameter to optionally include session and segm
 >
 > A call record is created after a call or meeting ends and will remain available for **30 days**. Requests for call records older than 30 days will receive a `404 Not Found` response.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -63,7 +65,7 @@ This method supports the following OData query parameters to help customize the 
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -124,7 +126,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/{id}
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -228,7 +230,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/{id}?$expand=ses
 
 #### Response
 
-The following is an example of the response. If the sessions list is truncated, a `sessions@odata.nextLink` value will be provided to retrieve the next page of sessions. The default page size for sessions is 60 entries.
+The following example shows the response. If the sessions list is truncated, a `sessions@odata.nextLink` value will be provided to retrieve the next page of sessions. The default page size for sessions is 60 entries.
 
 > **Note:** The response object shown here might be shortened for readability.
 

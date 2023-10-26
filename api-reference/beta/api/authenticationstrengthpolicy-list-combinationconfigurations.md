@@ -16,6 +16,8 @@ Get the [authenticationCombinationConfiguration](../resources/authenticationcomb
 
 authenticationCombinationConfiguration objects are supported only for custom authentication strengths.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -46,7 +48,7 @@ This method does not support OData query parameters.
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -98,7 +100,7 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationSt
 ---
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

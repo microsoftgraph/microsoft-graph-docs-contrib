@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get a list of the [attributeSet](../resources/attributeset.md) objects and their properties.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -47,7 +49,7 @@ This method supports the `$select`, `$top`, and `$orderby` OData query parameter
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -109,7 +111,7 @@ GET https://graph.microsoft.com/v1.0/directory/attributeSets
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -193,7 +195,7 @@ GET https://graph.microsoft.com/v1.0/directory/attributeSets?$top=10
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -277,7 +279,7 @@ GET https://graph.microsoft.com/v1.0/directory/attributeSets?$orderby=id
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

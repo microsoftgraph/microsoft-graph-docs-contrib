@@ -15,6 +15,8 @@ Namespace: microsoft.graph.ediscovery
 
 Create a new tag for the specified case.  The tags are used in review sets while reviewing content.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -47,7 +49,7 @@ POST /compliance/ediscovery/cases/{caseId}/tags
 
 In the request body, supply a JSON representation of the [tag](../resources/ediscovery-tag.md) object.
 
-The following table shows the properties that are required when you create the [tag](../resources/ediscovery-tag.md).
+The following table lists the properties that are required when you create the [tag](../resources/ediscovery-tag.md).
 
 |Property|Type|Description|
 |:---|:---|:---|

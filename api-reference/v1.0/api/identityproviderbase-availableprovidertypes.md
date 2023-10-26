@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Get all identity providers supported in a directory.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -42,7 +44,7 @@ GET /identity/identityProviders/availableProviderTypes
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -50,10 +52,12 @@ If successful, this function returns a `200 OK` response code and a string colle
 
 ## Example
 
-### Example 1: List all identity providers available in an Azure AD directory
+<a name='example-1-list-all-identity-providers-available-in-an-azure-ad-directory'></a>
+
+### Example 1: List all identity providers available in a Microsoft Entra directory
 
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -102,7 +106,7 @@ GET https://graph.microsoft.com/v1.0/identity/identityProviders/availableProvide
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -131,7 +135,7 @@ Content-Type: application/json
 ### Example 2: List all identity providers available in an Azure AD B2C directory
 
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -180,7 +184,7 @@ GET https://graph.microsoft.com/v1.0/identity/identityProviders/availableProvide
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

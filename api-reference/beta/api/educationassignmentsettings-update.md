@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Update the properties of an [educationAssignmentSettings](../resources/educationassignmentsettings.md) object. Only teachers can update these settings.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -60,7 +62,7 @@ If successful, this method returns a `200 OK` response code and an updated [educ
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -113,7 +115,7 @@ Content-Type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -133,7 +135,7 @@ Content-Type: application/json
 
 ### Example 2: Create grading categories
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -147,7 +149,7 @@ Content-type: application/json
 
 {
   "gradingCategories": [
-        {           
+        {
             "displayName": "Lab",
             "percentageWeight": 10
         },
@@ -198,7 +200,7 @@ Content-type: application/json
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -240,7 +242,7 @@ Content-type: application/json
 ### Example 3: Delta payload to delete, modify and add grading categories.
 
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -314,7 +316,7 @@ Content-type: application/json
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

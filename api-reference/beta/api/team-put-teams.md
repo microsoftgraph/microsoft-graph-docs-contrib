@@ -22,7 +22,9 @@ If the creation of the team call is delayed, you can retry the call up to three 
 If the group was created less than 15 minutes ago, it's possible for a call to create a team to fail with a 404 error code, due to ongoing replication delays.
 The recommended pattern is to retry the Create team call three times, with a 10 second delay between calls.
 
->**Note:** SharePoint provisioning doesn't occur in real time, it's a background process. The completion of the provisioning can't be determined.
+> **Note:** SharePoint provisioning doesn't occur in real time, it's a background process. The completion of the provisioning can't be determined.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -63,7 +65,7 @@ If successful, this method should return a `201 Created` response code and a [te
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -128,7 +130,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

@@ -21,6 +21,8 @@ Use this API to assign an app role to a security group. All direct members of th
 
 Additional licenses might be required to [use a group to manage access to applications](/azure/active-directory/users-groups-roles/groups-saasapps).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -52,7 +54,7 @@ POST /groups/{groupId}/appRoleAssignments
 
 In the request body, supply a JSON representation of an [appRoleAssignment](../resources/approleassignment.md) object.
 
-The following table shows the properties that are required when you create the [appRoleAssignment](../resources/approleassignment.md). Specify other writable properties as necessary for your **appRoleAssignment**.
+The following table lists the properties that are required when you create the [appRoleAssignment](../resources/approleassignment.md). Specify other writable properties as necessary for your **appRoleAssignment**.
 
 | Property | Type | Description |
 |--|--|--|

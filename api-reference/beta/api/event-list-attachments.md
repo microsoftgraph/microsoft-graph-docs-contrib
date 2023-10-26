@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Retrieve a list of [attachment](../resources/attachment.md) objects attached to an event.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -56,7 +58,7 @@ GET https://graph.microsoft.com/beta/me/events/{id}?$expand=attachments
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Retrieve a list of [usageRight](../resources/usageright.md) objects for a given user.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -50,7 +52,7 @@ This API supports the $filter [OData query parameter](/graph/query-parameters). 
 |odata.maxpagesize|Set the max result page size pereference. Optional.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a `200 OK` response code and a collection of [usageRight](../resources/usageright.md) objects in the response body.

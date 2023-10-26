@@ -17,6 +17,8 @@ Create a new [profileCardProperty](../resources/profilecardproperty.md) for an o
 
 For more information about how to add properties to the profile card for an organization, see [Add or delete custom attributes on a profile card using the profile card API](/graph/add-properties-profilecard).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -67,7 +69,7 @@ If successful, this method returns a `201 Created` response code and a new [prof
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -130,7 +132,7 @@ Content-type: application/json; charset=utf-8
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

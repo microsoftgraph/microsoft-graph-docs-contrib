@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
-# Enumerate lists in a site
+# Get lists in a site
 
 Namespace: microsoft.graph
 
@@ -16,6 +16,8 @@ Get the collection of [lists][] for a [site][].
 
 Lists with the [system][] facet are hidden by default.
 To list them, include `system` in your `$select` statement.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -41,7 +43,7 @@ GET /sites/{site-id}/lists
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -97,7 +99,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "isCollection": true, "truncated": true } -->
 

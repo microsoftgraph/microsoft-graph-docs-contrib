@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Create a new [publishedResource](../resources/publishedresource.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /onPremisesPublishingProfiles/{publishingType}/publishedResources
+POST /onPremisesPublishingProfiles/{profile-id}/publishedResources
 ```
 
 ## Request headers
@@ -58,7 +60,7 @@ If successful, this method returns a `201 Created` response code and [publishedR
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -112,7 +114,7 @@ Content-Type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

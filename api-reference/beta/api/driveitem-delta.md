@@ -25,7 +25,7 @@ To check for changes in the future, call `delta` again with the `@odata.deltaLi
 Deleted items are returned with the [`deleted` facet](../resources/deleted.md).
 Items with this property set should be removed from your local state.
 
-**Note:** you should only delete a folder locally if it is empty after syncing all the changes.
+**Note:** you should only delete a folder locally if it's empty after syncing all the changes.
 
 ## Permissions
 
@@ -67,7 +67,7 @@ This method supports the `$select`, `$expand`, and `$top` [OData query parameter
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -77,18 +77,18 @@ In addition to the collection of DriveItems, the response will also include one 
 
 | Name                 | Value  | Description                                                                                                                                      |
 |:---------------------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
-| **@odata.nextLink**  | url    | A URL to retrieve the next available page of changes, if there are additional changes in the current set.                                        |
+| **@odata.nextLink**  | url    | A URL to retrieve the next available page of changes, if there are more changes in the current set.                                        |
 | **@odata.deltaLink** | url    | A URL returned instead of **@odata.nextLink** after all current changes have been returned. Used to read the next set of changes in the future.  |
 
 ## Examples
 
 ### Example 1: Initial request
 
-Here is an example of how to call this API to establish your local state.
+Here's an example of how to call this API to establish your local state.
 
 #### Request
 
-Here is an example of the initial request.
+Here's an example of the initial request.
 
 
 # [HTTP](#tab/http)
@@ -134,7 +134,7 @@ GET https://graph.microsoft.com/beta/me/drive/root/delta
 
 #### Response
 
-Here is an example of the response.
+Here's an example of the response.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true, "scope": "file.read" } -->
 
@@ -169,11 +169,11 @@ Your app should continue to request the URL value of **@odata.nextLink** until a
 
 ### Example 2: Last page in a set
 
-Here is an example of how to call this API to update your local state.
+Here's an example of how to call this API to update your local state.
 
 #### Request
 
-Here is an example request after the initial request.
+Here's an example request after the initial request.
 
 
 # [HTTP](#tab/http)
@@ -208,7 +208,7 @@ GET https://graph.microsoft.com/beta/me/drive/root/delta(token='1230919asd190410
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-item-delta-last-powershell-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -219,7 +219,7 @@ GET https://graph.microsoft.com/beta/me/drive/root/delta(token='1230919asd190410
 
 #### Response
 
-Here is an example of the response.
+Here's an example of the response.
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "Collection(microsoft.graph.driveItem)", "scope": "file.read" } -->
 
@@ -247,16 +247,16 @@ Content-type: application/json
 
 This response indicates that the item named `folder2` was deleted and the item `file.txt` was either added or modified between the initial request and this request to update the local state.
 
-The final page of items will include the **@odata.deltaLink** property, which provides the URL that can be used later to retrieve changes since the current set of items.
+The final page of items includes the **@odata.deltaLink** property, which provides the URL that can be used later to retrieve changes since the current set of items.
 
 There may be cases when the service can't provide a list of changes for a given token (for example, if a client tries to reuse an old token after being disconnected for a long time, or if server state has changed and a new token is required).
-In these cases the service will return an `HTTP 410 Gone` error with an error response containing one of the error codes below, and a `Location` header containing a new nextLink that starts a fresh delta enumeration from scratch.
+In these cases the service returns an `HTTP 410 Gone` error with an error response containing one of the error codes below, and a `Location` header containing a new nextLink that starts a fresh delta enumeration from scratch.
 After finishing the full enumeration, compare the returned items with your local state and follow these instructions.
 
 | Error Type                       | Instructions                                                                                                                                                                                                                    |
 |:---------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `resyncChangesApplyDifferences`  | Replace any local items with the server's version (including deletes) if you're sure that the service was up to date with your local changes when you last sync'd. Upload any local changes that the server doesn't know about. |
-| `resyncChangesUploadDifferences` | Upload any local items that the service did not return, and upload any files that differ from the server's version (keeping both copies if you're not sure which one is more up-to-date).                                       |
+| `resyncChangesApplyDifferences`  | Replace any local items with the server's version (including deletes) if you're sure that the service was up to date with your local changes when you last synched. Upload any local changes that the server doesn't know about. |
+| `resyncChangesUploadDifferences` | Upload any local items that the service didn't return, and upload any files that differ from the server's version (keeping both copies if you're not sure which one is more up-to-date).                                       |
 
 ### Example 3: Retrieving the current deltaLink
 
@@ -328,7 +328,7 @@ Content-type: application/json
 
 ### Example 4: Retrieving delta results using a timestamp
 
-In some scenarios, the client may know the state of a drive up to a specific time, but not have a deltaLink for that point in time. In this case, the client can call `delta` using a URL encoded timestamp for the value of the `token` query string parameter, e.g. `?token=2021-09-29T20%3A00%3A00Z` or '?token=2021-09-29T12%3A00%3A00%2B8%3A00'.
+In some scenarios, the client may know the state of a drive up to a specific time, but not have a deltaLink for that point in time. In this case, the client can call `delta` using a URL encoded timestamp for the value of the `token` query string parameter, for example, `?token=2021-09-29T20%3A00%3A00Z` or '?token=2021-09-29T12%3A00%3A00%2B8%3A00'.
 
 Using a timestamp in place of a token is only supported on OneDrive for Business and SharePoint.
 
@@ -409,8 +409,8 @@ Content-type: application/json
 
 * The delta feed shows the latest state for each item, not each change. If an item were renamed twice, it would only show up once, with its latest name.
 * The same item may appear more than once in a delta feed, for various reasons. You should use the last occurrence you see.
-* The `parentReference` property on items will not include a value for **path**. This occurs because renaming a folder does not result in any descendants of the folder being returned from **delta**. **When using delta you should always track items by id**.
-* Delta query will not return some DriveItem properties, depending on the operation and service type, as shown in the following tables.
+* The `parentReference` property on items won't include a value for **path**. This occurs because renaming a folder doesn't result in any descendants of the folder being returned from **delta**. **When using delta you should always track items by id**.
+* Delta query won't return some DriveItem properties, depending on the operation and service type, as shown in the following tables.
 
     **OneDrive for Business**
 
@@ -429,18 +429,18 @@ Content-type: application/json
 
 ## Scanning permissions hierarchies
 
-By default, the delta query response will include sharing information for all items in the query that changed even if they inherit their permissions from their parent and did not have direct sharing changes themselves. This typically then results in a followup call to get the permission details for every item rather than just the ones whose sharing information changed. You can optimize your understanding of how permission changes happen by adding the `Prefer: hierarchicalsharing` header to your delta query request.
+By default, the delta query response includes sharing information for all items in the query that changed even if they inherit their permissions from their parent and didn't have direct sharing changes themselves. This typically then results in a follow-up call to get the permission details for every item rather than just the ones whose sharing information changed. You can optimize your understanding of how permission changes happen by adding the `Prefer: hierarchicalsharing` header to your delta query request.
 
-When the `Prefer: hierarchicalsharing` header is provided, sharing information will be returned for the root of the permissions hierarchy, as well as items that explicitly have sharing changes. In cases where the sharing change is to remove sharing from an item, you will find an empty sharing facet to differentiate between items that inherit from their parent and those that are unique but have no sharing links. You will also see this empty sharing facet on the root of a permission hierarchy that is not shared to establish the initial scope.
+When the `Prefer: hierarchicalsharing` header is provided, sharing information is returned for the root of the permissions hierarchy, and items that explicitly have sharing changes. In cases where the sharing change is to remove sharing from an item, you find an empty sharing facet to differentiate between items that inherit from their parent and those that are unique but have no sharing links. You'll also see this empty sharing facet on the root of a permission hierarchy that isn't shared to establish the initial scope.
 
-In many scanning scenarios, you might be interested specifically in changes to permissions. To make it clear in the delta query response which changes are the result of permissions being changed, you can provide the `Prefer: deltashowsharingchanges` header. When this header is provided, all items that appear in the delta query response due to permission changes will have the `@microsoft.graph.sharedChanged":"True"` OData annotation. This feature is applicable to SharePoint and OneDrive for Business but not consumer OneDrive accounts.
+In many scanning scenarios, you might be interested specifically in changes to permissions. To make it clear in the delta query response which changes are the result of permissions being changed, you can provide the `Prefer: deltashowsharingchanges` header. When this header is provided, all items that appear in the delta query response due to permission changes have the `@microsoft.graph.sharedChanged":"True"` OData annotation. This feature is applicable to SharePoint and OneDrive for Business but not consumer OneDrive accounts.
 
 > [!NOTE]
 > * The use of `Prefer: deltashowsharingchanges` header requires you to use `Prefer: deltashowremovedasdeleted` and `Prefer: deltatraversepermissiongaps`. These header values can be joined together in a single header: `Prefer: deltashowremovedasdeleted, deltatraversepermissiongaps, deltashowsharingchanges`.
 >
 > * In order to process permissions correctly your application will need to request **Sites.FullControl.All** permissions.
 
-For additional guidance about scanning scenarios see [Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance).
+For more information about scanning scenarios, see [Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance).
 
 ## Error responses
 

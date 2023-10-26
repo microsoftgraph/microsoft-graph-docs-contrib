@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get a list of all the [bundles][bundle] in a user's drive.
 
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -47,7 +49,7 @@ You can't use the `expand=children` query parameter to list bundles.
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -108,7 +110,7 @@ GET https://graph.microsoft.com/beta/drive/bundles
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note**: The response object shown here might be shortened for readability.
 
@@ -192,7 +194,7 @@ GET https://graph.microsoft.com/beta/drive/bundles?filter=bundle/album%20ne%20nu
 
 #### Response
 
-The following is an example of the response. The response to a GET to the bundles endpoint is an array of [driveItem][] resources with the [bundle][].
+The following example shows the response. The response to a GET to the bundles endpoint is an array of [driveItem][] resources with the [bundle][].
 Because all bundles are items, you can use all the standard item operations on them.
 
 > **Note**: The response object shown here might be shortened for readability.

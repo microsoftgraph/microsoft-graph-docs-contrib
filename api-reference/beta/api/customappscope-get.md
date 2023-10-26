@@ -17,6 +17,8 @@ Get the properties of a [customAppScope](../resources/customappscope.md) object 
 
 Currently only the Exchange Online RBAC provider is supported.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
@@ -51,7 +53,7 @@ This method does not support [OData query parameters](/graph/query-parameters) t
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -108,7 +110,7 @@ GET https://graph.microsoft.com/beta/roleManagement/exchange/customAppScopes/a6a
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

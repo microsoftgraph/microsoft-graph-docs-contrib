@@ -15,6 +15,8 @@ Namespace: microsoft.graph.ediscovery
 
 Create a new [unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -47,7 +49,7 @@ POST /compliance/ediscovery/cases/{id}/custodians/{id}/unifiedGroupSources
 
 In the request body, supply a JSON representation of the [unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md) object.
 
-The following table shows the properties that are required when you create the [unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md).
+The following table lists the properties that are required when you create the [unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md).
 
 >**Note:** Either **group** or **group@odata.bind** is required in order to create a **unifiedGroupSource**.
 

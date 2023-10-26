@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get newly created, updated, or deleted **administrativeUnits** without having to perform a full read of the entire resource collection. For details, see [Using delta query](/graph/delta-query-overview).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -67,7 +69,7 @@ This method supports the following OData query parameters to help customize the 
 | Authorization  | Bearer &lt;token&gt;. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

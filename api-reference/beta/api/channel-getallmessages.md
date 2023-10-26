@@ -19,6 +19,8 @@ To learn more about using the Microsoft Teams export APIs to export content, see
 
 [!INCLUDE [teams-metered-apis](../../includes/teams-metered-apis.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 The following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -53,7 +55,7 @@ Additionally, [$filter](/graph/query-parameters#filter-parameter) is supported w
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -63,7 +65,7 @@ If successful, this method returns a `200 OK` response code and also returns all
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

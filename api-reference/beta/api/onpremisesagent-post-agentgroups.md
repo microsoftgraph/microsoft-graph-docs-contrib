@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Assign an [onPremisesAgent](../resources/onpremisesagent.md) to an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /onPremisesPublishingProfiles/{publishingType}/agents/{id1}/agentGroups/$ref
+POST /onPremisesPublishingProfiles/{profile-id}/agents/{agent-id}/agentGroups/$ref
 ```
 
 ## Request headers
@@ -51,7 +53,7 @@ If successful, this method returns a `201 Created` response code and a new [onPr
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -99,7 +101,7 @@ In the request body, supply a JSON representation of OData reference to an [onPr
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

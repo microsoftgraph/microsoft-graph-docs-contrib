@@ -14,6 +14,8 @@ Stop a currently active [accessReviewInstance](../resources/accessreviewinstance
 
 Stopping an instance will not stop future instances. To prevent a recurring access review from starting future instances, [update the schedule definition](accessreviewscheduledefinition-update.md) to change its scheduled end date.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -41,7 +43,7 @@ POST /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefiniti
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

@@ -1,6 +1,6 @@
 ---
 title: "reportRoot: getCredentialUserRegistrationCount"
-description: "Report the current state of how many users in your organization are registered for self-service password reset and multi-factor authentication (MFA) capabilities."
+description: "Report the current state of how many users in your organization are registered for self-service password reset and multifactor authentication (MFA) capabilities."
 ms.localizationpriority: medium
 author: "egreenberg14"
 ms.prod: "identity-and-access-reports"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Report the current state of how many users in your organization are registered for self-service password reset and multi-factor authentication (MFA) capabilities.
+Report the current state of how many users in your organization are registered for self-service password reset and multifactor authentication (MFA) capabilities.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -42,7 +44,7 @@ GET /reports/getCredentialUserRegistrationCount
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -54,7 +56,7 @@ The following example shows how to call this API.
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -102,7 +104,7 @@ GET https://graph.microsoft.com/beta/reports/getCredentialUserRegistrationCount
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability. All the properties are returned from an actual call.
 

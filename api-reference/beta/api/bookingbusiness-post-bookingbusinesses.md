@@ -16,6 +16,9 @@ Namespace: microsoft.graph
 Create a new Microsoft Bookings business in a tenant.
 
 This is the first step in setting up a Bookings business where you must specify the business display name. You can include other information such as business address, web site address, and scheduling policy, or set that information later by [updating](bookingbusiness-update.md) the **bookingBusiness**.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -45,7 +48,7 @@ If successful, this method returns `201, Created` response code and [bookingBusi
 
 ## Example
 ##### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -109,7 +112,7 @@ Content-type: application/json
 
 In the request body, supply a JSON representation of [bookingBusiness](../resources/bookingbusiness.md) object.
 ##### Response
-The following is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

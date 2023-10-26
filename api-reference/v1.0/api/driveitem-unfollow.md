@@ -14,6 +14,8 @@ Unfollow a [driveItem](../resources/driveitem.md).
 
 >**Note:** To follow an item, see [Follow Item](driveitem-follow.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -41,7 +43,7 @@ No request body is required.
 
 ## Response
 
-If successful, the API call returns a `204 No Content`. It does not return anything in the response body.
+If successful, the API call returns a `204 No Content`. It doesn't return anything in the response body.
 
 ## Example
 ### Request

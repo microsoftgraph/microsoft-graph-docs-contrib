@@ -15,6 +15,8 @@ Namespace: microsoft.graph.externalConnectors
 
 Update the properties of an [externalConnection](../resources/externalconnectors-externalconnection.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -58,7 +60,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 
@@ -117,7 +119,7 @@ Content-type: application/json
 ### Response
 <!-- markdownlint-enable MD024 -->
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

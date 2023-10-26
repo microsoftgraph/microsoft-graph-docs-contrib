@@ -29,6 +29,8 @@ Items with this property should be removed from your local state.
 
 > **Note:** You should only delete a folder locally if it's empty after syncing all the changes.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -65,7 +67,7 @@ This method supports the `$select`, `$expand`, and `$top` [OData query parameter
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -376,7 +378,7 @@ GET /sites/contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "response", "name": "get-delta-latest_datalink_tokenislatest", "isEmpty": true, "@odata.type": "microsoft.graph.listItem", "isCollection": true } -->
 

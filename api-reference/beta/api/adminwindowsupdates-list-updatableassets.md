@@ -18,6 +18,8 @@ Listing updatable assets returns **updatableAsset** resources of the following d
 
 Use [list azureADDevice resources](adminwindowsupdates-list-updatableassets-azureaddevice.md) or [list updatableAssetGroup resources](adminwindowsupdates-list-updatableassets-updatableassetgroup.md) to filter and get resources of only one of the derived types.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -48,7 +50,7 @@ To use a query parameter on a property that is not inherited from [updatableAsse
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

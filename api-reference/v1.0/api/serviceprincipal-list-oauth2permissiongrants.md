@@ -1,17 +1,19 @@
 ---
-title: "List oauth2PermissionGrants"
-description: "Retrieve a list of oAuth2PermissionGrant objects, representing delegated permission grants."
+title: "List a service principal's oauth2PermissionGrants"
+description: "Retrieve a list of oAuth2PermissionGrant objects, representing delegated permission grants, granted to a client app's service principal."
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: "applications"
-author: "sureshja"
+author: "psignoret"
 ---
 
-# List oauth2PermissionGrants
+# List oauth2PermissionGrants granted to a service principal
 
 Namespace: microsoft.graph
 
 Retrieve a list of [oAuth2PermissionGrant](../resources/oAuth2PermissionGrant.md) entities, representing delegated permissions granted to the service principal (representing the client application) to access an API on behalf of a user.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -19,13 +21,13 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All    |
+|Delegated (work or school account) | DelegatedPermissionGrant.Read.All, Application.Read.All, Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All |
+|Application | DelegatedPermissionGrant.Read.All, Application.Read.All, Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 
-You can address the service principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal
+You can address the service principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
 
 <!-- { "blockType": "ignored" } -->
 
@@ -46,7 +48,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

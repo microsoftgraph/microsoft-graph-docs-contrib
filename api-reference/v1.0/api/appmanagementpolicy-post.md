@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Create an [appManagementPolicy](../resources/appManagementPolicy.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -64,7 +66,7 @@ If successful, this method returns a `201 Created` response code with the new [a
 
 ### Request
 
-The following is an example of the request. This request created an app management policy with the following settings:
+The following example shows a request. This request created an app management policy with the following settings:
 
 - Enables the policy.
 - Blocks creating of new passwords for applications and service principals created on or after 2019-10-19 at 10:37 AM UTC time.
@@ -151,7 +153,7 @@ POST https://graph.microsoft.com/v1.0/policies/appManagementPolicies
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

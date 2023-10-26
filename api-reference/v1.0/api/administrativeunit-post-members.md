@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Use this API to add a member (user, group, or device) to an administrative unit. Currently it's only possible to add one member at a time to an administrative unit.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -23,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | AdministrativeUnit.ReadWrite.All |
 
-To add a user, group, or device to an administrative unit, the calling principal must be assigned one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
+To add a user, group, or device to an administrative unit, the calling principal must be assigned one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference):
 
 * Privileged Role Administrator
 * Global Administrator
@@ -35,7 +37,7 @@ To add a user, group, or device to an administrative unit, the calling principal
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
 
-To create a new group in an administrative unit, the calling principal must be assigned one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
+To create a new group in an administrative unit, the calling principal must be assigned one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference):
 
 * Privileged Role Administrator
 * Global Administrator
@@ -73,7 +75,7 @@ The following table shows the properties of the [group](../resources/group.md) r
 |:---------------|:--------|:----------|
 | displayName | string | The name to display in the address book for the group. Required. |
 | description | string | A description for the group. Optional. |
-| isAssignableToRole | Boolean | Set to **true** to enable the group to be assigned to an Azure AD role. Only Privileged Role Administrator and Global Administrator can set the value of this property. Optional. |
+| isAssignableToRole | Boolean | Set to **true** to enable the group to be assigned to a Microsoft Entra role. Only Privileged Role Administrator and Global Administrator can set the value of this property. Optional. |
 | mailEnabled | boolean | Set to **true** for mail-enabled groups. Required. |
 | mailNickname | string | The mail alias for the group. These characters cannot be used in the mailNickName: `@()\[]";:.<>,SPACE`. Required. |
 | securityEnabled | boolean | Set to **true** for security-enabled groups, including Microsoft 365 groups. Required. |
@@ -83,7 +85,7 @@ The following table shows the properties of the [group](../resources/group.md) r
 
 ## Response
 
-If successful, adding an existing object (using `$ref`) returns `204 No Content` response code. It does not return anything in the response body. 
+If successful, adding an existing object (using `$ref`) returns `204 No Content` response code. It doesn't return anything in the response body.
 
 When creating a new group (without `$ref`), this method returns a `201 Created` response code and a [group](../resources/group.md) object in the response body. The response includes only the default properties of the group. You must supply the `"@odata.type" : "#microsoft.graph.group"` line in the request body to explicitly identify the new member as a group. A request body without the correct @odata.type returns a `400 Bad Request` error message.
 
@@ -92,7 +94,7 @@ When creating a new group (without `$ref`), this method returns a `201 Created` 
 The following request adds an existing user or group to an administrative unit.
 
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -146,7 +148,7 @@ Content-type: application/json
 In the request body, provide the `id` of the [user](../resources/user.md) or [group](../resources/group.md) object you want to add.
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
  
 <!-- {
   "blockType": "response",
@@ -161,7 +163,7 @@ HTTP/1.1 204 No Content
 The following example creates a new group in the administrative unit. You must supply the `"@odata.type" : "#microsoft.graph.group"` line in the request body to explicitly identify the new member as a group. A request body without the correct @odata.type returns a `400 Bad Request` error message.
 
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -224,7 +226,7 @@ In the request body, provide the properties of the [group](../resources/group.md
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

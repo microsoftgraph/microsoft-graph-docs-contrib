@@ -14,6 +14,8 @@ Namespace: microsoft.graph.security
 
 Update the properties of an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -102,7 +104,7 @@ PATCH https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Get the [checklistItem](../resources/checklistitem.md) resources associated to the **checklistItems** navigation property of a [todoTask](../resources/todoTask.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -43,7 +45,7 @@ This method does not support OData query parameters to help customize the respon
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Create a new [authoredNote](../resources/authorednote.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -45,7 +47,7 @@ POST /privacy/subjectRightsRequests/{subjectRightsRequestId}/notes
 ## Request body
 In the request body, supply a JSON representation of the [authoredNote](../resources/authorednote.md) object.
 
-The following table shows the properties that are required when you create the [authoredNote](../resources/authorednote.md).
+The following table lists the properties that are required when you create the [authoredNote](../resources/authorednote.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -116,7 +118,7 @@ Content-Type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
