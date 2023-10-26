@@ -138,16 +138,18 @@ If successful, this method returns a `200 OK` response code and binary data of t
 If successful, this method returns a `200 OK` response code and [profilePhoto](../resources/profilephoto.md) object in the response body.
 
 ## Examples
+
 ### Example 1: Get the photo for the signed-in user in the largest available size
+
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
-  "name": "get_photo_value_v1_e1"
+  "blockType": "ignored"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/me/photo/$value
+
+```http
+GET https://graph.microsoft.com/beta/me/photo/$value
+Content-Type: image/jpg
 ```
 
 #### Response
@@ -162,14 +164,14 @@ HTTP/1.1 200 OK
 ```
 
 ### Example 2: Get the 48x48 photo for the signed-in user
+
 #### Request
 <!-- {
-  "blockType": "request",
-  "name": "get_photo_value_48x_v1_e2"
+  "blockType": "ignored"
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/photos/48x48/$value
+GET https://graph.microsoft.com/beta/me/photos/48x48/$value
 Content-Type: image/jpg
 ```
 
@@ -189,16 +191,16 @@ HTTP/1.1 200 OK
 ```
 
 ### Example 3: Get the metadata of the user photo of the signed-in user
-#### Request
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_photo_value_metadata_v1_e3"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/me/photo
-```
 
+#### Request
+
+<!-- {
+  "blockType": "ignored"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/me/photo
+```
 
 #### Response
 
@@ -217,8 +219,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/photo/$entity",
-    "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfcd489-628b-7d04-b48b-20075df800e5@1717622f-1d94-c0d4-9d74-f907ad6677b4')/photo",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Me/photo/$entity",
+    "@odata.id": "https://graph.microsoft.com/beta/users('ddfcd489-628b-7d04-b48b-20075df800e5@1717622f-1d94-c0d4-9d74-f907ad6677b4')/photo",
     "@odata.mediaContentType": "image/jpeg",
     "@odata.mediaEtag": "\"BA09D118\"",
     "id": "240x240",
@@ -240,8 +242,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/photo/$entity",
-    "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfcd489-628b-7d04-b48b-20075df800e5@1717622f-1d94-c0d4-9d74-f907ad6677b4')/photo",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Me/photo/$entity",
+    "@odata.id": "https://graph.microsoft.com/beta/users('ddfcd489-628b-7d04-b48b-20075df800e5@1717622f-1d94-c0d4-9d74-f907ad6677b4')/photo",
     "@odata.mediaContentType": "image/gif",
     "@odata.mediaEtag": "",
     "id": "1x1",
@@ -255,13 +257,12 @@ Content-type: application/json
 
 Here is an example of the request to get the metadata of the team photo.
 
-# [HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
-  "name": "get_team_photo_metadata_v1_e4"
+  "blockType": "ignored",
+  "name": "get_team_photo_metadata"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/teams/172b0cce-e65d-44ce-9a49-91d9f2e8491e/photo
+GET https://graph.microsoft.com/beta/teams/172b0cce-e65d-44ce-9a49-91d9f2e8491e/photo
 ```
 
 #### Response
@@ -279,8 +280,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('172b0cce-e65d-44ce-9a49-91d9f2e8491e')/photo/$entity",
-    "@odata.id": "https://graph.microsoft.com/v1.0/teams('172b0cce-e65d-44ce-9a49-91d9f2e8491e')/photo",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('172b0cce-e65d-44ce-9a49-91d9f2e8491e')/photo/$entity",
+    "@odata.id": "https://graph.microsoft.com/beta/teams('172b0cce-e65d-44ce-9a49-91d9f2e8491e')/photo",
     "@odata.mediaContentType": "image/jpeg",
     "@odata.mediaEtag": "\"BA09D118\"",
     "id": "240X240",
@@ -297,11 +298,11 @@ Here is an example of the request to get the team photo's binary data.
 
 # [HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
-  "name": "get_team_photo_v1_e5"
+  "blockType": "ignored",
+  "name": "get_team_photo"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/teams/172b0cce-e65d-44ce-9a49-91d9f2e8491e/photo/$value
+GET https://graph.microsoft.com/beta/teams/172b0cce-e65d-44ce-9a49-91d9f2e8491e/photo/$value
 ```
 
 #### Response
