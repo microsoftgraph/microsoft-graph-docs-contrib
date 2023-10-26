@@ -43,7 +43,8 @@ PATCH /storage/fileStorage/containers/{containerId}
 ## Request body
 In the request body, supply the new values for the fileStorageContainer properties. Existing properties that are not included in the request body will maintain their previous values. To optimize performance, you should not include existing values that have not changed.
 
-**Note**: Not all fileStorageContainer properties can be changed via this API.
+[Note]
+Not all fileStorageContainer properties can be changed via this API.
 
 ## Response
 
@@ -71,7 +72,8 @@ Content-Type: application/json
 
 ### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+[Note]
+The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
