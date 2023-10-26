@@ -81,4 +81,5 @@ A fileStorageContainer can be activated by calling any API that mutates the cont
 
 |Create or update custom properties of a fileStorageContainer|PATCH /storage/fileStorage/containers/{containerId}/customProperties|
 
-|Create a new file or folder in container's drive|POST /drives/{driveId}/items/{itemId}/children|
+|Create a new file or folder in the container's drive|POST /drives/{driveId}/items/{itemId}/children|
+
