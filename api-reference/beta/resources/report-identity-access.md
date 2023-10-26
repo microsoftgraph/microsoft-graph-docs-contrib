@@ -32,14 +32,14 @@ The AD FS application activity report provides information about how a relying p
 
 ### Application sign-in
 
-Evaluate the usage of application sign-ins in your tenant using either a summary report or a report that provides details of sign-ins, such as the number of sign-ins and whether any errors occured during sign-in. For more information, see the [applicationSignInSummary](/graph/api/resources/applicationsigninsummary?view=graph-rest-beta&preserve-view=true) resource.
+Evaluate the usage of application sign-ins in your tenant using either a summary report or a report that provides details of sign-ins, such as the number of sign-ins and whether any errors occurred during sign-in. For more information, see the [applicationSignInSummary](/graph/api/resources/applicationsigninsummary?view=graph-rest-beta&preserve-view=true) resource.
 
 ### Application user activity (preview)
-Application user activity provides sign-in and sign-up user activities data for registered application(s) in a Microsoft Entra ID for customers tenant. You can query and analyze data for daily active users, monthly active users, total users, new users, authentications, requests, and multifactor-authentication usage. For more information, see the [dailyUserInsightsSummary](/graph/api/resources/dailyuserinsightmetricsroot?view=graph-rest-beta&preserve-view=true) and [monthlyUserInsightsSummary](/graph/api/resources/monthlyuserinsightmetricsroot?view=graph-rest-beta&preserve-view=true) resources.
+Application user activity provides sign-in and sign-up user activities data for registered application(s) in a Microsoft Entra ID for customers tenant. You can query and analyze data for daily active users, monthly active users, total users, new users, authentications, requests, and multifactor authentication usage. For more information, see the [dailyUserInsightsSummary](/graph/api/resources/dailyuserinsightmetricsroot?view=graph-rest-beta&preserve-view=true) and [monthlyUserInsightsSummary](/graph/api/resources/monthlyuserinsightmetricsroot?view=graph-rest-beta&preserve-view=true) resources.
 
 ### Registration and usage
 
-Get a better understanding of how users in your organization use Microsoft Entra capabilities, such as self-service password reset (SSPR) and multi-factor authentication (MFA). You can determine which authentication methods are more successful for your organization, what types of errors end users are running into, and what campaign you need to run to help your end users adopt the use of SSPR and MFA. For more information, see the [authentication methods usage report API](/graph/api/resources/applicationsigninsummary?view=graph-rest-beta&preserve-view=true).
+Get a better understanding of how users in your organization use Microsoft Entra capabilities, such as self-service password reset (SSPR) and multifactor authentication (MFA). You can determine which authentication methods are more successful for your organization, what types of errors end users are running into, and what campaign you need to run to help your end users adopt the use of SSPR and MFA. For more information, see the [authentication methods usage report API](/graph/api/resources/applicationsigninsummary?view=graph-rest-beta&preserve-view=true).
 
 ## Next steps
 
