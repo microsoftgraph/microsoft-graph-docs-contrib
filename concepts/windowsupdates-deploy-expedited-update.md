@@ -394,7 +394,8 @@ Content-type: application/json
     "settings": {
         "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
         "expedite": {
-            "isExpedited": true
+            "isExpedited": true, 
+            "isReadinessTest": false
         },
         "userExperience": {
             "daysUntilForcedReboot": 2

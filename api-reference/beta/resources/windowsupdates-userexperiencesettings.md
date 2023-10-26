@@ -19,6 +19,7 @@ Settings controlling the user's update experience on a device.
 |Property|Type|Description|
 |:---|:---|:---|
 |daysUntilForcedReboot|Int32|Specifies the number of days after an update is installed, during which the user of the device can control when the device restarts.|
+|offerAsOptional|Boolean|Specifies whether the update is offered as **Optional** rather than **Required**.
 
 ## Relationships
 None.
@@ -33,7 +34,8 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.userExperienceSettings",
-  "daysUntilForcedReboot": "Integer"
+  "daysUntilForcedReboot": "Integer", 
+  "offerAsOptional": "Boolean"
 }
 ```
 
