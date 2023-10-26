@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
-userinsightsroot
+
 # userInsightsRoot resource type
 
 Namespace: microsoft.graph
