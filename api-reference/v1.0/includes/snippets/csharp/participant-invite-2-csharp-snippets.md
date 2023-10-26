@@ -21,7 +21,7 @@ var requestBody = new Microsoft.Graph.Communications.Calls.Item.Participants.Inv
 				AdditionalData = new Dictionary<string, object>
 				{
 					{
-						"phone" , new 
+						"phone" , new Identity
 						{
 							OdataType = "#microsoft.graph.identity",
 							Id = "+12345678901",

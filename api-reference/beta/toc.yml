@@ -17656,6 +17656,13 @@ items:
                         href: api/virtualeventwebinar-getbyuserrole.md
                       - name: List by user ID/role
                         href: api/virtualeventwebinar-getbyuseridandrole.md
+                      - name: Registration
+                        href: resources/virtualeventregistration.md
+                        items:
+                          - name: List
+                            href: api/virtualeventregistration-list.md
+                          - name: Get
+                            href: api/virtualeventregistration-get.md
                   - name: Session
                     href: resources/virtualeventsession.md
                     items:
@@ -17663,13 +17670,6 @@ items:
                         href: api/virtualeventsession-list.md
                       - name: Get
                         href: api/virtualeventsession-get.md
-                  - name: Registration
-                    href: resources/virtualeventregistration.md
-                    items:
-                      - name: List
-                        href: api/virtualeventregistration-list.md
-                      - name: Get
-                        href: api/virtualeventregistration-get.md
           - name: Devices (preview)
             items:
               - name: Provisioned device

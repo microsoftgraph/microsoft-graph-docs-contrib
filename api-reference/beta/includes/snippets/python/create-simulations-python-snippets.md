@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Simulation(
 	display_name = "Graph Simulation",
@@ -18,7 +18,7 @@ request_body = Simulation(
 		type = AccountTargetContentType.AddressBook,
 		account_target_emails = [
 			"john@contoso.com",
-		]
+		],
 	),
 	training_setting = TrainingSetting(
 		setting_type = TrainingSettingType.NoTraining,
@@ -32,11 +32,11 @@ request_body = Simulation(
 			default_language = "en",
 		),
 		additional_data = {
-				"simulation_notification" : (
-					targetted_user_type = "compromised",
-					end_user_notification_odata_bind = "https://graph.microsoft.com/beta/security/attacksimulation/endUserNotifications/12wer3678-9abc-def0-123456789a",
-					default_language = "en",
-				),
+				"simulation_notification" : {
+						"targetted_user_type" : "compromised",
+						"end_user_notification@odata_bind" : "https://graph.microsoft.com/beta/security/attacksimulation/endUserNotifications/12wer3678-9abc-def0-123456789a",
+						"default_language" : "en",
+				},
 		}
 	),
 	additional_data = {
@@ -46,7 +46,7 @@ request_body = Simulation(
 	}
 )
 
-result = await graph_client.security.attack_simulation.simulations.post(body = request_body)
+result = await graph_client.security.attack_simulation.simulations.post(request_body)
 
 
 ```

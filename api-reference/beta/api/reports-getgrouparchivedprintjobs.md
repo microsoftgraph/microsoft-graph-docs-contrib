@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/beta/reports/getGroupArchivedPrintJobs(groupId='
 [!INCLUDE [sample-code](../includes/snippets/php/reports-getgrouparchivedprintjobs-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/reports-getgrouparchivedprintjobs-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/reports-getgrouparchivedprintjobs-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

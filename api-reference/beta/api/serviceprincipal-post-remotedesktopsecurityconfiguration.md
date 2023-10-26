@@ -86,7 +86,6 @@ Content-Type: application/json
 
 ---
 
-
 ### Response
 Here's an example of the response.
 <!-- {
