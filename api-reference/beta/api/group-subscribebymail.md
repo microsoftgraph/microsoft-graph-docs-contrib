@@ -46,13 +46,13 @@ POST /groups/{id}/subscribeByMail
 
 ## Response
 
-If successful, this method returns `200 OK` response code. It does not return anything in the response body.
+If successful, this method returns `200 OK` response code. It doesn't return anything in the response body.
 
 ## Example
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 
@@ -101,7 +101,7 @@ POST https://graph.microsoft.com/beta/groups/{id}/subscribeByMail
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

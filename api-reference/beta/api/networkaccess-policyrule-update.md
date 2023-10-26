@@ -3,7 +3,7 @@ title: "Update policyRule"
 description: "Update an existing forwarding rule within a forwarding policy."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 
@@ -93,7 +93,7 @@ PATCH https://graph.microsoft.com/beta/networkAccess/forwardingPolicies/{forward
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

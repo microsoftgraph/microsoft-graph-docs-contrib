@@ -84,7 +84,7 @@ In the following examples, the URL can use the [HTTP syntax](#http-request) desc
 ### Example 1: Send a Hello World message in a channel
 
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -140,7 +140,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -198,7 +198,7 @@ Content-type: application/json
 ### Example 2: @mentions a user in a channel message
 
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -268,7 +268,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -340,7 +340,7 @@ Content-type: application/json
 ### Example 3: Send message containing cards
 
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 > **Note:** The attachment's ID must be unique and can be a new randomly generated GUID. However, the attachment's ID must be the same in the _body_ and _attachments_ elements.
 
@@ -410,7 +410,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -476,7 +476,7 @@ Content-type: application/json
 ### Example 4: Send a message with file attachment in it
 
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 >**Note:** The file must already be in SharePoint. To find the file properties, GET the **driveItem** for the file. For example, /drives/{id}/items/{id}. Your attachment ID is the GUID in the **eTag** of the **driveItem**, your attachment **contentURL** is the **webUrl** of the **driveItem**'s folder plus the **driveItem**'s name, and your attachment name is the **driveItem**'s name.
 
@@ -543,7 +543,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -609,7 +609,7 @@ Content-type: application/json
 ### Example 5: Send inline images along with the message
 
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 > **Note:** The **temporaryId** in the **hostedContents** collection is a random ID, but must be same across the **body** and **hostedContents** elements. (Notice the **temporaryId** set to `1` and the reference in body as `../hostedContents/1/$value`.)
 
@@ -677,7 +677,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -731,7 +731,7 @@ Content-type: application/json
 ### Example 6: Send a card with inline images
 
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 > **Notes:** 
 > * The **temporaryId** in the **hostedContents** collection is a random ID, but must be same across the **content** (in **attachments**) and **hostedContents** elements. (Notice the **temporaryId** set to `1` and the reference in content as `../hostedContents/1/$value`.).
@@ -812,7 +812,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -879,7 +879,7 @@ Content-type: application/json
 ### Example 7: @mention a channel in a channel message
 
 #### Request
-The following is an example of the request. For information about how to get a list of channels in a team, see [List channels](../api/channel-list.md).
+The following example shows a request. For information about how to get a list of channels in a team, see [List channels](../api/channel-list.md).
 
 > Note: **conversationIdentityType** must be set to `channel` to @mention a channel.
 
@@ -951,7 +951,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -1025,7 +1025,7 @@ Content-type: application/json
 ### Example 8: @mention a team in a channel message
 
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 > Note: **conversationIdentityType** must be set to `team` to @mention a team.
 
@@ -1099,7 +1099,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -1174,9 +1174,9 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
-> **Note:** When specifying a Teams app to attribute a card to, the Azure AD app ID used to make the call must match the Azure AD app ID of the Teams app. The Azure AD app ID of the Teams app can be specified in the *webApplicationInfo* section of the app's manifest. Refer to the following documentation on the current [Teams app manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
+> **Note:** When specifying a Teams app to attribute a card to, the Microsoft Entra app ID used to make the call must match the Microsoft Entra app ID of the Teams app. The Microsoft Entra app ID of the Teams app can be specified in the *webApplicationInfo* section of the app's manifest. Refer to the following documentation on the current [Teams app manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
 >
 > Furthermore, the app specified in the payload must be installed either for the user sending the message or in the chat or channel in which the message is being sent.
 
@@ -1247,7 +1247,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -1315,7 +1315,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 > **Note:** The Base64-encoded value for the **contentBytes** property is shortened for readability.
 
@@ -1397,7 +1397,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -1465,7 +1465,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -1524,7 +1524,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

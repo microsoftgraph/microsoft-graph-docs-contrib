@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Initiate a reset for the password associated with a [password authentication method](../resources/passwordauthenticationmethod.md) object. This can only be done by an administrator with appropriate permissions and cannot be performed on a user's own account.
+Initiate a reset for the password associated with a [password authentication method](../resources/passwordauthenticationmethod.md) object. This can only be done by an administrator with appropriate permissions and can't be performed on a user's own account.
 
-This flow writes the new password to Azure Active Directory and pushes it to on-premises Active Directory if configured using password writeback. The admin can either provide a new password or have the system generate one. The user is prompted to change their password on their next sign in.
+This flow writes the new password to Microsoft Entra ID and pushes it to on-premises Active Directory if configured using password writeback. The admin can either provide a new password or have the system generate one. The user is prompted to change their password on their next sign in.
 
 This reset is a long-running operation and will return a **Location** header with a link where the caller can periodically check for the status of the reset operation.
 
@@ -33,6 +33,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | Not supported. |
 
 [!INCLUDE [rbac-authentication-methods-apis-write](../includes/rbac-for-apis/rbac-authentication-methods-apis-write.md)]
+
+Admins with *User Administrator*, *Helpdesk Administrator*, or *Password Administrator* roles can also reset passwords for non-admin users and a limited set of admin roles as defined in [Who can reset passwords](/azure/active-directory/roles/privileged-roles-permissions#who-can-reset-passwords).
 
 ## HTTP request
 
@@ -78,7 +80,7 @@ The following example shows how to call this API when the caller submits a passw
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -107,7 +109,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -135,11 +137,11 @@ Location: https://graph.microsoft.com/beta/users/6ea91a8d-e32e-41a1-b7bd-d2d185e
 
 ### Example 2: System-generated password
 
-The following example shows how to call this API when the caller does not submit a password.
+The following example shows how to call this API when the caller doesn't submit a password.
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -165,10 +167,9 @@ POST https://graph.microsoft.com/beta/users/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0
 
 ---
 
-
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

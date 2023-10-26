@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = MeetingRegistrationQuestion(
 	answer_input_type = AnswerInputType.RadioButton,
@@ -16,10 +16,10 @@ request_body = MeetingRegistrationQuestion(
 		"Product Manager",
 		"Data scientist",
 		"Other",
-	]
+	],
 )
 
-result = await graph_client.me.online_meetings.by_online_meeting_id('onlineMeeting-id').registration.custom_questions.by_custom_question_id('meetingRegistrationQuestion-id').patch(body = request_body)
+result = await graph_client.me.online_meetings.by_online_meeting_id('onlineMeeting-id').registration.custom_questions.by_meeting_registration_question_id('meetingRegistrationQuestion-id').patch(request_body)
 
 
 ```

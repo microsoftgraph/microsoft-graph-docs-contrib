@@ -52,7 +52,7 @@ To list only custom content types, use `$filter=isBuiltin eq false`.
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/beta/sites/{siteId}/getApplicableContentTypesFor
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/site-getapplicablecontenttypesforlist-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/site-getapplicablecontenttypesforlist-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -416,6 +416,15 @@ Namespace: microsoft.graph
 |existingPartners|
 |unknownFutureValue|
 
+### approvalFilterByCurrentUserOptions values 
+
+| Member             |
+| :----------------- |
+| target             |
+| createdBy          |
+| approver           |
+| unknownFutureValue |
+
 ### accessPackageFilterByCurrentUserOptions values
 
 | Member             |
@@ -3485,6 +3494,7 @@ Possible values for user account types (group membership), per Windows definitio
 | contentDeletion    |
 | caseResolved       |
 | unknownFutureValue |
+| approval           |
 
 ### subjectRightsRequestStageStatus values
 

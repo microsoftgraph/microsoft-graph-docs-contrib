@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = TransferPostRequestBody(
 	transfer_target = InvitationParticipantInfo(
@@ -15,10 +15,10 @@ request_body = TransferPostRequestBody(
 		identity = IdentitySet(
 			odata_type = "#microsoft.graph.identitySet",
 			additional_data = {
-					"phone" : (
-						odata_type = "#microsoft.graph.identity",
-						id = "+12345678901",
-					),
+					"phone" : {
+							"@odata_type" : "#microsoft.graph.identity",
+							"id" : "+12345678901",
+					},
 			}
 		),
 		replaces_call_id = "e5d39592-99bd-4db8-bca8-30fb894ec51d",
@@ -29,7 +29,7 @@ request_body = TransferPostRequestBody(
 	),
 )
 
-await graph_client.communications.calls.by_call_id('call-id').transfer.post(body = request_body)
+await graph_client.communications.calls.by_call_id('call-id').transfer.post(request_body)
 
 
 ```

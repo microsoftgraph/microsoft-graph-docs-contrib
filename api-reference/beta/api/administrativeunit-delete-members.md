@@ -36,7 +36,7 @@ DELETE /administrativeUnits/{id}/members/{id}/$ref
 ```
 
 > [!CAUTION]
-> If you don't append `/$ref` to the request and the calling app has permissions to manage the member object, the object will also be deleted from Azure Active Directory (Azure AD); otherwise, a `403 Forbidden` error is returned. You can restore specific objects through the [Restore deleted items API](directory-deleteditems-restore.md).
+> If you don't append `/$ref` to the request and the calling app has permissions to manage the member object, the object will also be deleted from Microsoft Entra ID; otherwise, a `403 Forbidden` error is returned. You can restore specific objects through the [Restore deleted items API](directory-deleteditems-restore.md).
 
 ## Request headers
 | Name      |Description|
@@ -44,25 +44,23 @@ DELETE /administrativeUnits/{id}/members/{id}/$ref
 | Authorization  | Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 ### Request
-The following is an example of the request. In the example below, `{id1}` represents the identifier for the target administrative unit, and `{id2}` represents the unique identifier for the member user, group, or device to be removed from the target administrative unit. 
+The following example shows a request. In the example below, `{id1}` represents the identifier for the target administrative unit, and `{id2}` represents the unique identifier for the member user, group, or device to be removed from the target administrative unit. 
 
 ```msgraph-interactive
 DELETE https://graph.microsoft.com/beta/administrativeUnits/{id1}/members/{id2}/$ref
 ```
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
  
 ```http
 HTTP/1.1 204 No Content
 ```
-
-

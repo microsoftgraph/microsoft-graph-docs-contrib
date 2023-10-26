@@ -48,7 +48,7 @@ In the request body, supply a JSON representation with the **@odata.id** of a [u
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body. This method returns a `400 Bad Request` response code when the object is already a member of the group. This method returns a `404 Not Found` response code when the object being added doesn't exist.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body. This method returns a `400 Bad Request` response code when the object is already a member of the group. This method returns a `404 Not Found` response code when the object being added doesn't exist.
 
 ## Example
 
@@ -110,7 +110,7 @@ In the request body, supply a JSON representation with the **@odata.id** of a [u
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

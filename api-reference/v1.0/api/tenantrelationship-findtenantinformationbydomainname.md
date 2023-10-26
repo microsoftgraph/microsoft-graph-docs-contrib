@@ -42,7 +42,7 @@ In the request URL, provide the following query parameters with values. The foll
 
 | Parameter | Type | Description |
 |:---|:---|:---|
-| domainName | String | Primary domain name of an Azure AD tenant. |
+| domainName | String | Primary domain name of a Microsoft Entra tenant. |
 
 ## Request headers
 
@@ -52,7 +52,7 @@ In the request URL, provide the following query parameters with values. The foll
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
