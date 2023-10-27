@@ -11,7 +11,7 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), retrieve the properties and relationships of an  [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.
+In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), retrieve the properties and relationships of an  [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -46,7 +46,7 @@ This method supports the `$expand` OData query parameter to expand the relations
 | Authorization | Bearer \{token\}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -124,5 +124,3 @@ Content-Type: application/json
   }
 }
 ```
-
-

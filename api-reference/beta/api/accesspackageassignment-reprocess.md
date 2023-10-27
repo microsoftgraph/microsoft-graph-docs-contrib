@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), callers can automatically reevaluate and enforce an [accessPackageAssignment](../resources/accesspackageassignment.md) object of a user’s assignments for a specific access package. The **assignmentState** of the access package must be `Delivered` for the administrator to reprocess the user's assignment. Only admins with the Access Package Assignment Manager role, or higher, in Azure AD entitlement management can perform this action.
+In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), callers can automatically reevaluate and enforce an [accessPackageAssignment](../resources/accesspackageassignment.md) object of a user’s assignments for a specific access package. The **assignmentState** of the access package must be `Delivered` for the administrator to reprocess the user's assignment. Only admins with the Access Package Assignment Manager role, or higher, in Microsoft Entra entitlement management can perform this action.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -45,7 +45,7 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignments/{id}/rep
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -55,7 +55,7 @@ If successful, this method returns a `202 Accepted` response code and reevaluate
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -67,7 +67,7 @@ POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 
 <!-- {

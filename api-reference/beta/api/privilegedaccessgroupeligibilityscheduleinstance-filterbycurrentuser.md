@@ -52,7 +52,7 @@ The following table shows the parameters that must be used with this function.
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -60,9 +60,7 @@ If successful, this function returns a `200 OK` response code and a [privilegedA
 
 ## Examples
 
-### Example 1: Retrieve schedule instances for the calling principal
-
-#### Request
+### Request
 The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
@@ -98,14 +96,18 @@ GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/e
 [!INCLUDE [sample-code](../includes/snippets/php/privilegedaccessgroupeligibilityscheduleinstancethisfilterbycurrentuser-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/privilegedaccessgroupeligibilityscheduleinstancethisfilterbycurrentuser-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/privilegedaccessgroupeligibilityscheduleinstancethisfilterbycurrentuser-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### Response
-The following is an example of the response.
+### Response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

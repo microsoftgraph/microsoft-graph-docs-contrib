@@ -3,7 +3,7 @@ title: "Get branchSite"
 description: "Retrieve information about a specific branch."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 
@@ -49,7 +49,7 @@ This method supports the `$select` OData query parameter to help customize the r
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

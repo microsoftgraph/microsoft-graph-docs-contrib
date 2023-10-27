@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the configuration used to upload a certificate when using HTTPS client-certificate authentication for calling an API connector endpoint. Client certificate authentication is a mutual certificate-based authentication, where the client provides a client certificate to an API endpoint to prove its identity. Azure AD sends the configured certificate to the given API endpoint, which then validates the certificate.
+Represents the configuration used to upload a certificate when using HTTPS client-certificate authentication for calling an API connector endpoint. Client certificate authentication is a mutual certificate-based authentication, where the client provides a client certificate to an API endpoint to prove its identity. Microsoft Entra ID sends the configured certificate to the given API endpoint, which then validates the certificate.
 
 Inherits from [apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md).
 

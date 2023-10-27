@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 
-When calling on behalf of a user, the user needs to belong to the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
+When calling on behalf of a user, the user needs to belong to the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference):
 + Global Reader
 + Cloud Device Administrator
 + Intune Administrator
@@ -50,7 +50,7 @@ GET /policies/deviceRegistrationPolicy
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

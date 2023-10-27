@@ -41,7 +41,7 @@ GET /deviceManagement/virtualEndpoint/snapshots/getStorageAccounts(subscriptionI
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -88,6 +88,10 @@ GET /deviceManagement/virtualEndpoint/snapshots/getStorageAccounts(subscriptionI
 [!INCLUDE [sample-code](../includes/snippets/php/get-cloudpcforensicstorageaccount-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-cloudpcforensicstorageaccount-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-cloudpcforensicstorageaccount-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -96,7 +100,7 @@ GET /deviceManagement/virtualEndpoint/snapshots/getStorageAccounts(subscriptionI
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

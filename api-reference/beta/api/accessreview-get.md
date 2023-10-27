@@ -1,6 +1,6 @@
 ---
 title: "Get accessReview (deprecated)"
-description: "In the Azure AD access reviews feature, retrieve an accessReview object."
+description: "In the Microsoft Entra access reviews feature, retrieve an accessReview object."
 ms.localizationpriority: medium
 author: "shubhamguptacal"
 ms.prod: "governance"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, retrieve an [accessReview](../resources/accessreview.md) object.  
+In the Microsoft Entra [access reviews](../resources/accessreviews-root.md) feature, retrieve an [accessReview](../resources/accessreview.md) object.  
 
 To retrieve the reviewers of the access review, use the [list accessReview reviewers](accessreview-listreviewers.md) API. To retrieve the decisions of the access review, use the [list accessReview decisions](accessreview-listdecisions.md) API, or the [list my accessReview decisions](accessreview-listmydecisions.md) API.
 
@@ -45,7 +45,7 @@ GET /accessReviews/{reviewId}
 | Authorization | string | Bearer \{token\}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a `200 OK` response code and an [accessReview](../resources/accessreview.md) object in the response body.
@@ -160,5 +160,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

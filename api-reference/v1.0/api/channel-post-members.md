@@ -109,7 +109,7 @@ Content-type: application/json
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
@@ -192,7 +192,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability. 
 <!-- {
@@ -274,7 +274,7 @@ Content-type: application/json
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
@@ -356,7 +356,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability. 
 <!-- {
@@ -444,7 +444,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability. 
 <!-- {
@@ -530,7 +530,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability. 
 <!-- {

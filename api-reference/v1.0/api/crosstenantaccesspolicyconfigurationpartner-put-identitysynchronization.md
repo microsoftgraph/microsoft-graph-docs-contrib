@@ -54,7 +54,7 @@ You can specify the following properties when you create a **crossTenantIdentity
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Display name for the cross-tenant user synchronization policy. Use the name of the partner Azure Active Directory tenant to easily identify the policy. Optional.|
+|displayName|String|Display name for the cross-tenant user synchronization policy. Use the name of the partner Microsoft Entra tenant to easily identify the policy. Optional.|
 |userSyncInbound|[crossTenantUserSyncInbound](../resources/crosstenantusersyncinbound.md)|Determines whether users are synchronized from the partner tenant.|
 
 ## Response
@@ -109,6 +109,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/create-crosstenantidentitysyncpolicypartner-from--php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-crosstenantidentitysyncpolicypartner-from--powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/create-crosstenantidentitysyncpolicypartner-from--python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -117,7 +121,7 @@ Content-Type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

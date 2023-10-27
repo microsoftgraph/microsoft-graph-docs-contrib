@@ -30,6 +30,7 @@ Every team is associated with a [Microsoft 365 group](../resources/group.md). Th
 |[Add member](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|Add a new member to the team.|
 |[Add members in bulk](../api/conversationmembers-add.md)|[actionResultPart](../resources/actionresultpart.md) collection|Add multiple members to the team in a single request.|
 |[Get member](../api/team-get-members.md) | [conversationMember](conversationmember.md) collection | Get a member in the team.|
+|[Get primary channel](../api/team-get-primarychannel.md)|[channel](channel.md)| The general channel for the team. |
 |[Update member's role](../api/team-update-members.md)|[conversationMember](../resources/conversationmember.md)|Change a member to an owner or back to a regular member.|
 |[Remove member](../api/team-delete-members.md)|None|Remove an existing member from the team.|
 |[Archive team](../api/team-archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Put the team in a read-only state. |
@@ -71,7 +72,7 @@ Every team is associated with a [Microsoft 365 group](../resources/group.md). Th
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |Settings to configure messaging and mentions in the team.|
 |specialization|[teamSpecialization](teamspecialization.md)| Optional. Indicates whether the team is intended for a particular use case.  Each team specialization has access to unique behaviors and experiences targeted to its use case. |
 |summary|[teamSummary](teamsummary.md)| Contains summary information about the team, including number of owners, members, and guests. |
-|tenantId |string | The ID of the Azure Active Directory tenant. |
+|tenantId |string | The ID of the Microsoft Entra tenant. |
 |visibility|[teamVisibilityType](teamvisibilitytype.md)| The visibility of the group and team. Defaults to Public. |
 |webUrl|string (readonly) | A hyperlink that will go to the team in the Microsoft Teams client. This is the URL that you get when you right-click a team in the Microsoft Teams client and select **Get link to team**. This URL should be treated as an opaque blob, and not parsed. |
 
@@ -157,5 +158,3 @@ The following is a JSON representation of the resource.
 - [Use the Microsoft Graph API to work with Microsoft Teams](teams-api-overview.md)
 - [Creating a group with a team](/graph/teams-create-group-and-team)
 - [List all teams](/graph/teams-list-all-teams)
-
-

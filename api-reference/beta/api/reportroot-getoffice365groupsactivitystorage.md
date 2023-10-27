@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                           |
 | Application                            | Reports.Read.All                         |
 
-**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
+**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Microsoft Entra ID limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
 
@@ -83,7 +83,7 @@ The following is an example that outputs CSV.
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 <!-- {
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/beta/reports/getOffice365GroupsActivityStorage(p
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -129,7 +129,7 @@ The following is an example that returns JSON.
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 <!-- {
@@ -144,7 +144,7 @@ GET https://graph.microsoft.com/beta/reports/getOffice365GroupsActivityStorage(p
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -183,5 +183,3 @@ Content-Length: 285
   "suppressions": [
   ]
 }-->
-
-

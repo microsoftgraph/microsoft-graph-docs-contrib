@@ -11,7 +11,7 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), retrieve the properties and relationships of an
+In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), retrieve the properties and relationships of an
  [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -48,7 +48,7 @@ For example, to retrieve the access package, add `$expand=accessPackage`.
 | Authorization | Bearer \{token\}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -142,5 +142,3 @@ Content-Type: application/json
   }
 }
 ```
-
-

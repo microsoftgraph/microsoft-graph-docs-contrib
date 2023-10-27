@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Read the properties of a [b2cAuthenticationMethodsPolicy](../resources/b2cauthenticationmethodspolicy.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -43,7 +43,7 @@ GET /policies/b2cAuthenticationMethodsPolicy
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and the requested [b
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/beta/policies/b2cAuthenticationMethodsPolicy
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

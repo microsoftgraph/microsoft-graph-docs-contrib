@@ -52,7 +52,7 @@ This method supports `$select` and `$filter` OData query parameters to help cust
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

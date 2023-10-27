@@ -56,7 +56,7 @@ The following table lists additional parameters that can be used with the reques
 
 ## Response
 
-If successful, this method returns a `201 Created` response code. It does not return anything in the response body.
+If successful, this method returns a `201 Created` response code. It doesn't return anything in the response body.
 
 ## Examples
 
@@ -64,7 +64,7 @@ If successful, this method returns a `201 Created` response code. It does not re
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -117,7 +117,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -132,7 +132,7 @@ HTTP/1.1 201 Created
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -192,7 +192,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

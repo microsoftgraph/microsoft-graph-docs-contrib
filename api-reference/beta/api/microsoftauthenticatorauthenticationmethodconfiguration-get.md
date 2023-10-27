@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of the [microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) object, which represents the Microsoft Authenticator authentication method policy for the Azure AD tenant.
+Retrieve the properties and relationships of the [microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) object, which represents the Microsoft Authenticator authentication method policy for the Microsoft Entra tenant.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -43,7 +43,7 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/mic
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -172,4 +172,3 @@ Content-Type: application/json
     }
 }
 ```
-

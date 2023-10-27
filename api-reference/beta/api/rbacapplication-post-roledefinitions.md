@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object for an RBAC provider. This feature requires an Azure AD Premium P1 or P2 license.
+Create a new [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object for an RBAC provider. This feature requires a Microsoft Entra ID P1 or P2 license.
 
 The following RBAC providers are currently supported:
 - Cloud PC
 - device management (Intune)
-- directory (Azure AD)
+- directory (Microsoft Entra ID)
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -42,7 +42,9 @@ Depending on the RBAC provider and the permission type (delegated or application
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | DeviceManagementRBAC.ReadWrite.All |
 
-### For a directory (Azure AD) provider
+<a name='for-a-directory-azure-ad-provider'></a>
+
+### For a directory (Microsoft Entra ID) provider
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -158,7 +160,7 @@ Content-type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -270,7 +272,7 @@ Content-type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {

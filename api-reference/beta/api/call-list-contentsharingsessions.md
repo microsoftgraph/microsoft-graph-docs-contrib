@@ -41,7 +41,7 @@ GET /communications/calls/{id}/contentSharingSessions
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -101,7 +101,7 @@ GET https://graph.microsoft.com/beta/communications/calls/7531d31f-d10d-44de-802
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

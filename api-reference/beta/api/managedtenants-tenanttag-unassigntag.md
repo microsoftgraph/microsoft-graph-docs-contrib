@@ -48,7 +48,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|tenantIds|String collection|The collection of Azure Active Directory tenant identifiers for managed tenants.|
+|tenantIds|String collection|The collection of Microsoft Entra tenant identifiers for managed tenants.|
 
 ## Response
 

@@ -1,6 +1,6 @@
 ---
 title: "getNoncompliantDevicesAndSettingsReport action"
-description: ""
+description: "Intune Reporting Devicemanagementreports Getnoncompliantdevicesandsettingsreport Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

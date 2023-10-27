@@ -11,7 +11,7 @@ ms.date: 09/08/2023
 
 # Add a certificate to an app using Microsoft Graph
 
-Azure Active Directory (Azure AD) supports three types of credentials to authenticate apps and service principals: *passwords* (app secrets), *certificates*, and *federated identity credentials*. If you can't use federated identity credentials for your app, we strongly recommend that you use certificates instead of secrets.
+Microsoft Entra ID supports three types of credentials to authenticate apps and service principals: *passwords* (app secrets), *certificates*, and *federated identity credentials*. If you can't use federated identity credentials for your app, we strongly recommend that you use certificates instead of secrets.
 
 You can [add or remove certificates using the Microsoft Entra admin center](/azure/active-directory/develop/quickstart-register-app#add-a-certificate). However, in automation scenarios, you may need to automate the certificate rollover for your app or service principal.
 
@@ -21,7 +21,7 @@ This article provides guidance for using Microsoft Graph and PowerShell scripts 
 
 To complete this tutorial, you need the following resources and privileges:
 
-- An active Azure AD tenant.
+- An active Microsoft Entra tenant.
 - An API client such as [Graph Explorer](https://aka.ms/ge). Sign in as a user in an *Application Administrator* role or a user who is allowed to create and manage applications in the tenant.
 - A signed certificate that you'll use to authenticate the app. This article uses a self-signed certificate for demonstration purposes. To learn how to create a self-signed certificate, see [Create a self-signed public certificate to authenticate your application](/azure/active-directory/develop/howto-create-self-signed-certificate).
 
