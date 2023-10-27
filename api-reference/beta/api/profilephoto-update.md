@@ -81,25 +81,21 @@ PUT /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 ```
 
 To update a group photo:
+
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /groups/{id}/photo/$value
-
 PUT /groups/{id}/photo/$value
 ```
 
 To update a team photo:
 <!-- { "blockType": "ignored" } -->
 ```http
-
 PUT /team/{id}/photo/$value
+```
 
 To update a user's profile photo:
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /me/photo/$value
-PATCH /users/{id | userPrincipalName}/photo/$value
-
 PUT /me/photo/$value
 PUT /users/{id | userPrincipalName}/photo/$value
 ```
