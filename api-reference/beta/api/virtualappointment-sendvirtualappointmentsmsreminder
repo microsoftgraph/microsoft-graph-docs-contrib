@@ -1,6 +1,6 @@
 ---
-title: "virtualAppointment: sendvirtualappointmentsmsreminder"
-description: "Send a virtual appointment SMS reminder."
+title: "virtualAppointment: sendvirtualappointmentremindersms"
+description: "Send a virtual appointment reminder SMS."
 author: "benmicrosoft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -40,8 +40,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /me/onlineMeetings/{onlineMeetingId}/sendVirtualAppointmentSmsReminder
-GET /users/{userId}/onlineMeetings/{onlineMeetingId}/sendVirtualAppointmentSmsReminder
+POST /me/onlineMeetings/{onlineMeetingId}/sendVirtualAppointmentReminderSms
+POST /users/{userId}/onlineMeetings/{onlineMeetingId}/sendVirtualAppointmentReminderSms
 ```
 
 ## Request headers
@@ -77,7 +77,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/sendVirtualAppointmentSmsReminder
+POST https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/sendVirtualAppointmentReminderSms
 ```
 {
 “phoneNumbers”: [ “+13129224122”, “+1242421412”],
