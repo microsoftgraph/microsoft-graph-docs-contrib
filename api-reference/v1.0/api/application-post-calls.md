@@ -1164,6 +1164,7 @@ Content-Type: application/json
 POST https://bot.contoso.com/callback
 Content-Type: application/json
 ```
+##### Delta roster disabled (default)
 
 <!-- {
   "blockType": "example",
@@ -1246,6 +1247,106 @@ Content-Type: application/json
           "isMuted": false,
           "isInLobby": false,
           "id": "05491616-385f-44a8-9974-18cc5f9933c1"
+        }
+      ]
+    }
+  ]
+}
+```
+##### Delta roster enabled
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications",
+  "truncated": true
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resource": "/app/calls/421f7700-f4ad-4ea9-a3fc-c1d2195675ad/participants",
+      "resourceUrl": "/communications/calls/421f7700-f4ad-4ea9-a3fc-c1d2195675ad/participants",
+      "resourceData": [
+        {
+          "@odata.type": "#microsoft.graph.deltaParticipants",
+          "participants": [
+            {
+              "@odata.type": "#microsoft.graph.participant",
+              "info": {
+                "@odata.type": "#microsoft.graph.participantInfo",
+                "identity": {
+                  "@odata.type": "#microsoft.graph.identitySet",
+                  "user": {
+                    "@odata.type": "#microsoft.graph.identity",
+                    "displayName": "John",
+                    "id": "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
+                  }
+                },
+                "languageId": "en-US"
+              },
+              "mediaStreams": [
+                {
+                  "@odata.type": "#microsoft.graph.mediaStream",
+                  "mediaType": "audio",
+                  "sourceId": "1",
+                  "direction": "sendReceive",
+                  "serverMuted": false
+                },
+                {
+                  "@odata.type": "#microsoft.graph.mediaStream",
+                  "mediaType": "video",
+                  "sourceId": "2",
+                  "direction": "receiveOnly",
+                  "serverMuted": false
+                },
+                {
+                  "@odata.type": "#microsoft.graph.mediaStream",
+                  "mediaType": "videoBasedScreenSharing",
+                  "sourceId": "8",
+                  "direction": "receiveOnly",
+                  "serverMuted": false
+                }
+              ],
+              "isMuted": true,
+              "isInLobby": false,
+              "id": "0d7664b6-6432-43ed-8d27-d9e7adec188c",
+              "rosterSequenceNumber": 1
+            },
+            {
+              "@odata.type": "#microsoft.graph.participant",
+              "info": {
+                "@odata.type": "#microsoft.graph.participantInfo",
+                "identity": {
+                  "@odata.type": "#microsoft.graph.identitySet",
+                  "application": {
+                    "@odata.type": "#microsoft.graph.identity",
+                    "displayName": "Calling Bot",
+                    "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6"
+                  }
+                }
+              },
+              "mediaStreams": [
+                {
+                  "@odata.type": "#microsoft.graph.mediaStream",
+                  "mediaType": "audio",
+                  "sourceId": "10",
+                  "direction": "sendReceive",
+                  "serverMuted": false
+                }
+              ],
+              "isMuted": false,
+              "isInLobby": false,
+              "id": "05491616-385f-44a8-9974-18cc5f9933c1",
+              "rosterSequenceNumber": 1,
+              "removedState": {
+                "reason": "Removed from roster"
+              }
+            }
+          ],
+          "sequenceNumber": 1
         }
       ]
     }
