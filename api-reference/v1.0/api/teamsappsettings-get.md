@@ -42,7 +42,7 @@ This method supports some of the OData query parameters to help customize the re
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -50,10 +50,9 @@ If successful, this method returns a `200 OK` response code and a [teamsAppSetti
 
 ## Examples
 
-The following example shows you how to get the tenant-wide settings for all Teams apps in the tenant.
-
 ### Request
-The following example shows the request.
+
+The following example shows a request that gets the tenant-wide settings for all Teams apps in the tenant.
 
 # [HTTP](#tab/http)
 <!-- {

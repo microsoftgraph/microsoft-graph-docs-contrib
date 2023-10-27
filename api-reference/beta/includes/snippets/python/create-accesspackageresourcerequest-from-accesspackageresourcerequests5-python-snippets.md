@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AccessPackageResourceRequest(
 	catalog_id = "beedadfe-01d5-4025-910b-84abb9369997",
@@ -16,7 +16,7 @@ request_body = AccessPackageResourceRequest(
 	),
 )
 
-result = await graph_client.identity_governance.entitlement_management.acces_package_resource_requests.post(body = request_body)
+result = await graph_client.identity_governance.entitlement_management.access_package_resource_requests.post(request_body)
 
 
 ```

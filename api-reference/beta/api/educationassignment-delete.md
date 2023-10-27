@@ -47,13 +47,13 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -101,7 +101,7 @@ DELETE https://graph.microsoft.com/beta/education/classes/c42f493f-42b4-4e7d-814
 ---
 
 ### Response
-The following is an example of the response. 
+The following example shows the response.
 
 
 <!-- {

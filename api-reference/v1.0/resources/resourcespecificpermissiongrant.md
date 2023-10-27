@@ -1,6 +1,6 @@
 ---
 title: "resourceSpecificPermissionGrant resource type"
-description: "Specifies the permission that a specific Azure AD app has."
+description: "Specifies the permission that a specific Microsoft Entra app has."
 author: "AkJo"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Declares the permission that has been granted to a specific Azure AD app for an instance of a resource in Microsoft Graph.
+Declares the permission that has been granted to a specific Microsoft Entra app for an instance of a resource in Microsoft Graph.
 
 For more information about granting apps consent to access a specific instance of a resource, see [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
@@ -27,11 +27,11 @@ For more information about granting apps consent to access a specific instance o
 
 | Property        | Type          | Description                                                                           |
 | :-------------- | :------------ | :------------------------------------------------------------------------------------ |
-| clientId        | string        | ID of the Azure AD app that has been granted access. Read-only.                            |
-| clientAppId     | string        | ID of the service principal of the Azure AD app that has been granted access. Read-only.   |
+| clientId        | string        | ID of the Microsoft Entra app that has been granted access. Read-only.                            |
+| clientAppId     | string        | ID of the service principal of the Microsoft Entra app that has been granted access. Read-only.   |
 | deletedDateTime | dateTimeOffset| Not used.                                                                             |
 | id              | string        | The unique identifier of the resource-specific permission grant. Read-only.           |
-| resourceAppId   | string        | ID of the Azure AD app that is hosting the resource. Read-only.                        |
+| resourceAppId   | string        | ID of the Microsoft Entra app that is hosting the resource. Read-only.                        |
 | permissionType  | string        | The type of permission. Possible values are: `Application`, `Delegated`. Read-only. |
 | permission      | string        | The name of the resource-specific permission. Read-only.                                                |
 

@@ -48,7 +48,7 @@ DELETE /users/{userId}/onlineMeetings/{meetingId}/registration/registrants/{id}
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

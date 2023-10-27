@@ -48,7 +48,7 @@ POST /planner/rosters/{plannerRosterId}/members
 
 In the request body, supply a JSON representation of the [plannerRosterMember](../resources/plannerrostermember.md) object.
 
-The following table shows the properties that are required when you create the [plannerRosterMember](../resources/plannerrostermember.md).
+The following table lists the properties that are required when you create the [plannerRosterMember](../resources/plannerrostermember.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -64,7 +64,7 @@ If successful, this method returns a `201 Created` response code and a [plannerR
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -117,7 +117,7 @@ Content-Type: application/json
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

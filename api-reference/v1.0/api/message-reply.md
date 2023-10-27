@@ -64,7 +64,7 @@ When specifying the body in MIME format, provide the MIME content with the appli
 
 ## Response
 
-If successful, this method returns a `202 Accepted` response code. It does not return anything in the response body.
+If successful, this method returns a `202 Accepted` response code. It doesn't return anything in the response body.
 
 If the request body includes malformed MIME content, this method returns a `400 Bad Request` error code and the following error message: "Invalid base64 string for MIME content".
 
@@ -72,7 +72,7 @@ If the request body includes malformed MIME content, this method returns a `400 
 ### Example 1: Reply in JSON format to an existing message
 The following example includes a comment and adds a recipient to the reply message.
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -140,7 +140,7 @@ Content-Type: application/json
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -151,7 +151,7 @@ HTTP/1.1 202 Accepted
 
 ### Example 2: Reply in MIME format to an existing message
 #### Request
-The following is an example of the request.
+The following example shows a request.
 <!-- {
   "blockType": "ignored",
   "name": "message_reply_mime_v1"
@@ -165,7 +165,7 @@ Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNt
 ```
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

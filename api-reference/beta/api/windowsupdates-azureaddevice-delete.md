@@ -14,7 +14,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Delete an [azureADDevice](../resources/windowsupdates-azureaddevice.md) object.
 
-When an Azure AD device is deleted, it is unregistered from the deployment service and automatically unenrolled from management by the service for all update categories, as well as removed from every [deploymentAudience](../resources/windowsupdates-deploymentaudience.md) and [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).
+When a Microsoft Entra device is deleted, it is unregistered from the deployment service and automatically unenrolled from management by the service for all update categories, as well as removed from every [deploymentAudience](../resources/windowsupdates-deploymentaudience.md) and [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -26,6 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|WindowsUpdates.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|WindowsUpdates.ReadWrite.All|
+
+[!INCLUDE [rbac-windows-updates-apis](../includes/rbac-for-apis/rbac-windows-updates-apis.md)]
 
 ## HTTP request
 
@@ -43,11 +45,11 @@ DELETE /admin/windows/updates/updatableAssets/{azureADDeviceId}
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `202 Accepted` response code. It does not return anything in the response body.
+If successful, this method returns a `202 Accepted` response code. It doesn't return anything in the response body.
 
 ## Examples
 
@@ -107,4 +109,3 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/98
 ``` http
 HTTP/1.1 202 Accepted
 ```
-

@@ -1,6 +1,6 @@
 ---
-title: "Working with the Azure AD entitlement management API"
-description: "Govern access to resources including groups, apps and sites through Azure AD entitlement management"
+title: "Working with the Microsoft Entra entitlement management API"
+description: "Govern access to resources including groups, apps and sites through Microsoft Entra entitlement management"
 ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
@@ -8,13 +8,13 @@ doc_type: "conceptualPageType"
 ms.date: 11/11/2022
 ---
 
-# Working with the Azure AD entitlement management API
+# Working with the Microsoft Entra entitlement management API
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Azure Active Directory (Azure AD) entitlement management can help you manage access to groups, applications, and SharePoint Online sites for internal users as well as users outside your organization.
+Microsoft Entra entitlement management can help you manage access to groups, applications, and SharePoint Online sites for internal users as well as users outside your organization.
 
 By creating access packages with the roles users need to have across those resources, and defining policies for who can request an access package and how long they can have an assignment to an access package, you can govern the lifecycle of access for both internal and external users.
 
@@ -30,7 +30,7 @@ The entitlement management resource types include:
 - [accessPackageResourceRequest](accesspackageresourcerequest.md): A request to add a resource to an access package catalog.
 - [accessPackageResourceEnvironment](accesspackageresourceenvironment.md): A reference to the geolocation of the resource. Applicable to Multi-Geo SharePoint Online sites.
 - [connectedOrganization](connectedorganization.md): A connected organization for external users who can request access.
-- [entitlementManagementSettings](entitlementmanagementsettings.md): Tenant-wide settings for Azure AD entitlement management.
+- [entitlementManagementSettings](entitlementmanagementsettings.md): Tenant-wide settings for Microsoft Entra entitlement management.
 - [approval](approval.md): represents the decisions associated with an access package request.
 
 In addition, you can manage role assignments for users, groups of users, and service principals to entitlement management-specific roles through entitlement management [role definitions](unifiedroledefinition.md).
@@ -118,7 +118,7 @@ The following table lists the methods that you can use to interact with entitlem
 
 ## See also
 
- - [What is Azure AD entitlement management?](/azure/active-directory/governance/entitlement-management-overview)
+ - [What is Microsoft Entra entitlement management?](/azure/active-directory/governance/entitlement-management-overview)
 
 
 

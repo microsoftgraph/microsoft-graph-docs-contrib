@@ -18,8 +18,8 @@ Get a list of [unifiedRoleDefinition](../resources/unifiedroledefinition.md) obj
 The following RBAC providers are currently supported:
 - Cloud PC 
 - device management (Intune)
-- directory (Azure AD) 
-- entitlement management (Azure AD)
+- directory (Microsoft Entra ID) 
+- entitlement management (Microsoft Entra ID)
 - Exchange Online
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
@@ -44,7 +44,9 @@ Depending on the RBAC provider and the permission type (delegated or application
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
 
-### For a directory (Azure AD) provider
+<a name='for-a-directory-azure-ad-provider'></a>
+
+### For a directory (Microsoft Entra ID) provider
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -111,7 +113,7 @@ This method supports the `$filter` query parameter to help customize the respons
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -123,7 +125,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -172,7 +174,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -285,7 +287,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -334,7 +336,7 @@ GET https://graph.microsoft.com/beta/roleManagement/cloudPC/roleDefinitions
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -424,7 +426,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -473,7 +475,7 @@ GET https://graph.microsoft.com/beta/roleManagement/entitlementManagement/roleDe
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -532,7 +534,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -580,7 +582,7 @@ GET https://graph.microsoft.com/beta/roleManagement/exchange/roleDefinitions
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -645,7 +647,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -693,7 +695,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions?$f
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -778,5 +780,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

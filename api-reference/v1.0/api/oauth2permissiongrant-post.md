@@ -48,7 +48,7 @@ In the request body, supply a JSON representation of an [oAuth2PermissionGrant](
 
 ## Response
 
-If successful, this method returns a 200-series response code and a new [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object in the response body. The following table shows the properties that are required when you create the [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md).
+If successful, this method returns a 200-series response code and a new [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object in the response body. The following table lists the properties that are required when you create the [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md).
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|

@@ -6,17 +6,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
-query_params = ConditionalAccessTemplateRequestBuilder.ConditionalAccessTemplateRequestBuilderGetQueryParameters(
+query_params = ConditionalAccessTemplateItemRequestBuilder.ConditionalAccessTemplateItemRequestBuilderGetQueryParameters(
 		select = ["details"],
 )
 
-request_configuration = ConditionalAccessTemplateRequestBuilder.ConditionalAccessTemplateRequestBuilderGetRequestConfiguration(
+request_configuration = ConditionalAccessTemplateItemRequestBuilder.ConditionalAccessTemplateItemRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
 )
 
-result = await graph_client.identity.conditional_access.templates.by_template_id('conditionalAccessTemplate-id').get(request_configuration = request_configuration)
+result = await graph_client.identity.conditional_access.templates.by_conditional_access_template_id('conditionalAccessTemplate-id').get(request_configuration = request_configuration)
 
 
 ```

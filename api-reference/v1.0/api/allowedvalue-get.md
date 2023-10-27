@@ -54,7 +54,7 @@ This method supports the `$select` OData query parameter to help customize the r
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -117,7 +117,7 @@ GET https://graph.microsoft.com/v1.0/directory/customSecurityAttributeDefinition
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

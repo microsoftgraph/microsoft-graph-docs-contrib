@@ -37,7 +37,7 @@ DELETE /education/classes/{classId}/assignments/{assignmentId}/gradingCategory/$
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a `204` successful response code.
@@ -45,7 +45,7 @@ If successful, this method returns a `204` successful response code.
 ## Example
 
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -69,7 +69,7 @@ DELETE https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-856
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

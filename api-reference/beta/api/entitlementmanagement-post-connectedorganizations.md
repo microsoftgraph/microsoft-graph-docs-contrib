@@ -47,7 +47,7 @@ POST /identityGovernance/entitlementManagement/connectedOrganizations
 ## Request body
 In the request body, supply a JSON representation of the [connectedOrganization](../resources/connectedorganization.md) object.
 
-The following table shows the properties that are required when you create the [connectedOrganization](../resources/connectedorganization.md).
+The following table lists the properties that are required when you create the [connectedOrganization](../resources/connectedorganization.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -56,7 +56,7 @@ The following table shows the properties that are required when you create the [
 |identitySources|[identitySource](../resources/identitysource.md) collection|A collection with one element, the initial identity source in this connected organization.|
 |state|connectedOrganizationState|The state of a connected organization defines whether assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects` are applicable or not. Possible values are: `configured`, `proposed`.|
 
-The single member of the identitySources collection should be of either the [domainIdentitySource](../resources/domainidentitysource.md) or [externalDomainFederation](../resources/externaldomainfederation.md) type.  If the caller provides a domainIdentitySource, the call is successful, and the domain corresponds to a registered domain of an Azure Active Directory tenant, then the resulting connectedOrganization that is created will have an identitySources collection containing a single member of the [azureActiveDirectoryTenant](../resources/azureactivedirectorytenant.md) type.
+The single member of the identitySources collection should be of either the [domainIdentitySource](../resources/domainidentitysource.md) or [externalDomainFederation](../resources/externaldomainfederation.md) type.  If the caller provides a domainIdentitySource, the call is successful, and the domain corresponds to a registered domain of a Microsoft Entra tenant, then the resulting connectedOrganization that is created will have an identitySources collection containing a single member of the [azureActiveDirectoryTenant](../resources/azureactivedirectorytenant.md) type.
 
 ## Response
 
@@ -157,5 +157,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-
