@@ -42,8 +42,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /me/onlineMeetings/{onlineMeetingId}/sendVirtualAppointmentSms
-GET /users/{userId}/onlineMeetings/{onlineMeetingId}/sendVirtualAppointmentSms
+POST /me/onlineMeetings/{onlineMeetingId}/sendVirtualAppointmentSms
+POST /users/{userId}/onlineMeetings/{onlineMeetingId}/sendVirtualAppointmentSms
 ```
 
 ## Request headers
@@ -79,7 +79,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/sendVirtualAppointmentSms
+POST https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/sendVirtualAppointmentSms
 ```
 {
 “phoneNumbers”: [ “+13129224122”, “+1242421412”],
