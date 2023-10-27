@@ -7691,7 +7691,7 @@ items:
     - name: External data connections
       items:
         - name: Overview
-          href: resources/indexing-api-overview.md
+          href: resources/connectors-api-overview.md
         - name: External connection
           items:
             - name: External connection
