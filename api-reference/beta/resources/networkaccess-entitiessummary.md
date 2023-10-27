@@ -1,6 +1,6 @@
 ---
 title: "entitiesSummary resource type"
-description: "entitiesSummary provides key information about unique connectivity entities."
+description: "Provides key information about unique connectivity entities."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: global-secure-access
@@ -13,15 +13,15 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-entitiesSummary provides key information about unique connectivity entities.
+Provides key information about unique connectivity entities.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|deviceCount|Int64|Count of unique devices that were seen.|
-|trafficType|microsoft.graph.networkaccess.trafficType|Traffic classification. The possible values are: `internet`, `private`, `microsoft365`, `all`.|
-|userCount|Int64|Count of unique Azure Active Directoy users that were seen.|
-|workloadCount|Int64|Count of unique target workloads/hosts that were seen.|
+|deviceCount|Int64|The count of unique devices that were seen.|
+|trafficType|microsoft.graph.networkaccess.trafficType|The traffic classification. The possible values are: `internet`, `private`, `microsoft365`, `all`.|
+|userCount|Int64|The count of unique Microsoft Entra ID users that were seen.|
+|workloadCount|Int64|The count of unique target workloads/hosts that were seen.|
 
 
 
@@ -29,7 +29,7 @@ entitiesSummary provides key information about unique connectivity entities.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.networkaccess.entitiesSummary"

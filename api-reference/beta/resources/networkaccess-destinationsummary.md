@@ -1,6 +1,6 @@
 ---
 title: "destinationSummary resource type"
-description: "A summary for device destinations being accessed."
+description: "A summary for device destinations."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: global-secure-access
@@ -13,20 +13,20 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A summary for device destinations being accessed.
+A summary for device destinations.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|count|Int32|Count of the aggregation.|
-|destination|String|destination fqdn or ip.|
-|trafficType|microsoft.graph.networkaccess.trafficType|traffic classification.The possible values are: `internet`, `private`, `microsoft365`, `all`, `unknownFutureValue`.|
+|count|Int32|The count of the aggregation.|
+|destination|String|The IP address or FQDN of the destination.|
+|trafficType|microsoft.graph.networkaccess.trafficType|The traffic classification. The possible values are: `internet`, `private`, `microsoft365`, `all`, `unknownFutureValue`.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.networkaccess.destinationSummary"

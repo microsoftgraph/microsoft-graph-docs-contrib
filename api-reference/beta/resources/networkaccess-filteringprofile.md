@@ -44,7 +44,7 @@ Inherits from [microsoft.graph.networkaccess.profile](../resources/networkaccess
 |policies|[microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md) collection|collection|The collection of policies that are linked to this filtering profile. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md)|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

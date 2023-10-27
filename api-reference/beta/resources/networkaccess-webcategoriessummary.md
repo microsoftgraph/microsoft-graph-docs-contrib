@@ -18,7 +18,7 @@ A summary for web categories being accessed.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|deviceCount|Int32|Count of unique devices that were seen.|
+|deviceCount|Int32|The count of unique devices that were seen.|
 |transactionCount|Int32|Count of transactions.|
 |userCount|Int32|Count of unique Azure Active Directory users that were seen.|
 |webCategory|[microsoft.graph.networkaccess.webCategory](../resources/networkaccess-webcategory.md)|Classification that categorizes websites or online content into specific groups.|

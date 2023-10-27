@@ -1,6 +1,6 @@
 ---
 title: "filteringPolicy resource type"
-description: "A filtering policy defines the specific traffic that is allowed or blocked through the Global Secure Access services. It is then added to a filtering profile."
+description: "A filtering policy defines the specific traffic that is allowed or blocked through the Global Secure Access services for a filtering profile."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A filtering policy defines the specific traffic that is allowed or blocked through the Global Secure Access services. It is then added to a filtering profile.
+A filtering policy defines the specific traffic that is allowed or blocked through the Global Secure Access services for a filtering profile.
 
 Inherits from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).
 
@@ -43,7 +43,7 @@ Inherits from [microsoft.graph.networkaccess.policy](../resources/networkaccess-
 |policyRules|[microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md) collection|Represents the definition of the policy ruleset that makes up the core definition of a policy. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md)|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

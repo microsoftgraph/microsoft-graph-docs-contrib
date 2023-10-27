@@ -45,7 +45,7 @@ Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkacc
 |policy|[policy](../resources/networkaccess-policy.md)|Represents the definition of the policy ruleset that makes up the core definition of a policy. Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md)|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
