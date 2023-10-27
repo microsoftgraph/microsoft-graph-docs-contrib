@@ -1,5 +1,5 @@
 ---
-title: "Use the Microsoft Search API to index data"
+title: "Use the Microsoft Graph connectors API to index data"
 description: "Use Microsoft Graph to index custom items in the Microsoft Search service."
 ms.localizationpriority: high
 author: "snlraju-msft"
@@ -7,7 +7,7 @@ ms.prod: "search"
 doc_type: conceptualPageType
 ---
 
-# Use the Microsoft Search API to index data
+# Use the Microsoft Graph connectors API to index data
 
 You can use Microsoft Graph to add custom items to search results in the [Microsoft Search](/microsoftsearch/overview-microsoft-search) experience.
 
