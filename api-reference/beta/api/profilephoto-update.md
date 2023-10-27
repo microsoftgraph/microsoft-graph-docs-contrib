@@ -97,7 +97,6 @@ PUT /team/{id}/photo/$value
 To update a user's profile photo:
 <!-- { "blockType": "ignored" } -->
 ```http
-
 PATCH /me/photo/$value
 PATCH /users/{id | userPrincipalName}/photo/$value
 
