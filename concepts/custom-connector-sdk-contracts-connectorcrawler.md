@@ -181,8 +181,8 @@ Enumeration members of identity source.
 
 |Member |Value |Description |
 |:----------|:-------------|:----------|
-IS_None |0 |Indicates the default value: Azure Active Directory (Azure AD). |
-AzureActiveDirectory |1 |The source of identity is Azure AD. |
+IS_None |0 |Indicates the default value: Microsoft Entra ID. |
+AzureActiveDirectory |1 |The source of identity is Microsoft Entra ID. |
 
 #### IdentityType enumeration members
 
