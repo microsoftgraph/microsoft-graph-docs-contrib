@@ -159,7 +159,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "EduAssignments.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `EduAssignments.ReadWrite.All` of the [Create](https://learn.microsoft.com/en-us/graph/api/educationclass-post-assignments) method of the [assignment](https://learn.microsoft.com/en-us/graph/api/resources/educationassignment) resource.",
+          "Description": "Added support for the application permission `EduAssignments.ReadWrite.All` to the [Create educationAssignment](https://learn.microsoft.com/en-us/graph/api/educationclass-post-assignments) method of the [educationAssignment](https://learn.microsoft.com/en-us/graph/api/resources/educationassignment) resource.",
           "Target": "educationAssignment"
         },
         {
@@ -167,7 +167,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "EduAssignments.ReadWriteBasic.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `EduAssignments.ReadWriteBasic.All` of the [Create](https://learn.microsoft.com/en-us/graph/api/educationclass-post-assignments) method of the [assignment](https://learn.microsoft.com/en-us/graph/api/resources/educationassignment) resource.",
+          "Description": "Added support for the application permission `EduAssignments.ReadWriteBasic.All` to the [Create educationAssignment](https://learn.microsoft.com/en-us/graph/api/educationclass-post-assignments) method of the [educationAssignment](https://learn.microsoft.com/en-us/graph/api/resources/educationassignment) resource.",
           "Target": "educationAssignment"
         }
       ],
