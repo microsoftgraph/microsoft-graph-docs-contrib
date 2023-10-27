@@ -1,0 +1,5 @@
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|Not supported.|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|EduRoster.ReadWrite.All plus Member.Read.Hidden|Not available.|

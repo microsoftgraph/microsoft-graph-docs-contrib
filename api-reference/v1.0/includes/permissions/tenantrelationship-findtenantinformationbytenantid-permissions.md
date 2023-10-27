@@ -1,0 +1,5 @@
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|CrossTenantInformation.ReadBasic.All|Not available.|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|CrossTenantInformation.ReadBasic.All|Not available.|

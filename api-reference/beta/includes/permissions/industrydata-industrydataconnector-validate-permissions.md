@@ -1,0 +1,5 @@
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|IndustryData-DataConnector.Upload|IndustryData-DataConnector.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|IndustryData-DataConnector.Upload|IndustryData-DataConnector.ReadWrite.All|

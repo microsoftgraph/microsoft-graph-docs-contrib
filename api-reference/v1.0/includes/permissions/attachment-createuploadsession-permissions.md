@@ -1,0 +1,5 @@
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|Calendars.ReadWrite|Mail.ReadWrite|
+|Delegated (personal Microsoft account)|Calendars.ReadWrite|Mail.ReadWrite|
+|Application|Calendars.ReadWrite|Mail.ReadWrite|

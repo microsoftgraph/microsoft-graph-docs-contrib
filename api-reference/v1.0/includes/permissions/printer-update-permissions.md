@@ -1,0 +1,5 @@
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|Printer.ReadWrite.All|Printer.FullControl.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|Printer.ReadWrite.All|Not available.|
