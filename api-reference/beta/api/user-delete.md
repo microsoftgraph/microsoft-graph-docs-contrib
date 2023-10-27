@@ -23,7 +23,7 @@ When deleted, user resources are moved to a temporary container and can be resto
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "user_delete" } -->
+<!-- { "blockType": "ignored", "name": "user_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/user-delete-permissions.md)]
 
 The calling user must be assigned one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json):

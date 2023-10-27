@@ -23,7 +23,7 @@ The request body contains the user to create. At a minimum, you must specify the
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "user_post_users" } -->
+<!-- { "blockType": "ignored", "name": "user_post_users" } -->
 [!INCLUDE [permissions-table](../includes/permissions/user-post-users-permissions.md)]
 
 ## HTTP request

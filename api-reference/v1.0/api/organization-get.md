@@ -21,7 +21,7 @@ Since the **organization** resource supports [extensions](/graph/extensibility-o
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "organization_get" } -->
+<!-- { "blockType": "ignored", "name": "organization_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/organization-get-permissions.md)]
 
 > **Note**: Applications granted the User.Read permission are able to read only the **id**, **displayName**, and **verifiedDomains** properties of the organization.  All other properties will return with `null` values. To read all properties, use Organization.Read.All.
