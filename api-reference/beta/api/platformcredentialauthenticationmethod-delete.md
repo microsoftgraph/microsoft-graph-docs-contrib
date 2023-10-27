@@ -1,6 +1,6 @@
 ---
 title: "Delete platformCredentialAuthenticationMethod"
-description: "Deletes a platformCredentialAuthenticationMethod object."
+description: "Delete a platformCredentialAuthenticationMethod object."
 author: "Veena11"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [platformCredentialAuthenticationMethod](../resources/platformcredentialauthenticationmethod.md) object.
+Delete a [platformCredentialAuthenticationMethod](../resources/platformcredentialauthenticationmethod.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
