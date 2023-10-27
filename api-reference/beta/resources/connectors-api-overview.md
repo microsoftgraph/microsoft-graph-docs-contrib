@@ -31,7 +31,7 @@ The use cases for the APIs in this section involve building [Microsoft Graph con
 | **Indexing actions**                             |                                             |   |
 | Add, update or delete a custom item in the index | [externalItem](externalconnectors-externalitem.md)             | [externalItem methods](externalconnectors-externalitem.md#methods) |
 
-## Process overview
+## Building a custom Microsoft Graph connector
 
 Building a custom Microsoft Graph connector involves four steps:
 
