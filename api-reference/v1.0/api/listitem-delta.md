@@ -246,7 +246,7 @@ Content-type: application/json
                 "id": "0x00123456789abc",
                 "name": "Document"
             },
-            "deleted": {"state": "deleted"}
+            "deleted": {"state": "deleted"},
             "@removed": {
                 "reason": "deleted"
             },
