@@ -1,6 +1,6 @@
 ---
 title: "Use the Microsoft Graph connectors API to index data"
-description: "Use Microsoft Graph to index custom items in the Microsoft Search service."
+description: "Build a custom Microsoft Graph connector to index custom items into Microsoft Graph to participate in Microsoft 365 intelligent experiences."
 ms.localizationpriority: high
 author: "snlraju-msft"
 ms.prod: "search"
