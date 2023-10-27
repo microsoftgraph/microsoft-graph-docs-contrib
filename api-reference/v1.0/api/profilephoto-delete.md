@@ -64,7 +64,6 @@ DELETE /users/{id | userPrincipalName}/photo/$value
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type  | image/jpeg. Required.  |
 
 
 ## Response
