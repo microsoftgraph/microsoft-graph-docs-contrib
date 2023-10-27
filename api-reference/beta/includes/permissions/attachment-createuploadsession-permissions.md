@@ -1,5 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+ms.topic: include
+ms.localizationpriority: medium
+---
+
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|Mail.ReadWrite|Not available.|
-|Delegated (personal Microsoft account)|Mail.ReadWrite|Not available.|
-|Application|Mail.ReadWrite|Not available.|
+|Delegated (work or school account)|Calendars.ReadWrite|Mail.ReadWrite|
+|Delegated (personal Microsoft account)|Calendars.ReadWrite|Mail.ReadWrite|
+|Application|Calendars.ReadWrite|Mail.ReadWrite|
+

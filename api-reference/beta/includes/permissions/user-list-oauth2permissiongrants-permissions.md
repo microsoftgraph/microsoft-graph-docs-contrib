@@ -1,5 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+ms.topic: include
+ms.localizationpriority: medium
+---
+
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|DelegatedPermissionGrant.Read.All|User.ReadBasic.All, Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All|
+|Delegated (work or school account)|User.ReadBasic.All|DelegatedPermissionGrant.ReadWrite.All, Directory.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|DelegatedPermissionGrant.Read.All|Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All|
+|Application|Directory.Read.All|DelegatedPermissionGrant.ReadWrite.All|
+

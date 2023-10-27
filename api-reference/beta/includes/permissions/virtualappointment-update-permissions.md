@@ -1,5 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+ms.topic: include
+ms.localizationpriority: medium
+---
+
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|VirtualAppointment.ReadWrite|OnlineMeetings.ReadWrite|
+|Delegated (work or school account)|OnlineMeetings.ReadWrite|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|VirtualAppointment.ReadWrite.All|Not available.|
+|Application|Not supported.|Not supported.|
+
