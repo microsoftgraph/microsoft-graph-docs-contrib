@@ -568,7 +568,7 @@ The following is a JSON representation of the resource.
   "ownedDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "ownedObjects": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
-  "photos": { "@odata.type": "microsoft.graph.profilePhoto" },
+  "photos": [ { "@odata.type": "microsoft.graph.profilePhoto" } ],
   "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ]
 }
 ```
