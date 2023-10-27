@@ -11,7 +11,7 @@ doc_type: conceptualPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-You can use Microsoft Graph to add custom items to search results in the [Microsoft Search](/microsoftsearch/overview-microsoft-search) experience.
+You can use Microsoft Graph connectors to index custom items into Microsoft Graph. This allows them to participate in Microsoft 365 intelligent experiences like [Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-overview) and [Microsoft Search](/microsoftsearch/overview-microsoft-search).
 
 Requests to index data are performed on behalf of an application without the presence of a signed-in user, identified using an [access token with application permission](/graph/auth-v2-service).
 
