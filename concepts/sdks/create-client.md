@@ -13,170 +13,43 @@ The following code examples show how to create an instance of a Microsoft Graph 
 
 <!-- markdownlint-disable MD025 MD051 -->
 
-# [C#](#tab/CS)
+# [C#](#tab/csharp)
 
-```csharp
-var scopes = new[] { "User.Read" };
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="DeviceCodeSnippet":::
 
-// Multi-tenant apps can use "common",
-// single-tenant apps must use the tenant ID from the Azure portal
-var tenantId = "common";
+# [Go](#tab/go)
 
-// Value from app registration
-var clientId = "YOUR_CLIENT_ID";
+:::code language="go" source="./snippets/go/src/snippets/create_clients.go" id="DeviceCodeSnippet":::
 
-// using Azure.Identity;
-var options = new TokenCredentialOptions
-{
-    AuthorityHost = AzureAuthorityHosts.AzurePublicCloud
-};
+# [Java](#tab/java)
 
-// Callback function that receives the user prompt
-// Prompt contains the generated device code that you must
-// enter during the auth process in the browser
-Func<DeviceCodeInfo, CancellationToken, Task> callback = (code, cancellation) => {
-    Console.WriteLine(code.Message);
-    return Task.FromResult(0);
-};
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="DeviceCodeSnippet":::
 
-// https://learn.microsoft.com/dotnet/api/azure.identity.devicecodecredential
-var deviceCodeCredential = new DeviceCodeCredential(
-    callback, tenantId, clientId, options);
-
-var graphClient = new GraphServiceClient(deviceCodeCredential, scopes);
-```
-
-# [Javascript](#tab/Javascript)
-
-```javascript
-const {
-    Client
-} = require("@microsoft/microsoft-graph-client");
-const {
-    TokenCredentialAuthenticationProvider
-} = require("@microsoft/microsoft-graph-client/authProviders/azureTokenCredentials");
-const {
-    DeviceCodeCredential
-} = require("@azure/identity");
-
-const credential = new DeviceCodeCredential(tenantId, clientId, clientSecret);
-const authProvider = new TokenCredentialAuthenticationProvider(credential, {
-    scopes: [scopes]
-});
-
-const client = Client.initWithMiddleware({
-    debugLogging: true,
-    authProvider
-    // Use the authProvider object to create the class.
-});
-```
-
-# [Java](#tab/Java)
-
-```java
-final ClientSecretCredential clientSecretCredential = new ClientSecretCredentialBuilder()
-        .clientId(CLIENT_ID)
-        .clientSecret(CLIENT_SECRET)
-        .tenantId(TENANT_GUID)
-        .build();
-
-final TokenCredentialAuthProvider tokenCredAuthProvider =
-        new TokenCredentialAuthProvider(SCOPES, clientSecretCredential);
-
-final GraphServiceClient graphClient = GraphServiceClient
-        .builder()
-        .authenticationProvider(tokenCredAuthProvider)
-        .buildClient();
-```
-
-# [Android](#tab/Android)
-
-```java
-final InteractiveBrowserCredential interactiveBrowserCredential = new InteractiveBrowserCredentialBuilder()
-        .clientId(CLIENT_ID)
-        .redirectUrl("http://localhost:8765")
-        .build();
-
-final TokenCredentialAuthProvider tokenCredAuthProvider =
-        new TokenCredentialAuthProvider(SCOPES, interactiveBrowserCredential);
-
-GraphServiceClient graphClient = GraphServiceClient
-        .builder()
-        .authenticationProvider(tokenCredAuthProvider)
-        .buildClient();
-```
-
-# [PHP](#tab/PHP)
+# [PHP](#tab/php)
 
 ```php
-// PHP client currently doesn't have an authentication provider. You will need to handle
-// getting an access token. The following example demonstrates the client credential
-// OAuth flow and assumes that an administrator has consented to the application.
-$guzzle = new \GuzzleHttp\Client();
-$url = 'https://login.microsoftonline.com/' . $tenantId . '/oauth2/token?api-version=1.0';
-$token = json_decode($guzzle->post($url, [
-    'form_params' => [
-        'client_id' => $clientId,
-        'client_secret' => $clientSecret,
-        'resource' => 'https://graph.microsoft.com/',
-        'grant_type' => 'client_credentials',
-    ],
-])->getBody()->getContents());
-$accessToken = $token->access_token;
+<?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Kiota\Abstractions\ApiException;
+use Microsoft\Kiota\Authentication\Oauth\ClientCredentialContext;
 
-// Create a new Graph client.
-$graph = new Graph();
-$graph->setAccessToken($accessToken);
+$tokenRequestContext = new ClientCredentialContext(
+    'tenantID',
+    'clientID',
+    'clientSecret'
+);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext);
 
-// Make a call to /me Graph resource.
-$user = $graph->createRequest("GET", "/me")
-              ->setReturnType(Model\User::class)
-              ->execute();
 ```
 
-# [Go](#tab/Go)
-
-[!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
-
-```go
-import (
-    "context"
-    "fmt"
-
-    azidentity "github.com/Azure/azure-sdk-for-go/sdk/azidentity"
-    msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-)
-
-cred, err := azidentity.NewDeviceCodeCredential(&azidentity.DeviceCodeCredentialOptions{
-    ClientID: "CLIENT_ID",
-    UserPrompt: func(ctx context.Context, message azidentity.DeviceCodeMessage) error {
-        fmt.Println(message.Message)
-        return nil
-    },
-})
-
-if err != nil {
-    fmt.Printf("Error creating credentials: %v\n", err)
-    return
-}
-
-client := msgraphsdk.NewGraphServiceClientWithCredentials(cred, []string{"User.Read"})
-```
-
-# [Python](#tab/Python)
+# [Python](#tab/python)
 
 [!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
-```py
-from azure.identity.aio import EnvironmentCredential
-from kiota_authentication_azure.azure_identity_authentication_provider import AzureIdentityAuthenticationProvider
-from msgraph import GraphRequestAdapter, GraphServiceClient
+:::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="DeviceCodeSnippet":::
 
-credential=EnvironmentCredential()
-auth_provider = AzureIdentityAuthenticationProvider(credential)
+# [TypeScript](#tab/typescript)
 
-adapter = GraphRequestAdapter(auth_provider)
-client = GraphServiceClient(adapter)
-```
+:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="DeviceCodeSnippet":::
 
 ---

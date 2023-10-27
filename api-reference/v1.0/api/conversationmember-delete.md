@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 Delete a [conversationMember](../resources/conversationmember.md) from a [channel](../resources/channel.md).
 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,7 +40,7 @@ DELETE /teams/{id}/channels/{id}/members/{id}
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -54,6 +56,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "delete_conversation_member"
 } -->
+
 ```http
 DELETE https://graph.microsoft.com/V1.0/teams/{id}/channels/{id}/members/{id}
 ```
@@ -65,6 +68,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response"
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```

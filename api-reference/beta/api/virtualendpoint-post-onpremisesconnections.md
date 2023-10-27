@@ -17,6 +17,8 @@ Create a new [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnect
 
 [!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -25,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|CloudPC.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|CloudPC.ReadWrite.All|
 
 ## HTTP request
 
@@ -49,12 +51,12 @@ POST /deviceManagement/virtualEndpoint/onPremisesConnections
 
 In the request body, supply a JSON representation of the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.
 
-The following table shows the properties that are required when you create the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.
+The following table lists the properties that are required when you create the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.
 
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The display name for the Azure network connection.|
-|type|cloudPcOnPremisesConnectionType|Specifies how the provisioned Cloud PC will be joined to Azure Active Directory. Default value is `hybridAzureADJoin`. Possible values are: `azureADJoin`, `hybridAzureADJoin`, `unknownFutureValue`.|
+|type|cloudPcOnPremisesConnectionType|Specifies how the provisioned Cloud PC will be joined to Microsoft Entra ID. Default value is `hybridAzureADJoin`. Possible values are: `azureADJoin`, `hybridAzureADJoin`, `unknownFutureValue`.|
 |subscriptionId|String|The ID of the target Azure subscription that’s associated with your tenant.|
 |adDomainName|String|The fully qualified domain name (FQDN) of the Active Directory domain you want to join.|
 |adDomainUsername|String|The username of an Active Directory account (user or service account) that has permissions to create computer objects in Active Directory. Required format: admin@contoso.com.|
@@ -101,6 +103,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-cloudpconpremisesconnection-from-cloudpconpremisesconnection-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-cloudpconpremisesconnection-from-cloudpconpremisesconnection-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-cloudpconpremisesconnection-from-cloudpconpremisesconnection-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -121,11 +127,15 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-cloudpconpremisesconnection-from-cloudpconpremisesconnection-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-cloudpconpremisesconnection-from-cloudpconpremisesconnection-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -23,7 +23,7 @@ markImportance := graphmodels.HIGH_IMPORTANCE
 actions.SetMarkImportance(&markImportance) 
 requestBody.SetActions(actions)
 
-result, err := graphClient.Me().MailFolders().ByMailFolderId("mailFolder-id").MessageRules().ByMessageRuleId("messageRule-id").Patch(context.Background(), requestBody, nil)
+messageRules, err := graphClient.Me().MailFolders().ByMailFolderId("mailFolder-id").MessageRules().ByMessageRuleId("messageRule-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

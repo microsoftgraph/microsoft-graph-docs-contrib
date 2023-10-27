@@ -4,6 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new DelegatedAdminRelationship
@@ -29,6 +31,7 @@ var requestBody = new DelegatedAdminRelationship
 			},
 		},
 	},
+	AutoExtendDuration = TimeSpan.Parse("P180D"),
 };
 var result = await graphClient.TenantRelationships.DelegatedAdminRelationships.PostAsync(requestBody);
 

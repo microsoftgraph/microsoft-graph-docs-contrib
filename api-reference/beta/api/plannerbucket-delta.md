@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get newly created, updated, or deleted [buckets](../resources/plannerbucket.md) in a Planner [plan](../resources/plannerplan.md) without having to perform a full read of the entire resource collection. For details, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -51,7 +53,7 @@ Tracking changes incurs a round of one or more **delta** function calls. If you 
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -69,7 +71,7 @@ The following example shows a request for delta on **plannerBucket** objects con
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -85,6 +87,10 @@ GET https://graph.microsoft.com/beta/planner/plans/-W4K7hIak0WlAwgJCn1sEWQABgjH/
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/plannerbucketthisdelta-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/plannerbucketthisdelta-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -103,11 +109,15 @@ GET https://graph.microsoft.com/beta/planner/plans/-W4K7hIak0WlAwgJCn1sEWQABgjH/
 [!INCLUDE [sample-code](../includes/snippets/php/plannerbucketthisdelta-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/plannerbucketthisdelta-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

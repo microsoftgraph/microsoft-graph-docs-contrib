@@ -14,6 +14,8 @@ Namespace: microsoft.graph.security
 
 Create a new [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -80,6 +82,10 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-ce
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-ediscoveryreviewtag-selectibility-many-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-ediscoveryreviewtag-selectibility-many-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-ediscoveryreviewtag-selectibility-many-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -96,10 +102,14 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-ce
 [!INCLUDE [sample-code](../includes/snippets/php/create-ediscoveryreviewtag-selectibility-many-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-ediscoveryreviewtag-selectibility-many-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -157,6 +167,10 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-ce
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-tqag-with-a-parent-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-tqag-with-a-parent-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-tqag-with-a-parent-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -173,10 +187,14 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-ce
 [!INCLUDE [sample-code](../includes/snippets/php/create-tqag-with-a-parent-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-tqag-with-a-parent-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

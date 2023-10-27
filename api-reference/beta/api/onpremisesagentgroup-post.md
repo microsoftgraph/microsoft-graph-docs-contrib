@@ -2,7 +2,7 @@
 title: "Create onPremisesAgentGroup"
 description: "Create a new **onPremisesAgentGroup** object."
 ms.localizationpriority: medium
-author: "japere"
+author: "dhruvinrshah"
 ms.prod: "applications"
 doc_type: "apiPageType"
 ---
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /onPremisesPublishingProfiles/{publishingType}/agentGroups/{id}/agents
+POST /onPremisesPublishingProfiles/{profile-id}/agentGroups
 ```
 
 ## Request headers
@@ -57,7 +59,7 @@ If successful, this method returns a `201 Created` response code and an [onPremi
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -71,6 +73,10 @@ POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-onpremisesagent-from-onpremisesagentgroup-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-onpremisesagent-from-onpremisesagentgroup-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -89,6 +95,10 @@ POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-onpremisesagent-from-onpremisesagentgroup-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-onpremisesagent-from-onpremisesagentgroup-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 In the request body, supply a JSON representation of [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
@@ -101,7 +111,7 @@ In the request body, supply a JSON representation of [onPremisesAgentGroup](../r
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

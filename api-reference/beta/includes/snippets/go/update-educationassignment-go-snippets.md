@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  "time"
@@ -32,7 +32,7 @@ requestBody.SetAddedStudentAction(&addedStudentAction)
 addToCalendarAction := graphmodels.STUDENTSANDPUBLISHER_EDUCATIONADDTOCALENDAROPTIONS 
 requestBody.SetAddToCalendarAction(&addToCalendarAction) 
 
-result, err := graphClient.Education().Classes().ByClasseId("educationClass-id").Assignments().ByAssignmentId("educationAssignment-id").Patch(context.Background(), requestBody, nil)
+assignments, err := graphClient.Education().Classes().ByEducationClassId("educationClass-id").Assignments().ByEducationAssignmentId("educationAssignment-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

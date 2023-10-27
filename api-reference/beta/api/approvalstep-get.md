@@ -15,9 +15,13 @@ Namespace: microsoft.graph
 
 Retrieve the properties of an [approvalStep](../resources/approvalstep.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+### Permissions required for calling this API for entitlement management
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
@@ -25,12 +29,45 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
+<a name='for-pim-for-azure-ad-roles'></a>
+
+### For PIM for Microsoft Entra roles
+
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | RoleAssignmentSchedule.Read.Directory, RoleAssignmentSchedule.ReadWrite.Directory |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | Not supported. |
+
+### Permissions required for calling this API for PIM for groups
+
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | PrivilegedAssignmentSchedule.Read.AzureADGroup, PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | Not supported. |
+
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
+To get an approval step in entitlement management:
 
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{id}/steps/{id}
+```
+
+To get an approval step in PIM for Microsoft Entra roles:
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /roleManagement/directory/roleAssignmentApprovals/{id}/steps/{id}
+```
+
+To get an approval step in PIM for groups:
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /identityGovernance/privilegedAccess/group/assignmentApprovals/{id}/steps/{id}
 ```
 
 ## Request headers
@@ -41,7 +78,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -51,9 +88,7 @@ If successful, this method returns a `200 OK` response code and the [approvalSte
 
 ### Request
 
-The following is an example of the request.
-
-
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -67,6 +102,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-approvalstep-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-approvalstep-2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -85,11 +124,15 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 [!INCLUDE [sample-code](../includes/snippets/php/get-approvalstep-2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-approvalstep-2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -124,5 +167,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

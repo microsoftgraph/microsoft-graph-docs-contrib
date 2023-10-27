@@ -27,7 +27,7 @@ Together, the Microsoft Graph API, connectors, and Data Connect power the Micros
 Microsoft Graph exposes REST APIs and client libraries to access data on the following Microsoft cloud services:
 
 - **Microsoft 365 core services:** Bookings, Calendar, Delve, Excel, Microsoft 365 compliance eDiscovery, Microsoft Search, OneDrive, OneNote, Outlook/Exchange, People (Outlook contacts), Planner, SharePoint, Teams, To Do, Viva Insights
-- **Enterprise Mobility + Security services:** Advanced Threat Analytics, Advanced Threat Protection, Azure Active Directory, Identity Manager, and Intune
+- **Enterprise Mobility + Security services:** Advanced Threat Analytics, Advanced Threat Protection, Microsoft Entra ID, Identity Manager, and Intune
 - **Windows services:** activities, devices, notifications, Universal Print
 - **Dynamics 365 Business Central services**
 
@@ -52,7 +52,7 @@ Use Microsoft Graph to build experiences around the user's unique context to hel
 Pick the first scenario about researching meeting attendees as an example. With the Microsoft Graph API, you can:
 
 1. Get the email addresses of the [meeting event](/graph/api/resources/event) attendees.
-2. Look them up individually as a [user](/graph/api/resources/user) in Azure Active Directory to [get their profile information](/graph/api/user-get).
+2. Look them up individually as a [user](/graph/api/resources/user) in Microsoft Entra ID to [get their profile information](/graph/api/user-get).
 
 You can then navigate to other resources using relationships:
 
@@ -61,7 +61,7 @@ You can then navigate to other resources using relationships:
 - [Get the most relevant people](/graph/api/user-list-people?view=graph-rest-beta&preserve-view=true) around the user.
 - Extend the scenario to get to the user's groups through a [memberOf](/graph/api/user-list-memberof) relationship.
 - [Reach other members in each group](/graph/api/group-list-members).
-- Tap into other scenarios enabled by [groups](office365-groups-concept-overview.md), such as [education](education-concept-overview.md) and [teamwork](teams-concept-overview.md).
+- Tap into other scenarios enabled by [groups](microsoft365-groups-concept-overview.md), such as [education](education-concept-overview.md) and [teamwork](teams-concept-overview.md).
 
 Microsoft Graph continues to open up the Microsoft 365 platform for developers, and always only with the appropriate permissions.
 

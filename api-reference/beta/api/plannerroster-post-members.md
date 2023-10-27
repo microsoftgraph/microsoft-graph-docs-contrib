@@ -8,13 +8,17 @@ doc_type: apiPageType
 ---
 
 # Create plannerRosterMember
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Add a member to the [plannerRoster](../resources/plannerrostermember.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -34,23 +38,23 @@ POST /planner/rosters/{plannerRosterId}/members
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
+
 In the request body, supply a JSON representation of the [plannerRosterMember](../resources/plannerrostermember.md) object.
 
-The following table shows the properties that are required when you create the [plannerRosterMember](../resources/plannerrostermember.md).
+The following table lists the properties that are required when you create the [plannerRosterMember](../resources/plannerrostermember.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
+|roles|String collection|Additional roles assigned to the user. Optional. Currently, no additional roles are available for users.|
+|tenantId|String|Identifier of the tenant the user belongs to. Optional. Currently, roster members cannot be from different tenants.|
 |userId|String|Identifier of the user.|
-|tenantId|String|Identifier of the tenant the user belongs to. Optional. Currently roster members cannot be from different tenants.|
-|roles|String collection|Additional roles assigned to the user. Optional. Currently there are no additional roles available for users.|
-
-
 
 ## Response
 
@@ -59,6 +63,8 @@ If successful, this method returns a `201 Created` response code and a [plannerR
 ## Examples
 
 ### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -78,6 +84,10 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-plannerrostermember-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-plannerrostermember-from--cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -100,10 +110,15 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-plannerrostermember-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-plannerrostermember-from--python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -122,4 +137,3 @@ Content-Type: application/json
   ]
 }
 ```
-

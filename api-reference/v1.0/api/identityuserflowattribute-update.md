@@ -1,9 +1,9 @@
 ---
 title: "Update identityUserFlowAttribute"
-description: "Update properties of an identityUserFlowAttribute."
+description: "Update properties of a custom identityUserFlowAttribute."
 ms.localizationpriority: medium
 doc_type: apiPageType
-author: "jkdouglas"
+author: "nanguil"
 ms.prod: "identity-and-sign-in"
 ---
 
@@ -11,7 +11,9 @@ ms.prod: "identity-and-sign-in"
 
 Namespace: microsoft.graph
 
-Update the properties of a [identityUserFlowAttribute](../resources/identityuserflowattribute.md) object. Only custom user flow attributes can be updated.
+Update the properties of a custom [identityUserFlowAttribute](../resources/identityuserflowattribute.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -23,10 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)| Not supported.|
 |Application| IdentityUserFlow.ReadWrite.All|
 
-The work or school account needs to belong to one of the following roles:
-
-* Global administrator
-* External Identity User Flow Attributes administrator
+[!INCLUDE [rbac-user-flows-attributes-apis](../includes/rbac-for-apis/rbac-user-flows-attributes-apis.md)]
 
 ## HTTP request
 
@@ -51,17 +50,17 @@ In the request body, provide a JSON object with one or more properties that need
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|description|String|The description of the user flow attribute. It is shown to the user at the time of sign up.|
+|description|String|The description of the user flow attribute. It is shown to the user at the time of sign-up.|
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns a `204 No Content` response code. If unsuccessful, a `4xx` error is returned with specific details.
 
 ## Examples
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -85,6 +84,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-userflowattributes-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-userflowattributes-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-userflowattributes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -105,11 +108,15 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/update-userflowattributes-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-userflowattributes-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

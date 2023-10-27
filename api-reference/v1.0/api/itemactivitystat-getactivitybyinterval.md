@@ -12,9 +12,11 @@ Namespace: microsoft.graph
 
 Get a collection of [itemActivityStats][] resources for the activities that took place on this resource within the specified time interval.
 
->**Note:** The **itemAnalytics** resource is not yet available in all [national deployments](/graph/deployments). 
+>**Note:** The **itemAnalytics** resource is not yet available in all [national deployments](/graph/deployments).
 
 Analytics aggregates might not be available for all action types.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -31,9 +33,9 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /drives/{drive-id}/items/{item-id}/getActivitiesByInterval(startDateTime='2017-01-01',endDateTime='2017-01-10',interval='day')
-GET /sites/{site-id}/getActivitiesByInterval(startDateTime='2016-01-01',endDateTime='2017-05-20',interval='month')
-GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(startDateTime='2017-05-01',endDateTime='2017-05-20',interval='week')
+GET /drives/{drive-id}/items/{item-id}/getActivitiesByInterval(startDateTime={startDateTime},endDateTime={endDateTime},interval={interval})
+GET /sites/{site-id}/getActivitiesByInterval(startDateTime={startDateTime},endDateTime={endDateTime},interval={interval})
+GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(startDateTime={startDateTime},endDateTime={endDateTime},interval={interval})
 ```
 
 ## Function parameters
@@ -57,11 +59,11 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
-## Response 
+## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [itemActivityStats][] object in the response body. 
+If successful, this method returns a `200 OK` response code and a collection of [itemActivityStats][] object in the response body.
 
 ## Example
 
@@ -79,6 +81,10 @@ GET /drives/{drive-id}/items/{item-id}/getActivitiesByInterval(startDateTime='20
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-activities-by-interval-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-activities-by-interval-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-activities-by-interval-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -93,6 +99,10 @@ GET /drives/{drive-id}/items/{item-id}/getActivitiesByInterval(startDateTime='20
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-activities-by-interval-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-activities-by-interval-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

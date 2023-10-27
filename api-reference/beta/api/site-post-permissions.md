@@ -16,14 +16,16 @@ Create a new [permission](../resources/permission.md) object on a site.
 
 >**Note:** You can only use this method to create a new application permission; you can't use it to create a new user site permission.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)
-|:--------------------------------------|:-------------------------------------
-|Delegated (work or school account)     | Not supported.
-|Delegated (personal Microsoft account) | Not supported.
-|Application                            | Sites.FullControl.All
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | Not supported.                              |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Sites.FullControl.All                       |
 
 ## HTTP request
 
@@ -52,6 +54,8 @@ If successful, this method returns a `201 Created` response code and a [permissi
 
 ### Request
 
+The following is an example of a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -59,26 +63,30 @@ If successful, this method returns a `201 Created` response code and a [permissi
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/sites/{sitesId}/permissions
+POST https://graph.microsoft.com/beta/sites/f2d90359-865b-4b6c-8848-d2722dd630e5/permissions
 Content-Type: application/json
 
 {
-   "roles":[
-      "write"
-   ],
-   "grantedToIdentities":[
-      {
-         "application":{
-            "id":"89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-            "displayName":"Contoso Time Manager App"
-         }
+  "roles": [
+    "write"
+  ],
+  "grantedToIdentities": [
+    {
+      "application": {
+        "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
+        "displayName": "Contoso Time Manager App"
       }
-   ]
+    }
+  ]
 }
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-permission-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-permission-from--cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -101,9 +109,15 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-permission-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-permission-from--python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
+
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -116,27 +130,27 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-   "id":"1",
-   "@deprecated.GrantedToIdentities": "GrantedToIdentities has been deprecated. Refer to GrantedToIdentitiesV2",
-   "roles":[
-      "write"
-   ],
-   "grantedToIdentities":[
-      {
-         "application":{
-            "id":"89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-            "displayName":"Contoso Time Manager App"
-         }
+  "id": "1",
+  "@deprecated.GrantedToIdentities": "GrantedToIdentities has been deprecated. Refer to GrantedToIdentitiesV2",
+  "roles": [
+    "write"
+  ],
+  "grantedToIdentities": [
+    {
+      "application": {
+        "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
+        "displayName": "Contoso Time Manager App"
       }
-   ],
-   "grantedToIdentitiesV2":[
-      {
-         "application":{
-            "id":"89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-            "displayName":"Contoso Time Manager App"
-         }
+    }
+  ],
+  "grantedToIdentitiesV2": [
+    {
+      "application": {
+        "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
+        "displayName": "Contoso Time Manager App"
       }
-   ]
+    }
+  ]
 }
 ```
 

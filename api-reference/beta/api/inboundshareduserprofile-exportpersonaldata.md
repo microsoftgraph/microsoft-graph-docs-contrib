@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Create a request to export the personal data for an [inboundSharedUserProfile](../resources/inboundshareduserprofile.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -81,6 +83,10 @@ POST https://graph.microsoft.com/beta/directory/inboundSharedUserProfiles/c228b2
 [!INCLUDE [sample-code](../includes/snippets/csharp/inboundshareduserprofile-exportpersonaldata-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/inboundshareduserprofile-exportpersonaldata-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/inboundshareduserprofile-exportpersonaldata-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -95,6 +101,10 @@ POST https://graph.microsoft.com/beta/directory/inboundSharedUserProfiles/c228b2
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/inboundshareduserprofile-exportpersonaldata-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/inboundshareduserprofile-exportpersonaldata-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

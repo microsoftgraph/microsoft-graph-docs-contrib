@@ -4,6 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Microsoft.Graph.Beta.Me.AssignLicense.AssignLicensePostRequestBody
@@ -12,7 +14,7 @@ var requestBody = new Microsoft.Graph.Beta.Me.AssignLicense.AssignLicensePostReq
 	{
 		new AssignedLicense
 		{
-			DisabledPlans = new List<8a256a2b-b617-496d-b51b-e76466e88db0>
+			DisabledPlans = new List<Guid?>
 			{
 				Guid.Parse("8a256a2b-b617-496d-b51b-e76466e88db0"),
 			},
@@ -20,13 +22,13 @@ var requestBody = new Microsoft.Graph.Beta.Me.AssignLicense.AssignLicensePostReq
 		},
 		new AssignedLicense
 		{
-			DisabledPlans = new List<String>
+			DisabledPlans = new List<string>
 			{
 			},
 			SkuId = Guid.Parse("f30db892-07e9-47e9-837c-80727f46fd3d"),
 		},
 	},
-	RemoveLicenses = new List<String>
+	RemoveLicenses = new List<string>
 	{
 	},
 };

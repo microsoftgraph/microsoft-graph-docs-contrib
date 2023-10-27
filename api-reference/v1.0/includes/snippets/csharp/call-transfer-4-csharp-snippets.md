@@ -4,6 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Microsoft.Graph.Communications.Calls.Item.Transfer.TransferPostRequestBody
@@ -17,7 +19,7 @@ var requestBody = new Microsoft.Graph.Communications.Calls.Item.Transfer.Transfe
 			AdditionalData = new Dictionary<string, object>
 			{
 				{
-					"phone" , new 
+					"phone" , new Identity
 					{
 						OdataType = "#microsoft.graph.identity",
 						Id = "+12345678901",

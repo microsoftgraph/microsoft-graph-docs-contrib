@@ -1,7 +1,7 @@
 ---
 title: "Get bitlockerRecoveryKey"
 description: "Retrieve the properties and relationships of a bitlockerRecoveryKey object."
-author: "hafowler"
+author: "myra-ramdenbourg"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -12,7 +12,9 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) object. 
 
-By default, this operation does not return the **key** property that represents the actual recovery key. To include the **key** property in the response, use the `$select` OData query parameter. Including the `$select` query parameter triggers an Azure AD audit of the operation and generates an audit log. For more information on audit logs for bitlocker recovery keys, see the KeyManagement category filter of [Azure AD audit logs](/azure/active-directory/reports-monitoring/concept-audit-logs).
+By default, this operation doesn't return the **key** property that represents the actual recovery key. To include the **key** property in the response, use the `$select` OData query parameter. Including the `$select` query parameter triggers a Microsoft Entra audit of the operation and generates an audit log. For more information on audit logs for bitlocker recovery keys, see the KeyManagement category filter of [Microsoft Entra audit logs](/azure/active-directory/reports-monitoring/concept-audit-logs).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -63,7 +65,7 @@ This method supports the `$select` OData query parameter to return the **key** p
 |ocp-client-version|The version of the client application performing the API call. This header is used for debugging purposes. Optional.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -74,15 +76,15 @@ If successful, this method returns a `200 OK` response code and a [bitlockerReco
 ### Example 1: Get the BitLocker key by specifying the key id
 
 #### Request
-The following is an example of the request. This example does not return the **key** property.
+Here's an example  of the request. This example doesn't return the **key** property.
 
 
 <!-- {
   "blockType": "request",
-  "name": "get_bitlockerrecoverykey"
+  "name": "get_bitlockerrecoverykey_1"
 }
 -->
-``` http
+```http
 GET https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4
 User-Agent: "Dsreg/10.0 (Windows 10.0.19043.1466)"
 ocp-client-name: "My Friendly Client"
@@ -91,7 +93,7 @@ ocp-client-version: "1.2"
 
 
 #### Response
-The following is an example of the response.
+Here's an example  of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -101,7 +103,7 @@ The following is an example of the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -120,15 +122,15 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+Here's an example  of the request.
 
 
 <!-- {
   "blockType": "request",
-  "name": "get_bitlockerrecoverykey_key"
+  "name": "get_bitlockerrecoverykey_key_2"
 }
 -->
-``` http
+```http
 GET https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4?$select=key
 User-Agent: "Dsreg/10.0 (Windows 10.0.19043.1466)"
 ocp-client-name: "My Friendly Client"
@@ -138,7 +140,7 @@ ocp-client-version: "1.2"
 
 #### Response
 
-The following is an example of the response.
+Here's an example  of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

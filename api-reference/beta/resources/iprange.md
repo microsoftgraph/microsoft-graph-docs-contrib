@@ -2,7 +2,7 @@
 title: "ipRange resource type"
 description: "IP range base class for representing IPV4 and IPV6 address ranges."
 ms.localizationpriority: medium
-author: "dkershaw10"
+author: "lisaychuang"
 ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
@@ -23,7 +23,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

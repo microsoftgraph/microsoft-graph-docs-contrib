@@ -24,9 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 
-When calling on behalf of a user, the user needs to belong to the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
-+ Global administrator
-+ Cloud device administrator
+When calling on behalf of a user, the user needs the *Cloud Device Administrator* [Microsoft Entra role](/azure/active-directory/roles/permissions-reference).
 
 ## HTTP request
 
@@ -47,18 +45,15 @@ PUT /policies/deviceRegistrationPolicy
 
 ## Request body
 
-In the request body, supply *only* the values for properties that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
-
-The following table specifies the properties that can be updated.
-
+In the request body, supply a JSON representation of a [deviceRegistrationPolicy](../resources/deviceregistrationpolicy.md) object with all the updatable properties. The following table specifies the properties that can be updated.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|userDeviceQuota|Int32|Specifies the maximum number of devices that a user can have within your organization before blocking new device registrations. |
-|multiFactorAuthConfiguration|multiFactorAuthConfiguration|Specifies the authentication policy for a user to complete registration using Azure AD Join or Azure AD registered within your organization. Possible values are: `notRequired` or `required`. |
-|azureADRegistration|[azureADRegistrationPolicy](../resources/azureadregistrationpolicy.md)|Specifies the authorization policy for controlling registration of new devices using Azure AD registration within your organization. Required. For more information, see [What is a device identity?](/azure/active-directory/devices/overview). If Intune is enabled this property cannot be modified.|
-|azureADJoin|[azureAdJoinPolicy](../resources/azureadjoinpolicy.md)|Specifies the authorization policy for controlling registration of new devices using Azure AD Join within your organization. Required. For more information, see [What is a device identity?](/azure/active-directory/devices/overview).|
-|localAdminPassword|[localAdminPasswordSettings](../resources/localadminpasswordsettings.md)| Specifies the setting for **Local Admin Password Solution (LAPS)** within your organization.|
+|userDeviceQuota|Int32| Required. Specifies the maximum number of devices that a user can have within your organization before blocking new device registrations. Required. |
+|multiFactorAuthConfiguration|multiFactorAuthConfiguration| Required. Specifies the authentication policy for a user to complete registration using Microsoft Entra join or Microsoft Entra registered within your organization. Possible values are: `notRequired` or `required`. |
+|azureADRegistration|[azureADRegistrationPolicy](../resources/azureadregistrationpolicy.md)| Required. Specifies the authorization policy for controlling registration of new devices using Microsoft Entra registration within your organization. Required. For more information, see [What is a device identity?](/azure/active-directory/devices/overview). If Intune is enabled this property cannot be modified.|
+|azureADJoin|[azureAdJoinPolicy](../resources/azureadjoinpolicy.md)| Required. Specifies the authorization policy for controlling registration of new devices using Microsoft Entra join within your organization. Required. For more information, see [What is a device identity?](/azure/active-directory/devices/overview).|
+|localAdminPassword|[localAdminPasswordSettings](../resources/localadminpasswordsettings.md)|  Required. Specifies the setting for **Local Admin Password Solution (LAPS)** within your organization.|
 
 ## Response
 
@@ -69,6 +64,7 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 ### Request
 
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_deviceregistrationpolicy"
@@ -96,12 +92,21 @@ Content-Type: application/json
         "allowedUsers": [],
         "allowedGroups": []
     },
-    localAdminPassword: {
+    "localAdminPassword": {
       "isEnabled": true
     }
 }
 ```
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-deviceregistrationpolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-deviceregistrationpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -135,7 +140,7 @@ Content-Type: application/json
         "allowedUsers": [],
         "allowedGroups": []
     },
-    localAdminPassword: {
+    "localAdminPassword": {
       "isEnabled": true
     }
 }

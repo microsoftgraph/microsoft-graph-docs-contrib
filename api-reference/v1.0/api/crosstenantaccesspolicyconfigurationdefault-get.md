@@ -11,7 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Read the [default configuration](../resources/crosstenantaccesspolicyconfigurationdefault.md) of a cross-tenant access policy. This default configuration may be the service default assigned by Azure AD (**isServiceDefault** is `true`) or may be customized in your tenant (**isServiceDefault** is `false`).
+Read the [default configuration](../resources/crosstenantaccesspolicyconfigurationdefault.md) of a cross-tenant access policy. This default configuration may be the service default assigned by Microsoft Entra ID (**isServiceDefault** is `true`) or may be customized in your tenant (**isServiceDefault** is `false`).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -42,7 +44,7 @@ GET /policies/crossTenantAccessPolicy/default
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -51,7 +53,6 @@ If successful, this method returns a `200 OK` response code and a [crossTenantAc
 ## Examples
 
 ### Request
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -66,6 +67,10 @@ GET https://graph.microsoft.com/v1.0/policies/crossTenantAccessPolicy/default
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-crosstenantaccesspolicyconfigurationdefault-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-crosstenantaccesspolicyconfigurationdefault-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -88,11 +93,15 @@ GET https://graph.microsoft.com/v1.0/policies/crossTenantAccessPolicy/default
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-crosstenantaccesspolicyconfigurationdefault-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-crosstenantaccesspolicyconfigurationdefault-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following response object shows a default cross-tenant policy inherited from Azure AD, as identified by **isServiceDefault** set to `true`.
+The following response object shows a default cross-tenant policy inherited from Microsoft Entra ID, as identified by **isServiceDefault** set to `true`.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -112,6 +121,11 @@ Content-Type: application/json
     "isMfaAccepted": false,
     "isCompliantDeviceAccepted": false,
     "isHybridAzureADJoinedDeviceAccepted": false,
+  },
+  "automaticUserConsentSettings":
+  {
+    "inboundAllowed": false,
+    "outboundAllowed": false
   },
   "b2bCollaborationOutbound":
   {

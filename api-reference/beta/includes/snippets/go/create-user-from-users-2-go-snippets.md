@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -31,7 +31,7 @@ password := "xWwvJ]6NMw+bWH-d"
 passwordProfile.SetPassword(&password) 
 requestBody.SetPasswordProfile(passwordProfile)
 
-result, err := graphClient.Users().Post(context.Background(), requestBody, nil)
+users, err := graphClient.Users().Post(context.Background(), requestBody, nil)
 
 
 ```

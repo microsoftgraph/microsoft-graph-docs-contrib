@@ -12,6 +12,8 @@ Namespace: microsoft.graph.security
 
 Get a list of [eDiscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) objects and their properties.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -37,7 +39,7 @@ GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/tags
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.security.ediscoveryreviewtag](../resources/security-ediscoveryreviewtag.md) objects in the response body.
@@ -61,6 +63,10 @@ GET https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/58399dff-ceb
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-ediscoveryreview-caseid-tag-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-ediscoveryreview-caseid-tag-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-ediscoveryreview-caseid-tag-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -81,10 +87,14 @@ GET https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/58399dff-ceb
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-ediscoveryreview-caseid-tag-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-ediscoveryreview-caseid-tag-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

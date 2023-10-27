@@ -18,6 +18,8 @@ Create a new [accessPackage](../resources/accesspackage.md) object.
 The access package will be added to an existing [accessPackageCatalog](../resources/accesspackagecatalog.md). After the access package is created, you can then create [accessPackageAssignmentPolicies](../resources/accesspackageassignmentpolicy.md) which specify how users are assigned to the access package.
 
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,7 +47,16 @@ POST /identityGovernance/entitlementManagement/accessPackages
 
 ## Request body
 
-In the request body, supply a JSON representation of an [accessPackage](../resources/accesspackage.md) object.
+In the request body, supply a JSON representation of the [accessPackage](../resources/accesspackage.md) object.
+
+You can specify the following properties when creating an **accessPackage**.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|catalogId|String| Required. The ID of the catalog that's linked to this access package.|
+|displayName|String|Required. The display name of the access package.|
+|description|String|Optional. The description of the access package.|
+|isHidden|Boolean|Optional. Whether the access package is hidden from the requestor.|
 
 ## Response
 
@@ -55,7 +66,7 @@ If successful, this method returns a 201 Created response code and a new [access
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -78,6 +89,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackage-from-accesspackages-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-accesspackage-from-accesspackages-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-accesspackage-from-accesspackages-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -98,11 +113,15 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-accesspackage-from-accesspackages-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-accesspackage-from-accesspackages-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

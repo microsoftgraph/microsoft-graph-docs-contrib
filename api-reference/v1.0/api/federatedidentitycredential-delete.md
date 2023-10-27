@@ -1,7 +1,7 @@
 ---
 title: "Delete federatedIdentityCredential"
 description: "Delete a federatedIdentityCredential object."
-author: "shahzad-khalid"
+author: "nickludwig"
 ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: apiPageType
@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 
 Delete a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object from an application.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -25,14 +27,15 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
-DELETE /applications/{id}/federatedIdentityCredentials/{federatedIdentityCredentialId}
+You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
 
+You can also address the federated identity credential with either its **id** or **name**.
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE /applications/{id}/federatedIdentityCredentials/{federatedIdentityCredentialId}
 DELETE /applications/{id}/federatedIdentityCredentials/{federatedIdentityCredentialName}
+DELETE /applications(appId='{appId}')/federatedIdentityCredentials/{federatedIdentityCredentialId}
+DELETE /applications(appId='{appId}')/federatedIdentityCredentials/{federatedIdentityCredentialName}
 ```
 
 ## Request headers
@@ -41,7 +44,7 @@ DELETE /applications/{id}/federatedIdentityCredentials/{federatedIdentityCredent
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -67,6 +70,10 @@ DELETE https://graph.microsoft.com/v1.0/applications/bcd7c908-1c4d-4d48-93ee-ff3
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-federatedidentitycredential-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-federatedidentitycredential-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-federatedidentitycredential-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -85,6 +92,10 @@ DELETE https://graph.microsoft.com/v1.0/applications/bcd7c908-1c4d-4d48-93ee-ff3
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-federatedidentitycredential-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-federatedidentitycredential-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

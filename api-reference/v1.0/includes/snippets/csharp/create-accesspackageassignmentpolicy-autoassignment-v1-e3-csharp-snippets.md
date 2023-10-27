@@ -4,6 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new AccessPackageAssignmentPolicy
@@ -13,23 +15,18 @@ var requestBody = new AccessPackageAssignmentPolicy
 	AllowedTargetScope = AllowedTargetScope.SpecificDirectoryUsers,
 	SpecificAllowedTargets = new List<SubjectSet>
 	{
-		new SubjectSet
+		new AttributeRuleMembers
 		{
 			OdataType = "#microsoft.graph.attributeRuleMembers",
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"description" , "Membership rule for all users from sales department"
-				},
-				{
-					"membershipRule" , "(user.department -eq \"Sales\")"
-				},
-			},
+			Description = "Membership rule for all users from sales department",
+			MembershipRule = "(user.department -eq \"Sales\")",
 		},
 	},
 	AutomaticRequestSettings = new AccessPackageAutomaticRequestSettings
 	{
 		RequestAccessForAllowedTargets = true,
+		RemoveAccessWhenTargetLeavesAllowedTargets = true,
+		GracePeriodBeforeAccessRemoval = TimeSpan.Parse("P7D"),
 	},
 	AccessPackage = new AccessPackage
 	{

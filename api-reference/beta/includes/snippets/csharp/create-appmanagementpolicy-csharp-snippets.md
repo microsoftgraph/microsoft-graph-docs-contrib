@@ -4,6 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new AppManagementPolicy
@@ -24,7 +26,7 @@ var requestBody = new AppManagementPolicy
 			new PasswordCredentialConfiguration
 			{
 				RestrictionType = AppCredentialRestrictionType.PasswordLifetime,
-				MaxLifetime = TimeSpan.Parse("P4DT12H30M5S"),
+				MaxLifetime = TimeSpan.Parse("P90D"),
 				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2014-10-19T10:37:00Z"),
 			},
 			new PasswordCredentialConfiguration
@@ -36,7 +38,7 @@ var requestBody = new AppManagementPolicy
 			new PasswordCredentialConfiguration
 			{
 				RestrictionType = AppCredentialRestrictionType.SymmetricKeyLifetime,
-				MaxLifetime = TimeSpan.Parse("P4D"),
+				MaxLifetime = TimeSpan.Parse("P30D"),
 				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2014-10-19T10:37:00Z"),
 			},
 		},
@@ -47,6 +49,17 @@ var requestBody = new AppManagementPolicy
 				RestrictionType = AppKeyCredentialRestrictionType.AsymmetricKeyLifetime,
 				MaxLifetime = TimeSpan.Parse("P90D"),
 				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2014-10-19T10:37:00Z"),
+			},
+			new KeyCredentialConfiguration
+			{
+				RestrictionType = AppKeyCredentialRestrictionType.TrustedCertificateAuthority,
+				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2019-10-19T10:37:00Z"),
+				CertificateBasedApplicationConfigurationIds = new List<string>
+				{
+					"eec5ba11-2fc0-4113-83a2-ed986ed13743",
+					"bb8e164b-f9ed-4b98-bc45-65eddc14f4c1",
+				},
+				MaxLifetime = null,
 			},
 		},
 	},

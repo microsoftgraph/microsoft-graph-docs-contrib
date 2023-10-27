@@ -4,6 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Conversation
@@ -24,14 +26,12 @@ var requestBody = new Conversation
 					},
 					Extensions = new List<Extension>
 					{
-						new Extension
+						new OpenTypeExtension
 						{
 							OdataType = "microsoft.graph.openTypeExtension",
+							ExtensionName = "Com.Contoso.Benefits",
 							AdditionalData = new Dictionary<string, object>
 							{
-								{
-									"extensionName" , "Com.Contoso.Benefits"
-								},
 								{
 									"companyName" , "Contoso"
 								},

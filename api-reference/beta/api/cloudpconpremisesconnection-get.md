@@ -16,6 +16,9 @@ Namespace: microsoft.graph
 Read the properties and relationships of the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.
 
 [!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -49,7 +52,7 @@ This method supports `$select` OData query parameter to help customize the respo
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -77,6 +80,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremises
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-cloudpconpremisesconnection-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-cloudpconpremisesconnection-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-cloudpconpremisesconnection-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -95,6 +102,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremises
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-cloudpconpremisesconnection-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-cloudpconpremisesconnection-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -152,6 +163,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremises
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-cloudpconpremisesconnection-withdetails-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-cloudpconpremisesconnection-withdetails-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-cloudpconpremisesconnection-withdetails-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -170,6 +185,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremises
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-cloudpconpremisesconnection-withdetails-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-cloudpconpremisesconnection-withdetails-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -207,7 +226,8 @@ Content-Type: application/json
           "endDateTime": "2020-11-03T12:43:15Z",
           "errorType": "dnsCheckFqdnNotFound",
           "recommendedAction": "We did not find the provided domain name; please re-enter",
-          "additionalDdetails": null
+          "additionalDdetails": null,
+          "correlationId": "992e64f0-231c-46b0-8918-c5aed0585f53"
         },
         {
           "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionHealthCheck",
@@ -217,7 +237,8 @@ Content-Type: application/json
           "endDateTime": "2020-11-03T12:43:26Z",
           "errorType": null,
           "recommendedAction": null,
-          "additionalDetails": null
+          "additionalDetails": null,
+          "correlationId": null
         },
         {
           "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionHealthCheck",
@@ -227,7 +248,8 @@ Content-Type: application/json
           "endDateTime": "2020-11-03T12:43:32Z",
           "errorType": "endpointConnectivityCheckUrlNotWhitelisted",
           "recommendedAction": "Recommended Action value",
-          "additionaldDetails": "Additional Details value"
+          "additionaldDetails": "Additional Details value",
+          "correlationId": "119f8363-ace2-412b-a79a-867dc0737db0"
         },
         {
           "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionHealthCheck",
@@ -237,7 +259,8 @@ Content-Type: application/json
           "endDateTime": null,
           "errorType": null,
           "recommendedAction": null,
-          "additionaldDetails": null
+          "additionaldDetails": null,
+          "correlationId": "119f8363-ace2-412b-a79a-867dc0737db0"
         }
       ]
     },

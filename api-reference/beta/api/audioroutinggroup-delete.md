@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Delete the specified [audioRoutingGroup](../resources/audioroutinggroup.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -38,14 +40,14 @@ DELETE /communications/calls/{id}/audioRoutingGroups/{id}
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 
-##### Request
+### Request
 The following example shows the request.
 
 
@@ -60,6 +62,10 @@ DELETE https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGr
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-audioroutinggroup-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-audioroutinggroup-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -82,9 +88,13 @@ DELETE https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGr
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-audioroutinggroup-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-audioroutinggroup-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
+### Response
 
 > **Note:** The response object shown here might be shortened for readability.
 

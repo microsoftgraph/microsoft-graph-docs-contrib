@@ -38,7 +38,7 @@ POST /deviceManagement/virtualEndpoint/crossCloudGovernmentOrganizationMapping
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
-|X-MS-CloudPC-USGovCloudTenantAADToken|{token}. Required. Represents the Azure AD token of the government cloud tenant.|
+|X-MS-CloudPC-USGovCloudTenantAADToken|{token}. Required. Represents the Microsoft Entra token of the government cloud tenant.|
 
 ## Request body
 The request body is an empty JSON string.
@@ -65,24 +65,12 @@ X-MS-CloudPC-USGovCloudTenantAADToken: {token}
 {}
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-cloudpccrosscloudgovernmentorganizationmapping-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-cloudpccrosscloudgovernmentorganizationmapping-from--go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-cloudpccrosscloudgovernmentorganizationmapping-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-cloudpccrosscloudgovernmentorganizationmapping-from--javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-cloudpccrosscloudgovernmentorganizationmapping-from--php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -106,4 +94,3 @@ Content-Type: application/json
   ]
 }
 ```
-

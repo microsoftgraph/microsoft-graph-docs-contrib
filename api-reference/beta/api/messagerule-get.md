@@ -1,7 +1,7 @@
 ---
 title: "Get rule"
 description: "Get the properties and relationships of a messageRule object."
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get the properties and relationships of a [messageRule](../resources/messagerule.md) object.
 
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -41,7 +43,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and [messageRule](../resources/messagerule.md) object in the response body.
 ## Example
@@ -60,6 +62,10 @@ GET https://graph.microsoft.com/beta/me/mailFolders/inbox/messageRules/AQAAAJ5dZ
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-messagerule-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-messagerule-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -82,10 +88,14 @@ GET https://graph.microsoft.com/beta/me/mailFolders/inbox/messageRules/AQAAAJ5dZ
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-messagerule-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-messagerule-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
-Here is an example of the response. By default, the date-time properties in the response are in UTC. 
+Here is an example of the response. By default, the date-time properties in the response are in UTC.
 
 Note: The response object shown here might be shortened for readability.
 <!-- {

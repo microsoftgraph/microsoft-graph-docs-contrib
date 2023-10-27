@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/10/2017
 title: List the contents of a folder
 ms.localizationpriority: high
@@ -15,6 +15,8 @@ Return a collection of [DriveItems](../resources/driveitem.md) in the **children
 
 DriveItems with a non-null **folder** or **package** facet can have one or more child DriveItems.
 
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -66,6 +68,10 @@ GET /me/drive/root/children
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-children-root-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-children-root-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-children-root-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -86,6 +92,10 @@ GET /me/drive/root/children
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-children-root-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-children-root-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### List children of a DriveItem with a known ID
@@ -102,6 +112,10 @@ GET /drives/{drive-id}/items/{item-id}/children
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-children-files-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-children-files-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -124,6 +138,10 @@ GET /drives/{drive-id}/items/{item-id}/children
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-children-files-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-children-files-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### List children of a DriveItem with a known path
@@ -139,8 +157,8 @@ GET /drives/{drive-id}/root:/{path-relative-to-root}:/children
 If successful, this method returns the list of items in the children collection of the target item.
 The children collection will be composed of [driveItem][item-resource] resources.
 
-<!-- { "blockType": "response", 
-       "@odata.type": "Collection(microsoft.graph.driveItem)", 
+<!-- { "blockType": "response",
+       "@odata.type": "Collection(microsoft.graph.driveItem)",
        "truncated": true,
        "name": [ "list-children-root", "list-children-files", "list-children-from-path" ] } -->
 

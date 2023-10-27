@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Planner
+Import-Module Microsoft.Graph.Beta.Planner
 
 $params = @{
 	container = @{
@@ -13,6 +13,6 @@ $params = @{
 	title = "title-value"
 }
 
-New-MgPlannerPlan -BodyParameter $params
+New-MgBetaPlannerPlan -BodyParameter $params
 
 ```

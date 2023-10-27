@@ -1,12 +1,12 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "Get the collection of lists for a site."
 title: List the SharePoint lists in a site
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
-# Enumerate lists in a site
+# Get lists in a site
 
 Namespace: microsoft.graph
 
@@ -16,6 +16,8 @@ Get the collection of [lists][] for a [site][].
 
 Lists with the [system][] facet are hidden by default.
 To list them, include `system` in your `$select` statement.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -41,11 +43,11 @@ GET /sites/{site-id}/lists
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [list][] objects in the response body. 
+If successful, this method returns a `200 OK` response code and a collection of [list][] objects in the response body.
 
 ## Example
 
@@ -63,6 +65,10 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/enum-lists-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/enum-lists-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -85,11 +91,15 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 [!INCLUDE [sample-code](../includes/snippets/powershell/enum-lists-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/enum-lists-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "isCollection": true, "truncated": true } -->
 

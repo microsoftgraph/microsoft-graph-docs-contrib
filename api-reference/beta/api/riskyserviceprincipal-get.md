@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [riskyServicePrincipal](../resources/riskyserviceprincipal.md) object.
 
->**Note:** Using the riskyServicePrincipal API requires an Entra Workload Identity Premium license.
+>**Note:** Using the riskyServicePrincipal API requires a Microsoft Entra Workload ID Premium license.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -24,6 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|IdentityRiskyServicePrincipal.Read.All, IdentityRiskyServicePrincipal.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|IdentityRiskyServicePrincipal.Read.All, IdentityRiskyServicePrincipal.ReadWrite.All|
+
+[!INCLUDE [rbac-identity-protection-apis-read](../../beta/includes/rbac-for-apis/rbac-identity-protection-apis-read.md)]
 
 ## HTTP request
 
@@ -41,7 +45,7 @@ GET /identityProtection/riskyServicePrincipals/{riskyServicePrincipalId}
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -66,6 +70,10 @@ GET https://graph.microsoft.com/beta/identityProtection/riskyServicePrincipals/9
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-riskyserviceprincipal-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-riskyserviceprincipal-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-riskyserviceprincipal-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -84,6 +92,10 @@ GET https://graph.microsoft.com/beta/identityProtection/riskyServicePrincipals/9
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-riskyserviceprincipal-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-riskyserviceprincipal-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -115,4 +127,3 @@ Content-Type: application/json
   }
 }
 ```
-

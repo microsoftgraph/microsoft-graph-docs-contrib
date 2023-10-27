@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -31,7 +31,7 @@ allowStaffSelection := true
 schedulingPolicy.SetAllowStaffSelection(&allowStaffSelection) 
 requestBody.SetSchedulingPolicy(schedulingPolicy)
 
-result, err := graphClient.BookingBusinesses().ByBookingBusinesseId("bookingBusiness-id").Patch(context.Background(), requestBody, nil)
+bookingBusinesses, err := graphClient.BookingBusinesses().ByBookingBusinessId("bookingBusiness-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

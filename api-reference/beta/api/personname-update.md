@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Update the properties of a [personName](../resources/personname.md) object in a user's [profile](../resources/profile.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -43,7 +45,7 @@ PATCH /users/{id | userPrincipalName}/profile/names/{id}
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintains their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 The following table shows the properties that are possible to update within an existing [personName](../resources/personname.md) object in a user's [profile](../resources/profile.md).
 
@@ -60,8 +62,8 @@ The following table shows the properties that are possible to update within an e
 |middle|String|Middle name of the user.|
 |nickname|String|Nickname of the user.|
 |pronunciation|[yomiPersonName](../resources/yomipersonname.md)|Guidance on how to pronounce the users name.|
-|suffix|String|Designators used after the users name (eg: PhD.)  |
-|title|String|Honorifics used to prefix a users name (eg: Dr, Sir, Madam, Mrs.)|
+|suffix|String|Designators used after the users' name (for example: PhD.)  |
+|title|String|Honorifics used to prefix a users' name (for example: Dr, Sir, Madam, Mrs.)|
 
 ## Response
 
@@ -71,7 +73,7 @@ If successful, this method returns a `200 OK` response code and an updated [pers
 
 ### Request
 
-The following is an example of the request.
+Here's an example  of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -91,6 +93,10 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-personname-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-personname-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -113,11 +119,15 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/update-personname-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-personname-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following is an example of the response.
+Here's an example  of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

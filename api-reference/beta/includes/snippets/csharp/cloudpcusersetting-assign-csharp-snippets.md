@@ -4,6 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Microsoft.Graph.Beta.DeviceManagement.VirtualEndpoint.UserSettings.Item.Assign.AssignPostRequestBody
@@ -13,15 +15,10 @@ var requestBody = new Microsoft.Graph.Beta.DeviceManagement.VirtualEndpoint.User
 		new CloudPcUserSettingAssignment
 		{
 			Id = "b0c2d35f-3385-46c8-a6f5-6c3dfad7708b_64ff06de-9c00-4a5a-98b5-7f5abe26ffff",
-			Target = new CloudPcManagementAssignmentTarget
+			Target = new CloudPcManagementGroupAssignmentTarget
 			{
 				OdataType = "microsoft.graph.cloudPcManagementGroupAssignmentTarget",
-				AdditionalData = new Dictionary<string, object>
-				{
-					{
-						"groupId" , "64ff06de-9c00-4a5a-98b5-7f5abe26ffff"
-					},
-				},
+				GroupId = "64ff06de-9c00-4a5a-98b5-7f5abe26ffff",
 			},
 		},
 	},

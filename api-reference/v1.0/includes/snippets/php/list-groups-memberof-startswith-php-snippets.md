@@ -6,23 +6,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestConfiguration = new GroupRequestBuilderGetRequestConfiguration();
+$requestConfiguration = new GraphGroupRequestBuilderGetRequestConfiguration();
 $headers = [
 		'ConsistencyLevel' => 'eventual',
 	];
 $requestConfiguration->headers = $headers;
 
-$queryParameters = GroupRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters = GraphGroupRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->count = true;
 $queryParameters->orderby = ["displayName"];
-$queryParameters->filter = "startswith(displayName,%20'A')";
+$queryParameters->filter = "startswith(displayName, 'A')";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->groupsById('group-id')->memberOf()->graphGroup()->get($requestConfiguration);
-
+$result = $graphServiceClient->groups()->byGroupId('group-id')->memberOf()->graphGroup()->get($requestConfiguration)->wait();
 
 ```

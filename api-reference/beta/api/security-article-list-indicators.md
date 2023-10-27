@@ -13,17 +13,21 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
+
 Get a list of [articleIndicator](../resources/security-articleindicator.md) objects that represent indicators of threat or compromise related to the contents of an [article](../resources/security-article.md).
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|ThreatIntelligence.Read.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|ThreatIntelligence.Read.All|
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | ThreatIntelligence.Read.All                 |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | ThreatIntelligence.Read.All                 |
 
 ## HTTP request
 
@@ -31,7 +35,8 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 GET /security/threatIntelligence/articles/{articleId}/indicators
 ```
 
@@ -41,13 +46,13 @@ This method supports the `$count`, `$select`, `$top`, and `$skip` OData query pa
 
 ## Request headers
 
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -58,19 +63,26 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 The following is an example of a request.
+
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "list_articleindicator",
   "sampleKeys": ["a272d5ab"]
 }
 -->
-``` http
+
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/threatIntelligence/articles/a272d5ab/indicators
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-articleindicator-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-articleindicator-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -89,19 +101,26 @@ GET https://graph.microsoft.com/beta/security/threatIntelligence/articles/a272d5
 [!INCLUDE [sample-code](../includes/snippets/php/list-articleindicator-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-articleindicator-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability.
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "Collection(microsoft.graph.security.articleIndicator)"
 }
 -->
-``` json
+
+```json
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -110,7 +129,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.security.articleIndicator",
       "id": "ZmFrZS1tYWxpY2lvdXMuc2l0ZQ==",
-      "source": "microsoftDefenderThreatIntelligence",
+      "source": "microsoft",
       "artifact": {
           "@odata.type": "#microsoft.graph.security.hostname",
           "id": "fake-malicious.site"

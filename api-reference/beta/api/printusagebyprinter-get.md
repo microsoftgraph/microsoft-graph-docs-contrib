@@ -18,6 +18,8 @@ Retrieve a [printer](../resources/printer.md)'s usage summary for a particular t
 
 For descriptions of each of the endpoints, see [printUsageByPrinter](../resources/printUsageByPrinter.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -47,24 +49,59 @@ This method supports some of the OData query parameters to help customize the re
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and a [printUsageByPrinter](../resources/printUsageByPrinter.md) object in the response body.
 ## Example
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_printUsageByPrinter",
   "sampleKeys": ["016b5565-3bbf-4067-b9ff-4d68167eb1a6"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/print/reports/dailyPrintUsageByPrinter/016b5565-3bbf-4067-b9ff-4d68167eb1a6
+GET https://graph.microsoft.com/beta/reports/dailyPrintUsageByPrinter/016b5565-3bbf-4067-b9ff-4d68167eb1a6
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-printusagebyprinter-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-printusagebyprinter-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-printusagebyprinter-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-printusagebyprinter-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-printusagebyprinter-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-printusagebyprinter-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-printusagebyprinter-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-printusagebyprinter-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -78,10 +115,18 @@ Content-type: application/json
 {
     "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
     "printerId": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
+    "printerName": "printerName1",
     "usageDate": "2020-02-04T00:00:00.0000000Z",
-    "completedBlackAndWhiteJobCount": 42,
-    "completedColorJobCount": 0,
-    "incompleteJobCount": 6
+    "completedJobCount": 110,
+    "completedBlackAndWhiteJobCount": 1,
+    "completedColorJobCount": 109,
+    "incompleteJobCount": 13,
+    "pageCount": 138,
+    "blackAndWhitePageCount": 0,
+    "colorPageCount": 138,
+    "mediaSheetCount": 132,
+    "doubleSidedSheetCount": 12,
+    "singleSidedSheetCount": 120
 }
 ```
 

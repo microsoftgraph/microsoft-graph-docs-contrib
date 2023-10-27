@@ -2,7 +2,7 @@
 title: "verifiedDomain resource type"
 description: "Specifies a domain for a tenant. The verifiedDomains property of the organization entity is a collection of verifiedDomain objects."
 ms.localizationpriority: medium
-author: "jumasure"
+author: "adimitui"
 ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
@@ -25,7 +25,7 @@ Specifies a domain for a tenant. The **verifiedDomains** property of the [organi
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+Here's a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",

@@ -4,6 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Chat
@@ -12,7 +14,7 @@ var requestBody = new Chat
 	Topic = "Group chat title",
 	Members = new List<ConversationMember>
 	{
-		new ConversationMember
+		new AadUserConversationMember
 		{
 			OdataType = "#microsoft.graph.aadUserConversationMember",
 			Roles = new List<string>
@@ -26,7 +28,7 @@ var requestBody = new Chat
 				},
 			},
 		},
-		new ConversationMember
+		new AadUserConversationMember
 		{
 			OdataType = "#microsoft.graph.aadUserConversationMember",
 			Roles = new List<string>
@@ -40,7 +42,7 @@ var requestBody = new Chat
 				},
 			},
 		},
-		new ConversationMember
+		new AadUserConversationMember
 		{
 			OdataType = "#microsoft.graph.aadUserConversationMember",
 			Roles = new List<string>

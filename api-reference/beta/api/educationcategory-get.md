@@ -1,6 +1,6 @@
 ---
 title: "Get educationCategory"
-description: "Retrieve a category object."
+description: "Retrieve an educationCategory object."
 author: "Sureshpadimi88"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve an [educationCategory](../resources/educationcategory.md) object. Only teachers, students, and applications with application permissions can perform this operation.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -33,9 +35,8 @@ GET /education/classes/{id}/assignmentCategories/{id}
 ```
 
 ## Optional query parameters
-This method supports the `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 | Header        | Value                     |
@@ -44,22 +45,22 @@ This method supports the `$select` OData query parameters to help customize the 
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [educationCategory](../resources/educationcategory.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [educationCategory](../resources/educationcategory.md) object in the response body.
 
 ## Example
 
-##### Request
+### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["dacbf757-888d-42ae-b701-5e57cec300ae"],
+  "sampleKeys": ["dacbf757-888d-42ae-b701-5e57cec300ae", "7f64924d-4cdb-4e54-8c37-c0f3d46f0747"],
   "name": "get_class_category"
 }-->
 
@@ -69,6 +70,10 @@ GET https://graph.microsoft.com/beta/education/classes/dacbf757-888d-42ae-b701-5
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-class-category-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-class-category-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -91,19 +96,22 @@ GET https://graph.microsoft.com/beta/education/classes/dacbf757-888d-42ae-b701-5
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-class-category-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-class-category-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
+### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.educationCategory",
-  "isCollection": false
+  "@odata.type": "microsoft.graph.educationCategory"
 } -->
 
 ```http

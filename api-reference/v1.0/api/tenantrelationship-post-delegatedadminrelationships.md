@@ -1,9 +1,9 @@
 ---
 title: "Create delegatedAdminRelationship"
 description: "Create a new delegatedAdminRelationship object."
-author: "koravva"
+author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: "customer-relationship-management"
+ms.prod: partner-customer-administration
 doc_type: apiPageType
 ---
 
@@ -11,6 +11,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Create a new [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,6 +47,7 @@ You can specify the following properties when creating a **delegatedAdminRelatio
 |Property|Type|Description|
 |:---|:---|:---|
 |accessDetails|[microsoft.graph.delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The identifiers of the administrative roles that the partner requests or has access to in the customer tenant. Required.|
+|autoExtendDuration|Duration| The duration by which the validity of the relationship is automatically extended, denoted in ISO 8601 format. Supported values are: `P0D`, `PT0S`, `P180D`. The default value is `PT0S`. `PT0S` indicates that the relationship expires when the **endDateTime** is reached and it isn't automatically extended. Optional.|
 |customer|[microsoft.graph.delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|The display name and unique identifier of the customer of the relationship. Optional.|
 |displayName|String|The display name of the relationship used for ease of identification. Must be unique across *all* delegated admin relationships of the partner. Required.|
 |duration|Duration|The duration of the relationship in ISO 8601 format. Must be a value between `P1D` and `P2Y` inclusive. Required.|
@@ -84,12 +87,17 @@ Content-Type: application/json
         "roleDefinitionId": "3a2c62db-5318-420d-8d74-23affee5d9d5"
       }
     ]
-  }
+  },
+  "autoExtendDuration": "P180D"
 }
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-delegatedadminrelationship-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-delegatedadminrelationship-from--cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -106,6 +114,14 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-delegatedadminrelationship-from--php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-delegatedadminrelationship-from--powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-delegatedadminrelationship-from--python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -145,6 +161,7 @@ Location: https://graph.microsoft.com/v1.0/tenantRelationships/delegatedAdminRel
     ]
   },
   "status": "created",
+  "autoExtendDuration": "P180D",
   "createdDateTime": "2022-02-10T11:24:42.3148266Z",
   "lastModifiedDateTime": "2022-02-10T11:24:42.3148266Z",
   "activatedDateTime": "",

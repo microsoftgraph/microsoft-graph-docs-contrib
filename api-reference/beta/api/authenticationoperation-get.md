@@ -2,7 +2,7 @@
 title: "Get authentication operation"
 description: "Retrieve the properties and relationships of an operation object."
 ms.localizationpriority: medium
-author: "mmcla"
+author: "jpettere"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -21,6 +21,8 @@ Retrieve the properties and relationships of an [operation](../resources/operati
 * Failed
 
 `Succeeded` and `Failed` are terminal states.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -54,7 +56,7 @@ This method does not support optional query parameters to customize the response
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -64,7 +66,7 @@ If successful, this method returns a `200 OK` response code and the requested [o
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -78,6 +80,10 @@ GET /users/{id | userPrincipalName}/authentication/operations/{id}
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-operation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-operation-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -100,11 +106,15 @@ GET /users/{id | userPrincipalName}/authentication/operations/{id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-operation-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-operation-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

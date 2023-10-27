@@ -1,7 +1,7 @@
 ---
 title: "Delete smsAuthenticationMethodConfiguration"
-description: "Delete a smsAuthenticationMethodConfiguration object."
-author: "jpettere"
+description: "Delete an smsAuthenticationMethodConfiguration object."
+author: "luc-msft"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -10,7 +10,9 @@ doc_type: apiPageType
 # Delete smsAuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
-Remove changes made to the [text message authentication method policy](../resources/smsauthenticationmethodconfiguration.md) by reverting the policy to its default configuration.
+Remove changes made to the [SMS authentication method policy](../resources/smsauthenticationmethodconfiguration.md) by reverting the policy to its default configuration.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -39,7 +41,7 @@ DELETE /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -48,7 +50,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+Here's an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -61,6 +63,10 @@ DELETE https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/aut
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-smsauthenticationmethodconfiguration-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-smsauthenticationmethodconfiguration-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -83,10 +89,14 @@ DELETE https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/aut
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-smsauthenticationmethodconfiguration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-smsauthenticationmethodconfiguration-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
-The following is an example of the response
+Here's an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true

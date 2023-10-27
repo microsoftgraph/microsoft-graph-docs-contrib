@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2188
+Content-Length: 2425
 
 {
   "value": [
@@ -95,6 +95,10 @@ Content-Length: 2188
       "enabledSkipKeys": [
         "Enabled Skip Keys value"
       ],
+      "enrollmentTimeAzureAdGroupIds": [
+        "7f64eb6c-eb6c-7f64-6ceb-647f6ceb647f"
+      ],
+      "waitForDeviceConfiguredConfirmation": true,
       "registrationDisabled": true,
       "fileVaultDisabled": true,
       "iCloudDiagnosticsDisabled": true,
@@ -113,7 +117,9 @@ Content-Length: 2188
       "adminAccountUserName": "Admin Account User Name value",
       "adminAccountFullName": "Admin Account Full Name value",
       "adminAccountPassword": "Admin Account Password value",
-      "hideAdminAccount": true
+      "hideAdminAccount": true,
+      "requestRequiresNetworkTether": true,
+      "autoAdvanceSetupEnabled": true
     }
   ]
 }

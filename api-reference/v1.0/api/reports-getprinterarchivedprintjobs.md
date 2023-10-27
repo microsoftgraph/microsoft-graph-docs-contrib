@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Get a list of archived print jobs that were queued for particular [printer](../resources/printer.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -30,7 +32,7 @@ In addition to the following permissions, the user's tenant must have an active 
 }
 -->
 ``` http
-GET /reports/getPrinterArchivedPrintJobs
+GET /reports/getPrinterArchivedPrintJobs(printerId='{printerId}',startDateTime='{startDateTime}',endDateTime='{endDateTime}')
 ```
 
 ## Function parameters
@@ -50,7 +52,7 @@ In the request URL, provide the following function parameters with values:
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -73,6 +75,10 @@ GET https://graph.microsoft.com/v1.0/reports/getPrinterArchivedPrintJobs(printer
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getprinterarchivedprintjobs-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/reportroot-getprinterarchivedprintjobs-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/reportroot-getprinterarchivedprintjobs-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -83,6 +89,10 @@ GET https://graph.microsoft.com/v1.0/reports/getPrinterArchivedPrintJobs(printer
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/reportroot-getprinterarchivedprintjobs-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/reportroot-getprinterarchivedprintjobs-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -103,9 +113,23 @@ Content-Type: application/json
   "value": [
     {
       "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
-      "printerId": "fe6ff85a-f0d3-4c4f-aec6-b9d5154356a1",
-      "createdBy": {},
-      "processingState": "completed"
+      "printerId": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
+      "printerName": "printerName1",
+      "processingState": "completed",
+      "createdDateTime": "2023-06-29T00:00:00.0000000Z",
+      "acquiredDateTime": "2023-06-29T00:00:01.0000000Z",
+      "completionDateTime": "2023-06-29T00:00:02.0000000Z",
+      "acquiredByPrinter": true,
+      "copiesPrinted": 1,
+      "pageCount": 1,
+      "blackAndWhitePageCount": 1,
+      "colorPageCount": 0,
+      "simplexPageCount": 0,
+      "duplexPageCount": 1,
+      "createdBy": {
+        "displayName": "username",
+        "userPrincipalName": "username@contoso.com",
+      }
     }
   ]
 }

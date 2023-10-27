@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Use this API to create a new [personName](../resources/personname.md) object in a user's [profile](../resources/profile.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -60,8 +62,8 @@ The following table shows the properties that are possible to set when you creat
 |middle|String|Middle name of the user.|
 |nickname|String|Nickname of the user.|
 |pronunciation|[yomiPersonName](../resources/yomipersonname.md)|Guidance on how to pronounce the users name.|
-|suffix|String|Designators used after the users name (eg: PhD.)  |
-|title|String|Honorifics used to prefix a users name (eg: Dr, Sir, Madam, Mrs.)|
+|suffix|String|Designators used after the users name (for example: PhD.)  |
+|title|String|Honorifics used to prefix a users' name (for example: Dr, Sir, Madam, Mrs.)|
 
 ## Response
 
@@ -71,7 +73,7 @@ If successful, this method returns `201, Created` response code and a new [perso
 
 ### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 
@@ -98,6 +100,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-personname-from-profilev2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-personname-from-profilev2-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-personname-from-profilev2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -118,11 +124,15 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-personname-from-profilev2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-personname-from-profilev2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

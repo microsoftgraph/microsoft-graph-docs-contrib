@@ -2,7 +2,7 @@
 title: "post: forward"
 description: "Forward a post to a recipient. You can specify both the parent conversation and thread in the request, "
 ms.localizationpriority: medium
-author: "dkershaw10"
+author: "mikemcleanlive"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Forward a post to a recipient. You can specify both the parent conversation and thread in the request, 
 or, you can specify just the parent thread without the parent conversation. 
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,14 +40,14 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/forward
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter	   | Type	|Description|
+| Parameter       | Type    |Description|
 |:---------------|:--------|:----------|
 |comment|String|Optional comment that is forwarded together with the post.|
 |toRecipients|[recipient](../resources/recipient.md) collection|The recipients to whom the threaded is forwarded to.|
 
 ## Response
 
-If successful, this method returns `200 OK` response code. It does not return anything in the response body.
+If successful, this method returns `200 OK` response code. It doesn't return anything in the response body.
 
 ## Example
 Here is an example of how to call this API.
@@ -78,6 +80,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-forward-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/post-forward-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-forward-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -96,6 +102,10 @@ Content-type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/post-forward-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/post-forward-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

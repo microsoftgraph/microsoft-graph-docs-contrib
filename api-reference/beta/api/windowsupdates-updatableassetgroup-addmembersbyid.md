@@ -16,6 +16,8 @@ Add members of the same type to an [updatableAssetGroup](../resources/windowsupd
 
 You can also use the method [addMembers](windowsupdates-updatableassetgroup-addmembers.md) to add members.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -24,6 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|WindowsUpdates.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|WindowsUpdates.ReadWrite.All|
+
+[!INCLUDE [rbac-windows-updates-apis](../includes/rbac-for-apis/rbac-windows-updates-apis.md)]
 
 ## HTTP request
 
@@ -53,7 +57,7 @@ The following table shows the parameters that can be used with this action.
 
 ## Response
 
-If successful, this action returns a `202 Accepted` response code. It does not return anything in the response body.
+If successful, this action returns a `202 Accepted` response code. It doesn't return anything in the response body.
 
 ## Examples
 
@@ -83,6 +87,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/updatableassetgroup-addmembersbyid-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/updatableassetgroup-addmembersbyid-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/updatableassetgroup-addmembersbyid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -97,6 +105,14 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/updatableassetgroup-addmembersbyid-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/updatableassetgroup-addmembersbyid-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/updatableassetgroup-addmembersbyid-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

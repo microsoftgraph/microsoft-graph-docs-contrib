@@ -14,6 +14,8 @@ Namespace: microsoft.graph.externalConnectors
 
 Update the properties of an [externalItem](../resources/externalconnectors-externalitem.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -28,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /external/connections/{connection-id}/items/{item-id}
+PUT /external/connections/{connection-id}/items/{item-id}
 ```
 
 ## Path parameters
@@ -81,7 +83,7 @@ If successful, this method returns a `200 OK` response code and an updated [exte
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/v1.0/external/connections/contosohr/items/TSP228082938
+PUT https://graph.microsoft.com/v1.0/external/connections/contosohr/items/TSP228082938
 Content-Type: application/json
 
 {
@@ -97,6 +99,10 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-externalitem-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-externalitem-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -115,10 +121,18 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/update-externalitem-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-externalitem-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-externalitem-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

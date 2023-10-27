@@ -1,5 +1,5 @@
 ---
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 title: "Get bundle"
 description: "Get a bundle of driveItems."
 ms.localizationpriority: medium
@@ -12,6 +12,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Retrieve the metadata for a [bundle][] based on the unique ID of the bundle.
+
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 
@@ -45,7 +47,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -72,6 +74,10 @@ GET https://graph.microsoft.com/v1.0/drive/bundles/{bundle-id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-bundle-metadata-e1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-bundle-metadata-e1-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-bundle-metadata-e1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -92,11 +98,15 @@ GET https://graph.microsoft.com/v1.0/drive/bundles/{bundle-id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-bundle-metadata-e1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-bundle-metadata-e1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -143,6 +153,10 @@ GET https://graph.microsoft.com/v1.0/drive/items/{bundle-id}?expand=children
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-bundle-and-children-e2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-bundle-and-children-e2-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-bundle-and-children-e2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -163,11 +177,15 @@ GET https://graph.microsoft.com/v1.0/drive/items/{bundle-id}?expand=children
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-bundle-and-children-e2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-bundle-and-children-e2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
 
-The following is an example of the response. This call will return the bundle metadata and a list of children of the bundle.
+The following example shows the response. This call will return the bundle metadata and a list of children of the bundle.
 If the bundle has no children, it will return an empty collection.
 
 If the number of children in the bundle is greater than the default page size, the **children@odata.nextLink** property will be returned with a URL that can be

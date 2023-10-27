@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 Retrieve the properties of a collection of [servicePrincipalRiskDetection](../resources/serviceprincipalriskdetection.md) objects.
 
->**Note:** You must have an Entra Workload Identity Premium license to use the servicePrincipalRiskDetection API.
+>**Note:** You must have a Microsoft Entra Workload ID Premium license to use the servicePrincipalRiskDetection API.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -24,6 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|IdentityRiskEvent.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|IdentityRiskEvent.Read.All|
+
+[!INCLUDE [rbac-identity-protection-apis-read](../../beta/includes/rbac-for-apis/rbac-identity-protection-apis-read.md)]
 
 ## HTTP request
 
@@ -44,7 +48,7 @@ This method supports the `$filter` and `$select` OData query parameters to help 
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -56,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -70,6 +74,10 @@ GET https://graph.microsoft.com/beta/identityProtection/servicePrincipalRiskDete
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-serviceprincipalriskdetection-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-serviceprincipalriskdetection-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -92,11 +100,15 @@ GET https://graph.microsoft.com/beta/identityProtection/servicePrincipalRiskDete
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-serviceprincipalriskdetection-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-serviceprincipalriskdetection-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -161,6 +173,10 @@ GET https://graph.microsoft.com/beta/identityProtection/servicePrincipalRiskDete
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-filter-serviceprincipalriskdetection-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-filter-serviceprincipalriskdetection-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-filter-serviceprincipalriskdetection-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -181,10 +197,14 @@ GET https://graph.microsoft.com/beta/identityProtection/servicePrincipalRiskDete
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-filter-serviceprincipalriskdetection-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-filter-serviceprincipalriskdetection-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

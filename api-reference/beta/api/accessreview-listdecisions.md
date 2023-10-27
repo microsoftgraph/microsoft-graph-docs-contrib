@@ -1,8 +1,8 @@
 ---
 title: "List accessReview decisions (deprecated)"
-description: "In the Azure AD access reviews feature, retrieve the decisions of an accessReview object."
+description: "In the Microsoft Entra access reviews feature, retrieve the decisions of an accessReview object."
 ms.localizationpriority: medium
-author: "markwahl-msft"
+author: "shubhamguptacal"
 ms.prod: "governance"
 doc_type: apiPageType
 ---
@@ -15,9 +15,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, retrieve the decisions of an [accessReview](../resources/accessreview.md) object.
+In the Microsoft Entra [access reviews](../resources/accessreviews-root.md) feature, retrieve the decisions of an [accessReview](../resources/accessreview.md) object.
 
 Note that a recurring access review will not have a **decisions** relationship.  Instead, the caller must navigate the **instance** relationship to find an [accessReview](../resources/accessreview.md) object for a current or past instance of the access review.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -63,6 +65,10 @@ GET https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-accessreview-decisions-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-accessreview-decisions-1-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-accessreview-decisions-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -81,6 +87,10 @@ GET https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-accessreview-decisions-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-accessreview-decisions-1-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -112,14 +122,14 @@ Content-type: application/json
 
 ## See also
 
-| Method		   | Return Type	|Description|
+| Method           | Return Type    |Description|
 |:---------------|:--------|:----------|
-|[Get accessReview](accessreview-get.md) |	[accessReview](../resources/accessreview.md) |	Retrieve an access review. |
-|[List my accessReview decisions](accessreview-listmydecisions.md) |		[accessReviewDecision](../resources/accessreviewdecision.md) collection|	As a reviewer, get my decisions of an accessReview.|
-|[Send accessReview reminder](accessreview-sendreminder.md) |		None.	|	Send a reminder to the reviewers of an accessReview. |
-|[Stop accessReview](accessreview-stop.md) |		None.	|	Stop an accessReview. |
-|[Reset accessReview decisions](accessreview-reset.md) |		None.	|	Reset the decisions in an in-progress accessReview.|
-|[Apply accessReview decisions](accessreview-apply.md) |		None.	|	Apply the decisions from a completed accessReview.|
+|[Get accessReview](accessreview-get.md) |    [accessReview](../resources/accessreview.md) |    Retrieve an access review. |
+|[List my accessReview decisions](accessreview-listmydecisions.md) |        [accessReviewDecision](../resources/accessreviewdecision.md) collection|    As a reviewer, get my decisions of an accessReview.|
+|[Send accessReview reminder](accessreview-sendreminder.md) |        None.    |    Send a reminder to the reviewers of an accessReview. |
+|[Stop accessReview](accessreview-stop.md) |        None.    |    Stop an accessReview. |
+|[Reset accessReview decisions](accessreview-reset.md) |        None.    |    Reset the decisions in an in-progress accessReview.|
+|[Apply accessReview decisions](accessreview-apply.md) |        None.    |    Apply the decisions from a completed accessReview.|
 
 
 <!--
@@ -133,5 +143,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

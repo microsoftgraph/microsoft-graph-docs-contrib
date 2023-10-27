@@ -1,6 +1,6 @@
 ---
 title: "watermarkProtectionValues resource type"
-description: "Indicates whether a watermark is enabled for different entities."
+description: "Indicates whether a watermark is enabled for different content types in a meeting."
 author: "zihzhan-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Indicates whether a watermark is enabled for different entities.
+Indicates whether a watermark is enabled for different content types.
 
-Setting either flag indicates that a watermark has been enabled for a meeting. Any clients that don't support watermarks will have a restricted (audio-only) experience in the meeting.
+These flags indicate that a watermark is enabled for this particular meeting. Any clients that don't support watermarks will have a restricted (audio-only) experience in the meeting.
 
 ## Properties
 
@@ -26,7 +26,7 @@ Setting either flag indicates that a watermark has been enabled for a meeting. A
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

@@ -4,48 +4,43 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.External.Connections.Item.Schema.SchemaPostRequestBody
+var requestBody = new Microsoft.Graph.Models.ExternalConnectors.Schema
 {
-	AdditionalData = new Dictionary<string, object>
+	BaseType = "microsoft.graph.externalItem",
+	Properties = new List<Microsoft.Graph.Models.ExternalConnectors.Property>
 	{
+		new Microsoft.Graph.Models.ExternalConnectors.Property
 		{
-			"baseType" , "microsoft.graph.externalItem"
-		},
-		{
-			"properties" , new List<>
+			Name = "ticketTitle",
+			Type = Microsoft.Graph.Models.ExternalConnectors.PropertyType.String,
+			IsSearchable = true,
+			IsRetrievable = true,
+			Labels = new List<Microsoft.Graph.Models.ExternalConnectors.Microsoft.Graph.Models.ExternalConnectors.Label?>
 			{
-				new 
-				{
-					Name = "ticketTitle",
-					Type = "String",
-					IsSearchable = "true",
-					IsRetrievable = "true",
-					Labels = new List<string>
-					{
-						"title",
-					},
-				},
-				new 
-				{
-					Name = "priority",
-					Type = "String",
-					IsQueryable = "true",
-					IsRetrievable = "true",
-					IsSearchable = "false",
-				},
-				new 
-				{
-					Name = "assignee",
-					Type = "String",
-					IsRetrievable = "true",
-				},
-			}
+				Microsoft.Graph.Models.ExternalConnectors.Label.Title,
+			},
+		},
+		new Microsoft.Graph.Models.ExternalConnectors.Property
+		{
+			Name = "priority",
+			Type = Microsoft.Graph.Models.ExternalConnectors.PropertyType.String,
+			IsQueryable = true,
+			IsRetrievable = true,
+			IsSearchable = false,
+		},
+		new Microsoft.Graph.Models.ExternalConnectors.Property
+		{
+			Name = "assignee",
+			Type = Microsoft.Graph.Models.ExternalConnectors.PropertyType.String,
+			IsRetrievable = true,
 		},
 	},
 };
-await graphClient.External.Connections["{externalConnection-id}"].Schema.PostAsync(requestBody);
+var result = await graphClient.External.Connections["{externalConnection-id}"].Schema.PatchAsync(requestBody);
 
 
 ```

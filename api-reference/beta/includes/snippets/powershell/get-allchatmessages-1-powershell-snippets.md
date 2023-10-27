@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 
-Get-MgChatMessage -ChatId $chatId -Top 2 -Sort "createdDateTime desc" 
+Get-MgBetaChatMessage -ChatId $chatId -Top 2 -Sort "createdDateTime desc" 
 
 ```

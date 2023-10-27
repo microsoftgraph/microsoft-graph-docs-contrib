@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get all identity providers supported in a directory.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,7 +47,7 @@ GET /identity/identityProviders/availableProviderTypes
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -53,10 +55,12 @@ If successful, this function returns a `200 OK` response code and a string colle
 
 ## Example
 
-### Example 1: List all **identityProvider** available in an Azure AD directory
+<a name='example-1-list-all-identityprovider-available-in-an-azure-ad-directory'></a>
+
+### Example 1: List all **identityProvider** available in a Microsoft Entra directory
 
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -71,6 +75,10 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/availableProvide
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/identityprovider-availableprovidertypes-inazure-ad-directory-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/identityprovider-availableprovidertypes-inazure-ad-directory-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -89,11 +97,19 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/availableProvide
 [!INCLUDE [sample-code](../includes/snippets/php/identityprovider-availableprovidertypes-inazure-ad-directory-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/identityprovider-availableprovidertypes-inazure-ad-directory-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/identityprovider-availableprovidertypes-inazure-ad-directory-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -122,7 +138,7 @@ Content-Type: application/json
 ### Example 2: List all **identityProvider** available in an Azure AD B2C directory
 
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -137,6 +153,10 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/availableProvide
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/identityprovider-availableprovidertypes-b2c-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/identityprovider-availableprovidertypes-b2c-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -155,11 +175,19 @@ GET https://graph.microsoft.com/beta/identity/identityProviders/availableProvide
 [!INCLUDE [sample-code](../includes/snippets/php/identityprovider-availableprovidertypes-b2c-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/identityprovider-availableprovidertypes-b2c-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/identityprovider-availableprovidertypes-b2c-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

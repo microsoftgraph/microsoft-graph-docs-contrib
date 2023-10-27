@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of an [informationProtectionLabel](../resources/informationprotectionlabel.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -54,7 +56,7 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -64,7 +66,7 @@ If successful, this method returns a `200 OK` response code and the requested [i
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -78,6 +80,10 @@ GET https://graph.microsoft.com/beta/me/informationprotection/policy/labels/{id}
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-informationprotectionlabel-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-informationprotectionlabel-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -100,11 +106,15 @@ GET https://graph.microsoft.com/beta/me/informationprotection/policy/labels/{id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-informationprotectionlabel-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-informationprotectionlabel-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -138,7 +148,15 @@ User-agent: ContosoLOBApp/1.0
   "description": "Get informationProtectionLabel",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+	"Error: microsoft.graph.microsoft.graph/me:
+      /me/informationprotection/policy/labels/{var}
+      Uri path requires navigating into unknown object hierarchy: missing property 'informationprotection' on 'user'. Possible issues:
+  	 1) Doc bug where 'informationprotection' isn't defined on the resource.
+  	 2) Doc bug where 'informationprotection' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.
+  	 3) Doc bug where 'user' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation."
+  ]
 }-->
 
 

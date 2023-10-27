@@ -1,6 +1,6 @@
 ---
 title: "azureAdJoinPolicy resource type"
-description: "Represents the policy scope of an Azure Active Directory tenant that controls device registration using Azure AD Join."
+description: "Represents the policy scope of a Microsoft Entra tenant that controls device registration using Microsoft Entra join."
 author: "myra-ramdenbourg"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the policy scope of the Azure Active Directory (Azure AD) tenant that controls the ability for users and groups to register device identities to your organization using Azure AD Join.
+Represents the policy scope of the Microsoft Entra tenant that controls the ability for users and groups to register device identities to your organization using Microsoft Entra join.
 
 ## Properties
 

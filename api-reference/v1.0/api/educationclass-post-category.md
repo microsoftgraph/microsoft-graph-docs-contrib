@@ -1,6 +1,6 @@
 ---
 title: "Create educationCategory"
-description: "Creates a new category."
+description: "Create a new educationCategory on an educationClass."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.prod: "education"
@@ -11,7 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Creates a new [educationCategory](../resources/educationcategory.md) on an [educationClass](../resources/educationclass.md). Only teachers can perform this operation.
+Create a new [educationCategory](../resources/educationcategory.md) on an [educationClass](../resources/educationclass.md). Only teachers can perform this operation.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -26,7 +28,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/classes/{id}/assignmentCategories
-
 ```
 ## Request headers
 | Header       | Value |
@@ -37,13 +38,12 @@ POST /education/classes/{id}/assignmentCategories
 ## Request body
 In the request body, supply a JSON representation of an [educationCategory](../resources/educationcategory.md) object.
 
-
 ## Response
 If successful, this method returns a `201 Created` response code and an [educationCategory](../resources/educationcategory.md) object in the response body.
 
 ## Example
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -62,6 +62,10 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-educationcategory-from-educationclass-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-educationcategory-from-educationclass-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -84,10 +88,14 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-educationcategory-from-educationclass-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-educationcategory-from-educationclass-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
-The following is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

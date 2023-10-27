@@ -14,14 +14,16 @@ Namespace: microsoft.graph
 
 Delete a [permission](../resources/permission.md) object on a site.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)
-|:--------------------------------------|:-------------------------------------
-|Delegated (work or school account)     | Not supported.
-|Delegated (personal Microsoft account) | Not supported.
-|Application                            | Sites.FullControl.All
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | Not supported.                              |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Sites.FullControl.All                       |
 
 ## HTTP request
 
@@ -39,15 +41,17 @@ DELETE /sites/{sitesId}/permissions/{permissionId}
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
 ### Request
+
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -56,11 +60,15 @@ If successful, this method returns `204 No Content` response code. It does not r
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/sites/{sitesId}/permissions/{permissionId}
+DELETE https://graph.microsoft.com/beta/sites/f2d90359-865b-4b6c-8848-d2722dd630e5/permissions/2
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-permission-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-permission-2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -83,10 +91,14 @@ DELETE https://graph.microsoft.com/beta/sites/{sitesId}/permissions/{permissionI
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-permission-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-permission-2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
-Here is an example of the response. 
+Here's an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

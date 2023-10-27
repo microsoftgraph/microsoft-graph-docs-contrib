@@ -10,9 +10,11 @@ doc_type: apiPageType
 # riskyUser: dismiss
 Namespace: microsoft.graph
 
->**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.
+>**Note:** Using the riskyUsers API requires a Microsoft Entra ID P2 license.
 
 Dismiss the risk of one or more [riskyUser](../resources/riskyuser.md) objects. This action sets the targeted user's risk level to none.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -22,6 +24,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | IdentityRiskyUser.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | IdentityRiskyUser.ReadWrite.All |
+
+[!INCLUDE [rbac-identity-protection-apis-write](../../beta/includes/rbac-for-apis/rbac-identity-protection-apis-write.md)]
 
 ## HTTP request
 
@@ -80,6 +84,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/riskyuser-dismiss-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/riskyuser-dismiss-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/riskyuser-dismiss-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -100,6 +108,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/riskyuser-dismiss-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/riskyuser-dismiss-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -112,5 +124,3 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-

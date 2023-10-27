@@ -14,6 +14,8 @@ Namespace: microsoft.graph.windowsUpdates
 
 Update the properties of a [complianceChange](../resources/windowsupdates-compliancechange.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -22,6 +24,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|WindowsUpdates.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|WindowsUpdates.ReadWrite.All|
+
+[!INCLUDE [rbac-windows-updates-apis](../includes/rbac-for-apis/rbac-windows-updates-apis.md)]
 
 ## HTTP request
 
@@ -77,6 +81,10 @@ Content-length: 144
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-compliancechange-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-compliancechange-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-compliancechange-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -97,10 +105,14 @@ Content-length: 144
 [!INCLUDE [sample-code](../includes/snippets/powershell/update-compliancechange-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-compliancechange-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

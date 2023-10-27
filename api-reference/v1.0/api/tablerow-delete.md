@@ -12,6 +12,9 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Deletes the row from the table.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -28,7 +31,6 @@ DELETE /me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}
 DELETE /me/drive/root:/{item-path}:/workbook/tables/{id|name}/rows/{index}
 DELETE /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
 DELETE /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
-
 ```
 ## Request headers
 | Name       | Description|
@@ -40,7 +42,7 @@ DELETE /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|nam
 
 ## Response
 
-If successful, this method returns `200 OK` response code. It does not return anything in the response body.
+If successful, this method returns `200 OK` response code. It doesn't return anything in the response body.
 
 ## Example
 Here is an example of how to call this API.
@@ -60,6 +62,10 @@ DELETE https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|
 [!INCLUDE [sample-code](../includes/snippets/csharp/tablerow-delete-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/tablerow-delete-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/tablerow-delete-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -76,10 +82,14 @@ DELETE https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|
 [!INCLUDE [sample-code](../includes/snippets/php/tablerow-delete-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/tablerow-delete-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

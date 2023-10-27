@@ -15,6 +15,8 @@ Namespace: microsoft.graph.callRecords
 
 Get log of PSTN calls as a collection of [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) entries.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -33,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-GET /communications/callRecords/getPstnCalls
+GET /communications/callRecords/getPstnCalls(fromDateTime={fromDateTime},toDateTime={toDateTime})
 ```
 
 ## Function parameters
@@ -58,7 +60,7 @@ The following table shows the parameters that can be used with this function.
 ## Response
 
 If successful, this function returns a `200 OK` response code and a collection of [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) entries in the response body.
-  
+
 If there are more than 1000 entries in the date range, the body also includes an `@odata.NextLink` with a URL to query the next page of call entries. The last page in the date range does not have `@odata.NextLink`. For more information, see [paging Microsoft Graph data in your app](/graph/paging).
 
 ## Example
@@ -82,6 +84,10 @@ GET https://graph.microsoft.com/beta/communications/callRecords/getPstnCalls(fro
 [!INCLUDE [sample-code](../includes/snippets/csharp/callrecord-getpstncalls-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/callrecord-getpstncalls-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/callrecord-getpstncalls-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -98,14 +104,14 @@ GET https://graph.microsoft.com/beta/communications/callRecords/getPstnCalls(fro
 [!INCLUDE [sample-code](../includes/snippets/php/callrecord-getpstncalls-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/callrecord-getpstncalls-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/callrecord-getpstncalls-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -146,7 +152,11 @@ HTTP/1.1 200 OK
             "inventoryType": "Subscriber",
             "operator": "Microsoft",
             "callDurationSource": "microsoft",
-            "otherPartyCountryCode": "US"
+            "otherPartyCountryCode": "US",
+            "clientPublicIpV4Address": "99.76.33.16",
+            "clientPublicIpV6Address": "1234:fd2:5621:1:89::4500",
+            "clientLocalIpV4Address": "192.168.1.165",
+            "clientLocalIpV6Address": "2600:1700:1dca:8110::40"
         }
     ]
 }

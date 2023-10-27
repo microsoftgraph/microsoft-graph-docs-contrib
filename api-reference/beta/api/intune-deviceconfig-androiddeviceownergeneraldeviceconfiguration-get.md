@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10890
+Content-Length: 11389
 
 {
   "value": {
@@ -332,7 +332,22 @@ Content-Length: 10890
     "workProfilePasswordRequiredType": "required",
     "workProfilePasswordRequireUnlock": "daily",
     "locateDeviceUserlessDisabled": true,
-    "locateDeviceLostModeEnabled": true
+    "locateDeviceLostModeEnabled": true,
+    "androidDeviceOwnerDelegatedScopeAppSettings": [
+      {
+        "@odata.type": "microsoft.graph.androidDeviceOwnerDelegatedScopeAppSetting",
+        "appDetail": {
+          "@odata.type": "microsoft.graph.appListItem",
+          "name": "Name value",
+          "publisher": "Publisher value",
+          "appStoreUrl": "https://example.com/appStoreUrl/",
+          "appId": "App Id value"
+        },
+        "appScopes": [
+          "certificateInstall"
+        ]
+      }
+    ]
   }
 }
 ```

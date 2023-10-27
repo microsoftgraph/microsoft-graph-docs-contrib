@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -44,8 +44,7 @@ interval := int32(1)
 pattern.SetInterval(&interval) 
 daysOfWeek := []graphmodels.DayOfWeekable {
 	dayOfWeek := graphmodels.MONDAY_DAYOFWEEK 
-	pattern.SetDayOfWeek(&dayOfWeek) 
-
+	pattern.SetDayOfWeek(&dayOfWeek)
 }
 pattern.SetDaysOfWeek(daysOfWeek)
 recurrence.SetPattern(pattern)
@@ -74,15 +73,14 @@ attendee.SetEmailAddress(emailAddress)
 type := graphmodels.REQUIRED_ATTENDEETYPE 
 attendee.SetType(&type) 
 
-attendees := []graphmodels.Objectable {
+attendees := []graphmodels.attendeeable {
 	attendee,
-
 }
 requestBody.SetAttendees(attendees)
 allowNewTimeProposals := true
 requestBody.SetAllowNewTimeProposals(&allowNewTimeProposals) 
 
-result, err := graphClient.Me().Events().Post(context.Background(), requestBody, nil)
+events, err := graphClient.Me().Events().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -8,13 +8,17 @@ doc_type: apiPageType
 ---
 
 # List customSecurityAttributeDefinitions
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of the [customSecurityAttributeDefinition](../resources/customsecurityattributedefinition.md) objects and their properties.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -42,17 +46,20 @@ GET /directory/customSecurityAttributeDefinitions
 ```
 
 ## Optional query parameters
+
 This method supports the `$select`, `$top`, `$expand`, and `$filter` (`eq`) OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-The `allowedValues` navigation property is not returned or expanded by default and must be specified in an `$expand` query. For example, `/directory/customSecurityAttributeDefinitions?$expand=allowedValues`.
+The **allowedValues** navigation property is not returned or expanded by default and must be specified in an `$expand` query. For example, `/directory/customSecurityAttributeDefinitions?$expand=allowedValues`.
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+
+Don't supply a request body for this method.
 
 ## Response
 
@@ -66,6 +73,8 @@ The following example gets all custom security attribute definitions in a tenant
 
 #### Request
 
+The following is an example of a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -78,6 +87,10 @@ GET https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinition
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-customsecurityattributedefinition-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-customsecurityattributedefinition-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -100,9 +113,16 @@ GET https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinition
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-customsecurityattributedefinition-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-customsecurityattributedefinition-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
+
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -159,6 +179,8 @@ The following example retrieves custom security attribute definitions that are n
 
 #### Request
 
+The following is an example of a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -171,6 +193,10 @@ GET https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinition
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-customsecurityattributedefinition-filter-name-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-customsecurityattributedefinition-filter-name-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -193,9 +219,16 @@ GET https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinition
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-customsecurityattributedefinition-filter-name-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-customsecurityattributedefinition-filter-name-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
+
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -241,6 +274,8 @@ The following example retrieves custom security attribute definitions that are i
 
 #### Request
 
+The following is an example of a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -253,6 +288,10 @@ GET https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinition
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-customsecurityattributedefinition-filter-attributeset-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-customsecurityattributedefinition-filter-attributeset-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -275,9 +314,16 @@ GET https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinition
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-customsecurityattributedefinition-filter-attributeset-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-customsecurityattributedefinition-filter-attributeset-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
+
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

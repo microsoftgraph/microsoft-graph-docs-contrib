@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Get a list of the attack simulation automation runs for a tenant.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -55,7 +57,7 @@ GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}/ru
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -82,6 +84,10 @@ GET https://graph.microsoft.com/v1.0/security/attackSimulation/simulationAutomat
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-simulationautomationrun-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-simulationautomationrun-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-simulationautomationrun-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -102,11 +108,15 @@ GET https://graph.microsoft.com/v1.0/security/attackSimulation/simulationAutomat
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-simulationautomationrun-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-simulationautomationrun-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

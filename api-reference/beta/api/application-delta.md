@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get newly created, updated, or deleted applications without having to perform a full read of the entire resource collection. See [Using Delta Query](/graph/delta-query-overview) for details.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -70,19 +72,19 @@ _id_ property is always returned.
 | Content-Type  | application/json |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ### Response
 
 If successful, this method returns `200 OK` response code and [application](../resources/application.md) collection object in the response body. The response also includes a nextLink URL or a deltaLink URL. 
 
-- If a `@odata.nextLink` URL is returned, there are additional pages of data to be retrieved in the session. The application continues making requests using the `@odata.nextLink` URL until a `@odata.deltaLink` URL is included in the response.
+- If a `@odata.nextLink` URL is returned, there are more pages of data to be retrieved in the session. The application continues making requests by using the `@odata.nextLink` URL until a `@odata.deltaLink` URL is included in the response.
 
 - If a `@odata.deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned. Persist and use the `@odata.deltaLink` URL to learn about changes to the resource in the future.
 
 See:</br>
 - [Using Delta Query](/graph/delta-query-overview) for more details</br>
-- [Get incremental changes for users](/graph/delta-query-users) for an example requests.</br>
+- [Get incremental changes for users](/graph/delta-query-users) for an example request.</br>
 
 ### Example
 ##### Request
@@ -100,6 +102,10 @@ GET https://graph.microsoft.com/beta/applications/delta
 [!INCLUDE [sample-code](../includes/snippets/csharp/application-delta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/application-delta-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/application-delta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -114,6 +120,14 @@ GET https://graph.microsoft.com/beta/applications/delta
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/application-delta-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/application-delta-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/application-delta-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

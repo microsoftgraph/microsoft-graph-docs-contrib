@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Create an [appManagementPolicy](../resources/appManagementPolicy.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -24,6 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (work or school account)     | Policy.ReadWrite.ApplicationConfiguration   |
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Policy.ReadWrite.ApplicationConfiguration   |
+
+[!INCLUDE [rbac-app-auth-method-policy-apis](../includes/rbac-for-apis/rbac-app-auth-method-policy-apis.md)]
 
 ## HTTP request
 
@@ -63,7 +67,7 @@ If successful, this method returns a `201 Created` response code with the new [a
 
 ### Request
 
-The following is an example of the request. This request created an app management policy with the following settings:
+The following example shows a request. This request created an app management policy with the following settings:
 
 - Enables the policy.
 - Blocks creating of new passwords for applications and service principals created on or after 2019-10-19 at 10:37 AM UTC time.
@@ -85,42 +89,55 @@ POST https://graph.microsoft.com/beta/policies/appManagementPolicies
     "description": "Cred policy sample",
     "isEnabled": true,
     "restrictions": {
-            "passwordCredentials": [
-               {
-                  "restrictionType": "passwordAddition",
-                  "maxLifetime": null,
-                  "restrictForAppsCreatedAfterDateTime": "2019-10-19T10:37:00Z"
-               },
-               {
-                  "restrictionType": "passwordLifetime",
-                  "maxLifetime": "P4DT12H30M5S",
-                  "restrictForAppsCreatedAfterDateTime": "2014-10-19T10:37:00Z"
-               },
-               {
-                  "restrictionType": "symmetricKeyAddition",
-                  "maxLifetime": null,
-                  "restrictForAppsCreatedAfterDateTime": "2019-10-19T10:37:00Z"
-               },
-               {
-                  "restrictionType": "symmetricKeyLifetime",
-                  "maxLifetime": "P4D",
-                  "restrictForAppsCreatedAfterDateTime": "2014-10-19T10:37:00Z"
-               }
-            ],
-            "keyCredentials": [
-               {
-                  "restrictionType": "asymmetricKeyLifetime",
-                  "maxLifetime": "P90D",
-                  "restrictForAppsCreatedAfterDateTime": "2014-10-19T10:37:00Z"
-               }
-            ]
-         }
+        "passwordCredentials": [
+            {
+                "restrictionType": "passwordAddition",
+                "maxLifetime": null,
+                "restrictForAppsCreatedAfterDateTime": "2019-10-19T10:37:00Z"
+            },
+            {
+                "restrictionType": "passwordLifetime",
+                "maxLifetime": "P90D",
+                "restrictForAppsCreatedAfterDateTime": "2014-10-19T10:37:00Z"
+            },
+            {
+                "restrictionType": "symmetricKeyAddition",
+                "maxLifetime": null,
+                "restrictForAppsCreatedAfterDateTime": "2019-10-19T10:37:00Z"
+            },
+            {
+                "restrictionType": "symmetricKeyLifetime",
+                "maxLifetime": "P30D",
+                "restrictForAppsCreatedAfterDateTime": "2014-10-19T10:37:00Z"
+            }
+        ],
+        "keyCredentials": [
+            {
+                "restrictionType": "asymmetricKeyLifetime",
+                "maxLifetime": "P90D",
+                "restrictForAppsCreatedAfterDateTime": "2014-10-19T10:37:00Z"
+            },
+            {
+                "restrictionType": "trustedCertificateAuthority",
+                "restrictForAppsCreatedAfterDateTime": "2019-10-19T10:37:00Z",
+                "certificateBasedApplicationConfigurationIds": [
+                    "eec5ba11-2fc0-4113-83a2-ed986ed13743",
+                    "bb8e164b-f9ed-4b98-bc45-65eddc14f4c1"
+                ],
+                "maxLifetime": null
+            }
+        ]
+    }
 }
 
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-appmanagementpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-appmanagementpolicy-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -139,11 +156,15 @@ POST https://graph.microsoft.com/beta/policies/appManagementPolicies
 [!INCLUDE [sample-code](../includes/snippets/php/create-appmanagementpolicy-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-appmanagementpolicy-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -170,7 +191,7 @@ Content-type: application/json
             },
             {
                 "restrictionType": "passwordLifetime",
-                "maxLifetime": "P4DT12H30M5S",
+                "maxLifetime": "P90D",
                 "restrictForAppsCreatedAfterDateTime": "2018-10-19T10:37:00Z"
             }
         ]

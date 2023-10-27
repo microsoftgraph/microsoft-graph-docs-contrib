@@ -2,7 +2,7 @@
 title: "Create phoneMethod"
 description: "Add a new phone authentication method for a user."
 ms.localizationpriority: medium
-author: "mmcla"
+author: "luc-msft"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -11,25 +11,17 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Add a new [phone authentication method](../resources/phoneauthenticationmethod.md) for a user. A user may only have one phone of each type, captured in the **phoneType** property. This means, for example, adding a `mobile` phone to a user with a preexisting `mobile` phone will fail. Additionally, a user must always have a `mobile` phone before adding an `alternateMobile` phone.
+Add a new [phone authentication method](../resources/phoneauthenticationmethod.md) for a user. A user may only have one phone of each type, captured in the **phoneType** property. This means, for example, adding a `mobile` phone to a user with a pre-existing `mobile` phone fails. Additionally, a user must always have a `mobile` phone before adding an `alternateMobile` phone.
 
 Adding a phone number makes it available for use in both Azure multi-factor authentication (MFA) and self-service password reset (SSPR), if enabled.
 
-Additionally, if a user is enabled by policy to use SMS sign-in and a `mobile` number is added, the system will attempt to register the number for use in that system.
+Additionally, if a user is enabled by policy to use SMS sign-in and a `mobile` number is added, the system attempts to register the number for use in that system.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
-### Permissions acting on self
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:---------------------------------------|:-------------------------|
-| Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
-
-### Permissions acting on other users
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:---------------------------------------|:-------------------------|
@@ -39,13 +31,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 [!INCLUDE [rbac-authentication-methods-apis-write](../includes/rbac-for-apis/rbac-authentication-methods-apis-write.md)]
 
-## HTTP request
+Users can't add a phone authentication method to their own account.
 
-Add a phone authentication method to your own account. For a signed-in user to update their own authentication method, they must have satisfied a multi-factor authentication requirement during sign in.
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/authentication/phoneMethods
-```
+## HTTP request
 
 Add a phone authentication method to another user's account.
 <!-- { "blockType": "ignored" } -->
@@ -66,7 +54,7 @@ In the request body, supply a JSON representation of a [phoneAuthenticationMetho
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|phoneNumber|String|The phone number to text or call for authentication. Phone numbers use the format `+{country code} {number}x{extension}`, with extension optional. For example, `+1 5555551234` or `+1 5555551234x123` are valid. Numbers are rejected when creating or updating if they do not match the required format.|
+|phoneNumber|String|The phone number to text or call for authentication. Phone numbers use the format `+{country code} {number}x{extension}`, with extension optional. For example, `+1 5555551234` or `+1 5555551234x123` are valid. Numbers are rejected when creating or updating if they don't match the required format.|
 |phoneType|String|Possible values are: `mobile`, `alternateMobile`, and `office`.|
 
 ## Response
@@ -77,17 +65,18 @@ If successful, this method returns a `201 Created` response code and a new [phon
 
 ### Request
 
-The following is an example of the request.
+Here's an example  of the request.
 
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["kim@contoso.com"],
   "name": "create_phoneauthenticationmethod_from_authentication"
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/me/authentication/phoneMethods
+POST https://graph.microsoft.com/v1.0/users/kim@contoso.com/authentication/phoneMethods
 Content-type: application/json
 
 {
@@ -98,6 +87,10 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-phoneauthenticationmethod-from-authentication-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-phoneauthenticationmethod-from-authentication-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -120,11 +113,15 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-phoneauthenticationmethod-from-authentication-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-phoneauthenticationmethod-from-authentication-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following is an example of the response.
+Here's an example  of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

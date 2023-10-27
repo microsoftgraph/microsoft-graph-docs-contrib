@@ -54,7 +54,7 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|configurationManagerAction|[configurationManagerAction](../resources/intune-devices-configurationmanageraction.md)|Not yet documented|
+|configurationManagerAction|[configurationManagerAction](../resources/intune-devices-configurationmanageraction.md)||
 
 
 

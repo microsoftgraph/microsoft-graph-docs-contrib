@@ -1,9 +1,9 @@
 ---
 title: "Create identityUserFlowAttribute"
-description: "Create a new identityUserFlowAttribute object."
+description: "Create a new custom identityUserFlowAttribute object."
 ms.localizationpriority: medium
 doc_type: apiPageType
-author: "jkdouglas"
+author: "nanguil"
 ms.prod: "identity-and-sign-in"
 ---
 
@@ -11,7 +11,9 @@ ms.prod: "identity-and-sign-in"
 
 Namespace: microsoft.graph
 
-Create a new [identityUserFlowAttribute](../resources/identityuserflowattribute.md) object.
+Create a new custom [identityUserFlowAttribute](../resources/identityuserflowattribute.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -23,10 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)| Not supported.|
 |Application|IdentityUserFlow.ReadWrite.All|
 
-The work or school account needs to belong to one of the following roles:
-
-* Global administrator
-* External Identity User Flow Attribute administrator
+[!INCLUDE [rbac-user-flows-attributes-apis](../includes/rbac-for-apis/rbac-user-flows-attributes-apis.md)]
 
 ## HTTP request
 
@@ -52,18 +51,18 @@ In the request body, provide a JSON representation of [identityUserFlowAttribute
 |id|String|The identifier of the user flow attribute. This is a read-only attribute that is automatically created.|
 |displayName|String|The display name of the user flow attribute.|
 |description|String|The description of the user flow attribute. It's shown to the user at the time of sign-up.|
-|userFlowAttributeType|String|The type of the user flow attribute. This is a read-only attribute that is automatically set. Depending on the type of attribute, the values for this property will be `builtIn` or `custom`.|
-|dataType|String|The data type of the user flow attribute. This cannot be modified once the custom user flow attribute is created. The supported values for **dataType** are:<br/><ul><li>`string` </li><li>`boolean`</li><li>`int64`</li></ul>|
+|userFlowAttributeType|String|The type of the user flow attribute. This is a read-only attribute that is automatically set. Depending on the type of attribute, the values for this property are `builtIn` or `custom`.|
+|dataType|String|The data type of the user flow attribute. This can't be modified once the custom user flow attribute is created. The supported values for **dataType** are:<br/><ul><li>`string` </li><li>`boolean`</li><li>`int64`</li></ul>|
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and [identityUserFlowAttribute](../resources/identityuserflowattribute.md) object in the response body. If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns a `201 Created` response code and [identityUserFlowAttribute](../resources/identityuserflowattribute.md) object in the response body. If unsuccessful, a `4xx` error is returned with specific details.
 
 ## Examples
 
 ### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -80,12 +79,16 @@ Content-type: application/json
 {
   "displayName": "Hobby",
   "description": "Your hobby",
-  "dataType": "string",
+  "dataType": "string"
 }
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-userflowattribute-from-userflowattributes-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-userflowattribute-from-userflowattributes-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -108,13 +111,17 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-userflowattribute-from-userflowattributes-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-userflowattribute-from-userflowattributes-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -124,7 +131,7 @@ The following is an example of the response.
 
 ```http
 HTTP/1.1 201 Created
-Location: https://graph.microsoft.com/v1.0/identity/userFlowAttributes/extension_7a95ecd9489b4fb9a45722b913c4703b_Hobby
+Location: "/identity/userFlowAttributes('extension_d09380e2b4c642b9a203fb816a04a7ad_Hobby')"
 Content-type: application/json
 
 {

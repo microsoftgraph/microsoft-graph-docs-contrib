@@ -7,14 +7,14 @@ ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Get virtualAppointment
+# Get virtualAppointment (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!CAUTION]
-  > The Virtual appointment resource and supporting methods are deprecated and will stop returning data on May 31, 2023. We recommend that you update existing apps that use this API to use the new [Get Virtual appointment join link](../api/virtualappointment-getvirtualappointmentjoinweburl.md) function.
+> The **virtualAppointment** resource and supporting methods are deprecated and will stop returning data on June 30, 2023. We recommend that you update existing apps that use this API to use the new [Get join link](../api/virtualappointment-getvirtualappointmentjoinweburl.md) function.
 
 Read the properties and relationships of a [virtualAppointment](../resources/virtualappointment.md) object.
 
@@ -53,7 +53,7 @@ This method supports some of the OData query parameters to help customize the re
 | Accept-Language | Language. Optional.       |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -72,7 +72,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/me/onlineMeeting/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/virtualAppointment
+GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/virtualAppointment
 ```
 
 # [Java](#tab/java)
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/me/onlineMeeting/MSpkYzE3Njc0Yy04MWQ5LTRhZG
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

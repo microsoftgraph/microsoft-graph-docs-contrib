@@ -11,6 +11,8 @@ author: "sureshja"
 
 Get newly created, updated, or deleted service principals without having to perform a full read of the entire resource collection.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -26,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-To begin tracking changes, you make a request including the delta function on the servicePrincipal resource. 
+To begin tracking changes, you make a request by including the delta function on the servicePrincipal resource. 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -55,8 +57,8 @@ This method supports OData query parameters to help customize the response.
 - You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The 
 _id_ property is always returned. 
 
-- There is limited support for `$filter`:
-  * The only supported `$filter` expression is for tracking changes for specific resources, by their id:  `$filter=id+eq+{value}` or `$filter=id+eq+{value1}+or+id+eq+{value2}`. The number of ids you can specify is limited by the maximum URL length.
+- There's limited support for `$filter`:
+  * The only supported `$filter` expression is for tracking changes for specific resources, by their ID:  `$filter=id+eq+{value}` or `$filter=id+eq+{value1}+or+id+eq+{value2}`. The number of IDs you can specify is limited by the maximum URL length.
 
 
 ## Request headers
@@ -65,19 +67,19 @@ _id_ property is always returned.
 | Authorization  | Bearer &lt;token&gt;|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ### Response
 
 If successful, this method returns a `200 OK` response code and [servicePrincipal](../resources/serviceprincipal.md) collection object in the response body. The response also includes a nextLink URL or a deltaLink URL. 
 
-- If a `@odata.nextLink` URL is returned, there are additional pages of data to be retrieved in the session. The application continues making requests using the `@odata.nextLink` URL until a `@odata.deltaLink` URL is included in the response.
+- If a `@odata.nextLink` URL is returned, there are more pages of data to be retrieved in the session. The application continues making requests by using the `@odata.nextLink` URL until a `@odata.deltaLink` URL is included in the response.
 
-- If a `@odata.deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned. Persist and use the `@odata.deltaLink` URL to learn about changes to the resource in the future.
+- If a `@odata.deltaLink` URL is returned, there's no more data about the existing state of the resource to be returned. Persist and use the `@odata.deltaLink` URL to learn about changes to the resource in the future.
 
 See:</br>
 - [Using Delta Query](/graph/delta-query-overview) for more details</br>
-- [Get incremental changes for users](/graph/delta-query-users) for an example requests.</br>
+- [Get incremental changes for users](/graph/delta-query-users) for an example request.</br>
 
 ## Example
 #### Request
@@ -96,6 +98,10 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/delta
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-delta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/serviceprincipal-delta-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/serviceprincipal-delta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -110,6 +116,14 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/delta
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/serviceprincipal-delta-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/serviceprincipal-delta-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/serviceprincipal-delta-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

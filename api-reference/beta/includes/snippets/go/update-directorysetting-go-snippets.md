@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -26,11 +26,10 @@ settingValue.SetValue(&value)
 
 values := []graphmodels.SettingValueable {
 	settingValue,
-
 }
 requestBody.SetValues(values)
 
-result, err := graphClient.Settings().BySettingId("directorySetting-id").Patch(context.Background(), requestBody, nil)
+settings, err := graphClient.Settings().ByDirectorySettingId("directorySetting-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

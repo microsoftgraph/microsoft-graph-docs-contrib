@@ -17,6 +17,8 @@ Make the scheduling page of this business not available to external customers.
 
 Set the **isPublished** property to false, and **publicUrl** property to null.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -40,12 +42,12 @@ POST /bookingBusinesses/{id}/unpublish
 ## Request body
 
 ## Response
-If successful, this method returns `204 No content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No content` response code. It doesn't return anything in the response body.
 
 ## Example
 The following is an example of how to call this API.
 ##### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -59,6 +61,10 @@ POST https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@con
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/bookingbusiness-unpublish-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/bookingbusiness-unpublish-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -81,10 +87,14 @@ POST https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@con
 [!INCLUDE [sample-code](../includes/snippets/powershell/bookingbusiness-unpublish-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/bookingbusiness-unpublish-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response"
 } -->

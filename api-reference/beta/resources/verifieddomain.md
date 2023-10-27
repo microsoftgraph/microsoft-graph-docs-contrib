@@ -4,7 +4,7 @@ description: "Specifies a domain for a tenant. The verifiedDomains property of t
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "directory-management"
-author: "jumasure"
+author: "adimitui"
 ---
 
 # verifiedDomain resource type
@@ -27,7 +27,7 @@ Specifies a domain for a tenant. The **verifiedDomains** property of the [organi
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+Here's a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",

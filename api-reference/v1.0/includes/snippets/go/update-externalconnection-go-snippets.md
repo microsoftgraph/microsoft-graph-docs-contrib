@@ -4,24 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models//externalConnectors"
+	  graphmodelsexternalconnectors "github.com/microsoftgraph/msgraph-sdk-go/models/externalconnectors"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewExternalConnection()
+requestBody := graphmodelsexternalconnectors.NewExternalConnection()
 name := "Contoso HR Service Tickets"
 requestBody.SetName(&name) 
 description := "Connection to index HR service tickets"
 requestBody.SetDescription(&description) 
 
-result, err := graphClient.External().Connections().ByConnectionId("externalConnection-id").Patch(context.Background(), requestBody, nil)
+connections, err := graphClient.External().Connections().ByExternalConnectionId("externalConnection-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

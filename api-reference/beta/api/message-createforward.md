@@ -1,7 +1,7 @@
 ---
 title: "message: createForward"
 description: "Create a draft to forward an existing message, in either JSON or MIME format."
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Create a draft to forward an existing [message](../resources/message.md), in either JSON or MIME format.
 
-When using JSON format, you can: 
+When using JSON format, you can:
 - Specify either a comment or the **body** property of the `message` parameter. Specifying both will return an HTTP 400 Bad Request error.
 - Specify either the `toRecipients` parameter or the **toRecipients** property of the `message` parameter. Specifying both or specifying neither will return an HTTP 400 Bad Request error.
 - [Update](../api/message-update.md) the draft later to add content to the **body** or change other message properties.
@@ -28,8 +28,10 @@ When using MIME format:
 
 Alternatively, [forward a message](../api/message-forward.md) in a single operation.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
-One of the following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -52,7 +54,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 | Content-Type | string  | Nature of the data in the body of an entity. Required. <br/> Use `application/json` for a JSON object and `text/plain` for MIME content.|
 
 ## Request body
-To send a JSON object provide the following parameters.
+To send a JSON object, provide the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -86,7 +88,7 @@ POST https://graph.microsoft.com/beta/me/messages/AAMkADA1MTAAAH5JaLAAA=/createF
 Content-Type: application/json
 
 {
-  "message":{  
+  "message":{
     "isDeliveryReceiptRequested": true,
     "toRecipients":[
       {
@@ -97,12 +99,16 @@ Content-Type: application/json
       }
      ]
   },
-  "comment": "Dana, just want to make sure you get this; you'll need this if the project gets approved." 
+  "comment": "Dana, just want to make sure you get this; you'll need this if the project gets approved."
 }
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-createforward-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/message-createforward-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -123,6 +129,10 @@ Content-Type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/message-createforward-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/message-createforward-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

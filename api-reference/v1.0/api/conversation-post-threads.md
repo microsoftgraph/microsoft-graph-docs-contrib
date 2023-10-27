@@ -1,7 +1,7 @@
 ---
 title: "Create thread"
 description: "Create a new thread in the specified conversation. "
-author: "dkershaw10"
+author: "mikemcleanlive"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
@@ -17,6 +17,8 @@ A thread and post are created as specified. Use [reply thread](conversationthrea
 to that thread. Or, if you get the post ID, you can also [reply](post-reply.md) to that post in that thread.
 
 Note: You can also [start a new conversation by first creating a thread](group-post-threads.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,7 +48,7 @@ If successful, this method returns `201 Created` response code and [conversation
 
 ## Example
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -74,6 +76,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-conversationthread-from-conversation-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-conversationthread-from-conversation-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-conversationthread-from-conversation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -94,13 +100,17 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-conversationthread-from-conversation-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-conversationthread-from-conversation-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 In the request body, supply a JSON representation of [conversationThread](../resources/conversationthread.md) object.
 ### Response
 
 If successful, this method returns `201 Created` response code and the `id` of the new thread in the response body.
-The following is an example of the response. 
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,

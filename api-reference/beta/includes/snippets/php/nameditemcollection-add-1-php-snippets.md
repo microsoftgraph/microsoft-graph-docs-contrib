@@ -6,19 +6,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AddPostRequestBody();
 $requestBody->setName('test5');
-
 $requestBody->setReference('=Sheet1!$F$15:$N$27');
-
 $requestBody->setComment('Comment for the named item');
 
-
-
-$result = $graphServiceClient->drivesById('drive-id')->itemsById('driveItem-id')->workbook()->names()->add()->post($requestBody);
-
+$result = $graphServiceClient->drives()->byDriveId('drive-id')->items()->byDriveItemId('driveItem-id')->workbook()->names()->add()->post($requestBody)->wait();
 
 ```

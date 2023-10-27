@@ -13,12 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enable a bot to answer an incoming [call](../resources/call.md). The incoming call request can be an invite from a participant in a group call or a peer-to-peer call. If an invite to a group call is received, the notification will contain the [chatInfo](../resources/chatinfo.md) and [meetingInfo](../resources/meetinginfo.md) parameters.
+Enable a bot to answer an incoming [call](../resources/call.md). The incoming call request can be an invite from a participant in a group call or a peer-to-peer call. If an invite to a group call is received, the notification contains the [chatInfo](../resources/chatinfo.md) and [meetingInfo](../resources/meetinginfo.md) parameters.
 
 The bot is expected to answer, [reject](./call-reject.md) or [redirect](./call-redirect.md) the call before the call times out. The current timeout value is 15 seconds. The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
-You do not need any permissions to answer a peer-to-peer call. You need one of the following permissions to join a group call. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+You don't need any permissions to answer a peer-to-peer call. You need one of the following permissions to join a group call. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type | Permissions (from least to most privileged)                 |
 | :-------------- | :-----------------------------------------------------------|
@@ -47,11 +49,11 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter           | Type                                                                                                                                 | Description                                                                                                                                                                                                         |
 | :-----------------  | :-----------------------------------------                                                                                           | :----------------------------------------------------------------------------------------------------------------------------------------------                                                                     |
-| callbackUri         | String                                                                                                                               | Allows bots to provide a specific callback URI for the concurrent call to receive later notifications. If this property has not been set, the bot's global callback URI will be used instead. This must be `https`. |
-| acceptedModalities  | String collection                                                                                                                    | The list of accept modalities. Possible value are: `audio`, `video`, `videoBasedScreenSharing`. Required for answering a call.                                                                                      |
+| callbackUri         | String                                                                                                                               | Allows bots to provide a specific callback URI for the concurrent call to receive later notifications. If this property hasn't been set, the bot's global callback URI is used instead. This must be `https`. |
+| acceptedModalities  | String collection                                                                                                                    | The list of accept modalities. Possible values are: `audio`, `video`, `videoBasedScreenSharing`. Required for answering a call.                                                                                      |
 | callOptions            | [incomingCallOptions](../resources/incomingcalloptions.md)                                                         | The call options.   |
 | mediaConfig         | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) or [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) | The media configuration. Required.                                                                                                                                                                                 |
-| participantCapacity | Int                                                                                                                                  | The number of participant that the application can handle for the call, for [Teams policy-based recording](/MicrosoftTeams/teams-recording-policy) scenario.                                                     |
+| participantCapacity | Int                                                                                                                                  | The number of participants that the application can handle for the call, for [Teams policy-based recording](/MicrosoftTeams/teams-recording-policy) scenario.                                                     |
 
 ## Response
 This method returns a `202 Accepted` response code.
@@ -93,6 +95,10 @@ Content-Length: 211
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-answer-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/call-answer-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-answer-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -110,13 +116,17 @@ Content-Length: 211
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-answer-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/call-answer-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 #### Response
-Here is an example of the response. 
+Here's an example of the response. 
 
 <!-- {
   "blockType": "response"
@@ -379,6 +389,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-answer-app-hosted-media-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/call-answer-app-hosted-media-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/call-answer-app-hosted-media-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -397,6 +411,10 @@ Content-Type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/call-answer-app-hosted-media-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/call-answer-app-hosted-media-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -522,13 +540,13 @@ Content-Type: application/json
 
 ### Example 3: Answer a policy-based recording call
 
-Under the [Policy-based recording scenario](/microsoftteams/teams-recording-policy), before a participant under policy joins a call, an incoming call notification will be sent to the bot associated with the policy.
+Under the [Policy-based recording scenario](/microsoftteams/teams-recording-policy), before a participant under policy joins a call, an incoming call notification is sent to the bot associated with the policy.
 The join information can be found under the **botData** property. The bot can then choose to answer the call and [update the recording status](call-updaterecordingstatus.md) accordingly.
 
 When `participantCpapacity` is specified in the `Answer` request for a policy-based recording notification, subsequent participant joining event belonging to the same policy group will be sent out as [participantJoiningNotification](../resources/participantJoiningNotification.md) instead of
 new incoming call notification, until number of participants that current call instance is handling has reached the number specified in `participantCapacity`.
 
-The following is an example of the incoming call notification that a bot would recieve in this case.
+Here's an example of the incoming call notification that a bot would receive in this case.
 
 ```json
 {

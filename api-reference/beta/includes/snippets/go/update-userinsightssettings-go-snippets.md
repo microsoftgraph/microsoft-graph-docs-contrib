@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -19,7 +19,7 @@ requestBody := graphmodels.NewUserInsightsSettings()
 isEnabled := false
 requestBody.SetIsEnabled(&isEnabled) 
 
-result, err := graphClient.Users().ByUserId("user-id").Settings().ItemInsights().Patch(context.Background(), requestBody, nil)
+itemInsights, err := graphClient.Users().ByUserId("user-id").Settings().ItemInsights().Patch(context.Background(), requestBody, nil)
 
 
 ```

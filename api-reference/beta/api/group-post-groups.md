@@ -1,7 +1,7 @@
 ---
 title: "Create group"
 description: "Create a new Microsoft 365 group or security group."
-author: "psaffaie"
+author: "Jordanndahl"
 ms.localizationpriority: high
 ms.prod: "groups"
 doc_type: apiPageType
@@ -21,6 +21,8 @@ Create a new [group](../resources/group.md) as specified in the request body. Yo
 This operation returns by default only a subset of the properties for each group. These default properties are noted in the [Properties](../resources/group.md#properties) section. To get properties that are _not_ returned by default, do a [GET operation](group-get.md) and specify the properties in a `$select` OData query option.
 
 **Note**: To create a [team](../resources/team.md), first create a group then add a team to it, see [create team](../api/team-put-teams.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -56,14 +58,14 @@ POST /groups
 
 In the request body, supply a JSON representation of the [group](../resources/group.md) object.
 
-The following table shows the properties that are required when you create the [group](../resources/group.md). Specify other writable properties as necessary for your group.
+The following table lists the properties that are required when you create the [group](../resources/group.md). Specify other writable properties as necessary for your group.
 
 | Property        | Type    | Description                                                                                                                                                                                                                                                                                                                                |
 | :-------------- | :------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | displayName     | string  | The name to display in the address book for the group. Maximum length is 256 characters. Required.                                                                                                                                                                                                                                         |
 | mailEnabled     | boolean | Set to `true` for mail-enabled groups. Required.                                                                                                                                                                                                                                                                                           |
 | mailNickname    | string  | The mail alias for the group, unique for Microsoft 365 groups in the organization. Maximum length is 64 characters. This property can contain only characters in the [ASCII character set 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) except the following: ` @ () \ [] " ; : <> , SPACE`. Required. |
-| securityEnabled | boolean | Set to `true` for security-enabled groups, including Microsoft 365 groups. Required. **Note:** Groups created using the Microsoft Azure portal always have **securityEnabled** initially set to `true`.                                                                                                                                    |
+| securityEnabled | boolean | Set to `true` for security-enabled groups, including Microsoft 365 groups. Required. **Note:** Groups created using the Microsoft Entra admin center or the Azure portal always have **securityEnabled** initially set to `true`.                                                                                                                                    |
 
 > [!IMPORTANT]
 >
@@ -96,7 +98,7 @@ The following example creates a Microsoft 365 group. Because the owners have not
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 
@@ -125,6 +127,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-group-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -145,11 +151,15 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-group-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-group-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
 
-The following is an example of the response. The value of the **preferredDataLocation** property is inherited from the group creator's preferred data location.
+The following example shows the response. The value of the **preferredDataLocation** property is inherited from the group creator's preferred data location.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -166,38 +176,38 @@ Content-type: application/json
 
 {
    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups/$entity",
-	 "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
-	 "deletedDateTime": null,
-	 "classification": null,
-	 "createdDateTime": "2018-12-22T02:21:05Z",
-	 "description": "Self help community for golf",
-	 "displayName": "Golf Assist",
-	 "expirationDateTime": null,
-	 "groupTypes": [
-	     "Unified"
-	 ],
+     "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
+     "deletedDateTime": null,
+     "classification": null,
+     "createdDateTime": "2018-12-22T02:21:05Z",
+     "description": "Self help community for golf",
+     "displayName": "Golf Assist",
+     "expirationDateTime": null,
+     "groupTypes": [
+         "Unified"
+     ],
    "isAssignableToRole": null,
-	 "mail": "golfassist@contoso.com",
-	 "mailEnabled": true,
-	 "mailNickname": "golfassist",
-	 "membershipRule": null,
-	 "membershipRuleProcessingState": null,
-	 "onPremisesLastSyncDateTime": null,
-	 "onPremisesSecurityIdentifier": null,
-	 "onPremisesSyncEnabled": null,
-	 "preferredDataLocation": "CAN",
-	 "preferredLanguage": null,
-	 "proxyAddresses": [
-	     "SMTP:golfassist@contoso.onmicrosoft.com"
-	 ],
-	 "renewedDateTime": "2018-12-22T02:21:05Z",
-	 "resourceBehaviorOptions": [],
-	 "resourceProvisioningOptions": [],
-	 "securityEnabled": false,
+     "mail": "golfassist@contoso.com",
+     "mailEnabled": true,
+     "mailNickname": "golfassist",
+     "membershipRule": null,
+     "membershipRuleProcessingState": null,
+     "onPremisesLastSyncDateTime": null,
+     "onPremisesSecurityIdentifier": null,
+     "onPremisesSyncEnabled": null,
+     "preferredDataLocation": "CAN",
+     "preferredLanguage": null,
+     "proxyAddresses": [
+         "SMTP:golfassist@contoso.onmicrosoft.com"
+     ],
+     "renewedDateTime": "2018-12-22T02:21:05Z",
+     "resourceBehaviorOptions": [],
+     "resourceProvisioningOptions": [],
+     "securityEnabled": false,
    "securityIdentifier": "S-1-12-1-1753967289-1089268234-832641959-555555555",
-	 "theme": null,
-	 "visibility": "Public",
-	 "onPremisesProvisioningErrors": []
+     "theme": null,
+     "visibility": "Public",
+     "onPremisesProvisioningErrors": []
 }
 ```
 
@@ -207,7 +217,7 @@ The following example creates a security group with an owner and members specifi
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -242,6 +252,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-prepopulated-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-prepopulated-group-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-prepopulated-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -260,6 +274,10 @@ Content-Type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-prepopulated-group-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-prepopulated-group-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -326,11 +344,13 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Create a Microsoft 365 group that can be assigned to an Azure AD role
+<a name='example-3-create-a-microsoft-365-group-that-can-be-assigned-to-an-azure-ad-role'></a>
+
+### Example 3: Create a Microsoft 365 group that can be assigned to a Microsoft Entra role
 
 #### Request
 
-The following is an example of the request. The calling user must be assigned the _RoleManagement.ReadWrite.Directory_ permission to set the **isAssignableToRole** property or update the membership of such groups.
+The following example shows a request. The calling user must be assigned the _RoleManagement.ReadWrite.Directory_ permission to set the **isAssignableToRole** property or update the membership of such groups.
 
 A group with **isAssignableToRole** property set to `true` cannot be of dynamic membership type, its **securityEnabled** must be set to `true`, and **visibility** can only be `Private`.
 
@@ -369,6 +389,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-role-enabled-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-role-enabled-group-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-role-enabled-group-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -389,11 +413,15 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-role-enabled-group-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-role-enabled-group-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
 
-The following is an example of the response. The value of the **preferredDataLocation** property is inherited from the group creator's preferred data location.
+The following example shows the response. The value of the **preferredDataLocation** property is inherited from the group creator's preferred data location.
 
 <!-- {
   "blockType": "response",

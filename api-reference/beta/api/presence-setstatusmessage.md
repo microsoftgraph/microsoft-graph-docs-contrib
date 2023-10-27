@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Set a presence status message for a user. An optional expiration date and time can be supplied.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 The following permission is required to call the API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -22,7 +24,7 @@ The following permission is required to call the API. To learn more, including h
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Presence.ReadWrite                          |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Not supported.                              |
+| Application                            | Presence.ReadWrite.All                              |
 
 ## HTTP Request
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +44,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter       | Type            |  Description                                 |
 | --------------- | --------------- |------------------------------------------- |
-| `statusMessage` | [microsoft.graph.presenceStatusMessage](../resources/presencestatusmessage.md) |It can be set to display the presence status message of a user. |
+| `statusMessage` | [microsoft.graph.presenceStatusMessage](../resources/presencestatusmessage.md) | Contains the presence status message of the user. |
 
 ## Response
 If successful, this method returns a `200 OK` response code.
@@ -84,6 +86,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/setstatusmessage-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/setstatusmessage-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/setstatusmessage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -104,6 +110,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/setstatusmessage-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/setstatusmessage-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -119,7 +129,7 @@ HTTP/1.1 200 OK
 
 ### Example 2: Set status message of another user
 
-The following request sets the presence status message as "Hey I'm currently in a meeting." for user `fa8bf3dc-eca7-46b7-bad1-db199b62afc3`. Then presence for user `fa8bf3dc-eca7-46b7-bad1-db199b62afc3` is obtained on behalf of other user via a [getPresence](presence-get.md) request.
+The following request sets the presence status message as "Hey I am available now" for user `fa8bf3dc-eca7-46b7-bad1-db199b62afc3`. In Example 3, presence information for user `fa8bf3dc-eca7-46b7-bad1-db199b62afc3` is obtained on behalf of another user via a [getPresence](presence-get.md) request.
 
 #### Request
 
@@ -147,6 +157,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/setstatusmessage-another-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/setstatusmessage-another-user-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/setstatusmessage-another-user-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -167,6 +181,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/setstatusmessage-another-user-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/setstatusmessage-another-user-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -181,7 +199,7 @@ HTTP/1.1 200 OK
 ```
 
 ### Example 3:  Get another user presence
-This request should be executed on behalf of another user.
+This example follows Example 2. Presence information for user `fa8bf3dc-eca7-46b7-bad1-db199b62afc3` is obtained on behalf of another user via a [getPresence](presence-get.md) request.
 
 #### Request
 
@@ -196,6 +214,10 @@ GET https://graph.microsoft.com/beta/users/fa8bf3dc-eca7-46b7-bad1-db199b62afc3/
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/setstatusmessage-another-user-get-presence-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/setstatusmessage-another-user-get-presence-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -218,10 +240,14 @@ GET https://graph.microsoft.com/beta/users/fa8bf3dc-eca7-46b7-bad1-db199b62afc3/
 [!INCLUDE [sample-code](../includes/snippets/powershell/setstatusmessage-another-user-get-presence-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/setstatusmessage-another-user-get-presence-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
-Since this presence request does not qualify as a [self presence](presence-get.md#example-1-get-your-own-presence-information) request, `statusMessage.expiryDateTime` and `statusMessage.publishedDateTime` properties are not included in the response body.
+Because this request gets the presence status for another user, the `statusMessage.expiryDateTime` and `statusMessage.publishedDateTime` properties are not included in the response body.
 
 <!-- {
   "blockType": "response",

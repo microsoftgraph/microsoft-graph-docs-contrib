@@ -32,6 +32,8 @@ To evaluate based on classification results, provide the [contentInfo](../resour
 * [removeProtectionAction](../resources/security-removeprotectionaction.md)
 * [removeWatermarkAction](../resources/security-removewatermarkaction.md)
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -127,6 +129,10 @@ User-agent: ContosoLOBApp/1.0
 }
 ```
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/sensitivitylabelthisevaluateclassificationresults-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/sensitivitylabelthisevaluateclassificationresults-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -135,7 +141,7 @@ User-agent: ContosoLOBApp/1.0
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -211,3 +217,21 @@ Content-type: application/json
   ]
 }
 ```
+
+<!--
+{
+  "type": "#page.annotation",
+  "description": "sensitivityLabel: evaluateClassificationResults",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: microsoft.graph.microsoft.graph/users:
+      /users/{var}/security/informationProtection/sensitivityLabels/evaluateClassificationResults
+      Uri path requires navigating into unknown object hierarchy: missing property 'informationProtection' on 'security'. Possible issues:
+  	 1) Doc bug where 'informationProtection' isn't defined on the resource.
+  	 2) Doc bug where 'informationProtection' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.
+  	 3) Doc bug where 'security' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation."
+  ]
+}
+-->

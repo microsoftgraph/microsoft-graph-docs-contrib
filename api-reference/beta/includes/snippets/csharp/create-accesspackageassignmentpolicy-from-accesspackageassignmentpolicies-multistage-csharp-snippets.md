@@ -4,6 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new AccessPackageAssignmentPolicy
@@ -38,21 +40,14 @@ var requestBody = new AccessPackageAssignmentPolicy
 				EscalationTimeInMinutes = 11520,
 				PrimaryApprovers = new List<UserSet>
 				{
-					new UserSet
+					new GroupMembers
 					{
 						OdataType = "#microsoft.graph.groupMembers",
 						IsBackup = true,
-						AdditionalData = new Dictionary<string, object>
-						{
-							{
-								"id" , "string (identifier)"
-							},
-							{
-								"description" , "group for users from connected organizations which have no external sponsor"
-							},
-						},
+						Id = "string (identifier)",
+						Description = "group for users from connected organizations which have no external sponsor",
 					},
-					new UserSet
+					new ExternalSponsors
 					{
 						OdataType = "#microsoft.graph.externalSponsors",
 						IsBackup = false,
@@ -60,19 +55,12 @@ var requestBody = new AccessPackageAssignmentPolicy
 				},
 				EscalationApprovers = new List<UserSet>
 				{
-					new UserSet
+					new SingleUser
 					{
 						OdataType = "#microsoft.graph.singleUser",
 						IsBackup = true,
-						AdditionalData = new Dictionary<string, object>
-						{
-							{
-								"id" , "string (identifier)"
-							},
-							{
-								"description" , "user if the external sponsor does not respond"
-							},
-						},
+						Id = "string (identifier)",
+						Description = "user if the external sponsor does not respond",
 					},
 				},
 			},
@@ -84,21 +72,14 @@ var requestBody = new AccessPackageAssignmentPolicy
 				EscalationTimeInMinutes = 11520,
 				PrimaryApprovers = new List<UserSet>
 				{
-					new UserSet
+					new GroupMembers
 					{
 						OdataType = "#microsoft.graph.groupMembers",
 						IsBackup = true,
-						AdditionalData = new Dictionary<string, object>
-						{
-							{
-								"id" , "string (identifier)"
-							},
-							{
-								"description" , "group for users from connected organizations which have no internal sponsor"
-							},
-						},
+						Id = "string (identifier)",
+						Description = "group for users from connected organizations which have no internal sponsor",
 					},
-					new UserSet
+					new InternalSponsors
 					{
 						OdataType = "#microsoft.graph.internalSponsors",
 						IsBackup = false,
@@ -106,19 +87,12 @@ var requestBody = new AccessPackageAssignmentPolicy
 				},
 				EscalationApprovers = new List<UserSet>
 				{
-					new UserSet
+					new SingleUser
 					{
 						OdataType = "#microsoft.graph.singleUser",
 						IsBackup = true,
-						AdditionalData = new Dictionary<string, object>
-						{
-							{
-								"id" , "string (identifier)"
-							},
-							{
-								"description" , "user if the internal sponsor does not respond"
-							},
-						},
+						Id = "string (identifier)",
+						Description = "user if the internal sponsor does not respond",
 					},
 				},
 			},

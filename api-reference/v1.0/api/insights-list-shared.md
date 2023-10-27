@@ -15,6 +15,8 @@ Calculated insight that includes the list of documents shared with a user.
 
 This insight includes documents hosted on OneDrive/SharePoint in the user's Microsoft 365 tenant that are shared with the user, and documents that are attached as files and sent to the user.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -28,13 +30,14 @@ One of the following permissions is required to call this API. To learn more, in
 Get a list of documents shared with the signed-in user.
 
 >**Note**: Only the user can make requests using the user's ID or principal name.
-
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/insights/shared
 GET /users/{id | userPrincipalName}/insights/shared
 ```
 
 Expand the resource referenced by a **shared** insight:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/v1.0/me/insights/shared/{id}/resource
 ```
@@ -62,7 +65,7 @@ See the [sharingDetail](../resources/insights-sharingdetail.md) complex type.
 | Accept  | application/json|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -74,15 +77,62 @@ If successful, this method returns a `200 OK` response code and a list of [share
 ### Request
 
 The following is an example of a request.
-```http
+
+# [HTTP](#tab/http)
+<!-- { "blockType": "request",
+  "name": "insights_list_shared"
+}
+-->
+
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/insights/shared
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/insights-list-shared-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/insights-list-shared-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/insights-list-shared-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/insights-list-shared-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/insights-list-shared-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/insights-list-shared-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/insights-list-shared-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/insights-list-shared-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
-The following is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.usedInsight"
+}-->
 
 ```http
 HTTP/1.1 200 OK

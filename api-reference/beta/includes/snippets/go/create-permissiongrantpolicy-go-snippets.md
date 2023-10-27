@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -23,7 +23,7 @@ requestBody.SetDisplayName(&displayName)
 description := "A custom permission grant policy to customize conditions for granting consent."
 requestBody.SetDescription(&description) 
 
-result, err := graphClient.Policies().PermissionGrantPolicies().Post(context.Background(), requestBody, nil)
+permissionGrantPolicies, err := graphClient.Policies().PermissionGrantPolicies().Post(context.Background(), requestBody, nil)
 
 
 ```

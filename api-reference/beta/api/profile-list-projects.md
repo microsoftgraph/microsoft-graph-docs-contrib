@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Retrieve a list of [projectParticipation](../resources/projectparticipation.md) objects from a user's [profile](../resources/profile.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -40,8 +42,8 @@ This method supports the following OData query parameters to help customize the 
 
 |Name            |Value    |Description                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|$filter         |string   |Limits the response to only those objects which contain the specified criteria.                                                                                             |
-|$orderby        |string   |By default, the objects in the response are sorted by their **createdDateTime** value in a query. You can change the order of the of the response using the `$orderby` parameter.|
+|$filter         |string   |Limits the response to only those objects that contain the specified criteria.                                                                                             |
+|$orderby        |string   |By default, the objects in the response are sorted by their **createdDateTime** value in a query. You can change the order of the response using the `$orderby` parameter.|
 |$select         |string   |Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.                                        |
 |$skip           |int      |Skip the first n results, useful for paging.                                                                                                                                |
 |$top            |int      |Number of results to be returned.                                                                                                                                           |
@@ -54,7 +56,7 @@ This method supports the following OData query parameters to help customize the 
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -64,7 +66,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of the request.
+Here's an example  of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -78,6 +80,10 @@ GET https://graph.microsoft.com/beta/me/profile/projects
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-projects-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-projects-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -100,11 +106,15 @@ GET https://graph.microsoft.com/beta/me/profile/projects
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-projects-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-projects-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following is an example of the response.
+Here's an example  of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

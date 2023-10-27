@@ -12,6 +12,8 @@ Namespace: microsoft.graph.security
 
 Update the properties of a [retentionEventType](../resources/security-retentioneventtype.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -61,7 +63,7 @@ If successful, this method returns a `200 OK` response code and an updated [micr
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/v1/security/labels/retentionLabels/{retentionLabelId}/eventType
+PATCH https://graph.microsoft.com/v1.0/security/labels/retentionLabels/{retentionLabelId}/eventType
 Content-Type: application/json
 Content-length: 199
 
@@ -78,7 +80,7 @@ Content-length: 199
 <!-- {
   "blockType": "response",
   "truncated": true,
-   "@odata.type": "microsoft.graph.security.retentionEventType"
+  "@odata.type": "microsoft.graph.security.retentionEventType"
 }
 -->
 

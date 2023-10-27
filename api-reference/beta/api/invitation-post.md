@@ -1,8 +1,8 @@
 ---
 title: "Create invitation"
-description: "Use this API to create a new invitation. Invitation adds an external user to the organization."
+description: "Create a new invitation. The invitation adds an external user to the organization."
 ms.localizationpriority: medium
-author: "Sammak"
+author: "ppolkadots"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -13,16 +13,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new [invitation](../resources/invitation.md). Invitation adds an external user to the organization.
+Create a new [invitation](../resources/invitation.md). The invitation adds an external user to the organization.
 
-When creating a new invitation you have several options available:
+The following options are available for creating an invitation:
 
-1. On invitation creation, Microsoft Graph can automatically send an invitation email directly to the invited user, or your app can use the *inviteRedeemUrl* returned in the creation response to craft your own invitation (through your communication mechanism of choice) to the invited user. If you decide to have Microsoft Graph send an invitation email automatically, you can control the content and language of the email using [*invitedUserMessageInfo*](../resources/invitedusermessageinfo.md).
-2. When the user is invited, a user entity (of userType Guest) is created and can now be used to control access to resources. The invited user has to go through the redemption process to access any resources they have been invited to.
+1. On invitation creation, Microsoft Graph can automatically send an invitation email directly to the invited user, or your app can use the **inviteRedeemUrl** returned in the response to craft your own invitation (through your communication mechanism of choice) to the invited user. If you decide to have Microsoft Graph send an invitation email automatically, you can specify the content and language of the email by using [invitedUserMessageInfo](../resources/invitedusermessageinfo.md).
+2. When the user is invited, a user entity (of **userType** `Guest`) is created and can be used to control access to resources. The invited user has to go through the redemption process to access any resources they have been invited to.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -30,25 +32,31 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All |
 
+> [!IMPORTANT]
+> Application permissions (app-only) do not work if B2B invitations are disabled on the tenant or if B2B invitations are restricted to administrators.
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /invitations
 ```
+
 ## Request headers
+
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
 | Content-Type  | application/json  |
 
 ## Request body
+
 In the request body, supply a JSON representation of an [invitation](../resources/invitation.md) object.
 
-The following table shows the properties that are required when you create a invitation.
+The following table lists the parameters that are required when you create an invitation.
 
 | Parameter | Type | Description|
 |:---------------|:--------|:----------|
-|invitedUserEmailAddress |string | The email address of the user you are inviting.|
+|invitedUserEmailAddress |string | The email address of the user you're inviting.|
 |inviteRedirectUrl |string |The URL that the user will be redirected to after redemption.|
 
 ## Response
@@ -56,9 +64,10 @@ The following table shows the properties that are required when you create a inv
 If successful, this method returns `201 Created` response code and [invitation](../resources/invitation.md) object in the response body.
 
 ## Example
-### Request
-The following is an example of the request.
 
+### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -77,6 +86,10 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-invitation-post-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-invitation-post-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -99,10 +112,15 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-invitation-post-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-invitation-post-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
-The following is an example of the response. 
+
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -150,5 +168,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-
-

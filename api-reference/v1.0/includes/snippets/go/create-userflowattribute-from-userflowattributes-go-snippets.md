@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -23,7 +23,7 @@ requestBody.SetDescription(&description)
 dataType := graphmodels.STRING_IDENTITYUSERFLOWATTRIBUTEDATATYPE 
 requestBody.SetDataType(&dataType) 
 
-result, err := graphClient.Identity().UserFlowAttributes().Post(context.Background(), requestBody, nil)
+userFlowAttributes, err := graphClient.Identity().UserFlowAttributes().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Set the availability and activity status in a presence session of an application for a user.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ### Presence sessions
 A user can have multiple presence sessions because the user can be on multiple Teams clients (desktop, mobile, and web). Each Teams client has an independent presence session and the user's presence is an aggregated state from all the sessions behind.
 
@@ -62,7 +64,7 @@ In the request body, provide a JSON object with the following parameters.
 | sessionId          | string   | The ID of the application's presence session.                                                          |
 | availability       | string   | The base presence information.                                                                         |
 | activity           | string   | The supplemental information to availability.                                                          |
-| expirationDuration | duration | The expiration of the app presence session. The value is represented in ISO 8601 format for durations.</p>If not provided, a default expiration of 5 minutes will be applied. |
+| expirationDuration | duration | The expiration of the app presence session. The value is represented in [ISO 8601 format for durations](http://en.wikipedia.org/wiki/ISO_8601#Durations).</p>If not provided, a default expiration of 5 minutes will be applied. |
 
 > [!IMPORTANT]
 >
@@ -109,6 +111,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/set-presence-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/set-presence-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/set-presence-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -127,6 +133,10 @@ Content-Type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/set-presence-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/set-presence-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

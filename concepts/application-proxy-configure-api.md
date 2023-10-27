@@ -3,7 +3,7 @@ title: "Configure Application Proxy using the Microsoft Graph API"
 description: "Provide remote access and single sign-on to on-premises applications by configuring Application Proxy using the Microsoft Graph API."
 author: "FaithOmbongi"
 ms.author: ombongifaith
-ms.reviewer: dhruvinshah
+ms.reviewer: dhruvinrshah
 ms.topic: "conceptual"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -12,11 +12,11 @@ ms.date: 01/11/2022
 
 # Configure Application Proxy using the Microsoft Graph API
 
-In this article, you'll learn how to configure Azure Active Directory (Azure AD) Application Proxy for an application. Application Proxy provides secure remote access and single sign-on to on-premises web applications. After configuring Application Proxy for an application, users can access their on-premises applications through an external URL, the My Apps portal, or other internal application portals.
+In this article, you'll learn how to configure Microsoft Entra application proxy for an application. Application Proxy provides secure remote access and single sign-on to on-premises web applications. After configuring Application Proxy for an application, users can access their on-premises applications through an external URL, the My Apps portal, or other internal application portals.
 
 ## Prerequisites
 
-- This tutorial assumes you have already installed a connector and completed the [prerequisites](/azure/active-directory/app-proxy/application-proxy-add-on-premises-application#prerequisites) for Application Proxy so that connectors can communicate with Azure AD services.
+- This tutorial assumes you have already installed a connector and completed the [prerequisites](/azure/active-directory/app-proxy/application-proxy-add-on-premises-application#prerequisites) for Application Proxy so that connectors can communicate with Microsoft Entra services.
 - Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the global administrator role.
 - Grant yourself the following delegated permission: `Directory.ReadWrite.All`.
 
@@ -47,27 +47,35 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-configure-appproxy-create-applicationtemplates-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-configure-appproxy-create-applicationtemplates-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-configure-appproxy-create-applicationtemplates-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/tutorial-configure-appproxy-create-applicationtemplates-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-configure-appproxy-create-applicationtemplates-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/tutorial-configure-appproxy-create-applicationtemplates-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-configure-appproxy-create-applicationtemplates-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-appproxy-create-applicationtemplates-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-configure-appproxy-create-applicationtemplates-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/tutorial-configure-appproxy-create-applicationtemplates-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-configure-appproxy-create-applicationtemplates-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-configure-appproxy-create-applicationtemplates-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-configure-appproxy-create-applicationtemplates-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-configure-appproxy-create-applicationtemplates-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -144,27 +152,35 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-configure-appproxy-update-application-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-configure-appproxy-update-application-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-configure-appproxy-update-application-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/tutorial-configure-appproxy-update-application-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-configure-appproxy-update-application-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/tutorial-configure-appproxy-update-application-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-configure-appproxy-update-application-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-appproxy-update-application-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-configure-appproxy-update-application-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/tutorial-configure-appproxy-update-application-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-configure-appproxy-update-application-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-configure-appproxy-update-application-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-configure-appproxy-update-application-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-configure-appproxy-update-application-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -181,7 +197,7 @@ Update the following properties in the request body:
 
 - **internalUrl** - Set to the internal URL.
 - **externalUrl** - Set to the external URL.
-- All other values can be configured as needed. For details, see [Add an on-premises app to Azure AD](/azure/active-directory/app-proxy/application-proxy-add-on-premises-application#add-an-on-premises-app-to-azure-ad).
+- All other values can be configured as needed. For details, see [Add an on-premises app to Microsoft Entra ID](/azure/active-directory/app-proxy/application-proxy-add-on-premises-application#add-an-on-premises-app-to-azure-ad).
 
 #### Request
 
@@ -212,27 +228,35 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-configure-appproxy-update-application-2-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-configure-appproxy-update-application-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-configure-appproxy-update-application-2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/tutorial-configure-appproxy-update-application-2-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-configure-appproxy-update-application-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/tutorial-configure-appproxy-update-application-2-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-configure-appproxy-update-application-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-appproxy-update-application-2-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-configure-appproxy-update-application-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/tutorial-configure-appproxy-update-application-2-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-configure-appproxy-update-application-2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-configure-appproxy-update-application-2-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-configure-appproxy-update-application-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-configure-appproxy-update-application-2-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -264,27 +288,35 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationPro
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-configure-appproxy-get-connectors-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-configure-appproxy-get-connectors-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-configure-appproxy-get-connectors-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/tutorial-configure-appproxy-get-connectors-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-configure-appproxy-get-connectors-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/tutorial-configure-appproxy-get-connectors-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-configure-appproxy-get-connectors-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-appproxy-get-connectors-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-configure-appproxy-get-connectors-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/tutorial-configure-appproxy-get-connectors-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-configure-appproxy-get-connectors-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-configure-appproxy-get-connectors-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-configure-appproxy-get-connectors-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-configure-appproxy-get-connectors-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -343,6 +375,10 @@ Content-type: application/json
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-configure-appproxy-create-connectorgroup-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -352,7 +388,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-appproxy-create-connectorgroup-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-configure-appproxy-create-connectorgroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -360,6 +396,10 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -404,27 +444,35 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-configure-appproxy-create-connector-memberof-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-configure-appproxy-create-connector-memberof-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-configure-appproxy-create-connector-memberof-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/tutorial-configure-appproxy-create-connector-memberof-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-configure-appproxy-create-connector-memberof-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/tutorial-configure-appproxy-create-connector-memberof-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-configure-appproxy-create-connector-memberof-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-appproxy-create-connector-memberof-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-configure-appproxy-create-connector-memberof-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/tutorial-configure-appproxy-create-connector-memberof-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-configure-appproxy-create-connector-memberof-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-configure-appproxy-create-connector-memberof-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-configure-appproxy-create-connector-memberof-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-configure-appproxy-create-connector-memberof-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -441,7 +489,6 @@ HTTP/1.1 204 No content
 
 #### Request
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -452,32 +499,40 @@ PUT https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85
 Content-type: application/json
 
 {
-"@odata.id":"https://graph.microsoft.com/onPremisesPublishingProfiles/applicationproxy/connectorGroups/3e6f4c35-a04b-4d03-b98a-66fff89b72e6"
+"@odata.id":"https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationproxy/connectorGroups/3e6f4c35-a04b-4d03-b98a-66fff89b72e6"
 }
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-configure-appproxy-assign-application-connectorgroup-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-configure-appproxy-assign-application-connectorgroup-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-configure-appproxy-assign-application-connectorgroup-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/tutorial-configure-appproxy-assign-application-connectorgroup-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-configure-appproxy-assign-application-connectorgroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/tutorial-configure-appproxy-assign-application-connectorgroup-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-configure-appproxy-assign-application-connectorgroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-appproxy-assign-application-connectorgroup-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-configure-appproxy-assign-application-connectorgroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/tutorial-configure-appproxy-assign-application-connectorgroup-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-configure-appproxy-assign-application-connectorgroup-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-configure-appproxy-assign-application-connectorgroup-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-configure-appproxy-assign-application-connectorgroup-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-configure-appproxy-assign-application-connectorgroup-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -520,27 +575,35 @@ Content-type: appplication/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-configure-appproxy-update-app-sso-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-configure-appproxy-update-app-sso-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-configure-appproxy-update-app-sso-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/tutorial-configure-appproxy-update-app-sso-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-configure-appproxy-update-app-sso-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/tutorial-configure-appproxy-update-app-sso-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-configure-appproxy-update-app-sso-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-appproxy-update-app-sso-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-configure-appproxy-update-app-sso-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/tutorial-configure-appproxy-update-app-sso-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-configure-appproxy-update-app-sso-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-configure-appproxy-update-app-sso-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -575,16 +638,20 @@ GET https://graph.microsoft.com/beta/servicePrincipals/a8cac399-cde5-4516-a674-8
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/tutorial-configure-appproxy-get-approles-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-configure-appproxy-get-approles-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-appproxy-get-approles-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-configure-appproxy-get-approles-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -592,6 +659,10 @@ GET https://graph.microsoft.com/beta/servicePrincipals/a8cac399-cde5-4516-a674-8
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -628,7 +699,7 @@ Content-type: application/json
 
 ### Create a user account
 
-For this tutorial, you create a user account that is assigned to the app role. In the request body, change `contoso.com` to the domain name of your tenant. You can find tenant information on the Azure Active Directory overview page. Record the **id** of the user account to be used in the next step.
+For this tutorial, you create a user account that is assigned to the app role. In the request body, change `contoso.com` to the domain name of your tenant. You can find tenant information on the Microsoft Entra overview page. Record the **id** of the user account to be used in the next step.
 
 #### Request
 
@@ -655,27 +726,35 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-configure-appproxy-create-user-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-configure-appproxy-create-user-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-configure-appproxy-create-user-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/tutorial-configure-appproxy-create-user-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-configure-appproxy-create-user-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/tutorial-configure-appproxy-create-user-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-configure-appproxy-create-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-appproxy-create-user-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-configure-appproxy-create-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/tutorial-configure-appproxy-create-user-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-configure-appproxy-create-user-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-configure-appproxy-create-user-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-configure-appproxy-create-user-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-configure-appproxy-create-user-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -733,27 +812,35 @@ Content-type: appRoleAssignments/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-configure-appproxy-create-serviceprincipal-approleassignment-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-configure-appproxy-create-serviceprincipal-approleassignment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-configure-appproxy-create-serviceprincipal-approleassignment-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/tutorial-configure-appproxy-create-serviceprincipal-approleassignment-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-configure-appproxy-create-serviceprincipal-approleassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/tutorial-configure-appproxy-create-serviceprincipal-approleassignment-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-configure-appproxy-create-serviceprincipal-approleassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-appproxy-create-serviceprincipal-approleassignment-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-configure-appproxy-create-serviceprincipal-approleassignment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/tutorial-configure-appproxy-create-serviceprincipal-approleassignment-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-configure-appproxy-create-serviceprincipal-approleassignment-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-configure-appproxy-create-serviceprincipal-approleassignment-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -806,27 +893,35 @@ DELETE https://graph.microsoft.com/v1.0/users/4628e7df-dff3-407c-a08f-75f08c0806
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-configure-appproxy-delete-user-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-configure-appproxy-delete-user-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-configure-appproxy-delete-user-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/tutorial-configure-appproxy-delete-user-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-configure-appproxy-delete-user-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/tutorial-configure-appproxy-delete-user-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-configure-appproxy-delete-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-appproxy-delete-user-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-configure-appproxy-delete-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/tutorial-configure-appproxy-delete-user-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-configure-appproxy-delete-user-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-configure-appproxy-delete-user-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-configure-appproxy-delete-user-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-configure-appproxy-delete-user-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -854,27 +949,35 @@ DELETE https://graph.microsoft.com/v1.0/applications/bf21f7e9-9d25-4da2-82ab-7fd
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-configure-appproxy-delete-application-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-configure-appproxy-delete-application-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-configure-appproxy-delete-application-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/tutorial-configure-appproxy-delete-application-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-configure-appproxy-delete-application-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/tutorial-configure-appproxy-delete-application-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-configure-appproxy-delete-application-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-appproxy-delete-application-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-configure-appproxy-delete-application-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/tutorial-configure-appproxy-delete-application-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-configure-appproxy-delete-application-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-configure-appproxy-delete-application-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-configure-appproxy-delete-application-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-configure-appproxy-delete-application-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -902,27 +1005,35 @@ DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles/application
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-configure-appproxy-delete-connectorgroup-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/beta/tutorial-configure-appproxy-delete-connectorgroup-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/tutorial-configure-appproxy-delete-connectorgroup-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/tutorial-configure-appproxy-delete-connectorgroup-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/beta/tutorial-configure-appproxy-delete-connectorgroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/tutorial-configure-appproxy-delete-connectorgroup-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/beta/tutorial-configure-appproxy-delete-connectorgroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-appproxy-delete-connectorgroup-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/beta/tutorial-configure-appproxy-delete-connectorgroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/tutorial-configure-appproxy-delete-connectorgroup-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/beta/tutorial-configure-appproxy-delete-connectorgroup-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-configure-appproxy-delete-connectorgroup-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/beta/tutorial-configure-appproxy-delete-connectorgroup-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/beta/tutorial-configure-appproxy-delete-connectorgroup-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

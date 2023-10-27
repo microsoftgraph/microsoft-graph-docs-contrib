@@ -20,9 +20,9 @@ The user experience work from anywhere Cloud management devices summary.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|coManagedDeviceCount|Int32|Total number of  co-managed devices.|
-|intuneDeviceCount|Int32|The count of intune devices that are not autopilot registerd.|
-|tenantAttachDeviceCount|Int32|Total count of tenant attach devices.|
+|coManagedDeviceCount|Int32|Total number of  co-managed devices. Read-only.|
+|intuneDeviceCount|Int32|The count of intune devices that are not autopilot registerd. Read-only.|
+|tenantAttachDeviceCount|Int32|Total count of tenant attach devices. Read-only.|
 
 ## Relationships
 None

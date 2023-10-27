@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-await client.api('/print/connectors/{id}')
+await client.api('/print/connectors/9953d245-3f6e-418c-a438-67f50e69a430')
 	.version('beta')
 	.delete();
 

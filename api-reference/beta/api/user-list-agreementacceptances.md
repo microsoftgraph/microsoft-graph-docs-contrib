@@ -2,7 +2,7 @@
 title: "List agreementAcceptances"
 description: "Retrieve a list of a user's agreementAcceptance objects."
 ms.localizationpriority: medium
-author: "raprakasMSFT"
+author: "AlexFilipin"
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -14,6 +14,9 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the signed-in user's [agreementAcceptance](../resources/agreementacceptance.md) objects.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -41,7 +44,7 @@ This method supports the `$select` [OData query parameter](/graph/query-paramete
 | Authorization | Bearer {token} |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and a collection of [agreementAcceptance](../resources/agreementacceptance.md) objects in the response body.
 ## Example
@@ -58,6 +61,10 @@ GET https://graph.microsoft.com/beta/me/agreementAcceptances
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-agreementacceptances-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-agreementacceptances-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -78,6 +85,10 @@ GET https://graph.microsoft.com/beta/me/agreementAcceptances
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-agreementacceptances-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-agreementacceptances-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

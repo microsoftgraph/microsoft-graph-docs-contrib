@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of an [authenticationMethodsPolicy](../resources/authenticationmethodspolicy.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -44,7 +46,7 @@ This method does not support any optional query parameters.
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -68,6 +70,10 @@ GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-authenticationmethodspolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-authenticationmethodspolicy-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-authenticationmethodspolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -86,6 +92,10 @@ GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-authenticationmethodspolicy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-authenticationmethodspolicy-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -112,6 +122,7 @@ Content-Type: application/json
     "registrationEnforcement": {
         "authenticationMethodsRegistrationCampaign": {
             "snoozeDurationInDays": 1,
+            "enforceRegistrationAfterAllowedSnoozes": true,
             "state": "default",
             "excludeTargets": [],
             "includeTargets": [
@@ -122,6 +133,15 @@ Content-Type: application/json
                 }
             ]
         }
+    },
+    "reportSuspiciousActivitySettings": {
+        "@odata.type": "#microsoft.graph.reportSuspiciousActivitySettings",
+        "state": "enabled",
+        "includeTarget": {
+            "targetType": "group",
+            "id": "all_users",
+        },
+        "voiceReportingCode": 0,
     },
     "authenticationMethodConfigurations": [
         {
@@ -209,5 +229,6 @@ Content-Type: application/json
             "excludeTargets": []
         }
     ]
+    
 }
 ```

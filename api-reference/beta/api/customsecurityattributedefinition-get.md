@@ -8,13 +8,17 @@ doc_type: apiPageType
 ---
 
 # Get customSecurityAttributeDefinition
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Read the properties and relationships of a [customSecurityAttributeDefinition](../resources/customsecurityattributedefinition.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -23,14 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|CustomSecAttributeDefinition.Read.All, CustomSecAttributeDefinition.ReadWrite.All|
 
-The signed-in user must also be assigned one of the following [directory roles](/azure/active-directory/roles/permissions-reference):
-
-+ Attribute Assignment Reader
-+ Attribute Definition Reader
-+ Attribute Assignment Administrator
-+ Attribute Definition Administrator
-
-By default, Global Administrator and other administrator roles do not have permissions to read, define, or assign custom security attributes.
+[!INCLUDE [rbac-customsecurityattibutes-apis-definition-assignment-read](../includes/rbac-for-apis/rbac-customsecurityattibutes-apis-definition-assignment-read.md)]
 
 ## HTTP request
 
@@ -43,15 +40,18 @@ GET /directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefini
 ```
 
 ## Optional query parameters
-This method supports the `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+
+Don't supply a request body for this method.
 
 ## Response
 
@@ -59,14 +59,12 @@ If successful, this method returns a `200 OK` response code and a [customSecurit
 
 ## Examples
 
-### Example: Get a custom security attribute
+### Request
 
 The following example gets a single custom security attribute definition.
 
 + Attribute set: `Engineering`
 + Attribute: `ProjectDate`
-
-#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -81,6 +79,10 @@ GET https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinition
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-customsecurityattributedefinition-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-customsecurityattributedefinition-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -103,9 +105,16 @@ GET https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinition
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-customsecurityattributedefinition-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-customsecurityattributedefinition-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-#### Response
+### Response
+
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

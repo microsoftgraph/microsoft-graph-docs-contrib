@@ -2,7 +2,7 @@
 title: "propertyToEvaluate resource type"
 description: "Defines the name and the value of the property."
 ms.localizationpriority: medium
-author: "psaffaie"
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: "resourcePageType"
 ---

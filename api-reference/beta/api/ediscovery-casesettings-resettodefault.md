@@ -15,6 +15,8 @@ Namespace: microsoft.graph.ediscovery
 
 Reset a [caseSettings](../resources/ediscovery-caseSettings.md) object to the default values.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -44,7 +46,7 @@ POST /compliance/ediscovery/cases/{caseId}/settings/resetToDefault
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -70,6 +72,10 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/setti
 [!INCLUDE [sample-code](../includes/snippets/csharp/settings-resettodefault-for-caseid-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/settings-resettodefault-for-caseid-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/settings-resettodefault-for-caseid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -84,6 +90,14 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/setti
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/settings-resettodefault-for-caseid-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/settings-resettodefault-for-caseid-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/settings-resettodefault-for-caseid-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

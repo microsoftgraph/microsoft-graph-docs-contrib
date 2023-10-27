@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 Update an [educationAssignment](../resources/educationassignment.md) object. 
 
-Only teachers in the class can do this. Note that you can't use a PATCH request to change the status of an **assignment**. Use the [publish](../api/educationassignment-publish.md) action to change the **assignment** status.
+Only teachers in the class can do this. You can't use a PATCH request to change the status of an **assignment**. Use the [publish](../api/educationassignment-publish.md) action to change the **assignment** status.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -24,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
 |Delegated (personal Microsoft account) |  Not supported.  |
-|Application | Not supported. | 
+|Application | EduAssignments.ReadWrite.All | 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -38,28 +40,28 @@ PATCH /education/classes/{class-id}/assignments/{assignment-id}
 | Content-Type  | application/json  |
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintains their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |addedStudentAction|String| Controls the behavior for students who are added after the assignment is published.|
-|addToCalendarAction|educationAddToCalendarOptions|Optional field to control the assignment behavior  for adding assignments to students' and teachers' calendars when the assignment is published. Possible values are: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `studentsOnly` and `unknownFutureValue`. Default value is `none`. Cannot be modified when assignment is in **Published** state. |
+|addToCalendarAction|educationAddToCalendarOptions|Optional field to control the assignment behavior  for adding assignments to students' and teachers' calendars when the assignment is published. Possible values are: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `studentsOnly` and `unknownFutureValue`. Default value is `none`. Can't be modified when assignment is in **Published** state. |
 |allowLateSubmissions|Boolean| Whether submissions can be submitted after the due date.|
 |allowStudentsToAddResourcesToSubmission|Boolean| Whether a student can add resources to a submission. Indicated whether the only items on the submission came from the assignment resource list. |
-|assignDateTime|DateTimeOffset| Date the assignment should be published to students. Cannot be edited after the assignment has been published. |
+|assignDateTime|DateTimeOffset| Date the assignment should be published to students. Can't be edited after the assignment has been published. |
 |assignTo|[educationAssignmentRecipient](../resources/educationassignmentrecipient.md)| Students who get the assignment.|
-|closeDateTime|DateTimeOffset| Date when the assignment will be closed for submissions. This is an optional field that can be null if the assignment does not allowLateSubmissions or the closeDateTime is the same as the dueDateTime but if specified, it must be greater than or equal to the dueDateTime.|
+|closeDateTime|DateTimeOffset| Date when the assignment is closed for submissions. This is an optional field that can be null if the assignment doesn't allowLateSubmissions or the closeDateTime is the same as the dueDateTime but if specified, it must be greater than or equal to the dueDateTime.|
 |displayName|String| Name of assignment. |
 |dueDateTime|DateTimeOffset| Date assignment is due. |
-|grading|[educationAssignmentGradeType](../resources/educationassignmentgradetype.md)| How the assignment will be graded.|
+|grading|[educationAssignmentGradeType](../resources/educationassignmentgradetype.md)| How the assignment is graded.|
 |instructions|itemBody| Instructions to be given to the students along with the assignment. |
-|notificationChannelUrl|String| Channel to post assignment publish notification. Updating the channel URL is not allowed after the assignment has been published and is only allowed when the **assignTo** value is [educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md).|
+|notificationChannelUrl|String| Channel to post assignment publish notification. Updating the channel URL isn't allowed after the assignment has been published and is only allowed when the **assignTo** value is [educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md).|
 
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [educationAssignment](../resources/educationassignment.md) object in the response body.
 ## Example
 ### Request
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -87,6 +89,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationassignment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-educationassignment-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-educationassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -107,10 +113,14 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/update-educationassignment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-educationassignment-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
-The following is an example of the response. 
+Here's an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
 

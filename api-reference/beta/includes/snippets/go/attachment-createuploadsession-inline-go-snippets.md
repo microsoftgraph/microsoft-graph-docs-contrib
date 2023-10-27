@@ -4,18 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Me/Messages/Item/Attachments/CreateUploadSession"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewCreateUploadSessionPostRequestBody()
+requestBody := graphusers.NewItemCreateUploadSessionPostRequestBody()
 attachmentItem := graphmodels.NewAttachmentItem()
 attachmentType := graphmodels.FILE_ATTACHMENTTYPE 
 attachmentItem.SetAttachmentType(&attachmentType) 
@@ -29,7 +30,7 @@ contentId := "my_inline_picture"
 attachmentItem.SetContentId(&contentId) 
 requestBody.SetAttachmentItem(attachmentItem)
 
-result, err := graphClient.Me().Messages().ByMessageId("message-id").Attachments().CreateUploadSession().Post(context.Background(), requestBody, nil)
+createUploadSession, err := graphClient.Me().Messages().ByMessageId("message-id").Attachments().CreateUploadSession().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -2,7 +2,7 @@
 title: "driveItem: restore"
 description: "Restore a driveItem that has been deleted and is currently in the recycle bin."
 ms.localizationpriority: medium
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 ms.prod: files
 doc_type: "apiPageType"
 ---
@@ -13,9 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restore a [driveItem](../resources/driveitem.md) that has been deleted and is currently in the recycle bin. 
+Restore a [driveItem](../resources/driveitem.md) that has been deleted and is currently in the recycle bin.
 
 >**Note**: This functionality is currently only available for OneDrive Personal.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -60,7 +62,7 @@ The following example shows how to call this API.
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -86,6 +88,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/restore-item-e1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/restore-item-e1-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/restore-item-e1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -106,11 +112,15 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/restore-item-e1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/restore-item-e1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Reset any changes made to the default configuration in a cross-tenant access policy back to the system default.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -44,7 +46,7 @@ POST /policies/crossTenantAccessPolicy/default/resetToSystemDefault
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -53,7 +55,6 @@ If successful, this action returns a `204 No Content` response code. To confirm 
 ## Examples
 
 ### Request
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -68,6 +69,10 @@ POST https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/default/r
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -88,6 +93,10 @@ POST https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/default/r
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

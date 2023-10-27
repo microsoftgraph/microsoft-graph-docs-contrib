@@ -27,8 +27,8 @@ Represents customizable information for a managed tenant.
 |:---|:---|:---|
 |contacts|[microsoft.graph.managedTenants.tenantContactInformation](../resources/managedtenants-tenantcontactinformation.md) collection|The collection of contacts for the managed tenant. Optional.|
 |displayName|String|The display name for the managed tenant. Required. Read-only.|
-|id|String|The Azure Active Directory tenant identifier for the managed tenant. Required. Read-only.|
-|tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md). Optional. Read-only.|
+|id|String|The Microsoft Entra tenant identifier for the managed tenant. Required. Read-only.|
+|tenantId|String|The Microsoft Entra tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md). Optional. Read-only.|
 |website|String|The website for the managed tenant. Required.|
 
 ## Relationships

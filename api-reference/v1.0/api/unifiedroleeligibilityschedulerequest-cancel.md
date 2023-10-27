@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Immediately cancel a unifiedRoleEligibilityScheduleRequest object whose status is `Granted` and have the system automatically delete the cancelled request after 30 days. After calling this action, the **status** of the cancelled **unifiedRoleEligibilityScheduleRequest** changes to `Revoked`.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -19,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory	|
 |Delegated (personal Microsoft account)|Not supported|
-|Application|RoleManagement.ReadWrite.Directory |
+|Application|RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory |
 
 ## HTTP request
 
@@ -37,7 +39,7 @@ POST /roleManagement/directory/roleEligibilityScheduleRequests/{unifiedRoleEligi
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -61,6 +63,10 @@ POST https://graph.microsoft.com/v1.0/roleManagement/directory/roleEligibilitySc
 [!INCLUDE [sample-code](../includes/snippets/csharp/unifiedroleeligibilityschedulerequestthiscancel-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/unifiedroleeligibilityschedulerequestthiscancel-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/unifiedroleeligibilityschedulerequestthiscancel-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -79,6 +85,10 @@ POST https://graph.microsoft.com/v1.0/roleManagement/directory/roleEligibilitySc
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/unifiedroleeligibilityschedulerequestthiscancel-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/unifiedroleeligibilityschedulerequestthiscancel-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

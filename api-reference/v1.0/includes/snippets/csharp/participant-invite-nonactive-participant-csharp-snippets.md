@@ -4,6 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Microsoft.Graph.Communications.Calls.Item.Participants.Invite.InvitePostRequestBody
@@ -13,7 +15,6 @@ var requestBody = new Microsoft.Graph.Communications.Calls.Item.Participants.Inv
 		new InvitationParticipantInfo
 		{
 			OdataType = "#microsoft.graph.invitationParticipantInfo",
-			ReplacesCallId = "a7ebfb2d-871e-419c-87af-27290b22e8db",
 			Identity = new IdentitySet
 			{
 				OdataType = "#microsoft.graph.identitySet",
@@ -29,6 +30,7 @@ var requestBody = new Microsoft.Graph.Communications.Calls.Item.Participants.Inv
 					},
 				},
 			},
+			ParticipantId = "a7ebfb2d-871e-419c-87af-27290b22e8db",
 		},
 	},
 	ClientContext = "f2fa86af-3c51-4bc2-8fc0-475452d9764f",

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of an [onPremisesDirectorySynchronization](../resources/onpremisesdirectorysynchronization.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -21,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
 | Delegated (work or school account)     | OnPremDirectorySynchronization.Read.All, OnPremDirectorySynchronization.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported.                                                                        |
-| Application                            | Not supported.                                                                        |
+| Application                            | OnPremDirectorySynchronization.Read.All, OnPremDirectorySynchronization.ReadWrite.All |
 
 For delegated scenarios, the user needs to be assigned the *Global Administrator* [role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
@@ -47,7 +49,7 @@ This method supports the `$select` OData query parameter to help customize the r
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -73,6 +75,10 @@ GET https://graph.microsoft.com/beta/directory/onPremisesSynchronization/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-onpremisesdirectorysynchronization-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-onpremisesdirectorysynchronization-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-onpremisesdirectorysynchronization-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -93,11 +99,15 @@ GET https://graph.microsoft.com/beta/directory/onPremisesSynchronization/{id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-onpremisesdirectorysynchronization-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-onpremisesdirectorysynchronization-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

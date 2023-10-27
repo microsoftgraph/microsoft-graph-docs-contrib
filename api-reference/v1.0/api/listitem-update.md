@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 title: Update listItem
 description: Update the properties on a listItem.
 ms.localizationpriority: high
@@ -11,6 +11,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Update the properties on a **[listItem][]**.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -42,18 +44,18 @@ PATCH /sites/{site-id}/lists/{list-id}/items/{item-id}/fields
 |:-----------|:------|:--------------------------------------------------------
 | _if-match_ | etag  | If this request header is included and the eTag provided does not match the current eTag on the item, a `412 Precondition Failed` response is returned and the item will not be updated.
 
-## Request body 
+## Request body
 In the request body, supply a JSON representation of a [fieldValueSet][] specifying the fields to update.
 
-## Response 
+## Response
 
 If successful, this method returns a `200 Ok` response code and a [fieldValueSet][] in the response body for the updated list item.
 
 ## Example
 
-The following example updates the **Color** and **Quantity** fields of the list item with new values. All other values on the **listItem** are left alone. 
+The following example updates the **Color** and **Quantity** fields of the list item with new values. All other values on the **listItem** are left alone.
 
-### Request 
+### Request
 
 
 # [HTTP](#tab/http)
@@ -73,6 +75,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-listitem-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-listitem-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-listitem-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -87,6 +93,10 @@ Content-Type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/update-listitem-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-listitem-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [plannerRosterMember](../resources/plannerrostermember.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -34,11 +36,8 @@ GET /planner/rosters/{plannerRosterId}/members/{plannerRosterMemberId}
 ```
 
 ## Optional query parameters
-This method only supports following OData query parameters:
 
-- $select
-
-For general information, see [OData query parameters](/graph/query-parameters).
+This method only supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Name|Description|
@@ -46,7 +45,7 @@ For general information, see [OData query parameters](/graph/query-parameters).
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -55,6 +54,8 @@ If successful, this method returns a `200 OK` response code and a [plannerRoster
 ## Examples
 
 ### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -68,6 +69,10 @@ GET https://graph.microsoft.com/beta/planner/rosters/523a9d5a-f9d5-45c1-929f-b85
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-plannerrostermember-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-plannerrostermember-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -90,10 +95,17 @@ GET https://graph.microsoft.com/beta/planner/rosters/523a9d5a-f9d5-45c1-929f-b85
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-plannerrostermember-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-plannerrostermember-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

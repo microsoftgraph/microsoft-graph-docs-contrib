@@ -4,16 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Microsoft.Graph.Teams.Item.Members.Add.AddPostRequestBody
 {
 	Values = new List<ConversationMember>
 	{
-		new ConversationMember
+		new AadUserConversationMember
 		{
 			OdataType = "microsoft.graph.aadUserConversationMember",
-			Roles = new List<String>
+			Roles = new List<string>
 			{
 			},
 			AdditionalData = new Dictionary<string, object>
@@ -23,7 +25,7 @@ var requestBody = new Microsoft.Graph.Teams.Item.Members.Add.AddPostRequestBody
 				},
 			},
 		},
-		new ConversationMember
+		new AadUserConversationMember
 		{
 			OdataType = "microsoft.graph.aadUserConversationMember",
 			Roles = new List<string>

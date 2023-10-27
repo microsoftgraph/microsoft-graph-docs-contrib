@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -23,7 +23,7 @@ requestBody.SetManagedGroupTypes(&managedGroupTypes)
 alternateNotificationEmails := "admin@contoso.com"
 requestBody.SetAlternateNotificationEmails(&alternateNotificationEmails) 
 
-result, err := graphClient.GroupLifecyclePolicies().Post(context.Background(), requestBody, nil)
+groupLifecyclePolicies, err := graphClient.GroupLifecyclePolicies().Post(context.Background(), requestBody, nil)
 
 
 ```

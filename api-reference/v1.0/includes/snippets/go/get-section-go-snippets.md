@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().Onenote().Sections().BySectionId("onenoteSection-id").Get(context.Background(), nil)
+sections, err := graphClient.Me().Onenote().Sections().ByOnenoteSectionId("onenoteSection-id").Get(context.Background(), nil)
 
 
 ```

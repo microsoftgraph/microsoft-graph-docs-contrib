@@ -15,6 +15,8 @@ Delete a single [chatMessage](../resources/chatmessage.md) or a [chat message re
 
 >**Note:** This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -63,7 +65,7 @@ POST /users/{userId}/chats/{chatsId}/messages/{chatMessageId}/softDelete
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -78,7 +80,8 @@ If successful, this action returns a `204 No Content` response code.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "chatmessagethis-softdelete1"
+  "name": "chatmessagethis-softdelete1",
+  "sampleKeys": ["8f98f01d-1a73-401a-b9e9-9fd1e6f5e5ar", "19:22273db3497f4b32bue61f6e82be21c5@thread.tacv2", "1649864053377"]
 }
 -->
 ``` http
@@ -87,6 +90,10 @@ POST https://graph.microsoft.com/v1.0/users/8f98f01d-1a73-401a-b9e9-9fd1e6f5e5ar
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/chatmessagethis-softdelete1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/chatmessagethis-softdelete1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -109,6 +116,10 @@ POST https://graph.microsoft.com/v1.0/users/8f98f01d-1a73-401a-b9e9-9fd1e6f5e5ar
 [!INCLUDE [sample-code](../includes/snippets/powershell/chatmessagethis-softdelete1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/chatmessagethis-softdelete1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -129,7 +140,8 @@ HTTP/1.1 204 No Content
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "chatmessagethis-softdelete2"
+  "name": "chatmessagethis-softdelete2",
+  "sampleKeys": ["172b0cce-e65d-44ce-9a49-91d9f2e8593a", "19:22273db3497f4b32bue61f6e82be21c5@thread.tacv2", "1649864053377"]
 }
 -->
 ``` http
@@ -138,6 +150,10 @@ POST https://graph.microsoft.com/v1.0/teams/172b0cce-e65d-44ce-9a49-91d9f2e8593a
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/chatmessagethis-softdelete2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/chatmessagethis-softdelete2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -160,6 +176,10 @@ POST https://graph.microsoft.com/v1.0/teams/172b0cce-e65d-44ce-9a49-91d9f2e8593a
 [!INCLUDE [sample-code](../includes/snippets/powershell/chatmessagethis-softdelete2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/chatmessagethis-softdelete2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -180,7 +200,8 @@ HTTP/1.1 204 No Content
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "chatmessagethis-softdelete3"
+  "name": "chatmessagethis-softdelete3",
+  "sampleKeys": ["172b0cce-e65d-44ce-9a49-91d9f2e8593a", "19:22273db3497f4b32bue61f6e82be21c5@thread.tacv2", "1649864053377", "1649852161658"]
 }
 -->
 ``` http
@@ -189,6 +210,10 @@ POST https://graph.microsoft.com/v1.0/teams/172b0cce-e65d-44ce-9a49-91d9f2e8593a
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/chatmessagethis-softdelete3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/chatmessagethis-softdelete3-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -209,6 +234,10 @@ POST https://graph.microsoft.com/v1.0/teams/172b0cce-e65d-44ce-9a49-91d9f2e8593a
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/chatmessagethis-softdelete3-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/chatmessagethis-softdelete3-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -28,7 +28,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.inboundOutboundPolicyConfiguration"
@@ -38,11 +38,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.inboundOutboundPolicyConfiguration",
-  "inboundAllowed": {
-    "@odata.type": "Boolean"
-  },
-  "outboundAllowed": {
-    "@odata.type": "Boolean"
-  }
+  "inboundAllowed": {"@odata.type": "Boolean"},
+  "outboundAllowed": {"@odata.type": "Boolean"}
 }
 ```

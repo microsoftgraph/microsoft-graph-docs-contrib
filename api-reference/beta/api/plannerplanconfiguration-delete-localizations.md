@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Delete a [plannerPlanConfigurationLocalization](../resources/plannerplanconfigurationlocalization.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -52,7 +54,7 @@ DELETE /solutions/businessScenarios(uniqueName='{uniqueName}')/planner/planConfi
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -79,6 +81,10 @@ DELETE https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c686
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-plannerplanconfigurationlocalization-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-plannerplanconfigurationlocalization-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-plannerplanconfigurationlocalization-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -99,11 +105,15 @@ DELETE https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c686
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-plannerplanconfigurationlocalization-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-plannerplanconfigurationlocalization-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

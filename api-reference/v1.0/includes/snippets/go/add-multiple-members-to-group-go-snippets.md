@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -21,12 +21,11 @@ additionalData := map[string]interface{}{
 		"https://graph.microsoft.com/v1.0/directoryObjects/{id}",
 		"https://graph.microsoft.com/v1.0/directoryObjects/{id}",
 		"https://graph.microsoft.com/v1.0/directoryObjects/{id}",
-
 	}
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Groups().ByGroupId("group-id").Patch(context.Background(), requestBody, nil)
+groups, err := graphClient.Groups().ByGroupId("group-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

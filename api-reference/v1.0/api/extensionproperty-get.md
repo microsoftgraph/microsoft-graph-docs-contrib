@@ -1,7 +1,7 @@
 ---
 title: "Get extensionProperty (directory extension)"
 description: "Read a directory extension definition."
-author: "keylimesoda"
+author: "dkershaw10"
 ms.localizationpriority: medium
 ms.prod: "extensions"
 doc_type: apiPageType
@@ -11,6 +11,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Read a directory extension definition represented by an [extensionProperty](../resources/extensionproperty.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -29,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /applications/{application ObjectId}/extensionProperties/{extensionPropertyId}
+GET /applications(appId='{appId}')/extensionProperties/{extensionPropertyId}
 ```
 
 ## Optional query parameters
@@ -40,7 +43,7 @@ This method supports the `$select` OData query parameter to help customize the r
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -64,6 +67,10 @@ GET https://graph.microsoft.com/v1.0/applications/fd918e4b-c821-4efb-b50a-5eddd2
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-extensionproperty-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-extensionproperty-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-extensionproperty-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -82,6 +89,10 @@ GET https://graph.microsoft.com/v1.0/applications/fd918e4b-c821-4efb-b50a-5eddd2
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-extensionproperty-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-extensionproperty-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

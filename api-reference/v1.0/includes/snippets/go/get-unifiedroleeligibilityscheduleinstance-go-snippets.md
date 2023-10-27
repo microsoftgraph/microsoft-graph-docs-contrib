@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.RoleManagement().Directory().RoleEligibilityScheduleInstances().ByRoleEligibilityScheduleInstanceId("unifiedRoleEligibilityScheduleInstance-id").Get(context.Background(), nil)
+roleEligibilityScheduleInstances, err := graphClient.RoleManagement().Directory().RoleEligibilityScheduleInstances().ByUnifiedRoleEligibilityScheduleInstanceId("unifiedRoleEligibilityScheduleInstance-id").Get(context.Background(), nil)
 
 
 ```

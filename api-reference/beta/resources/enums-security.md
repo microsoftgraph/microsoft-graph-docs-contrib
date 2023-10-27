@@ -13,12 +13,12 @@ Namespace: microsoft.graph.security
 
 ### contentFormat values
 
-|Member|
-|:---|
-|text|
-|html|
-|markdown|
-|unknownFutureValue|
+| Member             |
+| :----------------- |
+| text               |
+| html               |
+| markdown           |
+| unknownFutureValue |
 
 ### detectionStatus values
 
@@ -29,136 +29,135 @@ Namespace: microsoft.graph.security
 | prevented
 | unknownFutureValue
 
-### actionAfterRetentionPeriod values 
+### actionAfterRetentionPeriod values
 
+| Member                 |
+| :--------------------- |
+| none                   |
+| delete                 |
+| startDispositionReview |
+| unknownFutureValue     |
 
+### behaviorDuringRetentionPeriod values
 
-|Member|
-|:---|
-|none|
-|delete|
-|startDispositionReview|
-|unknownFutureValue|
+| Member                   |
+| :----------------------- |
+| doNotRetain              |
+| retain                   |
+| retainAsRecord           |
+| retainAsRegulatoryRecord |
+| unknownFutureValue       |
 
-### behaviorDuringRetentionPeriod values 
+### defaultRecordBehavior values
 
+| Member             |
+| :----------------- |
+| startLocked        |
+| startUnlocked      |
+| unknownFutureValue |
 
+### eventPropagationStatus values
 
-|Member|
-|:---|
-|doNotRetain|
-|retain|
-|retainAsRecord|
-|retainAsRegulatoryRecord|
-|unknownFutureValue|
+| Member             |
+| :----------------- |
+| none               |
+| inProcessing       |
+| failed             |
+| success            |
+| unknownFutureValue |
 
+### eventStatusType values
 
-### defaultRecordBehavior values 
+| Member             |
+| :----------------- |
+| pending            |
+| error              |
+| success            |
+| notAvaliable       |
+| unknownFutureValue |
 
+### hostPortProtocol values
 
+| Member             |
+| :----------------- |
+| tcp                |
+| udp                |
+| unknownFutureValue |
 
-|Member|
-|:---|
-|startLocked|
-|startUnlocked|
-|unknownFutureValue|
+### hostPortStatus values
 
-
-### eventPropagationStatus values 
-
-
-
-|Member|
-|:---|
-|none|
-|inProcessing|
-|failed|
-|success|
-|unknownFutureValue|
-
-### eventStatusType values 
-
-
-
-|Member|
-|:---|
-|pending|
-|error|
-|success|
-|notAvaliable|
-|unknownFutureValue|
+| Member             |
+| :----------------- |
+| open               |
+| filtered           |
+| closed             |
+| unknownFutureValue |
 
 ### hostReputationClassification values
 
-|Member|
-|:---|
-|unknown|
-|neutral|
-|suspicious|
-|malicious|
-|unknownFutureValue|
+| Member             |
+| :----------------- |
+| unknown            |
+| neutral            |
+| suspicious         |
+| malicious          |
+| unknownFutureValue |
 
 ### hostReputationRuleSeverity values
 
-|Member|
-|:---|
-|unknown|
-|low|
-|medium|
-|high|
-|unknownFutureValue|
+| Member             |
+| :----------------- |
+| unknown            |
+| low                |
+| medium             |
+| high               |
+| unknownFutureValue |
 
 ### indicatorSource values
 
-|Member|
-|:---|
-|microsoftDefenderThreatIntelligence|
-|openSourceIntelligence|
-|public|
-|unknownFutureValue|
+| Member             |
+| :----------------- |
+| microsoft          |
+| osint              |
+| public             |
+| unknownFutureValue |
 
 ### intelligenceProfileKind values
 
-|Member|
-|:---|
-|actor|
-|tool|
-|unknownFutureValue|
+| Member             |
+| :----------------- |
+| actor              |
+| tool               |
+| unknownFutureValue |
 
-### queryType values 
+### queryType values
 
+| Member             |
+| :----------------- |
+| files              |
+| messages           |
+| unknownFutureValue |
 
+### retentionTrigger values
 
-|Member|
-|:---|
-|files|
-|messages|
-|unknownFutureValue|
-
-
-
-### retentionTrigger values 
-
-
-
-|Member|
-|:---|
-|dateLabeled|
-|dateCreated|
-|dateModified|
-|dateOfEvent|
-|unknownFutureValue|
+| Member             |
+| :----------------- |
+| dateLabeled        |
+| dateCreated        |
+| dateModified       |
+| dateOfEvent        |
+| unknownFutureValue |
 
 ### vulnerabilitySeverity values
 
-|Member|
-|:---|
-|none|
-|low|
-|medium|
-|high|
-|critical|
-|unknownFutureValue|
+| Member             |
+| :----------------- |
+| none               |
+| low                |
+| medium             |
+| high               |
+| critical           |
+| unknownFutureValue |
 
 <!--
 {

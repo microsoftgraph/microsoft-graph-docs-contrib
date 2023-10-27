@@ -13,7 +13,11 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
+
 Read the properties and relationships of a [intelligenceProfile](../resources/security-intelligenceprofile.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -47,7 +51,7 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -73,6 +77,10 @@ GET https://graph.microsoft.com/beta/security/threatIntelligence/intelProfiles/a
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-intelligenceprofile-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-intelligenceprofile-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-intelligenceprofile-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -93,11 +101,15 @@ GET https://graph.microsoft.com/beta/security/threatIntelligence/intelProfiles/a
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-intelligenceprofile-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-intelligenceprofile-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -125,9 +137,9 @@ Content-Type: application/json
     "Government",
     "Humanitarian"
   ],
-  "sponsorStates": [
+  "countriesOrRegionsOfOrigin": [
     {
-      "@odata.type": "microsoft.graph.security.intelligenceProfileSponsorState",
+      "@odata.type": "microsoft.graph.security.countriesOrRegionsOfOrigin",
       "label": "Country/Region",
       "code": "Country/Region code"
     }

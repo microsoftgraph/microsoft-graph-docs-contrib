@@ -1,11 +1,11 @@
 ---
 title: "Working with groups in Microsoft Graph"
 description: "Groups are collections of principals with shared access to resources in Microsoft services or in your app. Different principals such as users, other groups, devices, and applications can be part of groups. Using groups helps you avoid working with individual principals and simplifies management of access to your resources."
-author: "psaffaie"
+author: "Jordanndahl"
 ms.localizationpriority: high
 ms.prod: "groups"
 doc_type: conceptualPageType
-ms.date: 12/15/2022
+ms.date: 09/12/2023
 ---
 
 # Working with groups in Microsoft Graph
@@ -18,9 +18,11 @@ Microsoft Graph exposes the groups API to create and manage different types of g
 > 1. Groups can only be created through work or school accounts. Personal Microsoft accounts don't support groups.
 > 2. All group-related operations in Microsoft Graph require administrator consent.
 
-## Group types in Azure AD and Microsoft Graph
+<a name='group-types-in-azure-ad-and-microsoft-graph'></a>
 
-Azure Active Directory (Azure AD) supports the following types of groups.
+## Group types in Microsoft Entra ID and Microsoft Graph
+
+Microsoft Entra ID supports the following types of groups.
 
 - Microsoft 365 groups
 - Security groups
@@ -41,7 +43,7 @@ In Microsoft Graph, the type of group can be identified by the settings of its *
 | [Mail-enabled security groups](#security-groups-and-mail-enabled-security-groups) | `[]` | `true` | `true` | No |
 | Distribution groups | `[]` | `true` | `false` | No |
 
-For more information about groups, see the sections below. For more information about groups in Azure AD, see [compare groups in Azure AD](/microsoft-365/admin/create-groups/compare-groups).
+For more information about groups, see the sections below. For more information about groups in Microsoft Entra ID, see [compare groups in Microsoft Entra ID](/microsoft-365/admin/create-groups/compare-groups).
 
 ## Microsoft 365 groups
 
@@ -88,6 +90,13 @@ Content-type: application/json
 
 To learn more about Microsoft 365 groups and the administrator experiences, see [Learn about Microsoft 365 groups](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
+### Settings for Microsoft 365 groups
+
+Apart from configuring the standard group properties, you can also configure the following settings for Microsoft 365 groups.
+
+- [Group expiration](../resources/grouplifecyclepolicy.md)
+- [Group settings](/graph/group-directory-settings) such as whether the group can have guests as members, who is allowed to create groups, allowed words in group names, and so on.
+
 ## Security groups and mail-enabled security groups
 
 **Security groups** are for controlling user access to resources. By checking whether a user is a member of a security group, your app can make authorization decisions when that user is trying to access some secure resources in your app. Security groups can have users, other security groups, devices, and service principals as members.
@@ -120,7 +129,7 @@ Content-type: application/json
 
 ## Group membership
 
-Not all object types can be members of both Microsoft 365 and security groups.
+Membership to groups can be statically assigned or dynamic. Not all object types can be members of both Microsoft 365 and security groups.
 
 [!INCLUDE [groups-allowed-member-types](../../../concepts/includes/groups-allowed-member-types.md)]
 
@@ -134,7 +143,7 @@ The dynamic membership rules are specified through the **membershipRule** proper
 
 - The `Property` is defined following this syntax: `object.property`. For example `user.department` or `device.accountEnabled`.
 - The rule syntax supports various operators. For more information, see [Supported expression operators](/azure/active-directory/enterprise-users/groups-dynamic-membership).
-- A `Value` of type String must be enclosed in double quotes ("). You must use a backslash to escape any double quotes inside double quotes. This requirement doesn't apply when using the rule builder in the Azure portal because the expression isn't enclosed in double quotes.
+- A `Value` of type String must be enclosed in double quotes ("). You must use a backslash to escape any double quotes inside double quotes. This requirement doesn't apply when using the rule builder in the Microsoft Entra admin center because the expression isn't enclosed in double quotes.
 
 The following example shows shows a complete rule.
 
@@ -175,6 +184,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/groups-overview-createdynamicgroup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/groups-overview-createdynamicgroup-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/groups-overview-createdynamicgroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -193,6 +206,10 @@ Content-type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/groups-overview-createdynamicgroup-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/groups-overview-createdynamicgroup-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -227,10 +244,10 @@ Content-type: application/json
 }
 ```
 
-To learn more about formulating membership rules, see [Dynamic membership rules for groups in Azure Active Directory](/azure/active-directory/enterprise-users/groups-dynamic-membership).
+To learn more about formulating membership rules, see [Dynamic membership rules for groups in Microsoft Entra ID](/azure/active-directory/enterprise-users/groups-dynamic-membership).
 
 > [!NOTE]
-> Dynamic membership rules requires the tenant to have at least an Azure AD Premium P1 license for each unique user that is a member of one or more dynamic groups.
+> Dynamic membership rules requires the tenant to have at least a Microsoft Entra ID P1 license for each unique user that is a member of one or more dynamic groups.
 
 ## Other types of groups
 
@@ -248,7 +265,7 @@ For more information about what guest users can do with groups, see [Compare mem
 
 ## Group-based licensing
 
-Group-based licensing capability can be used to assign one or more product licenses to an Azure AD group. Azure AD ensures that the licenses are assigned to all members of the group. Any new members who join the group are assigned the appropriate licenses. When they leave the group, those licenses are removed. The feature can only be used with security groups, and Microsoft 365 groups that have the **securityEnabled** property set to `true`. To learn more about group-based licensing, see [What is group-based licensing in Azure Active Directory?](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal?context=/azure/active-directory/enterprise-users/context/ugr-context).
+Group-based licensing capability can be used to assign one or more product licenses to a Microsoft Entra group. Microsoft Entra ID ensures that the licenses are assigned to all members of the group. Any new members who join the group are assigned the appropriate licenses. When they leave the group, those licenses are removed. The feature can only be used with security groups, and Microsoft 365 groups that have the **securityEnabled** property set to `true`. To learn more about group-based licensing, see [What is group-based licensing in Microsoft Entra ID?](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal?context=/azure/active-directory/enterprise-users/context/ugr-context).
 
 ## Common use cases for the groups API in Microsoft Graph
 

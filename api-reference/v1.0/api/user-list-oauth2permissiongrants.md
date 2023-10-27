@@ -1,13 +1,13 @@
 ---
-title: "List oauth2PermissionGrants"
-description: "Retrieve a list of oAuth2PermissionGrant objects, representing delegated permission grants."
+title: "List a user's oauth2PermissionGrants"
+description: "Retrieve a list of oAuth2PermissionGrant objects, representing delegated permission grants, granted on behalf of a user."
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: "identity-and-sign-in"
 author: "psignoret"
 ---
 
-# List oauth2PermissionGrants
+# List a user's oauth2PermissionGrants
 
 Namespace: microsoft.graph
 
@@ -19,15 +19,17 @@ Retrieve a list of [oAuth2PermissionGrant](../resources/oAuth2PermissionGrant.md
 > [!NOTE]
 > This request might have replication delays for delegated permission grants that were recently created, updated, or deleted.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.ReadBasic.All, Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All |
+|Delegated (work or school account) | DelegatedPermissionGrant.Read.All, User.ReadBasic.All, Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All |
+|Application | DelegatedPermissionGrant.Read.All, Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All |
 
 ## HTTP request
 
@@ -50,7 +52,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -78,6 +80,10 @@ GET https://graph.microsoft.com/v1.0/users/6e7b768e-07e2-4810-8459-485f84f8f204/
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-user-oauth2permissiongrants-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-user-oauth2permissiongrants-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-user-oauth2permissiongrants-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -96,6 +102,10 @@ GET https://graph.microsoft.com/v1.0/users/6e7b768e-07e2-4810-8459-485f84f8f204/
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-user-oauth2permissiongrants-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-user-oauth2permissiongrants-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

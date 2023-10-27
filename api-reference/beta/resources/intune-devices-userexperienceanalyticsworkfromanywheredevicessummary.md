@@ -20,20 +20,20 @@ The user experience analytics Work From Anywhere metrics devices summary.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|autopilotDevicesSummary|[userExperienceAnalyticsAutopilotDevicesSummary](../resources/intune-devices-userexperienceanalyticsautopilotdevicessummary.md)|The value of work from anywhere autopilot devices summary.|
-|cloudManagementDevicesSummary|[userExperienceAnalyticsCloudManagementDevicesSummary](../resources/intune-devices-userexperienceanalyticscloudmanagementdevicessummary.md)|The user experience work from anywhere Cloud management devices summary.|
-|windows10DevicesSummary|[userExperienceAnalyticsWindows10DevicesSummary](../resources/intune-devices-userexperienceanalyticswindows10devicessummary.md)|The user experience analytics work from anywhere Windows 10 devices summary.|
-|cloudIdentityDevicesSummary|[userExperienceAnalyticsCloudIdentityDevicesSummary](../resources/intune-devices-userexperienceanalyticscloudidentitydevicessummary.md)|The user experience analytics work from anywhere Cloud Identity devices summary.|
-|totalDevices|Int32|The total count of devices. Valid values -2147483648 to 2147483647|
-|coManagedDevices|Int32|Total number of co-managed devices. Valid values -2147483648 to 2147483647|
-|intuneDevices|Int32|The count of intune devices that are not autopilot registerd. Valid values -2147483648 to 2147483647|
-|tenantAttachDevices|Int32|Total count of tenant attach devices. Valid values -2147483648 to 2147483647|
-|windows10Devices|Int32|The count of windows 10 devices. Valid values -2147483648 to 2147483647|
-|windows10DevicesWithoutTenantAttach|Int32|The count of windows 10 devices that are Intune and Comanaged. Valid values -2147483648 to 2147483647|
-|unsupportedOSversionDevices|Int32|The count of Windows 10 devices that have unsupported OS versions. Valid values -2147483648 to 2147483647|
-|devicesWithoutCloudIdentity|Int32|The count of devices that are not cloud identity. Valid values -2147483648 to 2147483647|
-|devicesNotAutopilotRegistered|Int32|The count of intune devices that are not autopilot registerd. Valid values -2147483648 to 2147483647|
-|devicesWithoutAutopilotProfileAssigned|Int32|The count of intune devices not autopilot profile assigned. Valid values -2147483648 to 2147483647|
+|autopilotDevicesSummary|[userExperienceAnalyticsAutopilotDevicesSummary](../resources/intune-devices-userexperienceanalyticsautopilotdevicessummary.md)|The user experience analytics work from anywhere Autopilot devices summary. Read-only.|
+|cloudManagementDevicesSummary|[userExperienceAnalyticsCloudManagementDevicesSummary](../resources/intune-devices-userexperienceanalyticscloudmanagementdevicessummary.md)|The user experience analytics work from anywhere Cloud management devices summary. Read-only.|
+|windows10DevicesSummary|[userExperienceAnalyticsWindows10DevicesSummary](../resources/intune-devices-userexperienceanalyticswindows10devicessummary.md)|The user experience analytics work from anywhere Windows 10 devices summary. Read-only.|
+|cloudIdentityDevicesSummary|[userExperienceAnalyticsCloudIdentityDevicesSummary](../resources/intune-devices-userexperienceanalyticscloudidentitydevicessummary.md)|The user experience analytics work from anywhere Cloud Identity devices summary. Read-only.|
+|totalDevices|Int32|The total count of devices. Read-only. Valid values -2147483648 to 2147483647|
+|coManagedDevices|Int32|Total number of co-managed devices. Read-only. Valid values -2147483648 to 2147483647|
+|intuneDevices|Int32|The count of intune devices that are not autopilot registerd. Read-only. Valid values -2147483648 to 2147483647|
+|tenantAttachDevices|Int32|Total count of tenant attach devices. Read-only. Valid values -2147483648 to 2147483647|
+|windows10Devices|Int32|The count of windows 10 devices. Read-only. Valid values -2147483648 to 2147483647|
+|windows10DevicesWithoutTenantAttach|Int32|The count of windows 10 devices that are Intune and co-managed. Read-only. Valid values -2147483648 to 2147483647|
+|unsupportedOSversionDevices|Int32|The count of Windows 10 devices that have unsupported OS versions. Read-only. Valid values -2147483648 to 2147483647|
+|devicesWithoutCloudIdentity|Int32|The count of devices that are not cloud identity. Read-only. Valid values -2147483648 to 2147483647|
+|devicesNotAutopilotRegistered|Int32|The count of intune devices that are not autopilot registerd. Read-only. Valid values -2147483648 to 2147483647|
+|devicesWithoutAutopilotProfileAssigned|Int32|The count of intune devices not autopilot profile assigned. Read-only. Valid values -2147483648 to 2147483647|
 
 ## Relationships
 None

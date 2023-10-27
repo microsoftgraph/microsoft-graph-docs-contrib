@@ -15,21 +15,24 @@ Namespace: microsoft.graph
 
 Get the specified [profilePhoto](../resources/profilephoto.md) or its metadata (**profilePhoto** properties) from Microsoft 365.
 
-> **Note**: When attempting to GET a **user** photo, this operation first attempts to retrieve the specified photo from Microsoft 365. If the photo is not available in Microsoft 365, the API attempts to retrieve the photo from Azure Active Directory.
+> **Note**: When attempting to GET a **user** photo, this operation first attempts to retrieve the specified photo from Microsoft 365. If the photo is not available in Microsoft 365, the API attempts to retrieve the photo from Microsoft Entra ID.
 
 The supported sizes of HD photos in Microsoft 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240,
-360x360, 432x432, 504x504, and 648x648. Photos can be any dimension if they are stored in Azure Active Directory.
+360x360, 432x432, 504x504, and 648x648. Photos can be any dimension if they are stored in Microsoft Entra ID.
 
 You can get the metadata of the largest available photo, or specify a size to get the metadata for that photo size.
 If the size you request is not available, you can still get a smaller size that the user has uploaded and made available.
 For example, if the user uploads a photo that is 504x504 pixels, all but the 648x648 size of the photo will be available for download.
-If the specified size is not available in the user's mailbox or in Azure Active Directory, the size 1x1 is returned with the rest of the  metadata.
+If the specified size is not available in the user's mailbox or in Microsoft Entra ID, the size 1x1 is returned with the rest of the  metadata.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### To retrieve the profile photo of a contact
 
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Least privileged permissions             | Higher privileged permissions             |
 |:--------------------|:-----------------------------------------|:------------------------------------------|
 |Delegated (work or school account)      |   Contacts.Read | Contacts.ReadWrite           |
@@ -38,6 +41,7 @@ The following tables show the least privileged permission or permissions require
 
 ### To retrieve the profile photo of a group
 
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Least privileged permissions             | Higher privileged permissions             |
 |:--------------------|:-----------------------------------------|:------------------------------------------|
 |Delegated (work or school account)      |   Group.Read.All | Group.ReadWrite.All           |
@@ -46,6 +50,7 @@ The following tables show the least privileged permission or permissions require
 
 ### To retrieve the profile photo of a team
 
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Least privileged permissions             | Higher privileged permissions             |
 |:--------------------|:-----------------------------------------|:------------------------------------------|
 |Delegated (work or school account) | Team.ReadBasic.All | TeamSettings.Read.All, TeamSettings.ReadWrite.All, Group.Read.All**, Group.ReadWrite.All**, Directory.Read.All**, Directory.ReadWrite.All** |
@@ -55,6 +60,7 @@ The following tables show the least privileged permission or permissions require
 
 ### To retrieve the profile photo of a user
 
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Least privileged permissions             | Higher privileged permissions             |
 |:--------------------|:-----------------------------------------|:------------------------------------------|
 |Delegated (work or school account)      |   User.Read | User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All           |
@@ -66,7 +72,7 @@ The following tables show the least privileged permission or permissions require
 > [!NOTE]
 > 
 > - Metadata operation is not supported for personal Microsoft accounts.
-> - There is currently a [known issue](/graph/known-issues#groups) with accessing group photos using application permissions.
+> - An app with only application permissions cannot access a group's photo.
 > - Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 > - Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
 > - Retrieving a user's photo using the Microsoft Graph API is currently not supported in Azure AD B2C tenants.
@@ -115,7 +121,7 @@ GET /groups/{id}/photos/{size}
 
 |**Parameter**|**Type**|**Description**|
 |:-----|:-----|:-----|
-|size  |String  | A photo size. The supported sizes of HD photos on Microsoft 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504, and 648x648. Photos can be any dimension if they are stored in Azure Active Directory. |
+|size  |String  | A photo size. The supported sizes of HD photos on Microsoft 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504, and 648x648. Photos can be any dimension if they are stored in Microsoft Entra ID. |
 
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
@@ -126,7 +132,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 ### Response for getting the photo
@@ -315,5 +321,3 @@ document.getElementById(imageElement).setAttribute("src", blobUrl);
   "suppressions": []
 }
 -->
-
-

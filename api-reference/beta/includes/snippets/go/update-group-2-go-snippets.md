@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -24,11 +24,10 @@ assignedLabel.SetLabelId(&labelId)
 
 assignedLabels := []graphmodels.AssignedLabelable {
 	assignedLabel,
-
 }
 requestBody.SetAssignedLabels(assignedLabels)
 
-result, err := graphClient.Groups().ByGroupId("group-id").Patch(context.Background(), requestBody, nil)
+groups, err := graphClient.Groups().ByGroupId("group-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

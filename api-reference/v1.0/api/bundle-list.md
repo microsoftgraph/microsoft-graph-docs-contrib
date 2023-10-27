@@ -1,5 +1,5 @@
 ---
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 title: "List bundles"
 description: "List the bundles in a user's drive."
 ms.localizationpriority: medium
@@ -12,6 +12,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Get a list of all the [bundles][bundle] in a user's drive.
+
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 
@@ -45,7 +47,7 @@ You can't use the `expand=children` query parameter to list bundles.
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -74,6 +76,10 @@ GET https://graph.microsoft.com/beta/drive/bundles
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-all-bundles-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-all-bundles-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-all-bundles-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -94,11 +100,15 @@ GET https://graph.microsoft.com/beta/drive/bundles
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-all-bundles-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-all-bundles-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note**: The response object shown here might be shortened for readability.
 
@@ -150,6 +160,10 @@ GET https://graph.microsoft.com/v1.0/drive/bundles?filter=bundle/album%20ne%20nu
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-album-bundles-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-album-bundles-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-album-bundles-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -170,11 +184,15 @@ GET https://graph.microsoft.com/v1.0/drive/bundles?filter=bundle/album%20ne%20nu
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-album-bundles-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-album-bundles-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
 
-The following is an example of the response. The response to a GET to the bundles endpoint is an array of [driveItem][] resources with the [bundle][].
+The following example shows the response. The response to a GET to the bundles endpoint is an array of [driveItem][] resources with the [bundle][].
 Because all bundles are items, you can use all the standard item operations on them.
 
 > **Note**: The response object shown here might be shortened for readability.

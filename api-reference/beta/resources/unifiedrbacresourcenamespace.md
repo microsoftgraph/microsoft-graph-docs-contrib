@@ -1,6 +1,6 @@
 ---
 title: "unifiedRbacResourceNamespace resource type"
-description: "Represents the namespace of the area to which the role permission belongs to."
+description: "Represents the namespace of the area to which the role permission belongs."
 author: "DougKirschner"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the namespace of the area or service such as Azure AD, Intune, and Exchange that defines role permissions.
+Represents the namespace of the area or service such as Microsoft Entra ID, Intune, and Exchange that defines role permissions.
 
 ## Methods
 |Method|Return type|Description|
@@ -30,10 +30,10 @@ Represents the namespace of the area or service such as Azure AD, Intune, and Ex
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|resourceActions|[unifiedRbacResourceAction](unifiedrbacresourceaction.md) collection|Operations that an authorized principal are allowed to perform.|
+|resourceActions|[unifiedRbacResourceAction](unifiedrbacresourceaction.md) collection|Operations that an authorized principal is allowed to perform.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

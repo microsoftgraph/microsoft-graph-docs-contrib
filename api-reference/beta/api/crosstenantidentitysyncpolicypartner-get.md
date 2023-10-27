@@ -1,6 +1,6 @@
 ---
 title: "Get crossTenantIdentitySyncPolicyPartner"
-description: "Read the user synchronization policy of a partner-specific configuration."
+description: "Get the user synchronization policy of a partner-specific configuration."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -8,24 +8,28 @@ doc_type: apiPageType
 ---
 
 # Get crossTenantIdentitySyncPolicyPartner
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the user synchronization policy of a partner-specific configuration.
+Get the user synchronization policy of a partner-specific configuration.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.CrossTenantAccess|
-|Delegated (personal Microsoft account)|Not applicable|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|Policy.Read.All, Policy.ReadWrite.CrossTenantAccess|
 
 The signed-in user must also be assigned the following minimum [directory role](/azure/active-directory/roles/permissions-reference):
 
-+ Security Administrator
+* Security Administrator
 
 ## HTTP request
 
@@ -37,13 +41,19 @@ The signed-in user must also be assigned the following minimum [directory role](
 GET /policies/crossTenantAccessPolicy/partners/{id}/identitySynchronization
 ```
 
+## Optional query parameters
+
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+
+Don't supply a request body for this method.
 
 ## Response
 
@@ -52,6 +62,7 @@ If successful, this method returns a `200 OK` response code and a [crossTenantId
 ## Examples
 
 ### Request
+
 The following is an example of a request.
 
 # [HTTP](#tab/http)
@@ -66,6 +77,10 @@ GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners/9
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-crosstenantidentitysyncpolicypartner-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-crosstenantidentitysyncpolicypartner-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -88,10 +103,16 @@ GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners/9
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-crosstenantidentitysyncpolicypartner-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-crosstenantidentitysyncpolicypartner-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
-The following is an example of the response
+
+The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -106,10 +127,8 @@ Content-Type: application/json
 {
   "tenantId": "9c5d131d-b1c3-4fc4-9e3f-c6557947d551",
   "displayName": "Fabrikam",
-  "userSyncInbound":
-  {
+  "userSyncInbound": {
     "isSyncAllowed": true
   }
 }
 ```
-

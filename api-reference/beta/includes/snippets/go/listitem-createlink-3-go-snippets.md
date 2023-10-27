@@ -4,22 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Sites/Item/Lists/Item/Items/Item/CreateLink"
+	  graphsites "github.com/microsoftgraph/msgraph-beta-sdk-go/sites"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewCreateLinkPostRequestBody()
+requestBody := graphsites.NewCreateLinkPostRequestBody()
 type := "embed"
 requestBody.SetType(&type) 
 
-result, err := graphClient.Sites().BySiteId("site-id").Lists().ByListId("list-id").Items().ByItemId("listItem-id").CreateLink().Post(context.Background(), requestBody, nil)
+createLink, err := graphClient.Sites().BySiteId("site-id").Lists().ByListId("list-id").Items().ByListItemId("listItem-id").CreateLink().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -16,14 +16,16 @@ Update the [permission](../resources/permission.md) object on a site.
 
 >**Note:** You can't use this method to update a user site permission.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)
-|:--------------------------------------|:-------------------------------------
-|Delegated (work or school account)     | Not supported.
-|Delegated (personal Microsoft account) | Not supported.
-|Application                            | Sites.FullControl.All
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | Not supported.                              |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Sites.FullControl.All                       |
 
 ## HTTP request
 
@@ -52,14 +54,17 @@ If successful, this method returns a `200 OK` response code and a [permission](.
 
 ### Request
 
+The following is an example of a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_permission_from_"
+  "name": "update_permission_from_",
+  "sampleKeys": ["f2d90359-865b-4b6c-8848-d2722dd630e5", "2"]
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/sites/{sitesId}/permissions/{permissionId}
+PATCH https://graph.microsoft.com/beta/sites/f2d90359-865b-4b6c-8848-d2722dd630e5/permissions/2
 Content-Type: application/json
 
 {
@@ -69,6 +74,10 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-permission-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-permission-from--cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -91,9 +100,15 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/update-permission-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-permission-from--python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
+
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -106,27 +121,27 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-   "id":"2",
-   "@deprecated.GrantedToIdentities": "GrantedToIdentities has been deprecated. Refer to GrantedToIdentitiesV2",
-   "roles":[
-      "read"
-   ],
-   "grantedToIdentities":[
-      {
-         "application":{
-            "id":"89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-            "displayName":"Fabrikam Dashboard App"
-         }
+  "id": "2",
+  "@deprecated.GrantedToIdentities": "GrantedToIdentities has been deprecated. Refer to GrantedToIdentitiesV2",
+  "roles": [
+    "read"
+  ],
+  "grantedToIdentities": [
+    {
+      "application": {
+        "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
+        "displayName": "Fabrikam Dashboard App"
       }
-   ],
-  "grantedToIdentitiesV2":[
-      {
-         "application":{
-            "id":"89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-            "displayName":"Fabrikam Dashboard App"
-         }
+    }
+  ],
+  "grantedToIdentitiesV2": [
+    {
+      "application": {
+        "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
+        "displayName": "Fabrikam Dashboard App"
       }
-   ]
+    }
+  ]
 }
 ```
 

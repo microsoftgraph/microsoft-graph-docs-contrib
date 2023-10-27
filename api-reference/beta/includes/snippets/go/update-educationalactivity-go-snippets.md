@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -35,7 +35,7 @@ location.SetPostalCode(&postalCode)
 institution.SetLocation(location)
 requestBody.SetInstitution(institution)
 
-result, err := graphClient.Me().Profile().EducationalActivities().ByEducationalActivitieId("educationalActivity-id").Patch(context.Background(), requestBody, nil)
+educationalActivities, err := graphClient.Me().Profile().EducationalActivities().ByEducationalActivityId("educationalActivity-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -1,0 +1,634 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "b4b74b54-7d92-4001-9706-04f2892d4bfd",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "attributeDefinitionMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the **attributeDefinitionMetadata** enumeration type.",
+          "Target": "attributeDefinitionMetadata"
+        },
+        {
+          "Id": "b4b74b54-7d92-4001-9706-04f2892d4bfd",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "objectDefinitionMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the **objectDefinitionMetadata** enumeration type.",
+          "Target": "objectDefinitionMetadata"
+        },
+        {
+          "Id": "b4b74b54-7d92-4001-9706-04f2892d4bfd",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "objectMappingMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the **objectMappingMetadata** enumeration type.",
+          "Target": "objectMappingMetadata"
+        },
+        {
+          "Id": "b4b74b54-7d92-4001-9706-04f2892d4bfd",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "synchronizationMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the **synchronizationMetadata** enumeration type.",
+          "Target": "synchronizationMetadata"
+        },
+        {
+          "Id": "b4b74b54-7d92-4001-9706-04f2892d4bfd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attributeDefinitionMetadataEntry",
+          "ChangeType": "Addition",
+          "Description": "Added the [attributeDefinitionMetadataEntry](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-attributeDefinitionMetadataEntry?view=graph-rest-beta) resource type.",
+          "Target": "attributeDefinitionMetadataEntry"
+        },
+        {
+          "Id": "b4b74b54-7d92-4001-9706-04f2892d4bfd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "metadataEntry",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **metadataEntry** resource type.",
+          "Target": "metadataEntry"
+        },
+        {
+          "Id": "b4b74b54-7d92-4001-9706-04f2892d4bfd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "objectDefinitionMetadataEntry",
+          "ChangeType": "Addition",
+          "Description": "Added the [objectDefinitionMetadataEntry](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-objectDefinitionMetadataEntry?view=graph-rest-beta) resource type.",
+          "Target": "objectDefinitionMetadataEntry"
+        },
+        {
+          "Id": "b4b74b54-7d92-4001-9706-04f2892d4bfd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "objectMappingMetadataEntry",
+          "ChangeType": "Addition",
+          "Description": "Added the [objectMappingMetadataEntry](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-objectMappingMetadataEntry?view=graph-rest-beta) resource type.",
+          "Target": "objectMappingMetadataEntry"
+        },
+        {
+          "Id": "b4b74b54-7d92-4001-9706-04f2892d4bfd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "synchronizationMetadataEntry",
+          "ChangeType": "Addition",
+          "Description": "Added the [synchronizationMetadataEntry](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationMetadataEntry?view=graph-rest-beta) resource type.",
+          "Target": "synchronizationMetadataEntry"
+        }
+      ],
+      "Id": "b4b74b54-7d92-4001-9706-04f2892d4bfd",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-05-31T00:00:00.4526604Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+	{
+      "ChangeList": [
+        {
+          "Id": "a34189c5-af07-4671-9246-dde6c999e2dd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "bulkUpload",
+          "ChangeType": "Addition",
+          "Description": "Added the [bulkUpload](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-bulkUpload?view=graph-rest-beta) resource",
+          "Target": "bulkUpload"
+        },
+        {
+          "Id": "a34189c5-af07-4671-9246-dde6c999e2dd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "bulkUpload",
+          "ChangeType": "Addition",
+          "Description": "Added the **bulkUpload** relationship to the [synchronizationJob](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationJob?view=graph-rest-beta) resource.",
+          "Target": "synchronizationJob"
+        }
+      ],
+      "Id": "a34189c5-af07-4671-9246-dde6c999e2dd",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-07-05T07:08:26.9619605Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "attributeDefinitionMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the **attributeDefinitionMetadata** enumeration type.",
+          "Target": "attributeDefinitionMetadata"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "attributeFlowType",
+          "ChangeType": "Addition",
+          "Description": "Added the **attributeFlowType** enumeration type.",
+          "Target": "attributeFlowType"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "attributeFlowBehavior",
+          "ChangeType": "Addition",
+          "Description": "Added the **attributeFlowBehavior** enumeration type.",
+          "Target": "attributeFlowBehavior"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "attributeMappingSourceType",
+          "ChangeType": "Addition",
+          "Description": "Added the **attributeMappingSourceType** enumeration type.",
+          "Target": "attributeMappingSourceType"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "directoryDefinitionDiscoverabilities",
+          "ChangeType": "Addition",
+          "Description": "Added the **directoryDefinitionDiscoverabilities** enumeration type.",
+          "Target": "directoryDefinitionDiscoverabilities"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "entryExportStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **entryExportStatus** enumeration type.",
+          "Target": "entryExportStatus"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "attributeType",
+          "ChangeType": "Addition",
+          "Description": "Added the **attributeType** enumeration type.",
+          "Target": "attributeType"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "entrySyncOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the **entrySyncOperation** enumeration type.",
+          "Target": "entrySyncOperation"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "escrowBehavior",
+          "ChangeType": "Addition",
+          "Description": "Added the **escrowBehavior** enumeration type.",
+          "Target": "escrowBehavior"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "mutability",
+          "ChangeType": "Addition",
+          "Description": "Added the **mutability** enumeration type.",
+          "Target": "mutability"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "objectDefinitionMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the **objectDefinitionMetadata** enumeration type.",
+          "Target": "objectDefinitionMetadata"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "objectFlowTypes",
+          "ChangeType": "Addition",
+          "Description": "Added the **objectFlowTypes** enumeration type.",
+          "Target": "objectFlowTypes"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "objectMappingMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the **objectMappingMetadata** enumeration type.",
+          "Target": "objectMappingMetadata"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "synchronizationDisposition",
+          "ChangeType": "Addition",
+          "Description": "Added the **synchronizationDisposition** enumeration type.",
+          "Target": "synchronizationDisposition"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "synchronizationMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the **synchronizationMetadata** enumeration type.",
+          "Target": "synchronizationMetadata"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "synchronizationSecret",
+          "ChangeType": "Addition",
+          "Description": "Added the **synchronizationSecret** enumeration type.",
+          "Target": "synchronizationSecret"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "synchronizationStatusCode",
+          "ChangeType": "Addition",
+          "Description": "Added the **synchronizationStatusCode** enumeration type.",
+          "Target": "synchronizationStatusCode"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "synchronizationTaskExecutionResult",
+          "ChangeType": "Addition",
+          "Description": "Added the **synchronizationTaskExecutionResult** enumeration type.",
+          "Target": "synchronizationTaskExecutionResult"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "synchronizationJobRestartScope",
+          "ChangeType": "Addition",
+          "Description": "Added the **synchronizationJobRestartScope** enumeration type.",
+          "Target": "synchronizationJobRestartScope"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "quarantineReason",
+          "ChangeType": "Addition",
+          "Description": "Added the **quarantineReason** enumeration type.",
+          "Target": "quarantineReason"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "synchronizationScheduleState",
+          "ChangeType": "Addition",
+          "Description": "Added the **synchronizationScheduleState** enumeration type.",
+          "Target": "synchronizationScheduleState"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "scopeOperatorMultiValuedComparisonType",
+          "ChangeType": "Addition",
+          "Description": "Added the **scopeOperatorMultiValuedComparisonType** enumeration type.",
+          "Target": "scopeOperatorMultiValuedComparisonType"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "scopeOperatorType",
+          "ChangeType": "Addition",
+          "Description": "Added the **scopeOperatorType** enumeration type.",
+          "Target": "scopeOperatorType"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attributeDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [attributeDefinition](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-attributeDefinition?view=graph-rest-1.0) resource type.",
+          "Target": "attributeDefinition"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attributeDefinitionMetadataEntry",
+          "ChangeType": "Addition",
+          "Description": "Added the [attributeDefinitionMetadataEntry](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-attributeDefinitionMetadataEntry?view=graph-rest-1.0) resource type.",
+          "Target": "attributeDefinitionMetadataEntry"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attributeMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [attributeMapping](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-attributeMapping?view=graph-rest-1.0) resource type.",
+          "Target": "attributeMapping"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attributeMappingFunctionSchema",
+          "ChangeType": "Addition",
+          "Description": "Added the [attributeMappingFunctionSchema](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-attributeMappingFunctionSchema?view=graph-rest-1.0) resource type.",
+          "Target": "attributeMappingFunctionSchema"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attributeMappingParameterSchema",
+          "ChangeType": "Addition",
+          "Description": "Added the [attributeMappingParameterSchema](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-attributeMappingParameterSchema?view=graph-rest-1.0) resource type.",
+          "Target": "attributeMappingParameterSchema"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attributeMappingSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [attributeMappingSource](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-attributeMappingSource?view=graph-rest-1.0) resource type.",
+          "Target": "attributeMappingSource"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "directoryDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [directoryDefinition](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-directoryDefinition?view=graph-rest-1.0) resource type.",
+          "Target": "directoryDefinition"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "expressionInputObject",
+          "ChangeType": "Addition",
+          "Description": "Added the [expressionInputObject](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-expressionInputObject?view=graph-rest-1.0) resource type.",
+          "Target": "expressionInputObject"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "filter",
+          "ChangeType": "Addition",
+          "Description": "Added the [filter](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-filter?view=graph-rest-1.0) resource type.",
+          "Target": "filter"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "filterClause",
+          "ChangeType": "Addition",
+          "Description": "Added the [filterClause](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-filterClause?view=graph-rest-1.0) resource type.",
+          "Target": "filterClause"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "filterGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the [filterGroup](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-filterGroup?view=graph-rest-1.0) resource type.",
+          "Target": "filterGroup"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "filterOperand",
+          "ChangeType": "Addition",
+          "Description": "Added the [filterOperand](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-filterOperand?view=graph-rest-1.0) resource type.",
+          "Target": "filterOperand"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "filterOperatorSchema",
+          "ChangeType": "Addition",
+          "Description": "Added the [filterOperatorSchema](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-filterOperatorSchema?view=graph-rest-1.0) resource type.",
+          "Target": "filterOperatorSchema"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "objectDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [objectDefinition](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-objectDefinition?view=graph-rest-1.0) resource type.",
+          "Target": "objectDefinition"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "objectDefinitionMetadataEntry",
+          "ChangeType": "Addition",
+          "Description": "Added the [objectDefinitionMetadataEntry](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-objectDefinitionMetadataEntry?view=graph-rest-1.0) resource type.",
+          "Target": "objectDefinitionMetadataEntry"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "objectMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [objectMapping](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-objectMapping?view=graph-rest-1.0) resource type.",
+          "Target": "objectMapping"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "objectMappingMetadataEntry",
+          "ChangeType": "Addition",
+          "Description": "Added the [objectMappingMetadataEntry](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-objectMappingMetadataEntry?view=graph-rest-1.0) resource type.",
+          "Target": "objectMappingMetadataEntry"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "parseExpressionResponse",
+          "ChangeType": "Addition",
+          "Description": "Added the [parseExpressionResponse](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-parseExpressionResponse?view=graph-rest-1.0) resource type.",
+          "Target": "parseExpressionResponse"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "referencedObject",
+          "ChangeType": "Addition",
+          "Description": "Added the [referencedObject](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-referencedObject?view=graph-rest-1.0) resource type.",
+          "Target": "referencedObject"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "stringKeyAttributeMappingSourceValuePair",
+          "ChangeType": "Addition",
+          "Description": "Added the [stringKeyAttributeMappingSourceValuePair](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-stringKeyAttributeMappingSourceValuePair?view=graph-rest-1.0) resource type.",
+          "Target": "stringKeyAttributeMappingSourceValuePair"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "stringKeyLongValuePair",
+          "ChangeType": "Addition",
+          "Description": "Added the [stringKeyLongValuePair](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-stringKeyLongValuePair?view=graph-rest-1.0) resource type.",
+          "Target": "stringKeyLongValuePair"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "stringKeyObjectValuePair",
+          "ChangeType": "Addition",
+          "Description": "Added the [stringKeyObjectValuePair](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-stringKeyObjectValuePair?view=graph-rest-1.0) resource type.",
+          "Target": "stringKeyObjectValuePair"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "stringKeyStringValuePair",
+          "ChangeType": "Addition",
+          "Description": "Added the [stringKeyStringValuePair](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-stringKeyStringValuePair?view=graph-rest-1.0) resource type.",
+          "Target": "stringKeyStringValuePair"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "synchronization",
+          "ChangeType": "Addition",
+          "Description": "Added the [synchronization](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-synchronization?view=graph-rest-1.0) resource type.",
+          "Target": "synchronization"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "synchronizationJob",
+          "ChangeType": "Addition",
+          "Description": "Added the [synchronizationJob](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationJob?view=graph-rest-1.0) resource type.",
+          "Target": "synchronizationJob"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "synchronizationJobApplicationParameters",
+          "ChangeType": "Addition",
+          "Description": "Added the [synchronizationJobApplicationParameters](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationJobApplicationParameters?view=graph-rest-1.0) resource type.",
+          "Target": "synchronizationJobApplicationParameters"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "synchronizationJobRestartCriteria",
+          "ChangeType": "Addition",
+          "Description": "Added the [synchronizationJobRestartCriteria](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationJobRestartCriteria?view=graph-rest-1.0) resource type.",
+          "Target": "synchronizationJobRestartCriteria"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "synchronizationJobSubject",
+          "ChangeType": "Addition",
+          "Description": "Added the [synchronizationJobSubject](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationJobSubject?view=graph-rest-1.0) resource type.",
+          "Target": "synchronizationJobSubject"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "synchronizationLinkedObjects",
+          "ChangeType": "Addition",
+          "Description": "Added the [synchronizationLinkedObjects](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationLinkedObjects?view=graph-rest-1.0) resource type.",
+          "Target": "synchronizationLinkedObjects"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "synchronizationMetadataEntry",
+          "ChangeType": "Addition",
+          "Description": "Added the [synchronizationMetadataEntry](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationMetadataEntry?view=graph-rest-1.0) resource type.",
+          "Target": "synchronizationMetadataEntry"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "synchronizationProgress",
+          "ChangeType": "Addition",
+          "Description": "Added the [synchronizationProgress](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationProgress?view=graph-rest-1.0) resource type.",
+          "Target": "synchronizationProgress"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "synchronizationQuarantine",
+          "ChangeType": "Addition",
+          "Description": "Added the [synchronizationQuarantine](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationQuarantine?view=graph-rest-1.0) resource type.",
+          "Target": "synchronizationQuarantine"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "synchronizationRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [synchronizationRule](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationRule?view=graph-rest-1.0) resource type.",
+          "Target": "synchronizationRule"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "synchronizationSchedule",
+          "ChangeType": "Addition",
+          "Description": "Added the [synchronizationSchedule](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationSchedule?view=graph-rest-1.0) resource type.",
+          "Target": "synchronizationSchedule"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "synchronizationSchema",
+          "ChangeType": "Addition",
+          "Description": "Added the [synchronizationSchema](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationSchema?view=graph-rest-1.0) resource type.",
+          "Target": "synchronizationSchema"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "synchronizationSecretKeyStringValuePair",
+          "ChangeType": "Addition",
+          "Description": "Added the [synchronizationSecretKeyStringValuePair](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationSecretKeyStringValuePair?view=graph-rest-1.0) resource type.",
+          "Target": "synchronizationSecretKeyStringValuePair"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "synchronizationStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [synchronizationStatus](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationStatus?view=graph-rest-1.0) resource type.",
+          "Target": "synchronizationStatus"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "synchronizationTaskExecution",
+          "ChangeType": "Addition",
+          "Description": "Added the [synchronizationTaskExecution](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationTaskExecution?view=graph-rest-1.0) resource type.",
+          "Target": "synchronizationTaskExecution"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "synchronizationTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [synchronizationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationTemplate?view=graph-rest-1.0) resource type.",
+          "Target": "synchronizationTemplate"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "synchronization",
+          "ChangeType": "Addition",
+          "Description": "Added the **synchronization** navigation property to the [servicePrincipal](https://learn.microsoft.com/graph/api/resources/servicePrincipal?view=graph-rest-1.0) resource.",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "synchronization",
+          "ChangeType": "Addition",
+          "Description": "Added the **synchronization** navigation property to the [application](https://learn.microsoft.com/graph/api/resources/application?view=graph-rest-1.0) resource.",
+          "Target": "application"
+        }
+      ],
+      "Id": "abe8f625-d697-4645-8f68-7164880c84e3",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-07-07T00:00:00.4526604Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    }
+  ]
+}

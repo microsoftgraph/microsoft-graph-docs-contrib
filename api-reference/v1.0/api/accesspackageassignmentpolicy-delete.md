@@ -11,7 +11,9 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), delete an [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md).
+In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), delete an [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -40,11 +42,11 @@ DELETE /identityGovernance/entitlementManagement/assignmentPolicies/{accessPacka
 | Authorization | Bearer \{token\}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
@@ -62,6 +64,10 @@ DELETE https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-accesspackageassignmentpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-accesspackageassignmentpolicy-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -84,6 +90,10 @@ DELETE https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-accesspackageassignmentpolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-accesspackageassignmentpolicy-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -95,5 +105,3 @@ DELETE https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-graphClient.me().onlineMeeting().mSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi().virtualAppointment()
+graphClient.me().onlineMeetings("MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi").virtualAppointment()
 	.buildRequest()
 	.delete();
 

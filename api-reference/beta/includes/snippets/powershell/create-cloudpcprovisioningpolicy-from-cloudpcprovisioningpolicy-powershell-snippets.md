@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.DeviceManagement.Administration
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.cloudPcProvisioningPolicy"
@@ -14,6 +14,17 @@ $params = @{
 		domainJoinType = "hybridAzureADJoin"
 		onPremisesConnectionId = "16ee6c71-fc10-438b-88ac-daa1ccafffff"
 	}
+	domainJoinConfigurations = @(
+		@{
+			onPremisesConnectionId = "16ee6c71-fc10-438b-88ac-daa1ccafffff"
+			type = "hybridAzureADJoin"
+		}
+		@{
+			onPremisesConnectionId = "26e16c71-f210-438b-88ac-d481ccafffff"
+			type = "hybridAzureADJoin"
+		}
+	)
+	id = "1d164206-bf41-4fd2-8424-a3192d39ffff"
 	enableSingleSignOn = $true
 	imageDisplayName = "Windows-10 19h1-evd"
 	imageId = "MicrosoftWindowsDesktop_Windows-10_19h1-evd"
@@ -25,6 +36,6 @@ $params = @{
 	provisioningType = "dedicated"
 }
 
-New-MgDeviceManagementVirtualEndpointProvisioningPolicy -BodyParameter $params
+New-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy -BodyParameter $params
 
 ```

@@ -39,11 +39,11 @@ Content-type: application/json
 ```
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-rangeformat-e1-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/update-rangeformat-e1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangeformat-e1-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/update-rangeformat-e1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -96,11 +96,11 @@ Content-type: application/json
 ```
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-rangeformat-font-e2-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/update-rangeformat-font-e2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangeformat-font-e2-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/update-rangeformat-font-e2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -152,11 +152,11 @@ Content-type: application/json
 ```
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-rangeformat-fill-e3-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/update-rangeformat-fill-e3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangeformat-fill-e3-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/update-rangeformat-fill-e3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -207,11 +207,11 @@ Content-type: application/json
 ```
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-rangeformat-two-e4-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/update-rangeformat-two-e4-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangeformat-two-e4-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/update-rangeformat-two-e4-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -263,11 +263,11 @@ Content-type: application/json
 ```
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-rangeformat-font-two-e5-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/update-rangeformat-font-two-e5-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangeformat-font-two-e5-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/update-rangeformat-font-two-e5-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -319,11 +319,11 @@ Content-type: application/json
 ```
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-rangeformat-fill-two-e6-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/update-rangeformat-fill-two-e6-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangeformat-fill-two-e6-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/update-rangeformat-fill-two-e6-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -374,11 +374,11 @@ Content-type: application/json
 ```
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-rangeformat-three-e7-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/update-rangeformat-three-e7-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangeformat-three-e7-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/update-rangeformat-three-e7-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -433,11 +433,11 @@ Content-type: application/json
 ```
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-rangeformat-font-three-e8-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/update-rangeformat-font-three-e8-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangeformat-font-three-e8-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/update-rangeformat-font-three-e8-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -489,11 +489,11 @@ Content-type: application/json
 ```
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-rangeformat-fill-three-e9-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/update-rangeformat-fill-three-e9-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-rangeformat-fill-three-e9-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/update-rangeformat-fill-three-e9-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

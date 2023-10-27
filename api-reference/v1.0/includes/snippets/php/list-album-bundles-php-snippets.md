@@ -6,8 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new BundlesRequestBuilderGetRequestConfiguration();
 $queryParameters = BundlesRequestBuilderGetRequestConfiguration::createQueryParameters();
@@ -15,7 +15,6 @@ $queryParameters->filter = "bundle/album ne null";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->drivesById('drive-id')->bundles()->get($requestConfiguration);
-
+$result = $graphServiceClient->drives()->byDriveId('drive-id')->bundles()->get($requestConfiguration)->wait();
 
 ```

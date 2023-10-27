@@ -16,9 +16,11 @@ Enroll [updatableAsset](../resources/windowsupdates-updatableasset.md) resources
 
 You can enroll an [azureADDevice](../resources/windowsupdates-azureaddevice.md) resource in update management, but may not enroll an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) in update management.
 
-Enrolling an Azure AD device in update management automatically creates an **azureADDevice** object if it does not already exist.
+Enrolling a Microsoft Entra device in update management automatically creates an **azureADDevice** object if it does not already exist.
 
 You can also use the method [enrollAssetsById](windowsupdates-updatableasset-enrollassetsbyid.md) to enroll assets.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -28,6 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|WindowsUpdates.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|WindowsUpdates.ReadWrite.All|
+
+[!INCLUDE [rbac-windows-updates-apis](../includes/rbac-for-apis/rbac-windows-updates-apis.md)]
 
 ## HTTP request
 
@@ -57,7 +61,7 @@ The following table shows the parameters that can be used with this action.
 
 ## Response
 
-If successful, this action returns a `202 Accepted` response code. It does not return anything in the response body.
+If successful, this action returns a `202 Accepted` response code. It doesn't return anything in the response body.
 
 ## Examples
 
@@ -88,6 +92,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/updatableasset-enrollassets-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/updatableasset-enrollassets-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/updatableasset-enrollassets-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -104,6 +112,14 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/updatableasset-enrollassets-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/updatableasset-enrollassets-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/updatableasset-enrollassets-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -116,4 +132,3 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 202 Accepted
 ```
-

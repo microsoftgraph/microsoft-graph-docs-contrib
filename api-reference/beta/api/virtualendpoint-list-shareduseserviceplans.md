@@ -1,5 +1,5 @@
 ---
-title: "List cloudPcSharedUseServicePlans"
+title: "List cloudPcSharedUseServicePlans (deprecated)"
 description: "Get a list of the cloudPcSharedUseServicePlan objects and their properties."
 author: "GuoanTang"
 ms.localizationpriority: medium
@@ -7,13 +7,18 @@ ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# List cloudPcSharedUseServicePlans
+# List cloudPcSharedUseServicePlans (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+> [!CAUTION]
+> The **cloudPcSharedUseServicePlan** resource is deprecated and stopped returning data on October 8, 2023. Going forward, use the [cloudPcFrontLineServicePlan](../resources/cloudpcfrontlineserviceplan.md).
+
 Get a list of the [cloudPcSharedUseServicePlan](../resources/cloudpcshareduseserviceplan.md) objects and their properties.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -38,7 +43,7 @@ GET /deviceManagement/virtualEndpoint/sharedUseServicePlans
 
 ## Optional query parameters
 
-This method supports the `$select`, `$filter`, `$orderBy`, and `$skip` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, `$orderby`, and `$skip` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -48,7 +53,7 @@ This method supports the `$select`, `$filter`, `$orderBy`, and `$skip` OData que
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -75,6 +80,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/sharedUseS
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-cloudpcshareduseserviceplans-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-cloudpcshareduseserviceplans-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-cloudpcshareduseserviceplans-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -95,11 +104,15 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/sharedUseS
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-cloudpcshareduseserviceplans-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-cloudpcshareduseserviceplans-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

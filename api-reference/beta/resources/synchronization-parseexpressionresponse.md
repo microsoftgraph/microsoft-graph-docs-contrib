@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Represents the response from the [parseExpression](../api/synchronization-synchronizationschema-parseexpression.md) action.
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |error|publicError|Error details, if expression evaluation resulted in an error.|
 |evaluationResult|String collection|A collection of values produced by the evaluation of the expression.|
@@ -38,13 +38,19 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "error": {"@odata.type": "microsoft.graph.publicError"},
-  "evaluationResult": ["String"],
-  "evaluationSucceeded": true,
-  "parsedExpression": {"@odata.type": "microsoft.graph.attributeMappingSource"},
-  "parsingSucceeded": true
+  "@odata.type": "#microsoft.graph.parseExpressionResponse",
+  "error": {
+    "@odata.type": "microsoft.graph.publicError"
+  },
+  "evaluationSucceeded": "Boolean",
+  "evaluationResult": [
+    "String"
+  ],
+  "parsedExpression": {
+    "@odata.type": "microsoft.graph.attributeMappingSource"
+  },
+  "parsingSucceeded": "Boolean"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Create a new [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -51,16 +53,16 @@ In the request body, provide a JSON representation of a [b2cIdentityUserFlow](..
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|id|String|Required. The name of the user flow. The name will be pre-pended with `B2C_1_` after creation if the prefix was not added to the name during your request. |
-|userFlowType|String|Required. The type of user flow you are creating. The supported values for **userFlowType** are:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
+|id|String|Required. The name of the user flow. The name will be prepended with `B2C_1_` after creation if the prefix wasn't added to the name during your request. |
+|userFlowType|String|Required. The type of user flow you're creating. The supported values for **userFlowType** are:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
 |userFlowTypeVersion|Float|Required. The version of the user flow.|
-|isLanguageCustomizationEnabled|Boolean|Optional. Determines whether language customization is enabled within the Azure AD B2C user flow. Language customization is not enabled by default for Azure AD B2C user flows.|
+|isLanguageCustomizationEnabled|Boolean|Optional. Determines whether language customization is enabled within the Azure AD B2C user flow. Language customization isn't enabled by default for Azure AD B2C user flows.|
 |defaultLanguageTag|String|Optional.  Specifies the default language of the b2cIdentityUserFlow that is used when no `ui_locale` tag is specified in the request. This field is [RFC 5646](https://tools.ietf.org/html/rfc5646) compliant.|
 |identityProviders|[identityProvider](../resources/identityprovider.md) collection|Optional. The identity providers you want to include in the user flow.|
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a Location header with a URI to the [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) object created for this request, with the `B2C_1_` prefix added to the name. If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns a `201 Created` response code and a Location header with a URI to the [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) object created for this request, with the `B2C_1_` prefix added to the name. If unsuccessful, a `4xx` error is returned with specific details.
 
 ## Examples
 
@@ -68,7 +70,7 @@ If successful, this method returns a `201 Created` response code and a Location 
 
 #### Request
 
-The following is an example of the request.
+Here's an example  of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -92,6 +94,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-b2cuserflow-from-b2cuserflows-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-b2cuserflow-from-b2cuserflows-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-b2cuserflow-from-b2cuserflows-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -108,11 +114,15 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/create-b2cuserflow-from-b2cuserflows-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-b2cuserflow-from-b2cuserflows-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
 
-The following is an example of the response.
+Here's an example  of the response.
 
 **Note:** The response object shown here might be shortened for readability.
 
@@ -146,7 +156,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+Here's an example  of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -176,6 +186,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-b2cuserflow-from-b2cuserflows-identityprovider-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-b2cuserflow-from-b2cuserflows-identityprovider-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-b2cuserflow-from-b2cuserflows-identityprovider-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -192,11 +206,15 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/create-b2cuserflow-from-b2cuserflows-identityprovider-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-b2cuserflow-from-b2cuserflows-identityprovider-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
 
-The following is an example of the response.
+Here's an example  of the response.
 
 **Note:** The response object shown here might be shortened for readability.
 
@@ -241,7 +259,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+Here's an example  of the request.
 
 
 # [HTTP](#tab/http)
@@ -274,6 +292,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-b2cuserflow-from-b2cuserflows-apiconnectors-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-b2cuserflow-from-b2cuserflows-apiconnectors-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-b2cuserflow-from-b2cuserflows-apiconnectors-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -290,11 +312,15 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/create-b2cuserflow-from-b2cuserflows-apiconnectors-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-b2cuserflow-from-b2cuserflows-apiconnectors-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
 
-The following is an example of the response.
+Here's an example  of the response.
 
 **Note:** The response object shown here might be shortened for readability.
 

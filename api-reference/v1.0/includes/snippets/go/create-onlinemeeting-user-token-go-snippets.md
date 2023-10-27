@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  "time"
@@ -24,7 +24,7 @@ requestBody.SetEndDateTime(&endDateTime)
 subject := "User Token Meeting"
 requestBody.SetSubject(&subject) 
 
-result, err := graphClient.Me().OnlineMeetings().Post(context.Background(), requestBody, nil)
+onlineMeetings, err := graphClient.Me().OnlineMeetings().Post(context.Background(), requestBody, nil)
 
 
 ```

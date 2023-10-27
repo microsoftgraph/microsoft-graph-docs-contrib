@@ -4,6 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Call
@@ -19,7 +21,7 @@ var requestBody = new Call
 			AdditionalData = new Dictionary<string, object>
 			{
 				{
-					"applicationInstance" , new 
+					"applicationInstance" , new Identity
 					{
 						OdataType = "#microsoft.graph.identity",
 						DisplayName = "Calling Bot",
@@ -44,7 +46,7 @@ var requestBody = new Call
 				AdditionalData = new Dictionary<string, object>
 				{
 					{
-						"phone" , new 
+						"phone" , new Identity
 						{
 							OdataType = "#microsoft.graph.identity",
 							Id = "+12345678901",
@@ -58,7 +60,7 @@ var requestBody = new Call
 	{
 		Modality.Audio,
 	},
-	MediaConfig = new MediaConfig
+	MediaConfig = new ServiceHostedMediaConfig
 	{
 		OdataType = "#microsoft.graph.serviceHostedMediaConfig",
 	},

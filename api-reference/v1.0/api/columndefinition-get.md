@@ -15,6 +15,8 @@ Retrieve the metadata for a [site][], a [list][], or a [contentType][] [column][
 
   
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
   
@@ -52,7 +54,7 @@ GET /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns/{colu
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -78,6 +80,10 @@ GET /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-column-from-contenttype-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-column-from-contenttype-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-column-from-contenttype-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -98,11 +104,15 @@ GET /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-column-from-contenttype-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-column-from-contenttype-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.columnDefinition", "truncated": true } -->
 

@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of an [unifiedRbacResourceAction](../resources/unifiedrbacresourceaction.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -42,7 +44,7 @@ This method supports the `$select` OData query parameter to help customize the r
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -69,6 +71,10 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedrbacresourceaction-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-unifiedrbacresourceaction-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-unifiedrbacresourceaction-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -89,6 +95,10 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-unifiedrbacresourceaction-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-unifiedrbacresourceaction-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -107,6 +117,7 @@ Content-Type: application/json
     "actionVerb": "GET",
     "description": "Read all properties of access reviews",
     "id": "microsoft.directory-accessReviews-allProperties-read-get",
+    "isPrivileged": false,
     "name": "microsoft.directory/accessReviews/allProperties/read",
     "resourceScopeId": null
 }

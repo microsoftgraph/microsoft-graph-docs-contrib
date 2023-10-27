@@ -4,24 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//industryData"
+	  graphmodelsindustrydata "github.com/microsoftgraph/msgraph-beta-sdk-go/models/industrydata"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewYearTimePeriodDefinition()
+requestBody := graphmodelsindustrydata.NewYearTimePeriodDefinition()
 displayName := "Fiscal Year 2022"
 requestBody.SetDisplayName(&displayName) 
 id := "ebf18762-ab92-487e-21d1-08daddab28bb"
 requestBody.SetId(&id) 
 
-result, err := graphClient.External().IndustryData().Years().ByYearId("yearTimePeriodDefinition-id").Patch(context.Background(), requestBody, nil)
+years, err := graphClient.External().IndustryData().Years().ByYearTimePeriodDefinitionId("yearTimePeriodDefinition-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

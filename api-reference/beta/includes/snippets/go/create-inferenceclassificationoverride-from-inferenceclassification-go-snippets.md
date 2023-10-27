@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -25,7 +25,7 @@ address := "samanthab@adatum.onmicrosoft.com"
 senderEmailAddress.SetAddress(&address) 
 requestBody.SetSenderEmailAddress(senderEmailAddress)
 
-result, err := graphClient.Me().InferenceClassification().Overrides().Post(context.Background(), requestBody, nil)
+overrides, err := graphClient.Me().InferenceClassification().Overrides().Post(context.Background(), requestBody, nil)
 
 
 ```

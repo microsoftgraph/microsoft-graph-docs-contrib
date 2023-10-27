@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-Permission permission = graphClient.sites("{sitesId}").permissions("{permissionId}")
+Permission permission = graphClient.sites("f2d90359-865b-4b6c-8848-d2722dd630e5").permissions("1")
 	.buildRequest()
 	.get();
 

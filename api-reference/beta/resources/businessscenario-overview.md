@@ -71,5 +71,3 @@ The business scenarios API allows apps to model and integrate real work business
 
 * Drill down on the methods and properties of the resources most helpful to your scenario.
 * Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-
-Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/partners).

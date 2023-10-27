@@ -14,14 +14,18 @@ Namespace: microsoft.graph
 Get a list of [unifiedRoleDefinition](../resources/unifiedroledefinition.md) objects for the provider.
 
 The following RBAC providers are currently supported:
-- directory (Azure AD)
-- entitlement management (Azure AD)
+- directory (Microsoft Entra ID)
+- entitlement management (Microsoft Entra Entitlement Management)
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### For the directory (Azure AD) provider
+<a name='for-the-directory-azure-ad-provider'></a>
+
+### For the directory (Microsoft Entra ID) provider
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -63,7 +67,7 @@ This method supports the `$filter` (`eq` and `in` operators) OData query paramet
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -89,6 +93,10 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleDefinitions
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-roledefinitions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-roledefinitions-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-roledefinitions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -109,11 +117,15 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleDefinitions
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-roledefinitions-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-roledefinitions-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -236,6 +248,10 @@ GET https://graph.microsoft.com/v1.0/roleManagement/entitlementManagement/roleDe
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-roledefinitions-entitlementmanagement-provider-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-roledefinitions-entitlementmanagement-provider-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-roledefinitions-entitlementmanagement-provider-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -256,11 +272,15 @@ GET https://graph.microsoft.com/v1.0/roleManagement/entitlementManagement/roleDe
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-roledefinitions-entitlementmanagement-provider-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-roledefinitions-entitlementmanagement-provider-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -378,4 +398,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-

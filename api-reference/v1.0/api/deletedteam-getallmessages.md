@@ -14,6 +14,8 @@ Retrieve [messages](../resources/chatmessage.md) across all [channels](../resour
 
 To learn more about using the Microsoft Teams export APIs to export content, see [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -22,9 +24,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|Not supported|
 |Delegated (personal Microsoft account)|Not supported|
 |Application|ChannelMessage.Read.All|
-
-> [!NOTE]
-> Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
 
 ## HTTP request
 
@@ -57,7 +56,7 @@ You can use the [$top](/graph/query-parameters#top-parameter) query parameter to
 Additionally, [$filter](/graph/query-parameters#filter-parameter) is supported with **dateTime** range query on **lastModifiedDateTime**. The other [OData query parameters](/graph/query-parameters) are not currently supported.
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -81,6 +80,10 @@ GET https://graph.microsoft.com/v1.0/teamwork/deletedTeams/fbe2bf47-16c8-47cf-b4
 [!INCLUDE [sample-code](../includes/snippets/csharp/deletedteamthisgetallmessages-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/deletedteamthisgetallmessages-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/deletedteamthisgetallmessages-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -97,10 +100,14 @@ GET https://graph.microsoft.com/v1.0/teamwork/deletedTeams/fbe2bf47-16c8-47cf-b4
 [!INCLUDE [sample-code](../includes/snippets/php/deletedteamthisgetallmessages-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/deletedteamthisgetallmessages-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

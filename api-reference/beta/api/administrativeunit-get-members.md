@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Use this API to get a specific member (user, group, or device) in an administrative unit.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -36,7 +38,7 @@ GET /administrativeUnits/{id}/members/{id}
 | Authorization  | Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -44,14 +46,14 @@ If successful, this method returns a `200 OK` response code and a [user](../reso
 
 ## Example
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members/{id}
 ```
 
 ### Response
-The following is an example of the response. 
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 ```http

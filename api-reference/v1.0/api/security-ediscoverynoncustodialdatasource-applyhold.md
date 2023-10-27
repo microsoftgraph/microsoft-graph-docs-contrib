@@ -11,7 +11,9 @@ doc_type: "apiPageType"
 Namespace: microsoft.graph.security
 
 
-Start the process of applying hold on [eDiscovery non-custodial data sources](../resources/security-ediscoverynoncustodialdatasource.md). After the operation is created, you can get the status by retrieving the `Location` parameter from the response headers. The location provides a URL that will return an [eDiscoveryHoldOperation](../resources/security-ediscoveryholdoperation.md) object.
+Start the process of applying hold on [eDiscovery non-custodial data sources](../resources/security-ediscoverynoncustodialdatasource.md). After the operation is created, you can get the status by retrieving the `Location` parameter from the response headers. The location provides a URL that returns an [eDiscoveryHoldOperation](../resources/security-ediscoveryholdoperation.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -57,7 +59,7 @@ If successful, this action returns a `202 Accepted` response code.
 
 ### Example 1: Apply hold to multiple non-custodial data sources
 #### Request
-The following is an example of a request.
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -81,6 +83,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/ediscoverynoncustialdatasourceapplyhold-caseid-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/ediscoverynoncustialdatasourceapplyhold-caseid-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/ediscoverynoncustialdatasourceapplyhold-caseid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -97,10 +103,18 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/ediscoverynoncustialdatasourceapplyhold-caseid-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/ediscoverynoncustialdatasourceapplyhold-caseid-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -113,7 +127,7 @@ HTTP/1.1 202 Accepted
 
 ### Example 2: Apply hold to a single non-custodial data source
 #### Request
-The following is an example of a request.
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -127,6 +141,10 @@ POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b0073e4e-41
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/ediscoverynoncustialdatasource-applyhold-single-noncustodial-datasource-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/ediscoverynoncustialdatasource-applyhold-single-noncustodial-datasource-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -145,10 +163,18 @@ POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b0073e4e-41
 [!INCLUDE [sample-code](../includes/snippets/php/ediscoverynoncustialdatasource-applyhold-single-noncustodial-datasource-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/ediscoverynoncustialdatasource-applyhold-single-noncustodial-datasource-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/ediscoverynoncustialdatasource-applyhold-single-noncustodial-datasource-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",

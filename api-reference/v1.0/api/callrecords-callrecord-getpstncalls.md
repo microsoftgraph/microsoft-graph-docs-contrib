@@ -13,6 +13,8 @@ Namespace: microsoft.graph.callRecords
 
 Get log of PSTN calls as a collection of [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) entries.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -31,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-GET /communications/callRecords/getPstnCalls
+GET /communications/callRecords/getPstnCalls(fromDateTime={fromDateTime},toDateTime={toDateTime})
 ```
 
 ## Function parameters
@@ -56,7 +58,7 @@ The following table shows the parameters that can be used with this function.
 ## Response
 
 If successful, this function returns a `200 OK` response code and a collection of [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) entries in the response body.
-  
+
 If there are more than 1000 entries in the date range, the body also includes an `@odata.NextLink` with a URL to query the next page of call entries. The last page in the date range does not have `@odata.NextLink`. For more information, see [paging Microsoft Graph data in your app](/graph/paging).
 
 ## Example
@@ -81,6 +83,10 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/getPstnCalls(fro
 [!INCLUDE [sample-code](../includes/snippets/csharp/callrecord-getpstncalls-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/callrecord-getpstncalls-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/callrecord-getpstncalls-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -97,8 +103,8 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/getPstnCalls(fro
 [!INCLUDE [sample-code](../includes/snippets/php/callrecord-getpstncalls-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/callrecord-getpstncalls-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/callrecord-getpstncalls-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -119,7 +125,8 @@ HTTP/1.1 200 OK
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.callRecords.pstnCallLogRow)",
     "@odata.count": 1000,
-    "value": [{
+    "value": [
+        {
             "id": "9c4984c7-6c3c-427d-a30c-bd0b2eacee90",
             "callId": "1835317186_112562680@61.221.3.176",
             "userId": "db03c14b-06eb-4189-939b-7cbf3a20ba27",
@@ -141,9 +148,10 @@ HTTP/1.1 200 OK
             "conferenceId": null,
             "licenseCapability": "MCOPSTNU",
             "inventoryType": "Subscriber",
-			"operator": "Microsoft",
-			"callDurationSource": "microsoft"
-        }],
+            "operator": "Microsoft",
+            "callDurationSource": "microsoft"
+        }
+    ],
     "@odata.nextLink": "https://graph.microsoft.com/v1.0/communications/callRecords/getPstnCalls(from=2019-11-01,to=2019-12-01)?$skip=1000"
 }
 ```

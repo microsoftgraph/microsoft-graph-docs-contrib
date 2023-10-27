@@ -4,6 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new PlannerTask
@@ -16,7 +18,7 @@ var requestBody = new PlannerTask
 		AdditionalData = new Dictionary<string, object>
 		{
 			{
-				"fbab97d0-4932-4511-b675-204639209557" , new 
+				"fbab97d0-4932-4511-b675-204639209557" , new PlannerAssignment
 				{
 					OdataType = "#microsoft.graph.plannerAssignment",
 					OrderHint = " !",

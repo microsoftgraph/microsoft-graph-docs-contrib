@@ -4,6 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Call
@@ -42,7 +44,7 @@ var requestBody = new Call
 				},
 			},
 		},
-		new InvitationParticipantInfo
+		new ParticipantInfo
 		{
 			OdataType = "#microsoft.graph.participantInfo",
 			Identity = new IdentitySet
@@ -61,16 +63,11 @@ var requestBody = new Call
 	{
 		Modality.Audio,
 	},
-	MediaConfig = new MediaConfig
+	MediaConfig = new AppHostedMediaConfig
 	{
 		OdataType = "#microsoft.graph.appHostedMediaConfig",
+		Blob = "<Media Session Configuration>",
 		RemoveFromDefaultAudioGroup = false,
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"blob" , "<Media Session Configuration>"
-			},
-		},
 	},
 	TenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a",
 };

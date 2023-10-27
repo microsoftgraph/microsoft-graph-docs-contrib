@@ -4,7 +4,7 @@ description: "This action allows you to obtain short-lived embeddable URLs for a
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 ---
 
 # driveItem: preview
@@ -20,6 +20,8 @@ If you want to obtain long-lived embeddable links, use the [createLink][] API in
 > **Note:** The **preview** action is currently only available on SharePoint and OneDrive for Business.
 
 [createLink]: driveitem-createlink.md
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

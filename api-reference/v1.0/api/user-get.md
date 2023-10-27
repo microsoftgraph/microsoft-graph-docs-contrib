@@ -17,6 +17,8 @@ Retrieve the properties and relationships of user object.
 >
 > This request might have replication delays for users that were recently created, updated, or deleted.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -72,7 +74,7 @@ Extension properties also support query parameters as follows:
 | Content-Type   | application/json |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -102,6 +104,10 @@ GET https://graph.microsoft.com/v1.0/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-user-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-user-1-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-user-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -120,6 +126,10 @@ GET https://graph.microsoft.com/v1.0/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-user-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-user-1-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -173,6 +183,10 @@ GET https://graph.microsoft.com/v1.0/me
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-user-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-user-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -191,6 +205,10 @@ GET https://graph.microsoft.com/v1.0/me
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-user-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-user-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -242,6 +260,10 @@ GET https://graph.microsoft.com/v1.0/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd?
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-user-select-e3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-user-select-e3-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-user-select-e3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -260,6 +282,10 @@ GET https://graph.microsoft.com/v1.0/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd?
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-user-select-e3-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-user-select-e3-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -309,6 +335,10 @@ GET https://graph.microsoft.com/v1.0/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e?
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-schemaextension-selectcourse-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-schemaextension-selectcourse-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-schemaextension-selectcourse-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -327,6 +357,10 @@ GET https://graph.microsoft.com/v1.0/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e?
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-schemaextension-selectcourse-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-schemaextension-selectcourse-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -353,56 +387,83 @@ Content-type: application/json
 }
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Get user",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}-->
+### Example 5: Get the custom security attribute assignments for a user
 
-### Example 5: Use `$filter` to retrieve specific users based on a property value
+The following example shows how to get the custom security attribute assignments for a user.
 
-This example shows how to use the `$filter` query parameter along with the `endswith` clause to retrieve a user with a specific value in the **mail** attribute. This request filters and returns all users with a mail address ending with contoso.com.
+Attribute #1
+
+- Attribute set: `Engineering`
+- Attribute: `Project`
+- Attribute data type: Collection of Strings
+- Attribute value: `["Baker","Cascade"]`
+
+Attribute #2
+
+- Attribute set: `Engineering`
+- Attribute: `CostCenter`
+- Attribute data type: Collection of Integers
+- Attribute value: `[1001]`
+
+Attribute #3
+
+- Attribute set: `Engineering`
+- Attribute: `Certification`
+- Attribute data type: Boolean
+- Attribute value: `true`
+
+Attribute #4
+
+- Attribute set: `Marketing`
+- Attribute: `EmployeeId`
+- Attribute data type: String
+- Attribute value: `"QN26904"`
+
+To get custom security attribute assignments, the calling principal must be assigned the Attribute Assignment Reader or Attribute Assignment Administrator role and must be granted the *CustomSecAttributeAssignment.Read.All* or *CustomSecAttributeAssignment.ReadWrite.All* permission.
+
+For more examples of custom security attribute assignments, see [Examples: Assign, update, list, or remove custom security attribute assignments using the Microsoft Graph API](/graph/custom-security-attributes-examples).
 
 #### Request
-
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_user_filter"
-} -->
+  "name": "get_user_customsecurityattributes"
+}-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users?$count=true&ConsistencyLevel=eventual&$filter=endsWith(mail,'@contoso.com')
+GET https://graph.microsoft.com/v1.0/users/{id}?$select=customSecurityAttributes
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-user-filter-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-user-customsecurityattributes-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-user-customsecurityattributes-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-user-filter-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/get-user-customsecurityattributes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-user-filter-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-user-customsecurityattributes-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-user-filter-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-user-customsecurityattributes-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-user-filter-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/get-user-customsecurityattributes-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-user-filter-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-user-customsecurityattributes-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-user-customsecurityattributes-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -419,24 +480,49 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users",
-    "@odata.count": 1350,
-    "@odata.nextLink": "https://graph.microsoft.com/v1.0/users?$count=true&$filter=endsWith(mail,'@contoso.com')&ConsistencyLevel=eventual&$skiptoken=m~AQAnOzEyN2NjN2I3NTQzYzQ0YzA4NjlhYjU5MzUzYmNhNGI2OzswOzA7",
-    "value": [
-        {
-            "businessPhones": [],
-            "displayName": "Phantom Space",
-            "givenName": "Space",
-            "jobTitle": null,
-            "mail": "Space.Phantom@cloudezzy.com",
-            "mobilePhone": null,
-            "officeLocation": null,
-            "preferredLanguage": null,
-            "surname": "Phantom",
-            "userPrincipalName": "Space.Phantom@contoso.com",
-            "id": "00111916-c5c5-4dd2-9e31-aab96af7511e"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(customSecurityAttributes)/$entity",
+    "customSecurityAttributes": {
+        "Marketing": {
+            "@odata.type": "#microsoft.graph.customSecurityAttributeValue",
+            "EmployeeId": "QN26904"
+        },
+        "Engineering": {
+            "@odata.type": "#microsoft.graph.customSecurityAttributeValue",
+            "Project@odata.type": "#Collection(String)",
+            "Project": [
+                "Baker",
+                "Cascade"
+            ],
+            "CostCenter@odata.type": "#Collection(Int32)",
+            "CostCenter": [
+                1001
+            ],
+            "Certification": true
         }
-    ]
+    }
 }
 ```
+
+If there are no custom security attributes assigned to the user or if the calling principal does not have access, the following will be the response:
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(customSecurityAttributes)/$entity",
+    "customSecurityAttributes": null
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Get user",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}-->

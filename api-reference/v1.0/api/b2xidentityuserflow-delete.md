@@ -3,7 +3,7 @@ title: "Delete b2xIdentityUserFlow"
 description: "Delete a b2xIdentityUserFlow object."
 ms.localizationpriority: medium
 doc_type: apiPageType
-author: "jkdouglas"
+author: "nanguil"
 ms.prod: "identity-and-sign-in"
 ---
 
@@ -12,6 +12,8 @@ ms.prod: "identity-and-sign-in"
 Namespace: microsoft.graph
 
 Delete a [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -43,7 +45,7 @@ DELETE /identity/b2xUserFlows/{id}
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -53,7 +55,7 @@ If successful, this method returns `204 No Content` response code.
 
 ### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -70,6 +72,10 @@ DELETE https://graph.microsoft.com/v1.0/identity/b2xUserFlows/B2X_1_Partner
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-b2xuserflows-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-b2xuserflows-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -92,11 +98,15 @@ DELETE https://graph.microsoft.com/v1.0/identity/b2xUserFlows/B2X_1_Partner
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-b2xuserflows-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-b2xuserflows-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 **Note:** The response object shown here might be shortened for readability.
 

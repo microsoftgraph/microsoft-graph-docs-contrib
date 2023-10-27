@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().Authentication().PasswordMethods().ByPasswordMethodId("passwordAuthenticationMethod-id").Get(context.Background(), nil)
+passwordMethods, err := graphClient.Me().Authentication().PasswordMethods().ByPasswordAuthenticationMethodId("passwordAuthenticationMethod-id").Get(context.Background(), nil)
 
 
 ```

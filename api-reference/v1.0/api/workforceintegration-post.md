@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 Create a new [workforceIntegration](../resources/workforceintegration.md) object.
 You can set up which entities you want to receive Shifts synchronous change notifications on and set entities to configure filtering by WFM rules eligibility for, including swap requests.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -40,6 +42,7 @@ POST /teamwork/workforceIntegrations
 |:--------------|:--------------|
 | Authorization | Bearer {token}. Required. |
 | Content-type | application/json. Required. |
+| MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
 ## Request body
 
@@ -53,7 +56,7 @@ If successful, this method returns a `201 Created` response code and a new [work
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -83,6 +86,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-workforceintegration-from-teamwork-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-workforceintegration-from-teamwork-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-workforceintegration-from-teamwork-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -103,11 +110,15 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-workforceintegration-from-teamwork-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-workforceintegration-from-teamwork-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -140,7 +151,7 @@ Content-type: application/json
 
 ### Request
 
-The following is an example of the request. 
+The following example shows a request.
 ```
 POST https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations/
 {
@@ -160,7 +171,7 @@ Content-type: application/json
 ```
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 ```
 HTTP/1.1 200 OK
 {

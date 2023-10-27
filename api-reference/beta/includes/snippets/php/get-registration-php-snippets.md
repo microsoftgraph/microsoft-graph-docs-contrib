@@ -6,8 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new RegistrationRequestBuilderGetRequestConfiguration();
 $queryParameters = RegistrationRequestBuilderGetRequestConfiguration::createQueryParameters();
@@ -15,7 +15,6 @@ $queryParameters->expand = ["microsoft.graph.meetingRegistration/customQuestions
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->me()->onlineMeetingsById('onlineMeeting-id')->registration()->get($requestConfiguration);
-
+$result = $graphServiceClient->me()->onlineMeetings()->byOnlineMeetingId('onlineMeeting-id')->registration()->get($requestConfiguration)->wait();
 
 ```

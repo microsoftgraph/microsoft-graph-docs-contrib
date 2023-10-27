@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -28,27 +28,21 @@ attackType := graphmodels.SOCIAL_SIMULATIONATTACKTYPE
 requestBody.SetAttackType(&attackType) 
 status := graphmodels.SCHEDULED_SIMULATIONSTATUS 
 requestBody.SetStatus(&status) 
-includedAccountTarget := graphmodels.NewAccountTargetContent()
+includedAccountTarget := graphmodels.NewAddressBookAccountTargetContent()
 type := graphmodels.ADDRESSBOOK_ACCOUNTTARGETCONTENTTYPE 
 includedAccountTarget.SetType(&type) 
-additionalData := map[string]interface{}{
-	accountTargetEmails := []string {
-		"faiza@contoso.com",
-
-	}
+accountTargetEmails := []string {
+	"faiza@contoso.com",
 }
-includedAccountTarget.SetAdditionalData(additionalData)
+includedAccountTarget.SetAccountTargetEmails(accountTargetEmails)
 requestBody.SetIncludedAccountTarget(includedAccountTarget)
-excludedAccountTarget := graphmodels.NewAccountTargetContent()
+excludedAccountTarget := graphmodels.NewAddressBookAccountTargetContent()
 type := graphmodels.ADDRESSBOOK_ACCOUNTTARGETCONTENTTYPE 
 excludedAccountTarget.SetType(&type) 
-additionalData := map[string]interface{}{
-	accountTargetEmails := []string {
-		"sam@contoso.com",
-
-	}
+accountTargetEmails := []string {
+	"sam@contoso.com",
 }
-excludedAccountTarget.SetAdditionalData(additionalData)
+excludedAccountTarget.SetAccountTargetEmails(accountTargetEmails)
 requestBody.SetExcludedAccountTarget(excludedAccountTarget)
 additionalData := map[string]interface{}{
 	"odataEtag" : "\"0100aa9b-0000-0100-0000-6396fa270000\"", 
@@ -56,7 +50,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Security().AttackSimulation().Simulations().BySimulationId("simulation-id").Patch(context.Background(), requestBody, nil)
+simulations, err := graphClient.Security().AttackSimulation().Simulations().BySimulationId("simulation-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

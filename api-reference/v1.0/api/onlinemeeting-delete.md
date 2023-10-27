@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Delete an [onlineMeeting](../resources/onlinemeeting.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 | Permission type | Permissions (from least to most privileged)                  |
@@ -32,7 +34,7 @@ DELETE /users/{userId}/onlineMeetings/{meetingId}
 ```
 
 > [!NOTE]
-> - `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [Configure application access to online meetings](/graph/cloud-communication-online-meeting-application-access-policy).
+> - **userId** is the object ID of a user in [Microsoft Entra admin center > user management page](https://entra.microsoft.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [Configure application access to online meetings](/graph/cloud-communication-online-meeting-application-access-policy).
 > - `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
 
 ## Request headers
@@ -41,10 +43,10 @@ DELETE /users/{userId}/onlineMeetings/{meetingId}
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
@@ -65,6 +67,10 @@ DELETE https://graph.microsoft.com/v1.0/me/onlineMeetings/550fae72-d251-43ec-868
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-call-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-call-2-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-call-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -83,6 +89,10 @@ DELETE https://graph.microsoft.com/v1.0/me/onlineMeetings/550fae72-d251-43ec-868
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-call-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-call-2-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

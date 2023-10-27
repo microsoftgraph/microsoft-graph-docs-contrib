@@ -15,6 +15,8 @@ Namespace: microsoft.graph.identityGovernance
 
 Get a list of the [taskDefinition](../resources/identitygovernance-taskdefinition.md) objects and their properties.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -39,7 +41,7 @@ GET /identityGovernance/lifecycleWorkflows/taskDefinitions
 
 ## Optional query parameters
 
-This method supports the `$select`, `$orderBy`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$orderby`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -49,7 +51,7 @@ This method supports the `$select`, `$orderBy`, and `$filter` OData query parame
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -77,6 +79,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/taskD
 [!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-list-taskdefinition-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/lifecycleworkflows-list-taskdefinition-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-list-taskdefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -97,11 +103,15 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/taskD
 [!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-list-taskdefinition-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/lifecycleworkflows-list-taskdefinition-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
 
-The following is an example of the response
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -313,6 +323,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/taskD
 [!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-list-taskdefinition-filter-category-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/lifecycleworkflows-list-taskdefinition-filter-category-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-list-taskdefinition-filter-category-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -333,11 +347,15 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/taskD
 [!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-list-taskdefinition-filter-category-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/lifecycleworkflows-list-taskdefinition-filter-category-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
 
-The following is an example of the response
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

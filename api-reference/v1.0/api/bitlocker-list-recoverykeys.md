@@ -1,7 +1,7 @@
 ---
 title: "List recoveryKeys"
 description: "Get a list of the bitlockerRecoveryKey objects and their properties."
-author: "hafowler"
+author: "myra-ramdenbourg"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 Get a list of the [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) objects and their properties. 
 
 This operation does not return the **key** property. For information about how to read the **key** property, see [Get bitlockerRecoveryKey](bitlockerrecoverykey-get.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -65,7 +67,7 @@ The response might also contain an `odata.nextLink`, which you can use to page t
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -77,7 +79,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 <!-- {
@@ -85,7 +87,7 @@ The following is an example of the request.
   "name": "list_bitlockerrecoverykey"
 }
 -->
-``` http
+```http
 GET https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKeys
 User-Agent: "Dsreg/10.0 (Windows 10.0.19043.1466)"
 ocp-client-name: "My Friendly Client"
@@ -95,7 +97,7 @@ ocp-client-version: "1.2"
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -105,7 +107,7 @@ The following is an example of the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -133,7 +135,7 @@ Content-Type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 
@@ -142,7 +144,7 @@ The following is an example of the request.
   "name": "list_bitlockerrecoverykey_filter_deviceId"
 }
 -->
-``` http
+```http
 GET https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '1ab40ab2-32a8-4b00-b6b5-ba724e407de9'
 User-Agent: "Dsreg/10.0 (Windows 10.0.19043.1466)"
 ocp-client-name: "My Friendly Client"
@@ -152,7 +154,7 @@ ocp-client-version: "1.2"
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

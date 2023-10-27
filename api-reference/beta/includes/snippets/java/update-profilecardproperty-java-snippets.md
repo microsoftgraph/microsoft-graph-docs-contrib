@@ -12,13 +12,13 @@ ProfileCardAnnotation annotations = new ProfileCardAnnotation();
 LinkedList<DisplayNameLocalization> localizationsList = new LinkedList<DisplayNameLocalization>();
 DisplayNameLocalization localizations = new DisplayNameLocalization();
 localizations.languageTag = "no-NB";
-localizations.displayName = "Kostnads Senter";
+localizations.displayName = "Kostnadssenter";
 localizationsList.add(localizations);
 annotations.localizations = localizationsList;
 annotationsList.add(annotations);
 profileCardProperty.annotations = annotationsList;
 
-graphClient.organization("{organizationId}").settings().profileCardProperties("CustomAttribute1")
+graphClient.admin().people().profileCardProperties("CustomAttribute1")
 	.buildRequest()
 	.patch(profileCardProperty);
 

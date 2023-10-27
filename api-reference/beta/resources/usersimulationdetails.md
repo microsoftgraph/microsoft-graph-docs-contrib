@@ -23,6 +23,7 @@ Represents a user of a tenant and their online actions in an attack simulation a
 |compromisedDateTime|DateTimeOffset|Date and time of the compromising online action by a user in an attack simulation and training campaign.|
 |inProgressTrainingsCount|Int32|Number of trainings in progress by a user in an attack simulation and training campaign.|
 |isCompromised|Boolean|Indicates whether a user was compromised in an attack simulation and training campaign.|
+|latestSimulationActivity|String|Indicates latest user activity.|
 |reportedPhishDateTime|DateTimeOffset|Date and time when a user reported the delivered payload as phishing in the attack simulation and training campaign.|
 |simulationEvents|[userSimulationEventInfo](../resources/usersimulationeventinfo.md) collection|List of simulation events of a user in the attack simulation and training campaign.|
 |simulationUser|[attackSimulationUser](../resources/attacksimulationuser.md)|The user in an attack simulation and training campaign.|
@@ -46,6 +47,7 @@ The following is a JSON representation of the resource.
   "compromisedDateTime": "String (timestamp)",
   "inProgressTrainingsCount": "Int32",
   "isCompromised": "Boolean",
+  "latestSimulationActivity": "TrainingCompletion",
   "reportedPhishDateTime": "String (timestamp)",
   "simulationEvents": [
     {
