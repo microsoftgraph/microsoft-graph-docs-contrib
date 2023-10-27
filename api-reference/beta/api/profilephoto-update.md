@@ -90,7 +90,7 @@ PUT /groups/{id}/photo/$value
 To update a team photo:
 <!-- { "blockType": "ignored" } -->
 ```http
-PUT /team/{id}/photo/$value
+PUT /teams/{id}/photo/$value
 ```
 
 To update a user's profile photo:
