@@ -183,7 +183,6 @@ Enumeration members of identity source.
 |:----------|:-------------|:----------|
 IS_None |0 |Indicates the default value: Azure Active Directory (Azure AD). |
 AzureActiveDirectory |1 |The source of identity is Azure AD. |
-External |2 |The source of identity isn't Azure AD. |
 
 #### IdentityType enumeration members
 
