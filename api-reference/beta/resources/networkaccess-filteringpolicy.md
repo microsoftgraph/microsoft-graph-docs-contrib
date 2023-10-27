@@ -31,7 +31,7 @@ Inherits from [microsoft.graph.networkaccess.policy](../resources/networkaccess-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|Timestamp indicating when the filtering Policy was originally created.|
+|createdDateTime|DateTimeOffset|Timestamp that indicates when the filtering Policy was originally created.|
 |description|String|Filtering policy description. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
 |id|String|Identifier for the filtering policy. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|Indicating the date and time when a particular profile was last modified or updated.|

@@ -1,6 +1,6 @@
 ---
 title: "Get branchConnectivityConfiguration"
-description: "Retrieve the connectivity configuration for a specific branch."
+description: "Get the connectivity configuration for a specific branch."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the connectivity configuration for a specific branch.
+Get the connectivity configuration for a specific branch.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -36,7 +36,7 @@ GET /networkAccess/connectivity/branches/{branchSiteId}/connectivityConfiguratio
 ```
 
 ## Optional query parameters
-This method does not supports OData query parameters.
+This method doesn't supports OData query parameters.
 
 ## Request headers
 |Name|Description|
@@ -44,7 +44,7 @@ This method does not supports OData query parameters.
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_branchconnectivityconfiguration"
@@ -65,7 +65,7 @@ GET networkAccess/connectivity/branches/{branchSiteId}/connectivityConfiguration
 
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

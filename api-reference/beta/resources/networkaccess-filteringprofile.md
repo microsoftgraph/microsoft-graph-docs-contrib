@@ -29,7 +29,7 @@ Inherits from [microsoft.graph.networkaccess.profile](../resources/networkaccess
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|Timestamp indicating when the filteringProfile was originally created.|
+|createdDateTime|DateTimeOffset|Timestamp that indicates when the filteringProfile was originally created.|
 |description|String|Providing essential information or context about Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md).|
 |id|String|Distinct identifier that is assigned to a specific profile. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|Indicating the date and time when a particular profile was last modified or updated. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md).|

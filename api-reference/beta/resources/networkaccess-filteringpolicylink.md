@@ -33,7 +33,7 @@ Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkacc
 |Property|Type|Description|
 |:---|:---|:---|
 |action|microsoft.graph.networkaccess.filteringPolicyAction|Represents actions for filtering policies, offering "block" and "allow" options to specify whether to block or allow access based on the policy. The possible values are: `block`, `allow`|
-|createdDateTime|DateTimeOffset|Timestamp indicating when the filtering Policy link was originally created.|
+|createdDateTime|DateTimeOffset|Timestamp that indicates when the filtering Policy link was originally created.|
 |id|String|Unique identifier. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|Policy last modified time.|
 |state|microsoft.graph.networkaccess.status|Determines whether the link is enabled or disabled. Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md).The possible values are: `enabled`, `disabled`|
