@@ -42,7 +42,7 @@ Building a custom Microsoft Graph connector involves four steps:
 
 The following is a sequence diagram that illustrates the four steps to build a Microsoft Graph connector.
 
-![A diagram that shows the four steps to build a Microsoft Graph connector](./concepts/images/connectors-images/graph-connectors-sequence-diagram.png)
+![A diagram that shows the four steps to build a Microsoft Graph connector](graph-connectors-sequence-diagram.png)
 
 ## Known limitations
 
