@@ -1,5 +1,5 @@
 ---
-title: "virtualAppointment: sendvirtualappointmentremindersms"
+title: "virtualAppointment: sendvirtualappointmentsmsreminder"
 description: "Send a virtual appointment reminder SMS."
 author: "benmicrosoft"
 ms.localizationpriority: medium
