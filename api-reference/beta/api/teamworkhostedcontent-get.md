@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-**Get hosted content in app icon in app catalog**
+Get hosted content in app icon in app catalog:
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -188,7 +188,7 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96
 
 #### Response
 
-Response contains bytes for the hosted content in the body. `content-type` header specifies the kind of hosted content.
+The following example shows the response that contains bytes for the hosted content in the body. `content-type` header specifies the kind of hosted content.
 
 <!-- {
   "blockType": "response"
