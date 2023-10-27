@@ -47,6 +47,7 @@ You can specify the following properties when creating a **delegatedAdminRelatio
 |Property|Type|Description|
 |:---|:---|:---|
 |accessDetails|[microsoft.graph.delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The identifiers of the administrative roles that the partner requests or has access to in the customer tenant. Required.|
+|autoExtendDuration|Duration| The duration by which the validity of the relationship is automatically extended, denoted in ISO 8601 format. Supported values are: `P0D`, `PT0S`, `P180D`. The default value is `PT0S`. `PT0S` indicates that the relationship expires when the **endDateTime** is reached and it isn't automatically extended. Optional.|
 |customer|[microsoft.graph.delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|The display name and unique identifier of the customer of the relationship. Optional.|
 |displayName|String|The display name of the relationship used for ease of identification. Must be unique across *all* delegated admin relationships of the partner. Required.|
 |duration|Duration|The duration of the relationship in ISO 8601 format. Must be a value between `P1D` and `P2Y` inclusive. Required.|
@@ -86,7 +87,8 @@ Content-Type: application/json
         "roleDefinitionId": "3a2c62db-5318-420d-8d74-23affee5d9d5"
       }
     ]
-  }
+  },
+  "autoExtendDuration": "P180D"
 }
 ```
 
@@ -159,6 +161,7 @@ Location: https://graph.microsoft.com/v1.0/tenantRelationships/delegatedAdminRel
     ]
   },
   "status": "created",
+  "autoExtendDuration": "P180D",
   "createdDateTime": "2022-02-10T11:24:42.3148266Z",
   "lastModifiedDateTime": "2022-02-10T11:24:42.3148266Z",
   "activatedDateTime": "",

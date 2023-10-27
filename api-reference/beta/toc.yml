@@ -17466,8 +17466,6 @@ items:
                         href: api/participant-get.md
                       - name: Delete
                         href: api/participant-delete.md
-                      - name: Configure mixer
-                        href: api/participant-configuremixer.md
                       - name: Mute participant
                         href: api/participant-mute.md
                       - name: Mute all participants

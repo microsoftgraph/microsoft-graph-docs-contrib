@@ -72,7 +72,7 @@ Azure Key Vault is too busy to handle the incoming request at this moment. Pleas
 SharePoint is currently unavailable. Please try again later.
 
 ### 10016
-Document library on the user or group’s OneDrive exceeded unique security scopes threshold limit. The maximum number of unique security scopes set for a library cannot exceed 50,000.
+Document library on the user or group's OneDrive exceeded unique security scopes threshold limit. The maximum number of unique security scopes set for a library cannot exceed 50,000.
 
 ### 10017
 Bad Request.
@@ -387,7 +387,7 @@ There is a required parameter missing.
 The user or application does not have the correct permissions.
 
 ### 40001
-The request doesn't contain a valid OAuth token. See [Notes permissions](permissions-reference.md#notes-permissions).
+The request doesn't contain a valid OAuth token. See [Notes permissions](permissions-reference.md).
 
 ### 40002
 The user doesn't have permission to write to the requested location.
@@ -396,10 +396,10 @@ The user doesn't have permission to write to the requested location.
 The user doesn't have permission to access the requested resource.
 
 ### 40004
-The OAuth token doesn't have the required scopes to perform the requested action. See [Notes permissions](permissions-reference.md#notes-permissions).
+The OAuth token doesn't have the required scopes to perform the requested action. See [Notes permissions](permissions-reference.md).
 
 ### 40006 
-The OAuth token doesn't have the required scopes to perform the requested action. Specifically the edit permission. See [Notes permissions](permissions-reference.md#notes-permissions).
+The OAuth token doesn't have the required scopes to perform the requested action. Specifically the edit permission. See [Notes permissions](permissions-reference.md).
 
 ### 40007
 The user does not have permissions to access this resource.

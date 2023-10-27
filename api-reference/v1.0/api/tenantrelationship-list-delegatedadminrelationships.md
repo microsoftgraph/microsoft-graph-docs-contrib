@@ -133,6 +133,7 @@ Content-Type: application/json
         ]
       },
       "status": "active",
+      "autoExtendDuration": "P180D",
       "createdDateTime": "2022-02-10T11:24:42.3148266Z",
       "lastModifiedDateTime": "2022-02-10T11:26:44.9941884Z",
       "activatedDateTime": "2022-02-10T11:26:44.9941884Z",
@@ -159,6 +160,7 @@ Content-Type: application/json
         ]
       },
       "status": "terminated",
+      "autoExtendDuration": "PT0S",
       "createdDateTime": "2021-09-29T16:52:39.6133896Z",
       "lastModifiedDateTime": "2021-10-29T16:57:20.2101088Z",
       "activatedDateTime": "2021-09-29T16:55:20.2101088Z",
@@ -206,6 +208,7 @@ Content-Type: application/json
         ]
       },
       "status": "approvalPending",
+      "autoExtendDuration": "PT0S",
       "createdDateTime": "2022-02-10T11:24:42.3148266Z",
       "lastModifiedDateTime": "2022-02-10T11:26:44.9941884Z",
       "activatedDateTime": null,
