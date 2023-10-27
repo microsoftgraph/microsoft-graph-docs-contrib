@@ -358,7 +358,7 @@ For example: Cameron is administrator of a directory for an elementary school in
 |people|[person](person.md) collection| Read-only. The most relevant people to the user. The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships. A person is an aggregation of information from across mail, contacts and social networks.|
 |permissionGrants|[resourceSpecificPermissionGrant](../resources/resourcespecificpermissiongrant.md) collection| List all resource-specific permission grants of a user. |
 |photo|[profilePhoto](profilephoto.md)| The user's profile photo. Read-only.|
-|photos|[profilePhoto](profilephoto.md)| The collection of the user's profile photos in different sizes. Read-only.|
+|photos|[profilePhoto](profilephoto.md) collection| The collection of the user's profile photos in different sizes. Read-only.|
 |planner|[plannerUser](planneruser.md)| Selective Planner services available to the user. Read-only. Nullable. |
 |profile |[profile](profile.md) | Represents properties that are descriptive of a user in a tenant. |
 |registeredDevices|[directoryObject](directoryobject.md) collection|Devices that are registered for the user. Read-only. Nullable. Supports `$expand` and returns up to 100 objects.|
