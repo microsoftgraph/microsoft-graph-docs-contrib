@@ -13,6 +13,9 @@ Namespace: microsoft.graph
 
 Create a new [team](../resources/team.md).
 
+> [!NOTE]
+> When you create a team, the SharePoint site of the general channel might fail to provision. If the site fails to provision after 5 minutes, use the [Get filesFolder](/graph/api/channel-get-filesfolder) API to trigger provisioning.
+
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
