@@ -13,13 +13,10 @@ Namespace: microsoft.graph
 Add multiple domains to your SAML or WS-Fed based configuration by creating a new [externalDomainName](../resources/externaldomainname.md) object and add it to an existing [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md).
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|IdentityProvider.ReadWrite.All|
-|Delegated (personal Microsoft account)| Not supported.|
-|Application|IdentityProvider.ReadWrite.Alll|
+<!-- { "blockType": "permissions", "name": "samlorwsfedexternaldomainfederation_post_domains" } -->
+[!INCLUDE [permissions-table](../includes/permissions/samlorwsfedexternaldomainfederation-post-domains-permissions.md)]
 
 The work or school account needs to belong to one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference):
 
