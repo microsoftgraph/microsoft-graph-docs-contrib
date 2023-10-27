@@ -296,12 +296,11 @@ Here is an example of the request to get the team photo's binary data.
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "ignored",
   "name": "get_team_photo"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/teams/172b0cce-e65d-44ce-9a49-91d9f2e8491e/photo/$value
 ```
 
