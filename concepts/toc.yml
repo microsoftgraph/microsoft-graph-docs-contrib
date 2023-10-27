@@ -272,51 +272,6 @@ items:
             href: delta-query-users.md
       - name: Compliance
         href: compliance-concept-overview.md
-      - name: External data connections
-        items: 
-          - name: Connectors overview
-            href: connecting-external-content-connectors-overview.md
-            displayName: Microsoft Graph connectors, connect external content
-          - name: Connectors experiences
-            href: connecting-external-content-experiences.md
-            displayName: Microsoft Graph connectors, connect external content with Microsoft 365 experiences
-          - name: Connectors API
-            href: connecting-external-content-connectors-api-overview.md
-            displayName: Microsoft Graph connectors
-          - name: Use Postman
-            href: connecting-external-content-connectors-api-postman.md
-            displayName: connector, connectors
-          - name: Build your first custom connector
-            href: connecting-external-content-build-quickstart.yml
-            displayName: connectors, Microsoft Graph connectors
-          - name: Connectors samples
-            href: /samples/browse/?products=microsoft-graph-connectors-api
-          - name: Build your first custom connector using SDK
-            items:
-              - name: Overview
-                href: custom-connector-sdk-sample-overview.md
-              - name: Build the connector
-                href: custom-connector-sdk-sample-create.md
-              - name: Test the connector
-                href: custom-connector-sdk-sample-test.md
-              - name: Host the connector as a Windows service
-                href: custom-connector-sdk-sample-hosting.md
-              - name: Publish the connector
-                href: custom-connector-sdk-sample-publish.md
-              - name: Surface the data in search
-                href: custom-connector-sdk-sample-search.md
-          - name: Simplify connector deployment
-            href: connecting-external-content-deploy-teams.md
-          - name: Manage connections
-            href: connecting-external-content-manage-connections.md
-          - name: Manage schema
-            href: connecting-external-content-manage-schema.md
-          - name: Manage items
-            href: connecting-external-content-manage-items.md
-          - name: Use external groups
-            href: connecting-external-content-external-groups.md
-          - name: API limits
-            href: connecting-external-content-api-limits.md
       - name: Cross-device experiences
         items:
           - name: Overview
@@ -451,6 +406,51 @@ items:
             href: extensibility-open-users.md
           - name: Use schema extensions
             href: extensibility-schema-groups.md
+       - name: External data connections
+        items: 
+          - name: Connectors overview
+            href: connecting-external-content-connectors-overview.md
+            displayName: Microsoft Graph connectors, connect external content
+          - name: Connectors experiences
+            href: connecting-external-content-experiences.md
+            displayName: Microsoft Graph connectors, connect external content with Microsoft 365 experiences
+          - name: Connectors API
+            href: connecting-external-content-connectors-api-overview.md
+            displayName: Microsoft Graph connectors
+          - name: Use Postman
+            href: connecting-external-content-connectors-api-postman.md
+            displayName: connector, connectors
+          - name: Build your first custom connector
+            href: connecting-external-content-build-quickstart.yml
+            displayName: connectors, Microsoft Graph connectors
+          - name: Connectors samples
+            href: /samples/browse/?products=microsoft-graph-connectors-api
+          - name: Build your first custom connector using SDK
+            items:
+              - name: Overview
+                href: custom-connector-sdk-sample-overview.md
+              - name: Build the connector
+                href: custom-connector-sdk-sample-create.md
+              - name: Test the connector
+                href: custom-connector-sdk-sample-test.md
+              - name: Host the connector as a Windows service
+                href: custom-connector-sdk-sample-hosting.md
+              - name: Publish the connector
+                href: custom-connector-sdk-sample-publish.md
+              - name: Surface the data in search
+                href: custom-connector-sdk-sample-search.md
+          - name: Simplify connector deployment
+            href: connecting-external-content-deploy-teams.md
+          - name: Manage connections
+            href: connecting-external-content-manage-connections.md
+          - name: Manage schema
+            href: connecting-external-content-manage-schema.md
+          - name: Manage items
+            href: connecting-external-content-manage-items.md
+          - name: Use external groups
+            href: connecting-external-content-external-groups.md
+          - name: API limits
+            href: connecting-external-content-api-limits.md
       - name: Files
         items:
           - name: Overview
