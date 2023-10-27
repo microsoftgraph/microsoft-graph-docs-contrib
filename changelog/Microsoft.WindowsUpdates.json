@@ -3,6 +3,32 @@
         {
             "ChangeList": [
                 {
+                    "Id": "e626fecf-cb33-4f9e-b636-52dc538a8f31",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "offerAsOptional",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **offerAsOptional** property to the [userExperienceSettings](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-userexperiencesettings?view=graph-rest-beta) resource.",
+                    "Target": "featureUpdateCatalogEntry"
+                },
+                {
+                    "Id": "e626fecf-cb33-4f9e-b636-52dc538a8f31",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "isReadinessTest",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **isReadinessTest** property to the [expediteSettings](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-expeditesettings?view=graph-rest-beta) resource.",
+                    "Target": "qualityUpdateCatalogEntry"
+                }
+            ],
+            "Id": "e626fecf-cb33-4f9e-b636-52dc538a8f31",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2023-10-27T01:25:48.971Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Device updates"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "ee924616-a2d1-41ae-9cf6-f0569fadb163",
                     "ApiChange": "Enum type",
                     "ChangedApiName": "qualityUpdateCadence",
