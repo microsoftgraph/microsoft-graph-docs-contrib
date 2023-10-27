@@ -107,6 +107,10 @@ GET https://graph.microsoft.com/v1.0/reports/getTeamsUserActivityUserCounts(peri
 [!INCLUDE [sample-code](../includes/snippets/php/reportroot-getteamsuseractivityusercounts-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/reportroot-getteamsuseractivityusercounts-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/reportroot-getteamsuseractivityusercounts-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

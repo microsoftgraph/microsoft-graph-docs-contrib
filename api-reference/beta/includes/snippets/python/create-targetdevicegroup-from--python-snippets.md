@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = TargetDeviceGroup(
 	odata_type = "#microsoft.graph.targetDeviceGroup",
@@ -14,7 +14,7 @@ request_body = TargetDeviceGroup(
 	display_name = "Device Group A",
 )
 
-result = await graph_client.service_principals.by_service_principal_id('servicePrincipal-id').remote_desktop_security_configuration.target_device_groups.post(body = request_body)
+result = await graph_client.service_principals.by_service_principal_id('servicePrincipal-id').remote_desktop_security_configuration.target_device_groups.post(request_body)
 
 
 ```

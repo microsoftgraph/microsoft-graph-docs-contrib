@@ -25,7 +25,7 @@ $params = @{
 }
 
 # A UPN can also be used as -UserId.
-Update-MgBetaUserPlanner -UserId $userId -BodyParameter $params-If-Match W/"JzEtVXNlckRldGFpbHMgQEBAQEBAQEBAQEBAQEBIWCc=" 
+Update-MgBetaUserPlanner -UserId $userId -BodyParameter $params -IfMatch W/'"JzEtVXNlckRldGFpbHMgQEBAQEBAQEBAQEBAQEBIWCc="' 
 
 
 ```

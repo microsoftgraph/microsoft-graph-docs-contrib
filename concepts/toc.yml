@@ -84,8 +84,6 @@ items:
             displayName: monetize, charge, cost, pricing
           - name: List of metered APIs
             href: metered-api-list.md
-      - name: Microsoft Graph activity logs
-        href: microsoft-graph-activity-logs-overview.md
       - name: Versioning and support
         href: versioning-and-support.md
       - name: Terms of use
@@ -776,6 +774,8 @@ items:
                 href: changenotifications-for-onlinemeeting.md
               - name: Subscribe to virtual events
                 href: changenotifications-for-virtualevent.md
+              - name: Subscribe for call records
+                href: changenotifications-for-callrecords.md
           - name: Groups and teams
             items:
               - name: Create a group and team

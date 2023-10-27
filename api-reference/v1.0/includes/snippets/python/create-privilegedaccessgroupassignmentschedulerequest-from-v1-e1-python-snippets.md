@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = PrivilegedAccessGroupAssignmentScheduleRequest(
 	access_id = PrivilegedAccessGroupRelationships.Member,
@@ -23,7 +23,7 @@ request_body = PrivilegedAccessGroupAssignmentScheduleRequest(
 	justification = "Assign active member access.",
 )
 
-result = await graph_client.identity_governance.privileged_access.group.assignment_schedule_requests.post(body = request_body)
+result = await graph_client.identity_governance.privileged_access.group.assignment_schedule_requests.post(request_body)
 
 
 ```

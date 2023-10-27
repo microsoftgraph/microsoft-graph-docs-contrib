@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Call(
 	odata_type = "#microsoft.graph.call",
@@ -16,11 +16,11 @@ request_body = Call(
 		identity = IdentitySet(
 			odata_type = "#microsoft.graph.identitySet",
 			additional_data = {
-					"application_instance" : (
-						odata_type = "#microsoft.graph.identity",
-						display_name = "Calling Bot",
-						id = "3d913abb-aec0-4964-8fa6-3c6850c4f278",
-					),
+					"application_instance" : {
+							"@odata_type" : "#microsoft.graph.identity",
+							"display_name" : "Calling Bot",
+							"id" : "3d913abb-aec0-4964-8fa6-3c6850c4f278",
+					},
 			}
 		),
 		country_code = None,
@@ -34,24 +34,24 @@ request_body = Call(
 			identity = IdentitySet(
 				odata_type = "#microsoft.graph.identitySet",
 				additional_data = {
-						"phone" : (
-							odata_type = "#microsoft.graph.identity",
-							id = "+12345678901",
-						),
+						"phone" : {
+								"@odata_type" : "#microsoft.graph.identity",
+								"id" : "+12345678901",
+						},
 				}
 			),
 		),
-	]
+	],
 	requested_modalities = [
 		Modality.Audio,
-	]
+	],
 	media_config = ServiceHostedMediaConfig(
 		odata_type = "#microsoft.graph.serviceHostedMediaConfig",
 	),
 	tenant_id = "aa67bd4c-8475-432d-bd41-39f255720e0a",
 )
 
-result = await graph_client.communications.calls.post(body = request_body)
+result = await graph_client.communications.calls.post(request_body)
 
 
 ```
