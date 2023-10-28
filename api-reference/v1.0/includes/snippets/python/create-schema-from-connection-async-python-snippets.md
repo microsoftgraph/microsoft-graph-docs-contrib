@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Schema(
 	base_type = "microsoft.graph.externalItem",
@@ -18,7 +18,7 @@ request_body = Schema(
 			is_retrievable = True,
 			labels = [
 				Label.Title,
-			]
+			],
 		),
 		Property_(
 			name = "priority",
@@ -32,10 +32,10 @@ request_body = Schema(
 			type = PropertyType.String,
 			is_retrievable = True,
 		),
-	]
+	],
 )
 
-result = await graph_client.external.connections.by_connection_id('externalConnection-id').schema.patch(body = request_body)
+result = await graph_client.external.connections.by_external_connection_id('externalConnection-id').schema.patch(request_body)
 
 
 ```

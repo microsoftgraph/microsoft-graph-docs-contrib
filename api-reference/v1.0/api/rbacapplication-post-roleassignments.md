@@ -18,25 +18,17 @@ Create a new [unifiedRoleAssignment](../resources/unifiedroleassignment.md) obje
 ## Permissions
 
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
-<a name='for-the-directory-azure-ad-provider'></a>
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### For the directory (Microsoft Entra ID) provider
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | RoleManagement.ReadWrite.Directory |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | RoleManagement.ReadWrite.Directory |
+<!-- { "blockType": "permissions", "name": "rbacapplication_post_roleassignments" } -->
+[!INCLUDE [permissions-table](../includes/permissions/rbacapplication-post-roleassignments-permissions.md)]
 
 ### For the entitlement management provider
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  EntitlementManagement.ReadWrite.All   |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | EntitlementManagement.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "rbacapplication_post_roleassignments_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/rbacapplication-post-roleassignments-2-permissions.md)]
 
 ## HTTP request
 
@@ -86,7 +78,7 @@ If successful, this method returns a `201 Created` response code and a new [unif
 
 #### Request
 
-The following is an example of the request. Note the use of the roleTemplateId for roleDefinitionId. roleDefinitionId can be either the service-wide template Id or the directory-specific roleDefinitionId.
+The following example shows a request. Note the use of the roleTemplateId for roleDefinitionId. roleDefinitionId can be either the service-wide template Id or the directory-specific roleDefinitionId.
 
 
 
@@ -144,7 +136,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability. 
 
@@ -229,7 +221,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -314,7 +306,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -344,7 +336,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -400,7 +392,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
