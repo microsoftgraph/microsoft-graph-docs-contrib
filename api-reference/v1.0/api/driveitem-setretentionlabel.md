@@ -61,7 +61,7 @@ When a file is applied with a retention label for the first time, this method re
 
 ### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -81,7 +81,7 @@ Content-Type: application/json
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
