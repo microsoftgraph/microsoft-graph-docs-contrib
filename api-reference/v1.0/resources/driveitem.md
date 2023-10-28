@@ -152,7 +152,7 @@ Removing file permissions for a user might not immediately invalidate the URL.
 
 ## JSON representation
 
-Here's a JSON representation of a **driveItem** resource.
+The following JSON representation shows the resource type.
 
 The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits properties from that resource.
 
