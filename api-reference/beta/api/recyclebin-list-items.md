@@ -1,19 +1,19 @@
 ---
 author: "vanshisingh"
-title: "List recycleBinItems"
+title: "List items in recycleBin"
 description: "Get a list of recycleBinItems under the specified site."
 ms.localizationpriority: "medium"
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
 
-# List recycleBinItems
+# List items
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [recycleBinItems](../resources/recyclebinitem.md) under the specified site.
+Get a collection of [recycleBinItem](../resources/recyclebinitem.md) resources in the [recyleBin](../resources/recyclebin.md) of the specified SharePoint [site](../resources/site.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
