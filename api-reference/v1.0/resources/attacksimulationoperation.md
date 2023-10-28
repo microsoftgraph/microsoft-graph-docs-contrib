@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents the status of a long-running attack simulation training operation.
 
 Inherits from [longRunningOperation](../resources/longrunningoperation.md).
@@ -52,7 +50,6 @@ None.
 ## JSON representation
 
 The following JSON representation shows the resource type.
-
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

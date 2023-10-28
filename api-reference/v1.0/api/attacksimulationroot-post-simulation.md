@@ -11,18 +11,17 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Create an attack simulation campaign for a tenant.
-
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "attacksimulationroot_post_simulation" } -->
-[!INCLUDE [permissions-table](../includes/permissions/attacksimulationroot-post-simulation-permissions.md)]
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | AttackSimulation.ReadWrite.All              |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | AttackSimulation.ReadWrite.All              |
 
 ## HTTP request
 
@@ -76,7 +75,6 @@ If successful, this method returns a `202 Accepted` response code and a tracking
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_simulations"
@@ -84,14 +82,14 @@ The following example shows a request.
 -->
 
 ```http
-POST https://graph.microsoft.com/beta/security/attackSimulation/simulations
+POST https://graph.microsoft.com/v1.0/security/attackSimulation/simulations
 Content-type: application/json
 
 {
   "displayName": "Graph Simulation",
-  "payload@odata.bind": "https://graph.microsoft.com/beta/security/attacksimulation/payloads/12345678-9abc-def0-123456789a",
-  "loginPage@odata.bind": "https://graph.microsoft.com/beta/security/attacksimulation/loginPages/1w345678-9abc-def0-123456789a",
-  "landingPage@odata.bind": "https://graph.microsoft.com/beta/security/attacksimulation/landingPages/1c345678-9abc-def0-123456789a",
+  "payload@odata.bind": "https://graph.microsoft.com/v1.0/security/attacksimulation/payloads/12345678-9abc-def0-123456789a",
+  "loginPage@odata.bind": "https://graph.microsoft.com/v1.0/security/attacksimulation/loginPages/1w345678-9abc-def0-123456789a",
+  "landingPage@odata.bind": "https://graph.microsoft.com/v1.0/security/attacksimulation/landingPages/1c345678-9abc-def0-123456789a",
   "createdBy": {
     "email": "john@contoso.com"
   },
@@ -113,51 +111,17 @@ Content-type: application/json
     "settingType": "noTraining",
     "positiveReinforcement": {
       "deliveryPreference": "deliverAfterCampaignEnd",
-      "endUserNotification": "https://graph.microsoft.com/beta/security/attacksimulation/endUserNotifications/1ewer3678-9abc-def0-123456789a",
+      "endUserNotification": "https://graph.microsoft.com/v1.0/security/attacksimulation/endUserNotifications/1ewer3678-9abc-def0-123456789a",
       "defaultLanguage": "en"
     },
     "simulationNotification": {
       "targettedUserType": "compromised",
-      "endUserNotification@odata.bind": "https://graph.microsoft.com/beta/security/attacksimulation/endUserNotifications/12wer3678-9abc-def0-123456789a",
+      "endUserNotification@odata.bind": "https://graph.microsoft.com/v1.0/security/attacksimulation/endUserNotifications/12wer3678-9abc-def0-123456789a",
       "defaultLanguage": "en"
     }
   }
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-simulations-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-simulations-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-simulations-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-simulations-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-simulations-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-simulations-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-simulations-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/create-simulations-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
