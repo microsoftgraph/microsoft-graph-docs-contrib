@@ -7812,6 +7812,116 @@ items:
                     href: api/security-incident-update.md
                   - name: Create comment for incident
                     href: api/security-incident-post-comments.md
+          - name: Attack simulation and training
+            items:
+              - name: Simulations
+                items:
+                  - name: Simulation
+                    href: resources/simulation.md
+                  - name: List
+                    href: api/attacksimulationroot-list-simulations.md
+                  - name: Create
+                    href: api/attacksimulationroot-post-simulation.md
+                  - name: Get
+                    href: api/simulation-get.md
+                  - name: Update
+                    href: api/simulation-update.md
+                  - name: Delete
+                    href: api/simulation-delete.md
+                  - name: List simulation users
+                    href: api/usersimulationdetails-list.md
+                  - name: Get simulation overview
+                    href: api/simulationreportoverview-get.md
+              - name: Attack simulation operation
+                items:
+                  - name: Attack simulation operation
+                    href: resources/attacksimulationoperation.md
+                  - name: Get
+                    href: api/attacksimulationoperation-get.md
+              - name: End user notification
+                items:
+                  - name: End user notification
+                    href: resources/endusernotification.md
+                  - name: List
+                    href: api/attacksimulationroot-list-endusernotifications.md
+                  - name: Get
+                    href: api/endusernotification-get.md
+              - name: Landing page
+                items:
+                  - name: Landing page
+                    href: resources/landingpage.md
+                  - name: List
+                    href: api/attacksimulationroot-list-landingpage.md
+                  - name: Get
+                    href: api/landingpage-get.md
+              - name: Login page
+                items:
+                  - name: Login page
+                    href: resources/loginpage.md
+                  - name: List
+                    href: api/attacksimulationroot-list-loginpage.md
+                  - name: Get
+                    href: api/loginpage-get.md
+              - name: Payload
+                items:
+                  - name: Payload
+                    href: resources/payload.md
+                  - name: List
+                    href: api/attacksimulationroot-list-payloads.md
+                  - name: Get
+                    href: api/payload-get.md
+                  - name: Get payload detail
+                    href: api/payloaddetail-get.md
+              - name: Reports
+                items:
+                  - name: Attack simulation reports
+                    href: resources/report-m365defender-reports-overview.md
+                  - name: Repeat offenders
+                    items:
+                      - name: Repeat offender
+                        href: resources/attacksimulationrepeatoffender.md
+                      - name: Get repeat offenders
+                        href: api/securityreportsroot-getattacksimulationrepeatoffenders.md
+                  - name: Simulation data
+                    items:
+                      - name: Simulation user coverage
+                        href: resources/attacksimulationsimulationusercoverage.md
+                      - name: Get simulation coverage for users
+                        href: api/securityreportsroot-getattacksimulationsimulationusercoverage.md
+                  - name: Training data
+                    items:
+                      - name: Training user coverage
+                        href: resources/attacksimulationtrainingusercoverage.md
+                      - name: Get training coverage for users
+                        href: api/securityreportsroot-getattacksimulationtrainingusercoverage.md
+              - name: Simulation automation
+                items:
+                  - name: Simulation automation
+                    href: resources/simulationautomation.md
+                  - name: List
+                    href: api/attacksimulationroot-list-simulationautomations.md
+                  - name: Get
+                    href: api/simulationautomation-get.md
+              - name: Simulation automation run
+                items:
+                  - name: Simulation automation run
+                    href: resources/simulationautomationrun.md
+                  - name: List
+                    href: api/simulationautomation-list-runs.md
+              - name: Training
+                items:
+                  - name: Training
+                    href: resources/training.md
+                  - name: List
+                    href: api/attacksimulationroot-list-trainings.md
+                  - name: Get
+                    href: api/training-get.md
+              - name: Training language detail
+                items:
+                  - name: Training language detail
+                    href: resources/traininglanguagedetail.md
+                  - name: Get
+                    href: api/traininglanguagedetail-get.md
           - name: eDiscovery
             items:
               - name: Case
@@ -8079,56 +8189,6 @@ items:
                 href: api/securescorecontrolprofile-update.md
           - name: Errors
             href: resources/security-error-codes.md
-          - name: Attack simulation and training
-            items:
-              - name: Simulations
-                items:
-                  - name: Simulation
-                    href: resources/simulation.md
-                  - name: List
-                    href: api/attacksimulationroot-list-simulations.md
-                  - name: Get
-                    href: api/simulation-get.md
-                  - name: List simulation users
-                    href: api/usersimulationdetails-list.md
-                  - name: Get simulation overview
-                    href: api/simulationreportoverview-get.md
-              - name: Simulation automation
-                items:
-                  - name: Simulation automation
-                    href: resources/simulationautomation.md
-                  - name: List
-                    href: api/attacksimulationroot-list-simulationautomations.md
-                  - name: Get
-                    href: api/simulationautomation-get.md
-              - name: Simulation automation run
-                items:
-                  - name: Simulation automation run
-                    href: resources/simulationautomationrun.md
-                  - name: List
-                    href: api/simulationautomation-list-runs.md
-              - name: Reports
-                items:
-                  - name: Attack simulation reports
-                    href: resources/report-m365defender-reports-overview.md
-                  - name: Repeat offenders
-                    items:
-                      - name: Repeat offender
-                        href: resources/attacksimulationrepeatoffender.md
-                      - name: Get repeat offenders
-                        href: api/securityreportsroot-getattacksimulationrepeatoffenders.md
-                  - name: Simulation data
-                    items:
-                      - name: Simulation user coverage
-                        href: resources/attacksimulationsimulationusercoverage.md
-                      - name: Get simulation coverage for users
-                        href: api/securityreportsroot-getattacksimulationsimulationusercoverage.md
-                  - name: Training data
-                    items:
-                      - name: Training user coverage
-                        href: resources/attacksimulationtrainingusercoverage.md
-                      - name: Get training coverage for users
-                        href: api/securityreportsroot-getattacksimulationtrainingusercoverage.md
           - name: Threat intelligence
             items:
               - name: Overview

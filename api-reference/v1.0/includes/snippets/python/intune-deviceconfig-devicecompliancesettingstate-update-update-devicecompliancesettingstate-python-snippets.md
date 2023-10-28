@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = DeviceComplianceSettingState(
 	odata_type = "#microsoft.graph.deviceComplianceSettingState",
@@ -23,7 +23,7 @@ request_body = DeviceComplianceSettingState(
 	compliance_grace_period_expiration_date_time = "2016-12-31T23:56:44.951111-08:00",
 )
 
-result = await graph_client.device_management.device_compliance_policy_setting_state_summaries.by_device_compliance_policy_setting_state_summarie_id('deviceCompliancePolicySettingStateSummary-id').device_compliance_setting_states.by_device_compliance_setting_state_id('deviceComplianceSettingState-id').patch(body = request_body)
+result = await graph_client.device_management.device_compliance_policy_setting_state_summaries.by_device_compliance_policy_setting_state_summary_id('deviceCompliancePolicySettingStateSummary-id').device_compliance_setting_states.by_device_compliance_setting_state_id('deviceComplianceSettingState-id').patch(request_body)
 
 
 ```

@@ -6,13 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = BulkSetCloudPcReviewStatusPostRequestBody(
 	managed_device_ids = [
 		"30d0e128-de93-41dc-89ec-33d84bb662a0",
 		"7c82a3e3-9459-44e4-94d9-b92f93bf78dd",
-	]
+	],
 	review_status = CloudPcReviewStatus(
 		in_review = True,
 		user_access_level = CloudPcUserAccessLevel.Restricted,
@@ -20,7 +20,7 @@ request_body = BulkSetCloudPcReviewStatusPostRequestBody(
 	),
 )
 
-result = await graph_client.device_management.managed_devices.bulk_set_cloud_pc_review_status.post(body = request_body)
+result = await graph_client.device_management.managed_devices.bulk_set_cloud_pc_review_status.post(request_body)
 
 
 ```

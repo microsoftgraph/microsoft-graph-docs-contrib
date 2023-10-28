@@ -21,7 +21,7 @@ Send a new [chatMessage](../resources/chatmessage.md) in the specified [channel]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### Permissions for channel
 | Permission type                        | Permissions (from least to most privileged) |
@@ -35,11 +35,8 @@ One of the following permissions is required to call this API. To learn more, in
 > **Note**: Application permissions are *only* supported for [migration](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams). In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data imported.
 
 ### Permissions for chat
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | ChatMessage.Send, Chat.ReadWrite |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+<!-- { "blockType": "permissions", "name": "chatmessage_post_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/chatmessage-post-2-permissions.md)]
 
 ## HTTP request
 
