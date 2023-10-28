@@ -25,10 +25,9 @@ Inherits from [identity](identity.md).
 | displayName | String | The display name associated with the user. Inherited from **identity**. |
 | id | String | The unique identifier for the user. Inherited from **identity**. |
 
-
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
