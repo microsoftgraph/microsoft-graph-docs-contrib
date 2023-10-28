@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and an updated [item
 
 ### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -83,7 +83,7 @@ Content-Type: application/json
 
 ### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
