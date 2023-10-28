@@ -43,13 +43,10 @@ You can use the **OriginalStartTimeZone** and **OriginalEndTimeZone** properties
 find out the time zone used when the event was created.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Calendars.ReadBasic, Calendars.Read, Calendars.ReadWrite    |
-|Delegated (personal Microsoft account) | Calendars.ReadBasic, Calendars.Read, Calendars.ReadWrite    |
-|Application | Calendars.ReadBasic, Calendars.Read, Calendars.ReadWrite |
+<!-- { "blockType": "permissions", "name": "user_list_events" } -->
+[!INCLUDE [permissions-table](../includes/permissions/user-list-events-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -76,7 +73,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 | Prefer: outlook.body-content-type | string | The format of the **body** property to be returned in. Values can be "text" or "html". A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified. If the header is not specified, the **body** property is returned in HTML format. Optional. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
