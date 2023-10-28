@@ -27,7 +27,7 @@ Groups retention and compliance-related properties on an item into a single stru
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
 "blockType": "resource",
