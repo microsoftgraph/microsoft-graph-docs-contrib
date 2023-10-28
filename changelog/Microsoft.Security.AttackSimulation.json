@@ -557,7 +557,7 @@
       "Id": "f790cf16-283a-4044-bd17-a6a7c72bdf38",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2023-09-15T05:35:15.6688356Z",
+      "CreatedDateTime": "2023-10-27T05:35:15.6688356Z",
       "WorkloadArea": "Security",
       "SubArea": "Attack simulation and training"
     },
