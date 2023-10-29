@@ -1,6 +1,6 @@
 ---
 title: "reports: userReport"
-description: "Get a report of all users with network traffic that was captured by ZTNA."
+description: "Provide a report of all users with network traffic that was captured by Global Secure Access."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a report of all users with network traffic that was captured by ZTNA.
+Provide a report of all users with network traffic that was captured by Global Secure Access.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

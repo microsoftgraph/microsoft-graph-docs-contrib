@@ -36,7 +36,7 @@ GET /networkAccessRoot/logs/remoteNetworks
 ```
 
 ## Optional query parameters
-This method supports $filter, $Sort, $Top and $Select OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports $filter, $sort, $top and $select OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|

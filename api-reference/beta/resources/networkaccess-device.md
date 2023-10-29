@@ -1,6 +1,6 @@
 ---
 title: "device resource type"
-description: "unique device that was seen."
+description: "Unique Microsoft Entra ID device identified by Global Secure Access."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-unique device that was seen.
+Unique Microsoft Entra ID device identified by Global Secure Access.
 
 ## Properties
 |Property|Type|Description|

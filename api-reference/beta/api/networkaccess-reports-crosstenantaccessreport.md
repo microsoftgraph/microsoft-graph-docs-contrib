@@ -1,6 +1,6 @@
 ---
 title: "reports: crossTenantAccessReport"
-description: "Provide a report of all aggregate cross tenant access for the organization."
+description: "Provide a report that summarizes access across all tenants in the organization."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provide a report of all aggregate cross tenant access for the organization.
+Provide a report that summarizes access across all tenants in the organization.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

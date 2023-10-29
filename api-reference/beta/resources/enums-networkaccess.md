@@ -1,146 +1,127 @@
 ---
 title: "Enum values"
-description: "Microsoft Graph enumeration values"
+description: "Microsoft Graph enumeration values for Global Secure Access"
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
 doc_type: enumTypes
 ---
 
-# Microsoft Global Secure Access enumeration values
+# Microsoft Global Secure Access Enumeration Values
 
-### aggregationFilter values 
+These enumerations represent various aspects of Global Secure Access.
 
-|Member|
+## aggregationFilter Values
+
+| Member |
 |:---|
-|transactions|
-|users|
-|devices|
-|unknownFutureValue|
+| transactions |
+| users |
+| devices |
+| unknownFutureValue |
 
-### applicationProtocol values 
+## applicationProtocol Values
 
-
-
-|Member|
+| Member |
 |:---|
-|http|
-|https|
-|smb|
-|rdp|
-|ftp|
-|ssh|
-|sap|
-|unknownFutureValue|
+| http |
+| https |
+| smb |
+| rdp |
+| ftp |
+| ssh |
+| sap |
+| unknownFutureValue |
 
-### bgpRoutingHealthStatus values 
+## bgpRoutingHealthStatus Values
 
-
-
-|Member|
+| Member |
 |:---|
-|bgpDisconnected|
-|bgpConnected|
-|unknownFutureValue|
+| bgpDisconnected |
+| bgpConnected |
+| unknownFutureValue |
 
-### deviceCategory values 
+## deviceCategory Values
 
-
-
-|Member|
+| Member |
 |:---|
-|client|
-|branch|
-|unknownFutureValue|
+| client |
+| branch |
+| unknownFutureValue |
 
-### filteringPolicyAction values 
+## filteringPolicyAction Values
 
-
-
-|Member|
+| Member |
 |:---|
-|block|
-|allow|
-|unknownFutureValue|
+| block |
+| allow |
+| unknownFutureValue |
 
-### networkingProtocol values 
+## networkingProtocol Values
 
-
-
-|Member|
+| Member |
 |:---|
-|ip|
-|icmp|
-|igmp|
-|ggp|
-|ipv4|
-|tcp|
-|pup|
-|udp|
-|idp|
-|ipv6|
-|ipv6RoutingHeader|
-|ipv6FragmentHeader|
-|ipSecEncapsulatingSecurityPayload|
-|ipSecAuthenticationHeader|
-|icmpV6|
-|ipv6NoNextHeader|
-|ipv6DestinationOptions|
-|nd|
-|raw|
-|ipx|
-|spx|
-|spxII|
-|unknownFutureValue|
+| ip |
+| icmp |
+| igmp |
+| ggp |
+| ipv4 |
+| tcp |
+| pup |
+| udp |
+| idp |
+| ipv6 |
+| ipv6RoutingHeader |
+| ipv6FragmentHeader |
+| ipSecEncapsulatingSecurityPayload |
+| ipSecAuthenticationHeader |
+| icmpV6 |
+| ipv6NoNextHeader |
+| ipv6DestinationOptions |
+| nd |
+| raw |
+| ipx |
+| spx |
+| spxII |
+| unknownFutureValue |
 
-### remoteNetworkHealthAliveStatus values 
+## remoteNetworkHealthAliveStatus Values
 
-
-
-|Member|
+| Member |
 |:---|
-|alive|
-|unknownFutureValue|
+| alive |
+| unknownFutureValue |
 
-### trafficType values 
+## trafficType Values
 
-
-
-|Member|
+| Member |
 |:---|
-|internet|
-|private|
-|microsoft365|
-|all|
-|unknownFutureValue|
+| internet |
+| private |
+| microsoft365 |
+| all |
+| unknownFutureValue |
 
-### tunnelConnectivityHealthStatus values 
+## tunnelConnectivityHealthStatus Values
 
-
-
-|Member|
+| Member |
 |:---|
-|tunnelDisconnected|
-|tunnelConnected|
-|unknownFutureValue|
+| tunnelDisconnected |
+| tunnelConnected |
+| unknownFutureValue |
 
-### usageStatus values 
+## usageStatus Values
 
-
-
-|Member|
+| Member |
 |:---|
-|frequentlyUsed|
-|rarelyUsed|
-|unknownFutureValue|
+| frequentlyUsed |
+| rarelyUsed |
+| unknownFutureValue |
 
-### userType values 
+## userType Values
 
-
-
-|Member|
+| Member |
 |:---|
-|member|
-|guest|
-|unknownFutureValue|
-
+| member |
+| guest |
+| unknownFutureValue |

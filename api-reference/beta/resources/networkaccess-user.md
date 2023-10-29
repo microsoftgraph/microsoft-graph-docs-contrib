@@ -1,6 +1,6 @@
 ---
 title: "user resource type"
-description: "unique Azure Active Directoy user that was seen."
+description: "Unique Microsoft Entra ID user identified by Global Secure Access."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-unique Azure Active Directoy user that was seen.
+Unique Microsoft Entra ID user identified by Global Secure Access.
 
 ## Properties
 |Property|Type|Description|

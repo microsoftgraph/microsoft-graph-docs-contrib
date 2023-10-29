@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE ** Entity URI for microsoft.graph.networkaccess.filteringPolicyLink not found
+DELETE [microsoft.graph.networkaccess.filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) object.
 ```
 
 ## Request headers

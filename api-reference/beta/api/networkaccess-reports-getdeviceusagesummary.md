@@ -1,6 +1,6 @@
 ---
 title: "reports: getDeviceUsageSummary"
-description: "Get a summary on the onboarding and offboarding of the devices to the ZTNA client."
+description: "Provide a summary of device onboarding and offboarding within a specified timeframe, including the total number of devices, active devices, and inactive devices."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: global-secure-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a summary on the onboarding and offboarding of the devices to the ZTNA client.
+Provide a summary of device onboarding and offboarding within a specified timeframe, including the total number of devices, active devices, and inactive devices.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
