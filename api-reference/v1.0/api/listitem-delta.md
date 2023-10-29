@@ -22,7 +22,7 @@ To check for changes in the future, call `delta` again with the **@odata.deltaL
 The delta feed shows the latest state for each item, not each change. If an item were renamed twice, it only shows up once, with its latest name.
 The same item might appear more than once in a delta feed, for various reasons. You should use the last occurrence you see.
 
-Deleted items are returned with the [`deleted`](../resources/deleted.md) facet and @removed annotation with the reason of removal. Deleted indicates that the item is deleted and can't be restored.
+Deleted items are returned with the [deleted](../resources/deleted.md) facet and **@removed** annotation with the reason of removal. Deleted indicates that the item is deleted and can't be restored.
 Items with this property should be removed from your local state.
 
 > **Note:** You should only delete a folder locally if it's empty after syncing all the changes.
@@ -55,7 +55,7 @@ In the request URL, you can include the following optional query parameter.
 |:-------------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
 | token        | string | Optional. If unspecified, enumerates the current state of the hierarchy. If `latest`, returns an empty response with the latest delta token. If a previous delta token, returns a new state since that token.|
 
-This method supports the `$select`, `$expand`, and `$top` [OData query parameters](/graph/query-parameters) to customize the response.
+This method also supports the `$select`, `$expand`, and `$top` [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
@@ -78,7 +78,7 @@ In addition to a collection of **listItem** objects, the response also includes 
 | @odata.nextLink  | URL    | A URL to retrieve the next available page of changes if there are additional changes in the current set.                                        |
 | @odata.deltaLink | URL    | A URL returned instead of **@odata.nextLink** after all current changes have been returned. Used to read the next set of changes in the future. |
 
-In some cases, the service returns a `410 Gone` response code with an error response that contains one of the following error codes, and a `Location` header that contains a new `nextLink` that starts a fresh delta enumeration. This occurs when the service can't provide a list of changes for a given token (for example, if a client tries to reuse an old token after being disconnected for a long time, or if the server state has changed and a new token is required).
+In some cases, the service returns a `410 Gone` response code with an error response that contains one of the following error codes, and a `Location` header that contains a new `nextLink` that starts a fresh delta enumeration. This occurs when the service can't provide a list of changes for a given token; for example, if a client tries to reuse an old token after being disconnected for a long time, or if the server state has changed and a new token is required.
 
 After the full enumeration is completed, compare the returned items with your local state and follow the instructions based on the error type.
 
@@ -87,7 +87,7 @@ After the full enumeration is completed, compare the returned items with your lo
 | resyncChangesApplyDifferences  | Replace any local items with the versions from the server (including deletes) if you're sure that the service was up to date with your local changes when you last synchronized. Upload any local changes that the server doesn't know about. |
 | resyncChangesUploadDifferences | Upload any local items that the service didn't return, and upload any items that differ from the versions from the server. Keep both copies if you're not sure which one is more up-to-date.                                       |
 
-In addition to the resync errors and for more details about how errors are returned, see [Microsoft Graph error responses and resource types][error-response].
+In addition to the resync errors and for more details about how errors are returned, see [Microsoft Graph error responses and resource types](/graph/errors).
 
 ## Examples
 
@@ -289,8 +289,6 @@ Content-type: application/json
 ## See also
 [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview)
 [Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance)
-
-[error-response]: /graph/errors
 
 <!-- {
   "type": "#page.annotation",
