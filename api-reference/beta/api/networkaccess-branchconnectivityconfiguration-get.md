@@ -60,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET networkAccess/connectivity/branches/{branchSiteId}/connectivityConfiguration
+GET https://graph.microsoft.com/beta/networkAccess/connectivity/branches/{branchSiteId}/connectivityConfiguration
 ```
 
 
@@ -87,22 +87,22 @@ Content-Type: application/json
             "displayName": "CPE1",
             "localConfigurations": [
                 {
-                    "endpoint": "20.127.132.184",
+                    "endpoint": "20.*.*.*",
                     "asn": 65532,
-                    "bgpAddress": "192.168.1.253",
+                    "bgpAddress": "192.168.1.*",
                     "region": "eastUS"
                 },
                 {
-                    "endpoint": "20.127.132.185",
+                    "endpoint": "20.*.*.*",
                     "asn": 65532,
-                    "bgpAddress": "192.168.1.254",
+                    "bgpAddress": "192.168.1.*",
                     "region": "westUS"
                 }
             ],
             "peerConfiguration": {
-                "endpoint": "120.10.10.10",
+                "endpoint": "120.*.*.*",
                 "asn": 65530,
-                "bgpAddress": "10.20.20.20"
+                "bgpAddress": "10.*.*.*"
             }
         }
     ]

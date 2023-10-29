@@ -1,6 +1,6 @@
 ---
 title: "localConnectivityConfiguration resource type"
-description: "Specifies configuration of Microsoft’s end of the tunnel(s) for a device link."
+description: "Specifies the connectivity settings for endpoints of device links."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies configuration of Microsoft’s end of the tunnel(s) for a device link.
+Specifies the connectivity settings for endpoints of device links.
 
 ## Properties
 |Property|Type|Description|
@@ -21,7 +21,7 @@ Specifies configuration of Microsoft’s end of the tunnel(s) for a device link.
 |asn|Int32|Specifies ASN of one end of IPSec tunnel (local or peer).|
 |bgpAddress|String|Specifies BGP IPv4 address of one end of IPSec tunnel (local or peer).|
 |endpoint|String|Specifies public IPv4 address of one end of IPSec tunnel (local or peer).|
-|region|microsoft.graph.networkaccess.region| Specifies the region in which Microsoft’s end of the tunnel exists. Not applicable for Peer Configuration..The possible values are: `eastUS`, `eastUS2`, `westUS`, `westUS2`, `westUS3`, `centralUS`, `northCentralUS`, `southCentralUS`, `northEurope`, `westEurope`, `franceCentral`, `germanyWestCentral`, `switzerlandNorth`, `ukSouth`, `canadaEast`, `canadaCentral`, `southAfricaWest`, `southAfricaNorth`, `uaeNorth`.|
+|region|microsoft.graph.networkaccess.region| Specifies the region in which Microsoft’s end of the tunnel exists. Not applicable for Peer Configuration. The possible values are: `eastUS`, `eastUS2`, `westUS`, `westUS2`, `westUS3`, `centralUS`, `northCentralUS`, `southCentralUS`, `northEurope`, `westEurope`, `franceCentral`, `germanyWestCentral`, `switzerlandNorth`, `ukSouth`, `canadaEast`, `canadaCentral`, `southAfricaWest`, `southAfricaNorth`, `uaeNorth`,`unknownFutureValue`.|
 
 ## Relationships
 None.
