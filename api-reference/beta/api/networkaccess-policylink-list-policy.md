@@ -1,6 +1,6 @@
 ---
 title: "List policy"
-description: "Get the policy resources from the policy navigation property."
+description: "Get the filtering policy resources from the policy profile."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the policy resources from the policy navigation property.
+Get the filtering policy resources from the policy profile.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -48,7 +48,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [policy](../resources/policy.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [policy](../resources/networkaccess-filteringpolicylink.md) objects in the response body.
 
 ## Examples
 

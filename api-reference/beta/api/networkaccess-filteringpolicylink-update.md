@@ -1,6 +1,6 @@
 ---
 title: "Update filteringPolicyLink"
-description: "Update the properties of a microsoft.graph.networkaccess.filteringPolicyLink object."
+description: "Modify the properties of an existing microsoft.graph.networkaccess.filteringPolicyLink object to update its traffic rules."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [microsoft.graph.networkaccess.filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) object.
+Modify the properties of an existing [microsoft.graph.networkaccess.filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) object to update its traffic rules.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -26,7 +26,7 @@ Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkacc
 |[Update filteringPolicyLink](../api/networkaccess-filteringpolicylink-update.md)|[microsoft.graph.networkaccess.filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md)|Update the properties of a [microsoft.graph.networkaccess.filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) object.|
 |[Delete filteringPolicyLink](../api/networkaccess-filteringpolicylink-delete.md)|None|Delete a [microsoft.graph.networkaccess.filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) object.|
 |[List policy](../api/networkaccess-policylink-list-policy.md)|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md) collection|Get the policy resources from the policy navigation property.|
-|[Add policy](../api/networkaccess-filteringpolicylink-post-policy.md)|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md)|Add policy by posting to the policy collection.|
+|[Add policy](../api/networkaccess-filteringpolicy-post-policyrules.md)|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md)|Add policy by posting to the policy collection.|
 |[Remove policy](../api/networkaccess-filteringpolicylink-delete-policy.md)|None|Remove a [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md) object.|
 
 ## Properties
