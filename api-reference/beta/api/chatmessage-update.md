@@ -25,7 +25,7 @@ This method does not support federation. Only the user in the tenant who sent th
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### Permissions for channel
 
@@ -39,11 +39,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 ### Permissions for chat
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Chat.ReadWrite |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Chat.UpdatePolicyViolation.All, Chat.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "chatmessage_update_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/chatmessage-update-2-permissions.md)]
 
 ## HTTP request
 

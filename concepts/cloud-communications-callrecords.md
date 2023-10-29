@@ -29,5 +29,5 @@ Organizations that use Microsoft Teams to connect to the public switched telepho
 
 ## See also
 
-- [Call records permissions](./permissions-reference.md#call-records-permissions)
+- [Call records permissions](./permissions-reference.md)
 - [Teams API overview](teams-concept-overview.md)

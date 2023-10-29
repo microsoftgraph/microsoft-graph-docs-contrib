@@ -17,25 +17,17 @@ Retrieve the properties and relationships of a [unifiedRoleAssignment](../resour
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
-<a name='for-the-directory-azure-ad-provider'></a>
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### For the directory (Microsoft Entra ID) provider
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "unifiedroleassignment_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedroleassignment-get-permissions.md)]
 
 ### For the entitlement management provider
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All  |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "unifiedroleassignment_get_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedroleassignment-get-2-permissions.md)]
 
 ## HTTP request
 
