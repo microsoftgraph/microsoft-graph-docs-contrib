@@ -41,7 +41,7 @@ Inherits from [microsoft.graph.networkaccess.profile](../resources/networkaccess
 |Relationship|Type|Description|
 |:---|:---|:---|
 |conditionalAccessPolicies|[microsoft.graph.networkaccess.conditionalAccessPolicy](../resources/networkaccess-conditionalaccesspolicy.md) collection|Represents a set of associated policies defined to regulate access to resources or systems based on specific conditions.|
-|policies|[microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md) collection|collection|The collection of policies that are linked to this filtering profile. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md)|
+|policies|[microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md) collection|The collection of policies that are linked to this filtering profile. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md)|
 
 ## JSON representation
 The following JSON representation shows the resource type.
