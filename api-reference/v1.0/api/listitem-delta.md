@@ -93,7 +93,7 @@ In addition to the resync errors and for more details about how errors are retur
 
 ### Example 1: Initial request
 
-The following is an example of the initial request that shows how to call this API to establish your local state.
+The following example shows the initial request and how to call this API to establish your local state.
 
 #### Request
 
@@ -187,7 +187,7 @@ Content-type: application/json
 
 ### Example 2: Last page request
 
-The following example shows a request that shows the last page in a set and how to call this API to update your local state.
+The following example shows a request for accessing the last page in a set and how to call this API to update your local state.
 
 #### Request
 
