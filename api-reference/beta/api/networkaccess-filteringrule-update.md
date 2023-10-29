@@ -1,0 +1,92 @@
+---
+title: "Update filteringRule"
+description: "Update the properties of a microsoft.graph.networkaccess.filteringRule object."
+author: Moti-ba
+ms.localizationpriority: medium
+ms.prod: identity-and-access
+doc_type: apiPageType
+---
+
+# Update filteringRule
+Namespace: microsoft.graph.networkaccess
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Update the properties of a [microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md) object.
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|NetworkAccessPolicy.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
+[!INCLUDE [rbac-global-secure-access-apis-write](../includes/rbac-for-apis/rbac-global-secure-access-apis-write.md)]
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+PATCH /filteringRule
+```
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
+
+## Request body
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+
+
+|Property|Type|Description|
+|:---|:---|:---|
+|name|String|Display name Inherited from [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md). Required.|
+|ruleType|microsoft.graph.networkaccess.networkDestinationType|Destination Type. The possible values are: `fqdn`, `webCategory`. Required.|
+|destinations|[microsoft.graph.networkaccess.ruleDestination](../resources/networkaccess-ruledestination.md) collection|Destinations. Optional.|
+
+
+
+## Response
+
+If successful, this method returns a `204 No Content` response code.
+
+## Examples
+
+### Request
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "update_filteringrule"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/beta/networkaccess/filteringPolicies/bb1d249e-0691-477c-aae4-adfca179746a/policyRules/4619a550-7466-41ac-bdd9-b118bb6e004a
+
+Content-Type: application/json
+
+{"@odata.type":"#microsoft.graph.networkaccess.webCategoryFilteringRule","name":"Gambling and Storage cateogries","destinations":[{"@odata.type":"#microsoft.graph.networkaccess.webCategory","name":"Gambling"},{"@odata.type":"#microsoft.graph.networkaccess.webCategory","name":"WebRepositoryAndStorage"}]
+}
+```
+
+
+### Response
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+Content-Type: application/json
+
+```
+

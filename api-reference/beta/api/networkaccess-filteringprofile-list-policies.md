@@ -1,5 +1,5 @@
 ---
-title: "List policies"
+title: "List filtering policies"
 description: "Retrieve a list of filtering policy links associated with a specific filtering profile."
 author: Moti-ba
 ms.localizationpriority: medium

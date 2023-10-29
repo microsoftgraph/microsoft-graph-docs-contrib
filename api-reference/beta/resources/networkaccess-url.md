@@ -1,5 +1,5 @@
 ---
-title: "url resource type"
+title: "Global Secure Access url resource type"
 description: "Represents a Uniform Resource Locator (URL), which specifies the address of a web resource and includes the protocol, domain, path, and parameters."
 author: "Moti-ba"
 ms.localizationpriority: medium

@@ -1,5 +1,5 @@
 ---
-title: "device resource type"
+title: "Global Secure Access device resource type"
 description: "Unique Microsoft Entra ID device identified by Global Secure Access."
 author: Moti-ba
 ms.localizationpriority: medium

@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /filteringRule
+GET networkaccess/filteringPolicies/{filteringPoliciesId}/filteringRule
 ```
 
 ## Optional query parameters

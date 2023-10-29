@@ -1,5 +1,5 @@
 ---
-title: "user resource type"
+title: "Global Secure Access user resource type"
 description: "Unique Microsoft Entra ID user identified by Global Secure Access."
 author: Moti-ba
 ms.localizationpriority: medium

@@ -24,7 +24,7 @@ Inherits from [microsoft.graph.networkaccess.profile](../resources/networkaccess
 |[Get filteringProfile](../api/networkaccess-filteringprofile-get.md)|[microsoft.graph.networkaccess.filteringProfile](../resources/networkaccess-filteringprofile.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.filteringProfile](../resources/networkaccess-filteringprofile.md) object.|
 |[Update filteringProfile](../api/networkaccess-filteringprofile-update.md)|[microsoft.graph.networkaccess.filteringProfile](../resources/networkaccess-filteringprofile.md)|Update the properties of a [microsoft.graph.networkaccess.filteringProfile](../resources/networkaccess-filteringprofile.md) object.|
 |[List policies](../api/networkaccess-filteringprofile-list-policies.md)|[microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md) collection|Get the policyLink resources from the policies navigation property.|
-|[Create policyLink](../api/networkaccess-filteringprofile-post-policies.md)|[microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md)|Create a new policyLink object.|
+|[Create policyLink](../api/networkaccess-filteringprofile-post-policies.md)|[microsoft.graph.networkaccess.policyLink](../resources/networkaccess-filteringpolicy-post-policyrules.md)|Create a new policyLink object.|
 
 ## Properties
 |Property|Type|Description|
@@ -36,6 +36,7 @@ Inherits from [microsoft.graph.networkaccess.profile](../resources/networkaccess
 |name|String| short, symbolic label or identifier assigned to a specific profile. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md).|
 |priority|Int64|Determine its relative importance or order within a list.|
 |state|microsoft.graph.networkaccess.status|Current condition of a profile. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md).The possible values are: `enabled`, `disabled`.|
+
 
 ## Relationships
 |Relationship|Type|Description|

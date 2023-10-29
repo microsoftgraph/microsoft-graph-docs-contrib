@@ -1,5 +1,5 @@
 ---
-title: "List policies"
+title: "List forwarding policies"
 description: "Retrieve a list of forwarding policy links associated with a specific forwarding profile."
 author: Moti-ba
 ms.localizationpriority: medium

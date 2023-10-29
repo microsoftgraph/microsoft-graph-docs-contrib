@@ -23,22 +23,21 @@ Inherits from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resour
 |:---|:---|:---|
 |[List remoteNetworkHealthStatusEvents](../api/networkaccess-remotenetworkhealthstatusevent-list.md)|[microsoft.graph.networkaccess.remoteNetworkHealthStatusEvent](../resources/networkaccess-remotenetworkhealthstatusevent.md) collection|Get a list of the [microsoft.graph.networkaccess.remoteNetworkHealthStatusEvent](../resources/networkaccess-remotenetworkhealthstatusevent.md) objects and their properties.|
 |[Get remoteNetworkHealthStatusEvent](../api/networkaccess-remotenetworkhealthstatusevent-get.md)|[microsoft.graph.networkaccess.remoteNetworkHealthStatusEvent](../resources/networkaccess-remotenetworkhealthstatusevent.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.remoteNetworkHealthStatusEvent](../resources/networkaccess-remotenetworkhealthstatusevent.md) object.|
-|[Update remoteNetworkHealthStatusEvent](../api/networkaccess-remotenetworkhealthstatusevent-update.md)|[microsoft.graph.networkaccess.remoteNetworkHealthStatusEvent](../resources/networkaccess-remotenetworkhealthstatusevent.md)|Update the properties of a [microsoft.graph.networkaccess.remoteNetworkHealthStatusEvent](../resources/networkaccess-remotenetworkhealthstatusevent.md) object.|
-|[Delete remoteNetworkHealthStatusEvent](../api/networkaccess-remotenetworkhealthstatusevent-delete.md)|None|Delete a [microsoft.graph.networkaccess.remoteNetworkHealthStatusEvent](../resources/networkaccess-remotenetworkhealthstatusevent.md) object.|
+
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|bgpRoutesAdvertisedCount|Int32|**TODO: Add Description** Inherited from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md).|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md).|
-|description|String|**TODO: Add Description** Inherited from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md).|
-|destinationIp|String|**TODO: Add Description** Inherited from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md).|
-|id|String|**TODO: Add Description** Inherited from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md).|
-|receivedBytes|Int64|**TODO: Add Description**|
-|remoteNetworkId|String|**TODO: Add Description** Inherited from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md).|
-|sentBytes|Int64|**TODO: Add Description**|
-|sourceIp|String|**TODO: Add Description** Inherited from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md).|
-|status|microsoft.graph.networkaccess.remoteNetworkHealthAliveStatus|**TODO: Add Description**.The possible values are: `alive`, `unknownFutureValue`.|
+|bgpRoutesAdvertisedCount|Int32|Count of BGP routes advertised through tunnel. Inherited from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md).|
+|createdDateTime|DateTimeOffset|Time of original event generation in UTC Client time generated. Inherited from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md).|
+|description|String|Description and summary of the event.  Inherited from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md).|
+|destinationIp|String|The IP address of the destination. Inherited from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md).|
+|id|String|A unique identifier for each remoteNetworkHealthEvent. Inherited from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md).|
+|receivedBytes|Int64|The number of bytes sent from the destination to the source.|
+|remoteNetworkId|String|A unique identifier for each remoteNetwork site. Inherited from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md).|
+|sentBytes|Int64|The number of bytes sent from the source to the destination for the connection or session.|
+|sourceIp|String|The public IP address. Inherited from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md).|
+|status|microsoft.graph.networkaccess.remoteNetworkHealthAliveStatus|Alive status. The possible values are: `alive`, `unknownFutureValue`.|
 
 ## Relationships
 None.
