@@ -7,7 +7,7 @@ ms.prod: identity-and-access
 doc_type: resourcePageType
 ---
 
-# user resource type
+# Global Secure Access user resource type
 
 Namespace: microsoft.graph.networkaccess
 

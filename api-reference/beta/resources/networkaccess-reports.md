@@ -18,8 +18,6 @@ Represents all the reports components in the Global Secure Access services.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List reports](../api/networkaccess-networkaccessroot-list-reports.md)|[microsoft.graph.networkaccess.reports](../resources/networkaccess-reports.md) collection|Get a list of the [microsoft.graph.networkaccess.reports](../resources/networkaccess-reports.md) objects and their properties.|
-|[Get reports](../api/networkaccess-reports-get.md)|[microsoft.graph.networkaccess.reports](../resources/networkaccess-reports.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.reports](../resources/networkaccess-reports.md) object.|
 |[transactionSummaries](../api/networkaccess-reports-transactionsummaries.md)|[microsoft.graph.networkaccess.transactionSummary](../resources/networkaccess-transactionsummary.md) collection|network transactions summary.|
 |[entitiesSummaries](../api/networkaccess-reports-entitiessummaries.md)|[microsoft.graph.networkaccess.entitiesSummary](../resources/networkaccess-entitiessummary.md) collection|unique connectivity entities summary.|
 |[getCrossTenantSummary](../api/networkaccess-reports-getcrosstenantsummary.md)|[microsoft.graph.networkaccess.crossTenantSummary](../resources/networkaccess-crosstenantsummary.md)|cross-tenant access summary.|

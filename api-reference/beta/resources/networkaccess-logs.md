@@ -18,8 +18,6 @@ Global Secure Access Network Logs.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List logs](../api/networkaccess-networkaccessroot-list-logs.md)|[microsoft.graph.networkaccess.logs](../resources/networkaccess-logs.md) collection|Get a list of the [microsoft.graph.networkaccess.logs](../resources/networkaccess-logs.md) objects and their properties.|
-|[Get logs](../api/networkaccess-logs-get.md)|[microsoft.graph.networkaccess.logs](../resources/networkaccess-logs.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.logs](../resources/networkaccess-logs.md) object.|
 |[List remoteNetworks](../api/networkaccess-logs-list-remotenetworks.md)|[microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md) collection|Get the remoteNetworkHealthEvent resources from the remoteNetworks navigation property.|
 |[List traffic](../api/networkaccess-logs-list-traffic.md)|[microsoft.graph.networkaccess.networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md) collection|Get the networkAccessTraffic resources from the traffic navigation property.|
 

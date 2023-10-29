@@ -22,7 +22,7 @@ Inherits from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resour
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List remoteNetworkHealthStatusEvents](../api/networkaccess-remotenetworkhealthstatusevent-list.md)|[microsoft.graph.networkaccess.remoteNetworkHealthStatusEvent](../resources/networkaccess-remotenetworkhealthstatusevent.md) collection|Get a list of the [microsoft.graph.networkaccess.remoteNetworkHealthStatusEvent](../resources/networkaccess-remotenetworkhealthstatusevent.md) objects and their properties.|
-|[Get remoteNetworkHealthStatusEvent](../api/networkaccess-remotenetworkhealthstatusevent-get.md)|[microsoft.graph.networkaccess.remoteNetworkHealthStatusEvent](../resources/networkaccess-remotenetworkhealthstatusevent.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.remoteNetworkHealthStatusEvent](../resources/networkaccess-remotenetworkhealthstatusevent.md) object.|
+
 
 
 ## Properties
