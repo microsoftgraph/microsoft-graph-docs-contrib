@@ -1,6 +1,6 @@
 ---
 title: "filteringProfile resource type"
-description: "FilteringProfile associates Network Access policies with Azure AD Conditional Access policies, enabling user-context conditions by adding filteringPolicies to the profile."
+description: "FilteringProfile associates Network Access policies with Entra ID Conditional Access policies, enabling user-context conditions by adding filteringPolicies to the profile."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-FilteringProfile associates Network Access policies with Azure AD Conditional Access policies, enabling user-context conditions by adding filteringPolicies to the profile.
+FilteringProfile associates Network Access policies with Entra ID Conditional Access policies, enabling user-context conditions by adding filteringPolicies to the profile.
 
 Inherits from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md).
 
@@ -24,7 +24,7 @@ Inherits from [microsoft.graph.networkaccess.profile](../resources/networkaccess
 |[Get filteringProfile](../api/networkaccess-filteringprofile-get.md)|[microsoft.graph.networkaccess.filteringProfile](../resources/networkaccess-filteringprofile.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.filteringProfile](../resources/networkaccess-filteringprofile.md) object.|
 |[Update filteringProfile](../api/networkaccess-filteringprofile-update.md)|[microsoft.graph.networkaccess.filteringProfile](../resources/networkaccess-filteringprofile.md)|Update the properties of a [microsoft.graph.networkaccess.filteringProfile](../resources/networkaccess-filteringprofile.md) object.|
 |[List policies](../api/networkaccess-filteringprofile-list-policies.md)|[microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md) collection|Get the policyLink resources from the policies navigation property.|
-|[Create policyLink](../api/networkaccess-filteringpolicy-post-policyrules.md)|[microsoft.graph.networkaccess.policyLink](../resources/networkaccess-filteringpolicy-post-policyrules.md)|Create a new policyLink object.|
+|[Create policyLink](../api/networkaccess-filteringpolicy-post-policyrules.md)|[microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md)|Create a new policyLink object.|
 
 ## Properties
 |Property|Type|Description|
