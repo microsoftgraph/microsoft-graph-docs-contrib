@@ -21,7 +21,7 @@ Your app should continue calling with the **@odata.nextLink** until you see an *
 After you have received all the changes, you might apply them to your local state.
 To check for changes in the future, call `delta` again with the **@odata.deltaLink** from the previous response.
 
-The delta feed shows the latest state for each item, not each change. If an item were renamed twice, it will only show up once, with its latest name.
+The delta feed shows the latest state for each item, not each change. If an item were renamed twice, it only shows up once, with its latest name.
 The same item might appear more than once in a delta feed, for various reasons. You should use the last occurrence you see.
 
 Deleted items are returned with the [deleted](../resources/deleted.md) facet. Deleted indicates that the item is deleted and can't be restored.
