@@ -52,7 +52,7 @@ In the request URL, you can include the following optional query parameter.
 
 | Parameter    | Type   | Description                                                                                                                          |
 |:-------------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| token        | string | Optional. If unspecified, enumerates the current state of the hierarchy. If `latest`, returns an empty response with the latest delta token. If a previous delta token, returns a new state since that token.|
+| token        | String | If unspecified, enumerates the current state of the hierarchy. If `latest`, returns an empty response with the latest delta token. If a previous delta token, returns a new state since that token.|
 
 This method also supports the `$select`, `$expand`, and `$top` [OData query parameters](/graph/query-parameters) to customize the response.
 
