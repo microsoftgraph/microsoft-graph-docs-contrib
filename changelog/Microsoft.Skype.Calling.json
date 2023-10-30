@@ -3494,6 +3494,58 @@
       "CreatedDateTime": "2023-10-04T15:37:11Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "64af0f38-7db6-418a-8dc9-b64daef132a6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "removedState",
+          "ChangeType": "Addition",
+          "Description": "Added the [removedState](https://learn.microsoft.com/en-us/graph/api/resources/removedState?view=graph-rest-1.0) resource type.",
+          "Target": "removedState"
+        },
+        {
+          "Id": "64af0f38-7db6-418a-8dc9-b64daef132a6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deltaParticipants",
+          "ChangeType": "Addition",
+          "Description": "Added the [deltaParticipants](https://learn.microsoft.com/en-us/graph/api/resources/deltaParticipants?view=graph-rest-1.0) resource",
+          "Target": "deltaParticipants"
+        }
+      ],
+      "Id": "64af0f38-7db6-418a-8dc9-b64daef132a6",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-10-30T14:33:56.7629676Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b524d566-dbdc-4646-815f-7f56e9abab69",
+          "ApiChange": "Property",
+          "ChangedApiName": "removedState",
+          "ChangeType": "Addition",
+          "Description": "Added the `removedState` property to the [participant](https://learn.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-1.0) resource.",
+          "Target": "participant"
+        },
+        {
+          "Id": "b524d566-dbdc-4646-815f-7f56e9abab69",
+          "ApiChange": "Property",
+          "ChangedApiName": "rosterSequenceNumber",
+          "ChangeType": "Addition",
+          "Description": "Added the `rosterSequenceNumber` property to the [participant](https://learn.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-1.0) resource.",
+          "Target": "participant"
+        }
+      ],
+      "Id": "b524d566-dbdc-4646-815f-7f56e9abab69",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-10-30T14:33:56.7633181Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
     }
   ]
 }
