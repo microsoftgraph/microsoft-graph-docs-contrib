@@ -15,13 +15,10 @@ Create a new [delegatedAdminRelationship](../resources/delegatedadminrelationshi
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)| DelegatedAdminRelationship.ReadWrite.All |
-|Delegated (personal Microsoft account)| Not supported. |
-|Application| Not supported. |
+<!-- { "blockType": "permissions", "name": "tenantrelationship_post_delegatedadminrelationships" } -->
+[!INCLUDE [permissions-table](../includes/permissions/tenantrelationship-post-delegatedadminrelationships-permissions.md)]
 
 ## HTTP request
 
@@ -47,6 +44,7 @@ You can specify the following properties when creating a **delegatedAdminRelatio
 |Property|Type|Description|
 |:---|:---|:---|
 |accessDetails|[microsoft.graph.delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The identifiers of the administrative roles that the partner requests or has access to in the customer tenant. Required.|
+|autoExtendDuration|Duration| The duration by which the validity of the relationship is automatically extended, denoted in ISO 8601 format. Supported values are: `P0D`, `PT0S`, `P180D`. The default value is `PT0S`. `PT0S` indicates that the relationship expires when the **endDateTime** is reached and it isn't automatically extended. Optional.|
 |customer|[microsoft.graph.delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|The display name and unique identifier of the customer of the relationship. Optional.|
 |displayName|String|The display name of the relationship used for ease of identification. Must be unique across *all* delegated admin relationships of the partner. Required.|
 |duration|Duration|The duration of the relationship in ISO 8601 format. Must be a value between `P1D` and `P2Y` inclusive. Required.|
@@ -86,7 +84,8 @@ Content-Type: application/json
         "roleDefinitionId": "3a2c62db-5318-420d-8d74-23affee5d9d5"
       }
     ]
-  }
+  },
+  "autoExtendDuration": "P180D"
 }
 ```
 
@@ -159,6 +158,7 @@ Location: https://graph.microsoft.com/v1.0/tenantRelationships/delegatedAdminRel
     ]
   },
   "status": "created",
+  "autoExtendDuration": "P180D",
   "createdDateTime": "2022-02-10T11:24:42.3148266Z",
   "lastModifiedDateTime": "2022-02-10T11:24:42.3148266Z",
   "activatedDateTime": "",

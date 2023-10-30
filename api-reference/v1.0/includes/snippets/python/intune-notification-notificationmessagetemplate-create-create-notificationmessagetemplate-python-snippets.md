@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = NotificationMessageTemplate(
 	odata_type = "#microsoft.graph.notificationMessageTemplate",
@@ -15,10 +15,10 @@ request_body = NotificationMessageTemplate(
 	branding_options = NotificationTemplateBrandingOptions.IncludeCompanyLogo,
 	role_scope_tag_ids = [
 		"Role Scope Tag Ids value",
-	]
+	],
 )
 
-result = await graph_client.device_management.notification_message_templates.post(body = request_body)
+result = await graph_client.device_management.notification_message_templates.post(request_body)
 
 
 ```

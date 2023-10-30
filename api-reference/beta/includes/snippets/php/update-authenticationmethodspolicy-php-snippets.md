@@ -13,6 +13,7 @@ $requestBody = new AuthenticationMethodsPolicy();
 $registrationEnforcement = new RegistrationEnforcement();
 $registrationEnforcementAuthenticationMethodsRegistrationCampaign = new AuthenticationMethodsRegistrationCampaign();
 $registrationEnforcementAuthenticationMethodsRegistrationCampaign->setSnoozeDurationInDays(1);
+$registrationEnforcementAuthenticationMethodsRegistrationCampaign->setEnforceRegistrationAfterAllowedSnoozes(true);
 $registrationEnforcementAuthenticationMethodsRegistrationCampaign->setState(new AdvancedConfigState('enabled'));
 $registrationEnforcementAuthenticationMethodsRegistrationCampaign->setExcludeTargets([	]);
 $includeTargetsAuthenticationMethodsRegistrationCampaignIncludeTarget1 = new AuthenticationMethodsRegistrationCampaignIncludeTarget();

@@ -53,7 +53,7 @@ This method does **not** supports [OData Query Parameters](/graph/query-paramete
 | Authorization  | Bearer {code}|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and [governanceRoleAssignment](../resources/governanceroleassignment.md) object in the response body.
 ## Example

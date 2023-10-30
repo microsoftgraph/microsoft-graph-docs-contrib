@@ -48,7 +48,7 @@ You can browse people who are related to the signed-in user or to some other use
 
 ### Fuzzy searches based on people criteria
 
-The people API lets you search for people relevant to the signed-in user, provided that your app has got permissions by that user. (Read more on [people permissions](permissions-reference.md#people-permissions).)
+The people API lets you search for people relevant to the signed-in user, provided that your app has got permissions by that user. (Read more on [people permissions](permissions-reference.md).)
 
 Fuzzy searches return results based on an exact match and also on inferences about the intent of the search. To illustrate this, the following example returns **person** objects relevant to the signed-in user whose name, _or email address_, contains a word that starts with 'j'.
 

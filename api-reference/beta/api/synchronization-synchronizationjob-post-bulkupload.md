@@ -20,13 +20,10 @@ Perform a new bulk upload using the synchronization job. Use this API endpoint t
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|SynchronizationData-User.Upload|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|SynchronizationData-User.Upload|
+<!-- { "blockType": "permissions", "name": "synchronization_synchronizationjob_post_bulkupload" } -->
+[!INCLUDE [permissions-table](../includes/permissions/synchronization-synchronizationjob-post-bulkupload-permissions.md)]
 
 > [!NOTE]
 > This API is primarily meant for use within an application or service responsible for processing authoritative identity data and uploading it to Microsoft Entra ID. Tenant admins can either [configure a service principal or managed identity](/azure/active-directory/app-provisioning/inbound-provisioning-api-grant-access) to grant permission to perform the upload. There is no separate user-assignable Microsoft Entra built-in directory role for this API. Outside of applications that have acquired `SynchronizationData-User.Upload` permission with admin consent, only admin users with *Global Administrator* role can invoke the API.

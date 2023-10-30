@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = RedirectPostRequestBody(
 	destination_printer_id = "9a3b3956-ce5b-4d06-a605-5b0bd3e9ddea",
@@ -17,7 +17,7 @@ request_body = RedirectPostRequestBody(
 				start = 1,
 				end = 1,
 			),
-		]
+		],
 		quality = PrintQuality.Medium,
 		dpi = 600,
 		orientation = PrintOrientation.Landscape,
@@ -43,7 +43,7 @@ request_body = RedirectPostRequestBody(
 	),
 )
 
-result = await graph_client.print.printers.by_printer_id('printer-id').jobs.by_job_id('printJob-id').redirect.post(body = request_body)
+result = await graph_client.print.printers.by_printer_id('printer-id').jobs.by_print_job_id('printJob-id').redirect.post(request_body)
 
 
 ```
