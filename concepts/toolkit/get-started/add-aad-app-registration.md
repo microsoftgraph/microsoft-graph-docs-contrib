@@ -19,9 +19,7 @@ To create the app in Azure Active Directory:
 1. Expand the **Identity** menu > expand **Applications** > select **App registrations** > select the **New registration** button.
 1. Enter the name for your app; for example, `My M365 app`.
 1. For the type of [supported account types](/azure/active-directory/develop/single-and-multi-tenant-apps#who-can-sign-in-to-your-app), select **Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)**.
-1. For the **Redirect URI** field:
-    - If using `Msal2Provider` or `TeamsMsal2Provider`, select **Single Page Application (SPA)**, and in the URL field, enter your redirect URL (and/or `http://localhost` if testing locally). 
-    - If using `MsalProvider` or `TeamsProvider`, select **Web**, and in the URL field, enter your redirect URL (and/or `http://localhost` if testing locally). 
+1. For the **Redirect URI** field, select **Single Page Application (SPA)**, and in the URL field, enter your redirect URL (and/or `http://localhost` if testing locally).
 1. Confirm changes by selecting the **Register** button.
 
 ## Enable OAuth implicit flow (only for MsalProvider and TeamsProvider)
