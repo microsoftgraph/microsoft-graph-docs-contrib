@@ -1,18 +1,18 @@
 ---
-title: "Remove policy"
-description: "Remove a microsoft.graph.networkaccess.policy object."
+title: "Delete filtering policy"
+description: "Delete a microsoft.graph.networkaccess.policy object."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
 doc_type: apiPageType
 ---
 
-# Remove policy
+# Delete filtering policy
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove a [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md) object.
+Delete a [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,7 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/networkaccess/filteringPolicies/{policyId}
+DELETE networkaccess/filteringPolicies/{filteringPoliciesId}
+
 
 ```
 
@@ -58,7 +59,8 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/networkAccess/filteringPolicies/{policyId}
+DELETE https://graph.microsoft.com/beta/networkaccess/filteringPolicies/d0187e08-04cc-41b4-9a47-dd640e804280
+
 ```
 
 

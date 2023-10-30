@@ -1,5 +1,5 @@
 ---
-title: "Get filteringPolicyLink"
+title: "Get filtering Policy Link"
 description: "Read the properties and relationships of a microsoft.graph.networkaccess.filteringPolicyLink object."
 author: Moti-ba
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: identity-and-access
 doc_type: apiPageType
 ---
 
-# Get filteringPolicyLink
+# Get filtering Policy Link
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -32,11 +32,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Entity URI for microsoft.graph.networkaccess.filteringPolicyLink not found
+GET /networkaccess/filteringPolicies/{filteringPoliciesId}
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports $expand OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -60,7 +60,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/$metadata#networkAccess/filteringProfiles{filteringProfileid}/policies
+GET https://graph.microsoft.com/beta/networkaccess/filteringPolicies/bb4e13cd-656b-499a-929f-d16bf16951ba?$expand=policyRules
 ```
 
 

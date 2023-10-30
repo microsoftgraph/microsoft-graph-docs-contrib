@@ -50,15 +50,17 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.networkaccess.bgpRoutingHealthEvent",
-  "id": "String (identifier)",
-  "remoteNetworkId": "String",
-  "createdDateTime": "String (timestamp)",
-  "sourceIp": "String",
-  "destinationIp": "String",
-  "description": "String",
-  "bgpRoutesAdvertisedCount": "Integer",
-  "status": "String"
+      "@odata.type": "#microsoft.graph.networkAccess.remoteNetworkHealthStatusEvent",
+      "id": "69be33d9-8609-4104-b256-2e7ff1579698",
+      "remoteNetworkId": "a2b07922-f62b-4679-84f5-67f11e9fd41b",
+      "createdDateTime": "2023-09-07T14:47:33.8346145Z",
+      "status": "alive",
+      "sourceIp": "20.237.10.151",
+      "destinationIp": "40.122.117.0",
+      "sentBytes": 3524,
+      "receivedBytes": 2698,
+      "description": "",
+      "bgpRoutesAdvertisedCount": 25
 }
 ```
 

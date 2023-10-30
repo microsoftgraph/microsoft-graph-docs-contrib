@@ -12213,6 +12213,68 @@ items:
                             href: api/networkaccess-policyrule-get.md
                           - name: Update
                             href: api/networkaccess-policyrule-update.md
+              - name: Filtering Traffic
+                items:
+                  - name: Filtering Profile
+                    href: resources/networkaccess-filteringprofile.md
+                    items:
+                      - name: List
+                        href: api/networkaccess-filteringprofile-list.md
+                      - name: Get
+                        href: api/networkaccess-filteringprofile-get.md
+                      - name: Update
+                        href: api/networkaccess-filteringprofile-update.md
+                      - name: List policies
+                        href: api/networkaccess-filteringprofile-list-policies.md
+                      - name: Create policyLink
+                        href: api/networkaccess-filteringpolicy-post-policyrules.md
+                  - name: Filtering Policy
+                    href: /resources/networkaccess-filteringpolicy.md
+                    items:
+                      - name: List
+                        href: api/networkaccess-networkaccessroot-list-filteringpolicies.md
+                      - name: Create
+                        href: api/networkaccess-filteringpolicy-post-policyrules.md 
+                      - name: Get
+                        href: api/api/networkaccess-filteringpolicy-get.md
+                      - name: Update
+                        href: api/networkaccess-filteringprofile-update.md
+                      - name: Delete
+                        href: api/networkaccess-filteringprofile-delete-policies.md
+                      - name: List policyRules
+                        href: api/networkaccess-policy-list-policyrules.md
+                      - name: Create policyRule
+                        href: api/networkaccess-filteringpolicy-post-policyrules.md
+                  - name: Filtering Policy Link
+                    href: /resources/networkaccess-filteringpolicylink.md
+                    items:
+                      - name: List
+                        href: api/networkaccess-filteringpolicylink-list.md
+                      - name: Get
+                        href: api/networkaccess-filteringpolicylink-get.md 
+                      - name: Update
+                        href: api/api/networkaccess-filteringpolicylink-update.md
+                      - name: Delete
+                        href: api/networkaccess-filteringpolicylink-delete.md
+                      - name: List policy
+                        href: api/networkaccess-policylink-list-policy.md 
+                      - name: Add policy
+                        href: api/networkaccess-filteringpolicy-post-policyrules.md
+                      - name: Remove policy
+                        href: api/networkaccess-filteringpolicylink-delete-policy.md
+                  - name: Filtering Rule
+                    href: /resources/networkaccess-filteringrule.md
+                    items:
+                      - name: List
+                        href: api/networkaccess-filteringrule-list.md
+                      - name: Get
+                        href: api/networkaccess-filteringrule-get.md 
+                      - name: Create
+                        href: api/networkaccess-filteringrule-post
+                      - name: Update
+                        href: api/networkaccess-filteringrule-update.md
+                      - name: Delete
+                        href: api/networkaccess-filteringrule-delete.md                      
               - name: Branch site
                 href: resources/networkaccess-branchsite.md
                 items:
@@ -12268,10 +12330,18 @@ items:
                     href: api/networkaccess-reports-entitiessummaries.md
                   - name: Get cross-tenant access summary
                     href: api/networkaccess-reports-getcrosstenantsummary.md
+                  - name: Get cross-tenant access report
+                    href: api/networkaccess-reports-crosstenantaccessreport.md
                   - name: Get destination summary
                     href: api/networkaccess-reports-getdestinationsummaries.md
+                  - name: Get destination report
+                    href: api/networkaccess-reports-destinationreport.md
                   - name: Get device usage summary
                     href: api/networkaccess-reports-getdeviceusagesummary.md
+                  - name: Get device usage report
+                    href: api/networkaccess-reports-devicereport.md  
+                  - name: Get user usage report
+                    href: api/networkaccess-reports-userreport.md    
                   - name: Get transaction summaries
                     href: api/networkaccess-reports-transactionsummaries.md
           - name: Governance

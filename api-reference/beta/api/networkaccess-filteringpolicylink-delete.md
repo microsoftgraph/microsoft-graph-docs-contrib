@@ -1,5 +1,5 @@
 ---
-title: "Delete filteringPolicyLink"
+title: "Delete filtering Policy Link"
 description: "Delete a microsoft.graph.networkaccess.filteringPolicyLink object."
 author: Moti-ba
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: identity-and-access
 doc_type: apiPageType
 ---
 
-# Delete filteringPolicyLink
+# Delete filtering Policy Link
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE [microsoft.graph.networkaccess.filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) object.
+DELETE /networkaccess/FilteringProfiles/{FilteringProfilesId}/policies/{policyId}
 ```
 
 ## Request headers

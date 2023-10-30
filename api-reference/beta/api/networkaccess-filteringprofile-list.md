@@ -36,7 +36,7 @@ GET /networkAccess/filteringProfiles
 ```
 
 ## Optional query parameters
-This method does not supports OData query parameters.
+This method supports $expand OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -78,19 +78,17 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.networkaccess.filteringProfile",
-      "id": "da1b7ff3-fbc1-f307-4ac7-f6aa4956055e",
-      "name": "String",
-      "description": "String",
-      "state": "String",
-      "version": "String",
-      "lastModifiedDateTime": "String (timestamp)",
-      "priority": "Integer",
-      "createdDateTime": "String (timestamp)"
-    }
-  ]
+	"priority": 100,
+    "createdDateTime": "2023-10-29T11:35:09Z",
+    "id": "37e746aa-4473-4aee-bd3a-1838d67b6311",
+    "name": "Block Social",
+    "description": null,
+    "state": "enabled",
+    "version": "1.0.0",
+    "lastModifiedDateTime": "2023-10-30T08:53:42Z",
+    "policies@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/filteringProfiles('37e746aa-4473-4aee-bd3a-1838d67b6311')/policies(policy())",
+    "policies": [],
+    "conditionalAccessPolicies": []
 }
 ```
 

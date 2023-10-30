@@ -58,7 +58,7 @@ PATCH /networkAccess/filteringProfiles/{filteringProfileId}
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.networkaccess.filteringProfile](../resources/networkaccess-filteringprofile.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -73,14 +73,7 @@ The following example shows a request.
 PATCH https://graph.microsoft.com/beta/networkAccess/filteringProfiles/{filteringProfileId}
 Content-Type: application/json
 
-{
-  "@odata.type": "#microsoft.graph.networkaccess.filteringProfile",
-  "name": "String",
-  "description": "String",
-  "state": "String",
-  "version": "String",
-  "priority": "Integer"
-}
+{"state":"disabled"}
 ```
 
 
@@ -93,19 +86,6 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.networkaccess.filteringProfile",
-  "id": "da1b7ff3-fbc1-f307-4ac7-f6aa4956055e",
-  "name": "String",
-  "description": "String",
-  "state": "String",
-  "version": "String",
-  "lastModifiedDateTime": "String (timestamp)",
-  "priority": "Integer",
-  "createdDateTime": "String (timestamp)"
-}
+HTTP/1.1 204 No Content
 ```
 
