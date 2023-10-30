@@ -15,6 +15,12 @@ Namespace: microsoft.graph
 
 Represents a unit of non-work in a [schedule](../resources/schedule.md).
 
+When you replace a shift, the **sharedTimeOff** property is visible to all team members, but the **draftTimeOff** property is only visible to team owners, and would need to be shared with team members for visibility. Sharing changes to the **draftTimeOff** property copies those changes to the **sharedTimeOff** property.
+
+You can't update the **sharedTimeOff** property if you're updating the **draftTimeOff** property. The **draftTimeOff** property must be empty in order to update the **sharedTimeOff** property.
+
+Updates to the **sharedTimeOff** property send notifications to users in the Teams client. To streamline the user experience, update the **draftTimeOff** property, and then use the [schedule share](/graph/api/schedule-share) API to publish all pending changes within a date range as a single action.
+
 ## Methods
 
 | Method                                     | Return type                      | Description                                           |
@@ -36,12 +42,6 @@ Represents a unit of non-work in a [schedule](../resources/schedule.md).
 | lastModifiedDateTime | DateTimeOffset                | The time stamp at which this **timeOff** was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.  |
 | sharedTimeOff        | [timeOffItem](timeoffitem.md) | The shared version of this **timeOff** that is viewable by both employees and managers. Required.                                                                                                                                        |
 | userId               | String                        | ID of the user assigned to the **timeOff**. Required.                                                                                                                                                                                    |
-
-When you replace a shift, the `sharedTimeOff` property is visible to all team members, but the `draftTimeOff` property is only visible to team owners, and would need to be shared with team members for visibility. Sharing changes to the `draftTimeOff` property copies those changes to the `sharedTimeOff` property.
-
-You can't update the `sharedTimeOff` property if you're updating the `draftTimeOff` property. The `draftTimeOff` property must be empty in order to update the `sharedTimeOff` property.
-
-Updates to the `sharedTimeOff` property send notifications to users in the Teams client. To streamline the user experience, update the `draftTimeOff` property, and then use the [schedule share](/graph/api/schedule-share) API to publish all pending changes within a date range as a single action.
 
 ## JSON representation
 
