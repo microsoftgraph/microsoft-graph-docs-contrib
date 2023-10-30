@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH ** Entity URI for microsoft.graph.networkaccess.filteringPolicyLink not found
+PATCH networkAccess/filteringProfiles({filteringProfile_id})/policies({Policy_link_id})
 ```
 
 ## Request headers
@@ -71,8 +71,8 @@ PATCH https://graph.microsoft.com/beta/networkaccess/filteringProfiles/9020f79d-
 Content-Type: application/json
 
 {
-  @odata.type:"#microsoft.graph.networkaccess.filteringPolicyLink"
-  state:"disabled"
+  "@odata.type": "#microsoft.graph.networkaccess.filteringPolicyLink",
+  "state": "disabled"
 }
 ```
 

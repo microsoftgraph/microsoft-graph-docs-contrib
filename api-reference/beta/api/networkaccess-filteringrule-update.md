@@ -68,10 +68,21 @@ The following is an example of a request.
 -->
 ``` http
 PATCH https://graph.microsoft.com/beta/networkaccess/filteringPolicies/bb1d249e-0691-477c-aae4-adfca179746a/policyRules/4619a550-7466-41ac-bdd9-b118bb6e004a
-
 Content-Type: application/json
 
-{"@odata.type":"#microsoft.graph.networkaccess.webCategoryFilteringRule","name":"Gambling and Storage cateogries","destinations":[{"@odata.type":"#microsoft.graph.networkaccess.webCategory","name":"Gambling"},{"@odata.type":"#microsoft.graph.networkaccess.webCategory","name":"WebRepositoryAndStorage"}]
+{
+  "@odata.type": "#microsoft.graph.networkaccess.webCategoryFilteringRule",
+  "name": "Gambling and Storage cateogries",
+  "destinations": [
+    {
+      "@odata.type": "#microsoft.graph.networkaccess.webCategory",
+      "name": "Gambling"
+    },
+    {
+      "@odata.type": "#microsoft.graph.networkaccess.webCategory",
+      "name": "WebRepositoryAndStorage"
+    }
+  ]
 }
 ```
 
