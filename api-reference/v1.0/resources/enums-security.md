@@ -49,6 +49,23 @@ Namespace: microsoft.graph.security
 | notAvaliable       |
 | unknownFutureValue |
 
+### hostPortProtocol values
+
+| Member             |
+| :----------------- |
+| tcp                |
+| udp                |
+| unknownFutureValue |
+
+### hostPortStatus values
+
+| Member             |
+| :----------------- |
+| open               |
+| filtered           |
+| closed             |
+| unknownFutureValue |
+
 ### hostReputationClassification values
 
 | Member             |

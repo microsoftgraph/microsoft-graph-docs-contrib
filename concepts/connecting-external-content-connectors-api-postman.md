@@ -47,9 +47,11 @@ You can't use Postman for the web without this due to CORS restrictions in the w
 
 You don't need the agent if you're using the Postman for Windows app. If you open Postman for Windows, you see this collection in your workspace.
 
-## Step 3: Create an Azure AD application
+<a name='step-3-create-an-azure-ad-application'></a>
 
-To use this collection in your own developer tenant, create an Azure Active Directory (Azure AD) application and give it the appropriate permissions for the requests that you want to call.
+## Step 3: Create a Microsoft Entra application
+
+To use this collection in your own developer tenant, create a Microsoft Entra application and give it the appropriate permissions for the requests that you want to call.
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com).
 1. Expand the **Identity** menu > select **Applications** > **App registrations** > **New registration**.
@@ -127,7 +129,7 @@ A [connection](/graph/connecting-external-content-manage-connections) is a logic
 POST /external/connections
 ```
 
-The following is an example of the request.
+The following example shows a request.
 
 ```http
 POST https://graph.microsoft.com/beta/external/connections 
@@ -140,7 +142,7 @@ Content-type: application/json
 } 
 ```
 
-The following is an example of the response.
+The following example shows the response.
 
 ```http
 HTTP/1.1 201 Created 
@@ -172,7 +174,7 @@ The connection schema determines how your content is used in various Microsoft G
 POST /external/connections/{id}/schema 
 ```
 
-The following is an example of the request.
+The following example shows a request.
 
 ```http
 POST https://graph.microsoft.com/beta/external/connections/contosotasks/schema 
@@ -220,7 +222,7 @@ Prefer: respond-async
 } 
 ```
 
-The following is an example of the response.
+The following example shows the response.
 
 ```http
 HTTP/1.1 202 Accepted 
@@ -267,7 +269,7 @@ After the connection state changes from **draft** to **ready**, you can ingest i
 
 If your external service uses non-Azure AD access control lists (ACLs), sync those permissions.  
 
-External groups (along with Azure Active Directory users and groups) are used to set permissions on `externalItems` added to a Microsoft Graph connection. For details, see [externalGroup](/graph/api/resources/externalconnectors-externalgroup).
+External groups (along with Microsoft Entra users and groups) are used to set permissions on `externalItems` added to a Microsoft Graph connection. For details, see [externalGroup](/graph/api/resources/externalconnectors-externalgroup).
 
 This is an example of a request.
 

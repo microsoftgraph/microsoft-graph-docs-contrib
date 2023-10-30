@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = GovernanceRoleAssignmentRequest(
 	role_definition_id = "bc75b4e6-7403-4243-bf2f-d1f6990be122",
@@ -18,7 +18,7 @@ request_body = GovernanceRoleAssignmentRequest(
 	linked_eligible_role_assignment_id = "cb8a533e-02d5-42ad-8499-916b1e4822ec",
 )
 
-result = await graph_client.privileged_access.by_privileged_acce_id('privilegedAccess-id').role_assignment_requests.post(body = request_body)
+result = await graph_client.privileged_access.by_privileged_access_id('privilegedAccess-id').role_assignment_requests.post(request_body)
 
 
 ```

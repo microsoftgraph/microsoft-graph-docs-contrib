@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Simulation(
 	id = "2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc",
@@ -16,7 +16,7 @@ request_body = Simulation(
 	}
 )
 
-result = await graph_client.security.attack_simulation.simulations.by_simulation_id('simulation-id').patch(body = request_body)
+result = await graph_client.security.attack_simulation.simulations.by_simulation_id('simulation-id').patch(request_body)
 
 
 ```

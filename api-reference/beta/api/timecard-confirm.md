@@ -45,7 +45,7 @@ POST /teams/{teamId}/schedule/timeCards/{timeCardId}/confirm
 | MS-APP-ACTS-AS | The ID of the user on behalf of whom the app is acting. Required when you use the application permission scope. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -54,7 +54,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Example
 
 ### Request
-The following is an example of the request. 
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -104,7 +104,7 @@ POST https://graph.microsoft.com/beta/teams/fd15cad8-80f6-484f-9666-3caf695fbf32
 
 ### Response
 
-The following is an example of the response. 
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

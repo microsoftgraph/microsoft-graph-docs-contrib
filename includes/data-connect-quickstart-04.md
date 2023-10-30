@@ -34,7 +34,7 @@ In this step you will create an Azure Storage account where Microsoft Graph Data
 
 1. Review that the settings match those shown in the previous steps and select **Create** to finalize.
 
-1. After the Azure Storage account has been created, grant the Azure Active Directory application previously created the proper access to it.
+1. After the Azure Storage account has been created, grant the Microsoft Entra application previously created the proper access to it.
 
     1. Select the **Azure Storage account**.
     2. On the sidebar menu, select **Access control (IAM)**.

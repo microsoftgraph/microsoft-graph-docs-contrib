@@ -17,13 +17,10 @@ Read the properties and relationships of an [azureADAuthentication](../resources
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Reports.Read.All |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Reports.Read.All |
+<!-- { "blockType": "permissions", "name": "azureadauthentication_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/azureadauthentication-get-permissions.md)]
 
 In addition to the delegated permissions, the signed-in user needs to belong to one of the following directory roles that allow them to read sign-in reports. To learn more about directory roles, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference):
 + Global Administrator
@@ -52,7 +49,7 @@ This method doesn't take any parameters.
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -107,7 +104,7 @@ GET https://graph.microsoft.com/beta/reports/sla/azureADAuthentication
 ---
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here is shortened for readability.
 <!-- {
   "blockType": "response",
