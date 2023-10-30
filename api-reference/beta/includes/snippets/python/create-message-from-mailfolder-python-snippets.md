@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Message(
 	received_date_time = "2016-10-19T10:37:00Z",
@@ -20,7 +20,7 @@ request_body = Message(
 	body_preview = "bodyPreview-value",
 )
 
-result = await graph_client.me.mail_folders.by_mail_folder_id('mailFolder-id').messages.post(body = request_body)
+result = await graph_client.me.mail_folders.by_mail_folder_id('mailFolder-id').messages.post(request_body)
 
 
 ```

@@ -102,7 +102,7 @@ Content-type: application/json
 
 In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md) object.
 ### Response
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response"

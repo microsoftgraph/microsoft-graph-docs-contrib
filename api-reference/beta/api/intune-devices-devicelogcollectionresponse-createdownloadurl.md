@@ -1,6 +1,6 @@
 ---
 title: "createDownloadUrl action"
-description: ""
+description: "Intune Devices Devicelogcollectionresponse Createdownloadurl Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

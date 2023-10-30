@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Specifies the sensitive properties of the app that are locked for editing on the service principal. You can disable this configuration to allow the properties to be updated.
 
-For more information about managing this object, see [Lock sensitive properties for service principals](/concepts/tutorial-applications-basics.md#lock-sensitive-properties-for-service-principals)
+For more information about managing this object, see [Lock sensitive properties for service principals](/graph/tutorial-applications-basics#lock-sensitive-properties-for-service-principals)
 
 ## Properties
 

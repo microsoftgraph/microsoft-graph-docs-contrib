@@ -139,6 +139,9 @@ The main difference during subscription creation will be the **notificationUrl**
 - `secretname` - The name you gave to the secret when you created it. Can be found on the Azure Key Vault **Secrets** page.
 - `domainname` - The name of your tenant; for example, consto.onmicrosoft.com or contoso.com. Because this domain will be used to access the Azure Key Vault, it is important that it matches the domain used by the Azure subscription that holds the Azure Key Vault. To get this information, you can go to the overview page of the Azure Key Vault you created and select the subscription. The domain name is displayed under the **Directory** field.
 
+> [!NOTE]
+> Duplicate subscriptions are not allowed. When a subscription request contains the same values for **changeType** and **resource** that an existing subscription contains, the request fails with an HTTP error code `409 Conflict`, and the error message `Subscription Id <> already exists for the requested combination`.
+
 #### Receiving notifications
 
 Events are now delivered to your application by Event Hubs. For details, see [receiving events](/azure/event-hubs/get-started-dotnet-standard-send-v2#receive-events) in the Event Hubs documentation.
@@ -188,16 +191,52 @@ It's possible that the **Microsoft Graph Change Tracking** service principal is 
 
 To confirm whether the service principal exists in your tenant, run the following query. If the service principal exists, the request returns a `200 OK` response code and the corresponding **Microsoft Graph Change Tracking** object in the response body. You must grant the calling app the *Application.Read.All* permission to run this operation.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "change-notifications-eventhubs-get-changetrackingapp-sp"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='0bf30f3b-4a52-48df-9a82-234910c4a086')
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/change-notifications-eventhubs-get-changetrackingapp-sp-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/change-notifications-eventhubs-get-changetrackingapp-sp-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/v1/change-notifications-eventhubs-get-changetrackingapp-sp-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/v1/change-notifications-eventhubs-get-changetrackingapp-sp-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/change-notifications-eventhubs-get-changetrackingapp-sp-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/change-notifications-eventhubs-get-changetrackingapp-sp-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 If the service principal doesn't exist, create it as follows. You must grant the calling app the *Application.ReadWrite.All* permission to run this operation.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "change-notifications-eventhubs-create-changetrackingapp-sp"
@@ -209,6 +248,40 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals
     "appId": "0bf30f3b-4a52-48df-9a82-234910c4a086"
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/change-notifications-eventhubs-create-changetrackingapp-sp-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/change-notifications-eventhubs-create-changetrackingapp-sp-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/v1/change-notifications-eventhubs-create-changetrackingapp-sp-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/change-notifications-eventhubs-create-changetrackingapp-sp-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/change-notifications-eventhubs-create-changetrackingapp-sp-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/v1/change-notifications-eventhubs-create-changetrackingapp-sp-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/change-notifications-eventhubs-create-changetrackingapp-sp-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ## Next steps
 

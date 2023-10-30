@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = DeviceManagementExchangeConnector(
 	odata_type = "#microsoft.graph.deviceManagementExchangeConnector",
@@ -21,7 +21,7 @@ request_body = DeviceManagementExchangeConnector(
 	exchange_organization = "Exchange Organization value",
 )
 
-result = await graph_client.device_management.exchange_connectors.post(body = request_body)
+result = await graph_client.device_management.exchange_connectors.post(request_body)
 
 
 ```

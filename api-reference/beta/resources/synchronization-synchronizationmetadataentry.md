@@ -24,8 +24,8 @@ Metadata for the given object.
 ### Supported key-value pairs
 | Key       |Value|
 |:---------------|:----------|
-|GalleryApplicationIdentifier|The GUID that represents this enterprise application in Azure AD.   |
-|GalleryApplicationKey | The name that represents this enterprise application in Azure AD (same value as the factoryTag attribute within the synchronizationTemplate resource type).   |
+|GalleryApplicationIdentifier|The GUID that represents this enterprise application in Microsoft Entra ID.   |
+|GalleryApplicationKey | The name that represents this enterprise application in Microsoft Entra ID (same value as the factoryTag attribute within the synchronizationTemplate resource type).   |
 |IsOAuthEnabled  |Indicates whether OAuth is enabled for this synchronization job's application.  |
 |IsSynchronizationAgentAssignmentRequired |Indicates whether to display certain UI elements applicable only during synchronization that requires an on-premises agent.  |
 |IsSynchronizationAgentRequired |Indicates whether an on-premises synchronization agent is required for this synchronization job. |
@@ -62,5 +62,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

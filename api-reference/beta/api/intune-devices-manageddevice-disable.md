@@ -1,6 +1,6 @@
 ---
 title: "disable action"
-description: ""
+description: "Intune Devices Manageddevice Disable Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

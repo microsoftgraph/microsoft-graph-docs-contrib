@@ -17,13 +17,10 @@ Assign the tenant tag to the specified managed tenants.
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|ManagedTenants.WriteRead.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+<!-- { "blockType": "permissions", "name": "managedtenants_tenanttag_assigntag" } -->
+[!INCLUDE [permissions-table](../includes/permissions/managedtenants-tenanttag-assigntag-permissions.md)]
 
 ## HTTP request
 
@@ -48,7 +45,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|tenantIds|String collection|The collection of Azure Active Directory tenant identifiers where the tenant tag should be assigned.|
+|tenantIds|String collection|The collection of Microsoft Entra tenant identifiers where the tenant tag should be assigned.|
 
 ## Response
 

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = PersonAnnotation(
 	detail = ItemBody(
@@ -16,7 +16,7 @@ request_body = PersonAnnotation(
 	display_name = "About Me",
 )
 
-result = await graph_client.me.profile.notes.post(body = request_body)
+result = await graph_client.me.profile.notes.post(request_body)
 
 
 ```

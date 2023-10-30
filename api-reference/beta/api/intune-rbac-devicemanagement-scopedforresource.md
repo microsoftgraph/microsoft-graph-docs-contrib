@@ -1,6 +1,6 @@
 ---
 title: "scopedForResource function"
-description: ""
+description: "Intune Rbac Devicemanagement Scopedforresource Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

@@ -17,13 +17,10 @@ Retrieve the properties of a [deviceLocalCredentialInfo](../resources/deviceloca
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|DeviceLocalCredential.ReadBasic.All, DeviceLocalCredential.Read.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceLocalCredential.ReadBasic.All, DeviceLocalCredential.Read.All|
+<!-- { "blockType": "permissions", "name": "devicelocalcredentialinfo_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/devicelocalcredentialinfo-get-permissions.md)]
 
 To access the actual passwords on the device, done by including `$select=credentials` as part of the query parameters, the app must be assigned the *DeviceLocalCredential.Read.All* permission and *DeviceLocalCredential.ReadBasic.All* is insufficient.
 
@@ -31,11 +28,17 @@ To access the actual passwords on the device, done by including `$select=credent
 
 ## HTTP request
 To get the device local credential for a specific device object:
+
+> [!CAUTION]
+> The `GET /deviceLocalCredentials` endpoint will be deprecated on December 31, 2023. Use the `GET /directory/deviceLocalCredentials` endpoint instead.
+>
+
 <!-- {
   "blockType": "ignored"  
 }
 -->
 ``` http
+GET /directory/deviceLocalCredentials/{deviceId}
 GET /deviceLocalCredentials/{deviceId}
 ```
 
@@ -62,7 +65,7 @@ If successful, this method returns a `200 OK` response code and a [deviceLocalCr
 ### Example 1: Get a device's local administrator account credential info
 
 #### Request
-Here's an example of the request. This example doesn't return the **credentials** property.
+The following example shows a request. This example doesn't return the **credentials** property.
 
 <!-- {
   "blockType": "request",
@@ -70,7 +73,7 @@ Here's an example of the request. This example doesn't return the **credentials*
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/deviceLocalCredentials/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4
+GET https://graph.microsoft.com/beta/directory/deviceLocalCredentials/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4
 User-Agent: "Dsreg/10.0 (Windows 10.0.19043.1466)"
 ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
@@ -78,7 +81,7 @@ ocp-client-version: "1.2"
 
 
 #### Response
-Here's an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -105,7 +108,7 @@ Content-type: application/json
 ### Example 2: Get the device local administrator account credential info with the **credentials** property
 
 #### Request
-Here's an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -113,14 +116,14 @@ Here's an example of the request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/deviceLocalCredentials/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4?$select=credentials
+GET https://graph.microsoft.com/beta/directory/deviceLocalCredentials/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4?$select=credentials
 User-Agent: "Dsreg/10.0 (Windows 10.0.19043.1466)"
 ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
 ```
 
 #### Response
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

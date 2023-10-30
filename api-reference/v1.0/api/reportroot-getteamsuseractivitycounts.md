@@ -17,15 +17,12 @@ Get the number of Microsoft Teams activities by activity type. The activities ar
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :--------------------------------------- |
-| Delegated (work or school account)     | Reports.Read.All                         |
-| Delegated (personal Microsoft account) | Not supported.                           |
-| Application                            | Reports.Read.All                         |
+<!-- { "blockType": "permissions", "name": "reportroot_getteamsuseractivitycounts" } -->
+[!INCLUDE [permissions-table](../includes/permissions/reportroot-getteamsuseractivitycounts-permissions.md)]
 
-**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure Active Directory limited administrator role. For more information, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
+**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Microsoft Entra ID limited administrator role. For more information, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
 
@@ -117,6 +114,10 @@ GET https://graph.microsoft.com/v1.0/reports/getTeamsUserActivityCounts(period='
 [!INCLUDE [sample-code](../includes/snippets/php/reportroot-getteamsuseractivitycounts-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/reportroot-getteamsuseractivitycounts-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/reportroot-getteamsuseractivitycounts-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -160,4 +161,3 @@ Report Refresh Date,Report Date,Team Chat Messages,Post Messages,Reply Messages,
   "suppressions": [
   ]
 }-->
-

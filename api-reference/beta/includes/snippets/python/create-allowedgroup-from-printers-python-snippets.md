@@ -6,13 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ReferenceCreate(
 	odata_id = "https://graph.microsoft.com/beta/groups/{id}",
 )
 
-await graph_client.print.shares.by_share_id('printerShare-id').allowed_groups.ref.post(body = request_body)
+await graph_client.print.shares.by_printer_share_id('printerShare-id').allowed_groups.ref.post(request_body)
 
 
 ```

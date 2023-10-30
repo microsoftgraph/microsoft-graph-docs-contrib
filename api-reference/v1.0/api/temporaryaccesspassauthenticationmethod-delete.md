@@ -15,23 +15,17 @@ Delete a users's [temporaryAccessPassAuthenticationMethod](../resources/temporar
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### Permissions acting on self
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:---------------------------------------|:-------------------------|
-| Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+<!-- { "blockType": "permissions", "name": "temporaryaccesspassauthenticationmethod_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/temporaryaccesspassauthenticationmethod-delete-permissions.md)]
 
 ### Permissions acting on other users
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:---------------------------------------|:-------------------------|
-| Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | UserAuthenticationMethod.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "temporaryaccesspassauthenticationmethod_delete_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/temporaryaccesspassauthenticationmethod-delete-2-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
@@ -55,11 +49,11 @@ DELETE /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
