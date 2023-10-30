@@ -2313,7 +2313,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "encryptionCertificate",
           "ChangeType": "Change",
-          "Description": "When [creating a subscription](https://learn.microsoft.com/en-us/graph/api/subscription-post-subscriptions) for Outlook [contact](https://learn.microsoft.com/en-us/graph/api/resources/contact), [event](https://learn.microsoft.com/en-us/graph/api/resources/event), or [message](https://learn.microsoft.com/en-us/graph/api/resources/message) resources, setting the **encryptionCertificate** property of the [subscription](https://learn.microsoft.com/en-us/graph/api/resources/subscription) resource to a certificate with a public key enables encrypting and including resource data as part of a change notification.",
+          "Description": "Updated the Outlook [contact](https://learn.microsoft.com/en-us/graph/api/resources/contact), [event](https://learn.microsoft.com/en-us/graph/api/resources/event), and [message](https://learn.microsoft.com/en-us/graph/api/resources/message) resources to enable change notifications to include resource data when the **encryptionCertificate** property of the [subscription](https://learn.microsoft.com/en-us/graph/api/resources/subscription) resource is set with a certificate with a public key that enables encrypting and including resource data as part of a change notification.",
           "Target": "subscription"
         },
         {
@@ -2321,7 +2321,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "encryptionCertificateId",
           "ChangeType": "Change",
-          "Description": "When [creating a subscription](https://learn.microsoft.com/en-us/graph/api/subscription-post-subscriptions) for Outlook [contact](https://learn.microsoft.com/en-us/graph/api/resources/contact), [event](https://learn.microsoft.com/en-us/graph/api/resources/event), or [message](https://learn.microsoft.com/en-us/graph/api/resources/message) resources, setting the **encryptionCertificateId** property of the [subscription](https://learn.microsoft.com/en-us/graph/api/resources/subscription) resource allows an app to identify the appropriate certificate to decrypt any resource data in a change notification.",
+          "Description": "Updated the Outlook [contact](https://learn.microsoft.com/en-us/graph/api/resources/contact), [event](https://learn.microsoft.com/en-us/graph/api/resources/event), and [message](https://learn.microsoft.com/en-us/graph/api/resources/message) resources to enable change notifications to include resource data when the **encryptionCertificateId** property of the [subscription](https://learn.microsoft.com/en-us/graph/api/resources/subscription) is set to allow an app to identify the appropriate certificate to decrypt any resource data in a change notification.",
           "Target": "subscription"
         },
         {
