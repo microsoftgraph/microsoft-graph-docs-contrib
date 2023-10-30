@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = TrustFrameworkKeySet(
 	id = "keyset1",
@@ -15,7 +15,7 @@ request_body = TrustFrameworkKeySet(
 			k = "k-value",
 			x5c = [
 				"x5c-value",
-			]
+			],
 			x5t = "x5t-value",
 			kty = "kty-value",
 			use = "use-value",
@@ -31,10 +31,10 @@ request_body = TrustFrameworkKeySet(
 			dq = "dq-value",
 			qi = "qi-value",
 		),
-	]
+	],
 )
 
-result = await graph_client.trust_framework.key_sets.post(body = request_body)
+result = await graph_client.trust_framework.key_sets.post(request_body)
 
 
 ```

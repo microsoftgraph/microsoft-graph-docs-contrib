@@ -25,23 +25,17 @@ For other Microsoft 365 applications (like Microsoft Entra ID), use [unifiedRole
 
 ## Permissions
 
-Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, see [Permissions](/graph/permissions-reference). 
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### For Cloud PC provider
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  CloudPC.Read.All, CloudPC.ReadWrite.All   |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | CloudPC.Read.All, CloudPC.ReadWrite.All  |
+<!-- { "blockType": "permissions", "name": "unifiedroleassignmentmultiple_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedroleassignmentmultiple-get-permissions.md)]
 
 ### For Device management (Intune) provider
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All   |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "unifiedroleassignmentmultiple_get_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedroleassignmentmultiple-get-2-permissions.md)]
 
 
 
@@ -71,7 +65,7 @@ This method supports OData query parameters to help customize the response. For 
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -83,7 +77,7 @@ If successful, this method returns a `200 OK` response code and the requested [u
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -133,7 +127,7 @@ GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignm
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -160,7 +154,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -210,7 +204,7 @@ GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignm
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -300,7 +294,7 @@ GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignm
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {

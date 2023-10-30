@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = OfferShiftRequest(
 	sender_shift_id = "SHFT_f7e484ed-fdd6-421c-92d9-0bc9e62e2c29",
@@ -21,7 +21,7 @@ headers = {
 
 )
 
-result = await graph_client.teams.by_team_id('team-id').schedule.offer_shift_requests.post(body = request_body, request_configuration = request_configuration)
+result = await graph_client.teams.by_team_id('team-id').schedule.offer_shift_requests.post(request_body, request_configuration = request_configuration)
 
 
 ```
