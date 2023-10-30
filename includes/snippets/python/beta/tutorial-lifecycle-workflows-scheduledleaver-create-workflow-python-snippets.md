@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Workflow(
 	category = LifecycleWorkflowCategory.Leaver,
@@ -36,7 +36,7 @@ request_body = Workflow(
 			is_enabled = True,
 			task_definition_id = "8fa97d28-3e52-4985-b3a9-a1126f9b8b4e",
 			arguments = [
-			]
+			],
 		),
 		Task(
 			category = LifecycleTaskCategory.Leaver,
@@ -47,7 +47,7 @@ request_body = Workflow(
 			is_enabled = True,
 			task_definition_id = "81f7b200-2816-4b3b-8c5d-dc556f07b024",
 			arguments = [
-			]
+			],
 		),
 		Task(
 			category = LifecycleTaskCategory.Leaver,
@@ -58,12 +58,12 @@ request_body = Workflow(
 			is_enabled = True,
 			task_definition_id = "8d18588d-9ad3-4c0f-99d0-ec215f0e3dff",
 			arguments = [
-			]
+			],
 		),
-	]
+	],
 )
 
-result = await graph_client.identity_governance.lifecycle_workflows.workflows.post(body = request_body)
+result = await graph_client.identity_governance.lifecycle_workflows.workflows.post(request_body)
 
 
 ```

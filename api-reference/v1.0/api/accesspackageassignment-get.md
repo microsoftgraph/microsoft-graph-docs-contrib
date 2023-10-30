@@ -11,19 +11,16 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), retrieve the properties and relationships of an [accessPackageAssignment](../resources/accesspackageassignment.md) object.
+In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), retrieve the properties and relationships of an [accessPackageAssignment](../resources/accesspackageassignment.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All  |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "accesspackageassignment_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/accesspackageassignment-get-permissions.md)]
 
 ## HTTP request
 
@@ -46,7 +43,7 @@ This method supports the `$expand` OData query parameter to expand the `accessPa
 | Authorization | Bearer \{token\}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -120,5 +117,3 @@ Content-Type: application/json
   "expiredDateTime": "2022-07-27T21:55:19.69Z"
 }
 ```
-
-

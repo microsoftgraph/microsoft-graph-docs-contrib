@@ -14,18 +14,15 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a **riskyUser** object.
 
->**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.
+>**Note:** Using the riskyUsers API requires a Microsoft Entra ID P2 license.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | IdentityRiskyUser.Read.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | IdentityRiskyUser.Read.All |
+<!-- { "blockType": "permissions", "name": "riskyusers_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/riskyusers-get-permissions.md)]
 
 [!INCLUDE [rbac-identity-protection-apis-read](../../beta/includes/rbac-for-apis/rbac-identity-protection-apis-read.md)]
 
@@ -44,7 +41,7 @@ GET /identityProtection/riskyUsers/{id}
 | Workbook-Session-Id  | Workbook session ID that determines whether changes are persisted. Optional.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -203,6 +200,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-
-
-

@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-In [Azure AD entitlement management](entitlementmanagement-overview.md), an access package resource is a reference to a resource associated with an access package catalog. The roles for the access package resource can be used in one or more access packages.  To request to associate a resource with an access package catalog, or remove a resource from a catalog, create an [accessPackageResourceRequest](accesspackageresourcerequest.md).
+In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), an access package resource is a reference to a resource associated with an access package catalog. The roles for the access package resource can be used in one or more access packages.  To request to associate a resource with an access package catalog, or remove a resource from a catalog, create an [accessPackageResourceRequest](accesspackageresourcerequest.md).
 
 ## Methods
 
@@ -29,7 +29,7 @@ In [Azure AD entitlement management](entitlementmanagement-overview.md), an acce
 |displayName|String|The display name of the resource, such as the application name, group name or site name.|
 |id|String| Read-only.|
 |modifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
-|originId|String|The unique identifier of the resource in the origin system. In the case of an Azure AD group, this is the identifier of the group. |
+|originId|String|The unique identifier of the resource in the origin system. In the case of a Microsoft Entra group, this is the identifier of the group. |
 |originSystem|String|The type of the resource in the origin system, such as `SharePointOnline`, `AadApplication` or `AadGroup`.|
 
 ## Relationships
@@ -64,4 +64,3 @@ The following is a JSON representation of the resource.
   "originSystem": "String"
 }
 ```
-

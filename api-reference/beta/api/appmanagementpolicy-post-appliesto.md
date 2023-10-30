@@ -51,7 +51,7 @@ In the request body, provide a reference to a single policy object from the [app
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
@@ -113,7 +113,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -182,7 +182,7 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/appManagementPolici
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

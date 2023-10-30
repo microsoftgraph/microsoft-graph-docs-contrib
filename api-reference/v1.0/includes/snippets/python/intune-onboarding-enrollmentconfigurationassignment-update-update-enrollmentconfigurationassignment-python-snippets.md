@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = EnrollmentConfigurationAssignment(
 	odata_type = "#microsoft.graph.enrollmentConfigurationAssignment",
@@ -16,7 +16,7 @@ request_body = EnrollmentConfigurationAssignment(
 	),
 )
 
-result = await graph_client.device_management.device_enrollment_configurations.by_device_enrollment_configuration_id('deviceEnrollmentConfiguration-id').assignments.by_assignment_id('enrollmentConfigurationAssignment-id').patch(body = request_body)
+result = await graph_client.device_management.device_enrollment_configurations.by_device_enrollment_configuration_id('deviceEnrollmentConfiguration-id').assignments.by_enrollment_configuration_assignment_id('enrollmentConfigurationAssignment-id').patch(request_body)
 
 
 ```

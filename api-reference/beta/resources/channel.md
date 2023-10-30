@@ -69,7 +69,7 @@ where files are shared, and where tabs are added.
 |createdDateTime|dateTimeOffset|Read only. Timestamp at which the channel was created.|
 |moderationSettings|[channelModerationSettings](../resources/channelmoderationsettings.md)|Settings to configure channel moderation to control who can start new posts and reply to posts in that channel.|
 |summary|[channelSummary](../resources/channelsummary.md)|Contains summary information about the channel, including number of guests, members, owners, and an indicator for members from other tenants. The **summary** property will only be returned if it is specified in the `$select` clause of the [Get channel](../api/channel-get.md) method.|
-|tenantId |string | The ID of the Azure Active Directory tenant. |
+|tenantId |string | The ID of the Microsoft Entra tenant. |
 
 ### channelMembershipType values
 

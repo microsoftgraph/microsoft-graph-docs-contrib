@@ -18,7 +18,7 @@ var requestBody = new PlannerTask
 		AdditionalData = new Dictionary<string, object>
 		{
 			{
-				"fbab97d0-4932-4511-b675-204639209557" , new 
+				"fbab97d0-4932-4511-b675-204639209557" , new PlannerAssignment
 				{
 					OdataType = "#microsoft.graph.plannerAssignment",
 					OrderHint = " !",
