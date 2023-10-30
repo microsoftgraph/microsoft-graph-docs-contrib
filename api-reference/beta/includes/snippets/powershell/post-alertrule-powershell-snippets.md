@@ -22,17 +22,11 @@ $params = @{
 	notificationChannels = @(
 		@{
 			notificationChannelType = "portal"
-			receivers = @(
-				""
-			)
 			notificationReceivers = @(
 			)
 		}
 		@{
 			notificationChannelType = "email"
-			receivers = @(
-				"serena.davis@contoso.com"
-			)
 			notificationReceivers = @(
 				@{
 					locale = "en-us"

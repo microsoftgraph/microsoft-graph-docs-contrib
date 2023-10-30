@@ -1,6 +1,6 @@
 ---
 title: "migrateToTemplate action"
-description: ""
+description: "Intune Deviceintent Devicemanagementintent Migratetotemplate Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

@@ -3,7 +3,7 @@ title: "enrichedAuditLogsSettings resource type"
 description: "Represents a configuration object that centralizes enriched audit logs settings related to specific Microsoft 365 workload."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: resourcePageType
 ---
 

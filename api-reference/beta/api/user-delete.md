@@ -21,15 +21,12 @@ When deleted, user resources are moved to a temporary container and can be resto
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.ReadWrite.All |
+<!-- { "blockType": "ignored", "name": "user_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/user-delete-permissions.md)]
 
-The calling user must be assigned one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json):
+The calling user must be assigned one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
 - User Administrator
 - Privileged Authentication Administrator
@@ -54,11 +51,11 @@ DELETE /users/{id | userPrincipalName}
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 
@@ -111,7 +108,7 @@ DELETE https://graph.microsoft.com/beta/users/ba9a3254-9f18-4209-aeb3-9e42a35b5b
 
 ### Response
 
-The following is an example of the response. 
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -133,5 +130,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-

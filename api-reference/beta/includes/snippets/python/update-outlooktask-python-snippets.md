@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = OutlookTask(
 	due_date_time = DateTimeTimeZone(
@@ -15,14 +15,14 @@ request_body = OutlookTask(
 	),
 )
 
-request_configuration = OutlookTaskRequestBuilder.OutlookTaskRequestBuilderPatchRequestConfiguration(
+request_configuration = OutlookTaskItemRequestBuilder.OutlookTaskItemRequestBuilderPatchRequestConfiguration(
 headers = {
 		'Prefer' : "outlook.timezone=\"Eastern Standard Time\"",
 }
 
 )
 
-result = await graph_client.me.outlook.tasks.by_task_id('outlookTask-id').patch(body = request_body, request_configuration = request_configuration)
+result = await graph_client.me.outlook.tasks.by_outlook_task_id('outlookTask-id').patch(request_body, request_configuration = request_configuration)
 
 
 ```
