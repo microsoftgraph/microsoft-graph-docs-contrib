@@ -33,28 +33,12 @@ These enumerations represent various aspects of Global Secure Access.
 | sap |
 | unknownFutureValue |
 
-## bgpRoutingHealthStatus Values
-
-| Member |
-|:---|
-| bgpDisconnected |
-| bgpConnected |
-| unknownFutureValue |
-
 ## deviceCategory Values
 
 | Member |
 |:---|
 | client |
 | branch |
-| unknownFutureValue |
-
-## filteringPolicyAction Values
-
-| Member |
-|:---|
-| block |
-| allow |
 | unknownFutureValue |
 
 ## networkingProtocol Values
@@ -92,15 +76,6 @@ These enumerations represent various aspects of Global Secure Access.
 | alive |
 | unknownFutureValue |
 
-## trafficType Values
-
-| Member |
-|:---|
-| internet |
-| private |
-| microsoft365 |
-| all |
-| unknownFutureValue |
 
 ## tunnelConnectivityHealthStatus Values
 
@@ -108,14 +83,6 @@ These enumerations represent various aspects of Global Secure Access.
 |:---|
 | tunnelDisconnected |
 | tunnelConnected |
-| unknownFutureValue |
-
-## usageStatus Values
-
-| Member |
-|:---|
-| frequentlyUsed |
-| rarelyUsed |
 | unknownFutureValue |
 
 ## userType Values
@@ -193,34 +160,6 @@ These enumerations represent various aspects of Global Secure Access.
 | rarelyUsed |
 | unknownFutureValue |
 
-## networkingProtocol Values
-
-| Member |
-|:---|
-| ip |
-| Icmp |
-| Igmp |
-| Ggp |
-| Ipv4 |
-| Tcp |
-| Pup |
-| Udp |
-| Idp |
-| Ipv6 |
-| Ipv6RoutingHeader |
-| Ipv6FragmentHeader |
-| IpSecEncapsulatingSecurityPayload |
-| IpSecAuthenticationHeader |
-| IcmpV6 |
-| ipv6NoNextHeader |
-| ipv6DestinationOptions |
-| Nd |
-| Raw |
-| Ipx |
-| Spx |
-| SpxII |
-| unknownFutureValue |
-
 ## trafficType Values
 
 | Member |
@@ -256,27 +195,12 @@ These enumerations represent various aspects of Global Secure Access.
 | allow |
 | unknownFutureValue |
 
-## deviceCategory Values
-
-| Member |
-|:---|
-| client |
-| branch |
-| unknownFutureValue |
-
 ## redundancyTier Values
 
 | Member |
 |:---|
 | noRedundancy |
 | zoneRedundancy |
-| unknownFutureValue |
-
-## remoteNetworkHealthAliveStatus Values
-
-| Member |
-|:---|
-| alive |
 | unknownFutureValue |
 
 ## onboardingStatus Values
@@ -355,12 +279,4 @@ These enumerations represent various aspects of Global Secure Access.
 | gcmAes128 |
 | gcmAes192 |
 | gcmAes256 |
-| unknownFutureValue |
-
-## tunnelConnectivityHealthStatus Values
-
-| Member |
-|:---|
-| tunnelDisconnected |
-| tunnelConnected |
 | unknownFutureValue |
