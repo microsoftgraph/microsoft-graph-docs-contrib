@@ -36,6 +36,7 @@
     },
     {
       "ChangeList": [
+        {
           "Id": "2795003f-a59e-4944-9c52-6dcee39bacdb",
           "ApiChange": "Resource",
           "ChangedApiName": "remoteDesktopSecurityConfiguration",
