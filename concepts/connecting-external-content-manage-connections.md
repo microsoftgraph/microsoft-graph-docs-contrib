@@ -33,10 +33,10 @@ Your connection can exist in one of the following states.
 
 | State             | Description                |
 |-------------------|----------------------------|
-| **Draft**         | An empty connection is provisioned. The data source, schema, or any settings have not been configured yet. |
+| **Draft**         | An empty connection is provisioned. None of the data source, schema, or settings are configured. |
 | **Ready**         | The connection is provisioned with registered schema and is ready for ingestion. |
 | **Obsolete**      | This occurs when a dependent feature, such as an API, has been deprecated. Deleting the connection is the only valid operation. |
-| **LimitExceeded** | If you reach the maximum limit of a single connection or the tenant level quota across all connections, you cannot add more items until you exit the state. |
+| **LimitExceeded** | If you reach the maximum limit of a single connection or the tenant level quota across all connections, you can't add more items until you exit the state. |
 
 The following table specifies which operations are available in each state.
 
@@ -71,7 +71,7 @@ Before an application can add items to the search index, it must create and conf
 You can configure the default connection settings for each enabled content experience. When enabled, these settings affect the content experiences.
 
 ### Search settings
-You can define how search results are displayed in the Microsoft Search results page by supplying the default search display templates for your content in [searchSettings](/graph/api/resources/externalconnectors-searchsettings). A set of search display templates can be used to display distinct kinds of search results differently. A search display template has a result layout built using Adaptive Cards and rules that specify one or more conditions. When these conditions are met, the layout will be applied to the search result and displayed on the results page.
+You can define how search results are displayed in the Microsoft Search results page by supplying the default search display templates for your content in [searchSettings](/graph/api/resources/externalconnectors-searchsettings). A set of search display templates can be used to display distinct kinds of search results differently. A search display template has a result layout built using Adaptive Cards and rules that specify one or more conditions. When these conditions are met, the layout is applied to the search result and displayed on the results page.
 
 ### Activity settings
 In [activity settings](/graph/api/resources/externalconnectors-activitysettings), you can provide a way for Microsoft 365 apps to detect **share activity**, which enables your content to be recommended to users who interact with that content the most. To do this, add a [urlToItemResolver](/graph/api/resources/externalconnectors-urltoitemresolverbase). This allows a URL from the connection detected within Microsoft 365 apps to be resolved to its respective item ID on the [externalItem](/graph/api/resources/externalconnectors-externalitem).
@@ -120,7 +120,7 @@ In this example, the **itemId** field specified how to form the ID of the extern
 
 You can supply a list of up to eight **itemIdResolver** resources in the **urlToItemResolvers** resource for your activity settings payload. For each of these **urlMatchInfo** resources, specify a value of `#microsoft.graph.externalConnectors.itemIdResolver` for the `@odata.type`, an integer from one to eight for the **priority** property, and a **urlMatchInfo** object that contains a list of base URLs and a regular expression.
 
-When a link is shared, the **urlMatchInfo** objects that belong to the resolvers are applied in the order that the **priority** values specify. In ascending **priority** order, the URL is first compared to the URLs in the **baseUrls** list in the **urlMatchInfo** property. Then, if the base of the link URL is in the **baseUrls** list, the **urlPattern** regular expression is applied to the URL. If this pattern matches, no further resolvers are applied. If either the base of the link URL is not in the **baseUrls** list, or the **urlPattern** fails to match,  the next **urlToItemResolver** is evaluated until a match is found or there are no more **urltoItemResolver** resources to apply.
+When a link is shared, the **urlMatchInfo** objects that belong to the resolvers are applied in the order that the **priority** values specify. In ascending **priority** order, the URL is first compared to the URLs in the **baseUrls** list in the **urlMatchInfo** property. Then, if the base of the link URL is in the **baseUrls** list, the **urlPattern** regular expression is applied to the URL. If this pattern matches, no further resolvers are applied. If either the base of the link URL isn't in the **baseUrls** list, or the **urlPattern** fails to match,  the next **urlToItemResolver** is evaluated until a match is found or there are no more **urltoItemResolver** resources to apply.
 
 To learn more about **urlMatchInfo** resources, see [urlMatchInfo type](https://learn.microsoft.com/graph/api/resources/externalconnectors-urlmatchinfo?view=graph-rest-1.0).
 ## Update a connection
