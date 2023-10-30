@@ -127,7 +127,7 @@ These enumerations represent various aspects of Global Secure Access.
 | Member |
 |:---|
 | url |
-| fqdn |f
+| fqdn |
 | ipAddress |
 | ipRange |
 | ipSubnet |

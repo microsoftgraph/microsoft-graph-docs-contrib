@@ -12229,14 +12229,14 @@ items:
                       - name: Create policyLink
                         href: api/networkaccess-filteringpolicy-post-policyrules.md
                   - name: Filtering Policy
-                    href: /resources/networkaccess-filteringpolicy.md
+                    href: resources/networkaccess-filteringpolicy.md
                     items:
                       - name: List
                         href: api/networkaccess-networkaccessroot-list-filteringpolicies.md
                       - name: Create
                         href: api/networkaccess-filteringpolicy-post-policyrules.md 
                       - name: Get
-                        href: api/api/networkaccess-filteringpolicy-get.md
+                        href: api/networkaccess-filteringpolicy-get.md
                       - name: Update
                         href: api/networkaccess-filteringprofile-update.md
                       - name: Delete
@@ -12246,14 +12246,14 @@ items:
                       - name: Create policyRule
                         href: api/networkaccess-filteringpolicy-post-policyrules.md
                   - name: Filtering Policy Link
-                    href: /resources/networkaccess-filteringpolicylink.md
+                    href: resources/networkaccess-filteringpolicylink.md
                     items:
                       - name: List
                         href: api/networkaccess-filteringpolicylink-list.md
                       - name: Get
                         href: api/networkaccess-filteringpolicylink-get.md 
                       - name: Update
-                        href: api/api/networkaccess-filteringpolicylink-update.md
+                        href: api/networkaccess-filteringpolicylink-update.md
                       - name: Delete
                         href: api/networkaccess-filteringpolicylink-delete.md
                       - name: List policy
@@ -12263,14 +12263,14 @@ items:
                       - name: Remove policy
                         href: api/networkaccess-filteringpolicylink-delete-policy.md
                   - name: Filtering Rule
-                    href: /resources/networkaccess-filteringrule.md
+                    href: resources/networkaccess-filteringrule.md
                     items:
                       - name: List
                         href: api/networkaccess-filteringrule-list.md
                       - name: Get
                         href: api/networkaccess-filteringrule-get.md 
                       - name: Create
-                        href: api/networkaccess-filteringrule-post
+                        href: api/networkaccess-filteringrule-post.md
                       - name: Update
                         href: api/networkaccess-filteringrule-update.md
                       - name: Delete
@@ -12344,6 +12344,13 @@ items:
                     href: api/networkaccess-reports-userreport.md    
                   - name: Get transaction summaries
                     href: api/networkaccess-reports-transactionsummaries.md
+              - name: Remote Network reports
+                items:
+                  - name: networkaccess-remotenetworkhealthstatusevent
+                    href: resources/networkaccess-remotenetworkhealthstatusevent.md
+                    items:
+                      - name: List
+                        href: api/networkaccess-remotenetworkhealthstatusevent-list.md
           - name: Governance
             href: resources/identitygovernance-overview.md
             displayName: Identity Governance, Access reviews, Entitlement Management, Terms of Use, Privileged Identity Management
