@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = AuthenticationEventsFlowsRequestBuilder.AuthenticationEventsFlowsRequestBuilderGetQueryParameters(
 		filter = "microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/onAttributeCollection/microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp/attributes/any",
@@ -16,7 +16,7 @@ request_configuration = AuthenticationEventsFlowsRequestBuilder.AuthenticationEv
 query_parameters = query_params,
 )
 
-result = await graph_client.identity.authentication_event_flows.get(request_configuration = request_configuration)
+result = await graph_client.identity.authentication_events_flows.get(request_configuration = request_configuration)
 
 
 ```

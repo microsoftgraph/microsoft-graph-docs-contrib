@@ -21,7 +21,7 @@ requestBody.SetCallbackUri(&callbackUri)
 source := graphmodels.NewParticipantInfo()
 identity := graphmodels.NewIdentitySet()
 additionalData := map[string]interface{}{
-applicationInstance := graphmodels.New()
+applicationInstance := graphmodels.NewIdentity()
 displayName := "Calling Bot"
 applicationInstance.SetDisplayName(&displayName) 
 id := "3d913abb-aec0-4964-8fa6-3c6850c4f278"
@@ -44,7 +44,7 @@ requestBody.SetSource(source)
 invitationParticipantInfo := graphmodels.NewInvitationParticipantInfo()
 identity := graphmodels.NewIdentitySet()
 additionalData := map[string]interface{}{
-phone := graphmodels.New()
+phone := graphmodels.NewIdentity()
 id := "+12345678901"
 phone.SetId(&id) 
 	identity.SetPhone(phone)
