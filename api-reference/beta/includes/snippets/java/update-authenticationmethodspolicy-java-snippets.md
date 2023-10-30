@@ -10,6 +10,7 @@ AuthenticationMethodsPolicy authenticationMethodsPolicy = new AuthenticationMeth
 RegistrationEnforcement registrationEnforcement = new RegistrationEnforcement();
 AuthenticationMethodsRegistrationCampaign authenticationMethodsRegistrationCampaign = new AuthenticationMethodsRegistrationCampaign();
 authenticationMethodsRegistrationCampaign.snoozeDurationInDays = 1;
+authenticationMethodsRegistrationCampaign.enforceRegistrationAfterAllowedSnoozes = true;
 authenticationMethodsRegistrationCampaign.state = AdvancedConfigState.ENABLED;
 LinkedList<ExcludeTarget> excludeTargetsList = new LinkedList<ExcludeTarget>();
 authenticationMethodsRegistrationCampaign.excludeTargets = excludeTargetsList;

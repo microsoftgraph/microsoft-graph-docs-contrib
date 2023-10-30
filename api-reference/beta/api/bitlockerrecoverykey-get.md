@@ -19,13 +19,10 @@ By default, this operation does not return the **key** property that represents 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|BitLockerKey.ReadBasic.All, BitLockerKey.Read.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+<!-- { "blockType": "permissions", "name": "bitlockerrecoverykey_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/bitlockerrecoverykey-get-permissions.md)]
 
 >**Note:** For delegated permissions to allow apps to get **bitLockerRecoveryKey** resources on behalf of the signed-in user, the tenant administrator must have assigned the user one of the following roles, or the user must be the **registered owner** of the device that the BitLocker key was originally backed up from: 
 * Global administrator
@@ -68,7 +65,7 @@ This method supports the `$select` OData query parameter to return the **key** p
 
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -79,7 +76,7 @@ If successful, this method returns a `200 OK` response code and a [bitlockerReco
 ### Example 1: Get the BitLocker key by specifying the key **id**
 
 #### Request
-The following is an example of the request. This example does not return the **key** property.
+The following example shows a request. This example does not return the **key** property.
 
 <!-- {
   "blockType": "request",
@@ -97,7 +94,7 @@ ocp-client-version: "1.2"
 
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -124,7 +121,7 @@ Content-type: application/json
 ### Example 2: Get the BitLocker key with the **key** property by specifying the key **id**
 
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -142,7 +139,7 @@ ocp-client-version: "1.2"
 
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

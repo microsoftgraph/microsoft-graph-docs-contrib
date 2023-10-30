@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AccessPackageResourceRequest(
 	catalog_id = "26ac0c0a-08bc-4a7b-a313-839f58044ba5",
@@ -34,7 +34,7 @@ request_body = AccessPackageResourceRequest(
 						text = AccessPackageLocalizedContent(
 							default_text = "Title",
 							localized_texts = [
-							]
+							],
 						),
 					),
 				),
@@ -42,11 +42,11 @@ request_body = AccessPackageResourceRequest(
 					odata_type = "#microsoft.graph.accessPackageUserDirectoryAttributeStore",
 				),
 			),
-		]
+		],
 	),
 )
 
-result = await graph_client.identity_governance.entitlement_management.acces_package_resource_requests.post(body = request_body)
+result = await graph_client.identity_governance.entitlement_management.access_package_resource_requests.post(request_body)
 
 
 ```
