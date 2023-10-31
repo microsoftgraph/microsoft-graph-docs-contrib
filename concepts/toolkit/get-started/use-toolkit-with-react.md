@@ -474,19 +474,24 @@ function App() {
 
 export default App;
 ```
+
 ::: zone-end
 
 ### Test showing user's and chats after they signed in
 
 With these changes, after signing in to your application with your Microsoft account, you should see your calendar.
 
+::: zone pivot="mgt-react"
+
 1. To see the changes, refresh your browser at `http://localhost:3000`.
 1. Choose the **Sign In** button and sign in using your Microsoft account.
-::: zone pivot="mgt-react"
 1. After consenting to the use of the application, you should see information about the current user and their calendar.
 ![Finished app](../images/mgt-finished-app.png)
 ::: zone-end
 ::: zone pivot="mgt-react-chat"
+
+1. To see the changes, refresh your browser at `http://localhost:3000`.
+1. Choose the **Sign In** button and sign in using your Microsoft account.
 1. After consenting to the use of the application, you should see information about the current user, their calendar and the ability to create a new chat and start interacting with this user.
 ![Finished app](../images/mgt-finished-app-v4.png)
 ::: zone-end
