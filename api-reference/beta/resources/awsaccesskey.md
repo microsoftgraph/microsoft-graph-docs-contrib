@@ -48,7 +48,7 @@ Inherits from [awsIdentity](../resources/awsidentity.md).
 |owner|[awsUser](../resources/awsuser.md)|**TODO: Add Description**|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

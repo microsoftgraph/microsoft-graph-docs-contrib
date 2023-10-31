@@ -41,7 +41,7 @@ Inherits from [finding](../resources/finding.md).
 |role|[awsRole](../resources/awsrole.md)|Represents an AWS role|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
