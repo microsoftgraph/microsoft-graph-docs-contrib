@@ -17,10 +17,10 @@ Your app begins by calling `delta` without any parameters.
 The service starts enumerating sites, returning pages of changes to sites and either an **@odata.nextLink** or an **@odata.deltaLink**.
 Your app should continue calling with the **@odata.nextLink** until you see an **@odata.deltaLink** returned.
 
-After you have received all the changes, you might apply them to your local state.
+After you have received all the changes, you may apply them to your local state.
 To check for changes in the future, call `delta` again with the **@odata.deltaLink** from the previous response.
 
-Deleted sites are returned with the [`deleted` facet](../resources/deleted.md).
+Deleted sites are returned with the [deleted](../resources/deleted.md) facet.
 Resources with this property set should be removed from your local state.
 
 ## Permissions
@@ -47,7 +47,7 @@ In the request URL, you can include the following optional query parameter.
 
 | Parameter    | Type   | Description                                                                                                                          |
 |:-------------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| token        | String | Optional. If unspecified, enumerates the current state of the hierarchy. If `latest`, returns an empty response with the latest delta token. If a previous delta token, returns a new state since that token.|
+| token        | String | If unspecified, enumerates the current state of the hierarchy. If `latest`, returns an empty response with the latest delta token. If a previous delta token, returns a new state since that token.|
 
 This method also supports the `$select`, `$expand`, and `$top` [OData query parameters](/graph/query-parameters) to customize the response.
 
@@ -70,7 +70,7 @@ In addition to the collection of **site** objects, the response also includes on
 | Name             | Value  | Description                                                                                                                                     |
 |:-----------------|:-------|:------------------------------------------------------------------------------------------------------------------------------------------------|
 | @odata.nextLink  | URL    | A URL to retrieve the next available page of changes if there are additional changes in the current set.                                        |
-| @odata.deltaLink | URL    | A URL returned instead of **@odata.nextLink** after all current changes have been returned. Used to read the next set of changes in the future. |
+| @odata.deltaLink | URL    | A URL returned instead of **@odata.nextLink** after all current changes have been returned. Use this property to read the next set of changes in the future. |
 
 In some cases, the service returns a `410 Gone` response code with an error response that contains one of the following error codes, and a `Location` header that contains a new `nextLink` that starts a fresh delta enumeration. This occurs when the service can't provide a list of changes for a given token; for example, if a client tries to reuse an old token after being disconnected for a long time, or if the server state has changed and a new token is required.
 
@@ -78,8 +78,8 @@ After the full enumeration is completed, compare the returned items with your lo
 
 | Error type                     | Instructions                                                                                                                               |
 |:-------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------|
-| resyncChangesApplyDifferences  | Replace any local items with the versions from the server (including deletes) if you're sure that the service was up to date with your local changes when you last synchronized. Upload any local changes that the server doesn't know about. |
-| resyncChangesUploadDifferences | Upload any local items that the service didn't return, and upload any items that differ from the versions from the server. Keep both copies if you're not sure which one is more up-to-date.                                       |
+| resyncChangesApplyDifferences  | Replace any local items with the versions from the server (including deletes) if you're sure that the service was up-to-date with your local changes when you last synchronized. Upload any local changes that the server doesn't know about. |
+| resyncChangesUploadDifferences | Upload any local items that the service didn't return and upload any items that differ from the versions from the server. Keep both copies if you're not sure which one is more up-to-date.                                       |
 
 In addition to the resync errors and for more details about how errors are returned, see [Microsoft Graph error responses and resource types](/graph/errors).
 
@@ -130,7 +130,7 @@ Content-type: application/json
 
 ### Example 2: Last page request
 
-The following example shows a request to access the last page in a set and how to call this API to update your local state.
+The following example shows a request that accesses the last page in a set and how to call this API to update your local state.
 
 #### Request
 
@@ -186,7 +186,7 @@ The following example shows a request.
 <!-- { "blockType": "request", "name": "get-sites-delta-latest", "scopes": "sites.read", "tags": "service.graph", "target": "action" } -->
 
 ```http
-GET /sites/delta?token=latest
+GET https://graph.microsoft.com/beta/sites/delta?token=latest
 ```
 
 #### Response
