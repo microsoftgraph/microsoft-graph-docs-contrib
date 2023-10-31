@@ -24,6 +24,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [Get site for a group][] | site | Access the team site for a group.
 | [Get analytics][]              | [itemAnalytics][] | Get analytics for this resource.
 | [Get activities by interval][] | [itemActivityStat][] | Get a collection of **itemActivityStats** within the specified time interval.
+| [Get delta][] | [site](../resources/site.md) collection | Get newly created, updated, or deleted [sites](../resources/site.md) without having to perform a full read of the entire sites collection.
 | [Search for sites][]     | collection of site | Search across a SharePoint tenant for sites that match keywords provided.
 | [Follow site][]          | collection of site | Follow a user's site or multiple sites.
 | [Unfollow site][]        | collection of site | Follow a user's site or multiple sites.
