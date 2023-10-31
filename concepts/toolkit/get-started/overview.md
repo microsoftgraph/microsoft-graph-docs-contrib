@@ -100,6 +100,10 @@ The `@microsoft/mgt` package is the main package that includes all the preceding
 
 The <code>[@microsoft/mgt-react](./mgt-react.md)</code> package contains all the auto-generated React components and takes dependency on the `@microsoft/mgt` package.
 
+<b>@microsoft/mgt-chat</b>
+
+The <code>[@microsoft/mgt-chat](./mgt-react.md)</code> package contains all the chat React components and takes dependency on the `@microsoft/mgt-react` package.
+
 <b>@microsoft/mgt-spfx</b>
 
 The <code>[@microsoft/mgt-spfx](./mgt-spfx.md)</code> package contains a SharePoint Framework library that's required to use Microsoft Graph Toolkit in SharePoint Framework solutions.
