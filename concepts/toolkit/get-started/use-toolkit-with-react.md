@@ -87,20 +87,20 @@ Next, configure the authentication provider that the Microsoft Graph Toolkit sho
 
 1. In the code editor, open the **src/index.tsx** file, and to the list of imports, add:
 
-   ```TypeScript
-   import { Providers } from "@microsoft/mgt-element";
-   import { Msal2Provider } from "@microsoft/mgt-msal2-provider";
-   ```
+```TypeScript
+import { Providers } from "@microsoft/mgt-element";
+import { Msal2Provider } from "@microsoft/mgt-msal2-provider";
+```
 
 1. After the last `import` statement, initialize the Microsoft Graph Toolkit with MSAL provider.
 
-   ```TypeScript
-   Providers.globalProvider = new Msal2Provider({
-     clientId: 'REPLACE_WITH_CLIENTID'
-   });
-   ```
+```TypeScript
+Providers.globalProvider = new Msal2Provider({
+  clientId: 'REPLACE_WITH_CLIENTID'
+});
+```
 
-   Replace the value of the `clientId` property with the value of the `Application (client) ID` property you copied previously in the Microsoft Entra admin center app registration overview.
+Replace the value of the `clientId` property with the value of the `Application (client) ID` property you copied previously in the Microsoft Entra admin center app registration overview.
 
 With these changes, the **src/index.tsx** file will look like the following.
 
@@ -139,23 +139,23 @@ Add the **Login** Microsoft Graph Toolkit React component, which will display th
 
 1. In the code editor, open the **src/App.tsx** file, and to the list of imports add:
 
-   ```tsx
-   import { Login } from '@microsoft/mgt-react';
-   ```
+```TypeScript
+import { Login } from '@microsoft/mgt-react';
+```
 
 1. In the `App` function, replace the contents of the `return` clause with the basic structure including the Microsoft Graph Toolkit Login component:
 
-   ```tsx
-   <div className="App">
-     <header>
-       <Login />
-     </header>
-   </div>
-   ```
+```TypeScript
+<div className="app">
+  <header>
+    <Login />
+  </header>
+</div>
+```
 
 With these changes, the **src/App.tsx** file will look like the following.
 
-```tsx
+```TypeScript
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
@@ -163,7 +163,7 @@ import { Login } from '@microsoft/mgt-react';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
      <header>
        <Login />
      </header>
@@ -194,12 +194,12 @@ Before you can load data from Microsoft 365, you need to specify the list of per
 
 1. In the code editor, open the **src/index.tsx** file, and update the provider initialization code.
 
-   ```ts
-   Providers.globalProvider = new Msal2Provider({
-     clientId: 'REPLACE_WITH_CLIENTID',
-     scopes: ['calendars.read', 'user.read', 'openid', 'profile', 'people.read', 'user.readbasic.all']
-   });
-   ```
+```typescript
+Providers.globalProvider = new Msal2Provider({
+  clientId: 'REPLACE_WITH_CLIENTID',
+  scopes: ['calendars.read', 'user.read', 'openid', 'profile', 'people.read', 'user.readbasic.all']
+});
+```
 
 ### Show user's calendar data after signing in
 
@@ -211,39 +211,39 @@ To track the user's sign in state in your application, you will use the React `u
 
 1. In the code editor, open the **src/App.tsx** file and extend the existing React `import` statement.
 
-   ```ts
-   import React, { useState, useEffect } from 'react';
-   ```
+```typescript
+import React, { useState, useEffect } from 'react';
+```
 
 1. Import the `Provider` and `ProviderState` types from `mgt-element`, by adding to imports.
 
-   ```ts
-   import { Providers, ProviderState } from '@microsoft/mgt-element';
-   ```
+```typescript
+import { Providers, ProviderState } from '@microsoft/mgt-element';
+```
 
 1. Add a custom function named `useIsSignedIn` that enables tracking the user's sign in state in your application.
 
-   ```ts
-   function useIsSignedIn(): [boolean] {
-     const [isSignedIn, setIsSignedIn] = useState(false);
+```typescript
+function useIsSignedIn(): [boolean] {
+  const [isSignedIn, setIsSignedIn] = useState(false);
 
-     useEffect(() => {
-       const updateState = () => {
-         const provider = Providers.globalProvider;
-         setIsSignedIn(provider && provider.state === ProviderState.SignedIn);
-       };
+  useEffect(() => {
+    const updateState = () => {
+      const provider = Providers.globalProvider;
+      setIsSignedIn(provider && provider.state === ProviderState.SignedIn);
+    };
 
-       Providers.onProviderUpdated(updateState);
-       updateState();
+    Providers.onProviderUpdated(updateState);
+    updateState();
 
-       return () => {
-         Providers.removeProviderUpdatedListener(updateState);
-       }
-     }, []);
+    return () => {
+      Providers.removeProviderUpdatedListener(updateState);
+    }
+  }, []);
 
-     return [isSignedIn];
-   }
-   ```
+  return [isSignedIn];
+}
+```
 
 This function does two things. First, using the React `useState` hook, it enables tracking state inside your component. Whenever the state changes, React will re-render your component. Second, using the React `useEffect` hook, it extends the component's lifecycle by tracking changes in the Microsoft Graph Toolkit provider and updating the component if necessary.
 
@@ -253,30 +253,45 @@ Now that you track the user's sign in state in your application, you can show th
 
 1. In the code editor, open the **src/App.tsx** file, and extend the component `import` statement with the **Agenda** component.
 
-   ```ts
-   import { Agenda, Login } from '@microsoft/mgt-react';
-   ```
+```typescript
+import { Agenda, Login } from '@microsoft/mgt-react';
+```
 
 1. Next, inside the **App** function, add:
 
-   ```ts
-   const [isSignedIn] = useIsSignedIn();
-   ```
+```typescript
+const [isSignedIn] = useIsSignedIn();
+```
 
    This defines a Boolean `isSignedIn` constant, which you can use to determine whether the user is currently signed in to your application.
 
 1. Extend the contents of the `return` clause with an additional `div` and the Microsoft Graph Toolkit Agenda component.
 
-   ```tsx
-   <div>
-     {isSignedIn &&
-       <Agenda />}
-   </div>
-   ```
+```typescript
+<div className="row">
+  <div className="column">
+    {isSignedIn &&
+      <Agenda />}
+  </div>
+</div>
+```
+
+1. In the code editor, open the **src/App.css** file, and change the entire content of the file with the following code.
+
+```css
+.row {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.column {
+  flex: 0 0 50%;
+}
+```
 
 With these changes, the **src/App.tsx** file should look like the following.
 
-```TypeScript
+```typescript
 import { Providers, ProviderState } from '@microsoft/mgt-element';
 import { Agenda, Login } from '@microsoft/mgt-react';
 import React, { useState, useEffect } from 'react';
@@ -306,13 +321,15 @@ function App() {
   const [isSignedIn] = useIsSignedIn();
 
   return (
-    <div className="App">
+    <div className="app">
       <header>
         <Login />
       </header>
-      <div>
-        {isSignedIn &&
-          <Agenda />}
+      <div className="row">
+        <div className="column">
+          {isSignedIn &&
+            <Agenda />}
+        </div>
       </div>
     </div>
   );
@@ -324,39 +341,74 @@ export default App;
 ::: zone pivot="mgt-v4"
 ### Show user's chat conversation
 
-Next, extend the application to show a conversation from the users 1:1 and group conversations. You can access this information only after the user has signed in.
+Next, extend the application to show a conversation from the user's 1:1 and group conversations. You can access this information only after the user has signed in.
+
+### Update the required permissions for your application
+
+By adding the chat components to your application, you'll need to update the list of requested scopes to include the permissions required to access chat data. You can find the scopes required by each API in the [Microsoft Graph API documentation](/graph/api/overview).
+
+1. In the code editor, open the **src/index.tsx** file, and update the provider initialization code.
+
+```typescript
+import { allChatScopes } from '@microsoft/mgt-chat';
+
+Providers.globalProvider = new Msal2Provider({
+  clientId: 'REPLACE_WITH_CLIENTID',
+  scopes: ['calendars.read', 'user.read', 'openid', 'profile', 'people.read', 'user.readbasic.all', ...allChatScopes]
+});
+```
 
 #### Load user's chat conversation if user is signed in
 
-1. In the code editor, open the **src/App.tsx** file, and extend the component `import` statement with the **Agenda** component.
+1. In the code editor, open the **src/App.tsx** file, and extend the component `import` statement with the **Chat** component and types.
 
-   ```ts
-   import { Agenda, Login } from '@microsoft/mgt-react';
-   ```
+```typescript
+import { Chat, NewChat } from '@microsoft/mgt-chat';
+import { Chat as GraphChat } from '@microsoft/microsoft-graph-types';
+import React, { useState, useEffect, useCallback } from 'react';
+```
 
-1. Next, inside the **App** function, add:
+1. Next, inside the **App** function, add the necessary code to handle the user's interactions with the chat components.
 
-   ```ts
-   const [isSignedIn] = useIsSignedIn();
-   ```
+```typescript
+const [chatId, setChatId] = useState<string>();
 
-   This defines a Boolean `isSignedIn` constant, which you can use to determine whether the user is currently signed in to your application.
+const [showNewChat, setShowNewChat] = useState<boolean>(false);
+const onChatCreated = useCallback((chat: GraphChat) => {
+  setChatId(chat.id);
+  setShowNewChat(false);
+}, []);
+```
 
-1. Extend the contents of the `return` clause with an additional `div` and the Microsoft Graph Toolkit Agenda component.
+1. Then, extend the contents of the `return` clause with an additional `div` and the Microsoft Graph Toolkit Chat and New Chat components.
 
-   ```tsx
-   <div>
-     {isSignedIn &&
-       <Agenda />}
-   </div>
-   ```
+```typescript
+<div className="column">
+  {isSignedIn && (
+    <>
+      <button onClick={() => setShowNewChat(true)}>New Chat</button>
+      {showNewChat && (
+        <NewChat
+          onChatCreated={onChatCreated}
+          onCancelClicked={() => setShowNewChat(false)}
+          mode="auto"
+        />
+      )}
+      
+      {chatId && <Chat chatId={chatId} />}
+    </>
+  )}
+</div>
+```
 
 With these changes, the **src/App.tsx** file should look like the following.
 
 ```TypeScript
 import { Providers, ProviderState } from '@microsoft/mgt-element';
 import { Agenda, Login } from '@microsoft/mgt-react';
-import React, { useState, useEffect } from 'react';
+import { Chat, NewChat } from '@microsoft/mgt-chat';
+import { Chat as GraphChat } from '@microsoft/microsoft-graph-types';
+import React, { useState, useEffect, useCallback } from 'react';
 import './App.css';
 
 function useIsSignedIn(): [boolean] {
@@ -381,15 +433,40 @@ function useIsSignedIn(): [boolean] {
 
 function App() {
   const [isSignedIn] = useIsSignedIn();
+  const [chatId, setChatId] = useState<string>();
+
+  const [showNewChat, setShowNewChat] = useState<boolean>(false);
+  const onChatCreated = useCallback((chat: GraphChat) => {
+    setChatId(chat.id);
+    setShowNewChat(false);
+  }, []);
 
   return (
     <div className="App">
       <header>
         <Login />
       </header>
-      <div>
-        {isSignedIn &&
-          <Agenda />}
+      <div className="row">
+        <div className="column">
+          {isSignedIn &&
+            <Agenda />}
+        </div>
+        <div className="column">
+          {isSignedIn && (
+            <>
+              <button onClick={() => setShowNewChat(true)}>New Chat</button>
+              {showNewChat && (
+                <NewChat
+                  onChatCreated={onChatCreated}
+                  onCancelClicked={() => setShowNewChat(false)}
+                  mode="auto"
+                />
+              )}
+              
+              {chatId && <Chat chatId={chatId} />}
+            </>
+          )}
+        </div>
       </div>
     </div>
   );
@@ -399,15 +476,22 @@ export default App;
 ```
 ::: zone-end
 
-### Test showing user's calendar after they signed in
+### Test showing user's and chats after they signed in
 
 With these changes, after signing in to your application with your Microsoft account, you should see your calendar.
 
 1. To see the changes, close the browser and open it again, and go to `http://localhost:3000`. You do this because you changed the value of the `scopes` property, which affects the access token that you request from Microsoft Entra ID.
 1. Choose the **Sign In** button and sign in using your Microsoft account. Notice the additions to the list of permissions requested in the consent prompt. This is because you included additional permissions in the `scope` property.
+::: zone pivot="mgt-v3"
 1. After consenting to the use of the application, you should see information about the current user and their calendar.
-
 ![Finished app](../images/mgt-finished-app.png)
+::: zone-end
+::: zone pivot="mgt-v4"
+1. After consenting to the use of the application, you should see information about the current user, their calendar and the ability to create a new chat and start interacting with this user.
+![Finished app](../images/mgt-finished-app-v4.png)
+::: zone-end
+
+
 
 ## Next steps
 
