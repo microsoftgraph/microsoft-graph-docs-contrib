@@ -35,7 +35,7 @@ The following events are fired from the component.
 
 Event | When is it emitted | Custom data | Cancelable | Bubbles | Works with custom template
 ------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
-`onChatCreated` | Fired when a new chat thread is created. | The `chat` object that was created as a Microsoft Graph [chat](https://learn.microsoft.com/graph/api/resources/chat?view=graph-rest-1.0#json-representation). | No | No | No |
+`onChatCreated` | Fired when a new chat thread is created. | The `chat` object that was created as a Microsoft Graph [chat](/graph/api/resources/chat#json-representation). | No | No | No |
 `onCancelClicked` | Fired when user cancels the chat thread creation. | None | No | No | No |
 
 For more information about handling events, see [events](../customize-components/events.md).
@@ -50,7 +50,7 @@ This control uses the following Microsoft Graph APIs and permissions.
 
 | Configuration | Permission | API |
 | - | - | - |
-| Default | Chat.Create, ChatMessage.Send | [/chats](https://learn.microsoft.com/graph/api/chat-post?view=graph-rest-1.0&tabs=http), [/chats/{id}/messages](https://learn.microsoft.com/graph/api/chat-post-messages?view=graph-rest-1.0&tabs=http) |
+| Default | Chat.Create, ChatMessage.Send | [/chats](/graph/api/chat-post), [/chats/{id}/messages](/graph/api/chat-post-messages) |
 
 ## Authentication
 
