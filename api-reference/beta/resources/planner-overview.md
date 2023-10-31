@@ -18,11 +18,11 @@ Before you get started with the Planner API, it's helpful to understand how the 
 ## Plan containers
 In Microsoft Planner, plans are always contained by another resource. The containing resource determines the authorization rules of the plan and all the tasks in it, and the lifecycle of the plan. For example, for plans contained by Microsoft 365 groups, group members are able to create, edit, resolve, and delete tasks in the plan. Group members can also change some plan-level properties, such as the name of the plan or label names. Additionally, when the group is deleted, all the plans in the group are automatically deleted. Conversely if a group is restored, then all the plans are automatically restored.
 
-The most common type of container is a Microsoft 365 group.
+The most common type of container is a Group.
 
 ### Container type: Microsoft 365 groups
 
-Plans are commonly contained in Microsoft 365 groups in the Planner API.
+Plans are commonly contained in Groups in the Planner API.
 To [get the plans owned by a group](../api/plannergroup-list-plans.md), make the following HTTP request.
 
 ``` http
@@ -153,24 +153,24 @@ In addition to [general errors](/graph/errors) that apply to Microsoft Graph, so
 
 In some common scenarios, `POST` and `PATCH` requests can return a 400 status code. The following are some of the common causes:
 
-* Open Type properties aren't of correct types, or the type isn't specified, or they don't contain any properties. For example, [plannerAssignments](plannerassignments.md) properties with complex values need to declare **@odata.type** property with value `microsoft.graph.plannerAssignment`.
-* Order hint values don't have the [correct format](planner-order-hint-format.md). For example, an order hint value is being set directly to the value returned to the client.
+* Open Type properties had the wrong type specified or no type specified, or didn't contain any properties. For example, [plannerAssignments](plannerassignments.md) properties with complex values need to declare **@odata.type** property with value `microsoft.graph.plannerAssignment`.
+* Order hint values didn't have the [correct format](planner-order-hint-format.md). For example, an order hint value was set directly to the value returned to the client.
 * The data is logically inconsistent. For example, start date of task is later than due date of the task.
 
 ### 403 Forbidden
 
-In addition to the general errors, the Planner API also returns the `403` status code when a service-defined limit has been exceeded. If so, the **code** property on the error resource type indicates the type of the limit exceeded by the request.
+In addition to the general errors, the Planner API also returns the `403` status code when a service-defined limit is exceeded. If so, the **code** property on the error resource type indicates the type of the limit exceeded by the request.
 The following are the possible values for the limit types.
 
 | Value                         | Description                                                                                                                                                                                              |
 | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| MaximumProjectsOwnedByUser    | The maximum number of plans contained by a group limit has been exceeded. This limit applies to plans contained by a group based on the **container** property of the [plannerPlan](plannerplan.md) resource.                                         |
-| MaximumProjectsSharedWithUser | The maximum number of plans shared with a user limit has been exceeded.  This limit is based on the **sharedWith** property on the [plannerPlanDetails](plannerplandetails.md) resource.                   |
-| MaximumTasksCreatedByUser     | The maximum number of tasks created by a user limit has been exceeded. This limit is based on the **createdBy** property on the [plannerTask](plannertask.md) resource.                                    |
-| MaximumTasksAssignedToUser    | The maximum number of tasks assigned to a user limit has been exceeded. This limit is based on the **assignments** property on the [plannerTask](plannertask.md) resource.                                 |
-| MaximumTasksInProject         | The maximum number of tasks in a plan limit has been exceeded. This limit is based on the **planId** property on the [plannerTask](plannertask.md) resource.                                               |
-| MaximumActiveTasksInProject   | The maximum number of tasks that aren't completed in a plan limit has been exceeded. This limit is based on the **planId** and **percentComplete** properties on the [plannerTask](plannertask.md) resource. |
-| MaximumBucketsInProject       | The maximum number of buckets in a plan limit has been exceeded. This limit is based on the **planId** property on the [plannerBucket](plannerbucket.md) resource.                                         |
+| MaximumProjectsOwnedByUser    | The maximum number of plans contained by a group limit was exceeded. This limit applies to plans contained by a group based on the **container** property of the [plannerPlan](plannerplan.md) resource.                                         |
+| MaximumProjectsSharedWithUser | The maximum number of plans shared with a user limit was exceeded.  This limit is based on the **sharedWith** property on the [plannerPlanDetails](plannerplandetails.md) resource.                   |
+| MaximumTasksCreatedByUser     | The maximum number of tasks created by a user limit was exceeded. This limit is based on the **createdBy** property on the [plannerTask](plannertask.md) resource.                                    |
+| MaximumTasksAssignedToUser    | The maximum number of tasks assigned to a user limit was exceeded. This limit is based on the **assignments** property on the [plannerTask](plannertask.md) resource.                                 |
+| MaximumTasksInProject         | The maximum number of tasks in a plan limit was exceeded. This limit is based on the **planId** property on the [plannerTask](plannertask.md) resource.                                               |
+| MaximumActiveTasksInProject   | The maximum number of tasks that aren't completed in a plan limit was exceeded. This limit is based on the **planId** and **percentComplete** properties on the [plannerTask](plannertask.md) resource. |
+| MaximumBucketsInProject       | The maximum number of buckets in a plan limit was exceeded. This limit is based on the **planId** property on the [plannerBucket](plannerbucket.md) resource.                                         |
 | MaximumUsersSharedWithProject | The **sharedWith** property on the [plannerPlanDetails](plannerplandetails.md) resource contains too many values.                                                                                          |
 | MaximumReferencesOnTask       | The **references** property on the [plannerTaskDetails](plannertaskdetails.md) resource contains too many values.                                                                                          |
 | MaximumChecklistItemsOnTask   | The **checklist** property on the [plannerTaskDetails](plannertaskdetails.md) resource contains too many values.                                                                                           |
