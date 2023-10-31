@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new policyRule object.
+Create a new FilteringPolicy object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -72,8 +72,23 @@ POST https://graph.microsoft.com/beta/networkaccess/filteringPolicies
 Content-Type: application/json
 
 {
-	"name":"Test Policy","policyRules":[{"@odata.type":"#microsoft.graph.networkaccess.webCategoryFilteringRule","name":"Block Social","ruleType":"webCategory","destinations":[{"@odata.type":"#microsoft.graph.networkaccess.webCategory","name":"SocialNetworking"}]}],"@odata.type":"#microsoft.graph.networkaccess.filteringPolicy"
+    "name": "Test Policy",
+    "policyRules": [
+        {
+            "@odata.type": "#microsoft.graph.networkaccess.webCategoryFilteringRule",
+            "name": "Block Social",
+            "ruleType": "webCategory",
+            "destinations": [
+                {
+                    "@odata.type": "#microsoft.graph.networkaccess.webCategory",
+                    "name": "SocialNetworking"
+                }
+            ]
+        }
+    ],
+    "@odata.type": "#microsoft.graph.networkaccess.filteringPolicy"
 }
+
 ```
 
 

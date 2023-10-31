@@ -12224,8 +12224,6 @@ items:
                         href: api/networkaccess-filteringprofile-get.md
                       - name: Update
                         href: api/networkaccess-filteringprofile-update.md
-                      - name: List policies
-                        href: api/networkaccess-filteringprofile-list-policies.md
                       - name: Create policyLink
                         href: api/networkaccess-filteringpolicy-post-policyrules.md
                   - name: Filtering Policy
