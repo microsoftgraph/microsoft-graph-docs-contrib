@@ -1,7 +1,8 @@
 ---
 title: "List emailAuthenticationMethods"
 description: "Get a list of the emailAuthenticationMethod objects and their properties."
-author: "tilarso"
+author: author: "tilarso"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

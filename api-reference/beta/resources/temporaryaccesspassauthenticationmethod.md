@@ -1,7 +1,8 @@
 ---
 title: "temporaryAccessPassAuthenticationMethod resource type"
 description: "Represents a Temporary Access Pass registered to a user."
-author: "tilarso"
+author: author: "tilarso"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
