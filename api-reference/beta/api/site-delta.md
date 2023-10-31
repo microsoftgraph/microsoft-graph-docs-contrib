@@ -200,8 +200,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "value": [ ],
-    "@odata.deltaLink": "https://graph.microsoft.com/beta/sites/delta?token=1230919asd190410jlka"
+  "value": [],
+  "@odata.deltaLink": "https://graph.microsoft.com/beta/sites/delta?token=1230919asd190410jlka"
 }
 ```
 
