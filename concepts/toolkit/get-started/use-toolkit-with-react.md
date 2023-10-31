@@ -143,7 +143,7 @@ Add the **Login** Microsoft Graph Toolkit React component to allow users to sign
     import { Login } from '@microsoft/mgt-react';
     ```
 
-1. In the `App` function, replace the contents of the `return` clause with the basic structure including the Microsoft Graph Toolkit Login component:
+1. In the `App` function, replace the contents of the `return` clause with the basic structure including the Microsoft Graph Toolkit `<Login />` component:
 
     ```TypeScript
     <div className="app">
@@ -207,7 +207,7 @@ Next, extend the application to show data from the user's calendar. You can acce
 
 #### Track user's sign in state
 
-To track the user's sign in state, use the React `useState` and `useEffect` hooks in combination with provider event handlers.
+You need to track the user's sign in state and use the React `useState` and `useEffect` hooks in combination with provider event handlers.
 
 1. In the code editor, open the **src/App.tsx** file and extend the existing React `import` statement.
 
@@ -251,7 +251,7 @@ This function does two things. First, using the React `useState` hook, it enable
 
 Now that you track the user's sign in state in your application, you can show their calendar after they signed in.
 
-1. In the code editor, open the **src/App.tsx** file, and extend the component `import` statement with the **Agenda** component.
+1. In the code editor, open the **src/App.tsx** file, and extend the component `import` statement with the `<Agenda />` component.
 
     ```TypeScript
     import { Agenda, Login } from '@microsoft/mgt-react';
@@ -265,7 +265,7 @@ Now that you track the user's sign in state in your application, you can show th
 
 This code defines a Boolean `isSignedIn` constant, which you can use to determine whether the user is currently signed in to your application.
 
-1. Extend the contents of the `return` clause with an extra `div` and the Microsoft Graph Toolkit Agenda component.
+1. Extend the contents of the `return` clause with an extra `div` and the Microsoft Graph Toolkit `<Agenda />` component.
 
     ```TypeScript
     <div className="row">
@@ -380,7 +380,7 @@ By adding the chat components to your application, you need to update the list o
     }, []);
     ```
 
-1. Then, extend the contents of the `return` clause with an extra `div` and the Microsoft Graph Toolkit Chat and New Chat components.
+1. Then, extend the contents of the `return` clause with an extra `div` and the Microsoft Graph Toolkit `<Chat />` and `<NewChat />` components.
 
     ```TypeScript
     <div className="column">
@@ -492,7 +492,7 @@ With these changes, after signing in to your application with your Microsoft acc
 
 1. To see the changes, refresh your browser at `http://localhost:3000`.
 1. Choose the **Sign In** button and sign in using your Microsoft account.
-1. After consenting to the use of the application, you should see information about the current user, their calendar and the ability to create a new chat and start interacting with this user.
+1. After consenting to the use of the application, you should see information about the current user. You also see their calendar and the ability to create a new chat and start interacting with this user.
 ![Finished app](../images/mgt-finished-app-v4.png)
 ::: zone-end
 
