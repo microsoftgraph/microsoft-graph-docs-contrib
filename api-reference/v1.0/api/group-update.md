@@ -61,6 +61,8 @@ The following table specifies the properties that can be updated.
 > - Only a subset of the group API pertaining to core group administration and management support application and delegated permissions. All other members of the group API, including updating **autoSubscribeNewMembers**, support only delegated permissions.
 >
 > - The rules for updating mail-enabled security groups in Microsoft Exchange Server can be complex; to learn more, see [Manage mail-enabled security groups in Exchange Server](/Exchange/recipients/mail-enabled-security-groups).
+>
+> - The Application permission is not supported when updating assignedLabels.
 
 ### Manage extensions and associated data
 
