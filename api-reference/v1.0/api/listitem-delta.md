@@ -16,18 +16,16 @@ Your app begins by calling `delta` without any parameters.
 The service starts enumerating the hierarchy of the list, returning pages of items, and either an **@odata.nextLink** or an **@odata.deltaLink**.
 Your app should continue calling with the **@odata.nextLink** until you see an **@odata.deltaLink** returned.
 
-After you have received all the changes, you might apply them to your local state.
+After you have received all the changes, you may apply them to your local state.
 To check for changes in the future, call `delta` again with the **@odata.deltaLink** from the previous response.
 
 The delta feed shows the latest state for each item, not each change. If an item were renamed twice, it only shows up once, with its latest name.
 The same item might appear more than once in a delta feed, for various reasons. You should use the last occurrence you see.
 
-Deleted items are returned with the [deleted](../resources/deleted.md) facet and **@removed** annotation with the reason of removal. Deleted indicates that the item is deleted and can't be restored.
+Deleted items are returned with the [deleted](../resources/deleted.md) facet and **@removed** annotation with the reason of removal. `Deleted` indicates that the item is deleted and can't be restored.
 Items with this property should be removed from your local state.
 
 > **Note:** You should only delete a folder locally if it's empty after syncing all the changes.
-
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -76,7 +74,7 @@ In addition to a collection of **listItem** objects, the response also includes 
 | Name             | Value  | Description                                                                                                                                     |
 |:-----------------|:-------|:------------------------------------------------------------------------------------------------------------------------------------------------|
 | @odata.nextLink  | URL    | A URL to retrieve the next available page of changes if there are additional changes in the current set.                                        |
-| @odata.deltaLink | URL    | A URL returned instead of **@odata.nextLink** after all current changes have been returned. Used to read the next set of changes in the future. |
+| @odata.deltaLink | URL    | A URL returned instead of **@odata.nextLink** after all current changes have been returned. Use this property to read the next set of changes in the future. |
 
 In some cases, the service returns a `410 Gone` response code with an error response that contains one of the following error codes, and a `Location` header that contains a new `nextLink` that starts a fresh delta enumeration. This occurs when the service can't provide a list of changes for a given token; for example, if a client tries to reuse an old token after being disconnected for a long time, or if the server state has changed and a new token is required.
 
@@ -84,8 +82,8 @@ After the full enumeration is completed, compare the returned items with your lo
 
 | Error type                     | Instructions                                                                                                                               |
 |:-------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------|
-| resyncChangesApplyDifferences  | Replace any local items with the versions from the server (including deletes) if you're sure that the service was up to date with your local changes when you last synchronized. Upload any local changes that the server doesn't know about. |
-| resyncChangesUploadDifferences | Upload any local items that the service didn't return, and upload any items that differ from the versions from the server. Keep both copies if you're not sure which one is more up-to-date.                                       |
+| resyncChangesApplyDifferences  | Replace any local items with the versions from the server (including deletes) if you're sure that the service was up-to-date with your local changes when you last synchronized. Upload any local changes that the server doesn't know about. |
+| resyncChangesUploadDifferences | Upload any local items that the service didn't return and upload any items that differ from the versions from the server. Keep both copies if you're not sure which one is more up-to-date.                                       |
 
 In addition to the resync errors and for more details about how errors are returned, see [Microsoft Graph error responses and resource types](/graph/errors).
 
@@ -187,7 +185,7 @@ Content-type: application/json
 
 ### Example 2: Last page request
 
-The following example shows a request to access the last page in a set and how to call this API to update your local state.
+The following example shows a request that accesses the last page in a set and how to call this API to update your local state.
 
 #### Request
 
@@ -205,7 +203,7 @@ The following example shows the response that indicates that the item named `Tes
 
 The final page of items includes the **@odata.deltaLink** property that provides the URL that can be used later to retrieve changes since the current set of items.
 
-<!-- { "blockType": "response", "name": "get-listItem-delta-last", "truncated": true, "@odata.type": "microsoft.graph.listItem", "isCollection": true,  "scope": "site.read" } -->
+<!-- { "blockType": "response", "name": "get-listItem-delta-last", "truncated": true, "@odata.type": "Collection(microsoft.graph.listItem)",  "scope": "site.read" } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -267,28 +265,28 @@ The following example shows a request.
 <!-- { "blockType": "request", "name": "get-delta-latest_datalink_tokenislatest", "scope": "sites.read", "target": "action", "sampleKeys": ["contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE","22e03ef3-6ef4-424d-a1d3-92a337807c30"] } -->
 
 ```msgraph-interactive
-GET /sites/contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE/lists/22e03ef3-6ef4-424d-a1d3-92a337807c30/items/delta?token=latest
+GET https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE/lists/22e03ef3-6ef4-424d-a1d3-92a337807c30/items/delta?token=latest
 ```
 
 #### Response
 
 The following example shows the response.
 
-<!-- { "blockType": "response", "name": "get-delta-latest_datalink_tokenislatest", "isEmpty": true, "@odata.type": "microsoft.graph.listItem", "isCollection": true } -->
+<!-- { "blockType": "response", "name": "get-delta-latest_datalink_tokenislatest", "isEmpty": true, "@odata.type": "Collection(microsoft.graph.listItem)" } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "value": [ ],
-    "@odata.deltaLink": "https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE/lists/22e03ef3-6ef4-424d-a1d3-92a337807c30/items/delta?token=1230919asd190410jlka"
+  "value": [],
+  "@odata.deltaLink": "https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE/lists/22e03ef3-6ef4-424d-a1d3-92a337807c30/items/delta?token=1230919asd190410jlka"
 }
 ```
 
 ## See also
-[Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview)
-[Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance)
+- [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview)
+- [Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance)
 
 <!-- {
   "type": "#page.annotation",
