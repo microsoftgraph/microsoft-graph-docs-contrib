@@ -38,9 +38,9 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|startDateTime|DateTimeOffset|Timestamp that indicates the starting date and time for summarizing data within the specified report.|
-|endDateTime|DateTimeOffset|Timestamp that indicates the ending date and time for summarizing data within the specified report.|
-|discoveryPivotDateTime|DateTimeOffset|The time that defines what is new discovered tenant.|
+|startDateTime|DateTimeOffset|Timestamp indicating the beginning of the report period.|
+|endDateTime|DateTimeOffset|Timestamp indicating the end of the report period.|
+|discoveryPivotDateTime|DateTimeOffset|Timestamp defining when new tenant discoveries occur.|
 
 
 ## Request headers

@@ -1,6 +1,6 @@
 ---
 title: "reports: destinationReport"
-description: "Get a report of all destinations network traffic that were captured."
+description: "Retrieve a report containing information about all outgoing network connections within a specified time frame."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a report of all destinations network traffic that were captured.
+Retrieve a report containing information about all outgoing network connections within a specified time frame.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -41,8 +41,8 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|startDateTime|DateTimeOffset|Timestamp that indicates the starting date and time for summarizing data within the specified report, providing the beginning point for data aggregation and analysis.|
-|endDateTime|DateTimeOffset|Timestamp that indicates the ending date and time for summarizing data within the specified report, marking the conclusion of the data aggregation and analysis period.|
+|startDateTime|DateTimeOffset|Timestamp indicating the beginning of the report period.|
+|endDateTime|DateTimeOffset|Timestamp indicating the end of the report period.|
 
 
 ## Request headers
