@@ -1,6 +1,6 @@
 ---
 title: "Create filteringRule"
-description: "Create new microsoft.graph.networkaccess.filteringRule object."
+description: "Create a new filtering rule."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create new [microsoft.graph.networkaccess.filteringRule] microsoft.graph.networkaccess.filteringRule object.
+Create a new filtering rule.
 
 
 ## Permissions
@@ -37,7 +37,7 @@ POST networkaccess/filteringPolicies/{filteringPoliciesId}/policyRules
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method support $expand OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
