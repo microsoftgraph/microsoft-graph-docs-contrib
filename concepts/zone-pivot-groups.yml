@@ -9,10 +9,10 @@ groups:
   - id: grant-delegated-permissions
     title: Delegated permissions
 - id: mgt-version
-  title: Build an application with Microsoft Graph Toolkit v3 or v4
-  prompt: Before you begin, select the version of the Toolkit you want to use
+  title: Build a React with Microsoft Graph Toolkit
+  prompt: Before you begin, select the type of application you want to build
   pivots:
-  - id: mgt-v3
-    title: Graph Toolkit v3
-  - id: mgt-v4
-    title: Graph Toolkit v4 (Preview)
+  - id: mgt-react
+    title: Graph Toolkit with React
+  - id: mgt-react-chat
+    title: Graph Toolkit with React (including Chat)

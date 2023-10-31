@@ -10,11 +10,11 @@ zone_pivot_groups: mgt-version
 
 Microsoft Graph Toolkit is a set of web components that simplify connecting to Microsoft Graph and allow you to focus on your application instead. Microsoft Graph Toolkit is available as a generic set of web components distributed through the `@microsoft/mgt-components` npm package.
 
-::: zone pivot="mgt-v3"
+::: zone pivot="mgt-react"
 If you're building apps with React, you can use the [`@microsoft/mgt-react` package](./mgt-react.md), which wraps Microsoft Graph Toolkit web components in React components and makes it easier to pass complex data.
 ::: zone-end
 
-::: zone pivot="mgt-v4"
+::: zone pivot="mgt-react-chat"
 If you're building apps with React, you can use the [`@microsoft/mgt-react` package](./mgt-react.md), which wraps Microsoft Graph Toolkit web components in React components and makes it easier to pass complex data. You can also use the `@microsoft/mgt-chat` package, which contains the [`mgt-chat`](../components/chat.md) and [`mgt-new-chat`](../components/new-chat.md) components.
 ::: zone-end
 
@@ -41,7 +41,7 @@ Change the working directory to the newly created app.
 cd my-m365-app
 ```
 
-::: zone pivot="mgt-v3"
+::: zone pivot="mgt-react"
 Next, install the `mgt-react`, `mgt-element` and `mgt-msal2-provider` npm packages, which contain the Microsoft Graph Toolkit React components, the core Toolkit capabilities and the MSAL2 authentication provider.
 
 ```bash
@@ -50,7 +50,7 @@ npm i @microsoft/mgt-react @microsoft/mgt-element @microsoft/mgt-msal2-provider
 
 ::: zone-end
 
-::: zone pivot="mgt-v4"
+::: zone pivot="mgt-react-chat"
 Next, install the `mgt-react`, `mgt-chat` `mgt-element` and `mgt-msal2-provider` npm packages, which contain the Microsoft Graph Toolkit React components, the core Toolkit capabilities and the MSAL2 authentication provider.
 
 ```bash
@@ -338,7 +338,7 @@ function App() {
 export default App;
 ```
 
-::: zone pivot="mgt-v4"
+::: zone pivot="mgt-react-chat"
 ### Show user's chat conversation
 
 Next, extend the application to show a conversation from the user's 1:1 and group conversations. You can access this information only after the user has signed in.
@@ -482,11 +482,11 @@ With these changes, after signing in to your application with your Microsoft acc
 
 1. To see the changes, refresh your browser at `http://localhost:3000`.
 1. Choose the **Sign In** button and sign in using your Microsoft account.
-::: zone pivot="mgt-v3"
+::: zone pivot="mgt-react"
 1. After consenting to the use of the application, you should see information about the current user and their calendar.
 ![Finished app](../images/mgt-finished-app.png)
 ::: zone-end
-::: zone pivot="mgt-v4"
+::: zone pivot="mgt-react-chat"
 1. After consenting to the use of the application, you should see information about the current user, their calendar and the ability to create a new chat and start interacting with this user.
 ![Finished app](../images/mgt-finished-app-v4.png)
 ::: zone-end
