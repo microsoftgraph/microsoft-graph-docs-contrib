@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "remoteDesktopSecurityConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [remoteDesktopSecurityConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/remoteDesktopSecurityConfiguration?view=graph-rest-1.0) resource",
+          "Description": "Added the [remoteDesktopSecurityConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/remoteDesktopSecurityConfiguration?view=graph-rest-1.0) resource type and associated methods.",
           "Target": "remoteDesktopSecurityConfiguration"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "targetDeviceGroup",
           "ChangeType": "Addition",
-          "Description": "Added the [targetDeviceGroup](https://learn.microsoft.com/en-us/graph/api/resources/targetDeviceGroup?view=graph-rest-1.0) resource",
+          "Description": "Added the [targetDeviceGroup](https://learn.microsoft.com/en-us/graph/api/resources/targetDeviceGroup?view=graph-rest-1.0) resource type and associated methods.",
           "Target": "targetDeviceGroup"
         }
       ],
