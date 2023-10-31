@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a container for a [plannerPlan](plannerPlan.md). The container is a resource that specifies authorization rules and the lifetime of the plan. Only people authorized to work with the resource containing the plan are allowed to work with the plan and the tasks within it. When the containing resource is deleted, the contained plans are also deleted. Properties of **plannerPlanContainer** are only changed when a plan is moved from one container to another, using [plan move to container](../api/plannerplan-movetocontainer.md).
+Represents a container for a [plannerPlan](plannerPlan.md). The container is a resource that specifies authorization rules and the lifetime of the plan. Only people authorized to work with the resource containing the plan are allowed to work with the plan and its tasks. When the containing resource is deleted, the contained plans are also deleted. Properties of **plannerPlanContainer** are only changed when a plan is moved from one container to another, using [plan move to container](../api/plannerplan-movetocontainer.md).
 
 Planner currently supports the container types listed in the following table. When a request is received to create a plan, the **containerUrl** property must be specified with the path of the resource identified in the table.
 
