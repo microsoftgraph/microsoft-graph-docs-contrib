@@ -11,7 +11,7 @@ author: sebastienlevert
 > This component is in Preview and is subject to change. The use of these components in production applications is not supported.
 
 > [!NOTE]
-> This component is only available as a React component but this is subject to change.
+> This component is currently only available as a React component and doesn't have a web component equivalent.
 
 The chat component enables the user to have full 1:1 or group conversations. It works with any conversation happening in Microsoft Teams. This component doesn't support Channel conversations.
 
@@ -19,9 +19,14 @@ The chat component enables the user to have full 1:1 or group conversations. It 
 
 The following example displays a file using the `mgt-chat` component.
 
-<iframe src="https://mgt.dev/iframe.html?id=components-mgt-file-list--file-list&source=docs" height="250"></iframe>
+<iframe src="https://codesandbox.io/embed/mgt-chat-zh4njl?autoresize=1&fontsize=14&hidenavigation=1&module=%2Fsrc%2FApp.tsx&theme=light"
+     style="width:100%; height:400px; border:0; border-radius: 4px; overflow:hidden;"
+     title="mgt-chat"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-file-list--file-list&source=docs)
+[Open this example in CodeSandbox](https://codesandbox.io/s/mgt-chat-zh4njl)
 
 ## Properties
 
@@ -29,7 +34,7 @@ The following example displays a file using the `mgt-chat` component.
 | --------------------------------- | ---------------- | ------------------------------------------------------------------------------------------------------ |
 | chat-id                         | chatId         | A string ID to set the 1:1 or group conversation to render. Required. |
 
-```tsx
+```typescript
 <Chat chatId="19:25fdc88d202440b78e9229773cbb1713@thread.v2" />
 ```
 

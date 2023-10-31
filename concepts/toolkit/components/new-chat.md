@@ -11,9 +11,22 @@ author: sebastienlevert
 > This component is in Preview and is subject to change. The use of these components in production applications is not supported.
 
 > [!NOTE]
-> This component is only available as a React component but this is subject to change.
+> This component is currently only available as a React component and doesn't have a web component equivalent.
 
 The new chat component allows user to create new 1:1 or group conversations in Microsoft Teams.
+
+## Example
+
+The following example displays a file using the `mgt-new-chat` component.
+
+<iframe src="https://codesandbox.io/embed/mgt-new-chat-gyf5g5?fontsize=12&hidenavigation=1&module=%2Fsrc%2FApp.tsx&theme=light"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="mgt-new-chat"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
+
+[Open this example in CodeSandbox](https://codesandbox.io/s/mgt-new-chat-gyf5g5)
 
 ## Properties
 
@@ -21,7 +34,7 @@ The new chat component allows user to create new 1:1 or group conversations in M
 | - | - | - |
 | mode | mode | Set to `oneOnOne`, `group` or `auto`. Default is `auto`. |
 
-```tsx
+```typescript
 <NewChat mode="group" />
 ```
 
