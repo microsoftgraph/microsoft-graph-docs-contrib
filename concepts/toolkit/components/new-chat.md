@@ -19,9 +19,9 @@ The new chat component allows user to create new 1:1 or group conversations in M
 
 The following example displays a file using the `mgt-new-chat` component.
 
-<iframe src="https://codesandbox.io/embed/mgt-new-chat-gyf5g5?fontsize=12&hidenavigation=1&module=%2Fsrc%2FApp.tsx&theme=light" height="500"></iframe>
+<iframe height="500" src="https://codepen.io/sebastienlevert/embed/NWoNoWR?default-tab=js%2Cresult&theme-id=light"></iframe>
 
-[Open this example in CodeSandbox](https://codesandbox.io/s/mgt-new-chat-gyf5g5)
+[Open this example on Codepen](https://codepen.io/sebastienlevert/pen/NWoNoWR)
 
 ## Properties
 

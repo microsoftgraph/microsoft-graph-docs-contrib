@@ -19,9 +19,9 @@ The chat component enables the user to have full 1:1 or group conversations. It 
 
 The following example displays a file using the `mgt-chat` component.
 
-<iframe src="https://codesandbox.io/embed/mgt-chat-zh4njl?fontsize=12&hidenavigation=1&module=%2Fsrc%2FApp.tsx&theme=light" height="500"></iframe>
+<iframe height="500" src="https://codepen.io/sebastienlevert/embed/gOqrqYO?default-tab=js%2Cresult&theme-id=light"></iframe>
 
-[Open this example in CodeSandbox](https://codesandbox.io/s/mgt-chat-zh4njl)
+[Open this example on Codepen](https://codepen.io/sebastienlevert/pen/gOqrqYO)
 
 ## Properties
 
