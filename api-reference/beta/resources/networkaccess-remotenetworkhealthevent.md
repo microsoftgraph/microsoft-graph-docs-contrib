@@ -1,6 +1,6 @@
 ---
 title: "remoteNetworkHealthEvent resource type"
-description: "remoteNetworkHealthEvent providing essential insights into remote network health."
+description: "Providing detailed insights into remote network health, status, metrics, and operations."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-remoteNetworkHealthEvent providing essential insights into remote network health.
+Providing detailed insights into remote network health, status, metrics, and operations.
 This is an abstract type.
 
 ## Methods
@@ -31,6 +31,9 @@ This is an abstract type.
 |id|String|A unique identifier for each remoteNetworkHealthEvent.|
 |remoteNetworkId|String|A unique identifier for each remoteNetwork site.|
 |sourceIp|String|The public IP address.|
+|status|microsoft.graph.networkaccess.remoteNetworkStatus|The possible values are: `tunnelDisconnected`, `tunnelConnected`, `bgpDisconnected`, `bgpConnected`, `remoteNetworkAlive`, `unknownFutureValue`.|
+|sentBytes|Int64|The number of bytes sent from the source to the destination for the connection or session.|
+|receivedBytes|Int64|The number of bytes sent from the destination to the source.|
 
 ## Relationships
 None.
