@@ -1,6 +1,6 @@
 ---
 title: "Update profilePhoto"
-description: "Update the photo for any user in the tenant including the signed-in user, or the specified group or contact or team."
+description: "Update the photo for any user in the tenant, including the signed-in user, or the specified group or contact or team."
 ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
@@ -105,7 +105,7 @@ PUT /users/{id | userPrincipalName}/photo/$value
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type  | e.g. image/jpeg. Required.  |
+| Content-Type  | e.g., image/jpeg. Required.  |
 
 ## Request body
 In the request body, include the binary data of the photo.
@@ -118,7 +118,7 @@ If successful, this method returns a `200 OK` response code or a `204 No Content
 ### Example 1: Update the profile photo of a user
 #### Request
 
-The following is an example of a request.
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -153,7 +153,7 @@ Binary data for the image
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response"
@@ -166,7 +166,7 @@ HTTP/1.1 200 OK
 
 #### Request
 
-The following is an example of a request to update a team photo.
+Here's an example of a request to update a team photo.
 
 
 # [HTTP](#tab/http)
@@ -201,7 +201,7 @@ Binary data for the image
 
 #### Response
 
-The following example shows the response.
+Here's an example that shows the response.
 
 <!-- {
   "blockType": "response",
