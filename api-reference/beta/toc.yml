@@ -16778,7 +16778,7 @@ items:
                 href: api/site-list-contenttypes.md
               - name: List followed sites
                 href: api/sites-list-followed.md
-               - name: List operations
+              - name: List operations
                 href: api/site-list-operations.md               
               - name: List recycle bin items
                 href: api/recyclebin-list-items.md
