@@ -1,6 +1,6 @@
 ---
 title: "List teamsApp"
-description: "List Teams apps published in the tenant app catalog."
+description: "List apps from the Microsoft Teams app catalog."
 author: "nkramer"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -70,7 +70,7 @@ The following example lists all applications that are specific to your tenant.
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -151,7 +151,7 @@ The following example lists applications with a given ID.
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -199,6 +199,8 @@ GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=id eq 'b1c535
 
 #### Response
 
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.teamsApp",
@@ -228,7 +230,7 @@ The following example lists applications that match the **id** specified in the 
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -308,7 +310,7 @@ The following example lists applications with a given ID, and expands **appDefin
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -401,7 +403,7 @@ The following example lists only those apps in the catalog that contain a bot.
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -554,7 +556,7 @@ The following example lists the apps with a given ID and returns the resource-sp
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

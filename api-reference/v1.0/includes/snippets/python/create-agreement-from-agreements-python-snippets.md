@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Agreement(
 	display_name = "Contoso ToU for guest users",
@@ -20,10 +20,10 @@ request_body = Agreement(
 				data = base64.urlsafe_b64decode("SGVsbG8gd29ybGQ=//truncated-binary"),
 			),
 		),
-	]
+	],
 )
 
-result = await graph_client.identity_governance.term_of_use.agreements.post(body = request_body)
+result = await graph_client.identity_governance.terms_of_use.agreements.post(request_body)
 
 
 ```

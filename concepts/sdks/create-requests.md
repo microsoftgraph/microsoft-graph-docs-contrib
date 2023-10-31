@@ -314,6 +314,7 @@ You can attach custom headers to a request using a `Header()` function. For Powe
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-headers.md)]
 
 # [Python](#tab/python)
+
 :::code language="python" source="./snippets/python/src/snippets/create_requests.py" id="HeadersRequestSnippet":::
 
 # [TypeScript](#tab/typescript)
