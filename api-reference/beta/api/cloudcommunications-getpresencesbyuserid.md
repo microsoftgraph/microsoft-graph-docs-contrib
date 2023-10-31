@@ -15,10 +15,10 @@ Namespace: microsoft.graph
 
 Get the [presence](../resources/presence.md) information for multiple users.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 > **Note:**
 > This API allows users to subscribe only to another user's presence. If an application wants to subscribe to presence information for all users, it uses fictitious users to create the subscription to collect the required data.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
