@@ -4,6 +4,7 @@ title: "iPv4CidrRange resource type"
 description: "Represents an IPv4 range using the CIDR notation."
 ms.localizationpriority: medium
 author: "lisaychuang"
+ms.reviewer: conditionalaccesspm
 ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
