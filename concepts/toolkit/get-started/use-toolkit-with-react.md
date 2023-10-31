@@ -179,7 +179,7 @@ export default App;
 You should now be able to sign in to your application with your Microsoft account.
 
 1. Go back to the browser where your React app is running. You should now see a **Sign in** button.
-1. When you select the **Sign in** button, you are prompted to sign in with your Microsoft account (you can use the same account as the one you accessed the Azure portal with).
+1. When you select the **Sign in** button, you're prompted to sign in with your Microsoft account (you can use the same account as the one you accessed the Azure portal with).
 1. The first time you're using this Microsoft Entra application, you need to consent its use in your organization.
 1. After signing in, you'll be redirected to your React app. Notice that the **Sign in** button changed to show your user's name
    ![React app showing user info retrieved from Microsoft 365 using Microsoft Graph Toolkit](../images/mgt-react-userinfo.png).
@@ -203,11 +203,11 @@ Before you can load data from Microsoft 365, you need to specify the list of per
 
 ### Show user's calendar data after signing in
 
-Next, extend the application to show data from the user's calendar. You can access this information only after the user has signed in. To do this, you need to track the user's sign in state and show the calendar data after the user has signed in with their Microsoft account.
+Next, extend the application to show data from the user's calendar. You can access this information only after the user has signed in. You need to track the user's sign in state and show the calendar data after the user has signed in with their Microsoft account.
 
 #### Track user's sign in state
 
-To track the user's sign in state in your application, use the React `useState` and `useEffect` hooks in combination with provider event handlers.
+To track the user's sign in state, use the React `useState` and `useEffect` hooks in combination with provider event handlers.
 
 1. In the code editor, open the **src/App.tsx** file and extend the existing React `import` statement.
 
@@ -481,7 +481,7 @@ export default App;
 With these changes, after signing in to your application with your Microsoft account, you should see your calendar.
 
 1. To see the changes, refresh your browser at `http://localhost:3000`.
-1. Choose the **Sign In** button and sign in using your Microsoft account. Notice the additions to the list of permissions requested in the consent screen. This is because you included additional permissions in the `scope` property.
+1. Choose the **Sign In** button and sign in using your Microsoft account.
 ::: zone pivot="mgt-v3"
 1. After consenting to the use of the application, you should see information about the current user and their calendar.
 ![Finished app](../images/mgt-finished-app.png)
