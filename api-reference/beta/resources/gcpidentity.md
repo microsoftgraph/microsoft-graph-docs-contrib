@@ -18,6 +18,13 @@ Namespace: microsoft.graph
 
 Inherits from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).
 
+The following resources inherit from this resource type:
+
+- [gcpServiceAccount](gcpserviceaccount.md)
+- [gcpUser](gcpuser.md)
+- [gcpCloudFunction](gcpcloudfunction.md)
+- [gcpGroup](gcpgroup.md)
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -43,7 +50,7 @@ Inherits from [authorizationSystemIdentity](../resources/authorizationsystemiden
 |authorizationSystem|[authorizationSystem](../resources/authorizationsystem.md)|**TODO: Add Description** Inherited from [microsoft.graph.authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

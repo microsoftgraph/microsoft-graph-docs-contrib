@@ -29,7 +29,7 @@ None.
 |authorizationSystems|[microsoft.graph.authorizationSystem](../resources/authorizationsystem.md) collection|Represents an onboarded AWS account, Azure subscription, or GCP project that Entra Permissions Management will collect and analyze permissions and actions on.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

@@ -3,7 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Enumeration",
           "ChangedApiName": "awsStatementEffect",
           "ChangeType": "Addition",
@@ -11,7 +11,7 @@
           "Target": "awsStatementEffect"
         },
         {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Enumeration",
           "ChangedApiName": "permissionsDefinitionIdentityType",
           "ChangeType": "Addition",
@@ -19,7 +19,7 @@
           "Target": "permissionsDefinitionIdentityType"
         },
         {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Enumeration",
           "ChangedApiName": "permissionsRequestOccurrenceStatus",
           "ChangeType": "Addition",
@@ -27,7 +27,7 @@
           "Target": "permissionsRequestOccurrenceStatus"
         },
         {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Enumeration",
           "ChangedApiName": "statusDetail",
           "ChangeType": "Addition",
@@ -35,7 +35,7 @@
           "Target": "statusDetail"
         },
         {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Resource",
           "ChangedApiName": "awsActionsPermissionsDefinitionAction",
           "ChangeType": "Addition",
@@ -43,7 +43,7 @@
           "Target": "awsActionsPermissionsDefinitionAction"
         },
         {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Resource",
           "ChangedApiName": "awsCondition",
           "ChangeType": "Addition",
@@ -51,7 +51,7 @@
           "Target": "awsCondition"
         },
         {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Resource",
           "ChangedApiName": "awsIdentitySource",
           "ChangeType": "Addition",
@@ -59,7 +59,7 @@
           "Target": "awsIdentitySource"
         },
         {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Resource",
           "ChangedApiName": "awsPermissionsDefinition",
           "ChangeType": "Addition",
@@ -67,7 +67,7 @@
           "Target": "awsPermissionsDefinition"
         },
         {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Resource",
           "ChangedApiName": "awsPermissionsDefinitionAction",
           "ChangeType": "Addition",
@@ -75,7 +75,7 @@
           "Target": "awsPermissionsDefinitionAction"
         },
         {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Resource",
           "ChangedApiName": "awsPolicyPermissionsDefinitionAction",
           "ChangeType": "Addition",
@@ -83,7 +83,7 @@
           "Target": "awsPolicyPermissionsDefinitionAction"
         },
         {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Resource",
           "ChangedApiName": "azureActionPermissionsDefinitionAction",
           "ChangeType": "Addition",
@@ -91,7 +91,7 @@
           "Target": "azureActionPermissionsDefinitionAction"
         },
         {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Resource",
           "ChangedApiName": "azurePermissionsDefinitionAction",
           "ChangeType": "Addition",
@@ -99,7 +99,7 @@
           "Target": "azurePermissionsDefinitionAction"
         },
         {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Resource",
           "ChangedApiName": "azureRolePermissionsDefinitionAction",
           "ChangeType": "Addition",
@@ -107,7 +107,7 @@
           "Target": "azureRolePermissionsDefinitionAction"
         },
         {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Resource",
           "ChangedApiName": "edIdentitySource",
           "ChangeType": "Addition",
@@ -115,7 +115,7 @@
           "Target": "edIdentitySource"
         },
         {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Resource",
           "ChangedApiName": "gcpActionPermissionsDefinitionAction",
           "ChangeType": "Addition",
@@ -123,7 +123,7 @@
           "Target": "gcpActionPermissionsDefinitionAction"
         },
         {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Resource",
           "ChangedApiName": "gcpPermissionsDefinitionAction",
           "ChangeType": "Addition",
@@ -131,7 +131,7 @@
           "Target": "gcpPermissionsDefinitionAction"
         },
         {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Resource",
           "ChangedApiName": "gcpRolePermissionsDefinitionAction",
           "ChangeType": "Addition",
@@ -139,7 +139,7 @@
           "Target": "gcpRolePermissionsDefinitionAction"
         },
         {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Resource",
           "ChangedApiName": "localIdentitySource",
           "ChangeType": "Addition",
@@ -147,7 +147,7 @@
           "Target": "localIdentitySource"
         },
         {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Resource",
           "ChangedApiName": "permissionsDefinition",
           "ChangeType": "Addition",
@@ -155,7 +155,7 @@
           "Target": "permissionsDefinition"
         },
         {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Resource",
           "ChangedApiName": "permissionsDefinitionAction",
           "ChangeType": "Addition",
@@ -163,7 +163,7 @@
           "Target": "permissionsDefinitionAction"
         },
         {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Resource",
           "ChangedApiName": "permissionsDefinitionAuthorizationSystem",
           "ChangeType": "Addition",
@@ -171,7 +171,7 @@
           "Target": "permissionsDefinitionAuthorizationSystem"
         },
         {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Resource",
           "ChangedApiName": "permissionsDefinitionIdentitySource",
           "ChangeType": "Addition",
@@ -179,7 +179,7 @@
           "Target": "permissionsDefinitionIdentitySource"
         },
         {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Resource",
           "ChangedApiName": "samlIdentitySource",
           "ChangeType": "Addition",
@@ -187,7 +187,7 @@
           "Target": "samlIdentitySource"
         },
         {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Resource",
           "ChangedApiName": "singleResourceAzurePermissionsDefinition",
           "ChangeType": "Addition",
@@ -195,7 +195,7 @@
           "Target": "singleResourceAzurePermissionsDefinition"
         },
         {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Resource",
           "ChangedApiName": "singleResourceGcpPermissionsDefinition",
           "ChangeType": "Addition",
@@ -203,124 +203,92 @@
           "Target": "singleResourceGcpPermissionsDefinition"
         },
         {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Resource",
           "ChangedApiName": "awsStatement",
           "ChangeType": "Addition",
-          "Description": "Added the [awsStatement](https://learn.microsoft.com/en-us/graph/api/resources/awsStatement?view=graph-rest-beta) resource",
+          "Description": "Added the [awsStatement](https://learn.microsoft.com/en-us/graph/api/resources/awsStatement?view=graph-rest-beta) resource.",
           "Target": "awsStatement"
         },
         {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
-          "ApiChange": "Resource",
-          "ChangedApiName": "identityGovernance",
-          "ChangeType": "Addition",
-          "Description": "Added the [identityGovernance](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance?view=graph-rest-beta) resource",
-          "Target": "identityGovernance"
-        },
-        {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Resource",
           "ChangedApiName": "permissionsDefinitionAuthorizationSystemIdentity",
           "ChangeType": "Addition",
-          "Description": "Added the [permissionsDefinitionAuthorizationSystemIdentity](https://learn.microsoft.com/en-us/graph/api/resources/permissionsDefinitionAuthorizationSystemIdentity?view=graph-rest-beta) resource",
+          "Description": "Added the [permissionsDefinitionAuthorizationSystemIdentity](https://learn.microsoft.com/en-us/graph/api/resources/permissionsDefinitionAuthorizationSystemIdentity?view=graph-rest-beta) resource.",
           "Target": "permissionsDefinitionAuthorizationSystemIdentity"
         },
         {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Resource",
           "ChangedApiName": "permissionsDefinitionAwsPolicy",
           "ChangeType": "Addition",
-          "Description": "Added the [permissionsDefinitionAwsPolicy](https://learn.microsoft.com/en-us/graph/api/resources/permissionsDefinitionAwsPolicy?view=graph-rest-beta) resource",
+          "Description": "Added the [permissionsDefinitionAwsPolicy](https://learn.microsoft.com/en-us/graph/api/resources/permissionsDefinitionAwsPolicy?view=graph-rest-beta) resource.",
           "Target": "permissionsDefinitionAwsPolicy"
         },
         {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Resource",
           "ChangedApiName": "permissionsDefinitionAzureRole",
           "ChangeType": "Addition",
-          "Description": "Added the [permissionsDefinitionAzureRole](https://learn.microsoft.com/en-us/graph/api/resources/permissionsDefinitionAzureRole?view=graph-rest-beta) resource",
+          "Description": "Added the [permissionsDefinitionAzureRole](https://learn.microsoft.com/en-us/graph/api/resources/permissionsDefinitionAzureRole?view=graph-rest-beta) resource.",
           "Target": "permissionsDefinitionAzureRole"
         },
         {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Resource",
           "ChangedApiName": "permissionsDefinitionGcpRole",
           "ChangeType": "Addition",
-          "Description": "Added the [permissionsDefinitionGcpRole](https://learn.microsoft.com/en-us/graph/api/resources/permissionsDefinitionGcpRole?view=graph-rest-beta) resource",
+          "Description": "Added the [permissionsDefinitionGcpRole](https://learn.microsoft.com/en-us/graph/api/resources/permissionsDefinitionGcpRole?view=graph-rest-beta) resource.",
           "Target": "permissionsDefinitionGcpRole"
         },
         {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Resource",
           "ChangedApiName": "permissionsManagement",
           "ChangeType": "Addition",
-          "Description": "Added the [permissionsManagement](https://learn.microsoft.com/en-us/graph/api/resources/permissionsManagement?view=graph-rest-beta) resource",
+          "Description": "Added the [permissionsManagement](https://learn.microsoft.com/en-us/graph/api/resources/permissionsManagement?view=graph-rest-beta) resource.",
           "Target": "permissionsManagement"
         },
         {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
-          "ApiChange": "Property",
-          "ChangedApiName": "id",
-          "ChangeType": "Addition",
-          "Description": "Added the `id` property to the [permissionsManagement](https://learn.microsoft.com/en-us/graph/api/resources/permissionsManagement?view=graph-rest-beta) resource.",
-          "Target": "permissionsManagement"
-        },
-        {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Resource",
           "ChangedApiName": "permissionsRequestChange",
           "ChangeType": "Addition",
-          "Description": "Added the [permissionsRequestChange](https://learn.microsoft.com/en-us/graph/api/resources/permissionsRequestChange?view=graph-rest-beta) resource",
+          "Description": "Added the [permissionsRequestChange](https://learn.microsoft.com/en-us/graph/api/resources/permissionsRequestChange?view=graph-rest-beta) resource.",
           "Target": "permissionsRequestChange"
         },
         {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Resource",
           "ChangedApiName": "scheduledPermissionsRequest",
           "ChangeType": "Addition",
-          "Description": "Added the [scheduledPermissionsRequest](https://learn.microsoft.com/en-us/graph/api/resources/scheduledPermissionsRequest?view=graph-rest-beta) resource",
+          "Description": "Added the [scheduledPermissionsRequest](https://learn.microsoft.com/en-us/graph/api/resources/scheduledPermissionsRequest?view=graph-rest-beta) resource.",
           "Target": "scheduledPermissionsRequest"
         },
         {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
-          "ApiChange": "Method",
-          "ChangedApiName": "cancelAll",
-          "ChangeType": "Addition",
-          "Description": "Added the [cancelAll](https://learn.microsoft.com/en-us/graph/api/cancelAll?view=graph-rest-beta) method to the [cancelAll](https://learn.microsoft.com/en-us/graph/api/cancelAll?view=graph-rest-beta) resource.",
-          "Target": "cancelAll"
-        },
-        {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
-          "ApiChange": "Singleton",
-          "ChangedApiName": "identityGovernance",
-          "ChangeType": "Addition",
-          "Description": "Added the [identityGovernance](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource",
-          "Target": "container"
-        },
-        {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Property",
           "ChangedApiName": "ticketApproverIdentityId",
           "ChangeType": "Addition",
-          "Description": "Added the `ticketApproverIdentityId` property to the [ticketInfo](https://learn.microsoft.com/en-us/graph/api/resources/ticketInfo?view=graph-rest-beta) resource.",
+          "Description": "Added the **ticketApproverIdentityId** property to the [ticketInfo](https://learn.microsoft.com/en-us/graph/api/resources/ticketInfo?view=graph-rest-beta) resource.",
           "Target": "ticketInfo"
         },
         {
-          "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Property",
           "ChangedApiName": "ticketSubmitterIdentityId",
           "ChangeType": "Addition",
-          "Description": "Added the `ticketSubmitterIdentityId` property to the [ticketInfo](https://learn.microsoft.com/en-us/graph/api/resources/ticketInfo?view=graph-rest-beta) resource.",
+          "Description": "Added the **ticketSubmitterIdentityId** property to the [ticketInfo](https://learn.microsoft.com/en-us/graph/api/resources/ticketInfo?view=graph-rest-beta) resource.",
           "Target": "ticketInfo"
         }
       ],
-      "Id": "ae42544d-c3fd-4190-ab3f-b2e1d46da220",
+      "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2023-09-08T13:05:43.8339467Z",
-      "WorkloadArea": "Microsoft.MCIEM.PermissionsOnDemand",
-      "SubArea": ""
+      "CreatedDateTime": "2023-09-08T00:00:00.8339467Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Permissions Management"
     }
   ]
 }

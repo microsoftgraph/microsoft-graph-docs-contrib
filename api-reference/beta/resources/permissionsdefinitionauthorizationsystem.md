@@ -25,7 +25,7 @@ Represents the authorization system that the permissions will be requested on.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.permissionsDefinitionAuthorizationSystem"

@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and a [gcpAuthorizat
 ### Example 1: Get a GCP resource for a provided GCP authorization system.
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_gcpauthorizationsystemresource"
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/
 
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -99,7 +99,7 @@ Returns collection of all gcpRbacEntitlement objects, which represent the combin
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_gcpauthorizationsystemresource"
@@ -111,7 +111,7 @@ GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/
 
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

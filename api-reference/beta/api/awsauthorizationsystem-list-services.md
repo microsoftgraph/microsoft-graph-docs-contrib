@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 List services for a provided AWS authorization system.
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "list_authorizationsystemtypeservice"
@@ -69,7 +69,7 @@ GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/
 
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -99,7 +99,7 @@ Content-Type: application/json
 List actions for a provided AWS authorization system and AWS service.
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "list_authorizationsystemtypeservice"
@@ -111,7 +111,7 @@ GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/
 
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

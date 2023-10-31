@@ -43,7 +43,7 @@ Inherits from [entity](../resources/entity.md).
 |authorizationSystem|[authorizationSystem](../resources/authorizationsystem.md)|**TODO: Add Description**|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

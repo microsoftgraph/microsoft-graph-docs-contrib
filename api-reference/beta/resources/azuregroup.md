@@ -1,5 +1,5 @@
 ---
-title: "azureManagedIdentity resource type"
+title: "azureGroup resource type"
 description: "**TODO: Add Description**"
 author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.
 doc_type: resourcePageType
 ---
 
-# azureManagedIdentity resource type
+# azureGroup resource type
 
 Namespace: microsoft.graph
 
@@ -21,20 +21,20 @@ Inherits from [azureIdentity](../resources/azureidentity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List azureManagedIdentities](../api/azuremanagedidentity-list.md)|[azureManagedIdentity](../resources/azuremanagedidentity.md) collection|Get a list of the [azureManagedIdentity](../resources/azuremanagedidentity.md) objects and their properties.|
-|[Get azureManagedIdentity](../api/azuremanagedidentity-get.md)|[azureManagedIdentity](../resources/azuremanagedidentity.md)|Read the properties and relationships of an [azureManagedIdentity](../resources/azuremanagedidentity.md) object.|
-|[Update azureManagedIdentity](../api/azuremanagedidentity-update.md)|[azureManagedIdentity](../resources/azuremanagedidentity.md)|Update the properties of an [azureManagedIdentity](../resources/azuremanagedidentity.md) object.|
-|[Delete azureManagedIdentity](../api/azuremanagedidentity-delete.md)|None|Delete an [azureManagedIdentity](../resources/azuremanagedidentity.md) object.|
-|[List authorizationSystem](../api/azuremanagedidentity-list-authorizationsystem.md)|[authorizationSystem](../resources/authorizationsystem.md) collection|Get the authorizationSystem resources from the authorizationSystem navigation property.|
-|[Add authorizationSystem](../api/azuremanagedidentity-post-authorizationsystem.md)|[authorizationSystem](../resources/authorizationsystem.md)|Add authorizationSystem by posting to the authorizationSystem collection.|
-|[Remove authorizationSystem](../api/azuremanagedidentity-delete-authorizationsystem.md)|None|Remove an [authorizationSystem](../resources/authorizationsystem.md) object.|
+|[List azureGroups](../api/azuregroup-list.md)|[azureGroup](../resources/azuregroup.md) collection|Get a list of the [azureGroup](../resources/azuregroup.md) objects and their properties.|
+|[Get azureGroup](../api/azuregroup-get.md)|[azureGroup](../resources/azuregroup.md)|Read the properties and relationships of an [azureGroup](../resources/azuregroup.md) object.|
+|[Update azureGroup](../api/azuregroup-update.md)|[azureGroup](../resources/azuregroup.md)|Update the properties of an [azureGroup](../resources/azuregroup.md) object.|
+|[Delete azureGroup](../api/azuregroup-delete.md)|None|Delete an [azureGroup](../resources/azuregroup.md) object.|
+|[List authorizationSystem](../api/azuregroup-list-authorizationsystem.md)|[authorizationSystem](../resources/authorizationsystem.md) collection|Get the authorizationSystem resources from the authorizationSystem navigation property.|
+|[Add authorizationSystem](../api/azuregroup-post-authorizationsystem.md)|[authorizationSystem](../resources/authorizationsystem.md)|Add authorizationSystem by posting to the authorizationSystem collection.|
+|[Remove authorizationSystem](../api/azuregroup-delete-authorizationsystem.md)|None|Remove an [authorizationSystem](../resources/authorizationsystem.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|**TODO: Add Description** Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
 |externalId|String|**TODO: Add Description** Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
+|id|String|**TODO: Add Description** Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
 |source|[authorizationSystemIdentitySource](../resources/authorizationsystemidentitysource.md)|**TODO: Add Description** Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
 
 ## Relationships
@@ -47,14 +47,14 @@ The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.azureManagedIdentity",
+  "@odata.type": "microsoft.graph.azureGroup",
   "baseType": "microsoft.graph.azureIdentity",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.azureManagedIdentity",
+  "@odata.type": "#microsoft.graph.azureGroup",
   "id": "String (identifier)",
   "displayName": "String",
   "source": {

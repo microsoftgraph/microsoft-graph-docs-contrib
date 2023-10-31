@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Example 1: List the AWS resources for a provided AWS authorization system.
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "list_awsauthorizationsystemresource"
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/
 
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -110,7 +110,7 @@ Returns collection of all awsAuthorizationSystemResource entities for a provided
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_awsauthorizationsystemresource"
@@ -122,7 +122,7 @@ GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/
 
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

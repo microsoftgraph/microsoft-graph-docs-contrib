@@ -28,7 +28,7 @@ Inherits from [gcpPermissionsDefinitionAction](../resources/gcppermissionsdefini
 |roles|[permissionsDefinitionGcpRole](../resources/permissionsdefinitiongcprole.md) collection|**TODO: Add Description**|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.gcpRolePermissionsDefinitionAction"

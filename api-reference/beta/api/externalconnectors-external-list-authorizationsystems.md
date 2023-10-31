@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Example 1: List authorization systems onboarded to Permissions Management.
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "list_authorizationsystem"
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/external/authorizationSystems
 
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -144,7 +144,7 @@ Content-Type: application/json
 ### Example 2: Identify all the authorization systems that are online and have permissions modification capability enabled.
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "list_authorizationsystem"
@@ -156,7 +156,7 @@ GET https://graph.microsoft.com/beta/external/authorizationSystems?$filter=dataC
 
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

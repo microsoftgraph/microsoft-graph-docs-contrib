@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and an [azureAuthori
 ### Example 1: Get an Azure resource for a provided Azure authorization system.
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_azureauthorizationsystemresource"
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/
 
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -101,7 +101,7 @@ Returns collection of all azureRbacEntitlement objects, which represent the comb
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_azureauthorizationsystemresource"
@@ -113,7 +113,7 @@ GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/
 
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

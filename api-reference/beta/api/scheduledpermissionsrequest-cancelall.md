@@ -48,7 +48,7 @@ If successful, this action returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "scheduledpermissionsrequestthis.cancelall"
@@ -60,7 +60,7 @@ POST https://graph.microsoft.com/beta/permissionsManagement/scheduledPermissions
 
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

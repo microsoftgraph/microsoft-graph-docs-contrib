@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-The following request lists all the policies for an example AWS account.
+The following request lists all the policies for an AWS authorization system.
 
 <!-- {
   "blockType": "request",
@@ -69,7 +69,7 @@ GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/
 
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -104,7 +104,7 @@ Content-Type: application/json
 
 #### Request
 
-The following request lists all policies in an AWS authorization system with the name `AdministratorAccess`.
+The following request lists all policies named `AdministratorAccess` in an AWS authorization system.
 
 <!-- {
   "blockType": "request",
@@ -117,7 +117,7 @@ GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/
 
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -146,7 +146,7 @@ Content-Type: application/json
 
 #### Request
 
-The following request lists all policies in an AWS authorization system where the name contains `Buckets`.
+The following request lists all policies in an AWS authorization system where the policy name contains the word `Buckets`.
 
 <!-- {
   "blockType": "request",
@@ -159,7 +159,7 @@ GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/
 
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -184,11 +184,11 @@ Content-Type: application/json
 }
 ```
 
-### Example 4: List all custom policies in an AWS authorization system.
+### Example 4: List all custom roles in an AWS authorization system.
 
 #### Request
 
-This example request returns all custom policies in an AWS authorization system.
+The following example requests all custom roles in an AWS authorization system.
 
 <!-- {
   "blockType": "request",
@@ -201,7 +201,7 @@ GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/
 
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

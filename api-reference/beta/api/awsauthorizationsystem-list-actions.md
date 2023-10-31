@@ -52,12 +52,10 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: List All AWS Actions
-
-Returns collection of all authorizationSystemTypeAction entities for a provided AWS authorization system.
+### Example 1: List all actions for an AWS authorization system
 
 #### Request
-The following is an example of a request.
+The following example shows a request to retrieve all actions for an AWS authorization system.
 <!-- {
   "blockType": "request",
   "name": "list_awsauthorizationsystemtypeaction"
@@ -69,7 +67,7 @@ GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/
 
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -154,12 +152,10 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: List AWS Actions For A Specific Service
-
-Returns collection of all awsAuthorizationSystemTypeAction entities for a provided AWS authorization system and service the action is performed on (e.g., "ec2").
+### Example 2: List actions for a specific service in an AWS authorization system
 
 #### Request
-The following is an example of a request.
+The following example shows a request to retrieve the actions for an AWS authorization system where the service that the action is performed on is `ec2`.
 <!-- {
   "blockType": "request",
   "name": "list_awsauthorizationsystemtypeaction"
@@ -220,12 +216,10 @@ Content-Type: application/json
 }
 ```
 
-### Example 3: List AWS High Risk Delete Actions for a Specific Service
-
-Returns collection of all awsAuthorizationSystemTypeAction entities for a provided AWS authorization system and the service the action is performed on (e.g., "ec2") where action is a high risk delete action.
+### Example 3: List high risk delete actions for a specific service in the AWS authorization system
 
 #### Request
-The following is an example of a request.
+The following example shows a request that retrieves actions for an AWS authorization system where the service that the action is performed on is `ec2` and the action is a high risk delete action.
 <!-- {
   "blockType": "request",
   "name": "list_awsauthorizationsystemtypeaction"
@@ -237,7 +231,7 @@ GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/
 
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

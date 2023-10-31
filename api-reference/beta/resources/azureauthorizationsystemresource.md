@@ -38,7 +38,7 @@ Inherits from [authorizationSystemResource](../resources/authorizationsystemreso
 |service|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md)|The service associated with the resource in an Azure authorization system.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

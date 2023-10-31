@@ -41,7 +41,7 @@ Inherits from [entity](../resources/entity.md).
 |dataCollectionInfo|[dataCollectionInfo](../resources/datacollectioninfo.md)|EPM Authorization System Data Collection related information.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

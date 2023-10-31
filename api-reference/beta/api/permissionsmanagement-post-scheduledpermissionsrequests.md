@@ -51,7 +51,7 @@ You can specify the following properties when creating a **scheduledPermissionsR
 |requestedPermissions|[permissionsDefinition](../resources/permissionsdefinition.md)|Defines the permission request itself. Required.|
 |notes|String|Additional notes to add to the request. Optional.|
 |justification|String|Request justification. Optional.|
-|createdDateTime|DateTimeOffset|DateTimeOffset|Time when the scheduledPermissionsRequest was created. Required.|
+|createdDateTime|DateTimeOffset|Time when the scheduledPermissionsRequest was created. Required.|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|Schedule to assign the requestedPermissions. Optional.|
 |ticketInfo|[ticketInfo](../resources/ticketinfo.md)|Represents ticketing related metadata that can be used to correlate to the request. Optional.|
 |statusDetail|statusDetail|The current status of the request. The possible values are: `submitted`, `approved`, `completed`, `canceled`, `rejected`, `unknownFutureValue`. Required.|
@@ -67,7 +67,7 @@ If successful, this method returns a `201 Created` response code and a [schedule
 ### Example 1: AWS Policy Request
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "create_scheduledpermissionsrequest_from_"
@@ -124,7 +124,7 @@ Content-Type: application/json
 
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -184,10 +184,11 @@ Content-Type: application/json
  "statusDetail": "submitted"
 }
 ```
+
 ### Example 2: Azure roles request
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "create_scheduledpermissionsrequest_from_"
@@ -244,7 +245,7 @@ Content-Type: application/json
 
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -308,7 +309,7 @@ Content-Type: application/json
 ### Example 3: GCP Actions Request
 
 #### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "create_scheduledpermissionsrequest_from_"
@@ -358,7 +359,7 @@ Content-Type: application/json
 
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

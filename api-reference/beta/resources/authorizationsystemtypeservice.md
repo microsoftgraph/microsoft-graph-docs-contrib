@@ -34,7 +34,7 @@ Inherits from [entity](../resources/entity.md).
 |actions|[authorizationSystemTypeAction](../resources/authorizationsystemtypeaction.md) collection|List of actions for the service in an authorization system.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
