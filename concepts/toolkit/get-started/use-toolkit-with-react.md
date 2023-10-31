@@ -182,7 +182,7 @@ You should now be able to sign in to your application with your Microsoft accoun
 1. When you select the **Sign in** button, you're prompted to sign in with your Microsoft account (you can use the same account as the one you accessed the Azure portal with).
 1. The first time you're using this Microsoft Entra application, you need to consent its use in your organization.
 1. After signing in, you'll be redirected to your React app. Notice that the **Sign in** button changed to show your user's name
-   ![React app showing user info retrieved from Microsoft 365 using Microsoft Graph Toolkit](../images/mgt-react-userinfo.png).
+   ![React app showing user info retrieved from Microsoft 365 using Microsoft Graph Toolkit](../images/mgt-react-userinfo.png)
 
 ## Load data from Microsoft 365
 
