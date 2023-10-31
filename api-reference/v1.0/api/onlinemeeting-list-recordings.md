@@ -20,7 +20,7 @@ Get the list of [callRecording](../resources/callrecording.md) objects associate
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged)                        |
 |:---------------------------------------|:-------------------------------------------------------------------|
@@ -30,10 +30,10 @@ One of the following permissions is required to call this API. To learn more, in
 
 > **Note:** The application permission `OnlineMeetingRecording.Read.Chat` uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
-To use application permission for this API, tenant administrators must create an application access policy and grant it to a user. This authorizes the app configured in the policy to fetch online meetings or online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more information, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
+To use application permission for this API, tenant administrators must create an application access policy and grant it to a user. This authorizes the app configured in the policy to fetch online meetings or online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more information, see [allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 
 > [!NOTE]
-> This API works for a meeting only if the meeting has not expired. For more information, see [Limits and specifications for Microsoft Teams](/microsoftteams/limits-specifications-teams#meeting-expiration).
+> This API works for a meeting only if the meeting has not expired. For more information, see [limits and specifications for Microsoft Teams](/microsoftteams/limits-specifications-teams#meeting-expiration).
 
 ## HTTP request
 
