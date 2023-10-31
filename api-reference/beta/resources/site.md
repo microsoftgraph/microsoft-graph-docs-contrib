@@ -43,6 +43,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [Create column][]                                 | POST /sites/{site-id}/columns                               |
 | [List operations](../api/site-list-operations.md) | GET /sites/{site-id}/operations                             |
 | [Get site settings][]                             | GET /sites/{site-id}/settings                               |
+| [Get delta][]                                     | GET /sites/delta                                            |
 
 [Get site]: ../api/site-get.md
 [Get root site]: ../api/site-get.md
