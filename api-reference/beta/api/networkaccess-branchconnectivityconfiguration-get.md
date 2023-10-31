@@ -1,6 +1,6 @@
 ---
 title: "Get branchConnectivityConfiguration"
-description: "Retrieve the connectivity configuration for a specific branch."
+description: "Retrieve the IPSec tunnel configuration required to establish a bidirectional communication link between your organization's router and Microsoft's gateway. This information is vital for configuring your router (customer premise equipment) after creating a device link."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the connectivity configuration for a specific branch.
+Retrieve the IPSec tunnel configuration required to establish a bidirectional communication link between your organization's router and Microsoft's gateway. This information is vital for configuring your router (customer premise equipment) after creating a device link.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
