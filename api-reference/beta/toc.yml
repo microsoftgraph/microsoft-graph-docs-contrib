@@ -12346,7 +12346,7 @@ items:
                     href: api/networkaccess-reports-transactionsummaries.md
               - name: Remote Network reports
                 items:
-                  - name: networkaccess-remotenetworkhealthstatusevent
+                  - name: Remote Network Health Status Event
                     href: resources/networkaccess-remotenetworkhealthstatusevent.md
                     items:
                       - name: List
