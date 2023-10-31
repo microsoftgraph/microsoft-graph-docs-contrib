@@ -25,7 +25,7 @@ The Excel REST API supports only Office Open XML file formatted workbooks. The `
 
 ## Authorization and scopes
 
-You can use the [Azure AD v.2 endpoint](/graph/auth-register-app-v2) to authenticate Excel APIs. All APIs require the `Authorization: Bearer {access-token}` HTTP header.   
+You can use the [Microsoft identity platform](/graph/auth-register-app-v2) to authenticate Excel APIs. All APIs require the `Authorization: Bearer {access-token}` HTTP header.   
   
 One of the following [permission scopes](/graph/permissions-reference) is required to use the Excel resource:
 

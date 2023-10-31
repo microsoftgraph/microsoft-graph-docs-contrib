@@ -10,7 +10,7 @@ ms.date: 11/29/2022
 
 # Overview of Lifecycle Workflows APIs
 
-Lifecycle Workflows is an Identity Governance service in Azure Active Directory (Azure AD) that enables organizations to automate basic lifecycle processes for their users at three levels:
+Lifecycle Workflows is an Identity Governance service in Microsoft Entra ID that enables organizations to automate basic lifecycle processes for their users at three levels:
 
 1. **Joiner**: When an individual comes into scope of needing access; for example, a new employee joining a company or organization.
 2. **Mover**: When an individual moves between boundaries within an organization; for example, a user who was in marketing is now a member of the sales organization. This movement might require more access or authorization, or revocation of other privileges.
@@ -18,7 +18,7 @@ Lifecycle Workflows is an Identity Governance service in Azure Active Directory 
 
 For this reason, Lifecycle Workflows can be referred to as the **Joiner-Mover-Leaver** (JML) workflow. Only the *joiner* and *leaver* processes are currently implemented.
 
-The lifecycle workflows APIs in Microsoft Graph allow you to automate the Lifecycle Workflows capabilities for your organization. This article introduced the set of APIs that enable the Lifecycle Workflows service in Azure AD.
+The lifecycle workflows APIs in Microsoft Graph allow you to automate the Lifecycle Workflows capabilities for your organization. This article introduced the set of APIs that enable the Lifecycle Workflows service in Microsoft Entra ID.
 
 The lifecycle workflows APIs are defined in the OData subnamespace, microsoft.graph.identityGovernance.
 
@@ -37,7 +37,7 @@ To create workflows, we recommend using one of the [predefined workflow template
 
 ### Workflow templates
 
-Azure AD provides the following predefined **workflow templates** that define the templates for combinations of [*tasks*](#workflow-tasks) and *execution conditions* that can be part of a workflow. You can use the workflow templates to create your workflows programmatically.
+Microsoft Entra ID provides the following predefined **workflow templates** that define the templates for combinations of [*tasks*](#workflow-tasks) and *execution conditions* that can be part of a workflow. You can use the workflow templates to create your workflows programmatically.
 
 [!INCLUDE [identitygovernance-lifecycleworkflows-workflowtemplates](../includes/identitygovernance-lifecycleworkflows-workflowtemplates.md)]
 
@@ -113,15 +113,15 @@ Use the [customTaskExtension resource type](identitygovernance-customtaskextensi
 
 ## Settings
 
-Each tenant defines a tenant-wide [schedule](identitygovernance-lifecyclemanagementsettings.md) when all scheduled workflows are run. The tenant can adopt the Azure AD-defined default schedule where workflows are run every three hours, or modify the schedule to run between 1 hour and 24 hours.
+Each tenant defines a tenant-wide [schedule](identitygovernance-lifecyclemanagementsettings.md) when all scheduled workflows are run. The tenant can adopt the Microsoft Entra ID-defined default schedule where workflows are run every three hours, or modify the schedule to run between 1 hour and 24 hours.
 
 ## License checks
 
-Using this feature requires Microsoft Entra ID Governance licenses. To find the right license for your requirements, see [Compare generally available features of Micorosft Azure AD](https://www.microsoft.com/security/business/identity-access-management/azure-ad-pricing).
+Using this feature requires Microsoft Entra ID Governance licenses. To find the right license for your requirements, see [Compare generally available features of Micorosft Microsoft Entra ID](https://www.microsoft.com/security/business/identity-access-management/azure-ad-pricing).
 
 ## Role and application permission authorization checks
 
-The following [Azure AD roles](/azure/active-directory/roles/permissions-reference) are required for a calling user to manage Lifecycle Workflows.
+The following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference) are required for a calling user to manage Lifecycle Workflows.
 
 | Operation | Application permissions | Required directory role of the calling user |
 |:------------------|:------------|:--------------------------------------------|
