@@ -58,7 +58,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_forwardingpolicylink"
+  "name": "list_filteringpolicylink"
 }
 -->
 ``` http

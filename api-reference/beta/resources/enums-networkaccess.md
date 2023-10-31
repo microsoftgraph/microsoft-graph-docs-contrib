@@ -286,6 +286,48 @@ Namespace: microsoft.graph.networkaccess
 |all|
 |unknownFutureValue|
 
+### userType values 
+
+|Member|
+|:---|
+|member|
+|guest|
+|unknownFutureValue|
+
+### remoteNetworkStatus values 
+
+|Member|
+|:---|
+|tunnelDisconnected|
+|tunnelConnected|
+|bgpDisconnected|
+|bgpConnected|
+|remoteNetworkAlive|
+|unknownFutureValue|
+
+### remoteNetworkHealthAliveStatus values 
+
+|Member|
+|:---|
+|alive|
+|unknownFutureValue|
+
+### usageStatus values 
+
+|Member|
+|:---|
+|member|
+|guest|
+|unknownFutureValue|
+
+### policyRule values  
+
+|Member|
+|:---|
+|forwardingRule|
+|filteringRule|
+|unknownFutureValue|
+  
 <!--
 {
   "type": "#page.annotation",

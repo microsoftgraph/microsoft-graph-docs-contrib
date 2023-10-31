@@ -57,23 +57,11 @@ If successful, this method returns a `201 OK` response code and a [microsoft.gra
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "get_filteringrule"
+  "name": "create_filteringrule"
 }
 -->
 ``` http
 POST https://graph.microsoft.com/beta/networkaccess/filteringPolicies/ac253559-37a0-4f72-b666-103420b94e38/policyRules
-Content-Type: application/json
-{
-    "@odata.type": "#microsoft.graph.networkaccess.webCategoryFilteringRule",
-    "name": "BlockStreaming",
-    "ruleType": "webCategory",
-    "destinations": [
-        {
-            "@odata.type": "#microsoft.graph.networkaccess.webCategory",
-            "name": "StreamingMediaAndDownloads"
-        }
-    ]
-}
 ```
 
 
