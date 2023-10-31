@@ -3510,7 +3510,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "deltaParticipants",
           "ChangeType": "Addition",
-          "Description": "Added the [deltaParticipants](https://learn.microsoft.com/en-us/graph/api/resources/deltaParticipants?view=graph-rest-1.0) resource",
+          "Description": "Added the [deltaParticipants](https://learn.microsoft.com/en-us/graph/api/resources/deltaParticipants?view=graph-rest-1.0) resource type.",
           "Target": "deltaParticipants"
         }
       ],
@@ -3518,8 +3518,8 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2023-10-30T14:33:56.7629676Z",
-      "WorkloadArea": "Cloud communications",
-      "SubArea": "Call"
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
@@ -3528,7 +3528,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "removedState",
           "ChangeType": "Addition",
-          "Description": "Added the `removedState` property to the [participant](https://learn.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-1.0) resource.",
+          "Description": "Added the **removedState** property to the [participant](https://learn.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-1.0) resource.",
           "Target": "participant"
         },
         {
@@ -3536,7 +3536,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "rosterSequenceNumber",
           "ChangeType": "Addition",
-          "Description": "Added the `rosterSequenceNumber` property to the [participant](https://learn.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-1.0) resource.",
+          "Description": "Added the **rosterSequenceNumber** property to the [participant](https://learn.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-1.0) resource.",
           "Target": "participant"
         }
       ],
@@ -3544,8 +3544,8 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2023-10-30T14:33:56.7633181Z",
-      "WorkloadArea": "Cloud communications",
-      "SubArea": "Call"
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
     }
   ]
 }
