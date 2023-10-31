@@ -1,4 +1,5 @@
----
+author: "mjsantani"
+ms.reviewer: intelligentaccesspm---
 title: "Delete microsoftAuthenticatorAuthenticationMethod"
 description: "Deletes a microsoftAuthenticatorAuthenticationMethod object."
 author: "mjsantani"

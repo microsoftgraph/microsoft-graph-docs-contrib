@@ -1,4 +1,5 @@
----
+author: "mjsantani"
+ms.reviewer: intelligentaccesspm---
 title: "registrationEnforcement resource type"
 description: "Enforce registration at sign-in time."
 author: "mjsantani"

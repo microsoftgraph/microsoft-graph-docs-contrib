@@ -1,4 +1,5 @@
----
+author: "mjsantani"
+ms.reviewer: intelligentaccesspm---
 title: "microsoftAuthenticatorFeatureSettings resource type"
 description: "Represents Microsoft Authenticator settings such as number matching and location context, and whether they're enabled for all users or specific users only."
 author: "mjsantani"

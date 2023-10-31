@@ -1,4 +1,5 @@
----
+author: "mjsantani"
+ms.reviewer: intelligentaccesspm---
 title: "Get passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration"
 description: "Read the properties and relationships of a passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration object."
 author: "mjsantani"

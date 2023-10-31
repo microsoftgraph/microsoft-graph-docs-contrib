@@ -1,4 +1,5 @@
----
+author: "mjsantani"
+ms.reviewer: intelligentaccesspm---
 title: "microsoftAuthenticatorAuthenticationMethodConfiguration resource type"
 description: "Represents a Microsoft Authenticator authentication methods policy."
 author: "mjsantani"
