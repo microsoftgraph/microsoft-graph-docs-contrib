@@ -27,7 +27,7 @@ The new chat component allows user to create new 1:1 or group conversations in M
 
 ## CSS custom properties
 
-The `mgt-new-chat` component does not define CSS custom properties.
+The `mgt-new-chat` component doesn't define CSS custom properties.
 
 ## Events
 

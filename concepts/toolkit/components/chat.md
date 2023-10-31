@@ -13,7 +13,7 @@ author: sebastienlevert
 > [!NOTE]
 > This component is only available as a React component but this is subject to change.
 
-The chat component enables the user to have full 1:1 or group conversations. It works with any conversation happening in Microsoft Teams. This component does not support Channel conversations.
+The chat component enables the user to have full 1:1 or group conversations. It works with any conversation happening in Microsoft Teams. This component doesn't support Channel conversations.
 
 ## Example
 
@@ -35,7 +35,7 @@ The following example displays a file using the `mgt-chat` component.
 
 ## CSS custom properties
 
-The `mgt-chat` component does not define CSS custom properties.
+The `mgt-chat` component doesn't define CSS custom properties.
 
 ## Events
 
@@ -43,7 +43,7 @@ The `mgt-chat` component doesn't offer any events.
 
 ## Templates
 
-The `mgt-chat` component doesn't offer any template to override.
+The `mgt-chat` component doesn't offer templates to override.
 
 ## Microsoft Graph permissions
 
@@ -59,7 +59,7 @@ The `mgt-chat` component uses the global authentication provider described in th
 
 ## Cache
 
-The `mgt-chat` component caches chat messages and related metadata data.
+The `mgt-chat` component caches chat messages and related metadata.
 
 ## Localization
 

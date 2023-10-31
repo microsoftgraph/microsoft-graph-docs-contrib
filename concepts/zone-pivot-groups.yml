@@ -10,7 +10,7 @@ groups:
     title: Delegated permissions
 - id: mgt-version
   title: Build an application with Microsoft Graph Toolkit v3 or v4
-  prompt: Before you begin, select the version of the Toolkit your want to use
+  prompt: Before you begin, select the version of the Toolkit you want to use
   pivots:
   - id: mgt-v3
     title: Graph Toolkit v3

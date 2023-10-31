@@ -7,7 +7,7 @@ author: sebastienlevert
 
 # Create a Microsoft Entra app to use with the Microsoft Graph Toolkit
 
-Microsoft Graph, the API that you use to connect to Microsoft 365, is secured with OAuth 2.0. In order to connect your app to Microsoft 365, you will need to create an app in Microsoft Entra ID and grant this app permissions to access specific resources on behalf of the person using your app. This topic describes how to register and configure a web application to use with Microsoft Graph Toolkit.
+Microsoft Graph, the API that you use to connect to Microsoft 365, is secured with OAuth 2.0. In order to connect your app to Microsoft 365, you need to create an app in Microsoft Entra ID and grant this app a set of permissions to access specific resources on behalf of the person using your app. This topic describes how to register and configure a web application to use with Microsoft Graph Toolkit.
 
 <a name='add-new-application-registration-in-azure-active-directory'></a>
 
@@ -26,7 +26,7 @@ To create the app in Microsoft Entra ID:
 
 ## Enable OAuth implicit flow (only for MsalProvider and TeamsProvider)
 
-In most cases, you will use Microsoft Graph Toolkit in client-side applications that consist only of client-side code. Because client-side apps can't store secrets securely, you need to use [OAuth implicit flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow?WT.mc_id=m365-10340-wmastyka), which assumes an app's identity based on its ID and URL.
+In most cases, you use Microsoft Graph Toolkit in client-side applications that consist only of client-side code. Because client-side apps can't store secrets securely, you need to use [OAuth implicit flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow?WT.mc_id=m365-10340-wmastyka), which assumes an app's identity based on its ID and URL.
 
 1. In the Microsoft Entra admin center, open your newly created app registration.
 1. From the menu, choose **Authentication**.
