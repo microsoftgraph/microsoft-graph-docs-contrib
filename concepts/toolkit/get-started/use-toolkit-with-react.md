@@ -15,7 +15,7 @@ If you're building apps with React, you can use the [`@microsoft/mgt-react` pack
 ::: zone-end
 
 ::: zone pivot="mgt-v4"
-If you're building apps with React, you can use the [`@microsoft/mgt-react` package](./mgt-react.md), which wraps Microsoft Graph Toolkit web components in React components and makes it easier to pass complex data. You can also use the `@microsoft/mgt-chat` package, which contains the [`mgt-chat`](../components/chat.md) and [`mgt-new-chat`](../components/new-chat.md) components and are specifically built for React developers.
+If you're building apps with React, you can use the [`@microsoft/mgt-react` package](./mgt-react.md), which wraps Microsoft Graph Toolkit web components in React components and makes it easier to pass complex data. You can also use the `@microsoft/mgt-chat` package, which contains the [`mgt-chat`](../components/chat.md) and [`mgt-new-chat`](../components/new-chat.md) components.
 ::: zone-end
 
 This article describes the step-by-step process of using the Microsoft Graph Toolkit to create a React app and connect it to Microsoft 365. After completing the steps, you'll have a React app that shows the upcoming appointments of the currently signed in user from Microsoft 365.
@@ -25,11 +25,11 @@ This article describes the step-by-step process of using the Microsoft Graph Too
 
 ## Prerequisites
 
-To follow the steps in this article, you'll need a Microsoft 365 development environment and a few tools. For details, see [getting started](./overview.md).
+To follow the steps in this article, you need a Microsoft 365 development environment and a few tools. For details, see [getting started](./overview.md).
 
 ## Create a React app
 
-Create a new React app by running the following command. This will create a new React app using TypeScript, which will help you write more robust code and avoid runtime errors. If asked to install the `create-react-app` package, select `y` to confirm.
+Create a new React app by running the following command. This command creates a new React app using TypeScript, which helps writing more robust code and avoiding runtime errors. If asked to install the `create-react-app` package, select `y` to confirm.
 
 ```bash
 npx create-react-app my-m365-app --template typescript --use-npm
@@ -42,7 +42,7 @@ cd my-m365-app
 ```
 
 ::: zone pivot="mgt-v3"
-Next, install the `mgt-react`, `mgt-element` and `mgt-msal2-provider` npm packages, which contains the Microsoft Graph Toolkit React components, the core Toolkit capabilities and the MSAL2 authentication provider.
+Next, install the `mgt-react`, `mgt-element` and `mgt-msal2-provider` npm packages, which contain the Microsoft Graph Toolkit React components, the core Toolkit capabilities and the MSAL2 authentication provider.
 
 ```bash
 npm i @microsoft/mgt-react @microsoft/mgt-element @microsoft/mgt-msal2-provider
@@ -51,7 +51,7 @@ npm i @microsoft/mgt-react @microsoft/mgt-element @microsoft/mgt-msal2-provider
 ::: zone-end
 
 ::: zone pivot="mgt-v4"
-Next, install the `mgt-react`, `mgt-chat` `mgt-element` and `mgt-msal2-provider` npm packages, which contains the Microsoft Graph Toolkit React components, the core Toolkit capabilities and the MSAL2 authentication provider.
+Next, install the `mgt-react`, `mgt-chat` `mgt-element` and `mgt-msal2-provider` npm packages, which contain the Microsoft Graph Toolkit React components, the core Toolkit capabilities and the MSAL2 authentication provider.
 
 ```bash
 npm i @microsoft/mgt-react@next.mgt-chat @microsoft/mgt-chat@next.mgt-chat @microsoft/mgt-element@next.mgt-chat @microsoft/mgt-msal2-provider@next.mgt-chat --force
@@ -83,7 +83,7 @@ Now that you have registered your application with Microsoft Entra ID, you can c
 
 ### Configure the Microsoft Graph Toolkit authentication provider
 
-Next, configure the authentication provider that the Microsoft Graph Toolkit should use. In this case, you'll use MSAL, which is a good default for building standalone applications. If you use any of the extensibility points in Microsoft 365, like Teams or SharePoint, you will use [other providers](../providers/providers.md).
+Next, configure the authentication provider that the Microsoft Graph Toolkit should use. In this case, we use MSAL2, which is a good default for building standalone applications. If you use any of the extensibility points in Microsoft 365, like Teams or SharePoint, use [other providers](../providers/providers.md).
 
 1. In the code editor, open the **src/index.tsx** file, and to the list of imports, add:
 
@@ -102,7 +102,7 @@ Providers.globalProvider = new Msal2Provider({
 
 Replace the value of the `clientId` property with the value of the `Application (client) ID` property you copied previously in the Microsoft Entra admin center app registration overview.
 
-With these changes, the **src/index.tsx** file will look like the following.
+With these changes, the **src/index.tsx** file looks like the following.
 
 ```tsx
 import React from 'react';
@@ -135,7 +135,7 @@ reportWebVitals();
 
 ### Add the Sign in button
 
-Add the **Login** Microsoft Graph Toolkit React component, which will display the **Sign in** button people can use to sign in with their Microsoft account to your app.
+Add the **Login** Microsoft Graph Toolkit React component to allow users to sign in with their Microsoft account to your app.
 
 1. In the code editor, open the **src/App.tsx** file, and to the list of imports add:
 
@@ -153,7 +153,7 @@ import { Login } from '@microsoft/mgt-react';
 </div>
 ```
 
-With these changes, the **src/App.tsx** file will look like the following.
+With these changes, the **src/App.tsx** file looks like the following.
 
 ```TypeScript
 import React from 'react';
@@ -179,18 +179,18 @@ export default App;
 You should now be able to sign in to your application with your Microsoft account.
 
 1. Go back to the browser where your React app is running. You should now see a **Sign in** button.
-1. When you click the **Sign in** button, you will be prompted to sign in with your Microsoft account (you can use the same account as the one you accessed the Azure Portal with).
-1. Because this is the first time you're using this Microsoft Entra application, you need to consent its use in your organization.
-1. After signing in, you will be redirected to your React app. Notice that the **Sign in** button changed to show your user's name
+1. When you select the **Sign in** button, you are prompted to sign in with your Microsoft account (you can use the same account as the one you accessed the Azure portal with).
+1. The first time you're using this Microsoft Entra application, you need to consent its use in your organization.
+1. After signing in, you'll be redirected to your React app. Notice that the **Sign in** button changed to show your user's name
    ![React app showing user info retrieved from Microsoft 365 using Microsoft Graph Toolkit](../images/mgt-react-userinfo.png).
 
 ## Load data from Microsoft 365
 
-Microsoft Graph Toolkit not only simplifies authentication to Microsoft 365, but also loading its data. In this example, you'll show the signed in person's calendar.
+Microsoft Graph Toolkit not only simplifies authentication to Microsoft 365, but also loading its data. In this example, the signed in person's calendar is displayed.
 
 ### Specify permissions needed for your application
 
-Before you can load data from Microsoft 365, you need to specify the list of permission scopes your application must be granted to access user's data. These scopes differ depending on what kind of information you want to show. In this case, you will need access to people's calendar as well as basic access to information about people that is also displayed in the calendar. You can find the scopes required by each API in the [Microsoft Graph API documentation](/graph/api/overview).
+Before you can load data from Microsoft 365, you need to specify the list of permission scopes your application must be granted to access user's data. These scopes differ depending on what kind of information you want to show. In this case, you need access to people's calendar and basic access to information about people that is also displayed in the calendar. You can find the scopes required by each API in the [Microsoft Graph API documentation](/graph/api/overview).
 
 1. In the code editor, open the **src/index.tsx** file, and update the provider initialization code.
 
@@ -203,11 +203,11 @@ Providers.globalProvider = new Msal2Provider({
 
 ### Show user's calendar data after signing in
 
-Next, extend the application to show data from the user's calendar. You can access this information only after the user has signed in. To do this, you will need to track the user's sign in state and show the calendar data after the user has signed in with their Microsoft account.
+Next, extend the application to show data from the user's calendar. You can access this information only after the user has signed in. To do this, you need to track the user's sign in state and show the calendar data after the user has signed in with their Microsoft account.
 
 #### Track user's sign in state
 
-To track the user's sign in state in your application, you will use the React `useState` and `useEffect` hooks in combination with provider event handlers.
+To track the user's sign in state in your application, use the React `useState` and `useEffect` hooks in combination with provider event handlers.
 
 1. In the code editor, open the **src/App.tsx** file and extend the existing React `import` statement.
 
@@ -245,7 +245,7 @@ function useIsSignedIn(): [boolean] {
 }
 ```
 
-This function does two things. First, using the React `useState` hook, it enables tracking state inside your component. Whenever the state changes, React will re-render your component. Second, using the React `useEffect` hook, it extends the component's lifecycle by tracking changes in the Microsoft Graph Toolkit provider and updating the component if necessary.
+This function does two things. First, using the React `useState` hook, it enables tracking state inside your component. Whenever the state changes, React re-renders your component. Second, using the React `useEffect` hook, it extends the component's lifecycle by tracking changes in the Microsoft Graph Toolkit provider and updating the component if necessary.
 
 #### Load user's calendar if user is signed in
 
@@ -263,9 +263,9 @@ import { Agenda, Login } from '@microsoft/mgt-react';
 const [isSignedIn] = useIsSignedIn();
 ```
 
-   This defines a Boolean `isSignedIn` constant, which you can use to determine whether the user is currently signed in to your application.
+This code defines a Boolean `isSignedIn` constant, which you can use to determine whether the user is currently signed in to your application.
 
-1. Extend the contents of the `return` clause with an additional `div` and the Microsoft Graph Toolkit Agenda component.
+1. Extend the contents of the `return` clause with an extra `div` and the Microsoft Graph Toolkit Agenda component.
 
 ```typescript
 <div className="row">
@@ -345,7 +345,7 @@ Next, extend the application to show a conversation from the user's 1:1 and grou
 
 ### Update the required permissions for your application
 
-By adding the chat components to your application, you'll need to update the list of requested scopes to include the permissions required to access chat data. You can find the scopes required by each API in the [Microsoft Graph API documentation](/graph/api/overview).
+By adding the chat components to your application, you need to update the list of requested scopes to include the permissions required to access chat data. You can find the scopes required by each API in the [Microsoft Graph API documentation](/graph/api/overview).
 
 1. In the code editor, open the **src/index.tsx** file, and update the provider initialization code.
 
@@ -380,7 +380,7 @@ const onChatCreated = useCallback((chat: GraphChat) => {
 }, []);
 ```
 
-1. Then, extend the contents of the `return` clause with an additional `div` and the Microsoft Graph Toolkit Chat and New Chat components.
+1. Then, extend the contents of the `return` clause with an extra `div` and the Microsoft Graph Toolkit Chat and New Chat components.
 
 ```typescript
 <div className="column">
@@ -480,8 +480,8 @@ export default App;
 
 With these changes, after signing in to your application with your Microsoft account, you should see your calendar.
 
-1. To see the changes, close the browser and open it again, and go to `http://localhost:3000`. You do this because you changed the value of the `scopes` property, which affects the access token that you request from Microsoft Entra ID.
-1. Choose the **Sign In** button and sign in using your Microsoft account. Notice the additions to the list of permissions requested in the consent prompt. This is because you included additional permissions in the `scope` property.
+1. To see the changes, refresh your browser at `http://localhost:3000`.
+1. Choose the **Sign In** button and sign in using your Microsoft account. Notice the additions to the list of permissions requested in the consent screen. This is because you included additional permissions in the `scope` property.
 ::: zone pivot="mgt-v3"
 1. After consenting to the use of the application, you should see information about the current user and their calendar.
 ![Finished app](../images/mgt-finished-app.png)
@@ -490,8 +490,6 @@ With these changes, after signing in to your application with your Microsoft acc
 1. After consenting to the use of the application, you should see information about the current user, their calendar and the ability to create a new chat and start interacting with this user.
 ![Finished app](../images/mgt-finished-app-v4.png)
 ::: zone-end
-
-
 
 ## Next steps
 

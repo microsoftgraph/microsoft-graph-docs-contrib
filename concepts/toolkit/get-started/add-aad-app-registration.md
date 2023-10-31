@@ -7,7 +7,7 @@ author: sebastienlevert
 
 # Create a Microsoft Entra app to use with the Microsoft Graph Toolkit
 
-Microsoft Graph, the API that you use to connect to Microsoft 365, is secured with OAuth 2.0. In order to connect your app to Microsoft 365, you need to create an app in Microsoft Entra ID and grant this app a set of permissions to access specific resources on behalf of the person using your app. This topic describes how to register and configure a web application to use with Microsoft Graph Toolkit.
+Microsoft Graph, the API that you use to connect to Microsoft 365, is secured with OAuth 2.0. In order to connect your app to Microsoft 365, you need to create an app in Microsoft Entra ID and grant this app a set of permissions to access specific resources on behalf of the person using your app. This article describes how to register and configure a web application to use with Microsoft Graph Toolkit.
 
 <a name='add-new-application-registration-in-azure-active-directory'></a>
 
