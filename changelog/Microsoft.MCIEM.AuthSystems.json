@@ -47,7 +47,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "authorizationSystem",
           "ChangeType": "Addition",
-          "Description": "Added the [authorizationSystem](https://learn.microsoft.com/en-us/graph/api/resources/authorizationSystem?view=graph-rest-beta) resource.",
+          "Description": "Added the [authorizationSystem](https://learn.microsoft.com/en-us/graph/api/resources/authorizationSystem?view=graph-rest-beta) resource and its associated methods.",
           "Target": "authorizationSystem"
         },
         {
@@ -55,7 +55,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "awsAuthorizationSystem",
           "ChangeType": "Addition",
-          "Description": "Added the [awsAuthorizationSystem](https://learn.microsoft.com/en-us/graph/api/resources/awsAuthorizationSystem?view=graph-rest-beta) resource.",
+          "Description": "Added the [awsAuthorizationSystem](https://learn.microsoft.com/en-us/graph/api/resources/awsAuthorizationSystem?view=graph-rest-beta) resource and its associated methods.",
           "Target": "awsAuthorizationSystem"
         },
         {
@@ -63,7 +63,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "azureAuthorizationSystem",
           "ChangeType": "Addition",
-          "Description": "Added the [azureAuthorizationSystem](https://learn.microsoft.com/en-us/graph/api/resources/azureAuthorizationSystem?view=graph-rest-beta) resource.",
+          "Description": "Added the [azureAuthorizationSystem](https://learn.microsoft.com/en-us/graph/api/resources/azureAuthorizationSystem?view=graph-rest-beta) resource and its associated methods.",
           "Target": "azureAuthorizationSystem"
         },
         {
@@ -79,7 +79,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "gcpAuthorizationSystem",
           "ChangeType": "Addition",
-          "Description": "Added the [gcpAuthorizationSystem](https://learn.microsoft.com/en-us/graph/api/resources/gcpAuthorizationSystem?view=graph-rest-beta) resource.",
+          "Description": "Added the [gcpAuthorizationSystem](https://learn.microsoft.com/en-us/graph/api/resources/gcpAuthorizationSystem?view=graph-rest-beta) resource and its associated methods.",
           "Target": "gcpAuthorizationSystem"
         },
         {
@@ -96,7 +96,7 @@
       "Version": "beta",
       "CreatedDateTime": "2023-09-08T00:00:00.8333073Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Permissions Management"
+      "SubArea": "Multicloud permissions management"
     }
   ]
 }

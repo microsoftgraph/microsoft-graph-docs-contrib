@@ -4,38 +4,6 @@
       "ChangeList": [
         {
           "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "awsStatementEffect",
-          "ChangeType": "Addition",
-          "Description": "Added the **awsStatementEffect** enumeration type.",
-          "Target": "awsStatementEffect"
-        },
-        {
-          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "permissionsDefinitionIdentityType",
-          "ChangeType": "Addition",
-          "Description": "Added the **permissionsDefinitionIdentityType** enumeration type.",
-          "Target": "permissionsDefinitionIdentityType"
-        },
-        {
-          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "permissionsRequestOccurrenceStatus",
-          "ChangeType": "Addition",
-          "Description": "Added the **permissionsRequestOccurrenceStatus** enumeration type.",
-          "Target": "permissionsRequestOccurrenceStatus"
-        },
-        {
-          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "statusDetail",
-          "ChangeType": "Addition",
-          "Description": "Added the **statusDetail** enumeration type.",
-          "Target": "statusDetail"
-        },
-        {
-          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Resource",
           "ChangedApiName": "awsActionsPermissionsDefinitionAction",
           "ChangeType": "Addition",
@@ -281,6 +249,38 @@
           "ChangeType": "Addition",
           "Description": "Added the **ticketSubmitterIdentityId** property to the [ticketInfo](https://learn.microsoft.com/en-us/graph/api/resources/ticketInfo?view=graph-rest-beta) resource.",
           "Target": "ticketInfo"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "awsStatementEffect",
+          "ChangeType": "Addition",
+          "Description": "Added the **awsStatementEffect** enumeration type.",
+          "Target": "awsStatementEffect"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "permissionsDefinitionIdentityType",
+          "ChangeType": "Addition",
+          "Description": "Added the **permissionsDefinitionIdentityType** enumeration type.",
+          "Target": "permissionsDefinitionIdentityType"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "permissionsRequestOccurrenceStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **permissionsRequestOccurrenceStatus** enumeration type.",
+          "Target": "permissionsRequestOccurrenceStatus"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "statusDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the **statusDetail** enumeration type.",
+          "Target": "statusDetail"
         }
       ],
       "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
@@ -288,7 +288,7 @@
       "Version": "beta",
       "CreatedDateTime": "2023-09-08T00:00:00.8339467Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Permissions Management"
+      "SubArea": "Multicloud permissions management"
     }
   ]
 }

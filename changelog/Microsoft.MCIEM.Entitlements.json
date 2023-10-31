@@ -1,63 +1,7 @@
 ﻿{
   "changelog": [
     {
-      "ChangeList": [
-        {
-          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "authorizationSystemActionSeverity",
-          "ChangeType": "Addition",
-          "Description": "Added the **authorizationSystemActionSeverity** enumeration type.",
-          "Target": "authorizationSystemActionSeverity"
-        },
-        {
-          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "authorizationSystemActionType",
-          "ChangeType": "Addition",
-          "Description": "Added the **authorizationSystemActionType** enumeration type.",
-          "Target": "authorizationSystemActionType"
-        },
-        {
-          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "awsPolicyType",
-          "ChangeType": "Addition",
-          "Description": "Added the **awsPolicyType** enumeration type.",
-          "Target": "awsPolicyType"
-        },
-        {
-          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "awsRoleTrustEntityType",
-          "ChangeType": "Addition",
-          "Description": "Added the **awsRoleTrustEntityType** enumeration type.",
-          "Target": "awsRoleTrustEntityType"
-        },
-        {
-          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "awsRoleType",
-          "ChangeType": "Addition",
-          "Description": "Added the **awsRoleType** enumeration type.",
-          "Target": "awsRoleType"
-        },
-        {
-          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "azureRoleDefinitionType",
-          "ChangeType": "Addition",
-          "Description": "Added the **azureRoleDefinitionType** enumeration type.",
-          "Target": "azureRoleDefinitionType"
-        },
-        {
-          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "gcpRoleType",
-          "ChangeType": "Addition",
-          "Description": "Added the **gcpRoleType** enumeration type.",
-          "Target": "gcpRoleType"
-        },
+      "ChangeList": [        
         {
           "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Resource",
@@ -385,6 +329,62 @@
           "ChangeType": "Addition",
           "Description": "Added the [gcpGroup](https://learn.microsoft.com/en-us/graph/api/resources/gcpGroup?view=graph-rest-beta) resource.",
           "Target": "gcpGroup"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "authorizationSystemActionSeverity",
+          "ChangeType": "Addition",
+          "Description": "Added the **authorizationSystemActionSeverity** enumeration type.",
+          "Target": "authorizationSystemActionSeverity"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "authorizationSystemActionType",
+          "ChangeType": "Addition",
+          "Description": "Added the **authorizationSystemActionType** enumeration type.",
+          "Target": "authorizationSystemActionType"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "awsPolicyType",
+          "ChangeType": "Addition",
+          "Description": "Added the **awsPolicyType** enumeration type.",
+          "Target": "awsPolicyType"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "awsRoleTrustEntityType",
+          "ChangeType": "Addition",
+          "Description": "Added the **awsRoleTrustEntityType** enumeration type.",
+          "Target": "awsRoleTrustEntityType"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "awsRoleType",
+          "ChangeType": "Addition",
+          "Description": "Added the **awsRoleType** enumeration type.",
+          "Target": "awsRoleType"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "azureRoleDefinitionType",
+          "ChangeType": "Addition",
+          "Description": "Added the **azureRoleDefinitionType** enumeration type.",
+          "Target": "azureRoleDefinitionType"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "gcpRoleType",
+          "ChangeType": "Addition",
+          "Description": "Added the **gcpRoleType** enumeration type.",
+          "Target": "gcpRoleType"
         }
       ],
       "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
@@ -392,7 +392,7 @@
       "Version": "beta",
       "CreatedDateTime": "2023-09-08T00:00:00.8338756Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Permissions Management"
+      "SubArea": "Multicloud permissions management"
     }
   ]
 }
