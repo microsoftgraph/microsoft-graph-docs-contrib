@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Invitation(
 	invited_user_display_name = "John Doe (Tailspin Toys)",
@@ -15,7 +15,7 @@ request_body = Invitation(
 	invite_redirect_url = "https://myapps.microsoft.com",
 )
 
-result = await graph_client.invitations.post(body = request_body)
+result = await graph_client.invitations.post(request_body)
 
 
 ```

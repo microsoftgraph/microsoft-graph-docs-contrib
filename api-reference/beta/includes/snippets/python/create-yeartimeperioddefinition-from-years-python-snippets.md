@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = YearTimePeriodDefinition(
 	display_name = "Fiscal Year 2022",
@@ -17,7 +17,7 @@ request_body = YearTimePeriodDefinition(
 	),
 )
 
-result = await graph_client.external.industry_data.years.post(body = request_body)
+result = await graph_client.external.industry_data.years.post(request_body)
 
 
 ```

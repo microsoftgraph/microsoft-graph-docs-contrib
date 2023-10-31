@@ -1,6 +1,6 @@
 ---
 title: "Configure synchronization with directory extension attributes"
-description: "Customize your synchronization schema to include Azure Active Directory (Azure AD) directory extension attributes."
+description: "Customize your synchronization schema to include Microsoft Entra directory extension attributes."
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 author: "ArvindHarinder1"
@@ -12,7 +12,7 @@ ms.date: 06/27/2023
 
 Namespace: microsoft.graph
 
-You can customize your synchronization schema to include Azure Active Directory (Azure AD) directory extension attributes. This article describes how to use a directory extension attribute (**extension_9d98asdfl15980a_Nickname**) to populate the value of User.CommunityNickname in Salesforce. In this scenario, you have Azure AD Connect set up to provision a number of directory extension attributes from Windows Server Active Directory on-premises to Azure AD. 
+You can customize your synchronization schema to include Microsoft Entra directory extension attributes. This article describes how to use a directory extension attribute (**extension_9d98asdfl15980a_Nickname**) to populate the value of User.CommunityNickname in Salesforce. In this scenario, you have Microsoft Entra Connect set up to provision a number of directory extension attributes from Windows Server Active Directory on-premises to Microsoft Entra ID. 
 
 This article assumes that you have already added an application that supports synchronization to your tenant through the [Microsoft Entra admin center](https://entra.microsoft.com), that you know the application display name, and that you have an authorization token for Microsoft Graph. For information about how to get the authorization token, see [Get access tokens to call Microsoft Graph](/graph/auth/).
 
@@ -169,7 +169,7 @@ The `{jobId}` is `SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa`.
 
 You'll need the full name of the extension attribute. If you don't know the full name (which should look similar to **extension_9d98asdfl15980a_Nickname**), see the following information about directory extension attributes and how to inspect them: 
 
-* [Extending the Azure AD directory schema with custom properties](/graph/extensibility-overview)
+* [Extending the Microsoft Entra directory schema with custom properties](/graph/extensibility-overview)
 * [Directory schema extensions | Graph API concepts](/previous-versions/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)
 
 
@@ -326,12 +326,12 @@ Use a plain text editor of your choice (for example, [Notepad++](https://notepad
 
 1. Add an [attribute definition](/graph/api/resources/synchronization-attributedefinition) for the `extension_9d98asdfl15980a_Nickname` attribute. 
 
-    - Under directories, find the directory with the name "Azure Active Directory", and in the object's array, find the one named **User**.
+    - Under directories, find the directory with the name "Microsoft Entra ID", and in the object's array, find the one named **User**.
     - Add the new attribute to the list, specifying the name and type, as shown in the following example.
 
 2. Add an [attribute mapping](/graph/api/resources/synchronization-attributemapping) between extension_9d98asdfl15980a_Nickname and CommunityNickname.
 
-    - Under [synchronizationRules](/graph/api/resources/synchronization-synchronizationrule), find the rule that specifies Azure AD as source directory, and Salesforce.com as the target directory (`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`).
+    - Under [synchronizationRules](/graph/api/resources/synchronization-synchronizationrule), find the rule that specifies Microsoft Entra ID as source directory, and Salesforce.com as the target directory (`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`).
     - In the [objectMappings](/graph/api/resources/synchronization-objectmapping) of the rule, find the mapping between users (`"sourceObjectName": "User",   "targetObjectName": "User"`).
     - In the [attributeMappings](/graph/api/resources/synchronization-attributemapping) array of the **objectMapping**, add a new entry, as shown in the following example.
 
@@ -400,7 +400,7 @@ Authorization: Bearer {Token}
 }
 ```
 
-If the schema was saved successfully,  the request returns a `204 No Content` response code. On the next iteration of the synchronization job, it will start re-processing all the accounts in your Azure AD, and the new mappings will be applied to all provisioned accounts.
+If the schema was saved successfully,  the request returns a `204 No Content` response code. On the next iteration of the synchronization job, it will start re-processing all the accounts in your Microsoft Entra ID, and the new mappings will be applied to all provisioned accounts.
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
 <!-- {

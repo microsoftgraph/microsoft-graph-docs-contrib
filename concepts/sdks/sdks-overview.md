@@ -19,6 +19,7 @@ The *core library* provides a set of features that enhance working with all the 
 SDKs are currently available for the following languages:
 
 - [C#](https://github.com/microsoftgraph/msgraph-sdk-dotnet)
+- [CLI](https://github.com/microsoftgraph/msgraph-cli)
 - [PowerShell](https://github.com/microsoftgraph/msgraph-sdk-powershell)
 - [TypeScript | JavaScript](https://github.com/microsoftgraph/msgraph-sdk-javascript)
 - [Java](https://github.com/microsoftgraph/msgraph-sdk-java)

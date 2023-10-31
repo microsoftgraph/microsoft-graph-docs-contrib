@@ -1,6 +1,6 @@
 ---
 title: "synchronization: acquireAccessToken"
-description: "Acquire an OAuth Access token to authorize the Azure AD provisioning service to provision users into an application"
+description: "Acquire an OAuth Access token to authorize the Microsoft Entra provisioning service to provision users into an application"
 author: "ArvindHarinder1"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -10,18 +10,15 @@ doc_type: apiPageType
 # synchronization: acquireAccessToken
 Namespace: microsoft.graph
 
-Acquire an OAuth Access token to authorize the Azure AD provisioning service to provision users into an application.
+Acquire an OAuth Access token to authorize the Microsoft Entra provisioning service to provision users into an application.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Synchronization.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "synchronization_synchronization_acquireaccesstoken" } -->
+[!INCLUDE [permissions-table](../includes/permissions/synchronization-synchronization-acquireaccesstoken-permissions.md)]
 
 [!INCLUDE [rbac-synchronization-apis](../includes/rbac-for-apis/rbac-synchronization-apis.md)]
 
@@ -123,5 +120,3 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-

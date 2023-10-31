@@ -16,7 +16,7 @@ Represents the new system-generated password after a [password reset operation](
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|newPassword|String|The Azure AD-generated password.|
+|newPassword|String|The Microsoft Entra ID-generated password.|
 
 ## Relationships
 None.

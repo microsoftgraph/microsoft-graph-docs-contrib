@@ -1,19 +1,21 @@
 ---
-title: "Create an Azure Active Directory app"
-description: "Create an Azure Active Directory application registration for communicating with Microsoft 365"
+title: "Create a Microsoft Entra app"
+description: "Create a Microsoft Entra application registration for communicating with Microsoft 365"
 ms.localizationpriority: medium
 author: sebastienlevert
 ---
 
-# Create an Azure Active Directory app to use with the Microsoft Graph Toolkit
+# Create a Microsoft Entra app to use with the Microsoft Graph Toolkit
 
-Microsoft Graph, the API that you use to connect to Microsoft 365, is secured with OAuth 2.0. In order to connect your app to Microsoft 365, you will need to create an app in Azure Active Directory (Azure AD) and grant this app permissions to access specific resources on behalf of the person using your app. This topic describes how to register and configure a web application to use with Microsoft Graph Toolkit.
+Microsoft Graph, the API that you use to connect to Microsoft 365, is secured with OAuth 2.0. In order to connect your app to Microsoft 365, you will need to create an app in Microsoft Entra ID and grant this app permissions to access specific resources on behalf of the person using your app. This topic describes how to register and configure a web application to use with Microsoft Graph Toolkit.
 
-## Add new application registration in Azure Active Directory
+<a name='add-new-application-registration-in-azure-active-directory'></a>
 
-To create an application in Azure Active Directory, you need to add a new application registration, and then configure an app name and URL location.
+## Add new application registration in Microsoft Entra ID
 
-To create the app in Azure Active Directory:
+To create an application in Microsoft Entra ID, you need to add a new application registration, and then configure an app name and URL location.
+
+To create the app in Microsoft Entra ID:
 
 1. Go to the [Microsoft Entra admin center](https://entra.microsoft.com).
 1. Expand the **Identity** menu > expand **Applications** > select **App registrations** > select the **New registration** button.
