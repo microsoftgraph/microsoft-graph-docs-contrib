@@ -36,7 +36,7 @@ GET /networkAccess/logs/remoteNetworks
 ```
 
 ## Optional query parameters
-This method supports $filter, $orderby,$top and $select OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports $filter, $orderby, $top and $select OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -44,7 +44,7 @@ This method supports $filter, $orderby,$top and $select OData query parameters t
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "list_remotenetworkhealthstatusevent"

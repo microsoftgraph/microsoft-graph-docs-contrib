@@ -1,282 +1,294 @@
 ---
-title: "Enum values"
-description: "Microsoft Graph enumeration values for Global Secure Access"
-author: Moti-ba
+title: "Network Access enum values"
+description: "Microsoft Graph Network Access enumeration values"
+author: "moti-ba"
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: "identity-and-access"
 doc_type: enumTypes
 ---
 
-# Microsoft Global Secure Access Enumeration Values
+# Network Access Enum Values
 
-These enumerations represent various aspects of Global Secure Access.
+Namespace: microsoft.graph.networkaccess
 
-## aggregationFilter Values
+### aggregationFilter values 
 
-| Member |
+|Member|
 |:---|
-| transactions |
-| users |
-| devices |
-| unknownFutureValue |
+|transactions|
+|users|
+|devices|
+|unknownFutureValue|
 
-## applicationProtocol Values
+### applicationProtocol values 
 
-| Member |
+|Member|
 |:---|
-| http |
-| https |
-| smb |
-| rdp |
-| ftp |
-| ssh |
-| sap |
-| unknownFutureValue |
+|http|
+|https|
+|smb|
+|rdp|
+|ftp|
+|ssh|
+|sap|
+|unknownFutureValue|
 
-## deviceCategory Values
+### bandwidthCapacityInMbps values 
 
-| Member |
+|Member|
 |:---|
-| client |
-| branch |
-| unknownFutureValue |
+|mbps250|
+|mbps500|
+|mbps750|
+|mbps1000|
+|unknownFutureValue|
 
-## networkingProtocol Values
+### connectivityState values 
 
-| Member |
+|Member|
 |:---|
-| ip |
-| icmp |
-| igmp |
-| ggp |
-| ipv4 |
-| tcp |
-| pup |
-| udp |
-| idp |
-| ipv6 |
-| ipv6RoutingHeader |
-| ipv6FragmentHeader |
-| ipSecEncapsulatingSecurityPayload |
-| ipSecAuthenticationHeader |
-| icmpV6 |
-| ipv6NoNextHeader |
-| ipv6DestinationOptions |
-| nd |
-| raw |
-| ipx |
-| spx |
-| spxII |
-| unknownFutureValue |
+|pending|
+|connected|
+|inactive|
+|error|
+|unknownFutureValue|
 
-## remoteNetworkHealthAliveStatus Values
+### deviceCategory values 
 
-| Member |
+|Member|
 |:---|
-| alive |
-| unknownFutureValue |
+|client|
+|branch|
+|unknownFutureValue|
 
+### deviceVendor values 
 
-## tunnelConnectivityHealthStatus Values
-
-| Member |
+|Member|
 |:---|
-| tunnelDisconnected |
-| tunnelConnected |
-| unknownFutureValue |
+|barracudaNetworks|
+|checkPoint|
+|ciscoMeraki|
+|citrix|
+|fortinet|
+|hpeAruba|
+|netFoundry|
+|nuage|
+|openSystems|
+|paloAltoNetworks|
+|riverbedTechnology|
+|silverPeak|
+|vmWareSdWan|
+|versa|
+|other|
+|unknownFutureValue|
 
-## userType Values
+### dhGroup values 
 
-| Member |
+|Member|
 |:---|
-| member |
-| guest |
-| unknownFutureValue |
+|dhGroup14|
+|dhGroup24|
+|dhGroup2048|
+|ecp256|
+|ecp384|
+|unknownFutureValue|
 
-## status Values
+### filteringPolicyAction values 
 
-| Member |
+|Member|
 |:---|
-| enabled |
-| disabled |
-| unknownFutureValue |
+|block|
+|allow|
+|unknownFutureValue|
 
-## deviceVendor Values
+### forwardingCategory values 
 
-| Member |
+|Member|
 |:---|
-| barracudaNetworks |
-| checkPoint |
-| ciscoMeraki |
-| citrix |
-| fortinet |
-| hpeAruba |
-| netFoundry |
-| nuage |
-| openSystems |
-| paloAltoNetworks |
-| riverbedTechnology |
-| silverPeak |
-| vmWareSdWan |
-| vmWareSdWan |
-| other |
-| unknownFutureValue |
+|default|
+|optimized|
+|allow|
+|unknownFutureValue|
 
-## networkDestinationType Values
+### forwardingRuleAction values 
 
-| Member |
+|Member|
 |:---|
-| url |
-| fqdn |
-| ipAddress |
-| ipRange |
-| ipSubnet |
-| webCategory |
-| unknownFutureValue |
+|bypass|
+|forward|
+|unknownFutureValue|
 
-## bgpRoutingHealthStatus Values
+### ikeEncryption values 
 
-| Member |
+|Member|
 |:---|
-| bgpConnected |
-| bgpDisconnected |
-| unknownFutureValue |
+|aes128|
+|aes192|
+|aes256|
+|gcmAes128|
+|gcmAes256|
+|unknownFutureValue|
 
-## connectivityState Values
+### ikeIntegrity values 
 
-| Member |
+|Member|
 |:---|
-| pending |
-| connected |
-| inactive |
-| error |
-| unknownFutureValue |
+|sha256|
+|sha384|
+|gcmAes128|
+|gcmAes256|
+|unknownFutureValue|
 
-## usageStatus Values
+### ipSecEncryption values 
 
-| Member |
+|Member|
 |:---|
-| frequentlyUsed |
-| rarelyUsed |
-| unknownFutureValue |
+|none|
+|gcmAes128|
+|gcmAes192|
+|gcmAes256|
+|unknownFutureValue|
 
-## trafficType Values
+### ipSecIntegrity values 
 
-| Member |
+|Member|
 |:---|
-| internet |
-| private |
-| microsoft365 |
-| unknownFutureValue |
+|gcmAes128|
+|gcmAes192|
+|gcmAes256|
+|sha256|
+|unknownFutureValue|
 
-## filteringPolicyAction Values
+### networkDestinationType values 
 
-| Member |
+|Member|
 |:---|
-| block |
-| allow |
-| unknownFutureValue |
+|url|
+|fqdn|
+|ipAddress|
+|ipRange|
+|ipSubnet|
+|webCategory|
+|unknownFutureValue|
 
-## trafficForwardingType Values
+### networkingProtocol values 
 
-| Member |
+|Member|
 |:---|
-| m365 |
-| Private |
-| internet |
-| unknownFutureValue |
+|ip|
+|icmp|
+|igmp|
+|ggp|
+|ipv4|
+|tcp|
+|pup|
+|udp|
+|idp|
+|ipv6|
+|ipv6RoutingHeader|
+|ipv6FragmentHeader|
+|ipSecEncapsulatingSecurityPayload|
+|ipSecAuthenticationHeader|
+|icmpV6|
+|ipv6NoNextHeader|
+|ipv6DestinationOptions|
+|nd|
+|raw|
+|ipx|
+|spx|
+|spxII|
+|unknownFutureValue|
 
-## forwardingCategory Values
+### onboardingStatus values 
 
-| Member |
+|Member|
 |:---|
-| default |
-| optimized |
-| allow |
-| unknownFutureValue |
+|offboarded|
+|offboardingInProgress|
+|onboardingInProgress|
+|onboarded|
+|onboardingErrorOccurred|
+|offboardingErrorOccurred|
+|unknownFutureValue|
 
-## redundancyTier Values
+### pfsGroup values 
 
-| Member |
+|Member|
 |:---|
-| noRedundancy |
-| zoneRedundancy |
-| unknownFutureValue |
+|none|
+|pfs1|
+|pfs2|
+|pfs14|
+|pfs24|
+|pfs2048|
+|pfsmm|
+|ecp256|
+|ecp384|
+|unknownFutureValue|
 
-## onboardingStatus Values
+### redundancyTier values 
 
-| Member |
+|Member|
 |:---|
-| offboarded |
-| offboardingInProgress |
-| onboardingInProgress |
-| onboarded |
-| onboardingErrorOccurred |
-| offboardingErrorOccurred |
-| unknownFutureValue |
+|noRedundancy|
+|zoneRedundancy|
+|unknownFutureValue|
 
-## dhGroup Values
+### region values 
 
-| Member |
+|Member|
 |:---|
-| dhGroup14 |
-| dhGroup24 |
-| dhGroup24 |
-| ecp256 |
-| ecp384 |
-| unknownFutureValue |
+|eastUS|
+|eastUS2|
+|westUS|
+|westUS2|
+|westUS3|
+|centralUS|
+|northCentralUS|
+|southCentralUS|
+|northEurope|
+|westEurope|
+|franceCentral|
+|germanyWestCentral|
+|switzerlandNorth|
+|ukSouth|
+|canadaEast|
+|canadaCentral|
+|southAfricaWest|
+|southAfricaNorth|
+|uaeNorth|
+|unknownFutureValue|
 
-## ikeEncryption Values
+### status values 
 
-| Member |
+|Member|
 |:---|
-| aes128 |
-| aes192 |
-| aes256 |
-| gcmAes128 |
-| gcmAes128 |
-| unknownFutureValue |
+|enabled|
+|disabled|
+|unknownFutureValue|
 
-## ikeIntegrity Values
+### trafficForwardingType values 
 
-| Member |
+|Member|
 |:---|
-| sha256 |
-| sha256 |
-| gcmAes128 |
-| gcmAes256 |
-| unknownFutureValue |
+|m365|
+|internet|
+|private|
+|unknownFutureValue|
 
-## pfsGroup Values
+### trafficType values 
 
-| Member |
+|Member|
 |:---|
-| none |
-| pfs1 |
-| pfs2 |
-| pfs14 |
-| pfs24 |
-| pfs2048 |
-| pfsmm |
-| ecp256 |
-| ecp384 |
-| unknownFutureValue |
+|internet|
+|private|
+|microsoft365|
+|all|
+|unknownFutureValue|
 
-## ipSecEncryption Values
-
-| Member |
-|:---|
-| none |
-| gcmAes128 |
-| gcmAes192 |
-| gcmAes256 |
-| unknownFutureValue |
-
-## ipSecIntegrity Values
-
-| Member |
-|:---|
-| gcmAes128 |
-| gcmAes192 |
-| gcmAes256 |
-| unknownFutureValue |
+<!--
+{
+  "type": "#page.annotation",
+  "namespace": "microsoft.graph.networkaccess"
+}
+-->
