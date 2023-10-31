@@ -170,7 +170,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/v1.0/education/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/03a893d4-f64b-47e4-9e0c-afac4b357007/submissions/be6280d6-cf92-d58e-6ca4-44babfcb2394/submittedResources?$filter=id eq '6d6e204d-d976-452e-a76b-14a43f77dc65'
 ```
 
-##### Response
+#### Response
 
 The following example shows the response.
 
@@ -235,7 +235,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/v1.0/education/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/131eeaaa-829e-4c6c-9cf3-491b1320fe4d/submissions/603e719d-4bcd-7b78-be60-1194b3921b50/submittedResources?$orderby=resource/createdDateTime
 ```
 
-##### Response
+#### Response
 
 The following example shows the response.
 

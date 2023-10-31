@@ -495,7 +495,7 @@ Content-length: 4492
 
 ### Example 2: Using `$filter` to get submissions
 
-### Request
+#### Request
 
 The following example shows a request.
 
@@ -509,7 +509,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/a3cce0ba-2008-4c4d-bf62-079408562d96/submissions?$filter=id eq 'ff2c7fe6-91cd-57a4-aa62-5b9c6b73222a'
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 

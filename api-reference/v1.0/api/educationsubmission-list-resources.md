@@ -35,7 +35,7 @@ GET /education/classes/{class-id}/assignments/{assignment-id}/submissions/{submi
 
 This method supports the `$top`, `$filter`, `$orderby`, and `$select` OData query parameters to help customize the response.For general information, see [OData query parameters](/graph/query-parameters).
 
-All [properties](../resources/educationresource.md#properties) are supported for the query parameters `$filter` and `$orderby`.
+ The query parameters `$filter` and `$orderby` support all [education resource properties](../resources/educationresource.md#properties).
 
 ## Request headers
 
@@ -169,7 +169,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/v1.0/education/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/8f5311bb-ee1e-4bf0-9827-3fd8c57bdde2/submissions/57ef8ee2-4755-4351-66d0-8e37192870a5/resources?$filter= id eq 'c4682401-6866-4962-94d9-7499782a13e9'
 ```
 
-##### Response
+#### Response
 
 The following example shows the response.
 
@@ -235,7 +235,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/v1.0/education/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/8f5311bb-ee1e-4bf0-9827-3fd8c57bdde2/submissions/57ef8ee2-4755-4351-66d0-8e37192870a5/resources?$orderby=resource/createdDateTime
 ```
 
-##### Response
+#### Response
 
 The following example shows the response.
 

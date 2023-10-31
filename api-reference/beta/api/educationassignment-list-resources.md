@@ -190,7 +190,7 @@ Content-type: application/json
 
 ### Example 2: Using `$filter` to get resources
 
-### Request
+#### Request
 
 The following example shows a request.
 
@@ -204,7 +204,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/education/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/131eeaaa-829e-4c6c-9cf3-491b1320fe4d/resources?$filter=id eq 'bc98d7cd-7cf3-449c-b1b9-3a9683024d4e'
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -258,7 +258,7 @@ Content-type: application/json
 
 ### Example 3: Using `$orderby` to get resources
 
-### Request
+#### Request
 
 The following example shows a request.
 
@@ -272,7 +272,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/education/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/131eeaaa-829e-4c6c-9cf3-491b1320fe4d/resources?$orderby=resource/createdDateTime
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 

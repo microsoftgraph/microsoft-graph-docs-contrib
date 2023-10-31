@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Example 1: Get all resources
 
-##### Request
+#### Request
 
 The following example shows a request.
 
@@ -107,7 +107,7 @@ GET https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/sub
 
 ---
 
-##### Response
+#### Response
 
 The following example shows the response.
 
@@ -172,7 +172,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/education/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/8f5311bb-ee1e-4bf0-9827-3fd8c57bdde2/submissions/57ef8ee2-4755-4351-66d0-8e37192870a5/resources?$filter= id eq 'c4682401-6866-4962-94d9-7499782a13e9'
 ```
 
-##### Response
+#### Response
 
 The following example shows the response.
 
@@ -238,7 +238,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/education/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/131eeaaa-829e-4c6c-9cf3-491b1320fe4d/submissions/603e719d-4bcd-7b78-be60-1194b3921b50/resources?$orderby=resource/createdDateTime
 ```
 
-##### Response
+#### Response
 
 The following example shows the response.
 

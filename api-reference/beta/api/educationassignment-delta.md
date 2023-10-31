@@ -536,7 +536,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/delta?$select=displayName,id
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 
