@@ -327,7 +327,7 @@ Namespace: microsoft.graph.networkaccess
 |forwardingRule|
 |filteringRule|
 |unknownFutureValue|
-  
+
 <!--
 {
   "type": "#page.annotation",
