@@ -42,7 +42,7 @@ Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkacc
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|policy|[policy](../resources/networkaccess-policy.md)|Represents the definition of the policy ruleset that makes up the core definition of a policy. Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md)|
+|policy|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md)|Represents the definition of the policy ruleset that makes up the core definition of a policy. Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md)|
 
 ## JSON representation
 The following JSON representation shows the resource type.
