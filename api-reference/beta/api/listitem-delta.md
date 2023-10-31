@@ -143,7 +143,7 @@ GET https://graph.microsoft.com/beta/sites/contoso.sharepoint.com,2C712604-1370-
 
 The following example shows the response that includes the first page of changes and the **@odata.nextLink** property that indicates that no more items are available in the current set of items. Your app should continue to request the URL value of **@odata.nextLink** until all pages of items have been retrieved.
 
-<!-- { "blockType": "response", "name": "get_listItem_delta_first", "@odata.type": "microsoft.graph.listItem", "isCollection": true, "truncated": true, "scope": "site.read" } -->
+<!-- { "blockType": "response", "name": "get_listItem_delta_first", "@odata.type": "Collection(microsoft.graph.listItem)", "truncated": true, "scope": "site.read" } -->
 
 ```http
 HTTP/1.1 200 OK
