@@ -935,7 +935,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "delta",
           "ChangeType": "Addition",
-          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/listitem-delta?view=graph-rest-1-0) method to the [listItem](https://learn.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-1-0) resource.",
+          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/listitem-delta?view=graph-rest-1.0) method to the [listItem](https://learn.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-1.0) resource.",
           "Target": "listItem"
         }
       ],
