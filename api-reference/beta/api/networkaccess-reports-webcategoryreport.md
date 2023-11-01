@@ -1,6 +1,6 @@
 ---
 title: "reports: webCategoryReport"
-description: "Get the number of users, devices, and transactions for destination URLs by web category."
+description: "Get the number of users, devices, and transactions for destination URLs, grouped by web category."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the number of users, devices, and transactions for destination URLs by web category.
+Get the number of users, devices, and transactions for destination URLs, grouped by web category.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -41,8 +41,8 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|startDateTime|DateTimeOffset|Timestamp indicating the beginning of the report period.|
-|endDateTime|DateTimeOffset|Timestamp indicating the end of the report period.|
+|startDateTime|DateTimeOffset|Timestamp that indicates the beginning of the report period.|
+|endDateTime|DateTimeOffset|Timestamp that indicates the end of the report period.|
 
 ## Request headers
 |Name|Description|

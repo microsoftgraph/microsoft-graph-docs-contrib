@@ -61,7 +61,6 @@ The following example shows a request.
 -->
 ``` http
 GET https://graph.microsoft.com/beta/networkaccess/filteringProfiles/9020f79d-71f6-4650-83a9-6b532479578f/policies
-
 ```
 
 

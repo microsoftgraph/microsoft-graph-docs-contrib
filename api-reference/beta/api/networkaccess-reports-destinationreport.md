@@ -103,15 +103,6 @@ Content-Type: application/json
         "trafficProfile":"private",
         "lastAccessDateTime":"2023-08-09T13:20:04Z",
         "trafficType":"private"
-     },
-     {
-        "fqdn":"google.com",
-        "ip":"8.8.8.8",
-        "port":"443",
-        "networkingProtocol":"TCP",
-        "trafficProfile":"internet",
-        "lastAccessDateTime":"2023-08-09T13:20:04Z",
-        "trafficType":"internet"
      }
   ]
 }

@@ -54,7 +54,6 @@ PATCH networkAccess/filteringProfiles({filteringProfile_id})/policies({Policy_li
 
 
 ## Response
-
 If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.networkaccess.filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) object in the response body.
 
 ## Examples

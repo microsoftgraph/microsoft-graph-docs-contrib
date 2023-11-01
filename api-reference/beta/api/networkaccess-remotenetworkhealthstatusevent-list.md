@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/networkAccess/logs/remoteNetworks
 
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -90,66 +90,6 @@ Content-Type: application/json
       "receivedBytes": 0,
       "description": "DisconnectReason: Main mode SA assumed to be invalid because peer stopped responding. ",
       "bgpRoutesAdvertisedCount": 0
-    },
-    {
-      "id": "7e55ff7c-5164-485d-a00d-a0afea711d2f",
-      "remoteNetworkId": "a2b07922-f62b-4679-84f5-67f11e9fd41b",
-      "createdDateTime": "2023-10-07T04:14:56.8346145Z",
-      "status": "bgpConnected",
-      "sourceIp": "xxx.xxx.xx.150",
-      "destinationIp": "xx.xxx.xxx.0",
-      "sentBytes": 0,
-      "receivedBytes": 0,
-      "description": "",
-      "bgpRoutesAdvertisedCount": 0
-    },
-    {
-      "id": "affe21da-9219-44b1-b582-1b94728a09c9",
-      "remoteNetworkId": "a2b07922-f62b-4679-84f5-67f11e9fd41b",
-      "createdDateTime": "2023-10-07T01:21:12.8346145Z",
-      "status": "tunnelConnected",
-      "sourceIp": "xxx.xxx.xx.150",
-      "destinationIp": "xx.xxx.xxx.0",
-      "sentBytes": 0,
-      "receivedBytes": 0,
-      "description": "ConnectReason: RemotelyTriggered",
-      "bgpRoutesAdvertisedCount": 0
-    },
-    {
-      "id": "bcbc3554-fc7e-46b1-93ac-0a3593fc1962",
-      "remoteNetworkId": "a2b07922-f62b-4679-84f5-67f11e9fd41b",
-      "createdDateTime": "2023-10-07T01:19:24.8346145Z",
-      "status": "bgpConnected",
-      "sourceIp": "xxx.xxx.xx.150",
-      "destinationIp": "xx.xxx.xxx.0",
-      "sentBytes": 0,
-      "receivedBytes": 0,
-      "description": "",
-      "bgpRoutesAdvertisedCount": 0
-    },
-    {
-      "id": "d3dd133c-7b1b-44aa-8e11-409926b16485",
-      "remoteNetworkId": "a2b07922-f62b-4679-84f5-67f11e9fd41b",
-      "createdDateTime": "2023-09-07T14:59:03.8346145Z",
-      "status": "bgpDisconnected",
-      "sourceIp": "xxx.xxx.xx.151",
-      "destinationIp": "xx.xxx.xxx.0",
-      "sentBytes": 0,
-      "receivedBytes": 0,
-      "description": "",
-      "bgpRoutesAdvertisedCount": 0
-    },
-    {
-      "id": "69be33d9-8609-4104-b256-2e7ff1579698",
-      "remoteNetworkId": "a2b07922-f62b-4679-84f5-67f11e9fd41b",
-      "createdDateTime": "2023-09-07T14:47:33.8346145Z",
-      "status": "alive",
-      "sourceIp": "xxx.xxx.xx.151",
-      "destinationIp": "xx.xxx.xxx.0",
-      "sentBytes": 3524,
-      "receivedBytes": 2698,
-      "description": "",
-      "bgpRoutesAdvertisedCount": 25
     }
   ]
 }

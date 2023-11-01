@@ -33,8 +33,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 DELETE networkaccess/filteringPolicies/{filteringPoliciesId}
-
-
 ```
 
 ## Request headers
@@ -60,7 +58,6 @@ The following example shows a request.
 -->
 ``` http
 DELETE https://graph.microsoft.com/beta/networkaccess/filteringPolicies/d0187e08-04cc-41b4-9a47-dd640e804280
-
 ```
 
 

@@ -1,6 +1,6 @@
 ---
 title: "reports: getDestinationSummaries"
-description: "Get a summary on the top destinations visited by different aggregations."
+description: "Get counts of the visits to the top destination aggregations."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: global-secure-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a summary on the top destinations visited by different aggregations.
+Get counts of the visits to the top destination aggregations.
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -38,8 +38,8 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|startDateTime|DateTimeOffset|Timestamp indicating the beginning of the report period.|
-|endDateTime|DateTimeOffset|Timestamp indicating the end of the report period.|
+|startDateTime|DateTimeOffset|Timestamp that indicates the beginning of the report period.|
+|endDateTime|DateTimeOffset|Timestamp that indicates the end of the report period.|
 |aggregatedBy|microsoft.graph.networkaccess.aggregationFilter|The aggregation filter used for the summary. The possible values are: `transactions`, `users`,`devices`. Required.|
 |trafficType|String|Traffic classification. The possible values are: `microsoft365`, `private`,`internet`. Required.
 

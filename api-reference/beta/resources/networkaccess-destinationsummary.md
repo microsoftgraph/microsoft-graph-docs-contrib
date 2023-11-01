@@ -18,7 +18,7 @@ A summary for device destinations.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|count|Int32|count of the destinationSummary objects aggregated by Global Secure Access service.|
+|count|Int32|The number of the destinationSummary objects, aggregated by Global Secure Access service.|
 |destination|String|The IP address or FQDN of the destination.|
 |trafficType|microsoft.graph.networkaccess.trafficType|The traffic classification. The possible values are: `internet`, `private`, `microsoft365`, `all`, `unknownFutureValue`.|
 

@@ -1,6 +1,6 @@
 ---
 title: "filteringPolicy resource type"
-description: "A filtering policy defines the specific traffic that is allowed or blocked through the Global Secure Access services for a filtering profile."
+description: "Defines the specific traffic that is allowed or blocked through the Global Secure Access services for a filtering profile."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A filtering policy defines the specific traffic that is allowed or blocked through the Global Secure Access services for a filtering profile.
+Defines the specific traffic that is allowed or blocked through the Global Secure Access services for a filtering profile.
 
 Inherits from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).
 
@@ -31,16 +31,16 @@ Inherits from [microsoft.graph.networkaccess.policy](../resources/networkaccess-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|Timestamp that indicates when the filtering Policy was originally created.|
-|description|String|Filtering policy description. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
-|id|String|Identifier for the filtering policy. Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|lastModifiedDateTime|DateTimeOffset|Indicating the date and time when a particular profile was last modified or updated.|
-|name|String|Filtering policy display name. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
+|createdDateTime|DateTimeOffset|The date and time when the filtering Policy was originally created.|
+|description|String|A description of the filtering policy. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
+|id|String|The identifier for the filtering policy. Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|lastModifiedDateTime|DateTimeOffset|The date and time when a particular profile was last modified or updated.|
+|name|String|The display name for the filtering policy. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|policyRules|[microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md) collection|Represents the definition of the policy ruleset that makes up the core definition of a policy. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md)|
+|policyRules|[microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md) collection|The definition of the policy ruleset that makes up the core definition of a policy. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md)|
 
 ## JSON representation
 The following JSON representation shows the resource type.

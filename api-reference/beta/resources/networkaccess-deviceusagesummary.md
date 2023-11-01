@@ -18,9 +18,9 @@ A summary for device usage.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|activeDeviceCount|Int32|The number of distinct device ids between endDateTime and discoveryPivotDateTime.|
-|inactiveDeviceCount|Int32|The number of distinct device ids that weren't seen between endDateTime and discoveryPivotDateTime but were seen between discoveryPivotDateTime and startDateTime.|
-|totalDeviceCount|Int32|The number of distinct device ids between startDateTime and endDateTime.|
+|activeDeviceCount|Int32|The number of distinct device IDs between endDateTime and discoveryPivotDateTime.|
+|inactiveDeviceCount|Int32|The number of distinct device IDs that weren't seen between endDateTime and discoveryPivotDateTime but were seen between discoveryPivotDateTime and startDateTime.|
+|totalDeviceCount|Int32|The number of distinct device IDs between startDateTime and endDateTime.|
 
 ## Relationships
 None.

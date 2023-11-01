@@ -1,6 +1,6 @@
 ---
 title: "filteringProfile resource type"
-description: "FilteringProfile associates Network Access policies with Entra ID Conditional Access policies, enabling user-context conditions by adding filteringPolicies to the profile."
+description: "Associates Network Access policies with Entra ID Conditional Access policies, enabling user-context conditions by adding filteringPolicies to the profile."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-FilteringProfile associates Network Access policies with Entra ID Conditional Access policies, enabling user-context conditions by adding filteringPolicies to the profile.
+Associates Network Access policies with Entra ID Conditional Access policies, enabling user-context conditions by adding filteringPolicies to the profile.
 
 Inherits from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md).
 
@@ -29,18 +29,18 @@ Inherits from [microsoft.graph.networkaccess.profile](../resources/networkaccess
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|Timestamp that indicates when the filteringProfile was originally created.|
-|description|String|Providing essential information or context about Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md).|
-|id|String|Distinct identifier that is assigned to a specific profile. Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|lastModifiedDateTime|DateTimeOffset|Indicating the date and time when a particular profile was last modified or updated. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md).|
-|name|String| short, symbolic label or identifier assigned to a specific profile. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md).|
-|priority|Int64|Determine its relative importance or order within a list.|
-|state|microsoft.graph.networkaccess.status|Current condition of a profile. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md).The possible values are: `enabled`, `disabled`.|
+|createdDateTime|DateTimeOffset|The date and time when the filteringProfile was originally created.|
+|description|String|A description of the filtering profile. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md).|
+|id|String|The distinct identifier that is assigned to a specific profile. Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|lastModifiedDateTime|DateTimeOffset|The date and time when a particular profile was last modified or updated. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md).|
+|name|String|The name of the profile. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md).|
+|priority|Int64|The priority used to order the profile for processing within a list.|
+|state|microsoft.graph.networkaccess.status|The profile state. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md). The possible values are: `enabled`, `disabled`.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|conditionalAccessPolicies|[microsoft.graph.networkaccess.conditionalAccessPolicy](../resources/networkaccess-conditionalaccesspolicy.md) collection|Represents a set of associated policies defined to regulate access to resources or systems based on specific conditions.|
+|conditionalAccessPolicies|[microsoft.graph.networkaccess.conditionalAccessPolicy](../resources/networkaccess-conditionalaccesspolicy.md) collection|A set of associated policies defined to regulate access to resources or systems based on specific conditions.|
 |policies|[microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md) collection|The collection of policies that are linked to this filtering profile. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md)|
 
 ## JSON representation

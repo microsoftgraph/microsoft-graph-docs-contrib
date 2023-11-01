@@ -60,7 +60,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "update_filteringrule"
@@ -88,7 +88,7 @@ Content-Type: application/json
 
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -98,6 +98,5 @@ The following is an example of the response
 ``` http
 HTTP/1.1 204 No Content
 Content-Type: application/json
-
 ```
 

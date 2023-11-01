@@ -1,6 +1,6 @@
 ---
 title: "entitiesSummary resource type"
-description: "Provides key information about unique connectivity entities."
+description: "Contains information about unique connectivity entities."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: global-secure-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides key information about unique connectivity entities.
+Contains information about unique connectivity entities.
 
 ## Properties
 |Property|Type|Description|

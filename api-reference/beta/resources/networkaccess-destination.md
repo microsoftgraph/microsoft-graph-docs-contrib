@@ -18,10 +18,10 @@ A unique network destination.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|deviceCount|Int32|Count of unique devices that were seen.|
+|deviceCount|Int32|The number of unique devices that were seen.|
 |fqdn|String|The fully qualified domain name (FQDN) of the destination.|
 |ip|String|The internet protocol (IP) used to access the destination.|
-|lastAccessDateTime|DateTimeOffset|the most recent Access DateTime.|
+|lastAccessDateTime|DateTimeOffset|The most recent access DateTime.|
 |networkingProtocol|microsoft.graph.networkaccess.networkingProtocol|The set of communication rules and conventions that govern data transmission between devices in a network. The possible values are: `ip`, `icmp`, `igmp`, `ggp`, `ipv4`, `tcp`, `pup`, `udp`, `idp`, `ipv6`, `ipv6RoutingHeader`, `ipv6FragmentHeader`, `ipSecEncapsulatingSecurityPayload`, `ipSecAuthenticationHeader`, `icmpV6`, `ipv6NoNextHeader`, `ipv6DestinationOptions`, `nd`, `raw`, `ipx`, `spx`, `spxII`.|
 |port|Int32|The numeric identifier that is associated with a specific endpoint in a network.|
 |trafficType|microsoft.graph.networkaccess.trafficType|The traffic classification. The possible values are: `internet`, `private`, `microsoft365`, `all`.|

@@ -38,9 +38,9 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|startDateTime|DateTimeOffset|Timestamp indicating the beginning of the report period.|
-|endDateTime|DateTimeOffset|Timestamp indicating the end of the report period.|
-|discoveryPivotDateTime|DateTimeOffset|Timestamp defining when new tenant discoveries occur.|
+|startDateTime|DateTimeOffset|Timestamp that indicates the beginning of the report period.|
+|endDateTime|DateTimeOffset|Timestamp that indicates the end of the report period.|
+|discoveryPivotDateTime|DateTimeOffset|Timestamp that indicates the beginning of reporting. Tenants are reported as newly accessed if and only if they're accessed during the reporting period after this time *and* not accessed during the reporting period before this time.|
 
 
 ## Request headers

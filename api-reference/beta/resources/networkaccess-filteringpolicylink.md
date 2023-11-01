@@ -1,6 +1,6 @@
 ---
 title: "filteringPolicyLink resource type"
-description: "A filteringPolicyLink represents the association between a filtering policy and another filtering profile."
+description: "Represents the association between a filtering policy and a filtering profile."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A filteringPolicyLink represents the association between a filtering policy and another filtering profile.
+Represents the association between a filtering policy and a filtering profile.
 
 This is an abstract type.
 Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md).
@@ -36,7 +36,7 @@ Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkacc
 |createdDateTime|DateTimeOffset|Timestamp that indicates when the filtering Policy link was originally created.|
 |id|String|Unique identifier. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|Policy last modified time.|
-|state|microsoft.graph.networkaccess.status|Determines whether the link is enabled or disabled. Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md).The possible values are: `enabled`, `disabled`|
+|state|microsoft.graph.networkaccess.status|Determines whether the link is enabled or disabled. Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md). The possible values are: `enabled`, `disabled`|
 
 
 ## Relationships

@@ -1,6 +1,6 @@
 ---
 title: "reports: deviceReport"
-description: "Provide a report of all devices with network traffic that is captured by ZTNA."
+description: "Provide a report of all devices with network traffic that ZTNA captured."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provide a report of all devices with network traffic that is captured by ZTNA.
+Provide a report of all devices with network traffic that ZTNA captured.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -41,8 +41,8 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|startDateTime|DateTimeOffset|Timestamp indicating the beginning of the report period.|
-|endDateTime|DateTimeOffset|Timestamp indicating the end of the report period.|
+|startDateTime|DateTimeOffset|Timestamp that indicates the beginning of the report period.|
+|endDateTime|DateTimeOffset|Timestamp that indicates the end of the report period.|
 
 ## Request headers
 |Name|Description|
@@ -100,14 +100,6 @@ Content-Type: application/json
         "operatingSystem":"Windows 11 Pro",
         "isCompliant":true,
         "trafficType":"private",
-        "lastAccessDateTime":"2023-08-09T13:20:04Z"
-     },
-     {
-        "displayName":"john's device",
-        "deviceId":"253ba0d4-b3b0-4825-8cd8-0f5338fade6a",
-        "operatingSystem":"Windows 11 Pro",
-        "isCompliant":true,
-        "trafficType":"internet",
         "lastAccessDateTime":"2023-08-09T13:20:04Z"
      }
   ]

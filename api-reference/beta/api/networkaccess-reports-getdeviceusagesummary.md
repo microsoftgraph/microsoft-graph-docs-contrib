@@ -1,6 +1,6 @@
 ---
 title: "reports: getDeviceUsageSummary"
-description: "Provide a summary of device onboarding and offboarding within a specified timeframe, including the total number of devices, active devices, and inactive devices."
+description: "Get a summary of device onboarding and offboarding within a specified timeframe. This summary includes the total number of devices, active devices, and inactive devices."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: global-secure-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provide a summary of device onboarding and offboarding within a specified timeframe, including the total number of devices, active devices, and inactive devices.
+Get a summary of device onboarding and offboarding within a specified timeframe. This summary includes the total number of devices, active devices, and inactive devices.
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -38,8 +38,8 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|startDateTime|DateTimeOffset|Timestamp indicating the beginning of the report period.|
-|endDateTime|DateTimeOffset|Timestamp indicating the end of the report period.|
+|startDateTime|DateTimeOffset|Timestamp that indicates the beginning of the report period.|
+|endDateTime|DateTimeOffset|Timestamp that indicates the end of the report period.|
 |activityPivotDateTime|DateTimeOffset|The time that defines what is an active or inactive device.|
 |trafficType|String|Traffic classification. The possible values are: `microsoft365`, `private`,`internet`. Required.
 

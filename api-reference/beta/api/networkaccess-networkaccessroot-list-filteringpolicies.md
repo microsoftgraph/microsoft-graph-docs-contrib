@@ -99,66 +99,6 @@ Content-Type: application/json
             "state": "enabled",
             "version": "1.0.0",
             "lastModifiedDateTime": "2023-08-25T19:04:51Z"
-        },
-        {
-            "priority": 300,
-            "createdDateTime": "2023-05-30T18:40:58Z",
-            "id": "519085fd-efb2-437c-af22-04bff0c2b571",
-            "name": "Quarantine Compromised Devices ",
-            "description": null,
-            "state": "enabled",
-            "version": "1.0.0",
-            "lastModifiedDateTime": "2023-06-20T23:14:03Z"
-        },
-        {
-            "priority": 349,
-            "createdDateTime": "2023-07-28T16:10:00Z",
-            "id": "e7542950-e4a2-4a4f-91e8-ca3470bc34df",
-            "name": "Data protection for Emma",
-            "description": null,
-            "state": "enabled",
-            "version": "1.0.0",
-            "lastModifiedDateTime": "2023-07-28T16:10:00Z"
-        },
-        {
-            "priority": 800,
-            "createdDateTime": "2023-07-11T15:38:37Z",
-            "id": "9020f79d-71f6-4650-83a9-6b532479578f",
-            "name": "test profile",
-            "description": null,
-            "state": "enabled",
-            "version": "1.0.0",
-            "lastModifiedDateTime": "2023-10-16T06:23:53Z"
-        },
-        {
-            "priority": 5500,
-            "createdDateTime": "2023-08-02T17:51:15Z",
-            "id": "029bb321-9c16-4d95-a708-2b8ce0c0fa5c",
-            "name": "Sanjay's Profile",
-            "description": null,
-            "state": "enabled",
-            "version": "1.0.0",
-            "lastModifiedDateTime": "2023-08-02T17:51:15Z"
-        },
-        {
-            "priority": 5600,
-            "createdDateTime": "2023-08-07T19:55:04Z",
-            "id": "c308a3af-e3f4-4e7b-b8cf-d17fd7acb97c",
-            "name": "John's Policy Profile",
-            "description": null,
-            "state": "enabled",
-            "version": "1.0.0",
-            "lastModifiedDateTime": "2023-10-16T05:55:28Z"
-        },
-        {
-            "priority": 65000,
-            "createdDateTime": "2023-08-04T21:51:13Z",
-            "id": "f537dff6-4cbf-4d5b-80e5-a257ee4b74e0",
-            "name": "Default /Baseline",
-            "description": null,
-            "state": "enabled",
-            "version": "1.0.0",
-            "lastModifiedDateTime": "2023-08-04T21:51:13Z"
         }
     ]
 }
