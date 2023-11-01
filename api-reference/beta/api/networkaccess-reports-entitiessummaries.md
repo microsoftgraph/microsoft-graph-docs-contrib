@@ -83,7 +83,7 @@ Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.networkaccess.entitiesSummary)",
-  "values": [
+  "value": [
     {
       "trafficType": "internet",
       "userCount": 1000,
