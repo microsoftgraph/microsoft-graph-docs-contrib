@@ -1,5 +1,5 @@
 ---
-title: "cloudPC: getShiftWorkCloudPcAccessState" (deprecated)
+title: "cloudPC: getShiftWorkCloudPcAccessState (deprecated)"
 description: "Get the access state of a shift work Cloud PC. Callers can get the latest shift work Cloud PC accessState and determine if the shift work Cloud PC is accessible to the user."
 author: "ningjingbogithub"
 ms.localizationpriority: medium
