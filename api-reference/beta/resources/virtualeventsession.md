@@ -26,14 +26,24 @@ Inherits from [onlineMeeting](../resources/onlinemeeting.md).
 
 ## Properties
 
-Reference base type [onlineMeeting](../resources/onlinemeeting.md).
+Only properties in the below table are being returned in the response.
+
+| Property              | Type                                          | Description    |
+| :-------------------- | :-------------------------------------------- | :------------------------------------ |
+| chatInfo              | [chatInfo](chatinfo.md) | The chat information associated with the virtual event session.  |
+| endDateTime           | [DateTimeTimeZOne](datetimetimezone.md) | The virtual event session end time.   |
+| id | String | The unique identifier of the virtual event session. Read-only.    |
+| joinInformation | [itemBody](itembody.md) | The join information of the virtual event session. Read-only. |
+| joinMeetingIdSettings | [joinMeetingIdSettings](joinmeetingidsettings.md) | The **joinMeetingId** of the virtual event session. Read-only. |
+| joinWebUrl | String | The join URL of the virtual event session. Read-only. |
+| startDateTime | [DateTimeTimeZOne](datetimetimezone.md) | The virtual event session start time. |
+| subject | String | The subject of the virtual event session. |
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
 |attendanceReports|[meetingAttendanceReport](../resources/meetingattendancereport.md) collection|Attendance reports of this virtual event session. Inherited from [onlineMeeting](../resources/onlinemeeting.md).|
-|registrations|[virtualEventRegistration](../resources/meetingattendancereport.md) collection|Registration records of this virtual event session.|
 
 ## JSON representation
 
@@ -63,7 +73,7 @@ The following is a JSON representation of the resource.
   "capabilities": ["String"],
   "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
   "creationDateTime": "String (timestamp)",
-  "endDateTime": "String (timestamp)",
+  "endDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "externalId": "String",
   "id": "String (identifier)",
   "isBroadcast": "Boolean",
@@ -77,7 +87,7 @@ The following is a JSON representation of the resource.
   "recordAutomatically": "Boolean",
   "recording": "Stream",
   "shareMeetingChatHistoryDefault": "String",
-  "startDateTime": "String (timestamp)",
+  "startDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "subject": "String",
   "videoTeleconferenceId": "String",
   "watermarkProtection": {"@odata.type": "microsoft.graph.watermarkProtectionValues"}
