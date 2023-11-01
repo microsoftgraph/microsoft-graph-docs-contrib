@@ -1,5 +1,3 @@
-author: "mjsantani"
-ms.reviewer: intelligentaccesspm---
 title: "authenticationMethodFeatureConfiguration resource type"
 description: "Defines the features that are allowed for different authentication methods. For each authentication method, defines the users who are enabled or excluded from using the feature."
 author: "mjsantani"

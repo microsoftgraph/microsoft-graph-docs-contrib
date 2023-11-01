@@ -1,5 +1,3 @@
-author: "mjsantani"
-ms.reviewer: intelligentaccesspm---
 title: "List passwordlessMicrosoftAuthenticatorAuthenticationMethods"
 description: "Retrieve a list of the passwordlessMicrosoftAuthenticatorAuthenticationMethod objects and their properties."
 author: "mjsantani"

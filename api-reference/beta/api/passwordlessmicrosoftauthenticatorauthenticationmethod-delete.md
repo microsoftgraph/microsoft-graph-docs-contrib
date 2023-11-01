@@ -1,5 +1,3 @@
-author: "mjsantani"
-ms.reviewer: intelligentaccesspm---
 title: "Delete passwordlessMicrosoftAuthenticatorAuthenticationMethod"
 description: "Deletes a passwordlessMicrosoftAuthenticatorAuthenticationMethod object."
 author: "mjsantani"

@@ -1,5 +1,3 @@
-author: "mjsantani"
-ms.reviewer: intelligentaccesspm---
 title: "Get microsoftAuthenticatorAuthenticationMethodConfiguration"
 description: "Read the properties and relationships of a microsoftAuthenticatorAuthenticationMethodConfiguration object."
 author: "mjsantani"
