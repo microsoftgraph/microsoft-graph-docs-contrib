@@ -31,12 +31,12 @@ Only properties in the below table are being returned in the response.
 | Property              | Type                                          | Description    |
 | :-------------------- | :-------------------------------------------- | :------------------------------------ |
 | chatInfo              | [chatInfo](chatinfo.md) | The chat information associated with the virtual event session.  |
-| endDateTime           | [DateTimeTimeZOne](datetimetimezone.md) | The virtual event session end time.   |
+| endDateTime           | [DateTimeTimeZone](datetimetimezone.md) | The virtual event session end time.   |
 | id | String | The unique identifier of the virtual event session. Read-only.    |
 | joinInformation | [itemBody](itembody.md) | The join information of the virtual event session. Read-only. |
 | joinMeetingIdSettings | [joinMeetingIdSettings](joinmeetingidsettings.md) | The **joinMeetingId** of the virtual event session. Read-only. |
 | joinWebUrl | String | The join URL of the virtual event session. Read-only. |
-| startDateTime | [DateTimeTimeZOne](datetimetimezone.md) | The virtual event session start time. |
+| startDateTime | [DateTimeTimeZone](datetimetimezone.md) | The virtual event session start time. |
 | subject | String | The subject of the virtual event session. |
 
 ## Relationships
