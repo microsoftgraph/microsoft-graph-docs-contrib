@@ -13,14 +13,6 @@
                 {
                     "Id": "5c4af81d-eebf-4c90-a5a9-c23d898dee72",
                     "ApiChange": "Resource",
-                    "ChangedApiName": "userIdentity",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [userIdentity](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-userIdentity?view=graph-rest-beta) resource type.",
-                    "Target": "userIdentity"
-                },
-                {
-                    "Id": "5c4af81d-eebf-4c90-a5a9-c23d898dee72",
-                    "ApiChange": "Resource",
                     "ChangedApiName": "organizer_v2",
                     "ChangeType": "Addition",
                     "Description": "Added the **organizer_v2** relationship to the [callRecord](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-callRecord?view=graph-rest-beta) resource.",
@@ -45,9 +37,9 @@
                 {
                     "Id": "5c4af81d-eebf-4c90-a5a9-c23d898dee72",
                     "ApiChange": "Resource",
-                    "ChangedApiName": "participantBase",
+                    "ChangedApiName": "participant",
                     "ChangeType": "Addition",
-                    "Description": "Added the [participantBase](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participantBase?view=graph-rest-beta) resource",
+                    "Description": "Added the [participant](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participant?view=graph-rest-beta) resource",
                     "Target": "participantBase"
                 },
                 {
@@ -71,24 +63,6 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2023-11-01T19:36:11.1205184Z",
-            "WorkloadArea": "Teamwork and communications",
-            "SubArea": "Calls and online meetings"
-        },
-        {
-            "ChangeList": [
-                {
-                    "Id": "a22b9856-ace8-47e1-a022-e34493256419",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "participant",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [participant](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participant?view=graph-rest-beta) resource",
-                    "Target": "participant"
-                }
-            ],
-            "Id": "a22b9856-ace8-47e1-a022-e34493256419",
-            "Cloud": "Prod",
-            "Version": "beta",
-            "CreatedDateTime": "2023-11-01T19:36:11.1208702Z",
             "WorkloadArea": "Teamwork and communications",
             "SubArea": "Calls and online meetings"
         },
