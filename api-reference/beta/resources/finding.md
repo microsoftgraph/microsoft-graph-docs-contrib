@@ -1,9 +1,9 @@
 ---
 title: "finding resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "A finding is a set of data that EPM has found to be a permissions risk."
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
@@ -13,25 +13,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+A finding is a set of data that EPM has found to be a permissions risk.
 
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List findings](../api/permissionsanalytics-list-findings.md)|[finding](../resources/finding.md) collection|Get a list of the [finding](../resources/finding.md) objects and their properties.|
-|[Create finding](../api/permissionsanalytics-post-findings.md)|[finding](../resources/finding.md)|Create a new [finding](../resources/finding.md) object.|
-|[Get finding](../api/finding-get.md)|[finding](../resources/finding.md)|Read the properties and relationships of a [finding](../resources/finding.md) object.|
-|[Update finding](../api/finding-update.md)|[finding](../resources/finding.md)|Update the properties of a [finding](../resources/finding.md) object.|
-|[Delete finding](../api/permissionsanalytics-delete-findings.md)|None|Delete a [finding](../resources/finding.md) object.|
+None
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
+|createdDateTime|DateTimeOffset|A date specifiying when the Finding was created|
+|id|String|Unique identifier for the Finding. This id will be base64 encoded using the format:{findingType}{FindingId} to ensure uniquenessInherited from [entity](../resources/entity.md).|
 
 ## Relationships
 None.
