@@ -1,6 +1,6 @@
 ---
 title: "remoteNetworkHealthStatusEvent resource type"
-description: "remoteNetworkHealthEvent providing essential insights into remote network health status."
+description: "Contains information about the health of a remote network."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-remoteNetworkHealthEvent providing essential insights into remote network health status
+Contains information about the health of a remote network.
 
 
 Inherits from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md).
@@ -28,9 +28,9 @@ Inherits from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resour
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|bgpRoutesAdvertisedCount|Int32|Count of BGP routes advertised through tunnel. Inherited from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md).|
-|createdDateTime|DateTimeOffset|Time of original event generation in UTC Client time generated. Inherited from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md).|
-|description|String|Description and summary of the event.  Inherited from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md).|
+|bgpRoutesAdvertisedCount|Int32|The number of BGP routes advertised through tunnel. Inherited from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md).|
+|createdDateTime|DateTimeOffset|The time that the event was generated, in UTC. Inherited from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md).|
+|description|String|A description for the event.  Inherited from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md).|
 |destinationIp|String|The IP address of the destination. Inherited from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md).|
 |id|String|A unique identifier for each remoteNetworkHealthEvent. Inherited from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md).|
 |receivedBytes|Int64|The number of bytes sent from the destination to the source.|

@@ -1,6 +1,6 @@
 ---
 title: "reports resource type"
-description: "Represents all the reports components in the Global Secure Access services."
+description: "A summary of access activity for a Global Secure Access service."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: global-secure-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents all the reports components in the Global Secure Access services.
+A summary of access activity for a Global Secure Access service.
 
 ## Methods
 |Method|Return type|Description|

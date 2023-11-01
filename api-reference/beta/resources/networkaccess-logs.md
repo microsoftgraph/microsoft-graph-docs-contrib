@@ -18,8 +18,8 @@ Global Secure Access Network Logs.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List remoteNetworks](../api/networkaccess-remotenetworkhealthstatusevent-list.md)|[microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md) collection|Get the remoteNetworkHealthEvent events.|
-|[List traffic](../api/networkaccess-logs-list-traffic.md)|[microsoft.graph.networkaccess.networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md) collection|Get the network Access Traffic events.|
+|[List remoteNetworks](../api/networkaccess-remotenetworkhealthstatusevent-list.md)|[microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md) collection|Get a collection of remote network health events.|
+|[List traffic](../api/networkaccess-logs-list-traffic.md)|[microsoft.graph.networkaccess.networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md) collection|Get the network access traffic events.|
 
 ## Properties
 |Property|Type|Description|
@@ -28,8 +28,8 @@ Global Secure Access Network Logs.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|remoteNetworks|[microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md) collection|remoteNetworkHealthEvent providing essential insights into remote network health.|
-|traffic|[microsoft.graph.networkaccess.networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md) collection|Represents a network access traffic log entry. It contains comprehensive information regarding network traffic events, offering detailed insights into the nature and characteristics of the traffic through the Global Secure Access services.|
+|remoteNetworks|[microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md) collection|A collection of remote network health events.|
+|traffic|[microsoft.graph.networkaccess.networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md) collection|A network access traffic log entry that contains comprehensive information about network traffic events.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

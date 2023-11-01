@@ -1,6 +1,6 @@
 ---
 title: "remoteNetworkHealthEvent resource type"
-description: "Providing detailed insights into remote network health, status, metrics, and operations."
+description: "Contains detailed insights into remote network health, status, metrics, and operations."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Providing detailed insights into remote network health, status, metrics, and operations.
+Contains detailed insights into remote network health, status, metrics, and operations.
 This is an abstract type.
 
 ## Methods
@@ -24,14 +24,14 @@ This is an abstract type.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|bgpRoutesAdvertisedCount|Int32|Count of BGP routes advertised through tunnel.|
-|createdDateTime|DateTimeOffset|Time of original event generation in UTC Client time generated.|
-|description|String|Description and summary of the event.|
+|bgpRoutesAdvertisedCount|Int32|The number of BGP routes advertised through tunnel.|
+|createdDateTime|DateTimeOffset|The time of the original event generation in UTC.|
+|description|String|The description of the event.|
 |destinationIp|String|The IP address of the destination.|
 |id|String|A unique identifier for each remoteNetworkHealthEvent.|
 |remoteNetworkId|String|A unique identifier for each remoteNetwork site.|
 |sourceIp|String|The public IP address.|
-|status|microsoft.graph.networkaccess.remoteNetworkStatus|The possible values are: `tunnelDisconnected`, `tunnelConnected`, `bgpDisconnected`, `bgpConnected`, `remoteNetworkAlive`, `unknownFutureValue`.|
+|status|microsoft.graph.networkaccess.remoteNetworkStatus|The status of the remote network. The possible values are: `tunnelDisconnected`, `tunnelConnected`, `bgpDisconnected`, `bgpConnected`, `remoteNetworkAlive`, `unknownFutureValue`.|
 |sentBytes|Int64|The number of bytes sent from the source to the destination for the connection or session.|
 |receivedBytes|Int64|The number of bytes sent from the destination to the source.|
 
