@@ -97,7 +97,7 @@ The [Microsoft Graph JavaScript Client Library](https://github.com/microsoftgrap
     const client = MicrosoftGraph.Client.initWithMiddleware(clientOptions);
     ```
 
-- You can set the version on a specific request using the `version` function on the `GraphRequest` object.
+- You can set the version on a specific request by using the `version` function on the `GraphRequest` object.
 
     ```typescript
     const user = await client
