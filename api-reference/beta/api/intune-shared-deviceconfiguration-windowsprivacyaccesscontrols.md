@@ -1,6 +1,6 @@
 ---
 title: "windowsPrivacyAccessControls action"
-description: ""
+description: "Intune Shared Deviceconfiguration Windowsprivacyaccesscontrols Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

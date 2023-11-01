@@ -27,17 +27,17 @@ The lifecycle workflows API is defined in the OData subnamespace, microsoft.grap
 
 ## Lifecycle workflows in audit logs
 
-*All* events run in Lifecycle Workflows are logged by Azure AD. These include creating, updating, deleting, or running workflows, and assigning permissions to apps.
+*All* events run in Lifecycle Workflows are logged by Microsoft Entra ID. These include creating, updating, deleting, or running workflows, and assigning permissions to apps.
 
 These auditable logs are represented by the [directoryAudit resource type](/graph/api/resources/directoryaudit) and its associated GET methods in Microsoft Graph.
 
 ## License checks
 
-The Lifecycle Workflows feature, including the API, is included in the Azure AD Premium P2 license. The tenant where Lifecycle Workflows are being created must have a valid purchased, or trial, Azure AD Premium P2 or EMS E5 subscription. For more information about the license requirements, see [Lifecycle Workflows license requirements](/azure/active-directory/governance/lifecycle-workflows-deployment#licenses).
+The Lifecycle Workflows feature, including the API, is included in the Microsoft Entra ID P2 license. The tenant where Lifecycle Workflows are being created must have a valid purchased, or trial, Microsoft Entra ID P2 or EMS E5 subscription. For more information about the license requirements, see [Lifecycle Workflows license requirements](/azure/active-directory/governance/lifecycle-workflows-deployment#licenses).
 
 ## Role and application permission authorization checks
 
-The following [Azure AD roles](/azure/active-directory/roles/permissions-reference) are required for a calling user to read reports in Lifecycle Workflows.
+The following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference) are required for a calling user to read reports in Lifecycle Workflows.
 
 | Operation | Application permissions | Required directory role of the calling user |
 |:------------------|:------------|:--------------------------------------------|

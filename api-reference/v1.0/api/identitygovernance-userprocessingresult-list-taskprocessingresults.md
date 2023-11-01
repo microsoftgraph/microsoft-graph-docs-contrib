@@ -13,15 +13,14 @@ Namespace: microsoft.graph.identityGovernance
 
 Get the task processing result from a [userProcessingResult](../resources/identitygovernance-userprocessingresult.md) either directly or through a [run](../resources/identitygovernance-run.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|LifecycleWorkflows.Read.All, LifecycleWorkflows.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|LifecycleWorkflows.Read.All, LifecycleWorkflows.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "identitygovernance_userprocessingresult_list_taskprocessingresults" } -->
+[!INCLUDE [permissions-table](../includes/permissions/identitygovernance-userprocessingresult-list-taskprocessingresults-permissions.md)]
 
 [!INCLUDE [rbac-lifecycle-workflows-apis-write](../includes/rbac-for-apis/rbac-lifecycle-workflows-apis-write.md)]
 
@@ -48,7 +47,7 @@ This method supports the `$select`, `$orderby`, `$expand`, and `$filter` OData q
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -108,7 +107,7 @@ GET https://graph.microsoft.com/v1.0/IdentityGovernance/lifecycleWorkflows/workf
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -229,7 +228,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workf
 #### Response
 
 
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -353,7 +352,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workf
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -473,7 +472,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workf
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

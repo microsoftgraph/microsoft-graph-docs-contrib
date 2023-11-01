@@ -18,6 +18,8 @@ Users in the same organization can have different settings based on their prefer
 To get the user current settings, see [current user settings](usersettings-get.md). 
 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ### Batch request
 
 It's also possible to opt out multiple users from Delve through a batch request.
@@ -29,13 +31,10 @@ To learn more, see [JSON batching](/graph/json-batching).
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.ReadWrite, User.ReadWrite.All   |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "usersettings_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/usersettings-update-permissions.md)]
 
 ## HTTP request
 

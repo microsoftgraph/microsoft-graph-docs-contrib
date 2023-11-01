@@ -13,15 +13,14 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of an [educationRubric](../resources/educationrubric.md) object. Only teachers and students can perform this operation.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+<!-- { "blockType": "permissions", "name": "educationrubric_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationrubric-get-permissions.md)]
 
 ## HTTP request
 
@@ -49,7 +48,7 @@ If successful, this method returns a `200 OK` response code and the requested [e
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -98,7 +97,7 @@ GET https://graph.microsoft.com/v1.0/education/me/rubrics/bf040af7-a5ff-4abe-a8c
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

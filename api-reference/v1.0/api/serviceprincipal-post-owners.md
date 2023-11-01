@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Use this API to add an owner for the [servicePrincipal](../resources/serviceprincipal.md). Service principal owners can be users, the service principal itself, or other service principals.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -101,7 +103,7 @@ Content-type: application/json
 
 In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.
 ### Response
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response"

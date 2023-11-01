@@ -12,17 +12,17 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Update the properties of an [administrativeUnit](../resources/administrativeunit.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | AdministrativeUnit.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | AdministrativeUnit.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "administrativeunit_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/administrativeunit-update-permissions.md)]
 
-To update an administrative unit, the calling principal must be assigned one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
+To update an administrative unit, the calling principal must be assigned one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference):
 
 * Privileged Role Administrator
 * Global Administrator
@@ -42,7 +42,7 @@ PATCH /directory/administrativeUnits/{id}
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintains their previous values or be recalculated based on changes to other property values. For best performance, you shouldn't include existing values that haven't changed.
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|

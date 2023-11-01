@@ -15,15 +15,14 @@ Namespace: microsoft.graph
 
 Get newly created, updated, or deleted directory roles without having to perform a full read of the entire resource collection. See [Using Delta Query](/graph/delta-query-overview) for details.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "directoryrole_delta" } -->
+[!INCLUDE [permissions-table](../includes/permissions/directoryrole-delta-permissions.md)]
 
 ## HTTP request
 
@@ -58,7 +57,7 @@ This method supports OData query parameters to help customize the response.
 - You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The 
 _id_ property is always returned. 
 
-- There is limited support for `$filter`:
+- There's limited support for `$filter`:
   * The only supported `$filter` expression is for tracking changes for specific resources, by their id:  `$filter=id+eq+{value}` or `$filter=id+eq+{value1}+or+id+eq+{value2}`. The number of ids you can specify is limited by the maximum URL length.
 
 
@@ -69,7 +68,7 @@ _id_ property is always returned.
 | Content-Type  | application/json |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ### Response
 
@@ -81,7 +80,7 @@ If successful, this method returns a `200 OK` response code and [directoryRole](
 
 See:</br>
 - [Using Delta Query](/graph/delta-query-overview) for more details</br>
-- [Get incremental changes for users](/graph/delta-query-users) for an example requests.</br>
+- [Get incremental changes for users](/graph/delta-query-users) for an example request.</br>
 
 ### Example
 #### Request

@@ -14,17 +14,13 @@ Namespace: microsoft.graph
 
 Create and send a notification targeting a user through Microsoft Graph. The notification is stored in the Microsoft Graph notification feed store, and is sent to all app clients on all device endpoints that the user is signed in to.  
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
-Your application service doesn't require any other permissions to post notifications to your targeted user.  
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-> [!IMPORTANT]
-> If you choose to post notifications on behalf of a user via delegated permissions instead, one of the following permissions is required to call this API. We don't recommend this option for creating notifications. If you'd like to learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Notifications.ReadWrite.CreatedByApp    |
-|Delegated (personal Microsoft account) | Notifications.ReadWrite.CreatedByApp    |
-|Application | Not supported.|
+<!-- { "blockType": "permissions", "name": "notifications_post" } -->
+[!INCLUDE [permissions-table](../includes/permissions/notifications-post-permissions.md)]
 
 
 

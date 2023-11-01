@@ -1,6 +1,6 @@
 ---
 title: "List servicePrincipal memberOf"
-description: "Get the groups and directory roles that this service principal is a direct member of. This operation is not transitive."
+description: "Get the groups and directory roles that this service principal is a direct member of. This operation isn't transitive."
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: "applications"
@@ -13,17 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the groups and directory roles that this [servicePrincipal](../resources/serviceprincipal.md) is a direct member of. This operation is not transitive.
+Get the groups and directory roles that this [servicePrincipal](../resources/serviceprincipal.md) is a direct member of. This operation isn't transitive.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Application.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "serviceprincipal_list_memberof" } -->
+[!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-list-memberof-permissions.md)]
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -46,7 +45,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 | ConsistencyLevel | eventual. This header and `$count` are required when using the `$search`, `$filter`, `$orderby`, or OData cast query parameters. It uses an index that might not be up-to-date with recent changes to the object. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -58,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -106,7 +105,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/memberOf
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -139,7 +138,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 <!-- {
   "blockType": "ignored",
@@ -152,7 +151,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -171,7 +170,7 @@ Content-type: text/plain
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 <!-- {
   "blockType": "ignored",
@@ -184,7 +183,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -203,7 +202,7 @@ Content-type: text/plain
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 <!-- {
   "blockType": "ignored",
@@ -216,7 +215,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -251,7 +250,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 <!-- {
   "blockType": "ignored",
@@ -264,7 +263,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {

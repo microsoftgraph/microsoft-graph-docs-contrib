@@ -14,14 +14,13 @@ Namespace: microsoft.graph
 
 Create a new [teamworkTagMember](../resources/teamworktagmember.md) object in a team.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-|Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|TeamworkTag.ReadWrite|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|TeamworkTag.ReadWrite.All|
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "teamworktagmember_post" } -->
+[!INCLUDE [permissions-table](../includes/permissions/teamworktagmember-post-permissions.md)]
 
 ## HTTP request
 
@@ -42,7 +41,7 @@ POST /teams/{team-Id}/tags/{teamworkTag-Id}/members
 ## Request body
 In the request body, supply a JSON representation of the [teamworkTagMember](../resources/teamworktagmember.md) object.
 
-The following table shows the properties that are required when you create the [teamworkTagMember](../resources/teamworktagmember.md).
+The following table lists the properties that are required when you create the [teamworkTagMember](../resources/teamworktagmember.md).
 
 |Property|Type|Description|
 |:---|:---|:---|

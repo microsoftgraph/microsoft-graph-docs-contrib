@@ -55,6 +55,250 @@
     {
       "ChangeList": [
         {
+          "Id": "a7fdcd96-5c33-4208-9031-f8e62c27c1bf",
+          "ApiChange": "Property",
+          "ChangedApiName": "blackAndWhitePageCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **blackAndWhitePageCount** property to the [printUsageByPrinter](https://learn.microsoft.com/en-us/graph/api/resources/printUsageByPrinter?view=graph-rest-1.0) resource.",
+          "Target": "printUsageByPrinter"
+        },
+        {
+          "Id": "a7fdcd96-5c33-4208-9031-f8e62c27c1bf",
+          "ApiChange": "Property",
+          "ChangedApiName": "colorPageCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **colorPageCount** property to the [printUsageByPrinter](https://learn.microsoft.com/en-us/graph/api/resources/printUsageByPrinter?view=graph-rest-1.0) resource.",
+          "Target": "printUsageByPrinter"
+        },
+        {
+          "Id": "a7fdcd96-5c33-4208-9031-f8e62c27c1bf",
+          "ApiChange": "Property",
+          "ChangedApiName": "completedJobCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **completedJobCount** property to the [printUsageByPrinter](https://learn.microsoft.com/en-us/graph/api/resources/printUsageByPrinter?view=graph-rest-1.0) resource.",
+          "Target": "printUsageByPrinter"
+        },
+        {
+          "Id": "a7fdcd96-5c33-4208-9031-f8e62c27c1bf",
+          "ApiChange": "Property",
+          "ChangedApiName": "doubleSidedSheetCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **doubleSidedSheetCount** property to the [printUsageByPrinter](https://learn.microsoft.com/en-us/graph/api/resources/printUsageByPrinter?view=graph-rest-1.0) resource.",
+          "Target": "printUsageByPrinter"
+        },
+        {
+          "Id": "a7fdcd96-5c33-4208-9031-f8e62c27c1bf",
+          "ApiChange": "Property",
+          "ChangedApiName": "mediaSheetCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **mediaSheetCount** property to the [printUsageByPrinter](https://learn.microsoft.com/en-us/graph/api/resources/printUsageByPrinter?view=graph-rest-1.0) resource.",
+          "Target": "printUsageByPrinter"
+        },
+        {
+          "Id": "a7fdcd96-5c33-4208-9031-f8e62c27c1bf",
+          "ApiChange": "Property",
+          "ChangedApiName": "pageCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **pageCount** property to the [printUsageByPrinter](https://learn.microsoft.com/en-us/graph/api/resources/printUsageByPrinter?view=graph-rest-1.0) resource.",
+          "Target": "printUsageByPrinter"
+        },
+        {
+          "Id": "a7fdcd96-5c33-4208-9031-f8e62c27c1bf",
+          "ApiChange": "Property",
+          "ChangedApiName": "singleSidedSheetCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **singleSidedSheetCount** property to the [printUsageByPrinter](https://learn.microsoft.com/en-us/graph/api/resources/printUsageByPrinter?view=graph-rest-1.0) resource.",
+          "Target": "printUsageByPrinter"
+        },
+        {
+          "Id": "a7fdcd96-5c33-4208-9031-f8e62c27c1bf",
+          "ApiChange": "Property",
+          "ChangedApiName": "blackAndWhitePageCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **blackAndWhitePageCount** property to the [printUsageByUser](https://learn.microsoft.com/en-us/graph/api/resources/printUsageByUser?view=graph-rest-1.0) resource.",
+          "Target": "printUsageByUser"
+        },
+        {
+          "Id": "a7fdcd96-5c33-4208-9031-f8e62c27c1bf",
+          "ApiChange": "Property",
+          "ChangedApiName": "colorPageCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **colorPageCount** property to the [printUsageByUser](https://learn.microsoft.com/en-us/graph/api/resources/printUsageByUser?view=graph-rest-1.0) resource.",
+          "Target": "printUsageByUser"
+        },
+        {
+          "Id": "a7fdcd96-5c33-4208-9031-f8e62c27c1bf",
+          "ApiChange": "Property",
+          "ChangedApiName": "completedJobCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **completedJobCount** property to the [printUsageByUser](https://learn.microsoft.com/en-us/graph/api/resources/printUsageByUser?view=graph-rest-1.0) resource.",
+          "Target": "printUsageByUser"
+        },
+        {
+          "Id": "a7fdcd96-5c33-4208-9031-f8e62c27c1bf",
+          "ApiChange": "Property",
+          "ChangedApiName": "doubleSidedSheetCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **doubleSidedSheetCount** property to the [printUsageByUser](https://learn.microsoft.com/en-us/graph/api/resources/printUsageByUser?view=graph-rest-1.0) resource.",
+          "Target": "printUsageByUser"
+        },
+        {
+          "Id": "a7fdcd96-5c33-4208-9031-f8e62c27c1bf",
+          "ApiChange": "Property",
+          "ChangedApiName": "mediaSheetCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **mediaSheetCount** property to the [printUsageByUser](https://learn.microsoft.com/en-us/graph/api/resources/printUsageByUser?view=graph-rest-1.0) resource.",
+          "Target": "printUsageByUser"
+        },
+        {
+          "Id": "a7fdcd96-5c33-4208-9031-f8e62c27c1bf",
+          "ApiChange": "Property",
+          "ChangedApiName": "pageCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **pageCount** property to the [printUsageByUser](https://learn.microsoft.com/en-us/graph/api/resources/printUsageByUser?view=graph-rest-1.0) resource.",
+          "Target": "printUsageByUser"
+        },
+        {
+          "Id": "a7fdcd96-5c33-4208-9031-f8e62c27c1bf",
+          "ApiChange": "Property",
+          "ChangedApiName": "singleSidedSheetCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **singleSidedSheetCount** property to the [printUsageByUser](https://learn.microsoft.com/en-us/graph/api/resources/printUsageByUser?view=graph-rest-1.0) resource.",
+          "Target": "printUsageByUser"
+        }
+      ],
+      "Id": "a7fdcd96-5c33-4208-9031-f8e62c27c1bf",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-10-18T18:40:00.4103533Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6ad0357b-299a-4ed5-a092-0f51fd3e6a90",
+          "ApiChange": "Property",
+          "ChangedApiName": "blackAndWhitePageCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **blackAndWhitePageCount** property to the [printUsageByPrinter](https://docs.microsoft.com/en-us/graph/api/resources/printUsageByPrinter?view=graph-rest-beta) resource.",
+          "Target": "printUsageByPrinter"
+        },
+        {
+          "Id": "6ad0357b-299a-4ed5-a092-0f51fd3e6a90",
+          "ApiChange": "Property",
+          "ChangedApiName": "colorPageCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **colorPageCount** property to the [printUsageByPrinter](https://docs.microsoft.com/en-us/graph/api/resources/printUsageByPrinter?view=graph-rest-beta) resource.",
+          "Target": "printUsageByPrinter"
+        },
+        {
+          "Id": "6ad0357b-299a-4ed5-a092-0f51fd3e6a90",
+          "ApiChange": "Property",
+          "ChangedApiName": "completedJobCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **completedJobCount** property to the [printUsageByPrinter](https://docs.microsoft.com/en-us/graph/api/resources/printUsageByPrinter?view=graph-rest-beta) resource.",
+          "Target": "printUsageByPrinter"
+        },
+        {
+          "Id": "6ad0357b-299a-4ed5-a092-0f51fd3e6a90",
+          "ApiChange": "Property",
+          "ChangedApiName": "doubleSidedSheetCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **doubleSidedSheetCount** property to the [printUsageByPrinter](https://docs.microsoft.com/en-us/graph/api/resources/printUsageByPrinter?view=graph-rest-beta) resource.",
+          "Target": "printUsageByPrinter"
+        },
+        {
+          "Id": "6ad0357b-299a-4ed5-a092-0f51fd3e6a90",
+          "ApiChange": "Property",
+          "ChangedApiName": "mediaSheetCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **mediaSheetCount** property to the [printUsageByPrinter](https://docs.microsoft.com/en-us/graph/api/resources/printUsageByPrinter?view=graph-rest-beta) resource.",
+          "Target": "printUsageByPrinter"
+        },
+        {
+          "Id": "6ad0357b-299a-4ed5-a092-0f51fd3e6a90",
+          "ApiChange": "Property",
+          "ChangedApiName": "pageCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **pageCount** property to the [printUsageByPrinter](https://docs.microsoft.com/en-us/graph/api/resources/printUsageByPrinter?view=graph-rest-beta) resource.",
+          "Target": "printUsageByPrinter"
+        },
+        {
+          "Id": "6ad0357b-299a-4ed5-a092-0f51fd3e6a90",
+          "ApiChange": "Property",
+          "ChangedApiName": "singleSidedSheetCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **singleSidedSheetCount** property to the [printUsageByPrinter](https://docs.microsoft.com/en-us/graph/api/resources/printUsageByPrinter?view=graph-rest-beta) resource.",
+          "Target": "printUsageByPrinter"
+        },
+        {
+          "Id": "6ad0357b-299a-4ed5-a092-0f51fd3e6a90",
+          "ApiChange": "Property",
+          "ChangedApiName": "blackAndWhitePageCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **blackAndWhitePageCount** property to the [printUsageByUser](https://docs.microsoft.com/en-us/graph/api/resources/printUsageByUser?view=graph-rest-beta) resource.",
+          "Target": "printUsageByUser"
+        },
+        {
+          "Id": "6ad0357b-299a-4ed5-a092-0f51fd3e6a90",
+          "ApiChange": "Property",
+          "ChangedApiName": "colorPageCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **colorPageCount** property to the [printUsageByUser](https://docs.microsoft.com/en-us/graph/api/resources/printUsageByUser?view=graph-rest-beta) resource.",
+          "Target": "printUsageByUser"
+        },
+        {
+          "Id": "6ad0357b-299a-4ed5-a092-0f51fd3e6a90",
+          "ApiChange": "Property",
+          "ChangedApiName": "completedJobCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **completedJobCount** property to the [printUsageByUser](https://docs.microsoft.com/en-us/graph/api/resources/printUsageByUser?view=graph-rest-beta) resource.",
+          "Target": "printUsageByUser"
+        },
+        {
+          "Id": "6ad0357b-299a-4ed5-a092-0f51fd3e6a90",
+          "ApiChange": "Property",
+          "ChangedApiName": "doubleSidedSheetCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **doubleSidedSheetCount** property to the [printUsageByUser](https://docs.microsoft.com/en-us/graph/api/resources/printUsageByUser?view=graph-rest-beta) resource.",
+          "Target": "printUsageByUser"
+        },
+        {
+          "Id": "6ad0357b-299a-4ed5-a092-0f51fd3e6a90",
+          "ApiChange": "Property",
+          "ChangedApiName": "mediaSheetCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **mediaSheetCount** property to the [printUsageByUser](https://docs.microsoft.com/en-us/graph/api/resources/printUsageByUser?view=graph-rest-beta) resource.",
+          "Target": "printUsageByUser"
+        },
+        {
+          "Id": "6ad0357b-299a-4ed5-a092-0f51fd3e6a90",
+          "ApiChange": "Property",
+          "ChangedApiName": "pageCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **pageCount** property to the [printUsageByUser](https://docs.microsoft.com/en-us/graph/api/resources/printUsageByUser?view=graph-rest-beta) resource.",
+          "Target": "printUsageByUser"
+        },
+        {
+          "Id": "6ad0357b-299a-4ed5-a092-0f51fd3e6a90",
+          "ApiChange": "Property",
+          "ChangedApiName": "singleSidedSheetCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **singleSidedSheetCount** property to the [printUsageByUser](https://docs.microsoft.com/en-us/graph/api/resources/printUsageByUser?view=graph-rest-beta) resource.",
+          "Target": "printUsageByUser"
+        }
+      ],
+      "Id": "a7fdcd96-5c33-4208-9031-f8e62c27c1bf",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-10-18T18:40:00.4103533Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "9818e810-caf7-4afe-8a53-b7eaf302cabe",
           "ApiChange": "Resource",
           "ChangedApiName": "printerShareViewpoint",

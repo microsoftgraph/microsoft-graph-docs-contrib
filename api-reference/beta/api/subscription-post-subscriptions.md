@@ -19,13 +19,15 @@ To identify the resources for which you can create subscriptions and the limitat
 
 Some resources support rich notifications, that is, notifications that include resource data. For more information about these resources, see [Set up change notifications that include resource data: Supported resources](/graph/webhooks-with-resource-data#supported-resources).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-Creating a subscription requires read permission to the resource. For example, to get change notifications on messages, your app needs the Mail.Read permission. 
+Creating a subscription requires read permission to the resource. For example, to get change notifications on messages, your app needs the Mail.Read permission.
 
 Depending on the resource and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing the permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
 
-> **Note**: 
+> **Note**:
 >
 > Due to security restrictions, Microsoft Graph subscriptions do not support write access permissions when only read access permissions are needed.
 >
@@ -188,6 +190,10 @@ Content-type: application/json
 In the request body, supply a JSON representation of the [subscription](../resources/subscription.md) object.
 The `clientState` and `latestSupportedTlsVersion` fields are optional.
 
+#### Duplicate subscription behavior
+
+Duplicate subscriptions are not allowed. When a subscription request contains the same values for **changeType** and **resource** that an existing subscription contains, the request will fail with an HTTP error code `409 Conflict`, and the error message `Subscription Id <> already exists for the requested combination`.
+
 #### Resources examples
 
 The following are valid values for the resource property.
@@ -222,7 +228,7 @@ The following are valid values for the resource property.
 
 ### Response
 
-The following example shows the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

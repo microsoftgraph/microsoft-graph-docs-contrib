@@ -6,10 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-await graph_client.users.by_user_id('user-id').online_meetings.by_online_meeting_id('onlineMeeting-id').recordings.by_recording_id('callRecording-id').content.get()
+await graph_client.users.by_user_id('user-id').online_meetings.by_online_meeting_id('onlineMeeting-id').recordings.by_call_recording_id('callRecording-id').content.get()
 
 
 ```

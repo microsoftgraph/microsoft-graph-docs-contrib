@@ -14,14 +14,13 @@ Namespace: microsoft.graph
 
 Get the service principals to which the user has an app role assignment either directly or through group membership.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-| Permission type                        | Permissions (from least to most privileged)                             |
-| :------------------------------------- | :---------------------------------------------------------------------- |
-| Delegated (work or school account)     | User.ReadBasic.All, Directory.Read.All, AppRoleAssignment.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported.                                                          |
-| Application                            | Directory.Read.All, AppRoleAssignment.ReadWrite.All                     |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "user_list_approleassignedresources" } -->
+[!INCLUDE [permissions-table](../includes/permissions/user-list-approleassignedresources-permissions.md)]
 
 ## HTTP request
 
@@ -47,7 +46,7 @@ This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$select`, 
 | ConsistencyLevel | eventual. This header is required when calling this API. For more information about the use of **ConsistencyLevel**, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries). |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -104,7 +103,7 @@ ConsistencyLevel: eventual
 ---
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

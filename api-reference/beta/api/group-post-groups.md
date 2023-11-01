@@ -22,15 +22,14 @@ This operation returns by default only a subset of the properties for each group
 
 **Note**: To create a [team](../resources/team.md), first create a group then add a team to it, see [create team](../api/team-put-teams.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                |
-| :------------------------------------- | :--------------------------------------------------------- |
-| Delegated (work or school account)     | Group.ReadWrite.All, Directory.ReadWrite.All               |
-| Delegated (personal Microsoft account) | Not supported.                                             |
-| Application                            | Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "group_post_groups" } -->
+[!INCLUDE [permissions-table](../includes/permissions/group-post-groups-permissions.md)]
 
 For an app create a group with owners or members while it has the *Group.Create* permission, the app must have the privileges to read the object type that it wants to assign as the group owner or member. Therefore:
 + The app can assign itself as the group's owner or member.
@@ -56,7 +55,7 @@ POST /groups
 
 In the request body, supply a JSON representation of the [group](../resources/group.md) object.
 
-The following table shows the properties that are required when you create the [group](../resources/group.md). Specify other writable properties as necessary for your group.
+The following table lists the properties that are required when you create the [group](../resources/group.md). Specify other writable properties as necessary for your group.
 
 | Property        | Type    | Description                                                                                                                                                                                                                                                                                                                                |
 | :-------------- | :------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -96,7 +95,7 @@ The following example creates a Microsoft 365 group. Because the owners have not
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 
@@ -157,7 +156,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response. The value of the **preferredDataLocation** property is inherited from the group creator's preferred data location.
+The following example shows the response. The value of the **preferredDataLocation** property is inherited from the group creator's preferred data location.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -215,7 +214,7 @@ The following example creates a security group with an owner and members specifi
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -342,11 +341,13 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Create a Microsoft 365 group that can be assigned to an Azure AD role
+<a name='example-3-create-a-microsoft-365-group-that-can-be-assigned-to-an-azure-ad-role'></a>
+
+### Example 3: Create a Microsoft 365 group that can be assigned to a Microsoft Entra role
 
 #### Request
 
-The following is an example of the request. The calling user must be assigned the _RoleManagement.ReadWrite.Directory_ permission to set the **isAssignableToRole** property or update the membership of such groups.
+The following example shows a request. The calling user must be assigned the _RoleManagement.ReadWrite.Directory_ permission to set the **isAssignableToRole** property or update the membership of such groups.
 
 A group with **isAssignableToRole** property set to `true` cannot be of dynamic membership type, its **securityEnabled** must be set to `true`, and **visibility** can only be `Private`.
 
@@ -417,7 +418,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response. The value of the **preferredDataLocation** property is inherited from the group creator's preferred data location.
+The following example shows the response. The value of the **preferredDataLocation** property is inherited from the group creator's preferred data location.
 
 <!-- {
   "blockType": "response",

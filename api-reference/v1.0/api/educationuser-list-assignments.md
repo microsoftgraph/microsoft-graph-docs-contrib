@@ -17,15 +17,14 @@ This method allows a caller to find all the **assignments** belonging to a stude
 
 > **Note:** The `instructions`, `assignedDateTime`, `assignTo`, `resourcesFolderUrl` and `webUrl` properties will always display null.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                                            |
-| :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
-| Delegated (work or school account)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
-| Delegated (personal Microsoft account) | Not supported.                                                                                         |
-| Application                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "educationuser_list_assignments" } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationuser-list-assignments-permissions.md)]
 
 Calling the `/me` endpoint requires a signed-in user and therefore a delegated permission. Application permissions are not supported when using the `/me` endpoint.
 
@@ -51,7 +50,7 @@ This method supports the `$top`, `$filter`, `$orderby`, and `$select` OData quer
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -62,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Example 1: Get the assignments of the logged in user
 
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -111,7 +110,7 @@ GET https://graph.microsoft.com/v1.0/education/me/assignments
 
 #### Response
 
-The following is an example of the response. 
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -211,7 +210,7 @@ Content-type: application/json
 ### Example 2: Get assignments of a user
 
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 
@@ -263,7 +262,7 @@ GET https://graph.microsoft.com/v1.0/education/users/f3a5344e-dbde-48b0-be24-b5b
 
 If user tries to query a different user-id than his own, this method returns a `403 Forbidden` response code.
 
-The following is an example of the response. 
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -364,7 +363,7 @@ Content-type: application/json
 ### Example 3: Get user assignments with expand submissions
 
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 
@@ -414,7 +413,7 @@ GET https://graph.microsoft.com/v1.0/education/users/80cefd93-8d88-40e2-b5d3-678
 
 #### Response
 
-The following is an example of the response. 
+The following example shows the response.
 
 > **Note:** It will expand submissions if the user has a student role, and will be null for teacher role.
 

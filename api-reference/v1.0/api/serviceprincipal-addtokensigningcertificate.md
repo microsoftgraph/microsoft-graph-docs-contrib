@@ -24,13 +24,13 @@ All the objects have the same value of **customKeyIdentifier**.
 
 The **passwordCredential** is used to open the PFX file (private key). It and the associated private key object have the same value of **keyId**. When set during creation through the **displayName** property, the subject of the certificate cannot be updated. The **startDateTime** is set to the same time the certificate is created using the action. The **endDateTime** can be up to three years after the certificate is created.
 
-## Permissions
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All |
-|Delegated (personal Microsoft account) | None.    |
-|Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "serviceprincipal_addtokensigningcertificate" } -->
+[!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-addtokensigningcertificate-permissions.md)]
 
 
 ## HTTP request
@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a new [selfSigne
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 
@@ -117,7 +117,7 @@ Content-type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

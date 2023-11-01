@@ -16,14 +16,13 @@ Get the list of security principals (users, groups, and service principals) that
 
 To list the direct and transitive role assignments for a specific principal, use the [List transitiveRoleAssignments](rbacapplication-list-transitiveroleassignments.md) API.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory|
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "unifiedroledefinition_assignedprincipals" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedroledefinition-assignedprincipals-permissions.md)]
 
 If the caller doesn't have the permission to read properties for some of the objects included in the result set, the response follows the [limited information returned for inaccessible member objects](/graph/permissions-overview#limited-information-returned-for-inaccessible-member-objects) pattern.
 
@@ -37,7 +36,7 @@ To read the properties that may require permissions for the object, grant the pe
 }
 -->
 ``` http
-GET /roleManagement/directory/roleDefinitions/{unifiedRoleDefinitionId}/assignedPrincipals
+GET /roleManagement/directory/roleDefinitions/{unifiedRoleDefinitionId}/assignedPrincipals(transitive=@transitive,directoryScopeType='@directoryScopeType',directoryScopeId='@directoryScopeId')
 ```
 
 ## Function parameters

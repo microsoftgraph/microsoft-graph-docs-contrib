@@ -1,6 +1,6 @@
 ---
 title: "synchronizationSchema resource type"
-description: "Defines what objects will be synchronized and how they will be synchronized."
+description: "Defines what objects will be synchronized and how they are synchronized."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
@@ -11,13 +11,13 @@ ms.prod: "applications"
 
 Namespace: microsoft.graph
 
-Defines what objects will be synchronized and how they will be synchronized. The synchronization schema contains most of the setup information for a particular synchronization job. Typically, you will customize some of the [attribute mappings](synchronization-attributemapping.md), or add a [scoping filter](synchronization-filter.md) to synchronize only objects that satisfy a certain condition.
+Defines what objects will be synchronized and how they are synchronized. The synchronization schema contains most of the setup information for a particular synchronization job. Typically, you customize some of the [attribute mappings](synchronization-attributemapping.md), or add a [scoping filter](synchronization-filter.md) to synchronize only objects that satisfy a certain condition.
 
 The following sections describe the high-level components of the synchronization schema.
 
 ## Directory definitions
 
-[Directory definitions](synchronization-directorydefinition.md) provide the synchronization engine information about directories and their objects. For example, the directory definition tells the synchronization engine that an Azure AD directory has objects named **user** and **group**, which attributes are supported for those objects, and the types for those attributes. In order for a particular object and attribute to be used in synchronization rules/object mappings, they have to be defined as part of the directory definition.
+[Directory definitions](synchronization-directorydefinition.md) provide the synchronization engine information about directories and their objects. For example, the directory definition tells the synchronization engine that a Microsoft Entra directory has objects named **user** and **group**, which attributes are supported for those objects, and the types for those attributes. In order for a particular object and attribute to be used in synchronization rules/object mappings, they have to be defined as part of the directory definition.
 
 ## Synchronization rules
 
@@ -54,7 +54,7 @@ The following sections describe the high-level components of the synchronization
 |directories|[directoryDefinition](../resources/synchronization-directorydefinition.md) collection|Contains the collection of directories and all of their objects.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -75,5 +75,3 @@ The following is a JSON representation of the resource.
   "version": "String"
 }
 ```
-
-

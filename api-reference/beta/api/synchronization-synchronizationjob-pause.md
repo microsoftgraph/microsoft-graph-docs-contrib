@@ -1,6 +1,6 @@
 ---
 title: "synchronizationJob: pause"
-description: "Temporarily stop synchronization. All the progress, including job state, is persisted, and the job will continue from where it left off when a Start call is made."
+description: "Temporarily stop synchronization. All the progress, including job state, is persisted, and the job continues from where it left off when a Start call is made."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
@@ -13,16 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Temporarily stop a running synchronization job. All the progress, including job state, is persisted, and the job will continue from where it left off when a [start](../api/synchronization-synchronizationjob-start.md) call is made.
+Temporarily stop a running synchronization job. All the progress, including job state, is persisted, and the job continues from where it left off when a [start](../api/synchronization-synchronizationjob-start.md) call is made.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Synchronization.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "synchronization_synchronizationjob_pause" } -->
+[!INCLUDE [permissions-table](../includes/permissions/synchronization-synchronizationjob-pause-permissions.md)]
 
 [!INCLUDE [rbac-synchronization-apis](../includes/rbac-for-apis/rbac-synchronization-apis.md)]
 
@@ -40,16 +39,16 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/pause
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, returns a `204 No Content` response. It does not return anything in the response body.
+If successful, returns a `204 No Content` response. It doesn't return anything in the response body.
 
 ## Example
 
 ### Request
-The following is an example of a request.
+Here's an example  of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -95,7 +94,7 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/job
 ---
 
 ### Response
-The following is an example of a response.
+Here's an example  of a response.
 <!-- {
   "blockType": "response"
 } -->

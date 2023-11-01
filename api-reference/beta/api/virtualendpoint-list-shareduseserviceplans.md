@@ -1,5 +1,5 @@
 ---
-title: "List cloudPcSharedUseServicePlans"
+title: "List cloudPcSharedUseServicePlans (deprecated)"
 description: "Get a list of the cloudPcSharedUseServicePlan objects and their properties."
 author: "GuoanTang"
 ms.localizationpriority: medium
@@ -7,23 +7,25 @@ ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# List cloudPcSharedUseServicePlans
+# List cloudPcSharedUseServicePlans (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+> [!CAUTION]
+> The **cloudPcSharedUseServicePlan** resource is deprecated and stopped returning data on October 8, 2023. Going forward, use the [cloudPcFrontLineServicePlan](../resources/cloudpcfrontlineserviceplan.md).
+
 Get a list of the [cloudPcSharedUseServicePlan](../resources/cloudpcshareduseserviceplan.md) objects and their properties.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | CloudPC.Read.All, CloudPC.ReadWrite.All     |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | CloudPC.Read.All, CloudPC.ReadWrite.All     |
+<!-- { "blockType": "permissions", "name": "virtualendpoint_list_shareduseserviceplans" } -->
+[!INCLUDE [permissions-table](../includes/permissions/virtualendpoint-list-shareduseserviceplans-permissions.md)]
 
 ## HTTP request
 
@@ -48,7 +50,7 @@ This method supports the `$select`, `$filter`, `$orderby`, and `$skip` OData que
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -107,7 +109,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/sharedUseS
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

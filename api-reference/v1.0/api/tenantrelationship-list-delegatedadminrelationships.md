@@ -3,7 +3,7 @@ title: "List delegatedAdminRelationships"
 description: "Get a list of the delegatedAdminRelationship objects and their properties."
 author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: "customer-relationship-management"
+ms.prod: partner-customer-administration
 doc_type: apiPageType
 ---
 
@@ -12,14 +12,13 @@ Namespace: microsoft.graph
 
 Get a list of the [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) objects and their properties.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)| DelegatedAdminRelationship.Read.All, DelegatedAdminRelationship.ReadWrite.All |
-|Delegated (personal Microsoft account)| Not supported. |
-|Application| Not supported. |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "tenantrelationship_list_delegatedadminrelationships" } -->
+[!INCLUDE [permissions-table](../includes/permissions/tenantrelationship-list-delegatedadminrelationships-permissions.md)]
 
 ## HTTP request
 
@@ -42,7 +41,7 @@ This method supports the `$select`, `$filter`, `$top`, `$orderby`, `$count`, and
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -131,6 +130,7 @@ Content-Type: application/json
         ]
       },
       "status": "active",
+      "autoExtendDuration": "P180D",
       "createdDateTime": "2022-02-10T11:24:42.3148266Z",
       "lastModifiedDateTime": "2022-02-10T11:26:44.9941884Z",
       "activatedDateTime": "2022-02-10T11:26:44.9941884Z",
@@ -157,6 +157,7 @@ Content-Type: application/json
         ]
       },
       "status": "terminated",
+      "autoExtendDuration": "PT0S",
       "createdDateTime": "2021-09-29T16:52:39.6133896Z",
       "lastModifiedDateTime": "2021-10-29T16:57:20.2101088Z",
       "activatedDateTime": "2021-09-29T16:55:20.2101088Z",
@@ -204,6 +205,7 @@ Content-Type: application/json
         ]
       },
       "status": "approvalPending",
+      "autoExtendDuration": "PT0S",
       "createdDateTime": "2022-02-10T11:24:42.3148266Z",
       "lastModifiedDateTime": "2022-02-10T11:26:44.9941884Z",
       "activatedDateTime": null,

@@ -16,13 +16,10 @@ Add an identity provider to an external identities self-service sign up user flo
 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|EventListener.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|EventListener.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "onauthenticationmethodloadstartexternalusersselfservicesignup_post_identityproviders" } -->
+[!INCLUDE [permissions-table](../includes/permissions/onauthenticationmethodloadstartexternalusersselfservicesignup-post-identityproviders-permissions.md)]
 
 [!INCLUDE [rbac-user-flows-convergence-apis-read](../includes/rbac-for-apis/rbac-user-flows-convergence-apis-read.md)]
 
@@ -47,12 +44,12 @@ In the request body, provide a JSON representation of the ID of the [identityPro
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns a `204 No Content` response code. If unsuccessful, a `4xx` error is returned with specific details.
 
 ## Examples
 
 #### Request
-The following is an example of a request that adds Google as identity provider option for account creation.
+Here's an example of a request that adds Google as identity provider option for account creation.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -78,7 +75,7 @@ POST https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc3
 ---
 
 #### Response
-The following is an example of the response
+Here's an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true

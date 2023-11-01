@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AppLogCollectionRequest(
 	odata_type = "#microsoft.graph.appLogCollectionRequest",
@@ -14,11 +14,11 @@ request_body = AppLogCollectionRequest(
 	error_message = "Error Message value",
 	custom_log_folders = [
 		"Custom Log Folders value",
-	]
+	],
 	completed_date_time = "2016-12-31T23:58:52.3534526-08:00",
 )
 
-result = await graph_client.device_management.mobile_app_troubleshooting_events.by_mobile_app_troubleshooting_event_id('mobileAppTroubleshootingEvent-id').app_log_collection_requests.post(body = request_body)
+result = await graph_client.device_management.mobile_app_troubleshooting_events.by_mobile_app_troubleshooting_event_id('mobileAppTroubleshootingEvent-id').app_log_collection_requests.post(request_body)
 
 
 ```

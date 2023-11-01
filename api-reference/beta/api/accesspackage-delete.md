@@ -15,18 +15,17 @@ Namespace: microsoft.graph
 
 Delete an [accessPackage](../resources/accesspackage.md) object.
 
-You cannot delete an access package if it has any **accessPackageAssignment**. To delete the access package, first [query if there are any assignments](entitlementmanagement-list-accesspackageassignments.md) with a filter to indicate the specific access package, such as: `$filter=accessPackage/id eq 'a914b616-e04e-476b-aa37-91038f0b165b'`. For more information on how to remove assignments that are still in the delivered state, see [Remove an assignment](entitlementmanagement-post-accesspackageassignmentrequests.md#example-4-remove-an-assignment).
+You can't delete an access package if it has any **accessPackageAssignment**. To delete the access package, first [query if there are any assignments](entitlementmanagement-list-accesspackageassignments.md) with a filter to indicate the specific access package, such as: `$filter=accessPackage/id eq 'a914b616-e04e-476b-aa37-91038f0b165b'`. For more information on how to remove assignments that are still in the delivered state, see [Remove an assignment](entitlementmanagement-post-accesspackageassignmentrequests.md#example-4-remove-an-assignment).
 
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | EntitlementManagement.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | EntitlementManagement.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "accesspackage_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/accesspackage-delete-permissions.md)]
 
 ## HTTP request
 
@@ -44,17 +43,17 @@ DELETE /identityGovernance/entitlementManagement/accessPackages/{id}
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
 ### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -102,7 +101,7 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",

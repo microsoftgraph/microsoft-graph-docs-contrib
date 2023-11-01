@@ -13,23 +13,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Perform a new bulk upload using the synchronization job. Use this API endpoint to ingest data into the Azure AD synchronization service. The synchronization service will apply the mappings associated with the synchronization job and process the incoming data. The rate limit for this API is 40 requests per second. Each request can contain a maximum of 50 user operations in the bulk request **Operations** array.
+Perform a new bulk upload using the synchronization job. Use this API endpoint to ingest data into the Microsoft Entra synchronization service. The synchronization service will apply the mappings associated with the synchronization job and process the incoming data. The rate limit for this API is 40 requests per second. Each request can contain a maximum of 50 user operations in the bulk request **Operations** array.
 
 > [!NOTE]
 > This API is in public preview and available for use only with [API-driven inbound provisioning apps](/azure/active-directory/app-provisioning/inbound-provisioning-api-configure-app).
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|SynchronizationData-User.Upload|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|SynchronizationData-User.Upload|
+<!-- { "blockType": "permissions", "name": "synchronization_synchronizationjob_post_bulkupload" } -->
+[!INCLUDE [permissions-table](../includes/permissions/synchronization-synchronizationjob-post-bulkupload-permissions.md)]
 
 > [!NOTE]
-> This API is primarily meant for use within an application or service responsible for processing authoritative identity data and uploading it to Azure AD. Tenant admins can either [configure a service principal or managed identity](/azure/active-directory/app-provisioning/inbound-provisioning-api-grant-access) to grant permission to perform the upload. There is no separate user-assignable Azure AD built-in directory role for this API. Outside of applications that have acquired `SynchronizationData-User.Upload` permission with admin consent, only admin users with *Global Administrator* role can invoke the API.
+> This API is primarily meant for use within an application or service responsible for processing authoritative identity data and uploading it to Microsoft Entra ID. Tenant admins can either [configure a service principal or managed identity](/azure/active-directory/app-provisioning/inbound-provisioning-api-grant-access) to grant permission to perform the upload. There is no separate user-assignable Microsoft Entra built-in directory role for this API. Outside of applications that have acquired `SynchronizationData-User.Upload` permission with admin consent, only admin users with *Global Administrator* role can invoke the API.
 
 ## HTTP request
 
@@ -440,7 +437,7 @@ Content-Type: application/json
 
 ### Example 3: Bulk upload for updating an existing user
 
-The following bulk request illustrates how to update attributes of an existing Azure AD user, to change the user's department and set that the user cannot sign in.  This example assumes you have configured a mapping for the **externalId**, **department** and **active** fields, and you have an existing Azure AD user that has attribute matching the **externalId**.  
+The following bulk request illustrates how to update attributes of an existing Microsoft Entra user, to change the user's department and set that the user cannot sign in.  This example assumes you have configured a mapping for the **externalId**, **department** and **active** fields, and you have an existing Microsoft Entra user that has attribute matching the **externalId**.  
 
 # [HTTP](#tab/http)
 <!-- {
@@ -504,10 +501,10 @@ Content-Type: application/json
 
 ### Example 4: Bulk upload for deleting an existing user
 
-The following bulk request illustrates how to delete an existing Azure AD or on-premises AD user.  This example assumes you have configured a mapping that uses **externalId** as the matching identifier.  
+The following bulk request illustrates how to delete an existing Microsoft Entra ID or on-premises AD user.  This example assumes you have configured a mapping that uses **externalId** as the matching identifier.  
 
 > [!NOTE]
-> If the target directory for the operation is Azure AD, then the matched user is soft-deleted. The user can be seen on the Microsoft Entra admin center **Deleted users** page for the next 30 days and can be restored during that time.
+> If the target directory for the operation is Microsoft Entra ID, then the matched user is soft-deleted. The user can be seen on the Microsoft Entra admin center **Deleted users** page for the next 30 days and can be restored during that time.
 > If the target directory for the operation is on-premises Active Directory, then the matched user is hard-deleted. If the **Active Directory Recycle Bin** is enabled, you can restore the deleted on-premises AD user object.
 > To prevent and recover from accidental deletions, we recommend [configuring accidental deletion threshold](/azure/active-directory/app-provisioning/accidental-deletions) in the provisioning app and [enabling the on-premises Active Directory recycle bin](/azure/active-directory/hybrid/connect/how-to-connect-sync-recycle-bin).
 

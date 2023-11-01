@@ -3,7 +3,7 @@ title: "resellerDelegatedAdminRelationship resource type"
 description: "Represents the details of the delegated administrative privileges that a Microsoft indirect reseller partner has in a customer tenant that is created by a Microsoft indirect provider partner."
 author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: "customer-relationship-management"
+ms.prod: partner-customer-administration
 doc_type: resourcePageType
 ---
 
@@ -20,7 +20,8 @@ Inherits from [delegatedAdminRelationship](../resources/delegatedadminrelationsh
 |Property|Type|Description|
 |:---|:---|:---|
 |accessDetails|[delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The access details that contain the identifiers of the administrative roles that the partner administrator requests in the customer tenant. Inherited from [delegatedAdminRelationship](../resources/delegatedadminrelationship.md).|
-|activatedDateTime|DateTimeOffset|The date and time when the relationship was actived. Read-only. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [delegatedAdminRelationship](../resources/delegatedadminrelationship.md).|
+|activatedDateTime|DateTimeOffset|The date and time when the relationship was activated. Read-only. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [delegatedAdminRelationship](../resources/delegatedadminrelationship.md).|
+|autoExtendDuration|Duration| The duration by which the validity of the relationship is automatically extended, denoted in ISO 8601 format. Supported values are: `P0D`, `PT0S`, `P180D`. The default value is `PT0S`. `PT0S` indicates that the relationship expires when the **endDateTime** is reached and it isn't automatically extended. Inherited from [delegatedAdminRelationship](../resources/delegatedadminrelationship.md).|
 |createdDateTime|DateTimeOffset|The date and time when the relationship was created. Read-only. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [delegatedAdminRelationship](../resources/delegatedadminrelationship.md).|
 |customer|[delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|The display name and unique identifier of the customer of the relationship. This is configured either by the partner at the time the relationship is created or by the system after the customer approves the relationship. Cannot be changed by the customer. Inherited from [delegatedAdminRelationship](../resources/delegatedadminrelationship.md).|
 |displayName|String|The display name of the relationship used for ease of identification. Must be unique across *all* delegated admin relationships of the partner. This is set by the partner only when the relationship is in the `created` **status** and cannot be changed by the customer. Inherited from [delegatedAdminRelationship](../resources/delegatedadminrelationship.md).|
@@ -57,6 +58,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.resellerDelegatedAdminRelationship",
   "accessDetails": {"@odata.type": "microsoft.graph.delegatedAdminAccessDetails"},
   "activatedDateTime": "String (timestamp)",
+  "autoExtendDuration": "String (duration)",
   "createdDateTime": "String (timestamp)",
   "customer": {"@odata.type": "microsoft.graph.delegatedAdminRelationshipCustomerParticipant"},
   "displayName": "String",

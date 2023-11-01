@@ -19,6 +19,8 @@ This method supports federation. When a user ID is provided, the calling applica
 
 >**Note:** This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences). 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -76,7 +78,7 @@ The other [OData query parameters](/graph/query-parameters) are not currently su
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -135,7 +137,7 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 
 #### Response
 
-The following is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -242,7 +244,7 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 
 #### Response
 
-The following is an example of the response. 
+The following example shows the response.
 
 > [!NOTE]
 > The membership IDs returned by the server must be treated as opaque strings. The client shouldn't try to parse or make any assumptions about these resource IDs.
@@ -441,7 +443,7 @@ GET https://graph.microsoft.com/beta/chats?$expand=lastMessagePreview
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -649,7 +651,7 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 
 #### Response
 
-The following is an example of the response. 
+The following example shows the response.
 
 > [!NOTE]
 > The membership ID returned by server must be treated as opaque strings. The client should not try to parse or make any assumptions about these resource IDs.
@@ -795,7 +797,7 @@ GET https://graph.microsoft.com/beta/chats?$orderby=lastMessagePreview/createdDa
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -863,7 +865,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 ```http
@@ -874,7 +876,7 @@ GET https://graph.microsoft.com/beta/users/e652dd92-dd63-4fcc-b5b2-2005681e8e9f/
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
