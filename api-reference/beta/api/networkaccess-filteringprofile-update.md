@@ -48,10 +48,10 @@ PATCH /networkAccess/filteringProfiles/{filteringProfileId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|Display Name. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md). Required.|
-|description|String|Profile Description Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md). Optional.|
-|state|microsoft.graph.networkaccess.status|Provides a state for the profile. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md). The possible values are: `enabled`, `disabled`. Required.|
-|priority|Int64|Priority order. Required.|
+|name|String|The display name for the filtering profile. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md). Required.|
+|description|String|A description for the profile. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md). Optional.|
+|state|microsoft.graph.networkaccess.status|The state of the profile. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md). The possible values are `enabled` or `disabled`. Required.|
+|priority|Int64|The priority for determining the order in which a list of filtering profiles is applied. Required.|
 
 
 

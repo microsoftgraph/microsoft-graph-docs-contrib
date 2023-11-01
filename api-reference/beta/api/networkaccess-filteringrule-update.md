@@ -47,9 +47,9 @@ PATCH /filteringRule
 
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|Display name Inherited from [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md). Required.|
-|ruleType|microsoft.graph.networkaccess.networkDestinationType|Destination Type. The possible values are: `fqdn`, `webCategory`. Required.|
-|destinations|[microsoft.graph.networkaccess.ruleDestination](../resources/networkaccess-ruledestination.md) collection|Destinations. Optional.|
+|name|String|The dissplay name. Inherited from [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md). Required.|
+|ruleType|microsoft.graph.networkaccess.networkDestinationType|The destination rule type. The possible values are `fqdn` and `webCategory`. Required.|
+|destinations|[microsoft.graph.networkaccess.ruleDestination](../resources/networkaccess-ruledestination.md) collection|A collection of destinations to update. Optional.|
 
 
 

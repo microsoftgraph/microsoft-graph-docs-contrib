@@ -1,6 +1,6 @@
 ---
 title: "reports: userReport"
-description: "Get a report of all users with network traffic that Global Secure Access captured during a specified time period."
+description: "Get a report of all users who had network traffic that Global Secure Access captured during a specified time period."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a report of all users with network traffic that Global Secure Access captured during a specified time period.
+Get a report of all users who had network traffic that Global Secure Access captured during a specified time period.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
