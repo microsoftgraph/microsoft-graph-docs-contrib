@@ -3,6 +3,7 @@ title: "Update internalDomainFederation"
 description: "Update the properties of an internalDomainFederation object."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
+ms.custom: has-azure-ad-ps-ref
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
