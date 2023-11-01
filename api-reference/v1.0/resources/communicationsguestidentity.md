@@ -1,6 +1,6 @@
 --- 
 title: "communicationsGuestIdentity resource type"
-description: "Represents the identity of a participant who joined the communication without authentication."
+description: "Represents the identity of a participant who joined a communication without authentication."
 author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -11,18 +11,16 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Represents the identity of a participant who joined the communication without authentication.
+Represents the identity of a participant who joined a communication without authentication.
 
 Inherits from [identity](identity.md).
 
 ## Properties
 
-| Property                       | Type                        | Description         |
-| :----------------------------- | :---------------------------| :-------------------|
+| Property                       | Type                        | Description           |
+| :----------------------------- | :---------------------------| :---------------------|
 | displayName | String | The display name associated with the guest user. Inherited from **identity**. |
-| id | String | The unique identifier for the guest user. Inherited from **identity**.  |
+| id | String | The unique identifier for the guest user. Inherited from **identity**. |
 
 ## JSON representation
 
@@ -38,6 +36,6 @@ The following JSON representation shows the resource type.
 ```json
 {
   "displayName": "String",
-  "id": "String"
+  "id": "String (identifier)"
 }
 ```
