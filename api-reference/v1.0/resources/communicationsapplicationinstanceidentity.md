@@ -11,9 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Represents the identity of an instance of an application. An application instance is a resource account created by [**New-CsOnlineApplicationInstance**](/powershell/module/skype/new-csonlineapplicationinstance). For example, you might have multiple Call Queue application instances that are all backed by the same Microsoft Entra application. These application instances are represented in Microsoft Entra ID by disabled user accounts.
+Represents the identity of an instance of an application. An application instance is a resource account created by [New-CsOnlineApplicationInstance](/powershell/module/skype/new-csonlineapplicationinstance). For example, you might have multiple call queue application instances that are all backed by the same Microsoft Entra ID application. These application instances are represented in Microsoft Entra ID by disabled user accounts.
 
 Inherits from [identity](identity.md).
 
@@ -43,7 +41,7 @@ The following JSON representation shows the resource type.
 {
   "displayName": "String",
   "hidden": "Boolean",
-  "id": "String",
+  "id": "String (identifier)",
   "tenantId": "String"
 }
 ```

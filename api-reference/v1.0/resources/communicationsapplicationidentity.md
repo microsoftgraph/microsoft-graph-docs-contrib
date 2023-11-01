@@ -1,6 +1,6 @@
 --- 
 title: "communicationsApplicationIdentity resource type"
-description: "Represents the identity of an application."
+description: "Represents the identity of an application used for communications such as calling."
 author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -11,16 +11,14 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents the identity of an application used for communications such as calling. You need to register the application as an enterprise application in [Microsoft Entra ID](/azure/active-directory/).
 
 Inherits from [identity](identity.md).
 
 ## Properties
 
-| Property                       | Type                        | Description                    |
-| :----------------------------- | :---------------------------| :------------------------------|
+| Property                       | Type                        | Description                               |
+| :----------------------------- | :---------------------------| :-----------------------------------------|
 | applicationType | String | First-party Microsoft application that presents this **identity**. |
 | displayName | String | The display name associated with the application. Inherited from **identity**. |
 | hidden | Boolean | `True` if the participant shouldn't be shown in other participants' rosters. |
@@ -44,6 +42,6 @@ The following JSON representation shows the resource type.
   "applicationType": "String",
   "displayName": "String",
   "hidden": "Boolean",
-  "id": "String"
+  "id": "String (identifier)"
 }
 ```

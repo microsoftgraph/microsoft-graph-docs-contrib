@@ -2,14 +2,12 @@
 title: "profileCardAnnotation resource type"
 description: "Allows an administrator to customize the appearance of selected fields in a Microsoft 365 profile card."
 ms.localizationpriority: medium
-author: "kevinbellinger"
+author: "rwaithera"
 ms.prod: "people"
 doc_type: "resourcePageType"
 ---
 
 # profileCardAnnotation resource type
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Allows an administrator to customize the appearance of selected fields in a Microsoft 365 profile card. The administrator can define a default display name String and a set of alternative translations for the languages supported in their organization.
 
@@ -39,15 +37,3 @@ The following JSON representation shows the resource type.
   "localizations": [{ "@odata.type": "microsoft.graph.displayNameLocalization" }]
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "profileCardAnnotation resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
-
-
