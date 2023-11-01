@@ -1,6 +1,6 @@
 ---
 title: "cloudPC: getFrontlineCloudPcAccessState"
-description: "Get the access state of a frontline Cloud PC. Callers can get the latest frontline Cloud PC accessState and determine if the frontline Cloud PC is accessible to the user."
+description: "Get the access state of a frontline Cloud PC."
 author: "ningjingbogithub"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Get the [frontlineCloudPcAccessState](../resources/cloudpc.md#frontlinecloudpcaccessstate-values) of a frontline Cloud PC. 
 
-This API only supports shared-use licenses. For more information, see [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values). Shared-use licenses allow three users per license, with one user signed in at a time. Callers can get the latest frontline Cloud PC **accessState** and determine whether the frontline Cloud PC is accessible to the user. 
+This API only supports shared-use licenses. For more information, see [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values). Shared-use licenses allow three users per license, with one user signed in at a time. Callers can get the latest frontline Cloud PC **accessState** and determine whether the frontline Cloud PC is accessible to a user. 
 
 If a web client needs to connect to a frontline Cloud PC, the **sharedCloudPcAccessState** validates the bookmark scenario. If **sharedCloudPcAccessState** is not active/activating/standbyMode, the web client shows a "bad bookmark".
 
@@ -43,17 +43,20 @@ GET /me/cloudPCs/{cloudPCId}/getFrontlineCloudPcAccessState
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
 If successful, this function returns a `200 OK` response code and a [frontlineCloudPcAccessState](../resources/cloudpc.md#frontlinecloudpcaccessstate-values) object in the response body.
 
-If the Cloud PC has been provisioned as a dedicated device, this method returns  `400 Bad request`.
+If the Cloud PC has been provisioned as a dedicated device, this method returns a `400 Bad Request` response code.
 
 ## Examples
 
 ### Request
+
+The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "cloudpc.getFrontlineCloudPcAccessState"
@@ -64,6 +67,9 @@ GET https://graph.microsoft.com/beta/me/cloudPCs/{cloudPCId}/getFrontlineCloudPc
 ```
 
 ### Response
+
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
