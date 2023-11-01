@@ -188,6 +188,11 @@ Namespace: microsoft.graph
 | managedIdentity             |
 | overprivilegedApps          |
 | unknownFutureValue          |
+| longLivedCredentials        |
+| aadConnectDeprecated        |
+| adalToMsalMigration         |
+| ownerlessApps               |
+| inactiveGuests              |
 
 ### layoutTemplateType values
 
