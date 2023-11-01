@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In the context of an Azure AD audit log, the resource represents the user information that initiated or was affected by an audit activity. In the context of [callRecords](callrecords-callrecord.md), this resource is used to reflect the identity of a [participant](callrecords-participant.md) or [organizer](callrecords-organizer.md) in a call.
+In the context of a Microsoft Entra audit log, the resource represents the user information that initiated or was affected by an audit activity. In the context of [callRecords](callrecords-callrecord.md), this resource is used to reflect the identity of a [participant](callrecords-participant.md) or [organizer](callrecords-organizer.md) in a call.
 
 This type inherits from the [identity](identity.md) resource.
 
