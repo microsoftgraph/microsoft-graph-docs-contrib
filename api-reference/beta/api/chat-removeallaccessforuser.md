@@ -1,6 +1,6 @@
 ---
 title: "chat: removeAllAccessForUser"
-description: "Removes access to a chat for a user."
+description: "Removes access to chat for a user."
 author: "DiegoCont"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Removes access to a [chat](../resources/chat.md) for a user.
+Removes access to [chat](../resources/chat.md) for a user.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
