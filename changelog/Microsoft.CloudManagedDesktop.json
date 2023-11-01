@@ -3626,7 +3626,7 @@
                 "ApiChange": "Enum type",
                 "ChangedApiName": "shiftWorkCloudPcAccessState",
                 "ChangeType": "Deprecation",
-                "Description": "Deprecated the **shiftWorkCloudPcAccessState** enumeration type.",
+                "Description": "Deprecated the **shiftWorkCloudPcAccessState** enumeration type. Goind forward, use the **frontlineCloudPcAccessState** enumeration.",
                 "Target": "shiftWorkCloudPcAccessState"
             },
             {
