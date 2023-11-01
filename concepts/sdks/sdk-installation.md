@@ -63,7 +63,7 @@ The Microsoft Graph Java SDK is included in the following packages:
 - [microsoft-graph-core](https://github.com/microsoftgraph/msgraph-sdk-java-core): The core library for making calls to Microsoft Graph.
 - [microsoft-graph-auth](https://github.com/microsoftgraph/msgraph-sdk-java-auth): Provides an authentication scenario-based wrapper of Microsoft Authentication Library (MSAL) for use with the Microsoft Graph SDK.
 
-To install the Microsoft Graph Java SDK, you can follow one of these two options:
+To install the Microsoft Graph Java SDK, you can use one of these two options:
 
 - Use Gradle to install the Microsoft Graph Java SDK. Add the repository and a compile dependency for microsoft-graph to your project's build.gradle:
 
