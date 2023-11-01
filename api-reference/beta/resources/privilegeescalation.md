@@ -44,7 +44,7 @@ Inherits from [entity](../resources/entity.md).
 |resources|[authorizationSystemResource](../resources/authorizationsystemresource.md) collection|The list of resources that the identity could perform actions on.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

@@ -26,7 +26,7 @@ This will contain information on the number of authorization system actions that
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.actionSummary"

@@ -72,7 +72,7 @@ If unsuccessful, this method will return a '403' response if you don't have acce
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_superserverlessfunctionfinding"
@@ -81,8 +81,9 @@ The following is an example of a request.
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings('id)/graph.superServerlessFunctionFinding
 ```
+
 ### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

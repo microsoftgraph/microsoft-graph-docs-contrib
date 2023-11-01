@@ -58,7 +58,7 @@ List AWS super service principals:
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "list_superawsrolefinding"
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/find
 
 ### Response
 
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

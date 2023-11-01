@@ -36,7 +36,7 @@ Inherits from [entity](../resources/entity.md).
 |assignedComputeInstance|[authorizationSystemResource](../resources/authorizationsystemresource.md)|assigned EC2 instance|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

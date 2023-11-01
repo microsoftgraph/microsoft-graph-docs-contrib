@@ -47,7 +47,7 @@ Inherits from [gcpIdentity](../resources/gcpidentity.md).
 |resource|[gcpAuthorizationSystemResource](../resources/gcpauthorizationsystemresource.md)|**TODO: Add Description**|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

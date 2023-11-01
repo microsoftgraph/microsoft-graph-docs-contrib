@@ -41,7 +41,7 @@ Inherits from [entity](../resources/entity.md).
 |permissionsCreepIndexDistributions|[permissionsCreepIndexDistribution](../resources/permissionscreepindexdistribution.md) collection|**TODO: Add Description**|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
