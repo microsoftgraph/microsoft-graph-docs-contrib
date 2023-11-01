@@ -1,9 +1,9 @@
 ---
 title: "actionSummary resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Contains information on the number of authorization system actions that have been granted to an identity and the number of actions executed by this identity in the last 90 days."
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+This will contain information on the number of authorization system actions that have been granted to an identity and the number of actions executed by this identity in the last 90 days.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|assigned|Int32|**TODO: Add Description**|
-|available|Int32|**TODO: Add Description**|
-|exercised|Int32|**TODO: Add Description**|
+|assigned|Int32|This is the number of authorization system actions that have been assigned to the identity|
+|available|Int32|This is the number of authorization system actions that the identity has exercised in the last 90 days|
+|exercised|Int32|This is the maximum number of actions that are available in the authorization system|
 
 ## Relationships
 None.
@@ -40,4 +40,3 @@ The following is a JSON representation of the resource.
   "available": "Integer"
 }
 ```
-
