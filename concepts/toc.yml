@@ -617,7 +617,7 @@ items:
             href: people-insights-overview.md
           - name: Customize people insights privacy (preview)
             href: insights-customize-people-insights-privacy.md
-          - name: Customize the profile card (preview)
+          - name: Customize the profile card
             href: add-properties-profilecard.md
           - name: Item insights overview
             href: item-insights-overview.md

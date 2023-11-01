@@ -13,6 +13,9 @@ Namespace: microsoft.graph
 
 Get the [presence](../resources/presence.md) information for multiple users.
 
+> **Note:**
+> This API allows users to subscribe only to another user's presence. If an application wants to subscribe to presence information for all users, it uses fictitious users to create the subscription to collect the required data.
+
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
@@ -22,6 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/cloudcommunications-getpresencesbyuserid-permissions.md)]
 
 > **Note:**
+>
 > * Maximum of 650 user IDs are supported per API request.
 > * The maximum request rate of this API is 1500 API requests in a 30 second period, per application per tenant.
 
