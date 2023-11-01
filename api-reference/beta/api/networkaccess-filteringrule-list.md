@@ -78,31 +78,36 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/filteringPolicies(policyRules())/$entity",
-    "id": "d0187e08-04cc-41b4-9a47-dd640e804280",
-    "name": "Block Social",
-    "description": "Block Social",
-    "version": "1.0.0",
-    "lastModifiedDateTime": "2023-10-29T11:33:55Z",
-    "createdDateTime": "2023-10-29T11:33:55Z",
-    "action": "block",
-    "policyRules@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/filteringPolicies('d0187e08-04cc-41b4-9a47-dd640e804280')/policyRules",
-    "policyRules": [
+    "value": [
         {
-            "@odata.type": "#microsoft.graph.networkaccess.webCategoryFilteringRule",
-            "id": "36ce876d-16aa-4059-83db-9deab5adeb68",
+            "@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/filteringPolicies(policyRules())/$entity",
+            "id": "d0187e08-04cc-41b4-9a47-dd640e804280",
             "name": "Block Social",
-            "ruleType": "webCategory",
-            "destinations": [
+            "description": "Block Social",
+            "version": "1.0.0",
+            "lastModifiedDateTime": "2023-10-29T11:33:55Z",
+            "createdDateTime": "2023-10-29T11:33:55Z",
+            "action": "block",
+            "policyRules@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/filteringPolicies('d0187e08-04cc-41b4-9a47-dd640e804280')/policyRules",
+            "policyRules": [
                 {
-                    "@odata.type": "#microsoft.graph.networkaccess.webCategory",
-                    "name": "SocialNetworking",
-                    "displayName": "Social Networks in General + Facebook + Facebook: Posting + Facebook: Commenting + Facebook: Friends + Facebook: Photo Upload + Facebook: Events + Facebook: Apps + Facebook: Chat + Facebook: Questions + Facebook: Video Upload + Facebook: Groups + Facebook: Games + Twitter + Twitter: Posting + Twitter: Mail + Twitter: Follow + Youtube + Youtube: Commenting + Youtube: Video Upload + Youtube: Sharing + Instagram + Instagram: Upload + Instagram: Commenting + Instagram: Private Message + Tumblr + Tumblr: Posting + Tumblr: Commenting + Tumblr: Photo or Video Upload + Google+ + Google+: Posting + Google+: Commenting + Google+: Photo Upload + Google+: Video Upload + Google+: Video Chat + Pinterest + Pinterest: Pin + Pinterest: Commenting + Ask.fm + Ask.fm: Ask + Ask.fm: Answer + Wordpress + Wordpress: Posting + Wordpress: Upload + TikTok",
-                    "group": "Productivity"
+                    "@odata.type": "#microsoft.graph.networkaccess.webCategoryFilteringRule",
+                    "id": "36ce876d-16aa-4059-83db-9deab5adeb68",
+                    "name": "Block Social",
+                    "ruleType": "webCategory",
+                    "destinations": [
+                        {
+                            "@odata.type": "#microsoft.graph.networkaccess.webCategory",
+                            "name": "SocialNetworking",
+                            "displayName": "Social Networks in General + Facebook + Facebook: Posting + Facebook: Commenting + Facebook: Friends + Facebook: Photo Upload + Facebook: Events + Facebook: Apps + Facebook: Chat + Facebook: Questions + Facebook: Video Upload + Facebook: Groups + Facebook: Games + Twitter + Twitter: Posting + Twitter: Mail + Twitter: Follow + Youtube + Youtube: Commenting + Youtube: Video Upload + Youtube: Sharing + Instagram + Instagram: Upload + Instagram: Commenting + Instagram: Private Message + Tumblr + Tumblr: Posting + Tumblr: Commenting + Tumblr: Photo or Video Upload + Google+ + Google+: Posting + Google+: Commenting + Google+: Photo Upload + Google+: Video Upload + Google+: Video Chat + Pinterest + Pinterest: Pin + Pinterest: Commenting + Ask.fm + Ask.fm: Ask + Ask.fm: Answer + Wordpress + Wordpress: Posting + Wordpress: Upload + TikTok",
+                            "group": "Productivity"
+                        }
+                    ]
                 }
             ]
         }
     ]
 }
+
 ```
 

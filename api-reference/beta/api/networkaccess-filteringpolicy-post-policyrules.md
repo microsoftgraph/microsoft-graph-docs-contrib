@@ -72,7 +72,7 @@ POST https://graph.microsoft.com/beta/networkaccess/filteringPolicies
 Content-Type: application/json
 
 {
-    "name": "Test Policy",
+    "name": "Block Social",
     "policyRules": [
         {
             "@odata.type": "#microsoft.graph.networkaccess.webCategoryFilteringRule",
@@ -86,9 +86,10 @@ Content-Type: application/json
             ]
         }
     ],
+    "action": "block",
+    "description": "Block Social Sites",
     "@odata.type": "#microsoft.graph.networkaccess.filteringPolicy"
 }
-
 ```
 
 
@@ -98,10 +99,22 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.networkaccess.policyRule"
+  "@odata.type": "microsoft.graph.networkaccess.filteringPolicy"
 }
 -->
 ``` http
 HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/filteringPolicies/$entity",
+    "id": "60aced7d-2dbe-4ffc-bcd3-1321b8425cbf",
+    "name": "Block Social",
+    "description": "Block Social Sites",
+    "version": "1.0.0",
+    "lastModifiedDateTime": "2023-11-01T06:04:31Z",
+    "createdDateTime": "2023-11-01T06:04:31Z",
+    "action": "block"
+}
 ```
 

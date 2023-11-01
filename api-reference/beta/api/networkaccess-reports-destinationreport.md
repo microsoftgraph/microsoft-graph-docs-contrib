@@ -90,7 +90,7 @@ Content-Type: application/json
      {
         "fqdn":"login.microsoftonline.com",
         "ip":"6.6.0.1",
-        "port":"443",
+        "port":443,
         "networkingProtocol":"TCP",
         "trafficProfile":"microsoft365",
         "lastAccessDateTime":"2023-08-09T13:20:04Z",
@@ -98,7 +98,7 @@ Content-Type: application/json
      },
      {
         "ip":"130.20.20.20",
-        "port":"443",
+        "port":443,
         "networkingProtocol":"TCP",
         "trafficProfile":"private",
         "lastAccessDateTime":"2023-08-09T13:20:04Z",

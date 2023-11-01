@@ -140,18 +140,13 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "http://graph.microsoft.com/beta/networkAccess/connectivity/branches/19a92090-c14e-4cea-a933-27d38f72c4d1/$metadata#deviceLinks",
-    "value": [
-        {
-            "id": "26b92330-c246-2cef-a131-27d38f72c4s4",
-            "name": "device link 1",
-            "ipAddress": "24.123.22.168",
-            "deviceVendor": "intel",
-            "bandwidthCapacityInMbps": "mbps250",
-            "connectivityState": "invalid",
-            "lastModifiedDateTime" : "2021-01-05T00:00:00Z"
-        },
-
-    ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/filteringPolicies/$entity",
+    "id": "60aced7d-2dbe-4ffc-bcd3-1321b8425cbf",
+    "name": "Block Social",
+    "description": "Block Social Sites",
+    "version": "1.0.0",
+    "lastModifiedDateTime": "2023-11-01T06:04:31Z",
+    "createdDateTime": "2023-11-01T06:04:31Z",
+    "action": "block"
 }
 ```

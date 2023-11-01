@@ -78,16 +78,20 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/filteringProfiles(policies(policy()))/$entity",
-    "priority": 105,
-    "createdDateTime": "2023-07-31T22:34:09Z",
-    "id": "78858adc-db32-435e-96f6-dd887511bb20",
-    "name": "Default Policy",
-    "description": null,
-    "state": "enabled",
-    "version": "1.0.0",
-    "lastModifiedDateTime": "2023-08-07T15:54:15Z",
-    "policies@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/filteringProfiles('78858adc-db32-435e-96f6-dd887511bb20')/policies(policy())",    
+    "value": [
+        {
+            "@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/filteringProfiles(policies(policy()))/$entity",
+            "priority": 105,
+            "createdDateTime": "2023-07-31T22:34:09Z",
+            "id": "78858adc-db32-435e-96f6-dd887511bb20",
+            "name": "Default Policy",
+            "description": null,
+            "state": "enabled",
+            "version": "1.0.0",
+            "lastModifiedDateTime": "2023-08-07T15:54:15Z",
+            "policies@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/filteringProfiles('78858adc-db32-435e-96f6-dd887511bb20')/policies(policy())"
+        }
+    ]
 }
 ```
 
