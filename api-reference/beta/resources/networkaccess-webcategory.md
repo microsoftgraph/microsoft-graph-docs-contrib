@@ -21,9 +21,9 @@ Inherits from [microsoft.graph.networkaccess.ruleDestination](../resources/netwo
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Label associated with the specified web category.|
-|group|String|Grouping or category to which the web category belongs.|
-|name|String|unique name associated with the web category.|
+|displayName|String|The display name for the web category.|
+|group|String|The group or category to which the web category belongs.|
+|name|String|The unique name that is associated with the web category.|
 
 ## Relationships
 None.

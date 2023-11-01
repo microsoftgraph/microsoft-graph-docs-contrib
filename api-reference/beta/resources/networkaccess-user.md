@@ -19,11 +19,11 @@ Unique Microsoft Entra ID user identified by Global Secure Access.
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|User display Name.|
-|lastAccessDateTime|DateTimeOffset|last Access DateTime.|
-|trafficType|microsoft.graph.networkaccess.trafficType|traffic classification..The possible values are: `internet`, `private`, `microsoft365`, `all`.|
-|userId|String|Unique Id.|
-|userPrincipalName|String|unique identifier associated with a user in a system or directory, typically in the form of an email address, used for user authentication and identification.|
-|userType|microsoft.graph.networkaccess.userType|user Type.The possible values are: `member`, `guest`, `unknownFutureValue`.|
+|lastAccessDateTime|DateTimeOffset|The date and time of the most recent access.|
+|trafficType|microsoft.graph.networkaccess.trafficType|The traffic classification. The possible values are `internet`, `private`, `microsoft365`, and `all`.|
+|userId|String|The ID for the user.|
+|userPrincipalName|String|A unique identifier that is associated with a user in a system or directory. Typically, this value is an email address that is used for user authentication and identification.|
+|userType|microsoft.graph.networkaccess.userType|The type of user. The possible values are `member`, `guest`, and `unknownFutureValue`.|
 
 ## Relationships
 None.

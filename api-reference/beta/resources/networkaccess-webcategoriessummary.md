@@ -1,6 +1,6 @@
 ---
 title: "webCategoriesSummary resource type"
-description: "Provides a summary of the users, devices, and transactions that have recently accessed web categories."
+description: "A summary of the users, devices, and transactions that recently accessed a web category."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides a summary of the users, devices, and transactions that have recently accessed web categories.
+A summary of the users, devices, and transactions that recently accessed a web category.
 
 ## Properties
 |Property|Type|Description|
