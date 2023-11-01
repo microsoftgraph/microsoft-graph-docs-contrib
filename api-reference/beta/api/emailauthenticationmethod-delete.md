@@ -1,7 +1,7 @@
 ---
 title: "Delete emailAuthenticationMethod"
 description: "Deletes an emailAuthenticationMethod object."
-author: author: "tilarso"
+author: "tilarso"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"

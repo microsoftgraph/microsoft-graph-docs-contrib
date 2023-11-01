@@ -1,7 +1,7 @@
 ---
 title: "emailAuthenticationMethodConfiguration resource type"
 description: "Represents an email OTP authentication methods policy"
-author: author: "tilarso"
+author: "tilarso"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"

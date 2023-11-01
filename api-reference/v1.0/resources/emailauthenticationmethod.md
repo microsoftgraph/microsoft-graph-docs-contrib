@@ -1,7 +1,7 @@
 ---
 title: "emailAuthenticationMethod resource type"
 description: "Represents an email address registered to a user. Email as an authentication method is available only for self-service password reset (SSPR)."
-author: author: "tilarso"
+author: "tilarso"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"

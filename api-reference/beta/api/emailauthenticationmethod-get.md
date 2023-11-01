@@ -1,7 +1,7 @@
 ---
 title: "Get emailAuthenticationMethod"
 description: "Read the properties and relationships of an emailAuthenticationMethod object."
-author: author: "tilarso"
+author: "tilarso"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"

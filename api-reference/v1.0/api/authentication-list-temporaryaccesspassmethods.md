@@ -1,7 +1,7 @@
 ---
 title: "List temporaryAccessPassMethods"
 description: "Get a list of the temporaryAccessPassAuthenticationMethod objects for a user."
-author: author: "tilarso"
+author: "tilarso"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"

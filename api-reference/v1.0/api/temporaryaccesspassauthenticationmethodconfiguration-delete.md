@@ -1,7 +1,7 @@
 ---
 title: "Delete temporaryAccessPassAuthenticationMethodConfiguration"
 description: "Revert the Temporary Access Pass policy to its default configuration, represented by a default temporaryAccessPassAuthenticationMethodConfiguration object."
-author: author: "tilarso"
+author: "tilarso"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
