@@ -78,17 +78,22 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-	"priority": 100,
-    "createdDateTime": "2023-10-29T11:35:09Z",
-    "id": "37e746aa-4473-4aee-bd3a-1838d67b6311",
-    "name": "Block Social",
-    "description": null,
-    "state": "enabled",
-    "version": "1.0.0",
-    "lastModifiedDateTime": "2023-10-30T08:53:42Z",
-    "policies@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/filteringProfiles('37e746aa-4473-4aee-bd3a-1838d67b6311')/policies(policy())",
-    "policies": [],
-    "conditionalAccessPolicies": []
+    "value": [
+        {
+            "priority": 100,
+            "createdDateTime": "2023-10-29T11:35:09Z",
+            "id": "37e746aa-4473-4aee-bd3a-1838d67b6311",
+            "name": "Block Social",
+            "description": null,
+            "state": "enabled",
+            "version": "1.0.0",
+            "lastModifiedDateTime": "2023-10-30T08:53:42Z",
+            "policies@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/filteringProfiles('37e746aa-4473-4aee-bd3a-1838d67b6311')/policies(policy())",
+            "policies": [],
+            "conditionalAccessPolicies": []
+        }        
+    ]
 }
+
 ```
 

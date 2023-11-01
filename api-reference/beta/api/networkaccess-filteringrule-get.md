@@ -79,18 +79,16 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.type": "#microsoft.graph.networkaccess.webCategoryFilteringRule",
-    "id": "0823cb1e-644b-4585-80db-1c1055894ec7",
-    "name": "news1",
-    "ruleType": "webCategory",
-    "destinations": [
-        {
-            "@odata.type": "#microsoft.graph.networkaccess.webCategory",
-            "name": "News",
-            "displayName": "News",
-            "group": "BusinessUse"
-        }
-    ]
+	"@odata.type": "#microsoft.graph.networkaccess.fqdnFilteringRule",
+    "id": "f76a8f4d-7e9f-4aa0-ae1a-e88330c5634c",
+    "name": "Contoso",
+    "ruleType": "fqdn",
+		"destinations": [
+			{
+				"@odata.type": "#microsoft.graph.networkaccess.fqdn",
+                "value": "www.contoso.com"
+            }
+          ]
 }
 ```
 
