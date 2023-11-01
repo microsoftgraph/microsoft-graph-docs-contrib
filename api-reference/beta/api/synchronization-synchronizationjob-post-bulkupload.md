@@ -499,53 +499,6 @@ Content-Type: application/json
 }
 ```
 
-### Example 4: Bulk upload for deleting an existing user
-
-The following bulk request illustrates how to delete an existing Microsoft Entra ID or on-premises AD user.  This example assumes you have configured a mapping that uses **externalId** as the matching identifier.  
-
-> [!NOTE]
-> If the target directory for the operation is Microsoft Entra ID, then the matched user is soft-deleted. The user can be seen on the Microsoft Entra admin center **Deleted users** page for the next 30 days and can be restored during that time.
-> If the target directory for the operation is on-premises Active Directory, then the matched user is hard-deleted. If the **Active Directory Recycle Bin** is enabled, you can restore the deleted on-premises AD user object.
-> To prevent and recover from accidental deletions, we recommend [configuring accidental deletion threshold](/azure/active-directory/app-provisioning/accidental-deletions) in the provisioning app and [enabling the on-premises Active Directory recycle bin](/azure/active-directory/hybrid/connect/how-to-connect-sync-recycle-bin).
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "bulk_upload_for_delete"
-} 
--->
-```http
-POST https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/bulkUpload
-Authorization: Bearer <token>
-Content-Type: application/scim+json
-
-{
-    "schemas": [
-        "urn:ietf:params:scim:api:messages:2.0:BulkRequest"
-    ],
-    "Operations": [
-        {
-            "method": "DELETE",
-            "bulkId": "7172023",
-            "path": "/Users",
-            "data": {
-                "schemas": [
-                    "urn:ietf:params:scim:schemas:core:2.0:User",
-                    "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User"
-                ],
-                "externalId": "7172023"
-            }
-        }
-    ]
-}
-```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/bulk-upload-for-delete-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Response
 
 >**Note:** The response object shown here might be shortened for readability.
