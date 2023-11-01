@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents the identity of a participant who joined the communication via phone.
 
 Inherits from [identity](identity.md).
@@ -38,6 +36,6 @@ The following JSON representation shows the resource type.
 ```json
 {
   "displayName": "String",
-  "id": "String"
+  "id": "String (identifier)"
 }
 ```

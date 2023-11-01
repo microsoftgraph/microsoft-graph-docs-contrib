@@ -11,16 +11,14 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents the identity of a user present in [Microsoft Entra ID](/azure/active-directory/) who participates in a communication; for example, as a caller in an audio-video call.
 
 Inherits from [identity](identity.md).
 
 ## Properties
 
-| Property                       | Type                        | Description        |
-| :----------------------------- | :---------------------------| :------------------|
+| Property                       | Type                        | Description                     |
+| :----------------------------- | :---------------------------| :-------------------------------|
 | displayName | String | The display name associated with the user. Inherited from **identity**. |
 | id | String | The user's object ID. Inherited from **identity**. |
 | tenantId | String | The user's tenant ID. |
@@ -40,7 +38,7 @@ The following JSON representation shows the resource type.
 ```json
 {
   "displayName": "String",
-  "id": "String",
+  "id": "String (identifier)",
   "tenantId": "String"
 }
 ```
