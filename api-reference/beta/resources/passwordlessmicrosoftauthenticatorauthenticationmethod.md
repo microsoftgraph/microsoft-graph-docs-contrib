@@ -1,3 +1,4 @@
+---
 title: "passwordlessMicrosoftAuthenticatorAuthenticationMethod resource type"
 description: "A representation of a Microsoft Authenticator Passwordless Phone Sign-in method registered to a user."
 author: "mjsantani"

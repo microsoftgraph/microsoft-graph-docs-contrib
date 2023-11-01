@@ -1,3 +1,4 @@
+---
 title: "microsoftAuthenticatorAuthenticationMethodTarget resource type"
 description: "A collection of groups enabled to use Microsoft Authenticator authentication methods policy."
 author: "mjsantani"

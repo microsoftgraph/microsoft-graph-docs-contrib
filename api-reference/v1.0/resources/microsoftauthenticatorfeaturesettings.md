@@ -1,3 +1,4 @@
+---
 title: "microsoftAuthenticatorFeatureSettings resource type"
 description: "Represents Microsoft Authenticator settings such as application context and location context, and whether they're enabled for all users or specific users only."
 author: "mjsantani"

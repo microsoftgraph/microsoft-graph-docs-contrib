@@ -1,3 +1,4 @@
+---
 title: "authenticationMethodsRegistrationCampaign resource type"
 description: "Represents the settings used to run campaigns to push users to set up targeted authentication methods."
 author: "mjsantani"

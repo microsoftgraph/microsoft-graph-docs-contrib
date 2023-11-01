@@ -1,3 +1,4 @@
+---
 title: "microsoftAuthenticatorAuthenticationMethodConfiguration resource type"
 description: "Represents a Microsoft Authenticator authentication methods policy."
 author: "mjsantani"

@@ -1,3 +1,4 @@
+---
 title: "authenticationMethodsRegistrationCampaignIncludeTarget resource type"
 description: "Allow users and groups of users to be prompted to set up targeted authentication methods."
 author: "mjsantani"
