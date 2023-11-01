@@ -37,7 +37,7 @@ Inherits from [finding](../resources/finding.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|group|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Represents an identity in an authorization system|
+|group|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Represents an identity in an authorization system that you've onboarded to Permissions Management.|
 
 ## JSON representation
 
