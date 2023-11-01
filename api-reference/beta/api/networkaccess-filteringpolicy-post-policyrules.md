@@ -50,7 +50,7 @@ You can specify the following properties
 |Property|Type|Description|
 |:---|:---|:---|
 |name|String|Display Name. Required.|
-|policyRules|Collection(microsoft.graph.networkAccess.policyRule)|policyRules maintains the definition of the policy ruleset that makes up the core definition of a policy. Required.|
+|policyRules|Collection(microsoft.graph.networkaccess.policyRule)|policyRules maintains the definition of the policy ruleset that makes up the core definition of a policy. Required.|
 
 
 
