@@ -1,3 +1,4 @@
+---
 title: "List microsoftAuthenticatorAuthenticationMethods"
 description: "Get a list of the microsoftAuthenticatorAuthenticationMethod objects and their properties."
 author: "mjsantani"

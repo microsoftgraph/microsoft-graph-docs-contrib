@@ -1,3 +1,4 @@
+---
 title: "Get passwordlessMicrosoftAuthenticatorAuthenticationMethod"
 description: "Read the properties and relationships of a passwordlessMicrosoftAuthenticatorAuthenticationMethod object."
 author: "mjsantani"

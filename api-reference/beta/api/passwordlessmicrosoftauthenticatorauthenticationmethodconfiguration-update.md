@@ -1,3 +1,4 @@
+---
 title: "Update passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration"
 description: "Update the properties of a passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration object."
 author: "mjsantani"

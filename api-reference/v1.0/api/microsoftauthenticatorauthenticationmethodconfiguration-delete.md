@@ -1,3 +1,4 @@
+---
 title: "Delete microsoftAuthenticatorAuthenticationMethodConfiguration"
 description: "Deletes a microsoftAuthenticatorAuthenticationMethodConfiguration object."
 author: "mjsantani"

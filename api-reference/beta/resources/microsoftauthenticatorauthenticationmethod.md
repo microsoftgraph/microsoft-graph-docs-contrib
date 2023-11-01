@@ -1,3 +1,4 @@
+---
 title: "microsoftAuthenticatorAuthenticationMethod resource type"
 description: "A representation of the Microsoft Authenticator app registered to a user. Microsoft Authenticator is an authentication method."
 author: "mjsantani"

@@ -1,3 +1,4 @@
+---
 title: "Delete passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration"
 description: "Delete a passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration object."
 author: "mjsantani"
