@@ -404,12 +404,12 @@ items:
                 href: api/user-list-cloudpcs.md
               - name: Get
                 href: api/cloudpc-get.md
-              - name: Get launch info
-                href: api/cloudpc-getcloudpclaunchinfo.md
-              - name: Get shift work access state (Deprecated)
-                href: api/cloudpc-getshiftworkcloudpcaccessstate.md
               - name: Get frontline access state
                 href: api/cloudpc-getfrontlinecloudpcaccessstate.md
+              - name: Get launch info
+                href: api/cloudpc-getcloudpclaunchinfo.md
+              - name: Get shift work access state (deprecated)
+                href: api/cloudpc-getshiftworkcloudpcaccessstate.md
               - name: Reboot
                 href: api/cloudpc-reboot.md
               - name: Rename
@@ -10214,18 +10214,18 @@ items:
                     href: api/cloudpc-endgraceperiod.md
                   - name: Get connectivity history
                     href: api/cloudpc-getcloudpcconnectivityhistory.md
-                  - name: Get launch info for user
-                    href: api/cloudpc-getcloudpclaunchinfo.md
-                  - name: Get shift work access state (Deprecated)
-                    href: api/cloudpc-getshiftworkcloudpcaccessstate.md
                   - name: Get frontline access state
                     href: api/cloudpc-getfrontlinecloudpcaccessstate.md
+                  - name: Get launch info for user
+                    href: api/cloudpc-getcloudpclaunchinfo.md
                   - name: Get provisioned Cloud PCs
                     href: api/cloudpc-getprovisionedcloudpcs.md
                   - name: Get remote action results
                     href: api/manageddevice-getcloudpcremoteactionresults.md
                   - name: Get review status
                     href: api/manageddevice-getcloudpcreviewstatus.md
+                  - name: Get shift work access state (deprecated)
+                    href: api/cloudpc-getshiftworkcloudpcaccessstate.md
                   - name: Get supported remote actions
                     href: api/cloudpc-getsupportedcloudpcremoteactions.md
                   - name: Power on
