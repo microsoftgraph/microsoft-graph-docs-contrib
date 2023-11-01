@@ -1,6 +1,6 @@
 ---
 title: "Delete teamsApp"
-description: "Remove a Teams app from an organization's app catalog (the tenant app catalog). "
+description: "Delete an app from an organization's app catalog (the tenant app catalog)."
 ms.localizationpriority: medium
 author: "nkramer"
 ms.prod: "microsoft-teams"
@@ -74,6 +74,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ### Request
 
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -122,6 +123,8 @@ DELETE https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93
 <!-- markdownlint-disable MD024 -->
 
 ### Response
+
+The following example shows the response.
 
 <!-- {
   "blockType": "response"

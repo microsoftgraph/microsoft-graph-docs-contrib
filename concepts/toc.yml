@@ -84,8 +84,6 @@ items:
             displayName: monetize, charge, cost, pricing
           - name: List of metered APIs
             href: metered-api-list.md
-      - name: Microsoft Graph activity logs
-        href: microsoft-graph-activity-logs-overview.md
       - name: Versioning and support
         href: versioning-and-support.md
       - name: Terms of use
@@ -168,7 +166,7 @@ items:
               - name: App authorization
                 href: app-authorization.md
               - name: Existing customer migration
-                href: existing-customer-migration.md  
+                href: existing-customer-migration.md
           - name: Templates
             href: data-connect-templates-overview.md
           - name: Integrate with PAM
@@ -180,8 +178,8 @@ items:
             items:
               - name: Managed private endpoints
                 href: managed-private-endpoints-overview.md
-              - name: Microsoft 365 audit logs 
-                href: microsoft365-audit-logs.md  
+              - name: Microsoft 365 audit logs
+                href: microsoft365-audit-logs.md
           - name: Data Connect FAQ
             href: data-connect-faq.md
             displayName: Microsoft Graph Data Connect frequently asked questions
@@ -283,7 +281,7 @@ items:
           - name: Connectors API
             href: connecting-external-content-connectors-api-overview.md
             displayName: Microsoft Graph connectors
-          - name: Use Postman
+          - name: Try the API
             href: connecting-external-content-connectors-api-postman.md
             displayName: connector, connectors
           - name: Build your first custom connector
@@ -619,7 +617,7 @@ items:
             href: people-insights-overview.md
           - name: Customize people insights privacy (preview)
             href: insights-customize-people-insights-privacy.md
-          - name: Customize the profile card (preview)
+          - name: Customize the profile card
             href: add-properties-profilecard.md
           - name: Item insights overview
             href: item-insights-overview.md
@@ -914,7 +912,7 @@ items:
             items:
               - name: Get started with Postman
                 href: use-postman.md
-              - name: Set up delegated authentication 
+              - name: Set up delegated authentication
                 href: use-postman-with-delegated-authentication.md
               - name: Set up app-only authentication
                 href: use-postman-with-app-only-authentication.md
