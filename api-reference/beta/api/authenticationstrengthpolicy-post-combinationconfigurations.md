@@ -1,6 +1,6 @@
 ---
 title: "Create authenticationCombinationConfiguration"
-description: "Create a new authenticationCombinationConfiguration object. In use, only fido2combinationConfigurations may be created, and these may only be created for custom authentication strength policies."
+description: "Create a new authenticationCombinationConfiguration object. In use, only fido2combinationConfigurations objects might be created, and only for custom authentication strength policies."
 author: "InbarckMS"
 ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new authenticationCombinationConfiguration object. In use, only [fido2combinationConfigurations](../resources/fido2combinationconfiguration.md) may be created, and these may only be created for custom authentication strength policies.
+Create a new authenticationCombinationConfiguration object. In use, only [fido2combinationConfigurations](../resources/fido2combinationconfiguration.md) might be created, and only for custom authentication strength policies.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -48,7 +48,7 @@ You can specify the following properties when creating an **authenticationCombin
 
 |Property|Type|Description|
 |:---|:---|:---|
-|appliesToCombinations|authenticationMethodModes collection|The combinations to which this configuration applies. The only possible value for fido2combinationConfigurations is `fido2`. Required.|
+|appliesToCombinations|authenticationMethodModes collection|The combinations where this configuration applies. The only possible value for **fido2combinationConfigurations** is `fido2`. Required.|
 
 
 
