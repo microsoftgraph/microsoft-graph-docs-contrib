@@ -66,7 +66,6 @@ In the request body, supply a [bulkUpload](../resources/synchronization-bulkuplo
 * [Example 1: Bulk upload using SCIM Core user and Enterprise User schema](#example-1-bulk-upload-using-scim-core-user-and-enterprise-user-schema)
 * [Example 2: Bulk upload using SCIM custom schema namespace](#example-2-bulk-upload-using-scim-custom-schema-namespace)
 * [Example 3: Bulk upload for updating an existing user](#example-3-bulk-upload-for-updating-an-existing-user)
-* [Example 4: Bulk upload for deleting an existing user](#example-4-bulk-upload-for-deleting-an-existing-user)
 
 ### Example 1: Bulk upload using SCIM Core user and Enterprise User schema
 
