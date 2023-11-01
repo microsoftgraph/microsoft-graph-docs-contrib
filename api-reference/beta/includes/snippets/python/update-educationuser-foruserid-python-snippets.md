@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = EducationUser(
 	related_contacts = [
@@ -24,10 +24,10 @@ request_body = EducationUser(
 			relationship = ContactRelationship.Parent,
 			access_consent = True,
 		),
-	]
+	],
 )
 
-result = await graph_client.education.users.by_user_id('educationUser-id').patch(body = request_body)
+result = await graph_client.education.users.by_education_user_id('educationUser-id').patch(request_body)
 
 
 ```
