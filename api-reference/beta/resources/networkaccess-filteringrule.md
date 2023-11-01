@@ -1,6 +1,6 @@
 ---
 title: "filteringRule resource type"
-description: "Filtering rule are used to allow or block traffic in Global Secure Access."
+description: "A rule that is used to filter traffic in Global Secure Access."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Filtering rule are used to allow or block traffic in Global Secure Access.
+A rule that is used to filter traffic in Global Secure Access.
 Inherits from [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md).
 
 ## Methods
@@ -28,9 +28,9 @@ Inherits from [microsoft.graph.networkaccess.policyRule](../resources/networkacc
 |Property|Type|Description|
 |:---|:---|:---|
 |destinations|[microsoft.graph.networkaccess.ruleDestination](../resources/networkaccess-ruledestination.md) collection|Possible destinations and types of destinations accessed by the user in accordance with the network filtering policy, such as IP addresses and FQDNs/URLs.|
-|id|String|Unique Id. Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|name|String|Display name. Inherited from [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md).|
-|ruleType|microsoft.graph.networkaccess.networkDestinationType|Defines rule types for specifying network policy destinations. The possible values are: `url`, `fqdn`, `ipAddress`, `ipRange`, `ipSubnet`, `webCategory`.|
+|id|String|A unique ID for the rule. Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|name|String|The display name of the rule. Inherited from [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md).|
+|ruleType|microsoft.graph.networkaccess.networkDestinationType|The rule types that specify the basis for filtering. The possible values are `url`, `fqdn`, `ipAddress`, `ipRange`, `ipSubnet`, and `webCategory`.|
 
 ## Relationships
 None.

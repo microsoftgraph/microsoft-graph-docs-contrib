@@ -1,6 +1,6 @@
 ---
 title: "policyRule resource type"
-description: "An abstract data type designed to represent a rule within a policy."
+description: "An abstract data type for rules within policies."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: global-secure-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract data type designed to represent a rule within a policy.
+An abstract data type for rules within policies.
 This is an abstract type from which the [microsoft.graph.networkaccess.forwardingRule](../resources/networkaccess-forwardingrule.md) resource and [microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md) resource types are derived.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
@@ -30,7 +30,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Identifier. Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|id|String|The unique identifier for the rule. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |name|String|Name.|
 
 ## Relationships

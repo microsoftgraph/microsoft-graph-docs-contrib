@@ -1,6 +1,6 @@
 ---
 title: "filteringProfile resource type"
-description: "Associates Network Access policies with Entra ID Conditional Access policies, enabling user-context conditions by adding filteringPolicies to the profile."
+description: "Associates network access policies with Entra ID Conditional Access policies, so that access policies can be applied to users and groups."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Associates Network Access policies with Entra ID Conditional Access policies, enabling user-context conditions by adding filteringPolicies to the profile.
+Associates network access policies with Entra ID Conditional Access policies, so that access policies can be applied to users and groups.
 
 Inherits from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md).
 
@@ -29,7 +29,7 @@ Inherits from [microsoft.graph.networkaccess.profile](../resources/networkaccess
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|The date and time when the filteringProfile was originally created.|
+|createdDateTime|DateTimeOffset|The date and time when the filteringProfile was created.|
 |description|String|A description of the filtering profile. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md).|
 |id|String|The distinct identifier that is assigned to a specific profile. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|The date and time when a particular profile was last modified or updated. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md).|

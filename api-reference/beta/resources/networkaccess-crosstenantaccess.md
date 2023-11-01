@@ -23,14 +23,14 @@ Contains usage count and external tenant information.
 |resourceTenantId|String|The tenant ID of the external tenant.|
 |resourceTenantName|String| The name of the external tenant.|
 |resourceTenantPrimaryDomain|String|The domain of the external tenant.|
-|usageStatus|microsoft.graph.networkaccess.usageStatus|The usage status of cross-tenant access. The possible values are: `frequentlyUsed`, `rarelyUsed`, `unknownFutureValue`.|
-|userCount|Int64|The umber of users that accessed the external tenant.|
+|usageStatus|microsoft.graph.networkaccess.usageStatus|The usage status of cross-tenant access. The possible values are `frequentlyUsed`, `rarelyUsed`, and `unknownFutureValue`.|
+|userCount|Int64|The number of users that accessed the external tenant.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.networkaccess.crossTenantAccess"

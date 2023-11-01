@@ -1,6 +1,6 @@
 ---
 title: "remoteNetworkHealthEvent resource type"
-description: "Contains detailed insights into remote network health, status, metrics, and operations."
+description: "Contains information about network health, status, metrics, and operations."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains detailed insights into remote network health, status, metrics, and operations.
+Contains information about network health, status, metrics, and operations.
 This is an abstract type.
 
 ## Methods

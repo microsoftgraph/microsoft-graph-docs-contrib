@@ -18,10 +18,10 @@ Contains information about unique connectivity entities.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|deviceCount|Int64|The count of unique devices that were seen.|
+|deviceCount|Int64|The number of unique devices that were seen.|
 |trafficType|microsoft.graph.networkaccess.trafficType|The traffic classification. The possible values are: `internet`, `private`, `microsoft365`, `all`.|
-|userCount|Int64|The count of unique Microsoft Entra ID users that were seen.|
-|workloadCount|Int64|The count of unique target workloads/hosts that were seen.|
+|userCount|Int64|The number of unique Microsoft Entra ID users that were seen.|
+|workloadCount|Int64|The number of unique target workloads/hosts that were seen.|
 
 
 
