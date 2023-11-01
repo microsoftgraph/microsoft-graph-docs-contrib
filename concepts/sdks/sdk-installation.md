@@ -7,7 +7,7 @@ author: MichaelMainer
 
 # Install a Microsoft Graph SDK
 
-Microsoft Graph SDKs can be included in your projects via GitHub and popular platform package managers. This article describes installing a Microsoft Graph SDK into your project.
+Microsoft Graph SDKs can be included in your projects via GitHub and popular platform package managers. This article describes how to install a Microsoft Graph SDK into your project.
 
 SDKs are available in the following languages:
 
