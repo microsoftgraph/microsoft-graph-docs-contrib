@@ -11,18 +11,17 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Retrieve the properties and relationships of a [peopleAdminSettings](../resources/peopleadminsettings.md) object.
-
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "peopleadminsettings_get" } -->
-[!INCLUDE [permissions-table](../includes/permissions/peopleadminsettings-get-permissions.md)]
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | PeopleSettings.Read.All                     |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 >**Note:** Using delegated permissions for this operation requires the signed-in user to have a Tenant Administrator or Global Administrator role.
 
@@ -35,7 +34,7 @@ GET /admin/people
 
 ## Optional query parameters
 
-This method does not support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method doesn't support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -62,7 +61,7 @@ The following example shows a request.
   "name": "get_peopleadminsettings"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/admin/people
+GET https://graph.microsoft.com/v1.0/admin/people
 ```
 
 ### Response
@@ -81,12 +80,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/people/$entity",
-  "pronouns@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/people/pronouns/$entity",
-  "profileCardProperties@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/people/profileCardProperties/$entity",
-  "pronouns": {
-    "isEnabledInOrganization": true
-  },
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#admin/people/$entity",
+  "profileCardProperties@odata.context": "https://graph.microsoft.com/v1.0/$metadata#admin/people/profileCardProperties/$entity",
   "profileCardProperties": [
     {
       "directoryPropertyName": "CustomAttribute1",

@@ -11,20 +11,19 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Delete the [profileCardProperty](../resources/profilecardproperty.md) object specified by its **directoryPropertyName** from the organization's profile card, and remove any localized customizations for that property.
 
 [!INCLUDE [profilecardproperty-add-remove-note](../../../includes/profilecardproperty-add-remove-note.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 ## Permissions
 
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "profilecardproperty_delete" } -->
-[!INCLUDE [permissions-table](../includes/permissions/profilecardproperty-delete-permissions.md)]
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | PeopleSettings.ReadWrite.All                |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 >**Note:** Using delegated permissions for this operation requires the signed-in user to have a Tenant Administrator or Global Administrator role.
 
@@ -35,8 +34,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 DELETE /admin/people/profileCardProperties/{id}
 ```
-
-> **Note:** The `/organization/{organizationId}/settings` path is deprecated. Going forward, use the `/admin/people` path.
 
 ## Request headers
 
@@ -65,7 +62,7 @@ The following example shows how to delete the attribute named `Fax` from the pro
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/admin/people/profileCardProperties/fax
+DELETE https://graph.microsoft.com/v1.0/admin/people/profileCardProperties/fax
 ```
 
 ### Response
