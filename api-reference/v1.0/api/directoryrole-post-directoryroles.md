@@ -3,6 +3,7 @@ title: "Activate directoryRole"
 description: "Activate a directory role."
 ms.localizationpriority: medium
 author: "DougKirschner"
+ms.reviewer: msodsrbac
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

@@ -2,6 +2,7 @@
 title: "featureTarget resource type"
 description: "Defines a single group, Microsoft Entra role, or administrative unit that is included or excluded in the settings specified in the authenticationMethodFeatureConfiguration object."
 author: "jpettere"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

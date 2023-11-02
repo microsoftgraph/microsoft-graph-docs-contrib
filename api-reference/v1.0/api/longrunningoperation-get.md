@@ -3,6 +3,7 @@ title: "Get longRunningOperation"
 description: "Retrieve the status of a long-running operation."
 ms.localizationpriority: medium
 author: "jpettere"
+ms.reviewer: intelligentaccesspm
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
