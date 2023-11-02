@@ -1,31 +1,28 @@
 ---
 author: "vanshisingh"
-title: "List recycleBinItems"
+title: "List items in recycleBin"
 description: "Get a list of recycleBinItems under the specified site."
 ms.localizationpriority: "medium"
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
 
-# List recycleBinItems
+# List items
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [recycleBinItems](../resources/recyclebinitem.md) under the specified site.
+Get a collection of [recycleBinItem](../resources/recyclebinitem.md) resources in the [recyleBin](../resources/recyclebin.md) of the specified SharePoint [site](../resources/site.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                                           |
-|:---------------------------------------|:------------------------------------------------------------------------------------------------------|
-| Delegated (work or school account)     | Files.Read, Files.Read.All, Files.ReadWrite, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
-| Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All                                      |
-| Application                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All                              |
+<!-- { "blockType": "permissions", "name": "recyclebin_list_items" } -->
+[!INCLUDE [permissions-table](../includes/permissions/recyclebin-list-items-permissions.md)]
 
 ## HTTP request
 
@@ -100,7 +97,7 @@ GET https://graph.microsoft.com/beta/sites/contoso.sharepoint.com,48f1898f-77d9-
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

@@ -3,6 +3,7 @@ title: "Delete ipNamedLocation"
 description: "Delete an ipNamedLocation object."
 ms.localizationpriority: medium
 author: "lisaychuang"
+ms.reviewer: conditionalaccesspm
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

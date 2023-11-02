@@ -3,6 +3,7 @@ title: "unifiedRoleDefinition resource type"
 description: "A role definition is a collection of permissions in Microsoft Entra."
 ms.localizationpriority: medium
 author: "DougKirschner"
+ms.reviewer: msodsrbac
 ms.prod: "directory-management"
 doc_type: "resourcePageType"
 ---

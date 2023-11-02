@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = LearningProvider(
 	display_name = "Microsoft",
@@ -18,7 +18,7 @@ request_body = LearningProvider(
 	is_course_activity_sync_enabled = True,
 )
 
-result = await graph_client.employee_experience.learning_providers.post(body = request_body)
+result = await graph_client.employee_experience.learning_providers.post(request_body)
 
 
 ```
