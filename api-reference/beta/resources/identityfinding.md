@@ -15,7 +15,6 @@ Namespace: microsoft.graph
 
 An identityFinding is a finding that contains information about an identity (user, role, function etc.).
 
-
 Inherits from [finding](../resources/finding.md).
 
 ## Methods

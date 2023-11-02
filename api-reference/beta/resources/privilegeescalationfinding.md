@@ -41,7 +41,6 @@ Inherits from [finding](../resources/finding.md).
 |:---|:---|:---|
 |identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Represents an identity in an authorization system|
 |privilegeEscalationDetails|[Collection(graph.privilegeEscalation)](../resources/privilegeescalation.md)|The list of escalations that the identity is capable of performing.|
-|potentialPrivilegeEscalations|[privilegeEscalation](../resources/privilegeescalation.md) collection|**TODO: Add Description**|
 
 ## JSON representation
 The following JSON representation shows the resource type.
