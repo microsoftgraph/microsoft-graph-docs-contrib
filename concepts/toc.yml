@@ -180,6 +180,8 @@ items:
                 href: managed-private-endpoints-overview.md
               - name: Microsoft 365 audit logs
                 href: microsoft365-audit-logs.md
+              - name: Custom Encryption
+                href: data-connect-custom-encryption.md
           - name: Data Connect FAQ
             href: data-connect-faq.md
             displayName: Microsoft Graph Data Connect frequently asked questions
