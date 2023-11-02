@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get the specified [profilePhoto](../resources/profilephoto.md) or its metadata (**profilePhoto** properties) from Microsoft 365.
 
-> **Note**: When attempting to GET a **user** photo, this operation first attempts to retrieve the specified photo from Microsoft 365. If the photo is unavailable in Microsoft 365, the API attempts to retrieve the photo from Microsoft Entra ID.
+> **Note**: When attempting to GET a **user** photo, this operation first tries to retrieve the specified photo from Microsoft 365. If the photo is unavailable in Microsoft 365, the API trie to retrieve the photo from Microsoft Entra ID.
 
 The supported sizes of HD photos in Microsoft 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240,
 360x360, 432x432, 504x504, and 648x648. Photos can be any dimension if they're stored in Microsoft Entra ID.
@@ -143,6 +143,8 @@ If successful, this method returns a `200 OK` response code and [profilePhoto](.
 
 #### Request
 
+The following example shows a request.
+
 <!-- {
   "blockType": "ignored"
 }-->
@@ -166,6 +168,8 @@ HTTP/1.1 200 OK
 ### Example 2: Get the 48x48 photo for the signed-in user
 
 #### Request
+
+The following example shows a request.
 <!-- {
   "blockType": "ignored"
 }-->
@@ -176,8 +180,7 @@ Content-Type: image/jpg
 ```
 
 > [!NOTE]
-> 
-> - To ensure a fixed size for the output photo, it is necessary to utilize the dedicated endpoint for photos with fixed sizes (/photos) instead of relying on the default photo endpoint, which provides the largest available photo (/photo).
+> - To ensure a fixed size for the output photo, use the dedicated endpoint for photos with fixed sizes (/photos) instead of relying on the default photo endpoint, which provides the largest available photo (/photo).
 
 #### Response
 Contains the binary data of the requested 48x48 photo. The HTTP response code is 200.
@@ -193,7 +196,7 @@ HTTP/1.1 200 OK
 ### Example 3: Get the metadata of the user photo of the signed-in user
 
 #### Request
-
+The following example shows a request.
 <!-- {
   "blockType": "ignored"
 }-->
@@ -255,7 +258,7 @@ Content-type: application/json
 
 #### Request
 
-Here's an example of the request to get the metadata of the team photo.
+The following example shows a request to get the metadata of the team photo.
 
 <!-- {
   "blockType": "ignored",
@@ -267,7 +270,7 @@ GET https://graph.microsoft.com/beta/teams/172b0cce-e65d-44ce-9a49-91d9f2e8491e/
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -292,7 +295,7 @@ Content-type: application/json
 
 ### Example 5: Get the team photo's binary data
 
-Here's an example of the request to get the team photo's binary data.
+The following example shows a request to get the team photo's binary data.
 
 #### Request
 
