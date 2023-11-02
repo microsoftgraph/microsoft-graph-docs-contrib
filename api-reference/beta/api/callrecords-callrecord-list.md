@@ -70,16 +70,13 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_callrecords"
 }-->
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/callRecords
 ```
----
 
 #### Response
 
@@ -96,9 +93,10 @@ If the list is truncated, a `callRecord@odata.nextLink` value will be provided t
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
-	"@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords",
-	"value": [
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords",
+  "value": [
     {
       "id": "3cf3bbc8-b21d-4f2e-bfd0-b13603ae6c65",
       "version": 2,
@@ -111,9 +109,9 @@ Content-type: application/json
       "endDateTime": "2023-09-25T09:28:41Z",
       "organizer": {
         "user": {
-            "id": "821809f5-0000-0000-0000-3b5136c0e777",
-            "displayName": "Abbie Wilkins",
-            "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
+          "id": "821809f5-0000-0000-0000-3b5136c0e777",
+          "displayName": "Abbie Wilkins",
+          "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
         }
       },
       "organizer_v2@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('3cf3bbc8-b21d-4f2e-bfd0-b13603ae6c65')/organizer_v2/$entity",
@@ -123,7 +121,7 @@ Content-type: application/json
           "user": {
             "id": "821809f5-0000-0000-0000-3b5136c0e777",
             "displayName": "Abbie Wilkins",
-            "tenantId": "dc368399-474c-4d40-900c-6265431fd81f",
+            "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
           }
         }
       }
@@ -136,8 +134,8 @@ Content-type: application/json
         "audio"
       ],
       "lastModifiedDateTime": "2023-09-25T14:18:13Z",
-			"startDateTime": "2023-09-25T14:03:36Z",
-			"endDateTime": "2023-09-25T14:03:40Z",
+      "startDateTime": "2023-09-25T14:03:36Z",
+      "endDateTime": "2023-09-25T14:03:40Z",
       "organizer": {
         "user": {
           "id": "821809f5-0000-0000-0000-3b5136c0e777",
@@ -148,15 +146,15 @@ Content-type: application/json
       "organizer_v2@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('c3ad8c4b-4a87-4ab1-bef0-284d2f40ed9f')/organizer_v2/$entity",
       "organizer_v2": {
         "id": "+5564981205182",
-				"identity": {
-					"user": null,
-					"acsUser": null,
-					"spoolUser": null,
-					"phone": {
-						"id": "+5564981205182",
-						"displayName": null,
-						"tenantId": null
-					}
+        "identity": {
+          "user": null,
+          "acsUser": null,
+          "spoolUser": null,
+          "phone": {
+            "id": "+5564981205182",
+            "displayName": null,
+            "tenantId": null
+          }
         }
       }
     }
@@ -168,7 +166,6 @@ Content-type: application/json
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_callrecords_filter_by_startDateTime"
@@ -177,8 +174,6 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/callRecords?$filter=startDateTime ge 2023-09-25T09:25:00Z and startDateTime lt 2023-09-25T09:30:00Z
 ```
-
----
 
 #### Response
 
@@ -197,40 +192,38 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords",
-    "value": [
-      {
-        "id": "3cf3bbc8-b21d-4f2e-bfd0-b13603ae6c65",
-        "version": 2,
-        "type": "unknown",
-        "modalities": [
-          "audio"
-        ],
-        "lastModifiedDateTime": "2023-09-25T10:36:40Z",
-        "startDateTime": "2023-09-25T09:28:38Z",
-        "endDateTime": "2023-09-25T09:28:41Z",
-        "organizer": {
-          "user": {
-              "id": "821809f5-0000-0000-0000-3b5136c0e777",
-              "displayName": "Abbie Wilkins",
-              "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
-          }
-        },
-        "organizer_v2@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('3cf3bbc8-b21d-4f2e-bfd0-b13603ae6c65')/organizer_v2/$entity",
-        "organizer_v2": {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords",
+  "value": [
+    {
+      "id": "3cf3bbc8-b21d-4f2e-bfd0-b13603ae6c65",
+      "version": 2,
+      "type": "unknown",
+      "modalities": [
+        "audio"
+      ],
+      "lastModifiedDateTime": "2023-09-25T10:36:40Z",
+      "startDateTime": "2023-09-25T09:28:38Z",
+      "endDateTime": "2023-09-25T09:28:41Z",
+      "organizer": {
+        "user": {
           "id": "821809f5-0000-0000-0000-3b5136c0e777",
-          "identity": {
-            "user": {
-              "id": "821809f5-0000-0000-0000-3b5136c0e777",
-              "displayName": "Abbie Wilkins",
-              "tenantId": "dc368399-474c-4d40-900c-6265431fd81f",
-            }
+          "displayName": "Abbie Wilkins",
+          "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
+        }
+      },
+      "organizer_v2@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('3cf3bbc8-b21d-4f2e-bfd0-b13603ae6c65')/organizer_v2/$entity",
+      "organizer_v2": {
+        "id": "821809f5-0000-0000-0000-3b5136c0e777",
+        "identity": {
+          "user": {
+            "id": "821809f5-0000-0000-0000-3b5136c0e777",
+            "displayName": "Abbie Wilkins",
+            "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
           }
         }
       }
-    ]
-  }
+    }
+  ]
 }
 ```
 
@@ -264,40 +257,38 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords",
-    "value": [
-      {
-        "id": "3cf3bbc8-b21d-4f2e-bfd0-b13603ae6c65",
-        "version": 2,
-        "type": "unknown",
-        "modalities": [
-          "audio"
-        ],
-        "lastModifiedDateTime": "2023-09-25T10:36:40Z",
-        "startDateTime": "2023-09-25T09:28:38Z",
-        "endDateTime": "2023-09-25T09:28:41Z",
-        "organizer": {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords",
+  "value": [
+    {
+      "id": "3cf3bbc8-b21d-4f2e-bfd0-b13603ae6c65",
+      "version": 2,
+      "type": "unknown",
+      "modalities": [
+        "audio"
+      ],
+      "lastModifiedDateTime": "2023-09-25T10:36:40Z",
+      "startDateTime": "2023-09-25T09:28:38Z",
+      "endDateTime": "2023-09-25T09:28:41Z",
+      "organizer": {
+        "user": {
+          "id": "821809f5-0000-0000-0000-3b5136c0e777",
+          "displayName": "Abbie Wilkins",
+          "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
+        }
+      },
+      "organizer_v2@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('3cf3bbc8-b21d-4f2e-bfd0-b13603ae6c65')/organizer_v2/$entity",
+      "organizer_v2": {
+        "id": "821809f5-0000-0000-0000-3b5136c0e777",
+        "identity": {
           "user": {
             "id": "821809f5-0000-0000-0000-3b5136c0e777",
             "displayName": "Abbie Wilkins",
             "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
           }
-        },
-        "organizer_v2@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('3cf3bbc8-b21d-4f2e-bfd0-b13603ae6c65')/organizer_v2/$entity",
-        "organizer_v2": {
-          "id": "821809f5-0000-0000-0000-3b5136c0e777",
-          "identity": {
-            "user": {
-              "id": "821809f5-0000-0000-0000-3b5136c0e777",
-              "displayName": "Abbie Wilkins",
-              "tenantId": "dc368399-474c-4d40-900c-6265431fd81f",
-            }
-          }
         }
       }
-    ]
-  }
+    }
+  ]
 }
 ```
 
