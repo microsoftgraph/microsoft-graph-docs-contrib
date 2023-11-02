@@ -3,6 +3,7 @@ title: "List transitiveRoleAssignment"
 description: "List direct and transitive role assignments for a specific principal."
 ms.localizationpriority: medium
 author: "DougKirschner"
+ms.reviewer: msodsrbac
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---

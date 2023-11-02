@@ -136,11 +136,11 @@ The following example shows a request.
   "name": "user_add_teamsApp_consent_resource_specific_permissions"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/users/5b649834-7412-4cce-9e69-176e95a394f5/teamwork/installedApps
+POST https://graph.microsoft.com/beta/users/5b649834-7412-4cce-9e69-176e95a394f5/teamwork/installedApps
 Content-Type: application/json
 
 {
-  "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/12345678-9abc-def0-123456789a",
+  "teamsApp@odata.bind": "https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a",
   "consentedPermissionSet": {
     "resourceSpecificPermissions": [
       {
