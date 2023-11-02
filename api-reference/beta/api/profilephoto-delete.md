@@ -69,7 +69,6 @@ If successful, this method returns a `200 OK` response code.
 
 ## Examples
 
-
 ### Request
 
 The following example shows a request.
