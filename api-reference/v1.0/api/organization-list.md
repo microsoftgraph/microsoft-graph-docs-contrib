@@ -21,7 +21,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored", "name": "organization_list" } -->
 [!INCLUDE [permissions-table](../includes/permissions/organization-list-permissions.md)]
 
-> Note: Applications granted the User.Read permission are able to read only the *id*, *displayName*, and *verifiedDomains* properties of the organization.  All other properties will return with `null` values. To read all properties, use Directory.Read.All.
+Applications granted the *User.Read* permission are able to read only the *id*, *displayName*, and *verifiedDomains* properties of the organization.  All other properties will return with `null` values. To read all properties, use *Directory.Read.All*.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
