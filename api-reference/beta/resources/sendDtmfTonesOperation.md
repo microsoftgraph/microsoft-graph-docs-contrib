@@ -26,11 +26,11 @@ The sendDtmfTones operation to obtain the result of the sendDtmfTones action.
 | status              | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`.               |
 
 ## Relationships
-None
+None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
