@@ -3,7 +3,7 @@ title: "Searching for Resources"
 description: "Get the list of export jobs."
 author: "ishatyagiit"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "viva-goals"
 doc_type: apiPageType
 ---
 

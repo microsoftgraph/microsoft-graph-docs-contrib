@@ -3,7 +3,7 @@ title: "Get Content"
 description: "Download Results of a Completed Resource"
 author: "ishatyagiit"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "viva-goals"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: export job resource type
 description: The ExportJob entity is used to represent the properties of a goals export job. It inherits from base type LongRunningOperation.
 author: ishatyagiit
 ms.localizationpriority: medium
-ms.prod: insights
+ms.prod: "viva-goals"
 doc_type: resourcePageType
 ---
 

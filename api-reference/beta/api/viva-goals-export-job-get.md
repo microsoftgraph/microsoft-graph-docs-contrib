@@ -3,7 +3,7 @@ title: "Poll Resource"
 description: "Get the status of export job"
 author: "ishatyagiit"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "viva-goals"
 doc_type: apiPageType
 ---
 
