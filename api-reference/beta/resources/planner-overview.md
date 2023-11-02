@@ -164,13 +164,13 @@ The following are the possible values for the limit types.
 
 | Value                         | Description                                                                                                                                                                                              |
 | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| MaximumProjectsOwnedByUser    | The maximum number of plans contained by a group limit was exceeded. This limit applies to plans contained by a group based on the **container** property of the [plannerPlan](plannerplan.md) resource.                                         |
-| MaximumProjectsSharedWithUser | The maximum number of plans shared with a user limit was exceeded.  This limit is based on the **sharedWith** property on the [plannerPlanDetails](plannerplandetails.md) resource.                   |
-| MaximumTasksCreatedByUser     | The maximum number of tasks created by a user limit was exceeded. This limit is based on the **createdBy** property on the [plannerTask](plannertask.md) resource.                                    |
-| MaximumTasksAssignedToUser    | The maximum number of tasks assigned to a user limit was exceeded. This limit is based on the **assignments** property on the [plannerTask](plannertask.md) resource.                                 |
-| MaximumTasksInProject         | The maximum number of tasks in a plan limit was exceeded. This limit is based on the **planId** property on the [plannerTask](plannertask.md) resource.                                               |
-| MaximumActiveTasksInProject   | The maximum number of tasks that aren't completed in a plan limit was exceeded. This limit is based on the **planId** and **percentComplete** properties on the [plannerTask](plannertask.md) resource. |
-| MaximumBucketsInProject       | The maximum number of buckets in a plan limit was exceeded. This limit is based on the **planId** property on the [plannerBucket](plannerbucket.md) resource.                                         |
+| MaximumProjectsOwnedByUser    | The maximum number of plans contained by a group limit was exceeded. The **container** property of the [plannerPlan](plannerplan.md) resource determines this limit. |
+| MaximumProjectsSharedWithUser | The maximum number of plans shared with a user limit was exceeded.  The **sharedWith** property on the [plannerPlanDetails](plannerplandetails.md) resource determines this limit.                   |
+| MaximumTasksCreatedByUser     | The maximum number of tasks created by a user limit was exceeded. The **createdBy** property on the [plannerTask](plannertask.md) resource determines this limit.                                    |
+| MaximumTasksAssignedToUser    | The maximum number of tasks assigned to a user limit was exceeded. The **assignments** property on the [plannerTask](plannertask.md) resource determines this limit.                                 |
+| MaximumTasksInProject         | The maximum number of tasks in a plan limit was exceeded. The **planId** property on the [plannerTask](plannertask.md) resource determines this limit.                                               |
+| MaximumActiveTasksInProject   | The maximum number of tasks that aren't completed in a plan limit was exceeded. The **planId** and **percentComplete** properties on the [plannerTask](plannertask.md) resource determines this limit. |
+| MaximumBucketsInProject       | The maximum number of buckets in a plan limit was exceeded. The **planId** property on the [plannerBucket](plannerbucket.md) resource determines this limit.                                         |
 | MaximumUsersSharedWithProject | The **sharedWith** property on the [plannerPlanDetails](plannerplandetails.md) resource contains too many values.                                                                                          |
 | MaximumReferencesOnTask       | The **references** property on the [plannerTaskDetails](plannertaskdetails.md) resource contains too many values.                                                                                          |
 | MaximumChecklistItemsOnTask   | The **checklist** property on the [plannerTaskDetails](plannertaskdetails.md) resource contains too many values.                                                                                           |
@@ -178,7 +178,6 @@ The following are the possible values for the limit types.
 | MaximumFavoritePlansForUser   | The **favoritePlanReferences** property on the [plannerUser](planneruser.md) resource contains too many values.                                                                                            |
 | MaximumRecentPlansForUser     | The **recentPlanReferences** property on the [plannerUser](planneruser.md) resource contains too many values.                                                                                              |
 | MaximumContextsOnPlan         | The **contexts** property on the [plannerPlan](plannerplan.md) resource contains too many values.                                                                                                          |
-| MaximumPlannerPlans       | The group already contains a **plan**. Currently, groups can only contain one **plan**. **Note:** Some Microsoft apps can exceed this limit. In the future, this capability will be extended to all apps.                                                                                                      |
 
 ### 412 Precondition Failed
 
