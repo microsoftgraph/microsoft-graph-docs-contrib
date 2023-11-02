@@ -62,6 +62,9 @@ DELETE /groups/{id}/photo/$value
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
 
+## Request body
+
+Don't supply a request body for this method.
 
 ## Response
 
