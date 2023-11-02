@@ -30,13 +30,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## Create an upload session
 
 To begin a large file upload, your app must first request a new upload session.
-This request creates a temporary storage location where the bytes of the file are until the complete file is uploaded.
+This request creates a temporary storage location where the bytes of the file are saved until the complete file is uploaded.
 When the last byte of the file is uploaded, the upload session is completed and the final file is shown in the destination folder.
 Alternatively, you can defer final creation of the file in the destination until you explicitly make a request to complete the upload, by setting the `deferCommit` property in the request arguments.
 
 ### HTTP request
 
-To upload a new file, you must provide both the parent's ID and the new file name in the request. However an update only requires the ID of the item to update.
+To upload a new file, you must provide both the parent's ID and the new file name in the request. However an update only requires the ID of the item that will be updated.
 
 #### Create new file
 
@@ -226,7 +226,7 @@ Content-Type: application/json
 * On successful fragment writes, it will return the next range to start from (for example "523-").
 * On failures when the client sent a fragment the server had already received, the server responds with `HTTP 416 Requested Range Not Satisfiable`.
   You can [request upload status](#resuming-an-in-progress-upload) to get a more detailed list of missing ranges.
-* Including the Authorization header when issuing the `PUT` call may result in a `HTTP 401 Unauthorized` response. The Authorization header and bearer token should only be sent when issuing the `POST` during the first step. It should not be included when issuing the `PUT`.
+* If you include the Authorization header when issuing the `PUT` call, it may result in an `HTTP 401 Unauthorized` response. Only send the Authorization header and bearer token when issuing the `POST` during the first step. Don't include it when you issue the `PUT` call.
 
 ## Completing a file
 
