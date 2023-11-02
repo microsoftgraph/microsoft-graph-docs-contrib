@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 doc_type: apiPageType
 ---
-
+https://microsoft-ce-csi.acrolinx.cloud:443
 # Create export job
 
 Namespace: microsoft.graph
@@ -55,7 +55,7 @@ Content-type: application/json
 
 ## Example
 #### Request
-Here is an example of the create job request.
+Here's an example of the create job request.
 
 ```text
 POST https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs
@@ -88,7 +88,7 @@ Location: "https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs/
 ```
 
 ##### State is "conflicting"
-A 409 conflict is returned when creating a export job with the same properties (such as organization id and explorer view id) as that of an existing job that is pending completion. Once the job completes, creating a new one is allowed.
+When you attempt to create an export job with the same properties, such as organization ID and explorer view ID, as an existing job that is pending completion, it results in a 409 conflict. Once the pending job completes, you're allowed to create a new one.
 
 ```text
 HTTP/1.1 409 Conflict
