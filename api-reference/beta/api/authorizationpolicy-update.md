@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "authorizationpolicy_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/authorizationpolicy-update-permissions.md)]
 
-When calling on behalf of a user, the user needs to have the *Privileged Role Administrator* [Microsoft Entra role](/azure/active-directory/roles/permissions-reference).
+When calling on behalf of a user, the user needs to have the *Privileged Role Administrator* [Microsoft Entra role](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 ## HTTP request
 

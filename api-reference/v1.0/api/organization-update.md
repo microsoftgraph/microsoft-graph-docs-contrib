@@ -22,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored", "name": "organization_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/organization-update-permissions.md)]
 
+[!INCLUDE [rbac-organization-apis-read](../includes/rbac-for-apis/rbac-organization-apis-read.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +43,7 @@ PATCH /organization/{id}
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, you shouldn't include existing values that haven't changed.
 
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |marketingNotificationEmails|String collection|                                        **Notes**: not nullable.            |
 |privacyProfile|[privacyProfile](../resources/privacyprofile.md)|The privacy profile of an organization (set statementUrl and contactEmail).            |

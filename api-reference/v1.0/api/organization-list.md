@@ -21,7 +21,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored", "name": "organization_list" } -->
 [!INCLUDE [permissions-table](../includes/permissions/organization-list-permissions.md)]
 
-Applications granted the *User.Read* permission are able to read only the *id*, *displayName*, and *verifiedDomains* properties of the organization.  All other properties will return with `null` values. To read all properties, use *Directory.Read.All*.
+[!INCLUDE [rbac-organization-apis-read](../includes/rbac-for-apis/rbac-organization-apis-read.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
