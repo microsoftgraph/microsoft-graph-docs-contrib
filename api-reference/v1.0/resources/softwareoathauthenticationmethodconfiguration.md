@@ -2,6 +2,7 @@
 title: "softwareOathAuthenticationMethodConfiguration resource type"
 description: "Represents the authentication policy for a third-party software OATH authentication method."
 author: "jpettere"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

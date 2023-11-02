@@ -3,6 +3,7 @@ title: "List namedLocations"
 description: "Get a list of namedLocation objects."
 ms.localizationpriority: medium
 author: "lisaychuang"
+ms.reviewer: conditionalaccesspm
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
