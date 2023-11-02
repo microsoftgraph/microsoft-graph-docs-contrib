@@ -69,7 +69,6 @@ If successful, this method returns a `200 OK` response code.
 
 ## Examples
 
-### Example 1: Delete the photo of the user
 
 ### Request
 
