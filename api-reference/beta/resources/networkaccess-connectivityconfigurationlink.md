@@ -23,14 +23,14 @@ None.
 |:---|:---|:---|
 |displayName|String|Specifies the name of the link.|
 |id|String|A unique identifier for each link.|
-|localConfigurations|[microsoft.graph.networkaccess.localConnectivityConfiguration](../resources/networkaccess-localconnectivityconfiguration.md) collection|Specifies configuration of Microsoft’s end of the tunnel(s) for a device link.|
-|peerConfiguration|[microsoft.graph.networkaccess.peerConnectivityConfiguration](../resources/networkaccess-peerconnectivityconfiguration.md)|Specifies configuration of customer’s end of the tunnel(s) for a device link.|
+|localConfigurations|[microsoft.graph.networkaccess.localConnectivityConfiguration](../resources/networkaccess-localconnectivityconfiguration.md) collection|Specifies configuration of Microsoft's end of the tunnel(s) for a device link.|
+|peerConfiguration|[microsoft.graph.networkaccess.peerConnectivityConfiguration](../resources/networkaccess-peerconnectivityconfiguration.md)|Specifies configuration of customer's end of the tunnel(s) for a device link.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

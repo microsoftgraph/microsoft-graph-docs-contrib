@@ -1,6 +1,6 @@
 ---
 title: "peerConnectivityConfiguration resource type"
-description: "Specifies configuration of customer’s end of the tunnel(s) for a device link."
+description: "Specifies configuration of customer's end of the tunnel(s) for a device link."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies configuration of customer’s end of the tunnel(s) for a device link.
+Specifies configuration of customer's end of the tunnel(s) for a device link.
 
 ## Properties
 |Property|Type|Description|
@@ -26,7 +26,7 @@ Specifies configuration of customer’s end of the tunnel(s) for a device link.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.networkaccess.peerConnectivityConfiguration"

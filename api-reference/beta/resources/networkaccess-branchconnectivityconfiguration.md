@@ -32,7 +32,7 @@ BranchConnectivityConfiguration specifies how a branch's connectivity is configu
 |links|[microsoft.graph.networkaccess.connectivityConfigurationLink](../resources/networkaccess-connectivityconfigurationlink.md) collection|List of connectivity configurations of device links link|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "branchId",

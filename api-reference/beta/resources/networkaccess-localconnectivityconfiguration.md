@@ -21,13 +21,13 @@ Specifies the connectivity settings for endpoints of device links.
 |asn|Int32|Specifies ASN of one end of IPSec tunnel (local or peer).|
 |bgpAddress|String|Specifies BGP IPv4 address of one end of IPSec tunnel (local or peer).|
 |endpoint|String|Specifies public IPv4 address of one end of IPSec tunnel (local or peer).|
-|region|microsoft.graph.networkaccess.region| Specifies the region in which Microsoft’s end of the tunnel exists. Not applicable for Peer Configuration. The possible values are: `eastUS`, `eastUS2`, `westUS`, `westUS2`, `westUS3`, `centralUS`, `northCentralUS`, `southCentralUS`, `northEurope`, `westEurope`, `franceCentral`, `germanyWestCentral`, `switzerlandNorth`, `ukSouth`, `canadaEast`, `canadaCentral`, `southAfricaWest`, `southAfricaNorth`, `uaeNorth`,`unknownFutureValue`.|
+|region|microsoft.graph.networkaccess.region| Specifies the region in which Microsoft's end of the tunnel exists. Not applicable for Peer Configuration. The possible values are: `eastUS`, `eastUS2`, `westUS`, `westUS2`, `westUS3`, `centralUS`, `northCentralUS`, `southCentralUS`, `northEurope`, `westEurope`, `franceCentral`, `germanyWestCentral`, `switzerlandNorth`, `ukSouth`, `canadaEast`, `canadaCentral`, `southAfricaWest`, `southAfricaNorth`, `uaeNorth`,`unknownFutureValue`.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.networkaccess.localConnectivityConfiguration"

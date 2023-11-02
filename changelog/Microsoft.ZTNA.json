@@ -418,7 +418,15 @@
           "Description": "Added the **trafficForwardingType** enumeration type.",
           "Target": "trafficForwardingType"
         },
-		 {
+        {
+          "Id": "2204d5d0-d3cf-4850-88b7-d430ab574476",
+          "ApiChange": "Resource",
+          "ChangedApiName": "branchConnectivityConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [branchConnectivityConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-branchConnectivityConfiguration?view=graph-rest-beta) resource and its associated method.",
+          "Target": "branchConnectivityConfiguration"
+        },
+        {
           "Id": "2204d5d0-d3cf-4850-88b7-d430ab574476",
           "ApiChange": "Resource",
           "ChangedApiName": "localConnectivityConfiguration",
@@ -433,14 +441,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [peerConnectivityConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-peerConnectivityConfiguration?view=graph-rest-beta) resource type.",
           "Target": "peerConnectivityConfiguration"
-        },
-        {
-          "Id": "2204d5d0-d3cf-4850-88b7-d430ab574476",
-          "ApiChange": "Resource",
-          "ChangedApiName": "branchConnectivityConfiguration",
-          "ChangeType": "Addition",
-          "Description": "Added the [branchConnectivityConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-branchConnectivityConfiguration?view=graph-rest-beta) resource",
-          "Target": "branchConnectivityConfiguration"
         },
         {
           "Id": "2204d5d0-d3cf-4850-88b7-d430ab574476",
