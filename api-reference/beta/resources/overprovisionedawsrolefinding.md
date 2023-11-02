@@ -1,6 +1,6 @@
 ---
 title: "overprovisionedAwsRoleFinding resource type"
-description: "**TODO: Add Description**"
+description: "Represents over-provisioned AWS roles."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -12,6 +12,8 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represents over-provisioned AWS roles.
 
 Inherits from [identityFinding](../resources/identityfinding.md).
 
@@ -28,8 +30,8 @@ Inherits from [identityFinding](../resources/identityfinding.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |actionSummary|[actionSummary](../resources/actionsummary.md)|Contains information on authorization system actions granted to an identity and actions executed by this identity in the last 90 days. This property and its values are a snapshot as of when the finding was created and may not reflect the current values for the identity Inherited from [identityFinding](../resources/identityfinding.md).|
-|createdDateTime|DateTimeOffset|Inherited from [finding](../resources/finding.md).|
-|id|String|Inherited from [entity](../resources/entity.md).|
+|createdDateTime|DateTimeOffset|A date specifiying when the Finding was created Inherited from [finding](../resources/finding.md).|
+|id|String|Unique identifier for the Finding. This id will be base64 encoded using the format:{findingType}{FindingId} to ensure uniqueness Inherited from [entity](../resources/entity.md).|
 |lastActiveDateTime|DateTimeOffset|A date specifiying when the last time the identity in this Finding executed an authorization system action Inherited from [identityFinding](../resources/identityfinding.md).|
 |permissionsCreepIndex|[permissionsCreepIndex](../resources/permissionscreepindex.md)|Assigns an index based on an identities excessive permissions that is classified into three buckets: 0-33: low, 34-66: medium, 67-100: high. This property and its values are a snapshot as of when the finding was created and may not reflect the current values for the identityInherited from [identityFinding](../resources/identityfinding.md).|
 

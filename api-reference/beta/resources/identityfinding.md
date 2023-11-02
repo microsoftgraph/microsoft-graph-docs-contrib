@@ -18,6 +18,27 @@ An identityFinding is a finding that contains information about an identity (use
 Inherits from [finding](../resources/finding.md).
 
 The following resources inherit from this resource type:
+[inactiveawsresourcefinding](../resources/inactiveawsresourcefinding.md)
+[inactiveawsrolefinding](../resources/inactiveawsrolefinding.md)
+[inactiveazureserviceprincipalfinding](../resources/inactiveazureserviceprincipalfinding.md)
+[inactivegcpserviceaccountfinding](../resources/inactivegcpserviceaccountfinding.md)
+[inactivegroupfinding](../resources/inactivegroupfinding.md)
+[inactiveserverlessfunctionfinding](../resources/inactiveserverlessfunctionfinding.md)
+[inactiveuserfinding](../resources/inactiveuserfinding.md)
+
+[overprovisionedawsresourcefinding](../resources/overprovisionedawsresourcefinding.md)
+[overprovisionedawsrolefinding](../resources/overprovisionedawsrolefinding.md)
+[overprovisionedazureserviceprincipalfinding](../resources/overprovisionedazureserviceprincipalfinding.md)
+[overprovisionedgcpserviceaccountfinding](../resources/overprovisionedgcpserviceaccountfinding.md)
+[overprovisionedserverlessfunctionfinding](../resources/overprovisionedserverlessfunctionfinding.md)
+[overprovisioneduserfinding](../resources/overprovisioneduserfinding.md)
+
+[superawsresourcefinding](../resources/superawsresourcefinding.md)
+[superawsrolefinding](../resources/superawsrolefinding.md)
+[superazureserviceprincipalfinding](../resources/superazureserviceprincipalfinding.md)
+[supergcpserviceaccountfinding](../resources/supergcpserviceaccountfinding.md)
+[superserverlessfunctionfinding](../resources/superserverlessfunctionfinding.md)
+[superuserfinding](../resources/superuserfinding.md)
 
 ## Methods
 |Method|Return type|Description|
