@@ -2,6 +2,30 @@
   "changelog": [
      {
       "ChangeList": [
+	          {
+          "Id": "d7703e93-f816-4d54-aea1-7bebdc1d227c",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "applicationProtocol",
+          "ChangeType": "Addition",
+          "Description": "Added the **applicationProtocol** enumeration type.",
+          "Target": "applicationProtocol"
+        },
+        {
+          "Id": "d7703e93-f816-4d54-aea1-7bebdc1d227c",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "filteringPolicyAction",
+          "ChangeType": "Addition",
+          "Description": "Added the **filteringPolicyAction** enumeration type.",
+          "Target": "filteringPolicyAction"
+        },
+        {
+          "Id": "d7703e93-f816-4d54-aea1-7bebdc1d227c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the [webCategory](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-webCategory?view=graph-rest-beta) resource type.",
+          "Target": "webCategory"
+        },
         {
           "Id": "eb6ff765-ef2b-4365-a4a5-8ccd00136b33",
           "ApiChange": "Resource",
