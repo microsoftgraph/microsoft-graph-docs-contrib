@@ -15,7 +15,6 @@ Namespace: microsoft.graph
 
 View EC2 instances with S3 Bucket access
 
-
 Inherits from [finding](../resources/finding.md).
 
 ## Methods

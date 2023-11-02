@@ -1,9 +1,9 @@
 ---
 title: "encryptedAwsStorageBucketFinding resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents the findings for Aws encrypted storage buckets."
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the findings for Aws encrypted storage buckets.
 
 
 Inherits from [finding](../resources/finding.md).
@@ -23,23 +23,18 @@ Inherits from [finding](../resources/finding.md).
 |:---|:---|:---|
 |[List encryptedAwsStorageBucketFindings](../api/encryptedawsstoragebucketfinding-list.md)|[encryptedAwsStorageBucketFinding](../resources/encryptedawsstoragebucketfinding.md) collection|Get a list of the [encryptedAwsStorageBucketFinding](../resources/encryptedawsstoragebucketfinding.md) objects and their properties.|
 |[Get encryptedAwsStorageBucketFinding](../api/encryptedawsstoragebucketfinding-get.md)|[encryptedAwsStorageBucketFinding](../resources/encryptedawsstoragebucketfinding.md)|Read the properties and relationships of an [encryptedAwsStorageBucketFinding](../resources/encryptedawsstoragebucketfinding.md) object.|
-|[Update encryptedAwsStorageBucketFinding](../api/encryptedawsstoragebucketfinding-update.md)|[encryptedAwsStorageBucketFinding](../resources/encryptedawsstoragebucketfinding.md)|Update the properties of an [encryptedAwsStorageBucketFinding](../resources/encryptedawsstoragebucketfinding.md) object.|
-|[Delete encryptedAwsStorageBucketFinding](../api/encryptedawsstoragebucketfinding-delete.md)|None|Delete an [encryptedAwsStorageBucketFinding](../resources/encryptedawsstoragebucketfinding.md) object.|
-|[List authorizationSystemResource](../api/encryptedawsstoragebucketfinding-list-storagebucket.md)|[authorizationSystemResource](../resources/authorizationsystemresource.md) collection|Get the authorizationSystemResource resources from the storageBucket navigation property.|
-|[Add authorizationSystemResource](../api/encryptedawsstoragebucketfinding-post-storagebucket.md)|[authorizationSystemResource](../resources/authorizationsystemresource.md)|Add storageBucket by posting to the storageBucket collection.|
-|[Remove authorizationSystemResource](../api/encryptedawsstoragebucketfinding-delete-storagebucket.md)|None|Remove an [authorizationSystemResource](../resources/authorizationsystemresource.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|accessibility|awsAccessType|**TODO: Add Description**.The possible values are: `public`, `restricted`, `crossAccount`, `private`, `unknownFutureValue`.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [finding](../resources/finding.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
+|accessibility|awsAccessType|Aws resources access type.The possible values are: `public`, `restricted`, `crossAccount`, `private`, `unknownFutureValue`.|
+|createdDateTime|DateTimeOffset|A date specifiying when the Finding was created Inherited from [finding](../resources/finding.md).|
+|id|String|Unique identifier for the Finding. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|storageBucket|[authorizationSystemResource](../resources/authorizationsystemresource.md)|**TODO: Add Description**|
+|storageBucket|[authorizationSystemResource](../resources/authorizationsystemresource.md)|Represents a resource in an authorization system|
 
 ## JSON representation
 The following JSON representation shows the resource type.
