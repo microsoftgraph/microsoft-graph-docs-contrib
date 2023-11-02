@@ -27,9 +27,9 @@ Inherits from [finding](../resources/finding.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |accessibility|azureAccessType|resources access type.The possible values are: `public`, `private`, `unknownFutureValue`.|
-|createdDateTime|DateTimeOffset| Inherited from [finding](../resources/finding.md).|
+|createdDateTime|DateTimeOffset|A date specifiying when the Finding was created Inherited from [finding](../resources/finding.md).|
 |encryptionManagedBy|azureEncryption|Specifies who manages encryption of Azure storage accounts.The possible values are: `microsoftStorage`, `microsoftKeyVault`, `customer`, `unknownFutureValue`.|
-|id|String|Inherited from [entity](../resources/entity.md).|
+|id|String|Unique identifier for the Finding. This id will be base64 encoded using the format:{findingType}{FindingId} to ensure uniqueness Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|

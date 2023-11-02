@@ -15,7 +15,6 @@ Namespace: microsoft.graph
 
 Get insights into AWS S3 buckets that are accessible externally.
 
-
 Inherits from [finding](../resources/finding.md).
 
 ## Methods
@@ -29,8 +28,8 @@ Inherits from [finding](../resources/finding.md).
 |:---|:---|:---|
 |accessibility|awsAccessType|Aws resources access type.The possible values are: `public`, `restricted`, `crossAccount`, `private`, `unknownFutureValue`.|
 |accountsWithAccess|[accountsWithAccess](../resources/accountswithaccess.md)|Contains information on external Aws accounts that have access to a storage bucket|
-|createdDateTime|DateTimeOffset| Inherited from [finding](../resources/finding.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
+|createdDateTime|DateTimeOffset|A date specifiying when the Finding was created Inherited from [finding](../resources/finding.md).|
+|id|String|Unique identifier for the Finding. This id will be base64 encoded using the format:{findingType}{FindingId} to ensure uniqueness Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|

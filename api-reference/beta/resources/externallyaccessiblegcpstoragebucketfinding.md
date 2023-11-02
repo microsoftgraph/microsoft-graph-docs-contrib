@@ -1,6 +1,6 @@
 ---
 title: "externallyAccessibleGcpStorageBucketFinding resource type"
-description: "**TODO: Add Description**"
+description: "Represents the findings for externally accessible Gcp storage buckets."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -29,9 +29,9 @@ Inherits from [finding](../resources/finding.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |accessibility|gcpAccessType|Gcp resources access type.The possible values are: `public`, `subjectToObjectAcls`, `private`, `unknownFutureValue`.|
-|createdDateTime|DateTimeOffset| Inherited from [finding](../resources/finding.md).|
+|createdDateTime|DateTimeOffset||A date specifiying when the Finding was created Inherited from [finding](../resources/finding.md).|
 |encryptionManagedBy|gcpEncryption|Specifies who manages encryption of Gcp storage buckets.The possible values are: `google`, `customer`, `unknownFutureValue`.|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
+|id|String|Unique identifier for the Finding. This id will be base64 encoded using the format:{findingType}{FindingId} to ensure uniquenessInherited from [entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|
