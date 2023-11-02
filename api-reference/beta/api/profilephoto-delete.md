@@ -38,7 +38,7 @@ The following tables show the least privileged permission or permissions require
 
 > [!NOTE]
 > - An app with only application permissions cannot delete a group's photo.
-> - Global admin and User admin can delete the photo of any user in the organization by using delegated permissions. This operation is also supported with application permissions. Deleting the photo of any user in the organization requires *User.ReadWrite.All* permission. Deleting the photo of the signed-in user only requires *User.ReadWrite* permission.
+> - Global and user admin can delete the photo of any user in the organization using delegated permissions. This operation also supports application permissions. Deleting the photo of any user in the organization requires *User.ReadWrite.All* permissions. Deleting the photo of the signed-in user only requires *User.ReadWrite* permissions.
 
 ## HTTP request
 
