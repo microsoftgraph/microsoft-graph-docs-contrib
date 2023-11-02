@@ -2,6 +2,7 @@
 title: "Update temporaryAccessPassAuthenticationMethodConfiguration"
 description: "Update the Temporary Access Pass policy for the Microsoft Entra tenant, represented by a temporaryAccessPassAuthenticationMethodConfiguration object."
 author: "tilarso"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

@@ -66,10 +66,10 @@ In the request body, supply a [bulkUpload](../resources/synchronization-bulkuplo
 * [Example 1: Bulk upload using SCIM Core user and Enterprise User schema](#example-1-bulk-upload-using-scim-core-user-and-enterprise-user-schema)
 * [Example 2: Bulk upload using SCIM custom schema namespace](#example-2-bulk-upload-using-scim-custom-schema-namespace)
 * [Example 3: Bulk upload for updating an existing user](#example-3-bulk-upload-for-updating-an-existing-user)
-* [Example 4: Bulk upload for deleting an existing user](#example-4-bulk-upload-for-deleting-an-existing-user)
 
 ### Example 1: Bulk upload using SCIM Core user and Enterprise User schema
 
+#### Request
 The following bulk request uses the SCIM standard Core User and Enterprise User schema. It has two user operations in the **Operations** array. You can send a maximum of 50 user operations in each bulk request.
 
 **Processing details:** The provisioning service will read the two user records. It will use the matching attribute (`userName` / `externalId`) configured in the attribute mapping of the provisioning job to determine whether to create, update, enable, or disable the user account in the directory. It will resolve the manager reference using the `manager.value` field. Specify the `externalId` of the user's manager in this field. In the example below, the provisioning service will assign *Barbara Jensen* as the manager for *Kathy Jensen*.
@@ -225,7 +225,7 @@ Content-Type: application/scim+json
 
 ---
 
-### Response
+#### Response
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -248,6 +248,7 @@ Content-Type: application/json
 
 ### Example 2: Bulk upload using SCIM custom schema namespace
 
+#### Request
 The following bulk request uses the SCIM standard Core User and Enterprise User schema. It also has an additional custom schema namespace called `urn:contoso:employee` with two attributes `HireDate` and `JobCode`. The `schemas` array in the data object is updated to include the custom schema namespace.
 
 **Processing details:** The provisioning service will read the two user records. It will use the matching attribute (`userName` / `externalId`) configured in the attribute mapping of the provisioning job to determine whether to create, update, enable, or disable the user account in the directory. If you have included the two custom attributes `urn:contoso:employee:HireDate` and `urn:contoso:employee:JobCode` in your provisioning job attribute mapping, it will be processed, and the corresponding target attributes will be set.
@@ -414,7 +415,7 @@ Content-Type: application/scim+json
 
 ---
 
-### Response
+#### Response
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -436,6 +437,8 @@ Content-Type: application/json
 ```
 
 ### Example 3: Bulk upload for updating an existing user
+
+#### Request
 
 The following bulk request illustrates how to update attributes of an existing Microsoft Entra user, to change the user's department and set that the user cannot sign in.  This example assumes you have configured a mapping for the **externalId**, **department** and **active** fields, and you have an existing Microsoft Entra user that has attribute matching the **externalId**.  
 
@@ -478,7 +481,7 @@ Content-Type: application/scim+json
 
 ---
 
-### Response
+#### Response
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -498,75 +501,6 @@ Content-Type: application/json
     "request-id": "beec9ea0-f7e4-4fe7-8507-cd834c88f18b"
 }
 ```
-
-### Example 4: Bulk upload for deleting an existing user
-
-The following bulk request illustrates how to delete an existing Microsoft Entra ID or on-premises AD user.  This example assumes you have configured a mapping that uses **externalId** as the matching identifier.  
-
-> [!NOTE]
-> If the target directory for the operation is Microsoft Entra ID, then the matched user is soft-deleted. The user can be seen on the Microsoft Entra admin center **Deleted users** page for the next 30 days and can be restored during that time.
-> If the target directory for the operation is on-premises Active Directory, then the matched user is hard-deleted. If the **Active Directory Recycle Bin** is enabled, you can restore the deleted on-premises AD user object.
-> To prevent and recover from accidental deletions, we recommend [configuring accidental deletion threshold](/azure/active-directory/app-provisioning/accidental-deletions) in the provisioning app and [enabling the on-premises Active Directory recycle bin](/azure/active-directory/hybrid/connect/how-to-connect-sync-recycle-bin).
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "bulk_upload_for_delete"
-} 
--->
-```http
-POST https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/bulkUpload
-Authorization: Bearer <token>
-Content-Type: application/scim+json
-
-{
-    "schemas": [
-        "urn:ietf:params:scim:api:messages:2.0:BulkRequest"
-    ],
-    "Operations": [
-        {
-            "method": "DELETE",
-            "bulkId": "7172023",
-            "path": "/Users",
-            "data": {
-                "schemas": [
-                    "urn:ietf:params:scim:schemas:core:2.0:User",
-                    "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User"
-                ],
-                "externalId": "7172023"
-            }
-        }
-    ]
-}
-```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/bulk-upload-for-delete-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-### Response
-
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.bulkUpload"
-}
--->
-``` http
-HTTP/1.1 202 Accepted
-Content-Type: application/json
-
-{
-    "client-request-id": "92cd30f6-fcc3-5d61-098e-a6dd35e460ef",
-    "content-length": "0",
-    "location": "https://graph.microsoft.com/beta/auditLogs/provisioning/?$filter=jobid%20eq%20'API2AAD.b16687d38faf42adb29892cdcaf01c6e.1a03de52-b9c3-4e2c-a1e3-9145aaa8e530'",
-    "request-id": "beec9ea0-f7e3-4fe7-8507-cd834c88f18b"
-}
-```
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2023-06-27 16:57:30 UTC -->
