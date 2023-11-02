@@ -37,7 +37,7 @@ Alternatively, you can defer final creation of the file in the destination until
 
 ### HTTP request
 
-To upload a new file both the parent's id and new file name will need to be provided in the request, however an update only requires the id of the item to update.
+To upload a new file, both the parent's ID and the new file name must be provided in the request. However an update only requires the ID of the item to update.
 
 #### Create new file
 
