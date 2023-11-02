@@ -1,6 +1,6 @@
 ---
 title: "Get inactiveServerlessFunctionFinding"
-description: "Read the properties and relationships of an inactiveServerlessFunctionFinding object."
+description: "Read the properties and relationships of inactive serverless functions in your AWS, Azure, and GCP environments.."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -12,8 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an [inactiveServerlessFunctionFinding](../resources/inactiveserverlessfunctionfinding.md) object.
-You want to view inactive serverless functions in AWS, Azure, and GCP authorization systems.
+Read the properties and relationships of an [inactiveServerlessFunctionFinding](../resources/inactiveserverlessfunctionfinding.md) in your AWS, Azure, and GCP environments.
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
