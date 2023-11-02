@@ -26,7 +26,7 @@ Defines the strong authentication configurations for the X.509 certificate. This
 None.
 
 ## JSON representation
-The following JSON representation shows the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.x509CertificateAuthenticationModeConfiguration"

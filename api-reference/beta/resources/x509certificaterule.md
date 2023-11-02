@@ -29,7 +29,7 @@ Defines the strong authentication configuration rules for the X.509 certificate.
 None.
 
 ## JSON representation
-The following JSON representation shows the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.x509CertificateRule"
