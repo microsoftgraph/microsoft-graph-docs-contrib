@@ -43,17 +43,17 @@ The following tables show the least privileged permission or permissions require
 
 ## HTTP request
 
-To delete a group photo:
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /groups/{id}/photo/$value
-```
-
 To delete a user's profile photo:
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/photo/$value
 DELETE /users/{id | userPrincipalName}/photo/$value
+```
+
+To delete a group photo:
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE /groups/{id}/photo/$value
 ```
 
 ## Request headers
