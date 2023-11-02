@@ -1,9 +1,9 @@
 ---
 title: "permissionsCreepIndex resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Assigns a score based on an identities excessive permissions that is classified into three buckets: 0-33: low, 34-66: medium, 67-100: high"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Assigns a score based on an identities excessive permissions that is classified into three buckets: 0-33: low, 34-66: medium, 67-100: high
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|score|Int32|**TODO: Add Description**|
+|score|Int32|This value represents how much risk an identity poses. This risk range is classified in three buckets: 0-33: low, 34-66: medium, 67-100: high|
 
 ## Relationships
 None.
