@@ -18,15 +18,14 @@ To upload a file using an upload session, there are two steps:
 1. [Create an upload session](#create-an-upload-session)
 2. [Upload bytes to the upload session](#upload-bytes-to-the-upload-session)
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    |
-|Application | Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "driveitem_createuploadsession" } -->
+[!INCLUDE [permissions-table](../includes/permissions/driveitem-createuploadsession-permissions.md)]
 
 ## Create an upload session
 
@@ -134,7 +133,7 @@ The response to this request, if successful, will provide the details for where 
 
 This resource provides details about where the byte range of the file should be uploaded and when the upload session expires.
 
-If the `fileSize` parameter is specified and exceeds the available quota, a `507 Insufficent Storage` response is then returned and the upload session won't be created.
+If the `fileSize` parameter is specified and exceeds the available quota, a `507 Insufficent Storage` response is returned and the upload session won't be created.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession",
        "optionalProperties": [ "nextExpectedRanges" ]  } -->
@@ -158,7 +157,8 @@ The fragments of the file must be uploaded sequentially in order.
 Uploading fragments out of order results in an error.
 
 **Note:** If your app splits a file into multiple byte ranges, the size of each byte range **MUST** be a multiple of 320 KiB (327,680 bytes).
-Using a fragment size that doesn't divide evenly by 320-KiB results in errors committing some files.
+
+Using a fragment size that doesn't divide evenly by 320 KiB results in errors committing some files.
 
 ### Example
 

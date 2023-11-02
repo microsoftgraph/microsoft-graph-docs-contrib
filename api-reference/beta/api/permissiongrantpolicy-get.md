@@ -15,15 +15,14 @@ Namespace: microsoft.graph
 
 Retrieve a single [permissionGrantPolicy](../resources/permissiongrantpolicy.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Policy.Read.PermissionGrant, Policy.ReadWrite.PermissionGrant |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Policy.Read.PermissionGrant, Policy.ReadWrite.PermissionGrant |
+<!-- { "blockType": "permissions", "name": "permissiongrantpolicy_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/permissiongrantpolicy-get-permissions.md)]
 
 [!INCLUDE [rbac-permission-grant-preapproval-policy-read](../includes/rbac-for-apis/rbac-permission-grant-preapproval-policy-read.md)]
 
@@ -47,7 +46,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -57,7 +56,7 @@ If successful, this method returns a `200 OK` response code and the requested [p
 
 ### Request
 
-The following is an example of the request. In this example, the requested policy is the built-in permission grant policy `microsoft-user-default-low`, which includes delegated permissions classified low, for apps from verified publishers or apps registered in this tenant.
+The following example shows a request. In this example, the requested policy is the built-in permission grant policy `microsoft-user-default-low`, which includes delegated permissions classified low, for apps from verified publishers or apps registered in this tenant.
 
 
 # [HTTP](#tab/http)
@@ -107,7 +106,7 @@ GET https://graph.microsoft.com/beta/policies/permissionGrantPolicies/microsoft-
 
 ### Response
 
-The following is an example of the response. The policy has two `includes` condition sets, one that matches with delegated permission classified `low` for client apps registered in this tenant, and the other that matches delegated permissions classified `low` for apps from verified publishers (regardless of which tenant the app is registered in).
+The following example shows the response. The policy has two `includes` condition sets, one that matches with delegated permission classified `low` for client apps registered in this tenant, and the other that matches delegated permissions classified `low` for apps from verified publishers (regardless of which tenant the app is registered in).
 
 > **Note:** The response object shown here might be shortened for readability.
 

@@ -11,7 +11,7 @@ ms.date: 11/01/2022
 
 # Manage access to resources using the entitlement management APIs in Microsoft Graph
 
-Managing access to all the resources that employees need, such as groups, applications, and sites, is an important function for organizations. You want to grant employees the right level of access they need to be productive and remove their access when it is no longer needed. [Azure Active Directory (Azure AD) entitlement management](/azure/active-directory/governance/entitlement-management-overview) using Microsoft Graph APIs enables you to manage this type of access.
+Managing access to all the resources that employees need, such as groups, applications, and sites, is an important function for organizations. You want to grant employees the right level of access they need to be productive and remove their access when it is no longer needed. [Microsoft Entra entitlement management](/azure/active-directory/governance/entitlement-management-overview) using Microsoft Graph APIs enables you to manage this type of access.
 
 In this tutorial, you learn how to develop code to create a package of resources for a marketing campaign that internal users can self-service request. Requests do not require approval and user's access expires after 30 days. For this tutorial, the marketing campaign resources are just membership in a single group, but it could be a collection of groups, applications, or SharePoint Online sites.
 
@@ -21,8 +21,8 @@ In this tutorial, you learn how to develop code to create a package of resources
 ## Prerequisites
 
 To successfully complete this tutorial, make sure that you have the required prerequisites:
-- Azure AD entitlement management requires specific licenses. For more information, see [License requirements](/azure/active-directory/governance/entitlement-management-overview#license-requirements). The following licenses are required in your tenant:
-    - Azure AD Premium P2
+- Microsoft Entra entitlement management requires specific licenses. For more information, see [License requirements](/azure/active-directory/governance/entitlement-management-overview#license-requirements). The following licenses are required in your tenant:
+    - Microsoft Entra ID P2
     - Enterprise Mobility + Security (EMS) E5 license
 - Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Global Administrator role.
 - Grant yourself the following delegated permissions: `User.ReadWrite.All`, `Group.ReadWrite.All`, and `EntitlementManagement.ReadWrite.All`.
@@ -33,7 +33,7 @@ In this step, you create a group named **Marketing resources** in the directory 
 
 ### Create a user account
 
-For this tutorial, you create a user account that is used to request access to the resources in the access package. When you make these calls, change `contoso.onmicrosoft.com` to the domain name of your tenant. You can find tenant information on the Azure Active Directory overview page. Record the value of the **id** property that is returned to be used later in the tutorial.
+For this tutorial, you create a user account that is used to request access to the resources in the access package. When you make these calls, change `contoso.onmicrosoft.com` to the domain name of your tenant. You can find tenant information on the Microsoft Entra overview page. Record the value of the **id** property that is returned to be used later in the tutorial.
 
 #### Request
 
@@ -1484,7 +1484,7 @@ No Content - 204
 
 In this tutorial, you used many APIs to accomplish tasks. Explore the API reference for these APIs to learn more about what the APIs can do:
 
-- [Working with the Azure AD entitlement management API](/graph/api/resources/entitlementmanagement-overview)
+- [Working with the Microsoft Entra entitlement management API](/graph/api/resources/entitlementmanagement-overview)
 - [accessPackageCatalog](/graph/api/resources/accesspackagecatalog)
 - [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest)
 - [accessPackage](/graph/api/resources/accesspackage)

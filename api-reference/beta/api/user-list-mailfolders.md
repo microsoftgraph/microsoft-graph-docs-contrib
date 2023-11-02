@@ -19,15 +19,14 @@ Get the mail folder collection directly under the root folder of the signed-in u
 
 By default, this operation does not return hidden folders. Use a query parameter `includeHiddenFolders` to include them in the response. This operation does not return all mail folders in a mailbox, only the child folders of the root folder. To return all mail folders in a mailbox, each child folder must be [traversed separately](mailfolder-list-childfolders.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)   |
-|:---------------------------------------|:----------------------------------------------|
-| Delegated (work or school account)     | Mail.ReadBasic, Mail.Read, Mail.ReadWrite     |
-| Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite     |
-| Application                            | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
+<!-- { "blockType": "permissions", "name": "user_list_mailfolders" } -->
+[!INCLUDE [permissions-table](../includes/permissions/user-list-mailfolders-permissions.md)]
 
 ## HTTP request
 
@@ -59,7 +58,7 @@ This method supports [OData query parameters](/graph/query-parameters) to help c
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -73,7 +72,7 @@ This example includes a **mailSearchFolder** object in the response. The mail se
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -289,7 +288,7 @@ GET https://graph.microsoft.com/beta/me/mailFolders/?includeHiddenFolders=true
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here is shortened for readability, and doesn't include all the default folders in a user mailbox.
 <!-- {

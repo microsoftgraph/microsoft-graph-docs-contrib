@@ -15,17 +15,16 @@ Namespace: microsoft.graph
 
 Update tenant-level settings for Microsoft 365 reports.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|----------------------------------------|---------------------------------------------|
-| Delegated (work or school account)     | ReportSettings.ReadWrite.All                |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | ReportSettings.ReadWrite.All                |
+<!-- { "blockType": "permissions", "name": "adminreportsettings_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/adminreportsettings-update-permissions.md)]
 
-> **Note:** For delegated permissions to allow apps to update report settings on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure Active Directory limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
+> **Note:** For delegated permissions to allow apps to update report settings on behalf of a user, the tenant administrator must have assigned the user the appropriate Microsoft Entra ID limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } --> 
@@ -111,7 +110,7 @@ Content-length: 37
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response"

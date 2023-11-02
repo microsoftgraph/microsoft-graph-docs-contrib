@@ -6,14 +6,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AccessPackageAssignmentPolicy(
 	display_name = "policy for external access requests",
 	description = "policy for users from connected organizations to request access, with two stages of approval.",
 	allowed_target_scope = AllowedTargetScope.AllConfiguredConnectedOrganizationUsers,
 	specific_allowed_targets = [
-	]
+	],
 	expiration = ExpirationPattern(
 		type = ExpirationPatternType.NoExpiration,
 	),
@@ -26,7 +26,7 @@ request_body = AccessPackageAssignmentPolicy(
 		enable_on_behalf_requestors_to_update_access = False,
 		enable_on_behalf_requestors_to_remove_access = False,
 		on_behalf_requestors = [
-		]
+		],
 	),
 	request_approval_settings = AccessPackageAssignmentApprovalSettings(
 		is_approval_required_for_add = True,
@@ -41,7 +41,7 @@ request_body = AccessPackageAssignmentPolicy(
 					InternalSponsors(
 						odata_type = "#microsoft.graph.internalSponsors",
 					),
-				]
+				],
 				fallback_primary_approvers = [
 					SingleUser(
 						odata_type = "#microsoft.graph.singleUser",
@@ -51,11 +51,11 @@ request_body = AccessPackageAssignmentPolicy(
 						odata_type = "#microsoft.graph.groupMembers",
 						group_id = "1623f912-5e86-41c2-af47-39dd67582b66",
 					),
-				]
+				],
 				escalation_approvers = [
-				]
+				],
 				fallback_escalation_approvers = [
-				]
+				],
 			),
 			AccessPackageApprovalStage(
 				duration_before_automatic_denial = "P14D",
@@ -63,7 +63,7 @@ request_body = AccessPackageAssignmentPolicy(
 				is_escalation_enabled = False,
 				duration_before_escalation = "PT0S",
 				primary_approvers = [
-				]
+				],
 				fallback_primary_approvers = [
 					SingleUser(
 						odata_type = "#microsoft.graph.singleUser",
@@ -73,13 +73,13 @@ request_body = AccessPackageAssignmentPolicy(
 						odata_type = "#microsoft.graph.groupMembers",
 						group_id = "1623f912-5e86-41c2-af47-39dd67582b66",
 					),
-				]
+				],
 				escalation_approvers = [
-				]
+				],
 				fallback_escalation_approvers = [
-				]
+				],
 			),
-		]
+		],
 	),
 	review_settings = AccessPackageAssignmentReviewSettings(
 		is_enabled = True,
@@ -100,7 +100,7 @@ request_body = AccessPackageAssignmentPolicy(
 					month = 0,
 					day_of_month = 0,
 					days_of_week = [
-					]
+					],
 				),
 				range = RecurrenceRange(
 					type = RecurrenceRangeType.NoEnd,
@@ -113,16 +113,16 @@ request_body = AccessPackageAssignmentPolicy(
 				odata_type = "#microsoft.graph.groupMembers",
 				group_id = "1623f912-5e86-41c2-af47-39dd67582b66",
 			),
-		]
+		],
 		fallback_reviewers = [
-		]
+		],
 	),
 	access_package = AccessPackage(
 		id = "a2e1ca1e-4e56-47d2-9daa-e2ba8d12a82b",
 	),
 )
 
-result = await graph_client.identity_governance.entitlement_management.assignment_policies.post(body = request_body)
+result = await graph_client.identity_governance.entitlement_management.assignment_policies.post(request_body)
 
 
 ```

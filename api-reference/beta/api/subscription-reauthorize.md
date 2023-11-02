@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 Depending on the resource and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
@@ -86,7 +88,7 @@ POST /subscriptions/{subscriptionsId}/reauthorize
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -141,7 +143,7 @@ POST https://graph.microsoft.com/beta/subscriptions/{subscriptionsId}/reauthoriz
 ---
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

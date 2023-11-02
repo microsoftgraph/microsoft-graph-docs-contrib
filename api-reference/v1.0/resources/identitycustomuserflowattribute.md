@@ -1,6 +1,6 @@
 ---
 title: "identityCustomUserFlowAttribute resource type"
-description: "Represents a custom user flow attribute in Azure Active Directory tenants that can be used in a self-service sign-up user flow."
+description: "Represents a custom user flow attribute in Microsoft Entra ID for workforce tenants, Microsoft Entra ID for customers tenants, and Azure AD B2C tenants that can be used in self-service sign-up user flows."
 author: "nanguil"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a custom user flow attribute in Azure Active Directory tenants that can be used in a self-service sign-up user flow. These attributes can't be modified and are read-only.
+Represents a custom user flow attribute in Microsoft Entra ID for workforce tenants, Microsoft Entra ID for customers tenants, and Azure AD B2C tenants that can be used in self-service sign-up user flows.
 
 Inherits from [identityUserFlowAttribute](../resources/identityuserflowattribute.md).
 

@@ -1,6 +1,6 @@
 ---
 title: "Get unifiedRoleManagementAlertDefinition"
-description: "Read the properties and relationships of an unifiedRoleManagementAlertDefinition object."
+description: "Read the properties and relationships of a unifiedRoleManagementAlertDefinition object."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -14,14 +14,13 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of an [unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md) object.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|RoleManagementAlert.Read.Directory, RoleManagementAlert.ReadWrite.Directory|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|RoleManagementAlert.Read.Directory, RoleManagementAlert.ReadWrite.Directory|
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "unifiedrolemanagementalertdefinition_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedrolemanagementalertdefinition-get-permissions.md)]
 
 [!INCLUDE [rbac-pim-alerts-apis-read](../includes/rbac-for-apis/rbac-pim-alerts-apis-read.md)]
 
@@ -44,7 +43,7 @@ This method supports the `$select` and `$expand` OData query parameters to help 
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -53,7 +52,7 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleM
 ## Examples
 
 ### Request
-The following is an example of a request.
+Here's an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -99,7 +98,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/ale
 ---
 
 ### Response
-The following is an example of the response
+Here's an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -120,7 +119,7 @@ Content-Type: application/json
     "description": "The percentage of global administrators is high, relative to other privileged roles. It is recommended to use least privileged roles, with just enough privileges to perform the required tasks.",
     "severityLevel": "low",
     "securityImpact": "Global administrator is the highest privileged role. If a Global Administrator is compromised, the attacker gains access to all of their permissions, which puts your whole system at risk.",
-    "mitigationSteps": "·Review the users in the list and remove any that do not absolutely need the Global Administrator role.·Assign lower privileged roles to these users instead.",
+    "mitigationSteps": "·Review the users in the list and remove any that don't absolutely need the Global Administrator role.·Assign lower privileged roles to these users instead.",
     "howToPrevent": "Assign users the least privileged role they need.",
     "isRemediatable": true,
     "isConfigurable": true
