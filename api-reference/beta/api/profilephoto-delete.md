@@ -37,9 +37,8 @@ The following tables show the least privileged permission or permissions require
 |Application      |    Not supported.           | Not supported. |
 
 > [!NOTE]
-> - There is a [known issue](/graph/known-issues#groups) associated with accessing group photos by using application permissions.
-> - To delete the photo of any user in the organization, your app must have the *User.ReadWrite.All* application permissions. Call this API using its own identity, not on behalf of a user. To learn more, see [get access without a signed-in user](/graph/auth-v2-service). Deleting the photo of the signed-in user only requires *User.ReadWrite* permissions.
-> - Deleting a user's photo using the Microsoft Graph API is currently not supported in Azure AD B2C tenants.
+> - An app with only application permissions cannot delete a group's photo.
+> - Global admin and User admin can delete the photo of any user in the organization by using delegated permissions. This operation is also supported with application permissions. Deleting the photo of any user in the organization requires *User.ReadWrite.All* permission. Deleting the photo of the signed-in user only requires *User.ReadWrite* permission.
 
 ## HTTP request
 
