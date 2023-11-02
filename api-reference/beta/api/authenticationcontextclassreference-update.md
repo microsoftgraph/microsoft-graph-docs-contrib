@@ -3,6 +3,7 @@ title: "Update authenticationContextClassReference"
 description: "Update the properties of a authenticationContextClassReference object."
 ms.localizationpriority: medium
 author: "swetha-rai"
+ms.reviewer: conditionalaccesspm
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -19,13 +20,10 @@ Update the properties of an [authenticationContextClassReference](../resources/a
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)                    |
-|:--------------------------------------|:---------------------------------------------------------------|
-|Delegated (work or school account)     | Policy.ReadWrite.ConditionalAccess |
-|Delegated (personal Microsoft account) | Not supported. |
-|Application                            | Policy.ReadWrite.ConditionalAccess |
+<!-- { "blockType": "permissions", "name": "authenticationcontextclassreference_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/authenticationcontextclassreference-update-permissions.md)]
 
 > [!NOTE]
 > This method has a [known permissions issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=13671) and might require consent to multiple permissions.

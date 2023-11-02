@@ -3,6 +3,7 @@ title: "Create conditionalAccessPolicy"
 description: "Create a new conditionalAccessPolicy."
 ms.localizationpriority: medium
 author: "lisaychuang"
+ms.reviewer: conditionalaccesspm
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -146,7 +147,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -294,7 +295,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -512,7 +513,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -717,7 +718,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

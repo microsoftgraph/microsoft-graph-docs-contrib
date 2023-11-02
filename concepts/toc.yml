@@ -84,8 +84,6 @@ items:
             displayName: monetize, charge, cost, pricing
           - name: List of metered APIs
             href: metered-api-list.md
-      - name: Microsoft Graph activity logs
-        href: microsoft-graph-activity-logs-overview.md
       - name: Versioning and support
         href: versioning-and-support.md
       - name: Terms of use
@@ -168,7 +166,7 @@ items:
               - name: App authorization
                 href: app-authorization.md
               - name: Existing customer migration
-                href: existing-customer-migration.md  
+                href: existing-customer-migration.md
           - name: Templates
             href: data-connect-templates-overview.md
           - name: Integrate with PAM
@@ -180,8 +178,8 @@ items:
             items:
               - name: Managed private endpoints
                 href: managed-private-endpoints-overview.md
-              - name: Microsoft 365 audit logs 
-                href: microsoft365-audit-logs.md  
+              - name: Microsoft 365 audit logs
+                href: microsoft365-audit-logs.md
           - name: Data Connect FAQ
             href: data-connect-faq.md
             displayName: Microsoft Graph Data Connect frequently asked questions
@@ -273,7 +271,7 @@ items:
       - name: Compliance
         href: compliance-concept-overview.md
       - name: Connecting external content
-        items:
+        items: 
           - name: Connectors overview
             href: connecting-external-content-connectors-overview.md
             displayName: Microsoft Graph connectors, connect external content
@@ -283,12 +281,14 @@ items:
           - name: Connectors API
             href: connecting-external-content-connectors-api-overview.md
             displayName: Microsoft Graph connectors
-          - name: Use Postman
+          - name: Try the API
             href: connecting-external-content-connectors-api-postman.md
             displayName: connector, connectors
           - name: Build your first custom connector
             href: connecting-external-content-build-quickstart.yml
             displayName: connectors, Microsoft Graph connectors
+          - name: Connectors samples
+            href: /samples/browse/?products=microsoft-graph-connectors-api
           - name: Build your first custom connector using SDK
             items:
               - name: Overview
@@ -469,7 +469,7 @@ items:
               - name: "Manage custom security attribute assignments"
                 href: custom-security-attributes-examples.md
                 displayName: directory, identity
-              - name: Use PIM to assign Azure AD roles
+              - name: Use PIM to assign Microsoft Entra roles
                 href: tutorial-assign-azureadroles.md
           - name: Identity and sign-in
             items:
@@ -513,7 +513,7 @@ items:
                     href: accessreviews-scope-concept.md
                   - name: Assign reviewers
                     href: accessreviews-reviewers-concept.md
-              - name: Use PIM to manage Azure AD roles and groups
+              - name: Use PIM to manage Microsoft Entra roles and groups
                 items:
                   - name: Rules in PIM
                     href: identity-governance-pim-rules-overview.md
@@ -521,10 +521,10 @@ items:
                   - name: Customize and update rules
                     href: how-to-pim-update-rules.md
                     displayName: PIM rules, privileged identity management settings
-                  - name: Assign Azure AD roles using PIM
+                  - name: Assign Microsoft Entra roles using PIM
                     href: tutorial-assign-azureadroles.md
                     displayName: PIM, privileged identity management
-                  - name: Manage security alerts for Azure AD roles
+                  - name: Manage security alerts for Microsoft Entra roles (preview)
                     href: how-to-pim-alerts.md
                     displayName: PIM alerts, privileged identity management
       - name: Industry data ETL (preview)
@@ -617,7 +617,7 @@ items:
             href: people-insights-overview.md
           - name: Customize people insights privacy (preview)
             href: insights-customize-people-insights-privacy.md
-          - name: Customize the profile card (preview)
+          - name: Customize the profile card
             href: add-properties-profilecard.md
           - name: Item insights overview
             href: item-insights-overview.md
@@ -766,12 +766,16 @@ items:
                 href: cloud-communications-watermark-meeting.md
           - name: Change notifications
             items:
-              - name: Subscribe for teams, chats, channels
+              - name: Subscribe to teams, chats, channels
                 href: teams-change-notification-in-microsoft-teams-overview.md
-              - name: Subscribe for online meetings
+              - name: Subscribe to user presence
+                href: changenotifications-for-presence.md
+              - name: Subscribe to online meetings
                 href: changenotifications-for-onlinemeeting.md
-              - name: Subscribe for virtual events
+              - name: Subscribe to virtual events
                 href: changenotifications-for-virtualevent.md
+              - name: Subscribe for call records
+                href: changenotifications-for-callrecords.md
           - name: Groups and teams
             items:
               - name: Create a group and team
@@ -836,7 +840,7 @@ items:
               - name: Permissions reference
                 displayName: Microsoft Graph permissions list
                 href: permissions-reference.md
-              - name: Azure AD built-in roles
+              - name: Microsoft Entra built-in roles
                 displayName: Microsoft Graph permissions
                 href: /azure/active-directory/roles/permissions-reference?toc=/graph/toc.json
           - name: Manage app access (CSPs)
@@ -908,7 +912,7 @@ items:
             items:
               - name: Get started with Postman
                 href: use-postman.md
-              - name: Set up delegated authentication 
+              - name: Set up delegated authentication
                 href: use-postman-with-delegated-authentication.md
               - name: Set up app-only authentication
                 href: use-postman-with-app-only-authentication.md
@@ -1059,7 +1063,7 @@ items:
                 href: toolkit/get-started/mgt-spfx.md
           - name: Build your first app
             items:
-              - name: Register an Azure AD app
+              - name: Register a Microsoft Entra app
                 href: toolkit/get-started/add-aad-app-registration.md
               - name: Build a web app (JavaScript)
                 href: toolkit/get-started/build-a-web-app.md
@@ -1166,7 +1170,7 @@ items:
           - name: Errors
             href: errors.md
             displayName: Microsoft Graph error responses and error resource types
-          - name: Azure AD service limits
+          - name: Microsoft Entra service limits
             displayName: Azure AD service limits and restrictions
             href: /azure/active-directory/enterprise-users/directory-service-limits-restrictions?toc=/graph/toc.json
       - name: API v1.0 reference

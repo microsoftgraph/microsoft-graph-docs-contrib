@@ -41,6 +41,10 @@ var requestBody = new X509CertificateAuthenticationMethodConfiguration
 			},
 		},
 	},
+	IssuerHintsConfiguration = new X509CertificateIssuerHintsConfiguration
+	{
+		State = X509CertificateIssuerHintsState.Disabled,
+	},
 	IncludeTargets = new List<AuthenticationMethodTarget>
 	{
 		new AuthenticationMethodTarget

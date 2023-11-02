@@ -1,6 +1,24 @@
 {
     "changelog": [
         {
+          "ChangeList": [
+            {
+              "Id": "931b4c70-9941-46b8-8afd-59138523c03e",
+              "ApiChange": "Property",
+              "ChangedApiName": "receivers",
+              "ChangeType": "Deletion",
+              "Description": "Removed the **receivers** property from the [notificationChannel](https://learn.microsoft.com/en-us/graph/api/resources/deviceManagement-notificationChannel?view=graph-rest-beta) resource. Going forward, use the **notificationReceivers** property instead.",
+              "Target": "notificationChannel"
+            }
+          ],
+          "Id": "931b4c70-9941-46b8-8afd-59138523c03e",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2023-10-09T10:40:03.4590295Z",
+          "WorkloadArea": "Device and app management",
+          "SubArea": "Cloud PC"
+        },
+        {
             "ChangeList": [
                 {
                     "Id": "bb31a0d7-b8c1-a268-b18d-c19ccf68f9d2",

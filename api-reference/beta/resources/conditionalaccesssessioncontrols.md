@@ -3,6 +3,7 @@ title: "conditionalAccessSessionControls resource type"
 description: "Represents a complex type of session controls that is enforced after sign-in."
 ms.localizationpriority: medium
 author: "lisaychuang"
+ms.reviewer: conditionalaccesspm
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
@@ -23,7 +24,7 @@ All the session controls inherit from [conditionalAccessSessionControl](conditio
 |applicationEnforcedRestrictions|[applicationEnforcedRestrictionsSessionControl](applicationenforcedrestrictionssessioncontrol.md)| Session control to enforce application restrictions. Only Exchange Online and Sharepoint Online support this session control. |
 |cloudAppSecurity|[cloudAppSecuritySessionControl](cloudappsecuritysessioncontrol.md)| Session control to apply cloud app security.|
 |continuousAccessEvaluation|[continuousAccessEvaluationSessionControl](../resources/continuousaccessevaluationsessioncontrol.md)|Session control for continuous access evaluation settings.|
-|disableResilienceDefaults|Boolean| Session control that determines whether it's acceptable for Azure AD to extend existing sessions based on information collected prior to an outage or not.|
+|disableResilienceDefaults|Boolean| Session control that determines whether it's acceptable for Microsoft Entra ID to extend existing sessions based on information collected prior to an outage or not.|
 |persistentBrowser|[persistentBrowserSessionControl](persistentbrowsersessioncontrol.md)| Session control to define whether to persist cookies or not. All apps should be selected for this session control to work correctly. |
 |secureSignInSession|[secureSignInSessionControl](securesigninsessioncontrol.md)|Session control to require sign in sessions to be bound to a device.|
 |signInFrequency|[signInFrequencySessionControl](signinfrequencysessioncontrol.md)| Session control to enforce signin frequency.|
@@ -71,4 +72,3 @@ Here's a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

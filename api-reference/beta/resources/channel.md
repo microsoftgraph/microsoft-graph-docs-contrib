@@ -25,6 +25,7 @@ where files are shared, and where tabs are added.
 |[List all channels](../api/team-list-allchannels.md)|[channel](../resources/channel.md) collection|Get the list of [channels](../resources/channel.md) either in a **team** or shared with a **team** (incoming channels).|
 |[Create channel](../api/channel-post.md) | [channel](channel.md) | Create a new channel by including the display name and description.|
 |[Get channel](../api/channel-get.md) | [channel](channel.md) | Read properties and relationships of the channel.|
+|[Get primary channel](../api/team-get-primarychannel.md)|[channel](channel.md)| The general channel for the team. |
 |[Update channel](../api/channel-patch.md) | [channel](channel.md) | Update properties of the channel.|
 |[Delete channel](../api/channel-delete.md) | None | Delete a channel.|
 |[Get message delta](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | Get incremental messages in a channel. |
@@ -68,7 +69,7 @@ where files are shared, and where tabs are added.
 |createdDateTime|dateTimeOffset|Read only. Timestamp at which the channel was created.|
 |moderationSettings|[channelModerationSettings](../resources/channelmoderationsettings.md)|Settings to configure channel moderation to control who can start new posts and reply to posts in that channel.|
 |summary|[channelSummary](../resources/channelsummary.md)|Contains summary information about the channel, including number of guests, members, owners, and an indicator for members from other tenants. The **summary** property will only be returned if it is specified in the `$select` clause of the [Get channel](../api/channel-get.md) method.|
-|tenantId |string | The ID of the Azure Active Directory tenant. |
+|tenantId |string | The ID of the Microsoft Entra tenant. |
 
 ### channelMembershipType values
 

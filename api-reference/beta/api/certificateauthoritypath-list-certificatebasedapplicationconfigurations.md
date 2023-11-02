@@ -14,16 +14,13 @@ Namespace: microsoft.graph
 
 Get a list of [certificateBasedApplicationConfiguration](../resources/certificatebasedapplicationconfiguration.md) objects.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|AppCertTrustConfiguration.Read.All, AppCertTrustConfiguration.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|AppCertTrustConfiguration.Read.All, AppCertTrustConfiguration.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "certificateauthoritypath_list_certificatebasedapplicationconfigurations" } -->
+[!INCLUDE [permissions-table](../includes/permissions/certificateauthoritypath-list-certificatebasedapplicationconfigurations-permissions.md)]
 
 [!INCLUDE [app-cert-config-apis](../includes/rbac-for-apis/app-cert-config-apis.md)]
 
@@ -46,7 +43,7 @@ This method supports `$select`, `$filter`, and `$expand` OData query parameters 
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -56,6 +53,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 The following is an example of a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_certificatebasedapplicationconfiguration"
@@ -65,8 +63,42 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/directory/certificateAuthorities/certificateBasedApplicationConfigurations
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-certificatebasedapplicationconfiguration-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-certificatebasedapplicationconfiguration-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-certificatebasedapplicationconfiguration-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-certificatebasedapplicationconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-certificatebasedapplicationconfiguration-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-certificatebasedapplicationconfiguration-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-certificatebasedapplicationconfiguration-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-certificatebasedapplicationconfiguration-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
