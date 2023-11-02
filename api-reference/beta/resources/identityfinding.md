@@ -17,6 +17,8 @@ An identityFinding is a finding that contains information about an identity (use
 
 Inherits from [finding](../resources/finding.md).
 
+The following resources inherit from this resource type:
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
