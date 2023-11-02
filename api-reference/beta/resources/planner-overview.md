@@ -36,7 +36,7 @@ When you [create a new plan](../api/planner-post-plans.md), set the **container*
 
 ### Container type: User
 
-Plans can also be scoped to a single User. These plans are automatically deleted when the User is deleted.
+Plans that are created for a single user are automatically deleted when the user is deleted.
 
 When you [create a new plan](../api/planner-post-plans.md), set the **container** property on a plan object with the `type` value set to `user` in order to create the Plan in the User's container.
 
