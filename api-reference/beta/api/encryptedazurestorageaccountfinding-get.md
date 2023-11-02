@@ -1,9 +1,9 @@
 ---
 title: "Get encryptedAzureStorageAccountFinding"
 description: "Read the properties and relationships of an encryptedAzureStorageAccountFinding object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,11 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /encryptedAzureStorageAccountFinding
+GET https://canary.graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings('id')/graph.encryptedAzureStorageAccountFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports none of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -58,7 +58,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/encryptedAzureStorageAccountFinding
+GET https://canary.graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings('MSxFbmNyeXB0ZWRBenVyZVN0b3JhZ2VBY2NvdW50RmluZGluZywzMzMwMQ')/graph.encryptedAzureStorageAccountFinding
 ```
 
 
@@ -76,12 +76,23 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.encryptedAzureStorageAccountFinding",
-    "id": "713b8da8-bcc0-c6cb-26ca-a90e1c721275",
-    "createdDateTime": "String (timestamp)",
-    "encryptionManagedBy": "String"
-  }
+    "@odata.context": "https://canary.graph.microsoft.com/beta/$metadata#identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.encryptedAzureStorageAccountFinding/$entity",
+    "id": "MSxFbmNyeXB0ZWRBenVyZVN0b3JhZ2VBY2NvdW50RmluZGluZywzMzMwMQ",
+    "createdDateTime": "2023-11-02T17:44:59.556749Z",
+    "encryptionManagedBy": "microsoftStorage",
+    "storageAccount": {
+        "id": "L3N1YnNjcmlwdGlvbnMvNmJkZWIzNmUtMjQxNS00ZjdlLWFjMDMtNDljNTE4ZGEwZTEwL3Jlc291cmNlR3JvdXBzL2Nsb3VkLXNoZWxsLXN0b3JhZ2Utd2VzdHVzL3Byb3ZpZGVycy9NaWNyb3NvZnQuU3RvcmFnZS9zdG9yYWdlQWNjb3VudHMvYmIwNzE4MjAyM3N0b3JhZ2VhY2NvdW50",
+        "externalId": "/subscriptions/6bdeb36e-2415-4f7e-ac03-49c518da0e10/resourceGroups/cloud-shell-storage-westus/providers/Microsoft.Storage/storageAccounts/bb07182023storageaccount",
+        "displayName": "cloud-shell-storage-westus//subscriptions/6bdeb36e-2415-4f7e-ac03-49c518da0e10/resourceGroups/cloud-shell-storage-westus/providers/Microsoft.Storage/storageAccounts/bb07182023storageaccount",
+        "resourceType": "storageAccounts",
+        "authorizationSystem": {
+            "@odata.type": "#microsoft.graph.azureAuthorizationSystem",
+            "authorizationSystemId": "6bdeb36e-2415-4f7e-ac03-49c518da0e10",
+            "authorizationSystemName": "automation-subscription-1",
+            "authorizationSystemType": "azure",
+            "id": "MSxhenVyZSw2YmRlYjM2ZS0yNDE1LTRmN2UtYWMwMy00OWM1MThkYTBlMTA"
+        }
+    }
 }
 ```
 

@@ -30,11 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.inactiveAwsResourceFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings/graph.inactiveAwsResourceFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$filter` and `$orderby` of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -48,7 +48,6 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [inactiveAwsResourceFinding](../resources/inactiveawsresourcefinding.md) objects in the response body.
 
-If unsuccessful, this method will return a '403' response if you don't have access to the authorization system or a '404' response if the LIST method filter uses a bad key.
 
 ## Examples
 
@@ -78,19 +77,44 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.inactiveAwsResourceFinding",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.inactiveAwsResourceFinding",
-      "id": "4b65ecf9-4a09-b03d-3d46-ca4dc114c5fb",
-      "createdDateTime": "String (timestamp)",
-      "permissionsCreepIndex": {
-        "@odata.type": "microsoft.graph.permissionsCreepIndex"
+      "@odata.type": "graph.inactiveAwsResourceFinding",
+      "id": "aW5hY3RpdmVSb2xlRmluZGluZzE",
+      "identity": {
+          "@odata.type": "graph.awsEc2Instance",
+          "id": "YXJuOmF3czplYzI6dXMtd2VzdC0yOjk1Njk4Nzg4NzczNTppbnN0YW5jZS9pLTBmYzU1NjFlMjFlYTcwOTcw",
+          "externalId": "arn:aws:ec2:us-west-2:956987887735:instance/i-0fc5561e21ea70970",
+          "displayName": "ck-ami-update-test",
+          "source": {
+            "@odata.type": "graph.awsSource",
+            "identityProviderType": "aws",
+            "accountId": "377596131774"
+          },
+          "authorizationSystem": {
+            "@odata.type": "graph.awsAuthorizationSystem",
+            "id": "{Id}",
+            "authorizationSystemId": "377596131774",
+            "authorizationSystemName": "cloudknox-staging",
+            "authorizationSystemType": "aws",
+          }
       },
-      "lastActiveDateTime": "String (timestamp)",
       "actionSummary": {
-        "@odata.type": "microsoft.graph.actionSummary"
+        "assigned": 736,
+        "exercised": 0,
+        "available": 10000
+      },
+      "permissionsCreepIndex": {
+        "score": 3
+      },
+      "createdDateTime": "2020-10-11T20:11:45.6711Z",
+      "identityDetails": {
+        "createdDateTime": "2020-04-12T20:34:24Z",
+        "lastActiveDateTime": "2020-10-30T03:21:05Z"
       }
-    }
+    },
+
   ]
 }
 ```

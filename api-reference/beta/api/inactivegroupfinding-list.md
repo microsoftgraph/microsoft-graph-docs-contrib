@@ -1,6 +1,6 @@
 ---
 title: "List inactiveGroupFindings"
-description: "Get a list of the inactiveGroupFinding objects and their properties."
+description: "List inactive groups in AWS, Azure and GCP environments.."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [inactiveGroupFinding](../resources/inactivegroupfinding.md) objects and their properties.
-You want to view the inactive groups in your AWS, Azure, or GCP cloud environments.
+Get a list of the [inactiveGroupFinding](../resources/inactivegroupfinding.md) objects and their properties in AWS, Azure, and GCP environments.
 
 ## Permissions
 

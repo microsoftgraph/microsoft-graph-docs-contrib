@@ -1,9 +1,9 @@
 ---
 title: "Get encryptedAwsStorageBucketFinding"
 description: "Read the properties and relationships of an encryptedAwsStorageBucketFinding object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,11 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /encryptedAwsStorageBucketFinding
+GET https://canary.graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.encryptedAwsStorageBucketFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports none of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -58,7 +58,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/encryptedAwsStorageBucketFinding
+GET https://canary.graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('MSxFbmNyeXB0ZWRBd3NTdG9yYWdlQnVja2V0RmluZGluZywyNTA4NDA')/graph.encryptedAwsStorageBucketFinding
 ```
 
 
@@ -76,12 +76,23 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.encryptedAwsStorageBucketFinding",
-    "id": "ec25aa44-b479-a335-6d7b-be032c89191f",
-    "createdDateTime": "String (timestamp)",
-    "accessibility": "String"
-  }
+    "@odata.context": "https://canary.graph.microsoft.com/beta/$metadata#identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.encryptedAwsStorageBucketFinding/$entity",
+    "id": "MSxFbmNyeXB0ZWRBd3NTdG9yYWdlQnVja2V0RmluZGluZywyNTA4NDA",
+    "createdDateTime": "2023-11-02T17:33:03.667463Z",
+    "accessibility": "crossAccount",
+    "storageBucket": {
+        "id": "YXJuOmF3czpzMzo6OmF3cy1jbG91ZHRyYWlsLWxvZ3MtMzc3NTk2MTMxNzc0LWNiMjg4YThj",
+        "externalId": "arn:aws:s3:::aws-cloudtrail-logs-377596131774-cb288a8c",
+        "displayName": "aws-cloudtrail-logs-377596131774-cb288a8c",
+        "resourceType": "bucket",
+        "authorizationSystem": {
+            "@odata.type": "#microsoft.graph.awsAuthorizationSystem",
+            "authorizationSystemId": "377596131774",
+            "authorizationSystemName": "cloudknox-staging",
+            "authorizationSystemType": "aws",
+            "id": "MSxhd3MsMzc3NTk2MTMxNzc0"
+        }
+    }
 }
 ```
 

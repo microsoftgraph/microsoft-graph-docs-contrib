@@ -1,9 +1,9 @@
 ---
 title: "List encryptedAwsStorageBucketFindings"
 description: "Get a list of the encryptedAwsStorageBucketFinding objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,11 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.encryptedAwsStorageBucketFinding not found
+GET /identityGovernance/permissionsAnalytics/aws/findings/graph.encryptedAwsStorageBucketFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$filter` and `$orderby` of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -58,7 +58,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.encryptedAwsStorageBucketFinding not found
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.encryptedAwsStorageBucketFinding
 ```
 
 
@@ -76,14 +76,30 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.encryptedAwsStorageBucketFinding",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.encryptedAwsStorageBucketFinding",
-      "id": "ec25aa44-b479-a335-6d7b-be032c89191f",
-      "createdDateTime": "String (timestamp)",
-      "accessibility": "String"
-    }
-  ]
+      "@odata.type": "graph.encryptedAwsStorageBucketFinding",
+      "id": "ZW5jcnlwdGVkQXdzU3RvcmFnZUJ1Y2tldEZpbmRpbmcxMDAwMDE",
+      "storageBucket": {
+        "@odata.type": "graph.awsAuthorizationSystemResource",
+        "id": "YXJuOmF3czpzMzo6Ojc3MjAtdGVzdGJ1Y2tldC0wOTEwLTE=",
+        "externalId": "arn:aws:s3:::7720-testbucket-0910-1",
+        "displayName": "7720-testbucket-0910-1",
+        "resourceType": "bucket",
+        "authorizationSystem": {
+          "@odata.type": "graph.awsAuthorizationSystem",
+          "id": "{Id}",
+          "authorizationSystemId": "377596131774",
+          "authorizationSystemName": "cloudknox-staging",
+          "authorizationSystemType": "aws"
+        }
+      },
+      "accessibility": "crossAccount",
+      "createdDateTime": "2020-10-11T20:11:45.671Z"
+    },
+
+    ]
 }
 ```
 

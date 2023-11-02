@@ -1,6 +1,6 @@
 ---
 title: "inactiveAwsRoleFinding resource type"
-description: "**TODO: Add Description**"
+description: ""Represents inactive AWS roles."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+"Represents inactive AWS roles.
 
 
 Inherits from [identityFinding](../resources/identityfinding.md).
@@ -23,7 +23,7 @@ Inherits from [identityFinding](../resources/identityfinding.md).
 |:---|:---|:---|
 |[List inactiveAwsRoleFindings](../api/inactiveawsrolefinding-list.md)|[inactiveAwsRoleFinding](../resources/inactiveawsrolefinding.md) collection|Get a list of the [inactiveAwsRoleFinding](../resources/inactiveawsrolefinding.md) objects and their properties.|
 |[Get inactiveAwsRoleFinding](../api/inactiveawsrolefinding-get.md)|[inactiveAwsRoleFinding](../resources/inactiveawsrolefinding.md)|Read the properties and relationships of an [inactiveAwsRoleFinding](../resources/inactiveawsrolefinding.md) object.|
-|[aggregatedSummary](../api/inactiveawsrolefinding-aggregatedsummary.md)|[permissionsAnalyticsAggregatedIdentitySummary](../resources/permissionsanalyticsaggregatedidentitysummary.md)|**TODO: Add Description**|
+|[aggregatedSummary](../api/inactiveawsrolefinding-aggregatedsummary.md)|[permissionsAnalyticsAggregatedIdentitySummary](../resources/permissionsanalyticsaggregatedidentitysummary.md)|Return the total number of an identity type and the total number of a specific finding for that identity in an authorization system.|
 
 
 ## Properties

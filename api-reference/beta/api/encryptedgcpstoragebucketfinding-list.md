@@ -30,11 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/graph.encryptedGcpStorageBucketFinding
+GET /identityGovernance/permissionsAnalytics/gcp/findings/graph.encryptedGcpStorageBucketFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$filter` and `$orderby` of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -76,14 +76,30 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/gcp/findings/graph.encryptedGcpStorageBucketFinding",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.encryptedGcpStorageBucketFinding",
-      "id": "9a3d0546-3512-a9a3-4dcf-6593848a6301",
-      "createdDateTime": "String (timestamp)",
-      "accessibility": "String",
-      "encryptionManagedBy": "String"
-    }
+      "@odata.type": "graph.encryptedGcpStorageBucketFinding",
+      "id": "ZW5jcnlwdGVkR2NwU3RvcmFnZUJ1Y2tldEZpbmRpbmcxMDAwMQ",
+      "storageBucket": {
+        "@odata.type": "graph.gcpAuthorizationSystemResource",
+        "id": "dXMuYXJ0aWZhY3RzLmNhcmJpZGUtYm9uc2FpLTIwNTAxNy5hcHBzcG90LmNvbQ==",
+        "externalId": "us.artifacts.carbide-bonsai-205017.appspot.com",
+        "displayName": "us.artifacts.carbide-bonsai-205017.appspot.com",
+        "resourceType": "buckets",
+        "authorizationSystem": {
+          "@odata.type": "graph.gcpAuthorizationSystem",
+          "id": "{Id}",
+          "authorizationSystemId": "carbide-bonsai-205017",
+          "authorizationSystemName": "ck-staging",
+          "authorizationSystemType": "gcp"
+        }
+      },
+      "accessibility": "subjectToObjectAcls",
+      "encryptionManagedBy": "google",
+      "createdDateTime": "2020-10-11T20:11:45.671Z"
+    },
+
   ]
 }
 ```

@@ -30,11 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/key/findings/graph.encryptedGcpStorageBucketFinding
+GET https://canary.graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings('id')/graph.encryptedGcpStorageBucketFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports none of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -58,7 +58,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/key/findings/graph.encryptedGcpStorageBucketFinding
+GET https://canary.graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings('MSxFbmNyeXB0ZWRHY3BTdG9yYWdlQnVja2V0RmluZGluZyw0NjM4OQ')/graph.encryptedGcpStorageBucketFinding
 ```
 
 
@@ -74,32 +74,26 @@ The following example shows the response.
 ``` http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
-  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/gcp/findings/graph.encryptedGcpStorageBucketFinding",
-  "value": [
-    {
-      "@odata.type": "graph.encryptedGcpStorageBucketFinding",
-      "id": "ZW5jcnlwdGVkR2NwU3RvcmFnZUJ1Y2tldEZpbmRpbmcxMDAwMQ",
-      "storageBucket": {
-        "@odata.type": "graph.gcpAuthorizationSystemResource",
-        "id": "dXMuYXJ0aWZhY3RzLmNhcmJpZGUtYm9uc2FpLTIwNTAxNy5hcHBzcG90LmNvbQ==",
-        "externalId": "us.artifacts.carbide-bonsai-205017.appspot.com",
-        "displayName": "us.artifacts.carbide-bonsai-205017.appspot.com",
+    "@odata.context": "https://canary.graph.microsoft.com/beta/$metadata#identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.encryptedGcpStorageBucketFinding/$entity",
+    "id": "MSxFbmNyeXB0ZWRHY3BTdG9yYWdlQnVja2V0RmluZGluZyw0NjM4OQ",
+    "createdDateTime": "2023-11-02T17:46:19.801131Z",
+    "accessibility": "private",
+    "encryptionManagedBy": "google",
+    "storageBucket": {
+        "id": "YWxlcnQtdGVzdC1uaWhhcmlrYQ",
+        "externalId": "alert-test-niharika",
+        "displayName": "alert-test-niharika",
         "resourceType": "buckets",
         "authorizationSystem": {
-          "@odata.type": "graph.gcpAuthorizationSystem",
-          "id": "{Id}",
-          "authorizationSystemId": "carbide-bonsai-205017",
-          "authorizationSystemName": "ck-staging",
-          "authorizationSystemType": "gcp"
+            "@odata.type": "#microsoft.graph.gcpAuthorizationSystem",
+            "authorizationSystemId": "carbide-bonsai-205017",
+            "authorizationSystemName": "ck-staging",
+            "authorizationSystemType": "gcp",
+            "id": "MSxnY3AsY2FyYmlkZS1ib25zYWktMjA1MDE3"
         }
-      },
-      "accessibility": "subjectToObjectAcls",
-      "encryptionManagedBy": "google",
-      "createdDateTime": "2020-10-11T20:11:45.671Z"
-    },
-
-  ]
+    }
 }
 ```
 

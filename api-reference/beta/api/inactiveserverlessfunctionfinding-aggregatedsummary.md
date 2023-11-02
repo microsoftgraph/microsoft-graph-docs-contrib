@@ -30,7 +30,7 @@ Example of an AWS request
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveServerlessFunctionFinding/aggregatedSummary(authorizationSystemIds=['{{awsAuthSystemId}}'])
+GET /identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveServerlessFunctionFinding/aggregatedSummary(authorizationSystemIds=['{{awsAuthSystemId}}'])
 ```
 
 Example of an Azure request
@@ -39,7 +39,7 @@ Example of an Azure request
 }
 -->
 ``` http
-GET /beta/identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.inactiveServerlessFunctionFinding/aggregatedSummary(authorizationSystemIds=['{{azureAuthSystemId}}'])
+GET /identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.inactiveServerlessFunctionFinding/aggregatedSummary(authorizationSystemIds=['{{azureAuthSystemId}}'])
 ```
 
 Example of a GCP request
@@ -48,7 +48,7 @@ Example of a GCP request
 }
 -->
 ``` http
-GET /beta/identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.inactiveServerlessFunctionFinding/aggregatedSummary(authorizationSystemIds=['{{gcpAuthSystemId}}'])
+GET /identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.inactiveServerlessFunctionFinding/aggregatedSummary(authorizationSystemIds=['{{gcpAuthSystemId}}'])
 ```
 
 ## Function parameters

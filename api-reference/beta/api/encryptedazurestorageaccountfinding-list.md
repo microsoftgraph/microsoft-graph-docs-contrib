@@ -1,9 +1,9 @@
 ---
 title: "List encryptedAzureStorageAccountFindings"
 description: "Get a list of the encryptedAzureStorageAccountFinding objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,10 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
+
 
 ## HTTP request
 
@@ -30,11 +31,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.encryptedAzureStorageAccountFinding not found
+GET /identityGovernance/permissionsAnalytics/azure/findings/graph.encryptedAzureStorageAccountFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$filter` and `$orderby` of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -58,7 +59,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.encryptedAzureStorageAccountFinding not found
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/graph.encryptedAzureStorageAccountFinding
 ```
 
 
@@ -76,13 +77,29 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/azure/findings/graph.encryptedAzureStorageAccountFinding",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.encryptedAzureStorageAccountFinding",
-      "id": "713b8da8-bcc0-c6cb-26ca-a90e1c721275",
-      "createdDateTime": "String (timestamp)",
-      "encryptionManagedBy": "String"
-    }
+      "@odata.type": "graph.encryptedAzureStorageAccountFinding",
+      "id": "ZW5jcnlwdGVkQXp1cmVTdG9yYWdlQWNjb3VudEZpbmRpbmcxMDAwMQ",
+      "storageAccount": {
+        "@odata.type": "graph.azureAuthorizationSystemResource",
+        "id": "L3N1YnNjcmlwdGlvbnMvZTE2MGIzNGItMmEwZi00MWY2LWFhZjMtMDljNWE5ZjQzNzY4L3Jlc291cmNlR3JvdXBzL3ByYXQtdGVzdC1jYXNzYW5kcmEtY2x1c3Rlci9wcm92aWRlcnMvTWljcm9zb2Z0LlN0b3JhZ2Uvc3RvcmFnZUFjY291bnRzL3ByYXR0ZXN0aGRpbnNoZGlzdG9yYWdl",
+        "externalId": "/subscriptions/e160b34b-2a0f-41f6-aaf3-09c5a9f43768/resourceGroups/prat-test-cassandra-cluster/providers/Microsoft.Storage/storageAccounts/prattesthdinshdistorage",
+        "displayName": "prat-test-cassandra-cluster/prattesthdinshdistorage",
+        "resourceType": "storageAccounts",
+        "authorizationSystem": {
+          "@odata.type": "graph.azureAuthorizationSystem",
+          "id": "{Id}",
+          "authorizationSystemId": "e160b34b-2a0f-41f6-aaf3-09c5a9f43768",
+          "authorizationSystemName": "ck-qa",
+          "authorizationSystemType": "azure"
+        }
+      },
+      "encryptionManagedBy": "microsoftStorage",
+      "createdDateTime": "2020-10-11T20:11:45.671Z"
+    },
+
   ]
 }
 ```

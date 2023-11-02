@@ -1,6 +1,6 @@
 ---
 title: "Get inactiveGroupFinding"
-description: "Read the properties and relationships of an inactiveGroupFinding object."
+description: "Get details about an inactive group in AWS, Azure, or GCP environments."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -19,6 +19,7 @@ You want to view details about inactive groups in AWS, Azure, and GCP authorizat
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|Not supported|
@@ -75,7 +76,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following example shows a request.
+The following example shows a request for an inactive group in a GCP project.
 <!-- {
   "blockType": "request",
   "name": "list_inactivegroupfinding"
