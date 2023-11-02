@@ -65,7 +65,9 @@ If successful, this action returns a `200 OK` response code and a Stream in the 
 
 ## Examples
 
-### Request
+### Example 1: List recommendation reports by device
+
+#### Request
 The following is an example of a request.
 
 # [HTTP](#tab/http)
@@ -77,57 +79,33 @@ The following is an example of a request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/getCloudPcRecommendationReports
 Content-Type: application/json
-Content-length: 199
+Content-length: 262
 
 {
-    "top": 25,
+    "reportName": "cloudPcUsageCategoryReports",
+    "top": 50,
     "skip": 0,
-    "filter": "(TotalUsageInHour ge 40 and TotalUsageInHour le 80)",
+    "search": "",
+    "filter": "",
     "select": [
         "CloudPcId",
         "ManagedDeviceName",
         "UserPrincipalName",
-        "TotalUsageInHour",
-        "DaysSinceLastSignIn"
+        "UsageInsight",
+        "CurrentSize",
+        "RecommendedSize",
+        "UsageInHour",
+        "DevicePerfSummary"
+    ],
+    "orderBy": [
+        "ManagedDeviceName"
     ]
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/cloudpcreportsthisgettotalaggregatedremoteconnectionreports-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/cloudpcreportsthisgettotalaggregatedremoteconnectionreports-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/cloudpcreportsthisgettotalaggregatedremoteconnectionreports-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/cloudpcreportsthisgettotalaggregatedremoteconnectionreports-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/cloudpcreportsthisgettotalaggregatedremoteconnectionreports-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/cloudpcreportsthisgettotalaggregatedremoteconnectionreports-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcreportsthisgettotalaggregatedremoteconnectionreports-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/cloudpcreportsthisgettotalaggregatedremoteconnectionreports-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
-### Response
+#### Response
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -141,7 +119,7 @@ HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
 {
-    "TotalRowCount": 1,
+    "TotalRowCount": 489,
     "Schema": [
         {
             "Column": "CloudPcId",
@@ -156,23 +134,137 @@ Content-Type: application/octet-stream
             "PropertyType": "String"
         },
         {
-            "Column": "TotalUsageInHour",
+            "Column": "UsageInsight",
+            "PropertyType": "String"
+        },
+        {
+            "Column": "CurrentSize",
+            "PropertyType": "Json"
+        },
+        {
+            "Column": "RecommendedSize",
+            "PropertyType": "Json"
+        },
+        {
+            "Column": "UsageInHour",
             "PropertyType": "Double"
         },
         {
-            "Column": "DaysSinceLastSignIn",
-            "PropertyType": "Int64"
+            "Column": "DevicePerfSummary",
+            "PropertyType": "Json"
         }
     ],
     "Values": [
         [
-            "40f9315c-5b63-4126-9f89-b7dcb145ffff",
-            "CPC-DisplayName",
-            "connie@cpccontoso.onmicrosoft.com",
-            66.36944444444444,
-            0
+            "4db3619f-be92-42a7-8c74-43fab185da6f",
+            "1MoveHost",
+            "connie_1@cpccontoso.onmicrosoft.com",
+            "Rightsized",
+            {
+                "NumvCPUs": 2,
+                "RamInGB": 8,
+                "OsDiskSizeInGB": 128
+            },
+            null,
+            0,
+            {
+                "CPUUsagePercentageP90": 0.3,
+                "RAMUsagePercentageP90": 0.4
+            }
+        ],
+        [
+            "f2ee066c-f63e-4acd-a41e-e348db71cb4d",
+            "AXFBF",
+            "connie_2@cpccontoso.onmicrosoft.com",
+            "Rightsized",
+            {
+                "NumvCPUs": 2,
+                "RamInGB": 8,
+                "OsDiskSizeInGB": 128
+            },
+            null,
+            0,
+            {
+                "CPUUsagePercentageP90": 0.2,
+                "RAMUsagePercentageP90": 0.3
+            }
         ]
     ]
 }
 ```
 
+### Example 2: get summary reports by usage insight
+
+#### Request
+The following is an example of a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "cloudpcreportsthis.getcloudpcrecommendationreports"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/getCloudPcRecommendationReports
+Content-Type: application/json
+Content-length: 262
+
+{
+    "reportName": "cloudPcUsageCategoryReports",
+    "select": [
+        "UsageInsight"
+    ],
+    "groupBy": [
+        "UsageInsight"
+    ],
+    "filter": ""
+}
+```
+
+---
+
+#### Response
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Edm.Stream"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+
+{
+    "TotalRowCount": 4,
+    "Schema": [
+        {
+            "Column": "__Count",
+            "PropertyType": "Int32"
+        },
+        {
+            "Column": "UsageInsight",
+            "PropertyType": "String"
+        }
+    ],
+    "Values": [
+        [
+            200,
+            "Rightsized"
+        ],
+        [
+            50,
+            "Undersized"
+        ],
+        [
+            30,
+            "Oversized"
+        ],
+        [
+            40,
+            "Underutilized"
+        ]
+    ]
+}
+```
