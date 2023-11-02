@@ -314,7 +314,7 @@ Content-type: application/json
 
 #### Request
 
-Here's an example of the request to get the metadata of the team photo.
+The following example shows a request to get the metadata of the team photo.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -361,7 +361,7 @@ GET https://graph.microsoft.com/v1.0/teams/172b0cce-e65d-44ce-9a49-91d9f2e8491e/
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -386,7 +386,7 @@ Content-type: application/json
 
 ### Example 5: Get the team photo's binary data
 
-Here's an example of the request to get the team photo's binary data.
+The following example shows a request to get the team photo's binary data.
 
 #### Request
 
