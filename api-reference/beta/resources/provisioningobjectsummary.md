@@ -1,6 +1,6 @@
 ---
 title: "provisioningObjectSummary resource type"
-description: "Represents an action performed by the Azure AD Provisioning service and its associated properties."
+description: "Represents an action performed by the Microsoft Entra provisioning service and its associated properties."
 ms.localizationpriority: medium
 author: "ArvindHarinder1"
 ms.prod: "identity-and-access-reports"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 >[!CAUTION]
 >The **action** and **statusInfo** properties are deprecated. Property **action** should be replaced by **provisioningAction**. Property **statusInfo** should be replaced by **provisioningStatusInfo**.
 
-Represents an action performed by the Azure AD Provisioning service and its associated properties.
+Represents an action performed by the Microsoft Entra provisioning service and its associated properties.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -38,7 +38,7 @@ Inherits from [entity](../resources/entity.md).
 |initiatedBy|[initiator](initiator.md)|Details of who initiated this provisioning. Supports `$filter` (`eq`, `contains`).|
 |jobId|String|The unique ID for the whole provisioning job. Supports `$filter` (`eq`, `contains`).|
 |modifiedProperties|[modifiedProperty](modifiedproperty.md) collection|Details of each property that was modified in this provisioning action on this object.|
-|provisioningAction|string|Indicates the activity name or the operation name. Possible values are: `create`, `update`, `delete`, `stageddelete`, `disable`, `other` and `unknownFutureValue`. For a list of activities logged, refer to Azure AD activity list. Supports `$filter` (`eq`, `contains`).|
+|provisioningAction|string|Indicates the activity name or the operation name. Possible values are: `create`, `update`, `delete`, `stageddelete`, `disable`, `other` and `unknownFutureValue`. For a list of activities logged, refer to Microsoft Entra activity list. Supports `$filter` (`eq`, `contains`).|
 |provisioningSteps|[provisioningStep](provisioningstep.md) collection|Details of each step in provisioning.|
 |provisioningStatusInfo|[provisioningStatusInfo](provisioningstatusinfo.md)|Details of provisioning status. Supports `$filter` (`eq`, `contains`) for **status**.|
 |servicePrincipal|[servicePrincipal](serviceprincipal.md) collection|Represents the service principal used for provisioning. Supports `$filter` (`eq`) for **id** and **name**.|
@@ -46,8 +46,8 @@ Inherits from [entity](../resources/entity.md).
 |sourceSystem|[provisioningSystem](provisioningsystem.md)|Details of source system of the object being provisioned. Supports `$filter` (`eq`, `contains`) for **displayName**.|
 |targetIdentity|[provisionedIdentity](provisionedidentity.md)|Details of target object being provisioned. Supports `$filter` (`eq`, `contains`) for **identityType*, **id**, and **displayName***.|
 |targetSystem|[provisioningSystem](provisioningsystem.md)|Details of target system of the object being provisioned. Supports `$filter` (`eq`, `contains`) for **displayName**.|
-|tenantId|String|Unique Azure AD tenant ID. Supports `$filter` (`eq`, `contains`).|
-|action (deprecated)|String|Indicates the activity name or the operation name (for example, Create user, Add member to group). For a list of activities logged, refer to Azure AD activity list. This is deprecated. Please use **provisioningAction** instead. Supports `$filter` (`eq`, `contains`).|
+|tenantId|String|Unique Microsoft Entra tenant ID. Supports `$filter` (`eq`, `contains`).|
+|action (deprecated)|String|Indicates the activity name or the operation name (for example, Create user, Add member to group). For a list of activities logged, refer to Microsoft Entra activity list. This is deprecated. Please use **provisioningAction** instead. Supports `$filter` (`eq`, `contains`).|
 |statusInfo (deprecated)|[statusBase](statusbase.md)|Details of provisioning status. This is deprecated. Please use **provisioningStatusInfo** instead. Supports `$filter` (`eq`, `contains`) for **status**.|
 
 ## Relationships
@@ -124,5 +124,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

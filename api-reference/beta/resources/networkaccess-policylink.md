@@ -3,7 +3,7 @@ title: "policyLink resource type"
 description: "The link to a policy associated with a specific profile."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: resourcePageType
 ---
 

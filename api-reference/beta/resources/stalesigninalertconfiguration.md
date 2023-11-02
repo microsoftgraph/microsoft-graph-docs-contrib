@@ -1,6 +1,6 @@
 ---
 title: "staleSignInAlertConfiguration resource type"
-description: "Represents an alert configuration that is triggered if there are accounts in a privileged role that haven't signed into Azure AD within a specified period."
+description: "Represents an alert configuration that is triggered if there are accounts in a privileged role that haven't signed into Microsoft Entra ID within a specified period."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an alert configuration that is triggered if there are accounts in a privileged role that haven't signed into Azure AD within a specified period. These accounts might be service or shared accounts that aren't being maintained and are vulnerable to security threats.
+Represents an alert configuration that is triggered if there are accounts in a privileged role that haven't signed into Microsoft Entra ID within a specified period. These accounts might be service or shared accounts that aren't being maintained and are vulnerable to security threats.
 
 Inherits from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).
 
@@ -25,7 +25,7 @@ Inherits from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrole
 |id|String|The identifier of the alert configuration. Inherited from [entity](../resources/entity.md).|
 |isEnabled|Boolean|`true` if the alert is enabled. Setting it to `false` disables PIM scanning the tenant to identify instances that trigger this alert. Inherited from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).|
 |scopeId|String|The identifier of the scope to which the alert is related. Only `/` is supported to represent the tenant scope. Inherited from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md). Supports `$filter` (`eq`, `ne`).|
-|scopeType|String|The type of scope where the alert is created. `DirectoryRole` is the only currently supported scope type for Azure AD roles. Inherited from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).|
+|scopeType|String|The type of scope where the alert is created. `DirectoryRole` is the only currently supported scope type for Microsoft Entra roles. Inherited from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -53,4 +53,3 @@ Here's a JSON representation of the resource.
   "duration": "String (duration)"
 }
 ```
-

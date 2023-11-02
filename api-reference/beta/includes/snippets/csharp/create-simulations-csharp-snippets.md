@@ -11,6 +11,10 @@ var graphClient = new GraphServiceClient(requestAdapter);
 var requestBody = new Simulation
 {
 	DisplayName = "Graph Simulation",
+	CreatedBy = new EmailIdentity
+	{
+		Email = "john@contoso.com",
+	},
 	DurationInDays = 3,
 	AttackTechnique = SimulationAttackTechnique.CredentialHarvesting,
 	Status = SimulationStatus.Scheduled,
