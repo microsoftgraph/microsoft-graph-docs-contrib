@@ -1,6 +1,6 @@
 ---
 title: "finding resource type"
-description: "A finding is a set of data that EPM has found to be a permissions risk."
+description: "A finding is the output of the usage data analysis performed by Permissions Management to assess risk with identities and resources."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A finding is a set of data that EPM has found to be a permissions risk.
-
+A finding is the output of the usage data analysis performed by Permissions Management to assess risk with identities and resources.
 
 Inherits from [entity](../resources/entity.md).
 
