@@ -989,6 +989,30 @@ items:
                     href: api/application-delete-owners.md
               - name: Policies
                 items:
+                  - name: Remote desktop security configuration policy
+                    href: resources/remotedesktopsecurityconfiguration.md
+                    items:
+                      - name: Create
+                        href: api/serviceprincipal-post-remotedesktopsecurityconfiguration.md
+                      - name: Get
+                        href: api/remotedesktopsecurityconfiguration-get.md
+                      - name: Update
+                        href: api/remotedesktopsecurityconfiguration-update.md
+                      - name: Delete
+                        href: api/serviceprincipal-delete-remotedesktopsecurityconfiguration.md
+                      - name: Target device groups
+                        href: resources/targetdevicegroup.md
+                        items:
+                          - name: List
+                            href: api/remotedesktopsecurityconfiguration-list-targetdevicegroups.md
+                          - name: Create
+                            href: api/remotedesktopsecurityconfiguration-post-targetdevicegroups.md
+                          - name: Get
+                            href: api/targetdevicegroup-get.md
+                          - name: Update
+                            href: api/targetdevicegroup-update.md
+                          - name: Delete
+                            href: api/remotedesktopsecurityconfiguration-delete-targetdevicegroups.md
                   - name: Token issuance policy
                     href: resources/tokenissuancepolicy.md
                     items:
@@ -7288,6 +7312,25 @@ items:
                 href: resources/person.md
               - name: List people
                 href: api/user-list-people.md
+          - name: People admin settings
+            href: resources/peopleadminsettings.md
+            items:
+              - name: Get
+                href: api/peopleadminsettings-get.md
+              - name: Profile card customization
+                items:
+                  - name: Profile card property
+                    href: resources/profilecardproperty.md
+                  - name: List
+                    href: api/peopleadminsettings-list-profilecardproperties.md
+                  - name: Create
+                    href: api/peopleadminsettings-post-profilecardproperties.md
+                  - name: Get
+                    href: api/profilecardproperty-get.md
+                  - name: Update
+                    href: api/profilecardproperty-update.md
+                  - name: Delete
+                    href: api/profilecardproperty-delete.md
           - name: Insights
             items:
               - name: Office Graph insights

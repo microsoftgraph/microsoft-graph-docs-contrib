@@ -2,6 +2,7 @@
 title: "List resourceNamespaces"
 description: "Get a list of the unifiedRbacResourceNamespace objects and their properties."
 author: "DougKirschner"
+ms.reviewer: msodsrbac
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType

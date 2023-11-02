@@ -3,6 +3,7 @@ title: "internalDomainFederation resource type"
 description: "Represents configurations of the domains in a tenant that are federated with Azure AD."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
+ms.custom: has-azure-ad-ps-ref
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
