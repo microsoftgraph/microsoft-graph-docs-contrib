@@ -6,10 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-result = await graph_client.directory.federation_configurations.by_federation_configuration_id('identityProviderBase-id').get()
+result = await graph_client.directory.federation_configurations.by_identity_provider_base_id('identityProviderBase-id').get()
 
 
 ```

@@ -50,13 +50,13 @@ It includes the following capabilities:
 
     The agent also detects duplicate items that arise from data sources that have linked items (like websites) and skips crawling these items.
 
-- **Identity mapping**: The connector agent enables the stamping of Access Control Lists (ACLs) on your data to enable security trimming. You can enable security trimming based on Azure Active Directory (Azure AD) or ACLs from your data source.
+- **Identity mapping**: The connector agent enables the stamping of Access Control Lists (ACLs) on your data to enable security trimming. You can enable security trimming based on Microsoft Entra ID or ACLs from your data source.
 
 - **Microsoft Graph ingestion**: The agent ingests the data into Microsoft Graph after receiving it from your custom connector.
 
 >[!Note]
 > The following capabilities are not currently available:
-> - Microsoft Graph-based data source traversal during crawls; for example, traversing through folder structures.
+> - Graph-based data source traversal during crawls; for example, traversing through folder structures.
 > - The ability to manage search permissions based on access control from your data source.
 
 You can get started in C# with our sample connector or in other supported languages using the contracts from the [Microsoft Graph connectors SDK page in GitHub](https://github.com/microsoftgraph/msgraph-connectors-sdk).

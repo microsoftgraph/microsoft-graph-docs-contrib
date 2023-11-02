@@ -48,7 +48,7 @@ conceptualContent:
       links:
         - url: ./azuread-identity-access-management-concept-overview.md
           itemType: overview
-          text: Use Azure AD methods to manage access and authenticate users.
+          text: Use Microsoft Entra methods to manage access and authenticate users.
     - title: Security
       links:
         - url: ./security-concept-overview.md

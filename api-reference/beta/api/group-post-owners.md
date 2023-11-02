@@ -21,13 +21,10 @@ Add a user or service principal to a Microsoft 365 or security group's owners. T
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)  |
-| :------------------------------------- | :------------------------------------------- |
-| Delegated (work or school account)     | Group.ReadWrite.All, Directory.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported.                               |
-| Application                            | Group.ReadWrite.All, Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "group_post_owners" } -->
+[!INCLUDE [permissions-table](../includes/permissions/group-post-owners-permissions.md)]
 
 ## HTTP request
 
@@ -50,7 +47,7 @@ In the request body, supply a JSON representation with the **@odata.id** of a [u
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body. This method returns a `400 Bad Request` response code when the object is already a member of the group. This method returns a `404 Not Found` response code when the object being added doesn't exist.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body. This method returns a `400 Bad Request` response code when the object is already a member of the group. This method returns a `404 Not Found` response code when the object being added doesn't exist.
 
 ## Example
 
@@ -112,7 +109,7 @@ In the request body, supply a JSON representation with the **@odata.id** of a [u
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

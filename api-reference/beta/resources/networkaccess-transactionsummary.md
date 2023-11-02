@@ -3,7 +3,7 @@ title: "transactionSummary resource type"
 description: "A summary for network transactions traffic."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: resourcePageType
 ---
 

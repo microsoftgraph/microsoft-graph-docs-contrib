@@ -13,7 +13,7 @@ ms.date: 07/25/2023
 
 # Grant or revoke API permissions programmatically
 
-When you grant API permissions to a client app in Azure Active Directory (Azure AD), the permission grants are recorded as objects that can be accessed, updated, or deleted like your data. Using Microsoft Graph to directly create permission grants is a programmatic alternative to [interactive consent](/azure/active-directory/manage-apps/consent-and-permissions-overview) and can be useful for automation scenarios, bulk management, or other custom operations in your organization.
+When you grant API permissions to a client app in Microsoft Entra ID, the permission grants are recorded as objects that can be accessed, updated, or deleted like your data. Using Microsoft Graph to directly create permission grants is a programmatic alternative to [interactive consent](/azure/active-directory/manage-apps/consent-and-permissions-overview) and can be useful for automation scenarios, bulk management, or other custom operations in your organization.
 
 <!-- start the grant-application-permissions zone -->
 ::: zone pivot="grant-application-permissions"
@@ -27,7 +27,7 @@ In this guide, you'll learn how to grant and revoke app roles for an app using M
 
 To complete these instructions, you need the following resources and privileges:
 
-- A working Azure AD tenant.
+- A working Microsoft Entra tenant.
 - You'll run the requests in this article as a user. You must complete the following steps:
     - Sign in to an app such as [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) or [Postman](/graph/use-postman) as a user with privileges to create applications in the tenant.
     - In the app you've signed in to, consent to the *Application.Read.All* and *AppRoleAssignment.ReadWrite.All* delegated permissions on behalf of the signed-in user. You don't need to consent on behalf of your organization.
@@ -361,7 +361,7 @@ You've learned how to manage app role grants for a service principal. This metho
 
 ## See also
 
-+ [Tutorial: Grant app roles in Azure AD using Microsoft Graph PowerShell](/powershell/microsoftgraph/tutorial-grant-app-only-api-permissions)
++ [Tutorial: Grant app roles in Microsoft Entra ID using Microsoft Graph PowerShell](/powershell/microsoftgraph/tutorial-grant-app-only-api-permissions)
 + [appRoleAssignment resource type](/graph/api/resources/approleassignment)
 
 ::: zone-end
@@ -380,7 +380,7 @@ In this guide, you'll learn how to grant and revoke delegated permissions for an
 
 To complete these instructions, you need the following resources and privileges:
 
-- A working Azure AD tenant.
+- A working Microsoft Entra tenant.
 - You'll run the requests in this article as a user. You must complete the following steps:
     - Sign in to an app such as [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) or [Postman](/graph/use-postman) as a user with privileges to create applications in the tenant.
     - In the app you've signed in to, consent to the *Application.Read.All*, *DelegatedPermissionGrant.ReadWrite.All* delegated permissions on behalf of the signed-in user. You don't need to consent on behalf of your organization.
@@ -808,7 +808,7 @@ You've granted delegated permissions (or scopes) to a service principal. This me
 
 ## See also
 
-- [Tutorial: Grant delegated permissions in Azure AD using Microsoft Graph PowerShell](/powershell/microsoftgraph/tutorial-grant-delegated-api-permissions)
+- [Tutorial: Grant delegated permissions in Microsoft Entra ID using Microsoft Graph PowerShell](/powershell/microsoftgraph/tutorial-grant-delegated-api-permissions)
 - [oAuth2PermissionGrant resource type](/graph/api/resources/oauth2permissiongrant)
 
 ::: zone-end

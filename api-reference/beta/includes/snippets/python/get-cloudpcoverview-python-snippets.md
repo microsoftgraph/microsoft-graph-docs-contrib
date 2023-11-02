@@ -6,10 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-result = await graph_client.tenant_relationships.managed_tenants.cloud_pc_overview.by_cloud_pc_overview_id('cloudPcOverview-tenantId').get()
+result = await graph_client.tenant_relationships.managed_tenants.cloud_pcs_overview.by_cloud_pc_overview_tenant_id('cloudPcOverview-tenantId').get()
 
 
 ```

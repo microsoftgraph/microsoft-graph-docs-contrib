@@ -14,6 +14,7 @@ const authenticationMethodsPolicy = {
   registrationEnforcement: {
     authenticationMethodsRegistrationCampaign: {
         snoozeDurationInDays: 1,
+        enforceRegistrationAfterAllowedSnoozes: true,
         state: 'enabled',
         excludeTargets: [],
         includeTargets: [

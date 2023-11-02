@@ -25,13 +25,10 @@ Specify the desired **whoisRecord** in one of the following two ways:
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | ThreatIntelligence.Read.All                 |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | ThreatIntelligence.Read.All                 |
+<!-- { "blockType": "permissions", "name": "security_whoisrecord_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-whoisrecord-get-permissions.md)]
 
 ## HTTP request
 
@@ -66,7 +63,7 @@ This method supports the `$select` OData query parameter to help customize the r
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -92,42 +89,42 @@ GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/contoso.c
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-host-whois-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-whois-for-host-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-host-whois-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/get-whois-for-host-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-host-whois-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/get-whois-for-host-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-host-whois-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-whois-for-host-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-host-whois-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-whois-for-host-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-host-whois-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/get-whois-for-host-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-host-whois-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-whois-for-host-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-host-whois-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/get-whois-for-host-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -321,7 +318,7 @@ GET https://graph.microsoft.com/beta/security/threatIntelligence/whoisRecords/Y2
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

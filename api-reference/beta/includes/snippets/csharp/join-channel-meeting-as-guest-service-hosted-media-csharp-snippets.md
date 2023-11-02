@@ -21,7 +21,7 @@ var requestBody = new Call
 			AdditionalData = new Dictionary<string, object>
 			{
 				{
-					"guest" , new 
+					"guest" , new Identity
 					{
 						OdataType = "#microsoft.graph.identity",
 						DisplayName = "Guest User",
