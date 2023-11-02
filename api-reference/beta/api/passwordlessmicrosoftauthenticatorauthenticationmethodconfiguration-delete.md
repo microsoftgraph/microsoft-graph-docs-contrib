@@ -2,6 +2,7 @@
 title: "Delete passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration"
 description: "Delete a passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration object."
 author: "mjsantani"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
