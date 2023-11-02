@@ -3,6 +3,7 @@ title: "Get unifiedRoleAssignment"
 description: "Read the properties and relationships of a unifiedRoleAssignment object."
 ms.localizationpriority: medium
 author: "DougKirschner"
+ms.reviewer: msodsrbac
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---

@@ -481,13 +481,13 @@ The following is an example of a request.
   "sampleKeys": ["ece6f0a1-7ca4-498b-be79-edf6c8fc4d82", "19%3ALpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81%40thread.tacv2"]
 } -->
 ```http
-POST https://graph.microsoft.com/beta/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/channels/19%3ALpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81%40thread.tacv2/members
+POST https://graph.microsoft.com/v1.0/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/channels/19%3ALpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81%40thread.tacv2/members
 Content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
     "roles": [],
-    "user@odata.bind": "https://graph.microsoft.com/beta/users('jacob@contoso.com')"
+    "user@odata.bind": "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')"
 }
 ```
 

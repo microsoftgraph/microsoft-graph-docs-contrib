@@ -3,6 +3,7 @@ title: "Get unifiedRoleAssignmentMultiple"
 description: "Retrieve the properties and relationships of a unifiedRoleAssignmentMultiple object."
 ms.localizationpriority: medium
 author: "DougKirschner"
+ms.reviewer: msodsrbac
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---

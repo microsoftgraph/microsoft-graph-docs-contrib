@@ -3,6 +3,7 @@ title: "Delete authenticationContextClassReference"
 description: "Delete an authenticationContextClassReference object that's not published or used by a conditional access policy."
 ms.localizationpriority: medium
 author: "swetha-rai"
+ms.reviewer: conditionalaccesspm
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
