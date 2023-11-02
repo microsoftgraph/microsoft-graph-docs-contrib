@@ -33,11 +33,30 @@ Inherits from [finding](../resources/finding.md).
 |id|String|Inherited from [entity](../resources/entity.md).|
 |permissionsCreepIndex|[permissionsCreepIndex](../resources/permissionscreepindex.md)|Assigns an index based on an identities excessive permissions that is classified into three buckets: 0-33: low, 34-66: medium, 67-100: high. This property and its values are a snapshot as of when the finding was created and may not reflect the current values for the group identity|
 
+## Supported query patterns
+|Pattern|Syntax|Notes|
+|Property|Type|Description|
+|:---|:---|:---|
+|Server-side pagination|@odata.nextLink|Will use EntityFramework MaxPageSize pagination with size 100|
+|Filter|/?$filter=ec2Instance/authorizationSystem/authorizationSystemId IN ('{id1}', '{id2}',)|filters by authorization systems matching a set of ids|
+|Filter|/?$filter=role/authorizationSystem/authorizationSystemId IN ('{id1}', '{id2}',)|filters by authorization systems matching a set of ids|
+|Filter|/?$filter=ec2Instance/displayName eq 'ec2Instance1'|Return all findings with AWS EC2 instance name of ec2Instance1|
+|Filter|/?$filter=ec2Instance/displayName eq 'awsRole1'|Return all findings with AWS role name of awsRole1|
+|OrderBy|/?$orderBy=ec2Instance/displayName|Sorts findings by ec2Instance name|
+|OrderBy|/?$orderBy=role/displayName|Sorts findings by role name|
+|Filter|/?$filter=permissionsCreepIndex/score gt 50|Return all findings with PCI scores greater than 50|
+|OrderBy|/?$orderBy=permissionsCreepIndex/score desc|Sorts findings by permissionsCreepIndex score in descending order|
+|Expand||the ec2Instance property is auto-expanded|
+|Expand||the role property is auto-expanded|
+
+
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
 |ec2Instance|[authorizationSystemResource](../resources/authorizationsystemresource.md)|AWS EC2 instance that is assigned using the role|
 |role|[awsRole](../resources/awsrole.md)|Represents an AWS role|
+
+
 
 ## JSON representation
 The following JSON representation shows the resource type.
