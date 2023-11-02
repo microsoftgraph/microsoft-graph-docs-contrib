@@ -27,7 +27,7 @@ Defines the fields in the X.509 certificate that map to attributes of the Micros
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.x509CertificateUserBinding"
@@ -36,7 +36,7 @@ Here's a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.x509CertificateUserBinding",
-  "priority": "Int32",
+  "priority": "Integer",
   "trustAffinityLevel": "String",
   "userProperty": "String",
   "x509CertificateField": "String"
