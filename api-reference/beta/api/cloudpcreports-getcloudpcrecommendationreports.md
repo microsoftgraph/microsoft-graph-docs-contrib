@@ -1,6 +1,6 @@
 ---
 title: "cloudPcReports: getCloudPcRecommendationReports"
-description: "Get the device recommendation related reports for CloudPCs, it can be the usage category report which categorize the cloudPC with "Undersized", "Oversized", "Rightsized", "Underutilized", and also provide the recommended SKU if current Cloud PC is not Rightsized."
+description: "Get the device recommendation related reports for CloudPCs, it can be the usage category report which categorize the cloudPC with `Undersized`, `Oversized`, `Rightsized`, `Underutilized`, and also provide the recommended SKU if current Cloud PC is not `Rightsized`."
 author: "XiaolouT"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the device recommendation related reports for CloudPCs, it can be the usage category report which categorize the cloudPC with "Undersized", "Oversized", "Rightsized", "Underutilized", and also provide the recommended SKU if current Cloud PC is not Rightsized.
+Get the device recommendation related reports for CloudPCs, it can be the usage category report which categorize the cloudPC with `Undersized`, `Oversized`, `Rightsized`, `Underutilized`, and also provide the recommended SKU if current Cloud PC is not `Rightsized`.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -48,7 +48,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-| reportName | String            | Specifies the report 
+| reportName | String            | Specifies the report name, now only suports  `cloudPcUsageCategoryReports`
 |filter|String|OData filter syntax. Supported filters include `and`, `or`, `lt`, `le`, `gt`, `ge` and `eq`.|
 |select|String collection|OData select syntax. Represents the selected columns of the reports. |
 |search|String|Specifies a string to search|

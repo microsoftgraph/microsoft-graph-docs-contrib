@@ -30,6 +30,8 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 |[getFrontlineReport](../api/cloudpcreports-getfrontlinereport.md)|Stream| Get Frontline Cloud PC license usage reports, such as **servicePlanId**, **licenseCount**, and **claimedLicenseCount**, for real-time, 7 days, or 28 days trend.|
 |[getTotalAggregatedRemoteConnectionReports](../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md)|Stream|Get the total aggregated remote connection reports, like usage and **daysSinceLastUse**, in a given period.|
 |[getRawRemoteConnectionReports](../api/cloudpcreports-getrawremoteconnectionreports.md)|Stream|Get the raw real-time remote connection report for a Cloud PC without any calculation or aggregation.|
+|[getCloudPcRecommendationReports](../api/cloudpcreports-getcloudpcrecommendationreports.md)|Stream|Get the device recommendation related reports for Cloud PCs, it can be the usage category report which categorize the Cloud PC with `Undersized`, `Oversized`, `Rightsized`, `Underutilized`
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
