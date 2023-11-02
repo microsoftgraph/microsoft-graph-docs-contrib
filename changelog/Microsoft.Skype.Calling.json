@@ -3,6 +3,80 @@
     {
       "ChangeList": [
         {
+          "Id": "37ec87f8-9280-4f65-9c36-aeb28936a598",
+          "ApiChange": "Property",
+          "ChangedApiName": "profilePhoto",
+          "ChangeType": "Addition",
+          "Description": "Added the `profilePhoto` property to the [virtualEventPresenter](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventPresenter?view=graph-rest-beta) resource.",
+          "Target": "virtualEventPresenter"
+        },
+        {
+          "Id": "37ec87f8-9280-4f65-9c36-aeb28936a598",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sessions",
+          "ChangeType": "Addition",
+          "Description": "Added the **sessions** relationship to the [virtualEventPresenter](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventPresenter?view=graph-rest-beta) resource.",
+          "Target": "virtualEventPresenter"
+        },
+        {
+          "Id": "37ec87f8-9280-4f65-9c36-aeb28936a598",
+          "ApiChange": "Resource",
+          "ChangedApiName": "presenters",
+          "ChangeType": "Addition",
+          "Description": "Added the **presenters** relationship to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-beta) resource.",
+          "Target": "virtualEventSession"
+        },
+        {
+          "Id": "37ec87f8-9280-4f65-9c36-aeb28936a598",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualEventTownhall",
+          "ChangeType": "Addition",
+          "Description": "Added the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventTownhall?view=graph-rest-beta) resource",
+          "Target": "virtualEventTownhall"
+        },
+        {
+          "Id": "37ec87f8-9280-4f65-9c36-aeb28936a598",
+          "ApiChange": "Method",
+          "ChangedApiName": "cancel",
+          "ChangeType": "Addition",
+          "Description": "Added the [cancel](https://learn.microsoft.com/en-us/graph/api/virtualEvent?view=graph-rest-beta) method to the [virtualEvent](https://learn.microsoft.com/en-us/graph/api/virtualEvent?view=graph-rest-beta) resource.",
+          "Target": "virtualEvent"
+        },
+        {
+          "Id": "37ec87f8-9280-4f65-9c36-aeb28936a598",
+          "ApiChange": "Method",
+          "ChangedApiName": "publish",
+          "ChangeType": "Addition",
+          "Description": "Added the [publish](https://learn.microsoft.com/en-us/graph/api/virtualEvent?view=graph-rest-beta) method to the [virtualEvent](https://learn.microsoft.com/en-us/graph/api/virtualEvent?view=graph-rest-beta) resource.",
+          "Target": "virtualEvent"
+        },
+        {
+          "Id": "37ec87f8-9280-4f65-9c36-aeb28936a598",
+          "ApiChange": "Method",
+          "ChangedApiName": "getByUserIdAndRole",
+          "ChangeType": "Addition",
+          "Description": "Added the [getByUserIdAndRole](https://learn.microsoft.com/en-us/graph/api/virtualEventTownhall?view=graph-rest-beta) method to the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/api/virtualEventTownhall?view=graph-rest-beta) resource.",
+          "Target": "virtualEventTownhall"
+        },
+        {
+          "Id": "37ec87f8-9280-4f65-9c36-aeb28936a598",
+          "ApiChange": "Method",
+          "ChangedApiName": "getByUserRole",
+          "ChangeType": "Addition",
+          "Description": "Added the [getByUserRole](https://learn.microsoft.com/en-us/graph/api/virtualEventTownhall?view=graph-rest-beta) method to the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/api/virtualEventTownhall?view=graph-rest-beta) resource.",
+          "Target": "virtualEventTownhall"
+        }
+      ],
+      "Id": "37ec87f8-9280-4f65-9c36-aeb28936a598",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-11-03T00:00:00Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "c1808556-a3ee-4258-a706-e1dc6ab234bf",
           "ApiChange": "Enum type",
           "ChangedApiName": "endpointType",
