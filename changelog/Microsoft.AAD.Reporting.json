@@ -2763,6 +2763,80 @@
       "CreatedDateTime": "2023-08-31T19:58:45.348003Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "dbe9e6bd-57ef-430e-b9a6-3669472052da",
+          "ApiChange": "Resource",
+          "ChangedApiName": "serviceActivityValueMetric",
+          "ChangeType": "Addition",
+          "Description": "Added the [serviceActivityValueMetric](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivityValueMetric?view=graph-rest-beta) resource type.",
+          "Target": "serviceActivityValueMetric"
+        },
+        {
+          "Id": "dbe9e6bd-57ef-430e-b9a6-3669472052da",
+          "ApiChange": "Resource",
+          "ChangedApiName": "serviceActivity",
+          "ChangeType": "Addition",
+          "Description": "Added the **serviceActivity** relationship to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "dbe9e6bd-57ef-430e-b9a6-3669472052da",
+          "ApiChange": "Resource",
+          "ChangedApiName": "serviceActivity",
+          "ChangeType": "Addition",
+          "Description": "Added the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource",
+          "Target": "serviceActivity"
+        },
+        {
+          "Id": "dbe9e6bd-57ef-430e-b9a6-3669472052da",
+          "ApiChange": "Method",
+          "ChangedApiName": "getMetricsForConditionalAccessCompliantDevicesSignInSuccess",
+          "ChangeType": "Addition",
+          "Description": "Added the [getMetricsForConditionalAccessCompliantDevicesSignInSuccess](https://learn.microsoft.com/en-us/graph/api/getMetricsForConditionalAccessCompliantDevicesSignInSuccess?view=graph-rest-beta) method to the [getMetricsForConditionalAccessCompliantDevicesSignInSuccess](https://learn.microsoft.com/en-us/graph/api/getMetricsForConditionalAccessCompliantDevicesSignInSuccess?view=graph-rest-beta) resource.",
+          "Target": "getMetricsForConditionalAccessCompliantDevicesSignInSuccess"
+        },
+        {
+          "Id": "dbe9e6bd-57ef-430e-b9a6-3669472052da",
+          "ApiChange": "Method",
+          "ChangedApiName": "getMetricsForConditionalAccessManagedDevicesSignInSuccess",
+          "ChangeType": "Addition",
+          "Description": "Added the [getMetricsForConditionalAccessManagedDevicesSignInSuccess](https://learn.microsoft.com/en-us/graph/api/getMetricsForConditionalAccessManagedDevicesSignInSuccess?view=graph-rest-beta) method to the [getMetricsForConditionalAccessManagedDevicesSignInSuccess](https://learn.microsoft.com/en-us/graph/api/getMetricsForConditionalAccessManagedDevicesSignInSuccess?view=graph-rest-beta) resource.",
+          "Target": "getMetricsForConditionalAccessManagedDevicesSignInSuccess"
+        },
+        {
+          "Id": "dbe9e6bd-57ef-430e-b9a6-3669472052da",
+          "ApiChange": "Method",
+          "ChangedApiName": "getMetricsForMfaSignInFailure",
+          "ChangeType": "Addition",
+          "Description": "Added the [getMetricsForMfaSignInFailure](https://learn.microsoft.com/en-us/graph/api/getMetricsForMfaSignInFailure?view=graph-rest-beta) method to the [getMetricsForMfaSignInFailure](https://learn.microsoft.com/en-us/graph/api/getMetricsForMfaSignInFailure?view=graph-rest-beta) resource.",
+          "Target": "getMetricsForMfaSignInFailure"
+        },
+        {
+          "Id": "dbe9e6bd-57ef-430e-b9a6-3669472052da",
+          "ApiChange": "Method",
+          "ChangedApiName": "getMetricsForMfaSignInSuccess",
+          "ChangeType": "Addition",
+          "Description": "Added the [getMetricsForMfaSignInSuccess](https://learn.microsoft.com/en-us/graph/api/getMetricsForMfaSignInSuccess?view=graph-rest-beta) method to the [getMetricsForMfaSignInSuccess](https://learn.microsoft.com/en-us/graph/api/getMetricsForMfaSignInSuccess?view=graph-rest-beta) resource.",
+          "Target": "getMetricsForMfaSignInSuccess"
+        },
+        {
+          "Id": "dbe9e6bd-57ef-430e-b9a6-3669472052da",
+          "ApiChange": "Method",
+          "ChangedApiName": "getMetricsForSamlSignInSuccess",
+          "ChangeType": "Addition",
+          "Description": "Added the [getMetricsForSamlSignInSuccess](https://learn.microsoft.com/en-us/graph/api/getMetricsForSamlSignInSuccess?view=graph-rest-beta) method to the [getMetricsForSamlSignInSuccess](https://learn.microsoft.com/en-us/graph/api/getMetricsForSamlSignInSuccess?view=graph-rest-beta) resource.",
+          "Target": "getMetricsForSamlSignInSuccess"
+        }
+      ],
+      "Id": "dbe9e6bd-57ef-430e-b9a6-3669472052da",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-10-24T19:42:37.8361251Z",
+      "WorkloadArea": "Reports and audit",
+      "SubArea": "Identity and access reports"
     }
   ]
 }

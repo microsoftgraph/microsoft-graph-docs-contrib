@@ -6,7 +6,7 @@ ms.reviewer: yiheguo
 ms.localizationpriority: high
 ms.prod: "applications"
 doc_type: conceptualPageType
-ms.date: 09/19/2023
+ms.date: 10/24/2023
 ---
 
 # Access Microsoft Graph activity logs (preview)
@@ -14,6 +14,12 @@ ms.date: 09/19/2023
 **Microsoft Graph activity logs** are an audit trail of all HTTP requests that the Microsoft Graph service received and processed for a tenant. Tenant administrators can enable the collection and configure downstream destinations for these logs using diagnostic settings in Azure Monitor. The logs are stored in Log Analytics for analysis, and you can export them to Azure Storage for long-term storage, or stream with Azure Event Hubs to external SIEM tools for alerting, analysis, or archival.
 
 All logs for API requests made from line of business applications, API clients, SDKs, and by Microsoft applications like Outlook, Microsoft Teams, or the Microsoft Entra admin center are available.
+
+This service is available in the following [national cloud deployments](/graph/deployments).
+
+| Global service     | US Government L4 | US Government L5 (DOD) | China operated by 21Vianet |
+|--------------------|------------------|------------------------|----------------------------|
+| :white_check_mark: | :x:              | :x:                    | :x:                        |
 
 ## Prerequisites
 
@@ -48,7 +54,7 @@ The following data relating to API requests is available for Microsoft Graph act
 
 ## Configure to receive the Microsoft Graph activity logs
 
-You can configure to stream the logs through either the Diagnostic Setting in Microsoft Entra admin center or the Azure Resource Manager APIs. For more information, see the guidance in the following articles:
+You can configure to stream the logs through the Diagnostic Setting in the Azure portal or through Azure Resource Manager APIs. For more information, see the guidance in the following articles:
 
 - [Integrate activity logs with Azure Monitor logs](/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics)
 - [Configure diagnosticSettings through the Azure Resource Manager API](/azure/templates/microsoft.insights/diagnosticsettings?pivots=deployment-language-arm-template)

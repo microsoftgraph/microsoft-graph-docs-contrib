@@ -6,17 +6,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
-query_params = TeamsAppInstallationRequestBuilder.TeamsAppInstallationRequestBuilderGetQueryParameters(
+query_params = TeamsAppInstallationItemRequestBuilder.TeamsAppInstallationItemRequestBuilderGetQueryParameters(
 		expand = ["teamsAppDefinition"],
 )
 
-request_configuration = TeamsAppInstallationRequestBuilder.TeamsAppInstallationRequestBuilderGetRequestConfiguration(
+request_configuration = TeamsAppInstallationItemRequestBuilder.TeamsAppInstallationItemRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
 )
 
-result = await graph_client.teams.by_team_id('team-id').installed_apps.by_installed_app_id('teamsAppInstallation-id').get(request_configuration = request_configuration)
+result = await graph_client.teams.by_team_id('team-id').installed_apps.by_teams_app_installation_id('teamsAppInstallation-id').get(request_configuration = request_configuration)
 
 
 ```
