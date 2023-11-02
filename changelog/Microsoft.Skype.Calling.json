@@ -3,6 +3,128 @@
     {
       "ChangeList": [
         {
+          "Id": "c998aea4-1a72-4941-8c3f-0ce4973b30fd",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "meetingAudience",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingAudience** enumeration type.",
+          "Target": "meetingAudience"
+        },
+        {
+          "Id": "c998aea4-1a72-4941-8c3f-0ce4973b30fd",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "virtualEventAttendeeRegistrationStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **virtualEventAttendeeRegistrationStatus** enumeration type.",
+          "Target": "virtualEventAttendeeRegistrationStatus"
+        },
+        {
+          "Id": "c998aea4-1a72-4941-8c3f-0ce4973b30fd",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "virtualEventStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **virtualEventStatus** enumeration type.",
+          "Target": "virtualEventStatus"
+        },
+        {
+          "Id": "c998aea4-1a72-4941-8c3f-0ce4973b30fd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualEventRegistrationQuestionAnswer",
+          "ChangeType": "Addition",
+          "Description": "Added the [virtualEventRegistrationQuestionAnswer](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistrationQuestionAnswer?view=graph-rest-1.0) resource type.",
+          "Target": "virtualEventRegistrationQuestionAnswer"
+        },
+        {
+          "Id": "c998aea4-1a72-4941-8c3f-0ce4973b30fd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onlineMeetingBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-1.0) resource",
+          "Target": "onlineMeetingBase"
+        },
+        {
+          "Id": "c998aea4-1a72-4941-8c3f-0ce4973b30fd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "solutionsRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [solutionsRoot](https://learn.microsoft.com/en-us/graph/api/resources/solutionsRoot?view=graph-rest-1.0) resource",
+          "Target": "solutionsRoot"
+        },
+        {
+          "Id": "c998aea4-1a72-4941-8c3f-0ce4973b30fd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [virtualEvent](https://learn.microsoft.com/en-us/graph/api/resources/virtualEvent?view=graph-rest-1.0) resource",
+          "Target": "virtualEvent"
+        },
+        {
+          "Id": "c998aea4-1a72-4941-8c3f-0ce4973b30fd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualEventRegistration",
+          "ChangeType": "Addition",
+          "Description": "Added the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-1.0) resource",
+          "Target": "virtualEventRegistration"
+        },
+        {
+          "Id": "c998aea4-1a72-4941-8c3f-0ce4973b30fd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualEventSession",
+          "ChangeType": "Addition",
+          "Description": "Added the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-1.0) resource",
+          "Target": "virtualEventSession"
+        },
+        {
+          "Id": "c998aea4-1a72-4941-8c3f-0ce4973b30fd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualEventsRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [virtualEventsRoot](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventsRoot?view=graph-rest-1.0) resource",
+          "Target": "virtualEventsRoot"
+        },
+        {
+          "Id": "c998aea4-1a72-4941-8c3f-0ce4973b30fd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualEventWebinar",
+          "ChangeType": "Addition",
+          "Description": "Added the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventWebinar?view=graph-rest-1.0) resource",
+          "Target": "virtualEventWebinar"
+        },
+        {
+          "Id": "c998aea4-1a72-4941-8c3f-0ce4973b30fd",
+          "ApiChange": "Method",
+          "ChangedApiName": "getByUserIdAndRole",
+          "ChangeType": "Addition",
+          "Description": "Added the [getByUserIdAndRole](https://learn.microsoft.com/en-us/graph/api/virtualEventWebinar?view=graph-rest-1.0) method to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/virtualEventWebinar?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventWebinar"
+        },
+        {
+          "Id": "c998aea4-1a72-4941-8c3f-0ce4973b30fd",
+          "ApiChange": "Method",
+          "ChangedApiName": "getByUserRole",
+          "ChangeType": "Addition",
+          "Description": "Added the [getByUserRole](https://learn.microsoft.com/en-us/graph/api/virtualEventWebinar?view=graph-rest-1.0) method to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/virtualEventWebinar?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventWebinar"
+        },
+        {
+          "Id": "c998aea4-1a72-4941-8c3f-0ce4973b30fd",
+          "ApiChange": "Singleton",
+          "ChangedApiName": "solutions",
+          "ChangeType": "Addition",
+          "Description": "Added the [solutions](https://learn.microsoft.com/en-us/?view=graph-rest-1.0) resource",
+          "Target": "defaultContainer"
+        }
+      ],
+      "Id": "c998aea4-1a72-4941-8c3f-0ce4973b30fd",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-11-03T00:00:00Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "c1808556-a3ee-4258-a706-e1dc6ab234bf",
           "ApiChange": "Enum type",
           "ChangedApiName": "endpointType",
