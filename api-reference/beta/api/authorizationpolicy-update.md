@@ -3,6 +3,7 @@ title: "Update authorizationpolicy"
 description: "Update the properties of authorizationPolicy object."
 ms.localizationpriority: medium
 author: "DougKirschner"
+ms.reviewer: msodsrbac
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
