@@ -1,9 +1,9 @@
 ---
 title: "awsExternalSystemAccessFinding resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents findings related to external AWS accounts that are able to access a given AWS account."
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents findings related to external AWS accounts that are able to access a given AWS account.
 
 Inherits from [finding](../resources/finding.md).
 
@@ -23,26 +22,21 @@ Inherits from [finding](../resources/finding.md).
 |:---|:---|:---|
 |[List awsExternalSystemAccessFindings](../api/awsexternalsystemaccessfinding-list.md)|[awsExternalSystemAccessFinding](../resources/awsexternalsystemaccessfinding.md) collection|Get a list of the [awsExternalSystemAccessFinding](../resources/awsexternalsystemaccessfinding.md) objects and their properties.|
 |[Get awsExternalSystemAccessFinding](../api/awsexternalsystemaccessfinding-get.md)|[awsExternalSystemAccessFinding](../resources/awsexternalsystemaccessfinding.md)|Read the properties and relationships of an [awsExternalSystemAccessFinding](../resources/awsexternalsystemaccessfinding.md) object.|
-|[Update awsExternalSystemAccessFinding](../api/awsexternalsystemaccessfinding-update.md)|[awsExternalSystemAccessFinding](../resources/awsexternalsystemaccessfinding.md)|Update the properties of an [awsExternalSystemAccessFinding](../resources/awsexternalsystemaccessfinding.md) object.|
-|[Delete awsExternalSystemAccessFinding](../api/awsexternalsystemaccessfinding-delete.md)|None|Delete an [awsExternalSystemAccessFinding](../resources/awsexternalsystemaccessfinding.md) object.|
-|[List authorizationSystem](../api/awsexternalsystemaccessfinding-list-affectedsystem.md)|[authorizationSystem](../resources/authorizationsystem.md) collection|Get the authorizationSystem resources from the affectedSystem navigation property.|
-|[Add authorizationSystem](../api/awsexternalsystemaccessfinding-post-affectedsystem.md)|[authorizationSystem](../resources/authorizationsystem.md)|Add affectedSystem by posting to the affectedSystem collection.|
-|[Remove authorizationSystem](../api/awsexternalsystemaccessfinding-delete-affectedsystem.md)|None|Remove an [authorizationSystem](../resources/authorizationsystem.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|accessMethods|externalSystemAccessMethods|**TODO: Add Description**.The possible values are: `direct`, `roleChaining`, `unknownFutureValue`.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [finding](../resources/finding.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|systemWithAccess|[authorizationSystemInfo](../resources/authorizationsysteminfo.md)|**TODO: Add Description**|
-|trustedIdentityCount|Int32|**TODO: Add Description**|
-|trustsAllIdentities|Boolean|**TODO: Add Description**|
+|accessMethods|externalSystemAccessMethods|Specifies if the system can be accessed directly, via role chaining, or both	.The possible values are: `direct`, `roleChaining`, `unknownFutureValue`.|
+|createdDateTime|DateTimeOffset|A date specifiying when the Finding was created Inherited from [finding](../resources/finding.md).|
+|id|String|Unique identifier for the Finding. This id will be base64 encoded using the format:{findingType}{FindingId} to ensure uniqueness Inherited from [entity](../resources/entity.md).|
+|systemWithAccess|[authorizationSystemInfo](../resources/authorizationsysteminfo.md)|*The account id for the external system that is able to access the given system.	|
+|trustedIdentityCount|Int32|The number of identities in the external system that are trusted, if not all.	|
+|trustsAllIdentities|Boolean|Flag that determines if all identities in the external system are trusted, or only a subset.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|affectedSystem|[authorizationSystem](../resources/authorizationsystem.md)|**TODO: Add Description**|
+|affectedSystem|[authorizationSystem](../resources/authorizationsystem.md)|The system that can be accessed from an external system.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

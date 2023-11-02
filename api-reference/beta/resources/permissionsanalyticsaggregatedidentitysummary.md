@@ -1,9 +1,9 @@
 ---
 title: "permissionsAnalyticsAggregatedIdentitySummary resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Return the total number of an identity type and the total number of a specific finding for that identity in an authorization system."
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+permissionsAnalyticsAggregatedIdentitySummary will return the total number of an identity (Ex: roles) and the total number of a specific finding for that identity (Ex: inactive roles) in an authorization system. These values will be aggregated when filtering for multiple authorization systems.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|findingsCount|Int32|**TODO: Add Description**|
-|totalCount|Int32|**TODO: Add Description**|
+|findingsCount|Int32|This will represent the total number of an identity that actually has a specific finding type	|
+|totalCount|Int32|This will represent the total number of an identity in an auth system that could have a specific finding type|
 
 ## Relationships
 None.
