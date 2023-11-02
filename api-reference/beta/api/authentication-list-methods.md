@@ -3,6 +3,7 @@ title: "List methods"
 description: "Retrieve a list of authentication methods registered to a user."
 ms.localizationpriority: medium
 author: "jpettere"
+ms.reviewer: intelligentaccesspm
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---

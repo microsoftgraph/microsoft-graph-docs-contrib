@@ -2,6 +2,7 @@
 title: "Get authenticationStrengthPolicy"
 description: "Read the properties and relationships of an authenticationStrengthPolicy object."
 author: "InbarckMS"
+ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
