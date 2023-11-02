@@ -2,6 +2,7 @@
 title: "Get softwareOathAuthenticationMethodConfiguration"
 description: "Read the properties and relationships of a softwareOathAuthenticationMethodConfiguration object."
 author: "jpettere"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
