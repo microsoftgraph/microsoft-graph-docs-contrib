@@ -20,7 +20,7 @@ To create the app in Microsoft Entra ID:
 1. Go to the [Microsoft Entra admin center](https://entra.microsoft.com).
 1. Expand the **Identity** menu > expand **Applications** > select **App registrations** > select the **New registration** button.
 1. Enter the name for your app; for example, `My M365 app`.
-1. For the type of [supported account types](/azure/active-directory/develop/single-and-multi-tenant-apps#who-can-sign-in-to-your-app), select **Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)**.
+1. For the type of [supported account types](/azure/active-directory/develop/single-and-multi-tenant-apps#who-can-sign-in-to-your-app), select **Accounts in any organizational directory (Any Microsoft Entra ID tenant - Multitenant)**.
 1. For the **Redirect URI** field, select **Single Page Application (SPA)**, and in the URL field, enter your redirect URL (and/or `http://localhost` if testing locally).
 1. Confirm changes by selecting the **Register** button.
 
