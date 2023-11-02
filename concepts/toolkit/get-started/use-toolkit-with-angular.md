@@ -11,7 +11,7 @@ Microsoft Graph Toolkit components work great with web frameworks like Angular i
 
 ## Add the Microsoft Graph Toolkit
 
-First, you need to enable custom elements in your Angular application by adding the `CUSTOM_ELEMENT_SCHEMA` to the `@NgModule() decorator` in `app.module.ts`. The following example shows how to do this:
+First, you need to enable custom elements in your Angular application by adding the `CUSTOM_ELEMENTS_SCHEMA` to the `@NgModule() decorator` in `app.module.ts`. The following example shows how to do this:
 
 ```TypeScript
 import { BrowserModule } from '@angular/platform-browser';

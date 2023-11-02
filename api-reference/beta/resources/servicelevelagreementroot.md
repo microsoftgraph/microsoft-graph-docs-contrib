@@ -1,7 +1,7 @@
 ---
 title: "serviceLevelAgreementRoot resource type"
 description: "A placeholder to allow for the desired URL path for Azure AD SLA attainment."
-author: "sarbar"
+author: "SarahBar"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType

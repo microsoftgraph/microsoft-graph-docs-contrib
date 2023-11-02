@@ -4,28 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = EducationClass()
-request_body.description = 'Health Level 1'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.class_code = 'Health 501'
+request_body = EducationClass(
+	description = "Health Level 1",
+	class_code = "Health 501",
+	display_name = "Health 1",
+	external_id = "11019",
+	external_name = "Health Level 1",
+	external_source = EducationExternalSource.Sis,
+	mail_nickname = "fineartschool.net",
+)
 
-request_body.display_name = 'Health 1'
-
-request_body.external_id = '11019'
-
-request_body.external_name = 'Health Level 1'
-
-request_body.externalsource(EducationExternalSource.Sis('educationexternalsource.sis'))
-
-request_body.mail_nickname = 'fineartschool.net'
-
-
-
-
-result = await client.education.classes.post(request_body = request_body)
+result = await graph_client.education.classes.post(body = request_body)
 
 
 ```

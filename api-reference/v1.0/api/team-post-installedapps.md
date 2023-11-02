@@ -13,8 +13,10 @@ Namespace: microsoft.graph
 
 Install an [app](../resources/teamsapp.md) to the specified [team](../resources/team.md).
 
-> **Note:**
-> Currently, installing an app that requires resource-specific consent permissions is not supported in the application context.
+> [!NOTE]
+> Installing an app with resource-specific consent (RSC) permissions isn't supported in an application context. If you install an app with RSC permissions, it will return the error `412 - Precondition Failed` with `Failed to execute TeamsGraphService backend request IsUserAuthorizedToGrantGroupResourceSpecificPermissionsRequest.Workload Unknown`.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -29,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 > **Note**:
 <br><sup>1</sup> These permissions cannot be used to install apps that require consent to [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions
 <br><sup>2</sup> These permissions are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission and avoid using these permissions going forward.
-  
+
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

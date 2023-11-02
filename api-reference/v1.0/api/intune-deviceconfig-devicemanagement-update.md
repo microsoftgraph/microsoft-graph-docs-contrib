@@ -107,6 +107,10 @@ Content-length: 323
 [!INCLUDE [sample-code](../includes/snippets/powershell/intune-deviceconfig-devicemanagement-update-update-devicemanagement-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/intune-deviceconfig-devicemanagement-update-update-devicemanagement-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

@@ -31,7 +31,9 @@ Represents a reply to an excel comment.
 
 ## Relationships
 
-None
+|Relationship|Type|Description|
+|:---|:---|:---|
+|task|[workbookDocumentTask](workbookdocumenttask.md)|The task associated with the comment thread.|
 
 ## JSON representation
 

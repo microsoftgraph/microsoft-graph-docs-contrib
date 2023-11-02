@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get the collection of [bookingAppointment](../resources/bookingappointment.md) objects for a [bookingBusiness](../resources/bookingbusiness.md), that occurs in the specified date range.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -39,7 +41,7 @@ In the request URL, provide the following required query parameters with values.
 |start|DateTimeOffset|The start date and time of a time range, represented in ISO 8601 format, as UTC or an offset from UTC. For example, midnight UTC on Jan 1, 2018 would look like this: '2018-01-01T00:00:00Z', and the same time in PST would look like this: '2017-12-31T16:00:00-08:00'.|
 |end|DateTimeOffset|The end date and time of a time range, represented in ISO 8601 format, as UTC or an offset from UTC. For example, 3am UTC on Jan 1, 2018 would look like this: '2018-01-01T03:00:00Z', and the same time in PST would look like this: '2017-12-31T19:00:00-08:00'.|
 
-The values of `start` and `end` are interpreted using the timezone offset specified in their corresponding values and are not impacted by the value of the `Prefer: outlook.timezone` header if present.
+The values of `start` and `end` are interpreted using the timezone offset specified in their corresponding values and aren't impacted by the value of the `Prefer: outlook.timezone` header if present.
 
 This method also supports some of the [OData query parameters](/graph/query-parameters) to help customize the response.
 
@@ -50,16 +52,16 @@ This method also supports some of the [OData query parameters](/graph/query-para
 | Authorization  | Bearer {code}|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [bookingAppointment](../resources/bookingappointment.md) objects in the response body.
 
 ## Example
-The following is an example of how to call this API.
+Here's an example  of how to call this API.
 ### Request
-The following is an example of the request.
+Here's an example  of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -73,6 +75,10 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@cont
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/bookingbusiness-getcalendarview-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/bookingbusiness-getcalendarview-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -102,7 +108,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@cont
 ---
 
 ### Response
-The following is an example of the response. 
+Here's an example  of the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
 

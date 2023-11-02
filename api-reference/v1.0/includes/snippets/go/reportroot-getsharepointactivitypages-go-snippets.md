@@ -15,7 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Reports().GetSharePointActivityPages(period='{period}')().Get(context.Background(), nil)
+period := "{period}"
+graphClient.Reports().GetSharePointActivityPagesWithPeriod(&period).Get(context.Background(), nil)
 
 
 ```

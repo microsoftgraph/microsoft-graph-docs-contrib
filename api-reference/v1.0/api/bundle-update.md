@@ -1,5 +1,5 @@
 ---
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 title: "Update bundle"
 description: "Update a bundle of driveItems"
 ms.localizationpriority: medium
@@ -18,6 +18,8 @@ You can only update the following metadata:
 * Album `coverImageItemId` (if applicable)
 
 Any other change requests will be ignored.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

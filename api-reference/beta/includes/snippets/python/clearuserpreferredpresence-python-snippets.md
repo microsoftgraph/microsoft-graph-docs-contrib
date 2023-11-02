@@ -4,14 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = ClearUserPreferredPresencePostRequestBody()
-
+graph_client = GraphServiceClient(request_adapter)
 
 
-await client.users.by_user_id('user-id').presence.clear_user_preferred_presence.post(request_body = request_body)
+await graph_client.users.by_user_id('user-id').presence.clear_user_preferred_presence.post()
 
 
 ```

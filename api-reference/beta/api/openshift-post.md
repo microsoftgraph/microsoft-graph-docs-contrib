@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Create an instance of an [openshift](../resources/openshift.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -53,7 +55,7 @@ If successful, this method returns a `200 OK` response code and the requested [o
 
 ### Request
 
-The following is an example of the request.
+Here's an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -104,6 +106,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/openshift-post-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/openshift-post-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/openshift-post-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -132,7 +138,7 @@ Content-type: application/json
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

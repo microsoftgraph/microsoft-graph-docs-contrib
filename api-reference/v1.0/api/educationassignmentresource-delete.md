@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 Delete a specific [educationAssignmentResource](../resources/educationassignmentresource.md) attached to an assignment.
 
-In general, only teachers in the class can remove a resource. However, teachers cannot remove resources marked as "distributeToStudents", after the assignment has been published to students.
+In general, only teachers in the class can remove a resource. However, teachers can't remove resources marked as "distributeToStudents", after the assignment has been published to students.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -22,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
 |Delegated (personal Microsoft account) |  Not supported.  |
-|Application | Not supported. | 
+|Application | EduAssignments.ReadWrite.All | 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -40,11 +42,11 @@ Don't supply a request body for this method.
 
 
 ## Response
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 ### Request
-The following is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -91,7 +93,7 @@ DELETE https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a85
 ---
 
 ### Response
-The following is an example of the response. 
+Here's an example of the response. 
 
 
 <!-- {

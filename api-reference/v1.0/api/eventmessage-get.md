@@ -15,6 +15,8 @@ Get the properties and relationships of the [eventMessage](../resources/eventmes
 
 Currently, this operation returns event message bodies in only HTML format.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

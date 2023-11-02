@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Add a teacher to a class.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -41,7 +43,7 @@ In the request body, supply a JSON representation of an [educationUser](../resou
 If successful, this method returns a `204 No Content` response code and an [educationClass](../resources/educationclass.md) object in the response body.
 
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -92,7 +94,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 The following is an example of the response. 
 
 <!-- Add the educationClass object to the response -->

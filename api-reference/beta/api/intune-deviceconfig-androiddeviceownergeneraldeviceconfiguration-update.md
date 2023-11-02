@@ -197,6 +197,7 @@ The following table shows the properties that are required when you create the [
 |workProfilePasswordRequireUnlock|[androidDeviceOwnerRequiredPasswordUnlock](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordunlock.md)|Indicates the timeout period after which a work profile must be unlocked using a form of strong authentication. Possible values are: `deviceDefault`, `daily`, `unkownFutureValue`.|
 |locateDeviceUserlessDisabled|Boolean|Indicates whether or not LocateDevice for userless (COSU) devices is disabled.|
 |locateDeviceLostModeEnabled|Boolean|Indicates whether or not LocateDevice for devices with lost mode (COBO, COPE) is enabled.|
+|androidDeviceOwnerDelegatedScopeAppSettings|[androidDeviceOwnerDelegatedScopeAppSetting](../resources/intune-deviceconfig-androiddeviceownerdelegatedscopeappsetting.md) collection|Specifies the list of managed apps with app details and its associated delegated scope(s). This collection can contain a maximum of 500 elements.|
 
 
 
@@ -210,7 +211,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 10171
+Content-length: 10640
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -473,7 +474,22 @@ Content-length: 10171
   "workProfilePasswordRequiredType": "required",
   "workProfilePasswordRequireUnlock": "daily",
   "locateDeviceUserlessDisabled": true,
-  "locateDeviceLostModeEnabled": true
+  "locateDeviceLostModeEnabled": true,
+  "androidDeviceOwnerDelegatedScopeAppSettings": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerDelegatedScopeAppSetting",
+      "appDetail": {
+        "@odata.type": "microsoft.graph.appListItem",
+        "name": "Name value",
+        "publisher": "Publisher value",
+        "appStoreUrl": "https://example.com/appStoreUrl/",
+        "appId": "App Id value"
+      },
+      "appScopes": [
+        "certificateInstall"
+      ]
+    }
+  ]
 }
 ```
 
@@ -482,7 +498,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10343
+Content-Length: 10812
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -748,6 +764,21 @@ Content-Length: 10343
   "workProfilePasswordRequiredType": "required",
   "workProfilePasswordRequireUnlock": "daily",
   "locateDeviceUserlessDisabled": true,
-  "locateDeviceLostModeEnabled": true
+  "locateDeviceLostModeEnabled": true,
+  "androidDeviceOwnerDelegatedScopeAppSettings": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerDelegatedScopeAppSetting",
+      "appDetail": {
+        "@odata.type": "microsoft.graph.appListItem",
+        "name": "Name value",
+        "publisher": "Publisher value",
+        "appStoreUrl": "https://example.com/appStoreUrl/",
+        "appId": "App Id value"
+      },
+      "appScopes": [
+        "certificateInstall"
+      ]
+    }
+  ]
 }
 ```

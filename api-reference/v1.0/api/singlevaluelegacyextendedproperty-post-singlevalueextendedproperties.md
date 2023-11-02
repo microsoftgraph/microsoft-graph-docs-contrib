@@ -2,7 +2,7 @@
 title: "Create single-value extended property"
 description: "Create one or more single-value extended properties in a new or existing instance of a resource. "
 ms.localizationpriority: medium
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: non-product-specific
 doc_type: apiPageType
 ---
@@ -22,7 +22,7 @@ The following user resources are supported:
 - [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md)
 
-As well as the following group resources:
+The following group resources:
 
 - group [calendar](../resources/calendar.md)
 - group [event](../resources/event.md)
@@ -30,6 +30,8 @@ As well as the following group resources:
 
 See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use
 open extensions or extended properties, and how to specify extended properties.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 Depending on the resource you're creating the extended property in and the permission type (delegated or application) you request, the permission specified in the following table is the minimum required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -51,8 +53,8 @@ You can create extended properties in a new or existing resource instance.
 
 To create one or more extended properties in a _new_ resource instance, use the same REST request as creating the
 instance, and include the properties of the new resource instance _and extended property_ in the request body.
-Note that some resources support creation in more than one way. For more information on creating these resource instances,
-see the corresponding topics for creating a [message](../resources/message.md), [mailFolder](../api/user-post-mailfolders.md),
+Some resources support creation in more than one way. For more information on creating these resource instances,
+see the corresponding articles for creating a [message](../resources/message.md), [mailFolder](../api/user-post-mailfolders.md),
 [event](../api/user-post-events.md), [calendar](../api/user-post-calendars.md),
 [contact](../api/user-post-contacts.md), [contactFolder](../api/user-post-contactfolders.md),
 [group event](../api/group-post-events.md), and [group post](../resources/post.md).
@@ -93,7 +95,7 @@ POST /groups/{id}/conversations
 To create one or more extended properties in an existing resource instance, specify the instance in the
 request, and include the extended property in the request body.
 
-**Note** You cannot create an extended property in an existing group post.
+**Note** You can't create an extended property in an existing group post.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -247,7 +249,7 @@ Content-Type: application/json
 
 #### Response
 
-A successful response is indicated by an `HTTP 201 Created` response code, and includes the new event in the response body, similar to the response from [creating just an event](../api/user-post-events.md). The response does not include any newly created extended properties.
+A successful response is indicated by an `HTTP 201 Created` response code, and includes the new event in the response body, similar to the response from [creating just an event](../api/user-post-events.md). The response doesn't include any newly created extended properties.
 
 To see the newly created extended property, [get the event expanded with the extended property](../api/singlevaluelegacyextendedproperty-get.md).
 
@@ -344,7 +346,7 @@ Content-Type: application/json
 ```
 
 ### Example 2: Create a single-value extended property for a message
-#### Request 
+#### Request
 
 The second example creates one single-value extended property for the specified existing message. That extended property is the only element in the **singleValueExtendedProperties** array. The request body includes the following for the extended property:
 - **id** specifies the property type as `String`, the GUID, and the property named `Color`.
@@ -406,7 +408,7 @@ Content-Type: application/json
 
 #### Response
 
-A successful response is indicated by an `HTTP 200 OK` response code, and includes the specified message in the response body, similar to the response from [updating a message](../api/message-update.md). The response does not include the newly created extended property.
+A successful response is indicated by an `HTTP 200 OK` response code, and includes the specified message in the response body, similar to the response from [updating a message](../api/message-update.md). The response doesn't include the newly created extended property.
 
 To see the newly created extended property, [get the message expanded with the extended property](../api/singlevaluelegacyextendedproperty-get.md).
 

@@ -2,7 +2,7 @@
 title: "kerberosSignOnSettings resource type"
 description: "Represents the kerberos settings for an on-premises application published via Application Proxy."
 ms.localizationpriority: medium
-author: "japere"
+author: "dhruvinrshah"
 ms.prod: "applications"
 doc_type: "resourcePageType"
 ---

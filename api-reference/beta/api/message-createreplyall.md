@@ -2,7 +2,7 @@
 title: "message: createReplyAll"
 description: "Create a draft to reply to all recipients of a message in either JSON or MIME format"
 ms.localizationpriority: medium
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -17,7 +17,7 @@ Create a draft to reply to the sender and all recipients of a [message](../resou
 
 When using JSON format:
 - Specify either a comment or the **body** property of the `message` parameter. Specifying both will return an HTTP 400 Bad Request error.
-- If the original message specifies a recipient in the **replyTo** property, per Internet Message Format ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), you should send the reply to the recipients in the **replyTo** and **toRecipients** properties, and not the recipients in the **from** and **toRecipients** properties. 
+- If the original message specifies a recipient in the **replyTo** property, per Internet Message Format ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), you should send the reply to the recipients in the **replyTo** and **toRecipients** properties, and not the recipients in the **from** and **toRecipients** properties.
 - You can [update](../api/message-update.md) the draft message later.
 
 When using MIME format:
@@ -27,6 +27,8 @@ When using MIME format:
 [Send](../api/message-send.md) the draft message in a subsequent operation.
 
 Alternatively, [reply-all to a message](../api/message-replyall.md) in a single action.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,7 +48,7 @@ POST /me/mailFolders/{id}/messages/{id}/createReplyAll
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyAll
 ```
 ## Request headers
-| Name       | Type | Description| 
+| Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 | Content-Type | string  | Nature of the data in the body of an entity. Required. <br/> Use `application/json` for a JSON object and `text/plain` for MIME content. |
@@ -86,20 +88,24 @@ Content-Type: application/json
 
 {
     "message":{
-      "attachments": [ 
-        { 
-          "@odata.type": "#microsoft.graph.fileAttachment", 
-          "name": "guidelines.txt", 
-          "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk=" 
-        } 
+      "attachments": [
+        {
+          "@odata.type": "#microsoft.graph.fileAttachment",
+          "name": "guidelines.txt",
+          "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
+        }
       ]
     },
-    "comment": "if the project gets approved, please take a look at the attached guidelines before you decide on the name." 
+    "comment": "if the project gets approved, please take a look at the attached guidelines before you decide on the name."
 }
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-createreplyall-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/message-createreplyall-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

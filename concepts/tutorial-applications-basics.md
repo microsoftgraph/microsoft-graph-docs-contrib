@@ -7,14 +7,14 @@ ms.reviewer: sureshja
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.prod: "applications"
-ms.date: 06/27/2023
+ms.date: 08/14/2023
 ---
 
 # Manage an Azure AD application using Microsoft Graph
 
-Your app must be registered in Azure AD before the Microsoft identity platform can authorize it to access data stored in Azure Active Directory (Azure AD) or Microsoft 365 tenants. This condition applies to apps that you develop yourself, that are owned by your organization, or that you access through an active subscription.
+Your app must be registered in Azure AD before the Microsoft identity platform can authorize it to access data stored in Azure Active Directory (Azure AD) or Microsoft 365 tenants. This condition applies to apps that you develop yourself, that your tenant owns, or that you access through an active subscription.
 
-Many settings for apps are recorded as objects that can be accessed, updated, or deleted using Microsoft Graph. In this article, you'll learn how to use Microsoft Graph to manage app and service principal objects including the properties, permissions, and role assignments.
+Many settings for apps are recorded as objects that can be accessed, updated, or deleted using Microsoft Graph. In this article, you learn how to use Microsoft Graph to manage app and service principal objects including the properties, permissions, and role assignments.
 
 ## Prerequisites
 
@@ -25,9 +25,9 @@ To complete this tutorial, you need the following resources and privileges:
 
 ## Register an application with Azure AD
 
-### Request
+The following request creates an app by specifying only the required **displayName** property.
 
-Least privilege delegated permission: `Application.ReadWrite.All`
+Least privilege delegated permission: `Application.ReadWrite.All`.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -77,95 +77,65 @@ Content-type: application/json
 
 ---
 
-### Response
+The request returns a `201 Created` response with the application object in the response body. The application is assigned an **id** that's unique for apps in the tenant, and an **appId** that's globally unique in the Azure AD ecosystem.
 
-The following code is an example of the default response that includes all the properties returned by default. The application is assigned an ID that's globally unique in the Azure AD ecosystem.
+## Create a service principal for an application
 
+Least privilege delegated permission: `Application.ReadWrite.All`.
+
+# [HTTP](#tab/http)
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.application"
-} -->
+  "blockType": "request",
+  "name": "tutorial-application-basics-create-sp"
+}-->
 ```http
-HTTP/1.1 201 Created
+POST https://graph.microsoft.com/v1.0/servicePrincipals
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applications/$entity",
-    "id": "0d0021e2-eaab-4b9f-a5ad-38c55337d63e",
-    "deletedDateTime": null,
-    "appId": "5f0f8757-988d-474c-9f85-74a6bc70dfd0",
-    "applicationTemplateId": null,
-    "disabledByMicrosoftStatus": null,
-    "createdDateTime": "2022-02-08T08:58:36.7669085Z",
-    "displayName": "My application",
-    "description": null,
-    "groupMembershipClaims": null,
-    "identifierUris": [],
-    "isDeviceOnlyAuthSupported": null,
-    "isFallbackPublicClient": null,
-    "notes": null,
-    "publisherDomain": "M365x010717.onmicrosoft.com",
-    "serviceManagementReference": null,
-    "signInAudience": "AzureADandPersonalMicrosoftAccount",
-    "tags": [],
-    "tokenEncryptionKeyId": null,
-    "defaultRedirectUri": null,
-    "certification": null,
-    "optionalClaims": null,
-    "addIns": [],
-    "api": {
-        "acceptMappedClaims": null,
-        "knownClientApplications": [],
-        "requestedAccessTokenVersion": 2,
-        "oauth2PermissionScopes": [],
-        "preAuthorizedApplications": []
-    },
-    "appRoles": [],
-    "info": {
-        "logoUrl": null,
-        "marketingUrl": null,
-        "privacyStatementUrl": null,
-        "supportUrl": null,
-        "termsOfServiceUrl": null
-    },
-    "keyCredentials": [],
-    "parentalControlSettings": {
-        "countriesBlockedForMinors": [],
-        "legalAgeGroupRule": "Allow"
-    },
-    "passwordCredentials": [],
-    "publicClient": {
-        "redirectUris": []
-    },
-    "requiredResourceAccess": [],
-    "verifiedPublisher": {
-        "displayName": null,
-        "verifiedPublisherId": null,
-        "addedDateTime": null
-    },
-    "web": {
-        "homePageUrl": null,
-        "logoutUrl": null,
-        "redirectUris": [],
-        "implicitGrantSettings": {
-            "enableAccessTokenIssuance": false,
-            "enableIdTokenIssuance": false
-        }
-    },
-    "spa": {
-        "redirectUris": []
-    }
+  "appId": "fc876dd1-6bcb-4304-b9b6-18ddf1526b62"
 }
 ```
 
-The **signInAudience** property is assigned a default value of `AzureADandPersonalMicrosoftAccount`. This configuration allows any user who is signed in with any account type, including Azure AD accounts, personal Microsoft accounts, and social media credentials, can use your app. You can change the **signInAudience** to a different scope.
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-application-basics-create-sp-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-If you created the application as a user with administrator privileges, you were automatically assigned ownership to the application. You can confirm ownership by retrieving the owners navigation property through `GET https://graph.microsoft.com/v1.0/applications/0d0021e2-eaab-4b9f-a5ad-38c55337d63e/owners`. You can also assign another user or app ownership of the application.
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-application-basics-create-sp-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-application-basics-create-sp-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-application-basics-create-sp-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-application-basics-create-sp-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-application-basics-create-sp-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-application-basics-create-sp-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-application-basics-create-sp-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+The request returns a `201 Created` response with the service principal object in the response body.
 
 ## Addressing an application or a service principal object
 
-You can address an application or a service principal by its ID or by its **appId**, where ID is referred to as *Object ID* and **appId** is refered to as *Application (client) ID* on the Azure portal. These syntaxes are supported for all HTTP CRUD operations on applications and service principals.
+You can address an application or a service principal by its ID or by its **appId**, where ID is referred to as *Object ID* and **appId** is referred to as *Application (client) ID* on the Microsoft Entra admin center. These syntaxes are supported for all HTTP CRUD operations on applications and service principals.
 
 To address an application or a service principal by its ID.
 
@@ -182,9 +152,9 @@ https://graph.microsoft.com/v1.0/servicePrincipals(appId='appId')
 
 ## Configure other basic properties for your app
 
-Least privilege delegated permission: `Application.ReadWrite.All`
+Least privilege delegated permission: `Application.ReadWrite.All`.
 
-You'll configure the following basic properties for the app.
+You configure the following basic properties for the app.
 
 + Add tags for categorization in the organization. Also, use the `HideApp` tag to hide the app from My Apps and the Microsoft 365 Launcher.
 + Add basic information including the logo, terms of service, and privacy statement.
@@ -259,7 +229,7 @@ Content-type: application/json
 
 ## Limit app sign-in to only assigned identities
 
-Least privilege delegated permission: `Application.ReadWrite.All`
+Least privilege delegated permission: `Application.ReadWrite.All`.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -310,11 +280,11 @@ PATCH https://graph.microsoft.com/v1.0/servicePrincipals/89473e09-0737-41a1-a0c3
 
 ## Assign permissions to an app
 
-While you can assign permissions to an app through the Azure portal, you also assign permissions through Microsoft Graph by updating the **requiredResourceAccess** property of the app object. You must pass in both existing and new permissions. Passing in only new permissions overwrites and removes the existing permissions that haven't yet been consented to.
+While you can assign permissions to an app through the Microsoft Entra admin center, you also assign permissions through Microsoft Graph by updating the **requiredResourceAccess** property of the app object. You must pass in both existing and new permissions. Passing in only new permissions overwrites and removes the existing permissions that haven't yet been consented to.
 
-Assigning permissions doesn't automatically grant them to the app. You must still grant admin consent using the Azure portal. To grant permissions without interactive consent, see [Grant or revoke API permissions programmatically](permissions-grant-via-msgraph.md).
+Assigning permissions doesn't automatically grant them to the app. You must still grant admin consent using the Microsoft Entra admin center. To grant permissions without interactive consent, see [Grant or revoke API permissions programmatically](permissions-grant-via-msgraph.md).
 
-Least privilege delegated permission: `Application.ReadWrite.All`
+Least privilege delegated permission: `Application.ReadWrite.All`.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -373,7 +343,7 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-application-basics-assign-permissions-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -438,7 +408,7 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-application-basics-create-serviceprincipal-approles-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -447,9 +417,9 @@ Content-Type: application/json
 
 ### Identify ownerless service principals and service principals with one owner
 
-Least privilege delegated permission: `Application.ReadWrite.All`
+Least privilege delegated permission: `Application.ReadWrite.All`.
 
-This request requires the **ConsistencyLevel** header set to `eventual` because `$count` is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+This request requires the **ConsistencyLevel** header set to `eventual` because `$count` is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
 This request also returns the count of the apps that match the filter condition.
 
@@ -500,7 +470,7 @@ ConsistencyLevel: eventual
 
 ### Assign an owner to an app
 
-Least privilege delegated permission: `Application.ReadWrite.All`
+Least privilege delegated permission: `Application.ReadWrite.All`.
 
 In the following request, `8afc02cb-4d62-4dba-b536-9f6d73e9be26` is the object ID for a user or service principal.
 
@@ -555,7 +525,7 @@ Content-Type: application/json
 
 ### Assign an owner to a service principal
 
-Least privilege delegated permission: `Application.ReadWrite.All`
+Least privilege delegated permission: `Application.ReadWrite.All`.
 
 The following request references the service principal using its **appId**. `8afc02cb-4d62-4dba-b536-9f6d73e9be26` is the object ID for a user or service principal.
 
@@ -585,7 +555,7 @@ You manage the app instance lock feature through the **servicePrincipalLockConfi
 
 #### To lock all sensitive properties of a service principal
 
-When **isEnabled** and **allProperties** is set to `true`, the other properties of the servicePrincipalLockConfiguration object are `null`. This means that all the sensitive properties of the service principal are locked.
+When **isEnabled** and **allProperties** is set to `true`, even if other properties of the servicePrincipalLockConfiguration object are `null`, then all sensitive properties of the service principal are locked.
 
 ```http
 PATCH https://graph.microsoft.com/beta/applications/a0b7f39e-3139-48aa-9397-f46fb63102f7

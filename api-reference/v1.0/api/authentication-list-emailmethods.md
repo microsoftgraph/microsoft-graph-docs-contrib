@@ -1,7 +1,7 @@
 ---
 title: "List emailMethods"
 description: "Get a list of the emailAuthenticationMethod objects for a user."
-author: "mmcla"
+author: "tilarso"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -11,6 +11,8 @@ doc_type: "apiPageType"
 Namespace: microsoft.graph
 
 Retrieve a list of a user's [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) objects and their properties. This API will return only a single object in the collection as only one email method can be set for a user.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

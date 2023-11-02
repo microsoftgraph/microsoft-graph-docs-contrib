@@ -4,28 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = Group()
-request_body.@odata_type = '#microsoft.graph.group'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.description = 'Self help community for golf'
+request_body = Group(
+	odata_type = "#microsoft.graph.group",
+	description = "Self help community for golf",
+	display_name = "Golf Assist",
+	group_types = [
+		"Unified",
+	]
+	mail_enabled = True,
+	mail_nickname = "golfassist",
+	security_enabled = False,
+)
 
-request_body.display_name = 'Golf Assist'
-
-request_body.GroupTypes(['Unified', ])
-
-request_body.mail_enabled = True
-
-request_body.mail_nickname = 'golfassist'
-
-request_body.security_enabled = False
-
-
-
-
-result = await client.administrative_units.by_administrative_unit_id('administrativeUnit-id').members.post(request_body = request_body)
+result = await graph_client.administrative_units.by_administrative_unit_id('administrativeUnit-id').members.post(body = request_body)
 
 
 ```
