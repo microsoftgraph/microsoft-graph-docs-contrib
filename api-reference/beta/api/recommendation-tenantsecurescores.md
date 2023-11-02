@@ -23,6 +23,11 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|DirectoryRecommendations.Read.All|DirectoryRecommendations.ReadWrite.All|
 
+<!-- { "blockType": "permissions", "name": "recommendation_tenantsecurescores" } -->
+[!INCLUDE [permissions-table](../includes/permissions/recommendation-tenantsecurescores-permissions.md)]
+
+[!INCLUDE [rbac-directory-recommendations-apis-read](../includes/rbac-for-apis/rbac-directory-recommendations-apis-read.md)]
+
 ## HTTP request
 
 <!-- {
@@ -58,26 +63,31 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/directory/recommendations/tenantSecureScores
 ```
 
-
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.tenantSecureScore)"
-}
--->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "microsoft.graph.tenantSecureScore"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft-ppe.com/beta/$metadata#Collection(microsoft.graph.tenantSecureScore)",
+    "value": [
+        {
+            "tenantScore": 11,
+            "tenantMaxScore": 56,
+            "createDateTime": "2023-11-01T00:00:00Z"
+        },
+        {
+            "tenantScore": 11,
+            "tenantMaxScore": 56,
+            "createDateTime": "2023-10-31T00:00:00Z"
+        },
+        {
+            "tenantScore": 11,
+            "tenantMaxScore": 56,
+            "createDateTime": "2023-10-30T00:00:00Z"
+        },
+        {
+            "tenantScore": 11,
+            "tenantMaxScore": 56,
+            "createDateTime": "2023-10-29T00:00:00Z"
+        }
+    ]
 }
 ```
-
