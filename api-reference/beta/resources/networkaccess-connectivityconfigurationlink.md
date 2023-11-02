@@ -1,6 +1,6 @@
 ---
 title: "connectivityConfigurationLink resource type"
-description: "Specifies connectivity details for device links associated with a branch, providing access within the branchConnectivityConfiguration."
+description: "Specifies connectivity details for device links associated with a branch."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies connectivity details for device links associated with a branch, providing access within the branchConnectivityConfiguration
+Specifies connectivity details for [deviceLink](../resources/networkaccess-devicelink.md) objects associated with a branch.
 
 ## Methods
 None.
@@ -23,8 +23,8 @@ None.
 |:---|:---|:---|
 |displayName|String|Specifies the name of the link.|
 |id|String|A unique identifier for each link.|
-|localConfigurations|[microsoft.graph.networkaccess.localConnectivityConfiguration](../resources/networkaccess-localconnectivityconfiguration.md) collection|Specifies configuration of Microsoft's end of the tunnel(s) for a device link.|
-|peerConfiguration|[microsoft.graph.networkaccess.peerConnectivityConfiguration](../resources/networkaccess-peerconnectivityconfiguration.md)|Specifies configuration of customer's end of the tunnel(s) for a device link.|
+|localConfigurations|[microsoft.graph.networkaccess.localConnectivityConfiguration](../resources/networkaccess-localconnectivityconfiguration.md) collection|Specifies Microsoft's end of the tunnel configuration for a device link.|
+|peerConfiguration|[microsoft.graph.networkaccess.peerConnectivityConfiguration](../resources/networkaccess-peerconnectivityconfiguration.md)|Specifies the customer's end of the tunnel configuration for a device link.|
 
 ## Relationships
 None.

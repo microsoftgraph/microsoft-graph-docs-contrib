@@ -12123,7 +12123,7 @@ items:
                         href: api/networkaccess-devicelink-update.md
                       - name: Delete
                         href: api/networkaccess-branchsite-delete-devicelinks.md
-                  - name: Connectivity Configuration
+                  - name: Connectivity configuration
                     href: resources/networkaccess-connectivityconfigurationlink.md
                     items:
                       - name: Get

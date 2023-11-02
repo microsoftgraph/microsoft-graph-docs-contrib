@@ -1,6 +1,6 @@
 ---
 title: "branchConnectivityConfiguration resource type"
-description: "BranchConnectivityConfiguration specifies how a branch's connectivity is configured."
+description: "Specifies the connectivity details of all device links associated with a branch."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -29,7 +29,7 @@ BranchConnectivityConfiguration specifies how a branch's connectivity is configu
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|links|[microsoft.graph.networkaccess.connectivityConfigurationLink](../resources/networkaccess-connectivityconfigurationlink.md) collection|List of connectivity configurations of device links link|
+|links|[microsoft.graph.networkaccess.connectivityConfigurationLink](../resources/networkaccess-connectivityconfigurationlink.md) collection|List of connectivity configurations for [deviceLink](../resources/networkaccess-devicelink.md) objects.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

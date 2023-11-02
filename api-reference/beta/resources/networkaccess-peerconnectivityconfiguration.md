@@ -1,6 +1,6 @@
 ---
 title: "peerConnectivityConfiguration resource type"
-description: "Specifies configuration of customer's end of the tunnel(s) for a device link."
+description: "Specifies the customer's end of the tunnel configuration for a device link."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
