@@ -404,7 +404,7 @@ items:
                 href: api/user-list-cloudpcs.md
               - name: Get
                 href: api/cloudpc-get.md
-              - name: Get frontline access state
+              - name: Get front line access state
                 href: api/cloudpc-getfrontlinecloudpcaccessstate.md
               - name: Get launch info
                 href: api/cloudpc-getcloudpclaunchinfo.md
@@ -10214,7 +10214,7 @@ items:
                     href: api/cloudpc-endgraceperiod.md
                   - name: Get connectivity history
                     href: api/cloudpc-getcloudpcconnectivityhistory.md
-                  - name: Get frontline access state
+                  - name: Get front line access state
                     href: api/cloudpc-getfrontlinecloudpcaccessstate.md
                   - name: Get launch info for user
                     href: api/cloudpc-getcloudpclaunchinfo.md
