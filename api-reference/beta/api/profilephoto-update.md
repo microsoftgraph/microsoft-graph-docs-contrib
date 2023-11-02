@@ -118,7 +118,7 @@ If successful, this method returns a `200 OK` response code or a `204 No Content
 ### Example 1: Update the profile photo of a user
 #### Request
 
-Here's an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -153,7 +153,7 @@ Binary data for the image
 
 #### Response
 
-Here's an example of the response.
+The following example shows a response.
 
 <!-- {
   "blockType": "response"
@@ -166,7 +166,7 @@ HTTP/1.1 200 OK
 
 #### Request
 
-Here's an example of a request to update a team photo.
+The following example shows a request to update a team photo.
 
 
 # [HTTP](#tab/http)
@@ -201,7 +201,7 @@ Binary data for the image
 
 #### Response
 
-Here's an example that shows the response.
+The following example shows a response.
 
 <!-- {
   "blockType": "response",
