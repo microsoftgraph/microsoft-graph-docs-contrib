@@ -1,0 +1,112 @@
+---
+title: "Create export job"
+description: "Create a new export job"
+author: "ishatyagiit"
+ms.localizationpriority: medium
+ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+doc_type: apiPageType
+---
+
+# Create export job
+
+Namespace: microsoft.graph
+
+Create a new export job.
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
+|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
+|Application|**TODO: Provide applicable permissions.**|
+
+## HTTP request
+Create a new export job:
+
+```text
+POST https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs
+Content-type: application/json
+```
+
+## Request headers
+| Header       |  Value|
+|:-------------|:------|
+| Authorization  | Bearer {token}. Required.|
+| Accept  | application/json|
+
+## Request body
+```json
+{ 
+    "goalsOrganizationId": "9ab0fcab-c1d4-4b26-963b-a3c33155f853", 
+    "explorerViewId": "2c8b5fd3-67c3-4677-8eb3-e0066c4d2fd7" 
+} 
+```
+
+## Response
+```json
+{
+  "id": "string",
+  "status": "string",
+  "createdDateTime": "timestamp",
+}
+```
+
+## Example
+#### Request
+Here is an example of the create job request.
+
+```text
+POST https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs
+Content-type: application/json
+```
+
+```json
+{ 
+    "goalsOrganizationId": "9ab0fcab-c1d4-4b26-963b-a3c33155f853", 
+    "explorerViewId": "2c8b5fd3-67c3-4677-8eb3-e0066c4d2fd7" 
+} 
+```
+
+#### Response
+
+##### State is "notStarted"
+
+```text
+HTTP/1.1 201 Created 
+Content-type: application/json
+Location: "https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0"
+```
+
+```json
+{ 
+    "id": "eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0", 
+    "status": "notStarted",
+    "createdDateTime": "2023-06-19T12-06-03.0024Z"
+} 
+```
+
+##### State is "conflicting"
+A 409 conflict is returned when creating a export job with the same properties (such as organization id and explorer view id) as that of an existing job that is pending completion. Once the job completes, creating a new one is allowed.
+
+```text
+HTTP/1.1 409 Conflict
+Content-type: application/json
+Location: "https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0"
+```
+
+```json
+{
+    "error": 
+    {
+        "code": "notAllowed",
+        "message": "Another export job is still active or waiting to be executed",
+        "target": "eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0",
+        "innererror":
+        {
+            "code": "exportJobAlreadyExists"
+        }
+    }
+}
+```
