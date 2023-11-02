@@ -74,9 +74,9 @@ If successful, this method returns a `200 OK` response code.
 
 ### Example 1: Delete the photo of the user
 
-#### Request
+### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -85,7 +85,7 @@ The following is an example of a request.
 ```http
 DELETE https://graph.microsoft.com/beta/me/photo/$value
 ```
-#### Response
+### Response
 
 Here's an example of the response.
 
