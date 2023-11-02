@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = TentativelyAcceptPostRequestBody(
 	comment = "I may not be able to make this week. How about next week?",
@@ -23,7 +23,7 @@ request_body = TentativelyAcceptPostRequestBody(
 	),
 )
 
-await graph_client.me.events.by_event_id('event-id').tentatively_accept.post(request_body = request_body)
+await graph_client.me.events.by_event_id('event-id').tentatively_accept.post(request_body)
 
 
 ```

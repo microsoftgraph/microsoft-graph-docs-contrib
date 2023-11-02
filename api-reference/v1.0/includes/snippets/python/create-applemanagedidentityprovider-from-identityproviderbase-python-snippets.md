@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AppleManagedIdentityProvider(
 	odata_type = "microsoft.graph.appleManagedIdentityProvider",
@@ -17,7 +17,7 @@ request_body = AppleManagedIdentityProvider(
 	certificate_data = "******",
 )
 
-result = await graph_client.identity.identity_providers.post(request_body = request_body)
+result = await graph_client.identity.identity_providers.post(request_body)
 
 
 ```

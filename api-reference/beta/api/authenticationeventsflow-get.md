@@ -14,14 +14,13 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a specific [authenticationEventsFlow](../resources/authenticationeventsflow.md) object by ID. Only [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object types are available.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|EventListener.Read.All, EventListener.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|EventListener.Read.All, EventListener.ReadWrite.All|
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "authenticationeventsflow_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/authenticationeventsflow-get-permissions.md)]
 
 [!INCLUDE [rbac-user-flows-convergence-apis-read](../includes/rbac-for-apis/rbac-user-flows-convergence-apis-read.md)]
 
@@ -44,7 +43,7 @@ This method supports some of the OData query parameters to help customize the re
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -99,7 +98,7 @@ GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc37
 ---
 
 ### Response
-The following is an example of the response. In this example, the user flow retrieved is named "Woodgrove Drive Users Flow" and is set up to:
+The following example shows the response. In this example, the user flow retrieved is named "Woodgrove Drive Users Flow" and is set up to:
 
 - Allow users to create a local email with password account, or sign up with their Google or Facebook identity
 - Collect **Display Name** and **Favorite Color**

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AddMembersPostRequestBody(
 	assets = [
@@ -14,10 +14,10 @@ request_body = AddMembersPostRequestBody(
 			odata_type = "#microsoft.graph.windowsUpdates.azureADDevice",
 			id = "String (identifier)",
 		),
-	]
+	],
 )
 
-await graph_client.admin.windows.updates.updatable_assets.by_updatable_asset_id('updatableAsset-id').microsoft_graph_window_update_add_members.post(request_body = request_body)
+await graph_client.admin.windows.updates.updatable_assets.by_updatable_asset_id('updatableAsset-id').microsoft_graph_windows_updates_add_members.post(request_body)
 
 
 ```

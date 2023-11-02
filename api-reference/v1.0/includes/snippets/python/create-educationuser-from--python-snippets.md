@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = EducationUser(
 	odata_type = "#microsoft.graph.educationUser",
@@ -34,15 +34,15 @@ request_body = EducationUser(
 		AssignedLicense(
 			odata_type = "microsoft.graph.assignedLicense",
 		),
-	]
+	],
 	assigned_plans = [
 		AssignedPlan(
 			odata_type = "microsoft.graph.assignedPlan",
 		),
-	]
+	],
 	business_phones = [
 		"String",
-	]
+	],
 	department = "String",
 	display_name = "String",
 	given_name = "String",
@@ -59,7 +59,7 @@ request_body = EducationUser(
 		ProvisionedPlan(
 			odata_type = "microsoft.graph.provisionedPlan",
 		),
-	]
+	],
 	refresh_tokens_valid_from_date_time = "String (timestamp)",
 	show_in_address_list = Boolean,
 	surname = "String",
@@ -71,7 +71,7 @@ request_body = EducationUser(
 	),
 )
 
-result = await graph_client.education.users.post(request_body = request_body)
+result = await graph_client.education.users.post(request_body)
 
 
 ```

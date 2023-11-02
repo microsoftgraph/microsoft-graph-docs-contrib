@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = TermsAndConditionsAcceptanceStatus(
 	odata_type = "#microsoft.graph.termsAndConditionsAcceptanceStatus",
@@ -16,7 +16,7 @@ request_body = TermsAndConditionsAcceptanceStatus(
 	user_principal_name = "User Principal Name value",
 )
 
-result = await graph_client.device_management.term_and_conditions.by_term_and_condition_id('termsAndConditions-id').acceptance_statuses.post(request_body = request_body)
+result = await graph_client.device_management.terms_and_conditions.by_terms_and_conditions_id('termsAndConditions-id').acceptance_statuses.post(request_body)
 
 
 ```

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = UnifiedRoleAssignment(
 	principal_id = "679a9213-c497-48a4-830a-8d3d25d94ddc",
@@ -14,7 +14,7 @@ request_body = UnifiedRoleAssignment(
 	app_scope_id = "/AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997",
 )
 
-result = await graph_client.role_management.entitlement_management.role_assignments.post(request_body = request_body)
+result = await graph_client.role_management.entitlement_management.role_assignments.post(request_body)
 
 
 ```

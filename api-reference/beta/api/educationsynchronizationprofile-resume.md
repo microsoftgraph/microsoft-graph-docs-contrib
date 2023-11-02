@@ -15,14 +15,13 @@ Namespace: microsoft.graph
 
 Resume the sync of a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
-| Permission type | Permissions |
-|:-----------|:----------|
-| Delegated (work or school account) | EduAdministration.ReadWrite |
-|Delegated (personal Microsoft account|Not supported.|
-|Application|EduAdministration.ReadWrite.All |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "educationsynchronizationprofile_resume" } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationsynchronizationprofile-resume-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -36,13 +35,13 @@ POST /education/synchronizationProfiles/{id}/resume
 | Authorization  | string  | Bearer {token}. Required.  |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code.
 
 ## Example
 ##### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

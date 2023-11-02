@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = SendMailPostRequestBody(
 	message = Message(
@@ -21,7 +21,7 @@ request_body = SendMailPostRequestBody(
 					address = "AlexW@contoso.OnMicrosoft.com",
 				),
 			),
-		]
+		],
 		internet_message_headers = [
 			InternetMessageHeader(
 				name = "x-custom-header-group-name",
@@ -31,11 +31,11 @@ request_body = SendMailPostRequestBody(
 				name = "x-custom-header-group-id",
 				value = "NV001",
 			),
-		]
+		],
 	),
 )
 
-await graph_client.me.send_mail.post(request_body = request_body)
+await graph_client.me.send_mail.post(request_body)
 
 
 ```

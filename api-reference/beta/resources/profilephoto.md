@@ -1,6 +1,6 @@
 ---
 title: "profilePhoto resource type"
-description: "Repesents a profile photo of a user, group, team, or Outlook contact accessed from Exchange Online or Azure Active Directory (Azure AD)."
+description: "Represents a profile photo of a user, group, team, or Outlook contact accessed from Exchange Online or Microsoft Entra ID."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "people"
@@ -13,10 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Repesents a profile photo of a user, group, team, or Outlook contact accessed from Exchange Online or Azure Active Directory (Azure AD). The data is binary and not encoded in base-64.
+Represents a profile photo of a user, group, team, or Outlook contact accessed from Exchange Online or Microsoft Entra ID. The data is binary and not encoded in base-64.
 
 The supported sizes of HD photos on Exchange Online are as follows: `48x48`, `64x64`, `96x96`, `120x120`, `240x240`,
-`360x360`,`432x432`, `504x504`, and `648x648`. In Azure AD, photos can be any dimension.
+`360x360`,`432x432`, `504x504`, and `648x648`. In Microsoft Entra ID, photos can be any dimension.
 
 ## Methods
 
@@ -41,7 +41,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -71,5 +71,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

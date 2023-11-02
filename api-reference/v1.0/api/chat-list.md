@@ -17,6 +17,8 @@ This method supports federation. When a user ID is provided, the calling applica
 
 >**Note:** This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences). 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -57,7 +59,7 @@ This method supports the following [OData query parameters](/graph/query-paramet
 | [$expand](/graph/query-parameters#expand-parameter)| Currently supports **members** and **lastMessagePreview** properties. |
 | [$top](/graph/query-parameters#top-parameter)| Controls the number of items per response. Maximum allowed `$top` value is 50. |
 | [$filter](/graph/query-parameters#filter-parameter)| Filters results. |
-| [$orderBy](/graph/query-parameters#orderby-parameter)  | Currently supports **lastMessagePreview/createdDateTime** in descending order. Ascending order is currently not supported.|
+| [$orderby](/graph/query-parameters#orderby-parameter)  | Currently supports **lastMessagePreview/createdDateTime** in descending order. Ascending order is currently not supported.|
 
 The other [OData query parameters](/graph/query-parameters) are not currently supported.
 
@@ -72,7 +74,7 @@ The other [OData query parameters](/graph/query-parameters) are not currently su
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -415,7 +417,7 @@ The following is an example of a request. **lastMessagePreview/createdDateTime**
   "name": "list_chats_orderby"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/chats?$orderBy=lastMessagePreview/createdDateTime desc
+GET https://graph.microsoft.com/v1.0/chats?$orderby=lastMessagePreview/createdDateTime desc
 ```
 
 # [C#](#tab/csharp)
@@ -423,7 +425,7 @@ GET https://graph.microsoft.com/v1.0/chats?$orderBy=lastMessagePreview/createdDa
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/list-chats-orderby-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -454,7 +456,7 @@ GET https://graph.microsoft.com/v1.0/chats?$orderBy=lastMessagePreview/createdDa
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -471,7 +473,7 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats",
     "@odata.count": 2,
-    "@odata.nextLink": "https://graph.microsoft.com/v1.0/chats?$orderBy=lastMessagePreview%2fcreatedDateTime+desc&$skiptoken=1.kscDYs0BbsYAAAFa8ZyBqlByb3BlcnRpZXOCqVN5bmNTdGF0ZdoBRGV5SmtaV3hwZG1WeVpXUlRaV2R0Wlc1MGN5STZXM3NpYzNSaGNuUWlPaUl5TURJeExUQTRMVEUzVkRFeE9qVXpPakUxTGprd09Tc3dNRG93TUNJc0ltVnVaQ0k2SWpJd01qSXRNRFV0TUROVU1UZzZNVFU2TkRJdU16QTNLekF3T2pBd0luMHNleUp6ZEdGeWQ4APMDRTVOekF0TURFdE1ERlVNREE2BAATcggAcWlMQ0psYm2YAJB4T1Rjd0xUQXgEACJWRFQAAAQABmAA8F8xZExDSjZaWEp2VEUxVFZFUmxiR2wyWlhKbFpGTmxaMjFsYm5SeklqcGJYU3dpYzI5eWRFOXlaR1Z5SWpveExDSnBibU5zZFdSbFdtVnliMHhOVTFRaU9uUnlkV1Y5rExhc3RQYWdlU2l6ZaIyMA%3d%3d",
+    "@odata.nextLink": "https://graph.microsoft.com/v1.0/chats?$orderby=lastMessagePreview%2fcreatedDateTime+desc&$skiptoken=1.kscDYs0BbsYAAAFa8ZyBqlByb3BlcnRpZXOCqVN5bmNTdGF0ZdoBRGV5SmtaV3hwZG1WeVpXUlRaV2R0Wlc1MGN5STZXM3NpYzNSaGNuUWlPaUl5TURJeExUQTRMVEUzVkRFeE9qVXpPakUxTGprd09Tc3dNRG93TUNJc0ltVnVaQ0k2SWpJd01qSXRNRFV0TUROVU1UZzZNVFU2TkRJdU16QTNLekF3T2pBd0luMHNleUp6ZEdGeWQ4APMDRTVOekF0TURFdE1ERlVNREE2BAATcggAcWlMQ0psYm2YAJB4T1Rjd0xUQXgEACJWRFQAAAQABmAA8F8xZExDSjZaWEp2VEUxVFZFUmxiR2wyWlhKbFpGTmxaMjFsYm5SeklqcGJYU3dpYzI5eWRFOXlaR1Z5SWpveExDSnBibU5zZFdSbFdtVnliMHhOVTFRaU9uUnlkV1Y5rExhc3RQYWdlU2l6ZaIyMA%3d%3d",
     "value": [
         {
             "id": "19:670374fa-3b0e-4a3b-9d33-0e1bc5ff1956_bfb5bb25-3a8d-487d-9828-7875ced51a30@unq.gbl.spaces",
@@ -557,7 +559,7 @@ GET https://graph.microsoft.com/v1.0/chats?$expand=lastMessagePreview
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -687,7 +689,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 ```http
@@ -698,7 +700,7 @@ GET https://graph.microsoft.com/v1.0/users/e652dd92-dd63-4fcc-b5b2-2005681e8e9f/
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

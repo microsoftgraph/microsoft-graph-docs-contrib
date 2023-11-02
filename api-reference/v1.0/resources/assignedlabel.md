@@ -1,6 +1,6 @@
 ---
 title: "assignedLabel resource type"
-description: "Represents a sensitivity label assigned to an Microsoft 365 group."
+description: "Represents a sensitivity label assigned to a Microsoft 365 group."
 ms.localizationpriority: medium
 author: "Jordanndahl"
 ms.prod: "groups"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a sensitivity label assigned to an Microsoft 365 group. Sensitivity labels allow administrators to enforce specific group settings on a group by assigning a classification to the group (such as Confidential, Highly Confidential or General). Sensitivity labels are published by administrators in Microsoft 365 Security & Compliance Center as part of Microsoft Purview Information Protection capabilities. For more information about sensitivity labels, see [Sensitivity labels overview](/microsoft-365/compliance/sensitivity-labels).
+Represents a sensitivity label assigned to a Microsoft 365 group. Sensitivity labels allow administrators to enforce specific group settings on a group by assigning a classification to the group (such as Confidential, Highly Confidential or General). Sensitivity labels are published by administrators in Microsoft 365 Security and Compliance Center as part of Microsoft Purview Information Protection capabilities. For more information about sensitivity labels, see [Sensitivity labels overview](/microsoft-365/compliance/sensitivity-labels).
 
 ## Properties
 
@@ -22,7 +22,7 @@ Represents a sensitivity label assigned to an Microsoft 365 group. Sensitivity l
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

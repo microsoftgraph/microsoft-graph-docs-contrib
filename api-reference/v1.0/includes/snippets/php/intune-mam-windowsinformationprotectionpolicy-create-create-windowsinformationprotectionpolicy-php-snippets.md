@@ -29,7 +29,7 @@ $dataRecoveryCertificate->setOdataType('microsoft.graph.windowsInformationProtec
 $dataRecoveryCertificate->setSubjectName('Subject Name value');
 $dataRecoveryCertificate->setDescription('Description value');
 $dataRecoveryCertificate->setExpirationDateTime(new \DateTime('2016-12-31T23:57:57.2481234-08:00'));
-$DataRecoveryCertificate->setCertificate(base64_decode('Y2VydGlmaWNhdGU='));
+$dataRecoveryCertificate->setCertificate(\GuzzleHttp\Psr7\Utils::streamFor(base64_decode('Y2VydGlmaWNhdGU=')));
 $requestBody->setDataRecoveryCertificate($dataRecoveryCertificate);
 $requestBody->setRevokeOnUnenrollDisabled(true);
 $requestBody->setRightsManagementServicesTemplateId('abf7b16f-b16f-abf7-6fb1-f7ab6fb1f7ab');

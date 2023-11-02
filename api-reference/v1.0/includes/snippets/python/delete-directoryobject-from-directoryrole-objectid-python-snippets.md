@@ -6,10 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-await graph_client.directory_roles.by_directory_role_id('directoryRole-id').members.by_member_id('directoryObject-id').ref.delete()
+await graph_client.directory_roles.by_directory_role_id('directoryRole-id').members.by_directory_object_id('directoryObject-id').ref.delete()
 
 
 ```

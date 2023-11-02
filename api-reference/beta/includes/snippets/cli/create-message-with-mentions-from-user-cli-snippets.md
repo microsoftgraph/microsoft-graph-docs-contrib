@@ -16,7 +16,7 @@ mgc-beta users messages create --user-id {user-id} --body '{\
       }\
     ],\
     "mentions":[\
-      {    \
+      {\
         "mentioned":{\
           "name":"Dana Swope",\
           "address":"danas@contoso.onmicrosoft.com"\

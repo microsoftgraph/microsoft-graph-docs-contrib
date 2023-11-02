@@ -17,13 +17,10 @@ Assign a user a sponsor. Sponsors are users and groups that are responsible for 
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account) | User.ReadWrite.All, Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.ReadWrite.All, Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "user_post_sponsors" } -->
+[!INCLUDE [permissions-table](../includes/permissions/user-post-sponsors-permissions.md)]
 
 ## HTTP request
 
@@ -48,7 +45,7 @@ In the request body, supply a JSON object and pass an `@odata.id` parameter with
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
@@ -56,9 +53,9 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 #### Request
 
-The following is an example of the request. The request body is a JSON object with an `@odata.id` parameter and the read URL for the [user](../resources/user.md) object to be assigned as a sponsor.
+Here's an example of the request. The request body is a JSON object with an `@odata.id` parameter and the read URL for the [user](../resources/user.md) object to be assigned as a sponsor.
 
-The following is an example of a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -86,7 +83,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 <!-- {
   "blockType": "response"
 } -->
@@ -98,9 +95,8 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-The following is an example of the request. The request body is a JSON object with an `@odata.id` parameter and the read URL for the [group](../resources/group.md) object to be assigned as a sponsor.
+Here's an example of the request. The request body is a JSON object with an `@odata.id` parameter and the read URL for the [group](../resources/group.md) object to be assigned as a sponsor.
 
-The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -128,7 +124,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 <!-- {
   "blockType": "response"
 } -->

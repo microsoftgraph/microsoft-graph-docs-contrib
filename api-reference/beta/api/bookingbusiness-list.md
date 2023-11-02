@@ -21,15 +21,14 @@ You can also query for Bookings businesses by specifying a string in a `query` p
 
 > **Note:** Results are limited to 500 mailboxes. Pagination of the results is not currently supported.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported.  |
+<!-- { "blockType": "permissions", "name": "bookingbusiness_list" } -->
+[!INCLUDE [permissions-table](../includes/permissions/bookingbusiness-list-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +47,7 @@ This method also supports the `query` parameter which accepts a string value. Th
 | Authorization  | Bearer {code}|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and collection of [bookingBusiness](../resources/bookingbusiness.md) objects in the response body.
 
@@ -103,7 +102,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses
 ---
 
 #### Response 
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -180,7 +179,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses?query=Adventure
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,

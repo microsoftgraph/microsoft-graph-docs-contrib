@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = BookingAppointment(
 	odata_type = "#microsoft.graph.bookingAppointment",
@@ -52,7 +52,7 @@ request_body = BookingAppointment(
 					"recipients@odata_type" : "#microsoft.graph.bookingReminderRecipients",
 			}
 		),
-	]
+	],
 	service_id = "57da6774-a087-4d69-b0e6-6fb82c339976",
 	service_location = Location(
 		odata_type = "#microsoft.graph.location",
@@ -85,7 +85,7 @@ request_body = BookingAppointment(
 	service_notes = "Customer requires punctual service.",
 	staff_member_ids = [
 		"8ee1c803-a1fa-406d-8259-7ab53233f148",
-	]
+	],
 	start_date_time = DateTimeTimeZone(
 		odata_type = "#microsoft.graph.dateTimeTimeZone",
 		date_time = "2018-05-01T12:00:00.0000000+00:00",
@@ -132,15 +132,15 @@ request_body = BookingAppointment(
 					question = "What is your age?",
 					answer_input_type = AnswerInputType.Text,
 					answer_options = [
-					]
+					],
 					is_required = True,
 					answer = "25",
 					selected_options = [
-					]
+					],
 				),
-			]
+			],
 		),
-	]
+	],
 	additional_data = {
 			"price_type@odata_type" : "#microsoft.graph.bookingPriceType",
 			"reminders@odata_type" : "#Collection(microsoft.graph.bookingReminder)",
@@ -148,7 +148,7 @@ request_body = BookingAppointment(
 	}
 )
 
-result = await graph_client.solutions.booking_businesses.by_booking_businesse_id('bookingBusiness-id').appointments.post(request_body = request_body)
+result = await graph_client.solutions.booking_businesses.by_booking_business_id('bookingBusiness-id').appointments.post(request_body)
 
 
 ```

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = DeviceAndAppManagementRoleAssignment(
 	odata_type = "#microsoft.graph.deviceAndAppManagementRoleAssignment",
@@ -14,13 +14,13 @@ request_body = DeviceAndAppManagementRoleAssignment(
 	description = "Description value",
 	resource_scopes = [
 		"Resource Scopes value",
-	]
+	],
 	members = [
 		"Members value",
-	]
+	],
 )
 
-result = await graph_client.device_management.role_assignments.by_role_assignment_id('deviceAndAppManagementRoleAssignment-id').patch(request_body = request_body)
+result = await graph_client.device_management.role_assignments.by_device_and_app_management_role_assignment_id('deviceAndAppManagementRoleAssignment-id').patch(request_body)
 
 
 ```

@@ -2,6 +2,7 @@
 title: "List temporaryAccessPassMethods"
 description: "Get a list of the temporaryAccessPassAuthenticationMethod objects for a user."
 author: "tilarso"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -15,24 +16,20 @@ Namespace: microsoft.graph
 
 Retrieve a list of a user's [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) objects and their properties. This API will only return a single object in the collection as a user can have only one Temporary Access Pass (TAP) method.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### Permissions acting on self
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:---------------------------------------|:-------------------------|
-| Delegated (work or school account)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+<!-- { "blockType": "permissions", "name": "authentication_list_temporaryaccesspassmethods" } -->
+[!INCLUDE [permissions-table](../includes/permissions/authentication-list-temporaryaccesspassmethods-permissions.md)]
 
 ### Permissions acting on other users
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:---------------------------------------|:-------------------------|
-| Delegated (work or school account)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "authentication_list_temporaryaccesspassmethods_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/authentication-list-temporaryaccesspassmethods-2-permissions.md)]
 
 
 [!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
@@ -60,7 +57,7 @@ This method does not support optional query parameters to customize the response
 |Authorization|Bearer {token}. Required.|
 
 ## Request 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

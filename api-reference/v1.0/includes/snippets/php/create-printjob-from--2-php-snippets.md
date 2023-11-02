@@ -34,7 +34,7 @@ $configurationMargin->setLeft(0);
 $configurationMargin->setRight(0);
 $configuration->setMargin($configurationMargin);
 $configuration->setMediaType('stationery');
-$Configuration->setFinishings(null);
+$configuration->setFinishings(null);
 $configuration->setPagesPerSheet(1);
 $configuration->setMultipageLayout(new PrintMultipageLayout('clockwiseFromBottomLeft'));
 $configuration->setCollate(false);
@@ -42,6 +42,6 @@ $configuration->setScaling(new PrintScaling('shrinkToFit'));
 $configuration->setFitPdfToPage(false);
 $requestBody->setConfiguration($configuration);
 
-$result = $graphServiceClient->print()->shares()->byPrinterShareId('printerShare-id')->jobs()->post($requestBody)->wait();
+$result = $graphServiceClient->escapedPrint()->shares()->byPrinterShareId('printerShare-id')->jobs()->post($requestBody)->wait();
 
 ```

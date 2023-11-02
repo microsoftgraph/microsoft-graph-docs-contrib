@@ -12,6 +12,6 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 $requestBody = new ReferenceCreate();
 $requestBody->setOdataId('https://graph.microsoft.com/beta/users/{id}');
 
-$graphServiceClient->print()->shares()->byPrinterShareId('printerShare-id')->allowedUsers()->ref()->post($requestBody)->wait();
+$graphServiceClient->escapedPrint()->shares()->byPrinterShareId('printerShare-id')->allowedUsers()->ref()->post($requestBody)->wait();
 
 ```

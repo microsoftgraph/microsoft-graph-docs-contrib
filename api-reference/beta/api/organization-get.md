@@ -17,17 +17,16 @@ Get the properties and relationships of the currently authenticated organization
 
 Since the **organization** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in an **organization** instance.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type | Permissions (from least to most privileged) |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.Read, Organization.Read.All, Directory.Read.All, Organization.ReadWrite.All, Directory.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported. |
-|Application | Organization.Read.All, Directory.Read.All, Organization.ReadWrite.All, Directory.ReadWrite.All |
+<!-- { "blockType": "ignored", "name": "organization_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/organization-get-permissions.md)]
 
-The calling user must also be in one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
+The calling user must also be in one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference):
 
 * Global Administrator
 * User Administrator
@@ -83,7 +82,7 @@ The calling user must also be in one of the following [Azure AD roles](/azure/ac
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /organization
+GET /organization/{organizationId}
 ```
 
 ## Optional query parameters
@@ -98,7 +97,7 @@ This method supports only the `$select` [OData query parameter](/graph/query-par
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -108,7 +107,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ##### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -156,7 +155,7 @@ GET https://graph.microsoft.com/beta/organization/84841066-274d-4ec0-a5c1-276be6
 
 ##### Response
 
-Here is an example of the response. 
+Here's an example of the response. 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

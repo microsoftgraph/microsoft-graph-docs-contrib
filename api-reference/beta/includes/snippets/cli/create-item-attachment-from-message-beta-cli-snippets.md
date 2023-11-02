@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc-beta users messages attachments create --user-id {user-id} --message-id {message-id} --body '{\
   "@odata.type": "#microsoft.graph.itemAttachment",\
-  "name": "Holiday event", \
+  "name": "Holiday event",\
   "item": {\
     "@odata.type": "microsoft.graph.event",\
     "subject": "Discuss gifts for children",\

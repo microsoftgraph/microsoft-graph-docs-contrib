@@ -17,19 +17,18 @@ Create a SharePoint folder to upload feedback files for a given [educationSubmis
 
 The teacher determines the resources to upload in the feedback resources folder of a submission.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  EduAssignments.ReadBasic, EduAssignments.Read  |
-|Delegated (personal Microsoft account) |  Not supported.  |
-|Application | Not supported. |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "educationassignment_setupfeedbackresourcesfolder" } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationassignment-setupfeedbackresourcesfolder-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /classes/{classId}/assignments/{assignmentId}/setUpFeedbackResourcesFolder
+POST /education/classes/{classId}/assignments/{assignmentId}/setUpFeedbackResourcesFolder
 ```
 
 ## Request headers
@@ -54,7 +53,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070","a3cce0ba-2008-4c4d-bf62-079408562d96"],  
+  "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070","a3cce0ba-2008-4c4d-bf62-079408562d96"],
   "name": "educationassignment_setupfeedbackresourcesfolder"
 }-->
 ```http
@@ -101,7 +100,7 @@ Content-type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

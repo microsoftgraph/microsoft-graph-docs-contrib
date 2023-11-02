@@ -17,13 +17,15 @@ Namespace: microsoft.graph
 
 Retrieve a collection of [governanceRoleSettings](../resources/governancerolesetting.md) on a resource.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 The following table shows the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-|:-|:-|:-|
-| Azure AD | PrivilegedAccess.ReadWrite.AzureAD | Not supported. | PrivilegedAccess.Read.AzureAD |
+| Microsoft Entra ID | PrivilegedAccess.ReadWrite.AzureAD | Not supported. | PrivilegedAccess.Read.AzureAD |
 | Azure resources | PrivilegedAccess.ReadWrite.AzureResources | Not supported. | PrivilegedAccess.Read.AzureResources |
 | [group](../resources/group.md) | PrivilegedAccess.ReadWrite.AzureADGroup | Not supported. | PrivilegedAccess.Read.AzureADGroup |
 
@@ -32,7 +34,7 @@ The requestor must also have at least one role assignment on the resource.
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /privilegedAccess/azureResources/resources/<resourceId>/roleSettings
+GET /privilegedAccess/azureResources/resources/{resourceId}/roleSettings
 GET /privilegedAccess/azureResources/roleSettings?$filter=resourceId+eq+'<resourceId>'
 ```
 ## Optional query parameters
@@ -44,13 +46,13 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 | Authorization  | Bearer {code}|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a `200 OK` response code and collection of [governanceRoleSetting](../resources/governancerolesetting.md) objects in the response body.
 
 ## Example
-This example shows how an administrator lists role settings for the resource Wingtip Toys - Prod. 
+This example shows how an administrator lists role settings for the resource Wingtip Toys - Prod.
 <!-- {
   "blockType": "request",
   "name": "get_governancerolesettings"
@@ -184,5 +186,3 @@ Content-type: application/json
   "suppressions": []
 }
 -->
-
-

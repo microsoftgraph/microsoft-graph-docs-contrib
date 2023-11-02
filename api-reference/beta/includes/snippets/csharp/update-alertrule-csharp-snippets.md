@@ -23,10 +23,6 @@ var requestBody = new Microsoft.Graph.Beta.Models.DeviceManagement.AlertRule
 		new Microsoft.Graph.Beta.Models.DeviceManagement.NotificationChannel
 		{
 			NotificationChannelType = Microsoft.Graph.Beta.Models.DeviceManagement.NotificationChannelType.Portal,
-			Receivers = new List<string>
-			{
-				"",
-			},
 			NotificationReceivers = new List<Microsoft.Graph.Beta.Models.DeviceManagement.NotificationReceiver>
 			{
 			},
@@ -34,10 +30,6 @@ var requestBody = new Microsoft.Graph.Beta.Models.DeviceManagement.AlertRule
 		new Microsoft.Graph.Beta.Models.DeviceManagement.NotificationChannel
 		{
 			NotificationChannelType = Microsoft.Graph.Beta.Models.DeviceManagement.NotificationChannelType.Email,
-			Receivers = new List<string>
-			{
-				"serena.davis@contoso.com",
-			},
 			NotificationReceivers = new List<Microsoft.Graph.Beta.Models.DeviceManagement.NotificationReceiver>
 			{
 				new Microsoft.Graph.Beta.Models.DeviceManagement.NotificationReceiver

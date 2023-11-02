@@ -1,6 +1,6 @@
 ---
 title: Delete printerShare
-description: Delete a printer share (unshare the associated printer). This action cannot be undone. If the printer is shared again in the future, any Windows users who had previously installed the printer will need to discover and re-install it.
+description: Delete a printer share (unshare the associated printer). This action can't be undone. If the printer is shared again in the future, any Windows users who had previously installed the printer needs to discover and reinstall it.
 author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: cloud-printing
@@ -13,18 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a printer share (unshare the associated [printer](../resources/printer.md)). This action cannot be undone. If the [printer](../resources/printer.md) is shared again in the future, any Windows users who had previously installed the [printer](../resources/printer.md) will need to discover and reinstall it.
+Delete a printer share (unshare the associated [printer](../resources/printer.md)). This action can't be undone. If the [printer](../resources/printer.md) is shared again in the future, any Windows users who had previously installed the [printer](../resources/printer.md) needs to discover and reinstall it.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table. The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
-
-|Permission type | Permissions (from least to most privileged) |
-|:---------------|:--------------------------------------------|
-|Delegated (work or school account)| PrinterShare.ReadWrite.All |
-|Delegated (personal Microsoft account)|Not Supported.|
-|Application|Not Supported.|
+<!-- { "blockType": "permissions", "name": "printershare_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/printershare-delete-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -38,14 +35,14 @@ DELETE /print/printers/{id}/share
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 ##### Request
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -91,7 +88,7 @@ DELETE https://graph.microsoft.com/beta/print/shares/{id}
 ---
 
 ##### Response
-The following is an example of the response.
+Here's an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

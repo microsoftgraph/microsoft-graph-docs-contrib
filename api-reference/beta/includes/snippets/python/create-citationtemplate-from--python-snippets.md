@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = CitationTemplate(
 	odata_type = "#microsoft.graph.security.citationTemplate",
@@ -18,7 +18,7 @@ request_body = CitationTemplate(
 	citation_jurisdiction = "String",
 )
 
-result = await graph_client.security.labels.citations.post(request_body = request_body)
+result = await graph_client.security.labels.citations.post(request_body)
 
 
 ```

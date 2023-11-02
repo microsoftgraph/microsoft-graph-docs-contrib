@@ -15,22 +15,22 @@ Namespace: microsoft.graph
 
 Retrieve the properties of a user's [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md).
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-|Permission Type                   |Permission (from least to most privileged)     |
-|----------------------------------|---------------------------------------------- |
-|Delegated (work or school account)|User.Read, User.Read.All                        |
-|Delegated (personal account)      |User.Read, User.Read.All              |
-|Application                       |User.Read, User.Read.All              |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "regionalandlanguagesettings_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/regionalandlanguagesettings-get-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /settings/regionalAndLanguageSettings
+GET /me/settings/regionalAndLanguageSettings
+GET /users/{user-id | userPrincipalName}/settings/regionalAndLanguageSettings
 ```
 ## Optional query parameters
-You can use `$select` to get specific regionalAndLanguageSettings properties, including those that are not returned by default.
+You can use `$select` to get specific regionalAndLanguageSettings properties, including properties that aren't returned by default.
 
 For more information on OData query options, see [OData Query Parameters](/graph/query-parameters).
 
@@ -40,7 +40,7 @@ For more information on OData query options, see [OData Query Parameters](/graph
 | Authorization  | Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -52,7 +52,7 @@ The following example gets the properties of the signed-in user.
 
 ### Request
 
-The following is an example of a request.
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -99,7 +99,7 @@ GET https://graph.microsoft.com/beta/me/settings/regionalAndLanguageSettings
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -154,7 +154,7 @@ Content-type: application/json
         "languageOverrides": [
             {
                 "languageTag": "fr",
-                "translationBehavior": "Yes" 
+                "translationBehavior": "Yes"
             }
         ],
         "untranslatedLanguages": ["de"]

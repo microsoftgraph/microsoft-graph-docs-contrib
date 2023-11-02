@@ -1,5 +1,5 @@
 ---
-title: "Manage an Azure AD application using Microsoft Graph"
+title: "Manage a Microsoft Entra application using Microsoft Graph"
 description: "Learn how to use the applications and service principals APIs in Microsoft Graph to manage your applications."
 author: "FaithOmbongi"
 ms.author: ombongifaith
@@ -10,9 +10,9 @@ ms.prod: "applications"
 ms.date: 08/14/2023
 ---
 
-# Manage an Azure AD application using Microsoft Graph
+# Manage a Microsoft Entra application using Microsoft Graph
 
-Your app must be registered in Azure AD before the Microsoft identity platform can authorize it to access data stored in Azure Active Directory (Azure AD) or Microsoft 365 tenants. This condition applies to apps that you develop yourself, that your tenant owns, or that you access through an active subscription.
+Your app must be registered in Microsoft Entra ID before the Microsoft identity platform can authorize it to access data stored in Microsoft Entra or Microsoft 365 tenants. This condition applies to apps that you develop yourself, that your tenant owns, or that you access through an active subscription.
 
 Many settings for apps are recorded as objects that can be accessed, updated, or deleted using Microsoft Graph. In this article, you learn how to use Microsoft Graph to manage app and service principal objects including the properties, permissions, and role assignments.
 
@@ -20,10 +20,12 @@ Many settings for apps are recorded as objects that can be accessed, updated, or
 
 To complete this tutorial, you need the following resources and privileges:
 
-+ A working Azure AD tenant.
++ A working Microsoft Entra tenant.
 + Sign in to [Graph Explorer](https://aka.ms/ge) as a user with privileges allowed to create and manage applications in the tenant.
 
-## Register an application with Azure AD
+<a name='register-an-application-with-azure-ad'></a>
+
+## Register an application with Microsoft Entra ID
 
 The following request creates an app by specifying only the required **displayName** property.
 
@@ -77,7 +79,7 @@ Content-type: application/json
 
 ---
 
-The request returns a `201 Created` response with the application object in the response body. The application is assigned an **id** that's unique for apps in the tenant, and an **appId** that's globally unique in the Azure AD ecosystem.
+The request returns a `201 Created` response with the application object in the response body. The application is assigned an **id** that's unique for apps in the tenant, and an **appId** that's globally unique in the Microsoft Entra ID ecosystem.
 
 ## Create a service principal for an application
 
@@ -135,7 +137,7 @@ The request returns a `201 Created` response with the service principal object i
 
 ## Addressing an application or a service principal object
 
-You can address an application or a service principal by its ID or by its **appId**, where ID is referred to as *Object ID* and **appId** is referred to as *Application (client) ID* on the Azure portal. These syntaxes are supported for all HTTP CRUD operations on applications and service principals.
+You can address an application or a service principal by its ID or by its **appId**, where ID is referred to as *Object ID* and **appId** is referred to as *Application (client) ID* on the Microsoft Entra admin center. These syntaxes are supported for all HTTP CRUD operations on applications and service principals.
 
 To address an application or a service principal by its ID.
 
@@ -280,9 +282,9 @@ PATCH https://graph.microsoft.com/v1.0/servicePrincipals/89473e09-0737-41a1-a0c3
 
 ## Assign permissions to an app
 
-While you can assign permissions to an app through the Azure portal, you also assign permissions through Microsoft Graph by updating the **requiredResourceAccess** property of the app object. You must pass in both existing and new permissions. Passing in only new permissions overwrites and removes the existing permissions that haven't yet been consented to.
+While you can assign permissions to an app through the Microsoft Entra admin center, you also assign permissions through Microsoft Graph by updating the **requiredResourceAccess** property of the app object. You must pass in both existing and new permissions. Passing in only new permissions overwrites and removes the existing permissions that haven't yet been consented to.
 
-Assigning permissions doesn't automatically grant them to the app. You must still grant admin consent using the Azure portal. To grant permissions without interactive consent, see [Grant or revoke API permissions programmatically](permissions-grant-via-msgraph.md).
+Assigning permissions doesn't automatically grant them to the app. You must still grant admin consent using the Microsoft Entra admin center. To grant permissions without interactive consent, see [Grant or revoke API permissions programmatically](permissions-grant-via-msgraph.md).
 
 Least privilege delegated permission: `Application.ReadWrite.All`.
 
@@ -419,7 +421,7 @@ Content-Type: application/json
 
 Least privilege delegated permission: `Application.ReadWrite.All`.
 
-This request requires the **ConsistencyLevel** header set to `eventual` because `$count` is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+This request requires the **ConsistencyLevel** header set to `eventual` because `$count` is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
 This request also returns the count of the apps that match the filter condition.
 

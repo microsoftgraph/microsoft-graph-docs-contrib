@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = GovernanceRoleAssignmentRequest(
 	role_definition_id = "65bb4622-61f5-4f25-9d75-d0e20cf92019",
@@ -16,7 +16,7 @@ request_body = GovernanceRoleAssignmentRequest(
 	type = "AdminRemove",
 )
 
-result = await graph_client.privileged_access.by_privileged_acce_id('privilegedAccess-id').role_assignment_requests.post(request_body = request_body)
+result = await graph_client.privileged_access.by_privileged_access_id('privilegedAccess-id').role_assignment_requests.post(request_body)
 
 
 ```

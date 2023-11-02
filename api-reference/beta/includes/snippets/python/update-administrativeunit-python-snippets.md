@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AdministrativeUnit(
 	display_name = "Executive Division",
@@ -17,7 +17,7 @@ request_body = AdministrativeUnit(
 	}
 )
 
-result = await graph_client.administrative_units.by_administrative_unit_id('administrativeUnit-id').patch(request_body = request_body)
+result = await graph_client.administrative_units.by_administrative_unit_id('administrativeUnit-id').patch(request_body)
 
 
 ```

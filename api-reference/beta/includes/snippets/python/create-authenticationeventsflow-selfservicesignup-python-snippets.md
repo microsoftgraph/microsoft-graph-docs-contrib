@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ExternalUsersSelfServiceSignUpEventsFlow(
 	odata_type = "#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow",
@@ -17,7 +17,7 @@ request_body = ExternalUsersSelfServiceSignUpEventsFlow(
 			IdentityProviderBase(
 				id = "EmailPassword-OAUTH",
 			),
-		]
+		],
 	),
 	on_interactive_auth_flow_start = OnInteractiveAuthFlowStartExternalUsersSelfServiceSignUp(
 		odata_type = "#microsoft.graph.onInteractiveAuthFlowStartExternalUsersSelfServiceSignUp",
@@ -40,7 +40,7 @@ request_body = ExternalUsersSelfServiceSignUpEventsFlow(
 				user_flow_attribute_type = IdentityUserFlowAttributeType.BuiltIn,
 				data_type = IdentityUserFlowAttributeDataType.String,
 			),
-		]
+		],
 		attribute_collection_page = AuthenticationAttributeCollectionPage(
 			views = [
 				AuthenticationAttributeCollectionPageViewConfiguration(
@@ -65,14 +65,14 @@ request_body = ExternalUsersSelfServiceSignUpEventsFlow(
 							required = False,
 							validation_reg_ex = "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$",
 						),
-					]
+					],
 				),
-			]
+			],
 		),
 	),
 )
 
-result = await graph_client.identity.authentication_event_flows.post(request_body = request_body)
+result = await graph_client.identity.authentication_events_flows.post(request_body)
 
 
 ```

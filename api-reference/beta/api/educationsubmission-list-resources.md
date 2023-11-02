@@ -17,15 +17,14 @@ List the resources associated with a submission. Only teachers, students, and ap
 
 The [educationSubmissionResource](../resources/educationsubmissionresource.md) object is a wrapper around the actual resource object the student is working on. The wrapper also includes a pointer to the resources on the assignment if this was copied from the assignment during the assign process. These resources are the working copy of the assignment. The **submittedResources** are the resources that have officially been submitted to be graded.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                                            |
-| :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
-| Delegated (work or school account)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
-| Delegated (personal Microsoft account) | Not supported.                                                                                         |
-| Application                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "educationsubmission_list_resources" } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationsubmission-list-resources-permissions.md)]
 
 ## HTTP request
 
@@ -36,7 +35,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/resources
 
 ## Optional query parameters
 
-This method supports the `$top`, `$filter`, `$orderBy`, and `$select` OData query parameters to help customize the response.For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$top`, `$filter`, `$orderby`, and `$select` OData query parameters to help customize the response.For general information, see [OData query parameters](/graph/query-parameters).
 
 
 ## Request headers
@@ -47,7 +46,7 @@ This method supports the `$top`, `$filter`, `$orderBy`, and `$select` OData quer
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -57,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ##### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -106,7 +105,7 @@ GET https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/sub
 
 ##### Response
 
-The following is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

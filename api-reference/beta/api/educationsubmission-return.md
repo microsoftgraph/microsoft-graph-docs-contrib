@@ -15,14 +15,13 @@ Namespace: microsoft.graph
 
 Make the grade and feedback associated with this submission available to the student. This will change the status of the submission from "submitted" to "returned" and indicates that feedback is provided or grading is done. This action can only be done by the teacher.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite   |
-|Delegated (personal Microsoft account) |  Not supported.  |
-|Application | EduAssignments.ReadWrite.All, EduAssignments.ReadWriteBasic.All |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "educationsubmission_return" } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationsubmission-return-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +43,7 @@ If successful, this method returns a `200 Ok` response code and an [educationSub
 The following example shows how to call this API.
 
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -91,7 +90,7 @@ POST https://graph.microsoft.com/beta/education/classes/2003c52e-807a-4186-9b49-
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

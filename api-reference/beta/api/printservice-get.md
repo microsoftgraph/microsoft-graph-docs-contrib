@@ -18,15 +18,14 @@ Retrieve the properties and relationships of a print service.
 > [!NOTE]
 > In order to use the Universal Print service, the user or app's tenant must have an active Universal Print subscription.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
-One of the following permissions is required to call these APIs. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:------------------------------------|
-| Delegated (work or school account)     | PrintJob.ReadBasic, PrintJob.Read, PrintJob.ReadBasic.All, PrinterShare.ReadBasic.All, PrintJob.Read.All, Printer.Read.All, PrinterShare.Read.All, PrintConnector.Read.All, PrintSettings.Read.All, PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, Printer.ReadWrite.All, PrinterShare.ReadWrite.All, PrintJob.ReadWrite.All, PrintConnector.ReadWrite.All, PrintSettings.ReadWrite.All, Printer.Create, PrintJob.Create |
-| Delegated (personal Microsoft account) | Not supported.                      |
-| Application                            | Not supported.                      |
+<!-- { "blockType": "permissions", "name": "printservice_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/printservice-get-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -46,7 +45,7 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -56,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a [printService]
 
 ##### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -103,7 +102,7 @@ GET https://graph.microsoft.com/beta/print/services/{id}
 
 ##### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

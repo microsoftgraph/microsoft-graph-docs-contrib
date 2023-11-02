@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = IosGeneralDeviceConfiguration(
 	odata_type = "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -29,7 +29,7 @@ request_body = IosGeneralDeviceConfiguration(
 			app_store_url = "https://example.com/appStoreUrl/",
 			app_id = "App Id value",
 		),
-	]
+	],
 	apps_visibility_list = [
 		AppListItem(
 			odata_type = "microsoft.graph.appListItem",
@@ -38,7 +38,7 @@ request_body = IosGeneralDeviceConfiguration(
 			app_store_url = "https://example.com/appStoreUrl/",
 			app_id = "App Id value",
 		),
-	]
+	],
 	apps_visibility_list_type = AppListType.AppsInListCompliant,
 	app_store_block_automatic_downloads = True,
 	app_store_blocked = True,
@@ -63,7 +63,7 @@ request_body = IosGeneralDeviceConfiguration(
 			app_store_url = "https://example.com/appStoreUrl/",
 			app_id = "App Id value",
 		),
-	]
+	],
 	compliant_app_list_type = AppListType.AppsInListCompliant,
 	configuration_profile_block_changes = True,
 	definition_lookup_blocked = True,
@@ -76,7 +76,7 @@ request_body = IosGeneralDeviceConfiguration(
 	documents_block_unmanaged_documents_in_managed_apps = True,
 	email_in_domain_suffixes = [
 		"Email In Domain Suffixes value",
-	]
+	],
 	enterprise_app_block_trust = True,
 	enterprise_app_block_trust_modification = True,
 	face_time_blocked = True,
@@ -182,11 +182,11 @@ request_body = IosGeneralDeviceConfiguration(
 					app_store_url = "https://example.com/appStoreUrl/",
 					app_id = "App Id value",
 				),
-			]
+			],
 			cellular_data_block_when_roaming = True,
 			cellular_data_blocked = True,
 		),
-	]
+	],
 	media_content_rating_apps = RatingAppsType.AllBlocked,
 	messages_blocked = True,
 	notifications_block_settings_modification = True,
@@ -211,10 +211,10 @@ request_body = IosGeneralDeviceConfiguration(
 	safari_cookie_settings = WebBrowserCookieSettings.BlockAlways,
 	safari_managed_domains = [
 		"Safari Managed Domains value",
-	]
+	],
 	safari_password_auto_fill_domains = [
 		"Safari Password Auto Fill Domains value",
-	]
+	],
 	safari_require_fraud_warning = True,
 	screen_capture_blocked = True,
 	siri_blocked = True,
@@ -227,7 +227,7 @@ request_body = IosGeneralDeviceConfiguration(
 	wi_fi_connect_only_to_configured_networks = True,
 )
 
-result = await graph_client.device_management.device_configurations.post(request_body = request_body)
+result = await graph_client.device_management.device_configurations.post(request_body)
 
 
 ```

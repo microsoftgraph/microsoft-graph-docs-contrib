@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = CloudPcOnPremisesConnection(
 	display_name = "test-canary-02",
@@ -20,7 +20,7 @@ request_body = CloudPcOnPremisesConnection(
 	subnet_id = "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET/subnets/canary01-Subnet",
 )
 
-result = await graph_client.device_management.virtual_endpoint.on_premise_connections.post(request_body = request_body)
+result = await graph_client.device_management.virtual_endpoint.on_premises_connections.post(request_body)
 
 
 ```

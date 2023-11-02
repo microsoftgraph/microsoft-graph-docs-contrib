@@ -15,15 +15,14 @@ Namespace: microsoft.graph
 
 Mark an `assigned` [educationAssignment](../resources/educationassignment.md) as `inactive` to signal that the assignment has no further action items for teachers and students. This action can only be performed by a teacher on assigned assignments.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                                            |
-| :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
-| Delegated (work or school account)     | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite |
-| Delegated (personal Microsoft account) | Not supported.                                                                                         |
-| Application                            | Not supported.                                                                                         |
+<!-- { "blockType": "permissions", "name": "educationassignment_deactivate" } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationassignment-deactivate-permissions.md)]
 
 ## HTTP request
 
@@ -40,19 +39,19 @@ POST /education/classes/{classId}/assignments/{assignmentId}/deactivate
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and an [educationAssignment](../resources/educationassignment.md) object with `inactive` status in the response body.
 
 ## Examples
-`Inactive` is a new status for assignments, you can add the `Prefer` header in your request to get the status, otherwise you will get an `unknownFutureValue` value in the response.
+`Inactive` is a new status for assignments, you can add the `Prefer` header in your request to get the status, otherwise you'll get an `unknownFutureValue` value in the response.
 
 ### Example 1: Mark assignment inactive without optional Prefer header
 
 #### Request
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -99,7 +98,7 @@ POST https://graph.microsoft.com/beta/education/classes/ffac078e-1b63-42d0-bc2a-
 ---
 
 #### Response
-The following is an example of the response when `Prefer: include-unknown-enum-members` is not provided in the request header.
+Here's an example of the response when `Prefer: include-unknown-enum-members` isn't provided in the request header.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -162,7 +161,7 @@ Content-type: application/json
 
 ### Example 2: Mark assignment inactive with optional Prefer header
 #### Request
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -210,7 +209,7 @@ Prefer: include-unknown-enum-members
 ---
 
 #### Response
-The following is an example of the response when the `Prefer: include-unknown-enum-members` is provided in the request header.
+Here's an example of the response when the `Prefer: include-unknown-enum-members` is provided in the request header.
 
 >**Note:** The response object shown here might be shortened for readability.
 

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Windows81GeneralConfiguration(
 	odata_type = "#microsoft.graph.windows81GeneralConfiguration",
@@ -48,7 +48,7 @@ request_body = Windows81GeneralConfiguration(
 	work_folders_url = "https://example.com/workFoldersUrl/",
 )
 
-result = await graph_client.device_management.device_configurations.by_device_configuration_id('deviceConfiguration-id').patch(request_body = request_body)
+result = await graph_client.device_management.device_configurations.by_device_configuration_id('deviceConfiguration-id').patch(request_body)
 
 
 ```

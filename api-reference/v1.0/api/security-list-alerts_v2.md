@@ -14,14 +14,13 @@ Get a list of [alert](../resources/security-alert.md) resources that have been c
 
 This operation lets you filter and sort through alerts to create an informed cyber security response. It exposes a collection of alerts that were flagged in your network, within the time range you specified in your environment retention policy. The most recent alerts are displayed at the top of the list.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|SecurityAlert.Read.All, SecurityAlert.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|SecurityAlert.Read.All, SecurityAlert.ReadWrite.All|
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "security_list_alerts_v2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-list-alerts_v2-permissions.md)]
 
 ## HTTP request
 
@@ -60,7 +59,7 @@ For general information, see [OData query parameters](/graph/query-parameters).
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

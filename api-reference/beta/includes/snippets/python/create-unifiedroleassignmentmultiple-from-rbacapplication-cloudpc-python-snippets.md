@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = UnifiedRoleAssignmentMultiple(
 	odata_type = "#microsoft.graph.unifiedRoleAssignmentMultiple",
@@ -16,10 +16,10 @@ request_body = UnifiedRoleAssignmentMultiple(
 	principal_ids = [
 		"f8ca5a85-489a-49a0-b555-0a6d81e56f0d",
 		"c1518aa9-4da5-4c84-a902-a31404023890",
-	]
+	],
 )
 
-result = await graph_client.role_management.cloud_p_c.role_assignments.post(request_body = request_body)
+result = await graph_client.role_management.cloud_p_c.role_assignments.post(request_body)
 
 
 ```
