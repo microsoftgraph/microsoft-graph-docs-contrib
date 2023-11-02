@@ -1,6 +1,6 @@
 ---
 title: "Chat component in Microsoft Graph Toolkit"
-description: "The Chat component enables the user to have full 1:1 or group conversations. It works with any conversation happening in Microsoft Teams."
+description: "The Chat component enables the user to have 1:1 or group conversations."
 ms.localizationpriority: medium
 author: sebastienlevert
 ---
@@ -8,26 +8,29 @@ author: sebastienlevert
 # Chat component in Microsoft Graph Toolkit
 
 > [!IMPORTANT]
-> This component is in Preview and is subject to change. The use of these components in production applications is not supported.
+> This component is in preview and is subject to change. The use of these components in production applications is not supported.
 
 > [!NOTE]
 > This component is currently only available as a React component and doesn't have a web component equivalent.
 
-The chat component enables the user to have full 1:1 or group conversations. It works with any conversation happening in Microsoft Teams. This component doesn't support Channel conversations.
+> [!NOTE]
+> Depending on its configuration, this component could be leveraging metered APIs and some charges may apply. For details, see [Overview of metered Microsoft 365 APIs in Microsoft Graph](/graph/metered-api-overview).
 
-## Example
+The chat component enables the user to have 1:1 or group conversations. This component doesn't support channel conversations. The component allows for rendering conversations and authoring new messages. All data is stored in Microsoft Teams.
 
-The following example displays a file using the `mgt-chat` component.
+<!-- ## Example
+
+The following example displays a conversation using the `mgt-chat` component.
 
 <iframe height="500" src="https://codepen.io/sebastienlevert/embed/gOqrqYO?default-tab=js%2Cresult&theme-id=light"></iframe>
 
-[Open this example on Codepen](https://codepen.io/sebastienlevert/pen/gOqrqYO)
+[Open this example on Codepen](https://codepen.io/sebastienlevert/pen/gOqrqYO) -->
 
 ## Properties
 
 | Attribute                         | Property         | Description                                                                                            |
 | --------------------------------- | ---------------- | ------------------------------------------------------------------------------------------------------ |
-| chat-id                         | chatId         | A string ID to set the 1:1 or group conversation to render. Required. |
+| chat-id                           | chatId           | A string ID to set the 1:1 or group [conversation](/graph/api/resources/chat) to render. Required.     |
 
 ```typescript
 <Chat chatId="19:25fdc88d202440b78e9229773cbb1713@thread.v2" />
@@ -67,4 +70,4 @@ The `mgt-chat` component doesn't expose any localization variables.
 
 ## Known issues
 
-- The `mgt-chat` component doesn't support the same `chatId` being used in multiple instances of the component, tabs or browsers.
+- The `mgt-chat` component doesn't support the same `chatId` being used in multiple instances of the component or across multiple tabs.

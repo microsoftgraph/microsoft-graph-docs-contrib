@@ -15,7 +15,7 @@ If you're building apps with React, you can use the [`@microsoft/mgt-react` pack
 ::: zone-end
 
 ::: zone pivot="mgt-react-chat"
-If you're building apps with React, you can use the [`@microsoft/mgt-react` package](./mgt-react.md), which wraps Microsoft Graph Toolkit web components in React components and makes it easier to pass complex data. You can also use the `@microsoft/mgt-chat` package, which contains the [`mgt-chat`](../components/chat.md) and [`mgt-new-chat`](../components/new-chat.md) components.
+If you're building apps with React, you can use the [`@microsoft/mgt-react` package](./mgt-react.md), which wraps Microsoft Graph Toolkit web components in React components and makes it easier to pass complex data. To use the [`mgt-chat`](../components/chat.md) and [`mgt-new-chat`](../components/new-chat.md) components, install the separate `@microsoft/mgt-chat` package.
 ::: zone-end
 
 This article describes the step-by-step process of using the Microsoft Graph Toolkit to create a React app and connect it to Microsoft 365. After completing the steps, you'll have a React app that shows the upcoming appointments of the currently signed in user from Microsoft 365.
@@ -67,7 +67,7 @@ npm start
 
 You should be able to open your app in the browser via `http://localhost:3000`.
 
-[!INCLUDE [Entra ID app registration](../includes/aad-app-registration-spa.md)]
+[!INCLUDE [Entra app registration](../includes/aad-app-registration-spa.md)]
 
 ## Connect React app to Microsoft 365
 
@@ -339,7 +339,8 @@ export default App;
 ```
 
 ::: zone pivot="mgt-react-chat"
-### Show user's chat conversation
+
+### Show a user's chat conversation
 
 Next, extend the application to show a conversation from the user's 1:1 and group conversations. You can access this information only after the user has signed in.
 
@@ -358,7 +359,7 @@ By adding the chat components to your application, you need to update the list o
     });
     ```
 
-#### Load user's chat conversation if user is signed in
+#### Load a user's chat conversation if the user is signed in
 
 1. In the code editor, open the **src/App.tsx** file, and extend the component `import` statement with the **Chat** component and types.
 
@@ -477,7 +478,7 @@ export default App;
 
 ::: zone-end
 
-### Test showing user's and chats after they signed in
+### Test showing a user's calendar and chats after they signed in
 
 With these changes, after signing in to your application with your Microsoft account, you should see your calendar.
 
