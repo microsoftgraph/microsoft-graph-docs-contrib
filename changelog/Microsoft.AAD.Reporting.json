@@ -15,7 +15,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "tenantSecureScores",
           "ChangeType": "Addition",
-          "Description": "Added the [tenantSecureScores](https://learn.microsoft.com/en-us/graph/api/recommendation?view=graph-rest-beta) method to the [recommendation](https://learn.microsoft.com/en-us/graph/api/recommendation?view=graph-rest-beta) resource.",
+          "Description": "Added the [Get tenant Secure Score](https://learn.microsoft.com/en-us/graph/api/recommendation-tenantsecurescore?view=graph-rest-beta) method to the [recommendation](https://learn.microsoft.com/en-us/graph/api/resources/recommendation?view=graph-rest-beta) resource.",
           "Target": "recommendation"
         }
       ],
