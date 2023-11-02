@@ -44,7 +44,7 @@ Summaries of daily and monthly user activities on apps registered in your Micros
 |monthly|[monthlyUserInsightMetricsRoot](../resources/monthlyuserinsightmetricsroot.md)|Summaries of monthly user activities on apps registered in your Microsoft Entra External ID for customers tenant.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

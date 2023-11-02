@@ -39,7 +39,7 @@ A container for the different summaries of monthly user activities on apps regis
 |summary|[insightSummary](../resources/insightsummary.md) collection.|Summary of all usage insights on apps registered in the tenant for specified time period.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

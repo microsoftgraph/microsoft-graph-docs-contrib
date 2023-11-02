@@ -35,7 +35,7 @@ Insights for all user requests on apps registered in your Microsoft Entra Extern
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

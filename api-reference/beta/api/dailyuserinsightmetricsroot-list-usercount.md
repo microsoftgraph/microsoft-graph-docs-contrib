@@ -22,6 +22,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|Insights-UserMetrics.Read.All|
 |Application|Insights-UserMetrics.Read.All|
 
+[!INCLUDE [rbac-ciam-user-insights-apis](../includes/rbac-for-apis/rbac-ciam-user-insights-apis.md)]
+
 ## HTTP request
 
 <!-- {
@@ -50,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-Here's an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "list_usercountmetric"
@@ -62,7 +64,7 @@ GET https://graph.microsoft.com/beta/reports/userInsights/daily/userCount
 
 
 ### Response
-Here's an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

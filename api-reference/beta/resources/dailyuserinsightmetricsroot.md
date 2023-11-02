@@ -38,7 +38,7 @@ A container for the different summaries of daily user activities on apps registe
 |userCount|[userCountMetric](../resources/usercountmetric.md) collection.|Insight for total users on apps registered in your tenant for specified time period.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
