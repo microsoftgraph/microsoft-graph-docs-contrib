@@ -1,6 +1,6 @@
 ---
 title: "tenant Secure Score resource type"
-description: "**TODO: Add Description**"
+description: "Represents secure score for a Microsoft Entra tenant"
 author: "sacsai"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access"
@@ -13,25 +13,21 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents secure score for a Microsoft Entra tenant
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createDateTime|DateTimeOffset|**TODO: Add Description**|
-|tenantMaxScore|Int64|**TODO: Add Description**|
-|tenantScore|Int64|**TODO: Add Description**|
+|createDateTime|DateTimeOffset|secure score create datetime.|
+|tenantMaxScore|Int64|Tenant max secure score.|
+|tenantScore|Int64|Tenant secure score.|
 
 ## Relationships
 None.
 
 ## JSON representation
 The following is a JSON representation of the resource.
-<!-- {
-  "blockType": "resource",
-  "@odata.type": "microsoft.graph.tenantSecureScore"
-}
--->
+
 ``` json
 {
   "@odata.type": "#microsoft.graph.tenantSecureScore",
