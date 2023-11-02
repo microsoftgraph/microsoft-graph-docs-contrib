@@ -12,7 +12,7 @@ author: "psignoret"
 Namespace: microsoft.graph
 
 
-Retrieve the list of [appRoleAssignment](../resources/approleassignment.md) that a user has been granted. This operation also returns app role assignments granted to groups that the user is a direct member of.
+Retrieve the list of [appRoleAssignment](../resources/approleassignment.md) that are currently granted to a user. This operation also returns app role assignments granted to groups that the user is a direct member of.
 
 > [!IMPORTANT]
 > To ensure complete results for users with many indirect app role assignments, use the **ConsistencyLevel** header set to `eventual` and `$count`, as described in [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries#group-properties). See [Example 1](#example-1-list-approleassignments-granted-to-a-user) for an example.
@@ -52,7 +52,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -64,7 +64,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-Here is an example of the request to retrieve all app role assignments granted to the user, and to groups where the user is a direct member.
+Here's an example of the request to retrieve all app role assignments granted to the user, and to groups where the user is a direct member.
 
 
 # [HTTP](#tab/http)
@@ -114,7 +114,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -150,7 +150,7 @@ Content-type: application/json
 
 #### Request
 
-Here is an example of the request to retrieve the app roles that have been assigned to a user, filtering by a `resourceId`, which is a GUID type.
+Here's an example of the request to retrieve the app roles that are assigned to a user, filtering by a `resourceId`, which is a GUID type.
 
 
 # [HTTP](#tab/http)
@@ -199,7 +199,7 @@ GET https://graph.microsoft.com/v1.0/users/cdb555e3-b33e-4fd5-a427-17fadacbdfa7/
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
