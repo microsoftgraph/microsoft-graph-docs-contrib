@@ -17434,6 +17434,8 @@ items:
                         href: api/call-cancelmediaprocessing.md
                       - name: Subscribe to tone
                         href: api/call-subscribetotone.md
+                      - name: Send DTMF tone
+                        href: api/call-sendDtmfTones.md
                   - name: Large gallery view operation
                     items:
                       - name: Add large gallery view
