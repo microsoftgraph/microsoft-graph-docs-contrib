@@ -19,13 +19,10 @@ Create an [appManagementPolicy](../resources/appManagementPolicy.md) object.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Policy.ReadWrite.ApplicationConfiguration   |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Policy.ReadWrite.ApplicationConfiguration   |
+<!-- { "blockType": "permissions", "name": "appmanagementpolicy_post" } -->
+[!INCLUDE [permissions-table](../includes/permissions/appmanagementpolicy-post-permissions.md)]
 
 [!INCLUDE [rbac-app-auth-method-custom-policy-api-update](../includes/rbac-for-apis/rbac-app-auth-method-custom-policy-api-update.md)]
 
@@ -67,7 +64,7 @@ If successful, this method returns a `201 Created` response code with the new [a
 
 ### Request
 
-The following is an example of the request. This request created an app management policy with the following settings:
+The following example shows a request. This request created an app management policy with the following settings:
 
 - Enables the policy.
 - Blocks creating of new passwords for applications and service principals created on or after 2019-10-19 at 10:37 AM UTC time.
@@ -116,6 +113,15 @@ POST https://graph.microsoft.com/beta/policies/appManagementPolicies
                 "restrictionType": "asymmetricKeyLifetime",
                 "maxLifetime": "P90D",
                 "restrictForAppsCreatedAfterDateTime": "2014-10-19T10:37:00Z"
+            },
+            {
+                "restrictionType": "trustedCertificateAuthority",
+                "restrictForAppsCreatedAfterDateTime": "2019-10-19T10:37:00Z",
+                "certificateBasedApplicationConfigurationIds": [
+                    "eec5ba11-2fc0-4113-83a2-ed986ed13743",
+                    "bb8e164b-f9ed-4b98-bc45-65eddc14f4c1"
+                ],
+                "maxLifetime": null
             }
         ]
     }
@@ -155,7 +161,7 @@ POST https://graph.microsoft.com/beta/policies/appManagementPolicies
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

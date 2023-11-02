@@ -1,6 +1,6 @@
 ---
 title: "getRoleScopeTagsById action"
-description: ""
+description: "Intune Rbac Rolescopetag Getrolescopetagsbyid Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

@@ -1,6 +1,6 @@
 ---
 title: "validateXml action"
-description: ""
+description: "Intune Apps Mobileapp Validatexml Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

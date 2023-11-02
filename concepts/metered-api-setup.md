@@ -10,7 +10,7 @@ ms.custom: scenarios:getting-started
 
 Some APIs and services in Microsoft Graph are [metered and require payment for use](metered-api-overview.md). For a current list of APIs that require payment, see [Metered APIs and services in Microsoft Graph](metered-api-list.md).
 
-To consume metered APIs and services in Microsoft Graph, the application registration for the Azure Active Directory application that consumes the APIs must be associated with an Azure subscription. This subscription will be billed for any metered charges. This association also allows you to use [Azure Cost Management + Billing](/azure/cost-management-billing/) to understand and manage the costs of the application.
+To consume metered APIs and services in Microsoft Graph, the application registration for the Microsoft Entra application that consumes the APIs must be associated with an Azure subscription. This subscription will be billed for any metered charges. This association also allows you to use [Azure Cost Management + Billing](/azure/cost-management-billing/) to understand and manage the costs of the application.
 
 This article describes how to associate your application with an Azure subscription.
 
@@ -20,7 +20,7 @@ This article describes how to associate your application with an Azure subscript
 
 Before you can access metered APIs and services in Microsoft Graph, you must complete the following steps:
 
-- Create an application registration in Azure Active Directory (Azure AD) for the application that will be making calls to the metered Microsoft 365 APIs and services.
+- Create an application registration in Microsoft Entra ID for the application that will be making calls to the metered Microsoft 365 APIs and services.
 - If you don't have an Azure subscription, [create one](https://azure.microsoft.com/pricing/purchase-options/) now in the tenant that includes the application registration.
 - You must have contributor permissions to the active Azure subscription you want to use, as well as application owner permissions for the target application registration.
 - If you plan to use protected APIs, submit a request form, as applicable:
@@ -28,7 +28,7 @@ Before you can access metered APIs and services in Microsoft Graph, you must com
   - [SharePoint protected API request form](https://aka.ms/PreviewSPOPremiumAPI)
 
 ## Enable an application
-To enable an application to use metered APIs and services in Microsoft Graph, it must be associated with an Azure subscription. To create this association, you must create an Azure resource of type **Microsoft.GraphServices/accounts**. The Azure resource connects a single Azure AD application registration with the Azure subscription where the application's usage of metered APIs is billed.
+To enable an application to use metered APIs and services in Microsoft Graph, it must be associated with an Azure subscription. To create this association, you must create an Azure resource of type **Microsoft.GraphServices/accounts**. The Azure resource connects a single Microsoft Entra application registration with the Azure subscription where the application's usage of metered APIs is billed.
 
 Use the following steps to create and link a **Microsoft.GraphServices/accounts** Azure resource to your application:
 
@@ -181,4 +181,3 @@ The invoice will include details that allow you to understand the amount of usag
 
 - [Overview of metered APIs and services in Microsoft Graph](/graph/metered-api-overview)
 - [Metered APIs and services in Microsoft Graph](/graph/metered-api-list)
-

@@ -17,17 +17,14 @@ Send activity feed notifications to multiple users, in bulk.
 For more details about sending notifications and the requirements for doing so, see
 [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | TeamsActivity.Send                          |
-| Delegated (personal Microsoft account) | Not Supported.                              |
-| Application                            | TeamsActivity.Send                          |
+<!-- { "blockType": "permissions", "name": "teamwork_sendactivitynotificationtorecipients" } -->
+[!INCLUDE [permissions-table](../includes/permissions/teamwork-sendactivitynotificationtorecipients-permissions.md)]
 
 ## HTTP request
 
@@ -62,7 +59,7 @@ The following table shows the parameters that can be used with this action.
 | chainId            | Int64                                                        | Optional. Used to override a previous notification. Use the same `chainId` in subsequent requests to override the previous notification. |
 | previewText        | [itemBody](../resources/itembody.md)                         | Preview text for the notification. Microsoft Teams will only show first 150 characters. |
 | templateParameters | [keyValuePair](../resources/keyvaluepair.md) collection      | Values for template variables defined in the activity feed entry corresponding to `activityType` in [Teams app manifest](/microsoftteams/platform/overview). |
-| teamsAppId         | String                                                       | Optional. Teams app ID of the Teams app associated with the notification. Used to disambiguate installed apps when multiple apps with the same Azure AD app ID are installed for the same recipient user. |
+| teamsAppId         | String                                                       | Optional. Teams app ID of the Teams app associated with the notification. Used to disambiguate installed apps when multiple apps with the same Microsoft Entra app ID are installed for the same recipient user. |
 | recipients         | [teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md) collection | Recipients of the notification. Only recipients of type [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md) are supported. There is an upper limit of 100 recipients in a single request. |
 
 The following resource is supported when setting the `source` value of the **topic** property to `entityUrl`:

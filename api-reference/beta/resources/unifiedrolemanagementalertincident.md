@@ -1,6 +1,6 @@
 ---
 title: "unifiedRoleManagementAlertIncident resource type"
-description: "An abstract type that represents the details of a security alert incident in Privileged Identity Management (PIM) for Azure AD roles."
+description: "An abstract type that represents the details of a security alert incident in your tenant in Privileged Identity Management (PIM) for Microsoft Entra roles."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract type that represents the details of an incident as part of a security [alert](unifiedrolemanagementalert.md) in [Privileged Identity Management (PIM) for Azure AD roles](privilegedidentitymanagementv3-overview.md).
+An abstract type that represents the details of an incident as part of a security [alert](unifiedrolemanagementalert.md) in [Privileged Identity Management (PIM) for Microsoft Entra roles](privilegedidentitymanagementv3-overview.md).
 
 This abstract type is inherited by the following derived types:
 
@@ -26,6 +26,8 @@ This abstract type is inherited by the following derived types:
 - [tooManyGlobalAdminsAssignedToTenantAlertIncident](toomanyglobaladminsassignedtotenantalertincident.md)
 
 Inherits from [entity](../resources/entity.md).
+
+For more information about working with security alerts for Microsoft Entra roles using PIM APIs, see [Manage security alerts for Microsoft Entra roles using PIM APIs in Microsoft Graph](/graph/how-to-pim-alerts).
 
 ## Methods
 |Method|Return type|Description|
@@ -59,3 +61,5 @@ The following is a JSON representation of the resource.
 }
 ```
 
+## See also
++ [Manage security alerts for Microsoft Entra roles using PIM APIs in Microsoft Graph](/graph/how-to-pim-alerts).
