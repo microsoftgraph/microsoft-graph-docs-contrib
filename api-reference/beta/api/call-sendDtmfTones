@@ -1,0 +1,20 @@
+---
+title: "call: sendDtmfTones"
+description: "Send DTMF tones in the call."
+author: "jackry2023"
+localization_priority: Normal
+ms.prod: "cloud-communications"
+doc_type: apiPageType
+---
+
+# call: sendDtmfTones
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Send DTMF tones in the call.
+
+For more information about how to handle operations, see [commsOperation](../resources/commsoperation.md)
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
