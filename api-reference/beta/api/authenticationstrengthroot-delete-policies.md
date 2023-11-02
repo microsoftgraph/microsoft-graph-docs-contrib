@@ -2,6 +2,7 @@
 title: "Delete authenticationStrengthPolicy"
 description: "Delete a custom authenticationStrengthPolicy object."
 author: "InbarckMS"
+ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

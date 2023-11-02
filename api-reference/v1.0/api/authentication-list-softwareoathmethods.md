@@ -2,6 +2,7 @@
 title: "List softwareOathMethods"
 description: "Retrieve a list of a user's softwareOathAuthenticationMethods objects and their properties."
 author: "jpettere"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

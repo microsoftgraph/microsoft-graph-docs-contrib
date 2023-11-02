@@ -2,6 +2,7 @@
 title: "Get fido2AuthenticationMethod"
 description: "Read the properties and relationships of a fido2AuthenticationMethod object."
 author: "calvinlui"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

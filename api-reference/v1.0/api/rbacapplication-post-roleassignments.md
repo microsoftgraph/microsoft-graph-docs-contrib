@@ -3,6 +3,7 @@ title: "Create unifiedRoleAssignment"
 description: "Create a new unifiedRoleAssignment object."
 ms.localizationpriority: medium
 author: "DougKirschner"
+ms.reviewer: msodsrbac
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
