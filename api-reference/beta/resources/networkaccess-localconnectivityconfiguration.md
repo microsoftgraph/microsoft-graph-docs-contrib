@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies the connectivity settings for endpoints of device links.
+Specifies Microsoft's end of the tunnel configuration for a device link.
 
 ## Properties
 |Property|Type|Description|
