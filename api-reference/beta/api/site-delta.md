@@ -74,12 +74,12 @@ In addition to the collection of **site** objects, the response also includes on
 
 In some cases, the service returns a `410 Gone` response code with an error response that contains one of the following error codes, and a `Location` header that contains a new `nextLink` that starts a fresh delta enumeration. This occurs when the service can't provide a list of changes for a given token; for example, if a client tries to reuse an old token after being disconnected for a long time, or if the server state has changed and a new token is required.
 
-After the full enumeration is completed, compare the returned items with your local state and follow the instructions based on the error type.
+After the full enumeration is completed, compare the returned sites with your local state and follow the instructions based on the error type.
 
 | Error type                     | Instructions                                                                                                                               |
 |:-------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------|
 | resyncChangesApplyDifferences  | Replace any local sites with the versions from the server (including deletes) if you're sure that the service was up-to-date with your local changes when you last synchronized. Upload any local changes that the server doesn't know about. |
-| resyncChangesUploadDifferences | Upload any local sites that the service didn't return and upload any items that differ from the versions from the server. Keep both copies if you're not sure which one is more up-to-date.                                       |
+| resyncChangesUploadDifferences | Upload any local sites that the service didn't return and upload any sites that differ from the versions from the server. Keep both copies if you're not sure which one is more up-to-date.                                       |
 
 In addition to the resync errors and for more details about how errors are returned, see [Microsoft Graph error responses and resource types](/graph/errors).
 
@@ -146,7 +146,7 @@ GET https://graph.microsoft.com/beta/sites/delta?token=1230919asd190410jlka
 
 The following example shows the response that indicates that the site named `teamSiteA` was deleted and the site `teamSiteB` was either added or modified between the initial request and this request to update the local state.
 
-The final page of sites includes the **@odata.deltaLink** property that provides the URL that can be used later to retrieve changes since the current set of items.
+The final page of sites includes the **@odata.deltaLink** property that provides the URL that can be used later to retrieve changes since the current set of sites.
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "Collection(microsoft.graph.site)", "scope": "site.read" } -->
 
