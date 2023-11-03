@@ -1,6 +1,6 @@
 ---
 title: "Delete dayNote"
-description: "Delete a dayNote object with the specified id."
+description: "Delete a dayNote object."
 author: fmcgurrenw
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [dayNote](../resources/daynote.md) object with the specified id.
+Delete a [dayNote](../resources/daynote.md) object.
 
 
 ## Permissions
@@ -32,7 +32,7 @@ DELETE /teams/{teamsId}/schedule/dayNotes/{dayNoteId}
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
