@@ -24,9 +24,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 [!INCLUDE [permissions-table](../includes/permissions/recommendation-tenantsecurescores-permissions.md)]
 
-<!-- { "blockType": "permissions", "name": "recommendation_tenantsecurescores" } -->
-[!INCLUDE [permissions-table](../includes/permissions/recommendation-tenantsecurescores-permissions.md)]
-
 [!INCLUDE [rbac-directory-recommendations-apis-read](../includes/rbac-for-apis/rbac-directory-recommendations-apis-read.md)]
 
 ## HTTP request
