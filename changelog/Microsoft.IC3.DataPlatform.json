@@ -57,7 +57,15 @@
                     "ChangeType": "Deprecation",
                     "Description": "Deprecated the `organizer` property from the [callRecord](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-callRecord?view=graph-rest-beta) resource",
                     "Target": "callRecord"
-                }
+                },
+                {
+                    "Id": "d9a7ce16-e0a6-401b-947e-2e64382f0c68",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "participantBase",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [participantBase](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participantBase?view=graph-rest-beta) resource",
+                    "Target": "participantBase"
+                  }
             ],
             "Id": "5c4af81d-eebf-4c90-a5a9-c23d898dee72",
             "Cloud": "Prod",
