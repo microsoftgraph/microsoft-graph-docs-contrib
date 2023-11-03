@@ -41,7 +41,7 @@ Microsoft Graph Data Connect currently supports the following datasets. To view 
 | --- | --- | --- |
 | OwnedDevices_v0 | Provides detailed information related to all the devices that are owned by each user in the organization. | [OwnedDevices_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-owneddevices.md) |
 | RegisteredDevices_v0 | Provides detailed information related to all the devices that a user is registered on in the organization. | [RegisteredDevices_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-registereddevices.md) |
-| LicenseDetails_v0 | Provides details for user’s licenses that are directly assigned and those transitively assigned through memberships in licensed groups | [RegisteredDevices_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-licensedetails.md) |
+| LicenseDetails_v0 | Provides details for user’s licenses that are directly assigned and those transitively assigned through memberships in licensed groups. | [LicenseDetails_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-licensedetails.md) |
 
 ### Event
 
