@@ -22,7 +22,7 @@ The following tables show the least privileged permission or permissions require
 <!-- { "blockType": "permissions", "name": "administrativeunit_post_members" } -->
 [!INCLUDE [permissions-table](../includes/permissions/administrativeunit-post-members-permissions.md)]
 
-To add a user, group, or device to an administrative unit, the calling principal must be assigned one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference):
+To add a user, group, or device to an administrative unit, the calling principal must be assigned one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
 * Privileged Role Administrator
 * Global Administrator
@@ -31,7 +31,7 @@ To add a user, group, or device to an administrative unit, the calling principal
 <!-- { "blockType": "permissions", "name": "administrativeunit_post_members_2" } -->
 [!INCLUDE [permissions-table](../includes/permissions/administrativeunit-post-members-2-permissions.md)]
 
-To create a new group in an administrative unit, the calling principal must be assigned one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference):
+To create a new group in an administrative unit, the calling principal must be assigned one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
 * Privileged Role Administrator
 * Global Administrator
