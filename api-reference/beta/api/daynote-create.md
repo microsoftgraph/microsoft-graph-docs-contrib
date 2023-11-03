@@ -7,7 +7,7 @@ ms.prod: microsoft-teams
 doc_type: apiPageType
 ---
 
-# Update dayNote
+# Create dayNote
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
