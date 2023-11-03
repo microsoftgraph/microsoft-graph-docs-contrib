@@ -11232,7 +11232,7 @@ items:
                 href: api/externalconnectors-externalgroup-post-members.md
               - name: Delete
                 href: api/externalconnectors-externalgroupmember-delete.md
-           - name: External item
+          - name: External item
             items:
               - name: External item
                 href: resources/externalconnectors-externalitem.md
