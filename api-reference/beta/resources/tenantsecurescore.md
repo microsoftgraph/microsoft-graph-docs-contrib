@@ -1,6 +1,6 @@
 ---
-title: "tenant Secure Score resource type"
-description: "Represents secure score for a Microsoft Entra tenant"
+title: "tenantSecureScore resource type"
+description: "Represents the Secure Score for a Microsoft Entra tenant."
 author: "sacsai"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access"
@@ -13,20 +13,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents secure score for a Microsoft Entra tenant
+Represents the Secure Score for a Microsoft Entra tenant.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createDateTime|DateTimeOffset|secure score create datetime.|
-|tenantMaxScore|Int64|Tenant max secure score.|
-|tenantScore|Int64|Tenant secure score.|
+|createDateTime|DateTimeOffset|When this Secure Score was created.|
+|tenantMaxScore|Int64|The maximum historical Secure Score for the tenant.|
+|tenantScore|Int64|The Secure Score.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 ``` json
 {
