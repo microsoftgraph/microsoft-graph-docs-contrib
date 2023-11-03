@@ -69,4 +69,43 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [platformCredentialAuthenticationMethod](../resources/platformcredentialauthenticationmethod.md) object in the response body.
 
+## Examples
 
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_platformcredentialauthenticationmethod_1",
+  "sampleKeys": ["R18B3t8Ogh9XIOGmPt81d6p_KXJs1YTxfGgGqeVFJSM1"]
+}-->
+
+``` http
+GET https://graph.microsoft.com/beta/me/authentication/platformCredentialMethods/R18B3t8Ogh9XIOGmPt81d6p_KXJs1YTxfGgGqeVFJSM1
+```
+
+#### Response
+
+The following is an example of the response.
+
+**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.platformCredentialAuthenticationMethod"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "value": {
+      "id": "R18B3t8Ogh9XIOGmPt81d6p_KXJs1YTxfGgGqeVFJSM1",
+      "displayName": "My Macbook Pro",
+      "creationDateTime": "2023-09-02T04:16:49Z"
+  }
+}
+```
