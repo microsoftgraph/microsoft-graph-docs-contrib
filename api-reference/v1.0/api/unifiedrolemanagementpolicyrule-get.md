@@ -21,25 +21,17 @@ Retrieve a rule or settings defined for a role management policy. The rule can b
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
-<a name='for-pim-for-azure-ad-roles'></a>
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### For PIM for Microsoft Entra roles
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|RoleManagementPolicy.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|RoleManagementPolicy.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
+<!-- { "blockType": "permissions", "name": "unifiedrolemanagementpolicyrule_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedrolemanagementpolicyrule-get-permissions.md)]
 
 ### For PIM for groups
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|RoleManagementPolicy.Read.AzureADGroup, RoleManagementPolicy.ReadWrite.AzureADGroup|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|RoleManagementPolicy.Read.AzureADGroup, RoleManagementPolicy.ReadWrite.AzureADGroup|
+<!-- { "blockType": "permissions", "name": "unifiedrolemanagementpolicyrule_get_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedrolemanagementpolicyrule-get-2-permissions.md)]
 
 ## HTTP request
 
@@ -61,7 +53,7 @@ This method supports some of the OData query parameters to help customize the re
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -156,6 +148,7 @@ Content-Type: application/json
 
 The following example retrieves a role management policy rule with ID `Expiration_Admin_Eligibility`.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_unifiedrolemanagementpolicyrule_azureADGroup",
@@ -166,9 +159,43 @@ The following example retrieves a role management policy rule with ID `Expiratio
 GET https://graph.microsoft.com/v1.0/policies/roleManagementPolicies/Group_60bba733-f09d-49b7-8445-32369aa066b3_f21b26d9-9ff9-4af1-b1d4-bddf28591369/rules/Expiration_Admin_Eligibility
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedrolemanagementpolicyrule-azureadgroup-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-unifiedrolemanagementpolicyrule-azureadgroup-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-unifiedrolemanagementpolicyrule-azureadgroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-unifiedrolemanagementpolicyrule-azureadgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-unifiedrolemanagementpolicyrule-azureadgroup-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-unifiedrolemanagementpolicyrule-azureadgroup-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-unifiedrolemanagementpolicyrule-azureadgroup-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-unifiedrolemanagementpolicyrule-azureadgroup-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

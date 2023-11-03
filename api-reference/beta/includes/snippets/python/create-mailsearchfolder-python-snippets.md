@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = MailSearchFolder(
 	odata_type = "microsoft.graph.mailSearchFolder",
@@ -14,11 +14,11 @@ request_body = MailSearchFolder(
 	include_nested_folders = True,
 	source_folder_ids = [
 		"AQMkADYAAAIBDAAAAA==",
-	]
+	],
 	filter_query = "contains(subject, 'weekly digest')",
 )
 
-result = await graph_client.me.mail_folders.by_mail_folder_id('mailFolder-id').child_folders.post(body = request_body)
+result = await graph_client.me.mail_folders.by_mail_folder_id('mailFolder-id').child_folders.post(request_body)
 
 
 ```

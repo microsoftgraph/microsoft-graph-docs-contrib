@@ -68,7 +68,7 @@ If successful, this method returns a `200 OK` response code and the requested li
 
 #### Request
 
-Here's an example of the request to get the list of [participants](../resources/callrecords-participant.md) for a [callRecord](../resources/callrecords-callrecord.md).
+The following example shows a request to get the list of [participants](../resources/callrecords-participant.md) for a [callRecord](../resources/callrecords-callrecord.md).
 
 <!-- {
   "blockType": "request",
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/{id}/participant
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -97,56 +97,56 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-	"@odata.context": "https://graph.microsoft.com/$metadata#communications/callRecords('614e3ff0-4728-4394-8c03-52fb3b967fde')/participants_v2",
-	"@odata.nextLink": "https://graph.microsoft.com/beta/communications/callRecords/614e3ff0-4728-4394-8c03-52fb3b967fde/participants_v2",
-	"value": [
-		{
-			"id": "00005994-851d-4988-bbc3-413bbf089e13",
-			"identity": {
-				"acsUser": null,
-				"spoolUser": null,
-				"phone": null,
-				"guest": null,
-				"encrypted": null,
-				"onPremises": null,
-				"acsApplicationInstance": null,
-				"spoolApplicationInstance": null,
-				"applicationInstance": null,
-				"application": null,
-				"device": null,
-				"user": {
-					"@odata.type": "#microsoft.graph.callRecords.userIdentity",
-					"id": "00005994-851d-4988-bbc3-413bbf089e13",
-					"displayName": "Anette Thomsen",
-					"tenantId": "dc368399-474c-4d40-900c-6265431fd81f",
-					"userPrincipalName": "anette.thomsen@contoso.com"
-				}
-			}
-		},
-		{
-			"id": "13fd6bf0-f646-4b82-b0ad-cd28ce10d6e3",
-			"identity": {
-				"acsUser": null,
-				"spoolUser": null,
-				"phone": null,
-				"guest": null,
-				"encrypted": null,
-				"onPremises": null,
-				"acsApplicationInstance": null,
-				"spoolApplicationInstance": null,
-				"applicationInstance": null,
-				"application": null,
-				"device": null,
-				"user": {
-					"@odata.type": "#microsoft.graph.callRecords.userIdentity",
-					"id": "13fd6bf0-f646-4b82-b0ad-cd28ce10d6e3",
-					"displayName": "Daichi Maruyama",
-					"tenantId": "dc368399-474c-4d40-900c-6265431fd81f",
-					"userPrincipalName": "daichi.maruyama@contoso.com"
-				}
-			}
-		}
-	]
+  "@odata.context": "https://graph.microsoft.com/$metadata#communications/callRecords('614e3ff0-4728-4394-8c03-52fb3b967fde')/participants_v2",
+  "@odata.nextLink": "https://graph.microsoft.com/beta/communications/callRecords/614e3ff0-4728-4394-8c03-52fb3b967fde/participants_v2",
+  "value": [
+    {
+      "id": "00005994-851d-4988-bbc3-413bbf089e13",
+      "identity": {
+        "acsUser": null,
+        "spoolUser": null,
+        "phone": null,
+        "guest": null,
+        "encrypted": null,
+        "onPremises": null,
+        "acsApplicationInstance": null,
+        "spoolApplicationInstance": null,
+        "applicationInstance": null,
+        "application": null,
+        "device": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.callRecords.userIdentity",
+          "id": "00005994-851d-4988-bbc3-413bbf089e13",
+          "displayName": "Anette Thomsen",
+          "tenantId": "dc368399-474c-4d40-900c-6265431fd81f",
+          "userPrincipalName": "anette.thomsen@contoso.com"
+        }
+      }
+    },
+    {
+      "id": "13fd6bf0-f646-4b82-b0ad-cd28ce10d6e3",
+      "identity": {
+        "acsUser": null,
+        "spoolUser": null,
+        "phone": null,
+        "guest": null,
+        "encrypted": null,
+        "onPremises": null,
+        "acsApplicationInstance": null,
+        "spoolApplicationInstance": null,
+        "applicationInstance": null,
+        "application": null,
+        "device": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.callRecords.userIdentity",
+          "id": "13fd6bf0-f646-4b82-b0ad-cd28ce10d6e3",
+          "displayName": "Daichi Maruyama",
+          "tenantId": "dc368399-474c-4d40-900c-6265431fd81f",
+          "userPrincipalName": "daichi.maruyama@contoso.com"
+        }
+      }
+    }
+  ]
 }
 ```
 
@@ -157,5 +157,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Subscription(
 	change_type = "created",
@@ -16,7 +16,7 @@ request_body = Subscription(
 	client_state = "secretClientState",
 )
 
-result = await graph_client.subscriptions.post(body = request_body)
+result = await graph_client.subscriptions.post(request_body)
 
 
 ```

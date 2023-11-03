@@ -20,13 +20,10 @@ Get a list of [servicePrincipalSignInActivity](../resources/serviceprincipalsign
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | AuditLog.Read.All, Directory.Read.All       |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | AuditLog.Read.All, Directory.Read.All       |
+<!-- { "blockType": "permissions", "name": "reportroot_list_serviceprincipalsigninactivities" } -->
+[!INCLUDE [permissions-table](../includes/permissions/reportroot-list-serviceprincipalsigninactivities-permissions.md)]
 
 
 ## HTTP request
@@ -49,7 +46,7 @@ This method supports the `$top`, `$filter`, and `$orderby` OData query parameter
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -61,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -108,7 +105,7 @@ GET https://graph.microsoft.com/beta/reports/servicePrincipalSignInActivities
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -180,7 +177,7 @@ The following example shows how to get a **servicePrincipalSignInActivity** obje
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -227,7 +224,7 @@ GET https://graph.microsoft.com/beta/reports/servicePrincipalSignInActivities?$f
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

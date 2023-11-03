@@ -15,7 +15,7 @@ var requestBody = new Attachment
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"item" , new 
+			"item" , new Message
 			{
 				OdataType = "microsoft.graph.message",
 			}

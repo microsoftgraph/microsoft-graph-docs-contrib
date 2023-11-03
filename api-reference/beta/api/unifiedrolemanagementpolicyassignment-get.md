@@ -17,25 +17,17 @@ Get the details of a policy assignment in PIM that's assigned to Microsoft Entra
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
-<a name='for-pim-for-azure-ad-roles'></a>
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### For PIM for Microsoft Entra roles
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|RoleManagementPolicy.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|RoleManagementPolicy.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
+<!-- { "blockType": "permissions", "name": "unifiedrolemanagementpolicyassignment_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedrolemanagementpolicyassignment-get-permissions.md)]
 
 ### For PIM for groups
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|RoleManagementPolicy.Read.AzureADGroup, RoleManagementPolicy.ReadWrite.AzureADGroup|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|RoleManagementPolicy.Read.AzureADGroup, RoleManagementPolicy.ReadWrite.AzureADGroup|
+<!-- { "blockType": "permissions", "name": "unifiedrolemanagementpolicyassignment_get_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedrolemanagementpolicyassignment-get-2-permissions.md)]
 
 ## HTTP request
 
@@ -57,7 +49,7 @@ This method supports the `$select` and `$expand` OData query parameters to help 
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -71,7 +63,7 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleM
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -119,7 +111,7 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments/Di
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -146,7 +138,7 @@ Content-Type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -194,7 +186,7 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments/Gr
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

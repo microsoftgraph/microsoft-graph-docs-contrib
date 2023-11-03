@@ -17,13 +17,10 @@ Delete an [ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetqu
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|eDiscovery.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+<!-- { "blockType": "permissions", "name": "security_ediscoveryreviewset_delete_queries" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-ediscoveryreviewset-delete-queries-permissions.md)]
 
 ## HTTP request
 
@@ -41,7 +38,7 @@ DELETE /security/cases/ediscoveryCases/{eDiscoveryCaseId}/reviewSets/{ediscovery
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -97,7 +94,7 @@ DELETE https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/58399dff-
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
