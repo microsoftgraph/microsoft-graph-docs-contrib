@@ -151,11 +151,13 @@ These properties are temporary and either define behavior the service should per
 | @microsoft.graph.downloadUrl      | string | A URL that can be used to download this file's content. Authentication isn't required with this URL. Read-only.
 | @microsoft.graph.sourceUrl        | string | This instance annotation can be used to instruct the service to download the contents of the URL when issuing a PUT request, and stores it as the file. Write-only.
 
-**Note:** The @microsoft.graph.downloadUrl value is a short-lived URL and can't be cached.
-The URL is only available for a short period of time (1 hour) before it's invalidated.
+>**Notes:**
+>The parameter `@microsoft.graph.conflictBehavior` should be included in the URL instead of the body of the request.
+>
+>The `@microsoft.graph.downloadUrl` value is a short-lived URL and can't be cached. The URL is invalidated after for a short period of time (1 hour).
 Removing file permissions for a user might not immediately invalidate the URL.
-
->**Note:** The parameter @microsoft.graph.conflictBehavior should be included in the URL instead of the body of the request.
+>
+>Using the `@microsoft.graph.sourceUrl` property for file uploading is [not supported](/onedrive/developer/rest-api/api/driveitem_upload_url?view=odsp-graph-online#remarks&preserve-view=true) in OneDrive for Business, SharePoint Online, and SharePoint Server 2016.
 
 ## JSON representation
 
