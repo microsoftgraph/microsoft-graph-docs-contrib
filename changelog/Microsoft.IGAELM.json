@@ -2,6 +2,24 @@
   "changelog": [
       {
         "ChangeList": [
+          {
+            "Id": "43e8b399-4f23-42a9-9e6d-b1c809f035de",
+            "ApiChange": "Property",
+            "ChangedApiName": "attributes",
+            "ChangeType": "Addition",
+            "Description": "Added the **attributes** property to the [accessPackageResource](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageResource?view=graph-rest-1.0) resource.",
+            "Target": "accessPackageResource"
+          }
+         ],
+         "Id": "43e8b399-4f23-42a9-9e6d-b1c809f035de",
+         "Cloud": "Prod",
+         "Version": "v1.0",
+         "CreatedDateTime": "2023-11-03T22:22:46.6246683Z",
+         "WorkloadArea": "Identity and access",
+         "SubArea": "Governance"
+      },
+      {
+        "ChangeList": [
         {
           "Id": "800896d9-7cab-47e8-a9af-7d9e23addbeb",
           "ApiChange": "Resource",
