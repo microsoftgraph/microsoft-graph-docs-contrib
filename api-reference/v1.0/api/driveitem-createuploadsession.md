@@ -11,9 +11,9 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Create an upload session to allow your app to upload files up to the maximum file size.
-An upload session allows your app to upload ranges of the file in sequential API requests. Upload sessions allow the transfer to be resumed if a connection is dropped while the upload is in progress.
+An upload session allows your app to upload ranges of the file in sequential API requests. Upload sessions also allow the transfer to resume if a connection is dropped while the upload is in progress.
 
-To upload a file using an upload session, there are two steps:
+To upload a file using an upload session:
 
 1. [Create an upload session](#create-an-upload-session)
 2. [Upload bytes to the upload session](#upload-bytes-to-the-upload-session)
@@ -32,11 +32,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 To begin a large file upload, your app must first request a new upload session.
 This request creates a temporary storage location where the bytes of the file are saved until the complete file is uploaded.
 When the last byte of the file is uploaded, the upload session is completed and the final file is shown in the destination folder.
-Alternatively, you can defer final creation of the file in the destination until you explicitly make a request to complete the upload, by setting the `deferCommit` property in the request arguments.
+Alternatively, you can defer final creation of the file in the destination until you explicitly make a request to complete the upload, by setting the **deferCommit** property in the request arguments.
 
 ### HTTP request
 
-To upload a new file, you must provide both the parent's ID and the new file name in the request. However an update only requires the ID of the item that will be updated.
+To upload a new file, you must provide both the parent ID and the new file name in the request. However, an update only requires the ID of the item that will be updated.
 
 #### Create new file
 
@@ -68,10 +68,9 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 
 ### Request body
 
-No request body is required.
-However, you can specify properties in the request body to provide more information about the file being uploaded and to customize the semantics of the upload operation.
+No request body is required. However, you can specify properties in the request body to provide more information about the file being uploaded and to customize the semantics of the upload operation.
 
-For example, the `item` property allows setting the following parameters:
+For example, the **item** property allows setting the following parameters:
 <!-- { "blockType": "ignored" } -->
 ```json
 {
@@ -82,7 +81,7 @@ For example, the `item` property allows setting the following parameters:
 }
 ```
 
-The following example controls the behavior if the filename is already taken. The example also specifies that the final file shouldn't be created until an explicit completion request is made:
+The following example controls the behavior if the filename is already taken. The example also specifies that the final file shouldn't be created until an explicit completion request is made.
 
 <!-- { "blockType": "ignored" } -->
 ```json
@@ -156,7 +155,7 @@ You can upload the entire file, or split the file into multiple byte ranges, as 
 The fragments of the file must be uploaded sequentially in order.
 Uploading fragments out of order results in an error.
 
-**Note:** If your app splits a file into multiple byte ranges, the size of each byte range **MUST** be a multiple of 320 KiB (327,680 bytes).
+>**Note:** If your app splits a file into multiple byte ranges, the size of each byte range **MUST** be a multiple of 320 KiB (327,680 bytes).
 
 Using a fragment size that doesn't divide evenly by 320 KiB results in errors committing some files.
 
