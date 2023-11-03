@@ -5055,7 +5055,7 @@ items:
               - name: Delete
                 href: api/schemaextension-delete.md
       - name: External data connections
-      items:
+        items:
         - name: Overview
           href: resources/connectors-api-overview.md
         - name: External connection
