@@ -75,7 +75,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft-ppe.com/beta/$metadata#Collection(microsoft.graph.tenantSecureScore)",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.tenantSecureScore)",
     "value": [
         {
             "tenantScore": 11,
