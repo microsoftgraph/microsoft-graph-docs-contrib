@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the historical Secure Score data for your Microsoft Entra tenant. This API returns the latest score and doesn't include the details for each control. To view detailed information, see the [secureScore resource type](../resources/securescore.md) and its associated methods.
+Get the historical Secure Score data for your Microsoft Entra tenant. This API returns the latest score and doesn't include the details for each control. To view detailed information, see the [secureScore resource type](../resources/securescores.md) and its associated methods.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
