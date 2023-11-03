@@ -439,9 +439,9 @@
         {
           "Id": "c76057f0-1a05-42c7-af8e-df9b17700878",
           "ApiChange": "Relationship",
-          "ChangedApiName": "pronounsSettings",
+          "ChangedApiName": "pronouns",
           "ChangeType": "Addition",
-          "Description": "Added the **pronounsSettings** relationship to the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-1.0) resource.",
+          "Description": "Added the **pronouns** relationship to the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-1.0) resource.",
           "Target": "peopleAdminSettings"
         }
       ],
@@ -449,8 +449,8 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2023-08-23T12:32:45Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": "People admin settings"
     }
   ]
 }
