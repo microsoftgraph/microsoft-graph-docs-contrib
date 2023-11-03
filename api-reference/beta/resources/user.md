@@ -102,7 +102,7 @@ This resource supports:
 | [getMailTips](../api/user-getmailtips.md) | [mailTips](mailtips.md) collection | Return the MailTips of one or more recipients as available to the signed-in user. |
 | [List mailFolders](../api/user-list-mailfolders.md) | [mailFolder](mailfolder.md) collection | Get the mail folder collection under the root folder of the signed-in user. |
 | [List messages](../api/user-list-messages.md) | [message](message.md) collection | Get all the messages in the signed-in user's mailbox. |
-| [List overrides](../api/inferenceclassification-list-overrides.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md) collection | Get the focused inbox overrides that a user sets up always to classify messages from certain senders in specific ways. |
+| [List overrides](../api/inferenceclassification-list-overrides.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md) collection | Get the focused inbox overrides that a user sets up to classify messages from certain senders in specific ways. |
 | [List rules](../api/mailfolder-list-messagerules.md) | [messageRule](messagerule.md) collection | Get all the messageRule objects defined for the user's inbox. |
 | [Send mail](../api/user-sendmail.md) | None | Send the message specified in the request body. |
 | **Notes** |||
