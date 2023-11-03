@@ -203,8 +203,8 @@ Content-Type: image/jpg
 ```
 
 > [!NOTE]
+> To ensure a fixed size for the output photo, use the dedicated endpoint for photos (/photos) with fixed sizes instead of relying on the default photo endpoint (/photo), which provides the largest available photo.
 > 
-> - To ensure a fixed size for the output photo, it is necessary to utilize the dedicated endpoint for photos with fixed sizes (/photos) instead of relying on the default photo endpoint, which provides the largest available photo (/photo).
 #### Response
 Contains the binary data of the requested 48x48 photo. The HTTP response code is 200.
 
@@ -445,9 +445,9 @@ Contains the binary data of the requested photo. The HTTP response code is 200.
 HTTP/1.1 200 OK
 ```
 
-## Using the binary data of the requested photo
+#### Using the binary data of the requested photo
 
-When you use the `/photo/$value` endpoint to get the binary data for a profile photo, you need to convert the data into a base-64 string to add it as an email attachment. Here's an example in JavaScript of creating an array that you can pass as the value of the `Attachments` parameter of an [Outlook Message](user-post-messages.md).
+When you use the `/photo/$value` endpoint to get the binary data for a profile photo, you need to convert the data into a base-64 string to add it as an email attachment. The following JavaScript example shows how to create an array that you can pass as the value of the `Attachments` parameter of an [Outlook message](user-post-messages.md).
 
 ```java
 const attachments = [{
@@ -457,9 +457,9 @@ const attachments = [{
 }];
 ```
 
-See the [Microsoft Graph Connect Sample for Node.js](https://github.com/microsoftgraph/nodejs-connect-rest-sample) for an implementation of this example.
+For implementation details, see the [Microsoft Graph Connect Sample for Node.js](https://github.com/microsoftgraph/nodejs-connect-rest-sample).
 
-If you want to display the image on a web page, create an in-memory object from the image and make that object the source of an image element. Here's an example in JavaScript of this operation.
+If you want to display the image on a web page, create an in-memory object from the image and make that object the source of an image element. The following JavaScript example shows this operation.
 
 ```javascript
 const url = window.URL || window.webkitURL;
