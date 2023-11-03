@@ -1562,12 +1562,22 @@ Namespace: microsoft.graph
 | x509CertificateMultiFactor  |
 | unknownFutureValue          |
 
-### x509CertificateRuleType values
+### x509CertificateAffinityLevel values
+
 | Member             |
 | :----------------- |
-| issuerSubject      |
-| policyOID          |
+| low                |
+| high               |
 | unknownFutureValue |
+
+### x509CertificateRuleType values
+
+| Member                    |
+| :------------------------ |
+| issuerSubject             |
+| policyOID                 |
+| unknownFutureValue        |
+| issuerSubjectAndPolicyOID |
 
 ### x509CertificateIssuerHintsState values
 
