@@ -3,7 +3,7 @@ title: "branchConnectivityConfiguration resource type"
 description: "Specifies the connectivity details of all device links associated with a branch."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-BranchConnectivityConfiguration specifies how a branch's connectivity is configured.
+Specifies the connectivity details of all device links associated with a branch.
 
 ## Methods
 |Method|Return type|Description|

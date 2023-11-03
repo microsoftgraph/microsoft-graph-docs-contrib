@@ -2,46 +2,6 @@
   "changelog": [
     {
       "ChangeList": [
-	   {
-          "Id": "2204d5d0-d3cf-4850-88b7-d430ab574476",
-          "ApiChange": "Resource",
-          "ChangedApiName": "branchConnectivityConfiguration",
-          "ChangeType": "Addition",
-          "Description": "Added the [branchConnectivityConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-branchConnectivityConfiguration?view=graph-rest-beta) resource and its associated method.",
-          "Target": "branchConnectivityConfiguration"
-        },
-        {
-          "Id": "2204d5d0-d3cf-4850-88b7-d430ab574476",
-          "ApiChange": "Resource",
-          "ChangedApiName": "localConnectivityConfiguration",
-          "ChangeType": "Addition",
-          "Description": "Added the [localConnectivityConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-localConnectivityConfiguration?view=graph-rest-beta) resource type.",
-          "Target": "localConnectivityConfiguration"
-        },
-        {
-          "Id": "2204d5d0-d3cf-4850-88b7-d430ab574476",
-          "ApiChange": "Resource",
-          "ChangedApiName": "peerConnectivityConfiguration",
-          "ChangeType": "Addition",
-          "Description": "Added the [peerConnectivityConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-peerConnectivityConfiguration?view=graph-rest-beta) resource type.",
-          "Target": "peerConnectivityConfiguration"
-        },
-        {
-          "Id": "2204d5d0-d3cf-4850-88b7-d430ab574476",
-          "ApiChange": "Resource",
-          "ChangedApiName": "connectivityConfiguration",
-          "ChangeType": "Addition",
-          "Description": "Added the **connectivityConfiguration** relationship to the [branchSite](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-branchSite?view=graph-rest-beta) resource.",
-          "Target": "branchSite"
-        },
-        {
-          "Id": "2204d5d0-d3cf-4850-88b7-d430ab574476",
-          "ApiChange": "Resource",
-          "ChangedApiName": "connectivityConfigurationLink",
-          "ChangeType": "Addition",
-          "Description": "Added the [connectivityConfigurationLink](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-connectivityConfigurationLink?view=graph-rest-beta) resource ",
-          "Target": "connectivityConfigurationLink"
-        },
         {
           "Id": "872db1cf-2421-4963-aa30-aa934ac5f4eb",
           "ApiChange": "Resource",
@@ -463,6 +423,56 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-07-11T00:00:00.5942072Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Network access"
+    },
+    {
+      "ChangeList": [    
+        {
+          "Id": "2204d5d0-d3cf-4850-88b7-d430ab574476",
+          "ApiChange": "Resource",
+          "ChangedApiName": "branchConnectivityConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [branchConnectivityConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-branchConnectivityConfiguration?view=graph-rest-beta) resource and its associated method.",
+          "Target": "branchConnectivityConfiguration"
+        },
+        {
+          "Id": "2204d5d0-d3cf-4850-88b7-d430ab574476",
+          "ApiChange": "Resource",
+          "ChangedApiName": "localConnectivityConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [localConnectivityConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-localConnectivityConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "localConnectivityConfiguration"
+        },
+        {
+          "Id": "2204d5d0-d3cf-4850-88b7-d430ab574476",
+          "ApiChange": "Resource",
+          "ChangedApiName": "peerConnectivityConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [peerConnectivityConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-peerConnectivityConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "peerConnectivityConfiguration"
+        },
+        {
+          "Id": "2204d5d0-d3cf-4850-88b7-d430ab574476",
+          "ApiChange": "Resource",
+          "ChangedApiName": "connectivityConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **connectivityConfiguration** relationship to the [branchSite](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-branchSite?view=graph-rest-beta) resource.",
+          "Target": "branchSite"
+        },
+        {
+          "Id": "2204d5d0-d3cf-4850-88b7-d430ab574476",
+          "ApiChange": "Resource",
+          "ChangedApiName": "connectivityConfigurationLink",
+          "ChangeType": "Addition",
+          "Description": "Added the [connectivityConfigurationLink](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-connectivityConfigurationLink?view=graph-rest-beta) resource ",
+          "Target": "connectivityConfigurationLink"
+        }
+      ],
+      "Id": "2204d5d0-d3cf-4850-88b7-d430ab574476",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-11-03T00:00:00.5942072Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Network access"
     }

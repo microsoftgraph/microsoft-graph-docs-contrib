@@ -3,7 +3,7 @@ title: "peerConnectivityConfiguration resource type"
 description: "Specifies the customer's end of the tunnel configuration for a device link."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies configuration of customer's end of the tunnel(s) for a device link.
+Specifies the customer's end of the tunnel configuration for a device link.
 
 ## Properties
 |Property|Type|Description|

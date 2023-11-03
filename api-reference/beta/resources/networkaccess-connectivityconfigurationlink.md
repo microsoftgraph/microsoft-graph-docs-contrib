@@ -3,7 +3,7 @@ title: "connectivityConfigurationLink resource type"
 description: "Specifies connectivity details for device links associated with a branch."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: resourcePageType
 ---
 
