@@ -40,7 +40,7 @@ The supported sizes of HD photos on Exchange Online are as follows: `48x48`, `64
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",
