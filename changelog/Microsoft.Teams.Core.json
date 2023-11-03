@@ -6651,24 +6651,6 @@
       "CreatedDateTime": "2023-08-25T08:14:02.5231411Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "98e27254-66b8-4e20-be3b-2f94f834c6f0",
-          "ApiChange": "Property",
-          "ChangedApiName": "content",
-          "ChangeType": "Change",
-          "Description": "Added new emoji support to the message body **content** of the [itemBody](https://learn.microsoft.com/graph/api/resources/itembody?view=graph-rest-v1.0) resource.",
-          "Target": "itemBody"
-        }
-      ],
-      "Id": "98e27254-66b8-4e20-be3b-2f94f834c6f0",
-      "Cloud": "prd",
-      "Version": "v1.0",
-      "CreatedDateTime": "2023-09-25T10:11:41.458Z",
-      "WorkloadArea": "Teamwork and communications",
-      "SubArea": ""
     }
   ]
 }
