@@ -41,13 +41,14 @@ A collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md)
 ## Relationships
 |Name                   |Type           |Description                                                                                                                                      |
 |-----------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+|dayNotes|[dayNote](daynote.md) collection|The day notes in the schedule.|
 | offerShiftRequests   |[offerShiftRequest](offershiftrequest.md) collection  | The offer requests for shifts in the schedule. |
 | openShiftChangeRequests   |[openShiftChangeRequest](openshiftchangerequest.md) collection  | The open shift requests in the schedule. |
 | openShifts   |[openShift](openshift.md) collection | The set of open shifts in a scheduling group in the schedule. |
 | schedulingGroups   |[schedulingGroup](schedulinggroup.md) collection  | The logical grouping of users in the schedule (usually by role). |
 | shifts   | [shift](shift.md) collection  | The shifts in the schedule. |
 | swapShiftsChangeRequests   |[swapShiftsChangeRequest](swapshiftschangerequest.md) collection  | The swap requests for shifts in the schedule. |
-| timeCards   |[timeCard](timecard.md) collection  | **TODO: Add description**       |
+| timeCards   |[timeCard](timecard.md) collection  | The time cards in the schedule.       |
 | timesOff   |[timeOff](timeoff.md) collection  | The instances of times off in the schedule. |
 | timeOffReasons   |[timeOffReason](timeoffreason.md) collection  | The set of reasons for a time off in the schedule. |
 | timeOffRequests   |[timeOffRequest](timeoffrequest.md) collection  | The time off requests in the schedule. |
