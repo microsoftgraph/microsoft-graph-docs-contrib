@@ -84,7 +84,7 @@ DELETE https://graph.microsoft.com/v1.0/me/photo/$value
 ```
 ### Response
 
-The following example shows a response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response"
