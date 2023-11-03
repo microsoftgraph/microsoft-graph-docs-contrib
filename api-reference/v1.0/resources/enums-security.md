@@ -11,24 +11,6 @@ author: "BenAlfasi"
 
 Namespace: microsoft.graph.security
 
-### contentFormat values
-
-| Member             |
-| :----------------- |
-| text               |
-| html               |
-| markdown           |
-| unknownFutureValue |
-
-### detectionStatus values
-
-| Member
-|:--------------
-| detected
-| blocked
-| prevented
-| unknownFutureValue
-
 ### actionAfterRetentionPeriod values
 
 | Member                 |
@@ -48,6 +30,15 @@ Namespace: microsoft.graph.security
 | retainAsRegulatoryRecord |
 | unknownFutureValue       |
 
+### contentFormat values
+
+| Member             |
+| :----------------- |
+| text               |
+| html               |
+| markdown           |
+| unknownFutureValue |
+
 ### defaultRecordBehavior values
 
 | Member             |
@@ -55,6 +46,15 @@ Namespace: microsoft.graph.security
 | startLocked        |
 | startUnlocked      |
 | unknownFutureValue |
+
+### detectionStatus values
+
+| Member
+|:--------------
+| detected
+| blocked
+| prevented
+| unknownFutureValue
 
 ### eventPropagationStatus values
 
