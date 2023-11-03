@@ -64,6 +64,17 @@ GET https://graph.microsoft.com/beta/directory/recommendations/tenantSecureScore
 ```
 
 ### Response
+The following examples shows the response.
+> **Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.tenantSecureScore)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft-ppe.com/beta/$metadata#Collection(microsoft.graph.tenantSecureScore)",
