@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = EvaluateApplicationPostRequestBody(
 	content_info = ContentInfo(
@@ -50,7 +50,7 @@ request_body = EvaluateApplicationPostRequestBody(
 				name = "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_ActionId",
 				value = "00000000-0000-0000-0000-000000000000",
 			),
-		]
+		],
 		additional_data = {
 				"format@odata_type" : "#microsoft.graph.security.contentFormat",
 				"format" : "default",
@@ -67,7 +67,7 @@ request_body = EvaluateApplicationPostRequestBody(
 			is_downgrade_justified = True,
 		),
 		extended_properties = [
-		]
+		],
 		additional_data = {
 				"assignment_method@odata_type" : "#microsoft.graph.security.assignmentMethod",
 				"label_id@odata_type" : "#Guid",
@@ -83,7 +83,7 @@ headers = {
 
 )
 
-result = await graph_client.users.by_user_id('user-id').security.information_protection.sensitivity_labels.microsoft_graph_security_evaluate_application.post(body = request_body, request_configuration = request_configuration)
+result = await graph_client.users.by_user_id('user-id').security.information_protection.sensitivity_labels.microsoft_graph_security_evaluate_application.post(request_body, request_configuration = request_configuration)
 
 
 ```

@@ -1,24 +1,26 @@
 ---
-title: "Create an Azure Active Directory app"
-description: "Create an Azure Active Directory application registration for communicating with Microsoft 365"
+title: "Create a Microsoft Entra app"
+description: "Create a Microsoft Entra application registration for communicating with Microsoft 365"
 ms.localizationpriority: medium
 author: sebastienlevert
 ---
 
-# Create an Azure Active Directory app to use with the Microsoft Graph Toolkit
+# Create a Microsoft Entra app to use with the Microsoft Graph Toolkit
 
-Microsoft Graph, the API that you use to connect to Microsoft 365, is secured with OAuth 2.0. In order to connect your app to Microsoft 365, you will need to create an app in Azure Active Directory (Azure AD) and grant this app permissions to access specific resources on behalf of the person using your app. This topic describes how to register and configure a web application to use with Microsoft Graph Toolkit.
+Microsoft Graph, the API that you use to connect to Microsoft 365, is secured with OAuth 2.0. In order to connect your app to Microsoft 365, you will need to create an app in Microsoft Entra ID and grant this app permissions to access specific resources on behalf of the person using your app. This topic describes how to register and configure a web application to use with Microsoft Graph Toolkit.
 
-## Add new application registration in Azure Active Directory
+<a name='add-new-application-registration-in-azure-active-directory'></a>
 
-To create an application in Azure Active Directory, you need to add a new application registration, and then configure an app name and URL location.
+## Add new application registration in Microsoft Entra ID
 
-To create the app in Azure Active Directory:
+To create an application in Microsoft Entra ID, you need to add a new application registration, and then configure an app name and URL location.
+
+To create the app in Microsoft Entra ID:
 
 1. Go to the [Microsoft Entra admin center](https://entra.microsoft.com).
 1. Expand the **Identity** menu > expand **Applications** > select **App registrations** > select the **New registration** button.
 1. Enter the name for your app; for example, `My M365 app`.
-1. For the type of [supported account types](/azure/active-directory/develop/single-and-multi-tenant-apps#who-can-sign-in-to-your-app), select **Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)**.
+1. For the type of [supported account types](/azure/active-directory/develop/single-and-multi-tenant-apps#who-can-sign-in-to-your-app), select **Accounts in any organizational directory (Any Microsoft Entra directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)**.
 1. For the **Redirect URI** field:
     - If using `Msal2Provider` or `TeamsMsal2Provider`, select **Single Page Application (SPA)**, and in the URL field, enter your redirect URL (and/or `http://localhost` if testing locally). 
     - If using `MsalProvider` or `TeamsProvider`, select **Web**, and in the URL field, enter your redirect URL (and/or `http://localhost` if testing locally). 

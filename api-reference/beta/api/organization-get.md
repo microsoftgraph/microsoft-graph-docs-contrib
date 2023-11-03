@@ -21,64 +21,12 @@ Since the **organization** resource supports [extensions](/graph/extensibility-o
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type | Permissions (from least to most privileged) |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.Read, Organization.Read.All, Directory.Read.All, Organization.ReadWrite.All, Directory.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported. |
-|Application | Organization.Read.All, Directory.Read.All, Organization.ReadWrite.All, Directory.ReadWrite.All |
+<!-- { "blockType": "ignored", "name": "organization_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/organization-get-permissions.md)]
 
-The calling user must also be in one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
-
-* Global Administrator
-* User Administrator
-* User
-* Helpdesk Administrator
-* Service Support Administrator
-* Billing Administrator
-* Mailbox Administrator
-* Partner Tier1 Support
-* Partner Tier2 Support
-* Directory Readers
-* Directory Writers
-* AdHoc License Administrator
-* Application Administrator
-* Security Reader
-* Security Administrator
-* Privileged Role Administrator
-* Cloud Application Administrator
-* Customer LockBox Access Approver
-* Dynamics 365 Administrator
-* Power BI Administrator
-* Azure Information Protection Administrator
-* Customer LockBox Access Approver
-* Dynamics 365 Administrator
-* Power BI Administrator
-* Azure Information Protection Administrator
-* Desktop Analytics Administrator
-* License Administrator
-* Microsoft Managed Desktop Administrator
-* Authentication Administrator
-* Privileged Authentication Administrator
-* Teams Communications Administrator
-* Teams Communications Support Engineer
-* Teams Communications Support Specialist
-* Teams Administrator
-* Insights Administrator
-* Compliance Data Administrator
-* Security Operator
-* Kaizala Administrator
-* Global Reader
-* Volume Licensing Business Center User
-* Volume Licensing Service Center User
-* Modern Commerce User
-* Microsoft Store for Business User
-* Directory Reviewer
-* Guest User
-* Restricted Guest User
-
-> **Note**: Applications granted the User.Read permission are able to read only the **id**, **displayName**, and **verifiedDomains** properties of the organization.  All other properties will return with `null` values. To read all properties, use Organization.Read.All.
+[!INCLUDE [rbac-organization-apis-read](../includes/rbac-for-apis/rbac-organization-apis-read.md)]
 
 ## HTTP request
 
