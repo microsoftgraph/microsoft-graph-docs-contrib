@@ -17,13 +17,10 @@ Create a new [version of a document set](../resources/documentsetversion.md) ite
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All, Sites.Selected|
+<!-- { "blockType": "permissions", "name": "listitem_post_documentsetversions" } -->
+[!INCLUDE [permissions-table](../includes/permissions/listitem-post-documentsetversions-permissions.md)]
 
 ## HTTP request
 
@@ -118,7 +115,7 @@ Content-length: 70
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

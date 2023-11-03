@@ -3,6 +3,66 @@
     {
       "ChangeList": [
         {
+          "Id": "9b4cd317-0b73-42e2-991a-9654e292f8a0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "profileCardAnnotation",
+          "ChangeType": "Addition",
+          "Description": "Added the [profileCardAnnotation](https://learn.microsoft.com/en-us/graph/api/resources/profileCardAnnotation?view=graph-rest-1.0) resource type.",
+          "Target": "profileCardAnnotation"
+        },
+        {
+          "Id": "9b4cd317-0b73-42e2-991a-9654e292f8a0",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "peopleAdminSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **peopleAdminSettings** relationship to the [admin](https://learn.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-1.0) resource.",
+          "Target": "admin"
+        },
+        {
+          "Id": "9b4cd317-0b73-42e2-991a-9654e292f8a0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "peopleAdminSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleAdminSettings?view=graph-rest-1.0) resource and a supported method.",
+          "Target": "peopleAdminSettings"
+        },
+        {
+          "Id": "9b4cd317-0b73-42e2-991a-9654e292f8a0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "profileCardProperty",
+          "ChangeType": "Addition",
+          "Description": "Added the [profileCardProperty](https://learn.microsoft.com/en-us/graph/api/resources/profileCardProperty?view=graph-rest-1.0) resource and supported methods.",
+          "Target": "profileCardProperty"
+        }
+      ],
+      "Id": "9b4cd317-0b73-42e2-991a-9654e292f8a0",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-10-25T13:04:20.9572176Z",
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": "People admin settings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "98e8900a-08f5-4ab0-ba16-8d7c9cc5d6ef",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "peopleAdminSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **peopleAdminSettings** relationship to the [admin](https://learn.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-beta) resource.",
+          "Target": "admin"
+        }
+      ],
+      "Id": "98e8900a-08f5-4ab0-ba16-8d7c9cc5d6ef",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-10-25T13:04:20.9572176Z",
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": "People admin settings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "e2817c55-852f-428b-89f5-1b19830d041d",
           "ApiChange": "Permission",
           "ChangedApiName": "User.ReadWrite",
@@ -111,8 +171,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-07-26T13:25:08.1357387Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": "People admin settings"
     },
     {
       "ChangeList": [
@@ -363,6 +423,74 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-08-11T16:27:03.4918335Z",
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": "People"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "71ebad7b-fc20-4469-b895-ddeef0ee54a0",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Addition",
+          "Description": "Added the [delete profile photo](https://learn.microsoft.com/en-us/graph/api/profilephoto-delete.md?view=graph-rest-beta) operation to the [profilePhoto](https://learn.microsoft.com/en-us/graph/api/resources/profilephoto?view=graph-rest-beta) resource.",
+          "Target": "profilePhoto"
+        },
+        {
+          "Id": "71ebad7b-fc20-4469-b895-ddeef0ee54a0",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Addition",
+          "Description": "Added the [delete profile photo](https://learn.microsoft.com/en-us/graph/api/profilephoto-delete.md?view=graph-rest-beta) operation to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "71ebad7b-fc20-4469-b895-ddeef0ee54a0",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Addition",
+          "Description": "Added the [delete profile photo](https://learn.microsoft.com/en-us/graph/api/profilephoto-delete.md?view=graph-rest-beta) operation to the [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource.",
+          "Target": "group"
+        }
+      ],
+      "Id": "71ebad7b-fc20-4469-b895-ddeef0ee54a0",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-11-02T08:55:18.080Z",
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": "People"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "14a780c1-d222-4476-acc0-3c5b6425f040",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Addition",
+          "Description": "Added the [delete profile photo] (https://learn.microsoft.com/en-us/graph/api/profilephoto-delete.md?view=graph-rest-1.0) method to the [profilePhoto](https://learn.microsoft.com/en-us/graph/api/resources/profilephoto?view=graph-rest-1.0) resource.",
+          "Target": "profilePhoto"
+        },
+        {
+          "Id": "14a780c1-d222-4476-acc0-3c5b6425f040",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Addition",
+          "Description": "Added the [delete profile photo](https://learn.microsoft.com/en-us/graph/api/profilephoto-delete.md?view=graph-rest-1.0) method to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "14a780c1-d222-4476-acc0-3c5b6425f040",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Addition",
+          "Description": "Added the [Delete profile photo](https://learn.microsoft.com/en-us/graph/api/profilephoto-delete.md?view=graph-rest-1.0) method to the [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0) resource.",
+          "Target": "group"
+        }
+      ],
+      "Id": "14a780c1-d222-4476-acc0-3c5b6425f040",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-11-02T08:55:18.080Z",
       "WorkloadArea": "People and workplace intelligence",
       "SubArea": "People"
     }

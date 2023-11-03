@@ -23,13 +23,10 @@ This API returns with the first failure encountered. If one or more properties f
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "directoryobject_validateproperties" } -->
+[!INCLUDE [permissions-table](../includes/permissions/directoryobject-validateproperties-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -56,7 +53,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful and there are no validation errors, the method returns `204 No Content` response code. It does not return anything in the response body.
+If successful and there are no validation errors, the method returns `204 No Content` response code. It doesn't return anything in the response body.
 
 If the request is invalid, the method returns `400 Bad Request` response code. An error message with details about the invalid request is returned in the response body.
 

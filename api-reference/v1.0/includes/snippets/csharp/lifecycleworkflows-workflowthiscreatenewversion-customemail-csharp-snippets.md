@@ -28,18 +28,18 @@ var requestBody = new Microsoft.Graph.IdentityGovernance.LifecycleWorkflows.Work
 			"isSchedulingEnabled" , false
 		},
 		{
-			"executionConditions" , new 
+			"executionConditions" , new Microsoft.Graph.Models.IdentityGovernance.TriggerAndScopeBasedConditions
 			{
 				OdataType = "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
-				Scope = new 
+				Scope = new Microsoft.Graph.Models.IdentityGovernance.RuleBasedSubjectSet
 				{
 					OdataType = "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
 					Rule = "(department eq 'Marketing')",
 				},
-				Trigger = new 
+				Trigger = new Microsoft.Graph.Models.IdentityGovernance.TimeBasedAttributeTrigger
 				{
 					OdataType = "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
-					TimeBasedAttribute = "employeeHireDate",
+					TimeBasedAttribute = Microsoft.Graph.Models.IdentityGovernance.WorkflowTriggerTimeBasedAttribute.EmployeeHireDate,
 					OffsetInDays = 0,
 				},
 			}

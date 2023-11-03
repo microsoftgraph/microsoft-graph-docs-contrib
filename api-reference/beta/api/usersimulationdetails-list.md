@@ -15,13 +15,10 @@ Namespace: microsoft.graph
 List users of a tenant and their online actions in an attack simulation campaign.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | AttackSimulation.Read.All                   |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | AttackSimulation.Read.All                   |
+<!-- { "blockType": "permissions", "name": "usersimulationdetails_list" } -->
+[!INCLUDE [permissions-table](../includes/permissions/usersimulationdetails-list-permissions.md)]
 
 ## HTTP request
 
@@ -57,7 +54,7 @@ GET /security/attackSimulation/simulations/{simulationId}/report/simulationUsers
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -91,7 +88,7 @@ GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/f1b13
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

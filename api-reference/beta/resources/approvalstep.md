@@ -39,7 +39,7 @@ Specifies a decision step in an [approval](approval.md) in entitlement managemen
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|approval|[approval](../resources/approval.md) collection| The approval object for decisions associated with the `accessPackageAssignmentRequest` in entitlement management, the `roleAssignmentScheduleRequest` in PIM for Azure AD roles, or the `assignmentScheduleRequest` in PIM for groups.|
+|approval|[approval](../resources/approval.md) collection| The approval object for decisions associated with the `accessPackageAssignmentRequest` in entitlement management, the `roleAssignmentScheduleRequest` in PIM for Microsoft Entra roles, or the `assignmentScheduleRequest` in PIM for groups.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

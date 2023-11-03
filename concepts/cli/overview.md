@@ -15,7 +15,7 @@ The Microsoft Graph PowerShell command-line interface (CLI) acts as an API wrapp
 
 The Microsoft Graph CLI provides the following benefits:
 
-- **Access to all Microsoft Graph APIs**: The Microsoft Graph CLI is based on Microsoft Graph API. In addition to Azure AD, the Microsoft Graph API includes APIs from other Microsoft services like SharePoint, Exchange, and Outlook, all accessed through a single endpoint with a single access token.
+- **Access to all Microsoft Graph APIs**: The Microsoft Graph CLI is based on Microsoft Graph API. In addition to Microsoft Entra ID, the Microsoft Graph API includes APIs from other Microsoft services like SharePoint, Exchange, and Outlook, all accessed through a single endpoint with a single access token.
 - **Cross-platform support**: The Microsoft Graph CLI works on all platforms including Windows, macOS, and Linux.
 - **Supports modern authentication**: The Microsoft Graph CLI supports the Microsoft Authentication Library (MSAL) which offers more security.
 - **Uses least privilege**: Microsoft Graph CLI permissions are not pre-authorized and users must perform one-time request for app permissions depending on their needs.
