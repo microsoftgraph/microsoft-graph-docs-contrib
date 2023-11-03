@@ -21,7 +21,7 @@ requestBody.SetParentFolderId(&parentFolderId)
 displayName := "Important contacts"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.Me().ContactFolders().Post(context.Background(), requestBody, nil)
+contactFolders, err := graphClient.Me().ContactFolders().Post(context.Background(), requestBody, nil)
 
 
 ```

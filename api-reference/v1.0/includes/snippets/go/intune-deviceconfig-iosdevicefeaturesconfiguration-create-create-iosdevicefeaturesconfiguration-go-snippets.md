@@ -127,7 +127,7 @@ notificationSettings := []graphmodels.IosNotificationSettingsable {
 }
 requestBody.SetNotificationSettings(notificationSettings)
 
-result, err := graphClient.DeviceManagement().DeviceConfigurations().Post(context.Background(), requestBody, nil)
+deviceConfigurations, err := graphClient.DeviceManagement().DeviceConfigurations().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -33,7 +33,7 @@ altitudeInMeters := int32(3)
 location.SetAltitudeInMeters(&altitudeInMeters) 
 requestBody.SetLocation(location)
 
-result, err := graphClient.Print().Connectors().ByConnectorId("printConnector-id").Patch(context.Background(), requestBody, nil)
+connectors, err := graphClient.Print().Connectors().ByPrintConnectorId("printConnector-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

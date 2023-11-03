@@ -1,8 +1,8 @@
 ---
 title: "Activity reports API overview"
-description: "Use the activity reports API in Microsoft Graph to access the reports that Azure Active Directory creates to help you track user activity in a tenant."
+description: "Use the activity reports API in Microsoft Graph to access the reports that Microsoft Entra ID creates to help you track user activity in a tenant."
 ms.localizationpriority: high
-author: "besiler"
+author: "egreenberg14"
 ms.prod: "identity-and-access-reports"
 doc_type: conceptualPageType
 ms.date: 09/16/2022
@@ -12,13 +12,15 @@ ms.date: 09/16/2022
 
 Namespace: microsoft.graph
 
-Azure Active Directory (Azure AD) tracks user activity and creates reports that help you understand how your users access and use Azure AD services. Use the Microsoft Graph API for Azure AD to analyze the data in these reports and to create custom solutions tailored to your organization's specific needs.
+Microsoft Entra ID tracks user activity and creates reports that help you understand how your users access and use Microsoft Entra services. Use the Microsoft Graph API for Microsoft Entra ID to analyze the data in these reports and to create custom solutions tailored to your organization's specific needs.
 
-The availability of these activity reports is governed by the Azure AD data retention policies. For more information, see [data retention policies](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
+The availability of these activity reports is governed by the Microsoft Entra data retention policies. For more information, see [data retention policies](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
 
-## What are Azure AD activity logs?
+<a name='what-are-azure-ad-activity-logs'></a>
 
-Azure AD provides the following types of activity reports:
+## What are Microsoft Entra activity logs?
+
+Microsoft Entra ID provides the following types of activity reports:
 
 - Directory audits
 - Sign-ins
@@ -52,16 +54,16 @@ GET tenant user sign-ins | [GET https://graph.microsoft.com/v1.0/auditLogs/signI
 
 Activity reports are available for features that you've licensed. If you have a license for a specific feature, you also have access to the reports.
 
-For example, you need an Azure AD Premium P1 license to access self-service password audit reports.  To learn more, see [Azure AD licensing](https://azure.microsoft.com/pricing/details/active-directory/).
+For example, you need a Microsoft Entra ID P1 license to access self-service password audit reports.  To learn more, see [Microsoft Entra ID licensing](https://azure.microsoft.com/pricing/details/active-directory/).
 
-Sign-in reports require an Azure AD Premium license.
+Sign-in reports require a Microsoft Entra ID P1 or P2 license.
 
-To learn more, see [Azure AD pricing](https://azure.microsoft.com/pricing/details/active-directory/).
+To learn more, see [Microsoft Entra pricing](https://azure.microsoft.com/pricing/details/active-directory/).
 
 ## Next Steps
 
 - [Register your app](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to satisfy report prerequisites. 
-- To learn how to retrieve audit logs while authenticated using certificates, see [Tutorial: Get data using the Azure Active Directory reporting API with certificates](/azure/active-directory/reports-monitoring/tutorial-access-api-with-certificates).   
+- To learn how to retrieve audit logs while authenticated using certificates, see [Tutorial: Get data using the Microsoft Entra reporting API with certificates](/azure/active-directory/reports-monitoring/tutorial-access-api-with-certificates).   
 - Review [directoryAudit](directoryaudit.md) resource and actions.
 - Review [signIn](signin.md) resource and actions. 
 <!--

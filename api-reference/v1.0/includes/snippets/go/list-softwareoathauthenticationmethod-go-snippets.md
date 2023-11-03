@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().Authentication().SoftwareOathMethods().Get(context.Background(), nil)
+softwareOathMethods, err := graphClient.Me().Authentication().SoftwareOathMethods().Get(context.Background(), nil)
 
 
 ```

@@ -93,7 +93,7 @@ requestBody.SetResources(resources)
 category := "Category value"
 requestBody.SetCategory(&category) 
 
-result, err := graphClient.DeviceManagement().AuditEvents().Post(context.Background(), requestBody, nil)
+auditEvents, err := graphClient.DeviceManagement().AuditEvents().Post(context.Background(), requestBody, nil)
 
 
 ```

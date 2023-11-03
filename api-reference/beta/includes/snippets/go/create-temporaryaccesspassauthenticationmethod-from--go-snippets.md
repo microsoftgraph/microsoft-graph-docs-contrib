@@ -24,7 +24,7 @@ requestBody.SetLifetimeInMinutes(&lifetimeInMinutes)
 isUsableOnce := false
 requestBody.SetIsUsableOnce(&isUsableOnce) 
 
-result, err := graphClient.Users().ByUserId("user-id").Authentication().TemporaryAccessPassMethods().Post(context.Background(), requestBody, nil)
+temporaryAccessPassMethods, err := graphClient.Users().ByUserId("user-id").Authentication().TemporaryAccessPassMethods().Post(context.Background(), requestBody, nil)
 
 
 ```

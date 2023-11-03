@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Security().Cases().EdiscoveryCases().Get(context.Background(), nil)
+ediscoveryCases, err := graphClient.Security().Cases().EdiscoveryCases().Get(context.Background(), nil)
 
 
 ```

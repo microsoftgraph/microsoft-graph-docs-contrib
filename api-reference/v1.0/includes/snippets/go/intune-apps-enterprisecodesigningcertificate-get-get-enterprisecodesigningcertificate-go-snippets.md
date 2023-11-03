@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceAppManagement().EnterpriseCodeSigningCertificates().ByEnterpriseCodeSigningCertificateId("enterpriseCodeSigningCertificate-id").Get(context.Background(), nil)
+enterpriseCodeSigningCertificates, err := graphClient.DeviceAppManagement().EnterpriseCodeSigningCertificates().ByEnterpriseCodeSigningCertificateId("enterpriseCodeSigningCertificate-id").Get(context.Background(), nil)
 
 
 ```

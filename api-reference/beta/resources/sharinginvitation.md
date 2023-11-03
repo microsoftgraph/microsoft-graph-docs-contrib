@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: The SharingInvitation resource groups invitation-related data items into a single structure.
 ms.date: 09/10/2017
 title: SharingInvitation

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Solutions().BusinessScenarios().ByBusinessScenarioId("businessScenario-id").Planner().PlanConfiguration().Localizations().ByLocalizationId("plannerPlanConfigurationLocalization-id").Delete(context.Background(), nil)
+graphClient.Solutions().BusinessScenarios().ByBusinessScenarioId("businessScenario-id").Planner().PlanConfiguration().Localizations().ByPlannerPlanConfigurationLocalizationId("plannerPlanConfigurationLocalization-id").Delete(context.Background(), nil)
 
 
 ```

@@ -61,7 +61,7 @@ privacyUrl := "https://example.com/privacyUrl/"
 intuneBrand.SetPrivacyUrl(&privacyUrl) 
 requestBody.SetIntuneBrand(intuneBrand)
 
-result, err := graphClient.DeviceManagement().Patch(context.Background(), requestBody, nil)
+deviceManagement, err := graphClient.DeviceManagement().Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = PermissionGrantConditionSet()
-request_body.permissiontype(PermissionType.Delegated('permissiontype.delegated'))
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.client_applications_from_verified_publisher_only = True
+request_body = PermissionGrantConditionSet(
+	permission_type = PermissionType.Delegated,
+	client_applications_from_verified_publisher_only = True,
+)
 
-
-
-
-result = await client.policies.permission_grant_policies.by_permission_grant_policie_id('permissionGrantPolicy-id').includes.post(request_body = request_body)
+result = await graph_client.policies.permission_grant_policies.by_permission_grant_policy_id('permissionGrantPolicy-id').includes.post(request_body)
 
 
 ```

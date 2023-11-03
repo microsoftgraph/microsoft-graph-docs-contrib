@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.External().IndustryData().DataConnectors().ByDataConnectorId("industryDataConnector-id").Delete(context.Background(), nil)
+graphClient.External().IndustryData().DataConnectors().ByIndustryDataConnectorId("industryDataConnector-id").Delete(context.Background(), nil)
 
 
 ```

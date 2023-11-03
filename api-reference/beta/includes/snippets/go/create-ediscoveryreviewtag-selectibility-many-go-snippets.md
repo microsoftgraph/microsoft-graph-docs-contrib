@@ -23,7 +23,7 @@ requestBody.SetDescription(&description)
 childSelectability := graphmodels.MANY_CHILDSELECTABILITY 
 requestBody.SetChildSelectability(&childSelectability) 
 
-result, err := graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").Tags().Post(context.Background(), requestBody, nil)
+tags, err := graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").Tags().Post(context.Background(), requestBody, nil)
 
 
 ```

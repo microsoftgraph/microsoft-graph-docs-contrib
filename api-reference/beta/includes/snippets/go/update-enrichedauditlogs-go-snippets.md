@@ -23,7 +23,7 @@ requestBody.SetTeams(teams)
 exchange := graphmodelsnetworkaccess.NewEnrichedAuditLogsSettings()
 requestBody.SetExchange(exchange)
 
-result, err := graphClient.NetworkAccess().Settings().EnrichedAuditLogs().Patch(context.Background(), requestBody, nil)
+enrichedAuditLogs, err := graphClient.NetworkAccess().Settings().EnrichedAuditLogs().Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -41,7 +41,7 @@ originSystem := "AadGroup"
 accessPackageResourceScope.SetOriginSystem(&originSystem) 
 requestBody.SetAccessPackageResourceScope(accessPackageResourceScope)
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackages().ByAccessPackageId("accessPackage-id").AccessPackageResourceRoleScopes().Post(context.Background(), requestBody, nil)
+accessPackageResourceRoleScopes, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackages().ByAccessPackageId("accessPackage-id").AccessPackageResourceRoleScopes().Post(context.Background(), requestBody, nil)
 
 
 ```

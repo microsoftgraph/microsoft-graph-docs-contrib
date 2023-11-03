@@ -19,7 +19,7 @@ requestBody := graphapplicationtemplates.NewInstantiatePostRequestBody()
 displayName := "Contoso IWA App"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.ApplicationTemplates().ByApplicationTemplateId("applicationTemplate-id").Instantiate().Post(context.Background(), requestBody, nil)
+instantiate, err := graphClient.ApplicationTemplates().ByApplicationTemplateId("applicationTemplate-id").Instantiate().Post(context.Background(), requestBody, nil)
 
 
 ```

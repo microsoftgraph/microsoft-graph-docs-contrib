@@ -12,16 +12,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove or unlink [an application](../resources/authenticationconditionapplication.md) from an external identities self-service sign up user flow that's represented by an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object. This disables the authentication experience that's defined by the user flow for the application.
+Remove or unlink [an application](../resources/authenticationconditionapplication.md) from an external identities self-service sign-up user flow that's represented by an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object. This disables the authentication experience that's defined by the user flow for the application.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|EventListener.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|EventListener.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "authenticationconditionapplication_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/authenticationconditionapplication-delete-permissions.md)]
 
 [!INCLUDE [rbac-user-flows-convergence-apis-write](../includes/rbac-for-apis/rbac-user-flows-convergence-apis-write.md)]
 
@@ -42,17 +39,17 @@ DELETE /identity/authenticationEventsFlows/{authenticationEventsFlow-id}/conditi
 |Content-Type|application/json. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns a `204 No Content` response code. If unsuccessful, a `4xx` error is returned with specific details.
 
 ## Examples
 
 #### Request
-The following is an example of a request. `63856651-13d9-4784-9abf-20758d509e19` representes the **appId** of the application, also known as the client ID, not the object ID.
+Here's an example of a request. `63856651-13d9-4784-9abf-20758d509e19` represents the **appId** of the application, also known as the client ID, not the object ID.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -74,7 +71,7 @@ DELETE https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313c
 ---
 
 #### Response
-The following is an example of the response
+Here's an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true

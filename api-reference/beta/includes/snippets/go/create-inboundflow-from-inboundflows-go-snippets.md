@@ -31,7 +31,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.External().IndustryData().InboundFlows().Post(context.Background(), requestBody, nil)
+inboundFlows, err := graphClient.External().IndustryData().InboundFlows().Post(context.Background(), requestBody, nil)
 
 
 ```

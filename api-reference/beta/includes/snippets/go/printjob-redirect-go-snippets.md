@@ -78,7 +78,7 @@ fitPdfToPage := false
 configuration.SetFitPdfToPage(&fitPdfToPage) 
 requestBody.SetConfiguration(configuration)
 
-result, err := graphClient.Print().Printers().ByPrinterId("printer-id").Jobs().ByJobId("printJob-id").Redirect().Post(context.Background(), requestBody, nil)
+redirect, err := graphClient.Print().Printers().ByPrinterId("printer-id").Jobs().ByPrintJobId("printJob-id").Redirect().Post(context.Background(), requestBody, nil)
 
 
 ```

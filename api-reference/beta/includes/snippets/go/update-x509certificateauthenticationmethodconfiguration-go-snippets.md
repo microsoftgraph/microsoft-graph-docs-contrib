@@ -60,6 +60,10 @@ rules := []graphmodels.X509CertificateRuleable {
 }
 authenticationModeConfiguration.SetRules(rules)
 requestBody.SetAuthenticationModeConfiguration(authenticationModeConfiguration)
+issuerHintsConfiguration := graphmodels.NewX509CertificateIssuerHintsConfiguration()
+state := graphmodels.DISABLED_X509CERTIFICATEISSUERHINTSSTATE 
+issuerHintsConfiguration.SetState(&state) 
+requestBody.SetIssuerHintsConfiguration(issuerHintsConfiguration)
 
 
 authenticationMethodTarget := graphmodels.NewAuthenticationMethodTarget()
@@ -75,7 +79,7 @@ includeTargets := []graphmodels.AuthenticationMethodTargetable {
 }
 requestBody.SetIncludeTargets(includeTargets)
 
-result, err := graphClient.Policies().AuthenticationMethodsPolicy().AuthenticationMethodConfigurations().ByAuthenticationMethodConfigurationId("authenticationMethodConfiguration-id").Patch(context.Background(), requestBody, nil)
+authenticationMethodConfigurations, err := graphClient.Policies().AuthenticationMethodsPolicy().AuthenticationMethodConfigurations().ByAuthenticationMethodConfigurationId("authenticationMethodConfiguration-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

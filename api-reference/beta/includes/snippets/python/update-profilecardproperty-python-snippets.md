@@ -4,30 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = ProfileCardProperty()
-annotations_profile_card_annotation1 = ProfileCardAnnotation()
-localizations_display_name_localization1 = DisplayNameLocalization()
-localizations_display_name_localization1.language_tag = 'no-NB'
+graph_client = GraphServiceClient(credentials, scopes)
 
-localizations_display_name_localization1.display_name = 'Kostnads Senter'
+request_body = ProfileCardProperty(
+	annotations = [
+		ProfileCardAnnotation(
+			localizations = [
+				DisplayNameLocalization(
+					language_tag = "no-NB",
+					display_name = "Kostnadssenter",
+				),
+			],
+		),
+	],
+)
 
-
-localizationsArray []= localizationsDisplayNameLocalization1;
-annotations_profile_card_annotation1.localizations(localizationsArray)
-
-
-
-annotationsArray []= annotationsProfileCardAnnotation1;
-request_body.annotations(annotationsArray)
-
-
-
-
-
-result = await client.organization.by_organization_id('organization-id').settings.profile_card_properties.by_profile_card_propertie_id('profileCardProperty-id').patch(request_body = request_body)
+result = await graph_client.admin.people.profile_card_properties.by_profile_card_property_id('profileCardProperty-id').patch(request_body)
 
 
 ```

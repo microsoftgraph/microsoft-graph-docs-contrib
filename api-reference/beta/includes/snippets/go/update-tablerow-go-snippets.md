@@ -21,7 +21,7 @@ requestBody.SetIndex(&index)
 values := "values-value"
 requestBody.SetValues(&values) 
 
-result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().Tables().ByTableId("workbookTable-id").Rows().ByRowId("workbookTableRow-id").Patch(context.Background(), requestBody, nil)
+rows, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().Tables().ByWorkbookTableId("workbookTable-id").Rows().ByWorkbookTableRowId("workbookTableRow-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

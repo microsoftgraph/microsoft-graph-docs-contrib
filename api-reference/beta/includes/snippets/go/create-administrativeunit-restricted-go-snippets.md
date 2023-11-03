@@ -23,7 +23,7 @@ requestBody.SetDescription(&description)
 isMemberManagementRestricted := true
 requestBody.SetIsMemberManagementRestricted(&isMemberManagementRestricted) 
 
-result, err := graphClient.AdministrativeUnits().Post(context.Background(), requestBody, nil)
+administrativeUnits, err := graphClient.AdministrativeUnits().Post(context.Background(), requestBody, nil)
 
 
 ```

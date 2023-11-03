@@ -4,24 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = RemoteAssistancePartner()
-request_body.@odata_type = '#microsoft.graph.remoteAssistancePartner'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.display_name = 'Display Name value'
+request_body = RemoteAssistancePartner(
+	odata_type = "#microsoft.graph.remoteAssistancePartner",
+	display_name = "Display Name value",
+	onboarding_url = "https://example.com/onboardingUrl/",
+	onboarding_status = RemoteAssistanceOnboardingStatus.Onboarding,
+	last_connection_date_time = "2016-12-31T23:58:36.6670033-08:00",
+)
 
-request_body.onboarding_url = 'https://example.com/onboardingUrl/'
-
-request_body.onboardingstatus(RemoteAssistanceOnboardingStatus.Onboarding('remoteassistanceonboardingstatus.onboarding'))
-
-request_body.lastConnectionDateTime = DateTime('2016-12-31T23:58:36.6670033-08:00')
-
-
-
-
-result = await client.device_management.remote_assistance_partners.by_remote_assistance_partner_id('remoteAssistancePartner-id').patch(request_body = request_body)
+result = await graph_client.device_management.remote_assistance_partners.by_remote_assistance_partner_id('remoteAssistancePartner-id').patch(request_body)
 
 
 ```

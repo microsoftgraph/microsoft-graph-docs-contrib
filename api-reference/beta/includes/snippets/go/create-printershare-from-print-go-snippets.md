@@ -23,7 +23,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Print().Shares().Post(context.Background(), requestBody, nil)
+shares, err := graphClient.Print().Shares().Post(context.Background(), requestBody, nil)
 
 
 ```

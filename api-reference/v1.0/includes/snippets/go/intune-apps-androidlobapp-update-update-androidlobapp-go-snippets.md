@@ -89,7 +89,7 @@ requestBody.SetVersionName(&versionName)
 versionCode := "Version Code value"
 requestBody.SetVersionCode(&versionCode) 
 
-result, err := graphClient.DeviceAppManagement().MobileApps().ByMobileAppId("mobileApp-id").Patch(context.Background(), requestBody, nil)
+mobileApps, err := graphClient.DeviceAppManagement().MobileApps().ByMobileAppId("mobileApp-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

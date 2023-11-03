@@ -51,7 +51,7 @@ requestBody.SetExternalId(&externalId)
 phone := "+1 (253) 555-0102"
 requestBody.SetPhone(&phone) 
 
-result, err := graphClient.Education().Schools().Post(context.Background(), requestBody, nil)
+schools, err := graphClient.Education().Schools().Post(context.Background(), requestBody, nil)
 
 
 ```

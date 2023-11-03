@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Users().ByUserId("user-id").Sponsors().Get(context.Background(), nil)
+sponsors, err := graphClient.Users().ByUserId("user-id").Sponsors().Get(context.Background(), nil)
 
 
 ```

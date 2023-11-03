@@ -19,7 +19,7 @@ requestBody := graphmodels.NewSynchronizationJob()
 templateId := "BoxOutDelta"
 requestBody.SetTemplateId(&templateId) 
 
-result, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").Synchronization().Jobs().Post(context.Background(), requestBody, nil)
+jobs, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").Synchronization().Jobs().Post(context.Background(), requestBody, nil)
 
 
 ```

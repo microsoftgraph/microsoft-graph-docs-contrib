@@ -190,5 +190,5 @@ Be aware of the following limits and error condition:
 
 
 ## See also
-- [Permissions reference](permissions-reference.md#calendars-permissions)
+- [Permissions reference](permissions-reference.md)
 - [Find possible meeting times on the Outlook calendar](findmeetingtimes-example.md)

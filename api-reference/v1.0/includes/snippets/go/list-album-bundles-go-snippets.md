@@ -25,7 +25,7 @@ configuration := &graphdrives.DriveItemBundlesRequestBuilderGetRequestConfigurat
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Drives().ByDriveId("drive-id").Bundles().Get(context.Background(), configuration)
+bundles, err := graphClient.Drives().ByDriveId("drive-id").Bundles().Get(context.Background(), configuration)
 
 
 ```

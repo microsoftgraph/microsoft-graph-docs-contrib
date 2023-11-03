@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc solutions booking-businesses customers create --booking-business-id {bookingBusiness-id} --body '{\
     "@odata.type": "#microsoft.graph.bookingCustomer",\
     "displayName": "Joni Sherman",\

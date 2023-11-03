@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.NetworkAccess().Settings().EnrichedAuditLogs().Get(context.Background(), nil)
+enrichedAuditLogs, err := graphClient.NetworkAccess().Settings().EnrichedAuditLogs().Get(context.Background(), nil)
 
 
 ```

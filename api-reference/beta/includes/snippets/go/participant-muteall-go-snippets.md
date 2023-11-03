@@ -23,7 +23,7 @@ requestBody.SetParticipants(participants)
 clientContext := "clientContext-value"
 requestBody.SetClientContext(&clientContext) 
 
-result, err := graphClient.Communications().Calls().ByCallId("call-id").Participants().MuteAll().Post(context.Background(), requestBody, nil)
+muteAll, err := graphClient.Communications().Calls().ByCallId("call-id").Participants().MuteAll().Post(context.Background(), requestBody, nil)
 
 
 ```

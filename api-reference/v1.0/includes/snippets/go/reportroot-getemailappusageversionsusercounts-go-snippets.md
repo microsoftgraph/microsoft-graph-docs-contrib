@@ -15,7 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Reports().GetEmailAppUsageVersionsUserCounts(period='{period}')().Get(context.Background(), nil)
+period := "{period}"
+graphClient.Reports().GetEmailAppUsageVersionsUserCountsWithPeriod(&period).Get(context.Background(), nil)
 
 
 ```

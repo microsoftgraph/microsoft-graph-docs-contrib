@@ -18,19 +18,20 @@ There are two ways to get the **id** of a **callRecord**:
 * Subscribe to [change notifications](/graph/api/resources/webhooks?view=graph-rest-1.0&preserve-view=true) to the `/communications/callRecords` endpoint.
 * Use the **callChainId** property of a [call](../resources/call.md). The call record is available only after the associated call is completed.
 
+You can use the `$expand` query parameter to optionally include session and segment details, as shown in the [Get full details](#example-2-get-full-details) example. When you expand session details, the maximum page size is 60 sessions.
+
 > [!WARNING]
 >
 > A call record is created after a call or meeting ends and will remain available for **30 days**. Requests for call records older than 30 days will receive a `404 Not Found` response.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | CallRecords.Read.All |
+<!-- { "blockType": "permissions", "name": "callrecords_callrecord_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/callrecords-callrecord-get-permissions.md)]
 
 ## HTTP request
 
@@ -42,17 +43,24 @@ GET /communications/callRecords/{id}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the following OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+| Name      |Description|
+|:----------|:----------|
+| $select | Use the `$select` query parameter to return a set of properties that are different than the default set for an individual resource or a collection of resources. Only supported for `callRecord` and `session` resources. |
+| $expand | Use the `$expand` query parameter to include the expanded resource or collection referenced by a single relationship in your results. |
 
 ## Request headers
 
 | Name      |Description|
 |:----------|:----------|
 | Authorization | Bearer {token} |
+| Prefer: odata.maxpagesize={x} | Specifies a preferred integer {x} page size for paginated results. Optional. This value must be equal to or less than the maximum allowable page size. |
+| Prefer: include-unknown-enum-members | Enables evolveable enum values beyond the sentinel value. See [Best Practices](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) for more information. Optional. |
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -113,7 +121,7 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -217,7 +225,7 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}?$expand=ses
 
 #### Response
 
-The following is an example of the response. If the sessions list is truncated, a `sessions@odata.nextLink` value will be provided to retrieve the next page of sessions. The default page size for sessions is 60 entries.
+The following example shows the response. If the sessions list is truncated, a `sessions@odata.nextLink` value will be provided to retrieve the next page of sessions. The maximum page size for sessions is 60 entries.
 
 > **Note:** The response object shown here might be shortened for readability.
 

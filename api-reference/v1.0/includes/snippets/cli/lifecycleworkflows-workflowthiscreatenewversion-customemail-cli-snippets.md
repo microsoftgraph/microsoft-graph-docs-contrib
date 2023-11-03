@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc identity-governance lifecycle-workflows workflows microsoft-graph-identity-governance-create-new-version post --workflow-id {workflow-id} --body '{\
     "category": "joiner",\
     "description": "Configure new hire tasks for onboarding employees on their first day",\

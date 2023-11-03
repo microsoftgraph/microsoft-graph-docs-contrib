@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.SchemaExtensions().BySchemaExtensionId("schemaExtension-id").Get(context.Background(), nil)
+schemaExtensions, err := graphClient.SchemaExtensions().BySchemaExtensionId("schemaExtension-id").Get(context.Background(), nil)
 
 
 ```

@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = LanguageProficiency()
-request_body.allowedaudiences(AllowedAudiences.Organization('allowedaudiences.organization'))
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = LanguageProficiency(
+	allowed_audiences = AllowedAudiences.Organization,
+)
 
-
-
-result = await client.me.profile.languages.by_language_id('languageProficiency-id').patch(request_body = request_body)
+result = await graph_client.me.profile.languages.by_language_proficiency_id('languageProficiency-id').patch(request_body)
 
 
 ```

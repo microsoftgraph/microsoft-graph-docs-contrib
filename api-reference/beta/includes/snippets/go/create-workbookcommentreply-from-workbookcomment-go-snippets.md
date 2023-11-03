@@ -21,7 +21,7 @@ requestBody.SetContent(&content)
 contentType := "plain"
 requestBody.SetContentType(&contentType) 
 
-result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().Comments().ByCommentId("workbookComment-id").Replies().Post(context.Background(), requestBody, nil)
+replies, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().Comments().ByWorkbookCommentId("workbookComment-id").Replies().Post(context.Background(), requestBody, nil)
 
 
 ```

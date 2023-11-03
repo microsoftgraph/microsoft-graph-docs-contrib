@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc identity-governance access-reviews definitions create --body '{\
     "displayName": "Group owners review guest across Microsoft 365 groups in the tenant (Quarterly)",\
     "descriptionForAdmins": "",\

@@ -6,9 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Beta.Users.Actions
 
-$params = @{
-}
-
-Clear-MgBetaUserPresenceUserPreferredPresence -UserId $userId -BodyParameter $params
+Clear-MgBetaUserPresenceUserPreferredPresence -UserId $userId
 
 ```

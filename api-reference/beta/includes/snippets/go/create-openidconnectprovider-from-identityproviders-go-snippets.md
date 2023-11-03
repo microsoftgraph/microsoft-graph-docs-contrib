@@ -47,7 +47,7 @@ requestBody.SetResponseType(&responseType)
 scope := "openid"
 requestBody.SetScope(&scope) 
 
-result, err := graphClient.IdentityProviders().Post(context.Background(), requestBody, nil)
+identityProviders, err := graphClient.IdentityProviders().Post(context.Background(), requestBody, nil)
 
 
 ```

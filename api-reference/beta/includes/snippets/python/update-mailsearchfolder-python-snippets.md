@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = MailSearchFolder()
-request_body.@odata_type = 'microsoft.graph.mailSearchFolder'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.filter_query = 'contains(subject, \'Analytics\')'
+request_body = MailSearchFolder(
+	odata_type = "microsoft.graph.mailSearchFolder",
+	filter_query = "contains(subject, 'Analytics')",
+)
 
-
-
-
-result = await client.me.mail_folders.by_mail_folder_id('mailFolder-id').patch(request_body = request_body)
+result = await graph_client.me.mail_folders.by_mail_folder_id('mailFolder-id').patch(request_body)
 
 
 ```

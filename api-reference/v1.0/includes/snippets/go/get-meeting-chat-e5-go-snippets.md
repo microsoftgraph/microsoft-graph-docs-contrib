@@ -22,7 +22,7 @@ configuration := &graphchats.ChatItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Chats().ByChatId("chat-id").Get(context.Background(), configuration)
+chats, err := graphClient.Chats().ByChatId("chat-id").Get(context.Background(), configuration)
 
 
 ```

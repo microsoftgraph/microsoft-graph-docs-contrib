@@ -111,7 +111,7 @@ requestBody.SetMinimumWarningPatchVersion(&minimumWarningPatchVersion)
 faceIdBlocked := true
 requestBody.SetFaceIdBlocked(&faceIdBlocked) 
 
-result, err := graphClient.DeviceAppManagement().DefaultManagedAppProtections().Post(context.Background(), requestBody, nil)
+defaultManagedAppProtections, err := graphClient.DeviceAppManagement().DefaultManagedAppProtections().Post(context.Background(), requestBody, nil)
 
 
 ```

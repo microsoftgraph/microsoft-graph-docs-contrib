@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceAppManagement().DefaultManagedAppProtections().ByDefaultManagedAppProtectionId("defaultManagedAppProtection-id").Get(context.Background(), nil)
+defaultManagedAppProtections, err := graphClient.DeviceAppManagement().DefaultManagedAppProtections().ByDefaultManagedAppProtectionId("defaultManagedAppProtection-id").Get(context.Background(), nil)
 
 
 ```

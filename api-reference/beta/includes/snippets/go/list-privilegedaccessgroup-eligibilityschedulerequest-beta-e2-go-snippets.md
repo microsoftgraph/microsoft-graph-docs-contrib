@@ -15,14 +15,18 @@ import (
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
+
+requestFilter := "groupId eq '2b5ed229-4072-478d-9504-a047ebd4b07d' and principalId eq '3cce9d87-3986-4f19-8335-7ed075408ca2'"
+
 requestParameters := &graphidentitygovernance.IdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestsRequestBuilderGetQueryParameters{
+	Filter: &requestFilter,
 	Select: [] string {"principalId","action","groupId"},
 }
 configuration := &graphidentitygovernance.IdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityGovernance().PrivilegedAccess().Group().EligibilityScheduleRequests().Get(context.Background(), configuration)
+eligibilityScheduleRequests, err := graphClient.IdentityGovernance().PrivilegedAccess().Group().EligibilityScheduleRequests().Get(context.Background(), configuration)
 
 
 ```

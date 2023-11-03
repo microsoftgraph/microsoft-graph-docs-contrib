@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().OnPremisesConnections().Get(context.Background(), nil)
+onPremisesConnections, err := graphClient.DeviceManagement().VirtualEndpoint().OnPremisesConnections().Get(context.Background(), nil)
 
 
 ```

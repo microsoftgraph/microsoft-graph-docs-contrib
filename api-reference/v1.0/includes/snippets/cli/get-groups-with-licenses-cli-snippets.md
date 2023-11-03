@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-mgc groups list --select "id,assignedLicenses&`$filter=assignedLicenses/any()&`$expand=members(`$select=id,displayName)"
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+mgc groups list --filter "assignedLicenses/any()" --select "id,assignedLicenses" --expand "members(\$select=id,displayName)"
 
 ```

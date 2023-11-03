@@ -43,7 +43,7 @@ settings := []graphmodels.AppConfigurationSettingItemable {
 }
 requestBody.SetSettings(settings)
 
-result, err := graphClient.DeviceAppManagement().MobileAppConfigurations().Post(context.Background(), requestBody, nil)
+mobileAppConfigurations, err := graphClient.DeviceAppManagement().MobileAppConfigurations().Post(context.Background(), requestBody, nil)
 
 
 ```

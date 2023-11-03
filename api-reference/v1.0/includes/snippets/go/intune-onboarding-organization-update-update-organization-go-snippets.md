@@ -19,7 +19,7 @@ requestBody := graphmodels.NewOrganization()
 mobileDeviceManagementAuthority := graphmodels.INTUNE_MDMAUTHORITY 
 requestBody.SetMobileDeviceManagementAuthority(&mobileDeviceManagementAuthority) 
 
-result, err := graphClient.Organization().ByOrganization().Id("organization-id").Patch(context.Background(), requestBody, nil)
+organization, err := graphClient.Organization().ByOrganizationId("organization-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

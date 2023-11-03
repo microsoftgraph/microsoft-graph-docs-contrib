@@ -32,7 +32,7 @@ requestBody.SetCertificateSerialNumber(&certificateSerialNumber)
 certificate := "Certificate value"
 requestBody.SetCertificate(&certificate) 
 
-result, err := graphClient.DeviceManagement().ApplePushNotificationCertificate().Patch(context.Background(), requestBody, nil)
+applePushNotificationCertificate, err := graphClient.DeviceManagement().ApplePushNotificationCertificate().Patch(context.Background(), requestBody, nil)
 
 
 ```

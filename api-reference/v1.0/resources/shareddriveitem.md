@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 title: sharedDriveItem resource type
 ms.localizationpriority: medium
 description: "The sharedDriveItem resource is returned when using the Shares API to access a shared driveItem."

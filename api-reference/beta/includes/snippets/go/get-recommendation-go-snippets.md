@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Directory().Recommendations().ByRecommendationId("recommendation-id").Get(context.Background(), nil)
+recommendations, err := graphClient.Directory().Recommendations().ByRecommendationId("recommendation-id").Get(context.Background(), nil)
 
 
 ```

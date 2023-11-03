@@ -1,6 +1,6 @@
 ---
 title: "createInstance action"
-description: "Not yet documented"
+description: "Intune Deviceintent Devicemanagementtemplate Createinstance Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -49,10 +49,10 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Not yet documented|
-|description|String|Not yet documented|
-|settingsDelta|[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md) collection|Not yet documented|
-|roleScopeTagIds|String collection|Not yet documented|
+|displayName|String||
+|description|String||
+|settingsDelta|[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md) collection||
+|roleScopeTagIds|String collection||
 
 
 

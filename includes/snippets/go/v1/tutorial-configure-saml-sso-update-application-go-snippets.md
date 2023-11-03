@@ -27,7 +27,7 @@ identifierUris := []string {
 }
 requestBody.SetIdentifierUris(identifierUris)
 
-result, err := graphClient.Applications().ByApplicationId("application-id").Patch(context.Background(), requestBody, nil)
+applications, err := graphClient.Applications().ByApplicationId("application-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

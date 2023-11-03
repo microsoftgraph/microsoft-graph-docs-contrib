@@ -10,12 +10,12 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new User
 {
-	AdditionalData = new Dictionary<string, object>
+	CustomSecurityAttributes = new CustomSecurityAttributeValue
 	{
+		AdditionalData = new Dictionary<string, object>
 		{
-			"customSecurityAttributes" , new 
 			{
-				Engineering = new 
+				"Engineering" , new 
 				{
 					OdataType = "#Microsoft.DirectoryServices.CustomSecurityAttributeValue",
 					CostCenterOdataType = "#Collection(Int32)",
@@ -24,8 +24,8 @@ var requestBody = new User
 						1001,
 						1003,
 					},
-				},
-			}
+				}
+			},
 		},
 	},
 };

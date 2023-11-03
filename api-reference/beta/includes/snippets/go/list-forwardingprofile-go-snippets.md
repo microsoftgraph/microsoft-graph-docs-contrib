@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.NetworkAccess().ForwardingProfiles().Get(context.Background(), nil)
+forwardingProfiles, err := graphClient.NetworkAccess().ForwardingProfiles().Get(context.Background(), nil)
 
 
 ```

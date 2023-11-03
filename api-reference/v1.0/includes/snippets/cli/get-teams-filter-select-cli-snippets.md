@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-mgc teams list --filter displayName eq 'A Contoso Team' --select id,description
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+mgc teams list --filter "displayName eq 'A Contoso Team'" --select "id,description"
 
 ```

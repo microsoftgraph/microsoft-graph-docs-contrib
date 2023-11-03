@@ -1,6 +1,6 @@
 ---
 title: "Review guest access to your Microsoft 365 groups using the access reviews API in Microsoft Graph"
-description: "Learn how to use the access reviews API to review external/guest user access to your organization's resources through Microsoft 365 groups in your Azure AD tenant."
+description: "Learn how to use the access reviews API to review external/guest user access to your organization's resources through Microsoft 365 groups in your Microsoft Entra tenant."
 author: "FaithOmbongi"
 ms.author: ombongifaith
 ms.reviewer: jgangadhar
@@ -22,8 +22,8 @@ Let's assume that you've granted access to external users (also called *guest us
 
 To complete this tutorial, you need the following resources and privileges:
 
-+ A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled. 
-+ An account in a different Azure AD tenant or a social identity that you can invite as a guest user (B2B user).
++ A working Microsoft Entra tenant with a Microsoft Entra ID P2 or EMS E5 license enabled. 
++ An account in a different Microsoft Entra tenant or a social identity that you can invite as a guest user (B2B user).
 + Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Global Administrator role.
 + Grant yourself the following delegated permissions: `User.Invite.All`, `AccessReview.ReadWrite.All`, `Group.ReadWrite.All`, `User.ReadWrite.All`.
 
@@ -395,15 +395,15 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-accessreviews-m365group-create-accessreviewscheduledefinition-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-accessreviews-m365group-create-accessreviewscheduledefinition-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-accessreviews-m365group-create-accessreviewscheduledefinition-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -928,5 +928,5 @@ Congratulations! You've created an access review for guest users in Microsoft 36
 
 
 + [Access reviews API](/graph/api/resources/accessreviewsv2-overview)
-+ [What are Azure AD access reviews?](/azure/active-directory/governance/access-reviews-overview)
-+ [Review access to groups and applications in Azure AD access reviews](/azure/active-directory/governance/perform-access-review)
++ [What are Microsoft Entra access reviews?](/azure/active-directory/governance/access-reviews-overview)
++ [Review access to groups and applications in Microsoft Entra access reviews](/azure/active-directory/governance/perform-access-review)

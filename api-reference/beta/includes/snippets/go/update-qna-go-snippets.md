@@ -19,7 +19,7 @@ requestBody := graphmodelssearch.NewQna()
 description := "The dates that Contoso offices will be closed to observe holidays. These dates may differ from the actual date of the holiday in cases where the holiday falls on a wee​kend."
 requestBody.SetDescription(&description) 
 
-result, err := graphClient.Search().Qnas().ByQnaId("qna-id").Patch(context.Background(), requestBody, nil)
+qnas, err := graphClient.Search().Qnas().ByQnaId("qna-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

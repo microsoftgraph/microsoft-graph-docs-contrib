@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Domains().ByDomainId("domain-id").DomainNameReferences().Get(context.Background(), nil)
+domainNameReferences, err := graphClient.Domains().ByDomainId("domain-id").DomainNameReferences().Get(context.Background(), nil)
 
 
 ```

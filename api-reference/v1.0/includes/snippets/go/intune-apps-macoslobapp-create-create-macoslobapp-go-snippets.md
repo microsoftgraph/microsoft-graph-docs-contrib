@@ -105,7 +105,7 @@ requestBody.SetIgnoreVersionDetection(&ignoreVersionDetection)
 installAsManaged := true
 requestBody.SetInstallAsManaged(&installAsManaged) 
 
-result, err := graphClient.DeviceAppManagement().MobileApps().Post(context.Background(), requestBody, nil)
+mobileApps, err := graphClient.DeviceAppManagement().MobileApps().Post(context.Background(), requestBody, nil)
 
 
 ```

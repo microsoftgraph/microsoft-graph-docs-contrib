@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.DeviceManagement().DeviceEnrollmentConfigurations().ByDeviceEnrollmentConfigurationId("deviceEnrollmentConfiguration-id").Assignments().ByAssignmentId("enrollmentConfigurationAssignment-id").Delete(context.Background(), nil)
+graphClient.DeviceManagement().DeviceEnrollmentConfigurations().ByDeviceEnrollmentConfigurationId("deviceEnrollmentConfiguration-id").Assignments().ByEnrollmentConfigurationAssignmentId("enrollmentConfigurationAssignment-id").Delete(context.Background(), nil)
 
 
 ```

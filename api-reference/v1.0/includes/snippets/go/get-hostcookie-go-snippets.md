@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Security().ThreatIntelligence().HostCookies().ByHostCookieId("hostCookie-id").Get(context.Background(), nil)
+hostCookies, err := graphClient.Security().ThreatIntelligence().HostCookies().ByHostCookieId("hostCookie-id").Get(context.Background(), nil)
 
 
 ```

@@ -27,13 +27,8 @@ var requestBody = new Microsoft.Graph.Beta.Models.IdentityGovernance.CustomTaskE
 	ClientConfiguration = new CustomExtensionClientConfiguration
 	{
 		OdataType = "#microsoft.graph.customExtensionClientConfiguration",
+		MaximumRetries = 1,
 		TimeoutInMilliseconds = 1000,
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"maximumRetries" , 1
-			},
-		},
 	},
 	CallbackConfiguration = new Microsoft.Graph.Beta.Models.IdentityGovernance.CustomTaskExtensionCallbackConfiguration
 	{

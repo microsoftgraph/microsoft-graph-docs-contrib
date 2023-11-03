@@ -23,7 +23,7 @@ configuration := &graphserviceprincipals.ServicePrincipalItemSynchronizationJobI
 	Headers: headers,
 }
 
-result, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").Synchronization().Jobs().ByJobId("synchronizationJob-id").Schema().Get(context.Background(), configuration)
+schema, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").Synchronization().Jobs().BySynchronizationJobId("synchronizationJob-id").Schema().Get(context.Background(), configuration)
 
 
 ```

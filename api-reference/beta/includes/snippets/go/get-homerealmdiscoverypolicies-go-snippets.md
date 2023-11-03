@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Policies().HomeRealmDiscoveryPolicies().Get(context.Background(), nil)
+homeRealmDiscoveryPolicies, err := graphClient.Policies().HomeRealmDiscoveryPolicies().Get(context.Background(), nil)
 
 
 ```

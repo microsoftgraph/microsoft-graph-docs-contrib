@@ -33,7 +33,7 @@ requestBody.SetRecipientUserId(&recipientUserId)
 recipientShiftId := "e73408ca-3ea5-4bbf-96a8-2e06c95f7a2c"
 requestBody.SetRecipientShiftId(&recipientShiftId) 
 
-result, err := graphClient.Teams().ByTeamId("team-id").Schedule().SwapShiftsChangeRequests().Post(context.Background(), requestBody, configuration)
+swapShiftsChangeRequests, err := graphClient.Teams().ByTeamId("team-id").Schedule().SwapShiftsChangeRequests().Post(context.Background(), requestBody, configuration)
 
 
 ```

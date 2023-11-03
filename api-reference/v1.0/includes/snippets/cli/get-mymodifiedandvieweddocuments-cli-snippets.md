@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-mgc users insights used list --user-id {user-id} --orderby LastUsed/LastAccessedDateTime desc
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+mgc users insights used list --user-id {user-id} --orderby "LastUsed/LastAccessedDateTime desc"
 
 ```

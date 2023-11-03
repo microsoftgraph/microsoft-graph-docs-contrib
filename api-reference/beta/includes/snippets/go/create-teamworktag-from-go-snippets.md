@@ -33,7 +33,7 @@ members := []graphmodels.TeamworkTagMemberable {
 }
 requestBody.SetMembers(members)
 
-result, err := graphClient.Teams().ByTeamId("team-id").Tags().Post(context.Background(), requestBody, nil)
+tags, err := graphClient.Teams().ByTeamId("team-id").Tags().Post(context.Background(), requestBody, nil)
 
 
 ```

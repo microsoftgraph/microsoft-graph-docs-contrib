@@ -15,7 +15,6 @@ var requestBody = new Microsoft.Graph.Beta.Communications.Calls.Item.Participant
 		new InvitationParticipantInfo
 		{
 			OdataType = "#microsoft.graph.invitationParticipantInfo",
-			ReplacesCallId = "a7ebfb2d-871e-419c-87af-27290b22e8db",
 			Identity = new IdentitySet
 			{
 				OdataType = "#microsoft.graph.identitySet",
@@ -31,6 +30,7 @@ var requestBody = new Microsoft.Graph.Beta.Communications.Calls.Item.Participant
 					},
 				},
 			},
+			ParticipantId = "a7ebfb2d-871e-419c-87af-27290b22e8db",
 		},
 	},
 	ClientContext = "f2fa86af-3c51-4bc2-8fc0-475452d9764f",

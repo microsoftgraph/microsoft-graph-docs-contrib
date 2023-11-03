@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Security().ThreatIntelligence().IntelligenceProfileIndicators().ByIntelligenceProfileIndicatorId("intelligenceProfileIndicator-id").Get(context.Background(), nil)
+intelligenceProfileIndicators, err := graphClient.Security().ThreatIntelligence().IntelligenceProfileIndicators().ByIntelligenceProfileIndicatorId("intelligenceProfileIndicator-id").Get(context.Background(), nil)
 
 
 ```

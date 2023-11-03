@@ -27,7 +27,7 @@ configuration := &graphbookingbusinesses.BookingBusinesseItemCalendarViewRequest
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.BookingBusinesses().ByBookingBusinesseId("bookingBusiness-id").CalendarView().Get(context.Background(), configuration)
+calendarView, err := graphClient.BookingBusinesses().ByBookingBusinessId("bookingBusiness-id").CalendarView().Get(context.Background(), configuration)
 
 
 ```

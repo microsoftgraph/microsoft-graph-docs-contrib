@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc device-management compliance-management-partners patch --compliance-management-partner-id {complianceManagementPartner-id} --body '{\
   "@odata.type": "#microsoft.graph.complianceManagementPartner",\
   "lastHeartbeatDateTime": "2016-12-31T23:59:37.9174975-08:00",\

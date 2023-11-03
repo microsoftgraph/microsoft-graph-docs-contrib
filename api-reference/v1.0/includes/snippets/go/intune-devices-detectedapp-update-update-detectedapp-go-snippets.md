@@ -29,7 +29,7 @@ requestBody.SetPublisher(&publisher)
 platform := graphmodels.WINDOWS_DETECTEDAPPPLATFORMTYPE 
 requestBody.SetPlatform(&platform) 
 
-result, err := graphClient.DeviceManagement().DetectedApps().ByDetectedAppId("detectedApp-id").Patch(context.Background(), requestBody, nil)
+detectedApps, err := graphClient.DeviceManagement().DetectedApps().ByDetectedAppId("detectedApp-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Security().ThreatSubmission().UrlThreats().ByUrlThreatId("urlThreatSubmission-id").Get(context.Background(), nil)
+urlThreats, err := graphClient.Security().ThreatSubmission().UrlThreats().ByUrlThreatSubmissionId("urlThreatSubmission-id").Get(context.Background(), nil)
 
 
 ```

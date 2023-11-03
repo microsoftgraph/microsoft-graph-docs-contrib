@@ -54,7 +54,7 @@ The following table shows the properties that are required when you create the [
 |upn|String|User Principal Name (UPN).|
 |internalVersion|Int32|The Policy internal version|
 |lastStateUpdateDateTime|DateTimeOffset|The last timestamp of when the hardware configuration executed|
-|configurationState|[runState](../resources/intune-deviceconfig-runstate.md)|Configuration state from the lastest hardware configuration execution. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
+|configurationState|[runState](../resources/intune-shared-runstate.md)|Configuration state from the lastest hardware configuration execution. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |configurationOutput|String|Output of the hardware configuration execution|
 |configurationError|String|Error from the hardware configuration execution|
 

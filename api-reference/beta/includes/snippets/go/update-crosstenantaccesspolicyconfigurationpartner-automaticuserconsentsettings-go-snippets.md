@@ -23,7 +23,7 @@ outboundAllowed := true
 automaticUserConsentSettings.SetOutboundAllowed(&outboundAllowed) 
 requestBody.SetAutomaticUserConsentSettings(automaticUserConsentSettings)
 
-result, err := graphClient.Policies().CrossTenantAccessPolicy().Partners().ByPartnerId("crossTenantAccessPolicyConfigurationPartner-tenantId").Patch(context.Background(), requestBody, nil)
+partners, err := graphClient.Policies().CrossTenantAccessPolicy().Partners().ByCrossTenantAccessPolicyConfigurationPartnerTenantId("crossTenantAccessPolicyConfigurationPartner-tenantId").Patch(context.Background(), requestBody, nil)
 
 
 ```

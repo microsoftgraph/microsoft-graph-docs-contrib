@@ -19,7 +19,7 @@ requestBody := graphcommunications.NewCancelMediaProcessingPostRequestBody()
 clientContext := "clientContext-value"
 requestBody.SetClientContext(&clientContext) 
 
-result, err := graphClient.Communications().Calls().ByCallId("call-id").CancelMediaProcessing().Post(context.Background(), requestBody, nil)
+cancelMediaProcessing, err := graphClient.Communications().Calls().ByCallId("call-id").CancelMediaProcessing().Post(context.Background(), requestBody, nil)
 
 
 ```

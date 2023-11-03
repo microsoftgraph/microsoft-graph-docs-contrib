@@ -33,7 +33,7 @@ id := "extension_guid_shoeSize"
 userAttribute.SetId(&id) 
 requestBody.SetUserAttribute(userAttribute)
 
-result, err := graphClient.Identity().B2xUserFlows().ByB2xUserFlowId("b2xIdentityUserFlow-id").UserAttributeAssignments().Post(context.Background(), requestBody, nil)
+userAttributeAssignments, err := graphClient.Identity().B2xUserFlows().ByB2xIdentityUserFlowId("b2xIdentityUserFlow-id").UserAttributeAssignments().Post(context.Background(), requestBody, nil)
 
 
 ```

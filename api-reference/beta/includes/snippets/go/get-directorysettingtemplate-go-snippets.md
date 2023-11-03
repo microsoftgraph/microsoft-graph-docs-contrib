@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DirectorySettingTemplates().ByDirectorySettingTemplateId("directorySettingTemplate-id").Get(context.Background(), nil)
+directorySettingTemplates, err := graphClient.DirectorySettingTemplates().ByDirectorySettingTemplateId("directorySettingTemplate-id").Get(context.Background(), nil)
 
 
 ```

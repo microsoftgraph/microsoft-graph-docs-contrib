@@ -35,7 +35,7 @@ requestBody.SetVirtualNetworkId(&virtualNetworkId)
 subnetId := "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet/subnets/default"
 requestBody.SetSubnetId(&subnetId) 
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().OnPremisesConnections().ByOnPremisesConnectionId("cloudPcOnPremisesConnection-id").Patch(context.Background(), requestBody, nil)
+onPremisesConnections, err := graphClient.DeviceManagement().VirtualEndpoint().OnPremisesConnections().ByCloudPcOnPremisesConnectionId("cloudPcOnPremisesConnection-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -4,20 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = TeamsAppInstallation()
-additional_data = [
-'teams_app@odata_bind' => 'https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a', 
-];
-request_body.additional_data(additional_data)
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = TeamsAppInstallation(
+	additional_data = {
+			"teams_app@odata_bind" : "https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a",
+	}
+)
 
-
-
-
-result = await client.teams.by_team_id('team-id').installed_apps.post(request_body = request_body)
+result = await graph_client.teams.by_team_id('team-id').installed_apps.post(request_body)
 
 
 ```

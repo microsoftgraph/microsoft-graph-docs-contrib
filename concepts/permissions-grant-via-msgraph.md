@@ -13,7 +13,7 @@ ms.date: 07/25/2023
 
 # Grant or revoke API permissions programmatically
 
-When you grant API permissions to a client app in Azure Active Directory (Azure AD), the permission grants are recorded as objects that can be accessed, updated, or deleted like your data. Using Microsoft Graph to directly create permission grants is a programmatic alternative to [interactive consent](/azure/active-directory/manage-apps/consent-and-permissions-overview) and can be useful for automation scenarios, bulk management, or other custom operations in your organization.
+When you grant API permissions to a client app in Microsoft Entra ID, the permission grants are recorded as objects that can be accessed, updated, or deleted like your data. Using Microsoft Graph to directly create permission grants is a programmatic alternative to [interactive consent](/azure/active-directory/manage-apps/consent-and-permissions-overview) and can be useful for automation scenarios, bulk management, or other custom operations in your organization.
 
 <!-- start the grant-application-permissions zone -->
 ::: zone pivot="grant-application-permissions"
@@ -27,7 +27,7 @@ In this guide, you'll learn how to grant and revoke app roles for an app using M
 
 To complete these instructions, you need the following resources and privileges:
 
-- A working Azure AD tenant.
+- A working Microsoft Entra tenant.
 - You'll run the requests in this article as a user. You must complete the following steps:
     - Sign in to an app such as [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) or [Postman](/graph/use-postman) as a user with privileges to create applications in the tenant.
     - In the app you've signed in to, consent to the *Application.Read.All* and *AppRoleAssignment.ReadWrite.All* delegated permissions on behalf of the signed-in user. You don't need to consent on behalf of your organization.
@@ -179,7 +179,7 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/grant-approles-using-approleassignedto-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
@@ -187,7 +187,7 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/grant-approles-using-approleassignedto-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -217,9 +217,11 @@ Content-type: application/json
 }
 ```
 
+### Confirm the app role assignment
+
 To confirm all principals with role assignments to the resource service principal, run the following request.
 
-### Request
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -265,7 +267,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/7ea9e944-71ce-443d-811c-7
 
 ---
 
-### Response
+#### Response
 
 The response object includes a collection of app role assignments to your resource service principal and includes the app role assignment you created using the POST request.
 
@@ -359,7 +361,7 @@ You've learned how to manage app role grants for a service principal. This metho
 
 ## See also
 
-+ [Tutorial: Grant app roles in Azure AD using Microsoft Graph PowerShell](/powershell/microsoftgraph/tutorial-grant-app-only-api-permissions)
++ [Tutorial: Grant app roles in Microsoft Entra ID using Microsoft Graph PowerShell](/powershell/microsoftgraph/tutorial-grant-app-only-api-permissions)
 + [appRoleAssignment resource type](/graph/api/resources/approleassignment)
 
 ::: zone-end
@@ -378,7 +380,7 @@ In this guide, you'll learn how to grant and revoke delegated permissions for an
 
 To complete these instructions, you need the following resources and privileges:
 
-- A working Azure AD tenant.
+- A working Microsoft Entra tenant.
 - You'll run the requests in this article as a user. You must complete the following steps:
     - Sign in to an app such as [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) or [Postman](/graph/use-postman) as a user with privileges to create applications in the tenant.
     - In the app you've signed in to, consent to the *Application.Read.All*, *DelegatedPermissionGrant.ReadWrite.All* delegated permissions on behalf of the signed-in user. You don't need to consent on behalf of your organization.
@@ -495,6 +497,7 @@ Content-type: application/json
 
 ## Step 2: Grant a delegated permission to the client service principal on behalf of a user
 
+### Request
 In this step, you'll grant your app, on behalf of a user, a delegated permission that's exposed by Microsoft Graph, thereby creating an **delegated permission grant**. 
 
 + From Step 1, the object ID of Microsoft Graph in the tenant is `7ea9e944-71ce-443d-811c-71e8047b557a`
@@ -598,9 +601,11 @@ Content-type: application/json
 
 If you granted consent for all users in the tenant, the **consentType** in the response object would be `AllPrincipals`, and the **principalId** would be `null`.
 
+### Confirm the permission grant
+
 To confirm the delegated permissions assigned to the service principal on behalf of the user, you run the following request.
 
-### Request
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -646,7 +651,7 @@ GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants?$filter=clientId eq 
 
 ---
 
-### Response
+#### Response
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -803,7 +808,7 @@ You've granted delegated permissions (or scopes) to a service principal. This me
 
 ## See also
 
-- [Tutorial: Grant delegated permissions in Azure AD using Microsoft Graph PowerShell](/powershell/microsoftgraph/tutorial-grant-delegated-api-permissions)
+- [Tutorial: Grant delegated permissions in Microsoft Entra ID using Microsoft Graph PowerShell](/powershell/microsoftgraph/tutorial-grant-delegated-api-permissions)
 - [oAuth2PermissionGrant resource type](/graph/api/resources/oauth2permissiongrant)
 
 ::: zone-end

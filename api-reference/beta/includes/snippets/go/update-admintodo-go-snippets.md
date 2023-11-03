@@ -25,7 +25,7 @@ isExternalShareEnabled := true
 settings.SetIsExternalShareEnabled(&isExternalShareEnabled) 
 requestBody.SetSettings(settings)
 
-result, err := graphClient.Admin().Todo().Patch(context.Background(), requestBody, nil)
+todo, err := graphClient.Admin().Todo().Patch(context.Background(), requestBody, nil)
 
 
 ```

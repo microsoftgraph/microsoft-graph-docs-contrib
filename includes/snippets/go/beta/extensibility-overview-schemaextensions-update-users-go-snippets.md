@@ -26,7 +26,7 @@ extkmpdyld2_graphLearnCourses.SetCourseId(&courseId)
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Users().ByUserId("user-id").Patch(context.Background(), requestBody, nil)
+users, err := graphClient.Users().ByUserId("user-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

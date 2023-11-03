@@ -89,7 +89,7 @@ requestBody.SetUserAccountControlSettings(&userAccountControlSettings)
 workFoldersUrl := "https://example.com/workFoldersUrl/"
 requestBody.SetWorkFoldersUrl(&workFoldersUrl) 
 
-result, err := graphClient.DeviceManagement().DeviceConfigurations().Post(context.Background(), requestBody, nil)
+deviceConfigurations, err := graphClient.DeviceManagement().DeviceConfigurations().Post(context.Background(), requestBody, nil)
 
 
 ```

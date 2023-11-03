@@ -49,7 +49,7 @@ id := "44c741c1-2cf4-40db-83b6-e0112f8e5a83"
 assignment.SetId(&id) 
 requestBody.SetAssignment(assignment)
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AssignmentRequests().Post(context.Background(), requestBody, nil)
+assignmentRequests, err := graphClient.IdentityGovernance().EntitlementManagement().AssignmentRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

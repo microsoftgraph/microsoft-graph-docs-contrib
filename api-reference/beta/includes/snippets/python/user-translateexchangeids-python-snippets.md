@@ -4,20 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = TranslateExchangeIdsPostRequestBody()
-request_body.InputIds(['{rest-formatted-id-1}', '{rest-formatted-id-2}', ])
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.sourceidtype(ExchangeIdFormat.RestId('exchangeidformat.restid'))
+request_body = TranslateExchangeIdsPostRequestBody(
+	input_ids = [
+		"{rest-formatted-id-1}",
+		"{rest-formatted-id-2}",
+	],
+	source_id_type = ExchangeIdFormat.RestId,
+	target_id_type = ExchangeIdFormat.RestImmutableEntryId,
+)
 
-request_body.targetidtype(ExchangeIdFormat.RestImmutableEntryId('exchangeidformat.restimmutableentryid'))
-
-
-
-
-result = await client.me.translate_exchange_ids.post(request_body = request_body)
+result = await graph_client.me.translate_exchange_ids.post(request_body)
 
 
 ```

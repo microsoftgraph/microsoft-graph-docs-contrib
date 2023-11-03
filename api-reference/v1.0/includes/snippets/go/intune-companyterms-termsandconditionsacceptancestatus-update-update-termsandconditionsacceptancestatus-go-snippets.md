@@ -26,7 +26,7 @@ requestBody.SetAcceptedDateTime(&acceptedDateTime)
 userPrincipalName := "User Principal Name value"
 requestBody.SetUserPrincipalName(&userPrincipalName) 
 
-result, err := graphClient.DeviceManagement().TermsAndConditions().ByTermsAndConditionId("termsAndConditions-id").AcceptanceStatuses().ByAcceptanceStatuseId("termsAndConditionsAcceptanceStatus-id").Patch(context.Background(), requestBody, nil)
+acceptanceStatuses, err := graphClient.DeviceManagement().TermsAndConditions().ByTermsAndConditionsId("termsAndConditions-id").AcceptanceStatuses().ByTermsAndConditionsAcceptanceStatusId("termsAndConditionsAcceptanceStatus-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -4,32 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = User()
-additional_data = [
-'custom_security_attributes' => request_body = CustomSecurityAttributes()
-engineering = Engineering()
-		engineering.@odata_type = '#Microsoft.DirectoryServices.CustomSecurityAttributeValue'
+graph_client = GraphServiceClient(credentials, scopes)
 
-		engineering.cost_center@odata_type = '#Collection(Int32)'
+request_body = User(
+	custom_security_attributes = CustomSecurityAttributeValue(
+		additional_data = {
+				"engineering" : {
+						"@odata_type" : "#Microsoft.DirectoryServices.CustomSecurityAttributeValue",
+						"cost_center@odata_type" : "#Collection(Int32)",
+						"cost_center" : [
+							1001,
+							1003,
+						],
+				},
+		}
+	),
+)
 
-engineering.CostCenter([1001,1003,])
-
-
-request_body.engineering = engineering
-
-request_body.custom_security_attributes = customSecurityAttributes
-
-];
-request_body.additional_data(additional_data)
-
-
-
-
-
-result = await client.users.by_user_id('user-id').patch(request_body = request_body)
+result = await graph_client.users.by_user_id('user-id').patch(request_body)
 
 
 ```

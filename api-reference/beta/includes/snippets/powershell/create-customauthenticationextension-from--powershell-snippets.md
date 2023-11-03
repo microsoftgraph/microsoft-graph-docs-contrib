@@ -20,7 +20,7 @@ $params = @{
 	}
 	clientConfiguration = @{
 		timeoutInMilliseconds = 2000
-		maximumRetries = 
+		maximumRetries = 1
 	}
 	claimsForTokenConfiguration = @(
 	)

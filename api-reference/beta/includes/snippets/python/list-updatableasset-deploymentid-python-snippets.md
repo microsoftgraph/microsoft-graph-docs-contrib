@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-
-result = await client.admin.windows.updates.deployment_audiences.by_deployment_audience_id('deploymentAudience-id').members.get()
+result = await graph_client.admin.windows.updates.deployment_audiences.by_deployment_audience_id('deploymentAudience-id').members.get()
 
 
 ```

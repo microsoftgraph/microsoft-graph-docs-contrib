@@ -40,7 +40,7 @@ requestBody.SetState(&state)
 complianceGracePeriodExpirationDateTime , err := time.Parse(time.RFC3339, "2016-12-31T23:56:44.951111-08:00")
 requestBody.SetComplianceGracePeriodExpirationDateTime(&complianceGracePeriodExpirationDateTime) 
 
-result, err := graphClient.DeviceManagement().DeviceCompliancePolicySettingStateSummaries().ByDeviceCompliancePolicySettingStateSummarieId("deviceCompliancePolicySettingStateSummary-id").DeviceComplianceSettingStates().ByDeviceComplianceSettingStateId("deviceComplianceSettingState-id").Patch(context.Background(), requestBody, nil)
+deviceComplianceSettingStates, err := graphClient.DeviceManagement().DeviceCompliancePolicySettingStateSummaries().ByDeviceCompliancePolicySettingStateSummaryId("deviceCompliancePolicySettingStateSummary-id").DeviceComplianceSettingStates().ByDeviceComplianceSettingStateId("deviceComplianceSettingState-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

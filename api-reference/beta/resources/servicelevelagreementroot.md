@@ -1,7 +1,7 @@
 ---
 title: "serviceLevelAgreementRoot resource type"
-description: "A placeholder to allow for the desired URL path for Azure AD SLA attainment."
-author: "sarbar"
+description: "A placeholder to allow for the desired URL path for Microsoft Entra SLA attainment."
+author: "SarahBar"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A placeholder to allow for the desired URL path for Azure AD SLA attainment.
+A placeholder to allow for the desired URL path for Microsoft Entra SLA attainment.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -23,7 +23,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|azureADAuthentication|[azureADAuthentication](../resources/azureadauthentication.md)|Collects the Azure AD SLA attainment for each month for an Azure AD tenant.|
+|azureADAuthentication|[azureADAuthentication](../resources/azureadauthentication.md)|Collects the Microsoft Entra SLA attainment for each month for a Microsoft Entra tenant.|
 
 ## JSON representation
 This entity can not be viewed as it is only a placeholder.

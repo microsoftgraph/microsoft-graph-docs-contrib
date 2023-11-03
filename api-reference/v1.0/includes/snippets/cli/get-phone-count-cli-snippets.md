@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-mgc contacts list --search "displayName:wa" --count true --consistency-level eventual
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+mgc contacts list --search ""displayName:wa"" --count "true" --consistency-level "eventual"
 
 ```

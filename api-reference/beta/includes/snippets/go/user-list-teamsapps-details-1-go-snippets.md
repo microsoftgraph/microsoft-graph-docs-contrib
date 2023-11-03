@@ -22,7 +22,7 @@ configuration := &graphusers.UserItemTeamworkInstalledAppItemRequestBuilderGetRe
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Users().ByUserId("user-id").Teamwork().InstalledApps().ByInstalledAppId("userScopeTeamsAppInstallation-id").Get(context.Background(), configuration)
+installedApps, err := graphClient.Users().ByUserId("user-id").Teamwork().InstalledApps().ByUserScopeTeamsAppInstallationId("userScopeTeamsAppInstallation-id").Get(context.Background(), configuration)
 
 
 ```

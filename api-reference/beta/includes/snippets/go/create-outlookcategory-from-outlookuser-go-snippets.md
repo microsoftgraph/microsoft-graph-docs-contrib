@@ -21,7 +21,7 @@ requestBody.SetDisplayName(&displayName)
 color := graphmodels.PRESET9_CATEGORYCOLOR 
 requestBody.SetColor(&color) 
 
-result, err := graphClient.Me().Outlook().MasterCategories().Post(context.Background(), requestBody, nil)
+masterCategories, err := graphClient.Me().Outlook().MasterCategories().Post(context.Background(), requestBody, nil)
 
 
 ```

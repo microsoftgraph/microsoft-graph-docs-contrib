@@ -2,7 +2,7 @@
 title: "unifiedRbacApplication resource type"
 description: "Represents a role management container for unified role definitions and role assignments for Microsoft 365 RBAC providers."
 ms.localizationpriority: medium
-author: "bili1"
+author: "cubika"
 ms.prod: "directory-management"
 doc_type: "resourcePageType"
 ---

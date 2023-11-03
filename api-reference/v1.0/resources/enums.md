@@ -174,6 +174,93 @@ Namespace: microsoft.graph
 | absoluteYearly  |
 | relativeYearly  |
 
+### assignmentScheduleFilterByCurrentUserOptions values
+
+| Member             |
+| :----------------- |
+| principal          |
+| unknownFutureValue |
+
+### assignmentScheduleInstanceFilterByCurrentUserOptions values
+
+| Member             |
+| :----------------- |
+| principal          |
+| unknownFutureValue |
+
+### assignmentScheduleRequestFilterByCurrentUserOptions values
+
+| Member             |
+| :----------------- |
+| principal          |
+| createdBy          |
+| approver           |
+| unknownFutureValue |
+
+
+### eligibilityScheduleFilterByCurrentUserOptions values
+
+| Member             |
+| :----------------- |
+| principal          |
+| unknownFutureValue |
+
+### eligibilityScheduleInstanceFilterByCurrentUserOptions values
+
+| Member             |
+| :----------------- |
+| principal          |
+| unknownFutureValue |
+
+### eligibilityScheduleRequestFilterByCurrentUserOptions values
+
+| Member             |
+| :----------------- |
+| principal          |
+| createdBy          |
+| approver           |
+| unknownFutureValue |
+
+
+### privilegedAccessGroupAssignmentType values
+
+| Member             |
+| :----------------- |
+| assigned           |
+| activated          |
+| unknownFutureValue |
+
+### privilegedAccessGroupMemberType values
+
+| Member             |
+| :----------------- |
+| direct             |
+| group              |
+| unknownFutureValue |
+
+### privilegedAccessGroupRelationships values
+
+| Member             |
+| :----------------- |
+| owner              |
+| member             |
+| unknownFutureValue |
+
+### scheduleRequestActions values
+
+| Member             |
+| :----------------- |
+| adminAssign        |
+| adminUpdate        |
+| adminRemove        |
+| selfActivate       |
+| selfDeactivate     |
+| adminExtend        |
+| adminRenew         |
+| selfExtend         |
+| selfRenew          |
+| unknownFutureValue |
+
 ### roleAssignmentScheduleFilterByCurrentUserOptions values 
 
 | Member             |
@@ -825,6 +912,16 @@ Namespace: microsoft.graph
 | data                    |
 | screenSharing           |
 | unknownFutureValue      |
+
+### endpointType values
+
+| Member                    |
+| :------------------------ |
+| default                   |
+| voicemail                 |
+| skypeForBusiness          |
+| skypeForBusinessVoipPhone |
+| unknownFutureValue        |
 
 ### callDirection values
 
@@ -2165,6 +2262,7 @@ Possible values for user account types (group membership), per Windows definitio
 | contentDeletion    |
 | caseResolved       |
 | unknownFutureValue |
+| approval           |
 
 ### subjectRightsRequestStageStatus values 
 
@@ -2226,6 +2324,129 @@ Possible values for user account types (group membership), per Windows definitio
 | initial            |
 | chunkFinished      |
 | unknownFutureValue |
+
+### endUserNotificationPreference values
+
+|Member|
+|:---|
+|unknown|
+|microsoft|
+|custom|
+|unknownFutureValue|
+
+### endUserNotificationSettingType values
+
+|Member|
+|:---|
+|unknown|
+|noTraining|
+|trainingSelected|
+|noNotification|
+|unknownFutureValue|
+
+### endUserNotificationType values
+
+|Member|
+|:---|
+|unknown|
+|positiveReinforcement|
+|noTraining|
+|trainingAssignment|
+|trainingReminder|
+|unknownFutureValue|
+
+### notificationDeliveryFrequency values
+
+|Member|
+|:---|
+|unknown|
+|weekly|
+|biWeekly|
+|unknownFutureValue|
+
+### notificationDeliveryPreference values
+
+|Member|
+|:---|
+|unknown|
+|deliverImmedietly|
+|deliverAfterCampaignEnd|
+|unknownFutureValue|
+
+### oAuthAppScope values
+
+|Member|
+|:---|
+|unknown|
+|readCalendar|
+|readContact|
+|readMail|
+|readAllChat|
+|readAllFile|
+|readAndWriteMail|
+|sendMail|
+|unknownFutureValue|
+
+### targettedUserType values
+
+|Member|
+|:---|
+|unknown|
+|clicked|
+|compromised|
+|allUsers|
+|unknownFutureValue|
+
+### trainingAssignedTo values
+
+|Member|
+|:---|
+|none|
+|allUsers|
+|clickedPayload|
+|compromised|
+|reportedPhish|
+|readButNotClicked|
+|didNothing|
+|unknownFutureValue|
+
+### trainingAvailabilityStatus values
+
+|Member|
+|:---|
+|unknown|
+|notAvailable|
+|available|
+|archive|
+|delete|
+|unknownFutureValue|
+
+### trainingCompletionDuration values
+
+| Member             |
+| :------------------|
+| week               |
+| fortnite           |
+| month              |
+| unknownFutureValue |
+
+### trainingSettingType values
+
+|Member|
+|:---|
+|microsoftCustom|
+|microsoftManaged|
+|noTraining|
+|custom|
+|unknownFutureValue|
+
+### trainingType values
+
+|Member|
+|:---|
+|unknown|
+|phishing|
+|unknownFutureValue|
 
 ### payloadDeliveryPlatform values
 
@@ -2375,8 +2596,10 @@ Possible values for user account types (group membership), per Windows definitio
 | Member             |
 | :----------------- |
 | lockForApproval    |
+| approve            |
 | terminate          |
 | unknownFutureValue |
+| reject             |
 
 ### delegatedAdminRelationshipRequestStatus values 
 

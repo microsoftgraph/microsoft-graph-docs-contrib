@@ -21,7 +21,7 @@ requestBody.SetUrl(&url)
 deviceCount := int32(11)
 requestBody.SetDeviceCount(&deviceCount) 
 
-result, err := graphClient.DeviceManagement().WindowsInformationProtectionNetworkLearningSummaries().ByWindowsInformationProtectionNetworkLearningSummarieId("windowsInformationProtectionNetworkLearningSummary-id").Patch(context.Background(), requestBody, nil)
+windowsInformationProtectionNetworkLearningSummaries, err := graphClient.DeviceManagement().WindowsInformationProtectionNetworkLearningSummaries().ByWindowsInformationProtectionNetworkLearningSummaryId("windowsInformationProtectionNetworkLearningSummary-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

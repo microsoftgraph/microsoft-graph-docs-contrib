@@ -25,7 +25,7 @@ requestBody.SetResourceId(&resourceId)
 scope := "DelegatedPermissionGrant.ReadWrite.All"
 requestBody.SetScope(&scope) 
 
-result, err := graphClient.Oauth2PermissionGrants().Post(context.Background(), requestBody, nil)
+oauth2PermissionGrants, err := graphClient.Oauth2PermissionGrants().Post(context.Background(), requestBody, nil)
 
 
 ```

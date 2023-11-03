@@ -47,7 +47,7 @@ requestBody.SetEventStatus(eventStatus)
 lastStatusUpdateDateTime , err := time.Parse(time.RFC3339, "String (timestamp)")
 requestBody.SetLastStatusUpdateDateTime(&lastStatusUpdateDateTime) 
 
-result, err := graphClient.Security().Triggers().RetentionEvents().Post(context.Background(), requestBody, nil)
+retentionEvents, err := graphClient.Security().Triggers().RetentionEvents().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -21,7 +21,7 @@ requestBody.SetDisplayName(&displayName)
 description := "Description value"
 requestBody.SetDescription(&description) 
 
-result, err := graphClient.DeviceManagement().DeviceCategories().Post(context.Background(), requestBody, nil)
+deviceCategories, err := graphClient.DeviceManagement().DeviceCategories().Post(context.Background(), requestBody, nil)
 
 
 ```

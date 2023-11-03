@@ -27,7 +27,7 @@ notificationMessageCCList := []string {
 }
 requestBody.SetNotificationMessageCCList(notificationMessageCCList)
 
-result, err := graphClient.DeviceManagement().DeviceCompliancePolicies().ByDeviceCompliancePolicieId("deviceCompliancePolicy-id").ScheduledActionsForRule().ByScheduledActionsForRule().Id("deviceComplianceScheduledActionForRule-id").ScheduledActionConfigurations().ByScheduledActionConfigurationId("deviceComplianceActionItem-id").Patch(context.Background(), requestBody, nil)
+scheduledActionConfigurations, err := graphClient.DeviceManagement().DeviceCompliancePolicies().ByDeviceCompliancePolicyId("deviceCompliancePolicy-id").ScheduledActionsForRule().ByDeviceComplianceScheduledActionForRuleId("deviceComplianceScheduledActionForRule-id").ScheduledActionConfigurations().ByDeviceComplianceActionItemId("deviceComplianceActionItem-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-In [Azure AD entitlement management](entitlementmanagement-overview.md), an access package resource role is a reference to a role defined in a resource. These are automatically present after a resource is added to an access package catalog. That reference can be used after creating an access package to specify the roles of each of the catalog's resources into which an access package should deliver, by [creating an access package resource role scope](../api/accesspackage-post-resourcerolescopes.md).
+In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), an access package resource role is a reference to a role defined in a resource. These are automatically present after a resource is added to an access package catalog. A group may have two roles, for the owner and the member.  An application's roles will be defined the application manifest. The roles along with the scopes of a resource in a catalog can be retrieved by [listing the catalog resources](../api/accesspackagecatalog-list-resources.md) and expanding the `roles` and `scopes` of the resource. Those references to the role and scope can be used after creating an access package in that catalog, to specify the roles of each of the catalog's resources into which an access package should deliver, by [creating an access package resource role scope](../api/accesspackage-post-resourcerolescopes.md).
 
 ## Methods
 

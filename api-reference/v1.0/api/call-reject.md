@@ -17,14 +17,13 @@ The bot is expected to answer or reject the call before the call times out. The 
 
 This API does not end existing calls that have already been answered. Use [delete call](../api/call-delete.md) to end a call.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
-| Permission type | Permissions (from least to most privileged)                |
-| :-------------- | :--------------------------------------------------------- |
-| Delegated (work or school account)     | Not Supported                       |
-| Delegated (personal Microsoft account) | Not Supported                       |
-| Application     | None                                                       |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "call_reject" } -->
+[!INCLUDE [permissions-table](../includes/permissions/call-reject-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +46,7 @@ In the request body, provide a JSON object with the following parameters.
 |callbackUri|String|This allows bots to provide a specific callback URI for the current call to receive later notifications. If this property has not been set, the bot's global callback URI will be used instead. This must be `https`.|
 
 ## Response
-If successful, this method returns a `202 Accepted` response code. It does not return anything in the response body.
+If successful, this method returns a `202 Accepted` response code. It doesn't return anything in the response body.
 
 ## Examples
 The following examples show how to call this API.

@@ -25,7 +25,7 @@ requestBody.SetFile(&file)
 version := "Version value"
 requestBody.SetVersion(&version) 
 
-result, err := graphClient.DeviceAppManagement().WindowsInformationProtectionPolicies().ByWindowsInformationProtectionPolicieId("windowsInformationProtectionPolicy-id").ExemptAppLockerFiles().ByExemptAppLockerFileId("windowsInformationProtectionAppLockerFile-id").Patch(context.Background(), requestBody, nil)
+exemptAppLockerFiles, err := graphClient.DeviceAppManagement().WindowsInformationProtectionPolicies().ByWindowsInformationProtectionPolicyId("windowsInformationProtectionPolicy-id").ExemptAppLockerFiles().ByWindowsInformationProtectionAppLockerFileId("windowsInformationProtectionAppLockerFile-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

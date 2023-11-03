@@ -80,6 +80,10 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/defaultManagedAppPro
 [!INCLUDE [sample-code](../includes/snippets/php/intune-mam-defaultmanagedappprotection-delete-delete-defaultmanagedappprotection-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-mam-defaultmanagedappprotection-delete-delete-defaultmanagedappprotection-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/intune-mam-defaultmanagedappprotection-delete-delete-defaultmanagedappprotection-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

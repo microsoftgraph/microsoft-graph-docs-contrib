@@ -52,3 +52,6 @@ Remote actions Intune supports.
 |initiateOnDemandProactiveRemediation|29|Add device action of InitiateOnDemandProactiveRemediation|
 |rotateLocalAdminPassword|32|Add device action of RotateLocalAdminPassword|
 |unknownFutureValue|33|Evolvable enumeration sentinel value. Do not use.|
+|launchRemoteHelp|34|Add device action of Remote Help Launch|
+|revokeAppleVppLicenses|35|Revoke all Apple Vpp licenses for a device|
+|removeDeviceFirmwareConfigurationInterfaceManagement|36|Indicate IT Admin initiates an action to remove devices from Device Firmware Configuration Interface management|

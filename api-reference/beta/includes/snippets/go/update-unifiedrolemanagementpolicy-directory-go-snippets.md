@@ -191,7 +191,7 @@ rules := []graphmodels.UnifiedRoleManagementPolicyRuleable {
 }
 requestBody.SetRules(rules)
 
-result, err := graphClient.Policies().RoleManagementPolicies().ByRoleManagementPolicieId("unifiedRoleManagementPolicy-id").Patch(context.Background(), requestBody, nil)
+roleManagementPolicies, err := graphClient.Policies().RoleManagementPolicies().ByUnifiedRoleManagementPolicyId("unifiedRoleManagementPolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc users send-mail post --user-id {user-id} --body '{\
   "message": {\
     "subject": "9/9/2018: concert",\
@@ -18,14 +19,14 @@ mgc users send-mail post --user-id {user-id} --body '{\
         }\
       }\
     ],\
-    "internetMessageHeaders":[\
+    "internetMessageHeaders": [\
       {\
-        "name":"x-custom-header-group-name",\
-        "value":"Nevada"\
+        "name": "x-custom-header-group-name",\
+        "value": "Nevada"\
       },\
       {\
-        "name":"x-custom-header-group-id",\
-        "value":"NV001"\
+        "name": "x-custom-header-group-id",\
+        "value": "NV001"\
       }\
     ]\
   }\

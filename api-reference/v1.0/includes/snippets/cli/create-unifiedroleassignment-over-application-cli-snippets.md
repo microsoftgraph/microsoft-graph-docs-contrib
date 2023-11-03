@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc role-management directory role-assignments create --body '{\
     "@odata.type": "#microsoft.graph.unifiedRoleAssignment",\
     "principalId": "6b937a9d-c731-465b-a844-2d5b5368c161",\

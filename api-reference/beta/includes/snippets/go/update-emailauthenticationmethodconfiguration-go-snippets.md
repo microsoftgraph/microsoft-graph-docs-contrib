@@ -19,7 +19,7 @@ requestBody := graphmodels.NewAuthenticationMethodConfiguration()
 allowExternalIdToUseEmailOtp := graphmodels.DISABLED_EXTERNALEMAILOTPSTATE 
 requestBody.SetAllowExternalIdToUseEmailOtp(&allowExternalIdToUseEmailOtp) 
 
-result, err := graphClient.Policies().AuthenticationMethodsPolicy().AuthenticationMethodConfigurations().ByAuthenticationMethodConfigurationId("authenticationMethodConfiguration-id").Patch(context.Background(), requestBody, nil)
+authenticationMethodConfigurations, err := graphClient.Policies().AuthenticationMethodsPolicy().AuthenticationMethodConfigurations().ByAuthenticationMethodConfigurationId("authenticationMethodConfiguration-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

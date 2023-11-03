@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DirectoryObjects().ByDirectoryObjectId("directoryObject-id").Get(context.Background(), nil)
+directoryObjects, err := graphClient.DirectoryObjects().ByDirectoryObjectId("directoryObject-id").Get(context.Background(), nil)
 
 
 ```

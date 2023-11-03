@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Devices().ByDeviceId("device-id").RegisteredUsers().ByRegisteredUserId("directoryObject-id").Ref().Delete(context.Background(), nil)
+graphClient.Devices().ByDeviceId("device-id").RegisteredUsers().ByDirectoryObjectId("directoryObject-id").Ref().Delete(context.Background(), nil)
 
 
 ```

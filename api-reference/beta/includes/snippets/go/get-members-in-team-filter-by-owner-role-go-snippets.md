@@ -25,7 +25,7 @@ configuration := &graphteams.TeamItemMembersRequestBuilderGetRequestConfiguratio
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Teams().ByTeamId("team-id").Members().Get(context.Background(), configuration)
+members, err := graphClient.Teams().ByTeamId("team-id").Members().Get(context.Background(), configuration)
 
 
 ```

@@ -22,7 +22,7 @@ configuration := &graphidentity.IdentityB2xUserFlowItemUserAttributeAssignmentsR
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Identity().B2xUserFlows().ByB2xUserFlowId("b2xIdentityUserFlow-id").UserAttributeAssignments().Get(context.Background(), configuration)
+userAttributeAssignments, err := graphClient.Identity().B2xUserFlows().ByB2xIdentityUserFlowId("b2xIdentityUserFlow-id").UserAttributeAssignments().Get(context.Background(), configuration)
 
 
 ```

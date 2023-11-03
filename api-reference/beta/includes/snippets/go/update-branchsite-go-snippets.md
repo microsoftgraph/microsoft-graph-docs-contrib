@@ -19,7 +19,7 @@ requestBody := graphmodelsnetworkaccess.NewBranchSite()
 name := "My updated branch"
 requestBody.SetName(&name) 
 
-result, err := graphClient.NetworkAccess().Connectivity().Branches().ByBrancheId("branchSite-id").Patch(context.Background(), requestBody, nil)
+branches, err := graphClient.NetworkAccess().Connectivity().Branches().ByBranchSiteId("branchSite-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

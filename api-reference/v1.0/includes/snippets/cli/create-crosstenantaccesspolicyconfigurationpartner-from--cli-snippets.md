@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc policies cross-tenant-access-policy partners create --body '{\
   "tenantId": "3d0f5dec-5d3d-455c-8016-e2af1ae4d31a",\
   "b2bDirectConnectOutbound": \

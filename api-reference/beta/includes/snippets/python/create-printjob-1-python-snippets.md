@@ -4,74 +4,46 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = PrintJob()
-request_body.display_name = 'testjob'
+graph_client = GraphServiceClient(credentials, scopes)
 
-configuration = PrintJobConfiguration()
-configuration.feedorientation(PrinterFeedOrientation.LongEdgeFirst('printerfeedorientation.longedgefirst'))
+request_body = PrintJob(
+	display_name = "testjob",
+	configuration = PrintJobConfiguration(
+		feed_orientation = PrinterFeedOrientation.LongEdgeFirst,
+		page_ranges = [
+			IntegerRange(
+				start = 1,
+				end = 1,
+			),
+		],
+		quality = PrintQuality.Medium,
+		dpi = 600,
+		orientation = PrintOrientation.Landscape,
+		copies = 1,
+		duplex_mode = PrintDuplexMode.OneSided,
+		color_mode = PrintColorMode.BlackAndWhite,
+		input_bin = "by-pass-tray",
+		output_bin = "output-tray",
+		media_size = "A4",
+		margin = PrintMargin(
+			top = 0,
+			bottom = 0,
+			left = 0,
+			right = 0,
+		),
+		media_type = "stationery",
+		finishings = None,
+		pages_per_sheet = 1,
+		multipage_layout = PrintMultipageLayout.ClockwiseFromBottomLeft,
+		collate = False,
+		scaling = PrintScaling.ShrinkToFit,
+		fit_pdf_to_page = False,
+	),
+)
 
-page_ranges_integer_range1 = IntegerRange()
-page_ranges_integer_range1.Start = 1
-
-page_ranges_integer_range1.End = 1
-
-
-pageRangesArray []= pageRangesIntegerRange1;
-configuration.pageranges(pageRangesArray)
-
-
-configuration.quality(PrintQuality.Medium('printquality.medium'))
-
-configuration.Dpi = 600
-
-configuration.orientation(PrintOrientation.Landscape('printorientation.landscape'))
-
-configuration.Copies = 1
-
-configuration.duplexmode(PrintDuplexMode.OneSided('printduplexmode.onesided'))
-
-configuration.colormode(PrintColorMode.BlackAndWhite('printcolormode.blackandwhite'))
-
-configuration.input_bin = 'by-pass-tray'
-
-configuration.output_bin = 'output-tray'
-
-configuration.media_size = 'A4'
-
-configurationmargin = PrintMargin()
-configurationmargin.Top = 0
-
-configurationmargin.Bottom = 0
-
-configurationmargin.Left = 0
-
-configurationmargin.Right = 0
-
-
-configuration.margin = configurationmargin
-configuration.media_type = 'stationery'
-
-configuration.finishings=null
-
-configuration.PagesPerSheet = 1
-
-configuration.multipagelayout(PrintMultipageLayout.ClockwiseFromBottomLeft('printmultipagelayout.clockwisefrombottomleft'))
-
-configuration.collate = False
-
-configuration.scaling(PrintScaling.ShrinkToFit('printscaling.shrinktofit'))
-
-configuration.fit_pdf_to_page = False
-
-
-request_body.configuration = configuration
-
-
-
-result = await client.print.printers.by_printer_id('printer-id').jobs.post(request_body = request_body)
+result = await graph_client.print.printers.by_printer_id('printer-id').jobs.post(request_body)
 
 
 ```

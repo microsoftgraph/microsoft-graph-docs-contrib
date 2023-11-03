@@ -15,15 +15,14 @@ Namespace: microsoft.graph.externalConnectors
 
 Retrieve the properties and relationships of a [connectionQuota](../resources/externalconnectors-connectionquota.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | ExternalConnection.ReadWrite.OwnedBy |
+<!-- { "blockType": "permissions", "name": "externalconnectors_connectionquota_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/externalconnectors-connectionquota-get-permissions.md)]
 
 ## HTTP request
 
@@ -45,7 +44,7 @@ This method supports all [OData query parameters](/graph/query-parameters) to he
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -71,6 +70,10 @@ GET https://graph.microsoft.com/beta/external/connections/contosohr/quota
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-connection-forid-quota-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-connection-forid-quota-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -103,7 +106,7 @@ GET https://graph.microsoft.com/beta/external/connections/contosohr/quota
 ### Response
 <!-- markdownlint-enable MD024 -->
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

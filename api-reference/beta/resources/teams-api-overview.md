@@ -57,7 +57,7 @@ The following are the differences at the API level between teams and groups:
 - Group conversations are available only to Microsoft 365 groups. This feature is hierarchically represented by the [conversation](../resources/conversation.md), [conversationThread](../resources/conversationthread.md), and [post](../resources/post.md) resources.
 - The [List joined teams](../api/user-list-joinedteams.md) method applies only to Microsoft Teams.
 - [Calling](../resources/call.md) and [online meeting](../resources/onlinemeeting.md) APIs apply only to Microsoft Teams.
-- See also the [known issues](/graph/known-issues) for these APIs.
+- See also the [known issues](https://developer.microsoft.com/en-us/graph/known-issues) for these APIs.
 
 ## Membership changes in Microsoft Teams
 

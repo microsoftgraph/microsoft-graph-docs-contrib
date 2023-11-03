@@ -27,7 +27,7 @@ requestBody.SetKeyId(&keyId)
 certificateData := "******"
 requestBody.SetCertificateData(&certificateData) 
 
-result, err := graphClient.Identity().IdentityProviders().Post(context.Background(), requestBody, nil)
+identityProviders, err := graphClient.Identity().IdentityProviders().Post(context.Background(), requestBody, nil)
 
 
 ```

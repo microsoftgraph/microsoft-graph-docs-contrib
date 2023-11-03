@@ -38,7 +38,7 @@ requestBody.SetMessage(message)
 comment := "Dana, just want to make sure you get this; you'll need this if the project gets approved."
 requestBody.SetComment(&comment) 
 
-result, err := graphClient.Me().Messages().ByMessageId("message-id").CreateForward().Post(context.Background(), requestBody, nil)
+createForward, err := graphClient.Me().Messages().ByMessageId("message-id").CreateForward().Post(context.Background(), requestBody, nil)
 
 
 ```

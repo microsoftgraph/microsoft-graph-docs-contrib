@@ -37,7 +37,7 @@ businessPhones := []string {
 }
 requestBody.SetBusinessPhones(businessPhones)
 
-result, err := graphClient.Me().Contacts().Post(context.Background(), requestBody, nil)
+contacts, err := graphClient.Me().Contacts().Post(context.Background(), requestBody, nil)
 
 
 ```

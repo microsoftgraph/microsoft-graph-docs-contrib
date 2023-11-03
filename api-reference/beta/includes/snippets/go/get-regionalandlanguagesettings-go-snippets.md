@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().Settings().RegionalAndLanguageSettings().Get(context.Background(), nil)
+regionalAndLanguageSettings, err := graphClient.Me().Settings().RegionalAndLanguageSettings().Get(context.Background(), nil)
 
 
 ```

@@ -25,7 +25,7 @@ configuration := &graphusers.ItemPeopleRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().People().Get(context.Background(), configuration)
+people, err := graphClient.Me().People().Get(context.Background(), configuration)
 
 
 ```

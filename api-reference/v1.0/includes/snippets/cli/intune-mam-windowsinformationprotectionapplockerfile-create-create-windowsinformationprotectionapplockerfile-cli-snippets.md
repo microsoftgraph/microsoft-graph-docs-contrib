@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc device-app-management windows-information-protection-policies exempt-app-locker-files create --windows-information-protection-policy-id {windowsInformationProtectionPolicy-id} --body '{\
   "@odata.type": "#microsoft.graph.windowsInformationProtectionAppLockerFile",\
   "displayName": "Display Name value",\

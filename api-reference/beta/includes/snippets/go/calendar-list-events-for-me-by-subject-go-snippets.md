@@ -25,7 +25,7 @@ configuration := &graphusers.ItemCalendarEventsRequestBuilderGetRequestConfigura
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().Calendar().Events().Get(context.Background(), configuration)
+events, err := graphClient.Me().Calendar().Events().Get(context.Background(), configuration)
 
 
 ```

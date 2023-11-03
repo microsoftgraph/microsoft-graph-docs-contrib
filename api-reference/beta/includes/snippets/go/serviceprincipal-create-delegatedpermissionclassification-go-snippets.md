@@ -23,7 +23,7 @@ requestBody.SetPermissionName(&permissionName)
 classification := graphmodels.LOW_PERMISSIONCLASSIFICATIONTYPE 
 requestBody.SetClassification(&classification) 
 
-result, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").DelegatedPermissionClassifications().Post(context.Background(), requestBody, nil)
+delegatedPermissionClassifications, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").DelegatedPermissionClassifications().Post(context.Background(), requestBody, nil)
 
 
 ```

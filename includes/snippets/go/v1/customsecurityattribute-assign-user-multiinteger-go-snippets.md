@@ -16,8 +16,8 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewUser()
+customSecurityAttributes := graphmodels.NewCustomSecurityAttributeValue()
 additionalData := map[string]interface{}{
-customSecurityAttributes := graphmodels.New()
 engineering := graphmodels.New()
 odataType := "#Collection(Int32)"
 engineering.SetOdataType(&odataType) 
@@ -29,11 +29,11 @@ engineering.Set(&)
 	}
 	engineering.SetCostCenter(costCenter)
 	customSecurityAttributes.SetEngineering(engineering)
-	requestBody.SetCustomSecurityAttributes(customSecurityAttributes)
 }
-requestBody.SetAdditionalData(additionalData)
+customSecurityAttributes.SetAdditionalData(additionalData)
+requestBody.SetCustomSecurityAttributes(customSecurityAttributes)
 
-result, err := graphClient.Users().ByUserId("user-id").Patch(context.Background(), requestBody, nil)
+users, err := graphClient.Users().ByUserId("user-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

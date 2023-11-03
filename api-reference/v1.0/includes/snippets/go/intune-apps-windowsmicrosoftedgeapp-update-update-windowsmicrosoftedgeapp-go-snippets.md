@@ -47,7 +47,7 @@ requestBody.SetChannel(&channel)
 displayLanguageLocale := "Display Language Locale value"
 requestBody.SetDisplayLanguageLocale(&displayLanguageLocale) 
 
-result, err := graphClient.DeviceAppManagement().MobileApps().ByMobileAppId("mobileApp-id").Patch(context.Background(), requestBody, nil)
+mobileApps, err := graphClient.DeviceAppManagement().MobileApps().ByMobileAppId("mobileApp-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

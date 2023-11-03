@@ -27,7 +27,7 @@ requestBody.SetWebUrl(&webUrl)
 state := graphmodels.PUBLISHED_ANSWERSTATE 
 requestBody.SetState(&state) 
 
-result, err := graphClient.Search().Acronyms().Post(context.Background(), requestBody, nil)
+acronyms, err := graphClient.Search().Acronyms().Post(context.Background(), requestBody, nil)
 
 
 ```

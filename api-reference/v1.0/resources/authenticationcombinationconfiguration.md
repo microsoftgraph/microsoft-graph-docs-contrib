@@ -2,6 +2,7 @@
 title: "authenticationCombinationConfiguration resource type"
 description: "An abstract configuration for a given auth method applied to certain combinations. "
 author: "InbarckMS"
+ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
@@ -26,13 +27,13 @@ This is an abstract type. In use, [fido2combinationConfigurations](fido2combinat
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|appliesToCombinations|authenticationMethodModes collection|Which authentication method combinations this configuration applies to. Must be an **allowedCombinations** object that's defined for the [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md). The only possible value for fido2combinationConfigurations is `"fido2"`.|
+|appliesToCombinations|authenticationMethodModes collection|Which authentication method combinations this configuration applies to. Must be an **allowedCombinations** object that's defined for the [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md). The only possible value for `fido2combinationConfigurations` is `"fido2"`.|
 |id|String|A unique system-generated identifier.|
 
 ## Relationships
 |id|String|A unique system-generated identifier.|
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

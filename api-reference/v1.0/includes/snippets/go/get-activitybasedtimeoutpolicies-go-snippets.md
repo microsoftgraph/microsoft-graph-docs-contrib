@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Policies().ActivityBasedTimeoutPolicies().Get(context.Background(), nil)
+activityBasedTimeoutPolicies, err := graphClient.Policies().ActivityBasedTimeoutPolicies().Get(context.Background(), nil)
 
 
 ```

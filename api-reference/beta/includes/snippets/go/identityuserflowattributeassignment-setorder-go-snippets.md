@@ -25,7 +25,7 @@ order := []string {
 newAssignmentOrder.SetOrder(order)
 requestBody.SetNewAssignmentOrder(newAssignmentOrder)
 
-graphClient.Identity().B2cUserFlows().ByB2cUserFlowId("b2cIdentityUserFlow-id").UserAttributeAssignments().SetOrder().Post(context.Background(), requestBody, nil)
+graphClient.Identity().B2cUserFlows().ByB2cIdentityUserFlowId("b2cIdentityUserFlow-id").UserAttributeAssignments().SetOrder().Post(context.Background(), requestBody, nil)
 
 
 ```

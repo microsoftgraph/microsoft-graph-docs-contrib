@@ -27,7 +27,7 @@ assignedLabels := []graphmodels.AssignedLabelable {
 }
 requestBody.SetAssignedLabels(assignedLabels)
 
-result, err := graphClient.Groups().ByGroupId("group-id").Patch(context.Background(), requestBody, nil)
+groups, err := graphClient.Groups().ByGroupId("group-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

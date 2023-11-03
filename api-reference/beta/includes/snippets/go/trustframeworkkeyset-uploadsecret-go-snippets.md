@@ -25,7 +25,7 @@ requestBody.SetNbf(&nbf)
 exp := int64(1508973711)
 requestBody.SetExp(&exp) 
 
-result, err := graphClient.TrustFramework().KeySets().ByKeySetId("trustFrameworkKeySet-id").UploadSecret().Post(context.Background(), requestBody, nil)
+uploadSecret, err := graphClient.TrustFramework().KeySets().ByTrustFrameworkKeySetId("trustFrameworkKeySet-id").UploadSecret().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc role-management directory role-assignment-schedule-requests create --body '{\
     "action": "selfActivate",\
     "principalId": "071cc716-8147-4397-a5ba-b2105951cc0b",\

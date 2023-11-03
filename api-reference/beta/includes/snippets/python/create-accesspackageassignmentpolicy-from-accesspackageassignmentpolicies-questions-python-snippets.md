@@ -4,187 +4,115 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
-
-request_body = AccessPackageAssignmentPolicy()
-request_body.access_package_id = 'b2eba9a1-b357-42ee-83a8-336522ed6cbf'
-
-request_body.display_name = 'Users from connected organizations can request'
-
-request_body.description = 'Allow users from configured connected organizations to request and be approved by their sponsors'
-
-request_body.can_extend = False
-
-request_body.DurationInDays = 365
-
-request_body.expirationDateTime=null
-
-requestor_settings = RequestorSettings()
-requestor_settings.scope_type = 'AllExistingConnectedOrganizationSubjects'
-
-requestor_settings.accept_requests = True
-
-
-request_body.requestor_settings = requestor_settings
-request_approval_settings = ApprovalSettings()
-request_approval_settings.is_approval_required = True
-
-request_approval_settings.is_approval_required_for_extension = False
-
-request_approval_settings.is_requestor_justification_required = True
-
-request_approval_settings.approval_mode = 'SingleStage'
-
-approval_stages_approval_stage1 = ApprovalStage()
-approval_stages_approval_stage1.ApprovalStageTimeOutInDays = 14
-
-approval_stages_approval_stage1.is_approver_justification_required = True
-
-approval_stages_approval_stage1.is_escalation_enabled = False
-
-approval_stages_approval_stage1.EscalationTimeInMinutes = 11520
-
-primary_approvers_user_set1 = GroupMembers()
-primary_approvers_user_set1.@odata_type = '#microsoft.graph.groupMembers'
-
-primary_approvers_user_set1.is_backup = True
-
-primary_approvers_user_set1.id = 'd2dcb9a1-a445-42ee-83a8-476522ed6cbf'
-
-primary_approvers_user_set1.description = 'group for users from connected organizations which have no external sponsor'
-
-
-primaryApproversArray []= primaryApproversUserSet1;
-primary_approvers_user_set2 = ExternalSponsors()
-primary_approvers_user_set2.@odata_type = '#microsoft.graph.externalSponsors'
-
-primary_approvers_user_set2.is_backup = False
-
-
-primaryApproversArray []= primaryApproversUserSet2;
-approval_stages_approval_stage1.primaryapprovers(primaryApproversArray)
-
-
-
-approvalStagesArray []= approvalStagesApprovalStage1;
-request_approval_settings.approvalstages(approvalStagesArray)
-
-
-
-request_body.request_approval_settings = request_approval_settings
-questions_access_package_question1 = AccessPackageMultipleChoiceQuestion()
-questions_access_package_question1.is_required = False
-
-questions_access_package_question1text = AccessPackageLocalizedContent()
-questions_access_package_question1text.default_text = 'what state are you from?'
-
-localized_texts_access_package_localized_text1 = AccessPackageLocalizedText()
-localized_texts_access_package_localized_text1.text = '¿De qué estado eres?'
-
-localized_texts_access_package_localized_text1.language_code = 'es'
-
-
-localizedTextsArray []= localizedTextsAccessPackageLocalizedText1;
-questions_access_package_question1text.localizedtexts(localizedTextsArray)
-
-
-
-questions_access_package_question1.text = questions_access_package_question1text
-questions_access_package_question1.@odata_type = '#microsoft.graph.accessPackageMultipleChoiceQuestion'
-
-choices_access_package_answer_choice1 = AccessPackageAnswerChoice()
-choices_access_package_answer_choice1.actual_value = 'AZ'
-
-choices_access_package_answer_choice1display_value = AccessPackageLocalizedContent()
-localized_texts_access_package_localized_text1 = AccessPackageLocalizedText()
-localized_texts_access_package_localized_text1.text = 'Arizona'
-
-localized_texts_access_package_localized_text1.language_code = 'es'
-
-
-localizedTextsArray []= localizedTextsAccessPackageLocalizedText1;
-choices_access_package_answer_choice1display_value.localizedtexts(localizedTextsArray)
-
-
-
-choices_access_package_answer_choice1.display_value = choices_access_package_answer_choice1display_value
-
-choicesArray []= choicesAccessPackageAnswerChoice1;
-choices_access_package_answer_choice2 = AccessPackageAnswerChoice()
-choices_access_package_answer_choice2.actual_value = 'CA'
-
-choices_access_package_answer_choice2display_value = AccessPackageLocalizedContent()
-localized_texts_access_package_localized_text1 = AccessPackageLocalizedText()
-localized_texts_access_package_localized_text1.text = 'California'
-
-localized_texts_access_package_localized_text1.language_code = 'es'
-
-
-localizedTextsArray []= localizedTextsAccessPackageLocalizedText1;
-choices_access_package_answer_choice2display_value.localizedtexts(localizedTextsArray)
-
-
-
-choices_access_package_answer_choice2.display_value = choices_access_package_answer_choice2display_value
-
-choicesArray []= choicesAccessPackageAnswerChoice2;
-choices_access_package_answer_choice3 = AccessPackageAnswerChoice()
-choices_access_package_answer_choice3.actual_value = 'OH'
-
-choices_access_package_answer_choice3display_value = AccessPackageLocalizedContent()
-localized_texts_access_package_localized_text1 = AccessPackageLocalizedText()
-localized_texts_access_package_localized_text1.text = 'Ohio'
-
-localized_texts_access_package_localized_text1.language_code = 'es'
-
-
-localizedTextsArray []= localizedTextsAccessPackageLocalizedText1;
-choices_access_package_answer_choice3display_value.localizedtexts(localizedTextsArray)
-
-
-
-choices_access_package_answer_choice3.display_value = choices_access_package_answer_choice3display_value
-
-choicesArray []= choicesAccessPackageAnswerChoice3;
-questions_access_package_question1.choices(choicesArray)
-
-
-questions_access_package_question1.allows_multiple_selection = False
-
-
-questionsArray []= questionsAccessPackageQuestion1;
-questions_access_package_question2 = AccessPackageTextInputQuestion()
-questions_access_package_question2.is_required = False
-
-questions_access_package_question2text = AccessPackageLocalizedContent()
-questions_access_package_question2text.default_text = 'Who is your manager?'
-
-localized_texts_access_package_localized_text1 = AccessPackageLocalizedText()
-localized_texts_access_package_localized_text1.text = 'por qué necesita acceso a este paquete'
-
-localized_texts_access_package_localized_text1.language_code = 'es'
-
-
-localizedTextsArray []= localizedTextsAccessPackageLocalizedText1;
-questions_access_package_question2text.localizedtexts(localizedTextsArray)
-
-
-
-questions_access_package_question2.text = questions_access_package_question2text
-questions_access_package_question2.@odata_type = '#microsoft.graph.accessPackageTextInputQuestion'
-
-questions_access_package_question2.is_single_line_question = False
-
-
-questionsArray []= questionsAccessPackageQuestion2;
-request_body.questions(questionsArray)
-
-
-
-
-
-result = await client.identity_governance.entitlement_management.acces_package_assignment_policies.post(request_body = request_body)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+
+graph_client = GraphServiceClient(credentials, scopes)
+
+request_body = AccessPackageAssignmentPolicy(
+	access_package_id = "b2eba9a1-b357-42ee-83a8-336522ed6cbf",
+	display_name = "Users from connected organizations can request",
+	description = "Allow users from configured connected organizations to request and be approved by their sponsors",
+	can_extend = False,
+	duration_in_days = 365,
+	expiration_date_time = None,
+	requestor_settings = RequestorSettings(
+		scope_type = "AllExistingConnectedOrganizationSubjects",
+		accept_requests = True,
+	),
+	request_approval_settings = ApprovalSettings(
+		is_approval_required = True,
+		is_approval_required_for_extension = False,
+		is_requestor_justification_required = True,
+		approval_mode = "SingleStage",
+		approval_stages = [
+			ApprovalStage(
+				approval_stage_time_out_in_days = 14,
+				is_approver_justification_required = True,
+				is_escalation_enabled = False,
+				escalation_time_in_minutes = 11520,
+				primary_approvers = [
+					GroupMembers(
+						odata_type = "#microsoft.graph.groupMembers",
+						is_backup = True,
+						id = "d2dcb9a1-a445-42ee-83a8-476522ed6cbf",
+						description = "group for users from connected organizations which have no external sponsor",
+					),
+					ExternalSponsors(
+						odata_type = "#microsoft.graph.externalSponsors",
+						is_backup = False,
+					),
+				],
+			),
+		],
+	),
+	questions = [
+		AccessPackageMultipleChoiceQuestion(
+			is_required = False,
+			text = AccessPackageLocalizedContent(
+				default_text = "what state are you from?",
+				localized_texts = [
+					AccessPackageLocalizedText(
+						text = "¿De qué estado eres?",
+						language_code = "es",
+					),
+				],
+			),
+			odata_type = "#microsoft.graph.accessPackageMultipleChoiceQuestion",
+			choices = [
+				AccessPackageAnswerChoice(
+					actual_value = "AZ",
+					display_value = AccessPackageLocalizedContent(
+						localized_texts = [
+							AccessPackageLocalizedText(
+								text = "Arizona",
+								language_code = "es",
+							),
+						],
+					),
+				),
+				AccessPackageAnswerChoice(
+					actual_value = "CA",
+					display_value = AccessPackageLocalizedContent(
+						localized_texts = [
+							AccessPackageLocalizedText(
+								text = "California",
+								language_code = "es",
+							),
+						],
+					),
+				),
+				AccessPackageAnswerChoice(
+					actual_value = "OH",
+					display_value = AccessPackageLocalizedContent(
+						localized_texts = [
+							AccessPackageLocalizedText(
+								text = "Ohio",
+								language_code = "es",
+							),
+						],
+					),
+				),
+			],
+			allows_multiple_selection = False,
+		),
+		AccessPackageTextInputQuestion(
+			is_required = False,
+			text = AccessPackageLocalizedContent(
+				default_text = "Who is your manager?",
+				localized_texts = [
+					AccessPackageLocalizedText(
+						text = "por qué necesita acceso a este paquete",
+						language_code = "es",
+					),
+				],
+			),
+			odata_type = "#microsoft.graph.accessPackageTextInputQuestion",
+			is_single_line_question = False,
+		),
+	],
+)
+
+result = await graph_client.identity_governance.entitlement_management.access_package_assignment_policies.post(request_body)
 
 
 ```

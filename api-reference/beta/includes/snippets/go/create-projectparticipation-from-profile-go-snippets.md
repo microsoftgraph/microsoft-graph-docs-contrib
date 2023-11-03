@@ -49,7 +49,7 @@ summary := "A 6 month project to help Contoso rebrand after they were divested f
 detail.SetSummary(&summary) 
 requestBody.SetDetail(detail)
 
-result, err := graphClient.Me().Profile().Projects().Post(context.Background(), requestBody, nil)
+projects, err := graphClient.Me().Profile().Projects().Post(context.Background(), requestBody, nil)
 
 
 ```

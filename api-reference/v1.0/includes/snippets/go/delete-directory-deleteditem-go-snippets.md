@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Directory().DeletedItems().ByDeletedItemId("directoryObject-id").Delete(context.Background(), nil)
+graphClient.Directory().DeletedItems().ByDirectoryObjectId("directoryObject-id").Delete(context.Background(), nil)
 
 
 ```

@@ -4,20 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = IdentityUserFlowAttribute()
-request_body.display_name = 'Hobby'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.description = 'Your hobby'
+request_body = IdentityUserFlowAttribute(
+	display_name = "Hobby",
+	description = "Your hobby",
+	data_type = IdentityUserFlowAttributeDataType.String,
+)
 
-request_body.datatype(IdentityUserFlowAttributeDataType.String('identityuserflowattributedatatype.string'))
-
-
-
-
-result = await client.identity.user_flow_attributes.post(request_body = request_body)
+result = await graph_client.identity.user_flow_attributes.post(request_body)
 
 
 ```

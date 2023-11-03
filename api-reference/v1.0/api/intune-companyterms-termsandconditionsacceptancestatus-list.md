@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/termsAndConditions/{termsA
 [!INCLUDE [sample-code](../includes/snippets/php/intune-companyterms-termsandconditionsacceptancestatus-list-list-termsandconditionsacceptancestatuses-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-companyterms-termsandconditionsacceptancestatus-list-list-termsandconditionsacceptancestatuses-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/intune-companyterms-termsandconditionsacceptancestatus-list-list-termsandconditionsacceptancestatuses-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

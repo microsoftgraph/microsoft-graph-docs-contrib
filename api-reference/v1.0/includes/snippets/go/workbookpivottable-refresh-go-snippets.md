@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().Worksheets().ByWorksheetId("workbookWorksheet-id").PivotTables().ByPivotTableId("workbookPivotTable-id").Refresh().Post(context.Background(), nil)
+graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().Worksheets().ByWorkbookWorksheetId("workbookWorksheet-id").PivotTables().ByWorkbookPivotTableId("workbookPivotTable-id").Refresh().Post(context.Background(), nil)
 
 
 ```

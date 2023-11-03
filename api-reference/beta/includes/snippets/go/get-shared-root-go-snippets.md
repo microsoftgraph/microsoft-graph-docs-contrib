@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Shares().ByShareId("sharedDriveItem-id").Get(context.Background(), nil)
+shares, err := graphClient.Shares().BySharedDriveItemId("sharedDriveItem-id").Get(context.Background(), nil)
 
 
 ```

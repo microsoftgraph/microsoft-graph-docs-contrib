@@ -26,12 +26,7 @@ var requestBody = new OnTokenIssuanceStartCustomExtension
 	ClientConfiguration = new CustomExtensionClientConfiguration
 	{
 		TimeoutInMilliseconds = 2000,
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"maximumRetries" , 1
-			},
-		},
+		MaximumRetries = 1,
 	},
 	ClaimsForTokenConfiguration = new List<OnTokenIssuanceStartReturnClaim>
 	{

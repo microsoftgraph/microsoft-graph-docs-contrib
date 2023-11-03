@@ -16,14 +16,14 @@ const profileCardProperty = {
       localizations: [
         {
           languageTag: 'no-NB',
-          displayName: 'Kostnads Senter'
+          displayName: 'Kostnadssenter'
         }
       ]
     }
   ]
 };
 
-await client.api('/organization/{organizationId}/settings/profileCardProperties/CustomAttribute1')
+await client.api('/admin/people/profileCardProperties/CustomAttribute1')
 	.version('beta')
 	.update(profileCardProperty);
 

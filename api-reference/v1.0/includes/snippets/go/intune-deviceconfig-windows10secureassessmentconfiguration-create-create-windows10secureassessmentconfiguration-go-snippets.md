@@ -33,7 +33,7 @@ requestBody.SetAllowScreenCapture(&allowScreenCapture)
 allowTextSuggestion := true
 requestBody.SetAllowTextSuggestion(&allowTextSuggestion) 
 
-result, err := graphClient.DeviceManagement().DeviceConfigurations().Post(context.Background(), requestBody, nil)
+deviceConfigurations, err := graphClient.DeviceManagement().DeviceConfigurations().Post(context.Background(), requestBody, nil)
 
 
 ```

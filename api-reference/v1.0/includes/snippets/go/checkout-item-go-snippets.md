@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Checkout().Post(context.Background(), nil)
+graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Checkout().Post(context.Background(), nil)
 
 
 ```

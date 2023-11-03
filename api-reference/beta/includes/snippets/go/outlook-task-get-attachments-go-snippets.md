@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Users().ByUserId("user-id").Outlook().Tasks().ByTaskId("outlookTask-id").Attachments().Get(context.Background(), nil)
+attachments, err := graphClient.Users().ByUserId("user-id").Outlook().Tasks().ByOutlookTaskId("outlookTask-id").Attachments().Get(context.Background(), nil)
 
 
 ```

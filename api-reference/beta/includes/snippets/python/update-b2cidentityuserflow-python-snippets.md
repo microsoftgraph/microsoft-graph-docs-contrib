@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = B2cIdentityUserFlow()
-request_body.is_language_customization_enabled = True
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.default_language_tag = 'en'
+request_body = B2cIdentityUserFlow(
+	is_language_customization_enabled = True,
+	default_language_tag = "en",
+)
 
-
-
-
-result = await client.identity.b2c_user_flows.by_b2c_user_flow_id('b2cIdentityUserFlow-id').patch(request_body = request_body)
+result = await graph_client.identity.b2c_user_flows.by_b2c_identity_user_flow_id('b2cIdentityUserFlow-id').patch(request_body)
 
 
 ```

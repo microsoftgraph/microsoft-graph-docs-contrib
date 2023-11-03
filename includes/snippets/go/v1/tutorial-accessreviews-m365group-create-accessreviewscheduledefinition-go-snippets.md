@@ -123,7 +123,7 @@ applyActions := []graphmodels.AccessReviewApplyActionable {
 settings.SetApplyActions(applyActions)
 requestBody.SetSettings(settings)
 
-result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(context.Background(), requestBody, nil)
+definitions, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(context.Background(), requestBody, nil)
 
 
 ```

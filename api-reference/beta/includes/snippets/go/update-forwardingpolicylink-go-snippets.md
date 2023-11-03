@@ -19,7 +19,7 @@ requestBody := graphmodelsnetworkaccess.NewPolicyLink()
 state := graphmodels.ENABLED_STATUS 
 requestBody.SetState(&state) 
 
-result, err := graphClient.NetworkAccess().ForwardingProfiles().ByForwardingProfileId("forwardingProfile-id").Policies().ByPolicieId("policyLink-id").Patch(context.Background(), requestBody, nil)
+policies, err := graphClient.NetworkAccess().ForwardingProfiles().ByForwardingProfileId("forwardingProfile-id").Policies().ByPolicyLinkId("policyLink-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

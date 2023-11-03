@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = Invitation()
-request_body.invited_user_email_address = 'admin@fabrikam.com'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.invite_redirect_url = 'https://myapp.contoso.com'
+request_body = Invitation(
+	invited_user_email_address = "admin@fabrikam.com",
+	invite_redirect_url = "https://myapp.contoso.com",
+)
 
-
-
-
-result = await client.invitations.post(request_body = request_body)
+result = await graph_client.invitations.post(request_body)
 
 
 ```

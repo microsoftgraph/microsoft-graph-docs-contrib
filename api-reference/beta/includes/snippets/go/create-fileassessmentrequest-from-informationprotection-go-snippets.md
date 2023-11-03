@@ -25,7 +25,7 @@ requestBody.SetFileName(&fileName)
 contentData := "VGhpcyBpcyBhIHRlc3QgZmlsZQ=="
 requestBody.SetContentData(&contentData) 
 
-result, err := graphClient.InformationProtection().ThreatAssessmentRequests().Post(context.Background(), requestBody, nil)
+threatAssessmentRequests, err := graphClient.InformationProtection().ThreatAssessmentRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

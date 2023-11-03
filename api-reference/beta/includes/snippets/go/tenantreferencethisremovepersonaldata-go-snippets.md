@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Directory().OutboundSharedUserProfiles().ByOutboundSharedUserProfileId("outboundSharedUserProfile-userId").Tenants().ByTenantId("tenantReference-tenantId").RemovePersonalData().Post(context.Background(), nil)
+graphClient.Directory().OutboundSharedUserProfiles().ByOutboundSharedUserProfileUserId("outboundSharedUserProfile-userId").Tenants().ByTenantReferenceTenantId("tenantReference-tenantId").RemovePersonalData().Post(context.Background(), nil)
 
 
 ```

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Admin().People().Pronouns().Get(context.Background(), nil)
+pronouns, err := graphClient.Admin().People().Pronouns().Get(context.Background(), nil)
 
 
 ```

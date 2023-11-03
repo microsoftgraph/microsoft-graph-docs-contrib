@@ -99,7 +99,7 @@ requestBody.SetCustomBrowserPackageId(&customBrowserPackageId)
 customBrowserDisplayName := "Custom Browser Display Name value"
 requestBody.SetCustomBrowserDisplayName(&customBrowserDisplayName) 
 
-result, err := graphClient.DeviceAppManagement().AndroidManagedAppProtections().ByAndroidManagedAppProtectionId("androidManagedAppProtection-id").Patch(context.Background(), requestBody, nil)
+androidManagedAppProtections, err := graphClient.DeviceAppManagement().AndroidManagedAppProtections().ByAndroidManagedAppProtectionId("androidManagedAppProtection-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

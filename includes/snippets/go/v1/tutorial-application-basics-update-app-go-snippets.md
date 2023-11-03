@@ -47,7 +47,7 @@ requestBody.SetWeb(web)
 serviceManagementReference := "Owners aliases: Finance @ contosofinance@contoso.com; The Phone Company HR consulting @ hronsite@thephone-company.com;"
 requestBody.SetServiceManagementReference(&serviceManagementReference) 
 
-result, err := graphClient.Applications().ByApplicationId("application-id").Patch(context.Background(), requestBody, nil)
+applications, err := graphClient.Applications().ByApplicationId("application-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

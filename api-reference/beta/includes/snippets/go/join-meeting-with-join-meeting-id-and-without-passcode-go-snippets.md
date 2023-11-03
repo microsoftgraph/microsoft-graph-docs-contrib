@@ -52,7 +52,7 @@ requestBody.SetMeetingInfo(meetingInfo)
 tenantId := "86dc81db-c112-4228-9222-63f3esaa1edb"
 requestBody.SetTenantId(&tenantId) 
 
-result, err := graphClient.Communications().Calls().Post(context.Background(), requestBody, nil)
+calls, err := graphClient.Communications().Calls().Post(context.Background(), requestBody, nil)
 
 
 ```

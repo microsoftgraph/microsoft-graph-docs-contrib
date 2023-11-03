@@ -19,7 +19,7 @@ requestBody := graphusers.NewItemMarkAsNotJunkPostRequestBody()
 moveToInbox := true
 requestBody.SetMoveToInbox(&moveToInbox) 
 
-result, err := graphClient.Me().Messages().ByMessageId("message-id").MarkAsNotJunk().Post(context.Background(), requestBody, nil)
+markAsNotJunk, err := graphClient.Me().Messages().ByMessageId("message-id").MarkAsNotJunk().Post(context.Background(), requestBody, nil)
 
 
 ```
