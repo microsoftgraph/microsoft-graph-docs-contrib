@@ -5144,7 +5144,7 @@ items:
               href: api/externalconnectors-externalitem-delete.md
             - name: Add activities
               href: api/externalconnectors-externalitem-addactivities.md
-         - name: Schema
+        - name: Schema
           items:
             - name: Schema
               href: resources/externalconnectors-schema.md
