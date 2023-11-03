@@ -13,14 +13,6 @@
         {
           "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
           "ApiChange": "EnumType",
-          "ChangedApiName": "behaviorDuringRetentionPeriod",
-          "ChangeType": "Addition",
-          "Description": "Added the **behaviorDuringRetentionPeriod** enumeration type.",
-          "Target": "behaviorDuringRetentionPeriod"
-        },
-        {
-          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
-          "ApiChange": "EnumType",
           "ChangedApiName": "defaultRecordBehavior",
           "ChangeType": "Addition",
           "Description": "Added the **defaultRecordBehavior** enumeration type.",
