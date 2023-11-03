@@ -12,7 +12,7 @@ Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the identity of a call or meeting organizer in a [callRecord](callrecords-callrecord.md) resource.
+Represents the identity of a call or meeting organizer in a [callRecord](callrecords-callrecord.md) resource. Inherits from the [participantBase](callrecords-participantbase.md) type.
 
 ## Properties
 
