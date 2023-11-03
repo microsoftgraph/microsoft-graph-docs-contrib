@@ -3,6 +3,7 @@ title: "authenticationContextClassReference resource type"
 description: "Represents a Microsoft Entra authentication context class reference."
 ms.localizationpriority: medium
 author: "swetha-rai"
+ms.reviewer: conditionalaccesspm
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

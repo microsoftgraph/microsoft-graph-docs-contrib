@@ -2,6 +2,7 @@
 title: "List authenticationMethodModes"
 description: "Get a list of all supported authentication methods, or all supported authentication method combinations."
 author: "InbarckMS"
+ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

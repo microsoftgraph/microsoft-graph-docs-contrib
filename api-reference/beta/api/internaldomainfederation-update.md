@@ -3,6 +3,7 @@ title: "Update internalDomainFederation"
 description: "Update the properties of an internalDomainFederation object."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
+ms.custom: has-azure-ad-ps-ref
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -22,7 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "internaldomainfederation_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/internaldomainfederation-update-permissions.md)]
 
-The calling user must be assigned one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference):
+The calling user must be assigned one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
 - Security Administrator
 - External Identity Provider Administrator
