@@ -449,7 +449,7 @@ items:
             href: extensibility-open-users.md
           - name: Use schema extensions
             href: extensibility-schema-groups.md
-       - name: External data connections
+      - name: External data connections
         items: 
           - name: Connectors overview
             href: connecting-external-content-connectors-overview.md
