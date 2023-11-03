@@ -18,11 +18,11 @@ A piece of text that communicates a note relavent for a specific day on a teams 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List dayNotes](../api/schedule-list-daynotes.md)|[dayNote](../resources/daynote.md) collection|Get a list of the [dayNote](../resources/daynote.md) objects and their properties.|
-|[Create dayNote](../api/schedule-post-daynotes.md)|[dayNote](../resources/daynote.md)|Create a new [dayNote](../resources/daynote.md) object.|
+|[List dayNotes](../api/daynote-list.md)|[dayNote](../resources/daynote.md) collection|Get a list of the [dayNote](../resources/daynote.md) objects and their properties.|
+|[Create dayNote](../api/daynote-create.md)|[dayNote](../resources/daynote.md)|Create a new [dayNote](../resources/daynote.md) object.|
 |[Get dayNote](../api/daynote-get.md)|[dayNote](../resources/daynote.md)|Read the properties and relationships of a [dayNote](../resources/daynote.md) object.|
 |[Update dayNote](../api/daynote-update.md)|[dayNote](../resources/daynote.md)|Update the properties of a [dayNote](../resources/daynote.md) object.|
-|[Delete dayNote](../api/schedule-delete-daynotes.md)|None|Delete a [dayNote](../resources/daynote.md) object.|
+|[Delete dayNote](../api/daynote-delete.md)|None|Delete a [dayNote](../resources/daynote.md) object.|
 
 ## Properties
 |Property|Type|Description|
