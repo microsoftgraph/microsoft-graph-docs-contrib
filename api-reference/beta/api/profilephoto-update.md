@@ -153,7 +153,7 @@ Binary data for the image
 
 #### Response
 
-The following example shows a response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response"
@@ -201,7 +201,7 @@ Binary data for the image
 
 #### Response
 
-The following example shows a response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
