@@ -563,6 +563,8 @@ items:
                 href: api/profilephoto-get.md
               - name: Update photo
                 href: api/profilephoto-update.md
+              - name: Delete photo
+                href: api/profilephoto-delete.md
           - name: Planner
             items:
               - name: Planner task
@@ -871,6 +873,8 @@ items:
                 href: api/profilephoto-get.md
               - name: Update photo
                 href: api/profilephoto-update.md
+              - name: Delete photo
+                href: api/profilephoto-delete.md
           - name: Planner
             items:
               - name: Planner plan
