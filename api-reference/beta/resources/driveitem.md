@@ -110,7 +110,7 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | remoteItem           | [remoteItem][]     | Remote item data, if the item is shared from a drive other than the one being accessed. Read-only.
 | root                 | [root][]           | If this property is non-null, it indicates that the driveItem is the top-most driveItem in the drive.
 | searchResult         | [searchResult][]   | Search metadata, if the item is from a search result. Read-only.
-| shared               | [shared][]         | Indicates that the item has been shared with others and provides information about the shared state of the item. Read-only.
+| shared               | [shared][]         | Indicates that the item was shared with others and provides information about the shared state of the item. Read-only.
 | sharepointIds        | [sharepointIds][]  | Returns identifiers useful for SharePoint REST compatibility. Read-only.
 | size                 | Int64              | Size of the item in bytes. Read-only.
 | specialFolder        | [specialFolder][]  | If the current item is also available as a special folder, this facet is returned. Read-only.
