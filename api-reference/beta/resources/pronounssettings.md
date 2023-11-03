@@ -1,6 +1,6 @@
 ---
 title: "pronounsSettings resource type"
-description: "Represents a setting to control the availability of pronouns in an organization."
+description: "Represents the settings that manage the support of pronouns in an organization."
 author: "aymen-ms"
 ms.localizationpriority: medium
 ms.prod: "people"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a setting to control the availability of pronouns in an organization. By default, pronouns are disabled. If enabled, users can optionally add or update their pronouns.
+Represents the settings that manage the support of pronouns in an organization. By default, pronouns are disabled. If enabled, users can optionally add or update their pronouns.
 
 For more information about enabling pronouns support, see [Manage pronouns settings for an organization using the Microsoft Graph API](/graph/pronouns-configure-pronouns-availability).
 
