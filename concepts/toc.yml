@@ -611,20 +611,20 @@ items:
         items:
           - name: Overview
             href: social-intel-concept-overview.md
-          - name: Search people
-            href: search-concept-person.md
-          - name: People insights overview
-            href: people-insights-overview.md
+          - name: Customize item insights privacy (preview)
+            href: insights-customize-item-insights-privacy.md
           - name: Customize people insights privacy (preview)
             href: insights-customize-people-insights-privacy.md
           - name: Customize the profile card
             href: add-properties-profilecard.md
-          - name: Item insights overview
-            href: item-insights-overview.md
-          - name: Customize item insights privacy (preview)
-            href: insights-customize-item-insights-privacy.md
           - name: Enable or disable pronouns
             href: pronouns-configure-pronouns-availability.md
+          - name: Item insights overview
+            href: item-insights-overview.md
+          - name: People insights overview
+            href: people-insights-overview.md
+          - name: Search people
+            href: search-concept-person.md
       - name: Personal contacts
         items:
           - name: Overview
