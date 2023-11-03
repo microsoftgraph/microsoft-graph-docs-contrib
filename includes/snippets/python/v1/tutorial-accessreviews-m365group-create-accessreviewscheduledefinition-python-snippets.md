@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AccessReviewScheduleDefinition(
 	display_name = "Group owners review guest across Microsoft 365 groups in the tenant (Quarterly)",
@@ -30,14 +30,14 @@ request_body = AccessReviewScheduleDefinition(
 			query_type = "MicrosoftGraph",
 			query_root = None,
 		),
-	]
+	],
 	fallback_reviewers = [
 		AccessReviewReviewerScope(
 			query = "/users/c9a5aff7-9298-4d71-adab-0a222e0a05e4",
 			query_type = "MicrosoftGraph",
 			query_root = None,
 		),
-	]
+	],
 	settings = AccessReviewScheduleSettings(
 		mail_notifications_enabled = True,
 		reminder_notifications_enabled = True,
@@ -54,7 +54,7 @@ request_body = AccessReviewScheduleDefinition(
 				month = 0,
 				day_of_month = 0,
 				days_of_week = [
-				]
+				],
 				first_day_of_week = DayOfWeek.Sunday,
 				index = WeekIndex.First,
 			),
@@ -70,11 +70,11 @@ request_body = AccessReviewScheduleDefinition(
 			RemoveAccessApplyAction(
 				odata_type = "#microsoft.graph.removeAccessApplyAction",
 			),
-		]
+		],
 	),
 )
 
-result = await graph_client.identity_governance.acce_reviews.definitions.post(body = request_body)
+result = await graph_client.identity_governance.access_reviews.definitions.post(request_body)
 
 
 ```
