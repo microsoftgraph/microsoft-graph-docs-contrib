@@ -17,11 +17,12 @@ Get the historical Secure Score data for your Microsoft Entra tenant. This API r
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|DirectoryRecommendations.Read.All|DirectoryRecommendations.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|DirectoryRecommendations.Read.All|DirectoryRecommendations.ReadWrite.All|
+<!-- {
+  "blockType": "permissions",
+  "name": "recommendation-tenantsecurescores-permissions"
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/recommendation-tenantsecurescores-permissions.md)]
 
 <!-- { "blockType": "permissions", "name": "recommendation_tenantsecurescores" } -->
 [!INCLUDE [permissions-table](../includes/permissions/recommendation-tenantsecurescores-permissions.md)]
