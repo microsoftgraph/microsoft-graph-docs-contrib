@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A representation of a platform credential instance registered to a user on macOS. Platform Credential is a sign-in authentication method for macOS devices.
+Represents a platform credential instance registered to a user on Mac OS. Platform Credential is a sign-in authentication method for Mac OS devices.
 
 This derived type inherits from the [authenticationMethod](authenticationmethod.md) resource type.
 

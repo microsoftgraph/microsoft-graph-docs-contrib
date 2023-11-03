@@ -161,8 +161,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-10-05T19:56:04.1105537Z",
-      "WorkloadArea": "Microsoft.StrongAuthenticationAPI",
-      "SubArea": ""
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     }
   ]
 }

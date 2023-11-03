@@ -14,7 +14,6 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [platformCredentialAuthenticationMethod](../resources/platformcredentialauthenticationmethod.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

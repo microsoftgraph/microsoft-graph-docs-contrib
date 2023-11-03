@@ -14,7 +14,6 @@ Namespace: microsoft.graph
 
 Delete a [platformCredentialAuthenticationMethod](../resources/platformcredentialauthenticationmethod.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
