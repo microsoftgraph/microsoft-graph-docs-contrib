@@ -17984,8 +17984,6 @@ items:
                     href: api/profilephoto-get.md
                   - name: Update team photo
                     href: api/profilephoto-update.md
-                  - name: Delete photo
-                    href: api/profilephoto-delete.md
                   - name: Complete migration for team
                     href: api/team-completemigration.md
                   - name: List permission grants
