@@ -176,7 +176,57 @@ The following example requests a notification for a message being created in the
 
 #### Request
 
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_subscription_withoutresourcedata_for_message_resource"
+}-->
 
+```http
+POST https://graph.microsoft.com/v1.0/subscriptions
+Content-type: application/json
+{
+    "changeType": "created",
+    "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
+    "resource": "users/622eaaff-0683-4862-9de4-f2ec83c2bd98/messages",
+    "expirationDateTime": "2021-07-07T21:42:18.2257768+00:00",
+    "clientState": "secretClientState"
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/create-subscription-withoutresourcedata-for-message-resource-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/create-subscription-withoutresourcedata-for-message-resource-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/v1/create-subscription-withoutresourcedata-for-message-resource-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/create-subscription-withoutresourcedata-for-message-resource-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/create-subscription-withoutresourcedata-for-message-resource-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/v1/create-subscription-withoutresourcedata-for-message-resource-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/create-subscription-withoutresourcedata-for-message-resource-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/create-subscription-withoutresourcedata-for-message-resource-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -220,7 +270,60 @@ The following example subscribes to notifications with resource data for a messa
 
 #### Request
 
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_subscription_withresourcedata_for_message_resource"
+}-->
 
+```http
+POST https://graph.microsoft.com/v1.0/subscriptions
+Content-type: application/json
+{
+    "changeType": "created",
+    "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
+    "resource": "users/622eaaff-0683-4862-9de4-f2ec83c2bd98/messages?$select=Subject,bodyPreview,importance,receivedDateTime,from",
+    "expirationDateTime": "2022-01-01T21:42:18.2257768+00:00",
+    "clientState": "secretClientValue",
+    "includeResourceData": true,
+    "encryptionCertificate": "MIIDMzCCAhugAwIBAgIQE7D+++Dk1hKQBqWA==",
+    "encryptionCertificateId": "testCertificateId"
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/beta/create-subscription-withresourcedata-for-message-resource-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/create-subscription-withresourcedata-for-message-resource-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/beta/create-subscription-withresourcedata-for-message-resource-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/beta/create-subscription-withresourcedata-for-message-resource-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/beta/create-subscription-withresourcedata-for-message-resource-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/beta/create-subscription-withresourcedata-for-message-resource-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/beta/create-subscription-withresourcedata-for-message-resource-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/beta/create-subscription-withresourcedata-for-message-resource-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -264,7 +367,60 @@ The following example subscribes to notifications with resource data for a messa
 
 #### Request
 
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_subscription_withresourcedata_for_message_resource_basedonfilter"
+}-->
 
+```http
+POST https://graph.microsoft.com/v1.0/subscriptions
+Content-type: application/json
+{
+    "changeType": "created",
+    "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
+    "resource": "me/mailfolders('Drafts')/messages?$select=Subject,bodyPreview&$filter=hasAttachments eq true AND importance eq 'High'",
+    "expirationDateTime": "2022-01-01T21:42:18.2257768+00:00",
+    "clientState": "secretClientValue",
+    "includeResourceData": true,
+    "encryptionCertificate": "MIIDMzCCAhugAwIBAgIQE7D+++Dk1hKQBqWA==",
+    "encryptionCertificateId": "testCertificateId"
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/beta/create-subscription-withresourcedata-for-message-resource-basedonfilter-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/create-subscription-withresourcedata-for-message-resource-basedonfilter-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/beta/create-subscription-withresourcedata-for-message-resource-basedonfilter-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/beta/create-subscription-withresourcedata-for-message-resource-basedonfilter-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/beta/create-subscription-withresourcedata-for-message-resource-basedonfilter-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/beta/create-subscription-withresourcedata-for-message-resource-basedonfilter-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/beta/create-subscription-withresourcedata-for-message-resource-basedonfilter-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/beta/create-subscription-withresourcedata-for-message-resource-basedonfilter-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
