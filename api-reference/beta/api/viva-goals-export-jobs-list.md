@@ -1,6 +1,6 @@
 ---
-title: "Searching for Resources"
-description: "Get the list of export jobs."
+title: "List exportJobs"
+description: "Get a list of the exportJobs for a Viva Goals organization."
 author: "ishatyagiit"
 ms.localizationpriority: medium
 ms.prod: "viva-goals"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get the list of export jobs.
+Get the list of [exportJob](../resources/viva-goals-export-job.md) resources for a Viva Goals organization.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -21,10 +21,10 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|Goals-Export.Read.All|Goals-Export.ReadWrite.All|
 
 ## HTTP request
-Get the status of export job:
+Get the status of an [exportJob](../resources/viva-goals-export-job.md):
 
 ```http
-GET /employeeExperience/goals/exportJobs/{jobId}
+GET /employeeExperience/goals/exportJobs
 ```
 
 ## Optional query parameters
@@ -47,10 +47,10 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection [export job](../resources/viva-goals-export-job.md) item in the response body. 
+If successful, this method returns a `200 OK` response code and a collection [exportJob](../resources/viva-goals-export-job.md) item in the response body. 
 
 ## Example
-### 1. Here is an example of the request.
+### 1. Following is an example of a request.
 #### Request
 
 ```text
@@ -121,7 +121,7 @@ GET https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs?$filter
 ```text
 GET https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs?$filter= explorerViewId eq ‘9ab0fcab-c1d4-4b26-963b-a3c33155f853’ 
 ```
-When attempting to use any other property, this method will return a `400 Bad Request` error with the following message:
+When attempting to use any other property, this method returns a `400 Bad Request` error with the following message:
 #### Response
 ```
 {
