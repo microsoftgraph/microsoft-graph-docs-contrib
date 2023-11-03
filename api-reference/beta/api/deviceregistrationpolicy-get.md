@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "deviceregistrationpolicy_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/deviceregistrationpolicy-get-permissions.md)]
 
-When calling on behalf of a user, the user needs to belong to the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference):
+When calling on behalf of a user, the user needs to belong to the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 + Global Reader
 + Cloud Device Administrator
 + Intune Administrator
