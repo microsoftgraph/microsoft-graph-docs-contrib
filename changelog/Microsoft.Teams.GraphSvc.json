@@ -1513,34 +1513,36 @@
     {
       "ChangeList": [
         {
-          "Id": "09e85d0c-2551-40e7-a037-1f36fade0b0b",
+          "Id": "5ed0e040-f9ba-4889-9ee0-8b90837f291f",
           "ApiChange": "Resource",
           "ChangedApiName": "callRecording",
           "ChangeType": "Addition",
-          "Description": "Added the [callRecording](https://docs.microsoft.com/en-us/graph/api/resources/callRecording?view=graph-rest-1.0) resource type.",
-          "Target": "callRecording"
-        },
-        {
-          "Id": "09e85d0c-2551-40e7-a037-1f36fade0b0b",
-          "ApiChange": "Method",
-          "ChangedApiName": "LIST",
-          "ChangeType": "Addition",
-          "Description": "Added the [list](https://docs.microsoft.com/en-us/graph/api/callRecording-list?view=graph-rest-1.0) operation to the [callRecording] resource.",
-          "Target": "callRecording"
-        },
-        {
-          "Id": "09e85d0c-2551-40e7-a037-1f36fade0b0b",
-          "ApiChange": "Method",
-          "ChangedApiName": "GET",
-          "ChangeType": "Addition",
-          "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/callRecording-get?view=graph-rest-1.0) operation to the [callRecording] resource.",
+          "Description": "Added the [callRecording](https://learn.microsoft.com/en-us/graph/api/resources/callRecording?view=graph-rest-1.0) resource",
           "Target": "callRecording"
         }
       ],
-      "Id": "09e85d0c-2551-40e7-a037-1f36fade0b0b",
-      "Cloud": "prd",
+      "Id": "5ed0e040-f9ba-4889-9ee0-8b90837f291f",
+      "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2023-10-04T15:37:11Z",
+      "CreatedDateTime": "2023-10-23T09:44:57.7760824Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": "Microsoft.Teams.Shifts"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "7011a989-51c9-4457-a807-f60c944bd100",
+          "ApiChange": "Resource",
+          "ChangedApiName": "recordings",
+          "ChangeType": "Addition",
+          "Description": "Added the **recordings** relationship to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "7011a989-51c9-4457-a807-f60c944bd100",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-10-23T09:44:57.7764386Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
     }
