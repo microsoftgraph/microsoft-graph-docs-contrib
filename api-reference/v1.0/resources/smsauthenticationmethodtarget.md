@@ -2,6 +2,7 @@
 title: "smsAuthenticationMethodTarget resource type"
 description: "A collection of groups enabled to use the text message authentication methods policy."
 author: "luc-msft"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

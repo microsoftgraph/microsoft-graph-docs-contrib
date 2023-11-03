@@ -10,6 +10,9 @@ graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Simulation(
 	display_name = "Graph Simulation",
+	created_by = EmailIdentity(
+		email = "john@contoso.com",
+	),
 	duration_in_days = 3,
 	attack_technique = SimulationAttackTechnique.CredentialHarvesting,
 	status = SimulationStatus.Scheduled,

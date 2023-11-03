@@ -1,10 +1,10 @@
 ---
 title: "Update profilePhoto"
-description: "Update the photo for any user in the tenant including the signed-in user, or the specified group or contact or team."
+description: "Update the photo for any user in the tenant, including the signed-in user, or the specified group or contact or team."
 ms.localizationpriority: medium
-doc_type: apiPageType
-ms.prod: "people"
 author: "kevinbellinger"
+ms.prod: "people"
+doc_type: apiPageType
 ---
 
 # Update profilePhoto
@@ -20,14 +20,13 @@ You can use either PATCH or PUT for this operation.
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### To update the profile photo of a contact
 
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Least privileged permissions             | Higher privileged permissions             |
 |:--------------------|:-----------------------------------------|:------------------------------------------|
-|Delegated (work or school account)      |   Contacts.ReadWrite           | Contacts.ReadWrite.Shared |
+|Delegated (work or school account)      |   Contacts.ReadWrite           | Not supported. |
 |Delegated (personal Microsoft account)      |   Not supported.            | Not supported. |
 |Application      |    Contacts.ReadWrite           | Not supported. |
 
@@ -45,9 +44,9 @@ The following tables show the least privileged permission or permissions require
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Least privileged permissions             | Higher privileged permissions             |
 |:--------------------|:-----------------------------------------|:------------------------------------------|
-| Delegated (work or school account)     | TeamSettings.ReadWrite.All | Group.ReadWrite.All*, Directory.ReadWrite.All* |
-| Delegated (personal Microsoft account) | Not supported.                                                         | Not supported. |
-| Application                            | Not supported.                                                         | Not supported. |
+| Delegated (work or school account)        | TeamSettings.ReadWrite.All | Not supported. |
+| Delegated (personal Microsoft account)    | Not supported.     | Not supported. |
+| Application                               | Not supported. | Not supported. |
 
 ### To update the profile photo of a user
 
@@ -59,6 +58,7 @@ The following tables show the least privileged permission or permissions require
 |Application      |    User.ReadWrite.All           | Not supported. |
 
 > [!NOTE]
+>
 > - An app with only application permissions cannot update a group's photo.
 > - Permissions marked with * are supported only for backward compatibility. Please update your solutions to use an alternative permission and avoid using these permissions going forward.
 > - Global admin and User admin can update the photo of any user in the organization by using delegated permissions. This operation is also supported with application permissions. Updating the photo of any user in the organization requires *User.ReadWrite.All* permission. Updating the photo of the signed-in user only requires *User.ReadWrite* permission.
@@ -69,6 +69,11 @@ The following tables show the least privileged permission or permissions require
 To update a contact's profile photo:
 <!-- { "blockType": "ignored" } -->
 ```http
+PATCH /me/contacts/{id}/photo/$value
+PATCH /users/{id | userPrincipalName}/contacts/{id}/photo/$value
+PATCH /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
+PATCH /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
+
 PUT /me/contacts/{id}/photo/$value
 PUT /users/{id | userPrincipalName}/contacts/{id}/photo/$value
 PUT /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
@@ -95,12 +100,12 @@ PUT /me/photo/$value
 PUT /users/{id | userPrincipalName}/photo/$value
 ```
 
-
 ## Request headers
+
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type  | e.g. image/jpeg. Required.  |
+| Content-Type  | e.g., image/jpeg. Required.  |
 
 ## Request body
 In the request body, include the binary data of the photo.
@@ -113,7 +118,7 @@ If successful, this method returns a `200 OK` response code or a `204 No Content
 ### Example 1: Update the profile photo of a user
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -147,9 +152,8 @@ Binary data for the image
 ---
 
 #### Response
-The following example shows the response.
 
-> **Note:** The response object shown here might be shortened for readability.
+The following example shows the response.
 
 <!-- {
   "blockType": "response"
@@ -161,7 +165,8 @@ HTTP/1.1 200 OK
 ### Example 2: Update the photo of a team
 
 #### Request
-The following is an example of a request to update a team photo.
+
+The following example shows a request to update a team photo.
 
 
 # [HTTP](#tab/http)
@@ -206,17 +211,3 @@ The following example shows the response.
 ```http
 HTTP/1.1 204 No Content
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Update profilephoto",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}
--->
