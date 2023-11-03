@@ -4,7 +4,7 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD002 MD041 -->
 
-The first section in this step is for users who have completed the new and updated consent flow to set up their pipeline. It describes how to register and approve an Azure Active Directory (Azure AD) application with Microsoft Graph Data Connect (Data Connect). As a prerequisite, Data Connect should be enabled in your tenant. We recommend creating an Azure AD application and a storage destination resource.
+The first section in this step is for users who have completed the new and updated consent flow to set up their pipeline. It describes how to register and approve a Microsoft Entra application with Microsoft Graph Data Connect (Data Connect). As a prerequisite, Data Connect should be enabled in your tenant. We recommend creating a Microsoft Entra application and a storage destination resource.
 
 The second section covers application requests and is meant for users engaging with our former consent process involving Privileged Access Management (PAM). The first tab provides instructions to approve or deny a request within the admin center, while the second tab offers the same guidance through a PowerShell script. 
 
@@ -13,7 +13,7 @@ The second section covers application requests and is meant for users engaging w
 
 ## Register your application with Microsoft Graph Data Connect
 
-As a prerequisite, please enable Data Connect in your tenant. It's helpful to have an Azure AD app and storage destination resource created; you can also set these up by using the wizard. The app registration process in Data Connect involves using a wizard with three tabs: Registration info, Datasets, and Review + create.
+As a prerequisite, please enable Data Connect in your tenant. It's helpful to have a Microsoft Entra app and storage destination resource created; you can also set these up by using the wizard. The app registration process in Data Connect involves using a wizard with three tabs: Registration info, Datasets, and Review + create.
 
 ### Provide details in the Registration info tab
 
@@ -30,7 +30,7 @@ As a prerequisite, please enable Data Connect in your tenant. It's helpful to ha
         - **Destination Type:** Select Azure storage account.
         - **Storage Account:** Select the storage account you created previously.
         - **Storage Account Uri:** Select the option with **.blob.core.windows.net**
-    2. **Application ID:** Select an existing Azure AD in the tenant or create a new one.
+    2. **Application ID:** Select an existing Microsoft Entra tenant or create a new one.
     3. **Description:** Type **My first app**.
     4. **Publish Type:** Choose **Single-Tenant**.
 
@@ -115,7 +115,7 @@ Attempting self-approval will result in an error message in the PAM portal: "Req
 
 1. Open a browser and go to the [Azure portal](https://portal.azure.com/#home).
 
-1. Sign in using an account with **Global Administrator** rights to your Azure AD and Microsoft 365 tenants.
+1. Sign in using an account with **Global Administrator** rights to your Microsoft Entra and Microsoft 365 tenants.
 
 1. From the **Recent** list of resources, select the **Azure Storage account** you created previously in this tutorial.
 
@@ -177,7 +177,7 @@ Attempting self-approval will result in an error message in the PAM portal: "Req
 
 1. Open a browser and go to your [Azure portal](https://portal.azure.com/#home).
 
-1. Sign in using an account with **global administrator** rights to your Azure AD and Microsoft 365 tenants.
+1. Sign in using an account with **global administrator** rights to your Microsoft Entra and Microsoft 365 tenants.
 
 1. In the **Recent** list of resources, select the **Azure Storage account** you created previously in this tutorial.
 

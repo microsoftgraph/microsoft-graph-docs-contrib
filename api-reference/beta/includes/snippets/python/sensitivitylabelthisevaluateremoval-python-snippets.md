@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = EvaluateRemovalPostRequestBody(
 	content_info = ContentInfo(
@@ -46,7 +46,7 @@ request_body = EvaluateRemovalPostRequestBody(
 				name = "MSIP_Label_836ff34f-b604-4a62-a68c-d6be4205d569_ActionId",
 				value = "00000000-0000-0000-0000-000000000000",
 			),
-		]
+		],
 	),
 	downgrade_justification = DowngradeJustification(
 		justification_message = "The information has been declassified.",
@@ -61,7 +61,7 @@ headers = {
 
 )
 
-result = await graph_client.users.by_user_id('user-id').security.information_protection.sensitivity_labels.microsoft_graph_security_evaluate_removal.post(body = request_body, request_configuration = request_configuration)
+result = await graph_client.users.by_user_id('user-id').security.information_protection.sensitivity_labels.microsoft_graph_security_evaluate_removal.post(request_body, request_configuration = request_configuration)
 
 
 ```
