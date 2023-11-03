@@ -129,7 +129,7 @@ The following table lists the members of an [evolvable enumeration](/graph/best-
 |activationFailed|Indicates that the frontline Cloud PC activation failed after the user requested a frontline Cloud PC.|
 |active|Indicates that the frontline Cloud PC is in an active state with a shared-use license assigned, and the user can connect to the Cloud PC.|
 |activating|Indicates that a user requested to connect the Cloud PC and the service is starting.|
-|standbyMode|Indicates that the frontline Cloud PC is in a standby state before it's shut down and deallocated. A shift work Cloud PC in standby state is still accessible by the user.|
+|standbyMode|Indicates that the frontline Cloud PC is in a standby state before it's shut down and deallocated. A frontline Cloud PC in standby state is still accessible by the user.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ### shiftWorkCloudPcAccessState values (deprecated)
