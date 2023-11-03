@@ -124,6 +124,14 @@
           "Description": "Added the [setRetentionLabel](https://learn.microsoft.com/en-us/graph/api/driveitem-setretentionlabel?view=graph-rest-1.0) method to the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0) resource.",
           "Target": "driveItem"
         }
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "behaviorDuringRetentionPeriod",
+          "ChangeType": "Addition",
+          "Description": "Added the **behaviorDuringRetentionPeriod** enumeration type.",
+          "Target": "behaviorDuringRetentionPeriod"
+        },
       ],
       "Id": "7a1f574d-c348-4ce9-890b-d55b58b2d3c2",
       "Cloud": "Prod",
