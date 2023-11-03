@@ -89,7 +89,7 @@ Alternatively, you can make pronouns unavailable for your organization using the
 
 ## Configure pronouns settings using the Microsoft Graph REST API
 
-You can use the [pronounsSettings](/graph/api/resources/pronounssettings?view=graph-rest-1.0&preserve-view=true) resource to configure pronouns settings in your organization.
+You can use the [pronounsSettings](/graph/api/resources/pronounssettings?view=graph-rest-1.0&preserve-view=true) API to configure pronouns settings in your organization.
 
 ### Confirm your current settings
 
