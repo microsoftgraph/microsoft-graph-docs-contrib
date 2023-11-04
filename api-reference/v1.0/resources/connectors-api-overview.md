@@ -1,33 +1,17 @@
 ---
-title: "Use the Microsoft Graph connectors API to index data"
-description: "Build a custom Microsoft Graph connector to index custom items into Microsoft Graph to participate in Microsoft 365 intelligent experiences."
+title: "Use the Microsoft Graph connectors API"
+description: "Use the Microsoft Graph connectors API to index external data that powers intelligent experiences in Microsoft 365."
 ms.localizationpriority: high
 author: "snlraju-msft"
 ms.prod: "search"
 doc_type: conceptualPageType
 ---
 
-# Use the Microsoft Graph connectors API to index data
+# Use the Microsoft Graph connectors API
 
-You can use Microsoft Graph connectors to index custom items into Microsoft Graph. This allows them to participate in Microsoft 365 intelligent experiences like [Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-overview) and [Microsoft Search](/microsoftsearch/overview-microsoft-search).
+You can use Microsoft Graph connectors to bring data from external services into Microsoft Graph. The Microsoft Graph connectors API enables you to index external data in order to power intelligent experiences in Microsoft 365, such as [Copilot](/microsoft-365-copilot/microsoft-365-copilot-overview) and [Microsoft Search](/microsoftsearch/overview-microsoft-search).
 
-Requests to index data are performed on behalf of an application without the presence of a signed-in user, identified using an [access token with application permission](/graph/auth-v2-service).
-
-## Common use cases
-
-The use cases for the APIs in this section involve building [Microsoft Graph connectors](/microsoftsearch/connectors-overview), which involves the following primary steps:
-
-1. [Create a connection](../api/externalconnectors-external-post-connections.md) to an external data source.
-2. [Create and register a schema](../api/externalconnectors-externalconnection-patch-schema.md) that describes the type and how to index the external data.
-3. [Index the data](../api/externalconnectors-externalconnection-put-items.md) as an external item.
-
-| Use cases                                        | REST resources                              | See also |
-|:-------------------------------------------------|:--------------------------------------------|:--|
-| **Configuration actions**                        |                                             |   |
-| Create, update, or delete a connection           | [externalConnection](externalconnectors-externalconnection.md) | [externalConnection methods](externalconnectors-externalconnection.md#methods) |
-| Register a schema for the external data          | [schema](externalconnectors-schema.md)                         | [schema methods](externalconnectors-schema.md#methods) |
-| **Indexing actions**                             |                                             |   |
-| Add, update or delete a custom item in the index | [externalItem](externalconnectors-externalitem.md)             | [externalItem methods](externalconnectors-externalitem.md#methods) |
+Requests to index data are performed on behalf of an application without the presence of a signed-in user via an [access token with application permission](/graph/auth-v2-service).
 
 ## Build a custom Microsoft Graph connector
 
@@ -41,6 +25,18 @@ Building a custom Microsoft Graph connector involves four steps:
 The following is a sequence diagram that illustrates the four steps to build a Microsoft Graph connector.
 
 ![A diagram that shows the four steps to build a Microsoft Graph connector](graph-connectors-sequence-diagram.png)
+
+## Common use cases
+
+The following table lists common use cases for the Microsoft Graph connectors API.
+
+| Use cases                                        | REST resources                              | See also |
+|:-------------------------------------------------|:--------------------------------------------|:--|
+| **Configuration actions**                        |                                             |   |
+| Create, update, or delete a connection           | [externalConnection](externalconnectors-externalconnection.md) | [externalConnection methods](externalconnectors-externalconnection.md#methods) |
+| Register a schema for the external data          | [schema](externalconnectors-schema.md)                         | [schema methods](externalconnectors-schema.md#methods) |
+| **Indexing actions**                             |                                             |   |
+| Add, update or delete a custom item in the index | [externalItem](externalconnectors-externalitem.md)             | [externalItem methods](externalconnectors-externalitem.md#methods) |
 
 ## Known limitations
 
