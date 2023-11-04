@@ -39,13 +39,13 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-Delete your own Platform Credential authentication method.
+To delete your own Platform Credential authentication method:
 <!-- { "blockType": "ignored" } -->
 ``` http
 DELETE /me/authentication/platformCredentialMethods/{platformCredentialAuthenticationMethodId}
 ```
 
-Delete your own or another user's Platform Credential authentication method.
+To delete your own or another user's Platform Credential authentication method:
 <!-- { "blockType": "ignored" } -->
 ``` http
 DELETE /users/{id | userPrincipalName}/authentication/platformCredentialMethods/{platformCredentialAuthenticationMethodId}
@@ -65,9 +65,9 @@ If successful, this method returns a `204 No Content`. It does not return anythi
 
 ## Examples
 
-#### Request
+### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -79,9 +79,9 @@ The following is an example of the request.
 DELETE https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/platformCredentialMethods/R18B3t8Ogh9XIOGmPt81d6p_KXJs1YTxfGgGqeVFJSM1
 ```
 
-#### Response
+### Response
 
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
