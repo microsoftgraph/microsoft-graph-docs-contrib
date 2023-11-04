@@ -51,11 +51,11 @@ To read details of your own or another user's Platform Credential authentication
 GET /users/{id | userPrincipalName}/authentication/platformCredentialMethods/{platformCredentialAuthenticationMethodId}
 ```
 
->**Note:** To read the **device** navigation property for another user, specify it in an `$expand` query as follows: `/users/{id}/authentication/platformCredentialMethods/{id}?$expand=device`.
-
 ## Optional query parameters
 
-Not supported.
+This method supports the $expand query parameter to customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+To read the **device** navigation property for another user, specify it in an `$expand` query as follows: `/users/{id}/authentication/platformCredentialMethods/{id}?$expand=device`.
 
 ## Request headers
 |Name|Description|
