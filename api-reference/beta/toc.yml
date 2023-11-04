@@ -13321,6 +13321,15 @@ items:
                         href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-get.md
                       - name: Delete
                         href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-delete.md
+                  - name: Platform Credential
+                    href: resources/platformcredentialauthenticationmethod.md
+                    items:
+                      - name: List
+                        href: api/platformcredentialauthenticationmethod-list.md
+                      - name: Get
+                        href: api/platformcredentialauthenticationmethod-get.md
+                      - name: Delete
+                        href: api/platformcredentialauthenticationmethod-delete.md                       
               - name: Authentication strengths
                 items:
                   - name: Overview
