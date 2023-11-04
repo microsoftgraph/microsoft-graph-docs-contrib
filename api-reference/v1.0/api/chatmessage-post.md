@@ -30,9 +30,9 @@ The following tables show the least privileged permission or permissions require
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Teamwork.Migrate.All |
 
-> **Note**: Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use the alternative permissions listed in the previous table and avoid using these permissions in the future.
+> **Note**: Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use the alternative permissions listed in the table.
 
-> **Note**: Application permissions are *only* supported for [migration](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams). In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data imported.
+> **Note**: Application permissions are *only* supported for [migration](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams). In the future, Microsoft might require you or your customers to pay additional fees based on the amount of data imported.
 
 ### Permissions for chat
 <!-- { "blockType": "permissions", "name": "chatmessage_post_2" } -->
