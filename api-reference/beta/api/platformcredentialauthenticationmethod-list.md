@@ -39,13 +39,13 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-Retrieve details of your own Platform Credential authentication methods.
+To retrieve details of your own Platform Credential authentication methods:
 <!-- { "blockType": "ignored" } -->
 ``` http
 GET /me/authentication/platformCredentialMethods
 ```
 
-Retrieve details of your own or another user's Platform Credential authentication methods.
+To retrieve details of your own or another user's Platform Credential authentication methods:
 <!-- { "blockType": "ignored" } -->
 ``` http
 GET /users/{id | userPrincipalName}/authentication/platformCredentialMethods
@@ -69,9 +69,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-#### Request
+### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -82,9 +82,9 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/me/authentication/platformCredentialMethods
 ```
 
-#### Response
+### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 **Note:** The response object shown here might be shortened for readability.
 
