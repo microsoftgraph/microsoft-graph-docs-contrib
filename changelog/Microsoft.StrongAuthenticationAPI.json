@@ -153,14 +153,14 @@
           "ApiChange": "Resource",
           "ChangedApiName": "platformCredentialAuthenticationMethod",
           "ChangeType": "Addition",
-          "Description": "Added the [platformCredentialAuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/platformCredentialAuthenticationMethod?view=graph-rest-beta) resource",
+          "Description": "Added the [platformCredentialAuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/platformCredentialAuthenticationMethod?view=graph-rest-beta) resource and associated methods.",
           "Target": "platformCredentialAuthenticationMethod"
         }
       ],
       "Id": "bbb70cce-5252-40be-a7ca-7c29f99cb089",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2023-10-05T19:56:04.1105537Z",
+      "CreatedDateTime": "2023-11-03T19:56:04.1105537Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     }
