@@ -49,7 +49,6 @@ The following table lists the properties that you can change for an assigned lea
 |Property|Type|Description|
 |:---|:---|:---|
 |assignedDateTime|DateTimeOffset|Assigned date for the course activity. Optional.|
-|assignmentType|assignmentType|The assignment type for the course activity. Possible values are: `required`, `recommended`, `unknownFutureValue`. Required.|
 |completedDateTime|DateTimeOffset|Date and time when the assignment was completed. Optional.|
 |completionPercentage|Int32|The percentage of the course completed by the user. If a value is provided, it must be between `0` and `100` (inclusive). Optional.|
 |dueDateTime|DateTimeOffset|Due date for the course activity. Optional.|
@@ -62,7 +61,7 @@ The following table lists the properties that you can change for a self-initiate
 |:---|:---|:---|
 |completedDateTime|DateTimeOffset|Date and time when the assignment was completed. Optional.|
 |completionPercentage|Int32|The percentage of the course completed by the user. If a value is provided, it must be between `0` and `100` (inclusive). Optional.|
-|status|courseStatus|The status of the course activity. Possible values are: `notStarted`, `inProgress`, `completed`. Required.|
+|status|courseStatus|The status of the course activity. Possible values are: `inProgress`, `completed`. Required.|
 |startedDateTime|DateTimeOffset|The date and time when the self-initiated course was started by the learner.|
 
 
@@ -224,3 +223,23 @@ The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+### Error Conditions
+
+|Scenario|HTTP Code|Code|Message|Details|
+|:---|:---|:---|:---|:---|
+|Method not supported for entity|405|MethodNotAllowed|This method is not supported for this entity type.  Reference the Microsoft Graph documentation for the methods applicable to this entity|
+|User doesn't have appropriate permission scope|403|Forbidden|Your account does not have access to this report or data. Please contact your global administrator to request access.|
+|Forbidden|403|Forbidden|You do not have a service plan adequate for this request.|
+|Bad Request|400|Bad Request|This provider isn't enabled for the given tenant.|
+|Bad Request|400|Bad Request|There was an issue with your request. Make sure the registrationId you entered is valid or registered for your tenant|
+|Bad Request|404|Not Found|The requested assignment {id} doesn’t exist.|
+|Internal Server Error|500|Internal Server Error|Internal Server Error|
+|Request throttled|429|Too Many Requests|[{"code": "TooManyRequests","message": "Retry after {noOfMinutes} minutes"}]|
+|Service Unavailable|503|Service Unavailable|[{"code": "ServiceUnavailable","message":"Retry after {noOfMinutes} minutes"}]|
+|Bad Request|400|BadRequest|Required fields are missing|[{"code": "badRequest","message": "Input Field {fieldName} is required"}]
+|Bad Request|400|BadRequest|Input fields are invalid|[{"code": "badRequest","message": "Input Field {fieldName} is invalid"}]
+|Bad Request|400|BadRequest|BadRequest|[{"code": "badRequest","message": "Input Field {fieldName} shouldn't be empty"}]
+|Forbidden|403|Forbidden|The provider is not valid to create course activity for the given learning content|When the registrationId/learningProviderId doesnot match with the provider with which the LearningContent is created|
+|Forbidden|403|Forbidden|User License is not valid to perform the operation|When the user for which Assignment is being created does not have a premium license|

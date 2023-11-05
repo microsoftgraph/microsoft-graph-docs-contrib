@@ -56,7 +56,7 @@ In the request body, use @odata.type to specify the type of [learningCourseActiv
 |:---|:---|:---|
 |assignedDateTime|DateTimeOffset|Assigned date for the course activity. Optional. |
 |assignmentType|assignmentType|The assignment type for the course activity. Possible values are: `required`, `recommended`, `unknownFutureValue`. Required.|
-|assignerUserId|String|The user ID of the assigner. Optional. |
+|assignerUserId|String|The Microsoft Entra ID of the assigner. Optional. |
 |completedDateTime|DateTimeOffset|The date and time when the assignment was completed. Optional. |
 |completionPercentage|Int32|The percentage of the course completed by the user. Optional. If a value is provided, it must be between `0` and `100` (inclusive).|
 |dueDateTime|DateTimeOffset|Due date for the course activity. Optional. |
@@ -64,7 +64,7 @@ In the request body, use @odata.type to specify the type of [learningCourseActiv
 |id|String|The generated ID for a request that can be used to make further interactions to the course activity APIs.|
 |learningContentId|String| The ID of the learning content created in Viva Learning. Required.|
 |learningProviderId|String|The registration ID of the provider. Required.|
-|learnerUserId|String|The user ID of the learner to whom the activity is assigned. Required.|
+|learnerUserId|String|The Microsoft Entra ID of the learner to whom the activity is assigned. Required.|
 |notes|String|Notes for the course activity. Optional. |
 |registrationId|String|ID of the provider. The ID is generated when the provider registers on Viva Learning. Required.|
 |startedDateTime|DateTimeOffset|The date and time when the self-initiated course was started by the learner. Optional.|
@@ -274,3 +274,17 @@ Content-Type: application/json
   "status": "inProgress"
 }
 ```
+
+### Error Conditions
+
+|Scenario|HTTP Code|Code|Message|Details|
+|:---|:---|:---|:---|:---|
+|Forbidden|403|Forbidden|You do not have a service plan adequate for this request.|
+|Bad Request|400|Bad Request|This provider isn't enabled for the given tenant.|
+|Bad Request|400|Bad Request|There was an issue with your request. Make sure the registrationId you entered is valid or registered for your tenant|
+|Internal Server Error|500|Internal Server Error|Internal Server Error|
+|Request throttled|429|Too Many Requests|{"code": "TooManyRequests","message": "Retry after {noOfMinutes} minutes"}|
+|Service Unavailable|503|Service Unavailable|[{"code": "ServiceUnavailable","message":"Retry after {noOfMinutes} minutes"}]|
+|Multiple Field validations fail|400|BadRequest|BadRequest|[{"code": "badRequest","message": "Input field {fieldName}shouldn't be empty"}, {"code": "badRequest","message": "Input Field {fieldName} is required"}, {"code": "badRequest","message": "Input field {fieldName}length exceeded than {expectedLength}"}]|
+|Forbidden|403|The provider is not valid to create course activity for the given learning content|When the registrationId/learningProviderId doesnot match with the provider with which the LearningContent is created|
+|Forbidden|403|User License is not valid to perform the operation|When the user for which Assignment is being created does not have a premium license|
