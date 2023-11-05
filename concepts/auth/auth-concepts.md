@@ -53,7 +53,7 @@ Apps get privileges to call Microsoft Graph with their own identity through one 
 - When the app is assigned ownership of the resource that it intends to manage
 
 > [!NOTE]
-> An app can also get privileges through permissions granted by a role-based access control system such as [Microsoft Entra RBAC](/azure/active-directory/roles/permissions-reference).
+> An app can also get privileges through permissions granted by a role-based access control system such as [Microsoft Entra RBAC](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 ## Microsoft Graph permissions
 
