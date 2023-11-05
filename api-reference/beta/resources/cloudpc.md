@@ -47,7 +47,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled into 
 |[Retry partner agent installation](../api/cloudpc-retrypartneragentinstallation.md)|None|Retry installation for the partner agents that failed to install on the [cloudPC](../resources/cloudpc.md).|
 |[Bulk resize](../api/cloudpc-retrypartneragentinstallation.md)|[cloudPcRemoteActionResult](../resources//cloudpcremoteactionresult.md) collection|Perform a bulk resize action to resize a group of [cloudPCs](../resources/cloudpc.md) that have successfully passed validation (cloudPC: validateBulkResize). If any devices can't be resized, they'll be labeled as "resize failed," while the remaining devices are `provisioned` for the resize process.|
 |[Validate bulk resize](../api/cloudpc-validatebulkresize.md)|[cloudPcResizeValidateResult](../resources/cloudPcResizeValidationResult.md) collection|Validate that a set of [cloudPC](../resources/cloudpc.md) devices meet the requirements to be bulk resized.|
-|[Get frontline access state](../api/cloudpc-getfrontlinecloudpcaccessstate.md)|[frontlineCloudPcAccessState](#frontlinecloudpcaccessstate-values)|Get the access state of the frontline Cloud PC. The possible values are: `unassigned`, `noLicensesAvailable`, `activationFailed`, `active`, `activating`, `standbyMode`, `unknownFutureValue`.|
+|[Get frontline access state](../api/cloudpc-getfrontlinecloudpcaccessstate.md)|[frontlineCloudPcAccessState](#frontlinecloudpcaccessstate-values)|Get the access state of the front-line Cloud PC. The possible values are: `unassigned`, `noLicensesAvailable`, `activationFailed`, `active`, `activating`, `standbyMode`, `unknownFutureValue`.|
 |[Get shift work access state](../api/cloudpc-getshiftworkcloudpcaccessstate.md) (deprecated)|[shiftWorkCloudPcAccessState](#shiftworkcloudpcaccessstate-values-deprecated)|Get the access state of the shift work Cloud PC. The possible values are: `unassigned`, `noLicensesAvailable`, `activationFailed`, `active`, `activating`, `waitlisted`, `unknownFutureValue`, `standbyMode`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value in this evolvable enum: `standbyMode`. This API is deprecated and will stop returning data on December 31, 2023. Going forward, use the [getFrontlineCloudPcAccessState](../api/cloudpc-getfrontlinecloudpcaccessstate.md) API.|
 |[Reprovision remote action](../api/manageddevice-reprovisioncloudpc.md) (deprecated)|None|Reprovision a Cloud PC with an Intune  [managed device](../resources/cloudpc.md) ID. This API is deprecated and will stop returning data on September 30, 2023. Going forward, use the [reprovision](../api/cloudpc-reprovision.md) API.|
 |[Restore remote action](../api/manageddevice-restorecloudpc.md) (deprecated)|None|Restore a Cloud PC device to a previous state with an Intune [managed device](../resources/cloudpc.md) ID. This API is deprecated and will stop returning data on September 30, 2023. Going forward, use the [restore](../api/cloudpc-restore.md) API.|
@@ -124,12 +124,12 @@ The following table lists the members of an [evolvable enumeration](/graph/best-
 
 |Member|Description|
 |:---|:---|
-|unassigned|Set to unassigned if the Cloud PC doesn't consume any shared-use licenses. The default value is unassigned.|
+|unassigned|Set to unassigned if the Cloud PC doesn't consume any shared-use licenses. The default value is `unassigned`.|
 |noLicensesAvailable|Indicates that all shared-use licenses are in use.|
-|activationFailed|Indicates that the frontline Cloud PC activation failed after the user requested a frontline Cloud PC.|
-|active|Indicates that the frontline Cloud PC is in an active state with a shared-use license assigned, and the user can connect to the Cloud PC.|
+|activationFailed|Indicates that the front-line Cloud PC activation failed after the user requested a front-line Cloud PC.|
+|active|Indicates that the front-line Cloud PC is in an active state with a shared-use license assigned, and the user can connect to the Cloud PC.|
 |activating|Indicates that a user requested to connect the Cloud PC and the service is starting.|
-|standbyMode|Indicates that the frontline Cloud PC is in a standby state before it's shut down and deallocated. A frontline Cloud PC in standby state is still accessible by the user.|
+|standbyMode|Indicates that the front-line Cloud PC is in a standby state before it's shut down and deallocated. A front-line Cloud PC in standby state is still accessible by the user.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ### shiftWorkCloudPcAccessState values (deprecated)
@@ -137,7 +137,7 @@ The following table lists the members of an [evolvable enumeration](#shiftworkcl
 
 |Member|Description|
 |:---|:---|
-|unassigned|Set to unassigned if the Cloud PC isn't consuming any shared-use licenses. The default value is unassigned.|
+|unassigned|Set to unassigned if the Cloud PC isn't consuming any shared-use licenses. The default value is `unassigned`.|
 |noLicensesAvailable|Indicates that all shared-use licenses are in use.|
 |activationFailed|Indicates that the shift work Cloud PC activation failed after the user requested a shift work Cloud PC.|
 |active|Indicates that the shift work Cloud PC is in an active state with a shared-use license assigned, and the user can connect to the Cloud PC.|
