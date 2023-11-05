@@ -1,6 +1,6 @@
 ---
 title: "cloudPC: getFrontlineCloudPcAccessState"
-description: "Get the access state of a front-line Cloud PC."
+description: "Get the access state of a frontline Cloud PC."
 author: "ningjingbogithub"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -12,11 +12,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [frontlineCloudPcAccessState](../resources/cloudpc.md#frontlinecloudpcaccessstate-values) of a front-line Cloud PC. 
+Get the [frontlineCloudPcAccessState](../resources/cloudpc.md#frontlinecloudpcaccessstate-values) of a frontline Cloud PC. 
 
-This API only supports shared-use licenses. For more information, see [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values). Shared-use licenses allow three users per license, with one user signed in at a time. Callers can get the latest front-line Cloud PC **accessState** and determine whether the front-line Cloud PC is accessible to a user. 
+This API only supports shared-use licenses. For more information, see [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values). Shared-use licenses allow three users per license, with one user signed in at a time. Callers can get the latest frontline Cloud PC **accessState** and determine whether the frontline Cloud PC is accessible to a user. 
 
-If a web client needs to connect to a front-line Cloud PC, the **sharedCloudPcAccessState** validates the bookmark scenario. If **sharedCloudPcAccessState** isn't active/activating/standbyMode, the web client shows a _bad bookmark_.
+If a web client needs to connect to a frontline Cloud PC, the **sharedCloudPcAccessState** validates the bookmark scenario. If **sharedCloudPcAccessState** isn't active/activating/standbyMode, the web client shows a _bad bookmark_.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
