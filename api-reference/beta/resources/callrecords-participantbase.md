@@ -1,30 +1,32 @@
 ---
 author: "mcm223"
-description: "Represents the base identity of a call participant."
-title: "Participantbase resource type"
+description: "Represents the base identity of a participant or organizer in a callRecord."
+title: "participantBase resource type"
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "users"
 ---
-# ParticipantBase resource type
+
+# participantBase resource type
 
 Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the base identity of a participant or organizer in a [callRecord](callrecords-callrecord.md) resource. The [participant](callrecords-participant.md) and [organizer](callrecords-organizer.md) types inherit from this type.
+Represents the base identity of a participant or organizer in a [callRecord](callrecords-callrecord.md). 
+
+Base type of [organizer](callrecords-organizer.md) and [participant](callrecords-participant.md).
 
 ## Properties
 
-| Property    | Type                          | Description                                               |
-|:------------|:------------------------------|:----------------------------------------------------------|
+| Property    | Type                          | Description                                     |
+|:------------|:------------------------------|:------------------------------------------------|
 | id          | String                        | Unique identifier for the call participant.     |
-| identity    | [identitySet](identityset.md) | Optional. The identity of the call participant.           |
-
+| identity    | [identitySet](identityset.md) | Optional. The identity of the call participant. |
 
 ## JSON representation
 
-The following example is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -37,11 +39,11 @@ The following example is a JSON representation of the resource.
 } -->
 ```json
 {
-  "id": "string",
+  "id": "String (identifier)",
   "identity": {"@odata.type": "microsoft.graph.identitySet"}
 }
 ```
 
 ## See also
 
-For examples that show how to use **participant** and **organizer** resources, see [call records](callrecords-callrecord.md).
+For examples that show how to use the **participant** and **organizer** resources, see [callRecord](callrecords-callrecord.md).
