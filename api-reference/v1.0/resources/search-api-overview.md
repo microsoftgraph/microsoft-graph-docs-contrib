@@ -205,6 +205,8 @@ The search API has the following limitations:
 
 - Customizations in SharePoint search, such as a custom search schema or result sources, can interfere with Microsoft Search API operations.
 
+- Graph Search API doesn't support site-level [search schema](/sharepoint/manage-search-schema)
+
 ## See also
 
 - Learn more about a few key use cases:

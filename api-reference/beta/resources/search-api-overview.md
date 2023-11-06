@@ -221,6 +221,8 @@ The search API has the following limitations:
 
 - Customizations in SharePoint search, such as a custom search schema or result sources, can interfere with Microsoft Search API operations.
 
+- Graph Search API doesn't support site-level [search schema](/sharepoint/manage-search-schema)
+
 ## Schema change deprecation warning
 Effective August 31, 2023, the beta version of the [externalItem](./externalconnectors-externalitem.md) resource in the Microsoft Graph namespace will be deprecated. Going forward, use the version of the resource in the **Microsoft.Graph.ExternalConnectors** namespace. Make sure that you update any namespace dependencies before the specified date. Alternatively, consider transitioning to the v1.0 version of the API.
 
