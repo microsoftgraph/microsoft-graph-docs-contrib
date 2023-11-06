@@ -108,6 +108,26 @@ Content-type: application/json
 }
 ```
 
+##### Status is "notStarted"
+
+```text
+HTTP/1.1 200 OK 
+Content-type: application/json
+```
+
+```json
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#employeeExperience/goals/exportJobs/$entity",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET employeeExperience/goals/exportJobs('<key>')?$select=content,expirationDateTime",
+    "id": "j!kmZP9dp57hGB_7KuYfi6DlCBmj39kL1Cl3clung9SgU",
+    "createdDateTime": "2023-11-02T23:53:02.051Z",
+    "status": "notStarted",
+    "goalsOrganizationId": "3d9a8150-90fd-42bd-9777-25ba783d4a05",
+    "explorerViewId": "f5b62cb2-5e35-4ba1-862d-9c6cf0c88830",
+    "expirationDateTime": "2023-11-03T23:53:07.99Z"
+}
+```
+
 #### Specified exportJob not found
 
 ```text
@@ -130,7 +150,7 @@ Content-type: application/json
 }
 ```
 
-#### Invalid exportJobId is passed
+#### Invalid exportJobId is specified
 
 ```text
 HTTP/1.1 400 Bad Request

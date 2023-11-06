@@ -58,7 +58,7 @@ GET https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs
 ```
 
 #### Response on Search
-If successful, this method returns a `200 OK` response code and a collection of ExportJob entities.
+If successful, this method returns a `200 OK` response code and a collection of [exportJob](../resources/viva-goals-export-job.md) entities.
 
 ```text
 HTTP/1.1 200 OK 

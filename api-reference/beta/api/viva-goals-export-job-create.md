@@ -92,15 +92,16 @@ Content-type: application/json
 ```text
 HTTP/1.1 201 Created 
 Content-type: application/json
-Location: "https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0"
+Location: "https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs/j!uJJZyGd87hGFgvZV8bl-GlCBmj39kL1Cl3clung9SgU"
 ```
 
 ```json
-{ 
-    "id": "eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0", 
-    "status": "notStarted",
-    "createdDateTime": "2023-06-19T12-06-03.0024Z"
-} 
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#employeeExperience/goals/exportJobs/$entity",
+    "id": "j!uJJZyGd87hGFgvZV8bl-GlCBmj39kL1Cl3clung9SgU",
+    "createdDateTime": "2023-11-06T05:46:07.985Z",
+    "status": "notStarted"
+}
 ```
 
 ##### Status is "conflicting"
@@ -109,7 +110,7 @@ Attempting to create an [exportJob](../resources/viva-goals-export-job.md) objec
 ```text
 HTTP/1.1 409 Conflict
 Content-type: application/json
-Location: "https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0"
+Location: "https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs/j!uJJZyGd87hGFgvZV8bl-GlCBmj39kL1Cl3clung9SgU"
 ```
 
 ```json
@@ -118,10 +119,13 @@ Location: "https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs/
     {
         "code": "notAllowed",
         "message": "Another export job is still active or waiting to be executed",
-        "target": "eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0",
+        "target": "j!uJJZyGd87hGFgvZV8bl-GlCBmj39kL1Cl3clung9SgU",
         "innererror":
         {
-            "code": "exportJobAlreadyExists"
+            "code": "exportJobAlreadyExists",
+            "date": "2023-11-03T07:17:25",
+            "request-id": "586e4626-8e0d-4e71-87e1-17050915b57c",
+            "client-request-id": "a8c5cf30-2de7-d8f2-f4f3-5b9028f31758"
         }
     }
 }
