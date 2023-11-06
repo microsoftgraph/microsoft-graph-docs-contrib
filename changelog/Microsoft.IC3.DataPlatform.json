@@ -59,7 +59,7 @@
                     "Target": "participant"
                 },
                 {
-                    "Id": "d9a7ce16-e0a6-401b-947e-2e64382f0c68",
+                    "Id": "5c4af81d-eebf-4c90-a5a9-c23d898dee72",
                     "ApiChange": "Resource",
                     "ChangedApiName": "participantBase",
                     "ChangeType": "Addition",
