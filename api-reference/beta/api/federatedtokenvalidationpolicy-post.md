@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create or update the properties and relationships of a [federatedTokenValidationPolicy](../resources/federatedTokenValidationPolicy.md) object.
+Create or update the properties and relationships of a [federatedTokenValidationPolicy](../resources/federatedtokenvalidationpolicy.md) object.
 
 ## Permissions
 
