@@ -53,7 +53,9 @@ If successful, this method returns a `200 OK` response code and an updated [educ
 
 ## Examples
 
-### Request
+### Example 1: Update submissionAnimationDisabled
+
+#### Request
 
 The following example shows a request.
 
@@ -124,3 +126,164 @@ Content-Type: application/json
 }
 ```
 
+### Example 2: Create grading categories
+#### Request
+The following is an example of the request.
+
+
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070"],
+  "name": "update_gradingCategories"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignmentSettings
+Content-type: application/json
+{
+  "gradingCategories": [
+        {           
+            "displayName": "Lab",
+            "percentageWeight": 10
+        },
+        {
+            "displayName": "Homework",
+            "percentageWeight": 80
+        },
+        {
+            "displayName": "Test",
+            "percentageWeight": 10
+        }
+    ]
+}
+```
+
+#### Response
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationGradingCategory",
+  "isCollection": false
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+    "@odata.context": "https://canary.graph.microsoft.com/testprodv1.0eduasg_grading_categories_v1/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/$entity",
+    "submissionAnimationDisabled": true,
+    "gradingCategories@odata.context": "https://canary.graph.microsoft.com/testprodv1.0eduasg_grading_categories_v1/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingCategories",
+    "gradingCategories": [
+        {
+            "id": "36bf5273-d3e3-4f83-a534-8c816c33cc3e",
+            "displayName": "Lab",
+            "percentageWeight": 10
+        },
+        {
+            "id": "5ffdba4e-2d79-4fe5-87d0-9a2b4552d3c0",
+            "displayName": "Homework",
+            "percentageWeight": 80
+        },
+        {
+            "id": "691579b1-cf38-40ba-8758-c6a27529a8b7",
+            "displayName": "Test",
+            "percentageWeight": 10
+        }
+    ]
+}
+```
+
+### Example 3: Delta payload to delete, modify and add grading categories.
+
+#### Request
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070"],
+  "name": "update_gradingCategories_delta"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignmentSettings
+Content-type: application/json
+{
+    "gradingCategories@delta": [
+        {
+            // Change this grading category's name
+            "id": "fb859cd3-943b-4cd6-9bbe-fe1c39eace0e",
+            "displayName": "Lab Test"
+            },
+        {
+            // Delete this grading category
+            "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#gradingCategories/$deletedEntity",
+            "id": "e2a86277-24f9-4f29-8196-8c83fc69d00d",
+            "reason": "deleted"
+        },
+        {
+            // Add a new grading category
+            "displayName": "Lab Practice",
+            "percentageWeight": 30
+        },
+        {
+            "displayName": "Lab Theory",
+            "percentageWeight": 10
+        }
+    ]
+}
+```
+
+#### Response
+The following is an example of the response.
+> **Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationGradingCategory"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/$entity",
+    "submissionAnimationDisabled": false,
+    "gradingCategories@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingCategories",
+    "gradingCategories": [
+        {
+            "id": "fb4a4009-3cc4-4dea-9991-e0a0763659e3",
+            "displayName": "Homework",
+            "percentageWeight": 30
+        },
+        {
+            "id": "fb859cd3-943b-4cd6-9bbe-fe1c39eace0e",
+            "displayName": "Lab Test",
+            "percentageWeight": 30
+        },
+        {
+            "id": "d47d7a3f-44a1-47e1-8aec-68b028f64b2e",
+            "displayName": "Lab Practice",
+            "percentageWeight": 30
+        },
+        {
+            "id": "021db844-0f03-4483-929d-1c1dbfd4fcb4",
+            "displayName": "Lab Theory",
+            "percentageWeight": 10
+        }
+    ]
+}
+```
+
+<!-- uuid: 37d99af7-cfc5-4e3b-8566-f7d40e4a2070
+2023-04-18 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Update educationAssignmentSettings",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": []
+}
+-->

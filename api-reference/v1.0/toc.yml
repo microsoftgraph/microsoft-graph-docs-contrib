@@ -4956,6 +4956,14 @@ items:
                 href: api/educationassignment-delete-rubric.md
               - name: Get delta
                 href: api/educationassignment-delta.md
+                name: List grading categories
+                href: api/educationassignment-list-gradingcategory.md
+              - name: Add grading category
+                href: api/educationassignment-post-gradingcategory.md
+              - name: Update grading category
+                href: api/educationgradingcategory-update.md
+              - name: Remove grading category
+                href: api/educationassignment-delete-gradingcategory.md
           - name: Assignment settings
             href: resources/educationassignmentsettings.md
             items:
@@ -4981,6 +4989,15 @@ items:
                 href: api/educationcategory-delete.md
               - name: Get delta
                 href: api/educationcategory-delta.md
+              - name: Grading category
+                href: resources/educationgradingcategory.md
+                items:
+              - name: Add grading category
+                href: api/educationassignment-post-gradingcategory.md
+              - name: Update grading category
+                href: api/educationgradingcategory-update.md
+              - name: Delete grading category
+                href: educationassignment-delete-gradingcategory
           - name: Rubric
             href: resources/educationrubric.md
             items:

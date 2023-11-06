@@ -40,7 +40,9 @@ Inherits from [entity](../resources/entity.md).
 |[Attach rubric](../api/educationassignment-put-rubric.md)|None|Attach an existing **educationRubric** to this assignment.|
 |[Remove rubric](../api/educationassignment-delete-rubric.md)|None|Detach the **educationRubric** from this assignment.|
 |[Get delta](../api/educationassignment-delta.md)|[educationAssignment](../resources/educationassignment.md) collection|Get a list of newly created or updated **educationAssignment** objects without having to perform a full read of the collection.|
-
+|[List educationGradingCategory](../api/educationassignment-list-gradingcategory.md)|[educationGradingCategory](../resources/educationgradingcategory.md) collection|Get the educationGradingCategory resources from the gradingCategory navigation property.|
+|[Add educationGradingCategory](../api/educationassignment-post-gradingcategory.md)|[educationGradingCategory](../resources/educationgradingcategory.md)|Add gradingCategory by posting to the gradingCategory collection.|
+|[Remove educationGradingCategory](../api/educationassignment-delete-gradingcategory.md)|None|Remove an [educationGradingCategory](../resources/educationgradingcategory.md) object.|
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -75,6 +77,7 @@ Inherits from [entity](../resources/entity.md).
 |resources|[educationAssignmentResource](educationassignmentresource.md) collection| Learning objects that are associated with this assignment.  Only teachers can modify this list. Nullable.|
 |rubric|[educationRubric](educationrubric.md)|When set, the grading rubric attached to this **assignment**.|
 |submissions|[educationSubmission](educationsubmission.md) collection| Once published, there is a **submission** object for each student representing their work and grade.  Read-only. Nullable.|
+|grading category|[educationGradingCategory](educationgradingcategory.md) collection| When set, enables users to weight assignments differently when computing a class average grade.|
 
 ## JSON representation
 
