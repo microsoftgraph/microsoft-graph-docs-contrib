@@ -25,12 +25,31 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+Get the Permissions Creep Index distribution for identities and resources in AWS:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/permissionsCreepIndexDistributions/{permissionsCreepIndexDistributionId}
+```
+
+Get the Permissions Creep Index distribution for identities and resources in Azure:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/permissionsCreepIndexDistributions/{permissionsCreepIndexDistributionId}
+```
+
+Get the Permissions Creep Index distribution for identities and resources in GCP:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/permissionsCreepIndexDistributions/{permissionsCreepIndexDistributionId}
 ```
 
 ## Optional query parameters

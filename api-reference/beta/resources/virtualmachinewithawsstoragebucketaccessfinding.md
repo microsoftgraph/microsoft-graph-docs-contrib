@@ -31,7 +31,7 @@ Inherits from [finding](../resources/finding.md).
 |bucketCount|Int32|total number of storage buckets in the authorization system that hosts the EC2 instance|
 |createdDateTime|DateTimeOffset|Inherited from [finding](../resources/finding.md).|
 |id|String|Inherited from [entity](../resources/entity.md).|
-|permissionsCreepIndex|[permissionsCreepIndex](../resources/permissionscreepindex.md)|Assigns an index based on an identities excessive permissions that is classified into three buckets: 0-33: low, 34-66: medium, 67-100: high. This property and its values are a snapshot as of when the finding was created and may not reflect the current values for the group identity|
+|permissionsCreepIndex|[permissionsCreepIndex](../resources/permissionscreepindex.md)|Assigns an index based on an identities excessive permissions that is classified into three buckets: 0-33: low, 34-66: medium, 67-100: high. This property and its values are a snapshot as of when the finding was created and may not reflect the current values for the group identity. Supports `$filter` (`gt`) `$orderby`|
 
 ## Supported query patterns
 |Pattern|Syntax|Notes|

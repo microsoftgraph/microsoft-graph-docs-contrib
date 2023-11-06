@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-permissionsAnalyticsAggregatedIdentitySummary will return the total number of an identity (Ex: roles) and the total number of a specific finding for that identity (Ex: inactive roles) in an authorization system. These values will be aggregated when filtering for multiple authorization systems.
+Represents the total number of identities of a specific kind, for example, roles, and the number of a specific finding for that identity, for example, inactive roles, in an authorization system.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|findingsCount|Int32|This will represent the total number of an identity that actually has a specific finding type	|
-|totalCount|Int32|This will represent the total number of an identity in an auth system that could have a specific finding type|
+|findingsCount|Int32|The total number of identities of a specific kind that has a specific finding type.	|
+|totalCount|Int32|The total number of identities in an authorization system that Permissions Management checked for a specific finding.|
 
 ## Relationships
 None.

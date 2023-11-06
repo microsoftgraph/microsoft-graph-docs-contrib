@@ -1,7 +1,6 @@
 ---
 title: "securityToolAwsUserAdministratorFinding resource type"
-description: "
-View AWS Users that can administer security tools."
+description: "View AWS Users that can administer security tools."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
