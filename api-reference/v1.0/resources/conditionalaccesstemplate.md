@@ -2,6 +2,7 @@
 title: "conditionalAccessTemplate resource type"
 description: "Represents a Microsoft recommended template of best practice configurations for Microsoft Entra Conditional Access policies."
 author: "lisaychuang"
+ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

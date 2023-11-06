@@ -2,6 +2,7 @@
 title: "Get temporaryAccessPassAuthenticationMethodConfiguration"
 description: "Read the details of the Temporary Access Pass policy for the Microsoft Entra tenant, represented by a temporaryAccessPassAuthenticationMethodConfiguration object."
 author: "tilarso"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
