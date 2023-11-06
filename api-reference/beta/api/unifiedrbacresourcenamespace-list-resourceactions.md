@@ -2,6 +2,7 @@
 title: "List resourceActions"
 description: "Get a list of the unifiedRbacResourceAction objects and their properties."
 author: "DougKirschner"
+ms.reviewer: msodsrbac
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType

@@ -2,6 +2,7 @@
 title: "Update microsoftAuthenticatorAuthenticationMethodConfiguration"
 description: "Update the properties of a microsoftAuthenticatorAuthenticationMethodConfiguration object."
 author: "mjsantani"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
