@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = SitePage(
 	odata_type = "#microsoft.graph.sitePage",
@@ -46,7 +46,7 @@ request_body = SitePage(
 										"inner_html" : "<p><b>Hello!</b></p>",
 								}
 							),
-						]
+						],
 					),
 					HorizontalSectionColumn(
 						id = "2",
@@ -56,57 +56,57 @@ request_body = SitePage(
 								id = "73d07dde-3474-4545-badb-f28ba239e0e1",
 								additional_data = {
 										"web_part_type" : "d1d91016-032f-456d-98a4-721247c305e8",
-										"data" : (
-											data_version = "1.9",
-											description = "Show an image on your page",
-											title = "Image",
-											properties = (
-												image_source_type = 2,
-												alt_text = "",
-												overlay_text = "",
-												siteid = "0264cabe-6b92-450a-b162-b0c3d54fe5e8",
-												webid = "f3989670-cd37-4514-8ccb-0f7c2cbe5314",
-												listid = "bdb41041-eb06-474e-ac29-87093386bb14",
-												uniqueid = "d9f94b40-78ba-48d0-a39f-3cb23c2fe7eb",
-												img_width = 4288,
-												img_height = 2848,
-												fix_aspect_ratio = False,
-												caption_text = "",
-												alignment = "Center",
-											),
-											server_processed_content = (
-												image_sources = [
-													(
-														key = "imageSource",
-														value = "/_LAYOUTS/IMAGES/VISUALTEMPLATEIMAGE1.JPG",
-													),
-												]
-												custom_metadata = [
-													(
-														key = "imageSource",
-														value = (
-															siteid = "0264cabe-6b92-450a-b162-b0c3d54fe5e8",
-															webid = "f3989670-cd37-4514-8ccb-0f7c2cbe5314",
-															listid = "bdb41041-eb06-474e-ac29-87093386bb14",
-															uniqueid = "d9f94b40-78ba-48d0-a39f-3cb23c2fe7eb",
-															width = "4288",
-															height = "2848",
-														),
-													),
-												]
-											),
-										),
+										"data" : {
+												"data_version" : "1.9",
+												"description" : "Show an image on your page",
+												"title" : "Image",
+												"properties" : {
+														"image_source_type" : 2,
+														"alt_text" : "",
+														"overlay_text" : "",
+														"siteid" : "0264cabe-6b92-450a-b162-b0c3d54fe5e8",
+														"webid" : "f3989670-cd37-4514-8ccb-0f7c2cbe5314",
+														"listid" : "bdb41041-eb06-474e-ac29-87093386bb14",
+														"uniqueid" : "d9f94b40-78ba-48d0-a39f-3cb23c2fe7eb",
+														"img_width" : 4288,
+														"img_height" : 2848,
+														"fix_aspect_ratio" : False,
+														"caption_text" : "",
+														"alignment" : "Center",
+												},
+												"server_processed_content" : {
+														"image_sources" : [
+															{
+																	"key" : "imageSource",
+																	"value" : "/_LAYOUTS/IMAGES/VISUALTEMPLATEIMAGE1.JPG",
+															},
+														],
+														"custom_metadata" : [
+															{
+																	"key" : "imageSource",
+																	"value" : {
+																			"siteid" : "0264cabe-6b92-450a-b162-b0c3d54fe5e8",
+																			"webid" : "f3989670-cd37-4514-8ccb-0f7c2cbe5314",
+																			"listid" : "bdb41041-eb06-474e-ac29-87093386bb14",
+																			"uniqueid" : "d9f94b40-78ba-48d0-a39f-3cb23c2fe7eb",
+																			"width" : "4288",
+																			"height" : "2848",
+																	},
+															},
+														],
+												},
+										},
 								}
 							),
-						]
+						],
 					),
-				]
+				],
 			),
-		]
+		],
 	),
 )
 
-result = await graph_client.sites.by_site_id('site-id').pages.post(body = request_body)
+result = await graph_client.sites.by_site_id('site-id').pages.post(request_body)
 
 
 ```

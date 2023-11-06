@@ -3,6 +3,7 @@ title: "List roleDefinitions"
 description: "Get a list of unifiedRoleDefinition objects."
 ms.localizationpriority: medium
 author: "DougKirschner"
+ms.reviewer: msodsrbac
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
@@ -18,55 +19,42 @@ Get a list of [unifiedRoleDefinition](../resources/unifiedroledefinition.md) obj
 The following RBAC providers are currently supported:
 - Cloud PC 
 - device management (Intune)
-- directory (Azure AD) 
-- entitlement management (Azure AD)
+- directory (Microsoft Entra ID) 
+- entitlement management (Microsoft Entra ID)
 - Exchange Online
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
-Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following tables the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, see [Permissions](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### For a Cloud PC provider
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  RoleManagement.Read.CloudPC, CloudPC.Read.All, RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All, RoleManagement.Read.All   |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | RoleManagement.Read.CloudPC, CloudPC.Read.All, RoleManagement.ReadWrite.CloudPC, CloudPC.ReadWrite.All, RoleManagement.Read.All  |
+<!-- { "blockType": "permissions", "name": "rbacapplication_list_roledefinitions" } -->
+[!INCLUDE [permissions-table](../includes/permissions/rbacapplication-list-roledefinitions-permissions.md)]
 
 ### For a device management (Intune) provider
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All   |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "rbacapplication_list_roledefinitions_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/rbacapplication-list-roledefinitions-2-permissions.md)]
 
-### For a directory (Azure AD) provider
+<a name='for-a-directory-azure-ad-provider'></a>
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All   |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+### For a directory (Microsoft Entra ID) provider
+
+<!-- { "blockType": "permissions", "name": "rbacapplication_list_roledefinitions_3" } -->
+[!INCLUDE [permissions-table](../includes/permissions/rbacapplication-list-roledefinitions-3-permissions.md)]
 
 ### For an entitlement management provider
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All   |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+<!-- { "blockType": "permissions", "name": "rbacapplication_list_roledefinitions_4" } -->
+[!INCLUDE [permissions-table](../includes/permissions/rbacapplication-list-roledefinitions-4-permissions.md)]
 
 ### For an Exchange Online provider
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  RoleManagement.Read.Exchange, RoleManagement.Read.All, RoleManagement.ReadWrite.Exchange   |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+<!-- { "blockType": "permissions", "name": "rbacapplication_list_roledefinitions_5" } -->
+[!INCLUDE [permissions-table](../includes/permissions/rbacapplication-list-roledefinitions-5-permissions.md)]
 
 ## HTTP request
 
@@ -111,7 +99,7 @@ This method supports the `$filter` query parameter to help customize the respons
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -123,7 +111,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -172,7 +160,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -285,7 +273,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -334,7 +322,7 @@ GET https://graph.microsoft.com/beta/roleManagement/cloudPC/roleDefinitions
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -424,7 +412,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -473,7 +461,7 @@ GET https://graph.microsoft.com/beta/roleManagement/entitlementManagement/roleDe
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -532,7 +520,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -580,7 +568,7 @@ GET https://graph.microsoft.com/beta/roleManagement/exchange/roleDefinitions
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -645,7 +633,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -693,7 +681,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions?$f
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -778,5 +766,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

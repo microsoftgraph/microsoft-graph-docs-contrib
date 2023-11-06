@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = PoliciesRequestBuilder.PoliciesRequestBuilderGetQueryParameters(
 		filter = "displayName eq 'SimplePolicy1' or displayName eq 'SimplePolicy2'",

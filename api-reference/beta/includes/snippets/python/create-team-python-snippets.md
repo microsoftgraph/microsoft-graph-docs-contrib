@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Team(
 	member_settings = TeamMemberSettings(
@@ -25,7 +25,7 @@ request_body = Team(
 	),
 )
 
-result = await graph_client.groups.by_group_id('group-id').team.put(body = request_body)
+result = await graph_client.groups.by_group_id('group-id').team.put(request_body)
 
 
 ```

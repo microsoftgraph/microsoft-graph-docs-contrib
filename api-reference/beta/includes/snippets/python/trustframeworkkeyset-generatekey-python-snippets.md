@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = GenerateKeyPostRequestBody(
 	use = "sig",
@@ -15,7 +15,7 @@ request_body = GenerateKeyPostRequestBody(
 	exp = 1508969811,
 )
 
-result = await graph_client.trust_framework.key_sets.by_key_set_id('trustFrameworkKeySet-id').generate_key.post(body = request_body)
+result = await graph_client.trust_framework.key_sets.by_trust_framework_key_set_id('trustFrameworkKeySet-id').generate_key.post(request_body)
 
 
 ```

@@ -1,6 +1,6 @@
 ---
 title: "permissionsAnalyticsAggregatedIdentitySummary resource type"
-description: "Return the total number of an identity type and the total number of a specific finding for that identity in an authorization system."
+description: "Represents the total number of identities of a specific kind and the number of a specific finding for that identity in an authorization system."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
