@@ -17,7 +17,7 @@ An identityFinding is a finding that contains information about an identity (use
 
 Inherits from [finding](../resources/finding.md).
 
-The following resources inherit from this resource type:
+The following objects inherit from this resource type:
 [inactiveawsresourcefinding](../resources/inactiveawsresourcefinding.md)
 [inactiveawsrolefinding](../resources/inactiveawsrolefinding.md)
 [inactiveazureserviceprincipalfinding](../resources/inactiveazureserviceprincipalfinding.md)
