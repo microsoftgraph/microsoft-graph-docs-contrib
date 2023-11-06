@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call.
 This method only supports files up to 250MB in size.
 
-To upload large files see [Upload large files with an upload session](driveitem-createuploadsession.md).
+To upload large files, see [Upload large files with an upload session](driveitem-createuploadsession.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
