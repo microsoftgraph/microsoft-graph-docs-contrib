@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides a list of [recycleBinItems](recyclebinitem.md).
+Represents a container for a collection of [recycleBinItem](recyclebinitem.md) resources in a SharePoint [site](site.md).
 
 Inherits from [baseItem](baseitem.md).
 

@@ -644,6 +644,8 @@ items:
                 href: api/profilephoto-get.md
               - name: Update photo
                 href: api/profilephoto-update.md
+              - name: Delete photo
+                href: api/profilephoto-delete.md
           - name: Planner
             items:
               - name: Planner user
@@ -974,6 +976,9 @@ items:
                 href: api/profilephoto-get.md
               - name: Update photo
                 href: api/profilephoto-update.md
+              - name: Delete photo
+                href: api/profilephoto-delete.md
+                
           - name: Planner
             items:
               - name: Planner plan
@@ -11177,6 +11182,80 @@ items:
                 href: api/schemaextension-update.md
               - name: Delete
                 href: api/schemaextension-delete.md
+      - name: External data connections
+        items:
+          - name: Overview
+            href: resources/connectors-api-overview.md
+          - name: External connection
+            items:
+              - name: External connection
+                href: resources/externalconnectors-externalconnection.md
+              - name: List
+                href: api/externalconnectors-externalconnection-list.md
+              - name: Create
+                href: api/externalconnectors-external-post-connections.md
+              - name: Get
+                href: api/externalconnectors-externalconnection-get.md
+              - name: Update
+                href: api/externalconnectors-externalconnection-update.md
+              - name: Delete
+                href: api/externalconnectors-externalconnection-delete.md
+              - name: Get operation
+                href: api/externalconnectors-connectionoperation-get.md
+          - name: Connection quota
+            items:
+              - name: Connection quota
+                href: resources/externalconnectors-connectionquota.md
+              - name: Get
+                href: api/externalconnectors-connectionquota-get.md
+          - name: External activity
+            items:
+              - name: External activity
+                href: resources/externalconnectors-externalactivity.md
+          - name: External activity result
+            items:
+              - name: External activity result
+                href: resources/externalconnectors-externalactivityresult.md
+          - name: External group
+            items:
+              - name: External group
+                href: resources/externalconnectors-externalgroup.md
+              - name: Create
+                href: api/externalconnectors-externalconnection-post-groups.md
+              - name: Delete
+                href: api/externalconnectors-externalgroup-delete.md
+          - name: External group member
+            items:
+              - name: External group member
+                href: resources/externalconnectors-externalgroupmember.md
+              - name: Create
+                href: api/externalconnectors-externalgroup-post-members.md
+              - name: Delete
+                href: api/externalconnectors-externalgroupmember-delete.md
+          - name: External item
+            items:
+              - name: External item
+                href: resources/externalconnectors-externalitem.md
+              - name: Create
+                href: api/externalconnectors-externalconnection-put-items.md
+              - name: Get
+                href: api/externalconnectors-externalitem-get.md
+              - name: Update
+                href: api/externalconnectors-externalitem-update.md
+              - name: Delete
+                href: api/externalconnectors-externalitem-delete.md
+              - name: Add activities
+                href: api/externalconnectors-externalitem-addactivities.md
+          - name: Schema
+            items:
+              - name: Schema
+                href: resources/externalconnectors-schema.md
+              - name: Create
+                href: api/externalconnectors-externalconnection-patch-schema.md
+              - name: Get
+                href: api/externalconnectors-schema-get.md
+              - name: Update
+                href: api/externalconnectors-schema-update.md
       - name: Files
         displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
         items:
@@ -11990,33 +12069,6 @@ items:
                         href: api/orgcontact-list-memberof.md
                       - name: Get manager
                         href: api/orgcontact-get-manager.md
-              - name: People admin settings (preview)
-                href: resources/peopleadminsettings.md
-                items:
-                  - name: Get
-                    href: api/peopleadminsettings-get.md
-                  - name: Org control for pronouns settings (preview)
-                    items:
-                      - name: Pronouns settings
-                        href: resources/pronounssettings.md
-                      - name: List
-                        href: api/peopleadminsettings-list-pronouns.md
-                      - name: Update
-                        href: api/pronounssettings-update.md
-                  - name: Profile card customization (preview)
-                    items:
-                      - name: Profile card property
-                        href: resources/profilecardproperty.md
-                      - name: List
-                        href: api/peopleadminsettings-list-profilecardproperties.md
-                      - name: Create
-                        href: api/peopleadminsettings-post-profilecardproperties.md
-                      - name: Get
-                        href: api/profilecardproperty-get.md
-                      - name: Update
-                        href: api/profilecardproperty-update.md
-                      - name: Delete
-                        href: api/profilecardproperty-delete.md
               - name: Role management
                 displayName: Unified RBAC
                 href: resources/rolemanagement.md
@@ -13343,6 +13395,15 @@ items:
                         href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-get.md
                       - name: Delete
                         href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-delete.md
+                  - name: Platform Credential
+                    href: resources/platformcredentialauthenticationmethod.md
+                    items:
+                      - name: List
+                        href: api/platformcredentialauthenticationmethod-list.md
+                      - name: Get
+                        href: api/platformcredentialauthenticationmethod-get.md
+                      - name: Delete
+                        href: api/platformcredentialauthenticationmethod-delete.md                       
               - name: Authentication strengths
                 items:
                   - name: Overview
@@ -14880,6 +14941,33 @@ items:
                     href: api/organizationsettings-list-peopleinsights.md
                   - name: Update
                     href: api/insightssettings-update.md
+          - name: People admin settings
+            href: resources/peopleadminsettings.md
+            items:
+              - name: Get
+                href: api/peopleadminsettings-get.md
+              - name: Org control for pronouns settings (preview)
+                items:
+                  - name: Pronouns settings
+                    href: resources/pronounssettings.md
+                  - name: List
+                    href: api/peopleadminsettings-list-pronouns.md
+                  - name: Update
+                    href: api/pronounssettings-update.md
+              - name: Profile card customization
+                items:
+                  - name: Profile card property
+                    href: resources/profilecardproperty.md
+                  - name: List
+                    href: api/peopleadminsettings-list-profilecardproperties.md
+                  - name: Create
+                    href: api/peopleadminsettings-post-profilecardproperties.md
+                  - name: Get
+                    href: api/profilecardproperty-get.md
+                  - name: Update
+                    href: api/profilecardproperty-update.md
+                  - name: Delete
+                    href: api/profilecardproperty-delete.md
           - name: Profile (preview)
             items:
               - name: Profile
@@ -15168,20 +15256,6 @@ items:
                     href: api/personwebsite-update.md
                   - name: Delete
                     href: api/personwebsite-delete.md
-          - name: Profile card customization (preview)
-            items:
-              - name: Profile card property
-                href: resources/profilecardproperty.md
-              - name: List
-                href: api/peopleadminsettings-list-profilecardproperties.md
-              - name: Create
-                href: api/peopleadminsettings-post-profilecardproperties.md
-              - name: Get
-                href: api/profilecardproperty-get.md
-              - name: Update
-                href: api/profilecardproperty-update.md
-              - name: Delete
-                href: api/profilecardproperty-delete.md
           - name: Item insights
             items:
               - name: Item insights
@@ -15813,80 +15887,6 @@ items:
                     href: api/search-qna-update.md
                   - name: Delete qna
                     href: api/search-qna-delete.md
-          - name: Index
-            items:
-              - name: Overview
-                href: resources/indexing-api-overview.md
-              - name: External connection
-                items:
-                  - name: External connection
-                    href: resources/externalconnectors-externalconnection.md
-                  - name: List
-                    href: api/externalconnectors-externalconnection-list.md
-                  - name: Create
-                    href: api/externalconnectors-external-post-connections.md
-                  - name: Get
-                    href: api/externalconnectors-externalconnection-get.md
-                  - name: Update
-                    href: api/externalconnectors-externalconnection-update.md
-                  - name: Delete
-                    href: api/externalconnectors-externalconnection-delete.md
-                  - name: Get operation
-                    href: api/externalconnectors-connectionoperation-get.md
-              - name: Schema
-                items:
-                  - name: Schema
-                    href: resources/externalconnectors-schema.md
-                  - name: Create
-                    href: api/externalconnectors-externalconnection-patch-schema.md
-                  - name: Get
-                    href: api/externalconnectors-schema-get.md
-                  - name: Update
-                    href: api/externalconnectors-schema-update.md
-              - name: External activity
-                items:
-                  - name: External activity
-                    href: resources/externalconnectors-externalactivity.md
-              - name: External activity result
-                items:
-                  - name: External activity result
-                    href: resources/externalconnectors-externalactivityresult.md
-              - name: External item
-                items:
-                  - name: External item
-                    href: resources/externalconnectors-externalitem.md
-                  - name: Create
-                    href: api/externalconnectors-externalconnection-put-items.md
-                  - name: Get
-                    href: api/externalconnectors-externalitem-get.md
-                  - name: Update
-                    href: api/externalconnectors-externalitem-update.md
-                  - name: Delete
-                    href: api/externalconnectors-externalitem-delete.md
-                  - name: Add activities
-                    href: api/externalconnectors-externalitem-addactivities.md
-              - name: External group
-                items:
-                  - name: External group
-                    href: resources/externalconnectors-externalgroup.md
-                  - name: Create
-                    href: api/externalconnectors-externalconnection-post-groups.md
-                  - name: Delete
-                    href: api/externalconnectors-externalgroup-delete.md
-              - name: External group member
-                items:
-                  - name: External group member
-                    href: resources/externalconnectors-externalgroupmember.md
-                  - name: Create
-                    href: api/externalconnectors-externalgroup-post-members.md
-                  - name: Delete
-                    href: api/externalconnectors-externalgroupmember-delete.md
-              - name: Connection quota
-                items:
-                  - name: Connection quota
-                    href: resources/externalconnectors-connectionquota.md
-                  - name: Get
-                    href: api/externalconnectors-connectionquota-get.md
       - name: Security
         items:
           - name: Overview
@@ -17466,8 +17466,6 @@ items:
                         href: api/participant-get.md
                       - name: Delete
                         href: api/participant-delete.md
-                      - name: Configure mixer
-                        href: api/participant-configuremixer.md
                       - name: Mute participant
                         href: api/participant-mute.md
                       - name: Mute all participants
@@ -17656,6 +17654,13 @@ items:
                         href: api/virtualeventwebinar-getbyuserrole.md
                       - name: List by user ID/role
                         href: api/virtualeventwebinar-getbyuseridandrole.md
+                      - name: Registration
+                        href: resources/virtualeventregistration.md
+                        items:
+                          - name: List
+                            href: api/virtualeventregistration-list.md
+                          - name: Get
+                            href: api/virtualeventregistration-get.md
                   - name: Session
                     href: resources/virtualeventsession.md
                     items:
@@ -17663,13 +17668,6 @@ items:
                         href: api/virtualeventsession-list.md
                       - name: Get
                         href: api/virtualeventsession-get.md
-                  - name: Registration
-                    href: resources/virtualeventregistration.md
-                    items:
-                      - name: List
-                        href: api/virtualeventregistration-list.md
-                      - name: Get
-                        href: api/virtualeventregistration-get.md
           - name: Devices (preview)
             items:
               - name: Provisioned device
