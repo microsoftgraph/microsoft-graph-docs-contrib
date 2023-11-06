@@ -3,6 +3,7 @@ title: "List passwordMethods"
 description: "Retrieve a user's passwordAuthenticationMethod objects. This will return exactly one object, as a user can have exactly one password."
 ms.localizationpriority: medium
 author: "zhvolosh"
+ms.reviewer: intelligentaccesspm
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---

@@ -3,6 +3,7 @@ title: "Update authenticationContextClassReference"
 description: "Update the properties of a authenticationContextClassReference object."
 ms.localizationpriority: medium
 author: "swetha-rai"
+ms.reviewer: conditionalaccesspm
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

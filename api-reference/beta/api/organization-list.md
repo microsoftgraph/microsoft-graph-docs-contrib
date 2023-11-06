@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored", "name": "organization_list" } -->
 [!INCLUDE [permissions-table](../includes/permissions/organization-list-permissions.md)]
 
+[!INCLUDE [rbac-organization-apis-read](../includes/rbac-for-apis/rbac-organization-apis-read.md)]
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
