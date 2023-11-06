@@ -30,7 +30,6 @@ One of the following permissions is required to call this API. To learn more, in
 | ScopeName | DisplayName | Description | Type | Admin Consent? | Entities/APIs covered |
 | :-- | :-- | :-- | :-- | :-- | :-- |
 | `Policy.ReadWrite.FedTokenValidation` | Read and write Federated Token Validation Policy | This role can read and write Federated Token Validation Policy that determines which domains have enabled the validation | Delegated | Yes | All |
-| `Policy.ReadWrite.FedTokenValidation` | Read and write Federated Token Validation Policy | This role can read and write Federated Token Validation Policy that determines which domains have enabled the validation | Yes | All |
 
 ### Actions
 
