@@ -48,11 +48,22 @@ The following resources inherit from this resource type:
 
 ## Properties
 |Property|Type|Description|
-|:---|:---|:---|Contains information on authorization system actions granted to an identity and actions executed by this identity in the last 90 days. This property and its values are a snapshot as of when the finding was created and may not reflect the current values for the identity|
-|createdDateTime|DateTimeOffset|A date specifiying when the Finding was created Inherited from [finding](../resources/finding.md).|
+|:---|:---|:---|
+|createdDateTime|DateTimeOffset|A date specifiying when the Finding was created. Inherited from [finding](../resources/finding.md).|
 |id|String|Unique identifier for the Finding. This id will be base64 encoded using the format:{findingType}{FindingId} to ensure uniqueness Inherited from [entity](../resources/entity.md).|
-|lastActiveDateTime|DateTimeOffset|A date specifiying when the last time the identity in this Finding executed an authorization system action|
-|permissionsCreepIndex|[permissionsCreepIndex](../resources/permissionscreepindex.md)|Assigns an index based on an identities excessive permissions that is classified into three buckets: 0-33: low, 34-66: medium, 67-100: high. This property and its values are a snapshot as of when the finding was created and may not reflect the current values for the identity|
+|lastActiveDateTime|DateTimeOffset|A date specifiying when the last time the identity in this finding executed an authorization system action.|
+|permissionsCreepIndex|[permissionsCreepIndex](../resources/permissionscreepindex.md)|Assigns an index based on an identities excessive permissions that is classified into three buckets: 0-33: low, 34-66: medium, 67-100: high. This property and its values are a snapshot as of when the finding was created and may not reflect the current values for the identity. Supports `$filter` (`gt`) and `$orderby`.|
+
+## Supported query patterns
+|Pattern|Syntax|Notes|
+|Property|Type|Description|
+|:---|:---|:---|
+|Server-side pagination|@odata.nextLink|Will use EntityFramework MaxPageSize pagination with size 100|
+|Filter|/?$filter=identity/authorizationSystem/authorizationSystemId IN ('{id1}', '{id2}',)|filters by authorization systems matching a set of ids|
+|Filter|/?$filter=permissionsCreepIndex/score gt 50|Return all findings with PCI scores greater than 50|
+|OrderBy|/?$orderBy=permissionsCreepIndex/score desc|Sorts findings by permissionsCreepIndex score in descending order|
+|Select|/?$select=createdDateTime|Selects field: createdDateTime|
+|Expand||the identity property is auto-expanded|
 
 ## Relationships
 |Relationship|Type|Description|
