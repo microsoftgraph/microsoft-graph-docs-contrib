@@ -21,18 +21,43 @@ Customers can use custom encryption for secure dataset delivery. Link your Azure
 
 Set up custom encryption by generating keys in AKV or linking an existing AKV. Enable encryption when setting up a new Data Connect application or edit an existing one.
 
+> [!NOTE]
+> Custom Encryption is not available to customers who are still using the PAM consent process or using MDF (Managed Data Flows).
+
 ## Enabling Encryption for your Data Connect Application.
 
-If you have an existing AKV with the correct setup, you can enable encryption during app registration in one flow. [Check the below section on Azure Key Vault](./data-connect-custom-encryption.md#using-azure-key-vault-for-custom-encryption) to ensure you correctly set up your AKV for custom encryption during app registration.
+1. For existing applications: log into your [Azure Portal](www.azure.portal.com). 
+    1. Click on **Microsoft Graph Data Connect** and select your current application. 
+    2. Click **properties** and then toggle on encryption. 
+    3. Drop down and select your Azure Key Vault URI (name of the AKV) or follow  step 3.4 and 3.5 to create a new AKV. Then **Update Properties** to save. 
+    4. Follow step 5 to ensure you AKV has the correct role permissions and populate it with the correct RSA keys.
+    ![Screenshot covers MGDC on app portal](images/portal-MGDC.png)
+    
+    ![Screenshot covers the existing app and how to enable encryption](images/existing-app-encryption.md)
 
-As a prerequisite, we recommend setting up your application from the instructions in our [Getting Started](../includes/data-connect-quickstart-01.md) and using [our simplified onboarding experience.](./onboarding-experience-overview.md)
+2. If you don't have an existing Data Connect Application, follow our [Getting Started](../includes/data-connect-quickstart-01.md) using [the simplified onboarding experience.](./onboarding-experience-overview.md). 
 
-> [!NOTE]
-> Custom Encryption is not available to customers who are still using the PAM consent process. 
+3. Fill out the application details on the **Registration Info** page.
+    1. Under **Publish Type** select **Single Tenant** if you intend to enable encryption as on. 
+    2. Next, **Enable encryption for datasets**.
+    > [!NOTE]
+    > Encryption will apply to ALL the eligible datasets requested in the application. Click on the tool tip next to encryption to learn which datasets are elgible.
+    3. For **Key Vault**, drop down and select the AKV URI (name of the AKV).
+    4. If your AKV doesn't exist, open a new tab and follow the steps in ["Setting up your Azure Key Vault" tab.](./data-connect-custom-encryption.md#using-azure-key-vault-for-custom-encryption). 
+    5. Once you have set up your AKV, go back to your Data connect application tab and look for your AKV in the drop down to select it. You may need to refresh the page for the AKV to populate in the dropdown.
 
-The next steps go over enabling encryption for your existing Data Connect Application and [connecting it with your AKV](./data-connect-custom-encryption.md#using-azure-key-vault-for-custom-encryption).
+    ![Screenshot of the the Azure portal with Azure Key Vault and encryption boxed in](images/app-registration-encryption.png) 
 
-No action is required from the Microsoft 365 admin for this section.
+4. Fill out the rest of the required application details as mentioned in the [Getting Started](../includes/data-connect-quickstart-01.md) and [simplified onboarding experience.](./onboarding-experience-overview.md) and submit it for your M365 admin to review. 
+    
+    > [!NOTE]
+    > Make sure to create or note down your existing service principal (SPN) on notepad, you will need this at a later step!
+
+
+5. Once your M365 Admin has reviewed and approved your app, please follow the steps in ["Using your Azure Key Vault" and "Generating RSA keys with your Azure Key Vault" tab](./data-connect-custom-encryption.md#using-azure-key-vault-for-custom-encryption) to ensure your AKV has the correct role permissions and is populated with RSA keys.
+
+6. Continue to set up your pipeline for data extraction and submit your data request. Encryption will be applied to all the eligible datasets in the application. If you run a pipeline without completing step 5, your requested data will not be encrypted.
+
 
 ## Using Azure Key Vault for Custom Encryption
 
