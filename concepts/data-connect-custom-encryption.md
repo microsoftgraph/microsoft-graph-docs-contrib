@@ -30,7 +30,7 @@ As a prerequisite, we recommend setting up your application from the instruction
 > [!NOTE]
 > Custom Encryption is not available to customers who are still using the PAM consent process. 
 
-The next steps go over enabling encryption for your existing Data Connect Application and [connect it with your AKV](./data-connect-custom-encryption.md#using-azure-key-vault-for-custom-encryption).
+The next steps go over enabling encryption for your existing Data Connect Application and [connecting it with your AKV](./data-connect-custom-encryption.md#using-azure-key-vault-for-custom-encryption).
 
 No action is required from the Microsoft 365 admin for this section.
 
