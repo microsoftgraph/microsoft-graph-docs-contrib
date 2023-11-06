@@ -4,7 +4,7 @@ description: "Represents the identity of a call or meeting organizer in a callRe
 title: "organizer resource type"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "users"
+ms.prod: "cloud-communications"
 ---
 
 # organizer resource type
