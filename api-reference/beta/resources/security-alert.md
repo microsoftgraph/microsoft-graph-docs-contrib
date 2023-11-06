@@ -56,7 +56,7 @@ When detecting a threat, a security provider creates an alert in the system. Mic
 |serviceSource|[microsoft.graph.security.serviceSource](#servicesource-values)|The service or product that created this alert. Possible values are: `unknown`, `microsoftDefenderForEndpoint`, `microsoftDefenderForIdentity`, `microsoftDefenderForCloudApps`, `microsoftDefenderForOffice365`, `microsoft365Defender`, `azureAdIdentityProtection`, `microsoftAppGovernance`, `dataLossPrevention`, `unknownFutureValue`, `microsoftDefenderForCloud`. You must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `microsoftDefenderForCloud`.|
 |severity|[microsoft.graph.security.alertSeverity](#alertseverity-values)|Indicates the possible impact on assets. The higher the severity the bigger the impact. Typically higher severity items require the most immediate attention. Possible values are: `unknown`, `informational`, `low`, `medium`, `high`, `unknownFutureValue`.|
 |status|[microsoft.graph.security.alertStatus](#alertstatus-values)|The status of the alert. Possible values are: `new`, `inProgress`, `resolved`, `unknownFutureValue`.|
-|tenantId|String|The Azure Active Directory tenant the alert was created in.|
+|tenantId|String|The Microsoft Entra tenant the alert was created in.|
 |threatDisplayName|String|The threat associated with this alert.|
 |threatFamilyName|String|Threat family associated with this alert.|
 |title|String|Brief identifying string value describing the alert.|
@@ -125,7 +125,7 @@ When detecting a threat, a security provider creates an alert in the system. Mic
 | microsoftDefenderForCloudApps| Microsoft Defender for Cloud Apps.             |
 | microsoftDefenderForOffice365| Microsoft Defender For Office365.              |
 | microsoft365Defender         | Microsoft 365 Defender.                        |
-| azureAdIdentityProtection    | Azure Active Directory Identity Protection.    |
+| azureAdIdentityProtection    | Microsoft Entra ID Protection.    |
 | microsoftAppGovernance       | Microsoft app governance.                      |
 | dataLossPrevention           | Microsoft Purview Data Loss Prevention.        |
 | unknownFutureValue           | Evolvable enumeration sentinel value. Don't use.|
@@ -166,6 +166,7 @@ When detecting a threat, a security provider creates an alert in the system. Mic
 | microsoftDefenderForKeyVault            | Microsoft Defender for Key Vault.                            |
 | microsoftDefenderForResourceManager     | Microsoft Defender for Resource Manager.                     |
 | microsoftDefenderForApiManagement       | Microsoft Defender for Api Management.                       |
+
 
 ## Relationships
 None.

@@ -2,6 +2,7 @@
 title: "Remove directory role member"
 description: "Remove a member from a directoryRole."
 author: "DougKirschner"
+ms.reviewer: msodsrbac
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -19,14 +20,11 @@ You can use both the object ID and template ID of the **directoryRole** with thi
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | RoleManagement.ReadWrite.Directory    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | RoleManagement.ReadWrite.Directory |
+<!-- { "blockType": "permissions", "name": "directoryrole_delete_member" } -->
+[!INCLUDE [permissions-table](../includes/permissions/directoryrole-delete-member-permissions.md)]
 
 ## HTTP request
 
@@ -49,11 +47,11 @@ DELETE /directoryRoles(roleTemplateId='{roleTemplateId}')/members/{id}/$ref
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
@@ -121,7 +119,7 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-The following is an example of the request. Replace `9f06204d-73c1-4d4c-880a-6edb90606fd8` with the value of your roleTemplateId and `bb165b45-151c-4cf6-9911-cd7188912848` with the **id** value of your user of directory object.
+The following example shows a request. Replace `9f06204d-73c1-4d4c-880a-6edb90606fd8` with the value of your roleTemplateId and `bb165b45-151c-4cf6-9911-cd7188912848` with the **id** value of your user of directory object.
 
 <!-- disabling snippet generation because of an SDK limitation. For more information, see https://github.com/microsoftgraph/msgraph-sdk-dotnet/issues/1041-->
 

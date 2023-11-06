@@ -46,11 +46,11 @@ DELETE /servicePrincipals/{servicePrincipalObjectId}/appManagementPolicies/{appM
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
@@ -106,7 +106,7 @@ DELETE https://graph.microsoft.com/v1.0/applications/3ccc9971-9ae7-45d6-8de8-263
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -169,7 +169,7 @@ DELETE https://graph.microsoft.com/v1.0/servicePrincipals/f284860e-368c-4a1f-889
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

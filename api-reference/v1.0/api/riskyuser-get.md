@@ -17,13 +17,10 @@ Read the properties and relationships of a [riskyUser](../resources/riskyuser.md
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | IdentityRiskyUser.Read.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | IdentityRiskyUser.Read.All |
+<!-- { "blockType": "permissions", "name": "riskyuser_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/riskyuser-get-permissions.md)]
 
 [!INCLUDE [rbac-identity-protection-apis-read](../../beta/includes/rbac-for-apis/rbac-identity-protection-apis-read.md)]
 
@@ -46,7 +43,7 @@ This method supports some of the OData query parameters to help customize the re
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

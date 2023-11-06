@@ -6,13 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
-query_params = RunRequestBuilder.RunRequestBuilderGetQueryParameters(
+query_params = RunItemRequestBuilder.RunItemRequestBuilderGetQueryParameters(
 		select = ["id","failedTasksCount","failedUsersCount","processingStatus","totalTasksCount","totalUnprocessedTasksCount","totalUsersCount"],
 )
 
-request_configuration = RunRequestBuilder.RunRequestBuilderGetRequestConfiguration(
+request_configuration = RunItemRequestBuilder.RunItemRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
 )
 

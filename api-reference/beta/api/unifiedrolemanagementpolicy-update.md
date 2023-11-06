@@ -17,25 +17,17 @@ Update the details of a role management policy [unifiedRoleManagementPolicy](../
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
-<a name='for-pim-for-azure-ad-roles'></a>
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### For PIM for Microsoft Entra roles
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
+<!-- { "blockType": "permissions", "name": "unifiedrolemanagementpolicy_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedrolemanagementpolicy-update-permissions.md)]
 
 ### For PIM for groups
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|RoleManagementPolicy.ReadWrite.AzureADGroup|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|RoleManagementPolicy.ReadWrite.AzureADGroup|
+<!-- { "blockType": "permissions", "name": "unifiedrolemanagementpolicy_update_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedrolemanagementpolicy-update-2-permissions.md)]
 
 ## HTTP request
 
@@ -218,7 +210,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -402,7 +394,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

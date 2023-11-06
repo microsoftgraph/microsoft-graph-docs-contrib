@@ -3,6 +3,114 @@
     {
       "ChangeList": [
         {
+          "Id": "c1808556-a3ee-4258-a706-e1dc6ab234bf",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "endpointType",
+          "ChangeType": "Addition",
+          "Description": "Added the **endpointType** enumeration type.",
+          "Target": "endpointType"
+        },
+        {
+          "Id": "c1808556-a3ee-4258-a706-e1dc6ab234bf",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureCommunicationServicesUserIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureCommunicationServicesUserIdentity](https://docs.microsoft.com/en-us/graph/api/resources/azurecommunicationservicesuseridentity?view=graph-rest-1.0) resource type.",
+          "Target": "azureCommunicationServicesUserIdentity"
+        },
+        {
+          "Id": "c1808556-a3ee-4258-a706-e1dc6ab234bf",
+          "ApiChange": "Resource",
+          "ChangedApiName": "communicationsApplicationIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [communicationsApplicationIdentity](https://docs.microsoft.com/en-us/graph/api/resources/communicationsapplicationidentity?view=graph-rest-1.0) resource type.",
+          "Target": "communicationsApplicationIdentity"
+        },
+        {
+          "Id": "c1808556-a3ee-4258-a706-e1dc6ab234bf",
+          "ApiChange": "Resource",
+          "ChangedApiName": "communicationsApplicationInstanceIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [communicationsApplicationInstanceIdentity](https://docs.microsoft.com/en-us/graph/api/resources/communicationsapplicationinstanceidentity?view=graph-rest-1.0) resource type.",
+          "Target": "communicationsApplicationInstanceIdentity"
+        },
+        {
+          "Id": "c1808556-a3ee-4258-a706-e1dc6ab234bf",
+          "ApiChange": "Resource",
+          "ChangedApiName": "communicationsEncryptedIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [communicationsEncryptedIdentity](https://docs.microsoft.com/en-us/graph/api/resources/communicationsencryptedidentity?view=graph-rest-1.0) resource type.",
+          "Target": "communicationsEncryptedIdentity"
+        },
+        {
+          "Id": "c1808556-a3ee-4258-a706-e1dc6ab234bf",
+          "ApiChange": "Resource",
+          "ChangedApiName": "communicationsGuestIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [communicationsGuestIdentity](https://docs.microsoft.com/en-us/graph/api/resources/communicationsguestidentity?view=graph-rest-1.0) resource type.",
+          "Target": "communicationsGuestIdentity"
+        },
+        {
+          "Id": "c1808556-a3ee-4258-a706-e1dc6ab234bf",
+          "ApiChange": "Resource",
+          "ChangedApiName": "communicationsIdentitySet",
+          "ChangeType": "Addition",
+          "Description": "Added the [communicationsIdentitySet](https://docs.microsoft.com/en-us/graph/api/resources/communicationsidentityset?view=graph-rest-1.0) resource type.",
+          "Target": "communicationsIdentitySet"
+        },
+        {
+          "Id": "c1808556-a3ee-4258-a706-e1dc6ab234bf",
+          "ApiChange": "Resource",
+          "ChangedApiName": "communicationsPhoneIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [communicationsPhoneIdentity](https://docs.microsoft.com/en-us/graph/api/resources/communicationsphoneidentity?view=graph-rest-1.0) resource type.",
+          "Target": "communicationsPhoneIdentity"
+        },
+        {
+          "Id": "c1808556-a3ee-4258-a706-e1dc6ab234bf",
+          "ApiChange": "Resource",
+          "ChangedApiName": "communicationsUserIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [communicationsUserIdentity](https://docs.microsoft.com/en-us/graph/api/resources/communicationsuseridentity?view=graph-rest-1.0) resource type.",
+          "Target": "communicationsUserIdentity"
+        }
+      ],
+      "Id": "c1808556-a3ee-4258-a706-e1dc6ab234bf",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-10-31T00:00:00Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2b4cd7a5-2095-4ca3-80b0-da96df6c7e90",
+          "ApiChange": "Method",
+          "ChangedApiName": "getByUserIdAndRole",
+          "ChangeType": "Addition",
+          "Description": "Added the [getByUserIdAndRole](https://learn.microsoft.com/en-us/graph/api/virtualeventwebinar-getbyuseridandrole?view=graph-rest-beta) function to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-beta&preserve-view=true) resource.",
+          "Target": "virtualEventWebinar"
+        },
+        {
+          "Id": "2b4cd7a5-2095-4ca3-80b0-da96df6c7e90",
+          "ApiChange": "Method",
+          "ChangedApiName": "getByUserRole",
+          "ChangeType": "Addition",
+          "Description": "Added the [getByUserRole](https://learn.microsoft.com/en-us/graph/api/virtualeventwebinar-getbyuserrole?view=graph-rest-beta) function to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventWebinar?view=graph-rest-betaa&preserve-view=true) resource.",
+          "Target": "virtualEventWebinar"
+        }
+      ],
+      "Id": "2b4cd7a5-2095-4ca3-80b0-da96df6c7e90",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-10-23T00:00:00Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "840dd994-b26b-48a2-8d7c-1b52ea86a45c",
           "ApiChange": "Property",
           "ChangedApiName": "preferredDisplayName",

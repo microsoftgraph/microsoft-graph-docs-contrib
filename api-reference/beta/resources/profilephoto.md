@@ -1,10 +1,10 @@
 ---
 title: "profilePhoto resource type"
-description: "Represents a profile photo of a user, group, team, or Outlook contact accessed from Exchange Online or Azure Active Directory (Azure AD)."
+description: "Represents a profile photo of a user, group, team, or Outlook contact accessed from Exchange Online or Microsoft Entra ID."
 ms.localizationpriority: medium
-doc_type: resourcePageType
+author: "kristinmcleod"
 ms.prod: "people"
-author: "kevinbellinger"
+doc_type: resourcePageType
 ---
 
 # profilePhoto resource type
@@ -13,17 +13,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a profile photo of a user, group, team, or Outlook contact accessed from Exchange Online or Azure Active Directory (Azure AD). The data is binary and not encoded in base-64.
+Represents a profile photo of a user, group, team, or Outlook contact accessed from Exchange Online or Microsoft Entra ID. The data is binary and not encoded in base-64.
 
 The supported sizes of HD photos on Exchange Online are as follows: `48x48`, `64x64`, `96x96`, `120x120`, `240x240`,
-`360x360`,`432x432`, `504x504`, and `648x648`. In Azure AD, photos can be any dimension.
+`360x360`,`432x432`, `504x504`, and `648x648`. In Microsoft Entra ID, photos can be any dimension.
 
 ## Methods
 
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
-|[Get profilePhoto](../api/profilephoto-get.md) | [profilePhoto](profilephoto.md) |Get the specified **profilePhoto** or its metadata (**profilePhoto** properties). |
-|[Update profilePhoto](../api/profilephoto-update.md) | [profilePhoto](profilephoto.md)  |Assign a photo to the specified user, group, team or contact. The photo should be in binary. It replaces the existing photo, if any. |
+|Method|Return type|Description|
+|:---|:---|:---|
+|[Get profilePhoto](../api/profilephoto-get.md)|[profilePhoto](../resources/profilephoto.md)|Read the properties and relationships of a profile photo object.|
+|[Update profilePhoto](../api/profilephoto-update.md)|[profilePhoto](../resources/profilephoto.md)|Update the properties of a profile photo object.|
+|[Delete profilePhoto](../api/profilephoto-delete.md)|[profilePhoto](../resources/profilephoto.md)|Delete the properties of a profile photo object.|
 
 > [!NOTE]
 > Managing users' photos using the Microsoft Graph API is currently not supported in Azure AD B2C tenants.
@@ -38,16 +39,14 @@ The supported sizes of HD photos on Exchange Online are as follows: `48x48`, `64
 ## Relationships
 None.
 
-
 ## JSON representation
+The following JSON representation shows the resource type.
 
-Here's a JSON representation of the resource.
-
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "baseType": "microsoft.graph.entity",
+  "optionalProperties": [],
+  "isMediaEntity": true,
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.profilePhoto"
 }-->
@@ -61,8 +60,7 @@ Here's a JSON representation of the resource.
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "profilePhoto resource",
   "keywords": "",
@@ -71,5 +69,3 @@ Here's a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

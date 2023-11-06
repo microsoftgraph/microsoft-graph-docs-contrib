@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Event(
 	subject = "Celebrate Thanksgiving",
@@ -30,16 +30,16 @@ request_body = Event(
 			),
 			type = AttendeeType.Required,
 		),
-	]
+	],
 	single_value_extended_properties = [
 		SingleValueLegacyExtendedProperty(
 			id = "String {66f5a359-4659-4830-9070-00040ec6ac6e} Name Fun",
 			value = "Food",
 		),
-	]
+	],
 )
 
-result = await graph_client.me.events.post(body = request_body)
+result = await graph_client.me.events.post(request_body)
 
 
 ```
