@@ -21,7 +21,7 @@ Inherits from [participantBase](callrecords-participantbase.md).
 
 | Method          | Return Type                                                                                     | Description                                                   |
 |:----------------|:------------------------------------------------------------------------------------------------|:--------------------------------------------------------------|
-| [List participants](../api/callrecords-callrecord-list-participant.md)|[microsoft.graph.callRecords.participant](callrecords-participant.md) collection|Get the list of [participants](../resources/callrecords-participant.md) associated with a [callRecord](../resources/callrecords-callrecord.md).|
+| [List participants](../api/callrecords-callrecord-list-participants.md)|[microsoft.graph.callRecords.participant](callrecords-participant.md) collection|Get the list of [participants](../resources/callrecords-participant.md) associated with a [callRecord](../resources/callrecords-callrecord.md).|
 
 ## Properties
 
