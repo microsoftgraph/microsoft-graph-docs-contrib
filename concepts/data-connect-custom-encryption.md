@@ -25,7 +25,7 @@ Set up custom encryption by generating keys in AKV or linking an existing AKV. E
 
 If you have an existing AKV with the correct setup, you can enable encryption during app registration in one flow. [Check the below section on Azure Key Vault](./data-connect-custom-encryption.md#using-azure-key-vault-for-custom-encryption) to ensure you correctly set up your AKV for custom encryption during app registration.
 
-As a prerequisite, we recommend setting up your application from the instructions from our [Getting Started](../includes/data-connect-quickstart-01.md) and using [our simplified onboarding experience.](./onboarding-experience-overview.md)
+As a prerequisite, we recommend setting up your application from the instructions in our [Getting Started](../includes/data-connect-quickstart-01.md) and using [our simplified onboarding experience.](./onboarding-experience-overview.md)
 
 > [!NOTE]
 > Custom Encryption is not available to customers who are still using the PAM consent process. 
