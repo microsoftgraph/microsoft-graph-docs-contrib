@@ -25,7 +25,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |createdBy|[communicationsIdentitySet](communicationsidentityset.md)|Identity information of who created the virtual event. Inherited from [virtualEvent](../resources/virtualevent.md).|
-|description|[itemBody](../resources//itembody.md)|Description of the virtual event. The possible value of **content** is: `html`.|
+|description|[itemBody](../resources//itembody.md)|Description of the virtual event.|
 |displayName|String|Display name of the virtual event|
 |endDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|End time of the virtual event.|
 |id|String|Unique identifier of the virtual event. Inherited from [entity](../resources/entity.md).|
