@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [federatedTokenValidationPolicy](../resources/federatedTokenValidationPolicy.md) object.
+Read the properties and relationships of a [federatedTokenValidationPolicy](../resources/federatedtokenvalidationpolicy.md) object.
 
 ## Permissions
 
@@ -55,7 +55,7 @@ GET /policies/federatedTokenValidationPolicy/
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [federatedTokenValidationPolicy](../resources/federatedTokenValidationPolicy.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [federatedTokenValidationPolicy](../resources/federatedtokenvalidationpolicy.md) object in the response body.
 
 [!Note]:
 > In case a GET is executed on the policy before the policy is created using a POST this method returns a `404 Not Found` response code with a message `Resource does not exist or one of its queried reference-property objects are not present`.
