@@ -49,10 +49,10 @@ No action is required from the Microsoft 365 admin for this section.
     ![Screenshot of how to create Azure Key Vault](images/create-akv.png)
 
 3. Click "Azure role-based access control (recommended)" underneath **Permission model** for the later steps to apply. 
-    ![Screenshot explain permission models during AKV registration](images/akv-permission-model.png)
+    ![Screenshot explains permission models during AKV registration](images/akv-permission-model.png)
 
 4. Enable public access to allow Data Connect to access any public keys generated and stored. Data Connect is authorized only to access select public keys. 
-    ![Screenshot explain permission models during AKV registration](images/akv-networking.png)
+    ![Screenshot explains networking for AKV](images/akv-networking.png)
 
 5. Follow through the steps and select **Review + Create** when done.
 
