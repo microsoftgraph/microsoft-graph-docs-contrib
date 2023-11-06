@@ -184,7 +184,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 4: List all custom roles in an AWS authorization system.
+### Example 4: List all custom policies in an AWS authorization system.
 
 #### Request
 
