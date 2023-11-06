@@ -29,7 +29,7 @@ Set up custom encryption by generating keys in AKV or linking an existing AKV. E
 1. For existing applications: log into your [Azure Portal](www.azure.portal.com). 
     1. Click on **Microsoft Graph Data Connect** and select your current application. 
     2. Click **properties** and then toggle on encryption. 
-    3. Drop down and select your Azure Key Vault URI (name of the AKV) or follow  step 3.4 and 3.5 to create a new AKV. Then **Update Properties** to save. 
+    3. Drop down to select your Azure Key Vault URI (name of the AKV) or follow steps 3.4 and 3.5 to create a new AKV. Then **Update Properties** to save. 
     4. Follow step 5 to ensure you AKV has the correct role permissions and populate it with the correct RSA keys.
     ![Screenshot covers MGDC on app portal](images/portal-MGDC.png)
     
