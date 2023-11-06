@@ -2,6 +2,7 @@
 title: "Delete hardwareOathAuthenticationMethodConfiguration"
 description: "Delete a hardwareOathAuthenticationMethodConfiguration object."
 author: "luc-msft"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

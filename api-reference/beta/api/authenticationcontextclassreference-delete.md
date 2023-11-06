@@ -2,6 +2,7 @@
 title: "Delete authenticationContextClassReference"
 description: "Delete an authenticationContextClassReference object."
 author: "swetha-rai"
+ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

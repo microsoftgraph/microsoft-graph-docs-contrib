@@ -3,6 +3,7 @@ title: "Get unifiedRoleDefinition"
 description: "Read the properties and relationships of an unifiedRoleDefinition object."
 ms.localizationpriority: medium
 author: "DougKirschner"
+ms.reviewer: msodsrbac
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---

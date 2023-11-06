@@ -2,6 +2,7 @@
 title: "Get temporaryAccessPassAuthenticationMethod"
 description: "Retrieve a user's temporaryAccessPassAuthenticationMethod object."
 author: "tilarso"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
