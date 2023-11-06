@@ -17,13 +17,10 @@ Update the properties of a [bookingAppointment](../resources/bookingappointment.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Delegated (personal Microsoft account) | Not supported.   |
-|Application | BookingsAppointment.ReadWrite.All, Bookings.Read.All  |
+<!-- { "blockType": "permissions", "name": "bookingappointment_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/bookingappointment-update-permissions.md)]
 
 > [!NOTE]
 > If you create a custom app using application permissions, you must follow the [Business rules validation](/graph/bookingsbusiness-business-rules).

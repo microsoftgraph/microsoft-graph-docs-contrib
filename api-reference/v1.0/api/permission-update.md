@@ -19,13 +19,10 @@ Only the **roles** property can be modified this way.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    |
-|Application | Files.ReadWrite.All, Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "permission_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/permission-update-permissions.md)]
 
 ## HTTP request
 
@@ -56,8 +53,8 @@ The following properties on these permission types can be modified.
 
 | Permission Type        | Property | Type              | Description                   |
 |:-----------------------|:---------|:------------------|:------------------------------|
-| User                   | roles    | String collection | An array of permission types. |
-| Anonymous Sharing Link | expirationDateTime | DateTimeOffset | A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset for the expiration time of the permission. |
+<!-- { "blockType": "permissions", "name": "permission_update_3" } -->
+[!INCLUDE [permissions-table](../includes/permissions/permission-update-3-permissions.md)]
 
 ### Remarks
 Unsupported permission modifications include the following:

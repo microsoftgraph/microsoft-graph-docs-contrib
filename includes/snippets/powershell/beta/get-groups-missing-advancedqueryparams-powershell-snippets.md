@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Beta.Groups
 
-Get-MgBetaGroup -Filter "createdDateTime ge 2021-11-01" -CountVariable CountVar -ConsistencyLevel eventual 
+Get-MgBetaGroup -Filter "createdDateTime ge 2021-11-01" -CountVariable CountVar  -ConsistencyLevel eventual 
 
 
 ```
