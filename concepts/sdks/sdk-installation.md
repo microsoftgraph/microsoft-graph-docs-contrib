@@ -7,7 +7,7 @@ author: MichaelMainer
 
 # Install a Microsoft Graph SDK
 
-Microsoft Graph SDKs are available to be included in your projects via GitHub and popular platform package managers. This article describes how you can install a Microsoft Graph SDK into your project.
+Microsoft Graph SDKs can be included in your projects via GitHub and popular platform package managers. This article describes how to install a Microsoft Graph SDK into your project.
 
 SDKs are available in the following languages:
 
@@ -17,7 +17,7 @@ SDKs are available in the following languages:
 - [JavaScript](#install-the-microsoft-graph-javascript-sdk)
 - [PHP](#install-the-microsoft-graph-php-sdk)
 - [PowerShell](#install-the-microsoft-graph-powershell-sdk)
-- [Python (preview)](#install-the-microsoft-graph-python-sdk-preview)
+- [Python](#install-the-microsoft-graph-python-sdk)
 
 ## Install the Microsoft Graph .NET SDK
 
@@ -63,7 +63,7 @@ The Microsoft Graph Java SDK is included in the following packages:
 - [microsoft-graph-core](https://github.com/microsoftgraph/msgraph-sdk-java-core): The core library for making calls to Microsoft Graph.
 - [microsoft-graph-auth](https://github.com/microsoftgraph/msgraph-sdk-java-auth): Provides an authentication scenario-based wrapper of Microsoft Authentication Library (MSAL) for use with the Microsoft Graph SDK.
 
-To install the Microsoft Graph Java SDK, do one of the following:
+To install the Microsoft Graph Java SDK, you can use one of these two options:
 
 - Use Gradle to install the Microsoft Graph Java SDK. Add the repository and a compile dependency for microsoft-graph to your project's build.gradle:
 
@@ -143,11 +143,9 @@ If you're upgrading from the preview modules, run `Install-Module` with `AllowCl
 Install-Module Microsoft.Graph -AllowClobber -Force
 ```
 
-## Install the Microsoft Graph Python SDK (preview)
+## Install the Microsoft Graph Python SDK
 
-[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
-
-The [Microsoft Graph Python SDK (preview)](https://github.com/microsoftgraph/msgraph-sdk-python) is available on [PyPI](https://pypi.org/).
+The [Microsoft Graph Python SDK](https://github.com/microsoftgraph/msgraph-sdk-python) is available on [PyPI](https://pypi.org/).
 
 ```py
 pip install msgraph-sdk
@@ -155,6 +153,6 @@ pip install msgraph-sdk
 
 ## See also
 
-- For more details about the features and capabilities of the SDK, see the SDK [design requirements documentation](https://github.com/microsoftgraph/msgraph-sdk-design).
+- For more information, see the SDK [design requirements documentation](https://github.com/microsoftgraph/msgraph-sdk-design).
 - For a list of samples for Microsoft Graph, see the [Microsoft Graph resources page](https://developer.microsoft.com/graph/gallery/?filterBy=Samples).
 - For step-by-step training for creating a Microsoft Graph app, see the [Microsoft Graph tutorials](/graph/tutorials).

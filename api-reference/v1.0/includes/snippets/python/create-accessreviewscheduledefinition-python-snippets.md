@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AccessReviewScheduleDefinition(
 	display_name = "Test create",
@@ -22,7 +22,7 @@ request_body = AccessReviewScheduleDefinition(
 			query = "/users/398164b1-5196-49dd-ada2-364b49f99b27",
 			query_type = "MicrosoftGraph",
 		),
-	]
+	],
 	settings = AccessReviewScheduleSettings(
 		mail_notifications_enabled = True,
 		reminder_notifications_enabled = True,
@@ -44,7 +44,7 @@ request_body = AccessReviewScheduleDefinition(
 	),
 )
 
-result = await graph_client.identity_governance.acce_reviews.definitions.post(body = request_body)
+result = await graph_client.identity_governance.access_reviews.definitions.post(request_body)
 
 
 ```

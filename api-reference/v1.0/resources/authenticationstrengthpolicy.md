@@ -2,6 +2,7 @@
 title: "authenticationStrengthPolicy resource type"
 description: "A collection of settings that define specific combinations of authentication methods and metadata."
 author: "InbarckMS"
+ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

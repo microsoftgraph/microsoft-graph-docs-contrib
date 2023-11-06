@@ -25,6 +25,7 @@ Represents an entity that acts as a container for administrator functionality.
 |:---|:---|:---|
 | edge | [edge](edge.md) | A container for Microsoft Edge resources. Read-only. |
 | microsoft365Apps |[microsoft.graph.adminMicrosoft365Apps](../resources/adminmicrosoft365apps.md)|A container for Microsoft 365 Apps admin functionality.|
+| people | [peopleAdminSettings](../resources/peopleadminsettings.md) | Represents a setting to control people-related admin settings in the tenant. |
 | reportSettings |[microsoft.graph.adminReportSettings](../resources/adminreportsettings.md)|A container for administrative resources to manage reports.|
 | serviceAnnouncement | [serviceAnnouncement](serviceannouncement.md) | A container for service communications resources. Read-only. |
 | sharepointSettings | [sharepointSettings](../resources/sharepointSettings.md) | A container for administrative resources to manage tenant-level settings for SharePoint and OneDrive. |

@@ -23,7 +23,7 @@ The rest of this article is based on the following example scenario:
 
 This article describes programmatically carrying out the following tasks with a shared or delegated calendar:
 
-- [Get calendar information about share recipients, delegates, and allowed permissions, and update individual permissions](#get-calendar-information-about-sharees-and-delegates-and-update-individual-permissions).
+- [Get calendar information about share recipients, delegates, and allowed permissions, and update individual permissions](#get-calendar-information-about-share-recipients-and-delegates-and-update-individual-permissions)
 - [Get the properties that describe the sharing or delegation of the calendar](#get-properties-of-a-shared-or-delegated-calendar).
 - [Get or set mailbox setting to receive meeting requests and responses for a delegated calendar](#get-or-set-mailbox-setting-to-receive-meeting-requests-and-responses).
 - [Delete a share recipient or delegate of a calendar](#delete-a-sharee-or-delegate-of-a-calendar).
@@ -41,7 +41,7 @@ Apps can also do the following using API that is generally available:
 In this section:
 
 - [Calendar owner: Get sharing or delegation information and permissions](#calendar-owner-get-sharing-or-delegation-information-and-permissions)
-- [Calendar owner: Update permissions for an existing share recipient or delegate on a calendar](#calendar-owner-update-permissions-for-an-existing-sharee-or-delegate-on-a-calendar)
+- [Calendar owner: Update permissions for an existing share recipient or delegate on a calendar](#calendar-owner-update-permissions-for-an-existing-share-recipient-or-delegate-on-a-calendar)
 
 Each calendar is associated with a collection of [calendarPermission](/graph/api/resources/calendarpermission) objects, each of which describes a share recipient or delegate and the associated permission that the calendar owner has set up. The [calendarRoleType](/graph/api/resources/calendarpermission#calendarroletype-values) enumeration defines the range of permissions that Microsoft Graph supports:
 
@@ -84,7 +84,7 @@ This example shows with the consent of Alex or administrator, how to get the **c
 
 **Microsoft Graph permissions**
 
-Use the least privileged delegated or application permission, `Calendars.Read`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
+Use the least privileged delegated or application permission, `Calendars.Read`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -192,7 +192,7 @@ The example in this section updates the **role** property, changing the permissi
 
 **Microsoft Graph permissions**
 
-Use the least privileged delegated or application permission, `Calendars.ReadWrite`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
+Use the least privileged delegated or application permission, `Calendars.ReadWrite`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -279,7 +279,7 @@ Content-type: application/json
 In this section:
 
 - [Calendar owner: Get properties of a shared or delegated calendar](#calendar-owner-get-properties-of-a-shared-or-delegated-calendar)
-- [share recipient or delegate: Get properties of shared or delegated calendar](#sharee-or-delegate-get-properties-of-shared-or-delegated-calendar)
+- [share recipient or delegate: Get properties of shared or delegated calendar](#share-recipient-or-delegate-get-properties-of-shared-or-delegated-calendar)
 
 Recalling in this example, Alex has delegated his primary calendar and given the delegate, Megan Bowen, the permission to view calendar items that are marked private.
 This section shows the properties of the delegated calendar, first from the perspective of and with the consent of the owner, Alex, and then from the perspective of and with the consent of the delegate, Megan. Consent from the administrator also works for each case.
@@ -298,7 +298,7 @@ Note the following properties on Alex' behalf:
 
 **Microsoft Graph permissions**
 
-Use the least privileged delegated or application permission, `Calendars.Read`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
+Use the least privileged delegated or application permission, `Calendars.Read`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -399,7 +399,7 @@ Note the following properties:
 
 **Microsoft Graph permissions**
 
-Use the least privileged delegated permission, `Calendars.Read.Shared`, or application permission, `Calendars.Read`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
+Use the least privileged delegated permission, `Calendars.Read.Shared`, or application permission, `Calendars.Read`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -510,7 +510,7 @@ The example in this section gets the **mailboxSettings** of a calendar owner who
 
 **Microsoft Graph permissions**
 
-Use the least privileged delegated or application permission, `MailboxSettings.Read`, as appropriate, for this operation. For more information about mailbox permissions, see [mail permissions](permissions-reference.md#mail-permissions).
+Use the least privileged delegated or application permission, `MailboxSettings.Read`, as appropriate, for this operation. For more information about mailbox permissions, see [mail permissions](permissions-reference.md).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -614,7 +614,7 @@ The example in this section updates the **delegateMeetingMessageDeliveryOptions*
 
 **Microsoft Graph permissions**
 
-Use the least privileged delegated or application permission, `MailboxSettings.ReadWrite`, as appropriate, for this operation. For more information about mailbox permissions, see [mail permissions](permissions-reference.md#mail-permissions).
+Use the least privileged delegated or application permission, `MailboxSettings.ReadWrite`, as appropriate, for this operation. For more information about mailbox permissions, see [mail permissions](permissions-reference.md).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -688,7 +688,7 @@ In the example below, Alex deletes Megan as a sharee of the "Kids parties" calen
 
 **Microsoft Graph permissions**
 
-Use the least privileged delegated or application permission, `Calendars.ReadWrite`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
+Use the least privileged delegated or application permission, `Calendars.ReadWrite`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md).
 
 # [HTTP](#tab/http)
 <!-- {
