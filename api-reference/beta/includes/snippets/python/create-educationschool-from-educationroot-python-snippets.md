@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = EducationSchool(
 	display_name = "Fabrikam High School",
@@ -29,7 +29,7 @@ request_body = EducationSchool(
 	phone = "+1 (253) 555-0102",
 )
 
-result = await graph_client.education.schools.post(body = request_body)
+result = await graph_client.education.schools.post(request_body)
 
 
 ```

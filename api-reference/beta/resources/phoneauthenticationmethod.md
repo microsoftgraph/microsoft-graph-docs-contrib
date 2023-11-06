@@ -3,6 +3,7 @@ title: "phoneAuthenticationMethod resource type"
 description: "A representation of a phone registered to a user."
 ms.localizationpriority: medium
 author: "luc-msft"
+ms.reviewer: intelligentaccesspm
 ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---

@@ -1,37 +1,33 @@
 ---
-title: "Add or delete custom attributes on a profile card (preview)"
-description: "Learn how to use the profile card API in Microsoft Graph to make additional attributes visible and add or delete custom attributes on a profile card."
-author: "PollyNincevic"
+title: "Add or remove custom attributes on a profile card using the profile card API"
+description: "Learn how to use the profile card API in Microsoft Graph to make additional attributes visible and add or remove custom attributes on a profile card."
+author: "rwaithera"
 ms.localizationpriority: high
 ms.prod: "people"
 ms.custom: scenarios:getting-started
 ---
 
+# Add or remove custom attributes on a profile card using the profile card API
 
-# Add or delete custom attributes on a profile card using the profile card API (preview)
+The [profile card](https://support.microsoft.com/en-au/office/profile-cards-in-microsoft-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501) in Microsoft 365 shows information about a user in an organization. The information shown on the profile card is stored and maintained by the organization, for example, **Job title** or **Office location**.
 
-On the profile card in Microsoft 365, you can find information about users that is stored and maintained by your organization; for example, **Job title** or **Office location**.
-
-You can use the [profileCardProperty](/graph/api/resources/profilecardproperty) resource to show additional properties from Azure AD on profile cards for an organization.
-
-> [!NOTE]
-> This feature is in preview only and is not supported for use in production applications.
-
-You can do this by:
+Organizations can use the [profileCardProperty](/graph/api/resources/profilecardproperty) resource to show additional properties from [Microsoft Entra ID](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id) on the profile card for a user in an organization by:
 
 * Making additional attributes visible
 * Adding custom attributes
 
 Additional properties display in the **Contact** section of the profile card in Microsoft 365.
 
-You can also [delete](/graph/api/profilecardproperty-delete?view=graph-rest-beta&preserve-view=true) custom attributes from profile cards of the organization.
+You can also [remove](/graph/api/profilecardproperty-delete) custom attributes from profile cards of the organization.
+
+[!INCLUDE [profilecardproperty-add-remove-note](../includes/profilecardproperty-add-remove-note.md)]
 
 > [!NOTE]
-> Operations on the **profileCardProperty** resource that use delegated permissions require the signed-in user to have a tenant administrator or global administrator role.
+> Operations on the **profileCardProperty** resource that use delegated permissions require the signed-in user to have a Tenant Administrator or Global Administrator role. 
 
-## Make additional attributes visible
+## Make additional attributes visible on the profile card
 
-You can make the following attributes from Azure Active Directory (Azure AD) visible on users' profile cards. These attributes are *not case-sensitive*:
+You can make the following attributes from Microsoft Entra ID visible on the users' profile cards. These attributes are *not case-sensitive*:
 
 * `UserPrincipalName`
 * `Fax`
@@ -40,9 +36,9 @@ You can make the following attributes from Azure Active Directory (Azure AD) vis
 * `StateOrProvince`
 * `Alias`
 
-The following table shows how the Azure AD attributes correspond with properties of the Microsoft Graph [user](/graph/api/resources/user) entity.
+The following table shows how the Microsoft Entra ID attributes correspond with properties of the Microsoft Graph [user](/graph/api/resources/user) entity.
 
-| Azure AD attribute | User entity property |
+| Microsoft Entra ID attribute | User entity property |
 | ------------------ | -------------------- |
 | UserPrincipalName | userPrincipalName |
 | Fax | faxNumber |
@@ -51,10 +47,12 @@ The following table shows how the Azure AD attributes correspond with properties
 | StateOrProvince | state |
 | Alias | mailNickname |
 
-You can add any of these attributes to the profile card by configuring your [people admin settings](/graph/api/resources/peopleadminsettings) and adding the attribute as the **directoryPropertyName** property of a **profileCardProperty** in Microsoft Graph. When you make additional attributes visible, you must use the property names for `en-us`. You don't have to add localized values. The additional properties will automatically be shown in the language settings that the user has specified for Microsoft 365.
+You can add any of these attributes to the profile card by configuring your [people admin settings](/graph/api/resources/peopleadminsettings) and adding the attribute as the **directoryPropertyName** property of a **profileCardProperty** in Microsoft Graph. When you make additional attributes visible, you must use the property names for `en-us`. You don't have to add localized values. The additional properties are automatically shown in the language settings that the user has specified for Microsoft 365.
+
+> **Note:** User entity property values contain user information stored and managed by the organization.
 
 > [!IMPORTANT]
-> When adding an attribute to profile card, it takes up to 24 hours for the addition to be displayed.
+> When adding an attribute to a profile card, it takes up to 24 hours for the addition to be displayed.
 
 ## Configure profile card properties using the Microsoft Graph REST API
 
@@ -63,7 +61,7 @@ You can add any of these attributes to the profile card by configuring your [peo
 The following example displays the `Alias` attribute on the profile card.
 
 ``` http
-POST https://graph.microsoft.com/beta/admin/people/profileCardProperties
+POST https://graph.microsoft.com/v1.0/admin/people/profileCardProperties
 Content-Type: application/json
 
 {
@@ -71,9 +69,9 @@ Content-Type: application/json
 }
 ```
 
-> **Note:** The `/organization/{organizationId}/settings` path is deprecated. Going forward, use the `/admin/people` path.
+> **Note:** The `/organization/{organizationId}/settings` path is deprecated in the beta experience. Going forward, use the `/admin/people` path.
 
-If successful, the response returns a `201 OK` response code and a **profileCardProperty** object in the response body. The value for the `Alias` attribute would be displayed on a user's profile card.
+If successful, the response returns a `201 OK` response code and a **profileCardProperty** object in the response body. The value for the `Alias` attribute is displayed on a user's profile card.
 
 ``` http
 HTTP/1.1 201 OK
@@ -85,17 +83,17 @@ Content-type: application/json
 }
 ```
 
-## Add a custom attribute
+## Add a custom attribute to the profile card
 
-You can add any of the 15 Azure AD [custom extension attributes](/graph/api/resources/onpremisesextensionattributes) to users' profile cards by configuring your organization settings and [adding the corresponding value as a profileCardProperty](/graph/api/peopleadminsettings-post-profilecardproperties) in Microsoft Graph. You can add one **profileCardProperty** resource at a time.
+You can add any of the 15 Microsoft Entra ID [custom extension attributes](/graph/api/resources/onpremisesextensionattributes) to users' profile cards by configuring your organization settings and [adding the corresponding value as a profileCardProperty](/graph/api/peopleadminsettings-post-profilecardproperties) in Microsoft Graph. You can add one **profileCardProperty** resource at a time.
 
 It takes up to 24 hours for the changes to show on profile cards.
 
-Custom properties are not searchable and can't be used to search for people across Microsoft apps and services.
+Custom properties aren't searchable and can't be used to search for people across Microsoft apps and services.
 
-The following table shows how the Azure AD custom extension attribute names correspond to the supported values for the **directoryPropertyName** property of the [profileCardProperty](/graph/api/resources/profilecardproperty) resource. These Azure AD custom extension attribute names are *not case-sensitive*:
+The following table shows how the Microsoft Entra ID custom extension attribute names correspond to the supported values for the **directoryPropertyName** property of the [profileCardProperty](/graph/api/resources/profilecardproperty) resource. These Microsoft Entra ID custom extension attribute names are *not case-sensitive*:
 
-| Azure AD custom extension attribute | Value to specify as directoryPropertyName |
+| Microsoft Entra ID custom extension attribute | Value to specify as directoryPropertyName |
 | ----------------------------------- | ----------------------------------------- |
 | extensionAttribute1 | customAttribute1 |
 | extensionAttribute2 | customAttribute2 |
@@ -113,14 +111,17 @@ The following table shows how the Azure AD custom extension attribute names corr
 | extensionAttribute14 | customAttribute14 |
 | extensionAttribute15 | customAttribute15 |
 
+> [!IMPORTANT]
+> Custom profile card attributes are added for all users in the organization, requiring necessary precautions to prevent accidental exposure of sensitive data.
+
 ### Example
 
-The following example adds the first Azure AD custom extension attribute to the profile card, using the display name **Cost center**. For users that have set their language settings to German, the display name will be **Kostenstelle**.
+The following example adds the first Microsoft Entra ID custom extension attribute to the profile card, using the display name **Cost center**. For users that have set their language settings to German, the display name is **Kostenstelle**.
 
 #### Request
 
 ``` http
-POST https://graph.microsoft.com/beta/admin/people/profileCardProperties
+POST https://graph.microsoft.com/v1.0/admin/people/profileCardProperties
 Content-Type: application/json
 
 {
@@ -139,11 +140,11 @@ Content-Type: application/json
 }
 ```
 
-> **Note:** The `/organization/{organizationId}/settings` path is deprecated. Going forward, use the `/admin/people` path.
+> **Note:** The `/organization/{organizationId}/settings` path is deprecated in the beta experience. Going forward, use the `/admin/people` path.
 
-If a language is not supported, the property name will be shown with the default value.
+If a language isn't supported, the property name is shown with the default value.
 
-If successful, the response returns a `201 OK` response code and a **profileCardProperty** object in the response body. In this example you can assume that the profile card displays **Kostenstelle** for all users that have set their language settings to German on the profile card. For all other users, **Cost center** will be displayed on the profile card.
+If successful, the response returns a `201 OK` response code and a **profileCardProperty** object in the response body. In this example, you can assume that the profile card displays **Kostenstelle** for all users that have set their language settings to German on the profile card. For all other users, **Cost center** is displayed on the profile card.
 
 #### Response
 
@@ -167,21 +168,21 @@ Content-type: application/json
 }
 ```
 
-## Delete a custom attribute
+## Remove a custom attribute from the profile card
 
-Following the same mapping between Azure AD custom extension attributes and profile card custom attributes (such as `customAttribute1`) as described in the preceding section [Adding a custom attribute](/graph/add-properties-profilecard#adding-a-custom-attribute), you can delete a custom attribute using the [delete](/graph/api/profilecardproperty-delete?view=graph-rest-beta&preserve-view=true) operation, as shown in the following example.
+Following the same mapping between Microsoft Entra ID custom extension attributes and profile card custom attributes (such as `customAttribute1`) as described in the preceding section [Adding a custom attribute](/graph/add-properties-profilecard#adding-a-custom-attribute), you can remove a custom attribute using the [delete](/graph/api/profilecardproperty-delete) operation, as shown in the following example.
 
 ### Example
 
-The following example deletes the custom attribute `customAttribute5` from the organization settings. A successful deletion returns `HTTP 204`.
+The following example removes the custom attribute `customAttribute5` from the organization settings. If successful, this method returns a `204 No Content` response code.
 
 #### Request
 
 ``` http
-DELETE https://graph.microsoft.com/beta/admin/people/profileCardProperties/customAttribute5
+DELETE https://graph.microsoft.com/v1.0/admin/people/profileCardProperties/customAttribute5
 ```
 
-> **Note:** The `/organization/{organizationId}/settings` path is deprecated. Going forward, use the `/admin/people` path.
+> **Note:** The `/organization/{organizationId}/settings` path is deprecated in the beta experience. Going forward, use the `/admin/people` path.
 
 #### Response
 
@@ -199,7 +200,7 @@ You can use the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/inst
 - **.NET Framework** - Install [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework) or a higher version.
 
 > [!NOTE]
-> Because profile card properties commands are only available in beta, switch to the beta profile before running the command.
+> The PowerShell commands for the profile card properties are only available in beta. Switch to the beta profile before you run the following commands.
 > ```powershell
 >    Select-MgProfile beta
 > ```
@@ -212,27 +213,25 @@ To get profile card properties configuration for an organization, use the follow
    Get-MgBetaAdminPeopleProfileCardProperty
 ```
 
-To get a profile card property configuration in an organization, use the following command.
+To get a specific profile card property configuration in an organization, use the following command.
 
 ```powershell
    Get-MgBetaAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId
 ```
 
 > [!NOTE]
-> The get commands require `PeopleSettings.Read.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
+> The get commands require the `PeopleSettings.Read.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
 >
 > ```powershell
 >    Connect-MgGraph -Scopes "PeopleSettings.Read.All"
 > ```
 
-> **Note:** The `Get-MgBetaOrganizationSettingProfileCardProperty` command is deprecated. Going forward, use the `Get-MgBetaAdminPeopleProfileCardProperty` command.
+### Add profile card properties in your organization
 
-### Create profile card properties in your organization
-
-You can use the Microsoft Graph PowerShell module to make both additional AAD profile card  properties, and the 15 customizable AAD profile card properties available in your organization.
+You can use the Microsoft Graph PowerShell module to make both additional Microsoft Entra ID profile card properties, and the 15 customizable Microsoft Entra ID profile card properties available in your organization.
 
 > [!NOTE]
-> The create command requires `PeopleSettings.ReadWrite.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
+> The new command requires the `PeopleSettings.ReadWrite.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
 >
 > ```powershell
 >    Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
@@ -256,31 +255,30 @@ $params = @{
 	)
 }
 
-New-MgBetaAdminPeopleProfileCardProperty -BodyParameter $params
+New-MgAdminPeopleProfileCardProperty -BodyParameter $params
 ```
-
-> **Note:** The `New-MgBetaOrganizationSettingProfileCardProperty` command is deprecated. Going forward, use the `New-MgBetaAdminPeopleProfileCardProperty` command.
 
 ### Update profile card properties in your organization
 
 You can use the Microsoft Graph PowerShell module to update profile card properties available in your organization.
 
 > [!NOTE]
-> The update command requires `PeopleSettings.ReadWrite.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
+> The update command requires the `PeopleSettings.ReadWrite.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
 >
 > ```powershell
 >    Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
 > ```
 
-Use the following command, where you replace `$profileCardPropertyId` with the id of the property to be updated.
+Use the following command, where you replace `$profileCardPropertyId` with the ID of the property to be updated.
 
 ```powershell
 $params = @{
 	annotations = @(
 		@{
+      displayName = "Cost Center"
 			localizations = @(
 				@{
-					languageTag = "no-NB"
+					languageTag = "nb-NO"
 					displayName = "Kostnads Senter"
 				}
 			)
@@ -288,27 +286,25 @@ $params = @{
 	)
 }
 
-Update-MgBetaAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId -BodyParameter $params
+Update-MgAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId -BodyParameter $params
 ```
-> **Note:** The `Update-MgBetaOrganizationSettingProfileCardProperty` command is deprecated. Going forward, use the `Update-MgBetaAdminPeopleProfileCardProperty` command.
 
-### Delete profile card properties in your organization
+### Remove profile card properties in your organization
 
 You can use the Microsoft Graph PowerShell module to remove profile card properties from your organization.
 
 > [!NOTE]
-> The delete command requires `PeopleSettings.ReadWrite.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
+> The remove command requires the `PeopleSettings.ReadWrite.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
 >
 > ```powershell
 >    Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
 > ```
 
-Use the following command, where you replace `$profileCardPropertyId` with the id of the property to be deleted.
+Use the following command, where you replace `$profileCardPropertyId` with the ID of the property to be removed.
 
 ```powershell
- Remove-MgBetaAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId
+ Remove-MgAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId
 ```
-> **Note:** The `Remove-MgBetaOrganizationSettingProfileCardProperty` command is deprecated. Going forward, use the `Remove-MgBetaAdminPeopleProfileCardProperty` command.
 
 ## See also
 
@@ -316,3 +312,4 @@ Use the following command, where you replace `$profileCardPropertyId` with the i
 - [User resource type](/graph/api/resources/user)
 - [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)
 - [Get profileCardProperty](/graph/api/profilecardproperty-get)
+- [Azure Data Subject Requests for the GDPR and CCPA](/compliance/regulatory/gdpr-dsr-azure)

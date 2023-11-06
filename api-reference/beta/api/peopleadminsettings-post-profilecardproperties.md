@@ -15,19 +15,18 @@ Namespace: microsoft.graph
 
 Create a new [profileCardProperty](../resources/profilecardproperty.md) for an organization. The new property is identified by its **directoryPropertyName** property.
 
-For more information about how to add properties to the profile card for an organization, see [Add or delete custom attributes on a profile card using the profile card API](/graph/add-properties-profilecard).
+For more information about how to add properties to the profile card for an organization, see [Add or remove custom attributes on a profile card using the profile card API](/graph/add-properties-profilecard).
+
+[!INCLUDE [profilecardproperty-add-remove-note](../../../includes/profilecardproperty-add-remove-note.md)]
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | PeopleSettings.ReadWrite.All                |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Not supported.                              |
+<!-- { "blockType": "permissions", "name": "peopleadminsettings_post_profilecardproperties" } -->
+[!INCLUDE [permissions-table](../includes/permissions/peopleadminsettings-post-profilecardproperties-permissions.md)]
 
 >**Note:** Using delegated permissions for this operation requires the signed-in user to have a Tenant Administrator or Global Administrator role.
 
@@ -54,12 +53,12 @@ POST /admin/people/profileCardProperties
 
 In the request body, supply a JSON representation of a [profileCardProperty](../resources/profilecardproperty.md) object.
 
-You can specify the following properties when you create a **profileCardProperty**.
+You can specify the following properties when you create a **profileCardProperty** for an organization.
 
 |Property|Type|Description|
 |:---|:---|:---|
 |annotations|[profileCardAnnotation](../resources/profilecardannotation.md) collection|Any alternative or localized labels that an administrator has chosen to specify.|
-|directoryPropertyName|String|The name of the directory property which is intended to surface on the profile card.|
+|directoryPropertyName|String|The name of the directory property that is intended to surface on the profile card.|
 
 ## Response
 
@@ -69,9 +68,8 @@ If successful, this method returns a `201 Created` response code and a new [prof
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_profilecardproperty"
@@ -96,43 +94,9 @@ Content-type: application/json; charset=utf-8
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-profilecardproperty-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-profilecardproperty-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-profilecardproperty-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-profilecardproperty-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-profilecardproperty-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-profilecardproperty-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-profilecardproperty-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/create-profilecardproperty-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

@@ -12,32 +12,26 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the details of all role management policy assignments made in PIM for Azure AD roles and PIM for groups.
+Get the details of all role management policy assignments made in PIM for Microsoft Entra roles and PIM for groups.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-### For PIM for Azure AD roles
+### For PIM for Microsoft Entra roles
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|RoleManagementPolicy.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|RoleManagementPolicy.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
+<!-- { "blockType": "permissions", "name": "policyroot_list_rolemanagementpolicyassignments" } -->
+[!INCLUDE [permissions-table](../includes/permissions/policyroot-list-rolemanagementpolicyassignments-permissions.md)]
 
 ### For PIM for groups
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|RoleManagementPolicy.Read.AzureADGroup, RoleManagementPolicy.ReadWrite.AzureADGroup|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|RoleManagementPolicy.Read.AzureADGroup, RoleManagementPolicy.ReadWrite.AzureADGroup|
+<!-- { "blockType": "permissions", "name": "policyroot_list_rolemanagementpolicyassignments_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/policyroot-list-rolemanagementpolicyassignments-2-permissions.md)]
 
 ## HTTP request
 
-To retrieve details of all role management policy assignments for Azure AD roles scoped to the tenant:
+To retrieve details of all role management policy assignments for Microsoft Entra roles scoped to the tenant:
 <!-- {
   "blockType": "ignored"
 }
@@ -58,7 +52,7 @@ GET /policies/roleManagementPolicyAssignments?$filter=scopeId eq '{groupId}' and
 ## Query parameters
 This method requires the `$filter` (`eq`) query parameter to scope the request to a **scopeId** and a **scopeType**. 
 
-- To retrieve policies for Azure AD roles, the **scopeId** must be `/` and, **scopeType** can be either `Directory` or `DirectoryRole`.
+- To retrieve policies for Microsoft Entra roles, the **scopeId** must be `/` and, **scopeType** can be either `Directory` or `DirectoryRole`.
 - To retrieve policies for groups in PIM for groups, the **scopeId** must be the group ID and **scopeType** must be `Group`. 
 
 You can also filter by the **roleDefinitionId** or use the `$select` and `$expand` OData query parameters to help customize the response. This API also supports a nested `$expand` to retrieve the rules in policies and nested `$select` to return only specific properties of those rules. For general information, see [OData query parameters](/graph/query-parameters).
@@ -69,7 +63,7 @@ You can also filter by the **roleDefinitionId** or use the `$select` and `$expan
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -77,7 +71,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Retrieve details of all role management policy assignments in PIM for Azure AD roles
+<a name='example-1-retrieve-details-of-all-role-management-policy-assignments-in-pim-for-azure-ad-roles'></a>
+
+### Example 1: Retrieve details of all role management policy assignments in PIM for Microsoft Entra roles
 
 #### Request
 
@@ -129,7 +125,7 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments?$f
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -163,7 +159,9 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Retrieve details of all role management policy assignments for an Azure AD role and expand the policy and its associated rules
+<a name='example-2-retrieve-details-of-all-role-management-policy-assignments-for-an-azure-ad-role-and-expand-the-policy-and-its-associated-rules'></a>
+
+### Example 2: Retrieve details of all role management policy assignments for a Microsoft Entra role and expand the policy and its associated rules
 
 #### Request
 
@@ -213,7 +211,7 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments?$f
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -606,7 +604,7 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments?$f
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -690,7 +688,7 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments?$f
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
