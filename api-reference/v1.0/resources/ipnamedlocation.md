@@ -3,6 +3,7 @@ title: "ipNamedLocation resource type"
 description: "Represents a Microsoft Entra ID named location defined by IP ranges. Named locations are custom rules that define network locations that can then be used in a Conditional Access policy."
 ms.localizationpriority: medium
 author: "lisaychuang"
+ms.reviewer: conditionalaccesspm
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
