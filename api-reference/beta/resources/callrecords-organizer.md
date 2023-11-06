@@ -24,7 +24,6 @@ Inherits from [participantBase](callrecords-participantbase.md).
 | id       | String                        | Unique identifier for the call organizer. Inherited from [participantBase](callrecords-participantbase.md). |
 | identity | [identitySet](identityset.md) | The identity of the call organizer. Optional. Inherited from [participantBase](callrecords-participantbase.md). |
 
-
 ## JSON representation
 
 The following JSON representation shows the resource type.
