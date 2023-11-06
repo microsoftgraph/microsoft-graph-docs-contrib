@@ -5,14 +5,30 @@
                 {
                     "Id": "5c4af81d-eebf-4c90-a5a9-c23d898dee72",
                     "ApiChange": "Property",
+                    "ChangedApiName": "participants",
+                    "ChangeType": "Deprecation",
+                    "Description": "Deprecated the **participants** property of the [callRecord](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-callRecord?view=graph-rest-beta) resource. The **participants** property is deprecated and will stop returning data on June 30, 2026. Going forward, use the **participants_v2** relationship.",
+                    "Target": "callRecord"
+                },
+                {
+                    "Id": "5c4af81d-eebf-4c90-a5a9-c23d898dee72",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "organizer",
+                    "ChangeType": "Deprecation",
+                    "Description": "Deprecated the **organizer** property of the [callRecord](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-callRecord?view=graph-rest-beta) resource. The **organizer** property is deprecated and will stop returning data on June 30, 2026. Going forward, use the **organizer_v2** relationship.",
+                    "Target": "callRecord"
+                },
+                {
+                    "Id": "5c4af81d-eebf-4c90-a5a9-c23d898dee72",
+                    "ApiChange": "Property",
                     "ChangedApiName": "associatedIdentity",
                     "ChangeType": "Addition",
-                    "Description": "Added the `associatedIdentity` property to the [participantEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participantEndpoint?view=graph-rest-beta) resource.",
+                    "Description": "Added the **associatedIdentity** property to the [participantEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participantEndpoint?view=graph-rest-beta) resource.",
                     "Target": "participantEndpoint"
                 },
                 {
                     "Id": "5c4af81d-eebf-4c90-a5a9-c23d898dee72",
-                    "ApiChange": "Resource",
+                    "ApiChange": "Relationship",
                     "ChangedApiName": "organizer_v2",
                     "ChangeType": "Addition",
                     "Description": "Added the **organizer_v2** relationship to the [callRecord](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-callRecord?view=graph-rest-beta) resource.",
@@ -20,7 +36,7 @@
                 },
                 {
                     "Id": "5c4af81d-eebf-4c90-a5a9-c23d898dee72",
-                    "ApiChange": "Resource",
+                    "ApiChange": "Relationship",
                     "ChangedApiName": "participants_v2",
                     "ChangeType": "Addition",
                     "Description": "Added the **participants_v2** relationship to the [callRecord](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-callRecord?view=graph-rest-beta) resource.",
@@ -31,7 +47,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "organizer",
                     "ChangeType": "Addition",
-                    "Description": "Added the [organizer](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-organizer?view=graph-rest-beta) resource",
+                    "Description": "Added the [organizer](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-organizer?view=graph-rest-beta) resource type.",
                     "Target": "organizer"
                 },
                 {
@@ -39,33 +55,17 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "participant",
                     "ChangeType": "Addition",
-                    "Description": "Added the [participant](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participant?view=graph-rest-beta) resource",
-                    "Target": "participantBase"
-                },
-                {
-                    "Id": "5c4af81d-eebf-4c90-a5a9-c23d898dee72",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "participant",
-                    "ChangeType": "Deprecation",
-                    "Description": "Deprecated the `participant` property from the [callRecord](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-callRecord?view=graph-rest-beta) resource",
-                    "Target": "callRecord"
-                },
-                {
-                    "Id": "5c4af81d-eebf-4c90-a5a9-c23d898dee72",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "organizer",
-                    "ChangeType": "Deprecation",
-                    "Description": "Deprecated the `organizer` property from the [callRecord](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-callRecord?view=graph-rest-beta) resource",
-                    "Target": "callRecord"
+                    "Description": "Added the [participant](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participant?view=graph-rest-beta) resource and a supported method.",
+                    "Target": "participant"
                 },
                 {
                     "Id": "d9a7ce16-e0a6-401b-947e-2e64382f0c68",
                     "ApiChange": "Resource",
                     "ChangedApiName": "participantBase",
                     "ChangeType": "Addition",
-                    "Description": "Added the [participantBase](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participantBase?view=graph-rest-beta) resource",
+                    "Description": "Added the [participantBase](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participantBase?view=graph-rest-beta) resource type.",
                     "Target": "participantBase"
-                  }
+                }
             ],
             "Id": "5c4af81d-eebf-4c90-a5a9-c23d898dee72",
             "Cloud": "Prod",
