@@ -1,6 +1,6 @@
 ---
 title: "Get inactiveAwsResourceFinding"
-description: "Read the properties and relationships of an inactiveAwsResourceFinding object."
+description: "Get the details of an inactive resource in an AWS authorization system that you've onboarded to Permissions Management."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an [inactiveAwsResourceFinding](../resources/inactiveawsresourcefinding.md) object.
+Read the properties and relationships of an [inactiveAwsResourceFinding](../resources/inactiveawsresourcefinding.md) object. Get the details of an inactive resource in an AWS authorization system that you've onboarded to Permissions Management.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|Not supported|
 |Delegated (personal Microsoft account)|Not supported|
-|Application|**SERVICENOWAPI**|
+|Application|Not supported|
 
 ## HTTP request
 

@@ -1,6 +1,6 @@
 ---
 title: "List inactiveServerlessFunctionFindings"
-description: "Get a list of the inactiveServerlessFunctionFinding objects and their properties."
+description: "List the details of inactive serverless functions in authorization systems that you've onboarded to Permissions Management."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -12,10 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [inactiveServerlessFunctionFindauthor: "ashyasingh"
-ms.localizationpriority: medium
-ms.prod: "multicloud-permissions-management"
-doc_type: apiPageTypeing](../resources/inactiveserverlessfunctionfinding.md) objects and their properties.
+List the details of inactive serverless functions [inactiveServerlessFunctionFining](../resources/inactiveserverlessfunctionfinding.md)in authorization systems that you've onboarded to Permissions Management.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -24,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|Not supported|
 |Delegated (personal Microsoft account)|Not supported|
-|Application|**SERVICENOWAPI**|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -43,7 +40,7 @@ List Azure inactive serverless functions:
 }
 -->
 ``` http
-GET /beta/identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.inactiveServerlessFunctionFinding
+GET /identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.inactiveServerlessFunctionFinding
 ```
 
 List GCP inactive serverless functions:

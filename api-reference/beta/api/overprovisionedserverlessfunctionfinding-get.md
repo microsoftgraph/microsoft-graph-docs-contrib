@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|Not supported|
 |Delegated (personal Microsoft account)|Not supported|
-|Application|**SERVICENOWAPI**|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -32,7 +32,7 @@ Get AWS overprovisioned serverless functions:
 }
 -->
 ``` http
-GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.overprovisionedServerlessFunctionFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings('id')/graph.overprovisionedServerlessFunctionFinding
 ```
 
 Get AWS overprovisioned serverless functions:
@@ -41,7 +41,7 @@ Get AWS overprovisioned serverless functions:
 }
 -->
 ``` http
-GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/azure/findings('id')/graph.overprovisionedServerlessFunctionFinding
+GET /identityGovernance/permissionsAnalytics/azure/findings('id')/graph.overprovisionedServerlessFunctionFinding
 ```
 
 Get GCP overprovisioned serverless functions:
@@ -50,7 +50,7 @@ Get GCP overprovisioned serverless functions:
 }
 -->
 ``` http
-GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/gcp/findings('id')/graph.overprovisionedServerlessFunctionFinding
+GET /identityGovernance/permissionsAnalytics/gcp/findings('id')/graph.overprovisionedServerlessFunctionFinding
 ```
 
 ## Optional query parameters

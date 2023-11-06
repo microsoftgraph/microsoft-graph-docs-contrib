@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|Not supported|
 |Delegated (personal Microsoft account)|Not supported|
-|Application|**SERVICENOWAPI**|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -55,10 +55,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp
 ## Function parameters
 In the request URL, provide the following query parameters with values.
 The following table shows the parameters that can be used with this function.
-|authorizationSystemIds|String collection|The collection of IDs for the authorization systems against which to get the summary of records.|
+
 |Parameter|Type|Description|
 |:---|:---|:---|
-|authorizationSystemIds|String collection|list of authorization systems|
+|authorizationSystemIds|String collection|The collection of IDs for the authorization systems against which to get the summary of records.|
 
 
 ## Request headers

@@ -1,6 +1,6 @@
 ---
 title: "Get inactiveUserFinding"
-description: "Read the properties and relationships of an inactiveUserFinding object."
+description: "Get the details of an inactive user in an authorization system that you've onboarded to Permissions Management."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -12,9 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an [inactiveUserFinding](../resources/inactiveuserfinding.md) object. Get the authorizationSystemIdentity resources from the identity navigation property.
-
-You want to view the details about an inactive user in an AWS account, Azure subscription, or GCP project.
+"Get the details of an inactive user [inactiveUserFinding](../resources/inactiveuserfinding.md) object in an authorization system that you've onboarded to Permissions Management.
 
 
 ## Permissions
@@ -24,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|Not supported|
 |Delegated (personal Microsoft account)|Not supported|
-|Application|**SERVICENOWAPI**|
+|Application|Not supported|
 
 
 ## HTTP request
@@ -35,7 +33,7 @@ Get AWS inactive users:
 }
 -->
 ```http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.inactiveUserFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings('id')/graph.inactiveUserFinding
 ```
 
 Get Azure inactive users:
@@ -44,7 +42,7 @@ Get Azure inactive users:
 }
 -->
 ```http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings('id')/graph.inactiveUserFinding
+GET /identityGovernance/permissionsAnalytics/azure/findings('id')/graph.inactiveUserFinding
 ```
 
 Get GCP inactive users:
@@ -53,7 +51,7 @@ Get GCP inactive users:
 }
 -->
 ```http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings('id')/graph.inactiveUserFinding
+GET /identityGovernance/permissionsAnalytics/gcp/findings('id')/graph.inactiveUserFinding
 ```
 
 ## Optional query parameters

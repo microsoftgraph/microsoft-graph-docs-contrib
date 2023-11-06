@@ -1,6 +1,6 @@
 ---
 title: "List inactiveAwsResourceFindings"
-description: "Get a list of the inactiveAwsResourceFinding objects and their properties."
+description: "List the details of inactive AWS resources."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [inactiveAwsResourceFinding](../resources/inactiveawsresourcefinding.md) objects and their properties.
+Get a list of the [inactiveAwsResourceFinding](../resources/inactiveawsresourcefinding.md) objects and their properties. List the details of inactive AWS resources.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|Not supported|
 |Delegated (personal Microsoft account)|Not supported|
-|Application|**SERVICENOWAPI**|
+|Application|Not supported|
 
 ## HTTP request
 
