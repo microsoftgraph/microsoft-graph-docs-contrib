@@ -3,6 +3,7 @@ title: "Update ipnamedlocation"
 description: "Update the properties of an ipNamedLocation object."
 ms.localizationpriority: medium
 author: "lisaychuang"
+ms.reviewer: conditionalaccesspm
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

@@ -1,6 +1,6 @@
 ---
 title: "educationUser resource type"
-description: "A user in the system. This is an education-specific variant of the user with the same `id` that Microsoft Graph will return from the non-education-specific `/users` endpoint."
+description: "A user in the system. This is an education-specific variant of the user with the same `id` that Microsoft Graph returns from the non-education-specific `/users` endpoint."
 author: "mmast-msft"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A user in the system. This is an education-specific variant of the standard [user] resource, with the same `id` that Microsoft Graph will return from the non-education-specific `/users` endpoint.
+A user in the system. This resource is an education-specific variant of the standard [user] resource, with the same `id` that Microsoft Graph returns from the non-education-specific `/users` endpoint.
 
 This object provides a targeted subset of properties from the core [user] object and adds a set of education-specific properties such as `primaryRole`, `student`, and `teacher`.
 
@@ -49,7 +49,7 @@ This object provides a targeted subset of properties from the core [user] object
 | mailingAddress       | [physicalAddress]            | Mail address of user. Note: `type` and `postOfficeBox` aren't supported for `educationUser` resources.                                                                                       |
 | middleName           | String                       | The middle name of user.                                                                                                                                                                      |
 | mobilePhone          | String                       | The primary cellular telephone number for the user.                                                                                                                                           |
-| onPremisesInfo       | [educationOnPremisesInfo]    | Additional information used to associate the Azure Active Directory user with its Active Directory counterpart.                                                                                                 |
+| onPremisesInfo       | [educationOnPremisesInfo]    | Additional information used to associate the Microsoft Entra user with its Active Directory counterpart.                                                                                                 |
 | passwordPolicies     | String                       | Specifies password policies for the user. See standard [user] resource for more details.                                                                                                |
 | passwordProfile      | [passwordProfile]            | Specifies the password profile for the user. The profile contains the user's password. This property is required when a user is created. See standard [user] resource for more details. |
 | preferredLanguage    | String                       | The preferred language for the user. Should follow ISO 639-1 Code; for example, "en-US".                                                                                                      |
@@ -157,5 +157,3 @@ Here's a JSON representation of the resource.
 [educationonpremisesinfo]: educationonpremisesinfo.md
 [iso 3166 alpha-2]: https://www.iso.org/obp/ui/#search
 [rfc 822]: https://tools.ietf.org/html/rfc822
-
-

@@ -54,7 +54,7 @@ If successful, this method returns a `201 Created` response code.
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -108,7 +108,7 @@ POST https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs
 
 #### Response
 
-The following is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,6 +1,6 @@
 ---
 title: "Get multiTenantOrganizationPartnerConfigurationTemplate"
-description: "Get the cross-tenant access policy template with inbound and outbound partner configuration settings for a multi-tenant organization."
+description: "Get the cross-tenant access policy template with inbound and outbound partner configuration settings for a multitenant organization."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,16 +12,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the cross-tenant access policy template with inbound and outbound partner configuration settings for a multi-tenant organization.
+Get the cross-tenant access policy template with inbound and outbound partner configuration settings for a multitenant organization.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.CrossTenantAccess|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Policy.Read.All, Policy.ReadWrite.CrossTenantAccess|
+<!-- { "blockType": "permissions", "name": "multitenantorganizationpartnerconfigurationtemplate_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/multitenantorganizationpartnerconfigurationtemplate-get-permissions.md)]
 
 [!INCLUDE [rbac-multitenantorganization-apis-read](../includes/rbac-for-apis/rbac-multitenantorganization-apis-read.md)]
 
@@ -44,7 +43,7 @@ This method supports the `$select` OData query parameter to help customize the r
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -90,16 +89,19 @@ GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/templates/
 [!INCLUDE [sample-code](../includes/snippets/php/get-multitenantorganizationpartnerconfigurationtemplate-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-multitenantorganizationpartnerconfigurationtemplate-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-multitenantorganizationpartnerconfigurationtemplate-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ### Response
 
-The following example response shows the unconfigured (or reset) state of the cross-tenant access policy template for partner configuration settings for multi-tenant organization tenants.
+The following example response shows the unconfigured (or reset) state of the cross-tenant access policy template for partner configuration settings for multitenant organization tenants.
 
 <!-- {
   "blockType": "response",

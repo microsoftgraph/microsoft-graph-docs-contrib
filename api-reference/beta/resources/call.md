@@ -47,7 +47,6 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | [Invite participants](../api/participant-invite.md)                | [commsOperation](commsoperation.md)                         | Invite participants to the active call.                                         |
 | [Mute all participants](../api/participant-muteall.md)             | [commsOperation](commsoperation.md)                         | Mute all participants in the call.                                              |
 | [Mute participant](../api/participant-mute.md)                     | [muteParticipantOperation](muteparticipantoperation.md)     | Mute a participant in the group call.                                           |
-| [Configure audio mixer](../api/participant-configuremixer.md)      | [commsOperation](commsoperation.md)                         | Configure audio in multiparty conversation.                                     |
 | [Create audioRoutingGroup](../api/call-post-audioroutinggroups.md) | [audioRoutingGroup](audioroutinggroup.md)                   | Create a new **audioRoutingGroup** by posting to the audioRoutingGroups collection. |
 | [List audioRoutingGroups](../api/call-list-audioroutinggroups.md)  | [audioRoutingGroup](audioroutinggroup.md) collection        | Get an **audioRoutingGroup** object collection.                                      |
 | [Add large gallery view](../api/call-addlargegalleryview.md)            | [addLargeGalleryViewOperation](addlargegalleryviewoperation.md)  | Add the large gallery view to a call.                                      |
@@ -93,7 +92,7 @@ myParticipantId     | String                                                    
 | state               | callState                                                                                                 | The call state. Possible values are: `incoming`, `establishing`, `ringing`, `established`, `hold`, `transferring`, `transferAccepted`, `redirecting`, `terminating`, `terminated`. Read-only.                          |
 | subject             | String                                                                                                 | The subject of the conversation.                                                                                                                                                                    |
 | targets             | [invitationParticipantInfo](participantinfo.md) collection                                             | The targets of the call. Required information for creating peer to peer call.                                                                                                            |
-| tenantId            | String                                                                                                 | Read-only. `tenantId` in Azure Active Directory.                                                                                                                        |
+| tenantId            | String                                                                                                 | Read-only. `tenantId` in Microsoft Entra ID.                                                                                                                        |
 | terminationReason   | String                                                                                                 | Read-only.                                                                                                                                                                       |
 | toneInfo            | [toneInfo](toneinfo.md)                                                                                | Read-only.                                                                                                                                                                        |
 
@@ -189,5 +188,3 @@ Here's a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-
