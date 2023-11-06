@@ -1,6 +1,6 @@
 ---
 title: "defaultInvitationRedemptionIdentityProviderConfiguration resource type"
-description: "Defines the invitation redemption provider configuration to set redemption flow settings for Azure AD B2B collaboration."
+description: "Defines the invitation redemption provider configuration to set redemption flow settings for Microsoft Entra ID B2B collaboration."
 author: "jkdouglas"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the invitation redemption provider configuration to set redemption flow settings for Azure AD B2B collaboration.
+Defines the invitation redemption provider configuration to set redemption flow settings for Microsoft Entra ID B2B collaboration.
 
 Inherits from [invitationRedemptionIdentityProviderConfiguration](../resources/invitationRedemptionIdentityProviderConfiguration.md)
 
@@ -21,8 +21,8 @@ Inherits from [invitationRedemptionIdentityProviderConfiguration](../resources/i
 
 |Property|Type|Description|
 |:---|:---|:---|
-| primaryIdentityProviderPrecedenceOrder | b2bIdentityProvidersType collection | Collection of identity providers in priority order of preference to be used for guest user invitation redemption. Possible values are: `azureActiveDirectory`, `externalFederation`, or `socialIdentityProviders`. |
-| fallbackIdentityProvider | b2bIdentityProvidersType | The fallback identity provider to be used in case no primary identity provider can be used for guest user invitation redemption. Possible values are: `defaultConfiguredIdp`, `emailOneTimePasscode`, or `microsoftAccount`. |
+| primaryIdentityProviderPrecedenceOrder | b2bIdentityProvidersType collection | Collection of identity providers in priority order of preference to be used for guest invitation redemption. Possible values are: `azureActiveDirectory`, `externalFederation`, or `socialIdentityProviders`. |
+| fallbackIdentityProvider | b2bIdentityProvidersType | The fallback identity provider to be used in case no primary identity provider can be used for guest invitation redemption. Possible values are: `defaultConfiguredIdp`, `emailOneTimePasscode`, or `microsoftAccount`. |
 
 ## Relationships
 
