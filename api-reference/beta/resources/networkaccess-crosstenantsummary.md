@@ -19,10 +19,10 @@ A summary for cross-tenant access counts for Microsoft 365 traffic.
 |Property|Type|Description|
 |:---|:---|:---|
 |authTransactionCount|Int32|The total number of authentication sessions between startDateTime and endDateTime.	|
-|deviceCount|Int32|The number of unique devices that performed cross-tenant access, between startDateTime and endDateTime.	|
+|deviceCount|Int32|The number of unique devices that performed cross-tenant access.	|
 |newTenantCount|Int32|The number of unique tenants that were accessed between endDateTime and discoveryPivotDateTime, but weren't accessed between discoveryPivotDateTime and startDateTime.|
-|tenantCount|Int32|The number of unique tenants that were accessed, not including the device's tenant, between startDateTime and endDateTime.|
-|userCount|Int32|The number of unique users that performed cross-tenant access, between startDateTime and endDateTime.|
+|tenantCount|Int32|The number of unique tenants that were accessed, not including the device's tenant.|
+|userCount|Int32|The number of unique users that performed cross-tenant access.|
 
 ## Relationships
 None.

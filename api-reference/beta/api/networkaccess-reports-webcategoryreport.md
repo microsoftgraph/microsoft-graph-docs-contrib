@@ -41,8 +41,8 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|startDateTime|DateTimeOffset|Timestamp that indicates the beginning of the report period.|
-|endDateTime|DateTimeOffset|Timestamp that indicates the end of the report period.|
+|startDateTime|DateTimeOffset|The date and time when the reporting period begins.|
+|endDateTime|DateTimeOffset|The date and time when the reporting period ends.|
 
 ## Request headers
 |Name|Description|
