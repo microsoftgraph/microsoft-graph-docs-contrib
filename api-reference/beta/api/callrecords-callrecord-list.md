@@ -1,6 +1,6 @@
 ---
 title: "List callRecord"
-description: "Retrieve a list of call record objects."
+description: "Get a list of callRecord objects and their properties."
 ms.localizationpriority: medium
 author: "mcm223"
 ms.prod: "cloud-communications"
@@ -13,11 +13,10 @@ Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieves a list of [callRecord](../resources/callrecords-callrecord.md) objects. The results can be optionally filtered using the `$filter` query parameter on `startDateTime` and participant `id`. Note that the listed call records will not include expandable attributes such as session, segment, or participants_v2. These attributes can be expanded using [Get callRecord](callrecords-callrecord-get.md) for a specific record.
+Get a list of [callRecord](../resources/callrecords-callrecord.md) objects and their properties. The results can be optionally filtered using the `$filter` query parameter on `startDateTime` and participant `id`. Note that the listed call records will not include expandable attributes such as session, segment, or participants_v2. These attributes can be expanded using [Get callRecord](callrecords-callrecord-get.md) for a specific record.
 
 > [!WARNING]
->
-> A call record is created after a call or meeting ends and will remain available for **30 days**. Call records older than 30 days will not be returned by this API.
+> A call record is created after a call or meeting ends and remains available for **30 days**. This API doesn't return call records older than 30 days.
 
 ## Permissions
 
@@ -41,19 +40,18 @@ GET /communications/callRecords
 
 This method supports the following OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-| Name      |Description|
-|:----------|:----------|
+| Name    |Description|
+|:--------|:----------|
 | $select | Use the `$select` query parameter to return a set of properties that are different than the default set for an individual resource or a collection of resources. |
-| $filter | Use the `$filter` query parameter to retrieve just a subset of a collection. Only supported for `startDateTime` (`lt`,`le`,`gt`,`ge`) and participant `participants_v2.id` (`eq`) fields. |
-
+| $filter | Use the `$filter` query parameter to retrieve just a subset of a collection. Only supported for the **startDateTime** (`lt`,`le`,`gt`,`ge`) and participant **participants_v2.id** (`eq`) properties. |
 
 ## Request headers
 
 | Name      |Description|
 |:----------|:----------|
 | Authorization | Bearer {token} |
-| Prefer: odata.maxpagesize={x} | Specifies a preferred integer {x} page size for paginated results. Optional. This value must be equal to or less than the maximum allowable page size. |
-| Prefer: include-unknown-enum-members | Enables evolvable enum values beyond the sentinel value. See [Best Practices](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) for more information. Optional. |
+| Prefer: odata.maxpagesize={x} | Specifies a preferred integer {x} page size for paginated results. This value must be equal to or less than the maximum allowable page size. Optional. |
+| Prefer: include-unknown-enum-members | Enables evolvable enum values beyond the sentinel value. For more information, see [Best practices for working with Microsoft Graph](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). Optional. |
 | Prefer: omit-values=nulls | Removes null or empty values from the response. Optional. |
 
 ## Request body
@@ -64,11 +62,15 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.callRecords.callRecord](../resources/callrecords-callrecord.md) objects in the response body.
 
+When a result set spans multiple pages, Microsoft Graph returns that page with an **@odata.nextLink** property in the response that contains a URL to the next page of results. If that property is present, continue making additional requests with the **@odata.nextLink** URL in each response, until all the results are returned. For more information, see [paging Microsoft Graph data in your app](/graph/paging). The default page size for call records is 60 entries.
+
 ## Examples
 
 ### Example 1: List all records
 
 #### Request
+
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -80,7 +82,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords
 
 #### Response
 
-If the list is truncated, a `callRecord@odata.nextLink` value will be provided to retrieve the next page of sessions. The default page size for call records is 60 entries.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -166,6 +168,8 @@ Content-type: application/json
 
 #### Request
 
+The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "list_callrecords_filter_by_startDateTime"
@@ -177,7 +181,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords?$filter=startDat
 
 #### Response
 
-If the list is truncated, a `callRecord@odata.nextLink` value will be provided to retrieve the next page of records. The default page size for call records is 60 entries.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -231,6 +235,8 @@ Content-type: application/json
 
 #### Request
 
+The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "list_callrecords_filter_by_participant"
@@ -242,7 +248,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords?$filter=particip
 
 #### Response
 
-If the list is truncated, a `callRecord@odata.nextLink` value will be provided to retrieve the next page of records. The default page size for call records is 60 entries.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -294,7 +300,7 @@ Content-type: application/json
 
 ## See also
 
-For more information on using call records, see [call records](../resources/callrecords-callrecord.md).
+For more information on using call records, see [callRecord](../resources/callrecords-callrecord.md).
 
 <!-- {
   "type": "#page.annotation",
@@ -303,5 +309,3 @@ For more information on using call records, see [call records](../resources/call
   "section": "documentation",
   "tocPath": ""
 }-->
-
-
