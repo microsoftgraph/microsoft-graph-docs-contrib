@@ -499,7 +499,9 @@ Content-Type: application/json
 
 ## Known limitations
 
-When searching for **drive**, you need to include in the **queryString** a term contained in the name of the document library. Querying `*` is not supported and does not return all available drives.
+- When searching for **drive**, you need to include in the **queryString** a term contained in the name of the document library. Querying `*` is not supported and does not return all available drives.
+
+- Graph Search API doesn't support site-level [search schema](/sharepoint/manage-search-schema)
 
 ## Next steps
 
