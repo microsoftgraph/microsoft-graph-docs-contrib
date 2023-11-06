@@ -88,7 +88,7 @@ The result of a Cloud PC Azure network connection health check.
 |resourceAvailabilityCheckDeploymentQuotaLimitReached|The resource group used by the Azure network connection has been locked for delete actions and has hit the deployment history quota limit. Remove this lock to allow Windows 365 service to delete obsolete virtual network adapters.|
 |resourceAvailabilityCheckTransientServiceError|The resource availability check failed due to a transient error. Try it again. If the issue persists, contact customer support.|
 |resourceAvailabilityCheckNoIntuneReaderRoleError|The Cloud PC service principal has insufficient permissions to check the Intune platform restriction settings. Make sure that the Cloud PC service principal has the *Reader* permissions on the subscription.|
-|resourceAvailabilityCheckIntuneDefaultWindowsRestrictionViolation| Intune has a default Windows platform restriction policy, which may block you from provisioning.|
+|resourceAvailabilityCheckIntuneDefaultWindowsRestrictionViolation| Intune has a default Windows platform restriction policy, which can block you from provisioning.|
 |resourceAvailabilityCheckIntuneCustomWindowsRestrictionViolation| Intune has a custom Windows platform restriction policy, which may block you from provisioning.|
 |resourceAvailabilityCheckUnknownError|The resource availability check for Azure resources failed due to an unknown error. Ensure that all Azure resources meet the prerequisites.|
 |permissionCheckNoSubscriptionReaderRole|The Cloud PC service principal doesn't have sufficient permissions on the Azure subscription. Make sure that the Cloud PC service principal has the *Reader* permissions on the subscription.|
