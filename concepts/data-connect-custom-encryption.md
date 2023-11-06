@@ -25,7 +25,7 @@ Set up custom encryption by generating keys in AKV or linking an existing AKV. E
 
 If you have an existing AKV with the correct setup, you can enable encryption during app registration in one flow. [Check the below section on Azure Key Vault](./data-connect-custom-encryption.md#using-azure-key-vault-for-custom-encryption) to ensure you correctly set up your AKV for custom encryption during app registration.
 
-As a prerequisite, we recommend setting up your application from the instructions from our (Getting Started)[../includes/data-connect-quickstart-01.md] and using [our simplified onboarding experience.](./onboarding-experience-overview.md)
+As a prerequisite, we recommend setting up your application from the instructions from our [Getting Started](../includes/data-connect-quickstart-01.md) and using [our simplified onboarding experience.](./onboarding-experience-overview.md)
 
 > [!NOTE]
 > Custom Encryption is not available to customers who are still using the PAM consent process. 
@@ -47,13 +47,13 @@ No action is required from the Microsoft 365 admin for this section.
 1. Log into your [Azure portal](https://ms.portal.azure.com) with your developer credentials and click on the **Azure Key Vault** icon
     ![Screenshot of the the Azure portal with Azure Key Vault boxed in](images/azure-portal-akv.png)
 
-2. If you don't have an existing AKV, hover over to **Create**. Follow the steps to [create a new instance of AKV.](https://learn.microsoft.com/en-us/azure/key-vault/general/quick-create-portal) 
+2. If you don't have an existing AKV, hover over to **Create**. Learn more about how to [create a new instance of AKV.](https://learn.microsoft.com/en-us/azure/key-vault/general/quick-create-portal) 
     ![Screenshot of how to create Azure Key Vault](images/create-akv.png)
 
 3. Click **Azure role-based access control (recommended)** underneath **Permission model** for the later steps to apply. 
     ![Screenshot explains permission models during AKV registration](images/akv-permission-model.png)
 
-4. **Enable public access** to allow Data Connect to access any public keys generated and stored. Data Connect is authorized only to access select public keys. 
+4. **Enable public access** in the **Networking** tab to allow Data Connect to access any public keys generated and stored. Data Connect is authorized only to access select public keys. 
     ![Screenshot explains networking for Azure Key Vault](images/akv-networking.png)
 
 5. Follow through the steps and select **Review + Create** when done.
