@@ -62,13 +62,9 @@ When a result set spans multiple pages, Microsoft Graph returns that page with a
 
 ## Examples
 
-### Example 1: Get the list of participants
+### Request
 
 The following example shows a request to get the list of [participants](../resources/callrecords-participant.md) for a [callRecord](../resources/callrecords-callrecord.md).
-
-#### Request
-
-The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -79,7 +75,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/communications/callRecords/{id}/participants_v2
 ```
 
-#### Response
+### Response
 
 The following example shows the response.
 
