@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ServicePrincipal(
 	key_credentials = [
@@ -30,7 +30,7 @@ request_body = ServicePrincipal(
 			key = base64.urlsafe_b64decode("MIIDJzCCAg+gAw......CTxQvJ/zN3bafeesMSueR83hlCSyg=="),
 			display_name = "CN=awsAPI",
 		),
-	]
+	],
 	password_credentials = [
 		PasswordCredential(
 			custom_key_identifier = base64.urlsafe_b64decode("lY85bR8r6yWTW6jnciNEONwlVhDyiQjdVLgPDnkI5mA="),
@@ -39,10 +39,10 @@ request_body = ServicePrincipal(
 			start_date_time = "2020-04-20T19:40:33Z",
 			secret_text = "61891f4ee44d",
 		),
-	]
+	],
 )
 
-result = await graph_client.service_principals.by_service_principal_id('servicePrincipal-id').patch(request_body = request_body)
+result = await graph_client.service_principals.by_service_principal_id('servicePrincipal-id').patch(request_body)
 
 
 ```

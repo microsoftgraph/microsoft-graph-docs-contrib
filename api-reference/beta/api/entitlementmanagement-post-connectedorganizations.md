@@ -15,15 +15,14 @@ Namespace: microsoft.graph
 
 Create a new [connectedOrganization](../resources/connectedorganization.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-| Delegated (work or school account)     | EntitlementManagement.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | EntitlementManagement.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "entitlementmanagement_post_connectedorganizations" } -->
+[!INCLUDE [permissions-table](../includes/permissions/entitlementmanagement-post-connectedorganizations-permissions.md)]
 
 ## HTTP request
 
@@ -45,7 +44,7 @@ POST /identityGovernance/entitlementManagement/connectedOrganizations
 ## Request body
 In the request body, supply a JSON representation of the [connectedOrganization](../resources/connectedorganization.md) object.
 
-The following table shows the properties that are required when you create the [connectedOrganization](../resources/connectedorganization.md).
+The following table lists the properties that are required when you create the [connectedOrganization](../resources/connectedorganization.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -54,7 +53,7 @@ The following table shows the properties that are required when you create the [
 |identitySources|[identitySource](../resources/identitysource.md) collection|A collection with one element, the initial identity source in this connected organization.|
 |state|connectedOrganizationState|The state of a connected organization defines whether assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects` are applicable or not. Possible values are: `configured`, `proposed`.|
 
-The single member of the identitySources collection should be of either the [domainIdentitySource](../resources/domainidentitysource.md) or [externalDomainFederation](../resources/externaldomainfederation.md) type.  If the caller provides a domainIdentitySource, the call is successful, and the domain corresponds to a registered domain of an Azure Active Directory tenant, then the resulting connectedOrganization that is created will have an identitySources collection containing a single member of the [azureActiveDirectoryTenant](../resources/azureactivedirectorytenant.md) type.
+The single member of the identitySources collection should be of either the [domainIdentitySource](../resources/domainidentitysource.md) or [externalDomainFederation](../resources/externaldomainfederation.md) type.  If the caller provides a domainIdentitySource, the call is successful, and the domain corresponds to a registered domain of a Microsoft Entra tenant, then the resulting connectedOrganization that is created will have an identitySources collection containing a single member of the [azureActiveDirectoryTenant](../resources/azureactivedirectorytenant.md) type.
 
 ## Response
 
@@ -155,5 +154,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

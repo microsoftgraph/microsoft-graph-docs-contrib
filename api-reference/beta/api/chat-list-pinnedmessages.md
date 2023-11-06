@@ -14,14 +14,13 @@ Namespace: microsoft.graph
 
 Get a list of [pinnedChatMessages](../resources/pinnedChatMessageInfo.md) in a [chat](../resources/chat.md).
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account) | Chat.Read, Chat.ReadWrite |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | ChatMessage.Read.All, Chat.Read.All, Chat.ReadWrite.All |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "chat_list_pinnedmessages" } -->
+[!INCLUDE [permissions-table](../includes/permissions/chat-list-pinnedmessages-permissions.md)]
 
 ## HTTP request
 
@@ -42,7 +41,7 @@ This method supports the `$expand` [OData query parameter](/graph/query-paramete
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -102,7 +101,7 @@ GET https://graph.microsoft.com/beta/chats/19:d65713bc498c4a428c71ef9353e6ce20@t
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -181,7 +180,7 @@ GET https://graph.microsoft.com/beta/chats/19:d65713bc498c4a428c71ef9353e6ce20@t
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

@@ -18,6 +18,8 @@ Evaluate whether a user or device is or would be a member of a dynamic group. Th
 - Evaluate whether a user or device is a member of a specified dynamic group.
 - Evaluate whether a user or device would be a member of a dynamic group based on the ID of the user or device and a membership rule.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 The following table shows the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -61,7 +63,7 @@ The following table lists the properties that are required when you evaluate gro
 | Parameter      | Type              | Description                                                                                                                                                                                                                                                                                                                                                                                                            |
 | :------------- | :---------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | memberId       | String collection | memberId is the object Id of the user or device to be evaluated.                                                                                                                                                                                                                                                                                                                                                       |
-| membershipRule | String collection | The rule that is used for membership evaluation. If this property is not provided, the rule for the existing group is evaluated. If this property is provided, the user or device is evaluated for possible membership in a group with the same rule. For more information, see [Dynamic membership rules for groups in Azure Active Directory](/azure/active-directory/users-groups-roles/groups-dynamic-membership). |
+| membershipRule | String collection | The rule that is used for membership evaluation. If this property is not provided, the rule for the existing group is evaluated. If this property is provided, the user or device is evaluated for possible membership in a group with the same rule. For more information, see [Dynamic membership rules for groups in Microsoft Entra ID](/azure/active-directory/users-groups-roles/groups-dynamic-membership). |
 
 ## Response
 
@@ -73,7 +75,7 @@ If successful, this method returns a `200 OK` response code and an [evaluateDyna
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 
@@ -127,7 +129,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -159,7 +161,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 
@@ -214,7 +216,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

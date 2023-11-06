@@ -8,7 +8,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var result = await graphClient.DirectoryObjects.GetAvailableExtensionProperties.PostAsync(null);
+var requestBody = new Microsoft.Graph.DirectoryObjects.GetAvailableExtensionProperties.GetAvailableExtensionPropertiesPostRequestBody
+{
+};
+var result = await graphClient.DirectoryObjects.GetAvailableExtensionProperties.PostAsync(requestBody);
 
 
 ```

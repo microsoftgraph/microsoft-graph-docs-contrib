@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = PrintJob(
 	configuration = PrintJobConfiguration(
@@ -18,7 +18,7 @@ request_body = PrintJob(
 				start = 1,
 				end = 1,
 			),
-		]
+		],
 		quality = PrintQuality.Medium,
 		dpi = 600,
 		orientation = PrintOrientation.Landscape,
@@ -44,7 +44,7 @@ request_body = PrintJob(
 	),
 )
 
-result = await graph_client.print.printers.by_printer_id('printer-id').jobs.post(request_body = request_body)
+result = await graph_client.print.printers.by_printer_id('printer-id').jobs.post(request_body)
 
 
 ```

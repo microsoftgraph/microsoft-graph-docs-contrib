@@ -23,7 +23,7 @@ $unifiedRolesArray []= $unifiedRolesUnifiedRole3;
 $accessDetails->setUnifiedRoles($unifiedRolesArray);
 
 $requestBody->setAccessDetails($accessDetails);
-$requestConfiguration = new DelegatedAdminAccessAssignmentRequestBuilderPatchRequestConfiguration();
+$requestConfiguration = new DelegatedAdminAccessAssignmentItemRequestBuilderPatchRequestConfiguration();
 $headers = [
 	'If-Match' => 'W/"JyI0NzAwNjg0NS0wMDAwLTE5MDAtMDAwMC02MGY0Yjg4MzAwMDAiJw=="',
 ];

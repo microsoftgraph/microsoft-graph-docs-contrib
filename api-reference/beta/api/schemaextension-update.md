@@ -21,6 +21,8 @@ For delegated flows, the signed-in user can update a schema extension as long as
 
 This criteria for the **owner** property allows a signed-in user to make updates through other applications they don't own, such as Microsoft Graph Explorer. When using Graph Explorer to update a **schemaExtension** resource, include the **owner** property in the PATCH request body.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -66,7 +68,7 @@ If successful, this method returns a `204 No Content` response code. Attempting 
 
 ### Request
 
-The following is an example of the request. You must include the **owner** property if you're running the request from an application which you don't own. In this case, set the **owner** property to the **appId** of an application you own.
+The following example shows a request. You must include the **owner** property if you're running the request from an application which you don't own. In this case, set the **owner** property to the **appId** of an application you own.
 
 # [HTTP](#tab/http)
 <!-- {

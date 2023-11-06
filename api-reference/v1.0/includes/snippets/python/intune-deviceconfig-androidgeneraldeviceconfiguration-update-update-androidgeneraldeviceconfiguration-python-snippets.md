@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AndroidGeneralDeviceConfiguration(
 	odata_type = "#microsoft.graph.androidGeneralDeviceConfiguration",
@@ -30,7 +30,7 @@ request_body = AndroidGeneralDeviceConfiguration(
 			app_store_url = "https://example.com/appStoreUrl/",
 			app_id = "App Id value",
 		),
-	]
+	],
 	compliant_app_list_type = AppListType.AppsInListCompliant,
 	diagnostic_data_block_submission = True,
 	location_services_blocked = True,
@@ -46,7 +46,7 @@ request_body = AndroidGeneralDeviceConfiguration(
 			app_store_url = "https://example.com/appStoreUrl/",
 			app_id = "App Id value",
 		),
-	]
+	],
 	nfc_blocked = True,
 	password_block_fingerprint_unlock = True,
 	password_block_trust_agents = True,
@@ -81,7 +81,7 @@ request_body = AndroidGeneralDeviceConfiguration(
 			app_store_url = "https://example.com/appStoreUrl/",
 			app_id = "App Id value",
 		),
-	]
+	],
 	apps_launch_block_list = [
 		AppListItem(
 			odata_type = "microsoft.graph.appListItem",
@@ -90,7 +90,7 @@ request_body = AndroidGeneralDeviceConfiguration(
 			app_store_url = "https://example.com/appStoreUrl/",
 			app_id = "App Id value",
 		),
-	]
+	],
 	apps_hide_list = [
 		AppListItem(
 			odata_type = "microsoft.graph.appListItem",
@@ -99,11 +99,11 @@ request_body = AndroidGeneralDeviceConfiguration(
 			app_store_url = "https://example.com/appStoreUrl/",
 			app_id = "App Id value",
 		),
-	]
+	],
 	security_require_verify_apps = True,
 )
 
-result = await graph_client.device_management.device_configurations.by_device_configuration_id('deviceConfiguration-id').patch(request_body = request_body)
+result = await graph_client.device_management.device_configurations.by_device_configuration_id('deviceConfiguration-id').patch(request_body)
 
 
 ```

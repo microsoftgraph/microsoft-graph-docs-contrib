@@ -21,7 +21,7 @@ In this topic, you'll configure app-only access for a simple script to list user
 Before you can use app-only access with the SDK, you need the following:
 
 - A certificate to use as a credential for the application. This can be a self-signed certificate or a certificate from an authority. For details about how to create a self-signed certificate, see the [See also](#see-also) section.
-- [Register an application](/azure/active-directory/develop/app-objects-and-service-principals) in Azure AD, configure it with the permission scopes your scenario requires, and share the public key for your certificate.
+- [Register an application](/azure/active-directory/develop/app-objects-and-service-principals) in Microsoft Entra ID, configure it with the permission scopes your scenario requires, and share the public key for your certificate.
 
 ### Certificate
 
@@ -29,15 +29,13 @@ You'll need an X.509 certificate installed in your user's trusted store on the m
 
 ### Register the application
 
-You can register the application in the [Azure Active Directory portal](https://aad.portal.azure.com).
+You can register the application in the [Microsoft Entra admin center](https://entra.microsoft.com).
 
-1. Open a browser, go to the [Azure Active Directory admin center](https://aad.portal.azure.com), and sign in using a Microsoft 365 tenant organization admin.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com).
 
-1. In the left pane, select **Azure Active Directory**, and under **Manage**, select **App registrations**.
+1. Expand the **Identity** menu > select **Applications** > **App registrations** > **New registration**.
 
-    ![A screenshot of the App registrations](../images/cli/aad-portal-app-registrations.png)
-
-1. Select **New registration**. On the **Register an application** page, set the values as follows.
+1. On the **Register an application** page, set the values as follows.
 
     - Set **Name** to `Graph CLI App-Only`.
     - Set **Supported account types** to **Accounts in this organizational directory only**.
@@ -63,7 +61,7 @@ You can register the application in the [Azure Active Directory portal](https://
 
 You should have three pieces of information after completing the previous configuration steps:
 
-- Certificate subject or thumbprint of the certificate uploaded to your Azure AD app registration.
+- Certificate subject or thumbprint of the certificate uploaded to your Microsoft Entra app registration.
 - Application ID for your app registration.
 - Your tenant ID.
 

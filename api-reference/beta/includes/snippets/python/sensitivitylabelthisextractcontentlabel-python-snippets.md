@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ExtractContentLabelPostRequestBody(
 	content_info = ContentInfo(
@@ -41,7 +41,7 @@ request_body = ExtractContentLabelPostRequestBody(
 				name = "MSIP_Label_0ed12617-d0ef-4053-b8e4-ecf5bcf2ffb3_ActionId",
 				value = "00000000-0000-0000-0000-000000000000",
 			),
-		]
+		],
 		additional_data = {
 				"format" : "default",
 		}
@@ -55,7 +55,7 @@ headers = {
 
 )
 
-result = await graph_client.users.by_user_id('user-id').security.information_protection.sensitivity_labels.microsoft_graph_security_extract_content_label.post(request_body = request_body, request_configuration = request_configuration)
+result = await graph_client.users.by_user_id('user-id').security.information_protection.sensitivity_labels.microsoft_graph_security_extract_content_label.post(request_body, request_configuration = request_configuration)
 
 
 ```

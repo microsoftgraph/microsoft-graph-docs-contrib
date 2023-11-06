@@ -104,6 +104,14 @@ Namespace: microsoft.graph
 | others             |
 | unknownFutureValue |
 
+### releaseType values 
+
+|Member|
+|:---|
+|preview|
+|generallyAvailable|
+|unknownFutureValue|
+
 ### recommendationCategory values
 
 | Member               |
@@ -408,6 +416,15 @@ Namespace: microsoft.graph
 |existingPartners|
 |unknownFutureValue|
 
+### approvalFilterByCurrentUserOptions values 
+
+| Member             |
+| :----------------- |
+| target             |
+| createdBy          |
+| approver           |
+| unknownFutureValue |
+
 ### accessPackageFilterByCurrentUserOptions values
 
 | Member             |
@@ -510,6 +527,7 @@ Namespace: microsoft.graph
 | Member                |
 | :-------------------- |
 | asymmetricKeyLifetime |
+| trustedCertificateAuthority |
 | unknownFutureValue    |
 
 ### synchronizationSecret values
@@ -1351,6 +1369,17 @@ Namespace: microsoft.graph
 | weak    |
 | unknown |
 
+### authenticationMethodPlatform values
+
+| Member  |
+| :------ |
+| windows |
+| macOS   |
+| iOS     |
+| android |
+| linux   |
+| unknown |
+
 ### authenticationContextDetail values
 
 | Member              |
@@ -1544,12 +1573,30 @@ Namespace: microsoft.graph
 | x509CertificateMultiFactor  |
 | unknownFutureValue          |
 
-### x509CertificateRuleType values
+### x509CertificateAffinityLevel values
+
 | Member             |
 | :----------------- |
-| issuerSubject      |
-| policyOID          |
+| low                |
+| high               |
 | unknownFutureValue |
+
+### x509CertificateRuleType values
+
+| Member                    |
+| :------------------------ |
+| issuerSubject             |
+| policyOID                 |
+| unknownFutureValue        |
+| issuerSubjectAndPolicyOID |
+
+### x509CertificateIssuerHintsState values
+
+|Member|
+|:---|
+|disabled|
+|enabled|
+|unknownFutureValue|
 
 ### anniversaryType values
 
@@ -3457,6 +3504,7 @@ Possible values for user account types (group membership), per Windows definitio
 | contentDeletion    |
 | caseResolved       |
 | unknownFutureValue |
+| approval           |
 
 ### subjectRightsRequestStageStatus values
 
@@ -3666,8 +3714,10 @@ Possible values for user account types (group membership), per Windows definitio
 | Member             |
 | :----------------- |
 | lockForApproval    |
+| approve            |
 | terminate          |
 | unknownFutureValue |
+| reject             |
 
 ### delegatedAdminRelationshipRequestStatus values
 
@@ -4052,6 +4102,130 @@ Possible values for user account types (group membership), per Windows definitio
 |voiceAlternateMobile|
 |voiceOffice|
 |sms|
+|unknownFutureValue|
+
+### endUserNotificationPreference values
+
+|Member|
+|:---|
+|unknown|
+|microsoft|
+|custom|
+|unknownFutureValue|
+
+### endUserNotificationSettingType values
+
+|Member|
+|:---|
+|unknown|
+|noTraining|
+|trainingSelected|
+|noNotification|
+|unknownFutureValue|
+
+### endUserNotificationType values
+
+|Member|
+|:---|
+|unknown|
+|positiveReinforcement|
+|noTraining|
+|trainingAssignment|
+|trainingReminder|
+|unknownFutureValue|
+
+### notificationDeliveryFrequency values
+
+|Member|
+|:---|
+|unknown|
+|weekly|
+|biWeekly|
+|unknownFutureValue|
+
+### notificationDeliveryPreference values
+
+|Member|
+|:---|
+|unknown|
+|deliverImmedietly|
+|deliverAfterCampaignEnd|
+|unknownFutureValue|
+
+### oAuthAppScope values
+
+|Member|
+|:---|
+|unknown|
+|readCalendar|
+|readContact|
+|readMail|
+|readAllChat|
+|readAllFile|
+|readAndWriteMail|
+|sendMail|
+|unknownFutureValue|
+
+### targettedUserType values
+
+|Member|
+|:---|
+|unknown|
+|clicked|
+|compromised|
+|allUsers|
+|unknownFutureValue|
+
+### trainingAssignedTo values
+
+|Member|
+|:---|
+|none|
+|allUsers|
+|clickedPayload|
+|compromised|
+|reportedPhish|
+|readButNotClicked|
+|didNothing|
+|unknownFutureValue|
+
+### trainingAvailabilityStatus values
+
+|Member|
+|:---|
+|unknown|
+|notAvailable|
+|available|
+|archive|
+|delete|
+|unknownFutureValue|
+
+### trainingCompletionDuration values
+
+| Member             |
+| :------------------|
+| week               |
+| fortnite           |
+| month              |
+| unknownFutureValue |
+
+
+### trainingSettingType values
+
+|Member|
+|:---|
+|microsoftCustom|
+|microsoftManaged|
+|noTraining|
+|custom|
+|unknownFutureValue|
+
+### trainingType values
+
+|Member|
+|:---|
+|unknown|
+|phishing|
 |unknownFutureValue|
 
 ### verifiableCredentialPresentationStatusCode values

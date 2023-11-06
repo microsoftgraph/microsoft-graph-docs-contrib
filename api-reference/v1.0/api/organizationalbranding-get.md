@@ -16,14 +16,13 @@ If the **Accept-Language** header is set to an existing locale identified by the
 
 This method retrieves only non-Stream properties, for example, **usernameHintText** and **signInPageText**. To retrieve Stream types of the default branding, for example, **bannerLogo** and **backgroundImage**, use the [GET organizationalBrandingLocalization](organizationalbrandinglocalization-get.md) method.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | User.Read, Organization.Read.All, User.Read.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Organization.Read.All |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "organizationalbranding_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/organizationalbranding-get-permissions.md)]
 
 ## HTTP request
 
@@ -46,7 +45,7 @@ This method supports only the `$select` OData query parameter to help customize 
 |Accept-Language|A valid ISO 639-1 locale. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -58,7 +57,7 @@ If successful, this method returns a `200 OK` response code and an [organization
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -108,7 +107,7 @@ Accept-Language: 0
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -145,7 +144,7 @@ Content-Type: application/json
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -194,7 +193,7 @@ Accept-Language: 0
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response"
@@ -210,7 +209,7 @@ In the following example, the **Accept-Language** header is used specify to retr
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -259,7 +258,7 @@ Accept-Language: fr-FR
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -289,11 +288,11 @@ Content-Type: application/json
 
 ### Example 4: Get the bannerLogo for the default locale
 
-The following example returns the **bannerLogo** object for the default locale. To retrieve Stream object types for example, **bannerLogo**, use the [Get organizationalBrandingLocalizationmethod](organizationalbrandinglocalization-get.md). You may specify the value of **id** as `default` or `0` in the request URL. If the property is not set, the request returns an empty response.
+The following example returns the **bannerLogo** object for the default locale. To retrieve Stream object types for example, **bannerLogo**, use the [Get organizationalBrandingLocalizationmethod](organizationalbrandinglocalization-get.md). You may specify the value of **id** as `default` or `0` in the request URL. If the property isn't set, the request returns an empty response.
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 <!-- {
   "blockType": "ignored",
@@ -306,7 +305,7 @@ GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -321,13 +320,13 @@ Content-Type: image/*
 <Image>
 ```
 
-### Example 5: Get the bannerLogo for the default locale when it is not set
+### Example 5: Get the bannerLogo for the default locale when it isn't set
 
-The following example returns the **bannerLogo** object which hadn't been set for the default locale.
+The following example returns the **bannerLogo** object that hadn't been set for the default locale.
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -377,7 +376,7 @@ GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",

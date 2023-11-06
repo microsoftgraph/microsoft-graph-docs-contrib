@@ -10,7 +10,7 @@ ms.prod: "data-connect"
 
 This article explains the concept of groups in Microsoft Graph Data Connect and the options for scope selection. Scope selection allows you to specify how to extract objects; for example, you can extract objects for all users in a Microsoft 365 tenant or select groups in the Microsoft 365 tenant. For more information, see [Demystifying User Scopes](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-data-connect-demystifying-user-scopes/#:~:text=The%20user%20scope%20option%20lets%20you%20either%20specify,Azure%20Active%20Directory%20Security%20or%20Microsoft%20365%20groups).
 
-You can create and manage several different types of groups in the Microsoft 365 admin center; for details, see [Compare groups](https://learn.microsoft.com/en-us/microsoft-365/admin/create-groups/compare-groups?view=o365-worldwide). The following types of groups are applicable to Microsoft Graph Data Connect:
+You can create and manage several different types of groups in the Microsoft 365 admin center; for details, see [Compare groups](/microsoft-365/admin/create-groups/compare-groups?view=o365-worldwide&preserve-view=true). The following types of groups are applicable to Microsoft Graph Data Connect:
 
 *  **Microsoft 365 Groups** - Used for collaboration between users, both inside and outside your company. They include collaboration services such as SharePoint and Planner.
 * **Distribution groups** - Used for sending email notifications to a group of people.
@@ -28,7 +28,7 @@ The following are the options for user-scoped datasets:
     * **All users in the tenant**: Returns data for all the users in the tenant. Data is extracted for individual users in the selected group. For details, see [User selection and filtering capabilities](/graph/data-connect-filtering).
     * **All users in the tenant with a scope filter**: Returns data for all the users in the tenant that are part of the scope filter applied. Data is extracted for individual users from the selected filter (group).
         * A scope Filter can help filter the users. If it's left empty, all data for all users is returned. 
-    *	**Select groups from the Microsoft 365 tenant**: Data is extracted for individual users in the group.
+    *    **Select groups from the Microsoft 365 tenant**: Data is extracted for individual users in the group.
 
 #### Example
 
@@ -83,15 +83,14 @@ Use the following steps to search for the types of groups in your tenant to help
 
     ![Screenshot of the ADF portal with the returned list of groups and group IDs highlighted](images/data-connect-groups-2.png)
 
-3. In a new tab, go to the [Azure homepage](https://www.portal.azure.com) and choose **Azure Active Directory**.
+3. In a new tab, go to the [Microsoft Entra admin center](https://entra.microsoft.com) > Under **Identity**, select **Overview**.
 
-    ![Screenshot of the Azure homepage with Azure Active Directory hihglighted](images/data-connect-groups-2.5.png)
 
 4. On the Overview tab, paste the group ID copied from step 2, and then and choose the **Groups** tab.
 
-    ![Screenshot of the Azure portal with the group ID field and Groups tab highlighted](images/data-connect-groups-3.png)
+    ![Screenshot of the Microsoft Entra admin center with the group ID field and Groups tab highlighted](images/data-connect-groups-3.png)
 
 5. In the **Type** field for the group, verify the type of group that you have.
 
-    ![Screenshot of the group in the Azure portal with the Type field highlighted](images/data-connect-groups-4.png)
+    ![Screenshot of the group with the Type field highlighted](images/data-connect-groups-4.png)
  

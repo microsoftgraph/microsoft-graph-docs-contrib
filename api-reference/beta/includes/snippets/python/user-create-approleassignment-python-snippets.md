@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AppRoleAssignment(
 	principal_id = UUID("cde330e5-2150-4c11-9c5b-14bfdc948c79"),
@@ -14,7 +14,7 @@ request_body = AppRoleAssignment(
 	app_role_id = UUID("00000000-0000-0000-0000-000000000000"),
 )
 
-result = await graph_client.users.by_user_id('user-id').app_role_assignments.post(request_body = request_body)
+result = await graph_client.users.by_user_id('user-id').app_role_assignments.post(request_body)
 
 
 ```

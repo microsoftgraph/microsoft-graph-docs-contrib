@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = EducationRubricOutcome(
 	odata_type = "#microsoft.graph.educationRubricOutcome",
@@ -25,7 +25,7 @@ request_body = EducationRubricOutcome(
 				content_type = BodyType.Text,
 			),
 		),
-	]
+	],
 	rubric_quality_selected_levels = [
 		RubricQualitySelectedColumnModel(
 			quality_id = "9a145aa8-f3d9-43a1-8f77-5387ff0693f2",
@@ -35,10 +35,10 @@ request_body = EducationRubricOutcome(
 			quality_id = "d2331fb2-2761-402e-8de6-93e0afaa076e",
 			column_id = "aac076bf-51ba-48c5-a2e0-ee235b0b9740",
 		),
-	]
+	],
 )
 
-result = await graph_client.education.classes.by_classe_id('educationClass-id').assignments.by_assignment_id('educationAssignment-id').submissions.by_submission_id('educationSubmission-id').outcomes.by_outcome_id('educationOutcome-id').patch(request_body = request_body)
+result = await graph_client.education.classes.by_education_class_id('educationClass-id').assignments.by_education_assignment_id('educationAssignment-id').submissions.by_education_submission_id('educationSubmission-id').outcomes.by_education_outcome_id('educationOutcome-id').patch(request_body)
 
 
 ```

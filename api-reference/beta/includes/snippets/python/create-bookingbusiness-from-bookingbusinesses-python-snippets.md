@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = BookingBusiness(
 	display_name = "Fourth Coffee",
@@ -24,7 +24,7 @@ request_body = BookingBusiness(
 	default_currency_iso = "USD",
 )
 
-result = await graph_client.booking_businesses.post(request_body = request_body)
+result = await graph_client.booking_businesses.post(request_body)
 
 
 ```

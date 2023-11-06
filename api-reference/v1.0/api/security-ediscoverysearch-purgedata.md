@@ -27,14 +27,13 @@ For more information about purging Teams messages, see:
 - [eDiscovery (Premium) workflow for content in Microsoft Teams](/microsoft-365/compliance/teams-workflow-in-advanced-ediscovery) 
 
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|eDiscovery.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "security_ediscoverysearch_purgedata" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-ediscoverysearch-purgedata-permissions.md)]
 
 ## HTTP request
 
@@ -73,6 +72,8 @@ To check the status of the purge data operation, make a GET request to the locat
 
 ### Request
 The following is an example of a request.
+
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -81,6 +82,10 @@ The following is an example of a request.
 -->
 ``` http
 POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/searches/c61a5860-d634-4d14-aea7-d82b6f4eb7af/purgeData
+
+{
+
+}
 ```
 
 # [C#](#tab/csharp)
@@ -107,10 +112,6 @@ POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b0073e4e-41
 [!INCLUDE [sample-code](../includes/snippets/php/securityediscoverysearchpurgedata-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/securityediscoverysearchpurgedata-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/securityediscoverysearchpurgedata-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -118,7 +119,7 @@ POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b0073e4e-41
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

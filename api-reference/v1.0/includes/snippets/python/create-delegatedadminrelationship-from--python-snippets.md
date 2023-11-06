@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = DelegatedAdminRelationship(
 	display_name = "Contoso admin relationship",
@@ -23,11 +23,12 @@ request_body = DelegatedAdminRelationship(
 			UnifiedRole(
 				role_definition_id = "3a2c62db-5318-420d-8d74-23affee5d9d5",
 			),
-		]
+		],
 	),
+	auto_extend_duration = "P180D",
 )
 
-result = await graph_client.tenant_relationships.delegated_admin_relationships.post(request_body = request_body)
+result = await graph_client.tenant_relationships.delegated_admin_relationships.post(request_body)
 
 
 ```

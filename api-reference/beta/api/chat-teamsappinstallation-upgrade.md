@@ -16,7 +16,9 @@ Namespace: microsoft.graph
 Upgrade an [app installation](../resources/teamsappinstallation.md) within a [chat](../resources/chat.md).
 
 > **Notes**:
-> - If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then effectively, the **teamsApp** installed in the meeting will get upgraded.
+> - If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then effectively, the **teamsApp** installed in the meeting gets upgraded.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -29,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Chat.Manage.Chat<sup>2</sup>, TeamsAppInstallation.ReadWriteSelfForChat.All<sup>1</sup>, TeamsAppInstallation.ReadWriteForChat.All<sup>1</sup>, TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All, TeamsAppInstallation.ReadWriteAndConsentForChat.All |
 
 > **Notes:**
-<br><sup>1</sup> These permissions cannot be used to install apps that require consent to resource-specific permissions.
+<br><sup>1</sup> These permissions can't be used to install apps that require consent to resource-specific permissions.
 <br><sup>2</sup> These permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
@@ -63,6 +65,7 @@ If successful, this method returns a `204 No Content` response code.
 
 The following example upgrades an app installed in a chat.
 
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -72,6 +75,10 @@ The following example upgrades an app installed in a chat.
 
 ```http
 POST https://graph.microsoft.com/beta/chats/19:ea28e88c00e94c7786b065394a61f296@thread.v2/installedApps/NjRiOWM3NDYtYjE1NS00MDQyLThkNDctOTQxYmQzODE2ODFiIyMwZDgyMGVjZC1kZWYyLTQyOTctYWRhZC03ODA1NmNkZTdjNzg=/upgrade
+
+{
+
+}
 ```
 
 # [C#](#tab/csharp)
@@ -99,7 +106,7 @@ POST https://graph.microsoft.com/beta/chats/19:ea28e88c00e94c7786b065394a61f296@
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/upgrade-installedapps-in-chat-e1-powershell-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -109,6 +116,8 @@ POST https://graph.microsoft.com/beta/chats/19:ea28e88c00e94c7786b065394a61f296@
 ---
 
 #### Response
+
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -125,6 +134,8 @@ HTTP/1.1 204 No Content
 To get the list of resource-specific permissions required by the app, get the app from **appCatalog**, as shown in [Example 7](../api/appcatalogs-list-teamsapps.md#example-7-list-applications-with-a-given-id-and-return-only-the-resource-specific-permissions-required-by-the-app).
 
 #### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -187,6 +198,8 @@ Content-Type: application/json
 ---
 
 #### Response
+
+The following example shows the response.
 
 <!-- {
   "blockType": "response"

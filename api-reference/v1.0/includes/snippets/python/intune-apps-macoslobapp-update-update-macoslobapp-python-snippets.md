@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = MacOSLobApp(
 	odata_type = "#microsoft.graph.macOSLobApp",
@@ -53,16 +53,16 @@ request_body = MacOSLobApp(
 			build_number = "Build Number value",
 			version_number = "Version Number value",
 		),
-	]
+	],
 	md5_hash_chunk_size = 0,
 	md5_hash = [
 		"Md5Hash value",
-	]
+	],
 	ignore_version_detection = True,
 	install_as_managed = True,
 )
 
-result = await graph_client.device_app_management.mobile_apps.by_mobile_app_id('mobileApp-id').patch(request_body = request_body)
+result = await graph_client.device_app_management.mobile_apps.by_mobile_app_id('mobileApp-id').patch(request_body)
 
 
 ```

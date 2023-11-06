@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = BookingCustomer(
 	odata_type = "#microsoft.graph.bookingCustomer",
@@ -35,7 +35,7 @@ request_body = BookingCustomer(
 					"type" : "business",
 			}
 		),
-	]
+	],
 	phones = [
 		Phone(
 			number = "206-555-0100",
@@ -45,10 +45,10 @@ request_body = BookingCustomer(
 			number = "206-555-0200",
 			type = PhoneType.Business,
 		),
-	]
+	],
 )
 
-result = await graph_client.solutions.booking_businesses.by_booking_businesse_id('bookingBusiness-id').customers.post(request_body = request_body)
+result = await graph_client.solutions.booking_businesses.by_booking_business_id('bookingBusiness-id').customers.post(request_body)
 
 
 ```

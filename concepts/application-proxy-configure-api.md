@@ -12,11 +12,11 @@ ms.date: 01/11/2022
 
 # Configure Application Proxy using the Microsoft Graph API
 
-In this article, you'll learn how to configure Azure Active Directory (Azure AD) Application Proxy for an application. Application Proxy provides secure remote access and single sign-on to on-premises web applications. After configuring Application Proxy for an application, users can access their on-premises applications through an external URL, the My Apps portal, or other internal application portals.
+In this article, you'll learn how to configure Microsoft Entra application proxy for an application. Application Proxy provides secure remote access and single sign-on to on-premises web applications. After configuring Application Proxy for an application, users can access their on-premises applications through an external URL, the My Apps portal, or other internal application portals.
 
 ## Prerequisites
 
-- This tutorial assumes you have already installed a connector and completed the [prerequisites](/azure/active-directory/app-proxy/application-proxy-add-on-premises-application#prerequisites) for Application Proxy so that connectors can communicate with Azure AD services.
+- This tutorial assumes you have already installed a connector and completed the [prerequisites](/azure/active-directory/app-proxy/application-proxy-add-on-premises-application#prerequisites) for Application Proxy so that connectors can communicate with Microsoft Entra services.
 - Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the global administrator role.
 - Grant yourself the following delegated permission: `Directory.ReadWrite.All`.
 
@@ -197,7 +197,7 @@ Update the following properties in the request body:
 
 - **internalUrl** - Set to the internal URL.
 - **externalUrl** - Set to the external URL.
-- All other values can be configured as needed. For details, see [Add an on-premises app to Azure AD](/azure/active-directory/app-proxy/application-proxy-add-on-premises-application#add-an-on-premises-app-to-azure-ad).
+- All other values can be configured as needed. For details, see [Add an on-premises app to Microsoft Entra ID](/azure/active-directory/app-proxy/application-proxy-add-on-premises-application#add-an-on-premises-app-to-azure-ad).
 
 #### Request
 
@@ -489,7 +489,6 @@ HTTP/1.1 204 No content
 
 #### Request
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -500,7 +499,7 @@ PUT https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85
 Content-type: application/json
 
 {
-"@odata.id":"https://graph.microsoft.com/onPremisesPublishingProfiles/applicationproxy/connectorGroups/3e6f4c35-a04b-4d03-b98a-66fff89b72e6"
+"@odata.id":"https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationproxy/connectorGroups/3e6f4c35-a04b-4d03-b98a-66fff89b72e6"
 }
 ```
 
@@ -700,7 +699,7 @@ Content-type: application/json
 
 ### Create a user account
 
-For this tutorial, you create a user account that is assigned to the app role. In the request body, change `contoso.com` to the domain name of your tenant. You can find tenant information on the Azure Active Directory overview page. Record the **id** of the user account to be used in the next step.
+For this tutorial, you create a user account that is assigned to the app role. In the request body, change `contoso.com` to the domain name of your tenant. You can find tenant information on the Microsoft Entra overview page. Record the **id** of the user account to be used in the next step.
 
 #### Request
 

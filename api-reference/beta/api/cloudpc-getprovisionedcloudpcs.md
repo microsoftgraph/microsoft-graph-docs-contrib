@@ -1,6 +1,6 @@
 ---
 title: "cloudPC: getProvisionedCloudPCs"
-description: "Get all provisioned Cloud PCs of a specific service plan for users under an Azure Active Directory (Azure AD) user group."
+description: "Get all provisioned Cloud PCs of a specific service plan for users under a Microsoft Entra user group."
 author: "SleepIsImportant"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,17 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all provisioned Cloud PCs of a specific service plan for users under an Azure Active Directory (Azure AD) user group.
+Get all provisioned Cloud PCs of a specific service plan for users under a Microsoft Entra user group.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|CloudPC.Read.All, CloudPC.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|CloudPC.Read.All, CloudPC.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "cloudpc_getprovisionedcloudpcs" } -->
+[!INCLUDE [permissions-table](../includes/permissions/cloudpc-getprovisionedcloudpcs-permissions.md)]
 
 ## HTTP request
 
@@ -46,12 +45,12 @@ GET /deviceManagement/virtualEndpoint/cloudPCs/getProvisionedCloudPCs(groupId='{
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|groupId|String|The unique identifier for Azure AD user group.|
+|groupId|String|The unique identifier for Microsoft Entra user group.|
 |servicePlanId|String|The unique identifier of the service plan.|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -61,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPC](../r
 
 ### Request
 
-The following is an example of a request.
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -97,6 +96,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/g
 [!INCLUDE [sample-code](../includes/snippets/php/cloudpcgetprovisionedcloudpcs-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcgetprovisionedcloudpcs-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/cloudpcgetprovisionedcloudpcs-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -105,7 +108,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/g
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",

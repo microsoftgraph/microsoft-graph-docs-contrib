@@ -14,7 +14,7 @@ $requestBody->setAccountEnabled(true);
 $alternativeSecurityIdsAlternativeSecurityId1 = new AlternativeSecurityId();
 $alternativeSecurityIdsAlternativeSecurityId1->setType(99);
 $alternativeSecurityIdsAlternativeSecurityId1->setIdentityProvider('identityProvider-value');
-$alternativeSecurityIdsAlternativeSecurityId1->setKey(base64_decode('base64Y3YxN2E1MWFlYw=='));
+$alternativeSecurityIdsAlternativeSecurityId1->setKey(\GuzzleHttp\Psr7\Utils::streamFor(base64_decode('base64Y3YxN2E1MWFlYw==')));
 $alternativeSecurityIdsArray []= $alternativeSecurityIdsAlternativeSecurityId1;
 $requestBody->setAlternativeSecurityIds($alternativeSecurityIdsArray);
 

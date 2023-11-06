@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ProfileCardProperty(
 	directory_property_name = "CustomAttribute1",
@@ -18,12 +18,12 @@ request_body = ProfileCardProperty(
 					language_tag = "ru-RU",
 					display_name = "центр затрат",
 				),
-			]
+			],
 		),
-	]
+	],
 )
 
-result = await graph_client.admin.people.profile_card_properties.post(request_body = request_body)
+result = await graph_client.admin.people.profile_card_properties.post(request_body)
 
 
 ```

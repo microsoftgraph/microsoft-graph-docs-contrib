@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = UpdatePolicy(
 	odata_type = "#microsoft.graph.windowsUpdates.updatePolicy",
@@ -17,7 +17,7 @@ request_body = UpdatePolicy(
 		ContentApproval(
 			odata_type = "#microsoft.graph.windowsUpdates.contentApproval",
 		),
-	]
+	],
 	compliance_change_rules = [
 		ContentApprovalRule(
 			odata_type = "#microsoft.graph.windowsUpdates.contentApprovalRule",
@@ -26,7 +26,7 @@ request_body = UpdatePolicy(
 			),
 			duration_before_deployment_start = "P7D",
 		),
-	]
+	],
 	deployment_settings = DeploymentSettings(
 		odata_type = "microsoft.graph.windowsUpdates.deploymentSettings",
 		schedule = ScheduleSettings(
@@ -41,7 +41,7 @@ request_body = UpdatePolicy(
 	),
 )
 
-result = await graph_client.admin.windows.updates.update_policies.post(request_body = request_body)
+result = await graph_client.admin.windows.updates.update_policies.post(request_body)
 
 
 ```

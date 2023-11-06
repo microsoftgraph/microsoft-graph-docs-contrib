@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = SendActivityNotificationToRecipientsPostRequestBody(
 	topic = TeamworkActivityTopic(
@@ -30,16 +30,16 @@ request_body = SendActivityNotificationToRecipientsPostRequestBody(
 			odata_type = "microsoft.graph.aadUserNotificationRecipient",
 			user_id = "01c64f53-69aa-42c7-9b7f-9f75195d6bfc",
 		),
-	]
+	],
 	template_parameters = [
 		KeyValuePair(
 			name = "pendingRequestCount",
 			value = "5",
 		),
-	]
+	],
 )
 
-await graph_client.teamwork.send_activity_notification_to_recipients.post(request_body = request_body)
+await graph_client.teamwork.send_activity_notification_to_recipients.post(request_body)
 
 
 ```

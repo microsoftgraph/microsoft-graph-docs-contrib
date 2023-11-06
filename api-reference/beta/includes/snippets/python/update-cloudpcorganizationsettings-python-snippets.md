@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = CloudPcOrganizationSettings(
 	odata_type = "#microsoft.graph.cloudPcOrganizationSettings",
@@ -18,7 +18,7 @@ request_body = CloudPcOrganizationSettings(
 	),
 )
 
-result = await graph_client.device_management.virtual_endpoint.organization_settings.patch(request_body = request_body)
+result = await graph_client.device_management.virtual_endpoint.organization_settings.patch(request_body)
 
 
 ```

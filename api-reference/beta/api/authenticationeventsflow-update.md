@@ -14,14 +14,13 @@ Namespace: microsoft.graph
 
 Update the properties of an [authenticationEventsFlow](../resources/authenticationeventsflow.md) object. Only the [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object type is supported.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|EventListener.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|EventListener.ReadWrite.All|
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "authenticationeventsflow_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/authenticationeventsflow-update-permissions.md)]
 
 [!INCLUDE [rbac-user-flows-convergence-apis-write](../includes/rbac-for-apis/rbac-user-flows-convergence-apis-write.md)]
 
@@ -52,7 +51,7 @@ You must include the **@odata.type** property with a value of the specific user 
 |id|String|The unique identifier for the entity. Read-only. |
 |displayName|String|The display name for the events policy. |
 |description|String|The description of the events policy.|
-|conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions representing the context of the authentication request which is used to decide whether the events policy is invoked. |
+|conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions representing the context of the authentication request that is used to decide whether the events policy is invoked. |
 |priority|Int32|The priority to use for each individual event of the events policy. If multiple competing listeners for an event have the same priority, one is chosen and an error is silently logged. |
 |onInteractiveAuthFlowStart|[onInteractiveAuthFlowStartHandler](../resources/oninteractiveauthflowstarthandler.md)|The configuration for what to invoke for the onInteractiveAuthFlowStart event. |
 |onAuthenticationMethodLoadStart|[onAuthenticationMethodLoadStartHandler](../resources/onauthenticationmethodloadstarthandler.md)|The configuration for what to invoke for the onAuthenticationMethodLoadStart event. Must have at least one identity provider linked.|
@@ -61,14 +60,14 @@ You must include the **@odata.type** property with a value of the specific user 
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns a `204 No Content` response code. If unsuccessful, a `4xx` error is returned with specific details.
 
 ## Examples
 
 ### Example 1: Update the display name and priority of an authenticationEventsFlow
 
 #### Request
-The following is an example of a request that updates the display name of a specific external identities user flow ( an authentication event type), as well as the priority for all the listeners associated with the policy.
+Here's an example of a request that updates the display name of a specific external identities user flow (an authentication event type), as well as the priority for all the listeners associated with the policy.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -122,7 +121,7 @@ Content-Type: application/json
 ---
 
 #### Response
-The following is an example of the response
+Here's an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -251,7 +250,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response
+Here's an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -263,7 +262,7 @@ HTTP/1.1 204 No Content
 
 ### Example 3: Remove an attribute collected during a self-service sign up user flow
 
-Remove city as an attribute to be collected during the attribute collection step of a self-service sign up user flow. By excluding the city attribute from the request body, the attribute will be removed from the user flow.
+Remove city as an attribute to be collected during the attribute collection step of a self-service sign up user flow. By excluding the city attribute from the request body, the attribute is removed from the user flow.
 
 #### Request
 
@@ -368,7 +367,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response
+Here's an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true

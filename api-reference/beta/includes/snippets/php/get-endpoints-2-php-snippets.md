@@ -10,6 +10,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$result = $graphServiceClient->print()->services()->byPrintServiceId('printService-id')->endpoints()->get()->wait();
+$result = $graphServiceClient->escapedPrint()->services()->byPrintServiceId('printService-id')->endpoints()->get()->wait();
 
 ```

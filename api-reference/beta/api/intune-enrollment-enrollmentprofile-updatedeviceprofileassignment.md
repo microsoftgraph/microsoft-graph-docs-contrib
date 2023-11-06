@@ -1,6 +1,6 @@
 ---
 title: "updateDeviceProfileAssignment action"
-description: ""
+description: "Intune Enrollment Enrollmentprofile Updatedeviceprofileassignment Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

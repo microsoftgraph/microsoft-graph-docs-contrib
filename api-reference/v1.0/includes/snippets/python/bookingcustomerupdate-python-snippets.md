@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = BookingCustomer(
 	odata_type = "#microsoft.graph.bookingCustomer",
@@ -14,7 +14,7 @@ request_body = BookingCustomer(
 	email_address = "adele@relecloud.com",
 )
 
-result = await graph_client.solutions.booking_businesses.by_booking_businesse_id('bookingBusiness-id').customers.by_customer_id('bookingCustomerBase-id').patch(request_body = request_body)
+result = await graph_client.solutions.booking_businesses.by_booking_business_id('bookingBusiness-id').customers.by_booking_customer_base_id('bookingCustomerBase-id').patch(request_body)
 
 
 ```

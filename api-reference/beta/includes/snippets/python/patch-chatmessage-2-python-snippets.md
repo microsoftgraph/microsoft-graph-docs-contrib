@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ChatMessage(
 	message_type = ChatMessageType.Message,
@@ -34,7 +34,7 @@ request_body = ChatMessage(
 		content = "<div><div>\n<div>\n<div>\n<div>\n<div><at id=\"0\">Raghav</at><at id=\"1\">TestGlobalBot</at> YEAH",
 	),
 	attachments = [
-	]
+	],
 	mentions = [
 		ChatMessageMention(
 			id = 0,
@@ -68,14 +68,14 @@ request_body = ChatMessage(
 				user = None,
 			),
 		),
-	]
+	],
 	reactions = [
-	]
+	],
 	message_history = [
-	]
+	],
 )
 
-result = await graph_client.teams.by_team_id('team-id').channels.by_channel_id('channel-id').messages.by_message_id('chatMessage-id').patch(request_body = request_body)
+result = await graph_client.teams.by_team_id('team-id').channels.by_channel_id('channel-id').messages.by_chat_message_id('chatMessage-id').patch(request_body)
 
 
 ```

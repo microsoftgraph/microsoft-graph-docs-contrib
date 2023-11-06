@@ -13,14 +13,13 @@ Namespace: microsoft.graph
 
 Select a user and provision the account on-demand. The rate limit for this API is 5 requests per 10 seconds. No user or group will be provisioned on-demand that would not have been provisioned through the regular provisioning cycles.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Synchronization.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All|
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "synchronization_synchronizationjob_provisionondemand" } -->
+[!INCLUDE [permissions-table](../includes/permissions/synchronization-synchronizationjob-provisionondemand-permissions.md)]
 
 [!INCLUDE [rbac-synchronization-apis](../includes/rbac-for-apis/rbac-synchronization-apis.md)]
 
@@ -57,7 +56,9 @@ If successful, this method returns a `200 OK` response code and a stringKeyStrin
 
 ## Examples
 
-### Example 1: Provision users from Azure AD to third-party applications
+<a name='example-1-provision-users-from-azure-ad-to-third-party-applications'></a>
+
+### Example 1: Provision users from Microsoft Entra ID to third-party applications
 
 #### Request
 
@@ -139,7 +140,9 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Sync on-demand from Active Directory to Azure Active Directory (Azure AD cloud sync)
+<a name='example-2-sync-on-demand-from-active-directory-to-azure-active-directory-azure-ad-cloud-sync'></a>
+
+### Example 2: Sync on-demand from Active Directory to Microsoft Entra ID (Microsoft Entra Cloud Sync)
 
 #### Request
 

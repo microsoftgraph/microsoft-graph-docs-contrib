@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = GetSharedUseLicenseUsageReportPostRequestBody(
 	report_name = CloudPcReportName.SharedUseLicenseUsageReport,
@@ -16,12 +16,12 @@ request_body = GetSharedUseLicenseUsageReportPostRequestBody(
 		"LicenseCount",
 		"ClaimedLicenseCount",
 		"DateTimeUTC",
-	]
+	],
 	skip = 0,
 	top = 100,
 )
 
-await graph_client.device_management.virtual_endpoint.reports.get_shared_use_license_usage_report.post(request_body = request_body)
+await graph_client.device_management.virtual_endpoint.reports.get_shared_use_license_usage_report.post(request_body)
 
 
 ```

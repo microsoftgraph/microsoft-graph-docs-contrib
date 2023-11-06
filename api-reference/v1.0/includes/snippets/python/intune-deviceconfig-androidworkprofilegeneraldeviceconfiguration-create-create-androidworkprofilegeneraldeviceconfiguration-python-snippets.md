@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AndroidWorkProfileGeneralDeviceConfiguration(
 	odata_type = "#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration",
@@ -49,7 +49,7 @@ request_body = AndroidWorkProfileGeneralDeviceConfiguration(
 	security_require_verify_apps = True,
 )
 
-result = await graph_client.device_management.device_configurations.post(request_body = request_body)
+result = await graph_client.device_management.device_configurations.post(request_body)
 
 
 ```

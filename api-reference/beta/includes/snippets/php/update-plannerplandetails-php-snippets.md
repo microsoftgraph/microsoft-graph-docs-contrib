@@ -19,7 +19,7 @@ $sharedWith->setAdditionalData($additionalData);
 $requestBody->setSharedWith($sharedWith);
 $categoryDescriptions = new PlannerCategoryDescriptions();
 $categoryDescriptions->setCategory1('Indoors');
-$CategoryDescriptions->setCategory3(null);
+$categoryDescriptions->setCategory3(null);
 $requestBody->setCategoryDescriptions($categoryDescriptions);
 $requestConfiguration = new DetailsRequestBuilderPatchRequestConfiguration();
 $headers = [

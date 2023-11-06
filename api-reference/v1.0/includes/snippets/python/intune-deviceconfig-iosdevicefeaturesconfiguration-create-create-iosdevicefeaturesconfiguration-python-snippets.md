@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = IosDeviceFeaturesConfiguration(
 	odata_type = "#microsoft.graph.iosDeviceFeaturesConfiguration",
@@ -29,11 +29,11 @@ request_body = IosDeviceFeaturesConfiguration(
 							display_name = "Display Name value",
 							bundle_i_d = "Bundle ID value",
 						),
-					]
+					],
 				),
-			]
+			],
 		),
-	]
+	],
 	home_screen_pages = [
 		IosHomeScreenPage(
 			odata_type = "microsoft.graph.iosHomeScreenPage",
@@ -52,13 +52,13 @@ request_body = IosDeviceFeaturesConfiguration(
 									display_name = "Display Name value",
 									bundle_i_d = "Bundle ID value",
 								),
-							]
+							],
 						),
-					]
+					],
 				),
-			]
+			],
 		),
-	]
+	],
 	notification_settings = [
 		IosNotificationSettings(
 			odata_type = "microsoft.graph.iosNotificationSettings",
@@ -72,10 +72,10 @@ request_body = IosDeviceFeaturesConfiguration(
 			badges_enabled = True,
 			sounds_enabled = True,
 		),
-	]
+	],
 )
 
-result = await graph_client.device_management.device_configurations.post(request_body = request_body)
+result = await graph_client.device_management.device_configurations.post(request_body)
 
 
 ```

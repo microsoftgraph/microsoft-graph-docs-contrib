@@ -59,7 +59,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "chatMessage",
           "ChangeType": "Addition",
-          "Description": "Enabled the `$filter` and `$orderBy` query parameters for the [List chat messages](https://learn.microsoft.com/graph/api/chat-list-messages?view=graph-rest-v1.0) method.",
+          "Description": "Enabled the `$filter` and `$orderby` query parameters for the [List chat messages](https://learn.microsoft.com/graph/api/chat-list-messages?view=graph-rest-v1.0) method.",
           "Target": "chatMessage"
         }
       ],
@@ -435,7 +435,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "LIST",
           "ChangeType": "Addition",
-          "Description": "Enabled the `$orderBy` query option to allow users to choose sorting order between **LastModifiedDateTime** and **CreatedDateTime** when retrieving chat messages.",
+          "Description": "Enabled the `$orderby` query option to allow users to choose sorting order between **LastModifiedDateTime** and **CreatedDateTime** when retrieving chat messages.",
           "Target": "chatMessage"
         }
       ],
@@ -5659,7 +5659,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "chat",
           "ChangeType": "Addition",
-          "Description": "Enabled the `$orderBy` query option to allow users to sort chats in order of the most to least recent message when retrieving chats.",
+          "Description": "Enabled the `$orderby` query option to allow users to sort chats in order of the most to least recent message when retrieving chats.",
           "Target": "chat"
         }
       ],
@@ -5677,7 +5677,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "chat",
           "ChangeType": "Addition",
-          "Description": "Enabled the `$orderBy` query option to allow users to sort chats in order of the most to least recent message when retrieving chats.",
+          "Description": "Enabled the `$orderby` query option to allow users to sort chats in order of the most to least recent message when retrieving chats.",
           "Target": "chat"
         }
       ],
@@ -6470,30 +6470,6 @@
     },
     {
       "ChangeList": [
-        {
-          "Id": "2ad1da60-6b6e-4582-a3d9-2358fcb158d6",
-          "ApiChange": "Resource",
-          "ChangedApiName": "audioSourceLevel",
-          "ChangeType": "Addition",
-          "Description": "Added the [audiosourcelevel](https://learn.microsoft.com/graph/api/resources/audiosourcelevel?view=graph-rest-v1.0) resource type.",
-          "Target": "audioSourceLevel"
-        },
-        {
-          "Id": "2ad1da60-6b6e-4582-a3d9-2358fcb158d6",
-          "ApiChange": "Resource",
-          "ChangedApiName": "participantMixerLevel",
-          "ChangeType": "Addition",
-          "Description": "Added the [participantmixerlevel](https://learn.microsoft.com/graph/api/resources/participantmixerlevel?view=graph-rest-v1.0) resource type.",
-          "Target": "participantMixerLevel"
-        },
-        {
-          "Id": "2ad1da60-6b6e-4582-a3d9-2358fcb158d6",
-          "ApiChange": "Resource",
-          "ChangedApiName": "audioDuckingConfiguration",
-          "ChangeType": "Addition",
-          "Description": "Added the [audioduckingconfiguration](https://learn.microsoft.com/graph/api/resources/audioduckingconfiguration?view=graph-rest-v1.0) resource type.",
-          "Target": "audioDuckingConfiguration"
-        },
         {
           "Id": "2ad1da60-6b6e-4582-a3d9-2358fcb158d6",
           "ApiChange": "Resource",

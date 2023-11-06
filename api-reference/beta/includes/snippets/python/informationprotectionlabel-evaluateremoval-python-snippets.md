@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = EvaluateRemovalPostRequestBody(
 	content_info = ContentInfo(
@@ -50,7 +50,7 @@ request_body = EvaluateRemovalPostRequestBody(
 				name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ActionId",
 				value = "00000000-0000-0000-0000-000000000000",
 			),
-		]
+		],
 		additional_data = {
 				"format@odata_type" : "#microsoft.graph.contentFormat",
 				"state@odata_type" : "#microsoft.graph.contentState",
@@ -70,7 +70,7 @@ headers = {
 
 )
 
-result = await graph_client.information_protection.policy.labels.evaluate_removal.post(request_body = request_body, request_configuration = request_configuration)
+result = await graph_client.information_protection.policy.labels.evaluate_removal.post(request_body, request_configuration = request_configuration)
 
 
 ```

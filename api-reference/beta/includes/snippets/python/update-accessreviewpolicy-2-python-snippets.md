@@ -6,13 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AccessReviewPolicy(
 	is_group_owner_management_enabled = True,
 )
 
-result = await graph_client.identity_governance.acce_reviews.policy.patch(request_body = request_body)
+result = await graph_client.identity_governance.access_reviews.policy.patch(request_body)
 
 
 ```

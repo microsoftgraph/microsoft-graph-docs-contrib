@@ -15,6 +15,8 @@ Retrieve the properties of a recently deleted [application](../resources/applica
 
 >**Note:** Deleted security groups are deleted permanently and can't be retrieved through this API.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 The following table shows the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -43,7 +45,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 | Accept  | application/json |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -99,7 +101,7 @@ GET https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

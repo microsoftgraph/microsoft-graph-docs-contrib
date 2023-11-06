@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = EducationRubric(
 	display_name = "Example Credit Rubric",
@@ -29,7 +29,7 @@ request_body = EducationRubric(
 				content_type = BodyType.Text,
 			),
 		),
-	]
+	],
 	qualities = [
 		RubricQuality(
 			description = EducationItemBody(
@@ -49,7 +49,7 @@ request_body = EducationRubric(
 						content_type = BodyType.Text,
 					),
 				),
-			]
+			],
 		),
 		RubricQuality(
 			description = EducationItemBody(
@@ -69,12 +69,12 @@ request_body = EducationRubric(
 						content_type = BodyType.Text,
 					),
 				),
-			]
+			],
 		),
-	]
+	],
 )
 
-result = await graph_client.education.me.rubrics.post(request_body = request_body)
+result = await graph_client.education.me.rubrics.post(request_body)
 
 
 ```

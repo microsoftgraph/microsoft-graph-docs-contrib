@@ -1,9 +1,9 @@
 ---
 title: "forwardingPolicy resource type"
-description: "A forwarding policy defines the specific traffic that is routed through the Global Secure Access services. It is then added to a forwarding profile."
+description: "A forwarding policy defines the specific traffic that is routed through the Global Secure Access services. It's then added to a forwarding profile."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A forwarding policy defines the specific traffic that is routed through the Gloval Secure Access services. It is then added to a [forwarding profile](networkaccess-forwardingprofile.md).
+A forwarding policy defines the specific traffic that is routed through the Global Secure Access services. It's then added to a [forwarding profile](networkaccess-forwardingprofile.md).
 
 Inherits from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md).
 
@@ -40,7 +40,7 @@ Inherits from [microsoft.graph.networkaccess.policy](../resources/networkaccess-
 |policyRules|[microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md) collection| Represents the definition of the policy ruleset that makes up the core definition of a policy. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md). Supports `$expand`.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

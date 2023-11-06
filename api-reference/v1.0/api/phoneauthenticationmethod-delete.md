@@ -3,6 +3,7 @@ title: "Delete phoneAuthenticationMethod"
 description: "Delete a user's phone authentication method."
 ms.localizationpriority: medium
 author: "luc-msft"
+ms.reviewer: intelligentaccesspm
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -11,31 +12,27 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Delete a user's [phone authentication method](../resources/phoneauthenticationmethod.md). This removes the phone number from the user and they will no longer be able to use the number for authentication, whether via SMS or voice calls.
+Delete a user's [phone authentication method](../resources/phoneauthenticationmethod.md). This removes the phone number from the user and they'll no longer be able to use the number for authentication, whether via SMS or voice calls.
 
-A user cannot have an `alternateMobile` number without a `mobile` number. If you want to remove a `mobile` number from a user that also has an `alternateMobile` number, first [update](phoneauthenticationmethod-update.md) the `mobile` number to the new number, then delete the `alternateMobile` number.
+A user can't have an `alternateMobile` number without a `mobile` number. If you want to remove a `mobile` number from a user that also has an `alternateMobile` number, first [update](phoneauthenticationmethod-update.md) the `mobile` number to the new number, then delete the `alternateMobile` number.
 
-If the phone number is the user's default Azure multi-factor authentication (MFA) authentication method, it cannot be deleted. Have the user change their default authentication method, and then delete the number.
+If the phone number is the user's default Azure multi-factor authentication (MFA) authentication method, it can't be deleted. Have the user change their default authentication method, and then delete the number.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### Permissions acting on self
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:---------------------------------------|:-------------------------|
-| Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+<!-- { "blockType": "permissions", "name": "phoneauthenticationmethod_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/phoneauthenticationmethod-delete-permissions.md)]
 
 ### Permissions acting on other users
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:---------------------------------------|:-------------------------|
-| Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | UserAuthenticationMethod.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "phoneauthenticationmethod_delete_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/phoneauthenticationmethod-delete-2-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
@@ -66,17 +63,17 @@ The value of `phoneMethodId` corresponding to the phoneType to delete is one of 
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
 ### Request
 
-The following is an example of the request.
+Here's an example  of the request.
 
 
 # [HTTP](#tab/http)
@@ -125,7 +122,7 @@ DELETE https://graph.microsoft.com/v1.0/me/authentication/phoneMethods/3179e48a-
 
 ### Response
 
-The following is an example of the response.
+Here's an example  of the response.
 
 <!-- {
   "blockType": "response",

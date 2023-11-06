@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AuthenticationFlowsPolicy(
 	self_service_sign_up = SelfServiceSignUpAuthenticationFlowConfiguration(
@@ -14,7 +14,7 @@ request_body = AuthenticationFlowsPolicy(
 	),
 )
 
-result = await graph_client.policies.authentication_flow_policy.patch(request_body = request_body)
+result = await graph_client.policies.authentication_flows_policy.patch(request_body)
 
 
 ```

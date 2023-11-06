@@ -21,11 +21,11 @@ $address->setPostalCode('98052');
 $address->setCountryOrRegion('USA');
 $requestBody->setAddress($address);
 $geoCoordinates = new OutlookGeoCoordinates();
-$GeoCoordinates->setAltitude(null);
+$geoCoordinates->setAltitude(null);
 $geoCoordinates->setLatitude(47);
 $geoCoordinates->setLongitude(-122);
-$GeoCoordinates->setAccuracy(null);
-$GeoCoordinates->setAltitudeAccuracy(null);
+$geoCoordinates->setAccuracy(null);
+$geoCoordinates->setAltitudeAccuracy(null);
 $requestBody->setGeoCoordinates($geoCoordinates);
 
 $result = $graphServiceClient->places()->byPlaceId('place-id')->patch($requestBody)->wait();

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = DelegatedAdminAccessAssignment(
 	access_container = DelegatedAdminAccessContainer(
@@ -27,11 +27,11 @@ request_body = DelegatedAdminAccessAssignment(
 			UnifiedRole(
 				role_definition_id = "3a2c62db-5318-420d-8d74-23affee5d9d5",
 			),
-		]
+		],
 	),
 )
 
-result = await graph_client.tenant_relationships.delegated_admin_relationships.by_delegated_admin_relationship_id('delegatedAdminRelationship-id').acces_assignments.post(request_body = request_body)
+result = await graph_client.tenant_relationships.delegated_admin_relationships.by_delegated_admin_relationship_id('delegatedAdminRelationship-id').access_assignments.post(request_body)
 
 
 ```

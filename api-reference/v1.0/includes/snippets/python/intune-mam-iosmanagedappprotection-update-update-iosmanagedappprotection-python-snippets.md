@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = IosManagedAppProtection(
 	odata_type = "#microsoft.graph.iosManagedAppProtection",
@@ -32,7 +32,7 @@ request_body = IosManagedAppProtection(
 	period_before_pin_reset = "PT3M29.6631862S",
 	allowed_data_storage_locations = [
 		ManagedAppDataStorageLocation.SharePoint,
-	]
+	],
 	contact_sync_blocked = True,
 	print_blocked = True,
 	fingerprint_blocked = True,
@@ -50,7 +50,7 @@ request_body = IosManagedAppProtection(
 	custom_browser_protocol = "Custom Browser Protocol value",
 )
 
-result = await graph_client.device_app_management.io_managed_app_protections.by_io_managed_app_protection_id('iosManagedAppProtection-id').patch(request_body = request_body)
+result = await graph_client.device_app_management.ios_managed_app_protections.by_ios_managed_app_protection_id('iosManagedAppProtection-id').patch(request_body)
 
 
 ```
