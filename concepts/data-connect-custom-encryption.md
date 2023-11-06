@@ -10,7 +10,7 @@ ms.prod: "data-connect"
 
 Microsoft Graph Data Connect (Data Connect) offers encryption capabilities through encryption-at-rest and encryption-in-transit. With [Azure Key Vault (AKV)](https://learn.microsoft.com/en-us/azure/key-vault/general/basic-concepts), customers can generate and store their public and private keys in AKV and refresh them when needed. Additionally, we offer out-of-the-box custom encrypted datasets as well. This article focuses on how to enable custom encryption for datasets within Data Connect 
 
-1. **Encryption for data-at-rest**: We recommend customers use [Azure’s data-at-rest](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-atrest) encryption feature and customer managed keys when setting up their destination Azure storage account. This helps ensure the customer’s destination storage account is properly locked and secure after data delivery. 
+1. **Encryption for data-at-rest**: We recommend customers use [Azure’s data-at-rest's](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-atrest) encryption feature and customer managed keys when setting up their Azure storage account to ensure it's properly locked and secure after data delivery. 
 
 2. **Encryption for data-in-transit**: Data Connect offers encryption for data-in-transit through our custom dataset encryption capability. It also ensures ALL data requests between a customer’s Microsoft 365 and Azure resources are secure using service standards such as HTTPS that are [SOC approved.](https://docs.microsoft.com/en-us/compliance/regulatory/offering-soc-2)
 
@@ -36,7 +36,7 @@ No action is required from the Microsoft 365 admin for this section.
 
 ## Using Azure Key Vault for Custom Encryption
 
-Please follow the steps in "Setting up Azure Key Vault" tab as prerequisite before moving onto the next tab if you do not have an AKV set up.
+Follow the steps in "Setting up Azure Key Vault" tab as prerequisite before moving onto the next tab if you don't have an AKV set up.
 
 Once you have an existing AKV, hover over "Using your existing Azure Key Vault" tab and enable the correct role permissions required. Finally, click "Generating RSA keys with your Azure Key Vault" tab to create the required RSA keys in your AKV for custom encryption.
 
@@ -60,10 +60,10 @@ No action is required from the Microsoft 365 admin for this section.
 
 # [Using your Azure Key Vault](#tab/ExistingAKV)
 
-1. Log into your (Azure portal)[https://ms.portal.azure.com] with your developer credentiials and click on the **Azure Key Vault** icon
+1. Log into your (Azure portal)[https://ms.portal.azure.com] with your developer credentials and click on the **Azure Key Vault** icon
     ![Screenshot of the the Azure portal with Azure Key Vault boxed in](images/azure-portal-akv.png)
 
-2. Click on your Azure Key Vault. In this example, we'll use **LoBEncryption Demo**.
+2. Click on your Azure Key Vault. In this example, we use **LoBEncryption Demo**.
     ![Screenshot of the AKVs listed on the home page](images/akv-main-page.png)
 
 3. Hover over **Access Control (IAM)** and click on **Add**.
@@ -75,14 +75,14 @@ No action is required from the Microsoft 365 admin for this section.
 5. Once you are on the Role Assignment page, within **Role**, type in "Key Vault Crypto User" and select it. Click **Next** when done.
     ![Screenshot shows key vault crypto user on the role assignment page](images/akv-crypto-user.png)
 
-6. Move onto the **Members** tab and enable **Assign Access to** "Users, group, and service principal" and the click on "+ Select Members". Select the correct service principal (Data Connect application name) through the wondow pane pop up on the left. This step ensures that your Data Connect application can connect to your Azure Key Vault. Click **Next** when done.
+6. Move onto the **Members** tab and enable **Assign Access to** "Users, group, and service principal" and the click on "+ Select Members". Select the correct service principal (Data Connect application name) through the window pane on the left. This step ensures that your Data Connect application can connect to your Azure Key Vault. Click **Next** when done.
     ![Screenshot shows how to give access to the correct service principal](images/akv-select-service-principal.png)
 
 7. Review the details within the **Review + assign** tab and click on **Review + Assign** button on the right-below corner. Your Azure Key Vault can now connect to your Data Connect Application
 
 # [Generating RSA keys with your Azure Key Vault](#tab/AKVKeys)
 
-1. Hover over to the main Key Vaults page and click on your Azure Key Vault that you set up from the previous steps. In this example we will use, **LoBEncryption Demo**.
+1. Hover over to the main Key Vaults page and click on your Azure Key Vault that you set up from the previous steps. In this example, we use **LoBEncryption Demo**.
     ![Screenshot of the AKVs listed on the home page](images/akv-main-page.png)
 
 2. Select **Keys** within the left window pane of your AKV.
@@ -91,7 +91,7 @@ No action is required from the Microsoft 365 admin for this section.
 3. Click on **Generate/Import**
     ![Screenshot to generate or import your keys](images/akv-generate-keys.png)
 
-4. Generate a RSA key and name your key to be your Azure Active Directory (AAD) tenant ID. Ensure it's uniquely named (there should only be one key per respective AAD tenant ID).
+4. Generate a RSA key and name your key to be your Azure Active Directory (AAD) tenant ID. Ensure it's has a unique name (there should only be one key per respective AAD tenant ID).
     ![Screenshot going over the specific on how to generate a RSA Key](images/akv-generate-RSA-key.png)
 
     > [!NOTE]
