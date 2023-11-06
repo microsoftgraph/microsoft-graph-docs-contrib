@@ -15,6 +15,10 @@ In addition, find out about new documentation and learning resources for release
 > Features, including APIs and tools, in _preview_ status may change without notice, and some may never be promoted to generally available (GA) status. Do not use preview features in production apps.
 
 
+## November 2023: New and generally available
+### Use SDKs
+The [Microsoft Graph Python SDK](https://github.com/microsoftgraph/msgraph-sdk-python) is now generally available. You can now access the beta and v1 endpoints of Microsoft Graph, with a fluent experience, designed to facilitate discoverability with the best features of the Python language. With simplified initialization and authentication, you can start making requests to Microsoft Graph in just 5 lines of code. The SDK also offers a built-in Retry-Handler that understands 429, 503 and 504 status codes. To learn more about the new Python SDK see [Introducing the Microsoft Graph Python SDK](https://devblogs.microsoft.com/microsoft365dev/introducing-the-microsoft-graph-python-sdk/).
+
 ## October 2023: New and generally available
 
 ### Teamwork and communications | Calls and online meetings
