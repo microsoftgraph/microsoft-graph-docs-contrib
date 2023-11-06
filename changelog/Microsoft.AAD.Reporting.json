@@ -1,57 +1,57 @@
 {
   "changelog": [
-     {
+    {
       "ChangeList": [
         {
-          "ChangeList": [
-            {
-              "Id": "59d08010-8301-4111-b32b-251f53a5e836",
-              "ApiChange": "Enumeration",
-              "ChangedApiName": "filteringPolicyAction",
-              "ChangeType": "Addition",
-              "Description": "Added the **filteringPolicyAction** enumeration type.",
-              "Target": "filteringPolicyAction"
-            },
-            {
-              "Id": "59d08010-8301-4111-b32b-251f53a5e836",
-              "ApiChange": "Enumeration",
-              "ChangedApiName": "remoteNetworkStatus",
-              "ChangeType": "Addition",
-              "Description": "Added the **remoteNetworkStatus** enumeration type.",
-              "Target": "remoteNetworkStatus"
-            },
-            {
-              "Id": "59d08010-8301-4111-b32b-251f53a5e836",
-              "ApiChange": "Resource",
-              "ChangedApiName": "webCategory",
-              "ChangeType": "Addition",
-              "Description": "Added the [webCategory](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-webCategory?view=graph-rest-beta) resource type.",
-              "Target": "webCategory"
-            },
-            {
-              "Id": "59d08010-8301-4111-b32b-251f53a5e836",
-              "ApiChange": "Resource",
-              "ChangedApiName": "remoteNetworks",
-              "ChangeType": "Addition",
-              "Description": "Added the **remoteNetworks** relationship to the [logs](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-logs?view=graph-rest-beta) resource.",
-              "Target": "logs"
-            },
-            {
-              "Id": "59d08010-8301-4111-b32b-251f53a5e836",
-              "ApiChange": "Resource",
-              "ChangedApiName": "remoteNetworkHealthEvent",
-              "ChangeType": "Addition",
-              "Description": "Added the [remoteNetworkHealthEvent](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-remoteNetworkHealthEvent?view=graph-rest-beta) resource",
-              "Target": "remoteNetworkHealthEvent"
-            }
-          ],
           "Id": "59d08010-8301-4111-b32b-251f53a5e836",
-          "Cloud": "Prod",
-          "Version": "beta",
-          "CreatedDateTime": "2023-11-06T00:00:00.8888112Z",
-          "WorkloadArea": "Reports",
-          "SubArea": "Identity and access reports"
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "filteringPolicyAction",
+          "ChangeType": "Addition",
+          "Description": "Added the **filteringPolicyAction** enumeration type.",
+          "Target": "filteringPolicyAction"
         },
+        {
+          "Id": "59d08010-8301-4111-b32b-251f53a5e836",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "remoteNetworkStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **remoteNetworkStatus** enumeration type.",
+          "Target": "remoteNetworkStatus"
+        },
+        {
+          "Id": "59d08010-8301-4111-b32b-251f53a5e836",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the [webCategory](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-webCategory?view=graph-rest-beta) resource type.",
+          "Target": "webCategory"
+        },
+        {
+          "Id": "59d08010-8301-4111-b32b-251f53a5e836",
+          "ApiChange": "Resource",
+          "ChangedApiName": "remoteNetworks",
+          "ChangeType": "Addition",
+          "Description": "Added the **remoteNetworks** relationship to the [logs](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-logs?view=graph-rest-beta) resource.",
+          "Target": "logs"
+        },
+        {
+          "Id": "59d08010-8301-4111-b32b-251f53a5e836",
+          "ApiChange": "Resource",
+          "ChangedApiName": "remoteNetworkHealthEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [remoteNetworkHealthEvent](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-remoteNetworkHealthEvent?view=graph-rest-beta) resource",
+          "Target": "remoteNetworkHealthEvent"
+        }
+      ],
+      "Id": "59d08010-8301-4111-b32b-251f53a5e836",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-11-06T06:17:24.8888112Z",
+      "WorkloadArea": "Reports and audit",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
         {
           "Id": "eb6ff765-ef2b-4365-a4a5-8ccd00136b33",
           "ApiChange": "Resource",
