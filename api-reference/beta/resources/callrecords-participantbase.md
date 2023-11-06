@@ -4,7 +4,7 @@ description: "Represents the base identity of a participant or organizer in a ca
 title: "participantBase resource type"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "users"
+ms.prod: "cloud-communications"
 ---
 
 # participantBase resource type
