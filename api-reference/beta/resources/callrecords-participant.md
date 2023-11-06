@@ -1,36 +1,38 @@
 ---
 author: "mcm223"
-description: "Represents the identity of a call participant."
-title: "Participant resource type"
+description: "Represents the identity of a participant in a callRecord."
+title: "participant resource type"
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: "users"
+ms.prod: "cloud-communications"
 ---
-# Participant resource type
+
+# participant resource type
 
 Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the identity of a participant in a [callRecord](callrecords-callrecord.md) resource. Inherits from the [participantBase](callrecords-participantbase.md) type.
+Represents the identity of a participant in a [callRecord](callrecords-callrecord.md).
+
+Inherits from [participantBase](callrecords-participantbase.md).
 
 ## Methods
+
 | Method          | Return Type                                                                                     | Description                                                   |
 |:----------------|:------------------------------------------------------------------------------------------------|:--------------------------------------------------------------|
-| [List participants](../api/callrecords-participant-list.md)|[microsoft.graph.callRecords.participant](callrecords-participant.md) collection|Retrieve the list of participants associated with a [callRecord](callrecords-callrecord.md) object.|
-
+| [List participants](../api/callrecords-callrecord-list-participant.md)|[microsoft.graph.callRecords.participant](callrecords-participant.md) collection|Get the list of [participants](../resources/callrecords-participant.md) associated with a [callRecord](../resources/callrecords-callrecord.md).|
 
 ## Properties
 
-| Property    | Type                          | Description                                               |
-|:------------|:------------------------------|:----------------------------------------------------------|
-| id          | String                        | Unique identifier for the call participant.     |
-| identity    | [identitySet](identityset.md) | Optional. The identity of the call participant.           |
-
+| Property | Type                       | Description                                             |
+|:---------|:------------------------------|:--------------------------------------------------------|
+| id       | String                        | Unique identifier for the call participant. Inherited from [participantBase](callrecords-participantbase.md). |
+| identity | [identitySet](identityset.md) | The identity of the call participant. Optional. Inherited from [participantBase](callrecords-participantbase.md). |
 
 ## JSON representation
 
-The following example is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -43,11 +45,11 @@ The following example is a JSON representation of the resource.
 } -->
 ```json
 {
-  "id": "string",
+  "id": "String (identifier)",
   "identity": {"@odata.type": "microsoft.graph.identitySet"}
 }
 ```
 
 ## See also
 
-For examples that show how to use **participant** resource, see [call records](callrecords-callrecord.md).
+For examples that show how to use the **participant** resource, see [callRecord](callrecords-callrecord.md).
