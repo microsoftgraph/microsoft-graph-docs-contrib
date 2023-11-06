@@ -1,6 +1,6 @@
 ---
 title: "Post federatedTokenValidation Policy"
-description: "Create or update verified domains for which AAD will validate whether federated account's root domain matches with mapped AAD account's root domain."
+description: "Create or update verified domains for which Entra Id validates whether federated account's root domain matches with mapped Entra Id account's root domain."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -18,7 +18,7 @@ Create or update the properties and relationships of a [federatedTokenValidation
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### API re-uses existing Graph permissions
+### API reuses existing Graph permissions
 
 | Permissions | Type | Entities/APIs covered |
 | :-- | :-- | :-- |
@@ -29,18 +29,18 @@ One of the following permissions is required to call this API. To learn more, in
 
 | ScopeName | DisplayName | Description | Type | Admin Consent? | Entities/APIs covered |
 | :-- | :-- | :-- | :-- | :-- | :-- |
-| `Policy.ReadWrite.FedTokenValidation` | Read and write Federated Token Validation Policy | This role can read and write Federated Token Validation Policy that determines which domains have enabled the validation | Delegated | Yes | All |
+| `Policy.ReadWrite.FedTokenValidation` | Read and write Federated Token Validation Policy | This role can read and write Federated Token Validation Policy that determines which domains have the validation enabled | Delegated | Yes | All |
 
 ### Actions
 
 | Permission | Action | Description |
 | :-- | :-- | :-- |
-| `Policy.ReadWrite.FedTokenValidation` | `/policies/federatedTokenValidationPolicy` | Update verified domains for which AAD will perform validation (matching federated account's root domain matches with mapped AAD account's root domain) before granting access. |
-| `Policy.Read.All`                           | `/policies/federatedTokenValidationPolicy` | Get verified domains for which AAD will perform validation (matching federated account's root domain matches with mapped AAD account's root domain) before granting access.    |
+| `Policy.ReadWrite.FedTokenValidation` | `/policies/federatedTokenValidationPolicy` | Update verified domains for which Entra Id performs validation (matching federated account's root domain matches with mapped Entra Id account's root domain) before granting access. |
+| `Policy.Read.All`                           | `/policies/federatedTokenValidationPolicy` | Get verified domains for which Entra Id performs validation (matching federated account's root domain matches with mapped Entra Id account's root domain) before granting access.    |
 
 ## HTTP request
 
-Create or update the verified managed or federated root domains for which AAD will perform validation (matching federated account's root domain matches with mapped AAD account's root domain) before granting access.
+Create or update the verified managed or federated root domains for which Entra Id performs validation (matching federated account's root domain matches with mapped Entra Id account's root domain) before granting access.
 
 ```http
 POST /policies/federatedTokenValidationPolicy/
@@ -55,13 +55,13 @@ POST /policies/federatedTokenValidationPolicy/
 ## Request body
 |Property|Type|Description|
 |:---|:---|:---|
-| `validatingDomains` | `microsoft.graph.validatingDomains` | Verified AAD domains for which AAD will validate that federated account's root domain matches with mapped AAD account's root domain. |
-| `rootDomains` | `graph.rootDomains` | Defines to which domains the validation will apply to. Possible values are `all`, `allFederated`, `allManaged`, `enumerated`, `allManagedAndEnumeratedFederated`, or `unknownFutureValue`. |
-| `domainNames` | `Collection(Edm.String)` | List of federated and/or managed root domains for which AAD will perform the validation. |
+| `validatingDomains` | `microsoft.graph.validatingDomains` | Verified Entra Id domains for which Entra Id validates that federated account's root domain matches with mapped Entra Id account's root domain. |
+| `rootDomains` | `graph.rootDomains` | Defines to which domains the validation applies to. Possible values are `all`, `allFederated`, `allManaged`, `enumerated`, `allManagedAndEnumeratedFederated`, or `unknownFutureValue`. |
+| `domainNames` | `Collection(Edm.String)` | List of federated and/or managed root domains for which Entra Id performs the validation. |
 
 ## Response
 
-If successful, this method returns a `201 Created` response code if it is created for the first time or `204 No Content` response code on successful update. It does not return anything in the response body.
+If successful, this method returns a `201 Created` response code if it's created for the first time or `204 No Content` response code on successful update. It doesn't return anything in the response body.
 
 [!Note]:
 > In case a GET is executed on the policy before the policy is created using a POST this method returns a `404 Not Found` response code with a message `Resource does not exist or one of its queried reference-property objects are not present`.
