@@ -1,30 +1,33 @@
 ---
 author: "mcm223"
-description: "Represents the identity of a call organizer."
-title: "Organizer resource type"
+description: "Represents the identity of a call or meeting organizer in a callRecord."
+title: "organizer resource type"
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "users"
 ---
+
 # organizer resource type
 
 Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the identity of a call or meeting organizer in a [callRecord](callrecords-callrecord.md) resource. Inherits from the [participantBase](callrecords-participantbase.md) type.
+Represents the identity of a call or meeting organizer in a [callRecord](callrecords-callrecord.md). 
+
+Inherits from [participantBase](callrecords-participantbase.md).
 
 ## Properties
 
-| Property    | Type                       | Description                                             |
+| Property | Type                       | Description                                             |
 |:---------|:------------------------------|:--------------------------------------------------------|
-| id       | String                        | Unique identifier for the call organizer.     |
-| identity | [identitySet](identityset.md) | Optional. The identity of the call organizer.           |
+| id       | String                        | Unique identifier for the call organizer. Inherited from [participantBase](callrecords-participantbase.md). |
+| identity | [identitySet](identityset.md) | The identity of the call organizer. Optional. Inherited from [participantBase](callrecords-participantbase.md). |
 
 
 ## JSON representation
 
-The following example is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -37,7 +40,7 @@ The following example is a JSON representation of the resource.
 } -->
 ```json
 {
-  "id": "string",
+  "id": "String (identity)",
   "identity": {"@odata.type": "microsoft.graph.identitySet"}
 }
 ```
