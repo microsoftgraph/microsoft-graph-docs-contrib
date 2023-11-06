@@ -46,4 +46,4 @@ The following JSON representation shows the resource type.
 
 ## See also
 
-For examples that show how to use **organizer** resources, see [call records](callrecords-callrecord.md).
+For examples that show how to use the **organizer** resource, see [callRecord](callrecords-callrecord.md).
