@@ -2,6 +2,7 @@
 title: "authenticationStrengthPolicy: updateAllowedCombinations"
 description: "Update the allowedCombinations collection for a given authentication strength policy object."
 author: "InbarckMS"
+ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

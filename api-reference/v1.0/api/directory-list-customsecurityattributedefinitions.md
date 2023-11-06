@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "directory_list_customsecurityattributedefinitions" } -->
 [!INCLUDE [permissions-table](../includes/permissions/directory-list-customsecurityattributedefinitions-permissions.md)]
 
-The signed-in user must also be assigned one of the following [directory roles](/azure/active-directory/roles/permissions-reference):
+The signed-in user must also be assigned one of the following [directory roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
 + Attribute Definition Reader
 + Attribute Assignment Administrator

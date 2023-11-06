@@ -3,6 +3,7 @@ title: "Microsoft Entra authentication methods policy API overview"
 description: "Authentication methods policies define which authentication methods can be used by users in Azure AD."
 ms.localizationpriority: medium
 author: "jpettere"
+ms.reviewer: intelligentaccesspm
 ms.prod: "identity-and-sign-in"
 doc_type: "conceptualPageType"
 ms.date: 02/05/2022

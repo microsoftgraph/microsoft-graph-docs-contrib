@@ -2,6 +2,7 @@
 title: "Delete softwareOathAuthenticationMethod"
 description: "Deletes a softwareOathAuthenticationMethod object."
 author: "jpettere"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

@@ -2,6 +2,7 @@
 title: "Get smsAuthenticationMethodConfiguration"
 description: "Read the properties and relationships of a smsAuthenticationMethodConfiguration object."
 author: "luc-msft"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
