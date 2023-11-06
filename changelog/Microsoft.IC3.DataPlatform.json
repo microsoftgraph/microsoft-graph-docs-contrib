@@ -21,6 +21,14 @@
                 {
                     "Id": "5c4af81d-eebf-4c90-a5a9-c23d898dee72",
                     "ApiChange": "Property",
+                    "ChangedApiName": "identity",
+                    "ChangeType": "Deprecation",
+                    "Description": "Deprecated the **identity** property of the [participantEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participantEndpoint?view=graph-rest-beta) resource. The **identity** property is deprecated and will stop returning data on June 30, 2026. Going forward, use the **associatedIdentity** property.",
+                    "Target": "participantEndpoint"
+                },
+                {
+                    "Id": "5c4af81d-eebf-4c90-a5a9-c23d898dee72",
+                    "ApiChange": "Property",
                     "ChangedApiName": "associatedIdentity",
                     "ChangeType": "Addition",
                     "Description": "Added the **associatedIdentity** property to the [participantEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participantEndpoint?view=graph-rest-beta) resource.",
