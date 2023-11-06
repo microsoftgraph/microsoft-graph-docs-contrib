@@ -2,6 +2,40 @@
     "changelog": [
         {
             "ChangeList": [
+              {
+                "Id": "8096e20f-92f9-43e1-946a-32eefd298f8f",
+                "ApiChange": "Enumeration",
+                "ChangedApiName": "cloudPcDiskEncryptionType",
+                "ChangeType": "Addition",
+                "Description": "Added the **cloudPcDiskEncryptionType** enumeration type.",
+                "Target": "cloudPcDiskEncryptionType"
+              },
+              {
+                "Id": "8096e20f-92f9-43e1-946a-32eefd298f8f",
+                "ApiChange": "Resource",
+                "ChangedApiName": "cloudPcTenantEncryptionSetting",
+                "ChangeType": "Addition",
+                "Description": "Added the [cloudPcTenantEncryptionSetting](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcTenantEncryptionSetting?view=graph-rest-beta) resource type.",
+                "Target": "cloudPcTenantEncryptionSetting"
+              },
+              {
+                "Id": "8096e20f-92f9-43e1-946a-32eefd298f8f",
+                "ApiChange": "Method",
+                "ChangedApiName": "retrieveTenantEncryptionSetting",
+                "ChangeType": "Addition",
+                "Description": "Added the [retrieveTenantEncryptionSetting](https://learn.microsoft.com/en-us/graph/api/intune-virtualEndpoint?view=graph-rest-beta) method to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/intune-virtualEndpoint?view=graph-rest-beta) resource.",
+                "Target": "virtualEndpoint"
+              }
+            ],
+            "Id": "8096e20f-92f9-43e1-946a-32eefd298f8f",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-11-06T01:26:32.7526479Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
                 {
                     "Id": "12f93700-b666-4c5c-b569-7db20691c5b3",
                     "ApiChange": "Member",
@@ -26,7 +60,7 @@
             "WorkloadArea": "Devices and apps",
             "SubArea": "Cloud PC"
         },
-      {
+        {
             "ChangeList": [
                 {
                     "Id": "4d35dcf2-2f6c-413d-a4c4-c7770152a77b",
