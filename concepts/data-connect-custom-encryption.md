@@ -23,7 +23,7 @@ Set up custom encryption by generating keys in AKV or linking an existing AKV. E
 
 ## Enabling Encryption for your Data Connect Application.
 
-If you have an existing AKV with the correct setup, you can enable encryption during app registration in one flow. [Check the below section on AKV](./data-connect-custom-encryption.md#using-azure-key-vault-for-custom-encryption) to ensure you correctly set up your AKV for custom encryption during app registration.
+If you have an existing AKV with the correct setup, you can enable encryption during app registration in one flow. [Check the below section on Azure Key Vault](./data-connect-custom-encryption.md#using-azure-key-vault-for-custom-encryption) to ensure you correctly set up your AKV for custom encryption during app registration.
 
 As a prerequisite, we recommend setting up your application from the instructions from our (Getting Started)[../includes/data-connect-quickstart-01.md] and using [our simplified onboarding experience.](./onboarding-experience-overview.md)
 
@@ -42,25 +42,25 @@ Once you have an existing AKV, hover over "Using your existing Azure Key Vault" 
 
 No action is required from the Microsoft 365 admin for this section.
 
-# [Setting up Azure Key Vault](#tab/SettingUpAKV)
+# [Setting up your Azure Key Vault](#tab/SettingUpAKV)
 
-1. Log into your (Azure portal)[www.portal.azure.com] with your developer credentials and click on the **Azure Key Vault** icon
+1. Log into your (Azure portal)[https://ms.portal.azure.com] with your developer credentials and click on the **Azure Key Vault** icon
     ![Screenshot of the the Azure portal with Azure Key Vault boxed in](images/azure-portal-akv.png)
 
 2. If you don't have an existing AKV, hover over to **Create**. Follow the steps to [create a new instance of AKV.](https://learn.microsoft.com/en-us/azure/key-vault/general/quick-create-portal) 
     ![Screenshot of how to create Azure Key Vault](images/create-akv.png)
 
-3. Click "Azure role-based access control (recommended)" underneath **Permission model** for the later steps to apply. 
+3. Click **Azure role-based access control (recommended)** underneath **Permission model** for the later steps to apply. 
     ![Screenshot explains permission models during AKV registration](images/akv-permission-model.png)
 
-4. Enable public access to allow Data Connect to access any public keys generated and stored. Data Connect is authorized only to access select public keys. 
+4. **Enable public access** to allow Data Connect to access any public keys generated and stored. Data Connect is authorized only to access select public keys. 
     ![Screenshot explains networking for Azure Key Vault](images/akv-networking.png)
 
 5. Follow through the steps and select **Review + Create** when done.
 
-# [Using your existing Azure Key Vault](#tab/ExistingAKV)
+# [Using your Azure Key Vault](#tab/ExistingAKV)
 
-1. Log into your (Azure portal)[www.portal.azure.com] with your developer credentiials and click on the **Azure Key Vault** icon
+1. Log into your (Azure portal)[https://ms.portal.azure.com] with your developer credentiials and click on the **Azure Key Vault** icon
     ![Screenshot of the the Azure portal with Azure Key Vault boxed in](images/azure-portal-akv.png)
 
 2. Click on your Azure Key Vault. In this example, we'll use **LoBEncryption Demo**.
@@ -75,7 +75,7 @@ No action is required from the Microsoft 365 admin for this section.
 5. Once you are on the Role Assignment page, within **Role**, type in "Key Vault Crypto User" and select it. Click **Next** when done.
     ![Screenshot shows key vault crypto user on the role assignment page](images/akv-crypto-user.png)
 
-6. Move onto the **Members** tab and enable **Assign Access to** "Users, group, and service principal" and the click on "+ Select Members". Select the correct service principal (Data Connect application name) through the wondow pane pop up on the left. This step ensures that your Data Connect application has access to connect to Azure Key Vault. Click **Next** when done.
+6. Move onto the **Members** tab and enable **Assign Access to** "Users, group, and service principal" and the click on "+ Select Members". Select the correct service principal (Data Connect application name) through the wondow pane pop up on the left. This step ensures that your Data Connect application can connect to your Azure Key Vault. Click **Next** when done.
     ![Screenshot shows how to give access to the correct service principal](images/akv-select-service-principal.png)
 
 7. Review the details within the **Review + assign** tab and click on **Review + Assign** button on the right-below corner. Your Azure Key Vault can now connect to your Data Connect Application
