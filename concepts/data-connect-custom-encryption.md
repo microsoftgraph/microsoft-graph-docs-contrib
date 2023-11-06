@@ -44,7 +44,7 @@ No action is required from the Microsoft 365 admin for this section.
 
 # [Setting up your Azure Key Vault](#tab/SettingUpAKV)
 
-1. Log into your (Azure portal)[https://ms.portal.azure.com] with your developer credentials and click on the **Azure Key Vault** icon
+1. Log into your [Azure portal](https://ms.portal.azure.com) with your developer credentials and click on the **Azure Key Vault** icon
     ![Screenshot of the the Azure portal with Azure Key Vault boxed in](images/azure-portal-akv.png)
 
 2. If you don't have an existing AKV, hover over to **Create**. Follow the steps to [create a new instance of AKV.](https://learn.microsoft.com/en-us/azure/key-vault/general/quick-create-portal) 
@@ -60,7 +60,7 @@ No action is required from the Microsoft 365 admin for this section.
 
 # [Using your Azure Key Vault](#tab/ExistingAKV)
 
-1. Log into your (Azure portal)[https://ms.portal.azure.com] with your developer credentials and click on the **Azure Key Vault** icon
+1. Log into your [Azure portal](https://ms.portal.azure.com) with your developer credentials and click on the **Azure Key Vault** icon
     ![Screenshot of the the Azure portal with Azure Key Vault boxed in](images/azure-portal-akv.png)
 
 2. Click on your Azure Key Vault. In this example, we use **LoBEncryption Demo**.
@@ -86,6 +86,7 @@ No action is required from the Microsoft 365 admin for this section.
     ![Screenshot of the AKVs listed on the home page](images/akv-main-page.png)
 
 2. Select **Keys** within the left window pane of your AKV.
+
     ![Screenshot of left window pane including Keys](images/akv-keys.png)
 
 3. Click on **Generate/Import**
