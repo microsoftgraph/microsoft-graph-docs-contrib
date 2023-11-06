@@ -1,23 +1,19 @@
 ---
-title: "List callRecord participants"
-description: "Retrieve the list of participants for a callRecord."
+title: "List participants"
+description: "Get the list of participants associated with a callRecord."
 ms.localizationpriority: medium
 author: "mcm223"
 ms.prod: "cloud-communications"
 doc_type: "apiPageType"
 ---
 
-# List callRecord participants
+# List participants
 
 Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [participants](../resources/callrecords-participant.md) associated with a [callRecord](../resources/callrecords-callrecord.md) object.
-
-If the participant list is truncated, a `participants_v2@odata.nextLink` value will be provided to retrieve the next page of participants. The maximum page size for participants is 130 entries.
-
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+Get the list of [participants](../resources/callrecords-participant.md) associated with a [callRecord](../resources/callrecords-callrecord.md).
 
 ## Permissions
 
@@ -43,15 +39,15 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name      |Description|
 |:----------|:----------|
-| $select | Use the `$select` query parameter to return a set of properties that are different than the default set for an individual resource or a collection of resources.|
+| $select   | Use the `$select` query parameter to return a set of properties that are different than the default set for an individual resource or a collection of resources.|
 
 ## Request headers
 
 | Name      |Description|
 |:----------|:----------|
 | Authorization | Bearer {token} |
-| Prefer: odata.maxpagesize={x} | Specifies a preferred integer {x} page size for paginated results. Optional. This value must be equal to or less than the maximum allowable page size. |
-| Prefer: include-unknown-enum-members | Enables evolvable enum values beyond the sentinel value. See [Best Practices](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) for more information. Optional. |
+| Prefer: odata.maxpagesize={x} | Specifies a preferred integer {x} page size for paginated results. This value must be equal to or less than the maximum allowable page size. Optional. |
+| Prefer: include-unknown-enum-members | Enables evolvable enum values beyond the sentinel value. For more information, see [Best practices for working with Microsoft Graph](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). Optional. |
 | Prefer: omit-values=nulls | Removes null or empty values from the response. Optional. |
 
 ## Request body
@@ -62,13 +58,17 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and the requested list of [participant](../resources/callrecords-participant.md) objects in the response body.
 
+When a result set spans multiple pages, Microsoft Graph returns that page with an **@odata.nextLink** property in the response that contains a URL to the next page of results. If that property is present, continue making additional requests with the **@odata.nextLink** URL in each response, until all the results are returned. For more information, see [paging Microsoft Graph data in your app](/graph/paging). The maximum page size for participants is 130 entries.
+
 ## Examples
 
-### Example 1: Get participant list
+### Example 1: Get the list of participants
+
+The following example shows a request to get the list of [participants](../resources/callrecords-participant.md) for a [callRecord](../resources/callrecords-callrecord.md).
 
 #### Request
 
-The following example shows a request to get the list of [participants](../resources/callrecords-participant.md) for a [callRecord](../resources/callrecords-callrecord.md).
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -88,8 +88,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.callRecords.participant",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.callRecords.participant)"
 } -->
 
 ```http
