@@ -1,5 +1,5 @@
 ---
-title: "List monthly summary"
+title: "List monthly insightSummary"
 description: "Get a list of monthly insightSummary on apps registered in your Microsoft Entra External ID for customers tenant."
 author: "srutto"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
 
-# List summary
+# List monthly insightSummary
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -36,7 +36,7 @@ GET /reports/userInsightsRoot/monthly/summary
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -63,7 +63,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta//reports/userInsightsRoot/monthly/summary
 ```
 
-
 ### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -88,4 +87,3 @@ Content-Type: application/json
   ]
 }
 ```
-

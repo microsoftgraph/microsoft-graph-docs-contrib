@@ -1,5 +1,5 @@
 ---
-title: "authenticationsMetric resource type"
+title: "authentications resource type"
 description: "Insights on authentications for registered apps within your Microsoft Entra ID customer tenant during a specific timeframe."
 author: "srutto"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
-# authenticationsMetric resource type
+# authentications resource type
 
 Namespace: microsoft.graph
 
@@ -18,19 +18,19 @@ Insights on authentications for registered apps within your Microsoft Entra ID c
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List daily authenticationsMetrics](../api/dailyuserinsightmetricsroot-list-authentications.md)|Daily [authenticationsMetric](../resources/authenticationsmetric.md) collection|Get a list of the daily [authenticationsMetric](../resources/authenticationsmetric.md) objects and their properties.|
-|[List monthly authenticationsMetrics](../api/monthlyuserinsightmetricsroot-list-authentications.md)|Monthly [authenticationsMetric](../resources/authenticationsmetric.md) collection|Get a list of the monthly [authenticationsMetric](../resources/authenticationsmetric.md) objects and their properties.|
+|[List daily authentications](../api/dailyuserinsightmetricsroot-list-authentications.md)|[authentication](../resources/authenticationsmetric.md) collection|Get a list of the daily [authentications](../resources/authenticationsmetric.md) objects and their properties.|
+|[List monthly authentications](../api/monthlyuserinsightmetricsroot-list-authentications.md)|[authentications](../resources/authenticationsmetric.md) collection|Get a list of the monthly [authentications](../resources/authenticationsmetric.md) objects and their properties.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| ID | String | Identifier for the user insight.  |
+| id | String | Identifier for the user insight.  |
 | factDate | Date | The date of the user insight. |
 | attemptsCount | Int64 | Number of authentication requests made. Supports `$filter` (`eq`). |
 | successCount | Int64 | Number of successful authentication requests. Supports `$filter` (`eq`). |
 | os | String | The platform for the device that the customers used. Supports `$filter` (`eq`). |
 | country | String | The location where the customers authenticated from. Supports `$filter` (`eq`). |
-| appID | String | The appID. Supports `$filter` (`eq`). |
+| appId | String | The appID. Supports `$filter` (`eq`). |
 
 ## Relationships
 None.

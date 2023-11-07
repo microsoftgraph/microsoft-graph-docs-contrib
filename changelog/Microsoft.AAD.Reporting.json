@@ -1865,64 +1865,6 @@
     {
       "ChangeList": [
         {
-          "Id": "6fbb8dc5-2cec-42a0-895c-8cb1c4c9c49f",
-          "ApiChange": "Resource",
-          "ChangedApiName": "dailyInactiveUsersByApplicationMetric",
-          "ChangeType": "Addition",
-          "Description": "Added the [dailyInactiveUsersByApplicationMetric](https://learn.microsoft.com/en-us/graph/api/resources/dailyInactiveUsersByApplicationMetric?view=graph-rest-beta) resource.",
-          "Target": "dailyInactiveUsersByApplicationMetric"
-        },
-        {
-          "Id": "6fbb8dc5-2cec-42a0-895c-8cb1c4c9c49f",
-          "ApiChange": "Resource",
-          "ChangedApiName": "dailyInactiveUsersMetric",
-          "ChangeType": "Addition",
-          "Description": "Added the [dailyInactiveUsersMetric](https://learn.microsoft.com/en-us/graph/api/resources/dailyInactiveUsersMetric?view=graph-rest-beta) resource.",
-          "Target": "dailyInactiveUsersMetric"
-        },
-        {
-          "Id": "6fbb8dc5-2cec-42a0-895c-8cb1c4c9c49f",
-          "ApiChange": "Resource",
-          "ChangedApiName": "inactiveUsersByApplicationMetricBase",
-          "ChangeType": "Addition",
-          "Description": "Added the [inactiveUsersByApplicationMetricBase](https://learn.microsoft.com/en-us/graph/api/resources/inactiveUsersByApplicationMetricBase?view=graph-rest-beta) resource.",
-          "Target": "inactiveUsersByApplicationMetricBase"
-        },
-        {
-          "Id": "6fbb8dc5-2cec-42a0-895c-8cb1c4c9c49f",
-          "ApiChange": "Resource",
-          "ChangedApiName": "inactiveUsersMetricBase",
-          "ChangeType": "Addition",
-          "Description": "Added the [inactiveUsersMetricBase](https://learn.microsoft.com/en-us/graph/api/resources/inactiveUsersMetricBase?view=graph-rest-beta) resource.",
-          "Target": "inactiveUsersMetricBase"
-        },
-        {
-          "Id": "6fbb8dc5-2cec-42a0-895c-8cb1c4c9c49f",
-          "ApiChange": "Resource",
-          "ChangedApiName": "monthlyInactiveUsersByApplicationMetric",
-          "ChangeType": "Addition",
-          "Description": "Added the [monthlyInactiveUsersByApplicationMetric](https://learn.microsoft.com/en-us/graph/api/resources/monthlyInactiveUsersByApplicationMetric?view=graph-rest-beta) resource.",
-          "Target": "monthlyInactiveUsersByApplicationMetric"
-        },
-        {
-          "Id": "6fbb8dc5-2cec-42a0-895c-8cb1c4c9c49f",
-          "ApiChange": "Resource",
-          "ChangedApiName": "monthlyInactiveUsersMetric",
-          "ChangeType": "Addition",
-          "Description": "Added the [monthlyInactiveUsersMetric](https://learn.microsoft.com/en-us/graph/api/resources/monthlyInactiveUsersMetric?view=graph-rest-beta) resource.",
-          "Target": "monthlyInactiveUsersMetric"
-        }
-      ],
-      "Id": "6fbb8dc5-2cec-42a0-895c-8cb1c4c9c49f",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2023-10-06T17:18:21.9764831Z",
-      "WorkloadArea": "Reports",
-      "SubArea": "Identity and access reports"
-    },
-    {
-      "ChangeList": [
-        {
           "Id": "921c584a-25cb-4561-936f-966ba933cccd",
           "ApiChange": "Resource",
           "ChangedApiName": "activeUsersBreakdownMetric",

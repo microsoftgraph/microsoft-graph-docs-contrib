@@ -1,13 +1,13 @@
 ---
-title: "userSignUpMetric resource type"
-description: "Insights for user sign ups for a specific period."
+title: "userSignUp resource type"
+description: "Insights for user sign-ups on apps registered in your Microsoft Entra External ID for customers tenant for a specific period."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
-# userSignUpMetric resource type
+# userSignUp resource type
 
 Namespace: microsoft.graph
 
@@ -18,16 +18,15 @@ Insights for user sign-ups on apps registered in your Microsoft Entra External I
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List daily userSignUpMetrics](../api/dailyuserinsightmetricsroot-list-signups.md)|[daily userSignUpMetrics](../resources/usersignupmetric.md) collection|Get a list of the daily [userSignUpMetric](../resources/usersignupmetric.md) objects and their properties.|
-|[List monthly userSignUpMetrics](../api/monthlyuserinsightmetricsroot-list-signups.md)|[monthly userSignUpMetrics](../resources/usersignupmetric.md) collection|Get a list of the monthly [userSignUpMetric](../resources/usersignupmetric.md) objects and their properties.|
-|
+|[List daily userSignUp](../api/dailyuserinsightmetricsroot-list-signups.md)|[userSignUp](../resources/usersignupmetric.md) collection|Get a list of the daily [userSignUp](../resources/usersignupmetric.md) objects and their properties.|
+|[List monthly userSignUp](../api/monthlyuserinsightmetricsroot-list-signups.md)|[userSignUp](../resources/usersignupmetric.md) collection|Get a list of the monthly [userSignUp](../resources/usersignupmetric.md) objects and their properties.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |count|Int64|Number of users who signed up. Supports `$filter` (`eq`).|
 |factDate|Date|The date of the user insight.|
-|ID|String|Identifier for the user insight.|
+|id|String|Identifier for the user insight.|
 |os|String|The device plaform that the customers used. Supports `$filter` (`eq`).|
 
 ## Relationships
@@ -51,4 +50,3 @@ The following JSON representation shows the resource type.
   "os": "String"
 }
 ```
-

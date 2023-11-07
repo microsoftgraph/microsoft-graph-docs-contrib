@@ -36,7 +36,7 @@ GET /reports/userInsights/monthly/authentications
 ```
 
 ## Optional query parameters
-This method supports the $filter, $select, server-side paging through a large response, and in-clause filter OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -62,7 +62,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/reports/userInsights/monthly/authentications
 ```
-
 
 ### Response
 The following example shows the response.
@@ -110,4 +109,3 @@ Content-Type: application/json
   ]
 }
 ```
-

@@ -1,19 +1,19 @@
 ---
-title: "userCountMetric resource type"
-description: "Insights of the total users in the tenant over time."
+title: "userCount resource type"
+description: "Insights for the total users on apps registered in your Microsoft Entra External ID for customers tenant for a specific period."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
-# userCountMetric resource type
+# userCount resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Insights of the total users in the tenant over time.
+Insights for the total users on apps registered in your Microsoft Entra External ID for customers tenant for a specific period.
 
 ## Methods
 |Method|Return type|Description|
@@ -23,7 +23,7 @@ Insights of the total users in the tenant over time.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| ID|String| Identifier for the insight.|
+| id|String| Identifier for the insight.|
 | factDate|Date| Date of the insight.|
 | count|String| Total users in the tenant at over time.|
 ## Relationships
@@ -46,4 +46,3 @@ The following JSON representation shows the resource type.
   "count": "Integer"
 }
 ```
-

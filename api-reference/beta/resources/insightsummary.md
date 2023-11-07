@@ -1,6 +1,6 @@
 ---
 title: "insightSummary resource type"
-description: "Summary of all usage insights for a specific time period."
+description: "Summary of all usage insights on apps registered in your Microsoft Entra External ID for customers tenant for a specific time period."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -14,26 +14,24 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Summary of all usage insights on apps registered in your Microsoft Entra External ID for customers tenant for a specific time period.
-
-> **_NOTE:_**
-> A user (in activeUsers) may be counted more that once if they use multiple device platforms. This shall be communicated to the customer.
-> This endpoint is meant to provide a summary of the insights. A breakdown of each insight is available in the latter entities.
+A user (in activeUsers) may be counted more that once if they use multiple device platforms.
+This endpoint is meant to provide a summary of the insights. A breakdown of each insight is available in the latter entities.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List dailyInsightSummaries](../api/dailyuserinsightmetricsroot-list-summary.md)|[insightSummary](../resources/insightsummary.md) collection.|Get a list of the daily [insightSummary](../resources/insightsummary.md) objects and their properties.|
-|[Get monthlyInsightSummary](../api/monthlyuserinsightmetricsroot-list-summary.md)|[insightSummary](../resources/insightsummary.md)|Get a list of the monthly [insightSummary](../resources/insightsummary.md) objects and their properties.|
+|[Get monthlyInsightSummary](../api/monthlyuserinsightmetricsroot-list-summary.md)|[insightSummary](../resources/insightsummary.md) collection.|Get a list of the monthly [insightSummary](../resources/insightsummary.md) objects and their properties.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |activeUsers|Int64|Daily active users.|
-|appID|String|Application ID the users sent requests to.|
+|appId|String|Application ID the users sent requests to.|
 |authenticationCompletions|Int64|Daily authentication completions.|
 |authenticationRequests|Int64|Daily authentication requests.|
 |factDate|Date|Day/Month of the insight.|
-|ID|String|Identifier for the insight.|
+|id|String|Identifier for the insight.|
 |os|String|The platform for the device that the customers used. Supports `$filter` (`eq`).|
 |securityTextCompletions|Int64|Daily MFA SMS completions.|
 |securityTextRequests|Int64|Daily MFA SMS requests.|
@@ -68,4 +66,3 @@ The following JSON representation shows the resource type.
   "appId": "String"
 }
 ```
-
