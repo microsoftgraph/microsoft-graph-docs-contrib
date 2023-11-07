@@ -29,7 +29,7 @@ Set up custom encryption by generating keys in AKV or linking an existing AKV. E
 1. For existing applications: log into your [Azure Portal](https://ms.portal.azure.com). 
     1. Click on **Microsoft Graph Data Connect** and select your current application. 
     2. Click **properties**. Click on **Single Tenant** and toggle on encryption. 
-    3. Drop down to select your Azure Key Vault URI (name of the AKV) or follow steps 3.4 and 3.5 to create a new AKV. Then **Update Properties** to save. 
+    3. Drop down to select your Azure Key Vault URI (name of the AKV) or follow steps 3.d and 3.e to create a new AKV. Then **Update Properties** to save. 
     4. Follow step 5 to ensure you AKV has the correct role permissions and populate it with the correct RSA keys.
 
     ![Screenshot covers MGDC on app portal](images/portal-MGDC.png)
@@ -43,11 +43,12 @@ Set up custom encryption by generating keys in AKV or linking an existing AKV. E
 3. Fill out the application details on the **Registration Info** page.
     1. Under **Publish Type** select **Single Tenant** if you intend to enable encryption as on. 
     2. Next, **Enable encryption for datasets**.
-    > [!NOTE]
-    > Encryption will apply to ALL the eligible datasets requested in the application. Click on the tool tip next to encryption to learn which datasets are elgible.
     3. For **Key Vault**, drop down and select the AKV URI (name of the AKV).
     4. If your AKV doesn't exist, open a new tab and follow the steps in ["Setting up your Azure Key Vault" tab.](./data-connect-custom-encryption.md#using-azure-key-vault-for-custom-encryption). 
     5. Once you have set up your AKV, go back to your Data connect application tab and look for your AKV in the drop-down to select it. You may need to refresh the page for the AKV to populate in the dropdown.
+
+    > [!NOTE]
+    > Encryption will apply to ALL the eligible datasets requested in the application. Click on the tool tip next to encryption to learn which datasets are elgible.
 
     ![Screenshot of the the Azure portal with Azure Key Vault and encryption boxed in](images/app-registration-encryption.png) 
 
