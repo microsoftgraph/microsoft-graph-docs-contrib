@@ -1,9 +1,9 @@
 ---
 title: "Get securityToolAwsRoleAdministratorFinding"
 description: "Read the properties and relationships of a securityToolAwsRoleAdministratorFinding object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|Not supported|
 |Delegated (personal Microsoft account)|Not supported|
-|Application|**SERVICENOWAPI**|
+Not supported
 
 ## HTTP request
 
@@ -77,7 +77,8 @@ Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.securityToolAwsRoleAdministratorFinding",
-  "value": [
+  "value":
+
       {
         "@odata.type": "graph.securityToolAwsRoleAdministratorFinding",
         "id": "YXdzU2VjdXJpdHlUb29sQWRtaW5pc3RyYXRpb25GaW5kaW5nMw",
@@ -109,9 +110,6 @@ Content-Type: application/json
           "lastActiveDateTime": "2020-10-30T03:21:05Z"
         }
       },
-    },
-
-  ]
-}
+    }
 ```
 

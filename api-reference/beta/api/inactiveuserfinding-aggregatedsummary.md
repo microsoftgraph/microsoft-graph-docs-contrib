@@ -31,7 +31,7 @@ Example of an AWS request
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveUserFinding/aggregatedSummary(authorizationSystemIds=['{{awsAuthSystemId}}'])
+GET /identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveUserFinding/aggregatedSummary(authorizationSystemIds=['awsAuthSystemId'])
 ```
 
 Example of an Azure request
@@ -40,7 +40,7 @@ Example of an Azure request
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.inactiveUserFinding/aggregatedSummary(authorizationSystemIds=['{{azureAuthSystemId}}'])
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.inactiveUserFinding/aggregatedSummary(authorizationSystemIds=['azureAuthSystemId'])
 ```
 
 Example of a GCP request

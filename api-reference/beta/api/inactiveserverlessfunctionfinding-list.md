@@ -3,7 +3,7 @@ title: "List inactiveServerlessFunctionFindings"
 description: "List the details of inactive serverless functions in authorization systems that you've onboarded to Permissions Management."
 author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 

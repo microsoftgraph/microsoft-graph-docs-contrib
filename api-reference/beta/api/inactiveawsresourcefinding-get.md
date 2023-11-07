@@ -3,7 +3,7 @@ title: "Get inactiveAwsResourceFinding"
 description: "Get the details of an inactive resource in an AWS authorization system that you've onboarded to Permissions Management."
 author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 

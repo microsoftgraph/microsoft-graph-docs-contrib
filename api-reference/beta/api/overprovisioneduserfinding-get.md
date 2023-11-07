@@ -3,7 +3,7 @@ title: "Get overprovisionedUserFinding"
 description: "Read the properties and relationships of an overprovisionedUserFinding object."
 author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: ""multicloud-permissions-management""
 doc_type: apiPageType
 ---
 
@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|Not supported|
 |Delegated (personal Microsoft account)|Not supported|
-|Application|**SERVICENOWAPI**|
+|Application|Not supported|
 
 ## HTTP request
 

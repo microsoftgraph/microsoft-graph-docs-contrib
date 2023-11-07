@@ -3,7 +3,7 @@ title: "inactiveAzureServicePrincipalFinding: aggregatedSummary"
 description: "View the count of inactive Azure service principals in yor authorization systems."
 author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|Not supported|
 |Delegated (personal Microsoft account)|Not supported|
-|Application|**SERVICENOWAPI**|
+|Application||Application|Not supported||
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/azure/findings/graph.inactiveAzureServicePrincipalFinding/aggregatedSummary(authorizationSystemIds=['{{azureAuthSystemId}}'])
+GET /identityGovernance/permissionsAnalytics/azure/findings/graph.inactiveAzureServicePrincipalFinding/aggregatedSummary(authorizationSystemIds=['azureAuthSystemId'])
 ```
 
 ## Function parameters

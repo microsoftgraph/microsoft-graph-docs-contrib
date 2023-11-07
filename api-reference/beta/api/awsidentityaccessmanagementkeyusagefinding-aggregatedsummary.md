@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|Not supported|
 |Delegated (personal Microsoft account)|Not supported|
-|Application|**SERVICENOWAPI**|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/aws/findings/graph.awsIdentityAccessManagementKeyUsageFinding/microsoft.graph.aggregatedSummary(authorizationSystemIds=['{{awsAuthSystemId}}'])
+GET /identityGovernance/permissionsAnalytics/aws/findings/graph.awsIdentityAccessManagementKeyUsageFinding/microsoft.graph.aggregatedSummary(authorizationSystemIds=['awsAuthSystemId'])
 ```
 
 ## Function parameters
@@ -61,6 +61,7 @@ If successful, this function returns a `200 OK` response code and a [permissions
 ## Examples
 
 ### Request
+
 The following example shows a request.
 <!-- {
   "blockType": "request",
@@ -72,6 +73,7 @@ GET https://canary.graph.microsoft.com/testprodbetaevan_schema/identityGovernanc
 ```
 
 ### Response
+
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

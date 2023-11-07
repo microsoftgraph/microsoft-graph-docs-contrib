@@ -3,7 +3,7 @@ title: "Get encryptedGcpStorageBucketFinding"
 description: "Read the properties and relationships of an encryptedGcpStorageBucketFinding object."
 author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|Not supported|
 |Delegated (personal Microsoft account)|Not supported|
-|Application|**SERVICENOWAPI**|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET https://canary.graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings('id')/graph.encryptedGcpStorageBucketFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings('id')/graph.encryptedGcpStorageBucketFinding
 ```
 
 ## Optional query parameters

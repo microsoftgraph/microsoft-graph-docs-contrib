@@ -3,7 +3,7 @@ title: "inactiveAwsRoleFinding: aggregatedSummary"
 description: "Retrieve the raw count of inactive roles relative to the total roles in an AWS authorization system that you've onboarded to Permissions Management."
 author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "multicloud-permission-management"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ```http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.inactiveAwsRoleFinding/aggregatedSummary(authorizationSystemIds=['{{awsAuthSystemId}}'])
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.inactiveAwsRoleFinding/aggregatedSummary(authorizationSystemIds=['awsAuthSystemId'])
 ```
 
 ## Function parameters

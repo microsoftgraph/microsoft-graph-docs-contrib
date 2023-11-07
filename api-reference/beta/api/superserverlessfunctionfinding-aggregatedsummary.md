@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|Not supported|
 |Delegated (personal Microsoft account)|Not supported|
-|Application|**SERVICENOWAPI**|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -31,7 +31,7 @@ Example of an AWS request
 }
 -->
 ``` http
-GET /beta/identityGovernance/permissionsAnalytics/aws/findings/graph.superServerlessFunctionFinding/aggregatedSummary(authorizationSystemIds=['{{awsAuthSystemId}}'])
+GET /beta/identityGovernance/permissionsAnalytics/aws/findings/graph.superServerlessFunctionFinding/aggregatedSummary(authorizationSystemIds=['awsAuthSystemId'])
 ```
 
 Example of an Azure request
@@ -40,7 +40,7 @@ Example of an Azure request
 }
 -->
 ``` http
-GET /beta/identityGovernance/permissionsAnalytics/azure/findings/graph.superServerlessFunctionFinding/aggregatedSummary(authorizationSystemIds=['{{azureAuthSystemId}}'])
+GET /beta/identityGovernance/permissionsAnalytics/azure/findings/graph.superServerlessFunctionFinding/aggregatedSummary(authorizationSystemIds=['azureAuthSystemId'])
 ```
 
 Example of a GCP request
@@ -49,7 +49,7 @@ Example of a GCP request
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/gcp/findings/graph.superServerlessFunctionFinding/aggregatedSummary(authorizationSystemIds=['{{gcpAuthSystemId}}'])
+GET /identityGovernance/permissionsAnalytics/gcp/findings/graph.superServerlessFunctionFinding/aggregatedSummary(authorizationSystemIds=['gcpAuthSystemId'])
 ```
 
 ## Function parameters
@@ -58,7 +58,7 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|authorizationSystemIds|String collection|**TODO: Add Description**|
+|authorizationSystemIds|String collection|A list of authorization system IDs.|
 
 
 ## Request headers

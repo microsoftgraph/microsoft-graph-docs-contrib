@@ -3,7 +3,7 @@ title: "List inactiveAwsResourceFindings"
 description: "List the details of inactive AWS resources."
 author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 

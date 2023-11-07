@@ -72,6 +72,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
+
 The following example shows a request.
 <!-- {
   "blockType": "request",
@@ -91,6 +92,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.inactiveUserFinding)"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -134,3 +136,4 @@ Content-Type: application/json
         }
     ]
 }
+```
