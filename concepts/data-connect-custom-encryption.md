@@ -52,7 +52,7 @@ Set up custom encryption by generating keys in AKV or linking an existing AKV. E
 
     ![Screenshot of the the Azure portal with Azure Key Vault and encryption boxed in](images/app-registration-encryption.png) 
 
-4. Fill out the rest of the required application details as mentioned in the [Getting Started](../includes/data-connect-quickstart-01.md) and [simplified onboarding experience.](./onboarding-experience-overview.md) and submit it for your M365 admin to review. 
+4. Fill out the rest of the required application details as mentioned in the [Getting Started](./includes/data-connect-quickstart-01.md) and [simplified onboarding experience](./onboarding-experience-overview.md) and submit it for your M365 admin to review. 
     
     > [!NOTE]
     > Make sure to create or note down your existing service principal (SPN) on notepad, you will need this at a later step!
