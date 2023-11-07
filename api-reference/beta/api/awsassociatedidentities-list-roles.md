@@ -1,9 +1,9 @@
 ---
 title: "List awsRoles"
 description: "Get the awsRole resources from the awsRoles navigation property."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -17,12 +17,13 @@ Get the awsRole resources from the awsRoles navigation property.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "awsuser-list-awsRoles-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/awsuser-list-awsRoles-permissions.md)]
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
+[!INCLUDE [epm-rbac-servicenow-apis-read](../includes/rbac-for-apis/epm-rbac-servicenow-apis-read.md)]
 
 ## HTTP request
 
@@ -31,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.awsRole not found
+GET /external/authorizationSystems/{id}/graph.awsAuthorizationSystem/associatedIdentities/roles
 ```
 
 ## Optional query parameters
@@ -59,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.awsRole not found
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/graph.awsAuthorizationSystem/associatedIdentities/roles
 ```
 
 
@@ -80,16 +81,17 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.awsRole",
-      "id": "bcd429ef-aab9-eb36-94ef-7566b213a2e3",
-      "displayName": "String",
+      "id": "YXJuOmF3czppYW06OjEyMzQ1Njc4OTAxMjpyb2xlL3NlcnZpY2Vyb2xlMQ",
+      "externalId": "arn:aws:iam::123456789012:role/servicerole1",
+      "displayName": "servicerole1",
+      "roleType": "system",
+      "trustEntityType": "service",
       "source": {
-        "@odata.type": "microsoft.graph.authorizationSystemIdentitySource"
-      },
-      "externalId": "String",
-      "trustEntityType": "String",
-      "roleType": "String"
+        "@odata.type": "#microsoft.graph.awsSource",
+        "accountId": "123456789012",
+        "identityProviderType": "aws"
+      }
     }
   ]
 }
 ```
-

@@ -1,9 +1,9 @@
 ---
 title: "List azureServicePrincipals"
 description: "Get a list of the azureServicePrincipal objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -17,12 +17,13 @@ Get a list of the [azureServicePrincipal](../resources/azureserviceprincipal.md)
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "azureserviceprincipal-list-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/azureserviceprincipal-list-permissions.md)]
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
+[!INCLUDE [epm-rbac-servicenow-apis-read](../includes/rbac-for-apis/epm-rbac-servicenow-apis-read.md)]
 
 ## HTTP request
 
@@ -31,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.azureServicePrincipal not found
+GET /external/authorizationSystems/{id}/graph.azureAuthorizationSystem/associatedIdentities/servicePrincipals
 ```
 
 ## Optional query parameters
@@ -59,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.azureServicePrincipal not found
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/graph.azureAuthorizationSystem/associatedIdentities/servicePrincipals
 ```
 
 
@@ -79,13 +80,24 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.azureServicePrincipal",
-      "id": "f9819d08-b5c5-940f-ac81-609dc4569ce6",
-      "displayName": "String",
+      "id": "NDVjM2I2YmYtNTBjNS00MmQyLWJkNmItMGNjY2ZjZmE2NjNl",
+      "externalId": "45c3b6bf-50c5-42d2-bd6b-0cccfcfa663e",
+      "displayName": "Management",
       "source": {
-        "@odata.type": "microsoft.graph.authorizationSystemIdentitySource"
-      },
-      "externalId": "String"
+          "@odata.type": "#microsoft.graph.azureSource",
+          "identityProviderType": "azure",
+          "subscriptionId": "2c47abb7-ade6-4700-9a19-ac8c191a2ab8"
+      }
+    },
+    {
+      "id": "YWJkNjM1ZTUtNTUyOC00NTY1LThjYWYtZjJjNjBmNGY4MGY4",
+      "externalId": "abd635e5-5528-4565-8caf-f2c60f4f80f8",
+      "displayName": "3p-app",
+      "source": {
+          "@odata.type": "#microsoft.graph.azureSource",
+          "identityProviderType": "azure",
+          "subscriptionId": "2c47abb7-ade6-4700-9a19-ac8c191a2ab8"
+      }
     }
   ]
 }

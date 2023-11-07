@@ -1,9 +1,9 @@
 ---
 title: "List gcpServiceAccounts"
 description: "Get a list of the gcpServiceAccount objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -17,12 +17,11 @@ Get a list of the [gcpServiceAccount](../resources/gcpserviceaccount.md) objects
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "gcpserviceaccount-list-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/gcpserviceaccount-list-permissions.md)]
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -31,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.gcpServiceAccount not found
+GET /external/authorizationSystems/{id}/graph.gcpAuthorizationSystem/associatedIdentities/serviceAccounts
 ```
 
 ## Optional query parameters
@@ -59,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.gcpServiceAccount not found
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/graph.gcpAuthorizationSystem/associatedIdentities/serviceAccounts
 ```
 
 
@@ -79,13 +78,14 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.gcpServiceAccount",
-      "id": "75944ca0-bd1b-60b5-ab39-c95a82ba35c9",
-      "displayName": "String",
+      "id": "dGVzdC1zZXJ2aWNlLTAxQGhlbGxvLXdvcmxkLTIzMTEwNy5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbQ",
+      "externalId": "test-service-01@hello-world-231107.iam.gserviceaccount.com",
+      "displayName": "test-service-01",
       "source": {
-        "@odata.type": "microsoft.graph.authorizationSystemIdentitySource"
-      },
-      "externalId": "String"
+          "@odata.type": "#microsoft.graph.gsuiteSource",
+          "domain": "hello-world-231107.iam.gserviceaccount.com",
+          "identityProviderType": "gsuite"
+      }
     }
   ]
 }

@@ -1,9 +1,9 @@
 ---
 title: "Get awsIdentity"
 description: "Read the properties and relationships of an awsIdentity object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -17,12 +17,13 @@ Read the properties and relationships of an [awsIdentity](../resources/awsidenti
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "awsidentity-get-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/awsidentity-get-permissions.md)]
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
+[!INCLUDE [epm-rbac-servicenow-apis-read](../includes/rbac-for-apis/epm-rbac-servicenow-apis-read.md)]
 
 ## HTTP request
 
@@ -31,6 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET /external/authorizationSystems/{id}/graph.awsAuthorizationSystem/associatedIdentities/all/{awsIdentityId}
+GET /external/authorizationSystems/{id}/graph.awsAuthorizationSystem/associatedIdentities/all(externalId='{externalId}')
 ```
 
 ## Optional query parameters
@@ -58,7 +61,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/graph.awsAuthorizationSystem/associatedIdentities/all/YXJuOmF3czppYW06OjEyMzQ1Njc4OTAxMjp1c2VyL2JvYg
 ```
 
 
@@ -77,13 +80,15 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.awsIdentity",
-    "id": "a0776e8e-20d4-eb86-0a41-c6b8e84c4116",
-    "displayName": "String",
+    "@odata.type": "#microsoft.graph.awsUser",
+    "id": "YXJuOmF3czppYW06OjEyMzQ1Njc4OTAxMjp1c2VyL2JvYg",
+    "externalId": "arn:aws:iam::123456789012:user/bob",
+    "displayName": "bob smith",
     "source": {
-      "@odata.type": "microsoft.graph.authorizationSystemIdentitySource"
-    },
-    "externalId": "String"
+      "@odata.type": "#microsoft.graph.awsSource",
+      "accountId": "123456789012",
+      "identityProviderType": "aws"
+    }
   }
 }
 ```

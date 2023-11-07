@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/policies
+GET /external/authorizationSystems/{id}/graph.awsAuthorizationSystem/policies
 ```
 
 ## Optional query parameters
@@ -64,7 +64,7 @@ The following request lists all the policies for an AWS authorization system.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/policies
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/graph.awsAuthorizationSystem/policies
 ```
 
 
@@ -82,7 +82,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/policies",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{id}/graph.awsAuthorizationSystem/policies",
   "value": [
     {
       "id": "YXJuOmF3czppYW06OmF3czpwb2xpY3kvQWRtaW5pc3RyYXRvckFjY2Vzcw==",
@@ -91,8 +91,8 @@ Content-Type: application/json
       "awsPolicyType": "system"
     },
     {
-      "id": "YXJuOmF3czppYW06OjM3NzU5NjEzMTc3NDpwb2xpY3kvQUFBLWxpc3RQdXRHZXRBbGxCdWNrZXRz",
-      "externalId": "arn:aws:iam::377596131774:policy/AAA-listPutGetAllBuckets",
+      "id": "YXJuOmF3czppYW06OjEyMzQ1Njc4OTAxMjpwb2xpY3kvQUFBLWxpc3RQdXRHZXRBbGxCdWNrZXRz",
+      "externalId": "arn:aws:iam::123456789012:policy/AAA-listPutGetAllBuckets",
       "displayName": "AAA-listPutGetAllBuckets",
       "awsPolicyType": "custom"
     }
@@ -112,7 +112,7 @@ The following request lists all policies named `AdministratorAccess` in an AWS a
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/policies?$filter=displayName eq 'AdministratorAccess'
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/graph.awsAuthorizationSystem/policies?$filter=displayName eq 'AdministratorAccess'
 ```
 
 
@@ -130,7 +130,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/policies",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{id}/graph.awsAuthorizationSystem/policies",
   "value": [
     {
       "id": "YXJuOmF3czppYW06OmF3czpwb2xpY3kvQWRtaW5pc3RyYXRvckFjY2Vzcw==",
@@ -154,7 +154,7 @@ The following request lists all policies in an AWS authorization system where th
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/policies?$filter=contains(displayName, 'Buckets')
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/graph.awsAuthorizationSystem/policies?$filter=contains(displayName, 'Buckets')
 ```
 
 
@@ -172,7 +172,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/policies",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{id}/graph.awsAuthorizationSystem/policies",
   "value": [
     {
       "id": "YXJuOmF3czppYW06OjM3NzU5NjEzMTc3NDpwb2xpY3kvQUFBLWxpc3RQdXRHZXRBbGxCdWNrZXRz",
@@ -196,7 +196,7 @@ The following example requests all custom roles in an AWS authorization system.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/roles?$filter=type eq 'custom'
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/graph.awsAuthorizationSystem/policies?$filter=type eq 'custom'
 ```
 
 
@@ -214,7 +214,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/policies",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{id}/graph.awsAuthorizationSystem/policies",
   "value": [
     {
       "id": "YXJuOmF3czppYW06OjM3NzU5NjEzMTc3NDpwb2xpY3kvQUFBLWxpc3RQdXRHZXRBbGxCdWNrZXRz",

@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /external/authorizationSystems/{computedId}/graph.gcpAuthorizationSystem/roles
+GET /external/authorizationSystems/{id}/graph.gcpAuthorizationSystem/roles
 ```
 
 ## Optional query parameters
@@ -60,7 +60,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/graph.gcpAuthorizationSystem/roles
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/graph.gcpAuthorizationSystem/roles
 ```
 
 
@@ -78,7 +78,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{computedId}/graph.gcpAuthorizationSystem/roles",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{id}/graph.gcpAuthorizationSystem/roles",
   "value": [
     {
       "id": "cm9sZXMvYmFja3VwZHIuY29tcHV0ZUVuZ2luZU9wZXJhdG9y",
@@ -95,8 +95,8 @@ Content-Type: application/json
       ]
     },
     {
-      "id": "cHJvamVjdHMvY2FyYmlkZS1ib25zYWktMjA1MDE3L3JvbGVzL0NLX1JPTEVfYWNjZXNzYXBwcm92YWxfcm9sZQ==",
-      "externalId": "projects/carbide-bonsai-205017/roles/CK_ROLE_accessapproval_role",
+      "id": "cHJvamVjdHMvaGVsbG8td29ybGQtMjMxMTA3L3JvbGVzL0NLX1JPTEVfYWNjZXNzYXBwcm92YWxfcm9sZQ",
+      "externalId": "projects/hello-world-231107/roles/CK_ROLE_accessapproval_role",
       "displayName": "CK_ROLE_accessapproval_role",
       "gcpRoleType": "custom",
       "scopes": [

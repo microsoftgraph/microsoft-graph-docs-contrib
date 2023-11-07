@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/actions
+GET /external/authorizationSystems/{id}/graph.awsAuthorizationSystem/actions
 ```
 
 ## Optional query parameters
@@ -62,7 +62,7 @@ The following example shows a request to retrieve all actions for an AWS authori
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/actions
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/graph.awsAuthorizationSystem/actions
 ```
 
 
@@ -80,7 +80,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{computedId}/actions",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{id}/actions",
   "value": [
     {
       "@odata.type": "graph.awsAuthorizationSystemTypeAction",
@@ -162,7 +162,7 @@ The following example shows a request to retrieve the actions for an AWS authori
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/actions?$filter=service/id eq 'ec2'
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/graph.awsAuthorizationSystem/actions?$filter=service/id eq 'ec2'
 ```
 
 
@@ -180,7 +180,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/actions?$filter=service/id eq 'ec2'",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{id}/graph.awsAuthorizationSystem/actions?$filter=service/id eq 'ec2'",
   "value": [
     {
       "id": "ZWMyOkFjY2VwdFJlc2VydmVkSW5zdGFuY2VzRXhjaGFuZ2VRdW90ZQ==",
@@ -226,7 +226,7 @@ The following example shows a request that retrieves actions for an AWS authoriz
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/actions?$filter=service/id eq 'ec2' and severity eq 'high' and actionType eq 'delete'
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/graph.awsAuthorizationSystem/actions?$filter=service/id eq 'ec2' and severity eq 'high' and actionType eq 'delete'
 ```
 
 
@@ -244,7 +244,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/actions?$filter=service/id eq 'ec2' and severity eq 'high' and actionType eq 'delete'",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{id}/graph.awsAuthorizationSystem/actions?$filter=service/id eq 'ec2' and severity eq 'high' and actionType eq 'delete'",
   "value": [
     {
       "id": "ZWMyOkRlbGV0ZUN1c3RvbWVyR2F0ZXdheQ==",

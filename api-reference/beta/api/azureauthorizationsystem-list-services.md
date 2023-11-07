@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /external/authorizationSystems/{computedId}/graph.azureAuthorizationSystem/services
+GET /external/authorizationSystems/{id}/graph.azureAuthorizationSystem/services
 ```
 
 ## Optional query parameters
@@ -60,7 +60,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/graph.azureAuthorizationSystem/services
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/graph.azureAuthorizationSystem/services
 ```
 
 
@@ -78,7 +78,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{computedId}/graph.azureAuthorizationSystem/services",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{id}/graph.azureAuthorizationSystem/services",
   "value": [
     {
       "id": "Microsoft.Network",

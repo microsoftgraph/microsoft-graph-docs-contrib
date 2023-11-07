@@ -1,9 +1,9 @@
 ---
 title: "List azureManagedIdentities"
 description: "Get a list of the azureManagedIdentity objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -17,12 +17,13 @@ Get a list of the [azureManagedIdentity](../resources/azuremanagedidentity.md) o
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "azuremanagedidentity-list-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/azuremanagedidentity-list-permissions.md)]
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
+[!INCLUDE [epm-rbac-servicenow-apis-read](../includes/rbac-for-apis/epm-rbac-servicenow-apis-read.md)]
 
 ## HTTP request
 
@@ -31,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.azureManagedIdentity not found
+GET /external/authorizationSystems/{id}/graph.azureAuthorizationSystem/associatedIdentities/managedIdentities
 ```
 
 ## Optional query parameters
@@ -59,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.azureManagedIdentity not found
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/graph.azureAuthorizationSystem/associatedIdentities/managedIdentities
 ```
 
 
@@ -79,13 +80,24 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.azureManagedIdentity",
-      "id": "5f2e1f7d-b62b-97fb-5f1b-3af2ada506a7",
-      "displayName": "String",
+      "id": "NDVjM2I2YmYtNTBjNS00MmQyLWJkNmItMGNjY2ZjZmE2NjNl",
+      "externalId": "45c3b6bf-50c5-42d2-bd6b-0cccfcfa663e",
+      "displayName": "managedIdentity1",
       "source": {
-        "@odata.type": "microsoft.graph.authorizationSystemIdentitySource"
-      },
-      "externalId": "String"
+        "@odata.type": "#microsoft.graph.azureSource",
+        "identityProviderType": "azure",
+        "subscriptionId": "00f7dcae-97f9-492b-af2e-36eb35b613af"
+      }
+    },
+    {
+      "id": "YWJkNjM1ZTUtNTUyOC00NTY1LThjYWYtZjJjNjBmNGY4MGY4",
+      "externalId": "abd635e5-5528-4565-8caf-f2c60f4f80f8",
+      "displayName": "managedIdentity2",
+      "source": {
+        "@odata.type": "#microsoft.graph.azureSource",
+        "identityProviderType": "azure",
+        "subscriptionId": "00f7dcae-97f9-492b-af2e-36eb35b613af"
+      }
     }
   ]
 }

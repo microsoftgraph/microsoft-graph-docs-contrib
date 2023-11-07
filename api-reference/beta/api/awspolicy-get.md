@@ -32,7 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/policies/{awsPolicyId}
+GET /external/authorizationSystems/{id}/graph.awsAuthorizationSystem/policies/{awsPolicyId}
+GET /external/authorizationSystems/{id}/graph.awsAuthorizationSystem/policies(externalId={externalId})
 ```
 
 ## Request headers
@@ -59,7 +60,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/YXJuOmF3czppYW06OjM3NzU5NjEzMTc3NDpwb2xpY3kvQUFBLWxpc3RQdXRHZXRBbGxCdWNrZXRz
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/graph.awsAuthorizationSystem/YXJuOmF3czppYW06OjEyMzQ1Njc4OTAxMjpwb2xpY3kvQUFBLWxpc3RQdXRHZXRBbGxCdWNrZXRz
 ```
 
 
@@ -77,11 +78,11 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/policies",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{id}/graph.awsAuthorizationSystem/policies",
   "value": [
     {
-      "id": "YXJuOmF3czppYW06OjM3NzU5NjEzMTc3NDpwb2xpY3kvQUFBLWxpc3RQdXRHZXRBbGxCdWNrZXRz",
-      "externalId": "arn:aws:iam::377596131774:policy/AAA-listPutGetAllBuckets",
+      "id": "YXJuOmF3czppYW06OjEyMzQ1Njc4OTAxMjpwb2xpY3kvQUFBLWxpc3RQdXRHZXRBbGxCdWNrZXRz",
+      "externalId": "arn:aws:iam::123456789012:policy/AAA-listPutGetAllBuckets",
       "displayName": "AAA-listPutGetAllBuckets",
       "awsPolicyType": "custom"
     }

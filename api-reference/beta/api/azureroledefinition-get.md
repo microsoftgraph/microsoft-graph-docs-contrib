@@ -32,7 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /external/authorizationSystems/{computedId}/graph.azureAuthorizationSystem/roleDefinitions/{azureRoleDefinitionId}
+GET /external/authorizationSystems/{id}/graph.azureAuthorizationSystem/roleDefinitions/{azureRoleDefinitionId}
+GET /external/authorizationSystems/{id}/graph.azureAuthorizationSystem/roleDefinitions(externalId='{externalId}')
 ```
 
 ## Request headers
@@ -57,7 +58,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/graph.azureAuthorizationSystem/roleDefinitions/YjI0OTg4YWMtNjE4MC00MmEwLWFiODgtMjBmNzM4MmRkMjRj
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/graph.azureAuthorizationSystem/roleDefinitions/YjI0OTg4YWMtNjE4MC00MmEwLWFiODgtMjBmNzM4MmRkMjRj
 ```
 
 
@@ -75,7 +76,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{computedId}/graph.azureAuthorizationSystem/roleDefinitions",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{id}/graph.azureAuthorizationSystem/roleDefinitions",
   "value": [
     {
       "id": "YjI0OTg4YWMtNjE4MC00MmEwLWFiODgtMjBmNzM4MmRkMjRj",

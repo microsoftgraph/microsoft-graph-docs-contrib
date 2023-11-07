@@ -32,11 +32,12 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /external/authorizationSystems/{computedId}/graph.gcpAuthorizationSystem/resources/{resourceId}
+GET /external/authorizationSystems/{id}/graph.gcpAuthorizationSystem/resources/{resourceId}
+GET /external/authorizationSystems/{id}/graph.gcpAuthorizationSystem/resources(externalId='{externalId}')
 ```
 
 ## Optional query parameters
-This method supports the `$expand` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -60,7 +61,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/graph.gcpAuthorizationSystem/resources/cHJvamVjdHMvY2FyYmlkZS1ib25zYWktMjA1MDE3L3pvbmVzL3VzLWNlbnR
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/graph.gcpAuthorizationSystem/resources/cHJvamVjdHMvaGVsbG8td29ybGQtMjMxMTA3L3pvbmVzL3VzLWNlbnRyYWwxLWEvaW5zdGFuY2VzL2luc3RhbmNlLTE
 ```
 
 
@@ -78,12 +79,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{computedId}/resources",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{id}/resources",
   "value": [
     {
-      "id": "cHJvamVjdHMvY2FyYmlkZS1ib25zYWktMjA1MDE3L3pvbmVzL3VzLWNlbnR",
-      "externalId": "projects/carbide-bonsai-205017/zones/us-central1-a/instances/instance-1",
-      "displayName": "projects/carbide-bonsai-205017/zones/us-central1-a/instances/instance-1",
+      "id": "cHJvamVjdHMvaGVsbG8td29ybGQtMjMxMTA3L3pvbmVzL3VzLWNlbnRyYWwxLWEvaW5zdGFuY2VzL2luc3RhbmNlLTE",
+      "externalId": "projects/hello-world-231107/zones/us-central1-a/instances/instance-1",
+      "displayName": "projects/hello-world-231107/zones/us-central1-a/instances/instance-1",
       "resourceType": "instances",
       "service": {
         "id": "compute"
@@ -92,51 +93,3 @@ Content-Type: application/json
   ]
 }
 ```
-
-### Example 2: Get entitlements for a specific GCP resource.
-
-Returns collection of all gcpRbacEntitlement objects, which represent the combination of a GCP role that grants an identity access to an authorized system resource, the associated identity, and an optional source identity where the assigned permission was inherited.
-
-#### Request
-
-The following example shows a request.
-<!-- {
-  "blockType": "request",
-  "name": "get_gcpauthorizationsystemresource"
-}
--->
-``` http
-GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/microsoft.graph.gcpAuthorizationSystem/resources/{resourceId}/entitlements
-```
-
-
-#### Response
-The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.gcpAuthorizationSystemResource"
-}
--->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{computedId}/microsoft.graph.gcpAuthorizationSystem/resources/{resourceId}/entitlements",
-  "value": [
-    {
-      "@odata.type": "microsoft.graph.gcpRbacEntitlement",
-      "id": "YXJuOmF3czpzMzo6OjAwLXNldHRpbmdzLWFsbC1icC1ub25lLWFjbC1vd25lci1lbmNyeXB0aW9uLW5vbmU=",
-      "identity@odata.bind": "https://graph.microsoft.com/beta/external/authorizationSystem/{computedId}/microsoft.graph.gcpAuthorizationSystem/associatedIdentities/all/{identityId}",
-      "sourceIdentity@odata.bind": "https://graph.microsoft.com/beta/external/authorizationSystem/{computedId}/microsoft.graph.gcpAuthorizationSystem/associatedIdentities/all/{sourceIdentityId}",
-      "gcpRole@odata.bind": "https://graph.microsoft.com/beta/external/authorizationSystem/{computedId}/microsoft.graph.gcpAuthorizationSystem/roles/{rolePolicyId}",
-      "lastUsedDateTime": "1549311775000",
-    },
-    ...
-  ],
-  "@odata.nextLink": https://graph.microsoft.com/beta/external/authorizationSystem/{computedId}/microsoft.graph.gcpAuthorizationSystem/resources/{resourceId}/entitlements?$skiptoken={encodedPageTokenEntitlements}
-}
-```
-

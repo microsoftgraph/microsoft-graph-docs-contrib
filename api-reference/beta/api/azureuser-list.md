@@ -1,9 +1,9 @@
 ---
 title: "List azureUsers"
 description: "Get a list of the azureUser objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.azureUser not found
+GET /external/authorizationSystems/{id}/graph.azureAuthorizationSystem/associatedIdentities/users
 ```
 
 ## Optional query parameters
@@ -58,8 +58,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.azureUser not found
-```
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/graph.azureAuthorizationSystem/associatedIdentities/users```
 
 
 ### Response
@@ -78,13 +77,14 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.azureUser",
-      "id": "485a0a2f-8876-fb7b-45ca-f174620a05f7",
-      "displayName": "String",
+      "id": "YWxpY2VAY29udG9zby5jb20",
+      "externalId": "alice@contoso.com",
+      "displayName": "alice",
       "source": {
-        "@odata.type": "microsoft.graph.authorizationSystemIdentitySource"
-      },
-      "externalId": "String"
+        "@odata.type": "#microsoft.graph.aadSource",
+        "domain": "contoso.com",
+        "identityProviderType": "aad"
+      }
     }
   ]
 }

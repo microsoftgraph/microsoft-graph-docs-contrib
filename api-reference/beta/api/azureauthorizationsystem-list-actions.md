@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /external/authorizationSystems/{computedId}/graph.azureAuthorizationSystem/actions
+GET /external/authorizationSystems/{id}/graph.azureAuthorizationSystem/actions
 ```
 
 ## Optional query parameters
@@ -52,9 +52,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: List Azure Actions For A Specific Service
+### Example 1: List actions for a service in the Azure authorization system
 
-Returns collection of all azureAuthorizationSystemTypeAction entities for a provided Azure authorization system and service the action is performed on. Listing actions for an Azure subscription "e160b34b-2a0f-41f6-aaf3-09c5a9f43768" and service "Microsoft.Storage".
+Returns collection of all azureAuthorizationSystemTypeAction entities for a provided Azure authorization system and service the action is performed on. Listing actions for an Azure subscription "2c47abb7-ade6-4700-9a19-ac8c191a2ab8" and service "Microsoft.Storage".
 
 #### Request
 The following example shows a request.
@@ -64,7 +64,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/graph.azureAuthorizationSystem/actions?$filter=service/id eq 'Microsoft.Storage'
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/graph.azureAuthorizationSystem/actions?$filter=service/id eq 'Microsoft.Storage'
 ```
 
 
@@ -82,7 +82,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{computedId}/graph.azureAuthorizationSystem/actions?$filter=service/id eq 'Microsoft.Storage'",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{id}/graph.azureAuthorizationSystem/actions?$filter=service/id eq 'Microsoft.Storage'",
   "value": [
     {
       "id": "TWljcm9zb2Z0LlN0b3JhZ2UvY2hlY2tuYW1lYXZhaWxhYmlsaXR5L3JlYWQ=",

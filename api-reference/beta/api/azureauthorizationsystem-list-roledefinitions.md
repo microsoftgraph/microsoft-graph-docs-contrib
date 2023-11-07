@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /external/authorizationSystems/{computedId}/graph.azureAuthorizationSystem/roleDefinitions
+GET /external/authorizationSystems/{id}/graph.azureAuthorizationSystem/roleDefinitions
 
 ```
 
@@ -61,7 +61,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/graph.azureAuthorizationSystem/roleDefinitions
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/graph.azureAuthorizationSystem/roleDefinitions
 ```
 
 
@@ -79,7 +79,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{computedId}/graph.azureAuthorizationSystem/roleDefinitions",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{id}/graph.azureAuthorizationSystem/roleDefinitions",
   "value": [
     {
       "id": "YjI0OTg4YWMtNjE4MC00MmEwLWFiODgtMjBmNzM4MmRkMjRj",
@@ -91,9 +91,9 @@ Content-Type: application/json
     {
       "id": "ODg3YTk2ODgtYjBlZi00YjYxLWI1ODEtM2M3Njk5YjMzYTBk",
       "externalId": "887a9688-b0ef-4b61-b581-3c7699b33a0d",
-      "displayName": "ck_pod_mrudula_1665116757198",
+      "displayName": "ck_pod_user_1665116757198",
       "azureRoleDefinitionType": "custom",
-      "assignableScopes": ["/subscriptions/87eefd90-95a3-480a-ba42-56ff299a05ee"]
+      "assignableScopes": ["/subscriptions/2c47abb7-ade6-4700-9a19-ac8c191a2ab8"]
     }
   ]
 }

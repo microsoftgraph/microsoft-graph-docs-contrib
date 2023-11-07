@@ -32,7 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/actions/{awsAuthorizationSystemTypeActionId}
+GET /external/authorizationSystems/{id}/graph.awsAuthorizationSystem/actions/{awsAuthorizationSystemTypeActionId}
+GET /external/authorizationSystems/{id}/graph.awsAuthorizationSystem/actions(externalId={externalId})
 ```
 
 ## Request headers
@@ -57,7 +58,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/actions/ZWMyOkFjY2VwdFJlc2VydmVkSW5zdGFuY2VzRXhjaGFuZ2VRdW90ZQ
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/graph.awsAuthorizationSystem/actions/ZWMyOkFjY2VwdFJlc2VydmVkSW5zdGFuY2VzRXhjaGFuZ2VRdW90ZQ
 ```
 
 
@@ -75,7 +76,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{computedId}/actions",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{id}/actions",
   "value": [
     {
       "@odata.type": "graph.awsAuthorizationSystemTypeAction",

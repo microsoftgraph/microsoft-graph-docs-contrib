@@ -1,9 +1,9 @@
 ---
 title: "Get azureManagedIdentity"
 description: "Read the properties and relationships of an azureManagedIdentity object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -17,12 +17,11 @@ Read the properties and relationships of an [azureManagedIdentity](../resources/
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "azuremanagedidentity-get-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/azuremanagedidentity-get-permissions.md)]
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -31,6 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET /external/authorizationSystems/{id}/graph.azureAuthorizationSystem/associatedIdentities/managedIdentity/{azureManagedIdentityId}
+GET /external/authorizationSystems/{id}/graph.azureAuthorizationSystem/associatedIdentities/managedIdentity(externalId='{externalId}')
 ```
 
 ## Optional query parameters
@@ -58,7 +59,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/graph.azureAuthorizationSystem/associatedIdentities/managedIdentities/YWJkNjM1ZTUtNTUyOC00NTY1LThjYWYtZjJjNjBmNGY4MGY4
 ```
 
 
@@ -77,13 +78,14 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.azureManagedIdentity",
-    "id": "5f2e1f7d-b62b-97fb-5f1b-3af2ada506a7",
-    "displayName": "String",
+    "id": "YWJkNjM1ZTUtNTUyOC00NTY1LThjYWYtZjJjNjBmNGY4MGY4",
+    "externalId": "abd635e5-5528-4565-8caf-f2c60f4f80f8",
+    "displayName": "managedIdentity2",
     "source": {
-      "@odata.type": "microsoft.graph.authorizationSystemIdentitySource"
-    },
-    "externalId": "String"
+      "@odata.type": "#microsoft.graph.azureSource",
+      "identityProviderType": "azure",
+      "subscriptionId": "00f7dcae-97f9-492b-af2e-36eb35b613af"
+    }
   }
 }
 ```

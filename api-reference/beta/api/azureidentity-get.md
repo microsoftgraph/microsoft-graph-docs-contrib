@@ -30,6 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET /external/authorizationSystems/{id}/graph.azureAuthorizationSystem/associatedIdentities/all/{azureIdentityId}
+GET /external/authorizationSystems/{id}/graph.azureAuthorizationSystem/associatedIdentities/all(externalId='{externalId}')
 ```
 
 ## Optional query parameters
@@ -57,7 +59,7 @@ The following example shows a request.
 }
 -->
 ``` http
-
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/graph.azureAuthorizationSystem/associatedIdentities/all/YWxpY2VAY29udG9zby5jb20
 ```
 
 
@@ -76,13 +78,15 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.azureIdentity",
-    "id": "b8601ee1-0a2b-3b0a-07fa-f10720bc6a18",
-    "displayName": "String",
+    "@odata.type": "#microsoft.graph.azureUser",
+    "id": "YWxpY2VAY29udG9zby5jb20",
+    "externalId": "alice@contoso.com",
+    "displayName": "alice",
     "source": {
-      "@odata.type": "microsoft.graph.authorizationSystemIdentitySource"
-    },
-    "externalId": "String"
+        "@odata.type": "#microsoft.graph.aadSource",
+        "domain": "contoso.com",
+        "identityProviderType": "aad"
+    }
   }
 }
 ```

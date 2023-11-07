@@ -1,9 +1,9 @@
 ---
 title: "List azureIdentities"
 description: "Get a list of the azureIdentity objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
+[!INCLUDE [epm-rbac-servicenow-apis-read](../includes/rbac-for-apis/epm-rbac-servicenow-apis-read.md)]
 
 ## HTTP request
 
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.azureIdentity not found
+GET /external/authorizationSystems/{id}/graph.azureAuthorizationSystem/associatedIdentities/all
 ```
 
 ## Optional query parameters
@@ -58,8 +60,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.azureIdentity not found
-```
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/graph.azureAuthorizationSystem/associatedIdentities/all```
 
 
 ### Response
@@ -78,13 +79,37 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.azureIdentity",
-      "id": "b8601ee1-0a2b-3b0a-07fa-f10720bc6a18",
-      "displayName": "String",
+      "@odata.type": "#microsoft.graph.azureUser",
+      "id": "YWxpY2VAY29udG9zby5jb20",
+      "externalId": "alice@contoso.com",
+      "displayName": "alice",
       "source": {
-        "@odata.type": "microsoft.graph.authorizationSystemIdentitySource"
-      },
-      "externalId": "String"
+          "@odata.type": "#microsoft.graph.aadSource",
+          "domain": "contoso.com",
+          "identityProviderType": "aad"
+      }
+    },
+    {
+      "@odata.type": "#microsoft.graph.azureServicePrincipal",
+      "id": "NDVjM2I2YmYtNTBjNS00MmQyLWJkNmItMGNjY2ZjZmE2NjNl",
+      "externalId": "45c3b6bf-50c5-42d2-bd6b-0cccfcfa663e",
+      "displayName": "Test Application",
+      "source": {
+        "@odata.type": "#microsoft.graph.azureSource",
+        "identityProviderType": "azure",
+        "subscriptionId": "2c47abb7-ade6-4700-9a19-ac8c191a2ab8"
+      }
+    },
+    {
+      "@odata.type": "#microsoft.graph.azureManagedIdentity",
+      "id": "YWJkNjM1ZTUtNTUyOC00NTY1LThjYWYtZjJjNjBmNGY4MGY4",
+      "externalId": "abd635e5-5528-4565-8caf-f2c60f4f80f8",
+      "displayName": "managedIdentity2",
+      "source": {
+        "@odata.type": "#microsoft.graph.azureSource",
+        "identityProviderType": "azure",
+        "subscriptionId": "00f7dcae-97f9-492b-af2e-36eb35b613af"
+      }
     }
   ]
 }

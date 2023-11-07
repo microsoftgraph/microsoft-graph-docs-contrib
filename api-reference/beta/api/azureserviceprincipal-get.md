@@ -1,9 +1,9 @@
 ---
 title: "Get azureServicePrincipal"
 description: "Read the properties and relationships of an azureServicePrincipal object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -17,12 +17,11 @@ Read the properties and relationships of an [azureServicePrincipal](../resources
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "azureserviceprincipal-get-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/azureserviceprincipal-get-permissions.md)]
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -31,6 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET /external/authorizationSystems/{id}/graph.azureAuthorizationSystem/associatedIdentities/servicePrincipals/{azureServicePrincipalId}
+GET /external/authorizationSystems/{id}/graph.azureAuthorizationSystem/associatedIdentities/servicePrincipals(externalId='{externalId}')
 ```
 
 ## Optional query parameters
@@ -58,7 +59,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/graph.azureAuthorizationSystem/associatedIdentities/servicePrincipals/NDVjM2I2YmYtNTBjNS00MmQyLWJkNmItMGNjY2ZjZmE2NjNl
 ```
 
 
@@ -77,13 +78,14 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.azureServicePrincipal",
-    "id": "f9819d08-b5c5-940f-ac81-609dc4569ce6",
-    "displayName": "String",
+    "id": "NDVjM2I2YmYtNTBjNS00MmQyLWJkNmItMGNjY2ZjZmE2NjNl",
+    "externalId": "45c3b6bf-50c5-42d2-bd6b-0cccfcfa663e",
+    "displayName": "Test Application",
     "source": {
-      "@odata.type": "microsoft.graph.authorizationSystemIdentitySource"
-    },
-    "externalId": "String"
+      "@odata.type": "#microsoft.graph.azureSource",
+      "identityProviderType": "azure",
+      "subscriptionId": "2c47abb7-ade6-4700-9a19-ac8c191a2ab8"
+    }
   }
 }
 ```

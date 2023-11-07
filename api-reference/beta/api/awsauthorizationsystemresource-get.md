@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an [awsAuthorizationSystemResource](../resources/awsauthorizationsystemresource.md) object  for a provided AWS authorization system.
+Read the properties and relationships of an [awsAuthorizationSystemResource](../resources/awsauthorizationsystemresource.md) object for a provided AWS authorization system.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,7 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/resources/{resourceId}
+GET /external/authorizationSystems/{id}/graph.awsAuthorizationSystem/resources/{resourceId}
+GET /external/authorizationSystems/{id}/graph.awsAuthorizationSystem/resources(externalId={externalId})
 ```
 
 ## Optional query parameters
@@ -62,7 +63,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/resources/YXJuOmF3czpzMzo6OjAwLXNldHRpbmdzLWFsbC1icC1ub25lLWFjbC1vd25lci1lbmNyeXB0aW9uLW5vbmU
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/graph.awsAuthorizationSystem/resources/YXJuOmF3czpzMzo6OnRlc3RidWNrZXQ
 ```
 
 
@@ -80,12 +81,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{computedId}/resources",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{id}/resources",
   "value": [
     {
-      "id": "YXJuOmF3czpzMzo6OjAwLXNldHRpbmdzLWFsbC1icC1ub25lLWFjbC1vd25lci1lbmNyeXB0aW9uLW5vbmU",
-      "externalId": "arn:aws:s3:::00-settings-all-bp-none-acl-owner-encryption-none",
-      "displayName": "00-settings-all-bp-none-acl-owner-encryption-none",
+      "id": "YXJuOmF3czpzMzo6OnRlc3RidWNrZXQ",
+      "externalId": "arn:aws:s3:::testbucket",
+      "displayName": "testbucket",
       "resourceType": "bucket",
       "service": {
         "id": "s3"
@@ -94,51 +95,3 @@ Content-Type: application/json
   ]
 }
 ```
-
-### Example 2: Get entitlements for a specific AWS resource.
-
-Returns collection of all AWS policy entitlements, which represent the combination of an AWS policy that grants an identity access to an authorized system resource, the associated identity, and an optional source identity where the assigned permission was inherited.
-
-#### Request
-
-The following example shows a request.
-<!-- {
-  "blockType": "request",
-  "name": "get_awsauthorizationsystemresource"
-}
--->
-``` http
-GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/microsoft.graph.awsAuthorizationSystem/resources/{resourceId}/entitlements
-```
-
-
-#### Response
-The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.awsAuthorizationSystemResource"
-}
--->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{computedId}/microsoft.graph.awsAuthorizationSystem/resources/{resourceId}/entitlements",
-  "value": [
-    {
-      "@odata.type": "microsoft.graph.awsPolicyEntitlement",
-      "id": "YXJuOmF3czpzMzo6OjAwLXNldHRpbmdzLWFsbC1icC1ub25lLWFjbC1vd25lci1lbmNyeXB0aW9uLW5vbmU=",
-      "identity@odata.bind": "https://graph.microsoft.com/beta/external/authorizationSystem/{computedId}/microsoft.graph.awsAuthorizationSystem/associatedIdentities/all/{identityId}",
-      "sourceIdentity@odata.bind": "https://graph.microsoft.com/beta/external/authorizationSystem/{computedId}/microsoft.graph.awsAuthorizationSystem/associatedIdentities/all/{sourceIdentityId}",
-      "awsPolicy@odata.bind": "https://graph.microsoft.com/beta/external/authorizationSystem/{computedId}/microsoft.graph.awsAuthorizationSystem/policies/{rolePolicyId}",
-      "lastUsedDateTime": "1549311775000"
-    },
-    ...
-  ],
-  "@odata.nextLink": https://graph.microsoft.com/beta/external/authorizationSystem/{computedId}/microsoft.graph.awsAuthorizationSystem/resources/{resourceId}/entitlements?$skiptoken={encodedPageTokenEntitlements}
-}
-```
-

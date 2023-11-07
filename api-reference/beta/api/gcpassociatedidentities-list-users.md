@@ -1,9 +1,9 @@
 ---
 title: "List gcpUsers"
 description: "Get a list of the gcpUser objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -17,12 +17,11 @@ Get a list of the [gcpUser](../resources/gcpuser.md) objects and their propertie
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "gcpuser-list-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/gcpuser-list-permissions.md)]
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -31,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.gcpUser not found
+GET /external/authorizationSystems/{id}/graph.gcpAuthorizationSystem/associatedIdentities/users
 ```
 
 ## Optional query parameters
@@ -59,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.gcpUser not found
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/graph.gcpAuthorizationSystem/associatedIdentities/users
 ```
 
 
@@ -80,12 +79,14 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.gcpUser",
-      "id": "50f4631a-aec8-ec56-05c2-34f3485f82ac",
-      "displayName": "String",
+      "id": "dXNlcjFAZ3N1aXRlMS5jb20",
+      "externalId": "user1@gsuite1.com",
+      "displayName": "user1",
       "source": {
-        "@odata.type": "microsoft.graph.authorizationSystemIdentitySource"
-      },
-      "externalId": "String"
+          "@odata.type": "#microsoft.graph.gsuiteSource",
+          "domain": "gsuite1.com",
+          "identityProviderType": "gsuite"
+      }
     }
   ]
 }
