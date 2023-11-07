@@ -1,5 +1,5 @@
 ---
-title: "sendDtmfTonesOperation resource type"
+title: "senddtmftonesoperation resource type"
 description: "The sendDtmfTones operation to obtain the result of the sendDtmfTones action."
 author: "jackry2023"
 ms.localizationpriority: medium
@@ -20,7 +20,7 @@ Represents an operation to get the results of an action to send DTMF tones in a 
 | Property            | Type                        | Description|
 |:--------------------|:----------------------------|:-----------------------------------------------------------------------------------|
 | clientContext       | String                      | Unique Client Context string that client sends to Graph for the client to keep context in multiple requests. Maximum limit is 256 characters. |
-| completionReason    | [sendDtmfCompletionReason](sendDtmfTonesOperation.md#sendDtmfCompletionReason-values)    | The results of the action. Possible values are: `unknown`, `completedSuccessfully`, `mediaOperationCanceled`, `unknownfutureValue`. |
+| completionReason    | [sendDtmfCompletionReason](senddtmftonesoperation.md#sendDtmfCompletionReason-values)    | The results of the action. Possible values are: `unknown`, `completedSuccessfully`, `mediaOperationCanceled`, `unknownfutureValue`. |
 | id                  | String                      | Read-only.                                                                         |
 | resultInfo          | [resultInfo](resultinfo.md) | The result information with specific status code, sub code and message. Read-only.        |
 | status              | String                      | The status of the operation. Possible values are: `notStarted`, `running`, `completed`, `failed`.               |
