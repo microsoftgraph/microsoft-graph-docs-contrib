@@ -79,7 +79,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/identityGovernance/$metadata#permissionsAnalytics/azure/graph.inactiveAzureServicePrincipalFinding",
+  "@odata.context": "https://graph.microsoft.com/identityGovernance/permissionsAnalytics/azure/findings/graph.inactiveAzureServicePrincipalFinding",
   "value": [
     {
       "@odata.type": "graph.inactiveAzureServicePrincipalFinding",

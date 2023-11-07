@@ -30,7 +30,7 @@ Not supported
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/aws/findings/graph.securityToolAwsRoleAdministratorFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings('id')/graph.securityToolAwsRoleAdministratorFinding
 ```
 
 ## Optional query parameters
@@ -58,7 +58,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.securityToolAwsRoleAdministratorFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.securityToolAwsRoleAdministratorFinding
 ```
 
 

@@ -96,6 +96,7 @@ The following example shows the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "@odata.context": "https://canary.graph.microsoft.com/testprodbetaevan_schema/$metadata#identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveUserFinding/$entity",
     "id": "MSxJbmFjdGl2ZVVzZXJGaW5kaW5nLDI0MTI5MA",
