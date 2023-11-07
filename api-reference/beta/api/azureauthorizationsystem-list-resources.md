@@ -1,5 +1,5 @@
 ---
-title: "List azureAuthorizationSystemResources"
+title: "List resources in an Azure authorization system"
 description: "List the azureAuthorizationSystemResource objects and their properties for an Azure authorization system that you've onboarded to Permissions Management."
 author: "mrudulahg01"
 ms.localizationpriority: medium
@@ -7,12 +7,12 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# List azureAuthorizationSystemResources
+# List resources in an Azure authorization system
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the [azureAuthorizationSystemResource](../resources/azureauthorizationsystemresource.md) objects and their properties for a provided Azure authorization system.
+List the [azureAuthorizationSystemResource](../resources/azureauthorizationsystemresource.md) objects and their properties for an Azure authorization system that you've onboarded to Permissions Management..
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -36,7 +36,7 @@ GET /external/authorizationSystems/{computedId}/graph.azureAuthorizationSystem/r
 ```
 
 ## Optional query parameters
-This method supports the `$filter` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|

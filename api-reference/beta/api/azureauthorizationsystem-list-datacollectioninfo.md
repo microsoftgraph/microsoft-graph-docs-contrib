@@ -1,9 +1,9 @@
 ---
 title: "List dataCollectionInfo"
 description: "Get the dataCollectionInfo resources from the dataCollectionInfo navigation property."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -58,7 +58,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/external/authorizationSystems/{authorizationSystemId}/dataCollectionInfo
+GET https://graph.microsoft.com/beta/external/authorizationSystems/956987887735/dataCollectionInfo
 ```
 
 
@@ -73,15 +73,31 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-Type: application/json
+Content-type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems?$filter=dataCollectionInfo/permissionsModificationCapability eq 'enabled' and dataCollectionInfo/entitlementsDataCollectionStatus eq 'online'",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.dataCollectionInfo",
-      "id": "d9d384cb-981a-ac05-db2e-5aca1847b135",
-      "entitlements": {
-        "@odata.type": "microsoft.graph.entitlementsDataCollectionInfo"
+      "id": "{GUID}",
+      "authorizationSystemId": "956987887735",
+      "authorizationSystemName": "permissionsmanagementdevelopment",
+      "authorizationSystemType": "aws",
+      "dataCollectionInfo": {
+        "entitlementsDataCollectionStatus": "online",
+        "lastCollectionDateTime": "2023-02-17T21:12:48Z",
+        "permissionsModificationCapability":  "enabled"
+      }
+    },
+    {
+      "id": "{GUID}",
+      "authorizationSystemId": "5757f970-a701-4a2d-8cdb-97c858216084",
+      "authorizationSystemName": "Microsoft Azure Sponsorship 2",
+      "authorizationSystemType": "azure",
+      "dataCollectionInfo": {
+        "entitlementsDataCollectionStatus": "online",
+        "lastCollectionDateTime": "2023-02-17T21:12:48Z",
+        "permissionsModificationCapability":  "enabled"
       }
     }
   ]

@@ -86,7 +86,7 @@ Content-Type: application/json
       "id": "{base64}",
       "authorizationSystemId": "377596131774",
       "authorizationSystemName": "staging",
-      "authorizationSystemType": "aws",
+      "authorizationSystemType": "AWS",
       "dataCollectionInfo": {
         "entitlements": {
           "@odata.type": "microsoft.graph.entitlementsDataCollection",
@@ -100,7 +100,7 @@ Content-Type: application/json
       "id": "{base64}",
       "authorizationSystemId": "956987887735",
       "authorizationSystemName": "development",
-      "authorizationSystemType": "aws",
+      "authorizationSystemType": "AWS",
       "dataCollectionInfo": {
         "entitlements": {
           "@odata.type": "microsoft.graph.noEntitlementsDataCollection"
@@ -111,7 +111,7 @@ Content-Type: application/json
       "id": "{base64}",
       "authorizationSystemId": "5757f970-a701-4a2d-8cdb-97c858216084",
       "authorizationSystemName": "Microsoft Azure Sponsorship 2",
-      "authorizationSystemType": "azure",
+      "authorizationSystemType": "AZURE",
       "dataCollectionInfo": {
         "entitlements": {
           "@odata.type": "microsoft.graph.entitlementsDataCollection",
@@ -126,7 +126,7 @@ Content-Type: application/json
       "id": "{base64}",
       "authorizationSystemId": "carbide-bonsai-205017",
       "authorizationSystemName": "ck-staging",
-      "authorizationSystemType": "gcp",
+      "authorizationSystemType": "GCP",
       "dataCollectionInfo": {
         "entitlements": {
           "@odata.type": "microsoft.graph.entitlementsDataCollection",
@@ -137,7 +137,7 @@ Content-Type: application/json
       }
     }
   ],
-  "@odata.nextLink": "https://graph.microsoft.com/beta/external/authorizationSystems?$skip=100",
+  "@odata.nextLink": "https://graph.microsoft.com/beta/external/authorizationSystems?$skiptoken=MQ",
 }
 ```
 

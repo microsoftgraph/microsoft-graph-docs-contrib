@@ -52,7 +52,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: List GCP Actions For A Specific Service
 
 Returns collection of all gcpAuthorizationSystemTypeAction entities for a provided GCP authorization system and service the action is performed on. Listing actions for a GCP project "carbide-bonsai-205017" and service "compute".
 

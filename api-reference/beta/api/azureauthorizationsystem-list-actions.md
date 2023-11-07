@@ -1,5 +1,5 @@
 ---
-title: "List azureAuthorizationSystemTypeActions"
+title: "List actions for the Azure authorization system"
 description: "List the azureAuthorizationSystemTypeAction objects and their properties."
 author: "mrudulahg01"
 ms.localizationpriority: medium

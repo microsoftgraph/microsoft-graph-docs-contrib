@@ -34,7 +34,9 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /external/authorizationSystems/{authorizationSystemId}
 ```
+## Optional query parameters
 
+This method supports `$select` and `$expand` of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 ## Request headers
 |Name|Description|
 |:---|:---|
@@ -57,7 +59,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/external/authorizationSystems/{base64}
+GET https://graph.microsoft.com/beta/external/authorizationSystems/956987887735
 ```
 
 

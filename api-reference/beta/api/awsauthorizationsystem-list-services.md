@@ -52,9 +52,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1
-
-List services for a provided AWS authorization system.
+### Example 1: List services for a provided AWS authorization system.
 
 #### Request
 The following example shows a request.

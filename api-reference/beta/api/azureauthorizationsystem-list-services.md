@@ -1,6 +1,6 @@
 ---
-title: "List azureAuthorizationSystemTypeServices"
-description: "Get all services in an Azure authorization system."
+title: "List services for the Azure authorization system"
+description: "Get all services in an Azure authorization systemthat you've onboarded to Permissions Management."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all services in an Azure authorization system.
+List services for the Azure authorization system that you've onboarded to Permissions Management.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -36,7 +36,7 @@ GET /external/authorizationSystems/{computedId}/graph.azureAuthorizationSystem/s
 ```
 
 ## Optional query parameters
-This method supports the `$filter` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
