@@ -58,4 +58,4 @@ In general, subscription operations require read permission to the resource. For
 [To Do task]: ./todotask.md
 [todoTask]: ./todotask.md
 [callTranscript]: ./calltranscript.md
-[CallRecording]: ./callrecording.md
+[callRecording]: ./callrecording.md
