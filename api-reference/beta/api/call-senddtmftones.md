@@ -1,6 +1,6 @@
 ---
-title: "call: sendDtmfTones"
-description: "Send DTMF tones in the call."
+title: "call: senddtmftones"
+description: "Send DTMF tones in a call."
 author: "jackry2023"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Send DTMF tones in the call.
+Send DTMF tones in a call.
 
 For more information about how to handle operations, see [commsOperation](../resources/commsoperation.md)
 
@@ -23,9 +23,9 @@ For more information about how to handle operations, see [commsOperation](../res
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "call_playprompt" } -->
-[!INCLUDE [permissions-table](../includes/permissions/call-sendDtmfTones-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/call-senddtmftones-permissions.md)]
 
-> **Note:** Permissions are checked when the call is created; no additional permission check is made when calling this API. Calls.AccessMedia.All is only necessary for calls that use app-hosted media.
+> **Note:** Permissions are checked when a call is created; no additional permission check is made when calling this API. Calls.AccessMedia.All is only necessary for calls that use app-hosted media.
 
 ## HTTP request
 
@@ -51,7 +51,7 @@ In the request body, provide a JSON object with the following parameters.
 |clientContext|String|Unique client context string. Can have a maximum of 256 characters.|
 
 ## Response
-If successful, this method returns a `200 OK` response code and a [sendDtmfTonesOperation](../resources/sendDtmfTonesOperation.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [sendDtmfTonesOperation](../resources/senddtmftonesoperation.md) object in the response body.
 
 ## Example
 The following example shows how to call this API.
@@ -91,35 +91,35 @@ Content-Length: 166
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/call-sendDtmfTones-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/call-senddtmftones-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/call-sendDtmfTones-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/call-senddtmftones-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/call-sendDtmfTones-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/call-senddtmftones-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/call-sendDtmfTones-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/call-senddtmftones-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/call-sendDtmfTones-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/call-senddtmftones-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/call-sendDtmfTones-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/call-senddtmftones-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/call-sendDtmfTones-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-senddtmftones-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/call-sendDtmfTones-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/call-senddtmftones-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
