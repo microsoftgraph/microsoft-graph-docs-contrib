@@ -3,7 +3,7 @@ title: "reports: deviceReport"
 description: "Provide a report of all devices with network traffic that ZTNA captured."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 

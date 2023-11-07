@@ -3,7 +3,7 @@ title: "Create FilteringPolicy"
 description: "Create a new FilteringPolicy object."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|NetworkAccessPolicy.ReadWrite.All|
+|Delegated (work or school account)|NetworkAccess.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|NetworkAccess.ReadWrite.All|
 
 [!INCLUDE [rbac-global-secure-access-apis-write](../includes/rbac-for-apis/rbac-global-secure-access-apis-write.md)]
 
@@ -51,8 +51,6 @@ You can specify the following properties
 |:---|:---|:---|
 |name|String|Display Name. Required.|
 |policyRules|Collection(microsoft.graph.networkaccess.policyRule)|policyRules maintains the definition of the policy ruleset that makes up the core definition of a policy. Required.|
-
-
 
 ## Response
 
