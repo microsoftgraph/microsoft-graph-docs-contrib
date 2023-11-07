@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- {
   "blockType": "permissions",
-  "name": "daynote-update-permissions"
+  "name": "daynote-create-permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/daynote-create-permissions.md)]
@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a [dayNote](../r
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "update_daynote"
+  "name": "create_daynote"
 }
 -->
 ``` http
