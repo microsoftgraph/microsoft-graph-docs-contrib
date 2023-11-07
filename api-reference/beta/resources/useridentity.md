@@ -13,24 +13,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In the context of a Microsoft Entra audit log, the resource represents the user information that initiated or was affected by an audit activity. In the context of [callRecords](callrecords-callrecord.md), this resource is used to reflect the identity of a [participant](callrecords-participant.md) or [organizer](callrecords-organizer.md) in a call.
+In the context of a Microsoft Entra audit log, this resource represents the user information that initiated or was affected by an audit activity. In the context of [callRecords](callrecords-callrecord.md), this resource represents the identity of a [participant](callrecords-participant.md) or [organizer](callrecords-organizer.md) in a call.
 
-This type inherits from the [identity](identity.md) resource.
+Inherits from the [identity](identity.md).
 
 ## Properties
 
 | Property          | Type   | Description                                                                            |
 |:------------------|:-------|:---------------------------------------------------------------------------------------|
 | displayName       | String | The identity's display name. This might not always be available or up-to-date. |
-| id                | String | Unique identifier for the identity. Nullable.                                                   |
+| id                | String | Unique identifier for the identity. Nullable. When the unique identifier is unavailable, the **displayName** property is provided for the identity, but the **id** property is not included in the response. |
 | ipAddress         | String | Indicates the client IP address used by user performing the activity (audit log only). |
 | userPrincipalName | String | The userPrincipalName attribute of the user.                                           |
 
-> **Note:** In some cases, the unique identifier might not be available. In this case, the **displayName** property for the identity will be returned, but the **id** property will be missing from the resource.
-
 ## JSON representation
 
-Here's a JSON representation of the type.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -42,12 +40,11 @@ Here's a JSON representation of the type.
 
 ```json
 {
-  "displayName": "string",
-  "id": "string",
-  "userPrincipalName": "String",
+  "displayName": "String",
+  "id": "String (identifier)",
   "ipAddress": "string"
+  "userPrincipalName": "String"
 }
-
 ```
 
 <!--
