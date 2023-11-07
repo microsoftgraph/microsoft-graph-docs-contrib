@@ -30,6 +30,7 @@ Inherits from [recommendationBase](../resources/recommendationbase.md).
 |[Dismiss](../api/recommendation-dismiss.md)|[recommendation](../resources/recommendation.md)|Mark the status of a [recommendation](../resources/recommendation.md) object as `dismissed`.|
 |[Complete](../api/recommendation-complete.md)|[recommendation](../resources/recommendation.md)|Mark the status of a [recommendation](../resources/recommendation.md) object as `completedByUser`.|
 |[Reactivate](../api/recommendation-reactivate.md)|[recommendation](../resources/recommendation.md)|Mark the status of a [recommendation](../resources/recommendation.md) object as `active`.|
+|[Get tenantSecureScores](../api/recommendation-tenantsecurescores.md)|[tenantSecureScore](../resources/tenantsecurescore.md) collection|Get historical Secure Score data for your tenant. |
 
 ## Properties
 |Property|Type|Description|

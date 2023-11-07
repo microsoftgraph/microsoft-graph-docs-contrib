@@ -11814,6 +11814,8 @@ items:
                         href: api/recommendation-postpone.md
                       - name: Reactivate
                         href: api/recommendation-reactivate.md
+                      - name: Get tenant Secure Score
+                        href: api/recommendation-tenantsecurescores.md
                   - name: Impacted resources
                     items:
                       - name: Impacted resource

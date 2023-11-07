@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "514fea21-1d51-46d0-847e-9c2cce1d6c58",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tenantSecureScore",
+          "ChangeType": "Addition",
+          "Description": "Added the [tenantSecureScore](https://learn.microsoft.com/en-us/graph/api/resources/tenantSecureScore?view=graph-rest-beta) resource type.",
+          "Target": "tenantSecureScore"
+        },
+        {
+          "Id": "514fea21-1d51-46d0-847e-9c2cce1d6c58",
+          "ApiChange": "Method",
+          "ChangedApiName": "tenantSecureScores",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get tenant Secure Score](https://learn.microsoft.com/en-us/graph/api/recommendation-tenantsecurescore?view=graph-rest-beta) method to the [recommendation](https://learn.microsoft.com/en-us/graph/api/resources/recommendation?view=graph-rest-beta) resource.",
+          "Target": "recommendation"
+        }
+      ],
+      "Id": "514fea21-1d51-46d0-847e-9c2cce1d6c58",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-11-06T20:26:18.8331804Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {    
           "Id": "e70ef0dd-ac40-4549-9583-958a7a9c0b66",
           "ApiChange": "Member",
           "ChangedApiName": "longLivedCredentials",
