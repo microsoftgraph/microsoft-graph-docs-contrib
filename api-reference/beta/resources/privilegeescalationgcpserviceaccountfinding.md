@@ -23,7 +23,6 @@ Inherits from [privilegeEscalationFinding](../resources/privilegeescalationfindi
 |:---|:---|:---|
 |[List privilegeEscalationGcpServiceAccountFindings](../api/privilegeescalationgcpserviceaccountfinding-list.md)|[privilegeEscalationGcpServiceAccountFinding](../resources/privilegeescalationgcpserviceaccountfinding.md) collection|Get a list of the [privilegeEscalationGcpServiceAccountFinding](../resources/privilegeescalationgcpserviceaccountfinding.md) objects and their properties.|
 |[Get privilegeEscalationGcpServiceAccountFinding](../api/privilegeescalationgcpserviceaccountfinding-get.md)|[privilegeEscalationGcpServiceAccountFinding](../resources/privilegeescalationgcpserviceaccountfinding.md)|Read the properties and relationships of a [privilegeEscalationGcpServiceAccountFinding](../resources/privilegeescalationgcpserviceaccountfinding.md) object.|
-|[List potentialPrivilegeEscalations](../api/privilegeescalationgcpserviceaccountfinding-list-potentialprivilegeescalations.md)|[privilegeEscalation](../resources/privilegeescalation.md) collection|Get the privilegeEscalation resources from the potentialPrivilegeEscalations navigation property.|
 
 ## Properties
 |Property|Type|Description|

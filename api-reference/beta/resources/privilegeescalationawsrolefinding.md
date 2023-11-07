@@ -22,7 +22,6 @@ Inherits from [privilegeEscalationFinding](../resources/privilegeescalationfindi
 |:---|:---|:---|
 |[List privilegeEscalationAwsRoleFindings](../api/privilegeescalationawsrolefinding-list.md)|[privilegeEscalationAwsRoleFinding](../resources/privilegeescalationawsrolefinding.md) collection|Get a list of the [privilegeEscalationAwsRoleFinding](../resources/privilegeescalationawsrolefinding.md) objects and their properties.|
 |[Get privilegeEscalationAwsRoleFinding](../api/privilegeescalationawsrolefinding-get.md)|[privilegeEscalationAwsRoleFinding](../resources/privilegeescalationawsrolefinding.md)|Read the properties and relationships of a [privilegeEscalationAwsRoleFinding](../resources/privilegeescalationawsrolefinding.md) object.|
-|[List potentialPrivilegeEscalations](../api/privilegeescalationawsrolefinding-list-potentialprivilegeescalations.md)|[privilegeEscalation](../resources/privilegeescalation.md) collection|Get the privilegeEscalation resources from the potentialPrivilegeEscalations navigation property.|
 
 ## Properties
 |Property|Type|Description|
