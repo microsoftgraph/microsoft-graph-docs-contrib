@@ -4276,10 +4276,19 @@ Possible values for user account types (group membership), per Windows definitio
 |group|
 |unknownFutureValue|
 
-<<<<<<< HEAD
+### b2bIdentityProvidersType values
+
+|Member|
+|:-----|
+|azureActiveDirectory|
+|externalFederation|
+|socialIdentityProviders|
+|emailOneTimePasscode|
+|microsoftAccount|
+|defaultConfiguredIdp|
+|unknownFutureValue|
+
 ### authorizationSystemActionSeverity values 
-
-
 
 |Member|
 |:---|
@@ -4484,16 +4493,3 @@ Possible values for user account types (group membership), per Windows definitio
 |noRecentDataCollected|
 |unknownFutureValue|
 
-=======
-### b2bIdentityProvidersType values
-
-|Member|
-|:-----|
-|azureActiveDirectory|
-|externalFederation|
-|socialIdentityProviders|
-|emailOneTimePasscode|
-|microsoftAccount|
-|defaultConfiguredIdp|
-|unknownFutureValue|
->>>>>>> main
