@@ -6068,38 +6068,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to manage workforce integrations to synchronize data from Microsoft Teams Shifts, without a signed-in user. | Allows the app to manage workforce integrations, to synchronize data from Microsoft Teams Shifts, on behalf of the signed-in user. 
 | AdminConsentRequired | Yes | Yes 
 
-<<<<<<< HEAD
-## Insights-UserMetric permissions
-
-#### Delegated permissions
-
-|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Insights-UserMetric.Read.All_ | Read user metrics insights | Allows an app to read user metrics insights, such as daily and monthly active users, on behalf of the signed-in user. | Yes | No |
-
-#### Application permissions
-
-|   Permission    |  Display String   |  Description | Admin Consent Required |
-|:----------------|:------------------|:-------------|:-----------------------|
-| _Insights-UserMetric.Read.All_ | Read all user metrics insights | Allows an app to read all user metrics insights, such as daily and monthly active users, without a signed-in user. | Yes |
-
-### Remarks
-- Insights-UserMetric permissions are only valid for work or school accounts.
-- For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user one of these Azure AD Built-in administrator role: Application Administrator, Cloud Application Administrator, Company Administrator, Global Readers, Reports Reader, Security Administrator, Security Reader, or Security Operator.
-
-### Example usage
-
-#### Application
-
-* _Insights-UserMetric.Read.All_: Read all daily authentications metrics insights for the month (`GET /reports/userInsights/daily/authentications`).
-* _Insights-UserMetric.Read.All_: Read all daily summaries for appId "ab1cd2e3-f4g5-67h8-i9jk-b748da123456"(`GET /reports/userInsights/daily/summary?$filter=appId eq 'ab1cd2e3-f4g5-67h8-i9jk-b748da123456'`).
-
-For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
-
-## All permissions and IDs
-=======
 ---
->>>>>>> 8ac341059ffc625cc9e4c0c2d3bc31bf7722abca
 
 ## Delegated permissions supported for personal Microsoft accounts (MSA)
 
