@@ -13,17 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
-
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List permissionsAnalytics](../api/permissionsanalyticsaggregation-list-aws.md)|[permissionsAnalytics](../resources/permissionsanalytics.md) collection|Get a list of the [permissionsAnalytics](../resources/permissionsanalytics.md) objects and their properties.|
-|[Get permissionsAnalytics](../api/permissionsanalytics-get.md)|[permissionsAnalytics](../resources/permissionsanalytics.md)|Read the properties and relationships of a [permissionsAnalytics](../resources/permissionsanalytics.md) object.|
-
+None.
 
 ## Properties
 |Property|Type|Description|
