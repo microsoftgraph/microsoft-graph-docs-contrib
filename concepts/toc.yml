@@ -84,8 +84,6 @@ items:
             displayName: monetize, charge, cost, pricing
           - name: List of metered APIs
             href: metered-api-list.md
-      - name: Microsoft Graph activity logs
-        href: microsoft-graph-activity-logs-overview.md
       - name: Versioning and support
         href: versioning-and-support.md
       - name: Terms of use
@@ -168,7 +166,7 @@ items:
               - name: App authorization
                 href: app-authorization.md
               - name: Existing customer migration
-                href: existing-customer-migration.md  
+                href: existing-customer-migration.md
           - name: Templates
             href: data-connect-templates-overview.md
           - name: Integrate with PAM
@@ -180,8 +178,8 @@ items:
             items:
               - name: Managed private endpoints
                 href: managed-private-endpoints-overview.md
-              - name: Microsoft 365 audit logs 
-                href: microsoft365-audit-logs.md  
+              - name: Microsoft 365 audit logs
+                href: microsoft365-audit-logs.md
           - name: Data Connect FAQ
             href: data-connect-faq.md
             displayName: Microsoft Graph Data Connect frequently asked questions
@@ -283,7 +281,7 @@ items:
           - name: Connectors API
             href: connecting-external-content-connectors-api-overview.md
             displayName: Microsoft Graph connectors
-          - name: Use Postman
+          - name: Try the API
             href: connecting-external-content-connectors-api-postman.md
             displayName: connector, connectors
           - name: Build your first custom connector
@@ -451,6 +449,51 @@ items:
             href: extensibility-open-users.md
           - name: Use schema extensions
             href: extensibility-schema-groups.md
+      - name: External data connections
+        items: 
+          - name: Connectors overview
+            href: connecting-external-content-connectors-overview.md
+            displayName: Microsoft Graph connectors, connect external content
+          - name: Connectors experiences
+            href: connecting-external-content-experiences.md
+            displayName: Microsoft Graph connectors, connect external content with Microsoft 365 experiences
+          - name: Connectors API
+            href: connecting-external-content-connectors-api-overview.md
+            displayName: Microsoft Graph connectors
+          - name: Use Postman
+            href: connecting-external-content-connectors-api-postman.md
+            displayName: connector, connectors
+          - name: Build your first custom connector
+            href: connecting-external-content-build-quickstart.yml
+            displayName: connectors, Microsoft Graph connectors
+          - name: Connectors samples
+            href: /samples/browse/?products=microsoft-graph-connectors-api
+          - name: Build your first custom connector using SDK
+            items:
+              - name: Overview
+                href: custom-connector-sdk-sample-overview.md
+              - name: Build the connector
+                href: custom-connector-sdk-sample-create.md
+              - name: Test the connector
+                href: custom-connector-sdk-sample-test.md
+              - name: Host the connector as a Windows service
+                href: custom-connector-sdk-sample-hosting.md
+              - name: Publish the connector
+                href: custom-connector-sdk-sample-publish.md
+              - name: Surface the data in search
+                href: custom-connector-sdk-sample-search.md
+          - name: Simplify connector deployment
+            href: connecting-external-content-deploy-teams.md
+          - name: Manage connections
+            href: connecting-external-content-manage-connections.md
+          - name: Manage schema
+            href: connecting-external-content-manage-schema.md
+          - name: Manage items
+            href: connecting-external-content-manage-items.md
+          - name: Use external groups
+            href: connecting-external-content-external-groups.md
+          - name: API limits
+            href: connecting-external-content-api-limits.md
       - name: Files
         items:
           - name: Overview
@@ -619,7 +662,7 @@ items:
             href: people-insights-overview.md
           - name: Customize people insights privacy (preview)
             href: insights-customize-people-insights-privacy.md
-          - name: Customize the profile card (preview)
+          - name: Customize the profile card
             href: add-properties-profilecard.md
           - name: Item insights overview
             href: item-insights-overview.md
@@ -914,7 +957,7 @@ items:
             items:
               - name: Get started with Postman
                 href: use-postman.md
-              - name: Set up delegated authentication 
+              - name: Set up delegated authentication
                 href: use-postman-with-delegated-authentication.md
               - name: Set up app-only authentication
                 href: use-postman-with-app-only-authentication.md

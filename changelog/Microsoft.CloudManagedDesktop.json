@@ -3620,6 +3620,48 @@
           "SubArea": "Cloud PC"
         },
         {
+        "ChangeList": [
+            {
+                "Id": "cc0c0a79-a691-485d-b47c-8b0ee543ae6c",
+                "ApiChange": "Enum type",
+                "ChangedApiName": "shiftWorkCloudPcAccessState",
+                "ChangeType": "Deprecation",
+                "Description": "Deprecated the **shiftWorkCloudPcAccessState** enumeration type. Goind forward, use the **frontlineCloudPcAccessState** enumeration.",
+                "Target": "shiftWorkCloudPcAccessState"
+            },
+            {
+                "Id": "cc0c0a79-a691-485d-b47c-8b0ee543ae6c",
+                "ApiChange": "Enum type",
+                "ChangedApiName": "frontlineCloudPcAccessState",
+                "ChangeType": "Addition",
+                "Description": "Added the **frontlineCloudPcAccessState** enumeration type.",
+                "Target": "frontlineCloudPcAccessState"
+            },
+            {
+                "Id": "cc0c0a79-a691-485d-b47c-8b0ee543ae6c",
+                "ApiChange": "Method",
+                "ChangedApiName": "getShiftWorkCloudPcAccessState",
+                "ChangeType": "Deprecation",
+                "Description": "Deprecated the [getShiftWorkCloudPcAccessState](https://learn.microsoft.com/en-us/graph/api/cloudpc-getShiftWorkCloudPcAccessState?view=graph-rest-beta) method of the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource. Goind forward, use the [getFrontlineCloudPcAccessState](https://learn.microsoft.com/en-us/graph/api/cloudpc-getFrontlineCloudPcAccessState?view=graph-rest-beta) API.",
+                "Target": "cloudPC"
+            },
+            {
+                "Id": "cc0c0a79-a691-485d-b47c-8b0ee543ae6c",
+                "ApiChange": "Method",
+                "ChangedApiName": "getFrontlineCloudPcAccessState",
+                "ChangeType": "Addition",
+                "Description": "Added the [getFrontlineCloudPcAccessState](https://learn.microsoft.com/en-us/graph/api/cloudPC-getFrontlineCloudPcAccessState?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+                "Target": "cloudPC"
+            }
+        ],
+        "Id": "cc0c0a79-a691-485d-b47c-8b0ee543ae6c",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2023-11-06T07:34:41.3424906Z",
+        "WorkloadArea": "Device and app management",
+        "SubArea": "Cloud PC"
+        },
+        {
             "ChangeList": [
                 {
                     "Id": "80297d8c-5457-4fa1-be2b-769490b818bb",

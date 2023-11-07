@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents information about a deleted item in a [recycleBin](recyclebin.md).
+Represents information about a deleted item in a [recycleBin](recyclebin.md) of a SharePoint [site](site.md).
 
 Inherits from [baseItem](baseitem.md).
 

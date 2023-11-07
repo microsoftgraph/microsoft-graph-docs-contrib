@@ -28,6 +28,7 @@ Represents a delegated admin relationship between a partner and customer.
 |:---|:---|:---|
 |accessDetails|[delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The access details that contain the identifiers of the administrative roles that the partner admin is requesting in the customer tenant.|
 |activatedDateTime|DateTimeOffset|The date and time in ISO 8601 format and in UTC time when the relationship became active. Read-only.|
+|autoExtendDuration|Duration| The duration by which the validity of the relationship is automatically extended, denoted in ISO 8601 format. Supported values are: `P0D`, `PT0S`, `P180D`. The default value is `PT0S`. `PT0S` indicates that the relationship expires when the **endDateTime** is reached and it isn't automatically extended.|
 |createdDateTime|DateTimeOffset|The date and time in ISO 8601 format and in UTC time when the relationship was created. Read-only.|
 |customer|[delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|The display name and unique identifier of the customer of the relationship. This is configured either by the partner at the time the relationship is created or by the system after the customer approves the relationship. Can't be changed by the customer.|
 |displayName|String|The display name of the relationship used for ease of identification. Must be unique across *all* delegated admin relationships of the partner and is set by the partner only when the relationship is in the `created` status and can't be changed by the customer.|
@@ -73,10 +74,11 @@ Here's a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.delegatedAdminRelationship",
   "accessDetails": {"@odata.type": "microsoft.graph.delegatedAdminAccessDetails"},
   "activatedDateTime": "String (timestamp)",
+  "autoExtendDuration": "String (duration)",
   "createdDateTime": "String (timestamp)",
   "customer": {"@odata.type": "microsoft.graph.delegatedAdminRelationshipCustomerParticipant"},
   "displayName": "String",
-  "duration": "String",
+  "duration": "String (duration)",
   "endDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",

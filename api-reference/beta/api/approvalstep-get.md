@@ -19,33 +19,24 @@ Retrieve the properties of an [approvalStep](../resources/approvalstep.md) objec
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### Permissions required for calling this API for entitlement management
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+<!-- { "blockType": "permissions", "name": "approvalstep_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/approvalstep-get-permissions.md)]
 
 <a name='for-pim-for-azure-ad-roles'></a>
 
 ### For PIM for Microsoft Entra roles
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | RoleAssignmentSchedule.Read.Directory, RoleAssignmentSchedule.ReadWrite.Directory |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+<!-- { "blockType": "permissions", "name": "approvalstep_get_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/approvalstep-get-2-permissions.md)]
 
 ### Permissions required for calling this API for PIM for groups
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | PrivilegedAssignmentSchedule.Read.AzureADGroup, PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+<!-- { "blockType": "permissions", "name": "approvalstep_get_3" } -->
+[!INCLUDE [permissions-table](../includes/permissions/approvalstep-get-3-permissions.md)]
 
 ## HTTP request
 

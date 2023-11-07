@@ -2,6 +2,7 @@
 title: "authenticationStrengthPolicy: usage"
 description: "Allows the caller to see which Conditional Access policies reference a specified authentication strength policy."
 author: "InbarckMS"
+ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -16,13 +17,10 @@ Allows the caller to see which Conditional Access policies reference a specified
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Policy.Read.All, Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod|
+<!-- { "blockType": "permissions", "name": "authenticationstrengthpolicy_usage" } -->
+[!INCLUDE [permissions-table](../includes/permissions/authenticationstrengthpolicy-usage-permissions.md)]
 
 [!INCLUDE [rbac-authenticationstrength-apis-read](../includes/rbac-for-apis/rbac-authenticationstrength-apis-read.md)]
 
