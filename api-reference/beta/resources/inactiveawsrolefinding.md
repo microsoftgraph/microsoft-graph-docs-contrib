@@ -1,6 +1,6 @@
 ---
 title: "inactiveAwsRoleFinding resource type"
-description: ""Represents inactive AWS roles."
+description: "Represents inactive AWS roles."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-"Represents inactive AWS roles.
+Represents inactive AWS roles.
 
 
 Inherits from [identityFinding](../resources/identityfinding.md).
@@ -38,7 +38,7 @@ Inherits from [identityFinding](../resources/identityfinding.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Represents an identity in an authorization system|Inherited from [microsoft.graph.identityFinding](../resources/identityfinding.md)|
+|identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Represents an identity in an authorization system. Inherited from [microsoft.graph.identityFinding](../resources/identityfinding.md)|
 
 ## JSON representation
 The following JSON representation shows the resource type.

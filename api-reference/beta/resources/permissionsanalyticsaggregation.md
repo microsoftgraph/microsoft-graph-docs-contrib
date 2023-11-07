@@ -18,8 +18,6 @@ Represents permissions analytics findings for AWS, Azure, and GCP.
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
 None
 
 ## Properties

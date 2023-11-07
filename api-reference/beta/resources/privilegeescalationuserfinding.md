@@ -1,6 +1,6 @@
 ---
 title: "privilegeEscalationUserFinding resource type"
-description: "A finding that represents the a list of potential exploiting of a misconfigured IAM policy or configuration oversight to gain elevated access to other permissions and resources."
+description: "Represents findings for a list of potential exploiting of a misconfigured IAM policy or configuration oversight to gain elevated access to other permissions and resources."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A finding that represents the a list of potential exploiting of a misconfigured IAM policy or configuration oversight to gain elevated access to other permissions and resources.
+Represents findings for a list of potential exploiting of a misconfigured IAM policy or configuration oversight to gain elevated access to other permissions and resources.
 
 Inherits from [privilegeEscalationFinding](../resources/privilegeescalationfinding.md).
 
@@ -26,7 +26,6 @@ Inherits from [privilegeEscalationFinding](../resources/privilegeescalationfindi
 |[List potentialPrivilegeEscalations](../api/privilegeescalationuserfinding-list-potentialprivilegeescalations.md)|[privilegeEscalation](../resources/privilegeescalation.md) collection|Get the privilegeEscalation resources from the potentialPrivilegeEscalations navigation property.|
 
 ## Properties
-
 |Property|Type|Description|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|A date specifiying when the Finding was created Inherited from [finding](../resources/finding.md).|
@@ -38,7 +37,7 @@ Inherits from [privilegeEscalationFinding](../resources/privilegeescalationfindi
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Represents an identity in an authorization system|Inherited from [microsoft.graph.privilegeEscalationFinding](../resources/privilegeescalationfinding.md)|
+|identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Represents an identity in an authorization system. Inherited from [microsoft.graph.privilegeEscalationFinding](../resources/privilegeescalationfinding.md)|
 |potentialPrivilegeEscalations|[privilegeEscalation](../resources/privilegeescalation.md) collection|represents users with the potential to escalate privileges Inherited from [microsoft.graph.privilegeEscalationFinding](../resources/privilegeescalationfinding.md)|
 
 ## JSON representation

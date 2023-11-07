@@ -1,9 +1,9 @@
 ---
 title: "encryptedGcpStorageBucketFinding resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents the findings for GCP encrypted storage buckets."
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents the findings for GCP encrypted storage buckets.
 
 Inherits from [finding](../resources/finding.md).
 
@@ -30,7 +29,7 @@ Inherits from [finding](../resources/finding.md).
 |accessibility|gcpAccessType|Gcp resources access type	.The possible values are: `public`, `subjectToObjectAcls`, `private`, `unknownFutureValue`.|
 |createdDateTime|DateTimeOffset|A date specifiying when the Finding was created Inherited from [finding](../resources/finding.md).|
 |encryptionManagedBy|gcpEncryption|Specifies who manages encryption of Gcp storage buckets	.The possible values are: `google`, `customer`, `unknownFutureValue`.|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
+|id|String|Unique identifier for the Finding. This id will be base64 encoded using the format:{findingType}{FindingId} to ensure uniqueness. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|

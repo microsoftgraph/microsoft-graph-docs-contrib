@@ -1,6 +1,6 @@
 ---
 title: "awsSecurityToolAdministrationFinding resource type"
-description: "A finding that contains information on identities with privileges to modify settings of security tools"
+description: "Represents findings for identities with privileges to modify settings of security tools"
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A finding that contains information on identities with privileges to modify settings of security tools
+Represents findings for identities with privileges to modify settings of security tools
 
 Inherits from [finding](../resources/finding.md).
 
@@ -36,7 +36,7 @@ Inherits from [finding](../resources/finding.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Represents an identity in an authorization system||
+|identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Represents an identity in an authorization system|
 
 ## JSON representation
 The following JSON representation shows the resource type.

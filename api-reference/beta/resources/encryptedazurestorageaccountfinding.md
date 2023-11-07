@@ -1,6 +1,6 @@
 ---
 title: "encryptedAzureStorageAccountFinding resource type"
-description: "Represents the findings for Azure encrypted storage buckets."
+description: "Represents the findings for Azure encrypted storage accounts."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -29,7 +29,7 @@ Inherits from [finding](../resources/finding.md).
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|A date specifiying when the Finding was created Inherited from [finding](../resources/finding.md).|
 |encryptionManagedBy|azureEncryption|Specifies who manages encryption of Azure storage accounts.The possible values are: `microsoftStorage`, `microsoftKeyVault`, `customer`, `unknownFutureValue`.|
-|id|String|Unique identifier for the Finding. This id will be base64 encoded using the format:{findingType}{FindingId} to ensure uniqueness Inherited from [entity](../resources/entity.md).|
+|id|String|Unique identifier for the Finding. This id will be base64 encoded using the format:{findingType}{FindingId} to ensure uniqueness. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|

@@ -39,7 +39,7 @@ Inherits from [identityFinding](../resources/identityfinding.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Represents an identity in an authorization system|Inherited from [microsoft.graph.identityFinding](../resources/identityfinding.md)|
+|identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Represents an identity in an authorization system. Inherited from [microsoft.graph.identityFinding](../resources/identityfinding.md)|
 
 ## JSON representation
 

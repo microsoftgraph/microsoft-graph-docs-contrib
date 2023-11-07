@@ -1,6 +1,6 @@
 ---
 title: "awsSecretInformationAccessFinding resource type"
-description: "A finding that contains information on identities with privileges to modify settings of security tools"
+description: "Represents findings for identities with privileges to modify settings of security tools"
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A finding that contains information on identities with privileges to modify settings of security tools
+Represents findings for identities with privileges to modify settings of security tools
 
 Inherits from [finding](../resources/finding.md).
 
