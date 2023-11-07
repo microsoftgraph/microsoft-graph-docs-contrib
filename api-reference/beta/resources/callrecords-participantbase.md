@@ -22,7 +22,7 @@ Base type of [organizer](callrecords-organizer.md) and [participant](callrecords
 | Property    | Type                          | Description                                     |
 |:------------|:------------------------------|:------------------------------------------------|
 | id          | String                        | Unique identifier for the call participant.     |
-| identity    | [identitySet](identityset.md) | Optional. The identity of the call participant. |
+| identity    | [identitySet](identityset.md) | The identity of the call participant. |
 
 ## JSON representation
 
