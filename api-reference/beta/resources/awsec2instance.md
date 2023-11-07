@@ -1,9 +1,9 @@
 ---
 title: "awsEc2Instance resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents the findings for AWS EC2 instances"
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the findings for AWS EC2 instances
 
 
 Inherits from [awsIdentity](../resources/awsidentity.md).
@@ -23,28 +23,20 @@ Inherits from [awsIdentity](../resources/awsidentity.md).
 |:---|:---|:---|
 |[List awsEc2Instance](../api/awsec2instance-list.md)|[awsEc2Instance](../resources/awsec2instance.md) collection|Get a list of the [awsEc2Instance](../resources/awsec2instance.md) objects and their properties.|
 |[Get awsEc2Instance](../api/awsec2instance-get.md)|[awsEc2Instance](../resources/awsec2instance.md)|Read the properties and relationships of an [awsEc2Instance](../resources/awsec2instance.md) object.|
-|[Update awsEc2Instance](../api/awsec2instance-update.md)|[awsEc2Instance](../resources/awsec2instance.md)|Update the properties of an [awsEc2Instance](../resources/awsec2instance.md) object.|
-|[Delete awsEc2Instance](../api/awsec2instance-delete.md)|None|Delete an [awsEc2Instance](../resources/awsec2instance.md) object.|
-|[List authorizationSystem](../api/awsec2instance-list-authorizationsystem.md)|[authorizationSystem](../resources/authorizationsystem.md) collection|Get the authorizationSystem resources from the authorizationSystem navigation property.|
-|[Add authorizationSystem](../api/awsec2instance-post-authorizationsystem.md)|[authorizationSystem](../resources/authorizationsystem.md)|Add authorizationSystem by posting to the authorizationSystem collection.|
-|[Remove authorizationSystem](../api/awsec2instance-delete-authorizationsystem.md)|None|Remove an [authorizationSystem](../resources/authorizationsystem.md) object.|
-|[List awsAuthorizationSystemResource](../api/awsec2instance-list-resource.md)|[awsAuthorizationSystemResource](../resources/awsauthorizationsystemresource.md) collection|Get the awsAuthorizationSystemResource resources from the resource navigation property.|
-|[Add awsAuthorizationSystemResource](../api/awsec2instance-post-resource.md)|[awsAuthorizationSystemResource](../resources/awsauthorizationsystemresource.md)|Add resource by posting to the resource collection.|
-|[Remove awsAuthorizationSystemResource](../api/awsec2instance-delete-resource.md)|None|Remove an [awsAuthorizationSystemResource](../resources/awsauthorizationsystemresource.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
-|externalId|String|**TODO: Add Description** Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
-|id|String|**TODO: Add Description** Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
-|source|[authorizationSystemIdentitySource](../resources/authorizationsystemidentitysource.md)|**TODO: Add Description** Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
+|displayName|String|The name of the object. Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
+|externalId|String|The externally displayed ID of the object. Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
+|id|String|Unique identifier for the Finding. This id will be base64 encoded using the format:{findingType}{FindingId} to ensure uniqueness. Inherited from [entity](../resources/entity.md).|
+|source|[authorizationSystemIdentitySource](../resources/authorizationsystemidentityresource.md)|The source of the authorization system identity. Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|authorizationSystem|[authorizationSystem](../resources/authorizationsystem.md)|**TODO: Add Description** Inherited from [microsoft.graph.authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|
-|resource|[awsAuthorizationSystemResource](../resources/awsauthorizationsystemresource.md)|**TODO: Add Description**|
+|authorizationSystem|[authorizationSystem](../resources/authorizationsystem.md)|Represents the authorization system. Inherited from [microsoft.graph.authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|
+|resource|[awsAuthorizationSystemResource](../resources/awsauthorizationsystemresource.md)|Represents the resources in an authorization system.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
