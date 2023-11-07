@@ -11,6 +11,16 @@ author: "BenAlfasi"
 
 Namespace: microsoft.graph.security
 
+### behaviorDuringRetentionPeriod values
+
+| Member                   |
+| :----------------------- |
+| doNotRetain              |
+| retain                   |
+| retainAsRecord           |
+| retainAsRegulatoryRecord |
+| unknownFutureValue       |
+
 ### contentFormat values
 
 | Member             |
