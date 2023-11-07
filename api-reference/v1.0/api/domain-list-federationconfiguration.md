@@ -48,7 +48,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of one [internalDomainFederation](../resources/internaldomainfederation.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of one [internalDomainFederation](../resources/internaldomainfederation.md) object in the response body. If there isn't an [internalDomainFederation](../resources/internaldomainfederation.md) object in the tenant, this API returns a `404 Not Found` response code.
 
 ## Examples
 
