@@ -1,6 +1,6 @@
 ---
 title: "Get finding"
-description: "Read the properties and relationships of a finding object."
+description: "Not implemented: Read the properties and relationships of a finding object."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
