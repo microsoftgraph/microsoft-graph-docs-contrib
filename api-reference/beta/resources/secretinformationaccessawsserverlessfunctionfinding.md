@@ -1,6 +1,6 @@
 ---
 title: "secretInformationAccessAwsServerlessFunctionFinding resource type"
-description: "View AWS identities that have privileges to read, modify, or delete secret information."
+description: "View AWS serverless functions that have privileges to read, modify, or delete secret information."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-View AWS identities that have privileges to read, modify, or delete secret information.
+View AWS serverless functions that have privileges to read, modify, or delete secret information.
 
 
 Inherits from [awsSecretInformationAccessFinding](../resources/awssecretinformationaccessfinding.md).

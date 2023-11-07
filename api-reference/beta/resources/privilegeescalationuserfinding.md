@@ -1,6 +1,6 @@
 ---
 title: "privilegeEscalationUserFinding resource type"
-description: "Represents findings for a list of potential exploiting of a misconfigured IAM policy or configuration oversight to gain elevated access to other permissions and resources."
+description: "Represents findings for a list of users who can escalate privileges in AWS or GCP."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents findings for a list of potential exploiting of a misconfigured IAM policy or configuration oversight to gain elevated access to other permissions and resources.
+Represents findings for a list of users who can potentially exploit of a misconfigured IAM policy or configuration oversight to gain elevated access to other permissions and resources in AWS and GCP.
 
 Inherits from [privilegeEscalationFinding](../resources/privilegeescalationfinding.md).
 
@@ -23,7 +23,6 @@ Inherits from [privilegeEscalationFinding](../resources/privilegeescalationfindi
 |:---|:---|:---|
 |[List privilegeEscalationUserFindings](../api/privilegeescalationuserfinding-list.md)|[privilegeEscalationUserFinding](../resources/privilegeescalationuserfinding.md) collection|Get a list of the [privilegeEscalationUserFinding](../resources/privilegeescalationuserfinding.md) objects and their properties.|
 |[Get privilegeEscalationUserFinding](../api/privilegeescalationuserfinding-get.md)|[privilegeEscalationUserFinding](../resources/privilegeescalationuserfinding.md)|Read the properties and relationships of a [privilegeEscalationUserFinding](../resources/privilegeescalationuserfinding.md) object.|
-|[List potentialPrivilegeEscalations](../api/privilegeescalationuserfinding-list-potentialprivilegeescalations.md)|[privilegeEscalation](../resources/privilegeescalation.md) collection|Get the privilegeEscalation resources from the potentialPrivilegeEscalations navigation property.|
 
 ## Properties
 |Property|Type|Description|

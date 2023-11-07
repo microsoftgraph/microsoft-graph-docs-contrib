@@ -1,6 +1,6 @@
 ---
 title: "privilegeEscalationFinding resource type"
-description: "Represents findings for a list of potential exploiting of a misconfigured IAM policy or configuration oversight to gain elevated access to other permissions and resources."
+description: "Represents findings for a list of privilege escalations in AWS or GCP."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents findings for a list of potential exploiting of a misconfigured IAM policy or configuration oversight to gain elevated access to other permissions and resources.
+Represents findings for a list of potential exploiting of a misconfigured IAM policy or configuration oversight to gain elevated access to other permissions and resources in AWS and GCP.
 
 Inherits from [finding](../resources/finding.md).
 
@@ -22,7 +22,6 @@ Inherits from [finding](../resources/finding.md).
 |:---|:---|:---|
 |[List privilegeEscalationFindings](../api/privilegeescalationfinding-list.md)|[privilegeEscalationFinding](../resources/privilegeescalationfinding.md) collection|Get a list of the [privilegeEscalationFinding](../resources/privilegeescalationfinding.md) objects and their properties.|
 |[Get privilegeEscalationFinding](../api/privilegeescalationfinding-get.md)|[privilegeEscalationFinding](../resources/privilegeescalationfinding.md)|Read the properties and relationships of a [privilegeEscalationFinding](../resources/privilegeescalationfinding.md) object.|
-|[List potentialPrivilegeEscalations](../api/privilegeescalationfinding-list-potentialprivilegeescalations.md)|[privilegeEscalation](../resources/privilegeescalation.md) collection|Get the privilegeEscalation resources from the potentialPrivilegeEscalations navigation property.|
 
 ## Properties
 |Property|Type|Description|
