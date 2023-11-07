@@ -114,9 +114,9 @@ The following is a JSON representation of the resource.
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
   "notificationChannelUrl": "String",
-  "status": "String",
-  "webUrl": "String",
-  "resourcesFolderUrl": "String"
+  "resourcesFolderUrl": "String",
+  "status": "String",  
+  "webUrl": "String"
 }
 ```
 
