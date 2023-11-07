@@ -241,7 +241,7 @@ configuration:
             @${issueAuthor}, your content reviewer has requested changes to your pull request. Please review feedback and address accordingly as soon as possible to keep your pull request moving forward.
 
 
-            Once you have addressed the feedback, please add the `review feedback addressed` label and select the **Re-request review** icon.
+            Once you have addressed the feedback, please add the `review feedback addressed` label and select the **Re-request review** icon next to the content reviewer's alias.
 
 
             If you cannot add labels, please add a comment with `#feedback-addressed` to the pull request.
