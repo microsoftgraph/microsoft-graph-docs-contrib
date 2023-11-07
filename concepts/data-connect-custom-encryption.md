@@ -31,12 +31,11 @@ Set up custom encryption by generating keys in AKV or linking an existing AKV. E
     2. Click **properties**. Click on **Single Tenant** and toggle on encryption. 
     3. Drop down to select your Azure Key Vault URI (name of the AKV) or follow steps 3.d and 3.e to create a new AKV. Then **Update Properties** to save. 
     4. Follow step 5 to ensure you AKV has the correct role permissions and populate it with the correct RSA keys.
+    5. Ensure your pipelines run AFTER step 5 is complete or else your data request will not deliver encrypted data.
 
     ![Screenshot covers MGDC on app portal](images/portal-MGDC.png)
     
     ![Screenshot covers the existing app and how to enable encryption](images/existing-app-encryption.png)
-
-    5. Ensure your pipelines run AFTER step 4 is complete or else your data request will not deliver encrypted data.
 
 2. If you don't have an existing Data Connect Application, follow our [Getting Started](../includes/data-connect-quickstart-01.md) using [the simplified onboarding experience.](./onboarding-experience-overview.md). 
 
@@ -48,7 +47,7 @@ Set up custom encryption by generating keys in AKV or linking an existing AKV. E
     5. Once you have set up your AKV, go back to your Data connect application tab and look for your AKV in the drop-down to select it. You may need to refresh the page for the AKV to populate in the dropdown.
 
     > [!NOTE]
-    > Encryption will apply to ALL the eligible datasets requested in the application. Click on the tool tip next to encryption to learn which datasets are elgible.
+    > Encryption will apply to ALL the eligible datasets requested in the application. Click on the tool tip next to encryption to learn which datasets are eligible.
 
     ![Screenshot of the the Azure portal with Azure Key Vault and encryption boxed in](images/app-registration-encryption.png) 
 
@@ -149,6 +148,8 @@ No action is required from the Microsoft 365 admin for this section.
     ![Screenshot explains dataset encryption enabled in review](images/admin-approves-encryption.png)
 
 5.	Once you have reviewed the application, please select **Approve, Decline, or Cancel**. An action must be taken and Data Connect will only apply encryption once the app is approved. To understand more on admin authorization, please see [app authorization.](./app-authorization.md)
+
+</div>
 
 ## Recommendations on Decrypting Datasets after Data Delivery
 
