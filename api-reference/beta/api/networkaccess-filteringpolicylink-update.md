@@ -1,6 +1,6 @@
 ---
 title: "Update filteringPolicyLink"
-description: "Modify the properties of an existing microsoft.graph.networkaccess.filteringPolicyLink object to update its traffic rules."
+description: "Modify the properties of an existing filteringPolicyLink object to update its traffic rules."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: global-secure-access
@@ -12,16 +12,16 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Modify the properties of an existing [microsoft.graph.networkaccess.filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) object to update its traffic rules.
+Modify the properties of an existing [filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) object to update its traffic rules.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|NetworkAccess.ReadWrite.All|
+|Delegated (work or school account)|NetworkAccessPolicy.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|NetworkAccess.ReadWrite.All|
+|Application|Not supported.|
 
 [!INCLUDE [rbac-global-secure-access-apis-write](../includes/rbac-for-apis/rbac-global-secure-access-apis-write.md)]
 
@@ -47,8 +47,8 @@ PATCH networkAccess/filteringProfiles({filteringProfile_id})/policies({Policy_li
 
 |Property|Type|Description|
 |:---|:---|:---|
-|state|microsoft.graph.networkaccess.status| Determines whether the link is enabled or disabled. Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md). The possible values are: `enabled`, `disabled`. Required.|
-|action|microsoft.graph.networkaccess.filteringPolicyAction|Represents actions for filtering policies, offering "block" and "allow" options to specify whether to block or allow access based on the policy. The possible values are: `block`, `allow`. Required.|
+|state|microsoft.graph.networkaccess.status| Determines whether the link is enabled or disabled. Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md). The possible values are: `enabled`, `disabled`. |
+|action|microsoft.graph.networkaccess.filteringPolicyAction|Represents actions for filtering policies, offering "block" and "allow" options to specify whether to block or allow access based on the policy. The possible values are: `block`, `allow`. |
 
 
 
@@ -78,7 +78,6 @@ Content-Type: application/json
 
 ### Response
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

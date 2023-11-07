@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|NetworkAccess.Read.All,NetworkAccess.ReadWrite.All|
+|Delegated (work or school account)|NetworkAccessPolicy.Read.All,NetworkAccessPolicy.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|NetworkAccess.Read.All,NetworkAccess.ReadWrite.All|
+|Application|Not supported.|
 
 [!INCLUDE [rbac-global-secure-access-apis-read](../includes/rbac-for-apis/rbac-global-secure-access-apis-read.md)]
 
@@ -36,7 +36,7 @@ GET /networkAccess/filteringProfiles/{filteringProfileId}/policies/{policyLinkId
 ```
 
 ## Optional query parameters
-This method does not supports OData query parameters.
+This method does not support OData query parameters.
 
 ## Request headers
 |Name|Description|

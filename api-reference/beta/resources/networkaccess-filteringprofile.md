@@ -1,6 +1,6 @@
 ---
 title: "filteringProfile resource type"
-description: "Associates network access policies with Entra ID Conditional Access policies, so that access policies can be applied to users and groups."
+description: "Associates network access policies with Microsoft Entra ID Conditional Access policies, so that access policies can be applied to users and groups."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Associates network access policies with Entra ID Conditional Access policies, so that access policies can be applied to users and groups.
+Associates network access policies with Microsoft Entra ID Conditional Access policies, so that access policies can be applied to users and groups.
 
 Inherits from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md).
 
@@ -23,8 +23,6 @@ Inherits from [microsoft.graph.networkaccess.profile](../resources/networkaccess
 |[List filteringProfiles](../api/networkaccess-filteringprofile-list.md)|[microsoft.graph.networkaccess.filteringProfile](../resources/networkaccess-filteringprofile.md) collection|Get a list of the [microsoft.graph.networkaccess.filteringProfile](../resources/networkaccess-filteringprofile.md) objects and their properties.|
 |[Get filteringProfile](../api/networkaccess-filteringprofile-get.md)|[microsoft.graph.networkaccess.filteringProfile](../resources/networkaccess-filteringprofile.md)|Get a [microsoft.graph.networkaccess.filteringProfile](../resources/networkaccess-filteringprofile.md) object.|
 |[Update filteringProfile](../api/networkaccess-filteringprofile-update.md)|[microsoft.graph.networkaccess.filteringProfile](../resources/networkaccess-filteringprofile.md)|Update the properties of a [microsoft.graph.networkaccess.filteringProfile](../resources/networkaccess-filteringprofile.md) object.|
-|[List policies](../api/networkaccess-filteringpolicylink-list.md)|[microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md) collection|Get the policyLink resources from the policies navigation property.|
-|[Create policyLink](../api/networkaccess-filteringpolicy-post-policyrules.md)|[microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md)|Create a new policyLink object.|
 
 ## Properties
 |Property|Type|Description|
@@ -40,8 +38,8 @@ Inherits from [microsoft.graph.networkaccess.profile](../resources/networkaccess
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|conditionalAccessPolicies|[microsoft.graph.networkaccess.conditionalAccessPolicy](../resources/networkaccess-conditionalaccesspolicy.md) collection|A set of associated policies defined to regulate access to resources or systems based on specific conditions.|
-|policies|[microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md) collection|The collection of policies that are linked to this filtering profile. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md)|
+|conditionalAccessPolicies|[microsoft.graph.networkaccess.conditionalAccessPolicy](../resources/networkaccess-conditionalaccesspolicy.md) collection|A set of associated policies defined to regulate access to resources or systems based on specific conditions. Automatically expanded.|
+|policies|[microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md) collection|The collection of policies that are linked to this filtering profile. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md). Supports `$expand`.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

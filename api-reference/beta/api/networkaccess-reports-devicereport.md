@@ -1,6 +1,6 @@
 ---
 title: "reports: deviceReport"
-description: "Provide a report of all devices with network traffic that ZTNA captured."
+description: "Provide a report of all devices with network traffic that the Global Secure Access services captured."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: global-secure-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provide a report of all devices with network traffic that ZTNA captured.
+Provide a report of all devices with network traffic that the Global Secure Access services captured.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /networkAccessRoot/reports/deviceReport
+GET /networkAccessRoot/reports/deviceReport(startDateTime={startDateTime}, endDateTime={endDateTime})
 ```
 
 ## Function parameters

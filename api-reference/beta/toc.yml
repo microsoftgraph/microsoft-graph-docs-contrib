@@ -12271,9 +12271,9 @@ items:
                             href: api/networkaccess-policyrule-get.md
                           - name: Update
                             href: api/networkaccess-policyrule-update.md
-              - name: Filtering Traffic
+              - name: Filtering traffic
                 items:
-                  - name: Filtering Profile
+                  - name: Filtering profile
                     href: resources/networkaccess-filteringprofile.md
                     items:
                       - name: List
@@ -12284,7 +12284,7 @@ items:
                         href: api/networkaccess-filteringprofile-update.md
                       - name: Create policyLink
                         href: api/networkaccess-filteringpolicy-post-policyrules.md
-                  - name: Filtering Policy
+                  - name: Filtering policy
                     href: resources/networkaccess-filteringpolicy.md
                     items:
                       - name: List
@@ -12301,7 +12301,7 @@ items:
                         href: api/networkaccess-policy-list-policyrules.md
                       - name: Create policyRule
                         href: api/networkaccess-filteringpolicy-post-policyrules.md
-                  - name: Filtering Policy Link
+                  - name: Filtering policy link
                     href: resources/networkaccess-filteringpolicylink.md
                     items:
                       - name: List
@@ -12318,7 +12318,7 @@ items:
                         href: api/networkaccess-filteringpolicy-post-policyrules.md
                       - name: Remove policy
                         href: api/networkaccess-filteringpolicylink-delete-policy.md
-                  - name: Filtering Rule
+                  - name: Filtering rule
                     href: resources/networkaccess-filteringrule.md
                     items:
                       - name: List
@@ -12405,9 +12405,9 @@ items:
                     href: api/networkaccess-reports-userreport.md    
                   - name: Get transaction summaries
                     href: api/networkaccess-reports-transactionsummaries.md
-              - name: Remote Network reports
+              - name: Remote network reports
                 items:
-                  - name: Remote Network Health Status Event
+                  - name: Remote network health status event
                     href: resources/networkaccess-remotenetworkhealthstatusevent.md
                     items:
                       - name: List

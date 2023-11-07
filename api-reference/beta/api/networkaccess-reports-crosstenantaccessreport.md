@@ -1,6 +1,6 @@
 ---
 title: "reports: crossTenantAccessReport"
-description: "Get a report that summarizes access across all tenants in the organization."
+description: "Get a report that summarizes access from external IDs to the tenant through Microsoft Entra External ID."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: global-secure-access
@@ -12,16 +12,16 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a report that summarizes access across all tenants in the organization.
+Get a report that summarizes access from external IDs to the tenant through Microsoft Entra External ID.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|NetworkAccess.Read.All,NetworkAccess.ReadWrite.All|
+|Delegated (work or school account)|NetworkAccessPolicy.Read.All,NetworkAccessPolicy.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|NetworkAccess.Read.All,NetworkAccess.ReadWrite.All|
+|Application|Not supported.|
 
 [!INCLUDE [rbac-global-secure-access-apis-read](../includes/rbac-for-apis/rbac-global-secure-access-apis-read.md)]
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /networkAccessRoot/reports/crossTenantAccessReport
+GET /networkAccessRoot/reports/crossTenantAccessReport(startDateTime={startDateTime}, endDateTime={endDateTime})
 ```
 
 ## Function parameters

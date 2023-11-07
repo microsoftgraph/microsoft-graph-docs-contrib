@@ -1,6 +1,6 @@
 ---
 title: "logs resource type"
-description: "Global Secure Access Network Logs."
+description: "Global Secure Access network logs."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: global-secure-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Global Secure Access Network Logs.
+Global Secure Access network logs.
 
 ## Methods
 |Method|Return type|Description|
@@ -22,8 +22,7 @@ Global Secure Access Network Logs.
 |[List traffic](../api/networkaccess-logs-list-traffic.md)|[microsoft.graph.networkaccess.networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md) collection|Get the network access traffic events.|
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 |Relationship|Type|Description|

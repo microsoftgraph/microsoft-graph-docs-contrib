@@ -19,9 +19,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|NetworkAccess.Read.All,NetworkAccess.ReadWrite.All|
+|Delegated (work or school account)|NetworkAccessPolicy.Read.All,NetworkAccessPolicy.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|NetworkAccess.Read.All,NetworkAccess.ReadWrite.All|
+|Application|NetworkAccessPolicy.Read.All,NetworkAccessPolicy.ReadWrite.All|
 
 [!INCLUDE [rbac-global-secure-access-apis-read](../includes/rbac-for-apis/rbac-global-secure-access-apis-read.md)]
 
@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /networkAccessRoot/reports/transactionSummaries
+GET /networkAccess/reports/transactionSummaries(startDateTime={startDateTime},endDateTime={endDateTime})
 ```
 
 ## Function parameters

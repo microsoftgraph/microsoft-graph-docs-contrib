@@ -1,6 +1,6 @@
 ---
 title: "Update filteringRule"
-description: "Update the properties of a microsoft.graph.networkaccess.filteringRule object."
+description: "Update the properties of a filteringRule object."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: global-secure-access
@@ -12,16 +12,16 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md) object.
+Update the properties of a [filteringRule](../resources/networkaccess-filteringrule.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|NetworkAccess.ReadWrite.All|
+|Delegated (work or school account)|NetworkAccessPolicy.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|NetworkAccess.ReadWrite.All|
+|Application|Not supported.|
 
 [!INCLUDE [rbac-global-secure-access-apis-write](../includes/rbac-for-apis/rbac-global-secure-access-apis-write.md)]
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /filteringRule
+PATCH /networkaccess/filteringPolicies/{filteringPolicyId}/policyRules/{filteringRuleId}
 ```
 
 ## Request headers
@@ -89,7 +89,6 @@ Content-Type: application/json
 
 ### Response
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -97,6 +96,5 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 204 No Content
-Content-Type: application/json
 ```
 

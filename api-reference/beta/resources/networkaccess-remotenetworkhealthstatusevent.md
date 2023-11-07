@@ -29,12 +29,12 @@ Inherits from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resour
 |Property|Type|Description|
 |:---|:---|:---|
 |bgpRoutesAdvertisedCount|Int32|The number of BGP routes advertised through tunnel. Inherited from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md).|
-|createdDateTime|DateTimeOffset|The time that the event was generated, in UTC. Inherited from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md).|
+|createdDateTime|DateTimeOffset|The time that the event was generated, in UTC. Inherited from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md). Supports `$filter` (`ge`, `le`) and `$orderby`.|
 |description|String|A description for the event.  Inherited from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md).|
 |destinationIp|String|The IP address of the destination. Inherited from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md).|
 |id|String|A unique identifier for each remoteNetworkHealthEvent. Inherited from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md).|
 |receivedBytes|Int64|The number of bytes sent from the destination to the source.|
-|remoteNetworkId|String|A unique identifier for each remoteNetwork site. Inherited from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md).|
+|remoteNetworkId|String|A unique identifier for each remoteNetwork site. Inherited from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md). Supports `$filter` (`eq`).|
 |sentBytes|Int64|The number of bytes sent from the source to the destination for the connection or session.|
 |sourceIp|String|The public IP address. Inherited from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md).|
 |status|microsoft.graph.networkaccess.remoteNetworkHealthAliveStatus|Alive status. The possible values are: `alive`, `unknownFutureValue`.|

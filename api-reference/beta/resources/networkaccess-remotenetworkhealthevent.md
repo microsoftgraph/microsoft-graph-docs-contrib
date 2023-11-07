@@ -17,19 +17,17 @@ Contains information about network health, status, metrics, and operations.
 This is an abstract type.
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List remoteNetworkHealthEvents](../api/networkaccess-remotenetworkhealthstatusevent-list.md)|[microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md) collection|Get a list of the [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md) objects and their properties.|
+None.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |bgpRoutesAdvertisedCount|Int32|The number of BGP routes advertised through tunnel.|
-|createdDateTime|DateTimeOffset|The time of the original event generation in UTC.|
+|createdDateTime|DateTimeOffset|The time of the original event generation in UTC. Supports `$filter` (`ge`, `le`) and `$orderby`.|
 |description|String|The description of the event.|
 |destinationIp|String|The IP address of the destination.|
 |id|String|A unique identifier for each remoteNetworkHealthEvent.|
-|remoteNetworkId|String|A unique identifier for each remoteNetwork site.|
+|remoteNetworkId|String|A unique identifier for each remoteNetwork site. Supports `$filter` (`eq`).|
 |sourceIp|String|The public IP address.|
 |status|microsoft.graph.networkaccess.remoteNetworkStatus|The status of the remote network. The possible values are: `tunnelDisconnected`, `tunnelConnected`, `bgpDisconnected`, `bgpConnected`, `remoteNetworkAlive`, `unknownFutureValue`.|
 |sentBytes|Int64|The number of bytes sent from the source to the destination for the connection or session.|

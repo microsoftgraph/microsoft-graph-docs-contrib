@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|NetworkAccess.Read.All,NetworkAccess.ReadWrite.All|
+|Delegated (work or school account)|NetworkAccessPolicy.Read.All,NetworkAccessPolicy.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|NetworkAccess.Read.All,NetworkAccess.ReadWrite.All|
+|Application|Not supported.|
 
 [!INCLUDE [rbac-global-secure-access-apis-read](../includes/rbac-for-apis/rbac-global-secure-access-apis-read.md)]
 
@@ -79,13 +79,13 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-	"@odata.type": "#microsoft.graph.networkaccess.fqdnFilteringRule",
+    "@odata.type": "#microsoft.graph.networkaccess.fqdnFilteringRule",
     "id": "f76a8f4d-7e9f-4aa0-ae1a-e88330c5634c",
     "name": "Contoso",
     "ruleType": "fqdn",
-		"destinations": [
-			{
-				"@odata.type": "#microsoft.graph.networkaccess.fqdn",
+        "destinations": [
+            {
+                "@odata.type": "#microsoft.graph.networkaccess.fqdn",
                 "value": "www.contoso.com"
             }
           ]

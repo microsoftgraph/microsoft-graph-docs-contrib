@@ -25,8 +25,6 @@ Inherits from [microsoft.graph.networkaccess.policy](../resources/networkaccess-
 |[Get filteringPolicy](../api/networkaccess-filteringpolicy-get.md)|[microsoft.graph.networkaccess.filteringPolicy](../resources/networkaccess-filteringpolicy.md)|Get a [microsoft.graph.networkaccess.filteringPolicy](../resources/networkaccess-filteringpolicy.md) object to view its configuration.|
 |[Update filteringPolicy](../api/networkaccess-filteringprofile-update.md)|[microsoft.graph.networkaccess.filteringPolicy](../resources/networkaccess-filteringpolicy.md)|Modify the properties of an existing [microsoft.graph.networkaccess.filteringPolicy](../resources/networkaccess-filteringpolicy.md) to update its traffic rules.|
 |[Delete filteringPolicy](../api/networkaccess-filteringprofile-delete-policies.md)|None|Delete a [microsoft.graph.networkaccess.filteringPolicy](../resources/networkaccess-filteringpolicy.md) object.|
-|[List policyRules](../api/networkaccess-policy-list-policyrules.md)|[microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md) collection|View the resources associated with the policyRules navigation property, providing insights into policy details.|
-|[Create policyRule](../api/networkaccess-filteringpolicy-post-policyrules.md)|[microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md)|Establish a new object to define specific policy rules for network access.|
 
 ## Properties
 |Property|Type|Description|
@@ -40,7 +38,7 @@ Inherits from [microsoft.graph.networkaccess.policy](../resources/networkaccess-
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|policyRules|[microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md) collection|The definition of the policy ruleset that makes up the core definition of a policy. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md)|
+|policyRules|[microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md) collection|The definition of the policy ruleset that makes up the core definition of a policy. Inherited from [microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md). Supports `$expand`.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

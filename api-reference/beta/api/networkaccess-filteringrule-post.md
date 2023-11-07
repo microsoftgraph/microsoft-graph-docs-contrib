@@ -20,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|NetworkAccess.ReadWrite.All|
+|Delegated (work or school account)|NetworkAccessPolicy.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|NetworkAccess.ReadWrite.All|
+|Application|Not supported.|
 
 [!INCLUDE [rbac-global-secure-access-apis-write](../includes/rbac-for-apis/rbac-global-secure-access-apis-write.md)]
 
@@ -33,23 +33,21 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST networkaccess/filteringPolicies/{filteringPoliciesId}/policyRules
+POST /networkaccess/filteringPolicies/{filteringPoliciesId}/policyRules
 ```
-
-## Optional query parameters
-This method support $expand OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
 
 ## Request body
 Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `201 OK` response code and a [microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md) object in the response body.
 
 ## Examples
 

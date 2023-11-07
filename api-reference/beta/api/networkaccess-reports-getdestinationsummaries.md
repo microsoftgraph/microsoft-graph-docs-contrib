@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /networkAccessRoot/reports/getDestinationSummaries
+GET /networkAccess/reports/getDestinationSummaries(startDateTime={startDateTime},endDateTime={endDateTime},aggregatedBy={aggregatedBy})
 ```
 
 ## Function parameters

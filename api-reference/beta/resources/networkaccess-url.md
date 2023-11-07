@@ -1,5 +1,5 @@
 ---
-title: "Global Secure Access url resource type"
+title: url resource type"
 description: "Contains a Uniform Resource Locator (URL), including the protocol, domain, path, and parameters."
 author: "Moti-ba"
 ms.localizationpriority: medium
@@ -15,7 +15,7 @@ Namespace: microsoft.graph.networkaccess
 
 Contains a Uniform Resource Locator (URL), including the protocol, domain, path, and parameters.
 
-Inherits from [microsoft.graph.networkaccess.ruleDestination](../resources/networkaccess-ruledestination.md).
+Inherits from [ruleDestination](../resources/networkaccess-ruledestination.md).
 
 ## Properties
 |Property|Type|Description|

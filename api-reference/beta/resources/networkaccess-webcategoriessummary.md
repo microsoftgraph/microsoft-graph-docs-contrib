@@ -20,7 +20,7 @@ A summary of the users, devices, and transactions that recently accessed a web c
 |:---|:---|:---|
 |deviceCount|Int32|The number of unique devices that were seen.|
 |transactionCount|Int32|The number of transactions that were seen.|
-|userCount|Int32|The number of unique Azure Active Directory users that were seen.|
+|userCount|Int32|The number of unique Microsoft Entra ID users that were seen.|
 |webCategory|[microsoft.graph.networkaccess.webCategory](../resources/networkaccess-webcategory.md)|The website category.|
 
 ## Relationships

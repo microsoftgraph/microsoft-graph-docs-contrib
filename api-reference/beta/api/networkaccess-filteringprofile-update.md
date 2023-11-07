@@ -1,6 +1,6 @@
 ---
 title: "Update filteringProfile"
-description: "Update the properties of a microsoft.graph.networkaccess.filteringProfile object."
+description: "Update the properties of a filteringProfile object."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: global-secure-access
@@ -12,16 +12,16 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [microsoft.graph.networkaccess.filteringProfile](../resources/networkaccess-filteringprofile.md) object.
+Update the properties of a [filteringProfile](../resources/networkaccess-filteringprofile.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|NetworkAccess.ReadWrite.All|
+|Delegated (work or school account)|NetworkAccessPolicy.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|NetworkAccess.ReadWrite.All|
+|Application|Not supported.|
 
 [!INCLUDE [rbac-global-secure-access-apis-write](../includes/rbac-for-apis/rbac-global-secure-access-apis-write.md)]
 
@@ -48,10 +48,10 @@ PATCH /networkAccess/filteringProfiles/{filteringProfileId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|The display name for the filtering profile. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md). Required.|
-|description|String|A description for the profile. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md). Optional.|
-|state|microsoft.graph.networkaccess.status|The state of the profile. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md). The possible values are `enabled` or `disabled`. Required.|
-|priority|Int64|The priority for determining the order in which a list of filtering profiles is applied. Required.|
+|name|String|The display name for the filtering profile. |
+|description|String|A description for the profile. |
+|state|microsoft.graph.networkaccess.status|The state of the profile. The possible values are `enabled` or `disabled`. |
+|priority|Int64|The priority for determining the order in which a list of filtering profiles is applied. |
 
 
 
@@ -79,7 +79,6 @@ Content-Type: application/json
 
 ### Response
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

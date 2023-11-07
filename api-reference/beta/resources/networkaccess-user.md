@@ -1,19 +1,19 @@
 ---
-title: "Global Secure Access user resource type"
-description: "Unique Microsoft Entra ID user identified by Global Secure Access."
+title: "user resource type (Global Secure Access user)"
+description: "Unique Microsoft Entra ID user identified by the Global Secure Access servics."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
 doc_type: resourcePageType
 ---
 
-# Global Secure Access user resource type
+# user resource type (Global Secure Access user)
 
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Unique Microsoft Entra ID user identified by Global Secure Access.
+Unique Microsoft Entra ID user identified by the Global Secure Access services.
 
 ## Properties
 |Property|Type|Description|
