@@ -13,17 +13,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The sendDtmfTones operation to obtain the result of the sendDtmfTones action.
+Represents an operation to get the results of an action to send DTMF tones in a call. It inherits from microsoft.graph.commsOperation.
 
 ## Properties
 
 | Property            | Type                        | Description|
 |:--------------------|:----------------------------|:-----------------------------------------------------------------------------------|
-| clientContext       | String                      | Unique Client Context string. Max limit is 256 chars.                              |
-| completionReason    | String                      | Possible values are: `unknown`, `completedSuccessfully`, `mediaOperationCanceled`. |
+| clientContext       | String                      | Unique Client Context string that client sends to Graph for the client to keep context in multiple requests. Maximum limit is 256 characters. |
+| completionReason    | String                      | The results of the action. Possible values are: `unknown`, `completedSuccessfully`, `mediaOperationCanceled`. |
 | id                  | String                      | Read-only.                                                                         |
-| resultInfo          | [resultInfo](resultinfo.md) | The result information. Read-only.                                |
-| status              | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`.               |
+| resultInfo          | [resultInfo](resultinfo.md) | The result information with specific status code, sub code and message. Read-only.        |
+| status              | String                      | The status of the operation. Possible values are: `notStarted`, `running`, `completed`, `failed`.               |
 
 ## Relationships
 None.
