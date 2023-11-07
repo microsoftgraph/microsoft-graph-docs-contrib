@@ -1,6 +1,6 @@
 ---
 title: "virtualAppointment: getVirtualAppointmentJoinWebUrl"
-description: "Get a virtual appointment join link."
+description: "Get a join web URL for a Teams Virtual Appointment."
 author: "benmicrosoft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -47,7 +47,7 @@ GET /users/{userId}/onlineMeetings/{onlineMeetingId}/getVirtualAppointmentJoinWe
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a String in the 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

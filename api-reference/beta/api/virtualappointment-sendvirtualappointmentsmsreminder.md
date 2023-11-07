@@ -1,6 +1,6 @@
 ---
-title: "virtualAppointment: sendvirtualappointmentsms"
-description: "Send a virtual appointment SMS notification."
+title: "virtualAppointment: sendvirtualappointmentsmsreminder"
+description: "Send an SMS reminder to external attendees for a Teams Virtual Appointment."
 author: "benmicrosoft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Send a SMS confirmation, reschedule or cancellation notification to external attendees for a Teams Virtual Appointment. This feature requires [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) and attendees need a valid United States phone number to recieve SMS notifications.
+Send an SMS reminder to external attendees for a Teams Virtual Appointment. This feature requires [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) and attendees must have a valid United States phone number to receive SMS notifications.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -27,13 +27,6 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                                                                                       |
 | Application                            | VirtualAppointment.ReadWrite.All                                        |
 
-## SMS Notification Type Values
-
-| Name            | Description               |
-| :-------------- | :------------------------ |
-| 'confirmation'   | To send confirmation SMS |
-| 'reschedule' | To send reschedule SMS      |
-| 'cancellation' | To send cancellation SMS       |
 
 ## HTTP request
 
@@ -42,8 +35,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /me/onlineMeetings/{onlineMeetingId}/sendVirtualAppointmentSms
-POST /users/{userId}/onlineMeetings/{onlineMeetingId}/sendVirtualAppointmentSms
+POST /me/onlineMeetings/{onlineMeetingId}/sendVirtualAppointmentReminderSms
+POST /users/{userId}/onlineMeetings/{onlineMeetingId}/sendVirtualAppointmentReminderSms
 ```
 
 ## Request headers
@@ -54,12 +47,12 @@ POST /users/{userId}/onlineMeetings/{onlineMeetingId}/sendVirtualAppointmentSms
 | Accept-Language | Language. Optional.       |
 
 ## Request body
-In the request body, supply a JSON representation of the following parameters:
+In the request body, supply a JSON object with the following parameters:
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|phonenumbers|String|List of phone numbers to send SMS notification. Required.|
-|virtualAppointmentSmsType|String|Type of SMS notification. Required.|
+|phonenumbers|String|The list of phone numbers to which to send the notification. Required.|
+|remindBeforeTimeInMinutes|String|The string `mins15`, which indicates that a reminder will be sent 15 minutes before the meeting start time. Required.|
 
 ## Response
 
@@ -69,7 +62,7 @@ If successful, this method returns a `202 Accepted` response code.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -79,11 +72,11 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/sendVirtualAppointmentSms
+POST https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/sendVirtualAppointmentReminderSms
 ```
 {
 “phoneNumbers”: [ “+13129224122”, “+1242421412”],
-“virtualAppointmentSmsType”: “confirmation”
+“remindBeforeTimeInMinutesType”: "mins15"
 }
 
 ---
