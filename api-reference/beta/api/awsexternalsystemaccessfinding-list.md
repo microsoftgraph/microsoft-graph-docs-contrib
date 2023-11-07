@@ -102,4 +102,3 @@ Content-Type: application/json
   "@odata.nextLink": "https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings/graph.awsExternalSystemAccessFinding?$skiptoken=foobar"
 }
 ```
-

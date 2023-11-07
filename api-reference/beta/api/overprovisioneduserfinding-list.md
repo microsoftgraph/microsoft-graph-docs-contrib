@@ -112,7 +112,7 @@ Content-Type: application/json
           "externalId": "user_reader_subscription_owner_rg@mciemc1.onmicrosoft.com",
           "displayName": "user_reader_subscription_owner_rg",
           "source": {
-            "@odata.type": "graph.aadSource":,
+            "@odata.type": "graph.aadSource",
             "identityProviderType": "aad",
             "domain": "mciemc1.onmicrosoft.com"
           },

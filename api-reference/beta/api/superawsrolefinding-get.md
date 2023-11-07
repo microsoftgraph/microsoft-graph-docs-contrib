@@ -25,7 +25,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|Not supported|
 
 ## HTTP request
-
 <!-- {
   "blockType": "ignored"
 }
@@ -65,9 +64,8 @@ The following example shows a request.
 }
 -->
 ``` http
-https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.superAwsRoleFinding
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.superAwsRoleFinding
 ```
-
 
 ### Response
 

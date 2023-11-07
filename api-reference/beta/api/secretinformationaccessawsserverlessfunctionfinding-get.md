@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a [secretInforma
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "get_secretinformationaccessawsresourcefinding"
+  "name": "get_secretinformationaccessawsserverlessfunctionfinding"
 }
 -->
 ``` http

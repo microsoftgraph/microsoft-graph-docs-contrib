@@ -93,7 +93,7 @@ Content-Type: application/json
           "externalId": "b4dcebe3-0d5c-4847-b6f9-5f6f9e88aa50",
           "displayName": "ciem-cloudknox-3p-app",
           "source": {
-            "@odata.type": "graph.aadSource":,
+            "@odata.type": "graph.aadSource",
             "identityProviderType": "aad",
             "domain": "b4dcebe3-0d5c-4847-b6f9-5f6f9e88aa50"
           },

@@ -1,6 +1,6 @@
 ---
 title: "Get assignedComputeInstanceDetails"
-description: "Not implemented.: Read the properties and relationships of an assignedComputeInstanceDetails object."
+description: "Not implemented: Read the properties and relationships of an assignedComputeInstanceDetails object."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"

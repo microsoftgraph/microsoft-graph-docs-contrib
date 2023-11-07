@@ -79,7 +79,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request for an inactive group in a GCP project.
 <!-- {
   "blockType": "request",
-  "name": "list_inactivegroupfinding"
+  "name": "get_inactivegroupfinding"
 }
 -->
 ``` http

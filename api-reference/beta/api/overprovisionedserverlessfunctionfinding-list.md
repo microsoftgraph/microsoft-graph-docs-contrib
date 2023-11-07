@@ -112,7 +112,7 @@ Content-Type: application/json
           "externalId": "/subscriptions/6ea285d9-fe7e-49f6-a0ff-203c1a7ac225/resourceGroups/пустынных/providers/Microsoft.Web/sites/Kirchröads",
           "displayName": "Kirchröads",
           "source": {
-            "@odata.type": "graph.aadSource":,
+            "@odata.type": "graph.aadSource",
             "identityProviderType": "aad",
             "domain": "6ea285d9-fe7e-49f6-a0ff-203c1a7ac225"
           },
