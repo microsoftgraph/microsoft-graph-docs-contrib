@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET identityGovernance/permissionsAnalytics/aws/findings/graph.inactiveAwsRoleFinding/aggregatedSummary(authorizationSystemIds=['377596131774','956987887735'])
+GET identityGovernance/permissionsAnalytics/aws/findings/graph.inactiveAwsRoleFinding/aggregatedSummary(authorizationSystemIds=['377596131774'])
 ```
 
 

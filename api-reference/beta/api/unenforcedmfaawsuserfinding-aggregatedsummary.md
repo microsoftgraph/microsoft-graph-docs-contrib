@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/aws/findings/graph.unenforcedMfaAwsUserFinding/microsoft.graph.aggregatedSummary(authorizationSystemIds=['{{awsAuthSystemId}}'])
+GET /identityGovernance/permissionsAnalytics/aws/findings/graph.unenforcedMfaAwsUserFinding/microsoft.graph.aggregatedSummary(authorizationSystemIds=['awsAuthSystemId'])
 ```
 
 ## Function parameters
@@ -64,7 +64,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://canary.graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.unenforcedMfaAwsUserFinding/microsoft.graph.aggregatedSummary(authorizationSystemIds=['377596131774','956987887735'])
+GET https://canary.graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.unenforcedMfaAwsUserFinding/microsoft.graph.aggregatedSummary(authorizationSystemIds=['377596131774'])
 ```
 
 

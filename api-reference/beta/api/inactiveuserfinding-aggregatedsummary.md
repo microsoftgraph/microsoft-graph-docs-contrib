@@ -49,7 +49,7 @@ Example of a GCP request
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.inactiveUserFinding/aggregatedSummary(authorizationSystemIds=['{{gcpAuthSystemId}}'])
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.inactiveUserFinding/aggregatedSummary(authorizationSystemIds=['gcpAuthSystemId'])
 ```
 
 ## Function parameters
@@ -83,7 +83,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveUserFinding/aggregatedSummary(authorizationSystemIds=['377596131774','956987887735'])
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveUserFinding/aggregatedSummary(authorizationSystemIds=['377596131774'])
 ```
 
 

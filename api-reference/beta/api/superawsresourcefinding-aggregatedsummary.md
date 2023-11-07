@@ -64,7 +64,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings/graph.superAwsResourceFinding/aggregatedSummary(authorizationSystemIds=['377596131774','956987887735'])
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings/graph.superAwsResourceFinding/aggregatedSummary(authorizationSystemIds=['377596131774'])
 ```
 
 ### Response

@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/graph.inactiveGcpServiceAccountFinding/aggregatedSummary(authorizationSystemIds=['ck-qa-neova-solutions', 'hydro-ex'])
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/graph.inactiveGcpServiceAccountFinding/aggregatedSummary(authorizationSystemIds=['ck-qa-neova-solutions'])
 ```
 
 

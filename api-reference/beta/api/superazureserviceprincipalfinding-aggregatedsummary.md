@@ -64,7 +64,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/azure/findings/graph.superAzureServicePrincipalFinding/aggregatedSummary(authorizationSystemIds=['00f7dcae-97f9-492b-af2e-36eb35b613af','23057d68-859a-4afc-a9af-f3ff974583ab'])
+GET GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/azure/findings/graph.superAzureServicePrincipalFinding/aggregatedSummary(authorizationSystemIds=['00f7dcae-97f9-492b-af2e-36eb35b613af'])
 ```
 
 

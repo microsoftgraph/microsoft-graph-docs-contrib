@@ -69,7 +69,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://canary.graph.microsoft.com/testprodbetaevan_schema/identityGovernance/permissionsAnalytics/aws/findings/graph.awsIdentityAccessManagementKeyUsageFinding/microsoft.graph.aggregatedSummary(authorizationSystemIds=['377596131774','956987887735'])
+GET https://canary.graph.microsoft.com/testprodbetaevan_schema/identityGovernance/permissionsAnalytics/aws/findings/graph.awsIdentityAccessManagementKeyUsageFinding/microsoft.graph.aggregatedSummary(authorizationSystemIds=['377596131774'])
 ```
 
 ### Response
