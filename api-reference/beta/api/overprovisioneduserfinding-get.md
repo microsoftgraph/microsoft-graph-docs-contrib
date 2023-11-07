@@ -3,7 +3,7 @@ title: "Get overprovisionedUserFinding"
 description: "Read the properties and relationships of an overprovisionedUserFinding object."
 author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: ""multicloud-permissions-management""
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
