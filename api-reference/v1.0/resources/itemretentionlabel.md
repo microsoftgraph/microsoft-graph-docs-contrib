@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Groups retention and compliance-related properties on an item into a single structure. Currently, supported only for [driveItem](../resources/driveitem.md).
 
 ## Properties
