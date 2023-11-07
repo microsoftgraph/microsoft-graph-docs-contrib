@@ -47,7 +47,7 @@ Set up custom encryption by generating keys in AKV or linking an existing AKV. E
     > Encryption will apply to ALL the eligible datasets requested in the application. Click on the tool tip next to encryption to learn which datasets are elgible.
     3. For **Key Vault**, drop down and select the AKV URI (name of the AKV).
     4. If your AKV doesn't exist, open a new tab and follow the steps in ["Setting up your Azure Key Vault" tab.](./data-connect-custom-encryption.md#using-azure-key-vault-for-custom-encryption). 
-    5. Once you have set up your AKV, go back to your Data connect application tab and look for your AKV in the drop down to select it. You may need to refresh the page for the AKV to populate in the dropdown.
+    5. Once you have set up your AKV, go back to your Data connect application tab and look for your AKV in the drop-down to select it. You may need to refresh the page for the AKV to populate in the dropdown.
 
     ![Screenshot of the the Azure portal with Azure Key Vault and encryption boxed in](images/app-registration-encryption.png) 
 
@@ -122,7 +122,7 @@ No action is required from the Microsoft 365 admin for this section.
 3. Click on **Generate/Import**
     ![Screenshot to generate or import your keys](images/akv-generate-keys.png)
 
-4. Generate a RSA key and name your key to be your Azure Active Directory (AAD) tenant ID. Ensure it's has a unique name (there should only be one key per respective AAD tenant ID).
+4. Generate a RSA key and name your key to be your Azure Active Directory (AAD) tenant ID. Ensure it has a unique name (there should only be one key per respective AAD tenant ID).
     ![Screenshot going over the specific on how to generate a RSA Key](images/akv-generate-RSA-key.png)
 
     > [!NOTE]
@@ -151,7 +151,7 @@ No action is required from the Microsoft 365 admin for this section.
 
 ## Recommendations on Decrypting Datasets after Data Delivery
 
-Below is our standard recommendation for decryption.Once the encrypted data is delivered, the customer is solely responsible for decryption. Data Connect does not offer any hands-on support to help decrypt the data after data delivery.
+Below is our standard recommendation for decryption. Once the encrypted data is delivered, the customer is solely responsible for decryption. Data Connect does not offer any hands-on support to help decrypt the data after data delivery.
 
 ### Pre-requisites
 
