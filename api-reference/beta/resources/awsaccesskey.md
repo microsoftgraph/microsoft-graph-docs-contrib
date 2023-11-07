@@ -23,7 +23,6 @@ Inherits from [awsIdentity](../resources/awsidentity.md).
 |[List awsAccessKeys](../api/awsidentityaccessmanagementkeyagefinding-list-accesskey.md)|[awsAccessKey](../resources/awsaccesskey.md) collection|Get a list of the [awsAccessKey](../resources/awsaccesskey.md) objects and their properties.|
 |[Get awsAccessKey](../api/awsaccesskey-get.md)|[awsAccessKey](../resources/awsaccesskey.md)|Read the properties and relationships of an [awsAccessKey](../resources/awsaccesskey.md) object.|
 
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

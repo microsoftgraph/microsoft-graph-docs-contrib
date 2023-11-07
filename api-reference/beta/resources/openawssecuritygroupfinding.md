@@ -15,7 +15,6 @@ Namespace: microsoft.graph
 
 View AWS open security groups.
 
-
 Inherits from [finding](../resources/finding.md).
 
 ## Methods

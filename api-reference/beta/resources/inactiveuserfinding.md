@@ -24,7 +24,6 @@ Inherits from [identityFinding](../resources/identityfinding.md).
 |[Get inactiveUserFinding](../api/inactiveuserfinding-get.md)|[inactiveUserFinding](../resources/inactiveuserfinding.md)|Read the properties and relationships of an [inactiveUserFinding](../resources/inactiveuserfinding.md) object.|
 |[aggregatedSummary](../api/inactiveuserfinding-aggregatedsummary.md)|[permissionsAnalyticsAggregatedIdentitySummary](../resources/permissionsanalyticsaggregatedidentitysummary.md)|Return the total number of an identity type and the total number of a specific finding for that identity in an authorization system.|
 
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

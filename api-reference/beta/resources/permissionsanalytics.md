@@ -1,9 +1,9 @@
 ---
 title: "permissionsAnalytics resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Permissions analytics findings"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
@@ -22,23 +22,20 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List permissionsAnalytics](../api/permissionsanalyticsaggregation-list-aws.md)|[permissionsAnalytics](../resources/permissionsanalytics.md) collection|Get a list of the [permissionsAnalytics](../resources/permissionsanalytics.md) objects and their properties.|
-|[Create permissionsAnalytics](../api/permissionsanalyticsaggregation-post-aws.md)|[permissionsAnalytics](../resources/permissionsanalytics.md)|Create a new [permissionsAnalytics](../resources/permissionsanalytics.md) object.|
 |[Get permissionsAnalytics](../api/permissionsanalytics-get.md)|[permissionsAnalytics](../resources/permissionsanalytics.md)|Read the properties and relationships of a [permissionsAnalytics](../resources/permissionsanalytics.md) object.|
-|[Update permissionsAnalytics](../api/permissionsanalytics-update.md)|[permissionsAnalytics](../resources/permissionsanalytics.md)|Update the properties of a [permissionsAnalytics](../resources/permissionsanalytics.md) object.|
-|[Delete permissionsAnalytics](../api/permissionsanalyticsaggregation-delete-aws.md)|None|Delete a [permissionsAnalytics](../resources/permissionsanalytics.md) object.|
-|[List findings](../api/permissionsanalytics-list-findings.md)|[finding](../resources/finding.md) collection|Get the finding resources from the findings navigation property.|
-|[Create finding](../api/permissionsanalytics-post-findings.md)|[finding](../resources/finding.md)|Create a new finding object.|
+
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
+|id|String|Unique identifier for the Finding. This id will be base64 encoded using the format:{findingType}{FindingId} to ensure uniqueness. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|findings|[finding](../resources/finding.md) collection|**TODO: Add Description**|
-|permissionsCreepIndexDistributions|[permissionsCreepIndexDistribution](../resources/permissionscreepindexdistribution.md) collection|**TODO: Add Description**|
+|findings|[finding](../resources/finding.md) collection|A permissions analytics finding from the Permissions Analytics Report. |
+|permissionsCreepIndexDistributions|[permissionsCreepIndexDistribution](../resources/permissionscreepindexdistribution.md) collection|Represents the Permissions Creep Index Distribution for the authorization system. PCI distribution chart shows the classification of human and non-human identities based on the PCI score in three buckets (low, medium, high).|
+
 
 ## JSON representation
 The following JSON representation shows the resource type.
