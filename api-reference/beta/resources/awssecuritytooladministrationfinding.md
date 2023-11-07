@@ -1,6 +1,6 @@
 ---
 title: "awsSecurityToolAdministrationFinding resource type"
-description: "Represents findings for identities with privileges to modify settings of security tools"
+description: "Represents findings for identities with privileges to modify settings of security tools."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
