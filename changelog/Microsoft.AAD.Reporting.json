@@ -3,8 +3,6 @@
     {
       "ChangeList": [
         {
-      "ChangeList": [
-        {
           "Id": "514fea21-1d51-46d0-847e-9c2cce1d6c58",
           "ApiChange": "Resource",
           "ChangedApiName": "tenantSecureScore",
@@ -28,7 +26,9 @@
       "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
     },
-        {
+    {
+      "ChangeList": [
+        {    
           "Id": "e70ef0dd-ac40-4549-9583-958a7a9c0b66",
           "ApiChange": "Member",
           "ChangedApiName": "longLivedCredentials",
