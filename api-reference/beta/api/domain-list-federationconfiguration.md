@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "domain_list_federationconfiguration" } -->
 [!INCLUDE [permissions-table](../includes/permissions/domain-list-federationconfiguration-permissions.md)]
 
-The calling user must be assigned one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
+The calling user must be assigned one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
 - Security Administrator
 - External Identity Provider Administrator
