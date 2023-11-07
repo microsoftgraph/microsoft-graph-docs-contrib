@@ -22,6 +22,7 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | Method | Return Type |Description |
 | ------ | ----------- | ---------- |
 | [Get virtualEventWebinar](../api/virtualeventwebinar-get.md) | [virtualEventWebinar](../resources/virtualeventwebinar.md) | Read the properties and relationships of a [virtualEventWebinar](../resources/virtualeventwebinar.md) object. |
+| [List virtualEventWebinars](../api/virtualeventwebinar-list.md) | [virtualEventWebinar](../resources/virtualeventwebinar.md) collection | Get a list of all [virtualEventWebinar](../resources/virtualeventwebinar.md) objects. |
 
 ## Properties
 
