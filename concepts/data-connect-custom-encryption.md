@@ -26,7 +26,7 @@ Set up custom encryption by generating keys in AKV or linking an existing AKV. E
 
 ## Enabling Encryption for your Data Connect Application.
 
-1. For existing applications: log into your [Azure Portal](www.azure.portal.com). 
+1. For existing applications: log into your [Azure Portal](https://ms.portal.azure.com). 
     1. Click on **Microsoft Graph Data Connect** and select your current application. 
     2. Click **properties**. Click on **Single Tenant** and toggle on encryption. 
     3. Drop down to select your Azure Key Vault URI (name of the AKV) or follow steps 3.4 and 3.5 to create a new AKV. Then **Update Properties** to save. 
@@ -34,7 +34,7 @@ Set up custom encryption by generating keys in AKV or linking an existing AKV. E
 
     ![Screenshot covers MGDC on app portal](images/portal-MGDC.png)
     
-    ![Screenshot covers the existing app and how to enable encryption](images/existing-app-encryption.md)
+    ![Screenshot covers the existing app and how to enable encryption](images/existing-app-encryption.png)
 
     5. Ensure your pipelines run AFTER step 4 is complete or else your data request will not deliver encrypted data.
 
@@ -145,7 +145,7 @@ No action is required from the Microsoft 365 admin for this section.
     > [NOTE]
     > If encryption is enabled during app registration, it will apply to ALL the eligible datasets in the app.
 
-    ![Screenshot explains dataset encryption enabled in overview](images/admin-approves-encryption.png)
+    ![Screenshot explains dataset encryption enabled in review](images/admin-approves-encryption.png)
 
 5.	Once you have reviewed the application, please select **Approve, Decline, or Cancel**. An action must be taken and Data Connect will only apply encryption once the app is approved. To understand more on admin authorization, please see [app authorization.](./app-authorization.md)
 
