@@ -14,7 +14,7 @@ Microsoft Graph Data Connect (Data Connect) offers encryption capabilities throu
 
 2. **Encryption for data-in-transit**: Data Connect offers encryption for data-in-transit through our custom dataset encryption capability. It also ensures ALL data requests between a customer’s Microsoft 365 and Azure resources are secure using service standards such as HTTPS that are [SOC approved.](https://docs.microsoft.com/en-us/compliance/regulatory/offering-soc-2)
 
-# Enabling Custom Encryption with Microsoft Graph Data Connect
+## Enabling Custom Encryption with Microsoft Graph Data Connect
 
 This article guides you through setting up custom encryption for secure data delivery with Data Connect.
 Customers can use custom encryption for secure dataset delivery. Link your Azure Key Vault (AKV) during application registration to enable encryption. Data Connect encrypts datasets using authorized public keys and delivers them encrypted with a decryption key.
@@ -57,7 +57,7 @@ Set up custom encryption by generating keys in AKV or linking an existing AKV. E
     > Make sure to create or note down your existing service principal (SPN) on notepad, you will need this at a later step!
 
 
-5. Once your M365 Admin has reviewed and approved your app, please follow the steps in ["Using your Azure Key Vault" and "Generating RSA keys with your Azure Key Vault" tab](./data-connect-custom-encryption.md#using-azure-key-vault-for-custom-encryption) to ensure your AKV has the correct role permissions and is populated with RSA keys.
+5. Once your M365 Admin has reviewed and approved your app, follow the steps in ["Using your Azure Key Vault" and "Generating RSA keys with your Azure Key Vault" tab](./data-connect-custom-encryption.md#using-azure-key-vault-for-custom-encryption) to ensure your AKV has the correct role permissions and is populated with RSA keys.
 
 6. Continue to set up your pipeline for data extraction and submit your data request. Encryption will be applied to all the eligible datasets in the application. If you run a pipeline without completing step 5, your requested data will not be encrypted.
 
@@ -68,7 +68,7 @@ Below is our standard recommendation for decryption. Once the encrypted data is 
 
 ### Pre-requisites
 
-Ensure your Azure Key Vault is set up correctly with the instructions mentioned in [Using Azure Key Vault for Custom Encryption](./data-connect-custom-encryption.md#using-azure-key-vault-for-custom-encryption) 
+Ensure your Azure Key Vault is set up correctly with the instructions mentioned in [Using Azure Key Vault for Custom Encryption.](./data-connect-custom-encryption.md#using-azure-key-vault-for-custom-encryption) 
 
 ### About metadata and encryption
 
