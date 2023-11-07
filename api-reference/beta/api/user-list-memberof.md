@@ -39,7 +39,7 @@ GET /users/{id | userPrincipalName}/memberOf
 
 ## Optional query parameters
 
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$search`, `$count`, and `$filter`. OData cast is also enabled, for example, you can cast to get just the directoryRoles the user is a member of. You can use `$search` on the **displayName** property. Items that are added or updated for this resource are specially indexed for use with the `$count` and `$search` query parameters. There can be a slight delay between when an item is added or updated and when it's available in the index.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$search`, `$count`, and `$filter`. OData cast is also enabled; for example, you can cast to get just the **directoryRoles** the user is a member of. You can use `$search` on the **displayName** property. Items that are added or updated for this resource are specially indexed for use with the `$count` and `$search` query parameters. There can be a slight delay between when an item is added or updated and when it's available in the index.
 
 ## Request headers
 
@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -110,7 +110,7 @@ GET https://graph.microsoft.com/beta/users/{id}/memberOf
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -139,7 +139,7 @@ Content-type: application/json
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -152,7 +152,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -170,7 +170,7 @@ Content-type: text/plain
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -183,7 +183,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -200,7 +200,7 @@ Content-type: text/plain
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -213,7 +213,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -242,7 +242,7 @@ Content-type: application/json
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -255,7 +255,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -287,7 +287,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -299,7 +299,7 @@ GET https://graph.microsoft.com/beta/users/{id}/memberOf/microsoft.graph.group?$
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -311,6 +311,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups",
   "value":[
