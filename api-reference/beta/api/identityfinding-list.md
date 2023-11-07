@@ -1,6 +1,6 @@
 ---
 title: "List identityFindings"
-description: "Get a list of the identityFinding objects and their properties."
+description: "Not implemented.: Get a list of the identityFinding objects and their properties."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of the [identityFinding](../resources/identityfinding.md) objects and their properties.
+
+Not implemented.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -1,6 +1,6 @@
 ---
 title: "Get assignedComputeInstanceDetails"
-description: "Read the properties and relationships of an assignedComputeInstanceDetails object."
+description: "Not implemented.: Read the properties and relationships of an assignedComputeInstanceDetails object."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Read the properties and relationships of an [assignedComputeInstanceDetails](../resources/assignedcomputeinstancedetails.md) object.
+
+Not implemented.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

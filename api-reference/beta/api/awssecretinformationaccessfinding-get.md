@@ -1,6 +1,6 @@
 ---
 title: "Get awsSecretInformationAccessFinding"
-description: "Read the properties and relationships of an awsSecretInformationAccessFinding object."
+description: "Not implemented: Read the properties and relationships of an awsSecretInformationAccessFinding object."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Read the properties and relationships of an [awsSecretInformationAccessFinding](../resources/awssecretinformationaccessfinding.md) object.
+
+Not implemented.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /awsSecretInformationAccessFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings/graph.awsSecretInformationAccessFinding
 ```
 
 ## Optional query parameters
@@ -58,7 +60,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/awsSecretInformationAccessFinding
+GET https://graph.microsoft.com/beta//identityGovernance/permissionsAnalytics/aws/findings/graph.awsSecretInformationAccessFinding
 ```
 
 
