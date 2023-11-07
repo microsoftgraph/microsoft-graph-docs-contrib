@@ -24,14 +24,16 @@ Set up custom encryption by generating keys in AKV or linking an existing AKV. E
 > [!NOTE]
 > Custom Encryption is not available to customers who are still using the PAM consent process or using MDF (Managed Data Flows).
 
-## Enabling Encryption for your Data Connect Application.
+## Enable encryption for your Data Connect application
 
-1. For existing applications: log into your [Azure Portal](https://ms.portal.azure.com). 
-    1. Click on **Microsoft Graph Data Connect** and select your current application. 
-    2. Click **properties**. Click on **Single Tenant** and toggle on encryption. 
-    3. Drop down to select your Azure Key Vault URI (name of the AKV) or follow steps 3.d and 3.e to create a new AKV. Then **Update Properties** to save. 
-    4. Follow step 5 to ensure you AKV has the correct role permissions and populate it with the correct RSA keys.
-    5. Ensure your pipelines run AFTER step 5 is complete or else your data request will not deliver encrypted data.
+Use the following steps to enable encryption for your existing Data Connect application:
+
+1. Sign in to the [Azure Portal](https://ms.portal.azure.com). 
+    1. Choose **Microsoft Graph Data Connect** and select your current application. 
+    2. Choose **properties**. Choose **Single Tenant** and toggle on encryption. 
+    3. Drop down to select your Azure Key Vault URI (name of the AKV) or follow steps 3.d and 3.e to create a new AKV. Then choose **Update Properties** to save. 
+    4. Follow step 5 to ensure that your AKV has the correct role permissions and populate it with the correct RSA keys.
+    5. Ensure that your pipelines run after step 5 is complete or else your data request will not deliver encrypted data.
 
     ![Screenshot covers MGDC on app portal](images/portal-MGDC.png)
     
