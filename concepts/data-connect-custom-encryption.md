@@ -37,7 +37,7 @@ Set up custom encryption by generating keys in AKV or linking an existing AKV. E
     
     ![Screenshot covers the existing app and how to enable encryption](images/existing-app-encryption.png)
 
-2. If you don't have an existing Data Connect Application, follow our [Getting Started](../includes/data-connect-quickstart-01.md) using [the simplified onboarding experience.](./onboarding-experience-overview.md). 
+2. If you don't have an existing Data Connect Application, follow our [Getting Started](https://learn.microsoft.com/en-us/graph/data-connect-quickstart?tabs=NewConsentFlow%2CPAMMicrosoft365%2CAzureSynapsePipeline) using [the simplified onboarding experience.](./onboarding-experience-overview.md). 
 
 3. Fill out the application details on the **Registration Info** page.
     1. Under **Publish Type** select **Single Tenant** if you intend to enable encryption as on. 
@@ -51,7 +51,7 @@ Set up custom encryption by generating keys in AKV or linking an existing AKV. E
 
     ![Screenshot of the the Azure portal with Azure Key Vault and encryption boxed in](images/app-registration-encryption.png) 
 
-4. Fill out the rest of the required application details as mentioned in the [Getting Started](./includes/data-connect-quickstart-01.md) and [simplified onboarding experience](./onboarding-experience-overview.md) and submit it for your M365 admin to review. 
+4. Fill out the rest of the required application details as mentioned in the [Getting Started](https://learn.microsoft.com/en-us/graph/data-connect-quickstart?tabs=NewConsentFlow%2CPAMMicrosoft365%2CAzureSynapsePipeline) and [simplified onboarding experience](./onboarding-experience-overview.md) and submit it for your M365 admin to review. 
     
     > [!NOTE]
     > Make sure to create or note down your existing service principal (SPN) on notepad, you will need this at a later step!
