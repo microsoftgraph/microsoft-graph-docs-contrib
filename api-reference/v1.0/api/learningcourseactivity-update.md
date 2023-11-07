@@ -236,10 +236,10 @@ HTTP/1.1 204 No Content
 |Bad Request|400|Bad Request|There was an issue with your request. Make sure the registrationId you entered is valid or registered for your tenant|
 |Bad Request|404|Not Found|The requested assignment {id} doesn’t exist.|
 |Internal Server Error|500|Internal Server Error|Internal Server Error|
-|Request throttled|429|Too Many Requests|[{"code": "TooManyRequests","message": "Retry after {noOfMinutes} minutes"}]|
-|Service Unavailable|503|Service Unavailable|[{"code": "ServiceUnavailable","message":"Retry after {noOfMinutes} minutes"}]|
-|Bad Request|400|BadRequest|Required fields are missing|[{"code": "badRequest","message": "Input Field {fieldName} is required"}]
-|Bad Request|400|BadRequest|Input fields are invalid|[{"code": "badRequest","message": "Input Field {fieldName} is invalid"}]
-|Bad Request|400|BadRequest|BadRequest|[{"code": "badRequest","message": "Input Field {fieldName} shouldn't be empty"}]
+|Request throttled|429|Too Many Requests|{"code": "TooManyRequests","message": "Retry after {noOfMinutes} minutes"}|
+|Service Unavailable|503|Service Unavailable|{"code": "ServiceUnavailable","message":"Retry after {noOfMinutes} minutes"}|
+|Bad Request|400|BadRequest|Required fields are missing|{"code": "badRequest","message": "Input Field {fieldName} is required"}|
+|Bad Request|400|BadRequest|Input fields are invalid|{"code": "badRequest","message": "Input Field {fieldName} is invalid"}|
+|Bad Request|400|BadRequest|BadRequest|{"code": "badRequest","message": "Input Field {fieldName} shouldn't be empty"}|
 |Forbidden|403|Forbidden|The provider is not valid to create course activity for the given learning content|When the registrationId/learningProviderId doesnot match with the provider with which the LearningContent is created|
 |Forbidden|403|Forbidden|User License is not valid to perform the operation|When the user for which Assignment is being created does not have a premium license|

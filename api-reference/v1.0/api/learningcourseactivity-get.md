@@ -311,5 +311,5 @@ Content-Type: application/json
 |Bad Request|400|Bad Request|There was an issue with your request. Make sure the registrationId you entered is valid or registered for your tenant|
 |Bad Request|404|Not Found|The requested assignment {id} doesn’t exist.|
 |Internal Server Error|500|Internal Server Error|Internal Server Error|
-|Request throttled|429|Too Many Requests|[{"code": "TooManyRequests","message": "Retry after {noOfMinutes} minutes"}]|
-|Service Unavailable|503|Service Unavailable|[{"code": "ServiceUnavailable","message":"Retry after {noOfMinutes} minutes"}]|
+|Request throttled|429|Too Many Requests|{"code": "TooManyRequests","message": "Retry after {noOfMinutes} minutes"}|
+|Service Unavailable|503|Service Unavailable|{"code": "ServiceUnavailable","message":"Retry after {noOfMinutes} minutes"}|
