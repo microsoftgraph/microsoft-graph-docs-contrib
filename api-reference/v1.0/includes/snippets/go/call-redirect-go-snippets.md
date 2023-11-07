@@ -22,7 +22,7 @@ requestBody := graphcommunications.NewRedirectPostRequestBody()
 invitationParticipantInfo := graphmodels.NewInvitationParticipantInfo()
 identity := graphmodels.NewIdentitySet()
 additionalData := map[string]interface{}{
-phone := graphmodels.New()
+phone := graphmodels.NewIdentity()
 id := "+12345678901"
 phone.SetId(&id) 
 	identity.SetPhone(phone)

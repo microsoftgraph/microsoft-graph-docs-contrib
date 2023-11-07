@@ -3,6 +3,7 @@ title: "roleManagement resource type"
 description: "Microsoft 365 role-based access control (RBAC) resource."
 ms.localizationpriority: medium
 author: "DougKirschner"
+ms.reviewer: msodsrbac
 ms.prod: "directory-management"
 doc_type: "resourcePageType"
 ---

@@ -17,13 +17,10 @@ Retrieve schedules of membership and ownership eligibility requests for the call
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|PrivilegedEligibilitySchedule.Read.AzureADGroup, PrivilegedEligibilitySchedule.ReadWrite.AzureADGroup|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|PrivilegedEligibilitySchedule.Read.AzureADGroup, PrivilegedEligibilitySchedule.ReadWrite.AzureADGroup|
+<!-- { "blockType": "permissions", "name": "privilegedaccessgroupeligibilityschedule_filterbycurrentuser" } -->
+[!INCLUDE [permissions-table](../includes/permissions/privilegedaccessgroupeligibilityschedule-filterbycurrentuser-permissions.md)]
 
 [!INCLUDE [rbac-pim-groups-apis-read-eligibilityschedules](../includes/rbac-for-apis/rbac-pim-groups-apis-read-eligibilityschedules.md)]
 
@@ -52,7 +49,7 @@ The following table shows the parameters that must be used with this function.
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -99,6 +96,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/e
 [!INCLUDE [sample-code](../includes/snippets/php/privilegedaccessgroupeligibilityschedulethisfilterbycurrentuser-beta-e1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/privilegedaccessgroupeligibilityschedulethisfilterbycurrentuser-beta-e1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/privilegedaccessgroupeligibilityschedulethisfilterbycurrentuser-beta-e1-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -106,7 +107,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/e
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -183,6 +184,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/e
 [!INCLUDE [sample-code](../includes/snippets/php/privilegedaccessgroupeligibilityschedulethisfilterbycurrentuser-beta-e2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/privilegedaccessgroupeligibilityschedulethisfilterbycurrentuser-beta-e2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/privilegedaccessgroupeligibilityschedulethisfilterbycurrentuser-beta-e2-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -190,7 +195,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/e
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

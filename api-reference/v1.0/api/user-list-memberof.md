@@ -17,13 +17,10 @@ Get [groups](../resources/group.md), [directory roles](../resources/directoryrol
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                  |
-| :------------------------------------- | :--------------------------------------------------------------------------- |
-| Delegated (work or school account)     | User.Read, GroupMember.Read.All, Directory.Read.All, Directory.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported.                                                               |
-| Application                            | Directory.Read.All, Directory.ReadWrite.All                                  |
+<!-- { "blockType": "permissions", "name": "user_list_memberof" } -->
+[!INCLUDE [permissions-table](../includes/permissions/user-list-memberof-permissions.md)]
 
 > **Note:** To list the members of a group with hidden membership, the Member.Read.Hidden permission is required.
 
@@ -40,7 +37,7 @@ GET /users/{id | userPrincipalName}/memberOf
 
 ## Optional query parameters
 
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$select`, `$search`, `$count`, and `$filter`. OData cast is also enabled, for example, you can cast to get just the directoryRoles the user is a member of. You can use `$search` on the **displayName** property. The default and maximum page sizes are 100 and 999 objects respectively.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$search`, `$count`, and `$filter`. OData cast is also enabled; for example, you can cast to get just the **directoryRoles** the user is a member of. You can use `$search` on the **displayName** property. Items that are added or updated for this resource are specially indexed for use with the `$count` and `$search` query parameters. There can be a slight delay between when an item is added or updated and when it's available in the index.
 
 ## Request headers
 
@@ -63,7 +60,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 
@@ -112,7 +109,7 @@ GET https://graph.microsoft.com/v1.0/users/6e7b768e-07e2-4810-8459-485f84f8f204/
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -143,7 +140,7 @@ Content-type: application/json
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -157,7 +154,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -176,7 +173,7 @@ Content-type: text/plain
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -190,7 +187,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response"
@@ -207,7 +204,7 @@ Content-type: text/plain
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -221,7 +218,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -252,7 +249,7 @@ Content-type: application/json
 
 #### Request
 
-Here's an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -266,7 +263,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -291,6 +288,50 @@ Content-type: application/json
       "mailEnabled":true,
       "mailNickname":"AADContoso_Users",
       "securityEnabled":true
+    }
+  ]
+}
+```
+
+### Example 6: Use $filter and OData cast to get groups with at least one app role assignment
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "list_users_memberof_approleassignments"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users/{id}/memberOf/microsoft.graph.group?$filter=appRoleAssignments/$count gt 0&$select=id,displayName
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
+  "value":[
+    {
+      "id": "c11b732b-0e16-46c1-b0fa-bd32c8a42455",
+      "displayName":"All users"
+    },
+    {
+      "id": "3f927b40-06f8-4352-b8e4-37a7ba04b7ff",
+      "displayName":"AAD Contoso Users"
     }
   ]
 }
