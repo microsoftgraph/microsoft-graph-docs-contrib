@@ -1,5 +1,5 @@
 ---
-title: "monthlyUserInsights resource type"
+title: "monthlyUserInsightsMetricsRoot resource type"
 description: "A container for the different summaries of monthly user activities on apps registered in your Microsoft Entra External ID for customers tenant."
 author: "srutto"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
-# monthlyUserInsights resource type
+# monthlyUserInsightsMetricsRoot resource type
 
 Namespace: microsoft.graph
 
