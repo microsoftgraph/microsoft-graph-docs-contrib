@@ -17626,6 +17626,8 @@ items:
                     items:
                       - name: Get
                         href: api/virtualeventwebinar-get.md
+                      - name: List
+                        href: api/virtualeventwebinar-list.md
                   - name: Session
                     href: resources/virtualeventsession.md
                     items:
