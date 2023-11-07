@@ -188,7 +188,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.callRecords"
+  "@odata.type": "microsoft.graph.callRecords.callRecord"
 } -->
 
 ```http
@@ -255,7 +255,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.callRecords"
+  "@odata.type": "microsoft.graph.callRecords.callRecord"
 } -->
 
 ```http
