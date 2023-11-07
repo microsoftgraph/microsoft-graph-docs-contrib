@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /openAwsSecurityGroupFinding/assignedComputeInstancesDetails/{assignedComputeInstanceDetailsId}
+GET /identityGovernance/permissionsAnalytics/aws/findings('id')/microsoft.graph.openAwsSecurityGroupFinding/assignedComputeInstancesDetails
 ```
 
 ## Optional query parameters
@@ -59,7 +59,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/openAwsSecurityGroupFinding/assignedComputeInstancesDetails/{assignedComputeInstanceDetailsId}
+GET https://graph.microsoft.com/beta//identityGovernance/permissionsAnalytics/aws/findings('MSxPcGVuQXdzU2VjdXJpdHlHcm91cEZpbmRpbmcsMTc0NDE5')/microsoft.graph.openAwsSecurityGroupFinding/assignedComputeInstancesDetails
 ```
 
 
@@ -77,10 +77,30 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.assignedComputeInstanceDetails",
-    "id": "2b26ff5a-50e8-02a3-9057-2e63f27302df"
-  }
+      "@odata.context": "https://localhost:7214/$metadata#identityGovernance/permissionsAnalytics/aws/findings('MSxPcGVuQXdzU2VjdXJpdHlHcm91cEZpbmRpbmcsMTc0NDE5')/microsoft.graph.openAwsSecurityGroupFinding/assignedComputeInstancesDetails(assignedComputeInstance())",
+    "value": [
+        {
+            "id": "YXJuOmF3czplYzI6dXMtd2VzdC0yOjk1Njk4Nzg4NzczNTppbnN0YW5jZS9pLTA5N2I0ZWIxMDFlYWJlNTIy",
+            "externalId": "arn:aws:ec2:us-west-2:956987887735:instance/i-097b4eb101eabe522",
+            "assignedComputeInstance": {
+                "id": "YXJuOmF3czplYzI6dXMtd2VzdC0yOjk1Njk4Nzg4NzczNTppbnN0YW5jZS9pLTA5N2I0ZWIxMDFlYWJlNTIy",
+                "externalId": "arn:aws:ec2:us-west-2:956987887735:instance/i-097b4eb101eabe522",
+                "displayName": "SENTRY-CK-PRAT",
+                "resourceType": "instance"
+            }
+        },
+        {
+            "id": "YXJuOmF3czplYzI6dXMtd2VzdC0yOjk1Njk4Nzg4NzczNTppbnN0YW5jZS9pLTA4MjlkYjRkODVlNzNhZDg5",
+            "externalId": "arn:aws:ec2:us-west-2:956987887735:instance/i-0829db4d85e73ad89",
+            "assignedComputeInstance": {
+                "id": "YXJuOmF3czplYzI6dXMtd2VzdC0yOjk1Njk4Nzg4NzczNTppbnN0YW5jZS9pLTA4MjlkYjRkODVlNzNhZDg5",
+                "externalId": "arn:aws:ec2:us-west-2:956987887735:instance/i-0829db4d85e73ad89",
+                "displayName": "PratS10-01062021",
+                "resourceType": "instance"
+            }
+        }
+    ],
+    "@odata.nextLink": "https://localhost:7214/identityGovernance/permissionsAnalytics/aws/findings('MSxPcGVuQXdzU2VjdXJpdHlHcm91cEZpbmRpbmcsMTc0NDE5')/microsoft.graph.openAwsSecurityGroupFinding/assignedComputeInstancesDetails?$skipToken=eyJwYXRzIjoxNjc2Mzk2NDM0MTUyLCJlbnRzIjoxNjc2Mzk2NDM0MTUyLCJ2IjoiMS4wIiwicyI6MiwidCI6bnVsbCwib2IiOm51bGx9"
 }
 ```
 
