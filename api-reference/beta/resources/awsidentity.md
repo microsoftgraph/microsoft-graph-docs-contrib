@@ -1,9 +1,9 @@
 ---
 title: "awsIdentity resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents the findings for identities in AWS."
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents the findings for AWS identities including access keys, EC2 instances, groups, lambda functions, roles, and users.
 
 Inherits from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).
 
@@ -30,26 +29,20 @@ The following resources inherit from this resource type:
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List awsIdentities](../api/awsidentity-list.md)|[awsIdentity](../resources/awsidentity.md) collection|Get a list of the [awsIdentity](../resources/awsidentity.md) objects and their properties.|
 |[Get awsIdentity](../api/awsidentity-get.md)|[awsIdentity](../resources/awsidentity.md)|Read the properties and relationships of an [awsIdentity](../resources/awsidentity.md) object.|
-|[Update awsIdentity](../api/awsidentity-update.md)|[awsIdentity](../resources/awsidentity.md)|Update the properties of an [awsIdentity](../resources/awsidentity.md) object.|
-|[Delete awsIdentity](../api/awsidentity-delete.md)|None|Delete an [awsIdentity](../resources/awsidentity.md) object.|
-|[List authorizationSystem](../api/awsidentity-list-authorizationsystem.md)|[authorizationSystem](../resources/authorizationsystem.md) collection|Get the authorizationSystem resources from the authorizationSystem navigation property.|
-|[Add authorizationSystem](../api/awsidentity-post-authorizationsystem.md)|[authorizationSystem](../resources/authorizationsystem.md)|Add authorizationSystem by posting to the authorizationSystem collection.|
-|[Remove authorizationSystem](../api/awsidentity-delete-authorizationsystem.md)|None|Remove an [authorizationSystem](../resources/authorizationsystem.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
-|externalId|String|**TODO: Add Description** Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|source|[authorizationSystemIdentitySource](../resources/authorizationsystemidentitysource.md)|**TODO: Add Description** Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
+|displayName|String|The name of the object. Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
+|externalId|String|The externally displayed ID of the object. Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
+|id|String|Unique identifier for the Finding. This id will be base64 encoded using the format:{findingType}{FindingId} to ensure uniqueness. Inherited from [entity](../resources/entity.md).|
+|source|[authorizationSystemIdentitySource](../resources/authorizationsystemidentityresource.md)|The source of the authorization system identity. Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|authorizationSystem|[authorizationSystem](../resources/authorizationsystem.md)|**TODO: Add Description** Inherited from [microsoft.graph.authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|
+|authorizationSystem|[authorizationSystem](../resources/authorizationsystem.md)|Represents the authorization system. Inherited from [microsoft.graph.authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|
 
 ## JSON representation
 The following JSON representation shows the resource type.

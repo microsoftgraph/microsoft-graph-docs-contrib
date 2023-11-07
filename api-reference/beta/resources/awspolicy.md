@@ -26,10 +26,10 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|awsPolicyType|awsPolicyType|The type of an AWS policy. The possible values are: `system`, `custom`, `unknownFutureValue`. Read-only.|
-|displayName|String|The display name of an AWS policy. Read-only.|
-|externalId|String|The identifier of an AWS policy as defined by AWS. Read-only.|
-|id|String|The unique encoded identifier for an AWS policy. Read-only. Inherited from [entity](../resources/entity.md).|
+|awsPolicyType|awsPolicyType|The type of the AWS policy. The possible values are: `system`, `custom`, `unknownFutureValue`. Read-only.|
+|displayName|String|The display name for the AWS policy. Read-only.|
+|externalId|String|The identifier for the AWS policy as defined by AWS. Read-only. Alternate key.|
+|id|String|The unique encoded identifier for the AWS policy. Read-only. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 None.
