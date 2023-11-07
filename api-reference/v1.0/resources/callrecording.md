@@ -33,7 +33,7 @@ Represents a recording associated with an [online meeting](onlinemeeting.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource:
+The following code snippet is a JSON representation of the resource:
 
 <!--{
   "blockType": "resource",
