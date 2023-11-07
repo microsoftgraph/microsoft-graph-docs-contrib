@@ -15,7 +15,6 @@ Namespace: microsoft.graph
 
 Get insights into the GCP storage buckets that are accessible externally. 
 
-
 Inherits from [finding](../resources/finding.md).
 
 ## Methods

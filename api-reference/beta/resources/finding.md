@@ -19,33 +19,23 @@ Inherits from [entity](../resources/entity.md).
 
 The following resources inherit from this resource type:
 [identityfinding](../resources/identityfinding.md)
-
 [awsExternalSystemAccessFinding](../resources/awsexternalsystemaccessfinding.md)
 [awsExternalSystemAccessRoleFinding](../resources/awsexternalsystemaccessrolefinding.md)
-
 [awsIdentityAccessManagementKeyAgeFinding](../resources/awsidentityaccessmanagementkeyagefinding.md)
 [awsIdentityAccessManagementKeyUsgeFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md)
-
 [awsSecretInformationAccessFinding](../resources/awssecretinformationaccessfinding.md)
 [awsSecurityToolAdministrationFinding](../resources/awssecuritytooladministrationfinding.md)
-
 [encryptedAwsStorageBucketFinding](../resources/encryptedawsstoragebucketfinding.md)
 [encryptedAzureStorageAccountFinding](../resources/encryptedazurestorageaccountfinding.md)
 [encryptedGcpStorageBucketFinding](../resources/encryptedgcpstoragebucketfinding.md)
-
 [externallyAccessibleAwsStorageBucketFinding](../resources/externallyaccessibleawsstoragebucketfinding.md)
 [externallyAccessibleAzureBlobContainerFinding](../resources/externallyaccessibleazureblobcontainerfinding.md)
 [externallyAccessibleGcpStorageBucketFinding](../resources/externallyaccessiblegcpstoragebucketfinding.md)
-
 [inactiveGroupFinding](../resources/inactivegroupfinding.md)
-
 [openAwsSecurityGroupFinding](../resources/openawssecuritygroupfinding.md)
 [openNetworkAzureSecurityGroupFinding](../resources/opennetworkazuresecuritygroupfinding.md)
-
 [privilegeEscalationFinding](../resources/privilegeescalationfinding.md)
-
 [virtualMachineWithAwsStorageBucketAccessFinding](../resources/virtualmachinewithawsstoragebucketaccessfinding.md)
-
 
 ## Methods
 None

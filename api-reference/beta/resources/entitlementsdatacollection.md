@@ -1,9 +1,9 @@
 ---
 title: "entitlementsDataCollection resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents data collection details for entitlements."
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
@@ -13,17 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents data collection details for entitlements.
 
 Inherits from [entitlementsDataCollectionInfo](../resources/entitlementsdatacollectioninfo.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|lastCollectionDateTime|DateTimeOffset|**TODO: Add Description**|
-|permissionsModificationCapability|permissionsModificationCapability|**TODO: Add Description**.The possible values are: `enabled`, `notConfigured`, `noRecentDataCollected`, `unknownFutureValue`.|
-|status|dataCollectionStatus|**TODO: Add Description**.The possible values are: `online`, `offline`, `unknownFutureValue`.|
+|lastCollectionDateTime|DateTimeOffset|Date and time of the last data collection.|
+|permissionsModificationCapability|permissionsModificationCapability|The possible values are: `enabled`, `notConfigured`, `noRecentDataCollected`, `unknownFutureValue`.|
+|status|dataCollectionStatus|Data collection status of the entitlement.The possible values are: `online`, `offline`, `unknownFutureValue`.|
 
 ## Relationships
 None.

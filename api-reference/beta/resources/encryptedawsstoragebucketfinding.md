@@ -15,7 +15,6 @@ Namespace: microsoft.graph
 
 Represents the findings for Aws encrypted storage buckets.
 
-
 Inherits from [finding](../resources/finding.md).
 
 ## Methods
