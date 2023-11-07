@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Insights-UserMetrics.Read.All|
+|Delegated (work or school account)|Insights-UserMetric.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Insights-UserMetrics.Read.All|
+|Application|Insights-UserMetric.Read.All|
 
 [!INCLUDE [rbac-ciam-user-insights-apis](../includes/rbac-for-apis/rbac-ciam-user-insights-apis.md)]or
 
