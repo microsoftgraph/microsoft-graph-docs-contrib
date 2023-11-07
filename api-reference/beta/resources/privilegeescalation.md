@@ -18,10 +18,7 @@ Not implemented: Represents the Privilege Escalation events.
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List privilegeEscalations](../api/privilegeescalation-list.md)|[privilegeEscalation](../resources/privilegeescalation.md) collection|Get a list of the [privilegeEscalation](../resources/privilegeescalation.md) objects and their properties.|
-|[Get privilegeEscalation](../api/privilegeescalation-get.md)|[privilegeEscalation](../resources/privilegeescalation.md)|Read the properties and relationships of a [privilegeEscalation](../resources/privilegeescalation.md) object.|
+Not implemented.
 
 ## Properties
 |Property|Type|Description|
