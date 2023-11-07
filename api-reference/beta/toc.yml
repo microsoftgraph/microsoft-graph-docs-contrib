@@ -15449,10 +15449,6 @@ items:
                     href: resources/activeusersmetric.md
                   - name: Active users breakdown
                     href: resources/activeusersbreakdownmetric.md
-                  - name: Inactive users
-                    href: resources/inactiveusersmetricbase.md
-                  - name: Inactive users by Application
-                    href: resources/inactiveusersbyapplicationmetricbase.md
                   - name: MFA completions
                     href: resources/mfacompletionmetric.md
                   - name: Total users
