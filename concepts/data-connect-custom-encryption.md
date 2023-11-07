@@ -130,7 +130,7 @@ No action is required from the Microsoft 365 admin for this section.
 
 5. Click on **Create** when you're done filling out the details!
 
-## Admin Guidance on Approval 
+# Admin Guidance on Approval 
 
 1. Log into the [Microsoft 365 admin authorization portal](https://admin.microsoft.com/Adminportal/Home#/Settings/MGDCAdminCenter) with your admin credentials.
 
@@ -142,16 +142,16 @@ No action is required from the Microsoft 365 admin for this section.
 
 
 4.	Within the **review** section of the application details, ensure encryption is enabled and the datasets requested. 
-    > [NOTE]
+    > [!NOTE]
     > If encryption is enabled during app registration, it will apply to ALL the eligible datasets in the app.
 
     ![Screenshot explains dataset encryption enabled in review](images/admin-approves-encryption.png)
 
 5.	Once you have reviewed the application, please select **Approve, Decline, or Cancel**. An action must be taken and Data Connect will only apply encryption once the app is approved. To understand more on admin authorization, please see [app authorization.](./app-authorization.md)
 
-</div>
 
-## Recommendations on Decrypting Datasets after Data Delivery
+
+# Recommendations on Decrypting Datasets after Data Delivery
 
 Below is our standard recommendation for decryption. Once the encrypted data is delivered, the customer is solely responsible for decryption. Data Connect does not offer any hands-on support to help decrypt the data after data delivery.
 
@@ -202,7 +202,7 @@ Also, the output of the Azure Key Vault Decrypt REST API is Base-64 URL encoded.
 Make sure you take these encoding differences into account when you decrypt the data. If encoded data is incorrectly decrypted, you might get an error like this: Invalid AES key length: 88 bytes.
 
 
-## Eligibility for Data Connect Datasets
+# Eligibility for Data Connect Datasets
 
 The following datasets are eligible for encryption for Data Connect: 
 
