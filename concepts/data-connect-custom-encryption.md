@@ -130,6 +130,25 @@ The following datasets are NOT yet eligible for Data Connect. We are working to 
 > [!NOTE]
 > If your application has encryption enabled and contains a mix of eligible and non-eligible datasets, only the eligible datasets will be encrypted.
 
+## Admin Guidance on Approval 
+
+1. Log into the [Microsoft 365 admin authorization portal](https://admin.microsoft.com/Adminportal/Home#/Settings/MGDCAdminCenter) with your admin credentials.
+
+2. Choose the **Security & Privacy** tab in **Org settings**, and then select **Microsoft Graph Data Connect applications**, as shown in the following image.
+    ![Screenshot with Org settings, the Security & Privacy tab, and Microsoft Graph Data Connect apps highlighted.](images/org-settings-security-and-privacy-data-connect-apps.png)
+
+3.	Please select the application ready for review. Within the **overview** section of the application details, ensure that encryption is enabled. 
+    ![Screenshot explains dataset encryption enabled in overview](images/admin-encryption-enabled.png)
+
+
+4.	Within the **review** section of the application details, ensure encryption is enabled and the datasets requested. 
+    > [!NOTE]
+    > If encryption is enabled during app registration, it will apply to ALL the eligible datasets in the app.
+
+    ![Screenshot explains dataset encryption enabled in review](images/admin-approves-encryption.png)
+
+5.	Once you have reviewed the application, please select **Approve, Decline, or Cancel**. An action must be taken and Data Connect will only apply encryption once the app is approved. To understand more on admin authorization, please see [app authorization.](./app-authorization.md)
+
 ## Using Azure Key Vault for Custom Encryption
 
 Follow the steps in "Setting up Azure Key Vault" tab as prerequisite before moving onto the next tab if you don't have an AKV set up.
@@ -198,21 +217,4 @@ No action is required from the Microsoft 365 admin for this section.
 
 5. Click on **Create** when you're done filling out the details!
 
-# Admin Guidance on Approval 
 
-1. Log into the [Microsoft 365 admin authorization portal](https://admin.microsoft.com/Adminportal/Home#/Settings/MGDCAdminCenter) with your admin credentials.
-
-2. Choose the **Security & Privacy** tab in **Org settings**, and then select **Microsoft Graph Data Connect applications**, as shown in the following image.
-    ![Screenshot with Org settings, the Security & Privacy tab, and Microsoft Graph Data Connect apps highlighted.](images/org-settings-security-and-privacy-data-connect-apps.png)
-
-3.	Please select the application ready for review. Within the **overview** section of the application details, ensure that encryption is enabled. 
-    ![Screenshot explains dataset encryption enabled in overview](images/admin-encryption-enabled.png)
-
-
-4.	Within the **review** section of the application details, ensure encryption is enabled and the datasets requested. 
-    > [!NOTE]
-    > If encryption is enabled during app registration, it will apply to ALL the eligible datasets in the app.
-
-    ![Screenshot explains dataset encryption enabled in review](images/admin-approves-encryption.png)
-
-5.	Once you have reviewed the application, please select **Approve, Decline, or Cancel**. An action must be taken and Data Connect will only apply encryption once the app is approved. To understand more on admin authorization, please see [app authorization.](./app-authorization.md)
