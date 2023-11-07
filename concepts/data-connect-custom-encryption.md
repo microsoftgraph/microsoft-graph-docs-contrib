@@ -62,6 +62,74 @@ Set up custom encryption by generating keys in AKV or linking an existing AKV. E
 6. Continue to set up your pipeline for data extraction and submit your data request. Encryption will be applied to all the eligible datasets in the application. If you run a pipeline without completing step 5, your requested data will not be encrypted.
 
 
+## Recommendations on Decrypting Datasets after Data Delivery
+
+Below is our standard recommendation for decryption. Once the encrypted data is delivered, the customer is solely responsible for decryption. Data Connect does not offer any hands-on support to help decrypt the data after data delivery.
+
+### Pre-requisites
+
+Ensure your Azure Key Vault is set up correctly with the instructions mentioned in [Using Azure Key Vault for Custom Encryption](./data-connect-custom-encryption.md#using-azure-key-vault-for-custom-encryption) 
+
+### About metadata and encryption
+
+We use the public portion of the RSA key pair to encrypt the decryption key. You can use its corresponding private portion to decrypt the decryption key after data delivery. Microsoft can safely store your decryption key, only your application can decrypt the decryption key by using the private key. Only you have access to the private key. The decryption key is an AES 256-bit symmetric key used for encrypting the file. 
+
+Your application needs to reverse the encryption and compression process to access the original data. To access the customer data from the data drop:
+
+1. Get the file decryption key from the extraction metadata.
+
+2. Decrypt the encryption key with the customer private key (provided in the Azure Key Vault). More information can be found with [Azure Key Vault Decrypt API.](https://learn.microsoft.com/en-us/rest/api/keyvault/keys/decrypt/decrypt?view=rest-keyvault-keys-7.4&tabs=HTTP)
+
+3. Decrypt the entire file with the file encryption key. [Here’s a C# sample.](https://learn.microsoft.com/en-us/dotnet/standard/security/encrypting-data)
+
+### Metadata file
+
+After extraction, you’ll receive a data drop. Each data drop includes a encryptionKeyDetails.json file, with the path of metadata/MoreMetadata/EncryptedDatasets in the root directory. This JSON file includes details about the copy activity with the following schema:
+
+| Field | Description |
+| --- | --- |
+| DecryptionKeyDetails | The details about the decryption key. |
+| PublicKeyVersion | The version of the public key. This is needed for the partner to identify which version of the corresponding private key they should use for decryption. |
+| DecryptionKeyValue | The Base-64 representation of the decryption key’s value |
+| DecryptionKeyIV | The Base-64 representation of the initialization vector used to create the decryption key |
+
+### About decryption keys
+
+The decryption key comes encrypted as a Base-64 string with the per-customer tenant public key provided in the Azure Key Vault. Decryption keys consist of the following components:
+
+- value – The Base-64 representation of the decryption key’s value. For example: oF8xFGjrhxC2LsrsrUA3eTCWDl2fYlBkUe886jRLnKFwdbH/9SRA+55ekL42JCcL+iXsQNZdMWmy3LnLgk2nSfZ96ecU/++sOM7QB/6kWrS2Wmg+5XCW5FErodnyBZKCbOo1RETgrxTH8YlcoLX5319VCmBleSMxgitn0Jl+VCM+NjfE87oPWyLo+vifaBtFnIgSOkzKh20dZm/Ue1AxXQlYQ/WptHBRa4Lmza/oXgbTpqk9Y+Mw+4IhVtHbCdcEt0DqQ0FRb/qjlwMPaYqOlZ5GxFTiQFsAtYVTpnvcffkDBp1gzlOL2iLhudc66PP4h6v4cBxHx6RTz8bO4KiaQg==
+- iv – The Base-64 representation of the initialization vector used to create the decryption key. For example: vLvaqqAN8GaYI9gGuX1bsQ==
+
+### About encoding
+
+There are a few encoding details to be aware of during the decryption process. The following data contains these encoding types:
+
+- Decryption Key: UTF-8
+- Decryption Key IV: UTF-8
+- Padding for AES – CBC / PKCS5 PKCS7 in C# is the same as PKCS5 in Java
+
+Also, the output of the Azure Key Vault Decrypt REST API is Base-64 URL encoded. You’ll need to decode the value from Base-64URL to bytes, and then encode the result to Base-64.
+
+Make sure you take these encoding differences into account when you decrypt the data. If encoded data is incorrectly decrypted, you might get an error like this: Invalid AES key length: 88 bytes.
+
+
+## Eligibility for Data Connect Datasets
+
+The following datasets are eligible for encryption for Data Connect: 
+
+1. All datasets for Azure Active Directory
+2. All datasets for Outlook and Exchange Online
+3. All datasets for Microsoft Teams
+4. All datasets for Microsoft Groups
+5. All datasets for OneDrive and SharePoint
+
+The following datasets are NOT yet eligible for Data Connect. We are working to enable them shortly!
+
+1.	All datasets for Viva Insights
+
+> [!NOTE]
+> If your application has encryption enabled and contains a mix of eligible and non-eligible datasets, only the eligible datasets will be encrypted.
+
 ## Using Azure Key Vault for Custom Encryption
 
 Follow the steps in "Setting up Azure Key Vault" tab as prerequisite before moving onto the next tab if you don't have an AKV set up.
@@ -148,73 +216,3 @@ No action is required from the Microsoft 365 admin for this section.
     ![Screenshot explains dataset encryption enabled in review](images/admin-approves-encryption.png)
 
 5.	Once you have reviewed the application, please select **Approve, Decline, or Cancel**. An action must be taken and Data Connect will only apply encryption once the app is approved. To understand more on admin authorization, please see [app authorization.](./app-authorization.md)
-
-
-
-# Recommendations on Decrypting Datasets after Data Delivery
-
-Below is our standard recommendation for decryption. Once the encrypted data is delivered, the customer is solely responsible for decryption. Data Connect does not offer any hands-on support to help decrypt the data after data delivery.
-
-### Pre-requisites
-
-Ensure your Azure Key Vault is set up correctly with the instructions mentioned in [Using Azure Key Vault for Custom Encryption](./data-connect-custom-encryption.md#using-azure-key-vault-for-custom-encryption) 
-
-### About metadata and encryption
-
-We use the public portion of the RSA key pair to encrypt the decryption key. You can use its corresponding private portion to decrypt the decryption key after data delivery. Microsoft can safely store your decryption key, only your application can decrypt the decryption key by using the private key. Only you have access to the private key. The decryption key is an AES 256-bit symmetric key used for encrypting the file. 
-
-Your application needs to reverse the encryption and compression process to access the original data. To access the customer data from the data drop:
-
-1. Get the file decryption key from the extraction metadata.
-
-2. Decrypt the encryption key with the customer private key (provided in the Azure Key Vault). More information can be found with [Azure Key Vault Decrypt API.](https://learn.microsoft.com/en-us/rest/api/keyvault/keys/decrypt/decrypt?view=rest-keyvault-keys-7.4&tabs=HTTP)
-
-3. Decrypt the entire file with the file encryption key. [Here’s a C# sample.](https://learn.microsoft.com/en-us/dotnet/standard/security/encrypting-data)
-
-### Metadata file
-
-After extraction, you’ll receive a data drop. Each data drop includes a encryptionKeyDetails.json file, with the path of metadata/MoreMetadata/EncryptedDatasets in the root directory. This JSON file includes details about the copy activity with the following schema:
-
-| Field | Description |
-| --- | --- |
-| DecryptionKeyDetails | The details about the decryption key. |
-| PublicKeyVersion | The version of the public key. This is needed for the partner to identify which version of the corresponding private key they should use for decryption. |
-| DecryptionKeyValue | The Base-64 representation of the decryption key’s value |
-| DecryptionKeyIV | The Base-64 representation of the initialization vector used to create the decryption key |
-
-### About decryption keys
-
-The decryption key comes encrypted as a Base-64 string with the per-customer tenant public key provided in the Azure Key Vault. Decryption keys consist of the following components:
-
-- value – The Base-64 representation of the decryption key’s value. For example: oF8xFGjrhxC2LsrsrUA3eTCWDl2fYlBkUe886jRLnKFwdbH/9SRA+55ekL42JCcL+iXsQNZdMWmy3LnLgk2nSfZ96ecU/++sOM7QB/6kWrS2Wmg+5XCW5FErodnyBZKCbOo1RETgrxTH8YlcoLX5319VCmBleSMxgitn0Jl+VCM+NjfE87oPWyLo+vifaBtFnIgSOkzKh20dZm/Ue1AxXQlYQ/WptHBRa4Lmza/oXgbTpqk9Y+Mw+4IhVtHbCdcEt0DqQ0FRb/qjlwMPaYqOlZ5GxFTiQFsAtYVTpnvcffkDBp1gzlOL2iLhudc66PP4h6v4cBxHx6RTz8bO4KiaQg==
-- iv – The Base-64 representation of the initialization vector used to create the decryption key. For example: vLvaqqAN8GaYI9gGuX1bsQ==
-
-### About encoding
-
-There are a few encoding details to be aware of during the decryption process. The following data contains these encoding types:
-
-- Decryption Key: UTF-8
-- Decryption Key IV: UTF-8
-- Padding for AES – CBC / PKCS5 PKCS7 in C# is the same as PKCS5 in Java
-
-Also, the output of the Azure Key Vault Decrypt REST API is Base-64 URL encoded. You’ll need to decode the value from Base-64URL to bytes, and then encode the result to Base-64.
-
-Make sure you take these encoding differences into account when you decrypt the data. If encoded data is incorrectly decrypted, you might get an error like this: Invalid AES key length: 88 bytes.
-
-
-# Eligibility for Data Connect Datasets
-
-The following datasets are eligible for encryption for Data Connect: 
-
-1. All datasets for Azure Active Directory
-2. All datasets for Outlook and Exchange Online
-3. All datasets for Microsoft Teams
-4. All datasets for Microsoft Groups
-5. All datasets for OneDrive and SharePoint
-
-The following datasets are NOT yet eligible for Data Connect. We are working to enable them shortly!
-
-1.	All datasets for Viva Insights
-
-> [NOTE]
-> If your application has encryption enabled and contains a mix of eligible and non-eligible datasets, only the eligible datasets will be encrypted.
