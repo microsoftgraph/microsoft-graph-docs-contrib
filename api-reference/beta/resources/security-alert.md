@@ -148,7 +148,7 @@ When detecting a threat, a security provider creates an alert in the system. Mic
 | microsoftDefenderForIdentity            | Microsoft Defender for Identity.                             |
 | cloudAppSecurity                        | Cloud app security.                                          |
 | microsoft365Defender                    | Microsoft 365 Defender.                                      |
-| azureAdIdentityProtection               | Azure Active Directory Identity Protection.                  |
+| azureAdIdentityProtection               | Microsoft Entra ID Protection.                               |
 | manual                                  | Manual detection.                                            |
 | microsoftDataLossPrevention             | Microsoft Purview Data Loss Prevention.                      |
 | appGovernancePolicy                     | App governance policy.                                       |
