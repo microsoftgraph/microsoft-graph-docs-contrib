@@ -31,7 +31,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
 
 > [!CAUTION] 
 > 
-> Graph Online Meeting APIs that support Microsoft Teams live event is deprecated and will stop functioning on September 30, 2024. New Graph APIs will replace this in Spring of 2024. For more information see the [blog post](https://devblogs.microsoft.com/microsoft365dev/deprecation-of-teams-live-events-api-on-microsoft-graph/). 
+> Graph Online Meeting APIs that support Microsoft Teams live event is deprecated and will stop functioning on September 30, 2024. New Graph APIs will replace this in Spring of 2024. For more information, see the [blog post](https://devblogs.microsoft.com/microsoft365dev/deprecation-of-teams-live-events-api-on-microsoft-graph/). 
 
 ## Properties
 
@@ -53,7 +53,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | isBroadcast (deprecated) | Boolean                                       | Indicates if this is a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events).                  |
 | isEntryExitAnnounced  | Boolean                                       | Indicates whether to announce when callers join or leave.                                                                     |
 | joinInformation       | [itemBody](itembody.md)                       | The join information in the language and locale variant specified in the `Accept-Language` request HTTP header. Read-only. |
-| joinMeetingIdSettings | [joinMeetingIdSettings](joinmeetingidsettings.md) | Specifies the **joinMeetingId**, the meeting passcode, and the requirement for the passcode. Once an **onlineMeeting** is created, the **joinMeetingIdSettings** cannot be modified. To make any changes to this property, the meeting needs to be canceled and a new one needs to be created.                  |
+| joinMeetingIdSettings | [joinMeetingIdSettings](joinmeetingidsettings.md) | Specifies the **joinMeetingId**, the meeting passcode, and the requirement for the passcode. Once an **onlineMeeting** is created, the **joinMeetingIdSettings** can't be modified. To make any changes to this property, the meeting needs to be canceled and a new one needs to be created.                  |
 | joinWebUrl            | String                                        | The join URL of the online meeting. Read-only.                                                                             |
 | lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Specifies which participants can bypass the meeting   lobby.                                                               |
 | participants          | [meetingParticipants](meetingparticipants.md) | The participants associated with the online meeting.  This includes the organizer and the attendees.                       |
@@ -72,7 +72,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | organization       | Everyone in organizer’s organization is a presenter.          |
 | roleIsPresenter    | Only the participants whose role is presenter are presenters. |
 | organizer          | Only the organizer  is a presenter.                           |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use.             |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.             |
 
 > [!TIP]
 >
@@ -85,7 +85,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | enabled            | Meeting chat is enabled.                                               |
 | disabled           | Meeting chat is disabled.                                              |
 | limited            | Meeting chat is enabled but only for the duration of the meeting call. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use.                      |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                      |
 
 ### meetingChatHistoryDefaultMode values
 
@@ -93,7 +93,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | ------------------ | ---------------------------------------------------------------------- |
 | all                | All meeting chat history is shared.                                    |
 | none               | No meeting chat history is shared.                                     |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use.                      |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                      |
 
 ## Relationships
 
