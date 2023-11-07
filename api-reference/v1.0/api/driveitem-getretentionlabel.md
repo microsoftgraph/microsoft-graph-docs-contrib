@@ -11,23 +11,19 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get metadata information for a retention label applied on a [driveItem](../resources/driveitem.md).
 
 For information about retention labels from an administrator's perspective, see [Use retention labels to manage the lifecycle of documents stored in SharePoint](/microsoft-365/compliance/auto-apply-retention-labels-scenario).
-
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Type                                   | Permissions (from least to most privileged)                              |
-|:---------------------------------------|:-------------------------------------------------------------------------|
-| Delegated (work or school account)     | Files.Read.All, Sites.Read.All                                           |
-| Delegated (personal Microsoft account) | Not supported.                                                           |
-| Application                            | Files.Read.All, Sites.Read.All                                           |
+| Type                                   | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | Files.Read.All, Sites.Read.All              |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Files.Read.All, Sites.Read.All              |
 
 ## HTTP request
 
@@ -72,7 +68,7 @@ The following example shows a request.
 }
 -->
 ```http
-GET https://graph.microsoft.com/beta/drives/22e064df-3562-4a3c-98c3-74721ca06aa0/lists/documents/items/44d372fc-2eb6-4c85-8538-f3a0386a568f/driveitem/retentionLabel
+GET https://graph.microsoft.com/v1.0/drives/22e064df-3562-4a3c-98c3-74721ca06aa0/lists/documents/items/44d372fc-2eb6-4c85-8538-f3a0386a568f/driveitem/retentionLabel
 ```
 
 ### Response
