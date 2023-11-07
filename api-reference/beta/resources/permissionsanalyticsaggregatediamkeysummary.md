@@ -1,9 +1,9 @@
 ---
 title: "permissionsAnalyticsAggregatedIamKeySummary resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents the total number of IAM keys and the number of a specific finding for that IAM Key in an authorization system."
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the total number of IAM keys and the number of a specific finding for that IAM Key in an authorization system.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|findingsCountOverLimit|Int32|**TODO: Add Description**|
-|totalCount|Int32|**TODO: Add Description**|
+|findingsCount|Int32|The total number of identities of a specific kind that has a specific finding type.|
+|totalCount|Int32|The total number of identities in an authorization system that Permissions Management checked for a specific finding.|
 
 ## Relationships
 None.

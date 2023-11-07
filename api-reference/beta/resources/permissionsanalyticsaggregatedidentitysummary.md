@@ -18,7 +18,7 @@ Represents the total number of identities of a specific kind, for example, roles
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|findingsCount|Int32|The total number of identities of a specific kind that has a specific finding type.	|
+|findingsCount|Int32|The total number of identities of a specific kind that has a specific finding type.|
 |totalCount|Int32|The total number of identities in an authorization system that Permissions Management checked for a specific finding.|
 
 ## Relationships
