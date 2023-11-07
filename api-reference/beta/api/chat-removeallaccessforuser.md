@@ -41,13 +41,11 @@ POST /chats/{chatsId}/removeAllAccessForUser
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the parameters.
-
-The following table shows the parameters that can be used with this action.
+In the request body, supply a JSON object with the following parameters.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|user|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|User for which the access to chat will be removed.|
+|user|[teamworkUserIdentity](../resources/teamworkuseridentity.md)|User whose chat access to remove.|
 
 
 
@@ -58,7 +56,7 @@ If successful, this action returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "chatthis.removeallaccessforuser"
@@ -77,7 +75,7 @@ Content-Type: application/json
 
 
 ### Response
-The following is an example of the response
+The following example shows the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
