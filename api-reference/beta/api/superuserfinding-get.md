@@ -36,8 +36,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws
 
 Get Azure super users:
 <!-- {
-  "blockType": "request",
-  "name": "get_superuserfinding"
+  "blockType": "ignored",
 }
 -->
 ``` http
@@ -46,8 +45,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azu
 
 Get GCP super users:
 <!-- {
-  "blockType": "request",
-  "name": "get_superuserfinding"
+  "blockType": "ignored",
 }
 -->
 ``` http
