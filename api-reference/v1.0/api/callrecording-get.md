@@ -24,7 +24,7 @@ For a recording, this API returns the metadata of the single recording associate
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. For more information, including how to choose permissions, see [permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged)                        |
 |:---------------------------------------|:-------------------------------------------------------------------|
@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 > **Notes:**
 >
-> * In delegated permission scenarios, [getting callRecording content](#example-2-get-callrecording-content)  is supported only for the meeting organizer. Meeting participants don't have permission to download meeting recordings. For more information, see [permissions or role-based access](/microsoftteams/tmr-meeting-recording-change). Tenant admins can unblock meeting participants to download meeting recording. For more information, see [block the download of Teams meeting recording files](/MicrosoftTeams/block-download-meeting-recording).
+> * In delegated permission scenarios, [get callRecording content](#example-2-get-callrecording-content)  is supported only for the meeting organizer. Meeting participants don't have permission to download meeting recordings. For more information, see [permissions or role-based access](/microsoftteams/tmr-meeting-recording-change). Tenant admins can unblock meeting participants to download meeting recording. For more information, see [block the download of Teams meeting recording files](/MicrosoftTeams/block-download-meeting-recording).
 > * The application permission `OnlineMeetingRecording.Read.Chat` uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 To use application permissions for this API, tenant administrators must create an application access policy and grant it to a user. This authorizes the app configured in the policy to fetch online meetings or online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more information, see [allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
