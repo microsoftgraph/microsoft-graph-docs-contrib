@@ -24,12 +24,24 @@ items:
             href: /resources/gcpauthorizationsystem-get.md
   - name: Azure Authorization System Inventory
     href:
+    items:
+      - name:
+        href:
   - name: AWS Authorization System Inventory
     href:
+    items:
+      - name:
+        href:
   - name: GCP Authorization System Inventory
     href:
+    items:
+      - name:
+        href:
   - name: Permissions on demand
     href:
+    items:
+      - name:
+        href:
   - name: Permissions analytics
     href: /resources/permissionsanalytics.md
     items:
