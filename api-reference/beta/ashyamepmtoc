@@ -1,0 +1,201 @@
+name: Permissions Management 
+items:
+  - name: Overview
+    href: /resources/permissions-management-api-overview.md
+  - name: Authorization systems
+    href: /resources/authorizationsystem.md
+    items:
+      - name: Get
+        href: /resources/authorizationsystem-get.md
+      - name: AWS authorization system
+        href: /resources/awsauthorizationsystem.md
+        items:
+          - name: Get
+            href: /resources/awsauthorizationsystem-get.md
+      - name: Azure authorization system
+        href: /resources/azureauthorizationsystem.md
+        items:
+          - name: Get
+            href: /resources/azureauthorizationsystem-get.md
+      - name: GCP authorization system
+        href: /resources/gcpauthorizationsystem.md
+        items:
+          - name: Get
+            href: /resources/gcpauthorizationsystem-get.md
+  - name: Azure Authorization System Inventory
+    href:
+  - name: AWS Authorization System Inventory
+    href:
+  - name: GCP Authorization System Inventory
+    href:
+  - name: Permissions on demand
+    href:
+  - name: Permissions analytics
+    href: /resources/permissionsanalytics.md
+    items:
+    - name: Identity findings
+      href: /resources/identityfinding.md
+      items:
+        - name: Inactive user
+          href: /resources/inactiveuserfinding.md
+          items:
+            - name: List
+              href: /resources/inactiveuserfinding-list.md
+            - name: Get
+              href: /resources/inactiveuserfinding-get.md
+            - name: Aggregated summary
+              href: /resources/inactiveuserfinding-aggregatedsummary.md
+        - name: Inactive serverless functions
+          href: /resources/inactiveserverlessfunctionfinding.md
+          items:
+            - name: List
+              href: /resources/inactiveserverlessfunctionfinding-list.md
+            - name: Get
+              href: /resources/inactiveserverlessfunctionfinding-get.md
+            - name: Aggregated summary
+              href: /resources/inactiveserverlessfunctionfinding-aggregatedsummary.md
+        - name: Inactive AWS role
+          href: /resources/inactiveawsrolefinding.md
+          items:
+            - name: List
+              href: /resources/inactiveawsrolefinding-list.md
+            - name: Get
+              href: /resources/inactiveawsrolefinding-get.md
+            - name: Aggregated summary
+              href: /resources/inactiveawsrolefinding-aggregatedsummary.md
+        - name: Inactive AWS resource
+          href: /resources/inactiveawsresourcefinding.md
+          items:
+            - name: List
+              href: /resources/inactiveawsresourcefinding-list.md
+            - name: Get
+              href: /resources/inactiveuawsresourcefinding-get.md
+            - name: Aggregated summary
+              href: /resources/inactiveawsresourcefinding-aggregatedsummary.md
+        - name: Inactive Azure service principal
+          href: /resources/inactiveazureserviceprincipalfinding.md
+          items:
+            - name: List
+              href: /resources/inactiveazureserviceprincipalfinding-list.md
+            - name: Get
+              href: /resources/inactiveazureserviceprincipalfinding-get.md
+            - name: Aggregated summary
+              href: /resources/inactiveazureserviceprincipalfinding-aggregatedsummary.md
+        - name: Inactive GCP service account
+          href: /resources/inactivegcpserviceaccountfinding.md
+          items:
+            - name: List
+              href: /resources/inactivegcpserviceaccountfinding-list.md
+            - name: Get
+              href: /resources/inactivegcpserviceaccountfinding-get.md
+            - name: Aggregated summary
+              href: /resources/inactivegcpserviceaccountfinding-aggregatedsummary.md
+        - name: Super user
+          href: /resources/superuserfinding.md
+          items:
+            - name: List
+              href: /resources/superuserfinding-list.md
+            - name: Get
+              href: /resources/superuserfinding-get.md
+            - name: Aggregated summary
+              href: /resources/superuserfinding-aggregatedsummary.md
+        - name: Super serverless functions
+          href: /resources/superserverlessfunctionfinding.md
+          items:
+            - name: List
+              href: /resources/superserverlessfunctionfinding-list.md
+            - name: Get
+              href: /resources/superserverlessfunctionfinding-get.md
+            - name: Aggregated summary
+              href: /resources/superserverlessfunctionfinding-aggregatedsummary.md
+        - name: Super AWS role
+          href: /resources/superawsrolefinding.md
+          items:
+            - name: List
+              href: /resources/superawsrolefinding-list.md
+            - name: Get
+              href: /resources/superawsrolefinding-get.md
+            - name: Aggregated summary
+              href: /resources/superawsrolefinding-aggregatedsummary.md
+        - name: Super AWS resource
+          href: /resources/superawsresourcefinding.md
+          items:
+            - name: List
+              href: /resources/superawsresourcefinding-list.md
+            - name: Get
+              href: /resources/superawsresourcefinding-get.md
+            - name: Aggregated summary
+              href: /resources/superawsresourcefinding-aggregatedsummary.md
+        - name: Super Azure service principal
+          href: /resources/superazureserviceprincipalfinding.md
+          items:
+            - name: List
+              href: /resources/superazureserviceprincipalfinding-list.md
+            - name: Get
+              href: /resources/superazureserviceprincipalfinding-get.md
+            - name: Aggregated summary
+              href: /resources/superazureserviceprincipalfinding-aggregatedsummary.md
+        - name: Super GCP service account
+          href: /resources/supergcpserviceaccountfinding.md
+          items:
+            - name: List
+              href: /resources/supergcpserviceaccountfinding-list.md
+            - name: Get
+              href: /resources/supergcpserviceaccountfinding-get.md
+            - name: Aggregated summary
+              href: /resources/supergcpserviceaccountfinding-aggregatedsummary.md
+        - name: Overprovisioned user
+          href: /resources/overprovisioneduserfinding.md
+          items:
+            - name: List
+              href: /resources/overprovisioneduserfinding-list.md
+            - name: Get
+              href: /resources/overprovisioneduserfinding-get.md
+        - name: Overprovisioned serverless functions
+          href: /resources/overprovisionedserverlessfunctionfinding.md
+          items:
+            - name: List
+              href: /resources/overprovisionedserverlessfunctionfinding-list.md
+            - name: Get
+              href: /resources/overprovisionedserverlessfunctionfinding-get.md
+        - name: Overprovisioned AWS role
+          href: /resources/overprovisionedrawsrolefinding.md
+          items:
+            - name: List
+              href: /resources/overprovisionedawsrolefinding-list.md
+            - name: Get
+              href: /resources/overprovisionedawsrolefinding-get.md
+        - name: Overprovisioned AWS resource
+          href: /resources/overprovisionedawsresourcefinding.md
+          items:
+            - name: List
+              href: /resources/overprovisionedawsresourcefinding-list.md
+            - name: Get
+              href: /resources/overprovisionedawsresourcefinding-get.md
+        - name: Overprovisioned Azure service principal
+          href: /resources/overprovisionedazureserviceprincipalfinding.md
+          items:
+            - name: List
+              href: /resources/overprovisionedazureserviceprincipalfinding-list.md
+            - name: Get
+              href: /resources/overprovisionedazureserviceprincipalfinding-get.md
+        - name: Overprovisioned GCP service account
+          href: /resources/overprovisionedgcpserviceaccountfinding.md
+          items:
+            - name: List
+              href: /resources/overprovisionedgcpserviceaccountfinding-list.md
+            - name: Get
+              href: /resources/overprovisionedgcpserviceaccountfinding-get.md
+        - name: AWS users with unenforced MFA
+          href: /resources/unenforcedmfaawsuserfinding.md
+          items:
+            - name: List
+              href: /resources/unenforcedmfaawsuserfinding-list.md
+            - name: Get
+              href: /resources/unenforcedmfaawsuserfinding-get.md
+            - name: Aggregated summary
+              href: /resources/unenforcedmfaawsuserfinding-aggregatedsummary.md
+    - name: Privilege escalation findings
+      href: /resources/privilegeescalationfinding.md
+      items:
+    - 
