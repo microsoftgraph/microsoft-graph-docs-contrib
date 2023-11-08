@@ -32,11 +32,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /external/authorizationSystems/{id}/graph.awsAuthorizationSystem/services
+GET /external/authorizationSystems/{id}/microsoft.graph.awsAuthorizationSystem/services
 ```
 
 ## Optional query parameters
-This method supports the `$filter` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, `$count`, `$top`, `$expand`, and `$skipToken` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -62,7 +62,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/graph.awsAuthorizationSystem/services
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.awsAuthorizationSystem/services
 ```
 
 
@@ -80,7 +80,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{id}/graph.awsAuthorizationSystem/services",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{id}/microsoft.graph.awsAuthorizationSystem/services",
   "value": [
     {
       "id": "ec2",
@@ -104,7 +104,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/graph.awsAuthorizationSystem/services/ec2?$expand=actions
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.awsAuthorizationSystem/services/ec2?$expand=actions
 ```
 
 
@@ -122,7 +122,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{id}/graph.awsAuthorizationSystem/services/ec2?$expand=actions",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{id}/microsoft.graph.awsAuthorizationSystem/services/ec2?$expand=actions",
   "value": {
     "id": "ec2",
     "actions": [

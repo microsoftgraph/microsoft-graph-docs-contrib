@@ -32,8 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /external/authorizationSystems/{id}/graph.gcpAuthorizationSystem/resources/{resourceId}
-GET /external/authorizationSystems/{id}/graph.gcpAuthorizationSystem/resources(externalId='{externalId}')
+GET /external/authorizationSystems/{id}/microsoft.graph.gcpAuthorizationSystem/resources/{resourceId}
+GET /external/authorizationSystems/{id}/microsoft.graph.gcpAuthorizationSystem/resources(externalId='{externalId}')
 ```
 
 ## Optional query parameters
@@ -61,7 +61,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/graph.gcpAuthorizationSystem/resources/cHJvamVjdHMvaGVsbG8td29ybGQtMjMxMTA3L3pvbmVzL3VzLWNlbnRyYWwxLWEvaW5zdGFuY2VzL2luc3RhbmNlLTE
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.gcpAuthorizationSystem/resources/cHJvamVjdHMvaGVsbG8td29ybGQtMjMxMTA3L3pvbmVzL3VzLWNlbnRyYWwxLWEvaW5zdGFuY2VzL2luc3RhbmNlLTE
 ```
 
 

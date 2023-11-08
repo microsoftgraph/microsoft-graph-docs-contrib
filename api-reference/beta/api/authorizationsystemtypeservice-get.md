@@ -1,18 +1,18 @@
 ---
-title: "Get awsIdentity"
-description: "Read the properties and relationships of an awsIdentity object."
+title: "Get authorizationSystemTypeService"
+description: "Read the properties and relationships of an authorizationSystemTypeService object."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# Get awsIdentity
+# Get authorizationSystemTypeService
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an [awsIdentity](../resources/awsidentity.md) object.
+Read the properties and relationships of an [authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,12 +32,13 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /external/authorizationSystems/{id}/microsoft.graph.awsAuthorizationSystem/associatedIdentities/all/{awsIdentityId}
-GET /external/authorizationSystems/{id}/microsoft.graph.awsAuthorizationSystem/associatedIdentities/all(externalId='{externalId}')
+GET external/authorizationSystems/{id}/microsoft.graph.awsAuthorizationSystem/services/{authorizationSystemTypeServiceId}
+GET external/authorizationSystems/{id}/microsoft.graph.gcpAuthorizationSystem/services/{authorizationSystemTypeServiceId}
+GET external/authorizationSystems/{id}/microsoft.graph.azureAuthorizationSystem/services/{authorizationSystemTypeServiceId}
 ```
 
 ## Optional query parameters
-This method supports the `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -49,7 +50,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an [awsIdentity](../resources/awsidentity.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md) object in the response body.
 
 ## Examples
 
@@ -57,11 +58,11 @@ If successful, this method returns a `200 OK` response code and an [awsIdentity]
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_awsidentity"
+  "name": "get_authorizationsystemtypeservice"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.awsAuthorizationSystem/associatedIdentities/all/YXJuOmF3czppYW06OjEyMzQ1Njc4OTAxMjp1c2VyL2JvYg
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.awsAuthorizationSystem/services/ec2
 ```
 
 
@@ -71,7 +72,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.awsIdentity"
+  "@odata.type": "microsoft.graph.authorizationSystemTypeService"
 }
 -->
 ``` http
@@ -80,16 +81,7 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.awsUser",
-    "id": "YXJuOmF3czppYW06OjEyMzQ1Njc4OTAxMjp1c2VyL2JvYg",
-    "externalId": "arn:aws:iam::123456789012:user/bob",
-    "displayName": "bob smith",
-    "source": {
-      "@odata.type": "#microsoft.graph.awsSource",
-      "accountId": "123456789012",
-      "identityProviderType": "aws"
+      "id": "ec2",
     }
-  }
 }
 ```
-
