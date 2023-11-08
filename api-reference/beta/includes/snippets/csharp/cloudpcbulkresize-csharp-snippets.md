@@ -6,9 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.DeviceManagement.VirtualEndpoint.CloudPCs.BulkResize;
 
-var requestBody = new Microsoft.Graph.Beta.DeviceManagement.VirtualEndpoint.CloudPCs.BulkResize.BulkResizePostRequestBody
+var requestBody = new BulkResizePostRequestBody
 {
 	CloudPcIds = new List<string>
 	{
@@ -17,6 +18,8 @@ var requestBody = new Microsoft.Graph.Beta.DeviceManagement.VirtualEndpoint.Clou
 	},
 	TargetServicePlanId = "662009bc-7732-4f6f-8726-25883518b33e",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.DeviceManagement.VirtualEndpoint.CloudPCs.BulkResize.PostAsync(requestBody);
 
 
