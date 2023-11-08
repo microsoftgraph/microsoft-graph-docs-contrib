@@ -13,7 +13,7 @@ Namespace: microsoft.graph.callRecords
 
 Represents a portion of a User-User communication or a User-Meeting communication
 in the case of a Conference call. A typical VOIP call has one segment per session. In certain
-scenarios, such as PSTN calls, there're multiple segments per session due to additional
+scenarios, such as PSTN calls, there are multiple segments per session due to additional
 server-to-server communication required to connect the call.
 
 ## Methods
