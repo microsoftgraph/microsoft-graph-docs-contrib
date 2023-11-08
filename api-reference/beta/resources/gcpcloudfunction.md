@@ -1,6 +1,6 @@
 ---
 title: "gcpCloudFunction resource type"
-description: "Represents the findings for GCP cloud functions."
+description: "Represents GCP cloud functions."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,15 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the findings for GCP cloud functions.
+Represents GCP cloud functions.
 
 Inherits from [gcpIdentity](../resources/gcpidentity.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List gcpCloudFunctions](../api/gcpcloudfunction-list.md)|[gcpCloudFunction](../resources/gcpcloudfunction.md) collection|Get a list of the [gcpCloudFunction](../resources/gcpcloudfunction.md) objects and their properties.|
-|[Get gcpCloudFunction](../api/gcpcloudfunction-get.md)|[gcpCloudFunction](../resources/gcpcloudfunction.md)|Read the properties and relationships of a [gcpCloudFunction](../resources/gcpcloudfunction.md) object.|
+None.
 
 ## Properties
 |Property|Type|Description|

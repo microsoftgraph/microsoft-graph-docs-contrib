@@ -1,9 +1,9 @@
 ---
 title: "azureSource resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents the source of the Azure identity."
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the source of the Azure identity.
 
 
 Inherits from [authorizationSystemIdentitySource](../resources/authorizationsystemidentitysource.md).
@@ -21,8 +21,8 @@ Inherits from [authorizationSystemIdentitySource](../resources/authorizationsyst
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|identityProviderType|String|**TODO: Add Description** Inherited from [authorizationSystemIdentitySource](../resources/authorizationsystemidentitysource.md).|
-|subscriptionId|String|**TODO: Add Description**|
+|identityProviderType|String|IdP source type. Inherited from [authorizationSystemIdentitySource](../resources/authorizationsystemidentitysource.md).|
+|subscriptionId|String|Azure subscription id.|
 
 ## Relationships
 None.

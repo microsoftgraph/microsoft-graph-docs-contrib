@@ -1,9 +1,9 @@
 ---
 title: "gcpAssociatedIdentities resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Container to represent different kinds of gcp identities."
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Container to represent different kinds of gcp identities.
 
 ## Properties
 |Property|Type|Description|
@@ -22,9 +22,9 @@ Namespace: microsoft.graph
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|all|[gcpIdentity](../resources/gcpidentity.md) collection|**TODO: Add Description**|
-|serviceAccounts|[gcpServiceAccount](../resources/gcpserviceaccount.md) collection|**TODO: Add Description**|
-|users|[gcpUser](../resources/gcpuser.md) collection|**TODO: Add Description**|
+|all|[gcpIdentity](../resources/gcpidentity.md) collection|Get the list of GCP identities.|
+|serviceAccounts|[gcpServiceAccount](../resources/gcpserviceaccount.md) collection|Get the list of GCP service accounts.|
+|users|[gcpUser](../resources/gcpuser.md) collection|Get the list of GCP users.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

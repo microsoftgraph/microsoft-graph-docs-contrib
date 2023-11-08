@@ -1,6 +1,6 @@
 ---
 title: "gcpUser resource type"
-description: "Represents the findings for GCP users."
+description: "Represents GCP users."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the findings for GCP users.
+Represents GCP users.
 
 Inherits from [gcpIdentity](../resources/gcpidentity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List gcpUsers](../api/gcpuser-list.md)|[gcpUser](../resources/gcpuser.md) collection|Get a list of the [gcpUser](../resources/gcpuser.md) objects and their properties.|
+|[List gcpUsers](../api/gcpassociatedidentities-list-users.md)|[gcpUser](../resources/gcpuser.md) collection|Get a list of the [gcpUser](../resources/gcpuser.md) objects and their properties.|
 |[Get gcpUser](../api/gcpuser-get.md)|[gcpUser](../resources/gcpuser.md)|Read the properties and relationships of a [gcpUser](../resources/gcpuser.md) object.|
 
 ## Properties

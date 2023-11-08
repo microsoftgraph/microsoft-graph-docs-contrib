@@ -1,6 +1,6 @@
 ---
 title: "gcpServiceAccount resource type"
-description: "Represents the findings for GCP service accounts."
+description: "Represents GCP service accounts."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the findings for GCP service accounts.
+Represents GCP service accounts.
 
 Inherits from [gcpIdentity](../resources/gcpidentity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List gcpServiceAccounts](../api/gcpserviceaccount-list.md)|[gcpServiceAccount](../resources/gcpserviceaccount.md) collection|Get a list of the [gcpServiceAccount](../resources/gcpserviceaccount.md) objects and their properties.|
+|[List gcpServiceAccounts](../api/gcpassociatedidentities-list-serviceaccounts.md)|[gcpServiceAccount](../resources/gcpserviceaccount.md) collection|Get a list of the [gcpServiceAccount](../resources/gcpserviceaccount.md) objects and their properties.|
 |[Get gcpServiceAccount](../api/gcpserviceaccount-get.md)|[gcpServiceAccount](../resources/gcpserviceaccount.md)|Read the properties and relationships of a [gcpServiceAccount](../resources/gcpserviceaccount.md) object.|
 
 ## Properties

@@ -1,6 +1,6 @@
 ---
 title: "azureUser resource type"
-description: "Represents the findings for Azure users."
+description: "Represents Azure users."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the findings for Azure users.
+Represents Azure users.
 
 Inherits from [azureIdentity](../resources/azureidentity.md).
 

@@ -35,7 +35,7 @@ Inherits from [authorizationSystemTypeAction](../resources/authorizationsystemty
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|service|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md)|**TODO: Add Description**|
+|service|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md)|The service associated with the action in an Azure authorization system. This is auto-expanded.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -56,7 +56,10 @@ The following JSON representation shows the resource type.
     "String"
   ],
   "severity": "String",
-  "actionType": "String"
+  "actionType": "String",
+  "service": {
+    "id": "String"
+  }
 }
 ```
 

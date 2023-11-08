@@ -1,6 +1,6 @@
 ---
 title: "azureGroup resource type"
-description: "Represents the findings for Azure groups."
+description: "Represents Azure groups."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,16 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the findings for Azure groups.
+Represents Azure groups.
 
 
 Inherits from [azureIdentity](../resources/azureidentity.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List azureGroups](../api/azuregroup-list.md)|[azureGroup](../resources/azuregroup.md) collection|Get a list of the [azureGroup](../resources/azuregroup.md) objects and their properties.|
-|[Get azureGroup](../api/azuregroup-get.md)|[azureGroup](../resources/azuregroup.md)|Read the properties and relationships of an [azureGroup](../resources/azuregroup.md) object.|
+None.
 
 ## Properties
 |Property|Type|Description|

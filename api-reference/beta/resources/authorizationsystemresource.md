@@ -13,15 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a resource in an authorization system.
+Represents a resource in an authorization system that you've onboarded to Permissions Management. The following resource types are derived from this base type: [awsAuthorizationSystemResource](), [azureAuthorizationSystemResource](), and [gcpAuthorizationSystemResource]().
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List authorizationSystemResources](../api/authorizationsystemresource-list.md)|[authorizationSystemResource](../resources/authorizationsystemresource.md) collection|List all resources for a specific authorization system.|
-|[Get authorizationSystemResource](../api/authorizationsystemresource-get.md)|[authorizationSystemResource](../resources/authorizationsystemresource.md)|Get a single resource in an authorization system.|
+None.
 
 ## Properties
 |Property|Type|Description|
@@ -34,7 +31,7 @@ Inherits from [entity](../resources/entity.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|authorizationSystem|[authorizationSystem](../resources/authorizationsystem.md)|The authorization system that the resource is in.|
+|authorizationSystem|[authorizationSystem](../resources/authorizationsystem.md)|The authorization system that the resource exists in.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

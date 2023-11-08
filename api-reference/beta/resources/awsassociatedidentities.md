@@ -1,9 +1,9 @@
 ---
 title: "awsAssociatedIdentities resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents different kinds of AWS identities"
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents different kinds of AWS identities. Derives from [associatedIdentities]().
 
 ## Properties
 |Property|Type|Description|
@@ -22,9 +22,9 @@ Namespace: microsoft.graph
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|all|[awsIdentity](../resources/awsidentity.md) collection|**TODO: Add Description**|
-|roles|[awsRole](../resources/awsrole.md) collection|**TODO: Add Description**|
-|users|[awsUser](../resources/awsuser.md) collection|**TODO: Add Description**|
+|all|[awsIdentity](../resources/awsidentity.md) collection|Get list of all AWS identities|
+|roles|[awsRole](../resources/awsrole.md) collection|Get list of AWS roles|
+|users|[awsUser](../resources/awsuser.md) collection|Get list of AWS users|
 
 ## JSON representation
 The following JSON representation shows the resource type.

@@ -1,6 +1,6 @@
 ---
 title: "awsLambda resource type"
-description: "Represents the findings for AWS lambda functions."
+description: "Represents AWS lambda functions."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,16 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the findings for AWS lambda functions.
+Represents AWS lambda functions.
 
 
 Inherits from [awsIdentity](../resources/awsidentity.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List awsLambdas](../api/awslambda-list.md)|[awsLambda](../resources/awslambda.md) collection|Get a list of the [awsLambda](../resources/awslambda.md) objects and their properties.|
-|[Get awsLambda](../api/awslambda-get.md)|[awsLambda](../resources/awslambda.md)|Read the properties and relationships of an [awsLambda](../resources/awslambda.md) object.|
+None.
 
 ## Properties
 |Property|Type|Description|

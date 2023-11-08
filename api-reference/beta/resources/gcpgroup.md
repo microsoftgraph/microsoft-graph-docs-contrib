@@ -1,6 +1,6 @@
 ---
 title: "gcpGroup resource type"
-description: "Represents the findings for GCP groups."
+description: "Represents GCP groups."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,16 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the findings for GCP groups.
+Represents GCP groups.
 
 
 Inherits from [gcpIdentity](../resources/gcpidentity.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List gcpGroups](../api/gcpgroup-list.md)|[gcpGroup](../resources/gcpgroup.md) collection|Get a list of the [gcpGroup](../resources/gcpgroup.md) objects and their properties.|
-|[Get gcpGroup](../api/gcpgroup-get.md)|[gcpGroup](../resources/gcpgroup.md)|Read the properties and relationships of a [gcpGroup](../resources/gcpgroup.md) object.|
+None.
 
 ## Properties
 |Property|Type|Description|

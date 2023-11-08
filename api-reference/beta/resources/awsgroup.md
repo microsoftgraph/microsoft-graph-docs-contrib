@@ -1,6 +1,6 @@
 ---
 title: "awsGroup resource type"
-description: "Represents the findings for groups in AWS."
+description: "Represents groups in AWS."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,16 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the findings for groups in AWS.
+Represents groups in AWS.
 
 
 Inherits from [awsIdentity](../resources/awsidentity.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List awsGroups](../api/awsgroup-list.md)|[awsGroup](../resources/awsgroup.md) collection|Get a list of the [awsGroup](../resources/awsgroup.md) objects and their properties.|
-|[Get awsGroup](../api/awsgroup-get.md)|[awsGroup](../resources/awsgroup.md)|Read the properties and relationships of an [awsGroup](../resources/awsgroup.md) object.|
+None.
 
 ## Properties
 |Property|Type|Description|

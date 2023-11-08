@@ -1,6 +1,6 @@
 ---
 title: "awsEc2Instance resource type"
-description: "Represents the findings for AWS EC2 instances"
+description: "Represents AWS EC2 instances"
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,16 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the findings for AWS EC2 instances
+Represents AWS EC2 instances
 
 
 Inherits from [awsIdentity](../resources/awsidentity.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List awsEc2Instance](../api/awsec2instance-list.md)|[awsEc2Instance](../resources/awsec2instance.md) collection|Get a list of the [awsEc2Instance](../resources/awsec2instance.md) objects and their properties.|
-|[Get awsEc2Instance](../api/awsec2instance-get.md)|[awsEc2Instance](../resources/awsec2instance.md)|Read the properties and relationships of an [awsEc2Instance](../resources/awsec2instance.md) object.|
+None.
 
 ## Properties
 |Property|Type|Description|

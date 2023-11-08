@@ -18,10 +18,7 @@ Represents the findings for Azure serverless functions.
 Inherits from [azureIdentity](../resources/azureidentity.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List azureServerlessFunctions](../api/azureserverlessfunction-list.md)|[azureServerlessFunction](../resources/azureserverlessfunction.md) collection|Get a list of the [azureServerlessFunction](../resources/azureserverlessfunction.md) objects and their properties.|
-|[Get azureServerlessFunction](../api/azureserverlessfunction-get.md)|[azureServerlessFunction](../resources/azureserverlessfunction.md)|Read the properties and relationships of an [azureServerlessFunction](../resources/azureserverlessfunction.md) object.|
+None.
 
 
 ## Properties

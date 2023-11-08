@@ -35,7 +35,7 @@ Inherits from [authorizationSystemResource](../resources/authorizationsystemreso
 |Relationship|Type|Description|
 |:---|:---|:---|
 |authorizationSystem|[authorizationSystem](../resources/authorizationsystem.md)|The authorization system that the resource is in. Inherited from [microsoft.graph.authorizationSystemResource](../resources/authorizationsystemresource.md)|
-|service|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md)|The service associated with the resource in an Azure authorization system.|
+|service|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md)|The service associated with the resource in an Azure authorization system. This is auto-expanded.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -53,7 +53,10 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)",
   "externalId": "String",
   "displayName": "String",
-  "resourceType": "String"
+  "resourceType": "String",
+  "service": {
+    "id": "String"
+  }
 }
 ```
 

@@ -1,6 +1,6 @@
 ---
 title: "awsUser resource type"
-description: "Represents the findings for AWS users."
+description: "Represents AWS users."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,14 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the findings for AWS users.
+Represents AWS users.
 
 Inherits from [awsIdentity](../resources/awsidentity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get awsUser](../api/awsuser-get.md)|[awsUser](../resources/awsuser.md)|Read the properties and relationships of an [awsUser](../resources/awsuser.md) object.|
+|[List AWS Users](../api/awsassociatedidentities-list-users.md)|[awsUser](../resources/awsuser.md)|Read the properties and relationships of an [awsUser](../resources/awsuser.md) object.|
+|[Get AWS User](../api/awsuser-get.md)|[awsUser](../resources/awsuser.md)|Read the properties and relationships of an [awsUser](../resources/awsuser.md) object.|
 
 ## Properties
 |Property|Type|Description|

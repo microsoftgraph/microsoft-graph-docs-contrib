@@ -28,14 +28,14 @@ Inherits from [authorizationSystemResource](../resources/authorizationsystemreso
 |:---|:---|:---|
 |displayName|String|The name of the resource. Read-only. Inherited from [authorizationSystemResource](../resources/authorizationsystemresource.md).|
 |externalId|String|The id of the resource as defined by the authorization system provider. Read-only. Inherited from [authorizationSystemResource](../resources/authorizationsystemresource.md).|
-|id|String|The unique encoded identifier of the resource. Inherited from [entity](../resources/entity.md). Read-only.|
+|id|String|The unique encoded identifier of the resource.  Read-only. Inherited from [entity](../resources/entity.md).|
 |resourceType|String|The type of the resource. Read-only. Inherited from [authorizationSystemResource](../resources/authorizationsystemresource.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
 |authorizationSystem|[authorizationSystem](../resources/authorizationsystem.md)|The authorization system that the resource is in. Inherited from [microsoft.graph.authorizationSystemResource](../resources/authorizationsystemresource.md)|
-|service|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md)|The service associated with the resource in an AWS authorization system.|
+|service|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md)|The service associated with the resource in an AWS authorization system. This is auto-expanded.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -53,7 +53,10 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)",
   "externalId": "String",
   "displayName": "String",
-  "resourceType": "String"
+  "resourceType": "String",
+  "service": {
+    "id": "String (identifier)"
+  }
 }
 ```
 

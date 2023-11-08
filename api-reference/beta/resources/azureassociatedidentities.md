@@ -1,9 +1,9 @@
 ---
 title: "azureAssociatedIdentities resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Container to represent different kinds of azure identities"
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Container to represent different kinds of azure identities
 
 ## Properties
 |Property|Type|Description|
@@ -22,10 +22,10 @@ Namespace: microsoft.graph
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|all|[azureIdentity](../resources/azureidentity.md) collection|**TODO: Add Description**|
-|managedIdentities|[azureManagedIdentity](../resources/azuremanagedidentity.md) collection|**TODO: Add Description**|
-|servicePrincipals|[azureServicePrincipal](../resources/azureserviceprincipal.md) collection|**TODO: Add Description**|
-|users|[azureUser](../resources/azureuser.md) collection|**TODO: Add Description**|
+|all|[azureIdentity](../resources/azureidentity.md) collection|Get the list of azure identities.|
+|managedIdentities|[azureManagedIdentity](../resources/azuremanagedidentity.md) collection|Get the list of azure managed identities.|
+|servicePrincipals|[azureServicePrincipal](../resources/azureserviceprincipal.md) collection|Get the list of azure service principals.|
+|users|[azureUser](../resources/azureuser.md) collection|Get the list of azure users.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

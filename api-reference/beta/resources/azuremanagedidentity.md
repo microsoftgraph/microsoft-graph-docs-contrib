@@ -1,6 +1,6 @@
 ---
 title: "azureManagedIdentity resource type"
-description: "Represents the findings for Azure managed identities."
+description: "Represents Azure managed identities."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the findings for Azure managed identities.
+Represents Azure managed identities.
 
 Inherits from [azureIdentity](../resources/azureidentity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List azureManagedIdentities](../api/azuremanagedidentity-list.md)|[azureManagedIdentity](../resources/azuremanagedidentity.md) collection|Get a list of the [azureManagedIdentity](../resources/azuremanagedidentity.md) objects and their properties.|
+|[List azureManagedIdentities](../api/azureassociatedidentities-list-managedidentities.md)|[azureManagedIdentity](../resources/azuremanagedidentity.md) collection|Get a list of the [azureManagedIdentity](../resources/azuremanagedidentity.md) objects and their properties.|
 |[Get azureManagedIdentity](../api/azuremanagedidentity-get.md)|[azureManagedIdentity](../resources/azuremanagedidentity.md)|Read the properties and relationships of an [azureManagedIdentity](../resources/azuremanagedidentity.md) object.|
 
 ## Properties

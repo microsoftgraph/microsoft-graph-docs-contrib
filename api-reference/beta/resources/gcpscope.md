@@ -1,9 +1,9 @@
 ---
 title: "gcpScope resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents the service and resource type of a GCP resource"
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
@@ -13,17 +13,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the service and resource type of a GCP resource. e.g. compute instance resource has service: compute and resourceType: instances.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|resourceType|String|**TODO: Add Description**|
+|resourceType|String|Type of GCP resource.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|service|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md)|**TODO: Add Description**|
+|service|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md)|Service associated with a resource in an authorization system. This is auto-expanded.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -35,7 +35,10 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.gcpScope",
-  "resourceType": "String"
+  "resourceType": "String",
+  "service": {
+    "id": "String"
+  }
 }
 ```
 
