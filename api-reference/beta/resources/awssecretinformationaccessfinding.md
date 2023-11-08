@@ -18,11 +18,7 @@ Represents findings for identities who can access secret information.
 Inherits from [finding](../resources/finding.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List awsSecretInformationAccessFindings](../api/awssecretinformationaccessfinding-list.md)|[awsSecretInformationAccessFinding](../resources/awssecretinformationaccessfinding.md) collection|Get a list of the [awsSecretInformationAccessFinding](../resources/awssecretinformationaccessfinding.md) objects and their properties.|
-|[Get awsSecretInformationAccessFinding](../api/awssecretinformationaccessfinding-get.md)|[awsSecretInformationAccessFinding](../resources/awssecretinformationaccessfinding.md)|Read the properties and relationships of an [awsSecretInformationAccessFinding](../resources/awssecretinformationaccessfinding.md) object.|
-
+None.
 
 ## Properties
 |Property|Type|Description|

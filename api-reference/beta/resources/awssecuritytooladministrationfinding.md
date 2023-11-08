@@ -18,10 +18,7 @@ Represents findings for identities with privileges to modify settings of securit
 Inherits from [finding](../resources/finding.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List awsSecurityToolAdministrationFindings](../api/awssecuritytooladministrationfinding-list.md)|[awsSecurityToolAdministrationFinding](../resources/awssecuritytooladministrationfinding.md) collection|Get a list of the [awsSecurityToolAdministrationFinding](../resources/awssecuritytooladministrationfinding.md) objects and their properties.|
-|[Get awsSecurityToolAdministrationFinding](../api/awssecuritytooladministrationfinding-get.md)|[awsSecurityToolAdministrationFinding](../resources/awssecuritytooladministrationfinding.md)|Read the properties and relationships of an [awsSecurityToolAdministrationFinding](../resources/awssecuritytooladministrationfinding.md) object.|
+None.
 
 
 ## Properties

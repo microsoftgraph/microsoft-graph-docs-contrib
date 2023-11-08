@@ -40,7 +40,6 @@ The following resources inherit from this resource type:
 - [superuserfinding](../resources/superuserfinding.md)
 
 ## Methods
-
 None.
 
 ## Properties
