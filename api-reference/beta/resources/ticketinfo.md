@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents ticketing related metadata that can be used to correlate to a scheduled permissions request.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|ticketApproverIdentityId|String|**TODO: Add Description**|
-|ticketNumber|String|**TODO: Add Description**|
-|ticketSubmitterIdentityId|String|**TODO: Add Description**|
-|ticketSystem|String|**TODO: Add Description**|
+|ticketApproverIdentityId|String|Identity id of the approver.|
+|ticketNumber|String|The ticket number.|
+|ticketSubmitterIdentityId|String|Identity id of the submitter.|
+|ticketSystem|String|The ticket system.|
 
 ## Relationships
 None.
