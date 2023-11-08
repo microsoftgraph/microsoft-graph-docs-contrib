@@ -188,6 +188,11 @@ Namespace: microsoft.graph
 | managedIdentity             |
 | overprivilegedApps          |
 | unknownFutureValue          |
+| longLivedCredentials        |
+| aadConnectDeprecated        |
+| adalToMsalMigration         |
+| ownerlessApps               |
+| inactiveGuests              |
 
 ### layoutTemplateType values
 
@@ -1367,6 +1372,17 @@ Namespace: microsoft.graph
 | :------ |
 | normal  |
 | weak    |
+| unknown |
+
+### authenticationMethodPlatform values
+
+| Member  |
+| :------ |
+| windows |
+| macOS   |
+| iOS     |
+| android |
+| linux   |
 | unknown |
 
 ### authenticationContextDetail values
@@ -4258,4 +4274,16 @@ Possible values for user account types (group membership), per Windows definitio
 |user|
 |servicePrincipal|
 |group|
+|unknownFutureValue|
+
+### b2bIdentityProvidersType values
+
+|Member|
+|:-----|
+|azureActiveDirectory|
+|externalFederation|
+|socialIdentityProviders|
+|emailOneTimePasscode|
+|microsoftAccount|
+|defaultConfiguredIdp|
 |unknownFutureValue|
