@@ -72,7 +72,7 @@ The following example shows a request to get the list of [participants](../resou
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/communications/callRecords/{id}/participants_v2
+GET https://graph.microsoft.com/beta/communications/callRecords/614e3ff0-4728-4394-8c03-52fb3b967fde/participants_v2
 ```
 
 ### Response

@@ -74,7 +74,7 @@ Here's an example of the request to get the list of [sessions](../resources/call
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/communications/callRecords/{id}/sessions
+GET https://graph.microsoft.com/beta/communications/callRecords/e523d2ed-2966-4b6b-925b-754a88034cc5/sessions
 ```
 
 #### Response
@@ -189,7 +189,7 @@ Here's an example of the request to get the list of [sessions](../resources/call
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/communications/callRecords/{id}/sessions?$expand=segments
+GET https://graph.microsoft.com/beta/communications/callRecords/e523d2ed-2966-4b6b-925b-754a88034cc5/sessions?$expand=segments
 ```
 
 #### Response

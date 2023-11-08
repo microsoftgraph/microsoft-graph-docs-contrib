@@ -83,7 +83,7 @@ The following is an example of the request to get the basic details from a [call
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/communications/callRecords/{id}
+GET https://graph.microsoft.com/beta/communications/callRecords/e523d2ed-2966-4b6b-925b-754a88034cc5
 ```
 
 #### Response
@@ -163,7 +163,7 @@ The following is an example of the request to get the full session and segment d
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/communications/callRecords/{id}?$expand=sessions($expand=segments)
+GET https://graph.microsoft.com/beta/communications/callRecords/e523d2ed-2966-4b6b-925b-754a88034cc5?$expand=sessions($expand=segments)
 ```
 
 #### Response
@@ -483,7 +483,7 @@ The following is an example of a request to expand the full paginated participan
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/communications/callRecords/{id}?$expand=participants_v2
+GET https://graph.microsoft.com/beta/communications/callRecords/e523d2ed-2966-4b6b-925b-754a88034cc5?$expand=participants_v2
 ```
 
 #### Response
