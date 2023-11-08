@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.superAwsResourceFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings('id')/graph.superAwsResourceFinding
 ```
 
 ## Optional query parameters
@@ -62,7 +62,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.superAwsResourceFinding
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings('c3VwZXJSZXNvdXJjZUZpbmRpbmc0')/graph.superAwsResourceFinding
 ```
 
 

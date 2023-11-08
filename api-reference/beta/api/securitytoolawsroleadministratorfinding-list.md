@@ -73,34 +73,45 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-Type: application/json
+Content-type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaevan_schema/$metadata#identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.securityToolAwsRoleAdministratorFinding/$entity",
-    "id": "MSxTZWN1cml0eVRvb2xBd3NSb2xlQWRtaW5pc3RyYXRvckZpbmRpbmcsNDAyNDE",
-    "createdDateTime": "2023-10-25T19:48:41.223948Z",
-    "securityTools": "macie,wafShield,cloudTrail,inspector,securityHub,detective,guardDuty",
-    "permissionsCreepIndex": {
-        "score": 93
-    },
-    "identity": {
-        "@odata.type": "#microsoft.graph.awsRole",
-        "id": "YXJuOmF3czppYW06OjM3NzU5NjEzMTc3NDpyb2xlL29rdGEtYWRtaW4",
-        "externalId": "arn:aws:iam::377596131774:role/okta-admin",
-        "displayName": "okta-admin",
-        "source": {
-            "@odata.type": "#microsoft.graph.awsSource",
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.securityToolAwsRoleAdministratorFinding",
+  "value": [
+      {
+        "@odata.type": "graph.securityToolAwsRoleAdministratorFinding",
+        "id": "YXdzU2VjdXJpdHlUb29sQWRtaW5pc3RyYXRpb25GaW5kaW5nMw",
+        "identity": {
+          "@odata.type": "graph.awsRole",
+          "id": "YXJuOmF3czppYW06Ojk1Njk4Nzg4NzczNTpyb2xlL3hhLTJlZGVtb3Byb2QtZmE=",
+          "externalId": "arn:aws:iam::956987887735:role/xa-2edemoprod-fa",
+          "displayName": "xa-2edemoprod-fa",
+          "source": {
+            "@odata.type": "graph.awsSource",
             "identityProviderType": "aws",
-            "accountId": "377596131774"
+            "accountId": "956987887735"
+          },
+          "authorizationSystem": {
+            "@odata.type": "graph.awsAuthorizationSystem",
+            "id": "{Id}",
+            "authorizationSystemId": "956987887735",
+            "authorizationSystemName": "cloudknox-development",
+            "authorizationSystemType": "aws"
+          }
         },
-        "authorizationSystem": {
-            "@odata.type": "#microsoft.graph.awsAuthorizationSystem",
-            "authorizationSystemId": "377596131774",
-            "authorizationSystemName": "cloudknox-staging",
-            "authorizationSystemType": "aws",
-            "id": "MSxhd3MsMzc3NTk2MTMxNzc0"
+        "securityTools": "inspector, securityHub, detective",
+        "permissionsCreepIndex": {
+          "score": 100
+        },
+        "createdDateTime": "2020-10-11T20:11:45.6711Z",
+        "identityDetails": {
+          "createdDateTime": "2020-04-12T20:34:24Z",
+          "lastActiveDateTime": "2020-10-30T03:21:05Z"
         }
-    }
+      },
+
+  ]
 }
+
 ```
 

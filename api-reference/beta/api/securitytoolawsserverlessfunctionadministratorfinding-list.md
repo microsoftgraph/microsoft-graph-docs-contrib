@@ -76,31 +76,42 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaevan_schema/$metadata#identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.securityToolAwsServerlessFunctionAdministratorFinding/$entity",
-    "id": "MSxTZWN1cml0eVRvb2xBd3NTZXJ2ZXJsZXNzRnVuY3Rpb25BZG1pbmlzdHJhdG9yRmluZGluZyw1MDA2",
-    "createdDateTime": "2023-10-25T19:49:40.33157Z",
-    "securityTools": "macie,wafShield,cloudTrail,inspector,securityHub,detective,guardDuty",
-    "permissionsCreepIndex": {
-        "score": 98
-    },
-    "identity": {
-        "@odata.type": "#microsoft.graph.awsLambda",
-        "id": "YXJuOmF3czpsYW1iZGE6dXMtd2VzdC0yOjk1Njk4Nzg4NzczNTpmdW5jdGlvbjp0ZXN0U3VwZXJJZExhbWJkYQ",
-        "externalId": "arn:aws:lambda:us-west-2:956987887735:function:testSuperIdLambda",
-        "displayName": "testSuperIdLambda",
-        "source": {
-            "@odata.type": "#microsoft.graph.awsSource",
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.securityToolAwsServerlessFunctionAdministratorFinding",
+  "value": [
+      {
+      "@odata.type": "graph.securityToolAwsServerlessFunctionAdministratorFinding",
+      "id": "YXdzU2VjdXJpdHlUb29sQWRtaW5pc3RyYXRpb25GaW5kaW5nNQ",
+      "identity": {
+          "@odata.type": "graph.awsLambda",
+          "id": "YXJuOmF3czpsYW1iZGE6dXMtd2VzdC0yOjM3NzU5NjEzMTc3NDpmdW5jdGlvbjphbm90aGVyQWRtaW5GdWN0aW9u",
+          "externalId": "arn:aws:lambda:us-west-2:377596131774:function:anotherAdminFuction",
+          "displayName": "anotherAdminFuction",
+          "source": {
+            "@odata.type": "graph.awsSource",
             "identityProviderType": "aws",
-            "accountId": "956987887735"
-        },
-        "authorizationSystem": {
-            "@odata.type": "#microsoft.graph.awsAuthorizationSystem",
-            "authorizationSystemId": "956987887735",
-            "authorizationSystemName": "ck-development",
-            "authorizationSystemType": "aws",
-            "id": "MSxhd3MsOTU2OTg3ODg3NzM1"
-        }
-    }
+            "accountId": "377596131774"
+          },
+          "authorizationSystem": {
+            "@odata.type": "graph.awsAuthorizationSystem",
+            "id": "{Id}",
+            "authorizationSystemId": "377596131774",
+            "authorizationSystemName": "cloudknox-staging",
+            "authorizationSystemType": "aws"
+          }
+      },
+      "securityTools": "cloudTrail, inspector, securityHub",
+      "permissionsCreepIndex": {
+        "score": 95
+      },
+      "createdDateTime": "2020-10-11T20:11:45.6711Z",
+      "identityDetails": {
+        "createdDateTime": "2020-04-12T20:34:24Z",
+        "lastActiveDateTime": "2020-10-30T03:21:05Z"
+      }
+    },
+
+  ]
 }
+
 ```
 

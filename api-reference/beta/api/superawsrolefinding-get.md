@@ -64,7 +64,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.superAwsRoleFinding
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings('c3VwZXJSb2xlRmluZGluZzI')/graph.superAwsRoleFinding
 ```
 
 ### Response
