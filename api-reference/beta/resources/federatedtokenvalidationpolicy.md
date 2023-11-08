@@ -7,76 +7,59 @@ ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
-# federatedTokenValidationPolicy resource type (Preview)
+# federatedTokenValidationPolicy resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Represents a policy to control enabling or disabling validation of federation authentication tokens, thereby matching an on-premises federated account and a mapped Microsoft Entra ID account's root domain. When enabled, Microsoft Entra ID rejects an authentication request if the on-premises federated account and the mapped Microsoft Entra ID account's root domain don't match.
 Represents a policy to control enabling/disabling federation token auth validation - matching on-premises federated account and mapped Microsoft Entra ID account's root domains. When enabled Microsoft Entra ID rejects auth request if on-premises federated account and mapped Microsoft Entra ID account's root domains don't match.
 
-## Scenarios
+Inherits from [directoryObject](../resources/directoryobject.md).
 
-### Reject auth request if on-premises federated account and mapped Microsoft Entra ID account's root domains don't match
+## Methods
 
-This new policy allows the admin to control the federated token validation behavior. When enabled Microsoft Entra ID rejects auth request if on-premises federated account and mapped Microsoft Entra ID account's root domains don't match.
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List federatedTokenValidationPolicies](../api/policyroot-list-federatedtokenvalidationpolicy.md)|[federatedTokenValidationPolicy](../resources/federatedtokenvalidationpolicy.md) collection|Get a list of the [federatedTokenValidationPolicy](../resources/federatedtokenvalidationpolicy.md) objects and their properties.|
+|[Create federatedTokenValidationPolicy](../api/policyroot-post-federatedtokenvalidationpolicy.md)|[federatedTokenValidationPolicy](../resources/federatedtokenvalidationpolicy.md)|Create a new [federatedTokenValidationPolicy](../resources/federatedtokenvalidationpolicy.md) object.|
+|[Get federatedTokenValidationPolicy](../api/federatedtokenvalidationpolicy-get.md)|[federatedTokenValidationPolicy](../resources/federatedtokenvalidationpolicy.md)|Read the properties and relationships of a [federatedTokenValidationPolicy](../resources/federatedtokenvalidationpolicy.md) object.|
+|[Update federatedTokenValidationPolicy](../api/federatedtokenvalidationpolicy-update.md)|[federatedTokenValidationPolicy](../resources/federatedtokenvalidationpolicy.md)|Update the properties of a [federatedTokenValidationPolicy](../resources/federatedtokenvalidationpolicy.md) object.|
+|[Delete federatedTokenValidationPolicy](../api/policyroot-delete-federatedtokenvalidationpolicy.md)|None|Delete a [federatedTokenValidationPolicy](../resources/federatedtokenvalidationpolicy.md) object.|
+|[checkMemberGroups](../api/federatedtokenvalidationpolicy-checkmembergroups.md)|String collection|Check for membership in a specified list of groups, and return from that list those groups of which the specified user, group, service principal, organizational contact, or directory object is a member. The check is transitive.|
+|[checkMemberObjects](../api/federatedtokenvalidationpolicy-checkmemberobjects.md)|String collection|Check for membership in a list of group, administrative units, or directory roles for the specified user, group, device, organizational contact, or directory object. This method is transitive.|
+|[getMemberGroups](../api/federatedtokenvalidationpolicy-getmembergroups.md)|String collection|Return all groups that the user, group, service principal, organizational contact, device, or directory object is a member of. The check is transitive.|
+|[getMemberObjects](../api/federatedtokenvalidationpolicy-getmemberobjects.md)|String collection|Return all groups, administrative units, and directory roles that the user, group, device, organizational contact, or directory object is a member of. The check is transitive.|
+|[restore](../api/federatedtokenvalidationpolicy-restore.md)|[directoryObject](../resources/directoryobject.md)|**TODO: Add Description**|
 
-The APIs allows administrators to:
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+|deletedDateTime|DateTimeOffset|Date and time when this object was deleted. Always `null` when the object hasn't been deleted. Inherited from [directoryObject](../resources/directoryobject.md).|
+|id|String|The unique identifier for the object. For example, 12345678-9abc-def0-1234-56789abcde. The value of the **id** property is often but not exclusively in the form of a GUID; treat it as an opaque identifier and do not rely on it being a GUID. Key. Not nullable. Read-only. Inherited from [directoryObject](../resources/directoryobject.md).|
+|validatingDomains|[validatingDomains](../resources/validatingdomains.md)|Verified Microsoft Entra ID domains for which Microsoft Entra validates that federated account's root domain matches with mapped Microsoft Entra account's root domain.|
 
-1. Update the user verified root domains in Microsoft Entra ID for which the new token validation is applied.
-2. Get the user verified domains in Microsoft Entra ID for which the new validation is enabled.
+## Relationships
+None.
 
-#### Properties
-
-| Property | Type | Description | Key | Required | ReadOnly |
-| :-- | :-- | :-- | :-- | :-- | :-- |
-| `validatingDomains` | `microsoft.graph.validatingDomains` | Verified Microsoft Entra ID domains for which Microsoft Entra ID validates that federated account's root domain matches with mapped Microsoft Entra ID account's root domain. | Yes | Yes | No |
-
-## New complex types
-
-### validatingDomains
-
-An abstract complex type that defines verified root domains for which Microsoft Entra ID validates whether federated account's root domain matches with mapped Microsoft Entra ID account's root domain.
-
-#### Sub-Properties
-
-| Property | Type | Description | Required | ReadOnly |
-| :-- | :-- | :-- | :-- | :-- |
-| `rootDomains` | `graph.rootDomains` | Defines whether the validation applies to 'all','all federated','all managed','enumerated','all managed+enumerated' or 'no' domains. | Yes | No |
-
-### allDomains
-
-A derived complex type, which defines that Microsoft Entra ID performs validation for all root domains if root domain is 'all' or for all managed if root domain is 'allManaged' or for all Federated if root domain is 'allFederated' or for none if root domain is 'none'.
-When enabled, Microsoft Entra ID validates whether federated account's root domain matches with mapped Microsoft Entra ID account's root domain.
-
-### enumeratedDomains
-
-A derived complex type, which defines that Microsoft Entra ID performs validation for all specified Azure AD domains if root domain is 'enumerated' or for all managed and specified Azure AD domains if root domain is 'allManagedAndEnumeratedFederated'.
-When enabled, Microsoft Entra ID validates whether federated account's root domain matches with mapped Microsoft Entra ID account's root domain.
-
-#### Sub-Properties
-
-| Property | Type | Description | Required | ReadOnly |
-| :-- | :-- | :-- | :-- | :-- |
-| `domainNames` | `Collection(Edm.String)` | List of federated and/or managed root domains for which Microsoft Entra ID performs the validation. | Yes | No |
-
-## Error conditions and messages
-
-| Scenario | Method | Code | Message |
-| :-- | :-- | :-- | :-- |
-| User or application does not have the appropriate permission scope.  | All | 403 | Your account doesn't have access to this data. Contact your Global Administrator to request access.           |
-| User or application provides invalid user root domains as the input. | PUT | 204/201 | You can only assign this policy to verified root domains. The list you provided contains one or more invalid domains. |
-
-## JSON Representation
-
-JSON representation of the resource:
-
-```json
+## JSON representation
+The following is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.federatedTokenValidationPolicy",
+  "baseType": "Microsoft.DirectoryServices.directoryObject",
+  "openType": false
+}
+-->
+``` json
 {
-"validatingDomains": {
-      "@odata.type":"String",
-      "rootDomains": "String",
-      "domainNames": ["String"]
+  "@odata.type": "#microsoft.graph.federatedTokenValidationPolicy",
+  "id": "String (identifier)",
+  "deletedDateTime": "String (timestamp)",
+  "validatingDomains": {
+    "@odata.type": "microsoft.graph.validatingDomains"
   }
 }
 ```
