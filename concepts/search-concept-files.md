@@ -501,8 +501,7 @@ Content-Type: application/json
 
 - When searching for **drive**, you need to include in the **queryString** a term contained in the name of the document library. Querying `*` is not supported and does not return all available drives.
 
-- The search API doesn't support the site-level [search schema](/sharepoint/manage-search-schema), please use tenant-level or out-of-the-box (OOTB)
-[search schema](/sharepoint/manage-search-schema).
+- The search API doesn't support the site-level [search schema](/sharepoint/manage-search-schema), please use tenant-level or out-of-the-box (OOTB) [search schema](/sharepoint/manage-search-schema).
 
 ## Next steps
 
