@@ -19,8 +19,8 @@ Represents a single peer-to-peer call or a group call between multiple participa
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get callRecord](../api/callrecords-callrecord-get.md) | [microsoft.graph.callRecords.callRecord](callrecords-callrecord.md) | Read the properties and relationships of a **callRecord** object. |
 | [List callRecord](../api/callrecords-callrecord-list.md) | [microsoft.graph.callRecords.callRecord](callrecords-callrecord.md) collection | Get a list of [callRecord](../resources/callrecords-callrecord.md) objects and their properties. |
+| [Get callRecord](../api/callrecords-callrecord-get.md) | [microsoft.graph.callRecords.callRecord](callrecords-callrecord.md) | Read the properties and relationships of a **callRecord** object. |
 | [getPstnCalls](../api/callrecords-callrecord-getpstncalls.md) | [microsoft.graph.callRecords.pstnCallLogRow](callrecords-pstncalllogrow.md) collection | List **pstnCallLogRow** objects in a call record. |
 | [getDirectRoutingCalls](../api/callrecords-callrecord-getdirectroutingcalls.md) | [microsoft.graph.callRecords.directRoutingLogRow](callrecords-directroutinglogrow.md) collection| List **directRoutingLogRow** objects for a call record. |
 | [getPstnBlockedUsersLog](../api/callrecords-callrecord-getpstnblockeduserslog.md) | [microsoft.graph.callRecords.pstnBlockedUsersLogRow](callrecords-pstnblockeduserslogrow.md) collection| Get the log of users who are blocked/unblocked from making public switched telephone network (PSTN) calls in Microsoft Teams as a collection of **pstnBlockedUsersLogRow** entries. |
