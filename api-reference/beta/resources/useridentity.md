@@ -42,7 +42,7 @@ The following JSON representation shows the resource type.
 {
   "displayName": "String",
   "id": "String (identifier)",
-  "ipAddress": "string"
+  "ipAddress": "String",
   "userPrincipalName": "String"
 }
 ```
