@@ -96,9 +96,10 @@ Content-Type: application/json
             "displayName": "cloudknox-staging",
             "authorizationSystemType": "aws"
           }
-    "createdDateTime": "2020-10-11T20:11:45.6711Z",
+    "createdDateTime": "2020-10-11T20:11:456711Z",
     }
   ],
   "@odata.nextLink": "https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings/graph.awsExternalSystemAccessFinding?$skiptoken=foobar"
 }
+
 ```
