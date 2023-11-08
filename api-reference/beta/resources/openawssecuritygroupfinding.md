@@ -26,8 +26,8 @@ Inherits from [finding](../resources/finding.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|A date specifiying when the Finding was created. Inherited from [finding](../resources/finding.md).|
-|id|String|Unique identifier for the Finding. This id will be base64 encoded using the format:{findingType}{FindingId} to ensure uniqueness. Inherited from [entity](../resources/entity.md).|
+|createdDateTime|DateTimeOffset|Defines when the finding was created. Inherited from [finding](../resources/finding.md).|
+|id|String|Unique identifier for the Finding. Inherited from [entity](../resources/entity.md).|
 |inboundPorts|[inboundPorts](../resources/inboundports.md)|Contains information on inbound ports related to an open security group|
 |totalStorageBucketCount|Int32|The number of storage buckets accessed by the assigned compute instances|
 

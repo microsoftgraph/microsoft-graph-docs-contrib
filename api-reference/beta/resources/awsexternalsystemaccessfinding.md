@@ -27,8 +27,8 @@ Inherits from [finding](../resources/finding.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |accessMethods|externalSystemAccessMethods|Specifies if the system can be accessed directly, via role chaining, or both.The possible values are: `direct`, `roleChaining`, `unknownFutureValue`.|
-|createdDateTime|DateTimeOffset|A date specifiying when the Finding was created Inherited from [finding](../resources/finding.md).|
-|id|String|Unique identifier for the Finding. This id will be base64 encoded using the format:{findingType}{FindingId} to ensure uniqueness Inherited from [entity](../resources/entity.md).|
+|createdDateTime|DateTimeOffset|Defines when the finding was created. Inherited from [finding](../resources/finding.md).|
+|id|String|Unique identifier for the finding. Inherited from [entity](../resources/entity.md).|
 |systemWithAccess|[authorizationSystemInfo](../resources/authorizationsysteminfo.md)|*The account id for the external system that is able to access the given system.|
 |trustedIdentityCount|Int32|The number of identities in the external system that are trusted, if not all.|
 |trustsAllIdentities|Boolean|Flag that determines if all identities in the external system are trusted, or only a subset.|

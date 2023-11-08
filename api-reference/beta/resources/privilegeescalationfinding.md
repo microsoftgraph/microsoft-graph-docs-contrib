@@ -26,15 +26,15 @@ Inherits from [finding](../resources/finding.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|A date specifiying when the Finding was created Inherited from [finding](../resources/finding.md).|
-|id|String|Unique identifier for the Finding. This id will be base64 encoded using the format:{findingType}{FindingId} to ensure uniqueness Inherited from [entity](../resources/entity.md).|
+|createdDateTime|DateTimeOffset|Defines when the finding was created. Inherited from [finding](../resources/finding.md).|
+|id|String|Unique identifier for the finding. Inherited from [entity](../resources/entity.md).|
 |lastActiveDateTime|DateTimeOffset|A date specifiying when the last time the identity in this Finding executed an authorization system action.|
-|permissionsCreepIndex|[permissionsCreepIndex](../resources/permissionscreepindex.md)|*Assigns an index based on an identities excessive permissions that is classified into three buckets: 0-33: low, 34-66: medium, 67-100: high. This property and its values are a snapshot as of when the finding was created and may not reflect the current values for the identity. Supports `$filter` (`gt`) and `$orderby`.|
+|permissionsCreepIndex|[permissionsCreepIndex](../resources/permissionscreepindex.md)|*A score for an identity's excessive permissions that is classified into three buckets: 0-33: low, 34-66: medium, 67-100: high. This property and its values are a snapshot as of when the finding was created and might not reflect the current score for the identity. Supports `$filter` (`gt`) and `$orderby`.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Represents an identity in an authorization system|
+|identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Represents an identity in an authorization system.|
 |privilegeEscalationDetails|[Collection(graph.privilegeEscalation)](../resources/privilegeescalation.md)|The list of escalations that the identity is capable of performing.|
 
 ## JSON representation

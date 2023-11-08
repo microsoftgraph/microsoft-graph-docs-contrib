@@ -28,8 +28,8 @@ Inherits from [finding](../resources/finding.md).
 |:---|:---|:---|
 |accessibility|awsAccessType|Aws resources access type.The possible values are: `public`, `restricted`, `crossAccount`, `private`, `unknownFutureValue`.|
 |accountsWithAccess|[accountsWithAccess](../resources/accountswithaccess.md)|Contains information on external Aws accounts that have access to a storage bucket|
-|createdDateTime|DateTimeOffset|A date specifiying when the Finding was created Inherited from [finding](../resources/finding.md).|
-|id|String|Unique identifier for the Finding. This id will be base64 encoded using the format:{findingType}{FindingId} to ensure uniqueness Inherited from [entity](../resources/entity.md).|
+|createdDateTime|DateTimeOffset|Defines when the finding was created. Inherited from [finding](../resources/finding.md).|
+|id|String|Unique identifier for the finding. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|

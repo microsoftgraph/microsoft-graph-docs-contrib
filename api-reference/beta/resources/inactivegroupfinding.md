@@ -29,8 +29,8 @@ Inherits from [finding](../resources/finding.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |actionSummary|[actionSummary](../resources/actionsummary.md)|Contains information on authorization system actions granted to this group identity and actions executed by this group identity in the last 90 days. This property and its values are a snapshot as of when the finding was created and may not reflect the current values for the group identity. Supports `$select`.|
-|createdDateTime|DateTimeOffset|A date specifiying when the finding was created. Inherited from [finding](../resources/finding.md).|
-|id|String|Unique identifier for the Finding. This id will be base64 encoded using the format:{findingType}{FindingId} to ensure uniqueness. Inherited from [entity](../resources/entity.md).|
+|createdDateTime|DateTimeOffset|Defines when the finding was created. Inherited from [finding](../resources/finding.md).|
+|id|String|Unique identifier for the Finding. Inherited from [entity](../resources/entity.md).|
 |permissionsCreepIndex|[permissionsCreepIndex](../resources/permissionscreepindex.md)|An index based on an identities excessive permissions that is classified into three buckets: 0-33: low, 34-66: medium, 67-100: high. This property and its values are a snapshot as of when the finding was created and may not reflect the current values for the group identity. Supports `$filter` (`gt`) and `$orderby`.|
 
 ## Relationships

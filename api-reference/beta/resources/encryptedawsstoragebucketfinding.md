@@ -27,7 +27,7 @@ Inherits from [finding](../resources/finding.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |accessibility|awsAccessType|Aws resources access type.The possible values are: `public`, `restricted`, `crossAccount`, `private`, `unknownFutureValue`.|
-|createdDateTime|DateTimeOffset|A date specifiying when the Finding was created Inherited from [finding](../resources/finding.md).|
+|createdDateTime|DateTimeOffset|Defines when the finding was created. Inherited from [finding](../resources/finding.md).|
 |id|String|Unique identifier for the Finding. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships

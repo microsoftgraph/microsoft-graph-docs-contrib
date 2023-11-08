@@ -1,6 +1,6 @@
 ---
 title: "permissionsAnalyticsAggregation resource type"
-description: "Represents permissions analytics findings for AWS, Azure, and GCP."
+description: "Represents permissions analytics findings for authorization systems onboarded to Microsoft Entra Permissions Management."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents permissions analytics findings for AWS, Azure, and GCP.
+Represents permissions analytics findings for authorization systems onboarded to Microsoft Entra Permissions Management. Currently, only AWS, Azure, and GCP are supported.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -23,7 +23,7 @@ None
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier for the Finding. This id will be base64 encoded using the format:{findingType}{FindingId} to ensure uniqueness. Inherited from [entity](../resources/entity.md).|
+|id|String|Unique identifier for the finding. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|
