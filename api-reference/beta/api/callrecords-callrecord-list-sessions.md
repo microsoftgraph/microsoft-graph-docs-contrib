@@ -1,5 +1,5 @@
 ---
-title: "List callRecord sessions"
+title: "List  sessions"
 description: "Retrieve the list of session objects for a callRecord."
 ms.localizationpriority: medium
 author: "mcm223"
