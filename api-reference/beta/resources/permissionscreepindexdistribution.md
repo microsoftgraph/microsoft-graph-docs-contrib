@@ -20,7 +20,6 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List permissionsCreepIndexDistributions](../api/permissionsanalytics-list-permissionscreepindexdistributions.md)|[permissionsCreepIndexDistribution](../resources/permissionscreepindexdistribution.md) collection|Get the permissionsCreepIndexDistribution resources from the permissionsCreepIndexDistributions navigation property.|
 |[Get permissionsCreepIndexDistribution](../api/permissionscreepindexdistribution-get.md)|[permissionsCreepIndexDistribution](../resources/permissionscreepindexdistribution.md)|Read the properties and relationships of a [permissionsCreepIndexDistribution](../resources/permissionscreepindexdistribution.md) object.|
 
 ## Properties
