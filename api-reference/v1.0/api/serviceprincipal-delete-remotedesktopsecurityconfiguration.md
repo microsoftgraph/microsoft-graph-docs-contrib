@@ -89,7 +89,6 @@ DELETE https://graph.microsoft.com/v1.0/servicePrincipals/00af5dfb-85da-4b41-a67
 
 ---
 
-
 ### Response
 The following example shows the response.
 <!-- {
