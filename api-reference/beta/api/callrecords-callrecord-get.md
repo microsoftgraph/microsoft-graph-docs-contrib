@@ -67,7 +67,7 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [microsoft.graph.callRecords.callRecord](../resources/callrecords-callrecord.md) object in the response body. A request for a call record older than 30 days receive a `404 Not Found` response.
 
-When a result set spans multiple pages, Microsoft Graph returns that page with an **@odata.nextLink** property in the response that contains a URL to the next page of results. If that property is present, continue making additional requests with the **@odata.nextLink** URL in each response, until all the results are returned. For more information, see [paging Microsoft Graph data in your app](/graph/paging). Maximum page size: 130 entries for **participants_v2** and 60 entries for **sessions**.
+When a result set spans multiple pages, Microsoft Graph returns that page with an **@odata.nextLink** property in the response that contains a URL to the next page of results. If that property is present, continue making additional requests with the **@odata.nextLink** URL in each response, until all the results are returned. For more information, see [paging Microsoft Graph data in your app](/graph/paging). Maximum page size: 130 entries for participants and 60 entries for sessions.
 
 ## Examples
 
