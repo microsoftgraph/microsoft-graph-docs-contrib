@@ -106,6 +106,10 @@ Content-type: application/json
         "exercised": 0,
         "available": 10542
     },
+    "identityDetails": {
+      "createdDateTime": "String (timestamp)",
+      "lastActiveDateTime": "String (timestamp)"
+    },
     "permissionsCreepIndex": {
         "score": 93
     },
@@ -122,7 +126,7 @@ Content-type: application/json
         "authorizationSystem": {
             "@odata.type": "#microsoft.graph.awsAuthorizationSystem",
             "authorizationSystemId": "377596131774",
-            "authorizationSystemName": "cloudknox-staging",
+            "authorizationSystemName": "contoso-staging",
             "authorizationSystemType": "aws",
             "id": "MSxhd3MsMzc3NTk2MTMxNzc0"
         }

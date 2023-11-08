@@ -78,20 +78,21 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.identityFinding",
-      "id": "44a632b0-9918-beb6-a483-d935be102d3c",
+  "value": {
+    "@odata.type": "#microsoft.graph.identityFinding",
+    "id": "44a632b0-9918-beb6-a483-d935be102d3c",
+    "createdDateTime": "String (timestamp)",
+    "permissionsCreepIndex": {
+      "@odata.type": "microsoft.graph.permissionsCreepIndex"
+    },
+    "identityDetails": {
       "createdDateTime": "String (timestamp)",
-      "permissionsCreepIndex": {
-        "@odata.type": "microsoft.graph.permissionsCreepIndex"
-      },
-      "lastActiveDateTime": "String (timestamp)",
-      "actionSummary": {
-        "@odata.type": "microsoft.graph.actionSummary"
-      }
+      "lastActiveDateTime": "String (timestamp)"
+    },
+    "actionSummary": {
+      "@odata.type": "microsoft.graph.actionSummary"
     }
-  ]
+  }
 }
 ```
 

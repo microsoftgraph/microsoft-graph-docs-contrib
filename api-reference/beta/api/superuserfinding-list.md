@@ -115,7 +115,7 @@ Content-Type: application/json
             "@odata.type": "graph.gcpAuthorizationSystem",
             "id": "{Id}",
             "authorizationSystemId": "carbide-bonsai-205017",
-            "authorizationSystemName": "ck-staging",
+            "authorizationSystemName": "contoso-staging",
             "authorizationSystemType": "gcp"
           }
       },
@@ -123,6 +123,10 @@ Content-Type: application/json
         "assigned": 10532,
         "exercised": 0,
         "available": 10542
+      },
+      "identityDetails": {
+        "createdDateTime": "String (timestamp)",
+        "lastActiveDateTime": "String (timestamp)"
       },
       "permissionsCreepIndex": {
         "score": 95

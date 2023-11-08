@@ -102,6 +102,10 @@ Content-type: application/json
         "exercised": 0,
         "available": 58
     },
+    "identityDetails": {
+      "createdDateTime": "String (timestamp)",
+      "lastActiveDateTime": "String (timestamp)"
+    },
     "permissionsCreepIndex": {
         "score": 100
     },
@@ -118,7 +122,7 @@ Content-type: application/json
         "authorizationSystem": {
             "@odata.type": "#microsoft.graph.awsAuthorizationSystem",
             "authorizationSystemId": "956987887735",
-            "authorizationSystemName": "ck-development",
+            "authorizationSystemName": "contoso-development",
             "authorizationSystemType": "aws",
             "id": "MSxhd3MsOTU2OTg3ODg3NzM1"
         }

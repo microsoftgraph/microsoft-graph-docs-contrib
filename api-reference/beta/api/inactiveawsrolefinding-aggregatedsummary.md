@@ -81,7 +81,7 @@ The following example shows the response.
 Content-type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaevan_schema/$metadata#microsoft.graph.permissionsAnalyticsAggregatedIdentitySummary",
+    "@odata.context": "https://canary.graph.microsoft.com/beta/$metadata#microsoft.graph.permissionsAnalyticsAggregatedIdentitySummary",
     "totalCount": 364,
     "findingsCount": 295
 }

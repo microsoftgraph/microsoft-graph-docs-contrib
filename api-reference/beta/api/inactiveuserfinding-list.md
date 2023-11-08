@@ -109,6 +109,10 @@ Content-Type: application/json
                 "available": 3
             },
             "identityDetails": {
+              "createdDateTime": "String (timestamp)",
+              "lastActiveDateTime": "String (timestamp)"
+            },
+            "identityDetails": {
                 "createdDateTime": "2023-10-11T19:37:40.7989483Z",
                 "lastActiveDateTime": "2023-10-11T19:37:40.7989485Z"
             },

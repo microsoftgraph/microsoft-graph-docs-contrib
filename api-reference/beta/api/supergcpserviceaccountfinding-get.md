@@ -84,6 +84,10 @@ Content-type: application/json
         "exercised": 0,
         "available": 7075
     },
+    "identityDetails": {
+      "createdDateTime": "String (timestamp)",
+      "lastActiveDateTime": "String (timestamp)"
+    },
     "permissionsCreepIndex": {
         "score": 87
     },

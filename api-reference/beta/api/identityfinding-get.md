@@ -85,7 +85,10 @@ Content-Type: application/json
     "permissionsCreepIndex": {
       "@odata.type": "microsoft.graph.permissionsCreepIndex"
     },
-    "lastActiveDateTime": "String (timestamp)",
+    "identityDetails": {
+      "createdDateTime": "String (timestamp)",
+      "lastActiveDateTime": "String (timestamp)"
+    },
     "actionSummary": {
       "@odata.type": "microsoft.graph.actionSummary"
     }
