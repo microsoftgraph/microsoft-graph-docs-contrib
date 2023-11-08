@@ -27,15 +27,15 @@ Inherits from [finding](../resources/finding.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Defines when the finding was created. Inherited from [finding](../resources/finding.md).|
-|id|String|Unique identifier for the Finding. Inherited from [entity](../resources/entity.md).|
+|id|String|Unique identifier for the finding. Inherited from [entity](../resources/entity.md).|
 |inboundPorts|[inboundPorts](../resources/inboundports.md)|Contains information on inbound ports related to an open security group|
 |totalStorageBucketCount|Int32|The number of storage buckets accessed by the assigned compute instances|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|assignedComputeInstancesDetails|[assignedComputeInstanceDetails](../resources/assignedcomputeinstancedetails.md) collection|a set of AWS EC2 compute instances related to this open security group|
-|securityGroup|[awsAuthorizationSystemResource](../resources/awsauthorizationsystemresource.md)|Represents a resource in an authorization system|
+|assignedComputeInstancesDetails|[assignedComputeInstanceDetails](../resources/assignedcomputeinstancedetails.md) collection|A set of AWS EC2 compute instances related to this open security group.|
+|securityGroup|[awsAuthorizationSystemResource](../resources/awsauthorizationsystemresource.md)|Represents a resource in an AWS authorization system.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
  
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -31,7 +31,7 @@ Get AWS super users:
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.superUserFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings('id')/graph.superUserFinding
 ```
 
 Get Azure super users:
@@ -40,7 +40,7 @@ Get Azure super users:
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings('id')/graph.superUserFinding
+GET /identityGovernance/permissionsAnalytics/azure/findings('id')/graph.superUserFinding
 ```
 
 Get GCP super users:
@@ -49,11 +49,11 @@ Get GCP super users:
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings('id')/graph.superUserFinding
+GET /identityGovernance/permissionsAnalytics/gcp/findings('id')/graph.superUserFinding
 ```
 
 ## Optional query parameters
-This method does not support any of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -61,7 +61,7 @@ This method does not support any of the OData query parameters to help customize
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -94,7 +94,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaevan_schema/$metadata#identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.superUserFinding/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.superUserFinding/$entity",
     "id": "MSxTdXBlclVzZXJGaW5kaW5nLDE1NDczMQ",
     "createdDateTime": "2023-10-17T19:49:19.622563Z",
     "actionSummary": {

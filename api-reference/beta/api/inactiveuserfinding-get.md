@@ -1,6 +1,6 @@
 ---
 title: "Get inactiveUserFinding"
-description: "Get the details of an inactive user in an authorization system that you've onboarded to Permissions Management."
+description: "Get the details of an inactiveUserFinding in an authorization system onboarded to Permissions Management."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-"Get the details of an inactive user [inactiveUserFinding](../resources/inactiveuserfinding.md) object in an authorization system that you've onboarded to Permissions Management.
+Get the details of an [inactiveUserFinding](../resources/inactiveuserfinding.md) object in an authorization system onboarded to Permissions Management.
 
 
 ## Permissions
@@ -20,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 
 ## HTTP request
@@ -55,7 +55,7 @@ GET /identityGovernance/permissionsAnalytics/gcp/findings('id')/graph.inactiveUs
 ```
 
 ## Optional query parameters
-This method does not support any of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support any OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 
 ## Request headers
@@ -64,7 +64,7 @@ This method does not support any of the OData query parameters to help customize
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -80,7 +80,7 @@ The following example shows a request.
 }
 -->
 ```http
-GET https://canary.graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('MSxJbmFjdGl2ZVVzZXJGaW5kaW5nLDI0MTI5MA')/microsoft.graph.inactiveUserFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('MSxJbmFjdGl2ZVVzZXJGaW5kaW5nLDI0MTI5MA')/microsoft.graph.inactiveUserFinding
 ```
 
 
@@ -98,7 +98,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaevan_schema/$metadata#identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveUserFinding/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveUserFinding/$entity",
     "id": "MSxJbmFjdGl2ZVVzZXJGaW5kaW5nLDI0MTI5MA",
     "createdDateTime": "2023-10-17T15:48:01.549695Z",
     "actionSummary": {

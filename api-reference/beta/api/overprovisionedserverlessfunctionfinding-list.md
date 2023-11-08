@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -65,8 +65,7 @@ This method supports the `$filter` and `$orderby` OData query parameters to help
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -83,7 +82,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/azure/findings/graph.overprovisionedServerlessFunctionFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/graph.overprovisionedServerlessFunctionFinding
 ```
 
 ### Response
@@ -101,7 +100,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/identityGovernance/$metadata#permissionsAnalytics/azure/findings/graph.overprovisionedServerlessFunctionFinding",
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/azure/findings/graph.overprovisionedServerlessFunctionFinding",
   "value": [
     {
       "@odata.type": "graph.overprovisionedServerlessFunctionFinding",
@@ -141,8 +140,7 @@ Content-Type: application/json
         "createdDateTime": "2021-04-12T20:34:24Z",
         "lastActiveDateTime": "2021-10-30T03:21:05Z"
       }
-    },
-
+    }
   ]
 }
 ```

@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ GET /identityGovernance/permissionsAnalytics/aws/findings('id')/graph.securityTo
 ```
 
 ## Optional query parameters
-This method supports `$filter` and `$orderby` of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -42,7 +42,7 @@ This method supports `$filter` and `$orderby` of the OData query parameters to h
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -78,7 +78,6 @@ Content-Type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.securityToolAwsRoleAdministratorFinding",
   "value":
-
       {
         "@odata.type": "graph.securityToolAwsRoleAdministratorFinding",
         "id": "YXdzU2VjdXJpdHlUb29sQWRtaW5pc3RyYXRpb25GaW5kaW5nMw",
@@ -109,7 +108,7 @@ Content-Type: application/json
           "createdDateTime": "2020-04-12T20:34:24Z",
           "lastActiveDateTime": "2020-10-30T03:21:05Z"
         }
-      },
+      }
     }
 ```
 

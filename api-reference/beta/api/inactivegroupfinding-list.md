@@ -1,6 +1,6 @@
 ---
 title: "List inactiveGroupFindings"
-description: "List inactive groups in AWS, Azure and GCP environments.."
+description: "List inactive groups in AWS, Azure and GCP environments."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -20,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -64,8 +64,7 @@ This method supports the `$filter` and `$orderby` OData query parameters to help
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -98,7 +97,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaevan_schema/$metadata#identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.inactiveGroupFinding",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.inactiveGroupFinding",
     "value": [
         {
             "id": "MSxJbmFjdGl2ZUdyb3VwRmluZGluZyw2MDI0NA",

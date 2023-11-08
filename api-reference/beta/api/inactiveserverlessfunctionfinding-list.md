@@ -1,6 +1,6 @@
 ---
 title: "List inactiveServerlessFunctionFindings"
-description: "List the details of inactive serverless functions in authorization systems that you've onboarded to Permissions Management."
+description: "List the details of inactive serverless functions in authorization systems onboarded to Permissions Management."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -12,16 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the details of inactive serverless functions [inactiveServerlessFunctionFining](../resources/inactiveserverlessfunctionfinding.md)in authorization systems that you've onboarded to Permissions Management.
+List the details of inactive serverless functions [inactiveServerlessFunctionFining](../resources/inactiveserverlessfunctionfinding.md) in authorization systems onboarded to Permissions Management.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -61,7 +61,7 @@ This method supports the `$filter` and `$orderby` OData query parameters to help
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -134,8 +134,7 @@ Content-type: application/json
         "createdDateTime": "2020-04-12T20:34:24Z",
         "lastActiveDateTime": "2020-10-30T03:21:05Z"
       }
-    },
-
+    }
   ]
 }
 ```

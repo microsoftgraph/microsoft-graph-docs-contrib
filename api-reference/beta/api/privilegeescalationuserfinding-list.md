@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -53,7 +53,7 @@ This method supports the `$filter` and `$orderby` OData query parameters to help
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -87,7 +87,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.privilegeEscalationUserFinding",
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.privilegeEscalationUserFinding",
   "value": [
     {
       "@odata.type": "graph.privilegeEscalationUserFinding",
@@ -120,6 +120,6 @@ Content-Type: application/json
       }
     },
   ],
-  "@odata.nextLink": "https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings/graph.privilegeEscalationUserFinding?$skiptoken=foobar"
+  "@odata.nextLink": "https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.privilegeEscalationUserFinding?$skiptoken=foobar"
 }
 ```

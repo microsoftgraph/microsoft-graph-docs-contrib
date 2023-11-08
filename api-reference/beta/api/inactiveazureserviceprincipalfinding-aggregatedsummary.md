@@ -1,6 +1,6 @@
 ---
 title: "inactiveAzureServicePrincipalFinding: aggregatedSummary"
-description: "View the count of inactive Azure service principals in yor authorization systems."
+description: "View the count of inactive Azure service principals for the specified authorization systems in your Azure environment."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -35,11 +35,11 @@ GET /identityGovernance/permissionsAnalytics/azure/findings/graph.inactiveAzureS
 
 ## Function parameters
 In the request URL, provide the following query parameters with values.
-The following table shows the parameters that can be used with this function.
+The following table shows the parameters that are required with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|authorizationSystemIds|String collection|list of authorization systems|
+|authorizationSystemIds|String collection|The collection of IDs for the authorization systems against which to get the summary of records.|
 
 
 ## Request headers
@@ -48,7 +48,7 @@ The following table shows the parameters that can be used with this function.
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -64,7 +64,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://canary.graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/graph.superAzureServicePrincipalFinding/microsoft.graph.aggregatedSummary(authorizationSystemIds=['00f7dcae-97f9-492b-af2e-36eb35b613af'])
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/graph.superAzureServicePrincipalFinding/microsoft.graph.aggregatedSummary(authorizationSystemIds=['00f7dcae-97f9-492b-af2e-36eb35b613af'])
 ```
 
 
@@ -82,7 +82,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/beta/$metadata#microsoft.graph.permissionsAnalyticsAggregatedIdentitySummary",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.permissionsAnalyticsAggregatedIdentitySummary",
     "totalCount": 7,
     "findingsCount": 1
 }

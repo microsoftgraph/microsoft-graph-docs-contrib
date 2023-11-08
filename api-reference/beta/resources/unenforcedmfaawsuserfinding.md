@@ -1,6 +1,6 @@
 ---
 title: "unenforcedMfaAwsUserFinding resource type"
-description: "View AWS local users without MFA"
+description: "View AWS local users without MFA."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-View AWS local users without MFA
+View AWS local users without MFA.
 
 Inherits from [identityFinding](../resources/identityfinding.md).
 

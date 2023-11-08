@@ -31,8 +31,8 @@ Inherits from [entity](../resources/entity.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|accessedStorageBuckets|[authorizationSystemResource](../resources/authorizationsystemresource.md) collection|Represents a set of S3 buckets accessed by this EC2 instance|
-|assignedComputeInstance|[authorizationSystemResource](../resources/authorizationsystemresource.md)|assigned EC2 instance|
+|accessedStorageBuckets|[authorizationSystemResource](../resources/authorizationsystemresource.md) collection|Represents a set of S3 buckets accessed by this EC2 instance.|
+|assignedComputeInstance|[authorizationSystemResource](../resources/authorizationsystemresource.md)|assigned EC2 instance.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

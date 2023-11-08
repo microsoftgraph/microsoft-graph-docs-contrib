@@ -29,15 +29,15 @@ Inherits from [privilegeEscalationFinding](../resources/privilegeescalationfindi
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Defines when the finding was created. Inherited from [finding](../resources/finding.md).|
 |id|String|Unique identifier for the finding. Inherited from [entity](../resources/entity.md).|
-|lastActiveDateTime|DateTimeOffset|A date specifiying when the last time the identity in this Finding executed an authorization system action. Inherited from [privilegeEscalationFinding](../resources/privilegeescalationfinding.md).|
+|lastActiveDateTime|DateTimeOffset|Defines the last time the identity in this finding executed an authorization system action. Inherited from [privilegeEscalationFinding](../resources/privilegeescalationfinding.md).|
 |permissionsCreepIndex|[permissionsCreepIndex](../resources/permissionscreepindex.md)|A score for an identity's excessive permissions that is classified into three buckets: 0-33: low, 34-66: medium, 67-100: high. This property and its values are a snapshot as of when the finding was created and might not reflect the current score for the identity. Supports `$filter` (`gt`) and `$orderby`. Inherited from [privilegeEscalationFinding](../resources/privilegeescalationfinding.md).|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Represents an identity in an authorization system. Inherited from [microsoft.graph.privilegeEscalationFinding](../resources/privilegeescalationfinding.md)|
-|potentialPrivilegeEscalations|[privilegeEscalation](../resources/privilegeescalation.md) collection|represents users with the potential to escalate privileges Inherited from [microsoft.graph.privilegeEscalationFinding](../resources/privilegeescalationfinding.md)|
+|identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Represents an identity in an authorization system onboarded to Permissions Management. Inherited from [microsoft.graph.identityFinding](../resources/identityfinding.md). Autoexpanded by default.|
+|potentialPrivilegeEscalations|[privilegeEscalation](../resources/privilegeescalation.md) collection|The list of escalations that the identity is capable of performing. Inherited from [microsoft.graph.privilegeEscalationFinding](../resources/privilegeescalationfinding.md)|
 
 ## JSON representation
 

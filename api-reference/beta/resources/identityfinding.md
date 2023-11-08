@@ -40,10 +40,8 @@ The following resources inherit from this resource type:
 - [superuserfinding](../resources/superuserfinding.md)
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List identityFindings](../api/identityfinding-list.md)|[identityFinding](../resources/identityfinding.md) collection|Get a list of the [identityFinding](../resources/identityfinding.md) objects and their properties.|
-|[Get identityFinding](../api/identityfinding-get.md)|[identityFinding](../resources/identityfinding.md)|Read the properties and relationships of an [identityFinding](../resources/identityfinding.md) object.|
+
+None.
 
 ## Properties
 |Property|Type|Description|
@@ -51,13 +49,13 @@ The following resources inherit from this resource type:
 |actionSummary|[actionSummary](../resources/actionsummary.md)|Contains information on authorization system actions granted to an identity and actions executed by this identity in the last 90 days. This property and its values are a snapshot as of when the finding was created and might not reflect the current values for the identity. Inherited from [identityFinding](../resources/identityfinding.md).|
 |createdDateTime|DateTimeOffset|Defines when the finding was created. Supports `$select`. Inherited from [finding](../resources/finding.md).|
 |id|String|Unique identifier for the finding. Inherited from [entity](../resources/entity.md).|
-|lastActiveDateTime|DateTimeOffset|A date specifiying when the last time the identity in this finding executed an authorization system action.|
-|permissionsCreepIndex|[permissionsCreepIndex](../resources/permissionscreepindex.md)|A score for an identity's excessive permissions that is classified into three buckets: 0-33: low, 34-66: medium, 67-100: high. This property and its values are a snapshot as of when the finding was created and might not reflect the current score for the identity. Supports `$filter` (`gt`) and `$orderby`.|
+|lastActiveDateTime|DateTimeOffset|Defines the last time the identity in this finding executed an authorization system action.|
+|permissionsCreepIndex|[permissionsCreepIndex](../resources/permissionscreepindex.md)|A score for an identity's excessive permissions that is classified into three buckets: 0-33: low, 34-66: medium, 67-100: high. This property and its values are a snapshot as of when the finding was created and might not reflect the current score for the identity. Supports `$filter` (`gt`) and `$orderby`. |
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Represents an identity in an authorization system. Autoexpanded by default.|
+|identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|epresents an identity in an authorization system onboarded to Permissions Management. Autoexpanded by default.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

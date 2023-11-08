@@ -1,6 +1,6 @@
 ---
 title: "Get inactiveAwsRoleFinding"
-description: "Get the details of inactive AWS roles in your AWS authorization systems that you've onboarded to Permissions Management."
+description: "Get the details of inactive AWS roles in AWS authorization systems onboarded to Permissions Management."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -12,16 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
- Get the details of inactive AWS roles [inactiveAwsRoleFinding](../resources/inactiveawsrolefinding.md) in your AWS authorization systems that you've onboarded to Permissions Management.
+Get the details of inactive AWS roles [inactiveAwsRoleFinding](../resources/inactiveawsrolefinding.md) in AWS authorization systems onboarded to Permissions Management.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -30,11 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ```http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.inactiveAwsRoleFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings('id')/graph.inactiveAwsRoleFinding
 ```
 
 ## Optional query parameters
-This method does not support any of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support any OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 
 ## Request headers
@@ -43,7 +43,7 @@ This method does not support any of the OData query parameters to help customize
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -77,7 +77,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaevan_schema/$metadata#identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveAwsRoleFinding/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveAwsRoleFinding/$entity",
     "id": "MSxJbmFjdGl2ZUF3c1JvbGVGaW5kaW5nLDY1MTY0MA",
     "createdDateTime": "2023-10-17T19:48:33.530943Z",
     "actionSummary": {

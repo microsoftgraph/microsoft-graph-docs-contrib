@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ GET /identityGovernance/permissionsAnalytics/azure/findings/graph.openNetworkAzu
 ```
 
 ## Optional query parameters
-This method supports `$filter` and `$orderby` of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` and `$orderby` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -42,7 +42,7 @@ This method supports `$filter` and `$orderby` of the OData query parameters to h
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.d.
 
 ## Response
 
@@ -127,7 +127,6 @@ Content-Type: application/json
       "virtualMachines@odata.count": 2, // there is no annotation for auto-expanding the count, but it always allowed for a service to respond with more data than is requested; if there were an annotation, we would use it
       "createdDateTime": "2020-10-11T20:11:45.671Z"
     }
-
   ]
 }
 ```

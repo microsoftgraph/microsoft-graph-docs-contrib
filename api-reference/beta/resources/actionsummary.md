@@ -17,9 +17,9 @@ This will contain information on the number of authorization system actions that
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|assigned|Int32|This is the number of authorization system actions that have been assigned to the identity|
-|available|Int32|This is the number of authorization system actions that the identity has exercised in the last 90 days|
-|exercised|Int32|This is the maximum number of actions that are available in the authorization system|
+|assigned|Int32|This is the number of authorization system actions that have been assigned to the identity.|
+|available|Int32|This is the number of authorization system actions that the identity has exercised in the last 90 days.|
+|exercised|Int32|This is the maximum number of actions that are available in the authorization system.|
 
 ## Relationships
 None.

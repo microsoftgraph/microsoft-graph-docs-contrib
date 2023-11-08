@@ -1,6 +1,6 @@
 ---
 title: "encryptedAwsStorageBucketFinding resource type"
-description: "Represents the findings for Aws encrypted storage buckets."
+description: "Represents the findings for AWS encrypted storage buckets."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the findings for Aws encrypted storage buckets.
+Represents the findings for AWS encrypted storage buckets.
 
 Inherits from [finding](../resources/finding.md).
 
@@ -26,14 +26,14 @@ Inherits from [finding](../resources/finding.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|accessibility|awsAccessType|Aws resources access type.The possible values are: `public`, `restricted`, `crossAccount`, `private`, `unknownFutureValue`.|
+|accessibility|awsAccessType|Aws resources access type. The possible values are: `public`, `restricted`, `crossAccount`, `private`, `unknownFutureValue`.|
 |createdDateTime|DateTimeOffset|Defines when the finding was created. Inherited from [finding](../resources/finding.md).|
-|id|String|Unique identifier for the Finding. Inherited from [entity](../resources/entity.md).|
+|id|String|Unique identifier for the finding. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|storageBucket|[authorizationSystemResource](../resources/authorizationsystemresource.md)|Represents a resource in an authorization system|
+|storageBucket|[authorizationSystemResource](../resources/authorizationsystemresource.md)|Represents a resource in an AWS authorization system.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

@@ -19,31 +19,31 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
-Example of an AWS request
+For an AWS authorization system:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET /beta/identityGovernance/permissionsAnalytics/aws/findings/graph.superServerlessFunctionFinding/aggregatedSummary(authorizationSystemIds=['awsAuthSystemId'])
+GET /identityGovernance/permissionsAnalytics/aws/findings/graph.superServerlessFunctionFinding/aggregatedSummary(authorizationSystemIds=['awsAuthSystemId'])
 ```
 
-Example of an Azure request
+For an Azure authorization system:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET /beta/identityGovernance/permissionsAnalytics/azure/findings/graph.superServerlessFunctionFinding/aggregatedSummary(authorizationSystemIds=['azureAuthSystemId'])
+GET /identityGovernance/permissionsAnalytics/azure/findings/graph.superServerlessFunctionFinding/aggregatedSummary(authorizationSystemIds=['azureAuthSystemId'])
 ```
 
-Example of a GCP request
+For a GCP authorization system:
 <!-- {
   "blockType": "ignored"
 }
@@ -54,11 +54,11 @@ GET /identityGovernance/permissionsAnalytics/gcp/findings/graph.superServerlessF
 
 ## Function parameters
 In the request URL, provide the following query parameters with values.
-The following table shows the parameters that can be used with this function.
+The following table shows the parameters that are required with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|authorizationSystemIds|String collection|A list of authorization system IDs.|
+|authorizationSystemIds|String collection|The collection of IDs for the authorization systems against which to get the summary of records.|
 
 
 ## Request headers
@@ -67,7 +67,7 @@ The following table shows the parameters that can be used with this function.
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -101,7 +101,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/beta/$metadata#microsoft.graph.permissionsAnalyticsAggregatedIdentitySummary",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.permissionsAnalyticsAggregatedIdentitySummary",
     "totalCount": 25,
     "findingsCount": 0
 }

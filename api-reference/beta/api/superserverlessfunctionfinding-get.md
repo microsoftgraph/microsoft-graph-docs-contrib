@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -31,7 +31,7 @@ Get AWS super serverless functions:
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.superServerlessFunctionFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings('id')/graph.superServerlessFunctionFinding
 ```
 
 Get Azure super serverless functions:
@@ -40,7 +40,7 @@ Get Azure super serverless functions:
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings('id')/graph.superServerlessFunctionFinding
+GET /identityGovernance/permissionsAnalytics/azure/findings('id')/graph.superServerlessFunctionFinding
 ```
 
 Get GCP super serverless functions:
@@ -49,11 +49,11 @@ Get GCP super serverless functions:
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings('id')/graph.superServerlessFunctionFinding
+GET /identityGovernance/permissionsAnalytics/gcp/findings('id')/graph.superServerlessFunctionFinding
 ```
 
 ## Optional query parameters
-This method supports none of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -61,13 +61,11 @@ This method supports none of the OData query parameters to help customize the re
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and a [superServerlessFunctionFinding](../resources/superserverlessfunctionfinding.md) object in the response body.
-
-If unsuccessful, this method will return a '403' response if you don't have access to the authorization system or a '404' response if the key passed into the GET method is invalid.
 
 ## Examples
 
@@ -96,7 +94,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/identityGovernance/$metadata#permissionsAnalytics/azure/findings/graph.superServerlessFunctionFinding",
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/azure/findings/graph.superServerlessFunctionFinding",
   "value": [
     {
       "@odata.type": "graph.superServerlessFunctionFinding",
@@ -136,8 +134,7 @@ Content-type: application/json
         "createdDateTime": "2021-04-12T20:34:24Z",
         "lastActiveDateTime": "2021-10-30T03:21:05Z"
       }
-    },
-
+    }
   ]
 }
 ```

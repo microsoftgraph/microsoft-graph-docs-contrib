@@ -1,6 +1,6 @@
 ---
 title: "Get inactiveGcpServiceAccountFinding"
-description: "Read the properties and relationships of an inactiveGcpServiceAccountFinding object."
+description: "Read the properties and relationships of an inactiveGcpServiceAccountFinding object, representing the inactive service accounts in GCP authorization systems."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -12,18 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an [inactiveGcpServiceAccountFinding](../resources/inactivegcpserviceaccountfinding.md) object.
-
-You want to know details about inactive service accounts in GCP authorization systems.
+Read the properties and relationships of an [inactiveGcpServiceAccountFinding](../resources/inactivegcpserviceaccountfinding.md) object, representing the inactive service accounts in GCP authorization systems.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -32,11 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ```http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/key/findings/microsoft.graph.inactiveGcpServiceAccountFinding
+GET /identityGovernance/permissionsAnalytics/gcp/key/findings/microsoft.graph.inactiveGcpServiceAccountFinding
 ```
 
 ## Optional query parameters
-This method does not support any of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support any OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 
 ## Request headers
@@ -45,7 +43,7 @@ This method does not support any of the OData query parameters to help customize
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -79,7 +77,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaevan_schema/$metadata#identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.inactiveGcpServiceAccountFinding/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.inactiveGcpServiceAccountFinding/$entity",
     "id": "MSxJbmFjdGl2ZUdjcFNlcnZpY2VBY2NvdW50RmluZGluZywxNDM1NjM",
     "createdDateTime": "2023-10-17T19:46:22.653412Z",
     "actionSummary": {

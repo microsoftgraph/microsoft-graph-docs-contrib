@@ -39,7 +39,7 @@ The following resources inherit from this resource type:
 - [virtualMachineWithAwsStorageBucketAccessFinding](../resources/virtualmachinewithawsstoragebucketaccessfinding.md)
 
 ## Methods
-None
+None.
 
 ## Properties
 |Property|Type|Description|

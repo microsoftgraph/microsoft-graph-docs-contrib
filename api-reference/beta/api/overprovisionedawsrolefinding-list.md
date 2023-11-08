@@ -20,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings/graph.overprovisionedAwsRoleFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings/graph.overprovisionedAwsRoleFinding
 ```
 
 ## Optional query parameters
@@ -45,7 +45,7 @@ This method supports the `$filter` and `$orderby` OData query parameters to help
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -61,7 +61,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings/graph.overprovisionedAwsRoleFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.overprovisionedAwsRoleFinding
 ```
 
 ### Response
@@ -78,7 +78,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.overprovisionedAwsRoleFinding",
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.overprovisionedAwsRoleFinding",
   "value": [
     {
       "@odata.type": "graph.overprovisionedAwsRoleFinding",
