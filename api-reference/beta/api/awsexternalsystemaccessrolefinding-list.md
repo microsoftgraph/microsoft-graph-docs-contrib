@@ -34,7 +34,7 @@ GET /identityGovernance/permissionsAnalytics/aws/findings/graph.awsExternalSyste
 ```
 
 ## Optional query parameters
-This method supports `$filter` and `$orderby` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` and `$orderby` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -42,7 +42,7 @@ This method supports `$filter` and `$orderby` OData query parameters to help cus
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

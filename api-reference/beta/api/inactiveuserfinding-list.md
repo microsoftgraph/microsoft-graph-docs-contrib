@@ -49,7 +49,7 @@ List GCP inactive groups:
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.inactiveUserFinding
+GET /identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.inactiveUserFinding
 ```
 
 ## Optional query parameters
@@ -61,7 +61,7 @@ This method supports the `$filter` and `$orderby` OData query parameters to help
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

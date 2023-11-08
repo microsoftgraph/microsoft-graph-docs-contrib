@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-Example of an AWS request
+For an AWS authorization system:
 <!-- {
   "blockType": "ignored"
 }
@@ -34,7 +34,7 @@ Example of an AWS request
 GET /identityGovernance/permissionsAnalytics/aws/findings/graph.superServerlessFunctionFinding/aggregatedSummary(authorizationSystemIds=['awsAuthSystemId'])
 ```
 
-Example of an Azure request
+For an Azure authorization system:
 <!-- {
   "blockType": "ignored"
 }
@@ -43,7 +43,7 @@ Example of an Azure request
 GET /identityGovernance/permissionsAnalytics/azure/findings/graph.superServerlessFunctionFinding/aggregatedSummary(authorizationSystemIds=['azureAuthSystemId'])
 ```
 
-Example of a GCP request
+For a GCP authorization system:
 <!-- {
   "blockType": "ignored"
 }
@@ -67,7 +67,7 @@ The following table shows the parameters that are required with this function.
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
