@@ -15,8 +15,6 @@ Namespace: microsoft.graph.callRecords
 
 Retrieve the list of [sessions](../resources/callrecords-session.md) associated with a [callRecord](../resources/callrecords-callrecord.md) object.
 
-If the sessions list is truncated, a `sessions@odata.nextLink` value will be provided to retrieve the next page of sessions. The maximum page size for sessions is 60 entries.
-
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
@@ -49,7 +47,7 @@ This method supports some of the OData query parameters to help customize the re
 |:----------|:----------|
 | Authorization | Bearer {token} |
 | Prefer: odata.maxpagesize={x} | Specifies a preferred integer {x} page size for paginated results. Optional. This value must be equal to or less than the maximum allowable page size. |
-| Prefer: include-unknown-enum-members | Enables evolvable enum values beyond the sentinel value. See [Best Practices](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) for more information. Optional. |
+| Prefer: include-unknown-enum-members | Enables evolvable enum values beyond the sentinel value. For more information, see [Best practices for working with Microsoft Graph](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). Optional. |
 | Prefer: omit-values=nulls | Removes null or empty values from the response. Optional. |
 
 ## Request body
@@ -58,15 +56,19 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [session](../resources/callrecords-session.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [session](../resources/callrecords-session.md) objects in the response body.
+
+When a result set spans multiple pages, Microsoft Graph returns that page with an **@odata.nextLink** property in the response that contains a URL to the next page of results. If that property is present, continue making additional requests with the **@odata.nextLink** URL in each response, until all the results are returned. For more information, see [paging Microsoft Graph data in your app](/graph/paging). The maximum page size for sessions is 60 entries.
 
 ## Examples
 
 ### Example 1: Get session list
 
+The following example shows a request to get the list of [sessions](../resources/callrecords-session.md) for a [callRecord](../resources/callrecords-callrecord.md).
+
 #### Request
 
-Here's an example of the request to get the list of [sessions](../resources/callrecords-session.md) for a [callRecord](../resources/callrecords-callrecord.md).
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -79,15 +81,14 @@ GET https://graph.microsoft.com/beta/communications/callRecords/e523d2ed-2966-4b
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.callRecords.session",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.callRecords.session)"
 } -->
 
 ```http
@@ -179,9 +180,11 @@ Content-type: application/json
 
 ### Example 2: Get session list with segments
 
+The following example shows a request to get the list of [sessions](../resources/callrecords-session.md) for a [callRecord](../resources/callrecords-callrecord.md) with [segments](../resources/callrecords-segment.md) included.
+
 #### Request
 
-Here's an example of the request to get the list of [sessions](../resources/callrecords-session.md) for a [callRecord](../resources/callrecords-callrecord.md) with [segments](../resources/callrecords-segment.md) included.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -194,7 +197,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/e523d2ed-2966-4b
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
