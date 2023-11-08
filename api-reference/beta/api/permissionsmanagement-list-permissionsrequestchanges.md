@@ -36,7 +36,7 @@ GET /beta/identityGovernance/permissionsManagement/permissionsRequestChanges
 ```
 
 ## Optional query parameters
-This method supports the `$filter`, `$skip`, and `$orderBy` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter`, `$top`, and `$orderBy` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -104,9 +104,8 @@ Content-Type: application/json
       "ticketId": "INC1234567",
       "permissionsRequestId": "00000000-0000-0000-0000-000000000001"
     },
-
   ],
-  "@odata.nextLink": "https://graph.microsoft.com/beta/identityGovernance/permissionsManagement/permissionsRequestChanges?$filter=modificationDateTime gt {t}&skip=100"
+  "@odata.nextLink": "https://graph.microsoft.com/beta/identityGovernance/permissionsManagement/permissionsRequestChanges?$filter=modificationDateTime gt {t}&$skiptoken=Mg"
 }
 ```
 

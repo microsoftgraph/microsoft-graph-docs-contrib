@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.azureAuthorizationSystem not found
+GET /external/authorizationSystems/microsoft.graph.azureAuthorizationSystem
 ```
 
 ## Optional query parameters
@@ -58,7 +58,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.azureAuthorizationSystem not found
+GET https://graph.microsoft.com/beta/external/authorizationSystems/microsoft.graph.azureAuthorizationSystem
 ```
 
 
@@ -76,17 +76,20 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/microsoft.graph.azureAuthorizationSystem",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.azureAuthorizationSystem",
-      "id": "886fac45-801c-4476-1d0d-b6a308401b6b",
-      "authorizationSystemId": "String",
-      "authorizationSystemName": "String",
-      "authorizationSystemType": "String",
-      "associatedIdentities": {
-        "@odata.type": "microsoft.graph.azureAssociatedIdentities"
+      "id": "NzU4MDVkNmEtMmNiZS00NzgzLWFlZGItMmIzYTEzOTRiYzZm",
+      "authorizationSystemId": "75805d6a-2cbe-4783-aedb-2b3a1394bc6f",
+      "authorizationSystemName": "subscription",
+      "authorizationSystemType": "AZURE",
+      "dataCollectionInfo@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems('NzU4MDVkNmEtMmNiZS00NzgzLWFlZGItMmIzYTEzOTRiYzZm')/microsoft.graph.azureAuthorizationSystem/dataCollectionInfo/$entity",
+      "dataCollectionInfo": {
+        "entitlements": {
+          "@odata.type": "microsoft.graph.noEntitlementsDataCollection"
+        }
       }
-    }
+    },
   ]
 }
 ```

@@ -79,7 +79,7 @@ Content-Type: application/json
 
 {
   "requestedPermissions": {
-    "@odata.type": "microsoft.graph.awsPermissionsDefinition",
+    "@odata.type": "#microsoft.graph.awsPermissionsDefinition",
     "authorizationSystemInfo": {
       "authorizationSystemId": "956987887735",
       "authorizationSystemType": "AWS"
@@ -90,34 +90,29 @@ Content-Type: application/json
         {
           "id": "arn:aws:iam::956987887735:policy/AddUserToGroup"
         }
-      ]
+      ],
+      "assignToRoleId": "arn:aws:aim::956987887735:role/saml-user"
     },
     "identityInfo": {
-      "externalId": "saketh@permissionsmanagement.io",
+      "externalId": "user@outlook.com",
       "source": {
-        "@odata.type": "microsoft.graph.awsIdentitySource",
-        "authoriztionSystemInfo": {
-          "authorizationSystemId": "956987887735",
-          "authorizationSystemType": "AWS"
-        }
-      },
+        "@odata.type": "microsoft.graph.samlIdentitySource",
+      }
       "identityType": "user"
     }
   },
   "justification": "I need to do this because I want to add a user to a group",
   "notes": "Pretty Please",
   "scheduleInfo": {
-    "startDateTime": null,
     "expiration": {
       "duration": "PT1H"
-    },
-    "recurrence": null
+    }
   },
   "ticketInfo": {
     "ticketNumber": "INC1234567",
     "ticketSystem": "ServiceNow",
-    "ticketSubmitterIdentityId": "saketh.kollu@outlook.com",
-    "ticketApproverIdentityId": "sakethsmanager@outlook.com"
+    "ticketSubmitterIdentityId": "user@outlook.com",
+    "ticketApproverIdentityId": "usermanager@outlook.com"
   }
 }
 ```
@@ -149,19 +144,16 @@ Content-Type: application/json
       "@odata.type": "microsoft.graph.awsPolicyPermissionsDefinitionAction",
       "policies": [
         {
-         "id": "arn:aws:iam::956987887735:policy/AddUserToGroup"
-        },
-      ]
+          "id": "arn:aws:iam::956987887735:policy/AddUserToGroup"
+        }
+      ],
+      "assignToRoleId": "arn:aws:aim::956987887735:role/saml-user"
     },
     "identityInfo": {
-      "externalId": "saketh@cloudknox.io",
+      "externalId": "user@outlook.com",
       "source": {
-        "@odata.type": "microsoft.graph.awsIdentitySource",
-        "authoriztionSystemInfo": {
-          "authorizationSystemId": "956987887735",
-          "authorizationSystemType": "AWS",
-        }
-      },
+        "@odata.type": "microsoft.graph.samlIdentitySource",
+      }
       "identityType": "user"
     }
  },
@@ -169,11 +161,9 @@ Content-Type: application/json
  "notes": "Pretty Please",
  "createdDateTime": "2023-02-06T12:15:00Z",
  "scheduleInfo": {
-    "startDateTime": null,
     "expiration": {
       "duration": "PT1H"
     },
-    "recurrence": null
  },
  "ticketInfo": {
     "ticketNumber": "INC1234567",
@@ -217,7 +207,7 @@ Content-Type: application/json
       ]
     },
     "identityInfo": {
-      "externalId": "saketh@fortsentry.io",
+      "externalId": "user@test.onmicrosoft.com",
       "source": {
         "@odata.type": "microsoft.graph.edIdentitySource"
       },
@@ -228,7 +218,6 @@ Content-Type: application/json
   "justification": "I need to do this because I want to some new azure roles",
   "notes": "Pretty Pleaseeeee",
   "scheduleInfo": {
-    "startDateTime": null,
     "expiration": {
       "duration": "PT1H"
     },
@@ -237,8 +226,8 @@ Content-Type: application/json
   "ticketInfo": {
     "ticketNumber": "INC1234567",
     "ticketSystem": "ServiceNow",
-    "ticketSubmitterIdentityId": "saketh.kollu@outlook.com",
-    "ticketApproverIdentityId": "sakethsmanager@outlook.com"
+    "ticketSubmitterIdentityId": "user@outlook.com",
+    "ticketApproverIdentityId": "usermanager@outlook.com"
   }
 }
 ```
@@ -278,7 +267,7 @@ Content-Type: application/json
       ]
     },
     "identityInfo": {
-      "externalId": "saketh@fortsentry.io",
+      "externalId": "user@test.onmicrosoft.com",
       "source": {
         "@odata.type": "microsoft.graph.edIdentitySource"
       },
@@ -290,17 +279,15 @@ Content-Type: application/json
   "notes": "Pretty Pleaseeeee",
   "createdDateTime": "2023-02-06T12:15:00Z",
   "scheduleInfo": {
-    "startDateTime": null,
     "expiration": {
       "duration": "PT1H"
     },
-    "recurrence": null
   },
   "ticketInfo": {
     "ticketNumber": "INC1234567",
     "ticketSystem": "ServiceNow",
-    "ticketSubmitterIdentityId": "saketh.kollu@outlook.com",
-    "ticketApproverIdentityId": "sakethsmanager@outlook.com"
+    "ticketSubmitterIdentityId": "user@outlook.com",
+    "ticketApproverIdentityId": "usermanager@outlook.com"
   },
   "statusDetail": "submitted"
 }
@@ -328,10 +315,12 @@ Content-Type: application/json
     },
     "actionInfo": {
       "@odata.type": "microsoft.graph.gcpActionPermissionsDefinitionAction",
-      "actions": ["aiplatform:dataitems"]
+      "actions": [
+        "aiplatform:dataitems"
+      ]
     },
     "identityInfo": {
-      "externalId": "anowar.islam@cloudknox.io",
+      "externalId": "user@outlook.com",
       "source": {
         "@odata.type": "microsoft.graph.edIdentitySource"
       },
@@ -342,17 +331,15 @@ Content-Type: application/json
   "justification": "I need to do this because I want to code my own chat GPT-3 bot on GCP",
   "notes": "Pretty Pleaseeeee",
   "scheduleInfo": {
-    "startDateTime": null,
     "expiration": {
       "duration": "PT1H"
-    },
-    "recurrence": null
+    }
   },
   "ticketInfo": {
     "ticketNumber": "INC1234567",
     "ticketSystem": "ServiceNow",
-    "ticketSubmitterIdentityId": "saketh.kollu@outlook.com",
-    "ticketApproverIdentityId": "sakethsmanager@outlook.com"
+    "ticketSubmitterIdentityId": "user@outlook.com",
+    "ticketApproverIdentityId": "usermanager@outlook.com"
   }
 }
 ```
@@ -387,7 +374,7 @@ Content-Type: application/json
       ]
     },
     "identityInfo": {
-      "externalId": "anowar.islam@cloudknox.io",
+      "externalId": "user@outlook.com",
       "source": {
         "@odata.type": "microsoft.graph.edIdentitySource"
       },
@@ -399,17 +386,15 @@ Content-Type: application/json
   "notes": "Pretty Pleaseeeee",
   "createdDateTime": "2023-02-06T12:15:00Z",
   "scheduleInfo": {
-    "startDateTime": null,
     "expiration": {
       "duration": "PT1H"
-    },
-    "recurrence": null
+    }
   },
   "ticketInfo": {
     "ticketNumber": "INC1234567",
     "ticketSystem": "ServiceNow",
-    "ticketSubmitterIdentityId": "saketh.kollu@outlook.com",
-    "ticketApproverIdentityId": "sakethsmanager@outlook.com"
+    "ticketSubmitterIdentityId": "user@outlook.com",
+    "ticketApproverIdentityId": "usermanager@outlook.com"
   },
   "statusDetail": "submitted"
 }

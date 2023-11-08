@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.awsAuthorizationSystem not found
+GET /external/authorizationSystems/microsoft.graph.awsAuthorizationSystem
 ```
 
 ## Optional query parameters
@@ -58,7 +58,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.awsAuthorizationSystem not found
+GET https://graph.microsoft.com/beta/external/authorizationSystems/microsoft.graph.awsAuthorizationSystem
 ```
 
 
@@ -76,17 +76,20 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/microsoft.graph.awsAuthorizationSystem",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.awsAuthorizationSystem",
-      "id": "19e1f55f-e032-4500-fa88-87386ba0b2a1",
-      "authorizationSystemId": "String",
-      "authorizationSystemName": "String",
-      "authorizationSystemType": "String",
-      "associatedIdentities": {
-        "@odata.type": "microsoft.graph.awsAssociatedIdentities"
+      "id": "OTU2OTg3ODg3NzM1",
+      "authorizationSystemId": "956987887735",
+      "authorizationSystemName": "development",
+      "authorizationSystemType": "AWS",
+      "dataCollectionInfo@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems('OTU2OTg3ODg3NzM1')/microsoft.graph.awsAuthorizationSystem/dataCollectionInfo/$entity",
+      "dataCollectionInfo": {
+        "entitlements": {
+          "@odata.type": "microsoft.graph.noEntitlementsDataCollection"
+        }
       }
-    }
+    },
   ]
 }
 ```

@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /external/authorizationSystems/{authorizationSystemId}
+GET /external/authorizationSystems/{id}
 ```
 ## Optional query parameters
 
@@ -77,10 +77,13 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "id": "{base64}",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/$entity",
+  "@odata.type": "#microsoft.graph.awsAuthorizationSystem"
+  "id": "OTU2OTg3ODg3NzM1",
   "authorizationSystemId": "956987887735",
-  "authorizationSystemName": "permissionsmanagement-development",
-  "authorizationSystemType": "aws",
+  "authorizationSystemName": "development",
+  "authorizationSystemType": "AWS",
+  "dataCollectionInfo@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems('OTU2OTg3ODg3NzM1')/microsoft.graph.awsAuthorizationSystem/dataCollectionInfo/$entity",
   "dataCollectionInfo": {
     "entitlements": {
       "@odata.type": "microsoft.graph.noEntitlementsDataCollection"

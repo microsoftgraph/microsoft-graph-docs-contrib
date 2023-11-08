@@ -70,10 +70,7 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)",
   "authorizationSystemId": "String",
   "authorizationSystemName": "String",
-  "authorizationSystemType": "String",
-  "associatedIdentities": {
-    "@odata.type": "microsoft.graph.awsAssociatedIdentities"
-  }
+  "authorizationSystemType": "String"
 }
 ```
 

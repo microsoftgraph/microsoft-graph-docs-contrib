@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.gcpAuthorizationSystem not found
+GET /external/authorizationSystems/microsoft.graph.gcpAuthorizationSystem
 ```
 
 ## Optional query parameters
@@ -58,7 +58,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.gcpAuthorizationSystem not found
+GET https://graph.microsoft.com/beta/external/authorizationSystems/microsoft.graph.gcpAuthorizationSystem
 ```
 
 
@@ -76,17 +76,20 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/microsoft.graph.gcpAuthorizationSystem",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.gcpAuthorizationSystem",
-      "id": "bad44568-b498-99fe-a3bb-9aef506fb11c",
-      "authorizationSystemId": "String",
-      "authorizationSystemName": "String",
-      "authorizationSystemType": "String",
-      "associatedIdentities": {
-        "@odata.type": "microsoft.graph.gcpAssociatedIdentities"
+      "id": "Y2stY29tcGxpYW5jZS1h",
+      "authorizationSystemId": "ck-compliance",
+      "authorizationSystemName": "ck-compliance-test",
+      "authorizationSystemType": "GCP",
+      "dataCollectionInfo@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems('Y2stY29tcGxpYW5jZS1h')/microsoft.graph.gcpAuthorizationSystem/dataCollectionInfo/$entity",
+      "dataCollectionInfo": {
+        "entitlements": {
+          "@odata.type": "microsoft.graph.noEntitlementsDataCollection"
+        }
       }
-    }
+    },
   ]
 }
 ```
