@@ -57,7 +57,7 @@ You can specify the following properties when creating a **deviceLink**.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -136,17 +136,5 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 201 Created
-Content-Type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#networkAccess/filteringPolicies/$entity",
-    "id": "60aced7d-2dbe-4ffc-bcd3-1321b8425cbf",
-    "name": "Block Social",
-    "description": "Block Social Sites",
-    "version": "1.0.0",
-    "lastModifiedDateTime": "2023-11-01T06:04:31Z",
-    "createdDateTime": "2023-11-01T06:04:31Z",
-    "action": "block"
-}
+HTTP/1.1 204 No Content
 ```
