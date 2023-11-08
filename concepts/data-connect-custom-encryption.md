@@ -126,29 +126,30 @@ The following datasets are eligible for encryption for Data Connect:
 
 The following datasets are not yet eligible for encryption:
 
--	All datasets for Viva Insights
+- All datasets for Viva Insights
 
 > [!NOTE]
 > If your application has encryption enabled and contains a mix of eligible and non-eligible datasets, only the eligible datasets will be encrypted.
 
 ## Admin app approval 
 
-1. Log into the [Microsoft 365 admin authorization portal](https://admin.microsoft.com/Adminportal/Home#/Settings/MGDCAdminCenter) with your admin credentials.
+Admins use the following process to approve Data Connect apps:
+
+1. Sign in to the [Microsoft 365 admin authorization portal](https://admin.microsoft.com/Adminportal/Home#/Settings/MGDCAdminCenter) with your admin credentials.
 
 2. Choose the **Security & Privacy** tab in **Org settings**, and then select **Microsoft Graph Data Connect applications**, as shown in the following image.
     ![Screenshot with Org settings, the Security & Privacy tab, and Microsoft Graph Data Connect apps highlighted.](images/org-settings-security-and-privacy-data-connect-apps.png)
 
-3.	Please select the application ready for review. Within the **overview** section of the application details, ensure that encryption is enabled. 
-    ![Screenshot explains dataset encryption enabled in overview](images/admin-encryption-enabled.png)
+3.	Select the application that is ready for review. In the **Overview** section of the application details, ensure that encryption is enabled. 
+    ![Screenshot of a Data Connect app with Overview and Dataset Encryption highlighted](images/admin-encryption-enabled.png)
 
-
-4.	Within the **review** section of the application details, ensure encryption is enabled and the datasets requested. 
+4.	On the **Review** section of the application details, ensure that encryption is enabled and the datasets requested. 
     > [!NOTE]
-    > If encryption is enabled during app registration, it will apply to ALL the eligible datasets in the app.
+    > If encryption is enabled during app registration, it will apply to all the eligible datasets in the app.
 
-    ![Screenshot explains dataset encryption enabled in review](images/admin-approves-encryption.png)
+    ![Screenshot of a Data Connect app with Review and Data Encryption highlighted](images/admin-approves-encryption.png)
 
-5.	Once you have reviewed the application, please select **Approve, Decline, or Cancel**. An action must be taken and Data Connect will only apply encryption once the app is approved. To understand more on admin authorization, please see [app authorization.](./app-authorization.md)
+5.	After you review the application, select **Approve, Decline, or Cancel**. An action must be taken and Data Connect will only apply encryption after the app is approved. For more information, see [app authorization.](./app-authorization.md)
 
 ## Using Azure Key Vault for Custom Encryption
 
