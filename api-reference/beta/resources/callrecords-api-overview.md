@@ -24,8 +24,8 @@ The call records API is defined in the OData sub-namespace, `microsoft.graph.cal
 | [pstnBlockedUsersLogRow](callrecords-pstnblockeduserslogrow.md) | [getPstnBlockedUsersLog](../api/callrecords-callrecord-getpstnblockeduserslog.md)|
 | [pstnCallLogRow](callrecords-pstncalllogrow.md)|[getPstnCalls](../api/callrecords-callrecord-getpstncalls.md) |
 | [pstnOnlineMeetingDialoutReport](callrecords-pstnonlinemeetingdialoutreport.md) | [getPstnOnlineMeetingDialoutReport](../api/callrecords-callrecord-getpstnonlinemeetingdialoutreport.md)|
-| [segment](callrecords-segment.md) | [Get callRecord](../api/callrecords-callrecord-get.md)<br />[List sessions](../api/callrecords-session-list.md) |
-| [session](callrecords-session.md) | [Get callRecord](../api/callrecords-callrecord-get.md)<br />[List sessions](../api/callrecords-session-list.md) |
+| [segment](callrecords-segment.md) | [Get callRecord](../api/callrecords-callrecord-get.md)<br />[List sessions](../api/callrecords-callrecord-list-sessions.md) |
+| [session](callrecords-session.md) | [Get callRecord](../api/callrecords-callrecord-get.md)<br />[List sessions](../api/callrecords-callrecord-list-sessions.md) |
 | [smsLogRow](callrecords-smslogrow.md) | [getSmsLog](../api/callrecords-callrecord-getsmslog.md)|
 
 ## Call record structure
