@@ -151,36 +151,36 @@ Admins use the following process to approve Data Connect apps:
 
 5.	After you review the application, select **Approve, Decline, or Cancel**. An action must be taken and Data Connect will only apply encryption after the app is approved. For more information, see [app authorization.](./app-authorization.md)
 
-## Using Azure Key Vault for Custom Encryption
+## Using Azure Key Vault for custom encryption
 
-Follow the steps in "Setting up Azure Key Vault" tab as prerequisite before moving onto the next tab if you don't have an AKV set up.
+If you don't have an AKV set up, follow the steps in the Setting up Azure Key Vault tab before you proceed to the next tab.
 
-Once you have an existing AKV, hover over "Using your Azure Key Vault" tab and enable the correct role permissions required. Finally, click "Generating RSA keys with your Azure Key Vault" tab to create the required RSA keys in your AKV for custom encryption.
+After you have an existing AKV, go to the Using your Azure Key Vault tab to enable the required role permissions. Then go to the Generating RSA keys with your Azure Key Vault tab to create the required RSA keys in your AKV for custom encryption.
 
-No action is required from the Microsoft 365 admin for this section.
+No action is required from the Microsoft 365 admin to enable custom encryption.
 
 # [Setting up your Azure Key Vault](#tab/SettingUpAKV)
 
-1. Log into your [Azure portal](https://ms.portal.azure.com) with your developer credentials and click on the **Azure Key Vault** icon
-    ![Screenshot of the the Azure portal with Azure Key Vault boxed in](images/azure-portal-akv.png)
+1.Sign in to the [Azure portal](https://ms.portal.azure.com) with your developer credentials and choose the **Azure Key Vault** icon.
+    ![Screenshot of the the Azure portal with Azure Key Vault highlighted](images/azure-portal-akv.png)
 
-2. If you don't have an existing AKV, hover over to **Create**. Learn more about how to [create a new instance of AKV.](https://learn.microsoft.com/en-us/azure/key-vault/general/quick-create-portal) 
-    ![Screenshot of how to create Azure Key Vault](images/create-akv.png)
+2. If you don't have an existing AKV, choose **Create**. For more information, see [Create a key vault using the Azure portal](/azure/key-vault/general/quick-create-portal).
+    ![Screenshot of the Key vaults page with Create highlighted](images/create-akv.png)
 
-3. Click **Azure role-based access control (recommended)** underneath **Permission model** for the later steps to apply. 
+3. Choose **Azure role-based access control (recommended)** under **Permission model** for the later steps to apply. 
     ![Screenshot explains permission models during AKV registration](images/akv-permission-model.png)
 
 4. **Enable public access** in the **Networking** tab to allow Data Connect to access any public keys generated and stored. Data Connect is authorized only to access select public keys. 
     ![Screenshot explains networking for Azure Key Vault](images/akv-networking.png)
 
-5. Follow through the steps and select **Review + Create** when done.
+5. Follow the steps and select **Review + Create** when done.
 
 # [Using your Azure Key Vault](#tab/ExistingAKV)
 
-1. Log into your [Azure portal](https://ms.portal.azure.com) with your developer credentials and click on the **Azure Key Vault** icon
+1. Sign in to the [Azure portal](https://ms.portal.azure.com) with your developer credentials and choose the **Azure Key Vault** icon.
     ![Screenshot of the the Azure portal with Azure Key Vault boxed in](images/azure-portal-akv.png)
 
-2. Click on your Azure Key Vault. In this example, we use **LoBEncryption Demo**.
+2. Choose your Azure Key Vault; for example, **LoBEncryption Demo**.
     ![Screenshot of the AKVs listed on the home page](images/akv-main-page.png)
 
 3. Hover over **Access Control (IAM)** and click on **Add**.
