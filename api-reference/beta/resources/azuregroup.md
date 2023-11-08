@@ -15,7 +15,6 @@ Namespace: microsoft.graph
 
 Represents Azure groups.
 
-
 Inherits from [azureIdentity](../resources/azureidentity.md).
 
 ## Methods

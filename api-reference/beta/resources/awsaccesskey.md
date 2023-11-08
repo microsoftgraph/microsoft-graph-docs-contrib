@@ -15,7 +15,6 @@ Namespace: microsoft.graph
 
 Represents AWS access keys.
 
-
 Inherits from [awsIdentity](../resources/awsidentity.md).
 
 ## Methods

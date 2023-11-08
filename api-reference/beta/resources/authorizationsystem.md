@@ -30,15 +30,15 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authorizationSystemId|String|Authorization System Id onboarded to a tenant in EPM from a customer cloud environment.|
-|authorizationSystemName|String|Name of the authorization system detected after a collection.|
-|authorizationSystemType|String|Authorization System Type of this authorizationSystem.|
-|id|String|Unique Id of the Authorization System within EPM. Inherited from [entity](../resources/entity.md).|
+|authorizationSystemId|String|Identifier for the authorization system that you've onboarded to Microsoft Entra Permissions Management. Supports `$filter`(`eq`, `contains`) and `$orderBy`.|
+|authorizationSystemName|String|Name of the authorization system detected after onboarding. Supports `$filter`(`eq`,`contains`) and `$orderBy`.|
+|authorizationSystemType|String|The type of authorization system. Can be `gcp`, `azure`, or `aws`. Supports `$filter`(`eq`).|
+|id|String|Unique identifier for the authorization system within Microsoft Entra Permissions Management. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|dataCollectionInfo|[dataCollectionInfo](../resources/datacollectioninfo.md)|EPM Authorization System Data Collection related information.|
+|dataCollectionInfo|[dataCollectionInfo](../resources/datacollectioninfo.md)|Defines how and whether Permissions Management collects data from the onboarded authorization system. Supports `$filter` (`eq`) as follows:  `$filter=dataCollectionInfo/entitlements/permissionsModificationCapability` and `$filter=dataCollectionInfo/entitlements/status`.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

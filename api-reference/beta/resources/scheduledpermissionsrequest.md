@@ -1,6 +1,6 @@
 ---
 title: "scheduledPermissionsRequest resource type"
-description: "Represents a permissions request that (EPM) will use to manage permissions for a request identity on resources in the authorization system."
+description: "Represents a request for permissions on resources in a target authorization system that an identity has made through Microsoft Entra Permissions Management, either directly or indirectly."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -25,14 +25,14 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|Time when the scheduledPermissionsRequest was created.|
-|id|String|Unique Id of the Permissions Request within EPM. Inherited from [entity](../resources/entity.md).|
-|justification|String|Request justification.|
-|notes|String|Additional notes to add to the request.|
-|requestedPermissions|[permissionsDefinition](../resources/permissionsdefinition.md)|Defines the permission request itself.|
-|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|Schedule to assign the requestedPermissions.|
+|createdDateTime|DateTimeOffset|The date and time when the identity created the request.|
+|id|String|Unique identifier for the permissions request within Permissions Management. Inherited from [entity](../resources/entity.md).|
+|justification|String|The identity's justification for the request.|
+|notes|String|Additional context for the permissions request.|
+|requestedPermissions|[permissionsDefinition](../resources/permissionsdefinition.md)|The permissions requested.|
+|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|When to assign the requested permissions.|
 |statusDetail|statusDetail|The current status of the request. The possible values are: `submitted`, `approved`, `completed`, `canceled`, `rejected`, `unknownFutureValue`.|
-|ticketInfo|[ticketInfo](../resources/ticketinfo.md)|Represents ticketing related metadata that can be used to correlate to the request.|
+|ticketInfo|[ticketInfo](../resources/ticketinfo.md)|Ticketing-related metadata that you can use to correlate to the request.|
 
 ## Relationships
 None.

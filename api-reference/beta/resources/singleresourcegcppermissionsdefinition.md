@@ -1,9 +1,9 @@
 ---
 title: "singleResourceGcpPermissionsDefinition resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents permissions for a GCP resource."
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
@@ -13,22 +13,21 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents permissions for a GCP resource.
 
 Inherits from [permissionsDefinition](../resources/permissionsdefinition.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionInfo|[gcpPermissionsDefinitionAction](../resources/gcppermissionsdefinitionaction.md)|**TODO: Add Description**|
-|authorizationSystemInfo|[permissionsDefinitionAuthorizationSystem](../resources/permissionsdefinitionauthorizationsystem.md)|**TODO: Add Description** Inherited from [permissionsDefinition](../resources/permissionsdefinition.md).|
-|resourceId|String|**TODO: Add Description**|
+|actionInfo|[gcpPermissionsDefinitionAction](../resources/gcppermissionsdefinitionaction.md)|Information relating to actions defined in the permissions.|
+|authorizationSystemInfo|[permissionsDefinitionAuthorizationSystem](../resources/permissionsdefinitionauthorizationsystem.md)|nformation relating to permissions defined in the authorization system. Inherited from [permissionsDefinition](../resources/permissionsdefinition.md).|
+|resourceId|String|Identifier for the resource.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|identityInfo|[permissionsDefinitionAuthorizationSystemIdentity](../resources/permissionsdefinitionauthorizationsystemidentity.md)|**TODO: Add Description** Inherited from [microsoft.graph.permissionsDefinition](../resources/permissionsdefinition.md)|
+|identityInfo|[permissionsDefinitionAuthorizationSystemIdentity](../resources/permissionsdefinitionauthorizationsystemidentity.md)|Information relating to permissions defined for identities in the authorization system. Inherited from [microsoft.graph.permissionsDefinition](../resources/permissionsdefinition.md)|
 
 ## JSON representation
 The following JSON representation shows the resource type.

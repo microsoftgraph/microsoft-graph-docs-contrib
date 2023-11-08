@@ -15,7 +15,6 @@ Namespace: microsoft.graph
 
 authorizationSystemIdentity is used to represent identity in an authorization system.
 
-
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
@@ -55,4 +54,3 @@ The following JSON representation shows the resource type.
   "externalId": "String"
 }
 ```
-

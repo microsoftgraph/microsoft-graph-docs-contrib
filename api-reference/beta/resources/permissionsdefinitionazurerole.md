@@ -1,9 +1,9 @@
 ---
 title: "permissionsDefinitionAzureRole resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents permissions defined for an Azure role."
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents permissions defined for an Azure role.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -23,13 +22,11 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |[List permissionsDefinitionAzureRoles](../api/permissionsdefinitionazurerole-list.md)|[permissionsDefinitionAzureRole](../resources/permissionsdefinitionazurerole.md) collection|Get a list of the [permissionsDefinitionAzureRole](../resources/permissionsdefinitionazurerole.md) objects and their properties.|
 |[Get permissionsDefinitionAzureRole](../api/permissionsdefinitionazurerole-get.md)|[permissionsDefinitionAzureRole](../resources/permissionsdefinitionazurerole.md)|Read the properties and relationships of a [permissionsDefinitionAzureRole](../resources/permissionsdefinitionazurerole.md) object.|
-|[Update permissionsDefinitionAzureRole](../api/permissionsdefinitionazurerole-update.md)|[permissionsDefinitionAzureRole](../resources/permissionsdefinitionazurerole.md)|Update the properties of a [permissionsDefinitionAzureRole](../resources/permissionsdefinitionazurerole.md) object.|
-|[Delete permissionsDefinitionAzureRole](../api/permissionsdefinitionazurerole-delete.md)|None|Delete a [permissionsDefinitionAzureRole](../resources/permissionsdefinitionazurerole.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
+|id|String|List of identifiers. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 None.

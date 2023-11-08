@@ -1,6 +1,6 @@
 ---
 title: "awsStatement resource type"
-description: "Specifies a single AWS Statement."
+description: "Specifies an AWS statement that includes information about a single permission."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies a single AWS Statement.
+Specifies an AWS statement that includes information about a single permission.
 
 ## Methods
 None.

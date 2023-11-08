@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an permissionsDefinitionIdentitySource for when the user is a cross account user in AWS.
+Represents an permissionsDefinitionIdentitySource for when the user is a cross-account user in AWS.
 
 Inherits from [permissionsDefinitionIdentitySource](../resources/permissionsdefinitionidentitysource.md).
 

@@ -20,7 +20,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List AWS authorization system type services](../api/awsauthorizationsystem-list-services.md)|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md) collection|Get a list of the [authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md) objects and their properties.|
+|[List AWS authorization system services](../api/awsauthorizationsystem-list-services.md)|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md) collection|Get a list of the [authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md) objects and their properties for the [AWS authorization system type](../resources/authorizationsystemtype.md).|
 |[List Azure authorization system type services](../api/azureauthorizationsystem-list-services.md)|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md) collection|Get a list of the [authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md) objects and their properties.|
 |[List GCP authorization system type services](../api/gcpauthorizationsystem-list-services.md)|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md) collection|Get a list of the [authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md) objects and their properties.|
 

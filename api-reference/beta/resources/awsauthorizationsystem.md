@@ -1,9 +1,9 @@
 ---
 title: "awsAuthorizationSystem resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents findings for an AWS authorization system."
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents findings for an AWS authorization system.
 
 Inherits from [authorizationSystem](../resources/authorizationsystem.md).
 
@@ -23,36 +22,24 @@ Inherits from [authorizationSystem](../resources/authorizationsystem.md).
 |:---|:---|:---|
 |[List awsAuthorizationSystems](../api/awsauthorizationsystem-list.md)|[awsAuthorizationSystem](../resources/awsauthorizationsystem.md) collection|Get a list of the [awsAuthorizationSystem](../resources/awsauthorizationsystem.md) objects and their properties.|
 |[Get awsAuthorizationSystem](../api/awsauthorizationsystem-get.md)|[awsAuthorizationSystem](../resources/awsauthorizationsystem.md)|Read the properties and relationships of an [awsAuthorizationSystem](../resources/awsauthorizationsystem.md) object.|
-|[Update awsAuthorizationSystem](../api/awsauthorizationsystem-update.md)|[awsAuthorizationSystem](../resources/awsauthorizationsystem.md)|Update the properties of an [awsAuthorizationSystem](../resources/awsauthorizationsystem.md) object.|
-|[Delete awsAuthorizationSystem](../api/awsauthorizationsystem-delete.md)|None|Delete an [awsAuthorizationSystem](../resources/awsauthorizationsystem.md) object.|
-|[List actions](../api/awsauthorizationsystem-list-actions.md)|[awsAuthorizationSystemTypeAction](../resources/awsauthorizationsystemtypeaction.md) collection|Get the awsAuthorizationSystemTypeAction resources from the actions navigation property.|
-|[Create awsAuthorizationSystemTypeAction](../api/awsauthorizationsystem-post-actions.md)|[awsAuthorizationSystemTypeAction](../resources/awsauthorizationsystemtypeaction.md)|Create a new awsAuthorizationSystemTypeAction object.|
-|[List dataCollectionInfo](../api/awsauthorizationsystem-list-datacollectioninfo.md)|[dataCollectionInfo](../resources/datacollectioninfo.md) collection|Get the dataCollectionInfo resources from the dataCollectionInfo navigation property.|
-|[Create dataCollectionInfo](../api/awsauthorizationsystem-post-datacollectioninfo.md)|[dataCollectionInfo](../resources/datacollectioninfo.md)|Create a new dataCollectionInfo object.|
-|[List policies](../api/awsauthorizationsystem-list-policies.md)|[awsPolicy](../resources/awspolicy.md) collection|Get the awsPolicy resources from the policies navigation property.|
-|[Create awsPolicy](../api/awsauthorizationsystem-post-policies.md)|[awsPolicy](../resources/awspolicy.md)|Create a new awsPolicy object.|
-|[List resources](../api/awsauthorizationsystem-list-resources.md)|[awsAuthorizationSystemResource](../resources/awsauthorizationsystemresource.md) collection|Get the awsAuthorizationSystemResource resources from the resources navigation property.|
-|[Create awsAuthorizationSystemResource](../api/awsauthorizationsystem-post-resources.md)|[awsAuthorizationSystemResource](../resources/awsauthorizationsystemresource.md)|Create a new awsAuthorizationSystemResource object.|
-|[List services](../api/awsauthorizationsystem-list-services.md)|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md) collection|Get the authorizationSystemTypeService resources from the services navigation property.|
-|[Create authorizationSystemTypeService](../api/awsauthorizationsystem-post-services.md)|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md)|Create a new authorizationSystemTypeService object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|associatedIdentities|[awsAssociatedIdentities](../resources/awsassociatedidentities.md)|**TODO: Add Description**|
-|authorizationSystemId|String|**TODO: Add Description** Inherited from [authorizationSystem](../resources/authorizationsystem.md).|
-|authorizationSystemName|String|**TODO: Add Description** Inherited from [authorizationSystem](../resources/authorizationsystem.md).|
-|authorizationSystemType|String|**TODO: Add Description** Inherited from [authorizationSystem](../resources/authorizationsystem.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
+|associatedIdentities|[awsAssociatedIdentities](../resources/awsassociatedidentities.md)|Identities in the authorization system.|
+|authorizationSystemId|String|Authorization system ID onboarded to a tenant from a customer cloud environment. Supports `$filter`, `orderby`. Inherited from [authorizationSystem](../resources/authorizationsystem.md).|
+|authorizationSystemName|String|Name of the authorization system detected after a collection. Supports `$filter`, `orderby`. Inherited from [authorizationSystem](../resources/authorizationsystem.md).|
+|authorizationSystemType|String|Authorization System Type of this authorizationSystem. Supports `$filter`. Inherited from [authorizationSystem](../resources/authorizationsystem.md).|
+|id|String| Unique Id of the Authorization System. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|actions|[awsAuthorizationSystemTypeAction](../resources/awsauthorizationsystemtypeaction.md) collection|**TODO: Add Description**|
-|dataCollectionInfo|[dataCollectionInfo](../resources/datacollectioninfo.md)|**TODO: Add Description** Inherited from [microsoft.graph.authorizationSystem](../resources/authorizationsystem.md)|
-|policies|[awsPolicy](../resources/awspolicy.md) collection|**TODO: Add Description**|
-|resources|[awsAuthorizationSystemResource](../resources/awsauthorizationsystemresource.md) collection|**TODO: Add Description**|
-|services|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md) collection|**TODO: Add Description**|
+|actions|[awsAuthorizationSystemTypeAction](../resources/awsauthorizationsystemtypeaction.md) collection|List of actions for service in authorization system.|
+|dataCollectionInfo|[dataCollectionInfo](../resources/datacollectioninfo.md)|Used to expose data collection status of this authorizationSystem. Inherited from [microsoft.graph.authorizationSystem](../resources/authorizationsystem.md)|
+|policies|[awsPolicy](../resources/awspolicy.md) collection|Policies associated with the authorization system type.|
+|resources|[awsAuthorizationSystemResource](../resources/awsauthorizationsystemresource.md) collection|Resources associated with the authorization system type.|
+|services|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md) collection|Services associated with the authorization system type.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

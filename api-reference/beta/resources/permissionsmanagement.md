@@ -1,6 +1,6 @@
 ---
 title: "permissionsManagement resource type"
-description: "Used for the path based routing with path prefix permissionsManagement that leads to permissionsRequest."
+description: "The base container for the relationships that define the requests for permissions in an authorization system that you've onboarded to Microsoft Entra Permissions Management."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used for the path based routing with path prefix permissionsManagement that leads to permissionsRequest.
+The base container for the relationships that define the requests for permissions in an authorization system that you've onboarded to Microsoft Entra Permissions Management.
 
 ## Methods
 None.

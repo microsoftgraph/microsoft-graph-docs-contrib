@@ -1,6 +1,6 @@
 ---
 title: "permissionsDefinition resource type"
-description: "Represents the authorizationSystemInfo needed to request permissions, the actions to allow the user to perform and the identity."
+description: "An abstract type that represents information about the permissions request, such as the authorization system, the identities making the request, and the actions that the identities need the permissions for."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,12 +13,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Abstract complex type that represents the authorizationSystemInfo needed to request permissions, the actions to allow the user to perform and the identity. Resource may be implicit or be contained in other properties. It is not defined in the abstract type. Each authorization system type can extend this to its specific needs.
+An abstract type that represents information about the permissions request, such as the authorization system, the identities making the request, and the actions for which the identities need the permissions.
+
+The following resources are derived from this abstract type:
+[awsPermissionsDefinition](/resources/awspermissionsdefinition.md)
+[singleResourceAzurePermissionsDefinition](/resources/singleresourceazurepermissionsdefinition.md)
+[singleResourceGcpPermissionsDefinition](/resources/singleresourcegcppermissionsdefinition.md)
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authorizationSystemInfo|[permissionsDefinitionAuthorizationSystem](../resources/permissionsdefinitionauthorizationsystem.md)|Info about the authorization system to assign permissions on.|
+|authorizationSystemInfo|[permissionsDefinitionAuthorizationSystem](../resources/permissionsdefinitionauthorizationsystem.md)|Information relating to the authorization system and permissions assigned.|
 
 ## Relationships
 |Relationship|Type|Description|

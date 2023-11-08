@@ -1,9 +1,9 @@
 ---
 title: "azureActionPermissionsDefinitionAction resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents findings for Azure actions."
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents findings for actions under Azure permissions.
 
 
 Inherits from [azurePermissionsDefinitionAction](../resources/azurepermissionsdefinitionaction.md).
@@ -21,7 +21,7 @@ Inherits from [azurePermissionsDefinitionAction](../resources/azurepermissionsde
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actions|String collection|**TODO: Add Description**|
+|actions|String collection|List of actions.|
 
 ## Relationships
 None.

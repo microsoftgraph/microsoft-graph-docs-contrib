@@ -15,7 +15,6 @@ Namespace: microsoft.graph
 
 Represents the source of the Azure identity.
 
-
 Inherits from [authorizationSystemIdentitySource](../resources/authorizationsystemidentitysource.md).
 
 ## Properties

@@ -1,9 +1,9 @@
 ---
 title: "gcpRolePermissionsDefinitionAction resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents permissions for a GCP role."
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
@@ -13,19 +13,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents permissions for a GCP role.
 
 Inherits from [gcpPermissionsDefinitionAction](../resources/gcppermissionsdefinitionaction.md).
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|roles|[permissionsDefinitionGcpRole](../resources/permissionsdefinitiongcprole.md) collection|**TODO: Add Description**|
+|roles|[permissionsDefinitionGcpRole](../resources/permissionsdefinitiongcprole.md) collection|Permissions defined in the GCP role.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

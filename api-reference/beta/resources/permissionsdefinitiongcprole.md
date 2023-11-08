@@ -1,10 +1,9 @@
 ---
 title: "permissionsDefinitionGcpRole resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents permissions for a GCP role."
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
-doc_type: resourcePageType
+ms.prod: "multicloud-permissions-management"
 ---
 
 # permissionsDefinitionGcpRole resource type
@@ -13,8 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents permissions for a GCP role.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -23,13 +21,11 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |[List permissionsDefinitionGcpRoles](../api/permissionsdefinitiongcprole-list.md)|[permissionsDefinitionGcpRole](../resources/permissionsdefinitiongcprole.md) collection|Get a list of the [permissionsDefinitionGcpRole](../resources/permissionsdefinitiongcprole.md) objects and their properties.|
 |[Get permissionsDefinitionGcpRole](../api/permissionsdefinitiongcprole-get.md)|[permissionsDefinitionGcpRole](../resources/permissionsdefinitiongcprole.md)|Read the properties and relationships of a [permissionsDefinitionGcpRole](../resources/permissionsdefinitiongcprole.md) object.|
-|[Update permissionsDefinitionGcpRole](../api/permissionsdefinitiongcprole-update.md)|[permissionsDefinitionGcpRole](../resources/permissionsdefinitiongcprole.md)|Update the properties of a [permissionsDefinitionGcpRole](../resources/permissionsdefinitiongcprole.md) object.|
-|[Delete permissionsDefinitionGcpRole](../api/permissionsdefinitiongcprole-delete.md)|None|Delete a [permissionsDefinitionGcpRole](../resources/permissionsdefinitiongcprole.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
+|id|String|List of identifiers. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 None.

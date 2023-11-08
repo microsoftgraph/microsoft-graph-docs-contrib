@@ -1,9 +1,9 @@
 ---
 title: "azureRolePermissionsDefinitionAction resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents permissions for an Azure role."
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
@@ -13,19 +13,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents permissions for an Azure role.
 
 Inherits from [azurePermissionsDefinitionAction](../resources/azurepermissionsdefinitionaction.md).
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|roles|[permissionsDefinitionAzureRole](../resources/permissionsdefinitionazurerole.md) collection|**TODO: Add Description**|
+|roles|[permissionsDefinitionAzureRole](../resources/permissionsdefinitionazurerole.md) collection|Permissions defined in the Azure role.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

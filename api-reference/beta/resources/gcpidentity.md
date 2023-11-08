@@ -15,7 +15,6 @@ Namespace: microsoft.graph
 
 Represents GCP identities.
 
-
 Inherits from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).
 
 The following resources inherit from this resource type:

@@ -15,7 +15,6 @@ Namespace: microsoft.graph
 
 Represents AWS lambda functions.
 
-
 Inherits from [awsIdentity](../resources/awsidentity.md).
 
 ## Methods

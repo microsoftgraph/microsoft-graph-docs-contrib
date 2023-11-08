@@ -1,9 +1,9 @@
 ---
 title: "gcpActionPermissionsDefinitionAction resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents permissions for GCP."
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
@@ -13,15 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents permissions for GCP.
 
 Inherits from [gcpPermissionsDefinitionAction](../resources/gcppermissionsdefinitionaction.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actions|String collection|**TODO: Add Description**|
+|actions|String collection|List of actions.|
 
 ## Relationships
 None.

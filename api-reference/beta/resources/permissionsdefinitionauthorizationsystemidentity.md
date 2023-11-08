@@ -1,5 +1,6 @@
 ---
-title: "permissionsDefinitionAuthorizationSystemIdentity description: "Represents an identity."
+title: "permissionsDefinitionAuthorizationSystemIdentity"
+description: "Represents an identity that's requesting permissions in an authorization system, either directly or indirectly."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -12,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an identity.
+Represents an identity that's requesting permissions in an authorization system, either directly or indirectly.
 
 ## Methods
 None.
@@ -20,7 +21,7 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|externalId|String|Id of the identity in the external authorization system. Prefixed with rsn: if this is a SAML or ED user in AWS.|
+|externalId|String|ID of the identity in the external authorization system. Prefixed with `rsn:` if this is a SAML or ED user in AWS. Alternate key.|
 |identityType|permissionsDefinitionIdentityType|Role Id. The possible values are: `user`, `role`, `application`, `managedIdentity`, `serviceAccount`, `unknownFutureValue`.|
 |source|[permissionsDefinitionIdentitySource](../resources/permissionsdefinitionidentitysource.md)|Role Id.|
 

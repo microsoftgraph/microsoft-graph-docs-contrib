@@ -15,9 +15,6 @@ Namespace: microsoft.graph
 
 Used to represent an authorization system identity sourced from gsuite
 
-
-
-
 Inherits from [authorizationSystemIdentitySource](../resources/authorizationsystemidentitysource.md).
 
 ## Properties

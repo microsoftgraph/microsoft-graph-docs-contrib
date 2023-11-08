@@ -1,6 +1,6 @@
 ---
 title: "awsPermissionsDefinition resource type"
-description: "AWS Specific Permissions Definition that extends permissionsDefinition that requires AWS Specific ActionInfo."
+description: "AWS-specific permissions request details."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-AWS Specific Permissions Definition that extends permissionsDefinition that requires AWS Specific ActionInfo
+AWS-specific permissions request details.
 
 Inherits from [permissionsDefinition](../resources/permissionsdefinition.md).
 
@@ -21,12 +21,12 @@ Inherits from [permissionsDefinition](../resources/permissionsdefinition.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |actionInfo|[awsPermissionsDefinitionAction](../resources/awspermissionsdefinitionaction.md)|The actions the identity will have as part of the permission.|
-|authorizationSystemInfo|[permissionsDefinitionAuthorizationSystem](../resources/permissionsdefinitionauthorizationsystem.md)|Info about the authorization system to assign permissions on. Inherited from [permissionsDefinition](../resources/permissionsdefinition.md).|
+|authorizationSystemInfo|[permissionsDefinitionAuthorizationSystem](../resources/permissionsdefinitionauthorizationsystem.md)|Information about the authorization system to assign permissions on. Inherited from [permissionsDefinition](../resources/permissionsdefinition.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|identityInfo|[permissionsDefinitionAuthorizationSystemIdentity](../resources/permissionsdefinitionauthorizationsystemidentity.md)|The identity receiving the actionInfo. Inherited from [microsoft.graph.permissionsDefinition](../resources/permissionsdefinition.md)|
+|identityInfo|[permissionsDefinitionAuthorizationSystemIdentity](../resources/permissionsdefinitionauthorizationsystemidentity.md)|The identity that's requesting permissions, either directly or indirectly. Inherited from [microsoft.graph.permissionsDefinition](../resources/permissionsdefinition.md)|
 
 ## JSON representation
 The following JSON representation shows the resource type.

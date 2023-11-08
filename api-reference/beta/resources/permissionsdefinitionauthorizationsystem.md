@@ -18,8 +18,8 @@ Represents the authorization system that the permissions will be requested on.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authorizationSystemId|String|The Authorization System Id.|
-|authorizationSystemType|String|The Authorization System Type.|
+|authorizationSystemId|String|The authorizationSystemId value of the [authorization system](../resources/authorizationsystem.md).|
+|authorizationSystemType|String|The authorizationSystemType value of the [authorization system](../resources/authorizationsystem.md)|
 
 ## Relationships
 None.

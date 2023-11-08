@@ -16,8 +16,7 @@ Namespace: microsoft.graph
 Container to represent different kinds of azure identities
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None
 
 ## Relationships
 |Relationship|Type|Description|

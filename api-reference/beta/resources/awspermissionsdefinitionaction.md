@@ -1,6 +1,6 @@
 ---
 title: "awsPermissionsDefinitionAction resource type"
-description: "RAbstract Complex Type that represents the action to take in a permissionsDefinition if the request is approved specific for AWS."
+description: "An abstract complex type that represents the action to take in a permissionsDefinition if the request specific for the AWS authorization system is approved."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,9 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Abstract Complex Type that represents the action to take in a permissionsDefinition if the request is approved specific for AWS.
+An abstract complex type that represents the action to take in a permissionsDefinition if the request specific for the AWS authorization system is approved.
 
 Inherits from [permissionsDefinitionAction](../resources/permissionsdefinitionaction.md).
+
+The [awsActionsPermissionsDefinitionAction](../resources/awsActionsPermissionsDefinitionAction.md) type inherits from this abstract type.
+
+The [awsPolicyPermissionsDefinitionAction](../resources/awsPolicyPermissionsDefinitionAction.md) resource type derives from this abstract type.
+
+The [awsPolicyPermissionsDefinitionAction](../resources/awsPolicyPermissionsDefinitionAction.md) resource type derives from this abstract type.
 
 ## Properties
 |Property|Type|Description|
