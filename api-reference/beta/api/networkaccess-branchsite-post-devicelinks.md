@@ -128,13 +128,6 @@ POST https://graph.microsoft.com/beta/networkAccess/connectivity/branches/19a920
 
 ### Response
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.networkaccess.deviceLink"
-}
--->
 ``` http
 HTTP/1.1 204 No Content
 ```
