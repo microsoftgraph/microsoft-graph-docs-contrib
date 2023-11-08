@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/aws/findings('id')/graph.securityToolAwsServerlessFunctionAdministratorFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings/graph.securityToolAwsServerlessFunctionAdministratorFinding
 ```
 
 ## Optional query parameters
@@ -58,7 +58,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('MSxTZWN1cml0eVRvb2xBd3NTZXJ2ZXJsZXNzRnVuY3Rpb25BZG1pbmlzdHJhdG9yRmluZGluZyw1MDA2')/graph.securityToolAwsServerlessFunctionAdministratorFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.securityToolAwsServerlessFunctionAdministratorFinding
 ```
 
 

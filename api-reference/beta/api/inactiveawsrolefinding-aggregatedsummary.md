@@ -41,8 +41,6 @@ The following table shows the parameters that are required with this function.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |authorizationSystemIds|Collection(Edm.String)|List of authorization system IDs.|
-|bindingParameter|Collection(graph.inactiveAwsRoleFinding)||
-
 
 ## Request headers
 |Name|Description|
