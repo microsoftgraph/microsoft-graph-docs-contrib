@@ -41,16 +41,15 @@ In the request body, provide a JSON representation of a [exportJob](../resources
 
 Following table shows the properties that are required when you create the exportJob.
 | Property | Type | Description |
-|: ------- |: --- |: -----------|
-| goalsOrganizationId | String | The unique identifier of the goals organization |
-| ... | ... | ... |
-| explorerViewId | String | The unique identifier of the explorer view to be exported |
+|   ------- |------ | -----------|
+| goalsOrganizationId | String | The unique identifier of the goals organization. |
+| explorerViewId | String | The unique identifier of the explorer view to be exported. |
 
 ## Response
 
 If successful, this method returns a `201 Created` and a [exportJob](../resources/exportjob.md)  object in the response body.
 
-This method also returns `409 Conflict` when attempting to create an [exportJob](../resources/exportjob.md) object with the same properties (goalsOrganizationId and explorerViewId) to an existing [exportJob](../resources/viva-goals-export-job.md) object that is pending completion. 
+This method also returns `409 Conflict` when attempting to create an [exportJob](../resources/exportjob.md) object with the same properties (goalsOrganizationId and explorerViewId) to an existing [exportJob](../resources/exportjob.md) object that is pending completion. 
 
 Once the pending job completes, you can create the [exportJob](../resources/exportjob.md) object.
 
