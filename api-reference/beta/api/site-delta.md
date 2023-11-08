@@ -1,6 +1,6 @@
 ---
 author: "vanshisingh"
-description: "Get newly created, updated, or deleted sites without having to perform a full read of the entire collection."
+description: "Get newly created, updated, or deleted sites without having to perform a full read of the entire sites collection."
 title: "sites: delta"
 ms.localizationpriority: "medium"
 ms.prod: "sharepoint"
