@@ -168,10 +168,10 @@ No action is required from the Microsoft 365 admin to enable custom encryption.
     ![Screenshot of the Key vaults page with Create highlighted](images/create-akv.png)
 
 3. Choose **Azure role-based access control (recommended)** under **Permission model** for the later steps to apply. 
-    ![Screenshot explains permission models during AKV registration](images/akv-permission-model.png)
+    ![Screenshot of the Permissions model section of the AKV registration](images/akv-permission-model.png)
 
-4. **Enable public access** in the **Networking** tab to allow Data Connect to access any public keys generated and stored. Data Connect is authorized only to access select public keys. 
-    ![Screenshot explains networking for Azure Key Vault](images/akv-networking.png)
+4. On the **Networking** tab, choose **Enable public access** to allow Data Connect to access any public keys that were generated and stored. Data Connect is authorized only to access select public keys. 
+    ![Screenshot of the Networking tab of the Azure Key Vault](images/akv-networking.png)
 
 5. Follow the steps and select **Review + Create** when done.
 
@@ -183,40 +183,40 @@ No action is required from the Microsoft 365 admin to enable custom encryption.
 2. Choose your Azure Key Vault; for example, **LoBEncryption Demo**.
     ![Screenshot of the AKVs listed on the home page](images/akv-main-page.png)
 
-3. Hover over **Access Control (IAM)** and click on **Add**.
-    ![Screenshot of access control and how to add roles based permission](images/akv-access-control.png)
+3. On the **Access Control (IAM)** tab, choose **Add**.
+    ![Screenshot of Azure Key Vault for an app with Access control (IAM) and Add highlighted](images/akv-access-control.png)
 
-4. Click **Add role assignment** within **Add**.
-    ![Screenshot of access control and adding role assignments](images/akv-add-role-assignment.png)
+4. Choose **Add role assignment**.
+    ![Screenshot with the Add role assignments option highlighted](images/akv-add-role-assignment.png)
 
-5. Once you are on the Role Assignment page, within **Role**, type in "Key Vault Crypto User" and select it. Click **Next** when done.
-    ![Screenshot shows key vault crypto user on the role assignment page](images/akv-crypto-user.png)
+5. On the **Role** tab, type **Key Vault Crypto User** and select it, and then choose **Next**.
+    ![Screenshot with key vault crypto user highlighted on the role assignment page](images/akv-crypto-user.png)
 
-6. Move onto the **Members** tab and enable "Assign Access to" **Users, group, and service principal** and click on **+ Select Members**. 
+6. On the **Members** tab, enable **Assign Access to** for **Users, group, and service principal**, and choose **+ Select Members**. 
 
-7. Select the correct service principal (existing Data Connect application name) through the window pane on the left. This step ensures that your Data Connect application can connect to your Azure Key Vault. Click **Next** when done.
-    ![Screenshot shows how to give access to the correct service principal](images/akv-select-service-principal.png)
+7. On the left pane, select the correct service principal (the Data Connect application name). This ensures that your Data Connect application can connect to your Azure Key Vault. Choose **Next**.
+    ![Screenshot of the Members tab with the Assign Access to and Select members sections highlighted](images/akv-select-service-principal.png)
 
-7. Review the details within the **Review + assign** tab and click on **Review + Assign** on the lower right corner. Your Azure Key Vault can now connect to your Data Connect Application.
+7. Review the details on the **Review + assign** tab and choose **Review + Assign** on the lower right corner. Your Azure Key Vault can now connect to your Data Connect application.
 
 # [Generating RSA keys with your Azure Key Vault](#tab/AKVKeys)
 
-1. Hover over to the main Key Vaults page and click on your Azure Key Vault set up from the previous steps. In this example, we use **LoBEncryption Demo**.
+1. Go to the main Key Vaults page and choose your Azure Key Vault; for example, **LoBEncryption Demo**.
     ![Screenshot of the AKVs listed on the home page](images/akv-main-page.png)
 
-2. Select **Keys** within the left window pane of your AKV.
+2. Select **Keys**.
 
-    ![Screenshot of left window pane including Keys](images/akv-keys.png)
+    ![Screenshot of the left window pane with Keys highlighted](images/akv-keys.png)
 
-3. Click on **Generate/Import**
-    ![Screenshot to generate or import your keys](images/akv-generate-keys.png)
+3. Choose **Generate/Import**.
+    ![Screenshot of the application page with Generate/import highlighted](images/akv-generate-keys.png)
 
-4. Generate a RSA key and name your key to be your Azure Active Directory (AAD) tenant ID. Ensure it has a unique name (there should only be one key per respective AAD tenant ID).
-    ![Screenshot going over the specific on how to generate a RSA Key](images/akv-generate-RSA-key.png)
+4. Generate an RSA key and name your key to be your Microsoft Entra tenant ID. Make sure that it has a unique name (you should only have one key per Microsoft Entra tenant ID).
+    ![Screenshot of the Create a key page with fields highlighted](images/akv-generate-RSA-key.png)
 
     > [!NOTE]
-    > The RSA key must be set to 2048 bits for key size and have a listed expiration date or else it will not be valid. 
+    > The RSA key must be set to 2048 bits for key size and must have an expiration date or it won't be valid. 
 
-5. Click on **Create** when you're done filling out the details!
+5. Fill out the details and choose **Create**.
 
 
