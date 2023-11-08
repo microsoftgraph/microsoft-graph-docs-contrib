@@ -11,7 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Download the content of a successfully completed [exportJob](../resources/viva-goals-export-job.md) resource.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Download the content of a successfully completed [exportJob](../resources/exportjob.md) resource.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -21,19 +23,23 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|Goals-Export.Read.All|Goals-Export.ReadWrite.All|
 
 ## HTTP request
-Download the content of a successfully completed [exportJob](../resources/viva-goals-export-job.md) resource:
 
 ```http
 GET /employeeExperience/goals/exportJobs/{jobId}/content
 ```
 
+## Optional query parameters
+
+Not supported.
+
 ## Request headers
-| Header       |  Value|
+| Name          | Description   |
 |:-------------|:------|
 | Authorization  | Bearer {token}. Required.|
 | Accept  | application/json|
 
 ## Request body
+
 Don't supply a request body for this method.
 
 ## Response
@@ -41,23 +47,29 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a Stream object in the response body.
 
 ## Example
-#### Request
+
+### Request
+
 Following is an example of a request.
 
-```text
+``` http
 GET https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0/content
 ```
 
-#### Response
+### Response
 
-```text
+Following is an example of the response.
+
+``` http
 HTTP/1.1 200 OK 
-Retry-After: 60
 Content-type: text/csv
-```
 
-```text
 { 
   Model as EDM.Stream
 } 
 ```
+
+## See also
+
+### ExportJob Content and Field Configurations for Delegated Users
+The exportJob content is the content that comes from the explorerView. If the delegated user set field to do an export using the web app then those field configurations are honored in the export process as well.

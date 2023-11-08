@@ -11,7 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get the list of [exportJob](../resources/viva-goals-export-job.md) resources for a Viva Goals organization.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Get the list of [exportJob](../resources/exportjob.md) resources for a Viva Goals organization.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -21,51 +23,54 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|Goals-Export.Read.All|Goals-Export.ReadWrite.All|
 
 ## HTTP request
-Get the status of an [exportJob](../resources/viva-goals-export-job.md):
 
 ```http
 GET /employeeExperience/goals/exportJobs
 ```
 
 ## Optional query parameters
-This method supports the $filter [OData Query Parameters](/graph/query-parameters) to filter rows.
 
-You can use the `$filter` query parameter to filters rows based on `goalsOrganizationId`. For example:
-```text
-https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs?$filter= goalsOrganizationId eq ‘9ab0fcab-c1d4-4b26-963b-a3c33155f853’ 
-```
+This method supports the `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+
+`$filter` is supported on the **goalsOrganizationId** property only.
 
 
 ## Request headers
-| Header       |  Value|
+| Name          | Description   |
 |:-------------|:------|
 | Authorization  | Bearer {token}. Required.|
 | Accept  | application/json|
 
 ## Request body
+
 Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection [exportJob](../resources/viva-goals-export-job.md) item in the response body. 
+If successful, this method returns a `200 OK` response code and a collection [exportJob](../resources/exportjob.md) item in the response body. 
 
-## Example
-### 1. Following is an example of a request.
+## Examples
+
+### Example 1: Response on Search
+
 #### Request
 
-```text
-GET https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs 
+Following is an example of the request.
+
+``` http
+GET https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs
 ```
 
-#### Response on Search
-If successful, this method returns a `200 OK` response code and a collection of [exportJob](../resources/viva-goals-export-job.md) entities.
+#### Response
 
-```text
+Following is an example of the response.
+
+
+``` http
 HTTP/1.1 200 OK 
 Content-type: application/json
-```
 
-```json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#employeeExperience/goals/exportJobs",
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET employeeExperience/goals/exportJobs?$select=content,expirationDateTime",
@@ -91,14 +96,26 @@ Content-type: application/json
     ]
 }
 ```
-### 2. Filter response based on `goalsOrganizationId`
+
+### Example 2: Filter response based on `goalsOrganizationId`
+
 #### Request
-```text
-GET https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs?$filter= goalsOrganizationId eq ‘3d9a8150-90fd-42bd-9777-25ba783d4a05’ 
+
+Following is an example of the request.
+
+``` http
+GET https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs?$filter= goalsOrganizationId eq ‘3d9a8150-90fd-42bd-9777-25ba783d4a05
 ```
 
 #### Response
-```
+
+Following is an example of the response.
+
+
+``` http
+HTTP/1.1 200 OK 
+Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#employeeExperience/goals/exportJobs",
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET employeeExperience/goals/exportJobs?$select=content,expirationDateTime",
@@ -116,14 +133,26 @@ GET https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs?$filter
 }
 ```
 
-### 3. Filtering is disabled for properties other than `goalsOrganizationId`. 
+
+### Example 3: Filter based on any property other than `goalsOrganizationId`. 
+
 #### Request
-```text
+
+Following is an example of the request.
+
+``` http
 GET https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs?$filter= explorerViewId eq ‘9ab0fcab-c1d4-4b26-963b-a3c33155f853’ 
 ```
-When attempting to use any other property, this method returns a `400 Bad Request` error with the following message:
+
 #### Response
-```
+
+Following is an example of the response.
+
+
+``` http
+HTTP/1.1 400 Bad Request
+Content-type: application/json
+
 {
     "error": {
         "code": "badRequest",
