@@ -14536,6 +14536,10 @@ items:
                         items:
                           - name: List
                             href: api/delegatedadmincustomer-list-servicemanagementdetails.md
+          - name: Permissions Management 
+            items:
+              - name: Overview
+                href: /resources/permissions-management-api-overview.md
       - name: Industry data ETL (preview)
         items:
           - name: Overview

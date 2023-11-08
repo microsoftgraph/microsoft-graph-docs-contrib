@@ -33,6 +33,11 @@ items:
   - name: Permissions analytics
     href: /resources/permissionsanalytics.md
     items:
+    - name: Permissions creep index distribution
+      href: /resources/permissionscreepindexdistribution.md
+      items:
+        - name: Get
+          href: /resources/permissionscreepindexdistribution-get.md
     - name: Identity findings
       href: /resources/identityfinding.md
       items:
@@ -195,7 +200,195 @@ items:
               href: /resources/unenforcedmfaawsuserfinding-get.md
             - name: Aggregated summary
               href: /resources/unenforcedmfaawsuserfinding-aggregatedsummary.md
+    - name: Inactive group finding
+      href: /resources/inactivegroupfinding.md
+      items:
+          - name: List
+            href: /resources/inactivegroupfinding-list.md
+          - name: Get
+            href: /resources/inactivegroupfinding-get.md
     - name: Privilege escalation findings
       href: /resources/privilegeescalationfinding.md
       items:
-    - 
+          - name: List
+            href: /resources/privilegeescalationfinding-list.md
+          - name: Get
+            href: /resources/privilegeescalationfinding-get.md
+          - name: Privilege escalation user
+            href: /resources/privilegeescalationuserfinding.md
+            items:
+            - name: List
+              href: /resources/privilegeescalationuserfinding-list.md
+            - name: Get
+              href: /resources/privilegeescalationuserfinding-get.md
+          - name: Privilege escalation AWS role
+            href: /resources/privilegeescalationawsrolefinding.md
+            items:
+            - name: List
+              href: /resources/privilegeescalationawsrolefinding-list.md
+            - name: Get
+              href: /resources/privilegeescalationawsrolefinding-get.md
+          - name: Privilege escalation AWS resource
+            href: /resources/privilegeescalationawsresourcefinding.md
+            items:
+            - name: List
+              href: /resources/privilegeescalationawsresourcefinding-list.md
+            - name: Get
+              href: /resources/privilegeescalationawsresourcefinding-get.md
+          - name: Privilege escalation GCP service account
+            href: /resources/privilegeescalationgcpserviceaccountfinding.md
+            items:
+            - name: List
+              href: /resources/privilegeescalationgcpserviceaccountfinding-list.md
+            - name: Get
+              href: /resources/privilegeescalationgcpserviceaccountfinding-get.md
+    - name: Encrypted AWS S3 buckets
+      href: /resources/encryptedawsstoragebucketfinding.md
+      items:
+          - name: List
+            href: /resources/encryptedawsstoragebucketfinding-list.md
+          - name: Get
+            href: /resources/encryptedawsstoragebucketfinding-get.md
+    - name: Encrypted Azure storage accounts
+      href: /resources/encryptedazurestorageaccountfinding.md
+      items:
+          - name: List
+            href: /resources/encryptedazurestorageaccountfinding-list.md
+          - name: Get
+            href: /resources/encryptedazurestorageaccountfinding-get.md
+    - name: Encrypted GCP storage buckets
+      href: /resources/encryptedgcpstoragebucketfinding.md
+      items:
+          - name: List
+            href: /resources/encryptedgcpstoragebucketfinding-list.md
+          - name: Get
+            href: /resources/encryptedgcpstoragebucketfinding-get.md
+    - name: Externally accessible AWS S3 buckets
+      href: /resources/externallyaccessibleawsstoragebucketfinding.md
+      items:
+          - name: List
+            href: /resources/externallyaccessibleawsstoragebucketfinding-list.md
+          - name: Get
+            href: /resources/externallyaccessibleawsstoragebucketfinding-get.md
+    - name: Externally accessible Azure blob containers
+      href: /resources/externallyaccessibleazureblobcontainerfinding.md
+      items:
+          - name: List
+            href: /resources/externallyaccessibleawsstoragebucketfinding-list.md
+          - name: Get
+            href: /resources/externallyaccessibleawsstoragebucketfinding-get.md
+    - name: Externally accessible GCP storage buckets
+      href: /resources/externallyaccessiblegcpstoragebucketfinding.md
+      items:
+          - name: List
+            href: /resources/externallyaccessibleawsstoragebucketfinding-list.md
+          - name: Get
+            href: /resources/externallyaccessibleawsstoragebucketfinding-get.md   
+    - name: Open AWS security group
+      href: /resources/openawssecuritygroupfinding.md
+      items:
+          - name: List
+            href: /resources/openawssecuritygroupfinding-list.md
+          - name: Get
+            href: /resources/openawssecuritygroupfinding-get.md
+    - name: Open network Azure security group
+      href: /resources/opennetworkazuresecuritygroupfinding.md
+      items:
+          - name: List
+            href: /resources/opennetworkazuresecuritygroupfinding-list.md
+          - name: Get
+            href: /resources/opennetworkazuresecuritygroupfinding-get.md
+    - name: AWS identities that can access secret information
+      href: /resources/openawssecuritygroupfinding.md
+      items:
+          - name: Users
+            href: /resources/secretinformationaccessawsuserfinding.md
+            items:
+            - name: List
+              href: /resources/secretinformationaccessawsuserfinding-list.md
+            - name: Get
+              href: /resources/secretinformationaccessawsuserfinding-get.md
+          - name: Roles
+            href: /resources/secretinformationaccessawsuserfinding.md
+            items:
+            - name: List
+              href: /resources/secretinformationaccessawsuserfinding-list.md
+            - name: Get
+              href: /resources/secretinformationaccessawsuserfinding-get.md
+          - name: Resources
+            href: /resources/secretinformationaccessawsresourcefinding.md
+            items:
+            - name: List
+              href: /resources/secretinformationaccessawsresourcefinding-list.md
+            - name: Get
+              href: /resources/secretinformationaccessawsresourcefinding-get.md
+          - name: Serverless functions
+            href: /resources/secretinformationaccessawsserverlessfunctionfinding.md
+            items:
+            - name: List
+              href: /resources/secretinformationaccessawsserverlessfunctionfinding-list.md
+            - name: Get
+              href: /resources/secretinformationaccessawsserverlessfunctionfinding-get.md
+    - name: AWS administrators that can use secruity tools
+      href: /resources/awssecuritytooladministrationfinding.md
+      items:
+          - name: Users
+            href:  /resources/securitytoolawsuseradministratorfinding.md
+            items:
+            - name: List
+              href: /resources/securitytoolawsuseradministratorfinding-list.md
+            - name: Get
+              href: /resources/securitytoolawsuseradministratorfinding-get.md
+          - name: Roles
+            href:  /resources/securitytoolawsroleadministratorfinding.md
+            items:
+            - name: List
+              href: /resources/securitytoolawsroleadministratorfinding-list.md
+            - name: Get
+              href: /resources/securitytoolawsroleadministratorfinding-get.md
+          - name: Resources
+            href:  /resources/securitytoolawsresourceadministratorfinding.md
+            items:
+            - name: List
+              href: /resources/securitytoolawsresourceadministratorfinding-list.md
+            - name: Get
+              href: /resources/securitytoolawsresourceadministratorfinding-get.md
+          - name: Serverless functions
+            href:  /resources/securitytoolawsserverlessfunctionadministratorfinding.md
+            items:
+            - name: List
+              href: /resources/securitytoolawsserverlessfunctionadministratorfinding-list.md
+            - name: Get
+              href: /resources/securitytoolawsserverlessfunctionadministratorfinding-get.md
+    - name: AWS cross account access
+      href: /resources/awsexternalsystemaccessfinding.md
+      items:
+          - name: List
+            href: /resources/awsexternalsystemaccessfinding-list.md
+          - name: Get
+            href: /resources/awsexternalsystemaccessfinding-get.md
+    - name: AWS roles that can access accounts
+      href: /resources/awsexternalsystemaccessrolefinding.md
+      items:
+          - name: List
+            href: /resources/awsexternalsystemaccessrolefinding-list.md
+          - name: Get
+            href: /resources/awsexternalsystemaccessrolefinding-get.md
+    - name: AWS IAM access key age
+      href: /resources/awsidentityaccessmanagementkeyagefinding.md
+      items:
+          - name: List
+            href: /resources/awsidentityaccessmanagementkeyagefinding-list.md
+          - name: Get
+            href: /resources/awsidentityaccessmanagementkeyagefinding-get.md
+          - name: Aggregated summary
+            href: /resources/awsidentityaccessmanagementkeyagefinding-aggregatedsummary.md
+    - name: AWS IAM access key usage
+      href: /resources/awsidentityaccessmanagementkeyusagefinding.md
+      items:
+          - name: List
+            href: /resources/awsidentityaccessmanagementkeyusagefinding-list.md
+          - name: Get
+            href: /resources/awsidentityaccessmanagementkeyusagefinding-get.md
+          - name: Aggregated summary
+            href: /resources/awsidentityaccessmanagementkeyusagefinding-aggregatedsummary.md
