@@ -21,12 +21,12 @@ Represents information about people related to information within a given entity
 |:----------------|:------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |displayName      |String       | Name of the person.                                                                                                                                                                                                                             |
 |relationship     |String       | Possible values are: `manager`, `colleague`, `directReport`, `dotLineReport`, `assistant`, `dotLineManager`, `alternateContact`, `friend`, `spouse`, `sibling`, `child`, `parent`, `sponsor`, `emergencyContact`, `other`, `unknownFutureValue`.|
-|userId           |String       | Reference to the user's directory object ID (AAD object ID or CID).                                                                                                                                                                                       |
-|userPrincipalName|String       | Email address or reference to person within organization.                                                                                                                                                                                       |
+|userId           |String       | Reference to the user's directory object ID (Microsoft Entra ID or CID).                                                                                                                                                                                       |
+|userPrincipalName|String       | Email address or reference to person within the organization.                                                                                                                                                                                       |
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following example is the JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
