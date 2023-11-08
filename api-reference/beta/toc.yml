@@ -404,9 +404,11 @@ items:
                 href: api/user-list-cloudpcs.md
               - name: Get
                 href: api/cloudpc-get.md
+              - name: Get frontline access state
+                href: api/cloudpc-getfrontlinecloudpcaccessstate.md
               - name: Get launch info
                 href: api/cloudpc-getcloudpclaunchinfo.md
-              - name: Get shift work access state
+              - name: Get shift work access state (deprecated)
                 href: api/cloudpc-getshiftworkcloudpcaccessstate.md
               - name: Reboot
                 href: api/cloudpc-reboot.md
@@ -10217,16 +10219,18 @@ items:
                     href: api/cloudpc-endgraceperiod.md
                   - name: Get connectivity history
                     href: api/cloudpc-getcloudpcconnectivityhistory.md
+                  - name: Get frontline access state
+                    href: api/cloudpc-getfrontlinecloudpcaccessstate.md
                   - name: Get launch info for user
                     href: api/cloudpc-getcloudpclaunchinfo.md
-                  - name: Get shift work access state
-                    href: api/cloudpc-getshiftworkcloudpcaccessstate.md
                   - name: Get provisioned Cloud PCs
                     href: api/cloudpc-getprovisionedcloudpcs.md
                   - name: Get remote action results
                     href: api/manageddevice-getcloudpcremoteactionresults.md
                   - name: Get review status
                     href: api/manageddevice-getcloudpcreviewstatus.md
+                  - name: Get shift work access state (deprecated)
+                    href: api/cloudpc-getshiftworkcloudpcaccessstate.md
                   - name: Get supported remote actions
                     href: api/cloudpc-getsupportedcloudpcremoteactions.md
                   - name: Power on
@@ -11810,6 +11814,8 @@ items:
                         href: api/recommendation-postpone.md
                       - name: Reactivate
                         href: api/recommendation-reactivate.md
+                      - name: Get tenant Secure Score
+                        href: api/recommendation-tenantsecurescores.md
                   - name: Impacted resources
                     items:
                       - name: Impacted resource
@@ -12291,6 +12297,11 @@ items:
                         href: api/networkaccess-devicelink-update.md
                       - name: Delete
                         href: api/networkaccess-branchsite-delete-devicelinks.md
+                  - name: Connectivity configuration
+                    href: resources/networkaccess-connectivityconfigurationlink.md
+                    items:
+                      - name: Get
+                        href: api/networkaccess-branchconnectivityconfiguration-get.md 
                   - name: Forwarding profile
                     items:
                       - name: List
@@ -15465,15 +15476,15 @@ items:
                   items:
                     - name: Microsoft Entra service acitviy
                       href: resources/serviceactivity.md
-                    - name: Get MFA sign in success metrics
+                    - name: Get MFA sign-in success metrics
                       href: api/serviceactivity-getmetricsformfasigninsuccess.md
-                    - name: Get MFA sign in failure metrics
+                    - name: Get MFA sign-in failure metrics
                       href: api/serviceactivity-getmetricsformfasigninfailure.md
-                    - name: Get managed devices conditional access sign in metrics
+                    - name: Get managed devices conditional access sign-in metrics
                       href: api/serviceactivity-getmetricsforconditionalaccessmanageddevicessigninsuccess.md
-                    - name: Get compiant devices conditional access sign in metrics
+                    - name: Get compliant devices conditional access sign-in metrics
                       href: api/serviceactivity-getmetricsforconditionalaccesscompliantdevicessigninsuccess.md
-                    - name: Get SAML sign in metrics
+                    - name: Get SAML sign-in metrics
                       href: api/serviceactivity-getmetricsforsamlsigninsuccess.md
                 - name: Registration and usage
                   items:

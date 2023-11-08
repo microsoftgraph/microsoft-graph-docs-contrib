@@ -6,9 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Sites.Item.Lists.Item.Items.Item.CreateLink;
+using Microsoft.Graph.Beta.Models;
 
-var requestBody = new Microsoft.Graph.Beta.Sites.Item.Lists.Item.Items.Item.CreateLink.CreateLinkPostRequestBody
+var requestBody = new CreateLinkPostRequestBody
 {
 	Type = "view",
 	Scope = "anonymous",
@@ -23,6 +25,8 @@ var requestBody = new Microsoft.Graph.Beta.Sites.Item.Lists.Item.Items.Item.Crea
 	SendNotification = true,
 	RetainInheritedPermissions = false,
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Sites["{site-id}"].Lists["{list-id}"].Items["{listItem-id}"].CreateLink.PostAsync(requestBody);
 
 
