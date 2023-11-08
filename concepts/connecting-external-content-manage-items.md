@@ -79,9 +79,9 @@ For example, your application may index helpdesk tickets by using the ticket num
 PUT /external/connections/contosohelpdesk/items/SR00145
 Content-Type: application/json
 
-{
+"properties": {
   "title": "WiFi outage in Conference Room A",
-  "status": "New",
+  "priority": 1,
   "assignee": "meganb@contoso.com"
 }
 ```
