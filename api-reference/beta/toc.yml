@@ -17534,7 +17534,7 @@ items:
                       - name: Session
                         href: resources/callrecords-session.md
                       - name: List
-                        href: api/callrecords-session-list.md
+                        href: api/callrecords-callrecord-list-sessions.md
                   - name: SMS
                     items:
                       - name: SMS log row
