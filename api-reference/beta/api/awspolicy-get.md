@@ -32,9 +32,12 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /external/authorizationSystems/{id}/graph.awsAuthorizationSystem/policies/{awsPolicyId}
-GET /external/authorizationSystems/{id}/graph.awsAuthorizationSystem/policies(externalId={externalId})
+GET /external/authorizationSystems/{id}/microsoft.graph.awsAuthorizationSystem/policies/{awsPolicyId}
+GET /external/authorizationSystems/{id}/microsoft.graph.awsAuthorizationSystem/policies(externalId='{externalId}')
 ```
+
+## Optional query parameters
+This method supports the `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -60,7 +63,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/graph.awsAuthorizationSystem/YXJuOmF3czppYW06OjEyMzQ1Njc4OTAxMjpwb2xpY3kvQUFBLWxpc3RQdXRHZXRBbGxCdWNrZXRz
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.awsAuthorizationSystem/YXJuOmF3czppYW06OjEyMzQ1Njc4OTAxMjpwb2xpY3kvQUFBLWxpc3RQdXRHZXRBbGxCdWNrZXRz
 ```
 
 
@@ -78,7 +81,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{id}/graph.awsAuthorizationSystem/policies",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{id}/microsoft.graph.awsAuthorizationSystem/policies",
   "value": [
     {
       "id": "YXJuOmF3czppYW06OjEyMzQ1Njc4OTAxMjpwb2xpY3kvQUFBLWxpc3RQdXRHZXRBbGxCdWNrZXRz",
