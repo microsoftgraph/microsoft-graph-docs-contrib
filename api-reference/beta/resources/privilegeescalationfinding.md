@@ -18,10 +18,7 @@ Represents findings for a list of potential exploiting of a misconfigured IAM po
 Inherits from [finding](../resources/finding.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List privilegeEscalationFindings](../api/privilegeescalationfinding-list.md)|[privilegeEscalationFinding](../resources/privilegeescalationfinding.md) collection|Get a list of the [privilegeEscalationFinding](../resources/privilegeescalationfinding.md) objects and their properties.|
-|[Get privilegeEscalationFinding](../api/privilegeescalationfinding-get.md)|[privilegeEscalationFinding](../resources/privilegeescalationfinding.md)|Read the properties and relationships of a [privilegeEscalationFinding](../resources/privilegeescalationfinding.md) object.|
+None.
 
 ## Properties
 |Property|Type|Description|

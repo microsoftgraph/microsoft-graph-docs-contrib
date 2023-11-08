@@ -23,7 +23,6 @@ The following resources inherit from this resource type:
 - [inactiveawsrolefinding](../resources/inactiveawsrolefinding.md)
 - [inactiveazureserviceprincipalfinding](../resources/inactiveazureserviceprincipalfinding.md)
 - [inactivegcpserviceaccountfinding](../resources/inactivegcpserviceaccountfinding.md)
-- [inactivegroupfinding](../resources/inactivegroupfinding.md)
 - [inactiveserverlessfunctionfinding](../resources/inactiveserverlessfunctionfinding.md)
 - [inactiveuserfinding](../resources/inactiveuserfinding.md)
 - [overprovisionedawsresourcefinding](../resources/overprovisionedawsresourcefinding.md)
