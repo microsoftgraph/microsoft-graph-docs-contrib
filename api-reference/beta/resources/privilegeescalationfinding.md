@@ -28,13 +28,13 @@ Inherits from [finding](../resources/finding.md).
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Defines when the finding was created. Inherited from [finding](../resources/finding.md).|
 |id|String|Unique identifier for the finding. Inherited from [entity](../resources/entity.md).|
-|lastActiveDateTime|DateTimeOffset|A date specifiying when the last time the identity in this Finding executed an authorization system action.|
+|lastActiveDateTime|DateTimeOffset|Defines the last time the identity in this finding executed an authorization system action.|
 |permissionsCreepIndex|[permissionsCreepIndex](../resources/permissionscreepindex.md)|*A score for an identity's excessive permissions that is classified into three buckets: 0-33: low, 34-66: medium, 67-100: high. This property and its values are a snapshot as of when the finding was created and might not reflect the current score for the identity. Supports `$filter` (`gt`) and `$orderby`.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Represents an identity in an authorization system.|
+|identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Represents an identity in an authorization system onboarded to Permissions Management. Inherited from [microsoft.graph.identityFinding](../resources/identityfinding.md). Autoexpanded by default.|
 |privilegeEscalationDetails|[Collection(graph.privilegeEscalation)](../resources/privilegeescalation.md)|The list of escalations that the identity is capable of performing.|
 
 ## JSON representation

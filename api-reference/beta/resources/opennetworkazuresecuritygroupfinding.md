@@ -28,13 +28,13 @@ Inherits from [finding](../resources/finding.md).
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Defines when the finding was created. Inherited from [finding](../resources/finding.md).|
 |id|String|Unique identifier for the finding. Inherited from [entity](../resources/entity.md).|
-|inboundPorts|[inboundPorts](../resources/inboundports.md)|Contains information on inbound ports related to an open security group|
+|inboundPorts|[inboundPorts](../resources/inboundports.md)|Contains information on inbound ports related to an open security group.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|securityGroup|[authorizationSystemResource](../resources/authorizationsystemresource.md)|Represents a resource in an authorization system|
-|virtualMachines|[authorizationSystemResource](../resources/authorizationsystemresource.md) collection|Represents a virtual machine in an authorization system|
+|securityGroup|[authorizationSystemResource](../resources/authorizationsystemresource.md)|Represents a resource in an authorization system.|
+|virtualMachines|[authorizationSystemResource](../resources/authorizationsystemresource.md) collection|Represents a virtual machine in an authorization system.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

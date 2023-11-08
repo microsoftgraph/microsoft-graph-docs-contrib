@@ -1,6 +1,6 @@
 ---
 title: "Get inactiveAwsResourceFinding"
-description: "Get the details of an inactive resource in an AWS authorization system that you've onboarded to Permissions Management."
+description: "Read the properties and relationships of an inactiveAwsResourceFinding object, representing an inactive AWS resource."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -12,16 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an [inactiveAwsResourceFinding](../resources/inactiveawsresourcefinding.md) object. Get the details of an inactive resource in an AWS authorization system that you've onboarded to Permissions Management.
+Read the properties and relationships of an [inactiveAwsResourceFinding](../resources/inactiveawsresourcefinding.md) object, representing an inactive AWS resource.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -30,11 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.inactiveAwsResourceFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings('id')/graph.inactiveAwsResourceFinding
 ```
 
 ## Optional query parameters
-This method supports none of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -76,7 +76,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/beta/$metadata#identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveAwsResourceFinding/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveAwsResourceFinding/$entity",
     "id": "MSxJbmFjdGl2ZUF3c1Jlc291cmNlRmluZGluZywxNDA1Ng",
     "createdDateTime": "2023-11-02T17:33:02.447118Z",
     "actionSummary": {

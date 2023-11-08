@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -37,7 +37,7 @@ GET /identityGovernance/permissionsAnalytics/azure/key/findings('id')/overprovis
 
 ## Optional query parameters
 
-This method supports `$filter` and `$orderby` of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -64,7 +64,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/azure('b3ZlcnByb3Zpc2lvbmVkU2VydmljZVByaW5jaXBhbEZpbmRpbmcxMg')/findings/overprovisionedAzureServicePrincipalFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure('b3ZlcnByb3Zpc2lvbmVkU2VydmljZVByaW5jaXBhbEZpbmRpbmcxMg')/findings/overprovisionedAzureServicePrincipalFinding
 ```
 
 ### Response
@@ -82,7 +82,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/identityGovernance/$metadata#permissionsAnalytics/azure/findings/graph.overprovisionedAzureServicePrincipalFinding",
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/azure/findings/graph.overprovisionedAzureServicePrincipalFinding",
   "value": [
     {
       "@odata.type": "graph.overprovisionedAzureServicePrincipalFinding",
@@ -118,8 +118,7 @@ Content-type: application/json
         "createdDateTime": "2021-04-12T20:34:24Z",
         "lastActiveDateTime": "2021-10-30T03:21:05Z"
       }
-    },
-
+    }
   ]
 }
 ```

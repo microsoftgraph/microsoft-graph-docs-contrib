@@ -1,6 +1,6 @@
 ---
 title: "overprovisionedServerlessFunctionFinding resource type"
-description: "Represents over-provisioned serverless functions in AWS, Azure, and/or GCP."
+description: "Represents over-provisioned serverless functions in AWS, Azure, or GCP."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents over-provisioned serverless functions in AWS, Azure, and/or GCP.
+Represents over-provisioned serverless functions in AWS, Azure, or GCP.
 
 Inherits from [identityFinding](../resources/identityfinding.md).
 
@@ -38,7 +38,7 @@ Inherits from [identityFinding](../resources/identityfinding.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Represents an identity in an authorization system. Inherited from [microsoft.graph.identityFinding](../resources/identityfinding.md). Autoexpanded by default.|
+|identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Represents an identity in an authorization system onboarded to Permissions Management. Inherited from [microsoft.graph.identityFinding](../resources/identityfinding.md). Autoexpanded by default.|
 
 ## JSON representation
 

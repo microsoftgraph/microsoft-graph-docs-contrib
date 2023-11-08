@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.awsIdentityAcessManagementKeyUsageFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings('id')/graph.awsIdentityAcessManagementKeyUsageFinding
 ```
 
 ## Optional query parameters
@@ -58,7 +58,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings('MSxBd3NJZGVudGl0eUFjY2Vzc01hbmFnZW1lbnRLZXlVc2FnZUZpbmRpbmcsMjEyNjk')/graph.awsIdentityAcessManagementKeyUsageFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('MSxBd3NJZGVudGl0eUFjY2Vzc01hbmFnZW1lbnRLZXlVc2FnZUZpbmRpbmcsMjEyNjk')/graph.awsIdentityAcessManagementKeyUsageFinding
 ```
 
 
@@ -76,7 +76,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaevan_schema/$metadata#identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.awsIdentityAccessManagementKeyUsageFinding/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.awsIdentityAccessManagementKeyUsageFinding/$entity",
     "id": "MSxBd3NJZGVudGl0eUFjY2Vzc01hbmFnZW1lbnRLZXlVc2FnZUZpbmRpbmcsMjEyNjk",
     "createdDateTime": "2023-10-25T23:48:12.164332Z",
     "status": "inactive",

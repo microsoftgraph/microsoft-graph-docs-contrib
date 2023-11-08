@@ -1,6 +1,6 @@
 ---
 title: "inactiveAwsResourceFinding: aggregatedSummary"
-description: View the count of inactive AWS resources in your authorization systems.
+description: View the count of inactive AWS resources for the specified authorization systems in your AWS environment.
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -39,7 +39,7 @@ The following table shows the parameters that are required with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|authorizationSystemIds|String collection|List the authorization system IDs.*|
+|authorizationSystemIds|String collection|The collection of IDs for the authorization systems against which to get the summary of records.|
 
 
 ## Request headers
@@ -82,7 +82,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaevan_schema/$metadata#microsoft.graph.permissionsAnalyticsAggregatedIdentitySummary",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.permissionsAnalyticsAggregatedIdentitySummary",
     "totalCount": 8,
     "findingsCount": 5
 }

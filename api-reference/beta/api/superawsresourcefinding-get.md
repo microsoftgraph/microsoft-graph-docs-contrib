@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -37,7 +37,7 @@ GET /identityGovernance/permissionsAnalytics/aws/findings('id')/graph.superAwsRe
 
 ## Optional query parameters
 
-This method supports none of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -62,7 +62,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings('c3VwZXJSZXNvdXJjZUZpbmRpbmc0')/graph.superAwsResourceFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('c3VwZXJSZXNvdXJjZUZpbmRpbmc0')/graph.superAwsResourceFinding
 ```
 
 
@@ -80,7 +80,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.superAwsResourceFinding",
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.superAwsResourceFinding",
   "value": [
     {
       "@odata.type": "graph.superAwsResourceFinding",
@@ -116,8 +116,7 @@ Content-type: application/json
         "createdDateTime": "2018-04-12T20:34:24Z",
         "lastActiveDateTime": "2018-10-30T03:21:05Z"
       }
-    },
-
+    }
   ]
 }
 ```

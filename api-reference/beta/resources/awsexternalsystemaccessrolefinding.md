@@ -1,6 +1,6 @@
 ---
 title: "awsExternalSystemAccessRoleFinding resource type"
-description: "Represents the findings for roles that allow for external system access"
+description: "Represents the findings for roles that allow for external system access."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the findings for roles that allow for external system access
+Represents the findings for roles that allow for external system access.
 
 Inherits from [finding](../resources/finding.md).
 
@@ -27,7 +27,7 @@ Inherits from [finding](../resources/finding.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|accessibleSystemIds|String collection|The ids of the accounts that this role is able to access.|
+|accessibleSystemIds|String collection|The IDs of the accounts that this role is able to access.|
 |createdDateTime|DateTimeOffset|Defines when the finding was created. Inherited from [finding](../resources/finding.md).|
 |id|String|Unique identifier for the finding. Inherited from [entity](../resources/entity.md).|
 |permissionsCreepIndex|[permissionsCreepIndex](../resources/permissionscreepindex.md)|A score for an identity's excessive permissions that is classified into three buckets: 0-33: low, 34-66: medium, 67-100: high. This property and its values are a snapshot as of when the finding was created and might not reflect the current score for the identity. Supports `$filter` (`gt`) and `$orderby`.|
@@ -35,7 +35,7 @@ Inherits from [finding](../resources/finding.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|role|[awsRole](../resources/awsrole.md)|The role that has access to external accounts.|
+|role|[awsRole](../resources/awsrole.md)|The role that has access to external accounts. Supports `$orderby` (for `role/displayName`) and `$filter` as follows: `$filter=role/authorizationSystem/authorizationSystemId IN ['authorizationSystemIds']` and `$filter=role/authorizationSystem/authorizationSystemName eq 'authsystemname'`. Autoexpanded by default.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

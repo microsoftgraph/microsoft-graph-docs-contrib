@@ -1,6 +1,6 @@
 ---
 title: "privilegeEscalation resource type"
-description: "Not implemented: Represents the Privilege Escalation events."
+description: "A container for privilege escalation events."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,19 +13,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Not implemented: Represents the Privilege Escalation events.
+A container for privilege escalation events.
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
-Not implemented.
+None.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |description|Edm.String|A detailed description of the privilege escalation.|
 |displayName|Edm.String|The name of the policy that defines the escalation|
-|id|Edm.String|the ID of the privilege escalation Inherited from [entity](../resources/entity.md).|
+|id|Edm.String|the ID of the privilege escalation. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|

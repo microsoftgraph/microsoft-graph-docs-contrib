@@ -1,6 +1,6 @@
 ---
 title: "awsExternalSystemAccessFinding resource type"
-description: "Represents findings related to external AWS accounts that are able to access a given AWS account."
+description: "Represents findings related to external accounts that are able to access a given AWS account."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents findings related to external AWS accounts that are able to access a given AWS account.
+Represents findings related to external accounts that are able to access a given AWS account.
 
 Inherits from [finding](../resources/finding.md).
 
@@ -26,17 +26,17 @@ Inherits from [finding](../resources/finding.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|accessMethods|externalSystemAccessMethods|Specifies if the system can be accessed directly, via role chaining, or both.The possible values are: `direct`, `roleChaining`, `unknownFutureValue`.|
+|accessMethods|externalSystemAccessMethods|Specifies if the system can be accessed directly, via role chaining, or both. The possible values are: `direct`, `roleChaining`, `unknownFutureValue`. Supports `$filter` (`eq`).|
 |createdDateTime|DateTimeOffset|Defines when the finding was created. Inherited from [finding](../resources/finding.md).|
 |id|String|Unique identifier for the finding. Inherited from [entity](../resources/entity.md).|
-|systemWithAccess|[authorizationSystemInfo](../resources/authorizationsysteminfo.md)|*The account id for the external system that is able to access the given system.|
-|trustedIdentityCount|Int32|The number of identities in the external system that are trusted, if not all.|
+|systemWithAccess|[authorizationSystemInfo](../resources/authorizationsysteminfo.md)|The account ID for the external system that is able to access the given system.|
+|trustedIdentityCount|Int32|The number of identities in the external system that are trusted, if not all. Supports `$orderby`.|
 |trustsAllIdentities|Boolean|Flag that determines if all identities in the external system are trusted, or only a subset.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|affectedSystem|[authorizationSystem](../resources/authorizationsystem.md)|The system that can be accessed from an external system.|
+|affectedSystem|[authorizationSystem](../resources/authorizationsystem.md)|The system that can be accessed from an external system. Supports `$orderby` (`affectedSystem/authorizationSystemName`) and `$filter` as follows: `$filter=affectedSystem/authorizationSystemId IN ['authorizationSystemIds']`|
 
 ## JSON representation
 The following is a JSON representation of the resource.

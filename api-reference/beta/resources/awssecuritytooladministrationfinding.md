@@ -31,12 +31,12 @@ Inherits from [finding](../resources/finding.md).
 |id|String|Unique identifier for the finding. Inherited from [entity](../resources/entity.md).|
 |lastActiveDateTime|DateTimeOffset|A date specifiying when the last time the identity in this Finding executed an authorization system action|
 |permissionsCreepIndex|[permissionsCreepIndex](../resources/permissionscreepindex.md)|A score for an identity's excessive permissions that is classified into three buckets: 0-33: low, 34-66: medium, 67-100: high. This property and its values are a snapshot as of when the finding was created and might not reflect the current score for the identity. Supports `$filter` (`gt`) and `$orderby`.|
-|securityTools|awsSecurityToolWebServices|AWS security tools which can be administered by the user, role, resource or serverless function.The possible values are: `macie`, `wafShield`, `cloudTrail`, `inspector`, `securityHub`, `detective`, `guardDuty`, `unknownFutureValue`.|
+|securityTools|awsSecurityToolWebServices|AWS security tools which can be administered by the user, role, resource or serverless function.The possible values are: `macie`, `wafShield`, `cloudTrail`, `inspector`, `securityHub`, `detective`, `guardDuty`, `unknownFutureValue`. Supports `$filter` (`has`).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Represents an identity in an authorization system.|
+|identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Represents an identity in an authorization system onboarded to Permissions Management. Inherited from [microsoft.graph.identityFinding](../resources/identityfinding.md). Autoexpanded by default. Supports `$filter` as follows: `$filter=identity/authorizationSystem/authorizationSystemId IN ['authorizationSystemIds']`.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

@@ -14,16 +14,14 @@ Namespace: microsoft.graph
 
 Get a list of the [inactiveUserFinding](../resources/inactiveuserfinding.md) objects and their properties.
 
-You want to view the inactive users in your AWS, Azure, or GCP cloud environments.
-
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -73,7 +71,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following example shows a request.
+The following example shows a request to retrieve AWS inactive users.
 <!-- {
   "blockType": "request",
   "name": "list_inactiveuserfinding"

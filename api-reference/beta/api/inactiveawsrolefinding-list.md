@@ -1,6 +1,6 @@
 ---
 title: "List inactiveAwsRoleFindings"
-description: "List the details of inactive roles in your AWS authorization systems that you've onboarded to Permissions Management."
+description: "List the details of inactive roles in AWS authorization systems onboarded to Permissions Management."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -12,16 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the details of inactive roles [inactiveAwsRoleFinding](../resources/inactiveawsrolefinding.md) in your AWS authorization systems that you've onboarded to Permissions Management..
+List the details of inactive roles [inactiveAwsRoleFinding](../resources/inactiveawsrolefinding.md) in AWS authorization systems onboarded to Permissions Management..
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 

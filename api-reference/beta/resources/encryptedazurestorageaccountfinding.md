@@ -28,13 +28,13 @@ Inherits from [finding](../resources/finding.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Defines when the finding was created. Inherited from [finding](../resources/finding.md).|
-|encryptionManagedBy|azureEncryption|Specifies who manages encryption of Azure storage accounts.The possible values are: `microsoftStorage`, `microsoftKeyVault`, `customer`, `unknownFutureValue`.|
+|encryptionManagedBy|azureEncryption|Specifies who manages encryption of Azure storage accounts. The possible values are: `microsoftStorage`, `microsoftKeyVault`, `customer`, `unknownFutureValue`.|
 |id|String|Unique identifier for the Finding. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|storageAccount|[authorizationSystemResource](../resources/authorizationsystemresource.md)|Represents a resource in an authorization system	|
+|storageAccount|[authorizationSystemResource](../resources/authorizationsystemresource.md)|Represents a resource in an Azure authorization system.    |
 
 ## JSON representation
 The following JSON representation shows the resource type.

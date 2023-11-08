@@ -1,6 +1,6 @@
 ---
 title: "inactiveAwsRoleFinding: aggregatedSummary"
-description: "Retrieve the raw count of inactive roles relative to the total roles in an AWS authorization system that you've onboarded to Permissions Management."
+description: "Retrieve the raw count of inactive roles relative to the total roles in an AWS authorization system onboarded to Permissions Management."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the raw count of inactive roles relative to the total roles in an AWS authorization system that you've onboarded to Permissions Management.
+Retrieve the raw count of inactive roles relative to the total roles in an AWS authorization system onboarded to Permissions Management.
 
 
 ## Permissions
@@ -20,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ```http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.inactiveAwsRoleFinding/aggregatedSummary(authorizationSystemIds=['awsAuthSystemId'])
+GET /identityGovernance/permissionsAnalytics/aws/findings/graph.inactiveAwsRoleFinding/aggregatedSummary(authorizationSystemIds=['awsAuthSystemId'])
 ```
 
 ## Function parameters
@@ -40,7 +40,7 @@ The following table shows the parameters that are required with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|authorizationSystemIds|Collection(Edm.String)|List of authorization system IDs.|
+|authorizationSystemIds|String collection|The collection of IDs for the authorization systems against which to get the summary of records.|
 
 ## Request headers
 |Name|Description|
@@ -64,7 +64,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET identityGovernance/permissionsAnalytics/aws/findings/graph.inactiveAwsRoleFinding/aggregatedSummary(authorizationSystemIds=['377596131774'])
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.inactiveAwsRoleFinding/aggregatedSummary(authorizationSystemIds=['377596131774'])
 ```
 
 
@@ -81,7 +81,7 @@ The following example shows the response.
 Content-type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaevan_schema/$metadata#microsoft.graph.permissionsAnalyticsAggregatedIdentitySummary",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.permissionsAnalyticsAggregatedIdentitySummary",
     "totalCount": 364,
     "findingsCount": 295
 }

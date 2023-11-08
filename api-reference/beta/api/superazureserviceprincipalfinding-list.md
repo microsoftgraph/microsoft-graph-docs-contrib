@@ -20,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -52,9 +52,6 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [superAzureServicePrincipalFinding](../resources/superazureserviceprincipalfinding.md) objects in the response body.
 
-LIST UNSUCCESSFUL RESPONSE
-If unsuccessful, this method will return a '403' response if you don't have access to the authorization system or a '404' response if the LIST method filter uses a bad key.
-
 ## Examples
 
 ### Request
@@ -66,7 +63,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/azure/findings/graph.superAzureServicePrincipalFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/graph.superAzureServicePrincipalFinding
 ```
 
 ### Response
@@ -84,7 +81,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/identityGovernance/$metadata#permissionsAnalytics/azure/findings/graph.superAzureServicePrincipalFinding",
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/azure/findings/graph.superAzureServicePrincipalFinding",
   "value": [
     {
       "@odata.type": "graph.superAzureServicePrincipalFinding",
@@ -120,8 +117,7 @@ Content-type: application/json
         "createdDateTime": "2021-04-12T20:34:24Z",
         "lastActiveDateTime": "2021-10-30T03:21:05Z"
       }
-    },
-
+    }
   ]
 }
 ```
