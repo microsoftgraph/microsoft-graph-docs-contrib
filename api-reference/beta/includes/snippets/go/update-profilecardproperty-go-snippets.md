@@ -19,12 +19,14 @@ requestBody := graphmodels.NewProfileCardProperty()
 
 
 profileCardAnnotation := graphmodels.NewProfileCardAnnotation()
+displayName := "Cost Center"
+profileCardAnnotation.SetDisplayName(&displayName) 
 
 
 displayNameLocalization := graphmodels.NewDisplayNameLocalization()
-languageTag := "no-NB"
+languageTag := "nb-NO"
 displayNameLocalization.SetLanguageTag(&languageTag) 
-displayName := "Kostnads Senter"
+displayName := "Kostnadssenter"
 displayNameLocalization.SetDisplayName(&displayName) 
 
 localizations := []graphmodels.DisplayNameLocalizationable {

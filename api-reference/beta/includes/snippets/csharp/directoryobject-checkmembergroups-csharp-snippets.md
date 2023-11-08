@@ -6,9 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.DirectoryObjects.Item.CheckMemberGroups;
 
-var requestBody = new Microsoft.Graph.Beta.DirectoryObjects.Item.CheckMemberGroups.CheckMemberGroupsPostRequestBody
+var requestBody = new CheckMemberGroupsPostRequestBody
 {
 	GroupIds = new List<string>
 	{
@@ -19,6 +20,8 @@ var requestBody = new Microsoft.Graph.Beta.DirectoryObjects.Item.CheckMemberGrou
 		"c9103f26-f3cf-4004-a611-2a14e81b8f79",
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.DirectoryObjects["{directoryObject-id}"].CheckMemberGroups.PostAsync(requestBody);
 
 

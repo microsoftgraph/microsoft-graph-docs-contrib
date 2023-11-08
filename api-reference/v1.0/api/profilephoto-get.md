@@ -2,7 +2,7 @@
 title: "Get profilePhoto"
 description: "Get the specified profilePhoto or its metadata (profilePhoto properties)."
 ms.localizationpriority: medium
-author: "kevinbellinger"
+author: "kristinmcleod"
 ms.prod: "people"
 doc_type: apiPageType
 ---
@@ -14,17 +14,17 @@ Namespace: microsoft.graph
 Get the specified [profilePhoto](../resources/profilephoto.md) or its metadata (**profilePhoto** properties).
 
 The supported sizes of HD photos on Microsoft 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240,
-360x360, 432x432, 504x504, and 648x648. Photos can be any dimension if they are stored in Azure Active Directory.
+360x360, 432x432, 504x504, and 648x648. Photos can be any dimension if they're stored in Microsoft Entra ID.
 
-You can get the metadata of the largest available photo, or specify a size to get the metadata for that photo size.
-If the size you request is not available, you can still get a smaller size that the user has uploaded and made available.
-For example, if the user uploads a photo that is 504x504 pixels, all but the 648x648 size of photo will be available for download.
+You can get the metadata of the largest available photo or specify a size to get the metadata for that photo size.
+If the size you request is unavailable, you can still get a smaller size that the user has uploaded and made available.
+For example, if the user uploads a photo that is 504x504 pixels, all but the 648x648 size of the photo is available for download.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request the least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### To retrieve the profile photo of a contact
 
@@ -64,7 +64,7 @@ The following tables show the least privileged permission or permissions require
 
 > [!NOTE]
 > 
-> - Metadata operation is not supported for personal Microsoft accounts.
+> - Metadata operation isn't supported for personal Microsoft accounts.
 > - An app with only application permissions cannot access a group's photo.
 > - Retrieving a user's photo using the Microsoft Graph API is currently not supported in Azure AD B2C tenants.
 
@@ -112,7 +112,7 @@ GET /groups/{id}/photos/{size}
 
 |Parameter|Type|Description|
 |:-----|:-----|:-----|
-|size  |String  | A photo size. The supported sizes of HD photos on Microsoft 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504, and 648x648. Photos can be any dimension if they are stored in Azure Active Directory. |
+|size  |String  | A photo size. The supported sizes of HD photos on Microsoft 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504, and 648x648. Photos can be any dimension if they're stored in Microsoft Entra ID. |
 
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
@@ -124,7 +124,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 ### Response for getting the photo
@@ -192,16 +192,54 @@ HTTP/1.1 200 OK
 
 ### Example 2: Get the 48x48 photo for the signed-in user
 #### Request
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_photo_value_48x_v1_e2"
 }-->
 
-```http
-GET https://graph.microsoft.com/v1.0/me/photo/48x48/$value
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/me/photos/48x48/$value
 Content-Type: image/jpg
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-photo-value-48x-v1-e2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-photo-value-48x-v1-e2-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-photo-value-48x-v1-e2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-photo-value-48x-v1-e2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-photo-value-48x-v1-e2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-photo-value-48x-v1-e2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-photo-value-48x-v1-e2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+> [!NOTE]
+> To ensure a fixed size for the output photo, use the dedicated endpoint for photos (/photos) with fixed sizes instead of relying on the default photo endpoint (/photo), which provides the largest available photo.
+> 
 #### Response
 Contains the binary data of the requested 48x48 photo. The HTTP response code is 200.
 
@@ -311,7 +349,7 @@ Content-type: application/json
 
 #### Request
 
-Here is an example of the request to get the metadata of the team photo.
+The following example shows a request to get the metadata of the team photo.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -358,7 +396,7 @@ GET https://graph.microsoft.com/v1.0/teams/172b0cce-e65d-44ce-9a49-91d9f2e8491e/
 
 #### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -383,7 +421,7 @@ Content-type: application/json
 
 ### Example 5: Get the team photo's binary data
 
-Here is an example of the request to get the team photo's binary data.
+The following example shows a request to get the team photo's binary data.
 
 #### Request
 
@@ -442,9 +480,9 @@ Contains the binary data of the requested photo. The HTTP response code is 200.
 HTTP/1.1 200 OK
 ```
 
-## Using the binary data of the requested photo
+#### Using the binary data of the requested photo
 
-When you use the `/photo/$value` endpoint to get the binary data for a profile photo, you'll need to convert the data into a base-64 string in order to add it as an email attachment. Here is an example in JavaScript of how to create an array that you can pass as the value of the `Attachments` parameter of an [Outlook Message](user-post-messages.md).
+When you use the `/photo/$value` endpoint to get the binary data for a profile photo, you need to convert the data into a base-64 string to add it as an email attachment. The following JavaScript example shows how to create an array that you can pass as the value of the `Attachments` parameter of an [Outlook message](user-post-messages.md).
 
 ```java
 const attachments = [{
@@ -454,9 +492,9 @@ const attachments = [{
 }];
 ```
 
-See the [Microsoft Graph Connect Sample for Node.js](https://github.com/microsoftgraph/nodejs-connect-rest-sample) for an implementation of this example.
+For implementation details, see the [Microsoft Graph Connect Sample for Node.js](https://github.com/microsoftgraph/nodejs-connect-rest-sample).
 
-If you want to display the image on a web page, create an in-memory object from the image and make that object the source of an image element. Here is an example in JavaScript of this operation.
+If you want to display the image on a web page, create an in-memory object from the image and make that object the source of an image element. The following JavaScript example shows this operation.
 
 ```javascript
 const url = window.URL || window.webkitURL;
@@ -473,4 +511,3 @@ document.getElementById(imageElement).setAttribute("src", blobUrl);
   "section": "documentation",
   "tocPath": ""
 }-->
-

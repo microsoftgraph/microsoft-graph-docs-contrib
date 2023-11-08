@@ -42,7 +42,7 @@ In this step, you'll create a web app and enable authentication with the Microso
     > [!IMPORTANT]
     > The following scopes defined in the provider will be shown as a list of required permissions to request user's consent during the authentication process: `User.Read, User.ReadBasic.All, Calendars.Read, Files.Read, Files.Read.All, Sites.Read.All, Tasks.Read, Tasks.ReadWrite, People.Read`.
 
-1. Replace `<YOUR_CLIENT_ID>` with the client ID you copied from the Azure AD application.
+1. Replace `<YOUR_CLIENT_ID>` with the client ID you copied from the Microsoft Entra application.
 
 1. Make sure that the final version of **index.html** is similar to the following example:
 

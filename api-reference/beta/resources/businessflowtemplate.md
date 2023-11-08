@@ -1,6 +1,6 @@
 ---
 title: "businessFlowTemplate resource type (deprecated)"
-description: "In the Azure AD access reviews feature, the `businesFlowTemplate` represents an Azure AD business flow template. The identifier of a template, such as to review guest members of a group, is supplied by the caller when creating an access review."
+description: "In the Microsoft Entra access reviews feature, the `businesFlowTemplate` represents a Microsoft Entra business flow template. The identifier of a template, such as to review guest members of a group, is supplied by the caller when creating an access review."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
@@ -15,9 +15,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-In the Azure AD [access reviews](accessreviews-root.md) feature, the **businesFlowTemplate** represents an Azure AD business flow template. The identifier of a template, such as to review guest members of a group, is supplied by the caller when creating an access review.
+In the Microsoft Entra [access reviews](accessreviews-root.md) feature, the **businesFlowTemplate** represents a Microsoft Entra business flow template. The identifier of a template, such as to review guest members of a group, is supplied by the caller when creating an access review.
 
-The business flow template objects are automatically generated when the global administrator onboards the tenant to use the access reviews feature.  The business flow templates include access reviews of assignments to an application, memberships of a group, memberships of an Azure AD role, guest user memberships of a group, and guest user assignments to an application. No additional business flow templates can be created.
+The business flow template objects are automatically generated when the global administrator onboards the tenant to use the access reviews feature.  The business flow templates include access reviews of assignments to an application, memberships of a group, memberships of a Microsoft Entra role, guest user memberships of a group, and guest user assignments to an application. No additional business flow templates can be created.
 
 
 ## Methods
@@ -74,5 +74,3 @@ Here's a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-
