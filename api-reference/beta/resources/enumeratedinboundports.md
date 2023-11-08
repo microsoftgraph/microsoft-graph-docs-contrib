@@ -1,9 +1,9 @@
 ---
 title: "enumeratedInboundPorts resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Allows incoming traffic from certain ports."
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
@@ -13,15 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Allows incoming traffic from certain ports.
 
 Inherits from [inboundPorts](../resources/inboundports.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|ports|String collection|**TODO: Add Description**|
+|ports|Collection(Edm.String)|Collection of ports that allow inbound traffic.|
 
 ## Relationships
 None.

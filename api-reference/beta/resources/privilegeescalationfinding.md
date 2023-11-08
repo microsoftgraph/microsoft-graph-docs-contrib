@@ -20,7 +20,7 @@ Inherits from [finding](../resources/finding.md).
 ## Methods
 None.
 
-## Properties
+## Properties 
 |Property|Type|Description|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Defines when the finding was created. Inherited from [finding](../resources/finding.md).|

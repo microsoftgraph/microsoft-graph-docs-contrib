@@ -1,9 +1,9 @@
 ---
 title: "inboundPorts resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: Contains information about ports that allow inbound traffic."
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
 This is an abstract type.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|ports|Collection(Edm.String)|Collection of ports that allow inbound traffic.|
 
 ## Relationships
 None.
@@ -35,4 +35,3 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.inboundPorts"
 }
 ```
-
