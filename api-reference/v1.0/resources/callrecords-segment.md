@@ -13,13 +13,13 @@ Namespace: microsoft.graph.callRecords
 
 Represents a portion of a User-User communication or a User-Meeting communication
 in the case of a Conference call. A typical VOIP call has one segment per session. In certain
-scenarios, such as PSTN calls, there will be multiple segments per session due to additional
+scenarios, such as PSTN calls, there're multiple segments per session due to additional
 server-to-server communication required to connect the call.
 
 ## Methods
 
 No methods exist to directly access segments. Use the [Get callRecord](../api/callrecords-callrecord-get.md)
-api with `$expand=sessions($expand=segments)` or the [List session](../api/callrecords-session-list.md) api with
+API with `$expand=sessions($expand=segments)` or the [List session](../api/callrecords-callrecord-list-sessions.md) API with
 `$expand=segments` to get the segments for a [callRecord](callrecords-callrecord.md).
 
 ## Properties
