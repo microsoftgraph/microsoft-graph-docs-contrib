@@ -1,9 +1,9 @@
 ---
 title: "virtualEvent resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Information about a virtual event."
+author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -11,39 +11,30 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-
-
-**TODO: Add Description**
-
+Represents a base virtual event. Base type of [virtualEventWebinar](virtualEventWebinar.md).
 
 Inherits from [entity](../resources/entity.md).
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List virtualEvents](../api/virtualeventsroot-list-events.md)|[virtualEvent](../resources/virtualevent.md) collection|Get a list of the [virtualEvent](../resources/virtualevent.md) objects and their properties.|
-|[Create virtualEvent](../api/virtualeventsroot-post-events.md)|[virtualEvent](../resources/virtualevent.md)|Create a new [virtualEvent](../resources/virtualevent.md) object.|
-|[Get virtualEvent](../api/virtualevent-get.md)|[virtualEvent](../resources/virtualevent.md)|Read the properties and relationships of a [virtualEvent](../resources/virtualevent.md) object.|
-|[Update virtualEvent](../api/virtualevent-update.md)|[virtualEvent](../resources/virtualevent.md)|Update the properties of a [virtualEvent](../resources/virtualevent.md) object.|
-|[Delete virtualEvent](../api/virtualeventsroot-delete-events.md)|None|Delete a [virtualEvent](../resources/virtualevent.md) object.|
-|[List sessions](../api/virtualevent-list-sessions.md)|[virtualEventSession](../resources/virtualeventsession.md) collection|Get the virtualEventSession resources from the sessions navigation property.|
-|[Create virtualEventSession](../api/virtualevent-post-sessions.md)|[virtualEventSession](../resources/virtualeventsession.md)|Create a new virtualEventSession object.|
+> [!TIP]
+> This is an abstract type and can't be used directly. Use the derived type [virtualEventWebinar](virtualEventWebinar.md) instead.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[communicationsIdentitySet](../resources/communicationsidentityset.md)|**TODO: Add Description**|
-|description|[itemBody](../resources/itembody.md)|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|endDateTime|[dateTimeTimeZone](../resources/intune-datetimetimezone.md)|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|startDateTime|[dateTimeTimeZone](../resources/intune-datetimetimezone.md)|**TODO: Add Description**|
-|status|virtualEventStatus|**TODO: Add Description**.The possible values are: `draft`, `published`, `canceled`, `unknownFutureValue`.|
+|createdBy|[communicationsIdentitySet](communicationsidentityset.md)|Identity information of who created the virtual event. Inherited from [virtualEvent](../resources/virtualevent.md).|
+|description|[itemBody](../resources//itembody.md)|Description of the virtual event.|
+|displayName|String|Display name of the virtual event|
+|endDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|End time of the virtual event.|
+|id|String|Unique identifier of the virtual event. Inherited from [entity](../resources/entity.md).|
+|startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Start time of the virtual event.|
+|status|virtualEventStatus|Status of the virtual event. The possible values are: `draft`, `published`, `canceled`, `unknownFutureValue`.|
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
-|sessions|[virtualEventSession](../resources/virtualeventsession.md) collection|**TODO: Add Description**|
+|sessions|[virtualEventSession](../resources/virtualeventsession.md) collection|Sessions of the virtual event.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

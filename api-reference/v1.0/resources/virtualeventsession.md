@@ -1,9 +1,9 @@
 ---
 title: "virtualEventSession resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents information about a virtual event session."
+author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -11,53 +11,37 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-
-
-**TODO: Add Description**
-
+Represents a session in a [virtualEvent](../resources/virtualevent.md)
 
 Inherits from [onlineMeetingBase](../resources/onlinemeetingbase.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List virtualEventSessions](../api/virtualevent-list-sessions.md)|[virtualEventSession](../resources/virtualeventsession.md) collection|Get a list of the [virtualEventSession](../resources/virtualeventsession.md) objects and their properties.|
-|[Create virtualEventSession](../api/virtualevent-post-sessions.md)|[virtualEventSession](../resources/virtualeventsession.md)|Create a new [virtualEventSession](../resources/virtualeventsession.md) object.|
+|[List virtualEventSessions](../api/virtualeventsession-list.md)|[virtualEventSession](../resources/virtualeventsession.md) collection|Get a list of all [virtualEventSession](../resources/virtualeventsession.md) objects under a virtual event.|
 |[Get virtualEventSession](../api/virtualeventsession-get.md)|[virtualEventSession](../resources/virtualeventsession.md)|Read the properties and relationships of a [virtualEventSession](../resources/virtualeventsession.md) object.|
-|[Update virtualEventSession](../api/virtualeventsession-update.md)|[virtualEventSession](../resources/virtualeventsession.md)|Update the properties of a [virtualEventSession](../resources/virtualeventsession.md) object.|
-|[Delete virtualEventSession](../api/virtualevent-delete-sessions.md)|None|Delete a [virtualEventSession](../resources/virtualeventsession.md) object.|
-|[List attendanceReports](../api/virtualeventsession-list-attendancereports.md)|[meetingAttendanceReport](../resources/meetingattendancereport.md) collection|Get the meetingAttendanceReport resources from the attendanceReports navigation property.|
-|[Create meetingAttendanceReport](../api/virtualeventsession-post-attendancereports.md)|[meetingAttendanceReport](../resources/meetingattendancereport.md)|Create a new meetingAttendanceReport object.|
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|allowAttendeeToEnableCamera|Boolean|**TODO: Add Description** Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).|
-|allowAttendeeToEnableMic|Boolean|**TODO: Add Description** Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).|
-|allowedPresenters|onlineMeetingPresenters|**TODO: Add Description** Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).The possible values are: `everyone`, `organization`, `roleIsPresenter`, `organizer`, `unknownFutureValue`.|
-|allowMeetingChat|meetingChatMode|**TODO: Add Description** Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).The possible values are: `enabled`, `disabled`, `limited`, `unknownFutureValue`.|
-|allowParticipantsToChangeName|Boolean|**TODO: Add Description** Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).|
-|allowTeamworkReactions|Boolean|**TODO: Add Description** Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).|
-|audioConferencing|[audioConferencing](../resources/audioconferencing.md)|**TODO: Add Description** Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).|
-|chatInfo|[chatInfo](../resources/chatinfo.md)|**TODO: Add Description** Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).|
-|endDateTime|[dateTimeTimeZone](../resources/intune-datetimetimezone.md)|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|isEntryExitAnnounced|Boolean|**TODO: Add Description** Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).|
-|joinInformation|[itemBody](../resources/itembody.md)|**TODO: Add Description** Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).|
-|joinMeetingIdSettings|[joinMeetingIdSettings](../resources/joinmeetingidsettings.md)|**TODO: Add Description** Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).|
-|joinWebUrl|String|**TODO: Add Description** Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).|
-|lobbyBypassSettings|[lobbyBypassSettings](../resources/lobbybypasssettings.md)|**TODO: Add Description** Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).|
-|recordAutomatically|Boolean|**TODO: Add Description** Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).|
-|shareMeetingChatHistoryDefault|meetingChatHistoryDefaultMode|**TODO: Add Description** Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).The possible values are: `none`, `all`, `unknownFutureValue`.|
-|startDateTime|[dateTimeTimeZone](../resources/intune-datetimetimezone.md)|**TODO: Add Description**|
-|subject|String|**TODO: Add Description** Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).|
-|videoTeleconferenceId|String|**TODO: Add Description** Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).|
-|watermarkProtection|[watermarkProtectionValues](../resources/watermarkprotectionvalues.md)|**TODO: Add Description** Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).|
+
+Only properties in the below table are being returned in the response.
+
+| Property              | Type                                          | Description    |
+| :-------------------- | :-------------------------------------------- | :------------------------------------ |
+| chatInfo              | [chatInfo](chatinfo.md) | The chat information associated with the virtual event session.  |
+| endDateTime           | [DateTimeTimeZone](datetimetimezone.md) | The virtual event session end time.   |
+| id | String | The unique identifier of the virtual event session. Read-only.    |
+| joinInformation | [itemBody](itembody.md) | The join information of the virtual event session. Read-only. |
+| joinMeetingIdSettings | [joinMeetingIdSettings](joinmeetingidsettings.md) | The **joinMeetingId** of the virtual event session. Read-only. |
+| joinWebUrl | String | The join URL of the virtual event session. Read-only. |
+| startDateTime | [DateTimeTimeZone](datetimetimezone.md) | The virtual event session start time. |
+| subject | String | The subject of the virtual event session. |
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
-|attendanceReports|[meetingAttendanceReport](../resources/meetingattendancereport.md) collection|**TODO: Add Description** Inherited from [microsoft.graph.onlineMeetingBase](../resources/onlinemeetingbase.md)|
+|attendanceReports|[meetingAttendanceReport](../resources/meetingattendancereport.md) collection|Attendance reports of this virtual event session. Inherited from [onlineMeeting](../resources/onlinemeeting.md).|
 
 ## JSON representation
 The following is a JSON representation of the resource.
