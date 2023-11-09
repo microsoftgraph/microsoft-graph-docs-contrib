@@ -69,7 +69,7 @@ GET https://graph.microsoft.com/beta/employeeExperience/goals/exportJobs
 
 
 #### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -99,7 +99,7 @@ Content-Type: application/json
 
 ### Example 2: Filter response based on `goalsOrganizationId`
 #### Request
-The following is an example of a request.
+The following example shows the request.
 <!-- {
   "blockType": "request",
   "name": "list_goalsexportjob2"
@@ -141,7 +141,7 @@ Content-Type: application/json
 
 ### Example 3: Filter response based on any property other than `goalsOrganizationId`. 
 #### Request
-The following is an example of a request.
+The following example shows the request.
 <!-- {
   "blockType": "request",
   "name": "list_goalsexportjob3"
@@ -153,7 +153,7 @@ GET https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs?$filter
 
 
 #### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
