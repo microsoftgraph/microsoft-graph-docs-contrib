@@ -17906,6 +17906,8 @@ items:
                     href: api/chatmessage-setreaction.md
                   - name: Unset message reaction
                     href: api/chatmessage-unsetreaction.md
+                  - name: Remove all access for user
+                    href: api/chat-removeallaccessforuser.md
               - name: Chat message
                 href: resources/chatmessage.md
                 items:
