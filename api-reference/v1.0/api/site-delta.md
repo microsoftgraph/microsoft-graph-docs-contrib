@@ -14,7 +14,7 @@ Your app begins by calling `delta` without any parameters.
 The service starts enumerating sites, returning pages of changes to sites and either an **@odata.nextLink** or an **@odata.deltaLink**.
 Your app should continue calling with the **@odata.nextLink** until you see an **@odata.deltaLink** returned.
 
-After you have received all the changes, you may apply them to your local state.
+After you have received all the changes, you can apply them to your local state.
 To check for changes in the future, call `delta` again with the **@odata.deltaLink** from the previous response.
 
 Deleted sites are returned with the [deleted](../resources/deleted.md) facet.
