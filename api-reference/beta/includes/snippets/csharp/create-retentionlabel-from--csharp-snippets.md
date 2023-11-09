@@ -6,16 +6,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models.Security;
+using Microsoft.Graph.Beta.Models;
 
-var requestBody = new Microsoft.Graph.Beta.Models.Security.RetentionLabel
+var requestBody = new RetentionLabel
 {
 	OdataType = "#microsoft.graph.security.retentionLabel",
 	DisplayName = "String",
-	BehaviorDuringRetentionPeriod = Microsoft.Graph.Beta.Models.Security.BehaviorDuringRetentionPeriod.DoNotRetain,
-	ActionAfterRetentionPeriod = Microsoft.Graph.Beta.Models.Security.ActionAfterRetentionPeriod.None,
-	RetentionTrigger = Microsoft.Graph.Beta.Models.Security.RetentionTrigger.DateLabeled,
-	RetentionDuration = new Microsoft.Graph.Beta.Models.Security.RetentionDuration
+	BehaviorDuringRetentionPeriod = BehaviorDuringRetentionPeriod.DoNotRetain,
+	ActionAfterRetentionPeriod = ActionAfterRetentionPeriod.None,
+	RetentionTrigger = RetentionTrigger.DateLabeled,
+	RetentionDuration = new RetentionDuration
 	{
 		OdataType = "microsoft.graph.security.retentionDuration",
 	},
@@ -27,8 +29,8 @@ var requestBody = new Microsoft.Graph.Beta.Models.Security.RetentionLabel
 		OdataType = "microsoft.graph.identitySet",
 	},
 	LabelToBeApplied = "String",
-	DefaultRecordBehavior = Microsoft.Graph.Beta.Models.Security.DefaultRecordBehavior.StartLocked,
-	Descriptors = new Microsoft.Graph.Beta.Models.Security.FilePlanDescriptor
+	DefaultRecordBehavior = DefaultRecordBehavior.StartLocked,
+	Descriptors = new FilePlanDescriptor
 	{
 		AdditionalData = new Dictionary<string, object>
 		{
@@ -50,6 +52,8 @@ var requestBody = new Microsoft.Graph.Beta.Models.Security.RetentionLabel
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Security.Labels.RetentionLabels.PostAsync(requestBody);
 
 

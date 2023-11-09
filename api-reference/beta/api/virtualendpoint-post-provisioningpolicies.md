@@ -19,13 +19,10 @@ Create a new [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|CloudPC.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|CloudPC.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "virtualendpoint_post_provisioningpolicies" } -->
+[!INCLUDE [permissions-table](../includes/permissions/virtualendpoint-post-provisioningpolicies-permissions.md)]
 
 ## HTTP request
 
@@ -49,13 +46,13 @@ POST /deviceManagement/virtualEndpoint/provisioningPolicies
 
 In the request body, supply a JSON representation of the [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) object.
 
-The following table shows the properties that are required when you create the [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md).
+The following table lists the properties that are required when you create the [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
 |description|String|The provisioning policy description.|
 |displayName|String|The display name for the provisioning policy.|
-|domainJoinConfiguration|[cloudPcDomainJoinConfiguration](../resources/cloudpcdomainjoinconfiguration.md)|Specifies how Cloud PCs will join Azure Active Directory.|
+|domainJoinConfiguration|[cloudPcDomainJoinConfiguration](../resources/cloudpcdomainjoinconfiguration.md)|Specifies how Cloud PCs will join Microsoft Entra ID.|
 |domainJoinConfigurations|Collection([microsoft.graph.cloudPcDomainJoinConfiguration](../resources/cloudpcdomainjoinconfiguration.md))|Specifies a list ordered by priority on how Cloud PCs will join Azure AD.|
 |imageDisplayName|String|The display name for the OS image you’re provisioning.|
 |imageId|String|The ID of the operating system image you want to provision on Cloud PCs. The format for a gallery type image is: {publisher_offer_sku}. Supported values for each of the parameters are as follows:<ul><li>publisher: `Microsoftwindowsdesktop`.</li> <li>offer: `windows-ent-cpc`.</li> <li>sku: `21h1-ent-cpc-m365`, `21h1-ent-cpc-os`, `20h2-ent-cpc-m365`, `20h2-ent-cpc-os`, `20h1-ent-cpc-m365`, `20h1-ent-cpc-os`, `19h2-ent-cpc-m365` and `19h2-ent-cpc-os`.</li></ul>|
@@ -148,7 +145,7 @@ Content-Type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {

@@ -1,6 +1,6 @@
 ---
 title: "queryByPlatformType action"
-description: ""
+description: "Intune Rapolicy Devicemanagementresourceaccessprofilebase Querybyplatformtype Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

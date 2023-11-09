@@ -1,6 +1,6 @@
 ---
 title: "Activity reports API overview"
-description: "Use the activity reports API in Microsoft Graph to access the reports that Azure Active Directory creates to help you track user activity in a tenant."
+description: "Use the activity reports API in Microsoft Graph to access the reports that Microsoft Entra creates to help you track user activity in a tenant."
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: "identity-and-access-reports"
@@ -14,13 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Azure Active Directory (Azure AD) tracks user activity and creates reports that help you understand how your users access and use Azure AD services. Use the Microsoft Graph API for Azure AD to analyze the data in these reports and to create custom solutions tailored to your organization's specific needs.
+Microsoft Entra ID tracks user activity and creates reports that help you understand how your users access and use Microsoft Entra services. Use the Microsoft Graph API for Microsoft Entra to analyze the data in these reports and to create custom solutions tailored to your organization's specific needs.
 
-The availability of these activity reports is governed by the Azure AD data retention policies. For more information, see [data retention policies](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
+The availability of these activity reports is governed by the Microsoft Entra data retention policies. For more information, see [data retention policies](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
 
 ## What are activity reports?
 
-Azure AD provides three types of activity reports:
+Microsoft Entra provides three types of activity reports:
 
 - Directory audits
 - Sign-ins
@@ -44,7 +44,7 @@ The sign-ins report helps you determine who performed the tasks reported by dire
 
 ### Provisioning
 
-The provisioning report helps you see all the actions performed by the Azure AD provisioning service. The provisioning report helps you answer questions like:
+The provisioning report helps you see all the actions performed by the Microsoft Entra provisioning service. The provisioning report helps you answer questions like:
 
 - What groups were successfully created in ServiceNow?
 - What roles were imported from Amazon Web Services?
@@ -64,16 +64,16 @@ GET provisioning logs | [https://graph.microsoft.com/beta/auditLogs/provisioning
 
 Activity reports are available for features that you've licensed. If you have a license for a specific feature, you also have access to the reports.
 
-For example, you need an Azure AD Premium P1 license to access self-service password audit reports.  To learn more, see [Azure AD licensing](https://azure.microsoft.com/pricing/details/active-directory/).
+For example, you need a Microsoft Entra ID P1 license to access self-service password audit reports.  To learn more, see [Microsoft Entra ID licensing](https://azure.microsoft.com/pricing/details/active-directory/).
 
-Sign-in reports require an Azure AD Premium license.
+Sign-in reports require a Microsoft Entra ID P1 or P2 license.
 
-To learn more, see [Azure AD pricing](https://azure.microsoft.com/pricing/details/active-directory/).
+To learn more, see [Microsoft Entra pricing](https://azure.microsoft.com/pricing/details/active-directory/).
 
 ## Next steps
 
 - [Register your app](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to satisfy report prerequisites.
-- To learn how to retrieve audit logs while authenticated using certificates, see [Tutorial: Get data using the Azure Active Directory reporting API with certificates](/azure/active-directory/reports-monitoring/tutorial-access-api-with-certificates).
+- To learn how to retrieve audit logs while authenticated using certificates, see [Tutorial: Get data using the Microsoft Entra reporting API with certificates](/azure/active-directory/reports-monitoring/tutorial-access-api-with-certificates).
 - Review the [directoryAudit](directoryaudit.md) resource and actions.
 - Review the [signIn](signin.md) resource and actions.
 - Review the [provisioningObjectSummary](provisioningobjectsummary.md) resource.

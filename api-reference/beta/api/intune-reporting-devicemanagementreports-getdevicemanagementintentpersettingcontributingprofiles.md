@@ -1,6 +1,6 @@
 ---
 title: "getDeviceManagementIntentPerSettingContributingProfiles action"
-description: ""
+description: "Intune Reporting Devicemanagementreports Getdevicemanagementintentpersettingcontributingprofiles Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

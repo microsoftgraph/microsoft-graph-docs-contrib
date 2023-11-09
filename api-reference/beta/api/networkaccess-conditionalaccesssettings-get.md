@@ -3,7 +3,7 @@ title: "Get conditionalAccessSettings"
 description: "Retrieve the conditional access settings, which include the preservation of the original source IP address in network traffic for accurate identification and tracking, and the establishment of scalable network connectivity through the Global Secure Access services."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 
@@ -17,13 +17,10 @@ Retrieve the conditional access settings, which include the preservation of the 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|NetworkAccessPolicy.Read.All, NetworkAccessPolicy.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+<!-- { "blockType": "permissions", "name": "networkaccess_conditionalaccesssettings_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/networkaccess-conditionalaccesssettings-get-permissions.md)]
 
 [!INCLUDE [rbac-global-secure-access-apis-read](../includes/rbac-for-apis/rbac-global-secure-access-apis-read.md)]
 

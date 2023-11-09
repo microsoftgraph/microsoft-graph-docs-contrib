@@ -6,10 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-request_configuration = DelegatedAdminRelationshipRequestBuilder.DelegatedAdminRelationshipRequestBuilderDeleteRequestConfiguration(
+request_configuration = DelegatedAdminRelationshipItemRequestBuilder.DelegatedAdminRelationshipItemRequestBuilderDeleteRequestConfiguration(
 headers = {
 		'If-Match' : "W/\"JyI0NzAwNjg0NS0wMDAwLTE5MDAtMDAwMC02MGY0Yjg4MzAwMDAiJw==\"",
 }

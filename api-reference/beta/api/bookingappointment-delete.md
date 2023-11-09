@@ -19,13 +19,10 @@ Delete a [bookingAppointment](../resources/bookingappointment.md) in the specifi
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Delegated (personal Microsoft account) | Not supported.   |
-|Application | BookingsAppointment.ReadWrite.All, Bookings.Read.All  |
+<!-- { "blockType": "permissions", "name": "bookingappointment_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/bookingappointment-delete-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -41,18 +38,18 @@ DELETE /bookingBusinesses/{id}/appointments/{id}
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 
 ### Request
 
-The following is an example of a request.
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -99,7 +96,7 @@ DELETE https://graph.microsoft.com/beta/bookingBusinesses/contosolunchdelivery@c
 ---
 
 ### Response
-The following is an example of the response. 
+Here's an example of the response. 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

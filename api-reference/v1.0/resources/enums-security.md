@@ -11,6 +11,16 @@ author: "BenAlfasi"
 
 Namespace: microsoft.graph.security
 
+### behaviorDuringRetentionPeriod values
+
+| Member                   |
+| :----------------------- |
+| doNotRetain              |
+| retain                   |
+| retainAsRecord           |
+| retainAsRegulatoryRecord |
+| unknownFutureValue       |
+
 ### contentFormat values
 
 | Member             |
@@ -47,6 +57,23 @@ Namespace: microsoft.graph.security
 | error              |
 | success            |
 | notAvaliable       |
+| unknownFutureValue |
+
+### hostPortProtocol values
+
+| Member             |
+| :----------------- |
+| tcp                |
+| udp                |
+| unknownFutureValue |
+
+### hostPortStatus values
+
+| Member             |
+| :----------------- |
+| open               |
+| filtered           |
+| closed             |
 | unknownFutureValue |
 
 ### hostReputationClassification values

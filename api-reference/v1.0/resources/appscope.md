@@ -3,6 +3,7 @@ title: "appScope resource type"
 description: "An app scope is a scope defined and understood by a specific application."
 ms.localizationpriority: medium
 author: "DougKirschner"
+ms.reviewer: msodsrbac
 ms.prod: "applications"
 doc_type: "resourcePageType"
 ---

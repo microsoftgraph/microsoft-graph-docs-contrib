@@ -50,7 +50,7 @@ Represents the export job for downloading a specified Cloud PC report.
 
 | Member                                 | Description                                                         |
 | :------------------------------------- | :------------------------------------------------------------------ |
-| remoteConnectionHistoricalReports      | The historical remote connections report.                           |
+| remoteConnectionHistoricalReports      | The historical aggregated remote connections report.                           |
 | dailyAggregatedRemoteConnectionReports | The daily aggregated remote connections report.                     |
 | totalAggregatedRemoteConnectionReports | The total aggregated remote connections report.                     |
 | sharedUseLicenseUsageReport            | The daily/hourly aggregated shared use license usage report.  |
@@ -61,6 +61,7 @@ Represents the export job for downloading a specified Cloud PC report.
 | frontlineLicenseUsageRealTimeReport         | The real-time data for Windows 365 Frontline license usage.                             |
 | remoteConnectionQualityReports        | The overall connection quality report for all devices within a tenant. |
 | inaccessibleCloudPcReports             | The Cloud PCs that are inaccessible. |
+| rawRemoteConnectionReports             | The raw real-time remote connection report.                         |
 
 
 ## Relationships
@@ -69,7 +70,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

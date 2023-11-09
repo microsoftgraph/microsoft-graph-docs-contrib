@@ -48,7 +48,7 @@ POST /teams/{team-id}/installedApps/{app-installation-id}/upgrade
 
 In the request body, supply a JSON representation of the parameters.
 
-The following table shows additional parameters that can be used with the upgrade action.
+The following table shows more parameters that can be used with the upgrade action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
@@ -59,14 +59,15 @@ The following table shows additional parameters that can be used with the upgrad
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "upgrade_teamsapp_in_team",
@@ -81,10 +82,43 @@ POST https://graph.microsoft.com/v1.0/teams/db5e04be-daa2-4a35-beb1-5e73cc381599
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/upgrade-teamsapp-in-team-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/upgrade-teamsapp-in-team-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/upgrade-teamsapp-in-team-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/upgrade-teamsapp-in-team-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/upgrade-teamsapp-in-team-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/upgrade-teamsapp-in-team-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/upgrade-teamsapp-in-team-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
-The following is an example of the response. 
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

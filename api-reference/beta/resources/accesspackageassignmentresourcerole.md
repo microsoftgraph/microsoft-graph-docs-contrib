@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](entitlementmanagement-overview.md), an access package assignment resource role indicates the resource-specific role that a subject has been assigned through an access package assignment.
+In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), an access package assignment resource role indicates the resource-specific role that a subject has been assigned through an access package assignment.
 
 ## Methods
 
@@ -72,5 +72,3 @@ Here's a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

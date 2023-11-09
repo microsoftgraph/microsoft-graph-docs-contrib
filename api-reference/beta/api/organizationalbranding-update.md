@@ -17,13 +17,10 @@ Update the properties of the default branding object specified by the [organizat
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Organization.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Organization.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "organizationalbranding_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/organizationalbranding-update-permissions.md)]
 
 ## HTTP request
 
@@ -53,7 +50,7 @@ PUT /organization/{organizationId}/branding/localizations/{organizationalBrandin
 | backgroundColor | String | Color that appears in place of the background image in low-bandwidth connections. We recommend that you use the primary color of your banner logo or your organization color. Specify this in hexadecimal format, for example, white is `#FFFFFF`. |
 | backgroundImage | Stream | Image that appears as the background of the sign-in page. The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels. A smaller image will reduce bandwidth requirements and make the page load faster. |
 | bannerLogo | Stream | A banner version of your company logo that appears on the sign-in page. The allowed types are PNG or JPEG not larger than 36 × 245 pixels. We recommend using a transparent image with no padding around the logo. |
-| contentCustomization | [contentCustomization](../resources/contentcustomization.md) | Represents the various content options to be customized throughout the authentication flow for a tenant. <br/><br/>**NOTE:** Supported by Azure Active Directory for customers tenants only. |
+| contentCustomization | [contentCustomization](../resources/contentcustomization.md) | Represents the various content options to be customized throughout the authentication flow for a tenant. <br/><br/>**NOTE:** Supported by Microsoft Entra ID for customers tenants only. |
 | customAccountResetCredentialsUrl | String | A custom URL for resetting account credentials. This URL must be in ASCII format or non-ASCII characters must be URL encoded, and not exceed 128 characters. |
 | customCannotAccessYourAccountText | String | A string to replace the default "Can't access your account?" self-service password reset (SSPR) hyperlink text on the sign-in page. This text must be in Unicode format and not exceed 256 characters. |
 | customCSS | Stream | CSS styling that appears on the sign-in page. The allowed format is .css format only and not larger than 25KB. |
@@ -62,7 +59,7 @@ PUT /organization/{organizationId}/branding/localizations/{organizationalBrandin
 | customPrivacyAndCookiesUrl | String | A custom URL to replace the default URL of the "Privacy and Cookies" hyperlink in the footer. This URL must be in ASCII format or non-ASCII characters must be URL encoded, and not exceed 128 characters. |
 | customTermsOfUseText | String | A string to replace the the default "Terms of Use" hyperlink text in the footer. This text must be in Unicode format and not exceed 256 characters. |
 | customTermsOfUseUrl | String | A custom URL to replace the default URL of the "Terms of Use" hyperlink in the footer. This URL must be in ASCII format or non-ASCII characters must be URL encoded, and not exceed 128characters. |
-| favicon | Stream | A custom icon (favicon) to replace a default Microsoft product favicon on an Azure AD tenant. |
+| favicon | Stream | A custom icon (favicon) to replace a default Microsoft product favicon on a Microsoft Entra tenant. |
 | headerBackgroundColor | String | The RGB color to apply to customize the color of the header. |
 | headerLogo | Stream | A company logo that appears in the header of the sign-in page. The allowed types are PNG or JPEG not larger than 36 × 245 pixels. We recommend using a transparent image with no padding around the logo. |
 | loginPageLayoutConfiguration | [loginPageLayoutConfiguration](../resources/loginPageLayoutConfiguration.md) | Represents the layout configuration to be displayed on the login page for a tenant. |
@@ -82,7 +79,7 @@ If successful, this method returns a `204 No Content` response code.
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -137,7 +134,7 @@ Accept-Language: 0
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response"
@@ -153,7 +150,7 @@ The following request updates the banner logo for the default branding. To updat
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 
@@ -176,7 +173,7 @@ Content-Type: image/jpeg
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/update-organizationalbrandinglocaliation-2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -184,7 +181,7 @@ Content-Type: image/jpeg
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/update-organizationalbrandinglocaliation-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -196,7 +193,7 @@ Content-Type: image/jpeg
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-organizationalbrandinglocaliation-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -207,7 +204,7 @@ Content-Type: image/jpeg
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response"
