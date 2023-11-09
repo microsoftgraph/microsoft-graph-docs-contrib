@@ -12,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents configurations of tenant domains that are federated and verified with Microsoft Entra ID. Use this resource to configure federation settings when setting up federation with Microsoft Entra ID. For information on federation, see [What is federation with Microsoft Entra ID?](/azure/active-directory/hybrid/whatis-fed).
+Represents configurations of tenant domains that are federated and verified with Microsoft Entra ID. Use this resource to configure federation settings when you set up federation with Microsoft Entra ID. For information about federation, see [What is federation with Microsoft Entra ID?](/azure/active-directory/hybrid/whatis-fed).
 
 
 Inherits from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).
@@ -64,7 +64,7 @@ Inherits from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
