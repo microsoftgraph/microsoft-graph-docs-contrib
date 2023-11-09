@@ -110,9 +110,9 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-### Error Conditions
+### Error conditions
 
-|Scenario|HTTP Code|Code|Message|Details|
+|Scenario|HTTP code|Code|Message|Details|
 |:---|:---|:---|:---|:---|
 |Method not supported for entity|405|MethodNotAllowed|This method is not supported for this entity type.  Reference the Microsoft Graph documentation for the methods applicable to this entity|
 |User doesn't have appropriate permission scope|403|Forbidden|Your account does not have access to this report or data. Please contact your global administrator to request access.|
