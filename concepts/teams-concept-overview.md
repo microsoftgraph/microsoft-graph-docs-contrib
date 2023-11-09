@@ -197,13 +197,13 @@ Looking for the API reference for Teams, Shift, and Viva Learning?
 
 ## Next steps
 
-- [Calls permissions](./permissions-reference.md#calls-permissions)
+- [Calls permissions](./permissions-reference.md)
 - [Communications API samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples)
 - [Delegated and application permissions](/azure/active-directory/develop/v1-permissions-and-consent)
 - Drill down on the methods, properties, and relationships of the [team](/graph/api/resources/team), [channel](/graph/api/resources/channel), and [group](/graph/api/resources/group) resources.
 - Get a jump-start with sample code: [Contoso Airlines](https://github.com/microsoftgraph/contoso-airlines-teams-sample), [C# mini-samples](https://github.com/microsoftgraph/csharp-teams-sample-graph)
 - Learn how to [use the Microsoft Teams API](/graph/api/resources/teams-api-overview).
-- [Online meeting permissions](./permissions-reference.md#online-meetings-permissions)
+- [Online meeting permissions](./permissions-reference.md)
 - Read more about the [Microsoft Teams programming model](/microsoftteams/platform/concepts/concepts-overview).
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Watch the [overview video](https://aka.ms/teamsgraph/v1/video).

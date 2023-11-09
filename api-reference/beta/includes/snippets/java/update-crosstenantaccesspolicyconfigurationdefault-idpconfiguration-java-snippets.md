@@ -1,0 +1,23 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```java
+
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+
+CrossTenantAccessPolicyConfigurationDefault crossTenantAccessPolicyConfigurationDefault = new CrossTenantAccessPolicyConfigurationDefault();
+DefaultInvitationRedemptionIdentityProviderConfiguration invitationRedemptionIdentityProviderConfiguration = new DefaultInvitationRedemptionIdentityProviderConfiguration();
+LinkedList<B2bIdentityProvidersType> primaryIdentityProviderPrecedenceOrderList = new LinkedList<B2bIdentityProvidersType>();
+primaryIdentityProviderPrecedenceOrderList.add(B2bIdentityProvidersType.EXTERNAL_FEDERATION);
+primaryIdentityProviderPrecedenceOrderList.add(B2bIdentityProvidersType.AZURE_ACTIVE_DIRECTORY);
+primaryIdentityProviderPrecedenceOrderList.add(B2bIdentityProvidersType.SOCIAL_IDENTITY_PROVIDERS);
+invitationRedemptionIdentityProviderConfiguration.primaryIdentityProviderPrecedenceOrder = primaryIdentityProviderPrecedenceOrderList;
+invitationRedemptionIdentityProviderConfiguration.fallbackIdentityProvider = B2bIdentityProvidersType.DEFAULT_CONFIGURED_IDP;
+crossTenantAccessPolicyConfigurationDefault.invitationRedemptionIdentityProviderConfiguration = invitationRedemptionIdentityProviderConfiguration;
+
+graphClient.policies().crossTenantAccessPolicy().default()
+	.buildRequest()
+	.patch(crossTenantAccessPolicyConfigurationDefault);
+
+```

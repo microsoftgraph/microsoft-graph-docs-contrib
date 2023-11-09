@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6640
+Content-Length: 6954
 
 {
   "value": [
@@ -125,6 +125,7 @@ Content-Length: 6640
       "appActionIfUnableToAuthenticateUser": "wipe",
       "dialerRestrictionLevel": "managedApps",
       "gracePeriodToBlockAppsDuringOffClockHours": "PT2M4.5004762S",
+      "protectedMessagingRedirectAppType": "anyManagedApp",
       "appDataEncryptionType": "afterDeviceRestart",
       "screenCaptureBlocked": true,
       "encryptAppData": true,
@@ -197,7 +198,10 @@ Content-Length: 6640
       "requireClass3Biometrics": true,
       "requirePinAfterBiometricChange": true,
       "fingerprintAndBiometricEnabled": true,
-      "minimumWarningSdkVersion": "Minimum Warning Sdk Version value"
+      "minimumWarningSdkVersion": "Minimum Warning Sdk Version value",
+      "messagingRedirectAppUrlScheme": "Messaging Redirect App Url Scheme value",
+      "messagingRedirectAppDisplayName": "Messaging Redirect App Display Name value",
+      "messagingRedirectAppPackageId": "Messaging Redirect App Package Id value"
     }
   ]
 }
