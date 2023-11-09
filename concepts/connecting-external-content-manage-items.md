@@ -133,6 +133,20 @@ To remove items from the index, you [delete the externalItem](/graph/api/externa
 DELETE /external/connections/contosohelpdesk/items/SR00145
 ```
 
+## Keep your data in sync
+
+There are a few considerations to keep in mind when choosing how to keep your data in sync:
+
+Crawl mechanism 
+* Incremental crawl: Pushing detected differences (additions) in source data. This mechanism is not as expensive as a Full crawl.
+* Full crawl: Updating the entire item from source data (re-crawl) which captures all additions and deletions. This mechanism ensures better accuracy but is more expensive and takes longer than an Incremental crawl. 
+
+Sync interval
+* Event-based: Pushing item updates on an event basis. This sync interval is recommended for dynamic or sensitive data (i.e. item status). 
+* Every N minutes: Pushing item updates every N minutes. This sync interval is recommended for content-rich or non-sensitive data that is not updated very frequently (e.g. wikis, webpages). 
+
+Ultimately, how you manage your data refreshes really depends on the type of data you have and your computing abilities.
+
 ## Next steps
 
 - [Use external groups to manage permissions](connecting-external-content-external-groups.md)
