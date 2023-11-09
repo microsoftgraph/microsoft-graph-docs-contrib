@@ -104,7 +104,7 @@ Content-Type: application/json
       }
     },
     {
-      "id": "Y29tcHV0ZS5hZGRyZXNzZXMuY3JlYXRl"
+      "id": "Y29tcHV0ZS5hZGRyZXNzZXMuY3JlYXRl",
       "externalId": "compute.addresses.create",
       "resourceTypes": ["addresses"],
       "severity": "high",
@@ -170,7 +170,7 @@ Content-Type: application/json
       }
     },
     {
-      "id": "Y29tcHV0ZS5hZGRyZXNzZXMuY3JlYXRl"
+      "id": "Y29tcHV0ZS5hZGRyZXNzZXMuY3JlYXRl",
       "externalId": "compute.addresses.create",
       "resourceTypes": ["addresses"],
       "severity": "high",

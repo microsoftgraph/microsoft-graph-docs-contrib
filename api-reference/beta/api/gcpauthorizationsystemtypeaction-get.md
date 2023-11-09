@@ -82,7 +82,7 @@ Content-Type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{id}/microsoft.graph.gcpAuthorizationSystem/actions/Y29tcHV0ZS5hZGRyZXNzZXMuY3JlYXRl",
   "value": [
     {
-      "id": "Y29tcHV0ZS5hZGRyZXNzZXMuY3JlYXRl"
+      "id": "Y29tcHV0ZS5hZGRyZXNzZXMuY3JlYXRl",
       "externalId": "compute.addresses.create",
       "resourceTypes": ["addresses"],
       "severity": "high",
