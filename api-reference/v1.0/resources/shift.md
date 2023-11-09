@@ -15,11 +15,11 @@ Represents a unit of scheduled work in a [schedule](schedule.md).
 
 The duration of a shift can't be less than 1 minute or longer than 24 hours.
 
-When you replace a shift, the **sharedShift** property is visible to all team members, but the **draftShift** property is only visible to team owners, and would need to be shared with team members for visibility. Sharing changes to the **draftShift** property copies those changes to the **sharedShift** property.
+When you replace a shift, the **sharedShift** property is visible to all team members, but the **draftShift** property is only visible to team owners and would need to be shared with team members for visibility. Sharing changes to the **draftShift** property copies those changes to the **sharedShift** property.
 
-You can't update the **sharedShift** property if you're updating the **draftShift** property. The **draftShift** property must be empty in order to update the **sharedShift** property.
+You can't update the **sharedShift** property if you're updating the **draftShift** property. The **draftShift** property must be empty to update the **sharedShift** property.
 
-Updates to the **sharedShift** property send notifications to users in the Teams client. To streamline the user experience, update the **draftShift** property, and then use the [schedule share](/graph/api/schedule-share) API to publish all pending changes within a date range as a single action.
+Updates to the **sharedShift** property send notifications to users in the Teams client. To streamline the user experience, update the **draftShift** property and then use the [schedule share](/graph/api/schedule-share) API to publish all pending changes within a date range as a single action.
 
 ## Methods
 
