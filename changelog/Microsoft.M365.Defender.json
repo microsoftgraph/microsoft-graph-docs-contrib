@@ -1488,8 +1488,8 @@
       "Id": "1ab6bfa0-5fd2-4d51-9834-a8cfc0ba637c",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2023-10-18T08:39:06.2660971Z",
-      "WorkloadArea": "Microsoft.M365.Defender",
+      "CreatedDateTime": "2023-11-08T08:39:06.2660971Z",
+      "WorkloadArea": "Security",
       "SubArea": "Alerts and incidents"
     },
     {
@@ -1506,8 +1506,8 @@
       "Id": "2ffb1cd0-70b3-4e55-b5f2-b7e6c7d62dc2",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2023-10-18T08:39:06.2667542Z",
-      "WorkloadArea": "Microsoft.M365.Defender",
+      "CreatedDateTime": "2023-11-08T08:39:06.2667542Z",
+      "WorkloadArea": "Security",
       "SubArea": "Alerts and incidents"
     }
   ]
