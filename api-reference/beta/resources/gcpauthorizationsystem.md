@@ -21,7 +21,6 @@ Inherits from [authorizationSystem](../resources/authorizationsystem.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List gcpAuthorizationSystems](../api/gcpauthorizationsystem-list.md)|[gcpAuthorizationSystem](../resources/gcpauthorizationsystem.md) collection|Get a list of the [gcpAuthorizationSystem](../resources/gcpauthorizationsystem.md) objects and their properties.|
-|[Get gcpAuthorizationSystem](../api/gcpauthorizationsystem-get.md)|[gcpAuthorizationSystem](../resources/gcpauthorizationsystem.md)|Read the properties and relationships of a [gcpAuthorizationSystem](../resources/gcpauthorizationsystem.md) object.|
 |[List actions](../api/gcpauthorizationsystem-list-actions.md)|[gcpAuthorizationSystemTypeAction](../resources/gcpauthorizationsystemtypeaction.md) collection|Get the gcpAuthorizationSystemTypeAction resources from the actions navigation property.|
 |[List dataCollectionInfo](../api/gcpauthorizationsystem-list-datacollectioninfo.md)|[dataCollectionInfo](../resources/datacollectioninfo.md) collection|Get the dataCollectionInfo resources from the dataCollectionInfo navigation property.|
 |[List resources](../api/gcpauthorizationsystem-list-resources.md)|[gcpAuthorizationSystemResource](../resources/gcpauthorizationsystemresource.md) collection|Get the gcpAuthorizationSystemResource resources from the resources navigation property.|

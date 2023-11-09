@@ -21,7 +21,6 @@ Inherits from [authorizationSystem](../resources/authorizationsystem.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List azureAuthorizationSystems](../api/azureauthorizationsystem-list.md)|[azureAuthorizationSystem](../resources/azureauthorizationsystem.md) collection|Get a list of the [azureAuthorizationSystem](../resources/azureauthorizationsystem.md) objects and their properties.|
-|[Get azureAuthorizationSystem](../api/azureauthorizationsystem-get.md)|[azureAuthorizationSystem](../resources/azureauthorizationsystem.md)|Read the properties and relationships of an [azureAuthorizationSystem](../resources/azureauthorizationsystem.md) object.|
 
 ## Properties
 |Property|Type|Description|
