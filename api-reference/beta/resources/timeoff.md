@@ -15,11 +15,11 @@ Namespace: microsoft.graph
 
 Represents a unit of non-work in a [schedule](../resources/schedule.md).
 
-When you replace a shift, the **sharedTimeOff** property is visible to all team members, but the **draftTimeOff** property is only visible to team owners, and would need to be shared with team members for visibility. Sharing changes to the **draftTimeOff** property copies those changes to the **sharedTimeOff** property.
+When you replace a shift, the **sharedTimeOff** property is visible to all team members, but the **draftTimeOff** property is only visible to team owners and would need to be shared with team members for visibility. Sharing changes to the **draftTimeOff** property copies those changes to the **sharedTimeOff** property.
 
-You can't update the **sharedTimeOff** property if you're updating the **draftTimeOff** property. The **draftTimeOff** property must be empty in order to update the **sharedTimeOff** property.
+You can't update the **sharedTimeOff** property if you're updating the **draftTimeOff** property. The **draftTimeOff** property must be empty to update the **sharedTimeOff** property.
 
-Updates to the **sharedTimeOff** property send notifications to users in the Teams client. To streamline the user experience, update the **draftTimeOff** property, and then use the [schedule share](/graph/api/schedule-share) API to publish all pending changes within a date range as a single action.
+Updates to the **sharedTimeOff** property send notifications to users in the Teams client. To streamline the user experience, update the **draftTimeOff** property and then use the [schedule share](/graph/api/schedule-share) API to publish all pending changes within a date range as a single action.
 
 ## Methods
 
@@ -45,7 +45,7 @@ Updates to the **sharedTimeOff** property send notifications to users in the Tea
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following example is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
