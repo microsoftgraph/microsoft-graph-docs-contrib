@@ -96,7 +96,7 @@ Content-Type: application/json
     {
       "@odata.type": "graph.awsAuthorizationSystemTypeAction",
       "id": "ZWMyOkFsbG9jYXRlQWRkcmVzcw==",
-      "externalId": "ec2:AllocateAddress"
+      "externalId": "ec2:AllocateAddress",
       "resourceTypes": ["ipv4pool-ec2"],
       "severity": "normal",
       "actionType": null,
@@ -194,7 +194,7 @@ Content-Type: application/json
     },
     {
       "id": "ZWMyOkFsbG9jYXRlQWRkcmVzcw==",
-      "externalId": "ec2:AllocateAddress"
+      "externalId": "ec2:AllocateAddress",
       "resourceTypes": ["ipv4pool-ec2"],
       "severity": "normal",
       "actionType": null,

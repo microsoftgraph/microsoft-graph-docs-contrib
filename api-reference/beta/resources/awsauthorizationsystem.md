@@ -21,7 +21,6 @@ Inherits from [authorizationSystem](../resources/authorizationsystem.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List awsAuthorizationSystems](../api/awsauthorizationsystem-list.md)|[awsAuthorizationSystem](../resources/awsauthorizationsystem.md) collection|Get a list of the [awsAuthorizationSystem](../resources/awsauthorizationsystem.md) objects and their properties.|
-|[Get awsAuthorizationSystem](../api/awsauthorizationsystem-get.md)|[awsAuthorizationSystem](../resources/awsauthorizationsystem.md)|Read the properties and relationships of an [awsAuthorizationSystem](../resources/awsauthorizationsystem.md) object.|
 
 ## Properties
 |Property|Type|Description|

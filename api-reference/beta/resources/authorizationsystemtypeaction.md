@@ -23,9 +23,9 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionType|authorizationSystemActionType|The type of action allowed in the authorization system's service. The possible values are: `delete`, `read`, `unknownFutureValue`.|
-|externalId|String|The display name of an action. Read-only.|
-|id|String|The unique encoded identifier for an action as defined by Permissions Management. Read-only. Inherited from [entity](../resources/entity.md).|
+|actionType|authorizationSystemActionType|The type of action allowed in the authorization system's service. The possible values are: `delete`, `read`, `unknownFutureValue`. Supports `$filter` and (`eq`).|
+|externalId|String|The display name of an action. Read-only. Supports `$filter` and (`eq`).|
+|id|String|The base64 encoded identifier of externalId for an action as defined by Permissions Management. Read-only. Inherited from [entity](../resources/entity.md).|
 |resourceTypes|String collection|The resource types in the authorization system's service where the action can be performed. Supports `$filter` and (`eq`).|
 |severity|authorizationSystemActionSeverity|The severity of the action in the authorization systems' service. The possible values are: `normal`, `high`, `unknownFutureValue`.|
 
