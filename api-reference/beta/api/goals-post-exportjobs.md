@@ -1,9 +1,9 @@
 ---
 title: "Create goalsExportJob"
 description: "Create a new goalsExportJob object in a Viva Goals organization."
-author: "istyagiit"
+author: "ishatyagiit"
 ms.localizationpriority: medium
-ms.prod: "vivagoals"
+ms.prod: "microsoft-viva-goals"
 doc_type: apiPageType
 ---
 

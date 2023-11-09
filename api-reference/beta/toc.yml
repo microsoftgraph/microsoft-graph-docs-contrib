@@ -18666,3 +18666,15 @@ items:
                 href: api/workbookdocumenttask-list-changes.md
               - name: Get
                 href: api/workbookdocumenttaskchange-get.md
+          - name: Microsoft Viva Goals
+            displayName: Viva Goals
+            items:
+              - name: Goals export job
+                href: resources/goalsExportJob.md
+                items:
+                  - name: List
+                    href: api/goals-list-exportjobs.md
+                  - name: Create
+                    href: api/goals-post-exportjobs.md
+                  - name: Get
+                    href: api/goalsexportjob-get.md
