@@ -8969,9 +8969,9 @@ items:
                     items:
                       - name: Call recording
                         href: resources/callrecording.md
-                      - name: List recordings
+                      - name: List
                         href: api/onlinemeeting-list-recordings.md
-                      - name: Get recording
+                      - name: Get
                         href: api/callrecording-get.md
                   - name: Online meeting
                     href: resources/onlinemeeting.md
