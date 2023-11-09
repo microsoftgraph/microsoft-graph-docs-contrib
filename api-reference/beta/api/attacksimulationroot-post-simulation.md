@@ -19,13 +19,10 @@ Create an attack simulation campaign for a tenant.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | AttackSimulation.ReadWrite.All              |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | AttackSimulation.ReadWrite.All              |
+<!-- { "blockType": "permissions", "name": "attacksimulationroot_post_simulation" } -->
+[!INCLUDE [permissions-table](../includes/permissions/attacksimulationroot-post-simulation-permissions.md)]
 
 ## HTTP request
 
@@ -61,7 +58,7 @@ The following table lists the properties that are required when you create the s
 |includedAccountTarget|[accountTargetContent](../resources/accounttargetcontent.md)|Users targeted in the simulation.|
 |landingPage|[landingPage](../resources/landingpage.md)|The landing page associated with the attack simulation and training campaign.|
 |lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who most recently modified the attack simulation and training campaign.|
-|launchDateTime|DateTimeOffset|Date and time of the launch/start of the attack simulation and training campaign. Supports `$filter` and `$orderby`.|
+|launchDateTime|DateTimeOffset|Date and time of the launch/start of the attack simulation and training campaign. Supports `$filter` and `$orderby`. The timestamp represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |loginPage|[loginPage](../resources/loginpage.md)|The login page associated with the attack simulation and training campaign.|
 |oAuthConsentAppDetail|[oAuthConsentAppDetail](../resources/oauthconsentappdetail.md)|Details required for the `oAuthConsentGrant` technique.|
 |payload|[payload](../resources/payload.md)|The payload associated with the attack simulation and training campaign.|
@@ -95,6 +92,9 @@ Content-type: application/json
   "payload@odata.bind": "https://graph.microsoft.com/beta/security/attacksimulation/payloads/12345678-9abc-def0-123456789a",
   "loginPage@odata.bind": "https://graph.microsoft.com/beta/security/attacksimulation/loginPages/1w345678-9abc-def0-123456789a",
   "landingPage@odata.bind": "https://graph.microsoft.com/beta/security/attacksimulation/landingPages/1c345678-9abc-def0-123456789a",
+  "createdBy": {
+    "email": "john@contoso.com"
+  },
   "durationInDays": "3",
   "attackTechnique": "credentialHarvesting",
   "status": "scheduled",

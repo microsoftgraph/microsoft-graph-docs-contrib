@@ -19,13 +19,10 @@ Retrieve a list of [oAuth2PermissionGrant](../resources/oAuth2PermissionGrant.md
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | DelegatedPermissionGrant.Read.All, Application.Read.All, Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | DelegatedPermissionGrant.Read.All, Application.Read.All, Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "serviceprincipal_list_oauth2permissiongrants" } -->
+[!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-list-oauth2permissiongrants-permissions.md)]
 
 ## HTTP request
 

@@ -6,13 +6,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models.TermStore;
 
-var requestBody = new Microsoft.Graph.Beta.Models.TermStore.Term
+var requestBody = new Term
 {
-	Labels = new List<Microsoft.Graph.Beta.Models.TermStore.LocalizedLabel>
+	Labels = new List<LocalizedLabel>
 	{
-		new Microsoft.Graph.Beta.Models.TermStore.LocalizedLabel
+		new LocalizedLabel
 		{
 			Name = "changedLabel",
 			LanguageTag = "en-US",
@@ -20,6 +21,8 @@ var requestBody = new Microsoft.Graph.Beta.Models.TermStore.Term
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.TermStore.Sets["{set-id}"].Terms["{term-id}"].PatchAsync(requestBody);
 
 

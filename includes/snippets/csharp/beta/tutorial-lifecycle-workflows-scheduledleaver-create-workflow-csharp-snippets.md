@@ -6,35 +6,37 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models.IdentityGovernance;
+using Microsoft.Graph.Beta.Models;
 
-var requestBody = new Microsoft.Graph.Beta.Models.IdentityGovernance.Workflow
+var requestBody = new Workflow
 {
-	Category = Microsoft.Graph.Beta.Models.IdentityGovernance.LifecycleWorkflowCategory.Leaver,
+	Category = LifecycleWorkflowCategory.Leaver,
 	DisplayName = "Post-Offboarding of an employee",
 	Description = "Configure offboarding tasks for employees after their last day of work",
 	IsEnabled = true,
 	IsSchedulingEnabled = false,
-	ExecutionConditions = new Microsoft.Graph.Beta.Models.IdentityGovernance.TriggerAndScopeBasedConditions
+	ExecutionConditions = new TriggerAndScopeBasedConditions
 	{
 		OdataType = "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
-		Scope = new Microsoft.Graph.Beta.Models.IdentityGovernance.RuleBasedSubjectSet
+		Scope = new RuleBasedSubjectSet
 		{
 			OdataType = "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
 			Rule = "department eq 'Marketing'",
 		},
-		Trigger = new Microsoft.Graph.Beta.Models.IdentityGovernance.TimeBasedAttributeTrigger
+		Trigger = new TimeBasedAttributeTrigger
 		{
 			OdataType = "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
-			TimeBasedAttribute = Microsoft.Graph.Beta.Models.IdentityGovernance.WorkflowTriggerTimeBasedAttribute.EmployeeLeaveDateTime,
+			TimeBasedAttribute = WorkflowTriggerTimeBasedAttribute.EmployeeLeaveDateTime,
 			OffsetInDays = 7,
 		},
 	},
-	Tasks = new List<Microsoft.Graph.Beta.Models.IdentityGovernance.TaskObject>
+	Tasks = new List<TaskObject>
 	{
-		new Microsoft.Graph.Beta.Models.IdentityGovernance.TaskObject
+		new TaskObject
 		{
-			Category = Microsoft.Graph.Beta.Models.IdentityGovernance.LifecycleTaskCategory.Leaver,
+			Category = LifecycleTaskCategory.Leaver,
 			ContinueOnError = false,
 			Description = "Remove all licenses assigned to the user",
 			DisplayName = "Remove all licenses for user",
@@ -45,9 +47,9 @@ var requestBody = new Microsoft.Graph.Beta.Models.IdentityGovernance.Workflow
 			{
 			},
 		},
-		new Microsoft.Graph.Beta.Models.IdentityGovernance.TaskObject
+		new TaskObject
 		{
-			Category = Microsoft.Graph.Beta.Models.IdentityGovernance.LifecycleTaskCategory.Leaver,
+			Category = LifecycleTaskCategory.Leaver,
 			ContinueOnError = false,
 			Description = "Remove user from all Teams memberships",
 			DisplayName = "Remove user from all Teams",
@@ -58,9 +60,9 @@ var requestBody = new Microsoft.Graph.Beta.Models.IdentityGovernance.Workflow
 			{
 			},
 		},
-		new Microsoft.Graph.Beta.Models.IdentityGovernance.TaskObject
+		new TaskObject
 		{
-			Category = Microsoft.Graph.Beta.Models.IdentityGovernance.LifecycleTaskCategory.Leaver,
+			Category = LifecycleTaskCategory.Leaver,
 			ContinueOnError = false,
 			Description = "Delete user account in Azure AD",
 			DisplayName = "Delete User Account",
@@ -73,6 +75,8 @@ var requestBody = new Microsoft.Graph.Beta.Models.IdentityGovernance.Workflow
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.IdentityGovernance.LifecycleWorkflows.Workflows.PostAsync(requestBody);
 
 
