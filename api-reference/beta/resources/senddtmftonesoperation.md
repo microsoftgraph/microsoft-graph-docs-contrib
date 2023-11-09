@@ -13,16 +13,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an operation to get the results of an action to send DTMF tones in a call. It inherits from microsoft.graph.commsOperation.
+Represents an operation to get the results of an action to send DTMF tones in a call. 
+
+Inherits from [commsOperation](commsoperation.md).
 
 ## Properties
 
 | Property            | Type                        | Description|
 |:--------------------|:----------------------------|:-----------------------------------------------------------------------------------|
-| clientContext       | String                      | Unique Client Context string that client sends to Graph for the client to keep context in multiple requests. Maximum limit is 256 characters. |
+| clientContext       | String                      | A unique string that the client sends to Microsoft Graph to keep context in multiple requests. Maximum size is 256 characters. |
 | completionReason    | [sendDtmfCompletionReason](senddtmftonesoperation.md#senddtmfcompletionreason-values)    | The results of the action. Possible values are: `unknown`, `completedSuccessfully`, `mediaOperationCanceled`, `unknownfutureValue`. |
 | id                  | String                      | Read-only.                                                                         |
-| resultInfo          | [resultInfo](resultinfo.md) | The result information with specific status code, sub code and message. Read-only.        |
+| resultInfo          | [resultInfo](resultinfo.md) | The result information with a specific status code, subcode, and message. Read-only.        |
 | status              | String                      | The status of the operation. Possible values are: `notStarted`, `running`, `completed`, `failed`.               |
 
 ### sendDtmfCompletionReason values
@@ -30,8 +32,8 @@ Represents an operation to get the results of an action to send DTMF tones in a 
 |:--------------------|:------------------------------------|
 | unknown | Completion reason with unknown error. |
 | completedSuccessfully | Successful completion. |
-| mediaOperationCanceled | Media operation being cancelled. |
-| unknownFutureValue | Reserved for future value. |
+| mediaOperationCanceled | Media operation was canceled. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 
 ## Relationships
 None.
