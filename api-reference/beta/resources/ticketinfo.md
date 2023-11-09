@@ -1,9 +1,9 @@
 ---
 title: "ticketInfo resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents ticket information related to role assignment and eligibility requests."
+author: "rkarim-ms"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Represents ticket information related to assignment and eligibility requests in [PIM for Microsoft Entra roles](privilegedidentitymanagementv3-overview.md) and [PIM for Groups](privilegedidentitymanagement-for-groups-api-overview.md). Use this object to define ticket parameters for an assignment or eligibility request that's initiated by another request made in an external system.
 
 Represents ticketing related metadata that can be used to correlate to a scheduled permissions request.
 
@@ -21,7 +21,7 @@ Represents ticketing related metadata that can be used to correlate to a schedul
 |ticketApproverIdentityId|String|Identity id of the approver.|
 |ticketNumber|String|The ticket number.|
 |ticketSubmitterIdentityId|String|Identity id of the submitter.|
-|ticketSystem|String|The ticket system.|
+|ticketSystem|String|The description of the ticket system.|
 
 ## Relationships
 None.
@@ -42,4 +42,3 @@ The following is a JSON representation of the resource.
   "ticketApproverIdentityId": "String"
 }
 ```
-
