@@ -234,7 +234,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.goalsExportJob"
+  "@odata.type": "microsoft.graph.publicError"
 }
 -->
 ``` http

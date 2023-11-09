@@ -158,7 +158,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.goalsExportJob)"
+  "@odata.type": "microsoft.graph.publicError"
 }
 -->
 ``` http
