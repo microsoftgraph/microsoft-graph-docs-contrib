@@ -265,3 +265,33 @@ Content-type: application/json
 }
 ```
 
+### Example 5: Get the content of a successfully completed goalsExportJob resource.
+
+#### Request
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "get_goalsexportjob_content"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/employeeExperience/goals/exportJobs/{goalsExportJobId}/content
+```
+
+
+#### Response
+The following is an example of the response
+<!-- {
+  "blockType": "response",
+  "@odata.type": "Edm.Stream"
+}
+-->
+``` http
+HTTP/1.1 200 OK 
+Content-type: text/csv
+
+{ 
+  Model as EDM.Stream
+} 
+```
+
