@@ -11,7 +11,7 @@ ms.localizationpriority: high
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Call records provide usage and diagnostic information about the calls and online meetings that occur within your organization when using Microsoft Teams or Skype for Business. You can use the call records APIs to subscribe to call records and look up call records by IDs. A call record is created after a call or meeting ends and the record is retained for 30 days.
+Call records provide usage and diagnostic information about the calls and online meetings that occur within your organization when using Microsoft Teams or Skype for Business. You can use the call records APIs to subscribe to call records, list call records, and look up call records by IDs. A call record is created after a call or meeting ends and the record is retained for 30 days.
 
 The call records API is defined in the OData sub-namespace, `microsoft.graph.callRecords`.
 
@@ -19,18 +19,19 @@ The call records API is defined in the OData sub-namespace, `microsoft.graph.cal
 
 | Resource | Methods |
 | :-- | :-- |
-| [callRecord](callrecords-callrecord.md) | [Get callRecord](../api/callrecords-callrecord-get.md) |
+| [callRecord](callrecords-callrecord.md) | [Get callRecord](../api/callrecords-callrecord-get.md)<br />[List callRecord](../api/callrecords-callrecord-list.md) |
 | [directRoutingLogRow](callrecords-directroutinglogrow.md) | [getDirectRoutingCalls](../api/callrecords-callrecord-getdirectroutingcalls.md)|
 | [pstnBlockedUsersLogRow](callrecords-pstnblockeduserslogrow.md) | [getPstnBlockedUsersLog](../api/callrecords-callrecord-getpstnblockeduserslog.md)|
 | [pstnCallLogRow](callrecords-pstncalllogrow.md)|[getPstnCalls](../api/callrecords-callrecord-getpstncalls.md) |
 | [pstnOnlineMeetingDialoutReport](callrecords-pstnonlinemeetingdialoutreport.md) | [getPstnOnlineMeetingDialoutReport](../api/callrecords-callrecord-getpstnonlinemeetingdialoutreport.md)|
 | [segment](callrecords-segment.md) | [Get callRecord](../api/callrecords-callrecord-get.md)<br />[List sessions](../api/callrecords-callrecord-list-sessions.md) |
 | [session](callrecords-session.md) | [Get callRecord](../api/callrecords-callrecord-get.md)<br />[List sessions](../api/callrecords-callrecord-list-sessions.md) |
+| [participant](callrecords-participant.md) | [List participants](../api/callrecords-callrecord-list-participants.md) |
 | [smsLogRow](callrecords-smslogrow.md) | [getSmsLog](../api/callrecords-callrecord-getsmslog.md)|
 
 ## Call record structure
 
-The [callRecord](callrecords-callrecord.md) entity represents a single peer-to-peer call or a group call between multiple participants, sometimes referred to as an online meeting.
+The [callRecord](callrecords-callrecord.md) entity represents a single peer-to-peer call or a group call between multiple [participants](callrecords-participant.md), sometimes referred to as an online meeting.
 
 A peer-to-peer call contains a single [session](callrecords-session.md) between the two participants in the call. Group calls contain one or more **session** entities. In a group call, each **session** is between the participant and a service endpoint.
 
