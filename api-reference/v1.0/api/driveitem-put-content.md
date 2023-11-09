@@ -4,15 +4,15 @@ ms.date: 09/10/2017
 title: Upload small files
 ms.localizationpriority: high
 ms.prod: "sharepoint"
-description: "The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call. "
+description: "Provide the contents of a new file or update the contents of an existing file in a single API call. "
 doc_type: apiPageType
 ---
-# Upload or replace the contents of a DriveItem
+# Upload or replace the contents of a driveItem
 
 Namespace: microsoft.graph
 
-The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call.
-This method only supports files up to 250MB in size.
+Provide the contents of a new file or update the contents of an existing file in a single API call.
+This method only supports files up to 250 MB in size.
 
 To upload large files, see [Upload large files with an upload session](driveitem-createuploadsession.md).
 
