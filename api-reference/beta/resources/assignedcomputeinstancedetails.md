@@ -1,6 +1,6 @@
 ---
 title: "assignedComputeInstanceDetails resource type"
-description: "Represents the details of a list of S3 buckets associated with this EC2 instance"
+description: "Represents the details of a list of S3 buckets associated with this EC2 instance."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of a list of S3 buckets associated with this EC2 instance
+Represents the details of a list of S3 buckets associated with this EC2 instance.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -26,7 +26,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier for this EntityType Inherited from [entity](../resources/entity.md).|
+|id|String|Unique identifier for this object. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|

@@ -17,11 +17,15 @@ Represents findings for identities with privileges to modify settings of securit
 
 Inherits from [finding](../resources/finding.md).
 
+The following resources inherit from this resource type:
+
+- [securityToolAwsResourceAdministratorFinding](../resources/securitytoolawsresourceadministratorfinding.md)
+- [securityToolAwsRoleAdministratorFinding](../resources/securitytoolawsroleadministratorfinding.md)
+- [securityToolAwsServerlessFunctionAdministratorFinding](../resources/securitytoolawsserverlessfunctionadministratorfinding.md)
+- [securityToolAwsUserAdministratorFinding](../resources/securitytoolawsuseradministratorfinding.md)
+
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List awsSecurityToolAdministrationFindings](../api/awssecuritytooladministrationfinding-list.md)|[awsSecurityToolAdministrationFinding](../resources/awssecuritytooladministrationfinding.md) collection|Get a list of the [awsSecurityToolAdministrationFinding](../resources/awssecuritytooladministrationfinding.md) objects and their properties.|
-|[Get awsSecurityToolAdministrationFinding](../api/awssecuritytooladministrationfinding-get.md)|[awsSecurityToolAdministrationFinding](../resources/awssecuritytooladministrationfinding.md)|Read the properties and relationships of an [awsSecurityToolAdministrationFinding](../resources/awssecuritytooladministrationfinding.md) object.|
+None.
 
 
 ## Properties
@@ -36,7 +40,7 @@ Inherits from [finding](../resources/finding.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Represents an identity in an authorization system onboarded to Permissions Management. Inherited from [microsoft.graph.identityFinding](../resources/identityfinding.md). Autoexpanded by default. Supports `$filter` as follows: `$filter=identity/authorizationSystem/authorizationSystemId IN ['authorizationSystemIds']`.|
+|identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Represents an identity in an authorization system onboarded to Permissions Management. Inherited from [identityFinding](../resources/identityfinding.md). Autoexpanded by default. Supports `$filter` as follows: `$filter=identity/authorizationSystem/authorizationSystemId IN ['authorizationSystemIds']`.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

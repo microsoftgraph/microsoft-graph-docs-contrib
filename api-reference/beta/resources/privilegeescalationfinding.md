@@ -18,12 +18,9 @@ Represents findings for a list of potential exploiting of a misconfigured IAM po
 Inherits from [finding](../resources/finding.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List privilegeEscalationFindings](../api/privilegeescalationfinding-list.md)|[privilegeEscalationFinding](../resources/privilegeescalationfinding.md) collection|Get a list of the [privilegeEscalationFinding](../resources/privilegeescalationfinding.md) objects and their properties.|
-|[Get privilegeEscalationFinding](../api/privilegeescalationfinding-get.md)|[privilegeEscalationFinding](../resources/privilegeescalationfinding.md)|Read the properties and relationships of a [privilegeEscalationFinding](../resources/privilegeescalationfinding.md) object.|
+None.
 
-## Properties
+## Properties 
 |Property|Type|Description|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Defines when the finding was created. Inherited from [finding](../resources/finding.md).|
@@ -34,7 +31,7 @@ Inherits from [finding](../resources/finding.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Represents an identity in an authorization system onboarded to Permissions Management. Inherited from [microsoft.graph.identityFinding](../resources/identityfinding.md). Autoexpanded by default.|
+|identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Represents an identity in an authorization system onboarded to Permissions Management. Inherited from [identityFinding](../resources/identityfinding.md). Autoexpanded by default.|
 |privilegeEscalationDetails|[Collection(graph.privilegeEscalation)](../resources/privilegeescalation.md)|The list of escalations that the identity is capable of performing.|
 
 ## JSON representation

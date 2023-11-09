@@ -23,7 +23,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
-
 ## HTTP request
 
 Get the Permissions Creep Index distribution for identities and resources in AWS:
@@ -78,9 +77,8 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/permissionsCreepIndexDistributions/{permissionsCreepIndexDistributionId}
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/permissionsCreepIndexDistributions/MSxQZXJtaXNzaW9uc0NyZWVwSW5kZXhEaXN0cmlidXRpb24sMjM3ODMyLTIzNzgzMy0yMzc4MzQ
 ```
-
 
 ### Response
 The following example shows the response.
@@ -96,32 +94,26 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/azure/permissionsCreepIndexDistributions",
-  "value": [
-    {
-      "id": "10001-10002-10003",
-      "authorizationSystem": {
-        "@odata.type": "graph.azureAuthorizationSystem",
-        "id": "{Id}",
-        "authorizationSystemId": "6ea285d9-fe7e-49f6-a0ff-203c1a7ac225",
-        "authorizationSystemName": "Microsoft Azure Sponsorship 2",
-        "authorizationSystemType": "azure"   
-      },
-      "lowRiskProfile": {
-        "humanCount" : 16,
-        "nonHumanCount" : 539,
-      },
-      "mediumRiskProfile": {
-        "humanCount" : 0,
-        "nonHumanCount" : 0,
-      },
-      "highRiskProfile": {
-        "humanCount" : 0,
-        "nonHumanCount" : 6,
-      },
-      "createdDateTime ": "2020-10-11T20:11:45.6711Z"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/permissionsAnalytics/aws/permissionsCreepIndexDistributions/$entity",
+    "id": "MSxQZXJtaXNzaW9uc0NyZWVwSW5kZXhEaXN0cmlidXRpb24sMjM3ODMyLTIzNzgzMy0yMzc4MzQ",
+    "createdDateTime": "2023-11-08T10:29:06.360334Z",
+    "lowRiskProfile": {
+        "humanCount": 30,
+        "nonHumanCount": 187
+    },
+    "mediumRiskProfile": {
+        "humanCount": 0,
+        "nonHumanCount": 0
+    },
+    "highRiskProfile": {
+        "humanCount": 35,
+        "nonHumanCount": 14
+    },
+    "authorizationSystem": {
+        "authorizationSystemId": "377596131774",
+        "authorizationSystemName": "377596131774",
+        "authorizationSystemType": "Aws",
+        "id": "MSxBd3MsMzc3NTk2MTMxNzc0"
     }
-  ]
 }
 ```
-

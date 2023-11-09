@@ -1,9 +1,9 @@
 ---
 title: "List permissionsCreepIndexDistributions"
 description: "Get a list of the permissionsCreepIndexDistribution objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -19,18 +19,37 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
+List the Permissions Creep Index distribution for identities and resources in AWS:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
 GET /identityGovernance/permissionsAnalytics/aws/permissionsCreepIndexDistributions
+```
+
+List the Permissions Creep Index distribution for identities and resources in Azure:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /identityGovernance/permissionsAnalytics/azure/permissionsCreepIndexDistributions
+```
+
+List the Permissions Creep Index distribution for identities and resources in GCP:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /identityGovernance/permissionsAnalytics/gcp/permissionsCreepIndexDistributions
 ```
 
 ## Optional query parameters
@@ -76,22 +95,75 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.permissionsCreepIndexDistribution",
-      "id": "cce5bd87-ac4c-20f5-8205-50a2c6e4fcaf",
-      "createdDateTime": "String (timestamp)",
-      "lowRiskProfile": {
-        "@odata.type": "microsoft.graph.riskProfile"
-      },
-      "mediumRiskProfile": {
-        "@odata.type": "microsoft.graph.riskProfile"
-      },
-      "highRiskProfile": {
-        "@odata.type": "microsoft.graph.riskProfile"
-      }
-    }
-  ]
+    "@odata.context": "https://canary.graph.microsoft.com/beta/$metadata#identityGovernance/permissionsAnalytics/aws/permissionsCreepIndexDistributions",
+    "value": [
+        {
+            "id": "MSxQZXJtaXNzaW9uc0NyZWVwSW5kZXhEaXN0cmlidXRpb24sMjM4MTcxLTIzODE3Mi0yMzgxNzM",
+            "createdDateTime": "2023-11-08T22:31:11.518839Z",
+            "lowRiskProfile": {
+                "humanCount": 30,
+                "nonHumanCount": 187
+            },
+            "mediumRiskProfile": {
+                "humanCount": 0,
+                "nonHumanCount": 0
+            },
+            "highRiskProfile": {
+                "humanCount": 35,
+                "nonHumanCount": 14
+            },
+            "authorizationSystem": {
+                "authorizationSystemId": "377596131774",
+                "authorizationSystemName": "cloudknox-staging",
+                "authorizationSystemType": "Aws",
+                "id": "MSxBd3MsMzc3NTk2MTMxNzc0"
+            }
+        },
+        {
+            "id": "MSxQZXJtaXNzaW9uc0NyZWVwSW5kZXhEaXN0cmlidXRpb24sMTA4MzEzLTEwODMxNC0xMDgzMTU",
+            "createdDateTime": "2023-01-12T19:59:04.087998Z",
+            "lowRiskProfile": {
+                "humanCount": 4,
+                "nonHumanCount": 51
+            },
+            "mediumRiskProfile": {
+                "humanCount": 0,
+                "nonHumanCount": 0
+            },
+            "highRiskProfile": {
+                "humanCount": 0,
+                "nonHumanCount": 1
+            },
+            "authorizationSystem": {
+                "authorizationSystemId": "912000090514",
+                "authorizationSystemName": "ck-test-stack",
+                "authorizationSystemType": "Aws",
+                "id": "MSxBd3MsOTEyMDAwMDkwNTE0"
+            }
+        },
+        {
+            "id": "MSxQZXJtaXNzaW9uc0NyZWVwSW5kZXhEaXN0cmlidXRpb24sMjM4MDgxLTIzODA4Mi0yMzgwODM",
+            "createdDateTime": "2023-11-08T20:01:53.554943Z",
+            "lowRiskProfile": {
+                "humanCount": 9,
+                "nonHumanCount": 164
+            },
+            "mediumRiskProfile": {
+                "humanCount": 0,
+                "nonHumanCount": 0
+            },
+            "highRiskProfile": {
+                "humanCount": 19,
+                "nonHumanCount": 11
+            },
+            "authorizationSystem": {
+                "authorizationSystemId": "956987887735",
+                "authorizationSystemName": "956987887735",
+                "authorizationSystemType": "Aws",
+                "id": "MSxBd3MsOTU2OTg3ODg3NzM1"
+            }
+        }
+    ]
 }
 ```
 

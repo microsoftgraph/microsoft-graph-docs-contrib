@@ -101,8 +101,7 @@ Content-Type: application/json
         "assignedComputeInstancesDetails@odata.count": 1, // We created a work item for the future implementation of expanding this the assignedComputeInstancesDetails property https://identitydivision.visualstudio.com/Engineering/_workitems/edit/2503297
         "totalStorageBucketCount": 0,
         "createdDateTime ": "2020-10-09T20:11:45.671Z"
-    },
-
+    }
   ]
 }
 ```

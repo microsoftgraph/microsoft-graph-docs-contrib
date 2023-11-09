@@ -1,6 +1,6 @@
 ---
 title: "Get assignedComputeInstanceDetails"
-description: "Read the properties and relationships of an assignedComputeInstanceDetails object."
+description: "Read the properties and relationships of an assignedComputeInstanceDetails object for an AWS open security group finding."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -12,7 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an [assignedComputeInstanceDetails](../resources/assignedcomputeinstancedetails.md) object.
+Read the properties and relationships of an [assignedComputeInstanceDetails](../resources/assignedcomputeinstancedetails.md) object and its properties for an AWS open security group finding.
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -22,6 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|Not supported.|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
+
 ## HTTP request
 
 <!-- {
@@ -29,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/aws/findings('id')/microsoft.graph.openAwsSecurityGroupFinding/assignedComputeInstancesDetails
+GET /identityGovernance/permissionsAnalytics/aws/findings('id')/microsoft.graph.openAwsSecurityGroupFinding/assignedComputeInstancesDetails('id')
 ```
 
 ## Optional query parameters
@@ -57,11 +59,11 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta//identityGovernance/permissionsAnalytics/aws/findings('MSxPcGVuQXdzU2VjdXJpdHlHcm91cEZpbmRpbmcsMTc0NDE5')/microsoft.graph.openAwsSecurityGroupFinding/assignedComputeInstancesDetails
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('MSxPcGVuQXdzU2VjdXJpdHlHcm91cEZpbmRpbmcsNzE3MTg1')/microsoft.graph.openAwsSecurityGroupFinding/assignedComputeInstancesDetails('YXJuOmF3czplYzI6dXMtd2VzdC0yOjk1Njk4Nzg4NzczNTppbnN0YW5jZS9pLTBkNWY1OTU5OGVkZjQzNDBl')
 ```
 
-
 ### Response
+
 The following example shows the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -74,31 +76,15 @@ The following example shows the response
 HTTP/1.1 200 OK
 Content-Type: application/json
 
-{
-      "@odata.context": "https://localhost:7214/$metadata#identityGovernance/permissionsAnalytics/aws/findings('MSxPcGVuQXdzU2VjdXJpdHlHcm91cEZpbmRpbmcsMTc0NDE5')/microsoft.graph.openAwsSecurityGroupFinding/assignedComputeInstancesDetails(assignedComputeInstance())",
-    "value": [
-        {
-            "id": "YXJuOmF3czplYzI6dXMtd2VzdC0yOjk1Njk4Nzg4NzczNTppbnN0YW5jZS9pLTA5N2I0ZWIxMDFlYWJlNTIy",
-            "externalId": "arn:aws:ec2:us-west-2:956987887735:instance/i-097b4eb101eabe522",
-            "assignedComputeInstance": {
-                "id": "YXJuOmF3czplYzI6dXMtd2VzdC0yOjk1Njk4Nzg4NzczNTppbnN0YW5jZS9pLTA5N2I0ZWIxMDFlYWJlNTIy",
-                "externalId": "arn:aws:ec2:us-west-2:956987887735:instance/i-097b4eb101eabe522",
-                "displayName": "SENTRY-CK-PRAT",
-                "resourceType": "instance"
-            }
-        },
-        {
-            "id": "YXJuOmF3czplYzI6dXMtd2VzdC0yOjk1Njk4Nzg4NzczNTppbnN0YW5jZS9pLTA4MjlkYjRkODVlNzNhZDg5",
-            "externalId": "arn:aws:ec2:us-west-2:956987887735:instance/i-0829db4d85e73ad89",
-            "assignedComputeInstance": {
-                "id": "YXJuOmF3czplYzI6dXMtd2VzdC0yOjk1Njk4Nzg4NzczNTppbnN0YW5jZS9pLTA4MjlkYjRkODVlNzNhZDg5",
-                "externalId": "arn:aws:ec2:us-west-2:956987887735:instance/i-0829db4d85e73ad89",
-                "displayName": "PratS10-01062021",
-                "resourceType": "instance"
-            }
-        }
-    ],
-    "@odata.nextLink": "https://localhost:7214/identityGovernance/permissionsAnalytics/aws/findings('MSxPcGVuQXdzU2VjdXJpdHlHcm91cEZpbmRpbmcsMTc0NDE5')/microsoft.graph.openAwsSecurityGroupFinding/assignedComputeInstancesDetails?$skipToken=eyJwYXRzIjoxNjc2Mzk2NDM0MTUyLCJlbnRzIjoxNjc2Mzk2NDM0MTUyLCJ2IjoiMS4wIiwicyI6MiwidCI6bnVsbCwib2IiOm51bGx9"
+ {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.assignedComputeInstanceDetails)",
+    "id": "YXJuOmF3czplYzI6dXMtd2VzdC0yOjk1Njk4Nzg4NzczNTppbnN0YW5jZS9pLTBkNWY1OTU5OGVkZjQzNDBl",
+    "assignedComputeInstance": {
+        "id": "YXJuOmF3czplYzI6dXMtd2VzdC0yOjk1Njk4Nzg4NzczNTppbnN0YW5jZS9pLTBkNWY1OTU5OGVkZjQzNDBl",
+        "externalId": "arn:aws:ec2:us-west-2:956987887735:instance/i-0d5f59598edf4340e",
+        "displayName": "sg-test-ami",
+        "resourceType": "instance"
+    },
+    "accessedStorageBuckets": []
 }
 ```
-

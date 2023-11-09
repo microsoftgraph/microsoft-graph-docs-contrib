@@ -36,7 +36,7 @@ Inherits from [identityFinding](../resources/identityfinding.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Represents an identity in an authorization system onboarded to Permissions Management. Inherited from [microsoft.graph.identityFinding](../resources/identityfinding.md). Autoexpanded by default.|
+|identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Represents an identity in an authorization system onboarded to Permissions Management. Inherited from [identityFinding](../resources/identityfinding.md). Autoexpanded by default.|
 
 ## JSON representation
 

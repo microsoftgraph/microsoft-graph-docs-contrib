@@ -1,6 +1,6 @@
 ---
 title: "List assignedComputeInstanceDetails"
-description: "Get a list of the assignedComputeInstanceDetails objects and their properties."
+description: "Get a list of the assignedComputeInstanceDetails objects and their properties for an AWS open security group finding."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -12,9 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [assignedComputeInstanceDetails](../resources/assignedcomputeinstancedetails.md) objects and their properties.
-
-Not implemented.
+Get a list of the [assignedComputeInstanceDetails](../resources/assignedcomputeinstancedetails.md) objects and their properties for an AWS open security group finding.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,11 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /openAwsSecurityGroupFinding/assignedComputeInstancesDetails
+GET /identityGovernance/permissionsAnalytics/aws/findings('id')/microsoft.graph.openAwsSecurityGroupFinding/assignedComputeInstancesDetails
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -60,7 +58,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/openAwsSecurityGroupFinding/assignedComputeInstancesDetails
+GET  https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('MSxPcGVuQXdzU2VjdXJpdHlHcm91cEZpbmRpbmcsNzE3MTg1')/microsoft.graph.openAwsSecurityGroupFinding/assignedComputeInstancesDetails
 ```
 
 
@@ -78,12 +76,17 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.assignedComputeInstanceDetails",
-      "id": "2b26ff5a-50e8-02a3-9057-2e63f27302df"
-    }
-  ]
+    "@odata.context": "https://canary.graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.assignedComputeInstanceDetails)",
+    "value": [
+        {
+            "id": "YXJuOmF3czplYzI6dXMtd2VzdC0yOjk1Njk4Nzg4NzczNTppbnN0YW5jZS9pLTA5N2I0ZWIxMDFlYWJlNTIy",
+            "assignedComputeInstance": {
+                "id": "YXJuOmF3czplYzI6dXMtd2VzdC0yOjk1Njk4Nzg4NzczNTppbnN0YW5jZS9pLTA5N2I0ZWIxMDFlYWJlNTIy",
+                "externalId": "arn:aws:ec2:us-west-2:956987887735:instance/i-097b4eb101eabe522",
+                "displayName": "SENTRY-CK-PRAT",
+                "resourceType": "instance"
+            }
+        }
+    ]
 }
 ```
-

@@ -1,9 +1,9 @@
 ---
 title: "riskProfile resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Contains information for human and workload identity counts in a specific risk bucket."
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Contains information for human and workload identity counts in a specific risk bucket.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|humanCount|Int32|**TODO: Add Description**|
-|nonHumanCount|Int32|**TODO: Add Description**|
+|humanCount|Int32|This is the count of human identities that have been assigned to this riskScoreBracket,|
+|nonHumanCount|Int32|This is the count of nonhuman identities that have been assigned to this riskScoreBracket|
 
 ## Relationships
 None.
