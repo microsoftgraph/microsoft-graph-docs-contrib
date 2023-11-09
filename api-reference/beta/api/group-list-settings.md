@@ -18,17 +18,23 @@ Retrieve a list of tenant-level or group-specific group settings objects.
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 ### List tenant-wide settings
 
-<!-- { "blockType": "permissions", "name": "group_list_settings" } -->
-[!INCLUDE [permissions-table](../includes/permissions/group-list-settings-permissions.md)]
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Directory.Read.All, Directory.ReadWrite.All |
 
 ### List group-specific settings
 
-<!-- { "blockType": "permissions", "name": "group_list_settings_2" } -->
-[!INCLUDE [permissions-table](../includes/permissions/group-list-settings-2-permissions.md)]
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Group.Read.All, Group.ReadWrite.All  |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

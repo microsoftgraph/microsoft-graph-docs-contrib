@@ -19,17 +19,23 @@ Unset a reaction to a single [chatMessage](../resources/chatmessage.md) or a [ch
 
 ## Permissions
 
-The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 ### Permissions for channel
 
-<!-- { "blockType": "permissions", "name": "chatmessage_unsetreaction" } -->
-[!INCLUDE [permissions-table](../includes/permissions/chatmessage-unsetreaction-permissions.md)]
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+|Delegated (work or school account)| ChannelMessage.Send  |
+|Delegated (personal Microsoft account)| Not supported. |
+|Application| Not supported. |
 
 ### Permissions for chat
 
-<!-- { "blockType": "permissions", "name": "chatmessage_unsetreaction_2" } -->
-[!INCLUDE [permissions-table](../includes/permissions/chatmessage-unsetreaction-2-permissions.md)]
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+|Delegated (work or school account)| Chat.ReadWrite, ChatMessage.Send |
+|Delegated (personal Microsoft account)| Not supported. |
+|Application| Not supported. |
 
 ## HTTP request
 

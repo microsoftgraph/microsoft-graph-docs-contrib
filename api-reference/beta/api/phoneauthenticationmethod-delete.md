@@ -26,17 +26,23 @@ If the phone number is the user's default Azure multifactor authentication (MFA)
 
 ## Permissions
 
-The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 ### Permissions acting on self
 
-<!-- { "blockType": "permissions", "name": "phoneauthenticationmethod_delete" } -->
-[!INCLUDE [permissions-table](../includes/permissions/phoneauthenticationmethod-delete-permissions.md)]
+|Permission type      | Permissions (from least to most privileged)              |
+|:---------------------------------------|:-------------------------|
+| Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | Not supported. |
 
 ### Permissions acting on other users
 
-<!-- { "blockType": "permissions", "name": "phoneauthenticationmethod_delete_2" } -->
-[!INCLUDE [permissions-table](../includes/permissions/phoneauthenticationmethod-delete-2-permissions.md)]
+|Permission type      | Permissions (from least to most privileged)              |
+|:---------------------------------------|:-------------------------|
+| Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | UserAuthenticationMethod.ReadWrite.All |
 
 [!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 

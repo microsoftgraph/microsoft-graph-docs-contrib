@@ -17,7 +17,7 @@ Retrieve the list of [chatMessageHostedContent](../resources/chatmessagehostedco
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+## Permissions
 
 ### Permissions for channel
 
@@ -31,8 +31,11 @@ The following tables show the least privileged permission or permissions require
 
 ### Permissions for chat
 
-<!-- { "blockType": "permissions", "name": "chatmessage_list_hostedcontents_2" } -->
-[!INCLUDE [permissions-table](../includes/permissions/chatmessage-list-hostedcontents-2-permissions.md)]
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+|Delegated (work or school account)| Chat.Read, Chat.ReadWrite|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application| ChatMessage.Read.Chat, Chat.Read.All, Chat.ReadWrite.All|
 
 > **Note**: The _ChannelMessage.Read.Group_ and _ChatMessage.Read.Chat_ permissions use [resource-specific consent]( https://aka.ms/teams-rsc).
 
