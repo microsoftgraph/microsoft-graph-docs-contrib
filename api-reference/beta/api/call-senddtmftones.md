@@ -41,7 +41,7 @@ POST /communications/calls/{id}/sendDtmfTones
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}. Required. |
 
-### Request body
+## Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    |Description|
@@ -50,13 +50,13 @@ In the request body, provide a JSON object with the following parameters.
 |delayBetweenTonesMs|Int32| The milliseconds delay between tones. |
 |clientContext|String|Unique client context string. Can have a maximum of 256 characters.|
 
-### Response
+## Response
 If successful, this method returns a `200 OK` response code and a [sendDtmfTonesOperation](../resources/senddtmftonesoperation.md) object in the response body.
 
-### Example
+## Examples
 The following example shows how to call this API.
 
-##### Request
+### Request
 The following example shows the request.
 
 
@@ -91,7 +91,7 @@ Content-Length: 166
 
 ---
 
-##### Response
+### Response
 The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
@@ -114,9 +114,9 @@ Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-40
 
 ```
 
-##### Notification - operation completed
+### Notification - operation completed
 
-###### Successful case
+#### Successful case
  
 ```http
 POST https://bot.contoso.com/api/calls
@@ -147,7 +147,7 @@ Content-Type: application/json
 }
 ```
 
-###### Error case 1
+#### Error case 1
  
 ```http
 POST https://bot.contoso.com/api/calls
@@ -178,7 +178,7 @@ Content-Type: application/json
 }
 ```
 
-###### Error case 2
+#### Error case 2
  
 ```http
 POST https://bot.contoso.com/api/calls
