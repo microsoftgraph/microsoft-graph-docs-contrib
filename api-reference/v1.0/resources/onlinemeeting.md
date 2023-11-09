@@ -105,6 +105,8 @@ Contains information about a meeting, including the URL used to join a meeting, 
 
 ## JSON representation
 
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
