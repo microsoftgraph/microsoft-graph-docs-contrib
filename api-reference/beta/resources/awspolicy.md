@@ -26,8 +26,8 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|awsPolicyType|awsPolicyType|The type of the AWS policy. The possible values are: `system`, `custom`, `unknownFutureValue`. Read-only.|
-|displayName|String|The display name for the AWS policy. Read-only.|
+|awsPolicyType|awsPolicyType|The type of the AWS policy. The possible values are: `system`, `custom`, `unknownFutureValue`. Read-only. Supports `$filter` and (`eq`).|
+|displayName|String|The display name for the AWS policy. Read-only. Supports `$filter` and (`eq`,`contains`).|
 |externalId|String|The identifier for the AWS policy as defined by AWS. Read-only. Alternate key.|
 |id|String|The unique encoded identifier for the AWS policy. Read-only. Inherited from [entity](../resources/entity.md).|
 

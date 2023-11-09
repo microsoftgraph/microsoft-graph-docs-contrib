@@ -22,8 +22,8 @@ None.
 |Property|Type|Description|
 |:---|:---|:---|
 |externalId|String|ID of the identity in the external authorization system. Prefixed with `rsn:` if this is a SAML or ED user in AWS. Alternate key.|
-|identityType|permissionsDefinitionIdentityType|Role Id. The possible values are: `user`, `role`, `application`, `managedIdentity`, `serviceAccount`, `unknownFutureValue`.|
-|source|[permissionsDefinitionIdentitySource](../resources/permissionsdefinitionidentitysource.md)|Role Id.|
+|identityType|permissionsDefinitionIdentityType|The type of identity that is assigned the permission in the authorization syste,. The possible values are: `user`, `role`, `application`, `managedIdentity`, `serviceAccount`, `unknownFutureValue`.|
+|source|[permissionsDefinitionIdentitySource](../resources/permissionsdefinitionidentitysource.md)|The source system for the identity.|
 
 ## Relationships
 None.

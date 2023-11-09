@@ -17,6 +17,9 @@ Represents permissions defined for an Azure role.
 
 Inherits from [entity](../resources/entity.md).
 
+## Methods
+None.
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
@@ -41,4 +44,3 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)"
 }
 ```
-

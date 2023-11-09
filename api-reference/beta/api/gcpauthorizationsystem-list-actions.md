@@ -52,7 +52,73 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
+### Example 1: List actions in the GCP Authorization System
+Returns collection of all gcpAuthorizationSystemTypeAction entities for a provided GCP authorization system. Listing actions for a GCP project "carbide-bonsai-205017".
 
+### Request
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "list_gcpauthorizationsystemtypeaction"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.gcpAuthorizationSystem/actions'
+```
+
+
+### Response
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.gcpAuthorizationSystemTypeAction)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{id}/microsoft.graph.gcpAuthorizationSystem/actions",
+  "value": [
+    {
+      "id": "Y29tcHV0ZS5hY2NlbGVyYXRvclR5cGVzLmdldA==",
+      "externalId": "compute.acceleratorTypes.get",
+      "resourceTypes": ["applications"],
+      "severity": "normal",
+      "actionType": "read",
+      "service": {
+        "id": "compute"
+      }
+    },
+    {
+      "id": "Y29tcHV0ZS5hY2NlbGVyYXRvclR5cGVzLmxpc3Q=",
+      "externalId": "compute.acceleratorTypes.list",
+      "resourceTypes": ["applications"],
+      "severity": "normal",
+      "actionType": "read",
+      "service": {
+        "id": "compute"
+      }
+    },
+    {
+      "id": "Y29tcHV0ZS5hZGRyZXNzZXMuY3JlYXRl",
+      "externalId": "compute.addresses.create",
+      "resourceTypes": ["addresses"],
+      "severity": "high",
+      "actionType": null,
+      "service": {
+        "id": "compute"
+      }
+    }
+  ]
+}
+```
+
+
+### Example 2: List actions for a service in the GCP Authorization System
 Returns collection of all gcpAuthorizationSystemTypeAction entities for a provided GCP authorization system and service the action is performed on. Listing actions for a GCP project "carbide-bonsai-205017" and service "compute".
 
 ### Request
@@ -104,7 +170,7 @@ Content-Type: application/json
       }
     },
     {
-      "id": "Y29tcHV0ZS5hZGRyZXNzZXMuY3JlYXRl"
+      "id": "Y29tcHV0ZS5hZGRyZXNzZXMuY3JlYXRl",
       "externalId": "compute.addresses.create",
       "resourceTypes": ["addresses"],
       "severity": "high",

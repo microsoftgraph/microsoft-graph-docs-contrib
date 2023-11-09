@@ -1,6 +1,6 @@
 ---
 title: "unknownSource resource type"
-description: "Represents findings for the identity source."
+description: "Represents the identity source."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents findings for the identity source.
+Represents the identity source.
 
 Inherits from [authorizationSystemIdentitySource](../resources/authorizationsystemidentitysource.md).
 

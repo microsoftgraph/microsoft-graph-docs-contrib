@@ -1,6 +1,6 @@
 ---
 title: "awsActionsPermissionsDefinitionAction resource type"
-description: "An awsPermissionsDefinitionAction that will allow permissions requests with AWS Actions."
+description: "Represents an awsPermissionsDefinitionAction that allows permissions requests with AWS actions."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An awsPermissionsDefinitionAction that will allow permissions requests with AWS Actions.
+Represents an awsPermissionsDefinitionAction that allows permissions requests with AWS actions.
 
 Inherits from [awsPermissionsDefinitionAction](../resources/awspermissionsdefinitionaction.md).
 

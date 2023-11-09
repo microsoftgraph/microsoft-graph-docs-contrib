@@ -92,7 +92,7 @@ Content-Type: application/json
       "service": {
         "id": "ec2"
       }
-    }
+    },
     {
       "@odata.type": "graph.awsAuthorizationSystemTypeAction",
       "id": "ZWMyOkFsbG9jYXRlQWRkcmVzcw==",
@@ -191,7 +191,7 @@ Content-Type: application/json
       "service": {
         "id": "ec2"
       }
-    }
+    },
     {
       "id": "ZWMyOkFsbG9jYXRlQWRkcmVzcw==",
       "externalId": "ec2:AllocateAddress"

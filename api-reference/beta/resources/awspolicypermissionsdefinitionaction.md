@@ -15,7 +15,6 @@ Namespace: microsoft.graph
 
 Represents permissions for an AWS Policy.
 
-
 Inherits from [awsPermissionsDefinitionAction](../resources/awspermissionsdefinitionaction.md).
 
 ## Properties

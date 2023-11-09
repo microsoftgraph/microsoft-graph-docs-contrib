@@ -27,7 +27,7 @@ Inherits from [authorizationSystemResource](../resources/authorizationsystemreso
 |Property|Type|Description|
 |:---|:---|:---|
 |:---|:---|:---|
-|displayName|String|The name of the resource. Read-only. Inherited from [authorizationSystemResource](../resources/authorizationsystemresource.md).|
+|displayName|String|The name of the resource. Read-only. Supports `$filter` and (`eq`,`contains`). Inherited from [authorizationSystemResource](../resources/authorizationsystemresource.md).|
 |externalId|String|The id of the resource as defined by the authorization system provider. Read-only. Inherited from [authorizationSystemResource](../resources/authorizationsystemresource.md).|
 |id|String|The unique encoded identifier of the resource. Inherited from [entity](../resources/entity.md). Read-only.|
 |resourceType|String|The type of the resource. Read-only. Inherited from [authorizationSystemResource](../resources/authorizationsystemresource.md).|

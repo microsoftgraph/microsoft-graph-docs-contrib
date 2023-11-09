@@ -52,7 +52,73 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: List actions for a service in the Azure authorization system
+### Example 1: List all actions in the Azure authorization system
+
+Returns collection of all azureAuthorizationSystemTypeAction entities for a provided Azure authorization system. Listing actions for an Azure subscription "2c47abb7-ade6-4700-9a19-ac8c191a2ab8" and service "Microsoft.Storage".
+
+#### Request
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "list_azureauthorizationsystemtypeaction"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.azureAuthorizationSystem/actions
+```
+
+
+### Response
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.azureAuthorizationSystemTypeAction)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{id}/microsoft.graph.azureAuthorizationSystem/actions",
+  "value": [
+    {
+      "id": "TWljcm9zb2Z0LlN0b3JhZ2UvY2hlY2tuYW1lYXZhaWxhYmlsaXR5L3JlYWQ=",
+      "externalId": "Microsoft.Storage/checknameavailability/read",
+      "resourceTypes": ["checknameavailability"],
+      "severity": "normal",
+      "actionType": "read",
+      "service": {
+        "id": "Microsoft.Storage"
+      }
+    },
+    {
+      "id": "TWljcm9zb2Z0LlN0b3JhZ2UvbG9jYXRpb25zL2RlbGV0ZVZpcnR1YWxOZXR3b3JrT3JTdWJuZXRzL2FjdGlvbg==",
+      "externalId": "Microsoft.Storage/locations/deleteVirtualNetworkOrSubnets/action",
+      "resourceTypes": ["locations"],
+      "severity": "normal",
+      "actionType": null,
+      "service": {
+        "id": "Microsoft.Storage"
+      }
+    },
+    {
+      "id": "TWljcm9zb2Z0LlN0b3JhZ2Uvb3BlcmF0aW9ucy9yZWFk",
+      "externalId": "Microsoft.Storage/operations/read",
+      "resourceTypes": ["operations"],
+      "severity": "normal",
+      "actionType": "read",
+      "service": {
+        "id": "Microsoft.Storage"
+      }
+    }
+  ]
+}
+```
+
+### Example 2: List actions for a service in the Azure authorization system
 
 Returns collection of all azureAuthorizationSystemTypeAction entities for a provided Azure authorization system and service the action is performed on. Listing actions for an Azure subscription "2c47abb7-ade6-4700-9a19-ac8c191a2ab8" and service "Microsoft.Storage".
 

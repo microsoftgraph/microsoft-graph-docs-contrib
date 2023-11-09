@@ -15,7 +15,6 @@ Namespace: microsoft.graph
 
 Represents findings for an Azure authorization system.
 
-
 Inherits from [authorizationSystem](../resources/authorizationsystem.md).
 
 ## Methods

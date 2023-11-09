@@ -1,6 +1,6 @@
 ---
 title: "awsCondition resource type"
-description: "An OpenType to represent AWS Conditions JSON that will be used in AWS Statements."
+description: "An open type representing a JSON with AWS conditions for an AWS statement."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -16,7 +16,6 @@ Namespace: microsoft.graph
 An OpenType to represent AWS Conditions JSON that will be used in AWS Statements.
 
 ## Properties
-|Property|Type|Description|
 None.
 
 ## Relationships

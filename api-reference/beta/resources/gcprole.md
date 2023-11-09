@@ -25,11 +25,11 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The name of the GCP role.|
-|externalId|String|The id of the GCP role as defined by GCP. Alternate key.|
-|gcpRoleType|gcpRoleType|The type of GCP role. The possible values are: `system`, `custom`, `unknownFutureValue`.|
+|displayName|String|The name of the GCP role. Supports `$filter` and (`eq`,`contains`).|
+|externalId|String|The ID of the GCP role as defined by GCP. Alternate key.|
+|gcpRoleType|gcpRoleType|The type of GCP role. The possible values are: `system`, `custom`, `unknownFutureValue`. Supports `$filter` and (`eq`).|
 |id|String|The unique encoded identifier for a GCP role. Read-only. Inherited from [entity](../resources/entity.md).|
-|scopes|[gcpScope](../resources/gcpscope.md) collection|Resources that an identity assigned this GCP role can perform actions on.|
+|scopes|[gcpScope](../resources/gcpscope.md) collection|Resources that an identity assigned this GCP role can perform actions on. Supports `$filter` and (`eq`).|
 
 ## Relationships
 None.

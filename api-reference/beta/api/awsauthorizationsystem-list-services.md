@@ -132,7 +132,7 @@ Content-Type: application/json
         "resourceTypes": ["reserved-instances"],
         "severity": "high",
         "actionType": null
-      }
+      },
       {
         "id": "ZWMyOkFsbG9jYXRlQWRkcmVzcw==",
         "externalId": "ec2:AllocateAddress"

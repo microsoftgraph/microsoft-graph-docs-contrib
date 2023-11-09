@@ -16,6 +16,9 @@ Represents permissions for a GCP role.
 
 Inherits from [entity](../resources/entity.md).
 
+## Methods
+None.
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

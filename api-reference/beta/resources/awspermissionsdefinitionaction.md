@@ -25,7 +25,6 @@ The following resource types inherit from this resource:
 
 ## Properties
 |Property|Type|Description|
-None.
 
 ## Relationships
 None.
