@@ -17,6 +17,13 @@ Represents findings for identities with privileges to modify settings of securit
 
 Inherits from [finding](../resources/finding.md).
 
+The following resources inherit from this resource type:
+
+- [securityToolAwsResourceAdministratorFinding](../resources/securitytoolawsresourceadministratorfinding.md)
+- [securityToolAwsRoleAdministratorFinding](../resources/securitytoolawsroleadministratorfinding.md)
+- [securityToolAwsServerlessFunctionAdministratorFinding](../resources/securitytoolawsserverlessfunctionadministratorfinding.md)
+- [securityToolAwsUserAdministratorFinding](../resources/securitytoolawsuseradministratorfinding.md)
+
 ## Methods
 None.
 

@@ -1,6 +1,6 @@
 ---
 title: "permissionsCreepIndexDistribution resource type"
-description: "Represents the Permissions Creep Index Distribution for the authorization system. PCI distribution chart shows the classification of human and nonhuman identities based on the PCI score in three buckets: low, medium, high)."
+description: "Represents the Permissions Creep Index Distribution for the authorization system. PCI distribution chart shows the classification of human and nonhuman identities based on the PCI score in three buckets: low, medium, high."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -20,6 +20,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
+|[List permissionsCreepIndexDistributions](../api/permissionsanalytics-list-permissionscreepindexdistributions.md)|[permissionsCreepIndexDistribution](../resources/permissionscreepindexdistribution.md) collection|Get the permissionsCreepIndexDistribution resources from the permissionsCreepIndexDistributions navigation property.|
 |[Get permissionsCreepIndexDistribution](../api/permissionscreepindexdistribution-get.md)|[permissionsCreepIndexDistribution](../resources/permissionscreepindexdistribution.md)|Read the properties and relationships of a [permissionsCreepIndexDistribution](../resources/permissionscreepindexdistribution.md) object.|
 
 ## Properties
@@ -34,7 +35,7 @@ Inherits from [entity](../resources/entity.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|authorizationSystem|[authorizationSystem](../resources/authorizationsystem.md)|Represents an authorization system.|
+|authorizationSystem|[authorizationSystem](../resources/authorizationsystem.md)|Represents an authorization system onboarded to Permissions Management.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

@@ -18,9 +18,7 @@ Allows incoming traffic from all ports.
 Inherits from [inboundPorts](../resources/inboundports.md).
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|ports|Collection(Edm.String)|Collection of ports that allow inbound traffic.|
+None.
 
 ## Relationships
 None.

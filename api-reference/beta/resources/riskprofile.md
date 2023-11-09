@@ -19,7 +19,7 @@ Contains information for human and workload identity counts in a specific risk b
 |Property|Type|Description|
 |:---|:---|:---|
 |humanCount|Int32|This is the count of human identities that have been assigned to this riskScoreBracket,|
-|nonHumanCount|Int32|This is the count of non-human identities that have been assigned to this riskScoreBracket|
+|nonHumanCount|Int32|This is the count of nonhuman identities that have been assigned to this riskScoreBracket|
 
 ## Relationships
 None.

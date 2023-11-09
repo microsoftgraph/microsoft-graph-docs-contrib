@@ -13,12 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is an abstract type.
+Contains information about ports that allow inbound traffic.
+This is an abstract type from which the following types inherit.
+
+- [allInboundPorts](../resources/allinboundports.md)
+- [enumeratedInboundPorts](../resources/enumeratedinboundports.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|ports|Collection(Edm.String)|Collection of ports that allow inbound traffic.|
+None.
 
 ## Relationships
 None.

@@ -17,6 +17,13 @@ Represents findings for identities who can access secret information.
 
 Inherits from [finding](../resources/finding.md).
 
+The following resources inherit from this resource type:
+
+- [secretInformationAccessAwsResourceFinding](../resources/secretinformationaccessawsresourcefinding.md)
+- [secretInformationAccessAwsRoleFinding](../resources/secretinformationaccessawsrolefinding.md)
+- [secretInformationAccessAwsServerlessFunctionFinding](../resources/secretinformationaccessawsserverlessfunctionfinding.md)
+- [secretInformationAccessAwsUserFinding](../resources/secretinformationaccessawsuserfinding.md)
+
 ## Methods
 None.
 

@@ -20,7 +20,7 @@ Inherits from [inboundPorts](../resources/inboundports.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|ports|Collection(Edm.String)|Collection of ports that allow inbound traffic.|
+|ports|String collection|Collection of ports that allow inbound traffic.|
 
 ## Relationships
 None.
