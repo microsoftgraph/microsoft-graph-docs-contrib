@@ -11,7 +11,7 @@
           "Target": "educationAssignment"
         },
         {
-          "Id": "6f449b0c-165a-4d0e-b5f7-b9f17497eddd",
+          "Id": "cf879894-1649-4065-8cf4-1f105766f478",
           "ApiChange": "Method",
           "ChangedApiName": "PUT",
           "ChangeType": "Addition",
@@ -19,7 +19,7 @@
           "Target": "educationAssignment"
         },
         {
-          "Id": "e031004b-5858-45ac-9ca2-5c247103ffae",
+          "Id": "cf879894-1649-4065-8cf4-1f105766f478",
           "ApiChange": "Method",
           "ChangedApiName": "Delete",
           "ChangeType": "Addition",
@@ -27,7 +27,7 @@
           "Target": "educationAssignment"
         },
         {
-          "Id": "f5932bda-4e6c-4c04-8258-4269e71b12d6",
+          "Id": "cf879894-1649-4065-8cf4-1f105766f478",
           "ApiChange": "Method",
           "ChangedApiName": "Update",
           "ChangeType": "Addition",
@@ -35,7 +35,7 @@
           "Target": "educationAssignmentSettings"
         },
         {
-          "Id": "0489438b-32db-4dfc-9853-65ca459f33c7",
+          "Id": "cf879894-1649-4065-8cf4-1f105766f478",
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Addition",
@@ -43,7 +43,7 @@
           "Target": "educationAssignmentSettings"
         },
         {
-          "Id": "f0e4d1fe-a3a8-430f-9f06-7c58b4efdfd4",
+          "Id": "cf879894-1649-4065-8cf4-1f105766f478",
           "ApiChange": "Relationship",
           "ChangedApiName": "gradingCategory",
           "ChangeType": "Addition",
@@ -51,7 +51,7 @@
           "Target": "educationAssignment"
         },
         {
-          "Id": "68d68f47-b95a-4d5e-b1e3-07afc9ad79e2",
+          "Id": "cf879894-1649-4065-8cf4-1f105766f478",
           "ApiChange": "Relationship",
           "ChangedApiName": "gradingCategories",
           "ChangeType": "Addition",
@@ -59,7 +59,7 @@
           "Target": "educationAssignmentSettings"
         },
         {
-          "Id": "0800e22d-8cc3-4b93-89d9-c4f2f3c9b637",
+          "Id": "cf879894-1649-4065-8cf4-1f105766f478",
           "ApiChange": "Resource",
           "ChangedApiName": "educationGradingCategory",
           "ChangeType": "Addition",
@@ -67,7 +67,7 @@
           "Target": "educationGradingCategory"
         }
       ],
-          "Id": "dfb1e263-8e7c-416b-a297-dd315f69ceb5",
+          "Id": "cf879894-1649-4065-8cf4-1f105766f478",
           "Cloud": "Prod",
           "Version": "beta",
           "CreatedDateTime": "2023-05-15T16:40:45.6092486Z",

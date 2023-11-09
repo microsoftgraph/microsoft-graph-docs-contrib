@@ -211,24 +211,17 @@ Content-type: application/json
 {
     "gradingCategories@delta": [
         {
-            // Change this grading category's name
-            "id": "fb859cd3-943b-4cd6-9bbe-fe1c39eace0e",
-            "displayName": "Lab Test"
-            },
+            "id": "03bd9196-ce2e-41bd-902f-df9ae02de4db",
+            "displayName": "Lab Updated"
+        },
         {
-            // Delete this grading category
-            "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#gradingCategories/$deletedEntity",
-            "id": "e2a86277-24f9-4f29-8196-8c83fc69d00d",
+            "@odata.context": "https://graph.microsoft.com/beta/$metadata#gradingCategories/$deletedEntity",
+            "id": "109e5d73-3ef7-42a5-88d8-7e30cdb85f06",
             "reason": "deleted"
         },
         {
-            // Add a new grading category
-            "displayName": "Lab Practice",
-            "percentageWeight": 30
-        },
-        {
-            "displayName": "Lab Theory",
-            "percentageWeight": 10
+            "displayName": "New Homework",
+            "percentageWeight": 50
         }
     ]
 }
@@ -247,29 +240,24 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/$entity",
-    "submissionAnimationDisabled": false,
-    "gradingCategories@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingCategories",
+    "@odata.context": "https://canary.graph.microsoft.com/testprodv1.0eduasg_grading_categories_v1/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/$entity",
+    "submissionAnimationDisabled": true,
+    "gradingCategories@odata.context": "https://canary.graph.microsoft.com/testprodv1.0eduasg_grading_categories_v1/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingCategories",
     "gradingCategories": [
         {
-            "id": "fb4a4009-3cc4-4dea-9991-e0a0763659e3",
-            "displayName": "Homework",
+            "id": "a5ca6dda-f220-43ca-81e4-02396b99f398",
+            "displayName": "Test",
             "percentageWeight": 30
         },
         {
-            "id": "fb859cd3-943b-4cd6-9bbe-fe1c39eace0e",
-            "displayName": "Lab Test",
-            "percentageWeight": 30
+            "id": "03bd9196-ce2e-41bd-902f-df9ae02de4db",
+            "displayName": "Lab Updated",
+            "percentageWeight": 20
         },
         {
-            "id": "d47d7a3f-44a1-47e1-8aec-68b028f64b2e",
-            "displayName": "Lab Practice",
-            "percentageWeight": 30
-        },
-        {
-            "id": "021db844-0f03-4483-929d-1c1dbfd4fcb4",
-            "displayName": "Lab Theory",
-            "percentageWeight": 10
+            "id": "905b49a5-1639-49ab-9fbe-6a035def5ba3",
+            "displayName": "New Homework",
+            "percentageWeight": 50
         }
     ]
 }

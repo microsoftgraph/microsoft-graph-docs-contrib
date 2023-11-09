@@ -57,11 +57,11 @@ The following example shows a request.
   "name": "update_gradingCategoties"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070//assignmentSettings/gradingCategories/8bfb6d7f-8634-4f3b-9b6a-b6b6ff663f01
+PATCH https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070//assignmentSettings/gradingCategories/a5ca6dda-f220-43ca-81e4-02396b99f398
 Content-type: application/json
 
 {
-    "displayName": "Quiz-1"
+    "displayName": "Test updated"
 }
 ```
 
@@ -115,9 +115,9 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingCategories/$entity",
-    "id": "8bfb6d7f-8634-4f3b-9b6a-b6b6ff663f01",
-    "displayName": "Quiz-1",
-    "percentageWeight": 10
+    "@odata.context": "https://canary.graph.microsoft.com/testprodv1.0eduasg_grading_categories_v1/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingCategories/$entity",
+    "id": "a5ca6dda-f220-43ca-81e4-02396b99f398",
+    "displayName": "Test updated",
+    "percentageWeight": 30
 }
 ```

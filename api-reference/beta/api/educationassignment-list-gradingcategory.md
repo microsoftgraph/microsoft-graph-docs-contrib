@@ -109,30 +109,27 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/$entity",
-    "submissionAnimationDisabled": false,
-    "gradingCategories@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingCategories",
+    "@odata.context": "https://canary.graph.microsoft.com/testprodv1.0eduasg_grading_categories_v1/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/$entity",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/classes('<37d99af7-cfc5-4e3b-8566-f7d40e4a2070>')/assignmentSettings?$select=submissionAnimationDisabled",
+    "submissionAnimationDisabled": true,
+    "gradingCategories@odata.context": "https://canary.graph.microsoft.com/testprodv1.0eduasg_grading_categories_v1/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingCategories",
     "gradingCategories": [
         {
-            "id": "7625dccd-35e0-4014-a831-06f1b768ec6d",
-            "displayName": "Lab Theory",
-            "percentageWeight": 15
+            "id": "03bd9196-ce2e-41bd-902f-df9ae02de4db",
+            "displayName": "Lab",
+            "percentageWeight": 20
         },
         {
-            "id": "92e6b56a-c85c-4928-a18f-62b7b3bd4319",
-            "displayName": "Lab Practice",
+            "id": "109e5d73-3ef7-42a5-88d8-7e30cdb85f06",
+            "displayName": "Homework",
+            "percentageWeight": 50
+        },
+        {
+            "id": "a5ca6dda-f220-43ca-81e4-02396b99f398",
+            "displayName": "Test",
             "percentageWeight": 30
-        },
-        {
-            "id": "4a19d24d-779c-4ee2-93c3-7b7cf815ed94",
-            "displayName": "Attendance",
-            "percentageWeight": 30
-        },
-        {
-            "id": "948f5c3f-12af-47ec-b2a9-6ea225811f0d",
-            "displayName": "Assesstment",
-            "percentageWeight": 25
         }
     ]
+
 }
-```
+
