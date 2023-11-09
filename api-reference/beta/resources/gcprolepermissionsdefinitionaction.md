@@ -1,6 +1,6 @@
 ---
 title: "gcpRolePermissionsDefinitionAction resource type"
-description: "Represents permissions for a GCP role."
+description: "Represents actions for permissions for under GCP role."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents permissions for a GCP role.
+Represents actions for permissions under a GCP role.
 
 Inherits from [permissionsDefinitionAction](../resources/permissionsdefinitionaction.md).
 

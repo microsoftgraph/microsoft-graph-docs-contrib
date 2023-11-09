@@ -1,6 +1,6 @@
 ---
 title: "Get azureRoleDefinition"
-description: "Represents an Azure role in an Azure authorization system."
+description: "Gets an Azure role in an Azure authorization system."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an [azureRoleDefinition](../resources/azureroledefinition.md) object. Represents an Azure role in an Azure authorization system.
+Read the properties and relationships of an [azureRoleDefinition](../resources/azureroledefinition.md) object. Gets an Azure role in an Azure authorization system.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
