@@ -1,6 +1,6 @@
 ---
 title: "List assignedComputeInstanceDetails"
-description: "Get a list of the assignedComputeInstanceDetails objects and their properties."
+description: "Get a list of the assignedComputeInstanceDetails objects and their properties for an AWS open security group finding."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [assignedComputeInstanceDetails](../resources/assignedcomputeinstancedetails.md) objects and their properties. This is a secondary call to [openAwsSecurityGroupFinding](../resources/openawssecuritygroup.md).
+Get a list of the [assignedComputeInstanceDetails](../resources/assignedcomputeinstancedetails.md) objects and their properties for an AWS open security group finding.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,7 +34,7 @@ GET /identityGovernance/permissionsAnalytics/aws/findings('id')/microsoft.graph.
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|

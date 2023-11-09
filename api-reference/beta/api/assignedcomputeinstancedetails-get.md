@@ -1,6 +1,6 @@
 ---
 title: "Get assignedComputeInstanceDetails"
-description: "Read the properties and relationships of an assignedComputeInstanceDetails object."
+description: "Read the properties and relationships of an assignedComputeInstanceDetails object for an AWS open security group finding."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an [assignedComputeInstanceDetails](../resources/assignedcomputeinstancedetails.md) object and its properties. This is compounded on a collection call to [openAwsSecurityGroupFinding](../api/openawssecuritygroupfinding-list-assignedcomputeinstancesdetails.md).
+Read the properties and relationships of an [assignedComputeInstanceDetails](../resources/assignedcomputeinstancedetails.md) object and its properties for an AWS open security group finding.
 
 
 ## Permissions
@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET  https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('id')/microsoft.graph.openAwsSecurityGroupFinding/assignedComputeInstancesDetails('id')
+GET /identityGovernance/permissionsAnalytics/aws/findings('id')/microsoft.graph.openAwsSecurityGroupFinding/assignedComputeInstancesDetails('id')
 ```
 
 ## Optional query parameters
@@ -77,7 +77,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
  {
-    "@odata.context": "https://canary.graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.assignedComputeInstanceDetails)",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.assignedComputeInstanceDetails)",
     "id": "YXJuOmF3czplYzI6dXMtd2VzdC0yOjk1Njk4Nzg4NzczNTppbnN0YW5jZS9pLTBkNWY1OTU5OGVkZjQzNDBl",
     "assignedComputeInstance": {
         "id": "YXJuOmF3czplYzI6dXMtd2VzdC0yOjk1Njk4Nzg4NzczNTppbnN0YW5jZS9pLTBkNWY1OTU5OGVkZjQzNDBl",

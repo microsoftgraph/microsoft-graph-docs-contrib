@@ -29,7 +29,7 @@ Inherits from [finding](../resources/finding.md).
 |createdDateTime|DateTimeOffset|Defines when the finding was created. Inherited from [finding](../resources/finding.md).|
 |id|String|Unique identifier for the finding. Inherited from [entity](../resources/entity.md).|
 |inboundPorts|[inboundPorts](../resources/inboundports.md)|Contains information on inbound ports related to an open security group. Supports `$filter` (`eq`) `$select`.|
-|totalStorageBucketCount|Int32|The number of storage buckets accessed by the assigned compute instances|
+|totalStorageBucketCount|Int32|The number of storage buckets accessed by the assigned compute instances.|
 
 ## Relationships
 |Relationship|Type|Description|
