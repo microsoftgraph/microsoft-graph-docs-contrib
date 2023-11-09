@@ -188,7 +188,7 @@ Content-Type: application/json
 
 #### Request
 
-The following example requests all custom roles in an AWS authorization system.
+The following example requests all custom policies in an AWS authorization system.
 
 <!-- {
   "blockType": "request",
