@@ -20,10 +20,10 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List AWS authorization system services](../api/awsauthorizationsystem-list-services.md)|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md) collection|Get a list of the [authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md) objects and their properties for the [AWS authorization system type](../resources/authorizationsystemtype.md).|
+|[List AWS authorization system services](../api/awsauthorizationsystem-list-services.md)|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md) collection|Get a list of the [authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md) objects and their properties.|
 |[List Azure authorization system type services](../api/azureauthorizationsystem-list-services.md)|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md) collection|Get a list of the [authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md) objects and their properties.|
 |[List GCP authorization system type services](../api/gcpauthorizationsystem-list-services.md)|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md) collection|Get a list of the [authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md) objects and their properties.|
-|[Get authorization system services](../api/authorizationsystemtypeservice-get.md)|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md) collection|Get the [authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md) objects and their properties for the [Authorization system type](../resources/authorizationsystemtype.md).|
+|[Get authorization system services](../api/authorizationsystemtypeservice-get.md)|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md) collection|Get the [authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md) objects and their properties.|
 
 ## Properties
 |Property|Type|Description|

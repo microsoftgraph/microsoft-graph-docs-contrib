@@ -29,8 +29,8 @@ Inherits from [entity](../resources/entity.md).
 |assignableScopes|String collection|Scopes at which the Azure role can be assigned. Supports `$filter` and (`eq`).|
 |azureRoleDefinitionType|azureRoleDefinitionType|Type of Azure role.The possible values are: `system`, `custom`, `unknownFutureValue`. Supports `$filter` and (`eq`).|
 |displayName|String|Name of the Azure role. Supports `$filter` and (`eq`,`contains`).|
-|externalId|String|Identifier of an Azure role defined by Microsoft Azure. Alternate key.|
-|id|String|Encoded identifier of an Azure role definition. Inherited from [entity](../resources/entity.md).|
+|externalId|String|Identifier of an Azure role defined by Microsoft Azure. Alternate key. Supports `$filter` and `eq`.|
+|id|String|The base64 encoded identifier of externalId of an Azure role definition. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 None.

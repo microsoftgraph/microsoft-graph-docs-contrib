@@ -7,7 +7,7 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# List authorizationSystemTypeServices
+# List AWS Authorization System Type Services
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -92,7 +92,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2
+### Example 2: List actions for a provided AWS authorization system service
 
 List actions for a provided AWS authorization system and AWS service.
 
