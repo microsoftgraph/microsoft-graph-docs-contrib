@@ -23,7 +23,7 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The name of the identity. Read-only.|
+|displayName|String|The name of the identity. Read-only. Supports `$filter` and (`eq`,`contains`).|
 |externalId|String|Unique Id of the identity within the authorization system. Read-only.|
 |id|String|Base64 encoding of the identity within the authorization system. Inherited from [entity](../resources/entity.md).|
 |source|[authorizationSystemIdentitySource](../resources/authorizationsystemidentitysource.md)| Represents details of the source of the identity. Details include identityProviderType and Type of source(aad, aws, gcp, etc.).|

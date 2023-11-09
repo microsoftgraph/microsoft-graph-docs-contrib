@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a permissions request that Microsoft Entra Permissions Management (EPM) will use to manage permissions for a request identity on resources in the authorization system. This request can be granted, rejected, or canceled by identities in EPM.
+Represents a request for permissions on resources in a target authorization system that an identity has made through Microsoft Entra Permissions Management, either directly or indirectly. An authorized administrator can grant, reject, or cancel the request.
 
 Inherits from [entity](../resources/entity.md).
 

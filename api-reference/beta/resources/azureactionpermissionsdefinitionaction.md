@@ -1,6 +1,6 @@
 ---
 title: "azureActionPermissionsDefinitionAction resource type"
-description: "Represents findings for Azure actions."
+description: "Represents Azure actions."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents findings for actions under Azure permissions.
+Represents actions under Azure permissions.
 
 
 Inherits from [azurePermissionsDefinitionAction](../resources/azurepermissionsdefinitionaction.md).

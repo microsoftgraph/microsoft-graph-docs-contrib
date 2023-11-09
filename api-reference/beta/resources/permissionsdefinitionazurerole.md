@@ -18,10 +18,7 @@ Represents permissions defined for an Azure role.
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List permissionsDefinitionAzureRoles](../api/permissionsdefinitionazurerole-list.md)|[permissionsDefinitionAzureRole](../resources/permissionsdefinitionazurerole.md) collection|Get a list of the [permissionsDefinitionAzureRole](../resources/permissionsdefinitionazurerole.md) objects and their properties.|
-|[Get permissionsDefinitionAzureRole](../api/permissionsdefinitionazurerole-get.md)|[permissionsDefinitionAzureRole](../resources/permissionsdefinitionazurerole.md)|Read the properties and relationships of a [permissionsDefinitionAzureRole](../resources/permissionsdefinitionazurerole.md) object.|
+None.
 
 ## Properties
 |Property|Type|Description|

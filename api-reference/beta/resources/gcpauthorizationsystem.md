@@ -1,6 +1,6 @@
 ---
 title: "gcpAuthorizationSystem resource type"
-description: "Represents findings for a GCP authorization system."
+description: "Represents a GCP authorization system."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents findings for a GCP authorization system.
+Represents a GCP authorization system.
 
 Inherits from [authorizationSystem](../resources/authorizationsystem.md).
 
@@ -22,15 +22,10 @@ Inherits from [authorizationSystem](../resources/authorizationsystem.md).
 |:---|:---|:---|
 |[List gcpAuthorizationSystems](../api/gcpauthorizationsystem-list.md)|[gcpAuthorizationSystem](../resources/gcpauthorizationsystem.md) collection|Get a list of the [gcpAuthorizationSystem](../resources/gcpauthorizationsystem.md) objects and their properties.|
 |[Get gcpAuthorizationSystem](../api/gcpauthorizationsystem-get.md)|[gcpAuthorizationSystem](../resources/gcpauthorizationsystem.md)|Read the properties and relationships of a [gcpAuthorizationSystem](../resources/gcpauthorizationsystem.md) object.|
-
 |[List actions](../api/gcpauthorizationsystem-list-actions.md)|[gcpAuthorizationSystemTypeAction](../resources/gcpauthorizationsystemtypeaction.md) collection|Get the gcpAuthorizationSystemTypeAction resources from the actions navigation property.|
-
 |[List dataCollectionInfo](../api/gcpauthorizationsystem-list-datacollectioninfo.md)|[dataCollectionInfo](../resources/datacollectioninfo.md) collection|Get the dataCollectionInfo resources from the dataCollectionInfo navigation property.|
-
 |[List resources](../api/gcpauthorizationsystem-list-resources.md)|[gcpAuthorizationSystemResource](../resources/gcpauthorizationsystemresource.md) collection|Get the gcpAuthorizationSystemResource resources from the resources navigation property.|
-
 |[List roles](../api/gcpauthorizationsystem-list-roles.md)|[gcpRole](../resources/gcprole.md) collection|Get the gcpRole resources from the roles navigation property.|
-
 |[List services](../api/gcpauthorizationsystem-list-services.md)|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md) collection|Get the authorizationSystemTypeService resources from the services navigation property.|
 
 ## Properties

@@ -21,18 +21,17 @@ Inherits from [awsIdentity](../resources/awsidentity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List AWS Roles](../api/awsassociatedidentities-list-roles.md)|[awsRole](../resources/awsrole.md)|Read the properties and relationships of an [awsRole](../resources/awsrole.md) object.|
 |[Get AWS Role](../api/awsrole-get.md)|[awsRole](../resources/awsrole.md)|Read the properties and relationships of an [awsRole](../resources/awsrole.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The name of the object. Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
+|displayName|String|The name of the object. Supports `$filter` and (`eq`,`contains`). Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
 |externalId|String|The externally displayed ID of the object. Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
 |id|String|Unique identifier for the Finding. This id will be base64 encoded using the format:{findingType}{FindingId} to ensure uniqueness. Inherited from [entity](../resources/entity.md).|
 |source|[authorizationSystemIdentitySource](../resources/authorizationsystemidentityresource.md)|The source of the authorization system identity. Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
 |trustEntityType|awsRoleTrustEntityType| Types of role trusts. The possible values are: `none`, `service`, `sso`, `crossAccount`, `webIdentity`, `unknownFutureValue`.|
-|roleType|awsRoleType|Indicates whether role is a `system` or `custom` role|
+|roleType|awsRoleType|Indicates whether role is a `system` or `custom` role. Supports `$filter` and (`eq`).|
 
 ## Relationships
 |Relationship|Type|Description|

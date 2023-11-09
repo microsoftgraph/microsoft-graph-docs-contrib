@@ -1,6 +1,6 @@
 ---
 title: "aadSource resource type"
-description: "Represents an authorization system identity sourced from AAD"
+description: "Represents an authorization system identity sourced from Microsoft Entra ID."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used to represent an authorization system identity sourced from AAD.
+Used to represent an authorization system identity sourced from Microsoft Entra ID.
 
 Inherits from [authorizationSystemIdentitySource](../resources/authorizationsystemidentitysource.md).
 

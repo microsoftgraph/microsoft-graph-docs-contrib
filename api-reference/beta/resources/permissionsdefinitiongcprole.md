@@ -17,10 +17,7 @@ Represents permissions for a GCP role.
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List permissionsDefinitionGcpRoles](../api/permissionsdefinitiongcprole-list.md)|[permissionsDefinitionGcpRole](../resources/permissionsdefinitiongcprole.md) collection|Get a list of the [permissionsDefinitionGcpRole](../resources/permissionsdefinitiongcprole.md) objects and their properties.|
-|[Get permissionsDefinitionGcpRole](../api/permissionsdefinitiongcprole-get.md)|[permissionsDefinitionGcpRole](../resources/permissionsdefinitiongcprole.md)|Read the properties and relationships of a [permissionsDefinitionGcpRole](../resources/permissionsdefinitiongcprole.md) object.|
+None.
 
 ## Properties
 |Property|Type|Description|

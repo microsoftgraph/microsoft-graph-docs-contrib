@@ -22,7 +22,10 @@ None.
 None.
 
 ## Relationships
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+|permissionsRequestChanges|[permissionsRequestChange](../resources/permissionsrequestchange.md)|Represents a change event of the scheduledPermissionsRequest entity.|
+|scheduledPermissionsRequests|[scheduledPermissionsRequest](../resources/scheduledpermissionsrequest.md)|Represents a permissions request that EPM will use to manage permissions in for a request identity on resources in the authorization system. This request can be granted, rejected or canceled by identities in EPM.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
