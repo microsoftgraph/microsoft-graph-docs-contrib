@@ -20,7 +20,7 @@ Inherits from [azureIdentity](../resources/azureidentity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List azureServicePrincipals](../api/azureassociateidentities-list-serviceprincipal.md)|[azureServicePrincipal](../resources/azureserviceprincipal.md) collection|Get a list of the [azureServicePrincipal](../resources/azureserviceprincipal.md) objects and their properties.|
+|[List azureServicePrincipals](../api/azureassociatedidentities-list-azureserviceprincipals.md)|[azureServicePrincipal](../resources/azureserviceprincipal.md) collection|Get a list of the [azureServicePrincipal](../resources/azureserviceprincipal.md) objects and their properties.|
 |[Get azureServicePrincipal](../api/azureserviceprincipal-get.md)|[azureServicePrincipal](../resources/azureserviceprincipal.md)|Read the properties and relationships of an [azureServicePrincipal](../resources/azureserviceprincipal.md) object.|
 
 ## Properties

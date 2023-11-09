@@ -20,7 +20,7 @@ Inherits from [azureIdentity](../resources/azureidentity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List azureUsers](../api/azurassociatedidentities-list-users.md)|[azureUser](../resources/azureuser.md) collection|Get a list of the [azureUser](../resources/azureuser.md) objects and their properties.|
+|[List azureUsers](../api/azureassociatedidentities-list-users.md)|[azureUser](../resources/azureuser.md) collection|Get a list of the [azureUser](../resources/azureuser.md) objects and their properties.|
 |[Get azureUser](../api/azureuser-get.md)|[azureUser](../resources/azureuser.md)|Read the properties and relationships of an [azureUser](../resources/azureuser.md) object.|
 
 ## Properties
