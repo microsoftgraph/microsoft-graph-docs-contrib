@@ -17,23 +17,23 @@ Represents a recording associated with an [online meeting](onlinemeeting.md).
 
 |  Method       |  Return Type  | Description|
 |:---------------|:--------|:----------|
-|[List callRecordings](../api/onlinemeeting-list-recordings.md) | [callRecording](callrecording.md) collection | Get the list of [callRecording](../resources/callrecording.md) objects associated with an [onlineMeeting](../resources/onlinemeeting.md).|
-|[Get callRecording](../api/callrecording-get.md) | [callRecording](callrecording.md) | Get a [callRecording](../resources/callrecording.md) object associated with an [onlineMeeting](../resources/onlinemeeting.md).|
+|[List callRecordings](../api/onlinemeeting-list-recordings.md) | [callRecording](callrecording.md) collection | Get the list of [callRecording](../resources/callrecording.md) objects associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md).|
+|[Get callRecording](../api/callrecording-get.md) | [callRecording](callrecording.md) | Get a [callRecording](../resources/callrecording.md) object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md).|
 
 ## Properties
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
 | content | Stream | The content of the recording. Read-only.|
-| createdDateTime | DateTimeOffset |  Date and time at which the recording was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
+| createdDateTime | DateTimeOffset |  Date and time at which the recording was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 | id | String | The unique identifier for the recording. Read-only. Inherited from [entity](../resources/entity.md).|
 | meetingId | String | The unique identifier of the **onlineMeeting** related to this recording. Read-only.|
-| meetingOrganizer| IdentitySet| The identity information of the organizer of the **onlineMeeting** related to this recording. Read-only.|
+| meetingOrganizer| [identitySet](identityset.md)| The identity information of the organizer of the **onlineMeeting** related to this recording. Read-only.|
 | recordingContentUrl| String| The URL that can be used to access the content of the recording. Read-only.|
 
 ## JSON representation
 
-The following code snippet is a JSON representation of the resource:
+The following JSON representation shows the resource type.
 
 <!--{
   "blockType": "resource",
@@ -49,7 +49,7 @@ The following code snippet is a JSON representation of the resource:
   "createdDateTime": "String (timestamp)",  
   "id": "String (identifier)",
   "meetingId": "String",
-  "meetingOrganizer": "IdentitySet",
+  "meetingOrganizer": {"@odata.type": "microsoft.graph.identitySet"},
   "recordingContentUrl": "String"
 }
 ```
