@@ -36,7 +36,7 @@ POST /communications/calls/{id}/sendDtmfTones
 ```
 > **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
-### Request headers
+## Request headers
 | Name          | Description               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}. Required. |
