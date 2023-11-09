@@ -63,6 +63,7 @@ When a file is applied with a retention label for the first time, this method re
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "driveItem_setRetentionLabel",
@@ -78,6 +79,12 @@ Content-Type: application/json
   "name": "Retention label for Contracts"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/driveitem-setretentionlabel-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
