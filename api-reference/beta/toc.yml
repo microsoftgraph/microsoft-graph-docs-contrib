@@ -16759,46 +16759,46 @@ items:
                 href: api/site-list.md
               - name: Get site
                 href: api/site-get.md
-              - name: Get lists
-                href: api/list-list.md
-              - name: List subsites
-                href: api/site-list-subsites.md
-              - name: Get site analytics
-                href: api/itemanalytics-get.md
-              - name: Get activities by interval
-                href: api/itemactivity-getbyinterval.md
-              - name: Follow site
-                href: api/site-follow.md
-              - name: Unfollow site
-                href: api/site-unfollow.md
-              - name: List followed sites
-                href: api/sites-list-followed.md
-              - name: List columns
-                href: api/site-list-columns.md
               - name: Create column
                 href: api/site-post-columns.md
-              - name: List content types
-                href: api/site-list-contenttypes.md
               - name: Create content type
                 href: api/site-post-contenttypes.md
-              - name: Get applicable content types for list
-                href: api/site-getapplicablecontenttypesforlist.md
-              - name: Get lists
-                href: api/list-list.md
               - name: Create list
                 href: api/list-create.md
-              - name: List subsites
-                href: api/site-list-subsites.md
-              - name: Search for sites
-                href: api/site-search.md
-              - name: List operations
-                href: api/site-list-operations.md
+              - name: Follow site
+                href: api/site-follow.md
+              - name: Get activities by interval
+                href: api/itemactivity-getbyinterval.md
+              - name: Get applicable content types for list
+                href: api/site-getapplicablecontenttypesforlist.md
+              - name: Get delta
+                href: api/site-delta.md
+              - name: Get lists
+                href: api/list-list.md
+              - name: Get lists
+                href: api/list-list.md
+              - name: Get site analytics
+                href: api/itemanalytics-get.md
               - name: Get site settings
                 href: api/sitesettings-get.md
               - name: List all sites
                 href: api/site-getallsites.md
+              - name: List columns
+                href: api/site-list-columns.md
+              - name: List content types
+                href: api/site-list-contenttypes.md
+              - name: List followed sites
+                href: api/sites-list-followed.md
+              - name: List operations
+                href: api/site-list-operations.md               
               - name: List recycle bin items
                 href: api/recyclebin-list-items.md
+              - name: List subsites
+                href: api/site-list-subsites.md
+              - name: Search for sites
+                href: api/site-search.md
+              - name: Unfollow site
+                href: api/site-unfollow.md
           - name: List
             items:
               - name: List
@@ -17906,6 +17906,8 @@ items:
                     href: api/chatmessage-setreaction.md
                   - name: Unset message reaction
                     href: api/chatmessage-unsetreaction.md
+                  - name: Remove all access for user
+                    href: api/chat-removeallaccessforuser.md
               - name: Chat message
                 href: resources/chatmessage.md
                 items:
