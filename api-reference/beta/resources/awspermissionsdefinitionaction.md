@@ -17,11 +17,11 @@ An abstract complex type that represents the action to take in a permissionsDefi
 
 Inherits from [permissionsDefinitionAction](../resources/permissionsdefinitionaction.md).
 
-The [awsActionsPermissionsDefinitionAction](../resources/awsActionsPermissionsDefinitionAction.md) type inherits from this abstract type.
+The following resource types inherit from this resource:
 
-The [awsPolicyPermissionsDefinitionAction](../resources/awsPolicyPermissionsDefinitionAction.md) resource type derives from this abstract type.
-
-The [awsPolicyPermissionsDefinitionAction](../resources/awsPolicyPermissionsDefinitionAction.md) resource type derives from this abstract type.
+- [awsPolicyPermissionsDefinitionAction](../resources/awsPolicyPermissionsDefinitionAction.md) resource type  
+- [awsActionsPermissionsDefinitionAction](../resources/awsActionsPermissionsDefinitionAction.md) resource type
+- [awsActionsPeThe following resource types inherit from this resource: ]
 
 ## Properties
 |Property|Type|Description|

@@ -22,7 +22,10 @@ None.
 None.
 
 ## Relationships
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+|permissionsRequestChanges|[permissionsRequestChange](../resources/permissionsrequestchange.md)|Represents the change events of the scheduledPermissionsRequest entity.|
+|scheduledPermissionsRequest|[scheduledPermissionsRequest](../resources/scheduledpermissionsrequest.md)|Represents the requests for permissions on resources in a target authorization system.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

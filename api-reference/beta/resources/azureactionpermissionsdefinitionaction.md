@@ -15,8 +15,11 @@ Namespace: microsoft.graph
 
 Represents findings for actions under Azure permissions.
 
+Inherits from [permissionsDefinitionAction](../resources/permissionsdefinitionaction.md).
+The following resource types inherit from this resource:
 
-Inherits from [azurePermissionsDefinitionAction](../resources/azurepermissionsdefinitionaction.md).
+- [azureActionPermissionsDefinitionAction](../resources/azureActionPermissionsDefinitionAction.md) resource type
+- [azureRolePermissionsDefinitionAction](../resources/azureRolePermissionsDefinitionAction.md) resource type
 
 ## Properties
 |Property|Type|Description|

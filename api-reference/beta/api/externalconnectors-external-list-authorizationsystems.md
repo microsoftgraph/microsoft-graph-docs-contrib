@@ -151,7 +151,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/external/authorizationSystems?$filter=dataCollectionInfo/entitlements/permissionsModificationCapability eq 'enabled' and dataCollectionInfo/entitlements/status eq 'online'
+GET https://graph.microsoft.com/beta/external/authorizationSystems?$filter=dataCollectionInfo/entitlements/microsoft.graph.entitlementsDataCollection/permissionsModificationCapability eq 'enabled' and dataCollectionInfo/entitlements/microsoft.graph.entitlementsDataCollection/status eq 'online'
 ```
 
 
@@ -168,6 +168,26 @@ The following example shows the response.
 HTTP/1.1 200 OK
 Content-Type: application/json
 
-TODO: Insert sample response.
+{  
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/$entity",  
+  "value": [  
+    {  
+      "odata.type": "#microsoft.graph.awsAuthorizationSystem"  
+      "id": "OTU2OTg3ODg3NzM1",  
+      "authorizationSystemId": "956987887735",  
+      "authorizationSystemName": "development",  
+      "authorizationSystemType": "AWS",  
+      "dataCollectionInfo@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems('OTU2OTg3ODg3NzM1')/microsoft.graph.awsAuthorizationSystem/dataCollectionInfo/$entity",  
+      "dataCollectionInfo": {  
+        "entitlements": {  
+          "@odata.type": "microsoft.graph.entitlementsDataCollection",  
+          "status": "online",  
+          "lastCollectionDateTime": "2023-02-17T21:12:48Z",  
+          "permissionsModificationCapability":  "enabled"  
+        }  
+      }  
+    },  
+  ],  
+  "@odata.nextLink": "https://graph.microsoft.com/beta/external/authorizationSystems?$filter=dataCollectionInfo%2fentitlements%2fmicrosoft.graph.entitlementsDataCollection%2fpermissionsModificationCapability+eq+%27enabled%27+and+dataCollectionInfo%2fentitlements%2fmicrosoft.graph.entitlementsDataCollection%2fstatus+eq+%27online%27&$skiptoken=MQ",  
+}  
 ```
-

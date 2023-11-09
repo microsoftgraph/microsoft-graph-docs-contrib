@@ -15,7 +15,12 @@ Namespace: microsoft.graph
 
 Represents permissions for a GCP role.
 
-Inherits from [gcpPermissionsDefinitionAction](../resources/gcppermissionsdefinitionaction.md).
+Inherits from [permissionsDefinitionAction](../resources/permissionsdefinitionaction.md).
+
+The following resource types inherit from this resource:
+
+- [gcpActionPermissionsDefinitionAction](../resources/gcpActionPermissionsDefinitionAction.md) resource type
+- [gcpRolePermissionsDefinitionAction](../resources/gcpRolePermissionsDefinitionAction.md) resource type
 
 ## Properties
 None.
