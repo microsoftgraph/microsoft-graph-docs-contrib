@@ -74,7 +74,7 @@ Once the pending job completes, you can create the [goalsExportJob](../resources
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "create_goalsexportjob_from_"
+  "name": "create_goalsexportjob_from_1"
 }
 -->
 ``` http
@@ -94,7 +94,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.vivaGoals.goalsExportJob"
+  "@odata.type": "microsoft.graph.goalsExportJob"
 }
 -->
 ``` http
@@ -103,7 +103,7 @@ Content-Type: application/json
 Location: "https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs/j!uJJZyGd87hGFgvZV8bl-GlCBmj39kL1Cl3clung9SgU"
 
 {
-  "@odata.type": "#microsoft.vivaGoals.goalsExportJob",
+  "@odata.type": "#microsoft.graph.goalsExportJob",
   "id": "9eb0bfa0-eaa1-b225-1f83-54ae3e711753",
   "createdDateTime": "String (timestamp)",
   "status": "String"
@@ -116,7 +116,7 @@ Location: "https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs/
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "create_goalsexportjob_from_"
+  "name": "create_goalsexportjob_from_2"
 }
 -->
 ``` http
@@ -136,7 +136,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.vivaGoals.goalsExportJob"
+  "@odata.type": "microsoft.graph.goalsExportJob"
 }
 -->
 ``` http
@@ -167,7 +167,7 @@ Location: "https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs/
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "create_goalsexportjob_from_"
+  "name": "create_goalsexportjob_from_3"
 }
 -->
 ``` http
@@ -187,7 +187,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.vivaGoals.goalsExportJob"
+  "@odata.type": "microsoft.graph.goalsExportJob"
 }
 -->
 ``` http
@@ -214,7 +214,7 @@ Content-type: application/json
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "create_goalsexportjob_from_"
+  "name": "create_goalsexportjob_from_4"
 }
 -->
 ``` http
@@ -234,7 +234,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.vivaGoals.goalsExportJob"
+  "@odata.type": "microsoft.graph.goalsExportJob"
 }
 -->
 ``` http

@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "list_goalsexportjob"
+  "name": "list_goalsexportjob1"
 }
 -->
 ``` http
@@ -74,7 +74,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.vivaGoals.goalsExportJob)"
+  "@odata.type": "Collection(microsoft.graph.goalsExportJob)"
 }
 -->
 ``` http
@@ -84,7 +84,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.vivaGoals.goalsExportJob",
+      "@odata.type": "#microsoft.graph.goalsExportJob",
       "id": "9eb0bfa0-eaa1-b225-1f83-54ae3e711753",
       "createdDateTime": "String (timestamp)",
       "status": "String",
@@ -102,7 +102,7 @@ Content-Type: application/json
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "list_goalsexportjob"
+  "name": "list_goalsexportjob2"
 }
 -->
 ``` http
@@ -116,7 +116,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.vivaGoals.goalsExportJob)"
+  "@odata.type": "Collection(microsoft.graph.goalsExportJob)"
 }
 -->
 ``` http
@@ -126,7 +126,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.vivaGoals.goalsExportJob",
+      "@odata.type": "#microsoft.graph.goalsExportJob",
       "id": "9eb0bfa0-eaa1-b225-1f83-54ae3e711753",
       "createdDateTime": "String (timestamp)",
       "status": "String",
@@ -144,7 +144,7 @@ Content-Type: application/json
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "list_goalsexportjob"
+  "name": "list_goalsexportjob3"
 }
 -->
 ``` http
@@ -158,7 +158,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.vivaGoals.goalsExportJob)"
+  "@odata.type": "Collection(microsoft.graph.goalsExportJob)"
 }
 -->
 ``` http
