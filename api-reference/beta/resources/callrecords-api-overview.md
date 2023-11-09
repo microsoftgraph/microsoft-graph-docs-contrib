@@ -19,14 +19,14 @@ The call records API is defined in the OData sub-namespace, `microsoft.graph.cal
 
 | Resource | Methods |
 | :-- | :-- |
-| [callRecord](callrecords-callrecord.md) | [Get callRecord](../api/callrecords-callrecord-get.md)<br />[List callRecord](../api/callrecords-callrecord-list.md) |
+| [callRecord](callrecords-callrecord.md) | [Get callRecord](../api/callrecords-callrecord-get.md)<br />[List callRecords](../api/callrecords-callrecord-list.md) |
 | [directRoutingLogRow](callrecords-directroutinglogrow.md) | [getDirectRoutingCalls](../api/callrecords-callrecord-getdirectroutingcalls.md)|
+| [participant](callrecords-participant.md) | [List participants](../api/callrecords-callrecord-list-participants.md) |
 | [pstnBlockedUsersLogRow](callrecords-pstnblockeduserslogrow.md) | [getPstnBlockedUsersLog](../api/callrecords-callrecord-getpstnblockeduserslog.md)|
 | [pstnCallLogRow](callrecords-pstncalllogrow.md)|[getPstnCalls](../api/callrecords-callrecord-getpstncalls.md) |
 | [pstnOnlineMeetingDialoutReport](callrecords-pstnonlinemeetingdialoutreport.md) | [getPstnOnlineMeetingDialoutReport](../api/callrecords-callrecord-getpstnonlinemeetingdialoutreport.md)|
 | [segment](callrecords-segment.md) | [Get callRecord](../api/callrecords-callrecord-get.md)<br />[List sessions](../api/callrecords-callrecord-list-sessions.md) |
 | [session](callrecords-session.md) | [Get callRecord](../api/callrecords-callrecord-get.md)<br />[List sessions](../api/callrecords-callrecord-list-sessions.md) |
-| [participant](callrecords-participant.md) | [List participants](../api/callrecords-callrecord-list-participants.md) |
 | [smsLogRow](callrecords-smslogrow.md) | [getSmsLog](../api/callrecords-callrecord-getsmslog.md)|
 
 ## Call record structure
