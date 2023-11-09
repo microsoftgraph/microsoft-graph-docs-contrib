@@ -6,9 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Chats.Item.SendActivityNotification;
+using Microsoft.Graph.Models;
 
-var requestBody = new Microsoft.Graph.Chats.Item.SendActivityNotification.SendActivityNotificationPostRequestBody
+var requestBody = new SendActivityNotificationPostRequestBody
 {
 	Topic = new TeamworkActivityTopic
 	{
@@ -27,6 +29,8 @@ var requestBody = new Microsoft.Graph.Chats.Item.SendActivityNotification.SendAc
 		ChatId = "19:d65713bc498c4a428c71ef9353e6ce20@thread.v2",
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Chats["{chat-id}"].SendActivityNotification.PostAsync(requestBody);
 
 
