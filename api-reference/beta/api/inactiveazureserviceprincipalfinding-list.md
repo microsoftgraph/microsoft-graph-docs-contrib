@@ -117,8 +117,7 @@ Content-Type: application/json
         "createdDateTime": "2020-04-12T20:34:24Z",
         "lastActiveDateTime": "2020-10-30T03:21:05Z"
       }
-    },
-
+    }
   ]
 }
 

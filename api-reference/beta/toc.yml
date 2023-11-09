@@ -14587,11 +14587,13 @@ items:
                 - name: Permissions creep index distribution
                   href: resources/permissionscreepindexdistribution.md
                   items:
+                  - name: List
+                    href: api/permissionsanalytics-list-permissionscreepindexdistributions.md
                   - name: Get
                     href: api/permissionscreepindexdistribution-get.md
                 - name: Identity findings
                   items:
-                  - name: Inactive user
+                  - name: Inactive user finding
                     href: resources/inactiveuserfinding.md
                     items:
                     - name: List

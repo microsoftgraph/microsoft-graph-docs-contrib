@@ -40,7 +40,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Represents an identity in an authorization system onboarded to Permissions Management. Inherited from [microsoft.graph.identityFinding](../resources/identityfinding.md). Autoexpanded by default. Supports `$filter` as follows: `$filter=identity/authorizationSystem/authorizationSystemId IN ['authorizationSystemIds']`.|
+|identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Represents an identity in an authorization system onboarded to Permissions Management. Inherited from [identityFinding](../resources/identityfinding.md). Autoexpanded by default. Supports `$filter` as follows: `$filter=identity/authorizationSystem/authorizationSystemId IN ['authorizationSystemIds']`.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
