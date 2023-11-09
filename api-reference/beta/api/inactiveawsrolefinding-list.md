@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the details of inactive roles [inactiveAwsRoleFinding](../resources/inactiveawsrolefinding.md) in AWS authorization systems onboarded to Permissions Management..
+List the details of inactive roles [inactiveAwsRoleFinding](../resources/inactiveawsrolefinding.md) in AWS authorization systems onboarded to Permissions Management.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
