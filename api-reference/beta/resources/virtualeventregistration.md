@@ -35,7 +35,7 @@ Inherits from [entity](../resources/entity.md).
 |lastName|String|Last name of the registrant.|
 |registrationDateTime|DateTimeOffset|Date and time when the registrant registers for the virtual event. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |registrationQuestionAnswers|[virtualEventRegistrationQuestionAnswer](../resources/virtualeventregistrationquestionanswer.md) collection|The registrant's answer to the registration questions.|
-|status|[virtualEventAttendeeRegistrationStatus](#virtualeventattendeeregistrationstatus-values)|Registration status of the registrant. Read-only. Possible values are: `registered`, `canceled`, `waitlisted`, `pendingApproval`, `rejectedByOrganizer`, `unknownFutureValue`.  |
+|status|[virtualEventAttendeeRegistrationStatus](#virtualeventattendeeregistrationstatus-values)|Registration status of the registrant. Read-only.  |
 |userId|String|The registrant's ID in Microsoft Entra ID. Only appears when the registrant is registered in Microsoft Entra ID.|
 
 ### virtualEventAttendeeRegistrationStatus values
@@ -48,12 +48,6 @@ Inherits from [entity](../resources/entity.md).
 | pendingApproval | Manual approval has been enabled and the attendee is pending approval from the organizer. |
 | rejectedByOrganizer | Manual approval has been enabled and the attendee is rejected by the organizer. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
-
-## Relationships
-
-| Relationship | Type | Description |
-| ------------ | ---- | ----------- |
-| sessions | [virtualEventSession](../resources/virtualeventsession.md)  collection | Sessions of the webinar.|
 
 ## JSON representation
 
