@@ -38,7 +38,7 @@ POST /employeeExperience/goals/exportJobs
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
+|Content-type|application/json. Required.|
 
 ## Request body
 In the request body, supply a JSON representation of the [goalsExportJob](../resources/goalsexportjob.md) object.
@@ -71,7 +71,7 @@ Once the pending job completes, you can create the [goalsExportJob](../resources
 ### Example 1: Status is "notStarted"
 
 #### Request
-The following is an example of a request.
+The following example shows the request.
 <!-- {
   "blockType": "request",
   "name": "create_goalsexportjob_from_1"
@@ -89,7 +89,7 @@ Content-Type: application/json
 
 
 #### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -113,7 +113,7 @@ Location: "https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs/
 ### Example 2: Status is "conflicting"
 
 #### Request
-The following is an example of a request.
+The following example shows the request.
 <!-- {
   "blockType": "request",
   "name": "create_goalsexportjob_from_2"
@@ -131,7 +131,7 @@ Content-Type: application/json
 
 
 #### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -164,7 +164,7 @@ Location: "https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs/
 ### Example 3:  When specified goalsOrganizationId doesn't exist
 
 #### Request
-The following is an example of a request.
+The following example shows the request.
 <!-- {
   "blockType": "request",
   "name": "create_goalsexportjob_from_3"
@@ -182,7 +182,7 @@ Content-Type: application/json
 
 
 #### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -211,7 +211,7 @@ Content-type: application/json
 ### Example 4:  When invalid goalsOrganizationId is passed
 
 #### Request
-The following is an example of a request.
+The following example shows the request.
 <!-- {
   "blockType": "request",
   "name": "create_goalsexportjob_from_4"
@@ -229,7 +229,7 @@ Content-Type: application/json
 
 
 #### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
