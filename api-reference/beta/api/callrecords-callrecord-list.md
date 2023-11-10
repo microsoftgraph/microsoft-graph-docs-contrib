@@ -1,5 +1,5 @@
 ---
-title: "List callRecord"
+title: "List callRecords"
 description: "Get a list of callRecord objects and their properties."
 ms.localizationpriority: medium
 author: "mcm223"
@@ -7,13 +7,13 @@ ms.prod: "cloud-communications"
 doc_type: "apiPageType"
 ---
 
-# Get callRecord
+# List callRecords
 
 Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [callRecord](../resources/callrecords-callrecord.md) objects and their properties. The results can be optionally filtered using the `$filter` query parameter on `startDateTime` and participant `id`. Note that the listed call records will not include expandable attributes such as session, segment, or participants_v2. These attributes can be expanded using [Get callRecord](callrecords-callrecord-get.md) for a specific record.
+Get the list of [callRecord](../resources/callrecords-callrecord.md) objects and their properties. The results can be optionally filtered using the `$filter` query parameter on the **startDateTime** and participant **id** properties. Note that the listed call records don't include expandable relationships such as **sessions** and **participants_v2**. You can expand these relationships using [Get callRecord](callrecords-callrecord-get.md) for a specific record.
 
 > [!WARNING]
 > A call record is created after a call or meeting ends and remains available for **30 days**. This API doesn't return call records older than 30 days.
@@ -68,6 +68,8 @@ When a result set spans multiple pages, Microsoft Graph returns that page with a
 
 ### Example 1: List all records
 
+The following example shows how to get all [callRecord](../resources/callrecords-callrecord.md) objects.
+
 #### Request
 
 The following example shows a request.
@@ -89,7 +91,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.callRecords.callRecord"
+  "@odata.type": "Collection(microsoft.graph.callRecords.callRecord)"
 } -->
 
 ```http
@@ -166,6 +168,8 @@ Content-type: application/json
 
 ### Example 2: Filter by startDateTime
 
+The following example shows how to get [callRecord](../resources/callrecords-callrecord.md) objects filtered by the **startDateTime** property.
+
 #### Request
 
 The following example shows a request.
@@ -188,7 +192,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.callRecords.callRecord"
+  "@odata.type": "Collection(microsoft.graph.callRecords.callRecord)"
 } -->
 
 ```http
@@ -233,6 +237,8 @@ Content-type: application/json
 
 ### Example 3: Filter by participant ID
 
+The following example shows how to get [callRecord](../resources/callrecords-callrecord.md) objects filtered by the **id** property of a [participant](../resources/callrecords-participant.md).
+
 #### Request
 
 The following example shows a request.
@@ -255,7 +261,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.callRecords.callRecord"
+  "@odata.type": "Collection(microsoft.graph.callRecords.callRecord)"
 } -->
 
 ```http
