@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Models;
 
 var requestBody = new AppRoleAssignment
 {
@@ -15,6 +16,8 @@ var requestBody = new AppRoleAssignment
 	AppRoleId = Guid.Parse("3a84e31e-bffa-470f-b9e6-754a61e4dc63"),
 	ResourceId = Guid.Parse("a750f6cf-2319-464a-bcc3-456926736a91"),
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.ServicePrincipals["{servicePrincipal-id}"].AppRoleAssignments.PostAsync(requestBody);
 
 
