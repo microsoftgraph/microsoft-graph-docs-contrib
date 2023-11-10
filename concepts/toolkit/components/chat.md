@@ -18,23 +18,17 @@ author: sebastienlevert
 
 The chat component enables the user to have 1:1 or group conversations. This component doesn't support channel conversations. The component allows for rendering conversations and authoring new messages. All data is stored in Microsoft Teams.
 
-<!-- ## Example
+## Example
 
 The following example displays a conversation using the `mgt-chat` component.
 
-<iframe height="500" src="https://codepen.io/sebastienlevert/embed/gOqrqYO?default-tab=js%2Cresult&theme-id=light"></iframe>
-
-[Open this example on Codepen](https://codepen.io/sebastienlevert/pen/gOqrqYO) -->
+![A screenshot of a chat component](./images/mgt-chat.png)
 
 ## Properties
 
 | Attribute                         | Property         | Description                                                                                            |
 | --------------------------------- | ---------------- | ------------------------------------------------------------------------------------------------------ |
 | chat-id                           | chatId           | A string ID to set the 1:1 or group [conversation](/graph/api/resources/chat) to render. Required.     |
-
-```typescript
-<Chat chatId="19:25fdc88d202440b78e9229773cbb1713@thread.v2" />
-```
 
 ## CSS custom properties
 

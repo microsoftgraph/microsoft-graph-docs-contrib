@@ -23,6 +23,16 @@ This article describes the step-by-step process of using the Microsoft Graph Too
 > [!TIP]
 > You can also follow this tutorial as an interactive code tour. For details, see the [GitHub repo with the starter project](https://github.com/microsoftgraph/mgt-react-codetour).
 
+::: zone pivot="mgt-react"
+> [!TIP]
+> You can also download a starter template to kickstart your journey. This template will ensure the right set of dependencies, etc. To continue, download the [GitHub starter project for `mgt-react`](https://pnp.github.io/download-partial/?url=https://github.com/pnp/mgt-samples/tree/main/samples/starters/mgt-react-starter). Follow the README instructions and then continue with [Load data from Microsoft 365](#load-data-from-microsoft-365)
+::: zone-end
+
+::: zone pivot="mgt-react-chat"
+> [!TIP]
+> You can also download a starter template to kickstart your journey. This template will ensure the right set of dependencies, etc. To continue, download the [GitHub starter project for `mgt-react` and `mgt-chat`](https://pnp.github.io/download-partial/?url=https://github.com/pnp/mgt-samples/tree/main/samples/starters/mgt-react-chat-starter). Follow the README instructions and then continue with [Load data from Microsoft 365](#load-data-from-microsoft-365)
+::: zone-end
+
 ## Prerequisites
 
 To follow the steps in this article, you need a Microsoft 365 development environment and a few tools. For details, see [getting started](./overview.md).
