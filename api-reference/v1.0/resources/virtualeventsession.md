@@ -47,7 +47,6 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.virtualEventSession",
-  "baseType": "microsoft.graph.onlineMeetingBase",
   "openType": false
 }
 -->
