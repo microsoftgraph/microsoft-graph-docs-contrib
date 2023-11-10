@@ -37,23 +37,23 @@ For more information, see the [monitoring](devicemanagement-monitoring.md) resou
 |displayName|String|The display name of the rule.|
 |enabled|Boolean|The status of the rule that indicates whether the rule is enabled or disabled. If `true`, the rule is enabled; otherwise, the rule is disabled.|
 |id|String|The unique identifier for the alert rule. Inherited from [entity](../resources/entity.md).|
-|isSystemRule|Boolean|Indicates whether the rule is a system rule. If `true`, the rule is a system rule; otherwise, the rule is a custom defined rule and can be edited. System rules are built-in and only a few properties can be edited.|
+|isSystemRule|Boolean|Indicates whether the rule is a system rule. If `true`, the rule is a system rule; otherwise, the rule is a custom-defined rule and can be edited. System rules are built in and only a few properties can be edited.|
 |notificationChannels|[microsoft.graph.deviceManagement.notificationChannel](../resources/devicemanagement-notificationchannel.md) collection|The notification channels of the rule selected by the user.|
 |severity|[microsoft.graph.deviceManagement.ruleSeverityType](#ruleseveritytype-values)|The severity of the rule. The possible values are: `unknown`, `informational`, `warning`, `critical`, `unknownFutureValue`.|
-|threshold|[microsoft.graph.deviceManagement.ruleThreshold](../resources/devicemanagement-rulethreshold.md)|The conditions to send alerts. For example, send alert when provisioning has failed for greater than or equal to 6 Cloud PCs. This property is deprecated. Should use conditions instead.|
-|conditions|[microsoft.graph.deviceManagement.ruleCondition](../resources/devicemanagement-rulecondition.md) collection|he conditions of the rule. Conditions are used to determine whether alerts should be send or not. For example, send alert when provisioning has failed for greater than or equal to 6 Cloud PCs.|
+|threshold|[microsoft.graph.deviceManagement.ruleThreshold](../resources/devicemanagement-rulethreshold.md)|The conditions that determine when to send alerts. For example, you can configure a condition to send an alert when provisioning fails for six or more Cloud PCs. This property is deprecated. Use conditions instead.|
+|conditions|[microsoft.graph.deviceManagement.ruleCondition](../resources/devicemanagement-rulecondition.md) collection|The conditions that determine when to send alerts. For example, you can configure a condition to send an alert when provisioning fails for six or more Cloud PCs.|
 
 ### alertRuleTemplate values
 
 |Member|Description|
 |:---|:---|
-|cloudPcProvisionScenario|Indicates that the alert rule was triggered for an issue with the Cloud PC provisioning. For a system rule, the alert rule was triggered for a Cloud PC provisioning failure.|
-|cloudPcImageUploadScenario|Indicates that the alert rule was triggered for an issue with the process to upload the Cloud PC image. For a system rule, the alert rule was triggered for a failure to upload the Cloud PC image.|
-|cloudPcOnPremiseNetworkConnectionCheckScenario|Indicates that the alert rule was triggered for an issue with the on-premises network connection check. For a system rule, the alert rule was triggered for a failure with the on-premises network connection.|
+|cloudPcProvisionScenario|The alert rule was triggered for an issue with the Cloud PC provisioning. For a system rule, the alert rule was triggered for a Cloud PC provisioning failure.|
+|cloudPcImageUploadScenario|The alert rule was triggered for an issue with the process to upload the Cloud PC image. For a system rule, the alert rule was triggered for a failure to upload the Cloud PC image.|
+|cloudPcOnPremiseNetworkConnectionCheckScenario|The alert rule was triggered for an issue with the on-premises network connection check. For a system rule, the alert rule was triggered for a failure with the on-premises network connection.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
-|cloudPcInGracePeriodScenario |Indicates that the alert rule was triggered when the Cloud PC entered the grace period.|
-|cloudPcFrontlineInsufficientLicensesScenario| Indicates that the alert rule was triggered for the Fronline Cloud PCs where Cloud PC connections has reached max concurrency limit.|
-|cloudPcInaccessibleScenario| Indicates that the alert rule was triggered when Cloud PCs could not connect due to host health failure, connection errors, zone outage, under provisioning/restoring device status.|
+|cloudPcInGracePeriodScenario |The alert rule was triggered when the Cloud PC entered the grace period.|
+|cloudPcFrontlineInsufficientLicensesScenario| The alert rule was triggered for the Frontline Cloud PCs where more concurrent Cloud PC connections were active than the concurrency limit allows.|
+|cloudPcInaccessibleScenario| The alert rule was triggered when Cloud PCs couldn't connect due to host health failure, connection errors, or a zone outage. Alternatively, because they were under provisioning or restoring device status.|
 
 ### ruleSeverityType values
 
@@ -71,7 +71,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
