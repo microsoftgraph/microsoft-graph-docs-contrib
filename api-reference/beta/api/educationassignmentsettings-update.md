@@ -277,6 +277,7 @@ Content-type: application/json
     ]
 }
 ```
+**Note:** The purpose of the comments in the Request Body is to clarify each operation.
 
 # [C#](#tab/csharp)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
