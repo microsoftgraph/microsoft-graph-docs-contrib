@@ -13,13 +13,11 @@ Namespace: microsoft.graph
 
 Represents a session in a [virtualEvent](../resources/virtualevent.md)
 
-Inherits from [onlineMeetingBase](../resources/onlinemeetingbase.md).
-
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List virtualEventSessions](../api/virtualeventsession-list.md)|[virtualEventSession](../resources/virtualeventsession.md) collection|Get a list of all [virtualEventSession](../resources/virtualeventsession.md) objects under a virtual event.|
+|[List virtualEventSessions](../api/virtualevent-list-sessions.md)|[virtualEventSession](../resources/virtualeventsession.md) collection|Get a list of all [virtualEventSession](../resources/virtualeventsession.md) objects under a virtual event.|
 |[Get virtualEventSession](../api/virtualeventsession-get.md)|[virtualEventSession](../resources/virtualeventsession.md)|Read the properties and relationships of a [virtualEventSession](../resources/virtualeventsession.md) object.|
 
 ## Properties
