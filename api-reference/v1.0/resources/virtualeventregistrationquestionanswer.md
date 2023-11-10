@@ -1,9 +1,9 @@
 ---
 title: "virtualEventRegistrationQuestionAnswer resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Information about registration question answer of a virtual event."
+author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -11,18 +11,18 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+Represents the answer(s) of a [virtualEventRegistrationQuestion](../resources/virtualeventregistrationquestion.md).
 
-
-**TODO: Add Description**
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|booleanValue|Boolean|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|multiChoiceValues|String collection|**TODO: Add Description**|
-|questionId|String|**TODO: Add Description**|
-|value|String|**TODO: Add Description**|
+|booleanValue|Boolean|Boolean answer of the [virtualEventRegistrationQuestion](../resources/virtualeventregistrationquestion.md). Only appears when **answerInputType** is `boolean`. |
+|displayName|String|Display name of the registration question.|
+|multiChoiceValues|String collection|Collection of text answer of the [virtualEventRegistrationQuestion](../resources/virtualeventregistrationquestion.md). Only appears when **answerInputType** is `multiChoice`.|
+|questionId|String|**id** of the [virtualEventRegistrationQuestion](../resources/virtualeventregistrationquestion.md).|
+|value|String|Text answer of the [virtualEventRegistrationQuestion](../resources/virtualeventregistrationquestion.md). Appears when **answerInputType** is `text`, `multilineText` or `singleChoice`.|
 
 ## Relationships
 None.
