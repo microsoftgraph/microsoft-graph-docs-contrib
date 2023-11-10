@@ -55,7 +55,7 @@ POST /deviceManagement/monitoring/alertRules
 |notificationChannels|[microsoft.graph.deviceManagement.notificationChannel](../resources/devicemanagement-notificationchannel.md) collection|The notification channels of the rule selected by the user.|
 |severity|microsoft.graph.deviceManagement.ruleSeverityType|The severity of the rule. The possible values are: `unknown`, `informational`, `warning`, `critical`, `unknownFutureValue`.|
 |threshold|[microsoft.graph.deviceManagement.ruleThreshold](../resources/devicemanagement-rulethreshold.md)|The threshold of the rule. This property is deprecated. Use `conditions` instead. |
-|conditions|[microsoft.graph.deviceManagement.ruleConcition](../resources/devicemanagement-rulecondition.md) collection|The conditions of the rule. Conditions are used to determine whether alerts should be sent or not. For example, you can set a condition so that an alert is sent when six or more Cloud PCs fail to provision.|
+|conditions|[microsoft.graph.deviceManagement.ruleConcition](../resources/devicemanagement-rulecondition.md) collection|The conditions of the rule. Conditions determine when to send an alert. For example, you can set a condition so that an alert is sent when six or more Cloud PCs fail to provision.|
 
 ## Response
 
