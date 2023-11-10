@@ -66,11 +66,11 @@ Now you can reference all the components on the page that you're using:
 
 ### Packages
 
-Microsoft Graph Toolkit is made up of several NPM packages, allowing you to only include the code that you need for your applications.
+Microsoft Graph Toolkit is made up of several packages, allowing you to only include the code that you need for your applications.
 
 <b>@microsoft/mgt-element</b>
 
-The `@microsoft/mgt-element` is the core package that contains only the base classes used for building components and providers. This package exposes all the necessary classes and interfaces that you need to build your own components, and exports the [IProvider interface and SimpleProvider class](../providers/custom.md) for building custom providers.
+The `@microsoft/mgt-element` is the core package that contains only the base classes used for building components and providers. This package exposes all the necessary classes and interfaces that you need to build your own components, and exports the [`IProvider` interface and SimpleProvider class](../providers/custom.md) for building custom providers.
 
 <b>@microsoft/mgt-components</b>
 
@@ -106,7 +106,7 @@ The <code>[@microsoft/mgt-chat](./mgt-react.md)</code> package contains all the 
 
 <b>@microsoft/mgt-spfx</b>
 
-The <code>[@microsoft/mgt-spfx](./mgt-spfx.md)</code> package contains a SharePoint Framework library that's required to use Microsoft Graph Toolkit in SharePoint Framework solutions.
+The <code>[@microsoft/mgt-spfx](./mgt-spfx.md)</code> package contains a SharePoint Framework library to use Microsoft Graph Toolkit in SharePoint Framework solutions.
 
 <b>@microsoft/mgt-spfx-utils</b>
 
