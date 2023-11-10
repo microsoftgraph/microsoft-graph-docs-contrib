@@ -2297,6 +2297,56 @@
       "CreatedDateTime": "2023-07-26T00:00:00.000Z",
       "WorkloadArea": "Calendar",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4b4fc99c-551f-43ad-ba3d-e3390eaad756",
+          "ApiChange": "Property",
+          "ChangedApiName": "includeResourceData",
+          "ChangeType": "Change",
+          "Description": "Updated the Outlook [contact](https://learn.microsoft.com/en-us/graph/api/resources/contact), [event](https://learn.microsoft.com/en-us/graph/api/resources/event), and [message](https://learn.microsoft.com/en-us/graph/api/resources/message) resources to enable change notifications to include resource data when the **includeResourceData** property of the [subscription](https://learn.microsoft.com/en-us/graph/api/resources/subscription) resource is set to `true`.",
+          "Target": "subscription"
+        },
+        {
+          "Id": "4b4fc99c-551f-43ad-ba3d-e3390eaad756",
+          "ApiChange": "Property",
+          "ChangedApiName": "encryptionCertificate",
+          "ChangeType": "Change",
+          "Description": "Updated the Outlook [contact](https://learn.microsoft.com/en-us/graph/api/resources/contact), [event](https://learn.microsoft.com/en-us/graph/api/resources/event), and [message](https://learn.microsoft.com/en-us/graph/api/resources/message) resources to enable change notifications to include resource data when the **encryptionCertificate** property of the [subscription](https://learn.microsoft.com/en-us/graph/api/resources/subscription) resource is set with a certificate with a public key that enables encrypting and including resource data as part of a change notification.",
+          "Target": "subscription"
+        },
+        {
+          "Id": "4b4fc99c-551f-43ad-ba3d-e3390eaad756",
+          "ApiChange": "Property",
+          "ChangedApiName": "encryptionCertificateId",
+          "ChangeType": "Change",
+          "Description": "Updated the Outlook [contact](https://learn.microsoft.com/en-us/graph/api/resources/contact), [event](https://learn.microsoft.com/en-us/graph/api/resources/event), and [message](https://learn.microsoft.com/en-us/graph/api/resources/message) resources to enable change notifications to include resource data when the **encryptionCertificateId** property of the [subscription](https://learn.microsoft.com/en-us/graph/api/resources/subscription) is set to allow an app to identify the appropriate certificate to decrypt any resource data in a change notification.",
+          "Target": "subscription"
+        },
+        {
+          "Id": "4b4fc99c-551f-43ad-ba3d-e3390eaad756",
+          "ApiChange": "Property",
+          "ChangedApiName": "encryptedContent",
+          "ChangeType": "Change",
+          "Description": "For subscriptions to changes in Outlook [contact](https://learn.microsoft.com/en-us/graph/api/resources/contact), [event](https://learn.microsoft.com/en-us/graph/api/resources/event), or [message](https://learn.microsoft.com/en-us/graph/api/resources/message) resources that include resource data, the **encryptedContent** property of changeNotification contains the encrypted data of the changed resource and related information to decrypt it.",
+          "Target": "subscription"
+        },
+        {
+          "Id": "4b4fc99c-551f-43ad-ba3d-e3390eaad756",
+          "ApiChange": "Property",
+          "ChangedApiName": "resourceData",
+          "ChangeType": "Change",
+          "Description": "For subscriptions to changes in Outlook [contact](https://learn.microsoft.com/en-us/graph/api/resources/contact), [event](https://learn.microsoft.com/en-us/graph/api/resources/event), or [message](https://learn.microsoft.com/en-us/graph/api/resources/message) resources that include resource data, the **resourceData** property of changeNotification identifies the changed resource.",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "4b4fc99c-551f-43ad-ba3d-e3390eaad756",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-11-09T00:00:00.000Z",
+      "WorkloadArea": "Change notifications",
+      "SubArea": ""
     }
   ]
 }
