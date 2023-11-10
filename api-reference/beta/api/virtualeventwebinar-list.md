@@ -46,7 +46,7 @@ GET /solutions/virtualEvents/webinars
 
 This method supports the `$count` [OData query parameter](/graph/query-parameters) to help customize the response. If you use `?$count=true` in the request URL, the response contains a root level property that denotes the total number of the resource, for example, `"@odata.count": 6`.
 
-Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Microsoft Entra ID objects](/graph/aad-advanced-queries).
+Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
 ## Request headers
 
