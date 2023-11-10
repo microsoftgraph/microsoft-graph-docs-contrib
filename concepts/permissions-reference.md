@@ -6071,6 +6071,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### VirtualEvent.ReadWrite
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | d38d189c-e29b-4344-8b3b-829bfa81380b 
+| DisplayText | - | Read and write your virtual events 
+| Description | - | Allows the app to read and write virtual events for you 
+| AdminConsentRequired | - | Yes 
+
+---
+
 ### VirtualEvent.Read.All
 
 | Category | Application | Delegated |

@@ -824,6 +824,7 @@ ms.date: 09/08/2023
 | VirtualAppointment.ReadWrite                            | Delegated   | 2ccc2926-a528-4b17-b8bb-860eed29d64c |
 | VirtualAppointment.ReadWrite.All                        | Application | bf46a256-f47d-448f-ab78-f226fff08d40 |
 | VirtualEvent.Read                                       | Delegated   | 6b616635-ae58-433a-a918-8c45e4f304dc |
+| VirtualEvent.ReadWrite                                  | Delegated   | d38d189c-e29b-4344-8b3b-829bfa81380b |
 | VirtualEvent.Read.All                                   | Application | 1dccb351-c4e4-4e09-a8d1-7a9ecbf027cc |
 | WindowsUpdates.ReadWrite.All                            | Application | 7dd1be58-6e76-4401-bf8d-31d1e8180d5b |
 | WindowsUpdates.ReadWrite.All                            | Delegated   | 11776c0c-6138-4db3-a668-ee621bea2555 |
