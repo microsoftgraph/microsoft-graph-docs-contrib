@@ -9003,14 +9003,14 @@ items:
                         href: resources/virtualeventregistration.md
                         items:
                           - name: List
-                            href: api/virtualeventregistration-list.md
+                            href: api/virtualeventwebinar-list-registrations.md
                           - name: Get
                             href: api/virtualeventregistration-get.md
                   - name: Session
                     href: resources/virtualeventsession.md
                     items:
                       - name: List
-                        href: api/virtualeventsession-list.md
+                        href: api/virtualevent-list-sessions.md
                       - name: Get
                         href: api/virtualeventsession-get.md
           - name: Employee learning
