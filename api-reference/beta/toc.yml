@@ -17661,10 +17661,10 @@ items:
                   - name: Webinar
                     href: resources/virtualeventwebinar.md
                     items:
-                      - name: Get
-                        href: api/virtualeventwebinar-get.md
                       - name: List
                         href: api/virtualeventwebinar-list.md
+                      - name: Get
+                        href: api/virtualeventwebinar-get.md
                       - name: List by user role
                         href: api/virtualeventwebinar-getbyuserrole.md
                       - name: List by user ID/role
