@@ -10,9 +10,7 @@ doc_type: apiPageType
 # virtualEventWebinar: getByUserIdAndRole
 Namespace: microsoft.graph
 
-
-
-**TODO: Add Description**
+Get a [virtualEventWebinar](../resources/virtualeventwebinar.md) collection where the specified user is either the organizer or a coorganizer.
 
 ## Permissions
 

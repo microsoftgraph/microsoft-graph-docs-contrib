@@ -37,22 +37,6 @@
         {
           "Id": "c998aea4-1a72-4941-8c3f-0ce4973b30fd",
           "ApiChange": "Resource",
-          "ChangedApiName": "onlineMeetingBase",
-          "ChangeType": "Addition",
-          "Description": "Added the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-1.0) resource",
-          "Target": "onlineMeetingBase"
-        },
-        {
-          "Id": "c998aea4-1a72-4941-8c3f-0ce4973b30fd",
-          "ApiChange": "Resource",
-          "ChangedApiName": "solutionsRoot",
-          "ChangeType": "Addition",
-          "Description": "Added the [solutionsRoot](https://learn.microsoft.com/en-us/graph/api/resources/solutionsRoot?view=graph-rest-1.0) resource",
-          "Target": "solutionsRoot"
-        },
-        {
-          "Id": "c998aea4-1a72-4941-8c3f-0ce4973b30fd",
-          "ApiChange": "Resource",
           "ChangedApiName": "virtualEvent",
           "ChangeType": "Addition",
           "Description": "Added the [virtualEvent](https://learn.microsoft.com/en-us/graph/api/resources/virtualEvent?view=graph-rest-1.0) resource",
@@ -77,14 +61,6 @@
         {
           "Id": "c998aea4-1a72-4941-8c3f-0ce4973b30fd",
           "ApiChange": "Resource",
-          "ChangedApiName": "virtualEventsRoot",
-          "ChangeType": "Addition",
-          "Description": "Added the [virtualEventsRoot](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventsRoot?view=graph-rest-1.0) resource",
-          "Target": "virtualEventsRoot"
-        },
-        {
-          "Id": "c998aea4-1a72-4941-8c3f-0ce4973b30fd",
-          "ApiChange": "Resource",
           "ChangedApiName": "virtualEventWebinar",
           "ChangeType": "Addition",
           "Description": "Added the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventWebinar?view=graph-rest-1.0) resource",
@@ -105,14 +81,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [getByUserRole](https://learn.microsoft.com/en-us/graph/api/virtualEventWebinar?view=graph-rest-1.0) method to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/virtualEventWebinar?view=graph-rest-1.0) resource.",
           "Target": "virtualEventWebinar"
-        },
-        {
-          "Id": "c998aea4-1a72-4941-8c3f-0ce4973b30fd",
-          "ApiChange": "Singleton",
-          "ChangedApiName": "solutions",
-          "ChangeType": "Addition",
-          "Description": "Added the [solutions](https://learn.microsoft.com/en-us/?view=graph-rest-1.0) resource",
-          "Target": "defaultContainer"
         }
       ],
       "Id": "c998aea4-1a72-4941-8c3f-0ce4973b30fd",
