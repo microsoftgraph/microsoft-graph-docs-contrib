@@ -1,6 +1,6 @@
 ---
 title: "List virtualEventWebinars"
-description: "Get a list of all virtualEventWebinar objects."
+description: "Get the list of all virtualEventWebinar objects created in a tenant."
 author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,9 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of all [virtualEventWebinar](../resources/virtualeventwebinar.md) objects created in the tenant.
-
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+Get the list of all [virtualEventWebinar](../resources/virtualeventwebinar.md) objects created in a tenant.
 
 ## Permissions
 
@@ -29,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 > [!NOTE]
 >
-> When used with Application Permissions, this API returns only the events whose organizers have been assigned an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
+> When used with application permissions, this API returns only the events whose organizers have been assigned an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
 
 ## HTTP request
 
@@ -37,7 +35,8 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-To list all webinars of a tenant:
+
+To list all webinars of a tenant.
 
 ``` http
 GET /solutions/virtualEvents/webinars
@@ -45,9 +44,9 @@ GET /solutions/virtualEvents/webinars
 
 ## Optional query parameters
 
-This method supports the `$count` [OData query parameter](/graph/query-parameters) to help customize the response. When (`?$count=true`) is supplied, the response has a root level property denoting the total number of the resource (for example, "@odata.count": 6).
+This method supports the `$count` [OData query parameter](/graph/query-parameters) to help customize the response. If you use `?$count=true` in the request URL, the response contains a root level property that denotes the total number of the resource, for example, `"@odata.count": 6`.
 
-Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
+Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Microsoft Entra ID objects](/graph/aad-advanced-queries).
 
 ## Request headers
 
@@ -67,11 +66,20 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "list_virtualeventwebinars",
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/solutions/virtualEvents/webinars
+```
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
