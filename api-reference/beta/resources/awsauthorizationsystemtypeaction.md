@@ -56,7 +56,7 @@ The following JSON representation shows the resource type.
     "String"
   ],
   "severity": "String",
-  "actionType": "String",
+  "actionType": "String"
 }
 ```
 

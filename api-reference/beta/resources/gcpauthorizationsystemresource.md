@@ -54,7 +54,7 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)",
   "externalId": "String",
   "displayName": "String",
-  "resourceType": "String",
+  "resourceType": "String"
 }
 ```
 
