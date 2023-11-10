@@ -4405,3 +4405,35 @@ Possible values for user account types (group membership), per Windows definitio
 |canceled|
 |rejected|
 |unknownFutureValue|
+
+### permissionsDefinitionIdentityType values 
+
+|Member|
+|:---|
+|user|
+|role|
+|application|
+|managedIdentity|
+|serviceAccount|
+|unknownFutureValue|
+
+### permissionsRequestOccurrenceStatus values 
+
+|Member|
+|:---|
+|grantingFailed|
+|granted|
+|granting|
+|revoked|
+|revoking|
+|revokingFailed|
+|unknownFutureValue|
+
+### permissionsModificationCapability values 
+
+|Member|
+|:---|
+|enabled|
+|notConfigured|
+|noRecentDataCollected|
+|unknownFutureValue|

@@ -72,7 +72,7 @@ If successful, this method returns a `201 Created` response code and a [schedule
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_scheduledpermissionsrequest_azure_roles"
+  "name": "create_scheduledpermissionsrequest_aws_policy"
 }
 -->
 ``` http
