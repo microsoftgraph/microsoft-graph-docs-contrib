@@ -71,7 +71,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "cloudpc.getFrontlineCloudPcAccessState"
+  "name": "user_cloudpc.getFrontlineCloudPcAccessState"
 }
 -->
 ``` http
