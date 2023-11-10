@@ -3714,6 +3714,24 @@
         "CreatedDateTime": "2023-10-09T11:36:16.0017333Z",
         "WorkloadArea": "Device and app management",
         "SubArea": "Cloud PC"
+      },
+      {
+          "ChangeList": [
+          {
+            "Id": "992e35d4-a0ce-4504-90c0-1c86f7656221",
+            "ApiChange": "Method",
+            "ChangedApiName": "getFrontlineCloudPcAccessState",
+            "ChangeType": "Addition",
+            "Description": "Add getFrontlineCloudPcAccessState API for administrator",
+            "Target": "getshiftworkcloudpcaccessstate"
+          }
+        ],
+        "Id": "992e35d4-a0ce-4504-90c0-1c86f7656221",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2023-11-10T10:52:16.0013428Z",
+        "WorkloadArea": "Devices and apps",
+        "SubArea": "Cloud PC"
       }
     ]
 }
