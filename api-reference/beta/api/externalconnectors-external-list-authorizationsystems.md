@@ -83,10 +83,12 @@ Content-Type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems",
   "value": [
     {
-      "id": "{base64}",
+      "@odata.type": "#microsoft.graph.awsAuthorizationSystem",
+      "id": "Mzc3NTk2MTMxNzc0",
       "authorizationSystemId": "377596131774",
       "authorizationSystemName": "staging",
       "authorizationSystemType": "AWS",
+      "dataCollectionInfo@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems('Mzc3NTk2MTMxNzc0')/microsoft.graph.awsAuthorizationSystem/dataCollectionInfo/$entity",
       "dataCollectionInfo": {
         "entitlements": {
           "@odata.type": "microsoft.graph.entitlementsDataCollection",
@@ -97,10 +99,12 @@ Content-Type: application/json
       }
     },
     {
-      "id": "{base64}",
+      "@odata.type": "#microsoft.graph.awsAuthorizationSystem",
+      "id": "OTU2OTg3ODg3NzM1",
       "authorizationSystemId": "956987887735",
       "authorizationSystemName": "development",
       "authorizationSystemType": "AWS",
+      "dataCollectionInfo@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems('OTU2OTg3ODg3NzM1')/microsoft.graph.awsAuthorizationSystem/dataCollectionInfo/$entity",
       "dataCollectionInfo": {
         "entitlements": {
           "@odata.type": "microsoft.graph.noEntitlementsDataCollection"
@@ -108,10 +112,12 @@ Content-Type: application/json
       }
     },
     {
-      "id": "{base64}",
+      "@odata.type": "#microsoft.graph.azureAuthorizationSystem",
+      "id": "NTc1N2Y5NzAtYTcwMS00YTJkLThjZGItOTdjODU4MjE2MDg0",
       "authorizationSystemId": "5757f970-a701-4a2d-8cdb-97c858216084",
       "authorizationSystemName": "Microsoft Azure Sponsorship 2",
       "authorizationSystemType": "AZURE",
+      "dataCollectionInfo@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems('NTc1N2Y5NzAtYTcwMS00YTJkLThjZGItOTdjODU4MjE2MDg0')/microsoft.graph.azureAuthorizationSystem/dataCollectionInfo/$entity",
       "dataCollectionInfo": {
         "entitlements": {
           "@odata.type": "microsoft.graph.entitlementsDataCollection",
@@ -121,12 +127,13 @@ Content-Type: application/json
         }
       }
     },
-    . // Remaining Authorization Systems (96)
     {
-      "id": "{base64}",
+      "@odata.type": "#microsoft.graph.gcpAuthorizationSystem",
+      "id": "Y2FyYmlkZS1ib25zYWktMjA1MDE3",
       "authorizationSystemId": "carbide-bonsai-205017",
       "authorizationSystemName": "ck-staging",
       "authorizationSystemType": "GCP",
+      "dataCollectionInfo@odata.context": "https://canary.graph.microsoft.com/beta/$metadata#external/authorizationSystems('Y2FyYmlkZS1ib25zYWktMjA1MDE3')/microsoft.graph.gcpAuthorizationSystem/dataCollectionInfo/$entity",
       "dataCollectionInfo": {
         "entitlements": {
           "@odata.type": "microsoft.graph.entitlementsDataCollection",
@@ -172,7 +179,7 @@ Content-Type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/$entity",  
   "value": [  
     {  
-      "odata.type": "#microsoft.graph.awsAuthorizationSystem"  
+      "@odata.type": "#microsoft.graph.awsAuthorizationSystem"  
       "id": "OTU2OTg3ODg3NzM1",  
       "authorizationSystemId": "956987887735",  
       "authorizationSystemName": "development",  

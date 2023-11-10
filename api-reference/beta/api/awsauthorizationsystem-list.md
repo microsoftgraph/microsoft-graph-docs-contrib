@@ -91,7 +91,7 @@ Content-Type: application/json
           "@odata.type": "microsoft.graph.noEntitlementsDataCollection"
         }
       }
-    },
+    }
   ]
 }
 ```

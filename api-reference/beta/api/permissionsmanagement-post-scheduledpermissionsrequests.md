@@ -94,10 +94,10 @@ Content-Type: application/json
       "assignToRoleId": "arn:aws:aim::956987887735:role/saml-user"
     },
     "identityInfo": {
-      "externalId": "user@outlook.com",
+      "externalId": "chetan@contoso.com",
       "source": {
-        "@odata.type": "microsoft.graph.samlIdentitySource",
-      }
+        "@odata.type": "microsoft.graph.samlIdentitySource"
+      },
       "identityType": "user"
     }
   },
@@ -111,8 +111,8 @@ Content-Type: application/json
   "ticketInfo": {
     "ticketNumber": "INC1234567",
     "ticketSystem": "ServiceNow",
-    "ticketSubmitterIdentityId": "user@outlook.com",
-    "ticketApproverIdentityId": "usermanager@outlook.com"
+    "ticketSubmitterIdentityId": "chetan@contoso.com",
+    "ticketApproverIdentityId": "chetanmanager@contoso.com"
   }
 }
 ```
@@ -150,10 +150,10 @@ Content-Type: application/json
       "assignToRoleId": "arn:aws:aim::956987887735:role/saml-user"
     },
     "identityInfo": {
-      "externalId": "user@outlook.com",
+      "externalId": "chetan@contoso.com",
       "source": {
-        "@odata.type": "microsoft.graph.samlIdentitySource",
-      }
+        "@odata.type": "microsoft.graph.samlIdentitySource"
+      },
       "identityType": "user"
     }
  },
@@ -168,8 +168,8 @@ Content-Type: application/json
  "ticketInfo": {
     "ticketNumber": "INC1234567",
     "ticketSystem": "ServiceNow",
-    "ticketSubmitterIdentityId": "saketh.kollu@outlook.com",
-    "ticketApproverIdentityId": "sakethsmanager@outlook.com"
+    "ticketSubmitterIdentityId": "chetan@contoso.com",
+    "ticketApproverIdentityId": "chetanmanager@contoso.com"
  },
  "statusDetail": "submitted"
 }
@@ -207,7 +207,7 @@ Content-Type: application/json
       ]
     },
     "identityInfo": {
-      "externalId": "user@test.onmicrosoft.com",
+      "externalId": "chetan@contoso.com",
       "source": {
         "@odata.type": "microsoft.graph.edIdentitySource"
       },
@@ -226,8 +226,8 @@ Content-Type: application/json
   "ticketInfo": {
     "ticketNumber": "INC1234567",
     "ticketSystem": "ServiceNow",
-    "ticketSubmitterIdentityId": "user@outlook.com",
-    "ticketApproverIdentityId": "usermanager@outlook.com"
+    "ticketSubmitterIdentityId": "chetan@contoso.com",
+    "ticketApproverIdentityId": "chetanmanager@contoso.com"
   }
 }
 ```
@@ -267,7 +267,7 @@ Content-Type: application/json
       ]
     },
     "identityInfo": {
-      "externalId": "user@test.onmicrosoft.com",
+      "externalId": "chetan@contoso.com",
       "source": {
         "@odata.type": "microsoft.graph.edIdentitySource"
       },
@@ -286,8 +286,8 @@ Content-Type: application/json
   "ticketInfo": {
     "ticketNumber": "INC1234567",
     "ticketSystem": "ServiceNow",
-    "ticketSubmitterIdentityId": "user@outlook.com",
-    "ticketApproverIdentityId": "usermanager@outlook.com"
+    "ticketSubmitterIdentityId": "chetan@contoso.com",
+    "ticketApproverIdentityId": "chetanmanager@contoso.com"
   },
   "statusDetail": "submitted"
 }
@@ -320,7 +320,7 @@ Content-Type: application/json
       ]
     },
     "identityInfo": {
-      "externalId": "user@outlook.com",
+      "externalId": "chetan@contoso.com",
       "source": {
         "@odata.type": "microsoft.graph.edIdentitySource"
       },
@@ -338,8 +338,8 @@ Content-Type: application/json
   "ticketInfo": {
     "ticketNumber": "INC1234567",
     "ticketSystem": "ServiceNow",
-    "ticketSubmitterIdentityId": "user@outlook.com",
-    "ticketApproverIdentityId": "usermanager@outlook.com"
+    "ticketSubmitterIdentityId": "chetan@contoso.com",
+    "ticketApproverIdentityId": "chetanmanager@contoso.com"
   }
 }
 ```
@@ -374,7 +374,7 @@ Content-Type: application/json
       ]
     },
     "identityInfo": {
-      "externalId": "user@outlook.com",
+      "externalId": "chetan@contoso.com",
       "source": {
         "@odata.type": "microsoft.graph.edIdentitySource"
       },
@@ -393,8 +393,8 @@ Content-Type: application/json
   "ticketInfo": {
     "ticketNumber": "INC1234567",
     "ticketSystem": "ServiceNow",
-    "ticketSubmitterIdentityId": "user@outlook.com",
-    "ticketApproverIdentityId": "usermanager@outlook.com"
+    "ticketSubmitterIdentityId": "chetan@contoso.com",
+    "ticketApproverIdentityId": "chetanmanager@contoso.com"
   },
   "statusDetail": "submitted"
 }
