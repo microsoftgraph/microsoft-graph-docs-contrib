@@ -1,5 +1,5 @@
 ---
-title: "# List actions (for an AWS authorization system)"
+title: "List actions (for an AWS authorization system)"
 description: "List the awsAuthorizationSystemAction objects and their properties."
 author: "mrudulahg01"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# # List actions (for an AWS authorization system)
+# List actions (for an AWS authorization system)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

@@ -1,6 +1,6 @@
 ---
 title: "gsuiteSource resource type"
-description: "Used to represent an authorization system identity sourced from Google Workspace."
+description: "Represents an authorization system identity sourced from Google Workspace."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used to represent an authorization system identity sourced from Google Workspace.
+Represents an authorization system identity sourced from Google Workspace.
 
 Inherits from [authorizationSystemIdentitySource](../resources/authorizationsystemidentitysource.md).
 

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the service and resource type of a GCP resource. e.g. compute instance resource has service: compute and resourceType: instances.
+Represents the service and resource type of a GCP resource. For example, a compute instance resource has a `compute` **service** and `instances` **resourceType**.
 
 ## Properties
 |Property|Type|Description|

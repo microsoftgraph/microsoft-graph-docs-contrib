@@ -1,6 +1,6 @@
 ---
 title: "awsSource resource type"
-description: "Represents the source of the AWS identity."
+description: "Represents an authorization system identity sourced from AWS."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the source of the AWS identity.
+Represents an authorization system identity sourced from AWS.
 
 Inherits from [authorizationSystemIdentitySource](../resources/authorizationsystemidentitysource.md).
 
@@ -21,7 +21,7 @@ Inherits from [authorizationSystemIdentitySource](../resources/authorizationsyst
 |Property|Type|Description|
 |:---|:---|:---|
 |accountId|String|AWS account ID.|
-|identityProviderType|String|IdP source type. Inherited from [authorizationSystemIdentitySource](../resources/authorizationsystemidentitysource.md).|
+|identityProviderType|String|The identity provider source type. Inherited from [authorizationSystemIdentitySource](../resources/authorizationsystemidentitysource.md).|
 
 ## Relationships
 None.

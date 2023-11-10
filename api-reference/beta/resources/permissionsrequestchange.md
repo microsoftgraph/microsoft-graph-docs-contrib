@@ -1,6 +1,6 @@
 ---
 title: "permissionsRequestChange resource type"
-description: "Represents a change event of the scheduledPermissionsRequest entity."
+description: "Represents a change event relating to requests for permissions by identities."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a change event of the scheduledPermissionsRequest entity.
+Represents a change event relating to requests for permissions by identities.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -27,11 +27,11 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |activeOccurrenceStatus|permissionsRequestOccurrenceStatus|The status of the active occurence of the schedule if one exists. The possible values are: `grantingFailed`, `granted`, `granting`, `revoked`, `revoking`, `revokingFailed`, `unknownFutureValue`.|
-|id|String|Unique Id of the Permissions Request Change Event within EPM. Inherited from [entity](../resources/entity.md).|
-|modificationDateTime|DateTimeOffset|Time when the scheduledPermissionsRequest change occurred.|
-|permissionsRequestId|String|The Id of the scheduledPermissionsRequest.|
+|id|String|Unique ID of the permissions request change event within Permissions Management. Inherited from [entity](../resources/entity.md).|
+|modificationDateTime|DateTimeOffset|Time when the change occurred.|
+|permissionsRequestId|String|The ID of the **scheduledPermissionsRequest** object.|
 |statusDetail|statusDetail|The status that the request changed to. The possible values are: `submitted`, `approved`, `completed`, `canceled`, `rejected`, `unknownFutureValue`.|
-|ticketId|String|Represents the ticketing system Id.|
+|ticketId|String|Represents the ticketing system identifier.|
 
 ## Relationships
 None.

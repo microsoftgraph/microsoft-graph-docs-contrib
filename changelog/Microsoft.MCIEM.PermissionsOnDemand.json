@@ -3,6 +3,38 @@
     {
       "ChangeList": [
         {
+          "Id": "8d4936a8-a81d-4401-ac28-dada3ec42c6f",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "identityGovernance",
+          "ChangeType": "Addition",
+          "Description": "Added the **permissionsManagement** relationship to the [identityGovernance](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance?view=graph-rest-beta) resource.",
+          "Target": "identityGovernance"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "permissionsManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the [permissionsManagement](https://learn.microsoft.com/en-us/graph/api/resources/permissionsManagement?view=graph-rest-beta) resource.",
+          "Target": "permissionsManagement"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "permissionsRequestChange",
+          "ChangeType": "Addition",
+          "Description": "Added the [permissionsRequestChange](https://learn.microsoft.com/en-us/graph/api/resources/permissionsRequestChange?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "permissionsRequestChange"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "scheduledPermissionsRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the [scheduledPermissionsRequest](https://learn.microsoft.com/en-us/graph/api/resources/scheduledPermissionsRequest?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "scheduledPermissionsRequest"
+        },
+        {
           "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Resource",
           "ChangedApiName": "awsActionsPermissionsDefinitionAction",
@@ -209,30 +241,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [permissionsDefinitionGcpRole](https://learn.microsoft.com/en-us/graph/api/resources/permissionsDefinitionGcpRole?view=graph-rest-beta) resource.",
           "Target": "permissionsDefinitionGcpRole"
-        },
-        {
-          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
-          "ApiChange": "Resource",
-          "ChangedApiName": "permissionsManagement",
-          "ChangeType": "Addition",
-          "Description": "Added the [permissionsManagement](https://learn.microsoft.com/en-us/graph/api/resources/permissionsManagement?view=graph-rest-beta) resource.",
-          "Target": "permissionsManagement"
-        },
-        {
-          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
-          "ApiChange": "Resource",
-          "ChangedApiName": "permissionsRequestChange",
-          "ChangeType": "Addition",
-          "Description": "Added the [permissionsRequestChange](https://learn.microsoft.com/en-us/graph/api/resources/permissionsRequestChange?view=graph-rest-beta) resource.",
-          "Target": "permissionsRequestChange"
-        },
-        {
-          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
-          "ApiChange": "Resource",
-          "ChangedApiName": "scheduledPermissionsRequest",
-          "ChangeType": "Addition",
-          "Description": "Added the [scheduledPermissionsRequest](https://learn.microsoft.com/en-us/graph/api/resources/scheduledPermissionsRequest?view=graph-rest-beta) resource.",
-          "Target": "scheduledPermissionsRequest"
         },
         {
           "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",

@@ -1,6 +1,6 @@
 ---
 title: "permissionsDefinitionGcpRole resource type"
-description: "Represents permissions under a GCP role."
+description: "Represents permissions in a GCP role."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents permissions under a GCP role.
+Represents permissions in a GCP role.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -23,7 +23,7 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|List of identifiers. Inherited from [entity](../resources/entity.md).|
+|id|String|List of identifiers for the permissions. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 None.

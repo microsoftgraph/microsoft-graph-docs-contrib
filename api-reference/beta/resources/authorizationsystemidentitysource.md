@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents the source of an authorization system identity.
 
-The following resource types inherit from this rsource:
+The following resource types inherit from this resource:
 
 - [aadSource](../resources/aadsource.md)
 - [awsSource](../resources/awssource.md)

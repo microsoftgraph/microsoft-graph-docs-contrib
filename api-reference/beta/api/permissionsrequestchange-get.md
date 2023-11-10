@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /beta/identityGovernance/permissionsManagement/permissionsRequestChanges/{permissionsRequestChangeId}
+GET /identityGovernance/permissionsManagement/permissionsRequestChanges/{permissionsRequestChangeId}
 ```
 
 ## Request headers
@@ -50,8 +50,6 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a [permissionsRequestChange](../resources/permissionsrequestchange.md) object in the response body.
 
 ## Examples
-
-Retrieving a single changelog of a scheduled permissions request.
 
 ### Request
 The following example shows a request.

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An OpenType to represent AWS Conditions JSON that will be used in AWS Statements.
+An OpenType to represent AWS conditions JSON that's used in an [awsStatement](../resources/awsstatement.md).
 
 ## Properties
 None.

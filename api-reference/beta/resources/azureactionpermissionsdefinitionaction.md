@@ -24,7 +24,7 @@ The following resource types inherit from this resource:
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actions|String collection|List of actions.|
+|actions|String collection|List of actions relating to the Azure permission.|
 
 ## Relationships
 None.

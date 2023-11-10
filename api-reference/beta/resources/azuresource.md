@@ -1,6 +1,6 @@
 ---
 title: "azureSource resource type"
-description: "Represents the source of the Azure identity."
+description: "Represents an authorization system identity sourced from Microsoft Azure."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the source of the Azure identity.
+Represents an authorization system identity sourced from Microsoft Azure.
 
 Inherits from [authorizationSystemIdentitySource](../resources/authorizationsystemidentitysource.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|identityProviderType|String|IdP source type. Inherited from [authorizationSystemIdentitySource](../resources/authorizationsystemidentitysource.md).|
-|subscriptionId|String|Azure subscription id.|
+|identityProviderType|String|Identity provider source type. Inherited from [authorizationSystemIdentitySource](../resources/authorizationsystemidentitysource.md).|
+|subscriptionId|String|Azure subscription ID.|
 
 ## Relationships
 None.

@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /beta/identityGovernance/permissionsManagement/permissionsRequestChanges
+GET /identityGovernance/permissionsManagement/permissionsRequestChanges
 ```
 
 ## Optional query parameters
@@ -54,10 +54,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Retrieve a changelog of Scheduled Permissions Requests at time t.
-
 #### Request
-The following example shows a request.
+The following example shows a request to retrieve a changelog of a scheduled permissions requests at time `t`.
 <!-- {
   "blockType": "request",
   "name": "list_permissionsrequestchange"

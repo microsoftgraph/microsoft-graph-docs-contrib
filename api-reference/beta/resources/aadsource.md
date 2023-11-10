@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used to represent an authorization system identity sourced from Microsoft Entra ID.
+Represents an authorization system identity sourced from Microsoft Entra ID.
 
 Inherits from [authorizationSystemIdentitySource](../resources/authorizationsystemidentitysource.md).
 

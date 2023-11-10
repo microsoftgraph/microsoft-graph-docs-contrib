@@ -1,6 +1,6 @@
 ---
 title: "awsPolicyPermissionsDefinitionAction resource type"
-description: "Represents permissions for an AWS Policy."
+description: "Represents permissions for an AWS policy."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents permissions for an AWS Policy.
+Represents permissions for an AWS policy.
 
 Inherits from [awsPermissionsDefinitionAction](../resources/awspermissionsdefinitionaction.md).
 

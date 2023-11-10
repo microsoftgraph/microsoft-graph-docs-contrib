@@ -1,7 +1,39 @@
 ﻿{
   "changelog": [
     {
-      "ChangeList": [        
+      "ChangeList": [  
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "awsAssociatedIdentities",
+          "ChangeType": "Addition",
+          "Description": "Added the [awsAssociatedIdentities](https://learn.microsoft.com/en-us/graph/api/resources/awsAssociatedIdentities?view=graph-rest-beta) resource type and its associated methods.",
+          "Target": "awsAssociatedIdentities"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureAssociatedIdentities",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureAssociatedIdentities](https://learn.microsoft.com/en-us/graph/api/resources/azureAssociatedIdentities?view=graph-rest-beta) resource type and its associated methods.",
+          "Target": "azureAssociatedIdentities"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "gcpAssociatedIdentities",
+          "ChangeType": "Addition",
+          "Description": "Added the [gcpAssociatedIdentities](https://learn.microsoft.com/en-us/graph/api/resources/gcpAssociatedIdentities?view=graph-rest-beta) resource type and its associated methods.",
+          "Target": "gcpAssociatedIdentities"
+        },   
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureSource](https://learn.microsoft.com/en-us/graph/api/resources/azureSource?view=graph-rest-beta) resource type.",
+          "Target": "azureSource"
+        },   
         {
           "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Resource",
@@ -21,42 +53,10 @@
         {
           "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
           "ApiChange": "Resource",
-          "ChangedApiName": "awsAssociatedIdentities",
-          "ChangeType": "Addition",
-          "Description": "Added the [awsAssociatedIdentities](https://learn.microsoft.com/en-us/graph/api/resources/awsAssociatedIdentities?view=graph-rest-beta) resource type.",
-          "Target": "awsAssociatedIdentities"
-        },
-        {
-          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
-          "ApiChange": "Resource",
           "ChangedApiName": "awsSource",
           "ChangeType": "Addition",
           "Description": "Added the [awsSource](https://learn.microsoft.com/en-us/graph/api/resources/awsSource?view=graph-rest-beta) resource type.",
           "Target": "awsSource"
-        },
-        {
-          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
-          "ApiChange": "Resource",
-          "ChangedApiName": "azureAssociatedIdentities",
-          "ChangeType": "Addition",
-          "Description": "Added the [azureAssociatedIdentities](https://learn.microsoft.com/en-us/graph/api/resources/azureAssociatedIdentities?view=graph-rest-beta) resource type.",
-          "Target": "azureAssociatedIdentities"
-        },
-        {
-          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
-          "ApiChange": "Resource",
-          "ChangedApiName": "azureSource",
-          "ChangeType": "Addition",
-          "Description": "Added the [azureSource](https://learn.microsoft.com/en-us/graph/api/resources/azureSource?view=graph-rest-beta) resource type.",
-          "Target": "azureSource"
-        },
-        {
-          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
-          "ApiChange": "Resource",
-          "ChangedApiName": "gcpAssociatedIdentities",
-          "ChangeType": "Addition",
-          "Description": "Added the [gcpAssociatedIdentities](https://learn.microsoft.com/en-us/graph/api/resources/gcpAssociatedIdentities?view=graph-rest-beta) resource type.",
-          "Target": "gcpAssociatedIdentities"
         },
         {
           "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
@@ -119,7 +119,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "awsAuthorizationSystemResource",
           "ChangeType": "Addition",
-          "Description": "Added the [awsAuthorizationSystemResource](https://learn.microsoft.com/en-us/graph/api/resources/awsAuthorizationSystemResource?view=graph-rest-beta) resource.",
+          "Description": "Added the [awsAuthorizationSystemResource](https://learn.microsoft.com/en-us/graph/api/resources/awsAuthorizationSystemResource?view=graph-rest-beta) resource and its associated methods.",
           "Target": "awsAuthorizationSystemResource"
         },
         {
@@ -127,7 +127,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "awsAuthorizationSystemTypeAction",
           "ChangeType": "Addition",
-          "Description": "Added the [awsAuthorizationSystemTypeAction](https://learn.microsoft.com/en-us/graph/api/resources/awsAuthorizationSystemTypeAction?view=graph-rest-beta) resource.",
+          "Description": "Added the [awsAuthorizationSystemTypeAction](https://learn.microsoft.com/en-us/graph/api/resources/awsAuthorizationSystemTypeAction?view=graph-rest-beta) resource and its associated methods.",
           "Target": "awsAuthorizationSystemTypeAction"
         },
         {
@@ -199,7 +199,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "azureAuthorizationSystemResource",
           "ChangeType": "Addition",
-          "Description": "Added the [azureAuthorizationSystemResource](https://learn.microsoft.com/en-us/graph/api/resources/azureAuthorizationSystemResource?view=graph-rest-beta) resource.",
+          "Description": "Added the [azureAuthorizationSystemResource](https://learn.microsoft.com/en-us/graph/api/resources/azureAuthorizationSystemResource?view=graph-rest-beta) resource and its associated methods.",
           "Target": "azureAuthorizationSystemResource"
         },
         {
@@ -207,7 +207,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "azureAuthorizationSystemTypeAction",
           "ChangeType": "Addition",
-          "Description": "Added the [azureAuthorizationSystemTypeAction](https://learn.microsoft.com/en-us/graph/api/resources/azureAuthorizationSystemTypeAction?view=graph-rest-beta) resource.",
+          "Description": "Added the [azureAuthorizationSystemTypeAction](https://learn.microsoft.com/en-us/graph/api/resources/azureAuthorizationSystemTypeAction?view=graph-rest-beta) resource and its associated methods.",
           "Target": "azureAuthorizationSystemTypeAction"
         },
         {
@@ -215,7 +215,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "azureIdentity",
           "ChangeType": "Addition",
-          "Description": "Added the [azureIdentity](https://learn.microsoft.com/en-us/graph/api/resources/azureIdentity?view=graph-rest-beta) resource.",
+          "Description": "Added the [azureIdentity](https://learn.microsoft.com/en-us/graph/api/resources/azureIdentity?view=graph-rest-beta) resource and its associated methods.",
           "Target": "azureIdentity"
         },
         {
@@ -223,7 +223,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "azureManagedIdentity",
           "ChangeType": "Addition",
-          "Description": "Added the [azureManagedIdentity](https://learn.microsoft.com/en-us/graph/api/resources/azureManagedIdentity?view=graph-rest-beta) resource.",
+          "Description": "Added the [azureManagedIdentity](https://learn.microsoft.com/en-us/graph/api/resources/azureManagedIdentity?view=graph-rest-beta) resource and its associated methods.",
           "Target": "azureManagedIdentity"
         },
         {
@@ -231,7 +231,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "azureRoleDefinition",
           "ChangeType": "Addition",
-          "Description": "Added the [azureRoleDefinition](https://learn.microsoft.com/en-us/graph/api/resources/azureRoleDefinition?view=graph-rest-beta) resource.",
+          "Description": "Added the [azureRoleDefinition](https://learn.microsoft.com/en-us/graph/api/resources/azureRoleDefinition?view=graph-rest-beta) resource and its associated methods.",
           "Target": "azureRoleDefinition"
         },
         {
@@ -239,7 +239,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "azureServicePrincipal",
           "ChangeType": "Addition",
-          "Description": "Added the [azureServicePrincipal](https://learn.microsoft.com/en-us/graph/api/resources/azureServicePrincipal?view=graph-rest-beta) resource.",
+          "Description": "Added the [azureServicePrincipal](https://learn.microsoft.com/en-us/graph/api/resources/azureServicePrincipal?view=graph-rest-beta) resource and its associated methods.",
           "Target": "azureServicePrincipal"
         },
         {
@@ -247,7 +247,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "azureUser",
           "ChangeType": "Addition",
-          "Description": "Added the [azureUser](https://learn.microsoft.com/en-us/graph/api/resources/azureUser?view=graph-rest-beta) resource.",
+          "Description": "Added the [azureUser](https://learn.microsoft.com/en-us/graph/api/resources/azureUser?view=graph-rest-beta) resource and its associated methods.",
           "Target": "azureUser"
         },
         {
@@ -271,7 +271,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "gcpAuthorizationSystemResource",
           "ChangeType": "Addition",
-          "Description": "Added the [gcpAuthorizationSystemResource](https://learn.microsoft.com/en-us/graph/api/resources/gcpAuthorizationSystemResource?view=graph-rest-beta) resource.",
+          "Description": "Added the [gcpAuthorizationSystemResource](https://learn.microsoft.com/en-us/graph/api/resources/gcpAuthorizationSystemResource?view=graph-rest-beta) resource and its associated methods.",
           "Target": "gcpAuthorizationSystemResource"
         },
         {
@@ -279,7 +279,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "gcpAuthorizationSystemTypeAction",
           "ChangeType": "Addition",
-          "Description": "Added the [gcpAuthorizationSystemTypeAction](https://learn.microsoft.com/en-us/graph/api/resources/gcpAuthorizationSystemTypeAction?view=graph-rest-beta) resource.",
+          "Description": "Added the [gcpAuthorizationSystemTypeAction](https://learn.microsoft.com/en-us/graph/api/resources/gcpAuthorizationSystemTypeAction?view=graph-rest-beta) resource and its associated methods.",
           "Target": "gcpAuthorizationSystemTypeAction"
         },
         {
@@ -287,7 +287,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "gcpIdentity",
           "ChangeType": "Addition",
-          "Description": "Added the [gcpIdentity](https://learn.microsoft.com/en-us/graph/api/resources/gcpIdentity?view=graph-rest-beta) resource.",
+          "Description": "Added the [gcpIdentity](https://learn.microsoft.com/en-us/graph/api/resources/gcpIdentity?view=graph-rest-beta) resource and its associated methods.",
           "Target": "gcpIdentity"
         },
         {
@@ -303,7 +303,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "gcpServiceAccount",
           "ChangeType": "Addition",
-          "Description": "Added the [gcpServiceAccount](https://learn.microsoft.com/en-us/graph/api/resources/gcpServiceAccount?view=graph-rest-beta) resource.",
+          "Description": "Added the [gcpServiceAccount](https://learn.microsoft.com/en-us/graph/api/resources/gcpServiceAccount?view=graph-rest-beta) resource and its associated methods.",
           "Target": "gcpServiceAccount"
         },
         {
@@ -311,7 +311,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "gcpUser",
           "ChangeType": "Addition",
-          "Description": "Added the [gcpUser](https://learn.microsoft.com/en-us/graph/api/resources/gcpUser?view=graph-rest-beta) resource.",
+          "Description": "Added the [gcpUser](https://learn.microsoft.com/en-us/graph/api/resources/gcpUser?view=graph-rest-beta) resource and its associated methods.",
           "Target": "gcpUser"
         },
         {

@@ -1,6 +1,6 @@
 ---
 title: "edIdentitySource resource type"
-description: "Represents an permissionsDefinitionIdentitySource for a configured IDP."
+description: "Represents an permissionsDefinitionIdentitySource for a configured identity provider."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an permissionsDefinitionIdentitySource for a configured IDP.
+Represents an permissionsDefinitionIdentitySource for a configured identity provider.
 
 Inherits from [permissionsDefinitionIdentitySource](../resources/permissionsdefinitionidentitysource.md).
 
 ## Properties
-None
+None.
 
 ## Relationships
 None.

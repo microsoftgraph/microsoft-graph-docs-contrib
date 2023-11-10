@@ -14539,7 +14539,7 @@ items:
           - name: Multicloud permissions management 
             items:
             - name: Overview
-              href: /resources/permissions-management-api-overview.md
+              href: resources/permissions-management-api-overview.md
             - name: Authorization systems
               href: resources/authorizationsystem.md
               items:
@@ -14702,50 +14702,50 @@ items:
                         href: api/gcpassociatedidentities-list-serviceaccounts.md
                       - name: Get
                         href: api/gcpserviceaccount-get.md     
-                - name: GCP action
-                  href: resources/gcpauthorizationsystemtypeaction.md
-                  items:
-                  - name: List
-                    href: api/gcpauthorizationsystem-list-actions.md
-                  - name: Get 
-                    href: api/gcpauthorizationsystemtypeaction-get.md
-                - name: GCP resource
-                  href: resources/gcpauthorizationsystemresource.md
-                  items:
-                  - name: List
-                    href: api/gcpauthorizationsystem-list-resources.md
-                  - name: Get 
-                    href: api/gcpauthorizationsystemresource-get.md
-                - name: GCP role
-                  href: resources/gcprole.md
-                  items:
-                  - name: List
-                    href: api/gcpauthorizationsystem-list-roles.md
-                  - name: Get
-                    href: api/gcprole-get.md 
-                - name: GCP services
-                  href: resources/authorizationsystemtypeservice.md
-                  items:
-                  - name: List
-                    href: api/gcpauthorizationsystem-list-services.md
-                  - name: Get
-                    href: api/authorizationsystemtypeservice-get.md
+                  - name: GCP action
+                    href: resources/gcpauthorizationsystemtypeaction.md
+                    items:
+                    - name: List
+                      href: api/gcpauthorizationsystem-list-actions.md
+                    - name: Get 
+                      href: api/gcpauthorizationsystemtypeaction-get.md
+                  - name: GCP resource
+                    href: resources/gcpauthorizationsystemresource.md
+                    items:
+                    - name: List
+                      href: api/gcpauthorizationsystem-list-resources.md
+                    - name: Get 
+                      href: api/gcpauthorizationsystemresource-get.md
+                  - name: GCP role
+                    href: resources/gcprole.md
+                    items:
+                    - name: List
+                      href: api/gcpauthorizationsystem-list-roles.md
+                    - name: Get
+                      href: api/gcprole-get.md 
+                  - name: GCP services
+                    href: resources/authorizationsystemtypeservice.md
+                    items:
+                    - name: List
+                      href: api/gcpauthorizationsystem-list-services.md
+                    - name: Get
+                      href: api/authorizationsystemtypeservice-get.md
             - name: Permissions on demand
               items:
-              - name: Permissions request change
-                href: resources/permissionsrequestchange.md
-                items:
-                - name: List
-                  href: api/permissionsmanagement-list-permissionsrequestchanges.md
-                - name: Get
-                  href: api/permissionsrequestchange-get.md
               - name: Scheduled permissions request
                 href: resources/scheduledpermissionsrequest.md
                 items:
                 - name: Create
                   href: api/permissionsmanagement-post-scheduledpermissionsrequests.md
                 - name: Cancel all
-                  href: api/scheduledpermissionsrequest-cancelall.md    
+                  href: api/scheduledpermissionsrequest-cancelall.md  
+              - name: Permissions request change
+                href: resources/permissionsrequestchange.md
+                items:
+                - name: List
+                  href: api/permissionsmanagement-list-permissionsrequestchanges.md
+                - name: Get
+                  href: api/permissionsrequestchange-get.md  
       - name: Industry data ETL (preview)
         items:
           - name: Overview

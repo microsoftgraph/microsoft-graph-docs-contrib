@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /beta/identityGovernance/permissionsManagement/scheduledPermissionsRequests
+POST /identityGovernance/permissionsManagement/scheduledPermissionsRequests
 ```
 
 ## Request headers
@@ -48,7 +48,7 @@ You can specify the following properties when creating a **scheduledPermissionsR
 
 |Property|Type|Description|
 |:---|:---|:---|
-|requestedPermissions|[permissionsDefinition](../resources/permissionsdefinition.md)|Defines the permission request itself. Required.|
+|requestedPermissions|[permissionsDefinition](../resources/permissionsdefinition.md)|Defines the permission request itself. Required. <br/> You must specify the **@odata.type** property with the value of the **permissionDefinition** object type in the request body. For example `"@odata.type": "#microsoft.graph.awsPermissionsDefinition"`. |
 |notes|String|Additional notes to add to the request. Optional.|
 |justification|String|Request justification. Optional.|
 |createdDateTime|DateTimeOffset|Time when the scheduledPermissionsRequest was created. Required.|

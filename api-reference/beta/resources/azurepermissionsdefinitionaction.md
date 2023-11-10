@@ -1,6 +1,6 @@
 ---
 title: "azurePermissionsDefinitionAction resource type"
-description: "Represents actions and permissions for Azure."
+description: "This is an abstract type representing actions relating to permissions for an Azure resource."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is an abstract type.
+This is an abstract type representing actions relating to permissions for an Azure resource.
 
 Inherits from [permissionsDefinitionAction](../resources/permissionsdefinitionaction.md).
 

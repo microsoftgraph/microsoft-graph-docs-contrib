@@ -15,6 +15,12 @@ Namespace: microsoft.graph
 
 An abstract type that represents information about the permissions request, such as the authorization system, the identities making the request, and the actions for which the identities need the permissions.
 
+This resource type is inherited by the following objects:
+
+- [awsPermissionsDefinition](../resources/awspermissionsdefinition.md) resource type
+- [singleResourceAzurePermissionsDefinition](../resources/singleresourceazurepermissionsdefinition.md) resource type
+- [singleResourceGcpPermissionsDefinition](../resources/singleresourcegcppermissionsdefinition.md) resource type
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

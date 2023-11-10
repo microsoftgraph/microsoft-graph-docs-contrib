@@ -23,7 +23,7 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|List of identifiers. Inherited from [entity](../resources/entity.md).|
+|id|String|List of identifiers for the Azure permissions. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 None.

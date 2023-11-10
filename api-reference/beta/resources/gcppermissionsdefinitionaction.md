@@ -13,18 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is an abstract type.
+Represents permissions for GCP. This is an abstract type.
 
 Inherits from [permissionsDefinitionAction](../resources/permissionsdefinitionaction.md).  
 
 The following resource types inherit from this resource:  
 
 - [gcpActionPermissionsDefinitionAction](../resources/gcpActionPermissionsDefinitionAction.md) resource type  
-- [gcpRolePermissionsDefinitionAction](../resources/gcpRolePermissionsDefinitionAction.md) resource type
-
-The following resource types inherit from this resource:
-
-- [gcpActionPermissionsDefinitionAction](../resources/gcpActionPermissionsDefinitionAction.md) resource type
 - [gcpRolePermissionsDefinitionAction](../resources/gcpRolePermissionsDefinitionAction.md) resource type
 
 ## Properties

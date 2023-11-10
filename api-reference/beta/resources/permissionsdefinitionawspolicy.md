@@ -1,6 +1,6 @@
 ---
 title: "permissionsDefinitionAwsPolicy resource type"
-description: "Represents an AWS Policy."
+description: "Represents an AWS policy."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an AWS Policy.
+Represents an AWS policy.
 
 Inherits from [entity](../resources/entity.md).
 

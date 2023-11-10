@@ -27,7 +27,7 @@ Inherits from [permissionsDefinition](../resources/permissionsdefinition.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|identityInfo|[permissionsDefinitionAuthorizationSystemIdentity](../resources/permissionsdefinitionauthorizationsystemidentity.md)|Information relating to permissions defined for identities in the authorization system. Inherited from [microsoft.graph.permissionsDefinition](../resources/permissionsdefinition.md)|
+|identityInfo|[permissionsDefinitionAuthorizationSystemIdentity](../resources/permissionsdefinitionauthorizationsystemidentity.md)|Information relating to permissions defined for identities in the authorization system. Inherited from [permissionsDefinition](../resources/permissionsdefinition.md)|
 
 ## JSON representation
 The following JSON representation shows the resource type.
