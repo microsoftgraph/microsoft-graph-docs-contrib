@@ -64,13 +64,13 @@ If successful, this method returns a `201 Created` response code and a [schedule
 
 ## Examples
 
-### Example 1: AWS Policy Request
+### Example 1: AWS policy request
 
 #### Request
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_scheduledpermissionsrequest_from_"
+  "name": "create_scheduledpermissionsrequest_azure_roles"
 }
 -->
 ``` http
@@ -94,7 +94,7 @@ Content-Type: application/json
       "assignToRoleId": "arn:aws:aim::956987887735:role/saml-user"
     },
     "identityInfo": {
-      "externalId": "chetan@contoso.com",
+      "externalId": "alex@contoso.com",
       "source": {
         "@odata.type": "microsoft.graph.samlIdentitySource"
       },
@@ -111,8 +111,8 @@ Content-Type: application/json
   "ticketInfo": {
     "ticketNumber": "INC1234567",
     "ticketSystem": "ServiceNow",
-    "ticketSubmitterIdentityId": "chetan@contoso.com",
-    "ticketApproverIdentityId": "chetanmanager@contoso.com"
+    "ticketSubmitterIdentityId": "alex@contoso.com",
+    "ticketApproverIdentityId": "alexmanager@contoso.com"
   }
 }
 ```
@@ -150,7 +150,7 @@ Content-Type: application/json
       "assignToRoleId": "arn:aws:aim::956987887735:role/saml-user"
     },
     "identityInfo": {
-      "externalId": "chetan@contoso.com",
+      "externalId": "alex@contoso.com",
       "source": {
         "@odata.type": "microsoft.graph.samlIdentitySource"
       },
@@ -168,8 +168,8 @@ Content-Type: application/json
  "ticketInfo": {
     "ticketNumber": "INC1234567",
     "ticketSystem": "ServiceNow",
-    "ticketSubmitterIdentityId": "chetan@contoso.com",
-    "ticketApproverIdentityId": "chetanmanager@contoso.com"
+    "ticketSubmitterIdentityId": "alex@contoso.com",
+    "ticketApproverIdentityId": "alexmanager@contoso.com"
  },
  "statusDetail": "submitted"
 }
@@ -181,7 +181,7 @@ Content-Type: application/json
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_scheduledpermissionsrequest_from__"
+  "name": "create_scheduledpermissionsrequest_azure_roles"
 }
 -->
 ``` http
@@ -207,7 +207,7 @@ Content-Type: application/json
       ]
     },
     "identityInfo": {
-      "externalId": "chetan@contoso.com",
+      "externalId": "alex@contoso.com",
       "source": {
         "@odata.type": "microsoft.graph.edIdentitySource"
       },
@@ -226,8 +226,8 @@ Content-Type: application/json
   "ticketInfo": {
     "ticketNumber": "INC1234567",
     "ticketSystem": "ServiceNow",
-    "ticketSubmitterIdentityId": "chetan@contoso.com",
-    "ticketApproverIdentityId": "chetanmanager@contoso.com"
+    "ticketSubmitterIdentityId": "alex@contoso.com",
+    "ticketApproverIdentityId": "alexmanager@contoso.com"
   }
 }
 ```
@@ -267,7 +267,7 @@ Content-Type: application/json
       ]
     },
     "identityInfo": {
-      "externalId": "chetan@contoso.com",
+      "externalId": "alex@contoso.com",
       "source": {
         "@odata.type": "microsoft.graph.edIdentitySource"
       },
@@ -286,20 +286,20 @@ Content-Type: application/json
   "ticketInfo": {
     "ticketNumber": "INC1234567",
     "ticketSystem": "ServiceNow",
-    "ticketSubmitterIdentityId": "chetan@contoso.com",
-    "ticketApproverIdentityId": "chetanmanager@contoso.com"
+    "ticketSubmitterIdentityId": "alex@contoso.com",
+    "ticketApproverIdentityId": "alexmanager@contoso.com"
   },
   "statusDetail": "submitted"
 }
 ```
 
-### Example 3: GCP Actions Request
+### Example 3: GCP actions request
 
 #### Request
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_scheduledpermissionsrequest_from_____"
+  "name": "create_scheduledpermissionsrequest_from_gcp_actions"
 }
 -->
 ``` http
@@ -320,7 +320,7 @@ Content-Type: application/json
       ]
     },
     "identityInfo": {
-      "externalId": "chetan@contoso.com",
+      "externalId": "alex@contoso.com",
       "source": {
         "@odata.type": "microsoft.graph.edIdentitySource"
       },
@@ -338,8 +338,8 @@ Content-Type: application/json
   "ticketInfo": {
     "ticketNumber": "INC1234567",
     "ticketSystem": "ServiceNow",
-    "ticketSubmitterIdentityId": "chetan@contoso.com",
-    "ticketApproverIdentityId": "chetanmanager@contoso.com"
+    "ticketSubmitterIdentityId": "alex@contoso.com",
+    "ticketApproverIdentityId": "alexmanager@contoso.com"
   }
 }
 ```
@@ -374,7 +374,7 @@ Content-Type: application/json
       ]
     },
     "identityInfo": {
-      "externalId": "chetan@contoso.com",
+      "externalId": "alex@contoso.com",
       "source": {
         "@odata.type": "microsoft.graph.edIdentitySource"
       },
@@ -393,8 +393,8 @@ Content-Type: application/json
   "ticketInfo": {
     "ticketNumber": "INC1234567",
     "ticketSystem": "ServiceNow",
-    "ticketSubmitterIdentityId": "chetan@contoso.com",
-    "ticketApproverIdentityId": "chetanmanager@contoso.com"
+    "ticketSubmitterIdentityId": "alex@contoso.com",
+    "ticketApproverIdentityId": "alexmanager@contoso.com"
   },
   "statusDetail": "submitted"
 }

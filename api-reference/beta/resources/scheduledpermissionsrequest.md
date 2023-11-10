@@ -1,6 +1,6 @@
 ---
 title: "scheduledPermissionsRequest resource type"
-description: "Represents a request for permissions on resources in a target authorization system that an identity has made through Microsoft Entra Permissions Management, either directly or indirectly."
+description: "Represents a request for permissions on resources in a target authorization system that an identity makes through Microsoft Entra Permissions Management, either directly or indirectly."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a request for permissions on resources in a target authorization system that an identity has made through Microsoft Entra Permissions Management, either directly or indirectly. An authorized administrator can grant, reject, or cancel the request.
+Represents a request for permissions on resources in a target authorization system that an identity makes through Microsoft Entra Permissions Management, either directly or indirectly. An authorized administrator can grant, reject, or cancel the request.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -21,12 +21,12 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Create scheduledPermissionsRequest](../api/permissionsmanagement-post-scheduledpermissionsrequests.md)|[scheduledPermissionsRequest](../resources/scheduledpermissionsrequest.md)|Create a new [scheduledPermissionsRequest](../resources/scheduledpermissionsrequest.md) object.|
-|[Cancell scheduledPermissionsRequest](../api/scheduledpermissionsrequest-cancelall.md)|None|Cancels a [scheduledPermissionsRequest](../resources/scheduledpermissionsrequest.md).|
+|[Cancel scheduledPermissionsRequest](../api/scheduledpermissionsrequest-cancelall.md)|None|Cancels a [scheduledPermissionsRequest](../resources/scheduledpermissionsrequest.md).|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|The date and time when the identity created the request.|
+|createdDateTime|DateTimeOffset|Defines when the identity created the request.|
 |id|String|Unique identifier for the permissions request within Permissions Management. Inherited from [entity](../resources/entity.md).|
 |justification|String|The identity's justification for the request.|
 |notes|String|Additional context for the permissions request.|

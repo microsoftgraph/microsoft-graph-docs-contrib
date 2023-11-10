@@ -1,6 +1,6 @@
 ---
 title: "scheduledPermissionsRequest: cancelAll"
-description: "Allows a requestor or approver to cancel a scheduled permission request."
+description: "Cancel a scheduled permission request."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -12,16 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Allows a requestor or approver to cancel a scheduled permission request.
+Cancel a scheduled permission request. Either the requestor or an administrator can cancel a request.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -61,7 +61,6 @@ POST https://graph.microsoft.com/beta/permissionsManagement/scheduledPermissions
 
 ### Response
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
