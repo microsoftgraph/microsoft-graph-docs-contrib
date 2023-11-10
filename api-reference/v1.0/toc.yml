@@ -8957,14 +8957,6 @@ items:
                         items:
                           - name: List
                             href: api/attendancerecord-list.md
-                  - name: Call transcript
-                    items:
-                      - name: Call transcript
-                        href: resources/calltranscript.md
-                      - name: List transcripts
-                        href: api/onlinemeeting-list-transcripts.md
-                      - name: Get transcript
-                        href: api/calltranscript-get.md
                   - name: Call recording
                     items:
                       - name: Call recording
@@ -8973,6 +8965,14 @@ items:
                         href: api/onlinemeeting-list-recordings.md
                       - name: Get
                         href: api/callrecording-get.md
+                  - name: Call transcript
+                    items:
+                      - name: Call transcript
+                        href: resources/calltranscript.md
+                      - name: List transcripts
+                        href: api/onlinemeeting-list-transcripts.md
+                      - name: Get transcript
+                        href: api/calltranscript-get.md
                   - name: Online meeting
                     href: resources/onlinemeeting.md
                     items:
