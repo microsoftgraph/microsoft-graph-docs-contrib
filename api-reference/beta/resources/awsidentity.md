@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents AWS identities including access keys, EC2 instances, groups, lambda functions, roles, and users.
+Represents identities in AWS including access keys, EC2 instances, groups, lambda functions, roles, and users.
 
 Inherits from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).
 
@@ -29,21 +29,21 @@ The following resources inherit from this resource type:
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List AWS Identities](../api/awsassociatedidentities-list-all.md)|[awsIdentity](../resources/awsidentity.md)|Read the properties and relationships of an [awsIdentity](../resources/awsidentity.md) object.|
-|[Get AWS Identity](../api/awsidentity-get.md)|[awsIdentity](../resources/awsidentity.md)|Read the properties and relationships of an [awsIdentity](../resources/awsidentity.md) object.|
+|[List all (AWS identities)](../api/awsassociatedidentities-list-all.md)|[awsIdentity](../resources/awsidentity.md)|Read the properties and relationships of an [awsIdentity](../resources/awsidentity.md) object.|
+|[Get awsIdentity](../api/awsidentity-get.md)|[awsIdentity](../resources/awsidentity.md)|Read the properties and relationships of an [awsIdentity](../resources/awsidentity.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The name of the object. Supports `$filter` and (`eq`,`contains`). Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
-|externalId|String|The externally displayed ID of the object. Supports`$filter` and (`eq`,`contains`). Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
-|id|String|The base64 encoded identifier of externalId. Inherited from [entity](../resources/entity.md).|
+|displayName|String|The name of the object. Supports `$filter` (`eq`,`contains`). Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
+|externalId|String|The ID for the identity as defined by AWS. Supports`$filter` (`eq`,`contains`). Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
+|id|String|The ID for the identity in Permissions Management. Inherited from [entity](../resources/entity.md).|
 |source|[authorizationSystemIdentitySource](../resources/authorizationsystemidentitysource.md)|The source of the authorization system identity. Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|authorizationSystem|[authorizationSystem](../resources/authorizationsystem.md)|Represents the authorization system. Inherited from [microsoft.graph.authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|
+|authorizationSystem|[authorizationSystem](../resources/authorizationsystem.md)|Represents the authorization system. Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|
 
 ## JSON representation
 The following JSON representation shows the resource type.

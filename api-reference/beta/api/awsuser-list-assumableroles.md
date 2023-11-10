@@ -1,6 +1,6 @@
 ---
 title: "List assumableRoles"
-description: "Get the awsRole resources from the assumableRoles navigation property."
+description: "Get the assumableRole objects for an awsUser."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the awsRole resources from the assumableRoles navigation property.
+Get the [assumableRole](../resources/awsrole.md) objects for an [awsUser](../resources/awsuser.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -104,7 +104,6 @@ Content-Type: application/json
         "accountId": "123456789012",
         "identityProviderType": "aws"
       }
-
     }
   ]
 }

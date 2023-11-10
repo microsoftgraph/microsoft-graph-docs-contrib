@@ -1,5 +1,5 @@
 ---
-title: "List gcpUsers"
+title: "List users (in a GCP authorization system)"
 description: "Get a list of the gcpUser objects and their properties."
 author: "mrudulahg01"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# List gcpUsers
+# List users (in a GCP authorization system)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

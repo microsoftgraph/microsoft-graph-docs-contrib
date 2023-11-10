@@ -1,6 +1,6 @@
 ---
 title: "awsAssociatedIdentities resource type"
-description: "Represents different kinds of AWS identities"
+description: "A container for the different kinds of AWS identities."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents different kinds of AWS identities.
+A container for the different kinds of AWS identities.
 
 ## Properties
 None.
@@ -21,9 +21,9 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|all|[awsIdentity](../resources/awsidentity.md) collection|Get list of all AWS identities|
-|roles|[awsRole](../resources/awsrole.md) collection|Get list of AWS roles|
-|users|[awsUser](../resources/awsuser.md) collection|Get list of AWS users|
+|all|[awsIdentity](../resources/awsidentity.md) collection|The list of all AWS identities.|
+|roles|[awsRole](../resources/awsrole.md) collection|The list of AWS roles.|
+|users|[awsUser](../resources/awsuser.md) collection|The list of AWS users.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

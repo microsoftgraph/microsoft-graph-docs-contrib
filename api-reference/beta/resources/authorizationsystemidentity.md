@@ -1,6 +1,6 @@
 ---
 title: "authorizationSystemIdentity resource type"
-description: "authorizationSystemIdentity is used to represent identity in an authorization system."
+description: "A container representing an identity in an authorization system."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,9 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-authorizationSystemIdentity is used to represent identity in an authorization system.
+A container representing an identity in an authorization system.
 
 Inherits from [entity](../resources/entity.md).
+
+The following resource types inherit from this object:
+
+- [awsIdentity](../resources/awsidentity.md) resource type
+- [azureIdentity](../resources/azureidentity.md) resource type
+- [gcpIdentity](../resources/gcpidentity.md) resource type
 
 ## Methods
 None.
@@ -24,9 +30,9 @@ None.
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The name of the identity. Read-only. Supports `$filter` and (`eq`,`contains`).|
-|externalId|String|Unique Id of the identity within the authorization system. Read-only.|
-|id|String|Base64 encoding of the identity within the authorization system. Inherited from [entity](../resources/entity.md).|
-|source|[authorizationSystemIdentitySource](../resources/authorizationsystemidentitysource.md)| Represents details of the source of the identity. Details include identityProviderType and Type of source(aad, aws, gcp, etc.).|
+|externalId|String|Unique ID of the identity within the external system. Read-only.|
+|id|String|ID for the identity within Permissions Management. Inherited from [entity](../resources/entity.md).|
+|source|[authorizationSystemIdentitySource](../resources/authorizationsystemidentitysource.md)| Represents details of the source of the identity.|
 
 ## Relationships
 |Relationship|Type|Description|

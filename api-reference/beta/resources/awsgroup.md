@@ -1,6 +1,6 @@
 ---
 title: "awsGroup resource type"
-description: "Represents groups in AWS."
+description: "Represents a group in AWS."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents groups in AWS.
+Represents a group in AWS.
 
 Inherits from [awsIdentity](../resources/awsidentity.md).
 
@@ -24,8 +24,8 @@ None.
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The name of the object. Supports `$filter`. Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
-|externalId|String|The externally displayed ID of the object. Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
-|id|String|The base64 encoded identifier of externalId. Inherited from [entity](../resources/entity.md).|
+|externalId|String|The ID for the group as defined by AWS. Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
+|id|String|The ID for the group in Permissions Management. Inherited from [entity](../resources/entity.md).|
 |source|[authorizationSystemIdentitySource](../resources/authorizationsystemidentitysource.md)|The sourceof the authorization system identity. Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
 
 ## Relationships

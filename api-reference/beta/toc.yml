@@ -14634,7 +14634,7 @@ items:
                       href: resources/azureserviceprincipal.md
                       items:
                       - name: List
-                        href: api/azureassociatedidentities-list-azureserviceprincipals.md
+                        href: api/azureassociatedidentities-list-serviceprincipals.md
                       - name: Get 
                         href: api/azureserviceprincipal-get.md
                     - name: Azure user
@@ -14680,26 +14680,28 @@ items:
                 - name: GCP authorization system inventory
                   items:
                   - name: GCP identities
-                    href: resources/gcpidentity.md
                     items:
-                    - name: List
-                      href: api/gcpassociatedidentities-list-all.md
-                    - name: Get 
-                      href: api/gcpidentity-get.md
-                  - name: GCP user
-                    href: resources/gcpuser.md
-                    items:
-                    - name: List
-                      href: api/gcpassociatedidentities-list-users.md
-                    - name: Get 
-                      href: api/gcpuser-get.md
-                  - name: GCP service account
-                    href: resources/gcpserviceaccount.md
-                    items:
-                    - name: List
-                      href: api/gcpassociatedidentities-list-serviceaccounts.md
-                    - name: Get
-                      href: api/gcpserviceaccount-get.md     
+                    - name: All identities
+                      href: resources/gcpidentity.md
+                      items:
+                      - name: List
+                        href: api/gcpassociatedidentities-list-all.md
+                      - name: Get 
+                        href: api/gcpidentity-get.md
+                    - name: GCP user
+                      href: resources/gcpuser.md
+                      items:
+                      - name: List
+                        href: api/gcpassociatedidentities-list-users.md
+                      - name: Get 
+                        href: api/gcpuser-get.md
+                    - name: GCP service account
+                      href: resources/gcpserviceaccount.md
+                      items:
+                      - name: List
+                        href: api/gcpassociatedidentities-list-serviceaccounts.md
+                      - name: Get
+                        href: api/gcpserviceaccount-get.md     
                 - name: GCP action
                   href: resources/gcpauthorizationsystemtypeaction.md
                   items:

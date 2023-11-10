@@ -1,5 +1,5 @@
 ---
-title: "List azureManagedIdentities"
+title: "List managedIdentities (in an Azure authorization system)"
 description: "Get a list of the azureManagedIdentity objects and their properties."
 author: "mrudulahg01"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# List azureManagedIdentities
+# List managedIdentities (in an Azure authorization system)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

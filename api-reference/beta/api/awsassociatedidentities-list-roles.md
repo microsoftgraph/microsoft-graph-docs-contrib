@@ -1,5 +1,5 @@
 ---
-title: "List awsRoles"
+title: "List roles (in an AWS authorization system)"
 description: "Get the awsRole resources from the awsRoles navigation property."
 author: "mrudulahg01"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# List awsRoles
+# List roles (in an AWS authorization system)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

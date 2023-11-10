@@ -1,6 +1,6 @@
 ---
 title: "azureAssociatedIdentities resource type"
-description: "Container to represent different kinds of azure identities"
+description: "A container for the different kinds of Azure identities."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Container to represent different kinds of azure identities
+A container for the different kinds of Azure identities.
 
 ## Properties
 None
@@ -21,10 +21,10 @@ None
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|all|[azureIdentity](../resources/azureidentity.md) collection|Get the list of azure identities.|
-|managedIdentities|[azureManagedIdentity](../resources/azuremanagedidentity.md) collection|Get the list of azure managed identities.|
-|servicePrincipals|[azureServicePrincipal](../resources/azureserviceprincipal.md) collection|Get the list of azure service principals.|
-|users|[azureUser](../resources/azureuser.md) collection|Get the list of azure users.|
+|all|[azureIdentity](../resources/azureidentity.md) collection|The list of azure identities.|
+|managedIdentities|[azureManagedIdentity](../resources/azuremanagedidentity.md) collection|The list of Azure managed identities.|
+|servicePrincipals|[azureServicePrincipal](../resources/azureserviceprincipal.md) collection|The list of Azure service principals.|
+|users|[azureUser](../resources/azureuser.md) collection|The list of Azure users.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

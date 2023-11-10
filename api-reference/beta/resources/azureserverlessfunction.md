@@ -1,6 +1,6 @@
 ---
 title: "azureServerlessFunction resource type"
-description: "Represents Azure serverless functions."
+description: "Represents a serverless function in an Azure authorization system."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents Azure serverless functions.
+Represents a serverless function in an Azure authorization system.
 
 Inherits from [azureIdentity](../resources/azureidentity.md).
 
@@ -24,15 +24,15 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The name of the object. Supports `$filter` and (`eq`,`contains`). Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
-|externalId|String|The externally displayed ID of the object. Supports `$filter` and `eq`.Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
-|id|String|The base64 encoded identifier of externalId. Inherited from [entity](../resources/entity.md).|
+|displayName|String|The name of the object. Supports `$filter` (`eq`,`contains`). Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
+|externalId|String|The ID for the serverless function as defined by Microsoft Azure. Supports `$filter` (`eq`).Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
+|id|String|The ID for the serverless function in Permissions Management. Inherited from [entity](../resources/entity.md).|
 |source|[authorizationSystemIdentitySource](../resources/authorizationsystemidentitysource.md)|The source of the authorization system identity. Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|authorizationSystem|[authorizationSystem](../resources/authorizationsystem.md)|Represents the authorization system. Inherited from [microsoft.graph.authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|
+|authorizationSystem|[authorizationSystem](../resources/authorizationsystem.md)|Represents the authorization system. Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|
 |resource|[azureAuthorizationSystemResource](../resources/azureauthorizationsystemresource.md)|Represents the resources in an authorization system.|
 
 ## JSON representation

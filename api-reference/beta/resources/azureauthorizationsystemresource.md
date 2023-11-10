@@ -27,7 +27,7 @@ Inherits from [authorizationSystemResource](../resources/authorizationsystemreso
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The name of the resource. Supports `$filter` (`eq`,`contains`). Read-only. Inherited from [authorizationSystemResource](../resources/authorizationsystemresource.md).|
-|externalId|String|The ID of the resource as defined by Azure. Read-only. Alternate key. Inherited from [authorizationSystemResource](../resources/authorizationsystemresource.md).|
+|externalId|String|The ID of the resource as defined by Microsoft Azure. Read-only. Alternate key. Inherited from [authorizationSystemResource](../resources/authorizationsystemresource.md).|
 |id|String|The ID of the resource as defined by Permissions Management. Inherited from [entity](../resources/entity.md). Read-only.|
 |resourceType|String|The type of the resource. Read-only. Inherited from [authorizationSystemResource](../resources/authorizationsystemresource.md).|
 

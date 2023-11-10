@@ -20,23 +20,23 @@ Inherits from [awsIdentity](../resources/awsidentity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List AWS Users](../api/awsassociatedidentities-list-users.md)|[awsUser](../resources/awsuser.md)|Read the properties and relationships of an [awsUser](../resources/awsuser.md) object.|
-|[Get AWS User](../api/awsuser-get.md)|[awsUser](../resources/awsuser.md)|Read the properties and relationships of an [awsUser](../resources/awsuser.md) object.|
-|[List AWS Users with Assumable roles](../api/awsuser-list-assumableroles.md)|[awsRole](../resources/awsrole.md)|Read the properties and relationships of an [awsRole](../resources/awsrole.md) object.|
+|[List AWS users](../api/awsassociatedidentities-list-users.md)|[awsUser](../resources/awsuser.md)|Read the properties and relationships of an [awsUser](../resources/awsuser.md) object.|
+|[Get AWS user](../api/awsuser-get.md)|[awsUser](../resources/awsuser.md)|Read the properties and relationships of an [awsUser](../resources/awsuser.md) object.|
+|[List AWS users with assumable roles](../api/awsuser-list-assumableroles.md)|[awsRole](../resources/awsrole.md)|Read the properties and relationships of an [awsRole](../resources/awsrole.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The name of the object. Supports `$filter` and (`eq`,`contains`). Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
-|externalId|String|The externally displayed ID of the object. Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
-|id|String|The base64 encoded identifier of externalId. Inherited from [entity](../resources/entity.md).|
+|displayName|String|The name of the object. Supports `$filter` (`eq`,`contains`). Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
+|externalId|String|The ID for the user as defined by AWS. Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
+|id|String|The ID for the identity in Permissions Management. Inherited from [entity](../resources/entity.md).|
 |source|[authorizationSystemIdentitySource](../resources/authorizationsystemidentitysource.md)|The source of the authorization system identity. Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
 |assumableRoles|[awsRole](../resources/awsrole.md) collection|Roles assumed by the user.|
-|authorizationSystem|[authorizationSystem](../resources/authorizationsystem.md)|Represents the authorization system. Inherited from [microsoft.graph.authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|
+|authorizationSystem|[authorizationSystem](../resources/authorizationsystem.md)|Represents the authorization system. Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|
 
 ## JSON representation
 The following JSON representation shows the resource type.

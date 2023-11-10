@@ -1,5 +1,5 @@
 ---
-title: "List azureIdentities"
+title: "List all (Azure identities)"
 description: "Get a list of the azureIdentity objects and their properties."
 author: "mrudulahg01"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# List azureIdentities
+# List all (Azure identities)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

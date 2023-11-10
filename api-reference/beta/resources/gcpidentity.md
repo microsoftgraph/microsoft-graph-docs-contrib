@@ -33,16 +33,16 @@ The following resources inherit from this resource type:
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The name of the object. Supports `$filter` and (`eq`,`contains`). Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
-|externalId|String|The externally displayed ID of the object. Supports `$filter` and `eq`.Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
-|id|String|The base64 encoded identifier of externalId. Inherited from [entity](../resources/entity.md).|
+|displayName|String|The name of the object. Supports `$filter` (`eq`,`contains`). Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
+|externalId|String|The ID for the identity as defined by GCP. Supports `$filter` (`eq`). Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
+|id|String|The ID for the identity in Permissions Management. Inherited from [entity](../resources/entity.md).|
 |source|[authorizationSystemIdentitySource](../resources/authorizationsystemidentitysource.md)|The source of the authorization system identity. Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
 
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|authorizationSystem|[authorizationSystem](../resources/authorizationsystem.md)|Represents the authorization system. Inherited from [microsoft.graph.authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|
+|authorizationSystem|[authorizationSystem](../resources/authorizationsystem.md)|Represents the authorization system. Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|
 
 ## JSON representation
 The following JSON representation shows the resource type.

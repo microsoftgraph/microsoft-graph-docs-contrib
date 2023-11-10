@@ -1,6 +1,6 @@
 ---
 title: "azureServicePrincipal resource type"
-description: "Represents Azure service principals."
+description: "Represents a service principal in an Azure authorization system."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,28 +13,28 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents Azure service principals.
+Represents a service principal in an Azure authorization system.
 
 Inherits from [azureIdentity](../resources/azureidentity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List azureServicePrincipals](../api/azureassociatedidentities-list-azureserviceprincipals.md)|[azureServicePrincipal](../resources/azureserviceprincipal.md) collection|Get a list of the [azureServicePrincipal](../resources/azureserviceprincipal.md) objects and their properties.|
+|[List servicePrincipals](../api/azureassociatedidentities-list-serviceprincipals.md)|[azureServicePrincipal](../resources/azureserviceprincipal.md) collection|Get a list of the [azureServicePrincipal](../resources/azureserviceprincipal.md) objects and their properties.|
 |[Get azureServicePrincipal](../api/azureserviceprincipal-get.md)|[azureServicePrincipal](../resources/azureserviceprincipal.md)|Read the properties and relationships of an [azureServicePrincipal](../resources/azureserviceprincipal.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The name of the object. Supports `$filter` and (`eq`,`contains`). Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
-|externalId|String|The externally displayed ID of the object. Supports `$filter` and `eq`. Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
-|id|String|The base64 encoded identifier of externalId. Inherited from [entity](../resources/entity.md).|
+|displayName|String|The name of the object. Supports `$filter` (`eq`,`contains`). Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
+|externalId|String|The ID for the service principal as defined by Microsoft Azure. Supports `$filter` (`eq`). Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
+|id|String|The ID for the identity in Permissions Management. Inherited from [entity](../resources/entity.md).|
 |source|[authorizationSystemIdentitySource](../resources/authorizationsystemidentitysource.md)|The source of the authorization system identity. Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|authorizationSystem|[authorizationSystem](../resources/authorizationsystem.md)|Represents the authorization system. Inherited from [microsoft.graph.authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|
+|authorizationSystem|[authorizationSystem](../resources/authorizationsystem.md)|Represents the authorization system. Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|
 
 ## JSON representation
 The following JSON representation shows the resource type.

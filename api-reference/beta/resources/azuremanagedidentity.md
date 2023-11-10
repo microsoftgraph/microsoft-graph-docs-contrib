@@ -1,6 +1,6 @@
 ---
 title: "azureManagedIdentity resource type"
-description: "Represents Azure managed identities."
+description: "Represents a managed idetity object in an Azure authorization system."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,28 +13,28 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents Azure managed identities.
+Represents a managed idetity object in an Azure authorization system.
 
 Inherits from [azureIdentity](../resources/azureidentity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List azureManagedIdentities](../api/azureassociatedidentities-list-managedidentities.md)|[azureManagedIdentity](../resources/azuremanagedidentity.md) collection|Get a list of the [azureManagedIdentity](../resources/azuremanagedidentity.md) objects and their properties.|
+|[List managedIdentities](../api/azureassociatedidentities-list-managedidentities.md)|[azureManagedIdentity](../resources/azuremanagedidentity.md) collection|Get a list of the [azureManagedIdentity](../resources/azuremanagedidentity.md) objects and their properties.|
 |[Get azureManagedIdentity](../api/azuremanagedidentity-get.md)|[azureManagedIdentity](../resources/azuremanagedidentity.md)|Read the properties and relationships of an [azureManagedIdentity](../resources/azuremanagedidentity.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The name of the object. Supports `$filter` and (`eq`,`contains`). Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
-|externalId|String|The externally displayed ID of the object. `$filter` and (`eq`,`contains`). Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
-|id|String|The base64 encoded identifier of externalId. Inherited from [entity](../resources/entity.md).|
+|displayName|String|The name of the object. Supports `$filter` (`eq`,`contains`). Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
+|externalId|String|The ID for the managed identity as defined by Microsoft Azure. `$filter` (`eq`). Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
+|id|String|The ID for the managed identity in Permissions Management. Inherited from [entity](../resources/entity.md).|
 |source|[authorizationSystemIdentitySource](../resources/authorizationsystemidentitysource.md)|The source of the authorization system identity. Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|authorizationSystem|[authorizationSystem](../resources/authorizationsystem.md)|Represents the authorization system. Inherited from [microsoft.graph.authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|
+|authorizationSystem|[authorizationSystem](../resources/authorizationsystem.md)|Represents the authorization system. Inherited from [authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|
 
 ## JSON representation
 The following JSON representation shows the resource type.

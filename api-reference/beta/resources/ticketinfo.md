@@ -1,6 +1,6 @@
 ---
 title: "ticketInfo resource type"
-description: "Represents ticket information related to role assignment and eligibility requests."
+description: "Represents ticket information related to role assignment and eligibility requests in PIM, and scheduled permissions requests in Permissions Management."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -11,17 +11,15 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents ticket information related to assignment and eligibility requests in [PIM for Microsoft Entra roles](privilegedidentitymanagementv3-overview.md) and [PIM for Groups](privilegedidentitymanagement-for-groups-api-overview.md). Use this object to define ticket parameters for an assignment or eligibility request that's initiated by another request made in an external system.
-
-Represents ticketing related metadata that can be used to correlate to a scheduled permissions request.
+Represents ticket information related to assignment and eligibility requests in [PIM for Microsoft Entra roles](privilegedidentitymanagementv3-overview.md) and [PIM for Groups](privilegedidentitymanagement-for-groups-api-overview.md), and [scheduled permissions requests](../resources/scheduledpermissionsrequest.md) in Permissions Management. Use this object to define ticket parameters for an assignment or eligibility request that's initiated by another request made in an external system.
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|ticketApproverIdentityId|String|Identity id of the approver.|
+|ticketApproverIdentityId|String|ID for the request approver.|
 |ticketNumber|String|The ticket number.|
-|ticketSubmitterIdentityId|String|Identity id of the submitter.|
+|ticketSubmitterIdentityId|String|ID for the request submitter.|
 |ticketSystem|String|The description of the ticket system.|
 
 ## Relationships

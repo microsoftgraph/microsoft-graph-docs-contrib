@@ -1,6 +1,6 @@
 ---
 title: "authorizationSystemIdentitySource resource type"
-description: "Used to represent the source for an authorization system identity."
+description: "Represents the source for an authorization system identity."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,15 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used to represent the source of an authorization system identity.
-
-The following resource types inherit from this rsource:
-
-- [aadSource](../resources/aadsource.md)
-- [awsSource](../resources/awssource.md)
-- [azureSource](../resources/azuresource.md)
-- [gsuiteSource](../resources/gsuitesource.md)
-- [unknownSource](../resources/unknownsource.md)
+Represents the source of an authorization system identity.
 
 The following resource types inherit from this rsource:
 
