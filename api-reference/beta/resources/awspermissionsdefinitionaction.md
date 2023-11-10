@@ -21,7 +21,7 @@ The following resource types inherit from this resource:
 
 - [awsPolicyPermissionsDefinitionAction](../resources/awsPolicyPermissionsDefinitionAction.md) resource type  
 - [awsActionsPermissionsDefinitionAction](../resources/awsActionsPermissionsDefinitionAction.md) resource type
-- [awsActionsPeThe following resource types inherit from this resource: ]
+
 
 ## Properties
 |Property|Type|Description|

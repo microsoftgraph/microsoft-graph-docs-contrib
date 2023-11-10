@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a resource in an authorization system that you've onboarded to Permissions Management. The following resource types are derived from this base type: [awsAuthorizationSystemResource](), [azureAuthorizationSystemResource](), and [gcpAuthorizationSystemResource]().
+Represents a resource in an authorization system that you've onboarded to Permissions Management. The following resource types are derived from this base type: awsAuthorizationSystemResource, azureAuthorizationSystemResource, and gcpAuthorizationSystemResource.
 
 Inherits from [entity](../resources/entity.md).
 
