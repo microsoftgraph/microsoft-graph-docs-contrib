@@ -2,7 +2,7 @@
 title: "call: senddtmftones"
 description: "Send DTMF tones in a call."
 author: "jackry2023"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
