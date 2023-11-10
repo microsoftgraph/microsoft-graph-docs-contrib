@@ -113,11 +113,11 @@
         {
           "Id": "316da0c9-0d1f-4949-a912-0f4d785a5bd0",
           "ApiChange": "Method",
-          "ChangedApiName": "listVirtualEventWebinars",
+          "ChangedApiName": "virtualEventWebinar",
           "ChangeType": "Addition",
-          "Description": "Added the [List virtualEventWebinars](https://learn.microsoft.com/en-us/graph/api/virtualeventwebinar-list?view=graph-rest-beta) function to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-beta&preserve-view=true) resource.",
+          "Description": "Added the [LIST](https://learn.microsoft.com/en-us/graph/api/virtualeventwebinar-list?view=graph-rest-beta) method to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-beta) resource.",
           "Target": "virtualEventWebinar"
-        },
+        }
       ],
       "Id": "316da0c9-0d1f-4949-a912-0f4d785a5bd0",
       "Cloud": "Prod",
