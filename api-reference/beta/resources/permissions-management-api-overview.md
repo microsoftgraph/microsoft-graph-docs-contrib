@@ -105,3 +105,16 @@ For more information, see [Quickstart guide to Microsoft Entra Permissions Manag
 
 - [What's Microsoft Entra Permissions Management](/entra/permissions-management/overview)
 - [Microsoft Entra Permissions Management operations reference](/entra/architecture/permissions-manage-ops-guide-intro)
+
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "",
+  "keywords": "",
+  "section": "documentation",
+  "suppressions": [
+    "Error: /resources/permissions-management-api-overview.md:
+      Exception processing links.
+      Link Definition was null. Link text: !INCLUDE zero-trust (Parameter 'Definition')"
+  ]
+} -->
