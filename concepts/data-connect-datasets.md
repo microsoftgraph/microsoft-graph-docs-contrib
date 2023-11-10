@@ -121,15 +121,14 @@ Microsoft Graph Data Connect currently supports the following datasets. To view 
 
 ### OneDrive and SharePoint Online
 
-The OneDrive and SharePoint Online datasets are available after 48 hours (about two days). For example, you can query data for 07/01 starting on 07/03.  
-
-The data available is from the last 21 days (about three weeks). For example, if you would like to query data for 07/01, you can do so from 07/03 to 07/24. 
-
-| Dataset name | Description | Sample and Schema |
+| Dataset name | Description | Learn more |
 | --- | --- | --- |
-| BasicDataSet_v0.SharePointPermissions_v1 | Contains information about sharing permissions.(Formerly known as DocumentSharingDataset_v0_Preview)| <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.SharePointPermissions_v1.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/BasicDataSet_v0.SharePointPermissions_v1.md)</li></ul>
-| BasicDataSet_v0.SharePointSites_v1  | Contains information about SharePoint sites.(Formerly known as SharePointSitesDataset_v0_Preview)| <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.SharePointSites_v1.json) </li><li> [Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/BasicDataSet_v0.SharePointSites_v1.md)</li></ul>
-| BasicDataSet_v0.SharePointGroups_v1 | Contains SharePoint group information, including details about group members.(Formerly known as SharePointGroupsDataset_v0_Preview) | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.SharePointGroups_v1.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/BasicDataSet_v0.SharePointGroups_v1.md)</li></ul>
+| SharePointSites_v1  | Contains information about SharePoint sites. (Formerly known as SharePointSitesDataset_v0_Preview)| [SharePointSites_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-sharepointsites.md) |
+| SharePointPermissions_v1 | Contains information about sharing permissions. (Formerly known as DocumentSharingDataset_v0_Preview) | [SharePointPermissions_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-sharepointpermissions.md) |
+| SharePointGroups_v1 | Contains SharePoint group information, including details about group members. (Formerly known as SharePointGroupsDataset_v0_Preview) | [SharePointGroups_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-sharepointgroups.md) |
+| SharePointFiles_v1  | Contains information about SharePoint files. (Coming soon) | [SharePointFiles_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-sharepointfiles.md) |
+| SharePointFileActions_v1 | Contains information about SharePoint file actions. (Coming soon) | [SharePointFileActions_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-sharepointfileactions.md) |
+| OneDriveSyncHealth_v1 | Contains information about devices running OneDrive for Business. (Coming soon) | [OneDriveSyncHealth_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-onedrivesynchealth.md) |
 
 ### Viva Insights
 
