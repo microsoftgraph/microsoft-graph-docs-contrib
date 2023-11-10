@@ -31,7 +31,7 @@ Represents information about positions related to entities within a user's [prof
 
 ## JSON representation
 
-The following example shows the JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
