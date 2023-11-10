@@ -1,5 +1,5 @@
 ---
-title: "List awsAuthorizationSystemTypeServices"
+title: "List services (for an AWS authorization system)"
 description: "Get all services in an AWS authorization system."
 author: "mrudulahg01"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# List AWS Authorization System Type Services
+# List services (for an AWS authorization system)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -23,7 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
+<!--
 [!INCLUDE [epm-rbac-servicenow-apis-read](../includes/rbac-for-apis/epm-rbac-servicenow-apis-read.md)]
+-->
 
 ## HTTP request
 
@@ -44,7 +46,7 @@ This method supports the `$select`, `$filter`, `$count`, `$top`, `$expand`, and 
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -52,10 +54,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: List services for a provided AWS authorization system.
-
-#### Request
-The following example shows a request.
+### Request
+The following example shows a request  to list services for a provided AWS authorization system.
 <!-- {
   "blockType": "request",
   "name": "list_authorizationsystemtypeservice1"
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsof
 ```
 
 
-#### Response
+### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

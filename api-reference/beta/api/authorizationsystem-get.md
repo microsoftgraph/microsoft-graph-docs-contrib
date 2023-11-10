@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the details of an [authorizationSystem](../resources/authorizationsystem.md) that you've onboarded to Microsoft Entra Permissions Management.
+Read the details of an [authorizationSystem](../resources/authorizationsystem.md) onboarded to Microsoft Entra Permissions Management.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -23,7 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
+<!--
 [!INCLUDE [epm-rbac-servicenow-apis-read](../includes/rbac-for-apis/epm-rbac-servicenow-apis-read.md)]
+-->
 
 ## HTTP request
 
@@ -36,14 +38,14 @@ GET /external/authorizationSystems/{id}
 ```
 ## Optional query parameters
 
-This method supports `$select` and `$expand` of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 ## Request headers
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

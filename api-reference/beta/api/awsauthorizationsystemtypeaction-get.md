@@ -23,7 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
+<!--
 [!INCLUDE [epm-rbac-servicenow-apis-read](../includes/rbac-for-apis/epm-rbac-servicenow-apis-read.md)]
+-->
 
 ## HTTP request
 
@@ -33,6 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /external/authorizationSystems/{id}/microsoft.graph.awsAuthorizationSystem/actions/{awsAuthorizationSystemTypeActionId}
+
 GET /external/authorizationSystems/{id}/microsoft.graph.awsAuthorizationSystem/actions(externalId={externalId})
 ```
 
@@ -45,7 +48,7 @@ This method supports the `$select` OData query parameter to help customize the r
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

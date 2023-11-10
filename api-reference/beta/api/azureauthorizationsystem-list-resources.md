@@ -1,18 +1,18 @@
 ---
-title: "List resources in an Azure authorization system"
-description: "List the azureAuthorizationSystemResource objects and their properties for an Azure authorization system that you've onboarded to Permissions Management."
+title: "List resources (for an Azure authorization system)"
+description: "List the azureAuthorizationSystemResource objects and their properties for an Azure authorization system onboarded to Permissions Management."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# List resources in an Azure authorization system
+# List resources (for an Azure authorization system)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the [azureAuthorizationSystemResource](../resources/azureauthorizationsystemresource.md) objects and their properties for an Azure authorization system that you've onboarded to Permissions Management..
+List the [azureAuthorizationSystemResource](../resources/azureauthorizationsystemresource.md) objects and their properties for an Azure authorization system onboarded to Permissions Management..
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -23,7 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
+<!--
 [!INCLUDE [epm-rbac-servicenow-apis-read](../includes/rbac-for-apis/epm-rbac-servicenow-apis-read.md)]
+-->
 
 ## HTTP request
 
@@ -44,7 +46,7 @@ This method supports the `$select`, `$filter`, `$top`, and `$skipToken` OData qu
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

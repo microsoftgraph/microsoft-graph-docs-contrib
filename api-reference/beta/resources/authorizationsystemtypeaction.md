@@ -1,6 +1,6 @@
 ---
 title: "authorizationSystemTypeAction resource type"
-description: "Represents an action in an authorization system that is onboarded to Permissions Management."
+description: "Represents an action in an authorization system onboarded to Permissions Management."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an action in an authorization system that you've onboarded to Permissions Management. The following resource types are derived from this base type: awsAuthorizationSystemTypeAction, azureAuthorizationSystemTypeAction, and gcpAuthorizationSystemTypeAction.
+Represents an action in an authorization system onboarded to Permissions Management. The following resource types are derived from this base type: 
+- [awsAuthorizationSystemTypeAction](../resources/awsauthorizationsystemtypeaction.md) resource type
+- [azureAuthorizationSystemTypeAction](../resources/azureauthorizationsystemtypeaction.md) resource type
+- [gcpAuthorizationSystemTypeAction](../resources/gcpauthorizationsystemtypeaction.md) resource type
 
 Inherits from [entity](../resources/entity.md).
 

@@ -13,11 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Microsoft Azure susbcription, Amazon Web Services (AWS) account, or Google Cloud Platform (GCP) project that you've onboarded onto Microsoft Entra Permissions Management, Microsoft's cloud infrastructure entitlement management (CIEM) solution. Permissions Management discovers, remediates, and monitors the permissions and actions of identities in these platforms.
+Represents a Microsoft Azure susbcription, Amazon Web Services (AWS) account, or Google Cloud Platform (GCP) project onboarded onto Microsoft Entra Permissions Management, Microsoft's cloud infrastructure entitlement management (CIEM) solution. Permissions Management discovers, remediates, and monitors the permissions and actions of identities in these platforms.
 
 This object is read-only and is populated when you successfully onboard the platform onto Permissions Management.
 
-The following resource types are derived from this resource: [awsAuthorizationSystem](../resources/awsauthorizationsystem.md), [azureAuthorizationSystem](../resources/azureauthorizationsystem.md), and [gcpAuthorizationSystem](../resources/gcpauthorizationsystem.md).
+The following resource types are derived from this resource:
+
+- [awsAuthorizationSystem](../resources/awsauthorizationsystem.md) resource type
+- [azureAuthorizationSystem](../resources/azureauthorizationsystem.md) resource type
+- [gcpAuthorizationSystem](../resources/gcpauthorizationsystem.md) resource type
 
 Inherits from [entity](../resources/entity.md).
 
@@ -30,7 +34,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authorizationSystemId|String|Identifier for the authorization system that you've onboarded to Microsoft Entra Permissions Management. Supports `$filter`(`eq`, `contains`) and `$orderBy`.|
+|authorizationSystemId|String|ID of the authorization system retrieved from the customer cloud environment. Supports `$filter`(`eq`, `contains`) and `$orderBy`.|
 |authorizationSystemName|String|Name of the authorization system detected after onboarding. Supports `$filter`(`eq`,`contains`) and `$orderBy`.|
 |authorizationSystemType|String|The type of authorization system. Can be `gcp`, `azure`, or `aws`. Supports `$filter`(`eq`).|
 |id|String|Unique identifier for the authorization system within Microsoft Entra Permissions Management. Inherited from [entity](../resources/entity.md).|

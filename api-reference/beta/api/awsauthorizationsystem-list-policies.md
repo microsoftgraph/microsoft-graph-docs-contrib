@@ -1,5 +1,5 @@
 ---
-title: "List awsPolicies"
+title: "List policies (for an AWS authorization system)"
 description: "List all awsPolicy objects and their properties for a specific AWS authorization system."
 author: "mrudulahg01"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# List awsPolicies
+# List policies (for an AWS authorization system)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -23,7 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
+<!--
 [!INCLUDE [epm-rbac-servicenow-apis-read](../includes/rbac-for-apis/epm-rbac-servicenow-apis-read.md)]
+-->
 
 ## HTTP request
 
@@ -44,7 +46,7 @@ This method supports the `$select`, `$filter`, `$count`, `$top`, and `$skipToken
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -52,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: List all policies for an AWS account.
+### Example 1: List all policies for an AWS account
 
 #### Request
 
@@ -100,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: List all policies in an AWS authorization system with a specific name.
+### Example 2: List all policies in an AWS authorization system with a specific name
 
 #### Request
 
@@ -142,7 +144,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 3: List all policies in an AWS authorization system with names containing a specific string.
+### Example 3: List all policies in an AWS authorization system with names containing a specific string
 
 #### Request
 

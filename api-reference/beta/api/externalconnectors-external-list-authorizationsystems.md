@@ -23,7 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
+<!--
 [!INCLUDE [epm-rbac-servicenow-apis-read](../includes/rbac-for-apis/epm-rbac-servicenow-apis-read.md)]
+-->
 
 ## HTTP request
 
@@ -44,7 +46,7 @@ This method supports the `$filter`, `$orderby`, and `$skip` OData query paramete
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -52,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: List authorization systems onboarded to Permissions Management.
+### Example 1: List authorization systems onboarded to Permissions Management
 
 #### Request
 The following example shows a request.
@@ -148,13 +150,13 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Identify all the authorization systems that are online and have permissions modification capability enabled.
+### Example 2: Identify all the authorization systems that are online and have permissions modification capability enabled
 
 #### Request
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_authorizationsystem2"
+  "name": "list_authorizationsystem_filter"
 }
 -->
 ``` http

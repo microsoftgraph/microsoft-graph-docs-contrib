@@ -1,6 +1,6 @@
 ---
 title: "dataCollectionInfo resource type"
-description: "Represents the details and status of the data collection process for the authorizationSystem that you've onboarded to Microsoft Entra Permissions Management."
+description: "Represents the details and status of the data collection process for the authorization system onboarded to Microsoft Entra Permissions Management."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details and status of the data collection process for the authorizationSystem that you've onboarded to Microsoft Entra Permissions Management.
+Represents the details and status of the data collection process for the authorization system onboarded to Microsoft Entra Permissions Management.
 
 Inherits from [entity](../resources/entity.md).
 

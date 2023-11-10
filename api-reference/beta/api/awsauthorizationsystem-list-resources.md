@@ -1,5 +1,5 @@
 ---
-title: "List resources in an AWS authorization system"
+title: "List resources (for an AWS authorization system)"
 description: "List the awsAuthorizationSystemResource objects and their properties for a provided AWS authorization system."
 author: "mrudulahg01"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# List awsAuthorizationSystemResources
+# List resources (for an AWS authorization system)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -23,7 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
+<!--
 [!INCLUDE [epm-rbac-servicenow-apis-read](../includes/rbac-for-apis/epm-rbac-servicenow-apis-read.md)]
+-->
 
 ## HTTP request
 
@@ -44,7 +46,7 @@ This method supports the `$select`, `$filter`, `$top`, and `$skipToken` OData qu
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -52,10 +54,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: List the AWS resources for a provided AWS authorization system.
-
-#### Request
-The following example shows a request.
+### Request
+The following example shows a request to list the AWS resources for a provided AWS authorization system.
 <!-- {
   "blockType": "request",
   "name": "list_awsauthorizationsystemresource"

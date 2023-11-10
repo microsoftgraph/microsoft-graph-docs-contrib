@@ -1,6 +1,6 @@
 ---
 title: "awsAuthorizationSystem resource type"
-description: "Represents findings for an AWS authorization system."
+description: "Represents an AWS authorization system."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents findings for an AWS authorization system.
+Represents an AWS authorization system.
 
 Inherits from [authorizationSystem](../resources/authorizationsystem.md).
 
@@ -26,17 +26,17 @@ Inherits from [authorizationSystem](../resources/authorizationsystem.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |associatedIdentities|[awsAssociatedIdentities](../resources/awsassociatedidentities.md)|Identities in the authorization system.|
-|authorizationSystemId|String|Authorization system ID onboarded to a tenant from a customer cloud environment. Supports `$filter`, `orderby`. Inherited from [authorizationSystem](../resources/authorizationsystem.md).|
-|authorizationSystemName|String|Name of the authorization system detected after a collection. Supports `$filter`, `orderby`. Inherited from [authorizationSystem](../resources/authorizationsystem.md).|
-|authorizationSystemType|String|Authorization System Type of this authorizationSystem. Supports `$filter`. Inherited from [authorizationSystem](../resources/authorizationsystem.md).|
-|id|String| Unique Id of the Authorization System. Inherited from [entity](../resources/entity.md).|
+|authorizationSystemId|String|ID of the authorization system retrieved from the customer cloud environment.Supports `$filter`(`eq`, `contains`) and `$orderBy`. Inherited from [authorizationSystem](../resources/authorizationsystem.md).|
+|authorizationSystemName|String|Name of the authorization system detected after onboarding. Supports `$filter`(`eq`,`contains`) and `$orderBy`. Inherited from [authorizationSystem](../resources/authorizationsystem.md).|
+|authorizationSystemType|String|The type of this authorization system. Supports `$filter`(`eq`). Inherited from [authorizationSystem](../resources/authorizationsystem.md).|
+|id|String| Unique ID for the authorization system in Permissions Management. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
 |actions|[awsAuthorizationSystemTypeAction](../resources/awsauthorizationsystemtypeaction.md) collection|List of actions for service in authorization system.|
-|dataCollectionInfo|[dataCollectionInfo](../resources/datacollectioninfo.md)|Used to expose data collection status of this authorizationSystem. Inherited from [microsoft.graph.authorizationSystem](../resources/authorizationsystem.md)|
-|policies|[awsPolicy](../resources/awspolicy.md) collection|Policies associated with the authorization system type.|
+|dataCollectionInfo|[dataCollectionInfo](../resources/datacollectioninfo.md)|Used to expose data collection status of this authorizationSystem. Inherited from [authorizationSystem](../resources/authorizationsystem.md)|
+|policies|[awsPolicy](../resources/awspolicy.md) collection|Policies associated with the AWS authorization system type.|
 |resources|[awsAuthorizationSystemResource](../resources/awsauthorizationsystemresource.md) collection|Resources associated with the authorization system type.|
 |services|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md) collection|Services associated with the authorization system type.|
 

@@ -21,7 +21,7 @@ Inherits from [entitlementsDataCollectionInfo](../resources/entitlementsdatacoll
 |Property|Type|Description|
 |:---|:---|:---|
 |lastCollectionDateTime|DateTimeOffset|Last transformation time of entitlements.|
-|permissionsModificationCapability|permissionsModificationCapability|Properties relating to the permissionsModificationCapability configuration. The possible values are: `enabled`, `notConfigured`, `noRecentDataCollected`, `unknownFutureValue`.|
+|permissionsModificationCapability|permissionsModificationCapability|Defines whether permissions can be modified in the authorization system. The possible values are: `enabled`, `notConfigured`, `noRecentDataCollected`, `unknownFutureValue`.|
 |status|dataCollectionStatus|The entitlements status. The possible values are: `online`, `offline`, `unknownFutureValue`.|
 
 ## Relationships

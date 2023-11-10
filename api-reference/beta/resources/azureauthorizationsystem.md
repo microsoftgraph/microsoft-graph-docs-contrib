@@ -26,10 +26,10 @@ Inherits from [authorizationSystem](../resources/authorizationsystem.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |associatedIdentities|[azureAssociatedIdentities](../resources/azureassociatedidentities.md)|Identities in the authorization system.|
-|authorizationSystemId|String|Authorization system ID onboarded to a tenant from a customer cloud environment. Supports `$filter`, `orderby`. Inherited from [authorizationSystem](../resources/authorizationsystem.md).|
-|authorizationSystemName|String|Name of the authorization system detected after a collection. Supports `$filter`, `orderby`. Inherited from [authorizationSystem](../resources/authorizationsystem.md).|
-|authorizationSystemType|String|Authorization System Type of this authorizationSystem. Supports `$filter`. Inherited from [authorizationSystem](../resources/authorizationsystem.md).|
-|id|String| Unique Id of the Authorization System. Inherited from [entity](../resources/entity.md).|
+|authorizationSystemId|String|ID of the authorization system retrieved from the customer cloud environment.Supports `$filter`(`eq`, `contains`) and `$orderBy`. Inherited from [authorizationSystem](../resources/authorizationsystem.md).|
+|authorizationSystemName|String|Name of the authorization system detected after onboarding. Supports `$filter`(`eq`,`contains`) and `$orderBy`. Inherited from [authorizationSystem](../resources/authorizationsystem.md).|
+|authorizationSystemType|String|The type of this authorization system. Supports `$filter`(`eq`). Inherited from [authorizationSystem](../resources/authorizationsystem.md).|
+|id|StringUnique ID for the authorization system in Permissions Management. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|

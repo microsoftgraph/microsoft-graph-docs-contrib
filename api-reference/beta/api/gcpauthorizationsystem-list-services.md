@@ -1,5 +1,5 @@
 ---
-title: "List gcpAuthorizationSystemTypeServices"
+title: "List services (for a GCP authorization system)"
 description: "Get all services in a GCP authorization system."
 author: "mrudulahg01"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# List Gcp Authorization System Type Services
+# List services (for a GCP authorization system)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -23,7 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
+<!--
 [!INCLUDE [epm-rbac-servicenow-apis-read](../includes/rbac-for-apis/epm-rbac-servicenow-apis-read.md)]
+-->
 
 ## HTTP request
 
@@ -44,7 +46,7 @@ This method supports the `$select`, `$filter`, `$count`, `$top`, and `$skipToken
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

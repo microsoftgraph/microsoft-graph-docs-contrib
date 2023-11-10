@@ -1,5 +1,5 @@
 ---
-title: "Get services in authorization system types"
+title: "Get authorizationSystemTypeService"
 description: "Read the properties and relationships of an authorizationSystemTypeService object."
 author: "mrudulahg01"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# Get services in authorization system types
+# Get authorizationSystemTypeService
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -23,22 +23,41 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
+<!--
 [!INCLUDE [epm-rbac-servicenow-apis-read](../includes/rbac-for-apis/epm-rbac-servicenow-apis-read.md)]
+-->
 
 ## HTTP request
 
+Get for an AWS authorization system:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET external/authorizationSystems/{id}/microsoft.graph.awsAuthorizationSystem/services/{authorizationSystemTypeServiceId}
-GET external/authorizationSystems/{id}/microsoft.graph.gcpAuthorizationSystem/services/{authorizationSystemTypeServiceId}
-GET external/authorizationSystems/{id}/microsoft.graph.azureAuthorizationSystem/services/{authorizationSystemTypeServiceId}
+GET /external/authorizationSystems/{id}/microsoft.graph.awsAuthorizationSystem/services/{authorizationSystemTypeServiceId}
+```
+
+Get for a GCP authorization system:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /external/authorizationSystems/{id}/microsoft.graph.gcpAuthorizationSystem/services/{authorizationSystemTypeServiceId}
+```
+
+Get for an Azure authorization system:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /external/authorizationSystems/{id}/microsoft.graph.azureAuthorizationSystem/services/{authorizationSystemTypeServiceId}
 ```
 
 ## Optional query parameters
-This method supports supports `$filter` of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` of the OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -46,7 +65,7 @@ This method supports supports `$filter` of the OData query parameters to help cu
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

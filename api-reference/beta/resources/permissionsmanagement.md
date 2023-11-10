@@ -1,6 +1,6 @@
 ---
 title: "permissionsManagement resource type"
-description: "The base container for the relationships that define the requests for permissions in an authorization system that you've onboarded to Microsoft Entra Permissions Management."
+description: "The base container for the relationships that define the requests for permissions in an authorization system onboarded to Microsoft Entra Permissions Management."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The base container for the relationships that define the requests for permissions in an authorization system that you've onboarded to Microsoft Entra Permissions Management.
+The base container for the relationships that define the requests for permissions in an authorization system onboarded to Microsoft Entra Permissions Management.
 
 ## Methods
 None.
@@ -25,7 +25,7 @@ None.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |permissionsRequestChanges|[permissionsRequestChange](../resources/permissionsrequestchange.md)|Represents a change event of the scheduledPermissionsRequest entity.|
-|scheduledPermissionsRequests|[scheduledPermissionsRequest](../resources/scheduledpermissionsrequest.md)|Represents a permissions request that EPM will use to manage permissions in for a request identity on resources in the authorization system. This request can be granted, rejected or canceled by identities in EPM.|
+|scheduledPermissionsRequests|[scheduledPermissionsRequest](../resources/scheduledpermissionsrequest.md)|Represents a permissions request that Permissions Management uses to manage permissions for an identity on resources in the authorization system. This request can be granted, rejected or canceled by identities in Permissions Management.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
