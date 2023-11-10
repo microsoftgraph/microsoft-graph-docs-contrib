@@ -6,14 +6,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models.Search;
+using Microsoft.Graph.Beta.Models;
 
-var requestBody = new Microsoft.Graph.Beta.Models.Search.Bookmark
+var requestBody = new Bookmark
 {
 	DisplayName = "Contoso Install Site",
 	WebUrl = "http://www.contoso.com/",
 	Description = "Try or buy Contoso for Home or Business and view product information",
-	Keywords = new Microsoft.Graph.Beta.Models.Search.AnswerKeyword
+	Keywords = new AnswerKeyword
 	{
 		Keywords = new List<string>
 		{
@@ -32,17 +34,19 @@ var requestBody = new Microsoft.Graph.Beta.Models.Search.Bookmark
 	{
 		DevicePlatformType.Android,
 	},
-	TargetedVariations = new List<Microsoft.Graph.Beta.Models.Search.AnswerVariant>
+	TargetedVariations = new List<AnswerVariant>
 	{
-		new Microsoft.Graph.Beta.Models.Search.AnswerVariant
+		new AnswerVariant
 		{
 			LanguageTag = "es-es",
 			DisplayName = "Sitio de instalación Contoso",
 			Description = "Pruebe o compre Contoso hogar o negocios y vea la información del producto",
 		},
 	},
-	State = Microsoft.Graph.Beta.Models.Search.AnswerState.Published,
+	State = AnswerState.Published,
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Search.Bookmarks.PostAsync(requestBody);
 
 
