@@ -52,6 +52,14 @@
                 },
                 {
                     "Id": "5c4af81d-eebf-4c90-a5a9-c23d898dee72",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "callRecord",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/callrecords-callrecord-list?view=graph-rest-beta) operation to the [callRecord](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-callRecord?view=graph-rest-beta) resource.",
+                    "Target": "callRecord"
+                },
+                {
+                    "Id": "5c4af81d-eebf-4c90-a5a9-c23d898dee72",
                     "ApiChange": "Resource",
                     "ChangedApiName": "organizer",
                     "ChangeType": "Addition",
