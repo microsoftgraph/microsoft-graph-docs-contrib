@@ -4,6 +4,7 @@ description: "Represents permissions under a GCP role."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
+doc_type: resourcePageType
 ---
 
 # permissionsDefinitionGcpRole resource type
