@@ -8,9 +8,9 @@ ms.prod: "data-connect"
 
 # Use encryption with Microsoft Graph Data Connect
 
-Microsoft Graph Data Connect (Data Connect) offers encryption capabilities through encryption-at-rest and encryption-in-transit. With [Azure Key Vault (AKV)](https://learn.microsoft.com/en-us/azure/key-vault/general/basic-concepts), customers can generate and store their public and private keys in AKV and refresh them when needed. Custom encrypted datasets are also available. This article guides you through setting up custom encryption for a secure data delivery with Data Connect. 
+Microsoft Graph Data Connect (Data Connect) offers encryption capabilities through encryption-at-rest and encryption-in-transit. With [Azure Key Vault (AKV)](/azure/key-vault/general/basic-concepts), customers can generate and store their public and private keys in AKV and refresh them when needed. Custom encrypted datasets are also available. This article guides you through the process to set up custom encryption for a secure data delivery with Data Connect. 
 
-- **Encryption for data-at-rest**: We recommend customers use the [Azure data-at-rest](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-atrest) encryption feature and customer managed keys when setting up their Azure storage account to ensure that it's properly locked and secure after data delivery. 
+- **Encryption for data-at-rest**: We recommend customers use the [Azure data-at-rest](/azure/security/fundamentals/encryption-atrest) encryption feature and customer managed keys when setting up their Azure storage account to ensure that it's properly locked and secure after data delivery. 
 
 - **Encryption for data-in-transit**: Data Connect offers encryption for data-in-transit through our custom dataset encryption capability. It also ensures that all data requests between a customer’s Microsoft 365 and Azure resources are secure by using service standards that are [SOC approved](/compliance/regulatory/offering-soc-2), such as HTTPS.
 
@@ -40,7 +40,7 @@ If you have an existing Data Connect Application, follow the steps below:
 
 If you don't have an existing Data Connect application, use the following steps to create one:
 
-1. Follow our [Getting Started](https://learn.microsoft.com/en-us/graph/data-connect-quickstart?tabs=NewConsentFlow%2CPAMMicrosoft365%2CAzureSynapsePipeline) using [the simplified onboarding experience.](./onboarding-experience-overview.md) to build your Data Connect Application.
+1. Follow our [Get started](/graph/data-connect-quickstart?tabs=NewConsentFlow%2CPAMMicrosoft365%2CAzureSynapsePipeline) guide and use [the simplified onboarding experience.](./onboarding-experience-overview.md) to build your Data Connect application.
 
 2. Fill out the application details on the **Registration Info** page.
     1. Under **Publish Type** select **Single Tenant** if you intend to enable encryption as on. 
@@ -54,7 +54,7 @@ If you don't have an existing Data Connect application, use the following steps 
 
     ![Screenshot of the the Azure portal with Azure Key Vault and encryption boxed in](images/app-registration-encryption.png) 
 
-3. Fill out the rest of the required application details as mentioned in the [Getting Started](https://learn.microsoft.com/en-us/graph/data-connect-quickstart?tabs=NewConsentFlow%2CPAMMicrosoft365%2CAzureSynapsePipeline) and [simplified onboarding experience](./onboarding-experience-overview.md) and submit it for your Micorosoft 365 admin to review. 
+3. Fill out the rest of the required application details and submit the application for your Micorosoft 365 admin to review. 
     
     > [!NOTE]
     > Make a note of your existing service principal; you will need this later.
@@ -81,7 +81,7 @@ Your application needs to reverse the encryption and compression process to acce
 
 2. Decrypt the encryption key with the customer private key (provided in the Azure Key Vault). For more information, see [Azure Key Vault decrypt API](/rest/api/keyvault/keys/decrypt/decrypt?view=rest-keyvault-keys-7.4&tabs=HTTP).
 
-3. Decrypt the file by using the file encryption key. For a C# example, see [Encrypting data](https://learn.microsoft.com/en-us/dotnet/standard/security/encrypting-data).
+3. Decrypt the file by using the file encryption key. For a C# example, see [Encrypting data](/dotnet/standard/security/encrypting-data).
 
 ### Metadata file
 
@@ -115,7 +115,7 @@ Be sure to take these encoding differences into account when you decrypt the dat
 
 ## Dataset eligiblity for encryption
 
-The following (datasets)[https://learn.microsoft.com/en-us/graph/data-connect-datasets] are eligible for encryption for Data Connect: 
+The following [datasets](/graph/data-connect-datasets) are eligible for encryption for Data Connect: 
 
 - All datasets for Azure Active Directory
 - All datasets for Outlook and Exchange Online
