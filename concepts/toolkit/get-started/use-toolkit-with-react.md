@@ -81,7 +81,7 @@ You should be able to open your app in the browser via `http://localhost:3000`.
 
 ## Connect React app to Microsoft 365
 
-Now that you have registered your application with Microsoft Entra ID, you can connect the React app to Microsoft 365. First, allow users to sign in to the app using their Microsoft account.
+Now that your application is registered with Microsoft Entra ID, you can connect the React app to Microsoft 365. First, allow users to sign in to the app using their Microsoft account.
 
 <a name='copy-the-azure-ad-application-registration-id'></a>
 
@@ -213,7 +213,7 @@ Before you can load data from Microsoft 365, you need to specify the list of per
 
 ### Show user's calendar data after signing in
 
-Next, extend the application to show data from the user's calendar. You can access this information only after the user has signed in. You need to track the user's sign in state and show the calendar data after the user has signed in with their Microsoft account.
+Next, extend the application to show data from the user's calendar. You can access this information only after the user is signed in. You need to track the user's sign in state and show the calendar data after the user is logged in with their Microsoft account.
 
 #### Track user's sign in state
 
@@ -352,7 +352,7 @@ export default App;
 
 ### Show a user's chat conversation
 
-Next, extend the application to show a conversation from the user's 1:1 and group conversations. You can access this information only after the user has signed in.
+Next, extend the application to show a conversation from the user's 1:1 and group conversations. You can access this information only after the user is signed in.
 
 ### Update the required permissions for your application
 
