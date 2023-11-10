@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents permissions for GCP.
+Represents actions for permissions for GCP.
 
 Inherits from [gcpPermissionsDefinitionAction](../resources/gcppermissionsdefinitionaction.md).
 

@@ -1,5 +1,5 @@
 ---
-title: "List awsAuthorizationSystemResources"
+title: "List resources in an AWS authorization system"
 description: "List the awsAuthorizationSystemResource objects and their properties for a provided AWS authorization system."
 author: "mrudulahg01"
 ms.localizationpriority: medium

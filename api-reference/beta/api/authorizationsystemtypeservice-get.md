@@ -1,5 +1,5 @@
 ---
-title: "Get authorizationSystemTypeService"
+title: "Get services in authorization system types"
 description: "Read the properties and relationships of an authorizationSystemTypeService object."
 author: "mrudulahg01"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# Get authorizationSystemTypeService
+# Get services in authorization system types
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
