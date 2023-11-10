@@ -1,6 +1,6 @@
 ---
 title: "gcpActionPermissionsDefinitionAction resource type"
-description: "Represents permissions for GCP."
+description: "Represents actions for permissions for GCP."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
