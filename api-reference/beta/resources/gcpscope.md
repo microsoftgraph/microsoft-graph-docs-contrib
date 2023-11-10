@@ -35,10 +35,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.gcpScope",
-  "resourceType": "String",
-  "service": {
-    "id": "String"
-  }
+  "resourceType": "String"
 }
 ```
 
