@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1640
+Content-Length: 1937
 
 {
   "value": [
@@ -104,7 +104,14 @@ Content-Length: 1640
       "connectWhenNetworkNameIsHidden": true,
       "wiFiSecurityType": "wep",
       "preSharedKey": "Pre Shared Key value",
-      "preSharedKeyIsSet": true
+      "preSharedKeyIsSet": true,
+      "proxySetting": "manual",
+      "proxyManualAddress": "Proxy Manual Address value",
+      "proxyManualPort": 15,
+      "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
+      "proxyExclusionList": [
+        "Proxy Exclusion List value"
+      ]
     }
   ]
 }

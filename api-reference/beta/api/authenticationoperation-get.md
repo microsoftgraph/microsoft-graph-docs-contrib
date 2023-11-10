@@ -3,6 +3,7 @@ title: "Get authentication operation"
 description: "Retrieve the properties and relationships of an operation object."
 ms.localizationpriority: medium
 author: "jpettere"
+ms.reviewer: intelligentaccesspm
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---

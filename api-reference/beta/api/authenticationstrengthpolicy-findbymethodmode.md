@@ -2,6 +2,7 @@
 title: "authenticationStrengthPolicy: findByMethodMode (deprecated)"
 description: "Get authentication strength policies that include the specified authentication method modes."
 author: "InbarckMS"
+ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

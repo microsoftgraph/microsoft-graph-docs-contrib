@@ -2,6 +2,7 @@
 title: "excludeTarget resource type"
 description: "Represents the users or groups of users that are excluded from a policy."
 author: "jpettere"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

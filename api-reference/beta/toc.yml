@@ -404,9 +404,11 @@ items:
                 href: api/user-list-cloudpcs.md
               - name: Get
                 href: api/cloudpc-get.md
+              - name: Get frontline access state
+                href: api/cloudpc-getfrontlinecloudpcaccessstate.md
               - name: Get launch info
                 href: api/cloudpc-getcloudpclaunchinfo.md
-              - name: Get shift work access state
+              - name: Get shift work access state (deprecated)
                 href: api/cloudpc-getshiftworkcloudpcaccessstate.md
               - name: Reboot
                 href: api/cloudpc-reboot.md
@@ -644,6 +646,8 @@ items:
                 href: api/profilephoto-get.md
               - name: Update photo
                 href: api/profilephoto-update.md
+              - name: Delete photo
+                href: api/profilephoto-delete.md
           - name: Planner
             items:
               - name: Planner user
@@ -974,6 +978,9 @@ items:
                 href: api/profilephoto-get.md
               - name: Update photo
                 href: api/profilephoto-update.md
+              - name: Delete photo
+                href: api/profilephoto-delete.md
+                
           - name: Planner
             items:
               - name: Planner plan
@@ -10212,16 +10219,18 @@ items:
                     href: api/cloudpc-endgraceperiod.md
                   - name: Get connectivity history
                     href: api/cloudpc-getcloudpcconnectivityhistory.md
+                  - name: Get frontline access state
+                    href: api/cloudpc-getfrontlinecloudpcaccessstate.md
                   - name: Get launch info for user
                     href: api/cloudpc-getcloudpclaunchinfo.md
-                  - name: Get shift work access state
-                    href: api/cloudpc-getshiftworkcloudpcaccessstate.md
                   - name: Get provisioned Cloud PCs
                     href: api/cloudpc-getprovisionedcloudpcs.md
                   - name: Get remote action results
                     href: api/manageddevice-getcloudpcremoteactionresults.md
                   - name: Get review status
                     href: api/manageddevice-getcloudpcreviewstatus.md
+                  - name: Get shift work access state (deprecated)
+                    href: api/cloudpc-getshiftworkcloudpcaccessstate.md
                   - name: Get supported remote actions
                     href: api/cloudpc-getsupportedcloudpcremoteactions.md
                   - name: Power on
@@ -11177,6 +11186,80 @@ items:
                 href: api/schemaextension-update.md
               - name: Delete
                 href: api/schemaextension-delete.md
+      - name: External data connections
+        items:
+          - name: Overview
+            href: resources/connectors-api-overview.md
+          - name: External connection
+            items:
+              - name: External connection
+                href: resources/externalconnectors-externalconnection.md
+              - name: List
+                href: api/externalconnectors-externalconnection-list.md
+              - name: Create
+                href: api/externalconnectors-external-post-connections.md
+              - name: Get
+                href: api/externalconnectors-externalconnection-get.md
+              - name: Update
+                href: api/externalconnectors-externalconnection-update.md
+              - name: Delete
+                href: api/externalconnectors-externalconnection-delete.md
+              - name: Get operation
+                href: api/externalconnectors-connectionoperation-get.md
+          - name: Connection quota
+            items:
+              - name: Connection quota
+                href: resources/externalconnectors-connectionquota.md
+              - name: Get
+                href: api/externalconnectors-connectionquota-get.md
+          - name: External activity
+            items:
+              - name: External activity
+                href: resources/externalconnectors-externalactivity.md
+          - name: External activity result
+            items:
+              - name: External activity result
+                href: resources/externalconnectors-externalactivityresult.md
+          - name: External group
+            items:
+              - name: External group
+                href: resources/externalconnectors-externalgroup.md
+              - name: Create
+                href: api/externalconnectors-externalconnection-post-groups.md
+              - name: Delete
+                href: api/externalconnectors-externalgroup-delete.md
+          - name: External group member
+            items:
+              - name: External group member
+                href: resources/externalconnectors-externalgroupmember.md
+              - name: Create
+                href: api/externalconnectors-externalgroup-post-members.md
+              - name: Delete
+                href: api/externalconnectors-externalgroupmember-delete.md
+          - name: External item
+            items:
+              - name: External item
+                href: resources/externalconnectors-externalitem.md
+              - name: Create
+                href: api/externalconnectors-externalconnection-put-items.md
+              - name: Get
+                href: api/externalconnectors-externalitem-get.md
+              - name: Update
+                href: api/externalconnectors-externalitem-update.md
+              - name: Delete
+                href: api/externalconnectors-externalitem-delete.md
+              - name: Add activities
+                href: api/externalconnectors-externalitem-addactivities.md
+          - name: Schema
+            items:
+              - name: Schema
+                href: resources/externalconnectors-schema.md
+              - name: Create
+                href: api/externalconnectors-externalconnection-patch-schema.md
+              - name: Get
+                href: api/externalconnectors-schema-get.md
+              - name: Update
+                href: api/externalconnectors-schema-update.md
       - name: Files
         displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
         items:
@@ -11731,6 +11814,8 @@ items:
                         href: api/recommendation-postpone.md
                       - name: Reactivate
                         href: api/recommendation-reactivate.md
+                      - name: Get tenant Secure Score
+                        href: api/recommendation-tenantsecurescores.md
                   - name: Impacted resources
                     items:
                       - name: Impacted resource
@@ -12212,6 +12297,11 @@ items:
                         href: api/networkaccess-devicelink-update.md
                       - name: Delete
                         href: api/networkaccess-branchsite-delete-devicelinks.md
+                  - name: Connectivity configuration
+                    href: resources/networkaccess-connectivityconfigurationlink.md
+                    items:
+                      - name: Get
+                        href: api/networkaccess-branchconnectivityconfiguration-get.md 
                   - name: Forwarding profile
                     items:
                       - name: List
@@ -13316,6 +13406,15 @@ items:
                         href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-get.md
                       - name: Delete
                         href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-delete.md
+                  - name: Platform Credential
+                    href: resources/platformcredentialauthenticationmethod.md
+                    items:
+                      - name: List
+                        href: api/platformcredentialauthenticationmethod-list.md
+                      - name: Get
+                        href: api/platformcredentialauthenticationmethod-get.md
+                      - name: Delete
+                        href: api/platformcredentialauthenticationmethod-delete.md                       
               - name: Authentication strengths
                 items:
                   - name: Overview
@@ -15377,15 +15476,15 @@ items:
                   items:
                     - name: Microsoft Entra service acitviy
                       href: resources/serviceactivity.md
-                    - name: Get MFA sign in success metrics
+                    - name: Get MFA sign-in success metrics
                       href: api/serviceactivity-getmetricsformfasigninsuccess.md
-                    - name: Get MFA sign in failure metrics
+                    - name: Get MFA sign-in failure metrics
                       href: api/serviceactivity-getmetricsformfasigninfailure.md
-                    - name: Get managed devices conditional access sign in metrics
+                    - name: Get managed devices conditional access sign-in metrics
                       href: api/serviceactivity-getmetricsforconditionalaccessmanageddevicessigninsuccess.md
-                    - name: Get compiant devices conditional access sign in metrics
+                    - name: Get compliant devices conditional access sign-in metrics
                       href: api/serviceactivity-getmetricsforconditionalaccesscompliantdevicessigninsuccess.md
-                    - name: Get SAML sign in metrics
+                    - name: Get SAML sign-in metrics
                       href: api/serviceactivity-getmetricsforsamlsigninsuccess.md
                 - name: Registration and usage
                   items:
@@ -15799,80 +15898,6 @@ items:
                     href: api/search-qna-update.md
                   - name: Delete qna
                     href: api/search-qna-delete.md
-          - name: Index
-            items:
-              - name: Overview
-                href: resources/indexing-api-overview.md
-              - name: External connection
-                items:
-                  - name: External connection
-                    href: resources/externalconnectors-externalconnection.md
-                  - name: List
-                    href: api/externalconnectors-externalconnection-list.md
-                  - name: Create
-                    href: api/externalconnectors-external-post-connections.md
-                  - name: Get
-                    href: api/externalconnectors-externalconnection-get.md
-                  - name: Update
-                    href: api/externalconnectors-externalconnection-update.md
-                  - name: Delete
-                    href: api/externalconnectors-externalconnection-delete.md
-                  - name: Get operation
-                    href: api/externalconnectors-connectionoperation-get.md
-              - name: Schema
-                items:
-                  - name: Schema
-                    href: resources/externalconnectors-schema.md
-                  - name: Create
-                    href: api/externalconnectors-externalconnection-patch-schema.md
-                  - name: Get
-                    href: api/externalconnectors-schema-get.md
-                  - name: Update
-                    href: api/externalconnectors-schema-update.md
-              - name: External activity
-                items:
-                  - name: External activity
-                    href: resources/externalconnectors-externalactivity.md
-              - name: External activity result
-                items:
-                  - name: External activity result
-                    href: resources/externalconnectors-externalactivityresult.md
-              - name: External item
-                items:
-                  - name: External item
-                    href: resources/externalconnectors-externalitem.md
-                  - name: Create
-                    href: api/externalconnectors-externalconnection-put-items.md
-                  - name: Get
-                    href: api/externalconnectors-externalitem-get.md
-                  - name: Update
-                    href: api/externalconnectors-externalitem-update.md
-                  - name: Delete
-                    href: api/externalconnectors-externalitem-delete.md
-                  - name: Add activities
-                    href: api/externalconnectors-externalitem-addactivities.md
-              - name: External group
-                items:
-                  - name: External group
-                    href: resources/externalconnectors-externalgroup.md
-                  - name: Create
-                    href: api/externalconnectors-externalconnection-post-groups.md
-                  - name: Delete
-                    href: api/externalconnectors-externalgroup-delete.md
-              - name: External group member
-                items:
-                  - name: External group member
-                    href: resources/externalconnectors-externalgroupmember.md
-                  - name: Create
-                    href: api/externalconnectors-externalgroup-post-members.md
-                  - name: Delete
-                    href: api/externalconnectors-externalgroupmember-delete.md
-              - name: Connection quota
-                items:
-                  - name: Connection quota
-                    href: resources/externalconnectors-connectionquota.md
-                  - name: Get
-                    href: api/externalconnectors-connectionquota-get.md
       - name: Security
         items:
           - name: Overview
@@ -16734,46 +16759,46 @@ items:
                 href: api/site-list.md
               - name: Get site
                 href: api/site-get.md
-              - name: Get lists
-                href: api/list-list.md
-              - name: List subsites
-                href: api/site-list-subsites.md
-              - name: Get site analytics
-                href: api/itemanalytics-get.md
-              - name: Get activities by interval
-                href: api/itemactivity-getbyinterval.md
-              - name: Follow site
-                href: api/site-follow.md
-              - name: Unfollow site
-                href: api/site-unfollow.md
-              - name: List followed sites
-                href: api/sites-list-followed.md
-              - name: List columns
-                href: api/site-list-columns.md
               - name: Create column
                 href: api/site-post-columns.md
-              - name: List content types
-                href: api/site-list-contenttypes.md
               - name: Create content type
                 href: api/site-post-contenttypes.md
-              - name: Get applicable content types for list
-                href: api/site-getapplicablecontenttypesforlist.md
-              - name: Get lists
-                href: api/list-list.md
               - name: Create list
                 href: api/list-create.md
-              - name: List subsites
-                href: api/site-list-subsites.md
-              - name: Search for sites
-                href: api/site-search.md
-              - name: List operations
-                href: api/site-list-operations.md
+              - name: Follow site
+                href: api/site-follow.md
+              - name: Get activities by interval
+                href: api/itemactivity-getbyinterval.md
+              - name: Get applicable content types for list
+                href: api/site-getapplicablecontenttypesforlist.md
+              - name: Get delta
+                href: api/site-delta.md
+              - name: Get lists
+                href: api/list-list.md
+              - name: Get lists
+                href: api/list-list.md
+              - name: Get site analytics
+                href: api/itemanalytics-get.md
               - name: Get site settings
                 href: api/sitesettings-get.md
               - name: List all sites
                 href: api/site-getallsites.md
+              - name: List columns
+                href: api/site-list-columns.md
+              - name: List content types
+                href: api/site-list-contenttypes.md
+              - name: List followed sites
+                href: api/sites-list-followed.md
+              - name: List operations
+                href: api/site-list-operations.md               
               - name: List recycle bin items
                 href: api/recyclebin-list-items.md
+              - name: List subsites
+                href: api/site-list-subsites.md
+              - name: Search for sites
+                href: api/site-search.md
+              - name: Unfollow site
+                href: api/site-unfollow.md
           - name: List
             items:
               - name: List
@@ -17881,6 +17906,8 @@ items:
                     href: api/chatmessage-setreaction.md
                   - name: Unset message reaction
                     href: api/chatmessage-unsetreaction.md
+                  - name: Remove all access for user
+                    href: api/chat-removeallaccessforuser.md
               - name: Chat message
                 href: resources/chatmessage.md
                 items:

@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
 var requestBody = new UserScopeTeamsAppInstallation
 {
@@ -24,10 +25,12 @@ var requestBody = new UserScopeTeamsAppInstallation
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"teamsApp@odata.bind" , "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
+			"teamsApp@odata.bind" , "https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Users["{user-id}"].Teamwork.InstalledApps.PostAsync(requestBody);
 
 

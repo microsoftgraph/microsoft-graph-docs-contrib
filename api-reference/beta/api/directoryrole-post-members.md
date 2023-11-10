@@ -2,6 +2,7 @@
 title: "Add directory role member"
 description: "Create a new directory role member."
 author: "DougKirschner"
+ms.reviewer: msodsrbac
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
