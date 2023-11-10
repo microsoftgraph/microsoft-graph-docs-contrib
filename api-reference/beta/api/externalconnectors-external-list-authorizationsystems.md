@@ -179,7 +179,7 @@ Content-Type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/$entity",  
   "value": [  
     {  
-      "@odata.type": "#microsoft.graph.awsAuthorizationSystem"  
+      "@odata.type": "#microsoft.graph.awsAuthorizationSystem",  
       "id": "OTU2OTg3ODg3NzM1",  
       "authorizationSystemId": "956987887735",  
       "authorizationSystemName": "development",  
@@ -190,7 +190,7 @@ Content-Type: application/json
           "@odata.type": "microsoft.graph.entitlementsDataCollection",  
           "status": "online",  
           "lastCollectionDateTime": "2023-02-17T21:12:48Z",  
-          "permissionsModificationCapability":  "enabled"  
+          "permissionsModificationCapability": "enabled"  
         }  
       }  
     },  
