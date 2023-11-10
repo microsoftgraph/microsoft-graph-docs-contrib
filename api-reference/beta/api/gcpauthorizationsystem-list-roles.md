@@ -1,5 +1,5 @@
 ---
-title: "List gcpRoles"
+title: "List roles (for a GCP authorization system)"
 description: "List all GCP roles in a GCP authorization system."
 author: "mrudulahg01"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# List gcpRoles
+# List roles (for a GCP authorization system)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

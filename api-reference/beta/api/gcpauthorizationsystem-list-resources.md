@@ -1,5 +1,5 @@
 ---
-title: "List gcpAuthorizationSystemResources"
+title: "List resources (for a GCP authorization system)"
 description: "List the gcpAuthorizationSystemResource objects and their properties for a provided GCP authorization system."
 author: "mrudulahg01"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# List gcpAuthorizationSystemResources
+# List resources (for a GCP authorization system)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -54,9 +54,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: List the GCP resources for a provided GCP authorization system.
-
-#### Request
+### Request
 The following example shows a request.
 <!-- {
   "blockType": "request",
@@ -67,8 +65,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.gcpAuthorizationSystem/resources
 ```
 
-
-### Response
+## Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

@@ -1,5 +1,5 @@
 ---
-title: "List actions in a GCP authorization system"
+title: "List actions (in a GCP authorization system)"
 description: "List the gcpAuthorizationSystemTypeAction objects and their properties."
 author: "mrudulahg01"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# List actions in a GCP authorization system
+# List actions (in a GCP authorization system)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -54,10 +54,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: List actions in the GCP Authorization System
-Returns collection of all gcpAuthorizationSystemTypeAction entities for a provided GCP authorization system. Listing actions for a GCP project "carbide-bonsai-205017".
+### Example 1: List actions in a GCP authorization system
 
-### Request
+#### Request
 The following example shows a request.
 <!-- {
   "blockType": "request",
@@ -65,11 +64,10 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.gcpAuthorizationSystem/actions'
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.gcpAuthorizationSystem/actions
 ```
 
-
-### Response
+#### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -119,11 +117,9 @@ Content-Type: application/json
 }
 ```
 
+### Example 2: List actions for a service in a GCP authorization system
 
-### Example 2: List actions for a service in the GCP Authorization System
-Returns collection of all gcpAuthorizationSystemTypeAction entities for a provided GCP authorization system and service the action is performed on. Listing actions for a GCP project "carbide-bonsai-205017" and service "compute".
-
-### Request
+#### Request
 The following example shows a request.
 <!-- {
   "blockType": "request",
@@ -135,7 +131,7 @@ GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsof
 ```
 
 
-### Response
+#### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

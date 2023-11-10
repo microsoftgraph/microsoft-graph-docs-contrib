@@ -26,16 +26,16 @@ Inherits from [authorizationSystemResource](../resources/authorizationsystemreso
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The name of the resource. Read-only. Supports `$filter` and (`eq`,`contains`). Inherited from [authorizationSystemResource](../resources/authorizationsystemresource.md).|
-|externalId|String|The id of the resource as defined by the authorization system provider. Read-only. Supports `$filter` and `eq`. Inherited from [authorizationSystemResource](../resources/authorizationsystemresource.md).|
-|id|String|The base64 encoded identifier of externalId of the resource. Inherited from [entity](../resources/entity.md). Read-only.|
+|displayName|String|The name of the resource. Read-only. Supports `$filter` (`eq`,`contains`). Inherited from [authorizationSystemResource](../resources/authorizationsystemresource.md).|
+|externalId|String|The ID of the resource as defined by GCP. Read-only. Supports `$filter` (`eq`). Inherited from [authorizationSystemResource](../resources/authorizationsystemresource.md).|
+|id|String|The ID for the resource as defined by Permissions Management. Inherited from [entity](../resources/entity.md). Read-only.|
 |resourceType|String|The type of the resource. Read-only. Inherited from [authorizationSystemResource](../resources/authorizationsystemresource.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
 |authorizationSystem|[authorizationSystem](../resources/authorizationsystem.md)|The authorization system that the resource is in. Inherited from [microsoft.graph.authorizationSystemResource](../resources/authorizationsystemresource.md)|
-|service|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md)|The service associated with the resource in an GCP authorization system. Ths is auto-expanded.|
+|service|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md)|The service associated with the resource in an GCP authorization system. This object is auto-expanded.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

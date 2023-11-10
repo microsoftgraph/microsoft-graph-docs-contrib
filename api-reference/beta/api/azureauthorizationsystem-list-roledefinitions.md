@@ -1,5 +1,5 @@
 ---
-title: "List azureRoleDefinitions"
+title: "List roleDefinitions (for an Azure authorization system)"
 description: "Lists all Azure roles in an Azure authorization system."
 author: "mrudulahg01"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# List azureRoleDefinitions
+# List roleDefinitions (for an Azure authorization system)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

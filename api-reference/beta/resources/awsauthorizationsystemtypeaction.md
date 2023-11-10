@@ -26,11 +26,11 @@ Inherits from [authorizationSystemTypeAction](../resources/authorizationsystemty
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionType|authorizationSystemActionType|The type of action. Supports `$filter` and `eq`. Inherited from [authorizationSystemTypeAction](../resources/authorizationsystemtypeaction.md). The possible values are: `delete`, `read`, `unknownFutureValue`.|
-|externalId|String|The display name of an action. Read-only. Supports `$filter` and `eq`. Inherited from [authorizationSystemTypeAction](../resources/authorizationsystemtypeaction.md).|
-|id|String|The base64 encoded identifier of externalId for an action. Read-only. Inherited from [entity](../resources/entity.md).|
+|actionType|authorizationSystemActionType|The type of action. Supports `$filter` (`eq`). Inherited from [authorizationSystemTypeAction](../resources/authorizationsystemtypeaction.md). The possible values are: `delete`, `read`, `unknownFutureValue`.|
+|externalId|String|The ID of the action as defined by AWS. Read-only. Supports `$filter` (`eq`). Inherited from [authorizationSystemTypeAction](../resources/authorizationsystemtypeaction.md).|
+|id|String|The ID for the action as defined by Permissions Management. Read-only. Inherited from [entity](../resources/entity.md).|
 |resourceTypes|String collection|The resource types the action can be performed on. Supports `$filter` and (`eq`, `contains`). Inherited from [authorizationSystemTypeAction](../resources/authorizationsystemtypeaction.md).|
-|severity|authorizationSystemActionSeverity|The severity of the action. Inherited from [authorizationSystemTypeAction](../resources/authorizationsystemtypeaction.md). The possible values are: `normal`, `high`, `unknownFutureValue`. Supports `$filter` and `eq`|
+|severity|authorizationSystemActionSeverity|The severity of the action. Inherited from [authorizationSystemTypeAction](../resources/authorizationsystemtypeaction.md). The possible values are: `normal`, `high`, `unknownFutureValue`. Supports `$filter` (`eq`).|
 
 ## Relationships
 |Relationship|Type|Description|

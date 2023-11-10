@@ -55,10 +55,8 @@ If successful, this method returns a `200 OK` response code and an [azureAuthori
 
 ## Examples
 
-### Example 1: Get an Azure resource for a provided Azure authorization system.
-
-#### Request
-The following example shows a request.
+### Request
+The following example shows a request to get an Azure resource for a provided Azure authorization system.
 <!-- {
   "blockType": "request",
   "name": "get_azureauthorizationsystemresource"
@@ -68,8 +66,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.azureAuthorizationSystem/resources/L3N1YnNjcmlwdGlvbnMvMmM0N2FiYjctYWRlNi00NzAwLTlhMTktYWM4YzE5MWEyYWI4L3Jlc291cmNlR3JvdXBzLzJlUmVzb3VyY2VHcm91cC9wcm92aWRlcnMvTWljcm9zb2Z0Lk5ldHdvcmsvdmlydHVhbE5ldHdvcmtzLzJlUmVzb3VyY2VHcm91cC12bmV0
 ```
 
-
-#### Response
+### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

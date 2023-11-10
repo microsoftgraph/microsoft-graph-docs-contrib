@@ -1,5 +1,5 @@
 ---
-title: "List actions for the Azure authorization system"
+title: "# List actions (for an Azure authorization system)"
 description: "List the azureAuthorizationSystemTypeAction objects and their properties."
 author: "mrudulahg01"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# List azureAuthorizationSystemTypeActions
+# List actions (for an Azure authorization system)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -55,8 +55,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Example 1: List all actions in the Azure authorization system
-
-Returns collection of all azureAuthorizationSystemTypeAction entities for a provided Azure authorization system. Listing actions for an Azure subscription "2c47abb7-ade6-4700-9a19-ac8c191a2ab8" and service "Microsoft.Storage".
 
 #### Request
 The following example shows a request.
@@ -121,8 +119,6 @@ Content-Type: application/json
 ```
 
 ### Example 2: List actions for a service in the Azure authorization system
-
-Returns collection of all azureAuthorizationSystemTypeAction entities for a provided Azure authorization system and service the action is performed on. Listing actions for an Azure subscription "2c47abb7-ade6-4700-9a19-ac8c191a2ab8" and service "Microsoft.Storage".
 
 #### Request
 The following example shows a request.

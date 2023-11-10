@@ -26,10 +26,10 @@ Inherits from [authorizationSystemResource](../resources/authorizationsystemreso
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The name of the resource. Read-only. Supports `$filter` and (`eq`,`contains`). Inherited from [authorizationSystemResource](../resources/authorizationsystemresource.md).|
-|externalId|String|The ID of the resource as defined by AWS. Read-only. Supports `$filter` and (`eq`). Inherited from [authorizationSystemResource](../resources/authorizationsystemresource.md).|
-|id|String|The ID of the resource in Microsoft Graph.  Read-only. Inherited from [entity](../resources/entity.md).|
-|resourceType|String|The type of the resource. Read-only. Supports `$filter` and (`eq`). Inherited from [authorizationSystemResource](../resources/authorizationsystemresource.md).|
+|displayName|String|The name of the resource. Read-only. Supports `$filter` (`eq`,`contains`). Inherited from [authorizationSystemResource](../resources/authorizationsystemresource.md).|
+|externalId|String|The ID of the resource as defined by AWS. Read-only. Supports `$filter` (`eq`). Inherited from [authorizationSystemResource](../resources/authorizationsystemresource.md).|
+|id|String|The ID of the resource as defined by Permissions Management.  Read-only. Inherited from [entity](../resources/entity.md).|
+|resourceType|String|The type of the resource. Read-only. Supports `$filter` (`eq`). Inherited from [authorizationSystemResource](../resources/authorizationsystemresource.md).|
 
 ## Relationships
 |Relationship|Type|Description|

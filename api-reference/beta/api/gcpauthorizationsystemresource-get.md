@@ -53,9 +53,9 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [gcpAuthorizationSystemResource](../resources/gcpauthorizationsystemresource.md) object in the response body.
 
-### Example 1: Get a GCP resource for a provided GCP authorization system.
+## Examples
 
-#### Request
+### Request
 The following example shows a request.
 <!-- {
   "blockType": "request",
@@ -66,8 +66,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.gcpAuthorizationSystem/resources/cHJvamVjdHMvaGVsbG8td29ybGQtMjMxMTA3L3pvbmVzL3VzLWNlbnRyYWwxLWEvaW5zdGFuY2VzL2luc3RhbmNlLTE
 ```
 
-
-#### Response
+### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

@@ -1,6 +1,6 @@
 ---
 title: "azureAuthorizationSystem resource type"
-description: "Represents findings for an Azure authorization system."
+description: "Represents an Azure authorization system onboarded to Permissions Management."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents findings for an Azure authorization system.
+Represents an Azure authorization system onboarded to Permissions Management.
 
 Inherits from [authorizationSystem](../resources/authorizationsystem.md).
 

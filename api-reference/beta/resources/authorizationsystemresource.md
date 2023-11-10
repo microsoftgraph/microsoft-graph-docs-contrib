@@ -23,10 +23,10 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The name of the resource. Read-only. Supports `$filter` and (`eq`,`contains`).|
-|externalId|String|The id of the resource as defined by the authorization system provider. Read-only. Supports `$filter` and (`eq`).|
-|id|String|The base64 encoded identifier of externalId of the resource. Inherited from [entity](../resources/entity.md). Read-only.|
-|resourceType|String|The type of the resource. Read-only. Supports `$filter` and (`eq`).|
+|displayName|String|The name of the resource. Read-only. Supports `$filter` (`eq`,`contains`).|
+|externalId|String|The ID of the resource as defined by the authorization system provider. Read-only. Supports `$filter` (`eq`).|
+|id|String|The ID for the resource as defined by Permissions Management. Inherited from [entity](../resources/entity.md). Read-only.|
+|resourceType|String|The type of the resource. Read-only. Supports `$filter` (`eq`).|
 
 ## Relationships
 |Relationship|Type|Description|
