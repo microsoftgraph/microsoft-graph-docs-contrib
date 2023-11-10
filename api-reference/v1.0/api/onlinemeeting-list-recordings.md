@@ -1,6 +1,6 @@
 ---
 title: "List recordings"
-description: "Get the list of callRecording objects associated with an onlineMeeting."
+description: "Get the list of callRecording objects associated with a scheduled onlineMeeting."
 author: "v-sdhakshina"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -15,8 +15,6 @@ Get the list of [callRecording](../resources/callrecording.md) objects associate
 
 > [!NOTE]
 > This API works differently in one or more national clouds. For details, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
-
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -33,7 +31,7 @@ One of the following permissions is required to call this API. For more informat
 To use application permission for this API, tenant administrators must create an application access policy and grant it to a user. This authorizes the app configured in the policy to fetch online meetings or online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more information, see [allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 
 > [!NOTE]
-> This API works for a meeting only if the meeting has not expired. For more information, see [limits and specifications for Microsoft Teams](/microsoftteams/limits-specifications-teams#meeting-expiration).
+> This API works only for a meeting that hasn't expired. For more information, see [limits and specifications for Microsoft Teams](/microsoftteams/limits-specifications-teams#meeting-expiration).
 
 ## HTTP request
 
@@ -64,6 +62,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
+The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "list_callRecordings",
@@ -75,6 +75,8 @@ GET  https://graph.microsoft.com/v1.0/users/b935e675-5e67-48b9-8d45-249d5f88e964
 ```
 
 ### Response
+
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -89,26 +91,26 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('b935e675-5e67-48b9-8d45-249d5f88e964')/onlineMeetings('MSpiOTM1ZTY3NS01ZTY3LTQ4YjktOGQ0NS0yNDlkNWY4OGU5NjQqMCoqMTk6bWVldGluZ19ZbU0zTnpJNU9USXRZakU0WlMwME1tUTNMVGt6TVRRdFkyWm1PRGRtWmpsaVptRTNAdGhyZWFkLnYy')/recordings",
-    "@odata.count": 1,
-    "value": [
-        {
-            "id": "7e31db25-bc6e-4fd8-96c7-e01264e9b6fc",
-            "meetingId": "MSpiOTM1ZTY3NS01ZTY3LTQ4YjktOGQ0NS0yNDlkNWY4OGU5NjQqMCoqMTk6bWVldGluZ19ZbU0zTnpJNU9USXRZakU0WlMwME1tUTNMVGt6TVRRdFkyWm1PRGRtWmpsaVptRTNAdGhyZWFkLnYy",
-            "createdDateTime": "2023-04-10T08:13:17.5990966Z",
-            "recordingContentUrl": "https://graph.microsoft.com/v1.0/$metadata#users('b935e675-5e67-48b9-8d45-249d5f88e964')/onlineMeetings('MSpiOTM1ZTY3NS01ZTY3LTQ4YjktOGQ0NS0yNDlkNWY4OGU5NjQqMCoqMTk6bWVldGluZ19ZbU0zTnpJNU9USXRZakU0WlMwME1tUTNMVGt6TVRRdFkyWm1PRGRtWmpsaVptRTNAdGhyZWFkLnYy')/recordings/('7e31db25-bc6e-4fd8-96c7-e01264e9b6fc')/content",
-             "meetingOrganizer": {
-                "application": null,
-                "device": null,
-                "user": {
-                  "@odata.type": "#Microsoft.Teams.GraphSvc.teamworkUserIdentity",
-                  "id": "b935e675-5e67-48b9-8d45-249d5f88e964",
-                  "displayName": null,
-                  "userIdentityType": "aadUser",
-                  "tenantId": "d6c9ce1e-4f71-8dc3-5b55-6a411ea46324",
-                }
-              }
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('b935e675-5e67-48b9-8d45-249d5f88e964')/onlineMeetings('MSpiOTM1ZTY3NS01ZTY3LTQ4YjktOGQ0NS0yNDlkNWY4OGU5NjQqMCoqMTk6bWVldGluZ19ZbU0zTnpJNU9USXRZakU0WlMwME1tUTNMVGt6TVRRdFkyWm1PRGRtWmpsaVptRTNAdGhyZWFkLnYy')/recordings",
+  "@odata.count": 1,
+  "value": [
+    {
+      "id": "7e31db25-bc6e-4fd8-96c7-e01264e9b6fc",
+      "meetingId": "MSpiOTM1ZTY3NS01ZTY3LTQ4YjktOGQ0NS0yNDlkNWY4OGU5NjQqMCoqMTk6bWVldGluZ19ZbU0zTnpJNU9USXRZakU0WlMwME1tUTNMVGt6TVRRdFkyWm1PRGRtWmpsaVptRTNAdGhyZWFkLnYy",
+      "createdDateTime": "2023-04-10T08:13:17.5990966Z",
+      "recordingContentUrl": "https://graph.microsoft.com/v1.0/$metadata#users('b935e675-5e67-48b9-8d45-249d5f88e964')/onlineMeetings('MSpiOTM1ZTY3NS01ZTY3LTQ4YjktOGQ0NS0yNDlkNWY4OGU5NjQqMCoqMTk6bWVldGluZ19ZbU0zTnpJNU9USXRZakU0WlMwME1tUTNMVGt6TVRRdFkyWm1PRGRtWmpsaVptRTNAdGhyZWFkLnYy')/recordings/('7e31db25-bc6e-4fd8-96c7-e01264e9b6fc')/content",
+      "meetingOrganizer": {
+        "application": null,
+        "device": null,
+        "user": {
+          "@odata.type": "#Microsoft.Teams.GraphSvc.teamworkUserIdentity",
+          "id": "b935e675-5e67-48b9-8d45-249d5f88e964",
+          "displayName": null,
+          "userIdentityType": "aadUser",
+          "tenantId": "d6c9ce1e-4f71-8dc3-5b55-6a411ea46324"
         }
-    ]
+      }
+    }
+  ]
 }
 ```
