@@ -11,12 +11,11 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a base virtual event. Base type of [virtualEventWebinar](virtualEventWebinar.md).
+Represents a base virtual event. 
+
+This is an abstract type. Use the derived type [virtualEventWebinar](virtualEventWebinar.md) instead.
 
 Inherits from [entity](../resources/entity.md).
-
-> [!TIP]
-> This is an abstract type and can't be used directly. Use the derived type [virtualEventWebinar](virtualEventWebinar.md) instead.
 
 ## Properties
 

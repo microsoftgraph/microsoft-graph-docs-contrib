@@ -1,9 +1,9 @@
 ---
 title: "virtualEventWebinar: getByUserIdAndRole"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "List all webinars where the specified user is either the organizer or a coorganizer."
+author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -15,14 +15,15 @@ Namespace: microsoft.graph
 **TODO: Add Description**
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "virtualeventwebinar-getbyuseridandrole-permissions"
-}
--->
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "virtualeventwebinar_getbyuseridandrole" } -->
 [!INCLUDE [permissions-table](../includes/permissions/virtualeventwebinar-getbyuseridandrole-permissions.md)]
+
+> [!IMPORTANT]
+>
+> To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to the specified user to authorize the app to get webinars on behalf of that user.
 
 ## HTTP request
 
@@ -31,25 +32,26 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /solutions/virtualEvents/webinars/getByUserIdAndRole
+GET /solutions/virtualEvents/webinars/getByUserIdAndRole(userId='{userId}', role='{role}')
 ```
 
 ## Function parameters
+
 In the request URL, provide the following query parameters with values.
-The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|userId|String|**TODO: Add Description**|
-|role|String|**TODO: Add Description**|
-
+|userId|String|The ID of the specified user in Microsoft Entra.|
+|role|String|User role of the specified user in the webinar. Possible values are: `organizer`, `coOrganizer`.|
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -66,7 +68,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/getByUserIdAndRole(userId='parameterValue',role='parameterValue')
+GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/getByUserIdAndRole(userId='b7ef013a-c73c-4ec7-8ccb-e56290f45f68', role='organizer')
 ```
 
 
@@ -87,29 +89,37 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.virtualEventWebinar",
-      "id": "String (identifier)",
-      "status": "String",
-      "displayName": "String",
-      "description": {
-        "@odata.type": "microsoft.graph.itemBody"
-      },
+      "id": "88b245ac-b0b2-f1aa-e34a-c81c27abdac2@f9448ec4-804b-46af-b810-62085248da33",
+      "status": "published",
+      "displayName": "The Impact of Tech on Our Lives",
+      "description": "Discusses how technology has changed the way we communicate, work, and interact with each other.",
       "startDateTime": {
-        "@odata.type": "microsoft.graph.dateTimeTimeZone"
+        "dateTime": "2023-03-30T10:00:00",
+        "timeZone": "PacificSt"
       },
       "endDateTime": {
-        "@odata.type": "microsoft.graph.dateTimeTimeZone"
+        "dateTime": "2023-03-30T17:00:00",
+        "timeZone": "PacificSt"
       },
       "createdBy": {
-        "@odata.type": "microsoft.graph.communicationsIdentitySet"
+        "application": null,
+        "device": null,
+        "user": {
+          "@odata.type": "#microsoft.graph.communicationsUserIdentity",
+          "id": "b7ef013a-c73c-4ec7-8ccb-e56290f45f68",
+          "displayName": "Diane Demoss",
+          "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
+        }
       },
-      "audience": "String",
+      "audience": "everyone",
       "coOrganizers": [
         {
-          "@odata.type": "microsoft.graph.communicationsUserIdentity"
+          "id": "7b7e1acd-a3e0-4533-8c1d-c1a4ca0b2e2b",
+          "displayName": "Kenneth Brown",
+          "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c"
         }
       ]
     }
   ]
 }
 ```
-
