@@ -36,7 +36,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 
-To list all webinars of a tenant.
+To list all webinars of a tenant:
 
 ``` http
 GET /solutions/virtualEvents/webinars
@@ -56,7 +56,7 @@ Some queries are supported only when you use the **ConsistencyLevel** header set
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
