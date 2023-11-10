@@ -73,7 +73,7 @@ When a result set spans multiple pages, Microsoft Graph returns that page with a
 
 ### Example 1: Get basic details
 
-The following example shows a request to get the basic details from a [callRecord](../resources/callrecords-callrecord.md).
+The following example shows how to get the basic details from a [callRecord](../resources/callrecords-callrecord.md).
 
 #### Request
 
@@ -132,7 +132,7 @@ Content-type: application/json
 
 ### Example 2: Get session and segment details
 
-The following example shows a request to get the full session and segment details from a [callRecord](../resources/callrecords-callrecord.md).
+The following example shows how to get the full session and segment details from a [callRecord](../resources/callrecords-callrecord.md).
 
 #### Request
 
@@ -268,7 +268,7 @@ Content-type: application/json
 
 ### Example 3: Get participant details
 
-The following example shows a request to expand the full paginated participant list for a [callRecord](../resources/callrecords-callrecord.md).
+The following example shows how to expand the full paginated participant list for a [callRecord](../resources/callrecords-callrecord.md).
 
 #### Request
 
