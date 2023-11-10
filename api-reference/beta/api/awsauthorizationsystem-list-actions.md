@@ -158,7 +158,7 @@ Content-Type: application/json
 The following example shows a request to retrieve the actions for an AWS authorization system where the service that the action is performed on is `ec2`.
 <!-- {
   "blockType": "request",
-  "name": "list_awsauthorizationsystemtypeaction"
+  "name": "list_awsauthorizationsystemtypeaction2"
 }
 -->
 ``` http
@@ -222,7 +222,7 @@ Content-Type: application/json
 The following example shows a request that retrieves actions for an AWS authorization system where the service that the action is performed on is `ec2` and the action is a high risk delete action.
 <!-- {
   "blockType": "request",
-  "name": "list_awsauthorizationsystemtypeaction"
+  "name": "list_awsauthorizationsystemtypeaction3"
 }
 -->
 ``` http

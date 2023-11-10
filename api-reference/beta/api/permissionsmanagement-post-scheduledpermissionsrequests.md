@@ -181,7 +181,7 @@ Content-Type: application/json
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_scheduledpermissionsrequest_from_"
+  "name": "create_scheduledpermissionsrequest_from__"
 }
 -->
 ``` http
@@ -239,7 +239,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.scheduledPermissionsRequest"
+  "@odata.type": "microsoft.graph.scheduledPermissionsRequest___"
 }
 -->
 ``` http
@@ -299,7 +299,7 @@ Content-Type: application/json
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_scheduledpermissionsrequest_from_"
+  "name": "create_scheduledpermissionsrequest_from_____"
 }
 -->
 ``` http
@@ -351,7 +351,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.scheduledPermissionsRequest"
+  "@odata.type": "microsoft.graph.scheduledPermissionsRequest______"
 }
 -->
 ``` http

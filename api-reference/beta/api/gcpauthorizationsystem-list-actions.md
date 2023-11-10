@@ -125,7 +125,7 @@ Returns collection of all gcpAuthorizationSystemTypeAction entities for a provid
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_gcpauthorizationsystemtypeaction"
+  "name": "list_gcpauthorizationsystemtypeaction2"
 }
 -->
 ``` http

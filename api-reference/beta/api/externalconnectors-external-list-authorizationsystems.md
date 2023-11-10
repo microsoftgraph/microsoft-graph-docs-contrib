@@ -154,7 +154,7 @@ Content-Type: application/json
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_authorizationsystem"
+  "name": "list_authorizationsystem2"
 }
 -->
 ``` http

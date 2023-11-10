@@ -126,7 +126,7 @@ Returns collection of all azureAuthorizationSystemTypeAction entities for a prov
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_azureauthorizationsystemtypeaction"
+  "name": "list_azureauthorizationsystemtypeaction2"
 }
 -->
 ``` http

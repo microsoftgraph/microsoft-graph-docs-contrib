@@ -108,7 +108,7 @@ The following request lists all policies named `AdministratorAccess` in an AWS a
 
 <!-- {
   "blockType": "request",
-  "name": "list_awspolicy"
+  "name": "list_awspolicy2"
 }
 -->
 ``` http
@@ -150,7 +150,7 @@ The following request lists all policies in an AWS authorization system where th
 
 <!-- {
   "blockType": "request",
-  "name": "list_awspolicy"
+  "name": "list_awspolicy3"
 }
 -->
 ``` http
@@ -192,7 +192,7 @@ The following example requests all custom policies in an AWS authorization syste
 
 <!-- {
   "blockType": "request",
-  "name": "list_awspolicy"
+  "name": "list_awspolicy4"
 }
 -->
 ``` http
