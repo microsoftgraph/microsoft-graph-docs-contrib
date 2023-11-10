@@ -190,7 +190,7 @@ Content-Type: application/json
           "@odata.type": "microsoft.graph.entitlementsDataCollection",  
           "status": "online",  
           "lastCollectionDateTime": "2023-02-17T21:12:48Z",  
-          "permissionsModificationCapability":  "enabled"  
+          "permissionsModificationCapability": "enabled"  
         }  
       }  
     },  
