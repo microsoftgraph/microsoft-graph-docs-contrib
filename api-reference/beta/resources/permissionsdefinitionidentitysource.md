@@ -15,10 +15,10 @@ Namespace: microsoft.graph
 
 An abstract type that defines the source of an identity that's requesting permissions through Permissions Management.
 This is an abstract type from which the following resources are derived:
-[samlIdentitySource]
-[awsIdentitySource]
-[edIdentitySource]
-[localIdentitySource]
+[samlIdentitySource](../resources/samlidentitysource.md)
+[awsIdentitySource](../resources/awsidentitysource.md)
+[edIdentitySource](../resources/edidentitysource.md)
+[localIdentitySource](../resources/localidentitysource.md)
 
 ## Properties
 None
