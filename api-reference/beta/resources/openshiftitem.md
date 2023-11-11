@@ -1,6 +1,6 @@
 ---
 title: "openShiftItem resource type"
-description: "Represents a single count of an open shift."
+description: "Represents the details of an open shift."
 ms.localizationpriority: medium
 author: "akumar39"
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a single count of an [openshift](../resources/openshift.md).
+Represents the details of an [open shift](../resources/openshift.md).
 
 ## Properties
 
@@ -36,7 +36,14 @@ Here's a JSON representation of the resource.
 
 ```json
 {
-  "openSlotCount": 1024
+  "openSlotCount": 1024,
+  "displayName": "Day Shift",
+  "startDateTime": "2023-06-11T01:45:00Z",
+  "endDateTime": "2023-06-11T02:15:00Z",
+  "theme": "blue",
+  "notes": null,
+  "openSlotCount": 6,
+  "activities": []
 }
 ```
 

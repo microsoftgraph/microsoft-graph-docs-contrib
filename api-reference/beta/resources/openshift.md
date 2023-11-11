@@ -1,10 +1,10 @@
 ---
 title: "openShift resource type"
 description: "Represents an unassigned open shift in a schedule."
+author: "raulfernandes"
 ms.localizationpriority: medium
-author: "akumar39"
 ms.prod: "microsoft-teams"
-doc_type: "resourcePageType"
+doc_type: resourcePageType
 ---
 
 # openShift resource type
@@ -16,55 +16,63 @@ Namespace: microsoft.graph
 Represents an unassigned, open shift in a [schedule](../resources/schedule.md).
 
 ## Methods
-
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
-| [Create](../api/openshift-post.md) | [openShift](openshift.md) | Create an instance of an **openShift** object. |
-| [List](../api/openshift-list.md) | Collection of [openShift](openshift.md) | List the properties and relationships of **openShift** objects in a team.|
-| [Get](../api/openshift-get.md) | [openShift](openshift.md) | Read the properties and relationships of an **openShift** object. |
-| [Update](../api/openshift-update.md) | [openShift](openshift.md) | Update an **openShift** object. |
-| [Delete](../api/openshift-delete.md) | None | Delete an **openShift** object. |
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List openShifts in schedule](../api/openshift-list.md)|[openShift](../resources/openshift.md) collection|Get a list of the [openShift](../resources/openshift.md) objects and their properties.|
+|[Create openShift](../api/openshift-post.md)|[openShift](../resources/openshift.md)|Create a new [openShift](../resources/openshift.md) object.|
+|[Get openShift](../api/openshift-get.md)|[openShift](../resources/openshift.md)|Read the properties and relationships of an [openShift](../resources/openshift.md) object.|
+|[Update openShift](../api/openshift-update.md)|[openShift](../resources/openshift.md)|Update the properties of an [openShift](../resources/openshift.md) object.|
+|[Delete openShift](../api/openshift-delete.md)|None|Delete an [openShift](../resources/openshift.md) object.|
+|[stageForDeletion](../api/openshift-stagefordeletion.md)|None|Stage an [openShift](../resources/openshift.md) for deletion (The open shift draft state is set to be deleted, the open shift will be deleted when the schedule is shared).|
+|[List openShifts in joined teams](../api/team-getopenshifts.md)|[openShift](../resources/openshift.md) collection|Get a list of the [openShift](../resources/openshift.md) objects and their properties.|
 
 ## Properties
-
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|draftOpenShift|[openShiftItem](openshiftitem.md)|An unpublished open shift.|
-|schedulingGroupId|String|ID for the scheduling group that the open shift belongs to.|
-|sharedOpenShift|[openShiftItem](openshiftitem.md)|A published open shift.|
+|Property|Type|Description|
+|:---|:---|:---|
+|draftOpenShift|[openShiftItem](../resources/openshiftitem.md)|Draft changes in the open shift (only visible to managers until [shared](../api/schedule-share.md)).|
+|isStagedForDeletion|Boolean|The open shift is marked for deletion (finalized when the schedule is [shared](../api/schedule-share.md))|
+|schedulingGroupId|String|The ID of the schedule group the open shift is in|
+|schedulingGroupName|String|The name of the scheduling group the open shift is in (computed)|
+|sharedOpenShift|[openShiftItem](../resources/openshiftitem.md)|Published changes in the open shift (Shared with team).|
+|teamId|String|The ID of the team the open shift is in (computed)|
+|teamName|String|The name of the team the open shift is in (computed)|
 
 ## Relationships
-
 None.
 
 ## JSON representation
-
-The following is a JSON representation of the resource.
-
+The following payload is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.openShift"
-}-->
-
-```json
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.openShift",
+  "baseType": "microsoft.graph.changeTrackedEntity",
+  "openType": false
+}
+-->
+``` json
 {
-  "draftOpenShift": {"@odata.type": "microsoft.graph.openShiftItem"},
+  "@odata.type": "#microsoft.graph.openShift",
+  "id": "String (identifier)",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "createdDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "String (timestamp)",
+  "lastModifiedBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "sharedOpenShift": {
+    "@odata.type": "microsoft.graph.openShiftItem"
+  },
+  "draftOpenShift": {
+    "@odata.type": "microsoft.graph.openShiftItem"
+  },
   "schedulingGroupId": "String",
-  "sharedOpenShift": {"@odata.type": "microsoft.graph.openShiftItem"}
+  "isStagedForDeletion": "Boolean",
+  "schedulingGroupName": "String",
+  "teamId": "String",
+  "teamName": "String"
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "openShift resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
-
 
