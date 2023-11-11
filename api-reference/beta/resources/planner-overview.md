@@ -43,7 +43,15 @@ When you [create a new plan](../api/planner-post-plans.md), set the **container*
 ```json
 {
     "container": {
-        "type": "user",
+        "id": "<a valid user id>",
+        "type", "user"
+    }
+}
+```
+
+```json
+{
+    "container": {
         "url": "https://graph.microsoft.com/beta/users/me"
     }
 }
