@@ -17,7 +17,8 @@ Create a new [fileStorageContainer](../resources/filestoragecontainer.md) object
 The respective container type identified by containerTypeId must be enabled in the tenant. The calling application must have permission to create fileStorageContainers for the individual container type.
 
 
-For Delegated calls, the calling user will be set as the owner of the fileStorageContainer. 
+For delegated calls, the calling user will be set as the owner of the fileStorageContainer. 
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
