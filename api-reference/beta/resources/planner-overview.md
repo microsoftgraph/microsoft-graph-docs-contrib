@@ -49,6 +49,8 @@ When you [create a new plan](../api/planner-post-plans.md), set the **container*
 }
 ```
 
+Alternatively, you can specify the URL for a user.
+
 ```json
 {
     "container": {
