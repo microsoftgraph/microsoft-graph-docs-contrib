@@ -2,6 +2,7 @@
 title: "Get unifiedRbacResourceNamespace"
 description: "Read the properties and relationships of an unifiedRbacResourceNamespace object."
 author: "DougKirschner"
+ms.reviewer: msodsrbac
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType

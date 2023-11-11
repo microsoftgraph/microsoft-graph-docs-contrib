@@ -21,7 +21,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "samlorwsfedexternaldomainfederation_list_domains" } -->
 [!INCLUDE [permissions-table](../includes/permissions/samlorwsfedexternaldomainfederation-list-domains-permissions.md)]
 
-The work or school account needs to belong to one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference):
+The work or school account needs to belong to one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
 * Global Administrator
 * External Identity Provider Administrator
@@ -93,7 +93,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft-ppe.com/beta/$metadata#directory/federationConfigurations/microsoft.graph.samlOrWsFedExternalDomainFederation('f1e11a04-0244-4592-99df-b01cfaadce15')/domains",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/federationConfigurations/microsoft.graph.samlOrWsFedExternalDomainFederation('f1e11a04-0244-4592-99df-b01cfaadce15')/domains",
     "value": [
         {
             "id": "fabrikam.com"

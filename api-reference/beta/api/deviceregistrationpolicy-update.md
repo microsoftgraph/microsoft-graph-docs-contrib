@@ -21,7 +21,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "deviceregistrationpolicy_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/deviceregistrationpolicy-update-permissions.md)]
 
-When calling on behalf of a user, the user needs the *Cloud Device Administrator* [Microsoft Entra role](/azure/active-directory/roles/permissions-reference).
+When calling on behalf of a user, the user needs the *Cloud Device Administrator* [Microsoft Entra role](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 ## HTTP request
 

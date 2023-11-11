@@ -3,6 +3,7 @@ title: "Delete unifiedRoleAssignment"
 description: "Delete a unifiedRoleAssignment object."
 ms.localizationpriority: medium
 author: "DougKirschner"
+ms.reviewer: msodsrbac
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---

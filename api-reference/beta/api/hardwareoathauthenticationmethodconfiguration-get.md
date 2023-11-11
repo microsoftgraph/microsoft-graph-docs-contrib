@@ -2,6 +2,7 @@
 title: "Get hardwareOathAuthenticationMethodConfiguration"
 description: "Read the properties and relationships of a hardwareOathAuthenticationMethodConfiguration object."
 author: "luc-msft"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

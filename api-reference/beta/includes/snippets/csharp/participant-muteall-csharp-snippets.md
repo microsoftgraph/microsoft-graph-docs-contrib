@@ -6,9 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Communications.Calls.Item.Participants.MuteAll;
 
-var requestBody = new Microsoft.Graph.Beta.Communications.Calls.Item.Participants.MuteAll.MuteAllPostRequestBody
+var requestBody = new MuteAllPostRequestBody
 {
 	Participants = new List<string>
 	{
@@ -16,6 +17,8 @@ var requestBody = new Microsoft.Graph.Beta.Communications.Calls.Item.Participant
 	},
 	ClientContext = "clientContext-value",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Communications.Calls["{call-id}"].Participants.MuteAll.PostAsync(requestBody);
 
 

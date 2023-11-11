@@ -2,6 +2,7 @@
 title: "Update softwareOathAuthenticationMethodConfiguration"
 description: "Update the properties of a softwareOathAuthenticationMethodConfiguration object."
 author: "jpettere"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
