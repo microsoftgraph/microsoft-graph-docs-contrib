@@ -1,5 +1,5 @@
 ---
-title: "Get filtering Policy Link"
+title: "Get filteringPolicyLink"
 description: "Get a filteringPolicyLink object."
 author: Moti-ba
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 
-# Get filtering Policy Link
+# Get filteringPolicyLink
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

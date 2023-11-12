@@ -1,5 +1,5 @@
 ---
-title: "Delete policyLink"
+title: "Delete policies"
 description: "Delete a microsoft.graph.networkaccess.policyLink object."
 author: Moti-ba
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 
-# Delete policyLink
+# Delete policies
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new filtering rule.
+Create a new [filteringRule](../resources/networkaccess-filteringrule.md).
 
 
 ## Permissions
@@ -47,7 +47,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [filteringRule](../resources/networkaccess-filteringrule.md) object in the response body.
 
 ## Examples
 

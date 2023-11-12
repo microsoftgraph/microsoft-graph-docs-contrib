@@ -1,18 +1,18 @@
 ---
-title: "Create FilteringPolicy"
-description: "Create a new FilteringPolicy object."
+title: "Create filteringPolicy"
+description: "Create a new filteringPolicy object."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 
-# Create policyRule
+# Create filteringPolicy
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new FilteringPolicy object. 
+Create a new [filteringPolicy](../resources/networkaccess-filteringpolicy.md) object. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -1,6 +1,6 @@
 ---
 title: "Get filteringRule"
-description: "Get a microsoft.graph.networkaccess.filteringRule object."
+description: "Get a filteringRule object."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: global-secure-access
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md) object.
+Get a [filteringRule](../resources/networkaccess-filteringrule.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
