@@ -97,6 +97,7 @@ Content-Type: application/json
 }
 ```
 
+---
 
 ### Response
 The following example shows the response.
@@ -112,14 +113,12 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
+  "@odata.type": "#microsoft.graph.networkaccess.deviceLink",
+  "id": "2f183529-b8d9-c6f1-0373-3a6beee36e38",
   "name": "device link 1",
   "ipAddress": "24.123.22.168",
   "deviceVendor": "intel",
   "bandwidthCapacityInMbps": "mbps250",
-  "bgpConfiguration_localIpAddress": "1.128.24.22",
-  "bgpConfiguration_peerIpAddress": "1.128.24.28",
-  "bgpConfiguration_asn": 4,
-  "redundancyConfiguration_zoneLocalIpAddress": "1.128.23.20",
   "redundancyConfiguration_redundancyTier": "zoneRedundancy",
   "tunnelConfiguration_type": "microsoft.graph.networkAccess.tunnelConfigurationIKEv2Default",
   "tunnelConfiguration_preSharedKey": "/microsoft/keyVault/placeholder"
