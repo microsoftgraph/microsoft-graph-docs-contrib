@@ -71,6 +71,7 @@ The following example shows a request.
 -->
 ``` http
 POST https://graph.microsoft.com/beta/networkAccess/connectivity/branches/19a92090-c14e-4cea-a933-27d38f72c4d1/deviceLinks
+Content-Type: application/json
 
 {
     "name": "device link 1",
