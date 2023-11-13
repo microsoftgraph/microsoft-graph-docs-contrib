@@ -10,8 +10,6 @@ doc_type: apiPageType
 # List educationGradingCategories
 Namespace: microsoft.graph
 
-[!INCLUDE [v1.0-disclaimer](../../includes/v1.0-disclaimer.md)]
-
 Get a list of the [educationGradingCategory](../resources/educationgradingcategory.md) objects and their properties.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
