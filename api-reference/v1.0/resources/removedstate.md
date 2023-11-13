@@ -21,7 +21,7 @@ Represents the reason why a [participant](participant.md) resource was removed f
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
