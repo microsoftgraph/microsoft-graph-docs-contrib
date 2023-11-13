@@ -6,16 +6,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Models;
 
 var requestBody = new User
 {
-	AdditionalData = new Dictionary<string, object>
+	CustomSecurityAttributes = new CustomSecurityAttributeValue
 	{
+		AdditionalData = new Dictionary<string, object>
 		{
-			"customSecurityAttributes" , new 
 			{
-				Engineering = new 
+				"Engineering" , new 
 				{
 					OdataType = "#Microsoft.DirectoryServices.CustomSecurityAttributeValue",
 					ProjectOdataType = "#Collection(String)",
@@ -24,11 +25,13 @@ var requestBody = new User
 						"Baker",
 						"Cascade",
 					},
-				},
-			}
+				}
+			},
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Users["{user-id}"].PatchAsync(requestBody);
 
 

@@ -22,7 +22,7 @@ webUrl := "https://contoso.sharepoint.com/sites/SecretSite"
 site.SetWebUrl(&webUrl) 
 requestBody.SetSite(site)
 
-result, err := graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").Searches().BySearcheId("ediscoverySearch-id").AdditionalSources().Post(context.Background(), requestBody, nil)
+additionalSources, err := graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").Searches().ByEdiscoverySearchId("ediscoverySearch-id").AdditionalSources().Post(context.Background(), requestBody, nil)
 
 
 ```

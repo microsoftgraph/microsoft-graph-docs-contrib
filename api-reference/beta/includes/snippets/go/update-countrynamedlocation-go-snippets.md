@@ -26,7 +26,7 @@ requestBody.SetCountriesAndRegions(countriesAndRegions)
 includeUnknownCountriesAndRegions := false
 requestBody.SetIncludeUnknownCountriesAndRegions(&includeUnknownCountriesAndRegions) 
 
-result, err := graphClient.Identity().ConditionalAccess().NamedLocations().ByNamedLocationId("namedLocation-id").Patch(context.Background(), requestBody, nil)
+namedLocations, err := graphClient.Identity().ConditionalAccess().NamedLocations().ByNamedLocationId("namedLocation-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

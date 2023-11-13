@@ -126,7 +126,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.BookingBusinesses().ByBookingBusinesseId("bookingBusiness-id").Services().Post(context.Background(), requestBody, nil)
+services, err := graphClient.BookingBusinesses().ByBookingBusinessId("bookingBusiness-id").Services().Post(context.Background(), requestBody, nil)
 
 
 ```

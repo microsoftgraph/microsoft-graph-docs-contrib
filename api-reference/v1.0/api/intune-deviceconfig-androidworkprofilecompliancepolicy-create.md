@@ -144,6 +144,10 @@ Content-length: 1170
 [!INCLUDE [sample-code](../includes/snippets/php/intune-deviceconfig-androidworkprofilecompliancepolicy-create-create-androidworkprofilecompliancepolicy-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-deviceconfig-androidworkprofilecompliancepolicy-create-create-androidworkprofilecompliancepolicy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/intune-deviceconfig-androidworkprofilecompliancepolicy-create-create-androidworkprofilecompliancepolicy-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

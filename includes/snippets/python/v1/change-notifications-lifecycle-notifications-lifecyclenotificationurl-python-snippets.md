@@ -4,26 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = Subscription()
-request_body.change_type = 'created,updated'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.notification_url = 'https://webhook.azurewebsites.net/api/resourceNotifications'
+request_body = Subscription(
+	change_type = "created,updated",
+	notification_url = "https://webhook.azurewebsites.net/api/resourceNotifications",
+	lifecycle_notification_url = "https://webhook.azurewebsites.net/api/lifecycleNotifications",
+	resource = "/users/{id}/messages",
+	expiration_date_time = "2020-03-20T11:00:00.0000000Z",
+	client_state = "<secretClientState>",
+)
 
-request_body.lifecycle_notification_url = 'https://webhook.azurewebsites.net/api/lifecycleNotifications'
-
-request_body.resource = '/users/{id}/messages'
-
-request_body.expirationDateTime = DateTime('2020-03-20T11:00:00.0000000Z')
-
-request_body.client_state = '<secretClientState>'
-
-
-
-
-result = await client.subscriptions.post(request_body = request_body)
+result = await graph_client.subscriptions.post(request_body)
 
 
 ```

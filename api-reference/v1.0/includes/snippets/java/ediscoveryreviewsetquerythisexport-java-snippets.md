@@ -10,7 +10,7 @@ String outputName = "Export reviewset query via API";
 
 String description = "Export for the Contoso investigation 2";
 
-EnumSet<ExportOptions> exportOptions = EnumSet.of(ExportOptions.ORIGINAL_FILES,ExportOptions.FILE_INFO,ExportOptions.TAGS);
+EnumSet<ExportOptions> exportOptions = EnumSet.of(ExportOptions.ORIGINAL_FILES,ExportOptions.TAGS);
 
 ExportFileStructure exportStructure = ExportFileStructure.DIRECTORY;
 
@@ -19,8 +19,6 @@ graphClient.security().cases().ediscoveryCases("58399dff-cebe-478f-b1af-d3227f1f
 		.newBuilder()
 		.withOutputName(outputName)
 		.withDescription(description)
-		.withAzureBlobContainer(null)
-		.withAzureBlobToken(null)
 		.withExportOptions(exportOptions)
 		.withExportStructure(exportStructure)
 		.build())

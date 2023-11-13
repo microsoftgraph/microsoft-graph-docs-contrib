@@ -100,7 +100,7 @@ messageHistory := []graphmodels.ChatMessageHistoryItemable {
 }
 requestBody.SetMessageHistory(messageHistory)
 
-result, err := graphClient.Teams().ByTeamId("team-id").Channels().ByChannelId("channel-id").Messages().ByMessageId("chatMessage-id").Patch(context.Background(), requestBody, nil)
+messages, err := graphClient.Teams().ByTeamId("team-id").Channels().ByChannelId("channel-id").Messages().ByChatMessageId("chatMessage-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

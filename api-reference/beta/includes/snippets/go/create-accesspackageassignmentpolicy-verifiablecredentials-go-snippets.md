@@ -77,7 +77,7 @@ expiration.SetDuration(&duration)
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentPolicies().Post(context.Background(), requestBody, nil)
+accessPackageAssignmentPolicies, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentPolicies().Post(context.Background(), requestBody, nil)
 
 
 ```

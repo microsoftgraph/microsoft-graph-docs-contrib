@@ -45,7 +45,7 @@ requiredResourceAccess := []graphmodels.RequiredResourceAccessable {
 }
 requestBody.SetRequiredResourceAccess(requiredResourceAccess)
 
-result, err := graphClient.Applications().ByApplicationId("application-id").Patch(context.Background(), requestBody, nil)
+applications, err := graphClient.Applications().ByApplicationId("application-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

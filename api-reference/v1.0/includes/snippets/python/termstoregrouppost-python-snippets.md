@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = Group()
-request_body.display_name = 'myGroup'
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = Group(
+	display_name = "myGroup",
+)
 
-
-
-result = await client.sites.by_site_id('site-id').term_store.groups.post(request_body = request_body)
+result = await graph_client.sites.by_site_id('site-id').term_store.groups.post(request_body)
 
 
 ```

@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-mgc users list --select "id,displayName,mail,identities&`$filter=endsWith(userPrincipalName,'" --consistency-level eventual
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+mgc users list --filter "endsWith(userPrincipalName,'" --select "id,displayName,mail,identities" --consistency-level "eventual"
 
 ```

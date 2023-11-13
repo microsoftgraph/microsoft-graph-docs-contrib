@@ -1,7 +1,7 @@
 ---
 title: "Update directorySetting"
 description: "Update the properties of a specific directory setting object."
-author: "adimitui"
+author: "Jordanndahl"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -16,26 +16,22 @@ Namespace: microsoft.graph
 Update the properties of a specific directory setting object.
 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### For all settings except the Consent Policy Settings object
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "directorysetting_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/directorysetting-update-permissions.md)]
 
 ### For the Consent Policy Settings object
 
 The following permissions are required to update the "Consent Policy Settings" **directorySetting** object.
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Policy.ReadWrite.Authorization    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Policy.ReadWrite.Authorization |
+<!-- { "blockType": "permissions", "name": "directorysetting_update_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/directorysetting-update-2-permissions.md)]
 
 
 ## HTTP request
@@ -59,7 +55,7 @@ PATCH /groups/{groupId}/settings/{directorySettingId}
 ## Request body
 In the request body, supply the values for relevant fields that should be updated. 
 
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 | values | [settingValue](../resources/settingvalue.md) collection | The updated set of values.  NOTE: You must supply the entire collection set. You cannot update a single set of values. |
 
@@ -92,6 +88,10 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-directorysetting-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-directorysetting-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

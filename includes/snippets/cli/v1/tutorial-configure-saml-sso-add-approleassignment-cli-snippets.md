@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc service-principals app-role-assignments create --service-principal-id {servicePrincipal-id} --body '{\
   "principalId": "040f9599-7c0f-4f94-aa75-8394c4c6ea9b",\
   "principalType": "User",\

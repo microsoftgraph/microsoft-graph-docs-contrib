@@ -22,7 +22,7 @@ configuration := &graphpolicies.PoliciesFeatureRolloutPolicieItemRequestBuilderG
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Policies().FeatureRolloutPolicies().ByFeatureRolloutPolicieId("featureRolloutPolicy-id").Get(context.Background(), configuration)
+featureRolloutPolicies, err := graphClient.Policies().FeatureRolloutPolicies().ByFeatureRolloutPolicyId("featureRolloutPolicy-id").Get(context.Background(), configuration)
 
 
 ```

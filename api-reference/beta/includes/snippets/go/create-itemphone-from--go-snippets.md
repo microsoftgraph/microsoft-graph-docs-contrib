@@ -21,7 +21,7 @@ requestBody.SetDisplayName(&displayName)
 number := "+7 499 342 22 13"
 requestBody.SetNumber(&number) 
 
-result, err := graphClient.Me().Profile().Phones().Post(context.Background(), requestBody, nil)
+phones, err := graphClient.Me().Profile().Phones().Post(context.Background(), requestBody, nil)
 
 
 ```

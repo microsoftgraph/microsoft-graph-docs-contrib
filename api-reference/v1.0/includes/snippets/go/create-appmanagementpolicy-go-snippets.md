@@ -77,7 +77,7 @@ keyCredentials := []graphmodels.KeyCredentialConfigurationable {
 restrictions.SetKeyCredentials(keyCredentials)
 requestBody.SetRestrictions(restrictions)
 
-result, err := graphClient.Policies().AppManagementPolicies().Post(context.Background(), requestBody, nil)
+appManagementPolicies, err := graphClient.Policies().AppManagementPolicies().Post(context.Background(), requestBody, nil)
 
 
 ```

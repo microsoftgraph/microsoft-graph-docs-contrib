@@ -105,7 +105,7 @@ additionalData := map[string]interface{}{
 labelingOptions.SetAdditionalData(additionalData)
 requestBody.SetLabelingOptions(labelingOptions)
 
-result, err := graphClient.InformationProtection().Policy().Labels().EvaluateApplication().Post(context.Background(), requestBody, configuration)
+evaluateApplication, err := graphClient.InformationProtection().Policy().Labels().EvaluateApplication().Post(context.Background(), requestBody, configuration)
 
 
 ```

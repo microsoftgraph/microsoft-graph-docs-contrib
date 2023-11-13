@@ -15,7 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Reports().GetSharePointSiteUsageDetail(period='{period}')().Get(context.Background(), nil)
+period := "{period}"
+graphClient.Reports().GetSharePointSiteUsageDetailWithPeriod(&period).Get(context.Background(), nil)
 
 
 ```

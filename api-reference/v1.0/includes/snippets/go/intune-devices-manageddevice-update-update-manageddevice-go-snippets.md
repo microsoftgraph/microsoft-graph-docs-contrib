@@ -214,7 +214,7 @@ requestBody.SetEthernetMacAddress(&ethernetMacAddress)
 physicalMemoryInBytes := int64(5)
 requestBody.SetPhysicalMemoryInBytes(&physicalMemoryInBytes) 
 
-result, err := graphClient.DeviceManagement().ManagedDevices().ByManagedDeviceId("managedDevice-id").Patch(context.Background(), requestBody, nil)
+managedDevices, err := graphClient.DeviceManagement().ManagedDevices().ByManagedDeviceId("managedDevice-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

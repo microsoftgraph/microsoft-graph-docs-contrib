@@ -22,7 +22,7 @@ webUrl := "https://m365x809305.sharepoint.com/sites/Design-topsecret"
 site.SetWebUrl(&webUrl) 
 requestBody.SetSite(site)
 
-result, err := graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").Searches().BySearcheId("ediscoverySearch-id").AdditionalSources().Post(context.Background(), requestBody, nil)
+additionalSources, err := graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").Searches().ByEdiscoverySearchId("ediscoverySearch-id").AdditionalSources().Post(context.Background(), requestBody, nil)
 
 
 ```

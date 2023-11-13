@@ -19,7 +19,7 @@ requestBody := graphusers.NewValidatePasswordPostRequestBody()
 password := "1234567890"
 requestBody.SetPassword(&password) 
 
-result, err := graphClient.Users().ValidatePassword().Post(context.Background(), requestBody, nil)
+validatePassword, err := graphClient.Users().ValidatePassword().Post(context.Background(), requestBody, nil)
 
 
 ```

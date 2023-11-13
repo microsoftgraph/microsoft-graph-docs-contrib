@@ -82,6 +82,18 @@
       "url": "https://github.com/microsoftgraph/msgraph-snippets-typescript",
       "branch": "main",
       "branch_mapping": {}
+    },
+    {
+      "path_to_root": "concepts/includes/connecting-external-content/snippets",
+      "url": "https://github.com/microsoftgraph/msgraph-search-connector-sample",
+      "branch": "main",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "azure-reference-other",
+      "url": "https://github.com/MicrosoftDocs/azure-reference-other",
+      "branch": "main",
+      "branch_mapping": {}
     }
   ],
   "branch_target_mapping": {},
@@ -107,6 +119,7 @@
     "redirects/.openpublishing.redirection.0522.json",
     "redirects/.openpublishing.redirection.0423.json",
     "redirects/.openpublishing.redirection.0523.json",
+    "redirects/.openpublishing.redirection.1023.json",
     "redirects/.openpublishing.redirection.changedapi.json"
   ]
 }

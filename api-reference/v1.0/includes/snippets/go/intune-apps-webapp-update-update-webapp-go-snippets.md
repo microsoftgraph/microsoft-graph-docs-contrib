@@ -47,7 +47,7 @@ requestBody.SetAppUrl(&appUrl)
 useManagedBrowser := true
 requestBody.SetUseManagedBrowser(&useManagedBrowser) 
 
-result, err := graphClient.DeviceAppManagement().MobileApps().ByMobileAppId("mobileApp-id").Patch(context.Background(), requestBody, nil)
+mobileApps, err := graphClient.DeviceAppManagement().MobileApps().ByMobileAppId("mobileApp-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

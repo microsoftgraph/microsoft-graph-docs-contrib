@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().Profile().Positions().Get(context.Background(), nil)
+positions, err := graphClient.Me().Profile().Positions().Get(context.Background(), nil)
 
 
 ```

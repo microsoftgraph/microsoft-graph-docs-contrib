@@ -22,7 +22,7 @@ configuration := &graphdevices.DeviceItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Devices().ByDeviceId("device-id").Get(context.Background(), configuration)
+devices, err := graphClient.Devices().ByDeviceId("device-id").Get(context.Background(), configuration)
 
 
 ```

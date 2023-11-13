@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Admin().ServiceAnnouncement().Messages().ByMessageId("serviceUpdateMessage-id").Attachments().ByAttachmentId("serviceAnnouncementAttachment-id").Get(context.Background(), nil)
+attachments, err := graphClient.Admin().ServiceAnnouncement().Messages().ByServiceUpdateMessageId("serviceUpdateMessage-id").Attachments().ByServiceAnnouncementAttachmentId("serviceAnnouncementAttachment-id").Get(context.Background(), nil)
 
 
 ```

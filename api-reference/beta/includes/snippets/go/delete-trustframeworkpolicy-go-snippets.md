@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.TrustFramework().Policies().ByPolicieId("trustFrameworkPolicy-id").Delete(context.Background(), nil)
+graphClient.TrustFramework().Policies().ByTrustFrameworkPolicyId("trustFrameworkPolicy-id").Delete(context.Background(), nil)
 
 
 ```

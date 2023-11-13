@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc device-management device-compliance-policies user-statuses create --device-compliance-policy-id {deviceCompliancePolicy-id} --body '{\
   "@odata.type": "#microsoft.graph.deviceComplianceUserStatus",\
   "userDisplayName": "User Display Name value",\

@@ -36,7 +36,7 @@ value := []graphmodels.tiIndicatorable {
 }
 requestBody.SetValue(value)
 
-result, err := graphClient.Security().TiIndicators().UpdateTiIndicators().Post(context.Background(), requestBody, nil)
+updateTiIndicators, err := graphClient.Security().TiIndicators().UpdateTiIndicators().Post(context.Background(), requestBody, nil)
 
 
 ```

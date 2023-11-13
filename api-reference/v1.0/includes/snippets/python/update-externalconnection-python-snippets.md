@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = ExternalConnection()
-request_body.name = 'Contoso HR Service Tickets'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.description = 'Connection to index HR service tickets'
+request_body = ExternalConnection(
+	name = "Contoso HR Service Tickets",
+	description = "Connection to index HR service tickets",
+)
 
-
-
-
-result = await client.external.connections.by_connection_id('externalConnection-id').patch(request_body = request_body)
+result = await graph_client.external.connections.by_external_connection_id('externalConnection-id').patch(request_body)
 
 
 ```

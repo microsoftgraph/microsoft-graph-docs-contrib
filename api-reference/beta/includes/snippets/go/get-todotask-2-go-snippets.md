@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().Todo().Lists().ByListId("todoTaskList-id").Tasks().Get(context.Background(), nil)
+tasks, err := graphClient.Me().Todo().Lists().ByTodoTaskListId("todoTaskList-id").Tasks().Get(context.Background(), nil)
 
 
 ```

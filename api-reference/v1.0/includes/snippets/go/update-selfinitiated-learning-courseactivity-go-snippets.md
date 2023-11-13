@@ -32,7 +32,7 @@ requestBody.SetStartedDateTime(&startedDateTime)
 status := graphmodels.INPROGRESS_COURSESTATUS 
 requestBody.SetStatus(&status) 
 
-result, err := graphClient.EmployeeExperience().LearningProviders().ByLearningProviderId("learningProvider-id").LearningCourseActivities().ByLearningCourseActivitieId("learningCourseActivity-id").Patch(context.Background(), requestBody, nil)
+learningCourseActivities, err := graphClient.EmployeeExperience().LearningProviders().ByLearningProviderId("learningProvider-id").LearningCourseActivities().ByLearningCourseActivityId("learningCourseActivity-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

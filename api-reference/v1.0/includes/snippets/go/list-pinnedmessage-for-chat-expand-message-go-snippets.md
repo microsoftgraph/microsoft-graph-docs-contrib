@@ -22,7 +22,7 @@ configuration := &graphchats.ChatItemPinnedMessagesRequestBuilderGetRequestConfi
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Chats().ByChatId("chat-id").PinnedMessages().Get(context.Background(), configuration)
+pinnedMessages, err := graphClient.Chats().ByChatId("chat-id").PinnedMessages().Get(context.Background(), configuration)
 
 
 ```

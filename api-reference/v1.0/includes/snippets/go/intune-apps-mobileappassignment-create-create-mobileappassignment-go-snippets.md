@@ -25,7 +25,7 @@ useDeviceContext := true
 settings.SetUseDeviceContext(&useDeviceContext) 
 requestBody.SetSettings(settings)
 
-result, err := graphClient.DeviceAppManagement().MobileApps().ByMobileAppId("mobileApp-id").Assignments().Post(context.Background(), requestBody, nil)
+assignments, err := graphClient.DeviceAppManagement().MobileApps().ByMobileAppId("mobileApp-id").Assignments().Post(context.Background(), requestBody, nil)
 
 
 ```

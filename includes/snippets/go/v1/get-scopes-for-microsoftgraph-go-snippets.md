@@ -26,7 +26,7 @@ configuration := &graphserviceprincipals.ServicePrincipalsRequestBuilderGetReque
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.ServicePrincipals().Get(context.Background(), configuration)
+servicePrincipals, err := graphClient.ServicePrincipals().Get(context.Background(), configuration)
 
 
 ```

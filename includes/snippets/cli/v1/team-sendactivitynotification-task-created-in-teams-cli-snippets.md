@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc teams send-activity-notification post --team-id {team-id} --body '{\
     "topic": {\
         "source": "entityUrl",\
@@ -11,7 +12,7 @@ mgc teams send-activity-notification post --team-id {team-id} --body '{\
     },\
     "activityType": "taskCreated",\
     "previewText": {\
-    	"content": "New Task Created"\
+        "content": "New Task Created"\
     },\
     "recipient": {\
         "@odata.type": "microsoft.graph.aadUserNotificationRecipient",\

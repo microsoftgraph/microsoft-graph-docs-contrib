@@ -19,7 +19,7 @@ requestBody := graphdirectory.NewDismissPostRequestBody()
 dismissReason := "Recommendations is not relevant for my organization because..."
 requestBody.SetDismissReason(&dismissReason) 
 
-result, err := graphClient.Directory().Recommendations().ByRecommendationId("recommendation-id").Dismiss().Post(context.Background(), requestBody, nil)
+dismiss, err := graphClient.Directory().Recommendations().ByRecommendationId("recommendation-id").Dismiss().Post(context.Background(), requestBody, nil)
 
 
 ```

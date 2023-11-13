@@ -20,7 +20,7 @@ Exchange Active Sync services.
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|none|0|Not yet documented|
+|none|0||
 |calendars|1|Enables synchronization of calendars.|
 |contacts|2|Enables synchronization of contacts.|
 |email|4|Enables synchronization of email.|

@@ -66,7 +66,7 @@ iosEnrollmentAssignments := []graphmodels.ComplianceManagementPartnerAssignmenta
 }
 requestBody.SetIosEnrollmentAssignments(iosEnrollmentAssignments)
 
-result, err := graphClient.DeviceManagement().ComplianceManagementPartners().ByComplianceManagementPartnerId("complianceManagementPartner-id").Patch(context.Background(), requestBody, nil)
+complianceManagementPartners, err := graphClient.DeviceManagement().ComplianceManagementPartners().ByComplianceManagementPartnerId("complianceManagementPartner-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceAppManagement().ManagedEBooks().ByManagedEBookId("managedEBook-id").DeviceStates().ByDeviceStateId("deviceInstallState-id").Get(context.Background(), nil)
+deviceStates, err := graphClient.DeviceAppManagement().ManagedEBooks().ByManagedEBookId("managedEBook-id").DeviceStates().ByDeviceInstallStateId("deviceInstallState-id").Get(context.Background(), nil)
 
 
 ```

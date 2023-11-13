@@ -136,6 +136,10 @@ Content-length: 855
 [!INCLUDE [sample-code](../includes/snippets/php/intune-apps-windowsmobilemsi-update-update-windowsmobilemsi-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-apps-windowsmobilemsi-update-update-windowsmobilemsi-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/intune-apps-windowsmobilemsi-update-update-windowsmobilemsi-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

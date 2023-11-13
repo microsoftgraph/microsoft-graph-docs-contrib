@@ -25,7 +25,7 @@ fileUrl := "https://graph.microsoft.com/v1.0/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xc
 resource.SetFileUrl(&fileUrl) 
 requestBody.SetResource(resource)
 
-result, err := graphClient.Education().Classes().ByClasseId("educationClass-id").Assignments().ByAssignmentId("educationAssignment-id").Resources().Post(context.Background(), requestBody, nil)
+resources, err := graphClient.Education().Classes().ByEducationClassId("educationClass-id").Assignments().ByEducationAssignmentId("educationAssignment-id").Resources().Post(context.Background(), requestBody, nil)
 
 
 ```

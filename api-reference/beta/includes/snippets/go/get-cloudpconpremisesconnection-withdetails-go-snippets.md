@@ -22,7 +22,7 @@ configuration := &graphdevicemanagement.DeviceManagementVirtualEndpointOnPremise
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().OnPremisesConnections().ByOnPremisesConnectionId("cloudPcOnPremisesConnection-id").Get(context.Background(), configuration)
+onPremisesConnections, err := graphClient.DeviceManagement().VirtualEndpoint().OnPremisesConnections().ByCloudPcOnPremisesConnectionId("cloudPcOnPremisesConnection-id").Get(context.Background(), configuration)
 
 
 ```

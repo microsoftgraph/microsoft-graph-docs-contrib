@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.DeviceAppManagement().ManagedEBooks().ByManagedEBookId("managedEBook-id").Assignments().ByAssignmentId("managedEBookAssignment-id").Delete(context.Background(), nil)
+graphClient.DeviceAppManagement().ManagedEBooks().ByManagedEBookId("managedEBook-id").Assignments().ByManagedEBookAssignmentId("managedEBookAssignment-id").Delete(context.Background(), nil)
 
 
 ```

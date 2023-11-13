@@ -51,7 +51,7 @@ requestBody.SetDeviceThreatProtectionRequiredSecurityLevel(&deviceThreatProtecti
 managedEmailProfileRequired := true
 requestBody.SetManagedEmailProfileRequired(&managedEmailProfileRequired) 
 
-result, err := graphClient.DeviceManagement().DeviceCompliancePolicies().ByDeviceCompliancePolicieId("deviceCompliancePolicy-id").Patch(context.Background(), requestBody, nil)
+deviceCompliancePolicies, err := graphClient.DeviceManagement().DeviceCompliancePolicies().ByDeviceCompliancePolicyId("deviceCompliancePolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

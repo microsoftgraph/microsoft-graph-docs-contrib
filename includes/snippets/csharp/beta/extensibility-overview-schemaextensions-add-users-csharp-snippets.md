@@ -6,14 +6,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
 var requestBody = new User
 {
 	AccountEnabled = true,
 	DisplayName = "Adele Vance",
 	MailNickname = "AdeleV",
-	UserPrincipalName = "AdeleV@m365x72712789.onmicrosoft.com",
+	UserPrincipalName = "AdeleV@contoso.com",
 	PasswordProfile = new PasswordProfile
 	{
 		ForceChangePasswordNextSignIn = false,
@@ -31,6 +32,8 @@ var requestBody = new User
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Users.PostAsync(requestBody);
 
 

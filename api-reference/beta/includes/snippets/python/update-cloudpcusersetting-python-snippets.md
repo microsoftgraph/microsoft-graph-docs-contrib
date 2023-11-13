@@ -4,29 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = CloudPcUserSetting()
-request_body.@odata_type = '#microsoft.graph.cloudPcUserSetting'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.display_name = 'Example'
+request_body = CloudPcUserSetting(
+	odata_type = "#microsoft.graph.cloudPcUserSetting",
+	display_name = "Example",
+	self_service_enabled = True,
+	restore_point_setting = CloudPcRestorePointSetting(
+		frequency_in_hours = 16,
+		user_restore_enabled = True,
+	),
+	local_admin_enabled = False,
+	reset_enabled = True,
+)
 
-request_body.self_service_enabled = True
-
-restore_point_setting = CloudPcRestorePointSetting()
-restore_point_setting.FrequencyInHours = 16
-
-restore_point_setting.user_restore_enabled = True
-
-
-request_body.restore_point_setting = restore_point_setting
-request_body.local_admin_enabled = False
-
-
-
-
-result = await client.device_management.virtual_endpoint.user_settings.by_user_setting_id('cloudPcUserSetting-id').patch(request_body = request_body)
+result = await graph_client.device_management.virtual_endpoint.user_settings.by_cloud_pc_user_setting_id('cloudPcUserSetting-id').patch(request_body)
 
 
 ```

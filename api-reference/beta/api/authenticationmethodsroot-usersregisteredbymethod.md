@@ -1,7 +1,7 @@
 ---
 title: "authenticationMethodsRoot: usersRegisteredByMethod"
 description: "Get the number of users registered for each authentication method."
-author: "besiler"
+author: "egreenberg14"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
@@ -15,15 +15,14 @@ Namespace: microsoft.graph
 
 Get the number of users registered for each authentication method.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|AuditLog.Read.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+<!-- { "blockType": "permissions", "name": "authenticationmethodsroot_usersregisteredbymethod" } -->
+[!INCLUDE [permissions-table](../includes/permissions/authenticationmethodsroot-usersregisteredbymethod-permissions.md)]
 
 To access the API, [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) is required:
 
@@ -64,7 +63,7 @@ The value `privilegedAdmin` consists of the following privileged admin roles:
 * User Administrator
 * Authentication Administrator
 
-The value `admin` includes all Azure Active Directory admin roles.
+The value `admin` includes all Microsoft Entra admin roles.
 
 ## Request headers
 
@@ -74,7 +73,7 @@ The value `admin` includes all Azure Active Directory admin roles.
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -84,7 +83,7 @@ If successful, this function returns a `200 OK` response code and a [userRegistr
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -95,6 +94,10 @@ The following is an example of the request.
 ``` http
 GET https://graph.microsoft.com/beta/reports/authenticationMethods/usersRegisteredByMethod(includedUserTypes='all',includedUserRoles='all')
 ```
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/authenticationmethodsroot-usersregisteredbymethod-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/authenticationmethodsroot-usersregisteredbymethod-java-snippets.md)]
@@ -108,7 +111,7 @@ GET https://graph.microsoft.com/beta/reports/authenticationMethods/usersRegister
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

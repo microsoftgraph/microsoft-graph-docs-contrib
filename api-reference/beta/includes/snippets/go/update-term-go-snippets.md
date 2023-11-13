@@ -31,7 +31,7 @@ labels := []graphmodelstermstore.LocalizedLabelable {
 }
 requestBody.SetLabels(labels)
 
-result, err := graphClient.TermStore().Sets().BySetId("set-id").Terms().ByTermId("term-id").Patch(context.Background(), requestBody, nil)
+terms, err := graphClient.TermStore().Sets().BySetId("set-id").Terms().ByTermId("term-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

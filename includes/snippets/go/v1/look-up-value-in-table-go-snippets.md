@@ -37,7 +37,7 @@ requestBody.SetColIndexNum(&colIndexNum)
 rangeLookup := false
 requestBody.SetRangeLookup(&rangeLookup) 
 
-result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().Functions().Vlookup().Post(context.Background(), requestBody, configuration)
+vlookup, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().Functions().Vlookup().Post(context.Background(), requestBody, configuration)
 
 
 ```

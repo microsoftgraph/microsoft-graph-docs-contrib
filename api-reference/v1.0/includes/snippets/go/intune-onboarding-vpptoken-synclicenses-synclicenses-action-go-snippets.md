@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceAppManagement().VppTokens().ByVppTokenId("vppToken-id").SyncLicenses().Post(context.Background(), nil)
+syncLicenses, err := graphClient.DeviceAppManagement().VppTokens().ByVppTokenId("vppToken-id").SyncLicenses().Post(context.Background(), nil)
 
 
 ```

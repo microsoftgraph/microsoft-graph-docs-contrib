@@ -15,25 +15,30 @@ Namespace: microsoft.graph
 
 Gets a border object using its index
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite    |
-|Delegated (personal Microsoft account) | Files.ReadWrite    |
-|Application | Not supported. |
+<!-- { "blockType": "permissions", "name": "rangebordercollection_itemat" } -->
+[!INCLUDE [permissions-table](../includes/permissions/rangebordercollection-itemat-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/drive/items/{id}/workbook/names/{name}/range/format/borders/ItemAt
-POST /me/drive/root:/{item-path}:/workbook/names/{name}/range/format/borders/ItemAt
-POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/format/borders/ItemAt
-POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/format/borders/ItemAt
-POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/format/borders/ItemAt
-POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/format/borders/ItemAt
-
+GET /me/drive/items/{id}/workbook/names/{name}/range/format/borders/ItemAt(index={index})
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/range/format/borders/ItemAt(index={index})
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/format/borders/ItemAt(index={index})
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/format/borders/ItemAt(index={index})
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/format/borders/ItemAt(index={index})
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/format/borders/ItemAt(index={index})
 ```
+
+## Function parameters
+
+The following table shows the parameters that can be used with this function.
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|index|Int32|Index value of the object to be retrieved. Zero-indexed.|
+
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
@@ -41,11 +46,8 @@ POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/ra
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
-In the request body, provide a JSON object with the following parameters.
 
-| Parameter	   | Type	|Description|
-|:---------------|:--------|:----------|
-|index|number|Index value of the object to be retrieved. Zero-indexed.|
+Don't supply a request body for this method.
 
 ## Response
 
@@ -61,15 +63,13 @@ Here is an example of the request.
   "blockType": "request",
   "name": "rangebordercollection_itemat"
 }-->
-```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/format/borders/ItemAt
-Content-type: application/json
-
-{
-  "index": {
-  }
-}
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/format/borders/ItemAt(index=8)
 ```
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/rangebordercollection-itemat-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/rangebordercollection-itemat-javascript-snippets.md)]

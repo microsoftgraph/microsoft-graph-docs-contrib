@@ -34,7 +34,7 @@ requestBody.SetErrors(errors)
 displayName := "String"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").LegalHolds().Post(context.Background(), requestBody, nil)
+legalHolds, err := graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").LegalHolds().Post(context.Background(), requestBody, nil)
 
 
 ```

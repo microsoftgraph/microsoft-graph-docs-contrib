@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = ForwardingPolicyLink()
-request_body.@odata_type = '#microsoft.graph.networkaccess.forwardingPolicyLink'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.state(Status.Enabled('status.enabled'))
+request_body = ForwardingPolicyLink(
+	odata_type = "#microsoft.graph.networkaccess.forwardingPolicyLink",
+	state = Status.Enabled,
+)
 
-
-
-
-result = await client.network_access.forwarding_profiles.by_forwarding_profile_id('forwardingProfile-id').policies.by_policie_id('policyLink-id').patch(request_body = request_body)
+result = await graph_client.network_access.forwarding_profiles.by_forwarding_profile_id('forwardingProfile-id').policies.by_policy_link_id('policyLink-id').patch(request_body)
 
 
 ```

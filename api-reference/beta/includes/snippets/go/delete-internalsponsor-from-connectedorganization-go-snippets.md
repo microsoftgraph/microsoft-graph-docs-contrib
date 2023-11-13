@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.IdentityGovernance().EntitlementManagement().ConnectedOrganizations().ByConnectedOrganizationId("connectedOrganization-id").InternalSponsors().ByInternalSponsorId("directoryObject-id").Ref().Delete(context.Background(), nil)
+graphClient.IdentityGovernance().EntitlementManagement().ConnectedOrganizations().ByConnectedOrganizationId("connectedOrganization-id").InternalSponsors().ByDirectoryObjectId("directoryObject-id").Ref().Delete(context.Background(), nil)
 
 
 ```

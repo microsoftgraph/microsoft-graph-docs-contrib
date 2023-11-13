@@ -15,7 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Reports().GetMailboxUsageQuotaStatusMailboxCounts(period='{period}')().Get(context.Background(), nil)
+period := "{period}"
+graphClient.Reports().GetMailboxUsageQuotaStatusMailboxCountsWithPeriod(&period).Get(context.Background(), nil)
 
 
 ```

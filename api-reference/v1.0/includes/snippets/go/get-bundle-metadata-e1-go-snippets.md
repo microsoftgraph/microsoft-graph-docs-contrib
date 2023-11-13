@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Drives().ByDriveId("drive-id").Bundles().ByBundleId("driveItem-id").Get(context.Background(), nil)
+bundles, err := graphClient.Drives().ByDriveId("drive-id").Bundles().ByDriveItemId("driveItem-id").Get(context.Background(), nil)
 
 
 ```

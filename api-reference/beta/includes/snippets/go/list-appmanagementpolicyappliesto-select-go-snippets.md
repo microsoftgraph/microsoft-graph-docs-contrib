@@ -22,7 +22,7 @@ configuration := &graphpolicies.PoliciesAppManagementPolicieItemAppliesToRequest
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Policies().AppManagementPolicies().ByAppManagementPolicieId("appManagementPolicy-id").AppliesTo().Get(context.Background(), configuration)
+appliesTo, err := graphClient.Policies().AppManagementPolicies().ByAppManagementPolicyId("appManagementPolicy-id").AppliesTo().Get(context.Background(), configuration)
 
 
 ```

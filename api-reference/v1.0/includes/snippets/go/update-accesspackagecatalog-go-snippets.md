@@ -19,7 +19,7 @@ requestBody := graphmodels.NewAccessPackageCatalog()
 displayName := "Catalog One"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().Catalogs().ByCatalogId("accessPackageCatalog-id").Patch(context.Background(), requestBody, nil)
+catalogs, err := graphClient.IdentityGovernance().EntitlementManagement().Catalogs().ByAccessPackageCatalogId("accessPackageCatalog-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

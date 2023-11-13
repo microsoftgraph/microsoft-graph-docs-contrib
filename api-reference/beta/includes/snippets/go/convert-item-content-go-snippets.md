@@ -25,7 +25,7 @@ configuration := &graphdrives.DriveItemItemItemContentRequestBuilderGetRequestCo
 	QueryParameters: requestParameters,
 }
 
-graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Content().Get(context.Background(), configuration)
+graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Content().Get(context.Background(), configuration)
 
 
 ```

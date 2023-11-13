@@ -11,19 +11,18 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create a new [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) or [accessPackageAssignmentWorkflowExtension](../resources/accessPackageAssignmentWorkflowExtension.md) object and add it to an existing [accessPackageCatalog](../resources/accesspackagecatalog.md) object.  
+Create a new [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) or [accessPackageAssignmentWorkflowExtension](../resources/accessPackageAssignmentWorkflowExtension.md) object and add it to an existing [accessPackageCatalog](../resources/accesspackagecatalog.md) object.
 
 You must explicitly provide an `@odata.type` property that indicates whether the object is an  **accessPackageAssignmentRequestWorkflowExtension** or an **accessPackageAssignmentWorkflowExtension**.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|EntitlementManagement.ReadWrite.All |
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|EntitlementManagement.Read.All EntitlementManagement.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "accesspackagecatalog_post_accesspackagecustomworkflowextensions" } -->
+[!INCLUDE [permissions-table](../includes/permissions/accesspackagecatalog-post-accesspackagecustomworkflowextensions-permissions.md)]
 
 ## HTTP request
 
@@ -32,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /identityGovernance/entitlementManagement/accessPackageCatalogs/{catalogId}/accessPackageCustomWorkflowExtensions
+POST /identityGovernance/entitlementManagement/catalogs/{catalogId}/customWorkflowExtensions
 ```
 
 ## Request headers
@@ -51,10 +50,10 @@ You can specify the following properties when creating a **accessPackageCustomWo
 |Property|Type|Description|
 |:---|:---|:---|
 |description|String|Description for the customAccessPackageWorkflowExtension object.|
-|displayName|String|Display name for the customAccessPackageWorkflowExtension.|
-|endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|The type and details for configuring the endpoint to call the logic app's workflow.|  
-|authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|Configuration for securing the API call to the logic app. For example, using OAuth client credentials flow.|
-|callbackConfiguration|[customExtensionCallbackConfiguration](../resources/customextensioncallbackconfiguration.md)|The callback configuration for a custom extension. This is suppoted for `accessPackageAssignmentRequestWorkflowExtension`. |
+|displayName|String|Required. Display name for the customAccessPackageWorkflowExtension.|
+|endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|Required. The type and details for configuring the endpoint to call the logic app's workflow.|
+|authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|Required. Configuration for securing the API call to the logic app. For example, using OAuth client credentials flow.|
+|callbackConfiguration|[customExtensionCallbackConfiguration](../resources/customextensioncallbackconfiguration.md)|The callback configuration for a custom extension. This is supported for `accessPackageAssignmentRequestWorkflowExtension`. |
 
 You must also supply an **@odata.type** property with a value of the specific access package workflow extension type. For example, `"@odata.type": "#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension"`.
 
@@ -70,6 +69,7 @@ The following is an example of a access package assignment request custom workfl
 
 #### Request
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accessPackageAssignmentRequestWorkflowExtension"
@@ -77,7 +77,7 @@ The following is an example of a access package assignment request custom workfl
 -->
 
 ``` http
-POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackageCatalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/accessPackagecustomWorkflowExtensions
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/catalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/customWorkflowExtensions
 Content-Type: application/json
 
 {
@@ -99,6 +99,36 @@ Content-Type: application/json
   }
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageassignmentrequestworkflowextension-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-accesspackageassignmentrequestworkflowextension-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accesspackageassignmentrequestworkflowextension-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accesspackageassignmentrequestworkflowextension-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-accesspackageassignmentrequestworkflowextension-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-accesspackageassignmentrequestworkflowextension-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-accesspackageassignmentrequestworkflowextension-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -137,7 +167,7 @@ Content-Type: application/json
          "durationBeforeTimeout":"PT1H"
       }
    }
-} 
+}
 ```
 
 ### Example 2: Create a custom extension for use with an access package assignment
@@ -146,13 +176,14 @@ The following is an example of a access package assignment custom workflow exten
 
 #### Request
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accessPackageAssignmentWorkflowExtension"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackageCatalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/accessPackagecustomWorkflowExtensions
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/catalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/customWorkflowExtensions
 Content-Type: application/json
 
 {
@@ -172,6 +203,36 @@ Content-Type: application/json
    }
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageassignmentworkflowextension-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-accesspackageassignmentworkflowextension-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accesspackageassignmentworkflowextension-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accesspackageassignmentworkflowextension-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-accesspackageassignmentworkflowextension-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-accesspackageassignmentworkflowextension-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-accesspackageassignmentworkflowextension-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

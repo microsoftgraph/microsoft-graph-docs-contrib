@@ -17,7 +17,7 @@ $params = @{
 			}
 			@{
 				restrictionType = "passwordLifetime"
-				maxLifetime = "P4DT12H30M5S"
+				maxLifetime = "P90D"
 				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2017-01-01T10:37:00Z")
 			}
 			@{
@@ -32,7 +32,7 @@ $params = @{
 			}
 			@{
 				restrictionType = "symmetricKeyLifetime"
-				maxLifetime = "P40D"
+				maxLifetime = "P30D"
 				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2015-01-01T10:37:00Z")
 			}
 		)
@@ -41,6 +41,15 @@ $params = @{
 				restrictionType = "asymmetricKeyLifetime"
 				maxLifetime = "P30D"
 				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2015-01-01T10:37:00Z")
+			}
+			@{
+				restrictionType = "trustedCertificateAuthority"
+				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2019-10-19T10:37:00Z")
+				certificateBasedApplicationConfigurationIds = @(
+					"eec5ba11-2fc0-4113-83a2-ed986ed13743"
+					"bb8e164b-f9ed-4b98-bc45-65eddc14f4c1"
+				)
+				maxLifetime = $null
 			}
 		)
 	}

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").HomeRealmDiscoveryPolicies().Get(context.Background(), nil)
+homeRealmDiscoveryPolicies, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").HomeRealmDiscoveryPolicies().Get(context.Background(), nil)
 
 
 ```

@@ -4,64 +4,39 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = AndroidWorkProfileCompliancePolicy()
-request_body.@odata_type = '#microsoft.graph.androidWorkProfileCompliancePolicy'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.description = 'Description value'
+request_body = AndroidWorkProfileCompliancePolicy(
+	odata_type = "#microsoft.graph.androidWorkProfileCompliancePolicy",
+	description = "Description value",
+	display_name = "Display Name value",
+	version = 7,
+	password_required = True,
+	password_minimum_length = 5,
+	password_required_type = AndroidRequiredPasswordType.Alphabetic,
+	password_minutes_of_inactivity_before_lock = 5,
+	password_expiration_days = 6,
+	password_previous_password_block_count = 2,
+	security_prevent_install_apps_from_unknown_sources = True,
+	security_disable_usb_debugging = True,
+	security_require_verify_apps = True,
+	device_threat_protection_enabled = True,
+	device_threat_protection_required_security_level = DeviceThreatProtectionLevel.Secured,
+	security_block_jailbroken_devices = True,
+	os_minimum_version = "Os Minimum Version value",
+	os_maximum_version = "Os Maximum Version value",
+	min_android_security_patch_level = "Min Android Security Patch Level value",
+	storage_require_encryption = True,
+	security_require_safety_net_attestation_basic_integrity = True,
+	security_require_safety_net_attestation_certified_device = True,
+	security_require_google_play_services = True,
+	security_require_up_to_date_security_providers = True,
+	security_require_company_portal_app_integrity = True,
+)
 
-request_body.display_name = 'Display Name value'
-
-request_body.Version = 7
-
-request_body.password_required = True
-
-request_body.PasswordMinimumLength = 5
-
-request_body.passwordrequiredtype(AndroidRequiredPasswordType.Alphabetic('androidrequiredpasswordtype.alphabetic'))
-
-request_body.PasswordMinutesOfInactivityBeforeLock = 5
-
-request_body.PasswordExpirationDays = 6
-
-request_body.PasswordPreviousPasswordBlockCount = 2
-
-request_body.security_prevent_install_apps_from_unknown_sources = True
-
-request_body.security_disable_usb_debugging = True
-
-request_body.security_require_verify_apps = True
-
-request_body.device_threat_protection_enabled = True
-
-request_body.devicethreatprotectionrequiredsecuritylevel(DeviceThreatProtectionLevel.Secured('devicethreatprotectionlevel.secured'))
-
-request_body.security_block_jailbroken_devices = True
-
-request_body.os_minimum_version = 'Os Minimum Version value'
-
-request_body.os_maximum_version = 'Os Maximum Version value'
-
-request_body.min_android_security_patch_level = 'Min Android Security Patch Level value'
-
-request_body.storage_require_encryption = True
-
-request_body.security_require_safety_net_attestation_basic_integrity = True
-
-request_body.security_require_safety_net_attestation_certified_device = True
-
-request_body.security_require_google_play_services = True
-
-request_body.security_require_up_to_date_security_providers = True
-
-request_body.security_require_company_portal_app_integrity = True
-
-
-
-
-result = await client.device_management.device_compliance_policies.by_device_compliance_policie_id('deviceCompliancePolicy-id').patch(request_body = request_body)
+result = await graph_client.device_management.device_compliance_policies.by_device_compliance_policy_id('deviceCompliancePolicy-id').patch(request_body)
 
 
 ```

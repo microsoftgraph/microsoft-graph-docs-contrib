@@ -25,7 +25,7 @@ requestBody.SetDisplayName(&displayName)
 isOrganizationDefault := false
 requestBody.SetIsOrganizationDefault(&isOrganizationDefault) 
 
-result, err := graphClient.Policies().ClaimsMappingPolicies().Post(context.Background(), requestBody, nil)
+claimsMappingPolicies, err := graphClient.Policies().ClaimsMappingPolicies().Post(context.Background(), requestBody, nil)
 
 
 ```

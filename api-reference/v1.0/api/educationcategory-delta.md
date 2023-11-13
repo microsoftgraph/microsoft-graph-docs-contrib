@@ -14,14 +14,13 @@ Get a list of newly created or updated [educationCategory](../resources/educatio
 
 > This method doesn't return deleted categories.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
-| Permission type                        | Permissions (from least to most privileged)                                                            |
-| :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
-| Delegated (work or school account)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
-| Delegated (personal Microsoft account) | Not supported.                                                                                         |
-| Application                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "educationcategory_delta" } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationcategory-delta-permissions.md)]
 
 ## Optional query parameters
 This method only supports the `$top` OData query parameter.
@@ -43,7 +42,7 @@ GET /education/classes/{educationClassId}/assignments/{educationAssignmentId}/ca
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -55,7 +54,7 @@ If successful, this function returns a `200 OK` response code and an [educationC
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 Use the `$top` parameter to specify the number of categories to be returned. The parameter is optional. Use it when you have a long list of categories; otherwise, you will get all the categories in the class.
 
@@ -106,7 +105,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f
 
 #### Response
 
-The following is an example of the response. 
+The following example shows the response.
 
 >**Note:** Take the `@odata.nextLink` from the response to make another call and get the next set of categories.
 
@@ -149,7 +148,7 @@ Content-length: 344
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 Use the `@odata.nextLink` value from the previous call for this request.
 
@@ -200,7 +199,7 @@ GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignmentcategories
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** You must continue using the `@odata.nextLink` value for the consequent calls until you get the `@odata.deltaLink` property in the response.
 
@@ -238,7 +237,7 @@ Content-length: 344
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 Use the `@odata.deltaLink` value from the previous call for this request.
 
@@ -289,7 +288,7 @@ GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignmentcategories
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** You must continue using the `@odata.deltaLink` to get the newly created or modified categories since the initial Delta call.
 

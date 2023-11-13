@@ -25,7 +25,7 @@ address := "samanthab@adatum.onmicrosoft.com"
 senderEmailAddress.SetAddress(&address) 
 requestBody.SetSenderEmailAddress(senderEmailAddress)
 
-result, err := graphClient.Me().InferenceClassification().Overrides().Post(context.Background(), requestBody, nil)
+overrides, err := graphClient.Me().InferenceClassification().Overrides().Post(context.Background(), requestBody, nil)
 
 
 ```

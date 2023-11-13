@@ -57,7 +57,7 @@ phones := []graphmodels.Phoneable {
 }
 requestBody.SetPhones(phones)
 
-result, err := graphClient.Me().Contacts().Post(context.Background(), requestBody, nil)
+contacts, err := graphClient.Me().Contacts().Post(context.Background(), requestBody, nil)
 
 
 ```

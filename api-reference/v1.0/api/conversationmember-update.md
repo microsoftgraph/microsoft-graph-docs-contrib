@@ -13,15 +13,14 @@ Namespace: microsoft.graph
 
 Update the role of a [conversationMember](../resources/conversationmember.md) in a [team](../resources/team.md) or [channel](../resources/channel.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission Type|Permissions (from least to most privileged)|
-|---------|-------------|
-|Delegated (work or school account)| In teams: TeamMember.ReadWrite.All<br/>In channels: ChannelMember.ReadWrite.All  |
-|Delegated (personal Microsoft account)|Not supported|
-|Application| In teams: TeamMember.ReadWrite.All<br/>In channels:  ChannelMember.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "conversationmember_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/conversationmember-update-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored"} -->
@@ -37,11 +36,11 @@ PATCH /teams/{id}/channels/{id}/members/{id}
 
 ## Request body
 
-In the request body, supply the values for the relevant fields to update. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply the values for the relevant fields to update. Existing properties that aren't included in the request body maintains their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|roles|string collection|The roles for that user. Must be "owner" or empty. Guest users must always have role "guest" and cannot change. |
+|roles|string collection|The roles for that user. Must be "owner" or empty. Guest users must always have role "guest" and can't change. |
 
 ## Response
 
@@ -51,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a [conversationM
 
 ### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 <!-- {
   "blockType": "request",
@@ -59,7 +58,7 @@ Here is an example of the request.
 } -->
 
 ```http
-PATCH https://graph.microsoft.com/V1.0/teams/{id}/channels/{id}/members/{id}
+PATCH https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/members/{id}
 content-type: application/json
 content-length: 26
 
@@ -71,7 +70,7 @@ content-length: 26
 
 ### Response
 
-Here is an example of the response.
+Here's an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

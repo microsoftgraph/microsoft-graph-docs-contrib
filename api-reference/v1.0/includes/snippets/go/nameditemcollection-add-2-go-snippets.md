@@ -23,7 +23,7 @@ requestBody.SetFormula(&formula)
 comment := "Comment for the named item"
 requestBody.SetComment(&comment) 
 
-result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().Names().AddFormulaLocal().Post(context.Background(), requestBody, nil)
+addFormulaLocal, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().Names().AddFormulaLocal().Post(context.Background(), requestBody, nil)
 
 
 ```

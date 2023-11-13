@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Users().ByUserId("user-id").Profile().Emails().ByEmailId("itemEmail-id").Get(context.Background(), nil)
+emails, err := graphClient.Users().ByUserId("user-id").Profile().Emails().ByItemEmailId("itemEmail-id").Get(context.Background(), nil)
 
 
 ```

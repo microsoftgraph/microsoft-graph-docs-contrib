@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-
-result = await client.identity_governance.entitlement_management.acce_package_assignments.filter_by_current_user(on='{on}'.get()
+result = await graph_client.identity_governance.entitlement_management.access_package_assignments.filter_by_current_user_with_on("target").get()
 
 
 ```

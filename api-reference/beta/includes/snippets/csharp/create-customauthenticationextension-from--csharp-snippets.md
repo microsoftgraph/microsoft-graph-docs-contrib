@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
 var requestBody = new OnTokenIssuanceStartCustomExtension
 {
@@ -26,12 +27,7 @@ var requestBody = new OnTokenIssuanceStartCustomExtension
 	ClientConfiguration = new CustomExtensionClientConfiguration
 	{
 		TimeoutInMilliseconds = 2000,
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"maximumRetries" , 1
-			},
-		},
+		MaximumRetries = 1,
 	},
 	ClaimsForTokenConfiguration = new List<OnTokenIssuanceStartReturnClaim>
 	{
@@ -45,6 +41,8 @@ var requestBody = new OnTokenIssuanceStartCustomExtension
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Identity.CustomAuthenticationExtensions.PostAsync(requestBody);
 
 

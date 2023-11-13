@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Admin().Edge().InternetExplorerMode().SiteLists().Get(context.Background(), nil)
+siteLists, err := graphClient.Admin().Edge().InternetExplorerMode().SiteLists().Get(context.Background(), nil)
 
 
 ```

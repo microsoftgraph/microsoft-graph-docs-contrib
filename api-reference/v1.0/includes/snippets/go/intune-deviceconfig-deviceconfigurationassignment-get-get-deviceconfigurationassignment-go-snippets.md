@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceManagement().DeviceConfigurations().ByDeviceConfigurationId("deviceConfiguration-id").Assignments().ByAssignmentId("deviceConfigurationAssignment-id").Get(context.Background(), nil)
+assignments, err := graphClient.DeviceManagement().DeviceConfigurations().ByDeviceConfigurationId("deviceConfiguration-id").Assignments().ByDeviceConfigurationAssignmentId("deviceConfigurationAssignment-id").Get(context.Background(), nil)
 
 
 ```

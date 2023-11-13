@@ -26,7 +26,7 @@ requestBody.SetCitationUrl(&citationUrl)
 citationJurisdiction := "String"
 requestBody.SetCitationJurisdiction(&citationJurisdiction) 
 
-result, err := graphClient.Security().Labels().Citations().Post(context.Background(), requestBody, nil)
+citations, err := graphClient.Security().Labels().Citations().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -43,10 +43,6 @@ requestBody.SetThreshold(threshold)
 notificationChannel := graphmodelsdevicemanagement.NewNotificationChannel()
 notificationChannelType := graphmodels.PORTAL_NOTIFICATIONCHANNELTYPE 
 notificationChannel.SetNotificationChannelType(&notificationChannelType) 
-receivers := []string {
-	"",
-}
-notificationChannel.SetReceivers(receivers)
 notificationReceivers := []graphmodelsdevicemanagement.NotificationReceiverable {
 
 }
@@ -54,10 +50,6 @@ notificationChannel.SetNotificationReceivers(notificationReceivers)
 notificationChannel1 := graphmodelsdevicemanagement.NewNotificationChannel()
 notificationChannelType := graphmodels.EMAIL_NOTIFICATIONCHANNELTYPE 
 notificationChannel1.SetNotificationChannelType(&notificationChannelType) 
-receivers := []string {
-	"serena.davis@contoso.com",
-}
-notificationChannel1.SetReceivers(receivers)
 
 
 notificationReceiver := graphmodelsdevicemanagement.NewNotificationReceiver()
@@ -77,7 +69,7 @@ notificationChannels := []graphmodelsdevicemanagement.NotificationChannelable {
 }
 requestBody.SetNotificationChannels(notificationChannels)
 
-result, err := graphClient.DeviceManagement().Monitoring().AlertRules().Post(context.Background(), requestBody, nil)
+alertRules, err := graphClient.DeviceManagement().Monitoring().AlertRules().Post(context.Background(), requestBody, nil)
 
 
 ```

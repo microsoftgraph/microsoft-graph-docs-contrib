@@ -177,7 +177,7 @@ rules := []graphmodels.PlannerTaskRoleBasedRuleable {
 editPolicy.SetRules(rules)
 requestBody.SetEditPolicy(editPolicy)
 
-result, err := graphClient.Solutions().BusinessScenarios().ByBusinessScenarioId("businessScenario-id").Planner().TaskConfiguration().Patch(context.Background(), requestBody, nil)
+taskConfiguration, err := graphClient.Solutions().BusinessScenarios().ByBusinessScenarioId("businessScenario-id").Planner().TaskConfiguration().Patch(context.Background(), requestBody, nil)
 
 
 ```

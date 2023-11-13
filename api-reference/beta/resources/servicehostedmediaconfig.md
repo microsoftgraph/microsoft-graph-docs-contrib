@@ -19,12 +19,12 @@ The media that's hosted remotely. This is inherited from [mediaConfig](mediaconf
 
 | Property                    | Type                                                        | Description                                       |
 | :-------------------------- | :---------------------------------------------------------- | :-------------------------------------------------|
-| preFetchMedia               | [mediaInfo](mediainfo.md) collection                        | The list of media to pre-fetch.                   |
+| preFetchMedia               | [mediaInfo](mediainfo.md) collection                        | The list of media to prefetch.                   |
 | removeFromDefaultAudioGroup | Boolean                                                     | Remove self participant from default audio group. |
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

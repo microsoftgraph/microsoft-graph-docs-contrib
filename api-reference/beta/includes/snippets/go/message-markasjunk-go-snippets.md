@@ -19,7 +19,7 @@ requestBody := graphusers.NewItemMarkAsJunkPostRequestBody()
 moveToJunk := true
 requestBody.SetMoveToJunk(&moveToJunk) 
 
-result, err := graphClient.Me().Messages().ByMessageId("message-id").MarkAsJunk().Post(context.Background(), requestBody, nil)
+markAsJunk, err := graphClient.Me().Messages().ByMessageId("message-id").MarkAsJunk().Post(context.Background(), requestBody, nil)
 
 
 ```

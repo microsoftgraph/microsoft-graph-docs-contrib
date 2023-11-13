@@ -39,7 +39,7 @@ requestBody.SetContacts(contacts)
 website := "String"
 requestBody.SetWebsite(&website) 
 
-result, err := graphClient.TenantRelationships().ManagedTenants().TenantsCustomizedInformation().ByTenantsCustomizedInformation().Id("tenantCustomizedInformation-id").Patch(context.Background(), requestBody, nil)
+tenantsCustomizedInformation, err := graphClient.TenantRelationships().ManagedTenants().TenantsCustomizedInformation().ByTenantCustomizedInformationId("tenantCustomizedInformation-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

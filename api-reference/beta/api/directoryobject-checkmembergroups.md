@@ -15,51 +15,38 @@ Namespace: microsoft.graph
 
 Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified [user](../resources/user.md), [group](../resources/group.md), [service principal](../resources/serviceprincipal.md), [organizational contact](../resources/orgcontact.md), [device](../resources/device.md), or [directory object](../resources/directoryobject.md) is a member. This function is transitive.
 
-You can check up to a maximum of 20 groups per request. This function supports all groups provisioned in Azure AD. Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
+You can check up to a maximum of 20 groups per request. This function supports all groups provisioned in Microsoft Entra ID. Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### Group memberships for a directory object
 
-| Permission type                        | Permissions (from least to most privileged)           |
-|:---------------------------------------|:------------------------------------------------------|
-| Delegated (work or school account)     | User.ReadBasic.All, User.Read.All, Directory.Read.All |
-| Delegated (personal Microsoft account) | Not supported.                                        |
-| Application                            | User.Read.All, Directory.Read.All                     |
+<!-- { "blockType": "permissions", "name": "directoryobject_checkmembergroups" } -->
+[!INCLUDE [permissions-table](../includes/permissions/directoryobject-checkmembergroups-permissions.md)]
 
 ### Group memberships for a user
 
-| Permission type | Permissions (from least to most privileged) |
-|:-|:-|
-| Delegated (work or school account) | User.ReadBasic.All, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application | User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "directoryobject_checkmembergroups_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/directoryobject-checkmembergroups-2-permissions.md)]
 
 ### Group memberships for a group
 
-| Permission type | Permissions (from least to most privileged) |
-|:-|:-|
-| Delegated (work or school account) | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "directoryobject_checkmembergroups_3" } -->
+[!INCLUDE [permissions-table](../includes/permissions/directoryobject-checkmembergroups-3-permissions.md)]
 
 ### Group memberships for a service principal
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "directoryobject_checkmembergroups_4" } -->
+[!INCLUDE [permissions-table](../includes/permissions/directoryobject-checkmembergroups-4-permissions.md)]
 
 ### Group memberships for an organizational contact
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All   |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.Read.All, Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "directoryobject_checkmembergroups_5" } -->
+[!INCLUDE [permissions-table](../includes/permissions/directoryobject-checkmembergroups-5-permissions.md)]
 
 <!--
 The following table lists the permission types to use for different scenarios.
@@ -162,6 +149,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/directoryobject-checkmembergroups-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/directoryobject-checkmembergroups-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/directoryobject-checkmembergroups-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -190,7 +181,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -240,6 +231,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/directoryobject-checkmembergroups-me-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/directoryobject-checkmembergroups-me-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/directoryobject-checkmembergroups-me-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -267,7 +262,7 @@ Content-type: application/json
 ---
 
 #### Response
-The following is an example of the response
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -302,5 +297,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

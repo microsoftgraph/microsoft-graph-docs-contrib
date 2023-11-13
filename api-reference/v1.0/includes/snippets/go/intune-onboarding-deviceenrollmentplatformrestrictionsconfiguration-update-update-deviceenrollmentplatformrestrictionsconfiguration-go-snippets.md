@@ -75,7 +75,7 @@ osMaximumVersion := "Os Maximum Version value"
 macOSRestriction.SetOsMaximumVersion(&osMaximumVersion) 
 requestBody.SetMacOSRestriction(macOSRestriction)
 
-result, err := graphClient.DeviceManagement().DeviceEnrollmentConfigurations().ByDeviceEnrollmentConfigurationId("deviceEnrollmentConfiguration-id").Patch(context.Background(), requestBody, nil)
+deviceEnrollmentConfigurations, err := graphClient.DeviceManagement().DeviceEnrollmentConfigurations().ByDeviceEnrollmentConfigurationId("deviceEnrollmentConfiguration-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

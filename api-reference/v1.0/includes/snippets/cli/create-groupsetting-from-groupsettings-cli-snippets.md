@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc group-settings create --body '{\
     "templateId": "62375ab9-6b52-47ed-826b-58e47e0e304b",\
     "values": [\

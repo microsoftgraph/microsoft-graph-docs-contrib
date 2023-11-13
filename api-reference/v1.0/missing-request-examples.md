@@ -66,7 +66,7 @@ Content-Type: application/json
 ```
 
 
-## Define drives as an queryable entityset
+## Define drives as a queryable entity set
 
 # [HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "get_drive_from_id" } -->
@@ -118,7 +118,7 @@ Content-Type: application/json
 ```
 
 
-## define users as an queryable entityset
+## Define users as a queryable entity set
 
 
 # [HTTP](#tab/http)

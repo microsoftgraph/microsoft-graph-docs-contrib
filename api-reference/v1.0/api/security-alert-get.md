@@ -12,14 +12,13 @@ Namespace: microsoft.graph.security
 
 Get the properties and relationships of an [alert](../resources/security-alert.md) in an organization based on the specified alert **id** property.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|SecurityAlert.Read.All, SecurityAlert.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|SecurityAlert.Read.All, SecurityAlert.ReadWrite.All|
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "security_alert_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-alert-get-permissions.md)]
 
 ## HTTP request
 
@@ -38,7 +37,7 @@ GET /security/alerts_v2/{alertId}
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -158,9 +157,15 @@ Content-type: application/json
       "rbacGroupName": "UnassignedGroup",
       "onboardingStatus": "onboarded",
       "defenderAvStatus": "unknown",
+      "ipInterfaces": [
+        "1.1.1.1"
+      ],
       "loggedOnUsers": [],
       "roles": [
         "compromised"
+      ],
+      "detailedRoles": [
+        "Main device"
       ],
       "tags": [
         "Test Machine"
@@ -181,6 +186,9 @@ Content-type: application/json
       "detectionStatus": "detected",
       "mdeDeviceId": "73e7e2de709dff64ef64b1d0c30e67fab63279db",
       "roles": [],
+      "detailedRoles": [
+        "Referred in command line"
+      ],
       "tags": [],
       "fileDetails": {
         "sha1": "5f1e8acedc065031aad553b710838eb366cfee9a",
@@ -207,6 +215,7 @@ Content-type: application/json
       "detectionStatus": "detected",
       "mdeDeviceId": "73e7e2de709dff64ef64b1d0c30e67fab63279db",
       "roles": [],
+      "detailedRoles": [],
       "tags": [],
       "imageFile": {
         "sha1": "5f1e8acedc065031aad553b710838eb366cfee9a",
@@ -246,6 +255,7 @@ Content-type: application/json
       "registryKey": "SYSTEM\\CONTROLSET001\\CONTROL\\WMI\\AUTOLOGGER\\SENSEAUDITLOGGER",
       "registryHive": "HKEY_LOCAL_MACHINE",
       "roles": [],
+      "detailedRoles": [],
       "tags": []
     }
   ]

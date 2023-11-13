@@ -31,7 +31,7 @@ webUrl := "https://app.edu.buncee.com/buncee/C7B0866C9B7E485EAE21AE14DBC3FD08"
 resource.SetWebUrl(&webUrl) 
 requestBody.SetResource(resource)
 
-result, err := graphClient.Education().Classes().ByClasseId("educationClass-id").Assignments().ByAssignmentId("educationAssignment-id").Resources().Post(context.Background(), requestBody, nil)
+resources, err := graphClient.Education().Classes().ByEducationClassId("educationClass-id").Assignments().ByEducationAssignmentId("educationAssignment-id").Resources().Post(context.Background(), requestBody, nil)
 
 
 ```

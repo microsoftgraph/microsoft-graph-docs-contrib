@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceManagement().NotificationMessageTemplates().Get(context.Background(), nil)
+notificationMessageTemplates, err := graphClient.DeviceManagement().NotificationMessageTemplates().Get(context.Background(), nil)
 
 
 ```

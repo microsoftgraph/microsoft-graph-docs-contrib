@@ -29,7 +29,7 @@ Base type of [addressBookAccountTargetContent](../resources/addressbookaccountta
 |:---|:---|
 |unknown| Unknown type. |
 |includeAll| Include all users under tenant boundary. |
-|addressBook| Account details uploaded via Azure Active Directory.|
+|addressBook| Account details uploaded via Microsoft Entra ID.|
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 
 ## Relationships

@@ -57,7 +57,7 @@ requestBody.SetPasswordProfile(passwordProfile)
 passwordPolicies := "DisablePasswordExpiration"
 requestBody.SetPasswordPolicies(&passwordPolicies) 
 
-result, err := graphClient.Users().Post(context.Background(), requestBody, nil)
+users, err := graphClient.Users().Post(context.Background(), requestBody, nil)
 
 
 ```

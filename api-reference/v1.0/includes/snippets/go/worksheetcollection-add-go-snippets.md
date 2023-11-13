@@ -19,7 +19,7 @@ requestBody := graphdrives.NewAddPostRequestBody()
 name := "name-value"
 requestBody.SetName(&name) 
 
-result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().Worksheets().Add().Post(context.Background(), requestBody, nil)
+add, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().Worksheets().Add().Post(context.Background(), requestBody, nil)
 
 
 ```

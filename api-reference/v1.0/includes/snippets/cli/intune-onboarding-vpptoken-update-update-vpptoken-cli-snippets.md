@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc device-app-management vpp-tokens patch --vpp-token-id {vppToken-id} --body '{\
   "@odata.type": "#microsoft.graph.vppToken",\
   "organizationName": "Organization Name value",\

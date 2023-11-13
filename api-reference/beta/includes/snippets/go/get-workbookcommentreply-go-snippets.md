@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().Comments().ByCommentId("workbookComment-id").Replies().ByReplieId("workbookCommentReply-id").Get(context.Background(), nil)
+replies, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().Comments().ByWorkbookCommentId("workbookComment-id").Replies().ByWorkbookCommentReplyId("workbookCommentReply-id").Get(context.Background(), nil)
 
 
 ```

@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc users translate-exchange-ids post --user-id {user-id} --body '{\
   "inputIds" : [\
     "{rest-formatted-id-1}",\

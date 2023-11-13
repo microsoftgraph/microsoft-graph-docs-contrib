@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.NetworkAccess().Connectivity().Branches().ByBrancheId("branchSite-id").DeviceLinks().ByDeviceLinkId("deviceLink-id").Get(context.Background(), nil)
+deviceLinks, err := graphClient.NetworkAccess().Connectivity().Branches().ByBranchSiteId("branchSite-id").DeviceLinks().ByDeviceLinkId("deviceLink-id").Get(context.Background(), nil)
 
 
 ```

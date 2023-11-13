@@ -71,7 +71,7 @@ mediaConfig.SetRemoveFromDefaultAudioGroup(&removeFromDefaultAudioGroup)
 mediaConfig.SetAdditionalData(additionalData)
 requestBody.SetMediaConfig(mediaConfig)
 
-result, err := graphClient.Communications().Calls().Post(context.Background(), requestBody, nil)
+calls, err := graphClient.Communications().Calls().Post(context.Background(), requestBody, nil)
 
 
 ```

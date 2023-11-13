@@ -39,7 +39,7 @@ showInTeamsSearchAndSuggestions := true
 discoverySettings.SetShowInTeamsSearchAndSuggestions(&showInTeamsSearchAndSuggestions) 
 requestBody.SetDiscoverySettings(discoverySettings)
 
-result, err := graphClient.Teams().ByTeamId("team-id").Patch(context.Background(), requestBody, nil)
+teams, err := graphClient.Teams().ByTeamId("team-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

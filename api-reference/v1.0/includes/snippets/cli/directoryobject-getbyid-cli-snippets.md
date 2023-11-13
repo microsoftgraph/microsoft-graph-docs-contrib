@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc directory-objects get-by-ids post --body '{\
     "ids": [\
         "84b80893-8749-40a3-97b7-68513b600544",\

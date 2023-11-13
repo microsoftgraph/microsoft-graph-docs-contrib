@@ -22,7 +22,7 @@ configuration := &graphsecurity.SecurityIncidentsRequestBuilderGetRequestConfigu
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Security().Incidents().Get(context.Background(), configuration)
+incidents, err := graphClient.Security().Incidents().Get(context.Background(), configuration)
 
 
 ```

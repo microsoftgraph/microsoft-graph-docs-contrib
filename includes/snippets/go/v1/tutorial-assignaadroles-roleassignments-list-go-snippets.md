@@ -25,7 +25,7 @@ configuration := &graphrolemanagement.RoleManagementDirectoryRoleAssignmentsRequ
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.RoleManagement().Directory().RoleAssignments().Get(context.Background(), configuration)
+roleAssignments, err := graphClient.RoleManagement().Directory().RoleAssignments().Get(context.Background(), configuration)
 
 
 ```

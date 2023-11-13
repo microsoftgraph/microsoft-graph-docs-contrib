@@ -39,6 +39,27 @@ The following example shows iterating over all the messages in a user's mailbox.
 
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/Paging.java" id="PagingSnippet":::
 
+### [PHP](#tab/PHP)
+
+```php
+<?php
+$messages = $graphServiceClient->users()->byUserId(USER_ID)->messages()->get()->wait();
+
+$pageIterator = new PageIterator($messages, $graphServiceClient->getRequestAdapter());
+
+$callback = function (Message $message) {
+    echo "Message ID: {$message->getId()}";
+    return ($message->getId() !== 5);
+}
+
+// iteration will pause at message ID 5
+$pageIterator->iterate($callback);
+
+// resumes iteration from next message (ID 6)
+$pageIterator->iterate($callback);
+
+```
+
 ### [TypeScript](#tab/typescript)
 
 :::code language="typescript" source="./snippets/typescript/src/snippets/paging.ts" id="PagingSnippet":::
@@ -64,6 +85,25 @@ Some scenarios require stopping the iteration process in order to perform other 
 
 ```java
 // not supported in java SDK
+```
+### [PHP](#tab/PHP)
+
+```php
+<?php
+$messages = $graphServiceClient->users()->byUserId(USER_ID)->messages()->get()->wait();
+
+$pageIterator = new PageIterator($messages, $graphServiceClient->getRequestAdapter());
+
+$callback = function (Message $message) {
+    echo "Message ID: {$message->getId()}";
+    return ($message->getId() !== 5);
+}
+
+// iteration will pause at message ID 5
+$pageIterator->iterate($callback);
+
+// resumes iteration from next message (ID 6)
+$pageIterator->iterate($callback);
 ```
 
 ### [TypeScript](#tab/typescript)

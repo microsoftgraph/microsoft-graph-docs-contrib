@@ -38,7 +38,7 @@ resourceSpecificPermissions := []graphmodels.TeamsAppResourceSpecificPermissiona
 consentedPermissionSet.SetResourceSpecificPermissions(resourceSpecificPermissions)
 requestBody.SetConsentedPermissionSet(consentedPermissionSet)
 
-graphClient.Chats().ByChatId("chat-id").InstalledApps().ByInstalledAppId("teamsAppInstallation-id").Upgrade().Post(context.Background(), requestBody, nil)
+graphClient.Chats().ByChatId("chat-id").InstalledApps().ByTeamsAppInstallationId("teamsAppInstallation-id").Upgrade().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -177,7 +177,7 @@ questions := []graphmodels.AccessPackageQuestionable {
 }
 requestBody.SetQuestions(questions)
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentPolicies().ByAccessPackageAssignmentPolicieId("accessPackageAssignmentPolicy-id").Put(context.Background(), requestBody, nil)
+accessPackageAssignmentPolicies, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentPolicies().ByAccessPackageAssignmentPolicyId("accessPackageAssignmentPolicy-id").Put(context.Background(), requestBody, nil)
 
 
 ```

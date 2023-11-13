@@ -53,7 +53,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Chats().ByChatId("chat-id").InstalledApps().Post(context.Background(), requestBody, nil)
+installedApps, err := graphClient.Chats().ByChatId("chat-id").InstalledApps().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Print().Printers().ByPrinterId("printer-id").Jobs().ByJobId("printJob-id").Abort().Post(context.Background(), nil)
+graphClient.Print().Printers().ByPrinterId("printer-id").Jobs().ByPrintJobId("printJob-id").Abort().Post(context.Background(), nil)
 
 
 ```

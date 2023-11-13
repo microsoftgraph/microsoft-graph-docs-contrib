@@ -4,52 +4,34 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = EducationSchool()
-request_body.@odata_type = '#microsoft.graph.educationSchool'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.display_name = 'String'
+request_body = EducationSchool(
+	odata_type = "#microsoft.graph.educationSchool",
+	display_name = "String",
+	description = "String",
+	external_source = EducationExternalSource.Sis,
+	external_source_detail = "String",
+	principal_email = "String",
+	principal_name = "String",
+	external_principal_id = "String",
+	lowest_grade = "String",
+	highest_grade = "String",
+	school_number = "String",
+	external_id = "String",
+	phone = "String",
+	fax = "String",
+	created_by = IdentitySet(
+		odata_type = "microsoft.graph.identitySet",
+	),
+	address = PhysicalAddress(
+		odata_type = "microsoft.graph.physicalAddress",
+	),
+)
 
-request_body.description = 'String'
-
-request_body.externalsource(EducationExternalSource.String('educationexternalsource.string'))
-
-request_body.external_source_detail = 'String'
-
-request_body.principal_email = 'String'
-
-request_body.principal_name = 'String'
-
-request_body.external_principal_id = 'String'
-
-request_body.lowest_grade = 'String'
-
-request_body.highest_grade = 'String'
-
-request_body.school_number = 'String'
-
-request_body.external_id = 'String'
-
-request_body.phone = 'String'
-
-request_body.fax = 'String'
-
-created_by = IdentitySet()
-created_by.@odata_type = 'microsoft.graph.identitySet'
-
-
-request_body.created_by = created_by
-address = PhysicalAddress()
-address.@odata_type = 'microsoft.graph.physicalAddress'
-
-
-request_body.address = address
-
-
-
-result = await client.education.schools.post(request_body = request_body)
+result = await graph_client.education.schools.post(request_body)
 
 
 ```

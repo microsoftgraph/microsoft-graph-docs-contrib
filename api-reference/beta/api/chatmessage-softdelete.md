@@ -17,25 +17,21 @@ Delete a single [chatMessage](../resources/chatmessage.md) or a [chat message re
 
 >**Note:** This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences). 
 
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### Permissions for channel
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-|Delegated (work or school account)| ChannelMessage.ReadWrite |
-|Delegated (personal Microsoft account)| Not supported. |
-|Application| Not supported. |
+<!-- { "blockType": "permissions", "name": "chatmessage_softdelete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/chatmessage-softdelete-permissions.md)]
 
 ### Permissions for chat
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-|Delegated (work or school account)| Chat.ReadWrite |
-|Delegated (personal Microsoft account)| Not supported. |
-|Application| Not supported. |
+<!-- { "blockType": "permissions", "name": "chatmessage_softdelete_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/chatmessage-softdelete-2-permissions.md)]
 
 ## HTTP request
 
@@ -66,7 +62,7 @@ POST /users/{userId}/chats/{chatsId}/messages/{chatMessageId}/softDelete
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -91,6 +87,10 @@ POST https://graph.microsoft.com/beta/users/8f98f01d-1a73-401a-b9e9-9fd1e6f5e5ar
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/chatmessagethis-softdelete1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/chatmessagethis-softdelete1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -149,6 +149,10 @@ POST https://graph.microsoft.com/beta/teams/172b0cce-e65d-44ce-9a49-91d9f2e8593a
 [!INCLUDE [sample-code](../includes/snippets/csharp/chatmessagethis-softdelete2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/chatmessagethis-softdelete2-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/chatmessagethis-softdelete2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -203,6 +207,10 @@ POST https://graph.microsoft.com/beta/teams/172b0cce-e65d-44ce-9a49-91d9f2e8593a
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/chatmessagethis-softdelete3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/chatmessagethis-softdelete3-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

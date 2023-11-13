@@ -21,7 +21,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Organization().ByOrganization().Id("organization-id").Branding().Delete(context.Background(), requestBody, nil)
+graphClient.Organization().ByOrganizationId("organization-id").Branding().Delete(context.Background(), requestBody, nil)
 
 
 ```

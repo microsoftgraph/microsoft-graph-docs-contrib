@@ -49,7 +49,7 @@ requestBody.SetParticipants(participants)
 subject := "Create a meeting with customId provided"
 requestBody.SetSubject(&subject) 
 
-result, err := graphClient.Me().OnlineMeetings().CreateOrGet().Post(context.Background(), requestBody, nil)
+createOrGet, err := graphClient.Me().OnlineMeetings().CreateOrGet().Post(context.Background(), requestBody, nil)
 
 
 ```

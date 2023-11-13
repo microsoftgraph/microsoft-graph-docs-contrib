@@ -22,15 +22,14 @@ To remove the email address of a **channel**, use the [removeEmail](channel-remo
 > **Notes**: 
 > This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | ChannelSettings.ReadWrite.All               |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Not supported.                              |
+<!-- { "blockType": "permissions", "name": "channel_provisionemail" } -->
+[!INCLUDE [permissions-table](../includes/permissions/channel-provisionemail-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +43,7 @@ POST /teams/{team-id}/channels/{channel-id}/provisionEmail
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -67,6 +66,10 @@ POST https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/channel-provisionemail-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/channel-provisionemail-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

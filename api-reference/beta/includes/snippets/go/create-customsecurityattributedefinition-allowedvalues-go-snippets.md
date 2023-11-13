@@ -57,7 +57,7 @@ allowedValues := []graphmodels.AllowedValueable {
 }
 requestBody.SetAllowedValues(allowedValues)
 
-result, err := graphClient.Directory().CustomSecurityAttributeDefinitions().Post(context.Background(), requestBody, nil)
+customSecurityAttributeDefinitions, err := graphClient.Directory().CustomSecurityAttributeDefinitions().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Users().ByUserId("user-id").Calendar().Get(context.Background(), nil)
+calendar, err := graphClient.Users().ByUserId("user-id").Calendar().Get(context.Background(), nil)
 
 
 ```

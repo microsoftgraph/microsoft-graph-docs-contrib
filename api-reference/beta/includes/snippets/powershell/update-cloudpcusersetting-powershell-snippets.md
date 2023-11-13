@@ -15,6 +15,7 @@ $params = @{
 		userRestoreEnabled = $true
 	}
 	localAdminEnabled = $false
+	resetEnabled = $true
 }
 
 Update-MgBetaDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId $cloudPcUserSettingId -BodyParameter $params

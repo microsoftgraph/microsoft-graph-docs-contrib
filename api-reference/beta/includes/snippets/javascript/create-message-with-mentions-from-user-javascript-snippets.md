@@ -21,7 +21,7 @@ const message = {
       }
     ],
     mentions: [
-      {    
+      {
         mentioned: {
           name: 'Dana Swope',
           address: 'danas@contoso.onmicrosoft.com'

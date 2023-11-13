@@ -23,7 +23,7 @@ requestBody.SetExpectedAssessment(&expectedAssessment)
 category := graphmodels.PHISHING_THREATCATEGORY 
 requestBody.SetCategory(&category) 
 
-result, err := graphClient.InformationProtection().ThreatAssessmentRequests().Post(context.Background(), requestBody, nil)
+threatAssessmentRequests, err := graphClient.InformationProtection().ThreatAssessmentRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

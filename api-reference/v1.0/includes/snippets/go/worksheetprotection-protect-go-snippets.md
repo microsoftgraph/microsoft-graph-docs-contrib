@@ -42,7 +42,7 @@ allowPivotTables := true
 options.SetAllowPivotTables(&allowPivotTables) 
 requestBody.SetOptions(options)
 
-graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().Worksheets().ByWorksheetId("workbookWorksheet-id").Protection().Protect().Post(context.Background(), requestBody, nil)
+graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().Worksheets().ByWorkbookWorksheetId("workbookWorksheet-id").Protection().Protect().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -23,7 +23,7 @@ requestBody.SetDescription(&description)
 externalId := "324516"
 requestBody.SetExternalId(&externalId) 
 
-result, err := graphClient.Security().Cases().EdiscoveryCases().Post(context.Background(), requestBody, nil)
+ediscoveryCases, err := graphClient.Security().Cases().EdiscoveryCases().Post(context.Background(), requestBody, nil)
 
 
 ```

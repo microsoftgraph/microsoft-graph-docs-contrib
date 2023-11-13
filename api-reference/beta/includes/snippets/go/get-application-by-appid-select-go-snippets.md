@@ -22,7 +22,8 @@ configuration := &graphapplications(appid='{appid}').Applications(appId='{appId}
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Applications(appId='{appId}')().Get(context.Background(), configuration)
+appId := "{appId}"
+applications, err := graphClient.ApplicationsWithAppId(&appId).Get(context.Background(), configuration)
 
 
 ```

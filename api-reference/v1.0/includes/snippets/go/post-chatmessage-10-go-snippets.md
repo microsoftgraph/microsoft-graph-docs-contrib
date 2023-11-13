@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 import (
 	  "context"
-	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
 
@@ -71,7 +71,7 @@ hostedContents := []graphmodels.ChatMessageHostedContentable {
 }
 requestBody.SetHostedContents(hostedContents)
 
-result, err := graphClient.Teams().ByTeamId("team-id").Channels().ByChannelId("channel-id").Messages().Post(context.Background(), requestBody, nil)
+messages, err := graphClient.Teams().ByTeamId("team-id").Channels().ByChannelId("channel-id").Messages().Post(context.Background(), requestBody, nil)
 
 
 ```

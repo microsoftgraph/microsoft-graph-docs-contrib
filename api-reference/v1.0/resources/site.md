@@ -1,7 +1,7 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 title: "site resource type"
-description: The site resource provides metadata and relationships for a Sharepoint site. 
+description: The site resource provides metadata and relationships for a Sharepoint site.
 ms.localizationpriority: high
 ms.prod: "sharepoint"
 doc_type: resourcePageType
@@ -22,8 +22,9 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [List sites across geographies][] |  collection of sites  | List sites across all geographies in an organization.
 | [Get site by path][]     | site | Access the root SharePoint site with a relative path.
 | [Get site for a group][] | site | Access the team site for a group.
-| [Get analytics][]              | [itemAnalytics][] | Get analytics for this resource. 
+| [Get analytics][]              | [itemAnalytics][] | Get analytics for this resource.
 | [Get activities by interval][] | [itemActivityStat][] | Get a collection of **itemActivityStats** within the specified time interval.
+| [Get delta](../api/site-delta.md) | [site](../resources/site.md) collection | Get newly created, updated, or deleted [sites](../resources/site.md) without having to perform a full read of the entire sites collection.
 | [Search for sites][]     | collection of site | Search across a SharePoint tenant for sites that match keywords provided.
 | [Follow site][]          | collection of site | Follow a user's site or multiple sites.
 | [Unfollow site][]        | collection of site | Follow a user's site or multiple sites.
@@ -74,12 +75,12 @@ A **site** is identified by a unique ID that is a composite of the following val
 * Site collection hostname (contoso.sharepoint.com)
 * Site collection unique ID (GUID)
 * Site unique ID (GUID)
-  
+
 The `root` identifier always references the root site for a given target, as follows:
 
 * `/sites/root`: The tenant root site.
 * `/groups/{group-id}/sites/root`: The group's team site.
-  
+
 ## Relationships
 
 | Relationship      | Type                                             | Description

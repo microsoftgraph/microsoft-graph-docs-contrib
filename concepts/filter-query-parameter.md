@@ -30,6 +30,8 @@ Support for `$filter` operators varies across Microsoft Graph APIs. The followin
 | Conditional operators | <ul><li> And (`and`) </li><li> Or (`or`)</li>                                                                                                    |
 | Functions             | <ul><li> Starts with (`startsWith`) </li><li> Ends with (`endsWith`)</li><li> Contains (`contains`)</li></ul>                                                                   |
 
+See [Syntax for using the filter OData query parameter](#syntax-for-using-the-filter-odata-query-parameter) for examples of how to use these operators and functions.
+
 > [!NOTE]
 > Support for these operators varies by entity and some properties support `$filter` only with [advanced queries](/graph/aad-advanced-queries). See the specific resource documentation for details.
 
@@ -320,7 +322,7 @@ Hiding because the latest iteration of the report doesn't include these properti
 
 ## See also
 
-+ [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries)
++ [Advanced query capabilities on directory objects](/graph/aad-advanced-queries)
 
 
 <!-- Links -->

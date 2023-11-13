@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc device-management device-compliance-policies create --body '{\
   "@odata.type": "#microsoft.graph.windows10CompliancePolicy",\
   "description": "Description value",\

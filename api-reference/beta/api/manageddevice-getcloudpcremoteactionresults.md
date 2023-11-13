@@ -15,15 +15,14 @@ Namespace: microsoft.graph
 
 Check the [Cloud PC-specified remote action results](../resources/cloudpcremoteactionresult.md) for a Cloud PC device. Cloud PC supports reprovision and resize remote actions.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|CloudPC.Read.All, CloudPC.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|CloudPC.Read.All, CloudPC.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "manageddevice_getcloudpcremoteactionresults" } -->
+[!INCLUDE [permissions-table](../includes/permissions/manageddevice-getcloudpcremoteactionresults-permissions.md)]
 
 ## HTTP request
 
@@ -44,7 +43,7 @@ GET /deviceManagement/managedDevices/{managedDeviceId}/getCloudPcRemoteActionRes
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -68,6 +67,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDev
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/manageddevice-getcloudpcremoteactionresults-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/manageddevice-getcloudpcremoteactionresults-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

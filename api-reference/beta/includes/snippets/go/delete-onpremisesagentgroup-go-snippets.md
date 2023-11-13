@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.OnPremisesPublishingProfiles().ByOnPremisesPublishingProfileId("onPremisesPublishingProfile-id").AgentGroups().ByAgentGroupId("onPremisesAgentGroup-id").Delete(context.Background(), nil)
+graphClient.OnPremisesPublishingProfiles().ByOnPremisesPublishingProfileId("onPremisesPublishingProfile-id").AgentGroups().ByOnPremisesAgentGroupId("onPremisesAgentGroup-id").Delete(context.Background(), nil)
 
 
 ```

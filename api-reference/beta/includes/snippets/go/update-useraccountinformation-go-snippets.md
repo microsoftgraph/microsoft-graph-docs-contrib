@@ -19,7 +19,7 @@ requestBody := graphmodels.NewUserAccountInformation()
 countryCode := "NO"
 requestBody.SetCountryCode(&countryCode) 
 
-result, err := graphClient.Me().Profile().Account().ByAccount().Id("userAccountInformation-id").Patch(context.Background(), requestBody, nil)
+account, err := graphClient.Me().Profile().Account().ByUserAccountInformationId("userAccountInformation-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

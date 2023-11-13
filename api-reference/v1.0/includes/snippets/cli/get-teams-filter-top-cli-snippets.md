@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-mgc teams list --filter "startswith(displayName, 'A')&`$top=2"
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+mgc teams list --top "2" --filter "startswith(displayName, 'A')"
 
 ```

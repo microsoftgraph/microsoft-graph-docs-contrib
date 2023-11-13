@@ -45,7 +45,7 @@ requestBody.SetOsMaximumVersion(&osMaximumVersion)
 storageRequireEncryption := true
 requestBody.SetStorageRequireEncryption(&storageRequireEncryption) 
 
-result, err := graphClient.DeviceManagement().DeviceCompliancePolicies().ByDeviceCompliancePolicieId("deviceCompliancePolicy-id").Patch(context.Background(), requestBody, nil)
+deviceCompliancePolicies, err := graphClient.DeviceManagement().DeviceCompliancePolicies().ByDeviceCompliancePolicyId("deviceCompliancePolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

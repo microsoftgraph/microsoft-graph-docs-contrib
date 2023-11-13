@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceManagement().ImportedWindowsAutopilotDeviceIdentities().ByImportedWindowsAutopilotDeviceIdentitieId("importedWindowsAutopilotDeviceIdentity-id").Get(context.Background(), nil)
+importedWindowsAutopilotDeviceIdentities, err := graphClient.DeviceManagement().ImportedWindowsAutopilotDeviceIdentities().ByImportedWindowsAutopilotDeviceIdentityId("importedWindowsAutopilotDeviceIdentity-id").Get(context.Background(), nil)
 
 
 ```

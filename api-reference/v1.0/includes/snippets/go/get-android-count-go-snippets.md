@@ -32,7 +32,7 @@ configuration := &graphdevices.DevicesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Devices().Get(context.Background(), configuration)
+devices, err := graphClient.Devices().Get(context.Background(), configuration)
 
 
 ```

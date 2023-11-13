@@ -19,7 +19,7 @@ requestBody := graphmodels.NewPronounsSettings()
 isEnabledInOrganization := true
 requestBody.SetIsEnabledInOrganization(&isEnabledInOrganization) 
 
-result, err := graphClient.Admin().People().Pronouns().Patch(context.Background(), requestBody, nil)
+pronouns, err := graphClient.Admin().People().Pronouns().Patch(context.Background(), requestBody, nil)
 
 
 ```

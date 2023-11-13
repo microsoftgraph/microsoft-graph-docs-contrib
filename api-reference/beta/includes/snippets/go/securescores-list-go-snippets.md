@@ -25,7 +25,7 @@ configuration := &graphsecurity.SecuritySecureScoresRequestBuilderGetRequestConf
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Security().SecureScores().Get(context.Background(), configuration)
+secureScores, err := graphClient.Security().SecureScores().Get(context.Background(), configuration)
 
 
 ```

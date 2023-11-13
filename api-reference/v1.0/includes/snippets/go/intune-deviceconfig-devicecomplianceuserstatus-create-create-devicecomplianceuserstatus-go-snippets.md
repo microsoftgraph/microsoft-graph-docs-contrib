@@ -28,7 +28,7 @@ requestBody.SetLastReportedDateTime(&lastReportedDateTime)
 userPrincipalName := "User Principal Name value"
 requestBody.SetUserPrincipalName(&userPrincipalName) 
 
-result, err := graphClient.DeviceManagement().DeviceCompliancePolicies().ByDeviceCompliancePolicieId("deviceCompliancePolicy-id").UserStatuses().Post(context.Background(), requestBody, nil)
+userStatuses, err := graphClient.DeviceManagement().DeviceCompliancePolicies().ByDeviceCompliancePolicyId("deviceCompliancePolicy-id").UserStatuses().Post(context.Background(), requestBody, nil)
 
 
 ```

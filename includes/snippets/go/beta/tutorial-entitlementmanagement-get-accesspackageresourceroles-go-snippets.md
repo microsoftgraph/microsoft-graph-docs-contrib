@@ -26,7 +26,7 @@ configuration := &graphidentitygovernance.IdentityGovernanceEntitlementManagemen
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogs().ByAccessPackageCatalogId("accessPackageCatalog-id").AccessPackageResourceRoles().Get(context.Background(), configuration)
+accessPackageResourceRoles, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogs().ByAccessPackageCatalogId("accessPackageCatalog-id").AccessPackageResourceRoles().Get(context.Background(), configuration)
 
 
 ```

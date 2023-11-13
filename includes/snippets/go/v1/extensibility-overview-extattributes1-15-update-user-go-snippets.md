@@ -23,7 +23,7 @@ extensionAttribute13 := null
 onPremisesExtensionAttributes.SetExtensionAttribute13(&extensionAttribute13) 
 requestBody.SetOnPremisesExtensionAttributes(onPremisesExtensionAttributes)
 
-result, err := graphClient.Users().ByUserId("user-id").Patch(context.Background(), requestBody, nil)
+users, err := graphClient.Users().ByUserId("user-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Teamwork().Devices().ByDeviceId("teamworkDevice-id").Health().Get(context.Background(), nil)
+health, err := graphClient.Teamwork().Devices().ByTeamworkDeviceId("teamworkDevice-id").Health().Get(context.Background(), nil)
 
 
 ```

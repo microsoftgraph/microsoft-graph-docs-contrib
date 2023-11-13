@@ -3,7 +3,7 @@ title: "deviceUsageSummary resource type"
 description: "A summary for total, active and inactive devices in a given time range."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: resourcePageType
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Review app authentication library changes"
-description: "Describes how to update authentication library use in order to migrate an app from Azure Active Directory (Azure AD) API apps to Microsoft Graph API."
+description: "Describes how to update authentication library use in order to migrate an app from Azure AD Graph to Microsoft Graph."
 author: "FaithOmbongi"
 ms.author: ombongifaith
 ms.reviewer: dkershaw
@@ -46,7 +46,7 @@ When you switch your app over to MSAL, you'll need to make a few changes, includ
 var scopes = new string[] { "https://graph.microsoft.com/.default" };
 ```
 
-The expression above limits the permission scopes request to those configured during application registration in the Azure Portal, and saves your existing users from having to consent to your app again.
+The expression above limits the permission scopes request to those configured during application registration in the Microsoft Entra admin center, and saves your existing users from having to consent to your app again.
 
 See [Migrating ADAL to MSAL](https://aka.ms/adal-net-to-msal-net) for direct and extensive help with the process, including troubleshooting and help with common errors.
 

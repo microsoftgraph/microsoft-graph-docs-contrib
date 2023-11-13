@@ -19,7 +19,7 @@ requestBody := graphdrives.NewCreateLinkPostRequestBody()
 type := "embed"
 requestBody.SetType(&type) 
 
-result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").CreateLink().Post(context.Background(), requestBody, nil)
+createLink, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").CreateLink().Post(context.Background(), requestBody, nil)
 
 
 ```

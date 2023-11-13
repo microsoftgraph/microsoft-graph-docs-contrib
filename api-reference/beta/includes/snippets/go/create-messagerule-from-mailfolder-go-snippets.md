@@ -47,7 +47,7 @@ stopProcessingRules := true
 actions.SetStopProcessingRules(&stopProcessingRules) 
 requestBody.SetActions(actions)
 
-result, err := graphClient.Me().MailFolders().ByMailFolderId("mailFolder-id").MessageRules().Post(context.Background(), requestBody, nil)
+messageRules, err := graphClient.Me().MailFolders().ByMailFolderId("mailFolder-id").MessageRules().Post(context.Background(), requestBody, nil)
 
 
 ```

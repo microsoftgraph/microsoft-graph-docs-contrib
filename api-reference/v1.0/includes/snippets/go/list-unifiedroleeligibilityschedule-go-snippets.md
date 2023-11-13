@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.RoleManagement().Directory().RoleEligibilitySchedules().Get(context.Background(), nil)
+roleEligibilitySchedules, err := graphClient.RoleManagement().Directory().RoleEligibilitySchedules().Get(context.Background(), nil)
 
 
 ```

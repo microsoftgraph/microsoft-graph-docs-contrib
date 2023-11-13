@@ -25,7 +25,7 @@ configuration := &graphoauth2permissiongrants.Oauth2PermissionGrantsRequestBuild
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Oauth2PermissionGrants().Get(context.Background(), configuration)
+oauth2PermissionGrants, err := graphClient.Oauth2PermissionGrants().Get(context.Background(), configuration)
 
 
 ```

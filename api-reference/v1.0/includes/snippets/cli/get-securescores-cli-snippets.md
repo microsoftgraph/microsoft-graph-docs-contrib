@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-mgc security secure-scores list --top 1
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+mgc security secure-scores list --top "1"
 
 ```

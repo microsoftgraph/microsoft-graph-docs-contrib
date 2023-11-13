@@ -4,24 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = PersonCertification()
-request_body.certification_id = 'KB-1235466333663322'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.description = 'Blackbelt in Marketing - Brand Management'
+request_body = PersonCertification(
+	certification_id = "KB-1235466333663322",
+	description = "Blackbelt in Marketing - Brand Management",
+	display_name = "Marketing Blackbelt - Brand Management",
+	thumbnail_url = "https://iame.io/dfhdfdfd334.jpg",
+	web_url = "https://www.iame.io/blackbelt",
+)
 
-request_body.display_name = 'Marketing Blackbelt - Brand Management'
-
-request_body.thumbnail_url = 'https://iame.io/dfhdfdfd334.jpg'
-
-request_body.web_url = 'https://www.iame.io/blackbelt'
-
-
-
-
-result = await client.me.profile.certifications.post(request_body = request_body)
+result = await graph_client.me.profile.certifications.post(request_body)
 
 
 ```

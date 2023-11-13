@@ -17,7 +17,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewWorkbookChartPoint()
 
-result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().Worksheets().ByWorksheetId("workbookWorksheet-id").Charts().ByChartId("workbookChart-id").Series().BySerieId("workbookChartSeries-id").Points().Post(context.Background(), requestBody, nil)
+points, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().Worksheets().ByWorkbookWorksheetId("workbookWorksheet-id").Charts().ByWorkbookChartId("workbookChart-id").Series().ByWorkbookChartSeriesId("workbookChartSeries-id").Points().Post(context.Background(), requestBody, nil)
 
 
 ```

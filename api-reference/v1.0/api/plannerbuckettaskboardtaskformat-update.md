@@ -1,6 +1,6 @@
 ---
 title: "Update plannerBucketTaskBoardTaskFormat"
-description: "Update the properties of plannerBucketTaskBoardTaskFormat object."
+description: "Update the properties of a plannerBucketTaskBoardTaskFormat object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
@@ -11,16 +11,15 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update the properties of **plannerBucketTaskBoardTaskFormat** object.
+Update the properties of a [plannerBucketTaskBoardTaskFormat](../resources/plannerbuckettaskboardtaskformat.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Tasks.ReadWrite, Group.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Tasks.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "plannerbuckettaskboardtaskformat_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/plannerbuckettaskboardtaskformat-update-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -34,15 +33,17 @@ PATCH /planner/tasks/{id}/bucketTaskBoardFormat
 | If-Match  | Last known ETag value for the **plannerBucketTaskBoardTaskFormat** to be updated. Required.|
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|orderHint|String|Hint used to order tasks in the Bucket view of the Task Board. The format is defined as outlined [here](../resources/planner-order-hint-format.md).|
+|orderHint|String|Hint used to order tasks in the bucket view of the task board. For details about the supported format, see [Using order hints in Planner](../resources/planner-order-hint-format.md).|
+
 
 ## Response
 
-If successful, this method returns `204 No Content` response and empty content. If the request specifies `Prefer` header with `return=representation` preference, then this method returns a `200 OK` response code and updated [plannerBucketTaskBoardTaskFormat](../resources/plannerbuckettaskboardtaskformat.md) object in the response body.
+If successful, this method returns a `204 No Content` response and empty content. If the request specifies the `Prefer` header with `return=representation` preference, then this method returns a `200 OK` response code and an updated [plannerBucketTaskBoardTaskFormat](../resources/plannerbuckettaskboardtaskformat.md) object in the response body.
 
 This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).
 
@@ -101,8 +102,8 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ---
 
 ### Response
-The following is an example of the response. 
->**Note**: The response object shown here might be shortened for readability.
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

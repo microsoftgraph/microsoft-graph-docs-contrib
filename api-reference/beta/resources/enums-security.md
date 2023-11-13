@@ -11,28 +11,11 @@ author: "BenAlfasi"
 
 Namespace: microsoft.graph.security
 
-### contentFormat values
-
-| Member             |
-|:-------------------|
-| text               |
-| html               |
-| markdown           |
-| unknownFutureValue |
-
-### detectionStatus values
-
-| Member             |
-|:-------------------|
-| detected           |
-| blocked            |
-| prevented          |
-| unknownFutureValue |
 
 ### actionAfterRetentionPeriod values
 
 | Member                 |
-|:-----------------------|
+| :--------------------- |
 | none                   |
 | delete                 |
 | startDispositionReview |
@@ -41,25 +24,43 @@ Namespace: microsoft.graph.security
 ### behaviorDuringRetentionPeriod values
 
 | Member                   |
-|:-------------------------|
+| :----------------------- |
 | doNotRetain              |
 | retain                   |
 | retainAsRecord           |
 | retainAsRegulatoryRecord |
 | unknownFutureValue       |
 
+## contentFormat values
+
+| Member             |
+| :----------------- |
+| text               |
+| html               |
+| markdown           |
+| unknownFutureValue |
+
 ### defaultRecordBehavior values
 
 | Member             |
-|:-------------------|
+| :----------------- |
 | startLocked        |
 | startUnlocked      |
 | unknownFutureValue |
 
+### detectionStatus values
+
+| Member
+|:--------------
+| detected
+| blocked
+| prevented
+| unknownFutureValue
+
 ### eventPropagationStatus values
 
 | Member             |
-|:-------------------|
+| :----------------- |
 | none               |
 | inProcessing       |
 | failed             |
@@ -69,17 +70,34 @@ Namespace: microsoft.graph.security
 ### eventStatusType values
 
 | Member             |
-|:-------------------|
+| :----------------- |
 | pending            |
 | error              |
 | success            |
 | notAvaliable       |
 | unknownFutureValue |
 
+### hostPortProtocol values
+
+| Member             |
+| :----------------- |
+| tcp                |
+| udp                |
+| unknownFutureValue |
+
+### hostPortStatus values
+
+| Member             |
+| :----------------- |
+| open               |
+| filtered           |
+| closed             |
+| unknownFutureValue |
+
 ### hostReputationClassification values
 
 | Member             |
-|:-------------------|
+| :----------------- |
 | unknown            |
 | neutral            |
 | suspicious         |
@@ -89,7 +107,7 @@ Namespace: microsoft.graph.security
 ### hostReputationRuleSeverity values
 
 | Member             |
-|:-------------------|
+| :----------------- |
 | unknown            |
 | low                |
 | medium             |
@@ -99,7 +117,7 @@ Namespace: microsoft.graph.security
 ### indicatorSource values
 
 | Member             |
-|:-------------------|
+| :----------------- |
 | microsoft          |
 | osint              |
 | public             |
@@ -108,7 +126,7 @@ Namespace: microsoft.graph.security
 ### intelligenceProfileKind values
 
 | Member             |
-|:-------------------|
+| :----------------- |
 | actor              |
 | tool               |
 | unknownFutureValue |
@@ -116,7 +134,7 @@ Namespace: microsoft.graph.security
 ### queryType values
 
 | Member             |
-|:-------------------|
+| :----------------- |
 | files              |
 | messages           |
 | unknownFutureValue |
@@ -124,7 +142,7 @@ Namespace: microsoft.graph.security
 ### retentionTrigger values
 
 | Member             |
-|:-------------------|
+| :----------------- |
 | dateLabeled        |
 | dateCreated        |
 | dateModified       |
@@ -134,166 +152,13 @@ Namespace: microsoft.graph.security
 ### vulnerabilitySeverity values
 
 | Member             |
-|:-------------------|
+| :----------------- |
 | none               |
 | low                |
 | medium             |
 | high               |
 | critical           |
 | unknownFutureValue |
-
-### deviceAssetIdentifier values
-
-| Member                |
-|:----------------------|
-| deviceId              |
-| deviceName            |
-| remoteDeviceName      |
-| targetDeviceName      |
-| destinationDeviceName |
-| unknownFutureValue    |
-
-### deviceIdEntityIdentifier values
-
-| Member             |
-|:-------------------|
-| deviceId           |
-| unknownFutureValue |
-
-### disableUserEntityIdentifier values
-
-| Member                      |
-|:----------------------------|
-| accountSid                  |
-| initiatingProcessAccountSid |
-| requestAccountSid           |
-| onPremSid                   |
-| unknownFutureValue          |
-
-### emailEntityIdentifier values
-
-| Member                |
-|:----------------------|
-| networkMessageId      |
-| recipientEmailAddress |
-| unknownFutureValue    |
-
-### fileEntityIdentifier values
-
-| Member                  |
-|:------------------------|
-| sha1                    |
-| initiatingProcessSHA1   |
-| sha256                  |
-| initiatingProcessSHA256 |
-| unknownFutureValue      |
-
-### forceUserPasswordResetEntityIdentifier values
-
-| Member                      |
-|:----------------------------|
-| accountSid                  |
-| initiatingProcessAccountSid |
-| requestAccountSid           |
-| onPremSid                   |
-| unknownFutureValue          |
-
-### huntingRuleErrorCode values
-
-| Member                   |
-|:-------------------------|
-| queryExecutionFailed     |
-| queryExecutionThrottling |
-| queryExceededResultSize  |
-| queryLimitsExceeded      |
-| queryTimeout             |
-| alertCreationFailed      |
-| alertReportNotFound      |
-| partialRowsFailed        |
-| unknownFutureValue       |
-
-### huntingRuleRunStatus values
-
-| Member             |
-|:-------------------|
-| running            |
-| completed          |
-| failed             |
-| partiallyFailed    |
-| unknownFutureValue |
-
-### isolationType values
-
-| Member             |
-|:-------------------|
-| full               |
-| selective          |
-| unknownFutureValue |
-
-### mailboxAssetIdentifier values
-
-| Member                      |
-|:----------------------------|
-| accountUpn                  |
-| fileOwnerUpn                |
-| initiatingProcessAccountUpn |
-| lastModifyingAccountUpn     |
-| targetAccountUpn            |
-| senderFromAddress           |
-| senderDisplayName           |
-| recipientEmailAddress       |
-| senderMailFromAddress       |
-| unknownFutureValue          |
-
-### markUserAsCompromisedEntityIdentifier values
-
-| Member                           |
-|:---------------------------------|
-| accountObjectId                  |
-| initiatingProcessAccountObjectId |
-| servicePrincipalId               |
-| recipientObjectId                |
-| unknownFutureValue               |
-
-### scopeType values
-
-| Member             |
-|:-------------------|
-| deviceGroup        |
-| unknownFutureValue |
-
-### stopAndQuarantineFileEntityIdentifier values
-
-| Member                |
-|:----------------------|
-| deviceId              |
-| sha1                  |
-| initiatingProcessSHA1 |
-| unknownFutureValue    |
-
-### userAssetIdentifier values
-
-| Member                      |
-|:----------------------------|
-| accountObjectId             |
-| accountSid                  |
-| accountUpn                  |
-| accountName                 |
-| accountDomain               |
-| accountId                   |
-| requestAccountSid           |
-| requestAccountName          |
-| requestAccountDomain        |
-| recipientObjectId           |
-| processAccountObjectId      |
-| initiatingAccountSid        |
-| initiatingProcessAccountUpn |
-| initiatingAccountName       |
-| initiatingAccountDomain     |
-| servicePrincipalId          |
-| servicePrincipalName        |
-| targetAccountUpn            |
-| unknownFutureValue          |
 
 <!--
 {

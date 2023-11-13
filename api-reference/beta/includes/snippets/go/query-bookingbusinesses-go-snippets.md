@@ -25,7 +25,7 @@ configuration := &graphbookingbusinesses.BookingBusinessesRequestBuilderGetReque
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.BookingBusinesses().Get(context.Background(), configuration)
+bookingBusinesses, err := graphClient.BookingBusinesses().Get(context.Background(), configuration)
 
 
 ```

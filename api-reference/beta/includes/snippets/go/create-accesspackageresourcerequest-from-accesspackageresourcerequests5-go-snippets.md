@@ -25,7 +25,7 @@ id := "354078e5-dbce-4894-8af4-0ab274d41662"
 accessPackageResource.SetId(&id) 
 requestBody.SetAccessPackageResource(accessPackageResource)
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(context.Background(), requestBody, nil)
+accessPackageResourceRequests, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageResourceRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

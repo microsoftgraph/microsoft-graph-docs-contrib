@@ -39,7 +39,7 @@ theme := graphmodels.PINK_SCHEDULEENTITYTHEME
 draftTimeOff.SetTheme(&theme) 
 requestBody.SetDraftTimeOff(draftTimeOff)
 
-result, err := graphClient.Teams().ByTeamId("team-id").Schedule().TimesOff().Post(context.Background(), requestBody, nil)
+timesOff, err := graphClient.Teams().ByTeamId("team-id").Schedule().TimesOff().Post(context.Background(), requestBody, nil)
 
 
 ```

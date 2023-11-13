@@ -82,7 +82,7 @@ requestBody.SetVersionNumber(&versionNumber)
 buildNumber := "Build Number value"
 requestBody.SetBuildNumber(&buildNumber) 
 
-result, err := graphClient.DeviceAppManagement().MobileApps().Post(context.Background(), requestBody, nil)
+mobileApps, err := graphClient.DeviceAppManagement().MobileApps().Post(context.Background(), requestBody, nil)
 
 
 ```

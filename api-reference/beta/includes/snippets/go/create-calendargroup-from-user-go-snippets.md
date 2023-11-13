@@ -19,7 +19,7 @@ requestBody := graphmodels.NewCalendarGroup()
 name := "Personal events"
 requestBody.SetName(&name) 
 
-result, err := graphClient.Me().CalendarGroups().Post(context.Background(), requestBody, nil)
+calendarGroups, err := graphClient.Me().CalendarGroups().Post(context.Background(), requestBody, nil)
 
 
 ```

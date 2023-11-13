@@ -28,7 +28,7 @@ tagsToAdd := []graphmodelssecurity.ediscoveryReviewTagable {
 }
 requestBody.SetTagsToAdd(tagsToAdd)
 
-graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").ReviewSets().ByReviewSetId("ediscoveryReviewSet-id").Queries().ByQuerieId("ediscoveryReviewSetQuery-id").MicrosoftGraphSecurityApplyTags().Post(context.Background(), requestBody, nil)
+graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").ReviewSets().ByEdiscoveryReviewSetId("ediscoveryReviewSet-id").Queries().ByEdiscoveryReviewSetQueryId("ediscoveryReviewSetQuery-id").MicrosoftGraphSecurityApplyTags().Post(context.Background(), requestBody, nil)
 
 
 ```

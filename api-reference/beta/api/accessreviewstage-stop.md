@@ -16,14 +16,15 @@ Stop an [access review stage](../resources/accessReviewStage.md) that is `inProg
 
 The [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects will always reflect the last decisions recorded across all stages at that given time, regardless of the status of the stages.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
-|Permission type                        | Permissions (from least to most privileged)              |
-|:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | AccessReview.ReadWrite.All |
-|Delegated (personal Microsoft account)|Not supported.|
-|Application                            | AccessReview.ReadWrite.All |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "accessreviewstage_stop" } -->
+[!INCLUDE [permissions-table](../includes/permissions/accessreviewstage-stop-permissions.md)]
+
+[!INCLUDE [rbac-access-reviews-apis-write](../includes/rbac-for-apis/rbac-access-reviews-apis-write.md)]
 
 ## HTTP request
 
@@ -41,7 +42,7 @@ POST /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefiniti
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -63,6 +64,10 @@ POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitio
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/accessreviewstage-stop-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/accessreviewstage-stop-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

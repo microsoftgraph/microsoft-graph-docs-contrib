@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId
 [!INCLUDE [sample-code](../includes/snippets/php/intune-apps-mobileapp-get-get-mobileapp-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-apps-mobileapp-get-get-mobileapp-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/intune-apps-mobileapp-get-get-mobileapp-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

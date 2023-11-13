@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Security().Labels().Citations().ByCitationId("citationTemplate-id").Delete(context.Background(), nil)
+graphClient.Security().Labels().Citations().ByCitationTemplateId("citationTemplate-id").Delete(context.Background(), nil)
 
 
 ```

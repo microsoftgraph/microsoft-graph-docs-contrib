@@ -24,7 +24,7 @@ requestBody.SetCloudPcIds(cloudPcIds)
 targetServicePlanId := "662009bc-7732-4f6f-8726-25883518b33e"
 requestBody.SetTargetServicePlanId(&targetServicePlanId) 
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().CloudPCs().BulkResize().Post(context.Background(), requestBody, nil)
+bulkResize, err := graphClient.DeviceManagement().VirtualEndpoint().CloudPCs().BulkResize().Post(context.Background(), requestBody, nil)
 
 
 ```

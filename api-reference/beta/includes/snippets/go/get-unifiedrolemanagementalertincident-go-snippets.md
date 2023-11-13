@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.IdentityGovernance().RoleManagementAlerts().Alerts().ByAlertId("unifiedRoleManagementAlert-id").AlertIncidents().ByAlertIncidentId("unifiedRoleManagementAlertIncident-id").Get(context.Background(), nil)
+alertIncidents, err := graphClient.IdentityGovernance().RoleManagementAlerts().Alerts().ByUnifiedRoleManagementAlertId("unifiedRoleManagementAlert-id").AlertIncidents().ByUnifiedRoleManagementAlertIncidentId("unifiedRoleManagementAlertIncident-id").Get(context.Background(), nil)
 
 
 ```

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().Assignments().Get(context.Background(), nil)
+assignments, err := graphClient.IdentityGovernance().EntitlementManagement().Assignments().Get(context.Background(), nil)
 
 
 ```

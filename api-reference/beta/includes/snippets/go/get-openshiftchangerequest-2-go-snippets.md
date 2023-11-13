@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Teams().ByTeamId("team-id").Schedule().OpenShiftChangeRequests().Get(context.Background(), nil)
+openShiftChangeRequests, err := graphClient.Teams().ByTeamId("team-id").Schedule().OpenShiftChangeRequests().Get(context.Background(), nil)
 
 
 ```

@@ -25,7 +25,7 @@ configuration := &graphidentityprotection.IdentityProtectionServicePrincipalRisk
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityProtection().ServicePrincipalRiskDetections().Get(context.Background(), configuration)
+servicePrincipalRiskDetections, err := graphClient.IdentityProtection().ServicePrincipalRiskDetections().Get(context.Background(), configuration)
 
 
 ```

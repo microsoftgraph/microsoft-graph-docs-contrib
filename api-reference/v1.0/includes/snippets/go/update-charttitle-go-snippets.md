@@ -23,7 +23,7 @@ requestBody.SetText(&text)
 visible := true
 requestBody.SetVisible(&visible) 
 
-result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().Worksheets().ByWorksheetId("workbookWorksheet-id").Charts().ByChartId("workbookChart-id").Title().Patch(context.Background(), requestBody, nil)
+title, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().Worksheets().ByWorkbookWorksheetId("workbookWorksheet-id").Charts().ByWorkbookChartId("workbookChart-id").Title().Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.TrustFramework().KeySets().ByKeySetId("trustFrameworkKeySet-id").Get(context.Background(), nil)
+keySets, err := graphClient.TrustFramework().KeySets().ByTrustFrameworkKeySetId("trustFrameworkKeySet-id").Get(context.Background(), nil)
 
 
 ```

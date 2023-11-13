@@ -77,7 +77,7 @@ phones := []graphmodels.Phoneable {
 }
 requestBody.SetPhones(phones)
 
-result, err := graphClient.BookingBusinesses().ByBookingBusinesseId("bookingBusiness-id").Customers().Post(context.Background(), requestBody, nil)
+customers, err := graphClient.BookingBusinesses().ByBookingBusinessId("bookingBusiness-id").Customers().Post(context.Background(), requestBody, nil)
 
 
 ```

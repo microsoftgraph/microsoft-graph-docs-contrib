@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.DeviceManagement().WindowsInformationProtectionNetworkLearningSummaries().ByWindowsInformationProtectionNetworkLearningSummarieId("windowsInformationProtectionNetworkLearningSummary-id").Delete(context.Background(), nil)
+graphClient.DeviceManagement().WindowsInformationProtectionNetworkLearningSummaries().ByWindowsInformationProtectionNetworkLearningSummaryId("windowsInformationProtectionNetworkLearningSummary-id").Delete(context.Background(), nil)
 
 
 ```

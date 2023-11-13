@@ -13,15 +13,14 @@ Namespace: microsoft.graph
 
 Update the role of a [conversationMember](../resources/conversationmember.md) in a [channel](../resources/channel.md). This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission Type|Permissions (from least to most privileged)|
-|---------|-------------|
-|Delegated (work or school account)|ChannelMember.ReadWrite.All |
-|Delegated (personal Microsoft account)|Not supported|
-|Application|ChannelMember.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "channel_update_members" } -->
+[!INCLUDE [permissions-table](../includes/permissions/channel-update-members-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored"} -->

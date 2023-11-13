@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.NetworkAccess().Settings().CrossTenantAccess().Get(context.Background(), nil)
+crossTenantAccess, err := graphClient.NetworkAccess().Settings().CrossTenantAccess().Get(context.Background(), nil)
 
 
 ```

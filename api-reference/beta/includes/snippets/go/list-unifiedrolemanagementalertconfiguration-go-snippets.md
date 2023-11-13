@@ -26,7 +26,7 @@ configuration := &graphidentitygovernance.IdentityGovernanceRoleManagementAlerts
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityGovernance().RoleManagementAlerts().AlertConfigurations().Get(context.Background(), configuration)
+alertConfigurations, err := graphClient.IdentityGovernance().RoleManagementAlerts().AlertConfigurations().Get(context.Background(), configuration)
 
 
 ```

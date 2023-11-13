@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc device-app-management mobile-apps patch --mobile-app-id {mobileApp-id} --body '{\
   "@odata.type": "#microsoft.graph.windowsWebApp",\
   "displayName": "Display Name value",\

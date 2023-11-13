@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc tenant-relationships delegated-admin-relationships access-assignments create --delegated-admin-relationship-id {delegatedAdminRelationship-id} --body '{\
   "accessContainer": {\
     "accessContainerId": "869713c9-0b28-4d08-8949-ae07ae1bf528",\

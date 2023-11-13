@@ -14,13 +14,10 @@ Unfollow a user's [site](../resources/site.md) or multiple sites.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|            Permission type             | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Sites.ReadWrite.All                         |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Sites.ReadWrite.All                         |
+<!-- { "blockType": "permissions", "name": "site_unfollow" } -->
+[!INCLUDE [permissions-table](../includes/permissions/site-unfollow-permissions.md)]
 
 ## HTTP request
 
@@ -32,7 +29,7 @@ POST /users/{user-id}/followedSites/remove
 
 ## Request body
 
-In the request body, supply an array of JSON objects with the id parameter mentioned in the table below. 
+In the request body, supply an array of JSON objects with the ID parameter mentioned in the table below. 
 
 
 | Name                 | Value  | Description                                                            |
@@ -42,7 +39,7 @@ In the request body, supply an array of JSON objects with the id parameter menti
 ## Response
 
 * If the request is successful, this method returns a `204` status code with no content.  
-* If an error occured while unfollowing any of the specified sites, this method returns a `207` status code and the response body will contain an array of entries containing [error](/graph/errors) objects and siteIds indicating which sites unable to be unfollowed.
+* If an error occurred while unfollowing any of the specified sites, this method returns a `207` status code and the response body contain an array of entries containing [error](/graph/errors) objects and siteIds indicating which sites unable to be unfollowed.
 
 ## Example
 
@@ -91,7 +88,7 @@ If successful, it returns the following JSON response.
 HTTP/1.1 204 No Content
 ```
 
-If an error occured, it returns the following JSON response 
+If an error occurred, it returns the following JSON response 
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 

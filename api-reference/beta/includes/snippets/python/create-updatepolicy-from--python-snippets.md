@@ -4,65 +4,44 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = UpdatePolicy()
-request_body.@odata_type = '#microsoft.graph.windowsUpdates.updatePolicy'
+graph_client = GraphServiceClient(credentials, scopes)
 
-audience = DeploymentAudience()
-audience.id = '8c4eb1eb-d7a3-4633-8e2f-f926e82df08e'
+request_body = UpdatePolicy(
+	odata_type = "#microsoft.graph.windowsUpdates.updatePolicy",
+	audience = DeploymentAudience(
+		id = "8c4eb1eb-d7a3-4633-8e2f-f926e82df08e",
+	),
+	compliance_changes = [
+		ContentApproval(
+			odata_type = "#microsoft.graph.windowsUpdates.contentApproval",
+		),
+	],
+	compliance_change_rules = [
+		ContentApprovalRule(
+			odata_type = "#microsoft.graph.windowsUpdates.contentApprovalRule",
+			content_filter = DriverUpdateFilter(
+				odata_type = "#microsoft.graph.windowsUpdates.driverUpdateFilter",
+			),
+			duration_before_deployment_start = "P7D",
+		),
+	],
+	deployment_settings = DeploymentSettings(
+		odata_type = "microsoft.graph.windowsUpdates.deploymentSettings",
+		schedule = ScheduleSettings(
+			gradual_rollout = RateDrivenRolloutSettings(
+				odata_type = "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
+				duration_between_offers = "P1D",
+				additional_data = {
+						"device_per_offer" : 1000,
+				}
+			),
+		),
+	),
+)
 
-
-request_body.audience = audience
-compliance_changes_compliance_change1 = ContentApproval()
-compliance_changes_compliance_change1.@odata_type = '#microsoft.graph.windowsUpdates.contentApproval'
-
-
-complianceChangesArray []= complianceChangesComplianceChange1;
-request_body.compliancechanges(complianceChangesArray)
-
-
-compliance_change_rules_compliance_change_rule1 = ContentApprovalRule()
-compliance_change_rules_compliance_change_rule1.@odata_type = '#microsoft.graph.windowsUpdates.contentApprovalRule'
-
-compliance_change_rules_compliance_change_rule1content_filter = DriverUpdateFilter()
-compliance_change_rules_compliance_change_rule1content_filter.@odata_type = '#microsoft.graph.windowsUpdates.driverUpdateFilter'
-
-
-compliance_change_rules_compliance_change_rule1.content_filter = compliance_change_rules_compliance_change_rule1content_filter
-compliance_change_rules_compliance_change_rule1.durationbeforedeploymentstart =  \DateInterval('P7D')
-
-
-complianceChangeRulesArray []= complianceChangeRulesComplianceChangeRule1;
-request_body.compliancechangerules(complianceChangeRulesArray)
-
-
-deployment_settings = DeploymentSettings()
-deployment_settings.@odata_type = 'microsoft.graph.windowsUpdates.deploymentSettings'
-
-deployment_settingsschedule = ScheduleSettings()
-deployment_settingsschedulegradual_rollout = RateDrivenRolloutSettings()
-deployment_settingsschedulegradual_rollout.@odata_type = '#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings'
-
-deployment_settingsschedulegradual_rollout.durationbetweenoffers =  \DateInterval('P1D')
-
-additional_data = [
-'device_per_offer' => 1000,
-];
-deployment_settingsschedulegradual_rollout.additional_data(additional_data)
-
-
-
-deployment_settingsschedule.gradual_rollout = deployment_settingsschedulegradual_rollout
-
-deployment_settings.schedule = deployment_settingsschedule
-
-request_body.deployment_settings = deployment_settings
-
-
-
-result = await client.admin.windows.updates.update_policies.post(request_body = request_body)
+result = await graph_client.admin.windows.updates.update_policies.post(request_body)
 
 
 ```

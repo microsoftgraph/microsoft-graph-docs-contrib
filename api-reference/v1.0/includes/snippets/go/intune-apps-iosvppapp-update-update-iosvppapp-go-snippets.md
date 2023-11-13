@@ -72,7 +72,7 @@ requestBody.SetVppTokenAppleId(&vppTokenAppleId)
 bundleId := "Bundle Id value"
 requestBody.SetBundleId(&bundleId) 
 
-result, err := graphClient.DeviceAppManagement().MobileApps().ByMobileAppId("mobileApp-id").Patch(context.Background(), requestBody, nil)
+mobileApps, err := graphClient.DeviceAppManagement().MobileApps().ByMobileAppId("mobileApp-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

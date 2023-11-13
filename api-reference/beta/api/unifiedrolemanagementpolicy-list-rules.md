@@ -21,28 +21,24 @@ Get the rules defined for a role management policy. The rules are a collection o
 
 To retrieve rules for a policy that applies to Azure RBAC, use the [Azure REST PIM API for role management policies](/rest/api/authorization/role-management-policies/list-for-scope).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-### For PIM for Azure AD roles
+### For PIM for Microsoft Entra roles
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|RoleManagementPolicy.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|RoleManagementPolicy.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
+<!-- { "blockType": "permissions", "name": "unifiedrolemanagementpolicy_list_rules" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedrolemanagementpolicy-list-rules-permissions.md)]
 
 ### For PIM for groups
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|RoleManagementPolicy.Read.AzureADGroup, RoleManagementPolicy.ReadWrite.AzureADGroup|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|RoleManagementPolicy.Read.AzureADGroup, RoleManagementPolicy.ReadWrite.AzureADGroup|
+<!-- { "blockType": "permissions", "name": "unifiedrolemanagementpolicy_list_rules_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedrolemanagementpolicy-list-rules-2-permissions.md)]
 
 ## HTTP request
 
-To retrieve rules in a policy for either Azure AD roles or groups:
+To retrieve rules in a policy for either Microsoft Entra roles or groups:
 <!-- {
   "blockType": "ignored"
 }
@@ -60,7 +56,7 @@ This method supports the `$select` and `$filter` OData query parameters to help 
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -68,11 +64,13 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Retrieve rules of a policy in PIM for Azure AD roles
+<a name='example-1-retrieve-rules-of-a-policy-in-pim-for-azure-ad-roles'></a>
+
+### Example 1: Retrieve rules of a policy in PIM for Microsoft Entra roles
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -87,6 +85,10 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicies/DirectoryRo
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-unifiedrolemanagementpolicyruleforid-directory-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-unifiedrolemanagementpolicyruleforid-directory-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -117,7 +119,7 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicies/DirectoryRo
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -436,7 +438,7 @@ Content-Type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -451,6 +453,10 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicies/Group_60bba
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-unifiedrolemanagementpolicyruleforid-azureadgroup-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-unifiedrolemanagementpolicyruleforid-azureadgroup-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -481,7 +487,7 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicies/Group_60bba
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 **Note:** The response object shown here might be shortened for readability.
 <!-- {

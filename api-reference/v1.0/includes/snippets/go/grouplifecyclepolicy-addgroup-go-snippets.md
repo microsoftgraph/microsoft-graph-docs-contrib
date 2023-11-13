@@ -19,7 +19,7 @@ requestBody := graphgrouplifecyclepolicies.NewAddGroupPostRequestBody()
 groupId := "ffffffff-ffff-ffff-ffff-ffffffffffff"
 requestBody.SetGroupId(&groupId) 
 
-result, err := graphClient.GroupLifecyclePolicies().ByGroupLifecyclePolicieId("groupLifecyclePolicy-id").AddGroup().Post(context.Background(), requestBody, nil)
+addGroup, err := graphClient.GroupLifecyclePolicies().ByGroupLifecyclePolicyId("groupLifecyclePolicy-id").AddGroup().Post(context.Background(), requestBody, nil)
 
 
 ```

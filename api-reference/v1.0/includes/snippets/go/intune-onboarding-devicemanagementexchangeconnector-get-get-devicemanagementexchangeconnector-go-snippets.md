@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceManagement().ExchangeConnectors().ByExchangeConnectorId("deviceManagementExchangeConnector-id").Get(context.Background(), nil)
+exchangeConnectors, err := graphClient.DeviceManagement().ExchangeConnectors().ByDeviceManagementExchangeConnectorId("deviceManagementExchangeConnector-id").Get(context.Background(), nil)
 
 
 ```

@@ -1,6 +1,6 @@
 ---
 title: "Use Microsoft Graph APIs to configure SAML-based single sign-on"
-description: "Follow these steps to create and configure a SAML-based single sign-on (SSO) for your application in Azure AD using the Microsoft Graph API."
+description: "Follow these steps to create and configure a SAML-based single sign-on (SSO) for your application in Microsoft Entra ID using the Microsoft Graph API."
 author: "FaithOmbongi"
 ms.author: ombongifaith
 ms.reviewer: alamaral
@@ -12,9 +12,9 @@ ms.date: 12/08/2022
 
 # Configure SAML-based single sign-on for your application using the Microsoft Graph API
 
-In this article, you'll learn how to create and configure a SAML-based single sign-on (SSO) for your application in Azure Active Directory (Azure AD) using the Microsoft Graph API. The application configuration includes basic SAML URLs, a claims mapping policy, and using a certificate to add a custom signing key. After the application is created, you assign a user to it to be an administrator. You then can use a URL to obtain Azure AD SAML metadata for additional configuration of the application. 
+In this article, you'll learn how to create and configure a SAML-based single sign-on (SSO) for your application in Microsoft Entra ID using the Microsoft Graph API. The application configuration includes basic SAML URLs, a claims mapping policy, and using a certificate to add a custom signing key. After the application is created, you assign a user to it to be an administrator. You then can use a URL to obtain Microsoft Entra SAML metadata for additional configuration of the application. 
 
-This article uses an AWS Azure AD application template as an example, but you can use the steps in this article for any SAML-based app in the Azure AD Gallery.
+This article uses an AWS Microsoft Entra application template as an example, but you can use the steps in this article for any SAML-based app in the Microsoft Entra gallery.
 
 ## Prerequisites
 
@@ -23,7 +23,7 @@ This article uses an AWS Azure AD application template as an example, but you ca
 
 ## Step 1: Create the application
 
-Azure AD has a gallery that contains thousands of pre-integrated applications that you can use as a template for your application. The application template describes the metadata for that application. Using this template, you can create an instance of the application and service principal in your tenant for management. 
+Microsoft Entra ID has a gallery that contains thousands of pre-integrated applications that you can use as a template for your application. The application template describes the metadata for that application. Using this template, you can create an instance of the application and service principal in your tenant for management. 
 
 To create the application from the gallery, you first get the identifier of the application template and then use that identifier to create the application.
 
@@ -171,7 +171,7 @@ Content-type: application/json
 ---
 
 > [!NOTE]
-> Allow some time for the app to be provisioned into your Azure AD tenant. It is not instant. One strategy is to do a GET query on the application or service principal object every 5-10 seconds until the query is successful.
+> Allow some time for the app to be provisioned into your Microsoft Entra tenant. It is not instant. One strategy is to do a GET query on the application or service principal object every 5-10 seconds until the query is successful.
 
 #### Response
 <!-- {
@@ -575,7 +575,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-configure-saml-sso-update-servicepricipal-approles-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
@@ -583,7 +583,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-configure-saml-sso-update-servicepricipal-approles-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -601,7 +601,7 @@ HTTP/1.1 204 No Content
 
 ### Create a claims mapping policy
 
-In addition to the basic claims, configure the following claims for Azure AD to emit in the SAML token:
+In addition to the basic claims, configure the following claims for Microsoft Entra ID to emit in the SAML token:
 
 | Claim name | Source  |
 |---------|---------|
@@ -760,9 +760,11 @@ HTTP/1.1 204 No Content
 
 ## Step 4: Configure a signing certificate
 
-You need a self-signed certificate that Azure AD can use to sign a SAML response. You can use your own certificate or you can use the following example. 
+You need a self-signed certificate that Microsoft Entra ID can use to sign a SAML response. You can use your own certificate or you can use the following example. 
 
-### Option 1: Create a signing certificate in Azure AD
+<a name='option-1-create-a-signing-certificate-in-azure-ad'></a>
+
+### Option 1: Create a signing certificate in Microsoft Entra ID
 
 Using the **id** of the service principal that you created, create a new certificate and add it to the service principal.
 
@@ -1052,7 +1054,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-configure-saml-sso-add-credentials-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
@@ -1060,7 +1062,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-configure-saml-sso-add-credentials-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -1077,7 +1079,7 @@ HTTP/1.1 204 No Content
 
 ### Activate the custom signing key
 
-You need to set the **preferredTokenSigningKeyThumbprint** property of the service principal to the thumbprint of the certificate that you want Azure AD to use to sign the SAML response. 
+You need to set the **preferredTokenSigningKeyThumbprint** property of the service principal to the thumbprint of the certificate that you want Microsoft Entra ID to use to sign the SAML response. 
 
 #### Request
 
@@ -1143,7 +1145,7 @@ HTTP/1.1 204 No Content
 
 ### Create a user account
 
-For this tutorial, you create a user account that is added to the application. In the request body, change contoso.com to the domain name of your tenant. You can find tenant information on the Azure Active Directory overview page. Record the **id** of the user to be used later in this tutorial.
+For this tutorial, you create a user account that is added to the application. In the request body, change contoso.com to the domain name of your tenant. You can find tenant information on the Microsoft Entra overview page. Record the **id** of the user to be used later in this tutorial.
 
 #### Request
 
@@ -1271,7 +1273,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-configure-saml-sso-add-approleassignment-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
@@ -1279,7 +1281,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-configure-saml-sso-add-approleassignment-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -1309,9 +1311,11 @@ Content-type: application/json
 }
 ```
 
-## Step 6: Get Azure AD SAML metadata
+<a name='step-6-get-azure-ad-saml-metadata'></a>
 
-Use the following URL to get the Azure AD SAML metadata for the specific configured application. The metadata contains information such as the signing certificate, Azure AD entityID, and Azure AD SingleSignOnService, among others.
+## Step 6: Get Microsoft Entra SAML metadata
+
+Use the following URL to get the Microsoft Entra SAML metadata for the specific configured application. The metadata contains information such as the signing certificate, Microsoft Entra entityID, and Microsoft Entra SingleSignOnService, among others.
 
 `https://login.microsoftonline.com/{tenant-id}/federationmetadata/2007-06/federationmetadata.xml?appid={app-id}`
 

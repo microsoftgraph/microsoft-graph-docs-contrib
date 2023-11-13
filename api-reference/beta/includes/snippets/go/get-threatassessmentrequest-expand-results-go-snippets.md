@@ -22,7 +22,7 @@ configuration := &graphinformationprotection.InformationProtectionThreatAssessme
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.InformationProtection().ThreatAssessmentRequests().ByThreatAssessmentRequestId("threatAssessmentRequest-id").Get(context.Background(), configuration)
+threatAssessmentRequests, err := graphClient.InformationProtection().ThreatAssessmentRequests().ByThreatAssessmentRequestId("threatAssessmentRequest-id").Get(context.Background(), configuration)
 
 
 ```
