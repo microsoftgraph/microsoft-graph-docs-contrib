@@ -58,7 +58,7 @@ Here's an example of the request.
 } -->
 
 ```http
-PATCH https://graph.microsoft.com/V1.0/teams/{id}/channels/{id}/members/{id}
+PATCH https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/members/{id}
 content-type: application/json
 content-length: 26
 
