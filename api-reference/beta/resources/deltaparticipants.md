@@ -24,7 +24,8 @@ Represents a notification for the creation, update, or deletion of a [participan
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deltaParticipants"
