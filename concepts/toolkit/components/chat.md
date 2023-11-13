@@ -65,3 +65,4 @@ The `mgt-chat` component doesn't expose any localization variables.
 ## Known issues
 
 - The `mgt-chat` component doesn't support the same `chatId` being used in multiple instances of the component or across multiple tabs.
+- The `mgt-chat` component doesn't support theming and won't respect browsers preferences.

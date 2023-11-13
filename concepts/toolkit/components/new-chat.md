@@ -69,3 +69,7 @@ The `mgt-new-chat` component doesn't cache any data.
 ## Localization
 
 The `mgt-new-chat` component doesn't expose any localization variables.
+
+## Known issues
+
+- The `mgt-new-chat` component doesn't support theming and won't respect browsers preferences.
