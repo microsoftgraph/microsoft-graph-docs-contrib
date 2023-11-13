@@ -1,7 +1,7 @@
 ---
 title: "timeOffReason resource type"
 description: "Represents a valid reason to take time off in a schedule."
-author: "aaku"
+author: "shanemalone"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
@@ -36,6 +36,7 @@ Represents a valid reason to take [time off](timeoff.md) in a [schedule](schedul
 | isActive 			| Boolean      | Indicates whether the **timeOffReason** can be used when creating new entities or updating existing ones. Required. |
 | lastModifiedBy		| [identitySet](identityset.md)        |The identity that last updated this **timeOffReason**.|
 | lastModifiedDateTime		| DateTimeOffset         |The time stamp on which this **timeOffReason** was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
+| code               | String                  | The code of the **timeOffReason** to represent an external identifier. |
 
 ## JSON representation
 
@@ -52,6 +53,7 @@ The following is a JSON representation of the resource.
 {
   "createdDateTime": "String (timestamp)",
   "displayName": "String",
+  "code": "String",
   "iconType": "String",
   "id": "String (identifier)",
   "isActive": "Boolean",
