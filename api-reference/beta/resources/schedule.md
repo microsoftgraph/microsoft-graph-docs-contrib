@@ -1,7 +1,7 @@
 ---
 title: schedule resource type
 description: A collection of schedulingGroups, shifts, timeOffReasons and timesOff within a team.
-author: aaku
+author: "shanemalone"
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
 doc_type: resourcePageType
@@ -37,6 +37,8 @@ A collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md)
 | swapShiftsRequestsEnabled | Boolean         | Indicates whether swap shifts requests are enabled for the schedule.                                             |
 | offerShiftRequestsEnabled | Boolean         | Indicates whether offer shift requests are enabled for the schedule.                                             |
 | timeOffRequestsEnabled    | Boolean         | Indicates whether time off requests are enabled for the schedule.                                                |
+| startDayOfWeek            | string          | Indicates the start day of the week.                                                                             |
+| activitiesIncludedWhenCopyingShiftsEnabled | Boolean | Indicates whether copied shifts should include the activities.                                          |
 
 ## Relationships
 |Name                   |Type           |Description                                                                                                                                      |
