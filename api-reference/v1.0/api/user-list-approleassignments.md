@@ -12,19 +12,20 @@ author: "psignoret"
 Namespace: microsoft.graph
 
 
-Retrieve the list of [appRoleAssignment](../resources/approleassignment.md) that a user has been granted. This operation also returns app roles assigned to groups that the user is a direct member of.
+Retrieve the list of [appRoleAssignments](../resources/approleassignment.md) that are currently granted to a user. This operation also returns app role assignments granted to groups that the user is a direct member of.
+
+> [!IMPORTANT]
+> To ensure complete results for users with many indirect app role assignments, use the **ConsistencyLevel** header set to `eventual` and `$count`, as described in [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries#group-properties). For an example, see [Example 1](#example-1-list-approleassignments-granted-to-a-user).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.ReadBasic.All, Directory.Read.All, AppRoleAssignment.ReadWrite.All  |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.Read.All, AppRoleAssignment.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "user_list_approleassignments" } -->
+[!INCLUDE [permissions-table](../includes/permissions/user-list-approleassignments-permissions.md)]
 
 ## HTTP request
 
@@ -58,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-Here is an example of the request to retrieve the app roles that have been assigned to a user.
+The following example shows a request to retrieve all app role assignments granted to the user, and to groups where the user is a direct member.
 
 
 # [HTTP](#tab/http)
@@ -68,7 +69,8 @@ Here is an example of the request to retrieve the app roles that have been assig
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users/6e7b768e-07e2-4810-8459-485f84f8f204/appRoleAssignments
+GET https://graph.microsoft.com/v1.0/users/6e7b768e-07e2-4810-8459-485f84f8f204/appRoleAssignments?$count=true
+ConsistencyLevel: eventual
 ```
 
 # [C#](#tab/csharp)
@@ -109,7 +111,7 @@ GET https://graph.microsoft.com/v1.0/users/6e7b768e-07e2-4810-8459-485f84f8f204/
 
 The following example shows the response.
 
->**Note:** The response object shown here might be shortened for readability. 
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -143,7 +145,7 @@ Content-type: application/json
 
 #### Request
 
-Here is an example of the request to retrieve the app roles that have been assigned to a user, filtering by a `resourceId`, which is a GUID type.
+The following example shows a request to retrieve the app roles that are assigned to a user, filtering by a `resourceId`, which is a GUID type.
 
 
 # [HTTP](#tab/http)
@@ -194,7 +196,7 @@ GET https://graph.microsoft.com/v1.0/users/cdb555e3-b33e-4fd5-a427-17fadacbdfa7/
 
 The following example shows the response.
 
->**Note:** The response object shown here might be shortened for readability. 
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

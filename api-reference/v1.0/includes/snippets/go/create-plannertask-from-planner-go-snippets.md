@@ -24,7 +24,7 @@ title := "Update client list"
 requestBody.SetTitle(&title) 
 assignments := graphmodels.NewPlannerAssignments()
 additionalData := map[string]interface{}{
-"fbab97d0-4932-4511-b675-204639209557" := graphmodels.New()
+"fbab97d0-4932-4511-b675-204639209557" := graphmodels.NewPlannerAssignment()
 orderHint := " !"
 "fbab97d0-4932-4511-b675-204639209557".SetOrderHint(&orderHint) 
 	assignments.Set"fbab97d0-4932-4511-b675-204639209557"("fbab97d0-4932-4511-b675-204639209557")
