@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AccessPackageAssignmentPolicy(
 	display_name = "Sales department users",
@@ -18,7 +18,7 @@ request_body = AccessPackageAssignmentPolicy(
 			description = "Membership rule for all users from sales department",
 			membership_rule = "(user.department -eq \"Sales\")",
 		),
-	]
+	],
 	automatic_request_settings = AccessPackageAutomaticRequestSettings(
 		request_access_for_allowed_targets = True,
 		remove_access_when_target_leaves_allowed_targets = True,
@@ -29,7 +29,7 @@ request_body = AccessPackageAssignmentPolicy(
 	),
 )
 
-result = await graph_client.identity_governance.entitlement_management.assignment_policies.post(body = request_body)
+result = await graph_client.identity_governance.entitlement_management.assignment_policies.post(request_body)
 
 
 ```

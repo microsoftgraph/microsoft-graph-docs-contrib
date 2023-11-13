@@ -68,6 +68,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -117,6 +118,8 @@ GET https://graph.microsoft.com/beta/chats/19%3Ad65713bc498c4a428c71ef9353e6ce20
 
 #### Response
 
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -150,7 +153,7 @@ In the following example, if an instance of an installed app has a [bot](../reso
 
 #### Request
 
-
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -199,6 +202,8 @@ GET https://graph.microsoft.com/beta/chats/19%3Ad65713bc498c4a428c71ef9353e6ce20
 ---
 
 #### Response
+
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -371,6 +376,8 @@ The following example gets the list of any [resource-specific permissions that w
 
 #### Request
 
+The following example shows a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -418,6 +425,8 @@ GET https://graph.microsoft.com/beta/chats/19%5bd86ec7f6b247d3b9e519b0bfef5d03%4
 ---
 
 #### Response
+
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

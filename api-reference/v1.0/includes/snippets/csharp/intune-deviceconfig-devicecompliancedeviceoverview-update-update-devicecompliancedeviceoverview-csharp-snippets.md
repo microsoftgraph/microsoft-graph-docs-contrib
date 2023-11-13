@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Models;
 
 var requestBody = new DeviceComplianceDeviceOverview
 {
@@ -19,6 +20,8 @@ var requestBody = new DeviceComplianceDeviceOverview
 	LastUpdateDateTime = DateTimeOffset.Parse("2016-12-31T23:58:21.6459442-08:00"),
 	ConfigurationVersion = 4,
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.DeviceManagement.DeviceCompliancePolicies["{deviceCompliancePolicy-id}"].DeviceStatusOverview.PatchAsync(requestBody);
 
 

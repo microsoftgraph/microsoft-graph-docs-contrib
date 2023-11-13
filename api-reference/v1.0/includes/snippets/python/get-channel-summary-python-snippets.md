@@ -6,13 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
-query_params = ChannelRequestBuilder.ChannelRequestBuilderGetQueryParameters(
+query_params = ChannelItemRequestBuilder.ChannelItemRequestBuilderGetQueryParameters(
 		select = ["summary"],
 )
 
-request_configuration = ChannelRequestBuilder.ChannelRequestBuilderGetRequestConfiguration(
+request_configuration = ChannelItemRequestBuilder.ChannelItemRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
 )
 
