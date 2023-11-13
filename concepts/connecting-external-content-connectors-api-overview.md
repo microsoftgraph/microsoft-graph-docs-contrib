@@ -40,9 +40,9 @@ To learn more, see [Create, update, and delete items added by your application v
 
 ## Sync external groups
 
-Items in the external service can be granted or denied access via ACL to different types of non-Azure Active Directory groups. For example, Salesforce items might have permission sets and profiles, while ServiceNow items might have local groups. When you ingest these items into Microsoft Graph, you need to honor these ACLs.
+Items in the external service can be granted or denied access via ACL to different types of non-Microsoft Entra groups. For example, Salesforce items might have permission sets and profiles, while ServiceNow items might have local groups. When you ingest these items into Microsoft Graph, you need to honor these ACLs.
 
-You can use the external group API to set permissions on external items ingested into Microsoft Graph. An [externalGroup](/graph/api/resources/externalconnectors-externalgroup) represents a non-Azure Active Directory group or group-like construct (such as business units, teams, and so on) and determines permissions on the content in your external data source.
+You can use the external group API to set permissions on external items ingested into Microsoft Graph. An [externalGroup](/graph/api/resources/externalconnectors-externalgroup) represents a non-Microsoft Entra group or group-like construct (such as business units, teams, and so on) and determines permissions on the content in your external data source.
 
 To learn more, see [Use external groups to manage permissions to Microsoft Graph connectors data sources](connecting-external-content-external-groups.md).
 

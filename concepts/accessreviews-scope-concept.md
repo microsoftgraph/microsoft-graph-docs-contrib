@@ -1,6 +1,6 @@
 ---
 title: "Configure the scope of your access review using the Microsoft Graph API"
-description: "Learn how to programmatically review the access that users, service principals, or groups have to your Azure AD resources by using the Microsoft Graph API."
+description: "Learn how to programmatically review the access that users, service principals, or groups have to your Microsoft Entra resources by using the Microsoft Graph API."
 author: "FaithOmbongi"
 ms.author: ombongifaith
 ms.reviewer: jgangadhar
@@ -12,7 +12,7 @@ ms.date: 06/30/2022
 
 # Configure the scope of your access review using the Microsoft Graph API
 
-The Azure AD [access reviews API](/graph/api/resources/accessreviewsv2-overview) allows you to programmatically review the access that users, service principals, or groups have to your Azure AD resources. The API can help you to automate proactive review and keep control over access to resources in your organization.  
+The Microsoft Entra [access reviews API](/graph/api/resources/accessreviewsv2-overview) allows you to programmatically review the access that users, service principals, or groups have to your Microsoft Entra resources. The API can help you to automate proactive review and keep control over access to resources in your organization.  
 
 The resources to review are configured in the **scope** property of the [accessReviewScheduleDefinition](/graph/api/resources/accessreviewscheduledefinition) resource. This property is of the type [accessReviewScope](/graph/api/resources/accessreviewscope), an abstract type that the following API resources that can be used to configure the access review scope inherit from.
 
@@ -20,7 +20,7 @@ The resources to review are configured in the **scope** property of the [accessR
 |:---    |:---       |:---             |
 |[accessReviewQueryScope](/graph/api/resources/accessreviewqueryscope)|Inherits from **accessReviewScope**. Best applicable when reviewing the full set or subset of principals who have access to a resource or group of related resources.|<ul><li>Membership of users assigned to a group, either direct members or direct and transitive members.</li><li>Guest user access to one group.</li><li>Guest user access to all Microsoft 365 groups in a tenant.</li><li>Service principals assigned to privileged roles.</li><li>User and service principal access to Entitlement Management access packages.</li></ul>|
 |[accessReviewInactiveUsersQueryScope](/graph/api/resources/accessreviewinactiveusersqueryscope)|Inherits from **accessReviewQueryScope**. Used when only inactive users are reviewed. Their inactive status is specified by the **inactiveDuration** property. |<ul><li>Group membership of only inactive users.</li><ul>|
-|[principalResourceMembershipsScope](/graph/api/resources/principalResourceMembershipsScope)|Inherits from **accessReviewScope**. Best applicable to review principals' access to resources where you configure unique pools of principals and resources.|<ul><li>Reviewing access of three specific principals across one Microsoft 365 group *and* one privileged Azure AD role.</li><ul>|
+|[principalResourceMembershipsScope](/graph/api/resources/principalResourceMembershipsScope)|Inherits from **accessReviewScope**. Best applicable to review principals' access to resources where you configure unique pools of principals and resources.|<ul><li>Reviewing access of three specific principals across one Microsoft 365 group *and* one privileged Microsoft Entra role.</li><ul>|
 
 In this article, you'll learn how to scope your access review using these three derived resource types.
 
@@ -330,5 +330,5 @@ To review B2B direct connect users and teams within shared channels, you must sp
 ## Next steps
 
 + [Assign reviewers to your access review definition](/graph/accessreviews-reviewers-concept)
-+ [Try out tutorials](/graph/accessreviews-overview) to learn how to use the access reviews API to review access to Azure AD resources
++ [Try out tutorials](/graph/accessreviews-overview) to learn how to use the access reviews API to review access to Microsoft Entra resources
 + [Create an access review](/azure/active-directory/governance/create-access-review)

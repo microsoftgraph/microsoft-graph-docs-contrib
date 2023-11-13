@@ -6,13 +6,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models.Security;
 
-var requestBody = new Microsoft.Graph.Beta.Models.Security.EdiscoveryReviewTag
+var requestBody = new EdiscoveryReviewTag
 {
 	DisplayName = "My tag API",
 	Description = "Use Graph API to create tags",
-	ChildSelectability = Microsoft.Graph.Beta.Models.Security.ChildSelectability.Many,
+	ChildSelectability = ChildSelectability.Many,
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
@@ -20,6 +21,8 @@ var requestBody = new Microsoft.Graph.Beta.Models.Security.EdiscoveryReviewTag
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].Tags.PostAsync(requestBody);
 
 

@@ -188,6 +188,11 @@ Namespace: microsoft.graph
 | managedIdentity             |
 | overprivilegedApps          |
 | unknownFutureValue          |
+| longLivedCredentials        |
+| aadConnectDeprecated        |
+| adalToMsalMigration         |
+| ownerlessApps               |
+| inactiveGuests              |
 
 ### layoutTemplateType values
 
@@ -415,6 +420,15 @@ Namespace: microsoft.graph
 |newPartners|
 |existingPartners|
 |unknownFutureValue|
+
+### approvalFilterByCurrentUserOptions values 
+
+| Member             |
+| :----------------- |
+| target             |
+| createdBy          |
+| approver           |
+| unknownFutureValue |
 
 ### accessPackageFilterByCurrentUserOptions values
 
@@ -1360,6 +1374,17 @@ Namespace: microsoft.graph
 | weak    |
 | unknown |
 
+### authenticationMethodPlatform values
+
+| Member  |
+| :------ |
+| windows |
+| macOS   |
+| iOS     |
+| android |
+| linux   |
+| unknown |
+
 ### authenticationContextDetail values
 
 | Member              |
@@ -1553,12 +1578,22 @@ Namespace: microsoft.graph
 | x509CertificateMultiFactor  |
 | unknownFutureValue          |
 
-### x509CertificateRuleType values
+### x509CertificateAffinityLevel values
+
 | Member             |
 | :----------------- |
-| issuerSubject      |
-| policyOID          |
+| low                |
+| high               |
 | unknownFutureValue |
+
+### x509CertificateRuleType values
+
+| Member                    |
+| :------------------------ |
+| issuerSubject             |
+| policyOID                 |
+| unknownFutureValue        |
+| issuerSubjectAndPolicyOID |
 
 ### x509CertificateIssuerHintsState values
 
@@ -3482,6 +3517,7 @@ Possible values for user account types (group membership), per Windows definitio
 | contentDeletion    |
 | caseResolved       |
 | unknownFutureValue |
+| approval           |
 
 ### subjectRightsRequestStageStatus values
 
@@ -4246,4 +4282,16 @@ Possible values for user account types (group membership), per Windows definitio
 |user|
 |servicePrincipal|
 |group|
+|unknownFutureValue|
+
+### b2bIdentityProvidersType values
+
+|Member|
+|:-----|
+|azureActiveDirectory|
+|externalFederation|
+|socialIdentityProviders|
+|emailOneTimePasscode|
+|microsoftAccount|
+|defaultConfiguredIdp|
 |unknownFutureValue|

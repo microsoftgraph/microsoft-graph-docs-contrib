@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AdministrativeUnit(
 	display_name = "Seattle District Technical Schools",
@@ -14,7 +14,7 @@ request_body = AdministrativeUnit(
 	visibility = "HiddenMembership",
 )
 
-result = await graph_client.directory.administrative_units.post(body = request_body)
+result = await graph_client.directory.administrative_units.post(request_body)
 
 
 ```

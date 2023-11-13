@@ -1,8 +1,10 @@
 ---
 title: "authorizationPolicy resource type"
-description: "Represents a policy that can control authorization settings of Azure Active Directory."
+description: "Represents a policy that can control authorization settings of Microsoft Entra ID."
 ms.localizationpriority: medium
+ms.custom: has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 author: "DougKirschner"
+ms.reviewer: msodsrbac
 ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---
@@ -13,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a policy that can control Azure Active Directory authorization settings. It's a singleton that inherits from base policy type, and always exists for the tenant. 
+Represents a policy that can control Microsoft Entra authorization settings. It's a singleton that inherits from base policy type, and always exists for the tenant. 
 
 ## Methods
 
@@ -26,11 +28,11 @@ Represents a policy that can control Azure Active Directory authorization settin
 | Property | Type | Description |
 |-|-|-|
 |allowedToSignUpEmailBasedSubscriptions|Boolean| Indicates whether users can sign up for email based subscriptions. |
-|allowedToUseSSPR|Boolean| Indicates whether the Admin Self-Serve Password Reset feature is enabled on the tenant. |
+|allowedToUseSSPR|Boolean| Indicates whether users can use the Self-Service Password Reset feature on the tenant. |
 |allowEmailVerifiedUsersToJoinOrganization|Boolean| Indicates whether a user can join the tenant by email validation. |
 |allowInvitesFrom|allowInvitesFrom|Indicates who can invite guests to the organization. Possible values are: `none`, `adminsAndGuestInviters`, `adminsGuestInvitersAndAllMembers`, `everyone`. `everyone` is the default setting for all cloud environments except US Government. See more in the [table below](#allowinvitesfrom-values).|
 |allowUserConsentForRiskyApps|Boolean| Indicates whether [user consent for risky apps](/azure/active-directory/manage-apps/configure-risk-based-step-up-consent) is allowed. Default value is `false`. We recommend that you keep the value set to `false`. |
-|blockMsolPowerShell|Boolean| To disable the use of the [MSOnline PowerShell module](/powershell/module/msonline) set this property to `true`. This will also disable user-based access to the legacy service endpoint used by the MSOnline PowerShell module. This doesn't affect Azure AD Connect or Microsoft Graph. |
+|blockMsolPowerShell|Boolean| To disable the use of the [Microsoft Graph PowerShell module](/powershell/microsoftgraph/overview) set this property to `true`. This will also disable user-based access to the legacy service endpoint used by the Microsoft Graph PowerShell module. This doesn't affect Microsoft Entra Connect or Microsoft Graph. |
 |defaultUserRolePermissions|[defaultUserRolePermissions](defaultUserRolePermissions.md)| Specifies certain customizable permissions for default user role. |
 |description|String| Description of this policy.|
 |displayName|String| Display name for this policy. |

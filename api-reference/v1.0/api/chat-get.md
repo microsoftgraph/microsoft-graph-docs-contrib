@@ -21,14 +21,11 @@ This method supports federation. To access a chat, at least one chat member must
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "chat_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/chat-get-permissions.md)]
 
 ## HTTP request
 
@@ -51,7 +48,7 @@ This operation does not currently support [OData query parameters](/graph/query-
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -61,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Example 1: Get a group chat
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -139,7 +136,7 @@ Content-type: application/json
 
 ### Example 2: Get a user's one on one chat
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -217,7 +214,7 @@ Content-type: application/json
 
 ### Example 3: Get a chat and all its members
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -357,7 +354,7 @@ Content-type: application/json
 
 ### Example 4: Get the meeting details of a chat associated with a Microsoft Teams meeting
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -442,7 +439,7 @@ Content-type: application/json
 
 ### Example 5: Get the chat along with the preview of the last message sent in the chat
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

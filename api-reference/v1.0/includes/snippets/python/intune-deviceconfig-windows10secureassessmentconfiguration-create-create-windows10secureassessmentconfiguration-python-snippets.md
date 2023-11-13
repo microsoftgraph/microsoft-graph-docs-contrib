@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Windows10SecureAssessmentConfiguration(
 	odata_type = "#microsoft.graph.windows10SecureAssessmentConfiguration",
@@ -20,7 +20,7 @@ request_body = Windows10SecureAssessmentConfiguration(
 	allow_text_suggestion = True,
 )
 
-result = await graph_client.device_management.device_configurations.post(body = request_body)
+result = await graph_client.device_management.device_configurations.post(request_body)
 
 
 ```

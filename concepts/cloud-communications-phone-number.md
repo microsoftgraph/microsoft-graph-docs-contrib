@@ -29,7 +29,7 @@ Add the following permissions to your bot. A tenant admin needs to consent to th
 - Calls.JoinGroupCall.All
 - Calls.JoinGroupCallAsGuest.All
 
-For more information about call-related permissions, see the [Permissions reference](permissions-reference.md#calls-permissions).
+For more information about call-related permissions, see the [Permissions reference](permissions-reference.md).
 
 ## Assign a phone number to your bot
 
