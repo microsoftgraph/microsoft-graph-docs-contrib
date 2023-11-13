@@ -424,7 +424,7 @@ items:
           - name: Connectors samples
             href: /samples/browse/?products=microsoft-graph-connectors-api
           - name: Community connectors samples
-            href: https://adoption.microsoft.com/en-us/sample-solution-gallery/?keyword=&sort-by=updateDateTime-true&page=1&product=Microsoft+Graph+connectors
+            href: https://adoption.microsoft.com/sample-solution-gallery/?product=Microsoft+Graph+connectors
           - name: Build your first custom connector using SDK
             items:
               - name: Overview
