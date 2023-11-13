@@ -36,9 +36,9 @@ Represents a participant in a [call](call.md).
 | mediaStreams         | [mediaStream](mediastream.md) collection | The list of media streams.                                   |
 | metadata             | String                                   | A blob of data provided by the participant in the roster.     |
 | recordingInfo        | [recordingInfo](recordinginfo.md)        | Information about whether the participant has recording capability. |
-| removedState | [removedState](removedstate.md)        | Indicates the reason why the **participant** was removed from the roster. |
+| removedState         | [removedState](removedstate.md)          | Indicates the reason why the **participant** was removed from the roster. |
 | restrictedExperience | [onlineMeetingRestricted](onlinemeetingrestricted.md)        | Indicates the reason or reasons media content from this participant is restricted. |
-| rosterSequenceNumber | Int64        | Indicates the roster sequence number the **participant** was last updated in. |
+| rosterSequenceNumber | Int64        | Indicates the roster sequence number in which the **participant** was last updated. |
 
 ## Relationships
 
@@ -46,7 +46,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
