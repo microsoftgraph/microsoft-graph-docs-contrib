@@ -43,7 +43,7 @@ This article describes implementation and operational limits for Microsoft Graph
 | Number of [activities](/graph/api/resources/externalconnectors-externalactivity); this is the [throttling](#throttling) threshold per activities call | 20 activities |
 | Property size | N/A |
 
-> **Note:** The 4 MB item size limit refers to the total size of the **parsed text content** from the item, which is usually 10% of the original file size for popular file types (docx, ppt, PDF). To put this into perspective, 4 MB = 4,000,000 bytes --> 600K-700K words --> 1,400 pages (~500 words per page). 
+> **Note:** The 4 MB item size limit refers to the total size of *parsed text content* that is typically 10% of the original file size for common formats (for example, docx, ppt, and PDF). To contextualize, 4 MB equals 4,000,000 bytes that translates to approximately 600K-700K words or 1,400 pages (averaging 500 words per page).
 
 ## Throttling
 
