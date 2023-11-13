@@ -3580,7 +3580,7 @@
     {
       "ChangeList": [
         {
-          "Id": "64af0f38-7db6-418a-8dc9-b64daef132a6",
+          "Id": "b524d566-dbdc-4646-815f-7f56e9abab69",
           "ApiChange": "Resource",
           "ChangedApiName": "removedState",
           "ChangeType": "Addition",
@@ -3588,23 +3588,13 @@
           "Target": "removedState"
         },
         {
-          "Id": "64af0f38-7db6-418a-8dc9-b64daef132a6",
+          "Id": "b524d566-dbdc-4646-815f-7f56e9abab69",
           "ApiChange": "Resource",
           "ChangedApiName": "deltaParticipants",
           "ChangeType": "Addition",
           "Description": "Added the [deltaParticipants](https://learn.microsoft.com/en-us/graph/api/resources/deltaParticipants?view=graph-rest-1.0) resource type.",
           "Target": "deltaParticipants"
-        }
-      ],
-      "Id": "64af0f38-7db6-418a-8dc9-b64daef132a6",
-      "Cloud": "Prod",
-      "Version": "v1.0",
-      "CreatedDateTime": "2023-10-30T14:33:56.7629676Z",
-      "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Calls and online meetings"
-    },
-    {
-      "ChangeList": [
+        },
         {
           "Id": "b524d566-dbdc-4646-815f-7f56e9abab69",
           "ApiChange": "Property",
