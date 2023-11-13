@@ -15,7 +15,7 @@ The Microsoft Graph security API is an intermediary service (or broker) that pro
 
 ![security_overview_diagram_1.png](./images/security-overview-diagram-1.png)
 
-For information about authorization, see [Authorization and the Microsoft Graph security API](security-authorization.md). For information about permissions, including delegated and application permissions, see [Permissions](permissions-reference.md#security-permissions).
+For information about authorization, see [Authorization and the Microsoft Graph security API](security-authorization.md). For information about permissions, including delegated and application permissions, see [Permissions](permissions-reference.md).
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/oYXPGwH9Ho0]
 

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = MultiTenantOrganizationPartnerConfigurationTemplate(
 	inbound_trust = CrossTenantAccessPolicyInboundTrust(
@@ -21,7 +21,7 @@ request_body = MultiTenantOrganizationPartnerConfigurationTemplate(
 	template_application_level = TemplateApplicationLevel.NewPartners | TemplateApplicationLevel.ExistingPartners,
 )
 
-result = await graph_client.policies.cro_tenant_acce_policy.templates.multi_tenant_organization_partner_configuration.patch(body = request_body)
+result = await graph_client.policies.cross_tenant_access_policy.templates.multi_tenant_organization_partner_configuration.patch(request_body)
 
 
 ```

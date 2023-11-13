@@ -6,13 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = SendActivityNotificationPostRequestBody(
 	topic = TeamworkActivityTopic(
 		source = TeamworkActivityTopicSource.Text,
 		value = "Weekly Virtual Social",
-		web_url = "Teams webUrl",
+		web_url = "https://teams.microsoft.com/l/message/19:448cfd2ac2a7490a9084a9ed14cttr78c@thread.skype/1605223780000?tenantId=c8b1bf45-3834-4ecf-971a-b4c755ee677d&groupId=d4c2a937-f097-435a-bc91-5c1683ca7245&parentMessageId=1605223771864&teamName=Approvals&channelName=Azure%20DevOps&createdTime=1605223780000",
 	),
 	preview_text = ItemBody(
 		content = "It will be fun!",
@@ -25,7 +25,7 @@ request_body = SendActivityNotificationPostRequestBody(
 	),
 )
 
-await graph_client.teams.by_team_id('team-id').send_activity_notification.post(body = request_body)
+await graph_client.teams.by_team_id('team-id').send_activity_notification.post(request_body)
 
 
 ```

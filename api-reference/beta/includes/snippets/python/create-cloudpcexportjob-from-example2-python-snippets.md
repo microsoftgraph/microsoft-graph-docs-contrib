@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = CloudPcExportJob(
 	report_name = CloudPcReportName.RemoteConnectionQualityReports,
@@ -22,11 +22,11 @@ request_body = CloudPcExportJob(
 		"LastConnectionGateway",
 		"LastConnectionProtocol",
 		"EventDateTime",
-	]
+	],
 	filter = "EventDateTime gt datetime'2023-06-14T07:40:41.694Z'",
 )
 
-result = await graph_client.device_management.virtual_endpoint.reports.export_jobs.post(body = request_body)
+result = await graph_client.device_management.virtual_endpoint.reports.export_jobs.post(request_body)
 
 
 ```

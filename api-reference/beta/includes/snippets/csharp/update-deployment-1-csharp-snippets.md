@@ -6,17 +6,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models.WindowsUpdates;
 
-var requestBody = new Microsoft.Graph.Beta.Models.WindowsUpdates.Deployment
+var requestBody = new Deployment
 {
 	OdataType = "#microsoft.graph.windowsUpdates.deployment",
-	State = new Microsoft.Graph.Beta.Models.WindowsUpdates.DeploymentState
+	State = new DeploymentState
 	{
 		OdataType = "microsoft.graph.windowsUpdates.deploymentState",
-		RequestedValue = Microsoft.Graph.Beta.Models.WindowsUpdates.RequestedDeploymentStateValue.Paused,
+		RequestedValue = RequestedDeploymentStateValue.Paused,
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Admin.Windows.Updates.Deployments["{deployment-id}"].PatchAsync(requestBody);
 
 

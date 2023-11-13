@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AccessPackageAssignmentRequest(
 	odata_type = "#microsoft.graph.accessPackageAssignmentRequest",
@@ -30,13 +30,13 @@ request_body = AccessPackageAssignmentRequest(
 				id = "7aaa18c9-8e4f-440f-bd5a-3a7ce312cbe6",
 			),
 		),
-	]
+	],
 	assignment = AccessPackageAssignment(
 		id = "44c741c1-2cf4-40db-83b6-e0112f8e5a83",
 	),
 )
 
-result = await graph_client.identity_governance.entitlement_management.assignment_requests.post(body = request_body)
+result = await graph_client.identity_governance.entitlement_management.assignment_requests.post(request_body)
 
 
 ```
