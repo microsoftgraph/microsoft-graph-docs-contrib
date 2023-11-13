@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and a [goalsExportJo
 ### Example 1: Status is "running"
 
 #### Request
-The following is an example of a request.
+The following example shows the request.
 <!-- {
   "blockType": "request",
   "name": "get_goalsexportjob1"
@@ -75,7 +75,7 @@ GET https://graph.microsoft.com/beta/employeeExperience/goals/exportJobs/{goalsE
 
 
 #### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -104,7 +104,7 @@ Content-Type: application/json
 ### Example 2: Status is "succeeded"
 
 #### Request
-The following is an example of a request.
+The following example shows the request.
 <!-- {
   "blockType": "request",
   "name": "get_goalsexportjob2"
@@ -116,7 +116,7 @@ GET https://graph.microsoft.com/beta/employeeExperience/goals/exportJobs/{goalsE
 
 
 #### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -146,7 +146,7 @@ Content-Type: application/json
 ### Example 3: Status is "notStarted"
 
 #### Request
-The following is an example of a request.
+The following example shows the request.
 <!-- {
   "blockType": "request",
   "name": "get_goalsexportjob3"
@@ -158,7 +158,7 @@ GET https://graph.microsoft.com/beta/employeeExperience/goals/exportJobs/{goalsE
 
 
 #### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -186,7 +186,7 @@ Content-Type: application/json
 ### Example 4: Specified goalsExportJobId isn't found
 
 #### Request
-The following is an example of a request.
+The following example shows the request.
 <!-- {
   "blockType": "request",
   "name": "get_goalsexportjob4"
@@ -198,7 +198,7 @@ GET https://graph.microsoft.com/beta/employeeExperience/goals/exportJobs/{goalsE
 
 
 #### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -227,7 +227,7 @@ Content-type: application/json
 ### Example 5: Invalid exportJobId is specified
 
 #### Request
-The following is an example of a request.
+The following example shows the request.
 <!-- {
   "blockType": "request",
   "name": "get_goalsexportjob"
@@ -239,7 +239,7 @@ GET https://graph.microsoft.com/beta/employeeExperience/goals/exportJobs/{goalsE
 
 
 #### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -265,10 +265,10 @@ Content-type: application/json
 }
 ```
 
-### Example 5: Get the content of a successfully completed goalsExportJob resource.
+### Example 6: Get the content of a successfully completed goalsExportJob resource.
 
 #### Request
-The following is an example of a request.
+The following example shows the request.
 <!-- {
   "blockType": "request",
   "name": "get_goalsexportjob_content"
@@ -280,7 +280,7 @@ GET https://graph.microsoft.com/beta/employeeExperience/goals/exportJobs/{goalsE
 
 
 #### Response
-The following is an example of the response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "@odata.type": "Edm.Stream"
