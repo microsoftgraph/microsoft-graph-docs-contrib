@@ -53,7 +53,7 @@ Content is one of the key fields influencing [relevance](connecting-external-con
 
 *An example of a content component.*
 
-Content cannot be directly added into a search result template, but you can use a generated result snippet, which is a dynamically generated preview of the relevant sections within content.
+Content can't be directly added into a search result template, but you can use a generated result snippet, which is a dynamically generated preview of the relevant sections within content.
 
 ![A screenshot of a search result template.](./images/connectors-images/connecting-external-content-manage-items-3.svg)
 
@@ -135,17 +135,17 @@ DELETE /external/connections/contosohelpdesk/items/SR00145
 
 ## Keep your data in sync
 
-There are a few considerations to keep in mind when choosing how to keep your data in sync:
+Aspects to consider when choosing how to keep your data in sync:
 
-Crawl mechanism 
-* Incremental crawl: Pushing detected differences (additions) in source data. This mechanism is not as expensive as a Full crawl.
-* Full crawl: Updating the entire item from source data (re-crawl) which captures all additions and deletions. This mechanism ensures better accuracy but is more expensive and takes longer than an Incremental crawl. 
+Crawl mechanism:
+* Incremental crawl: Detects and pushes additions in source data; less performance-intensive than a full crawl.
+* Full crawl: Updates the entire item from the source data (re-crawl), capturing all additions and deletions; ensures better accuracy but is more time-consuming and performance-intensive than an incremental crawl.
 
-Sync interval
-* Event-based: Pushing item updates on an event basis. This sync interval is recommended for dynamic or sensitive data (i.e. item status). 
-* Every N minutes: Pushing item updates every N minutes. This sync interval is recommended for content-rich or non-sensitive data that is not updated very frequently (e.g. wikis, webpages). 
+Sync interval:
+* Event-based: Pushes item updates on an event basis. We recommend that you use this sync interval for dynamic or sensitive data such as item status.
+* Scheduled: Pushes item updates at regular intervals (every N minutes). We recommend that you use this sync interval for content-rich or non-sensitive data that is less frequently updated such as wikis or webpages.
 
-Ultimately, how you manage your data refreshes really depends on the type of data you have and your computing abilities.
+Ultimately, the choice of data refresh strategy depends on your data type and computing capabilities.
 
 ## Next steps
 
