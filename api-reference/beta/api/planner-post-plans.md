@@ -1,6 +1,6 @@
 ---
 title: "Create plannerPlan"
-description: "Use this API to create a new **plannerPlan**."
+description: "Create a new planner plan."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.prod: "planner"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new **plannerPlan**.
+Create a new [plannerPlan](../resources/plannerplan.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
