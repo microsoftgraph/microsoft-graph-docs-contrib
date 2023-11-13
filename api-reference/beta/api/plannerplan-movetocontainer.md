@@ -1,6 +1,6 @@
 ---
 title: "Move plan across containers"
-description: "Move a **plannerPlan** object from one plannerPlanContainer to another. Currently the only allowed move is from User to Group container."
+description: "Move a planner plan object from one planner plan container to another."
 ms.localizationpriority: medium
 author: "vasrinwork"
 ms.prod: "planner"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Move a [plannerPlan](../resources/plannerplan.md) object from one [plannerPlanContainer](../resources/plannerplancontainer.md) to another. Currently the only allowed move is from a User container to a Group container.
+Move a [planner plan](../resources/plannerplan.md) object from one [planner plan container](../resources/plannerplancontainer.md) to another. Planner plans can only be moved from a user container to a group container.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
