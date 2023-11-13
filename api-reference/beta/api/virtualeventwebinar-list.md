@@ -101,11 +101,11 @@ Content-Type: application/json
       "description": "Discusses how technology has changed the way we communicate, work, and interact with each other.",
       "startDateTime": {
         "dateTime": "2023-03-30T10:00:00",
-        "timeZone": "PacificSt"
+        "timeZone": "Pacific Standard Time"
       },
       "endDateTime": {
         "dateTime": "2023-03-30T17:00:00",
-        "timeZone": "PacificSt"
+        "timeZone": "Pacific Standard Time"
       },
       "createdBy": {
         "application": null,
