@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 Create a new [profileCardProperty](../resources/profilecardproperty.md) for an organization. The new property is identified by its **directoryPropertyName** property.
 
-For more information about how to add properties to the profile card for an organization, see [Add or delete custom attributes on a profile card using the profile card API](/graph/add-properties-profilecard).
+For more information about how to add properties to the profile card for an organization, see [Add or remove custom attributes on a profile card using the profile card API](/graph/add-properties-profilecard).
+
+[!INCLUDE [profilecardproperty-add-remove-note](../../../includes/profilecardproperty-add-remove-note.md)]
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -51,12 +53,12 @@ POST /admin/people/profileCardProperties
 
 In the request body, supply a JSON representation of a [profileCardProperty](../resources/profilecardproperty.md) object.
 
-You can specify the following properties when you create a **profileCardProperty**.
+You can specify the following properties when you create a **profileCardProperty** for an organization.
 
 |Property|Type|Description|
 |:---|:---|:---|
 |annotations|[profileCardAnnotation](../resources/profilecardannotation.md) collection|Any alternative or localized labels that an administrator has chosen to specify.|
-|directoryPropertyName|String|The name of the directory property which is intended to surface on the profile card.|
+|directoryPropertyName|String|The name of the directory property that is intended to surface on the profile card.|
 
 ## Response
 

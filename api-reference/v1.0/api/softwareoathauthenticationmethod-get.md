@@ -2,6 +2,7 @@
 title: "Get softwareOathAuthenticationMethod"
 description: "Retrieve a user's softwareOathAuthenticationMethod object and is properties."
 author: "jpettere"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

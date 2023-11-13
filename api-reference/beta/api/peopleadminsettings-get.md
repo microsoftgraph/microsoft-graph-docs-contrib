@@ -62,7 +62,6 @@ The following example shows a request.
   "blockType": "request",
   "name": "get_peopleadminsettings"
 }-->
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/people
 ```
@@ -119,9 +118,9 @@ Content-type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/people/$entity",
   "pronouns@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/people/pronouns/$entity",
-  "profileCardProperties@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/people/pronouns/$entity",
+  "profileCardProperties@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/people/profileCardProperties/$entity",
   "pronouns": {
-      "isEnabledInOrganization": true
+    "isEnabledInOrganization": true
   },
   "profileCardProperties": [
     {

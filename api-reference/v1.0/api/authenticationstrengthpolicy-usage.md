@@ -2,6 +2,7 @@
 title: "authenticationStrengthPolicy: usage"
 description: "Allows the caller to see which Conditional Access policies reference a specified authentication strength policy."
 author: "InbarckMS"
+ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
