@@ -1,7 +1,7 @@
 ---
 title: "Metered APIs and services in Microsoft Graph"
 description: "Get a list of metered APIs and services in Microsoft Graph."
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
 ---

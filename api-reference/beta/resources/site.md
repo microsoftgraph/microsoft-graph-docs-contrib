@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: The site resource provides metadata and relationships for a SharePoint site.
 title: site resource type
 ms.localizationpriority: high
@@ -43,6 +43,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [Create column][]                                 | POST /sites/{site-id}/columns                               |
 | [List operations](../api/site-list-operations.md) | GET /sites/{site-id}/operations                             |
 | [Get site settings][]                             | GET /sites/{site-id}/settings                               |
+| [Get delta](../api/site-delta.md)                 | GET /sites/delta                                            |
 
 [Get site]: ../api/site-get.md
 [Get root site]: ../api/site-get.md
@@ -99,21 +100,22 @@ The `root` identifier always references the root site for a given target, as fol
 
 ## Relationships
 
-| Relationship        | Type                                                                            | Description                                                                                                                                |
-| :------------------ | :------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------- |
-| **analytics**       | [itemAnalytics][] resource                                                      | Analytics about the view activities that took place in this site.                                                                          |
-| **columns**         | Collection([columnDefinition][])                                                | The collection of column definitions reusable across lists under this site.                                                                |
-| **contentTypes**    | Collection([contentType][])                                                     | The collection of content types defined for this site.                                                                                     |
-| **drive**           | [drive][]                                                                       | The default drive (document library) for this site.                                                                                        |
-| **drives**          | Collection([drive][])                                                           | The collection of drives (document libraries) under this site.                                                                             |
-| **items**           | Collection([baseItem][])                                                        | Used to address any item contained in this site. This collection cannot be enumerated.                                                     |
-| **lists**           | Collection([list][])                                                            | The collection of lists under this site.                                                                                                   |
-| **operations**      | [richLongRunningOperation](../resources/richlongrunningoperation.md) collection | The collection of long running operations for the site.                                                                                    |
-| **pages**           | Collection([baseSitePage][])                                                        | The collection of pages in the baseSitePages list in this site.                                                                                |
-| **permissions**     | Collection([permission][])                                                      | The permissions associated with the site. Nullable.                                                                                        |
-| **sites**           | Collection([site][])                                                            | The collection of the sub-sites under this site.                                                                                           |
-| **termStore**       | [microsoft.graph.termStore.store]                                               | The termStore under this site.                                                                                                             |
-| **externalColumns** | Collection([columnDefinition][])                                                | The collection of column definitions available in the site that are referenced from the sites in the parent hierarchy of the current site. |
+| Relationship    | Type                                                                            | Description                                                                                                                                |
+| :---------------| :------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------- |
+| analytics       | [itemAnalytics][]                                                      | Analytics about the view activities that took place in this site.                                                                          |
+| columns         | [columnDefinition][] collection                                                | The collection of column definitions reusable across lists under this site.                                                                |
+| contentTypes    | [contentType][] collection                                                     | The collection of content types defined for this site.                                                                                     |
+| drive           | [drive][]                                                                       | The default drive (document library) for this site.                                                                                        |
+| drives          | [drive][] collection                                                           | The collection of drives (document libraries) under this site.                                                                             |
+| externalColumns | [columnDefinition][] collection                                                | The collection of column definitions available in the site that are referenced from the sites in the parent hierarchy of the current site. |
+| items           | [baseItem][] collection                                                        | Used to address any item contained in this site. This collection cannot be enumerated.                                                     |
+| lists           | [list][] collection                                                            | The collection of lists under this site.                                                                                                   |
+| operations      | [richLongRunningOperation](../resources/richlongrunningoperation.md) collection | The collection of long running operations for the site.                                                                                    |
+| pages           | [baseSitePage][] collection                                                    | The collection of pages in the baseSitePages list in this site.                                                                                |
+| permissions     | [permission][] collection                                                      | The permissions associated with the site. Nullable.                                                                                        |
+| recycleBin      | [recycleBin][]                                                                 | A container for a collection of [recycleBinItem](../resources/recyclebinitem.md) resources in this site. |
+| sites           | [site][] collection                                                            | The collection of the sub-sites under this site.                                                                                           |
+| termStore       | [microsoft.graph.termStore.store]                                               | The termStore under this site.                                                                                                             |
 
 [columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md
@@ -130,6 +132,7 @@ The `root` identifier always references the root site for a given target, as fol
 [sharepointIds]: sharepointids.md
 [siteCollection]: sitecollection.md
 [microsoft.graph.termStore.store]: termstore-store.md
+[recycleBin]: recyclebin.md
 
 ## JSON representation
 

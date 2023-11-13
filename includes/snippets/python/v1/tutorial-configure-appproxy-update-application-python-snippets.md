@@ -4,23 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = Application()
-request_body.IdentifierUris(['https://contosoiwaapp-contoso.msappproxy.net', ])
+graph_client = GraphServiceClient(credentials, scopes)
 
-web = WebApplication()
-web.RedirectUris(['https://contosoiwaapp-contoso.msappproxy.net', ])
+request_body = Application(
+	identifier_uris = [
+		"https://contosoiwaapp-contoso.msappproxy.net",
+	],
+	web = WebApplication(
+		redirect_uris = [
+			"https://contosoiwaapp-contoso.msappproxy.net",
+		],
+		home_page_url = "https://contosoiwaapp-contoso.msappproxy.net",
+	),
+)
 
-web.home_page_url = 'https://contosoiwaapp-contoso.msappproxy.net'
-
-
-request_body.web = web
-
-
-
-result = await client.applications.by_application_id('application-id').patch(request_body = request_body)
+result = await graph_client.applications.by_application_id('application-id').patch(request_body)
 
 
 ```

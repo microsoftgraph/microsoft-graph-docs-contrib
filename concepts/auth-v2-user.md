@@ -7,7 +7,7 @@ ms.reviewer: jackson.woods
 ms.localizationpriority: high
 ms.prod: "applications"
 ms.custom: graphiamtop20
-ms.date: 06/09/2023
+ms.date: 09/08/2023
 ---
 
 # Get access on behalf of a user
@@ -21,13 +21,13 @@ This article details the raw HTTP requests involved for an app to get access on 
 Before proceeding with the steps in this article:
 
 1. Understand the authentication and authorization concepts in the Microsoft identity platform. For more information, see [Authentication and authorization basics](auth/auth-concepts.md).
-2. Register the app with Azure AD. For more information, see [Register an application with the Microsoft identity platform](auth-register-app-v2.md).
+2. Register the app with Microsoft Entra ID. For more information, see [Register an application with the Microsoft identity platform](auth-register-app-v2.md).
 
 ## Authentication and authorization steps
 
 For an app to get authorization and access to Microsoft Graph using the authorization code flow, you must follow these five steps:
 
-1. Register the app with Azure AD.
+1. Register the app with Microsoft Entra ID.
 2. Request authorization.
 3. Request an access token.
 4. Use the access token to call Microsoft Graph.
@@ -39,19 +39,19 @@ For an app to get authorization and access to Microsoft Graph using the authoriz
 
 ## 1. Register the app
 
-Before the app can call the Microsoft identity platform endpoints or Microsoft Graph, it must be properly registered. [Follow the steps to register your app](./auth-register-app-v2.md) on the Azure portal.
+Before the app can call the Microsoft identity platform endpoints or Microsoft Graph, it must be properly registered. [Follow the steps to register your app](./auth-register-app-v2.md) on the Microsoft Entra admin center.
 
 From the app registration, save the following values:
 
-- The application ID (referred to as Object ID on the Azure portal) assigned by the app registration portal.
-- A redirect URI (or reply URL) for the app to receive responses from Azure AD.
+- The application ID (referred to as Object ID on the Microsoft Entra admin center) assigned by the app registration portal.
+- A redirect URI (or reply URL) for the app to receive responses from Microsoft Entra ID.
 - A client secret (application password), a certificate, or a federated identity credential. This property isn't needed for public clients like native, mobile and single page applications.
 
 ## 2. Request authorization
 
 The first step in the authorization code flow is for the user to authorize the app to act on their behalf.
 
-In the flow, the app redirects the user to the Microsoft identity platform `/authorize` endpoint. Through this endpoint, Azure AD signs the user in and requests their consent for the permissions that the app requests. After consent is obtained, Azure AD will return an authorization **code** to the app. The app can then redeem this code at the Microsoft identity platform `/token` endpoint for an access token.
+In the flow, the app redirects the user to the Microsoft identity platform `/authorize` endpoint. Through this endpoint, Microsoft Entra ID signs the user in and requests their consent for the permissions that the app requests. After consent is obtained, Microsoft Entra ID will return an authorization **code** to the app. The app can then redeem this code at the Microsoft identity platform `/token` endpoint for an access token.
 
 ### Authorization request
 
@@ -97,7 +97,7 @@ curl --location --request GET 'https://login.microsoftonline.com/{tenant}/oauth2
 
 ### User consent experience
 
-After the app sends the authorization request, the user is asked to enter their credentials to authenticate with Microsoft. The Microsoft identity platform v2.0 endpoint ensures that the user has consented to the permissions indicated in the `scope` query parameter. If there is any permission that the user or administrator has not consented to, they're asked to consent to the required permissions. For more information about the Azure AD consent experience, see [Application consent experience](/azure/active-directory/develop/application-consent-experience) and [Introduction to permissions and consent](/azure/active-directory/develop/permissions-consent-overview#consent).
+After the app sends the authorization request, the user is asked to enter their credentials to authenticate with Microsoft. The Microsoft identity platform v2.0 endpoint ensures that the user has consented to the permissions indicated in the `scope` query parameter. If there is any permission that the user or administrator has not consented to, they're asked to consent to the required permissions. For more information about the Microsoft Entra consent experience, see [Application consent experience](/azure/active-directory/develop/application-consent-experience) and [Introduction to permissions and consent](/azure/active-directory/develop/permissions-consent-overview#consent).
 
 The following screenshot is an example of the consent dialog box presented for a Microsoft account user.
 
@@ -192,7 +192,7 @@ Content-type: application/json
 
 | Parameter     | Description                                                                                                                                                                                                                                                                                                                                                                                  |
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| token_type    | Indicates the token type value. The only type that Azure AD supports is `Bearer`.                                                                                                                                                                                                                                                                                                           |
+| token_type    | Indicates the token type value. The only type that Microsoft Entra ID supports is `Bearer`.                                                                                                                                                                                                                                                                                                           |
 | scope         | A space separated list of the Microsoft Graph permissions that the access token is valid for.                                                                                                                                                                                                                                                                                             |
 | expires_in    | How long the access token is valid (in seconds).                                                                                                                                                                                                                                                                                                                                          |
 | ext_expires_in    | Indicates an extended lifetime for the access token (in seconds) and used to support resiliency when the token issuance service isn't responding.                                                                                                                                                                                                                                                                                                                                          |
@@ -328,7 +328,7 @@ Content-type: application/json
 | Parameter     | Description                                                                                                                                                                        |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | access_token  | The requested access token. The app can use this token in calls to Microsoft Graph.                                                                                              |
-| token_type    | Indicates the token type value. The only type that Azure AD supports is `Bearer`.                                                                                                     |
+| token_type    | Indicates the token type value. The only type that Microsoft Entra ID supports is `Bearer`.                                                                                                     |
 | expires_in    | How long the access token is valid (in seconds).                                                                                                                                 |
 | scope         | The permissions (scopes) that the access_token is valid for.                                                                                                                     |
 | refresh_token | A new OAuth 2.0 refresh token. Replace the old refresh token with this newly acquired refresh token to ensure your refresh tokens remain valid for as long as possible. |

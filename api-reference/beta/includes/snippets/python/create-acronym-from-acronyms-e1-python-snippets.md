@@ -4,24 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = Acronym()
-request_body.display_name = 'DNN'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.stands_for = 'Deep Neural Network'
+request_body = Acronym(
+	display_name = "DNN",
+	stands_for = "Deep Neural Network",
+	description = "A deep neural network is a neural network with a certain level of complexity, a neural network with more than two layers.",
+	web_url = "http://microsoft.com/deep-neural-network",
+	state = AnswerState.Draft,
+)
 
-request_body.description = 'A deep neural network is a neural network with a certain level of complexity, a neural network with more than two layers.'
-
-request_body.web_url = 'http://microsoft.com/deep-neural-network'
-
-request_body.state(AnswerState.Draft('answerstate.draft'))
-
-
-
-
-result = await client.search.acronyms.post(request_body = request_body)
+result = await graph_client.search.acronyms.post(request_body)
 
 
 ```

@@ -4,56 +4,35 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = MacOSCompliancePolicy()
-request_body.@odata_type = '#microsoft.graph.macOSCompliancePolicy'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.description = 'Description value'
+request_body = MacOSCompliancePolicy(
+	odata_type = "#microsoft.graph.macOSCompliancePolicy",
+	description = "Description value",
+	display_name = "Display Name value",
+	version = 7,
+	password_required = True,
+	password_block_simple = True,
+	password_expiration_days = 6,
+	password_minimum_length = 5,
+	password_minutes_of_inactivity_before_lock = 5,
+	password_previous_password_block_count = 2,
+	password_minimum_character_set_count = 0,
+	password_required_type = RequiredPasswordType.Alphanumeric,
+	os_minimum_version = "Os Minimum Version value",
+	os_maximum_version = "Os Maximum Version value",
+	system_integrity_protection_enabled = True,
+	device_threat_protection_enabled = True,
+	device_threat_protection_required_security_level = DeviceThreatProtectionLevel.Secured,
+	storage_require_encryption = True,
+	firewall_enabled = True,
+	firewall_block_all_incoming = True,
+	firewall_enable_stealth_mode = True,
+)
 
-request_body.display_name = 'Display Name value'
-
-request_body.Version = 7
-
-request_body.password_required = True
-
-request_body.password_block_simple = True
-
-request_body.PasswordExpirationDays = 6
-
-request_body.PasswordMinimumLength = 5
-
-request_body.PasswordMinutesOfInactivityBeforeLock = 5
-
-request_body.PasswordPreviousPasswordBlockCount = 2
-
-request_body.PasswordMinimumCharacterSetCount = 0
-
-request_body.passwordrequiredtype(RequiredPasswordType.Alphanumeric('requiredpasswordtype.alphanumeric'))
-
-request_body.os_minimum_version = 'Os Minimum Version value'
-
-request_body.os_maximum_version = 'Os Maximum Version value'
-
-request_body.system_integrity_protection_enabled = True
-
-request_body.device_threat_protection_enabled = True
-
-request_body.devicethreatprotectionrequiredsecuritylevel(DeviceThreatProtectionLevel.Secured('devicethreatprotectionlevel.secured'))
-
-request_body.storage_require_encryption = True
-
-request_body.firewall_enabled = True
-
-request_body.firewall_block_all_incoming = True
-
-request_body.firewall_enable_stealth_mode = True
-
-
-
-
-result = await client.device_management.device_compliance_policies.by_device_compliance_policie_id('deviceCompliancePolicy-id').patch(request_body = request_body)
+result = await graph_client.device_management.device_compliance_policies.by_device_compliance_policy_id('deviceCompliancePolicy-id').patch(request_body)
 
 
 ```

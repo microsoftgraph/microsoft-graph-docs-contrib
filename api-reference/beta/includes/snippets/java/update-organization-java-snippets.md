@@ -10,6 +10,7 @@ Organization organization = new Organization();
 LinkedList<String> marketingNotificationEmailsList = new LinkedList<String>();
 marketingNotificationEmailsList.add("marketing@contoso.com");
 organization.marketingNotificationEmails = marketingNotificationEmailsList;
+organization.onPremisesSyncEnabled = true;
 PrivacyProfile privacyProfile = new PrivacyProfile();
 privacyProfile.contactEmail = "alice@contoso.com";
 privacyProfile.statementUrl = "https://contoso.com/privacyStatement";

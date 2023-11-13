@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-
-result = await client.compliance.ediscovery.cases.by_case_id('case-id').tags.microsoft_graph_ediscovery_a_hierarchy.get()
+result = await graph_client.compliance.ediscovery.cases.by_case_id('case-id').tags.microsoft_graph_ediscovery_as_hierarchy.get()
 
 
 ```

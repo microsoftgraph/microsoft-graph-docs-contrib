@@ -2,7 +2,8 @@
 title: "Create conditionalAccessPolicy"
 description: "Create a new conditionalAccessPolicy."
 ms.localizationpriority: medium
-author: "davidspooner"
+author: "lisaychuang"
+ms.reviewer: conditionalaccesspm
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -12,6 +13,8 @@ doc_type: "apiPageType"
 Namespace: microsoft.graph
 
 Create a new [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -61,7 +64,7 @@ If successful, this method returns a `201 Created` response code and a new [cond
 ### Example 1: Require MFA to access Exchange Online outside of trusted locations
 
 #### Request
-The following example shows a common request to require multi-factor authentication for access to Exchange Online from modern authentication clients outside of trusted locations for a particular group.
+The following example shows a common request to require multifactor authentication for access to Exchange Online from modern authentication clients outside of trusted locations for a particular group.
 
 >**Note:** You must set up your trusted locations before using this operation.
 
@@ -134,7 +137,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-conditionalaccesspolicy-from-conditionalaccessroot-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -145,7 +148,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -209,11 +212,11 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Block access to Exchange Online from non-trusted regions
+### Example 2: Block access to Exchange Online from nontrusted regions
 
 #### Request
 The following example shows a request to block access to Exchange Online from non-trusted/unknown regions.
-This example assumes that the named location with id = 198ad66e-87b3-4157-85a3-8a7b51794ee9 corresponds to a list of non-trusted/unknown regions.
+This example assumes that the named location with ID = 198ad66e-87b3-4157-85a3-8a7b51794ee9 corresponds to a list of non-trusted/unknown regions.
 
 
 # [HTTP](#tab/http)
@@ -292,7 +295,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -356,7 +359,7 @@ Content-type: application/json
 ### Example 3: Use all conditions and controls
 
 #### Request
-The following is an example of the request to use all the conditions and controls.
+Here's an example of the request to use all the conditions and controls.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -501,7 +504,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -614,10 +617,10 @@ Content-type: application/json
 }
 ```
 
-### Example 4: Require MFA to Exchange Online from non-compliant devices
+### Example 4: Require MFA to Exchange Online from noncompliant devices
 
 #### Request
-The following example shows a request to require MFA to Exchange Online from non-compliant devices.
+The following example shows a request to require MFA to Exchange Online from noncompliant devices.
 
 
 # [HTTP](#tab/http)
@@ -688,7 +691,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",

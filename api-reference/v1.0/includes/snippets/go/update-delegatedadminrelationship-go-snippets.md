@@ -56,6 +56,8 @@ unifiedRoles := []graphmodels.UnifiedRoleable {
 }
 accessDetails.SetUnifiedRoles(unifiedRoles)
 requestBody.SetAccessDetails(accessDetails)
+autoExtendDuration , err := abstractions.ParseISODuration("P180D")
+requestBody.SetAutoExtendDuration(&autoExtendDuration) 
 
 delegatedAdminRelationships, err := graphClient.TenantRelationships().DelegatedAdminRelationships().ByDelegatedAdminRelationshipId("delegatedAdminRelationship-id").Patch(context.Background(), requestBody, configuration)
 

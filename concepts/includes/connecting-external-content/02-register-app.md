@@ -4,25 +4,23 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD041 -->
 
-In this exercise you will register a new application in Azure Active Directory to enable [app-only authentication](/graph/auth-v2-service). Microsoft Graph connectors use app-only authentication to access the connector APIs.
+In this exercise you'll register a new application in Microsoft Entra ID to enable [app-only authentication](/graph/auth-v2-service). Microsoft Graph connectors use app-only authentication to access the connector APIs.
 
 ## Register application for app-only authentication
 
-In this section you will register an application that supports app-only authentication using [client credentials flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
+In this section you'll register an application that supports app-only authentication using [client credentials flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
 
-1. Open a browser and navigate to the [Azure Active Directory admin center](https://aad.portal.azure.com) and login using a Global administrator account.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com).
 
-1. Select **Azure Active Directory** in the left-hand navigation, then select **App registrations** under **Manage**.
+1. Expand the **Identity** menu > select **Applications** > **App registrations** > **New registration**.
 
-    :::image type="content" source="../../images/connectors-images/aad-portal-app-registrations.png" alt-text="A screenshot of the App registrations":::
-
-1. Select **New registration**. Enter a name for your application, for example, `Parts Inventory Connector`.
+1. Enter a name for your application, for example, `Parts Inventory Connector`.
 
 1. Set **Supported account types** to **Accounts in this organizational directory only**.
 
 1. Leave **Redirect URI** empty.
 
-1. Select **Register**. On the application's **Overview** page, copy the value of the **Application (client) ID** and **Directory (tenant) ID** and save them, you will need these values in the next step.
+1. Select **Register**. On the application's **Overview** page, copy the value of the **Application (client) ID** and **Directory (tenant) ID** and save them, you'll need these values in the next step.
 
     :::image type="content" source="../../images/connectors-images/aad-app-only-application-id.png" alt-text="A screenshot of the application ID of the new app registration":::
 
@@ -44,7 +42,7 @@ In this section you will register an application that supports app-only authenti
 
 1. Enter a description, choose a duration, and select **Add**.
 
-1. Copy the secret from the **Value** column, you will need it in the next steps.
+1. Copy the secret from the **Value** column, you'll need it in the next steps.
 
     > [!IMPORTANT]
     > This client secret is never shown again, so make sure you copy it now.

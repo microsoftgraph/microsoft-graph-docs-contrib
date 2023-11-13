@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/10/2017
 title: Get Drive
 ms.localizationpriority: high
@@ -15,15 +15,14 @@ Retrieve the properties and relationships of a [Drive](../resources/drive.md) re
 
 A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
-|Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "drive_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/drive-get-permissions.md)]
 
 ## HTTP request
 
@@ -31,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 The signed in user's drive (when using delegated authentication) can be accessed from the `me` singleton.
 
-If a user's OneDrive is not provisioned but the user has a license to use OneDrive, this request will automatically provision the user's drive, when using delegated authentication.
+If a user's OneDrive isn't provisioned but the user has a license to use OneDrive, this request will automatically provision the user's drive, when using delegated authentication.
 
 <!-- { "blockType": "ignored" } -->
 
@@ -43,7 +42,7 @@ GET /me/drive
 
 To access a user's OneDrive or OneDrive for Business, your app must request the **drive** relationship on the User resource.
 
-If a user's OneDrive is not provisioned but the user has a license to use OneDrive, this request will automatically provision the user's drive, when using delegated authentication.
+If a user's OneDrive isn't provisioned but the user has a license to use OneDrive, this request will automatically provision the user's drive, when using delegated authentication.
 
 <!-- { "blockType": "ignored" } -->
 
@@ -71,7 +70,7 @@ GET /groups/{groupId}/drive
 
 | Parameter name | Value  | Description                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _groupId_      | string | Required. The identifier for the group which owns the document library. |
+| _groupId_      | string | Required. The identifier for the group that owns the document library. |
 
 ### Get the document library for a site
 
@@ -106,7 +105,7 @@ GET /drives/{driveId}
 
 ## Optional query parameters
 
-These method support the [$select query parameter][odata-query-parameters] to shape the response.
+These methods support the [$select query parameter][odata-query-parameters] to shape the response.
 
 ## Response
 
@@ -115,7 +114,7 @@ Each of these methods returns a [Drive resource][drive-resource] for the matchin
 
 ### Error response codes
 
-If the drive does not exist and cannot be provisioned automatically (when using delegated authentication) an `HTTP 404` response will be returned.
+If the drive doesn't exist and can't be provisioned automatically (when using delegated authentication) an `HTTP 404` response will be returned.
 
 ## Examples
 ### Request

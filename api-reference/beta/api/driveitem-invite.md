@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "Sends a sharing invitation for a DriveItem."
 ms.date: 09/10/2017
 title: Send an invite to access an item
@@ -16,15 +16,14 @@ Namespace: microsoft.graph
 Sends a sharing invitation for a **DriveItem**.
 A sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    |
-|Application | Files.ReadWrite.All, Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "driveitem_invite" } -->
+[!INCLUDE [permissions-table](../includes/permissions/driveitem-invite-permissions.md)]
 
 ## HTTP request
 
@@ -104,6 +103,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/send-sharing-invite-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/send-sharing-invite-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/send-sharing-invite-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -179,7 +182,7 @@ When inviting multiple recipients, it's possible for the notification to succeed
 In this case, the service returns a partial success response with an HTTP status code of 207.
 When partial success is returned, the response for each failed recipient will contain an `error` object with information about what went wrong and how to fix it.
 
-Here is an example of the partial response.  
+Here is an example of the partial response.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
 
@@ -207,8 +210,8 @@ Content-type: application/json
         "message":"Account verification needed to unblock sending emails.",
         "localizedMessage": "Kontobestätigung erforderlich, um das Senden von E-Mails zu entsperren.",
         "fixItUrl":"http://g.live.com/8SESkydrive/VerifyAccount",
-        "innererror":{  
-          "code":"accountVerificationRequired" 
+        "innererror":{
+          "code":"accountVerificationRequired"
         }
       }
     },
@@ -231,7 +234,7 @@ Content-type: application/json
 }
 ```
 ### SendNotification errors
-The following are some additional errors that your app might encounter within the nested `innererror` objects when sending notification fails. 
+The following are some additional errors that your app might encounter within the nested `innererror` objects when sending notification fails.
 Apps are not required to handle these.
 
 | Code                           | Description

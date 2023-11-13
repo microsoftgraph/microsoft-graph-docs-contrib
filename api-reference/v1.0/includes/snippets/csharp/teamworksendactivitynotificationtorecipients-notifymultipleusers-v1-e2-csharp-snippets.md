@@ -6,9 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Teamwork.SendActivityNotificationToRecipients;
+using Microsoft.Graph.Models;
 
-var requestBody = new Microsoft.Graph.Teamwork.SendActivityNotificationToRecipients.SendActivityNotificationToRecipientsPostRequestBody
+var requestBody = new SendActivityNotificationToRecipientsPostRequestBody
 {
 	Topic = new TeamworkActivityTopic
 	{
@@ -48,6 +50,8 @@ var requestBody = new Microsoft.Graph.Teamwork.SendActivityNotificationToRecipie
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Teamwork.SendActivityNotificationToRecipients.PostAsync(requestBody);
 
 

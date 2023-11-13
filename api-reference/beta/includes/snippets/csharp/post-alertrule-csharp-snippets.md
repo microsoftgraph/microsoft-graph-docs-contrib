@@ -6,46 +6,39 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models.DeviceManagement;
 
-var requestBody = new Microsoft.Graph.Beta.Models.DeviceManagement.AlertRule
+var requestBody = new AlertRule
 {
 	Id = "215c55cc-b1c9-4d36-a870-be5778101714",
 	DisplayName = "Azure network connection failure impacting Cloud PCs",
-	Severity = Microsoft.Graph.Beta.Models.DeviceManagement.RuleSeverityType.Informational,
+	Severity = RuleSeverityType.Informational,
 	IsSystemRule = true,
 	Description = "Azure network connection checks have failed and is potentially impacting existing Cloud PCs and blocking the provisioning of new Cloud PCs",
 	Enabled = true,
-	AlertRuleTemplate = Microsoft.Graph.Beta.Models.DeviceManagement.AlertRuleTemplate.CloudPcOnPremiseNetworkConnectionCheckScenario,
-	Threshold = new Microsoft.Graph.Beta.Models.DeviceManagement.RuleThreshold
+	AlertRuleTemplate = AlertRuleTemplate.CloudPcOnPremiseNetworkConnectionCheckScenario,
+	Threshold = new RuleThreshold
 	{
-		Aggregation = Microsoft.Graph.Beta.Models.DeviceManagement.AggregationType.Count,
-		Operator = Microsoft.Graph.Beta.Models.DeviceManagement.OperatorType.GreaterOrEqual,
+		Aggregation = AggregationType.Count,
+		Operator = OperatorType.GreaterOrEqual,
 		Target = 90,
 	},
-	NotificationChannels = new List<Microsoft.Graph.Beta.Models.DeviceManagement.NotificationChannel>
+	NotificationChannels = new List<NotificationChannel>
 	{
-		new Microsoft.Graph.Beta.Models.DeviceManagement.NotificationChannel
+		new NotificationChannel
 		{
-			NotificationChannelType = Microsoft.Graph.Beta.Models.DeviceManagement.NotificationChannelType.Portal,
-			Receivers = new List<string>
-			{
-				"",
-			},
-			NotificationReceivers = new List<Microsoft.Graph.Beta.Models.DeviceManagement.NotificationReceiver>
+			NotificationChannelType = NotificationChannelType.Portal,
+			NotificationReceivers = new List<NotificationReceiver>
 			{
 			},
 		},
-		new Microsoft.Graph.Beta.Models.DeviceManagement.NotificationChannel
+		new NotificationChannel
 		{
-			NotificationChannelType = Microsoft.Graph.Beta.Models.DeviceManagement.NotificationChannelType.Email,
-			Receivers = new List<string>
+			NotificationChannelType = NotificationChannelType.Email,
+			NotificationReceivers = new List<NotificationReceiver>
 			{
-				"serena.davis@contoso.com",
-			},
-			NotificationReceivers = new List<Microsoft.Graph.Beta.Models.DeviceManagement.NotificationReceiver>
-			{
-				new Microsoft.Graph.Beta.Models.DeviceManagement.NotificationReceiver
+				new NotificationReceiver
 				{
 					Locale = "en-us",
 					ContactInformation = "serena.davis@contoso.com",
@@ -54,6 +47,8 @@ var requestBody = new Microsoft.Graph.Beta.Models.DeviceManagement.AlertRule
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.DeviceManagement.Monitoring.AlertRules.PostAsync(requestBody);
 
 

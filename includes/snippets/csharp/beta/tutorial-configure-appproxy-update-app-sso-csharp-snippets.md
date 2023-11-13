@@ -6,9 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Applications.Item;
 
-var requestBody = new Microsoft.Graph.Beta.Applications.Item.Application
+var requestBody = new Application
 {
 	AdditionalData = new Dictionary<string, object>
 	{
@@ -28,6 +29,8 @@ var requestBody = new Microsoft.Graph.Beta.Applications.Item.Application
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Applications["{application-id}"].PatchAsync(requestBody);
 
 

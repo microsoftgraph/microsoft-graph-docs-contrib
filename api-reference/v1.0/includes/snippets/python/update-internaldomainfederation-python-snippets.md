@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = InternalDomainFederation()
-request_body.display_name = 'Contoso name change'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.federatedidpmfabehavior(FederatedIdpMfaBehavior.AcceptIfMfaDoneByFederatedIdp('federatedidpmfabehavior.acceptifmfadonebyfederatedidp'))
+request_body = InternalDomainFederation(
+	display_name = "Contoso name change",
+	federated_idp_mfa_behavior = FederatedIdpMfaBehavior.AcceptIfMfaDoneByFederatedIdp,
+)
 
-
-
-
-result = await client.domains.by_domain_id('domain-id').federation_configuration.by_federation_configuration_id('internalDomainFederation-id').patch(request_body = request_body)
+result = await graph_client.domains.by_domain_id('domain-id').federation_configuration.by_internal_domain_federation_id('internalDomainFederation-id').patch(request_body)
 
 
 ```

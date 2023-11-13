@@ -4,28 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = OutlookTask()
-due_date_time = DateTimeTimeZone()
-due_date_time.date_time = '2016-05-06T16:00:00'
+graph_client = GraphServiceClient(credentials, scopes)
 
-due_date_time.time_zone = 'Eastern Standard Time'
+request_body = OutlookTask(
+	due_date_time = DateTimeTimeZone(
+		date_time = "2016-05-06T16:00:00",
+		time_zone = "Eastern Standard Time",
+	),
+)
 
-
-request_body.due_date_time = due_date_time
-
-
-request_configuration = OutlookTaskRequestBuilder.OutlookTaskRequestBuilderPatchRequestConfiguration(
+request_configuration = OutlookTaskItemRequestBuilder.OutlookTaskItemRequestBuilderPatchRequestConfiguration(
 headers = {
 		'Prefer' : "outlook.timezone=\"Eastern Standard Time\"",
 }
 
 )
 
-
-result = await client.me.outlook.tasks.by_task_id('outlookTask-id').patch(request_body = request_body, request_configuration = request_configuration)
+result = await graph_client.me.outlook.tasks.by_outlook_task_id('outlookTask-id').patch(request_body, request_configuration = request_configuration)
 
 
 ```
