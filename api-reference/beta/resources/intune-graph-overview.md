@@ -26,7 +26,7 @@ The following example shows how you can determine whether an application is inst
 
 1. Get from Azure Active Directory a list of devices registered to a user: 
 
-    `https://graph.microsoft.com/beta/users/{user}/ownedDevices`
+    `https://graph.microsoft.com/beta/users/{user}/ownedDevices` 
 
 2. Then view the list of applications for your tenant: 
 
@@ -43,7 +43,7 @@ Microsoft Graph controls access to resources via permissions. As a developer, yo
 
 ## Interaction between Microsoft Graph APIs for Windows updates
 
-Microsoft Graph includes two sets of APIs that you can use to manage Windows updates: 
+Microsoft Graph includes two sets of APIs that you can use to manage Windows updates:
 
 - [Intune APIs](/graph/intune-concept-overview)
 - [Windows updates APIs](/graph/windowsupdates-concept-overview)

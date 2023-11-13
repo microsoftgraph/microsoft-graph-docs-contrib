@@ -4771,7 +4771,12 @@ items:
                         href: api/intune-tem-devicemanagement-get.md
                       - name: Update
                         href: api/intune-tem-devicemanagement-update.md
-
+          - name: Cloud PC (V1.0)
+            items:
+              - name: Overview
+                href: resources/cloudpc-api-overview.md
+              - name: Virtual endpoint
+                href: resources/virtualendpoint.md
           - name: Service health and communications
             items:
               - name: Overview
@@ -9094,7 +9099,7 @@ items:
                   - name: Get message reply
                     href: api/chatmessage-get.md
                   - name: Get primary channel
-                    href: api/team-get-primarychannel.md  
+                    href: api/team-get-primarychannel.md
                   - name: List channel messages
                     href: api/channel-list-messages.md
                   - name: List members
