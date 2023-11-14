@@ -6,9 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.RiskyUsers.Dismiss;
 
-var requestBody = new Microsoft.Graph.Beta.RiskyUsers.Dismiss.DismissPostRequestBody
+var requestBody = new DismissPostRequestBody
 {
 	UserIds = new List<string>
 	{
@@ -16,6 +17,8 @@ var requestBody = new Microsoft.Graph.Beta.RiskyUsers.Dismiss.DismissPostRequest
 		"13387ee0-f4f6-4e7f-8999-facc5120e345",
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.RiskyUsers.Dismiss.PostAsync(requestBody);
 
 
