@@ -66,7 +66,7 @@ Here is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/V1.0/chats/{id}/members/{id}
+GET https://graph.microsoft.com/v1.0/chats/{id}/members/{id}
 ```
 
 
