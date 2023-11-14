@@ -1,19 +1,19 @@
 ---
-title: "userSignUp resource type"
-description: "Insights for user sign-ups on apps registered in your Microsoft Entra External ID for customers tenant for a specific period."
+title: "userSignUpMetric resource type"
+description: "Represents insights for user sign-ups on apps registered in your Microsoft Entra External ID for customers tenant for a specific period."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
-# userSignUp resource type
+# userSignUpMetric resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Insights for user sign-ups on apps registered in your Microsoft Entra External ID for customers tenant for a specific period.
+Represents insights for user sign-ups on apps registered in your Microsoft Entra External ID for customers tenant for a specific period.
 
 ## Methods
 |Method|Return type|Description|
@@ -44,9 +44,9 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.userSignUpMetric",
+  "count": "Int64",  
+  "factDate": "String (date)",
   "id": "String (identifier)",
-  "factDate": "Date",
-  "count": "Integer",
   "os": "String"
 }
 ```
