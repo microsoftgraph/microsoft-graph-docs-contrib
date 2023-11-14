@@ -1,6 +1,6 @@
 ---
 title: "userRequest resource type"
-description: "Insights for all user requests on apps registered in your Microsoft Entra External ID for customers tenant for a specific period."
+description: "Represents insights for all user requests on apps registered in your Microsoft Entra External ID for customers tenant for a specific period."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Insights for all user requests on apps registered in your Microsoft Entra External ID for customers tenant for a specific period. This involves all requests including authentication requests, signup requests, mfa requests etc.
+Represents insights for all user requests on apps registered in your Microsoft Entra External ID for customers tenant for a specific period. This involves all requests including authentication requests, signup requests, mfa requests etc.
 The user requests here are aggregated as is with no filtering. The value returned might not reflect the most updated numbers.
 
 ## Methods
@@ -43,8 +43,8 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.userRequestsMetric",
+  "factDate": "String (date)",
   "id": "String (identifier)",
-  "factDate": "Date",
-  "requestCount": "Integer"
+  "requestCount": "Int64"
 }
 ```
