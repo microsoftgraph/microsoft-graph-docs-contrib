@@ -135,7 +135,7 @@ DELETE /external/connections/contosohelpdesk/items/SR00145
 
 ## Keep your data in sync
 
-Aspects to consider when choosing how to keep your data in sync:
+Consider the following information when you choose how to keep your data in sync:
 
 Crawl mechanism:
 * Incremental crawl: Detects and pushes additions in source data; less performance-intensive than a full crawl.
