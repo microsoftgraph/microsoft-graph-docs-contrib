@@ -13,8 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides the last interactive or non-interactive sign-in time for a specific [user](user.md). Since signInActivity describes a property of the user object, Microsoft Entra ID stores signinactivity for your users for as long as the user object exists. 
-
+Provides the last interactive or non-interactive sign-in **attempt** time for a specific [user](user.md). Since signInActivity describes a property of the user object, Microsoft Entra ID stores signinactivity for your users for as long as the user object exists.               
+**Effective 12/1/2023:** 
+Additional property added to display the last **successful** signIn time for a specific user, regardless if the signIn was interactive or non-interactive. Note: data will not be backfilled for this property so you should expect to be returned only successful signIn data starting 12/1/2023
 ## Properties
 
 | Property     | Type        | Description |
@@ -23,6 +24,8 @@ Provides the last interactive or non-interactive sign-in time for a specific [us
 |lastSignInRequestId|String|Request identifier of the last interactive sign-in performed by this user.|
 |lastNonInteractiveSignInDateTime|DateTimeOffset|The last non-interactive sign-in date for a specific user. You can use this field to calculate the last time a client attempted to sign into the directory the directory on behalf of a user. Because some users may use clients to access tenant resources rather than signing into your tenant directly, you can use the non-interactive sign-in date to along with lastSignInDateTime to identify inactive users. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is: `'2014-01-01T00:00:00Z'`. Microsoft Entra ID maintains non-interactive sign-ins going back to May 2020. For more information about using the value of this property, see [Manage inactive user accounts in Microsoft Entra ID](/azure/active-directory/reports-monitoring/howto-manage-inactive-user-accounts).|
 |lastNonInteractiveSignInRequestId|String|Request identifier of the last non-interactive sign-in performed by this user.|
+|lastSuccessfulSignInDateTime|DateTimeOffset|The datetime of the user's most recent successful sign in activity.|
+|lastSuccessfulSignInRequestId|String|The requestID of the last successful signIn.|
 
 ## JSON representation
 
