@@ -35,7 +35,7 @@ GET /employeeExperience/goals/exportJobs
 ```
 
 ## Optional query parameters
-This method supports the `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` OData query parameters to help customize the response. For more information, see [OData query parameters](/graph/query-parameters).
 
 
 `$filter` is supported on the **goalsOrganizationId** property only.
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Example 1: Response on Search
 #### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "list_goalsexportjob1"
