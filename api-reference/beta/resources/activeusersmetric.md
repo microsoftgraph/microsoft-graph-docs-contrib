@@ -1,6 +1,6 @@
 ---
 title: "activeUsers resource type"
-description: "Insights for users on apps registered in your Microsoft Entra External ID for customers tenant who were active for a specific period."
+description: "Represents insights for users on apps registered in your Microsoft Entra External ID for customers tenant who were active for a specific period."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -13,8 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Insights for users on apps registered in your Microsoft Entra External ID for customers tenant who were active for a specific period. This value is calculated as count of all users who made at least one authentication request in that period.
+Represents insights for users on apps registered in your Microsoft Entra External ID for customers tenant who were active for a specific period. This value is calculated as count of all users who made at least one authentication request in that period.
 A user may be counted more that once if they use multiple device platforms or application.
+
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
@@ -25,9 +27,10 @@ A user may be counted more that once if they use multiple device platforms or ap
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Identifier for the user insight.|
-|factDate|Date|Day of the insight.|
 |count|Int64|Number of users.|
+|factDate|Date|Day of the insight.|
+|id|String|Identifier for the user insight. Inherited from [entity](../resources/entity.md).|
+
 
 ## Relationships
 None.
@@ -44,8 +47,8 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.activeUsersMetric",
-  "id": "String (identifier)",
-  "factDate": "Date",
-  "count": "Integer"
+  "count": "Int64",
+  "factDate": "String (date)",
+  "id": "String (identifier)"
 }
 ```
