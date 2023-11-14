@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Get the assignments of the logged-in user
+### Example 1: Get the assignments of the signed-in user
 
 #### Request
 The following example shows a request.
