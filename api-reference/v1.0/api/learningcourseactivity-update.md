@@ -229,15 +229,15 @@ HTTP/1.1 204 No Content
 
 |Scenario|HTTP Code|Code|Message|Details|
 |:---|:---|:---|:---|:---|
-|Method not supported for entity|405|MethodNotAllowed|This method is not supported for this entity type.  Reference the Microsoft Graph documentation for the methods applicable to this entity|
-|User doesn't have appropriate permission scope|403|Forbidden|Your account does not have access to this report or data. Please contact your global administrator to request access.|
-|Forbidden|403|Forbidden|You do not have a service plan adequate for this request.|
+|Method not supported for entity|405|MethodNotAllowed|This method isn't supported for this entity type.  Reference the Microsoft Graph documentation for the methods applicable to this entity|
+|User doesn't have appropriate permission scope|403|Forbidden|Your account doesn't have access to this report or data. Please contact your global administrator to request access.|
+|Forbidden|403|Forbidden|You don't have a service plan adequate for this request.|
 |Bad Request|400|Bad Request|This provider isn't enabled for the given tenant.|
 |Bad Request|400|Bad Request|There was an issue with your request. Make sure the registrationId you entered is valid or registered for your tenant|
 |Bad Request|404|Not Found|The requested assignment {id} doesn’t exist.|
 |Internal Server Error|500|Internal Server Error|Internal Server Error|
 |Request throttled|429|Too Many Requests|{"code": "TooManyRequests","message": "Retry after {noOfMinutes} minutes"}|
-|Service Unavailable|503|Service Unavailable|{"code": "ServiceUnavailable","message":"Retry after {noOfMinutes} minutes"}|
+|Service Unavailable|503|Service Unavailable|{"code": "ServiceUnavailable","message": "Retry after {noOfMinutes} minutes"}|
 |Bad Request|400|BadRequest|Required fields are missing|{"code": "badRequest","message": "Input Field {fieldName} is required"}|
 |Bad Request|400|BadRequest|Input fields are invalid|{"code": "badRequest","message": "Input Field {fieldName} is invalid"}|
 |Bad Request|400|BadRequest|BadRequest|{"code": "badRequest","message": "Input Field {fieldName} shouldn't be empty"}|
