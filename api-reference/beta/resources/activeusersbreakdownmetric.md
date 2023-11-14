@@ -1,5 +1,5 @@
 ---
-title: "activeUsersBreakdown resource type"
+title: "activeUsersBreakdownMetric resource type"
 description: "Represents breakdown insights for users on apps registered in your Microsoft Entra External ID for customers tenant who were active for a specific period."
 author: "srutto"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
-# activeUsersBreakdown resource type
+# activeUsersBreakdownMetric resource type
 
 Namespace: microsoft.graph
 
@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Represents breakdown insights for users on apps registered in your Microsoft Entra External ID for customers tenant who were active for a specific period. This value is calculated as count of all users who made at least one authentication request in that period.
 A user may be counted more that once if they use multiple device platforms or application.
+
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
@@ -26,9 +28,10 @@ A user may be counted more that once if they use multiple device platforms or ap
 |Property|Type|Description|
 |:---|:---|:---|
 |appId|String|Application ID the users authenticated to.|
-|appName| String|Application name the users authenticated to.
+|appName| String|Application name the users authenticated to.|
 |count| Int64|Number of users.|
 |factDate|Date| Day of the insight.|
+|id|String|Unique identifier for the **activeUsersBreakdownMetric** object. Inherited from [entity](../resources/entity.md).|
 |os| String|The platform for the device that the customers used. Supports `$filter` (`eq`).|
 
 ## Relationships
@@ -49,7 +52,7 @@ The following JSON representation shows the resource type.
   "appId": "String",
   "appName": "String",
   "count": "Int64",
-  "factDate": "String",
+  "factDate": "String (date)",
   "id": "String (identifier)",
   "os": "String"
 }
