@@ -3,7 +3,7 @@ title: "List goalsExportJobs"
 description: "Get a list of the goalsExportJob objects and their properties in a Viva Goals organization."
 author: "ishatyagiit"
 ms.localizationpriority: medium
-ms.prod: "viva-goals"
+ms.prod: "viva"
 doc_type: apiPageType
 ---
 
