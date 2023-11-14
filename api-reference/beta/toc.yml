@@ -11415,7 +11415,7 @@ items:
               - name: Delete permissions
                 href: api/filestoragecontainer-delete-permissions.md
               - name: Add custom property
-                href: api/filestoragecontainer-add-customproperty.md
+                href: api/filestoragecontainer-post-customproperty.md
               - name: List custom property
                 href: api/filestoragecontainer-list-customproperty.md
               - name: Update custom property
