@@ -1,5 +1,5 @@
 ---
-title: "List callRecord sessions"
+title: "List sessions"
 description: "Retrieve the list of session objects for a callRecord."
 ms.localizationpriority: medium
 author: "mcm223"
@@ -7,11 +7,9 @@ ms.prod: "cloud-communications"
 doc_type: "apiPageType"
 ---
 
-# List callRecord sessions
+# List sessions
 
 Namespace: microsoft.graph.callRecords
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the list of [sessions](../resources/callrecords-session.md) associated with a [callRecord](../resources/callrecords-callrecord.md) object.
 
@@ -75,7 +73,7 @@ Here's an example of the request to get the list of [sessions](../resources/call
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/communications/callRecords/{id}/sessions
+GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}/sessions
 ```
 
 # [C#](#tab/csharp)
@@ -130,7 +128,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions",
     "value": [
         {
             "id": "e523d2ed-2966-4b6b-925b-754a88034cc5",
@@ -196,7 +194,7 @@ Content-type: application/json
             }
         }
     ],
-    "@odata.nextLink": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions?$skiptoken=abc"
+    "@odata.nextLink": "https://graph.microsoft.com/v1.0/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions?$skiptoken=abc"
 }
 ```
 
@@ -214,7 +212,7 @@ Here's an example of the request to get the list of [sessions](../resources/call
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/communications/callRecords/{id}/sessions?$expand=segments
+GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}/sessions?$expand=segments
 ```
 
 # [C#](#tab/csharp)
@@ -269,7 +267,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions",
     "value": [
         {
             "id": "e523d2ed-2966-4b6b-925b-754a88034cc5",
@@ -359,6 +357,7 @@ Content-type: application/json
                         }
                     },
                     "callee": {
+                        "@odata.type": "#microsoft.graph.callRecords.participantEndpoint",
                         "@odata.type": "#microsoft.graph.callRecords.participantEndpoint",
                         "name": "machineName_2",
                         "cpuName": "Intel(R) Xeon(R) Platinum 8272CL CPU @ 2.60GHz",
@@ -484,7 +483,7 @@ Content-type: application/json
             ]
         }
     ],
-    "@odata.nextLink": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions?$expand=segments&$skiptoken=abc"
+    "@odata.nextLink": "https://graph.microsoft.com/v1.0/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions?$expand=segments&$skiptoken=abc"
 }
 ```
 
@@ -497,5 +496,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
 
