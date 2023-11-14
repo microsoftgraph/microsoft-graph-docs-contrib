@@ -249,6 +249,8 @@ items:
         items:
           - name: Agenda
             href: /graph/toolkit/components/agenda?context=graph/api/1.0
+          - name: Chat (preview)
+            href: /graph/toolkit/components/chat?context=graph/api/1.0
           - name: File
             href: /graph/toolkit/components/file?context=graph/api/1.0
           - name: File list
@@ -257,7 +259,9 @@ items:
             href: /graph/toolkit/components/get?context=graph/api/1.0
           - name: Login
             href: /graph/toolkit/components/login?context=graph/api/1.0
-            displayName: Microsoft Graph toolkit components, toolkit component
+            displayName: Microsoft Graph toolkit components, toolkit component  
+          - name: New chat (preview)
+            href: /graph/toolkit/components/new-chat?context=graph/api/1.0
           - name: People
             href: /graph/toolkit/components/people?context=graph/api/1.0
           - name: People picker
@@ -563,6 +567,8 @@ items:
                 href: api/profilephoto-get.md
               - name: Update photo
                 href: api/profilephoto-update.md
+              - name: Delete photo
+                href: api/profilephoto-delete.md
           - name: Planner
             items:
               - name: Planner task
@@ -871,6 +877,8 @@ items:
                 href: api/profilephoto-get.md
               - name: Update photo
                 href: api/profilephoto-update.md
+              - name: Delete photo
+                href: api/profilephoto-delete.md
           - name: Planner
             items:
               - name: Planner plan
@@ -989,6 +997,30 @@ items:
                     href: api/application-delete-owners.md
               - name: Policies
                 items:
+                  - name: Remote desktop security configuration policy
+                    href: resources/remotedesktopsecurityconfiguration.md
+                    items:
+                      - name: Create
+                        href: api/serviceprincipal-post-remotedesktopsecurityconfiguration.md
+                      - name: Get
+                        href: api/remotedesktopsecurityconfiguration-get.md
+                      - name: Update
+                        href: api/remotedesktopsecurityconfiguration-update.md
+                      - name: Delete
+                        href: api/serviceprincipal-delete-remotedesktopsecurityconfiguration.md
+                      - name: Target device groups
+                        href: resources/targetdevicegroup.md
+                        items:
+                          - name: List
+                            href: api/remotedesktopsecurityconfiguration-list-targetdevicegroups.md
+                          - name: Create
+                            href: api/remotedesktopsecurityconfiguration-post-targetdevicegroups.md
+                          - name: Get
+                            href: api/targetdevicegroup-get.md
+                          - name: Update
+                            href: api/targetdevicegroup-update.md
+                          - name: Delete
+                            href: api/remotedesktopsecurityconfiguration-delete-targetdevicegroups.md
                   - name: Token issuance policy
                     href: resources/tokenissuancepolicy.md
                     items:
@@ -5054,6 +5086,76 @@ items:
                 href: api/schemaextension-update.md
               - name: Delete
                 href: api/schemaextension-delete.md
+      - name: External data connections
+        items:
+        - name: Overview
+          href: resources/connectors-api-overview.md
+        - name: External connection
+          items:
+            - name: External connection
+              href: resources/externalconnectors-externalconnection.md
+            - name: List
+              href: api/externalconnectors-externalconnection-list.md
+            - name: Create
+              href: api/externalconnectors-external-post-connections.md
+            - name: Get
+              href: api/externalconnectors-externalconnection-get.md
+            - name: Update
+              href: api/externalconnectors-externalconnection-update.md
+            - name: Delete
+              href: api/externalconnectors-externalconnection-delete.md
+            - name: Get operation
+              href: api/externalconnectors-connectionoperation-get.md
+        - name: External activity
+          items:
+            - name: External activity
+              href: resources/externalconnectors-externalactivity.md
+        - name: External activity result
+          items:
+            - name: External activity result
+              href: resources/externalconnectors-externalactivityresult.md
+        - name: External group
+          items:
+            - name: External group
+              href: resources/externalconnectors-externalgroup.md
+            - name: Create
+              href: api/externalconnectors-externalconnection-post-groups.md
+            - name: Get
+              href: api/externalconnectors-externalgroup-get.md
+            - name: Update
+              href: api/externalconnectors-externalgroup-update.md
+            - name: Delete
+              href: api/externalconnectors-externalgroup-delete.md
+        - name: External group member
+          items:
+            - name: Identity
+              href: resources/externalconnectors-identity.md
+            - name: Create
+              href: api/externalconnectors-externalgroup-post-members.md
+            - name: Delete
+              href: api/externalconnectors-externalgroupmember-delete.md
+        - name: External item
+          items:
+            - name: External item
+              href: resources/externalconnectors-externalitem.md
+            - name: Create
+              href: api/externalconnectors-externalconnection-put-items.md
+            - name: Get
+              href: api/externalconnectors-externalitem-get.md
+            - name: Update
+              href: api/externalconnectors-externalitem-update.md
+            - name: Delete
+              href: api/externalconnectors-externalitem-delete.md
+            - name: Add activities
+              href: api/externalconnectors-externalitem-addactivities.md
+        - name: Schema
+          items:
+            - name: Schema
+              href: resources/externalconnectors-schema.md
+            - name: Create
+              href: api/externalconnectors-externalconnection-patch-schema.md
+            - name: Get
+              href: api/externalconnectors-schema-get.md
       - name: Files
         displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
         items:
@@ -5079,56 +5181,64 @@ items:
           - name: Drive items
             href: resources/driveitem.md
             items:
-              - name: List children
-                href: api/driveitem-list-children.md
               - name: Get item
                 href: api/driveitem-get.md
-              - name: Get thumbnails
-                href: api/driveitem-list-thumbnails.md
-              - name: Check in files
-                href: api/driveitem-checkin.md
-              - name: Check out files
-                href: api/driveitem-checkout.md
-              - name: Create folder
-                href: api/driveitem-post-children.md
               - name: Update item
                 href: api/driveitem-update.md
               - name: Delete item
                 href: api/driveitem-delete.md
-              - name: Permanently delete item
-                href: api/driveitem-permanentdelete.md
-              - name: Restore item
-                href: api/driveitem-restore.md
-              - name: Move item
-                href: api/driveitem-move.md
-              - name: Copy item
-                href: api/driveitem-copy.md
-              - name: Download file
-                href: api/driveitem-get-content.md
+              - name: Assign sensitivity label
+                href: api/driveitem-assignsensitivitylabel.md
+              - name: Check in files
+                href: api/driveitem-checkin.md
+              - name: Check out files
+                href: api/driveitem-checkout.md
               - name: Convert content
                 href: api/driveitem-get-content-format.md
-              - name: Upload
-                href: api/driveitem-put-content.md
-              - name: Resumable Upload
+              - name: Copy item
+                href: api/driveitem-copy.md
+              - name: Create folder
+                href: api/driveitem-post-children.md
+              - name: Download file
+                href: api/driveitem-get-content.md
+              - name: Extract sensitivity labels
+                href: api/driveitem-extractsensitivitylabels.md
+              - name: Follow item
+                href: api/driveitem-follow.md
+              - name: Get item analytics
+                href: api/itemanalytics-get.md
+              - name: Get retention label
+                href: api/driveitem-getretentionlabel.md
+              - name: Get thumbnails
+                href: api/driveitem-list-thumbnails.md
+              - name: List children
+                href: api/driveitem-list-children.md
+              - name: List versions
+                href: api/driveitem-list-versions.md
+              - name: Lock or unlock record
+                href: api/driveitem-lockorunlockrecord.md
+              - name: Move item
+                href: api/driveitem-move.md
+              - name: Permanently delete item
+                href: api/driveitem-permanentdelete.md
+              - name: Preview item
+                href: api/driveitem-preview.md
+              - name: Remove retention label
+                href: api/driveitem-removeretentionlabel.md
+              - name: Restore item
+                href: api/driveitem-restore.md
+              - name: Resumable upload
                 href: api/driveitem-createuploadsession.md
               - name: Search items
                 href: api/driveitem-search.md
+              - name: Set retention label
+                href: api/driveitem-setretentionlabel.md
               - name: Track changes
                 href: api/driveitem-delta.md
-              - name: List versions
-                href: api/driveitem-list-versions.md
-              - name: Follow item
-                href: api/driveitem-follow.md
               - name: Unfollow item
                 href: api/driveitem-unfollow.md
-              - name: Preview item
-                href: api/driveitem-preview.md
-              - name: Get item analytics
-                href: api/itemanalytics-get.md
-              - name: Extract sensitivity labels
-                href: api/driveitem-extractsensitivitylabels.md
-              - name: Assign sensitivity label
-                href: api/driveitem-assignsensitivitylabel.md
+              - name: Upload
+                href: api/driveitem-put-content.md
           - name: Bundles
             href: resources/bundle.md
             items:
@@ -5306,6 +5416,14 @@ items:
                     href: api/device-list-registeredowners.md
                   - name: List registered users
                     href: api/device-list-registeredusers.md
+              - name: Device local credential
+                items:
+                  - name: Device local credential
+                    href: resources/devicelocalcredentialinfo.md
+                  - name: List
+                    href: api/directory-list-devicelocalcredentials.md
+                  - name: Get
+                    href: api/devicelocalcredentialinfo-get.md
               - name: Directory object
                 href: resources/directoryobject.md
                 items:
@@ -6575,10 +6693,12 @@ items:
                     items:
                       - name: Federated domain configuration
                         href: resources/internaldomainfederation.md
-                      - name: Get
-                        href: api/internaldomainfederation-get.md
+                      - name: List
+                        href: api/domain-list-federationconfiguration.md
                       - name: Create
                         href: api/domain-post-federationconfiguration.md
+                      - name: Get
+                        href: api/internaldomainfederation-get.md
                       - name: Update
                         href: api/internaldomainfederation-update.md
                       - name: Delete
@@ -7278,6 +7398,25 @@ items:
                 href: resources/person.md
               - name: List people
                 href: api/user-list-people.md
+          - name: People admin settings
+            href: resources/peopleadminsettings.md
+            items:
+              - name: Get
+                href: api/peopleadminsettings-get.md
+              - name: Profile card customization
+                items:
+                  - name: Profile card property
+                    href: resources/profilecardproperty.md
+                  - name: List
+                    href: api/peopleadminsettings-list-profilecardproperties.md
+                  - name: Create
+                    href: api/peopleadminsettings-post-profilecardproperties.md
+                  - name: Get
+                    href: api/profilecardproperty-get.md
+                  - name: Update
+                    href: api/profilecardproperty-update.md
+                  - name: Delete
+                    href: api/profilecardproperty-delete.md
           - name: Insights
             items:
               - name: Office Graph insights
@@ -7680,76 +7819,6 @@ items:
                 href: resources/searchresponse.md
               - name: Query data
                 href: api/search-query.md
-          - name: Index
-            items:
-              - name: Overview
-                href: resources/indexing-api-overview.md
-              - name: External connection
-                items:
-                  - name: External connection
-                    href: resources/externalconnectors-externalconnection.md
-                  - name: List
-                    href: api/externalconnectors-externalconnection-list.md
-                  - name: Create
-                    href: api/externalconnectors-external-post-connections.md
-                  - name: Get
-                    href: api/externalconnectors-externalconnection-get.md
-                  - name: Update
-                    href: api/externalconnectors-externalconnection-update.md
-                  - name: Delete
-                    href: api/externalconnectors-externalconnection-delete.md
-                  - name: Get operation
-                    href: api/externalconnectors-connectionoperation-get.md
-              - name: Schema
-                items:
-                  - name: Schema
-                    href: resources/externalconnectors-schema.md
-                  - name: Create
-                    href: api/externalconnectors-externalconnection-patch-schema.md
-                  - name: Get
-                    href: api/externalconnectors-schema-get.md
-              - name: External activity
-                items:
-                  - name: External activity
-                    href: resources/externalconnectors-externalactivity.md
-              - name: External activity result
-                items:
-                  - name: External activity result
-                    href: resources/externalconnectors-externalactivityresult.md
-              - name: External item
-                items:
-                  - name: External item
-                    href: resources/externalconnectors-externalitem.md
-                  - name: Create
-                    href: api/externalconnectors-externalconnection-put-items.md
-                  - name: Get
-                    href: api/externalconnectors-externalitem-get.md
-                  - name: Update
-                    href: api/externalconnectors-externalitem-update.md
-                  - name: Delete
-                    href: api/externalconnectors-externalitem-delete.md
-                  - name: Add activities
-                    href: api/externalconnectors-externalitem-addactivities.md
-              - name: External group
-                items:
-                  - name: External group
-                    href: resources/externalconnectors-externalgroup.md
-                  - name: Create
-                    href: api/externalconnectors-externalconnection-post-groups.md
-                  - name: Get
-                    href: api/externalconnectors-externalgroup-get.md
-                  - name: Update
-                    href: api/externalconnectors-externalgroup-update.md
-                  - name: Delete
-                    href: api/externalconnectors-externalgroup-delete.md
-              - name: External group member
-                items:
-                  - name: Identity
-                    href: resources/externalconnectors-identity.md
-                  - name: Create
-                    href: api/externalconnectors-externalgroup-post-members.md
-                  - name: Delete
-                    href: api/externalconnectors-externalgroupmember-delete.md
       - name: Security
         items:
           - name: Overview
@@ -7794,6 +7863,116 @@ items:
                     href: api/security-incident-update.md
                   - name: Create comment for incident
                     href: api/security-incident-post-comments.md
+          - name: Attack simulation and training
+            items:
+              - name: Simulations
+                items:
+                  - name: Simulation
+                    href: resources/simulation.md
+                  - name: List
+                    href: api/attacksimulationroot-list-simulations.md
+                  - name: Create
+                    href: api/attacksimulationroot-post-simulation.md
+                  - name: Get
+                    href: api/simulation-get.md
+                  - name: Update
+                    href: api/simulation-update.md
+                  - name: Delete
+                    href: api/simulation-delete.md
+                  - name: List simulation users
+                    href: api/usersimulationdetails-list.md
+                  - name: Get simulation overview
+                    href: api/simulationreportoverview-get.md
+              - name: Attack simulation operation
+                items:
+                  - name: Attack simulation operation
+                    href: resources/attacksimulationoperation.md
+                  - name: Get
+                    href: api/attacksimulationoperation-get.md
+              - name: End user notification
+                items:
+                  - name: End user notification
+                    href: resources/endusernotification.md
+                  - name: List
+                    href: api/attacksimulationroot-list-endusernotifications.md
+                  - name: Get
+                    href: api/endusernotification-get.md
+              - name: Landing page
+                items:
+                  - name: Landing page
+                    href: resources/landingpage.md
+                  - name: List
+                    href: api/attacksimulationroot-list-landingpage.md
+                  - name: Get
+                    href: api/landingpage-get.md
+              - name: Login page
+                items:
+                  - name: Login page
+                    href: resources/loginpage.md
+                  - name: List
+                    href: api/attacksimulationroot-list-loginpage.md
+                  - name: Get
+                    href: api/loginpage-get.md
+              - name: Payload
+                items:
+                  - name: Payload
+                    href: resources/payload.md
+                  - name: List
+                    href: api/attacksimulationroot-list-payloads.md
+                  - name: Get
+                    href: api/payload-get.md
+                  - name: Get payload detail
+                    href: api/payloaddetail-get.md
+              - name: Reports
+                items:
+                  - name: Attack simulation reports
+                    href: resources/report-m365defender-reports-overview.md
+                  - name: Repeat offenders
+                    items:
+                      - name: Repeat offender
+                        href: resources/attacksimulationrepeatoffender.md
+                      - name: Get repeat offenders
+                        href: api/securityreportsroot-getattacksimulationrepeatoffenders.md
+                  - name: Simulation data
+                    items:
+                      - name: Simulation user coverage
+                        href: resources/attacksimulationsimulationusercoverage.md
+                      - name: Get simulation coverage for users
+                        href: api/securityreportsroot-getattacksimulationsimulationusercoverage.md
+                  - name: Training data
+                    items:
+                      - name: Training user coverage
+                        href: resources/attacksimulationtrainingusercoverage.md
+                      - name: Get training coverage for users
+                        href: api/securityreportsroot-getattacksimulationtrainingusercoverage.md
+              - name: Simulation automation
+                items:
+                  - name: Simulation automation
+                    href: resources/simulationautomation.md
+                  - name: List
+                    href: api/attacksimulationroot-list-simulationautomations.md
+                  - name: Get
+                    href: api/simulationautomation-get.md
+              - name: Simulation automation run
+                items:
+                  - name: Simulation automation run
+                    href: resources/simulationautomationrun.md
+                  - name: List
+                    href: api/simulationautomation-list-runs.md
+              - name: Training
+                items:
+                  - name: Training
+                    href: resources/training.md
+                  - name: List
+                    href: api/attacksimulationroot-list-trainings.md
+                  - name: Get
+                    href: api/training-get.md
+              - name: Training language detail
+                items:
+                  - name: Training language detail
+                    href: resources/traininglanguagedetail.md
+                  - name: Get
+                    href: api/traininglanguagedetail-get.md
           - name: eDiscovery
             items:
               - name: Case
@@ -8166,56 +8345,6 @@ items:
                 href: api/securescorecontrolprofile-update.md
           - name: Errors
             href: resources/security-error-codes.md
-          - name: Attack simulation and training
-            items:
-              - name: Simulations
-                items:
-                  - name: Simulation
-                    href: resources/simulation.md
-                  - name: List
-                    href: api/attacksimulationroot-list-simulations.md
-                  - name: Get
-                    href: api/simulation-get.md
-                  - name: List simulation users
-                    href: api/usersimulationdetails-list.md
-                  - name: Get simulation overview
-                    href: api/simulationreportoverview-get.md
-              - name: Simulation automation
-                items:
-                  - name: Simulation automation
-                    href: resources/simulationautomation.md
-                  - name: List
-                    href: api/attacksimulationroot-list-simulationautomations.md
-                  - name: Get
-                    href: api/simulationautomation-get.md
-              - name: Simulation automation run
-                items:
-                  - name: Simulation automation run
-                    href: resources/simulationautomationrun.md
-                  - name: List
-                    href: api/simulationautomation-list-runs.md
-              - name: Reports
-                items:
-                  - name: Attack simulation reports
-                    href: resources/report-m365defender-reports-overview.md
-                  - name: Repeat offenders
-                    items:
-                      - name: Repeat offender
-                        href: resources/attacksimulationrepeatoffender.md
-                      - name: Get repeat offenders
-                        href: api/securityreportsroot-getattacksimulationrepeatoffenders.md
-                  - name: Simulation data
-                    items:
-                      - name: Simulation user coverage
-                        href: resources/attacksimulationsimulationusercoverage.md
-                      - name: Get simulation coverage for users
-                        href: api/securityreportsroot-getattacksimulationsimulationusercoverage.md
-                  - name: Training data
-                    items:
-                      - name: Training user coverage
-                        href: resources/attacksimulationtrainingusercoverage.md
-                      - name: Get training coverage for users
-                        href: api/securityreportsroot-getattacksimulationtrainingusercoverage.md
           - name: Threat intelligence
             items:
               - name: Overview
@@ -8264,6 +8393,8 @@ items:
                     href: api/security-host-list-passivedns.md
                   - name: List passive DNS reverse
                     href: api/security-host-list-passivednsreverse.md
+                  - name: List ports
+                    href: api/security-host-list-ports.md
                   - name: List subdomains
                     href: api/security-host-list-subdomains.md
                   - name: List trackers
@@ -8296,6 +8427,14 @@ items:
                     href: api/security-host-list-parenthostpairs.md
                   - name: List for a host as parent
                     href: api/security-host-list-childhostpairs.md
+              - name: Host port
+                items:
+                  - name: Host port
+                    href: resources/security-hostport.md
+                  - name: List
+                    href: api/security-host-list-ports.md
+                  - name: Get
+                    href: api/security-hostport-get.md
               - name: Host SSL certificate
                 items:
                 - name: Host SSL certificate
@@ -8400,38 +8539,34 @@ items:
                 href: api/site-get.md
               - name: List sites
                 href: api/site-list.md
-              - name: Get lists
-                href: api/list-list.md
-              - name: Get item analytics
-                href: api/itemanalytics-get.md
-              - name: Follow site
-                href: api/site-follow.md
-              - name: Unfollow site
-                href: api/site-unfollow.md
-              - name: List followed sites
-                href: api/sites-list-followed.md
-              - name: List columns
-                href: api/site-list-columns.md
               - name: Create column
                 href: api/site-post-columns.md
-              - name: List content types
-                href: api/site-list-contenttypes.md
               - name: Create content type
                 href: api/site-post-contenttypes.md
-              - name: Get applicable content types for list
-                href: api/site-getapplicablecontenttypesforlist.md
-              - name: Get lists
-                href: api/list-list.md
               - name: Create list
                 href: api/list-create.md
-              - name: List subsites
-                href: api/site-list-subsites.md
-              - name: Search for sites
-                href: api/site-search.md
-              - name: List operations
-                href: api/site-list-operations.md
+              - name: Follow site
+                href: api/site-follow.md
+              - name: Get applicable content types for list
+                href: api/site-getapplicablecontenttypesforlist.md
+              - name: Get delta
+                href: api/site-delta.md
+              - name: Get item analytics
+                href: api/itemanalytics-get.md
+              - name: Get lists
+                href: api/list-list.md
               - name: List all sites
                 href: api/site-getallsites.md
+              - name: List columns
+                href: api/site-list-columns.md
+              - name: List content types
+                href: api/site-list-contenttypes.md
+              - name: List followed sites
+                href: api/sites-list-followed.md
+              - name: List operations
+                href: api/site-list-operations.md
+              - name: List subsites
+                href: api/site-list-subsites.md
               - name: Permission
                 href: resources/permission.md
                 items:
@@ -8445,6 +8580,10 @@ items:
                     href: api/site-update-permission.md
                   - name: Delete site permission
                     href: api/site-delete-permission.md
+              - name: Search for sites
+                href: api/site-search.md
+              - name: Unfollow site
+                href: api/site-unfollow.md
           - name: List
             items:
               - name: List
@@ -8912,7 +9051,7 @@ items:
                       - name: Session
                         href: resources/callrecords-session.md
                       - name: List sessions
-                        href: api/callrecords-session-list.md
+                        href: api/callrecords-callrecord-list-sessions.md
               - name: Online meetings
                 items:
                   - name: Attendance report
@@ -8927,6 +9066,14 @@ items:
                         items:
                           - name: List
                             href: api/attendancerecord-list.md
+                  - name: Call recording
+                    items:
+                      - name: Call recording
+                        href: resources/callrecording.md
+                      - name: List
+                        href: api/onlinemeeting-list-recordings.md
+                      - name: Get
+                        href: api/callrecording-get.md
                   - name: Call transcript
                     items:
                       - name: Call transcript

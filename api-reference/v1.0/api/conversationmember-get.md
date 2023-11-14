@@ -47,7 +47,7 @@ This operation does not support the [OData query parameters](/graph/query-parame
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -66,7 +66,7 @@ Here is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/V1.0/chats/{id}/members/{id}
+GET https://graph.microsoft.com/v1.0/chats/{id}/members/{id}
 ```
 
 

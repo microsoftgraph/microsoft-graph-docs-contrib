@@ -3,6 +3,7 @@ title: "authenticationMethod: resetPassword"
 description: "Reset a user's password."
 ms.localizationpriority: medium
 author: "zhvolosh"
+ms.reviewer: intelligentaccesspm
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -22,16 +23,10 @@ This reset is a long-running operation and returns a **Location** header with a 
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-> [!IMPORTANT]
-> The operation cannot be performed on a user's own account. Only an administrator with the appropriate permissions can perform this operation.
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:---------------------------------------|:-------------------------|
-| Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+<!-- { "blockType": "permissions", "name": "authenticationmethod_resetpassword" } -->
+[!INCLUDE [permissions-table](../includes/permissions/authenticationmethod-resetpassword-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-write](../includes/rbac-for-apis/rbac-authentication-methods-apis-write.md)]
 
@@ -81,7 +76,7 @@ The following example shows how to call this API when the caller submits a passw
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 
@@ -135,7 +130,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -167,7 +162,7 @@ The following example shows how to call this API when the caller doesn't submit 
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

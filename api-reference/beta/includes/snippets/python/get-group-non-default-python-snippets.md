@@ -6,13 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
-query_params = GroupRequestBuilder.GroupRequestBuilderGetQueryParameters(
+query_params = GroupItemRequestBuilder.GroupItemRequestBuilderGetQueryParameters(
 		select = ["allowExternalSenders","autoSubscribeNewMembers","isSubscribedByMail","unseenCount"],
 )
 
-request_configuration = GroupRequestBuilder.GroupRequestBuilderGetRequestConfiguration(
+request_configuration = GroupItemRequestBuilder.GroupItemRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
 )
 

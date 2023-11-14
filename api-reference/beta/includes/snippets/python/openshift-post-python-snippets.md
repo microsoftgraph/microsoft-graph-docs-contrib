@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = OpenShift(
 	id = "OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",
@@ -26,7 +26,7 @@ request_body = OpenShift(
 				code = "",
 				display_name = "Lunch",
 			),
-		]
+		],
 	),
 	draft_open_shift = None,
 	created_date_time = "2019-03-14T04: 32: 51.451Z",
@@ -51,7 +51,7 @@ headers = {
 
 )
 
-result = await graph_client.teams.by_team_id('team-id').schedule.open_shifts.post(body = request_body, request_configuration = request_configuration)
+result = await graph_client.teams.by_team_id('team-id').schedule.open_shifts.post(request_body, request_configuration = request_configuration)
 
 
 ```
