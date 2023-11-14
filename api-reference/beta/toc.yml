@@ -17503,6 +17503,8 @@ items:
                     items:
                       - name: Call record
                         href: resources/callrecords-callrecord.md
+                      - name: List
+                        href: api/callrecords-callrecord-list.md
                       - name: Get
                         href: api/callrecords-callrecord-get.md
                   - name: Direct routing calls
@@ -17511,6 +17513,12 @@ items:
                         href: resources/callrecords-directroutinglogrow.md
                       - name: List direct routing calls
                         href: api/callrecords-callrecord-getdirectroutingcalls.md
+                  - name: Participants
+                    items:
+                      - name: Participant
+                        href: resources/callrecords-participant.md
+                      - name: List
+                        href: api/callrecords-callrecord-list-participants.md
                   - name: PSTN blocked users log row
                     items:
                       - name: PSTN blocked users log row
@@ -17534,7 +17542,7 @@ items:
                       - name: Session
                         href: resources/callrecords-session.md
                       - name: List
-                        href: api/callrecords-session-list.md
+                        href: api/callrecords-callrecord-list-sessions.md
                   - name: SMS
                     items:
                       - name: SMS log row
