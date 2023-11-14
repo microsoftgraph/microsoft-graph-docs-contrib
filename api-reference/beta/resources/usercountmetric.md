@@ -1,19 +1,21 @@
 ---
-title: "userCount resource type"
-description: "Insights for the total users on apps registered in your Microsoft Entra External ID for customers tenant for a specific period."
+title: "userCountMetric resource type"
+description: "Represents insights for the total users on apps registered in your Microsoft Entra External ID for customers tenant for a specific period."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
-# userCount resource type
+# userCountMetric resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Insights for the total users on apps registered in your Microsoft Entra External ID for customers tenant for a specific period.
+Represents insights for the total users on apps registered in your Microsoft Entra External ID for customers tenant for a specific period.
+
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
@@ -23,9 +25,10 @@ Insights for the total users on apps registered in your Microsoft Entra External
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| id|String| Identifier for the insight.|
+| id|String| Identifier for the insight. Inherited from [entity](../resources/entity.md).|
 | factDate|Date| Date of the insight.|
-| count|String| Total users in the tenant at over time.|
+| count|Int64| Total users in the tenant at over time.|
+
 ## Relationships
 None.
 
@@ -41,8 +44,8 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.userCountMetric",
+  "count": "Int64",
+  "factDate": "String (date)",
   "id": "String (identifier)",
-  "factDate": "Date",
-  "count": "Integer"
 }
 ```
