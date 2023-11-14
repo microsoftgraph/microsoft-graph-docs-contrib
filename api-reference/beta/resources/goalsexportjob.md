@@ -3,7 +3,7 @@ title: "goalsExportJob resource type"
 description: "Represents an entity that holds the properties of an exportJob for Viva Goals."
 author: "ishatyagiit"
 ms.localizationpriority: medium
-ms.prod: "microsoft-viva-goals"
+ms.prod: "viva"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "Get goalsExportJob"
 description: "Get the status of a goalsExportJob object in Viva Goals organization."
 author: "ishatyagiit"
 ms.localizationpriority: medium
-ms.prod: "microsoft-viva-goals"
+ms.prod: "viva"
 doc_type: apiPageType
 ---
 
