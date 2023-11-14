@@ -1,19 +1,21 @@
 ---
-title: "mfaCompletion resource type"
-description: "Insights for MFA usage on apps registered in your Microsoft Entra External ID for customers tenant for a specific period."
+title: "mfaCompletionMetric resource type"
+description: "Represents insights for MFA usage on apps registered in your Microsoft Entra External ID for customers tenant for a specific period."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
-# mfaCompletion resource type
+# mfaCompletionMetric resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Insights for MFA usage on apps registered in your Microsoft Entra External ID for customers tenant for a specific period.
+Represents insights for MFA usage on apps registered in your Microsoft Entra External ID for customers tenant for a specific period.
+
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
@@ -27,7 +29,7 @@ Insights for MFA usage on apps registered in your Microsoft Entra External ID fo
 |appId|String|The application ID. Supports `$filter` (`eq`).|
 |attemptsCount|Int64|Number of users who attempted to sign up. Supports `$filter` (`eq`).|
 |factDate|Date|The date of the user insight.|
-|id|String|Identifier for the user insight.|
+|id|String|Identifier for the user insight. Inherited from [entity](../resources/entity.md).|
 |mfaMethod|String|The mfa authentication method customers used. Supports `$filter` (`eq`).|
 |os|String|The platform of the device that the customers used. Supports `$filter` (`eq`).|
 |successCount|Int64|Number of users who have successfully signed up. Supports `$filter` (`eq`).|
@@ -47,12 +49,12 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.mfaCompletionMetric",
+  "appId": "String",
+  "attemptsCount": "Int64",
+  "factDate": "String (date)",
   "id": "String (identifier)",
-  "factDate": "Date",
-  "attemptsCount": "Integer",
-  "successCount": "Integer",
   "mfaMethod": "String",
   "os": "String",
-  "appId": "String"
+  "successCount": "Int64"
 }
 ```
