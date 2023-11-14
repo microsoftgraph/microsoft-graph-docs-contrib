@@ -38,7 +38,7 @@ GET /employeeExperience/goals/exportJobs
 This method supports the `$filter` OData query parameters to help customize the response. For more information, see [OData query parameters](/graph/query-parameters).
 
 
-`$filter` is supported on the **goalsOrganizationId** property only.
+The `$filter` OData query parameter is supported on the **goalsOrganizationId** property only.
 
 ## Request headers
 |Name|Description|
