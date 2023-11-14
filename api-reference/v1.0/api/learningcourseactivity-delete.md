@@ -11,9 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Delete a [learningCourseActivity](../resources/learningcourseactivity.md) object by using the course activity ID of either an assignment or a self-initiated activity.
+Delete a [learningCourseActivity](../resources/learningcourseactivity.md) object using the course activity ID of either an assignment or a self-initiated activity.
 
->**Note**: Learning course activities can be managed by a provider only when **isCourseAcitvitySyncEnabled** is set to `true`.  To update the value, use the [Update learningProvider](../api/learningprovider-update.md) method.
+>**Note**: A provider can only manage Learning course activities when **isCourseAcitvitySyncEnabled** is set to `true`.  To update the value, use the [Update learningProvider](../api/learningprovider-update.md) method.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -53,7 +53,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -115,7 +115,7 @@ HTTP/1.1 204 No Content
 |Scenario|HTTP code|Code|Message|Details|
 |:---|:---|:---|:---|:---|
 |Method not supported for entity|405|MethodNotAllowed|This method isn't supported for this entity type.  See the Microsoft Graph documentation for the methods applicable to this entity|
-|User doesn't have the appropriate permissions scope|403|Forbidden|Your account doesn't have access to this report or data. Please contact your global administrator to request access.|
+|User doesn't have the appropriate permissions scope|403|Forbidden|Your account doesn't have access to this report or data. Contact your global administrator to request access.|
 |Forbidden|403|Forbidden|You don't have a service plan adequate for this request.|
 |Bad request|400|Bad Request|This provider isn't enabled for the given tenant.|
 |Bad request|400|Bad Request|There was an issue with your request. Make sure the registrationId you entered is valid or registered for your tenant|
