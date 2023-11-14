@@ -15036,21 +15036,21 @@ items:
               - name: AWS IAM access key age
                 href: resources/awsidentityaccessmanagementkeyagefinding.md
                 items:
-                - name: List
-                  href: /resources/awsidentityaccessmanagementkeyagefinding-list.md
+                - name: List 
+                  href: api/awsidentityaccessmanagementkeyagefinding-list.md
                 - name: Get
-                  href: /resources/awsidentityaccessmanagementkeyagefinding-get.md
+                  href: api/awsidentityaccessmanagementkeyagefinding-get.md
                 - name: Aggregated summary
-                  href: /resources/awsidentityaccessmanagementkeyagefinding-aggregatedsummary.md
+                  href: api/awsidentityaccessmanagementkeyagefinding-aggregatedsummary.md
               - name: AWS IAM access key usage
                 href: resources/awsidentityaccessmanagementkeyusagefinding.md
                 items:
                 - name: List
-                  href: /resources/awsidentityaccessmanagementkeyusagefinding-list.md
+                  href: api/awsidentityaccessmanagementkeyusagefinding-list.md
                 - name: Get
-                  href: /resources/awsidentityaccessmanagementkeyusagefinding-get.md
+                  href: api/awsidentityaccessmanagementkeyusagefinding-get.md
                 - name: Aggregated summary
-                  href: /resources/awsidentityaccessmanagementkeyusagefinding-aggregatedsummary.md
+                  href: api/awsidentityaccessmanagementkeyusagefinding-aggregatedsummary.md
           - name: Partner customer administration
             items:
               - name: Granular delegated admin privileges

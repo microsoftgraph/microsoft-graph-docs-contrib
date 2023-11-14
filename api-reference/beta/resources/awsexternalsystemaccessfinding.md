@@ -29,7 +29,7 @@ Inherits from [finding](../resources/finding.md).
 |accessMethods|externalSystemAccessMethods|Specifies if the system can be accessed directly, via role chaining, or both. The possible values are: `direct`, `roleChaining`, `unknownFutureValue`. Supports `$filter` (`eq`).|
 |createdDateTime|DateTimeOffset|Defines when the finding was created. Inherited from [finding](../resources/finding.md).|
 |id|String|Unique identifier for the finding. Inherited from [entity](../resources/entity.md).|
-|systemWithAccess|[authorizationSystemInfo](../resources/authorizationsysteminfo.md)|The account ID for the external system that is able to access the given system.|
+|systemWithAccessId|string|The account ID for the external system that is able to access the given system.|
 |trustedIdentityCount|Int32|The number of identities in the external system that are trusted, if not all. Supports `$orderby`.|
 |trustsAllIdentities|Boolean|Flag that determines if all identities in the external system are trusted, or only a subset.|
 
