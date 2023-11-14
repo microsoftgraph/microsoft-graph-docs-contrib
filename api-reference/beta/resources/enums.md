@@ -4298,40 +4298,13 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### authorizationSystemActionType values 
 
-
-
 |Member|
 |:---|
 |delete|
 |read|
 |unknownFutureValue|
 
-### authorizationSystemType values 
-
-
-
-|Member|
-|:---|
-|azure|
-|gcp|
-|aws|
-|unknownFutureValue|
-
-### awsAccessType values 
-
-
-
-|Member|
-|:---|
-|public|
-|restricted|
-|crossAccount|
-|private|
-|unknownFutureValue|
-
 ### awsPolicyType values 
-
-
 
 |Member|
 |:---|
@@ -4340,8 +4313,6 @@ Possible values for user account types (group membership), per Windows definitio
 |unknownFutureValue|
 
 ### awsRoleTrustEntityType values 
-
-
 
 |Member|
 |:---|
@@ -4354,7 +4325,143 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### awsRoleType values 
 
+|Member|
+|:---|
+|system|
+|custom|
+|unknownFutureValue|
 
+### awsStatementEffect values 
+
+|Member|
+|:---|
+|allow|
+|deny|
+|unknownFutureValue|
+
+### azureRoleDefinitionType values 
+
+|Member|
+|:---|
+|system|
+|custom|
+|unknownFutureValue|
+
+### dataCollectionStatus values 
+
+|Member|
+|:---|
+|online|
+|offline|
+|unknownFutureValue|
+
+### gcpRoleType values 
+
+|Member|
+|:---|
+|system|
+|custom|
+|unknownFutureValue|
+
+### permissionsDefinitionIdentityType values 
+
+|Member|
+|:---|
+|user|
+|role|
+|application|
+|managedIdentity|
+|serviceAccount|
+|unknownFutureValue|
+
+### permissionsModificationCapability values 
+
+|Member|
+|:---|
+|enabled|
+|notConfigured|
+|noRecentDataCollected|
+|unknownFutureValue|
+
+### permissionsRequestOccurrenceStatus values 
+
+|Member|
+|:---|
+|grantingFailed|
+|granted|
+|granting|
+|revoked|
+|revoking|
+|revokingFailed|
+|unknownFutureValue|
+
+### statusDetail values 
+
+|Member|
+|:---|
+|submitted|
+|approved|
+|completed|
+|canceled|
+|rejected|
+|unknownFutureValue|
+
+
+### authorizationSystemActionSeverity values 
+
+|Member|
+|:---|
+|normal|
+|high|
+|unknownFutureValue|
+
+### authorizationSystemActionType values 
+
+|Member|
+|:---|
+|delete|
+|read|
+|unknownFutureValue|
+
+### authorizationSystemType values 
+
+|Member|
+|:---|
+|azure|
+|gcp|
+|aws|
+|unknownFutureValue|
+
+### awsAccessType values 
+
+|Member|
+|:---|
+|public|
+|restricted|
+|crossAccount|
+|private|
+|unknownFutureValue|
+
+### awsPolicyType values 
+
+|Member|
+|:---|
+|system|
+|custom|
+|unknownFutureValue|
+
+### awsRoleTrustEntityType values 
+
+|Member|
+|:---|
+|none|
+|service|
+|sso|
+|crossAccount|
+|webIdentity|
+|unknownFutureValue|
+
+### awsRoleType values 
 
 |Member|
 |:---|
@@ -4363,8 +4470,6 @@ Possible values for user account types (group membership), per Windows definitio
 |unknownFutureValue|
 
 ### awsSecretInformationWebServices values 
-
-
 
 |Member|
 |:---|
@@ -4375,8 +4480,6 @@ Possible values for user account types (group membership), per Windows definitio
 |unknownFutureValue|
 
 ### awsSecurityToolWebServices values 
-
-
 
 |Member|
 |:---|
@@ -4391,8 +4494,6 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### azureAccessType values 
 
-
-
 |Member|
 |:---|
 |public|
@@ -4400,8 +4501,6 @@ Possible values for user account types (group membership), per Windows definitio
 |unknownFutureValue|
 
 ### azureEncryption values 
-
-
 
 |Member|
 |:---|
@@ -4412,8 +4511,6 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### azureRoleDefinitionType values 
 
-
-
 |Member|
 |:---|
 |system|
@@ -4421,8 +4518,6 @@ Possible values for user account types (group membership), per Windows definitio
 |unknownFutureValue|
 
 ### dataCollectionStatus values 
-
-
 
 |Member|
 |:---|
@@ -4432,8 +4527,6 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### externalSystemAccessMethods values 
 
-
-
 |Member|
 |:---|
 |direct|
@@ -4441,8 +4534,6 @@ Possible values for user account types (group membership), per Windows definitio
 |unknownFutureValue|
 
 ### gcpAccessType values 
-
-
 
 |Member|
 |:---|
@@ -4453,8 +4544,6 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### gcpEncryption values 
 
-
-
 |Member|
 |:---|
 |google|
@@ -4463,8 +4552,6 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### gcpRoleType values 
 
-
-
 |Member|
 |:---|
 |system|
@@ -4472,8 +4559,6 @@ Possible values for user account types (group membership), per Windows definitio
 |unknownFutureValue|
 
 ### iamStatus values 
-
-
 
 |Member|
 |:---|
@@ -4484,12 +4569,9 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### permissionsModificationCapability values 
 
-
-
 |Member|
 |:---|
 |enabled|
 |notConfigured|
 |noRecentDataCollected|
 |unknownFutureValue|
-
