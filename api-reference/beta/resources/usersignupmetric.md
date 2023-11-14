@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Represents insights for user sign-ups on apps registered in your Microsoft Entra External ID for customers tenant for a specific period.
 
+Inherits from [entity](../resources/entity.md).
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -26,7 +28,7 @@ Represents insights for user sign-ups on apps registered in your Microsoft Entra
 |:---|:---|:---|
 |count|Int64|Number of users who signed up. Supports `$filter` (`eq`).|
 |factDate|Date|The date of the user insight.|
-|id|String|Identifier for the user insight.|
+|id|String|Identifier for the user insight. Inherited from [entity](../resources/entity.md).|
 |os|String|The device plaform that the customers used. Supports `$filter` (`eq`).|
 
 ## Relationships
