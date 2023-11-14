@@ -3,21 +3,45 @@
     {
       "ChangeList": [
         {
-          "Id": "16c91909-79ec-4452-a4b9-3219e17e8ef1",
-          "ApiChange": "Property",
-          "ChangedApiName": "displayNonAirPrintCompliantPrinters",
+          "Id": "30fad8c5-8dfe-462e-908f-3b1dd226db11",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "incompatiblePrinterSettings",
           "ChangeType": "Addition",
-          "Description": "Added the `displayNonAirPrintCompliantPrinters` property to the [printSettings](https://learn.microsoft.com/en-us/graph/api/resources/printSettings?view=graph-rest-beta) resource.",
+          "Description": "Added the **incompatiblePrinterSettings** enumeration type.",
+          "Target": "incompatiblePrinterSettings"
+        },
+        {
+          "Id": "30fad8c5-8dfe-462e-908f-3b1dd226db11",
+          "ApiChange": "Resource",
+          "ChangedApiName": "airPrintSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [airPrintSettings](https://learn.microsoft.com/en-us/graph/api/resources/airPrintSettings?view=graph-rest-beta) resource type.",
+          "Target": "airPrintSettings"
+        },
+        {
+          "Id": "30fad8c5-8dfe-462e-908f-3b1dd226db11",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printerDiscoverySettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [printerDiscoverySettings](https://learn.microsoft.com/en-us/graph/api/resources/printerDiscoverySettings?view=graph-rest-beta) resource type.",
+          "Target": "printerDiscoverySettings"
+        },
+        {
+          "Id": "30fad8c5-8dfe-462e-908f-3b1dd226db11",
+          "ApiChange": "Property",
+          "ChangedApiName": "printerDiscoverySettings",
+          "ChangeType": "Addition",
+          "Description": "Added the `printerDiscoverySettings` property to the [printSettings](https://learn.microsoft.com/en-us/graph/api/resources/printSettings?view=graph-rest-beta) resource.",
           "Target": "printSettings"
         }
       ],
-      "Id": "16c91909-79ec-4452-a4b9-3219e17e8ef1",
+      "Id": "30fad8c5-8dfe-462e-908f-3b1dd226db11",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2023-08-08T23:06:50.0371414Z",
-      "WorkloadArea": "Devices and app management",
+      "CreatedDateTime": "2023-11-14T01:02:44.3382557Z",
+      "WorkloadArea": "Devices and apps",
       "SubArea": "Cloud printing"
-    },
+    }
     {
       "ChangeList": [
         {
