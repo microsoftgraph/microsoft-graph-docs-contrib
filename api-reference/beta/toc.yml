@@ -249,6 +249,8 @@ items:
         items:
           - name: Agenda
             href: /graph/toolkit/components/agenda?context=graph/api/beta
+          - name: Chat (preview)
+            href: /graph/toolkit/components/chat?context=graph/api/beta
           - name: File
             href: /graph/toolkit/components/file?context=graph/api/beta
           - name: File list
@@ -258,6 +260,8 @@ items:
           - name: Login
             href: /graph/toolkit/components/login?context=graph/api/beta
             displayName: Microsoft Graph toolkit components, toolkit component
+          - name: New chat (preview)
+            href: /graph/toolkit/components/new-chat?context=graph/api/beta
           - name: People
             href: /graph/toolkit/components/people?context=graph/api/beta
           - name: People picker
@@ -11098,6 +11102,8 @@ items:
                 href: api/educationsubmission-return.md
               - name: Reassign submission
                 href: api/educationsubmission-reassign.md
+              - name: Excuse submission
+                href: api/educationsubmission-excuse.md
           - name: Outcome
             items:
               - name: Outcome
@@ -17497,6 +17503,8 @@ items:
                     items:
                       - name: Call record
                         href: resources/callrecords-callrecord.md
+                      - name: List
+                        href: api/callrecords-callrecord-list.md
                       - name: Get
                         href: api/callrecords-callrecord-get.md
                   - name: Direct routing calls
@@ -17505,6 +17513,12 @@ items:
                         href: resources/callrecords-directroutinglogrow.md
                       - name: List direct routing calls
                         href: api/callrecords-callrecord-getdirectroutingcalls.md
+                  - name: Participants
+                    items:
+                      - name: Participant
+                        href: resources/callrecords-participant.md
+                      - name: List
+                        href: api/callrecords-callrecord-list-participants.md
                   - name: PSTN blocked users log row
                     items:
                       - name: PSTN blocked users log row
@@ -17528,7 +17542,7 @@ items:
                       - name: Session
                         href: resources/callrecords-session.md
                       - name: List
-                        href: api/callrecords-session-list.md
+                        href: api/callrecords-callrecord-list-sessions.md
                   - name: SMS
                     items:
                       - name: SMS log row
@@ -17549,13 +17563,13 @@ items:
                         items:
                           - name: List
                             href: api/attendancerecord-list.md
-                  - name: Call recording (preview)
+                  - name: Call recording
                     items:
                       - name: Call recording
                         href: resources/callrecording.md
-                      - name: List recordings
+                      - name: List
                         href: api/onlinemeeting-list-recordings.md
-                      - name: Get recording
+                      - name: Get
                         href: api/callrecording-get.md
                       - name: Get delta by organizer
                         href: api/callrecording-delta.md
