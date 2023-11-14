@@ -18,8 +18,8 @@ Represents tenant-wide settings for the Universal Print service.
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|documentConversionEnabled|Boolean|Specifies whether document conversion is enabled for the tenant. If document conversion is enabled, Universal Print service automatically converts documents into a format compatible with the printer (xps to pdf) when needed.|
-|displayNonAirPrintCompliantPrinters|Boolean|Specifies whether printers that aren't fully AirPrint compliant when used with Universal Print should be visible to Mac users. Users printing from a macOS device might not have access to all advanced settings and statuses on these printers.|
+|documentConversionEnabled|Boolean|Specifies whether document conversion is enabled for the tenant. If document conversion is enabled, Universal Print service will automatically convert documents into a format compatible with the printer (xps to pdf) when needed.|
+|printerDiscoverySettings|[printerDiscoverySettings](../resources/printerdiscoverysettings.md)|Specifies settings that affect printer discovery when using Universal Print.|
 
 ## JSON representation
 
@@ -35,7 +35,11 @@ The following JSON shows a representation of the resource.
 ```json
 {
   "documentConversionEnabled": true,
-  "displayNonAirPrintCompliantPrinters": true
+  "printerDiscoverySettings": {
+    "airPrint": {
+      "incompatiblePrinters": "hide"
+    }
+  }
 }
 ```
 
