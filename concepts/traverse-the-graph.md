@@ -155,10 +155,9 @@ Content-type: application/json
 }
 ```
 
-
-
-
 ## View a specific resource from a collection by ID
+
+For most entities in Microsoft Graph, the **id** is the primary key.
 
 Continuing with using **user** as an example - to view the information about a user, use an HTTPS GET request to get a specific user by the user's ID. For a **user** entity, you can use either the **id** or **userPrincipalName** property as the identifier.
 
@@ -197,6 +196,17 @@ content-length: 982
 
     ...
 }
+```
+
+## View a specific resource from a collection by alternate key
+
+Some entities support an alternate key, which you can use to retrieve an object instead of the primary key ID. For example, the [application](/graph/api/resources/application) and [servicePrincipal](/graph/api/resources/serviceprincipal) entities support the **appId** alternate key.
+
+The following example uses the alternate key syntax to retrieve an application by its **appId**.
+
+```http
+GET https://graph.microsoft.com/v1.0/application(appId='00000003-0000-0000-c000-000000000000') HTTP/1.1
+Authorization : Bearer {access_token}
 ```
 
 ## Read specific properties of a resource
@@ -241,6 +251,17 @@ When you make a GET request without using `$select` to limit the amount of prope
 
 ```html
 "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET groups?$select=appMetadata,assignedLabels",
+```
+
+## Read only one property of a resource
+
+You can retrieve a single property of a resource without using `$select`, by specifying the property name as a path segment. This query doesn't allow you to retrieve multiple properties, but it can be useful when you only need a single property.
+
+The following example retrieves the **displayName** of a user.
+
+```http
+GET https://graph.microsoft.com/beta/users/8afc02cb-4d62-4dba-b536-9f6d73e9be26/displayName HTTP/1.1
+Authorization : Bearer {access_token}
 ```
 
 ## Read specific properties of the resources in a collection
