@@ -21,7 +21,7 @@ Represents the rule conditions for an [alert rule](devicemanagement-alertrule.md
 
 |Property|Type|Description|
 |:---|:---|:---|
-|relationshipType|[microsoft.graph.deviceManagement.realtionshipType](#relationshiptype-values)| The relationship type.  Possible values are: `and`, `or`.|
+|relationshipType|[microsoft.graph.deviceManagement.relationshipType](#relationshiptype-values)| The relationship type.  Possible values are: `and`, `or`.|
 |conditionCategory|[microsoft.graph.deviceManagement.conditionCategory](#conditioncategory-values)|The property that the rule condition monitors. Possible values are:  `provisionFailures`, `imageUploadFailures`, `azureNetworkConnectionCheckFailures`, `cloudPcInGracePeriod`, `frontlineInsufficientLicenses`, `cloudPcConnectionErrors`, `cloudPcHostHealthCheckFailures`, `cloudPcZoneOutage`, `unknownFutureValue`.|
 |aggregation|[microsoft.graph.deviceManagement.aggregationType](#aggregationtype-values)|The built-in aggregation method for the rule condition. The possible values are: `count`, `percentage`, `affectedCloudPcCount`, `affectedCloudPcPercentage`, `unknownFutureValue`.|
 |operator|[microsoft.graph.deviceManagement.operatorType](#operatortype-values)|The built-in operator for the rule condition. The possible values are: `greaterOrEqual`, `equal`, `greater`, `less`, `lessOrEqual`, `notEqual`, `unknownFutureValue`.|
