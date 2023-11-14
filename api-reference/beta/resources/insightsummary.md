@@ -17,6 +17,8 @@ Summary of all usage insights on apps registered in your Microsoft Entra Externa
 A user (in activeUsers) may be counted more that once if they use multiple device platforms.
 This endpoint is meant to provide a summary of the insights. A breakdown of each insight is available in the latter entities.
 
+Inherits from [entity](../resources/entity.md).
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -31,7 +33,7 @@ This endpoint is meant to provide a summary of the insights. A breakdown of each
 |authenticationCompletions|Int64|Daily authentication completions.|
 |authenticationRequests|Int64|Daily authentication requests.|
 |factDate|Date|Day/Month of the insight.|
-|id|String|Identifier for the insight.|
+|id|String|Identifier for the insight. Inherited from [entity](../resources/entity.md).|
 |os|String|The platform for the device that the customers used. Supports `$filter` (`eq`).|
 |securityTextCompletions|Int64|Daily MFA SMS completions.|
 |securityTextRequests|Int64|Daily MFA SMS requests.|
@@ -53,16 +55,16 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.insightSummary",
+  "activeUsers": "Int64",
+  "appId": "String",
+  "authenticationCompletions": "Int64",
+  "authenticationRequests": "Int64",
+  "factDate": "String (date)",
   "id": "String (identifier)",
-  "factDate": "Date",
-  "activeUsers": "Integer",
-  "authenticationRequests": "Integer",
-  "authenticationCompletions": "Integer",
-  "securityTextRequests": "Integer",
-  "securityTextCompletions": "Integer",
-  "securityVoiceRequests": "Integer",
-  "securityVoiceCompletions": "Integer",
   "os": "String",
-  "appId": "String"
+  "securityTextCompletions": "Int64",
+  "securityTextRequests": "Int64",
+  "securityVoiceCompletions": "Int64",
+  "securityVoiceRequests": "Int64"
 }
 ```
