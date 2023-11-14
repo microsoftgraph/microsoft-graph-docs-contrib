@@ -122,7 +122,7 @@ For details about how errors are returned, see [Error responses][error-response]
 
 ### Request
 
-Here's an example of a request.
+The followng example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
