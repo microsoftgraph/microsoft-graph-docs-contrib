@@ -20,25 +20,19 @@ Use this API to add a member (user, group, or device) to an administrative unit 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### Permissions to add an existing user, group, or device
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | AdministrativeUnit.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | AdministrativeUnit.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "administrativeunit_post_members" } -->
+[!INCLUDE [permissions-table](../includes/permissions/administrativeunit-post-members-permissions.md)]
 
-To add a user, group, or device to an administrative unit, the calling user must be assigned the *Privileged Role Administrator* [Microsoft Entra role](/azure/active-directory/roles/permissions-reference).
+To add a user, group, or device to an administrative unit, the calling user must be assigned the *Privileged Role Administrator* [Microsoft Entra role](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 ### Permissions to create a new group
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "administrativeunit_post_members_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/administrativeunit-post-members-2-permissions.md)]
 
-To create a new group in an administrative unit, the calling user must be assigned the *Privileged Role Administrator* or *Groups Administrator* [Microsoft Entra role](/azure/active-directory/roles/permissions-reference).
+To create a new group in an administrative unit, the calling user must be assigned the *Privileged Role Administrator* or *Groups Administrator* [Microsoft Entra role](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 ## HTTP request
 

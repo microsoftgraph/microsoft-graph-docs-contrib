@@ -9,9 +9,9 @@ author: DarrelMiller
 
 # Make API calls using the Microsoft Graph SDKs
 
-The Microsoft Graph SDK service libraries provide a client class that you can use as the starting point for creating all API requests. There are two styles of client class: one uses a fluent interface to create the request (for example, `client.Users["user-id"].Manager`) and the other accepts a path string (for example, `api("/users/user-id/manager")`). When you have a request object, you can specify a variety of options such as filtering and sorting, and finally, you select the type of operation you want to perform.
+The Microsoft Graph SDK service libraries provide a client class to use as the starting point for creating all API requests. There are two styles of client class: one uses a fluent interface to create the request (for example, `client.Users["user-id"].Manager`) and the other accepts a path string (for example, `api("/users/user-id/manager")`). When you have a request object, you can specify various options, such as filtering and sorting, and finally, you select the type of operation you want to perform.
 
-There is also the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started), which has no client class at all. Instead, all requests are represented as PowerShell commands. For example, to get a user's manager, the command is `Get-MgUserManager`. For more information on finding commands for API calls, see [Navigating the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/navigating).
+There's also the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started), which has no client class. Instead, all requests are represented as PowerShell commands. For example, to get a user's manager, the command is `Get-MgUserManager`. For more information on finding commands for API calls, see [Navigating the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/navigating).
 
 ## Read information from Microsoft Graph
 
@@ -39,8 +39,6 @@ To read information from Microsoft Graph, you first need to create a request obj
 
 # [Python](#tab/python)
 
-[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
-
 :::code language="python" source="./snippets/python/src/snippets/create_requests.py" id="ReadRequestSnippet":::
 
 # [TypeScript](#tab/typescript)
@@ -51,7 +49,7 @@ To read information from Microsoft Graph, you first need to create a request obj
 
 ## Use $select to control the properties returned
 
-When retrieving an entity, not all properties are automatically retrieved; sometimes they need to be explicitly selected. Also, in some scenarios it isn't necessary to return the default set of properties. Selecting just the required properties can improve the performance of the request. You can customize the request to include the `$select` query parameter with a list of properties.
+When retrieving an entity, not all properties are automatically retrieved; sometimes, they need to be explicitly selected. Also, returning the default set of properties isn't necessary in some scenarios. Selecting just the required properties can improve the performance of the request. You can customize the request to include the `$select` query parameter with a list of properties.
 
 <!-- markdownlint-disable MD024 -->
 # [C#](#tab/csharp)
@@ -76,8 +74,6 @@ When retrieving an entity, not all properties are automatically retrieved; somet
 
 # [Python](#tab/python)
 
-[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
-
 :::code language="python" source="./snippets/python/src/snippets/create_requests.py" id="SelectRequestSnippet":::
 
 # [TypeScript](#tab/typescript)
@@ -88,7 +84,7 @@ When retrieving an entity, not all properties are automatically retrieved; somet
 
 ## Retrieve a list of entities
 
-Retrieving a list of entities is similar to retrieving a single entity except there a number of other options for configuring the request. The `$filter` query parameter can be used to reduce the result set to only those rows that match the provided condition.  The `$orderby` query parameter will request that the server provide the list of entities sorted by the specified properties.
+Retrieving a list of entities is similar to retrieving a single entity, except other options exist for configuring the request. The `$filter` query parameter can reduce the result set to only those rows that match the provided condition.  The `$orderby` query parameter requests that the server provide the list of entities sorted by the specified properties.
 
 [!INCLUDE [aad-advanced-queries-note](../../includes/aad-advanced-queries-note.md)]
 
@@ -114,8 +110,6 @@ Retrieving a list of entities is similar to retrieving a single entity except th
 
 # [Python](#tab/python)
 
-[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
-
 :::code language="python" source="./snippets/python/src/snippets/create_requests.py" id="ListRequestSnippet":::
 
 # [TypeScript](#tab/typescript)
@@ -124,11 +118,11 @@ Retrieving a list of entities is similar to retrieving a single entity except th
 
 ---
 
-The object returned when retrieving a list of entities is likely to be a paged collection. For details about how to get the complete list of entities, see [paging through a collection](../paging.md).
+The object returned when retrieving a list of entities is likely be a paged collection. For details about how to get the complete list of entities, see [paging through a collection](../paging.md).
 
 ## Access an item of a collection
 
-For SDKs that support a fluent style, collections of entities can be accessed using an array index. For template-based SDKs, it is sufficient to embed the item identifier in the path segment following the collection. For PowerShell, identifiers are passed as parameters.
+For SDKs that support a fluent style, collections of entities can be accessed using an array index. For template-based SDKs, it's sufficient to embed the item identifier in the path segment following the collection. For PowerShell, identifiers are passed as parameters.
 
 # [C#](#tab/csharp)
 
@@ -152,8 +146,6 @@ For SDKs that support a fluent style, collections of entities can be accessed us
 
 # [Python](#tab/python)
 
-[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
-
 :::code language="python" source="./snippets/python/src/snippets/create_requests.py" id="ItemByIdRequestSnippet":::
 
 # [TypeScript](#tab/typescript)
@@ -164,7 +156,7 @@ For SDKs that support a fluent style, collections of entities can be accessed us
 
 ## Use $expand to access related entities
 
-You can use the `$expand` filter to request a related entity, or collection of entities, at the same time that you request the main entity.
+You can use the `$expand` filter to request a related entity or collection of entities at the same time that you request the main entity.
 
 # [C#](#tab/csharp)
 
@@ -187,8 +179,6 @@ You can use the `$expand` filter to request a related entity, or collection of e
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-expand.md)]
 
 # [Python](#tab/python)
-
-[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
 :::code language="python" source="./snippets/python/src/snippets/create_requests.py" id="ExpandRequestSnippet":::
 
@@ -224,8 +214,6 @@ Delete requests are constructed in the same way as requests to retrieve an entit
 
 # [Python](#tab/python)
 
-[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
-
 :::code language="python" source="./snippets/python/src/snippets/create_requests.py" id="DeleteRequestSnippet":::
 
 # [TypeScript](#tab/typescript)
@@ -236,7 +224,7 @@ Delete requests are constructed in the same way as requests to retrieve an entit
 
 ## Make a POST request to create a new entity
 
-For SDKs that support a fluent style, new items can be added to collections with an `Add` method. For template-based SDKs, the request object exposes a `post` method. For PowerShell, a `New-*` command is available that accepts parameters that map to the entity to add. The created entity is usually returned from the call.
+For SDKs that support a fluent style, new items can be added to collections with an `Add` method. For template-based SDKs, the request object exposes a `post` method. For PowerShell, a `New-*` command accepts parameters that map to the entity to add. The created entity is returned from the call.
 
 # [C#](#tab/csharp)
 
@@ -259,20 +247,17 @@ For SDKs that support a fluent style, new items can be added to collections with
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-create.md)]
 
 # [Python](#tab/python)
-
-
-[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
-
 :::code language="python" source="./snippets/python/src/snippets/create_requests.py" id="CreateRequestSnippet":::
 
 # [TypeScript](#tab/typescript)
 
 :::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="CreateRequestSnippet":::
 
+---
 
 ## Updating an existing entity with PATCH
 
-Most updates in Microsoft Graph are performed using a `PATCH` method and therefore it is only necessary to include the properties that you want to change in the object you pass.
+Most updates in Microsoft Graph are performed using a `PATCH` method; therefore, it's only necessary to include the properties you want to change in the object you pass.
 
 # [C#](#tab/csharp)
 
@@ -296,18 +281,17 @@ Most updates in Microsoft Graph are performed using a `PATCH` method and therefo
 
 # [Python](#tab/python)
 
-
-[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
-
 :::code language="python" source="./snippets/python/src/snippets/create_requests.py" id="UpdateRequestSnippet":::
 
 # [TypeScript](#tab/typescript)
 
 :::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="UpdateRequestSnippet":::
 
+---
+
 ## Use HTTP headers to control request behavior
 
-You can use a `Header()` function to attach custom headers to a request. For PowerShell, adding headers is only possible with the `Invoke-GraphRequest` method. A number of Microsoft Graph scenarios use custom headers to adjust the behavior of the request.
+You can attach custom headers to a request using a `Header()` function. For PowerShell, adding headers is only possible with the `Invoke-GraphRequest` method. Some Microsoft Graph scenarios use custom headers to adjust the behavior of the request.
 
 # [C#](#tab/csharp)
 
@@ -331,18 +315,17 @@ You can use a `Header()` function to attach custom headers to a request. For Pow
 
 # [Python](#tab/python)
 
-
-[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
-
 :::code language="python" source="./snippets/python/src/snippets/create_requests.py" id="HeadersRequestSnippet":::
 
 # [TypeScript](#tab/typescript)
 
 :::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="HeadersRequestSnippet":::
 
+---
+
 ## Provide custom query parameters
 
-For SDKs that support a fluent style, you can provide custom query parameter values by using a list of `QueryOptions` objects. For template-based SDKs, the parameters are URL-encoded and added to the request URI. For PowerShell and Go, defined query parameters for a given API are exposed as parameters to the corresponding command.
+For SDKs that support a fluent style, you can provide custom query parameter values using a list of `QueryOptions` objects. For template-based SDKs, the parameters are URL-encoded and added to the request URI. For PowerShell and Go, defined query parameters for a given API are exposed as parameters to the corresponding command.
 
 # [C#](#tab/csharp)
 
@@ -365,8 +348,6 @@ For SDKs that support a fluent style, you can provide custom query parameter val
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-queryparams.md)]
 
 # [Python](#tab/python)
-
-[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
 :::code language="python" source="./snippets/python/src/snippets/create_requests.py" id="QueryParametersRequestSnippet":::
 

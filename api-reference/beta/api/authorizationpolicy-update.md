@@ -3,6 +3,7 @@ title: "Update authorizationpolicy"
 description: "Update the properties of authorizationPolicy object."
 ms.localizationpriority: medium
 author: "DougKirschner"
+ms.reviewer: msodsrbac
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -19,15 +20,12 @@ Update the properties of a [authorizationPolicy](../resources/authorizationpolic
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Policy.ReadWrite.Authorization|
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Policy.ReadWrite.Authorization|
+<!-- { "blockType": "permissions", "name": "authorizationpolicy_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/authorizationpolicy-update-permissions.md)]
 
-When calling on behalf of a user, the user needs to have the *Privileged Role Administrator* [Microsoft Entra role](/azure/active-directory/roles/permissions-reference).
+When calling on behalf of a user, the user needs to have the *Privileged Role Administrator* [Microsoft Entra role](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 ## HTTP request
 
@@ -53,7 +51,7 @@ In the request body, supply the values for relevant fields that should be update
 |allowEmailVerifiedUsersToJoinOrganization|Boolean| Indicates whether a user can join the tenant by email validation. |
 |allowUserConsentForRiskyApps|Boolean| Indicates whether [user consent for risky apps](/azure/active-directory/manage-apps/configure-risk-based-step-up-consent) is allowed. Default value is `false`. We recommend that you keep the value set to `false`.|
 |allowedToSignUpEmailBasedSubscriptions|Boolean| Indicates whether users can sign up for email-based subscriptions. |
-|allowedToUseSSPR|Boolean| Indicates whether users can use the Self-Serve Password Reset feature on the tenant. |
+|allowedToUseSSPR|Boolean| Indicates whether users can use the Self-Service Password Reset feature on the tenant. |
 |blockMsolPowerShell|Boolean| To disable the use of MSOL PowerShell, set this property to `true`. This also disables user-based access to the legacy service endpoint used by MSOL PowerShell. This doesn't affect Microsoft Entra Connect or Microsoft Graph. |
 |defaultUserRolePermissions|[defaultUserRolePermissions](../resources/defaultUserRolePermissions.md)| Specifies certain customizable permissions for default user role. |
 |description|String| Description of this policy. |

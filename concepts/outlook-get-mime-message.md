@@ -15,7 +15,7 @@ Even though Outlook _does not save_ messages in MIME format, there are two ways 
 - You can append a `$value` segment to a get-message operation on that message.
 - If the message is attached to an Outlook item or group post, you can append a `$value` segment to a get-attachment operation on that item or group post.
 
-In either case, your app must have the appropriate [permissions to access](permissions-reference.md#mail-permissions) the Outlook item or group post in order to apply the get-message or get-attachment operation.
+In either case, your app must have the appropriate [permissions to access](permissions-reference.md) the Outlook item or group post in order to apply the get-message or get-attachment operation.
 
 You can then save the message body content in a .EML file and attach the file to records in business systems, such as those for CRM, ERP, and bug tracking.
 
