@@ -41,7 +41,7 @@ GET /education/users/{user-id}/assignments
 
 This method supports the `$top`, `$filter`, `$orderby`, and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-The available `$expand` options for this method are: `categories`, `gradingCategory`, `resources`, `rubric`, `submissions`, and `*`, which includes all the previous options.
+The following `$expand` options are available for this method: `categories`, `gradingCategory`, `resources`, `rubric`, `submissions`, and `*`, which includes all the previous options.
 
 
 ## Request headers
@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Get the assignments of the logged-in user
+### Example 1: Get the assignments of the signed-in user
 
 #### Request
 The following example shows a request.
