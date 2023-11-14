@@ -18,14 +18,14 @@ Represents tenant-wide settings to configure the behavior of printers using Appl
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|incompatiblePrinters|incompatiblePrinterSettings|This enum describes whether printers that are not compatible with Apple AirPrint are hidden from being discovered by macOS users using Universal Print.|
+|incompatiblePrinters|incompatiblePrinterSettings|This enum describes whether Universal Print hides printers that aren't compatible with Apple AirPrint during printer discovery on macOS.|
 
 ### incompatiblePrinterSettings values 
 
 |Member|Value|Description|
 |:---|:---|:---|
-|show|0|Show printers that are not compatible with AirPrint.|
-|hide|1|Hide printers that are not compatible with AirPrint.|
+|show|0|Show printers that aren't compatible with AirPrint.|
+|hide|1|Hide printers that aren't compatible with AirPrint.|
 |unknownFutureValue|2|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
