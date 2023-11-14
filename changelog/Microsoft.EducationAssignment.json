@@ -69,8 +69,8 @@
       ],
           "Id": "cf879894-1649-4065-8cf4-1f105766f478",
           "Cloud": "Prod",
-          "Version": "beta",
-          "CreatedDateTime": "2023-05-15T16:40:45.6092486Z",
+          "Version": "v1.0",
+          "CreatedDateTime": "2023-11-30T16:40:45.6092486Z",
           "WorkloadArea": "Education",
           "SubArea": ""
     },

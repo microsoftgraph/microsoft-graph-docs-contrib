@@ -1,7 +1,7 @@
 ---
 title: "Add gradingCategory"
 description: "Add a gradingCategory to an assignment."
-author: "AshwaniBansal1"
+author: "v-rmanda"
 ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
@@ -42,7 +42,6 @@ If successful, this method returns a `204` successful response code with no cont
 ### Request
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070","452184ea-a358-4a07-92b4-dce44601a612"],

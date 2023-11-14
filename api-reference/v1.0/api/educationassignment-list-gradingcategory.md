@@ -1,7 +1,7 @@
 ---
 title: "List educationGradingCategories"
 description: "Get a list of the educationGradingCategory objects and their properties."
-author: "cristobal-buenrostro"
+author: "v-rmanda"
 ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType

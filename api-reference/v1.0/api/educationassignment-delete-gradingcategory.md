@@ -1,7 +1,7 @@
 ---
 title: "Remove gradingCategory"
 description: "Remove gradingCategory from the assignment."
-author: "RPrashanthKumarManda"
+author: "v-rmanda"
 ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
@@ -42,10 +42,9 @@ If successful, this method returns a `204` successful response code.
 ### Request
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070", "0bcb37af-3676-47ef-ae93-8de22ce5ff1d"],
+  "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070", "c2eeaaf2-766c-4b90-9a17-61625bc5a47d"],
   "name": "delete_gradingCategories"
 }-->
 ```http

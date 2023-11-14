@@ -172,9 +172,9 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodv1.0eduasg_grading_categories_v1/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/$entity",
     "submissionAnimationDisabled": true,
-    "gradingCategories@odata.context": "https://canary.graph.microsoft.com/testprodv1.0eduasg_grading_categories_v1/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingCategories",
+    "gradingCategories@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingCategories",
     "gradingCategories": [
         {
             "id": "36bf5273-d3e3-4f83-a534-8c816c33cc3e",
@@ -229,7 +229,7 @@ Content-type: application/json
     ]
 }
 ```
- **Note:** The purpose of the comments in the Request Body is to clarify each operation.
+> **Note:** The purpose of the comments in the Request Body is to clarify each operation.
 
 #### Response
 The following is an example of the response.
@@ -244,9 +244,9 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodv1.0eduasg_grading_categories_v1/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/$entity",
     "submissionAnimationDisabled": true,
-    "gradingCategories@odata.context": "https://canary.graph.microsoft.com/testprodv1.0eduasg_grading_categories_v1/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingCategories",
+    "gradingCategories@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingCategories",
     "gradingCategories": [
         {
             "id": "a5ca6dda-f220-43ca-81e4-02396b99f398",
