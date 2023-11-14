@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get a list of the authentication methods registered for a user as defined in the [userRegistrationDetails](../resources/userregistrationdetails.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -40,7 +40,17 @@ GET /reports/authenticationMethods/userRegistrationDetails
 
 ## Optional query parameters
 
-This method supports only the `$filter` and `$orderby` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` [OData query parameter](/graph/query-parameters) to help customize the response. You can apply `$filter` on one or more of the following properties of the [userRegistrationDetails](../resources/userregistrationdetails.md) resource.
+
+| Property          | Description                                                                                                                     | Example                                                                   |
+|:------------------|:--------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------|
+| isMfaCapable      | Filter for users who are ready to perform password reset or multi-factor authentication (MFA). Supported filter operators: `eq`.| `/reports/authenticationMethods/userRegistrationDetails?$filter=isMfaCapable eq true`           |
+| isMfaRegistered   | Filter for users who are registered for MFA. Supported filter operators are: `eq`.                                              | `/reports/authenticationMethods/userRegistrationDetails?$filter=isMfaRegistered eq true`        |
+| isSsprEnabled     | Filter for users who have been enabled for SSPR. Supported filter operators are: `eq`.                                          | `/reports/authenticationMethods/userRegistrationDetails?$filter=isSsprEnabled eq true`.         |
+| isSsprRegistered  | Filter for users who have registered for self-service password reset (SSPR). Supported filter operators are: `eq`.              | `/reports/authenticationMethods/userRegistrationDetails?$filter=isSsprRegistered eq true`       |
+| methodsRegistered | Filter by the authentication methods used during registration. Supported filter operators are: `eq`.                            | `/reports/authenticationMethods/userRegistrationDetails?$filter=methodsRegistered/any(x:x eq 'email')`   |
+| userDisplayName   | Filter by user name. Supported filter operators are: `eq` and `startswith()`. Supports case insensitive.                        | `/reports/authenticationMethods/userRegistrationDetails?$filter=userDisplayName eq 'Contoso'`   |
+| userPrincipalName | Filter by user principal name. Supported filter operators are: `eq` and `startswith()`. Supports case insensitive.              | `/reports/authenticationMethods/userRegistrationDetails?$filter=userPrincipalName eq 'Contoso'` |
 
 ## Request headers
 
@@ -50,7 +60,7 @@ This method supports only the `$filter` and `$orderby` OData query parameters to
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -60,7 +70,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -108,7 +118,7 @@ GET https://graph.microsoft.com/beta/reports/authenticationMethods/userRegistrat
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

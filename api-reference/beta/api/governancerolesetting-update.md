@@ -25,7 +25,7 @@ The following table shows the least privileged permission or permissions require
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-|:-|:-|:-|
-| Azure AD | PrivilegedAccess.ReadWrite.AzureAD | Not supported. | Not supported. |
+| Microsoft Entra ID | PrivilegedAccess.ReadWrite.AzureAD | Not supported. | Not supported. |
 | Azure resources | PrivilegedAccess.ReadWrite.AzureResources | Not supported. | Not supported. |
 | [group](../resources/group.md) | PrivilegedAccess.ReadWrite.AzureADGroup | Not supported. | Not supported. |
 
@@ -54,7 +54,7 @@ In the request body, supply the values for [governanceRuleSettings](../resources
 |userMemberSettings|[governanceRuleSetting](../resources/governancerulesetting.md) collection|The rule settings that are evaluated when a user tries to activate his role assignment.|
 
 ## Response
-If successful, this method returns a `204 NoContent` response code. It does not return anything in the response body. 
+If successful, this method returns a `204 NoContent` response code. It doesn't return anything in the response body.
 
 ### Error codes
 This API returns the standard HTTP error codes. In addition, it returns the following custom error codes.
@@ -142,5 +142,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-

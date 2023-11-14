@@ -1,6 +1,6 @@
 ---
 title: "Delete teamsApp"
-description: "Delete a Teams app from an organization's app catalog (the tenant app catalog). "
+description: "Delete an app from an organization's app catalog (the tenant app catalog)."
 ms.localizationpriority: medium
 author: "nkramer"
 ms.prod: "microsoft-teams"
@@ -13,13 +13,11 @@ Namespace: microsoft.graph
 
 <!-- markdownlint-disable MD001 -->
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
-### Delete an app from your organization's app catalog
-
 Delete an [app](../resources/teamsapp.md) from an organization's app catalog (the tenant app catalog). To delete an app, the **distributionMethod** property for the app must be set to `organization`.
 
 You can also use this API to remove a submitted app from the review process.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -61,18 +59,19 @@ DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 >**Note:** Use the ID returned from the [List published apps](./appcatalogs-list-teamsapps.md) call to reference the app you'd like to delete. Do not use the ID from the manifest of the zip app package.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 
 ### Request
 
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -121,6 +120,8 @@ DELETE https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93
 <!-- markdownlint-disable MD024 -->
 
 ### Response
+
+The following example shows the response.
 
 <!-- {
   "blockType": "response"

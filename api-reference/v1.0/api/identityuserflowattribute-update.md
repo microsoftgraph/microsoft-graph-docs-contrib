@@ -17,13 +17,10 @@ Update the properties of a custom [identityUserFlowAttribute](../resources/ident
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|IdentityUserFlow.ReadWrite.All|
-|Delegated (personal Microsoft account)| Not supported.|
-|Application| IdentityUserFlow.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "identityuserflowattribute_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/identityuserflowattribute-update-permissions.md)]
 
 [!INCLUDE [rbac-user-flows-attributes-apis](../includes/rbac-for-apis/rbac-user-flows-attributes-apis.md)]
 
@@ -50,17 +47,17 @@ In the request body, provide a JSON object with one or more properties that need
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|description|String|The description of the user flow attribute. It is shown to the user at the time of sign up.|
+|description|String|The description of the user flow attribute. It is shown to the user at the time of sign-up.|
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns a `204 No Content` response code. If unsuccessful, a `4xx` error is returned with specific details.
 
 ## Examples
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -116,7 +113,7 @@ Content-type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
