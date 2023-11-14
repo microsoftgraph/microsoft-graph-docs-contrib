@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The exportJob entity represents the properties of an exportJob in Viva Goals.
+Represents an entity that holds the properties of an exportJob for Viva Goals.
 
 
 Inherits from [longRunningOperation](../resources/longrunningoperation.md).
