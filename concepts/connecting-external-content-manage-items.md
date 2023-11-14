@@ -53,7 +53,7 @@ Content is one of the key fields influencing [relevance](connecting-external-con
 
 *An example of a content component.*
 
-Content cannot be directly added to a search result template, but you can use a generated result snippet, a dynamically generated preview of the relevant sections within the content.
+Content can't be directly added into a search result template, but you can use a generated result snippet, which is a dynamically generated preview of the relevant sections within content.
 
 ![A screenshot of a search result template.](./images/connectors-images/connecting-external-content-manage-items-3.svg)
 
@@ -132,6 +132,20 @@ To remove items from the index, you [delete the externalItem](/graph/api/externa
 ```http
 DELETE /external/connections/contosohelpdesk/items/SR00145
 ```
+
+## Keep your data in sync
+
+Consider the following information when you choose how to keep your data in sync:
+
+Crawl mechanism:
+* Incremental crawl: Detects and pushes additions in source data; less performance-intensive than a full crawl.
+* Full crawl: Updates the entire item from the source data (re-crawl), capturing all additions and deletions; ensures better accuracy but is more time-consuming and performance-intensive than an incremental crawl.
+
+Sync interval:
+* Event-based: Pushes item updates on an event basis. We recommend that you use this sync interval for dynamic or sensitive data such as item status.
+* Scheduled: Pushes item updates at regular intervals (every N minutes). We recommend that you use this sync interval for content-rich or non-sensitive data that is less frequently updated such as wikis or webpages.
+
+Ultimately, the choice of data refresh strategy depends on your data type and computing capabilities.
 
 ## Next steps
 
