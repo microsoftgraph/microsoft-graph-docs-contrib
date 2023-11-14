@@ -96,7 +96,7 @@ Here's a JSON representation of the resource.
   "@odata.type": "microsoft.graph.cloudPcOnPremisesConnection",
   "baseType": "microsoft.graph.entity",
   "openType": false,
-  "optionalProperties": ["healthCheckStatusDetails"]
+  "optionalProperties": ["healthCheckStatusDetail"]
 }
 -->
 
@@ -109,8 +109,8 @@ Here's a JSON representation of the resource.
   "alternateResourceUrl": "String",
   "displayName": "String",
   "healthCheckStatus": "String",
-  "healthCheckStatusDetails": {
-    "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionStatusDetails",
+  "healthCheckStatusDetail": {
+    "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionStatusDetail",
     "endDateTime": "String (timestamp)",
     "healthChecks": [
       { 
@@ -135,7 +135,7 @@ Here's a JSON representation of the resource.
   "subnetId": "String",
   "subscriptionId": "String",
   "subscriptionName": "String",
-  "type": "String",
+  "connectionType": "String",
   "virtualNetworkId": "String"
 }
 ```
