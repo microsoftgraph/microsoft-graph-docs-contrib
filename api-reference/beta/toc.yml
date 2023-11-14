@@ -17555,13 +17555,13 @@ items:
                         items:
                           - name: List
                             href: api/attendancerecord-list.md
-                  - name: Call recording (preview)
+                  - name: Call recording
                     items:
                       - name: Call recording
                         href: resources/callrecording.md
-                      - name: List recordings
+                      - name: List
                         href: api/onlinemeeting-list-recordings.md
-                      - name: Get recording
+                      - name: Get
                         href: api/callrecording-get.md
                       - name: Get delta by organizer
                         href: api/callrecording-delta.md

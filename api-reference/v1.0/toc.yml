@@ -8961,6 +8961,14 @@ items:
                         items:
                           - name: List
                             href: api/attendancerecord-list.md
+                  - name: Call recording
+                    items:
+                      - name: Call recording
+                        href: resources/callrecording.md
+                      - name: List
+                        href: api/onlinemeeting-list-recordings.md
+                      - name: Get
+                        href: api/callrecording-get.md
                   - name: Call transcript
                     items:
                       - name: Call transcript
