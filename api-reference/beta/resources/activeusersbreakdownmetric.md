@@ -1,6 +1,6 @@
 ---
 title: "activeUsersBreakdown resource type"
-description: "Breakdown insights for users on apps registered in your Microsoft Entra External ID for customers tenant who were active for a specific period."
+description: "Represents breakdown insights for users on apps registered in your Microsoft Entra External ID for customers tenant who were active for a specific period."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Breakdown insights for users on apps registered in your Microsoft Entra External ID for customers tenant who were active for a specific period. This value is calculated as count of all users who made at least one authentication request in that period.
+Represents breakdown insights for users on apps registered in your Microsoft Entra External ID for customers tenant who were active for a specific period. This value is calculated as count of all users who made at least one authentication request in that period.
 A user may be counted more that once if they use multiple device platforms or application.
 
 ## Methods
@@ -46,11 +46,11 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.activeUsersBreakdownMetric",
-  "id": "String (identifier)",
-  "factDate": "Date",
-  "count": "Integer",
   "appId": "String",
   "appName": "String",
+  "count": "Int64",
+  "factDate": "String",
+  "id": "String (identifier)",
   "os": "String"
 }
 ```
