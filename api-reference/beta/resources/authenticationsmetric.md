@@ -1,19 +1,21 @@
 ---
-title: "authentications resource type"
-description: "Insights on authentications for registered apps within your Microsoft Entra ID customer tenant during a specific timeframe."
+title: "authenticationsMetric resource type"
+description: "Represents insights on authentications for registered apps within your Microsoft Entra ID customer tenant during a specific timeframe."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
-# authentications resource type
+# authenticationsMetric resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Insights on authentications for registered apps within your Microsoft Entra ID customer tenant during a specific timeframe.
+Represents insights on authentications for registered apps within your Microsoft Entra ID customer tenant during a specific timeframe.
+
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
@@ -24,13 +26,13 @@ Insights on authentications for registered apps within your Microsoft Entra ID c
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| id | String | Identifier for the user insight.  |
-| factDate | Date | The date of the user insight. |
+| appid | String | The appID. Supports `$filter` (`eq`). |
 | attemptsCount | Int64 | Number of authentication requests made. Supports `$filter` (`eq`). |
-| successCount | Int64 | Number of successful authentication requests. Supports `$filter` (`eq`). |
-| os | String | The platform for the device that the customers used. Supports `$filter` (`eq`). |
 | country | String | The location where the customers authenticated from. Supports `$filter` (`eq`). |
-| appId | String | The appID. Supports `$filter` (`eq`). |
+| factDate | Date | The date of the user insight. |
+| id | String | Identifier for the user insight. Inherited from [entity](../resources/entity.md).|
+| os | String | The platform for the device that the customers used. Supports `$filter` (`eq`). |
+| successCount | Int64 | Number of successful authentication requests. Supports `$filter` (`eq`). |
 
 ## Relationships
 None.
@@ -47,13 +49,13 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.authenticationsMetric",
-  "id": "String (identifier)",
-  "factDate": "Date",
-  "attemptsCount": "Integer",
-  "successCount": "Integer",
-  "os": "String",
+  "appid": "String",
+  "attemptsCount": "Int64",
   "country": "String",
-  "appid": "String"
+  "factDate": "String (date)",
+  "id": "String (identifier)",
+  "os": "String",
+  "successCount": "Int64"
 }
 ```
 
