@@ -35,8 +35,8 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | createdBy | [communicationsIdentitySet](communicationsidentityset.md) | Identity information of who created the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
 | description | String | Description of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
 | displayName | String | Display name of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
-| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | End time of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
-| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Start time of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
+| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | End time of the webinar. The **timeZone** property _can_ be set to any of the [time zones currently supported by Windows](/windows-hardware/manufacture/desktop/default-time-zones). Inherited from [virtualEvent](../resources/virtualevent.md). |
+| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Start time of the webinar. The **timeZone** property _can_ be set to any of the [time zones currently supported by Windows](/windows-hardware/manufacture/desktop/default-time-zones). Inherited from [virtualEvent](../resources/virtualevent.md). |
 | id | String | Unique identifier of the webinar. Inherited from [entity](../resources/entity.md).|
 | status | [virtualEventStatus](#virtualeventstatus-values) | Status of the webinar. |
 
