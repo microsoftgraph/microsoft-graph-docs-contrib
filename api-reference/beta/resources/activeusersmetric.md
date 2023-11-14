@@ -1,5 +1,5 @@
 ---
-title: "activeUsers resource type"
+title: "activeUsersMetric resource type"
 description: "Represents insights for users on apps registered in your Microsoft Entra External ID for customers tenant who were active for a specific period."
 author: "srutto"
 ms.localizationpriority: medium
