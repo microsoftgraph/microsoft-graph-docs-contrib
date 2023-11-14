@@ -1,6 +1,6 @@
 ---
 title: "List subscriptions"
-description: "See the scenarios below for details."
+description: "Retrieve a list of webhook subscriptions."
 ms.localizationpriority: medium
 author: "keylimesoda"
 doc_type: apiPageType
