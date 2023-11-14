@@ -36,7 +36,7 @@ Inherits from [finding](../resources/finding.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|awsAccessKey|[graph.awsAccessKey](../resources/awsaccesskey.md)|Represents the Aws access key in an authorization system. Note, because of a limit in our current data model, we do not have all of the standard identity information for the access key's owner.|
+|awsAccessKey|[awsAccessKey](../resources/awsaccesskey.md)|Represents the Aws access key in an authorization system. Note, because of a limit in our current data model, we do not have all of the standard identity information for the access key's owner.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

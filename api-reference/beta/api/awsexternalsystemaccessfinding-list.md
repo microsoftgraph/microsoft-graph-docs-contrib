@@ -93,9 +93,9 @@ Content-Type: application/json
     },
     "systemWithAccess": {
             "id": "377596131774",
-            "displayName": "cloudknox-staging",
-            "authorizationSystemType": "aws"
-          }
+            "displayName": "cloudnox-staging",
+            "authorizationSystemType": "aws",
+          },
     "createdDateTime": "2020-10-11T20:11:456711Z",
     }
   ],

@@ -38,7 +38,7 @@ Inherits from [finding](../resources/finding.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|awsAccessKey|[graph.awsAccessKey](../resources/awsaccesskey.md)|Represents the AWS Access Key in an authorization system. All the standard identity information for the access key's owner is currently unavailable.|
+|awsAccessKey|[awsAccessKey](../resources/awsaccesskey.md)|Represents the AWS Access Key in an authorization system. All the standard identity information for the access key's owner is currently unavailable.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
