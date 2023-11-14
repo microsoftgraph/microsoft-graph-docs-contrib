@@ -23,8 +23,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-11-06T20:26:18.8331804Z",
-      "WorkloadArea": "Reports",
-      "SubArea": "Identity and access reports"
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [
@@ -73,8 +73,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-11-06T22:08:03.357469Z",
-      "WorkloadArea": "Reports",
-      "SubArea": "Identity and access reports"
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [
