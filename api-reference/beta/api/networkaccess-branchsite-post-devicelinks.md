@@ -57,7 +57,7 @@ You can specify the following properties when creating a **deviceLink**.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md) object in the response body.
 
 ## Examples
 
