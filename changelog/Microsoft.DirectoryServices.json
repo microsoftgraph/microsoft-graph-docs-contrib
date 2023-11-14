@@ -14855,6 +14855,24 @@
     {
       "ChangeList": [
         {
+          "Id": "3c89fe6e-3b38-4168-952d-d4291e651e5a",
+          "ApiChange": "Property",
+          "ChangedApiName": "isMultiValued",
+          "ChangeType": "Addition",
+          "Description": "Added the `isMultiValued` property to the [extensionProperty](https://learn.microsoft.com/en-us/graph/api/resources/extensionProperty?view=graph-rest-1.0) resource.",
+          "Target": "extensionProperty"
+        }
+      ],
+      "Id": "3c89fe6e-3b38-4168-952d-d4291e651e5a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-11-13T13:36:46.4533529Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "0d0ccba4-794b-46b6-be6b-5761eef57e0c",
           "ApiChange": "Resource",
           "ChangedApiName": "onPremisesSipInfo",
