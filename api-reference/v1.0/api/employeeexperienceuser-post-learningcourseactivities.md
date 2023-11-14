@@ -286,5 +286,5 @@ Content-Type: application/json
 |Request throttled|429|Too Many Requests|{"code": "TooManyRequests","message": "Retry after {noOfMinutes} minutes"}|
 |Service Unavailable|503|Service Unavailable|{"code": "ServiceUnavailable","message": "Retry after {noOfMinutes} minutes"}|
 |Multiple Field validations fail|400|BadRequest|BadRequest|{"code": "badRequest","message": "Input field {fieldName}shouldn't be empty"}, {"code": "badRequest","message": "Input Field {fieldName} is required"}, {"code": "badRequest","message": "Input field {fieldName}length exceeded than {expectedLength}"}|
-|Forbidden|403|The provider isn't valid to create course activity for the given learning content|When the registrationId/learningProviderId doesn't match with the provider with which the learning content is created|
+|Forbidden|403|The provider isn't valid to create course activity for the given learning content|When the registrationId/learningProviderId doesn't match with the provider with which the learning content is created.|
 |Forbidden|403|User License isn't valid to operate |When the user for which Assignment is being created doesn't have a premium license|
