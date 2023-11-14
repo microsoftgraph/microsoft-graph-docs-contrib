@@ -10,7 +10,11 @@
           "Description": "Added the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource and its methods.",
           "Target": "fileStorageContainer"
         },
-        {eContainerCustomPropertyDictionary](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainercustompropertydictionary?view=graph-rest-beta) resource.",
+        { "Id": "8988cba7-3b8c-4ec3-8f45-d7a0af670f53",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fileStorageContainerCustomPropertyDictionary",
+          "ChangeType": "Addition",
+          "Description": "Added the [fileStorageContainerCustomPropertyDictionary](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainercustompropertydictionary?view=graph-rest-beta) resource.",
           "Target": "fileStorageContainerCustomPropertyDictionary"
         },
         {
@@ -24,15 +28,6 @@
         {
           "Id": "8988cba7-3b8c-4ec3-8f45-d7a0af670f53",
           "ApiChange": "Resource",
-          "ChangedApiName": "fileStorageContainerViewpoint",
-          "ChangeType": "Addition",
-          "Description": "Added the [fileStorageContainerViewpoint](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainerviewpoint?view=graph-rest-beta) resource.",
-          "Target": "fileStorageContainer"
-        },
-        {
-          "Id": "8988cba7-3b8c-4ec3-8f45-d7a0af670f53",
-          "ApiChange": "Resource",
-
           "ChangedApiName": "fileStorageContainerViewpoint",
           "ChangeType": "Addition",
           "Description": "Added the [fileStorageContainerViewpoint](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainerviewpoint?view=graph-rest-beta) resource.",
