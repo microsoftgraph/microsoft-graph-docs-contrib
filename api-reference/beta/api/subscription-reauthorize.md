@@ -99,7 +99,7 @@ If successful, this action returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-Here's an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -145,7 +145,7 @@ POST https://graph.microsoft.com/beta/subscriptions/{subscriptionsId}/reauthoriz
 ---
 
 ### Response
-Here's an example shows the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
