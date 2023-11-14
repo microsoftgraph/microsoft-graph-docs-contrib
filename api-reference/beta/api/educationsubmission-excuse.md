@@ -7,7 +7,7 @@ ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# educationSubmission: Excuse
+# educationSubmission: excuse
 
 Namespace: microsoft.graph
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Excuse a submission. Excused submissions aren't included in average grade calculations. Grading rubrics and feedback are deleted. Only teachers can perform this action. 
 
-If the `Prefer: include-unknown-enum-members` request header is provided, the excused submission retains the **excused** status. Otherwise, the submission status changes to **returned**. For more information about how to use this header, see the  [Examples](#examples) section.
+If the `Prefer: include-unknown-enum-members` request header is provided, the excused submission retains the **excused** status. Otherwise, the submission status changes to **returned**. For more information about how to use this header, see the [Examples](#examples) section.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -49,7 +49,7 @@ If successful, this method returns a `200 OK` response code and an [educationSub
 ### Example 1: Request with optional Prefer header
 
 #### Request
-HThe following example shows a request that uses the Prefer: include-unknown-enum-members header to retain the excused status.
+The following example shows a request that uses the `Prefer: include-unknown-enum-members` header to retain the excused status.
 
 <!-- {
   "blockType": "request",
@@ -62,7 +62,7 @@ Prefer: include-unknown-enum-members
 ```
 
 #### Response
-The following example shows the response when the Prefer: include-unknown-enum-members header is provided in the request. 
+The following example shows the response when the `Prefer: include-unknown-enum-members` header is provided in the request. 
 
 <!-- {
   "blockType": "response",
@@ -133,7 +133,6 @@ HTTP/1.1 200 Ok
 ```
 
 ### Example 2: Request without the Prefer request header
-The following example shows a request.
 
 #### Request
 The following example shows a request.
@@ -148,7 +147,7 @@ POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-
 ```
 
 #### Response
-The following example shows the response when the Prefer: include-unknown-enum-members header is not included in the request, and the submission hasn't been excused before.
+The following example shows the response when the `Prefer: include-unknown-enum-members` header is not included in the request, and the submission hasn't been excused before.
 
 <!-- {
   "blockType": "response",
