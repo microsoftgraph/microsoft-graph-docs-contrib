@@ -7,7 +7,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "removeAllAccessForUser",
           "ChangeType": "Addition",
-          "Description": "Added the [removeAllAccessForUser](https://learn.microsoft.com/en-us/graph/api/chat?view=graph-rest-beta) method to the [chat](https://learn.microsoft.com/en-us/graph/api/chat?view=graph-rest-beta) resource.",
+          "Description": "Added the [removeAllAccessForUser](https://learn.microsoft.com/en-us/graph/api/chat-removeallaccessforuser?view=graph-rest-beta) method to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
           "Target": "chat"
         }
       ],
@@ -16,7 +16,7 @@
       "Version": "beta",
       "CreatedDateTime": "2023-11-08T22:24:27.0548997Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": ""
+      "SubArea": "Messaging"
     },
     {
       "ChangeList": [
