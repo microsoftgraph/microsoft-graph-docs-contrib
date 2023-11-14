@@ -24,7 +24,7 @@ Represents tenant-wide printer discovery settings for the Universal Print servic
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON shows a representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.printerDiscoverySettings"

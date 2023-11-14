@@ -32,7 +32,7 @@ Represents tenant-wide settings to configure the behavior of printers using Appl
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON shows a representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.airPrintSettings"
