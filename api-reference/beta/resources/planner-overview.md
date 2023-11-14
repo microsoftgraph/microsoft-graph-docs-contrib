@@ -43,7 +43,7 @@ When you [create a new plan](../api/planner-post-plans.md), set the **container*
 ```json
 {
     "container": {
-        "id": "<a valid user id>",
+        "id": "00000000-0000-0000-0000-000000000000",
         "type", "user"
     }
 }
