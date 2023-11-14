@@ -1,5 +1,5 @@
 ---
-title: "userRequest resource type"
+title: "userRequestsMetric resource type"
 description: "Represents insights for all user requests on apps registered in your Microsoft Entra External ID for customers tenant for a specific period."
 author: "srutto"
 ms.localizationpriority: medium
