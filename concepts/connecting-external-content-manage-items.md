@@ -10,7 +10,7 @@ ms.prod: search
 
 # Create, update, and delete items added by your application via Microsoft Graph connectors
 
-Microsoft Graph connectors offer an intuitive way to bring external data into Microsoft Graph. Items added by your application to the Microsoft Search service are represented by the [externalItem](/graph/api/resources/externalconnectors-externalitem) resource in Microsoft Graph.
+Microsoft Graph connectors offer an intuitive way to bring external data into Microsoft Graph. Items your application adds to the Microsoft Search service are represented by the [externalItem](/graph/api/resources/externalconnectors-externalitem) resource in Microsoft Graph.
 
 After you [create a connection](/graph/api/externalconnectors-external-post-connections), you can add your content. Each item from your data source must be represented as an **externalItem** in Microsoft Graph with a unique item ID. This ID is used to create, update, or delete the item from Microsoft Graph. You can use the primary key from your data source as the item ID or derive it from one or more fields. 
 
@@ -20,7 +20,7 @@ An **externalItem** has three key components: access control list, properties, a
 
 ### Access control list
 
-The access control list (ACL) is used to specify whether the given roles are granted or denied access to view items in Microsoft experiences. The ACL is an array of access control entries, each representing a Microsoft Entra user or group. A third access control entry type `Everyone` represents all the users in the tenant.
+The access control list (ACL) is used to specify whether the given roles are granted or denied access to view items in Microsoft experiences. The ACL is an array of access control entries representing a Microsoft Entra user or group. A third access control entry type `Everyone` represents all the users in the tenant.
 
 ![An example access control list.](./images/connectors-images/connecting-external-content-manage-items-acl.png)
 
@@ -30,7 +30,7 @@ The **accessType** value `deny` takes precedence over `grant`. For example, in t
 
 If your data source has non-Azure AD groups (such as teams within your helpdesk system) that are used to set permissions for the item, you can create external groups in Microsoft Graph by using the group sync APIs to replicate the `allow` or `deny` permissions. Avoid expanding the membership of your external groups directly into the ACLs of individual items because each group membership can lead to a high volume of item updates.
 
-External groups can consist of another external group, Microsoft Entra users, and Microsoft Entra groups. If you have non-Azure AD users, you must translate them to Microsoft Entra users in your ACL.
+External groups include another group, Microsoft Entra users, and Microsoft Entra groups. If you have non-Azure AD users, you must translate them to Microsoft Entra users in your ACL.
 
 ### Properties
 
@@ -42,9 +42,9 @@ The properties component is used to add item metadata that is useful in Microsof
 
 ### Content
 
-The content component is used to add the bulk of the item that needs to be full text indexed. Examples include a ticket description, parsed text from a file body, or a wiki page body.
+The content component adds the bulk of the item that needs to be full-text indexed. Examples include a ticket description, parsed text from a file body, or a wiki page body.
 
-Content is one of the key fields influencing [relevance](connecting-external-content-manage-schema.md#relevance) across Microsoft experiences. The content types `text` and `html` are supported. If your data source has other content types, such as binary files, videos, or images, you can parse them to text before adding them to Microsoft Graph. For example, you can use optical character recognition to extract searchable text from images.
+Content is one of the key fields influencing [relevance](connecting-external-content-manage-schema.md#relevance) across Microsoft experiences. The content types `text` and `html` are supported. If your data source has other content types, such as binary files, videos, or images, you can parse them to text before adding them to Microsoft Graph. For example, optical character recognition can extract searchable text from images.
 
  > [!IMPORTANT]
 > The compliance solution only supports `text` for the content type. If you enable the connection for compliance by setting the **enabledContentExperience** property to `compliance`, you should ingest content in plain text format and set the content type to `text`.
@@ -53,35 +53,35 @@ Content is one of the key fields influencing [relevance](connecting-external-con
 
 *An example of a content component.*
 
-Content cannot be directly added into a search result template, but you can use a generated result snippet, which is a dynamically generated preview of the relevant sections within content.
+Content cannot be directly added to a search result template, but you can use a generated result snippet, a dynamically generated preview of the relevant sections within the content.
 
 ![A screenshot of a search result template.](./images/connectors-images/connecting-external-content-manage-items-3.svg)
 
 *A search result template.*
 
-When content in your data source changes, you must sync it with your connection items. You can either update the entire item or update one or more of its components. After your content has been added to Microsoft Graph, you can search for it through the Microsoft Search experience after setting up [search verticals](/en-us/microsoftsearch/manage-verticals) and [result types](/en-us/microsoftsearch/manage-result-types) or by using the [Microsoft Graph Search API](/graph/api/resources/search-api-overview).
+When content in your data source changes, you must sync it with your connection items. You can either update the entire item or one or more components. After adding your content to Microsoft Graph, you can search for it through the Microsoft Search experience after setting up [search verticals](/en-us/microsoftsearch/manage-verticals) and [result types](/en-us/microsoftsearch/manage-result-types) or by using the [Microsoft Graph Search API](/graph/api/resources/search-api-overview).
 
 ### Activities
 
-The activities component is a transient property that is used to send [activities](/graph/api/resources/externalconnectors-externalactivity) on the item. You can **only** write to this property. 
+The activities component is a transient property that sends [activities](/graph/api/resources/externalconnectors-externalactivity) on the item. You can **only** write to this property. 
 
 An activity consists of an actor (who performed the activity), a time (when the activity was performed), and an activity type (what type of activity was performed). The activity types that are currently supported can be found in the **Description** section of the **type** property for an [externalActivity](/graph/api/resources/externalconnectors-externalactivity). 
 
-Sending activities on the item powers intelligent recommendation experiences across Microsoft 365. End users will be able to receive content tailored to them based on the activities that are sent. 
+Sending activities on the item powers intelligent recommendation experiences across Microsoft 365. End users can receive content tailored to them based on the activities that are sent. 
 
 ## Add an item
 
 To add an item to the index, you [create an externalItem](/graph/api/externalconnectors-externalconnection-put-items). When you create an item, you assign a unique identifier in the URL.
 
-For example, your application may index helpdesk tickets by using the ticket number. If a ticket has the ticket number `SR00145`, the request might look like the following:
+For example, your application may index helpdesk tickets using the ticket number. If a ticket has the ticket number `SR00145`, the request might look like the following:
 
 ```http
 PUT /external/connections/contosohelpdesk/items/SR00145
 Content-Type: application/json
 
-{
+"properties": {
   "title": "WiFi outage in Conference Room A",
-  "status": "New",
+  "priority": 1,
   "assignee": "meganb@contoso.com"
 }
 ```
@@ -92,7 +92,7 @@ Content-Type: application/json
 ## Add activities to an item
 To add activities to an item, you call the [addActivities](/graph/api/externalconnectors-externalitem-addactivities) endpoint, with the same unique identifier for that item in the URL.
 
-For example, if someone with Microsoft Entra ID `18948b93-d3ed-4307-9981-10fc36a08a52` commented on the helpdesk ticket with ticket number `SR00145` on April 11, 2022 at 4:25PM, the request to send that activity might look like the following.
+For example, if someone with Microsoft Entra ID `18948b93-d3ed-4307-9981-10fc36a08a52` commented on the helpdesk ticket with ticket number `SR00145` on April 11, 2022, at 4:25 PM, the request to send that activity might look like the following.
 
 ```http
 POST /external/connections/contosohelpdesk/items/SR00145/addActivities
@@ -110,7 +110,7 @@ Content-Type: application/json
 ]
 ```
 
-You can also add an activity to an item in the same request that creates the item. Add the activity as another entity, just like `acl` and `content`. If you choose to add an activity this way, include the `@odata.type` for the activity, or the request will fail. Activities with timestamps older than seven days won't surface in the Microsoft 365 app. End users can only see activities in the Microsoft 365 app for items they have access to and have an activity on (for example, shared with them, created, edited, and so on).
+You can also add an activity to an item in the same request that creates the item. Add the activity as another entity, like `acl` and `content`. If you add an activity this way, include the `@odata.type` for the activity, or the request fails. Activities with timestamps older than seven days don't surface in the Microsoft 365 app. End users can only see activities in the Microsoft 365 app for items they can access and have an activity on (for example, shared with them, created, edited, and so on).
 
 ## Update an item
 
