@@ -138,11 +138,11 @@
           }
       ],
       "Cloud": "Prod",
-      "CreatedDateTime": "2023-08-22T03:14:22.628566Z",
+      "CreatedDateTime": "2023-11-13T03:14:22.628566Z",
       "Id": "79a508b6-2af7-4efe-9253-efc0e104ffaf",
-      "SubArea": "",
       "Version": "beta",
-      "WorkloadArea": "Education"
+      "WorkloadArea": "Education",
+      "SubArea": ""
     },
     {
       "ChangeList": [
