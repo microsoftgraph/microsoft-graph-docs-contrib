@@ -60,7 +60,7 @@ If no sites were found, an empty collection is returned.
 <!-- { "blockType": "request", "name": "sites-list-followed", "scopes": "sites.readwrite.all" } -->
 
 ```msgraph-interactive
-GET /me/followedSites
+GET https://graph.microsoft.com/v1.0/me/followedSites
 ```
 
 # [C#](#tab/csharp)
