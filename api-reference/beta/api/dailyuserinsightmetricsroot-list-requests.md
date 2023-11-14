@@ -82,8 +82,8 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.userRequestsMetric",
       "id": "dd1b6cfa-6715-25f6-c864-9c9bc39ba36f",
-      "factDate": "Date",
-      "requestCount": "Integer"
+      "factDate": "2023-09-01",
+      "requestCount": 11429
     }
   ]
 }
