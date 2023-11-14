@@ -32,7 +32,7 @@ None.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Represents an identity in an authorization system onboarded to Permissions Management. Inherited from [identityFinding](../resources/identityfinding.md). Autoexpanded by default.|
-|privilegeEscalationDetails|[privilegeEscalation](../resources/privilegeescalation.md)|The list of escalations that the identity is capable of performing.|
+|privilegeEscalationDetails|[privilegeEscalation](../resources/privilegeescalation.md) collection|The list of escalations that the identity is capable of performing.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
