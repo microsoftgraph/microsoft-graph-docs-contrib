@@ -27,7 +27,8 @@ The result of a Cloud PC Azure network connection health check.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|additionalDetails|String|More details about the health check or the recommended action.|
+|additionalDetails|String|Additional details about the health check or the recommended action. Read-only. Starting from January 31, 2024, this property will no longer be supported and will be marked as deprecated. Please use additionalDetail instead. |
+|additionalDetail|String|Additional details about the health check or the recommended action. Read-only.|
 |correlationId|String|The unique identifier of the health check item-related activities. This identifier can be useful in troubleshooting.|
 |displayName|String|The display name for this health check item.|
 |status|[cloudPcOnPremisesConnectionStatus](../resources/cloudpconpremisesconnection.md#cloudpconpremisesconnectionstatus-values)|The status of the health check item. Possible values are: `pending`, `running`, `passed`, `failed`, `warning`, `informational`, `unknownFutureValue`. Read-only.|
@@ -130,7 +131,7 @@ Here's a JSON representation of the resource.
   "endDateTime": "String (timestamp)",
   "errorType": "String",
   "recommendedAction": "String",
-  "additionalDetails": "String",
+  "additionalDetail": "String",
   "correlationId": "String"
 }
 ```

@@ -125,7 +125,7 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
     "id": "9ec90ff8-fd63-4fb9-ab5a-aa4fdccffff",
     "managedBy": "windows365",
-    "type": "hybridAzureADJoin",
+    "connType": "hybridAzureADJoin",
     "displayName": "Display Name value",
     "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",
     "subscriptionName": "Subscription Name value",
@@ -153,7 +153,7 @@ Content-Type: application/json
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections/{id}?$select=id,displayName,healthCheckStatus,healthCheckStatusDetails,inUse
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections/{id}?$select=id,displayName,healthCheckStatus,healthCheckStatusDetail,inUse
 ```
 
 # [C#](#tab/csharp)
@@ -210,8 +210,8 @@ Content-Type: application/json
     "managedBy": "windows365",
     "displayName": "Display Name value",
     "healthCheckStatus": "failed",
-    "healthCheckStatusDetails": {
-      "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionStatusDetails",
+    "healthCheckStatusDetail": {
+      "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionStatusDetail",
       "startDateTime": "2020-11-03T12:43:14Z",
       "endDateTime": "2020-11-03T12:43:32Z",
       "healthChecks": [
@@ -223,7 +223,7 @@ Content-Type: application/json
           "endDateTime": "2020-11-03T12:43:15Z",
           "errorType": "dnsCheckFqdnNotFound",
           "recommendedAction": "We did not find the provided domain name; please re-enter",
-          "additionalDdetails": null,
+          "additionalDdetail": null,
           "correlationId": "992e64f0-231c-46b0-8918-c5aed0585f53"
         },
         {
@@ -234,7 +234,7 @@ Content-Type: application/json
           "endDateTime": "2020-11-03T12:43:26Z",
           "errorType": null,
           "recommendedAction": null,
-          "additionalDetails": null,
+          "additionalDetail": null,
           "correlationId": null
         },
         {
@@ -245,7 +245,7 @@ Content-Type: application/json
           "endDateTime": "2020-11-03T12:43:32Z",
           "errorType": "endpointConnectivityCheckUrlNotWhitelisted",
           "recommendedAction": "Recommended Action value",
-          "additionaldDetails": "Additional Details value",
+          "additionaldDetail": "Additional Details value",
           "correlationId": "119f8363-ace2-412b-a79a-867dc0737db0"
         },
         {
@@ -256,7 +256,7 @@ Content-Type: application/json
           "endDateTime": null,
           "errorType": null,
           "recommendedAction": null,
-          "additionaldDetails": null,
+          "additionaldDetail": null,
           "correlationId": "119f8363-ace2-412b-a79a-867dc0737db0"
         }
       ]

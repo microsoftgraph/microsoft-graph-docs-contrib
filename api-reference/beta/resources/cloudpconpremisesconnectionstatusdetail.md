@@ -1,5 +1,5 @@
 ---
-title: "cloudPcOnPremisesConnectionStatusDetails resource type"
+title: "cloudPcOnPremisesConnectionStatusDetail resource type"
 description: "The status details of a Cloud PC Azure network connection."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---
 
-# cloudPcOnPremisesConnectionStatusDetails resource type
+# cloudPcOnPremisesConnectionStatusDetail resource type
 
 Namespace: microsoft.graph
 
@@ -34,13 +34,13 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionStatusDetails"
+  "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionStatusDetail"
 }
 -->
 
 ``` json
 {
-  "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnectionStatusDetails",
+  "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnectionStatusDetail",
   "startDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
   "healthChecks": [
