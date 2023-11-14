@@ -31,7 +31,8 @@
         },
         {
           "Id": "8988cba7-3b8c-4ec3-8f45-d7a0af670f53",
-          "ApiChange": "Method",
+          "ApiChange": "Resource",
+
           "ChangedApiName": "fileStorageContainerViewpoint",
           "ChangeType": "Addition",
           "Description": "Added the [fileStorageContainerViewpoint](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainerviewpoint?view=graph-rest-beta) resource.",
