@@ -18,7 +18,7 @@ Represents tenant-wide printer discovery settings for the Universal Print servic
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|airPrint|[airPrintSettings](../resources/airprintsettings.md)|Represents tenant-wide settings to configure the behavior of printers using Apple AirPrint with Universal Print.|
+|airPrint|[airPrintSettings](../resources/airprintsettings.md)|Represents tenant-wide settings to configure the behavior of printers when print jobs are submitted to Universal Print from macOS, which requires AirPrint compatibility.|
 
 ## Relationships
 None.

@@ -1,6 +1,6 @@
 ---
 title: airPrintSettings resource type
-description: Represents tenant-wide settings to configure the behavior of printers using Apple AirPrint with Universal Print.
+description: Represents tenant-wide settings to configure the behavior of printers when print jobs are submitted to Universal Print from macOS, which requires AirPrint compatibility.
 author: JuliusShanMS
 ms.localizationpriority: medium
 ms.prod: cloud-printing
@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents tenant-wide settings to configure the behavior of printers using Apple AirPrint with Universal Print.
+Represents tenant-wide settings to configure the behavior of printers when print jobs are submitted to Universal Print from macOS, which requires AirPrint compatibility.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|incompatiblePrinters|incompatiblePrinterSettings|This enum describes whether Universal Print hides printers that aren't compatible with Apple AirPrint during printer discovery on macOS.|
+|incompatiblePrinters|incompatiblePrinterSettings|This enum describes whether Universal Print hides printers from macOS when they don't support all capabilities required by the operating system as defined by AirPrint.|
 
 ### incompatiblePrinterSettings values 
 
