@@ -1,5 +1,5 @@
 ---
-title: "Move plan across containers"
+title: "plannerPlan: moveToContainer"
 description: "Move a planner plan object from one planner plan container to another."
 ms.localizationpriority: medium
 author: "vasrinwork"
@@ -7,7 +7,7 @@ ms.prod: "planner"
 doc_type: apiPageType
 ---
 
-# Move plan across containers
+# plannerPlan: moveToContainer
 
 Namespace: microsoft.graph
 
@@ -35,7 +35,7 @@ POST https://graph.microsoft.com/beta/planner/plans/planId/moveToContainer
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
-| If-Match  | Last known ETag value for the plannerPlan to be moved. Required.|
+| If-Match  | Last known ETag value for the **plannerPlan** to be moved. Required.|
 
 ## Request body
 In the request body, supply a JSON representation of the [plannerPlanContainer](../resources/plannerplancontainer.md) object.
@@ -46,7 +46,7 @@ If successful, this API returns a `200 OK` response code and a [plannerPlan](../
 
 ## Example
 ### Request
-The following example demonstrates a request to move a Plan from a User Container to a Group Container.
+The following example shows a request to move a plan from a user container to a group container.
 
 <!-- {
   "blockType": "request",
@@ -66,7 +66,7 @@ If-Match: "string"
 ```
 
 ### Response
-The following example displays a response to a request to move a Plan from a User Container to a Group Container.
+The following example shows a response to a request to move a plan from a user container to a group container.
 
 >**Note:** The response object shown here might be shortened for readability.
 

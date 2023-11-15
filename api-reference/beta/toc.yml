@@ -17088,8 +17088,10 @@ items:
                 href: api/planneruser-list-favoriteplans.md
               - name: List user's recent plans
                 href: api/planneruser-list-recentplans.md
-              - name: Get delta
+              - name: Get deltagit st
                 href: api/plannerplan-delta.md
+              - name: Move to container
+                href: api/plannerplan-movetocontainer.md
           - name: Task
             href: resources/plannertask.md
             items:

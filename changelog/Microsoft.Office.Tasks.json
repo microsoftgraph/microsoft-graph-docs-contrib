@@ -1841,7 +1841,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "moveToContainer",
           "ChangeType": "Addition",
-          "Description": "Added the `moveToContainer` method to the **plannerPlan** resource.",
+          "Description": "Added the [moveToContainer](https://learn.microsoft.com/en-us/graph/api/plannerplan-movetocontainer?view=graph-rest-beta) method to the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerplan?view=graph-rest-beta) resource.",
           "Target": "plannerPlan"
         }
       ],

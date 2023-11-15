@@ -18,11 +18,11 @@ Before you get started with the Planner API, it's helpful to understand how the 
 ## Plan containers
 In Microsoft Planner, plans are always contained in another resource. The containing resource determines the authorization rules of the plan and all the tasks in it, and the lifecycle of the plan. For example, for plans contained in Microsoft 365 groups, group members are able to create, edit, resolve, and delete tasks in the plan. Group members can also change some plan-level properties, such as the name of the plan or label names. Additionally, when the group is deleted, all the plans in the group are automatically deleted. Conversely if a group is restored, then all the plans are automatically restored.
 
-The most common type of container is a Group.
+The most common type of container is a group.
 
 ### Container type: Microsoft 365 groups
 
-Plans are commonly contained in Groups in the Planner API.
+Plans are commonly contained in groups in the Planner API.
 To [get the plans owned by a group](../api/plannergroup-list-plans.md), make the following HTTP request.
 
 ``` http
@@ -38,7 +38,7 @@ When you [create a new plan](../api/planner-post-plans.md), set the **container*
 
 Plans that are created for a single user are automatically deleted when the user is deleted.
 
-When you [create a new plan](../api/planner-post-plans.md), set the **container** property on a plan object with the `type` value set to `user` in order to create the Plan in the User's container.
+When you [create a new plan](../api/planner-post-plans.md), set the **container** property on a plan object with the `type` value set to `user` in order to create the plan in the user's container.
 
 ```json
 {
