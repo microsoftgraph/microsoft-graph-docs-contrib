@@ -20,6 +20,8 @@ name := "jobGroup"
 requestBody.SetName(&name) 
 dataType := "String"
 requestBody.SetDataType(&dataType) 
+isMultiValued := true
+requestBody.SetIsMultiValued(&isMultiValued) 
 targetObjects := []string {
 	"User",
 }
