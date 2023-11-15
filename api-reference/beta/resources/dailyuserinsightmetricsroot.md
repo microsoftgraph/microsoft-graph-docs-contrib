@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 A container for the different summaries of daily user activities on apps registered in your Microsoft Entra External ID for customers tenant.
 
-## Methods
+## Properties
 None.
 
 ## Relationships
