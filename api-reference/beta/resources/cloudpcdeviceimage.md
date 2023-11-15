@@ -36,7 +36,7 @@ Represents the image resource on a Cloud PC.
 |lastModifiedDateTime|DateTimeOffset|The data and time that the image was last modified. The time is shown in ISO 8601 format and  Coordinated Universal Time (UTC) time. For example, midnight UTC on Jan 1, 2014 appears as `2014-01-01T00:00:00Z`.|
 |operatingSystem|String|The operating system of the image. For example, `Windows 10 Enterprise`.|
 |osBuildNumber|String|The OS build version of the image. For example, `1909`.|
-|osStatus|[cloudPcDeviceImageOsStatus](#cloudpcdeviceimageosstatus-values)|The OS status of this image. Possible values are: `supported`, `supportedWithWarning`, `unknownFutureValue`.|
+|osStatus|[cloudPcDeviceImageOsStatus](#cloudpcdeviceimageosstatus-values)|The OS status of this image. Possible values are: `supported`, `supportedWithWarning`, `unknown`, `unknownFutureValue`.|
 |sourceImageResourceId|String|The ID of the source image resource on Azure. Required format: `/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}`.|
 |status|[cloudPcDeviceImageStatus](#cloudpcdeviceimagestatus-values)|The status of the image on Cloud PC. Possible values are: `pending`, `ready`, `failed`.|
 |statusDetails|cloudPcDeviceImageStatusDetails|The details of the status of the image that indicates why the upload failed, if applicable. Possible values are: `internalServerError`, `sourceImageNotFound`, `osVersionNotSupported`, `sourceImageInvalid`, and `sourceImageNotGeneralized`.|
@@ -65,8 +65,9 @@ Represents the image resource on a Cloud PC.
 
 |Member|Description|
 |:---|:---|
-|supported|The device image is active and ready to be used for provisioning.|
-|supportedWithWarning|The device image has expired, but Cloud PC will continue support. If users continue to use, they may not be able to get security updates.|
+|supported|Indicates the Cloud PC device image operating system is active and ready to be used for provisioning.|
+|supportedWithWarning|Indicates the Cloud PC device image operating system has expired, but Cloud PC will continue support. If users continue to use, they may not be able to get security updates.|
+|unknown| Default. Indicates the Cloud PC device operating system image status is unknown.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships

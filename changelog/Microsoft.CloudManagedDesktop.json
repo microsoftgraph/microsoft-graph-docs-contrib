@@ -3,6 +3,24 @@
         {
             "ChangeList": [
                 {
+                    "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "cloudPcDeviceImageOsStatus",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `unknown` member to the **cloudPcDeviceImageOsStatus** enumeration.",
+                    "Target": "cloudPcDeviceImageOsStatus"
+                }
+            ],
+            "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-12-05T04:22:14.103894Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "bebbf84c-73de-4070-b44f-c670c25c4d4f",
                     "ApiChange": "Parameter",
                     "ChangedApiName": "LIST",
