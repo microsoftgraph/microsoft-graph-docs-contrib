@@ -128,11 +128,11 @@ The data available is from the last 21 days (about three weeks). For example, if
 | Dataset name | Description | Sample and Schema |
 | --- | --- | --- |
 | SharePointSites_v1  | Contains information about SharePoint sites. (Formerly known as SharePointSitesDataset_v0_Preview)| [SharePointSites_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointsites.md) |
-| SharePointPermissions_v1 | Contains information about sharing permissions. (Formerly known as DocumentSharingDataset_v0_Preview) | [SharePointPermissions_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointpermissions.md) |
-| SharePointGroups_v1 | Contains SharePoint group information, including details about group members. (Formerly known as SharePointGroupsDataset_v0_Preview) | [SharePointGroups_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointgroups.md) |
-| SharePointFiles_v1  | Contains information about SharePoint files. (Coming in January 2024) | [SharePointFiles_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointfiles.md) |
-| SharePointFileActions_v1 | Contains information about SharePoint file actions. (Coming in January 2024) | [SharePointFileActions_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointfileactions.md) |
-| OneDriveSyncHealth_v1 | Contains information about devices running OneDrive for Business. (Coming in January 2024) | [OneDriveSyncHealth_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-onedrivesynchealth.md) |
+| SharePointPermissions_v1 | Contains information about sharing permissions. (Formerly DocumentSharingDataset_v0_Preview) | [SharePointPermissions_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointpermissions.md) |
+| SharePointGroups_v1 | Contains SharePoint group information, including details about group members. (Formerly SharePointGroupsDataset_v0_Preview) | [SharePointGroups_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointgroups.md) |
+| SharePointFiles_v1  | Contains information about SharePoint files. (Coming in January 2024.) | [SharePointFiles_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointfiles.md) |
+| SharePointFileActions_v1 | Contains information about SharePoint file actions. (Coming in January 2024.) | [SharePointFileActions_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointfileactions.md) |
+| OneDriveSyncHealth_v1 | Contains information about devices running OneDrive for Business. (Coming in January 2024.) | [OneDriveSyncHealth_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-onedrivesynchealth.md) |
 
 ### Viva Insights
 
