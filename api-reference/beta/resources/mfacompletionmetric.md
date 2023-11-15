@@ -30,9 +30,9 @@ Inherits from [entity](../resources/entity.md).
 |attemptsCount|Int64|Number of users who attempted to sign up. Supports `$filter` (`eq`).|
 |factDate|Date|The date of the user insight.|
 |id|String|Identifier for the user insight. Inherited from [entity](../resources/entity.md).|
-|mfaMethod|String|The mfa authentication method customers used. Supports `$filter` (`eq`).|
+|mfaMethod|String|The MFA authentication method used by the customers. Supports `$filter` (`eq`).|
 |os|String|The platform of the device that the customers used. Supports `$filter` (`eq`).|
-|successCount|Int64|Number of users who have successfully signed up. Supports `$filter` (`eq`).|
+|successCount|Int64|Number of users who signed up successfully. Supports `$filter` (`eq`).|
 
 ## Relationships
 None.
