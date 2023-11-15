@@ -58,7 +58,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('MSxBd3NJZGVudGl0eUFjY2Vzc01hbmFnZW1lbnRLZXlVc2FnZUZpbmRpbmcsMjEyNjk')/graph.awsIdentityAcessManagementKeyUsageFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/MSxBd3NJZGVudGl0eUFjY2Vzc01hbmFnZW1lbnRLZXlVc2FnZUZpbmRpbmcsMjEyNjk/graph.awsIdentityAcessManagementKeyUsageFinding
 ```
 
 

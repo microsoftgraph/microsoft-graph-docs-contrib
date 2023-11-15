@@ -1,9 +1,9 @@
 ---
 title: "authorizationSystemInfo resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents the authorization system's identifying information."
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the authorization system's identifying information.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authorizationSystemType|authorizationSystemType|**TODO: Add Description**.The possible values are: `azure`, `gcp`, `aws`, `unknownFutureValue`.|
-|displayName|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description**|
+|authorizationSystemType|authorizationSystemType|The type of authorization system.The possible values are: `azure`, `gcp`, `aws`, `unknownFutureValue`.|
+|displayName|String|Display name for the authorization system.|
+|id|String|Unique identifier for the authorization system.|
 
 ## Relationships
 None.
