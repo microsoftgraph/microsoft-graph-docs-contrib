@@ -1869,7 +1869,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "activeUsersBreakdownMetric",
           "ChangeType": "Addition",
-          "Description": "Added the [activeUsersBreakdownMetric](https://learn.microsoft.com/en-us/graph/api/resources/activeUsersBreakdownMetric?view=graph-rest-beta) resource.",
+          "Description": "Added the [activeUsersBreakdownMetric](https://learn.microsoft.com/en-us/graph/api/resources/activeUsersBreakdownMetric?view=graph-rest-beta) resource and supported methods.",
           "Target": "activeUsersBreakdownMetric"
         },
         {
@@ -1877,7 +1877,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "activeUsersMetric",
           "ChangeType": "Addition",
-          "Description": "Added the [activeUsersMetric](https://learn.microsoft.com/en-us/graph/api/resources/activeUsersMetric?view=graph-rest-beta) resource.",
+          "Description": "Added the [activeUsersMetric](https://learn.microsoft.com/en-us/graph/api/resources/activeUsersMetric?view=graph-rest-beta) resource and supported methods.",
           "Target": "activeUsersMetric"
         },
         {
@@ -1885,7 +1885,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "authenticationsMetric",
           "ChangeType": "Addition",
-          "Description": "Added the [authenticationsMetric](https://learn.microsoft.com/en-us/graph/api/resources/authenticationsMetric?view=graph-rest-beta) resource.",
+          "Description": "Added the [authenticationsMetric](https://learn.microsoft.com/en-us/graph/api/resources/authenticationsMetric?view=graph-rest-beta) resource and supported methods.",
           "Target": "authenticationsMetric"
         },
         {
@@ -1893,7 +1893,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "dailyUserInsightMetricsRoot",
           "ChangeType": "Addition",
-          "Description": "Added the [dailyUserInsightMetricsRoot](https://learn.microsoft.com/en-us/graph/api/resources/dailyUserInsightMetricsRoot?view=graph-rest-beta) resource.",
+          "Description": "Added the [dailyUserInsightMetricsRoot](https://learn.microsoft.com/en-us/graph/api/resources/dailyUserInsightMetricsRoot?view=graph-rest-beta) resource type.",
           "Target": "dailyUserInsightMetricsRoot"
         },
         {
@@ -1901,7 +1901,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "insightSummary",
           "ChangeType": "Addition",
-          "Description": "Added the [insightSummary](https://learn.microsoft.com/en-us/graph/api/resources/insightSummary?view=graph-rest-beta) resource.",
+          "Description": "Added the [insightSummary](https://learn.microsoft.com/en-us/graph/api/resources/insightSummary?view=graph-rest-beta) resource and supported methods.",
           "Target": "insightSummary"
         },
         {
@@ -1909,7 +1909,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mfaCompletionMetric",
           "ChangeType": "Addition",
-          "Description": "Added the [mfaCompletionMetric](https://learn.microsoft.com/en-us/graph/api/resources/mfaCompletionMetric?view=graph-rest-beta) resource.",
+          "Description": "Added the [mfaCompletionMetric](https://learn.microsoft.com/en-us/graph/api/resources/mfaCompletionMetric?view=graph-rest-beta) resource and supported methods.",
           "Target": "mfaCompletionMetric"
         },
         {
@@ -1917,23 +1917,15 @@
           "ApiChange": "Resource",
           "ChangedApiName": "monthlyUserInsightMetricsRoot",
           "ChangeType": "Addition",
-          "Description": "Added the [monthlyUserInsightMetricsRoot](https://learn.microsoft.com/en-us/graph/api/resources/monthlyUserInsightMetricsRoot?view=graph-rest-beta) resource.",
+          "Description": "Added the [monthlyUserInsightMetricsRoot](https://learn.microsoft.com/en-us/graph/api/resources/monthlyUserInsightMetricsRoot?view=graph-rest-beta) resource type.",
           "Target": "monthlyUserInsightMetricsRoot"
-        },
-        {
-          "Id": "921c584a-25cb-4561-936f-966ba933cccd",
-          "ApiChange": "Resource",
-          "ChangedApiName": "userInsights",
-          "ChangeType": "Addition",
-          "Description": "Added the **userInsights** relationship to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
-          "Target": "reportRoot"
         },
         {
           "Id": "921c584a-25cb-4561-936f-966ba933cccd",
           "ApiChange": "Resource",
           "ChangedApiName": "userCountMetric",
           "ChangeType": "Addition",
-          "Description": "Added the [userCountMetric](https://learn.microsoft.com/en-us/graph/api/resources/userCountMetric?view=graph-rest-beta) resource.",
+          "Description": "Added the [userCountMetric](https://learn.microsoft.com/en-us/graph/api/resources/userCountMetric?view=graph-rest-beta) resource and a supported method.",
           "Target": "userCountMetric"
         },
         {
@@ -1941,7 +1933,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userInsightsRoot",
           "ChangeType": "Addition",
-          "Description": "Added the [userInsightsRoot](https://learn.microsoft.com/en-us/graph/api/resources/userInsightsRoot?view=graph-rest-beta) resource.",
+          "Description": "Added the [userInsightsRoot](https://learn.microsoft.com/en-us/graph/api/resources/userInsightsRoot?view=graph-rest-beta) resource type.",
           "Target": "userInsightsRoot"
         },
         {
@@ -1949,7 +1941,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userRequestsMetric",
           "ChangeType": "Addition",
-          "Description": "Added the [userRequestsMetric](https://learn.microsoft.com/en-us/graph/api/resources/userRequestsMetric?view=graph-rest-beta) resource.",
+          "Description": "Added the [userRequestsMetric](https://learn.microsoft.com/en-us/graph/api/resources/userRequestsMetric?view=graph-rest-beta) resource and a supported method.",
           "Target": "userRequestsMetric"
         },
         {
@@ -1957,8 +1949,16 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userSignUpMetric",
           "ChangeType": "Addition",
-          "Description": "Added the [userSignUpMetric](https://learn.microsoft.com/en-us/graph/api/resources/userSignUpMetric?view=graph-rest-beta) resource.",
+          "Description": "Added the [userSignUpMetric](https://learn.microsoft.com/en-us/graph/api/resources/userSignUpMetric?view=graph-rest-beta) resource and supported methods.",
           "Target": "userSignUpMetric"
+        },
+        {
+          "Id": "921c584a-25cb-4561-936f-966ba933cccd",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "userInsights",
+          "ChangeType": "Addition",
+          "Description": "Added the **userInsights** relationship to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
+          "Target": "reportRoot"
         }
       ],
       "Id": "921c584a-25cb-4561-936f-966ba933cccd",
