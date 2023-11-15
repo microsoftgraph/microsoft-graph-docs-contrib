@@ -66,6 +66,7 @@ When a result set spans multiple pages, Microsoft Graph returns that page with a
 
 The following example shows a request to get the list of [participants](../resources/callrecords-participant.md) for a [callRecord](../resources/callrecords-callrecord.md).
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_callrecord_participants_v2"
@@ -74,6 +75,36 @@ The following example shows a request to get the list of [participants](../resou
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/callRecords/614e3ff0-4728-4394-8c03-52fb3b967fde/participants_v2
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-callrecord-participants-v2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-callrecord-participants-v2-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-callrecord-participants-v2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-callrecord-participants-v2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-callrecord-participants-v2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-callrecord-participants-v2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-callrecord-participants-v2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
