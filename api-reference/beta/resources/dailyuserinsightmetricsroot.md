@@ -21,13 +21,13 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|activeUsers|[activeUsers](../resources/activeusersmetric.md) collection.|Insight for active users on apps registered in your tenant for a specified period.|
-|activeUsersBreakdown|[activeUsersBreakdown](../resources/activeusersbreakdownmetric.md) collection.| Insight for the breakdown of users who were active on apps registered in your tenant for a specified period.|
-|authentications|[authentications](../resources/authenticationsmetric.md) collection.|Insights for authentications on apps registered in your tenant for a specified period.|
-|mfaCompletions|[mfaCompletion](../resources/mfacompletionmetric.md) collection.|Insights for MFA usage on apps registered in your tenant for a specified period.|
-|signUps|[userSignUp](../resources/usersignupmetric.md) collection.| Total sign-ups on apps registered in your tenant for a specified period.|
-|summary|[insightSummary](../resources/insightsummary.md) collection.| Summary of all usage insights on apps registered in your tenant for a specified period.|
-|userCount|[userCountMetric](../resources/usercountmetric.md) collection.|Insight for total users on apps registered in your tenant for a specified period.|
+|activeUsers|[activeUsers](../resources/activeusersmetric.md) collection.|Insight for active users on apps registered in the tenant for a specified period.|
+|activeUsersBreakdown|[activeUsersBreakdown](../resources/activeusersbreakdownmetric.md) collection.| Insight for the breakdown of users who were active on apps registered in the tenant for a specified period.|
+|authentications|[authentications](../resources/authenticationsmetric.md) collection.|Insights for authentications on apps registered in the tenant for a specified period.|
+|mfaCompletions|[mfaCompletion](../resources/mfacompletionmetric.md) collection.|Insights for MFA usage on apps registered in the tenant for a specified period.|
+|signUps|[userSignUp](../resources/usersignupmetric.md) collection.| Total sign-ups on apps registered in the tenant for a specified period.|
+|summary|[insightSummary](../resources/insightsummary.md) collection.| Summary of all usage insights on apps registered in the tenant for a specified period.|
+|userCount|[userCountMetric](../resources/usercountmetric.md) collection.|Insight for total users on apps registered in the tenant for a specified period.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
