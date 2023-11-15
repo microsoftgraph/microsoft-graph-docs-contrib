@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 A container for the different summaries of monthly user activities on apps registered in your Microsoft Entra External ID for customers tenant.
 
-## Methods
+## Properties
 None.
 
 ## Relationships
@@ -23,7 +23,7 @@ None.
 |:---|:---|:---|
 |activeUsers|[activeUsers](../resources/activeusersmetric.md) collection.|Insight for active users on apps registered in the tenant for a specified period.|
 |activeUsersBreakdown|[activeUsersBreakdown](../resources/activeusersbreakdownmetric.md) collection.|Insight for the breakdown of users who were active on apps registered in the tenant for a specified period.|
-|authentications|[authentications](../resources/authenticationsmetric.md) collection.|Insights for authentications on apps registered in the tenant for a specified period.
+|authentications|[authentications](../resources/authenticationsmetric.md) collection.|Insights for authentications on apps registered in the tenant for a specified period.|
 |mfaCompletions|[mfaCompletion](../resources/mfacompletionmetric.md) collection.|Insights for MFA usage on apps registered in the tenant for a specified period.|
 |requests|[userRequests](../resources/userrequestsmetric.md) collection.| Insights for all user requests on apps registered in the tenant for a specified period.|
 |signUps|[userSignUp](../resources/usersignupmetric.md) collection.|Total sign-ups on apps registered in the tenant for a specified period.|
