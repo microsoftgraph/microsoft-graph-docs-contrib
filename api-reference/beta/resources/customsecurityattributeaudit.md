@@ -27,7 +27,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |activityDateTime|DateTimeOffset| Indicates the date and time the activity was performed. The Timestamp type is always in UTC time. For example, midnight UTC on Jan 1, 2024 is `2024-01-01T00:00:00Z`. Supports `$filter` (`eq`, `ge`, `le`).|
-|activityDisplayName|String|Indicates the activity name or the operation name. For example: "Add custom security attribute definition in an attribute set" or "Update attribute values assigned to a user." For a list of activities logged, refer to [Azure AD audit log categories and activities](/azure/active-directory/reports-monitoring/reference-audit-activities). Supports `$filter` (`eq`, `startswith`).|
+|activityDisplayName|String|Indicates the activity name or the operation name. For example: "Add custom security attribute definition in an attribute set" or "Update attribute values assigned to a user." For a list of activities logged, refer to [Microsoft Entra audit log categories and activities](/entra/identity/monitoring-health/reference-audit-activities). Supports `$filter` (`eq`, `startswith`).|
 |additionalDetails|[keyValue](../resources/keyvalue.md) collection|Indicates additional details on the activity.|
 |category|String|Indicates the resource category that's targeted by the activity. Custom security attribute activities are logged in a single category: `AttributeManagement`. |
 |correlationId|String|Indicates a unique ID that helps correlate activities that span across various services. Can be used to trace logs across services.|
