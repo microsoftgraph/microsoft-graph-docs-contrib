@@ -59,7 +59,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('MSxJbmFjdGl2ZUF3c1JvbGVGaW5kaW5nLDY1MTY0MA')/graph.inactiveAwsRoleFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/MSxJbmFjdGl2ZUF3c1JvbGVGaW5kaW5nLDY1MTY0MA/graph.inactiveAwsRoleFinding
 ```
 
 

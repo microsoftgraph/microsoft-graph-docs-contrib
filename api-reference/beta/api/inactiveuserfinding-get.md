@@ -80,7 +80,7 @@ The following example shows a request.
 }
 -->
 ```http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('MSxJbmFjdGl2ZVVzZXJGaW5kaW5nLDI0MTI5MA')/microsoft.graph.inactiveUserFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/MSxJbmFjdGl2ZVVzZXJGaW5kaW5nLDI0MTI5MA/microsoft.graph.inactiveUserFinding
 ```
 
 

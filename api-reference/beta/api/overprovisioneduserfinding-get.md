@@ -81,7 +81,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings('MSxPdmVycHJvdmlzaW9uZWRVc2VyRmluZGluZywxMjU0MjA')/graph.overprovisionedUserFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/MSxPdmVycHJvdmlzaW9uZWRVc2VyRmluZGluZywxMjU0MjA/graph.overprovisionedUserFinding
 ```
 
 ### Response

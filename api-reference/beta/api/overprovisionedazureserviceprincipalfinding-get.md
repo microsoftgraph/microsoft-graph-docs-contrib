@@ -63,7 +63,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure('b3ZlcnByb3Zpc2lvbmVkU2VydmljZVByaW5jaXBhbEZpbmRpbmcxMg')/findings/overprovisionedAzureServicePrincipalFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/b3ZlcnByb3Zpc2lvbmVkU2VydmljZVByaW5jaXBhbEZpbmRpbmcxMg/overprovisionedAzureServicePrincipalFinding
 ```
 
 ### Response

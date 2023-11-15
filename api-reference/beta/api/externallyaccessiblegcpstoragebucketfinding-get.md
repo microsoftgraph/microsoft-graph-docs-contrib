@@ -58,7 +58,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings('MSxFeHRlcm5hbGx5QWNjZXNzaWJsZUdjcFN0b3JhZ2VCdWNrZXRGaW5kaW5nLDI3Nzcy')/graph.externallyAccessibleGcpStorageBucketFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/MSxFeHRlcm5hbGx5QWNjZXNzaWJsZUdjcFN0b3JhZ2VCdWNrZXRGaW5kaW5nLDI3Nzcy/graph.externallyAccessibleGcpStorageBucketFinding
 ```
 
 

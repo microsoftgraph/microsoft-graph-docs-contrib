@@ -62,7 +62,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings('MSxPdmVycHJvdmlzaW9uZWRHY3BTZXJ2aWNlQWNjb3VudEZpbmRpbmcsODM1Mw')/graph.overprovisionedGcpServiceAccountFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/MSxPdmVycHJvdmlzaW9uZWRHY3BTZXJ2aWNlQWNjb3VudEZpbmRpbmcsODM1Mw/graph.overprovisionedGcpServiceAccountFinding
 ```
 
 ### Response

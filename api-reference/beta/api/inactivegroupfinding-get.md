@@ -81,7 +81,7 @@ The following example shows a request for an inactive group in a GCP project.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings('MSxJbmFjdGl2ZUdyb3VwRmluZGluZyw2MDI0NA')/microsoft.graph.inactiveGroupFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/MSxJbmFjdGl2ZUdyb3VwRmluZGluZyw2MDI0NA/microsoft.graph.inactiveGroupFinding
 ```
 
 ### Response
