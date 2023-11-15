@@ -110,16 +110,3 @@ The Global Secure Access services enable you to enrich the [Microsoft 365 audit 
 ## See also
 
 - [What is Global Secure Access?](/azure/global-secure-access/overview-what-is-global-secure-access)
-
-
-<!-- {
-  "type": "#page.annotation",
-  "description": "",
-  "keywords": "",
-  "section": "documentation",
-  "suppressions": [
-    "Error: /resources/networkaccess-global-secure-access-api-overview.md:
-      Exception processing links.
-      Link Definition was null. Link text: !INCLUDE zero-trust (Parameter 'Definition')"
-  ]
-} -->

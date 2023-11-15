@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
 doc_type: conceptualPageType
-ms.date: 11/29/2022
+ms.date: 11/15/2023
 ms.custom: zt-include
 ---
 
@@ -70,15 +70,3 @@ The [terms of use APIs](/graph/api/resources/agreement) in Microsoft Graph allow
 + [What is Microsoft Entra ID Governance?](/azure/active-directory/governance/identity-governance-overview)
 + [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json)
 
-
-<!-- {
-  "type": "#page.annotation",
-  "description": "",
-  "keywords": "",
-  "section": "documentation",
-  "suppressions": [
-    "Error: /resources/identitygovernance-overview.md:
-      Exception processing links.
-      Link Definition was null. Link text: !INCLUDE zero-trust (Parameter 'Definition')"
-  ]
-} -->
