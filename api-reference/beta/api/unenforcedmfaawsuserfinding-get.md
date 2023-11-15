@@ -58,7 +58,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('MSxVbmVuZm9yY2VkTWZhQXdzVXNlckZpbmRpbmcsNjUzMjU')/graph.unenforcedMfaAwsUserFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/MSxVbmVuZm9yY2VkTWZhQXdzVXNlckZpbmRpbmcsNjUzMjU/graph.unenforcedMfaAwsUserFinding
 ```
 
 ### Response

@@ -77,7 +77,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings('c3VwZXJTZXJ2ZXJsZXNzRnVuY3Rpb25GaW5kaW4z')/graph.superServerlessFunctionFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/c3VwZXJTZXJ2ZXJsZXNzRnVuY3Rpb25GaW5kaW4z/graph.superServerlessFunctionFinding
 ```
 
 ### Response

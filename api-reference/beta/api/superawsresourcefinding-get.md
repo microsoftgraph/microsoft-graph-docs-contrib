@@ -62,7 +62,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('c3VwZXJSZXNvdXJjZUZpbmRpbmc0')/graph.superAwsResourceFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/c3VwZXJSZXNvdXJjZUZpbmRpbmc0/graph.superAwsResourceFinding
 ```
 
 
