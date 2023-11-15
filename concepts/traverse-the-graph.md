@@ -202,12 +202,21 @@ content-length: 982
 
 Some entities support an alternate key, which you can use to retrieve an object instead of the primary key ID. For example, the [application](/graph/api/resources/application) and [servicePrincipal](/graph/api/resources/serviceprincipal) entities support the **appId** alternate key.
 
-The following example uses the alternate key syntax to retrieve an application by its **appId**.
+The following example uses the alternate key syntax to retrieve a service principal by its **appId**.
 
+# [HTTP](#tab/http)
 ```http
-GET https://graph.microsoft.com/v1.0/application(appId='00000003-0000-0000-c000-000000000000') HTTP/1.1
+GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000-c000-000000000000') HTTP/1.1
 Authorization : Bearer {access_token}
 ```
+
+# [cURL](#tab/curl)
+```bash
+curl --location 'https://graph.microsoft.com/v1.0/servicePrincipals(appId='\''00000003-0000-0000-c000-000000000000'\'')' \
+--header 'Authorization: Bearer eyJ0eXAiOiJK...gCZooG6A'
+```
+
+---
 
 ## Read specific properties of a resource
 To retrieve only the user's biographical data, such as the user's provided _About me_ description and their skill set, you can add the [$select](query-parameters.md) query parameter to the previous request, as shown in the following example.
@@ -259,10 +268,19 @@ You can retrieve a single property of a resource without using `$select`, by spe
 
 The following example retrieves the **displayName** of a user.
 
+# [HTTP](#tab/http)
 ```http
 GET https://graph.microsoft.com/beta/users/8afc02cb-4d62-4dba-b536-9f6d73e9be26/displayName HTTP/1.1
 Authorization : Bearer {access_token}
 ```
+
+# [cURL](#tab/curl)
+```bash
+curl --location 'https://graph.microsoft.com/beta/users/8afc02cb-4d62-4dba-b536-9f6d73e9be26/displayName' \
+--header 'Authorization: Bearer eyJ0eXAiO...DZzY1aO3hym0eQ'
+```
+
+---
 
 ## Read specific properties of the resources in a collection
 In addition to reading specific properties of a single resource, you can also apply the similar [$select](query-parameters.md) query parameter to a collection to get back all resources in the collection with just the specific properties returned on each.
