@@ -1,10 +1,6 @@
 ---
 title: "Update custom properties of a fileStorageContainer "
-
-description: "Update custom properties on a fileStorageContainer"
-```suggestion
 description: "Update the custom properties of a fileStorageContainer"
-
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.prod: "files"
@@ -12,7 +8,6 @@ doc_type: apiPageType
 ---
 
 # Update the custom properties of a fileStorageContainer
-
 
 Namespace: microsoft.graph
 
@@ -83,9 +78,8 @@ Content-type: application/json
   }
 }
 ```
-
 ### Response
-The following example shows the response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
