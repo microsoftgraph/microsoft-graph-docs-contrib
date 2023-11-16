@@ -1,6 +1,6 @@
 ---
 title: "List daily insightSummaries"
-description: "Get a list of daily insightSummary on apps registered in your Microsoft Entra External ID for customers tenant."
+description: "Get a list of daily insightSummary objects on apps registered in your tenant configured for Microsoft Entra External ID for customers."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of daily [insightSummary](../resources/insightsummary.md) on apps registered in your Microsoft Entra External ID for customers tenant.
+Get a list of daily [insightSummary](../resources/insightsummary.md) objects on apps registered in your tenant configured for Microsoft Entra External ID for customers.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -36,7 +36,7 @@ daily GET /userInsightsRoot/daily/summary
 ```
 
 ## Optional query parameters
-This method supports `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -62,7 +62,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/userInsightsRoot/daily/summary
 ```
-
 
 ### Response
 The following example shows the response.
