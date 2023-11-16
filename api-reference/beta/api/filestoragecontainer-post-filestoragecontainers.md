@@ -8,17 +8,16 @@ doc_type: apiPageType
 ---
 
 # Create fileStorageContainer
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [fileStorageContainer](../resources/filestoragecontainer.md) object. 
 
-The respective container type identified by containerTypeId must be enabled in the tenant. The calling application must have permission to create fileStorageContainers for the respective container type.
+The respective container type identified by containerTypeId must be enabled in the tenant. The calling application must have permissions to create fileStorageContainers for the respective container type.
 
-
-For delegated calls, the calling user will be set as the owner of the fileStorageContainer. 
-
+For delegated calls, the calling user is set as the owner of the fileStorageContainer. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -62,7 +61,7 @@ If successful, this method returns a `201 Created` response code and a [fileStor
 ## Examples
 
 ### Request
-The following is an example of creating a fileStorageContainer.
+The following example shows how to create a fileStorageContainer.
 <!-- {
   "blockType": "request",
   "name": "create_filestoragecontainer_from_filestoragecontainers"
@@ -78,10 +77,8 @@ Content-Type: application/json
   "containerTypeId": "91710488-5756-407f-9046-fbe5f0b4de73"
 }
 ```
-
-
 ### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
