@@ -1,6 +1,6 @@
 ---
 title:  "List monthly activeUsers"
-description: "Get a list of monthly activeUsers on apps registered in your Microsoft Entra External ID for customers tenant."
+description: "Get a list of monthly activeUsersMetric objects on apps registered in your tenant configured for Microsoft Entra External ID for customers."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of monthly [activeUsersMetric](../resources/activeusersmetric.md) on apps registered in your Microsoft Entra External ID for customers tenant.
+Get a list of monthly [activeUsersMetric](../resources/activeusersmetric.md) objects on apps registered in your tenant configured for Microsoft Entra External ID for customers.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -63,7 +63,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/reports/userInsights/monthly/activeUsers
 ```
 
-
 ### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -93,4 +92,3 @@ Content-Type: application/json
   ]
 }
 ```
-
