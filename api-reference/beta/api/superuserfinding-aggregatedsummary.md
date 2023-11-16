@@ -31,7 +31,7 @@ Example of an AWS request
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/aws/findings/graph.superUserFinding/aggregatedSummary(authorizationSystemIds=['awsAuthSystemId'])
+GET /identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.superUserFinding/aggregatedSummary(authorizationSystemIds=['awsAuthSystemId'])
 ```
 
 Example of an Azure request
@@ -40,7 +40,7 @@ Example of an Azure request
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/azure/findings/graph.superUserFinding/aggregatedSummary(authorizationSystemIds=['azureAuthSystemId'])
+GET /identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.superUserFinding/aggregatedSummary(authorizationSystemIds=['azureAuthSystemId'])
 ```
 
 Example of a GCP request
@@ -49,7 +49,7 @@ Example of a GCP request
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/gcp/findings/graph.superUserFinding/aggregatedSummary(authorizationSystemIds=['gcpAuthSystemId'])
+GET /identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.superUserFinding/aggregatedSummary(authorizationSystemIds=['gcpAuthSystemId'])
 ```
 
 ## Function parameters
@@ -83,7 +83,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/graph.superUserFinding/aggregatedSummary(authorizationSystemIds=['00f7dcae-97f9-492b-af2e-36eb35b613af'])
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.superUserFinding/aggregatedSummary(authorizationSystemIds=['00f7dcae-97f9-492b-af2e-36eb35b613af'])
 ```
 
 ### Response

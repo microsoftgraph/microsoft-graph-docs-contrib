@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/aws/findings/{id}/graph.awsExternalSystemAccessFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings/{id}/microsoft.graph.awsExternalSystemAccessFinding
 ```
 
 ## Optional query parameters
@@ -59,7 +59,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/MSxBd3NFeHRlcm5hbFN5c3RlbUFjY2Vzc0ZpbmRpbmcsMTg5NzE/graph.awsExternalSystemAccessFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/MSxBd3NFeHRlcm5hbFN5c3RlbUFjY2Vzc0ZpbmRpbmcsMTg5NzE/microsoft.graph.awsExternalSystemAccessFinding
 ```
 
 

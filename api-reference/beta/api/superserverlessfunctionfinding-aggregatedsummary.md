@@ -31,7 +31,7 @@ For an AWS authorization system:
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/aws/findings/graph.superServerlessFunctionFinding/aggregatedSummary(authorizationSystemIds=['awsAuthSystemId'])
+GET /identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.superServerlessFunctionFinding/aggregatedSummary(authorizationSystemIds=['awsAuthSystemId'])
 ```
 
 For an Azure authorization system:
@@ -40,7 +40,7 @@ For an Azure authorization system:
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/azure/findings/graph.superServerlessFunctionFinding/aggregatedSummary(authorizationSystemIds=['azureAuthSystemId'])
+GET /identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.superServerlessFunctionFinding/aggregatedSummary(authorizationSystemIds=['azureAuthSystemId'])
 ```
 
 For a GCP authorization system:
@@ -49,7 +49,7 @@ For a GCP authorization system:
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/gcp/findings/graph.superServerlessFunctionFinding/aggregatedSummary(authorizationSystemIds=['gcpAuthSystemId'])
+GET /identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.superServerlessFunctionFinding/aggregatedSummary(authorizationSystemIds=['gcpAuthSystemId'])
 ```
 
 ## Function parameters
@@ -83,7 +83,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.superServerlessFunctionFinding/aggregatedSummary(authorizationSystemIds=['377596131774'])
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.superServerlessFunctionFinding/aggregatedSummary(authorizationSystemIds=['377596131774'])
 ```
 
 

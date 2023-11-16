@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/gcp/findings/{id}/graph.superGcpServiceAccountFinding
+GET /identityGovernance/permissionsAnalytics/gcp/findings/{id}/microsoft.graph.superGcpServiceAccountFinding
 ```
 
 ## Optional query parameters
@@ -58,7 +58,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/MSxTdXBlckdjcFNlcnZpY2VBY2NvdW50RmluZGluZyw3MDc4/graph.superGcpServiceAccountFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/MSxTdXBlckdjcFNlcnZpY2VBY2NvdW50RmluZGluZyw3MDc4/microsoft.graph.superGcpServiceAccountFinding
 ```
 
 

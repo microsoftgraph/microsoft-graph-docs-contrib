@@ -31,7 +31,7 @@ List AWS super serverless functions:
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/aws/findings/graph.superServerlessFunctionFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.superServerlessFunctionFinding
 ```
 
 List AWS super serverless functions:
@@ -40,7 +40,7 @@ List AWS super serverless functions:
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/azure/findings/graph.superServerlessFunctionFinding
+GET /identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.superServerlessFunctionFinding
 ```
 
 List GCP super serverless functions:
@@ -49,7 +49,7 @@ List GCP super serverless functions:
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/gcp/findings/graph.superServerlessFunctionFinding
+GET /identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.superServerlessFunctionFinding
 ```
 
 ## Optional query parameters
@@ -77,7 +77,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/graph.superServerlessFunctionFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.superServerlessFunctionFinding
 ```
 
 ### Response
@@ -94,7 +94,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/azure/findings/graph.superServerlessFunctionFinding",
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/azure/findings/microsoft.graph.superServerlessFunctionFinding",
   "value": [
     {
       "@odata.type": "graph.superServerlessFunctionFinding",

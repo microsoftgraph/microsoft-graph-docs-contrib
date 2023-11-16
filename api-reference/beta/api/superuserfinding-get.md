@@ -31,7 +31,7 @@ Get AWS super users:
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/aws/findings/{id}/graph.superUserFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings/{id}/microsoft.graph.superUserFinding
 ```
 
 Get Azure super users:
@@ -40,7 +40,7 @@ Get Azure super users:
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/azure/findings('id')/graph.superUserFinding
+GET /identityGovernance/permissionsAnalytics/azure/findings/{id}/microsoft.graph.superUserFinding
 ```
 
 Get GCP super users:
@@ -49,7 +49,7 @@ Get GCP super users:
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/gcp/findings('id')/graph.superUserFinding
+GET /identityGovernance/permissionsAnalytics/gcp/findings/{id}/microsoft.graph.superUserFinding
 ```
 
 ## Optional query parameters
@@ -77,7 +77,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/MSxTdXBlclVzZXJGaW5kaW5nLDE1NDczMQ/graph.superUserFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/MSxTdXBlclVzZXJGaW5kaW5nLDE1NDczMQ/microsoft.graph.superUserFinding
 ```
 
 ### Response

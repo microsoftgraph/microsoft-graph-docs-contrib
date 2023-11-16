@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/aws/findings/graph.awsIdentityAccessManagementKeyUsageFinding/microsoft.graph.aggregatedSummary(authorizationSystemIds=['awsAuthSystemId'])
+GET /identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.awsIdentityAccessManagementKeyUsageFinding/microsoft.graph.aggregatedSummary(authorizationSystemIds=['awsAuthSystemId'])
 ```
 
 ## Function parameters
@@ -68,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.awsIdentityAccessManagementKeyUsageFinding/microsoft.graph.aggregatedSummary(authorizationSystemIds=['377596131774'])
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.awsIdentityAccessManagementKeyUsageFinding/microsoft.graph.aggregatedSummary(authorizationSystemIds=['377596131774'])
 ```
 
 ### Response

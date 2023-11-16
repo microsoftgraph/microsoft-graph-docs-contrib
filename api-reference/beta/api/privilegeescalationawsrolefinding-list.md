@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/aws/findings/graph.privilegeEscalationAwsRoleFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.privilegeEscalationAwsRoleFinding
 ```
 
 ## Optional query parameters
@@ -58,7 +58,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.privilegeEscalationAwsRoleFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.privilegeEscalationAwsRoleFinding
 ```
 
 
@@ -76,7 +76,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.privilegeEscalationAwsRoleFinding",
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/aws/findings/microsoft.graph.privilegeEscalationAwsRoleFinding",
   "value": [
     {
       "@odata.type": "graph.privilegeEscalationAwsRoleFinding",
@@ -109,6 +109,6 @@ Content-Type: application/json
       }
     }
   ],
-  "@odata.nextLink": "https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.privilegeEscalationAwsRoleFinding?$skiptoken=foobar"
+  "@odata.nextLink": "https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.privilegeEscalationAwsRoleFinding?$skiptoken=foobar"
 }
 ```

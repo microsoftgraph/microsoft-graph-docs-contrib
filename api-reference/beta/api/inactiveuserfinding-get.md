@@ -33,7 +33,7 @@ Get AWS inactive users:
 }
 -->
 ```http
-GET /identityGovernance/permissionsAnalytics/aws/findings/{id}/graph.inactiveUserFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings/{id}/microsoft.graph.inactiveUserFinding
 ```
 
 Get Azure inactive users:
@@ -42,7 +42,7 @@ Get Azure inactive users:
 }
 -->
 ```http
-GET /identityGovernance/permissionsAnalytics/azure/findings/{id}/graph.inactiveUserFinding
+GET /identityGovernance/permissionsAnalytics/azure/findings/{id}/microsoft.graph.inactiveUserFinding
 ```
 
 Get GCP inactive users:
@@ -51,7 +51,7 @@ Get GCP inactive users:
 }
 -->
 ```http
-GET /identityGovernance/permissionsAnalytics/gcp/findings/{id}/graph.inactiveUserFinding
+GET /identityGovernance/permissionsAnalytics/gcp/findings/{id}/microsoft.graph.inactiveUserFinding
 ```
 
 ## Optional query parameters

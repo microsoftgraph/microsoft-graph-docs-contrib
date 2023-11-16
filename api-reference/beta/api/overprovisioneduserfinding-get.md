@@ -32,7 +32,7 @@ Get AWS overpermissioned users:
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/aws/findings/{id}/graph.overprovisionedUserFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings/{id}/microsoft.graph.overprovisionedUserFinding
 ```
 
 Get Azure overpermissioned users:
@@ -41,7 +41,7 @@ Get Azure overpermissioned users:
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/azure/findings/{id}/graph.overprovisionedUserFinding
+GET /identityGovernance/permissionsAnalytics/azure/findings/{id}/microsoft.graph.overprovisionedUserFinding
 ```
 
 Get GCP overpermissioned users:
@@ -50,7 +50,7 @@ Get GCP overpermissioned users:
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/gcp/findings/{id}/graph.overprovisionedUserFinding
+GET /identityGovernance/permissionsAnalytics/gcp/findings/{id}/microsoft.graph.overprovisionedUserFinding
 ```
 
 ## Optional query parameters
@@ -81,7 +81,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/MSxPdmVycHJvdmlzaW9uZWRVc2VyRmluZGluZywxMjU0MjA/graph.overprovisionedUserFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/MSxPdmVycHJvdmlzaW9uZWRVc2VyRmluZGluZywxMjU0MjA/microsoft.graph.overprovisionedUserFinding
 ```
 
 ### Response

@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/gcp/findings/graph.privilegeEscalationGcpServiceAccountFinding
+GET /identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.privilegeEscalationGcpServiceAccountFinding
 ```
 
 ## Optional query parameters
@@ -59,7 +59,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/graph.privilegeEscalationGcpServiceAccountFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.privilegeEscalationGcpServiceAccountFinding
 ```
 
 ### Response
@@ -77,7 +77,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/gcp/findings/graph.privilegeEscalationGcpServiceAccountFinding",
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/gcp/findings/microsoft.graph.privilegeEscalationGcpServiceAccountFinding",
   "value": [
     {
       "@odata.type": "graph.privilegeEscalationGcpServiceAccountFinding",
@@ -110,7 +110,7 @@ Content-Type: application/json
       }
     }
   ],
-  "@odata.nextLink": "https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/graph.privilegeEscalationGcpServiceAccountFinding?$skiptoken=foobar"
+  "@odata.nextLink": "https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.privilegeEscalationGcpServiceAccountFinding?$skiptoken=foobar"
 }
 
 ```

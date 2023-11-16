@@ -32,7 +32,7 @@ Get AWS overprovisioned serverless functions:
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/aws/findings/{id}/graph.overprovisionedServerlessFunctionFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings/{id}/microsoft.graph.overprovisionedServerlessFunctionFinding
 ```
 
 Get AWS overprovisioned serverless functions:
@@ -41,7 +41,7 @@ Get AWS overprovisioned serverless functions:
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/azure/findings/{id}/graph.overprovisionedServerlessFunctionFinding
+GET /identityGovernance/permissionsAnalytics/azure/findings/{id}/microsoft.graph.overprovisionedServerlessFunctionFinding
 ```
 
 Get GCP overprovisioned serverless functions:
@@ -50,7 +50,7 @@ Get GCP overprovisioned serverless functions:
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/gcp/findings/{id}/graph.overprovisionedServerlessFunctionFinding
+GET /identityGovernance/permissionsAnalytics/gcp/findings/{id}/microsoft.graph.overprovisionedServerlessFunctionFinding
 ```
 
 ## Optional query parameters
@@ -81,7 +81,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/MSxPdmVycHJvdmlzaW9uZWRTZXJ2ZXJsZXNzRnVuY3Rpb25GaW5kaW5nLDQ3MDQ/graph.overprovisionedServerlessFunctionFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/MSxPdmVycHJvdmlzaW9uZWRTZXJ2ZXJsZXNzRnVuY3Rpb25GaW5kaW5nLDQ3MDQ/microsoft.graph.overprovisionedServerlessFunctionFinding
 ```
 
 ### Response

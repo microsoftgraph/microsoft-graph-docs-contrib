@@ -33,7 +33,7 @@ List AWS overpermissioned users:
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/aws/findings/graph.overprovisionedUserFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.overprovisionedUserFinding
 ```
 
 List Azure overpermissioned users:
@@ -42,7 +42,7 @@ List Azure overpermissioned users:
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/azure/findings/graph.overprovisionedUserFinding
+GET /identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.overprovisionedUserFinding
 ```
 
 List GCP overpermissioned users:
@@ -51,7 +51,7 @@ List GCP overpermissioned users:
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/gcp/findings/graph.overprovisionedUserFinding
+GET /identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.overprovisionedUserFinding
 ```
 
 ## Optional query parameters
@@ -82,7 +82,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/graph.overprovisionedUserFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.overprovisionedUserFinding
 ```
 
 ### Response
@@ -100,7 +100,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/azure/findings/graph.overprovisionedUserFinding",
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/azure/findings/microsoft.graph.overprovisionedUserFinding",
   "value": [
     {
       "@odata.type": "graph.overprovisionedUserFinding",

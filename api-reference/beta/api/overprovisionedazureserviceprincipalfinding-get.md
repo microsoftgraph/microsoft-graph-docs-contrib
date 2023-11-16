@@ -81,7 +81,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/azure/findings/graph.overprovisionedAzureServicePrincipalFinding",
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/azure/findings/microsoft.graph.overprovisionedAzureServicePrincipalFinding",
   "value": [
     {
       "@odata.type": "graph.overprovisionedAzureServicePrincipalFinding",

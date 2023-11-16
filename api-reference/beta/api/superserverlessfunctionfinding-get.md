@@ -31,7 +31,7 @@ Get AWS super serverless functions:
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/aws/findings/{id}/graph.superServerlessFunctionFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings/{id}/microsoft.graph.superServerlessFunctionFinding
 ```
 
 Get Azure super serverless functions:
@@ -40,7 +40,7 @@ Get Azure super serverless functions:
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/azure/findings('id')/graph.superServerlessFunctionFinding
+GET /identityGovernance/permissionsAnalytics/azure/findings/{id}/microsoft.graph.superServerlessFunctionFinding
 ```
 
 Get GCP super serverless functions:
@@ -49,7 +49,7 @@ Get GCP super serverless functions:
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/gcp/findings('id')/graph.superServerlessFunctionFinding
+GET /identityGovernance/permissionsAnalytics/gcp/findings/{id}/microsoft.graph.superServerlessFunctionFinding
 ```
 
 ## Optional query parameters
@@ -77,7 +77,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/c3VwZXJTZXJ2ZXJsZXNzRnVuY3Rpb25GaW5kaW4z/graph.superServerlessFunctionFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/c3VwZXJTZXJ2ZXJsZXNzRnVuY3Rpb25GaW5kaW4z/microsoft.graph.superServerlessFunctionFinding
 ```
 
 ### Response
@@ -94,7 +94,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/azure/findings/graph.superServerlessFunctionFinding",
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/azure/findings/microsoft.graph.superServerlessFunctionFinding",
   "value": [
     {
       "@odata.type": "graph.superServerlessFunctionFinding",

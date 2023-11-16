@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/aws/findings/graph.awsIdentityAcessManagementKeyUsageFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.awsIdentityAcessManagementKeyUsageFinding
 ```
 
 ## Optional query parameters
@@ -58,7 +58,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.awsIdentityAcessManagementKeyUsageFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.awsIdentityAcessManagementKeyUsageFinding
 ```
 
 
@@ -76,7 +76,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.awsIdentityAcessManagementKeyUsageFinding",
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/aws/findings/microsoft.graph.awsIdentityAcessManagementKeyUsageFinding",
   "value": [
     {
       "@odata.type": "graph.awsIdentityAcessManagementKeyUsageFinding",

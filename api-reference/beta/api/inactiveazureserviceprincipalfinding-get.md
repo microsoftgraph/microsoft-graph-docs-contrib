@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/azure/findings/{id}/graph.inactiveAzureServicePrincipalFinding
+GET /identityGovernance/permissionsAnalytics/azure/findings/{id}/microsoft.graph.inactiveAzureServicePrincipalFinding
 ```
 
 
@@ -60,7 +60,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/MSxJbmFjdGl2ZUF6dXJlU2VydmljZVByaW5jaXBhbEZpbmRpbmcsMTA3NDQz/graph.inactiveAzureServicePrincipalFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/MSxJbmFjdGl2ZUF6dXJlU2VydmljZVByaW5jaXBhbEZpbmRpbmcsMTA3NDQz/microsoft.graph.inactiveAzureServicePrincipalFinding
 ```
 
 ### Response

@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/aws/findings/graph.awsExternalSystemAccessRoleFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.awsExternalSystemAccessRoleFinding
 ```
 
 ## Optional query parameters
@@ -58,7 +58,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.awsExternalSystemAccessRoleFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.awsExternalSystemAccessRoleFinding
 ```
 
 
@@ -76,7 +76,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.awsExternalSystemAccessRoleFinding",
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/aws/findings/microsoft.graph.awsExternalSystemAccessRoleFinding",
   "value": [
     {
     "@odata.type": "graph.awsExternalSystemAccessRoleFinding",
@@ -108,7 +108,7 @@ Content-Type: application/json
     "createdDateTime": "2020-10-11T20:11:45.6711Z",
     }
   ],
-  "@odata.nextLink": "https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.awsExternalSystemAccessRoleFinding?$skiptoken=foobar"
+  "@odata.nextLink": "https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.awsExternalSystemAccessRoleFinding?$skiptoken=foobar"
 }
 ```
 

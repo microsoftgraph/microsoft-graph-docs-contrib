@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/aws/findings/{id}/graph.encryptedAwsStorageBucketFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings/{id}/microsoft.graph.encryptedAwsStorageBucketFinding
 ```
 
 ## Optional query parameters
@@ -58,7 +58,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/MSxFbmNyeXB0ZWRBd3NTdG9yYWdlQnVja2V0RmluZGluZywyNTA4NDA/graph.encryptedAwsStorageBucketFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/MSxFbmNyeXB0ZWRBd3NTdG9yYWdlQnVja2V0RmluZGluZywyNTA4NDA/microsoft.graph.encryptedAwsStorageBucketFinding
 ```
 
 

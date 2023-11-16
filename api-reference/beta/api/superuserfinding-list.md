@@ -31,7 +31,7 @@ List AWS super users:
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/aws/findings/graph.superUserFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.superUserFinding
 ```
 
 List Azure super users:
@@ -40,7 +40,7 @@ List Azure super users:
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/azure/findings/graph.superUserFinding
+GET /identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.superUserFinding
 ```
 
 List GCP super users:
@@ -49,7 +49,7 @@ List GCP super users:
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/gcp/findings/graph.superUserFinding
+GET /identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.superUserFinding
 ```
 
 ## Optional query parameters
@@ -78,7 +78,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/graph.superUserFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.superUserFinding
 ```
 
 
@@ -96,7 +96,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/gcp/findings/graph.superUserFinding",
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/gcp/findings/microsoft.graph.superUserFinding",
   "value": [
     {
       "@odata.type": "graph.superUserFinding",

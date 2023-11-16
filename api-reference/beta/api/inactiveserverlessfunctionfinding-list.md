@@ -94,7 +94,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.inactiveServerlessFunctionFinding",
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/aws/findings/microsoft.graph.inactiveServerlessFunctionFinding",
   "value": [
     {
       "@odata.type": "graph.inactiveServerlessFunctionFinding",

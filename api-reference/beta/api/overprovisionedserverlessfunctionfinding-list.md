@@ -33,7 +33,7 @@ List AWS overprovisioned serverless functions:
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/aws/findings/graph.overprovisionedServerlessFunctionFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.overprovisionedServerlessFunctionFinding
 ```
 
 List Azure overprovisioned serverless functions:
@@ -42,7 +42,7 @@ List Azure overprovisioned serverless functions:
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/azure/findings/graph.overprovisionedServerlessFunctionFinding
+GET /identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.overprovisionedServerlessFunctionFinding
 ```
 
 List GCP overprovisioned serverless functions:
@@ -51,7 +51,7 @@ List GCP overprovisioned serverless functions:
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/gcp/findings/graph.overprovisionedServerlessFunctionFinding
+GET /identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.overprovisionedServerlessFunctionFinding
 ```
 
 ## Optional query parameters
@@ -82,7 +82,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/graph.overprovisionedServerlessFunctionFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.overprovisionedServerlessFunctionFinding
 ```
 
 ### Response
@@ -100,7 +100,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/azure/findings/graph.overprovisionedServerlessFunctionFinding",
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/azure/findings/microsoft.graph.overprovisionedServerlessFunctionFinding",
   "value": [
     {
       "@odata.type": "graph.overprovisionedServerlessFunctionFinding",

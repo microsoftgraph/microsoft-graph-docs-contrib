@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ```http
-GET /identityGovernance/permissionsAnalytics/aws/findings/{id}/graph.inactiveAwsRoleFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings/{id}/microsoft.graph.inactiveAwsRoleFinding
 ```
 
 ## Optional query parameters
@@ -59,7 +59,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/MSxJbmFjdGl2ZUF3c1JvbGVGaW5kaW5nLDY1MTY0MA/graph.inactiveAwsRoleFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/MSxJbmFjdGl2ZUF3c1JvbGVGaW5kaW5nLDY1MTY0MA/microsoft.graph.inactiveAwsRoleFinding
 ```
 
 

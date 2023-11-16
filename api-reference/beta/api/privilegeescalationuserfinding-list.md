@@ -31,7 +31,7 @@ List AWS users with privilege escalation:
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/aws/findings/graph.privilegeEscalationUserFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.privilegeEscalationUserFinding
 ```
 
 List GCP users with privilege escalation:
@@ -40,7 +40,7 @@ List GCP users with privilege escalation:
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/gcp/findings/graph.privilegeEscalationUserFinding
+GET /identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.privilegeEscalationUserFinding
 ```
 
 ## Optional query parameters
@@ -69,7 +69,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/aws/findings/graph.privilegeEscalationUserFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.privilegeEscalationUserFinding
 ```
 
 
@@ -87,7 +87,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.privilegeEscalationUserFinding",
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/aws/findings/microsoft.graph.privilegeEscalationUserFinding",
   "value": [
     {
       "@odata.type": "graph.privilegeEscalationUserFinding",
@@ -120,6 +120,6 @@ Content-Type: application/json
       }
     },
   ],
-  "@odata.nextLink": "https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.privilegeEscalationUserFinding?$skiptoken=foobar"
+  "@odata.nextLink": "https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.privilegeEscalationUserFinding?$skiptoken=foobar"
 }
 ```

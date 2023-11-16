@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/azure/findings/graph.encryptedAzureStorageAccountFinding
+GET /identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.encryptedAzureStorageAccountFinding
 ```
 
 ## Optional query parameters
@@ -59,7 +59,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/graph.encryptedAzureStorageAccountFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.encryptedAzureStorageAccountFinding
 ```
 
 
@@ -77,7 +77,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/azure/findings/graph.encryptedAzureStorageAccountFinding",
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/azure/findings/microsoft.graph.encryptedAzureStorageAccountFinding",
   "value": [
     {
       "@odata.type": "graph.encryptedAzureStorageAccountFinding",

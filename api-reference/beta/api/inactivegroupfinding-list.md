@@ -80,7 +80,7 @@ The following example shows a request to list GCP inactive groups.
 }
 -->
 ```http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/graph.inactiveGroupFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.inactiveGroupFinding
 ```
 
 ### Response
