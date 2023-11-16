@@ -134,7 +134,7 @@ Content-type: application/json
 
 #### Request
 
-The following example shows a request. The value of `resource/id` in the filter, containing the resource ID, can be obtained from the response to [list all resources in a catalog](accesspackagecatalog-list-resources.md?view=graph-rest-1.0&tabs=http#example-1-list-all-resources-in-a-catalog).
+The following example shows a request. The value of `resource/id` in the filter, containing the resource ID, can be obtained from the response to [list all resources in a catalog](accesspackagecatalog-list-resources.md#example-1-list-all-resources-in-a-catalog).
 
 <!-- {
   "blockType": "request",
@@ -167,7 +167,7 @@ Content-type: application/json
     {
       "id": "id-value",
       "displayName": "Woodgrove Visitors",
-      "originId": 5,
+      "originId": "5",
       "originSystem": "SharePointOnline"
     }
   ]
