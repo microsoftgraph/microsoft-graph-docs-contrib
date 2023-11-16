@@ -49,7 +49,7 @@ If successful, this action returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "filestoragecontainerthis.delete-permissions"
@@ -59,9 +59,8 @@ The following is an example of a request.
 DELETE /storage/fileStorage/containers/{containerId}/permissions/{permissionId}
 ```
 
-
 ### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
