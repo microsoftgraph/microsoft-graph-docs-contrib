@@ -7,7 +7,8 @@ ms.prod: "files"
 doc_type: apiPageType
 ---
 
-# Delete fileStorageContainer
+# Delete a fileStorageContainer
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
