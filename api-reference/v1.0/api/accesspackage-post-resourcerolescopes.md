@@ -53,7 +53,7 @@ If successful, this method returns a 200-series response code and a new [accessP
 
 The following is an example of the request adding a SharePoint Online site role to an access package's list of resource roles.  The access package resource for the site must already have been added to the access package catalog containing this access package.
 
-The request contains an [accessPackageResourceRole](../resources/accesspackageresourcerole.md) object. Each type of resource defines the format of the originId field in a resource role. For a SharePoint Online site, the originId will be the sequence number of the role in the site.
+The request contains an [accessPackageResourceRole](../resources/accesspackageresourcerole.md) object. Each type of resource defines the format of the originId field in a resource role. For a SharePoint Online site, the originId will be the sequence number of the role in the site.  The resource role can be obtained from a request to [retrieve the roles of a resource for a SharePoint Online site collection](accesspackagecatalog-list-resourceroles.md?view=graph-rest-1.0&tabs=http#example-2-retrieving-the-roles-of-a-resource-for-a-sharepoint-online-site-collection).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -67,9 +67,7 @@ Content-type: application/json
 
 {
     "role": {
-        "id": "6646a29e-da03-49f6-bcd9-dec124492de3",
         "displayName": "Contributors",
-        "description": null,
         "originSystem": "SharePointOnline",
         "originId": "4",
         "resource": {
@@ -77,7 +75,6 @@ Content-type: application/json
         }
     },
     "scope": {
-        "id": "5ae0ae7c-d0a5-42aa-ab37-1f15e9a61d33",
         "displayName": "Root",
         "description": "Root Scope",
         "originId": "https://contoso.sharepoint.com/portals/Community",
