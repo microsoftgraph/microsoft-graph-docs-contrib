@@ -1,6 +1,6 @@
 ---
 title: "authenticationsMetric resource type"
-description: "Represents insights on authentications for registered apps within your Microsoft Entra ID customer tenant during a specific timeframe."
+description: "Represents insights on authentications for apps registered in your tenant configured for Microsoft Entra ID for customers, over a specificed period."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents insights on authentications for registered apps within your Microsoft Entra ID customer tenant during a specific timeframe.
+Represents insights on authentications for apps registered in your tenant configured for Microsoft Entra ID for customers, over a specificed period.
 
 Inherits from [entity](../resources/entity.md).
 
