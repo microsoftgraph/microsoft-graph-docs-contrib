@@ -7,7 +7,8 @@ ms.prod: "files"
 doc_type: apiPageType
 ---
 
-# Update custom properties ofa  fileStorageContainer
+# Update custom properties of a fileStorageContainer
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
