@@ -1,6 +1,6 @@
 ---
 title: "List daily activeUsersBreakdown"
-description: "Get a list of daily activeUsersBreakdown on apps registered in your Microsoft Entra External ID for customers tenant."
+description: "Get a list of daily activeUsersBreakdown on apps registered in your tenant configured for Microsoft Entra External ID for customers."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a breakdown of the [activeUsersBreakdown](../resources/activeusersbreakdownmetric.md) on apps registered in your Microsoft Entra External ID for customers tenant.
+Get a list of daily [activeUsersBreakdown](../resources/activeusersbreakdownmetric.md) on apps registered in your tenant configured for Microsoft Entra External ID for customers.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -36,7 +36,7 @@ GET /reports/userInsights/daily/activeUsersBreakdown
 ```
 
 ## Optional query parameters
-This method supports `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -62,7 +62,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/reports/userInsights/daily/activeUsersBreakdown
 ```
-
 
 ### Response
 The following example shows the response.
@@ -99,4 +98,3 @@ Content-Type: application/json
   ]
 }
 ```
-
