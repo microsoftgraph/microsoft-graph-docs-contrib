@@ -48,7 +48,7 @@ If successful, this action returns a `200 OK` response code.
 ## Examples
 
 ### Request
-The following is an example of getting a custom propety names "clientUniquieId".
+The following example on how to get a custom property names "clientUniquieId".
 <!-- {
   "blockType": "request",
   "name": "filestoragecontainerthis.list-customproperty"
@@ -76,7 +76,7 @@ Content-type: application/json
 
 ```
 ### Request
-The following example shows how to get all custom properties of a fileStorageContainer.
+The following example shows how to get all the custom properties of a fileStorageContainer.
 <!-- {
   "blockType": "request",
   "name": "filestoragecontainerthis.list-customproperty"
