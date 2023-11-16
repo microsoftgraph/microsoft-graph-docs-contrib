@@ -22,7 +22,7 @@ Sign-in frequency – every time now supports reauthenticate scenarios for any a
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|authenticationType |signInFrequencyAuthenticationType  | The possible values are `primaryAndSecondaryAuthentication`, `secondaryAuthentication`, `unknownFutureValue`. When configuring Sign-in frequency policy with signInFrequencyInterval of `timeBased`, the authenticationType property is not required. |
+|authenticationType |signInFrequencyAuthenticationType  | The possible values are `primaryAndSecondaryAuthentication`, `secondaryAuthentication`, `unknownFutureValue`.  This property isn't required when using signInFrequencyInterval with the value of `timeBased`. |
 |frequencyInterval  |signInFrequencyInterval  | The possible values are `timeBased`, `everyTime`, `unknownFutureValue`.|
 |isEnabled     |Boolean      | Specifies whether the session control is enabled. |
 |type          |signinFrequencyType       | Possible values are: `days`, `hours`, or `null` if frequencyInterval is `everyTime` .|
