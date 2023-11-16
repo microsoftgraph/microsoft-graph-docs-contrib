@@ -1,6 +1,5 @@
 ---
 title: "List fileStorageContainer custom properties"
-
 description: "List the custom properties of a fileStorageContainer"
 author: "tonchan-msft"
 ms.localizationpriority: medium
@@ -13,8 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the custom properties of a fileStorageContainer. The caller can either retrieve all custom properties or get a specific property by name.
-
+List the custom properties of a fileStorageContainer. The caller can retrieve all custom properties or get a specific property by name.
 
 The application calling this API must have permission to read fileStorageContainers for the respective container type.
 
@@ -60,7 +58,6 @@ The following is an example of getting a custom propety names "clientUniquieId".
 GET /storage/fileStorage/containers/{containerId}/customProperties/clientUniqueId
 ```
 
-
 ### Response
 The following is an example of the response.
 <!-- {
@@ -79,7 +76,7 @@ Content-type: application/json
 
 ```
 ### Request
-The following is an example of getting all custom properties of a fileStorageContainer.
+The following example shows how to get all custom properties of a fileStorageContainer.
 <!-- {
   "blockType": "request",
   "name": "filestoragecontainerthis.list-customproperty"
@@ -89,9 +86,8 @@ The following is an example of getting all custom properties of a fileStorageCon
 GET /storage/fileStorage/containers/{containerId}/customProperties/
 ```
 
-
 ### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
