@@ -20,8 +20,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List daily activeUsers](../api/dailyuserinsightmetricsroot-list-activeusers.md)|[activeUsers](../resources/activeusersmetric.md) collection.|Get a list of daily [active users](../resources/activeusersmetric.md) on apps registered in your tenant configured for Microsoft Entra External ID for customers.|
-|[List monthly activeUsers](../api/monthlyuserinsightsmetricsroot-list-activeusers.md)|[activeUsers](../resources/activeusersmetric.md) collection.|Get a list of monthly [active users](../resources/activeusersmetric.md) on apps registered in your tenant configured for Microsoft Entra External ID for customers.|
+|[List daily activeUsers](../api/dailyuserinsightmetricsroot-list-activeusers.md)|[activeUsersMetric](../resources/activeusersmetric.md) collection.|Get a list of daily [active users](../resources/activeusersmetric.md) on apps registered in your tenant configured for Microsoft Entra External ID for customers.|
+|[List monthly activeUsers](../api/monthlyuserinsightsmetricsroot-list-activeusers.md)|[activeUsersMetric](../resources/activeusersmetric.md) collection.|Get a list of monthly [active users](../resources/activeusersmetric.md) on apps registered in your tenant configured for Microsoft Entra External ID for customers.|
 
 ## Properties
 |Property|Type|Description|
