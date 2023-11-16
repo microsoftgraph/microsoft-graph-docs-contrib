@@ -7,13 +7,15 @@ ms.prod: "files"
 doc_type: apiPageType
 ---
 
-# Add permission to fileStorageContainer
+# Add permissions to fileStorageContainer
+
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add [permissions](../resources/permission.md) to an existing fileStorageContainer. The application calling this API must have permission to add fileStorageContainers permissions for the respective container type.
+Add [permissions](../resources/permission.md) to an existing fileStorageContainer. The application calling this API must have permissions to add fileStorageContainers permissions for the respective container type.
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
