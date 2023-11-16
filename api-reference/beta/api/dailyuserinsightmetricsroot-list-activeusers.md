@@ -1,6 +1,6 @@
 ---
 title: "List daily activeUsers"
-description: "Get a list of daily activeUsers on apps registered in your Microsoft Entra External ID for customers tenant."
+description: "Get a list of daily activeUsers on apps registered in your tenant configured for Microsoft Entra External ID for customers."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the daily [activeUsers](../resources/activeusersmetric.md) on apps registered in your Microsoft Entra External ID for customers tenant.
+Get a list of daily [activeUsers](../resources/activeusersmetric.md) on apps registered in your tenant configured for Microsoft Entra External ID for customers.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -93,4 +93,3 @@ Content-Type: application/json
   ]
 }
 ```
-
