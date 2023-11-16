@@ -16,11 +16,13 @@ Namespace: microsoft.graph
 
 Session control to enforce sign-in frequency. Inherits from [conditionalAccessSessionControl](conditionalaccesssessioncontrol.md).
 
+Sign-in frequency – every time now supports reauthenticate scenarios for any application, Authentication Context or User actions in Public Preview. This preview is an addition to the current “Sign-in frequency – every time” setting in Conditional Access, which is already in General Availability and supports scenarios of reauthentication for Risky users, Risky sign-ins, and Intune device enrollment. [[Learn more](https://aka.ms/RequireReauthentication)] about supported scenarios. 
+
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|authenticationType |signInFrequencyAuthenticationType  | The possible values are `primaryAndSecondaryAuthentication`, `secondaryAuthentication`, `unknownFutureValue`.|
+|authenticationType |signInFrequencyAuthenticationType  | The possible values are `primaryAndSecondaryAuthentication`, `secondaryAuthentication`, `unknownFutureValue`. When configuring Sign-in frequency policy with signInFrequencyInterval of `timeBased`, the authenticationType property is not required. |
 |frequencyInterval  |signInFrequencyInterval  | The possible values are `timeBased`, `everyTime`, `unknownFutureValue`.|
 |isEnabled     |Boolean      | Specifies whether the session control is enabled. |
 |type          |signinFrequencyType       | Possible values are: `days`, `hours`, or `null` if frequencyInterval is `everyTime` .|
