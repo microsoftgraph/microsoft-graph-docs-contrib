@@ -1,6 +1,5 @@
 ---
 title: "Add custom properties to a fileStorageContainer"
-
 description: "Add custom properties to a fileStorageContainer"
 author: "tonchan-msft"
 ms.localizationpriority: medium
@@ -8,14 +7,15 @@ ms.prod: "files"
 doc_type: apiPageType
 ---
 
-# Add custom properties to fileStorageContainer
+# Add custom properties to a fileStorageContainer
+
 Namespace: microsoft.graph
 
 !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add custom properties to fileStorageContainer. 
+Add custom properties to a fileStorageContainer. 
 
-The application calling this API must have write permission to fileStorageContainers for the respective container type.
+The application calling this API must have write permissions to fileStorageContainers for the respective container type.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -58,7 +58,7 @@ If successful, this action returns either a `200 Created` or `201 Created` respo
 ## Examples
 
 ### Request
-The following is an example of creating a custom property called "clientUniqueId" to a container.
+The following example shows how to create a custom property called "clientUniqueId" for a container.
 <!-- {
   "blockType": "request",
   "name": "filestoragecontainerthis.add-customproperty"
@@ -76,7 +76,7 @@ Content-Type: application/json
 ```
 
 ### Response
-The following is an example of the response. By default, the property is not searchable.
+The following example shows the response. By default, the property isn't searchable.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -95,7 +95,7 @@ Content-type: application/json
 ```
 
 ### Request
-The following is an example of creating a searchable custom property called "clientUniqueId" to a container.
+The following example shows how to create a searchable custom property called "clientUniqueId" for a container.
 <!-- {
   "blockType": "request",
   "name": "filestoragecontainerthis.add-customproperty"
@@ -115,7 +115,7 @@ Content-Type: application/json
 
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -134,7 +134,7 @@ Content-type: application/json
 ```
 
 ### Request
-The following is an example of creating multiple custom properties to a container.
+The following example shows how to create multiple custom properties for a container.
 <!-- {
   "blockType": "request",
   "name": "filestoragecontainerthis.add-customproperty"
@@ -156,9 +156,8 @@ Content-Type: application/json
 }
 ```
 
-
 ### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
