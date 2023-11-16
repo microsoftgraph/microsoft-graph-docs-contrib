@@ -6,21 +6,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models.IndustryData;
 
-var requestBody = new Microsoft.Graph.Beta.Models.IndustryData.SourceSystemDefinition
+var requestBody = new SourceSystemDefinition
 {
 	DisplayName = "Rostering source",
-	UserMatchingSettings = new List<Microsoft.Graph.Beta.Models.IndustryData.UserMatchingSetting>
+	UserMatchingSettings = new List<UserMatchingSetting>
 	{
-		new Microsoft.Graph.Beta.Models.IndustryData.UserMatchingSetting
+		new UserMatchingSetting
 		{
-			MatchTarget = new Microsoft.Graph.Beta.Models.IndustryData.UserMatchTargetReferenceValue
+			MatchTarget = new UserMatchTargetReferenceValue
 			{
 				Code = "userPrincipalName",
 			},
 			PriorityOrder = 0,
-			SourceIdentifier = new Microsoft.Graph.Beta.Models.IndustryData.IdentifierTypeReferenceValue
+			SourceIdentifier = new IdentifierTypeReferenceValue
 			{
 				Code = "username",
 			},
@@ -31,14 +32,14 @@ var requestBody = new Microsoft.Graph.Beta.Models.IndustryData.SourceSystemDefin
 				},
 			},
 		},
-		new Microsoft.Graph.Beta.Models.IndustryData.UserMatchingSetting
+		new UserMatchingSetting
 		{
-			MatchTarget = new Microsoft.Graph.Beta.Models.IndustryData.UserMatchTargetReferenceValue
+			MatchTarget = new UserMatchTargetReferenceValue
 			{
 				Code = "userPrincipalName",
 			},
 			PriorityOrder = 1,
-			SourceIdentifier = new Microsoft.Graph.Beta.Models.IndustryData.IdentifierTypeReferenceValue
+			SourceIdentifier = new IdentifierTypeReferenceValue
 			{
 				Code = "username",
 			},
@@ -51,6 +52,8 @@ var requestBody = new Microsoft.Graph.Beta.Models.IndustryData.SourceSystemDefin
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.External.IndustryData.SourceSystems.PostAsync(requestBody);
 
 

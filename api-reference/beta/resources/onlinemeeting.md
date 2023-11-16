@@ -26,7 +26,16 @@ This resource supports subscribing to [change notifications](/graph/webhooks). F
 | [Update](../api/onlinemeeting-update.md) | [onlineMeeting](onlinemeeting.md) | Update the properties of an **onlineMeeting** object. |
 | [Delete](../api/onlinemeeting-delete.md) | None | Delete an **onlineMeeting** object. |
 | [Create or get onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Create an online meeting with a custom, external ID. If the meeting already exists, retrieve its properties. |
-| [List transcripts of an onlineMeeting](../api/onlinemeeting-list-transcripts.md) | [callTranscript](callTranscript.md) collection | Retrieve the list of transcripts of an **onlineMeeting**. |
+| [List transcripts of an onlineMeeting](../api/onlinemeeting-list-transcripts.md) | [callTranscript](calltranscript.md) collection | Retrieve the list of transcripts of an **onlineMeeting**. |
+| [List recordings of an onlineMeeting](../api/onlinemeeting-list-recordings.md) | [callRecording](callrecording.md) collection | Get the list of [callRecording](../resources/callrecording.md) objects associated with an [onlineMeeting](../resources/onlinemeeting.md). |
+
+> [!NOTE]
+> 
+> A bearer token is required for the `Authorization` header for all the methods listed in the previous table. For details about how to get the `token` for the `Authorization` header, see [Get access on behalf of a user](/graph/auth-v2-user?tabs=http#3-request-an-access-token).
+
+> [!CAUTION]
+> 
+> Graph Online Meeting APIs that support Microsoft Teams live event is deprecated and will stop functioning on September 30, 2024. New Graph APIs will replace this in Spring of 2024. For more information, see [Retirement of Teams live events API on Microsoft Graph](https://devblogs.microsoft.com/microsoft365dev/deprecation-of-teams-live-events-api-on-microsoft-graph/). 
 
 ## Properties
 
@@ -37,17 +46,20 @@ This resource supports subscribing to [change notifications](/graph/webhooks). F
 | allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Specifies the mode of meeting chat. |
 | allowParticipantsToChangeName | Boolean | Specifies if participants are allowed to rename themselves in an instance of the meeting. |
 | allowTeamworkReactions | Boolean | Indicates if Teams reactions are enabled for the meeting. |
+| allowTranscription | Boolean | Indicates whether transcription is enabled for the meeting. |
+| allowRecording | Boolean | Indicates whether recording is enabled for the meeting. |
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)| Specifies who can be a presenter in a meeting. |
-| alternativeRecording  | Stream | The content stream of the alternative recording of a [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only. |
-| attendeeReport        | Stream | The content stream of the attendee report of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only.   |
+| alternativeRecording (deprecated) | Stream | The content stream of the alternative recording of a [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only. |
+| anonymizeIdentityForRoles    | onlineMeetingRole collection | Specifies whose identity will be anonymized in the meeting. Possible values are: `attendee`. The `attendee` value cannot be removed through a PATCH operation once added.|
+| attendeeReport (deprecated)       | Stream | The content stream of the attendee report of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only.   |
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for an online meeting. Read-only. |
-| broadcastSettings     | [broadcastMeetingSettings](broadcastMeetingSettings.md)     | Settings related to a live event.      |
+| broadcastSettings (deprecated)   | [broadcastMeetingSettings](broadcastMeetingSettings.md)     | Settings related to a live event.      |
 | chatInfo              | [chatInfo](chatinfo.md) | The chat information associated with this online meeting.  |
 | creationDateTime      | DateTime | The meeting creation time in UTC. Read-only.     |
 | endDateTime           | DateTime | The meeting end time in UTC.   |
 | externalId            | String | The external ID. A custom ID. Optional.      |
 | id | String | The default ID associated with the online meeting. Read-only.    |
-| isBroadcast | Boolean | Indicates whether this is a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). |
+| isBroadcast (deprecated) | Boolean | Indicates whether this is a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). |
 | isEntryExitAnnounced  | Boolean | Indicates whether to announce when callers join or leave. |
 | joinInformation | [itemBody](itembody.md) | The join information in the language and locale variant specified in 'Accept-Language' request HTTP header. Read-only. |
 | joinMeetingIdSettings | [joinMeetingIdSettings](joinmeetingidsettings.md) | Specifies the **joinMeetingId**, the meeting passcode, and the requirement for the passcode. Once an **onlineMeeting** is created, the **joinMeetingIdSettings** cannot be modified. To make any changes to this property, the meeting needs to be canceled and a new one needs to be created. |
@@ -55,7 +67,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks). F
 | lobbyBypassSettings | [lobbyBypassSettings](lobbyBypassSettings.md) | Specifies which participants can bypass the meeting lobby. |
 | participants | [meetingParticipants](meetingparticipants.md) | The participants associated with the online meeting. This includes the organizer and the attendees. |
 | recordAutomatically | Boolean | Indicates whether to record the meeting automatically. |
-| recording | Stream | The content stream of the recording of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only. |
+| recording (deprecated) | Stream | The content stream of the recording of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only. |
 | shareMeetingChatHistoryDefault | [meetingChatHistoryDefaultMode](#meetingchathistorydefaultmode-values) | Specifies whether meeting chat history is shared with participants.  Possible values are: `all`, `none`, `unknownFutureValue`. |
 | startDateTime | DateTime | The meeting start time in UTC. |
 | subject | String | The subject of the online meeting. |
@@ -77,7 +89,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks). F
 | organization       | Everyone in organizer’s organization is a presenter.          |
 | roleIsPresenter    | Only the participants whose role is presenter are presenters. |
 | organizer          | Only the organizer  is a presenter.                           |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use.             |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.             |
 
 > [!TIP]
 >
@@ -90,7 +102,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks). F
 | enabled            | Meeting chat is enabled.                                               |
 | disabled           | Meeting chat is disabled.                                              |
 | limited            | Meeting chat is enabled but only for the duration of the meeting call. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use.                      |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                      |
 
 ### meetingChatHistoryDefaultMode values
 
@@ -98,16 +110,17 @@ This resource supports subscribing to [change notifications](/graph/webhooks). F
 | ------------------ | ---------------------------------------------------------------------- |
 | all                | All meeting chat history is shared.                                    |
 | none               | No meeting chat history is shared.                                     |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use.                      |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                      |
 
 ## Relationships
 
 | Relationship | Type | Description |
 | ------------ | ---- | ----------- |
-| attendanceReports | [meetingAttendanceReport](meetingAttendanceReport.md)  collection | The attendance reports of an online meeting. Read-only. |
-| registration | [meetingRegistrationBase](meetingregistrationbase.md) | The registration that has been enabled for an online meeting. One online meeting can only have one registration enabled.|
-| meetingAttendanceReport (deprecated) | [meetingAttendanceReport](meetingAttendanceReport.md) | The attendance report of the latest online meeting session. Read-only. |
-| transcripts | [callTranscript](callTranscript.md) collection | The transcripts of an online meeting. Read-only. |
+| attendanceReports | [meetingAttendanceReport](meetingattendancereport.md) collection | The attendance reports of an online meeting. Read-only. |
+| recordings | [callRecording](callrecording.md) collection | The recordings of an online meeting. Read-only. |
+| registration | [meetingRegistration](meetingregistration.md) | The registration that has been enabled for an online meeting. One online meeting can only have one registration enabled.|
+| transcripts | [callTranscript](calltranscript.md) collection | The transcripts of an online meeting. Read-only. |
+| meetingAttendanceReport (deprecated) | [meetingAttendanceReport](meetingattendancereport.md) | The attendance report of the latest online meeting session. Read-only. |
 
 > [!TIP]
 >
@@ -116,10 +129,13 @@ This resource supports subscribing to [change notifications](/graph/webhooks). F
 
 ## JSON representation
 
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
-  "externalId"
+	"externalId"
   ],
   "@odata.type": "microsoft.graph.onlineMeeting"
 }-->
@@ -130,15 +146,12 @@ This resource supports subscribing to [change notifications](/graph/webhooks). F
   "allowMeetingChat": {"@odata.type": "microsoft.graph.meetingChatMode"},
   "allowTeamworkReactions": "Boolean",
   "allowedPresenters": "String",
-  "alternativeRecording": "Stream",
-  "attendeeReport": "Stream",
+  "anonymizeIdentityForRoles": ["String"],
   "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
-  "broadcastSettings": {"@odata.type": "microsoft.graph.broadcastSettings"},
   "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
   "creationDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
   "id": "String (identifier)",  
-  "isBroadcast": "Boolean",
   "isEntryExitAnnounced": "Boolean",
   "joinInformation": {"@odata.type": "microsoft.graph.itemBody"},
   "joinMeetingIdSettings": {"@odata.type": "microsoft.graph.joinMeetingIdSettings"},
@@ -146,7 +159,6 @@ This resource supports subscribing to [change notifications](/graph/webhooks). F
   "lobbyBypassSettings": {"@odata.type": "microsoft.graph.lobbyBypassSettings"},
   "participants": {"@odata.type": "microsoft.graph.meetingParticipants"},
   "recordAutomatically": "Boolean",
-  "recording": "Stream",
   "shareMeetingChatHistoryDefault": "microsoft.graph.meetingChatHistoryDefaultMode",
   "startDateTime": "String (timestamp)",  
   "subject": "String",

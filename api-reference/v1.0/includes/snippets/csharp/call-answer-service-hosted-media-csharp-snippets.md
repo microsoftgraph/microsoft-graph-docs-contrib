@@ -6,38 +6,37 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Communications.Calls.Item.Answer;
+using Microsoft.Graph.Models;
 
-var requestBody = new Microsoft.Graph.Communications.Calls.Item.Answer.AnswerPostRequestBody
+var requestBody = new AnswerPostRequestBody
 {
 	CallbackUri = "https://bot.contoso.com/api/calls",
 	AcceptedModalities = new List<Modality?>
 	{
 		Modality.Audio,
 	},
-	MediaConfig = new MediaConfig
+	MediaConfig = new ServiceHostedMediaConfig
 	{
 		OdataType = "#microsoft.graph.serviceHostedMediaConfig",
-		AdditionalData = new Dictionary<string, object>
+		PreFetchMedia = new List<MediaInfo>
 		{
+			new MediaInfo
 			{
-				"preFetchMedia" , new List<>
-				{
-					new 
-					{
-						Uri = "https://cdn.contoso.com/beep.wav",
-						ResourceId = "1D6DE2D4-CD51-4309-8DAA-70768651088E",
-					},
-					new 
-					{
-						Uri = "https://cdn.contoso.com/cool.wav",
-						ResourceId = "1D6DE2D4-CD51-4309-8DAA-70768651088F",
-					},
-				}
+				Uri = "https://cdn.contoso.com/beep.wav",
+				ResourceId = "1D6DE2D4-CD51-4309-8DAA-70768651088E",
+			},
+			new MediaInfo
+			{
+				Uri = "https://cdn.contoso.com/cool.wav",
+				ResourceId = "1D6DE2D4-CD51-4309-8DAA-70768651088F",
 			},
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Communications.Calls["{call-id}"].Answer.PostAsync(requestBody);
 
 

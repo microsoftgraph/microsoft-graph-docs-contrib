@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.AppCatalogs().TeamsApps().ByTeamsAppId("teamsApp-id").AppDefinitions().ByAppDefinitionId("teamsAppDefinition-id").ColorIcon().HostedContent().Get(context.Background(), nil)
+hostedContent, err := graphClient.AppCatalogs().TeamsApps().ByTeamsAppId("teamsApp-id").AppDefinitions().ByTeamsAppDefinitionId("teamsAppDefinition-id").ColorIcon().HostedContent().Get(context.Background(), nil)
 
 
 ```

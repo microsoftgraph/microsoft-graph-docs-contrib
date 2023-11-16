@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/identity"
+	  graphidentity "github.com/microsoftgraph/msgraph-beta-sdk-go/identity"
 	  //other-imports
 )
 
@@ -18,14 +18,14 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestFilter := "microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/conditions/applications/includeApplications/any"
 
-requestParameters := &graphconfig.IdentityAuthenticationEventsFlowsRequestBuilderGetQueryParameters{
+requestParameters := &graphidentity.IdentityAuthenticationEventsFlowsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.IdentityAuthenticationEventsFlowsRequestBuilderGetRequestConfiguration{
+configuration := &graphidentity.IdentityAuthenticationEventsFlowsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Identity().AuthenticationEventsFlows().Get(context.Background(), configuration)
+authenticationEventsFlows, err := graphClient.Identity().AuthenticationEventsFlows().Get(context.Background(), configuration)
 
 
 ```

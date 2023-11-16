@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.WindowsUpdates
+Import-Module Microsoft.Graph.Beta.WindowsUpdates
 
-Remove-MgWindowsUpdatesDeployment -DeploymentId $deploymentId
+Remove-MgBetaWindowsUpdatesDeployment -DeploymentId $deploymentId
 
 ```

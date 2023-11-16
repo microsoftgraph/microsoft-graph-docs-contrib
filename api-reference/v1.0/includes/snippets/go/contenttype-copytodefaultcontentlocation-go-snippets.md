@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Sites/Item/ContentTypes/Item/CopyToDefaultContentLocation"
+	  graphsites "github.com/microsoftgraph/msgraph-sdk-go/sites"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewCopyToDefaultContentLocationPostRequestBody()
+requestBody := graphsites.NewCopyToDefaultContentLocationPostRequestBody()
 sourceFile := graphmodels.NewItemReference()
 sharepointIds := graphmodels.NewSharepointIds()
 listId := "e2ecf63b-b0fd-48f7-a54a-d8c15479e3b0"

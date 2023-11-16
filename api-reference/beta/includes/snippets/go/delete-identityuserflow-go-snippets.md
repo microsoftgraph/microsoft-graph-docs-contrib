@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Identity().UserFlows().ByUserFlowId("identityUserFlow-id").Delete(context.Background(), nil)
+graphClient.Identity().UserFlows().ByIdentityUserFlowId("identityUserFlow-id").Delete(context.Background(), nil)
 
 
 ```

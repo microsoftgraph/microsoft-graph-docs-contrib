@@ -9,7 +9,7 @@ import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
 	  //other-imports
 )
 
@@ -19,15 +19,15 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
 
-requestParameters := &graphconfig.ItemEventItemRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.ItemEventItemRequestBuilderGetQueryParameters{
 	Select: [] string {"subject","body","bodyPreview","organizer","attendees","start","end","location","hideAttendees"},
 }
-configuration := &graphconfig.ItemEventItemRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemEventItemRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().Events().ByEventId("event-id").Get(context.Background(), configuration)
+events, err := graphClient.Me().Events().ByEventId("event-id").Get(context.Background(), configuration)
 
 
 ```

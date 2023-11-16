@@ -19,7 +19,7 @@ requestBody := graphmodels.NewCalendar()
 name := "Social events"
 requestBody.SetName(&name) 
 
-result, err := graphClient.Me().Calendar().Patch(context.Background(), requestBody, nil)
+calendar, err := graphClient.Me().Calendar().Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -63,6 +63,7 @@ The following table shows the properties that are required when you create the d
 |roleScopeTagIds|String collection|List of Scope Tag IDs for the device health script|
 |isGlobalScript|Boolean|Determines if this is Microsoft Proprietary Script. Proprietary scripts are read-only|
 |highestAvailableVersion|String|Highest available version for a Microsoft Proprietary script|
+|deviceHealthScriptType|[deviceHealthScriptType](../resources/intune-devices-devicehealthscripttype.md)|DeviceHealthScriptType for the script policy. Possible values are: `deviceHealthScript`, `managedInstallerScript`.|
 |detectionScriptParameters|[deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md) collection|List of ComplexType DetectionScriptParameters objects.|
 |remediationScriptParameters|[deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md) collection|List of ComplexType RemediationScriptParameters objects.|
 
@@ -78,7 +79,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts
 Content-type: application/json
-Content-length: 1221
+Content-length: 1276
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScript",
@@ -96,6 +97,7 @@ Content-length: 1221
   ],
   "isGlobalScript": true,
   "highestAvailableVersion": "Highest Available Version value",
+  "deviceHealthScriptType": "managedInstallerScript",
   "detectionScriptParameters": [
     {
       "@odata.type": "microsoft.graph.deviceHealthScriptStringParameter",
@@ -124,7 +126,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1393
+Content-Length: 1448
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScript",
@@ -145,6 +147,7 @@ Content-Length: 1393
   ],
   "isGlobalScript": true,
   "highestAvailableVersion": "Highest Available Version value",
+  "deviceHealthScriptType": "managedInstallerScript",
   "detectionScriptParameters": [
     {
       "@odata.type": "microsoft.graph.deviceHealthScriptStringParameter",

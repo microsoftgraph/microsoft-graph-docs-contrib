@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Settings().BySettingId("directorySetting-id").Delete(context.Background(), nil)
+graphClient.Settings().ByDirectorySettingId("directorySetting-id").Delete(context.Background(), nil)
 
 
 ```

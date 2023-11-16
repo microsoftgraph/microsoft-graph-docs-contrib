@@ -15,25 +15,21 @@ Namespace: microsoft.graph
 
 Set a reaction to a single [chatMessage](../resources/chatmessage.md) or a [chat message reply](../resources/chatmessage.md) in a [channel](../resources/channel.md) or a [chat](../resources/chat.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### Permissions for channel
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-|Delegated (work or school account)| ChannelMessage.Send,  |
-|Delegated (personal Microsoft account)| Not supported. |
-|Application| Not supported. |
+<!-- { "blockType": "permissions", "name": "chatmessage_setreaction" } -->
+[!INCLUDE [permissions-table](../includes/permissions/chatmessage-setreaction-permissions.md)]
 
 ### Permissions for chat
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-|Delegated (work or school account)| Chat.ReadWrite, ChatMessage.Send |
-|Delegated (personal Microsoft account)| Not supported. |
-|Application| Not supported. |
+<!-- { "blockType": "permissions", "name": "chatmessage_setreaction_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/chatmessage-setreaction-2-permissions.md)]
 
 ## HTTP request
 

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Groups().ByGroupId("group-id").Threads().ByThreadId("conversationThread-id").Delete(context.Background(), nil)
+graphClient.Groups().ByGroupId("group-id").Threads().ByConversationThreadId("conversationThread-id").Delete(context.Background(), nil)
 
 
 ```

@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Me/SendMail"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewSendMailPostRequestBody()
+requestBody := graphusers.NewItemSendMailPostRequestBody()
 message := graphmodels.NewMessage()
 subject := "9/9/2018: concert"
 message.SetSubject(&subject) 
@@ -35,7 +36,6 @@ recipient.SetEmailAddress(emailAddress)
 
 toRecipients := []graphmodels.Recipientable {
 	recipient,
-
 }
 message.SetToRecipients(toRecipients)
 
@@ -54,7 +54,6 @@ internetMessageHeader1.SetValue(&value)
 internetMessageHeaders := []graphmodels.InternetMessageHeaderable {
 	internetMessageHeader,
 	internetMessageHeader1,
-
 }
 message.SetInternetMessageHeaders(internetMessageHeaders)
 requestBody.SetMessage(message)

@@ -4,7 +4,7 @@ description: "The **provisionedPlans** property of the user entity and the organ
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "directory-management"
-author: "jumasure"
+author: "adimitui"
 ---
 
 # provisionedPlan resource type
@@ -17,15 +17,15 @@ The **provisionedPlans** property of the [user](user.md) entity and the [organiz
 
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
-|capabilityStatus|String|For example, “Enabled”.|
-|provisioningStatus|String|For example, “Success”.|
-|service|String|The name of the service; for example, “AccessControlS2S”|
+|capabilityStatus|String|For example, "Enabled".|
+|provisioningStatus|String|For example, "Success".|
+|service|String|The name of the service; for example, "AccessControlS2S"|
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+Here's a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",

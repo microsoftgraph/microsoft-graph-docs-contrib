@@ -18,7 +18,6 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 requestBody := graphmodels.NewTokenIssuancePolicy()
 definition := []string {
 	"definition-value",
-
 }
 requestBody.SetDefinition(definition)
 displayName := "displayName-value"
@@ -26,7 +25,7 @@ requestBody.SetDisplayName(&displayName)
 isOrganizationDefault := true
 requestBody.SetIsOrganizationDefault(&isOrganizationDefault) 
 
-result, err := graphClient.Policies().TokenIssuancePolicies().ByTokenIssuancePolicieId("tokenIssuancePolicy-id").Patch(context.Background(), requestBody, nil)
+tokenIssuancePolicies, err := graphClient.Policies().TokenIssuancePolicies().ByTokenIssuancePolicyId("tokenIssuancePolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

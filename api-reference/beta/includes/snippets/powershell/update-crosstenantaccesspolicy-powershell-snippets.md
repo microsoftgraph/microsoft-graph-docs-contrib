@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
 	allowedCloudEndpoints = @(
@@ -13,6 +13,6 @@ $params = @{
 	)
 }
 
-Update-MgPolicyCrossTenantAccessPolicy -BodyParameter $params
+Update-MgBetaPolicyCrossTenantAccessPolicy -BodyParameter $params
 
 ```

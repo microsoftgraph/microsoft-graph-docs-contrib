@@ -21,7 +21,7 @@ requestBody.SetPermissionType(&permissionType)
 clientApplicationsFromVerifiedPublisherOnly := true
 requestBody.SetClientApplicationsFromVerifiedPublisherOnly(&clientApplicationsFromVerifiedPublisherOnly) 
 
-result, err := graphClient.Policies().PermissionGrantPolicies().ByPermissionGrantPolicieId("permissionGrantPolicy-id").Includes().Post(context.Background(), requestBody, nil)
+includes, err := graphClient.Policies().PermissionGrantPolicies().ByPermissionGrantPolicyId("permissionGrantPolicy-id").Includes().Post(context.Background(), requestBody, nil)
 
 
 ```

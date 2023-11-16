@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/teams"
+	  graphteams "github.com/microsoftgraph/msgraph-sdk-go/teams"
 	  //other-imports
 )
 
@@ -18,14 +18,14 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestFilter := "membershipType eq 'private'"
 
-requestParameters := &graphconfig.TeamItemChannelsRequestBuilderGetQueryParameters{
+requestParameters := &graphteams.TeamItemChannelsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.TeamItemChannelsRequestBuilderGetRequestConfiguration{
+configuration := &graphteams.TeamItemChannelsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Teams().ByTeamId("team-id").Channels().Get(context.Background(), configuration)
+channels, err := graphClient.Teams().ByTeamId("team-id").Channels().Get(context.Background(), configuration)
 
 
 ```

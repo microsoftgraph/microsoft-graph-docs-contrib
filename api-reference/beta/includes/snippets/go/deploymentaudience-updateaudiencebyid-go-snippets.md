@@ -8,34 +8,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Admin/Windows/Updates/Deployments/Item/Audience/MicrosoftGraphWindowsUpdatesUpdateAudienceById"
+	  graphadmin "github.com/microsoftgraph/msgraph-beta-sdk-go/admin"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewUpdateAudienceByIdPostRequestBody()
+requestBody := graphadmin.NewUpdateAudienceByIdPostRequestBody()
 memberEntityType := "String"
 requestBody.SetMemberEntityType(&memberEntityType) 
 addMembers := []string {
 	"String",
-
 }
 requestBody.SetAddMembers(addMembers)
 removeMembers := []string {
 	"String",
-
 }
 requestBody.SetRemoveMembers(removeMembers)
 addExclusions := []string {
 	"String",
-
 }
 requestBody.SetAddExclusions(addExclusions)
 removeExclusions := []string {
 	"String",
-
 }
 requestBody.SetRemoveExclusions(removeExclusions)
 

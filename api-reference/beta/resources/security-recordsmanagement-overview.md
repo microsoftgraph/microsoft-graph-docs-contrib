@@ -13,12 +13,12 @@ doc_type: conceptualPageType
 
 The Microsoft Purview records management APIs help organizations manage retention and deletion of data to meet their legal obligations and compliance regulations, and increases efficiency by enabling the regular disposition of items that no longer have to be retained.
 
-The records mangement solution is a part of the Microsoft Purview compliance center.
+The records management solution is a part of the Microsoft Purview compliance center.
 
 ## Manage retention labels
 Records management admins and developers need to maintain records management systems with labels that are created, updated, and deleted periodically.
 
-Developers and compliance admins can use the the records management APIs to perform operations on records management labels in order to maintain their systems.
+Developers and compliance admins can use the records management APIs to perform operations on records management labels in order to maintain their systems.
 
 ## Trigger events for an existing label
 When an employee leaves a company, information is updated in the HR management system. From the leave date, confidential documents need to be retained for a period for 7 years. These documents have the label `Employee_departure` applied.

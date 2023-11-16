@@ -17,7 +17,7 @@ $params = @{
 			id = "d7ddbf876ae340c3a03bada395ec7da7"
 			contentType = "application/vnd.microsoft.teams.messaging-announcementBanner"
 			contentUrl = $null
-			content = "{"title":"Announcement heading","cardImageType":"uploadedImage","cardImageDetails":{"uploadedImageDetail":{"originalImage":{"source":"../hostedContents/1/$value","width":1379,"height":268,"croppedWidth":918.0,"croppedHeight":178.4075416968818,"leftMargin":0.0,"topMargin":90.7962291515591,"imageContentType":"image/png"},"croppedImage":{"source":"../hostedContents/2/$value"}}}}"
+			content = '{"title":"Announcement heading","cardImageType":"uploadedImage","cardImageDetails":{"uploadedImageDetail":{"originalImage":{"source":"../hostedContents/1/$value","width":1379,"height":268,"croppedWidth":918.0,"croppedHeight":178.4075416968818,"leftMargin":0.0,"topMargin":90.7962291515591,"imageContentType":"image/png"},"croppedImage":{"source":"../hostedContents/2/$value"}}}}'
 			name = $null
 			thumbnailUrl = $null
 		}

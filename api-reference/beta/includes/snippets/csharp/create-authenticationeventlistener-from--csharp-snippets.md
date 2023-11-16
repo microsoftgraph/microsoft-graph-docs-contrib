@@ -6,9 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
-var requestBody = new AuthenticationEventListener
+var requestBody = new OnTokenIssuanceStartListener
 {
 	OdataType = "#microsoft.graph.onTokenIssuanceStartListener",
 	Conditions = new AuthenticationConditions
@@ -26,20 +27,17 @@ var requestBody = new AuthenticationEventListener
 		},
 	},
 	Priority = 500,
-	AdditionalData = new Dictionary<string, object>
+	Handler = new OnTokenIssuanceStartCustomExtensionHandler
 	{
+		OdataType = "#microsoft.graph.onTokenIssuanceStartCustomExtensionHandler",
+		CustomExtension = new OnTokenIssuanceStartCustomExtension
 		{
-			"handler" , new 
-			{
-				OdataType = "#microsoft.graph.onTokenIssuanceStartCustomExtensionHandler",
-				CustomExtension = new 
-				{
-					Id = "6fc5012e-7665-43d6-9708-4370863f4e6e",
-				},
-			}
+			Id = "6fc5012e-7665-43d6-9708-4370863f4e6e",
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Identity.AuthenticationEventListeners.PostAsync(requestBody);
 
 

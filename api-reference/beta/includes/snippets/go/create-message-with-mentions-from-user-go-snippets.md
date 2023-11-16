@@ -30,7 +30,6 @@ recipient.SetEmailAddress(emailAddress)
 
 toRecipients := []graphmodels.Recipientable {
 	recipient,
-
 }
 requestBody.SetToRecipients(toRecipients)
 
@@ -45,11 +44,10 @@ mention.SetMentioned(mentioned)
 
 mentions := []graphmodels.Mentionable {
 	mention,
-
 }
 requestBody.SetMentions(mentions)
 
-result, err := graphClient.Me().Messages().Post(context.Background(), requestBody, nil)
+messages, err := graphClient.Me().Messages().Post(context.Background(), requestBody, nil)
 
 
 ```

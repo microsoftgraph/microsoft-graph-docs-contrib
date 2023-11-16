@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	atAprovedLocation = $true
@@ -14,6 +14,6 @@ $params = @{
 	}
 }
 
-Invoke-MgClockTeamScheduleTimeCardIn -TeamId $teamId -BodyParameter $params
+Invoke-MgBetaClockTeamScheduleTimeCardIn -TeamId $teamId -BodyParameter $params
 
 ```

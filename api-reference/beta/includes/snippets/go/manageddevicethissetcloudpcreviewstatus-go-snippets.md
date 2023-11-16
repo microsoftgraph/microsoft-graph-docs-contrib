@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/DeviceManagement/ManagedDevices/Item/SetCloudPcReviewStatus"
+	  graphdevicemanagement "github.com/microsoftgraph/msgraph-beta-sdk-go/devicemanagement"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewSetCloudPcReviewStatusPostRequestBody()
+requestBody := graphdevicemanagement.NewSetCloudPcReviewStatusPostRequestBody()
 reviewStatus := graphmodels.NewCloudPcReviewStatus()
 inReview := true
 reviewStatus.SetInReview(&inReview) 

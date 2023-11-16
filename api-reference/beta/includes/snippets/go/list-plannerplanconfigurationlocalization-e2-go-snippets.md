@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/solutions"
+	  graphsolutions "github.com/microsoftgraph/msgraph-beta-sdk-go/solutions"
 	  //other-imports
 )
 
@@ -18,14 +18,14 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestFilter := "languageTag eq 'en-us'"
 
-requestParameters := &graphconfig.SolutionsBusinessScenarioItemPlannerPlanConfigurationLocalizationsRequestBuilderGetQueryParameters{
+requestParameters := &graphsolutions.SolutionsBusinessScenarioItemPlannerPlanConfigurationLocalizationsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.SolutionsBusinessScenarioItemPlannerPlanConfigurationLocalizationsRequestBuilderGetRequestConfiguration{
+configuration := &graphsolutions.SolutionsBusinessScenarioItemPlannerPlanConfigurationLocalizationsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Solutions().BusinessScenarios().ByBusinessScenarioId("businessScenario-id").Planner().PlanConfiguration().Localizations().Get(context.Background(), configuration)
+localizations, err := graphClient.Solutions().BusinessScenarios().ByBusinessScenarioId("businessScenario-id").Planner().PlanConfiguration().Localizations().Get(context.Background(), configuration)
 
 
 ```

@@ -1,6 +1,6 @@
 ---
 title: "virtualEventSession resource type"
-description: "Information about a virtual event session."
+description: "Represents information about a virtual event session."
 author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -21,6 +21,7 @@ Inherits from [onlineMeeting](../resources/onlinemeeting.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
+|[List virtualEventSessions](../api/virtualeventsession-list.md)|[virtualEventSession](../resources/virtualeventsession.md) collection|Get a list of all [virtualEventSession](../resources/virtualeventsession.md) objects under a virtual event.|
 |[Get virtualEventSession](../api/virtualeventsession-get.md)|[virtualEventSession](../resources/virtualeventsession.md)|Read the properties and relationships of a [virtualEventSession](../resources/virtualeventsession.md) object.|
 
 ## Properties
@@ -31,7 +32,8 @@ Reference base type [onlineMeeting](../resources/onlinemeeting.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|attendanceReports|[meetingAttendanceReport](../resources/meetingattendancereport.md) collection|Attendance reports of the virtual event session. Inherited from [microsoft.graph.onlineMeeting](../resources/onlinemeeting.md)|
+|attendanceReports|[meetingAttendanceReport](../resources/meetingattendancereport.md) collection|Attendance reports of this virtual event session. Inherited from [onlineMeeting](../resources/onlinemeeting.md).|
+|registrations|[virtualEventRegistration](../resources/meetingattendancereport.md) collection|Registration records of this virtual event session.|
 
 ## JSON representation
 
@@ -47,57 +49,40 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.virtualEventSession",
-  "id": "String (identifier)",
+  "allowAttendeeToEnableCamera": "Boolean",
+  "allowAttendeeToEnableMic": "Boolean",
+  "allowMeetingChat": "String",
+  "allowParticipantsToChangeName": "Boolean",
+  "allowTeamworkReactions": "Boolean",
+  "allowedPresenters": "String",
+  "alternativeRecording": "Stream",
+  "anonymizeIdentityForRoles": ["String"],
+  "attendeeReport": "Stream",
+  "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
+  "broadcastSettings": {"@odata.type": "microsoft.graph.broadcastMeetingSettings"},
+  "capabilities": ["String"],
+  "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
   "creationDateTime": "String (timestamp)",
-  "startDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
+  "externalId": "String",
+  "id": "String (identifier)",
+  "isBroadcast": "Boolean",
+  "isEntryExitAnnounced": "Boolean",
+  "joinInformation": {"@odata.type": "microsoft.graph.itemBody"},
+  "joinMeetingIdSettings": {"@odata.type": "microsoft.graph.joinMeetingIdSettings"},
   "joinUrl": "String",
   "joinWebUrl": "String",
-  "subject": "String",
-  "participants": {
-    "@odata.type": "microsoft.graph.meetingParticipants"
-  },
-  "isBroadcast": "Boolean",
-  "broadcastSettings": {
-    "@odata.type": "microsoft.graph.broadcastMeetingSettings"
-  },
-  "capabilities": [
-    "String"
-  ],
-  "audioConferencing": {
-    "@odata.type": "microsoft.graph.audioConferencing"
-  },
-  "chatInfo": {
-    "@odata.type": "microsoft.graph.chatInfo"
-  },
-  "videoTeleconferenceId": "String",
-  "externalId": "String",
-  "joinInformation": {
-    "@odata.type": "microsoft.graph.itemBody"
-  },
-  "joinMeetingIdSettings": {
-    "@odata.type": "microsoft.graph.joinMeetingIdSettings"
-  },
-  "lobbyBypassSettings": {
-    "@odata.type": "microsoft.graph.lobbyBypassSettings"
-  },
-  "isEntryExitAnnounced": "Boolean",
-  "allowedPresenters": "String",
-  "allowAttendeeToEnableMic": "Boolean",
-  "allowAttendeeToEnableCamera": "Boolean",
-  "allowMeetingChat": "String",
-  "shareMeetingChatHistoryDefault": "String",
-  "allowTeamworkReactions": "Boolean",
-  "anonymizeIdentityForRoles": [
-    "String"
-  ],
+  "lobbyBypassSettings": {"@odata.type": "microsoft.graph.lobbyBypassSettings"},
+  "participants": {"@odata.type": "microsoft.graph.meetingParticipants"},
   "recordAutomatically": "Boolean",
-  "attendeeReport": "Stream",
   "recording": "Stream",
-  "alternativeRecording": "Stream",
-  "watermarkProtection": {
-    "@odata.type": "microsoft.graph.watermarkProtectionValues"
-  },
-  "allowParticipantsToChangeName": "Boolean"
+  "shareMeetingChatHistoryDefault": "String",
+  "startDateTime": "String (timestamp)",
+  "subject": "String",
+  "videoTeleconferenceId": "String",
+  "watermarkProtection": {"@odata.type": "microsoft.graph.watermarkProtectionValues"}
 }
 ```
+
+## See also
+[List meetingAttendanceReports](../api/meetingattendancereport-list.md)

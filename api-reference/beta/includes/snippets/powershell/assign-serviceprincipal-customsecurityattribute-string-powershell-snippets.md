@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Applications
+Import-Module Microsoft.Graph.Beta.Applications
 
 $params = @{
 	customSecurityAttributes = @{
@@ -15,6 +15,6 @@ $params = @{
 	}
 }
 
-Update-MgServicePrincipal -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+Update-MgBetaServicePrincipal -ServicePrincipalId $servicePrincipalId -BodyParameter $params
 
 ```

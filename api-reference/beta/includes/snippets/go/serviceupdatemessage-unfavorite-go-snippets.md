@@ -8,22 +8,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Admin/ServiceAnnouncement/Messages/Unfavorite"
+	  graphadmin "github.com/microsoftgraph/msgraph-beta-sdk-go/admin"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewUnfavoritePostRequestBody()
+requestBody := graphadmin.NewUnfavoritePostRequestBody()
 messageIds := []string {
 	"MC172851",
 	"MC167983",
-
 }
 requestBody.SetMessageIds(messageIds)
 
-result, err := graphClient.Admin().ServiceAnnouncement().Messages().Unfavorite().Post(context.Background(), requestBody, nil)
+unfavorite, err := graphClient.Admin().ServiceAnnouncement().Messages().Unfavorite().Post(context.Background(), requestBody, nil)
 
 
 ```

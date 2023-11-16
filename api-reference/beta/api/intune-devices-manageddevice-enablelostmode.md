@@ -54,9 +54,9 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|message|String|Not yet documented|
-|phoneNumber|String|Not yet documented|
-|footer|String|Not yet documented|
+|message|String||
+|phoneNumber|String||
+|footer|String||
 
 
 

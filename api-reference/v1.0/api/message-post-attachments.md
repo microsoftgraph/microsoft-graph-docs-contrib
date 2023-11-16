@@ -1,7 +1,7 @@
 ---
 title: "Add attachment"
 description: "Use this API to add an attachment to a message. "
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Use this API to add an [attachment](../resources/attachment.md) to a message. 
+Use this API to add an [attachment](../resources/attachment.md) to a message.
 
 An attachment can be one of the following types:
 
@@ -20,20 +20,20 @@ An attachment can be one of the following types:
 * A link to a file ([referenceAttachment](../resources/referenceattachment.md) resource).
 
 All these types of attachment resources are derived from the [attachment](../resources/attachment.md)
-resource. 
+resource.
 
-You can add an attachment to an existing message by posting to its attachments collection, or you can 
+You can add an attachment to an existing message by posting to its attachments collection, or you can
 add an attachment to a message that is being [created and sent on the fly](../api/user-sendmail.md).
 
 This operation limits the size of the attachment you can add to under 3 MB.
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.ReadWrite    |
-|Delegated (personal Microsoft account) | Mail.ReadWrite    |
-|Application | Mail.ReadWrite |
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "message_post_attachments" } -->
+[!INCLUDE [permissions-table](../includes/permissions/message-post-attachments-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -92,6 +92,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-file-attachment-from-message-v1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-file-attachment-from-message-v1-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-file-attachment-from-message-v1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -110,6 +114,10 @@ Content-type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-file-attachment-from-message-v1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-file-attachment-from-message-v1-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -157,7 +165,7 @@ Content-type: application/json
 
 {
   "@odata.type": "#microsoft.graph.itemAttachment",
-  "name": "Holiday event", 
+  "name": "Holiday event",
   "item": {
     "@odata.type": "microsoft.graph.event",
     "subject": "Discuss gifts for children",

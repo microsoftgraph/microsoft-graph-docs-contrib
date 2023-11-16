@@ -1,9 +1,9 @@
 ---
 title: "Create identityUserFlowAttribute"
-description: "Create a new identityUserFlowAttribute object."
+description: "Create a new custom identityUserFlowAttribute object."
 ms.localizationpriority: medium
 doc_type: apiPageType
-author: "jkdouglas"
+author: "nanguil"
 ms.prod: "identity-and-sign-in"
 ---
 
@@ -13,22 +13,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [identityUserFlowAttribute](../resources/identityuserflowattribute.md) object.
+Create a new custom [identityUserFlowAttribute](../resources/identityuserflowattribute.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|IdentityUserFlow.ReadWrite.All|
-|Delegated (personal Microsoft account)| Not supported.|
-|Application|IdentityUserFlow.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "identityuserflowattribute_post" } -->
+[!INCLUDE [permissions-table](../includes/permissions/identityuserflowattribute-post-permissions.md)]
 
-The work or school account needs to belong to one of the following roles:
-
-* Global administrator
-* External Identity User Flow Attribute administrator
+[!INCLUDE [rbac-user-flows-attributes-apis](../includes/rbac-for-apis/rbac-user-flows-attributes-apis.md)]
 
 ## HTTP request
 
@@ -54,18 +50,18 @@ In the request body, provide a JSON representation of [identityUserFlowAttribute
 |id|String|The identifier of the user flow attribute. This is a read-only attribute that is automatically created.|
 |displayName|String|The display name of the user flow attribute.|
 |description|String|The description of the user flow attribute. It's shown to the user at the time of sign-up.|
-|userFlowAttributeType|String|The type of the user flow attribute. This is a read-only attribute that is automatically set. Depending on the type of attribute, the values for this property will be `builtIn` or `custom`.|
-|dataType|String|The data type of the user flow attribute. This cannot be modified once the custom user flow attribute is created. The supported values for **dataType** are:<br/><ul><li>`string` : denotes that the dataType for the identityUserFlowAttribute is a string. </li><li>`boolean` : denotes that the dataType for the identityUserFlowAttribute is a boolean.</li><li>`int64` : denotes that the dataType for the identityUserFlowAttribute is an integer.</li></ul>|
+|userFlowAttributeType|String|The type of the user flow attribute. This is a read-only attribute that is automatically set. Depending on the type of attribute, the values for this property are `builtIn` or `custom`.|
+|dataType|String|The data type of the user flow attribute. This can't be modified once the custom user flow attribute is created. The supported values for **dataType** are:<br/><ul><li>`string` : denotes that the dataType for the identityUserFlowAttribute is a string. </li><li>`boolean` : denotes that the dataType for the identityUserFlowAttribute is a boolean.</li><li>`int64` : denotes that the dataType for the identityUserFlowAttribute is an integer.</li></ul>|
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and [identityUserFlowAttribute](../resources/identityuserflowattribute.md) object in the response body. If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns a `201 Created` response code and [identityUserFlowAttribute](../resources/identityuserflowattribute.md) object in the response body. If unsuccessful, a `4xx` error is returned with specific details.
 
 ## Examples
 
 ### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -82,12 +78,16 @@ Content-type: application/json
 {
   "displayName": "Hobby",
   "description": "Your hobby",
-  "dataType": "string",
+  "dataType": "string"
 }
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-userflowattribute-from-userflowattributes-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-userflowattribute-from-userflowattributes-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -110,13 +110,17 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-userflowattribute-from-userflowattributes-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-userflowattribute-from-userflowattributes-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
-**Note:** The response object shown here might be shortened for readability.
+>>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -126,7 +130,7 @@ The following is an example of the response.
 
 ```http
 HTTP/1.1 201 Created
-Location: https://graph.microsoft.com/beta/identity/userFlowAttributes/extension_7a95ecd9489b4fb9a45722b913c4703b_Hobby
+Location: "/identity/userFlowAttributes('extension_d09380e2b4c642b9a203fb816a04a7ad_Hobby')"
 Content-type: application/json
 
 {

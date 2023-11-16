@@ -18,6 +18,8 @@ Install a [teamsApp](../resources/teamsapp.md) to the specified [chat](../resour
 > **Notes**:
 > - If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the **teamsApp** will get installed to the meeting.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -70,6 +72,7 @@ If successful, this method returns a `201 Created` response code.
 
 #### Request
 
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -89,6 +92,10 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/add-app-in-chat-beta-e1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/add-app-in-chat-beta-e1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -111,9 +118,15 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/add-app-in-chat-beta-e1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/add-app-in-chat-beta-e1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
+
+The following example shows the response.
 
 <!-- {
   "blockType": "response"
@@ -122,10 +135,13 @@ Content-Type: application/json
 ```http
 HTTP/1.1 201 Created
 ```
+
 ### Example 2: Install app in a chat and and consent to the resource-specific permissions required by the app
 To get the list of resource-specific permissions required by the app, get the app from **appCatalog**, as shown in [Example 7](../api/appcatalogs-list-teamsapps.md#example-7-list-applications-with-a-given-id-and-return-only-the-resource-specific-permissions-required-by-the-app).
 
 #### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -166,6 +182,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/add-app-in-chat-beta-e2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/add-app-in-chat-beta-e2-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/add-app-in-chat-beta-e2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -186,9 +206,15 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/add-app-in-chat-beta-e2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/add-app-in-chat-beta-e2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
+
+The following example shows the response.
 
 <!-- {
   "blockType": "response"
@@ -201,6 +227,7 @@ HTTP/1.1 201 Created
 ## See also
 - [List apps in catalog](appcatalogs-list-teamsapps.md)
 - [Request resource-specific consent for apps](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
+- [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -211,3 +238,4 @@ HTTP/1.1 201 Created
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -1,7 +1,7 @@
 ---
 title: "List appConsentRequests"
 description: "Retrieve appConsentRequest objects and their properties"
-author: "psignoret"
+author: "eringreenlee"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
@@ -12,15 +12,14 @@ Namespace: microsoft.graph
 
 Retrieve [appConsentRequest](../resources/appconsentrequest.md) objects and their properties.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "appconsentapprovalroute_list_appconsentrequests" } -->
+[!INCLUDE [permissions-table](../includes/permissions/appconsentapprovalroute-list-appconsentrequests-permissions.md)]
 
 ## HTTP request
 
@@ -44,7 +43,7 @@ This method supports the `$select`, `$skip`, `$top`, `$filter` (`eq`), and `$o
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -70,6 +69,10 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/appConsent/appConsentReq
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-appconsentrequest-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-appconsentrequest-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-appconsentrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -88,6 +91,10 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/appConsent/appConsentReq
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-appconsentrequest-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-appconsentrequest-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -154,6 +161,10 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/appConsent/appConsentReq
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-appconsentrequest-userconsentrequest-inprogress-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-appconsentrequest-userconsentrequest-inprogress-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-appconsentrequest-userconsentrequest-inprogress-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -174,11 +185,15 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/appConsent/appConsentReq
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-appconsentrequest-userconsentrequest-inprogress-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-appconsentrequest-userconsentrequest-inprogress-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
 
-The following is an example of the response. The response object includes all **appConsentRequest** objects that have at least one **userConsentRequest** that's `InProgress`, but doesn't expand the related **userConsentRequests** relationship.
+The following example shows the response. The response object includes all **appConsentRequest** objects that have at least one **userConsentRequest** that's `InProgress`, but doesn't expand the related **userConsentRequests** relationship.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

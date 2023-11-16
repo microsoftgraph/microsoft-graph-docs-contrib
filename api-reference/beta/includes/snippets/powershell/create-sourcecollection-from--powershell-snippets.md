@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Compliance
+Import-Module Microsoft.Graph.Beta.Compliance
 
 $params = @{
 	displayName = "Quarterly Financials search"
@@ -14,6 +14,6 @@ $params = @{
 	)
 }
 
-New-MgComplianceEdiscoveryCaseSourceCollection -CaseId $caseId -BodyParameter $params
+New-MgBetaComplianceEdiscoveryCaseSourceCollection -CaseId $caseId -BodyParameter $params
 
 ```

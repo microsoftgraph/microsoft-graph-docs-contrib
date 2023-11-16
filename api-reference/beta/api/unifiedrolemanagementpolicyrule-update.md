@@ -11,27 +11,35 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Update a rule defined for a role management policy. The rule can be one of the following types that are derived from the [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) object:
+
 + [unifiedRoleManagementPolicyApprovalRule](../resources/unifiedrolemanagementpolicyapprovalrule.md)
 + [unifiedRoleManagementPolicyAuthenticationContextRule](../resources/unifiedrolemanagementpolicyauthenticationcontextrule.md)
 + [unifiedRoleManagementPolicyEnablementRule](../resources/unifiedrolemanagementpolicyenablementrule.md)
 + [unifiedRoleManagementPolicyExpirationRule](../resources/unifiedrolemanagementpolicyexpirationrule.md)
 + [unifiedRoleManagementPolicyNotificationRule](../resources/unifiedrolemanagementpolicynotificationrule.md)
 
-For more information about rules for Azure AD roles and examples of updating rules, see the following articles:
-+ [Overview of rules for Azure AD roles in PIM APIs in Microsoft Graph](/graph/identity-governance-pim-rules-overview)
-+ [Use PIM APIs in Microsoft Graph to update Azure AD rules](/graph/how-to-pim-update-rules)
+For more information about rules for Microsoft Entra roles and examples of updating rules, see the following articles:
++ [Overview of rules for Microsoft Entra roles in PIM APIs in Microsoft Graph](/graph/identity-governance-pim-rules-overview)
++ [Use PIM APIs in Microsoft Graph to update Microsoft Entra ID rules](/graph/how-to-pim-update-rules)
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+### For PIM for Microsoft Entra roles
+
+<!-- { "blockType": "permissions", "name": "unifiedrolemanagementpolicyrule_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedrolemanagementpolicyrule-update-permissions.md)]
+
+### For PIM for groups
+
+<!-- { "blockType": "permissions", "name": "unifiedrolemanagementpolicyrule_update_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedrolemanagementpolicyrule-update-2-permissions.md)]
 
 ## HTTP request
 
+To update a rule defined for a policy for either Microsoft Entra roles or groups in PIM:
 <!-- {
   "blockType": "ignored"
 }
@@ -69,18 +77,22 @@ PATCH /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/rules/{un
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns a `200 OK` response code and an [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) object in the response body.
 
 ## Examples
 
-### Request
+<a name='example-1-update-a-rule-defined-for-a-policy-in-pim-for-azure-ad-roles'></a>
+
+### Example 1: Update a rule defined for a policy in PIM for Microsoft Entra roles
+
+#### Request
 
 The following example updates a role management policy rule with ID `Expiration_EndUser_Assignment`.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_unifiedrolemanagementpolicyrule",
+  "name": "update_unifiedrolemanagementpolicyrule_directory",
   "sampleKeys": ["DirectoryRole_84841066-274d-4ec0-a5c1-276be684bdd3_200ec19a-09e7-4e7a-9515-cf1ee64b96f9", "Expiration_EndUser_Assignment"]
 }
 -->
@@ -107,42 +119,172 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-unifiedrolemanagementpolicyrule-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-unifiedrolemanagementpolicyrule-directory-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-unifiedrolemanagementpolicyrule-directory-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-unifiedrolemanagementpolicyrule-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/update-unifiedrolemanagementpolicyrule-directory-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-unifiedrolemanagementpolicyrule-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/update-unifiedrolemanagementpolicyrule-directory-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-unifiedrolemanagementpolicyrule-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-unifiedrolemanagementpolicyrule-directory-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-unifiedrolemanagementpolicyrule-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/update-unifiedrolemanagementpolicyrule-directory-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-unifiedrolemanagementpolicyrule-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-unifiedrolemanagementpolicyrule-directory-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-unifiedrolemanagementpolicyrule-directory-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### Response
+#### Response
+
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyRule"
 }
 -->
-```http
-HTTP/1.1 204 No Content
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/roleManagementPolicies('DirectoryRole_84841066-274d-4ec0-a5c1-276be684bdd3_200ec19a-09e7-4e7a-9515-cf1ee64b96f9')/rules/$entity",
+    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule",
+    "id": "Expiration_EndUser_Assignment",
+    "isExpirationRequired": true,
+    "maximumDuration": "PT1H45M",
+    "target": {
+        "caller": "EndUser",
+        "operations": [
+            "All"
+        ],
+        "level": "Assignment",
+        "inheritableSettings": [],
+        "enforcedSettings": []
+    }
+}
+```
+
+### Example 2: Update a rule defined for a policy in PIM for groups
+
+#### Request
+
+The following example updates a role management policy rule with ID `Expiration_EndUser_Assignment`.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_unifiedrolemanagementpolicyrule_azureADGroup",
+  "sampleKeys": ["Group_60bba733-f09d-49b7-8445-32369aa066b3_f21b26d9-9ff9-4af1-b1d4-bddf28591369", "Expiration_EndUser_Assignment"]
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/beta/policies/roleManagementPolicies/Group_60bba733-f09d-49b7-8445-32369aa066b3_f21b26d9-9ff9-4af1-b1d4-bddf28591369/rules/Expiration_EndUser_Assignment
+Content-Type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule",
+    "id": "Expiration_EndUser_Assignment",
+    "isExpirationRequired": true,
+    "maximumDuration": "PT1H45M",
+    "target": {
+        "caller": "EndUser",
+        "operations": [
+            "All"
+        ],
+        "level": "Assignment",
+        "inheritableSettings": [],
+        "enforcedSettings": []
+    }
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-unifiedrolemanagementpolicyrule-azureadgroup-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-unifiedrolemanagementpolicyrule-azureadgroup-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-unifiedrolemanagementpolicyrule-azureadgroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-unifiedrolemanagementpolicyrule-azureadgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-unifiedrolemanagementpolicyrule-azureadgroup-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-unifiedrolemanagementpolicyrule-azureadgroup-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-unifiedrolemanagementpolicyrule-azureadgroup-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-unifiedrolemanagementpolicyrule-azureadgroup-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyRule"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/roleManagementPolicies('Group_60bba733-f09d-49b7-8445-32369aa066b3_f21b26d9-9ff9-4af1-b1d4-bddf28591369')/rules/$entity",
+    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule",
+    "id": "Expiration_EndUser_Assignment",
+    "isExpirationRequired": true,
+    "maximumDuration": "PT1H45M",
+    "target": {
+        "caller": "EndUser",
+        "operations": [
+            "All"
+        ],
+        "level": "Assignment",
+        "inheritableSettings": [],
+        "enforcedSettings": []
+    }
+}
 ```
 
 ## See also
 
-+ [Overview of rules for Azure AD roles in PIM APIs in Microsoft Graph](/graph/identity-governance-pim-rules-overview)
-+ [Use PIM APIs in Microsoft Graph to update Azure AD rules](/graph/how-to-pim-update-rules)
++ [Overview of rules for Microsoft Entra roles in PIM APIs in Microsoft Graph](/graph/identity-governance-pim-rules-overview)
++ [Use PIM APIs in Microsoft Graph to update Microsoft Entra ID rules](/graph/how-to-pim-update-rules)

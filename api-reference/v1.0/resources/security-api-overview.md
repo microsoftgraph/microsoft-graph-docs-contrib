@@ -28,19 +28,15 @@ Use [runHuntingQuery](../api/security-security-runhuntingquery.md) to run a [Kus
 
 ### Quotas and resource allocation
 
-1. You can run a query on data from only the last 30 days.
 
-2. The results include a maximum of 100,000 rows.
+The following conditions relate to all queries.
 
-3. The number of executions is limited per tenant:
-   - API calls: Up to 45 requests per minute, and up to 1500 requests per hour.
-   - Execution time: 10 minutes of running time every hour and 3 hours of running time a day.
-
-4. The maximal execution time of a single request is 200 seconds.
-
-5. A response code of HTTP 429 means you have reached the quota for either the number of API calls or execution time. Refer to the response body to confirm the limit you have reached.
-
-6. The maximum query result size of a single request cannot exceed 124 MB. Exceeding the size limit results in HTTP 400 Bad Request with the message "Query execution has exceeded the allowed result size. Optimize your query by limiting the number of results and try again."
+1. Queries explore and return data from the past 30 days.
+2. Results can return up to 100,000 rows.
+3. You can make up to at least 45 calls per minute per tenant. The number of calls varies per tenant based on its size.
+4. Each tenant is allocated CPU resources, based on the tenant size. Queries are blocked if the tenant has reached 100% of the allocated resources until after the next 15-minute cycle. To avoid blocked queries due to excess consumption, follow the guidance in [Optimize your queries to avoid hitting CPU quotas](/microsoft-365/security/defender/advanced-hunting-best-practices). 
+5. If a single request runs for more than three minutes, it times out and returns an error.
+6. A `429` HTTP response code indicates that you've reached the allocated CPU resources, either by number of requests sent, or by allotted running time. Read the response body to understand the limit you have reached. 
 
 ## Alerts
 Alerts are detailed warnings about suspicious activities in a customer's tenant that Microsoft or partner security providers have identified and flagged for action. Attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes. The result is alerts from multiple security providers for multiple entities in the tenant. Piecing the individual alerts together to gain insight into an attack can be challenging and time-consuming.
@@ -54,7 +50,7 @@ The security API offers two types of alerts that aggregate other alerts from sec
 These [alert](security-alert.md) resources first pull alert data from security provider services, that are either part of or integrated with [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender?view=o365-worldwide&preserve-view=true). Then they consume the data to return rich, valuable clues about a completed or ongoing attack, the impacted assets, and associated [evidence](security-alertevidence.md). In addition, they automatically correlate other alerts with the same attack techniques or the same attacker into an [incident](security-incident.md) to provide a broader context of an attack. They recommend response and remediation actions, offering consistent actionability across all the different providers. The rich content makes it easier for analysts to collectively investigate and respond to threats.
 
 Alerts from the following security providers are available via these rich alerts and incidents:
-- [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection)
+- [Microsoft Entra ID Protection](/azure/active-directory/identity-protection/overview-identity-protection)
 - [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender?view=o365-worldwide&preserve-view=true)
 - [Microsoft Defender for Cloud Apps](/cloud-app-security/monitor-alerts) 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide&preserve-view=true)
@@ -74,7 +70,7 @@ Alerts from the following providers are available via this **alert** resource. S
 
 | Security provider | <p align="center">GET alert</p>| <p align="center">PATCH alert</p>| <p align="center">Subscribe to alert</p>|
 |:------------------|:---------|:-----------|:------------------|
-|[Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/playbook) | <p align="center">&#x2713;</p> | <p align="center">[File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
+|[Microsoft Entra ID Protection](/azure/active-directory/identity-protection/playbook) | <p align="center">&#x2713;</p> | <p align="center">[File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
 |Microsoft 365 <ul><li> [Default](/office365/securitycompliance/alert-policies#default-alert-policies)</li> <li>[Cloud App Security](/office365/securitycompliance/anomaly-detection-policies-in-ocas)</li><li>Custom Alert</li></ul> | <p align="center">&#x2713;</p> | <p align="center"> [File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
 | [Microsoft Defender for Cloud Apps](/cloud-app-security/monitor-alerts) | <p align="center">&#x2713;</p> | <p align="center">[File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) *</p> | <p align="center">&#x2713;</p> |
 |[Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/attack-simulations) **| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center"> [File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
@@ -123,6 +119,12 @@ The Microsoft Graph threat assessment API helps organizations to assess the thre
 ## Secure Score
 
 [Microsoft Secure Score](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/A-new-home-and-an-all-new-look-for-Microsoft-Secure-Score/ba-p/529641) is a security analytics solution that gives you visibility into your security portfolio and how to improve it. With a single score, you can better understand what you have done to reduce your risk in Microsoft solutions. You can also compare your score with other organizations and see how your score has been trending over time. The Microsoft Graph security [secureScore](securescore.md) and [secureScoreControlProfile](securescorecontrolprofile.md) entities help you balance your organization's security and productivity needs while enabling the appropriate mix of security features. You can also project what your score would be after you adopt security features.
+
+## Threat intelligence
+
+Microsoft Defender Threat Intelligence delivers world-class threat intelligence to help protect your organization from modern cyber threats. You can use Threat Intelligence to identify adversaries and their operations, accelerate detection and remediation, and enhance your security investments and workflows.
+
+The threat intelligence APIs allow you to operationalize intelligence found within the user interface. This includes finished intelligence in the forms of articles and intel profiles, machine intelligence including IoCs and reputation verdicts, and finally, enrichment data including passive DNS, cookies, components, and trackers.
 
 ## Common use cases
 
@@ -175,8 +177,6 @@ The Microsoft Graph security API can open up new ways for you to engage with dif
 - Drill down into [alerts](alert.md), [secureScore](securescore.md), and [secureScoreControlProfiles](securescorecontrolprofile.md).
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer). Under **Sample Queries**, choose **show more samples** and set the Security category to **on**.
 - Try [subscribing to and receiving notifications](/graph/webhooks) on entity changes.
-
-Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/partners).
 
 ## See also
 

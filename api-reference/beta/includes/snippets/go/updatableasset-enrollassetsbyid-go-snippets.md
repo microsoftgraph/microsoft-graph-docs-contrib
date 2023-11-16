@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Admin/Windows/Updates/UpdatableAssets/MicrosoftGraphWindowsUpdatesEnrollAssetsById"
+	  graphadmin "github.com/microsoftgraph/msgraph-beta-sdk-go/admin"
+	  graphmodelswindowsupdates "github.com/microsoftgraph/msgraph-beta-sdk-go/models/windowsupdates"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewEnrollAssetsByIdPostRequestBody()
+requestBody := graphadmin.NewEnrollAssetsByIdPostRequestBody()
 updateCategory := graphmodels.FEATURE_UPDATECATEGORY 
 requestBody.SetUpdateCategory(&updateCategory) 
 memberEntityType := "#microsoft.graph.windowsUpdates.azureADDevice"
@@ -24,7 +25,6 @@ ids := []string {
 	"String",
 	"String",
 	"String",
-
 }
 requestBody.SetIds(ids)
 

@@ -3,6 +3,7 @@ title: "List unifiedRoleAssignments"
 description: "Get a list of unifiedRoleAssignment objects."
 ms.localizationpriority: medium
 author: "DougKirschner"
+ms.reviewer: msodsrbac
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
@@ -16,38 +17,31 @@ Namespace: microsoft.graph
 Get a list of [unifiedRoleAssignment](../resources/unifiedroleassignment.md) objects for the provider.
 
 The following RBAC providers are currently supported:
-- directory (Azure AD)
-- entitlement management (Azure AD)
+- directory (Microsoft Entra ID)
+- entitlement management (Microsoft Entra ID)
 - Exchange Online
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
 
-Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-### For Directory (Azure AD) provider
+### For Directory (Microsoft Entra ID) provider
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All   |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "rbacapplication_list_roleassignments" } -->
+[!INCLUDE [permissions-table](../includes/permissions/rbacapplication-list-roleassignments-permissions.md)]
 
 ### For Entitlement management provider
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All   |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+<!-- { "blockType": "permissions", "name": "rbacapplication_list_roleassignments_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/rbacapplication-list-roleassignments-2-permissions.md)]
 
 ### For an Exchange Online provider
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  RoleManagement.Read.Exchange, RoleManagement.Read.All, RoleManagement.ReadWrite.Exchange   |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+<!-- { "blockType": "permissions", "name": "rbacapplication_list_roleassignments_3" } -->
+[!INCLUDE [permissions-table](../includes/permissions/rbacapplication-list-roleassignments-3-permissions.md)]
 
 
 ## HTTP request
@@ -96,7 +90,7 @@ This operation requires the `$filter` query parameter. You can filter on the `ro
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -108,7 +102,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -123,6 +117,10 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$f
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-roleassignments-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-roleassignments-1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -145,11 +143,15 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$f
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-roleassignments-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-roleassignments-1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -271,7 +273,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -286,6 +288,10 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$f
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-roleassignments-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-roleassignments-2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -308,11 +314,15 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$f
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-roleassignments-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-roleassignments-2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -350,7 +360,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -365,6 +375,10 @@ GET https://graph.microsoft.com/beta/roleManagement/entitlementManagement/roleAs
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-roleassignments-3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-roleassignments-3-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -387,11 +401,15 @@ GET https://graph.microsoft.com/beta/roleManagement/entitlementManagement/roleAs
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-roleassignments-3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-roleassignments-3-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -425,7 +443,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -439,6 +457,10 @@ GET https://graph.microsoft.com/beta/roleManagement/exchange/roleAssignments?$fi
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-roleassignments-4-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-roleassignments-4-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -458,14 +480,18 @@ GET https://graph.microsoft.com/beta/roleManagement/exchange/roleAssignments?$fi
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-roleassignments-4-powershell-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-roleassignments-4-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -508,6 +534,167 @@ Content-type: application/json
 ```
 
 
+### Example 4: List privileged role assignments
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_roleAssignments_isprivileged"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$expand=roleDefinition&$filter=roleDefinition/isPrivileged eq true
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-roleassignments-isprivileged-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-roleassignments-isprivileged-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-roleassignments-isprivileged-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-roleassignments-isprivileged-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-roleassignments-isprivileged-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-roleassignments-isprivileged-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-roleassignments-isprivileged-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-roleassignments-isprivileged-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignments(roleDefinition())",
+    "value": [
+        {
+            "id": "{id}",
+            "principalId": "{principalId}",
+            "principalOrganizationId": "{principalOrganizationId}",
+            "resourceScope": "/",
+            "directoryScopeId": "/",
+            "roleDefinitionId": "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
+            "roleDefinition": {
+                "id": "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
+                "description": "Can manage Conditional Access capabilities.",
+                "displayName": "Conditional Access Administrator",
+                "isBuiltIn": true,
+                "isEnabled": true,
+                "isPrivileged": true,
+                "resourceScopes": [
+                    "/"
+                ],
+                "templateId": "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
+                "version": "1",
+                "rolePermissions": [
+                    {
+                        "allowedResourceActions": [
+                            "microsoft.directory/namedLocations/create",
+                            "microsoft.directory/namedLocations/delete",
+                            "microsoft.directory/namedLocations/standard/read",
+                            "microsoft.directory/namedLocations/basic/update",
+                            "microsoft.directory/conditionalAccessPolicies/create",
+                            "microsoft.directory/conditionalAccessPolicies/delete",
+                            "microsoft.directory/conditionalAccessPolicies/standard/read",
+                            "microsoft.directory/conditionalAccessPolicies/owners/read",
+                            "microsoft.directory/conditionalAccessPolicies/policyAppliedTo/read",
+                            "microsoft.directory/conditionalAccessPolicies/basic/update",
+                            "microsoft.directory/conditionalAccessPolicies/owners/update",
+                            "microsoft.directory/conditionalAccessPolicies/tenantDefault/update"
+                        ],
+                        "condition": null
+                    }
+                ]
+            }
+        },
+        {
+            "id": "{id}",
+            "principalId": "{principalId}",
+            "principalOrganizationId": "{principalOrganizationId}",
+            "resourceScope": "/",
+            "directoryScopeId": "/",
+            "roleDefinitionId": "c4e39bd9-1100-46d3-8c65-fb160da0071f",
+            "roleDefinition": {
+                "id": "c4e39bd9-1100-46d3-8c65-fb160da0071f",
+                "description": "Can access to view, set and reset authentication method information for any non-admin user.",
+                "displayName": "Authentication Administrator",
+                "isBuiltIn": true,
+                "isEnabled": true,
+                "isPrivileged": true,
+                "resourceScopes": [
+                    "/"
+                ],
+                "templateId": "c4e39bd9-1100-46d3-8c65-fb160da0071f",
+                "version": "1",
+                "rolePermissions": [
+                    {
+                        "allowedResourceActions": [
+                            "microsoft.directory/users/authenticationMethods/create",
+                            "microsoft.directory/users/authenticationMethods/delete",
+                            "microsoft.directory/users/authenticationMethods/standard/restrictedRead",
+                            "microsoft.directory/users/authenticationMethods/basic/update",
+                            "microsoft.directory/deletedItems.users/restore",
+                            "microsoft.directory/users/delete",
+                            "microsoft.directory/users/disable",
+                            "microsoft.directory/users/enable",
+                            "microsoft.directory/users/invalidateAllRefreshTokens",
+                            "microsoft.directory/users/restore",
+                            "microsoft.directory/users/basic/update",
+                            "microsoft.directory/users/manager/update",
+                            "microsoft.directory/users/password/update",
+                            "microsoft.directory/users/userPrincipalName/update",
+                            "microsoft.azure.serviceHealth/allEntities/allTasks",
+                            "microsoft.azure.supportTickets/allEntities/allTasks",
+                            "microsoft.office365.serviceHealth/allEntities/allTasks",
+                            "microsoft.office365.supportTickets/allEntities/allTasks",
+                            "microsoft.office365.webPortal/allEntities/standard/read"
+                        ],
+                        "condition": null
+                    }
+                ]
+            }
+        }
+    ]
+}
+```
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
@@ -518,5 +705,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

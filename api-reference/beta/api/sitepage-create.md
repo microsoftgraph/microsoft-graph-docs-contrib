@@ -16,15 +16,18 @@ Namespace: microsoft.graph
 
 Create a new [sitePage][] in the site pages [list][] in a [site][].
 
+[sitePage]: ../resources/sitePage.md
+[list]: ../resources/list.md
+[site]: ../resources/site.md
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Sites.ReadWrite.All                         |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Sites.ReadWrite.All                         |
+<!-- { "blockType": "permissions", "name": "sitepage_create" } -->
+[!INCLUDE [permissions-table](../includes/permissions/sitepage-create-permissions.md)]
 
 ## HTTP request
 
@@ -33,16 +36,29 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 POST /sites/{site-id}/pages
 ```
+## Request headers
+
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
 In the request body, supply a JSON representation of the [sitePage](../resources/sitepage.md) resource to create.
 
-> **Note:** If you're using the response from the [Get sitepage](../api/sitepage-get.md) operation to create a **sitePage**, we recommend that you add the HTTP header `Accept: application/json;odata.metadata=none`. This will remove all OData metadata from the response. You can also manually remove all OData metadata.
+> **Notes:** :
+> 1. To ensure successful parsing of the request body, the `@odata.type=#microsoft.graph.sitePage` must be included in the request body.
+> 2. If you're using the response from the [Get sitepage](../api/sitepage-get.md) operation to create a **sitePage**, we recommend that you add the HTTP header `Accept: application/json;odata.metadata=none`. This will remove all OData metadata from the response. You can also manually remove all OData metadata.
+## Response
+
+If successful, this method returns a `201` and the created [sitePage](../resources/baseSitePage.md) object.
 
 ## Example
 
 The following example shows how to create a new page.
+
+### Request
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-page", "scopes": "sites.readwrite.all" } -->
@@ -52,6 +68,7 @@ POST /sites/{site-id}/pages
 Content-Type: application/json
 
 {
+  "@odata.type": "#microsoft.graph.sitePage",
   "name": "test.aspx",
   "title": "test",
   "pageLayout": "article",
@@ -147,8 +164,8 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-page-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-page-go-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-page-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -159,9 +176,17 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/create-page-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-page-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-page-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-## Response
+### Response
 
 If successful, this method returns a [sitePage][] in the response body for the created page.
 

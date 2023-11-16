@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Compliance/Ediscovery/Cases/Item/ReviewSets/Item/MicrosoftGraphEdiscoveryExport"
+	  graphcompliance "github.com/microsoftgraph/msgraph-beta-sdk-go/compliance"
+	  graphmodelsediscovery "github.com/microsoftgraph/msgraph-beta-sdk-go/models/ediscovery"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewExportPostRequestBody()
+requestBody := graphcompliance.NewExportPostRequestBody()
 outputName := "2020-12-06 Contoso investigation export"
 requestBody.SetOutputName(&outputName) 
 description := "Export for the Contoso investigation"

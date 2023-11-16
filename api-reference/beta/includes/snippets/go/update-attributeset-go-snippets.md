@@ -21,7 +21,7 @@ requestBody.SetDescription(&description)
 maxAttributesPerSet := int32(20)
 requestBody.SetMaxAttributesPerSet(&maxAttributesPerSet) 
 
-result, err := graphClient.Directory().AttributeSets().ByAttributeSetId("attributeSet-id").Patch(context.Background(), requestBody, nil)
+attributeSets, err := graphClient.Directory().AttributeSets().ByAttributeSetId("attributeSet-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

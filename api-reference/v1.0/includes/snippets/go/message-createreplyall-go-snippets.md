@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().Messages().ByMessageId("message-id").CreateReplyAll().Post(context.Background(), nil)
+createReplyAll, err := graphClient.Me().Messages().ByMessageId("message-id").CreateReplyAll().Post(context.Background(), nil)
 
 
 ```

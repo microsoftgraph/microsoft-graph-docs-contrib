@@ -9,7 +9,7 @@ import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/devices"
+	  graphdevices "github.com/microsoftgraph/msgraph-beta-sdk-go/devices"
 	  //other-imports
 )
 
@@ -21,19 +21,19 @@ headers.Add("ConsistencyLevel", "eventual")
 
 
 requestCount := true
-requestFilter := "startswith(displayName,%20'A')"
+requestFilter := "startswith(displayName, 'A')"
 
-requestParameters := &graphconfig.DeviceItemMemberOfGraph.groupRequestBuilderGetQueryParameters{
+requestParameters := &graphdevices.DeviceItemMemberOfGraph.groupRequestBuilderGetQueryParameters{
 	Count: &requestCount,
 	Orderby: [] string {"displayName"},
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.DeviceItemMemberOfGraph.groupRequestBuilderGetRequestConfiguration{
+configuration := &graphdevices.DeviceItemMemberOfGraph.groupRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Devices().ByDeviceId("device-id").MemberOf().GraphGroup().Get(context.Background(), configuration)
+graphGroup, err := graphClient.Devices().ByDeviceId("device-id").MemberOf().GraphGroup().Get(context.Background(), configuration)
 
 
 ```

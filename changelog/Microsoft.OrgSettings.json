@@ -1,0 +1,86 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "4cc61cac-ef88-4767-a4c5-59e80ce208c3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "appsAndServicesSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [appsAndServicesSettings](https://learn.microsoft.com/en-us/graph/api/resources/appsAndServicesSettings?view=graph-rest-beta) resource type.",
+          "Target": "appsAndServicesSettings"
+        },
+        {
+          "Id": "4cc61cac-ef88-4767-a4c5-59e80ce208c3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customerVoiceSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [customerVoiceSettings](https://learn.microsoft.com/en-us/graph/api/resources/customerVoiceSettings?view=graph-rest-beta) resource type.",
+          "Target": "customerVoiceSettings"
+        },
+        {
+          "Id": "4cc61cac-ef88-4767-a4c5-59e80ce208c3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "formsSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [formsSettings](https://learn.microsoft.com/en-us/graph/api/resources/formsSettings?view=graph-rest-beta) resource type.",
+          "Target": "formsSettings"
+        },
+        {
+          "Id": "4cc61cac-ef88-4767-a4c5-59e80ce208c3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "todoSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [todoSettings](https://learn.microsoft.com/en-us/graph/api/resources/todoSettings?view=graph-rest-beta) resource type.",
+          "Target": "todoSettings"
+        },
+        {
+          "Id": "4cc61cac-ef88-4767-a4c5-59e80ce208c3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "admin",
+          "ChangeType": "Addition",
+          "Description": "Added the [admin](https://learn.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-beta) resource",
+          "Target": "admin"
+        },
+        {
+          "Id": "4cc61cac-ef88-4767-a4c5-59e80ce208c3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "adminAppsAndServices",
+          "ChangeType": "Addition",
+          "Description": "Added the [adminAppsAndServices](https://learn.microsoft.com/en-us/graph/api/resources/adminAppsAndServices?view=graph-rest-beta) resource",
+          "Target": "adminAppsAndServices"
+        },
+        {
+          "Id": "4cc61cac-ef88-4767-a4c5-59e80ce208c3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "adminDynamics",
+          "ChangeType": "Addition",
+          "Description": "Added the [adminDynamics](https://learn.microsoft.com/en-us/graph/api/resources/adminDynamics?view=graph-rest-beta) resource",
+          "Target": "adminDynamics"
+        },
+        {
+          "Id": "4cc61cac-ef88-4767-a4c5-59e80ce208c3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "adminForms",
+          "ChangeType": "Addition",
+          "Description": "Added the [adminForms](https://learn.microsoft.com/en-us/graph/api/resources/adminForms?view=graph-rest-beta) resource",
+          "Target": "adminForms"
+        },
+        {
+          "Id": "4cc61cac-ef88-4767-a4c5-59e80ce208c3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "adminTodo",
+          "ChangeType": "Addition",
+          "Description": "Added the [adminTodo](https://learn.microsoft.com/en-us/graph/api/resources/adminTodo?view=graph-rest-beta) resource",
+          "Target": "adminTodo"
+        }
+      ],
+      "Id": "4cc61cac-ef88-4767-a4c5-59e80ce208c3",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-05-19T17:48:17.7797665Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    }
+  ]
+}

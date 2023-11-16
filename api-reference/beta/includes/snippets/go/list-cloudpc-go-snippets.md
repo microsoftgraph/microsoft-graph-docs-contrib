@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().CloudPCs().Get(context.Background(), nil)
+cloudPCs, err := graphClient.Me().CloudPCs().Get(context.Background(), nil)
 
 
 ```

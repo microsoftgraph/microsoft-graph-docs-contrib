@@ -8,21 +8,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.ItemContactsRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.ItemContactsRequestBuilderGetQueryParameters{
 	Select: [] string {"displayName","emailAddresses"},
 }
-configuration := &graphconfig.ItemContactsRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemContactsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().Contacts().Get(context.Background(), configuration)
+contacts, err := graphClient.Me().Contacts().Get(context.Background(), configuration)
 
 
 ```

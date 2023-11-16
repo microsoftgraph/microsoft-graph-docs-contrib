@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/sites"
+	  graphsites "github.com/microsoftgraph/msgraph-beta-sdk-go/sites"
 	  //other-imports
 )
 
@@ -18,14 +18,14 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestSearch := "{query}"
 
-requestParameters := &graphconfig.SitesRequestBuilderGetQueryParameters{
+requestParameters := &graphsites.SitesRequestBuilderGetQueryParameters{
 	Search: &requestSearch,
 }
-configuration := &graphconfig.SitesRequestBuilderGetRequestConfiguration{
+configuration := &graphsites.SitesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Sites().Get(context.Background(), configuration)
+sites, err := graphClient.Sites().Get(context.Background(), configuration)
 
 
 ```

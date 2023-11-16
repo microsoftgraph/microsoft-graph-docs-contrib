@@ -3,6 +3,7 @@ title: "Delete unifiedRoleAssignment"
 description: "Delete a unifiedRoleAssignment object."
 ms.localizationpriority: medium
 author: "DougKirschner"
+ms.reviewer: msodsrbac
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
@@ -13,25 +14,21 @@ Namespace: microsoft.graph
 
 Delete a [unifiedRoleAssignment](../resources/unifiedRoleAssignment.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-### For the directory (Azure AD) provider
+### For the directory (Microsoft Entra ID) provider
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | RoleManagement.ReadWrite.Directory |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | RoleManagement.ReadWrite.Directory |
+<!-- { "blockType": "permissions", "name": "unifiedroleassignment_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedroleassignment-delete-permissions.md)]
 
 ### For the Entitlement management provider
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  EntitlementManagement.ReadWrite.All  |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | EntitlementManagement.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "unifiedroleassignment_delete_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedroleassignment-delete-2-permissions.md)]
 
 ## HTTP request
 
@@ -59,17 +56,17 @@ DELETE /roleManagement/entitlementManagement/roleAssignments/{id}
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -85,6 +82,10 @@ DELETE https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-unifiedroleassignment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-unifiedroleassignment-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -107,11 +108,15 @@ DELETE https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-unifiedroleassignment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-unifiedroleassignment-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -131,4 +136,3 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
-

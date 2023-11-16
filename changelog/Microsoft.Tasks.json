@@ -227,7 +227,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "personalTaskProperties",
           "ChangeType": "Addition",
-          "Description": "Added the [personalTaskProperties](https://learn.microsoft.com/en-us/graph/api/resources/personalTaskProperties?view=graph-rest-beta) complex type",
+          "Description": "Added the **personalTaskProperties** complex type",
           "Target": "personalTaskProperties"
         },
         {
@@ -363,7 +363,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "move",
           "ChangeType": "Addition",
-          "Description": "Added the [move](https://learn.microsoft.com/en-us/graph/api/basetask-move?view=graph-rest-beta) method to the [baseTask]((https://learn.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta)) resource",
+          "Description": "Added the [move](https://learn.microsoft.com/en-us/graph/api/basetask-move?view=graph-rest-beta) method to the [baseTask](https://learn.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta) resource",
           "Target": "baseTask"
         },
         {
@@ -371,7 +371,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "delta",
           "ChangeType": "Addition",
-          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/basetasklist-delta?view=graph-rest-beta) method to the [baseTaskList]((https://learn.microsoft.com/en-us/graph/api/resources/basetasklist?view=graph-rest-beta)) resource",
+          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/basetasklist-delta?view=graph-rest-beta) method to the [baseTaskList](https://learn.microsoft.com/en-us/graph/api/resources/basetasklist?view=graph-rest-beta) resource",
           "Target": "baseTaskList"
         },
         {
@@ -379,7 +379,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "delta",
           "ChangeType": "Addition",
-          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/basetask-delta?view=graph-rest-beta) method to the [baseTask]((https://learn.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta)) resource",
+          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/basetask-delta?view=graph-rest-beta) method to the [baseTask](https://learn.microsoft.com/en-us/graph/api/resources/basetask?view=graph-rest-beta) resource",
           "Target": "baseTask"
         }
       ],

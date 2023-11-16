@@ -1,5 +1,5 @@
 ---
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 description: "Represents a column in a site, a list, or a content type."
 title: "columnDefinition resource type"
 ms.localizationpriority: medium
@@ -69,7 +69,7 @@ The type-related properties (boolean, calculated, choice, currency, dateTime, lo
 | **text**          | [textColumn][]          | This column stores text values.|
 | **thumbnail**           |[thumbnailColumn][]      | This column stores thumbnail values.|
 | **type**         | columnTypes  | For site columns, the type of column. Read-only.|
-| **validation**   |  [columnValidation][]    | This column stores validation formula and message for the column.| 
+| **validation**   |  [columnValidation][]    | This column stores validation formula and message for the column.|
 
 ## Relationships
 

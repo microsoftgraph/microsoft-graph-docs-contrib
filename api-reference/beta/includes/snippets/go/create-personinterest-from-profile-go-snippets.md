@@ -18,7 +18,6 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 requestBody := graphmodels.NewPersonInterest()
 categories := []string {
 	"Sports",
-
 }
 requestBody.SetCategories(categories)
 description := "World's greatest football club"
@@ -28,7 +27,7 @@ requestBody.SetDisplayName(&displayName)
 webUrl := "https://www.chelseafc.com"
 requestBody.SetWebUrl(&webUrl) 
 
-result, err := graphClient.Me().Profile().Interests().Post(context.Background(), requestBody, nil)
+interests, err := graphClient.Me().Profile().Interests().Post(context.Background(), requestBody, nil)
 
 
 ```

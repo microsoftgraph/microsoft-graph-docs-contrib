@@ -8,27 +8,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Compliance/Ediscovery/Cases/Item/ReviewSets/Item/Queries/Item/MicrosoftGraphEdiscoveryApplyTags"
+	  graphcompliance "github.com/microsoftgraph/msgraph-beta-sdk-go/compliance"
+	  graphmodelsediscovery "github.com/microsoftgraph/msgraph-beta-sdk-go/models/ediscovery"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewApplyTagsPostRequestBody()
+requestBody := graphcompliance.NewApplyTagsPostRequestBody()
 
 
-tag := graphmodels.NewTag()
+tag := graphmodelsediscovery.NewTag()
 id := "b4798d14-748d-468e-a1ec-96a2b1d49677"
 tag.SetId(&id) 
 
-tagsToAdd := []graphmodels.Objectable {
+tagsToAdd := []graphmodelsediscovery.tagable {
 	tag,
-
 }
 requestBody.SetTagsToAdd(tagsToAdd)
 
-graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").ReviewSets().ByReviewSetId("reviewSet-id").Queries().ByQuerieId("reviewSetQuery-id").MicrosoftGraphEdiscoveryApplyTags().Post(context.Background(), requestBody, nil)
+graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").ReviewSets().ByReviewSetId("reviewSet-id").Queries().ByReviewSetQueryId("reviewSetQuery-id").MicrosoftGraphEdiscoveryApplyTags().Post(context.Background(), requestBody, nil)
 
 
 ```

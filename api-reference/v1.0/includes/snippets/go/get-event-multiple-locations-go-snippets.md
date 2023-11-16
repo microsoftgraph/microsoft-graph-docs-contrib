@@ -8,21 +8,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.ItemEventItemRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.ItemEventItemRequestBuilderGetQueryParameters{
 	Select: [] string {"subject","body","bodyPreview","organizer","attendees","start","end","location","locations"},
 }
-configuration := &graphconfig.ItemEventItemRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemEventItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().Events().ByEventId("event-id").Get(context.Background(), configuration)
+events, err := graphClient.Me().Events().ByEventId("event-id").Get(context.Background(), configuration)
 
 
 ```

@@ -9,14 +9,14 @@ import (
 	  "context"
 	  "github.com/google/uuid"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/DirectoryObjects/ValidateProperties"
+	  graphdirectoryobjects "github.com/microsoftgraph/msgraph-sdk-go/directoryobjects"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewValidatePropertiesPostRequestBody()
+requestBody := graphdirectoryobjects.NewValidatePropertiesPostRequestBody()
 entityType := "Group"
 requestBody.SetEntityType(&entityType) 
 displayName := "Myprefix_test_mysuffix"

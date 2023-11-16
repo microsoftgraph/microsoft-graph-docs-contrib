@@ -4,7 +4,7 @@ description: "Retrieve a list of agreement objects."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "raprakasMSFT"
+author: "AlexFilipin"
 ---
 
 # List agreements
@@ -14,14 +14,14 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [agreement](../resources/agreement.md) objects.
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)              |
-|:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | Agreement.Read.All |
-|Delegated (personal Microsoft account) | Not supported. |
-|Application                            | Not supported. |
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "termsofusecontainer_list_agreements" } -->
+[!INCLUDE [permissions-table](../includes/permissions/termsofusecontainer-list-agreements-permissions.md)]
 
 [!INCLUDE [rbac-tou-apis](../includes/rbac-for-apis/rbac-tou-apis.md)]
 
@@ -41,7 +41,7 @@ This method supports the `$select`, `$filter`, and `$top` [OData query parameter
 | Authorization | string | Bearer \{token\}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and collection of [agreement](../resources/agreement.md) objects in the response body.
 ## Example
@@ -59,6 +59,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-agreements-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-agreements-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -79,6 +83,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-agreements-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-agreements-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

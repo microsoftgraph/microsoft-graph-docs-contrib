@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	"@microsoft.graph.teamCreationMode" = "migration"
@@ -14,6 +14,6 @@ $params = @{
 	createdDateTime = [System.DateTime]::Parse("2020-03-14T11:22:17.067Z")
 }
 
-New-MgTeam -BodyParameter $params
+New-MgBetaTeam -BodyParameter $params
 
 ```

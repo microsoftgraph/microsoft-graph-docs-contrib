@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Me().Outlook().Tasks().ByTaskId("outlookTask-id").Delete(context.Background(), nil)
+graphClient.Me().Outlook().Tasks().ByOutlookTaskId("outlookTask-id").Delete(context.Background(), nil)
 
 
 ```

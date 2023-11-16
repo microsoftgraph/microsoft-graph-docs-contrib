@@ -3,6 +3,7 @@ title: "List roleDefinitions"
 description: "Get a list of unifiedRoleDefinition objects."
 ms.localizationpriority: medium
 author: "DougKirschner"
+ms.reviewer: msodsrbac
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
@@ -14,28 +15,24 @@ Namespace: microsoft.graph
 Get a list of [unifiedRoleDefinition](../resources/unifiedroledefinition.md) objects for the provider.
 
 The following RBAC providers are currently supported:
-- directory (Azure AD)
-- entitlement management (Azure AD)
+- directory (Microsoft Entra ID)
+- entitlement management (Microsoft Entra Entitlement Management)
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-### For the directory (Azure AD) provider
+### For the directory (Microsoft Entra ID) provider
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "rbacapplication_list_roledefinitions" } -->
+[!INCLUDE [permissions-table](../includes/permissions/rbacapplication-list-roledefinitions-permissions.md)]
 
 ### For the entitlement management provider
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All   |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "rbacapplication_list_roledefinitions_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/rbacapplication-list-roledefinitions-2-permissions.md)]
 
 ## HTTP request
 
@@ -63,7 +60,7 @@ This method supports the `$filter` (`eq` and `in` operators) OData query paramet
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -89,6 +86,10 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleDefinitions
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-roledefinitions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-roledefinitions-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-roledefinitions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -109,11 +110,15 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleDefinitions
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-roledefinitions-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-roledefinitions-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -236,6 +241,10 @@ GET https://graph.microsoft.com/v1.0/roleManagement/entitlementManagement/roleDe
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-roledefinitions-entitlementmanagement-provider-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-roledefinitions-entitlementmanagement-provider-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-roledefinitions-entitlementmanagement-provider-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -256,11 +265,15 @@ GET https://graph.microsoft.com/v1.0/roleManagement/entitlementManagement/roleDe
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-roledefinitions-entitlementmanagement-provider-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-roledefinitions-entitlementmanagement-provider-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -378,4 +391,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-

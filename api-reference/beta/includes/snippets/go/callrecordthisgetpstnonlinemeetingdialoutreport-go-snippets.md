@@ -15,7 +15,9 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Communications().CallRecords().ByCallRecordId("callRecord-id").Get(context.Background(), nil)
+fromDateTime , err := time.Parse(time.RFC3339, "{fromDateTime}")
+toDateTime , err := time.Parse(time.RFC3339, "{toDateTime}")
+microsoftGraphCallRecordsGetPstnOnlineMeetingDialoutReport, err := graphClient.Communications().CallRecords().MicrosoftGraphCallRecordsGetPstnOnlineMeetingDialoutReportWithFromDateTimeWithToDateTime(&fromDateTime, &toDateTime).Get(context.Background(), nil)
 
 
 ```

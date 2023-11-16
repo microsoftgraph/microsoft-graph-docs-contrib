@@ -25,7 +25,6 @@ requestBody.SetIsEnabled(&isEnabled)
 conditions := graphmodels.NewMessageRulePredicates()
 senderContains := []string {
 	"adele",
-
 }
 conditions.SetSenderContains(senderContains)
 requestBody.SetConditions(conditions)
@@ -42,14 +41,13 @@ recipient.SetEmailAddress(emailAddress)
 
 forwardTo := []graphmodels.Recipientable {
 	recipient,
-
 }
 actions.SetForwardTo(forwardTo)
 stopProcessingRules := true
 actions.SetStopProcessingRules(&stopProcessingRules) 
 requestBody.SetActions(actions)
 
-result, err := graphClient.Me().MailFolders().ByMailFolderId("mailFolder-id").MessageRules().Post(context.Background(), requestBody, nil)
+messageRules, err := graphClient.Me().MailFolders().ByMailFolderId("mailFolder-id").MessageRules().Post(context.Background(), requestBody, nil)
 
 
 ```

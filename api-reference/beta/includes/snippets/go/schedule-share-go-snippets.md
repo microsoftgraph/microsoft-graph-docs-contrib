@@ -9,14 +9,14 @@ import (
 	  "context"
 	  "time"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Teams/Item/Schedule/Share"
+	  graphteams "github.com/microsoftgraph/msgraph-beta-sdk-go/teams"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewSharePostRequestBody()
+requestBody := graphteams.NewSharePostRequestBody()
 notifyTeam := true
 requestBody.SetNotifyTeam(&notifyTeam) 
 startDateTime , err := time.Parse(time.RFC3339, "2018-10-08T00:00:00.000Z")

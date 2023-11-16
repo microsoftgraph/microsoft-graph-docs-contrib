@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Chats().ByChatId("chat-id").PermissionGrants().Get(context.Background(), nil)
+permissionGrants, err := graphClient.Chats().ByChatId("chat-id").PermissionGrants().Get(context.Background(), nil)
 
 
 ```

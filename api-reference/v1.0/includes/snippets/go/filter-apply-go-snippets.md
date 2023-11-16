@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Drives/Item/Items/Item/Workbook/Tables/Item/Columns/Item/Filter/Apply"
+	  graphdrives "github.com/microsoftgraph/msgraph-sdk-go/drives"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewApplyPostRequestBody()
+requestBody := graphdrives.NewApplyPostRequestBody()
 criteria := graphmodels.NewWorkbookFilterCriteria()
 criterion1 := "criterion1-value"
 criteria.SetCriterion1(&criterion1) 
@@ -39,7 +40,7 @@ filterOn := "filterOn-value"
 criteria.SetFilterOn(&filterOn) 
 requestBody.SetCriteria(criteria)
 
-graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().Tables().ByTableId("workbookTable-id").Columns().ByColumnId("workbookTableColumn-id").Filter().Apply().Post(context.Background(), requestBody, nil)
+graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().Tables().ByWorkbookTableId("workbookTable-id").Columns().ByWorkbookTableColumnId("workbookTableColumn-id").Filter().Apply().Post(context.Background(), requestBody, nil)
 
 
 ```

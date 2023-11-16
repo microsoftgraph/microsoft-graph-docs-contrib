@@ -8,21 +8,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/informationprotection"
+	  graphinformationprotection "github.com/microsoftgraph/msgraph-beta-sdk-go/informationprotection"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.InformationProtectionThreatAssessmentRequestItemRequestBuilderGetQueryParameters{
+requestParameters := &graphinformationprotection.InformationProtectionThreatAssessmentRequestItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"results"},
 }
-configuration := &graphconfig.InformationProtectionThreatAssessmentRequestItemRequestBuilderGetRequestConfiguration{
+configuration := &graphinformationprotection.InformationProtectionThreatAssessmentRequestItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.InformationProtection().ThreatAssessmentRequests().ByThreatAssessmentRequestId("threatAssessmentRequest-id").Get(context.Background(), configuration)
+threatAssessmentRequests, err := graphClient.InformationProtection().ThreatAssessmentRequests().ByThreatAssessmentRequestId("threatAssessmentRequest-id").Get(context.Background(), configuration)
 
 
 ```

@@ -25,7 +25,7 @@ requestBody.SetDisplayName(&displayName)
 externalId := "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"
 requestBody.SetExternalId(&externalId) 
 
-result, err := graphClient.Me().Todo().Lists().ByListId("todoTaskList-id").Tasks().ByTaskId("todoTask-id").LinkedResources().Post(context.Background(), requestBody, nil)
+linkedResources, err := graphClient.Me().Todo().Lists().ByTodoTaskListId("todoTaskList-id").Tasks().ByTodoTaskId("todoTask-id").LinkedResources().Post(context.Background(), requestBody, nil)
 
 
 ```

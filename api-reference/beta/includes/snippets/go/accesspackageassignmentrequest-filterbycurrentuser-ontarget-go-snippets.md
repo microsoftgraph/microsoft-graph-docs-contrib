@@ -15,7 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentRequests().ByAccessPackageAssignmentRequestId("accessPackageAssignmentRequest-id").Get(context.Background(), nil)
+on := "target"
+filterByCurrentUser, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentRequests().FilterByCurrentUserWithOn(&on).Get(context.Background(), nil)
 
 
 ```

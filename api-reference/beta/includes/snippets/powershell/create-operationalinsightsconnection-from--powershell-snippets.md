@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.WindowsUpdates
+Import-Module Microsoft.Graph.Beta.WindowsUpdates
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.windowsUpdates.operationalInsightsConnection"
@@ -13,6 +13,6 @@ $params = @{
 	workspaceName = "my-workspace"
 }
 
-New-MgWindowsUpdatesResourceConnection -BodyParameter $params
+New-MgBetaWindowsUpdatesResourceConnection -BodyParameter $params
 
 ```

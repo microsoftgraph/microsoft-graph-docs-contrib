@@ -8,21 +8,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/print"
+	  graphprint "github.com/microsoftgraph/msgraph-beta-sdk-go/print"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.PrintPrinterItemJobItemRequestBuilderGetQueryParameters{
+requestParameters := &graphprint.PrintPrinterItemJobItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"tasks"},
 }
-configuration := &graphconfig.PrintPrinterItemJobItemRequestBuilderGetRequestConfiguration{
+configuration := &graphprint.PrintPrinterItemJobItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Print().Printers().ByPrinterId("printer-id").Jobs().ByJobId("printJob-id").Get(context.Background(), configuration)
+jobs, err := graphClient.Print().Printers().ByPrinterId("printer-id").Jobs().ByPrintJobId("printJob-id").Get(context.Background(), configuration)
 
 
 ```

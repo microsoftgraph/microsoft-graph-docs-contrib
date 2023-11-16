@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Policies().DeviceRegistrationPolicy().Get(context.Background(), nil)
+deviceRegistrationPolicy, err := graphClient.Policies().DeviceRegistrationPolicy().Get(context.Background(), nil)
 
 
 ```

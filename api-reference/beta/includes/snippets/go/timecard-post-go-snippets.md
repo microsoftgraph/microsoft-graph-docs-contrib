@@ -60,7 +60,6 @@ timeCardBreak.SetStart(start)
 
 breaks := []graphmodels.TimeCardBreakable {
 	timeCardBreak,
-
 }
 requestBody.SetBreaks(breaks)
 additionalData := map[string]interface{}{
@@ -68,7 +67,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Teams().ByTeamId("team-id").Schedule().TimeCards().Post(context.Background(), requestBody, nil)
+timeCards, err := graphClient.Teams().ByTeamId("team-id").Schedule().TimeCards().Post(context.Background(), requestBody, nil)
 
 
 ```

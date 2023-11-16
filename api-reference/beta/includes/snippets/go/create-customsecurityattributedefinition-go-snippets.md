@@ -33,7 +33,7 @@ requestBody.SetType(&type)
 usePreDefinedValuesOnly := false
 requestBody.SetUsePreDefinedValuesOnly(&usePreDefinedValuesOnly) 
 
-result, err := graphClient.Directory().CustomSecurityAttributeDefinitions().Post(context.Background(), requestBody, nil)
+customSecurityAttributeDefinitions, err := graphClient.Directory().CustomSecurityAttributeDefinitions().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -8,18 +8,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Communications/Calls/Item/Transfer"
+	  graphcommunications "github.com/microsoftgraph/msgraph-sdk-go/communications"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewTransferPostRequestBody()
+requestBody := graphcommunications.NewTransferPostRequestBody()
 transferTarget := graphmodels.NewInvitationParticipantInfo()
 identity := graphmodels.NewIdentitySet()
 additionalData := map[string]interface{}{
-phone := graphmodels.New()
+phone := graphmodels.NewIdentity()
 id := "+12345678901"
 phone.SetId(&id) 
 	identity.SetPhone(phone)

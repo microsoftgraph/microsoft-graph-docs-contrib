@@ -8,17 +8,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/IdentityProtection/RiskyServicePrincipals/ConfirmCompromised"
+	  graphidentityprotection "github.com/microsoftgraph/msgraph-sdk-go/identityprotection"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewConfirmCompromisedPostRequestBody()
+requestBody := graphidentityprotection.NewConfirmCompromisedPostRequestBody()
 servicePrincipalIds := []string {
 	"9089a539-a539-9089-39a5-899039a58990",
-
 }
 requestBody.SetServicePrincipalIds(servicePrincipalIds)
 

@@ -23,7 +23,6 @@ requestBody.SetDisplayName(&displayName)
 groupTypes := []string {
 	"Unified",
 	"DynamicMembership",
-
 }
 requestBody.SetGroupTypes(groupTypes)
 mailEnabled := true
@@ -37,7 +36,7 @@ requestBody.SetMembershipRule(&membershipRule)
 membershipRuleProcessingState := "on"
 requestBody.SetMembershipRuleProcessingState(&membershipRuleProcessingState) 
 
-result, err := graphClient.Groups().Post(context.Background(), requestBody, nil)
+groups, err := graphClient.Groups().Post(context.Background(), requestBody, nil)
 
 
 ```

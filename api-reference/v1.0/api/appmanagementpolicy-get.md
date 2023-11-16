@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 Read the properties of an [appManagementPolicy](../resources/appManagementPolicy.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                |
-| :------------------------------------- | :--------------------------------------------------------- |
-| Delegated (work or school account)     | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
-| Delegated (personal Microsoft account) | Not supported.                                             |
-| Application                            | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
+<!-- { "blockType": "permissions", "name": "appmanagementpolicy_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/appmanagementpolicy-get-permissions.md)]
+
 
 ## HTTP request
 
@@ -39,7 +39,7 @@ GET /policies/appManagementPolicies/{id}
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -49,7 +49,7 @@ If successful, this method returns a `200 OK` response code and a single [appMan
 
 ### Request
 
-The following is an example of the request.  From the response, the app management policy defines the following restrictions for application and service principal objects:
+The Here's an example of the request.  From the response, the app management policy defines the following restrictions for application and service principal objects:
 
 - Blocks creating of new passwords after 2019-10-19 at 10:37 AM UTC time.
 - Limits password secrets for apps created after 2019-10-19 at 10:37 AM UTC time to less than 4 days, 12 hours, 30 minutes and 5 seconds.
@@ -66,6 +66,10 @@ GET https://graph.microsoft.com/v1.0/policies/appManagementPolicies/{id}
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-appmanagementpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-appmanagementpolicy-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -88,11 +92,15 @@ GET https://graph.microsoft.com/v1.0/policies/appManagementPolicies/{id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-appmanagementpolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-appmanagementpolicy-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following is an example of the response.
+The Here's an example of the response.
 
 <!-- {
   "blockType": "response",

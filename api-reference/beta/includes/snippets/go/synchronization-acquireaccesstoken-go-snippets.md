@@ -8,21 +8,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Applications/Item/Synchronization/AcquireAccessToken"
+	  graphapplications "github.com/microsoftgraph/msgraph-beta-sdk-go/applications"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewAcquireAccessTokenPostRequestBody()
+requestBody := graphapplications.NewAcquireAccessTokenPostRequestBody()
 
 
 synchronizationSecretKeyStringValuePair := graphmodels.NewSynchronizationSecretKeyStringValuePair()
 
 credentials := []graphmodels.SynchronizationSecretKeyStringValuePairable {
 	synchronizationSecretKeyStringValuePair,
-
 }
 requestBody.SetCredentials(credentials)
 

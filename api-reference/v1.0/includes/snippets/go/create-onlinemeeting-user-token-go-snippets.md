@@ -24,7 +24,7 @@ requestBody.SetEndDateTime(&endDateTime)
 subject := "User Token Meeting"
 requestBody.SetSubject(&subject) 
 
-result, err := graphClient.Me().OnlineMeetings().Post(context.Background(), requestBody, nil)
+onlineMeetings, err := graphClient.Me().OnlineMeetings().Post(context.Background(), requestBody, nil)
 
 
 ```

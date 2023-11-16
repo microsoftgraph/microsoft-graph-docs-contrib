@@ -9,7 +9,7 @@ import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/groups"
+	  graphgroups "github.com/microsoftgraph/msgraph-sdk-go/groups"
 	  //other-imports
 )
 
@@ -19,7 +19,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 headers := abstractions.NewRequestHeaders()
 headers.Add("ConsistencyLevel", "eventual")
 
-configuration := &graphconfig.GroupItemMembers$countRequestBuilderGetRequestConfiguration{
+configuration := &graphgroups.GroupItemMembers$countRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 }
 

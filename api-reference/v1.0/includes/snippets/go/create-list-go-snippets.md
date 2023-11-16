@@ -34,7 +34,6 @@ columnDefinition1.SetNumber(number)
 columns := []graphmodels.ColumnDefinitionable {
 	columnDefinition,
 	columnDefinition1,
-
 }
 requestBody.SetColumns(columns)
 list := graphmodels.NewListInfo()
@@ -42,7 +41,7 @@ template := "genericList"
 list.SetTemplate(&template) 
 requestBody.SetList(list)
 
-result, err := graphClient.Sites().BySiteId("site-id").Lists().Post(context.Background(), requestBody, nil)
+lists, err := graphClient.Sites().BySiteId("site-id").Lists().Post(context.Background(), requestBody, nil)
 
 
 ```

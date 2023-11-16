@@ -505,6 +505,106 @@
     {
       "ChangeList": [
         {
+          "Id": "a12d7c65-273a-4409-8c5a-a8be6bcfd005",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "x509CertificateAffinityLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the **x509CertificateAffinityLevel** enumeration type.",
+          "Target": "x509CertificateAffinityLevel"
+        },
+        {
+          "Id": "a12d7c65-273a-4409-8c5a-a8be6bcfd005",
+          "ApiChange": "Member",
+          "ChangedApiName": "issuerSubjectAndPolicyOID",
+          "ChangeType": "Addition",
+          "Description": "Added the `issuerSubjectAndPolicyOID` member to the **x509CertificateRuleType** enumeration.",
+          "Target": "x509CertificateRuleType"
+        },
+        {
+          "Id": "a12d7c65-273a-4409-8c5a-a8be6bcfd005",
+          "ApiChange": "Property",
+          "ChangedApiName": "x509CertificateDefaultRequiredAffinityLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the **x509CertificateDefaultRequiredAffinityLevel** property to the [x509CertificateAuthenticationModeConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateAuthenticationModeConfiguration?view=graph-rest-beta) resource.",
+          "Target": "x509CertificateAuthenticationModeConfiguration"
+        },
+        {
+          "Id": "a12d7c65-273a-4409-8c5a-a8be6bcfd005",
+          "ApiChange": "Property",
+          "ChangedApiName": "issuerSubjectIdentifier",
+          "ChangeType": "Addition",
+          "Description": "Added the **issuerSubjectIdentifier** property to the [x509CertificateRule](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateRule?view=graph-rest-beta) resource.",
+          "Target": "x509CertificateRule"
+        },
+        {
+          "Id": "a12d7c65-273a-4409-8c5a-a8be6bcfd005",
+          "ApiChange": "Property",
+          "ChangedApiName": "policyOidIdentifier",
+          "ChangeType": "Addition",
+          "Description": "Added the **policyOidIdentifier** property to the [x509CertificateRule](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateRule?view=graph-rest-beta) resource.",
+          "Target": "x509CertificateRule"
+        },
+        {
+          "Id": "a12d7c65-273a-4409-8c5a-a8be6bcfd005",
+          "ApiChange": "Property",
+          "ChangedApiName": "x509CertificateRequiredAffinityLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the **x509CertificateRequiredAffinityLevel** property to the [x509CertificateRule](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateRule?view=graph-rest-beta) resource.",
+          "Target": "x509CertificateRule"
+        },
+        {
+          "Id": "a12d7c65-273a-4409-8c5a-a8be6bcfd005",
+          "ApiChange": "Property",
+          "ChangedApiName": "trustAffinityLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the **trustAffinityLevel** property to the [x509CertificateUserBinding](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateUserBinding?view=graph-rest-beta) resource.",
+          "Target": "x509CertificateUserBinding"
+        }
+      ],
+      "Id": "a12d7c65-273a-4409-8c5a-a8be6bcfd005",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-11-02T16:40:54.9462605Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "26b75f44-c3c8-4300-a98b-2ee6c75e6146",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "x509CertificateIssuerHintsState",
+          "ChangeType": "Addition",
+          "Description": "Added the **x509CertificateIssuerHintsState** enumeration type.",
+          "Target": "x509CertificateIssuerHintsState"
+        },
+        {
+          "Id": "26b75f44-c3c8-4300-a98b-2ee6c75e6146",
+          "ApiChange": "Resource",
+          "ChangedApiName": "x509CertificateIssuerHintsConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [x509CertificateIssuerHintsConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateIssuerHintsConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "x509CertificateIssuerHintsConfiguration"
+        },
+        {
+          "Id": "26b75f44-c3c8-4300-a98b-2ee6c75e6146",
+          "ApiChange": "Property",
+          "ChangedApiName": "issuerHintsConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the `issuerHintsConfiguration` property to the [x509CertificateAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateAuthenticationMethodConfiguration?view=graph-rest-beta) resource.",
+          "Target": "x509CertificateAuthenticationMethodConfiguration"
+        }
+      ],
+      "Id": "26b75f44-c3c8-4300-a98b-2ee6c75e6146",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-10-03T16:10:15.2386858Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "c9cb7b4d-85b0-4fa8-9028-9b8235f3b9b2",
           "ApiChange": "Resource",
           "ChangedApiName": "reportSuspiciousActivitySettings",
@@ -525,6 +625,42 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-05-30T16:57:35.0770948Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f099df95-49c6-44b0-9c4c-483dee8cbc1c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "hardwareOathAuthenticationMethodConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [hardwareOathAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/hardwareOathAuthenticationMethodConfiguration?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "hardwareOathAuthenticationMethodConfiguration"
+        }
+      ],
+      "Id": "f099df95-49c6-44b0-9c4c-483dee8cbc1c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-08-22T23:06:15.4742783Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "bfd0c33a-af94-4b3a-867d-a904d3986b0f",
+          "ApiChange": "Property",
+          "ChangedApiName": "enforceRegistrationAfterAllowedSnoozes",
+          "ChangeType": "Addition",
+          "Description": "Added the `enforceRegistrationAfterAllowedSnoozes` property to the [authenticationMethodsRegistrationCampaign](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethodsRegistrationCampaign?view=graph-rest-beta) resource.",
+          "Target": "authenticationMethodsRegistrationCampaign"
+        }
+      ],
+      "Id": "bfd0c33a-af94-4b3a-867d-a904d3986b0f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-10-11T21:39:03.3557592Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     }

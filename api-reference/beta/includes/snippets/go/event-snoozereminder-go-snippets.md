@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Me/Events/Item/SnoozeReminder"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewSnoozeReminderPostRequestBody()
+requestBody := graphusers.NewItemSnoozeReminderPostRequestBody()
 newReminderTime := graphmodels.NewDateTimeTimeZone()
 dateTime := "2016-10-19T10:37:00Z"
 newReminderTime.SetDateTime(&dateTime) 

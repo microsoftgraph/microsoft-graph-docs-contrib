@@ -2,7 +2,8 @@
 title: "List authenticationContextClassReferences"
 description: "Retrieve a list of authenticationContextClassReference objects."
 ms.localizationpriority: medium
-author: "bakerCaleb"
+author: "swetha-rai"
+ms.reviewer: conditionalaccesspm
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -15,15 +16,14 @@ Namespace: microsoft.graph
 
 Retrieve a list of [authenticationContextClassReference](../resources/authenticationcontextclassreference.md) objects.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)                                       |
-|:--------------------------------------|:----------------------------------------------------------------------------------|
-|Delegated (work or school account)     | Policy.Read.ConditionalAccess, Policy.ReadWrite.ConditionalAccess |
-|Delegated (personal Microsoft account) | Not supported. |
-|Application                            | Policy.Read.ConditionalAccess, Policy.ReadWrite.ConditionalAccess |
+<!-- { "blockType": "permissions", "name": "conditionalaccessroot_list_authenticationcontextclassreferences" } -->
+[!INCLUDE [permissions-table](../includes/permissions/conditionalaccessroot-list-authenticationcontextclassreferences-permissions.md)]
 
 ## HTTP request
 
@@ -44,7 +44,7 @@ This method supports the `$filter` OData query parameter to help customize the r
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -69,6 +69,10 @@ GET /identity/conditionalAccess/authenticationContextClassReferences
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-authenticationcontextclassreference-v1-e1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-authenticationcontextclassreference-v1-e1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -91,11 +95,15 @@ GET /identity/conditionalAccess/authenticationContextClassReferences
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-authenticationcontextclassreference-v1-e1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-authenticationcontextclassreference-v1-e1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

@@ -9,7 +9,7 @@ import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/organization"
+	  graphorganization "github.com/microsoftgraph/msgraph-sdk-go/organization"
 	  //other-imports
 )
 
@@ -19,11 +19,11 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 headers := abstractions.NewRequestHeaders()
 headers.Add("Accept-Language", "0")
 
-configuration := &graphconfig.OrganizationItemBrandingRequestBuilderGetRequestConfiguration{
+configuration := &graphorganization.OrganizationItemBrandingRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 }
 
-result, err := graphClient.Organization().ByOrganization().Id("organization-id").Branding().Get(context.Background(), configuration)
+branding, err := graphClient.Organization().ByOrganizationId("organization-id").Branding().Get(context.Background(), configuration)
 
 
 ```

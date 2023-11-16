@@ -1,9 +1,9 @@
 ---
 title: "recommendation: reactivate"
 description: "Reactivate a completed, dismissed, or postponed recommendation object."
-author: "hafowler"
+author: "ddeeps2610"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -14,21 +14,15 @@ Namespace: microsoft.graph
 
 Reactivate a completed, dismissed, or postponed [recommendation](../resources/recommendation.md) object. This action updates the **status** of the [recommendation](../resources/recommendation.md) to `active`. This method only works when the **status** of the recommendation is `completedByUser`, `dismissed`, or `postponed`.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|DirectoryRecommendations.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DirectoryRecommendations.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "recommendation_reactivate" } -->
+[!INCLUDE [permissions-table](../includes/permissions/recommendation-reactivate-permissions.md)]
 
-For delegated scenarios, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
-- Global administrator
-- Security administrator
-- Security operator
-- Application administrator
-- Cloud application administrator
+[!INCLUDE [rbac-directory-recommendations-apis-write](../includes/rbac-for-apis/rbac-directory-recommendations-apis-write.md)]
 
 ## HTTP request
 
@@ -46,7 +40,7 @@ POST /directory/recommendations/{recommendationId}/reactivate
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -71,6 +65,10 @@ POST https://graph.microsoft.com/beta/directory/recommendations/0cb31920-84b9-47
 [!INCLUDE [sample-code](../includes/snippets/csharp/recommendationthisreactivate-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/recommendationthisreactivate-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/recommendationthisreactivate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -91,10 +89,14 @@ POST https://graph.microsoft.com/beta/directory/recommendations/0cb31920-84b9-47
 [!INCLUDE [sample-code](../includes/snippets/powershell/recommendationthisreactivate-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/recommendationthisreactivate-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

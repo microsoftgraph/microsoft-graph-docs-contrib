@@ -1,9 +1,9 @@
 ---
 title: "List recommendations"
 description: "Get a list of the recommendation objects and their properties."
-author: "hafowler"
+author: "ddeeps2610"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -14,24 +14,15 @@ Namespace: microsoft.graph
 
 Get a list of the [recommendation](../resources/recommendation.md) objects and their properties.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|DirectoryRecommendations.Read.All, DirectoryRecommendations.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DirectoryRecommendations.Read.All, DirectoryRecommendations.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "directory_list_recommendation" } -->
+[!INCLUDE [permissions-table](../includes/permissions/directory-list-recommendation-permissions.md)]
 
-For delegated scenarios, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
-- Global administrator
-- Global reader
-- Security administrator
-- Security operator
-- Security reader
-- Application administrator
-- Cloud application administrator
-- Reports reader
+[!INCLUDE [rbac-directory-recommendations-apis-read](../includes/rbac-for-apis/rbac-directory-recommendations-apis-read.md)]
 
 ## HTTP request
 
@@ -52,7 +43,7 @@ This method supports `$select` and `$filter` OData query parameters to help cust
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -78,6 +69,10 @@ GET https://graph.microsoft.com/beta/directory/recommendations
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-recommendation-e1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-recommendation-e1-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-recommendation-e1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -98,10 +93,14 @@ GET https://graph.microsoft.com/beta/directory/recommendations
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-recommendation-e1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-recommendation-e1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -135,6 +134,7 @@ Content-Type: application/json
       "category": "identityBestPractice",
       "status": "active",
       "priority": "medium",
+      "releaseType": "preview",
       "impactType": "users",
       "remediationImpact": "",
       "actionSteps": [
@@ -185,6 +185,10 @@ GET https://graph.microsoft.com/beta/directory/recommendations?$filter=recommend
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-recommendation-e2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-recommendation-e2-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-recommendation-e2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -205,10 +209,14 @@ GET https://graph.microsoft.com/beta/directory/recommendations?$filter=recommend
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-recommendation-e2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-recommendation-e2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -240,6 +248,7 @@ Content-Type: application/json
   "category": "identityBestPractice",
   "status": "active",
   "priority": "medium",
+  "releaseType": "preview",
   "impactType": "users",
   "remediationImpact": "",
   "actionSteps": [
@@ -289,6 +298,10 @@ GET https://graph.microsoft.com/beta/directory/recommendations?$filter=id eq '0c
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-recommendation-e3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-recommendation-e3-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-recommendation-e3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -309,10 +322,14 @@ GET https://graph.microsoft.com/beta/directory/recommendations?$filter=id eq '0c
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-recommendation-e3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-recommendation-e3-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -344,6 +361,7 @@ Content-Type: application/json
   "category": "identityBestPractice",
   "status": "active",
   "priority": "medium",
+  "releaseType": "preview",
   "impactType": "users",
   "remediationImpact": "",
   "actionSteps": [

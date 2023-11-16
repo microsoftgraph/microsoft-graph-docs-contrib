@@ -1,7 +1,7 @@
 ---
 title: "userConsentRequest: filterByCurrentUser"
 description: "Retrieve userConsentRequest objects for which the current user is the reviewer."
-author: "psignoret"
+author: "eringreenlee"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
@@ -14,14 +14,13 @@ Namespace: microsoft.graph
 
 Retrieve a collection of [userConsentRequest](../resources/userconsentrequest.md) objects for accessing a specified app, for which the current user is the reviewer.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|ConsentRequest.Read.All, ConsentRequest.ReadWrite.All|
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "userconsentrequest_filterByCurrentUser" } -->
+[!INCLUDE [permissions-table](../includes/permissions/userconsentrequest-filterByCurrentUser-permissions.md)]
 
 ## HTTP request
 
@@ -50,7 +49,7 @@ This function supports the `$filter` and `$select` OData query parameters to h
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -76,6 +75,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentReq
 [!INCLUDE [sample-code](../includes/snippets/csharp/userconsentrequest-filterbycurrentuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/userconsentrequest-filterbycurrentuser-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/userconsentrequest-filterbycurrentuser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -94,6 +97,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentReq
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/userconsentrequest-filterbycurrentuser-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/userconsentrequest-filterbycurrentuser-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

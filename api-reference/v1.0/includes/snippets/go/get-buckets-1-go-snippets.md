@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Planner().Buckets().Get(context.Background(), nil)
+buckets, err := graphClient.Planner().Buckets().Get(context.Background(), nil)
 
 
 ```

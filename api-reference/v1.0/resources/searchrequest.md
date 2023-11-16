@@ -28,7 +28,7 @@ The JSON blob contains the types of resources expected in the response, the unde
 |collapseProperties|[collapseProperty](collapseproperty.md) collection|Contains the ordered collection of fields and limit to collapse results. Optional.|
 |contentSources|String collection|Contains the connection to be targeted.|
 |enableTopResults|Boolean|This triggers hybrid sort for messages : the first 3 messages are the most relevant. This property is only applicable to entityType=`message`. Optional.|
-|entityTypes|entityType collection| One or more types of resources expected in the response. Possible values are: `list`, `site`, `listItem`, `message`, `event`, `drive`, `driveItem`, `externalItem`, `acronym`, `bookmark`. See [known limitations](search-api-overview.md#known-limitations) for those combinations of two or more entity types that are supported in the same search request. Required.|
+|entityTypes|entityType collection| One or more types of resources expected in the response. Possible values are: `event`, `message`, `driveItem`, `externalItem`, `site`, `list`, `listItem`, `drive`, `chatMessage`, `person`, `acronym`, `bookmark`.  Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this `[evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations)`:`chatMessage`, `person`, `acronym`, `bookmark`. See [known limitations](search-api-overview.md#known-limitations) for those combinations of two or more entity types that are supported in the same search request. Required.|
 |fields|String collection |Contains the fields to be returned for each resource object specified in **entityTypes**, allowing customization of the fields returned by default; otherwise, including additional fields such as custom managed properties from SharePoint and OneDrive, or custom fields in **externalItem** from the content that Microsoft Graph connectors bring in. The **fields** property can use the [semantic labels](/microsoftsearch/configure-connector#step-6-assign-property-labels) applied to properties. For example, if a property is labeled as title, you can retrieve it using the following syntax: `label_title`. Optional.|
 |from|Int32|Specifies the offset for the search results. Offset 0 returns the very first result. Optional.|
 |query|[searchQuery](searchquery.md)|Contains the query terms. Required.|
@@ -43,10 +43,14 @@ The JSON blob contains the types of resources expected in the response, the unde
 
 The following is a JSON representation of the resource.
 
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.searchRequest"
+}-->
 ```json
 {
   "aggregationFilters": ["String"],
-  "aggregations": {"@odata.type": "microsoft.graph.aggregationOption"},
+  "aggregations": [{"@odata.type": "microsoft.graph.aggregationOption"}],
   "collapseProperties": [{"@odata.type": "microsoft.graph.collapseProperty"}],
   "enableTopResults": "Boolean",
   "entityTypes": ["String"],
@@ -69,7 +73,7 @@ The following is a JSON representation of the resource.
 - Search content in SharePoint and OneDrive ([files, lists and sites](/graph/search-concept-files))
 - [Sort](/graph/search-concept-sort) search results
 - Use [aggregations](/graph/search-concept-aggregation) to refine search results
-- Use [display layout](/graph/search-concept-display-layout.md)
+- Use [display layout](/graph/concepts/search-concept-display-layout.md)
 - Enable [spell corrections](/graph/search-concept-speller) in search results
 - [Search SharePoint content with application permissions](/graph/search-concept-searchall)
 - [Collapse search results](/graph/search-concept-collapse)

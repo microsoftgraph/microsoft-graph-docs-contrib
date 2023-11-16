@@ -8,21 +8,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/security"
+	  graphsecurity "github.com/microsoftgraph/msgraph-sdk-go/security"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.SecurityCasesEdiscoveryCaseItemNoncustodialDataSourcesRequestBuilderGetQueryParameters{
+requestParameters := &graphsecurity.SecurityCasesEdiscoveryCaseItemNoncustodialDataSourcesRequestBuilderGetQueryParameters{
 	Expand: [] string {"dataSource"},
 }
-configuration := &graphconfig.SecurityCasesEdiscoveryCaseItemNoncustodialDataSourcesRequestBuilderGetRequestConfiguration{
+configuration := &graphsecurity.SecurityCasesEdiscoveryCaseItemNoncustodialDataSourcesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").NoncustodialDataSources().Get(context.Background(), configuration)
+noncustodialDataSources, err := graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").NoncustodialDataSources().Get(context.Background(), configuration)
 
 
 ```

@@ -1,7 +1,7 @@
 ---
 title: "mailFolder: copy"
 description: "Copy a mailfolder and its contents to another mailfolder."
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -13,15 +13,14 @@ Namespace: microsoft.graph
 
 Copy a mailfolder and its contents to another mailfolder.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type | Permissions (from least to most privileged) |
-|:----------------|:--------------------------------------------|
-|Delegated (work or school account) | Mail.ReadWrite    |
-|Delegated (personal Microsoft account) | Mail.ReadWrite    |
-|Application | Mail.ReadWrite |
+<!-- { "blockType": "permissions", "name": "mailfolder_copy" } -->
+[!INCLUDE [permissions-table](../includes/permissions/mailfolder-copy-permissions.md)]
 
 ## HTTP request
 
@@ -52,10 +51,10 @@ If successful, this method returns `200 OK` response code and a [mailFolder](../
 
 ## Example
 
-Here is an example of how to call this API.
+Here's an example of how to call this API.
 
 ##### Request
-Here is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -74,6 +73,10 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/mailfolder-copy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/mailfolder-copy-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -96,11 +99,15 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/mailfolder-copy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/mailfolder-copy-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
 
-Here is an example of the response.
+Here's an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {

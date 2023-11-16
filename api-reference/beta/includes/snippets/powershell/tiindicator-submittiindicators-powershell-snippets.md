@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Security
+Import-Module Microsoft.Graph.Beta.Security
 
 $params = @{
 	value = @(
@@ -51,6 +51,6 @@ $params = @{
 	)
 }
 
-Submit-MgSecurityTiIndicator -BodyParameter $params
+Submit-MgBetaSecurityTiIndicator -BodyParameter $params
 
 ```

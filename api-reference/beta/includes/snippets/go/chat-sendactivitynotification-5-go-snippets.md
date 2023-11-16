@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Chats/Item/SendActivityNotification"
+	  graphchats "github.com/microsoftgraph/msgraph-beta-sdk-go/chats"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewSendActivityNotificationPostRequestBody()
+requestBody := graphchats.NewSendActivityNotificationPostRequestBody()
 topic := graphmodels.NewTeamworkActivityTopic()
 source := graphmodels.ENTITYURL_TEAMWORKACTIVITYTOPICSOURCE 
 topic.SetSource(&source) 
@@ -28,11 +29,9 @@ previewText := graphmodels.NewItemBody()
 content := "New Task Created"
 previewText.SetContent(&content) 
 requestBody.SetPreviewText(previewText)
-recipient := graphmodels.NewTeamworkNotificationRecipient()
-additionalData := map[string]interface{}{
-	"chatId" : "19:1c3af46e9e0f4a5293343c8813c47619@thread.v2", 
-}
-recipient.SetAdditionalData(additionalData)
+recipient := graphmodels.NewChatMembersNotificationRecipient()
+chatId := "19:1c3af46e9e0f4a5293343c8813c47619@thread.v2"
+recipient.SetChatId(&chatId) 
 requestBody.SetRecipient(recipient)
 
 
@@ -44,7 +43,6 @@ keyValuePair.SetValue(&value)
 
 templateParameters := []graphmodels.KeyValuePairable {
 	keyValuePair,
-
 }
 requestBody.SetTemplateParameters(templateParameters)
 

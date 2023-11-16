@@ -17,15 +17,14 @@ Get a join web URL for an appointment on the [Virtual Appointments](/microsoft-3
 
 This web URL includes enhanced business-to-customer experiences such as mobile browser join and virtual lobby rooms. With [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams), you can configure a [custom lobby room](/microsoft-365/frontline/browser-join#customize-the-waiting-room-with-your-company-logo) experience for attendees by adding your company logo and access the [Virtual Appointments usage report](/microsoft-365/frontline/virtual-appointments-usage-report) for organizational analytics.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                                          |
-|:---------------------------------------|:-----------------------------------------------------------------------------------------------------|
-| Delegated (work or school account)     | VirtualAppointment.Read, VirtualAppointment.ReadWrite, OnlineMeetings.Read, OnlineMeetings.ReadWrite |
-| Delegated (personal Microsoft account) | Not supported.                                                                                       |
-| Application                            | VirtualAppointment.Read.All, VirtualAppointment.ReadWrite.All                                        |
+<!-- { "blockType": "permissions", "name": "virtualappointment_getvirtualappointmentjoinweburl" } -->
+[!INCLUDE [permissions-table](../includes/permissions/virtualappointment-getvirtualappointmentjoinweburl-permissions.md)]
 
 ## HTTP request
 
@@ -47,7 +46,7 @@ GET /users/{userId}/onlineMeetings/{onlineMeetingId}/getVirtualAppointmentJoinWe
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -74,6 +73,10 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-virtualappointment-getvirtualappointmentjoinweburl-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-virtualappointment-getvirtualappointmentjoinweburl-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-virtualappointment-getvirtualappointmentjoinweburl-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -88,6 +91,14 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-virtualappointment-getvirtualappointmentjoinweburl-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-virtualappointment-getvirtualappointmentjoinweburl-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-virtualappointment-getvirtualappointmentjoinweburl-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

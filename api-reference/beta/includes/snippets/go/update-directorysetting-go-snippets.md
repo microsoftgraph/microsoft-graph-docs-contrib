@@ -26,11 +26,10 @@ settingValue.SetValue(&value)
 
 values := []graphmodels.SettingValueable {
 	settingValue,
-
 }
 requestBody.SetValues(values)
 
-result, err := graphClient.Settings().BySettingId("directorySetting-id").Patch(context.Background(), requestBody, nil)
+settings, err := graphClient.Settings().ByDirectorySettingId("directorySetting-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

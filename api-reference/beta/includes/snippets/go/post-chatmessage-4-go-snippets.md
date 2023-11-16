@@ -36,11 +36,10 @@ chatMessageAttachment.SetName(&name)
 
 attachments := []graphmodels.ChatMessageAttachmentable {
 	chatMessageAttachment,
-
 }
 requestBody.SetAttachments(attachments)
 
-result, err := graphClient.Teams().ByTeamId("team-id").Channels().ByChannelId("channel-id").Messages().Post(context.Background(), requestBody, nil)
+messages, err := graphClient.Teams().ByTeamId("team-id").Channels().ByChannelId("channel-id").Messages().Post(context.Background(), requestBody, nil)
 
 
 ```

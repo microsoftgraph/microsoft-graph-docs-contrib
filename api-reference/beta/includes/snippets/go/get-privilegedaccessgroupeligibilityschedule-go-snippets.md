@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.IdentityGovernance().PrivilegedAccess().Group().EligibilitySchedules().ByEligibilityScheduleId("privilegedAccessGroupEligibilitySchedule-id").Get(context.Background(), nil)
+eligibilitySchedules, err := graphClient.IdentityGovernance().PrivilegedAccess().Group().EligibilitySchedules().ByPrivilegedAccessGroupEligibilityScheduleId("privilegedAccessGroupEligibilitySchedule-id").Get(context.Background(), nil)
 
 
 ```

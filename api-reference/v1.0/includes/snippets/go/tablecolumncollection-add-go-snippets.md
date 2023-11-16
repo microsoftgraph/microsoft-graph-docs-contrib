@@ -8,27 +8,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Drives/Item/Items/Item/Workbook/Tables/Item/Columns/Add"
+	  graphdrives "github.com/microsoftgraph/msgraph-sdk-go/drives"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewAddPostRequestBody()
+requestBody := graphdrives.NewAddPostRequestBody()
 index := int32(3)
 requestBody.SetIndex(&index) 
 
 
-json := graphmodels.New()
+json := graphmodels.NewJson()
 
 values := []graphmodels.Jsonable {
 	json,
-
 }
 requestBody.SetValues(values)
 
-result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().Tables().ByTableId("workbookTable-id").Columns().Add().Post(context.Background(), requestBody, nil)
+add, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().Tables().ByWorkbookTableId("workbookTable-id").Columns().Add().Post(context.Background(), requestBody, nil)
 
 
 ```

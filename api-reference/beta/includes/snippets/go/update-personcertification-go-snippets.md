@@ -21,7 +21,7 @@ requestBody.SetIssuingAuthority(&issuingAuthority)
 issuingCompany := "International Academy of Marketing Excellence"
 requestBody.SetIssuingCompany(&issuingCompany) 
 
-result, err := graphClient.Users().ByUserId("user-id").Profile().Certifications().ByCertificationId("personCertification-id").Patch(context.Background(), requestBody, nil)
+certifications, err := graphClient.Users().ByUserId("user-id").Profile().Certifications().ByPersonCertificationId("personCertification-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

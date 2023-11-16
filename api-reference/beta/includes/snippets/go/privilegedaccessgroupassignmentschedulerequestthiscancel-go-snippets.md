@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.IdentityGovernance().PrivilegedAccess().Group().AssignmentScheduleRequests().ByAssignmentScheduleRequestId("privilegedAccessGroupAssignmentScheduleRequest-id").Cancel().Post(context.Background(), nil)
+graphClient.IdentityGovernance().PrivilegedAccess().Group().AssignmentScheduleRequests().ByPrivilegedAccessGroupAssignmentScheduleRequestId("privilegedAccessGroupAssignmentScheduleRequest-id").Cancel().Post(context.Background(), nil)
 
 
 ```

@@ -23,7 +23,7 @@ contentType := graphmodels.TEXT_BODYTYPE
 content.SetContentType(&contentType) 
 requestBody.SetContent(content)
 
-result, err := graphClient.Privacy().SubjectRightsRequests().BySubjectRightsRequestId("subjectRightsRequest-id").Notes().Post(context.Background(), requestBody, nil)
+notes, err := graphClient.Privacy().SubjectRightsRequests().BySubjectRightsRequestId("subjectRightsRequest-id").Notes().Post(context.Background(), requestBody, nil)
 
 
 ```

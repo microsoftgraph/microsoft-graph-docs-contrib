@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
 	  //other-imports
 )
 
@@ -18,14 +18,14 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestFilter := "startsWith(subject,'All')"
 
-requestParameters := &graphconfig.ItemCalendarEventsRequestBuilderGetQueryParameters{
+requestParameters := &graphusers.ItemCalendarEventsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.ItemCalendarEventsRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemCalendarEventsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().Calendar().Events().Get(context.Background(), configuration)
+events, err := graphClient.Me().Calendar().Events().Get(context.Background(), configuration)
 
 
 ```

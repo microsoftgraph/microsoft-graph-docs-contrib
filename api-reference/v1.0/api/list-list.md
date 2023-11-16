@@ -1,12 +1,12 @@
 ---
-author: JeremyKelley
-title: List the SharePoint lists in a site
+author: spgraph-docs-team
+title: Get lists in a site
 ms.localizationpriority: high
 ms.prod: "sharepoint"
 description: "Get the collection of lists for a site."
 doc_type: apiPageType
 ---
-# Enumerate lists in a site
+# Get lists in a site
 
 Namespace: microsoft.graph
 
@@ -15,15 +15,14 @@ Get the collection of [lists][] for a [site][].
 Lists with the [system][] facet are hidden by default.
 To list them, include `system` in your `$select` statement.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Sites.Read.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Sites.Read.All, Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "list_list" } -->
+[!INCLUDE [permissions-table](../includes/permissions/list-list-permissions.md)]
 
 ## HTTP request
 
@@ -39,11 +38,11 @@ GET /sites/{site-id}/lists
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [list][] objects in the response body. 
+If successful, this method returns a `200 OK` response code and a collection of [list][] objects in the response body.
 
 ## Example
 
@@ -61,6 +60,10 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/enum-lists-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/enum-lists-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -83,11 +86,15 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 [!INCLUDE [sample-code](../includes/snippets/powershell/enum-lists-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/enum-lists-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "isCollection": true, "truncated": true } -->
 

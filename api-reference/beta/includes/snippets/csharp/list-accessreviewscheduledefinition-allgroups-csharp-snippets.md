@@ -6,11 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
-
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.IdentityGovernance.AccessReviews.Definitions.GetAsync((requestConfiguration) =>
 {
-	requestConfiguration.QueryParameters.Filter = "contains(scope/microsoft.graph.accessReviewQueryScope/query,%20'./members')";
+	requestConfiguration.QueryParameters.Filter = "contains(scope/microsoft.graph.accessReviewQueryScope/query, './members')";
 });
 
 

@@ -12,16 +12,13 @@ Namespace: microsoft.graph
 
 Retrieve a usage summary for a [printer](../resources/printer.md) for a particular time period. For descriptions of each of the endpoints, see [printUsageByPrinter](../resources/printUsageByPrinter.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table.
-
-|Permission type | Permissions (from least to most privileged) |
-|:---------------|:--------------------------------------------|
-|Delegated (work or school account)| Reports.Read.All |
-|Delegated (personal Microsoft account)|Not Supported.|
-|Application|Not Supported.|
+<!-- { "blockType": "permissions", "name": "printusagebyprinter_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/printusagebyprinter-get-permissions.md)]
 
 ## HTTP request
 
@@ -43,7 +40,7 @@ This method supports some of the OData query parameters to help customize the re
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -67,6 +64,10 @@ GET https://graph.microsoft.com/v1.0/reports/dailyPrintUsageByPrinter/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-printusagebyprinter-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-printusagebyprinter-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-printusagebyprinter-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -87,6 +88,10 @@ GET https://graph.microsoft.com/v1.0/reports/dailyPrintUsageByPrinter/{id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-printusagebyprinter-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-printusagebyprinter-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -104,10 +109,18 @@ Content-Type: application/json
 {
     "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
     "printerId": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
+    "printerName": "printerName1",
     "usageDate": "Date",
     "completedBlackAndWhiteJobCount": 42,
     "completedColorJobCount": 0,
-    "incompleteJobCount": 6
+    "incompleteJobCount": 6,
+    "completedJobCount": 110,
+    "pageCount": 138,
+    "blackAndWhitePageCount": 0,
+    "colorPageCount": 138,
+    "mediaSheetCount": 132,
+    "doubleSidedSheetCount": 12,
+    "singleSidedSheetCount": 120
 }
 ```
 

@@ -6,24 +6,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
-var requestBody = new Microsoft.Graph.Beta.Policies.CrossTenantAccessPolicy.Partners.Item.IdentitySynchronization.IdentitySynchronizationPutRequestBody
+var requestBody = new CrossTenantIdentitySyncPolicyPartner
 {
-	AdditionalData = new Dictionary<string, object>
+	DisplayName = "Fabrikam",
+	UserSyncInbound = new CrossTenantUserSyncInbound
 	{
-		{
-			"displayName" , "Fabrikam"
-		},
-		{
-			"userSyncInbound" , new 
-			{
-				IsSyncAllowed = true,
-			}
-		},
+		IsSyncAllowed = true,
 	},
 };
-await graphClient.Policies.CrossTenantAccessPolicy.Partners["{crossTenantAccessPolicyConfigurationPartner-tenantId}"].IdentitySynchronization.PutAsync(requestBody);
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Policies.CrossTenantAccessPolicy.Partners["{crossTenantAccessPolicyConfigurationPartner-tenantId}"].IdentitySynchronization.PutAsync(requestBody);
 
 
 ```

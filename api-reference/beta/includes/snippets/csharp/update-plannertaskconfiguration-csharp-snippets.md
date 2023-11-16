@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
 var requestBody = new PlannerTaskConfiguration
 {
@@ -18,16 +19,11 @@ var requestBody = new PlannerTaskConfiguration
 			new PlannerTaskRoleBasedRule
 			{
 				DefaultRule = "block",
-				Role = new PlannerTaskConfigurationRoleBase
+				Role = new PlannerRelationshipBasedUserType
 				{
 					OdataType = "#microsoft.graph.plannerRelationshipBasedUserType",
 					RoleKind = PlannerUserRoleKind.Relationship,
-					AdditionalData = new Dictionary<string, object>
-					{
-						{
-							"role" , "defaultRules"
-						},
-					},
+					Role = PlannerRelationshipUserRoles.DefaultRules,
 				},
 				PropertyRule = new PlannerTaskPropertyRule
 				{
@@ -51,16 +47,11 @@ var requestBody = new PlannerTaskConfiguration
 			new PlannerTaskRoleBasedRule
 			{
 				DefaultRule = "block",
-				Role = new PlannerTaskConfigurationRoleBase
+				Role = new PlannerRelationshipBasedUserType
 				{
 					OdataType = "#microsoft.graph.plannerRelationshipBasedUserType",
 					RoleKind = PlannerUserRoleKind.Relationship,
-					AdditionalData = new Dictionary<string, object>
-					{
-						{
-							"role" , "taskAssignees"
-						},
-					},
+					Role = PlannerRelationshipUserRoles.TaskAssignees,
 				},
 				PropertyRule = new PlannerTaskPropertyRule
 				{
@@ -174,6 +165,8 @@ var requestBody = new PlannerTaskConfiguration
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Solutions.BusinessScenarios["{businessScenario-id}"].Planner.TaskConfiguration.PatchAsync(requestBody);
 
 

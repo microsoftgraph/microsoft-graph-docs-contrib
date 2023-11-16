@@ -16,13 +16,10 @@ Namespace: microsoft.graph
 Remove a [gradingCategory](../resources/educationgradingcategory.md) from an [educationAssignment](../resources/educationassignment.md). Only teachers can perform this operation.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
-|Delegated (personal Microsoft account) |  Not supported.  |
-|Application | Not supported. |
+<!-- { "blockType": "permissions", "name": "educationassignment_delete_gradingcategory" } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationassignment-delete-gradingcategory-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +34,7 @@ DELETE /education/classes/{classId}/assignments/{assignmentId}/gradingCategory/$
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a `204` successful response code.
@@ -45,12 +42,12 @@ If successful, this method returns a `204` successful response code.
 ## Example
 
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070", "8bfb6d7f-8634-4f3b-9b6a-b6b6ff663f01"],
+  "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070", "0bcb37af-3676-47ef-ae93-8de22ce5ff1d"],
   "name": "delete_gradingCategories"
 }-->
 ```http
@@ -69,7 +66,7 @@ DELETE https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-856
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

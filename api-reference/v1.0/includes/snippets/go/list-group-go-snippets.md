@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Print().Shares().ByShareId("printerShare-id").AllowedGroups().Get(context.Background(), nil)
+allowedGroups, err := graphClient.Print().Shares().ByPrinterShareId("printerShare-id").AllowedGroups().Get(context.Background(), nil)
 
 
 ```

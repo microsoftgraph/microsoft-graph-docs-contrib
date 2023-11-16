@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Users().ByUserId("user-id").Profile().Certifications().ByCertificationId("personCertification-id").Delete(context.Background(), nil)
+graphClient.Users().ByUserId("user-id").Profile().Certifications().ByPersonCertificationId("personCertification-id").Delete(context.Background(), nil)
 
 
 ```

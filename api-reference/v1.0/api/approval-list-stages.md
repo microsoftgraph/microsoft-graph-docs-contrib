@@ -11,24 +11,40 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), list the [approvalStage](../resources/approvalstage.md) objects associated with an [approval](../resources/approval.md) object. This call can be made by an approver, providing the identifier of the [access package assignment request](../resources/accesspackageassignmentrequest.md).
+List the [approvalStage](../resources/approvalstage.md) objects associated with an [approval](../resources/approval.md). This API request is made by an approver in the following scenarios:
+
+In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), providing the identifier of the [access package assignment request](../resources/accesspackageassignmentrequest.md).
+In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), providing the identifier of the [assignment schedule request](../resources/privilegedaccessgroupassignmentschedulerequest.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+### For entitlement management
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "approval_list_stages" } -->
+[!INCLUDE [permissions-table](../includes/permissions/approval-list-stages-permissions.md)]
+
+### For PIM for groups
+
+<!-- { "blockType": "permissions", "name": "approval_list_stages_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/approval-list-stages-2-permissions.md)]
 
 ## HTTP request
 
+To list the approval stages in entitlement management:
 <!-- { "blockType": "ignored" } -->
-
 ```http
 GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{accessPackageAssignmentRequestId}/stages
+```
+
+To list the approval stages in PIM for groups:
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /identityGovernance/privilegedAccess/group/assignmentApprovals/{privilegedaccessgroupassignmentschedulerequestId}/stages
 ```
 
 ## Request headers
@@ -39,7 +55,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -64,6 +80,10 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/ac
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-approvalstage-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-approvalstage-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-approvalstage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -84,11 +104,15 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/ac
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-approvalstage-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-approvalstage-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -127,5 +151,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

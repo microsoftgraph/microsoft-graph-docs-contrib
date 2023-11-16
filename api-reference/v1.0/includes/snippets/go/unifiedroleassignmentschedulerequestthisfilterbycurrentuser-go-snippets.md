@@ -15,7 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.RoleManagement().Directory().RoleAssignmentScheduleRequests().ByRoleAssignmentScheduleRequestId("unifiedRoleAssignmentScheduleRequest-id").Get(context.Background(), nil)
+on := "principal"
+filterByCurrentUser, err := graphClient.RoleManagement().Directory().RoleAssignmentScheduleRequests().FilterByCurrentUserWithOn(&on).Get(context.Background(), nil)
 
 
 ```

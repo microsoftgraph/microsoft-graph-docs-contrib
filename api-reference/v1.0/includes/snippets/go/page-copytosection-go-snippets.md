@@ -8,20 +8,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Me/Onenote/Pages/Item/CopyToSection"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewCopyToSectionPostRequestBody()
+requestBody := graphusers.NewItemCopyToSectionPostRequestBody()
 id := "id-value"
 requestBody.SetId(&id) 
 groupId := "groupId-value"
 requestBody.SetGroupId(&groupId) 
 
-result, err := graphClient.Me().Onenote().Pages().ByPageId("onenotePage-id").CopyToSection().Post(context.Background(), requestBody, nil)
+copyToSection, err := graphClient.Me().Onenote().Pages().ByOnenotePageId("onenotePage-id").CopyToSection().Post(context.Background(), requestBody, nil)
 
 
 ```

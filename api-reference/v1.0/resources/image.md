@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 title: image resource type
 ms.localizationpriority: medium
 description: "The image resource groups image-related properties into a single structure."

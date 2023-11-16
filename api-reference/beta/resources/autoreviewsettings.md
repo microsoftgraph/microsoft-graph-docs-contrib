@@ -2,7 +2,7 @@
 title: "autoReviewSettings resource type (deprecated)"
 description: "Specifies the behavior for when an access review completes."
 ms.localizationpriority: medium
-author: "markwahl-msft"
+author: "shubhamguptacal"
 ms.prod: "governance"
 doc_type: resourcePageType
 ---

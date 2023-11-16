@@ -9,7 +9,7 @@ import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/directory"
+	  graphdirectory "github.com/microsoftgraph/msgraph-sdk-go/directory"
 	  //other-imports
 )
 
@@ -22,17 +22,17 @@ headers.Add("ConsistencyLevel", "eventual")
 
 requestCount := true
 
-requestParameters := &graphconfig.DirectoryDeletedItemsGraph.groupRequestBuilderGetQueryParameters{
+requestParameters := &graphdirectory.DirectoryDeletedItemsGraph.groupRequestBuilderGetQueryParameters{
 	Count: &requestCount,
 	Orderby: [] string {"deletedDateTime asc"},
 	Select: [] string {"id","DisplayName","deletedDateTime"},
 }
-configuration := &graphconfig.DirectoryDeletedItemsGraph.groupRequestBuilderGetRequestConfiguration{
+configuration := &graphdirectory.DirectoryDeletedItemsGraph.groupRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Directory().DeletedItems().GraphGroup().Get(context.Background(), configuration)
+graphGroup, err := graphClient.Directory().DeletedItems().GraphGroup().Get(context.Background(), configuration)
 
 
 ```

@@ -8,21 +8,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/identity"
+	  graphidentity "github.com/microsoftgraph/msgraph-beta-sdk-go/identity"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.IdentityB2cUserFlowItemUserAttributeAssignmentsRequestBuilderGetQueryParameters{
+requestParameters := &graphidentity.IdentityB2cUserFlowItemUserAttributeAssignmentsRequestBuilderGetQueryParameters{
 	Expand: [] string {"userAttribute"},
 }
-configuration := &graphconfig.IdentityB2cUserFlowItemUserAttributeAssignmentsRequestBuilderGetRequestConfiguration{
+configuration := &graphidentity.IdentityB2cUserFlowItemUserAttributeAssignmentsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Identity().B2cUserFlows().ByB2cUserFlowId("b2cIdentityUserFlow-id").UserAttributeAssignments().Get(context.Background(), configuration)
+userAttributeAssignments, err := graphClient.Identity().B2cUserFlows().ByB2cIdentityUserFlowId("b2cIdentityUserFlow-id").UserAttributeAssignments().Get(context.Background(), configuration)
 
 
 ```

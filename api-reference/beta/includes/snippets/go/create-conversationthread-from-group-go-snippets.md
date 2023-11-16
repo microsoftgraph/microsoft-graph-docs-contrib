@@ -39,17 +39,15 @@ recipient.SetEmailAddress(emailAddress)
 
 newParticipants := []graphmodels.Recipientable {
 	recipient,
-
 }
 post.SetNewParticipants(newParticipants)
 
 posts := []graphmodels.Postable {
 	post,
-
 }
 requestBody.SetPosts(posts)
 
-result, err := graphClient.Groups().ByGroupId("group-id").Threads().Post(context.Background(), requestBody, nil)
+threads, err := graphClient.Groups().ByGroupId("group-id").Threads().Post(context.Background(), requestBody, nil)
 
 
 ```

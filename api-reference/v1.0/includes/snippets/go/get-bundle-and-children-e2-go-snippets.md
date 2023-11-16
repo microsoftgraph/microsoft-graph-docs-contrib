@@ -8,21 +8,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/drives"
+	  graphdrives "github.com/microsoftgraph/msgraph-sdk-go/drives"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.DriveItemItemItemRequestBuilderGetQueryParameters{
+requestParameters := &graphdrives.DriveItemItemItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"children"},
 }
-configuration := &graphconfig.DriveItemItemItemRequestBuilderGetRequestConfiguration{
+configuration := &graphdrives.DriveItemItemItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Get(context.Background(), configuration)
+items, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Get(context.Background(), configuration)
 
 
 ```

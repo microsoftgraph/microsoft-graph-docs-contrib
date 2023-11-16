@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Chats().ByChatId("chat-id").PinnedMessages().Get(context.Background(), nil)
+pinnedMessages, err := graphClient.Chats().ByChatId("chat-id").PinnedMessages().Get(context.Background(), nil)
 
 
 ```

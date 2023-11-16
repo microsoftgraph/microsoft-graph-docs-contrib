@@ -19,7 +19,7 @@ requestBody := graphmodels.NewAccessReviewPolicy()
 isGroupOwnerManagementEnabled := true
 requestBody.SetIsGroupOwnerManagementEnabled(&isGroupOwnerManagementEnabled) 
 
-result, err := graphClient.Policies().AccessReviewPolicy().Patch(context.Background(), requestBody, nil)
+accessReviewPolicy, err := graphClient.Policies().AccessReviewPolicy().Patch(context.Background(), requestBody, nil)
 
 
 ```

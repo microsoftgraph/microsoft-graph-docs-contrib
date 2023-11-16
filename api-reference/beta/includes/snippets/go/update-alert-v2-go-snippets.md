@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//security"
+	  graphmodelssecurity "github.com/microsoftgraph/msgraph-beta-sdk-go/models/security"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewAlert()
+requestBody := graphmodelssecurity.NewAlert()
 assignedTo := "secAdmin@contoso.onmicrosoft.com"
 requestBody.SetAssignedTo(&assignedTo) 
 classification := graphmodels.TRUEPOSITIVE_ALERTCLASSIFICATION 
@@ -25,7 +25,7 @@ requestBody.SetDetermination(&determination)
 status := graphmodels.INPROGRESS_ALERTSTATUS 
 requestBody.SetStatus(&status) 
 
-result, err := graphClient.Security().Alerts_v2().ByAlerts_v2().Id("alert-id").Patch(context.Background(), requestBody, nil)
+alerts_v2, err := graphClient.Security().Alerts_v2().ByAlertId("alert-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

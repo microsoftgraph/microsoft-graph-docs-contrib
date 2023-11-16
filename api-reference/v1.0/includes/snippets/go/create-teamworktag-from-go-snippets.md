@@ -30,11 +30,10 @@ teamworkTagMember1.SetUserId(&userId)
 members := []graphmodels.TeamworkTagMemberable {
 	teamworkTagMember,
 	teamworkTagMember1,
-
 }
 requestBody.SetMembers(members)
 
-result, err := graphClient.Teams().ByTeamId("team-id").Tags().Post(context.Background(), requestBody, nil)
+tags, err := graphClient.Teams().ByTeamId("team-id").Tags().Post(context.Background(), requestBody, nil)
 
 
 ```
