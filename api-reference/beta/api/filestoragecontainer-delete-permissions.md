@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove permission from a fileStorageContainer.
+Remove permissions from a fileStorageContainer.
 
 The application calling this API must have permission to delete permissions from fileStorageContainers for the respective container type.
 
