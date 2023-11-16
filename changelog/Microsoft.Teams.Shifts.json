@@ -319,6 +319,48 @@
       "CreatedDateTime": "2023-07-05T01:15:33.264Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Shift management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "11aa9e13-8d42-493d-80a3-7c779fafb96b",
+          "ApiChange": "Property",
+          "ChangedApiName": "schedulingGroup",
+          "ChangeType": "Addition",
+          "Description": "Added code property to scheduling group APIs.",
+          "Target": "schedulingGroup"
+        },
+        {
+          "Id": "11aa9e13-8d42-493d-80a3-7c779fafb96b",
+          "ApiChange": "Property",
+          "ChangedApiName": "timeOffReason",
+          "ChangeType": "Addition",
+          "Description": "Added code property to Time Off Reason APIs.",
+          "Target": "timeOffReason"
+        },
+        {
+          "Id": "11aa9e13-8d42-493d-80a3-7c779fafb96b",
+          "ApiChange": "Property",
+          "ChangedApiName": "schedule",
+          "ChangeType": "Addition",
+          "Description": "Added start day of week property to schedule APIs.",
+          "Target": "schedule"
+        },
+        {
+          "Id": "11aa9e13-8d42-493d-80a3-7c779fafb96b",
+          "ApiChange": "Property",
+          "ChangedApiName": "schedule",
+          "ChangeType": "Addition",
+          "Description": "Added activitiesIncludedWhenCopyingShiftsEnabled property to schedule APIs.",
+          "Target": "schedule"
+        }
+      ],
+      "Id": "11aa9e13-8d42-493d-80a3-7c779fafb96b",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2023-11-15T01:15:33.264Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Shift management"
     }
   ]
 }
