@@ -1,6 +1,6 @@
 ---
 title: "Get goalsExportJob"
-description: "Get the status of a goalsExportJob object in Viva Goals organization."
+description: "Get the status of a goalsExportJob object in a Viva Goals organization."
 author: "ishatyagiit"
 ms.localizationpriority: medium
 ms.prod: "viva"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the status of a [goalsExportJob](../resources/goalsexportjob.md) object in Viva Goals organization.
+Get the status of a [goalsExportJob](../resources/goalsexportjob.md) object in a Viva Goals organization.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -35,9 +35,9 @@ GET /employeeExperience/goals/exportJobs/{goalsExportJobId}
 ```
 
 ## Optional query parameters
-This method supports the `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For example, to select the specific properties (columns), add `$select=id,goalsOrganizationId`. 
 
-For example, to select the specific properties (columns), add `$select=id,goalsOrganizationId`. 
+For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -60,10 +60,10 @@ If successful, this method returns a `200 OK` response code and a [goalsExportJo
 
 ## Examples
 
-### Example 1: Status is "running"
+### Example 1: Status is `running`
 
 #### Request
-The following example shows the request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_goalsexportjob1"
@@ -101,10 +101,10 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Status is "succeeded"
+### Example 2: Status is `succeeded`
 
 #### Request
-The following example shows the request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_goalsexportjob2"
@@ -143,10 +143,10 @@ Content-Type: application/json
 ```
 
 
-### Example 3: Status is "notStarted"
+### Example 3: Status is `notStarted`
 
 #### Request
-The following example shows the request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_goalsexportjob3"
@@ -186,7 +186,7 @@ Content-Type: application/json
 ### Example 4: Specified goalsExportJobId isn't found
 
 #### Request
-The following example shows the request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_goalsexportjob4"
@@ -227,7 +227,7 @@ Content-type: application/json
 ### Example 5: Invalid exportJobId is specified
 
 #### Request
-The following example shows the request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_goalsexportjob"
@@ -265,10 +265,10 @@ Content-type: application/json
 }
 ```
 
-### Example 6: Get the content of a successfully completed goalsExportJob resource.
+### Example 6: Get the content of a successfully completed goalsExportJob resource
 
 #### Request
-The following example shows the request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_goalsexportjob_content"
