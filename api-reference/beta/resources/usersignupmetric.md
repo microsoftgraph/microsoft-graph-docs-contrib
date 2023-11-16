@@ -1,6 +1,6 @@
 ---
 title: "userSignUpMetric resource type"
-description: "Represents insights on user sign-ups for apps registered in your tenant configured for Microsoft Entra External ID for customers, over a specific period."
+description: "Represents insights on user sign-ups for apps registered in your tenant configured for Microsoft Entra External ID for customers, over a specific period (daily or monthly)."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents insights on user sign-ups for apps registered in your tenant configured for Microsoft Entra External ID for customers, over a specific period.
+Represents insights on user sign-ups for apps registered in your tenant configured for Microsoft Entra External ID for customers, over a specific period (daily or monthly).
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List daily userSignUp](../api/dailyuserinsightmetricsroot-list-signups.md)|[userSignUp](../resources/usersignupmetric.md) collection|Get a list of the daily [userSignUp](../resources/usersignupmetric.md) objects and their properties.|
-|[List monthly userSignUp](../api/monthlyuserinsightmetricsroot-list-signups.md)|[userSignUp](../resources/usersignupmetric.md) collection|Get a list of the monthly [userSignUp](../resources/usersignupmetric.md) objects and their properties.|
+|[List daily signUps](../api/dailyuserinsightmetricsroot-list-signups.md)|[userSignUpMetric](../resources/usersignupmetric.md) collection|Get a list of daily [user sign-ups](../resources/usersignupmetric.md) on apps registered in your tenant configured for Microsoft Entra External ID for customers.|
+|[List monthly signUps](../api/monthlyuserinsightmetricsroot-list-signups.md)|[userSignUpMetric](../resources/usersignupmetric.md) collection|Get a list of monthly [user sign-ups](../resources/usersignupmetric.md) on apps registered in your tenant configured for Microsoft Entra External ID for customers.|
 
 ## Properties
 |Property|Type|Description|
