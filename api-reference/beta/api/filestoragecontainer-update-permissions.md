@@ -7,14 +7,13 @@ ms.prod: "files"
 doc_type: apiPageType
 ---
 
-# Update fileStoreContainer permission
+# Update fileStoreContainer permissions
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the existing permission for a fileStorageContainer by patching the permission resource.
-
-Only the **roles** property can be updated. Only one role per user is supported. A new id is generated for the updated permission object.
+Update existing permissions for a fileStorageContainer by patching the permissions resource. Only the **roles** property can be updated.  One role per user is supported. A new ID is generated for the updated permissions object.
 
 The application calling this API must have permission to update permissions for fileStorageContainers for the respective container type.
 
@@ -50,7 +49,7 @@ The following property on these permission types can be modified.
 
 |Permission Type|Property|Type|Description|
 |:---|:---|:---|:---|
-|User|roles|String|Supported roles are reader, writer, manager and owner. Required.|
+|User|roles|String|Supported roles are reader, writer, manager, and owner. Required.|
 
 ## Response
 
@@ -59,7 +58,7 @@ If successful, this action returns a `200 OK` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "filestoragecontainerthis.update-permissions"
@@ -74,9 +73,8 @@ Content-Type: application/json
 }
 ```
 
-
 ### Response
-The following is an example of the response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
