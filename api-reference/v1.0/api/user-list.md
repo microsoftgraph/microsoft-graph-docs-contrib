@@ -1,4 +1,4 @@
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->---
+---
 title: "List users"
 description: "Retrieve a list of user objects."
 author: "yyuank"
