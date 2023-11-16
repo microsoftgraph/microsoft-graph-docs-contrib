@@ -1,7 +1,6 @@
 ---
 title: "List fileStorageContainer permissions"
 description: "Get the set of permissions for a fileStorageContainer."
-
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.prod: "files"
@@ -9,13 +8,14 @@ doc_type: apiPageType
 ---
 
 # List fileStorageContainer permissions
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Enumerate permissions for an existing fileStorageContainer. 
 
-The application calling this API must have permision to enumerate permissions for fileStorageContainers for the respective container type.
+The application calling this API must have permissions to enumerate fileStorageContainers permissions for the respective container type.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -36,7 +36,7 @@ GET /storage/fileStorage/containers/{containerId}/permissions
 ```
 
 ## Optional query parameters
-This method supports supports OData skip-top paging, $orderBy and $filter features. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports OData skip-top paging, $orderBy, and $filter features. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "list_permission"
@@ -60,9 +60,8 @@ The following is an example of a request.
 GET /storage/fileStorage/containers/{containerId}/permissions
 ```
 
-
 ### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
