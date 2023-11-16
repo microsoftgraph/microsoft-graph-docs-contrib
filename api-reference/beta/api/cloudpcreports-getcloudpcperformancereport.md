@@ -48,7 +48,7 @@ In the request body, supply a JSON representation of the parameters.
 The following table shows the parameters that can be used with this method.
 
 | Parameter          | Type                                | Description                                                            |
-| ------------------ | ----------------------------------- | --------- | ---------------------------------------------------------------------- |
+| :----------------- | :---------------------------------- | :--------------------------------------------------------------------- | 
 | `reportName`       | [cloudPCPerformanceReportName](#cloudpcperformancereportname-values) | The report name, possible values: `performanceTrendReport`        |
 | `filter`           | String                        | OData filter syntax. Only ‘and’, ‘or’, 'gt' and ’eq’ are currently supported |
 | `select`           | String collection            | Define behavior to get default columns if select not specified         |
