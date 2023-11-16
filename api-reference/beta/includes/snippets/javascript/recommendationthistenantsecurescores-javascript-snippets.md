@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let recommendation = await client.api('/directory/recommendations/tenantSecureScores')
+let tenantSecureScores = await client.api('/directory/recommendations/tenantSecureScores')
 	.version('beta')
 	.get();
 

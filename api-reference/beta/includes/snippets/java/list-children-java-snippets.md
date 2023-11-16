@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-DriveItemCollectionPage children = graphClient.drives("{drive-id}").items("{item-id}").children()
+DriveItemCollectionPage children = graphClient.drives("{drive-id}").items("root").children()
 	.buildRequest()
 	.get();
 
