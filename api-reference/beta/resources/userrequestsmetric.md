@@ -1,6 +1,6 @@
 ---
 title: "userRequestsMetric resource type"
-description: "Represents insights on all user requests for apps registered in your tenant configured for Microsoft Entra External ID for customers, over a specific period."
+description: "Represents insights on all user requests for apps registered in your tenant configured for Microsoft Entra External ID for customers, over a specific period (daily or monhtly)."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents insights on all user requests for apps registered in your tenant configured for Microsoft Entra External ID for customers, over a specific period. This includes all requests such as authentication requests, sign-up requests, and MFA requests. The user requests are aggregated without no filtering. 
+Represents insights on all user requests for apps registered in your tenant configured for Microsoft Entra External ID for customers, over a specific period (daily or monhtly). This includes all requests such as authentication requests, sign-up requests, and MFA requests. The user requests are aggregated without no filtering. 
 
 >**Note:** The value returned might not reflect the most updated numbers.
 
@@ -22,7 +22,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List userRequests](../api/monthlyuserinsightmetricsroot-list-requests.md)| [userRequests](../resources/userrequestsmetric.md) collection|Get a list of the [userRequests](../resources/userrequestsmetric.md) objects and their properties.|
+|[List daily requests](../api/dailyuserinsightmetricsroot-list-requests.md)| [userRequestsMetric](../resources/userrequestsmetric.md) collection|Get a list of daily [userRequestsMetric](../resources/userrequestsmetric.md) objects on apps registered in your tenant configured for Microsoft Entra External ID for customers.|
+|[List monhtly requests](../api/monthlyuserinsightmetricsroot-list-requests.md)| [userRequestsMetric](../resources/userrequestsmetric.md) collection|Get a list of monthly [userRequestsMetric](../resources/userrequestsmetric.md) objects on apps registered in your tenant configured for Microsoft Entra External ID for customers.|
 
 ## Properties
 |Property|Type|Description|
