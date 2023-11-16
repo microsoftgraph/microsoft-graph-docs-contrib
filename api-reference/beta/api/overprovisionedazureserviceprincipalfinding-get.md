@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/azure/key/findings('id')/overprovisionedAzureServicePrincipalFinding
+GET /identityGovernance/permissionsAnalytics/azure/key/findings/{id}/overprovisionedAzureServicePrincipalFinding
 ```
 
 ## Optional query parameters

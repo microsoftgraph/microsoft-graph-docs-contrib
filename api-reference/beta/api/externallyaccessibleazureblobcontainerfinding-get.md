@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/azure/findings(id')/graph.externallyAccessibleAzureBlobContainerFinding
+GET /identityGovernance/permissionsAnalytics/azure/findings/{id}/graph.externallyAccessibleAzureBlobContainerFinding
 ```
 
 ## Optional query parameters

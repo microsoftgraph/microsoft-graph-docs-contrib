@@ -31,7 +31,7 @@ List AWS users with privilege escalation:
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/aws/findings('id')/graph.privilegeEscalationUserFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings/{id}/graph.privilegeEscalationUserFinding
 ```
 
 List GCP users with privilege escalation:
@@ -40,7 +40,7 @@ List GCP users with privilege escalation:
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/gcp/findings('id')/graph.privilegeEscalationUserFinding
+GET /identityGovernance/permissionsAnalytics/gcp/findings/{id}/graph.privilegeEscalationUserFinding
 ```
 
 ## Optional query parameters

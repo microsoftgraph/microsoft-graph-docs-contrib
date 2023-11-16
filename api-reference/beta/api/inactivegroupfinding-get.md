@@ -33,7 +33,7 @@ Get AWS inactive groups:
 }
 -->
 ```http
-GET /identityGovernance/permissionsAnalytics/aws/findings('id')/microsoft.graph.inactiveGroupFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings/{id}/microsoft.graph.inactiveGroupFinding
 ```
 
 Get Azure inactive groups:
@@ -42,7 +42,7 @@ Get Azure inactive groups:
 }
 -->
 ```http
-GET /identityGovernance/permissionsAnalytics/azure/findings('id')/microsoft.graph.inactiveGroupFinding
+GET /identityGovernance/permissionsAnalytics/azure/findings/{id}/microsoft.graph.inactiveGroupFinding
 ```
 
 Get GCP inactive groups:
@@ -51,7 +51,7 @@ Get GCP inactive groups:
 }
 -->
 ```http
-GET /identityGovernance/permissionsAnalytics/gcp/findings('id')/microsoft.graph.inactiveGroupFinding
+GET /identityGovernance/permissionsAnalytics/gcp/findings/{id}/microsoft.graph.inactiveGroupFinding
 ```
 
 ## Optional query parameters

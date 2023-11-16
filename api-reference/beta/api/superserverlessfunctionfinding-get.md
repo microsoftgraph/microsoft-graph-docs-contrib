@@ -31,7 +31,7 @@ Get AWS super serverless functions:
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/aws/findings('id')/graph.superServerlessFunctionFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings/{id}/graph.superServerlessFunctionFinding
 ```
 
 Get Azure super serverless functions:

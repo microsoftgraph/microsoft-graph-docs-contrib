@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/aws/findings('id')/graph.overprovisionedAwsResourceFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings/{id}/graph.overprovisionedAwsResourceFinding
 ```
 
 ## Optional query parameters

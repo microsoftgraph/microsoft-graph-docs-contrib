@@ -31,7 +31,7 @@ Get AWS super users:
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/aws/findings('id')/graph.superUserFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings/{id}/graph.superUserFinding
 ```
 
 Get Azure super users:

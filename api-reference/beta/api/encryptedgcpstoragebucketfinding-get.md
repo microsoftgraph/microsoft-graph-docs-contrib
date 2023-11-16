@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/gcp/findings('id')/graph.encryptedGcpStorageBucketFinding
+GET /identityGovernance/permissionsAnalytics/gcp/findings/{id}/graph.encryptedGcpStorageBucketFinding
 ```
 
 ## Optional query parameters

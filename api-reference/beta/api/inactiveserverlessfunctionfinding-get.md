@@ -32,7 +32,7 @@ Get AWS inactive serverless functions:
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/aws/findings('id')/microsoft.graph.inactiveServerlessFunctionFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings/{id}/microsoft.graph.inactiveServerlessFunctionFinding
 ```
 
 Get Azure inactive serverless functions:
@@ -41,7 +41,7 @@ Get Azure inactive serverless functions:
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/azure/findings('id')/microsoft.graph.inactiveServerlessFunctionFinding
+GET /identityGovernance/permissionsAnalytics/azure/findings/{id}/microsoft.graph.inactiveServerlessFunctionFinding
 ```
 
 Get GCP inactive serverless functions:
@@ -50,7 +50,7 @@ Get GCP inactive serverless functions:
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/gcp/findings('id')/microsoft.graph.inactiveServerlessFunctionFinding
+GET /identityGovernance/permissionsAnalytics/gcp/findings/{id}/microsoft.graph.inactiveServerlessFunctionFinding
 ```
 
 ## Optional query parameters
