@@ -16,7 +16,7 @@ Retrieve the list of [fileStorageContainer](../resources/filestoragecontainer.md
 
 
 [Note]
-Only a limited subset of properties is returned for each fileStorageContainer. The $expand operation is not supported for drive, permissions, and customProperties properties.
+Only a limited subset of properties is returned for each fileStorageContainer. The $expand operation isn't supported for drive, permissions, and customProperties properties.
 
 
 
@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-The following is an example of enumerating all tenant-owned containers of a given type.
+The following example shows a request to enumerate all tenant-owned containers of a given type.
 <!-- {
   "blockType": "request",
   "name": "list_filestoragecontainer"
@@ -63,7 +63,7 @@ GET /storage/fileStorage/containers?$filter=containerTypeId eq {containerTypeId}
 ```
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
