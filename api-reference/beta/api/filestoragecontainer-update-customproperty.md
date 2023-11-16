@@ -1,13 +1,18 @@
 ---
-title: "Update custom properties on a fileStorageContainer "
+title: "Update custom properties of a fileStorageContainer "
+
 description: "Update custom properties on a fileStorageContainer"
+```suggestion
+description: "Update the custom properties of a fileStorageContainer"
+
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.prod: "files"
 doc_type: apiPageType
 ---
 
-# Update custom properties of a fileStorageContainer
+# Update the custom properties of a fileStorageContainer
+
 
 Namespace: microsoft.graph
 
