@@ -1,6 +1,5 @@
 ---
 title: "Delete custom properties from a fileStorageContainer"
-
 description: "Delete custom properties from a fileStorageContainer"
 
 author: "tonchan-msft"
@@ -55,7 +54,7 @@ If successful, this action returns a `200 OK` response code.
 ## Examples
 
 ### Request
-The following is an example of deleting multiple custom properties.
+The following example shows how to delete multiple custom properties.
 <!-- {
   "blockType": "request",
   "name": "filestoragecontainerthis.delete-customproperty"
@@ -72,7 +71,7 @@ Content-type: application/json
 ```
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
