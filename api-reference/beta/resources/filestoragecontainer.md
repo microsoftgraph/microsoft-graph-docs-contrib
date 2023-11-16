@@ -1,7 +1,6 @@
 ---
 title: "fileStorageContainer resource type"
-description: "Represents a shared file storage space that can be used by a user or a group of users via an application."
-
+description: "Represents a space where multiple users or a group of users can store files and access them using an application."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.prod: "files"
@@ -14,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a shared file storage space that can be used by a user or a group of users via an application. All file system objects in a fileStorageContainer are returned as [driveItem](../resources/driveitem.md) resources. 
-
+Represents a space where multiple users or a group of users can store files and access them using an application. All file system objects in a fileStorageContainer are returned as [driveItem](../resources/driveitem.md) resources. 
 
 **FileStorageContainer** resources have properties that provide data about the fileStorageContainer's status and access setting. This includes:
 * **ContainerType** specifies the application workload that owns or can access all containers of that container type. Each container must have only one container type. 
@@ -75,10 +73,10 @@ Represents a shared file storage space that can be used by a user or a group of 
 |reader|Readers can read fileStorageContainer metadata and the content inside.|
 |writer|Writers can read and modify fileStorageContainer metadata and contents inside.|
 |manager|Managers can read and modify fileStorageContainer metadata and contents inside and manage the permissions to the container.|
-|owner|Owners can read and modify fileStorageContainer metadata and contents inside, manage permissions to containers, delete and restore containers.|
+|owner|Owners can read and modify fileStorageContainer metadata and contents inside, manage container permissions, and delete and restore containers.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
