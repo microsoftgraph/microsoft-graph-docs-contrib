@@ -1,5 +1,5 @@
 ---
-title: "List daily userSignUps"
+title: "List daily signUps"
 description: "Get a list of daily user sign-ups on apps registered in your tenant configured for Microsoft Entra External ID for customers."
 author: "srutto"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
 
-# List daily userSignUps
+# List daily signUps
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
