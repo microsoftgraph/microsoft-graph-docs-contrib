@@ -9,7 +9,7 @@ doc_type: resourcePageType
 
 # socialIdentitySource resource type
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

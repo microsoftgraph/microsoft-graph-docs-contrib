@@ -9,7 +9,7 @@ doc_type: resourcePageType
 
 # socialIdentitySource resource type
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.identityGovernance
 
 The social identity source used as an identity source of a [connectedOrganization](connectedOrganization.md).
 
