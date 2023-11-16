@@ -15,9 +15,8 @@ Namespace: microsoft.graph
 Retrieve the list of [fileStorageContainer](../resources/filestoragecontainer.md) objects visible to the caller. The containerTypeId filter parameter is required. The application calling these APIs must have permissions to read fileStorageContainers for the respective container type.
 
 
-[Note]
-Only a limited subset of properties is returned for each fileStorageContainer. The $expand operation isn't supported for drive, permissions, and customProperties properties.
-
+> [Note]
+> Only a limited subset of properties is returned for each fileStorageContainer. The $expand operation isn't supported for drive, permissions, and customProperties properties.
 
 
 ## Permissions
@@ -38,7 +37,6 @@ One of the following permissions is required to call this API. To learn more, in
 GET /storage/fileStorage/containers?$filter=containerTypeId eq {containerTypeId}
 GET /storage/fileStorage/containers?$filter=containerTypeId eq {containerTypeId} and viewpoint/effectiveRole eq 'principalOwner'
 ```
-
 
 ## Request headers
 |Name|Description|
