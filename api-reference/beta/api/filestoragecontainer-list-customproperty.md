@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # List fileStorageContainer custom properties
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -39,7 +40,6 @@ GET /storage/fileStorage/containers/{containerId}/customProperties/{propertyName
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-
 
 ## Response
 
