@@ -1,8 +1,6 @@
 ---
 title: "Add permissions to a fileStorageContainer"
-
 description: "Add permissions to a fileStorageContainer instance"
-
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.prod: "files"
@@ -10,13 +8,12 @@ doc_type: apiPageType
 ---
 
 # Add permission to fileStorageContainer
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add [permissions](../resources/permission.md) to an existing fileStorageContainer. The application calling this API must have permission to add permissions to fileStorageContainers for the respective container type.
-
-
+Add [permissions](../resources/permission.md) to an existing fileStorageContainer. The application calling this API must have permission to add fileStorageContainers permissions for the respective container type.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -72,9 +69,8 @@ Content-type: application/json
 }
 ```
 
-
 ### Response
-The following is an example of the response. If successful, this method returns a `201 Created` response code and a [permission](../resources/permission.md) object in the response body.
+The following example shows the response. If successful, this method returns a `201 Created` response code and a [permission](../resources/permission.md) object in the response body.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
