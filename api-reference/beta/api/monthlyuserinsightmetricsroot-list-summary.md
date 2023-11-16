@@ -1,5 +1,5 @@
 ---
-title: "List monthly insightSummary"
+title: "List monthly summary"
 description: "Get a list of monthly insightSummary objects on apps registered in your tenant configured for Microsoft Entra External ID for customers."
 author: "srutto"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
 
-# List monthly insightSummary
+# List monthly summary
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
