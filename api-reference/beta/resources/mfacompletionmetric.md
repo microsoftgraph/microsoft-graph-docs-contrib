@@ -1,6 +1,6 @@
 ---
 title: "mfaCompletionMetric resource type"
-description: "Represents insights on the MFA usage for apps registered in your tenant configured for Microsoft Entra External ID for customers, over a specific period."
+description: "Represents insights on the MFA usage for apps registered in your tenant configured for Microsoft Entra External ID for customers, over a specific period (daily or monthly)."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents insights on the MFA usage for apps registered in your tenant configured for Microsoft Entra External ID for customers, over a specific period.
+Represents insights on the MFA usage for apps registered in your tenant configured for Microsoft Entra External ID for customers, over a specific period (daily or monthly).
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List daily mfaCompletion](../api/dailyuserinsightmetricsroot-list-mfacompletions.md)|[mfaCompletion](../resources/mfacompletionmetric.md) collection.|Get a list of the daily [mfaCompletion](../resources/mfacompletionmetric.md) objects and their properties.|
-|[List monthly mfaCompletion](../api/monthlyuserinsightmetricsroot-list-mfacompletions.md)|[mfaCompletion](../resources/mfacompletionmetric.md) collection.|Get a list of the monthly [mfaCompletion](../resources/mfacompletionmetric.md) objects and their properties.|
+|[List daily mfaCompletions](../api/dailyuserinsightmetricsroot-list-mfacompletions.md)|[mfaCompletionMetric](../resources/mfacompletionmetric.md) collection.|Get a list of daily [MFA completions](../resources/mfacompletionmetric.md) on apps registered in your tenant configured for Microsoft Entra External ID for customers.|
+|[List monthly mfaCompletions](../api/monthlyuserinsightmetricsroot-list-mfacompletions.md)|[mfaCompletionMetric](../resources/mfacompletionmetric.md) collection.|Get a list of monthly [MFA completions](../resources/mfacompletionmetric.md) on apps registered in your tenant configured for Microsoft Entra External ID for customers.|
 
 ## Properties
 |Property|Type|Description|
