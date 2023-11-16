@@ -1,6 +1,6 @@
 ---
 title: "List daily userRequests"
-description: "Get a list of the daily userRequestsMetric objects and their properties."
+description: "Get a list of daily userRequestsMetric resources on apps registered in your tenant configured for Microsoft Entra External ID for customers."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the daily [userRequestsMetric](../resources/userrequestsmetric.md) objects and their properties.
+Get a list of daily [userRequestsMetric](../resources/userrequestsmetric.md) resources on apps registered in your tenant configured for Microsoft Entra External ID for customers.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -63,7 +63,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/reports/userInsights/daily/requests
 ```
 
-
 ### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -88,4 +87,3 @@ Content-Type: application/json
   ]
 }
 ```
-
