@@ -15829,6 +15829,13 @@ items:
               items:
                 - name: Overview
                   href: resources/azure-ad-auditlog-overview.md
+                - name: Custom security attributes audit
+                  href: resources/customsecurityattributeaudit.md
+                  items:
+                  - name: List
+                    href: api/auditlogroot-list-customsecurityattributeaudits.md
+                  - name: Get
+                    href: api/customsecurityattributeaudit-get.md
                 - name: Directory audit
                   href: resources/directoryaudit.md
                   items:
@@ -15836,6 +15843,11 @@ items:
                       href: api/directoryaudit-list.md
                     - name: Get
                       href: api/directoryaudit-get.md
+                - name: Provisioning
+                  href: resources/provisioningobjectsummary.md
+                  items:
+                    - name: List
+                      href: api/provisioningobjectsummary-list.md
                 - name: Sign-in
                   href: resources/signin.md
                   items:
@@ -15847,11 +15859,6 @@ items:
                       href: api/signin-confirmsafe.md
                     - name: Confirm compromised
                       href: api/signin-confirmcompromised.md
-                - name: Provisioning
-                  href: resources/provisioningobjectsummary.md
-                  items:
-                    - name: List
-                      href: api/provisioningobjectsummary-list.md
           - name: Microsoft 365 usage reports
             items:
               - name: Overview
@@ -17392,6 +17399,8 @@ items:
                 href: api/planneruser-list-recentplans.md
               - name: Get delta
                 href: api/plannerplan-delta.md
+              - name: Move to container
+                href: api/plannerplan-movetocontainer.md
           - name: Task
             href: resources/plannertask.md
             items:
