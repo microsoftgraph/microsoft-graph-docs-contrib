@@ -1,6 +1,5 @@
 ---
 title: "Update a fileStorageContainer"
-
 description: "Update the properties of a fileStorageContainer object."
 author: "tonchan-msft"
 ms.localizationpriority: medium
@@ -43,19 +42,18 @@ PATCH /storage/fileStorage/containers/{containerId}
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply the new values for the fileStorageContainer properties. Existing properties that are not included in the request body will maintain their previous values. To optimize performance, you should not include existing values that have not changed.
+In the request body, supply the new values for the fileStorageContainer properties. Existing properties not included in the request body will maintain their previous values. To optimize performance, you should not include existing values that have not changed.
 
-[Note]
-Not all fileStorageContainer properties can be changed via this API.
+> [!Note]
+> Not all fileStorageContainer properties can be changed via this API.
 
 ## Response
-
 If successful, this method returns a `200 OK` response code and an updated [fileStorageContainer](../resources/filestoragecontainer.md) object in the response body.
 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "update_filestoragecontainer"
@@ -70,12 +68,9 @@ Content-Type: application/json
   "description": "Updated Description"
 }
 ```
-
-
 ### Response
-The following is an example of the response
-[Note]
-The response object shown here might be shortened for readability.
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
