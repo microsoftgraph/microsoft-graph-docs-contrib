@@ -3,6 +3,40 @@
         {
             "ChangeList": [
                 {
+                    "Id": "b4801e7a-ece2-424d-9e77-4cd2ef7ae036",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "getInaccessibleCloudPcReports",
+                    "ChangeType": "Addition",
+                    "Description": "Added new optional request parameter of `reportName` in the request body",
+                    "Target": "cloudPcReports"
+                },
+                {
+                    "Id": "b4801e7a-ece2-424d-9e77-4cd2ef7ae036",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "cloudPcReportName",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `performanceTrendReport`, `inaccessibleCloudPcTrendReport` member to the **cloudPcReportName** enumeration.",
+                    "Target": "cloudPcReportName"
+                },
+                {
+                    "Id": "b4801e7a-ece2-424d-9e77-4cd2ef7ae036",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "getCloudPCPerformanceReport",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [getCloudPCPerformanceReport](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-getcloudpcperformancereport?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcReports?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcReports"
+                }
+            ],
+            "Id": "b4801e7a-ece2-424d-9e77-4cd2ef7ae036",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-11-16T11:15:17.7596296Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "12f93700-b666-4c5c-b569-7db20691c5b3",
                     "ApiChange": "Member",
                     "ChangedApiName": "rawRemoteConnectionReports",
