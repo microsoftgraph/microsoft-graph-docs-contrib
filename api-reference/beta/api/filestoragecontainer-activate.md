@@ -21,7 +21,6 @@ The application calling this API must have write permission to fileStorageContai
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference). 
 
-
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|FileStorageContainer.Selected|
@@ -58,7 +57,6 @@ The following example shows a request.
 ``` http
 POST /storage/fileStorage/containers/{containerId}/activate
 ```
-
 
 ### Response
 The following example shows the response.
