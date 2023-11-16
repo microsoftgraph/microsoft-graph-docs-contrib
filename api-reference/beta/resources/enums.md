@@ -3128,6 +3128,7 @@ Possible values for user account types (group membership), per Windows definitio
 |roster|
 |project|
 |driveItem|
+|user|
 
 ### plannerPlanContextType values
 
