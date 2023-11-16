@@ -60,7 +60,7 @@ The following table shows the parameters that can be used with this method.
 
 ### cloudPCInaccessibleReportName  values
 
-| Member name                     | Description               |
+| Member                          | Description               |
 | :------------------------------ | :------------------------ |
 | `inaccessibleCloudPcReports`    | Indicates report that contains details of Cloud PCs that are inaccessible. This includes Cloud PCs with consecutive connection failures or in unavailable state.    |
 | `inaccessibleCloudPcTrendReport`| Indicates daily aggregated report for a period that contains details of Cloud PCs that are inaccessible. This includes Cloud PCs with consecutive connection failures or in unavailable state.                                          |

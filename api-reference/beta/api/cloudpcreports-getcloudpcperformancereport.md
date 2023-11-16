@@ -60,7 +60,7 @@ The following table shows the parameters that can be used with this method.
 
 ### cloudPCPerformanceReportName values
 
-| Member name                  | Description       |
+| Member                       | Description       |
 | :--------------------------- | :---------------- |
 | `performanceTrendReport`     | Indicates daily aggregated report which shows list of connection quality including "SlowRoundTripTimeCloudPcCount", "LowUdpConnectionPercentageCount", "NoTimeConnectedCloudPcCount", "LowTimeConnectedCloudPcCount" of Cloud PCs in last 7 days under a tenant, every single day's report is an aggregation of last 28 days dating back from the trigger time.  | 
 | `unknownFutureValue`         | Evolvable enumeration sentinel value. Do not use.             |
