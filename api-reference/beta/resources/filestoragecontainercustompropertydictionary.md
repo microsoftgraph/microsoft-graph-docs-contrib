@@ -1,7 +1,6 @@
 ---
 title: "fileStorageContainerCustomPropertyDictionary resource type"
 description: "Represents a dictionary that stores the custom properties of a fileStorageContainer in key/value pairs."
-
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.prod: "files"
@@ -26,7 +25,7 @@ None.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.fileStorageContainerCustomPropertyDictionary"
