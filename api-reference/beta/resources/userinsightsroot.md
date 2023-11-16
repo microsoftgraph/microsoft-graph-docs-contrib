@@ -1,6 +1,6 @@
 ---
 title: "userInsightsRoot resource type"
-description: "A container for entities that represent summaries of daily and monthly user activities on apps registered in our Microsoft Entra External ID for customers tenant."
+description: "Represents a container for entities that represent summaries of daily and monthly user activities on apps registered in your tenant configured for Microsoft Entra External ID for customers."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A container for entities that represent summaries of daily and monthly user activities on apps registered in your Microsoft Entra External ID for customers tenant.
+Represents a container for entities that represent summaries of daily and monthly user activities on apps registered in your tenant configured for Microsoft Entra External ID for customers.
 
 ## Methods
 None.
