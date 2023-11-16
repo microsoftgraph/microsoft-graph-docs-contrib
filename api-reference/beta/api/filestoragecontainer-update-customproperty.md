@@ -1,8 +1,6 @@
 ---
 title: "Update custom properties on a fileStorageContainer "
-
 description: "Update custom properties on a fileStorageContainer"
-
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.prod: "files"
@@ -14,9 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update one or multiple custom properties on a fileStorageContainer. Only the **value** and **isSearchable** attributes of custom properties can be updated. 
-
-Only the custom properties specified in the request body are updated. If a custom property specified in the request body does not exist on the container, it will be created. 
+Update one or multiple custom properties on a fileStorageContainer. Only the **value** and **isSearchable** attributes of custom properties can be updated. Only the custom properties specified in the request body are updated. If a custom property specified in the request body doesn't exist on the container, it will be created. 
 
 Updating a custom property to null deletes the property from the container.
 
@@ -62,7 +58,7 @@ If successful, this action returns a `200 OK` response code.
 ## Examples
 
 ### Request
-The following is an example of updating the value property of the custom properties clientUniqeId and color. Note isSearchable for clientUniqueId was set to True prior to calling this API.
+The following example updates the value property of the custom properties clientUniqeId and color. Note that "isSearchable" for "clientUniqueId" was set to **True** before calling this API.
 <!-- {
   "blockType": "request",
   "name": "filestoragecontainerthis.update-customproperty"
@@ -82,9 +78,8 @@ Content-type: application/json
 }
 ```
 
-
 ### Response
-The following is an example of the response
+The following example shows the response
 <!-- {
   "blockType": "response",
   "truncated": true
