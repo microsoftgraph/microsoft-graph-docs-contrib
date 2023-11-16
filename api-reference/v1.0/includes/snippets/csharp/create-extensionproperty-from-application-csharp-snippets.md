@@ -13,6 +13,7 @@ var requestBody = new ExtensionProperty
 {
 	Name = "jobGroup",
 	DataType = "String",
+	IsMultiValued = true,
 	TargetObjects = new List<string>
 	{
 		"User",
