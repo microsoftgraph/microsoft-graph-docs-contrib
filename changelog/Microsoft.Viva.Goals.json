@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "goalsExportJob",
           "ChangeType": "Addition",
-          "Description": "Added the [goalsExportJob](https://learn.microsoft.com/en-us/graph/api/resources/goalsExportJob?view=graph-rest-beta) resource and its methods",
+          "Description": "Added the [goalsExportJob](https://learn.microsoft.com/en-us/graph/api/resources/goalsExportJob?view=graph-rest-beta) resource and associated methods",
           "Target": "goalsExportJob"
         }
       ],
