@@ -1,6 +1,8 @@
 ---
-title: "Add permission to fileStorageContainer"
-description: "Add permission to a fileStorageContainer instance"
+title: "Add permissions to a fileStorageContainer"
+
+description: "Add permissions to a fileStorageContainer instance"
+
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.prod: "files"
@@ -12,7 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add [permission](../resources/permission.md) to an existing fileStorageContainer. The application calling this API must have permission to add permissions to fileStorageContainers for the respective container type.
+Add [permissions](../resources/permission.md) to an existing fileStorageContainer. The application calling this API must have permission to add permissions to fileStorageContainers for the respective container type.
+
 
 
 ## Permissions
