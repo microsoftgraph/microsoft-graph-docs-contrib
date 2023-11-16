@@ -207,7 +207,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "virtualEventSession",
           "ChangeType": "Addition",
-          "Description": "Added the [LIST](https://learn.microsoft.com/en-us/graph/api/virtualeventregistrant-list?view=graph-rest-beta) operation to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-beta) resource.",
+          "Description": "Added the [LIST](https://learn.microsoft.com/en-us/graph/api/virtualeventsession-list?view=graph-rest-beta) operation to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-beta) resource.",
           "Target": "virtualEventSession"
         }
       ],
@@ -1682,7 +1682,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "startHoldMusic",
           "ChangeType": "Addition",
-          "Description": "Added the [startHoldMusic](https://learn.microsoft.com/en-us/graph/api/startHoldMusic?view=graph-rest-beta) method to the [participant](https://learn.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-beta) resource.",
+          "Description": "Added the [startHoldMusic](https://learn.microsoft.com/en-us/graph/api/participant-startholdmusic?view=graph-rest-beta) method to the [participant](https://learn.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-beta) resource.",
           "Target": "participant"
         },
         {
@@ -1690,7 +1690,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "stopHoldMusic",
           "ChangeType": "Addition",
-          "Description": "Added the [stopHoldMusic](https://learn.microsoft.com/en-us/graph/api/stopHoldMusic?view=graph-rest-beta) method to the [participant](https://learn.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-beta) resource.",
+          "Description": "Added the [stopHoldMusic](https://learn.microsoft.com/en-us/graph/api/participant-stopholdmusic?view=graph-rest-beta) method to the [participant](https://learn.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-beta) resource.",
           "Target": "participant"
         }
       ],
@@ -2854,7 +2854,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "create call,call answer,call reject,call get,call delete,call mute,call-unmute,call change screen sharing role,call transfer,call redirect,Play a prompt,Record Response,Subscribe to tne,list participants,invite participants,get participants,mute participants,create online meeting,get online meeting,call keep alive",
           "ChangeType": "Addition",
-          "Description": "Added the following APIs: [create call](https://learn.microsoft.com/en-us/graph/api/application-post-calls?view=graph-rest-1.0), [call answer](https://learn.microsoft.com/en-us/graph/api/call-answer?view=graph-rest-1.0), [call reject](https://learn.microsoft.com/en-us/graph/api/call-reject?view=graph-rest-1.0), [call get](https://learn.microsoft.com/en-us/graph/api/call-get?view=graph-rest-1.0), [call delete](https://learn.microsoft.com/en-us/graph/api/call-delete?view=graph-rest-1.0), [call mute](https://learn.microsoft.com/en-us/graph/api/call-mute?view=graph-rest-1.0), [call-unmute](https://learn.microsoft.com/en-us/graph/api/call-unmute?view=graph-rest-1.0), [call change screen sharing role](https://learn.microsoft.com/en-us/graph/api/call-changescreensharingrole?view=graph-rest-1.0), [call transfer](https://learn.microsoft.com/en-us/graph/api/call-transfer?view=graph-rest-1.0), [call redirect](https://learn.microsoft.com/en-us/graph/api/call-redirect?view=graph-rest-1.0), [Play a prompt](https://learn.microsoft.com/en-us/graph/api/call-playprompt?view=graph-rest-1.0), [Record Response](https://learn.microsoft.com/en-us/graph/api/call-recordresponse?view=graph-rest-1.0), [Subscribe to tne](https://learn.microsoft.com/en-us/graph/api/call-subscribetotone?view=graph-rest-1.0), [list participants](https://learn.microsoft.com/en-us/graph/api/call-list-participants?view=graph-rest-1.0), [invite participants](https://learn.microsoft.com/en-us/graph/api/participant-invite?view=graph-rest-1.0), [get participants](https://learn.microsoft.com/en-us/graph/api/participant-get?view=graph-rest-1.0), [mute participants](https://learn.microsoft.com/en-us/graph/api/participant-mute?view=graph-rest-1.0), [create online meeting](https://learn.microsoft.com/en-us/graph/api/application-post-onlinemeeting?view=graph-rest-1.0), [get online meeting](https://learn.microsoft.com/en-us/graph/api/onlinemeeting-get?view=graph-rest-1.0), and [call keep alive](https://learn.microsoft.com/en-us/graph/api/call-keepalive?view=graph-rest-1.0).",
+          "Description": "Added the following APIs: [create call](https://learn.microsoft.com/en-us/graph/api/application-post-calls?view=graph-rest-1.0), [call answer](https://learn.microsoft.com/en-us/graph/api/call-answer?view=graph-rest-1.0), [call reject](https://learn.microsoft.com/en-us/graph/api/call-reject?view=graph-rest-1.0), [call get](https://learn.microsoft.com/en-us/graph/api/call-get?view=graph-rest-1.0), [call delete](https://learn.microsoft.com/en-us/graph/api/call-delete?view=graph-rest-1.0), [call mute](https://learn.microsoft.com/en-us/graph/api/call-mute?view=graph-rest-1.0), [call-unmute](https://learn.microsoft.com/en-us/graph/api/call-unmute?view=graph-rest-1.0), [call change screen sharing role](https://learn.microsoft.com/en-us/graph/api/call-changescreensharingrole?view=graph-rest-1.0), [call transfer](https://learn.microsoft.com/en-us/graph/api/call-transfer?view=graph-rest-1.0), [call redirect](https://learn.microsoft.com/en-us/graph/api/call-redirect?view=graph-rest-1.0), [Play a prompt](https://learn.microsoft.com/en-us/graph/api/call-playprompt?view=graph-rest-1.0), [Record Response](https://learn.microsoft.com/en-us/graph/api/call-record?view=graph-rest-1.0), [Subscribe to tne](https://learn.microsoft.com/en-us/graph/api/call-subscribetotone?view=graph-rest-1.0), [list participants](https://learn.microsoft.com/en-us/graph/api/call-list-participants?view=graph-rest-1.0), [invite participants](https://learn.microsoft.com/en-us/graph/api/participant-invite?view=graph-rest-1.0), [get participants](https://learn.microsoft.com/en-us/graph/api/participant-get?view=graph-rest-1.0), [mute participants](https://learn.microsoft.com/en-us/graph/api/participant-mute?view=graph-rest-1.0), [create online meeting](https://learn.microsoft.com/en-us/graph/api/application-post-onlinemeetings?view=graph-rest-1.0), [get online meeting](https://learn.microsoft.com/en-us/graph/api/onlinemeeting-get?view=graph-rest-1.0), and [call keep alive](https://learn.microsoft.com/en-us/graph/api/call-keepalive?view=graph-rest-1.0).",
           "Target": "create call,call answer,call reject,call get,call delete,call mute,call-unmute,call change screen sharing role,call transfer,call redirect,Play a prompt,Record Response,Subscribe to tne,list participants,invite participants,get participants,mute participants,create online meeting,get online meeting,call keep alive"
         },
         {
@@ -3152,7 +3152,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "participant,retrieving a participant object,configuring the audio mixer for a participant,one,all,retrieving a list of the participants,inviting participants",
           "ChangeType": "Addition",
-          "Description": "Added the [participant](https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta) resource and APIs for managing the participants in audio/video calls and meetings, including [retrieving a participant object](https://learn.microsoft.com/en-us/graph/api/participant-get?view=graph-rest-beta), [configuring the audio mixer for a participant](https://learn.microsoft.com/en-us/graph/api/participant-configuremixer?view=graph-rest-beta), muting [one](https://learn.microsoft.com/en-us/graph/api/participant-mute?view=graph-rest-beta) or [all](https://learn.microsoft.com/en-us/graph/api/participant-muteall?view=graph-rest-beta) of the participants, [retrieving a list of the participants](https://learn.microsoft.com/en-us/graph/api/call-list-participants?view=graph-rest-beta) in a call/meeting, and [inviting participants](https://learn.microsoft.com/en-us/graph/api/participant-invite?view=graph-rest-beta) to a call/meeting.",
+          "Description": "Added the [participant](https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta) resource and APIs for managing the participants in audio/video calls and meetings, including [retrieving a participant object](https://learn.microsoft.com/en-us/graph/api/participant-get?view=graph-rest-beta), configuring the audio mixer for a participant, muting [one](https://learn.microsoft.com/en-us/graph/api/participant-mute?view=graph-rest-beta) or [all](https://learn.microsoft.com/en-us/graph/api/participant-muteall?view=graph-rest-beta) of the participants, [retrieving a list of the participants](https://learn.microsoft.com/en-us/graph/api/call-list-participants?view=graph-rest-beta) in a call/meeting, and [inviting participants](https://learn.microsoft.com/en-us/graph/api/participant-invite?view=graph-rest-beta) to a call/meeting.",
           "Target": "participant,retrieving a participant object,configuring the audio mixer for a participant,one,all,retrieving a list of the participants,inviting participants"
         },
         {
@@ -3548,7 +3548,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "setStatusMessage",
           "ChangeType": "Addition",
-          "Description": "Added the [setStatusMessage](https://learn.microsoft.com/en-us/graph/api/presence?view=graph-rest-1.0) method to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-1.0) resource.",
+          "Description": "Added the [setStatusMessage](https://learn.microsoft.com/en-us/graph/api/presence-setstatusmessage?view=graph-rest-1.0) method to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-1.0) resource.",
           "Target": "presence"
         }
       ],
@@ -3602,7 +3602,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "sendDtmfTones",
           "ChangeType": "Addition",
-          "Description": "Added the [sendDtmfTones](https://learn.microsoft.com/en-us/graph/api/call?view=graph-rest-beta) method to the [call](https://learn.microsoft.com/en-us/graph/api/call?view=graph-rest-beta) resource.",
+          "Description": "Added the [sendDtmfTones](https://learn.microsoft.com/en-us/graph/api/call-senddtmftones?view=graph-rest-beta) method to the [call](https://learn.microsoft.com/en-us/graph/resources/call?view=graph-rest-beta) resource.",
           "Target": "call"
         }
       ],

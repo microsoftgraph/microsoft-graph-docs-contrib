@@ -15797,7 +15797,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "runSchedule",
           "ChangeType": "Change",
-          "Description": "Changed the type of the following properties on the [deviceHealthScriptAssignment](https://learn.microsoft.com/graph/api/resources/intune-devices-devicehealthscriptassignment?view=graph-rest-beta) entity: **runSchedule** from [runSchedule](https://learn.microsoft.com/graph/api/resources/runSchedule.md?view=graph-rest-beta) to [deviceHealthScriptRunSchedule](https://learn.microsoft.com/graph/api/resources/intune-devices-devicehealthscriptrunschedule?view=graph-rest-beta), ",
+          "Description": "Changed the type of the following properties on the [deviceHealthScriptAssignment](https://learn.microsoft.com/graph/api/resources/intune-devices-devicehealthscriptassignment?view=graph-rest-beta) entity: **runSchedule** from [runSchedule](https://learn.microsoft.com/graph/api/resources/runSchedule?view=graph-rest-beta) to [deviceHealthScriptRunSchedule](https://learn.microsoft.com/graph/api/resources/intune-devices-devicehealthscriptrunschedule?view=graph-rest-beta), ",
           "Target": "deviceHealthScriptAssignment,runSchedule,deviceHealthScriptRunSchedule"
         },
         {
@@ -18011,7 +18011,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "update,policySet",
           "ChangeType": "Addition",
-          "Description": "Added the [update](https://learn.microsoft.com/graph/api/intune-policyset-policyset-update.md) action on [policySet](https://learn.microsoft.com/graph/api/resources/intune-policyset-policyset)",
+          "Description": "Added the [update](https://learn.microsoft.com/graph/api/intune-policyset-policyset-update) action on [policySet](https://learn.microsoft.com/graph/api/resources/intune-policyset-policyset)",
           "Target": "update,policySet"
         },
         {
@@ -18019,7 +18019,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "hasPayloadLinks,mobileApp",
           "ChangeType": "Addition",
-          "Description": "Added the [hasPayloadLinks](https://learn.microsoft.com/graph/api/intune-shared-mobileapp-haspayloadlinks.md) action on [mobileApp](https://learn.microsoft.com/graph/api/resources/intune-apps-mobileapp) collection",
+          "Description": "Added the [hasPayloadLinks](https://learn.microsoft.com/graph/api/intune-shared-mobileapp-haspayloadlinks) action on [mobileApp](https://learn.microsoft.com/graph/api/resources/intune-apps-mobileapp) collection",
           "Target": "hasPayloadLinks,mobileApp"
         },
         {
@@ -18027,7 +18027,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "hasPayloadLinks,targetedManagedAppConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [hasPayloadLinks](https://learn.microsoft.com/graph/api/intune-shared-targetedmanagedappconfiguration-haspayloadlinks.md) action on [targetedManagedAppConfiguration](https://learn.microsoft.com/graph/api/resources/intune-mam-targetedmanagedappconfiguration) collection",
+          "Description": "Added the [hasPayloadLinks](https://learn.microsoft.com/graph/api/intune-shared-targetedmanagedappconfiguration-haspayloadlinks) action on [targetedManagedAppConfiguration](https://learn.microsoft.com/graph/api/resources/intune-mam-targetedmanagedappconfiguration) collection",
           "Target": "hasPayloadLinks,targetedManagedAppConfiguration"
         },
         {
@@ -18035,7 +18035,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "hasPayloadLinks,iosManagedAppProtection",
           "ChangeType": "Addition",
-          "Description": "Added the [hasPayloadLinks](https://learn.microsoft.com/graph/api/intune-shared-ioslobappprovisioningconfiguration-haspayloadlinks.md) action on [iosManagedAppProtection](https://learn.microsoft.com/graph/api/resources/intune-mam-iosmanagedappprotection) collection",
+          "Description": "Added the [hasPayloadLinks](https://learn.microsoft.com/graph/api/intune-shared-ioslobappprovisioningconfiguration-haspayloadlinks) action on [iosManagedAppProtection](https://learn.microsoft.com/graph/api/resources/intune-mam-iosmanagedappprotection) collection",
           "Target": "hasPayloadLinks,iosManagedAppProtection"
         },
         {
@@ -18043,7 +18043,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "hasPayloadLinks,androidManagedAppProtection",
           "ChangeType": "Addition",
-          "Description": "Added the [hasPayloadLinks](https://learn.microsoft.com/graph/api/intune-shared-androidmanagedappprotection-haspayloadlinks.md) action on [androidManagedAppProtection](https://learn.microsoft.com/graph/api/resources/intune-mam-androidmanagedappprotection) collection",
+          "Description": "Added the [hasPayloadLinks](https://learn.microsoft.com/graph/api/intune-shared-androidmanagedappprotection-haspayloadlinks) action on [androidManagedAppProtection](https://learn.microsoft.com/graph/api/resources/intune-mam-androidmanagedappprotection) collection",
           "Target": "hasPayloadLinks,androidManagedAppProtection"
         },
         {
@@ -18059,7 +18059,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "hasPayloadLinks,mdmWindowsInformationProtectionPolicy",
           "ChangeType": "Addition",
-          "Description": "Added the [hasPayloadLinks](https://learn.microsoft.com/graph/api/intune-shared-mdmwindowsinformationprotectionpolicy-haspayloadlinks.md) action on [mdmWindowsInformationProtectionPolicy](https://learn.microsoft.com/graph/api/resources/intune-mam-mdmwindowsinformationprotectionpolicy) collection",
+          "Description": "Added the [hasPayloadLinks](https://learn.microsoft.com/graph/api/intune-shared-mdmwindowsinformationprotectionpolicy-haspayloadlinks) action on [mdmWindowsInformationProtectionPolicy](https://learn.microsoft.com/graph/api/resources/intune-mam-mdmwindowsinformationprotectionpolicy) collection",
           "Target": "hasPayloadLinks,mdmWindowsInformationProtectionPolicy"
         },
         {
@@ -18075,7 +18075,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "getPolicySets,policySet",
           "ChangeType": "Addition",
-          "Description": "Added the [getPolicySets](https://learn.microsoft.com/graph/api/intune-policyset-policyset-getpolicysets.md) action on [policySet](https://learn.microsoft.com/graph/api/resources/intune-policyset-policyset) collection",
+          "Description": "Added the [getPolicySets](https://learn.microsoft.com/graph/api/intune-policyset-policyset-getpolicysets) action on [policySet](https://learn.microsoft.com/graph/api/resources/intune-policyset-policyset) collection",
           "Target": "getPolicySets,policySet"
         },
         {
@@ -18091,7 +18091,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "hasPayloadLinks,deviceConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [hasPayloadLinks](https://learn.microsoft.com/graph/api/intune-shared-deviceconfiguration-haspayloadlinks.md) action on [deviceConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-deviceconfiguration) collection",
+          "Description": "Added the [hasPayloadLinks](https://learn.microsoft.com/graph/api/intune-shared-deviceconfiguration-haspayloadlinks) action on [deviceConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-deviceconfiguration) collection",
           "Target": "hasPayloadLinks,deviceConfiguration"
         },
         {
@@ -18099,7 +18099,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "hasPayloadLinks,deviceCompliancePolicy",
           "ChangeType": "Addition",
-          "Description": "Added the [hasPayloadLinks](https://learn.microsoft.com/graph/api/intune-shared-devicecompliancepolicy-haspayloadlinks.md) action on [deviceCompliancePolicy](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-devicecompliancepolicy) collection",
+          "Description": "Added the [hasPayloadLinks](https://learn.microsoft.com/graph/api/intune-shared-devicecompliancepolicy-haspayloadlinks) action on [deviceCompliancePolicy](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-devicecompliancepolicy) collection",
           "Target": "hasPayloadLinks,deviceCompliancePolicy"
         },
         {
@@ -18115,7 +18115,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "hasPayloadLinks,deviceEnrollmentConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [hasPayloadLinks](https://learn.microsoft.com/graph/api/intune-shared-deviceenrollmentconfiguration-haspayloadlinks.md) action on [deviceEnrollmentConfiguration](https://learn.microsoft.com/graph/api/resources/intune-onboarding-deviceenrollmentconfiguration) collection",
+          "Description": "Added the [hasPayloadLinks](https://learn.microsoft.com/graph/api/intune-shared-deviceenrollmentconfiguration-haspayloadlinks) action on [deviceEnrollmentConfiguration](https://learn.microsoft.com/graph/api/resources/intune-onboarding-deviceenrollmentconfiguration) collection",
           "Target": "hasPayloadLinks,deviceEnrollmentConfiguration"
         },
         {
@@ -18123,7 +18123,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "triggerConfigurationManagerAction,managedDevice",
           "ChangeType": "Addition",
-          "Description": "Added the [triggerConfigurationManagerAction](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-triggerconfigurationmanageraction.md) action on [managedDevice](https://learn.microsoft.com/graph/api/resources/intune-devices-manageddevice)",
+          "Description": "Added the [triggerConfigurationManagerAction](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-triggerconfigurationmanageraction) action on [managedDevice](https://learn.microsoft.com/graph/api/resources/intune-devices-manageddevice)",
           "Target": "triggerConfigurationManagerAction,managedDevice"
         },
         {
@@ -18131,7 +18131,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "setPriority,appleUserInitiatedEnrollmentProfile",
           "ChangeType": "Addition",
-          "Description": "Added the [setPriority](https://learn.microsoft.com/graph/api/intune-enrollment-appleuserinitiatedenrollmentprofile-setpriority.md) action on [appleUserInitiatedEnrollmentProfile](https://learn.microsoft.com/graph/api/resources/intune-enrollment-appleuserinitiatedenrollmentprofile)",
+          "Description": "Added the [setPriority](https://learn.microsoft.com/graph/api/intune-enrollment-appleuserinitiatedenrollmentprofile-setpriority) action on [appleUserInitiatedEnrollmentProfile](https://learn.microsoft.com/graph/api/resources/intune-enrollment-appleuserinitiatedenrollmentprofile)",
           "Target": "setPriority,appleUserInitiatedEnrollmentProfile"
         },
         {
@@ -18139,7 +18139,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "assign,windowsFeatureUpdateProfile",
           "ChangeType": "Addition",
-          "Description": "Added the [assign](https://learn.microsoft.com/graph/api/intune-softwareupdate-windowsfeatureupdateprofile-assign.md) action on [windowsFeatureUpdateProfile](https://learn.microsoft.com/graph/api/resources/intune-softwareupdate-windowsfeatureupdateprofile)",
+          "Description": "Added the [assign](https://learn.microsoft.com/graph/api/intune-softwareupdate-windowsfeatureupdateprofile-assign) action on [windowsFeatureUpdateProfile](https://learn.microsoft.com/graph/api/resources/intune-softwareupdate-windowsfeatureupdateprofile)",
           "Target": "assign,windowsFeatureUpdateProfile"
         },
         {

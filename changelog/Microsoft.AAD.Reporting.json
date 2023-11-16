@@ -65,7 +65,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "tenantSecureScores",
           "ChangeType": "Addition",
-          "Description": "Added the [Get tenant Secure Score](https://learn.microsoft.com/en-us/graph/api/recommendation-tenantsecurescore?view=graph-rest-beta) method to the [recommendation](https://learn.microsoft.com/en-us/graph/api/resources/recommendation?view=graph-rest-beta) resource.",
+          "Description": "Added the [Get tenant Secure Score](https://learn.microsoft.com/en-us/graph/api/recommendation-tenantsecurescores?view=graph-rest-beta) method to the [recommendation](https://learn.microsoft.com/en-us/graph/api/resources/recommendation?view=graph-rest-beta) resource.",
           "Target": "recommendation"
         }
       ],
@@ -78,7 +78,7 @@
     },
     {
       "ChangeList": [
-        {    
+        {
           "Id": "e70ef0dd-ac40-4549-9583-958a7a9c0b66",
           "ApiChange": "Member",
           "ChangedApiName": "longLivedCredentials",
@@ -2273,10 +2273,10 @@
         {
           "Id": "2adb8419-658c-43c7-bea0-eda61b69423c",
           "ApiChange": "Resource",
-          "ChangedApiName": "appIndentity,auditActivityInitiator,conditionalAccessPolicy,deviceDetail,mfaDetail,modifiedProperty,signinLocation,signinStatus,targetResource,targetResourceApp,targetResourceDevice,targetResourceDirectory,targetResourceGroup,targetResourceOther,targetResourcePolicy,targetResourceRole,targetResourceServicePrincipal,targetResourceUser,userIdentity",
+          "ChangedApiName": "appIdentity,auditActivityInitiator,conditionalAccessPolicy,deviceDetail,mfaDetail,modifiedProperty,signinLocation,signinStatus,targetResource,targetResourceApp,targetResourceDevice,targetResourceDirectory,targetResourceGroup,targetResourceOther,targetResourcePolicy,targetResourceRole,targetResourceServicePrincipal,targetResourceUser,userIdentity",
           "ChangeType": "Addition",
-          "Description": "Added the following resources to support the audit log API: [appIndentity](https://learn.microsoft.com/en-us/graph/api/resources/appidentity?view=graph-rest-beta), [auditActivityInitiator](https://learn.microsoft.com/en-us/graph/api/resources/auditactivityinitiator?view=graph-rest-beta), [conditionalAccessPolicy](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta), [deviceDetail](https://learn.microsoft.com/en-us/graph/api/resources/devicedetail?view=graph-rest-beta), [mfaDetail](https://learn.microsoft.com/en-us/graph/api/resources/mfadetail?view=graph-rest-beta), [modifiedProperty](https://learn.microsoft.com/en-us/graph/api/resources/modifiedproperty?view=graph-rest-beta), [signinLocation](https://learn.microsoft.com/en-us/graph/api/resources/signinlocation?view=graph-rest-beta), [signinStatus](https://learn.microsoft.com/en-us/graph/api/resources/signinstatus?view=graph-rest-beta), [targetResource](https://learn.microsoft.com/en-us/graph/api/resources/targetresource?view=graph-rest-beta), [targetResourceApp](https://learn.microsoft.com/en-us/graph/api/resources/targetresourceapp?view=graph-rest-beta), [targetResourceDevice](https://learn.microsoft.com/en-us/graph/api/resources/targetresourcedevice?view=graph-rest-beta), [targetResourceDirectory](https://learn.microsoft.com/en-us/graph/api/resources/targetresourcedirectory?view=graph-rest-beta), [targetResourceGroup](https://learn.microsoft.com/en-us/graph/api/resources/targetresourcegroup?view=graph-rest-beta), [targetResourceOther](https://learn.microsoft.com/en-us/graph/api/resources/targetresourceother?view=graph-rest-beta), [targetResourcePolicy](https://learn.microsoft.com/en-us/graph/api/resources/targetresourcepolicy?view=graph-rest-beta), [targetResourceRole](https://learn.microsoft.com/en-us/graph/api/resources/targetresourcerole?view=graph-rest-beta), [targetResourceServicePrincipal](https://learn.microsoft.com/en-us/graph/api/resources/targetresourceserviceprincipal?view=graph-rest-beta), [targetResourceUser](https://learn.microsoft.com/en-us/graph/api/resources/targetresourceuser?view=graph-rest-beta), [userIdentity](https://learn.microsoft.com/en-us/graph/api/resources/useridentity?view=graph-rest-beta)",
-          "Target": "appIndentity,auditActivityInitiator,conditionalAccessPolicy,deviceDetail,mfaDetail,modifiedProperty,signinLocation,signinStatus,targetResource,targetResourceApp,targetResourceDevice,targetResourceDirectory,targetResourceGroup,targetResourceOther,targetResourcePolicy,targetResourceRole,targetResourceServicePrincipal,targetResourceUser,userIdentity"
+          "Description": "Added the following resources to support the audit log API: [appIdentity](https://learn.microsoft.com/en-us/graph/api/resources/appidentity?view=graph-rest-beta), [auditActivityInitiator](https://learn.microsoft.com/en-us/graph/api/resources/auditactivityinitiator?view=graph-rest-beta), [conditionalAccessPolicy](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta), [deviceDetail](https://learn.microsoft.com/en-us/graph/api/resources/devicedetail?view=graph-rest-beta), [mfaDetail](https://learn.microsoft.com/en-us/graph/api/resources/mfadetail?view=graph-rest-beta), [modifiedProperty](https://learn.microsoft.com/en-us/graph/api/resources/modifiedproperty?view=graph-rest-beta), [signinLocation](https://learn.microsoft.com/en-us/graph/api/resources/signinlocation?view=graph-rest-beta), [signinStatus](https://learn.microsoft.com/en-us/graph/api/resources/signinstatus?view=graph-rest-beta), [targetResource](https://learn.microsoft.com/en-us/graph/api/resources/targetresource?view=graph-rest-beta), **targetResourceApp**, **targetResourceDevice**, **targetResourceDirectory**, **targetResourceGroup**, **targetResourceOther**, **targetResourcePolicy**, **targetResourceRole**, **targetResourceServicePrincipal**, **targetResourceUser**, [userIdentity](https://learn.microsoft.com/en-us/graph/api/resources/useridentity?view=graph-rest-beta)",
+          "Target": "appIdentity,auditActivityInitiator,conditionalAccessPolicy,deviceDetail,mfaDetail,modifiedProperty,signinLocation,signinStatus,targetResource,targetResourceApp,targetResourceDevice,targetResourceDirectory,targetResourceGroup,targetResourceOther,targetResourcePolicy,targetResourceRole,targetResourceServicePrincipal,targetResourceUser,userIdentity"
         }
       ],
       "Id": "2adb8419-658c-43c7-bea0-eda61b69423c",
@@ -2929,7 +2929,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getMetricsForConditionalAccessCompliantDevicesSignInSuccess",
           "ChangeType": "Addition",
-          "Description": "Added the [getMetricsForConditionalAccessCompliantDevicesSignInSuccess](https://learn.microsoft.com/en-us/graph/api/serviceactivity-getMetricsForConditionalAccessCompliantDevicesSignInSuccess?view=graph-rest-beta) method to the [getMetricsForConditionalAccessCompliantDevicesSignInSuccess](https://learn.microsoft.com/en-us/graph/api/getMetricsForConditionalAccessCompliantDevicesSignInSuccess?view=graph-rest-beta) resource.",
+          "Description": "Added the [getMetricsForConditionalAccessCompliantDevicesSignInSuccess](https://learn.microsoft.com/en-us/graph/api/serviceactivity-getMetricsForConditionalAccessCompliantDevicesSignInSuccess?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceactivity?view=graph-rest-beta) resource.",
           "Target": "getMetricsForConditionalAccessCompliantDevicesSignInSuccess"
         },
         {
@@ -2937,7 +2937,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getMetricsForConditionalAccessManagedDevicesSignInSuccess",
           "ChangeType": "Addition",
-          "Description": "Added the [getMetricsForConditionalAccessManagedDevicesSignInSuccess](https://learn.microsoft.com/en-us/graph/api/serviceactivity-getMetricsForConditionalAccessManagedDevicesSignInSuccess?view=graph-rest-beta) method to the [getMetricsForConditionalAccessManagedDevicesSignInSuccess](https://learn.microsoft.com/en-us/graph/api/getMetricsForConditionalAccessManagedDevicesSignInSuccess?view=graph-rest-beta) resource.",
+          "Description": "Added the [getMetricsForConditionalAccessManagedDevicesSignInSuccess](https://learn.microsoft.com/en-us/graph/api/serviceactivity-getMetricsForConditionalAccessManagedDevicesSignInSuccess?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceactivity?view=graph-rest-beta) resource.",
           "Target": "getMetricsForConditionalAccessManagedDevicesSignInSuccess"
         },
         {
@@ -2945,7 +2945,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getMetricsForMfaSignInFailure",
           "ChangeType": "Addition",
-          "Description": "Added the [getMetricsForMfaSignInFailure](https://learn.microsoft.com/en-us/graph/api/serviceactivity-getMetricsForMfaSignInFailure?view=graph-rest-beta) method to the [getMetricsForMfaSignInFailure](https://learn.microsoft.com/en-us/graph/api/getMetricsForMfaSignInFailure?view=graph-rest-beta) resource.",
+          "Description": "Added the [getMetricsForMfaSignInFailure](https://learn.microsoft.com/en-us/graph/api/serviceactivity-getMetricsForMfaSignInFailure?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceactivity?view=graph-rest-beta) resource.",
           "Target": "getMetricsForMfaSignInFailure"
         },
         {
@@ -2953,7 +2953,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getMetricsForMfaSignInSuccess",
           "ChangeType": "Addition",
-          "Description": "Added the [getMetricsForMfaSignInSuccess](https://learn.microsoft.com/en-us/graph/api/serviceactivity-getMetricsForMfaSignInSuccess?view=graph-rest-beta) method to the [getMetricsForMfaSignInSuccess](https://learn.microsoft.com/en-us/graph/api/getMetricsForMfaSignInSuccess?view=graph-rest-beta) resource.",
+          "Description": "Added the [getMetricsForMfaSignInSuccess](https://learn.microsoft.com/en-us/graph/api/serviceactivity-getMetricsForMfaSignInSuccess?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceactivity?view=graph-rest-beta) resource.",
           "Target": "getMetricsForMfaSignInSuccess"
         },
         {
@@ -2961,7 +2961,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getMetricsForSamlSignInSuccess",
           "ChangeType": "Addition",
-          "Description": "Added the [getMetricsForSamlSignInSuccess](https://learn.microsoft.com/en-us/graph/api/serviceactivity-getMetricsForSamlSignInSuccess?view=graph-rest-beta) method to the [getMetricsForSamlSignInSuccess](https://learn.microsoft.com/en-us/graph/api/getMetricsForSamlSignInSuccess?view=graph-rest-beta) resource.",
+          "Description": "Added the [getMetricsForSamlSignInSuccess](https://learn.microsoft.com/en-us/graph/api/serviceactivity-getMetricsForSamlSignInSuccess?view=graph-rest-beta) method to the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceactivity?view=graph-rest-beta) resource.",
           "Target": "getMetricsForSamlSignInSuccess"
         }
       ],

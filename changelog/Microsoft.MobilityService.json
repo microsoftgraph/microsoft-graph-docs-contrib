@@ -7,7 +7,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "mobilityManagementPolicy",
                     "ChangeType": "Addition",
-                    "Description": "Added the **isValid** property to the [mobilityManagementPolicy](/graph/api/mobilityManagementPolicy?view=graph-rest-beta) resource.",
+                    "Description": "Added the **isValid** property to the [mobilityManagementPolicy](https://learn.microsoft.com/en-us/graph/api/mobilityManagementPolicy?view=graph-rest-beta) resource.",
                     "Target": "mobilityManagementPolicy"
                 },
                 {
@@ -15,7 +15,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "mobilityManagementPolicy",
                     "ChangeType": "Addition",
-                    "Description": "Added the [delete mobilityDeviceManagementPolicy](/graph/api/mobiledevicemanagementpolicies-delete?view=graph-rest-beta) method.",
+                    "Description": "Added the [delete mobilityDeviceManagementPolicy](https://learn.microsoft.com/en-us/graph/api/mobiledevicemanagementpolicies-delete?view=graph-rest-beta) method.",
                     "Target": "mobileDeviceManagementPolicies"
                 },
                 {
@@ -23,7 +23,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "mobilityManagementPolicy",
                     "ChangeType": "Addition",
-                    "Description": "Added the [delete mobilityAppManagementPolicy](/graph/api/mobileappmanagementpolicies-delete?view=graph-rest-beta) method.",
+                    "Description": "Added the [delete mobilityAppManagementPolicy](https://learn.microsoft.com/en-us/graph/api/mobileappmanagementpolicies-delete?view=graph-rest-beta) method.",
                     "Target": "mobileAppManagementPolicies"
                 },
                 {
@@ -57,7 +57,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "mobilityManagementPolicy",
                     "ChangeType": "Addition",
-                    "Description": "Added the [mobilityManagementPolicy](/graph/api/resources/mobilityManagementPolicy?view=graph-rest-beta) resource type.",
+                    "Description": "Added the [mobilityManagementPolicy](https://learn.microsoft.com/en-us/graph/api/resources/mobilityManagementPolicy?view=graph-rest-beta) resource type.",
                     "Target": "mobilityManagementPolicy"
                 },
                 {
@@ -65,7 +65,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "mobileDeviceManagementPolicies",
                     "ChangeType": "Addition",
-                    "Description": "Added the [mobileDeviceManagementPolicies](/graph/api/resources/mobileDeviceManagementPolicies?view=graph-rest-1.0) resource type.",
+                    "Description": "Added the [mobileDeviceManagementPolicies](https://learn.microsoft.com/en-us/graph/api/resources/mobileDeviceManagementPolicies?view=graph-rest-1.0) resource type.",
                     "Target": "mobileDeviceManagementPolicies"
                 },
                 {
@@ -73,7 +73,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "mobileAppManagementPolicies",
                     "ChangeType": "Addition",
-                    "Description": "Added the [mobileAppManagementPolicies](/graph/api/resources/mobileAppManagementPolicies?view=graph-rest-1.0) resource type.",
+                    "Description": "Added the [mobileAppManagementPolicies](https://learn.microsoft.com/en-us/graph/api/resources/mobileAppManagementPolicies?view=graph-rest-1.0) resource type.",
                     "Target": "mobileAppManagementPolicies"
                 },
                 {
