@@ -11,7 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [v1.0-disclaimer](../../includes/v1.0-disclaimer.md)]
 
 Add grading categories to the existing class-wide settings to weight assignments differently when computing a class average grade.
 
