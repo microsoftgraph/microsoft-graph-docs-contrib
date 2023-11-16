@@ -31,12 +31,12 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.identityGovernance.socialIdentitySourceType"
+  "@odata.type": "microsoft.graph.identityGovernance.socialIdentitySource"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.identityGovernance.socialIdentitySourceType",
+  "@odata.type": "#microsoft.graph.identityGovernance.socialIdentitySource",
   "displayName": "String",
   "socialIdentitySourceType": "String"
 }
