@@ -1,5 +1,6 @@
 ---
-title: "Update fileStorageContainer"
+title: "Update a fileStorageContainer"
+
 description: "Update the properties of a fileStorageContainer object."
 author: "tonchan-msft"
 ms.localizationpriority: medium
@@ -7,7 +8,8 @@ ms.prod: "files"
 doc_type: apiPageType
 ---
 
-# Update fileStorageContainer
+# Update a fileStorageContainer
+
 Namespace: microsoft.graph
 
 > [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
