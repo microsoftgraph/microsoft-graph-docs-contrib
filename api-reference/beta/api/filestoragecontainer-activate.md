@@ -7,14 +7,14 @@ ms.prod: "files"
 doc_type: apiPageType
 ---
 
-# Activate fileStorageContainer
+# Activate a fileStorageContainer
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-FileStorageContainers are created in an inactive state, indicated by the container's status property. A container must be activated within 24 hours after creation or will be automatically deleted. Upon successful activation, the container's status property is set to "active".
+FileStorageContainers are created in an inactive state, indicated by the container's status property. A container must be activated within 24 hours after creation or is automatically deleted. The container's status property is set to "active" upon successful activation.
 
-A fileStorageContainer can be activated by calling the activate API or any API that updates or modifies the container or its content. For example, uploading a file to a container will activate the container.
+A fileStorageContainer can be activated by calling the activate API or any API that updates or modifies the container or its content. For example, uploading a file to a container activates the container.
 
 The application calling this API must have write permission to fileStorageContainers for the respective container type.
 
@@ -49,7 +49,7 @@ If successful, this action returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "filestoragecontainerthis.activate"
@@ -61,7 +61,7 @@ POST /storage/fileStorage/containers/{containerId}/activate
 
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
