@@ -15,10 +15,13 @@ Get a list of the [educationGradingCategory](../resources/educationgradingcatego
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "educationassignment_list_gradingcategory" } -->
-[!INCLUDE [permissions-table](../includes/permissions/educationassignment-list-gradingcategory-permissions.md)]
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
+|Delegated (personal Microsoft account) |  Not supported.  |
+|Application | Not supported. |
 
 ## HTTP request
 
@@ -27,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /education/classes/{educationClassId}/assignmentSettings/gradingCategories
+GET /education/classes/{educationClassId}/assignmentSettings
 ```
 
 ## Optional query parameters
@@ -55,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignmentSettings/gradingCategories
+GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignmentSettings
 ```
 
 ### Response
