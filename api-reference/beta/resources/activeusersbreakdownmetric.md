@@ -1,6 +1,6 @@
 ---
 title: "activeUsersBreakdownMetric resource type"
-description: "Represents breakdown insights for users on apps registered in your Microsoft Entra External ID for customers tenant who were active for a specific period."
+description: "Represents breakdown insights on user activity for apps registered in your tenant configured for Microsoft Entra External ID for customers, over a specified period."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents breakdown insights for users on apps registered in your Microsoft Entra External ID for customers tenant who were active for a specific period. This value is calculated as count of all users who made at least one authentication request in that period.
-A user may be counted more that once if they use multiple device platforms or application.
+Represents breakdown insights on user activity for apps registered in your tenant configured for Microsoft Entra External ID for customers, over a specified period. This value is calculated based on the total number of users who made at least one authentication request within a specified period. A user can be counted more that once if they use multiple device platforms or applications.
 
 Inherits from [entity](../resources/entity.md).
 
