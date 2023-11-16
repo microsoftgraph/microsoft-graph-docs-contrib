@@ -1,6 +1,6 @@
 ---
 title: "userCountMetric resource type"
-description: "Represents insights on the total number of users for apps registered in your tenant configured for Microsoft Entra External ID for customers, over a specific period."
+description: "Represents insights on the total number of users for apps registered in your tenant configured for Microsoft Entra External ID for customers, over a specific period (daily)."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents insights on the total number of users for apps registered in your tenant configured for Microsoft Entra External ID for customers, over a specific period.
+Represents insights on the total number of users for apps registered in your tenant configured for Microsoft Entra External ID for customers, over a specific period (daily).
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List userCountMetrics](../api/dailyuserinsightmetricsroot-list-usercount.md)| [userCountMetric](../resources/usercountmetric.md) collection.|Get a list of the daily [userCountMetric](../resources/usercountmetric.md) objects and their properties.|
+|[List daily userCount](../api/dailyuserinsightmetricsroot-list-usercount.md)| [userCountMetric](../resources/usercountmetric.md) collection.|Get a list of daily [user count](../resources/usercountmetric.md) on apps registered in your tenant configured for Microsoft Entra External ID for customers.|
 
 ## Properties
 |Property|Type|Description|
