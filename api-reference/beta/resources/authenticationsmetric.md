@@ -1,6 +1,6 @@
 ---
 title: "authenticationsMetric resource type"
-description: "Represents insights on authentications for apps registered in your tenant configured for Microsoft Entra ID for customers, over a specificed period."
+description: "Represents insights on authentications for apps registered in your tenant configured for Microsoft Entra ID for customers, over a specific period (daily or monthly)."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents insights on authentications for apps registered in your tenant configured for Microsoft Entra ID for customers, over a specificed period.
+Represents insights on authentications for apps registered in your tenant configured for Microsoft Entra ID for customers, over a specific period (daily or monthly).
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List daily authentications](../api/dailyuserinsightmetricsroot-list-authentications.md)|[authentication](../resources/authenticationsmetric.md) collection|Get a list of the daily [authentications](../resources/authenticationsmetric.md) objects and their properties.|
-|[List monthly authentications](../api/monthlyuserinsightmetricsroot-list-authentications.md)|[authentications](../resources/authenticationsmetric.md) collection|Get a list of the monthly [authentications](../resources/authenticationsmetric.md) objects and their properties.|
+|[List daily authentications](../api/dailyuserinsightmetricsroot-list-authentications.md)|[authenticationsMetric](../resources/authenticationsmetric.md) collection|Get a list of daily [authentications](../resources/authenticationsmetric.md) on apps registered in your Microsoft Entra External ID for customers tenant.|
+|[List monthly authentications](../api/monthlyuserinsightmetricsroot-list-authentications.md)|[authenticationsMetric](../resources/authenticationsmetric.md) collection|Get a list of monthly [authentications](../resources/authenticationsmetric.md) on apps registered in your tenant configured for Microsoft Entra External ID for customers.|
 
 ## Properties
 |Property|Type|Description|
