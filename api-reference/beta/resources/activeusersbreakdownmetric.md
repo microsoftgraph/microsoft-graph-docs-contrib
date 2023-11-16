@@ -1,6 +1,6 @@
 ---
 title: "activeUsersBreakdownMetric resource type"
-description: "Represents breakdown insights on user activity for apps registered in your tenant configured for Microsoft Entra External ID for customers, over a specified period."
+description: "Represents breakdown insights on user activity for apps registered in your tenant configured for Microsoft Entra External ID for customers, over a specific period (daily or monthly)."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -13,15 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents breakdown insights on user activity for apps registered in your tenant configured for Microsoft Entra External ID for customers, over a specified period. This value is calculated based on the total number of users who made at least one authentication request within a specified period. A user can be counted more that once if they use multiple device platforms or applications.
+Represents breakdown insights on user activity for apps registered in your tenant configured for Microsoft Entra External ID for customers, over a specific period (daily or monthly). This value is calculated based on the total number of users who made at least one authentication request within a specific period. A user can be counted more that once if they use multiple device platforms or applications.
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List daily activeUsersBreakdown](../api/dailyuserinsightmetricsroot-list-activeusersbreakdown.md)|[activeUsersBreakdown](../resources/activeusersbreakdownmetric.md) collection.|Get a list of the daily [activeUsersBreakdown](../resources/activeusersbreakdownmetric.md) objects and their properties.|
-|[List monthly activeUsersBreakdown](../api/monthlyuserinsightmetricsroot-list-activeusersbreakdown.md)|[activeUsersBreakdown](../resources/activeusersbreakdownmetric.md) collection.|Get a list of the monthly [activeUsersBreakdown](../resources/activeusersbreakdownmetric.md) objects and their properties.|
+|[List daily activeUsersBreakdown](../api/dailyuserinsightmetricsroot-list-activeusersbreakdown.md)|[activeUsersBreakdown](../resources/activeusersbreakdownmetric.md) collection.|Get a list of daily [activeUsersBreakdown](../resources/activeusersbreakdownmetric.md) objects on apps registered in your tenant configured for Microsoft Entra External ID for customers.|
+|[List monthly activeUsersBreakdown](../api/monthlyuserinsightmetricsroot-list-activeusersbreakdown.md)|[activeUsersBreakdown](../resources/activeusersbreakdownmetric.md) collection.|Get a list of monthly [activeUsersBreakdown](../resources/activeusersbreakdownmetric.md) objects on apps registered in your tenant configured for Microsoft Entra External ID for customers.|
 
 ## Properties
 |Property|Type|Description|
