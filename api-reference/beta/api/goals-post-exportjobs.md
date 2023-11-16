@@ -43,7 +43,7 @@ POST /employeeExperience/goals/exportJobs
 ## Request body
 In the request body, supply a JSON representation of the [goalsExportJob](../resources/goalsexportjob.md) object.
 
-You can specify the following properties when creating a **goalsExportJob**.
+You can specify the following properties when you create a **goalsExportJob** object.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -56,9 +56,9 @@ You can specify the following properties when creating a **goalsExportJob**.
 
 If successful, this method returns a `201 Created` response code and a [goalsExportJob](../resources/goalsexportjob.md) object in the response body.
 
-This method also returns `409 Conflict` when attempting to create an [goalsExportJob](../resources/goalsexportjob.md) object with the same properties (goalsOrganizationId and explorerViewId) to an existing [goalsExportJob](../resources/goalsexportjob.md) object that is pending completion. 
+This method also returns `409 Conflict` when you attempt to create a [goalsExportJob](../resources/goalsexportjob.md) object with the same properties (**goalsOrganizationId** and **explorerViewId**) as an existing [goalsExportJob](../resources/goalsexportjob.md) object that is pending completion. 
 
-Once the pending job completes, you can create the [goalsExportJob](../resources/goalsexportjob.md) object.
+When the pending job completes, you can create the new [goalsExportJob](../resources/goalsexportjob.md) object.
 
 ### Response headers
 
@@ -68,7 +68,7 @@ Once the pending job completes, you can create the [goalsExportJob](../resources
 
 ## Examples
 
-### Example 1: Status is "notStarted"
+### Example 1: Status is `notStarted`
 
 #### Request
 The following example shows the request.
@@ -110,7 +110,7 @@ Location: "https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs/
 }
 ```
 
-### Example 2: Status is "conflicting"
+### Example 2: Status is `conflicting`
 
 #### Request
 The following example shows the request.
@@ -161,7 +161,7 @@ Location: "https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs/
 }
 ```
 
-### Example 3:  When specified goalsOrganizationId doesn't exist
+### Example 3:  Specified goalsOrganizationId doesn't exist
 
 #### Request
 The following example shows the request.
@@ -208,7 +208,7 @@ Content-type: application/json
 }
 ```
 
-### Example 4:  When invalid goalsOrganizationId is passed
+### Example 4:  Invalid goalsOrganizationId is passed
 
 #### Request
 The following example shows the request.
