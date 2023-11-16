@@ -1,5 +1,5 @@
 ---
-title: "List inactiveAzureServicePrincipalFindings"
+title: "List inactiveAzureServicePrincipalFinding objects"
 description: "Get a list of the inactiveAzureServicePrincipalFinding objects and their properties, representing inactive service principals in your Azure environment."
 author: "ashyasingh"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# List inactiveAzureServicePrincipalFindings
+# List inactiveAzureServicePrincipalFinding objects
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

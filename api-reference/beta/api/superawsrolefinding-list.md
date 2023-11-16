@@ -1,5 +1,5 @@
 ---
-title: "List superAwsRoleFindings"
+title: "List superAwsRoleFinding objects"
 description: "Get a list of the superAwsRoleFinding objects and their properties."
 author: "ashyasingh"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# List superAwsRoleFindings
+# List superAwsRoleFinding objects
 
 Namespace: microsoft.graph
 

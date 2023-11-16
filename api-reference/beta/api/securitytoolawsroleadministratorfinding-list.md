@@ -1,5 +1,5 @@
 ---
-title: "List securityToolAwsRoleAdministratorFindings"
+title: "List securityToolAwsRoleAdministratorFinding objects"
 description: "Get a list of the securityToolAwsRoleAdministratorFinding objects and their properties."
 author: "ashyasingh"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# List securityToolAwsRoleAdministratorFindings
+# List securityToolAwsRoleAdministratorFinding objects
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

@@ -1,5 +1,5 @@
 ---
-title: "List awsIdentityAccessManagementKeyAgeFindings"
+title: "List awsIdentityAccessManagementKeyAgeFinding objects"
 description: "Get a list of the awsIdentityAccessManagementKeyAgeFinding objects and their properties."
 author: "ashyasingh"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# List awsIdentityAccessManagementKeyAgeFindings
+# List awsIdentityAccessManagementKeyAgeFinding objects
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

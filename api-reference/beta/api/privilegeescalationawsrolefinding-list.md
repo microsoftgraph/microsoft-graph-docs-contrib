@@ -1,5 +1,5 @@
 ---
-title: "List privilegeEscalationAwsRoleFindings"
+title: "List privilegeEscalationAwsRoleFinding objects"
 description: "Get a list of the privilegeEscalationAwsRoleFinding objects and their properties."
 author: "ashyasingh"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# List privilegeEscalationAwsRoleFindings
+# List privilegeEscalationAwsRoleFinding objects
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

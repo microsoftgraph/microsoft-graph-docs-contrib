@@ -1,5 +1,5 @@
 ---
-title: "List inactiveAwsRoleFindings"
+title: "List inactiveAwsRoleFinding objects"
 description: "List the details of inactive roles in AWS authorization systems onboarded to Permissions Management."
 author: "ashyasingh"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# List inactiveAwsRoleFindings
+# List inactiveAwsRoleFinding objects
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

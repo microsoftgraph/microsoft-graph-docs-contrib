@@ -1,5 +1,5 @@
 ---
-title: "List superAwsResourceFindings"
+title: "List superAwsResourceFinding objects"
 description: "Get a list of the superAwsResourceFinding objects and their properties."
 author: "ashyasingh"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# List superAwsResourceFindings
+# List superAwsResourceFinding objects
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

@@ -1,5 +1,5 @@
 ---
-title: "List awsIdentityAccessManagementKeyUsageFindings"
+title: "List awsIdentityAccessManagementKeyUsageFinding objects"
 description: "Get a list of the awsIdentityAccessManagementKeyUsageFinding objects and their properties."
 author: "ashyasingh"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# List awsIdentityAccessManagementKeyUsageFindings
+# List awsIdentityAccessManagementKeyUsageFinding objects
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

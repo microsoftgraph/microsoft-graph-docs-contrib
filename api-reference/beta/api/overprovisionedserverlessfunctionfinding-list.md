@@ -1,5 +1,5 @@
 ---
-title: "List overprovisionedServerlessFunctionFindings"
+title: "List overprovisionedServerlessFunctionFinding objects"
 description: "Get a list of the overprovisionedServerlessFunctionFinding objects and their properties."
 author: "ashyasingh"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# List overprovisionedServerlessFunctionFindings
+# List overprovisionedServerlessFunctionFinding objects
 
 Namespace: microsoft.graph
 

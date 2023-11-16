@@ -1,5 +1,5 @@
 ---
-title: "List inactiveServerlessFunctionFindings"
+title: "List inactiveServerlessFunctionFinding objects"
 description: "List the details of inactive serverless functions in authorization systems onboarded to Permissions Management."
 author: "ashyasingh"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# List inactiveServerlessFunctionFindings
+# List inactiveServerlessFunctionFinding objects
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

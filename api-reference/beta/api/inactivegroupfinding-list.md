@@ -1,5 +1,5 @@
 ---
-title: "List inactiveGroupFindings"
+title: "List inactiveGroupFinding objects"
 description: "List inactive groups in AWS, Azure and GCP environments."
 author: "ashyasingh"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# List inactiveGroupFindings
+# List inactiveGroupFinding objects
 
 Namespace: microsoft.graph
 

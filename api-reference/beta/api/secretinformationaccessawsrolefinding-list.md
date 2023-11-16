@@ -1,5 +1,5 @@
 ---
-title: "List secretInformationAccessAwsRoleFindings"
+title: "List secretInformationAccessAwsRoleFinding objects"
 description: "Get a list of the secretInformationAccessAwsRoleFinding objects and their properties."
 author: "ashyasingh"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# List secretInformationAccessAwsRoleFindings
+# List secretInformationAccessAwsRoleFinding objects
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

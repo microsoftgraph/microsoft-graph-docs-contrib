@@ -1,5 +1,5 @@
 ---
-title: "List superAzureServicePrincipalFindings"
+title: "List superAzureServicePrincipalFinding objects"
 description: "Get a list of the superAzureServicePrincipalFinding objects and their properties."
 author: "ashyasingh"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# List superAzureServicePrincipalFindings
+# List superAzureServicePrincipalFinding objects
 
 Namespace: microsoft.graph
 

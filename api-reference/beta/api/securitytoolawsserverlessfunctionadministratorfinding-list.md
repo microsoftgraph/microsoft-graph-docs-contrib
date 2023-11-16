@@ -1,5 +1,5 @@
 ---
-title: "List securityToolAwsServerlessFunctionAdministratorFindings"
+title: "List securityToolAwsServerlessFunctionAdministratorFinding objects"
 description: "Get a list of the securityToolAwsServerlessFunctionAdministratorFinding objects and their properties."
 author: "ashyasingh"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# List securityToolAwsServerlessFunctionAdministratorFindings
+# List securityToolAwsServerlessFunctionAdministratorFinding objects
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

@@ -1,5 +1,5 @@
 ---
-title: "List overprovisionedAzureServicePrincipalFindings"
+title: "List overprovisionedAzureServicePrincipalFinding objects"
 description: "Get a list of the overprovisionedAzureServicePrincipalFinding objects and their properties."
 author: "ashyasingh"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# List overprovisionedAzureServicePrincipalFindings
+# List overprovisionedAzureServicePrincipalFinding objects
 
 Namespace: microsoft.graph
 

@@ -1,5 +1,5 @@
 ---
-title: "List secretInformationAccessAwsServerlessFunctionFindings"
+title: "List secretInformationAccessAwsServerlessFunctionFinding objects"
 description: "Get a list of the secretInformationAccessAwsServerlessFunctionFinding objects and their properties."
 author: "ashyasingh"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# List secretInformationAccessAwsServerlessFunctionFindings
+# List secretInformationAccessAwsServerlessFunctionFinding objects
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

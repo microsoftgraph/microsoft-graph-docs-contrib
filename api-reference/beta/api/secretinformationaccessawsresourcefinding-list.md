@@ -1,5 +1,5 @@
 ---
-title: "List secretInformationAccessAwsResourceFindings"
+title: "List secretInformationAccessAwsResourceFinding objects"
 description: "Get a list of the secretInformationAccessAwsResourceFinding objects and their properties."
 author: "ashyasingh"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# List secretInformationAccessAwsResourceFindings
+# List secretInformationAccessAwsResourceFinding objects
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

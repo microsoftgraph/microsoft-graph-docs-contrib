@@ -14481,7 +14481,7 @@ items:
                         href: api/authenticationconditionsapplications-post-includeapplications.md
                       - name: Remove applications
                         href: api/authenticationconditionapplication-delete.md
-          - name: Multicloud permissions management 
+          - name: Multicloud permissions management (preview) 
             items:
             - name: Overview
               href: resources/permissions-management-api-overview.md

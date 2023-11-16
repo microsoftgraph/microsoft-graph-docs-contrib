@@ -1,5 +1,5 @@
 ---
-title: "List superUserFindings"
+title: "List superUserFinding objects"
 description: "Get a list of the superUserFinding objects and their properties."
 author: "ashyasingh"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# List superUserFindings
+# List superUserFinding objects
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

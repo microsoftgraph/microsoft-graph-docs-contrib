@@ -1,5 +1,5 @@
 ---
-title: "List inactiveGcpServiceAccountFindings"
+title: "List inactiveGcpServiceAccountFinding objects"
 description: "Get a list of the inactiveGcpServiceAccountFinding objects and their properties."
 author: "ashyasingh"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# List inactiveGcpServiceAccountFindings
+# List inactiveGcpServiceAccountFinding objects
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

@@ -1,5 +1,5 @@
 ---
-title: "List overprovisionedGcpServiceAccountFindings"
+title: "List overprovisionedGcpServiceAccountFinding objects"
 description: "Get a list of the overprovisionedGcpServiceAccountFinding objects and their properties."
 author: "ashyasingh"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# List overprovisionedGcpServiceAccountFindings
+# List overprovisionedGcpServiceAccountFinding objects
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

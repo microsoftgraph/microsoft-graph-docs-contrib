@@ -1,5 +1,5 @@
 ---
-title: "List inactiveAwsResourceFindings"
+title: "List inactiveAwsResourceFinding objects"
 description: "List the details of inactive AWS resources."
 author: "ashyasingh"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
-# List inactiveAwsResourceFindings
+# List inactiveAwsResourceFinding objects
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
