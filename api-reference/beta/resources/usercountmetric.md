@@ -1,6 +1,6 @@
 ---
 title: "userCountMetric resource type"
-description: "Represents insights for the total users on apps registered in your Microsoft Entra External ID for customers tenant for a specific period."
+description: "Represents insights on the total number of users for apps registered in your tenant configured for Microsoft Entra External ID for customers, over a specific period."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents insights for the total users on apps registered in your Microsoft Entra External ID for customers tenant for a specific period.
+Represents insights on the total number of users for apps registered in your tenant configured for Microsoft Entra External ID for customers, over a specific period.
 
 Inherits from [entity](../resources/entity.md).
 
