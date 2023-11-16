@@ -1,6 +1,6 @@
 ---
 title: "insightSummary resource type"
-description: "Summary of all usage insights on apps registered in your Microsoft Entra External ID for customers tenant for a specific time period."
+description: "Represents a summary of all usage insights on apps registered in your tenant configured for Microsoft Entra External ID for customers, over a specific period."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -13,9 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Summary of all usage insights on apps registered in your Microsoft Entra External ID for customers tenant for a specific time period.
-A user (in activeUsers) may be counted more that once if they use multiple device platforms.
-This endpoint is meant to provide a summary of the insights. A breakdown of each insight is available in the latter entities.
+Represents a summary of all usage insights on apps registered in your tenant configured for Microsoft Entra External ID for customers, over a specific period. A user (in **activeUsers**) can be counted more that once if they use multiple device platforms.
+
+This resource represents a summary of the insights. For a breakdown of each insight, see the following resources:
+- [activeUsersBreakdown](../resources/activeusersbreakdownmetric.md)
+- [activeUsers](../resources/activeusersmetric.md)
+- [authentications](../resources/authenticationsmetric.md)
+- [mfaCompletion](../resources/mfacompletionmetric.md)
+- [userCountMetric](../resources/usercountmetric.md)
+- [userRequests](../resources/userrequestsmetric.md)
+- [userSignUp](../resources/usersignupmetric.md)
 
 Inherits from [entity](../resources/entity.md).
 
