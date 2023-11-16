@@ -15,8 +15,7 @@ Namespace: microsoft.graph
 
 Update existing permissions for a fileStorageContainer by patching the permissions resource. Only the **roles** property can be updated.  One role per user is supported. A new ID is generated for the updated permissions object.
 
-The application calling this API must have permission to update permissions for fileStorageContainers for the respective container type.
-
+The application calling this API must have permissions to update fileStorageContainers permissions for the respective container type.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -72,7 +71,6 @@ Content-Type: application/json
   "roles": ["manager"]
 }
 ```
-
 ### Response
 The following example shows the response.
 <!-- {
