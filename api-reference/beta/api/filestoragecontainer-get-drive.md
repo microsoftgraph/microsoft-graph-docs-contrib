@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Get the fileStorageContainer's [drive](../resources/drive.md).  
 
-The calling application must have permission to access the content in fileStorageContainers for the respective container type.
+The application that makes the request must have permissions to access the content in the fileStorageContainers for the respective container type.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -48,7 +48,7 @@ If successful, this method returns a `200 OK` response code and a [drive](../res
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "list_drive"
@@ -60,7 +60,7 @@ GET https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId
 
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -107,9 +107,7 @@ Content-type: application/json
 
 ## Other methods
 
-The calling application can get the drive directly with a driveID. 
-
-The calling application must have permission to access the contents of the fileStorageContainers of the respective container type.
+The application that makes the request can get the drive directly with a driveID and must have permissions to access the contents in the fileStorageContainers for the respective container type.
 
 |Task name|Example request|
 |:---|:---|
