@@ -42,16 +42,16 @@ Inherits from [entity](../resources/entity.md).
 
 | Value | Description |
 | ----- | ----------- |
-| registered | The attendee has successfully registered for the virtual event. |
-| canceled | The attendee has canceled registration for the virtual event. |
-| waitlisted | Waitlist has been enabled and the virtual event is at full capacity. The attendee is placed on the waitlist. |
-| pendingApproval | Manual approval has been enabled and the attendee is pending approval from the organizer. |
-| rejectedByOrganizer | Manual approval has been enabled and the attendee is rejected by the organizer. |
+| registered | The attendee successfully registered for the virtual event. |
+| canceled | The attendee  canceled registration for the virtual event. |
+| waitlisted | Waitlist is enabled and the virtual event is at full capacity. The attendee is on the waitlist. |
+| pendingApproval | Manual approval is enabled and the attendee is pending approval from the organizer. |
+| rejectedByOrganizer | Manual approval is enabled and the organizer rejected the attendee. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

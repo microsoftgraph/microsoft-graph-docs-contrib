@@ -53,8 +53,8 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | Value | Description |
 | ----- | ----------- |
 | draft | The webinar is in draft and only visible to the organizer. |
-| published | The webinar has been published by the organizer and visible to the audience. |
-| canceled | The webinar has been canceled by the organizer. |
+| published | The organizer published the webinar and it visible to the audience. |
+| canceled | The the organizer  the webinar. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
