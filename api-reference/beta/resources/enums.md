@@ -188,6 +188,11 @@ Namespace: microsoft.graph
 | managedIdentity             |
 | overprivilegedApps          |
 | unknownFutureValue          |
+| longLivedCredentials        |
+| aadConnectDeprecated        |
+| adalToMsalMigration         |
+| ownerlessApps               |
+| inactiveGuests              |
 
 ### layoutTemplateType values
 
@@ -1367,6 +1372,17 @@ Namespace: microsoft.graph
 | :------ |
 | normal  |
 | weak    |
+| unknown |
+
+### authenticationMethodPlatform values
+
+| Member  |
+| :------ |
+| windows |
+| macOS   |
+| iOS     |
+| android |
+| linux   |
 | unknown |
 
 ### authenticationContextDetail values
@@ -3112,6 +3128,7 @@ Possible values for user account types (group membership), per Windows definitio
 |roster|
 |project|
 |driveItem|
+|user|
 
 ### plannerPlanContextType values
 
@@ -4258,4 +4275,304 @@ Possible values for user account types (group membership), per Windows definitio
 |user|
 |servicePrincipal|
 |group|
+|unknownFutureValue|
+
+### b2bIdentityProvidersType values
+
+|Member|
+|:-----|
+|azureActiveDirectory|
+|externalFederation|
+|socialIdentityProviders|
+|emailOneTimePasscode|
+|microsoftAccount|
+|defaultConfiguredIdp|
+|unknownFutureValue|
+
+### authorizationSystemActionSeverity values 
+
+|Member|
+|:---|
+|normal|
+|high|
+|unknownFutureValue|
+
+### authorizationSystemActionType values 
+
+|Member|
+|:---|
+|delete|
+|read|
+|unknownFutureValue|
+
+### awsPolicyType values 
+
+|Member|
+|:---|
+|system|
+|custom|
+|unknownFutureValue|
+
+### awsRoleTrustEntityType values 
+
+|Member|
+|:---|
+|none|
+|service|
+|sso|
+|crossAccount|
+|webIdentity|
+|unknownFutureValue|
+
+### awsRoleType values 
+
+|Member|
+|:---|
+|system|
+|custom|
+|unknownFutureValue|
+
+### awsStatementEffect values 
+
+|Member|
+|:---|
+|allow|
+|deny|
+|unknownFutureValue|
+
+### azureRoleDefinitionType values 
+
+|Member|
+|:---|
+|system|
+|custom|
+|unknownFutureValue|
+
+### dataCollectionStatus values 
+
+|Member|
+|:---|
+|online|
+|offline|
+|unknownFutureValue|
+
+### gcpRoleType values 
+
+|Member|
+|:---|
+|system|
+|custom|
+|unknownFutureValue|
+
+### permissionsDefinitionIdentityType values 
+
+|Member|
+|:---|
+|user|
+|role|
+|application|
+|managedIdentity|
+|serviceAccount|
+|unknownFutureValue|
+
+### permissionsModificationCapability values 
+
+|Member|
+|:---|
+|enabled|
+|notConfigured|
+|noRecentDataCollected|
+|unknownFutureValue|
+
+### permissionsRequestOccurrenceStatus values 
+
+|Member|
+|:---|
+|grantingFailed|
+|granted|
+|granting|
+|revoked|
+|revoking|
+|revokingFailed|
+|unknownFutureValue|
+
+### statusDetail values 
+
+|Member|
+|:---|
+|submitted|
+|approved|
+|completed|
+|canceled|
+|rejected|
+|unknownFutureValue|
+
+
+### authorizationSystemActionSeverity values 
+
+|Member|
+|:---|
+|normal|
+|high|
+|unknownFutureValue|
+
+### authorizationSystemActionType values 
+
+|Member|
+|:---|
+|delete|
+|read|
+|unknownFutureValue|
+
+### authorizationSystemType values 
+
+|Member|
+|:---|
+|azure|
+|gcp|
+|aws|
+|unknownFutureValue|
+
+### awsAccessType values 
+
+|Member|
+|:---|
+|public|
+|restricted|
+|crossAccount|
+|private|
+|unknownFutureValue|
+
+### awsPolicyType values 
+
+|Member|
+|:---|
+|system|
+|custom|
+|unknownFutureValue|
+
+### awsRoleTrustEntityType values 
+
+|Member|
+|:---|
+|none|
+|service|
+|sso|
+|crossAccount|
+|webIdentity|
+|unknownFutureValue|
+
+### awsRoleType values 
+
+|Member|
+|:---|
+|system|
+|custom|
+|unknownFutureValue|
+
+### awsSecretInformationWebServices values 
+
+|Member|
+|:---|
+|secretsManager|
+|certificateAuthority|
+|cloudHsm|
+|certificateManager|
+|unknownFutureValue|
+
+### awsSecurityToolWebServices values 
+
+|Member|
+|:---|
+|macie|
+|wafShield|
+|cloudTrail|
+|inspector|
+|securityHub|
+|detective|
+|guardDuty|
+|unknownFutureValue|
+
+### azureAccessType values 
+
+|Member|
+|:---|
+|public|
+|private|
+|unknownFutureValue|
+
+### azureEncryption values 
+
+|Member|
+|:---|
+|microsoftStorage|
+|microsoftKeyVault|
+|customer|
+|unknownFutureValue|
+
+### azureRoleDefinitionType values 
+
+|Member|
+|:---|
+|system|
+|custom|
+|unknownFutureValue|
+
+### dataCollectionStatus values 
+
+|Member|
+|:---|
+|online|
+|offline|
+|unknownFutureValue|
+
+### externalSystemAccessMethods values 
+
+|Member|
+|:---|
+|direct|
+|roleChaining|
+|unknownFutureValue|
+
+### gcpAccessType values 
+
+|Member|
+|:---|
+|public|
+|subjectToObjectAcls|
+|private|
+|unknownFutureValue|
+
+### gcpEncryption values 
+
+|Member|
+|:---|
+|google|
+|customer|
+|unknownFutureValue|
+
+### gcpRoleType values 
+
+|Member|
+|:---|
+|system|
+|custom|
+|unknownFutureValue|
+
+### iamStatus values 
+
+|Member|
+|:---|
+|active|
+|inactive|
+|disabled|
+|unknownFutureValue|
+
+### permissionsModificationCapability values 
+
+|Member|
+|:---|
+|enabled|
+|notConfigured|
+|noRecentDataCollected|
 |unknownFutureValue|

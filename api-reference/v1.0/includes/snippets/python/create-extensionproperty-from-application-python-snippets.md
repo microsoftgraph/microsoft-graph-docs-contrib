@@ -11,6 +11,7 @@ graph_client = GraphServiceClient(credentials, scopes)
 request_body = ExtensionProperty(
 	name = "jobGroup",
 	data_type = "String",
+	is_multi_valued = True,
 	target_objects = [
 		"User",
 	],

@@ -32,6 +32,18 @@ $notificationChannelsNotificationChannel2->setNotificationReceivers($notificatio
 $notificationChannelsArray []= $notificationChannelsNotificationChannel2;
 $requestBody->setNotificationChannels($notificationChannelsArray);
 
+$additionalData = [
+'conditions' => [
+	[
+		'relationshipType' => 'or',
+		'conditionCategory' => 'azureNetworkConnectionCheckFailures',
+		'aggregation' => 'count',
+		'operator' => 'greaterOrEqual',
+		'thresholdValue' => '90',
+	],
+],
+];
+$requestBody->setAdditionalData($additionalData);
 
 $result = $graphServiceClient->deviceManagement()->monitoring()->alertRules()->byAlertRuleId('alertRule-id')->patch($requestBody)->wait();
 
