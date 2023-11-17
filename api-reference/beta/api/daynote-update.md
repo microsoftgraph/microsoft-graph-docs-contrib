@@ -1,6 +1,6 @@
 ---
 title: "Update dayNote"
-description: "Update the properties of a dayNote object."
+description: "Update the properties of a day note."
 author: fmcgurrenw
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [dayNote](../resources/daynote.md) object.
+Update the properties of a [day note](../resources/daynote.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,7 +45,7 @@ PUT /teams/{teamsId}/schedule/dayNotes/{dayNoteId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|dayNoteDate|Date|The date the dayNote is relevent to.|
+|dayNoteDate|Date|The date for the day note.|
 |sharedDayNote|[itemBody](../resources/itembody.md)|The draft version of this dayNote that is viewable by managers.|
 |draftDayNote|[itemBody](../resources/itembody.md)|The shared version of this dayNote that is viewable by both employees and managers.|
 
@@ -57,7 +57,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "update_daynote"
@@ -78,7 +78,7 @@ Content-Type: application/json
 
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

@@ -1,6 +1,6 @@
 ---
 title: "Get dayNote"
-description: "Read the properties and relationships of a dayNote object."
+description: "Read the properties and relationships of a day note."
 author: fmcgurrenw
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [dayNote](../resources/daynote.md) object.
+Read the properties and relationships of a [day note](../resources/daynote.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -40,7 +40,7 @@ If successful, this method returns a `200 OK` response code and a [dayNote](../r
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 ``` http
 GET https://graph.microsoft.com/beta/teams/{teamsId}/schedule/dayNotes/{dayNoteId}
@@ -48,7 +48,7 @@ GET https://graph.microsoft.com/beta/teams/{teamsId}/schedule/dayNotes/{dayNoteI
 
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 ``` http
 HTTP/1.1 200 OK

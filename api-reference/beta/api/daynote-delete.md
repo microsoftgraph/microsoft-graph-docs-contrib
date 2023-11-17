@@ -1,6 +1,6 @@
 ---
 title: "Delete dayNote"
-description: "Delete a dayNote object."
+description: "Delete a day note."
 author: fmcgurrenw
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [dayNote](../resources/daynote.md) object.
+Delete a [day note](../resources/daynote.md) object.
 
 
 ## Permissions
@@ -41,14 +41,14 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 ``` http
 DELETE https://graph.microsoft.com/beta/teams/{teamsId}/schedule/dayNotes/{dayNoteId}
 ```
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 ``` http

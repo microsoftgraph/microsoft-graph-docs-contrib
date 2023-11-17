@@ -1,6 +1,6 @@
 ---
 title: schedule resource type
-description: A collection of schedulingGroups, shifts, timeOffReasons and timesOff within a team.
+description: A collection of scheduling groups, shifts, time off reasons and times off within a team.
 author: aaku
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md) objects, [timeOffReason](timeoffreason.md) objects, and [timeOff](timeoff.md) objects within a [team](../resources/team.md). 
+A collection of [scheduling groups](schedulinggroup.md), [shifts](shift.md), [time off reasons](timeoffreason.md), and [times off](timeoff.md) within a [team](../resources/team.md). 
 
 ## Methods
 
@@ -57,7 +57,7 @@ A collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md)
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type
 
 <!-- {
   "blockType": "resource",

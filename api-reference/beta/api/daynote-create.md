@@ -45,7 +45,7 @@ POST /teams/{teamsId}/schedule/dayNotes
 
 |Property|Type|Description|
 |:---|:---|:---|
-|dayNoteDate|Date|The date the dayNote is relevent to.|
+|dayNoteDate|Date|The date of the day note.|
 |sharedDayNote|[itemBody](../resources/itembody.md)|The draft version of this dayNote that is viewable by managers.|
 |draftDayNote|[itemBody](../resources/itembody.md)|The shared version of this dayNote that is viewable by both employees and managers.|
 
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a [dayNote](../r
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 ``` http
 POST https://graph.microsoft.com/beta/teams/{teamsId}/schedule/dayNotes
@@ -74,7 +74,7 @@ Content-Type: application/json
 
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 

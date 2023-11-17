@@ -1,6 +1,6 @@
 ---
 title: "List dayNote"
-description: "Retrieve the properties and relationships of all dayNote objects in a team."
+description: "Retrieve the properties and relationships of all day notes in a team."
 author: fmcgurrenw
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of all [dayNote](../resources/daynote.md) objects in a team.
+Retrieve the properties and relationships of all [day notes](../resources/daynote.md) in a team.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,7 +46,7 @@ If successful, this method returns a `200 OK` response code and a list of [dayNo
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 ``` http
 GET https://graph.microsoft.com/beta/teams/{teamsId}/schedule/dayNotes
@@ -54,7 +54,7 @@ GET https://graph.microsoft.com/beta/teams/{teamsId}/schedule/dayNotes
 
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 ``` http
 HTTP/1.1 200 OK
