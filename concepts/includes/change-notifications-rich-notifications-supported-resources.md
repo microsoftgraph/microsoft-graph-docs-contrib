@@ -11,7 +11,7 @@ ms.localizationpriority: high
 Rich notifications are available for the following resources.
 
 > [!NOTE]
-> Rich notifications for subscriptions to endpoints marked with an asterisk (*) are available on the `/beta` endpoint only.
+> Rich notifications for subscriptions to endpoints marked with an asterisk (*) are only available on the `/beta` endpoint.
 
 | Resource | Supported resource paths | Limitations |
 |--|--|--|
@@ -22,10 +22,10 @@ Rich notifications are available for the following resources.
 | Teams [callTranscript][] | All transcripts in an organization: `communications/onlineMeetings/getAllTranscripts` <br><br> All transcripts for a specific meeting: `communications/onlineMeetings/{onlineMeetingId}/transcripts` | Maximum subscription quotas: <li> Per app and online-meeting combination: 1 <li> Per organization: 10,000 total subscriptions. |
 | Teams [channel][] | Changes to channels in all teams: `/teams/getAllChannels`<br/><br/>Changes to channel in a specific team: `/teams/{id}/channels` | - |
 | Teams [chat][] | Changes to any chat in the tenant: `/chats`<br/><br/>Changes to a specific chat: `/chats/{id}` | - |
-| Teams [chatMessage][] | Changes to chat messages in all channels in all teams: `/teams/getAllMessages`<br/><br/>Changes to chat messages in a specific channel: `/teams/{id}/channels/{id}/messages`<br/><br/>Changes to chat messages in all chats: `/chats/getAllMessages`<br/><br/>Changes to chat messages in a specific chat: `/chats/{id}/messages`<br/><br/>Changes to chat messages in all chats a particular user is part of: `/users/{id}/chats/getAllMessages` | Does not support using `$select` to return only selected properties. The rich notification consists of all the properties of the changed instance. |
+| Teams [chatMessage][] | Changes to chat messages in all channels in all teams: `/teams/getAllMessages`<br/><br/>Changes to chat messages in a specific channel: `/teams/{id}/channels/{id}/messages`<br/><br/>Changes to chat messages in all chats: `/chats/getAllMessages`<br/><br/>Changes to chat messages in a specific chat: `/chats/{id}/messages`<br/><br/>Changes to chat messages in all chats a particular user is part of: `/users/{id}/chats/getAllMessages` | Doesn't support using `$select` to return only selected properties. The rich notification consists of all the properties of the changed instance. |
 | Teams [conversationMember][] | Changes to membership in a specific team: `/teams/{id}/members`<br/><br/><!-- Changes to membership in all channels under a specific team:  `/teams/{id}/channels/getAllMembers` --><br/><br/>Changes to membership in a specific chat: `/chats/{id}/members`<!-- <br/><br/>Changes to membership for all Teams chats: `/chats/getAllMembers`<br/><br/>Changes to membership for all channels across the entire tenant: `/teams/getAllChannels/getAllMembers` * --> | - |
-| Teams [onlineMeeting][] * | Changes to an online meeting: `/communications/onlineMeetings/?$filter=JoinWebUrl eq '{joinWebUrl}` * | Does not support using `$select` to return only selected properties. The rich notification consists of all the properties of the changed instance. |
-| Teams [presence][] | Changes to a single user's presence: `/communications/presences/{id}` | Does not support using `$select` to return only selected properties. The rich notification consists of all the properties of the changed instance. |
+| Teams [onlineMeeting][] * | Changes to an online meeting: `/communications/onlineMeetings/?$filter=JoinWebUrl eq '{joinWebUrl}` * | Doesn't support using `$select` to return only selected properties. The rich notification consists of all the properties of the changed instance. |
+| Teams [presence][] | Changes to a single user's presence: `/communications/presences/{id}` | Doesn't support using `$select` to return only selected properties. The rich notification consists of all the properties of the changed instance. |
 | Teams [team][] | Changes to any team in the tenant: `/teams`<br/><br/>Changes to a specific team: `/teams/{id}` | - |
 
 [channel]: /graph/api/resources/channel
