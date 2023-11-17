@@ -18,6 +18,7 @@ Delete a [fileStorageContainer](../resources/filestoragecontainer.md). Deleting 
 The application calling this API must have permissions to delete fileStorageContainers for the respective container type.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
