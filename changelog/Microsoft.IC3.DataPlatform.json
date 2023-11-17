@@ -2,6 +2,96 @@
     "changelog": [
         {
             "ChangeList": [
+                {
+                    "Id": "5c4af81d-eebf-4c90-a5a9-c23d898dee72",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "participants",
+                    "ChangeType": "Deprecation",
+                    "Description": "Deprecated the **participants** property of the [callRecord](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-callRecord?view=graph-rest-beta) resource. The **participants** property is deprecated and will stop returning data on June 30, 2026. Going forward, use the **participants_v2** relationship.",
+                    "Target": "callRecord"
+                },
+                {
+                    "Id": "5c4af81d-eebf-4c90-a5a9-c23d898dee72",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "organizer",
+                    "ChangeType": "Deprecation",
+                    "Description": "Deprecated the **organizer** property of the [callRecord](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-callRecord?view=graph-rest-beta) resource. The **organizer** property is deprecated and will stop returning data on June 30, 2026. Going forward, use the **organizer_v2** relationship.",
+                    "Target": "callRecord"
+                },
+                {
+                    "Id": "5c4af81d-eebf-4c90-a5a9-c23d898dee72",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "identity",
+                    "ChangeType": "Deprecation",
+                    "Description": "Deprecated the **identity** property of the [participantEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participantEndpoint?view=graph-rest-beta) resource. The **identity** property is deprecated and will stop returning data on June 30, 2026. Going forward, use the **associatedIdentity** property.",
+                    "Target": "participantEndpoint"
+                },
+                {
+                    "Id": "5c4af81d-eebf-4c90-a5a9-c23d898dee72",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "associatedIdentity",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **associatedIdentity** property to the [participantEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participantEndpoint?view=graph-rest-beta) resource.",
+                    "Target": "participantEndpoint"
+                },
+                {
+                    "Id": "5c4af81d-eebf-4c90-a5a9-c23d898dee72",
+                    "ApiChange": "Relationship",
+                    "ChangedApiName": "organizer_v2",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **organizer_v2** relationship to the [callRecord](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-callRecord?view=graph-rest-beta) resource.",
+                    "Target": "callRecord"
+                },
+                {
+                    "Id": "5c4af81d-eebf-4c90-a5a9-c23d898dee72",
+                    "ApiChange": "Relationship",
+                    "ChangedApiName": "participants_v2",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **participants_v2** relationship to the [callRecord](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-callRecord?view=graph-rest-beta) resource.",
+                    "Target": "callRecord"
+                },
+                {
+                    "Id": "5c4af81d-eebf-4c90-a5a9-c23d898dee72",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "callRecord",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/callrecords-callrecord-list?view=graph-rest-beta) operation to the [callRecord](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-callRecord?view=graph-rest-beta) resource.",
+                    "Target": "callRecord"
+                },
+                {
+                    "Id": "5c4af81d-eebf-4c90-a5a9-c23d898dee72",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "organizer",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [organizer](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-organizer?view=graph-rest-beta) resource type.",
+                    "Target": "organizer"
+                },
+                {
+                    "Id": "5c4af81d-eebf-4c90-a5a9-c23d898dee72",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "participant",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [participant](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participant?view=graph-rest-beta) resource and a supported method.",
+                    "Target": "participant"
+                },
+                {
+                    "Id": "5c4af81d-eebf-4c90-a5a9-c23d898dee72",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "participantBase",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [participantBase](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participantBase?view=graph-rest-beta) resource type.",
+                    "Target": "participantBase"
+                }
+            ],
+            "Id": "5c4af81d-eebf-4c90-a5a9-c23d898dee72",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-11-13T19:36:11.1205184Z",
+            "WorkloadArea": "Teamwork and communications",
+            "SubArea": "Calls and online meetings"
+        },
+        {
+            "ChangeList": [
               {
                 "Id": "6e9d3a43-2765-461f-9bc7-92375bff3acb",
                 "ApiChange": "Property",

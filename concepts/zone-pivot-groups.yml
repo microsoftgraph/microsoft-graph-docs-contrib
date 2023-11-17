@@ -8,3 +8,11 @@ groups:
     title: Application permissions
   - id: grant-delegated-permissions
     title: Delegated permissions
+- id: mgt-version
+  title: Build a React with Microsoft Graph Toolkit
+  prompt: Before you begin, select the type of application you want to build
+  pivots:
+  - id: mgt-react
+    title: Graph Toolkit with React
+  - id: mgt-react-chat
+    title: Graph Toolkit with React (including Chat)

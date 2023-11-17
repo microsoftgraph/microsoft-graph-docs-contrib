@@ -25,6 +25,7 @@ Specifies the connectivity details of all device links associated with a branch.
 |:---|:---|:---|
 |branchId|String|Unique identifier or a specific reference assigned to a branchSite. Key.|
 |branchName|String|Display name assigned to a branchSite.|
+|links|[microsoft.graph.networkaccess.connectivityConfigurationLink](../resources/networkaccess-connectivityconfigurationlink.md) collection|List of connectivity configurations for [deviceLink](../resources/networkaccess-devicelink.md) objects.|
 
 ## Relationships
 |Relationship|Type|Description|
