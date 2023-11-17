@@ -5500,7 +5500,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getApplicablePolicyRequirements",
           "ChangeType": "Addition",
-          "Description": "Added the [getApplicablePolicyRequirements](https://learn.microsoft.com/en-us/graph/api/accesspackage-getapplicablepolicyrequirements.md) method to the [accessPackage](https://learn.microsoft.com/en-us/graph/api/resources/accessPackage?view=graph-rest-beta) resource.",
+          "Description": "Added the [getApplicablePolicyRequirements](https://learn.microsoft.com/en-us/graph/api/accesspackage-getapplicablepolicyrequirements?view=graph-rest-beta) method to the [accessPackage](https://learn.microsoft.com/en-us/graph/api/resources/accessPackage?view=graph-rest-beta) resource.",
           "Target": "accessPackage"
         },
         {
@@ -9761,7 +9761,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "user: reprocessLicenseAssignment API,user",
           "ChangeType": "Addition",
-          "Description": "Added the [user: reprocessLicenseAssignment API](https://learn.microsoft.com/en-us/graph/api-reference/beta/api/user-reprocesslicenseassignment?view=graph-rest-beta), which can be used to reprocess all group-based license assignments for the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta).",
+          "Description": "Added the [user: reprocessLicenseAssignment](https://learn.microsoft.com/en-us/graph/api/user-reprocesslicenseassignment?view=graph-rest-beta) API, which can be used to reprocess all group-based license assignments for the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta).",
           "Target": "user: reprocessLicenseAssignment API,user"
         }
       ],
@@ -12823,7 +12823,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "stop",
           "ChangeType": "Addition",
-          "Description": "Added the [stop](https://learn.microsoft.com/en-us/graph/api/request-stop?view=graph-rest-beta) method to the [request](https://learn.microsoft.com/en-us/graph/api/resources/request?view=graph-rest-beta) resource.",
+          "Description": "Added the **stop** method to the [request](https://learn.microsoft.com/en-us/graph/api/resources/request?view=graph-rest-beta) resource.",
           "Target": "request"
         },
         {

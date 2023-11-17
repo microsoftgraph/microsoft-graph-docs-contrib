@@ -7,7 +7,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "mobilityManagementPolicy",
                     "ChangeType": "Addition",
-                    "Description": "Added the **isValid** property to the [mobilityManagementPolicy](https://learn.microsoft.com/en-us/graph/api/mobilityManagementPolicy?view=graph-rest-beta) resource.",
+                    "Description": "Added the **isValid** property to the [mobilityManagementPolicy](https://learn.microsoft.com/en-us/graph/api/resources/mobilitymanagementpolicy?view=graph-rest-beta) resource.",
                     "Target": "mobilityManagementPolicy"
                 },
                 {
@@ -63,17 +63,17 @@
                 {
                     "Id": "5c98f801-d1c4-44eb-ac11-f72b6754deda",
                     "ApiChange": "Resource",
-                    "ChangedApiName": "mobileDeviceManagementPolicies",
+                    "ChangedApiName": "mobileDeviceManagementPolicy",
                     "ChangeType": "Addition",
-                    "Description": "Added the [mobileDeviceManagementPolicies](https://learn.microsoft.com/en-us/graph/api/resources/mobileDeviceManagementPolicies?view=graph-rest-1.0) resource type.",
-                    "Target": "mobileDeviceManagementPolicies"
+                    "Description": "Added the [mobileDeviceManagementPolicy](https://learn.microsoft.com/en-us/graph/api/mobiledevicemanagementpolicies-update?view=graph-rest-beta) resource type.",
+                    "Target": "mobileDeviceManagementPolicy"
                 },
                 {
                     "Id": "5c98f801-d1c4-44eb-ac11-f72b6754deda",
                     "ApiChange": "Resource",
                     "ChangedApiName": "mobileAppManagementPolicies",
                     "ChangeType": "Addition",
-                    "Description": "Added the [mobileAppManagementPolicies](https://learn.microsoft.com/en-us/graph/api/resources/mobileAppManagementPolicies?view=graph-rest-1.0) resource type.",
+                    "Description": "Added the **mobileAppManagementPolicies** resource type.",
                     "Target": "mobileAppManagementPolicies"
                 },
                 {
