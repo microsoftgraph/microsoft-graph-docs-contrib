@@ -1,6 +1,6 @@
 ---
 title: "List subscriptions"
-description: " see the scenarios below for details."
+description: "Retrieve a list of webhook subscriptions."
 ms.localizationpriority: medium
 author: "keylimesoda"
 doc_type: apiPageType
@@ -34,8 +34,10 @@ Depending on the resource and the permission type (delegated or application) req
 |[callRecord](../resources/callrecords-callrecord.md) | Not supported.  | Not supported.  | CallRecords.Read.All  |
 |[callRecording](../resources/callrecording.md) <br /> `communications/onlineMeetings/getAllRecordings` <br /> Any recording becomes available in the tenant. | Not supported. | Not supported. | OnlineMeetingRecording.Read.All |
 |[callRecording](../resources/callrecording.md) <br /> `communications/onlineMeetings/{onlineMeetingId}/recordings`  <br /> Any recording becomes available for a specific meeting. | OnlineMeetingRecording.Read.All | Not supported. | OnlineMeetingRecording.Read.All |
+|[callRecording](../resources/callrecording.md) <br /> `users/{userId}/onlineMeetings/getAllRecordings`  <br /> Any recording becomes available for any meeting organized by a specific user. | OnlineMeetingRecording.Read.All | Not supported. | OnlineMeetingRecording.Read.All |
 |[callTranscript](../resources/calltranscript.md) <br /> `communications/onlineMeetings/getAllTranscripts` <br /> Any transcript becomes available in the tenant. | Not supported.  | Not supported.  | OnlineMeetingTranscript.Read.All |
 |[callTranscript](../resources/calltranscript.md) <br /> `communications/onlineMeetings/{onlineMeetingId}/transcripts` <br /> Any transcript becomes available for a specific meeting. | OnlineMeetingTranscript.Read.All | Not supported.  | OnlineMeetingTranscript.Read.All |
+|[callTranscript](../resources/calltranscript.md) <br /> `users/{userId}/onlineMeetings/getAllTranscripts` <br /> Any transcript becomes available for any meeting organized by a specific user. | OnlineMeetingTranscript.Read.All | Not supported. | OnlineMeetingTranscript.Read.All |
 |[channel](../resources/channel.md) <br />`/teams/getAllChannels` <br /> All channels in an organization. | Not supported.   | Not supported.  | Channel.ReadBasic.All, ChannelSettings.Read.All |
 |[channel](../resources/channel.md) <br />`/teams/{id}/channels` <br /> All channels in a particular team in an organization. | Channel.ReadBasic.All, ChannelSettings.Read.All, Subscription.Read.All  | Not supported.  | Channel.ReadBasic.All, ChannelSettings.Read.All  |
 |[chat](../resources/chat.md) <br />`/chats` <br />All chats in an organization. | Not supported.  | Not supported.  | Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
@@ -77,22 +79,22 @@ Response results are based on the context of the calling app. The following sect
 
 ### Basic scenarios
 
-Most commonly, an application wants to retrieve subscriptions that it originally created for the currently signed-in user, or for all users in the directory (work/school accounts). These scenarios don't require any special permissions beyond the ones the app used originally to create its subscriptions.
+Most commonly, an application wants to retrieve subscriptions that it originally created for the currently signed-in user or all users in the directory (work/school accounts). These scenarios don't require any special permissions beyond the ones the app used originally to create its subscriptions.
 
 | Context of the calling app | Response contains |
 |:-----|:---------------- |
-| App is calling on behalf of the signed-in user (delegated permission). <br/>-and-<br/>App has the original permission required to [create the subscription](subscription-post-subscriptions.md).<br/><br/>**Note:** This applies to both personal Microsoft accounts and work/school accounts. | Subscriptions created by **this app** for the signed-in user only. |
-| App is calling on behalf of itself (application permission).<br/>-and-<br/>App has the original permission required to [create the subscription](subscription-post-subscriptions.md).<br/><br/>Note: This applies to work/school accounts only.| Subscriptions created by **this app** for itself or for any user in the directory.|
+| App is calling on behalf of the signed-in user (delegated permission). <br/>-and-<br/>App has the original permission required to [create the subscription](subscription-post-subscriptions.md).<br/><br/>**Note:** This scenario applies to both personal Microsoft accounts and work/school accounts. | Subscriptions created by **the app** for the signed-in user only. |
+| App is calling on behalf of itself (application permission).<br/>-and-<br/>App has the original permission required to [create the subscription](subscription-post-subscriptions.md).<br/><br/>Note: This scenario only applies to work/school accounts.| Subscriptions created by **the app** for itself or any user in the directory.|
 
 ### Advanced scenarios
 
-In some cases, an app wants to retrieve subscriptions created by other apps. For example, a user wants to see all subscriptions created by any app on their behalf. Or, an administrator may want to see all subscriptions from all apps in their directory.
+In some cases, an app wants to retrieve subscriptions created by other apps. For example, a user wants to see all subscriptions created by any app on their behalf. Or, an administrator who wants to see all subscriptions from all apps in their directory.
 For such scenarios, a delegated permission Subscription.Read.All is required.
 
 | Context of the calling app | Response contains |
 |:-----|:---------------- |
-| App is calling on behalf of the signed-in user (delegated permission). *The user is a non-admin*. <br/>-and-<br/>App has the permission Subscription.Read.All<br/><br/>Note: This applies to both personal Microsoft accounts and work/school accounts. | Subscriptions created by **any app** for the signed-in user only. |
-| App is calling on behalf of the signed-in user (delegated permission). *The user is an admin*.<br/>-and-<br/>App has the permission Subscription.Read.All<br/><br/>Note: This applies to work/school accounts only. | Subscriptions created by **any app** for **any user** in the directory.|
+| App is calling on behalf of the signed-in user (delegated permission). *The user is a non-admin*. <br/>-and-<br/>App has the permission Subscription.Read.All<br/><br/>Note: This scenario applies to both personal Microsoft accounts and work/school accounts. | Subscriptions created by **any app** for the signed-in user only. |
+| App is calling on behalf of the signed-in user (delegated permission). *The user is an admin*.<br/>-and-<br/>App has the permission Subscription.Read.All<br/><br/>Note: This scenario only applies to work/school accounts. | Subscriptions created by **any app** for **any user** in the directory.|
 
 ## HTTP request
 
