@@ -1,6 +1,6 @@
 ---
 title: "mfaCompletionMetric resource type"
-description: "Represents insights on the MFA usage for apps registered in your tenant configured for Microsoft Entra External ID for customers, over a specific period (daily or monthly)."
+description: "Represents insights of daily and monthly MFA usage on apps registered in your tenant that is configured for Microsoft Entra External ID for customers."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
