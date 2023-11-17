@@ -41,14 +41,17 @@ DELETE /storage/fileStorage/containers/{containerId}
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Don't supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
 ### Request
+
 The following example shows a request.
 <!-- {
   "blockType": "request",
@@ -61,6 +64,7 @@ DELETE /storage/fileStorage/containers/{containerId}
 
 
 ### Response
+
 The following example shows the response.
 <!-- {
   "blockType": "response",
