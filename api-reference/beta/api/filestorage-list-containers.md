@@ -8,16 +8,15 @@ doc_type: apiPageType
 ---
 
 # List fileStorageContainers
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the list of [fileStorageContainer](../resources/filestoragecontainer.md) objects visible to the caller. The containerTypeId filter parameter is required. The application calling these APIs must have permissions to read fileStorageContainers for the respective container type.
 
-
 > [!Note]
 > Only a limited subset of properties is returned for each fileStorageContainer. The $expand operation isn't supported for drive, permissions, and customProperties properties.
-
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -43,6 +42,9 @@ GET /storage/fileStorage/containers?$filter=containerTypeId eq {containerTypeId}
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
+## Request body
+Don't supply a request body for this method.
+
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [fileStorageContainer](../resources/filestoragecontainer.md) objects in the response body.
@@ -50,6 +52,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
+
 The following example shows enumerates all tenant-owned containers of a given type.
 
 <!-- {
@@ -62,6 +65,7 @@ GET /storage/fileStorage/containers?$filter=containerTypeId eq {containerTypeId}
 ```
 
 ### Response
+
 The following example shows the response.
 <!-- {
   "blockType": "response",
