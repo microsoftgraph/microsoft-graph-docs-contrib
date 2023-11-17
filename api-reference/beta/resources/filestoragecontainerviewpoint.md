@@ -1,6 +1,6 @@
 ---
 title: "fileStorageContainerViewpoint resource type"
-description: "The fileStorageContainerViewpoint resource represents data specific to the current user of a fileStorageContainer"
+description: "Represents data specific to the current user of a fileStorageContainer".
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.prod: "files"
@@ -13,9 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
-The **fileStorageContainerViewpoint** resource contains data specific to the current user.
-
+Represents data specific to the current user of a fileStorageContainer.
 
 ## Properties
 |Property|Type|Description|
@@ -26,7 +24,7 @@ The **fileStorageContainerViewpoint** resource contains data specific to the cur
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.fileStorageContainerViewpoint"
