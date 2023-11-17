@@ -1,3 +1,4 @@
+---
 title: "Get temporaryAccessPassAuthenticationMethod"
 description: "Retrieve a user's temporaryAccessPassAuthenticationMethod object."
 author: "tilarso"
