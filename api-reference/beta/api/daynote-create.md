@@ -1,6 +1,6 @@
 ---
 title: "Create dayNote"
-description: "Create a dayNote object in the schedule."
+description: "Create a day note in the schedule."
 author: fmcgurrenw
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
