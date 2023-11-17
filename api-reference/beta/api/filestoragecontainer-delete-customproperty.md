@@ -15,9 +15,7 @@ Namespace: microsoft.graph
 
 Delete one or multiple custom properties from a fileStorageContainer by assigning a **null** value to the properties.
 
-
 The application calling this API must have write permissions to fileStorageContainers for the respective container type.
-
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -47,13 +45,12 @@ PATCH /storage/fileStorage/containers/{containerId}/customProperties
 In the request body, supply the custom properties for deletion by setting them to null.
 
 ## Response
-
 If successful, this action returns a `200 OK` response code.
 
 ## Examples
 
 ### Request
-The following example shows how to delete multiple custom properties.
+The following example deletes multiple custom properties.
 <!-- {
   "blockType": "request",
   "name": "filestoragecontainerthis.delete-customproperty"
