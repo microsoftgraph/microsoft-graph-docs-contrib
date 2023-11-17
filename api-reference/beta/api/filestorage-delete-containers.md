@@ -37,6 +37,7 @@ DELETE /storage/fileStorage/containers/{containerId}
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
