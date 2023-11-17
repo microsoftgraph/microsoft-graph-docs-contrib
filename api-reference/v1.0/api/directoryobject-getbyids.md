@@ -142,13 +142,11 @@ Content-type: application/json
       {
         "@odata.type": "#microsoft.graph.user",
         "id": "84b80893-8749-40a3-97b7-68513b600544",
-        "accountEnabled": true,
         "displayName": "Trevor Jones"
       },
       {
         "@odata.type": "#microsoft.graph.user",
         "id": "5d6059b6-368d-45f8-91e1-8e07d485f1d0",
-        "accountEnabled": true,
         "displayName": "Billy Smith"
       },
       {
