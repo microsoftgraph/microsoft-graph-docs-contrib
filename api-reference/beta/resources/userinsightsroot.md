@@ -24,8 +24,8 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|daily|[dailyUserInsightMetricsRoot](../resources/dailyuserinsightmetricsroot.md)|Summaries of daily user activities on apps registered in your Microsoft Entra External ID for customers tenant.|
-|monthly|[monthlyUserInsightMetricsRoot](../resources/monthlyuserinsightmetricsroot.md)|Summaries of monthly user activities on apps registered in your Microsoft Entra External ID for customers tenant.|
+|daily|[dailyUserInsightMetricsRoot](../resources/dailyuserinsightmetricsroot.md)|Summaries of daily user activities on apps registered in your tenant that is configured for Microsoft Entra External ID for customers.|
+|monthly|[monthlyUserInsightMetricsRoot](../resources/monthlyuserinsightmetricsroot.md)|Summaries of monthly user activities on apps registered in your tenant that is configured for Microsoft Entra External ID for customers.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
