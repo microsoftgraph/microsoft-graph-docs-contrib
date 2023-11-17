@@ -10972,9 +10972,7 @@ items:
               - name: Remove rubric from assignment
                 href: api/educationassignment-delete-rubric.md
               - name: Get delta
-                href: api/educationassignment-delta.md
-              - name: List grading categories
-                href: api/educationassignment-list-gradingcategory.md
+                href: api/educationassignment-delta.md              
               - name: Add grading category
                 href: api/educationassignment-post-gradingcategory.md
               - name: Update grading category
