@@ -1,6 +1,6 @@
 ---
 title: "userSignUpMetric resource type"
-description: "Represents insights on user sign-ups for apps registered in your tenant configured for Microsoft Entra External ID for customers, over a specific period (daily or monthly)."
+description: "Represents insights of daily and monthly user sign-ups on apps registered in your tenant that is configured for Microsoft Entra External ID for customers."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents insights on user sign-ups for apps registered in your tenant configured for Microsoft Entra External ID for customers, over a specific period (daily or monthly).
+Represents insights of daily and monthly user sign-ups on apps registered in your tenant that is configured for Microsoft Entra External ID for customers.
 
 Inherits from [entity](../resources/entity.md).
 
