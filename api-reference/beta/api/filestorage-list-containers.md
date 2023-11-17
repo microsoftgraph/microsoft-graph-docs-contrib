@@ -50,7 +50,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-The following example shows a request to enumerate all tenant-owned containers of a given type.
+The following example shows enumerates all tenant-owned containers of a given type.
+
 <!-- {
   "blockType": "request",
   "name": "list_filestoragecontainer"
