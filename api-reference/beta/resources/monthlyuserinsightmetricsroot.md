@@ -21,8 +21,8 @@ None.
 ## Relationships
 |Property|Type|Description|
 |:---|:---|:---|
-|activeUsers|[activeUsers](../resources/activeusersmetric.md) collection.|Insight for active users on apps registered in the tenant for a specified period.|
-|activeUsersBreakdown|[activeUsersBreakdown](../resources/activeusersbreakdownmetric.md) collection.|Insight for the breakdown of users who were active on apps registered in the tenant for a specified period.|
+|activeUsers|[activeUsers](../resources/activeusersmetric.md) collection.|Insights for active users on apps registered in the tenant for a specified period.|
+|activeUsersBreakdown|[activeUsersBreakdown](../resources/activeusersbreakdownmetric.md) collection.|Insights for the breakdown of users who were active on apps registered in the tenant for a specified period.|
 |authentications|[authentications](../resources/authenticationsmetric.md) collection.|Insights for authentications on apps registered in the tenant for a specified period.|
 |mfaCompletions|[mfaCompletion](../resources/mfacompletionmetric.md) collection.|Insights for MFA usage on apps registered in the tenant for a specified period.|
 |requests|[userRequests](../resources/userrequestsmetric.md) collection.| Insights for all user requests on apps registered in the tenant for a specified period.|
