@@ -38,7 +38,7 @@ None.
 | serviceActivity                               | [serviceActivity](../resources/serviceactivity.md)                            | Reports that relate to tenant-level authentication activities in Microsoft Entra.                                                            |
 | sla                               | [serviceLevelAgreementRoot](../resources/servicelevelagreementroot.md)                            | Reports that relate to tenant-level Microsoft Entra SLA attainment.                                                            |
 | userCredentialUsageDetails        | [userCredentialUsageDetails](../resources/usercredentialusagedetails.md) collection               | Represents the self-service password reset (SSPR) usage for a given tenant.                                         |
-|userInsights|[userInsightsRoot](../resources/userinsightsroot.md)|Represents a collection of user activities on applications in a Microsoft Entra External ID for customers tenant.|
+|userInsights|[userInsightsRoot](../resources/userinsightsroot.md)|Represents a collection of user activities on applications in a tenant that is configured for Microsoft Entra External ID for customers.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
