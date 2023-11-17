@@ -8,7 +8,6 @@ doc_type: apiPageType
 ---
 
 # Delete a fileStorageContainer
-
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -16,7 +15,6 @@ Namespace: microsoft.graph
 Delete a [fileStorageContainer](../resources/filestoragecontainer.md). Deleting fileStorageContainers using this method moves the fileStorageContainers to the recycle bin instead of permanently deleting them.
 
 The application calling this API must have permissions to delete fileStorageContainers for the respective container type.
-
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -41,9 +39,10 @@ DELETE /storage/fileStorage/containers/{containerId}
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
+## Request body
+Don't supply a request body for this method.
 
 ## Response
-
 If successful, this method returns a `204 No Content` response code.
 
 ## Examples
