@@ -64,7 +64,7 @@ Represents a space where multiple users or a group of users can store files and 
 |Relationship|Type|Description|
 |:---|:---|:---|
 |drive|[drive](../resources/drive.md)|The fileStorageContainer's drive resource. Read-only.|
-|permissions|[permission](../resources/permission.md)|Permissions of users in the fileStorageContainer. The possible values are 'reader', 'writer', 'manager', 'owner'. Read-write.|
+|permissions|[permission](../resources/permission.md)|Permissions of users in the fileStorageContainer. The possible values are 'reader', 'writer', 'manager', and 'owner'. Read-write.|
 
 ## permissions values
 
