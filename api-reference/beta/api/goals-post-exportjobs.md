@@ -3,7 +3,7 @@ title: "Create goalsExportJob"
 description: "Create a new goalsExportJob object in a Viva Goals organization."
 author: "ishatyagiit"
 ms.localizationpriority: medium
-ms.prod: "viva-goals"
+ms.prod: "employee-goals"
 doc_type: apiPageType
 ---
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 Create a new [goalsExportJob](../resources/goalsexportjob.md) object in a Viva Goals organization.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- {
   "blockType": "permissions",
@@ -47,16 +47,27 @@ You can specify the following properties when you create a **goalsExportJob** ob
 
 |Property|Type|Description|
 |:---|:---|:---|
-|goalsOrganizationId|String|The unique identifier of the goals organization.|
+|goalsOrganizationId|String|The unique identifier of the [viva goals organization](/viva/goals/understand-orgs-and-teams#organizations-in-viva-goals).|
 |explorerViewId|String|The unique identifier of the explorer view to be exported.|
 
+### Obtaining goalsOrganizationId and explorerViewId
+To obtain the **goalsOrganizationId** and **explorerViewId**, you can extract them from the URL of a saved explorerView. To learn more about Explorer views, see [Save and export](/viva/goals/explorer#save-and-export).
+
+``` http
+https://goals.microsoft.com/org_uuid/94a356ab-53d5-40e7-8a85-053d6d3b9eb3/objective-explorer?viewId=e5e7a3c1-8cdf-409d-9ce9-ff730d65d95e
+```
+- The org_uuid in the URL, specifically, `94a356ab-53d5-40e7-8a85-053d6d3b9eb3`, represents the `goalsOrganizationId`.
+
+- The viewId in the URL, specifically, `e5e7a3c1-8cdf-409d-9ce9-ff730d65d95e` represents the `explorerViewId`.
+
+So, you can identify the goalsOrganizationId as 94a356ab-53d5-40e7-8a85-053d6d3b9eb3, and the explorerViewId as e5e7a3c1-8cdf-409d-9ce9-ff730d65d95e from this URL.
 
 
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [goalsExportJob](../resources/goalsexportjob.md) object in the response body.
 
-This method also returns `409 Conflict` when you attempt to create a [goalsExportJob](../resources/goalsexportjob.md) object with the same properties (**goalsOrganizationId** and **explorerViewId**) as an existing [goalsExportJob](../resources/goalsexportjob.md) object that is pending completion. 
+This method also returns `409 Conflict` when you attempt to create a [goalsExportJob](../resources/goalsexportjob.md) object with the same values (**goalsOrganizationId** and **explorerViewId**) as an existing [goalsExportJob](../resources/goalsexportjob.md) object that is pending completion. 
 
 When the pending job completes, you can create the new [goalsExportJob](../resources/goalsexportjob.md) object.
 
@@ -254,17 +265,3 @@ Content-type: application/json
     }
 }
 ```
-
-## See also
-
-### Obtaining goalsOrganizationId and explorerViewId
-To obtain the goalsOrganizationId and explorerViewId, you can extract them from the URL of a saved explorerView:
-
-``` http
-https://goals.microsoft.com/org_uuid/94a356ab-53d5-40e7-8a85-053d6d3b9eb3/objective-explorer?viewId=e5e7a3c1-8cdf-409d-9ce9-ff730d65d95e
-```
-- The org_uuid in the URL, specifically, `94a356ab-53d5-40e7-8a85-053d6d3b9eb3`, represents the `goalsOrganizationId`.
-
-- The viewId in the URL, specifically, `e5e7a3c1-8cdf-409d-9ce9-ff730d65d95e` represents the `explorerViewId`.
-
-So, you can identify the goalsOrganizationId as 94a356ab-53d5-40e7-8a85-053d6d3b9eb3, and the explorerViewId as e5e7a3c1-8cdf-409d-9ce9-ff730d65d95e from this URL.

@@ -1,13 +1,13 @@
 ---
-title: "List goalsExportJobs"
+title: "List exportJobs"
 description: "Get a list of the goalsExportJob objects and their properties in a Viva Goals organization."
 author: "ishatyagiit"
 ms.localizationpriority: medium
-ms.prod: "viva"
+ms.prod: "employee-goals"
 doc_type: apiPageType
 ---
 
-# List goalsExportJobs
+# List exportJobs
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 Get a list of the [goalsExportJob](../resources/goalsexportjob.md) objects and their properties in a Viva Goals organization.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- {
   "blockType": "permissions",
@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /employeeExperience/goals/exportJobs
 ```
 
-## Optional query parameters
+## Optional query parameter
 This method supports the `$filter` OData query parameters to help customize the response. For more information, see [OData query parameters](/graph/query-parameters).
 
 
@@ -44,7 +44,6 @@ The `$filter` OData query parameter is supported on the **goalsOrganizationId** 
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-| Accept  | application/json|
 
 ## Request body
 Don't supply a request body for this method.
@@ -55,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Response on Search
+### Example 1: List exportJobs  
 #### Request
 The following example shows a request.
 <!-- {
@@ -85,13 +84,13 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.goalsExportJob",
-      "id": "9eb0bfa0-eaa1-b225-1f83-54ae3e711753",
-      "createdDateTime": "String (timestamp)",
-      "status": "String",
-      "resourceLocation": "String",
-      "goalsOrganizationId": "String",
-      "explorerViewId": "String",
-      "expirationDateTime": "String (timestamp)",
+      "id": "eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0", 
+      "status": "succeeded", 
+      "goalsOrganizationId": "9ab0fcab-c1d4-4b26-963b-a3c33155f853", 
+      "explorerViewId": "2c8b5fd3-67c3-4677-8eb3-e0066c4d2fd7", 
+      "resourceLocation": "https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0/content", 
+      "createdDateTime": "2023-06-19T12-06-03.0024Z", 
+      "expirationDateTime": "2023-07-29T12-06-03.0024Z" 
     }
   ]
 }
@@ -127,13 +126,13 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.goalsExportJob",
-      "id": "9eb0bfa0-eaa1-b225-1f83-54ae3e711753",
-      "createdDateTime": "String (timestamp)",
-      "status": "String",
-      "resourceLocation": "String",
-      "goalsOrganizationId": "3d9a8150-90fd-42bd-9777-25ba783d4a05",
-      "explorerViewId": "String",
-      "expirationDateTime": "String (timestamp)",
+      "id": "fyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0", 
+      "status": "succeeded", 
+      "goalsOrganizationId": "3d9a8150-90fd-42bd-9777-25ba783d4a05", 
+      "explorerViewId": "2c8b5fd3-67c3-4677-8eb3-e0066c4d2fd7", 
+      "resourceLocation": "https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs/fyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0/content", 
+      "createdDateTime": "2023-06-19T12-06-03.0024Z", 
+      "expirationDateTime": "2023-07-29T12-06-03.0024Z" 
     }
   ]
 }

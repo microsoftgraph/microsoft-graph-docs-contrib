@@ -28,6 +28,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
+|goals|[goals](../resources/goals.md) collection|A root collection for Goals Export Jobs.|
 |learningProviders|[learningProvider](../resources/learningprovider.md) collection|A collection of learning providers.|
 
 ## JSON representation

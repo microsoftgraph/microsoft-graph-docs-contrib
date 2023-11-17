@@ -3,7 +3,7 @@ title: "goalsExportJob resource type"
 description: "Represents an entity that holds the properties of an exportJob for Viva Goals."
 author: "ishatyagiit"
 ms.localizationpriority: medium
-ms.prod: "viva"
+ms.prod: "employee-goals"
 doc_type: resourcePageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an entity that holds the properties of an exportJob for Viva Goals. 
-
+Represents the export job for programmatically downloading a specified Viva Goals Explorer view. To learn more about Explorer views, see [Save and export](/viva/goals/explorer#save-and-export).
 
 Inherits from [longRunningOperation](../resources/longrunningoperation.md).
 
@@ -32,7 +32,7 @@ Inherits from [longRunningOperation](../resources/longrunningoperation.md).
 |createdDateTime|DateTimeOffset|The start time of the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014, is `2014-01-01T00:00:00Z`. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
 |expirationDateTime|DateTimeOffset|Date and time of expiry of the result of the operation.|
 |explorerViewId|String|The unique identifier of the explorer view to be exported.|
-|goalsOrganizationId|String|The unique identifier of the goals organization.|
+|goalsOrganizationId|String|The unique identifier of the [viva goals organization](/viva/goals/understand-orgs-and-teams#organizations-in-viva-goals).|
 |id|String|The unique identifier for the operation. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
 |resourceLocation|String|URI of the resource on which the operation is performed. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
 |status|longRunningOperationStatus|The status of the operation. Inherited from [longRunningOperation](../resources/longrunningoperation.md). The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`.|
