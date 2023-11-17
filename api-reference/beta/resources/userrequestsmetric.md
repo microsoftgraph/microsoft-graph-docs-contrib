@@ -1,6 +1,6 @@
 ---
 title: "userRequestsMetric resource type"
-description: "Represents insights on all user requests for apps registered in your tenant configured for Microsoft Entra External ID for customers, over a specific period (daily or monthly)."
+description: "Represents daily and monthly insights on all user requests for apps registered in your tenant that is configured for Microsoft Entra External ID for customers."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents insights on all user requests for apps registered in your tenant configured for Microsoft Entra External ID for customers, over a specific period (daily or monthly). This includes all requests such as authentication requests, sign-up requests, and MFA requests. The user requests are aggregated without no filtering. 
+Represents daily and monthly insights on all user requests for apps registered in your tenant that is configured for Microsoft Entra External ID for customers, including all requests such as authentication requests, sign-up requests, and MFA requests. The user requests are aggregated without no filtering. 
 
 >**Note:** The value returned might not reflect the most updated numbers.
 
