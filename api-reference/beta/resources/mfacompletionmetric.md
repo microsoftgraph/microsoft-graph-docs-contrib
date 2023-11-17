@@ -20,8 +20,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List daily mfaCompletions](../api/dailyuserinsightmetricsroot-list-mfacompletions.md)|[mfaCompletionMetric](../resources/mfacompletionmetric.md) collection.|Get a list of daily [MFA completions](../resources/mfacompletionmetric.md) on apps registered in your tenant configured for Microsoft Entra External ID for customers.|
-|[List monthly mfaCompletions](../api/monthlyuserinsightmetricsroot-list-mfacompletions.md)|[mfaCompletionMetric](../resources/mfacompletionmetric.md) collection.|Get a list of monthly [MFA completions](../resources/mfacompletionmetric.md) on apps registered in your tenant configured for Microsoft Entra External ID for customers.|
+|[List daily mfaCompletions](../api/dailyuserinsightmetricsroot-list-mfacompletions.md)|[mfaCompletionMetric](../resources/mfacompletionmetric.md) collection|Get a list of daily [MFA completions](../resources/mfacompletionmetric.md) on apps registered in your tenant configured for Microsoft Entra External ID for customers.|
+|[List monthly mfaCompletions](../api/monthlyuserinsightmetricsroot-list-mfacompletions.md)|[mfaCompletionMetric](../resources/mfacompletionmetric.md) collection|Get a list of monthly [MFA completions](../resources/mfacompletionmetric.md) on apps registered in your tenant configured for Microsoft Entra External ID for customers.|
 
 ## Properties
 |Property|Type|Description|
