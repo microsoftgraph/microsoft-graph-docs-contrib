@@ -3,42 +3,6 @@
     {
       "ChangeList": [
         {
-          "Id": "400279c6-8c1b-4a1d-92ff-c49987587f79",
-          "ApiChange": "Method",
-          "ChangedApiName": "delta",
-          "ChangeType": "Addition",
-          "Description": "Added the **delta** method to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
-          "Target": "site"
-        }
-      ],
-      "Id": "400279c6-8c1b-4a1d-92ff-c49987587f79",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2023-11-08T07:48:06.8842819Z",
-      "WorkloadArea": "Sites and lists",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "8fefbf46-97c3-43c7-96a9-56c1f4c24052",
-          "ApiChange": "Method",
-          "ChangedApiName": "delta",
-          "ChangeType": "Addition",
-          "Description": "Added the **delta** method to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-1.0) resource.",
-          "Target": "site"
-        }
-      ],
-      "Id": "8fefbf46-97c3-43c7-96a9-56c1f4c24052",
-      "Cloud": "Prod",
-      "Version": "v1.0",
-      "CreatedDateTime": "2023-11-08T07:48:06.8842819Z",
-      "WorkloadArea": "Sites and lists",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
           "Id": "e5f82c50-922a-40d0-b4ca-c2f248ad4516",
           "ApiChange": "Resource",
           "ChangedApiName": "itemRetentionLabel",

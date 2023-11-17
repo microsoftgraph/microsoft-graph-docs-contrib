@@ -1,5 +1,5 @@
 ---
-title: "List filteringPolicyLinks"
+title: "List filteringPolicyLink objects"
 description: "Get a list of the filteringPolicyLink objects and their properties."
 author: Moti-ba
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 
-# List filteringPolicyLinks
+# List filteringPolicyLink objects
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
