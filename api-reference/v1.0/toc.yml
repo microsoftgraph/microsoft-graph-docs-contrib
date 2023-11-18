@@ -9011,6 +9011,32 @@ items:
                     href: api/presence-clearuserpreferredpresence.md
                   - name: Set user status message
                     href: api/presence-setstatusmessage.md
+              - name: Virtual event
+                href: resources/virtualevent.md
+                items:
+                  - name: Webinar
+                    href: resources/virtualeventwebinar.md
+                    items:
+                      - name: Get
+                        href: api/virtualeventwebinar-get.md
+                      - name: List by user role
+                        href: api/virtualeventwebinar-getbyuserrole.md
+                      - name: List by user ID/role
+                        href: api/virtualeventwebinar-getbyuseridandrole.md
+                      - name: Registration
+                        href: resources/virtualeventregistration.md
+                        items:
+                          - name: List
+                            href: api/virtualeventwebinar-list-registrations.md
+                          - name: Get
+                            href: api/virtualeventregistration-get.md
+                  - name: Session
+                    href: resources/virtualeventsession.md
+                    items:
+                      - name: List
+                        href: api/virtualevent-list-sessions.md
+                      - name: Get
+                        href: api/virtualeventsession-get.md
           - name: Employee learning
             displayName: Viva Learning
             items:

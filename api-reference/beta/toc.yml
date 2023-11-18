@@ -17879,7 +17879,7 @@ items:
                     href: api/presence-clearuserpreferredpresence.md
                   - name: Set user status message
                     href: api/presence-setstatusmessage.md
-              - name: Virtual event (preview)
+              - name: Virtual event
                 href: resources/virtualevent.md
                 items:
                   - name: Webinar
