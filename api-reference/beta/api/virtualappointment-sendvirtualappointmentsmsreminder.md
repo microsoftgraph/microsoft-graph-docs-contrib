@@ -64,7 +64,6 @@ If successful, this method returns a `202 Accepted` response code.
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_virtualappointment_getVirtualAppointmentJoinWebUrl",
@@ -79,7 +78,6 @@ POST https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRh
 “remindBeforeTimeInMinutesType”: "mins15"
 }
 
----
 
 ### Response
 
