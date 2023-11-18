@@ -16,13 +16,16 @@ You can use the Planner API in Microsoft Graph to create tasks and assign them t
 Before you get started with the Planner API, it's helpful to understand how the main objects relate to each other and to Microsoft 365 groups.
 
 ## Plan containers
-In Microsoft Planner, plans are always contained in another resource. The containing resource determines the authorization rules of the plan and all the tasks in it, and the lifecycle of the plan. For example, for plans contained in Microsoft 365 groups, group members are able to create, edit, resolve, and delete tasks in the plan. Group members can also change some plan-level properties, such as the name of the plan or label names. Additionally, when the group is deleted, all the plans in the group are automatically deleted. Conversely if a group is restored, then all the plans are automatically restored.
+In Microsoft Planner, plans are always contained in another resource. The containing resource, [plannerPlanContainer](plannerplancontainer.md), determines the authorization rules of the plan and all the tasks in it, and the lifecycle of the plan. For example, you can create a plan contained by a Microsoft 365 [group](group.md), [roster](plannerroster.md), [driveItem](driveitem.md), or [user](user.md).
 
 The most common type of container is a group.
 
 ### Container type: Microsoft 365 groups
 
 Plans are commonly contained in groups in the Planner API.
+
+ Group members are able to create, edit, resolve, and delete tasks in the plan. Group members can also change some plan-level properties, such as the name of the plan or label names. Additionally, when the group is deleted, all the plans in the group are automatically deleted. Conversely if a group is restored, then all the plans are automatically restored.
+
 To [get the plans owned by a group](../api/plannergroup-list-plans.md), make the following HTTP request.
 
 ``` http
@@ -36,15 +39,15 @@ When you [create a new plan](../api/planner-post-plans.md), set the **container*
 
 ### Container type: User
 
-Plans that are created for a single user are automatically deleted when the user is deleted.
+The user container type supports personal plans, where the user is the only user tracking their individual tasks. This provides the flexibility for users to share or collaborate on their personal plans. Plans that are created for a single user are automatically deleted when the user is deleted.
 
-When you [create a new plan](../api/planner-post-plans.md), set the **container** property on a plan object with the `type` value set to `user` in order to create the plan in the user's container.
+To [create a new plan](../api/planner-post-plans.md) in a user's container, set the **container** property on a [plan](plannerplan.md) object with **type** being `user`.
 
 ```json
 {
     "container": {
         "id": "00000000-0000-0000-0000-000000000000",
-        "type", "user"
+        "type": "user"
     }
 }
 ```
@@ -58,6 +61,8 @@ Alternatively, you can specify the URL for a user.
     }
 }
 ```
+
+Users can upgrade their personal plans into group-based plans by [moving](../api/plannerplan-movetocontainer.md) the plan from the user container to a group container, changing the type of the container for the plan from `user` to `group`. 
 
 ## Plans
 
