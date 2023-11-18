@@ -47,7 +47,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070","452184ea-a358-4a07-92b4-dce44601a612"],
+  "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070","28992cce-fac0-4950-a836-5a524ded8599"],
   "name": "create_educationcategory_from_educationclass"
 }-->
 ```http

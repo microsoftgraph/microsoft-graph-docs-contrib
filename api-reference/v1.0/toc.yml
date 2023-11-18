@@ -4999,7 +4999,7 @@ items:
               - name: Update grading category
                 href: api/educationgradingcategory-update.md
               - name: Delete grading category
-                href: educationassignment-delete-gradingcategory
+                href: educationassignment-delete-gradingcategory.md
           - name: Rubric
             href: resources/educationrubric.md
             items:
