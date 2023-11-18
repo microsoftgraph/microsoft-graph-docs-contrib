@@ -48,7 +48,7 @@ POST /users/{userId}/onlineMeetings/{onlineMeetingId}/sendVirtualAppointmentSms
 
 ## Request body
 
-In the request body, supply a JSON object with the following parameters:
+In the request body, supply a JSON object with the following parameters.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
@@ -65,7 +65,6 @@ If successful, this method returns a `202 Accepted` response code.
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_virtualappointment_getVirtualAppointmentJoinWebUrl",
@@ -80,7 +79,6 @@ POST https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRh
 “virtualAppointmentSmsType”: “confirmation”
 }
 
----
 
 ### Response
 
