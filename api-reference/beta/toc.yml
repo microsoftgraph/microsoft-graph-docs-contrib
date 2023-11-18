@@ -18322,7 +18322,6 @@ items:
                   - name: Set user status message
                     href: api/presence-setstatusmessage.md
               - name: Virtual event (preview)
-                href: resources/virtualevent.md
                 items:
                   - name: Webinar
                     href: resources/virtualeventwebinar.md
@@ -18331,7 +18330,7 @@ items:
                         href: api/virtualeventwebinar-get.md
                       - name: List by user role
                         href: api/virtualeventwebinar-getbyuserrole.md
-                      - name: List by user ID/role
+                      - name: List by user ID and role
                         href: api/virtualeventwebinar-getbyuseridandrole.md
                       - name: Registration
                         href: resources/virtualeventregistration.md
