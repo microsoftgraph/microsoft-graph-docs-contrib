@@ -16,7 +16,7 @@ You can use the Planner API in Microsoft Graph to create tasks and assign them t
 Before you get started with the Planner API, it's helpful to understand how the main objects relate to each other and to Microsoft 365 groups.
 
 ## Plan containers
-In Microsoft Planner, plans are always contained in another resource. The containing resource, [plannerPlanContainer](plannerplancontainer.md), determines the authorization rules of the plan and all the tasks in it, and the lifecycle of the plan. For example, you can create a plan contained by a Microsoft 365 [group](group.md), [roster](plannerroster.md), [driveItem](driveitem.md), or [user](user.md).
+In Microsoft Planner, plans are always contained in another resource. The containing resource, [plannerPlanContainer](plannerplancontainer.md), determines the authorization rules of the plan and all the tasks in it, and the lifecycle of the plan. You can create a plan in a container of one of the following types: [driveItem](driveitem.md), Microsoft 365 [group](group.md), Planner project, [roster](plannerroster.md), or [user](user.md).
 
 The most common type of container is a group.
 
@@ -24,7 +24,7 @@ The most common type of container is a group.
 
 Plans are commonly contained in groups in the Planner API.
 
- Group members are able to create, edit, resolve, and delete tasks in the plan. Group members can also change some plan-level properties, such as the name of the plan or label names. Additionally, when the group is deleted, all the plans in the group are automatically deleted. Conversely if a group is restored, then all the plans are automatically restored.
+Group members are able to create, edit, resolve, and delete tasks in the plan. Group members can also change some plan-level properties, such as the name of the plan or label names. Additionally, when the group is deleted, all the plans in the group are automatically deleted. Conversely if a group is restored, then all the plans are automatically restored.
 
 To [get the plans owned by a group](../api/plannergroup-list-plans.md), make the following HTTP request.
 
