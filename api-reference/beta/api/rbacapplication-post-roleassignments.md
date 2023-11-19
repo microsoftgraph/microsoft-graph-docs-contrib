@@ -3,6 +3,7 @@ title: "Create unifiedRoleAssignment"
 description: "Create a new unifiedRoleAssignment object."
 ms.localizationpriority: medium
 author: "DougKirschner"
+ms.reviewer: msodsrbac
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
@@ -24,7 +25,7 @@ Depending on the RBAC provider and the permission type (delegated or application
 <a name='for-the-directory-azure-ad-provider'></a>
 
 ### For the directory (Microsoft Entra ID) provider
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  RoleManagement.ReadWrite.Directory   |
@@ -32,7 +33,7 @@ Depending on the RBAC provider and the permission type (delegated or application
 |Application | RoleManagement.ReadWrite.Directory |
 
 ### For the entitlement management provider
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  EntitlementManagement.ReadWrite.All   |
@@ -40,7 +41,7 @@ Depending on the RBAC provider and the permission type (delegated or application
 |Application | Not supported. |
 
 ### For an Exchange Online provider
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  RoleManagement.ReadWrite.Exchange   |

@@ -128,6 +128,24 @@
     },
     {
       "ChangeList": [
+          {
+              "ApiChange": "Method",
+              "ChangedApiName": "excuse",
+              "ChangeType": "Addition",
+              "Description": "Added the [excuse](https://learn.microsoft.com/en-us/graph/api/educationsubmission-excuse?view=graph-rest-beta) method to the [educationSubmission](https://learn.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-beta) resource.",
+              "Id": "79a508b6-2af7-4efe-9253-efc0e104ffaf",
+              "Target": "educationSubmission"
+          }
+      ],
+      "Cloud": "Prod",
+      "CreatedDateTime": "2023-11-13T03:14:22.628566Z",
+      "Id": "79a508b6-2af7-4efe-9253-efc0e104ffaf",
+      "Version": "beta",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
         {
           "Id": "f42a2acd-7e06-4b84-abdd-5df825fc2845",
           "ApiChange": "Permission",
@@ -148,6 +166,32 @@
       "Id": "f2ab8d6b-0439-418e-aa8a-7ac6267031e0",
       "Cloud": "prd",
       "Version": "v1.0",
+      "CreatedDateTime": "2023-08-23T00:00:00",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8ecf649b-9be2-4d02-b1cd-fc6f53bca6a6",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduAssignments.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `EduAssignments.ReadWrite.All` to the [Create educationAssignment](https://learn.microsoft.com/en-us/graph/api/educationclass-post-assignments) method of the [educationAssignment](https://learn.microsoft.com/en-us/graph/api/resources/educationassignment) resource.",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "8ecf649b-9be2-4d02-b1cd-fc6f53bca6a6",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduAssignments.ReadWriteBasic.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `EduAssignments.ReadWriteBasic.All` to the [Create educationAssignment](https://learn.microsoft.com/en-us/graph/api/educationclass-post-assignments) method of the [educationAssignment](https://learn.microsoft.com/en-us/graph/api/resources/educationassignment) resource.",
+          "Target": "educationAssignment"
+        }
+      ],
+      "Id": "8ecf649b-9be2-4d02-b1cd-fc6f53bca6a6",
+      "Cloud": "prd",
+      "Version": "beta",
       "CreatedDateTime": "2023-08-23T00:00:00",
       "WorkloadArea": "Education",
       "SubArea": ""

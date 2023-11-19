@@ -17,13 +17,10 @@ Create a new externalConnection object.
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not applicable|
-|Application| ExternalConnection.ReadWrite.OwnedBy, ExternalConnection.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "externalconnectors_external_post_connections" } -->
+[!INCLUDE [permissions-table](../includes/permissions/externalconnectors-external-post-connections-permissions.md)]
 
 ## HTTP request
 
@@ -58,6 +55,8 @@ You can specify the following properties when creating an [externalConnection](.
 ## Response
 
 If successful, this method returns a `201 Created` response code and an [externalConnection](../resources/externalconnectors-externalconnection.md) object in the response body.
+
+>**Note:** When you create an external connection with a broken adaptive card for the result layout, the first call will fail with a `503 Service Unavailable`. When you try the call again, the second call will fail with a `409 Conflict` response that states that a connection with the same name already exists. This happens because the connection was created even though the first call failed with `503 Service Unavailable`. For more details, see [Known issues](https://developer.microsoft.com/en-us/graph/known-issues/?search=19908).
 
 ## Examples
 

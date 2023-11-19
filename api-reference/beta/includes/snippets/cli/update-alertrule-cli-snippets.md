@@ -13,6 +13,15 @@ mgc-beta device-management monitoring alert-rules patch --alert-rule-id {alertRu
       "operator": "greaterOrEqual",\
       "target": 90\
   },\
+  "conditions": [\
+      {\
+        "relationshipType": "or",\
+        "conditionCategory": "azureNetworkConnectionCheckFailures",\
+        "aggregation": "count",\
+        "operator": "greaterOrEqual",\
+        "thresholdValue": "90"\
+      }\
+  ],\
   "notificationChannels": [\
       {\
         "notificationChannelType": "portal",\

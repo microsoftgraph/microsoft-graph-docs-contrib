@@ -6,10 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-await graph_client.applications.by_application_id('application-id').token_lifetime_policies.by_token_lifetime_policie_id('tokenLifetimePolicy-id').ref.delete()
+await graph_client.applications.by_application_id('application-id').token_lifetime_policies.by_token_lifetime_policy_id('tokenLifetimePolicy-id').ref.delete()
 
 
 ```

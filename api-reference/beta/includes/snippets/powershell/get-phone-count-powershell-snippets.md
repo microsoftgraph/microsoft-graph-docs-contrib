@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
-Get-MgBetaContact -Search '"displayName:wa"' -CountVariable CountVar -ConsistencyLevel eventual 
+Get-MgBetaContact -Search '"displayName:wa"' -CountVariable CountVar  -ConsistencyLevel eventual 
 
 
 ```
