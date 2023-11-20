@@ -20,7 +20,7 @@ Inherits from [awsSecurityToolAdministrationFinding](../resources/awssecuritytoo
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List securityToolAwsResourceAdministratorFindings](../api/securitytoolawsresourceadministratorfinding-list.md)|[securityToolAwsResourceAdministratorFinding](../resources/securitytoolawsresourceadministratorfinding.md) collection|Get a list of the [securityToolAwsResourceAdministratorFinding](../resources/securitytoolawsresourceadministratorfinding.md) objects and their properties.|
+|[List securityToolAwsResourceAdministratorFinding objects](../api/securitytoolawsresourceadministratorfinding-list.md)|[securityToolAwsResourceAdministratorFinding](../resources/securitytoolawsresourceadministratorfinding.md) collection|Get a list of the [securityToolAwsResourceAdministratorFinding](../resources/securitytoolawsresourceadministratorfinding.md) objects and their properties.|
 |[Get securityToolAwsResourceAdministratorFinding](../api/securitytoolawsresourceadministratorfinding-get.md)|[securityToolAwsResourceAdministratorFinding](../resources/securitytoolawsresourceadministratorfinding.md)|Read the properties and relationships of a [securityToolAwsResourceAdministratorFinding](../resources/securitytoolawsresourceadministratorfinding.md) object.|
 
 ## Properties

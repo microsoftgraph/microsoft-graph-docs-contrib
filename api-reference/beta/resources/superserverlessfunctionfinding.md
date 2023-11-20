@@ -21,7 +21,7 @@ Inherits from [identityFinding](../resources/identityfinding.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List superServerlessFunctionFindings](../api/superserverlessfunctionfinding-list.md)|[superServerlessFunctionFinding](../resources/superserverlessfunctionfinding.md) collection|Get a list of the [superServerlessFunctionFinding](../resources/superserverlessfunctionfinding.md) objects and their properties.|
+|[List superServerlessFunctionFinding objects](../api/superserverlessfunctionfinding-list.md)|[superServerlessFunctionFinding](../resources/superserverlessfunctionfinding.md) collection|Get a list of the [superServerlessFunctionFinding](../resources/superserverlessfunctionfinding.md) objects and their properties.|
 |[Get superServerlessFunctionFinding](../api/superserverlessfunctionfinding-get.md)|[superServerlessFunctionFinding](../resources/superserverlessfunctionfinding.md)|Read the properties and relationships of a [superServerlessFunctionFinding](../resources/superserverlessfunctionfinding.md) object.|
 |[aggregatedSummary](../api/superserverlessfunctionfinding-aggregatedsummary.md)|[permissionsAnalyticsAggregatedIdentitySummary](../resources/permissionsanalyticsaggregatedidentitysummary.md)|Return the total number of an identity type and the total number of a specific finding for that identity in an authorization system.|
 

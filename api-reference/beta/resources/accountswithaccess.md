@@ -15,11 +15,13 @@ Namespace: microsoft.graph
 
 Contains information on external AWS accounts that have access to a storage bucket.
 
-This is an abstract type.
+This is an abstract type from which the following types inherit.
+
+- [allAccountsWithAccess](../resources/allaccountswithaccess.md)
+- [enumeratedAccountsWithAccess](../resources/enumeratedaccountswithaccess.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.

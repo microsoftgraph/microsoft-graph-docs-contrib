@@ -20,7 +20,7 @@ Inherits from [finding](../resources/finding.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List awsIdentityAccessManagementKeyAgeFindings](../api/awsidentityaccessmanagementkeyagefinding-list.md)|[awsIdentityAccessManagementKeyAgeFinding](../resources/awsidentityaccessmanagementkeyagefinding.md) collection|Get a list of the [awsIdentityAccessManagementKeyAgeFinding](../resources/awsidentityaccessmanagementkeyagefinding.md) objects and their properties.|
+|[List awsIdentityAccessManagementKeyAgeFinding objects](../api/awsidentityaccessmanagementkeyagefinding-list.md)|[awsIdentityAccessManagementKeyAgeFinding](../resources/awsidentityaccessmanagementkeyagefinding.md) collection|Get a list of the [awsIdentityAccessManagementKeyAgeFinding](../resources/awsidentityaccessmanagementkeyagefinding.md) objects and their properties.|
 |[Get awsIdentityAccessManagementKeyAgeFinding](../api/awsidentityaccessmanagementkeyagefinding-get.md)|[awsIdentityAccessManagementKeyAgeFinding](../resources/awsidentityaccessmanagementkeyagefinding.md)|Read the properties and relationships of an [awsIdentityAccessManagementKeyAgeFinding](../resources/awsidentityaccessmanagementkeyagefinding.md) object.|
 |[Get awsIdentityAccessManagementKeyAgeFinding-aggregatedSummary](../api/awsidentityaccessmanagementkeyagefinding-aggregatedSummary.md)|[awsIdentityAccessManagementKeyAgeFinding](../resources/awsidentityaccessmanagementkeyagefinding.md)|Return the total number of an[awsIdentityAccessManagementKeyAgeFinding](../resources/awsidentityaccessmanagementkeyagefinding.md)and the total number in a specified authorization system.|
 

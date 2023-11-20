@@ -18,8 +18,7 @@ Contains information on external AWS accounts that have access to a storage buck
 Inherits from [accountsWithAccess](../resources/accountswithaccess.md).
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.

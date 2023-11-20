@@ -18,8 +18,7 @@ Contains information on specificied external AWS accounts that have access to a 
 Inherits from [accountsWithAccess](../resources/accountswithaccess.md).
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 |Relationship|Type|Description|

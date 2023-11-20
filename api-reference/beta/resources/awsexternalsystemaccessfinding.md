@@ -20,7 +20,7 @@ Inherits from [finding](../resources/finding.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List awsExternalSystemAccessFindings](../api/awsexternalsystemaccessfinding-list.md)|[awsExternalSystemAccessFinding](../resources/awsexternalsystemaccessfinding.md) collection|Get a list of the [awsExternalSystemAccessFinding](../resources/awsexternalsystemaccessfinding.md) objects and their properties.|
+|[List awsExternalSystemAccessFinding objects](../api/awsexternalsystemaccessfinding-list.md)|[awsExternalSystemAccessFinding](../resources/awsexternalsystemaccessfinding.md) collection|Get a list of the [awsExternalSystemAccessFinding](../resources/awsexternalsystemaccessfinding.md) objects and their properties.|
 |[Get awsExternalSystemAccessFinding](../api/awsexternalsystemaccessfinding-get.md)|[awsExternalSystemAccessFinding](../resources/awsexternalsystemaccessfinding.md)|Read the properties and relationships of an [awsExternalSystemAccessFinding](../resources/awsexternalsystemaccessfinding.md) object.|
 
 ## Properties
