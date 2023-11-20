@@ -80,7 +80,7 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-type: application/json
+<!--Content-type: application/json
 
 {
   "@odata.type": "#microsoft.graph.permission",
@@ -94,6 +94,6 @@ Content-type: application/json
       "email": "jason@gmail.com"
     }
   }
-}
+} -->
 ```
 
