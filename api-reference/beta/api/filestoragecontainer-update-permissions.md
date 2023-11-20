@@ -48,7 +48,7 @@ The following property on these permission types can be modified.
 
 |Permission Type|Property|Type|Description|
 |:---|:---|:---|:---|
-|User|roles|Collection(String)|Supported roles are reader, writer, manager, and owner. Required.|
+|User|roles|Collection of String|Supported roles are reader, writer, manager, and owner. Required.|
 
 ## Response
 
