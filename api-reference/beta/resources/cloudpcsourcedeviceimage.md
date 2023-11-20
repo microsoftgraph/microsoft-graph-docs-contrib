@@ -19,10 +19,11 @@ The source image associated with your Azure subscription.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The ID of the source image.|
-|displayName|String|The display name for the source image.|
-|subscriptionId|String|The ID of subscription that hosts the source image.|
-|subscriptionDisplayName|String|The display name of subscription that hosts the source image.|
+|id|String|The unique identifier (ID) of the source image.  (Starting from January 31, 2024, this property will no longer be supported and will be marked as deprecated. Please use resourceId instead.)|
+|resourceId|String| The fully qualified resource Unique Identifier (ID) of the source image in Azure. The format is "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}". Read-Only.|
+|displayName|String|The display name for the source image. Read-Only.|
+|subscriptionId|String|The unique identifier (ID) of subscription that hosts the source image. Read-Only.|
+|subscriptionDisplayName|String|The display name of subscription that hosts the source image. Read-Only.|
 
 ## Relationships
 
@@ -41,6 +42,7 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.cloudPcSourceDeviceImage",
   "id": "String (identifier)",
+  "resourceId": "String",
   "displayName": "String",
   "subscriptionId": "String",
   "subscriptionDisplayName": "String"

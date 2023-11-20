@@ -30,18 +30,18 @@ Represents the image resource on a Cloud PC.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name of this gallery image. For example: Windows 11 Enterprise + Microsoft 365 Apps 22H2. Read-Only|
-|expirationDate|Date|The date the image became unavailable.|
-|id|String|Unique identifier for the image resource on the Cloud PC. Read-only.|
-|lastModifiedDateTime|DateTimeOffset|The data and time that the image was last modified. The time is shown in ISO 8601 format and  Coordinated Universal Time (UTC) time. For example, midnight UTC on Jan 1, 2014 appears as `2014-01-01T00:00:00Z`.|
+|displayName|String|The display name of this gallery image. For example: Windows 11 Enterprise + Microsoft 365 Apps 22H2. Read-Only.|
+|expirationDate|Date|The date the image became unavailable. Read-Only.|
+|id|String|The unique identifier (ID) of the image resource on Cloud PC. Read-Only.|
+|lastModifiedDateTime|DateTimeOffset|The data and time that the image was last modified. The time is shown in ISO 8601 format and  Coordinated Universal Time (UTC) time. For example, midnight UTC on Jan 1, 2014 appears as `2014-01-01T00:00:00Z`. Read-Only.|
 |operatingSystem|String|The operating system of the image. For example, `Windows 10 Enterprise`.|
-|osBuildNumber|String|The OS build version of the image. For example, `1909`.|
-|osStatus|[cloudPcDeviceImageOsStatus](#cloudpcdeviceimageosstatus-values)|The OS status of this image. Possible values are: `supported`, `supportedWithWarning`, `unknown`, `unknownFutureValue`.|
-|sourceImageResourceId|String|The ID of the source image resource on Azure. Required format: `/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}`.|
-|status|[cloudPcDeviceImageStatus](#cloudpcdeviceimagestatus-values)|The status of the image on Cloud PC. Possible values are: `pending`, `ready`, `failed`.|
-|statusDetails|cloudPcDeviceImageStatusDetails|The details of the status of the image that indicates why the upload failed, if applicable. Possible values are: `internalServerError`, `sourceImageNotFound`, `osVersionNotSupported`, `sourceImageInvalid`, `sourceImageNotGeneralized`, `vmAlreadyAzureAdJoined`, `paidSourceImageNotSupport`, `sourceImageNotSupportCustomizeVMName`,`sourceImageSizeExceedsLimitation`. Read-Only. (Starting from January 31, 2024, this property will no longer be supported and will be marked as deprecated. Please use errorCode instead.)|
+|osBuildNumber|String|The OS build version of the image. For example, `1909`. Read-Only.|
+|osStatus|[cloudPcDeviceImageOsStatus](#cloudpcdeviceimageosstatus-values)|The OS status of this image. Possible values are: `supported`, `supportedWithWarning`, `unknown`, `unknownFutureValue`. Default value is unknown. Read-Only.|
+|sourceImageResourceId|String|The unique identifier (ID) of the source image resource on Azure. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}". Read-Only.|
+|status|[cloudPcDeviceImageStatus](#cloudpcdeviceimagestatus-values)|The status of the image on Cloud PC. Possible values are: `pending`, `ready`, `failed`. Read-Only.|
+|statusDetails|cloudPcDeviceImageStatusDetails|The details of the status of the image that indicates why the upload failed, if applicable. Possible values are: `internalServerError`, `sourceImageNotFound`, `osVersionNotSupported`, `sourceImageInvalid`, `sourceImageNotGeneralized`, `unknownFutureValue`, `vmAlreadyAzureAdJoined`, `paidSourceImageNotSupport`, `sourceImageNotSupportCustomizeVMName`,`sourceImageSizeExceedsLimitation`. Read-Only. (Starting from January 31, 2024, this property will no longer be supported and will be marked as deprecated. Please use errorCode instead.)|
 |errorCode|cloudPcDeviceImageErrorCode|The error code of the image's status, which indicates why the upload failed if applicable. Possible values include: `internalServerError`, `sourceImageNotFound`, `osVersionNotSupported`, `sourceImageInvalid`, `sourceImageNotGeneralized`, `vmAlreadyAzureAdJoined`, `paidSourceImageNotSupport`, `sourceImageNotSupportCustomizeVMName`,`sourceImageSizeExceedsLimitation`. Read-Only.|
-|version|String|The image version. For example, `0.0.1` and `1.5.13`.|
+|version|String|The image version. For example, `0.0.1` and `1.5.13`. Read-Only.|
 
 ### cloudPcDeviceImageStatus values
 
@@ -50,6 +50,7 @@ Represents the image resource on a Cloud PC.
 |pending|The image upload is in progress.|
 |ready|The image is ready for use on Cloud PCs.|
 |failed|The image couldn’t be uploaded. |
+|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ### cloudPcDeviceImageStatusDetails values
 

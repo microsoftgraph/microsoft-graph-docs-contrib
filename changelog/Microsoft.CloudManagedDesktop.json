@@ -4,27 +4,27 @@
             "ChangeList": [
                 {
                     "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
-                    "ApiChange": "Member",
-                    "ChangedApiName": "cloudPcDeviceImageOsStatus",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "publisherName",
                     "ChangeType": "Addition",
-                    "Description": "Added the `unknown` member to the **cloudPcDeviceImageOsStatus** enumeration.",
-                    "Target": "cloudPcDeviceImageOsStatus"
+                    "Description": "Added the **publisherName** property to the [cloudPcGalleryImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcGalleryImage?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcGalleryImage"
                 },
                 {
                     "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
                     "ApiChange": "Property",
-                    "ChangedApiName": "errorCode",
+                    "ChangedApiName": "offerName",
                     "ChangeType": "Addition",
-                    "Description": "Added the **errorCode** property to the [cloudPcDeviceImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta) resource.",
-                    "Target": "cloudPcDeviceImage"
+                    "Description": "Added the **offerName** property to the [cloudPcGalleryImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcGalleryImage?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcGalleryImage"
                 },
                 {
                     "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
-                    "ApiChange": "Enum type",
-                    "ChangedApiName": "cloudPcDeviceImageErrorCode",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "skuName",
                     "ChangeType": "Addition",
-                    "Description": "Added the **cloudPcDeviceImageErrorCode** enumeration type.",
-                    "Target": "cloudPcDeviceImage"
+                    "Description": "Added the **skuName** property to the [cloudPcGalleryImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcGalleryImage?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcGalleryImage"
                 },
                 {
                     "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
@@ -56,33 +56,41 @@
                     "ChangedApiName": "cloudPcDeviceImageStatusDetails",
                     "ChangeType": "Addition",
                     "Description": "Added the `vmAlreadyAzureAdJoined` member to the **cloudPcDeviceImageStatusDetails** enumeration.",
-                    "Target": "sourceImageSizeExceedsLimitation"
+                    "Target": "cloudPcDeviceImageStatusDetails"
+                },
+                {
+                    "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "cloudPcDeviceImageStatusDetails",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `sourceImageSizeExceedsLimitation` member to the **cloudPcDeviceImageStatusDetails** enumeration.",
+                    "Target": "cloudPcDeviceImageStatusDetails"
                 },
                 {
                     "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
                     "ApiChange": "Property",
-                    "ChangedApiName": "publisherName",
+                    "ChangedApiName": "unknownFutureValue",
                     "ChangeType": "Addition",
-                    "Description": "Added the **publisherName** property to the [cloudPcGalleryImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcGalleryImage?view=graph-rest-beta) resource.",
-                    "Target": "cloudPcGalleryImage"
+                    "Description": "Added the **unknownFutureValue** property to the **cloudPcDeviceImageStatus** enumeration.",
+                    "Target": "cloudPcDeviceImageStatus"
                 },
                 {
                     "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
                     "ApiChange": "Property",
-                    "ChangedApiName": "offerName",
+                    "ChangedApiName": "errorCode",
                     "ChangeType": "Addition",
-                    "Description": "Added the **offerName** property to the [cloudPcGalleryImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcGalleryImage?view=graph-rest-beta) resource.",
-                    "Target": "cloudPcGalleryImage"
+                    "Description": "Added the **errorCode** property to the [cloudPcDeviceImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcDeviceImage"
                 },
                 {
                     "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "skuName",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "cloudPcDeviceImageErrorCode",
                     "ChangeType": "Addition",
-                    "Description": "Added the **skuName** property to the [cloudPcGalleryImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcGalleryImage?view=graph-rest-beta) resource.",
-                    "Target": "cloudPcGalleryImage"
+                    "Description": "Added the **cloudPcDeviceImageErrorCode** enumeration type.",
+                    "Target": "cloudPcDeviceImage"
                 },
-                {
+                {done
                     "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
                     "ApiChange": "Member",
                     "ChangedApiName": "cloudPcDeviceImageStatus",
@@ -90,7 +98,15 @@
                     "Description": "Added the `unknown` member to the **cloudPcDeviceImageStatus** enumeration.",
                     "Target": "cloudPcDeviceImageStatus"
                 },
-                {
+                {done
+                    "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "cloudPcDeviceImageOsStatus",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `unknown` member to the **cloudPcDeviceImageOsStatus** enumeration.",
+                    "Target": "cloudPcDeviceImageOsStatus"
+                },
+                {done
                     "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
                     "ApiChange": "Property",
                     "ChangedApiName": "resourceId",
