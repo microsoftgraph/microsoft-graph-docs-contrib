@@ -17,4 +17,4 @@ jobs:
       with:
         repoToken: ${{ secrets.GITHUB_TOKEN }}
         changeLogDirectory: changelog
-      uses: microsoftgraph/changelog-link-check@v1.0.3
+      uses: microsoftgraph/changelog-link-check@v1.0.5
