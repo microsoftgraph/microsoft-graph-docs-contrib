@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a [goalsExportJo
 |Retry-after  | Duration in seconds. Optional.|
 
 ## Examples
-The following are examples of polling a goalsExportJob for a Viva Goals Explorer view and seeing different responses.
+The following examples show how to poll a **goalsExportJob** for a Viva Goals [Explorer view](/viva/goals/explorer#default-views-in-explorer) and the different responses that are returned.
 
 ### Example 1: Status is `running`
 
