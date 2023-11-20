@@ -1,6 +1,6 @@
 ---
 title: "cloudPcBulkRestart resource type"
-description: "This defines the entity for perform bulk restart action with executeAction API and it inherits from CloudPcBulkAction base type."
+description: "Represents the entity that performs a bulk restart action with executeAction API."
 author: "Guoan-Tang"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This defines the entity for perform bulk restart action with executeAction API and it inherits from CloudPcBulkAction base type.
+Represents the entity that performs a bulk restart action with executeAction API.
 
 Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 

@@ -43,6 +43,8 @@ Use the Cloud PC API to provision and manage virtual desktops for employees in a
 |[Create cloudPcExternalPartnerSetting](../api/virtualendpoint-post-externalpartnersettings.md)|[cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md)|Create a new [cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) object.|
 |[List frontLintServicePlans](../api/virtualendpoint-list-frontlineserviceplans.md) |[cloudPcFrontLineServicePlan](../resources/cloudpcfrontlineserviceplan.md) collection|Get a list of the [cloudPcFrontLineServicePlan](../resources/cloudpcfrontlineserviceplan.md) objects and their properties.|
 |[List sharedUseServicePlans](../api/virtualendpoint-list-shareduseserviceplans.md) (deprecated)|[cloudPcSharedUseServicePlan](../resources/cloudpcshareduseserviceplan.md) collection|List properties and relationships of the [cloudPcSharedUseServicePlan](../resources/cloudpcshareduseserviceplan.md) objects.|
+|[List cloudPcBulkActions](../api/virtualendpoint-list-bulkActions.md)|[cloudPcBulkAction](../resources/cloudpcbulkaction.md) collection|Get a list of the [cloudPcBulkActions](../resources/cloudpcbulkaction.md) objects and their properties.|
+|[Create cloudPcBulkActions](../api/virtualendpoint-list-bulkActions.md)|[cloudPcBulkAction](../resources/cloudpcbulkaction.md)|Create a new cloudPcBulkAction object.|
 
 ## Properties
 
@@ -55,6 +57,7 @@ Use the Cloud PC API to provision and manage virtual desktops for employees in a
 |Relationship|Type|Description|
 |:---|:---|:---|
 |auditEvents|[cloudPcAuditEvent](../resources/cloudpcauditevent.md) collection|Cloud PC audit event.|
+|bulkActions|[cloudPcBulkAction](../resources/cloudpcbulkaction.md) collection|Cloud PC bulk action.|
 |cloudPCs|[cloudPC](../resources/cloudpc.md) collection|Cloud managed virtual desktops.|
 |crossCloudGovernmentOrganizationMapping|[cloudPcCrossCloudGovernmentOrganizationMapping](../resources/cloudpccrosscloudgovernmentorganizationmapping.md)|Cloud PC organization mapping between public and US Government Community Cloud (GCC) organizations.|
 |deviceImages|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) collection|The image resource on Cloud PC.|

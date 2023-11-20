@@ -1,6 +1,6 @@
 ---
 title: "cloudPcBulkResize resource type"
-description: "This defines the entity for perform bulk resize action with executeAction API and it inherits from CloudPcBulkAction base type. When IT admin want to upgrade or downgrade Cloud PC devices can use this API to trigger a resize remote action for Cloud PC. This API need a parameter to indicate the target service plan id to tell service resize this CloudPC to what configuration."
+description: "Represents the entity that performs a bulk resize action with executeAction API."
 author: "Guoan-Tang"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This defines the entity for perform bulk resize action with executeAction API and it inherits from CloudPcBulkAction base type. When IT admin want to upgrade or downgrade Cloud PC devices can use this API to trigger a resize remote action for Cloud PC. This API need a parameter to indicate the target service plan id to tell service resize this CloudPC to what configuration.
+Represents the entity that performs a bulk resize action with executeAction API. When IT admins want to upgrade or downgrade Cloud PC devices, they can use this API to trigger a resize remote action for Cloud PC. This API needs a parameter to indicate the target service plan ID to tell the service to resize this CloudPC to what configuration.
 
 Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 

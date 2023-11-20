@@ -12,10 +12,10 @@ namespace: microsoft.graph
 
 [!include [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-create a new [cloudpcbulkaction](../resources/intune-cloudpcbulkaction.md) object.
+Create a new [cloudpcbulkaction](../resources/intune-cloudpcbulkaction.md) object.
 
 ## permissions
-one of the following permissions is required to call this api. to learn more, including how to choose permissions, see [permissions](/graph/permissions-reference).
+One of the following permissions is required to call this api. to learn more, including how to choose permissions, see [permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
@@ -40,9 +40,9 @@ post /devicemanagement/virtualendpoint/bulkactions
 |content-type|application/json. required.|
 
 ## request body
-in the request body, supply a json representation of the [cloudpcbulkaction](../resources/cloudpcbulkaction.md) object.
+In the request body, supply a json representation of the [cloudpcbulkaction](../resources/cloudpcbulkaction.md) object.
 
-you can specify the following properties when creating a **cloudpcbulkaction**.
+You can specify the following properties when creating a **cloudpcbulkaction**.
 
 |property|type|description|
 |:---|:---|:---|
@@ -51,12 +51,12 @@ you can specify the following properties when creating a **cloudpcbulkaction**.
 
 ## response
 
-if successful, this method returns a `201 created` response code and a [cloudpcbulkaction](../resources/cloudpcbulkaction.md) object in the response body.
+If successful, this method returns a `201 created` response code and a [cloudpcbulkaction](../resources/cloudpcbulkaction.md) object in the response body.
 
 ## examples
 
 ### request
-the following is an example of a request.
+The following is an example of a request.
 <!-- {
   "blocktype": "request",
   "name": "create_cloudpcbulkaction_from_"
@@ -80,7 +80,7 @@ content-type: application/json
 
 
 ### response
-the following is an example of the response
+The following is an example of the response.
 >**note:** the response object shown here might be shortened for readability.
 <!-- {
   "blocktype": "response",
