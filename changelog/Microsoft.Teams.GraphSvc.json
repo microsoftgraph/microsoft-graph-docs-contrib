@@ -7,7 +7,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "removeAllAccessForUser",
           "ChangeType": "Addition",
-          "Description": "Added the [removeAllAccessForUser](https://learn.microsoft.com/en-us/graph/api/chat?view=graph-rest-beta) method to the [chat](https://learn.microsoft.com/en-us/graph/api/chat?view=graph-rest-beta) resource.",
+          "Description": "Added the [removeAllAccessForUser](https://learn.microsoft.com/en-us/graph/api/chat-removeallaccessforuser?view=graph-rest-beta) method to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
           "Target": "chat"
         }
       ],
@@ -16,7 +16,7 @@
       "Version": "beta",
       "CreatedDateTime": "2023-11-08T22:24:27.0548997Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": ""
+      "SubArea": "Messaging"
     },
     {
       "ChangeList": [
@@ -1525,6 +1525,32 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2023-10-04T15:37:11Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5ed0e040-f9ba-4889-9ee0-8b90837f291f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "callRecording",
+          "ChangeType": "Addition",
+          "Description": "Added the [callRecording](https://learn.microsoft.com/en-us/graph/api/resources/callRecording?view=graph-rest-1.0) resource and supported methods.",
+          "Target": "callRecording"
+        },
+        {
+          "Id": "5ed0e040-f9ba-4889-9ee0-8b90837f291f",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "recordings",
+          "ChangeType": "Addition",
+          "Description": "Added the **recordings** relationship to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "5ed0e040-f9ba-4889-9ee0-8b90837f291f",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-11-13T09:44:57.7760824Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
     }

@@ -15,10 +15,10 @@ Retrieve the list of [chatMessageHostedContent](../resources/chatmessagehostedco
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+## Permissions
 
 ### Permissions for channel
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
 |Delegated (work or school account)| ChannelMessage.Read.All |
@@ -26,9 +26,12 @@ The following tables show the least privileged permission or permissions require
 |Application| ChannelMessage.Read.Group*, ChannelMessage.Read.All |
 
 ### Permissions for chat
-
-<!-- { "blockType": "permissions", "name": "chatmessage_list_hostedcontents_2" } -->
-[!INCLUDE [permissions-table](../includes/permissions/chatmessage-list-hostedcontents-2-permissions.md)]
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+|Delegated (work or school account)| Chat.Read, Chat.ReadWrite|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application| Chat.Read.All, Chat.ReadWrite.All|
 
 > **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 

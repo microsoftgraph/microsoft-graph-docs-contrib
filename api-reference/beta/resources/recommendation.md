@@ -60,7 +60,7 @@ Inherits from [recommendationBase](../resources/recommendationbase.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|impactedResources|[impactedResource](../resources/impactedresource.md) collection|The list of directory objects associated with the [recommendation](../resources/recommendation.md). Inherited from [recommendationBase](../resources/recommendationbase.md). <br><br> Supports `$expand`.|
+|impactedResources|[impactedResource](../resources/impactedresource.md) collection|The list of directory objects associated with the [recommendation](../resources/recommendation.md). Inherited from [recommendationBase](../resources/recommendationbase.md).|
 
 ## JSON representation
 The following JSON representation shows the resource type.
