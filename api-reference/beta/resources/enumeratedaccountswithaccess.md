@@ -1,6 +1,6 @@
 ---
 title: "enumeratedAccountsWithAccess resource type"
-description: "Contains information on specificied external AWS accounts that have access to a storage bucket."
+description: "Contains information on specified external AWS accounts that have access to a storage bucket."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains information on specificied external AWS accounts that have access to a storage bucket.
+Contains information on specified external AWS accounts that have access to a storage bucket.
 
 Inherits from [accountsWithAccess](../resources/accountswithaccess.md).
 
