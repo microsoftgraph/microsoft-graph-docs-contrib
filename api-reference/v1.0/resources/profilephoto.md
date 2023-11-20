@@ -19,10 +19,12 @@ Represents a profile photo of a user, group, team, or Outlook contact accessed f
 |:---|:---|:---|
 |[Get profilePhoto](../api/profilephoto-get.md)|[profilePhoto](../resources/profilephoto.md)|Read the properties and relationships of a profile photo object.|
 |[Update profilePhoto](../api/profilephoto-update.md)|[profilePhoto](../resources/profilephoto.md)|Update the properties of a profile photo object.|
-|[Delete profilePhoto](../api/profilephoto-delete.md)|[profilePhoto](../resources/profilephoto.md)|Delete the properties of a profile photo object.|
+|[Delete profilePhoto](../api/profilephoto-delete.md)|[profilePhoto](../resources/profilephoto.md)|Delete the profile photo _of a user or group_.|
 
 > [!NOTE]
-> Managing users' photos using the Microsoft Graph API is currently not supported in Azure AD B2C tenants.
+> - Managing users' photos using the Microsoft Graph API is currently _not supported in Azure AD B2C tenants_.
+> 
+> - The delete operation supports only user or group photos, but _not Outlook contact nor Teams photos_.
 
 ## Properties
 | Property	   | Type	|Description|
