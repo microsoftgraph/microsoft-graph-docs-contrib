@@ -12277,6 +12277,66 @@ items:
                             href: api/networkaccess-policyrule-get.md
                           - name: Update
                             href: api/networkaccess-policyrule-update.md
+              - name: Filtering traffic
+                items:
+                  - name: Filtering profile
+                    href: resources/networkaccess-filteringprofile.md
+                    items:
+                      - name: List
+                        href: api/networkaccess-filteringprofile-list.md
+                      - name: Get
+                        href: api/networkaccess-filteringprofile-get.md
+                      - name: Update
+                        href: api/networkaccess-filteringprofile-update.md
+                      - name: Create policyLink
+                        href: api/networkaccess-filteringpolicy-post-policyrules.md
+                  - name: Filtering policy
+                    href: resources/networkaccess-filteringpolicy.md
+                    items:
+                      - name: List
+                        href: api/networkaccess-networkaccessroot-list-filteringpolicies.md
+                      - name: Create
+                        href: api/networkaccess-filteringpolicy-post-policyrules.md 
+                      - name: Get
+                        href: api/networkaccess-filteringpolicy-get.md
+                      - name: Update
+                        href: api/networkaccess-filteringprofile-update.md
+                      - name: Delete
+                        href: api/networkaccess-filteringprofile-delete-policies.md
+                      - name: List policyRules
+                        href: api/networkaccess-policy-list-policyrules.md
+                      - name: Create policyRule
+                        href: api/networkaccess-filteringpolicy-post-policyrules.md
+                  - name: Filtering policy link
+                    href: resources/networkaccess-filteringpolicylink.md
+                    items:
+                      - name: List
+                        href: api/networkaccess-filteringpolicylink-list.md
+                      - name: Get
+                        href: api/networkaccess-filteringpolicylink-get.md 
+                      - name: Update
+                        href: api/networkaccess-filteringpolicylink-update.md
+                      - name: Delete
+                        href: api/networkaccess-filteringpolicylink-delete.md
+                      - name: List policy
+                        href: api/networkaccess-policylink-list-policy.md 
+                      - name: Add policy
+                        href: api/networkaccess-filteringpolicy-post-policyrules.md
+                      - name: Remove policy
+                        href: api/networkaccess-filteringpolicylink-delete-policy.md
+                  - name: Filtering rule
+                    href: resources/networkaccess-filteringrule.md
+                    items:
+                      - name: List
+                        href: api/networkaccess-filteringrule-list.md
+                      - name: Get
+                        href: api/networkaccess-filteringrule-get.md 
+                      - name: Create
+                        href: api/networkaccess-filteringrule-post.md
+                      - name: Update
+                        href: api/networkaccess-filteringrule-update.md
+                      - name: Delete
+                        href: api/networkaccess-filteringrule-delete.md                      
               - name: Branch site
                 href: resources/networkaccess-branchsite.md
                 items:
@@ -12337,12 +12397,27 @@ items:
                     href: api/networkaccess-reports-entitiessummaries.md
                   - name: Get cross-tenant access summary
                     href: api/networkaccess-reports-getcrosstenantsummary.md
+                  - name: Get cross-tenant access report
+                    href: api/networkaccess-reports-crosstenantaccessreport.md
                   - name: Get destination summary
                     href: api/networkaccess-reports-getdestinationsummaries.md
+                  - name: Get destination report
+                    href: api/networkaccess-reports-destinationreport.md
                   - name: Get device usage summary
                     href: api/networkaccess-reports-getdeviceusagesummary.md
+                  - name: Get device usage report
+                    href: api/networkaccess-reports-devicereport.md  
+                  - name: Get user usage report
+                    href: api/networkaccess-reports-userreport.md    
                   - name: Get transaction summaries
                     href: api/networkaccess-reports-transactionsummaries.md
+              - name: Remote network reports
+                items:
+                  - name: Remote network health status event
+                    href: resources/networkaccess-remotenetworkhealthstatusevent.md
+                    items:
+                      - name: List
+                        href: api/networkaccess-remotenetworkhealthstatusevent-list.md
           - name: Governance
             href: resources/identitygovernance-overview.md
             displayName: Identity Governance, Access reviews, Entitlement Management, Terms of Use, Privileged Identity Management
@@ -14481,7 +14556,7 @@ items:
                         href: api/authenticationconditionsapplications-post-includeapplications.md
                       - name: Remove applications
                         href: api/authenticationconditionapplication-delete.md
-          - name: Multicloud permissions management 
+          - name: Multicloud permissions management (preview) 
             items:
             - name: Overview
               href: resources/permissions-management-api-overview.md
@@ -14691,6 +14766,366 @@ items:
                   href: api/permissionsmanagement-list-permissionsrequestchanges.md
                 - name: Get
                   href: api/permissionsrequestchange-get.md  
+            - name: Permissions analytics
+              items:
+              - name: Permissions creep index distribution
+                href: resources/permissionscreepindexdistribution.md
+                items:
+                - name: List
+                  href: api/permissionsanalytics-list-permissionscreepindexdistributions.md
+                - name: Get
+                  href: api/permissionscreepindexdistribution-get.md
+              - name: Identity findings
+                items:
+                - name: Inactive user finding
+                  href: resources/inactiveuserfinding.md
+                  items:
+                  - name: List
+                    href: api/inactiveuserfinding-list.md
+                  - name: Get
+                    href: api/inactiveuserfinding-get.md
+                  - name: Aggregated summary
+                    href: api/inactiveuserfinding-aggregatedsummary.md
+                - name: Inactive group finding
+                  href: resources/inactivegroupfinding.md
+                  items:
+                  - name: List
+                    href: api/inactivegroupfinding-list.md
+                  - name: Get
+                    href: api/inactivegroupfinding-get.md
+                - name: Inactive serverless functions
+                  href: resources/inactiveserverlessfunctionfinding.md
+                  items:
+                  - name: List
+                    href: api/inactiveserverlessfunctionfinding-list.md
+                  - name: Get
+                    href: api/inactiveserverlessfunctionfinding-get.md
+                  - name: Aggregated summary
+                    href: api/inactiveserverlessfunctionfinding-aggregatedsummary.md
+                - name: Inactive AWS role
+                  href: resources/inactiveawsrolefinding.md
+                  items:
+                  - name: List
+                    href: api/inactiveawsrolefinding-list.md
+                  - name: Get
+                    href: api/inactiveawsrolefinding-get.md
+                  - name: Aggregated summary
+                    href: api/inactiveawsrolefinding-aggregatedsummary.md
+                - name: Inactive AWS resource
+                  href: resources/inactiveawsresourcefinding.md
+                  items:
+                  - name: List
+                    href: api/inactiveawsresourcefinding-list.md
+                  - name: Get
+                    href: api/inactiveawsresourcefinding-get.md
+                  - name: Aggregated summary
+                    href: api/inactiveawsresourcefinding-aggregatedsummary.md
+                - name: Inactive Azure service principal
+                  href: resources/inactiveazureserviceprincipalfinding.md
+                  items:
+                  - name: List
+                    href: api/inactiveazureserviceprincipalfinding-list.md
+                  - name: Get
+                    href: api/inactiveazureserviceprincipalfinding-get.md
+                  - name: Aggregated summary
+                    href: api/inactiveazureserviceprincipalfinding-aggregatedsummary.md
+                - name: Inactive GCP service account
+                  href: resources/inactivegcpserviceaccountfinding.md
+                  items:
+                  - name: List
+                    href: api/inactivegcpserviceaccountfinding-list.md
+                  - name: Get
+                    href: api/inactivegcpserviceaccountfinding-get.md
+                  - name: Aggregated summary
+                    href: api/inactivegcpserviceaccountfinding-aggregatedsummary.md
+                - name: Super user
+                  href: resources/superuserfinding.md
+                  items:
+                    - name: List
+                      href: api/superuserfinding-list.md
+                    - name: Get
+                      href: api/superuserfinding-get.md
+                    - name: Aggregated summary
+                      href: api/superuserfinding-aggregatedsummary.md
+                - name: Super serverless functions
+                  href: resources/superserverlessfunctionfinding.md
+                  items:
+                  - name: List
+                    href: api/superserverlessfunctionfinding-list.md
+                  - name: Get
+                    href: api/superserverlessfunctionfinding-get.md
+                  - name: Aggregated summary
+                    href: api/superserverlessfunctionfinding-aggregatedsummary.md
+                - name: Super AWS role
+                  href: resources/superawsrolefinding.md
+                  items:
+                  - name: List
+                    href: api/superawsrolefinding-list.md
+                  - name: Get
+                    href: api/superawsrolefinding-get.md
+                  - name: Aggregated summary
+                    href: api/superawsrolefinding-aggregatedsummary.md
+                - name: Super AWS resource
+                  href: resources/superawsresourcefinding.md
+                  items:
+                  - name: List
+                    href: api/superawsresourcefinding-list.md
+                  - name: Get
+                    href: api/superawsresourcefinding-get.md
+                  - name: Aggregated summary
+                    href: api/superawsresourcefinding-aggregatedsummary.md
+                - name: Super Azure service principal
+                  href: resources/superazureserviceprincipalfinding.md
+                  items:
+                    - name: List
+                      href: api/superazureserviceprincipalfinding-list.md
+                    - name: Get
+                      href: api/superazureserviceprincipalfinding-get.md
+                    - name: Aggregated summary
+                      href: api/superazureserviceprincipalfinding-aggregatedsummary.md
+                - name: Super GCP service account
+                  href: resources/supergcpserviceaccountfinding.md
+                  items:
+                  - name: List
+                    href: api/supergcpserviceaccountfinding-list.md
+                  - name: Get
+                    href: api/supergcpserviceaccountfinding-get.md
+                  - name: Aggregated summary
+                    href: api/supergcpserviceaccountfinding-aggregatedsummary.md
+                - name: Overprovisioned user
+                  href: resources/overprovisioneduserfinding.md
+                  items:
+                  - name: List
+                    href: api/overprovisioneduserfinding-list.md
+                  - name: Get
+                    href: api/overprovisioneduserfinding-get.md
+                - name: Overprovisioned serverless functions
+                  href: resources/overprovisionedserverlessfunctionfinding.md
+                  items:
+                  - name: List
+                    href: api/overprovisionedserverlessfunctionfinding-list.md
+                  - name: Get
+                    href: api/overprovisionedserverlessfunctionfinding-get.md
+                - name: Overprovisioned AWS role
+                  href: resources/overprovisionedawsrolefinding.md
+                  items:
+                  - name: List
+                    href: api/overprovisionedawsrolefinding-list.md
+                  - name: Get
+                    href: api/overprovisionedawsrolefinding-get.md
+                - name: Overprovisioned AWS resource
+                  href: resources/overprovisionedawsresourcefinding.md
+                  items:
+                  - name: List
+                    href: api/overprovisionedawsresourcefinding-list.md
+                  - name: Get
+                    href: api/overprovisionedawsresourcefinding-get.md
+                - name: Overprovisioned Azure service principal
+                  href: resources/overprovisionedazureserviceprincipalfinding.md
+                  items:
+                  - name: List
+                    href: api/overprovisionedazureserviceprincipalfinding-list.md
+                  - name: Get
+                    href: api/overprovisionedazureserviceprincipalfinding-get.md
+                - name: Overprovisioned GCP service account
+                  href: resources/overprovisionedgcpserviceaccountfinding.md
+                  items:
+                  - name: List
+                    href: api/overprovisionedgcpserviceaccountfinding-list.md
+                  - name: Get
+                    href: api/overprovisionedgcpserviceaccountfinding-get.md
+                - name: AWS users with unenforced MFA
+                  href: resources/unenforcedmfaawsuserfinding.md
+                  items:
+                  - name: List
+                    href: api/unenforcedmfaawsuserfinding-list.md
+                  - name: Get
+                    href: api/unenforcedmfaawsuserfinding-get.md
+                  - name: Aggregated summary
+                    href: api/unenforcedmfaawsuserfinding-aggregatedsummary.md
+              - name: Privilege escalation findings
+                items:
+                - name: Privilege escalation user
+                  href: resources/privilegeescalationuserfinding.md
+                  items:
+                  - name: List
+                    href: api/privilegeescalationuserfinding-list.md
+                  - name: Get
+                    href: api/privilegeescalationuserfinding-get.md
+                - name: Privilege escalation AWS role
+                  href: resources/privilegeescalationawsrolefinding.md
+                  items:
+                  - name: List
+                    href: api/privilegeescalationawsrolefinding-list.md
+                  - name: Get
+                    href: api/privilegeescalationawsrolefinding-get.md
+                - name: Privilege escalation AWS resource
+                  href: resources/privilegeescalationawsresourcefinding.md
+                  items:
+                  - name: List
+                    href: api/privilegeescalationawsresourcefinding-list.md
+                  - name: Get
+                    href: api/privilegeescalationawsresourcefinding-get.md
+                - name: Privilege escalation GCP service account
+                  href: resources/privilegeescalationgcpserviceaccountfinding.md
+                  items:
+                  - name: List
+                    href: api/privilegeescalationgcpserviceaccountfinding-list.md
+                  - name: Get
+                    href: api/privilegeescalationgcpserviceaccountfinding-get.md
+              - name: Encrypted AWS S3 buckets
+                href: resources/encryptedawsstoragebucketfinding.md
+                items:
+                - name: List
+                  href: api/encryptedawsstoragebucketfinding-list.md
+                - name: Get
+                  href: api/encryptedawsstoragebucketfinding-get.md
+              - name: Encrypted Azure storage accounts
+                href: resources/encryptedazurestorageaccountfinding.md
+                items:
+                - name: List
+                  href: api/encryptedazurestorageaccountfinding-list.md
+                - name: Get
+                  href: api/encryptedazurestorageaccountfinding-get.md
+              - name: Encrypted GCP storage buckets
+                href: resources/encryptedgcpstoragebucketfinding.md
+                items:
+                - name: List
+                  href: api/encryptedgcpstoragebucketfinding-list.md
+                - name: Get
+                  href: api/encryptedgcpstoragebucketfinding-get.md
+              - name: Externally accessible AWS S3 buckets
+                href: resources/externallyaccessibleawsstoragebucketfinding.md
+                items:
+                - name: List
+                  href: api/externallyaccessibleawsstoragebucketfinding-list.md
+                - name: Get
+                  href: api/externallyaccessibleawsstoragebucketfinding-get.md
+              - name: Externally accessible Azure blob containers
+                href: resources/externallyaccessibleazureblobcontainerfinding.md
+                items:
+                - name: List
+                  href: api/externallyaccessibleawsstoragebucketfinding-list.md
+                - name: Get
+                  href: api/externallyaccessibleawsstoragebucketfinding-get.md
+              - name: Externally accessible GCP storage buckets
+                href: resources/externallyaccessiblegcpstoragebucketfinding.md
+                items:
+                - name: List
+                  href: api/externallyaccessibleawsstoragebucketfinding-list.md
+                - name: Get
+                  href: api/externallyaccessibleawsstoragebucketfinding-get.md   
+              - name: Open AWS security group
+                href: resources/openawssecuritygroupfinding.md
+                items:
+                - name: List
+                  href: api/openawssecuritygroupfinding-list.md
+                - name: Get
+                  href: api/openawssecuritygroupfinding-get.md
+                - name: List assignedComputeInstanceDetails
+                  href: api/openawssecuritygroupfinding-list-assignedcomputeinstancesdetails.md
+                - name: Get assignedComputeInstanceDetails
+                  href: api/assignedcomputeinstancedetails-get.md
+              - name: Open network Azure security group
+                href: resources/opennetworkazuresecuritygroupfinding.md
+                items:
+                - name: List
+                  href: api/opennetworkazuresecuritygroupfinding-list.md
+                - name: Get
+                  href: api/opennetworkazuresecuritygroupfinding-get.md
+              - name: AWS identities that can access secret information
+                href: resources/openawssecuritygroupfinding.md
+                items:
+                - name: Users
+                  href: resources/secretinformationaccessawsuserfinding.md
+                  items:
+                  - name: List
+                    href: api/secretinformationaccessawsuserfinding-list.md
+                  - name: Get
+                    href: api/secretinformationaccessawsuserfinding-get.md
+                - name: Roles
+                  href: resources/secretinformationaccessawsuserfinding.md
+                  items:
+                  - name: List
+                    href: api/secretinformationaccessawsuserfinding-list.md
+                  - name: Get
+                    href: api/secretinformationaccessawsuserfinding-get.md
+                - name: Resources
+                  href: resources/secretinformationaccessawsresourcefinding.md
+                  items:
+                  - name: List
+                    href: api/secretinformationaccessawsresourcefinding-list.md
+                  - name: Get
+                    href: api/secretinformationaccessawsresourcefinding-get.md
+                - name: Serverless functions
+                  href: resources/secretinformationaccessawsserverlessfunctionfinding.md
+                  items:
+                  - name: List
+                    href: api/secretinformationaccessawsserverlessfunctionfinding-list.md
+                  - name: Get
+                    href: api/secretinformationaccessawsserverlessfunctionfinding-get.md
+              - name: AWS administrators that can use secruity tools
+                items:
+                - name: Users
+                  href: resources/securitytoolawsuseradministratorfinding.md
+                  items:
+                  - name: List
+                    href: api/securitytoolawsuseradministratorfinding-list.md
+                  - name: Get
+                    href: api/securitytoolawsuseradministratorfinding-get.md
+                - name: Roles
+                  href: resources/securitytoolawsroleadministratorfinding.md
+                  items:
+                  - name: List
+                    href: api/securitytoolawsroleadministratorfinding-list.md
+                  - name: Get
+                    href: api/securitytoolawsroleadministratorfinding-get.md
+                - name: Resources
+                  href: resources/securitytoolawsresourceadministratorfinding.md
+                  items:
+                  - name: List
+                    href: api/securitytoolawsresourceadministratorfinding-list.md
+                  - name: Get
+                    href: api/securitytoolawsresourceadministratorfinding-get.md
+                - name: Serverless functions
+                  href: resources/securitytoolawsserverlessfunctionadministratorfinding.md
+                  items:
+                  - name: List
+                    href: api/securitytoolawsserverlessfunctionadministratorfinding-list.md
+                  - name: Get
+                    href: api/securitytoolawsserverlessfunctionadministratorfinding-get.md
+              - name: AWS cross-account access
+                href: resources/awsexternalsystemaccessfinding.md
+                items:
+                - name: List
+                  href: api/awsexternalsystemaccessfinding-list.md
+                - name: Get
+                  href: api/awsexternalsystemaccessfinding-get.md
+              - name: AWS roles that can access accounts
+                href: resources/awsexternalsystemaccessrolefinding.md
+                items:
+                - name: List
+                  href: api/awsexternalsystemaccessrolefinding-list.md
+                - name: Get
+                  href: api/awsexternalsystemaccessrolefinding-get.md
+              - name: AWS IAM access key age
+                href: resources/awsidentityaccessmanagementkeyagefinding.md
+                items:
+                - name: List 
+                  href: api/awsidentityaccessmanagementkeyagefinding-list.md
+                - name: Get
+                  href: api/awsidentityaccessmanagementkeyagefinding-get.md
+                - name: Aggregated summary
+                  href: api/awsidentityaccessmanagementkeyagefinding-aggregatedsummary.md
+              - name: AWS IAM access key usage
+                href: resources/awsidentityaccessmanagementkeyusagefinding.md
+                items:
+                - name: List
+                  href: api/awsidentityaccessmanagementkeyusagefinding-list.md
+                - name: Get
+                  href: api/awsidentityaccessmanagementkeyusagefinding-get.md
+                - name: Aggregated summary
+                  href: api/awsidentityaccessmanagementkeyusagefinding-aggregatedsummary.md
           - name: Partner customer administration
             items:
               - name: Granular delegated admin privileges
@@ -15754,6 +16189,13 @@ items:
               items:
                 - name: Overview
                   href: resources/azure-ad-auditlog-overview.md
+                - name: Custom security attributes audit
+                  href: resources/customsecurityattributeaudit.md
+                  items:
+                  - name: List
+                    href: api/auditlogroot-list-customsecurityattributeaudits.md
+                  - name: Get
+                    href: api/customsecurityattributeaudit-get.md
                 - name: Directory audit
                   href: resources/directoryaudit.md
                   items:
@@ -15761,6 +16203,11 @@ items:
                       href: api/directoryaudit-list.md
                     - name: Get
                       href: api/directoryaudit-get.md
+                - name: Provisioning
+                  href: resources/provisioningobjectsummary.md
+                  items:
+                    - name: List
+                      href: api/provisioningobjectsummary-list.md
                 - name: Sign-in
                   href: resources/signin.md
                   items:
@@ -15772,11 +16219,6 @@ items:
                       href: api/signin-confirmsafe.md
                     - name: Confirm compromised
                       href: api/signin-confirmcompromised.md
-                - name: Provisioning
-                  href: resources/provisioningobjectsummary.md
-                  items:
-                    - name: List
-                      href: api/provisioningobjectsummary-list.md
           - name: Microsoft 365 usage reports
             items:
               - name: Overview
@@ -16987,8 +17429,6 @@ items:
                 href: api/itemactivity-getbyinterval.md
               - name: Get applicable content types for list
                 href: api/site-getapplicablecontenttypesforlist.md
-              - name: Get delta
-                href: api/site-delta.md
               - name: Get lists
                 href: api/list-list.md
               - name: Get lists
@@ -17317,6 +17757,8 @@ items:
                 href: api/planneruser-list-recentplans.md
               - name: Get delta
                 href: api/plannerplan-delta.md
+              - name: Move to container
+                href: api/plannerplan-movetocontainer.md
           - name: Task
             href: resources/plannertask.md
             items:
@@ -17880,7 +18322,6 @@ items:
                   - name: Set user status message
                     href: api/presence-setstatusmessage.md
               - name: Virtual event (preview)
-                href: resources/virtualevent.md
                 items:
                   - name: Webinar
                     href: resources/virtualeventwebinar.md
@@ -17889,7 +18330,7 @@ items:
                         href: api/virtualeventwebinar-get.md
                       - name: List by user role
                         href: api/virtualeventwebinar-getbyuserrole.md
-                      - name: List by user ID/role
+                      - name: List by user ID and role
                         href: api/virtualeventwebinar-getbyuseridandrole.md
                       - name: Registration
                         href: resources/virtualeventregistration.md
