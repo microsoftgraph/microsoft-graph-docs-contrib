@@ -14902,7 +14902,7 @@ items:
                   href: api/awsidentityaccessmanagementkeyusagefinding-get.md
                 - name: Aggregated summary
                   href: api/awsidentityaccessmanagementkeyusagefinding-aggregatedsummary.md
-          - name: Network access
+          - name: Network access (preview)
             items:
               - name: Overview
                 displayName: ZTNA, Global Secure Access, Microsoft Entra Internet Access, Microsoft Entra Private Access
