@@ -20,7 +20,7 @@ Updating a custom property to null deletes the property from the container.
 The application calling this API must have read/write permissions to fileStorageContainers for the respective container type.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see the [permissions reference](../../../concepts/permissions-reference.md).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
