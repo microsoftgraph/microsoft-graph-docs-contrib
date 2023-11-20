@@ -217,8 +217,6 @@ Content-type: application/json
   "tocPath": ""
 }-->
 
-# Get User's Locale and Region
-
 ## See also
 
 [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

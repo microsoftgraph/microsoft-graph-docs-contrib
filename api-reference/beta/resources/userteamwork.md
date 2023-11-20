@@ -24,7 +24,9 @@ A container for the range of Microsoft Teams functionalities that are available 
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-|id|string| A unique identifier. |
+|id| string | A default userTeamwork identifier. |
+|locale | string  | A field representing the locale of teams user. |  
+| region | string  | A field representing the region of the teams user.|
 
 ## Relationships
 
@@ -45,7 +47,9 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "string"
+  "id": "string",
+  "locale" : "string",
+  "region" : "string",
 }
 
 ```

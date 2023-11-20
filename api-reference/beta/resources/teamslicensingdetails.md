@@ -1,0 +1,67 @@
+---
+title: "teamsLicensingDetails resource type"
+description: "Contains information about a teams license assigned to a user."
+author: "mea"
+doc_type: resourcePageType
+ms.localizationpriority: high
+ms.prod: "microsoft-teams"
+---
+
+# teamsLicensingDetails resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+A container for the range of Microsoft Teams license Details that are available per user in the tenant.
+
+## Methods
+
+|Method|Return type|Description|
+|:---|:---|:---|
+|[Get Teams Licensing Details](../api/user-get-teamslicensingdetails.md.md)|[teamsLicensingDetails](../resources/teamsLicensingDetails.md) object|Retrieve whether a valid Microsoft Teams License is avaiable for the specified user.|
+
+## Properties
+
+| Property | Type | Description |
+|:---------------|:--------|:----------|
+|hasteamslicense| boolean | A field representing the Microsoft teams license status of a user. |
+
+## Relationships
+
+None
+
+## JSON representation
+
+The following is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.teamsLicensingDetails",
+  "baseType": "microsoft.graph.entity"
+}-->
+
+```json
+{
+  "hasTeamsLicense": "boolean",
+}
+
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "teamslicensingdetails resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": []
+}
+-->
+
+## See also
+
+- [teamwork resource type](teamwork.md)
+- [userTeamwork resource type](userteamwork.md)
