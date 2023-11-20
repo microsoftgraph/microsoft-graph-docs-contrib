@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # openShift: stageForDeletion
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,6 +16,7 @@ Namespace: microsoft.graph
 Stage an [openShift](../resources/openshift.md) for deletion. Staged (draft) changes are only visible to managers until the changes are [shared](../api/schedule-share.md) with the team. 
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 <!-- {
@@ -35,13 +37,15 @@ POST /teams/{teamsId}/schedule/openShifts/{openShiftId}/stageForDeletion
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 | MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
 ## Request body
-Do not supply a request body for this method.
+
+Don't supply a request body for this method.
 
 ## Response
 
