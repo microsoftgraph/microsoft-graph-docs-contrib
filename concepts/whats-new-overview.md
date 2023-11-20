@@ -29,7 +29,7 @@ _See the [related changelog section](https://developer.microsoft.com/en-us/graph
 Delete a group's [profile photo](/graph/api/resources/profilephoto). _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=14a780c1-d222-4476-acc0-3c5b6425f040)_.
 
 ### Identity and access | Directory management
-Optionally define an [extension property](/graph/api/resources/extensionProperty?view=graph-rest-beta&preserve-view=true) as a multi-valued custom property that contains a collection of objects, instead of a single-valued property.
+Optionally define a [directory extension](/graph/api/resources/extensionProperty) as a multi-valued custom property that contains a collection of objects, instead of a single-valued property. _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=3c89fe6e-3b38-4168-952d-d4291e651e5a)_.
 
 ### Security | Alerts and incidents
 Get an [alert](/graph/api/resources/security-alert) that can indicate a more specific workload protection plan of Microsoft Defender for Cloud as the source that detected notable component or activity. Examples of more specific workload protection plans include Microsoft Defender for IoT, Microsoft Defender for Servers, Microsoft Defender for Storage. _For a list of the additional possible sources, see the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=2ffb1cd0-70b3-4e55-b5f2-b7e6c7d62dc2)_.
@@ -64,11 +64,11 @@ Use the [permissions management APIs](/graph/api/resources/permissions-managemen
 - Request permissions for identities to resources; Grant or reject permissions requests.
 - Generate reports relating to permissions and resources.
 
-The Permissions Management currently supports only Microsoft Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP) cloud infrastructures. See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=&filterBy=Multicloud%20permissions%20management&from=2023-10-31&to=2023-11-29).
+The Permissions Management currently supports only Microsoft Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP) cloud infrastructures. _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=&filterBy=Multicloud%20permissions%20management&from=2023-10-31&to=2023-11-29)_.
 
 ### Reports  | Identity and access reports
 
-Trace the [history of activities related to managing custom security attributes](/graph/api/resources/customsecurityattributeaudit?view=graph-rest-beta&preserve-view=tru), such as attribute definitions and assigning attribute values to principals. See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=12c7039e-92e7-44a4-87ad-63e1fc8c76a2&filterBy=Identity%20and%20access%20reports).
+Trace the [history of activities related to managing custom security attributes](/graph/api/resources/customsecurityattributeaudit?view=graph-rest-beta&preserve-view=tru), such as attribute definitions and assigning attribute values to principals. _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=12c7039e-92e7-44a4-87ad-63e1fc8c76a2)_.
 
 ### Tasks and plans
 Create a [plan](/graph/api/resources/plannerplan?view=graph-rest-beta&preserve-view=true) in a user [container](/graph/api/resources/plannerplancontainer?view=graph-rest-beta&preserve-view=true) to let individual users track their own tasks. This provides the flexibility for users to share or collaborate on their personal plans, or subsequently upgrade their personal plans into group-based plans by [moving](/graph/api/plannerplan-movetocontainer?view=graph-rest-beta&preserve-view=true) the plan from the user container to a group container. _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=6adca1d6-2cd3-4b37-8ffa-7985afbbbade)_.
