@@ -18,7 +18,7 @@ Delete one or multiple custom properties from a fileStorageContainer by assignin
 The application calling this API must have write permissions to fileStorageContainers for the respective container type.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see the [permissions reference](../../../concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see the [permissions reference](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
