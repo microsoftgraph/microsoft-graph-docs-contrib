@@ -1,6 +1,6 @@
 ---
 title: "List exportJobs"
-description: "Get a list of the goalsExportJob objects and their properties in a Viva Goals organization."
+description: "Get a list of goalsExportJob objects and their properties in a Viva Goals organization."
 author: "ishatyagiit"
 ms.localizationpriority: medium
 ms.prod: "employee-goals"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [goalsExportJob](../resources/goalsexportjob.md) objects and their properties in a Viva Goals organization.
+Get a list of [goalsExportJob](../resources/goalsexportjob.md) objects and their properties in a Viva Goals organization.
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -34,11 +34,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /employeeExperience/goals/exportJobs
 ```
 
-## Optional query parameter
-This method supports the `$filter` OData query parameters to help customize the response. For more information, see [OData query parameters](/graph/query-parameters).
+## Optional query parameters
+This method supports the `$filter` OData query parameter to help customize the response. The `$filter` OData query parameter is supported on the **goalsOrganizationId** property only.
 
-
-The `$filter` OData query parameter is supported on the **goalsOrganizationId** property only.
+For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -98,7 +97,7 @@ Content-Type: application/json
 
 ### Example 2: Filter response based on `goalsOrganizationId`
 #### Request
-The following example shows the request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "list_goalsexportjob2"
@@ -138,9 +137,9 @@ Content-Type: application/json
 }
 ```
 
-### Example 3: Filter response based on any property other than `goalsOrganizationId`. 
+### Example 3: Filter response based on any property other than `goalsOrganizationId` 
 #### Request
-The following example shows the request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "list_goalsexportjob3"
