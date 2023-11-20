@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # team: getOpenShifts
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,6 +16,7 @@ Namespace: microsoft.graph
 Get a list of [openShift](../resources/openshift.md) objects from across all schedules a user has access to.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 <!-- {
@@ -40,14 +42,13 @@ GET /users/{id | user-principal-name}/joinedTeams/getOpenShifts
 This method supports the `$filter` [OData query parameter](/graph/query-parameters) to help customize the response.
 
 > [!NOTE]
-> The `$filter` parameter doesn't support the use of the same property more than once in a query. For example, the following query doesn't work: `sharedOpenShift/startDateTime ge 2024-05-09T00:00:00Z and sharedOpenShift/startDateTime le 2024-05-09T23:59:59Z`.
-> However, the following query works: `sharedOpenShift/startDateTime ge 2024-05-09T00:00:00Z and sharedOpenShift/endDateTime le 2024-05-09T23:59:59Z`.
-
+> The `$filter` parameter doesn't support the use of the same property more than once in a query. For example, the following query doesn't work: `sharedOpenShift/startDateTime ge 2024-05-09T00:00:00Z and sharedOpenShift/startDateTime le 2024-05-09T23:59:59Z`; however, the following query works: `sharedOpenShift/startDateTime ge 2024-05-09T00:00:00Z and sharedOpenShift/endDateTime le 2024-05-09T23:59:59Z`.
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
-|Authorization|Bearer {token}. Required.|
+| Authorization|Bearer {token}. Required.|
 | MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
 ## Request body
@@ -60,7 +61,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
+
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "teamthis.getopenshifts"
@@ -72,7 +75,9 @@ GET https://graph.microsoft.com/beta/me/joinedTeams/getOpenShifts
 
 
 ### Response
+
 The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -112,4 +117,3 @@ Content-Type: application/json
   ]
 }
 ```
-
