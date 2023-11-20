@@ -24,7 +24,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|exportJobs|[goalsExportJob](../resources/goalsexportjob.md) collection|**TODO: Add Description**|
+|exportJobs|[goalsExportJob](../resources/goalsexportjob.md) collection|Represents a collection of goals export jobs for Viva Goals.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
