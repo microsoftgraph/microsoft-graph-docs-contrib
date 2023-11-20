@@ -73,7 +73,7 @@ The following example shows the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.awsPolicy)"
+  "@odata.type": "microsoft.graph.awsPolicy"
 }
 -->
 ``` http
