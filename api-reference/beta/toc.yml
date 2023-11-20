@@ -11149,6 +11149,20 @@ items:
             items:
               - name: Get
                 href: api/educationsynchronizationerrors-get.md
+      - name: Employee experience
+        displayName: Viva
+        items:
+          - name: Employee goals (preview)
+            items:
+            - name: Goals export job
+              href: resources/goalsExportJob.md
+              items:
+              - name: List
+                href: api/goals-list-exportjobs.md
+              - name: Create
+                href: api/goals-post-exportjobs.md
+              - name: Get
+                href: api/goalsexportjob-get.md
       - name: Extensions
         items:
           - name: Overview
@@ -19346,3 +19360,4 @@ items:
                 href: api/workbookdocumenttask-list-changes.md
               - name: Get
                 href: api/workbookdocumenttaskchange-get.md
+
