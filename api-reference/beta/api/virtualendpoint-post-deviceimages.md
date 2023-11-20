@@ -145,6 +145,7 @@ Content-Type: application/json
   "lastModifiedDateTime": "2020-11-03T07:03:44.97Z",
   "status": "pending",
   "statusDetails": null,
+  "errorCode": null,
   "osStatus":"supported",
   "expirationDate":"2022-11-10"
 }

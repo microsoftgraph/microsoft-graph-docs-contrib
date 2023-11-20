@@ -26,19 +26,22 @@ Represents the gallery image resource of the current organization that can be us
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The official display name of the gallery image. Read-only.|
-|endDate|Date|The date in which this image is no longer within long-term support. The Cloud PC continues to provide short-term support. Read-only.|
-|expirationDate|Date|The date when the image is no longer available. Read-only.|
-|id|String|Unique identifier for the gallery image resource on the Cloud PC. Read-only.|
-|offer|String|The offer name of the gallery image. This value is passed to Azure to get the image resource. Read-only.|
-|offerDisplayName|String|The official display offer name of the gallery image. For example, `Windows 10 Enterprise + OS Optimizations`. Read-only.|
-|publisher|String|The publisher name of the gallery image. This value is passed to Azure to get the image resource. Read-only.|
-|recommendedSku|String|Recommended Cloud PC SKU for this gallery image. Read-only.|
-|sizeInGB|Int32|The size of this image in gigabytes. Read-only.|
-|sku|String|The SKU name of the gallery image. This value is passed to Azure to get the image resource. Read-only.|
-|skuDisplayName|String|The official display stock keeping unit (SKU) name of this gallery image. For example, `2004`. Read-only.|
-|startDate|Date|The date when the image becomes available. Read-only.|
-|status|cloudPcGalleryImageStatus|The status of the gallery image on the Cloud PC. Possible values are: `supported`, `supportedWithWarning`, `notSupported`, `unknownFutureValue`. Read-only.|
+|displayName|String|The display name of this gallery image. For example: Windows 11 Enterprise + Microsoft 365 Apps 22H2. Read-Only.|
+|endDate|Date|The date when the status of image becomes supportedWithWarning. Users can still provision new Cloud PCs if the current time is later than endDate and earlier than expirationDate. For example, assume the endDate of a gallery image is 2023-9-14 and expirationDate is 2024-3-14, users are able to provision new Cloud PCs if today is 2023-10-01. Read-Only.|
+|expirationDate|Date|The date when image is no longer available. Users are unable to provision new Cloud PCs if the current time is later than expirationDate. The value is usually endDate plus six months. For example, if the startDate is 2025-10-14, expirationDate will usually be 2026-04-14. Read-Only.|
+|id|String|The unique identifier (ID) of gallery image resource on Cloud PC. The ID format is {publisherName_offerName_skuName}. For example: MicrosoftWindowsDesktop_windows-ent-cpc_win11-22h2-ent-cpc-m365. The publisherName, offerName and skuName can be found in Azure Marketplace. Read-Only.|
+|offer|String|The offer name of this gallery image, this value will be passed to ARM to get image resource. Read-Only. (Starting from January 31, 2024, this property will no longer be supported and will be marked as deprecated. Please use offerName instead.)|
+|offerName|String|The offer name of this gallery image, this value will be passed to ARM to get image resource. Read-Only. (Starting from January 31, 2024, this property will no longer be supported and will be marked as deprecated. Please use offerName instead.)|
+|offerDisplayName|String| The offer name of this gallery image, this value will be passed to ARM to get image resource. Read-Only.|
+|publisher|String|The publisher name of this gallery image, this value will be passed to ARM to get image resource. Read-Only. (Starting from January 31, 2024, this property will no longer be supported and will be marked as deprecated. Please use publisherName instead.)|
+|publisherName|String|The publisher name of this gallery image, this value will be passed to ARM to get image resource. Read-Only.|
+|recommendedSku|String|Recommended Cloud PC SKU for this gallery image. Read-Only. (Starting from January 31, 2024, this property will no longer be supported and will be marked as deprecated.)|
+|sizeInGB|Int32|Indicates the size of this image in gigabytes. For example: 64. Read-Only.|
+|sku|String|The SKU name of this image, this value will be passed to ARM to get image resource. Read-Only. (Starting from January 31, 2024, this property will no longer be supported and will be marked as deprecated. Please use skuName instead.)|
+|skuName|String|The SKU name of this image, this value will be passed to ARM to get image resource. Read-Only.|
+|skuDisplayName|String|The official display SKU name of this gallery image. For example: 2004. Read-only. (Starting from January 31, 2024, this property will no longer be supported and will be marked as deprecated.)|
+|startDate|Date| The date when the Cloud PC image is available for provisioning new Cloud PCs. For example: 2022-09-20. Read-Only.|
+|status|cloudPcGalleryImageStatus|The status of the gallery image on the Cloud PC. Possible values are: `supported`, `supportedWithWarning`, `notSupported`, `unknownFutureValue`. Default value is `supported`. Read-Only.|
 
 ### cloudPcGalleryImageStatus values
 

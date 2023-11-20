@@ -132,7 +132,8 @@ Content-Type: application/json
       "sourceImageResourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Compute/images/ExampleImage",
       "lastModifiedDateTime": "2020-11-03T07:03:44Z",
       "status": "pending",
-      "statusDetails": null
+      "statusDetails": null,
+      "errorCode": null
     }
   ]
 }

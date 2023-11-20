@@ -9,6 +9,94 @@
                     "ChangeType": "Addition",
                     "Description": "Added the `unknown` member to the **cloudPcDeviceImageOsStatus** enumeration.",
                     "Target": "cloudPcDeviceImageOsStatus"
+                },
+                {
+                    "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "errorCode",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **errorCode** property to the [cloudPcDeviceImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcDeviceImage"
+                },
+                {
+                    "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "cloudPcDeviceImageErrorCode",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPcDeviceImageErrorCode** enumeration type.",
+                    "Target": "cloudPcDeviceImage"
+                },
+                {
+                    "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "cloudPcDeviceImageStatusDetails",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `vmAlreadyAzureAdJoined` member to the **cloudPcDeviceImageStatusDetails** enumeration.",
+                    "Target": "cloudPcDeviceImageStatusDetails"
+                },
+                {
+                    "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "cloudPcDeviceImageStatusDetails",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `paidSourceImageNotSupport` member to the **cloudPcDeviceImageStatusDetails** enumeration.",
+                    "Target": "cloudPcDeviceImageStatusDetails"
+                },
+                {
+                    "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "cloudPcDeviceImageStatusDetails",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `sourceImageNotSupportCustomizeVMName` member to the **cloudPcDeviceImageStatusDetails** enumeration.",
+                    "Target": "cloudPcDeviceImageStatusDetails"
+                },
+                {
+                    "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "cloudPcDeviceImageStatusDetails",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `vmAlreadyAzureAdJoined` member to the **cloudPcDeviceImageStatusDetails** enumeration.",
+                    "Target": "sourceImageSizeExceedsLimitation"
+                },
+                {
+                    "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "publisherName",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **publisherName** property to the [cloudPcGalleryImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcGalleryImage?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcGalleryImage"
+                },
+                {
+                    "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "offerName",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **offerName** property to the [cloudPcGalleryImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcGalleryImage?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcGalleryImage"
+                },
+                {
+                    "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "skuName",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **skuName** property to the [cloudPcGalleryImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcGalleryImage?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcGalleryImage"
+                },
+                {
+                    "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "cloudPcDeviceImageStatus",
+                    "ChangeType": "unknownFutureValue",
+                    "Description": "Added the `unknown` member to the **cloudPcDeviceImageStatus** enumeration.",
+                    "Target": "cloudPcDeviceImageStatus"
+                },
+                {
+                    "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "resourceId",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **resourceId** property to the [cloudPcSourceDeviceImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcsourcedeviceimage?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcSourceDeviceImage"
                 }
             ],
             "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
