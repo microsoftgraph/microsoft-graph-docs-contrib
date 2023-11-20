@@ -34,7 +34,7 @@ Represents the image resource on a Cloud PC.
 |expirationDate|Date|The date the image became unavailable. Read-Only.|
 |id|String|The unique identifier (ID) of the image resource on Cloud PC. Read-Only.|
 |lastModifiedDateTime|DateTimeOffset|The data and time that the image was last modified. The time is shown in ISO 8601 format and  Coordinated Universal Time (UTC) time. For example, midnight UTC on Jan 1, 2014 appears as `2014-01-01T00:00:00Z`. Read-Only.|
-|operatingSystem|String|The operating system of the image. For example, `Windows 10 Enterprise`.|
+|operatingSystem|String|The operating system of the image. For example, `Windows 10 Enterprise`. Read-Only.|
 |osBuildNumber|String|The OS build version of the image. For example, `1909`. Read-Only.|
 |osStatus|[cloudPcDeviceImageOsStatus](#cloudpcdeviceimageosstatus-values)|The OS status of this image. Possible values are: `supported`, `supportedWithWarning`, `unknown`, `unknownFutureValue`. Default value is unknown. Read-Only.|
 |sourceImageResourceId|String|The unique identifier (ID) of the source image resource on Azure. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}". Read-Only.|
