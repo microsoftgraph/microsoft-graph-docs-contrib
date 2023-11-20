@@ -106,7 +106,7 @@ To retrieve files in the root of the drive, use the `root` relationship on the d
 <!-- { "blockType": "request", "name": "list-children", "scopes": "files.read" } -->
 
 ```msgraph-interactive
-GET /drives/{drive-id}/items/{item-id}/children
+GET /drives/{drive-id}/items/root/children
 ```
 
 # [C#](#tab/csharp)

@@ -18,6 +18,15 @@ const alertRule = {
       operator: 'greaterOrEqual',
       target: 90
   },
+  conditions: [
+      {
+        relationshipType: 'or',
+        conditionCategory: 'azureNetworkConnectionCheckFailures',
+        aggregation: 'count',
+        operator: 'greaterOrEqual',
+        thresholdValue: '90'
+      }
+  ],
   notificationChannels: [
       {
         notificationChannelType: 'portal',
