@@ -1,6 +1,6 @@
 ---
 title: "openShift: stageForDeletion"
-description: "Stage an openShift for deletion"
+description: "Stage an openShift for deletion."
 author: "raulfernandes"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This stages an open shift to be deletion. Staged (Draft) changes are only visible to managers until the changes are [shared](../api/schedule-share.md) with the team. 
+Stage an [openShift](../resources/openshift.md) for deletion. Staged (draft) changes are only visible to managers until the changes are [shared](../api/schedule-share.md) with the team. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,12 +45,14 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
 ### Request
-The following is an example of a request.
+
+The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "openshiftthis.stagefordeletion"
@@ -62,8 +64,9 @@ POST https://graph.microsoft.com/beta/teams/{teamsId}/schedule/openShifts/{openS
 
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -72,4 +75,3 @@ The following is an example of the response
 ``` http
 HTTP/1.1 204 No Content
 ```
-
