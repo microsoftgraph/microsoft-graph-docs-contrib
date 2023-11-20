@@ -50,6 +50,7 @@ For details, see [Change notifications for messages](teams-changenotifications-c
 | Channel description updated | [channelDescriptionUpdatedEventMessageDetail](#channel-description-updated) | Channel |
 | Channel renamed | [channelRenamedEventMessageDetail](#channel-renamed) | Channel |
 | Channel set as favorite | [channelSetAsFavoriteByDefaultEventMessageDetail](#channel-set-as-favorite-by-default) | Channel |
+| Channel sharing updated | [channelSharingUpdatedEventMessageDetail](#channel-sharing-updated) | Channel |
 | Channel unset as favorite | [channelUnsetAsFavoriteByDefaultEventMessageDetail](#channel-unset-as-favorite-by-default) | Channel |
 | Chat renamed | [chatRenamedEventMessageDetail](#chat-renamed) | Chat |
 | Conversation member role updated | [conversationMemberRoleUpdatedEventMessageDetail](#conversation-member-role-updated) | Channel, Team |
@@ -537,6 +538,56 @@ The following JSON examples show the responses for each supported event type.
   }
 }
 ```
+
+### channel sharing updated
+```json
+{
+  "id": "1616883610266",
+  "replyToId": null,
+  "etag": "1616883610266",
+  "messageType": "systemEventMessage",
+  "createdDateTime": "2021-03-28T03:50:10.266Z",
+  "lastModifiedDateTime": "2021-03-28T03:50:10.266Z",
+  "lastEditedDateTime": null,
+  "deletedDateTime": null,
+  "subject": null,
+  "summary": null,
+  "chatId": null,
+  "importance": "normal",
+  "locale": "en-us",
+  "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616883610266?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616883610266&parentMessageId=1616883610266",
+  "policyViolation": null,
+  "from": null,
+  "body": {
+    "contentType": "html",
+    "content": "<systemEventMessage/>"
+  },
+  "channelIdentity": {
+    "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
+    "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
+  },
+  "onBehalfOf": null,
+  "attachments": [],
+  "mentions": [],
+  "reactions": [],
+  "eventDetail": {
+    "@odata.type": "#microsoft.graph.channelSharingUpdatedEventMessageDetail",
+    "initiator": {
+      "application": null,
+      "device": null,
+      "user": {
+        "id": "1fb8890f-423e-4154-8fbf-db6809bc8756",
+        "displayName": null,
+        "userIdentityType": "aadUser"
+      }
+    },
+    "sharedChannelId": "19:4a95f7d8db4c4e7fae857bce12345678@thread.tacv2",
+    "ownerTeamId": "aef4bf47-16c8-47cf-b4a5-4b9b187c508b",
+    "ownerTenantId": "eb564f47-16c8-47cf-b4a5-4b9b187c508b"
+  }
+}
+```
+
 
 ### Channel unset as favorite by default
 

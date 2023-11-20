@@ -30,6 +30,7 @@ The following table lists the supported events.
 | [channelDescriptionUpdatedEventMessageDetail](../resources/channeldescriptionupdatedeventmessagedetail.md) | **Channel's** description has been updated. |
 | [channelRenamedEventMessageDetail](../resources/channelrenamedeventmessagedetail.md) | A **channel** has been renamed. |
 | [channelSetAsFavoriteByDefaultEventMessageDetail](../resources/channelsetasfavoritebydefaulteventmessagedetail.md) | A **channel** has been set as favorite by default. |
+| [channelSharingUpdatedEventMessageDetail](../resources/channelSharingUpdatedEventMessageDetail.md) | A channel is shared. |
 | [channelUnsetAsFavoriteByDefaultEventMessageDetail](../resources/channelunsetasfavoritebydefaulteventmessagedetail.md) | A **channel** has been unset as favorite by default. |
 | [chatRenamedEventMessageDetail](../resources/chatrenamedeventmessagedetail.md) | A chat has been renamed. |
 | [conversationMemberRoleUpdatedEventMessageDetail](../resources/conversationmemberroleupdatedeventmessagedetail.md) | Role has been updated for a **member**. |
