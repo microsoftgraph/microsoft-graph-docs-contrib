@@ -8444,8 +8444,6 @@ items:
                 href: api/site-follow.md
               - name: Get applicable content types for list
                 href: api/site-getapplicablecontenttypesforlist.md
-              - name: Get delta
-                href: api/site-delta.md
               - name: Get item analytics
                 href: api/itemanalytics-get.md
               - name: Get lists
