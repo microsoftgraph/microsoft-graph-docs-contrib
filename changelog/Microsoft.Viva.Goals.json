@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "goalsExportJob",
           "ChangeType": "Addition",
-          "Description": "Added the [goalsExportJob](https://learn.microsoft.com/en-us/graph/api/resources/goalsExportJob?view=graph-rest-beta) resource and associated methods",
+          "Description": "Added the [goalsExportJob](https://learn.microsoft.com/en-us/graph/api/resources/goalsExportJob?view=graph-rest-beta) resource and its associated methods.",
           "Target": "goalsExportJob"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "goals",
           "ChangeType": "Addition",
-          "Description": "Added the [goals](https://learn.microsoft.com/en-us/graph/api/resources/goals?view=graph-rest-beta) resource and its methods",
+          "Description": "Added the [goals](https://learn.microsoft.com/en-us/graph/api/resources/goals?view=graph-rest-beta) resource type.",
           "Target": "goals"
         },
         {
@@ -23,14 +23,14 @@
           "ApiChange": "Resource",
           "ChangedApiName": "employeeExperience",
           "ChangeType": "Change",
-          "Description": "Updated the [employeeExperience](https://learn.microsoft.com/en-us/graph/api/resources/employeeExperience?view=graph-rest-beta) resource.",
+          "Description": "Added the **goals** relationship to the [employeeExperience](https://learn.microsoft.com/en-us/graph/api/resources/employeeExperience?view=graph-rest-beta) resource type.",
           "Target": "employeeExperience"
         }
       ],
       "Id": "8b6a026b-2b92-41fb-a56f-8e65624bc160",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2023-11-09T08:22:49.3281105Z",
+      "CreatedDateTime": "2023-11-19T08:22:49.3281105Z",
       "WorkloadArea": "Employee experience",
       "SubArea": "Employee goals"
     }
