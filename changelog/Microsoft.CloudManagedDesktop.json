@@ -3,6 +3,48 @@
         {
             "ChangeList": [
                 {
+                    "Id": "e5352735-c007-4d19-ac03-bbba6d26f455",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "other",
+                    "ChangeType": "Change",
+                    "Description": "Changed the **other** member in the [cloudPcAuditActivityOperationType](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcauditevent?view=graph-rest-beta#cloudpcauditactivityoperationtype-values) enumeration to unknownFutureValue, with value changed from 999 to 3.",
+                    "Target": "cloudPcAuditActivityOperationType"
+                },
+                {
+                    "Id": "e5352735-c007-4d19-ac03-bbba6d26f455",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "other",
+                    "ChangeType": "Change",
+                    "Description": "Changed the **other** member in the [cloudPcAuditActivityResult](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcauditevent?view=graph-rest-beta#cloudpcauditactivityresult-values) enumeration to unknownFutureValue, with value change from 999 to 4.",
+                    "Target": "cloudPcAuditActivityResult"
+                },
+                {
+                    "Id": "e5352735-c007-4d19-ac03-bbba6d26f455",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "unknown",
+                    "ChangeType": "Change",
+                    "Description": "Changed the **unknown** member in the [cloudPcAuditActorType](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcauditevent?view=graph-rest-beta#cloudpcauditactortype-values) enumeration to unknownFutureValue, with value change from 999 to 3.",
+                    "Target": "cloudPcAuditActorType"
+                },
+                {
+                    "Id": "e5352735-c007-4d19-ac03-bbba6d26f455",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "other",
+                    "ChangeType": "Change",
+                    "Description": "Changed the **other** member in the [cloudPcAuditCategory](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcauditevent?view=graph-rest-beta#cloudpcauditcategory-values) enumeration to unknownFutureValue, with value change from 999 to 1.",
+                    "Target": "cloudPcAuditCategory"
+                }
+            ],
+            "Id": "e5352735-c007-4d19-ac03-bbba6d26f455",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-11-20T02:13:21.7336218Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "12f93700-b666-4c5c-b569-7db20691c5b3",
                     "ApiChange": "Member",
                     "ChangedApiName": "rawRemoteConnectionReports",
@@ -26,7 +68,7 @@
             "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
-      {
+        {
             "ChangeList": [
                 {
                     "Id": "4d35dcf2-2f6c-413d-a4c4-c7770152a77b",
@@ -67,9 +109,8 @@
             "CreatedDateTime": "2023-09-29T10:36:40.1525853Z",
             "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
-        },  
-
-      {
+        },
+        {
             "ChangeList": [
                 {
                     "Id": "6ec2ebe8-8f0c-4595-a8bb-5a40c631fcb8",
@@ -3557,7 +3598,7 @@
         "WorkloadArea": "Device and app management",
         "SubArea": "Cloud PC"
     },
-    {   
+    {
         "ChangeList": [
           {
             "Id": "2107ee19-7ed3-4480-936c-61a372e36751",

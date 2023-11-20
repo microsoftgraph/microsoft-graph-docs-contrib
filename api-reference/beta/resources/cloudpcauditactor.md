@@ -19,7 +19,7 @@ The audit actor represented by the Microsoft Entra user and application associat
 
 |Property|Type|Description|
 |:---|:---|:---|
-|type|[cloudPcAuditActorType](#cloudpcauditactortype-values)|The actor type. Possible values include `ItPro`, `Application`, `Partner` and `Unknown`.|
+|type|[cloudPcAuditActorType](#cloudpcauditactortype-values)|The actor type. Possible values include `ItPro`, `Application`, `Partner` and `UnknownFutureValue`.|
 |userPermissions|String collection|List of user permissions and application permissions when the audit event was performed.|
 |applicationId|String|Microsoft Entra application ID.|
 |applicationDisplayName|String|Name of the application.|
@@ -38,7 +38,7 @@ The audit actor represented by the Microsoft Entra user and application associat
 |itPro|The operation was performed by an IT pro.|
 |application|The operation was performed by the application.|
 |partner|The operation was performed by a partner.|
-|unknown|Unknown actor.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
 
