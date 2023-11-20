@@ -63,7 +63,7 @@ The following example shows a request to Retrieve the details of an AWS policy b
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.awsAuthorizationSystem/YXJuOmF3czppYW06OjEyMzQ1Njc4OTAxMjpwb2xpY3kvQUFBLWxpc3RQdXRHZXRBbGxCdWNrZXRz
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.awsAuthorizationSystem/policies/YXJuOmF3czppYW06OjEyMzQ1Njc4OTAxMjpwb2xpY3kvQUFBLWxpc3RQdXRHZXRBbGxCdWNrZXRz
 ```
 
 
@@ -81,15 +81,14 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{id}/microsoft.graph.awsAuthorizationSystem/policies",
-  "value": [
+  "value": 
     {
+      "@odata.type": "#microsoft.graph.awsPolicy",
       "id": "YXJuOmF3czppYW06OjEyMzQ1Njc4OTAxMjpwb2xpY3kvQUFBLWxpc3RQdXRHZXRBbGxCdWNrZXRz",
       "externalId": "arn:aws:iam::123456789012:policy/AAA-listPutGetAllBuckets",
       "displayName": "AAA-listPutGetAllBuckets",
       "awsPolicyType": "custom"
     }
-  ]
 }
 ```
 
