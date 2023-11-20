@@ -1509,6 +1509,36 @@
       "CreatedDateTime": "2023-10-04T15:37:11Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
+    },
+    {
+      "changelog": [
+        {
+          "ChangeList": [
+            {
+              "Id": "623b6f0b-1a38-462d-bdfd-db928aa3612c",
+              "ApiChange": "Method",
+              "ChangedApiName": "getAllRetainedMessages",
+              "ChangeType": "Addition",
+              "Description": "Added the [getAllRetainedMessages](https://learn.microsoft.com/en-us/graph/api/channel?view=graph-rest-beta) method to the [channel](https://learn.microsoft.com/en-us/graph/api/channel?view=graph-rest-beta) resource.",
+              "Target": "channel"
+            },
+            {
+              "Id": "623b6f0b-1a38-462d-bdfd-db928aa3612c",
+              "ApiChange": "Method",
+              "ChangedApiName": "getAllRetainedMessages",
+              "ChangeType": "Addition",
+              "Description": "Added the [getAllRetainedMessages](https://learn.microsoft.com/en-us/graph/api/chat?view=graph-rest-beta) method to the [chat](https://learn.microsoft.com/en-us/graph/api/chat?view=graph-rest-beta) resource.",
+              "Target": "chat"
+            }
+          ],
+          "Id": "623b6f0b-1a38-462d-bdfd-db928aa3612c",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2023-11-20T18:06:20.975484Z",
+          "WorkloadArea": "Teamwork",
+          "SubArea": "Microsoft.Teams.Shifts"
+        }
+      ]
     }
   ]
 }
