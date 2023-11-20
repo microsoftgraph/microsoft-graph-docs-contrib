@@ -15,15 +15,23 @@ Namespace: microsoft.graph
 
 Represents the details of an [open shift](../resources/openshift.md).
 
+Inherits from [shiftItem](../resources/shiftitem.md).
+
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+| activities 	| [shiftActivity](shiftactivity.md) collection   | An incremental part of a shift that can cover details of when and where an employee is during their shift. For example, an assignment, a scheduled break, or lunch. Required. Inherited from [shiftItem](../resources/shiftitem.md). |
+| displayName               | string                  | The shift label of the **openShift**. Inherited from [shiftItem](../resources/shiftitem.md). |
+| endDateTime               | DateTimeOffset                 | The end date and time for the **openShift**. Required. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [shiftItem](../resources/shiftitem.md). |
+| notes               | string                  | The shift notes for the **openShift**. Inherited from [shiftItem](../resources/shiftitem.md). |
 |openSlotCount|Int32| Count of the number of slots for the given open shift.|
+| startDateTime               | DateTimeOffset                  | The start date and time for the **openShift**. Required. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [shiftItem](../resources/shiftitem.md). |
+| theme | scheduleEntityTheme   |  Possible values are: `white`, `blue`, `green`, `purple`, `pink`, `yellow`, `gray`, `darkBlue`, `darkGreen`, `darkPurple`, `darkPink`, `darkYellow`, `unknownFutureValue`. Inherited from [shiftItem](../resources/shiftitem.md). |
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -36,14 +44,13 @@ Here's a JSON representation of the resource.
 
 ```json
 {
-  "openSlotCount": 1024,
-  "displayName": "Day Shift",
-  "startDateTime": "2023-06-11T01:45:00Z",
-  "endDateTime": "2023-06-11T02:15:00Z",
-  "theme": "blue",
-  "notes": null,
-  "openSlotCount": 6,
-  "activities": []
+  "activities": [{"@odata.type": "microsoft.graph.shiftActivity"}],
+  "displayName": "String",
+  "endDateTime": "String (timestamp)",
+  "notes": "String",
+  "openSlotCount": "Int32",
+  "startDateTime": "String (timestamp)",
+  "theme": "String"
 }
 ```
 
