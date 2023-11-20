@@ -39,7 +39,7 @@ Inherits from [finding](../resources/finding.md).
 |affectedSystem|[authorizationSystem](../resources/authorizationsystem.md)|The system that can be accessed from an external system. Supports `$orderby` (`affectedSystem/authorizationSystemName`) and `$filter` as follows: `$filter=affectedSystem/authorizationSystemId IN ['authorizationSystemIds']`|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

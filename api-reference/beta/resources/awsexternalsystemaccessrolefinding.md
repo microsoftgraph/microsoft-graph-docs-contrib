@@ -38,7 +38,7 @@ Inherits from [finding](../resources/finding.md).
 |role|[awsRole](../resources/awsrole.md)|The role that has access to external accounts. Supports `$orderby` (for `role/displayName`) and `$filter` as follows: `$filter=role/authorizationSystem/authorizationSystemId IN ['authorizationSystemIds']` and `$filter=role/authorizationSystem/authorizationSystemName eq 'authsystemname'`. Autoexpanded by default.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

@@ -26,7 +26,7 @@ None.
 |accounts|[authorizationSystem](../resources/authorizationsystem.md) collection|An AWS account.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.enumeratedAccountsWithAccess"
