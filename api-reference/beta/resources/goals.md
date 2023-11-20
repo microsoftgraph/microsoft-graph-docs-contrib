@@ -1,6 +1,6 @@
 ---
 title: "goals resource type"
-description: "Represents a goals container in Viva Goals organization."
+description: "Represents a goals container in a Viva Goals organization."
 author: "ishatyagiit"
 ms.localizationpriority: medium
 ms.prod: "employee-goals"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a goals container in Viva Goals organization.
+Represents a goals container in a Viva Goals organization.
 
 ## Methods
 None.
