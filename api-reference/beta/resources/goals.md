@@ -1,6 +1,6 @@
 ---
 title: "goals resource type"
-description: "Represents the collection of APIs for Goals Export Jobs."
+description: "Represents a goals container in Viva Goals organization."
 author: "ishatyagiit"
 ms.localizationpriority: medium
 ms.prod: "employee-goals"
@@ -13,13 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the collection of APIs for Goals Export Jobs.
+Represents a goals container in Viva Goals organization.
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List exportJobs](../api/goals-list-exportjobs.md)|[goalsExportJob](../resources/goalsexportjob.md) collection|Get the goalsExportJob resources from the exportJobs navigation property.|
-|[Create goalsExportJob](../api/goals-post-exportjobs.md)|[goalsExportJob](../resources/goalsexportjob.md)|Create a new goalsExportJob object.|
+None.
 
 ## Properties
 None.
@@ -43,4 +40,3 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.goals"
 }
 ```
-
