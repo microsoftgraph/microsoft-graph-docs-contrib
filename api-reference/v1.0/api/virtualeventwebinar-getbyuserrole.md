@@ -26,12 +26,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /solutions/virtualEvents/webinars/getByUserRole(role={role})
+GET /solutions/virtualEvents/webinars/getByUserRole(role='{role}')
 ```
 
 ## Function parameters
 
-In the request URL, provide the following query parameters with values. 
+In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
