@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2857
+Content-Length: 2916
 
 {
   "value": {
@@ -128,7 +128,8 @@ Content-Length: 2857
     ],
     "appActionIfUnableToAuthenticateUser": "wipe",
     "dialerRestrictionLevel": "managedApps",
-    "gracePeriodToBlockAppsDuringOffClockHours": "PT2M4.5004762S"
+    "gracePeriodToBlockAppsDuringOffClockHours": "PT2M4.5004762S",
+    "protectedMessagingRedirectAppType": "anyManagedApp"
   }
 }
 ```
