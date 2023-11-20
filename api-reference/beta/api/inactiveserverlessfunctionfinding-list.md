@@ -2,6 +2,7 @@
 title: "List inactiveServerlessFunctionFinding objects"
 description: "List the details of inactive serverless functions in authorization systems onboarded to Permissions Management."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType

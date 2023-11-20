@@ -2,6 +2,7 @@
 title: "List resources (for an AWS authorization system)"
 description: "List the awsAuthorizationSystemResource objects and their properties for a provided AWS authorization system."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType

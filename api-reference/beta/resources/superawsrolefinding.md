@@ -2,6 +2,7 @@
 title: "superAwsRoleFinding resource type"
 description: "Represents the super AWS roles."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType

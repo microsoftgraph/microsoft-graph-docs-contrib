@@ -2,6 +2,7 @@
 title: "List users (in an Azure authorization system)"
 description: "Get a list of the azureUser objects and their properties."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType

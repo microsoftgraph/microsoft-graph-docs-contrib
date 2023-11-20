@@ -2,6 +2,7 @@
 title: "inactiveGcpServiceAccountFinding resource type"
 description: "Represents the inactive GCP service acccounts."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType

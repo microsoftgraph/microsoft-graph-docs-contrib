@@ -2,6 +2,7 @@
 title: "awsIdentityAccessManagementKeyUsageFinding resource type"
 description: "The IAM access key age represents the number of keys that have not been used in the over 90 days."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType

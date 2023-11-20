@@ -2,6 +2,7 @@
 title: "awsExternalSystemAccessFinding resource type"
 description: "Represents findings related to external accounts that are able to access a given AWS account."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType

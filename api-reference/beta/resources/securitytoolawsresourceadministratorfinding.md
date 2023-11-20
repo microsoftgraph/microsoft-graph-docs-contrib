@@ -2,6 +2,7 @@
 title: "securityToolAwsResourceAdministratorFinding resource type"
 description: "View AWS resources that can administer security tools."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType

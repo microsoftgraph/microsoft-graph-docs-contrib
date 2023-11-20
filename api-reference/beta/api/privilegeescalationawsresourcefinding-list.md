@@ -2,6 +2,7 @@
 title: "List privilegeEscalationAwsResourceFinding objects"
 description: "Get a list of the privilegeEscalationAwsResourceFinding objects and their properties."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType

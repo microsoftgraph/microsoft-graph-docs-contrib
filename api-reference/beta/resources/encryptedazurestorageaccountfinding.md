@@ -2,6 +2,7 @@
 title: "encryptedAzureStorageAccountFinding resource type"
 description: "Represents the findings for Azure encrypted storage accounts."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType

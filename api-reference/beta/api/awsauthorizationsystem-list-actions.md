@@ -2,6 +2,7 @@
 title: "List actions (for an AWS authorization system)"
 description: "List the awsAuthorizationSystemAction objects and their properties."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType

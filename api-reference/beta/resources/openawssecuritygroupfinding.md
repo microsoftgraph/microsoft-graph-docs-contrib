@@ -2,6 +2,7 @@
 title: "openAwsSecurityGroupFinding resource type"
 description: "View AWS open security groups."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType

@@ -2,6 +2,7 @@
 title: "superUserFinding: aggregatedSummary"
 description: "View the raw count of super users in the specified AWS, Azure, or GCP authorization systems."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
