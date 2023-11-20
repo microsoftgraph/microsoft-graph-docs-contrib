@@ -4,30 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = CustomSecurityAttributeDefinition()
-request_body.attribute_set = 'Engineering'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.description = 'Target completion date'
+request_body = CustomSecurityAttributeDefinition(
+	attribute_set = "Engineering",
+	description = "Target completion date",
+	is_collection = False,
+	is_searchable = True,
+	name = "ProjectDate",
+	status = "Available",
+	type = "String",
+	use_pre_defined_values_only = False,
+)
 
-request_body.is_collection = False
-
-request_body.is_searchable = True
-
-request_body.name = 'ProjectDate'
-
-request_body.status = 'Available'
-
-request_body.type = 'String'
-
-request_body.use_pre_defined_values_only = False
-
-
-
-
-result = await client.directory.custom_security_attribute_definitions.post(request_body = request_body)
+result = await graph_client.directory.custom_security_attribute_definitions.post(request_body)
 
 
 ```

@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 [!INCLUDE [sample-code](../includes/snippets/php/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration-list-list-windows10enterprisemodernappmanagementconfigurations-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration-list-list-windows10enterprisemodernappmanagementconfigurations-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration-list-list-windows10enterprisemodernappmanagementconfigurations-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

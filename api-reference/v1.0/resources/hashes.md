@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 ms.localizationpriority: medium
 title: "hashes resource type"
 description: "The Hashes resource groups available hashes into a single structure for an item."

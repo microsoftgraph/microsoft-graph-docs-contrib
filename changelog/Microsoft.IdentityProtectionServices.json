@@ -73,6 +73,33 @@
       "CreatedDateTime": "2023-05-03T16:31:23.725417Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
+   
+    },
+    {
+      "ChangeList": [
+        {
+        "Id": "c9f8d9b0-da32-48d1-9980-06c1ac95b815",
+        "ApiChange": "Property",
+        "ChangedApiName": "secureSignInSession",
+        "ChangeType": "Addition",
+        "Description": "Added the **secureSignInSession** property to the [conditionalAccessSessionControls](https://learn.microsoft.com/graph/api/resources/conditionalAccessSessionControls?view=graph-rest-beta) resource.",
+        "Target": "conditionalAccessSessionControls"
+        },
+        {
+          "Id": "c9f8d9b0-da32-48d1-9980-06c1ac95b815",
+          "ApiChange": "Resource",
+          "ChangedApiName": "secureSignInSessionControl",
+          "ChangeType": "Addition",
+          "Description": "Added the [secureSignInSessionControl](https://learn.microsoft.com/graph/api/resources/secureSignInSessionControl?view=graph-rest-beta) resource.",
+          "Target": "secureSignInSessionControl"
+          }
+      ],
+      "Id": "c9f8d9b0-da32-48d1-9980-06c1ac95b815",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-08-21T00:00:00.8755943Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [

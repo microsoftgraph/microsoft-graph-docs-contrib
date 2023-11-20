@@ -4,29 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = Attachment()
-request_body.@odata_type = '#Microsoft.OutlookServices.ItemAttachment'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.name = 'name-value'
+request_body = Attachment(
+	odata_type = "#Microsoft.OutlookServices.ItemAttachment",
+	name = "name-value",
+	additional_data = {
+			"item" : {
+					"@odata_type" : "microsoft.graph.message",
+			},
+	}
+)
 
-additional_data = [
-'item' => request_body = Item()
-		request_body.@odata_type = 'microsoft.graph.message'
-
-
-request_body.item = item
-
-];
-request_body.additional_data(additional_data)
-
-
-
-
-
-result = await client.me.events.by_event_id('event-id').attachments.post(request_body = request_body)
+result = await graph_client.me.events.by_event_id('event-id').attachments.post(request_body)
 
 
 ```

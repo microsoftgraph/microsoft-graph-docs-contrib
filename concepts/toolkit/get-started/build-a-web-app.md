@@ -25,7 +25,7 @@ You can use Microsoft Graph Toolkit in your application by referencing the loade
 To use the Toolkit via mgt-loader, add the reference in a script to your code:
 
 ```html
-<script src="https://unpkg.com/@microsoft/mgt@2/dist/bundle/mgt-loader.js"></script>
+<script src="https://unpkg.com/@microsoft/mgt@3/dist/bundle/mgt-loader.js"></script>
 ```
 
 # [npm](#tab/npm)
@@ -40,7 +40,7 @@ npm install @microsoft/mgt
 
 ## Initialize the MSAL2 Provider
 
-The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers/providers.md). The [MSAL2 Provider](../providers/msal2.md) uses msal-browser to sign in users and acquire tokens. You can initialize this provider in your HTML or JavaScript.
+The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers/providers.md). The [MSAL2 Provider](../providers/msal2.md) uses MSAL-browser to sign in users and acquire tokens. You can initialize this provider in your HTML or JavaScript.
 
 > **Note**: If you're currently using the MSAL Provider and would like to update to MSAL2 Provider, see [Migrating from MSAL Provider to MSAL2 Provider](../providers/msal2.md#migrating-from-msal-provider-to-msal2-provider).
 > If you want to use your own backend authentication, use the [Proxy Provider](../providers/proxy.md) in place of the MSAL2 Provider.
@@ -60,7 +60,8 @@ Add the `mgt-msal2-provider` component to your HTML page and set the `client-id`
 To initialize the MSAL provider in your JavaScript, add the following code to your application:
 
 ```javascript
-import { Providers, Msal2Provider } from "@microsoft/mgt";
+import { Providers } from "@microsoft/mgt-element";
+import { Msal2Provider } from "@microsoft/mgt-msal2-provider";
 
 Providers.globalProvider = new Msal2Provider({
   clientId: "<YOUR_CLIENT_ID>",
@@ -73,7 +74,7 @@ The client ID is the only property required to initialize the provider, but you 
 
 ### Creating an app/client ID
 
-In order to get a client ID, you need to [register your application](./add-aad-app-registration.md) in Azure AD.
+In order to get a client ID, you need to [register your application](./add-aad-app-registration.md) in Microsoft Entra ID.
 
 ## Add components
 
@@ -84,7 +85,7 @@ After you initialize the MSAL2 provider, you can start using any of the Toolkit 
 The following is a full working example using mgt-loader, the MSAL2 Provider initialized in HTML, and the Login component:
 
 ```html
-<script src="https://unpkg.com/@microsoft/mgt@2/dist/bundle/mgt-loader.js"></script>
+<script src="https://unpkg.com/@microsoft/mgt@3/dist/bundle/mgt-loader.js"></script>
 <mgt-msal2-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal2-provider>
 <mgt-login></mgt-login>
 ```
@@ -105,7 +106,8 @@ This is an example using the ES6 modules, the MSAL2 Provider initialized in HTML
 This is an example using the ES6 modules, the MSAL2 Provider initialized in JavaScript, and the Login component:
 
 ```javascript
-import { Providers, Msal2Provider } from "@microsoft/mgt";
+import { Providers } from "@microsoft/mgt-element";
+import { Msal2Provider } from "@microsoft/mgt-msal2-provider";
 
 Providers.globalProvider = new Msal2Provider({
   clientId: "<YOUR_CLIENT_ID>",
@@ -128,7 +130,7 @@ In order to test your app, MSAL requires the page to be hosted in a web server f
 
 If you're just getting started and want to play around, you can use [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in Visual Studio Code or any similar lightweight development server. Download the extension and open your HTML file using live server.
 
-> **Note:** Make sure the **redirect URI** in your app registration is set to the localhost port your application is hosted on. Go to your app registration in the [Azure portal](https://portal.azure.com), click **Authentication** under manage, and add the correct **redirect URI**.
+> **Note:** Make sure the **redirect URI** in your app registration is set to the localhost port your application is hosted on. Go to your app registration in the [Microsoft Entra admin center](https://entra.microsoft.com), click **Authentication** under manage, and add the correct **redirect URI**.
 
 ## Track a user's sign in state
 
@@ -144,7 +146,7 @@ If you're using the `mgt-loader` library, you can access the `Provider` and `Pro
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://unpkg.com/@microsoft/mgt@2/dist/bundle/mgt-loader.js"></script>
+    <script src="https://unpkg.com/@microsoft/mgt@3/dist/bundle/mgt-loader.js"></script>
   </head>
   <body>
     <mgt-msal2-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal2-provider>
@@ -169,7 +171,8 @@ If you're using the `mgt-loader` library, you can access the `Provider` and `Pro
 If you're using the toolkit via the npm packages, you can import the `Provider` and `ProviderState` from `@microsoft/mgt`.
 
 ```javascript
-import { Providers, ProviderState, Msal2Provider } from "@microsoft/mgt";
+import { Providers, ProviderState } from "@microsoft/mgt-element";
+import { Msal2Provider } from "@microsoft/mgt-msal2-provider";
 
 Providers.globalProvider = new Msal2Provider({
   clientId: "<YOUR_CLIENT_ID>",

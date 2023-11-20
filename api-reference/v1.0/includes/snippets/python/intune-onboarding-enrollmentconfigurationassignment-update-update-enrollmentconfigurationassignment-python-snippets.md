@@ -4,23 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = EnrollmentConfigurationAssignment()
-request_body.@odata_type = '#microsoft.graph.enrollmentConfigurationAssignment'
+graph_client = GraphServiceClient(credentials, scopes)
 
-target = ConfigurationManagerCollectionAssignmentTarget()
-target.@odata_type = 'microsoft.graph.configurationManagerCollectionAssignmentTarget'
+request_body = EnrollmentConfigurationAssignment(
+	odata_type = "#microsoft.graph.enrollmentConfigurationAssignment",
+	target = ConfigurationManagerCollectionAssignmentTarget(
+		odata_type = "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+		collection_id = "Collection Id value",
+	),
+)
 
-target.collection_id = 'Collection Id value'
-
-
-request_body.target = target
-
-
-
-result = await client.device_management.device_enrollment_configurations.by_device_enrollment_configuration_id('deviceEnrollmentConfiguration-id').assignments.by_assignment_id('enrollmentConfigurationAssignment-id').patch(request_body = request_body)
+result = await graph_client.device_management.device_enrollment_configurations.by_device_enrollment_configuration_id('deviceEnrollmentConfiguration-id').assignments.by_enrollment_configuration_assignment_id('enrollmentConfigurationAssignment-id').patch(request_body)
 
 
 ```

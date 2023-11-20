@@ -4,7 +4,7 @@ description: "Focused Inbox allows you to view important messages in the `Focuse
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.prod: mail
-author: "abheek-das"
+author: "SuryaLashmiS"
 ---
 
 # Manage Focused Inbox

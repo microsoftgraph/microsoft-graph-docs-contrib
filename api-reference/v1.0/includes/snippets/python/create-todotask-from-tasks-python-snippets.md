@@ -4,30 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = TodoTask()
-request_body.title = 'A new task'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.Categories(['Important', ])
+request_body = TodoTask(
+	title = "A new task",
+	categories = [
+		"Important",
+	],
+	linked_resources = [
+		LinkedResource(
+			web_url = "http://microsoft.com",
+			application_name = "Microsoft",
+			display_name = "Microsoft",
+		),
+	],
+)
 
-linked_resources_linked_resource1 = LinkedResource()
-linked_resources_linked_resource1.web_url = 'http://microsoft.com'
-
-linked_resources_linked_resource1.application_name = 'Microsoft'
-
-linked_resources_linked_resource1.display_name = 'Microsoft'
-
-
-linkedResourcesArray []= linkedResourcesLinkedResource1;
-request_body.linkedresources(linkedResourcesArray)
-
-
-
-
-
-result = await client.me.todo.lists.by_list_id('todoTaskList-id').tasks.post(request_body = request_body)
+result = await graph_client.me.todo.lists.by_todo_task_list_id('todoTaskList-id').tasks.post(request_body)
 
 
 ```

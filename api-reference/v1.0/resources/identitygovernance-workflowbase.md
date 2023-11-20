@@ -29,7 +29,7 @@ None.
 |displayName|String|A string to identify the workflow.|
 |executionConditions|[microsoft.graph.identityGovernance.workflowExecutionConditions](../resources/identitygovernance-workflowexecutionconditions.md)|Defines when and for who the workflow will run.|
 |isEnabled|Boolean|Whether the workflow is enabled or disabled. If this setting is `true`, the workflow can be run on demand or on schedule when **isSchedulingEnabled** is `true`.|
-|isSchedulingEnabled|Boolean|If `true`, the Lifecycle Workflow engine executes the workflow based on the schedule defined by tenant settings. Cannot be `true` for a disabled workflow (where **isEnabled** is `false`).|
+|isSchedulingEnabled|Boolean|If `true`, the Lifecycle Workflow engine executes the workflow based on the schedule defined by tenant settings. Can't be `true` for a disabled workflow (where **isEnabled** is `false`).|
 |lastModifiedDateTime|DateTimeOffset|When the workflow was last modified.|
 
 ## Relationships
@@ -37,12 +37,12 @@ None.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |createdBy|[user](../resources/user.md)|The user who created the workflow.|
-|lastModifiedBy|[user](../resources/user.md)|The unique identifier of the AAD identity that last modified the workflow.|
+|lastModifiedBy|[user](../resources/user.md)|The unique identifier of the Microsoft Entra identity that last modified the workflow.|
 |tasks|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|The tasks in the workflow.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

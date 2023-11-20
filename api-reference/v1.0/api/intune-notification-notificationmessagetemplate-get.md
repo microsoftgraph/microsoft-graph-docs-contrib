@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/notificationMessageTemplat
 [!INCLUDE [sample-code](../includes/snippets/php/intune-notification-notificationmessagetemplate-get-get-notificationmessagetemplate-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-notification-notificationmessagetemplate-get-get-notificationmessagetemplate-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/intune-notification-notificationmessagetemplate-get-get-notificationmessagetemplate-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

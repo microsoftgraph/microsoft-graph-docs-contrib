@@ -21,7 +21,7 @@ Organizations and partners often have their own tooling for generating reports a
 
 ## Look up a call record by its call ID
 
-Applications can retrieve a [call record](/graph/api/resources/callrecords-callrecord) by its ID. This ID can be determined from a webhook notification or retrieved from administrative tools. A call record is generated after a call concludes and the record is retained for 30 days.
+Applications can retrieve a [call record](/graph/api/resources/callrecords-callrecord) by its ID. This ID can be determined from a webhook notification, a [list](/graph/api/callrecords-callrecord-list) of available call records, or retrieved from administrative tools. A call record is generated after a call concludes and the record is retained for 30 days.
 
 ## Get call record reports
 
@@ -29,5 +29,5 @@ Organizations that use Microsoft Teams to connect to the public switched telepho
 
 ## See also
 
-- [Call records permissions](./permissions-reference.md#call-records-permissions)
+- [Call records permissions](./permissions-reference.md)
 - [Teams API overview](teams-concept-overview.md)

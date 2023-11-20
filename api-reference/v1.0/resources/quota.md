@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 title: quota
 ms.localizationpriority: medium
 description: "The quota resource provides details about space constraints on a drive resource."

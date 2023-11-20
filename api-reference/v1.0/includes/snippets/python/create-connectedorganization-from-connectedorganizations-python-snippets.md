@@ -4,32 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = ConnectedOrganization()
-request_body.display_name = 'Connected organization name'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.description = 'Connected organization description'
+request_body = ConnectedOrganization(
+	display_name = "Connected organization name",
+	description = "Connected organization description",
+	identity_sources = [
+		DomainIdentitySource(
+			odata_type = "#microsoft.graph.domainIdentitySource",
+			domain_name = "example.com",
+			display_name = "example.com",
+		),
+	],
+	state = ConnectedOrganizationState.Proposed,
+)
 
-identity_sources_identity_source1 = DomainIdentitySource()
-identity_sources_identity_source1.@odata_type = '#microsoft.graph.domainIdentitySource'
-
-identity_sources_identity_source1.domain_name = 'example.com'
-
-identity_sources_identity_source1.display_name = 'example.com'
-
-
-identitySourcesArray []= identitySourcesIdentitySource1;
-request_body.identitysources(identitySourcesArray)
-
-
-request_body.state(ConnectedOrganizationState.Proposed('connectedorganizationstate.proposed'))
-
-
-
-
-result = await client.identity_governance.entitlement_management.connected_organizations.post(request_body = request_body)
+result = await graph_client.identity_governance.entitlement_management.connected_organizations.post(request_body)
 
 
 ```

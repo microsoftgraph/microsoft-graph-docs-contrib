@@ -1,7 +1,7 @@
 ---
 title: "user: getMailTips"
 description: "Get the MailTips of one or more recipients as available to the signed-in user."
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -15,17 +15,16 @@ Namespace: microsoft.graph
 
 Get the MailTips of one or more recipients as available to the signed-in [user](../resources/user.md).
 
-Note that by making a `POST` call to the `getMailTips` action, you can request specific types of MailTips to 
+Note that by making a `POST` call to the `getMailTips` action, you can request specific types of MailTips to
 be returned for more than one recipient at one time. The requested MailTips are returned in a [mailTips](../resources/mailtips.md) collection.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.Read, Mail.Read.Shared    |
-|Delegated (personal Microsoft account) | Mail.Read    |
-|Application | Mail.Read |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "user_getmailtips" } -->
+[!INCLUDE [permissions-table](../includes/permissions/user-getmailtips-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -68,7 +67,7 @@ Content-Type: application/json
 
 {
     "EmailAddresses": [
-        "danas@contoso.onmicrosoft.com", 
+        "danas@contoso.onmicrosoft.com",
         "fannyd@contoso.onmicrosoft.com"
     ],
     "MailTipsOptions": "automaticReplies, mailboxFullStatus"
@@ -77,6 +76,10 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-getmailtips-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/user-getmailtips-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -93,6 +96,10 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/user-getmailtips-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-getmailtips-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -2,7 +2,8 @@
 title: "signInFrequencySessionControl resource type"
 description: "Session control to enforce signin frequency."
 ms.localizationpriority: medium
-author: "davidspooner"
+author: "lisaychuang"
+ms.reviewer: conditionalaccesspm
 ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---
@@ -30,7 +31,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

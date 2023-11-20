@@ -21,13 +21,13 @@ For more information about how to handle unmute operations, see [unmuteParticipa
 
 > **Note:** This method is only supported for group calls.
 
-## Permissions
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported.                               |
-| Delegated (personal Microsoft account) | Not supported.                               |
-| Application                            | Calls.Initiate.All, Calls.AccessMedia.All |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "call_unmute" } -->
+[!INCLUDE [permissions-table](../includes/permissions/call-unmute-permissions.md)]
 
 > **Note:** Permissions are checked when the call is created; no additional permission check is made when calling this API. Calls.AccessMedia.All is only necessary for calls that use app-hosted media.
 
@@ -78,6 +78,10 @@ Content-Length: 46
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-unmute-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/call-unmute-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

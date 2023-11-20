@@ -136,6 +136,10 @@ Content-length: 792
 [!INCLUDE [sample-code](../includes/snippets/powershell/intune-books-iosvppebook-update-update-iosvppebook-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/intune-books-iosvppebook-update-update-iosvppebook-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

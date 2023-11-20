@@ -380,6 +380,64 @@
         "CreatedDateTime": "2023-04-04T14:01:24.5697379Z",
         "WorkloadArea": "Security",
         "SubArea": "Records management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "Permission",
+          "ChangedApiName": "RecordsManagement.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `RecordsManagement.Read.All` to the read operations of the [retentionLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-retentionlabel?view=graph-rest-beta) resource.",
+          "Target": "retentionLabel"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "Permission",
+          "ChangedApiName": "RecordsManagement.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `RecordsManagement.ReadWrite.All` to the read operations of the [retentionLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-retentionlabel?view=graph-rest-beta) resource.",
+          "Target": "retentionLabel"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "Permission",
+          "ChangedApiName": "RecordsManagement.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `RecordsManagement.Read.All` to the read operations of the [retentionEventType](https://learn.microsoft.com/en-us/graph/api/resources/security-retentioneventtype?view=graph-rest-beta) resource.",
+          "Target": "retentionEventType"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "Permission",
+          "ChangedApiName": "RecordsManagement.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `RecordsManagement.ReadWrite.All` to the read operations of the [retentionEventType](https://learn.microsoft.com/en-us/graph/api/resources/security-retentioneventtype?view=graph-rest-beta) resource.",
+          "Target": "retentionEventType"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "Permission",
+          "ChangedApiName": "RecordsManagement.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `RecordsManagement.Read.All` to the read operations of the [retentionEvent](https://learn.microsoft.com/en-us/graph/api/resources/security-retentionevent?view=graph-rest-beta) resource.",
+          "Target": "retentionEvent"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "Permission",
+          "ChangedApiName": "RecordsManagement.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `RecordsManagement.ReadWrite.All` to the read operations of the [retentionEvent](https://learn.microsoft.com/en-us/graph/api/resources/security-retentionevent?view=graph-rest-beta) resource.",
+          "Target": "retentionEvent"
+        }
+         ],
+      "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-09-26T20:00:41.5572363Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Records management"
     }
   ]
 }

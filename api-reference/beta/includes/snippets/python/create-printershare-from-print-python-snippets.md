@@ -4,22 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = PrinterShare()
-request_body.name = 'name-value'
+graph_client = GraphServiceClient(credentials, scopes)
 
-additional_data = [
-'printer@odata_bind' => 'https://graph.microsoft.com/beta/print/printers/{id}', 
-];
-request_body.additional_data(additional_data)
+request_body = PrinterShare(
+	name = "name-value",
+	additional_data = {
+			"printer@odata_bind" : "https://graph.microsoft.com/beta/print/printers/{id}",
+	}
+)
 
-
-
-
-
-result = await client.print.shares.post(request_body = request_body)
+result = await graph_client.print.shares.post(request_body)
 
 
 ```

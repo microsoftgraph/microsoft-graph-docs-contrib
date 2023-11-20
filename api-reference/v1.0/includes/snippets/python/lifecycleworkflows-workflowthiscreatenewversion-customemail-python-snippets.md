@@ -4,108 +4,69 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = CreateNewVersionPostRequestBody()
-additional_data = [
-'category' => 'joiner', 
-'description' => 'Configure new hire tasks for onboarding employees on their first day', 
-'display_name' => 'custom email marketing API test', 
-'is_enabled' => true,
-'is_scheduling_enabled' => false,
-'execution_conditions' => request_body = ExecutionConditions()
-		request_body.@odata_type = '#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions'
+graph_client = GraphServiceClient(credentials, scopes)
 
-scope = Scope()
-		scope.@odata_type = '#microsoft.graph.identityGovernance.ruleBasedSubjectSet'
+request_body = CreateNewVersionPostRequestBody(
+	additional_data = {
+			"category" : "joiner",
+			"description" : "Configure new hire tasks for onboarding employees on their first day",
+			"display_name" : "custom email marketing API test",
+			"is_enabled" : True,
+			"is_scheduling_enabled" : False,
+			"execution_conditions" : {
+					"@odata_type" : "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+					"scope" : {
+							"@odata_type" : "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+							"rule" : "(department eq 'Marketing')",
+					},
+					"trigger" : {
+							"@odata_type" : "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
+							"time_based_attribute" : WorkflowTriggerTimeBasedAttribute.EmployeeHireDate,
+							"offset_in_days" : 0,
+					},
+			},
+			"tasks" : [
+				{
+						"continue_on_error" : False,
+						"description" : "Enable user account in the directory",
+						"display_name" : "Enable User Account",
+						"is_enabled" : True,
+						"task_definition_id" : "6fc52c9d-398b-4305-9763-15f42c1676fc",
+						"arguments" : [
+						],
+				},
+				{
+						"continue_on_error" : False,
+						"description" : "Send welcome email to new hire",
+						"display_name" : "Send Welcome Email",
+						"is_enabled" : True,
+						"task_definition_id" : "70b29d51-b59a-4773-9280-8841dfd3f2ea",
+						"arguments" : [
+							{
+									"name" : "cc",
+									"value" : "1baa57fa-3c4e-4526-ba5a-db47a9df95f0",
+							},
+							{
+									"name" : "customSubject",
+									"value" : "Welcome to the organization {{userDisplayName}}!",
+							},
+							{
+									"name" : "customBody",
+									"value" : "Welcome to our organization {{userGivenName}}!",
+							},
+							{
+									"name" : "locale",
+									"value" : "en-us",
+							},
+						],
+				},
+			],
+	}
+)
 
-		scope.rule = '(department eq \'Marketing\')'
-
-
-request_body.scope = scope
-trigger = Trigger()
-		trigger.@odata_type = '#microsoft.graph.identityGovernance.timeBasedAttributeTrigger'
-
-		trigger.time_based_attribute = 'employeeHireDate'
-
-		trigger.OffsetInDays = 0
-
-
-request_body.trigger = trigger
-
-request_body.execution_conditions = executionConditions
-
-'tasks' => tasks1 = ()
-		tasks1.continue_on_error = False
-
-		tasks1.description = 'Enable user account in the directory'
-
-		tasks1.display_name = 'Enable User Account'
-
-		tasks1.is_enabled = True
-
-		tasks1.task_definition_id = '6fc52c9d-398b-4305-9763-15f42c1676fc'
-
-tasks1.Arguments([])
-
-
-tasksArray []= tasks1;
-tasks2 = ()
-	tasks2.continue_on_error = False
-
-	tasks2.description = 'Send welcome email to new hire'
-
-	tasks2.display_name = 'Send Welcome Email'
-
-	tasks2.is_enabled = True
-
-	tasks2.task_definition_id = '70b29d51-b59a-4773-9280-8841dfd3f2ea'
-
-arguments1 = ()
-	arguments1.name = 'cc'
-
-	arguments1.value = '1baa57fa-3c4e-4526-ba5a-db47a9df95f0'
-
-
-argumentsArray []= arguments1;
-arguments2 = ()
-	arguments2.name = 'customSubject'
-
-	arguments2.value = 'Welcome to the organization {{userDisplayName}}!'
-
-
-argumentsArray []= arguments2;
-arguments3 = ()
-	arguments3.name = 'customBody'
-
-	arguments3.value = 'Welcome to our organization {{userGivenName}}!'
-
-
-argumentsArray []= arguments3;
-arguments4 = ()
-	arguments4.name = 'locale'
-
-	arguments4.value = 'en-us'
-
-
-argumentsArray []= arguments4;
-tasks2.arguments(argumentsArray)
-
-
-
-tasksArray []= tasks2;
-request_body.tasks(tasksArray)
-
-
-];
-request_body.additional_data(additional_data)
-
-
-
-
-
-result = await client.identity_governance.lifecycle_workflows.workflows.by_workflow_id('workflow-id').microsoft_graph_identity_governance_create_new_version.post(request_body = request_body)
+result = await graph_client.identity_governance.lifecycle_workflows.workflows.by_workflow_id('workflow-id').microsoft_graph_identity_governance_create_new_version.post(request_body)
 
 
 ```

@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/10/2017
 title: List Recent Files
 ms.localizationpriority: medium
@@ -12,17 +12,16 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 List a set of items that have been recently used by the signed in user.
-This collection includes items that are in the user's drive as well as items they have access to from other drives.
+This collection includes items that are in the user's drive and items they have access to from other drives.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
-|Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "drive_recent" } -->
+[!INCLUDE [permissions-table](../includes/permissions/drive-recent-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -32,7 +31,7 @@ GET /me/drive/recent
 ```
 
 ## Response
-This method returns a collection of [DriveItem](../resources/driveitem.md) resources for items which the owner of the drive has recently accessed.
+This method returns a collection of [DriveItem](../resources/driveitem.md) resources for items that the owner of the drive has recently accessed.
 
 ## Examples
 
@@ -81,7 +80,7 @@ GET /me/drive/recent
 
 ### Response
 
-<!-- { 
+<!-- {
     "blockType": "response",
      "@odata.type": "Collection(microsoft.graph.driveItem)",
      "truncated": true
@@ -129,8 +128,8 @@ Content-Type: application/json
 
 ## Remarks
 
-Some driveItems returned from the **recent** action will include the **remoteItem** facet which indicates they are items from another drive.
-To access the original driveItem object, you will need to make a request using the information provided in **remoteItem** in the following format:
+Some driveItems returned from the **recent** action includes the **remoteItem** facet that indicates that items are from another drive.
+To access the original driveItem object, you'll need to make a request using the information provided in **remoteItem** in the following format:
 
 <!-- { "blockType": "ignored", "name": "drives-get-remoteitem" } -->
 

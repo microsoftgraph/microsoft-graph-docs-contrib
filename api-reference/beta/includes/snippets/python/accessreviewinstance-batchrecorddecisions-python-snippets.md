@@ -4,20 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = BatchRecordDecisionsPostRequestBody()
-request_body.decision = 'Approve'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.justification = 'All principals with access need continued access to the resource (Marketing Group) as all the principals are on the marketing team'
+request_body = BatchRecordDecisionsPostRequestBody(
+	decision = "Approve",
+	justification = "All principals with access need continued access to the resource (Marketing Group) as all the principals are on the marketing team",
+	resource_id = "a5c51e59-3fcd-4a37-87a1-835c0c21488a",
+)
 
-request_body.resource_id = 'a5c51e59-3fcd-4a37-87a1-835c0c21488a'
-
-
-
-
-await client.me.pending_acce_review_instances.by_pending_acce_review_instance_id('accessReviewInstance-id').batch_record_decisions.post(request_body = request_body)
+await graph_client.me.pending_access_review_instances.by_access_review_instance_id('accessReviewInstance-id').batch_record_decisions.post(request_body)
 
 
 ```

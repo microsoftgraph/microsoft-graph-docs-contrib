@@ -4,23 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = DepartmentTemplate()
-request_body.@odata_type = '#microsoft.graph.security.departmentTemplate'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.display_name = 'String'
+request_body = DepartmentTemplate(
+	odata_type = "#microsoft.graph.security.departmentTemplate",
+	display_name = "String",
+	created_by = IdentitySet(
+		odata_type = "microsoft.graph.identitySet",
+	),
+)
 
-created_by = IdentitySet()
-created_by.@odata_type = 'microsoft.graph.identitySet'
-
-
-request_body.created_by = created_by
-
-
-
-result = await client.security.labels.departments.post(request_body = request_body)
+result = await graph_client.security.labels.departments.post(request_body)
 
 
 ```
