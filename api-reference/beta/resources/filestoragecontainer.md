@@ -68,7 +68,7 @@ Represents a space where multiple users or a group of users can store files and 
 
 ## permissions values
 
-|Values|Description|
+|Value|Description|
 |:---|:---|
 |reader|Readers can read fileStorageContainer metadata and the content inside.|
 |writer|Writers can read and modify fileStorageContainer metadata and contents inside.|
