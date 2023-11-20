@@ -51,7 +51,7 @@ If successful, this action returns a `200 OK` response code.
 The following example shows how to get a custom property named "clientUniquieId".
 <!-- {
   "blockType": "request",
-  "name": "filestoragecontainerthis.list-customproperty"
+  "name": "filestoragecontainerthis.list-customproperty-1"
 }
 -->
 ``` http
@@ -79,7 +79,7 @@ Content-type: application/json
 The following example shows how to get all the custom properties of a fileStorageContainer.
 <!-- {
   "blockType": "request",
-  "name": "filestoragecontainerthis.list-customproperty"
+  "name": "filestoragecontainerthis.list-customproperty-2"
 }
 -->
 ``` http
