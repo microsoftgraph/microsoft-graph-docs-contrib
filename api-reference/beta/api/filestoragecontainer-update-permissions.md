@@ -65,8 +65,8 @@ The following example shows a request.
 -->
 ``` http
 PATCH https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/permissions/{permissionId}
-Content-Type: application/json
 
+Content-Type: application/json
 {
   "roles": ["manager"]
 }
@@ -80,7 +80,7 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 200 OK
-<!--Content-type: application/json
+Content-type: application/json
 
 {
   "@odata.type": "#microsoft.graph.permission",
@@ -94,6 +94,6 @@ HTTP/1.1 200 OK
       "email": "jason@gmail.com"
     }
   }
-} -->
+}
 ```
 
