@@ -47,21 +47,16 @@ You can specify the following properties when you create a **goalsExportJob** ob
 
 |Property|Type|Description|
 |:---|:---|:---|
-|goalsOrganizationId|String|The unique identifier of the [viva goals organization](/viva/goals/understand-orgs-and-teams#organizations-in-viva-goals).|
+|goalsOrganizationId|String|The unique identifier of the [Viva Goals organization](/viva/goals/understand-orgs-and-teams#organizations-in-viva-goals).|
 |explorerViewId|String|The unique identifier of the explorer view to be exported.|
 
-### Obtaining goalsOrganizationId and explorerViewId
-To obtain the **goalsOrganizationId** and **explorerViewId**, you can extract them from the URL of a saved explorerView. To learn more about Explorer views, see [Save and export](/viva/goals/explorer#save-and-export).
+You can get the **goalsOrganizationId** and **explorerViewId** values from the URL of a saved Explorer view. To learn more about Explorer views, see [Save and export](/viva/goals/explorer#save-and-export).
 
 ``` http
 https://goals.microsoft.com/org_uuid/94a356ab-53d5-40e7-8a85-053d6d3b9eb3/objective-explorer?viewId=e5e7a3c1-8cdf-409d-9ce9-ff730d65d95e
 ```
-- The org_uuid in the URL, specifically, `94a356ab-53d5-40e7-8a85-053d6d3b9eb3`, represents the `goalsOrganizationId`.
-
-- The viewId in the URL, specifically, `e5e7a3c1-8cdf-409d-9ce9-ff730d65d95e` represents the `explorerViewId`.
-
-So, you can identify the goalsOrganizationId as 94a356ab-53d5-40e7-8a85-053d6d3b9eb3, and the explorerViewId as e5e7a3c1-8cdf-409d-9ce9-ff730d65d95e from this URL.
-
+- The `org_uuid` in the URL, in this example `94a356ab-53d5-40e7-8a85-053d6d3b9eb3`, represents the **goalsOrganizationId**.
+- The `viewId` in the URL, in this example `e5e7a3c1-8cdf-409d-9ce9-ff730d65d95e`, represents the **explorerViewId**.
 
 ## Response
 
@@ -82,7 +77,7 @@ When the pending job completes, you can create the new [goalsExportJob](../resou
 ### Example 1: Status is `notStarted`
 
 #### Request
-The following example shows the request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "create_goalsexportjob_from_1"
@@ -124,7 +119,7 @@ Location: "https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs/
 ### Example 2: Status is `conflicting`
 
 #### Request
-The following example shows the request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "create_goalsexportjob_from_2"
@@ -175,7 +170,7 @@ Location: "https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs/
 ### Example 3:  Specified goalsOrganizationId doesn't exist
 
 #### Request
-The following example shows the request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "create_goalsexportjob_from_3"
@@ -222,7 +217,7 @@ Content-type: application/json
 ### Example 4:  Invalid goalsOrganizationId is passed
 
 #### Request
-The following example shows the request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "create_goalsexportjob_from_4"
