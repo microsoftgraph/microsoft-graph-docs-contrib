@@ -1,6 +1,6 @@
 ---
 title: "team: getOpenShifts"
-description: "Gets a list of openShift objects from across all schedules the user has access to."
+description: "Get a list of openShift objects from across all schedules the user has access to."
 author: "raulfernandes"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Gets a list of [openShift](../resources/openshift.md) objects from across all schedules a user has access to.
+Get a list of [openShift](../resources/openshift.md) objects from across all schedules a user has access to.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
