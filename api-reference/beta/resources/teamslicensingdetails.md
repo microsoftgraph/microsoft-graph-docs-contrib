@@ -19,7 +19,7 @@ A container for the range of Microsoft Teams license Details that are available 
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get Teams Licensing Details](../api/user-get-teamslicensingdetails.md.md)|[teamsLicensingDetails](../resources/teamsLicensingDetails.md) object|Retrieve whether a valid Microsoft Teams License is avaiable for the specified user.|
+|[Get Teams Licensing Details](../api/user-get-teamslicensingdetails.md)|[teamsLicensingDetails](../resources/teamsLicensingDetails.md) object|Retrieve whether a valid Microsoft Teams License is avaiable for the specified user.|
 
 ## Properties
 

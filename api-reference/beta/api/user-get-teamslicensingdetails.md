@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get teams licensing details of a user
+# Get teams licensing details for a user
 
 Namespace: microsoft.graph
 

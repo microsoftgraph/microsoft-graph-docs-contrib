@@ -7,13 +7,13 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get region and enablement status of Microsoft teams for a tenant
+# Get region and enablement status of Microsoft teams for the organization
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get organization level region information along with Microsoft teams enablement status of a [teamwork](../resources/teamwork.md) settings of the organization. This API specifies the teamwork properties of a organization.
+Get organization level region information along with Microsoft teams enablement status of [teamwork](../resources/teamwork.md) settings for the organization. This API specifies the teamwork properties for the organization.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
