@@ -50,7 +50,7 @@ You can specify the following properties when you create a **goalsExportJob** ob
 |goalsOrganizationId|String|The unique identifier of the [Viva Goals organization](/viva/goals/understand-orgs-and-teams#organizations-in-viva-goals).|
 |explorerViewId|String|The unique identifier of the explorer view to be exported.|
 
-You can get the **goalsOrganizationId** and **explorerViewId** values from the URL of a saved Explorer view. To learn more about Explorer views, see [Save and export](/viva/goals/explorer#save-and-export).
+You can get the **goalsOrganizationId** and **explorerViewId** values from the URL of a [Explorer view](/viva/goals/explorer#default-views-in-explorer).
 
 ``` http
 https://goals.microsoft.com/org_uuid/94a356ab-53d5-40e7-8a85-053d6d3b9eb3/objective-explorer?viewId=e5e7a3c1-8cdf-409d-9ce9-ff730d65d95e
