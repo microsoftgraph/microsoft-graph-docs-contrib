@@ -90,7 +90,7 @@
                     "Description": "Added the **cloudPcDeviceImageErrorCode** enumeration type.",
                     "Target": "cloudPcDeviceImage"
                 },
-                {done
+                {
                     "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
                     "ApiChange": "Member",
                     "ChangedApiName": "cloudPcDeviceImageStatus",
@@ -98,7 +98,7 @@
                     "Description": "Added the `unknown` member to the **cloudPcDeviceImageStatus** enumeration.",
                     "Target": "cloudPcDeviceImageStatus"
                 },
-                {done
+                {
                     "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
                     "ApiChange": "Member",
                     "ChangedApiName": "cloudPcDeviceImageOsStatus",
@@ -106,7 +106,7 @@
                     "Description": "Added the `unknown` member to the **cloudPcDeviceImageOsStatus** enumeration.",
                     "Target": "cloudPcDeviceImageOsStatus"
                 },
-                {done
+                {
                     "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
                     "ApiChange": "Property",
                     "ChangedApiName": "resourceId",
