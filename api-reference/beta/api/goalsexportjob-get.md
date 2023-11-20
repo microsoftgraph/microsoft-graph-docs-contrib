@@ -51,7 +51,7 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [goalsExportJob](../resources/goalsexportjob.md) object in the response body.
 
-Also, content of the resource will be downloaded only when the status of [goalsExportJob](../resources/goalsexportjob.md) is `succeeded`.
+The content of the resource downloads only when the **status** of the **goalsExportJob** object is `succeeded`.
 
 ### Response headers
 
@@ -63,7 +63,7 @@ Also, content of the resource will be downloaded only when the status of [goalsE
 The following examples show how to poll a **goalsExportJob** for a Viva Goals [Explorer view](/viva/goals/explorer#default-views-in-explorer) and the different responses that are returned.
 
 ### Example 1: Status is `running`
-It returns a `200 OK` response code along with **Retry-After** headers.
+The initial request returns a `200 OK` response code along with **Retry-After** headers.
 
 #### Request
 The following example shows a request.
