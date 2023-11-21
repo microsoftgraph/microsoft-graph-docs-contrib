@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents a space where multiple users or a group of users can store files and access them using an application. All file system objects in a fileStorageContainer are returned as [driveItem](../resources/driveitem.md) resources. 
 
-**FileStorageContainer** resources have properties that provide data about the fileStorageContainer's status and access setting. This includes:
+**FileStorageContainer** resources have properties that provide data about the fileStorageContainer's status and access setting. These properties are:
 * **ContainerType** specifies the application workload that owns or can access all containers of that container type. Each container must have only one container type. 
 * **Permissions** specifies the role a user is assigned to and the corresponding access privileges. 
 * **Status** specifies the current state of the container. Containers are created as inactive and require activation. Inactive containers are subjected to automatic deletion in 24 hours.
@@ -30,7 +30,7 @@ Represents a space where multiple users or a group of users can store files and 
 |[Delete fileStorageContainer](../api/filestorage-delete-containers.md)|None|Delete a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[Activate fileStorageContainer](../api/filestoragecontainer-activate.md)|None|Activate a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[Get drive](../api/filestoragecontainer-get-drive.md)|[drive](../resources/drive.md)|Get the drive resource from a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
-|[List permissions](../api/filestoragecontainer-list-permissions.md)|[permission](../resources/permission.md)|Retreive list of permissions on a fileStorageContainer.|
+|[List permissions](../api/filestoragecontainer-list-permissions.md)|[permission](../resources/permission.md)| List permissions on a fileStorageContainer.|
 |[Create permissions](../api/filestoragecontainer-post-permissions.md)|[permission](../resources/permission.md)|Add permission to a fileStorageContainer.|
 |[Update permissions](../api/filestoragecontainer-update-permissions.md)|[permission](../resources/permission.md)|Update permission on a fileStorageContainer.|
 |[Delete permissions](../api/filestoragecontainer-delete-permissions.md)|[permission](../resources/permission.md)|Delete permission from a fileStorageContainer.|
@@ -43,7 +43,7 @@ Represents a space where multiple users or a group of users can store files and 
 
 |Property|Type|Description|
 |:---|:---|:---|
-|containerTypeId|Guid|Container type id of the fileStorageContainer. Read-only.|
+|containerTypeId|Guid|Container type ID of the fileStorageContainer. Read-only.|
 |createdDateTime|DateTimeOffset|Date and time of the fileStorageContainer creation. Read-only.|
 |customProperties|[fileStorageContainerCustomPropertyDictionary](../resources/filestoragecontainercustompropertydictionary.md)|Custom property collection for the fileStorageContainer. Read-write.|
 |description|String|Provides a user-visible description of the fileStorageContainer. Read-write.|
@@ -64,7 +64,7 @@ Represents a space where multiple users or a group of users can store files and 
 |Relationship|Type|Description|
 |:---|:---|:---|
 |drive|[drive](../resources/drive.md)|The fileStorageContainer's drive resource. Read-only.|
-|permissions|[permission](../resources/permission.md) collection|The set of permissions for users in the fileStorageContainer. Permission for each user is set by the **roles** property. The possible values are 'reader', 'writer', 'manager', and 'owner'. See below for the full list of roles. Read-write.|
+|permissions|[permission](../resources/permission.md) collection|The set of permissions for users in the fileStorageContainer. Permission for each user is set by the **roles** property. The possible values are 'reader', 'writer', 'manager', and 'owner'. The following list shows the roles. Read-write.|
 
 ## Roles property values
 
