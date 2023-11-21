@@ -62,7 +62,7 @@ If successful, this action returns either a `200 Created` or `201 Created` respo
 The following example shows how to create a custom property called "clientUniqueId" for a container.
 <!-- {
   "blockType": "request",
-  "name": "filestoragecontainerthis.add-customproperty-1"
+  "name": "post_filestoragecontainer_customproperty_1"
 }
 -->
 ``` http
@@ -91,7 +91,7 @@ HTTP/1.1 200 Created
 The following example shows how to create a searchable custom property called "clientUniqueId" for a container.
 <!-- {
   "blockType": "request",
-  "name": "filestoragecontainerthis.add-customproperty-2"
+  "name": "post_filestoragecontainer_customproperty_2"
 }
 -->
 ``` http
@@ -120,7 +120,7 @@ HTTP/1.1 200 Created
 The following example shows how to create multiple custom properties for a container.
 <!-- {
   "blockType": "request",
-  "name": "filestoragecontainerthis.add-customproperty-3"
+  "name": "post_filestoragecontainer_customproperty_3"
 }
 -->
 ``` http
