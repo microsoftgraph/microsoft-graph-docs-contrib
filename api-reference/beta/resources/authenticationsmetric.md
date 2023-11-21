@@ -1,6 +1,6 @@
 ---
 title: "authenticationsMetric resource type"
-description: "Represents insights of daily and monthly authentications on apps registered in your tenant that is configured for Microsoft Entra ID for customers."
+description: "Represents insights of daily and monthly authentications on apps registered in your tenant that is configured for Microsoft Entra External ID for customers."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents insights of daily and monthly authentications on apps registered in your tenant that is configured for Microsoft Entra ID for customers.
+Represents insights of daily and monthly authentications on apps registered in your tenant that is configured for Microsoft Entra External ID for customers.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -26,8 +26,8 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| appid | String | The appID. Supports `$filter` (`eq`). |
-| attemptsCount | Int64 | Number of authentication requests made. Supports `$filter` (`eq`). |
+| appid | String | The ID of the Microsoft Entra application. Supports `$filter` (`eq`). |
+| attemptsCount | Int64 | The number of authentication requests made in the specified period. Supports `$filter` (`eq`). |
 | country | String | The location where the customers authenticated from. Supports `$filter` (`eq`). |
 | factDate | Date | The date of the user insight. |
 | id | String | Identifier for the user insight. Inherited from [entity](../resources/entity.md).|

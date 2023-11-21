@@ -36,10 +36,10 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |activeUsers|Int64|Daily active users.|
-|appId|String|Application ID the users sent requests to.|
+|appId|String|The ID of the Microsoft Entra application.|
 |authenticationCompletions|Int64|Daily authentication completions.|
 |authenticationRequests|Int64|Daily authentication requests.|
-|factDate|Date|Day or month of the insight.|
+|factDate|Date|The date of the insight.|
 |id|String|Identifier for the insight. Inherited from [entity](../resources/entity.md).|
 |os|String|The platform for the device that the customers used. Supports `$filter` (`eq`).|
 |securityTextCompletions|Int64|Daily MFA SMS completions.|

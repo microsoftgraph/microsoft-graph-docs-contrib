@@ -26,7 +26,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|appId|String|The application ID. Supports `$filter` (`eq`).|
+|appId|String|The ID of the Microsoft Entra application. Supports `$filter` (`eq`).|
 |attemptsCount|Int64|Number of users who attempted to sign up. Supports `$filter` (`eq`).|
 |factDate|Date|The date of the user insight.|
 |id|String|Identifier for the user insight. Inherited from [entity](../resources/entity.md).|

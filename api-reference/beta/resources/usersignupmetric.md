@@ -26,7 +26,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|count|Int64|Number of users who signed up. Supports `$filter` (`eq`).|
+|count|Int64|The total number of users who signed up in the specified period. Supports `$filter` (`eq`).|
 |factDate|Date|The date of the user insight.|
 |id|String|Identifier for the user insight. Inherited from [entity](../resources/entity.md).|
 |os|String|The device plaform that the customers used. Supports `$filter` (`eq`).|

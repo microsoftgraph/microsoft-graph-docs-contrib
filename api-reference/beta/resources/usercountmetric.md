@@ -26,8 +26,8 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 | id|String| Identifier for the insight. Inherited from [entity](../resources/entity.md).|
-| factDate|Date| Date of the insight.|
-| count|Int64| Total users in the tenant at over time.|
+| factDate|Date| The date of the insight.|
+| count|Int64| The total number of users in the tenant over time.|
 
 ## Relationships
 None.
