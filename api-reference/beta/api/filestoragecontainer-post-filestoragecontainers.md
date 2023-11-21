@@ -64,7 +64,7 @@ If successful, this method returns a `201 Created` response code and a [fileStor
 The following example shows how to create a fileStorageContainer.
 <!-- {
   "blockType": "request",
-  "name": "create_filestoragecontainer_from_filestoragecontainers"
+  "name": "create_filestoragecontainer"
 }
 -->
 ``` http
