@@ -85,14 +85,6 @@ The following example shows the response. By default, the property isn't searcha
 -->
 ``` http
 HTTP/1.1 200 Created
-Content-type: application/json
-
-{
-  "clientUniqueId": {
-    "value": "c5d88310-1fc7-49be-80ca-e7d7a11e638b",
-    "isSearchable": false
-  }
-}
 ```
 
 ### Request
@@ -122,14 +114,6 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 200 Created
-Content-type: application/json
-
-{
-  "clientUniqueId": {
-    "value": "c5d88310-1fc7-49be-80ca-e7d7a11e638b",
-     "isSearchable": true
-  }
-}
 ```
 
 ### Request
@@ -164,18 +148,6 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 201 Created
-Content-type: application/json
-
-{
-  "property1": {
-    "value": "valueOfProperty1",
-    "isSearchable": true
-  },
-  "property2": {
-    "value": "valueOfProperty2",
-    "isSearchable": false
-  }
-}
 ```
 
 
