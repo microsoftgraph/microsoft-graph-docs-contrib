@@ -10383,7 +10383,7 @@ items:
                     href: api/cloudpcreports-getfrontlinereport.md
                   - name: Get total aggregated remote connection reports
                     href: api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
-                  - name: Get daily aggregated tenant level connection metrics report.
+                  - name: Get Cloud PC performance related reports.
                     href: api/cloudpcreports-getcloudpcperformancereport.md
                   - name: Export to download report
                     items:

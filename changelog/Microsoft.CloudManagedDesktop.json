@@ -4,6 +4,22 @@
             "ChangeList": [
                 {
                     "Id": "b4801e7a-ece2-424d-9e77-4cd2ef7ae036",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "cloudPCInaccessibleReportName",
+                    "ChangeType": "Addition",
+                    "Description": "Added new enum type of **cloudPCInaccessibleReportName**",
+                    "Target": "cloudPCInaccessibleReportName"
+                },
+                {
+                    "Id": "b4801e7a-ece2-424d-9e77-4cd2ef7ae036",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "cloudPCPerformanceReportName",
+                    "ChangeType": "Addition",
+                    "Description": "Added new enum type of **cloudPCPerformanceReportName**",
+                    "Target": "cloudPCPerformanceReportName"
+                },
+                {
+                    "Id": "b4801e7a-ece2-424d-9e77-4cd2ef7ae036",
                     "ApiChange": "Member",
                     "ChangedApiName": "getInaccessibleCloudPcReports",
                     "ChangeType": "Addition",
