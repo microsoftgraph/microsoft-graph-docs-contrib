@@ -64,7 +64,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/permissions/{permissionId}
+PATCH /storage/fileStorage/containers/{containerId}/permissions/{permissionId}
 
 Content-Type: application/json
 {
