@@ -1,6 +1,6 @@
 ---
 title: "cloudPcReports: getCloudPCPerformanceReport"
-description: "Get Tenant level metrics for related reports for Cloud PCs including slow round-trip time Cloud PCs, Low UDP utilization Cloud PCs, No active time connected Cloud PCs and Low Active time connected Cloud PCs."
+description: "Get Cloud performance related reports."
 author: "Gutentag0004"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get Tenant level metrics for related reports for Cloud PCs including slow round-trip time Cloud PCs, Low UDP utilization Cloud PCs, No active time connected Cloud PCs and Low Active time connected Cloud PCs.
+Get Cloud performance related reports.
 
 ## Permissions
 
@@ -50,20 +50,20 @@ The following table shows the parameters that can be used with this method.
 | Parameter          | Type                                | Description                                                            |
 | :----------------- | :---------------------------------- | :--------------------------------------------------------------------- | 
 | `reportName`       | [cloudPCPerformanceReportName](#cloudpcperformancereportname-values) | The report name, possible values: `performanceTrendReport`        |
-| `filter`           | String                        | OData filter syntax. Only ‘and’, ‘or’, 'gt' and ’eq’ are currently supported |
-| `select`           | String collection            | Define behavior to get default columns if select not specified         |
-| `search`           | String                        | Specifies a string to search                                           |
-| `groupBy`          | String collection            | If used, must have the same contents as select parameter               |
-| `orderBy`          | String collection            | There will be a default order assigned                                 |
-| `skip`             | Int                         | Number of records to skip                                              |
+| `filter`           | String                        | OData filter syntax. Only `and`, `or`, `gt` and `eq` are currently supported. |
+| `select`           | String collection            | OData select syntax. Represents the selected columns of the reports.|
+| `search`           | String                        | Specifies a string to search.                                           |
+| `groupBy`          | String collection            | If used, must have the same contents as select parameter.              |
+| `orderBy`          | String collection            | There will be a default order assigned.                                 |
+| `skip`             | Int                         | Number of records to skip.                                              |
 | `top`              | Int                         | Specifies the page size. If not defined the default top is 25 and max is 100.|
 
 ### cloudPCPerformanceReportName values
 
 | Member                       | Description       |
 | :--------------------------- | :---------------- |
-| `performanceTrendReport`     | Indicates daily aggregated report which shows list of connection quality including "SlowRoundTripTimeCloudPcCount", "LowUdpConnectionPercentageCount", "NoTimeConnectedCloudPcCount", "LowTimeConnectedCloudPcCount" of Cloud PCs in last 7 days under a tenant, every single day's report is an aggregation of last 28 days dating back from the trigger time.  | 
-| `unknownFutureValue`         | Evolvable enumeration sentinel value. Do not use.             |
+| `performanceTrendReport`     | Indicates daily aggregated report which shows list of connection quality including `SlowRoundTripTimeCloudPcCount`, `LowUdpConnectionPercentageCount`, `NoTimeConnectedCloudPcCount`, `LowTimeConnectedCloudPcCount` of Cloud PCs in last 7 days under a tenant, every single report item is an aggregation of last 28 days dating back from the trigger time.  | 
+| `unknownFutureValue`         | Evolvable enumeration sentinel value. Don't use.             |
 
 
 ## Response
