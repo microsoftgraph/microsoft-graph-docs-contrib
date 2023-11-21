@@ -66,7 +66,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(oneDrive.permission)"
+  "@odata.type": "Collection(microsoft.graph.permission)"
 }
 -->
 ``` http
