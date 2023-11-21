@@ -80,20 +80,5 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.permission",
-  "id": "owIy5mfG1lbWJliZXJzaGlwfHiZXJzaGlwfHJvcnlicjExMUBvdXRsb29rLmNvbQ",
-  "roles": ["manager"],
-  "grantedToV2": {
-    "user": {
-      "id": "86503198-b81b-43fe-81ee-ad45b8848ac9",
-      "userPrincipalName": "jason@gmail.com",
-      "displayName": "Jason Harris",
-      "email": "jason@gmail.com"
-    }
-  }
-}
 ```
 
