@@ -27,18 +27,19 @@ A collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md)
 
 | Property                  | Type            | Description                                                                                                      |
 | ------------------------- | --------------- | ---------------------------------------------------------------------------------------------------------------- |
-| id                        | string          | ID of the schedule.                                                                                              |
+| activitiesIncludedWhenCopyingShiftsEnabled | Boolean | Indicates whether copied shifts should include the activities.                                          |
 | enabled                   | Boolean         | Indicates whether the schedule is enabled for the team. Required.                                                |
-| timeZone                  | string          | Indicates the time zone of the schedule team using tz database format. Required.                                 |
+| id                        | string          | ID of the schedule.                                                                                              |
+| offerShiftRequestsEnabled | Boolean         | Indicates whether offer shift requests are enabled for the schedule.                                             |
+| openShiftsEnabled         | Boolean         | Indicates whether open shifts are enabled for the schedule.                                                      |
 | provisionStatus           | operationStatus | The status of the schedule provisioning. The possible values are `notStarted`, `running`, `completed`, `failed`. |
 | provisionStatusCode       | string          | Additional information about why schedule provisioning failed.                                                   |
-| timeClockEnabled          | Boolean         | Indicates whether time clock is enabled for the schedule.                                                        |
-| openShiftsEnabled         | Boolean         | Indicates whether open shifts are enabled for the schedule.                                                      |
-| swapShiftsRequestsEnabled | Boolean         | Indicates whether swap shifts requests are enabled for the schedule.                                             |
-| offerShiftRequestsEnabled | Boolean         | Indicates whether offer shift requests are enabled for the schedule.                                             |
-| timeOffRequestsEnabled    | Boolean         | Indicates whether time off requests are enabled for the schedule.                                                |
 | startDayOfWeek            | string          | Indicates the start day of the week.                                                                             |
-| activitiesIncludedWhenCopyingShiftsEnabled | Boolean | Indicates whether copied shifts should include the activities.                                          |
+| swapShiftsRequestsEnabled | Boolean         | Indicates whether swap shifts requests are enabled for the schedule.                                             |
+| timeClockEnabled          | Boolean         | Indicates whether time clock is enabled for the schedule.                                                        |
+| timeOffRequestsEnabled    | Boolean         | Indicates whether time off requests are enabled for the schedule.                                                |
+| timeZone                  | string          | Indicates the time zone of the schedule team using tz database format. Required.                                 |
+
 
 ## Relationships
 |Name                   |Type           |Description                                                                                                                                      |
