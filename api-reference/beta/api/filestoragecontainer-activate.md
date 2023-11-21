@@ -1,13 +1,16 @@
 ---
-title: "Activate fileStorageContainer"
-description: "Activate a fileStorageContainer"
+title: "fileStorageContainer: activate"
+
+description: "Activate a fileStorageContainer."
+
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.prod: "files"
 doc_type: apiPageType
 ---
 
-# Activate a fileStorageContainer
+# fileStorageContainer: activate
+
 
 Namespace: microsoft.graph
 
