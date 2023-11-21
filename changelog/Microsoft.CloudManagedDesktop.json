@@ -93,15 +93,15 @@
                 {
                     "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
                     "ApiChange": "Member",
-                    "ChangedApiName": "cloudPcDeviceImageStatus",
-                    "ChangeType": "unknownFutureValue",
-                    "Description": "Added the `unknown` member to the **cloudPcDeviceImageStatus** enumeration.",
+                    "ChangedApiName": "unknownFutureValue",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `unknownFutureValue` member to the **cloudPcDeviceImageStatus** enumeration.",
                     "Target": "cloudPcDeviceImageStatus"
                 },
                 {
                     "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
                     "ApiChange": "Member",
-                    "ChangedApiName": "cloudPcDeviceImageOsStatus",
+                    "ChangedApiName": "unknown",
                     "ChangeType": "Addition",
                     "Description": "Added the `unknown` member to the **cloudPcDeviceImageOsStatus** enumeration.",
                     "Target": "cloudPcDeviceImageOsStatus"
@@ -119,7 +119,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2023-12-05T04:22:14.103894Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Devices and app management",
             "SubArea": "Cloud PC"
         },
         {
