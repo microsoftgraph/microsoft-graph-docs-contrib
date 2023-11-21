@@ -15,7 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [fileStorageContainer](../resources/filestoragecontainer.md) objects visible to the caller. The containerTypeId filter parameter is required. The application calling these APIs must have permissions to read fileStorageContainers for the respective container type.
+Retrieve a list of [fileStorageContainer](../resources/filestoragecontainer.md) objects that are visible to the caller. The containerTypeId filter parameter is required. The application calling these APIs must have permissions to read fileStorageContainers for the respective container type.
+
 
 > [!Note]
 > Only a limited subset of properties is returned for each fileStorageContainer. The $expand operation isn't supported for drive, permissions, and customProperties properties.
