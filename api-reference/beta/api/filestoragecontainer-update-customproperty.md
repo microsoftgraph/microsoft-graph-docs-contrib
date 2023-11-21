@@ -62,7 +62,7 @@ If successful, this action returns a `200 OK` response code.
 The following example updates the value property of the custom properties clientUniqeId and color. Note that "isSearchable" for "clientUniqueId" was set to **True** before calling this API.
 <!-- {
   "blockType": "request",
-  "name": ".update_filestoragecontainer_customproperty"
+  "name": "update_filestoragecontainer_customproperty"
 }
 -->
 ``` http
