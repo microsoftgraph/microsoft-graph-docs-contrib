@@ -25,7 +25,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |createdBy|[communicationsIdentitySet](communicationsidentityset.md)|Identity information of who created the virtual event. Inherited from [virtualEvent](../resources/virtualevent.md).|
-|description|String|Description of the virtual event.|
+|description|[itemBody](../resources/itembody.md)|Description of the virtual event.|
 |displayName|String|Display name of the virtual event|
 |endDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|End time of the virtual event. The **timeZone** property _can_ be set to any of the [time zones currently supported by Windows](/windows-hardware/manufacture/desktop/default-time-zones).|
 |id|String|Unique identifier of the virtual event. Inherited from [entity](../resources/entity.md).|
