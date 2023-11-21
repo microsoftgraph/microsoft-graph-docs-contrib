@@ -3,6 +3,7 @@ title: "Get authenticationMethod"
 description: "Retrieve the properties and relationships of an authenticationMethod object."
 ms.localizationpriority: medium
 author: "jpettere"
+ms.reviewer: intelligentaccesspm
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---

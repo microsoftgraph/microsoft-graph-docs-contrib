@@ -12,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents configurations of tenant domains that are federated and verified with Microsoft Entra ID. Use this resource to configure federation settings when setting up federation with Microsoft Entra ID. For information on federation, see [What is federation with Microsoft Entra ID?](/azure/active-directory/hybrid/whatis-fed).
+Represents configurations of tenant domains that are federated and verified with Microsoft Entra ID. Use this resource to configure federation settings when you set up federation with Microsoft Entra ID. For information about federation, see [What is federation with Microsoft Entra ID?](/azure/active-directory/hybrid/whatis-fed).
 
 
 Inherits from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).
@@ -33,10 +33,10 @@ Inherits from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).
 |displayName|String|The display name of the federated identity Provider (IdP). Inherited from [identityProviderBase](../resources/identityproviderbase.md).|
 |federatedIdpMfaBehavior|federatedIdpMfaBehavior|Determines whether Microsoft Entra ID accepts the MFA performed by the federated IdP when a federated user accesses an application that is governed by a conditional access policy that requires MFA. The possible values are: `acceptIfMfaDoneByFederatedIdp`, `enforceMfaByFederatedIdp`, `rejectMfaByFederatedIdp`, `unknownFutureValue`. For more information, see [federatedIdpMfaBehavior values](#federatedidpmfabehavior-values).|
 |id|String|The identifier of the federated identity provider. Inherited from [entity](../resources/entity.md).|
-|isSignedAuthenticationRequestRequired|Boolean|If `true`, when SAML authentication requests are sent to the federated SAML IdP, Microsoft Entra ID will sign those requests using the OrgID signing key. If `false` (default), the SAML authentication requests sent to the federated IdP are not signed.|
+|isSignedAuthenticationRequestRequired|Boolean|If `true`, when SAML authentication requests are sent to the federated SAML IdP, Microsoft Entra ID will sign those requests using the OrgID signing key. If `false` (default), the SAML authentication requests sent to the federated IdP aren't signed.|
 |issuerUri|String|Issuer URI of the federation server. Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
 |metadataExchangeUri|String|URI of the metadata exchange endpoint used for authentication from rich client applications. Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
-|nextSigningCertificate|String|Fallback token signing certificate that is used to sign tokens when the primary signing certificate expires. Formatted as Base64 encoded strings of the public portion of the federated IdP's token signing certificate. Needs to be compatible with the X509Certificate2 class. Much like the signingCertificate, the nextSigningCertificate property is used if a rollover is required outside of the auto-rollover update, a new federation service is being set up, or if the new token signing certificate is not present in the federation properties after the federation service certificate has been updated.|
+|nextSigningCertificate|String|Fallback token signing certificate that can also be used to sign tokens, for example when the primary signing certificate expires. Formatted as Base64 encoded strings of the public portion of the federated IdP's token signing certificate. Needs to be compatible with the X509Certificate2 class. Much like the signingCertificate, the nextSigningCertificate property is used if a rollover is required outside of the auto-rollover update, a new federation service is being set up, or if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.|
 |passiveSignInUri|String|URI that web-based clients are directed to when signing into Microsoft Entra services. Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
 |preferredAuthenticationProtocol|authenticationProtocol|Preferred authentication protocol. The possible values are: `wsFed`, `saml`, `unknownFutureValue`. Inherited from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
 |promptLoginBehavior|promptLoginBehavior|Sets the preferred behavior for the sign-in prompt. The possible values are: `translateToFreshPasswordAuthentication`, `nativeSupport`, `disabled`, `unknownFutureValue`.|
@@ -64,7 +64,7 @@ Inherits from [samlOrWsFedProvider](../resources/samlorwsfedprovider.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

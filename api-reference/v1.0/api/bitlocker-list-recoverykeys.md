@@ -24,7 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "bitlocker_list_recoverykeys" } -->
 [!INCLUDE [permissions-table](../includes/permissions/bitlocker-list-recoverykeys-permissions.md)]
 
-For delegated permissions, the calling user must be the registered owner of the device that the BitLocker recovery key was originally backed up from, or they must be in one of the following [directory roles](/azure/active-directory/roles/permissions-reference):
+For delegated permissions, the calling user must be the registered owner of the device that the BitLocker recovery key was originally backed up from, or they must be in one of the following [directory roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
 * Global administrator
 * Cloud device administrator
@@ -86,9 +86,9 @@ The following example shows a request.
 -->
 ```http
 GET https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKeys
-User-Agent: "Dsreg/10.0 (Windows 10.0.19043.1466)"
-ocp-client-name: "My Friendly Client"
-ocp-client-version: "1.2"
+User-Agent: Dsreg/10.0 (Windows 10.0.19043.1466)
+ocp-client-name: My Friendly Client
+ocp-client-version: 1.2
 ```
 
 
@@ -143,9 +143,9 @@ The following example shows a request.
 -->
 ```http
 GET https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '1ab40ab2-32a8-4b00-b6b5-ba724e407de9'
-User-Agent: "Dsreg/10.0 (Windows 10.0.19043.1466)"
-ocp-client-name: "My Friendly Client"
-ocp-client-version: "1.2"
+User-Agent: Dsreg/10.0 (Windows 10.0.19043.1466)
+ocp-client-name: My Friendly Client
+ocp-client-version: 1.2
 ```
 
 

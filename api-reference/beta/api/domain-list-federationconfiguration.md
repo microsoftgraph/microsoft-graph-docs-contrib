@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "domain_list_federationconfiguration" } -->
 [!INCLUDE [permissions-table](../includes/permissions/domain-list-federationconfiguration-permissions.md)]
 
-The calling user must be assigned one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
+The calling user must be assigned one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
 - Security Administrator
 - External Identity Provider Administrator
@@ -50,7 +50,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of one [internalDomainFederation](../resources/internaldomainfederation.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of one [internalDomainFederation](../resources/internaldomainfederation.md) object in the response body. If there isn't an [internalDomainFederation](../resources/internaldomainfederation.md) object in the tenant, this API returns a `404 Not Found` response code.
 
 ## Examples
 
@@ -99,7 +99,6 @@ GET https://graph.microsoft.com/beta/domains/{domainsId}/federationConfiguration
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 The following is an example of the response

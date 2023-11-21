@@ -67,7 +67,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/directory/onPremisesSynchronization/{id}
+PATCH https://graph.microsoft.com/v1.0/directory/onPremisesSynchronization/{id}
 Content-Type: application/json
 Content-length: 293
 

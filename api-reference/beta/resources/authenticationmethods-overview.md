@@ -4,6 +4,7 @@ description: "Authentication methods are how users authenticate in Azure AD."
 ms.localizationpriority: medium
 ms.custom: has-azure-ad-ps-ref
 author: "jpettere"
+ms.reviewer: intelligentaccesspm
 ms.prod: "identity-and-sign-in"
 doc_type: "conceptualPageType"
 ms.date: 10/21/2022
@@ -40,6 +41,7 @@ We don't recommend using the authentication methods APIs for scenarios where you
 |[microsoftAuthenticatorAuthenticationMethod](microsoftauthenticatorauthenticationmethod.md)|Microsoft Authenticator can be used by a user to sign-in or perform multi-factor authentication to Microsoft Entra ID|Delete a Microsoft Authenticator authentication method.|
 |[passwordAuthenticationMethod](passwordauthenticationmethod.md)| A password is currently the default primary authentication method in Microsoft Entra ID.|Reset a user's password|
 |[phoneAuthenticationMethod](phoneauthenticationmethod.md)|A phone can be used by a user to authenticate using [SMS or voice calls](/azure/active-directory/authentication/concept-authentication-methods#phone-options) (as allowed by policy).|See a user's authentication phone numbers. Add, update, or remove a phone number to a user. Enable or disable a primary mobile phone for SMS sign-in.|
+|[platformCredentialAuthenticationMethod](platformcredentialauthenticationmethod.md)|Platform Credential is a sign-in authentication method for users on Mac OS devices.|See a user's platform credentials. Remove a user's platform credential.|
 |[softwareOathAuthenticationMethod](../resources/softwareoathauthenticationmethod.md)| Allow users to perform multifactor authentication using an application that supports the OATH specification and provides a one-time code. | Get and delete a software token assigned to a user.|
 |[temporaryaccesspassauthenticationmethod](temporaryaccesspassauthenticationmethod.md)|Temporary Access Pass is a time-limited passcode that serves as a strong credential and allows onboarding of passwordless credentials. | Set a new Temporary Access Pass on a user.|
 |[windowsHelloForBusinessAuthenticationMethod](windowsHelloForBusinessAuthenticationMethod.md)|Windows Hello for Business is a passwordless sign-in method on Windows devices.|See devices where a user has enabled Windows Hello for Business sign-in. Delete a Windows Hello for Business credential.|
