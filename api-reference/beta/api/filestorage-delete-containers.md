@@ -13,7 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [fileStorageContainer](../resources/filestoragecontainer.md). Deleting fileStorageContainers using this method moves the fileStorageContainers to the recycle bin instead of permanently deleting them.
+Delete a [fileStorageContainer](../resources/filestoragecontainer.md) object. This method moves the **fileStorageContainer**  to the recycle bin; it doesn't permanently delete it.
+
 
 The application calling this API must have permissions to delete fileStorageContainers for the respective container type.
 
