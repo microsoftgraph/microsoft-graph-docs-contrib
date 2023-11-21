@@ -2,6 +2,7 @@
 title: "Discover, remediate, and monitor permissions in multicloud infrastructures using permissions management APIs (preview)"
 description: "Use Microsoft Entra Permissions Management to discover, remediate, and monitor permissions in multiple cloud infrastructures."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType

@@ -2,6 +2,7 @@
 title: "Get encryptedAzureStorageAccountFinding"
 description: "Read the properties and relationships of an encryptedAzureStorageAccountFinding object."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType

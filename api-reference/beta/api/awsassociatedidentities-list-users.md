@@ -2,6 +2,7 @@
 title: "List users (in an AWS authorization system)"
 description: "Get a list of the awsUser objects and their properties."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType

@@ -2,6 +2,7 @@
 title: "superAwsResourceFinding: aggregatedSummary"
 description: "View the count of super AWS resources for the specified authorization systems in your AWS environment."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType

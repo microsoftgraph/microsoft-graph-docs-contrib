@@ -2,6 +2,7 @@
 title: "unenforcedMfaAwsUserFinding: aggregatedSummary"
 description: View the count of AWS users with unenforced MFA in your authorization systems.
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType

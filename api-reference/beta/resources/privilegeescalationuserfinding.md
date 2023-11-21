@@ -2,6 +2,7 @@
 title: "privilegeEscalationUserFinding resource type"
 description: "Represents findings for a list of users who can escalate privileges in AWS or GCP."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType

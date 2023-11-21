@@ -2,6 +2,7 @@
 title: "Get azureRoleDefinition"
 description: "Gets an Azure role in an Azure authorization system."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType

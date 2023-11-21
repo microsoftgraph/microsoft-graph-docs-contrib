@@ -2,6 +2,7 @@
 title: "accountsWithAccess resource type"
 description: "Contains information on external AWS accounts that have access to a storage bucket."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType

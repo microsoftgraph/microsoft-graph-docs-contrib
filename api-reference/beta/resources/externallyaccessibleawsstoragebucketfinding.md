@@ -2,6 +2,7 @@
 title: "externallyAccessibleAwsStorageBucketFinding resource type"
 description: "Get insight into the AWS S3 buckets accessible externally in your environment."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType

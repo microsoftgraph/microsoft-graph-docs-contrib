@@ -2,6 +2,7 @@
 title: "inactiveUserFinding resource type"
 description: "Represents the inactive users in AWS, Azure, or GCP."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType

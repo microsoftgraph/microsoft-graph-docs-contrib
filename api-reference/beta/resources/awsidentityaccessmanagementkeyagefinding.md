@@ -2,6 +2,7 @@
 title: "awsIdentityAccessManagementKeyAgeFinding resource type"
 description: "View the age of AWS IAM Access Keys."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType

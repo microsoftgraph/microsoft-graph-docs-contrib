@@ -2,6 +2,7 @@
 title: "inactiveGroupFinding resource type"
 description: "Contains analytic information for an inactive group in an authorization system, including actions granted to the group and its members in the last 90 days."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType

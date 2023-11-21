@@ -2,6 +2,7 @@
 title: "List roles (for a GCP authorization system)"
 description: "List all GCP roles in a GCP authorization system."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType

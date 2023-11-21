@@ -2,6 +2,7 @@
 title: "inactiveServerlessFunctionFinding resource type"
 description: "Represents the inactive serverless functions in AWS, Azure, and GCP."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType

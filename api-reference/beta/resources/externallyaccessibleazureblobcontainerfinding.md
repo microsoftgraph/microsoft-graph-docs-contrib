@@ -2,6 +2,7 @@
 title: "externallyAccessibleAzureBlobContainerFinding resource type"
 description: "Get insights into Azure blob containers that are accessible externally*"
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType

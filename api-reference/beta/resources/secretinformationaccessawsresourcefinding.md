@@ -2,6 +2,7 @@
 title: "secretInformationAccessAwsResourceFinding resource type"
 description: "View AWS resources that have privileges to read, modify, or delete secret information."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType

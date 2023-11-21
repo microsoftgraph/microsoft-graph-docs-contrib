@@ -2,6 +2,7 @@
 title: "privilegeEscalationGcpServiceAccountFinding resource type"
 description: "GCP  service accounts with privilege escalation"
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
