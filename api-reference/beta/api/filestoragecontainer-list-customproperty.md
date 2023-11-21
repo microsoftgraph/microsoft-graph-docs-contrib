@@ -51,7 +51,7 @@ If successful, this action returns a `200 OK` response code.
 The following example shows how to get a custom property named "clientUniquieId".
 <!-- {
   "blockType": "request",
-  "name": "filestoragecontainerthis.list-customproperty-1"
+  "name": "list_filestoragecontainer_customproperty_1"
 }
 -->
 ``` http
@@ -62,7 +62,8 @@ GET /storage/fileStorage/containers/{containerId}/customProperties/clientUniqueI
 The following example shows the response.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.fileStorageContainerCustomPropertyValue"
 }
 -->
 ``` http
@@ -79,7 +80,7 @@ Content-type: application/json
 The following example shows how to get all the custom properties of a fileStorageContainer.
 <!-- {
   "blockType": "request",
-  "name": "filestoragecontainerthis.list-customproperty-2"
+  "name": "list_filestoragecontainer_customproperty_2"
 }
 -->
 ``` http
@@ -90,7 +91,8 @@ GET /storage/fileStorage/containers/{containerId}/customProperties/
 The following example shows the response.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.fileStorageContainerCustomPropertyValue"
 }
 -->
 ``` http
