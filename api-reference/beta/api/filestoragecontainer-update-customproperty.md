@@ -41,6 +41,7 @@ PATCH /storage/fileStorage/containers/{containerId}/customProperties
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
 
 ## Request body
 In the request body, supply the custom properties for update and the new values for the relevant fields. 
