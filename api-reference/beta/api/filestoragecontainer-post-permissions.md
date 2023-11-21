@@ -78,7 +78,7 @@ The following example shows the response. If successful, this method returns a `
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "oneDrive.permission"
+  "@odata.type": "microsoft.graph.permission"
 }
 -->
 ``` http
