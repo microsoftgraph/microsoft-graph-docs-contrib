@@ -54,7 +54,7 @@ If successful, this method returns a `201 Created` response code and a [permissi
 This example adds a new user as reader to a container.
 <!-- {
   "blockType": "request",
-  "name": "create_permission_from_1",
+  "name": "create_permission",
   "@odata.type": "microsoft.graph.permission"
 }
 -->
