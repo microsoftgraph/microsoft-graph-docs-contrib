@@ -1,6 +1,6 @@
 ---
 title: "cloudPcReports: getCloudPCPerformanceReport"
-description: "Get Cloud performance related reports."
+description: "Get Cloud PC performance related reports."
 author: "Gutentag0004"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get Cloud performance related reports.
+Get Cloud PC performance related reports.
 
 ## Permissions
 
