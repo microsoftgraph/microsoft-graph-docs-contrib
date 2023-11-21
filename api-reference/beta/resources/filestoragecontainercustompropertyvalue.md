@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.prod: "files"
 doc_type: resourcePageType
 ---
+
 # fileStorageContainerCustomPropertyValue resource type
 
 Namespace: microsoft.graph
