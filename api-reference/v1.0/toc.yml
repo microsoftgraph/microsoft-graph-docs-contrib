@@ -5035,6 +5035,8 @@ items:
                 href: resources/educationoutcome.md
               - name: Feedback outcome type
                 href: resources/educationfeedbackoutcome.md
+              - name: Feedback resource outcome type
+                href: resources/educationfeedbackresourceoutcome.md
               - name: Points outcome type
                 href: resources/educationpointsoutcome.md
               - name: Rubric outcome type
@@ -8444,8 +8446,6 @@ items:
                 href: api/site-follow.md
               - name: Get applicable content types for list
                 href: api/site-getapplicablecontenttypesforlist.md
-              - name: Get delta
-                href: api/site-delta.md
               - name: Get item analytics
                 href: api/itemanalytics-get.md
               - name: Get lists
