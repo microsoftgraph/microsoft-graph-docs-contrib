@@ -2,6 +2,7 @@
 title: "List inactiveAwsResourceFinding objects"
 description: "List the details of inactive AWS resources."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType

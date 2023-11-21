@@ -5035,6 +5035,8 @@ items:
                 href: resources/educationoutcome.md
               - name: Feedback outcome type
                 href: resources/educationfeedbackoutcome.md
+              - name: Feedback resource outcome type
+                href: resources/educationfeedbackresourceoutcome.md
               - name: Points outcome type
                 href: resources/educationpointsoutcome.md
               - name: Rubric outcome type

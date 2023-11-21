@@ -2,6 +2,7 @@
 title: "Get inactiveServerlessFunctionFinding"
 description: "Read the properties and relationships of inactive serverless functions in your AWS, Azure, and GCP environments."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType

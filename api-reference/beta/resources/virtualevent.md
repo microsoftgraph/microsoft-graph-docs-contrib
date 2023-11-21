@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a base virtual event. Base type of [virtualEventWebinar](virtualEventWebinar.md).
+Represents a base virtual event. The base type of [virtualEventWebinar](virtualEventWebinar.md).
 
 Inherits from [entity](../resources/entity.md).
 
