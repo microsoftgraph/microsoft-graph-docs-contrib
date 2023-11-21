@@ -18,14 +18,13 @@ Contains information on external AWS accounts that have access to a storage buck
 Inherits from [accountsWithAccess](../resources/accountswithaccess.md).
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.allAccountsWithAccess"

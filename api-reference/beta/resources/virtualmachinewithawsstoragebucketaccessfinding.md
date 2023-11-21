@@ -20,7 +20,7 @@ Inherits from [finding](../resources/finding.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List virtualMachineWithAwsStorageBucketAccessFindings](../api/virtualmachinewithawsstoragebucketaccessfinding-list.md)|[virtualMachineWithAwsStorageBucketAccessFinding](../resources/virtualmachinewithawsstoragebucketaccessfinding.md) collection|Get a list of the [virtualMachineWithAwsStorageBucketAccessFinding](../resources/virtualmachinewithawsstoragebucketaccessfinding.md) objects and their properties.|
+|[List virtualMachineWithAwsStorageBucketAccessFinding objects](../api/virtualmachinewithawsstoragebucketaccessfinding-list.md)|[virtualMachineWithAwsStorageBucketAccessFinding](../resources/virtualmachinewithawsstoragebucketaccessfinding.md) collection|Get a list of the [virtualMachineWithAwsStorageBucketAccessFinding](../resources/virtualmachinewithawsstoragebucketaccessfinding.md) objects and their properties.|
 |[Get virtualMachineWithAwsStorageBucketAccessFinding](../api/virtualmachinewithawsstoragebucketaccessfinding-get.md)|[virtualMachineWithAwsStorageBucketAccessFinding](../resources/virtualmachinewithawsstoragebucketaccessfinding.md)|Read the properties and relationships of a [virtualMachineWithAwsStorageBucketAccessFinding](../resources/virtualmachinewithawsstoragebucketaccessfinding.md) object.|
 
 

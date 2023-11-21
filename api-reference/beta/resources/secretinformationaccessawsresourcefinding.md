@@ -20,7 +20,7 @@ Inherits from [awsSecretInformationAccessFinding](../resources/awssecretinformat
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List secretInformationAccessAwsResourceFindings](../api/secretinformationaccessawsresourcefinding-list.md)|[secretInformationAccessAwsResourceFinding](../resources/secretinformationaccessawsresourcefinding.md) collection|Get a list of the [secretInformationAccessAwsResourceFinding](../resources/secretinformationaccessawsresourcefinding.md) objects and their properties.|
+|[List secretInformationAccessAwsResourceFinding objects](../api/secretinformationaccessawsresourcefinding-list.md)|[secretInformationAccessAwsResourceFinding](../resources/secretinformationaccessawsresourcefinding.md) collection|Get a list of the [secretInformationAccessAwsResourceFinding](../resources/secretinformationaccessawsresourcefinding.md) objects and their properties.|
 |[Get secretInformationAccessAwsResourceFinding](../api/secretinformationaccessawsresourcefinding-get.md)|[secretInformationAccessAwsResourceFinding](../resources/secretinformationaccessawsresourcefinding.md)|Read the properties and relationships of a [secretInformationAccessAwsResourceFinding](../resources/secretinformationaccessawsresourcefinding.md) object.|
 
 

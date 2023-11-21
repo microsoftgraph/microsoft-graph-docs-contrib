@@ -77,7 +77,7 @@ The following sample findings are available:
 
 Other findings include:
 
-- Resouce-based findings: For example, Azure blob containers, S3 buckets and Storage buckets that are accessible publicly; open network security groups; and identities that can access secret information or utilize security tools
+- Resource-based findings: For example, Azure blob containers, S3 buckets and Storage buckets that are accessible publicly; open network security groups; and identities that can access secret information or utilize security tools
 - Overprovisioned users, roles, resources, service principals, and service accounts
 - Users with unenforced multifactor authentication in AWS
 - Opportunities for privilege escalation

@@ -20,7 +20,7 @@ Inherits from [finding](../resources/finding.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List externallyAccessibleGcpStorageBucketFindings](../api/externallyaccessiblegcpstoragebucketfinding-list.md)|[externallyAccessibleGcpStorageBucketFinding](../resources/externallyaccessiblegcpstoragebucketfinding.md) collection|Get a list of the [externallyAccessibleGcpStorageBucketFinding](../resources/externallyaccessiblegcpstoragebucketfinding.md) objects and their properties.|
+|[List externallyAccessibleGcpStorageBucketFinding objects](../api/externallyaccessiblegcpstoragebucketfinding-list.md)|[externallyAccessibleGcpStorageBucketFinding](../resources/externallyaccessiblegcpstoragebucketfinding.md) collection|Get a list of the [externallyAccessibleGcpStorageBucketFinding](../resources/externallyaccessiblegcpstoragebucketfinding.md) objects and their properties.|
 |[Get externallyAccessibleGcpStorageBucketFinding](../api/externallyaccessiblegcpstoragebucketfinding-get.md)|[externallyAccessibleGcpStorageBucketFinding](../resources/externallyaccessiblegcpstoragebucketfinding.md)|Read the properties and relationships of an [externallyAccessibleGcpStorageBucketFinding](../resources/externallyaccessiblegcpstoragebucketfinding.md) object.|
 
 

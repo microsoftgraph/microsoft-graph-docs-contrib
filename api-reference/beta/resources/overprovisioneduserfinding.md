@@ -21,7 +21,7 @@ Inherits from [identityFinding](../resources/identityfinding.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List overprovisionedUserFindings](../api/overprovisioneduserfinding-list.md)|[overprovisionedUserFinding](../resources/overprovisioneduserfinding.md) collection|Get a list of the [overprovisionedUserFinding](../resources/overprovisioneduserfinding.md) objects and their properties.|
+|[List overprovisionedUserFinding objects](../api/overprovisioneduserfinding-list.md)|[overprovisionedUserFinding](../resources/overprovisioneduserfinding.md) collection|Get a list of the [overprovisionedUserFinding](../resources/overprovisioneduserfinding.md) objects and their properties.|
 |[Get overprovisionedUserFinding](../api/overprovisioneduserfinding-get.md)|[overprovisionedUserFinding](../resources/overprovisioneduserfinding.md)|Read the properties and relationships of an [overprovisionedUserFinding](../resources/overprovisioneduserfinding.md) object.|
 
 ## Properties

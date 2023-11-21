@@ -21,7 +21,7 @@ Inherits from [privilegeEscalationFinding](../resources/privilegeescalationfindi
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List privilegeEscalationAwsResourceFindings](../api/privilegeescalationawsresourcefinding-list.md)|[privilegeEscalationAwsResourceFinding](../resources/privilegeescalationawsresourcefinding.md) collection|Get a list of the [privilegeEscalationAwsResourceFinding](../resources/privilegeescalationawsresourcefinding.md) objects and their properties.|
+|[List privilegeEscalationAwsResourceFinding objects](../api/privilegeescalationawsresourcefinding-list.md)|[privilegeEscalationAwsResourceFinding](../resources/privilegeescalationawsresourcefinding.md) collection|Get a list of the [privilegeEscalationAwsResourceFinding](../resources/privilegeescalationawsresourcefinding.md) objects and their properties.|
 |[Get privilegeEscalationAwsResourceFinding](../api/privilegeescalationawsresourcefinding-get.md)|[privilegeEscalationAwsResourceFinding](../resources/privilegeescalationawsresourcefinding.md)|Read the properties and relationships of a [privilegeEscalationAwsResourceFinding](../resources/privilegeescalationawsresourcefinding.md) object.|
 
 ## Properties

@@ -21,7 +21,7 @@ Represents the inactive serverless functions in AWS, Azure, and GCP.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List inactiveServerlessFunctionFindings](../api/inactiveserverlessfunctionfinding-list.md)|[inactiveServerlessFunctionFinding](../resources/inactiveserverlessfunctionfinding.md) collection|Get a list of the [inactiveServerlessFunctionFinding](../resources/inactiveserverlessfunctionfinding.md) objects and their properties.|
+|[List inactiveServerlessFunctionFinding objects](../api/inactiveserverlessfunctionfinding-list.md)|[inactiveServerlessFunctionFinding](../resources/inactiveserverlessfunctionfinding.md) collection|Get a list of the [inactiveServerlessFunctionFinding](../resources/inactiveserverlessfunctionfinding.md) objects and their properties.|
 |[Get inactiveServerlessFunctionFinding](../api/inactiveserverlessfunctionfinding-get.md)|[inactiveServerlessFunctionFinding](../resources/inactiveserverlessfunctionfinding.md)|Read the properties and relationships of an [inactiveServerlessFunctionFinding](../resources/inactiveserverlessfunctionfinding.md) object.|
 |[aggregatedSummary](../api/inactiveserverlessfunctionfinding-aggregatedsummary.md)|[permissionsAnalyticsAggregatedIdentitySummary](../resources/permissionsanalyticsaggregatedidentitysummary.md)|Return the total number of an identity type and the total number of a specific finding for that identity in an authorization system.|
 

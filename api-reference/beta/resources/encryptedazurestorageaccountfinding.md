@@ -20,7 +20,7 @@ Inherits from [finding](../resources/finding.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List encryptedAzureStorageAccountFindings](../api/encryptedazurestorageaccountfinding-list.md)|[encryptedAzureStorageAccountFinding](../resources/encryptedazurestorageaccountfinding.md) collection|Get a list of the [encryptedAzureStorageAccountFinding](../resources/encryptedazurestorageaccountfinding.md) objects and their properties.|
+|[List encryptedAzureStorageAccountFinding objects](../api/encryptedazurestorageaccountfinding-list.md)|[encryptedAzureStorageAccountFinding](../resources/encryptedazurestorageaccountfinding.md) collection|Get a list of the [encryptedAzureStorageAccountFinding](../resources/encryptedazurestorageaccountfinding.md) objects and their properties.|
 |[Get encryptedAzureStorageAccountFinding](../api/encryptedazurestorageaccountfinding-get.md)|[encryptedAzureStorageAccountFinding](../resources/encryptedazurestorageaccountfinding.md)|Read the properties and relationships of an [encryptedAzureStorageAccountFinding](../resources/encryptedazurestorageaccountfinding.md) object.|
 
 
