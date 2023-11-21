@@ -60,7 +60,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "filestoragecontainerthis.activate"
+  "name": "activate_filestoragecontainer"
 }
 -->
 ``` http
