@@ -27,7 +27,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|assignableScopes|String collection|Scopes at which the Azure role can be assigned. `/` is supported or built-in roles and means the Azure role can be assigned at all scopes. Supports `$filter` and (`eq`).|
+|assignableScopes|String collection|Scopes at which the Azure role can be assigned. `/` is supported for built-in roles and means the Azure role can be assigned at all scopes. Supports `$filter` and (`eq`).|
 |azureRoleDefinitionType|azureRoleDefinitionType|Type of Azure role. The possible values are: `system`, `custom`, `unknownFutureValue`. Supports `$filter` and (`eq`).|
 |displayName|String|Name of the Azure role. Supports `$filter` and (`eq`,`contains`).|
 |externalId|String|Identifier of an Azure role defined by Microsoft Azure. Alternate key. Supports `$filter` and `eq`.|
