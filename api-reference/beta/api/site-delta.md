@@ -17,7 +17,7 @@ Your app begins by calling `delta` without any parameters.
 The service starts enumerating sites, returning pages of changes to sites and either an **@odata.nextLink** or an **@odata.deltaLink**.
 Your app should continue calling with the **@odata.nextLink** until you see an **@odata.deltaLink** returned.
 
-After you have received all the changes, you can apply them to your local state.
+After you receive all the changes, you can apply them to your local state.
 To check for changes in the future, call `delta` again with the **@odata.deltaLink** from the previous response.
 
 Deleted sites are returned with the [deleted](../resources/deleted.md) facet.
@@ -47,7 +47,7 @@ In the request URL, you can include the following optional query parameter.
 
 | Parameter    | Type   | Description                                                                                                                          |
 |:-------------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| token        | String | If unspecified, enumerates the current state of the hierarchy. If `latest`, returns an empty response with the latest delta token. If a previous delta token, returns a new state since that token.|
+| token        | String | If unspecified, enumerates the current state of the hierarchy. If `latest` returns an empty response with the latest delta token. If a previous delta token returns a new state since that token.|
 
 This method also supports the `$select`, `$expand`, and `$top` [OData query parameters](/graph/query-parameters) to customize the response.
 
@@ -65,23 +65,23 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [site](../resources/site.md) objects in the response body.
 
-In addition to the collection of **site** objects, the response also includes one of the following properties.
+In addition to the collection of **site** objects, the response includes one of the following properties.
 
 | Name             | Value  | Description                                                                                                                                     |
 |:-----------------|:-------|:------------------------------------------------------------------------------------------------------------------------------------------------|
-| @odata.nextLink  | URL    | A URL to retrieve the next available page of changes if there are additional changes in the current set.                                        |
-| @odata.deltaLink | URL    | A URL returned instead of **@odata.nextLink** after all current changes have been returned. Use this property to read the next set of changes in the future. |
+| @odata.nextLink  | URL    | A URL to retrieve the next available page of changes if there are other changes in the current set.                                        |
+| @odata.deltaLink | URL    | A URL returned instead of **@odata.nextLink** after all current changes are returned. You can use this property to read the next set of changes in the future. |
 
-In some cases, the service returns a `410 Gone` response code with an error response that contains one of the following error codes, and a `Location` header that contains a new `nextLink` that starts a fresh delta enumeration. This occurs when the service can't provide a list of changes for a given token; for example, if a client tries to reuse an old token after being disconnected for a long time, or if the server state has changed and a new token is required.
+In some cases, the service returns a `410 Gone` response code with an error response containing one of the following error codes and a `Location` header with a new `nextLink` that starts a fresh delta enumeration. This error occurs when the service can't provide a list of changes for a given token; for example, if a client tries to reuse an old token after being disconnected for a long time or if the server state changed and a new token is required.
 
-After the full enumeration is completed, compare the returned sites with your local state and follow the instructions based on the error type.
+After you complete the full enumeration, you can compare the returned sites with your local state and follow the instructions based on the error type.
 
 | Error type                     | Instructions                                                                                                                               |
 |:-------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------|
 | resyncChangesApplyDifferences  | Replace any local sites with the versions from the server (including deletes) if you're sure that the service was up-to-date with your local changes when you last synchronized. Upload any local changes that the server doesn't know about. |
 | resyncChangesUploadDifferences | Upload any local sites that the service didn't return and upload any sites that differ from the versions from the server. Keep both copies if you're not sure which one is more up-to-date.                                       |
 
-In addition to the resync errors and for more details about how errors are returned, see [Microsoft Graph error responses and resource types](/graph/errors).
+In addition to the resync errors and for more information, see [Microsoft Graph error responses and resource types](/graph/errors).
 
 ## Examples
 
@@ -101,7 +101,7 @@ GET https://graph.microsoft.com/beta/sites/delta
 
 #### Response
 
-The following example shows the response that includes the first page of changes and the **@odata.nextLink** property that indicates that no more sites are available in the current set of sites. Your app should continue to request the URL value of **@odata.nextLink** until all pages of sites have been retrieved.
+The following example shows the response that includes the first page of changes and the **@odata.nextLink** property that indicates that no more sites are available in the current set of sites. Your app should continue to request the URL value of **@odata.nextLink** until all pages of sites are retrieved.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.site)", "truncated": true, "scope": "site.read" } -->
 
@@ -174,7 +174,7 @@ Content-type: application/json
 
 ### Example 3: Delta link request
 
-In some scenarios, you might want to request the current `deltaLink` value without first enumerating all of the sites, lists, and webs. This can be useful if your app only wants to know about changes and doesn't need to know about existing sites.
+In some scenarios, you might want to request the current `deltaLink` value without first enumerating all of the sites, lists, and webs. This suggestion can be useful if your app only wants to know about changes and doesn't need to know about existing sites.
 To retrieve the latest `deltaLink`, call `delta` with the query string parameter `?token=latest`.
 
 > **Note:** If you want to maintain a full local representation of the resources, you must use `delta` for the initial enumeration. Using `delta` is the only way to guarantee that you've read all of the data you need to.
