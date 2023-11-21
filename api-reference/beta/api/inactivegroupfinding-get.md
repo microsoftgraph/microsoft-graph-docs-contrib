@@ -2,6 +2,7 @@
 title: "Get inactiveGroupFinding"
 description: "Get details about an inactive group in AWS, Azure, or GCP environments."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType

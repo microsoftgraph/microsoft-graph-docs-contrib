@@ -2,6 +2,7 @@
 title: "Get azureAuthorizationSystemResource"
 description: "Read the properties and relationships of an azureAuthorizationSystemResource object for a provided Azure authorization system."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType

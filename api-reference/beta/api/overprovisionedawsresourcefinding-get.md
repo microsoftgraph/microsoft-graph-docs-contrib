@@ -2,6 +2,7 @@
 title: "Get overprovisionedAwsResourceFinding"
 description: "Read the properties and relationships of an overprovisionedAwsResourceFinding object."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType

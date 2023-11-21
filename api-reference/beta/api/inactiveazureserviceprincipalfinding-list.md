@@ -2,6 +2,7 @@
 title: "List inactiveAzureServicePrincipalFinding objects"
 description: "Get a list of the inactiveAzureServicePrincipalFinding objects and their properties, representing inactive service principals in your Azure environment."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
