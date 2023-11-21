@@ -2,6 +2,7 @@
 title: "List inactiveAwsRoleFinding objects"
 description: "List the details of inactive roles in AWS authorization systems onboarded to Permissions Management."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType

@@ -2,6 +2,7 @@
 title: "inactiveServerlessFunctionFinding: aggregatedSummary"
 description: "A raw count of inactive serverless functions in the specified AWS, Azure, or GCP authorization systems."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType

@@ -2,6 +2,7 @@
 title: "Get assignedComputeInstanceDetails"
 description: "Read the properties and relationships of an assignedComputeInstanceDetails object for an AWS open security group finding."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType

@@ -2,6 +2,7 @@
 title: "Get inactiveAwsRoleFinding"
 description: "Get the details of inactive AWS roles in AWS authorization systems onboarded to Permissions Management."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType

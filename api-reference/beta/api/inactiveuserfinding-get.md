@@ -2,6 +2,7 @@
 title: "Get inactiveUserFinding"
 description: "Get the details of an inactiveUserFinding in an authorization system onboarded to Permissions Management."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
