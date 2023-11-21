@@ -66,6 +66,7 @@ The following example shows a request.
 ``` http
 PATCH /storage/fileStorage/containers/{containerId}/permissions/{permissionId}
 Content-Type: application/json
+
 {
   "roles": ["manager"]
 }
