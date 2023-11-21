@@ -53,7 +53,7 @@ If successful, this action returns a `200 OK` response code.
 The following example deletes multiple custom properties.
 <!-- {
   "blockType": "request",
-  "name": "filestoragecontainerthis.delete-customproperty"
+  "name": "delete_filestoragecontainer_customproperty"
 }
 -->
 ``` http
