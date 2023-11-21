@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Adds (pins) a [tab](../resources/teamstab.md) to the specified [channel](../resources/channel.md) within a [team](../resources/team.md). The corresponding app must already be [installed in the team](../api/team-list-installedapps.md) and `configurableTabs` property defined in the app manifest.
+Adds (pins) a [tab](../resources/teamstab.md) to the specified [channel](../resources/channel.md) within a [team](../resources/team.md). The corresponding app must already be [installed in the team](../api/team-list-installedapps.md) and have the `configurableTabs` property defined in the app manifest.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
