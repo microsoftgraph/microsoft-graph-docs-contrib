@@ -16096,22 +16096,50 @@ items:
                           href: api/relyingpartydetailedsummary-list.md
                 - name: Application user activity (preview)
                   items:
-                  - name: Active users
+                  - name: Active users metric
                     href: resources/activeusersmetric.md
-                  - name: Active users breakdown
+                    items:
+                    - name: List daily active users
+                    - href: api/dailyuserinsightmetricsroot-list-activeusers.md
+                    - name: List monthly active users
+                    - href: api/monthlyuserinsightsmetricsroot-list-activeusers.md
+                  - name: Active users breakdown metric
                     href: resources/activeusersbreakdownmetric.md
-                  - name: MFA completions
-                    href: resources/mfacompletionmetric.md
-                  - name: Total users
-                    href: resources/usercountmetric.md
-                  - name: User authentications
+                    items:
+                    - name: List daily active users breakdown
+                    - href: api/dailyuserinsightmetricsroot-list-activeusersbreakdown.md
+                    - name: List monthly active users breakdown
+                    - href: api/monthlyuserinsightmetricsroot-list-activeusersbreakdown.md
+                  - name: Authentications metric
                     href: resources/authenticationsmetric.md
-                  - name: User requests
-                    href: resources/userrequestsmetric.md
-                  - name: User signup
-                    href: resources/usersignupmetric.md
+                    items:
+                    - name: List daily authentications
+                    - href: api/dailyuserinsightmetricsroot-list-authentications.md
+                    - name: List monthly authentications
+                    -href: api/monthlyuserinsightmetricsroot-list-authentications.md
                   - name: Insights summary
                     href: resources/insightsummary.md
+                    items:
+                    - name: List daily summary
+                    - href: /api/dailyuserinsightmetricsroot-list-summary.md
+                    - name: List monthly summary
+                    - href: api/monthlyuserinsightmetricsroot-list-summary.md
+                  - name: MFA completion metric
+                    href: resources/mfacompletionmetric.md
+                    items:
+                    - name: List daily MFA completions
+                    - href: api/dailyuserinsightmetricsroot-list-mfacompletions.md
+                    - name: List monthly MFA completions
+                    - href: api/monthlyuserinsightmetricsroot-list-mfacompletions.md
+                  - name: User count metric
+                    href: resources/usercountmetric.md
+                    items:
+                    - name: List daily user count
+                    - href: api/dailyuserinsightmetricsroot-list-usercount.md
+                  - name: User requests metric
+                    href: resources/userrequestsmetric.md
+                  - name: User signup metric
+                    href: resources/usersignupmetric.md
                 - name: Application credential activity
                   href: resources/appcredentialsigninactivity.md
                   items:
