@@ -59,7 +59,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following example shows enumerates all tenant-owned containers of a given type.
+The following enumerates all tenant-owned containers of a given type.
+
 
 <!-- {
   "blockType": "request",
