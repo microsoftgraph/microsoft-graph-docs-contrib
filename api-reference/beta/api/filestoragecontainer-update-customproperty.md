@@ -62,7 +62,7 @@ If successful, this action returns a `200 OK` response code.
 The following example updates the value property of the custom properties clientUniqeId and color. Note that "isSearchable" for "clientUniqueId" was set to **True** before calling this API.
 <!-- {
   "blockType": "request",
-  "name": "filestoragecontainerthis.update-customproperty"
+  "name": ".update_filestoragecontainer_customproperty"
 }
 -->
 ``` http
@@ -82,7 +82,8 @@ Content-type: application/json
 The following example shows the response.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": Collection("microsoft.graph.fileStorageContainerCustomPropertyValue")
 }
 -->
 ``` http
