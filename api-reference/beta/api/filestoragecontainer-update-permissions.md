@@ -60,7 +60,7 @@ If successful, this action returns a `200 OK` response code.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "filestoragecontainerthis.update-permissions"
+  "name": "update_filestoragecontainer_permissions"
 }
 -->
 ``` http
