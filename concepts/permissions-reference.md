@@ -1829,7 +1829,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 | Category | Application | Delegated |
 |--|--|--|
-| Identifier | f431cc63-a2de-48c4-8054-a34bc093af84 | - 
+| Identifier | f431cc63-a2de-48c4-8054-a34bc093af84 | -
 | DisplayText | Create, read, update, and delete all class assignments information without accessing or impacting any feedback or outcomes | - 
 | Allows the app to read and write assignments information on behalf of the user without affecting or reading any feedback or outcomes. | - 
 | AdminConsentRequired | Yes | - 
