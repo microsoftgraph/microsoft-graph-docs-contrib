@@ -1,8 +1,6 @@
 ---
 title: "fileStorageContainer: activate"
-
 description: "Activate a fileStorageContainer."
-
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.prod: "files"
@@ -16,11 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-FileStorageContainers are created in an inactive state, indicated by the container's status property. A container must be activated within 24 hours after creation or is automatically deleted. The container's status property is set to "active" upon successful activation.
+Activate a [fileStorageContainer] (../resources/filestoragecontainer.md) object.
+
+A **fileStorageContainer** object is created in an inactive state, as indicated by the **status** property. A container must be activated within 24 hours after creation, or it is automatically deleted. Upon activation, the value of the status property changes from `inactive` to `active`.
 
 A fileStorageContainer can be activated by calling the activate API or any API that updates or modifies the container or its content. For example, uploading a file to a container activates the container.
 
-The application calling this API must have write permission to fileStorageContainers for the respective container type.
+The application calling this API must have write permission to fileStorageContainer for the respective container type.
+
 
 ## Permissions
 
@@ -29,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|FileStorageContainer.Selected|
+|Delegated (personal Microsoft account)|FileStorageContainer.Selected|
 |Application|FileStorageContainer.Selected|
 
 ## HTTP request
@@ -83,9 +85,9 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-## Other activation methods
+## See also
 
-A fileStorageContainer can be activated by calling any API that mutates the container or its content, including:
+You can also use the following methods to activate a fileStorageContainer: PLACER HOLDER TO ADD the associated method topics for these tasks.
 
 |Task name|Example request|
 |:---|:---|
