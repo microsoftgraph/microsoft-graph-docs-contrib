@@ -2,6 +2,7 @@
 title: "Get permissionsRequestChange"
 description: "Read the properties and relationships of a permissionsRequestChange object."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType

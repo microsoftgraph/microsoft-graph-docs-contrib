@@ -2,6 +2,7 @@
 title: "List policies (for an AWS authorization system)"
 description: "List all awsPolicy objects and their properties for a specific AWS authorization system."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType

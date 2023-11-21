@@ -2,6 +2,7 @@
 title: "awsIdentityAccessManagementKeyUsageFinding: aggregatedSummary"
 description: "Get a count of the AWS IAM Access Keys that have not been used in the last 90 days."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType

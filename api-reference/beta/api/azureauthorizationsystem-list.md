@@ -2,6 +2,7 @@
 title: "List azureAuthorizationSystems"
 description: "Get a list of the azureAuthorizationSystem objects and their properties."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType

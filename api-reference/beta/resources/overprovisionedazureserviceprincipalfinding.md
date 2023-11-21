@@ -2,6 +2,7 @@
 title: "overprovisionedAzureServicePrincipalFinding resource type"
 description: "Represents over-provisioned Azure service prinicipals."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
@@ -20,7 +21,7 @@ Inherits from [identityFinding](../resources/identityfinding.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List overprovisionedAzureServicePrincipalFindings](../api/overprovisionedazureserviceprincipalfinding-list.md)|[overprovisionedAzureServicePrincipalFinding](../resources/overprovisionedazureserviceprincipalfinding.md) collection|Get a list of the [overprovisionedAzureServicePrincipalFinding](../resources/overprovisionedazureserviceprincipalfinding.md) objects and their properties.|
+|[List overprovisionedAzureServicePrincipalFinding objects](../api/overprovisionedazureserviceprincipalfinding-list.md)|[overprovisionedAzureServicePrincipalFinding](../resources/overprovisionedazureserviceprincipalfinding.md) collection|Get a list of the [overprovisionedAzureServicePrincipalFinding](../resources/overprovisionedazureserviceprincipalfinding.md) objects and their properties.|
 |[Get overprovisionedAzureServicePrincipalFinding](../api/overprovisionedazureserviceprincipalfinding-get.md)|[overprovisionedAzureServicePrincipalFinding](../resources/overprovisionedazureserviceprincipalfinding.md)|Read the properties and relationships of an [overprovisionedAzureServicePrincipalFinding](../resources/overprovisionedazureserviceprincipalfinding.md) object.|
 
 ## Properties

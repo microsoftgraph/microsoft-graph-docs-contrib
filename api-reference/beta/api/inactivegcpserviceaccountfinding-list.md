@@ -2,6 +2,7 @@
 title: "List inactiveGcpServiceAccountFinding objects"
 description: "Get a list of the inactiveGcpServiceAccountFinding objects and their properties."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
