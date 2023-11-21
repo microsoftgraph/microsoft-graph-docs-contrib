@@ -14,13 +14,13 @@ The Microsoft Graph Data Connect templates can help you realize possibilities wi
 
 - Entity Sentiment Analysis
   - Extract entities from Outlook and Teams data. Then, analyze how users feel about those entities.
-  - Sets up Synapse Workspace, Apache Spark Pool, Azure Datalake Storage Account, and Azure Congitive Services resources.
+  - Sets up Synapse Workspace, Apache Spark Pool, Azure Data Lake Storage Account, and Azure Cognitive Services resources.
 - Organizational Network Analysis
   - Identify collaboration and communication patterns that are key for organizations to achieve real business agility.
-  - Sets up Synapse Workspace, Apache Spark Pool, and Azure Datalake Storage Account resources.
+  - Sets up Synapse Workspace, Apache Spark Pool, and Azure Data Lake Storage Account resources.
 - Information Oversharing
   - Secure your business by identifying patterns of information oversharing and fraud in your Microsoft 365 data.
-  - Sets up Synapse Workspace, Apache Spark Pool, and Azure Datalake Storage Account resources.
+  - Sets up Synapse Workspace, Apache Spark Pool, and Azure Data Lake Storage Account resources.
 
 The templates help you quickly provision Azure resources and provide data pipelines and samples that you can use to realize value right away.
 
@@ -28,7 +28,7 @@ To learn more and get started with the Microsoft Graph Data Connect templates, s
 
 ## Quick Start Templates
 
-Quick Start Templates help to easily setup pipelines for extraction of Microsoft Graph Data Connect datasets along with the Azure resources to deploy them. Configuring data pipelines becomes expedite as the details of registered applications are leveraged for efficiency. Currently, the Quick Start Templates only support Azure Data Factory as the platform and the Copy Activity as the Activity Type. Support for other platforms and activity types will follow.
+Quick Start Templates help to easily setup pipelines for extraction of Microsoft Graph Data Connect datasets along with the Azure resources to deploy them. Configuring data pipelines becomes expedite as the details of registered applications are used for efficiency. Currently, the Quick Start Templates only support Azure Data Factory as the platform and the Copy Activity as the Activity Type. Support for other platforms and activity types will follow.
 
 ### Prerequisites
 
@@ -48,17 +48,17 @@ To use the Quick Start Templates, ensure the following prerequisites are met:
 
 ![An image that shows Quick Pipeline Set-Up template within the Templates tab in the Microsoft Graph Data Connect extension in Azure Portal.](images/data-connect-templates-quickstart-2.png)
 
-3) Fill in the remaining values in the pre-populated custom deployment form.
+3) Fill in the remaining values in the prepopulated custom deployment form.
 
 ![An image that shows the custom deployment form to setup the Quick Pipeline Set-Up template for Microsoft Graph Data Connect.](images/data-connect-templates-quickstart-3.png)
 
 The form is composed by the following fields:
 - **Resource Group**: The resource group where your storage account is located. This would be used for the Azure Data Factory location as well.
-- **Service Principal Id**: This is the Azure Entra application used to create an application with Microsoft Graph Data Connect. This field is *pre-populated*.
-- **Tenant Id**: This is the tenant for which data is being extracted. This field is *pre-populated*.
+- **Service Principal Id**: This is the Azure Entra application used to create an application with Microsoft Graph Data Connect. This field is *prepopulated*.
+- **Tenant Id**: This is the tenant for which data is being extracted. This field is *prepopulated*.
 - **Application Secret**: This is the secret value of the Azure Entra application used during registration.
-- **Azure Data Factory Name**: This field is *pre-populated* by appending the unique string associated with the resource group ID to the string "datafactory". However, you can also provide an existing Azure Data Factory resource or enter a new unique name for a new Azure Data Factory resource.
-- **Datasets**: This field is *pre-populated*. One pipeline will be generated per dataset.
+- **Azure Data Factory Name**: This field is *prepopulated* by appending the unique string associated with the resource group ID to the string "datafactory". However, you can also provide an existing Azure Data Factory resource or enter a new unique name for a new Azure Data Factory resource.
+- **Datasets**: This field is *prepopulated*. One pipeline is generated per dataset.
 - **Storage Container**: The root container in the Azure storage destination where data will be written to. 
 
 4) Click Review + Create to proceed.
