@@ -23,7 +23,6 @@ The application that calls this API must have permission to read permissions in 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|FileStorageContainer.Selected|
-|Delegated (personal Microsoft account)|FileStorageContainer.Selected|
 |Application|FileStorageContainer.Selected|
 
 ## HTTP request
@@ -58,7 +57,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET /storage/fileStorage/containers/{containerId}/permissions
+GET https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/permissions
 ```
 
 ### Response
@@ -75,7 +74,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.permission)",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.permission)",
   "value": [
     {
         "@odata.type": "#microsoft.graph.permission",
