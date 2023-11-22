@@ -1,19 +1,23 @@
 ---
-title: "Update fileStoreContainer permissions"
-description: "Update fileStorageContainer permissions"
+title: "Update fileStoreContainer permission"
+
+description: "Update fileStorageContainer permission."
+
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.prod: "files"
 doc_type: apiPageType
 ---
 
-# Update fileStoreContainer permissions
+# Update fileStoreContainer permission
+
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update existing permissions for a fileStorageContainer by patching the permissions resource. Only the **roles** property can be updated.  One role per user is supported. A new ID is generated for the updated permissions object.
+Update an existing [permission](../resources/permission.md) to an existing [fileStorageContainer](../resources/filestoragecontainer.md) by patching the permission resource. Only the **roles** property can be updated.  One role per user is supported. A new ID is generated for the updated permissions object.
+
 
 The application calling this API must have permissions to update fileStorageContainers permissions for the respective container type.
 
