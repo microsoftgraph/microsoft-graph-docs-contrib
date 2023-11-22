@@ -1,6 +1,6 @@
 ---
 title: "channelSharingUpdatedEventMessageDetail resource type"
-description: "Represents the details of an event message about sharing a channel."
+description: "Represents the details of an event message about a shared channel."
 author: "AgnesLiu"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,21 +13,24 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of an event message about sharing a channel.
+Represents the details of an event message about a shared channel.
 This message is generated when a shared channel is shared.
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|initiator|[identitySet](../resources/intune-identityset.md)| Initiator of the event. |
-|ownerTeamId|String| The Id for the team which shared channel belongs to. |
-|ownerTenantId|String| The Id for the tenant which shared channel belongs to. |
-|sharedChannelId|String| The Id for the thread which is shared. |
+|initiator|[identitySet](../resources/identityset.md)| Initiator of the event. |
+|ownerTeamId|String| The ID of the team to which the shared channel belongs. |
+|ownerTenantId|String| The ID of the tenant to which the shared channel belongs. |
+|sharedChannelId|String| The ID for the thread which is shared. |
 
 ## JSON representation
-The following is a JSON representation of the resource.
+
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.channelSharingUpdatedEventMessageDetail",
@@ -40,9 +43,12 @@ The following is a JSON representation of the resource.
   "initiator": {
     "@odata.type": "microsoft.graph.identitySet"
   },
-  "sharedChannelId": "String",
   "ownerTeamId": "String",
-  "ownerTenantId": "String"
+  "ownerTenantId": "String",
+  "sharedChannelId": "String"
 }
 ```
 
+## See also
+- [Example response for an event message about a shared channel](/graph/system-messages/#channel-sharing-updated)
+- For more information about other types of events, see [System messages](/graph/system-messages).
