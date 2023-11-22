@@ -25,7 +25,6 @@ The application that calls this API must have permission to add permissions to a
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|FileStorageContainer.Selected|
-|Delegated (personal Microsoft account)|FileStorageContainer.Selected|
 |Application|FileStorageContainer.Selected|
 
 ## HTTP request
@@ -45,7 +44,18 @@ POST /storage/fileStorage/containers/{fileStorageContainerId}/permissions
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [permission](../resources/permission.md) object.
+In the request body, supply a JSON representation of the [permission](../resources/permission.md) object with the following properties.
+<!--{
+  "blockType": "ignore",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.permission"
+}-->
+```json
+{
+  "roles": [ "reader | writer" | "manager" | "owner" ],
+  "grantedToV2": {"@odata.type": "microsoft.graph.sharePointIdentitySet"}
+}
+```
 
 ## Response
 
