@@ -11409,7 +11409,7 @@ items:
               - name: List file storage containers
                 href: api/filestorage-list-containers.md
               - name: Create file storage container
-                href: api/filestoragecontainer-post-filestoragecontainers.md
+                href: api/filestoragecontainer-post.md
               - name: Get file storage container
                 href: api/filestoragecontainer-get.md
               - name: Get drive
