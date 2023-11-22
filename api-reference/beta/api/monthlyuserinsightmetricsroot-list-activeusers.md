@@ -1,5 +1,5 @@
 ---
-title:  "List monthly activeUsers"
+title: "List monthly activeUsers"
 description: "Get a list of monthly active users on apps registered in your tenant configured for Microsoft Entra External ID for customers."
 author: "srutto"
 ms.localizationpriority: medium
