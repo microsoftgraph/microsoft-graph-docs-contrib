@@ -3,6 +3,24 @@
         {
             "ChangeList": [
               {
+                "Id": "7b271bbb-c58e-480a-89f3-4b1587543614",
+                "ApiChange": "Resource",
+                "ChangedApiName": "cloudPcBulkModifyDiskEncryptionType",
+                "ChangeType": "Addition",
+                "Description": "Added the [cloudPcBulkModifyDiskEncryptionType](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcBulkModifyDiskEncryptionType?view=graph-rest-beta) resource",
+                "Target": "cloudPcBulkModifyDiskEncryptionType"
+              }
+            ],
+            "Id": "7b271bbb-c58e-480a-89f3-4b1587543614",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-11-22T07:08:27.3298762Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+              {
                 "Id": "8096e20f-92f9-43e1-946a-32eefd298f8f",
                 "ApiChange": "Enumeration",
                 "ChangedApiName": "cloudPcDiskEncryptionType",
