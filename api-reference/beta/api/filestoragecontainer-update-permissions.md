@@ -25,6 +25,7 @@ The application that calls API must have permission to update permissions in a f
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|FileStorageContainer.Selected|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|FileStorageContainer.Selected|
 
 ## HTTP request
