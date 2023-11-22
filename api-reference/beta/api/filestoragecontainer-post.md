@@ -15,9 +15,9 @@ Namespace: microsoft.graph
 
 Create a new [fileStorageContainer](../resources/filestoragecontainer.md) object. 
 
-The respective container type identified by containerTypeId must be enabled in the tenant. 
+The respective container type identified by **containerTypeId** must be enabled in the tenant. 
 
-For delegated calls, the calling user is set as the owner of the fileStorageContainer. 
+For delegated calls, the calling user is set as the owner of the **fileStorageContainer**. 
 
 ## Permissions
 
@@ -49,13 +49,13 @@ POST /storage/fileStorage/containers
 ## Request body
 In the request body, supply a JSON representation of the [fileStorageContainer](../resources/filestoragecontainer.md) object.
 
-You can specify the following properties when creating a **fileStorageContainer**.
+You can specify the following properties when you create a **fileStorageContainer**.
 
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The display name of the container. Required.|
 |description|String|Provides a user-visible description of the item. Optional.|
-|containerTypeId|Guid|Container type of the container instance. Required.|
+|containerTypeId|GUID|The container type of the container instance. Required.|
 
 ## Response
 
@@ -64,7 +64,7 @@ If successful, this method returns a `201 Created` response code and a [fileStor
 ## Examples
 
 ### Request
-The following example shows how to create a fileStorageContainer.
+The following example shows how to create a **fileStorageContainer**.
 <!-- {
   "blockType": "request",
   "name": "create_filestoragecontainer"
