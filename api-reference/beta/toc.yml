@@ -16131,25 +16131,25 @@ items:
                           href: api/applicationsignindetailedsummary-get.md
                 - name: Application user activity (preview)
                   items:
-                  - name: Daily user insight metrics
+                  - name: Daily user insight
                     href: resources/dailyuserinsightmetricsroot.md
-                  - name: Monthly user insight metrics
+                  - name: Monthly user insight
                     href: resources/monthlyuserinsightmetricsroot.md
-                  - name: Active users breakdown metric
+                  - name: Active users breakdown
                     href: resources/activeusersbreakdownmetric.md
                     items:
                     - name: List daily
                       href: api/dailyuserinsightmetricsroot-list-activeusersbreakdown.md
                     - name: List monthly
                       href: api/monthlyuserinsightmetricsroot-list-activeusersbreakdown.md
-                  - name: Active users metric
+                  - name: Active users
                     href: resources/activeusersmetric.md
                     items:
                     - name: List daily
                       href: api/dailyuserinsightmetricsroot-list-activeusers.md
                     - name: List monthly
                       href: api/monthlyuserinsightmetricsroot-list-activeusers.md
-                  - name: Authentications metric
+                  - name: Authentications
                     href: resources/authenticationsmetric.md
                     items:
                     - name: List daily
@@ -16163,26 +16163,26 @@ items:
                       href: api/dailyuserinsightmetricsroot-list-summary.md
                     - name: List monthly
                       href: api/monthlyuserinsightmetricsroot-list-summary.md
-                  - name: MFA completion metric
+                  - name: MFA completion
                     href: resources/mfacompletionmetric.md
                     items:
                     - name: List daily
                       href: api/dailyuserinsightmetricsroot-list-mfacompletions.md
                     - name: List monthly
                       href: api/monthlyuserinsightmetricsroot-list-mfacompletions.md
-                  - name: User count metric
+                  - name: User count
                     href: resources/usercountmetric.md
                     items:
                     - name: List daily
                       href: api/dailyuserinsightmetricsroot-list-usercount.md
-                  - name: User requests metric
+                  - name: User requests
                     href: resources/userrequestsmetric.md
                     items:
                     - name: List daily
                       href: api/dailyuserinsightmetricsroot-list-requests.md
                     - name: List monthly
                       href: api/monthlyuserinsightmetricsroot-list-requests.md
-                  - name: User signup metric
+                  - name: User signup
                     href: resources/usersignupmetric.md
                     items:
                     - name: List daily

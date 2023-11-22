@@ -27,7 +27,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |appId|String|The ID of the Microsoft Entra application.|
-|appName| String|Application name the users authenticated to.|
+|appName| String|Name of the application users authenticated to.|
 |count| Int64|The total number of users who made at least one authentication request within the specified time period.|
 |factDate|Date| The date of the insight.|
 |id|String|Unique identifier for the **activeUsersBreakdownMetric** object. Inherited from [entity](../resources/entity.md).|

@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 Represents daily and monthly insights on all user requests for apps registered in your tenant that is configured for Microsoft Entra External ID for customers, including all requests such as authentication requests, sign-up requests, and MFA requests. The user requests are aggregated without no filtering. 
 
->**Note:** The value returned might not reflect the most updated numbers.
-
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
@@ -30,7 +28,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |factDate|Date|The date of the user insight.|
 |id|String|Identifier for the user insight. Inherited from [entity](../resources/entity.md).|
-|requestCount|Int64|Number of requests that came to the tenant. Supports `$filter` (`eq`).|
+|requestCount|Int64|Number of requests to the tenant. Supports `$filter` (`eq`).|
 
 ## Relationships
 None.
