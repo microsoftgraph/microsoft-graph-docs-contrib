@@ -13,7 +13,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-> [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of a [fileStorageContainer](../resources/filestoragecontainer.md) object.
 
@@ -25,6 +25,7 @@ The application that calls this API must have read/write permissions to a fileSt
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|FileStorageContainer.Selected|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|FileStorageContainer.Selected|
 
 ## HTTP request
