@@ -15,11 +15,6 @@ Namespace: microsoft.graph
 
 Represents a location where multiple users or a group of users can store files and access them via an application. All file system objects in a fileStorageContainer are returned as [driveItem](../resources/driveitem.md) resources. 
 
-The following properties provide data about the status and access settings of a fileStorageContainer object:
-**fileStorageContainer** resources have properties that provide data about the fileStorageContainer's status and access setting. These properties are:
-* **containerType** specifies the application workload that owns or can access all containers of that container type. Each container must have only one container type. 
-* **permissions** specifies the role a user is assigned to and the corresponding access privileges. 
-* **status** specifies the current state of the container. Containers are created as inactive and require activation. Inactive containers are subjected to automatic deletion in 24 hours.
 
 ## Methods
 |Method|Return type|Description|
@@ -44,21 +39,14 @@ The following properties provide data about the status and access settings of a 
 
 |Property|Type|Description|
 |:---|:---|:---|
-|containerTypeId|Guid|Container type ID of the fileStorageContainer. Read-only.|
+|containerTypeId|Guid|Container type ID of the fileStorageContainer. Each container must have only one container type. Read-only.|
 |createdDateTime|DateTimeOffset|Date and time of the fileStorageContainer creation. Read-only.|
 |customProperties|[fileStorageContainerCustomPropertyDictionary](../resources/filestoragecontainercustompropertydictionary.md)|Custom property collection for the fileStorageContainer. Read-write.|
 |description|String|Provides a user-visible description of the fileStorageContainer. Read-write.|
 |displayName|String|The display name of the fileStorageContainer. Read-write.|
 |id|String|The unique stable identifier of the filerStorageContainer. Read-only.|
-|status|fileStorageContainerStatus|Status of the fileStorageContainer. The possible values are: `inactive `,  `active `. Read-only.|
+|status|String|Status of the fileStorageContainer. Containers are created as inactive and require activation. Inactive containers are subjected to automatic deletion in 24 hours.The possible values are: `inactive `,  `active `. Read-only.|
 |viewpoint|[fileStorageContainerViewpoint](../resources/filestoragecontainerviewpoint.md)|Data specific to the current user. Read-only.|
-
-### fileStorageContainerStatus values
-
-|Member|Description|
-|:---|:---|
-|inactive|The container is inactive.|
-|active|The container is active.|
 
 ## Relationships
 
