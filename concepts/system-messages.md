@@ -539,7 +539,8 @@ The following JSON examples show the responses for each supported event type.
 }
 ```
 
-### channel sharing updated
+### Channel sharing updated
+
 ```json
 {
   "id": "1616883610266",
@@ -587,7 +588,6 @@ The following JSON examples show the responses for each supported event type.
   }
 }
 ```
-
 
 ### Channel unset as favorite by default
 
