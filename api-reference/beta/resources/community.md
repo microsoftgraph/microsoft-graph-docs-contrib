@@ -1,6 +1,6 @@
 ---
 title: "community resource type"
-description: "Communities in Viva Engage serve the needs of knowledge-sharing, collaborative employee experience, company-wide communications, and leadership engagement by providing a central place for conversations, files, events, and updates for people sharing a common interest or goal."
+description: "A Community in Viva Engage is a central place for conversations, files, events, and updates for people sharing a common interest or goal. "
 author: "aditijha4"
 ms.localizationpriority: medium
 ms.prod: "employee-engagement"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 A Community in Viva Engage is a central place for conversations, files, events, and updates for people sharing a common interest or goal. 
 
-Every community is associated with a [Microsoft 365 group](../resources/group.md), but the group does not have the same ID as the community. For more information about managing communities and members in Viva Engage, see [Use the Microsoft Graph REST API to work with Viva Engage](../resources/engage-api-overview.md).
+Every community is associated with a [Microsoft 365 group](../resources/group.md), but the group doesn't have the same ID as the community. For more information about managing communities and members in Viva Engage, see [Use the Microsoft Graph REST API to work with Viva Engage](../resources/engage-api-overview.md).
 
 This resource is an open type that allows other properties to be passed in.
 ## Methods
@@ -41,10 +41,10 @@ This resource is an open type that allows other properties to be passed in.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |group|[group](../resources/group.md)|The [Microsoft 365 group](group.md) that manages the membership of this community.|
-|owners|[user](../resources/user.md) collection| The Admins of the community. Limited to 100 users. If this property is not specified when creating a community, the calling user is automatically assigned as the community owner. |
+|owners|[user](../resources/user.md) collection| The Admins of the community. Limited to 100 users. If this property isn't specified when creating a community, the calling user is automatically assigned as the community owner. |
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Below is a JSON representation of the resource:
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
