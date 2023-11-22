@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Workflow(
 	display_name = "Onboard pre-hire employee",
@@ -41,12 +41,12 @@ request_body = Workflow(
 					name = "tapIsUsableOnce",
 					value = "true",
 				),
-			]
+			],
 		),
-	]
+	],
 )
 
-result = await graph_client.identity_governance.lifecycle_workflows.workflows.post(body = request_body)
+result = await graph_client.identity_governance.lifecycle_workflows.workflows.post(request_body)
 
 
 ```

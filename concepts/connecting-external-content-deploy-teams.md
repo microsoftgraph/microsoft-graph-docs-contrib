@@ -138,7 +138,7 @@ You will need to send the **connectorTickets** from the payload you received as 
 
 ### Request
 ```
-POST https://graph.microsoft.com/v1.0/external/connectors
+POST https://graph.microsoft.com/v1.0/external/connection
 GraphConnectors-Ticket: {{connectorsTicket}}
 Content-type: application/json
 Authorization: bearer {{accessToken}}

@@ -34,7 +34,7 @@ The bulkUpload resource type accepts the following properties in the payload:
    ```
 
 - The **Operations** parameter contains an array of key-value pairs. Each request can contain a maximum of 50 user operations under this parameter. The following key-value pairs are _required_ in each object in the array.
-  - **method** key can be set to one of the following values `POST` or `DELETE`
+  - **method** key must be set to `POST`
    > [!NOTE]
    > When the **method** key is set to `POST`, the provisioning service will determine the right operation to perform on the target (create/update/enable/disable) based on the attribute mapping configuration. For example, if you have set {externalId,employeeId} as the matching identifier pair, then the provisioning service will check if a user with the employeeId exists in Microsoft Entra ID. If it doesn't exist, then the provisioning service will create the user. If it exists, then the provisioning service will update the user record.
   - **path** key always set to the value `/Users`

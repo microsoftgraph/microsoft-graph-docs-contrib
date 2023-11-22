@@ -6,10 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-result = await graph_client.tenant_relationships.managed_tenants.conditional_acce_policy_coverages.by_conditional_acces_policy_coverage_id('conditionalAccessPolicyCoverage-id').get()
+result = await graph_client.tenant_relationships.managed_tenants.conditional_access_policy_coverages.by_conditional_access_policy_coverage_id('conditionalAccessPolicyCoverage-id').get()
 
 
 ```

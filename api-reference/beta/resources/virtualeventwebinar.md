@@ -22,6 +22,9 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | Method | Return Type |Description |
 | ------ | ----------- | ---------- |
 | [Get virtualEventWebinar](../api/virtualeventwebinar-get.md) | [virtualEventWebinar](../resources/virtualeventwebinar.md) | Read the properties and relationships of a [virtualEventWebinar](../resources/virtualeventwebinar.md) object. |
+| [List by user role](../api/virtualeventwebinar-getbyuserrole.md) | [virtualEventWebinar](../resources/virtualeventwebinar.md) collection | Get a **virtualEventWebinar** collection where the signed-in user is either the organizer or a coorganizer. |
+| [List by user ID and role](../api/virtualeventwebinar-getbyuseridandrole.md) | [virtualEventWebinar](../resources/virtualeventwebinar.md) collection | Get a **virtualEventWebinar** collection where the specified user is either the organizer or a coorganizer. |
+
 
 ## Properties
 
@@ -50,16 +53,14 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | Value | Description |
 | ----- | ----------- |
 | draft | The webinar is in draft and only visible to the organizer. |
-| published | The webinar has been published by the organizer and visible to the audience. |
-| canceled | The webinar has been canceled by the organizer. |
+| published | The organizer published the webinar and it's visible to the audience. |
+| canceled | The the organizer canceled the webinar. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 
 | Relationship | Type | Description |
 | ------------ | ---- | ----------- |
-| presenters | [virtualEventPresenter](../resources/virtualeventpresenter.md) collection | Presenters' information of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md).|
-| registrationConfiguration | [virtualEventRegistrationConfiguration](../resources/virtualeventregistrationconfiguration.md) | Registration configuration of the webinar. |
 | registrations | [virtualEventRegistration](../resources/virtualeventregistration.md) collection | Registration records of the webinar. |
 | sessions | [virtualEventSession](../resources/virtualeventsession.md)  collection | Sessions of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
 

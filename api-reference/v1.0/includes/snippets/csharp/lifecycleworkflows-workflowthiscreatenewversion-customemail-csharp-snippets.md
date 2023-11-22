@@ -6,9 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.IdentityGovernance.LifecycleWorkflows.Workflows.Item.MicrosoftGraphIdentityGovernanceCreateNewVersion;
+using Microsoft.Graph.Models.IdentityGovernance;
 
-var requestBody = new Microsoft.Graph.IdentityGovernance.LifecycleWorkflows.Workflows.Item.MicrosoftGraphIdentityGovernanceCreateNewVersion.CreateNewVersionPostRequestBody
+var requestBody = new CreateNewVersionPostRequestBody
 {
 	AdditionalData = new Dictionary<string, object>
 	{
@@ -28,18 +30,18 @@ var requestBody = new Microsoft.Graph.IdentityGovernance.LifecycleWorkflows.Work
 			"isSchedulingEnabled" , false
 		},
 		{
-			"executionConditions" , new 
+			"executionConditions" , new TriggerAndScopeBasedConditions
 			{
 				OdataType = "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
-				Scope = new 
+				Scope = new RuleBasedSubjectSet
 				{
 					OdataType = "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
 					Rule = "(department eq 'Marketing')",
 				},
-				Trigger = new 
+				Trigger = new TimeBasedAttributeTrigger
 				{
 					OdataType = "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
-					TimeBasedAttribute = "employeeHireDate",
+					TimeBasedAttribute = WorkflowTriggerTimeBasedAttribute.EmployeeHireDate,
 					OffsetInDays = 0,
 				},
 			}
@@ -93,6 +95,8 @@ var requestBody = new Microsoft.Graph.IdentityGovernance.LifecycleWorkflows.Work
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.IdentityGovernance.LifecycleWorkflows.Workflows["{workflow-id}"].MicrosoftGraphIdentityGovernanceCreateNewVersion.PostAsync(requestBody);
 
 

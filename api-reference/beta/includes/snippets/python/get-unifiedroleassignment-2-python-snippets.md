@@ -6,17 +6,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
-query_params = UnifiedRoleAssignmentRequestBuilder.UnifiedRoleAssignmentRequestBuilderGetQueryParameters(
+query_params = UnifiedRoleAssignmentItemRequestBuilder.UnifiedRoleAssignmentItemRequestBuilderGetQueryParameters(
 		expand = ["roleDefinition"],
 )
 
-request_configuration = UnifiedRoleAssignmentRequestBuilder.UnifiedRoleAssignmentRequestBuilderGetRequestConfiguration(
+request_configuration = UnifiedRoleAssignmentItemRequestBuilder.UnifiedRoleAssignmentItemRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
 )
 
-result = await graph_client.role_management.directory.role_assignments.by_role_assignment_id('unifiedRoleAssignment-id').get(request_configuration = request_configuration)
+result = await graph_client.role_management.directory.role_assignments.by_unified_role_assignment_id('unifiedRoleAssignment-id').get(request_configuration = request_configuration)
 
 
 ```

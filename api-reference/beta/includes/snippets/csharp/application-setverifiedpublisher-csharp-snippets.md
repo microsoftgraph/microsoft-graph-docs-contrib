@@ -6,12 +6,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Applications.Item.SetVerifiedPublisher;
 
-var requestBody = new Microsoft.Graph.Beta.Applications.Item.SetVerifiedPublisher.SetVerifiedPublisherPostRequestBody
+var requestBody = new SetVerifiedPublisherPostRequestBody
 {
 	VerifiedPublisherId = "1234567",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Applications["{application-id}"].SetVerifiedPublisher.PostAsync(requestBody);
 
 

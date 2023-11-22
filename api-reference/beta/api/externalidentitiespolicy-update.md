@@ -17,13 +17,10 @@ Update the settings of the tenant-wide [externalIdentitiesPolicy](../resources/e
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Policy.ReadWrite.ExternalIdentities|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Policy.ReadWrite.ExternalIdentities|
+<!-- { "blockType": "permissions", "name": "externalidentitiespolicy_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/externalidentitiespolicy-update-permissions.md)]
 
 ## HTTP request
 
@@ -52,7 +49,7 @@ PATCH /policies/externalIdentitiesPolicy
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 

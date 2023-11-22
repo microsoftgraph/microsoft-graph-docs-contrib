@@ -121,7 +121,7 @@ Using this feature requires Microsoft Entra ID Governance licenses. To find the 
 
 ## Role and application permission authorization checks
 
-The following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference) are required for a calling user to manage Lifecycle Workflows.
+The following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json) are required for a calling user to manage Lifecycle Workflows.
 
 | Operation | Application permissions | Required directory role of the calling user |
 |:------------------|:------------|:--------------------------------------------|
