@@ -1,5 +1,5 @@
 ---
-title: "List containers"
+title: "List fileStorageContainers"
 description: "Get a list of fileStorageContainers and their properties."
 author: "tonchan-msft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "files"
 doc_type: apiPageType
 ---
 
-# List containers
+# List fileStorageContainers
 
 
 Namespace: microsoft.graph
