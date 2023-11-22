@@ -47,7 +47,7 @@ DELETE /storage/fileStorage/containers/{containerId}/permissions/{permissionId}
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
