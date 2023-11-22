@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update an existing [permission](../resources/permission.md) to a [fileStorageContainer](../resources/filestoragecontainer.md) by patching the permission resource. Only the **roles** property can be updated.  One role per user is supported. A new ID is generated for the updated permissions object.
+Update an existing [permission](../resources/permission.md) on a [fileStorageContainer](../resources/filestoragecontainer.md) by making a PATCH request on the permission resource. Only the **roles** property can be updated.  One role per user is supported. A new ID is generated for the updated permissions object.
 
 
 ## Permissions
@@ -47,7 +47,7 @@ PATCH /storage/fileStorage/containers/{containerId}/permissions/{permissionId}
 ## Request body
 In the request body, supply the new value for the **roles** property.
 
-|Permission Type|Property|Type|Description|
+|Permission type|Property|Type|Description|
 |:---|:---|:---|:---|
 |User|roles|Collection of String|Supported roles are `reader`, `writer`, `manager`, and `owner`. Required.|
 
