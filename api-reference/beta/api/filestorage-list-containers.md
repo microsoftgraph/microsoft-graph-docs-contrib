@@ -24,7 +24,6 @@ The application that calls this API must have write permissions to a fileStorage
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|FileStorageContainer.Selected|
-|Delegated (personal Microsoft account)|FileStorageContainer.Selected|
 |Application|FileStorageContainer.Selected|
 
 ## HTTP request
@@ -60,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following enumerates all tenant-owned containers of a given type.
+The following enumerates all containers of a given container type.
 
 
 <!-- {
@@ -69,7 +68,7 @@ The following enumerates all tenant-owned containers of a given type.
 }
 -->
 ``` http
-GET /storage/fileStorage/containers?$filter=containerTypeId eq {containerTypeId}
+GET https://graph.microsoft.com/beta/storage/fileStorage/containers?$filter=containerTypeId eq {containerTypeId}
 ```
 
 ### Response
