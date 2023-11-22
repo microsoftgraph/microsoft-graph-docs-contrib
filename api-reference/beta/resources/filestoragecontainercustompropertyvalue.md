@@ -20,7 +20,7 @@ Contains the custom property values stored in a [fileStorageContainerCustomPrope
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isSearchable|Boolean|Indicates if the custom property is searchable. Optional. The default value is False.|
+|isSearchable|Boolean|Indicates whether the custom property is searchable. Optional. The default value is `false`.|
 |value|String|Value of the custom property. Required.|
 
 ## Relationships
