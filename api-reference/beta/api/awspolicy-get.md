@@ -2,6 +2,7 @@
 title: "Get awsPolicy"
 description: "Read the properties and relationships of an awsPolicy object."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
@@ -57,14 +58,25 @@ If successful, this method returns a `200 OK` response code and an [awsPolicy](.
 
 ### Request
 The following example shows a request to Retrieve the details of an AWS policy by its ID.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_awspolicy"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.awsAuthorizationSystem/YXJuOmF3czppYW06OjEyMzQ1Njc4OTAxMjpwb2xpY3kvQUFBLWxpc3RQdXRHZXRBbGxCdWNrZXRz
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.awsAuthorizationSystem/policies/YXJuOmF3czppYW06OjEyMzQ1Njc4OTAxMjpwb2xpY3kvQUFBLWxpc3RQdXRHZXRBbGxCdWNrZXRz
 ```
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-awspolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-awspolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response
@@ -73,7 +85,7 @@ The following example shows the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.awsPolicy)"
+  "@odata.type": "microsoft.graph.awsPolicy"
 }
 -->
 ``` http
@@ -81,15 +93,14 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{id}/microsoft.graph.awsAuthorizationSystem/policies",
-  "value": [
+  "value": 
     {
+      "@odata.type": "#microsoft.graph.awsPolicy",
       "id": "YXJuOmF3czppYW06OjEyMzQ1Njc4OTAxMjpwb2xpY3kvQUFBLWxpc3RQdXRHZXRBbGxCdWNrZXRz",
       "externalId": "arn:aws:iam::123456789012:policy/AAA-listPutGetAllBuckets",
       "displayName": "AAA-listPutGetAllBuckets",
       "awsPolicyType": "custom"
     }
-  ]
 }
 ```
 
