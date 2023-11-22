@@ -18,7 +18,7 @@ Activate a [fileStorageContainer](../resources/filestoragecontainer.md) object.
 
 A **fileStorageContainer** object is created in an inactive state, as indicated by the **status** property. A container must be activated within 24 hours after creation, or it is automatically deleted. Upon activation, the value of the status property changes from `inactive` to `active`.
 
-A fileStorageContainer can be activated by calling the activate API or any API that updates or modifies the container or its content. For example, uploading a file to a container activates the container.
+A fileStorageContainer can be activated by calling the activate API or any API that updates or modifies the fileStorageContainer or its content. For example, uploading a file to a fileStorageContainer, adding permission to a fileStorageContainer, creating custom property to a fileStorageContainer, or updating the properties of a fileStorageContainer can activate the fileStorageContainer.
 
 
 ## Permissions
@@ -30,7 +30,6 @@ The application that calls this API must have write permissions to a fileStorage
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|FileStorageContainer.Selected|
-|Delegated (personal Microsoft account)|FileStorageContainer.Selected|
 |Application|FileStorageContainer.Selected|
 
 ## HTTP request
@@ -84,13 +83,4 @@ The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-## See also
-
-You can also use the following methods to activate a fileStorageContainer:
-
-[Update fileStorageContainer](../api/filestoragecontainer-update.md)
-[Add permissions to a fileStorageContainer](../api/filestoragecontainer-post-permissions.md)
-[Create custom properties of a fileStorageContainer](api-reference/beta/api/filestoragecontainer-post.md)
-[Create a new file or folder in the drive of a container](api-reference/beta/api/filestoragecontainer-post.md)
 
