@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete one or multiple custom properties from a fileStorageContainer by assigning a **null** value to the properties.
+Delete one or multiple custom properties from a [fileStorageContainer](../resources/filestoragecontainer.md) by assigning a **null** value to the properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see the [permissions reference](/graph/permissions-reference). The application calling this API must have write permissions to fileStorageContainers for the respective container type.
