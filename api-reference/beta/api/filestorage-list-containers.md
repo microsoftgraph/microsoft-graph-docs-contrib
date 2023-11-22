@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [fileStorageContainer](../resources/filestoragecontainer.md) objects that are visible to the caller. The containerTypeId filter parameter is required.
+Retrieve a list of [fileStorageContainer](../resources/filestoragecontainer.md) objects that are visible to the caller. The `containerTypeId` filter parameter is required.
 
 ## Permissions
 
@@ -40,7 +40,7 @@ GET /storage/fileStorage/containers?$filter=containerTypeId eq {containerTypeId}
 
 ## Query parameters
 
-The $expand operation isn't supported for **drive**, **permissions**, and **customProperties** properties.
+This method required the `containerTypeId` parameter. It supports the `$expand` OData query parameter except for on the for **drive**, **permissions**, and **customProperties** properties. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -54,13 +54,13 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [fileStorageContainer](../resources/filestoragecontainer.md) objects in the response body. Only a limited subset of properties is returned for each fileStorageContainer.
+If successful, this method returns a `200 OK` response code and a collection of [fileStorageContainer](../resources/filestoragecontainer.md) objects in the response body. Only a limited subset of properties is returned for each **fileStorageContainer**.
 
 ## Examples
 
 ### Request
 
-The following enumerates all containers of a given container type.
+The following example enumerates all containers of a given container type.
 
 
 <!-- {
