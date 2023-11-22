@@ -292,6 +292,130 @@ GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsof
 GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.gcpAuthorizationSystem/services/{id}
 ```
 
+## Request a GCP action
+<!-- {
+  "blockType": "request",
+  "name": "permissions-requests-request-gcp-action"
+}-->
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/permissionsManagement/scheduledPermissionsRequests
+Content-Type: application/json
+
+{
+  "requestedPermissions": {
+    "@odata.type": "microsoft.graph.singleResourceGcpPermissionsDefinition",
+    "authorizationSystemInfo": {
+      "authorizationSystemId": "carbide-bonsai-205017",
+      "authorizationSystemType": "GCP"
+    },
+    "actionInfo": {
+      "@odata.type": "microsoft.graph.gcpActionPermissionsDefinitionAction",
+      "actions": [
+        "aiplatform:dataitems"
+      ]
+    },
+    "identityInfo": {
+      "externalId": "alex@contoso.com",
+      "source": {
+        "@odata.type": "microsoft.graph.edIdentitySource"
+      },
+      "identityType": "user"
+    },
+    "resourceId": "carbide-bonsai-205017"
+  },
+  "justification": "I need to do this because I want to code my own chat GPT-3 bot on GCP",
+  "notes": "Pretty Pleaseeeee",
+  "scheduleInfo": {
+    "expiration": {
+      "duration": "PT1H"
+    }
+  },
+  "ticketInfo": {
+    "ticketNumber": "INC1234567",
+    "ticketSystem": "ServiceNow",
+    "ticketSubmitterIdentityId": "alex@contoso.com",
+    "ticketApproverIdentityId": "alexmanager@contoso.com"
+  }
+}
+```
+
+## Request a GCP role
+<!-- {
+  "blockType": "request",
+  "name": "permissions-requests-request-gcp-role"
+}-->
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/permissionsManagement/scheduledPermissionsRequests
+Content-Type: application/json
+
+{
+  "requestedPermissions": {
+    "@odata.type": "microsoft.graph.singleResourceGcpPermissionsDefinition",
+    "authorizationSystemInfo": {
+      "authorizationSystemId": "carbide-bonsai-205017",
+      "authorizationSystemType": "GCP"
+    },
+    "actionInfo": {
+      "@odata.type": "microsoft.graph.gcpRolePermissionsDefinitionAction",
+      "roles": [
+        {
+          "id": "roles/dialogflow.aamAdmin"
+        }
+      ]
+    },
+    "identityInfo": {
+      "externalId": "alex@contoso.com",
+      "source": {
+        "@odata.type": "microsoft.graph.edIdentitySource"
+      },
+      "identityType": "user"
+    },
+    "resourceId": "carbide-bonsai-205017"
+  },
+  "justification": "I need to do this because I want to be an administrator",
+  "notes": "Pretty Pleaseeeee",
+  "scheduleInfo": {
+    "startDateTime": null,
+    "expiration": {
+      "duration": "PT1H"
+    },
+    "recurrence": null
+  },
+  "ticketInfo": {
+    "ticketNumber": "123456",
+    "ticketSystem": "ServiceNow",
+    "ticketSubmitterIdentityId": "alex@contoso.com",
+    "ticketApproverIdentityId": "alexmanager@contoso.com"
+  }
+}
+```
+
+## Cancel a permissions request by ID
+
+Either the requestor or an administrator can cancel an approved request, while only the requestor can cancel a pending (**statusDetail** of `submitted`) request.
+
+```http
+POST https://graph.microsoft.com/beta/permissionsManagement/scheduledPermissionsRequests/{id}/cancelAll
+```
+
+## List details of all permission requests
+
+```http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsManagement/permissionsRequestChanges
+```
+
+## List details of all permission requests filtered by the date they were modified
+
+```http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsManagement/permissionsRequestChanges?$filter=modificationDateTime gt {t}
+```
+
+## Get details of a permissions request
+
+```http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsManagement/permissionsRequestChanges/{id}
+```
+
 ## See also
 
 + [Discover, remediate, and monitor permissions in multicloud infrastructures using permissions management APIs (preview)](/graph/api/resources/permissions-management-api-overview?view=graph-rest-beta&preserve-view=true)

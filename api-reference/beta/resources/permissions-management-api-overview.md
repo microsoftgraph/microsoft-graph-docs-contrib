@@ -61,8 +61,6 @@ The following key API scenarios allow you to implement permissions on demand cap
 |Cancel a permissions request|[scheduledPermissionsRequest: cancelAll](../api/scheduledpermissionsrequest-cancelall.md)|
 |Discover permissions requests|[List permissionsRequestChanges](../api/permissionsmanagement-list-permissionsrequestchanges.md)|
 
-Discover the [API operations quick reference for permissions requests](/graph/permissions-management-how-to-permissions-requests).
-
 ## Permissions analytics
 
 Through the permissions analytics APIs, Permissions Management helps you discover permissions risk in identities and resources for your authorization systems. You can use these findings to automate use cases such as:

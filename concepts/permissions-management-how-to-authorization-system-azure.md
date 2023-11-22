@@ -343,6 +343,132 @@ GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsof
 GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.azureAuthorizationSystem/services/{id}
 ```
 
+## Request an Azure action
+<!-- {
+  "blockType": "request",
+  "name": "permissions-requests-request-azure-action"
+}-->
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/permissionsManagement/scheduledPermissionsRequests
+Content-Type: application/json
+
+{
+  "requestedPermissions": {
+    "@odata.type": "microsoft.graph.singleResourceAzurePermissionsDefinition",
+    "authorizationSystemInfo": {
+      "authorizationSystemId": "87eefd90-95a3-480a-ba42-56ff299a05ee",
+      "authorizationSystemType": "AZURE"
+    },
+    "actionInfo": {
+      "@odata.type": "microsoft.graph.azureActionPermissionsDefinitionAction",
+      "actions": ["Microsoft.Authorization/roleassignments/read", "Microsoft.Authorization/roleassignments/write"]
+    },
+    "identityInfo": {
+      "externalId": "alex@adatum.com"",
+      "source": {
+        "@odata.type": "microsoft.graph.edIdentitySource"
+      },
+      "identityType": "user"
+    },
+    "resourceId": "/subscriptions/87eefd90-95a3-480a-ba42-56ff299a05ee"
+  },
+  "justification": "I need to do this because I want to access AAD resources",
+  "notes": "Pretty Pleaseeeee",
+  "scheduleInfo": {
+    "startDateTime": null,
+    "expiration": {
+      "duration": "PT1H"
+    },
+    "recurrence": null
+  },
+  "ticketInfo": {
+    "ticketNumber": "INC1234567",
+    "ticketSystem": "ServiceNow",
+    "ticketSubmitterIdentityId": "alex@contoso.com",
+    "ticketApproverIdentityId": "alexmanager@contoso.com"
+  }
+}
+```
+
+## Request an Azure role
+<!-- {
+  "blockType": "request",
+  "name": "permissions-requests-request-azure-role"
+}-->
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/permissionsManagement/scheduledPermissionsRequests
+Content-Type: application/json
+
+{
+  "requestedPermissions": {
+    "@odata.type": "microsoft.graph.singleResourceAzurePermissionsDefinition",
+    "authorizationSystemInfo": {
+      "authorizationSystemId": "87eefd90-95a3-480a-ba42-56ff299a05ee",
+      "authorizationSystemType": "AZURE"
+    },
+    "actionInfo": {
+      "@odata.type": "microsoft.graph.azureRolePermissionsDefinitionAction",
+      "roles": [
+        {
+          "id": "cdda3590-29a3-44f6-95f2-9f980659eb04"
+        },
+        {
+          "id": "312a565d-c81f-4fd8-895a-4e21e48d571c"
+        }
+      ]
+    },
+    "identityInfo": {
+      "externalId": "alex@contoso.com",
+      "source": {
+        "@odata.type": "microsoft.graph.edIdentitySource"
+      },
+      "identityType": "user"
+    },
+    "resourceId": "/subscriptions/87eefd90-95a3-480a-ba42-56ff299a05ee"
+  },
+  "justification": "I need to do this because I want to some new azure roles",
+  "notes": "Pretty Pleaseeeee",
+  "scheduleInfo": {
+    "expiration": {
+      "duration": "PT1H"
+    },
+    "recurrence": null
+  },
+  "ticketInfo": {
+    "ticketNumber": "INC1234567",
+    "ticketSystem": "ServiceNow",
+    "ticketSubmitterIdentityId": "alex@contoso.com",
+    "ticketApproverIdentityId": "alexmanager@contoso.com"
+  }
+}
+```
+
+## Cancel a permissions request by ID
+
+Either the requestor or an administrator can cancel an approved request, while only the requestor can cancel a pending (**statusDetail** of `submitted`) request.
+
+```http
+POST https://graph.microsoft.com/beta/permissionsManagement/scheduledPermissionsRequests/{id}/cancelAll
+```
+
+## List details of all permission requests
+
+```http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsManagement/permissionsRequestChanges
+```
+
+## List details of all permission requests filtered by the date they were modified
+
+```http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsManagement/permissionsRequestChanges?$filter=modificationDateTime gt {t}
+```
+
+## Get details of a permissions request
+
+```http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsManagement/permissionsRequestChanges/{id}
+```
+
 ## See also
 
 + [Discover, remediate, and monitor permissions in multicloud infrastructures using permissions management APIs (preview)](/graph/api/resources/permissions-management-api-overview?view=graph-rest-beta&preserve-view=true)

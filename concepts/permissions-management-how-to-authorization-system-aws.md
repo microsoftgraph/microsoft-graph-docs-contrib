@@ -13,6 +13,8 @@ ms.date: 11/22/2023
 
 # Permissions Management API operations quick reference for AWS authorization systems
 
+The permissions management APIs enable you to request, approve, reject, and cancel permissions requests. This article provides a quick reference guide for permissions requests API operations.
+
 ## Get all authorization systems
 
 List all authorization systems onboarded to Permissions Management.
@@ -335,6 +337,162 @@ GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsof
 }-->
 ```http
 GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.awsAuthorizationSystem/services/{id}
+```
+
+## Request an AWS policy
+<!-- {
+  "blockType": "request",
+  "name": "permissions-requests-request-aws-policy"
+}-->
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/permissionsManagement/scheduledPermissionsRequests
+Content-Type: application/json
+
+{
+  "requestedPermissions": {
+    "@odata.type": "#microsoft.graph.awsPermissionsDefinition",
+    "authorizationSystemInfo": {
+      "authorizationSystemId": "956987887735",
+      "authorizationSystemType": "AWS"
+    },
+    "actionInfo": {
+      "@odata.type": "microsoft.graph.awsPolicyPermissionsDefinitionAction",
+      "policies": [
+        {
+          "id": "arn:aws:iam::956987887735:policy/AddUserToGroup"
+        }
+      ],
+      "assignToRoleId": "arn:aws:aim::956987887735:role/saml-user"
+    },
+    "identityInfo": {
+      "externalId": "alex@contoso.com",
+      "source": {
+        "@odata.type": "microsoft.graph.samlIdentitySource"
+      },
+      "identityType": "user"
+    }
+  },
+  "justification": "I need to do this because I want to add a user to a group",
+  "notes": "Pretty Please",
+  "scheduleInfo": {
+    "expiration": {
+      "duration": "PT1H"
+    }
+  },
+  "ticketInfo": {
+    "ticketNumber": "INC1234567",
+    "ticketSystem": "ServiceNow",
+    "ticketSubmitterIdentityId": "alex@contoso.com",
+    "ticketApproverIdentityId": "alexmanager@contoso.com"
+  }
+}
+```
+
+## Request an AWS action
+<!-- {
+  "blockType": "request",
+  "name": "permissions-requests-request-aws-action"
+}-->
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/permissionsManagement/scheduledPermissionsRequests
+Content-Type: application/json
+
+{
+  "requestedPermissions": {
+    "@odata.type": "microsoft.graph.awsPermissionsDefinition",
+    "authorizationSystemInfo": {
+      "authorizationSystemId": "956987887735",
+      "authorizationSystemType": "AWS"
+    },
+    "actionInfo": {
+      "@odata.type": "microsoft.graph.awsActionsPermissionsDefinitionAction",
+      "statements": [
+        {
+          "statementId": "test1",
+          "actions": ["s3:AbortMultipartUpload", "s3:CreateBucket"],
+          "notActions": [],
+          "resources": ["*"],
+          "notResources": [],
+          "effect": "allow",
+          "condition": {
+            "NumericLessThanEquals": { "aws:MultiFactorAuthAge": "3600" }
+          }
+        },
+        {
+          "statementId": "test2",
+          "actions": ["s3:Delete:*"],
+          "notActions": [],
+          "resources": ["*"],
+          "notResources": [],
+          "effect": "allow",
+          "condition": {
+            "NumericLessThanEquals": { "aws:MultiFactorAuthAge": "3600" }
+          }
+        }
+      ],
+      "assignToRoleId": "arn:aws:iam::956987887735:role/ck-saml-power-user"
+    },
+    "identityInfo": {
+      "externalId": "rsn:alex@contoso.com",
+      "source": {
+        "@odata.type": "microsoft.graph.samlIdentitySource"
+      },
+      "identityType": "user"
+    }
+  },
+  "justification": "I need to do this because I want to access S3 resources",
+  "notes": "Please",
+  "scheduleInfo": {
+    "startDateTime": "2023-02-08T12:15:00Z",
+    "expiration": {
+      "duration": "PT1H"
+    },
+    "recurrence": {
+      "pattern": {
+        "dayOfMonth": 5,
+        "daysOfWeek": [],
+        "interval": 1,
+        "reccurencePatternType": "absoluteMonthly"
+      },
+      "range": {
+        "startDate": "2023-02-08",
+        "reccurenceRangeType": "noEnd"
+      }
+    }
+  },
+  "ticketInfo": {
+    "ticketNumber": "INC1234567",
+    "ticketSystem": "ServiceNow",
+    "ticketSubmitterIdentityId": "alex@contoso.com",
+    "ticketApproverIdentityId": "alexmanager@contoso.com"
+  }
+}
+```
+
+## Cancel a permissions request by ID
+
+Either the requestor or an administrator can cancel an approved request, while only the requestor can cancel a pending (**statusDetail** of `submitted`) request.
+
+```http
+POST https://graph.microsoft.com/beta/permissionsManagement/scheduledPermissionsRequests/{id}/cancelAll
+```
+
+## List details of all permission requests
+
+```http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsManagement/permissionsRequestChanges
+```
+
+## List details of all permission requests filtered by the date they were modified
+
+```http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsManagement/permissionsRequestChanges?$filter=modificationDateTime gt {t}
+```
+
+## Get details of a permissions request
+
+```http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsManagement/permissionsRequestChanges/{id}
 ```
 
 ## See also
