@@ -26,6 +26,7 @@ The application that calls this API must have permissions to delete permissions 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|FileStorageContainer.Selected|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|FileStorageContainer.Selected|
 
 ## HTTP request
