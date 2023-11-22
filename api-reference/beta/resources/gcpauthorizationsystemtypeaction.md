@@ -36,7 +36,7 @@ Inherits from [authorizationSystemTypeAction](../resources/authorizationsystemty
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|service|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md)|The service associated with the action in an GCP authorization system. Ths is auto-expanded.|
+|service|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md)|The service associated with the action in a GCP authorization system. This object is auto-expanded. Supports `$filter` (`eq`).|
 
 ## JSON representation
 The following JSON representation shows the resource type.
