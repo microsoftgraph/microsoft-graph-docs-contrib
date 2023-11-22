@@ -68,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST /storage/fileStorage/containers/{containerId}/activate
+POST https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/activate
 ```
 
 ### Response
