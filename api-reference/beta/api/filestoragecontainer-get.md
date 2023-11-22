@@ -23,7 +23,6 @@ The application that calls this API must have permissions to read a fileStorageC
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|FileStorageContainer.Selected|
-|Delegated (personal Microsoft account)|FileStorageContainer.Selected|
 |Application|FileStorageContainer.Selected|
 
 ## HTTP request
@@ -56,7 +55,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET /storage/fileStorage/containers/{containerId}
+GET https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}
 ```
 
 ### Response
