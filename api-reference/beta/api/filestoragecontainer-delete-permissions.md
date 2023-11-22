@@ -58,7 +58,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE /storage/fileStorage/containers/{containerId}/permissions/{permissionId}
+DELETE https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/permissions/{permissionId}
 ```
 
 ### Response
