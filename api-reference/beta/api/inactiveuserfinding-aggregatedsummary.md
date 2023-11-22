@@ -78,6 +78,7 @@ If successful, this function returns a `200 OK` response code and a [permissions
 
 ### Request
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "inactiveuserfindingthis.aggregatedsummary"
@@ -86,6 +87,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveUserFinding/aggregatedSummary(authorizationSystemIds=['377596131774'])
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/inactiveuserfindingthisaggregatedsummary-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response
