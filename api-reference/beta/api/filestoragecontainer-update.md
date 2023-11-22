@@ -17,10 +17,10 @@ Namespace: microsoft.graph
 
 Update the properties of a [fileStorageContainer](../resources/filestoragecontainer.md) object.
 
-The application calling this API must have read/write permissions to a fileStorageContainer for the respective container type.
-
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see the [permissions reference](/graph/permissions-reference).
+The application that calls this API must have read/write permissions to a fileStorageContainer for the respective container type.
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
