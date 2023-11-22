@@ -1,5 +1,5 @@
 ---
-title: "Activate fileStorageContainer"
+title: "filStorageContainer: activate"
 description: "Activate a fileStorageContainer object."
 author: "tonchan-msft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "files"
 doc_type: apiPageType
 ---
 
-# Activate a fileStorageContainer
+# filStorageContainer: activate
 
 
 Namespace: microsoft.graph
@@ -30,6 +30,7 @@ The application that calls this API must have write permissions to a fileStorage
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|FileStorageContainer.Selected|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|FileStorageContainer.Selected|
 
 ## HTTP request
