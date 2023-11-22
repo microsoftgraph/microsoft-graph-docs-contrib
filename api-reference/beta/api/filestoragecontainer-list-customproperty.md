@@ -13,16 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the custom properties of a fileStorageContainer. The caller can retrieve all custom properties or get a specific property by name.
-
-The application calling this API must have permission to read fileStorageContainers for the respective container type.
+List the custom properties of a [fileStorageContainer](../resources/filestoragecontainer.md) object. The caller can retrieve all custom properties or get a specific property by name.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see the [permissions reference](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see the [permissions reference](/graph/permissions-reference). The application calling this API must have permission to read fileStorageContainers for the respective container type.
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|FileStorageContainer.Selected|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|FileStorageContainer.Selected|
 
 ## HTTP request
@@ -55,7 +54,7 @@ The following example shows how to get a custom property named "clientUniquieId"
 }
 -->
 ``` http
-GET /storage/fileStorage/containers/{containerId}/customProperties/clientUniqueId
+GET https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/customProperties/clientUniqueId
 ```
 
 ### Response
@@ -84,7 +83,7 @@ The following example shows how to get all the custom properties of a fileStorag
 }
 -->
 ``` http
-GET /storage/fileStorage/containers/{containerId}/customProperties/
+GET https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/customProperties/
 ```
 
 ### Response
