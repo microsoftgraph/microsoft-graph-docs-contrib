@@ -36,7 +36,7 @@ If you have an existing Data Connect application, follow the steps below:
     6. Choose **Update Properties** to save. Encryption will be applied once your admin approves the changes to the app properties.
 
     > [!NOTE]
-    > Encryption will only be applied to eligible datasets and if the AKV is set up correctly.
+    > Encryption will only be applied to eligible datasets. The AKV must be set up correctly for datasets to be encrypted.
 
     ![Screenshot of the Azure portal with Microsoft Graph Data Connect highlighted](images/portal-MGDC.png)
     
