@@ -87,12 +87,10 @@ HTTP/1.1 204 No Content
 
 ## See also
 
-You can also use the following methods to activate a fileStorageContainer: PLACER HOLDER TO ADD the associated method topics for these tasks.
+You can also use the following methods to activate a fileStorageContainer:
 
-|Task name|Example request|
-|:---|:---|
-|Update a fileStorageContainer|PATCH /storage/fileStorage/containers/{containerId}|
-|Add permissions to a fileStorageContainer|POST /storage/fileStorage/containers/{containerId}/permissions|
-|Create or update custom properties of a fileStorageContainer|PATCH /storage/fileStorage/containers/{containerId}/customProperties|
-|Create a new file or folder in the container's drive|POST /drives/{driveId}/items/{itemId}/children|
+[Update fileStorageContainer](../api/filestoragecontainer-update.md)
+[Add permissions to a fileStorageContainer](../api/filestoragecontainer-post-permissions.md)
+[Create custom properties of a fileStorageContainer](api-reference/beta/api/filestoragecontainer-post.md)
+[Create a new file or folder in the drive of a container](api-reference/beta/api/filestoragecontainer-post.md)
 
