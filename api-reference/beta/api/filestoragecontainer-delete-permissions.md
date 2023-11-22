@@ -7,7 +7,8 @@ ms.prod: "files"
 doc_type: apiPageType
 ---
 
-# Delete permissions from a fileStorageContainer
+# Delete permissions
+
 
 Namespace: microsoft.graph
 
