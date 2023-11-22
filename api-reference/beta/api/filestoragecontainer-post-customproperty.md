@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-Add custom properties to a fileStorageContainer. 
+Add custom properties to a [fileStorageContainer](../resources/filestoragecontainer.md) object. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see the [permissions reference](/graph/permissions-reference). The application calling this API must have write permissions to fileStorageContainers for the respective container type.
@@ -42,23 +42,23 @@ PATCH /storage/fileStorage/containers/{containerId}/customProperties
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [fileStorageContainerCustomPropertyDictionary](../resources/filestoragecontainercustompropertydictionary.md), which is a map with string keys and [fileStorageContainerCustomPropertyValue](../resources/filestoragecontainercustompropertyvalue.md) values.
+In the request body, supply a JSON representation of a [fileStorageContainerCustomPropertyDictionary](../resources/filestoragecontainercustompropertydictionary.md), which is a map with string keys and [fileStorageContainerCustomPropertyValue](../resources/filestoragecontainercustompropertyvalue.md) values.
 
-You can specify the following properties when creating a custom property.
+You can specify the following properties when you create a custom property.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|value|String|Value of the custom property. Required.|
-|isSearchable|Boolean|Flag to indicate if the property is searchable. Optional. Default False.|
+|value|String|The value of the custom property. Required.|
+|isSearchable|Boolean|A flag to indicate whether the property is searchable. Optional. The default value is `false`.|
 
 ## Response
 
-If successful, this action returns either a `200 Created` or `201 Created` response code.
+If successful, this method returns either a `200 Created` or `201 Created` response code.
 
 ## Examples
 
 ### Request
-The following example shows how to create a custom property called "clientUniqueId" for a container.
+The following example shows how to create a custom property called `clientUniqueId` for a container.
 <!-- {
   "blockType": "request",
   "name": "post_filestoragecontainer_customproperty_1"
@@ -87,7 +87,7 @@ HTTP/1.1 200 Created
 ```
 
 ### Request
-The following example shows how to create a searchable custom property called "clientUniqueId" for a container.
+The following example shows how to create a searchable custom property called `clientUniqueId` for a container.
 <!-- {
   "blockType": "request",
   "name": "post_filestoragecontainer_customproperty_2"
