@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a location where multiple users or a group of users can store files and access them via an application. All file system objects in a fileStorageContainer are returned as [driveItem](../resources/driveitem.md) resources. 
+Represents a location where multiple users or a group of users can store files and access them via an application. All file system objects in a **fileStorageContainer** are returned as [driveItem](../resources/driveitem.md) resources. 
 
 
 ## Methods
@@ -41,11 +41,11 @@ Represents a location where multiple users or a group of users can store files a
 |:---|:---|:---|
 |containerTypeId|Guid|Container type ID of the fileStorageContainer. Each container must have only one container type. Read-only.|
 |createdDateTime|DateTimeOffset|Date and time of the fileStorageContainer creation. Read-only.|
-|customProperties|[fileStorageContainerCustomPropertyDictionary](../resources/filestoragecontainercustompropertydictionary.md)|Custom property collection for the fileStorageContainer. Read-write.|
-|description|String|Provides a user-visible description of the fileStorageContainer. Read-write.|
-|displayName|String|The display name of the fileStorageContainer. Read-write.|
-|id|String|The unique stable identifier of the filerStorageContainer. Read-only.|
-|status|String|Status of the fileStorageContainer. Containers are created as inactive and require activation. Inactive containers are subjected to automatic deletion in 24 hours.The possible values are: `inactive `,  `active `. Read-only.|
+|customProperties|[fileStorageContainerCustomPropertyDictionary](../resources/filestoragecontainercustompropertydictionary.md)|Custom property collection for the **fileStorageContainer**. Read-write.|
+|description|String|Provides a user-visible description of the **fileStorageContainer**. Read-write.|
+|displayName|String|The display name of the **fileStorageContainer**. Read-write.|
+|id|String|The unique stable identifier of the **filerStorageContainer**. Read-only.|
+|status|fileStorageContainerStatus|Status of the **fileStorageContainer**. Containers are created as inactive and require activation. Inactive containers are subjected to automatic deletion in 24 hours.The possible values are: `inactive `,  `active `. Read-only.|
 |viewpoint|[fileStorageContainerViewpoint](../resources/filestoragecontainerviewpoint.md)|Data specific to the current user. Read-only.|
 
 ## Relationships
@@ -59,10 +59,10 @@ Represents a location where multiple users or a group of users can store files a
 
 |Value|Description|
 |:---|:---|
-|reader|Readers can read fileStorageContainer metadata and the content inside.|
-|writer|Writers can read and modify fileStorageContainer metadata and contents inside.|
-|manager|Managers can read and modify fileStorageContainer metadata and contents inside and manage the permissions to the container.|
-|owner|Owners can read and modify fileStorageContainer metadata and contents inside, manage container permissions, and delete and restore containers.|
+|reader|Readers can read **fileStorageContainer** metadata and the content inside.|
+|writer|Writers can read and modify **fileStorageContainer** metadata and contents inside.|
+|manager|Managers can read and modify **fileStorageContainer** metadata and contents inside and manage the permissions to the container.|
+|owner|Owners can read and modify **fileStorageContainer** metadata and contents inside, manage container permissions, and delete and restore containers.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
