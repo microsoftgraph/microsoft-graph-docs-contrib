@@ -36,7 +36,8 @@ GET /reports/userInsights/daily/requests
 ```
 
 ## Optional query parameters
-This method supports the $filter OData query parameter to help customize the response. For general information, see OData query parameters.
+
+This method supports the `$filter` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
