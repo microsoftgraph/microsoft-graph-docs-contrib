@@ -25,6 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|FileStorageContainer.Selected|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|FileStorageContainer.Selected|
 
 ## HTTP request
@@ -67,7 +68,7 @@ The following example updates the value property of the custom properties client
 }
 -->
 ``` http
-PATCH /storage/fileStorage/containers/{containerId}/customProperties
+PATCH https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/customProperties
 Content-type: application/json
 
 {
