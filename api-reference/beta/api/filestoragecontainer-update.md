@@ -45,7 +45,7 @@ PATCH /storage/fileStorage/containers/{containerId}
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply the new values for the fileStorageContainer properties. Existing properties not included in the request body maintain their previous values. To optimize performance, you shouldn't include existing values that didn't change.
+In the request body, supply the new values for the **fileStorageContainer** properties. Existing properties not included in the request body maintain their previous values. To optimize performance, don't include existing values that didn't change.
 
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [fileStorageContainer](../resources/filestoragecontainer.md) object in the response body.
