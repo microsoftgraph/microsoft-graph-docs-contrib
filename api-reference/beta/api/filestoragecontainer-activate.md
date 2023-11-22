@@ -24,7 +24,8 @@ A fileStorageContainer can be activated by calling the activate API or any API t
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see the [permissions reference](/graph/permissions-reference).
-The application that calls this API must have permissions to delete a fileStorageContainer for the respective container type.
+The application that calls this API must have write permissions to a fileStorageContainer for the respective container type.
+
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
