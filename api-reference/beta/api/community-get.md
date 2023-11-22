@@ -3,7 +3,7 @@ title: "Get community"
 description: "Read the properties and relationships of a community object."
 author: "aditijha4"
 ms.localizationpriority: medium
-ms.prod: "employee-experience"
+ms.prod: "employee-engagement"
 doc_type: apiPageType
 ---
 
