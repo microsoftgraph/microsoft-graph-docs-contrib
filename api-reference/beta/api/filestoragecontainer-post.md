@@ -15,16 +15,19 @@ Namespace: microsoft.graph
 
 Create a new [fileStorageContainer](../resources/filestoragecontainer.md) object. 
 
-The respective container type identified by containerTypeId must be enabled in the tenant. The calling application must have permissions to create fileStorageContainers for the respective container type.
+The respective container type identified by containerTypeId must be enabled in the tenant. 
 
 For delegated calls, the calling user is set as the owner of the fileStorageContainer. 
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see the [permissions reference](/graph/permissions-reference).
+The application that calls this API must have permission to create a fileStorageContainer for the respective container type.
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|FileStorageContainer.Selected|
+|Delegated (personal Microsoft account)|FileStorageContainer.Selected|
 |Application|FileStorageContainer.Selected|
 
 ## HTTP request
