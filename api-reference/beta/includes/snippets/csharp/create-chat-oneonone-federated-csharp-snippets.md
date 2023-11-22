@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
 var requestBody = new Chat
 {
@@ -23,7 +24,7 @@ var requestBody = new Chat
 			AdditionalData = new Dictionary<string, object>
 			{
 				{
-					"user@odata.bind" , "https://graph.microsoft.com/v1.0/users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')"
+					"user@odata.bind" , "https://graph.microsoft.com/beta/users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')"
 				},
 			},
 		},
@@ -38,12 +39,14 @@ var requestBody = new Chat
 			AdditionalData = new Dictionary<string, object>
 			{
 				{
-					"user@odata.bind" , "https://graph.microsoft.com/v1.0/users('82af01c5-f7cc-4a2e-a728-3a5df21afd9d')"
+					"user@odata.bind" , "https://graph.microsoft.com/beta/users('82af01c5-f7cc-4a2e-a728-3a5df21afd9d')"
 				},
 			},
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Chats.PostAsync(requestBody);
 
 

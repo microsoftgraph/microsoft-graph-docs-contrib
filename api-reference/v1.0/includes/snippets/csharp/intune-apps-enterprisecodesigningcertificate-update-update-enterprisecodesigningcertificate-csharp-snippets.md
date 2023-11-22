@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
 var requestBody = new EnterpriseCodeSigningCertificate
 {
@@ -20,6 +21,8 @@ var requestBody = new EnterpriseCodeSigningCertificate
 	ExpirationDateTime = DateTimeOffset.Parse("2016-12-31T23:57:57.2481234-08:00"),
 	UploadDateTime = DateTimeOffset.Parse("2016-12-31T23:58:46.5747426-08:00"),
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.DeviceAppManagement.EnterpriseCodeSigningCertificates["{enterpriseCodeSigningCertificate-id}"].PatchAsync(requestBody);
 
 

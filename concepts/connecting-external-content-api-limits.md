@@ -43,6 +43,8 @@ This article describes implementation and operational limits for Microsoft Graph
 | Number of [activities](/graph/api/resources/externalconnectors-externalactivity); this is the [throttling](#throttling) threshold per activities call | 20 activities |
 | Property size | N/A |
 
+> **Note:** The 4 MB item size limit refers to the total size of *parsed text content* that is typically 10% of the original file size for common formats (for example, docx, ppt, and PDF). To contextualize, 4 MB equals 4,000,000 bytes that translates to approximately 600K-700K words or 1,400 pages (averaging 500 words per page).
+
 ## Throttling
 
 When a [throttling](throttling.md) threshold is exceeded, Microsoft Graph limits any further requests from that client for a period of time. When throttling occurs, Microsoft Graph returns HTTP status code 429 (Too many requests), and the requests fail. A suggested wait time is returned in the response header of the failed request.

@@ -36,6 +36,13 @@ Microsoft Graph Data Connect currently supports the following datasets. To view 
 | Contact_v0 | Provides contact details available from each user’s address book. | [Contact_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-contact.md) |
 | Contact_v1 | Provides the contact details available from each user’s address book. | [Contact_v1 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-contact1.md) |
 
+### Devices and Licenses
+| Dataset name | Description | Learn more |
+| --- | --- | --- |
+| OwnedDevices_v0 | Provides detailed information related to all the devices that are owned by each user in the organization. | [OwnedDevices_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-owneddevices.md) |
+| RegisteredDevices_v0 | Provides detailed information related to all the devices that a user is registered on in the organization. | [RegisteredDevices_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-registereddevices.md) |
+| LicenseDetails_v0 | Provides details for users' licenses that are directly assigned and those transitively assigned through memberships in licensed groups. | [LicenseDetails_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-licensedetails.md) |
+
 ### Event
 
 | Dataset name | Description | Learn more |
@@ -104,6 +111,7 @@ Microsoft Graph Data Connect currently supports the following datasets. To view 
 | --- | --- | --- |
 | TodoTaskFolders_v0 | Identifies task folders in Microsoft Outlook that track user-level work items. | [TodoTaskFolders_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-todotaskfolders.md) |
 | TodoTasks_v0 | Identifies tasks in Microsoft Outlook that track user-level work items. | [TodoTasks_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-todotasks.md) |
+| PlannerTasks_v0 | Identifies tasks in Planner that track user-level work items. | [PlannerTasks_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-plannertasks.md) |
 
 ### User
 
@@ -114,15 +122,14 @@ Microsoft Graph Data Connect currently supports the following datasets. To view 
 
 ### OneDrive and SharePoint Online
 
-The OneDrive and SharePoint Online datasets are available after 48 hours (about two days). For example, you can query data for 07/01 starting on 07/03.  
-
-The data available is from the last 21 days (about three weeks). For example, if you would like to query data for 07/01, you can do so from 07/03 to 07/24. 
-
 | Dataset name | Description | Sample and Schema |
 | --- | --- | --- |
-| BasicDataSet_v0.SharePointPermissions_v1 | Contains information about sharing permissions.(Formerly known as DocumentSharingDataset_v0_Preview)| <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.SharePointPermissions_v1.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/BasicDataSet_v0.SharePointPermissions_v1.md)</li></ul>
-| BasicDataSet_v0.SharePointSites_v1  | Contains information about SharePoint sites.(Formerly known as SharePointSitesDataset_v0_Preview)| <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.SharePointSites_v1.json) </li><li> [Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/BasicDataSet_v0.SharePointSites_v1.md)</li></ul>
-| BasicDataSet_v0.SharePointGroups_v1 | Contains SharePoint group information, including details about group members.(Formerly known as SharePointGroupsDataset_v0_Preview) | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.SharePointGroups_v1.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/BasicDataSet_v0.SharePointGroups_v1.md)</li></ul>
+| SharePointSites_v1  | Contains information about SharePoint sites. (Formerly known as SharePointSitesDataset_v0_Preview)| [SharePointSites_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointsites.md) |
+| SharePointPermissions_v1 | Contains information about sharing permissions. (Formerly DocumentSharingDataset_v0_Preview) | [SharePointPermissions_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointpermissions.md) |
+| SharePointGroups_v1 | Contains SharePoint group information, including details about group members. (Formerly SharePointGroupsDataset_v0_Preview) | [SharePointGroups_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointgroups.md) |
+| SharePointFiles_v1  | Contains information about SharePoint files. (Coming in January 2024.) | [SharePointFiles_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointfiles.md) |
+| SharePointFileActions_v1 | Contains information about SharePoint file actions. (Coming in January 2024.) | [SharePointFileActions_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointfileactions.md) |
+| OneDriveSyncHealth_v1 | Contains information about devices running OneDrive for Business. (Coming in January 2024.) | [OneDriveSyncHealth_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-onedrivesynchealth.md) |
 
 ### Viva Insights
 
