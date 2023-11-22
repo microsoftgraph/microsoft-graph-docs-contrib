@@ -1,5 +1,5 @@
 ---
-title: "Delete permissions from a fileStorageContainer"
+title: "Delete permissions"
 description: "Delete permissions from a fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
@@ -26,7 +26,6 @@ The application that calls this API must have permissions to delete permissions 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|FileStorageContainer.Selected|
-|Delegated (personal Microsoft account)|FileStorageContainer.Selected|
 |Application|FileStorageContainer.Selected|
 
 ## HTTP request
