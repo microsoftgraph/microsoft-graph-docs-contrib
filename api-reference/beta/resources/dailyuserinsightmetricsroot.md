@@ -1,5 +1,5 @@
 ---
-title: "dailyUserInsightsMetricsRoot resource type"
+title: "dailyUserInsightMetricsRoot resource type"
 description: "Represents a container for summaries of daily user activities on apps registered in your tenant that is configured for Microsoft Entra External ID for customers."
 author: "srutto"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
-# dailyUserInsightsMetricsRoot resource type
+# dailyUserInsightMetricsRoot resource type
 
 Namespace: microsoft.graph
 
