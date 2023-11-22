@@ -14,7 +14,7 @@ Microsoft Graph Data Connect (Data Connect) offers encryption capabilities throu
 
 - **Encryption for data-in-transit**: Data Connect offers encryption for data-in-transit through custom encryption with customer owned keys capability. It also ensures that all data requests between a customer’s Microsoft 365 and Azure resources are secure by using service standards that are [SOC approved](/compliance/regulatory/offering-soc-2), such as HTTPS.
 
-## Enabling custom encryption with customer owned keys with Microsoft Graph Data Connect
+## Enabling custom encryption with customer owned keys in Microsoft Graph Data Connect
 
 Customers can use custom encryption for secure dataset delivery. Link your Azure Key Vault (AKV) during application registration to enable encryption. Data Connect encrypts datasets using authorized public keys and delivers them encrypted with a decryption key.
 
@@ -44,7 +44,7 @@ If you have an existing Data Connect application, follow the steps below:
 
 If you don't have an existing Data Connect application, use the following steps to create one:
 
-1. Follow the [Getting started](/graph/data-connect-quickstart?tabs=NewConsentFlow%2CPAMMicrosoft365%2CAzureSynapsePipeline) guide and use [the simplified onboarding experience.](./onboarding-experience-overview.md) to build your Data Connect application.
+1. Follow the [getting started](/graph/data-connect-quickstart?tabs=NewConsentFlow%2CPAMMicrosoft365%2CAzureSynapsePipeline) guide and use [the simplified onboarding experience](./onboarding-experience-overview.md) to build your Data Connect application.
 
 2. Fill out the application details on the **Registration Info** page.
     1. Under **Publish Type** select **Single Tenant** if you intend to enable encryption as on. 
