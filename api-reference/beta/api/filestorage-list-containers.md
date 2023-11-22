@@ -1,6 +1,5 @@
 ---
 title: "List containers"
-
 description: "Get a list of fileStorageContainers and their properties."
 author: "tonchan-msft"
 ms.localizationpriority: medium
