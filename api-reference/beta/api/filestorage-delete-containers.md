@@ -15,12 +15,11 @@ Namespace: microsoft.graph
 
 Delete a [fileStorageContainer](../resources/filestoragecontainer.md) object. This method moves the **fileStorageContainer**  to the recycle bin; it doesn't permanently delete it.
 
-
-The application calling this API must have permissions to delete fileStorageContainers for the respective container type.
-
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see the [permissions reference](/graph/permissions-reference).
+The application that calls this API must have permissions to delete a fileStorageContainer for the respective container type.
+
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
