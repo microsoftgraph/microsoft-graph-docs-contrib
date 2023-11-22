@@ -1,5 +1,5 @@
 ---
-title: "Get a fileStorageContainer"
+title: "Get fileStorageContainer"
 description: "Retrieve the properties of a fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
@@ -7,21 +7,23 @@ ms.prod: "files"
 doc_type: apiPageType
 ---
 
-# Get a fileStorageContainer
+# Get fileStorageContainer
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties of a [fileStorageContainer](../resources/filestoragecontainer.md).
 
-The application calling this API must have permissions to read fileStorageContainers for the respective container type.
-
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see the [permissions reference](/graph/permissions-reference).
+The application that calls this API must have permissions to read a fileStorageContainer for the respective container type.
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|FileStorageContainer.Selected|
+|Delegated (personal Microsoft account)|FileStorageContainer.Selected|
 |Application|FileStorageContainer.Selected|
 
 ## HTTP request
