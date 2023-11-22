@@ -53,6 +53,7 @@ If successful, this method returns a `200 OK` response code and an [encryptedAws
 
 ### Request
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_encryptedawsstoragebucketfinding"
@@ -61,6 +62,16 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/MSxFbmNyeXB0ZWRBd3NTdG9yYWdlQnVja2V0RmluZGluZywyNTA4NDA/microsoft.graph.encryptedAwsStorageBucketFinding
 ```
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-encryptedawsstoragebucketfinding-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-encryptedawsstoragebucketfinding-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response
