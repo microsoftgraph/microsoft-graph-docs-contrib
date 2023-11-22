@@ -42,12 +42,12 @@ GET /storage/fileStorage/containers/{containerId}/customProperties/{propertyName
 
 ## Response
 
-If successful, this action returns a `200 OK` response code.
+If successful, this method returns a `200 OK` response code.
 
 ## Examples
 
 ### Request
-The following example shows how to get a custom property named "clientUniquieId".
+The following example shows how to get a custom property named `clientUniquieId`.
 <!-- {
   "blockType": "request",
   "name": "list_filestoragecontainer_customproperty_1"
@@ -76,7 +76,7 @@ Content-type: application/json
 
 ```
 ### Request
-The following example shows how to get all the custom properties of a fileStorageContainer.
+The following example shows how to get all the custom properties of a **fileStorageContainer**.
 <!-- {
   "blockType": "request",
   "name": "list_filestoragecontainer_customproperty_2"
