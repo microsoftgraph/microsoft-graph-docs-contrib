@@ -1,6 +1,6 @@
 ---
 title: "Delete permissions"
-description: "Delete permissions from a fileStorageContainer."
+description: "Delete permissions from a fileStorageContainer object."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.prod: "files"
