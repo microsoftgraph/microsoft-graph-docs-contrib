@@ -13,7 +13,7 @@ ms.date: 11/22/2023
 
 # Permissions Management API operations quick reference for AWS authorization systems
 
-The permissions management APIs enable you to request, approve, reject, and cancel permissions requests. This article provides a quick reference guide for permissions requests API operations.
+The permissions management APIs enable you to discover permissions assigned to all identities across multiple clouds; request permissions; approve, reject, and cancel permissions requests. This article provides a quick reference guide for API operations on AWS authorization systems, supported through the permissions management APIs.
 
 ## Get all authorization systems
 
