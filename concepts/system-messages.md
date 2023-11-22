@@ -588,7 +588,6 @@ The following JSON examples show the responses for each supported event type.
 }
 ```
 
-
 ### Channel unset as favorite by default
 
 ```json

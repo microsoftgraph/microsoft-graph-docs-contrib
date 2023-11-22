@@ -2,6 +2,7 @@
 title: "permissionsAnalyticsAggregatedIdentitySummary resource type"
 description: "Represents the total number of identities of a specific kind and the number of a specific finding for that identity in an authorization system."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
