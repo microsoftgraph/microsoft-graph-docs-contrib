@@ -23,7 +23,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2023-10-16T06:58:17.7596296Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
       {
@@ -3310,6 +3310,24 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2022-08-15T07:46:26.039Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "f00b2e02-6946-43f0-a94e-8c290df45986",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "resourceAvailabilityCheckDeploymentQuotaLimitReached",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `resourceAvailabilityCheckDeploymentQuotaLimitReached` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                }
+            ],
+            "Id": "f00b2e02-6946-43f0-a94e-8c290df45986",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2023-11-21T07:25:58.9412735Z",
             "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },

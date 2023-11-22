@@ -2,6 +2,7 @@
 title: "# List actions (for an Azure authorization system)"
 description: "List the azureAuthorizationSystemTypeAction objects and their properties."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
@@ -58,6 +59,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_azureauthorizationsystemtypeaction"
@@ -66,6 +68,16 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.azureAuthorizationSystem/actions
 ```
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-azureauthorizationsystemtypeaction-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-azureauthorizationsystemtypeaction-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response
@@ -122,6 +134,7 @@ Content-Type: application/json
 
 #### Request
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_azureauthorizationsystemtypeaction2"
@@ -130,6 +143,16 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.azureAuthorizationSystem/actions?$filter=service/id eq 'Microsoft.Storage'
 ```
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-azureauthorizationsystemtypeaction2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-azureauthorizationsystemtypeaction2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response
