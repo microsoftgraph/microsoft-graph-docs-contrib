@@ -24,7 +24,6 @@ The application that calls this API must have permissions to access the content 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|FileStorageContainer.Selected|
-|Delegated (personal Microsoft account)|FileStorageContainer.Selected|
 |Application|FileStorageContainer.Selected|
 
 ## HTTP request
@@ -35,6 +34,7 @@ The application that calls this API must have permissions to access the content 
 -->
 ``` http
 GET /storage/fileStorage/containers/{containerId}/drive
+GET /drives/{driveId}
 ```
 
 
@@ -107,9 +107,3 @@ Content-type: application/json
   }
 }
 ```
-
-## See also
-
-You can also use the following methods to get the drive directly with a driveID: 
-
-[Get drive by driveID] PLACE HOLDER INSERT LINK
