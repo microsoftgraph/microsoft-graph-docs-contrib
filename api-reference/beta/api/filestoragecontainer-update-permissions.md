@@ -49,7 +49,8 @@ In the request body, supply the new value for the **roles** property.
 
 |Permission Type|Property|Type|Description|
 |:---|:---|:---|:---|
-|User|roles|Collection of String|Supported roles are reader, writer, manager, and owner. Required.|
+|User|roles|Collection of String|Supported roles are `reader`, `writer`, `manager`, and `owner`. Required.|
+
 
 ## Response
 
