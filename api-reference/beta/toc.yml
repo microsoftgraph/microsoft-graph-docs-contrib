@@ -16131,6 +16131,10 @@ items:
                           href: api/applicationsignindetailedsummary-get.md
                 - name: Application user activity (preview)
                   items:
+                  - name: Daily user insight metrics
+                    href: resources/dailyuserinsightmetricsroot.md
+                  - name: Monthly user insight metrics
+                    href: resources/monthlyuserinsightmetricsroot.md
                   - name: Active users breakdown metric
                     href: resources/activeusersbreakdownmetric.md
                     items:
@@ -16173,12 +16177,14 @@ items:
                       href: api/dailyuserinsightmetricsroot-list-usercount.md
                   - name: User requests metric
                     href: resources/userrequestsmetric.md
+                    items:
                     - name: List daily
                       href: api/dailyuserinsightmetricsroot-list-requests.md
                     - name: List monthly
                       href: api/monthlyuserinsightmetricsroot-list-requests.md
                   - name: User signup metric
                     href: resources/usersignupmetric.md
+                    items:
                     - name: List daily
                       href: api/dailyuserinsightmetricsroot-list-signups.md
                     - name: List monthly
