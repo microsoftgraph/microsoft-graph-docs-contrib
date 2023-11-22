@@ -27,7 +27,8 @@ Contains the custom property values stored in a [fileStorageContainerCustomPrope
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following is a JSON representation of the resource type.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.fileStorageContainerCustomPropertyValue"
