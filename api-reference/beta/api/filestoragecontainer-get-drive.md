@@ -1,27 +1,29 @@
 ---
-title: "Get drive for fileStorageContainer"
-description: "Get the drive resources from fileStorageContainer"
+title: "Get drive for a fileStorageContainer"
+description: "Get the properties of a drive associated with a fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.prod: "files"
 doc_type: apiPageType
 ---
 
-# Get drive for fileStorageContainer
+# Get drive for a fileStorageContainer
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the fileStorageContainer's [drive](../resources/drive.md).  
-
-The application that makes the request must have permissions to access the content in the fileStorageContainers for the respective container type.
+Get the properties of a [drive](../resources/drive.md) associated with a [fileStorageContainer](../resources/filestoragecontainer.md).
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see the [permissions reference](/graph/permissions-reference).
+The application that calls this API must have permissions to delete a fileStorageContainer for the respective container type.
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|FileStorageContainer.Selected|
+|Delegated (personal Microsoft account)|FileStorageContainer.Selected|
 |Application|FileStorageContainer.Selected|
 
 ## HTTP request
@@ -105,9 +107,9 @@ Content-type: application/json
 }
 ```
 
-## Other methods
+## See also
 
-The application that makes the request can get the drive directly with a driveID and must have permissions to access the contents in the fileStorageContainers for the respective container type.
+You can also use the following methods to get the drive directly with a driveID. PLACE HOLDER FOR LINKS 
 
 |Task name|Example request|
 |:---|:---|
