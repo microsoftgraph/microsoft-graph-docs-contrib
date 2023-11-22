@@ -3,7 +3,7 @@ title: "employeeExperience resource type"
 description: "Represents a container that exposes navigation properties for employee experience resources."
 author: "malabikaroy"
 ms.localizationpriority: medium
-ms.prod: "employee-learning"
+ms.prod: "employee-experience"
 doc_type: resourcePageType
 ---
 
@@ -19,6 +19,8 @@ Represents a container that exposes navigation properties for employee experienc
 
 |Method|Return type|Description|
 |:---|:---|:---|
+|[Get community](../api/community-get.md)|[community](../resources/community.md)|Read the properties and relationships of a community object.|
+|[Create community](../api/employeeexperience-post-communities.md)|[community](../resources/community.md)|Create a new community object.|
 |[List learningProviders](../api/employeeexperience-list-learningproviders.md)|[learningProvider](../resources/learningprovider.md) collection|Get a list of the [learningProvider](../resources/learningprovider.md) resources registered in Viva Learning for a tenant.|
 |[Create learningProvider](../api/employeeexperience-post-learningproviders.md)|[learningProvider](../resources/learningprovider.md)|Create a new [learningProvider](../resources/learningprovider.md) object and register it with Viva Learning using the specified display name and logos for different themes.|
 
@@ -28,6 +30,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
+|communities|[community](../resources/community.md) collection| A collection of communities in Viva Engage. |
 |goals|[goals](../resources/goals.md) collection|Represents a collection of goals in a Viva Goals organization.|
 |learningProviders|[learningProvider](../resources/learningprovider.md) collection|A collection of learning providers.|
 

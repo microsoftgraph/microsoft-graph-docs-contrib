@@ -11163,6 +11163,18 @@ items:
                 href: api/goals-post-exportjobs.md
               - name: Get
                 href: api/goalsexportjob-get.md
+          - name: Employee engagement (preview)
+            displayName: Viva Engage
+            items:
+              - name: Overview
+                href: resources/engagement-api-overview.md
+              - name: Community
+                href: resources/community.md
+                items:
+                  - name: Create
+                    href: api/employeeexperience-post-communities.md
+                  - name: Get
+                    href: api/community-get.md
       - name: Extensions
         items:
           - name: Overview
