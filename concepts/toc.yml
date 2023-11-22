@@ -537,8 +537,6 @@ items:
               href: permissions-management-how-to-authorization-system-azure.md
             - name: GCP authorization systems API operations
               href: permissions-management-how-to-authorization-system-gcp.md
-            - name: Permissions requests API operations
-              href: permissions-management-how-to-permissions-requests.md
       - name: Industry data ETL (preview)
         href: industrydata-concept-overview.md
       - name: Mail
