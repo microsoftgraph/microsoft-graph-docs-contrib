@@ -52,7 +52,7 @@ In the request body, supply a JSON representation of the [permission](../resourc
 }-->
 ```json
 {
-  "roles": [ "reader | writer" | "manager" | "owner" ],
+  "roles": [ "reader | writer | manager | owner" ],
   "grantedToV2": {"@odata.type": "microsoft.graph.sharePointIdentitySet"}
 }
 ```
