@@ -2,6 +2,7 @@
 title: "allInboundPorts resource type"
 description: "Allows incoming traffic from all ports."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
