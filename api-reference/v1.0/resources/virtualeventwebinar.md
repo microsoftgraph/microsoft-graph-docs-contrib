@@ -20,15 +20,15 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | Method | Return Type |Description |
 | ------ | ----------- | ---------- |
 | [Get virtualEventWebinar](../api/virtualeventwebinar-get.md) | [virtualEventWebinar](../resources/virtualeventwebinar.md) | Read the properties and relationships of a [virtualEventWebinar](../resources/virtualeventwebinar.md) object. |
-| [List by user role](../api/virtualeventwebinar-getbyuserrole.md) | [virtualEventWebinar](../resources/virtualeventwebinar.md) collection | Get a **virtualEventWebinar** collection where the signed-in user is either the organizer or a coorganizer. |
-| [List by user ID and role](../api/virtualeventwebinar-getbyuseridandrole.md) | [virtualEventWebinar](../resources/virtualeventwebinar.md) collection | Get a **virtualEventWebinar** collection where the specified user is either the organizer or a coorganizer. |
+| [List by user role](../api/virtualeventwebinar-getbyuserrole.md) | [virtualEventWebinar](../resources/virtualeventwebinar.md) collection | Get a **virtualEventWebinar** collection where the signed-in user is either the organizer or a co-organizer. |
+| [List by user ID and role](../api/virtualeventwebinar-getbyuseridandrole.md) | [virtualEventWebinar](../resources/virtualeventwebinar.md) collection | Get a **virtualEventWebinar** collection where the specified user is either the organizer or a co-organizer. |
 
 ## Properties
 
 | Property | Type | Description |
 | -------- | ---- | ----------- |
 | audience | [meetingAudience](#meetingaudience-values) | To whom the webinar is visible. |
-| coOrganizers  | [communicationsUserIdentity](communicationsuseridentity.md) collection | Identity information of coorganizers of the webinar. |
+| coOrganizers  | [communicationsUserIdentity](communicationsuseridentity.md) collection | Identity information of co-organizers of the webinar. |
 | createdBy | [communicationsIdentitySet](communicationsidentityset.md) | Identity information of who created the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
 | description | [itemBody](../resources//itembody.md) | Description of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
 | displayName | String | Display name of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
