@@ -174,10 +174,10 @@ Content-type: application/json
 
 ### Example 3: Delta link request
 
-In some scenarios, you might want to request the current `deltaLink` value without first enumerating all of the sites, lists, and webs. This suggestion can be useful if your app only wants to know about changes and doesn't need to know about existing sites.
+In some scenarios, you might want to request the current `deltaLink` value without first enumerating all the sites, lists, and webs. This suggestion can be useful if your app only wants to know about changes and doesn't need to know about existing sites.
 To retrieve the latest `deltaLink`, call `delta` with the query string parameter `?token=latest`.
 
-> **Note:** If you want to maintain a full local representation of the resources, you must use `delta` for the initial enumeration. Using `delta` is the only way to guarantee that you've read all of the data you need to.
+> **Note:** To maintain a full local representation of the resources, you must use `delta` for the initial enumeration. Using `delta` is the only way to guarantee that you've read all of the data you need to.
 
 #### Request
 
