@@ -25,7 +25,6 @@ The application that calls this API must have read/write permissions to a fileSt
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|FileStorageContainer.Selected|
-|Delegated (personal Microsoft account)|FileStorageContainer.Selected|
 |Application|FileStorageContainer.Selected|
 
 ## HTTP request
@@ -47,9 +46,6 @@ PATCH /storage/fileStorage/containers/{containerId}
 ## Request body
 In the request body, supply the new values for the fileStorageContainer properties. Existing properties not included in the request body maintain their previous values. To optimize performance, you shouldn't include existing values that didn't change.
 
-> [!Note]
-> Not all fileStorageContainer properties can be changed via this API.
-
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [fileStorageContainer](../resources/filestoragecontainer.md) object in the response body.
 
@@ -63,7 +59,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH /storage/fileStorage/containers/{containerId}
+PATCH https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}
 Content-Type: application/json
 
 {
