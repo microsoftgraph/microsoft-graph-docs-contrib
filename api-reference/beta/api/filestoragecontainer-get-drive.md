@@ -1,5 +1,5 @@
 ---
-title: "Get drive for a fileStorageContainer"
+title: "Get drive for fileStorageContainer"
 description: "Get the properties of a drive associated with a fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "files"
 doc_type: apiPageType
 ---
 
-# Get drive for a fileStorageContainer
+# Get drive for fileStorageContainer
 
 Namespace: microsoft.graph
 
