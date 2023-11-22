@@ -296,7 +296,10 @@ Content-Type: application/json
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#print/printers('c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb')/jobs/$entity",
   "id": "5182",
   "createdDateTime": "2020-02-04T00:00:00.0000000Z",
-  "createdBy": {    
+  "createdBy": {
+    "id": "",
+    "displayName": "",
+    "userPrincipalName": ""
   },
   "configuration": {    
   },
