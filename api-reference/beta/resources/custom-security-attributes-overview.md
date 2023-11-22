@@ -72,10 +72,6 @@ To manage custom security attributes, the calling principal must be assigned one
 
 Also, the calling principal must be granted the appropriate [custom security attributes permissions](/graph/permissions-reference#custom-security-attributes-permissions).
 
-## License requirements
-
-Using custom security attributes requires a Microsoft Entra ID P1 or P2 license.
-
 ## Next steps
 
 + [customSecurityAttributeDefinition resource type](/graph/api/resources/customsecurityattributedefinition)
