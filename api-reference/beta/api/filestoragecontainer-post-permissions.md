@@ -1,7 +1,7 @@
 ---
 title: "Create permission"
 
-description: "Add permissions to a fileStorageContainer instance"
+description: "Add a permission to a fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.prod: "files"
@@ -15,15 +15,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add  a [permission](../resources/permission.md) to an existing [fileStorageContainer](../resources/filestoragecontainer.md). 
+Add a [permission](../resources/permission.md) to an existing [fileStorageContainer](../resources/filestoragecontainer.md). 
 
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see the [permissions reference](/graph/permissions-reference).
+The application that calls this API must have permission to add permissions to a fileStorageContainer for the respective container type.
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|FileStorageContainer.Selected|
+|Delegated (personal Microsoft account)|FileStorageContainer.Selected|
 |Application|FileStorageContainer.Selected|
 
 ## HTTP request
@@ -52,7 +55,7 @@ If successful, this method returns a `201 Created` response code and a [permissi
 ## Examples
 
 ### Request
-This example adds a new user as reader to a container.
+The following example shows how to add a new user as a reader to a container.
 <!-- {
   "blockType": "request",
   "name": "create_permission",
@@ -74,7 +77,7 @@ Content-type: application/json
 ```
 
 ### Response
-The following example shows the response. If successful, this method returns a `201 Created` response code and a [permission](../resources/permission.md) object in the response body.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
