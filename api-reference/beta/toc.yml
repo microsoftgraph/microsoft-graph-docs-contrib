@@ -16108,6 +16108,27 @@ items:
                       items:
                         - name: List
                           href: api/relyingpartydetailedsummary-list.md
+                - name: Application credential activity
+                  href: resources/appcredentialsigninactivity.md
+                  items:
+                    - name: List
+                      href: api/reportroot-list-appcredentialsigninactivities.md
+                    - name: Get
+                      href: api/appcredentialsigninactivity-get.md
+                - name: Application sign-in
+                  items:
+                    - name: Sign-in summary
+                      href: resources/applicationsigninsummary.md
+                      items:
+                        - name: Get
+                          href: api/reportroot-getazureadapplicationsigninsummary.md
+                    - name: Sign-in details
+                      href: resources/applicationsignindetailedsummary.md
+                      items:
+                        - name: List
+                          href: api/reportroot-list-applicationsignindetailedsummary.md
+                        - name: Get
+                          href: api/applicationsignindetailedsummary-get.md
                 - name: Application user activity (preview)
                   items:
                   - name: Active users breakdown metric
@@ -16162,27 +16183,6 @@ items:
                       href: api/dailyuserinsightmetricsroot-list-signups.md
                     - name: List monthly
                       href: api/monthlyuserinsightmetricsroot-list-signups.md
-                - name: Application credential activity
-                  href: resources/appcredentialsigninactivity.md
-                  items:
-                    - name: List
-                      href: api/reportroot-list-appcredentialsigninactivities.md
-                    - name: Get
-                      href: api/appcredentialsigninactivity-get.md
-                - name: Application sign-in
-                  items:
-                    - name: Sign-in summary
-                      href: resources/applicationsigninsummary.md
-                      items:
-                        - name: Get
-                          href: api/reportroot-getazureadapplicationsigninsummary.md
-                    - name: Sign-in details
-                      href: resources/applicationsignindetailedsummary.md
-                      items:
-                        - name: List
-                          href: api/reportroot-list-applicationsignindetailedsummary.md
-                        - name: Get
-                          href: api/applicationsignindetailedsummary-get.md
                 - name: Microsoft Entra SLA attainment
                   items:
                     - name: Microsoft Entra authentication
