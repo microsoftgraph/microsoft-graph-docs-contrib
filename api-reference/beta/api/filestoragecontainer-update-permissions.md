@@ -25,7 +25,6 @@ The application that calls API must have permission to update permissions in a f
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|FileStorageContainer.Selected|
-|Delegated (personal Microsoft account)|FileStorageContainer.Selected|
 |Application|FileStorageContainer.Selected|
 
 ## HTTP request
@@ -66,7 +65,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH /storage/fileStorage/containers/{containerId}/permissions/{permissionId}
+PATCH https://graph.microsoft.com/beta/storage/fileStorage/containers/{containerId}/permissions/{permissionId}
 Content-Type: application/json
 
 {
