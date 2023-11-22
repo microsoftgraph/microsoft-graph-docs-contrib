@@ -1,6 +1,6 @@
 ---
 title: "fileStorageContainer resource type"
-description: "Represents a space where multiple users or a group of users can store files and access them using an application."
+description: "Represents a location where multiple users or a group of users can store files and access them via an application."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.prod: "files"
@@ -13,18 +13,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a space where multiple users or a group of users can store files and access them using an application. All file system objects in a fileStorageContainer are returned as [driveItem](../resources/driveitem.md) resources. 
+Represents a location where multiple users or a group of users can store files and access them via an application. All file system objects in a fileStorageContainer are returned as [driveItem](../resources/driveitem.md) resources. 
 
-**FileStorageContainer** resources have properties that provide data about the fileStorageContainer's status and access setting. These properties are:
-* **ContainerType** specifies the application workload that owns or can access all containers of that container type. Each container must have only one container type. 
-* **Permissions** specifies the role a user is assigned to and the corresponding access privileges. 
-* **Status** specifies the current state of the container. Containers are created as inactive and require activation. Inactive containers are subjected to automatic deletion in 24 hours.
+The following properties provide data about the status and access settings of a fileStorageContainer object:
+**fileStorageContainer** resources have properties that provide data about the fileStorageContainer's status and access setting. These properties are:
+* **containerType** specifies the application workload that owns or can access all containers of that container type. Each container must have only one container type. 
+* **permissions** specifies the role a user is assigned to and the corresponding access privileges. 
+* **status** specifies the current state of the container. Containers are created as inactive and require activation. Inactive containers are subjected to automatic deletion in 24 hours.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List fileStorageContainers](../api/filestorage-list-containers.md)|[fileStorageContainer](../resources/filestoragecontainer.md)|Get a list of the [fileStorageContainer](../resources/filestoragecontainer.md) objects and their properties.|
-|[Create fileStorageContainer](../api/filestoragecontainer-post-filestoragecontainers.md)|[fileStorageContainer](../resources/filestoragecontainer.md)|Create a new [fileStorageContainer](../resources/filestoragecontainer.md) object.|
+|[Create fileStorageContainer](../api/filestoragecontainer-post.md)|[fileStorageContainer](../resources/filestoragecontainer.md)|Create a new [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[Get fileStorageContainer](../api/filestoragecontainer-get.md)|[fileStorageContainer](../resources/filestoragecontainer.md)|Read the properties and relationships of a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[Update fileStorageContainer](../api/filestoragecontainer-update.md)|[fileStorageContainer](../resources/filestoragecontainer.md)|Update the properties of a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[Delete fileStorageContainer](../api/filestorage-delete-containers.md)|None|Delete a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
@@ -49,10 +50,10 @@ Represents a space where multiple users or a group of users can store files and 
 |description|String|Provides a user-visible description of the fileStorageContainer. Read-write.|
 |displayName|String|The display name of the fileStorageContainer. Read-write.|
 |id|String|The unique stable identifier of the filerStorageContainer. Read-only.|
-|status|String|Status of the fileStorageContainer. Read-only.|
+|status|fileStorageContainerStatus|Status of the fileStorageContainer. The possible values are: `inactive `,  `active `. Read-only.|
 |viewpoint|[fileStorageContainerViewpoint](../resources/filestoragecontainerviewpoint.md)|Data specific to the current user. Read-only.|
 
-## status values
+### fileStorageContainerStatus values
 
 |Member|Description|
 |:---|:---|
@@ -63,10 +64,10 @@ Represents a space where multiple users or a group of users can store files and 
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|drive|[drive](../resources/drive.md)|The fileStorageContainer's drive resource. Read-only.|
-|permissions|[permission](../resources/permission.md) collection|The set of permissions for users in the fileStorageContainer. Permission for each user is set by the **roles** property. The possible values are 'reader', 'writer', 'manager', and 'owner'. The following list shows the roles. Read-write.|
+|drive|[drive](../resources/drive.md)|The drive of the resource fileStorageContainer. Read-only.|
+|permissions|[permission](../resources/permission.md) collection|The set of permissions for users in the fileStorageContainer. Permission for each user is set by the **roles** property. The possible values are 'reader', 'writer', 'manager', and 'owner'. Read-write.|
 
-## Roles property values
+### roles property values
 
 |Value|Description|
 |:---|:---|
@@ -76,7 +77,7 @@ Represents a space where multiple users or a group of users can store files and 
 |owner|Owners can read and modify fileStorageContainer metadata and contents inside, manage container permissions, and delete and restore containers.|
 
 ## JSON representation
-The following JSON representation shows the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
