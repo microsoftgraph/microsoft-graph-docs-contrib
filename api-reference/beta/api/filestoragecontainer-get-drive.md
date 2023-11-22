@@ -110,8 +110,6 @@ Content-type: application/json
 
 ## See also
 
-You can also use the following methods to get the drive directly with a driveID. PLACE HOLDER FOR LINKS 
+You can also use the following methods to get the drive directly with a driveID: 
 
-|Task name|Example request|
-|:---|:---|
-|Get drive by driveID|GET /drives/{driveId}|
+[Get drive by driveID] PLACE HOLDER INSERT LINK
