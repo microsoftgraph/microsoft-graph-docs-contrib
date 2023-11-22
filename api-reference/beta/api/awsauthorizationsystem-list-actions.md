@@ -2,6 +2,7 @@
 title: "List actions (for an AWS authorization system)"
 description: "List the awsAuthorizationSystemAction objects and their properties."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
@@ -58,6 +59,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 The following example shows a request to retrieve all actions for an AWS authorization system.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_awsauthorizationsystemtypeaction"
@@ -66,6 +68,16 @@ The following example shows a request to retrieve all actions for an AWS authori
 ``` http
 GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.awsAuthorizationSystem/actions
 ```
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-awsauthorizationsystemtypeaction-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-awsauthorizationsystemtypeaction-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response
@@ -158,6 +170,7 @@ Content-Type: application/json
 
 #### Request
 The following example shows a request to retrieve the actions for an AWS authorization system where the service that the action is performed on is `ec2`.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_awsauthorizationsystemtypeaction2"
@@ -166,6 +179,16 @@ The following example shows a request to retrieve the actions for an AWS authori
 ``` http
 GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.awsAuthorizationSystem/actions?$filter=service/id eq 'ec2'
 ```
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-awsauthorizationsystemtypeaction2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-awsauthorizationsystemtypeaction2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response
@@ -222,6 +245,7 @@ Content-Type: application/json
 
 #### Request
 The following example shows a request that retrieves actions for an AWS authorization system where the service that the action is performed on is `ec2` and the action is a high risk delete action.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_awsauthorizationsystemtypeaction3"
@@ -230,6 +254,16 @@ The following example shows a request that retrieves actions for an AWS authoriz
 ``` http
 GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.awsAuthorizationSystem/actions?$filter=service/id eq 'ec2' and severity eq 'high' and actionType eq 'delete'
 ```
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-awsauthorizationsystemtypeaction3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-awsauthorizationsystemtypeaction3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response
