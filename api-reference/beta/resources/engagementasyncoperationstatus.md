@@ -20,7 +20,7 @@ Describes the current status of an [engagementAsyncOperation](../resources/engag
 | Member | Value| Description |
 |:---------------|:--------|:----------|
 |invalid|0|Invalid value.|
-|notStarted|1|The operation has not started.|
+|notStarted|1|The operation hasn't started.|
 |inProgress|2|The operation is running.|
 |succeeded|3|The operation succeeded.|
 |failed|4|The operation failed.|
