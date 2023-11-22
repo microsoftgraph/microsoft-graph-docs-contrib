@@ -531,13 +531,13 @@ items:
                     displayName: PIM alerts, privileged identity management
           - name: Multicloud permissions management (preview)
             items:
-            - name: AWS authorization systems API operations reference
+            - name: AWS authorization systems API operations
               href: permissions-management-how-to-authorization-system-aws.md
-            - name: Azure authorization systems API operations reference
+            - name: Azure authorization systems API operations
               href: permissions-management-how-to-authorization-system-azure.md
-            - name: GCP authorization systems API operations reference
+            - name: GCP authorization systems API operations
               href: permissions-management-how-to-authorization-system-gcp.md
-            - name: Permissions requests API operations reference
+            - name: Permissions requests API operations
               href: permissions-management-how-to-permissions-requests.md
       - name: Industry data ETL (preview)
         href: industrydata-concept-overview.md
