@@ -7,7 +7,7 @@ ms.prod: "files"
 doc_type: apiPageType
 ---
 
-# Delete a fileStorageContainer
+# Delete fileStorageContainer
 
 Namespace: microsoft.graph
 
@@ -18,7 +18,7 @@ Delete a [fileStorageContainer](../resources/filestoragecontainer.md) object. Th
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see the [permissions reference](/graph/permissions-reference).
-The application that calls this API must have permissions to delete a fileStorageContainer for the respective container type.
+The application that calls this API must have permission to delete a fileStorageContainer for the respective container type.
 
 
 |Permission type|Permissions (from least to most privileged)|
