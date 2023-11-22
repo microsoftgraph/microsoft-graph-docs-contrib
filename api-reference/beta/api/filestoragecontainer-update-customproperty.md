@@ -13,11 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update one or multiple custom properties on a fileStorageContainer. Only the **value** and **isSearchable** attributes of custom properties can be updated. Only the custom properties specified in the request body are updated. If a custom property specified in the request body doesn't exist on the container, it will be created. 
+Update one or multiple custom properties on a [fileStorageContainer](../resources/filestoragecontainer.md). Only the **value** and **isSearchable** attributes of custom properties can be updated. Only the custom properties specified in the request body are updated. If a custom property specified in the request body doesn't exist on the container, it will be created. 
 
-Updating a custom property to null deletes the property from the container.
+Updating a custom property to a `null` value deletes the property from the container.
 
-The application calling this API must have read/write permissions to fileStorageContainers for the respective container type.
+The application calling this API must have read/write permissions to the **fileStorageContainer** for the respective container type.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see the [permissions reference](/graph/permissions-reference).
@@ -45,14 +45,14 @@ PATCH /storage/fileStorage/containers/{containerId}/customProperties
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply the custom properties for update and the new values for the relevant fields. 
+In the request body, supply the custom properties to be updated and the new values for the relevant fields. 
 
 The following properties on custom properties can be modified.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|value|String|Value of the custom property.|
-|isSearchable|Boolean|Indicator if the property is searchable.|
+|value|String|The value of the custom property.|
+|isSearchable|Boolean|Indicates whether the property is searchable.|
 
 ## Response
 
@@ -61,7 +61,7 @@ If successful, this action returns a `200 OK` response code.
 ## Examples
 
 ### Request
-The following example updates the value property of the custom properties clientUniqeId and color. Note that "isSearchable" for "clientUniqueId" was set to **True** before calling this API.
+The following example updates the `value` property of the custom properties `clientUniqeId` and `color`. Note that `isSearchable` for `clientUniqueId` was set to `true` before calling this API.
 <!-- {
   "blockType": "request",
   "name": "update_filestoragecontainer_customproperty"
