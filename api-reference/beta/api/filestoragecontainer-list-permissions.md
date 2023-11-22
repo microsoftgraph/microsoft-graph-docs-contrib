@@ -1,5 +1,5 @@
 ---
-title: "List fileStorageContainer permissions"
+title: "List permissions"
 description: "Get the set of permissions for a fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
@@ -7,22 +7,23 @@ ms.prod: "files"
 doc_type: apiPageType
 ---
 
-# List fileStorageContainer permissions
+# List permissions
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enumerate permissions for an existing fileStorageContainer. 
-
-The application calling this API must have permissions to enumerate fileStorageContainers permissions for the respective container type.
+Get a list of the [permission](../resources/permission.md) objects associated with a [fileStorageContainer](../resources/filestoragecontainer.md).
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see the [permissions reference](/graph/permissions-reference).
+The application that calls this API must have permission to read permissions in a fileStorageContainer for the respective container type.
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|FileStorageContainer.Selected|
+|Delegated (personal Microsoft account)|FileStorageContainer.Selected|
 |Application|FileStorageContainer.Selected|
 
 ## HTTP request
@@ -36,7 +37,7 @@ GET /storage/fileStorage/containers/{containerId}/permissions
 ```
 
 ## Optional query parameters
-This method supports OData skip-top paging, $orderBy, and $filter features. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$skip`, `$top`, `$orderBy`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
