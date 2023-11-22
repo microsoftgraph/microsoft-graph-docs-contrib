@@ -2,6 +2,7 @@
 title: "externallyAccessibleAwsStorageBucketFinding resource type"
 description: "Get insight into the AWS S3 buckets accessible externally in your environment."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
@@ -20,7 +21,7 @@ Inherits from [finding](../resources/finding.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List externallyAccessibleAwsStorageBucketFindings](../api/externallyaccessibleawsstoragebucketfinding-list.md)|[externallyAccessibleAwsStorageBucketFinding](../resources/externallyaccessibleawsstoragebucketfinding.md) collection|Get a list of the [externallyAccessibleAwsStorageBucketFinding](../resources/externallyaccessibleawsstoragebucketfinding.md) objects and their properties.|
+|[List externallyAccessibleAwsStorageBucketFinding objects](../api/externallyaccessibleawsstoragebucketfinding-list.md)|[externallyAccessibleAwsStorageBucketFinding](../resources/externallyaccessibleawsstoragebucketfinding.md) collection|Get a list of the [externallyAccessibleAwsStorageBucketFinding](../resources/externallyaccessibleawsstoragebucketfinding.md) objects and their properties.|
 |[Get externallyAccessibleAwsStorageBucketFinding](../api/externallyaccessibleawsstoragebucketfinding-get.md)|[externallyAccessibleAwsStorageBucketFinding](../resources/externallyaccessibleawsstoragebucketfinding.md)|Read the properties and relationships of an [externallyAccessibleAwsStorageBucketFinding](../resources/externallyaccessibleawsstoragebucketfinding.md) object.|
 
 ## Properties

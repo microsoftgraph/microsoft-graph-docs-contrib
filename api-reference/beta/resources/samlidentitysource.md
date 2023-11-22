@@ -2,6 +2,7 @@
 title: "samlIdentitySource resource type"
 description: "Represents source for SAML identities."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
