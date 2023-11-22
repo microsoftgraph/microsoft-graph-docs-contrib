@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the details of an event message about sharing a channel.
-This message is generated when a shared channel is shared.
+This message is generated when a channel with a **membershipType** of `shared` is shared.
 
 Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 
@@ -24,7 +24,7 @@ Inherits from [eventMessageDetail](../resources/eventmessagedetail.md).
 |initiator|[identitySet](../resources/intune-identityset.md)| Initiator of the event. |
 |ownerTeamId|String| The Id for the team which shared channel belongs to. |
 |ownerTenantId|String| The Id for the tenant which shared channel belongs to. |
-|sharedChannelId|String| The Id for the thread which is shared. |
+|sharedChannelId|String| The ID of the shared channel. |
 
 ## JSON representation
 The following is a JSON representation of the resource.

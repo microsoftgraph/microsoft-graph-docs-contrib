@@ -50,7 +50,7 @@ For details, see [Change notifications for messages](teams-changenotifications-c
 | Channel description updated | [channelDescriptionUpdatedEventMessageDetail](#channel-description-updated) | Channel |
 | Channel renamed | [channelRenamedEventMessageDetail](#channel-renamed) | Channel |
 | Channel set as favorite | [channelSetAsFavoriteByDefaultEventMessageDetail](#channel-set-as-favorite-by-default) | Channel |
-| Channel sharing updated | [channelSharingUpdatedEventMessageDetail](#channel-sharing-updated) | Channel |
+| Channel shared | [channelSharingUpdatedEventMessageDetail](#channel-sharing-updated) | Channel |
 | Channel unset as favorite | [channelUnsetAsFavoriteByDefaultEventMessageDetail](#channel-unset-as-favorite-by-default) | Channel |
 | Chat renamed | [chatRenamedEventMessageDetail](#chat-renamed) | Chat |
 | Conversation member role updated | [conversationMemberRoleUpdatedEventMessageDetail](#conversation-member-role-updated) | Channel, Team |
@@ -539,7 +539,7 @@ The following JSON examples show the responses for each supported event type.
 }
 ```
 
-### channel sharing updated
+### Channel shared
 ```json
 {
   "id": "1616883610266",
