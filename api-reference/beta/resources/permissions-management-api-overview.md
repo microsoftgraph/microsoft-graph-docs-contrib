@@ -34,6 +34,8 @@ The following key API scenarios allow you to retrieve details for authorization 
 | Get details for an Azure authorization system | [List awsAuthorizationSystems](../api/azureauthorizationsystem-list.md) |
 | Get details for a GCP authorization system | [List awsAuthorizationSystems](../api/gcpauthorizationsystem-list.md) |
 
+Discover the API operations quick reference for [AWS authorization systems](/graph/permissions-management-how-to-authorization-system-aws), [Azure authorization systems](/graph/permissions-management-how-to-authorization-system-azure), and [GCP authorization systems](/graph/permissions-management-how-to-authorization-system-gcp).
+
 ## Authorization system inventory
 
 Every authorization system has a defined set of objects that form the capabilities of the authorization system. For example, identities such as users and service accounts, or actions and resources.
@@ -46,9 +48,9 @@ The following key API scenarios allow you to retrieve the inventory for authoriz
 |List identity types in specific authorization systems|<li>List [roles](../api/awsassociatedidentities-list-roles.md) and [users](../api/awsassociatedidentities-list-users.md) in AWS <li> List [managed identities](../api/azureassociatedidentities-list-managedidentities.md), [users](../api/azureassociatedidentities-list-users.md), and [service principals](../api/azureassociatedidentities-list-serviceprincipals.md) in Azure <li> List [users](../api/gcpassociatedidentities-list-users.md), and [service accounts](../api/gcpassociatedidentities-list-serviceaccounts.md) in GCP |
 |Other inventory| <li> List [actions](../api/awsauthorizationsystem-list-actions.md), [policies](../api/awsauthorizationsystem-list-policies.md), [resources](../api/awsauthorizationsystem-list-resources.md), and [services](../api/awsauthorizationsystem-list-services.md) in AWS <li> List [actions](../api/azureauthorizationsystem-list-actions.md), [resources](../api/azureauthorizationsystem-list-resources.md), [role definitions](../api/azureauthorizationsystem-list-roledefinitions.md), and [services](../api/azureauthorizationsystem-list-services.md) in Azure <li> List [actions](../api/gcpauthorizationsystem-list-actions.md), [resources](../api/gcpauthorizationsystem-list-resources.md), [roles](../api/gcpauthorizationsystem-list-roles.md), and [services](../api/gcpauthorizationsystem-list-services.md) in GCP|
 
-## Permissions on demand
+## Permissions requests
 
-Identities can request for permissions against actions and resources in an authorization system. The permissions on demand capabilities allow callers to request permissions for themselves or on behalf of another identity, and other identities to approve, reject, or cancel the requests.
+Identities can request for permissions against actions and resources in an authorization system. The permissions requests capabilities allow callers to request permissions for themselves or on behalf of another identity, and other identities to approve, reject, or cancel the requests.
 
 The following key API scenarios allow you to implement permissions on demand capabilities.
 
@@ -57,6 +59,8 @@ The following key API scenarios allow you to implement permissions on demand cap
 |Request permissions; grant or reject a request |[Create scheduledPermissionsRequest](../api/permissionsmanagement-post-scheduledpermissionsrequests.md)|
 |Cancel a permissions request|[scheduledPermissionsRequest: cancelAll](../api/scheduledpermissionsrequest-cancelall.md)|
 |Discover permissions requests|[List permissionsRequestChanges](../api/permissionsmanagement-list-permissionsrequestchanges.md)|
+
+Discover the [API operations quick reference for permissions requests](/graph/permissions-management-how-to-permissions-requests).
 
 <!--
 ## Permissions analytics

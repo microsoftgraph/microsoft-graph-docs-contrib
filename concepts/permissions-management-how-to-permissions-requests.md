@@ -1,6 +1,6 @@
 ---
-title: "Permissions Management API quick reference for managing permissions requests"
-description: "Quick reference guide for permissions requests API operations through Permissions Management APIs."
+title: "Permissions Management API operations quick reference for managing permissions requests"
+description: "API operations quick reference guide for permissions requests through Permissions Management APIs."
 author: "FaithOmbongi"
 ms.author: ombongifaith
 ms.reviewer: ciem_pm
@@ -11,7 +11,7 @@ ms.date: 11/22/2023
 #CustomerIntent: As a developer, I want a one-stop shop for all the common tasks I can program through the permissions management APIs so that I don't have to visit all API docs one at a time.
 ---
 
-# Permissions Management API quick reference for managing permissions requests
+# Permissions Management API operations quick reference for managing permissions requests
 
 The permissions management APIs enable you to request, approve, reject, and cancel permissions requests. This article provides a quick reference guide for permissions requests API operations.
 

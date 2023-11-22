@@ -1,6 +1,6 @@
 ---
-title: "Permissions Management API quick reference for AWS authorization systems"
-description: "Quick reference guide for Permissions Management API operations on AWS authorization systems."
+title: "Permissions Management API operations quick reference for AWS authorization systems"
+description: "API operations quick reference guide for AWS authorization systems."
 author: "FaithOmbongi"
 ms.author: ombongifaith
 ms.reviewer: ciem_pm
@@ -11,7 +11,7 @@ ms.date: 11/22/2023
 #CustomerIntent: As a developer, I want a one-stop shop for all the common tasks I can program through the permissions management APIs so that I don't have to visit all API docs one at a time.
 ---
 
-# Permissions Management API quick reference for AWS authorization systems
+# Permissions Management API operations quick reference for AWS authorization systems
 
 ## Get all authorization systems
 
