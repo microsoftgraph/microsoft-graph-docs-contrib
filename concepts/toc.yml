@@ -533,6 +533,12 @@ items:
             items:
             - name: AWS authorization system API quick reference
               href: permissions-management-how-to-authorization-system-aws.md
+            - name: Azure authorization system API quick reference
+              href: permissions-management-how-to-authorization-system-azure.md
+            - name: GCP authorization system API quick reference
+              href: permissions-management-how-to-authorization-system-gcp.md
+            - name: Permissions on demand API quick reference
+              href: permissions-management-how-to-permissions-on-demand.md
       - name: Industry data ETL (preview)
         href: industrydata-concept-overview.md
       - name: Mail
