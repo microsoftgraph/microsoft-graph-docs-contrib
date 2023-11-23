@@ -21,13 +21,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "domain_post_federationconfiguration" } -->
 [!INCLUDE [permissions-table](../includes/permissions/domain-post-federationconfiguration-permissions.md)]
 
-The calling user must be assigned one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json):
-
-- Global Administrator
-- Security Administrator
-- External Identity Provider Administrator
-- Domain Name Administrator
-- Partner Tier2 Support
+[!INCLUDE [rbac-domainfederation-apis-write](../includes/rbac-for-apis/rbac-domainfederation-apis-write.md)]
 
 ## HTTP request
 
