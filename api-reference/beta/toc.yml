@@ -11403,6 +11403,39 @@ items:
                 href: api/permission-update.md
               - name: Delete permission
                 href: api/permission-delete.md
+          - name: File storage containers
+            href: resources/filestoragecontainer.md
+            items:
+              - name: List file storage containers
+                href: api/filestorage-list-containers.md
+              - name: Create file storage container
+                href: api/filestoragecontainer-post.md
+              - name: Get file storage container
+                href: api/filestoragecontainer-get.md
+              - name: Get drive
+                href: api/filestoragecontainer-get-drive.md
+              - name: Update file storage containers
+                href: api/filestoragecontainer-update.md
+              - name: Delete file storage container
+                href: api/filestorage-delete-containers.md
+              - name: Activate file storage container
+                href: api/filestoragecontainer-activate.md
+              - name: List permissions
+                href: api/filestoragecontainer-list-permissions.md
+              - name: Add permissions
+                href: api/filestoragecontainer-post-permissions.md
+              - name: Update permissions
+                href: api/filestoragecontainer-update-permissions.md
+              - name: Delete permissions
+                href: api/filestoragecontainer-delete-permissions.md
+              - name: List custom property
+                href: api/filestoragecontainer-list-customproperty.md
+              - name: Add custom property
+                href: api/filestoragecontainer-post-customproperty.md
+              - name: Update custom property
+                href: api/filestoragecontainer-update-customproperty.md
+              - name: Delete custom property
+                href: api/filestoragecontainer-delete-customproperty.md
       - name: Financials (preview)
         items:
           - name: Overview
@@ -12208,230 +12241,6 @@ items:
                       href: api/certificateauthorityasentity-update.md
                     - name: Delete
                       href: api/certificateauthorityasentity-delete.md
-          - name: Network access
-            items:
-              - name: Overview
-                displayName: ZTNA, Global Secure Access, Microsoft Entra Internet Access, Microsoft Entra Private Access
-                href: resources/networkaccess-global-secure-access-api-overview.md
-              - name: Tenant status
-                href: resources/networkaccess-tenantstatus.md
-                items:
-                  - name: Onboard
-                    href: api/networkaccess-networkaccessroot-onboard.md
-                  - name: Get
-                    href: api/networkaccess-tenantstatus-get.md
-              - name: Settings
-                href: resources/networkaccess-settings.md
-                items:
-                  - name: Cross-tenant access settings
-                    href: resources/networkaccess-crosstenantaccesssettings.md
-                    items:
-                      - name: Get
-                        href: api/networkaccess-crosstenantaccesssettings-get.md
-                      - name: Update
-                        href: api/networkaccess-crosstenantaccesssettings-update.md
-                  - name: Conditional Access Settings
-                    href: resources/networkaccess-conditionalaccesssettings.md
-                    items:
-                      - name: Get
-                        href: api/networkaccess-conditionalaccesssettings-get.md
-                      - name: Update
-                        href: api/networkaccess-conditionalaccesssettings-update.md
-                  - name: Forwarding options
-                    href: resources/networkaccess-forwardingoptions.md
-                    items:
-                      - name: Get
-                        href: api/networkaccess-forwardingoptions-get.md
-                      - name: Update
-                        href: api/networkaccess-forwardingoptions-update.md
-              - name: Forwarding traffic
-                items:
-                  - name: Forwarding profile
-                    href: resources/networkaccess-forwardingprofile.md
-                    items:
-                      - name: List
-                        href: api/networkaccess-networkaccessroot-list-forwardingprofiles.md
-                      - name: Get
-                        href: api/networkaccess-forwardingprofile-get.md
-                      - name: Update
-                        href: api/networkaccess-forwardingprofile-update.md
-                  - name: Forwarding policy
-                    href: resources/networkaccess-forwardingpolicy.md
-                    items:
-                      - name: List
-                        href: api/networkaccess-networkaccessroot-list-forwardingpolicies.md
-                      - name: Get
-                        href: api/networkaccess-forwardingpolicy-get.md
-                      - name: Update policy rules
-                        href: api/networkaccess-forwardingpolicy-updatepolicyrules.md
-                  - name: Forwarding policy link
-                    href: resources/networkaccess-forwardingpolicylink.md
-                    items:
-                      - name: List
-                        href: api/networkaccess-forwardingprofile-list-policies.md
-                      - name: Get
-                        href: api/networkaccess-forwardingpolicy-get.md
-                      - name: Update
-                        href: api/networkaccess-forwardingpolicylink-update.md
-                      - name: Delete
-                        href: api/networkaccess-forwardingpolicylink-delete.md
-                  - name: Forwarding policy rule
-                    href: resources/networkaccess-policyrule.md
-                    items:
-                      - name: Forwarding rule
-                        href: resources/networkaccess-forwardingrule.md
-                        items:
-                          - name: Microsoft 365 forwarding rule
-                            href: resources/networkaccess-m365forwardingrule.md
-                          - name: Private access forwarding rule
-                            href: resources/networkaccess-privateaccessforwardingrule.md
-                          - name: List
-                            href: api/networkaccess-policy-list-policyrules.md
-                          - name: Get
-                            href: api/networkaccess-policyrule-get.md
-                          - name: Update
-                            href: api/networkaccess-policyrule-update.md
-              - name: Filtering traffic
-                items:
-                  - name: Filtering profile
-                    href: resources/networkaccess-filteringprofile.md
-                    items:
-                      - name: List
-                        href: api/networkaccess-filteringprofile-list.md
-                      - name: Get
-                        href: api/networkaccess-filteringprofile-get.md
-                      - name: Update
-                        href: api/networkaccess-filteringprofile-update.md
-                      - name: Create policyLink
-                        href: api/networkaccess-filteringpolicy-post-policyrules.md
-                  - name: Filtering policy
-                    href: resources/networkaccess-filteringpolicy.md
-                    items:
-                      - name: List
-                        href: api/networkaccess-networkaccessroot-list-filteringpolicies.md
-                      - name: Create
-                        href: api/networkaccess-filteringpolicy-post-policyrules.md 
-                      - name: Get
-                        href: api/networkaccess-filteringpolicy-get.md
-                      - name: Update
-                        href: api/networkaccess-filteringprofile-update.md
-                      - name: Delete
-                        href: api/networkaccess-filteringprofile-delete-policies.md
-                      - name: List policyRules
-                        href: api/networkaccess-policy-list-policyrules.md
-                      - name: Create policyRule
-                        href: api/networkaccess-filteringpolicy-post-policyrules.md
-                  - name: Filtering policy link
-                    href: resources/networkaccess-filteringpolicylink.md
-                    items:
-                      - name: List
-                        href: api/networkaccess-filteringpolicylink-list.md
-                      - name: Get
-                        href: api/networkaccess-filteringpolicylink-get.md 
-                      - name: Update
-                        href: api/networkaccess-filteringpolicylink-update.md
-                      - name: Delete
-                        href: api/networkaccess-filteringpolicylink-delete.md
-                      - name: List policy
-                        href: api/networkaccess-policylink-list-policy.md 
-                      - name: Add policy
-                        href: api/networkaccess-filteringpolicy-post-policyrules.md
-                      - name: Remove policy
-                        href: api/networkaccess-filteringpolicylink-delete-policy.md
-                  - name: Filtering rule
-                    href: resources/networkaccess-filteringrule.md
-                    items:
-                      - name: List
-                        href: api/networkaccess-filteringrule-list.md
-                      - name: Get
-                        href: api/networkaccess-filteringrule-get.md 
-                      - name: Create
-                        href: api/networkaccess-filteringrule-post.md
-                      - name: Update
-                        href: api/networkaccess-filteringrule-update.md
-                      - name: Delete
-                        href: api/networkaccess-filteringrule-delete.md                      
-              - name: Branch site
-                href: resources/networkaccess-branchsite.md
-                items:
-                  - name: List
-                    href: api/networkaccess-connectivity-list-branches.md
-                  - name: Create
-                    href: api/networkaccess-connectivity-post-branches.md
-                  - name: Get
-                    href: api/networkaccess-branchsite-get.md
-                  - name: Update
-                    href: api/networkaccess-branchsite-update.md
-                  - name: Delete
-                    href: api/networkaccess-branchsite-delete.md
-                  - name: Device link
-                    href: resources/networkaccess-devicelink.md
-                    items:
-                      - name: List
-                        href: api/networkaccess-branchsite-list-devicelinks.md
-                      - name: Get
-                        href: api/networkaccess-devicelink-get.md
-                      - name: Create
-                        href: api/networkaccess-branchsite-post-devicelinks.md
-                      - name: Update
-                        href: api/networkaccess-devicelink-update.md
-                      - name: Delete
-                        href: api/networkaccess-branchsite-delete-devicelinks.md
-                  - name: Connectivity configuration
-                    href: resources/networkaccess-connectivityconfigurationlink.md
-                    items:
-                      - name: Get
-                        href: api/networkaccess-branchconnectivityconfiguration-get.md 
-                  - name: Forwarding profile
-                    items:
-                      - name: List
-                        href: api/networkaccess-branchsite-list-forwardingprofiles.md
-                      - name: Create
-                        href: api/networkaccess-branchsite-post-forwardingprofiles.md
-                      - name: Update forwarding profile for branch
-                        href: api/networkaccess-forwardingprofile-update.md
-              - name: Traffic logs
-                href: resources/networkaccess-logs.md
-                items:
-                  - name: Network access traffic
-                    href: resources/networkaccess-networkaccesstraffic.md
-                  - name: List
-                    href: api/networkaccess-logs-list-traffic.md
-              - name: Enriched Microsoft 365 logs
-                href: resources/networkaccess-enrichedauditlogs.md
-                items:
-                  - name: List
-                    href: api/networkaccess-settings-list-enrichedauditlogs.md
-                  - name: Update
-                    href: api/networkaccess-enrichedauditlogs-update.md
-              - name: Traffic reports
-                href: resources/networkaccess-reports.md
-                items:
-                  - name: Get entities summary
-                    href: api/networkaccess-reports-entitiessummaries.md
-                  - name: Get cross-tenant access summary
-                    href: api/networkaccess-reports-getcrosstenantsummary.md
-                  - name: Get cross-tenant access report
-                    href: api/networkaccess-reports-crosstenantaccessreport.md
-                  - name: Get destination summary
-                    href: api/networkaccess-reports-getdestinationsummaries.md
-                  - name: Get destination report
-                    href: api/networkaccess-reports-destinationreport.md
-                  - name: Get device usage summary
-                    href: api/networkaccess-reports-getdeviceusagesummary.md
-                  - name: Get device usage report
-                    href: api/networkaccess-reports-devicereport.md  
-                  - name: Get user usage report
-                    href: api/networkaccess-reports-userreport.md    
-                  - name: Get transaction summaries
-                    href: api/networkaccess-reports-transactionsummaries.md
-              - name: Remote network reports
-                items:
-                  - name: Remote network health status event
-                    href: resources/networkaccess-remotenetworkhealthstatusevent.md
-                    items:
-                      - name: List
-                        href: api/networkaccess-remotenetworkhealthstatusevent-list.md
           - name: Governance
             href: resources/identitygovernance-overview.md
             displayName: Identity Governance, Access reviews, Entitlement Management, Terms of Use, Privileged Identity Management
@@ -15140,6 +14949,230 @@ items:
                   href: api/awsidentityaccessmanagementkeyusagefinding-get.md
                 - name: Aggregated summary
                   href: api/awsidentityaccessmanagementkeyusagefinding-aggregatedsummary.md
+          - name: Network access (preview)
+            items:
+              - name: Overview
+                displayName: ZTNA, Global Secure Access, Microsoft Entra Internet Access, Microsoft Entra Private Access
+                href: resources/networkaccess-global-secure-access-api-overview.md
+              - name: Tenant status
+                href: resources/networkaccess-tenantstatus.md
+                items:
+                  - name: Onboard
+                    href: api/networkaccess-networkaccessroot-onboard.md
+                  - name: Get
+                    href: api/networkaccess-tenantstatus-get.md
+              - name: Settings
+                href: resources/networkaccess-settings.md
+                items:
+                  - name: Cross-tenant access settings
+                    href: resources/networkaccess-crosstenantaccesssettings.md
+                    items:
+                      - name: Get
+                        href: api/networkaccess-crosstenantaccesssettings-get.md
+                      - name: Update
+                        href: api/networkaccess-crosstenantaccesssettings-update.md
+                  - name: Conditional Access Settings
+                    href: resources/networkaccess-conditionalaccesssettings.md
+                    items:
+                      - name: Get
+                        href: api/networkaccess-conditionalaccesssettings-get.md
+                      - name: Update
+                        href: api/networkaccess-conditionalaccesssettings-update.md
+                  - name: Forwarding options
+                    href: resources/networkaccess-forwardingoptions.md
+                    items:
+                      - name: Get
+                        href: api/networkaccess-forwardingoptions-get.md
+                      - name: Update
+                        href: api/networkaccess-forwardingoptions-update.md
+              - name: Forwarding traffic
+                items:
+                  - name: Forwarding profile
+                    href: resources/networkaccess-forwardingprofile.md
+                    items:
+                      - name: List
+                        href: api/networkaccess-networkaccessroot-list-forwardingprofiles.md
+                      - name: Get
+                        href: api/networkaccess-forwardingprofile-get.md
+                      - name: Update
+                        href: api/networkaccess-forwardingprofile-update.md
+                  - name: Forwarding policy
+                    href: resources/networkaccess-forwardingpolicy.md
+                    items:
+                      - name: List
+                        href: api/networkaccess-networkaccessroot-list-forwardingpolicies.md
+                      - name: Get
+                        href: api/networkaccess-forwardingpolicy-get.md
+                      - name: Update policy rules
+                        href: api/networkaccess-forwardingpolicy-updatepolicyrules.md
+                  - name: Forwarding policy link
+                    href: resources/networkaccess-forwardingpolicylink.md
+                    items:
+                      - name: List
+                        href: api/networkaccess-forwardingprofile-list-policies.md
+                      - name: Get
+                        href: api/networkaccess-forwardingpolicy-get.md
+                      - name: Update
+                        href: api/networkaccess-forwardingpolicylink-update.md
+                      - name: Delete
+                        href: api/networkaccess-forwardingpolicylink-delete.md
+                  - name: Forwarding policy rule
+                    href: resources/networkaccess-policyrule.md
+                    items:
+                      - name: Forwarding rule
+                        href: resources/networkaccess-forwardingrule.md
+                        items:
+                          - name: Microsoft 365 forwarding rule
+                            href: resources/networkaccess-m365forwardingrule.md
+                          - name: Private access forwarding rule
+                            href: resources/networkaccess-privateaccessforwardingrule.md
+                          - name: List
+                            href: api/networkaccess-policy-list-policyrules.md
+                          - name: Get
+                            href: api/networkaccess-policyrule-get.md
+                          - name: Update
+                            href: api/networkaccess-policyrule-update.md
+              - name: Filtering traffic
+                items:
+                  - name: Filtering profile
+                    href: resources/networkaccess-filteringprofile.md
+                    items:
+                      - name: List
+                        href: api/networkaccess-filteringprofile-list.md
+                      - name: Get
+                        href: api/networkaccess-filteringprofile-get.md
+                      - name: Update
+                        href: api/networkaccess-filteringprofile-update.md
+                      - name: Create policyLink
+                        href: api/networkaccess-filteringpolicy-post-policyrules.md
+                  - name: Filtering policy
+                    href: resources/networkaccess-filteringpolicy.md
+                    items:
+                      - name: List
+                        href: api/networkaccess-networkaccessroot-list-filteringpolicies.md
+                      - name: Create
+                        href: api/networkaccess-filteringpolicy-post-policyrules.md 
+                      - name: Get
+                        href: api/networkaccess-filteringpolicy-get.md
+                      - name: Update
+                        href: api/networkaccess-filteringprofile-update.md
+                      - name: Delete
+                        href: api/networkaccess-filteringprofile-delete-policies.md
+                      - name: List policyRules
+                        href: api/networkaccess-policy-list-policyrules.md
+                      - name: Create policyRule
+                        href: api/networkaccess-filteringpolicy-post-policyrules.md
+                  - name: Filtering policy link
+                    href: resources/networkaccess-filteringpolicylink.md
+                    items:
+                      - name: List
+                        href: api/networkaccess-filteringpolicylink-list.md
+                      - name: Get
+                        href: api/networkaccess-filteringpolicylink-get.md 
+                      - name: Update
+                        href: api/networkaccess-filteringpolicylink-update.md
+                      - name: Delete
+                        href: api/networkaccess-filteringpolicylink-delete.md
+                      - name: List policy
+                        href: api/networkaccess-policylink-list-policy.md 
+                      - name: Add policy
+                        href: api/networkaccess-filteringpolicy-post-policyrules.md
+                      - name: Remove policy
+                        href: api/networkaccess-filteringpolicylink-delete-policy.md
+                  - name: Filtering rule
+                    href: resources/networkaccess-filteringrule.md
+                    items:
+                      - name: List
+                        href: api/networkaccess-filteringrule-list.md
+                      - name: Get
+                        href: api/networkaccess-filteringrule-get.md 
+                      - name: Create
+                        href: api/networkaccess-filteringrule-post.md
+                      - name: Update
+                        href: api/networkaccess-filteringrule-update.md
+                      - name: Delete
+                        href: api/networkaccess-filteringrule-delete.md                      
+              - name: Branch site
+                href: resources/networkaccess-branchsite.md
+                items:
+                  - name: List
+                    href: api/networkaccess-connectivity-list-branches.md
+                  - name: Create
+                    href: api/networkaccess-connectivity-post-branches.md
+                  - name: Get
+                    href: api/networkaccess-branchsite-get.md
+                  - name: Update
+                    href: api/networkaccess-branchsite-update.md
+                  - name: Delete
+                    href: api/networkaccess-branchsite-delete.md
+                  - name: Device link
+                    href: resources/networkaccess-devicelink.md
+                    items:
+                      - name: List
+                        href: api/networkaccess-branchsite-list-devicelinks.md
+                      - name: Get
+                        href: api/networkaccess-devicelink-get.md
+                      - name: Create
+                        href: api/networkaccess-branchsite-post-devicelinks.md
+                      - name: Update
+                        href: api/networkaccess-devicelink-update.md
+                      - name: Delete
+                        href: api/networkaccess-branchsite-delete-devicelinks.md
+                  - name: Connectivity configuration
+                    href: resources/networkaccess-connectivityconfigurationlink.md
+                    items:
+                      - name: Get
+                        href: api/networkaccess-branchconnectivityconfiguration-get.md 
+                  - name: Forwarding profile
+                    items:
+                      - name: List
+                        href: api/networkaccess-branchsite-list-forwardingprofiles.md
+                      - name: Create
+                        href: api/networkaccess-branchsite-post-forwardingprofiles.md
+                      - name: Update forwarding profile for branch
+                        href: api/networkaccess-forwardingprofile-update.md
+              - name: Traffic logs
+                href: resources/networkaccess-logs.md
+                items:
+                  - name: Network access traffic
+                    href: resources/networkaccess-networkaccesstraffic.md
+                  - name: List
+                    href: api/networkaccess-logs-list-traffic.md
+              - name: Enriched Microsoft 365 logs
+                href: resources/networkaccess-enrichedauditlogs.md
+                items:
+                  - name: List
+                    href: api/networkaccess-settings-list-enrichedauditlogs.md
+                  - name: Update
+                    href: api/networkaccess-enrichedauditlogs-update.md
+              - name: Traffic reports
+                href: resources/networkaccess-reports.md
+                items:
+                  - name: Get entities summary
+                    href: api/networkaccess-reports-entitiessummaries.md
+                  - name: Get cross-tenant access summary
+                    href: api/networkaccess-reports-getcrosstenantsummary.md
+                  - name: Get cross-tenant access report
+                    href: api/networkaccess-reports-crosstenantaccessreport.md
+                  - name: Get destination summary
+                    href: api/networkaccess-reports-getdestinationsummaries.md
+                  - name: Get destination report
+                    href: api/networkaccess-reports-destinationreport.md
+                  - name: Get device usage summary
+                    href: api/networkaccess-reports-getdeviceusagesummary.md
+                  - name: Get device usage report
+                    href: api/networkaccess-reports-devicereport.md  
+                  - name: Get user usage report
+                    href: api/networkaccess-reports-userreport.md    
+                  - name: Get transaction summaries
+                    href: api/networkaccess-reports-transactionsummaries.md
+              - name: Remote network reports
+                items:
+                  - name: Remote network health status event
+                    href: resources/networkaccess-remotenetworkhealthstatusevent.md
+                    items:
+                      - name: List
+                        href: api/networkaccess-remotenetworkhealthstatusevent-list.md
           - name: Partner customer administration
             items:
               - name: Granular delegated admin privileges

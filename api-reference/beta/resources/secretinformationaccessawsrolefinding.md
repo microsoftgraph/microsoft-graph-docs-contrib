@@ -2,6 +2,7 @@
 title: "secretInformationAccessAwsRoleFinding resource type"
 description: "*View AWS identities that have privileges to read, modify, or delete secret information."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
@@ -21,7 +22,7 @@ Inherits from [awsSecretInformationAccessFinding](../resources/awssecretinformat
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List secretInformationAccessAwsRoleFindings](../api/secretinformationaccessawsrolefinding-list.md)|[secretInformationAccessAwsRoleFinding](../resources/secretinformationaccessawsrolefinding.md) collection|Get a list of the [secretInformationAccessAwsRoleFinding](../resources/secretinformationaccessawsrolefinding.md) objects and their properties.|
+|[List secretInformationAccessAwsRoleFinding objects](../api/secretinformationaccessawsrolefinding-list.md)|[secretInformationAccessAwsRoleFinding](../resources/secretinformationaccessawsrolefinding.md) collection|Get a list of the [secretInformationAccessAwsRoleFinding](../resources/secretinformationaccessawsrolefinding.md) objects and their properties.|
 |[Get secretInformationAccessAwsRoleFinding](../api/secretinformationaccessawsrolefinding-get.md)|[secretInformationAccessAwsRoleFinding](../resources/secretinformationaccessawsrolefinding.md)|Read the properties and relationships of a [secretInformationAccessAwsRoleFinding](../resources/secretinformationaccessawsrolefinding.md) object.|
 
 ## Properties
