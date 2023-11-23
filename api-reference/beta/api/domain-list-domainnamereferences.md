@@ -29,7 +29,6 @@ The work or school account needs to belong to one of the following roles:
 
 * Global Administrator
 * Domain Name Administrator
-* Partner Tier2 Support
 * Global Reader
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]

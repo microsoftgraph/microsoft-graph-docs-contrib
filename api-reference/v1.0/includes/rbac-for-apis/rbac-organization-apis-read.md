@@ -31,8 +31,6 @@ For delegated scenarios, the signed-in user must have at least one of the follow
 - Microsoft Managed Desktop Administrator
 - Microsoft Store for Business User
 - Modern Commerce User
-- Partner Tier1 Support
-- Partner Tier2 Support
 - Power BI Administrator
 - Power BI Administrator
 - Privileged Authentication Administrator
