@@ -53,8 +53,8 @@ This method supports the following OData query parameters to help customize the 
 
 | Name    |Description|
 |:--------|:----------|
-| $top    | Use the [$top](/graph/query-parameters#top-parameter) query parameter to control the number of items per response.|
 | $filter | The [$filter](/graph/query-parameters#filter-parameter) query parameter is supported with **dateTime** range query on **lastModifiedDateTime**.|
+| $top    | Use the [$top](/graph/query-parameters#top-parameter) query parameter to control the number of items per response.|
 
 ## Request headers
 
