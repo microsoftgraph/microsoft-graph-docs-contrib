@@ -50,5 +50,5 @@ The following JSON representation shows the resource type.
 ```
 
 ## See also
-- [Example response for an event message about a shared channel](/graph/system-messages/#channel-sharing-updated)
+- [Example response for an event message about a shared channel](/graph/system-messages/#channel-shared)
 - For more information about other types of events, see [System messages](/graph/system-messages).
