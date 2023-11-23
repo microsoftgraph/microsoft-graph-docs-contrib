@@ -2,6 +2,7 @@
 title: "dataCollectionInfo resource type"
 description: "Represents the details and status of the data collection process for the authorization system onboarded to Microsoft Entra Permissions Management."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
