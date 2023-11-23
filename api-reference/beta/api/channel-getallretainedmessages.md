@@ -49,7 +49,7 @@ GET /teams/{team-id}/channels/getAllRetainedMessages?model=A
 GET /teams/{team-id}/channels/getAllRetainedMessages?model=B
 ```
 
-This method supports the following OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the following OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 | Name    |Description|
 |:--------|:----------|
