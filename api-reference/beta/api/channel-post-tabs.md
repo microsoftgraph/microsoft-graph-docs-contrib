@@ -1,6 +1,6 @@
 ---
 title: "Add tab to channel"
-description: "Adds (pins) a tab to the specified channel within a team. "
+description: "Add (pin) a tab to the specified channel within a team. "
 author: "nkramer"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adds (pins) a [tab](../resources/teamstab.md) to the specified [channel](../resources/channel.md) within a [team](../resources/team.md). The corresponding app must already be [installed in the team](../api/team-list-installedapps.md) and have the `configurableTabs` property defined in the app manifest.
+Add (pin) a [tab](../resources/teamstab.md) to the specified [channel](../resources/channel.md) within a [team](../resources/team.md). The app must be [preinstalled in the team](../api/team-list-installedapps.md) and have the **configurableTabs** property defined in the app manifest.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -52,9 +52,10 @@ If successful, this method returns a `201 Created` response code.
 
 ## Example
 
-#### Request
+### Request
 
-Here's an example of the request.
+The following example shows a request.
+
 <!-- {
   "blockType": "ignored",
   "name": "get_team"
@@ -74,9 +75,10 @@ POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs
 }
 ```
 
-#### Response
+### Response
 
-Here's an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "ignored",
   "truncated": true,
