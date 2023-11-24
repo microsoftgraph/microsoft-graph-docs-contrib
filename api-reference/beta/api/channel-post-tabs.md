@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add (pin) a [tab](../resources/teamstab.md) to the specified [channel](../resources/channel.md) within a [team](../resources/team.md). The app must be [preinstalled in the team](../api/team-list-installedapps.md) and have the **configurableTabs** property defined in the app manifest.
+Add (pin) a [tab](../resources/teamstab.md) to the specified [channel](../resources/channel.md) within a [team](../resources/team.md). The app must be [preinstalled in the team](../api/team-list-installedapps.md) and have the [configurableTabs](/microsoftteams/platform/resources/schema/manifest-schema#configurabletabs) property defined in the app manifest.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
