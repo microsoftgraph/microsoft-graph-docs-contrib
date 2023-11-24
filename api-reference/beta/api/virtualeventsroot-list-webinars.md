@@ -70,7 +70,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "list_virtualeventwebinars",
+  "name": "list_virtualeventwebinars"
 }
 -->
 ``` http
