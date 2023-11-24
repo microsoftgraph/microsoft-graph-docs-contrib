@@ -18327,7 +18327,7 @@ items:
                     href: resources/virtualeventwebinar.md
                     items:
                       - name: List
-                        href: api/virtualeventwebinar-list.md
+                        href: api/virtualeventsroot-list-webinars.md
                       - name: Get
                         href: api/virtualeventwebinar-get.md
                       - name: List by user role
