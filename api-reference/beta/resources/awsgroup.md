@@ -2,6 +2,7 @@
 title: "awsGroup resource type"
 description: "Represents a group in AWS."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType

@@ -2,6 +2,7 @@
 title: "encryptedAwsStorageBucketFinding resource type"
 description: "Represents the findings for AWS encrypted storage buckets."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
@@ -20,7 +21,7 @@ Inherits from [finding](../resources/finding.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List encryptedAwsStorageBucketFindings](../api/encryptedawsstoragebucketfinding-list.md)|[encryptedAwsStorageBucketFinding](../resources/encryptedawsstoragebucketfinding.md) collection|Get a list of the [encryptedAwsStorageBucketFinding](../resources/encryptedawsstoragebucketfinding.md) objects and their properties.|
+|[List encryptedAwsStorageBucketFinding objects](../api/encryptedawsstoragebucketfinding-list.md)|[encryptedAwsStorageBucketFinding](../resources/encryptedawsstoragebucketfinding.md) collection|Get a list of the [encryptedAwsStorageBucketFinding](../resources/encryptedawsstoragebucketfinding.md) objects and their properties.|
 |[Get encryptedAwsStorageBucketFinding](../api/encryptedawsstoragebucketfinding-get.md)|[encryptedAwsStorageBucketFinding](../resources/encryptedawsstoragebucketfinding.md)|Read the properties and relationships of an [encryptedAwsStorageBucketFinding](../resources/encryptedawsstoragebucketfinding.md) object.|
 
 ## Properties
