@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|CloudPC.Read.All, CloudPC.ReadWrite.All, CloudPC.ReadWrite|
+|Delegated (work or school account)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
@@ -34,13 +34,13 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 
-To get the frontline Cloud PC access state of the specified user (who is the signed-in user) in the organization using delegated permission CloudPC.Read.All, CloudPC.ReadWrite.All, CloudPC.ReadWrite:
+To get the frontline Cloud PC access state of the specified user (who is the signed-in user) using delegated permission:
 
 ``` http
 GET /me/cloudPCs/{cloudPCId}/getFrontlineCloudPcAccessState
 ```
 
-To get the frontline Cloud PC access state in the organization, using delegated permission CloudPC.Read.All, CloudPC.ReadWrite.All(the signed-in user should be the administrator) or application permission CloudPC.Read.All, CloudPC.ReadWrite.All:
+To get the frontline Cloud PC access state using delegated permission (the signed-in user should be the administrator) or application permission:
 
 ``` http
 GET /deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/getFrontlineCloudPcAccessState
