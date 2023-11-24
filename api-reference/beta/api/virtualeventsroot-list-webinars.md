@@ -1,5 +1,5 @@
 ---
-title: "List virtualEventWebinars"
+title: "List webinars"
 description: "Get the list of all virtualEventWebinar objects created in a tenant."
 author: "awang119"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# List virtualEventWebinars
+# List webinars
 
 Namespace: microsoft.graph
 
