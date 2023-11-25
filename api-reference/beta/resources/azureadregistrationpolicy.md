@@ -18,8 +18,8 @@ Represents the policy scope of the Microsoft Entra tenant that controls the abil
 
 |Property|Type|Description|
 |:---|:---|:---|
-|allowedToRegister|[deviceRegistrationMembership](../resources/deviceregistrationmembership.md)|Determines if Microsoft Entra registered is allowed. The possible values are `noDeviceRegistrationMembership` meaning no users/groups are allowed to do Microsoft Entra registered, `allDeviceRegistrationMembership` meaning all users/groups are allowed to do Microsoft Entra registered and `enumeratedDeviceRegistrationMembership` meaning enumerated users/groups are allowed to do Microsoft Entra registered.  |
-|isAdminConfigurable|Boolean|Determines if Entra ID administrators can modify this policy.|
+|allowedToRegister|[deviceRegistrationMembership](../resources/deviceregistrationmembership.md)|Determines if Microsoft Entra registered is allowed. |
+|isAdminConfigurable|Boolean|Determines if administrators can modify this policy.|
 |allowedGroups (deprecated)|String collection| The identifiers of the groups that are in the scope of the policy. Either this property or **allowedUsers** is required when the **appliesTo** property is set to `selected`. |
 |allowedUsers (deprecated)|String collection| The identifiers of users that are in the scope of the policy. Either this property or **allowedGroups** is required when the **appliesTo** property is set to `selected`. |
 |appliesTo (deprecated)|policyScope|Specifies whether to block or allow fine-grained control of the policy scope. The possible values are: `0` (meaning `none`), `1` (meaning `all`), `2` (meaning `selected`), `3` (meaning `unknownFutureValue`). <br/><br/>The default value is `1`. When set to `2`, at least one user or group identifier must be specified in either **allowedUsers** or **allowedGroups**.  Setting this property to `0` or `1` removes all identifiers in both **allowedUsers** and **allowedGroups**.|
