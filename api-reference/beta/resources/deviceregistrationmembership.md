@@ -1,6 +1,6 @@
 ---
 title: "deviceRegistrationMembership resource type"
-description: "An abstract resource type that indicates the scope the policy applies to"
+description: "An abstract resource type that indicates the scope the device registration policy applies to."
 author: "SanDeo-MSFT"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
