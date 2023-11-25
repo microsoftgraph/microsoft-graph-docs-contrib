@@ -18,7 +18,7 @@ Represents the policy scope of the Microsoft Entra tenant that controls the abil
 
 |Property|Type|Description|
 |:---|:---|:---|
-|allowedToJoin|[deviceRegistrationMembership](../resources/deviceregistrationmembership.md)|Determines if Microsoft Entra join is allowed. The possible values are `noDeviceRegistrationMembership` meaning no users/groups are allowed to do Microsoft Entra join, `allDeviceRegistrationMembership` meaning all users/groups are allowed to do Microsoft Entra join and `enumeratedDeviceRegistrationMembership` meaning enumerated users/groups are allowed to do Microsoft Entra join.  |
+|allowedToJoin|[deviceRegistrationMembership](../resources/deviceregistrationmembership.md)|Determines if Microsoft Entra join is allowed.|
 |isAdminConfigurable|Boolean|Determines if Entra ID administrators can modify this policy.|
 
 ## Relationships
