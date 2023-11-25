@@ -1,6 +1,6 @@
 ---
 title: "enumeratedDeviceRegistrationMembership resource type"
-description: "Indicates that this device registration policy applies to the enumerated users and groups."
+description: "Indicates the users and groups this device registration policy applies to."
 author: "SanDeo-MSFT"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
