@@ -1,6 +1,6 @@
 ---
 title: "noDeviceRegistrationMembership resource type"
-description: "Indicates that this device registration policy doesn't apply to any users or groups."
+description: "Indicates the users and groups this device registration policy applies."
 author: "SanDeo-MSFT"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
