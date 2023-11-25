@@ -14,7 +14,6 @@ Namespace: microsoft.graph
 
 Represents the policy scope of the Microsoft Entra tenant that controls the ability for users and groups to register device identities to your organization using **Microsoft Entra registered**. For more information, see [What is a device identity?](/azure/active-directory/devices/overview).
 
-
 ## Properties
 
 |Property|Type|Description|
