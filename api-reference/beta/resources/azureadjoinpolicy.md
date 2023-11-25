@@ -1,6 +1,6 @@
 ---
 title: "azureADJoinPolicy resource type"
-description: "Represents the policy scope of an Azure Active Directory tenant that controls device registration using Azure AD Join."
+description: "Represents the policy scope of an Azure Active Directory tenant that controls device registration using Azure AD join."
 author: "myra-ramdenbourg"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
