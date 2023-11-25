@@ -1,6 +1,6 @@
 ---
 title: "noDeviceRegistrationMembership resource type"
-description: "Indicates that this policy doesn't apply to any users or groups."
+description: "Indicates that this device registration policy doesn't apply to any users or groups."
 author: "SanDeo-MSFT"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,11 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Indicates that this policy doesn't apply to any users or groups. Inherits from [deviceRegistrationMembership](../resources/deviceregistrationmembership.md).
+Indicates that this device registration policy doesn't apply to any users or groups. Inherits from [deviceRegistrationMembership](../resources/deviceregistrationmembership.md).
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.
