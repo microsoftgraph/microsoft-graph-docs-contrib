@@ -17,8 +17,7 @@ An abstract resource type indicating the scope that a device registration policy
 
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.
