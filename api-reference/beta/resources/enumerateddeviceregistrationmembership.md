@@ -1,6 +1,6 @@
 ---
 title: "enumeratedDeviceRegistrationMembership resource type"
-description: "Indicates that this policy applies to the enumerated users and groups."
+description: "Indicates that this device registration policy applies to the enumerated users and groups."
 author: "SanDeo-MSFT"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Indicates that this policy applies to the enumerated users and groups. Inherits from [deviceRegistrationMembership](../resources/deviceregistrationmembership.md).
+Indicates that this device registration policy applies to the enumerated users and groups. Inherits from [deviceRegistrationMembership](../resources/deviceregistrationmembership.md).
 
 ## Properties
 |Property|Type|Description|
