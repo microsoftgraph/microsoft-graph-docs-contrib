@@ -1,6 +1,6 @@
 ---
 title: "Get callRecording"
-description: "Get a callRecording object associated with an onlineMeeting."
+description: "Get a callRecording object associated with a scheduled onlineMeeting."
 author: "v-sdhakshina"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -39,7 +39,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 To use application permissions for this API, tenant administrators must create an application access policy and grant it to a user. This authorizes the app configured in the policy to fetch online meetings or online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more information, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 
 > [!NOTE]
-> This API works for a meeting only if the meeting has not expired. For more information, see [Limits and specifications for Microsoft Teams](/microsoftteams/limits-specifications-teams#meeting-expiration).
+> This API works only for a meeting that hasn't expired. For more information, see [Limits and specifications for Microsoft Teams](/microsoftteams/limits-specifications-teams#meeting-expiration).
 
 ## HTTP request
 
@@ -147,23 +147,23 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('b935e675-5e67-48b9-8d45-249d5f88e964')/onlineMeetings('MSpiOTM1ZTY3NS01ZTY3LTQ4YjktOGQ0NS0yNDlkNWY4OGU5NjQqMCoqMTk6bWVldGluZ19ZbU0zTnpJNU9USXRZakU0WlMwME1tUTNMVGt6TVRRdFkyWm1PRGRtWmpsaVptRTNAdGhyZWFkLnYy')/recordings/$entity",
-    "id": "7e31db25-bc6e-4fd8-96c7-e01264e9b6fc",
-    "meetingId": "MSpiOTM1ZTY3NS01ZTY3LTQ4YjktOGQ0NS0yNDlkNWY4OGU5NjQqMCoqMTk6bWVldGluZ19ZbU0zTnpJNU9USXRZakU0WlMwME1tUTNMVGt6TVRRdFkyWm1PRGRtWmpsaVptRTNAdGhyZWFkLnYy",
-    "meetingOrganizerId": "b935e675-5e67-48b9-8d45-249d5f88e964",
-    "createdDateTime": "2023-04-10T08:13:17.5990966Z",
-    "recordingContentUrl": "https://graph.microsoft.com/beta/$metadata#users('b935e675-5e67-48b9-8d45-249d5f88e964')/onlineMeetings('MSpiOTM1ZTY3NS01ZTY3LTQ4YjktOGQ0NS0yNDlkNWY4OGU5NjQqMCoqMTk6bWVldGluZ19ZbU0zTnpJNU9USXRZakU0WlMwME1tUTNMVGt6TVRRdFkyWm1PRGRtWmpsaVptRTNAdGhyZWFkLnYy')/recordings/('7e31db25-bc6e-4fd8-96c7-e01264e9b6fc')/content",
-    "meetingOrganizer": {
-      "application": null,
-      "device": null,
-      "user": {
-        "@odata.type": "#Microsoft.Teams.GraphSvc.teamworkUserIdentity",
-        "id": "b935e675-5e67-48b9-8d45-249d5f88e964",
-        "displayName": null,
-        "userIdentityType": "aadUser",
-        "tenantId": "d6c9ce1e-4f71-8dc3-5b55-6a411ea46324",
-      }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('b935e675-5e67-48b9-8d45-249d5f88e964')/onlineMeetings('MSpiOTM1ZTY3NS01ZTY3LTQ4YjktOGQ0NS0yNDlkNWY4OGU5NjQqMCoqMTk6bWVldGluZ19ZbU0zTnpJNU9USXRZakU0WlMwME1tUTNMVGt6TVRRdFkyWm1PRGRtWmpsaVptRTNAdGhyZWFkLnYy')/recordings/$entity",
+  "id": "7e31db25-bc6e-4fd8-96c7-e01264e9b6fc",
+  "meetingId": "MSpiOTM1ZTY3NS01ZTY3LTQ4YjktOGQ0NS0yNDlkNWY4OGU5NjQqMCoqMTk6bWVldGluZ19ZbU0zTnpJNU9USXRZakU0WlMwME1tUTNMVGt6TVRRdFkyWm1PRGRtWmpsaVptRTNAdGhyZWFkLnYy",
+  "meetingOrganizerId": "b935e675-5e67-48b9-8d45-249d5f88e964",
+  "createdDateTime": "2023-04-10T08:13:17.5990966Z",
+  "recordingContentUrl": "https://graph.microsoft.com/beta/$metadata#users('b935e675-5e67-48b9-8d45-249d5f88e964')/onlineMeetings('MSpiOTM1ZTY3NS01ZTY3LTQ4YjktOGQ0NS0yNDlkNWY4OGU5NjQqMCoqMTk6bWVldGluZ19ZbU0zTnpJNU9USXRZakU0WlMwME1tUTNMVGt6TVRRdFkyWm1PRGRtWmpsaVptRTNAdGhyZWFkLnYy')/recordings/('7e31db25-bc6e-4fd8-96c7-e01264e9b6fc')/content",
+  "meetingOrganizer": {
+    "application": null,
+    "device": null,
+    "user": {
+      "@odata.type": "#Microsoft.Teams.GraphSvc.teamworkUserIdentity",
+      "id": "b935e675-5e67-48b9-8d45-249d5f88e964",
+      "displayName": null,
+      "userIdentityType": "aadUser",
+      "tenantId": "d6c9ce1e-4f71-8dc3-5b55-6a411ea46324"
     }
+  }
 }
 ```
 

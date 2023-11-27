@@ -213,7 +213,7 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2023-10-18T18:40:00.4103533Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud printing"
     },
     {
@@ -335,7 +335,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-10-18T18:40:00.4103533Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud printing"
     },
     {
@@ -19547,7 +19547,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getUserArchivedPrintJobs",
           "ChangeType": "Addition",
-          "Description": "Added the [getUserArchivedPrintJobs](https://learn.microsoft.com/en-us/graph/api/reportRoot-getUserArchivedPrintJobs?view=graph-rest-beta) method to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
+          "Description": "Added the [getUserArchivedPrintJobs](https://learn.microsoft.com/en-us/graph/api/reports-getUserArchivedPrintJobs?view=graph-rest-beta) method to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
           "Target": "reportRoot"
         },
         {
@@ -19555,7 +19555,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getGroupArchivedPrintJobs",
           "ChangeType": "Addition",
-          "Description": "Added the [getGroupArchivedPrintJobs](https://learn.microsoft.com/en-us/graph/api/reportRoot-getGroupArchivedPrintJobs?view=graph-rest-beta) method to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
+          "Description": "Added the [getGroupArchivedPrintJobs](https://learn.microsoft.com/en-us/graph/api/reports-getGroupArchivedPrintJobs?view=graph-rest-beta) method to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
           "Target": "reportRoot"
         },
         {
@@ -19563,7 +19563,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getPrinterArchivedPrintJobs",
           "ChangeType": "Addition",
-          "Description": "Added the [getPrinterArchivedPrintJobs](https://learn.microsoft.com/en-us/graph/api/reportRoot-getPrinterArchivedPrintJobs?view=graph-rest-beta) method to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
+          "Description": "Added the [getPrinterArchivedPrintJobs](https://learn.microsoft.com/en-us/graph/api/reports-getPrinterArchivedPrintJobs?view=graph-rest-beta) method to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
           "Target": "reportRoot"
         },
         {
@@ -19679,7 +19679,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-03-05T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management ",
       "SubArea": " Cloud printing"
     },
     {
@@ -20243,7 +20243,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-01-07T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management ",
       "SubArea": "Cloud printing"
     },
     {
@@ -20269,7 +20269,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-12-10T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management ",
       "SubArea": "Cloud printing"
     },
     {
@@ -20279,7 +20279,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printJob",
           "ChangeType": "Addition",
-          "Description": "Added the [update configuration](https://learn.microsoft.com/en-us/graph/api/printjob-update-configuration?view=graph-rest-beta) method to the [printJob](https://learn.microsoft.com/en-us/graph/api/resources/printjob?view=graph-rest-beta) resource.",
+          "Description": "Added the **update configuration** method to the [printJob](https://learn.microsoft.com/en-us/graph/api/resources/printjob?view=graph-rest-beta) resource.",
           "Target": "printJob"
         }
       ],
@@ -20287,7 +20287,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-12-16T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management ",
       "SubArea": "Cloud printing"
     },
     {
@@ -20313,7 +20313,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-12-10T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management ",
       "SubArea": "Cloud printing"
     },
     {
@@ -20491,7 +20491,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-01-21T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management ",
       "SubArea": "Cloud printing"
     },
     {
@@ -20525,7 +20525,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-12-02T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management ",
       "SubArea": "Cloud printing"
     },
     {
@@ -20559,7 +20559,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-10-16T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management ",
       "SubArea": "Cloud printing"
     }
   ]
