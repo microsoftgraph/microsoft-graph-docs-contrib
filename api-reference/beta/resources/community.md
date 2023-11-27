@@ -1,6 +1,6 @@
 ---
 title: "community resource type"
-description: "A Community in Viva Engage is a central place for conversations, files, events, and updates for people sharing a common interest or goal. "
+description: "Represents a community in Viva Engage that is a central place for conversations, files, events, and updates for people sharing a common interest or goal."
 author: "aditijha4"
 ms.localizationpriority: medium
 ms.prod: "employee-engagement"
@@ -13,38 +13,45 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A Community in Viva Engage is a central place for conversations, files, events, and updates for people sharing a common interest or goal. 
+Represents a community in Viva Engage that is a central place for conversations, files, events, and updates for people sharing a common interest or goal.
 
-Every community is associated with a [Microsoft 365 group](../resources/group.md), but the group doesn't have the same ID as the community. For more information about managing communities and members in Viva Engage, see [Use the Microsoft Graph REST API to work with Viva Engage](../resources/engage-api-overview.md).
+Every community is associated with a [Microsoft 365 group](../resources/group.md), but the group doesn't have the same ID as the community. For more information about managing communities and members in Viva Engage, see [Use the Microsoft Graph API to work with Viva Engage](../resources/engagement-api-overview.md).
 
 This resource is an open type that allows other properties to be passed in.
+
+Inherits from [entity](../resources/entity.md).
+
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 <!--|[List communities](../api/employeeexperience-list-communities.md)|[community](../resources/community.md) collection|Get a list of the [community](../resources/community.md) objects and their properties.|-->
-|[Create community](../api/employeeexperience-post-communities.md)|[community](../resources/community.md)|Create a new [community](../resources/community.md) object.|
+|[Create community](../api/employeeexperience-post-communities.md)|[engagementAsyncOperation](../resources/engagementasyncoperation.md)|Create a new [community](../resources/community.md) in Viva Engage.|
 |[Get community](../api/community-get.md)|[community](../resources/community.md)|Read the properties and relationships of a [community](../resources/community.md) object.|
 <!--|[Update community](../api/community-update.md)|[community](../resources/community.md)|Update the properties of a [community](../resources/community.md) object.|
 |[Delete community](../api/employeeexperience-delete-communities.md)|None|Delete a [community](../resources/community.md) object.|-->
 
-
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-| id | String | The unique identifier of the community. Read only. |
-| displayName | String | The name of the community. Maximum length 255 characters. |
-| description | String | The description of the community, maximum length 1024 characters. |
-| privacy | [communityPrivacy](../resources/communityprivacy.md) | Defines the privacy level of a community. The possible values are: `public` or `private`. |
-| groupId | String | The id of the [Microsoft 365 group](../resources/group.md) that manages the membership of this community. |
+| description | String | The description of the community. The maximum length is 1024 characters. |
+| displayName | String | The name of the community. The maximum length is 255 characters. |
+| groupId | String | The ID of the [Microsoft 365 group](../resources/group.md) that manages the membership of this community. |
+| id | String | The unique identifier of the community. Read only. Inherited from [entity](../resources/entity.md). |
+| privacy | [communityPrivacy](../resources/communityprivacy.md) | Defines the privacy level of the community. The possible values are: `public` or `private`. |
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
 |group|[group](../resources/group.md)|The [Microsoft 365 group](group.md) that manages the membership of this community.|
-|owners|[user](../resources/user.md) collection| The Admins of the community. Limited to 100 users. If this property isn't specified when creating a community, the calling user is automatically assigned as the community owner. |
+|owners|[user](../resources/user.md) collection| The admins of the community. Limited to 100 users. If this property isn't specified when you create the community, the calling user is automatically assigned as the community owner. |
 
 ## JSON representation
-Below is a JSON representation of the resource:
+
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -56,15 +63,15 @@ Below is a JSON representation of the resource:
 ``` json
 {
   "@odata.type": "#microsoft.graph.community",
-  "id": "String (identifier)",
-  "displayName": "String",
   "description": "String",
-  "privacy": "String",
-  "groupId": "String"
+  "displayName": "String",
+  "groupId": "String",
+  "id": "String (identifier)",
+  "privacy": "String"
 }
 ```
 
 ## See also
 
-- [Use the Microsoft Graph REST API to work with Viva Engage](engage-api-overview.md)
+- [Use the Microsoft Graph API to work with Viva Engage](engagement-api-overview.md)
 - [Create a community](../api/employeeexperience-post-communities.md)
