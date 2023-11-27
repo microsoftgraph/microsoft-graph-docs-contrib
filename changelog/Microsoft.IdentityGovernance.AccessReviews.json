@@ -767,7 +767,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "generateDownloadUri",
                     "ChangeType": "Addition",
-                    "Description": "Added the [generateDownloadUri](https://learn.microsoft.com/en-us/graph/api/accessReviewHistoryDefinition-generateDownloadUri?view=graph-rest-beta) method to the [accessReviewHistoryDefinition](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewHistoryDefinition?view=graph-rest-beta) resource.",
+                    "Description": "Added the **generateDownloadUri** method to the [accessReviewHistoryDefinition](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewHistoryDefinition?view=graph-rest-beta) resource.",
                     "Target": "accessReviewHistoryDefinition"
                 }
             ],
