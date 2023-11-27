@@ -2,6 +2,7 @@
 title: "Discover, remediate, and monitor permissions in multicloud infrastructures using permissions management APIs (preview)"
 description: "Use Microsoft Entra Permissions Management to discover, remediate, and monitor permissions in multiple cloud infrastructures."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
@@ -58,7 +59,6 @@ The following key API scenarios allow you to implement permissions on demand cap
 |Cancel a permissions request|[scheduledPermissionsRequest: cancelAll](../api/scheduledpermissionsrequest-cancelall.md)|
 |Discover permissions requests|[List permissionsRequestChanges](../api/permissionsmanagement-list-permissionsrequestchanges.md)|
 
-<!--
 ## Permissions analytics
 
 Through the permissions analytics APIs, Permissions Management helps you discover permissions risk in identities and resources for your authorization systems. You can use these findings to automate use cases such as:
@@ -72,19 +72,18 @@ The following sample findings are available:
 
 | Finding | Sample scenarios API |
 |--|--|
-|Inactive identities: Identities that haven't used any of their granted permissions in the last 90 days.| <li> [Inactive users](/api/inactiveuserfinding-list.md) <li> [Inactive serverless functions](/api/inactiveserverlessfunctionfinding-list.md) <li> [Inactive Azure service principals](/api/inactiveazureserviceprincipalfinding-list.md) <li> [Inactive GCP service accounts]() <li> [Inactive AWS roles](/api/inactiveawsrolefinding-list.md) <li> [Inactive AWS resources, such as ec2](/api/inactiveawsresourcefinding-list.md)|
-|Inactive groups: No identity has utilized the permissions assigned via the group over the last 90 days.   |<li>[Inactive groups](/api/inactivegroupfinding-list.md)  |
-|Super identities: Administrator-level permissions across the authorization system. These identities can manage all the resources under the authorization system. |<li>[Super users](/api/superuserfinding-list.md) <li> [Super serverless functions](/api/superserverlessfunctionfinding-list) <li> [Super Azure service principals](/api/superazureserviceprincipalfinding-list) <li> [Super GCP service accounts](/api/supergcpserviceaccountfinding-list) <li> [Super AWS roles]() <li> [Super AWS resources, such as ec2](/api/superawsresourcefinding-list)|
+|Inactive identities: Identities that haven't used any of their granted permissions in the last 90 days.| <li> [Inactive users](../api/inactiveuserfinding-list.md) <li> [Inactive serverless functions](../api/inactiveserverlessfunctionfinding-list.md) <li> [Inactive Azure service principals](../api/inactiveazureserviceprincipalfinding-list.md) <li> [Inactive GCP service accounts]() <li> [Inactive AWS roles](../api/inactiveawsrolefinding-list.md) <li> [Inactive AWS resources, such as ec2](../api/inactiveawsresourcefinding-list.md)|
+|Inactive groups: No identity has utilized the permissions assigned via the group over the last 90 days.   |<li>[Inactive groups](../api/inactivegroupfinding-list.md)  |
+|Super identities: Administrator-level permissions across the authorization system. These identities can manage all the resources under the authorization system. |<li>[Super users](../api/superuserfinding-list.md) <li> [Super serverless functions](../api/superserverlessfunctionfinding-list.md) <li> [Super Azure service principals](../api/superazureserviceprincipalfinding-list.md) <li> [Super GCP service accounts](../api/supergcpserviceaccountfinding-list.md) <li> [Super AWS roles]() <li> [Super AWS resources, such as ec2](../api/superawsresourcefinding-list.md)|
 
 Other findings include:
 
-- Resouce-based findings: For example, Azure blob containers, S3 buckets and Storage buckets that are accessible publicly; open network security groups; and identities that can access secret information or utilize security tools
+- Resource-based findings: For example, Azure blob containers, S3 buckets and Storage buckets that are accessible publicly; open network security groups; and identities that can access secret information or utilize security tools
 - Overprovisioned users, roles, resources, service principals, and service accounts
 - Users with unenforced multifactor authentication in AWS
 - Opportunities for privilege escalation
 - AWS access key age and usage
 
--->
 ---
 
 <!-- Start of: Link to ZT guidance: H2 section -->
