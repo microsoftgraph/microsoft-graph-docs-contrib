@@ -47,12 +47,18 @@ GET /users/{id}/chats/getAllRetainedMessages?model=A
 GET /users/{id}/chats/getAllRetainedMessages?model=B
 ```
 
-This method supports [date range parameters](/graph/query-parameters) to customize the response, as shown in the following example.
+This method supports the following OData query parameters to help customize the response.
+
+| Name    |Description|
+|:--------|:----------|
+| $filter | The [$filter](/graph/query-parameters#filter-parameter) query parameter is supported with **dateTime** range query on **lastModifiedDateTime** by using [date range parameters](/graph/query-parameters).|
+| $top    | Use the [$top](/graph/query-parameters#top-parameter) query parameter to control the number of items per response.|
+
+Example:
 
 ```http
 GET /users/{id}/chats/getAllRetainedMessages?$top=50&$filter=lastModifiedDateTime gt 2020-06-04T18:03:11.591Z and lastModifiedDateTime lt 2020-06-05T21:00:09.413Z
 ```
-
 ## Request headers
 
 |Name|Description|
@@ -79,7 +85,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/users/{id}/chats/getAllRetainedMessages
+GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/chats/getAllRetainedMessages
 ```
 
 ### Response

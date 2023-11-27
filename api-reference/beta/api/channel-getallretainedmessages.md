@@ -82,7 +82,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/teams/{teamsId}/channels/getAllRetainedMessages
+GET https://graph.microsoft.com/beta/teams/8b081ef6-4792-4def-b2c9-c363a1bf41d5/channels/getAllRetainedMessages
 ```
 
 ### Response
