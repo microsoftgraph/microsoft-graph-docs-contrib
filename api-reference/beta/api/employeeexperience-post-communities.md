@@ -1,6 +1,6 @@
 ---
 title: "Create community"
-description: "Create a new community object."
+description: "Create a new community object in Viva Engage."
 author: "aditijha4"
 ms.localizationpriority: medium
 ms.prod: "employee-engagement"
