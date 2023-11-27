@@ -13,7 +13,7 @@ request_body = AadUserConversationMember(
 	roles = [
 	],
 	additional_data = {
-			"user@odata_bind" : "https://graph.microsoft.com/v1.0/users/24b3819b-4e1d-4f3e-86bd-e42b54d0b2b4",
+			"user@odata.bind" : "https://graph.microsoft.com/v1.0/users/24b3819b-4e1d-4f3e-86bd-e42b54d0b2b4",
 	}
 )
 

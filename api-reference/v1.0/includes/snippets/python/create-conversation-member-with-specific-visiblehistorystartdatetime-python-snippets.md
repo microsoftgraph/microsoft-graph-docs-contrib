@@ -15,7 +15,7 @@ request_body = AadUserConversationMember(
 		"owner",
 	],
 	additional_data = {
-			"user@odata_bind" : "https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5",
+			"user@odata.bind" : "https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5",
 	}
 )
 

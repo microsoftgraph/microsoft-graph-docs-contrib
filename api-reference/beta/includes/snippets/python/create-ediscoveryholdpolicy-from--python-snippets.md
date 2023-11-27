@@ -12,13 +12,13 @@ request_body = EdiscoveryHoldPolicy(
 	display_name = "My legalHold with sources",
 	description = "Created from Graph API",
 	additional_data = {
-			"user_sources@odata_bind" : [
+			"user_sources@odata.bind" : [
 				{
 						"@odata_type" : "microsoft.graph.security.userSource",
 						"email" : "SalesTeam@M365x809305.OnMicrosoft.com",
 				},
 			],
-			"site_sources@odata_bind" : [
+			"site_sources@odata.bind" : [
 				{
 						"@odata_type" : "microsoft.graph.security.siteSource",
 						"site" : {

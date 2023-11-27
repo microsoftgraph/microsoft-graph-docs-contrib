@@ -11,7 +11,7 @@ graph_client = GraphServiceClient(credentials, scopes)
 request_body = PrintTaskTrigger(
 	event = PrintEvent.JobStarted,
 	additional_data = {
-			"definition@odata_bind" : "https://graph.microsoft.com/v1.0/print/taskDefinitions/{taskDefinitionId}",
+			"definition@odata.bind" : "https://graph.microsoft.com/v1.0/print/taskDefinitions/{taskDefinitionId}",
 	}
 )
 

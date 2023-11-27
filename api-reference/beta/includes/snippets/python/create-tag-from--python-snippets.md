@@ -12,7 +12,7 @@ request_body = Tag(
 	display_name = "Privileged",
 	description = "The document is privileged",
 	additional_data = {
-			"parent@odata_bind" : "https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/tags/98fdad78bbce4519b75474bc150575c3",
+			"parent@odata.bind" : "https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/tags/98fdad78bbce4519b75474bc150575c3",
 	}
 )
 

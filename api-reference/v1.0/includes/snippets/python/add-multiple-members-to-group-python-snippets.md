@@ -10,7 +10,7 @@ graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Group(
 	additional_data = {
-			"members@odata_bind" : [
+			"members@odata.bind" : [
 				"https://graph.microsoft.com/v1.0/directoryObjects/{id}",
 				"https://graph.microsoft.com/v1.0/directoryObjects/{id}",
 				"https://graph.microsoft.com/v1.0/directoryObjects/{id}",

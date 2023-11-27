@@ -12,7 +12,7 @@ request_body = PrinterShare(
 	display_name = "PrinterShare Name",
 	allow_all_users = False,
 	additional_data = {
-			"printer@odata_bind" : "https://graph.microsoft.com/v1.0/print/printers/{printerId}",
+			"printer@odata.bind" : "https://graph.microsoft.com/v1.0/print/printers/{printerId}",
 	}
 )
 

@@ -15,7 +15,7 @@ request_body = AddPostRequestBody(
 			roles = [
 			],
 			additional_data = {
-					"user@odata_bind" : "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')",
+					"user@odata.bind" : "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')",
 			}
 		),
 		AadUserConversationMember(
@@ -24,7 +24,7 @@ request_body = AddPostRequestBody(
 				"owner",
 			],
 			additional_data = {
-					"user@odata_bind" : "https://graph.microsoft.com/v1.0/users('alex@contoso.com')",
+					"user@odata.bind" : "https://graph.microsoft.com/v1.0/users('alex@contoso.com')",
 			}
 		),
 	],

@@ -30,7 +30,7 @@ request_body = TeamsAppInstallation(
 		],
 	),
 	additional_data = {
-			"teams_app@odata_bind" : "https://graph.microsoft.com/beta/appCatalogs/teamsApps/2b524e28-95ce-4c9b-9773-4a5bd6ec1770",
+			"teams_app@odata.bind" : "https://graph.microsoft.com/beta/appCatalogs/teamsApps/2b524e28-95ce-4c9b-9773-4a5bd6ec1770",
 	}
 )
 

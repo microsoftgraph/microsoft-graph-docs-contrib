@@ -18,12 +18,12 @@ request_body = Team(
 				"owner",
 			],
 			additional_data = {
-					"user@odata_bind" : "https://graph.microsoft.com/v1.0/users('0040b377-61d8-43db-94f5-81374122dc7e')",
+					"user@odata.bind" : "https://graph.microsoft.com/v1.0/users('0040b377-61d8-43db-94f5-81374122dc7e')",
 			}
 		),
 	],
 	additional_data = {
-			"template@odata_bind" : "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
+			"template@odata.bind" : "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
 	}
 )
 

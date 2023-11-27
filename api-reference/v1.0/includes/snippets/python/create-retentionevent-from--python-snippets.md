@@ -19,7 +19,7 @@ request_body = RetentionEvent(
 						"@odata_type" : "microsoft.graph.security.eventQuery",
 				},
 			],
-			"retention_event_type@odata_bind" : "https://graph.microsoft.com/v1.0/security/triggerTypes/retentionEventType/9eecef97-fb3c-4c68-825b-4dd74530863a",
+			"retention_event_type@odata.bind" : "https://graph.microsoft.com/v1.0/security/triggerTypes/retentionEventType/9eecef97-fb3c-4c68-825b-4dd74530863a",
 	}
 )
 

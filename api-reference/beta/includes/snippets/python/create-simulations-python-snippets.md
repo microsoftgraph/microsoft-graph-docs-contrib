@@ -37,15 +37,15 @@ request_body = Simulation(
 		additional_data = {
 				"simulation_notification" : {
 						"targetted_user_type" : "compromised",
-						"end_user_notification@odata_bind" : "https://graph.microsoft.com/beta/security/attacksimulation/endUserNotifications/12wer3678-9abc-def0-123456789a",
+						"end_user_notification@odata.bind" : "https://graph.microsoft.com/beta/security/attacksimulation/endUserNotifications/12wer3678-9abc-def0-123456789a",
 						"default_language" : "en",
 				},
 		}
 	),
 	additional_data = {
-			"payload@odata_bind" : "https://graph.microsoft.com/beta/security/attacksimulation/payloads/12345678-9abc-def0-123456789a",
-			"login_page@odata_bind" : "https://graph.microsoft.com/beta/security/attacksimulation/loginPages/1w345678-9abc-def0-123456789a",
-			"landing_page@odata_bind" : "https://graph.microsoft.com/beta/security/attacksimulation/landingPages/1c345678-9abc-def0-123456789a",
+			"payload@odata.bind" : "https://graph.microsoft.com/beta/security/attacksimulation/payloads/12345678-9abc-def0-123456789a",
+			"login_page@odata.bind" : "https://graph.microsoft.com/beta/security/attacksimulation/loginPages/1w345678-9abc-def0-123456789a",
+			"landing_page@odata.bind" : "https://graph.microsoft.com/beta/security/attacksimulation/landingPages/1c345678-9abc-def0-123456789a",
 	}
 )
 

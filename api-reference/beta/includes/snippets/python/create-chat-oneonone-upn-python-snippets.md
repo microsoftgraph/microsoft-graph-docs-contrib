@@ -17,7 +17,7 @@ request_body = Chat(
 				"owner",
 			],
 			additional_data = {
-					"user@odata_bind" : "https://graph.microsoft.com/beta/users('jacob@contoso.com')",
+					"user@odata.bind" : "https://graph.microsoft.com/beta/users('jacob@contoso.com')",
 			}
 		),
 		AadUserConversationMember(
@@ -26,7 +26,7 @@ request_body = Chat(
 				"owner",
 			],
 			additional_data = {
-					"user@odata_bind" : "https://graph.microsoft.com/beta/users('alex@contoso.com')",
+					"user@odata.bind" : "https://graph.microsoft.com/beta/users('alex@contoso.com')",
 			}
 		),
 	],

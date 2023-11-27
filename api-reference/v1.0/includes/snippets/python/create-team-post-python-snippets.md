@@ -12,7 +12,7 @@ request_body = Team(
 	display_name = "My Sample Team",
 	description = "My Sample Team’s Description",
 	additional_data = {
-			"template@odata_bind" : "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
+			"template@odata.bind" : "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
 	}
 )
 

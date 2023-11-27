@@ -13,7 +13,7 @@ request_body = EdiscoveryReviewTag(
 	description = "Use Graph API to create tags",
 	child_selectability = ChildSelectability.Many,
 	additional_data = {
-			"parent@odata_bind" : "",
+			"parent@odata.bind" : "",
 	}
 )
 

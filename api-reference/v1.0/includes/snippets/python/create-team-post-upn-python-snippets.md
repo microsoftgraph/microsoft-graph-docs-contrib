@@ -18,12 +18,12 @@ request_body = Team(
 				"owner",
 			],
 			additional_data = {
-					"user@odata_bind" : "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')",
+					"user@odata.bind" : "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')",
 			}
 		),
 	],
 	additional_data = {
-			"template@odata_bind" : "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
+			"template@odata.bind" : "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
 	}
 )
 

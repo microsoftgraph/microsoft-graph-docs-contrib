@@ -29,7 +29,7 @@ request_body = Team(
 						content_url = "https://learn.microsoft.com/microsoftteams/microsoft-teams",
 					),
 					additional_data = {
-							"teams_app@odata_bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.web')",
+							"teams_app@odata.bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.web')",
 					}
 				),
 				TeamsTab(
@@ -39,7 +39,7 @@ request_body = Team(
 						website_url = "https://www.youtube.com/watch?v=X8krAMdGvCQ",
 					),
 					additional_data = {
-							"teams_app@odata_bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.youtube')",
+							"teams_app@odata.bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.youtube')",
 					}
 				),
 			],
@@ -84,17 +84,17 @@ request_body = Team(
 	installed_apps = [
 		TeamsAppInstallation(
 			additional_data = {
-					"teams_app@odata_bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')",
+					"teams_app@odata.bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')",
 			}
 		),
 		TeamsAppInstallation(
 			additional_data = {
-					"teams_app@odata_bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')",
+					"teams_app@odata.bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')",
 			}
 		),
 	],
 	additional_data = {
-			"template@odata_bind" : "https://graph.microsoft.com/beta/teamsTemplates('standard')",
+			"template@odata.bind" : "https://graph.microsoft.com/beta/teamsTemplates('standard')",
 	}
 )
 

@@ -19,7 +19,7 @@ request_body = Channel(
 				"owner",
 			],
 			additional_data = {
-					"user@odata_bind" : "https://graph.microsoft.com/beta/users('7640023f-fe43-gv3f-9gg4-84a9efe4acd6')",
+					"user@odata.bind" : "https://graph.microsoft.com/beta/users('7640023f-fe43-gv3f-9gg4-84a9efe4acd6')",
 			}
 		),
 	],

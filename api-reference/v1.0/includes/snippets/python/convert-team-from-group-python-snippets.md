@@ -29,18 +29,18 @@ request_body = Team(
 	installed_apps = [
 		TeamsAppInstallation(
 			additional_data = {
-					"teams_app@odata_bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')",
+					"teams_app@odata.bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')",
 			}
 		),
 		TeamsAppInstallation(
 			additional_data = {
-					"teams_app@odata_bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')",
+					"teams_app@odata.bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')",
 			}
 		),
 	],
 	additional_data = {
-			"template@odata_bind" : "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
-			"group@odata_bind" : "https://graph.microsoft.com/v1.0/groups('dbd8de4f-5d47-48da-87f1-594bed003375')",
+			"template@odata.bind" : "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
+			"group@odata.bind" : "https://graph.microsoft.com/v1.0/groups('dbd8de4f-5d47-48da-87f1-594bed003375')",
 	}
 )
 

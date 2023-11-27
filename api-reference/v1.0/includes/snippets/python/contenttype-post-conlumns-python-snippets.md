@@ -10,7 +10,7 @@ graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ColumnDefinition(
 	additional_data = {
-			"source_column@odata_bind" : "https://graph.microsoft.com/v1.0/sites/root/columns/99ddcf45-e2f7-4f17-82b0-6fba34445103",
+			"source_column@odata.bind" : "https://graph.microsoft.com/v1.0/sites/root/columns/99ddcf45-e2f7-4f17-82b0-6fba34445103",
 	}
 )
 

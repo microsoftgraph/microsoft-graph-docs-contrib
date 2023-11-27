@@ -20,7 +20,7 @@ request_body = SourceSystemDefinition(
 				code = "username",
 			),
 			additional_data = {
-					"role_group@odata_bind" : "https://graph.microsoft.com/beta/external/industryData/roleGroups/staff",
+					"role_group@odata.bind" : "https://graph.microsoft.com/beta/external/industryData/roleGroups/staff",
 			}
 		),
 		UserMatchingSetting(
@@ -32,7 +32,7 @@ request_body = SourceSystemDefinition(
 				code = "username",
 			),
 			additional_data = {
-					"role_group@odata_bind" : "https://graph.microsoft.com/beta/external/industryData/roleGroups('students')",
+					"role_group@odata.bind" : "https://graph.microsoft.com/beta/external/industryData/roleGroups('students')",
 			}
 		),
 	],

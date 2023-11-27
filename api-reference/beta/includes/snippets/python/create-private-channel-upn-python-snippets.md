@@ -20,7 +20,7 @@ request_body = Channel(
 				"owner",
 			],
 			additional_data = {
-					"user@odata_bind" : "https://graph.microsoft.com/beta/users('jacob@contoso.com')",
+					"user@odata.bind" : "https://graph.microsoft.com/beta/users('jacob@contoso.com')",
 			}
 		),
 	],

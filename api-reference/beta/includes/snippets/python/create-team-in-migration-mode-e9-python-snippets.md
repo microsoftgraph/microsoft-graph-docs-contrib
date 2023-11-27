@@ -14,7 +14,7 @@ request_body = Team(
 	created_date_time = "2020-03-14T11:22:17.067Z",
 	additional_data = {
 			"@microsoft_graph_team_creation_mode" : "migration",
-			"template@odata_bind" : "https://graph.microsoft.com/beta/teamsTemplates('standard')",
+			"template@odata.bind" : "https://graph.microsoft.com/beta/teamsTemplates('standard')",
 	}
 )
 

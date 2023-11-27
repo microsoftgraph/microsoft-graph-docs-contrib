@@ -11,7 +11,7 @@ graph_client = GraphServiceClient(credentials, scopes)
 request_body = UnifiedGroupSource(
 	included_sources = SourceType.Mailbox,
 	additional_data = {
-			"group@odata_bind" : "https://graph.microsoft.com/v1.0/groups/93f90172-fe05-43ea-83cf-ff785a40d610",
+			"group@odata.bind" : "https://graph.microsoft.com/v1.0/groups/93f90172-fe05-43ea-83cf-ff785a40d610",
 	}
 )
 
