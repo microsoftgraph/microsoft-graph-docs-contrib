@@ -40,7 +40,7 @@ GET /reports/partners/billing/operations/{id}
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -54,7 +54,7 @@ If operation is still running, this method returns a 200 OK response code and [o
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following request is an example.
 <!-- {
   "blockType": "request",
   "name": "get_operation"

@@ -34,7 +34,7 @@ Inherits from [entity](../resources/entity.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON is a representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
