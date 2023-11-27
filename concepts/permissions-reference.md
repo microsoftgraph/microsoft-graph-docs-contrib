@@ -1820,7 +1820,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | - | 2ef770a1-622a-47c4-93ee-28d6adbed3a0 
 | DisplayText | - | Read and write users' class assignments information without impacting or reading any feedback or outcomes 
-| Description | - | Allows the app to read and write assignments information on behalf of the user without affecting or reading any feedback or outcomes. 
+| Description | - | Allows the app to read and write assignments information on behalf of the user without affecting or reading any feedback or outcomes.
 | AdminConsentRequired | - | Yes 
 
 ---

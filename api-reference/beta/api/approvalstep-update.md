@@ -19,31 +19,24 @@ Apply approve or deny decision on an [approvalStep](../resources/approvalStep.md
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### Permissions required for calling this API for entitlement management
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | EntitlementManagement.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+<!-- { "blockType": "permissions", "name": "approvalstep_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/approvalstep-update-permissions.md)]
 
-### For PIM for Azure AD roles
+<a name='for-pim-for-azure-ad-roles'></a>
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | RoleAssignmentSchedule.ReadWrite.Directory |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+### For PIM for Microsoft Entra roles
+
+<!-- { "blockType": "permissions", "name": "approvalstep_update_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/approvalstep-update-2-permissions.md)]
 
 ### Permissions required for calling this API for PIM for groups
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+<!-- { "blockType": "permissions", "name": "approvalstep_update_3" } -->
+[!INCLUDE [permissions-table](../includes/permissions/approvalstep-update-3-permissions.md)]
 
 ## HTTP request
 
@@ -54,7 +47,7 @@ To update an approval decision in entitlement management:
 PATCH /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{id}/steps/{id}
 ```
 
-To update an approval decision in PIM for Azure AD roles:
+To update an approval decision in PIM for Microsoft Entra roles:
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -86,13 +79,13 @@ The following table shows the properties that are required for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code in the response body. However, if the caller does not have the right permissions, the method returns a `403 Forbidden` response code, or if the approval id is not found, the method returns `404 Not found`. If the request has already been approved by another approver in the same approval stage, the method returns `409 Conflict` in the response body.
+If successful, this method returns a `204 No Content` response code in the response body. However, if the caller doesn't have the right permissions, the method returns a `403 Forbidden` response code, or if the approval id isn't found, the method returns `404 Not found`. If the request has already been approved by another approver in the same approval stage, the method returns `409 Conflict` in the response body.
 
 ## Examples
 
 ### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -132,7 +125,7 @@ PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

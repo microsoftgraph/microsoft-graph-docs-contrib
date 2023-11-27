@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Groups
 
-Get-MgGroupMemberCount -GroupId $groupId-ConsistencyLevel eventual 
+Get-MgGroupMemberCount -GroupId $groupId -ConsistencyLevel eventual 
 
 
 ```

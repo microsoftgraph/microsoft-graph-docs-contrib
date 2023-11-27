@@ -17,13 +17,10 @@ This method is used to create or update a custom language in an Azure AD B2C use
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|IdentityUserFlow.ReadWrite.All|
-|Delegated (personal Microsoft account)| Not supported.|
-|Application|IdentityUserFlow.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "b2cidentityuserflow_put_languages" } -->
+[!INCLUDE [permissions-table](../includes/permissions/b2cidentityuserflow-put-languages-permissions.md)]
 
 The work or school account needs to belong to one of the following roles:
 
@@ -57,7 +54,7 @@ The following table shows the properties that can be optionally provided when yo
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The identifier of the language. This field is Language ID tag [RFC 5646](https://tools.ietf.org/html/rfc5646) compliant and must be a documented Language ID. If provided in the request body, it must match the identifer provided in the request URL.|
-|isEnabled|Boolean|Indicates whether the language is enabled within the user flow. If this is not provided in the request, isEnabled will be set to 'true'.|
+|isEnabled|Boolean|Indicates whether the language is enabled within the user flow. If you don't specify a value for this property in the request, isEnabled will be set to 'true'.|
 
 ## Response
 
@@ -69,7 +66,7 @@ If successful, this method returns a `201 Created` response code and a [userFlow
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -102,7 +99,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -128,7 +125,7 @@ Content-Type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -160,7 +157,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

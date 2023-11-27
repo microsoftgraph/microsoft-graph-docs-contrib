@@ -1,6 +1,6 @@
 ---
 title: "Get multiTenantOrganization"
-description: "Get properties of the multi-tenant organization."
+description: "Get properties of the multitenant organization."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,18 +12,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get properties of the multi-tenant organization.
+Get properties of the multitenant organization.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|MultiTenantOrganization.ReadBasic.All, MultiTenantOrganization.Read.All, MultiTenantOrganization.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|MultiTenantOrganization.ReadBasic.All, MultiTenantOrganization.Read.All, MultiTenantOrganization.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "multitenantorganization_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/multitenantorganization-get-permissions.md)]
 
 [!INCLUDE [rbac-multitenantorganization-apis-read](../includes/rbac-for-apis/rbac-multitenantorganization-apis-read.md)]
 
@@ -46,7 +43,7 @@ This method supports the `$select` OData query parameter to help customize the r
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -54,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a [multiTenantOr
 
 ## Examples
 
-The following example gets properties of the multi-tenant organization.
+The following example gets properties of the multitenant organization.
 
 ### Request
 
@@ -124,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-The following response shows when the requesting tenant is not part of any multi-tenant organization.
+The following response shows when the requesting tenant is not part of any multitenant organization.
 
 ``` http
 HTTP/1.1 200 OK

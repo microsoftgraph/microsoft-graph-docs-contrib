@@ -15,13 +15,10 @@ Namespace: microsoft.graph
 Retrieve the list of permissionGrantPreApprovalPolicy objects in the tenant.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Policy.Read.PermissionGrant, Policy.ReadWrite.PermissionGrant|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Policy.Read.PermissionGrant, Policy.ReadWrite.PermissionGrant|
+<!-- { "blockType": "permissions", "name": "policyroot_list_permissiongrantpreapprovalpolicies" } -->
+[!INCLUDE [permissions-table](../includes/permissions/policyroot-list-permissiongrantpreapprovalpolicies-permissions.md)]
 
 [!INCLUDE [rbac-permission-grant-preapproval-policy-read](../includes/rbac-for-apis/rbac-permission-grant-preapproval-policy-read.md)]
 
@@ -44,7 +41,7 @@ This method does not support the OData query parameters to help customize the re
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

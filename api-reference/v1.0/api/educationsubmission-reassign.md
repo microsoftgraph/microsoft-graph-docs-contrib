@@ -22,13 +22,10 @@ If the header `Prefer: include-unknown-enum-members` is provided, a reassigned s
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  EduAssignments.ReadWrite   |
-|Delegated (personal Microsoft account) |  Not supported.  |
-|Application | EduAssignments.ReadWrite.All | 
+<!-- { "blockType": "permissions", "name": "educationsubmission_reassign" } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationsubmission-reassign-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +48,7 @@ If successful, this method returns `200 OK` response code and an [educationSubmi
 ### Example 1: Request without optional Prefer header
 
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 
@@ -162,7 +159,7 @@ HTTP/1.1 200 OK
 The following example shows how to call this method.
 
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 

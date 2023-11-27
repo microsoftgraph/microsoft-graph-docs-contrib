@@ -1,6 +1,6 @@
 ---
 title: "Remove multiTenantOrganizationMember"
-description: "Remove a tenant from a multi-tenant organization."
+description: "Remove a tenant from a multitenant organization."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove a tenant from a multi-tenant organization. A tenant can be removed in the following scenarios:
+Remove a tenant from a multitenant organization. A tenant can be removed in the following scenarios:
 
 * An active member tenant can remove itself.
 * An active owner tenant can remove any other tenant.
@@ -24,13 +24,10 @@ To allow for asynchronous processing, you must wait for **up to 2 hours** before
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|MultiTenantOrganization.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|MultiTenantOrganization.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "multitenantorganization_delete_tenants" } -->
+[!INCLUDE [permissions-table](../includes/permissions/multitenantorganization-delete-tenants-permissions.md)]
 
 [!INCLUDE [rbac-multitenantorganization-apis-write](../includes/rbac-for-apis/rbac-multitenantorganization-apis-write.md)]
 
@@ -50,7 +47,7 @@ DELETE /tenantRelationships/multiTenantOrganization/tenants/{tenantId}
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
