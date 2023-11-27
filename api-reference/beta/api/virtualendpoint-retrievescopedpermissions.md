@@ -61,7 +61,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "virtualendpoint_retrieveScopedPermissions"
+  "name": "virtualendpoint_retrieveScopedPermissions1"
 }
 -->
 
@@ -83,6 +83,8 @@ The following is an example of the response.
 
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.cloudPcScopedPermission)",
     "@odata.count": 4,
@@ -115,7 +117,7 @@ The following is an example of the request with filter.
 
 <!-- {
   "blockType": "request",
-  "name": "virtualendpoint_retrieveScopedPermissions"
+  "name": "virtualendpoint_retrieveScopedPermissions2"
 }
 -->
 
@@ -137,6 +139,8 @@ The following is an example of the response.
 
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.cloudPcScopedPermission)",
     "@odata.count": 2,
@@ -153,16 +157,16 @@ HTTP/1.1 200 OK
 }
 ```
 
-## Examples 2
+## Examples 3
 
 ### Request
 
-When the IT Admin is assigned Microsoft Entra Global admin, Windows365 admin or Intune admin via Microsoft Entra ID, it doesn't support scope tag, IT Admin will have full access to all Windows 365 resources, the permission is ["*"]. And scopeIds is empty, indicates the user is unscoped admin.
+When the IT Admin is assigned Microsoft Entra Global admin, Windows365 admin or Intune admin via Microsoft Entra ID, it doesn't support scope tag, IT Admin will have full access to all Windows 365 resources, the permission is "*". And scopeIds is empty, indicates the user is unscoped admin.
 In such case, query is not supported.
 
 <!-- {
   "blockType": "request",
-  "name": "virtualendpoint_retrieveScopedPermissions"
+  "name": "virtualendpoint_retrieveScopedPermissions3"
 }
 -->
 
@@ -184,6 +188,8 @@ The following is an example of the response.
 
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.cloudPcScopedPermission)",
     "@odata.count": 1,
