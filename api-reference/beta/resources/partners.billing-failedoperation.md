@@ -48,9 +48,10 @@ The following is a JSON representation of the resource.
   "createdDateTime": "String (timestamp)",
   "lastActionDateTime": "String (timestamp)",
   "status": "String",
-  "error": {
+  "error": {../../../../graphstuboriginal/beta/resources/partners.billing-runningoperation.md
     "@odata.type": "microsoft.graph.publicError"
   }
 }
 ```
 
+../../../../graphstuboriginal/beta/resources/partners.billing-runningoperation.md
