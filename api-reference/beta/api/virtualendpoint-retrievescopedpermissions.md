@@ -50,7 +50,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a collection of [cloudPcSourceDeviceImage](../resources/cloudpcsopedpermission.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and a collection of [cloudPcScopedPermission](../resources/cloudpcscopedpermission.md) collection in the response body.
 This API supports filter with permission, when no filter, this function will return all effective scoped permissions and scope Tag ids of the authenticated user.
 
 ## Examples 1
