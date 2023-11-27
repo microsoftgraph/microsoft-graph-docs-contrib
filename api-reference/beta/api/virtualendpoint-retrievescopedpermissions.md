@@ -1,6 +1,6 @@
 ---
 title: "virtualEndpoint: retrieveScopedPermissions"
-description: "Retrieve the authenticated user's effective scoped permissions and scope ids."
+description: "Retrieve the authenticated user's effective scoped permissions and scope IDs."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the authenticated user's effective scoped permissions and scope ids, helping UX hide or disable content that the current user doesn't have access to.
+Retrieve the authenticated user's effective scoped permissions and scope IDs, helping UX hIDe or disable content that the current user doesn't have access to.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -51,7 +51,7 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this function returns a `200 OK` response code and a collection of [cloudPcScopedPermission](../resources/cloudpcscopedpermission.md) collection in the response body.
-This API supports filter with permission, when no filter, this function will return all effective scoped permissions and scope Tag ids of the authenticated user.
+This API supports filter with permission, when no filter, this function will return all effective scoped permissions and scope Tag IDs of the authenticated user.
 
 ## Examples 1
 
@@ -161,7 +161,7 @@ Content-Type: application/json
 
 ### Request
 
-When the IT Admin is assigned Microsoft Entra Global admin, Windows365 admin or Intune admin via Microsoft Entra ID, it doesn't support scope tag, IT Admin will have full access to all Windows 365 resources, the permission is "*". And scopeIds is empty, indicates the user is unscoped admin.
+When the IT Admin is assigned Microsoft Entra Global admin, Windows 365 admin or Intune admin via Microsoft Entra ID, it doesn't support scope tag, IT Admin will have full access to all Windows 365 resources, the permission is "*". And scopeIds is empty, indicates the user is unscoped admin.
 In such case, query is not supported.
 
 <!-- {
