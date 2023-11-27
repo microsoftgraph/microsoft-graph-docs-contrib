@@ -19,13 +19,13 @@ Exported billing data.
 |Property|Type|Description|
 |:---|:---|:---|
 |name|String|Name of blob |
-|partitionValue|String|The partition that contains the file. A large partition will be split into multiple files, each with the same “partitionValue.”|
+|partitionValue|String|The partition that contains the file. A large partition is split into multiple files, each with the same “partitionValue.”|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON is a representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.partners.billing.blob"

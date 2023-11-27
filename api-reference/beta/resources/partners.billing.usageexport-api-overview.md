@@ -20,19 +20,19 @@ As part of the Microsoft Partner Center ecosystem, Microsoft direct partners in 
 
 ## API overview
 
-You can download the usage data asynchronously using three new steps (API endpoints). To learn more, read the following:
+You can download the usage data asynchronously using three new steps (API endpoints). To learn more, read the following sections:
 
 ### Usage line-item endpoint
-Use this API to access billed or unbilled consumption line items. It will return a 202 HTTP status and a location header with the URL, which you must poll at regular intervals until you receive a success status with a manifest URL
+Use this API to access billed or unbilled consumption line items. It returns a 202 HTTP status and a location header with the URL, which you must poll at regular intervals until you receive a success status with a manifest URL
 
 ### Operation status endpoint
-Until you receive the success status, keep polling this API at a regular interval. If the requested data is unavailable, the API response will include a Retry-After header indicating how long you should wait before sending another request.
+Until you receive the success status, keep polling this API at a regular interval. If the requested data is unavailable, the API response includes a Retry-After header indicating how long you should wait before sending another request.
 
 ### Manifest endpoint
 This endpoint provides a storage folder from which actual billing data can be downloaded. The response splits or partitions the files to optimize throughput and I/O parallelism.
 
 ## Sequence diagram
-The diagram below depicts the steps needed to download reconciliation data.
+The following diagram depicts the steps needed to download reconciliation data.
 
 ![Export data sequence diagram](LRO_SequenceDiagram.png)
 
@@ -41,7 +41,8 @@ The diagram below depicts the steps needed to download reconciliation data.
 3. [Check status of export operation](../api/operation-get.md)
 4. [Get export manifest to download files](../api/partners.billing-manifest-get.md)
 
-After running the [Export billed reconciliation data](../api/partners.billing-billedusage-export.md) API or [Export unbilled reconciliation data](../api/partners.billing-unbilledusage-export.md) API, poll [Check status of export operation](../api/operation-get.md) API until it returns a terminal status of succeeded or failed. The manifest URL will be "resourceLocation" in the success status.
+Client should check the status of [Export billed reconciliation data](../api/partners.billing-billedusage-export.md) or [Export unbilled reconciliation data](../api/partners.billing-unbilledusage-export.md) API by polling [Check status of export operation](../api/operation-get.md), 
+until it returns a terminal status of succeeded or failed. The manifest is a "resourceLocation" in the success status.
 
 ## Use cases for reconciliation APIs
 

@@ -31,8 +31,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |dataFormat|String|The billing data file format. Possible values `compressedJSONLines`. Each blob is a compressed file and data in the file is in [JSON lines](https://jsonlines.org/) format. Decompress the file to access the data.|
 |eTag|String|Version of data represented by manifest, any change in eTag indicates new data version.|
 |id|String|Unique identifier. Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|partitionType|String|This property divides the data. If a given partition has more than the supported number, the data will be split into multiple files corresponding to the “partitionValue.” Data is partitioned by the number of line items in the file by default.|
-|partnerTenantId|String|Partner AAD Tenant Id.|
+|partitionType|String|This property divides the data. If a given partition has more than the supported number, the data is split into multiple files corresponding to the “partitionValue.” Data in the file is by default partitioned by the number of line items.|
+|partnerTenantId|String|Partner's Microsoft Entra ID Tenant ID.|
 |rootDirectory|String|The root directory containing all the files.|
 |sasToken|String|The SAS token for accessing the directory or individual file in the directory.|
 |schemaVersion|String|The manifest schema version.|
@@ -41,7 +41,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON is a representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

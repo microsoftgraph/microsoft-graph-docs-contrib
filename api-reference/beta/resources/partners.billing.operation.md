@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a operation to export partner's billing data.
+Represents an operation to export partner's billing data.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -45,7 +45,7 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.operation",
+  "@odata.type": "#microsoft.graph.partners.billing.operation",
   "id": "String (identifier)",
   "status": "String",
   "createdDateTime": "String (timestamp)",
