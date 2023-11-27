@@ -39,7 +39,7 @@ Represents the image resource on a Cloud PC.
 |osStatus|[cloudPcDeviceImageOsStatus](#cloudpcdeviceimageosstatus-values)|The OS status of this image. Possible values are: `supported`, `supportedWithWarning`, `unknown`, `unknownFutureValue`. Default value is unknown. Read-Only.|
 |sourceImageResourceId|String|The unique identifier (ID) of the source image resource on Azure. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}". Read-Only.|
 |status|[cloudPcDeviceImageStatus](#cloudpcdeviceimagestatus-values)|The status of the image on Cloud PC. Possible values are: `pending`, `ready`, `failed`. Read-Only.|
-|statusDetails|cloudPcDeviceImageStatusDetails|The details of the status of the image that indicates why the upload failed, if applicable. Possible values are: `internalServerError`, `sourceImageNotFound`, `osVersionNotSupported`, `sourceImageInvalid`, `sourceImageNotGeneralized`, `unknownFutureValue`, `vmAlreadyAzureAdJoined`, `paidSourceImageNotSupport`, `sourceImageNotSupportCustomizeVMName`,`sourceImageSizeExceedsLimitation`. Read-Only. (Starting from January 31, 2024, this property will no longer be supported and will be marked as deprecated. Please use errorCode instead.)|
+|statusDetails|cloudPcDeviceImageStatusDetails|The details of the status of the image that indicates why the upload failed, if applicable. Possible values are: `internalServerError`, `sourceImageNotFound`, `osVersionNotSupported`, `sourceImageInvalid`, `sourceImageNotGeneralized`, `unknownFutureValue`, `vmAlreadyAzureAdJoined`, `paidSourceImageNotSupport`, `sourceImageNotSupportCustomizeVMName`,`sourceImageSizeExceedsLimitation`. Read-Only. (Starting from January 31, 2024, this property will no longer be supported and will be marked as deprecated. Use errorCode instead.)|
 |errorCode|cloudPcDeviceImageErrorCode|The error code of the image's status, which indicates why the upload failed if applicable. Possible values include: `internalServerError`, `sourceImageNotFound`, `osVersionNotSupported`, `sourceImageInvalid`, `sourceImageNotGeneralized`, `vmAlreadyAzureAdJoined`, `paidSourceImageNotSupport`, `sourceImageNotSupportCustomizeVMName`,`sourceImageSizeExceedsLimitation`. Read-Only.|
 |version|String|The image version. For example, `0.0.1` and `1.5.13`. Read-Only.|
 
@@ -50,7 +50,7 @@ Represents the image resource on a Cloud PC.
 |pending|The image upload is in progress.|
 |ready|The image is ready for use on Cloud PCs.|
 |failed|The image couldn’t be uploaded. |
-|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ### cloudPcDeviceImageStatusDetails values
 
@@ -58,14 +58,14 @@ Represents the image resource on a Cloud PC.
 |:---|:---|
 |internalServerError|There was an internal server error while processing the image.|
 |sourceImageNotFound|Source image is inaccessible or not found.|
-|osVersionNotSupported| OS version is not supported.|
-|sourceImageInvalid|The source image is not valid for provisioning a Windows VM with it.|
+|osVersionNotSupported| OS version isn't supported.|
+|sourceImageInvalid|The source image isn't valid for provisioning a Windows VM with it.|
 |sourceImageNotGeneralized|The uploaded image hasn’t been generalized. Reupload the image after running the sysprep/generalize command. To learn more, see [Remove machine specific information by generalizing a VM before creating an image](/azure/virtual-machines/generalize).|
-|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
-|vmAlreadyAzureAdJoined|The virtual machine (VM) which is used to generate a source image for creating device image has already been Azure Active Directory joined. So, validation process will block create device image with such source image.|
-|paidSourceImageNotSupport|This source image is built from another paid image from Azure marketplace and is not supported, please use another source to proceed.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
+|vmAlreadyAzureAdJoined|The virtual machine (VM) which is used to generate a source image for creating device image has already been Azure Active Directory joined. So, validation process blocks create device image with such source image.|
+|paidSourceImageNotSupport|This source image is built from another paid image from Azure marketplace and isn't supported, use another source to proceed.|
 |sourceImageNotSupportCustomizeVMName|There's a computer name setting issue on the resultant generalized image. It's not able to customize VM name with the provided image.|
-|sourceImageSizeExceedsLimitation|Customer upload source image size exceeds SIG (Shared Image Gallery) limitation, which will cause image creation failure.|
+|sourceImageSizeExceedsLimitation|Customer upload source image size exceeds SIG (Shared Image Gallery) limitation, which causes image creation failure.|
 
 
 ### cloudPcDeviceImageErrorCode values
@@ -74,23 +74,23 @@ Represents the image resource on a Cloud PC.
 |:---|:---|
 |internalServerError|There was an internal server error while processing the image.|
 |sourceImageNotFound|Source image is inaccessible or not found.|
-|osVersionNotSupported| OS version is not supported.|
-|sourceImageInvalid|The source image is not valid for provisioning a Windows VM with it.|
+|osVersionNotSupported| OS version isn't supported.|
+|sourceImageInvalid|The source image isn't valid for provisioning a Windows VM with it.|
 |sourceImageNotGeneralized|The uploaded image hasn’t been generalized. Reupload the image after running the sysprep/generalize command. To learn more, see [Remove machine specific information by generalizing a VM before creating an image](/azure/virtual-machines/generalize).|
-|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 |vmAlreadyAzureAdJoined|The virtual machine (VM) which is used to generate a source image for creating device image has already been Azure Active Directory joined. So, validation process will block create device image with such source image.|
-|paidSourceImageNotSupport|This source image is built from another paid image from Azure marketplace and is not supported, please use another source to proceed.|
+|paidSourceImageNotSupport|This source image is built from another paid image from Azure marketplace and isn't supported, use another source to proceed.|
 |sourceImageNotSupportCustomizeVMName|There's a computer name setting issue on the resultant generalized image. It's not able to customize VM name with the provided image.|
-|sourceImageSizeExceedsLimitation|Customer upload source image size exceeds SIG (Shared Image Gallery) limitation, which will cause image creation failure.|
+|sourceImageSizeExceedsLimitation|Customer upload source image size exceeds SIG (Shared Image Gallery) limitation, which causes image creation failure.|
 
 ### cloudPcDeviceImageOsStatus values
 
 |Member|Description|
 |:---|:---|
 |supported|Indicates the Cloud PC device image operating system is active and ready to be used for provisioning.|
-|supportedWithWarning|Indicates the Cloud PC device image operating system has expired, but Cloud PC will continue support. If users continue to use, they may not be able to get security updates.|
+|supportedWithWarning|Indicates the Cloud PC device image operating system is expired, but Cloud PC continues support. If users continue to use, they may not be able to get security updates.|
 |unknown| Default. Indicates the Cloud PC device operating system image status is unknown.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 
