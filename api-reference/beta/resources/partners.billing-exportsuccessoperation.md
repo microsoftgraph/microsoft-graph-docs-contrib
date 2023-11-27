@@ -13,7 +13,7 @@ Namespace: microsoft.graph.partners.billing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an export operation which is completed successfully.
+Represents an export operation that is completed successfully
 
 
 Inherits from [microsoft.graph.partners.billing.operation](../resources/partners.billing-operation.md).
@@ -24,7 +24,7 @@ Inherits from [microsoft.graph.partners.billing.operation](../resources/partners
 |createdDateTime|DateTimeOffset|The start time of the operation in UTC|
 |id|String|Unique identifier. Inherited from [entity](../resources/entity.md).|
 |lastActionDateTime|DateTimeOffset|The time of the last action of the operation in UTC.|
-|status|operationStatus|Execution status. Possible value is : `completed`.|
+|status|operationStatus|Execution status. Possible value is: `completed`.|
 
 ## Relationships
 |Relationship|Type|Description|

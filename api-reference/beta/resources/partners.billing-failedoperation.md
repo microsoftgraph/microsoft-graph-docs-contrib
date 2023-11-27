@@ -13,7 +13,7 @@ Namespace: microsoft.graph.partners.billing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a export operation which failed to complete. Client should start a new operation.
+Represents an export operation which failed to complete.
 
 Inherits from [microsoft.graph.partners.billing.operation](../resources/partners.billing-operation.md).
 

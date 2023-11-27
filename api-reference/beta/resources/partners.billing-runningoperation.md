@@ -29,7 +29,7 @@ Inherits from [microsoft.graph.partners.billing.operation](../resources/partners
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON is a representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
