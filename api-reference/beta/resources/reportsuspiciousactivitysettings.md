@@ -2,6 +2,7 @@
 title: "reportSuspiciousActivitySettings resource type"
 description: "Report suspicious activity enables users in the tenant to report multifactor authentication prompts as suspicious, indicating the user's credentials may have been compromised."
 author: "gregkmsft"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

@@ -10,6 +10,7 @@ $params = @{
 	registrationEnforcement = @{
 		authenticationMethodsRegistrationCampaign = @{
 			snoozeDurationInDays = 1
+			enforceRegistrationAfterAllowedSnoozes = $true
 			state = "enabled"
 			excludeTargets = @(
 			)

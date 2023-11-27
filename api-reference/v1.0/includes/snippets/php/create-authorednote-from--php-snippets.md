@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AuthoredNote();
 $content = new ItemBody();
-$content->setContent('String');
+$content->setContent('Please take a look at the files tagged with follow up');
 $content->setContentType(new BodyType('text'));
 $requestBody->setContent($content);
 

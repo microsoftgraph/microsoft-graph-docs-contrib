@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Groups
 
-Get-MgGroupTransitiveMemberAsGroup -GroupId $groupId -CountVariable CountVar -ConsistencyLevel eventual 
+Get-MgGroupTransitiveMemberAsGroup -GroupId $groupId -CountVariable CountVar  -ConsistencyLevel eventual 
 
 
 ```

@@ -7,7 +7,7 @@ author: DarrelMiller
 
 # Customize the Microsoft Graph SDK service client
 
-The Microsoft Graph SDK client configures a default set of middleware that allows the SDK to communicate with the Microsoft Graph endpoints. This default set is customizable, allowing you to change the behavior of the client. For example, you can insert customized logging, or add a test handler to simulate specific scenarios. You can add and remove middleware components. It is important to note that the order in which middleware components run is significant.
+The Microsoft Graph SDK client configures a default set of middleware that allows the SDK to communicate with the Microsoft Graph endpoints. This customizable default set allows you to change the client's behavior. For example, you can insert customized logging or a test handler to simulate specific scenarios. You can add and remove middleware components. It's important to note that the order in which middleware components run is significant.
 
 <!-- markdownlint-disable MD051 -->
 ## [C#](#tab/csharp)
@@ -25,7 +25,7 @@ The Microsoft Graph SDK client configures a default set of middleware that allow
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/CustomClients.java" id="ChaosHandlerSnippet":::
 
 ## [PHP](#tab/PHP)
-We currently use [Guzzle](http://guzzlephp.org/) as our HTTP client. You can pass your custom configured Guzzle client using:
+We currently use [Guzzle](http://guzzlephp.org/) as our HTTP client. You can pass your custom-configured Guzzle client using:
 
 ```php
 <?php
@@ -56,8 +56,6 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 ## [Python](#tab/python)
 
-[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
-
 :::code language="python" source="./snippets/python/src/snippets/custom_clients.py" id="CustomMiddlewareSnippet":::
 
 ## Custom middleware
@@ -72,7 +70,7 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 ## Configuring the HTTP proxy for the client
 
-Some environments require client applications to use a HTTP proxy before they can access the public internet. This section shows how to configure the proxy for the Microsoft Graph SDKs.
+Some environments require client applications to use an HTTP proxy before accessing the public internet. This section shows how to configure the proxy for the Microsoft Graph SDKs.
 
 <!-- markdownlint-disable MD024 -->
 ## [C#](#tab/csharp)
@@ -111,8 +109,6 @@ $graphServiceClient = GraphServiceClient::createWithRequestAdapter($requestAdapt
 ```
 
 ## [Python](#tab/python)
-
-[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
 :::code language="python" source="./snippets/python/src/snippets/custom_clients.py" id="ProxySnippet":::
 
