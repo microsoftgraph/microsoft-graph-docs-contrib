@@ -51,7 +51,7 @@ You can specify the following properties when you create a **community**.
 |:---|:---|:---|
 | description | String | The description of the community. Maximum length is 1024 characters. |
 | displayName | String | The name of the community. Maximum length is 255 characters. |
-| privacy | [communityPrivacy](../resources/communityprivacy.md) | Defines the privacy level of a community. The possible values are: `public` or `private`. |
+| privacy | [communityPrivacy](../resources/communityprivacy.md) | Defines the privacy level of the community. The possible values are: `public` or `private`. |
 
 ## Response
 
