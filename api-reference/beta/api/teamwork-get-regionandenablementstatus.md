@@ -1,5 +1,5 @@
 ---
-title: "Get whether teams is enabled for the organization, along with organization region."
+title: "Get Microsoft Teams settings for the organization."
 description: "Get the teamwork settings of the organization."
 author: "mea"
 ms.localizationpriority: high
@@ -7,13 +7,13 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get region and enablement status of Microsoft teams for the organization
+# Get Microsoft Teams settings for the organization.
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get organization level region information along with Microsoft teams enablement status of [teamwork](../resources/teamwork.md) settings for the organization. This API specifies the teamwork properties for the organization.
+Get [teamwork](../resources/teamwork.md)  settings for the organization, which includes the organization's region and the organization's Microsoft Teams enablement status.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -45,7 +45,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code along with region and teams enablement status of an organization of [teamwork](../resources/teamwork.md) object in the response body.
+If successful, this method returns a `200 OK` response code along with a [teamwork](../resources/teamwork.md) object in the response body.
 
 ## Examples
 

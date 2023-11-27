@@ -1553,6 +1553,48 @@
       "CreatedDateTime": "2023-11-13T09:44:57.7760824Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "09e85d0c-2551-40e7-a037-1f36fade0b07",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/user-get-regionlocale?view=graph-rest-beta) operation to the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userTeamwork?view=graph-rest-beta) resource.",
+          "Target": "userTeamwork"
+        },
+        {
+          "Id": "09e85d0c-2551-40e7-a037-1f36fade0b03",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/teamwork-get-regionandenablementstatus?view=graph-rest-beta) operation to the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",
+          "Target": "teamwork"
+        },
+        {
+          "Id": "09e85d0c-2551-40e7-a037-1f36fade0b78",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/user-get-teamslicensingdetails?view=graph-rest-beta) operation to the [teamslicensingdetails](https://learn.microsoft.com/en-us/graph/api/resources/teamslicensingdetails?view=graph-rest-beta) resource.",
+          "Target": "teamslicensingdetails"
+        },
+        {
+          "Id": "5ed0e040-f9ba-4889-9ee0-8b90837f291g",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamslicensingdetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamslicensingdetails](https://learn.microsoft.com/en-us/graph/api/resources/teamslicensingdetails?view=graph-rest-beta) resource and supported methods.",
+          "Target": "teamslicensingdetails"
+        }
+      ],
+      "Id": "9f5e8734-31a1-4609-8c8c-590fe58e2852",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-11-27T18:15:55.2254479Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
     }
   ]
 }

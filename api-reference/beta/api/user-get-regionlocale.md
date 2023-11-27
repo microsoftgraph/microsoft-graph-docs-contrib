@@ -1,5 +1,5 @@
 ---
-title: "Get user's locale and region teamwork properties of a user"
+title: "Get the Microsoft Teams settings for user"
 description: "Get user's locale and region properties of user teamwork for a user."
 author: "mea"
 ms.localizationpriority: high
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get locale and region of a user
+# Get the Microsoft Teams settings for user
 
 Namespace: microsoft.graph
 
@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 | :------------------------------------- | :------------------------------------------------------------------------------------------------ |
 | Delegated (work or school account)     | UserTeamwork.Read                                                                                 |
 | Delegated (personal Microsoft account) | Not supported.                                                                                    |
-| Application                            |  UserTeamwork.Read.All                                                                            |
+| Application                            | UserTeamwork.Read.All                                                                            |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
