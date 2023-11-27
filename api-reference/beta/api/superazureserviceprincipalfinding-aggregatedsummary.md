@@ -2,6 +2,7 @@
 title: "superAzureServicePrincipalFinding: aggregatedSummary"
 description: View the count of super Azure service principals in your authorization systems.
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
