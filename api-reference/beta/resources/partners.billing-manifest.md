@@ -1,9 +1,9 @@
 ---
 title: "manifest resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Manifest of exported data"
+author: "abhishek-singh-ms"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "reports"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.partners.billing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides metadata for the exported data.
+Provides metadata for the exported data. Client should use the metadata to get details of file to download from Azure blob storage.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 

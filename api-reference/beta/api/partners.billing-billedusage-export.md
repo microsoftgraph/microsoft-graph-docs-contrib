@@ -54,7 +54,7 @@ The following table shows the parameters that can be used with this action.
 
 ## Response
 
-If successful, this method returns a `202 Accepted` response code and a [operation](../resources/partners.billing-operation.md) in the **Location** header.
+If successful, this method returns a `202 Accepted` response code and a [operation](../resources/partners.billing.operation.md) in the **Location** header.
 
 ## Examples
 

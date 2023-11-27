@@ -38,10 +38,10 @@ The following diagram depicts the steps needed to download reconciliation data.
 
 1. [Export billed usage data](../api/partners.billing-billedusage-export.md)
 2. [Export unbilled usage data](../api/partners.billing-unbilledusage-export.md)
-3. [Check status of export operation](../api/operation-get.md)
+3. [Check status of export operation](../api/partners.billing.operation-get.md)
 4. [Get export manifest to download files](../api/partners.billing-manifest-get.md)
 
-Client should check the status of [Export billed reconciliation data](../api/partners.billing-billedusage-export.md) or [Export unbilled reconciliation data](../api/partners.billing-unbilledusage-export.md) API by polling [Check status of export operation](../api/operation-get.md), 
+Client should check the status of [Export billed reconciliation data](../api/partners.billing-billedusage-export.md) or [Export unbilled reconciliation data](../api/partners.billing-unbilledusage-export.md) API by polling [Check status of export operation](../api/partners.billing.operation-get.md), 
 until it returns a terminal status of succeeded or failed. The manifest is a "resourceLocation" in the success status.
 
 ## Use cases for reconciliation APIs
@@ -53,7 +53,7 @@ This section describes the ways that Microsoft partners can use the billing APIs
 | Use cases | APIs |
 |--|--|
 | Create a new export operation to export billed reconciliation data | [Create billed export operation](../api/partners.billing-billedusage-export.md) |
-| Get if export operation is complete or not | [Get partnerbillingoperation](../api/operation-get.md) |
+| Get if export operation is complete or not | [Get partnerbillingoperation](../api/partners.billing.operation-get.md) |
 | Get manifest for details of exported files | [Get partnerbillingmanifest](../api/partners.billing-manifest-get.md)  |
 
 ### Unbilled reconciliation data
@@ -61,7 +61,7 @@ This section describes the ways that Microsoft partners can use the billing APIs
 | Use cases | APIs |
 |--|--|
 | Create a new export operation to export unbilled reconciliation data | [Create unbilled export operation](../api/partners.billing-unbilledusage-export.md) |
-| Get if export operation is complete or not | [Get partnerbillingoperation](../api/operation-get.md) |
+| Get if export operation is complete or not | [Get partnerbillingoperation](../api/partners.billing.operation-get.md) |
 | Get manifest for details of exported files | [Get partnerbillingmanifest](../api/partners.billing-manifest-get.md)  |
 
 

@@ -20,7 +20,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get operation](../api/operation-get.md)|[operation](../resources/partnerbillingoperation.md)|Read the properties and relationships of an [operation](../resources/partnerbillingoperation.md) object.|
+|[Get operation](../api/partners.billing.operation-get.md)|[operation](../resources/partners.billing.operation.md)|Read the properties and relationships of an [operation](../resources/partners.billing.operation.md) object.|
 
 ## Properties
 |Property|Type|Description|

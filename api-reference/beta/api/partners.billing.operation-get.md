@@ -45,7 +45,7 @@ Don't supply a request body for this method.
 ## Response
 
 If operation is completed successfully, this method returns a 200 OK response code and [exportSuccessOperation](../resources/partners.billing-exportsuccessoperation.md) object in the response body.
-`resourceLocation` in the JSON response represent the URI to get [manifest](partners.billing-manifest.md) resource for the operation.
+`resourceLocation` in the JSON response represent [manifest](../resources/partners.billing-manifest.md) resource for the operation.
 
 If operation failed, this method returns a 200 OK response code and [failedOperation](../resources/partners.billing-failedoperation.md) object in the response body.
 
