@@ -1841,6 +1841,14 @@
           "ApiChange": "Method",
           "ChangedApiName": "moveToContainer",
           "ChangeType": "Addition",
+          "Description": "<b>Summary:</b> Create a [plan](https://learn.microsoft.com/en-us/graph/api/resources/plannerplan?view=graph-rest-beta) in a user [container](https://learn.microsoft.com/en-us/graph/api/resources/plannerplancontainer?view=graph-rest-beta) to let individual users track their own tasks. This provides the flexibility for users to share or collaborate on their personal plans, or subsequently upgrade their personal plans into group-based plans by [moving](https://learn.microsoft.com/en-us/graph/api/plannerplan-movetocontainer?view=graph-rest-beta) the plan from the user container to a group container. <br><i>The rest of this section lists the related API updates.</i>",
+          "Target": "plannerPlan"
+        },
+        {
+          "Id": "6adca1d6-2cd3-4b37-8ffa-7985afbbbade",
+          "ApiChange": "Method",
+          "ChangedApiName": "moveToContainer",
+          "ChangeType": "Addition",
           "Description": "Added the [moveToContainer](https://learn.microsoft.com/en-us/graph/api/plannerplan-movetocontainer?view=graph-rest-beta) method to the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerplan?view=graph-rest-beta) resource.",
           "Target": "plannerPlan"
         }

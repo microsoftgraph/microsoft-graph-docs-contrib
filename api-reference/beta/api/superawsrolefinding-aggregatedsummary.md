@@ -2,6 +2,7 @@
 title: "superAwsRoleFinding: aggregatedSummary"
 description: View the count of super AWS roles in your authorization systems.
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
@@ -58,6 +59,7 @@ If successful, this function returns a `200 OK` response code and a [permissions
 
 ### Request
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "superawsrolefindingthis.aggregatedsummary"
@@ -66,6 +68,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.superAwsRoleFinding/aggregatedSummary(authorizationSystemIds=['377596131774'])
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/superawsrolefindingthisaggregatedsummary-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response

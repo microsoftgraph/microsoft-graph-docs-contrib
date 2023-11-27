@@ -6,15 +6,20 @@ on:
 
 permissions:
   pull-requests: write
+  contents: read
 
 jobs:
   check_pull_request:
     name: Check files for broken links
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v4
+      with:
+        sparse-checkout: |
+          changelog
     - name: Validate files
       id: validate
       with:
         repoToken: ${{ secrets.GITHUB_TOKEN }}
         changeLogDirectory: changelog
-      uses: microsoftgraph/changelog-link-check@v1.0.5
+      uses: microsoftgraph/changelog-link-check@v1.0.6

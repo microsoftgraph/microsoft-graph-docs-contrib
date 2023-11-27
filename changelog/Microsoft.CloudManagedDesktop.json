@@ -3316,6 +3316,24 @@
         {
             "ChangeList": [
                 {
+                    "Id": "f00b2e02-6946-43f0-a94e-8c290df45986",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "resourceAvailabilityCheckDeploymentQuotaLimitReached",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `resourceAvailabilityCheckDeploymentQuotaLimitReached` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                }
+            ],
+            "Id": "f00b2e02-6946-43f0-a94e-8c290df45986",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2023-11-21T07:25:58.9412735Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "b653c0f4-bbc5-4236-b6a3-e440ac4565ab",
                     "ApiChange": "Property",
                     "ChangedApiName": "enableMEMAutoEnroll",

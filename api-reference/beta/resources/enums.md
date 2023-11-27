@@ -11,6 +11,14 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### fileStorageContainerStatus values
+
+| Member             |
+|:-------------------|
+| inactive           |
+| active             |
+| unknownfuturevalue |
+
 ### userDefaultAuthenticationMethod values
 
 | Member             |
@@ -2824,6 +2832,7 @@ Possible values for user account types (group membership), per Windows definitio
 | microsoftSupport   |
 | serviceProvider    |
 | unknownFutureValue |
+| passthrough        |
 
 ### signinFrequencyType values
 
