@@ -3,42 +3,121 @@
     {
       "ChangeList": [
         {
-          "Id": "400279c6-8c1b-4a1d-92ff-c49987587f79",
-          "ApiChange": "Method",
-          "ChangedApiName": "delta",
+          "Id": "8988cba7-3b8c-4ec3-8f45-d7a0af670f53",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fileStorageContainer",
           "ChangeType": "Addition",
-          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/site-delta?view=graph-rest-beta) method to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
-          "Target": "site"
+          "Description": "Added the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource and its methods.",
+          "Target": "fileStorageContainer"
+        },
+        { "Id": "8988cba7-3b8c-4ec3-8f45-d7a0af670f53",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fileStorageContainerCustomPropertyDictionary",
+          "ChangeType": "Addition",
+          "Description": "Added the [fileStorageContainerCustomPropertyDictionary](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainercustompropertydictionary?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainerCustomPropertyDictionary"
+        },
+        {
+          "Id": "8988cba7-3b8c-4ec3-8f45-d7a0af670f53",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fileStorageContainerCustomPropertyValue",
+          "ChangeType": "Addition",
+          "Description": "Added the [fileStorageContainerCustomPropertyValue](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainercustompropertyvalue?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainerCustomPropertyValue"
+        },
+        {
+          "Id": "8988cba7-3b8c-4ec3-8f45-d7a0af670f53",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fileStorageContainerViewpoint",
+          "ChangeType": "Addition",
+          "Description": "Added the [fileStorageContainerViewpoint](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainerviewpoint?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainer"
+        },
+        {
+          "Id": "8988cba7-3b8c-4ec3-8f45-d7a0af670f53",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "permissions",
+          "ChangeType": "Addition",
+          "Description": "Added the **permissions** navigation property to [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainer"
+        },
+        {
+          "Id": "8988cba7-3b8c-4ec3-8f45-d7a0af670f53",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "drive",
+          "ChangeType": "Addition",
+          "Description": "Added the **drive** navigation property to [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainer"
         }
       ],
-      "Id": "400279c6-8c1b-4a1d-92ff-c49987587f79",
+      "Id": "a376b86e-b5eb-4d9e-8270-de3cc02af307",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2023-11-08T07:48:06.8842819Z",
-      "WorkloadArea": "Sites and lists",
+      "CreatedDateTime": "2023-11-22T16:58:36.3201367Z",
+      "WorkloadArea": "Files",
       "SubArea": ""
     },
     {
       "ChangeList": [
         {
-          "Id": "8fefbf46-97c3-43c7-96a9-56c1f4c24052",
-          "ApiChange": "Method",
-          "ChangedApiName": "delta",
+          "Id": "8988cba7-3b8c-4ec3-8f45-d7a0af670f53",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fileStorageContainer",
           "ChangeType": "Addition",
-          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/site-delta?view=graph-rest-1.0) method to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-1.0) resource.",
-          "Target": "site"
+          "Description": "Added the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource and its methods.",
+          "Target": "fileStorageContainer"
+        },
+        { 
+          "Id": "8988cba7-3b8c-4ec3-8f45-d7a0af670f53",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fileStorageContainerCustomPropertyDictionary",
+          "ChangeType": "Addition",
+          "Description": "Added the [fileStorageContainerCustomPropertyDictionary](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainercustompropertydictionary?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainerCustomPropertyDictionary"
+        },
+        {
+          "Id": "8988cba7-3b8c-4ec3-8f45-d7a0af670f53",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fileStorageContainerCustomPropertyValue",
+          "ChangeType": "Addition",
+          "Description": "Added the [fileStorageContainerCustomPropertyValue](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainercustompropertyvalue?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainerCustomPropertyValue"
+        },
+        {
+          "Id": "8988cba7-3b8c-4ec3-8f45-d7a0af670f53",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fileStorageContainerViewpoint",
+          "ChangeType": "Addition",
+          "Description": "Added the [fileStorageContainerViewpoint](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainerviewpoint?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainer"
+        },
+        {
+          "Id": "8988cba7-3b8c-4ec3-8f45-d7a0af670f53",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "permissions",
+          "ChangeType": "Addition",
+          "Description": "Added the **permissions** navigation property to [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainer"
+        },
+        {
+          "Id": "8988cba7-3b8c-4ec3-8f45-d7a0af670f53",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "drive",
+          "ChangeType": "Addition",
+          "Description": "Added the **drive** navigation property to [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainer"
         }
       ],
-      "Id": "8fefbf46-97c3-43c7-96a9-56c1f4c24052",
+      "Id": "a376b86e-b5eb-4d9e-8270-de3cc02af307",
       "Cloud": "Prod",
-      "Version": "v1.0",
-      "CreatedDateTime": "2023-11-08T07:48:06.8842819Z",
-      "WorkloadArea": "Sites and lists",
+      "Version": "beta",
+      "CreatedDateTime": "2023-10-16T16:58:36.3201367Z",
+      "WorkloadArea": "Files",
       "SubArea": ""
     },
     {
-      "ChangeList": [
-        {
+    "ChangeList": [
+       {
           "Id": "e5f82c50-922a-40d0-b4ca-c2f248ad4516",
           "ApiChange": "Resource",
           "ChangedApiName": "itemRetentionLabel",
@@ -86,7 +165,7 @@
           "Description": "Added the [removeRetentionLabel](https://learn.microsoft.com/en-us/graph/api/driveitem-removeretentionlabel?view=graph-rest-beta) method to the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) resource.",
           "Target": "driveItem"
         },
-       {
+        {
           "Id": "e5f82c50-922a-40d0-b4ca-c2f248ad4516",
           "ApiChange": "Method",
           "ChangedApiName": "setRetentionLabel",
@@ -3736,3 +3815,4 @@
     }
   ]
 }
+
