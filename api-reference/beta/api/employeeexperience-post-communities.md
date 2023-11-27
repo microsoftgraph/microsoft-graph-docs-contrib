@@ -90,8 +90,7 @@ The following example shows the response.
 >
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.community"
+  "truncated": true
 }
 -->
 ``` http
@@ -134,8 +133,7 @@ The following example shows the response.
 >
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.community"
+  "truncated": true
 }
 -->
 ``` http
