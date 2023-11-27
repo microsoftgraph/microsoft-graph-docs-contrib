@@ -55,7 +55,7 @@ You can specify the following properties when you create a **community**.
 
 ## Response
 
-If successful, this method returns a `202 Accepted` response code. The response also contains an `Operation-Location` header with a link to the [engagementAsyncOperation](../resources/engagementasyncoperation.md).
+If successful, this method returns a `202 Accepted` response code. The response also contains an `Operation-Location` header with a link to the [engagementAsyncOperation](../resources/engagementasyncoperation.md). You can poll the `Operation-Location` endpoint for status update on the creation operation.
 
 ## Examples
 
