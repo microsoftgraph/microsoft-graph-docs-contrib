@@ -46,7 +46,7 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -56,7 +56,8 @@ If successful, this method returns a `200 OK` response code and an [engagementAs
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "get_engagementasyncoperation"
@@ -66,10 +67,10 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/employeeExperience/engagementAsyncOperations/a6fdce1-c261-48bc-89de-1cfef658c0d5
 ```
 
-
 ### Response
 
-The following is an example of the response
+The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -83,7 +84,7 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.id":"https://graph.microsoft.com/beta/employeeExperience/engagementOperations('3a6fdce1-c261-48bc-89de-1cfef658c0d5')",
+    "@odata.id": "https://graph.microsoft.com/beta/employeeExperience/engagementOperations('3a6fdce1-c261-48bc-89de-1cfef658c0d5')",
     "id": "3a6fdce1-c261-48bc-89de-1cfef658c0d5",
     "createdDateTime": "2015-06-19T12-01-03.45Z",
     "lastActionDateTime": "2015-06-19T12-06-03.0024Z",
@@ -94,4 +95,3 @@ Content-Type: application/json
   }
 }
 ```
-
