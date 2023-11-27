@@ -13,9 +13,9 @@ Namespace: microsoft.graph.partners.billing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an export operation which failed to complete.
+Represents an export operation that failed to complete.
 
-Inherits from [microsoft.graph.partners.billing.operation](../resources/partners.billing-operation.md).
+Inherits from [microsoft.graph.partners.billing.operation](../resources/partners.billing.operation.md).
 
 ## Properties
 |Property|Type|Description|
@@ -32,7 +32,7 @@ Inherits from [microsoft.graph.partners.billing.operation](../resources/partners
 |error|[publicerror](../resources/publicerror.md)|Metadata for the exported files.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON is a representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

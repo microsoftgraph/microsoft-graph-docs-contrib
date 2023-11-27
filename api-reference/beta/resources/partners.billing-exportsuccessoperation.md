@@ -16,7 +16,7 @@ Namespace: microsoft.graph.partners.billing
 Represents an export operation that is completed successfully
 
 
-Inherits from [microsoft.graph.partners.billing.operation](../resources/partners.billing-operation.md).
+Inherits from [microsoft.graph.partners.billing.operation](../resources/partners.billing.operation.md).
 
 ## Properties
 |Property|Type|Description|
