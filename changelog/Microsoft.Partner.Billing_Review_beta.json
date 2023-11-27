@@ -1,0 +1,166 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "7c2c17ad-d53f-4573-bc55-3f5738450f30",
+          "ApiChange": "Resource",
+          "ChangedApiName": "partners",
+          "ChangeType": "Addition",
+          "Description": "Added the [partners](https://learn.microsoft.com/en-us/graph/api/resources/partners?view=graph-rest-beta) resource",
+          "Target": "partners"
+        },
+        {
+          "Id": "7c2c17ad-d53f-4573-bc55-3f5738450f30",
+          "ApiChange": "Resource",
+          "ChangedApiName": "billing",
+          "ChangeType": "Addition",
+          "Description": "Added the **billing** relationship to the [partners](https://learn.microsoft.com/en-us/graph/api/resources/partners?view=graph-rest-beta) resource.",
+          "Target": "partners"
+        },
+        {
+          "Id": "7c2c17ad-d53f-4573-bc55-3f5738450f30",
+          "ApiChange": "Resource",
+          "ChangedApiName": "partners",
+          "ChangeType": "Addition",
+          "Description": "Added the **partners** relationship to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "7c2c17ad-d53f-4573-bc55-3f5738450f30",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "attributeSet",
+          "ChangeType": "Addition",
+          "Description": "Added the **attributeSet** enumeration type.",
+          "Target": "attributeSet"
+        },
+        {
+          "Id": "7c2c17ad-d53f-4573-bc55-3f5738450f30",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "billingPeriod",
+          "ChangeType": "Addition",
+          "Description": "Added the **billingPeriod** enumeration type.",
+          "Target": "billingPeriod"
+        },
+        {
+          "Id": "7c2c17ad-d53f-4573-bc55-3f5738450f30",
+          "ApiChange": "Resource",
+          "ChangedApiName": "blob",
+          "ChangeType": "Addition",
+          "Description": "Added the [blob](https://learn.microsoft.com/en-us/graph/api/resources/partners.billing-blob?view=graph-rest-beta) resource type.",
+          "Target": "blob"
+        },
+        {
+          "Id": "7c2c17ad-d53f-4573-bc55-3f5738450f30",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureUsage",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureUsage](https://learn.microsoft.com/en-us/graph/api/resources/partners.billing-azureUsage?view=graph-rest-beta) resource",
+          "Target": "azureUsage"
+        },
+        {
+          "Id": "7c2c17ad-d53f-4573-bc55-3f5738450f30",
+          "ApiChange": "Resource",
+          "ChangedApiName": "billedUsage",
+          "ChangeType": "Addition",
+          "Description": "Added the [billedUsage](https://learn.microsoft.com/en-us/graph/api/resources/partners.billing-billedUsage?view=graph-rest-beta) resource",
+          "Target": "billedUsage"
+        },
+        {
+          "Id": "7c2c17ad-d53f-4573-bc55-3f5738450f30",
+          "ApiChange": "Resource",
+          "ChangedApiName": "billing",
+          "ChangeType": "Addition",
+          "Description": "Added the [billing](https://learn.microsoft.com/en-us/graph/api/resources/partners.billing-billing?view=graph-rest-beta) resource",
+          "Target": "billing"
+        },
+        {
+          "Id": "7c2c17ad-d53f-4573-bc55-3f5738450f30",
+          "ApiChange": "Resource",
+          "ChangedApiName": "exportSuccessOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [exportSuccessOperation](https://learn.microsoft.com/en-us/graph/api/resources/partners.billing-exportSuccessOperation?view=graph-rest-beta) resource",
+          "Target": "exportSuccessOperation"
+        },
+        {
+          "Id": "7c2c17ad-d53f-4573-bc55-3f5738450f30",
+          "ApiChange": "Resource",
+          "ChangedApiName": "resourceLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the **resourceLocation** relationship to the [exportSuccessOperation](https://learn.microsoft.com/en-us/graph/api/resources/partners.billing-exportSuccessOperation?view=graph-rest-beta) resource.",
+          "Target": "exportSuccessOperation"
+        },
+        {
+          "Id": "7c2c17ad-d53f-4573-bc55-3f5738450f30",
+          "ApiChange": "Resource",
+          "ChangedApiName": "failedOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [failedOperation](https://learn.microsoft.com/en-us/graph/api/resources/partners.billing-failedOperation?view=graph-rest-beta) resource",
+          "Target": "failedOperation"
+        },
+        {
+          "Id": "7c2c17ad-d53f-4573-bc55-3f5738450f30",
+          "ApiChange": "Resource",
+          "ChangedApiName": "manifest",
+          "ChangeType": "Addition",
+          "Description": "Added the [manifest](https://learn.microsoft.com/en-us/graph/api/resources/partners.billing-manifest?view=graph-rest-beta) resource",
+          "Target": "manifest"
+        },
+        {
+          "Id": "7c2c17ad-d53f-4573-bc55-3f5738450f30",
+          "ApiChange": "Resource",
+          "ChangedApiName": "operation",
+          "ChangeType": "Addition",
+          "Description": "Added the [operation](https://learn.microsoft.com/en-us/graph/api/resources/partners.billing-operation?view=graph-rest-beta) resource",
+          "Target": "operation"
+        },
+        {
+          "Id": "7c2c17ad-d53f-4573-bc55-3f5738450f30",
+          "ApiChange": "Resource",
+          "ChangedApiName": "runningOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [runningOperation](https://learn.microsoft.com/en-us/graph/api/resources/partners.billing-runningOperation?view=graph-rest-beta) resource",
+          "Target": "runningOperation"
+        },
+        {
+          "Id": "7c2c17ad-d53f-4573-bc55-3f5738450f30",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unbilledUsage",
+          "ChangeType": "Addition",
+          "Description": "Added the [unbilledUsage](https://learn.microsoft.com/en-us/graph/api/resources/partners.billing-unbilledUsage?view=graph-rest-beta) resource",
+          "Target": "unbilledUsage"
+        },
+        {
+          "Id": "7c2c17ad-d53f-4573-bc55-3f5738450f30",
+          "ApiChange": "Method",
+          "ChangedApiName": "export",
+          "ChangeType": "Addition",
+          "Description": "Added the [export](https://learn.microsoft.com/en-us/graph/api/partners.billing-export?view=graph-rest-beta) method to the [export](https://learn.microsoft.com/en-us/graph/api/partners.billing-export?view=graph-rest-beta) resource.",
+          "Target": "export"
+        },
+        {
+          "Id": "7c2c17ad-d53f-4573-bc55-3f5738450f30",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "invoiceId",
+          "ChangeType": "Addition",
+          "Description": "Added the `invoiceId` parameter to the [export](https://learn.microsoft.com/en-us/graph/api/partners.billing-export?view=graph-rest-beta) method.",
+          "Target": "export"
+        },
+        {
+          "Id": "7c2c17ad-d53f-4573-bc55-3f5738450f30",
+          "ApiChange": "Method",
+          "ChangedApiName": "export",
+          "ChangeType": "Addition",
+          "Description": "Added the [export](https://learn.microsoft.com/en-us/graph/api/partners.billing-export?view=graph-rest-beta) method to the [export](https://learn.microsoft.com/en-us/graph/api/partners.billing-export?view=graph-rest-beta) resource.",
+          "Target": "export"
+        }
+      ],
+      "Id": "7c2c17ad-d53f-4573-bc55-3f5738450f30",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2023-11-27T08:51:46.3920632Z",
+      "WorkloadArea": "Microsoft.Partner.Billing",
+      "SubArea": ""
+    }
+  ]
+}
