@@ -1,4 +1,4 @@
-﻿{
+{
   "changelog": [
     {
       "ChangeList": [
@@ -481,7 +481,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "fqdnFilteringRule",
           "ChangeType": "Addition",
-          "Description": "Added the [fqdnFilteringRule](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-fqdnFilteringRule?view=graph-rest-beta) resource",
+          "Description": "Added the **fqdnFilteringRule** resource",
           "Target": "fqdnFilteringRule"
         },
         {
@@ -489,7 +489,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "internetAccessForwardingRule",
           "ChangeType": "Addition",
-          "Description": "Added the [internetAccessForwardingRule](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-internetAccessForwardingRule?view=graph-rest-beta) resource",
+          "Description": "Added the **internetAccessForwardingRule** resource",
           "Target": "internetAccessForwardingRule"
         },
         {
@@ -497,7 +497,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "webCategoryFilteringRule",
           "ChangeType": "Addition",
-          "Description": "Added the [webCategoryFilteringRule](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-webCategoryFilteringRule?view=graph-rest-beta) resource",
+          "Description": "Added the **webCategoryFilteringRule** resource",
           "Target": "webCategoryFilteringRule"
         }
       ],
@@ -509,7 +509,7 @@
       "SubArea": "Network access"
     },
     {
-      "ChangeList": [    
+      "ChangeList": [
         {
           "Id": "2204d5d0-d3cf-4850-88b7-d430ab574476",
           "ApiChange": "Resource",
