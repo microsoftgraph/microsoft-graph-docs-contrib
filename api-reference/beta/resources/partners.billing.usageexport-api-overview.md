@@ -1,9 +1,9 @@
 ---
 title: "Partner Billing invoicing and reconciliation API overview"
 description: "Export APIs allow Microsoft partners to export of billed/unbilled reconciliation data to download the data in efficient and async fashion."
-author: "abhis"
+author: "abhishek-singh-ms"
 ms.localizationpriority: medium
-ms.prod: partner-billing
+ms.prod: "reports"
 doc_type: resourcePageType
 ms.custom: zt-include
 ---
