@@ -90,9 +90,7 @@ The following is an example of the response
 ``` http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
-Location: https://graph.microsoft.com/beta/reports/partners/billing/operations/
-9ab9cb54-d07f-4f52-9ea6-a09d7de52c14
-
+Location: https://graph.microsoft.com/beta/reports/partners/billing/operations/9ab9cb54-d07f-4f52-9ea6-a09d7de52c14
 
 ```
 
