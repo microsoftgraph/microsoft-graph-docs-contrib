@@ -9,7 +9,7 @@ doc_type: resourcePageType
 
 # socialIdentitySource resource type
 
-Namespace: microsoft.graph.identityGovernance
+Namespace: microsoft.graph
 
 The social identity source used as an identity source of a [connectedOrganization](connectedOrganization.md).
 
@@ -19,7 +19,7 @@ Inherits from [identitySource](../resources/identitysource.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The name of the socialIdentitySource.|
-|socialIdentitySourceType|[microsoft.graph.identityGovernance.socialIdentitySourceType](./socialidentitysource.md)|The possible values are: `facebook`, `unknownFutureValue`.|
+|socialIdentitySourceType|[microsoft.graph.socialIdentitySourceType](./socialidentitysource.md)|The possible values are: `facebook`, `unknownFutureValue`.|
 
 ## Relationships
 None.
@@ -28,12 +28,12 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.identityGovernance.socialIdentitySourceType"
+  "@odata.type": "microsoft.graph.socialIdentitySourceType"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.identityGovernance.socialIdentitySourceType",
+  "@odata.type": "#microsoft.graph.socialIdentitySourceType",
   "displayName": "String",
   "socialIdentitySourceType": "String"
 }

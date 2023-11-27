@@ -89,15 +89,6 @@ Namespace: microsoft.graph.identityGovernance
 |unknownFutureValue|
 
 
-### socialIdentitySourceType values 
-
-
-
-|Member|
-|:---|
-|facebook|
-|unknownFutureValue|
-
 
 <!--
 {
