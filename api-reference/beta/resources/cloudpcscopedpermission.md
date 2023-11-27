@@ -19,8 +19,8 @@ The scoped permission and related scope IDs.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|permission|String|The authenticated users allowed operations on scoped resources .|
-|scopeIds|Collection(String)|The scope IDs of corresponding permission. currently, this is Intune scope tag ID.|
+|permission|String|	The authenticated users allowed operations on scoped resources.|
+|scopeIds|Collection(String)|The scope IDs of corresponding permission. Currently, it is Intune scope tag ID.|
 
 ## Relationships
 
@@ -28,7 +28,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.cloudPcScopedPermission"
