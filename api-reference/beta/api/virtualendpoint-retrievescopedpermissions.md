@@ -51,13 +51,13 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this function returns a `200 OK` response code and a collection of [cloudPcScopedPermission](../resources/cloudpcscopedpermission.md) collection in the response body.
-This API supports filter with permission, when no filter, this function will return all effective scoped permissions and scope Tag IDs of the authenticated user.
+This API supports filter with permission, when no filter, this function returns all effective scoped permissions and scope Tag IDs of the authenticated user.
 
 ## Examples 1
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -71,7 +71,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/retrieveSc
 
 ### Response
 
-The following is an example of the response.
+The following example shows a response.
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -113,7 +113,7 @@ Content-Type: application/json
 
 ### Request
 
-The following is an example of the request with filter.
+The following example shows a request with filter.
 
 <!-- {
   "blockType": "request",
@@ -127,7 +127,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/retrieveSc
 
 ### Response
 
-The following is an example of the response.
+The following example shows a response.
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -161,8 +161,7 @@ Content-Type: application/json
 
 ### Request
 
-When the IT Admin is assigned Microsoft Entra Global admin, Windows 365 admin or Intune admin via Microsoft Entra ID, it doesn't support scope tag, IT Admin will have full access to all Windows 365 resources, the permission is "*". And scopeIds is empty, indicates the user is unscoped admin.
-In such case, query is not supported.
+When the IT Admin is assigned Microsoft Entra Global admin, Windows 365 admin or Intune admin via Microsoft Entra ID, it doesn't support scope tag, IT Admin has full access to all Windows 365 resources, the permission is "*". And scopeIds is empty, indicates the user is unscoped admin. In such case, query is not supported.
 
 <!-- {
   "blockType": "request",
@@ -176,7 +175,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/retrieveSc
 
 ### Response
 
-The following is an example of the response.
+The following example shows a response.
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
