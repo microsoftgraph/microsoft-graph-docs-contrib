@@ -14573,7 +14573,7 @@ items:
                       href: api/gcpauthorizationsystem-list-services.md
                     - name: Get
                       href: api/authorizationsystemtypeservice-get.md
-            - name: Permissions on demand
+            - name: Permissions requests
               items:
               - name: Scheduled permissions request
                 href: resources/scheduledpermissionsrequest.md
