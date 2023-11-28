@@ -47,7 +47,7 @@ If you don't have an existing Data Connect application, use the following steps 
 1. Follow the [getting started](/graph/data-connect-quickstart?tabs=NewConsentFlow%2CPAMMicrosoft365%2CAzureSynapsePipeline) guide and use [the simplified onboarding experience](./onboarding-experience-overview.md) to build your Data Connect application.
 
 2. Fill out the application details on the **Registration Info** page.
-    1. Under **Publish Type** select **Single Tenant** if you intend to enable encryption as on. 
+    1. Under **Publish Type**, select **Single Tenant**. 
     2. Choose **Enable encryption for datasets**.
     3. For **Key Vault**, from the drop-down menu, select the AKV URI (name of the AKV).
     4. If your AKV doesn't exist, open a new tab and follow the steps in [Setting up your Azure Key Vault](./data-connect-custom-encryption.md#using-azure-key-vault-for-custom-encryption). 
@@ -58,7 +58,7 @@ If you don't have an existing Data Connect application, use the following steps 
 
     ![Screenshot of the the Azure portal with Azure Key Vault and encryption boxed in](images/app-registration-encryption.png) 
 
-3. Fill out the rest of the required application details and submit the application for your Micorosoft 365 admin to review. 
+3. Fill out the rest of the required application details and submit the application for your Microsoft 365 admin to review. 
     
     > [!NOTE]
     > Make a note of your existing service principal; you will need this later.
@@ -115,7 +115,7 @@ There are a few encoding details to be aware of during the decryption process. T
 
 Also, the output of the Azure Key Vault Decrypt REST API is Base64 URL encoded. You'll need to decode the value from Base64 URL to bytes, and then encode the result to Base64.
 
-Be sure to take these encoding differences into account when you decrypt the data. If encoded data is incorrectly decrypted, you might get an error like this: Invalid AES key length: 88 bytes.
+Be sure to take these encoding differences into account when you decrypt the data. If encoded data is incorrectly decrypted, you might get an error like the following: `Invalid AES key length: 88 bytes`.
 
 ## Dataset eligiblity for encryption
 
@@ -146,7 +146,7 @@ Admins use the following process to approve Data Connect apps:
 3.	Select the application that is ready for review. In the **Overview** section of the application details, ensure that encryption is enabled. 
     ![Screenshot of a Data Connect app with Overview and Dataset Encryption highlighted](images/admin-encryption-enabled.png)
 
-4.	On the **Review** section of the application details, ensure encryption is selected and review the datasets. 
+4.	On the **Review** section of the application details, ensure that encryption is selected and review the datasets. 
     > [!NOTE]
     > If encryption is enabled during app registration, it will apply to all the eligible datasets in the app.
 
