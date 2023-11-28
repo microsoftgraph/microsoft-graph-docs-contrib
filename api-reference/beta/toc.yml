@@ -18655,7 +18655,7 @@ items:
                   - name: Get messages across all chats
                     href: api/chats-getallmessages.md
                   - name: Get retained messages across all chats
-                    href: api/chats-getallretainedmessages.md
+                    href: api/chat-getallretainedmessages.md
                   - name: Send message in chat
                     href: api/chat-post-messages.md
                   - name: Get chat between user and app
