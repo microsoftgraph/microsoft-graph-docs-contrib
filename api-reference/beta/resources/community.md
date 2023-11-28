@@ -39,7 +39,15 @@ Inherits from [entity](../resources/entity.md).
 | displayName | String | The name of the community. The maximum length is 255 characters. |
 | groupId | String | The ID of the [Microsoft 365 group](../resources/group.md) that manages the membership of this community. |
 | id | String | The unique identifier of the community. Read only. Inherited from [entity](../resources/entity.md). |
-| privacy | [communityPrivacy](../resources/communityprivacy.md) | Defines the privacy level of the community. The possible values are: `public`, `private`, `unknownFutureValue`. |
+| privacy | [communityPrivacy](../resources/community.md#communityprivacy-values) | Defines the privacy level of the community. The possible values are: `public`, `private`, `unknownFutureValue`. |
+
+### communityPrivacy values
+
+| Member | Description |
+|:---------------|:----------|
+| public | Any user from the tenant can join and participate in the community. |
+| private | Tenant users must be added to the community by a community administrator before they can participate. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
 
