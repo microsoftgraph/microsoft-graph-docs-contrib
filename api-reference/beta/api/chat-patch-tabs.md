@@ -18,6 +18,9 @@ This can be used to configure the content of the tab.
 
 > **Note**: If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the tab pinned in the meeting will be updated.
 
+> [!NOTE] 
+> Updating static tabs is not allowed.
+
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
