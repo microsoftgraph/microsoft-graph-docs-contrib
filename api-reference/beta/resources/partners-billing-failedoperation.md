@@ -29,7 +29,7 @@ Inherits from [microsoft.graph.partners.billing.operation](../resources/partners
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|error|[publicerror](../resources/publicerror.md)|Metadata for the exported files.|
+|error|[publicError](../resources/publicError.md)|Metadata for the exported files.|
 
 ## JSON representation
 The following JSON is a representation of the resource.
@@ -49,7 +49,7 @@ The following JSON is a representation of the resource.
   "lastActionDateTime": "String (timestamp)",
   "status": "String",
   "error": {
-    "@odata.type": "#microsoft.graph.publicError"
+    "@odata.type": "microsoft.graph.publicError"
   }
 }
 ```
