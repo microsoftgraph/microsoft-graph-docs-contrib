@@ -24,9 +24,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|OrgSettings-Microsoft365Install.Read.All, OrgSettings-Microsoft365Install.ReadWrite.All|
 
 When calling on behalf of a user, the user needs to belong to one of the following directory roles. To learn more about directory roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference):
-+ Global Administrator
-+ Global Reader
-+ Office Apps Administrator
++ Global administrator
++ Global reader
++ Office apps administrator
 
 ## HTTP request
 
@@ -47,7 +47,7 @@ This method supports the `$select` [OData query parameter](/graph/query-paramete
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.adm
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_m365AppsInstallationOptions"
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/admin/microsoft365Apps/installationOptions
 
 
 ### Response
-The following is an example of the response
+The following example shows a response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
