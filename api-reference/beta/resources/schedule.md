@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md) objects, [timeOffReason](timeoffreason.md) objects, and [timeOff](timeoff.md) objects within a [team](../resources/team.md). 
+A collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md) objects, [timeOffReason](timeoffreason.md) objects, and [timeOff](timeoff.md) objects within a [team](../resources/team.md).
 
 ## Methods
 
@@ -25,23 +25,25 @@ A collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md)
 
 ## Properties
 
-| Property                  | Type            | Description                                                                                                      |
-| ------------------------- | --------------- | ---------------------------------------------------------------------------------------------------------------- |
-| activitiesIncludedWhenCopyingShiftsEnabled | Boolean | Indicates whether copied shifts should include the activities.                                          |
-| enabled                   | Boolean         | Indicates whether the schedule is enabled for the team. Required.                                                |
-| id                        | string          | ID of the schedule.                                                                                              |
-| offerShiftRequestsEnabled | Boolean         | Indicates whether offer shift requests are enabled for the schedule.                                             |
-| openShiftsEnabled         | Boolean         | Indicates whether open shifts are enabled for the schedule.                                                      |
-| provisionStatus           | operationStatus | The status of the schedule provisioning. The possible values are `notStarted`, `running`, `completed`, `failed`. |
-| provisionStatusCode       | string          | Additional information about why schedule provisioning failed.                                                   |
-| startDayOfWeek            | string          | Indicates the start day of the week.                                                                             |
-| swapShiftsRequestsEnabled | Boolean         | Indicates whether swap shifts requests are enabled for the schedule.                                             |
-| timeClockEnabled          | Boolean         | Indicates whether time clock is enabled for the schedule.                                                        |
-| timeOffRequestsEnabled    | Boolean         | Indicates whether time off requests are enabled for the schedule.                                                |
-| timeZone                  | string          | Indicates the time zone of the schedule team using tz database format. Required.                                 |
-
+| Property                  | Type               | Description                                                                                                      |
+| ------------------------- | ------------------ | ---------------------------------------------------------------------------------------------------------------- |
+| activitiesIncludedWhenCopyingShiftsEnabled | Boolean | Indicates whether copied shifts should include the activities.                                             |
+| enabled                   | Boolean            | Indicates whether the schedule is enabled for the team. Required.                                                |
+| id                        | string             | ID of the schedule.                                                                                              |
+| offerShiftRequestsEnabled | Boolean            | Indicates whether offer shift requests are enabled for the schedule.                                             |
+| openShiftsEnabled         | Boolean            | Indicates whether open shifts are enabled for the schedule.                                                      |
+| provisionStatus           | operationStatus    | The status of the schedule provisioning. The possible values are `notStarted`, `running`, `completed`, `failed`. |
+| provisionStatusCode       | string             | Additional information about why schedule provisioning failed.                                                   |
+| startDayOfWeek            | string             | Indicates the start day of the week.                                                                             |
+| swapShiftsRequestsEnabled | Boolean            | Indicates whether swap shifts requests are enabled for the schedule.                                             |
+| timeClockEnabled          | Boolean            | Indicates whether time clock is enabled for the schedule.                                                        |
+| timeClockSettings         | timeClockSettings  | The time clock location settings for this schedule.                                                              |
+| timeOffRequestsEnabled    | Boolean            | Indicates whether time off requests are enabled for the schedule.                                                |
+| timeZone                  | string             | Indicates the time zone of the schedule team using tz database format. Required.                                 |
+| workforceIntegrationIds   | Collection(string) | The Ids for the workforce integrations associated with this schedule.                                            |
 
 ## Relationships
+
 |Name                   |Type           |Description                                                                                                                                      |
 |-----------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | offerShiftRequests   |[offerShiftRequest](offershiftrequest.md) collection  | The offer requests for shifts in the schedule. |
@@ -55,7 +57,6 @@ A collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md)
 | timeOffReasons   |[timeOffReason](timeoffreason.md) collection  | The set of reasons for a time off in the schedule. |
 | timeOffRequests   |[timeOffRequest](timeoffrequest.md) collection  | The time off requests in the schedule. |
 | workforceIntegrations   |[workforceIntegration](workforceintegration.md) collection  | An instance of a workforce integration per team with outbound data flow on synchronous change notifications (for supported entities). |
-
 
 ## JSON representation
 

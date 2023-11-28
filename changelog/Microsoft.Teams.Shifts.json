@@ -323,44 +323,44 @@
     {
       "ChangeList": [
         {
-          "Id": "11aa9e13-8d42-493d-80a3-7c779fafb96b",
+          "Id": "be1af9e5-af8c-4e0a-bb46-44f2b24e1cb2",
           "ApiChange": "Property",
-          "ChangedApiName": "schedulingGroup",
+          "ChangedApiName": "activitiesIncludedWhenCopyingShiftsEnabled",
           "ChangeType": "Addition",
-          "Description": "Added code property to scheduling group APIs.",
+          "Description": "Added the `activitiesIncludedWhenCopyingShiftsEnabled` property to the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-beta) resource.",
+          "Target": "schedule"
+        },
+        {
+          "Id": "be1af9e5-af8c-4e0a-bb46-44f2b24e1cb2",
+          "ApiChange": "Property",
+          "ChangedApiName": "startDayOfWeek",
+          "ChangeType": "Addition",
+          "Description": "Added the `startDayOfWeek` property to the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-beta) resource.",
+          "Target": "schedule"
+        },
+        {
+          "Id": "be1af9e5-af8c-4e0a-bb46-44f2b24e1cb2",
+          "ApiChange": "Property",
+          "ChangedApiName": "code",
+          "ChangeType": "Addition",
+          "Description": "Added the `code` property to the [schedulingGroup](https://learn.microsoft.com/en-us/graph/api/resources/schedulingGroup?view=graph-rest-beta) resource.",
           "Target": "schedulingGroup"
         },
         {
-          "Id": "11aa9e13-8d42-493d-80a3-7c779fafb96b",
+          "Id": "be1af9e5-af8c-4e0a-bb46-44f2b24e1cb2",
           "ApiChange": "Property",
-          "ChangedApiName": "timeOffReason",
+          "ChangedApiName": "code",
           "ChangeType": "Addition",
-          "Description": "Added code property to Time Off Reason APIs.",
+          "Description": "Added the `code` property to the [timeOffReason](https://learn.microsoft.com/en-us/graph/api/resources/timeOffReason?view=graph-rest-beta) resource.",
           "Target": "timeOffReason"
-        },
-        {
-          "Id": "11aa9e13-8d42-493d-80a3-7c779fafb96b",
-          "ApiChange": "Property",
-          "ChangedApiName": "schedule",
-          "ChangeType": "Addition",
-          "Description": "Added start day of week property to schedule APIs.",
-          "Target": "schedule"
-        },
-        {
-          "Id": "11aa9e13-8d42-493d-80a3-7c779fafb96b",
-          "ApiChange": "Property",
-          "ChangedApiName": "schedule",
-          "ChangeType": "Addition",
-          "Description": "Added activitiesIncludedWhenCopyingShiftsEnabled property to schedule APIs.",
-          "Target": "schedule"
         }
       ],
-      "Id": "11aa9e13-8d42-493d-80a3-7c779fafb96b",
-      "Cloud": "prd",
+      "Id": "be1af9e5-af8c-4e0a-bb46-44f2b24e1cb2",
+      "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2023-11-15T01:15:33.264Z",
-      "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Shift management"
+      "CreatedDateTime": "2023-11-16T15:45:17.4079567Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
     }
   ]
 }
