@@ -1,5 +1,5 @@
 ---
-title: "virtualAppointment: sendvirtualappointmentsmsreminder"
+title: "virtualAppointment: sendVirtualAppointmentReminderSms"
 description: "Send an SMS reminder to external attendees for a Teams Virtual Appointment."
 author: "benmicrosoft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# virtualAppointment: sendSMS
+# virtualAppointment: sendVirtualAppointmentReminderSms
 
 Namespace: microsoft.graph
 
