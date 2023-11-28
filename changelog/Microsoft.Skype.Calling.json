@@ -3200,7 +3200,7 @@
           "ChangeType": "Addition",
           "Description": "Added the [sendVirtualAppointmentSms](https://learn.microsoft.com/en-us/graph/api/virtualappointment-sendvirtualappointmentsms) action.",
           "Target": "virtualAppointment"
-        }
+        },
         {
           "Id": "64a6db56-a5d1-45ea-9341-06f51e1aec67",
           "ApiChange": "Method",
