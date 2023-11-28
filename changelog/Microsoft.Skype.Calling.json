@@ -3198,7 +3198,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "sendVirtualAppointmentSms",
           "ChangeType": "Addition",
-          "Description": "Added the [sendVirtaulAppointmentSms](https://learn.microsoft.com/en-us/graph/api/virtualappointment-sendVirtualAppointmentSms) action.",
+          "Description": "Added the [sendVirtualAppointmentSms](https://learn.microsoft.com/en-us/graph/api/virtualappointment-sendvirtualappointmentsms) action.",
           "Target": "virtualAppointment"
         }
         {
@@ -3206,7 +3206,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "sendVirtualAppointmentSmsReminder",
           "ChangeType": "Addition",
-          "Description": "Added the [sendVirtaulAppointmentSmsReminder](https://learn.microsoft.com/en-us/graph/api/virtualappointment-sendVirtualAppointmentSmsReminder) action.",
+          "Description": "Added the [sendVirtualAppointmentSmsReminder](https://learn.microsoft.com/en-us/graph/api/virtualappointment-sendvirtualappointmentsmsreminder) action.",
           "Target": "virtualAppointment"
         }
       ],
