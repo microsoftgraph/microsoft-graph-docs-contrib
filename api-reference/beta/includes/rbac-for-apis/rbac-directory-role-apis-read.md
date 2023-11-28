@@ -12,8 +12,6 @@ For delegated scenarios, the calling user must be a member user or have at least
 - Billing Administrator
 - User
 - Mailbox Administrator
-- Partner Tier1 Support
-- Partner Tier2 Support
 - Directory Readers
 - Directory Writers
 - Application Administrator
