@@ -26,7 +26,6 @@ For delegated scenarios, the calling user needs one of the following [Microsoft 
 - Directory Writers
 - License Administrator
 - User Administrator
-- Partner Tier2 Support
 - Global Administrator
 
 ## HTTP request

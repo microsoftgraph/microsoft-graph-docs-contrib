@@ -109,7 +109,7 @@ ConsistencyLevel: eventual
 
 ---
 
-## Microsoft Graph objects that support advanced query capabilities
+## Microsoft Entra ID (directory) objects that support advanced query capabilities
 
 These advanced query capabilities are supported only on directory objects and their relationships, including the following frequently used objects:
 
