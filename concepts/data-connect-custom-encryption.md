@@ -6,7 +6,7 @@ ms.localizationpriority: high
 ms.prod: "data-connect"
 ---
 
-# Encryption with Microsoft Graph Data Connect
+# Use encryption with Microsoft Graph Data Connect
 
 Microsoft Graph Data Connect (Data Connect) offers encryption capabilities through encryption-at-rest and encryption-in-transit. With [Azure Key Vault (AKV)](/azure/key-vault/general/basic-concepts), customers can generate and store their public and private keys in AKV and refresh them when needed. Custom encrypted datasets are also available. This article guides you through the process to set up custom encryption for a secure data delivery with Data Connect. 
 
@@ -14,7 +14,7 @@ Microsoft Graph Data Connect (Data Connect) offers encryption capabilities throu
 
 - **Encryption for data-in-transit**: Data Connect offers encryption for data-in-transit through custom encryption with customer owned keys capability. It also ensures that all data requests between a customer’s Microsoft 365 and Azure resources are secure by using service standards that are [SOC approved](/compliance/regulatory/offering-soc-2), such as HTTPS.
 
-## Enabling custom encryption with customer owned keys in Microsoft Graph Data Connect
+## Enable custom encryption with customer-owned keys
 
 Customers can use custom encryption for secure dataset delivery. Link your Azure Key Vault (AKV) during application registration to enable encryption. Data Connect encrypts datasets using authorized public keys and delivers them encrypted with a decryption key.
 
