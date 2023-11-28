@@ -80,7 +80,7 @@ To export reconciliation data, the calling principal must be in the partner tena
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /resources/partners.billing.usageexport-api-overview.md:
+    "Error: /resources/partners-billing-usageexport-api-overview.md:
       Exception processing links.
       Link Definition was null. Link text: !INCLUDE zero-trust (Parameter 'Definition')"
   ]
