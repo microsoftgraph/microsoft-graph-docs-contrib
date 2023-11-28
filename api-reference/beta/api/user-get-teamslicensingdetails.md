@@ -83,5 +83,5 @@ Content-type: application/json
 
 ## See also
 
-- [Get user's region and locale](userteamwork-get-teamssettingsforuser.md)
-- [Get organization region and enablement status](teamwork-get-settingsfororganization.md)
+- [Get user's settings for Microsoft Teams](userteamwork-get-teamssettingsforuser.md)
+- [Get Microsoft Teams Settings for organization](teamwork-get-settingsfororganization.md)

@@ -86,4 +86,4 @@ Content-type: application/json
 ## See also
 
 - [Get user's licensing details](user-get-teamslicensingdetails.md)
-- [Get user's region and locale](userteamwork-get-teamssettingsforuser.md)
+- [Get user's settings for Microsoft Teams](userteamwork-get-teamssettingsforuser.md)
