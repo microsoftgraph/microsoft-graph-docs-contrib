@@ -4,10 +4,18 @@ description: "Attributes that should be exported"
 author: "abhishek-singh-ms"
 ms.localizationpriority: medium
 ms.prod: "reports"
-doc_type: enumTypes
+doc_type: enumPageTypes
 ---
 
-### attributeSet values 
+# attributeSet enum type
+
+Namespace: microsoft.graph.partners.billing
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Possible values for attributeSet type.
+
+## Members
 
 |Member|
 |:---|
