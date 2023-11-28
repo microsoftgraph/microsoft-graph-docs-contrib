@@ -1,17 +1,19 @@
 ---
-title: "attributeSet resource type"
-description: "Attributes in the exported data"
+title: "attributeSet enum type"
+description: "Attributes that should be exported"
 author: "abhishek-singh-ms"
 ms.localizationpriority: medium
 ms.prod: "reports"
-doc_type: resourcePageType
+doc_type: enumTypes
 ---
 
-# attributeSet resource type
+### attributeSet values 
 
-Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+|Member|
+|:---|
+|full|
+|basic|
+|unknownFutureValue|
 
 The billed or unbilled usage API response with the "full" or "basic" request parameter returns the following attributes:
 
