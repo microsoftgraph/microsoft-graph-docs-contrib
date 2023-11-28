@@ -54,7 +54,7 @@ The following table shows the parameters that can be used with this action.
 
 ## Response
 
-If successful, this method returns a `202 Accepted` response code and a [operation](../resources/partners-billing-operation.md) in the **Location** header.
+If successful, this method returns a `202 Accepted` response code and a **Location** header containing the URL to long running operation.
 
 ## Examples
 
@@ -81,11 +81,10 @@ Content-Type: application/json
 The following is an example of the response
 <!-- {
   "blockType": "response",
-  "truncated": true,  
+  "truncated": true
 }
 -->
 ``` http
 HTTP/1.1 202 OK
 Location: https://graph.microsoft.com/beta/reports/partners/billing/operations/9ab9cb54-d07f-4f52-9ea6-a09d7de52c14
-
 ```
