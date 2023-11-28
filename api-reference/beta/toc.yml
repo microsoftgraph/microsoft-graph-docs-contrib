@@ -14576,7 +14576,7 @@ items:
                       href: api/gcpauthorizationsystem-list-services.md
                     - name: Get
                       href: api/authorizationsystemtypeservice-get.md
-            - name: Permissions on demand
+            - name: Permissions requests
               items:
               - name: Scheduled permissions request
                 href: resources/scheduledpermissionsrequest.md
@@ -16165,6 +16165,66 @@ items:
                           href: api/reportroot-list-applicationsignindetailedsummary.md
                         - name: Get
                           href: api/applicationsignindetailedsummary-get.md
+                - name: Application user activity (preview)
+                  items:
+                  - name: Daily user insight
+                    href: resources/dailyuserinsightmetricsroot.md
+                  - name: Monthly user insight
+                    href: resources/monthlyuserinsightmetricsroot.md
+                  - name: Active users breakdown
+                    href: resources/activeusersbreakdownmetric.md
+                    items:
+                    - name: List daily
+                      href: api/dailyuserinsightmetricsroot-list-activeusersbreakdown.md
+                    - name: List monthly
+                      href: api/monthlyuserinsightmetricsroot-list-activeusersbreakdown.md
+                  - name: Active users
+                    href: resources/activeusersmetric.md
+                    items:
+                    - name: List daily
+                      href: api/dailyuserinsightmetricsroot-list-activeusers.md
+                    - name: List monthly
+                      href: api/monthlyuserinsightmetricsroot-list-activeusers.md
+                  - name: Authentications
+                    href: resources/authenticationsmetric.md
+                    items:
+                    - name: List daily
+                      href: api/dailyuserinsightmetricsroot-list-authentications.md
+                    - name: List monthly
+                      href: api/monthlyuserinsightmetricsroot-list-authentications.md
+                  - name: Insights summary
+                    href: resources/insightsummary.md
+                    items:
+                    - name: List daily
+                      href: api/dailyuserinsightmetricsroot-list-summary.md
+                    - name: List monthly
+                      href: api/monthlyuserinsightmetricsroot-list-summary.md
+                  - name: MFA completion
+                    href: resources/mfacompletionmetric.md
+                    items:
+                    - name: List daily
+                      href: api/dailyuserinsightmetricsroot-list-mfacompletions.md
+                    - name: List monthly
+                      href: api/monthlyuserinsightmetricsroot-list-mfacompletions.md
+                  - name: User count
+                    href: resources/usercountmetric.md
+                    items:
+                    - name: List daily
+                      href: api/dailyuserinsightmetricsroot-list-usercount.md
+                  - name: User requests
+                    href: resources/userrequestsmetric.md
+                    items:
+                    - name: List daily
+                      href: api/dailyuserinsightmetricsroot-list-requests.md
+                    - name: List monthly
+                      href: api/monthlyuserinsightmetricsroot-list-requests.md
+                  - name: User signup
+                    href: resources/usersignupmetric.md
+                    items:
+                    - name: List daily
+                      href: api/dailyuserinsightmetricsroot-list-signups.md
+                    - name: List monthly
+                      href: api/monthlyuserinsightmetricsroot-list-signups.md
                 - name: Microsoft Entra SLA attainment
                   items:
                     - name: Microsoft Entra authentication
