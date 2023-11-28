@@ -24,7 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "bitlocker_list_recoverykeys" } -->
 [!INCLUDE [permissions-table](../includes/permissions/bitlocker-list-recoverykeys-permissions.md)]
 
-For delegated permissions, the calling user must be the registered owner of the device that the BitLocker recovery key was originally backed up from, or they must be in one of the following [directory roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json):
+For delegated permissions, the calling user must be the registered owner of the device that the BitLocker recovery key was originally backed up from, or they must be in one of the following [directory roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
 * Global administrator
 * Cloud device administrator
