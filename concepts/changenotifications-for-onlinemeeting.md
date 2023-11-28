@@ -9,7 +9,7 @@ ms.custom: scenarios:getting-started
 
 # Get change notifications for Microsoft Teams meeting call event updates
 
-Change notifications in Microsoft Graph enable you to subscribe to call started/ended and call roster updates for Microsoft Teams online meetings. Change notifications provide a low-latency model by allowing you to maintain a subscription. You can also get the resource data in the notifications and therefore avoid calling the API to get the payload. 
+Change notifications in Microsoft Graph enable you to subscribe to call started, call ended, and roster updated for Microsoft Teams online meetings. Change notifications provide a low-latency model by allowing you to maintain a subscription. You can also get the resource data in the notifications and therefore avoid calling the API to get the payload. 
 
 A subscription has a max expiry period of 3 days. To persist the subscription for more than this period, a subscription renewal request must be made. For details, see [Update subscription](/graph/api/subscription-update). Alternatively, a user can wait for the subscription to expire and create a new subscription with the same meeting resource.
 
@@ -25,14 +25,14 @@ This resource supports notifications with resource data. For more information ab
 
 ## Subscribe to online meeting call events.
 
-To get change notifications for a meeting's call events, subscribe to **/communications/onlineMeetings(joinWebUrl='{joinWebUrl}')/meetingCallEvents** where the `joinWebUrl` is the HTTP encoded value of the meeting join url the teams client provides.
+To get change notifications for a meeting's call events, subscribe to **/communications/onlineMeetings(joinWebUrl='{joinWebUrl}')/meetingCallEvents** where the `joinWebUrl` is the HTTP encoded value of the meeting join url.
 
 As an example, the `joinWebUrl` in 1 must be acquired for an online meeting. To park a subscription, the argument must be HTTP encoded to 2 and used as the `joinWebUrl` in the resource property.
 1. `https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZmYwZTEyYjctZjA5MS00OTkzLWJhNzEtYzFiZDVjNGE0OGFj%40thread.v2/0?context=%7b%22Tid%22%3a%22909c6581-5130-43e9-88f3-fcb3582cde37%22%2c%22Oid%22%3a%22048c94fb-dda6-48b8-9fc8-6740ee418fb9%22%7d`
 2. `https%3A%2F%2Fteams.microsoft.com%2Fl%2Fmeetup-join%2F19%253ameeting_ZmYwZTEyYjctZjA5MS00OTkzLWJhNzEtYzFiZDVjNGE0OGFj%2540thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522909c6581-5130-43e9-88f3-fcb3582cde37%2522%252c%2522Oid%2522%253a%2522048c94fb-dda6-48b8-9fc8-6740ee418fb9%2522%257d`
 
 > [!NOTE]
-> Replace `{JoinWebUrl}` with the actual value when specifying the resource. The JoinWebURL for the meeting is included in the **joinWebUrl** property of the [onlineMeeting](/graph/api/resources/onlineMeeting) resource, or in the Teams client for a meeting.
+> Replace `{JoinWebUrl}` with the actual http encoded value when specifying the resource. The JoinWebURL for the meeting is included in the **joinWebUrl** property of the [onlineMeeting](/graph/api/resources/onlineMeeting) resource, or in the Teams client for a meeting.
 
 ### Subscription payload sample
 
@@ -122,7 +122,7 @@ The following are the supported meeting events:
   "@odata.id": "communications/onlineMeetings(joinWebUrl='{joinWebUrl}')/meetingCallEvents",
   "id": "{notificationId}",
   "eventType": "rosterUpdated",
-  "eventDateTime": "2021-09-14T00:18:45.7911074Z",
+  "eventDateTime": "2022-02-28T00:00:00.0000000Z",
   "participants@delta": [
     {
       "info": {
@@ -147,30 +147,13 @@ The following are the supported meeting events:
           "user": {
             "@odata.type": "#microsoft.graph.communicationsUserIdentity",
             "id": "e8bbbe0e-6e3d-42db-9082-213abbe8ee5c",
-            "displayName": "User that is joining the lobby of the call",
+            "displayName": "User has made a change in the lobby of the call",
             "tenantId": "f69f5191-20ae-4093-8dae-3ec09edeb253"
           }
         }
       },
       "isInLobby": true,
       "id": "a7cc3ddb-a469-410d-8057-44dba3b0c073"
-    },
-    {
-      "@odata.type": "#microsoft.graph.particpant",
-      "info": {
-        "@odata.type": "#microsoft.graph.participantInfo",
-        "identity": {
-          "@odata.type": "#microsoft.graph.communicationsIdentitySet",
-          "user": {
-            "@odata.type": "#microsoft.graph.communicationsUserIdentity",
-            "id": "69e8619a-bec1-4ee0-abe0-d348590cebce",
-            "displayName": "Another user change within the meeting call",
-            "tenantId": "f69f5191-20ae-4093-8dae-3ec09edeb253"
-          }
-        }
-      },
-      "isInLobby": false,
-      "id": "754c15b7-0cec-4916-86df-3db1a55a6b28"
     },
     {
       "@odata.type": "#microsoft.graph.participant",
