@@ -1,5 +1,5 @@
 ---
-title: "virtualAppointment: sendvirtualappointmentsms"
+title: "virtualAppointment: sendVirtualAppointmentSms"
 description: "Send a virtual appointment SMS notification."
 author: "benmicrosoft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# virtualAppointment: sendSMS
+# virtualAppointment: sendVirtualAppointmentSms
 
 Namespace: microsoft.graph
 
