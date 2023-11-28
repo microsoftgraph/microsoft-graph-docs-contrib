@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
   "name": "operation-get-permissions"
 }
 -->
-[!INCLUDE [permissions-table](permissions/operation-get-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions//partners-permissions.md)]
 
 ## HTTP request
 
