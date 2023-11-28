@@ -39,7 +39,7 @@ Inherits from [entity](../resources/entity.md).
 | displayName | String | The name of the community. The maximum length is 255 characters. |
 | groupId | String | The ID of the [Microsoft 365 group](../resources/group.md) that manages the membership of this community. |
 | id | String | The unique identifier of the community. Read only. Inherited from [entity](../resources/entity.md). |
-| privacy | [communityPrivacy](../resources/communityprivacy.md) | Defines the privacy level of the community. The possible values are: `public` or `private`. |
+| privacy | [communityPrivacy](../resources/communityprivacy.md) | Defines the privacy level of the community. The possible values are: `public`, `private`, `unknownFutureValue`. |
 
 ## Relationships
 
