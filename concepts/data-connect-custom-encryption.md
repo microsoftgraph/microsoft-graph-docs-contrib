@@ -25,15 +25,15 @@ Set up custom encryption by generating keys in AKV or linking an existing AKV. E
 
 ## Enable custom encryption for your Data Connect application
 
-If you have an existing Data Connect application, follow the steps below:
+If you have an existing Data Connect application, use the following steps to enable custom encryption:
 
 1. Sign in to the [Azure Portal](https://ms.portal.azure.com). 
     1. Choose **Microsoft Graph Data Connect** and select your current application. 
-    2. Choose **properties**. Choose **Single Tenant** and toggle on encryption.
+    2. Choose **properties** > **Single Tenant** and toggle on encryption.
     3. If you do not have an AKV, open a new tab and follow the instructions in [Setting up your Azure Key Vault](./data-connect-custom-encryption.md#using-azure-key-vault-for-custom-encryption). 
-    4. Follow the steps in [Using your Azure Key Vault and Generating RSA keys with your Azure Key Vault ](./data-connect-custom-encryption.md#using-azure-key-vault-for-custom-encryption) to ensure your AKV has the correct role permissions and is populated with RSA keys.
+    4. Follow the steps in [Using your Azure Key Vault and Generating RSA keys with your Azure Key Vault ](./data-connect-custom-encryption.md#using-azure-key-vault-for-custom-encryption) to ensure that your AKV has the correct role permissions and is populated with RSA keys.
     5. In the drop-down menu on the app, select your Azure Key Vault URI (name of the AKV).
-    6. Choose **Update Properties** to save. Encryption will be applied once your admin approves the changes to the app properties.
+    6. Choose **Update Properties** to save. Encryption will be applied when your admin approves the changes to the app properties.
 
     > [!NOTE]
     > Encryption will only be applied to eligible datasets. The AKV must be set up correctly for datasets to be encrypted.
