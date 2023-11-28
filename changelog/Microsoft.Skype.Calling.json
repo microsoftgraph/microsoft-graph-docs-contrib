@@ -3196,17 +3196,17 @@
         {
           "Id": "64a6db56-a5d1-45ea-9341-06f51e1aec67",
           "ApiChange": "Method",
-          "ChangedApiName": "sendVirtualAppointmentSMS",
+          "ChangedApiName": "sendVirtualAppointmentSms",
           "ChangeType": "Addition",
-          "Description": "Added the [sendVirtaulAppointmentSMS](https://learn.microsoft.com/en-us/graph/api/virtualappointment-sendVirtualAppointmentSms) action.",
+          "Description": "Added the [sendVirtaulAppointmentSms](https://learn.microsoft.com/en-us/graph/api/virtualappointment-sendVirtualAppointmentSms) action.",
           "Target": "virtualAppointment"
         }
         {
           "Id": "64a6db56-a5d1-45ea-9341-06f51e1aec67",
           "ApiChange": "Method",
-          "ChangedApiName": "sendVirtualAppointmentSMSreminder",
+          "ChangedApiName": "sendVirtualAppointmentSmsReminder",
           "ChangeType": "Addition",
-          "Description": "Added the [sendVirtaulAppointmentSMSreminder](https://learn.microsoft.com/en-us/graph/api/virtualappointment-sendVirtualAppointmentSmsReminder) action.",
+          "Description": "Added the [sendVirtaulAppointmentSmsReminder](https://learn.microsoft.com/en-us/graph/api/virtualappointment-sendVirtualAppointmentSmsReminder) action.",
           "Target": "virtualAppointment"
         }
       ],
