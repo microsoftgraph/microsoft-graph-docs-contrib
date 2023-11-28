@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Delete the [profileCardProperty](../resources/profilecardproperty.md) object specified by its **directoryPropertyName** from the organization's profile card, and remove any localized customizations for that property.
 
+[!INCLUDE [profilecardproperty-add-remove-note](../../../includes/profilecardproperty-add-remove-note.md)]
+
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
@@ -59,7 +61,7 @@ The following example shows how to delete the attribute named `Fax` from the pro
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_profilecardproperty",
+  "name": "remove_profilecardproperty",
   "sampleKeys": ["fax"]
 }-->
 
@@ -68,35 +70,35 @@ DELETE https://graph.microsoft.com/beta/admin/people/profileCardProperties/fax
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-profilecardproperty-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/remove-profilecardproperty-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-profilecardproperty-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/remove-profilecardproperty-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-profilecardproperty-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/remove-profilecardproperty-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-profilecardproperty-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/remove-profilecardproperty-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-profilecardproperty-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/remove-profilecardproperty-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/delete-profilecardproperty-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/remove-profilecardproperty-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/delete-profilecardproperty-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/remove-profilecardproperty-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/delete-profilecardproperty-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/remove-profilecardproperty-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

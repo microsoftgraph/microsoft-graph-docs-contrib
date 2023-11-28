@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 List all the [submissions](../resources/educationsubmission.md) associated with an [assignment](../resources/educationassignment.md). Only teachers, students, and applications with application permissions can perform this operation.
 
-A teacher or an application with application permissions can get all the **submissions**, a student can only get **submissions** that they are associated with.
+A teacher or an application with application permissions can get all the **submissions**, a student can only get **submissions** that they're associated with.
 
 Provide the header `Prefer: include-unknown-enum-members` to properly list **submissions** with the `reassigned` status. For details, see the examples section.
 
@@ -37,7 +37,9 @@ GET /education/classes/{class-id}/assignments/{assignment-id}/submissions
 
 ## Optional query parameters
 
-This method supports the `$filter`,'$top', and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter`,`$top`, and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+The following `$expand` options are available for this method: `outcomes`, `resources`, `submittedResources`, and `*`, which includes all the previous options.
 
 All [properties](/graph/api/resources/educationsubmission#properties) are supported for the query parameters `$filter` and `$orderby`.
 

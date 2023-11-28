@@ -3,6 +3,7 @@ title: "Known issues with Microsoft Graph"
 description: "This article describes known issues and limitations with Microsoft Graph and provides workarounds when possible."
 author: "MSGraphDocsVTeam"
 ms.localizationpriority: high
+ms.custom: has-azure-ad-ps-ref
 ---
 
 # Known issues with Microsoft Graph

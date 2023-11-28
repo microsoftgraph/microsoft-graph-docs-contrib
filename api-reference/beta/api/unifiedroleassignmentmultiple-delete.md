@@ -3,6 +3,7 @@ title: "Delete unifiedRoleAssignmentMultiple"
 description: "Delete a unifiedRoleAssignmentMultiple object."
 ms.localizationpriority: medium
 author: "DougKirschner"
+ms.reviewer: msodsrbac
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---

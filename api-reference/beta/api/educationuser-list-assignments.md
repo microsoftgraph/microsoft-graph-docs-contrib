@@ -26,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "educationuser_list_assignments" } -->
 [!INCLUDE [permissions-table](../includes/permissions/educationuser-list-assignments-permissions.md)]
 
-Calling the `/me` endpoint requires a signed-in user and therefore a delegated permission. Application permissions are not supported when using the `/me` endpoint.
+Calling the `/me` endpoint requires a signed-in user and therefore delegated permissions. Application permissions aren't supported when using the `/me` endpoint.
 
 The `/users/{user-id}` endpoint works with delegated and application permissions.
 
@@ -41,7 +41,9 @@ GET /education/users/{user-id}/assignments
 
 ## Optional query parameters
 
-This method supports the `$top`, `$filter`, `$orderby`, and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$top`, `$filter`, `$orderby`, and `$select` OData query parameters to help customize the response. For more information, see [OData query parameters](/graph/query-parameters).
+
+The following `$expand` options are available for this method: `categories`, `resources`, `gradingCategory`, `rubric`, `submissions`, and `*`, which includes all the previous options.
 
 All [properties](../resources/educationassignment.md#properties) are supported for the query parameters `$filter` and `$orderby`.
 
@@ -61,7 +63,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Get the assignments of the logged in user
+### Example 1: Get the assignments of the signed-in user
 
 #### Request
 
@@ -246,9 +248,9 @@ GET https://graph.microsoft.com/beta/education/users/80cefd93-8d88-40e2-b5d3-678
 
 #### Response
 
-If user tries to query a different user-id than his own, this method returns a `403 Forbidden` response code.
+If a user tries to query a different user than their own, this method returns a `403 Forbidden` response code.
 
-The `instructions`, `assignedDateTime`, `assignTo`, `resourcesFolderUrl` and `webUrl` properties will always display null.
+The `instructions`, `assignedDateTime`, `assignTo`, `resourcesFolderUrl`, and `webUrl` properties always display null.
 
 The following example shows the response.
 

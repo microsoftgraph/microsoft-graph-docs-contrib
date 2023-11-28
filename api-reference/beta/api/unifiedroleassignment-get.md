@@ -3,6 +3,7 @@ title: "Get unifiedRoleAssignment"
 description: "Retrieve the properties and relationships of a unifiedRoleAssignment object."
 ms.localizationpriority: medium
 author: "DougKirschner"
+ms.reviewer: msodsrbac
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
@@ -19,22 +20,33 @@ Retrieve the properties and relationships of a [unifiedRoleAssignment](../resour
 
 ## Permissions
 
-The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
+
+<a name='for-directory-azure-ad-provider'></a>
 
 ### For Directory (Microsoft Entra ID) provider
-
-<!-- { "blockType": "permissions", "name": "unifiedroleassignment_get" } -->
-[!INCLUDE [permissions-table](../includes/permissions/unifiedroleassignment-get-permissions.md)]
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) |  RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All   |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ### For Entitlement management provider
-
-<!-- { "blockType": "permissions", "name": "unifiedroleassignment_get_2" } -->
-[!INCLUDE [permissions-table](../includes/permissions/unifiedroleassignment-get-2-permissions.md)]
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) |  EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All  |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
 
 ### For an Exchange Online provider
-
-<!-- { "blockType": "permissions", "name": "unifiedroleassignment_get_3" } -->
-[!INCLUDE [permissions-table](../includes/permissions/unifiedroleassignment-get-3-permissions.md)]
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) |  RoleManagement.Read.Exchange, RoleManagement.Read.All, RoleManagement.ReadWrite.Exchange   |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
 
 ## HTTP request
 

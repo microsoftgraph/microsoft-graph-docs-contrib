@@ -29,7 +29,7 @@ In addition to the delegated permissions, the signed-in user who is accessing th
 + Security Operator
 + Security Reader
 
-To learn more about directory roles, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference)
+To learn more about directory roles, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json)
 
 ## HTTP request
 
@@ -67,6 +67,7 @@ If successful, this function returns a `200 OK` response code and a [serviceActi
 
 ### Request
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceactivitythis.getmetricsformfasigninfailure"
@@ -76,6 +77,35 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/reports/serviceActivity/getMetricsForMfaSignInFailure(inclusiveIntervalStartDateTime=2023-01-01T00:00:00Z,exclusiveIntervalEndDateTime=2023-01-01T00:20:00Z,aggregationIntervalInMinutes=10)
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/serviceactivitythisgetmetricsformfasigninfailure-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/serviceactivitythisgetmetricsformfasigninfailure-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/serviceactivitythisgetmetricsformfasigninfailure-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/serviceactivitythisgetmetricsformfasigninfailure-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceactivitythisgetmetricsformfasigninfailure-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/serviceactivitythisgetmetricsformfasigninfailure-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/serviceactivitythisgetmetricsformfasigninfailure-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 The following example shows the response.

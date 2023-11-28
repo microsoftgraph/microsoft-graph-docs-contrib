@@ -1,0 +1,398 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "awsAssociatedIdentities",
+          "ChangeType": "Addition",
+          "Description": "Added the [awsAssociatedIdentities](https://learn.microsoft.com/en-us/graph/api/resources/awsAssociatedIdentities?view=graph-rest-beta) resource type and its associated methods.",
+          "Target": "awsAssociatedIdentities"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureAssociatedIdentities",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureAssociatedIdentities](https://learn.microsoft.com/en-us/graph/api/resources/azureAssociatedIdentities?view=graph-rest-beta) resource type and its associated methods.",
+          "Target": "azureAssociatedIdentities"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "gcpAssociatedIdentities",
+          "ChangeType": "Addition",
+          "Description": "Added the [gcpAssociatedIdentities](https://learn.microsoft.com/en-us/graph/api/resources/gcpAssociatedIdentities?view=graph-rest-beta) resource type and its associated methods.",
+          "Target": "gcpAssociatedIdentities"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureSource](https://learn.microsoft.com/en-us/graph/api/resources/azureSource?view=graph-rest-beta) resource type.",
+          "Target": "azureSource"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aadSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [aadSource](https://learn.microsoft.com/en-us/graph/api/resources/aadSource?view=graph-rest-beta) resource type.",
+          "Target": "aadSource"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authorizationSystemIdentitySource",
+          "ChangeType": "Addition",
+          "Description": "Added the [authorizationSystemIdentitySource](https://learn.microsoft.com/en-us/graph/api/resources/authorizationSystemIdentitySource?view=graph-rest-beta) resource type.",
+          "Target": "authorizationSystemIdentitySource"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "awsSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [awsSource](https://learn.microsoft.com/en-us/graph/api/resources/awsSource?view=graph-rest-beta) resource type.",
+          "Target": "awsSource"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "gcpScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [gcpScope](https://learn.microsoft.com/en-us/graph/api/resources/gcpScope?view=graph-rest-beta) resource type.",
+          "Target": "gcpScope"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "gsuiteSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [gsuiteSource](https://learn.microsoft.com/en-us/graph/api/resources/gsuiteSource?view=graph-rest-beta) resource type.",
+          "Target": "gsuiteSource"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unknownSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [unknownSource](https://learn.microsoft.com/en-us/graph/api/resources/unknownSource?view=graph-rest-beta) resource type.",
+          "Target": "unknownSource"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authorizationSystemIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [authorizationSystemIdentity](https://learn.microsoft.com/en-us/graph/api/resources/authorizationSystemIdentity?view=graph-rest-beta) resource.",
+          "Target": "authorizationSystemIdentity"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authorizationSystemResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [authorizationSystemResource](https://learn.microsoft.com/en-us/graph/api/resources/authorizationSystemResource?view=graph-rest-beta) resource.",
+          "Target": "authorizationSystemResource"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authorizationSystemTypeAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [authorizationSystemTypeAction](https://learn.microsoft.com/en-us/graph/api/resources/authorizationSystemTypeAction?view=graph-rest-beta) resource.",
+          "Target": "authorizationSystemTypeAction"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authorizationSystemTypeService",
+          "ChangeType": "Addition",
+          "Description": "Added the [authorizationSystemTypeService](https://learn.microsoft.com/en-us/graph/api/resources/authorizationSystemTypeService?view=graph-rest-beta) resource.",
+          "Target": "authorizationSystemTypeService"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "awsAuthorizationSystemResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [awsAuthorizationSystemResource](https://learn.microsoft.com/en-us/graph/api/resources/awsAuthorizationSystemResource?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "awsAuthorizationSystemResource"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "awsAuthorizationSystemTypeAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [awsAuthorizationSystemTypeAction](https://learn.microsoft.com/en-us/graph/api/resources/awsAuthorizationSystemTypeAction?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "awsAuthorizationSystemTypeAction"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "awsIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [awsIdentity](https://learn.microsoft.com/en-us/graph/api/resources/awsIdentity?view=graph-rest-beta) resource.",
+          "Target": "awsIdentity"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "awsPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [awsPolicy](https://learn.microsoft.com/en-us/graph/api/resources/awsPolicy?view=graph-rest-beta) resource.",
+          "Target": "awsPolicy"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "awsRole",
+          "ChangeType": "Addition",
+          "Description": "Added the [awsRole](https://learn.microsoft.com/en-us/graph/api/resources/awsRole?view=graph-rest-beta) resource.",
+          "Target": "awsRole"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "awsUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [awsUser](https://learn.microsoft.com/en-us/graph/api/resources/awsUser?view=graph-rest-beta) resource.",
+          "Target": "awsUser"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "awsUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [awsAccessKey](https://learn.microsoft.com/en-us/graph/api/resources/awsAccessKey?view=graph-rest-beta) resource.",
+          "Target": "awsAccessKey"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "awsEc2Instance",
+          "ChangeType": "Addition",
+          "Description": "Added the [awsEc2Instance](https://learn.microsoft.com/en-us/graph/api/resources/awsEc2Instance?view=graph-rest-beta) resource.",
+          "Target": "awsEc2Instance"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "awsGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the [awsGroup](https://learn.microsoft.com/en-us/graph/api/resources/awsGroup?view=graph-rest-beta) resource.",
+          "Target": "awsGroup"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "awsLambda",
+          "ChangeType": "Addition",
+          "Description": "Added the [awsLambda](https://learn.microsoft.com/en-us/graph/api/resources/awsLambda?view=graph-rest-beta) resource.",
+          "Target": "awsLambda"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureAuthorizationSystemResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureAuthorizationSystemResource](https://learn.microsoft.com/en-us/graph/api/resources/azureAuthorizationSystemResource?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "azureAuthorizationSystemResource"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureAuthorizationSystemTypeAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureAuthorizationSystemTypeAction](https://learn.microsoft.com/en-us/graph/api/resources/azureAuthorizationSystemTypeAction?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "azureAuthorizationSystemTypeAction"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureIdentity](https://learn.microsoft.com/en-us/graph/api/resources/azureIdentity?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "azureIdentity"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureManagedIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureManagedIdentity](https://learn.microsoft.com/en-us/graph/api/resources/azureManagedIdentity?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "azureManagedIdentity"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureRoleDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureRoleDefinition](https://learn.microsoft.com/en-us/graph/api/resources/azureRoleDefinition?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "azureRoleDefinition"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureServicePrincipal",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureServicePrincipal](https://learn.microsoft.com/en-us/graph/api/resources/azureServicePrincipal?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "azureServicePrincipal"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureUser](https://learn.microsoft.com/en-us/graph/api/resources/azureUser?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "azureUser"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureServicePrincipal",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureGroup](https://learn.microsoft.com/en-us/graph/api/resources/azureGroup?view=graph-rest-beta) resource.",
+          "Target": "azureGroup"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureServerlessFunction",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureServerlessFunction](https://learn.microsoft.com/en-us/graph/api/resources/azureServerlessFunction?view=graph-rest-beta) resource.",
+          "Target": "azureServerlessFunction"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "gcpAuthorizationSystemResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [gcpAuthorizationSystemResource](https://learn.microsoft.com/en-us/graph/api/resources/gcpAuthorizationSystemResource?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "gcpAuthorizationSystemResource"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "gcpAuthorizationSystemTypeAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [gcpAuthorizationSystemTypeAction](https://learn.microsoft.com/en-us/graph/api/resources/gcpAuthorizationSystemTypeAction?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "gcpAuthorizationSystemTypeAction"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "gcpIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [gcpIdentity](https://learn.microsoft.com/en-us/graph/api/resources/gcpIdentity?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "gcpIdentity"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "gcpRole",
+          "ChangeType": "Addition",
+          "Description": "Added the [gcpRole](https://learn.microsoft.com/en-us/graph/api/resources/gcpRole?view=graph-rest-beta) resource.",
+          "Target": "gcpRole"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "gcpServiceAccount",
+          "ChangeType": "Addition",
+          "Description": "Added the [gcpServiceAccount](https://learn.microsoft.com/en-us/graph/api/resources/gcpServiceAccount?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "gcpServiceAccount"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "gcpUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [gcpUser](https://learn.microsoft.com/en-us/graph/api/resources/gcpUser?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "gcpUser"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "gcpCloudFunction",
+          "ChangeType": "Addition",
+          "Description": "Added the [gcpCloudFunction](https://learn.microsoft.com/en-us/graph/api/resources/gcpCloudFunction?view=graph-rest-beta) resource.",
+          "Target": "gcpCloudFunction"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "gcpGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the [gcpGroup](https://learn.microsoft.com/en-us/graph/api/resources/gcpGroup?view=graph-rest-beta) resource.",
+          "Target": "gcpGroup"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "authorizationSystemActionSeverity",
+          "ChangeType": "Addition",
+          "Description": "Added the **authorizationSystemActionSeverity** enumeration type.",
+          "Target": "authorizationSystemActionSeverity"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "authorizationSystemActionType",
+          "ChangeType": "Addition",
+          "Description": "Added the **authorizationSystemActionType** enumeration type.",
+          "Target": "authorizationSystemActionType"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "awsPolicyType",
+          "ChangeType": "Addition",
+          "Description": "Added the **awsPolicyType** enumeration type.",
+          "Target": "awsPolicyType"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "awsRoleTrustEntityType",
+          "ChangeType": "Addition",
+          "Description": "Added the **awsRoleTrustEntityType** enumeration type.",
+          "Target": "awsRoleTrustEntityType"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "awsRoleType",
+          "ChangeType": "Addition",
+          "Description": "Added the **awsRoleType** enumeration type.",
+          "Target": "awsRoleType"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "azureRoleDefinitionType",
+          "ChangeType": "Addition",
+          "Description": "Added the **azureRoleDefinitionType** enumeration type.",
+          "Target": "azureRoleDefinitionType"
+        },
+        {
+          "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "gcpRoleType",
+          "ChangeType": "Addition",
+          "Description": "Added the **gcpRoleType** enumeration type.",
+          "Target": "gcpRoleType"
+        }
+      ],
+      "Id": "e322fa28-1d4a-4460-8e54-8366417ff74a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-11-16T00:00:00.8333073Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Multicloud permissions management"
+    }
+  ]
+}

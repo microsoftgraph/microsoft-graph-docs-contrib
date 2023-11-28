@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "educationuser_list_assignments" } -->
 [!INCLUDE [permissions-table](../includes/permissions/educationuser-list-assignments-permissions.md)]
 
-Calling the `/me` endpoint requires a signed-in user and therefore a delegated permission. Application permissions are not supported when using the `/me` endpoint.
+Calling the `/me` endpoint requires a signed-in user and therefore delegated permissions. Application permissions aren't supported when using the `/me` endpoint.
 
 The `/users/{user-id}` endpoint works with delegated and application permissions.
 
@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Get the assignments of the logged in user
+### Example 1: Get the assignments of the signed-in user
 
 #### Request
 
@@ -264,7 +264,7 @@ GET https://graph.microsoft.com/v1.0/education/users/f3a5344e-dbde-48b0-be24-b5b
 
 #### Response
 
-If user tries to query a different user-id than his own, this method returns a `403 Forbidden` response code.
+If a user tries to query a different user than their own, this method returns a `403 Forbidden` response code.
 
 The following example shows the response.
 

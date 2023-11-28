@@ -1,13 +1,14 @@
 ---
-title: "Create federationConfiguration"
+title: "Create internalDomainFederation"
 description: "Create a new internalDomainFederation object."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
+ms.custom: has-azure-ad-ps-ref
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Create federationConfiguration
+# Create internalDomainFederation
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -22,10 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "domain_post_federationconfiguration" } -->
 [!INCLUDE [permissions-table](../includes/permissions/domain-post-federationconfiguration-permissions.md)]
 
-The calling user must be assigned one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference):
-
-- Security Administrator
-- External Identity Provider Administrator
+[!INCLUDE [rbac-domainfederation-apis-write](../includes/rbac-for-apis/rbac-domainfederation-apis-write.md)]
 
 ## HTTP request
 
