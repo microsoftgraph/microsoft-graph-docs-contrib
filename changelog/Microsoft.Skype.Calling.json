@@ -3204,9 +3204,9 @@
         {
           "Id": "64a6db56-a5d1-45ea-9341-06f51e1aec67",
           "ApiChange": "Method",
-          "ChangedApiName": "sendVirtualAppointmentSmsReminder",
+          "ChangedApiName": "sendVirtualAppointmentReminderSms",
           "ChangeType": "Addition",
-          "Description": "Added the [sendVirtualAppointmentSmsReminder](https://learn.microsoft.com/en-us/graph/api/virtualappointment-sendvirtualappointmentsmsreminder) action.",
+          "Description": "Added the [sendVirtualAppointmentReminderSms](https://learn.microsoft.com/en-us/graph/api/virtualappointment-sendvirtualappointmentremindersms) action.",
           "Target": "virtualAppointment"
         }
       ],
