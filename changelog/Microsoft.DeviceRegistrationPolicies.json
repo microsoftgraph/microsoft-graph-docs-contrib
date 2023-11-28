@@ -4,14 +4,6 @@
         "ChangeList": [
           {
             "Id": "6bd09a97-53a9-401e-b0c5-266b9db06a1b",
-            "ApiChange": "Enumeration",
-            "ChangedApiName": "policyScope",
-            "ChangeType": "Deletion",
-            "Description": "Removed the **policyScope** enumeration type.",
-            "Target": "policyScope"
-          },
-          {
-            "Id": "6bd09a97-53a9-401e-b0c5-266b9db06a1b",
             "ApiChange": "Resource",
             "ChangedApiName": "allDeviceRegistrationMembership",
             "ChangeType": "Addition",
