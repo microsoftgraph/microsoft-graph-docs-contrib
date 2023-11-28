@@ -38,7 +38,7 @@ The following JSON is a representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.operation",
+  "@odata.type": "microsoft.graph.partners.billing.operation",
   "baseType": "microsoft.graph.entity",
   "openType": false
 }
