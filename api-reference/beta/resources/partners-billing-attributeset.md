@@ -19,7 +19,7 @@ Possible values for attributeSet type.
 |Member|Value|Description|
 |:---|:---|:---|
 |full|1|all attributes in exported data|
-|basic|2|only basic attributes in exported data
+|basic|2|only basic attributes in exported data|
 |unknownFutureValue|3|reserved for future use|
 
 The billed or unbilled usage API response with the "full" or "basic" request parameter returns the following attributes:
@@ -80,3 +80,13 @@ The billed or unbilled usage API response with the "full" or "basic" request par
 |BenefitOrderID|yes|yes|
 |BenefitID|yes|no|
 |BenefitType|yes|yes|
+
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "attributeSet enum type",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "namespace":"microsoft.graph.partners.billing"
+}-->

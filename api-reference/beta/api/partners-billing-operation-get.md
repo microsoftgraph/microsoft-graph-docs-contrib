@@ -8,7 +8,7 @@ doc_type: apiPageType
 ---
 
 # Get operation
-Namespace: microsoft.graph
+Namespace: microsoft.graph.partners.billing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -57,7 +57,7 @@ If operation is still running, this method returns a 200 OK response code and [o
 The following request is an example.
 <!-- {
   "blockType": "request",
-  "name": "get_operation"
+  "name": "get_billingoperation"
 }
 -->
 ``` http

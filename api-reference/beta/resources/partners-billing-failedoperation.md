@@ -49,7 +49,7 @@ The following JSON is a representation of the resource.
   "lastActionDateTime": "String (timestamp)",
   "status": "String",
   "error": {
-    "@odata.type": "microsoft.graph.publicError"
+    "@odata.type": "#microsoft.graph.publicError"
   }
 }
 ```

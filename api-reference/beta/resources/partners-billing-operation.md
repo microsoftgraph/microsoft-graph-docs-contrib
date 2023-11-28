@@ -9,7 +9,7 @@ doc_type: resourcePageType
 
 # operation resource type
 
-Namespace: microsoft.graph
+Namespace: microsoft.graph.partners.billing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
