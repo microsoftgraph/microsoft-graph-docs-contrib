@@ -9,6 +9,7 @@ jobs:
   check_pull_request_job:
     permissions:
       pull-requests: write  #  to comment on pull-requests
+      contents: read
 
     runs-on: ubuntu-latest
     name: Check files for CRLF
