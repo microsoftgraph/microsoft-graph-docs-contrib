@@ -26,19 +26,19 @@ You can download the usage data asynchronously using three new steps (API endpoi
 Use this API to access billed or unbilled consumption line items. It returns a 202 HTTP status and a location header with the URL, which you must poll at regular intervals until you receive a success status with a manifest URL
 
 ### Operation status endpoint
-Until you receive the success status, keep polling this API at a regular interval. If the requested data is unavailable, the API response includes a Retry-After header indicating how long you should wait before sending another request. When operation has completed successfully, response also provides [Manifest](../resources/partners.billing-manifest.md) with details of the generated files. Manifest provides a storage folder from which actual billing data can be downloaded. The response splits or partitions the files to optimize throughput and I/O parallelism
+Until you receive the success status, keep polling this API at a regular interval. If the requested data is unavailable, the API response includes a Retry-After header indicating how long you should wait before sending another request. When operation has completed successfully, response also provides [Manifest](../resources/partners-billing-manifest.md) with details of the generated files. Manifest provides a storage folder from which actual billing data can be downloaded. The response splits or partitions the files to optimize throughput and I/O parallelism
 
 ## Sequence diagram
 The following diagram depicts the steps needed to download reconciliation data.
 
 ![Export data sequence diagram](LRO_SequenceDiagram.png)
 
-1. [Export billed usage data](../api/partners.billing-billedusage-export.md)
-2. [Export unbilled usage data](../api/partners.billing-unbilledusage-export.md)
-3. [Check status of export operation](../api/partners.billing.operation-get.md)
-4. [Get export manifest to download files](../api/partners.billing-manifest-get.md)
+1. [Export billed usage data](../api/partners-billing-billedusage-export.md)
+2. [Export unbilled usage data](../api/partners-billing-unbilledusage-export.md)
+3. [Check status of export operation](../api/partners-billing-operation-get.md)
+4. [Get export manifest to download files](../api/partners-billing-manifest-get.md)
 
-Client should check the status of [Export billed reconciliation data](../api/partners.billing-billedusage-export.md) or [Export unbilled reconciliation data](../api/partners.billing-unbilledusage-export.md) API by polling [Check status of export operation](../api/partners.billing.operation-get.md), 
+Client should check the status of [Export billed reconciliation data](../api/partners-billing-billedusage-export.md) or [Export unbilled reconciliation data](../api/partners-billing-unbilledusage-export.md) API by polling [Check status of export operation](../api/partners-billing-operation-get.md), 
 until it returns a terminal status of succeeded or failed. The manifest is a "resourceLocation" in the success status.
 
 ## Use cases for reconciliation APIs
@@ -49,22 +49,22 @@ This section describes the ways that Microsoft partners can use the billing APIs
 
 | Use cases | APIs |
 |--|--|
-| Create a new export operation to export billed reconciliation data | [Create billed export operation](../api/partners.billing-billedusage-export.md) |
-| Get if export operation is complete or not | [Get operation status](../api/partners.billing.operation-get.md) |
+| Create a new export operation to export billed reconciliation data | [Create billed export operation](../api/partners-billing-billedusage-export.md) |
+| Get if export operation is complete or not | [Get operation status](../api/partners-billing-operation-get.md) |
 
 
 ### Unbilled reconciliation data
 
 | Use cases | APIs |
 |--|--|
-| Create a new export operation to export unbilled reconciliation data | [Create unbilled export operation](../api/partners.billing-unbilledusage-export.md) |
-| Get if export operation is complete or not | [Get operation status](../api/partners.billing.operation-get.md) |
+| Create a new export operation to export unbilled reconciliation data | [Create unbilled export operation](../api/partners-billing-unbilledusage-export.md) |
+| Get if export operation is complete or not | [Get operation status](../api/partners-billing-operation-get.md) |
 
 
 
 ## Permissions
 
-To export reconciliation data, the calling principal must be in the partner tenant and be granted the appropriate [partner billing privilege permissions](../api/permissions/partners-permissions.md).
+To export reconciliation data, the calling principal must be in the partner tenant and be granted the appropriate [partner billing privilege permissions](../includes/permissions/partners-permissions.md).
 
 
 <!-- Start of: Link to ZT guidance: H2 section -->

@@ -20,13 +20,13 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get manifest](../api/partners.billing-manifest-get.md)|[microsoft.graph.partners.billing.manifest](../resources/partners.billing-manifest.md)|Read the properties and relationships of a [microsoft.graph.partners.billing.manifest](../resources/partners.billing-manifest.md) object.|
+|[Get manifest](../api/partners.billing-manifest-get.md)|[microsoft.graph.partners.billing.manifest](../resources/partners-billing-manifest.md)|Read the properties and relationships of a [microsoft.graph.partners.billing.manifest](../resources/partners-billing-manifest.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |blobCount|Int32|Total file count for this Partner Tenant ID.|
-|blobs|[microsoft.graph.partners.billing.blob](../resources/partners.billing-blob.md) collection|A collection of blob objects having the details of all the files for the partner tenant ID.|
+|blobs|[microsoft.graph.partners.billing.blob](../resources/partners-billing-blob.md) collection|A collection of blob objects having the details of all the files for the partner tenant ID.|
 |createdDateTime|DateTimeOffset|Manifest resource creation time in UTC.|
 |dataFormat|String|The billing data file format. Possible values `compressedJSONLines`. Each blob is a compressed file and data in the file is in [JSON lines](https://jsonlines.org/) format. Decompress the file to access the data.|
 |eTag|String|Version of data represented by manifest, any change in eTag indicates new data version.|

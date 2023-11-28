@@ -15,7 +15,7 @@ Namespace: microsoft.graph.partners.billing
 
 Export operation that is still running and files aren't yet ready.
 
-Inherits from [microsoft.graph.partners.billing.operation](../resources/partners.billing.operation.md).
+Inherits from [microsoft.graph.partners.billing.operation](../resources/partners-billing-operation.md).
 
 ## Properties
 |Property|Type|Description|

@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
   "name": "operation-get-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions//partners-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/partners-permissions.md)]
 
 ## HTTP request
 
@@ -44,12 +44,12 @@ Don't supply a request body for this method.
 
 ## Response
 
-If operation is completed successfully, this method returns a 200 OK response code and [exportSuccessOperation](../resources/partners.billing-exportsuccessoperation.md) object in the response body.
-`resourceLocation` in the JSON response represent [manifest](../resources/partners.billing-manifest.md) resource for the operation.
+If operation is completed successfully, this method returns a 200 OK response code and [exportSuccessOperation](../resources/partners-billing-exportsuccessoperation.md) object in the response body.
+`resourceLocation` in the JSON response represent [manifest](../resources/partners-billing-manifest.md) resource for the operation.
 
-If operation failed, this method returns a 200 OK response code and [failedOperation](../resources/partners.billing-failedoperation.md) object in the response body.
+If operation failed, this method returns a 200 OK response code and [failedOperation](../resources/partners-billing-failedoperation.md) object in the response body.
 
-If operation is still running, this method returns a 200 OK response code and [operation](../resources/partners.billing-runningoperation.md) object in the response body.
+If operation is still running, this method returns a 200 OK response code and [operation](../resources/partners-billing-runningoperation.md) object in the response body.
 
 ## Examples
 

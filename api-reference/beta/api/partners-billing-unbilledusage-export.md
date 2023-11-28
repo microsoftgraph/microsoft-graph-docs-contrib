@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
   "name": "partners-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions//partners-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/partners-permissions.md)]
 
 ## HTTP request
 
@@ -55,7 +55,7 @@ The following table shows the parameters that can be used with this action.
 
 ## Response
 
-If successful, this action returns a `202 Accepted` response code and a [operation](../resources/partners.billing.operation.md) in the **Location** header.
+If successful, this action returns a `202 Accepted` response code and a [operation](../resources/partners-billing-operation.md) in the **Location** header.
 
 ## Examples
 

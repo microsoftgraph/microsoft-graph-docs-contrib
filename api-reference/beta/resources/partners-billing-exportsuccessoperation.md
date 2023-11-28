@@ -16,7 +16,7 @@ Namespace: microsoft.graph.partners.billing
 Represents an export operation that is completed successfully
 
 
-Inherits from [microsoft.graph.partners.billing.operation](../resources/partners.billing.operation.md).
+Inherits from [microsoft.graph.partners.billing.operation](../resources/partners-billing-operation.md).
 
 ## Properties
 |Property|Type|Description|
@@ -29,7 +29,7 @@ Inherits from [microsoft.graph.partners.billing.operation](../resources/partners
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|resourceLocation|[microsoft.graph.partners.billing.manifest](../resources/partners.billing-manifest.md)|Metadata for the exported files.|
+|resourceLocation|[microsoft.graph.partners.billing.manifest](../resources/partners-billing-manifest.md)|Metadata for the exported files.|
 
 ## JSON representation
 The following JSON is a representation of the resource.
