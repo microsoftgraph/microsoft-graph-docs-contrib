@@ -95,7 +95,7 @@ The following are the supported meeting events:
 #### CallStarted
 ```json
 {
-  "@odata.type":"#microsoft.Graph.callevent",
+  "@odata.type":"#microsoft.graph.callevent",
   "@odata.id":"communications/onlineMeetings(joinWebUrl='{joinWebUrl}')/meetingCallEvents",
   "id":"{notificationId}'",
   "eventType":"callStarted",
@@ -106,7 +106,7 @@ The following are the supported meeting events:
 #### CallEnded
 ```json
 {
-  "@odata.type":"#microsoft.Graph.callevent",
+  "@odata.type":"#microsoft.graph.callevent",
   "@odata.id":"communications/onlineMeetings(joinWebUrl='{joinWebUrl}')/meetingCallEvents",
   "id":"{notificationId}",
   "eventType":"callEnded",
@@ -118,7 +118,7 @@ The following are the supported meeting events:
 
 ```json
 {
-  "@odata.type": "#microsoft.Graph.callevent",
+  "@odata.type": "#microsoft.graph.callevent",
   "@odata.id": "communications/onlineMeetings(joinWebUrl='{joinWebUrl}')/meetingCallEvents",
   "id": "{notificationId}",
   "eventType": "rosterUpdated",
