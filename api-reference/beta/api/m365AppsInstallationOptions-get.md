@@ -1,6 +1,6 @@
 ---
 title: "Get m365AppsInstallationOptions"
-description: "Read the properties of a microsoft.admin.m365AppsInstallationOptions object."
+description: "Read the properties of an m365AppsInstallationOptions object."
 author: "yan-git"
 ms.localizationpriority: medium
 ms.prod: "applications"
