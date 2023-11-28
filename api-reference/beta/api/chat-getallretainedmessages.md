@@ -47,14 +47,14 @@ GET /users/{id}/chats/getAllRetainedMessages?model=A
 GET /users/{id}/chats/getAllRetainedMessages?model=B
 ```
 
-This method supports the following OData query parameters to help customize the response.
+This method supports the following OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 | Name    |Description|
 |:--------|:----------|
-| $filter | The [$filter](/graph/query-parameters#filter-parameter) query parameter is supported with **dateTime** range query on **lastModifiedDateTime** by using [date range parameters](/graph/query-parameters).|
+| $filter | The [$filter](/graph/query-parameters#filter-parameter) query parameter supports date and time range queries on the **lastModifiedDateTime** property using [date range parameters](/graph/query-parameters).|
 | $top    | Use the [$top](/graph/query-parameters#top-parameter) query parameter to control the number of items per response.|
 
-Example:
+The following example shows a request that uses the `$top` and `$filter` query parameters to get a list of retained chat messages.
 
 ```http
 GET /users/{id}/chats/getAllRetainedMessages?$top=50&$filter=lastModifiedDateTime gt 2020-06-04T18:03:11.591Z and lastModifiedDateTime lt 2020-06-05T21:00:09.413Z
