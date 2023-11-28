@@ -29,7 +29,7 @@ When an async operation is initiated, the method returns a 202 Accepted response
 | id | String | Unique operation ID. |
 | createdDateTime | DateTimeOffset | Time when the operation was created. |
 | lastActionDateTime | DateTimeOffset | Time when the async operation was last updated. |
-| operationType | [engagementAsyncOperationType](../resources/engagementasyncoperationtype) | Denotes which type of operation is being described. The possible values are: `createCommunity`. |
+| operationType | [engagementAsyncOperationType](../resources/engagementasyncoperationtype.md) | Denotes which type of operation is being described. The possible values are: `createCommunity`. |
 | resourceId | String | The ID of the object that's created or modified as result of this async operation. |
 | resourceLocation |String| The location of the object that's created or modified as result of this async operation. |
 | status | [engagementAsyncOperationStatus](../resources/engagementasyncoperationstatus.md) | Operation status. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`.|
