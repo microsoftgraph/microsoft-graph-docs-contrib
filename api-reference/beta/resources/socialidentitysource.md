@@ -21,7 +21,7 @@ Inherits from [identitySource](../resources/identitysource.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The name of the socialIdentitySource.|
+|displayName|String|The name of the social identity source.|
 |socialIdentitySourceType|[microsoft.graph.socialIdentitySourceType](./socialidentitysource.md)|The possible values are: `facebook`, `unknownFutureValue`.|
 
 ## Relationships

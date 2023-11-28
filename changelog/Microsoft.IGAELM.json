@@ -282,7 +282,7 @@
       "Version": "beta",
       "CreatedDateTime": "2023-11-15T15:29:30.5673692Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Identity governance"
+      "SubArea": "Governance"
     },
     {
       "ChangeList": [
@@ -308,7 +308,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2023-11-15T15:29:30.5677461Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Identity governance"
+      "SubArea": "Governance"
     },
     {
       "ChangeList": [
