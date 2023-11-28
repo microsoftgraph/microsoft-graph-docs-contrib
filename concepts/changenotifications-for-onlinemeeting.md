@@ -27,7 +27,7 @@ This resource supports notifications with resource data. For more information ab
 
 To get change notifications for a meeting's call events, subscribe to **/communications/onlineMeetings(joinWebUrl='{joinWebUrl}')/meetingCallEvents** where the `joinWebUrl` is the HTTP encoded value of the meeting join url the teams client provides.
 
-As an example, the teams client will provide a `joinWebUrl` in 1. To park a subscription, the argument must be HTTP encoded to 2 and used as the `joinWebUrl` in the resource property.
+As an example, the `joinWebUrl` in 1 must be acquired for an online meeting. To park a subscription, the argument must be HTTP encoded to 2 and used as the `joinWebUrl` in the resource property.
 1. `https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZmYwZTEyYjctZjA5MS00OTkzLWJhNzEtYzFiZDVjNGE0OGFj%40thread.v2/0?context=%7b%22Tid%22%3a%22909c6581-5130-43e9-88f3-fcb3582cde37%22%2c%22Oid%22%3a%22048c94fb-dda6-48b8-9fc8-6740ee418fb9%22%7d`
 2. `https%3A%2F%2Fteams.microsoft.com%2Fl%2Fmeetup-join%2F19%253ameeting_ZmYwZTEyYjctZjA5MS00OTkzLWJhNzEtYzFiZDVjNGE0OGFj%2540thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522909c6581-5130-43e9-88f3-fcb3582cde37%2522%252c%2522Oid%2522%253a%2522048c94fb-dda6-48b8-9fc8-6740ee418fb9%2522%257d`
 
