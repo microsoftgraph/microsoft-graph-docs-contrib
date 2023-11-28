@@ -104,7 +104,6 @@ GET https://graph.microsoft.com/beta/auditLogs/customSecurityAttributeAudits/Dir
 
 ---
 
-
 ### Response
 
 The following is an example of the response
