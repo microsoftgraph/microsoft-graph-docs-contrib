@@ -18387,21 +18387,23 @@ items:
           - name: Teamwork settings
             items:
               - name: UserTeamwork
-                href: resources/userteamwork.md
                 items:
-                  - name: Get UserTeamwork Settings for a user in Micorosft Teams
+                  - name: UserTeamwork
+                    href: resources/userteamwork.md
+                  - name: UserTeamwork Settings
                     href: api/userteamwork-get-teamssettingsforuser.md
               - name: Teamwork
-                href: resources/teamwork.md
                 items:
-                  - name: Get Microsoft Teams settings for the organization.
+                  - name: Teamwork
+                    href: resources/teamwork.md
+                  - name: Microsoft Teams settings
                     href: api/teamwork-get-settingsfororganization.md
           - name: License Details
             items:
               - name: Teams Licensing Details
                 href: resources/teamsLicensingDetails.md
                 items:
-                  - name: Get Microsoft Teams licensing details for user
+                  - name: Microsoft Teams licensing details
                     href: api/user-get-teamslicensingdetails.md
           - name: Employee learning
             displayName: Viva Learning

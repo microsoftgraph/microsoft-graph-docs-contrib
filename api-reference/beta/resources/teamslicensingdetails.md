@@ -1,5 +1,5 @@
 ---
-title: "teamsLicensingDetails resource type"
+title: "TeamsLicensingDetails resource type"
 description: "Contains information about a teams license assigned to a user."
 author: "mea"
 doc_type: resourcePageType
@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 ---
 
-# teamsLicensingDetails resource type
+# TeamsLicensingDetails resource type
 
 Namespace: microsoft.graph
 
