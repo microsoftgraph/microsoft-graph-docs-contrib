@@ -29,7 +29,7 @@ Inherits from [microsoft.graph.partners.billing.operation](../resources/partners
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|resourceLocation|[manifest](../resources/partners.billing-manifest.md)|Metadata for the exported files.|
+|resourceLocation|[microsoft.graph.partners.billing.manifest](../resources/partners.billing-manifest.md)|Metadata for the exported files.|
 
 ## JSON representation
 The following JSON is a representation of the resource.
