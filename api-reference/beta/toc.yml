@@ -18384,6 +18384,25 @@ items:
                     href: api/teamworkdeviceoperation-list.md
                   - name: Get
                     href: api/teamworkdeviceoperation-get.md
+          - name: Teamwork settings
+            items:
+              - name: UserTeamwork
+                href: resources/userteamwork.md
+                items:
+                  - name: Get UserTeamwork Settings for a user in Micorosft Teams
+                    href: api/userteamwork-get-teamssettingsforuser.md
+              - name: Teamwork
+                href: resources/teamwork.md
+                items:
+                  - name: Get Microsoft Teams settings for the organization.
+                    href: api/teamwork-get-propertiesfororganization.md
+          - name: License Details
+            items:
+              - name: Teams Licensing Details
+                href: resources/teamsLicensingDetails.md
+                items:
+                  - name: Get Microsoft Teams licensing details for user
+                    href: api/user-get-teamslicensingdetails.md
           - name: Employee learning
             displayName: Viva Learning
             items:

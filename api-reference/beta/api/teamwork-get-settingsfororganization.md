@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get Microsoft Teams settings for the organization.
+# Get Microsoft Teams settings for the organization
 
 Namespace: microsoft.graph
 
@@ -86,4 +86,4 @@ Content-type: application/json
 ## See also
 
 - [Get user's licensing details](user-get-teamslicensingdetails.md)
-- [Get user's region and locale](user-get-regionlocale.md)
+- [Get user's region and locale](userteamwork-get-teamssettingsforuser.md)

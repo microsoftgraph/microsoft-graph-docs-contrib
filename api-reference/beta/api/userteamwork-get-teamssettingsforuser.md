@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get locale and region information of a [user](../resources/user.md). This API specifies the teamwork properties of a user.
+Get [userTeamwork](../resources/userteamwork.md) settings for the specified [user](../resources/user.md), which includes the user's chosen locale on Microsoft Teams and the user's region.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -45,7 +45,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code along with locale and region properties of [userTeamwork](../resources/userteamwork.md) object in the response body.
+If successful, this method returns a `200 OK` response code with a [userTeamwork](../resources/userteamwork.md) object in the response body.
 
 ## Examples
 
@@ -86,4 +86,4 @@ Content-type: application/json
 ## See also
 
 - [Get user's licensing details](user-get-teamslicensingdetails.md)
-- [Get organization region and enablement status](teamwork-get-regionandenablementstatus.md)
+- [Get organization region and enablement status](teamwork-get-settingsfororganization.md)

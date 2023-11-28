@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get teams licensing details for a user
+# Get Microsoft Teams licensing details for user
 
 Namespace: microsoft.graph
 
@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission Type                        | Permissions (from least to most privileged)  |
 | :------------------------------------- | :------------------------------------------------------------------------------------------------ |
-| Delegated (work or school account)     | UserRead.All, DirectoryRead.All, UserReadWrite.All ,DirectoryReadWrite.All                                                                         |
+| Delegated (work or school account)     | UserRead.All, DirectoryRead.All, UserReadWrite.All, DirectoryReadWrite.All                                                                         |
 | Delegated (personal Microsoft account) | Not supported.                                                                                    |
 | Application                            | Not Supported.                                                                            |
 
@@ -45,7 +45,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code along with a boolean which tells whether a user is licensed for Microsoft teams or not. [teamsLicensingDetails](../resources/teamslicensingdetails.md).
+If successful, this method returns a `200 OK` response code along with a [teamsLicensingDetails](../resources/teamslicensingdetails.md) object.
 
 ## Examples
 
@@ -83,5 +83,5 @@ Content-type: application/json
 
 ## See also
 
-- [Get user's region and locale](user-get-regionlocale.md)
-- [Get organization region and enablement status](teamwork-get-regionandenablementstatus.md)
+- [Get user's region and locale](userteamwork-get-teamssettingsforuser.md)
+- [Get organization region and enablement status](teamwork-get-propertiesfororganization.md)
