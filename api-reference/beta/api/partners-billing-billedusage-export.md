@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
   "name": "partners-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions//partners-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/partners-permissions.md)]
 
 ## HTTP request
 
@@ -71,7 +71,7 @@ Content-Type: application/json
 
 {
   "invoiceId" : "G016907411",
-  "attributeSet" : "full"
+  "attributeSet" : "fu
 }
 ```
 
@@ -89,4 +89,3 @@ HTTP/1.1 202 OK
 Location: https://graph.microsoft.com/beta/reports/partners/billing/operations/9ab9cb54-d07f-4f52-9ea6-a09d7de52c14
 
 ```
-
