@@ -18395,7 +18395,7 @@ items:
                 href: resources/teamwork.md
                 items:
                   - name: Get Microsoft Teams settings for the organization.
-                    href: api/teamwork-get-propertiesfororganization.md
+                    href: api/teamwork-get-settingsfororganization.md
           - name: License Details
             items:
               - name: Teams Licensing Details

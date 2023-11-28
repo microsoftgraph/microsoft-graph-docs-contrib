@@ -84,4 +84,4 @@ Content-type: application/json
 ## See also
 
 - [Get user's region and locale](userteamwork-get-teamssettingsforuser.md)
-- [Get organization region and enablement status](teamwork-get-propertiesfororganization.md)
+- [Get organization region and enablement status](teamwork-get-settingsfororganization.md)
