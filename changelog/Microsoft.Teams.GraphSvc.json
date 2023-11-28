@@ -1584,7 +1584,7 @@
           "Id": "5ed0e040-f9ba-4889-9ee0-8b90837f291g",
           "ApiChange": "Resource",
           "ChangedApiName": "teamslicensingdetails",
-          "ChangeType": "Addition",
+          "ChangeType": "Addition", 
           "Description": "Added the [teamslicensingdetails](https://learn.microsoft.com/en-us/graph/api/resources/teamslicensingdetails?view=graph-rest-beta) resource and supported methods.",
           "Target": "teamslicensingdetails"
         }
