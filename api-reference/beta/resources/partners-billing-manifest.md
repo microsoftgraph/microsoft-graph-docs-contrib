@@ -20,7 +20,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get manifest](../api/partners.billing-manifest-get.md)|[microsoft.graph.partners.billing.manifest](../resources/partners-billing-manifest.md)|Read the properties and relationships of a [microsoft.graph.partners.billing.manifest](../resources/partners-billing-manifest.md) object.|
+|[Get manifest](../api/partners-billing-manifest-get.md)|[microsoft.graph.partners.billing.manifest](../resources/partners-billing-manifest.md)|Read the properties and relationships of a [microsoft.graph.partners.billing.manifest](../resources/partners-billing-manifest.md) object.|
 
 ## Properties
 |Property|Type|Description|
