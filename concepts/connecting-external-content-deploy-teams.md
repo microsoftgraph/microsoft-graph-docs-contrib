@@ -187,19 +187,19 @@ You can submit your Microsoft Graph connector packaged as a Teams app extended a
 You can use the [step-by-step submission guide](https://learn.microsoft.com/en-us/partner-center/marketplace/add-in-submission-guide) to learn how to submit your app. Make sure that you submit a **Teams app** in the **Microsoft 365 and Copilot** tab in **Marketplace offers**.
 
 You will need to submit a PDF in the **Additional certification info** step. Microsoft will use the information you provide in this PDF to make sure that your Microsoft Graph connector performs as expected in Copilot for Microsoft 365. Your PDF must have the following sections:
-- Demo Tenant User Name
+- Test accounts, license keys, and credentials
 - Custom Vertical Name
 - Semantic Labels
 - Sample Prompts
 - Connection Description
 - Activity Settings
 
-### Demo Tenant User Name
+### Test accounts, license keys, and credentials
 
 Create a user account on your demo tenant that Microsoft can use to validate your Microsoft Graph connector. This can be done in the [Users section](https://admin.microsoft.com/Adminportal/Home?#/users/:/adduser) of the Microsoft 365 Admin Center. 
-Ensure that this new user account has a Copilot for Microsoft 365 license, and the password is sent to **microsoftgraphconnectorappvalidation@service.microsoft.com**. 
+Ensure that this new user account has a Copilot for Microsoft 365 license. 
 
-In this section of the PDF, provide the username for this new user account. It is mandatory to provide this username.
+In this section of the PDF, provide the credentials and any applicable license keys for this new user account. It is mandatory to provide this information. To learn more about how to prepare the user account for validation, refer to the [best practices for providing test notes](https://learn.microsoft.com/microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/submission-checklist?tabs=desktop#compile-testing-instructions).
 
 After Microsoft validates your app, you can revoke access to the user account.
 
