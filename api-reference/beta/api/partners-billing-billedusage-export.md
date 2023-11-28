@@ -71,7 +71,7 @@ Content-Type: application/json
 
 {
   "invoiceId" : "G016907411",
-  "attributeSet" : "fu
+  "attributeSet" : "full"
 }
 ```
 
