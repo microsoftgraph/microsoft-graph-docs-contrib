@@ -1,4 +1,4 @@
-﻿{
+{
   "changelog": [
 	{
       "ChangeList": [
@@ -411,7 +411,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "remediate",
           "ChangeType": "Addition",
-          "Description": "Added the [remediate](https://learn.microsoft.com/en-us/graph/api/unifiedRoleManagementAlert-remediate?view=graph-rest-beta) method to the [unifiedRoleManagementAlertIncident](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementAlertIncident?view=graph-rest-beta) resource.",
+          "Description": "Added the [remediate](https://learn.microsoft.com/en-us/graph/api/unifiedrolemanagementalertincident-remediate?view=graph-rest-beta) method to the [unifiedRoleManagementAlertIncident](https://learn.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementAlertIncident?view=graph-rest-beta) resource.",
           "Target": "unifiedRoleManagementAlertIncident"
         }
       ],
