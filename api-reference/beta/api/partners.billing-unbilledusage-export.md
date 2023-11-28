@@ -83,8 +83,7 @@ The following is an example of the response
 >**Note:** The response does not have body.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.partners.billing.operation"
+  "truncated": true
 }
 -->
 ``` http
