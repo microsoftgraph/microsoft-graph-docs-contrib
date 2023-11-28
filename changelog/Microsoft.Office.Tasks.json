@@ -1815,6 +1815,50 @@
       "CreatedDateTime": "2023-05-31T08:00:05.7615321Z",
       "WorkloadArea": "Tasks and plans",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "08fe5651-0de5-4c33-ae2c-9e39824a2beb",
+          "ApiChange": "Member",
+          "ChangedApiName": "user",
+          "ChangeType": "Addition",
+          "Description": "Added the `user` member to the **plannerContainerType** enumeration.",
+          "Target": "plannerContainerType"
+        }
+      ],
+      "Id": "08fe5651-0de5-4c33-ae2c-9e39824a2beb",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-07-19T19:06:43.5935245Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6adca1d6-2cd3-4b37-8ffa-7985afbbbade",
+          "ApiChange": "Method",
+          "ChangedApiName": "moveToContainer",
+          "ChangeType": "Addition",
+          "Description": "<b>Summary:</b> Create a [plan](https://learn.microsoft.com/en-us/graph/api/resources/plannerplan?view=graph-rest-beta) in a user [container](https://learn.microsoft.com/en-us/graph/api/resources/plannerplancontainer?view=graph-rest-beta) to let individual users track their own tasks. This provides the flexibility for users to share or collaborate on their personal plans, or subsequently upgrade their personal plans into group-based plans by [moving](https://learn.microsoft.com/en-us/graph/api/plannerplan-movetocontainer?view=graph-rest-beta) the plan from the user container to a group container. <br><i>The rest of this section lists the related API updates.</i>",
+          "Target": "plannerPlan"
+        },
+        {
+          "Id": "6adca1d6-2cd3-4b37-8ffa-7985afbbbade",
+          "ApiChange": "Method",
+          "ChangedApiName": "moveToContainer",
+          "ChangeType": "Addition",
+          "Description": "Added the [moveToContainer](https://learn.microsoft.com/en-us/graph/api/plannerplan-movetocontainer?view=graph-rest-beta) method to the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerplan?view=graph-rest-beta) resource.",
+          "Target": "plannerPlan"
+        }
+      ],
+      "Id": "6adca1d6-2cd3-4b37-8ffa-7985afbbbade",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-11-15T13:40:50.502Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
     }
   ]
 }
