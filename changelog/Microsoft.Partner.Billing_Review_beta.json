@@ -87,7 +87,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "export",
           "ChangeType": "Addition",
-          "Description": "Added the [export](https://learn.microsoft.com/en-us/graph/api/partners-billing-export?view=graph-rest-beta) method to the [export](https://learn.microsoft.com/en-us/graph/api/partners-billing-export?view=graph-rest-beta) resource.",
+          "Description": "Added the [export](https://learn.microsoft.com/en-us/graph/api/partners-billing-billedusage-export?view=graph-rest-beta) method to the [export](https://learn.microsoft.com/en-us/graph/api/partners-billing-billedusage-export?view=graph-rest-beta) resource.",
           "Target": "export"
         },
         {
@@ -95,7 +95,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "invoiceId",
           "ChangeType": "Addition",
-          "Description": "Added the `invoiceId` parameter to the [export](https://learn.microsoft.com/en-us/graph/api/partners-billing-export?view=graph-rest-beta) method.",
+          "Description": "Added the `invoiceId` parameter to the [export](https://learn.microsoft.com/en-us/graph/api/partners-billing-billedusage-export?view=graph-rest-beta) method.",
           "Target": "export"
         },
         {
@@ -103,7 +103,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "export",
           "ChangeType": "Addition",
-          "Description": "Added the [export](https://learn.microsoft.com/en-us/graph/api/partners-billing-export?view=graph-rest-beta) method to the [export](https://learn.microsoft.com/en-us/graph/api/partners-billing-export?view=graph-rest-beta) resource.",
+          "Description": "Added the [export](https://learn.microsoft.com/en-us/graph/api/partners-billing-unbilledusage-export?view=graph-rest-beta) method to the [export](https://learn.microsoft.com/en-us/graph/api/partners-billing-unbilledusage-export?view=graph-rest-beta) resource.",
           "Target": "export"
         }
       ],
