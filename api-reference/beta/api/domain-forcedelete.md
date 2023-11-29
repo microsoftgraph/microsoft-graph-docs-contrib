@@ -45,7 +45,6 @@ The work or school account needs to belong to one of the following roles:
 
 * Global Administrator
 * Domain Name Administrator
-* Partner Tier2 Support
 
 ## HTTP request
 
@@ -67,7 +66,7 @@ POST /domains/{id}/forceDelete
 
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter	   | Type	|Description|
+| Parameter       | Type    |Description|
 |:---------------|:--------|:----------|
 |disableUserAccounts|Boolean| Option to disable renamed user accounts. If a user account is disabled, the user will not be allowed to sign in.<br>*True* (default) - User accounts renamed as part of this operation are disabled.<br>*False* - User accounts renamed as part of this operation are not disabled. |
 

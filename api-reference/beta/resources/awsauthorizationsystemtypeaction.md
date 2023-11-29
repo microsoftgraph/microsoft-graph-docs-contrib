@@ -36,7 +36,7 @@ Inherits from [authorizationSystemTypeAction](../resources/authorizationsystemty
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|service|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md)|The service associated with the action in an AWS authorization system. This object auto-expanded.|
+|service|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md)|The service associated with the action in an AWS authorization system. This object autoexpanded. Supports `$filter` (`eq`).|
 
 ## JSON representation
 The following JSON representation shows the resource type.

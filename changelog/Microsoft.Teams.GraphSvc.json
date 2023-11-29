@@ -41,7 +41,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "undoDelete",
           "ChangeType": "Addition",
-          "Description": "Added the [undoDelete](https://learn.microsoft.com/en-us/graph/api/deletedchat-undodelete.md?view=graph-rest-beta) method to the [deletedChat](https://learn.microsoft.com/en-us/graph/api/resources/deletedChat?view=graph-rest-beta) resource.",
+          "Description": "Added the [undoDelete](https://learn.microsoft.com/en-us/graph/api/deletedchat-undodelete?view=graph-rest-beta) method to the [deletedChat](https://learn.microsoft.com/en-us/graph/api/resources/deletedChat?view=graph-rest-beta) resource.",
           "Target": "deletedChat"
         },
         {
@@ -49,7 +49,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "delete",
           "ChangeType": "Addition",
-          "Description": "Added the [delete](https://learn.microsoft.com/en-us/graph/api/chat-delete.md?view=graph-rest-beta) method to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
+          "Description": "Added the [delete](https://learn.microsoft.com/en-us/graph/api/chat-delete?view=graph-rest-beta) method to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
           "Target": "deletedChat"
         },
         {
@@ -57,7 +57,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "get",
           "ChangeType": "Addition",
-          "Description": "Added the [get](https://learn.microsoft.com/en-us/graph/api/deletedchat-get.md?view=graph-rest-beta) method to the [deletedChat](https://learn.microsoft.com/en-us/graph/api/resources/deletedChat?view=graph-rest-beta) resource.",
+          "Description": "Added the [get](https://learn.microsoft.com/en-us/graph/api/deletedchat-get?view=graph-rest-beta) method to the [deletedChat](https://learn.microsoft.com/en-us/graph/api/resources/deletedChat?view=graph-rest-beta) resource.",
           "Target": "deletedChat"
         }
       ],
@@ -479,7 +479,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Chat.ManageDeletion.All",
           "ChangeType": "Addition",
-          "Description": "Added new permissions [Chat.ManageDeletion.All](https://docs.microsoft.com/en-us/graph/permissions-reference#Chat-permissions).",
+          "Description": "Added new permissions [Chat.ManageDeletion.All](https://learn.microsoft.com/en-us/graph/permissions-reference#Chat-permissions).",
           "Target": ""
         }
       ],
@@ -497,7 +497,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Chat.ManageDeletion.All",
           "ChangeType": "Addition",
-          "Description": "Added new permissions [Chat.ManageDeletion.All](https://docs.microsoft.com/en-us/graph/permissions-reference#Chat-permissions).",
+          "Description": "Added new permissions [Chat.ManageDeletion.All](https://learn.microsoft.com/en-us/graph/permissions-reference#Chat-permissions).",
           "Target": ""
         }
       ],
@@ -1501,7 +1501,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "callTranscript",
           "ChangeType": "Addition",
-          "Description": "Added the [callTranscript](https://docs.microsoft.com/en-us/graph/api/resources/callTranscript?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [callTranscript](https://learn.microsoft.com/en-us/graph/api/resources/callTranscript?view=graph-rest-1.0) resource type.",
           "Target": "callTranscript"
         },
         {
@@ -1509,7 +1509,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "LIST",
           "ChangeType": "Addition",
-          "Description": "Added the [list](https://docs.microsoft.com/en-us/graph/api/callTranscript-list?view=graph-rest-1.0) operation to the [callTranscript](https://learn.microsoft.com/en-us/graph/api/resources/callTranscript?view=graph-rest-1.0) resource.",
+          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/onlinemeeting-list-transcripts?view=graph-rest-1.0) operation to the [callTranscript](https://learn.microsoft.com/en-us/graph/api/resources/callTranscript?view=graph-rest-1.0) resource.",
           "Target": "callTranscript"
         },
         {
@@ -1517,7 +1517,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Addition",
-          "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/callTranscript-get?view=graph-rest-1.0) operation to the [callTranscript](https://learn.microsoft.com/en-us/graph/api/resources/callTranscript?view=graph-rest-1.0) resource.",
+          "Description": "Added the [get](https://learn.microsoft.com/en-us/graph/api/callTranscript-get?view=graph-rest-1.0) operation to the [callTranscript](https://learn.microsoft.com/en-us/graph/api/resources/callTranscript?view=graph-rest-1.0) resource.",
           "Target": "callTranscript"
         }
       ],
@@ -1553,6 +1553,32 @@
       "CreatedDateTime": "2023-11-13T09:44:57.7760824Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "623b6f0b-1a38-462d-bdfd-db928aa3612c",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAllRetainedMessages",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAllRetainedMessages](https://learn.microsoft.com/en-us/graph/api/channel-getallretainedmessages?view=graph-rest-beta) method to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "623b6f0b-1a38-462d-bdfd-db928aa3612c",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAllRetainedMessages",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAllRetainedMessages](https://learn.microsoft.com/en-us/graph/api/chat-getallretainedmessages?view=graph-rest-beta) method to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "623b6f0b-1a38-462d-bdfd-db928aa3612c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-11-28T18:06:20.975484Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
     }
   ]
 }

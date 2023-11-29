@@ -93,7 +93,6 @@ DELETE https://graph.microsoft.com/beta/networkaccess/filteringPolicies/bb1d249e
 
 ---
 
-
 ### Response
 The following example shows the response.
 <!-- {

@@ -94,7 +94,6 @@ GET https://graph.microsoft.com/beta/networkaccess/filteringPolicies/bb4e13cd-65
 
 ---
 
-
 ### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
