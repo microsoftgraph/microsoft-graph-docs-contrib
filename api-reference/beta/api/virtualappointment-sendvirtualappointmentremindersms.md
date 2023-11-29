@@ -72,12 +72,12 @@ The following example shows a request.
 -->
 ``` http
 POST https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/sendVirtualAppointmentReminderSms
-```
+
 {
 “phoneNumbers”: [ “+13129224122”, “+1242421412”],
 “remindBeforeTimeInMinutesType”: "mins15"
 }
-
+```
 
 ### Response
 
