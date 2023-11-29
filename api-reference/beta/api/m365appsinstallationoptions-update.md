@@ -1,6 +1,6 @@
 ---
 title: "Update m365AppsInstallationOptions"
-description: "Update the properties of a microsoft.admin.m365AppsInstallationOptions object."
+description: "Update the properties of a m365AppsInstallationOptions object."
 author: "yan-git"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [microsoft.admin.m365AppsInstallationOptions](../resources/m365appsInstallationoptions.md) object.
+Update the properties of a [m365AppsInstallationOptions](../resources/m365appsInstallationoptions.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -24,8 +24,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|OrgSettings-Microsoft365Install.ReadWrite.All|
 
 When calling on behalf of a user, the user needs to belong to one of the following directory roles. To learn more about directory roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference):
-+ Global Administrator
-+ Office Apps Administrator
++ Global administrator
++ Office apps administrator
 
 ## HTTP request
 
@@ -60,7 +60,7 @@ If successful, this method returns a `204 No Content` and no content is returned
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "update_m365AppsInstallationOptions"
@@ -113,7 +113,7 @@ Content-Type: application/json
 
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
