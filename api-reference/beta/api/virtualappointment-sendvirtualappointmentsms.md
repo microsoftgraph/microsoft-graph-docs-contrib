@@ -73,12 +73,12 @@ The following example shows a request.
 -->
 ``` http
 POST https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/sendVirtualAppointmentSms
-```
+
 {
 “phoneNumbers”: [ “+13129224122”, “+1242421412”],
 “virtualAppointmentSmsType”: “confirmation”
 }
-
+```
 
 ### Response
 
