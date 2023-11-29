@@ -8,14 +8,15 @@ ms.prod: "data-connect"
 
 # Use encryption with Microsoft Graph Data Connect
 
-The following two types of encryption are available when using Microsoft Graph Data Connect (Data Connect): 
+The following two types of encryption are available when you use Microsoft Graph Data Connect (Data Connect): 
 
 - **Encryption for data-at-rest**: Customers can use the [Azure data-at-rest](/azure/security/fundamentals/encryption-atrest) encryption feature and customer managed keys when setting up their Azure storage account to ensure that it's properly locked and secure for data delivery. 
 
-- **Encryption for data-in-transit**: Data Connect offers encryption for data-in-transit through our custom encryption with customer owned keys capability. It also ensures that all data requests between a customer’s Microsoft 365 and Azure resources are secure by using service standards that are [SOC approved](/compliance/regulatory/offering-soc-2).
+- **Encryption for data-in-transit**: Data Connect offers encryption for data-in-transit through our custom encryption with customer-owned keys capability. It also ensures that all data requests between a customer’s Microsoft 365 and Azure resources are secure by using service standards that are [SOC approved](/compliance/regulatory/offering-soc-2).
 
-We recommend developers use [Azure Key Vault (AKV)](/azure/key-vault/general/basic-concepts) to generate and store their public or private keys and refresh them when needed. This article guides you through our custom encryption feature which can be applied to the requested datasets in an application for a secure data delivery.
-## Enable custom encryption with customer-owned keys for encryption-in-transit
+We recommend that you use [Azure Key Vault (AKV)](/azure/key-vault/general/basic-concepts) to generate and store your public or private keys and refresh them when needed. This article describes the custom encryption feature that can be applied to the requested datasets in an application for a secure data delivery.
+
+## Enable custom encryption with customer-owned keys for data-in-transit
 
 Customers (developers) can use custom encryption in their Data Connect application for an even more secure dataset delivery. To enable the feature, create and set up an AKV to generate RSA keys or ensure your existing AKV has the correct set up with RSA keys. Then, enable encryption when setting up a new Data Connect application or edit an existing one to toggle on encryption and link your current AKV. Data Connect encrypts datasets using authorized public keys from your AKV and delivers them encrypted along with a decryption key. The decryption key will be encrypted by Data Connect and can be decrypted using the customers' private key.
 
