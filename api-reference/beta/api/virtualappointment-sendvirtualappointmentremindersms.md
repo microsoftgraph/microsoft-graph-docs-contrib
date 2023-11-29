@@ -66,7 +66,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_virtualappointment_getVirtualAppointmentJoinWebUrl",
+  "name": "virtualappointment_sendVirtualAppointmentReminderSms",
   "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi"]
 }
 -->
