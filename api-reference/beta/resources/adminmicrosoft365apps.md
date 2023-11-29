@@ -25,7 +25,7 @@ None.
 |installationOptions|[microsoft.graph.m365AppsInstallationOptions](../resources/m365appsInstallationoptions.md)|A container for tenant-level settings for Microsoft 365 applications.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
