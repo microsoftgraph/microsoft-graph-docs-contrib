@@ -114,6 +114,14 @@ The `mgt-people-picker` component defines the following CSS custom properties.
   --people-picker-search-icon-color: yellow;
   --people-picker-remove-selected-close-icon-color: blue;
 
+  /* To style the avatar-size in the people-picker search results */
+
+  --people-picker-result-person-avatar-size: 50px;
+  
+  /* To style the avatar-size in the people-picker selected people */
+  
+  --people-picker-selected-person-avatar-size: 30px;
+
   /** You can also change the person tokens **/
   --person-line1-text-color: blue;
   --person-line2-text-color: red;

@@ -71,6 +71,7 @@ The `mgt-login` component defines the following CSS custom properties.
   --login-command-button-background-color: orange;
   --login-command-button-hover-background-color: purple;
   --login-command-button-text-color: black;
+  --login-person-avatar-size: 60px;
 
   /** person component tokens **/
   --person-line1-text-color: whitesmoke;

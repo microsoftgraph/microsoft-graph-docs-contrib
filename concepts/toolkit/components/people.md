@@ -58,6 +58,7 @@ The `mgt-people` component defines the following CSS custom properties.
   --people-overflow-font-color: orange;
   --people-overflow-font-size: 16px;
   --people-overflow-font-weight: 600;
+  --people-person-avatar-size: 70px;
 }
 ```
 
