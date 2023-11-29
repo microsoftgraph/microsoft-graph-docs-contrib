@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is a Microsoft 365 applications installation options container object for a MAC platform. You can specify whether users can install Microsoft 365 apps on their own MAC devices. If admins choose not to allow this, they can manually deploy apps to users instead.
+Represents a Microsoft 365 applications installation options container object for a MAC platform. You can specify whether users can install Microsoft 365 apps on their own MAC devices. If admins choose not to allow this, they can manually deploy apps to users instead.
 
 ## Properties
 |Property|Type|Description|
