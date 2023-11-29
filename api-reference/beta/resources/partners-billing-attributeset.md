@@ -22,7 +22,7 @@ Possible values for attributeSet type.
 |basic|2|only basic attributes in exported data|
 |unknownFutureValue|3|reserved for future use|
 
-
+### Attributes
 The billed or unbilled usage API response with the "full" or "basic" request parameter returns the following attributes:
 
 |attribute|full|basic|
