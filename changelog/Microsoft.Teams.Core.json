@@ -6669,6 +6669,40 @@
       "CreatedDateTime": "2023-11-27T18:04:59.7600046Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
+    },
+	{
+      "ChangeList": [
+        {
+          "Id": "5dedaf94-507f-4a37-8e66-0350ad7eca5f",
+          "ApiChange": "Property",
+          "ChangedApiName": "isUserPersonalScopeResourceSpecificConsentEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isUserPersonalScopeResourceSpecificConsentEnabled** property to the [teamsAppSettings](https://learn.microsoft.com/en-us/graph/api/resources/teamsappsettings?view=graph-rest-v1.0) resource.",
+          "Target": "teamsAppSettings"
+        },
+        {
+          "Id": "5dedaf94-507f-4a37-8e66-0350ad7eca5f",
+          "ApiChange": "Method",
+          "ChangedApiName": "user",
+          "ChangeType": "Addition",
+          "Description": "Added the [List permissionGrants](https://learn.microsoft.com/graph/api/user-list-permissiongrants?view=graph-rest-v1.0) method to the [user](https://learn.microsoft.com/graph/api/resources/user?view=graph-rest-v1.0) resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "5dedaf94-507f-4a37-8e66-0350ad7eca5f",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "permissionGrants",
+          "ChangeType": "Addition",
+          "Description": "Added the **permissionGrants** relationship to the [user](https://learn.microsoft.com/graph/api/resources/user?view=graph-rest-v1.0) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "5dedaf94-507f-4a37-8e66-0350ad7eca5f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-11-29T17:17:00.1619923Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
     }
   ]
 }
