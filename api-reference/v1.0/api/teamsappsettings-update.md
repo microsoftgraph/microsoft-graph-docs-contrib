@@ -136,7 +136,7 @@ PATCH https://graph.microsoft.com/v1.0/teamwork/teamsAppSettings
 Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.teamsAppSettings",
-  "isUserPersonalScopeResourceSpecificConsentEnabled": "true"
+  "isUserPersonalScopeResourceSpecificConsentEnabled": true
 }
 ```
 

@@ -113,7 +113,7 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.teamsAppSettings",
     "id": "65bdf003-0c4c-4bca-b102-0821ab0d1364",
     "allowUserRequestsForAppAccess": true,
-    "isUserPersonalScopeResourceSpecificConsentEnabled": "true"
+    "isUserPersonalScopeResourceSpecificConsentEnabled": true
   }
 }
 ```

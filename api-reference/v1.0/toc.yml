@@ -8802,6 +8802,8 @@ items:
                     href: api/team-list-permissiongrants.md
                   - name: List for chat
                     href: api/chat-list-permissiongrants.md
+                  - name: List for user
+                    href: api/user-list-permissiongrants.md
               - name: Tab
                 href: resources/teamstab.md
                 items:
