@@ -15,11 +15,9 @@ query_params = ServicePrincipalsRequestBuilder.ServicePrincipalsRequestBuilderGe
 
 request_configuration = ServicePrincipalsRequestBuilder.ServicePrincipalsRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
-headers = {
-			'Authorization' : "Bearer {Token}",
-}
-
 )
+request_configuration.headers.add("Authorization", "Bearer {Token}")
+
 
 result = await graph_client.service_principals.get(request_configuration = request_configuration)
 
