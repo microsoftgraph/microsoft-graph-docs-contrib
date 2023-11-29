@@ -581,6 +581,8 @@ items:
                 href: resources/teamsappinstallation.md
               - name: List apps for user
                 href: api/userteamwork-list-installedapps.md
+              - name: List permission grants for user
+                href: api/user-list-permissiongrants.md
               - name: Add app for user
                 href: api/userteamwork-post-installedapps.md
               - name: Gets installed app for user

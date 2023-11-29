@@ -706,7 +706,7 @@ items:
                 href: api/userteamwork-get-installedapps.md
               - name: List apps for user
                 href: api/userteamwork-list-installedapps.md
-              - name: List permission grants for user (preview)
+              - name: List permission grants for user
                 href: api/user-list-permissiongrants.md
               - name: Remove app for user
                 href: api/userteamwork-delete-installedapps.md

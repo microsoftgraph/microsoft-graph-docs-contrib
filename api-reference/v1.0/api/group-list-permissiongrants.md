@@ -143,3 +143,9 @@ Content-type: application/json
     ]
 }
 ```
+
+## See also
+
+- [List permission grants of a chat](chat-list-permissiongrants.md)
+- [List permission grants of a team](team-list-permissiongrants.md)
+- [List permission grants of a user](user-list-permissiongrants.md)

@@ -26,6 +26,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "teamwork_sendactivitynotificationtorecipients" } -->
 [!INCLUDE [permissions-table](../includes/permissions/teamwork-sendactivitynotificationtorecipients-permissions.md)]
 
+>**Note:** The `TeamsActivity.Send.User` permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). RSC permissions pertain to the individual recipients in the payload.
+
 ## HTTP request
 
 <!-- {

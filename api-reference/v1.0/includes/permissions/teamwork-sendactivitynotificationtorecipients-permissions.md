@@ -8,5 +8,5 @@ ms.localizationpriority: medium
 |:---|:---|:---|
 |Delegated (work or school account)|TeamsActivity.Send|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|TeamsActivity.Send|TeamsActivity.Send.User|
+|Application|TeamsActivity.Send.User|TeamsActivity.Send|
 

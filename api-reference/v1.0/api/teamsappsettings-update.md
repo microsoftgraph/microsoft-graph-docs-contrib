@@ -46,6 +46,7 @@ PATCH /teamwork/teamsAppSettings
 |Property|Type|Description|
 |:---|:---|:---|
 |allowUserRequestsForAppAccess|Boolean|Indicates whether users are allowed to request access to the unavailable Teams apps.|
+|isUserPersonalScopeResourceSpecificConsentEnabled|Boolean|Indicates whether resource-specific consent for personal scope in Teams apps has been enabled for the tenant. `True` indicates that Teams apps that are allowed in the tenant and require resource-specific permissions can be installed in the personal scope. `False` blocks the installation of any Teams app that requires resource-specific permissions in the personal scope.|
 
 ## Response
 
@@ -53,8 +54,10 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Request
-The following example shows how to allow Teams users to request access to certain Teams apps.
+### Example 1: Allow Teams users to request admins for access to certain Teams apps
+
+#### Request
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -105,7 +108,7 @@ Content-Type: application/json
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -113,6 +116,37 @@ The following example shows the response.
   "blockType": "response"
 } -->
 
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 2: Enable the installation of apps that require resource-specific consent in the personal scope of users
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_teamsappsettings_3"
+}
+-->
+```http
+PATCH https://graph.microsoft.com/v1.0/teamwork/teamsAppSettings
+Content-Type: application/json
+{
+  "@odata.type": "#microsoft.graph.teamsAppSettings",
+  "isUserPersonalScopeResourceSpecificConsentEnabled": "true"
+}
+```
+
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response"
+} -->
 ```http
 HTTP/1.1 204 No Content
 ```
