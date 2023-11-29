@@ -113,7 +113,7 @@ Content-Type: application/json
 
 ### Request
 
-The following example shows a request with filter.
+The following example shows a request with a filter.
 
 <!-- {
   "blockType": "request",
@@ -161,7 +161,7 @@ Content-Type: application/json
 
 ### Request
 
-When the IT Admin is assigned Microsoft Entra Global admin, Windows 365 admin or Intune admin via Microsoft Entra ID, it doesn't support scope tag, IT Admin has full access to all Windows 365 resources, the permission is "*". And scopeIds is empty, indicates the user is unscoped admin. In such case, query is not supported.
+When the IT Admin is assigned Microsoft Entra Global admin, Windows 365 admin or Intune admin via Microsoft Entra ID, it doesn't support scope tag, IT Admin has full access to all Windows 365 resources, the permission is "*". And scopeIds is empty, indicates the user is unscoped admin. In such case, query isn't supported.
 
 <!-- {
   "blockType": "request",
