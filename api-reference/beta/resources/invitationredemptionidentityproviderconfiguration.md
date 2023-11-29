@@ -15,6 +15,20 @@ Namespace: microsoft.graph
 
 Defines the invitation redemption provider configuration base type to set redemption flow settings for Microsoft Entra ID B2B collaboration.
 
+There are two types of identity providers in the precedence order. These are primary identity providers and fallback identity providers. Fallback identity providers are used when no primary identity provider is available and must always be specified.
+
+Primary identity providers:
+
+- azureActiveDirectory: Any user homed in another Microsoft Entra ID tenant
+- externalFederation: Any user homed in an identity provider associated with a SAML or WS-Federation relationship
+- socialIdentityProviders: Any user using a gmail.com account when Google Federation is configured
+
+Fallback identity providers:
+
+- defaultConfiguredIdp: Check for existing Microsoft account, then use email one-time passcode (if enabled), and lastly, create a new Microsoft account if no primary identity providers are available for the user redeeming
+- emailOneTimePasscode: Always use email one-time passcode if no primary identity providers are available for the user redeeming
+- microsoftAccount: Always use an existing Microsoft account or create a new Microsoft account if no primary identity providers are available for the user redeeming
+
 ## Properties
 
 |Property|Type|Description|
