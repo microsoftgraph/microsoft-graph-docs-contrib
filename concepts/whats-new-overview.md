@@ -64,7 +64,7 @@ Use the [permissions management APIs](/graph/api/resources/permissions-managemen
 - Request permissions for identities to resources; Grant or reject permissions requests.
 - Generate reports relating to permissions and resources.
 
-The Permissions Management currently supports only Microsoft Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP) cloud infrastructures. _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=&filterBy=Multicloud%20permissions%20management&from=2023-10-31&to=2023-11-29)_.
+Permissions Management currently supports only Microsoft Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP) cloud infrastructures. _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=&filterBy=Multicloud%20permissions%20management&from=2023-10-31&to=2023-11-29)_.
 
 ### Reports  | Identity and access reports
 
