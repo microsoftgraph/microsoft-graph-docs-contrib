@@ -16611,19 +16611,19 @@ items:
           - name: Partner billing reports (preview)
             items:
               - name: Overview
-                href: resources/partners.billing.usageexport-api-overview.md
+                href: resources/partners-billing-usageexport-api-overview.md
               - name: Billed usage report
                 items:
                   - name: Export data
-                    href: api/partners.billing-billedusage-export.md
+                    href: api/partners-billing-billedusage-export.md
                   - name: Check export status
-                    href: api/partners.billing.operation-get.md
-              - name: Billed usage report
+                    href: api/partners-billing-operation-get.md
+              - name: Unbilled usage report
                 items:
                   - name: Export data
-                    href: api/partners.billing-unbilledusage-export.md
+                    href: api/partners-billing-unbilledusage-export.md
                   - name: Check export status
-                    href: api/partners.billing.operation-get.md                  
+                    href: api/partners-billing-operation-get.md                  
       - name: Search
         items:
           - name: Query
