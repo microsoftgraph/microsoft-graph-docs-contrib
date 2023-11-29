@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the tenant-level installation options for Microsoft 365 apps. Specify how often users get feature updates and the Microsoft 365 apps that users can install.
+Represents the tenant-level installation options for Microsoft 365 apps. You can specify how often users get feature updates and the Microsoft 365 apps they can install.
 
 ## Methods
 
