@@ -41,10 +41,7 @@ Depending on the resource, use the least privileged permission specified in the 
 |[event](/graph/api/resources/event)     | Changes to all events in a user's mailbox: <br>`/me/events`<br>`/users/{id}/events` | Calendars.Read | Calendars.Read | Calendars.Read |
 |[message](/graph/api/resources/message) | Changes to all messages in a user's mailbox: <br>`/me/messages`<br>`/users/{id}/messages`<br>Changes to messages in a user's mailFolder:<br>`/users/{id}/mailFolders/{id}/messages` | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
 
-### Include resource data in notification payload (preview)
-
-> [!NOTE]
-> Notifications with resource data for Outlook resources are currently available only in the Microsoft Graph beta endpoint.
+### Include resource data in notification payload
 
 To have resource data included in a change notification, you **must** specify the following properties, in addition to those you normally include when creating a subscription:
 
@@ -57,11 +54,11 @@ To have resource data included in a change notification, you **must** specify th
 - **encryptionCertificate**: This property contains only the public key that Microsoft Graph uses to encrypt resource data. Keep the corresponding private key to [decrypt the content](webhooks-with-resource-data.md#decrypting-resource-data-from-change-notifications).
 - **encryptionCertificateId**: This property is your own identifier for the certificate. Use this ID to match in each change notification which certificate to use for decryption.
 
-See an [example](#example-2-create-a-subscription-to-get-change-notifications-with-resource-data-when-the-user-receives-a-new-message-preview) for subscribing to change notifications with resource data for the **message** resource.
+See an [example](#example-2-create-a-subscription-to-get-change-notifications-with-resource-data-when-the-user-receives-a-new-message) for subscribing to change notifications with resource data for the **message** resource.
 
 
 ### Refine the conditions for a notification
-You can further refine the conditions for a notification by using the `$filter` query parameter. See an [example](#example-3-create-a-subscription-to-get-change-notifications-with-resource-data-for-a-message-based-on-a-condition-preview).
+You can further refine the conditions for a notification by using the `$filter` query parameter. See an [example](#example-3-create-a-subscription-to-get-change-notifications-with-resource-data-for-a-message-based-on-a-condition).
 
 One common application of `$filter` is to get notified upon a change in a specific resource property. For example, you can use `$filter` to subscribe to unread messages in a folder (the **isRead** property is `false`), and include all the change types:
 - A message added to or marked unread in the folder would trigger a `Created` notification.
@@ -86,7 +83,7 @@ If you lose the permission granted earlier for a subscription and the subscripti
 Depending on your subscription, notifications may include resource data. Subscriptions with resource data allow you to get the
 resource payload along with the notification, avoiding the overhead for a separate API call to get the changed resource data.
 
-### Receive notifications with resource data (preview)
+### Receive notifications with resource data
 
 The following is an example of the payload of a notification with resource data of a **message** resource. The  **resource** and **resourceData** properties correspond to the **message** instance that triggered the notification. Use the **encryptedContent** property to decrypt the resource data.
 
@@ -179,7 +176,6 @@ The following example requests a notification for a message being created in the
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_subscription_withoutresourcedata_for_message_resource"
@@ -188,7 +184,6 @@ The following example requests a notification for a message being created in the
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
 Content-type: application/json
-
 {
     "changeType": "created",
     "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
@@ -198,43 +193,9 @@ Content-type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/v1/create-subscription-withoutresourcedata-for-message-resource-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/create-subscription-withoutresourcedata-for-message-resource-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/v1/create-subscription-withoutresourcedata-for-message-resource-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/v1/create-subscription-withoutresourcedata-for-message-resource-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/v1/create-subscription-withoutresourcedata-for-message-resource-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/v1/create-subscription-withoutresourcedata-for-message-resource-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/v1/create-subscription-withoutresourcedata-for-message-resource-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/v1/create-subscription-withoutresourcedata-for-message-resource-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -249,7 +210,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#subscriptions/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#subscriptions/$entity",
     "id": "5522bd62-7c96-4530-85b0-00b916f6151a",
     "resource": "users/622eaaff-0683-4862-9de4-f2ec83c2bd98/messages",
     "applicationId": "507c3b9a-67b8-463d-88a2-15a8cefb2111",
@@ -269,21 +230,19 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Create a subscription to get change notifications with resource data when the user receives a new message (preview)
+### Example 2: Create a subscription to get change notifications with resource data when the user receives a new message
 The following example subscribes to notifications with resource data for a message being created in the user's mailbox. The properties of the **message** resource to be included in the notification payload are specified using the `$select` query parameter.
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_subscription_withresourcedata_for_message_resource"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-type: application/json
-
 {
     "changeType": "created",
     "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
@@ -296,43 +255,9 @@ Content-type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/beta/create-subscription-withresourcedata-for-message-resource-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/create-subscription-withresourcedata-for-message-resource-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/beta/create-subscription-withresourcedata-for-message-resource-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/beta/create-subscription-withresourcedata-for-message-resource-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/beta/create-subscription-withresourcedata-for-message-resource-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/beta/create-subscription-withresourcedata-for-message-resource-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/beta/create-subscription-withresourcedata-for-message-resource-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/beta/create-subscription-withresourcedata-for-message-resource-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -347,7 +272,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#subscriptions/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#subscriptions/$entity",
     "id": "178eec5f-cf3c-4e7e-8a9c-8640deb5b5c5",
     "resource": "users/622eaaff-0683-4862-9de4-f2ec83c2bd98/messages?$select=Subject,bodyPreview,importance,receivedDateTime,from",
     "applicationId": "507c3b9a-67b8-463d-88a2-15a8cefb2111",
@@ -367,21 +292,19 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Create a subscription to get change notifications with resource data for a message based on a condition (preview)
+### Example 3: Create a subscription to get change notifications with resource data for a message based on a condition
 The following example subscribes to notifications with resource data for a message being created in the Drafts folder, containing one or more attachments, and of high importance.
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_subscription_withresourcedata_for_message_resource_basedonfilter"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-type: application/json
-
 {
     "changeType": "created",
     "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
@@ -394,43 +317,9 @@ Content-type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/beta/create-subscription-withresourcedata-for-message-resource-basedonfilter-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/beta/create-subscription-withresourcedata-for-message-resource-basedonfilter-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/beta/create-subscription-withresourcedata-for-message-resource-basedonfilter-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/beta/create-subscription-withresourcedata-for-message-resource-basedonfilter-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/beta/create-subscription-withresourcedata-for-message-resource-basedonfilter-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/beta/create-subscription-withresourcedata-for-message-resource-basedonfilter-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/beta/create-subscription-withresourcedata-for-message-resource-basedonfilter-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/beta/create-subscription-withresourcedata-for-message-resource-basedonfilter-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -445,7 +334,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#subscriptions/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#subscriptions/$entity",
     "id": "239dbc5f-cf3c-4e7e-8c9c-3340abc5b5c5",
     "resource": "me/mailfolders('Drafts')/messages?$select=Subject,bodyPreview&$filter=hasAttachments eq true AND importance eq 'High'",
     "applicationId": "507c3b9a-67b8-463d-88a2-15a8cefb2111",

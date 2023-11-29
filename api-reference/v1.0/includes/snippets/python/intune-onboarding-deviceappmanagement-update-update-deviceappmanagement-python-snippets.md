@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = DeviceAppManagement(
 	odata_type = "#microsoft.graph.deviceAppManagement",
@@ -16,7 +16,7 @@ request_body = DeviceAppManagement(
 	microsoft_store_for_business_last_completed_application_sync_time = "2017-01-01T00:02:00.0421137-08:00",
 )
 
-result = await graph_client.device_app_management.patch(body = request_body)
+result = await graph_client.device_app_management.patch(request_body)
 
 
 ```

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = AppRoleAssignedResourcesRequestBuilder.AppRoleAssignedResourcesRequestBuilderGetQueryParameters(
 		select = ["displayName","accountEnabled","servicePrincipalType","signInAudience"],
@@ -14,11 +14,9 @@ query_params = AppRoleAssignedResourcesRequestBuilder.AppRoleAssignedResourcesRe
 
 request_configuration = AppRoleAssignedResourcesRequestBuilder.AppRoleAssignedResourcesRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
-headers = {
-			'ConsistencyLevel' : "eventual",
-}
-
 )
+request_configuration.headers.add("ConsistencyLevel", "eventual")
+
 
 result = await graph_client.me.app_role_assigned_resources.get(request_configuration = request_configuration)
 

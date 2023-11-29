@@ -15,23 +15,23 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of the [message](../resources/message.md) object.
 
-For instance, you can get a message and expand all the [mention](../resources/mention.md) instances in the message. See an [example](#example-2-get-all-mentions-in-a-specific-message) below.
+For example, you can get a message and expand all the [mention](../resources/mention.md) instances in the message. For an example, see [Example 2](#example-2-get-all-mentions-in-a-specific-message).
 
-You can use the `$value` parameter to [get the MIME content of a message](/graph/outlook-get-mime-message). See also an [example](#example-5-get-mime-content) below.
+You can use the `$value` parameter to [get the MIME content of a message](/graph/outlook-get-mime-message). For an example, see [Example 5](#example-5-get-mime-content).
 
-There are two scenarios where an app can get a message in another user's mail folder:
+An app can get a message in another user's mail folder under two conditions:
 
-* If the app has application permissions, or,
-* If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a mail folder with that user, or, has given delegated access to that user. See [details and an example](/graph/outlook-share-messages-folders).
+* If the app has application permissions
+* If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a mail folder with that user, or has given delegated access to that user. For details, see [Get Outlook messages in a shared or delegated folder](/graph/outlook-share-messages-folders).
 
-Since the **message** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **message** instance.
+Because the **message** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **message** instance.
 
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Mail.ReadBasic, Mail.Read    |
@@ -84,7 +84,7 @@ of each [mention](../resources/mention.md) in the message expanded.
 | Prefer: outlook.body-content-type | string | The format of the **body** and **uniqueBody** properties to be returned in. Values can be "text" or "html". A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified. If the header is not specified, the **body** and **uniqueBody** properties are returned in HTML format. Optional. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -95,7 +95,7 @@ Specifying the `$value` parameter returns the message content in MIME format, an
 ## Examples
 ### Example 1: Get a specific message
 #### Request
-The first example gets the specified message. It does not specify any header to indicate the desired format of the body to be returned.
+The first example gets the specified message. It does not specify any header to indicate the format of the body to be returned.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -142,8 +142,9 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=
 ---
 
 #### Response
-Here is an example of the response. The **body** and **uniqueBody** properties are returned in the default HTML format.
-Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
+The following example shows the response. The **body** and **uniqueBody** properties are returned in the default HTML format.
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "get_message",
@@ -221,7 +222,9 @@ GET https://graph.microsoft.com/beta/me/messages/AQMkADJmMTUAAAgVZAAAA/?$expand=
 ---
 
 #### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "get_mentions_in_message",
@@ -371,8 +374,9 @@ Prefer: outlook.body-content-type="text"
 
 #### Response
 
-Here is an example of the response.
-Note: The response includes a `Preference-Applied: outlook.body-content-type` header to acknowledge the `Prefer: outlook.body-content-type` request header.
+The following example shows the response.
+
+>**Note:** The response includes a `Preference-Applied: outlook.body-content-type` header to acknowledge the `Prefer: outlook.body-content-type` request header.
 <!-- {
   "blockType": "response",
   "name": "get_message_in_text",
@@ -453,7 +457,9 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGVmMDEz/?$select=internetM
 
 #### Response
 
-Here is an example of the response. Note: The number of Internet message headers in the response object has been reduced for brevity.
+The following example shows the response. 
+
+>**Note:** The number of Internet message headers in the response object has been reduced for brevity.
 
 <!-- {
   "blockType": "response",
@@ -546,7 +552,7 @@ GET https://graph.microsoft.com/beta/me/messages/4aade2547798441eab5188a7a2436bc
 ---
 
 #### Response
-The following is the response. The MIME content begins with the `MIME-Version` header.
+The following example shows the response. The MIME content begins with the `MIME-Version` header.
 <!-- {
   "blockType": "response",
   "name": "get_message_in_mime",

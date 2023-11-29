@@ -17,13 +17,10 @@ Get a [virtualEventWebinar](../resources/virtualeventwebinar.md) collection wher
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|VirtualEvent.Read|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+<!-- { "blockType": "permissions", "name": "virtualeventwebinar_getbyuserrole" } -->
+[!INCLUDE [permissions-table](../includes/permissions/virtualeventwebinar-getbyuserrole-permissions.md)]
 
 ## HTTP request
 
@@ -32,16 +29,16 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /solutions/virtualEvents/webinars/getByUserRole(role={role})
+GET /solutions/virtualEvents/webinars/getByUserRole(role='{role}')
 ```
 
 ## Function parameters
 
-In the request URL, provide the following query parameters with values. 
+In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|role|String|My user role in the webinar. Possible values are: `organizer`, `coOrganizer`.|
+|role|String|User role of the signed-in user in the webinar. Possible values are: `organizer`, `coOrganizer`.|
 
 ## Request headers
 
@@ -62,6 +59,7 @@ If successful, this function returns a `200 OK` response code and a [virtualEven
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "virtualeventwebinarthis.getbyuserrole"
@@ -70,6 +68,40 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/getByUserRole(role='organizer')
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/virtualeventwebinarthisgetbyuserrole-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/virtualeventwebinarthisgetbyuserrole-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/virtualeventwebinarthisgetbyuserrole-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/virtualeventwebinarthisgetbyuserrole-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/virtualeventwebinarthisgetbyuserrole-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/virtualeventwebinarthisgetbyuserrole-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/virtualeventwebinarthisgetbyuserrole-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/virtualeventwebinarthisgetbyuserrole-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

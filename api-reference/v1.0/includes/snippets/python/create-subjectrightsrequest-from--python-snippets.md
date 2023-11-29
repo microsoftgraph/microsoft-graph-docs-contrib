@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = SubjectRightsRequest(
 	type = SubjectRightsRequestType.Export,
@@ -28,7 +28,7 @@ request_body = SubjectRightsRequest(
 	pause_after_estimate = True,
 	regulations = [
 		"CCPA",
-	]
+	],
 	site_locations = SubjectRightsRequestAllSiteLocation(
 		odata_type = "microsoft.graph.subjectRightsRequestAllSiteLocation",
 	),
@@ -36,10 +36,10 @@ request_body = SubjectRightsRequest(
 		User(
 			id = "1B761ED2-AA7E-4D82-9CF5-C09D737B6167",
 		),
-	]
+	],
 )
 
-result = await graph_client.privacy.subject_right_requests.post(body = request_body)
+result = await graph_client.privacy.subject_rights_requests.post(request_body)
 
 
 ```
