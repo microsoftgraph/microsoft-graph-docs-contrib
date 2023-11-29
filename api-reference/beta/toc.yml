@@ -18435,6 +18435,8 @@ items:
                   - name: Webinar
                     href: resources/virtualeventwebinar.md
                     items:
+                      - name: List
+                        href: api/virtualeventsroot-list-webinars.md
                       - name: Get
                         href: api/virtualeventwebinar-get.md
                       - name: List by user role
@@ -18587,6 +18589,8 @@ items:
                     href: api/chatmessage-get.md
                   - name: Get messages across all channels
                     href: api/channel-getallmessages.md
+                  - name: Get retained messages across all channels
+                    href: api/channel-getallretainedmessages.md
                   - name: Get primary channel
                     href: api/team-get-primarychannel.md
                   - name: List channel messages
@@ -18654,6 +18658,8 @@ items:
                     href: api/chatmessage-get.md
                   - name: Get messages across all chats
                     href: api/chats-getallmessages.md
+                  - name: Get retained messages across all chats
+                    href: api/chat-getallretainedmessages.md
                   - name: Send message in chat
                     href: api/chat-post-messages.md
                   - name: Get chat between user and app
