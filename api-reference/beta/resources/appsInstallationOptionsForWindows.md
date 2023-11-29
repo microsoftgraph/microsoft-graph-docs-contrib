@@ -1,6 +1,6 @@
 ---
 title: "appsInstallationOptionsForWindows resource type"
-description: "Represents the tenant-level Microsoft 365 Applications installation options for Windows platform."
+description: "Represents the tenant-level Microsoft 365 Applications installation options for a Windows platform."
 author: "yan-git"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is a Microsoft 365 applications installation options container object for Windows platform. Specify whether users can install Microsoft 365 apps on their own Windows devices. If admins choose not to allow this, they can manually deploy apps to users instead.
+This is a Microsoft 365 applications installation options container object for a Windows platform. You can specify whether users can install Microsoft 365 apps on their own Windows devices. If admins choose not to allow this, they can manually deploy apps to users instead.
 
 ## Properties
 |Property|Type|Description|
