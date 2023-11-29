@@ -278,3 +278,51 @@ The control exposes the following variables that can be localized. For details a
 | chatButtonLabel            | `Chat`                    |
 | videoButtonLabel           | `Video`                   |
 | closeCardLabel             | `Close card`              |
+
+The control also exposes te following variables in person-card sections that can be localized.
+
+Contact Section
+
+| String name                | Default value             |
+| -------------------------- | ------------------------- |
+| contactSectionTitle        | `Contact`                 |
+| emailTitle                 | `Email`                   |
+| chatTitle                  | `Teams`                   |
+| businessPhoneTitle         | `Business Phone`          |
+| cellPhoneTitle             | `Mobile Phone`            |
+| departmentTitle            | `Department`              |
+| personTitle                | `Email`                   |
+| officeLocationTitle        | `Office Location`         |
+| copyToClipboardButton      | `Copy to clipboard`       |
+
+Oganization Section
+
+| String name                    | Default value             |
+| ------------------------------ | ------------------------- |
+| reportsToSectionTitle          | `Reports to`              |
+| directReportsSectionTitle      | `Direct reports`          |
+| organizationSectionTitle       | `Organization`            |
+| youWorkWithSubSectionTitle     | `You work with`           |
+| userWorksWithSubSectionTitle   | `works with`              |
+
+Messages Section
+
+| String name                | Default value             |
+| -------------------------- | ------------------------- |
+| emailsSectionTitle         | `Emails`                  |
+
+Profile Section
+
+| String name                          | Default value             |
+| -----------------------------------  | ------------------------- |
+| SkillsAndExperienceSectionTitle      | `Skills & Experience`     |
+| AboutCompactSectionTitle             | `About`                   |
+| SkillsSubSectionTitle                | `Skills`                  |
+| LanguagesSubSectionTitle             | `Languages`               |
+| WorkExperienceSubSectionTitle        | `Work Experience`         |
+| EducationSubSectionTitle             | `Education`               |
+| professionalInterestsSubSectionTitle | `Professional Interests`  |
+| personalInterestsSubSectionTitle     | `Personal Interests`      |
+| birthdaySubSectionTitle              | `Birthday`                |
+| currentYearSubtitle                  | `Current`                 |
+| socialMediaSubSectionTitle           | `Social Media`            |

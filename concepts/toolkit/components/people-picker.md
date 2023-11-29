@@ -201,14 +201,14 @@ For more complex scenarios or a truly custom UX, this component exposes several 
 
 The control exposes the following variables that can be localized. For details about localization, see [Localizing components](../customize-components/localization.md).
 
-| String name              | Default value                  |
-| ------------------------ | ------------------------------ |
-| inputPlaceholderText     | `Start typing a name`          |
-| maxSelectionsPlaceHolder | `Maxiumum reached`             |
-| maxSelectionsAriaLabel   | `You can only select 1 person` |
-| noResultsFound           | `We didn't find any matches.`  |
-| loadingMessage           | `Loading...`                   |
-| selected                 | `selected`                     |
-| removeSelectedUser       | `Remove `                      |
-| selectContact            | `select a contact`             |
-| suggestionsTitle         | `Suggested contacts`           |
+| String name              | Default value                        |
+| ------------------------ | ------------------------------------ |
+| inputPlaceholderText     | `Search for a name`                  |
+| maxSelectionsPlaceHolder | `Max contacts added`                 |
+| maxSelectionsAriaLabel   | `Maximum contact selections reached` |
+| noResultsFound           | `We didn't find any matches.`        |
+| loadingMessage           | `Loading...`                         |
+| selected                 | `selected`                           |
+| removeSelectedUser       | `Remove `                            |
+| selectContact            | `select a contact`                   |
+| suggestionsTitle         | `Suggested contacts`                 |
