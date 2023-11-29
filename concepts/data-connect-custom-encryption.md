@@ -8,17 +8,16 @@ ms.prod: "data-connect"
 
 # Use encryption with Microsoft Graph Data Connect
 
-Microsoft Graph Data Connect (Data Connect) offers encryption capabilities through encryption-at-rest and encryption-in-transit. With [Azure Key Vault (AKV)](/azure/key-vault/general/basic-concepts), customers can generate and store their public and private keys in AKV and refresh them when needed. Custom encrypted datasets are also available. This article guides you through the process to set up custom encryption for a secure data delivery with Data Connect. 
+The following two types of encryption are available when using Microsoft Graph Data Connect (Data Connect): 
 
-- **Encryption for data-at-rest**: Customers can use the [Azure data-at-rest](/azure/security/fundamentals/encryption-atrest) encryption feature and customer managed keys when setting up their Azure storage account to ensure that it's properly locked and secure after data delivery. 
+- **Encryption for data-at-rest**: Customers can use the [Azure data-at-rest](/azure/security/fundamentals/encryption-atrest) encryption feature and customer managed keys when setting up their Azure storage account to ensure that it's properly locked and secure for data delivery. 
 
-- **Encryption for data-in-transit**: Data Connect offers encryption for data-in-transit through custom encryption with customer owned keys capability. It also ensures that all data requests between a customer’s Microsoft 365 and Azure resources are secure by using service standards that are [SOC approved](/compliance/regulatory/offering-soc-2), such as HTTPS.
+- **Encryption for data-in-transit**: Data Connect offers encryption for data-in-transit through our custom encryption with customer owned keys capability. It also ensures that all data requests between a customer’s Microsoft 365 and Azure resources are secure by using service standards that are [SOC approved](/compliance/regulatory/offering-soc-2).
 
-## Enable custom encryption with customer-owned keys
+We recommend developers use [Azure Key Vault (AKV)](/azure/key-vault/general/basic-concepts) to generate and store their public or private keys and refresh them when needed. This article guides you through our custom encryption feature which can be applied to the requested datasets in an application for a secure data delivery.
+## Enable custom encryption with customer-owned keys for encryption-in-transit
 
-Customers can use custom encryption for secure dataset delivery. Link your Azure Key Vault (AKV) during application registration to enable encryption. Data Connect encrypts datasets using authorized public keys and delivers them encrypted with a decryption key.
-
-Set up custom encryption by generating keys in AKV or linking an existing AKV. Enable encryption when setting up a new Data Connect application or edit an existing one.
+Customers (developers) can use custom encryption in their Data Connect application for an even more secure dataset delivery. To enable the feature, create and set up an AKV to generate RSA keys or ensure your existing AKV has the correct set up with RSA keys. Then, enable encryption when setting up a new Data Connect application or edit an existing one to toggle on encryption and link your current AKV. Data Connect encrypts datasets using authorized public keys from your AKV and delivers them encrypted along with a decryption key. The decryption key will be encrypted by Data Connect and can be decrypted using the customers' private key.
 
 > [!NOTE]
 > Custom encryption is not available to customers who are still using the PAM consent process or Managed Data Flows (MDF).
@@ -32,7 +31,7 @@ If you have an existing Data Connect application, use the following steps to ena
     2. Choose **properties** > **Single Tenant** and toggle on encryption.
     3. If you do not have an AKV, open a new tab and follow the instructions in [Setting up your Azure Key Vault](./data-connect-custom-encryption.md#using-azure-key-vault-for-custom-encryption). 
     4. Follow the steps in [Using your Azure Key Vault and Generating RSA keys with your Azure Key Vault ](./data-connect-custom-encryption.md#using-azure-key-vault-for-custom-encryption) to ensure that your AKV has the correct role permissions and is populated with RSA keys.
-    5. In the drop-down menu on the app, select your Azure Key Vault URI (name of the AKV).
+    5. In the drop-down menu on the Data Connect application, select your Azure Key Vault URI (name of the AKV).
     6. Choose **Update Properties** to save. Encryption will be applied when your admin approves the changes to the app properties.
 
     > [!NOTE]
@@ -46,8 +45,8 @@ If you don't have an existing Data Connect application, use the following steps 
 
 1. Follow the [getting started](/graph/data-connect-quickstart?tabs=NewConsentFlow%2CPAMMicrosoft365%2CAzureSynapsePipeline) guide and use [the simplified onboarding experience](./onboarding-experience-overview.md) to build your Data Connect application.
 
-2. Fill out the application details on the **Registration Info** page.
-    1. Under **Publish Type**, select **Single Tenant**. 
+2.  When you are on the [Register your Microsoft Entra application with Microsoft Graph Data Connect](https://learn.microsoft.com/en-us/graph/data-connect-quickstart?tabs=NewConsentFlow%2CPAMMicrosoft365%2CAzureSynapsePipeline&tutorial-step=4) step, keep in mind of the below:
+    1. Fill out the application details on the **Registration Info** page. 
     2. Choose **Enable encryption for datasets**.
     3. For **Key Vault**, from the drop-down menu, select the AKV URI (name of the AKV).
     4. If your AKV doesn't exist, open a new tab and follow the steps in [Setting up your Azure Key Vault](./data-connect-custom-encryption.md#using-azure-key-vault-for-custom-encryption). 
@@ -58,14 +57,14 @@ If you don't have an existing Data Connect application, use the following steps 
 
     ![Screenshot of the the Azure portal with Azure Key Vault and encryption boxed in](images/app-registration-encryption.png) 
 
-3. Fill out the rest of the required application details and submit the application for your Microsoft 365 admin to review. 
+4. Fill out the rest of the required application details and submit the application for your Microsoft 365 admin to review. 
     
     > [!NOTE]
     > Make a note of your existing service principal; you will need this later.
 
-4. After your admin reviews and approves your app, follow the steps in [Using your Azure Key Vault and Generating RSA keys with your Azure Key Vault ](./data-connect-custom-encryption.md#using-azure-key-vault-for-custom-encryption) to ensure that your AKV has the correct role permissions and is populated with RSA keys.
+5. Now that you have submitted the app, follow the steps in [Using your Azure Key Vault and Generating RSA keys with your Azure Key Vault ](./data-connect-custom-encryption.md#using-azure-key-vault-for-custom-encryption) to ensure that your AKV has the correct role permissions and is populated with RSA keys.
 
-5. Continue to set up your pipeline for data extraction and submit your data request. Encryption will be applied to all the eligible datasets in the application. If you run a pipeline without setting up the correct role permissions and generating RSA keys, your requested data will not be encrypted.
+6. Encryption will be applied to all the eligible datasets in the application once your admin approves the app. If you run a pipeline without setting up the correct role permissions and generating RSA keys in your AKV, your requested data will not be encrypted.
 
 ## Dataset decryption after data delivery
 
