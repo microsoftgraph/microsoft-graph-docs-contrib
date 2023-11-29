@@ -27,7 +27,7 @@ This is a Microsoft 365 applications installation options container object for a
 None.
 
 ## JSON representation
-The following JSON representation shows the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.appsInstallationOptionsForWindows"
