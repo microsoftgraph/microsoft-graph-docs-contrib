@@ -149,15 +149,9 @@ The `mgt-person-card` component defines the following CSS custom properties.
   --organization-coworker-border-color: purple;
   --organization-active-org-member-border-color: red;
 
-  /* To style the avatar-size in person-card organization */
+  /* Styling the avatar-size in person-card sections */
   --organization-member-person-avatar-size: 60px;
-
-  /* To style the avatar-size in in Works with section */
-
   --coworker-person-avatar-size: 50px;
-
-  /* To style the avatar-size in Direct report section */
-
   --direct-report-person-avatar-size: 40px;
 
   /** Files: Uses custom css properties for mgt-file-list and mgt-file */
