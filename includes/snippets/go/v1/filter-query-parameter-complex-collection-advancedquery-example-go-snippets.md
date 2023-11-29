@@ -20,7 +20,7 @@ headers := abstractions.NewRequestHeaders()
 headers.Add("ConsistencyLevel", "eventual")
 
 
-requestFilter := "NOT)"
+requestFilter := "NOT(imAddresses/any(i:i eq 'admin@contoso.com'))"
 requestCount := true
 
 requestParameters := &graphusers.UsersRequestBuilderGetQueryParameters{
