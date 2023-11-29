@@ -92,7 +92,6 @@ DELETE https://graph.microsoft.com/beta/networkaccess/FilteringProfiles/9020f79d
 
 ---
 
-
 ### Response
 The following example shows the response.
 <!-- {

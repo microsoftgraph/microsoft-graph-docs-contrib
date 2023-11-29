@@ -14,12 +14,9 @@ request_body = RestartPostRequestBody(
 	),
 )
 
-request_configuration = RestartRequestBuilder.RestartRequestBuilderPostRequestConfiguration(
-headers = {
-		'Authorization' : "Bearer <token>",
-}
+request_configuration = RestartRequestBuilder.RestartRequestBuilderPostRequestConfiguration()
+request_configuration.headers.add("Authorization", "Bearer <token>")
 
-)
 
 await graph_client.service_principals.by_service_principal_id('servicePrincipal-id').synchronization.jobs.by_synchronization_job_id('synchronizationJob-id').restart.post(request_body, request_configuration = request_configuration)
 
