@@ -126,7 +126,6 @@ ocp-client-version: 1.2
 
 ---
 
-
 #### Response
 
 The following example shows the response.
@@ -217,7 +216,6 @@ ocp-client-version: 1.2
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

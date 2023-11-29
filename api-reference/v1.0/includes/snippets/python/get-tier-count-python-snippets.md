@@ -17,11 +17,9 @@ query_params = UserRequestBuilder.UserRequestBuilderGetQueryParameters(
 
 request_configuration = UserRequestBuilder.UserRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
-headers = {
-			'ConsistencyLevel' : "eventual",
-}
-
 )
+request_configuration.headers.add("ConsistencyLevel", "eventual")
+
 
 result = await graph_client.groups.by_group_id('group-id').transitive_members.graph_user.get(request_configuration = request_configuration)
 
