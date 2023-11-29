@@ -76,6 +76,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#permissionGrants",
   "value": [

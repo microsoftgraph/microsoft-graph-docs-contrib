@@ -134,6 +134,7 @@ The following is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/teamwork/teamsAppSettings
 Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.teamsAppSettings",
   "isUserPersonalScopeResourceSpecificConsentEnabled": true
