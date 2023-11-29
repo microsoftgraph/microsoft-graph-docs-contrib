@@ -1,6 +1,6 @@
 ---
 title: "appsInstallationOptionsForMac resource type"
-description: "Represents the tenant-level Microsoft 365 Applications installation options for MAC platform."
+description: "Represents the tenant-level Microsoft 365 applications installation options for a MAC platform."
 author: "yan-git"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is a Microsoft 365 applications installation options container object for MAC platform. Specify whether users can install Microsoft 365 apps on their own MAC devices. If admins choose not to allow this, they can manually deploy apps to users instead.
+This is a Microsoft 365 applications installation options container object for a MAC platform. You can specify whether users can install Microsoft 365 apps on their own MAC devices. If admins choose not to allow this, they can manually deploy apps to users instead.
 
 ## Properties
 |Property|Type|Description|
@@ -25,7 +25,7 @@ This is a Microsoft 365 applications installation options container object for M
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.appsInstallationOptionsForMac"
