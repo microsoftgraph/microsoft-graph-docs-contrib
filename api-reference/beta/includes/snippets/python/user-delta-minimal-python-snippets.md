@@ -14,11 +14,9 @@ query_params = DeltaRequestBuilder.DeltaRequestBuilderGetQueryParameters(
 
 request_configuration = DeltaRequestBuilder.DeltaRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
-headers = {
-			'Prefer' : "return=minimal",
-}
-
 )
+request_configuration.headers.add("Prefer", "return=minimal")
+
 
 result = await graph_client.users.delta.get(request_configuration = request_configuration)
 

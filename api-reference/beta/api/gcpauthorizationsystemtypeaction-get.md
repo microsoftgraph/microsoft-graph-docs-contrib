@@ -58,6 +58,7 @@ If successful, this method returns a `200 OK` response code and a [gcpAuthorizat
 
 ### Request
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_gcpauthorizationsystemtypeaction"
@@ -67,6 +68,15 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.gcpAuthorizationSystem/actions/Y29tcHV0ZS5hZGRyZXNzZXMuY3JlYXRl
 ```
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-gcpauthorizationsystemtypeaction-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-gcpauthorizationsystemtypeaction-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 The following example shows the response.

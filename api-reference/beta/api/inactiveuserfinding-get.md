@@ -75,15 +75,25 @@ If successful, this method returns a `200 OK` response code and an [inactiveUser
 
 ### Request
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_inactiveuserfinding"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/MSxJbmFjdGl2ZVVzZXJGaW5kaW5nLDI0MTI5MA/microsoft.graph.inactiveUserFinding
 ```
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-inactiveuserfinding-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-inactiveuserfinding-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 The following example shows the response.

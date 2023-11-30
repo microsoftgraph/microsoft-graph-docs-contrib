@@ -59,6 +59,7 @@ If successful, this function returns a `200 OK` response code and a [permissions
 
 ### Request
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "inactiveazureserviceprincipalfindingthis.aggregatedsummary"
@@ -68,6 +69,11 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.superAzureServicePrincipalFinding/microsoft.graph.aggregatedSummary(authorizationSystemIds=['00f7dcae-97f9-492b-af2e-36eb35b613af'])
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/inactiveazureserviceprincipalfindingthisaggregatedsummary-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 The following example shows the response

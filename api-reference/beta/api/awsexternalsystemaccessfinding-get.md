@@ -54,6 +54,7 @@ If successful, this method returns a `200 OK` response code and an [awsExternalS
 
 ### Request
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_awsexternalsystemaccessfinding"
@@ -63,6 +64,15 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/MSxBd3NFeHRlcm5hbFN5c3RlbUFjY2Vzc0ZpbmRpbmcsMTg5NzE/microsoft.graph.awsExternalSystemAccessFinding
 ```
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-awsexternalsystemaccessfinding-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-awsexternalsystemaccessfinding-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 The following example shows the response.

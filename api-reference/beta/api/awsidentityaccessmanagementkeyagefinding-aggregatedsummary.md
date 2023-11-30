@@ -60,6 +60,7 @@ If successful, this function returns a `200 OK` response code and a [permissions
 
 ### Request
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "awsidentityaccessmanagementkeyagefindingthis.aggregatedsummary"
@@ -69,6 +70,11 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.awsIdentityAccessManagementKeyAgeFinding/microsoft.graph.aggregatedSummary(authorizationSystemIds=['377596131774'])
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/awsidentityaccessmanagementkeyagefindingthisaggregatedsummary-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 The following example shows the response.

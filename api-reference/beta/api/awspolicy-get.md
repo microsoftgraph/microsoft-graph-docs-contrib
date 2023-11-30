@@ -58,6 +58,7 @@ If successful, this method returns a `200 OK` response code and an [awsPolicy](.
 
 ### Request
 The following example shows a request to Retrieve the details of an AWS policy by its ID.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_awspolicy"
@@ -67,6 +68,15 @@ The following example shows a request to Retrieve the details of an AWS policy b
 GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.awsAuthorizationSystem/policies/YXJuOmF3czppYW06OjEyMzQ1Njc4OTAxMjpwb2xpY3kvQUFBLWxpc3RQdXRHZXRBbGxCdWNrZXRz
 ```
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-awspolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-awspolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 The following example shows the response

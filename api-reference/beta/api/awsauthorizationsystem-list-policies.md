@@ -61,6 +61,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following request lists all the policies for an AWS authorization system.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_awspolicy"
@@ -70,6 +71,15 @@ The following request lists all the policies for an AWS authorization system.
 GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.awsAuthorizationSystem/policies
 ```
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-awspolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-awspolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following example shows the response.
@@ -109,6 +119,7 @@ Content-Type: application/json
 
 The following request lists all policies named `AdministratorAccess` in an AWS authorization system.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_awspolicy2"
@@ -118,6 +129,15 @@ The following request lists all policies named `AdministratorAccess` in an AWS a
 GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.awsAuthorizationSystem/policies?$filter=displayName eq 'AdministratorAccess'
 ```
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-awspolicy2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-awspolicy2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following example shows the response.
@@ -151,6 +171,7 @@ Content-Type: application/json
 
 The following request lists all policies in an AWS authorization system where the policy name contains the word `Buckets`.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_awspolicy3"
@@ -160,6 +181,15 @@ The following request lists all policies in an AWS authorization system where th
 GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.awsAuthorizationSystem/policies?$filter=contains(displayName, 'Buckets')
 ```
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-awspolicy3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-awspolicy3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following example shows the response.

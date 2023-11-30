@@ -57,6 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 The following example shows a request  to list services for a provided AWS authorization system.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_authorizationsystemtypeservice1"
@@ -66,6 +67,15 @@ The following example shows a request  to list services for a provided AWS autho
 GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.awsAuthorizationSystem/services
 ```
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-authorizationsystemtypeservice1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-authorizationsystemtypeservice1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 The following example shows the response.
