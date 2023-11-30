@@ -1,36 +1,37 @@
 ---
-title: "Tasks component in Microsoft Graph Toolkit"
-description: "The Tasks component enables the user to view, add, remove, complete, or edit tasks. It works with any tasks in Microsoft Planner."
+title: "Planner component in Microsoft Graph Toolkit"
+description: "The Planner component enables the user to view, add, remove, complete, or edit tasks. It works with any tasks in Microsoft Planner."
 ms.localizationpriority: medium
 author: sebastienlevert
 ---
 
-# Tasks component in Microsoft Graph Toolkit
+# Planner component in Microsoft Graph Toolkit
 
-The Tasks component enables the user to view, add, remove, complete, or edit tasks from Microsoft Planner.
+The Planner component enables the user to view, add, remove, complete, or edit tasks from Microsoft Planner.
 
 In addition, a user is able to assign a single or multiple Microsoft Graph users to a task. For more details about Microsoft Graph assignments, see [plannerAssignments](/graph/api/resources/plannerassignments).
 
+> [!IMPORTANT] With the release of `@microsoft/mgt-components` version 4 the planner component replaces the old task component and no longer supports using Outlook Tasks as a data source.
+
 ## Example
 
-The following example displays the signed-in user's Microsoft Planner tasks using the `mgt-tasks` component. You can use the code editor to see how [properties](#properties) change the behavior of the component.
+The following example displays the signed-in user's Microsoft Planner tasks using the `mgt-planner` component. You can use the code editor to see how [properties](#properties) change the behavior of the component.
 
-<iframe src="https://mgt.dev/iframe.html?id=components-mgt-tasks--tasks&source=docs" height="500"></iframe>
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-planner--tasks&source=docs" height="500"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-tasks--tasks&source=docs)
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-planner--tasks&source=docs)
 
 ## Properties
 
 | Attribute                         | Property         | Description                                                                                            |
 | --------------------------------- | ---------------- | ------------------------------------------------------------------------------------------------------ |
 | read-only                         | readOnly         | A Boolean to set the task interface to be read only (no adding or removing tasks). Default is `false`. |
-| data-source                       | dataSource       | Determines which task source is loaded. Can be `planner` or `todo`. Default is `planner`.              |
 | hide-header                       | hideHeader       | A Boolean to show or hide the header of the component. Default is `false`.                             |
 | hide-options                      | hideOptions      | A Boolean to show or hide the options in tasks. Default is `false`.                                    |
-| initial-id="planner_id/folder_id" | initialId        | A string ID to set the initially displayed planner or folder to the provided ID.                       |
-| initial-bucket-id="bucket_id"     | initialBucketId  | A string ID to set the initially displayed bucket (Planner Data-Source Only) to the provided ID.       |
-| target-id="planner_id/folder_id"  | targetId         | A string ID to lock the tasks interface to the provided planner or folder ID.                          |
-| target-bucket-id="bucket_id"      | targetBucketId   | A string ID to lock the tasks interface to the provided bucket ID (Planner Data-Source Only).          |
+| initial-id="planner_id/folder_id" | initialId        | A string ID to set the initially displayed plan to the provided ID.                                    |
+| initial-bucket-id="bucket_id"     | initialBucketId  | A string ID to set the initially displayed bucket to the provided ID.                                  |
+| target-id="planner_id/folder_id"  | targetId         | A string ID to lock the tasks interface to the provided plan ID.                                       |
+| target-bucket-id="bucket_id"      | targetBucketId   | A string ID to lock the tasks interface to the provided bucket ID.                                     |
 | group-id                          | groupId          | A string ID to lock the tasks interface to the group ID.                                               |
 | -                                 | isNewTaskVisible | Determines whether new task view is visible at render.                                                 |
 | -                                 | taskFilter       | An optional function to filter which tasks are shown to the user.                                      |
@@ -38,20 +39,20 @@ The following example displays the signed-in user's Microsoft Planner tasks usin
 The following example shows only tasks from Planner with ID _12345_ and does not allow the user to create new tasks.
 
 ```html
-<mgt-tasks read-only initial-id="12345"></mgt-tasks>
+<mgt-planner read-only initial-id="12345"></mgt-planner>
 ```
 
 The following example shows how to filter tasks that only have _category3_ set.
 
 ```js
-let taskView = document.querySelector("mgt-tasks");
+let taskView = document.querySelector("mgt-planner");
 taskView.taskFilter = (task) => task.appliedCategories.category3 === true;
 ```
 
 ## Custom CSS variables
 
 ```html
-<mgt-tasks class="tasks"></mgt-tasks>
+<mgt-planner class="tasks"></mgt-planner>
 ```
 
 ```css
@@ -103,7 +104,7 @@ taskView.taskFilter = (task) => task.appliedCategories.category3 === true;
   --task-icons-width: 32px;
   --task-icons-height: 32px;
   --task-icons-background-color: purple;
-  --task-icons-text-font-color: burlywood;
+  --task-icons-text-font-color: black;
   --task-icons-text-font-size: 16px;
   --task-icons-text-font-weight: 400;
 
@@ -149,11 +150,11 @@ To learn more, see [styling components](../customize-components/style.md).
 ## Events
 
 | Event         | When is it emitted                                                   | Custom data                                                                                                                           | Cancelable | Bubbles | Works with custom template |
-| ------------- | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | :--------: | :-----: | :------------------------: |
-| `taskAdded`   | Fires when a new task has been created                               | Newly created task which can be a [plannerTask](/graph/api/resources/plannertask) our [outlookTask](/graph/api/resources/outlooktask) |     No     |   No    |            Yes             |
-| `taskChanged` | Fires when task metadata has been changed, such as marking completed | Updated task which can be a [plannerTask](/graph/api/resources/plannertask) our [outlookTask](/graph/api/resources/outlooktask)       |     No     |   No    |             No             |
-| `taskClick`   | Fires when the user clicks or taps on a task                         | `task` property with the selected [plannerTask](/graph/api/resources/plannertask) our [outlookTask](/graph/api/resources/outlooktask) |     No     |   No    |             No             |
-| `taskRemoved` | Fires when an existing task has been deleted                         | `task` property with the selected [plannerTask](/graph/api/resources/plannertask) our [outlookTask](/graph/api/resources/outlooktask) |     No     |   No    |             No             |
+| ------------- | -------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | :--------: | :-----: | :------------------------: |
+| `taskAdded`   | Fires when a new task has been created                               | Newly created task which is a [plannerTask](/graph/api/resources/plannertask)      |     No     |   No    |            Yes             |
+| `taskChanged` | Fires when task metadata has been changed, such as marking completed | Updated task which is a [plannerTask](/graph/api/resources/plannertask)            |     No     |   No    |             No             |
+| `taskClick`   | Fires when the user clicks or taps on a task                         | `task` property with the selected [plannerTask](/graph/api/resources/plannertask)  |     No     |   No    |             No             |
+| `taskRemoved` | Fires when an existing task has been deleted                         | `task` property with the selected [plannerTask](/graph/api/resources/plannertask)  |     No     |   No    |             No             |
 
 For more information about handling events, see [events](../customize-components/events.md).
 
@@ -183,15 +184,12 @@ This control uses the following Microsoft Graph APIs and permissions.
 
 | Configuration                                                                 | Permission          | API                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | ----------------------------------------------------------------------------- | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `groupId` set and `dataSource` set to `TasksSource.planner`                   | Group.Read.All      | [/groups/${group-id}/planner/plans](/graph/api/plannergroup-list-plans?tabs=http), [/planner/plans/${planId}/buckets](/graph/api/planner-list-buckets), [/planner/buckets/${bucketId}/tasks](/graph/api/planner-list-buckets)                                                                                                                                                                                                          |
-| `targetId` set and `dataSource` set to `TasksSource.todo`                     | Tasks.Read          | [/me/outlook/taskGroups](/graph/api/outlookuser-list-taskgroups?view=graph-rest-beta&preserve-view=true&tabs=http&viewFallbackFrom=graph-rest-1.0), [/me/outlook/taskGroups/${groupId}/taskFolders](/graph/api/outlooktaskfolder-list-tasks?view=graph-rest-beta&preserve-view=true&tabs=http), [/me/outlook/taskFolders/${folderId}/tasks](/graph/api/outlooktaskfolder-list-tasks?view=graph-rest-beta&preserve-view=true&tabs=http) |
-| `targetId` set and `dataSource` set to something else than `TasksSource.todo` | Group.Read.All      | [/planner/plans/${planId}](/graph/api/plannerplan-get?tabs=http), [/planner/plans/${planId}/buckets](/graph/api/plannerplan-list-buckets?tabs=http), [/planner/buckets/${bucketId}/tasks](/graph/api/plannerplan-list-tasks?tabs=http)                                                                                                                                                                                                 |
-| `dataSource` set to `TasksSource.planner`                                     | Group.Read.All      | [/me/planner/plans](/graph/api/planneruser-list-plans?tabs=http), [/planner/plans/${planId}/buckets](/graph/api/plannerplan-list-buckets?tabs=http), [/planner/buckets/${bucketId}/tasks](/graph/api/plannerplan-list-tasks?tabs=http)                                                                                                                                                                                                 |
-| `dataSource` set to `TasksSource.todo`                                        | Tasks.Read          | [/me/outlook/taskGroups](/graph/api/outlookuser-list-taskgroups?view=graph-rest-beta&preserve-view=true&tabs=http&viewFallbackFrom=graph-rest-1.0), [/me/outlook/taskGroups/${groupId}/taskFolders](/graph/api/outlooktaskfolder-list-tasks?view=graph-rest-beta&preserve-view=true&tabs=http), [/me/outlook/taskFolders/${folderId}/tasks](/graph/api/outlooktaskfolder-list-tasks?view=graph-rest-beta&preserve-view=true&tabs=http) |
-| `addTask` set to `true` and `dataSource` set to `TasksSource.planner`         | Group.ReadWrite.All | [/planner/tasks](/graph/api/planner-post-tasks?tabs=http)                                                                                                                                                                                                                                                                                                                                                                              |
-| `addTask` set to `true` and `dataSource` set to `TasksSource.todo`            | Tasks.ReadWrite     | [/me/outlook/taskFolders/${parentFolderId}/tasks](/graph/api/outlookuser-post-tasks?view=graph-rest-beta&preserve-view=true&tabs=csharp)                                                                                                                                                                                                                                                                                               |
+| default behavior                                                              | Group.Read.All      | [/me/planner/plans](/graph/api/planneruser-list-plans?tabs=http), [/planner/plans/${planId}/buckets](/graph/api/plannerplan-list-buckets?tabs=http), [/planner/buckets/${bucketId}/tasks](/graph/api/plannerplan-list-tasks?tabs=http)                                                                                                                                                                                                 |
+| `groupId` set                                                                 | Group.Read.All      | [/groups/${group-id}/planner/plans](/graph/api/plannergroup-list-plans?tabs=http), [/planner/plans/${planId}/buckets](/graph/api/planner-list-buckets), [/planner/buckets/${bucketId}/tasks](/graph/api/planner-list-buckets)                                                                                                                                                                                                          |
+| `targetId` set                                                                | Group.Read.All      | [/planner/plans/${planId}](/graph/api/plannerplan-get?tabs=http), [/planner/plans/${planId}/buckets](/graph/api/plannerplan-list-buckets?tabs=http), [/planner/buckets/${bucketId}/tasks](/graph/api/plannerplan-list-tasks?tabs=http)                                                                                                                                                                                                 |
+| create, update or delete task                                                 | Group.ReadWrite.All | [/planner/tasks](/graph/api/planner-post-tasks?tabs=http)                                                                                                                                                                                                                                                                                                                                                                              |
 
-For the Microsoft Planner data source, fetching and reading tasks requires the Groups.Read.All permission. Adding, updating, or removing tasks requires the Groups.ReadWrite.All permission.
+When using the mgt-planner component, fetching and reading tasks requires the Groups.Read.All permission. Adding, updating, or removing tasks requires the Groups.ReadWrite.All permission.
 
 ## Authentication
 
@@ -214,3 +212,8 @@ The control exposes the following variables that can be localized. For details a
 | due                   | `Due`               |
 | addTaskDate           | `Add the task date` |
 | assign                | `Assign`            |
+| planNotFound          | `Plan not found`    |
+| plansSelfAssigned     | `All Plans`         |
+| bucketNotFound        | `Bucket not found`  |
+| bucketsSelfAssigned   | `All Tasks`         |
+| baseSelfAssigned      | `Assigned to Me`    |
