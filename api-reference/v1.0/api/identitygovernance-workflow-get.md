@@ -13,7 +13,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Read the properties and relationships of a [workflow](../resources/identitygovernance-workflow.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

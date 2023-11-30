@@ -24,12 +24,9 @@ request_body = GetSchedulePostRequestBody(
 	availability_view_interval = 60,
 )
 
-request_configuration = GetScheduleRequestBuilder.GetScheduleRequestBuilderPostRequestConfiguration(
-headers = {
-		'Prefer' : "outlook.timezone=\"Pacific Standard Time\"",
-}
+request_configuration = GetScheduleRequestBuilder.GetScheduleRequestBuilderPostRequestConfiguration()
+request_configuration.headers.add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
 
-)
 
 result = await graph_client.me.calendar.get_schedule.post(request_body, request_configuration = request_configuration)
 
