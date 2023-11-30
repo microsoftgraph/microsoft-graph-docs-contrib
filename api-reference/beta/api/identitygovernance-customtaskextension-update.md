@@ -15,7 +15,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Update the properties of a [customTaskExtension](../resources/identitygovernance-customtaskextension.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
