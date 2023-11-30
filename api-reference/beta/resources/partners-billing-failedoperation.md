@@ -1,6 +1,6 @@
 ---
 title: "failedOperation resource type"
-description: "Failed export operation"
+description: "Represents an export operation that failed to complete."
 author: "abhishek-singh-ms"
 ms.localizationpriority: medium
 ms.prod: "reports"
@@ -15,24 +15,27 @@ Namespace: microsoft.graph.partners.billing
 
 Represents an export operation that failed to complete.
 
-Inherits from [microsoft.graph.partners.billing.operation](../resources/partners-billing-operation.md).
+Inherits from [operation](../resources/partners-billing-operation.md).
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|The start time of the operation in UTC|
-|id|String|Unique identifier. Inherited from [entity](../resources/entity.md).|
-|lastActionDateTime|DateTimeOffset|The time of the last action of the operation in UTC.|
-|status|operationStatus|Execution status. Possible value is: `failed`.|
-|status|operationStatus|Execution status. Possible value is: `failed`.|
+|createdDateTime|DateTimeOffset|The start time of the operation. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [operation](../resources/partners-billing-operation.md).|
+|id|String|The unique identifier for the **failedOperation**. Inherited from [operation](../resources/partners-billing-operation.md).|
+|lastActionDateTime|DateTimeOffset|The time of the last action of the operation. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [operation](../resources/partners-billing-operation.md).|
+|status|operationStatus|The status of the operation. Supports a subset of the values for **operationStatus**. Possible value is: `failed`. Inherited from [operation](../resources/partners-billing-operation.md).|
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
-|error|[publicError](../resources/publicError.md)|Metadata for the exported files.|
+|error|[publicError](../resources/publicerror.md)|Metadata for the exported files.|
 
 ## JSON representation
-The following JSON is a representation of the resource.
+
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -44,12 +47,9 @@ The following JSON is a representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.partners.billing.failedOperation",
-  "id": "String (identifier)",
   "createdDateTime": "String (timestamp)",
+  "id": "String (identifier)",
   "lastActionDateTime": "String (timestamp)",
-  "status": "String",
-  "error": {
-    "@odata.type": "microsoft.graph.publicError"
-  }
+  "status": "String"
 }
 ```
