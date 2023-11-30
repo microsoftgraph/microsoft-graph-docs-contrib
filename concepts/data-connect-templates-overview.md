@@ -26,59 +26,56 @@ The templates help you quickly provision Azure resources and provide data pipeli
 
 To learn more and get started with the Microsoft Graph Data Connect templates, see the [Data Connect solutions GitHub repository](https://github.com/microsoftgraph/dataconnect-solutions/tree/main).
 
-## Quick Start Templates
+## Quick start templates
 
-Quick Start Templates help to easily setup pipelines for extraction of Microsoft Graph Data Connect datasets along with the Azure resources to deploy them. Configuring data pipelines becomes expedite as the details of registered applications are used for efficiency. Currently, the Quick Start Templates only support Azure Data Factory as the platform and the Copy Activity as the Activity Type. Support for other platforms and activity types will follow.
+Quick start templates help you easily set up pipelines for extraction of Microsoft Graph Data Connect datasets along with the Azure resources to deploy them. The configuration of data pipelines becomes faster because the details of registered applications are used to increase efficiency. Currently, the quick start templates only support Azure Data Factory as the platform and copy activity as the activity type.
 
 ### Prerequisites
 
-To use the Quick Start Templates, ensure the following prerequisites are met: 
+To use the quick start templates, you need the following prerequisites:
 
-- The Microsoft Graph Data Connect application must be configured before using this feature. Refer to the instructions [here](/graph/data-connect-quickstart?tabs=AzureSynapsePipeline%2CMicrosoft365) on how to create a Microsoft Graph Data Connect application.
-- The application secret of the Azure Entra application used during Microsoft Graph Data Connect application registration. Refer to the instructions [here](/graph/data-connect-quickstart?tabs=NewConsentFlow%2CPAMMicrosoft365%2CAzureSynapsePipeline&tutorial-step=2).
-- A container in Azure storage destination to write data to. Refer to the instructions [here](/graph/data-connect-quickstart?tabs=NewConsentFlow%2CPAMMicrosoft365%2CAzureSynapsePipeline&tutorial-step=3).
+- A configured Microsoft Graph Data Connect application. For details on how to create a Microsoft Graph Data Connect application, see [Build your first Data Connect application](/graph/data-connect-quickstart?tabs=AzureSynapsePipeline%2CMicrosoft365).
+- The application secret of the Microsoft Entra application used for the Microsoft Graph Data Connect application registration. For details, see [Set up your Microsoft Entra application](/graph/data-connect-quickstart?tabs=NewConsentFlow%2CPAMMicrosoft365%2CAzureSynapsePipeline&tutorial-step=2).
+- An Azure Storage container to write data to. For details, see [Set up your Azure Storage resource](/graph/data-connect-quickstart?tabs=NewConsentFlow%2CPAMMicrosoft365%2CAzureSynapsePipeline&tutorial-step=3).
 
-### Instructions
+### Setting up a pipeline with a quick start template
 
-1) Open your application from the homepage of Microsoft Graph Data Connect in the Azure Portal and navigate to the Quick Start Templates tab:
+1) Open your application from the home page of Microsoft Graph Data Connect in the Azure Portal and navigate to the **Quick Start Templates** tab.
 
-![An image that shows the selection of the Quick Start Templates tab in the Microsoft Graph Data Connect extension in Azure Portal.](images/data-connect-templates-quickstart-1.png)
+![A screenshot that shows the selection of the Quick Start Templates tab in the Microsoft Graph Data Connect extension in the Azure Portal.](images/data-connect-templates-quickstart-1.png)
 
-2) Click Start in the Quick Pipeline Set-Up template.
+2) Click **Start** in the **Quick Pipeline Set-Up** template.
 
-![An image that shows Quick Pipeline Set-Up template within the Templates tab in the Microsoft Graph Data Connect extension in Azure Portal.](images/data-connect-templates-quickstart-2.png)
+![A screenshot that shows the Quick Pipeline Set-Up template within the Quick Start Templates tab in the Microsoft Graph Data Connect extension in the Azure Portal.](images/data-connect-templates-quickstart-2.png)
 
 3) Fill in the remaining values in the prepopulated custom deployment form.
 
-![An image that shows the custom deployment form to setup the Quick Pipeline Set-Up template for Microsoft Graph Data Connect.](images/data-connect-templates-quickstart-3.png)
+![A screenshot that shows the custom deployment form to setup the Quick Pipeline Set-Up template for Microsoft Graph Data Connect.](images/data-connect-templates-quickstart-3.png)
 
 The form is composed by the following fields:
-- **Resource Group**: The resource group where your storage account is located. This would be used for the Azure Data Factory location as well.
-- **Service Principal Id**: This is the Azure Entra application used to create an application with Microsoft Graph Data Connect. This field is *prepopulated*.
-- **Tenant Id**: This is the tenant for which data is being extracted. This field is *prepopulated*.
-- **Application Secret**: This is the secret value of the Azure Entra application used during registration.
+- **Resource group**: The resource group where your storage account is located. This would be used for the Azure Data Factory location as well.
+- **Service Principal Id**: A prepopulated field that shows the Microsoft Entra application ID used to create an application with Microsoft Graph Data Connect.
+- **Tenant Id**: A prepopulated field that shows the tenant for which data is being extracted.
+- **Application Secret**: The secret value of the Microsoft Entra application used during registration.
 - **Azure Data Factory Name**: This field is *prepopulated* by appending the unique string associated with the resource group ID to the string "datafactory". However, you can also provide an existing Azure Data Factory resource or enter a new unique name for a new Azure Data Factory resource.
-- **Datasets**: This field is *prepopulated*. One pipeline is generated per dataset.
-- **Storage Container**: The root container in the Azure storage destination where data will be written to. 
+- **Datasets**: A prepopulated field. One pipeline is generated per dataset.
+- **Destination Storage Account Uri**: A prepopulated field. The URI to use (Distributed File System (DFS) or blob) based on the registered application.
+- **Storage Container**: The root container in the Azure Storage destination where data is written to. 
 
-4) Click Review + Create to proceed.
+4) Click the **Review + create** tab to review your settings. After confirming that all details are correct, click the **Create** button to initiate the deployment. A deployment status screen appears to monitor the creation of the resources.
 
-A deployment status screen will appear to monitor the creation of the resources.
+![A screenshot that shows the progress of a custom deployment of Azure resources.](images/data-connect-templates-quickstart-4.png)
 
-![An image that shows the progress of a custom deployment of Azure resources.](images/data-connect-templates-quickstart-4.png)
+5) Navigate to the Azure Data Factory resource in the selected resource group. If a new Azure Data Factory resource was created during the deployment, you can click on the resource name from the **Deployment details** section.
 
-5) Navigate to the Azure Data Factory resource in the selected resource group.
+![A screenshot that shows the selection of an Azure Data Factory resource within the Deployment details section.](images/data-connect-templates-quickstart-6.png)
 
-If a new Azure Data Factory resource was created during the deployment, you can click on the resource name from the Deployment details pane.
+6) Select a dataset within a copy activity of a pipeline and configure the data filters for the extraction.
 
-![An image that shows the selection of an Azure Data Factory resource within the Deployment details pane.](images/data-connect-templates-quickstart-6.png)
+![A screenshot that shows how to configure dataset filters in an Azure Data Factory copy activity.](images/data-connect-templates-quickstart-5.png)
 
-6) Select a dataset within a Copy Activity of a pipeline and configure the data filters for the extraction.
+Before you trigger the pipeline, click on each copy activity to configure the applicable filters to each dataset. For more information about column filters, see [User selection and filtering capabilities in Microsoft Graph Data Connect](/graph/data-connect-filtering).
 
-![An image that shows how to configure dataset filters in an Azure Data Factory Copy Activity.](images/data-connect-templates-quickstart-5.png)
+7) Use the **Add trigger** button to trigger the pipeline.
 
-Before triggering the pipeline, click on each Copy Activity to configure the applicable filters to each dataset. For more information about column filters, visit the following documentation about [User selection and filtering capabilities in Microsoft Graph Data Connect](/graph/data-connect-filtering).
-
-7) Trigger the pipeline using the Add trigger button.
-
-![An image that highlights the Add trigger button in an Azure Data Factory pipeline.](images/data-connect-templates-quickstart-7.png)
+![A screenshot that highlights the Add trigger button in an Azure Data Factory pipeline.](images/data-connect-templates-quickstart-7.png)
