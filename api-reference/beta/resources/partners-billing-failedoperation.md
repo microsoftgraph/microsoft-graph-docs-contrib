@@ -30,7 +30,7 @@ Inherits from [operation](../resources/partners-billing-operation.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|error|[publicError](../resources/publicerror.md)|Metadata for the exported files.|
+|error|[publicError](../resources/publicerror.md)|Information about the error that caused the failure.|
 
 ## JSON representation
 
