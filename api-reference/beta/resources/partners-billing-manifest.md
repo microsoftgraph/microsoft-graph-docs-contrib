@@ -1,6 +1,6 @@
 ---
 title: "manifest resource type"
-description: "Manifest of exported data"
+description: "Represents metadata for the exported data."
 author: "abhishek-singh-ms"
 ms.localizationpriority: medium
 ms.prod: "reports"
@@ -13,35 +13,40 @@ Namespace: microsoft.graph.partners.billing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides metadata for the exported data. Client should use the metadata to get details of file to download from Azure blob storage.
+Represents metadata for the exported data. Use the metadata to get details of the file you want to download from an Azure Blob Storage.
 
-Inherits from [microsoft.graph.entity](../resources/entity.md).
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get manifest](../api/partners-billing-manifest-get.md)|[microsoft.graph.partners.billing.manifest](../resources/partners-billing-manifest.md)|Read the properties and relationships of a [microsoft.graph.partners.billing.manifest](../resources/partners-billing-manifest.md) object.|
+|[Get manifest](../api/partners-billing-manifest-get.md)|[microsoft.graph.partners.billing.manifest](../resources/partners-billing-manifest.md)|Read the properties and relationships of a [manifest](../resources/partners-billing-manifest.md) object.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|blobCount|Int32|Total file count for this Partner Tenant ID.|
-|blobs|[microsoft.graph.partners.billing.blob](../resources/partners-billing-blob.md) collection|A collection of blob objects having the details of all the files for the partner tenant ID.|
-|createdDateTime|DateTimeOffset|Manifest resource creation time in UTC.|
-|dataFormat|String|The billing data file format. Possible values `compressedJSONLines`. Each blob is a compressed file and data in the file is in [JSON lines](https://jsonlines.org/) format. Decompress the file to access the data.|
-|eTag|String|Version of data represented by manifest, any change in eTag indicates new data version.|
-|id|String|Unique identifier. Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|partitionType|String|This property divides the data. If a given partition has more than the supported number, the data is split into multiple files corresponding to the “partitionValue.” Data in the file is by default partitioned by the number of line items.|
-|partnerTenantId|String|Partner's Microsoft Entra ID Tenant ID.|
-|rootDirectory|String|The root directory containing all the files.|
-|sasToken|String|The SAS token for accessing the directory or individual file in the directory.|
-|schemaVersion|String|The manifest schema version.|
+|blobCount|Int32|Total file count for this partner tenant ID.|
+|blobs|[microsoft.graph.partners.billing.blob](../resources/partners-billing-blob.md) collection|A collection of blob objects that contain details of all the files for the partner tenant ID.|
+|createdDateTime|DateTimeOffset|The date and time when a manifest resource was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|dataFormat|String|The billing data file format. The possible value is: `compressedJSONLines`. Each blob is a compressed file and data in the file is in [JSON lines](https://jsonlines.org/) format. Decompress the file to access the data.|
+|eTag|String|Version of data represented by the manifest. Any change in **eTag** indicates new data version.|
+|id|String|The unique identifier for the **manifest**. Inherited from [entity](../resources/entity.md).|
+|partitionType|String|Indicates the division of data. If a given partition has more than the supported number, the data is split into multiple files corresponding to the **partitionValue**. By default, the data in the file is partitioned by the number of line items.|
+|partnerTenantId|String|The Microsoft Entra tenant ID of the partner.|
+|rootDirectory|String|The root directory that contains all the files.|
+|sasToken|String|The SAS token for accessing the directory or an individual file in the directory.|
+|schemaVersion|String|The version of the manifest schema.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
-The following JSON is a representation of the resource.
+
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -52,22 +57,16 @@ The following JSON is a representation of the resource.
 -->
 ``` json
 {
-   "id": "6fe687d7-1e0f-4bd6-9091-4672691f64bc",
-   "schemaVersion": "1",
-   "dataFormat": "compressedJSON",
-   "createdDateTime": "2023-03-09T06:34:34.87Z",
-   "eTag": "WYjLro78HdMg6vUWR",
-   "partnerTenantId": "0e195b37-4574-4539-bc42-0e539b9684c0",
-   "rootDirectory": "https://adlsreconbuprodeastus201.blob.core.windows.net/{directory_path}",
-   "sasToken": "{SAS}",
-   "partitionType": "Default",
-   "blobCount": 1,
-   "blobs": [
-       {
-         "name": "part-00049-b016029b-a7a7-4c46-9b5e-c925ac317ac6.c000.json.gz",
-         "partitionValue": "default",
-       }
-   ]
- }
+  "blobCount": "Int32",
+  "blobs": [{"@odata.type": "microsoft.graph.partners.billing.blob"}]
+  "createdDateTime": "String (timestamp)",
+  "dataFormat": "String",
+  "eTag": "String",
+  "id": "String (identifier)",
+  "partitionType": "String",
+  "partnerTenantId": "String",
+  "rootDirectory": "String",
+  "sasToken": "String",
+  "schemaVersion": "String",
+}
 ```
-
