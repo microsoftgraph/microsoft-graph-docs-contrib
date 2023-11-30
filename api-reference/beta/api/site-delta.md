@@ -18,7 +18,7 @@ The service begins enumerating sites and returns pages of changes to these sites
 Your application should continue making calls using the **@odata.nextLink** until there is an **@odata.deltaLink**  in the response.
 
 Once you have received all the changes, you can apply them to your local state..
-To check for changes in the future, call `delta` again with the **@odata.deltaLink** from the previous response.
+To monitor future changes, call the `delta` API using the **@odata.deltaLink** in the previous response.
 
 Deleted sites are returned with the [deleted](../resources/deleted.md) facet.
 Resources with this property set should be removed from your local state.
