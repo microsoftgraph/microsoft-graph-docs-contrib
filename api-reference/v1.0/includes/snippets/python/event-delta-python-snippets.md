@@ -15,11 +15,9 @@ query_params = DeltaRequestBuilder.DeltaRequestBuilderGetQueryParameters(
 
 request_configuration = DeltaRequestBuilder.DeltaRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
-headers = {
-			'Prefer' : "odata.maxpagesize=2",
-}
-
 )
+request_configuration.headers.add("Prefer", "odata.maxpagesize=2")
+
 
 result = await graph_client.me.calendar_view.delta.get(request_configuration = request_configuration)
 

@@ -1,7 +1,7 @@
 ---
 title: "Delete conversation thread"
 description: "Delete a thread object."
-author: "Jordanndahl"
+author: "mikemcleanlive"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType

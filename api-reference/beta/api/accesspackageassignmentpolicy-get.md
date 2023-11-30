@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), retrieve the properties and relationships of an
  [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
