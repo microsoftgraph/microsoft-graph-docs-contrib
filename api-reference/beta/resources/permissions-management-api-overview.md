@@ -98,7 +98,7 @@ Other findings include:
 
 ## Permissions and privileges
 
-To call the permissions management APIs, the caller doesn't need any Microsoft Graph permissions. However, they must have appropriate permissions in the Microsoft Entra tenant and in the external system.
+To call the permissions management APIs, the caller doesn't need any Microsoft Graph permissions. However, they must have appropriate privileges in the Microsoft Entra tenant and in the external system.
 
 For more information, see [Permissions Management roles and permissions levels](/entra/permissions-management/product-roles-permissions)
 
