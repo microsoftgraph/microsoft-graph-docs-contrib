@@ -59,6 +59,7 @@ Keep the following tips in mind:
 * You can ignore **SubscriptionExpirationDateTime** and **SubscriptionId**.
 * The change notification is for Microsoft Graph connector management only when the @odata.type of the resource data matches the one in the sample payload.
 * The **tenantId** identified is the customer's tenant ID. When calling the Microsoft Graph API to [manage Microsoft Graph connections](/graph/connecting-external-content-manage-connections), you must generate the app token on behalf of this customer's tenant ID.
+* You can call the Microsoft Graph API to get the customers's display name and default domain name. This can help you map the **tenantId** to the unique identifier in your system. To learn more, please reference [find tenant information by tenant ID](https://learn.microsoft.com/graph/api/tenantrelationship-findtenantinformationbytenantid?view=graph-rest-1.0&tabs=http).
 * Within **resourceData**, use **state** to determine whether to create or delete connections. **connectorsTicket** are needed when creating the connections.
 
 ### Handling "connector enable" notification
