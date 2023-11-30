@@ -1,6 +1,6 @@
 ---
 title: "runningOperation resource type"
-description: "Export operation that is still running."
+description: "Represents an export operation that is still running, indicating that the files aren't ready yet."
 author: "abhishek-singh-ms"
 ms.localizationpriority: medium
 ms.prod: "reports"
@@ -13,23 +13,27 @@ Namespace: microsoft.graph.partners.billing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Export operation that is still running and files aren't yet ready.
+Represents an export operation that is still running, indicating that the files aren't ready yet.
 
-Inherits from [microsoft.graph.partners.billing.operation](../resources/partners-billing-operation.md).
+Inherits from [operation](../resources/partners-billing-operation.md).
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|The start time of the operation in UTC|
-|id|String|Unique identifier. Inherited from [entity](../resources/entity.md).|
-|lastActionDateTime|DateTimeOffset|The time of the last action of the operation in UTC.|
-|status|operationStatus|Execution status. Possible value is: `notStarted`, `running`.|
+|createdDateTime|DateTimeOffset|The start time of the operation. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [operation](../resources/partners-billing-operation.md).|
+|id|String|The unique identifier for the **runningOperation**. Inherited from [operation](../resources/partners-billing-operation.md).|
+|lastActionDateTime|DateTimeOffset|The time of the last action of the operation. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [operation](../resources/partners-billing-operation.md).|
+|status|operationStatus|The status of the operation. Supports a subset of the values for **operationStatus**. Possible values are: `notStarted`, `running`. Inherited from [operation](../resources/partners-billing-operation.md).|
 
 ## Relationships
+
 None.
 
 ## JSON representation
-The following JSON is a representation of the resource.
+
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -41,10 +45,9 @@ The following JSON is a representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.partners.billing.runningOperation",
-  "id": "String (identifier)",
   "createdDateTime": "String (timestamp)",
+  "id": "String (identifier)",
   "lastActionDateTime": "String (timestamp)",
   "status": "String"
 }
 ```
-
