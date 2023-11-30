@@ -26,12 +26,12 @@ You can download the usage data asynchronously using three new steps (API endpoi
 Use this API to access billed or unbilled consumption line items. It returns a 202 HTTP status and a location header with the URL, which you must poll at regular intervals until you receive a success status with a manifest URL
 
 ### Operation status endpoint
-Until you receive the success status, keep polling this API at a regular interval. If the requested data is unavailable, the API response includes a Retry-After header indicating how long you should wait before sending another request. When operation has completed successfully, response also provides [Manifest](../resources/partners-billing-manifest.md) with details of the generated files. Manifest provides a storage folder from which actual billing data can be downloaded. The response splits or partitions the files to optimize throughput and I/O parallelism
+Until you receive the success status, keep polling this API at a regular interval. If the requested data is unavailable, the API response includes a Retry-After header indicating how long you should wait before sending another request. When operation has completed successfully, response also provides [manifest](../resources/partners-billing-manifest.md) with details of the generated files. Manifest provides a storage folder from which actual billing data can be downloaded. The response splits or partitions the files to optimize throughput and I/O parallelism
 
 ## Sequence diagram
 The following diagram depicts the steps needed to download reconciliation data.
 
-![Export data sequence diagram](LRO_SequenceDiagram.png)
+![Export data sequence diagram](../../includes/lro_sequencediagram.png)
 
 1. [Export billed usage data](../api/partners-billing-billedusage-export.md)
 2. [Export unbilled usage data](../api/partners-billing-unbilledusage-export.md)
