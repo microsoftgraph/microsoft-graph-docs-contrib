@@ -273,7 +273,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "socialIdentitySource",
           "ChangeType": "Addition",
-          "Description": "Added the [socialIdentitySource](https://learn.microsoft.com/graph/api/resources/socialIdentitySource?view=graph-rest-beta) resource type.",
+          "Description": "Added the [socialIdentitySource](https://learn.microsoft.com/en-us/graph/api/resources/socialIdentitySource?view=graph-rest-beta) resource type.",
           "Target": "socialIdentitySource"
         }
       ],
@@ -299,7 +299,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "socialIdentitySource",
           "ChangeType": "Addition",
-          "Description": "Added the [socialIdentitySource](https://learn.microsoft.com/graph/api/resources/socialIdentitySource?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [socialIdentitySource](https://learn.microsoft.com/en-us/graph/api/resources/socialIdentitySource?view=graph-rest-1.0) resource type.",
           "Target": "socialIdentitySource"
         }
       ],
