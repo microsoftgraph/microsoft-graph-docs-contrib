@@ -311,6 +311,14 @@ Messages Section
 | -------------------------- | ------------------------- |
 | emailsSectionTitle         | `Emails`                  |
 
+Files Section
+
+| String name        | Default value     |
+| ------------------ | ----------------- |
+| showMoreSubtitle   | `Show more items` |
+| filesSectionTitle  | `Files`           |
+| sharedTextSubtitle | `Shared`          |
+
 Profile Section
 
 | String name                          | Default value             |
