@@ -14,7 +14,7 @@ doc_type: apiPageType
 Get newly created, updated, or deleted [sites](../resources/site.md) without having to perform a full read of the entire sites collection.
 
 The application calls the API without specifying any parameters.
-The service starts enumerating sites, returning pages of changes to sites and either an **@odata.nextLink** or an **@odata.deltaLink**.
+The service begins enumerating sites and returns pages of changes to these sites, accompanied by either an **@odata.nextLink** or an **@odata.deltaLink**.
 Your application should continue making calls using the **@odata.nextLink** until there is an **@odata.deltaLink**  in the response.
 
 Once you have received all the changes, you can apply them to your local state..
