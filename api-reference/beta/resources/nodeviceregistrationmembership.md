@@ -1,6 +1,6 @@
 ---
 title: "noDeviceRegistrationMembership resource type"
-description: "Indicates the users and groups this device registration policy applies."
+description: "Indicates that no users are allowed to join or register devices."
 author: "SanDeo-MSFT"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Indicates that this device registration policy doesn't apply to any users or groups. Inherits from [deviceRegistrationMembership](../resources/deviceregistrationmembership.md).
+Indicates that no users are allowed to join or register devices. Inherits from [deviceRegistrationMembership](../resources/deviceregistrationmembership.md).
 
 ## Properties
 None.
