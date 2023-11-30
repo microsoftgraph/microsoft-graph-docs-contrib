@@ -16,16 +16,20 @@ Namespace: microsoft.graph.partners.billing
 Represents a billing blob that contains exported data.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |name|String|The name of blob.|
 |partitionValue|String|The partition that contains the file. A large partition is split into multiple files, each with the same **partitionValue**.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.partners.billing.blob"
