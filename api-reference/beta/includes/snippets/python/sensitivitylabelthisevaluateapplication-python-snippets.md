@@ -76,12 +76,9 @@ request_body = EvaluateApplicationPostRequestBody(
 	),
 )
 
-request_configuration = EvaluateApplicationRequestBuilder.EvaluateApplicationRequestBuilderPostRequestConfiguration(
-headers = {
-		'User-Agent' : "ContosoLobApp/1.0",
-}
+request_configuration = EvaluateApplicationRequestBuilder.EvaluateApplicationRequestBuilderPostRequestConfiguration()
+request_configuration.headers.add("User-Agent", "ContosoLobApp/1.0")
 
-)
 
 result = await graph_client.users.by_user_id('user-id').security.information_protection.sensitivity_labels.microsoft_graph_security_evaluate_application.post(request_body, request_configuration = request_configuration)
 

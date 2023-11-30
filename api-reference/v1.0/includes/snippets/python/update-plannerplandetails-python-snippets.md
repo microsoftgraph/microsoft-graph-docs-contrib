@@ -21,13 +21,10 @@ request_body = PlannerPlanDetails(
 	),
 )
 
-request_configuration = DetailsRequestBuilder.DetailsRequestBuilderPatchRequestConfiguration(
-headers = {
-		'Prefer' : "return=representation",
-		'If-Match' : "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"",
-}
+request_configuration = DetailsRequestBuilder.DetailsRequestBuilderPatchRequestConfiguration()
+request_configuration.headers.add("Prefer", "return=representation")
+request_configuration.headers.add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 
-)
 
 result = await graph_client.planner.plans.by_planner_plan_id('plannerPlan-id').details.patch(request_body, request_configuration = request_configuration)
 

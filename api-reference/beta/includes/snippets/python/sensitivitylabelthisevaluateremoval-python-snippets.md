@@ -54,12 +54,9 @@ request_body = EvaluateRemovalPostRequestBody(
 	),
 )
 
-request_configuration = EvaluateRemovalRequestBuilder.EvaluateRemovalRequestBuilderPostRequestConfiguration(
-headers = {
-		'User-Agent' : "ContosoLOBApp/1.0",
-}
+request_configuration = EvaluateRemovalRequestBuilder.EvaluateRemovalRequestBuilderPostRequestConfiguration()
+request_configuration.headers.add("User-Agent", "ContosoLOBApp/1.0")
 
-)
 
 result = await graph_client.users.by_user_id('user-id').security.information_protection.sensitivity_labels.microsoft_graph_security_evaluate_removal.post(request_body, request_configuration = request_configuration)
 
