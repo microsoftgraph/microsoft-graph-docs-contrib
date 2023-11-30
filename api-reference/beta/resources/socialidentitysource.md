@@ -15,7 +15,6 @@ Namespace: microsoft.graph
 
 Used in the identity sources of an [connectedOrganization](connectedOrganization.md). The `@odata.type` value `#microsoft.graph.socialIdentitySource` indicates that this type identifies a social identity as an identity source for a connected organization.
 
-
 Inherits from [identitySource](../resources/identitysource.md).
 
 ## Properties
