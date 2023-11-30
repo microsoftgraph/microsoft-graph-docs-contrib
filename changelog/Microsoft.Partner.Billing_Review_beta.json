@@ -87,8 +87,8 @@
       "Cloud": "Review",
       "Version": "beta",
       "CreatedDateTime": "2023-11-27T08:51:46.3920632Z",
-      "WorkloadArea": "Partner billing reports",
-      "SubArea": ""
+      "WorkloadArea": "Reports",
+      "SubArea": "Partner billing reports"
     }
   ]
 }
