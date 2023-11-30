@@ -159,7 +159,7 @@ Content-type: application/json
       "deleted": {
         "state": "deleted"
       },
-      "@remmoved": {
+      "@removed": {
         "reason": "deleted"
       }
     },
