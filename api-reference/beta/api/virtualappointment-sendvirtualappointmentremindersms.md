@@ -74,8 +74,8 @@ The following example shows a request.
 POST https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/sendVirtualAppointmentReminderSms
 
 {
-“phoneNumbers”: [ “+13129224122”, “+1242421412”],
-“remindBeforeTimeInMinutesType”: "mins15"
+"phoneNumbers": [ "+13129224122", "+1242421412"],
+"remindBeforeTimeInMinutesType": "mins15"
 }
 ```
 
@@ -91,6 +91,4 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 202 Accepted
-Content-Type: application/json
-
 ```
