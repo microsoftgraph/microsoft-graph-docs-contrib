@@ -1,6 +1,6 @@
 ---
 title: "blob resource type"
-description: "Billing blob containing exported data."
+description: "Represents a billing blob that contains exported data."
 author: "abhishek-singh-ms"
 ms.localizationpriority: medium
 ms.prod: "reports"
@@ -13,19 +13,19 @@ Namespace: microsoft.graph.partners.billing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exported billing data.
+Represents a billing blob that contains exported data.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|Name of blob |
-|partitionValue|String|The partition that contains the file. A large partition is split into multiple files, each with the same “partitionValue.”|
+|name|String|The name of blob.|
+|partitionValue|String|The partition that contains the file. A large partition is split into multiple files, each with the same **partitionValue**.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following JSON is a representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.partners.billing.blob"
@@ -33,8 +33,7 @@ The following JSON is a representation of the resource.
 -->
 ``` json
 {
-  "name": "part-00049-b016029b-a7a7-4c46-9b5e-c925ac317ac6.c000.json.gz",
-  "partitionValue": "default",
+  "name": "String",
+  "partitionValue": "String"
 }
 ```
-
