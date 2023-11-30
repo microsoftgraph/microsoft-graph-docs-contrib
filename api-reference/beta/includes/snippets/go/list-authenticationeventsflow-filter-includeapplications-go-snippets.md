@@ -16,7 +16,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-requestFilter := "microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/conditions/applications/includeApplications/any"
+requestFilter := "microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/conditions/applications/includeApplications/any(appId:appId/appId eq '63856651-13d9-4784-9abf-20758d509e19')"
 
 requestParameters := &graphidentity.IdentityAuthenticationEventsFlowsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
