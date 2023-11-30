@@ -162,7 +162,7 @@ Content-type: application/json
       "name": "teamSiteA",
       "deleted": {
         "state": "deleted"
-      }
+      },
       "@removed": {
         "reason": "deleted"
       }
