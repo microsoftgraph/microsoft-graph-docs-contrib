@@ -17,13 +17,13 @@ Defines the invitation redemption provider configuration base type to set redemp
 
 Two types of identity providers are in the precedence order: primary identity providers and fallback identity providers. Fallback identity providers are used when no primary identity provider is available and must always be specified.
 
-Primary identity providers are the following:
+The primary identity providers are:
 
 - azureActiveDirectory: Any user located in another Microsoft Entra ID tenant.
 - externalFederation: Any user located in an identity provider associated with a SAML or WS-Federation relationship.
 - socialIdentityProviders: Any user using a gmail.com account when Google Federation is configured.
 
-Fallback identity providers are the following:
+The fallback identity providers are:
 
 - defaultConfiguredIdp: Check for an existing Microsoft account, then use a one-time email passcode (if enabled), and finally, create a new Microsoft account if no primary identity providers are available for the user.
 - emailOneTimePasscode: Always use one-time email passcode if no primary identity providers are available for the user.
@@ -42,7 +42,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.invitationRedemptionIdentityProviderConfiguration"
