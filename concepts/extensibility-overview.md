@@ -14,7 +14,7 @@ ms.date: 11/29/2023
 
 Microsoft Graph provides a single API endpoint to access rich people-centric data and insights through resources such as [user](/graph/api/resources/user) and [message](/graph/api/resources/message). You can also extend Microsoft Graph by adding custom properties to resource instances without requiring an external data store.
 
-In this article, we discuss how Microsoft Graph supports extending its resources, the options available to add custom properties and when to use them.
+This article describes how Microsoft Graph supports extending its resources, the options available to add custom properties, and when to use them.
 
 > [!IMPORTANT]
 > Do not use extensions to store sensitive personally identifiable information, such as account credentials, government identification numbers, cardholder data, financial account data, healthcare information, or sensitive background information.
