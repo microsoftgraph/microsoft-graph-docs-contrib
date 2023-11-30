@@ -13,9 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides the last interactive or non-interactive sign-in **attempt** time for a specific [user](user.md). Since signInActivity describes a property of the user object, Microsoft Entra ID stores signinactivity for your users for as long as the user object exists.               
-**Effective 12/8/2023:** 
-Additional property added to display the last **successful** signIn time for a specific user, regardless if the signIn was interactive or non-interactive. Note: data will not be backfilled for this property so you should expect to be returned only successful signIn data starting 12/8/2023
+Provides the last interactive or non-interactive sign-in *attempt* time for a specific [user](user.md). Since **signInActivity** describes a property of the user object, Microsoft Entra ID stores sign-in activity for your users for as long as the user object exists.
+
+Effective December 1, 2023, the **lastSuccessfulSignInDateTime** property is available to provide the last *successful* sign-in time for a specific user, regardless of whether the sign-in was interactive or non-interactive. The data isn't backfilled for this property.
+
 ## Properties
 
 | Property     | Type        | Description |
