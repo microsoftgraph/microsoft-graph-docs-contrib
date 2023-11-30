@@ -16,7 +16,7 @@ Get the [presence](../resources/presence.md) information for multiple users.
 > **Note:**
 > This API allows users to subscribe only to another user's presence. If an application wants to subscribe to presence information for all users, it uses fictitious users to create the subscription to collect the required data.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).

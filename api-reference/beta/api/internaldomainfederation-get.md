@@ -22,10 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "internaldomainfederation_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/internaldomainfederation-get-permissions.md)]
 
-The calling user must be assigned one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json):
-
-- Security Administrator
-- External Identity Provider Administrator
+[!INCLUDE [rbac-domainfederation-apis-read](../includes/rbac-for-apis/rbac-domainfederation-apis-read.md)]
 
 ## HTTP request
 
