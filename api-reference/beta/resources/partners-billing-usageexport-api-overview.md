@@ -64,8 +64,9 @@ This section describes the ways that Microsoft partners can use the billing APIs
 
 ## Permissions
 
-To export reconciliation data, the calling principal must be in the partner tenant and be granted the appropriate [partner billing privilege permissions](../includes/permissions/partners-permissions.md).
+To export reconciliation data, the calling principal must be in the partner tenant and be granted the appropriate partner billing privilege permissions. This API supports the following partner permissions.
 
+[!INCLUDE [permissions-table](../includes/permissions/partners-permissions.md)]
 
 <!-- Start of: Link to ZT guidance: H2 section -->
 
