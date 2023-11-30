@@ -32,8 +32,8 @@ The following key API scenarios allow you to retrieve details for authorization 
 |--|--|
 | Retrieve authorization systems | [List authorizationSystems](../api/externalconnectors-external-list-authorizationsystems.md) |
 | Get details for an AWS authorization system | [List awsAuthorizationSystems](../api/awsauthorizationsystem-list.md) |
-| Get details for an Azure authorization system | [List awsAuthorizationSystems](../api/azureauthorizationsystem-list.md) |
-| Get details for a GCP authorization system | [List awsAuthorizationSystems](../api/gcpauthorizationsystem-list.md) |
+| Get details for an Azure authorization system | [List azureAuthorizationSystems](../api/azureauthorizationsystem-list.md) |
+| Get details for a GCP authorization system | [List gcpAuthorizationSystems](../api/gcpauthorizationsystem-list.md) |
 
 Discover the API operations quick reference for [AWS authorization systems](/graph/permissions-management-how-to-authorization-system-aws), [Azure authorization systems](/graph/permissions-management-how-to-authorization-system-azure), and [GCP authorization systems](/graph/permissions-management-how-to-authorization-system-gcp).
 

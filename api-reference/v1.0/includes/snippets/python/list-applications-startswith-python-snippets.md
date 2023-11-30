@@ -17,11 +17,9 @@ query_params = ApplicationsRequestBuilder.ApplicationsRequestBuilderGetQueryPara
 
 request_configuration = ApplicationsRequestBuilder.ApplicationsRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
-headers = {
-			'ConsistencyLevel' : "eventual",
-}
-
 )
+request_configuration.headers.add("ConsistencyLevel", "eventual")
+
 
 result = await graph_client.applications.get(request_configuration = request_configuration)
 

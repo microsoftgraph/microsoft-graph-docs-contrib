@@ -38,12 +38,9 @@ request_body = Event(
 	transaction_id = "7E163156-7762-4BEB-A1C6-729EA81755A7",
 )
 
-request_configuration = EventsRequestBuilder.EventsRequestBuilderPostRequestConfiguration(
-headers = {
-		'Prefer' : "outlook.timezone=\"Pacific Standard Time\"",
-}
+request_configuration = EventsRequestBuilder.EventsRequestBuilderPostRequestConfiguration()
+request_configuration.headers.add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
 
-)
 
 result = await graph_client.me.events.post(request_body, request_configuration = request_configuration)
 
