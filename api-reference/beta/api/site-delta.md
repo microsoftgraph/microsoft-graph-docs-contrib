@@ -15,7 +15,7 @@ Get newly created, updated, or deleted [sites](../resources/site.md) without hav
 
 The application calls the API without specifying any parameters.
 The service starts enumerating sites, returning pages of changes to sites and either an **@odata.nextLink** or an **@odata.deltaLink**.
-Your app should continue calling with the **@odata.nextLink** until you see an **@odata.deltaLink** returned.
+Your application should continue making calls using the **@odata.nextLink** until there is an **@odata.deltaLink**  in the response.
 
 After you receive all the changes, you can apply them to your local state.
 To check for changes in the future, call `delta` again with the **@odata.deltaLink** from the previous response.
