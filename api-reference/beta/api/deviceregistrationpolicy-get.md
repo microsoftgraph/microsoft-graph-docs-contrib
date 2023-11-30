@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/beta/policies/deviceRegistrationPolicy
 
 ### Response
 
-The following is an example of a response that shows the default settings for the device registration policy.
+The following example shows the response with default settings for the device registration policy.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

@@ -14,9 +14,6 @@ Namespace: microsoft.graph
 
 Represents the policy scope that controls quota restrictions, additional authentication, and authorization policies to register device identities to your organization.
 
-> [!CAUTION]
-> We're introducing breaking changes in the week of September 25, 2023 to this resource type and require that all customers take note of these changes and prioritize modifying their applications that depend on this resource type. For more information about the breaking changes, see the [Microsoft Entra Blog](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/important-update-to-deviceregistrationpolicy-resource-type-for/ba-p/3912000).
-
 ## Methods
 
 |Method|Return type|Description|
@@ -44,7 +41,7 @@ None.
 
 ## JSON representation
 
-The Here's is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
