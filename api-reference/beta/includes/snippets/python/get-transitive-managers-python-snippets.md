@@ -15,11 +15,9 @@ query_params = MeRequestBuilder.MeRequestBuilderGetQueryParameters(
 
 request_configuration = MeRequestBuilder.MeRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
-headers = {
-			'ConsistencyLevel' : "eventual",
-}
-
 )
+request_configuration.headers.add("ConsistencyLevel", "eventual")
+
 
 result = await graph_client.me.get(request_configuration = request_configuration)
 
