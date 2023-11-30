@@ -10,9 +10,7 @@ graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AccessPackageResourceRoleScope(
 	role = AccessPackageResourceRole(
-		id = "6646a29e-da03-49f6-bcd9-dec124492de3",
 		display_name = "Contributors",
-		description = None,
 		origin_system = "SharePointOnline",
 		origin_id = "4",
 		resource = AccessPackageResource(
@@ -20,7 +18,6 @@ request_body = AccessPackageResourceRoleScope(
 		),
 	),
 	scope = AccessPackageResourceScope(
-		id = "5ae0ae7c-d0a5-42aa-ab37-1f15e9a61d33",
 		display_name = "Root",
 		description = "Root Scope",
 		origin_id = "https://contoso.sharepoint.com/portals/Community",

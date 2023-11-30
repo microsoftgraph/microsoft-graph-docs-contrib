@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get the properties of an existing [accessPackageSubject](../resources/accesspackagesubject.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
