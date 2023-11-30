@@ -21,10 +21,10 @@ Inherits from [operation](../resources/partners-billing-operation.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|The start time of the operation. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|id|String|Unique identifier. Inherited from [entity](../resources/entity.md).|
-|lastActionDateTime|DateTimeOffset|The time of the last action of the operation. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|status|operationStatus|The status of the operation. Possible value is: `completed`.|
+|createdDateTime|DateTimeOffset|The start time of the operation. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [operation](../resources/partners-billing-operation.md).|
+|id|String|The unique identifier for the **exportSuccessOperation**. Inherited from [operation](../resources/partners-billing-operation.md).|
+|lastActionDateTime|DateTimeOffset|The time of the last action of the operation. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [operation](../resources/partners-billing-operation.md).|
+|status|operationStatus|The status of the operation. Possible value is: `completed`. Inherited from [operation](../resources/partners-billing-operation.md).|
 
 ## Relationships
 
@@ -34,7 +34,7 @@ Inherits from [operation](../resources/partners-billing-operation.md).
 
 ## JSON representation
 
-The following JSON is a representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -47,13 +47,9 @@ The following JSON is a representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.partners.billing.exportSuccessOperation",
-  "id": "String (identifier)",
   "createdDateTime": "String (timestamp)",
+  "id": "String (identifier)",
   "lastActionDateTime": "String (timestamp)",
-  "status": "String",
-  "resourceLocation": {
-    "@odata.type": "#microsoft.graph.partners.billing"
-  }  
+  "status": "String"
 }
 ```
-
