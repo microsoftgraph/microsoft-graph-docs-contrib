@@ -125,7 +125,8 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
     "id": "9ec90ff8-fd63-4fb9-ab5a-aa4fdccffff",
     "managedBy": "windows365",
-    "connType": "hybridAzureADJoin",
+    "type": "hybridAzureADJoin",
+    "connectionType": "hybridAzureADJoin",
     "displayName": "Display Name value",
     "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",
     "subscriptionName": "Subscription Name value",
@@ -153,7 +154,7 @@ Content-Type: application/json
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections/{id}?$select=id,displayName,healthCheckStatus,healthCheckStatusDetail,inUse
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections/{id}?$select=id,displayName,healthCheckStatus,healthCheckStatusDetail,healthCheckStatusDetails,inUse
 ```
 
 # [C#](#tab/csharp)
@@ -223,7 +224,8 @@ Content-Type: application/json
           "endDateTime": "2020-11-03T12:43:15Z",
           "errorType": "dnsCheckFqdnNotFound",
           "recommendedAction": "We did not find the provided domain name; please re-enter",
-          "additionalDdetail": null,
+          "additionalDetail": null,
+          "additionalDetails": null,
           "correlationId": "992e64f0-231c-46b0-8918-c5aed0585f53"
         },
         {
@@ -235,6 +237,7 @@ Content-Type: application/json
           "errorType": null,
           "recommendedAction": null,
           "additionalDetail": null,
+          "additionalDetails": null,
           "correlationId": null
         },
         {
@@ -245,7 +248,8 @@ Content-Type: application/json
           "endDateTime": "2020-11-03T12:43:32Z",
           "errorType": "endpointConnectivityCheckUrlNotWhitelisted",
           "recommendedAction": "Recommended Action value",
-          "additionaldDetail": "Additional Details value",
+          "additionalDetail": "Additional Details value",
+          "additionalDetails": "Additional Details value",
           "correlationId": "119f8363-ace2-412b-a79a-867dc0737db0"
         },
         {
@@ -256,7 +260,76 @@ Content-Type: application/json
           "endDateTime": null,
           "errorType": null,
           "recommendedAction": null,
-          "additionaldDetail": null,
+          "additionalDetail": null,
+          "additionalDetails": null,
+          "correlationId": "119f8363-ace2-412b-a79a-867dc0737db0"
+        }
+      ]
+    },
+    "inUse": false
+}
+```
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.cloudPcOnPremisesConnection",
+    "id": "9ec90ff8-fd63-4fb9-ab5a-aa4fdccffff",
+    "managedBy": "windows365",
+    "displayName": "Display Name value",
+    "healthCheckStatus": "failed",
+    "healthCheckStatusDetails": {
+      "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionStatusDetail",
+      "startDateTime": "2020-11-03T12:43:14Z",
+      "endDateTime": "2020-11-03T12:43:32Z",
+      "healthChecks": [
+        {
+          "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionHealthCheck",
+          "status": "failed",
+          "displayName": "Display Name value",
+          "startDateTime": "2020-11-03T12:43:14Z",
+          "endDateTime": "2020-11-03T12:43:15Z",
+          "errorType": "dnsCheckFqdnNotFound",
+          "recommendedAction": "We did not find the provided domain name; please re-enter",
+          "additionalDetail": null,
+          "additionalDetails": null,
+          "correlationId": "992e64f0-231c-46b0-8918-c5aed0585f53"
+        },
+        {
+          "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionHealthCheck",
+          "status": "passed",
+          "displayName": "Display Name value",
+          "startDateTime": "2020-11-03T12:43:15Z",
+          "endDateTime": "2020-11-03T12:43:26Z",
+          "errorType": null,
+          "recommendedAction": null,
+          "additionalDetail": null,
+          "additionalDetails": null,
+          "correlationId": null
+        },
+        {
+          "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionHealthCheck",
+          "status": "failed",
+          "displayName": "Display Name value",
+          "startDateTime": "2020-11-03T12:43:27Z",
+          "endDateTime": "2020-11-03T12:43:32Z",
+          "errorType": "endpointConnectivityCheckUrlNotWhitelisted",
+          "recommendedAction": "Recommended Action value",
+          "additionalDetail": "Additional Details value",
+          "additionalDetails": null,
+          "correlationId": "119f8363-ace2-412b-a79a-867dc0737db0"
+        },
+        {
+          "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionHealthCheck",
+          "status": "passed",
+          "displayName": "Display Name value",
+          "startDateTime": null,
+          "endDateTime": null,
+          "errorType": null,
+          "recommendedAction": null,
+          "additionalDetail": null,
+          "additionalDetails": null,
           "correlationId": "119f8363-ace2-412b-a79a-867dc0737db0"
         }
       ]
