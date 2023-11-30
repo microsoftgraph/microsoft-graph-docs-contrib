@@ -11,8 +11,10 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get newly created, updated, or deleted [sites](../resources/site.md) without having to perform a full read of the entire sites collection.
+Get a set of newly created, updated, or deleted [sites](../resources/site.md) without having to perform a full read of the entire sites collection.
 
+A **delta** function call for **sites** is similar to a GET request, except that by appropriately applying [state tokens](/graph/delta-query-overview) in one or more of these calls, 
+you can query for incremental changes in the **sites**. This allows you to maintain and synchronize a local store of a user's **sites** without having to fetch all the **sites** from the server every time.
 The application calls the API without specifying any parameters.
 The service begins enumerating sites and returns pages of changes to these sites, accompanied by either an **@odata.nextLink** or an **@odata.deltaLink**.
 Your application should continue making calls using the **@odata.nextLink** until there is an **@odata.deltaLink**  in the response.
