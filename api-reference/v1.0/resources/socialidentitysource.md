@@ -28,7 +28,8 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.socialIdentitySourceType"
+  "@odata.type": "microsoft.graph.socialIdentitySourceType",
+  "baseType": "microsoft.graph.identitySource"
 }
 -->
 ``` json
