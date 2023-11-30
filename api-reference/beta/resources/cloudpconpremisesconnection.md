@@ -116,6 +116,26 @@ Here's a JSON representation of the resource.
       { 
         "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionHealthCheck",
         "additionalDetails": "String",
+        "additionalDetail": "String",
+        "displayName": "String",
+        "endDateTime": "String (timestamp)",
+        "errorType": "String",
+        "recommendedAction": "String",
+        "correlationId": "String",
+        "startDateTime": "String (timestamp)",
+        "status": "String"
+      }
+    ],
+    "startDateTime": "String (timestamp)"
+  },
+  "healthCheckStatusDetails": {
+    "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionStatusDetail",
+    "endDateTime": "String (timestamp)",
+    "healthChecks": [
+      {
+        "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionHealthCheck",
+        "additionalDetails": "String",
+        "additionalDetail": "String",
         "displayName": "String",
         "endDateTime": "String (timestamp)",
         "errorType": "String",

@@ -132,6 +132,7 @@ Here's a JSON representation of the resource.
   "errorType": "String",
   "recommendedAction": "String",
   "additionalDetail": "String",
+  "additionalDetails": "String",
   "correlationId": "String"
 }
 ```

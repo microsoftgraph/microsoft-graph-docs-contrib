@@ -3714,6 +3714,64 @@
         "CreatedDateTime": "2023-10-09T11:36:16.0017333Z",
         "WorkloadArea": "Device and app management",
         "SubArea": "Cloud PC"
-      }
+      },
+      {
+        "ChangeList": [
+            {
+                "Id": "73d2da9f-34fb-44ad-9b79-40182c15d671",
+                "ApiChange": "Enum type",
+                "ChangedApiName": "type",
+                "ChangeType": "Deprecation",
+                "Description": "Deprecated the **type** enumeration type. Goind forward, use the **connectionType** enumeration.",
+                "Target": "connectionType"
+            },
+            {
+                "Id": "73d2da9f-34fb-44ad-9b79-40182c15d671",
+                "ApiChange": "Enum type",
+                "ChangedApiName": "connectionType",
+                "ChangeType": "Addition",
+                "Description": "Added the **connectionType** enumeration type.",
+                "Target": "connectionType"
+            },
+            {
+                "Id": "73d2da9f-34fb-44ad-9b79-40182c15d671",
+                "ApiChange": "Property",
+                "ChangedApiName": "healthCheckStatusDetails",
+                "ChangeType": "Deprecation",
+                "Description": "Deprecated the **healthCheckStatusDetails** property. Goind forward, use the **healthCheckStatusDetail** property.",
+                "Target": "cloudPC"
+            },
+            {
+                "Id": "73d2da9f-34fb-44ad-9b79-40182c15d671",
+                "ApiChange": "Property",
+                "ChangedApiName": "healthCheckStatusDetail",
+                "ChangeType": "Addition",
+                "Description": "Added the **healthCheckStatusDetail** property.",
+                "Target": "cloudPC"
+            },
+            {
+                "Id": "73d2da9f-34fb-44ad-9b79-40182c15d671",
+                "ApiChange": "Property",
+                "ChangedApiName": "additionalDetails",
+                "ChangeType": "Deprecation",
+                "Description": "Deprecated the **additionalDetails** property. Goind forward, use the **additionalDetail** property.",
+                "Target": "cloudPC"
+            },
+            {
+                "Id": "73d2da9f-34fb-44ad-9b79-40182c15d671",
+                "ApiChange": "Property",
+                "ChangedApiName": "additionalDetail",
+                "ChangeType": "Addition",
+                "Description": "Added the **additionalDetail** property.",
+                "Target": "cloudPC"
+            }
+        ],
+        "Id": "73d2da9f-34fb-44ad-9b79-40182c15d671",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2023-11-30T07:34:41.3424906Z",
+        "WorkloadArea": "Device and app management",
+        "SubArea": "Cloud PC"
+        }
     ]
 }
