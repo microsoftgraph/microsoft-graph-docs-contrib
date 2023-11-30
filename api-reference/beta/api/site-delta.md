@@ -21,7 +21,6 @@ Once you have received all the changes, you can apply them to your local state..
 To monitor future changes, call the `delta` API using the **@odata.deltaLink** in the previous response.
 
 Deleted sites are included in the response with the [deleted](../resources/deleted.md) facet. Any resources marked as deleted should be removed from your local state.
-Resources with this property set should be removed from your local state.
 
 ## Permissions
 
