@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Create a new [accessPackageCatalog](../resources/accesspackagecatalog.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
