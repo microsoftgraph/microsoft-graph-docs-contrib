@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Remove an [appManagementPolicy](../resources/appManagementPolicy.md) policy object from an application or service principal object. When you remove the appManagementPolicy, the application or service principal adopts the tenant-wide [tenantAppManagementPolicy](../resources/tenantappmanagementpolicy.md) setting. 
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
