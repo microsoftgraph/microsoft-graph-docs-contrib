@@ -3747,7 +3747,7 @@
                 "ChangedApiName": "healthCheckStatusDetail",
                 "ChangeType": "Addition",
                 "Description": "Added the **healthCheckStatusDetail** property.",
-                "Target": "cloudPC"
+                "Target": "cloudPcOnPremisesConnection"
             },
             {
                 "Id": "73d2da9f-34fb-44ad-9b79-40182c15d671",
