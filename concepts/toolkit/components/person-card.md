@@ -279,7 +279,7 @@ The control exposes the following variables that can be localized. For details a
 | videoButtonLabel           | `Video`                   |
 | closeCardLabel             | `Close card`              |
 
-The control also exposes te following variables in person-card sections that can be localized.
+The control also exposes the following variables in person-card sections that can be localized.
 
 Contact Section
 
