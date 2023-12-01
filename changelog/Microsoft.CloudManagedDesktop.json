@@ -60,10 +60,10 @@
                 },
                 {
                     "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
-                    "ApiChange": "Property",
+                    "ApiChange": "Member",
                     "ChangedApiName": "unknownFutureValue",
                     "ChangeType": "Addition",
-                    "Description": "Added the **unknownFutureValue** property to the **cloudPcDeviceImageStatus** enumeration.",
+                    "Description": "Added the **unknownFutureValue** Member to the **cloudPcDeviceImageStatus** enumeration.",
                     "Target": "cloudPcDeviceImageStatus"
                 },
                 {
