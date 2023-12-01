@@ -3722,7 +3722,7 @@
                 "ApiChange": "Enum type",
                 "ChangedApiName": "type",
                 "ChangeType": "Deprecation",
-                "Description": "Deprecated the **type** enumeration type. Goind forward, use the **connectionType** enumeration.",
+                "Description": "Deprecated the **type** property. Going forward, use the **connectionType** instead.",
                 "Target": "cloudPcOnPremisesConnection"
             },
             {
