@@ -11,7 +11,8 @@ The Planner component enables the user to view, add, remove, complete, or edit t
 
 In addition, a user is able to assign a single or multiple Microsoft Graph users to a task. For more details about Microsoft Graph assignments, see [plannerAssignments](/graph/api/resources/plannerassignments).
 
-> [!IMPORTANT] With the release of `@microsoft/mgt-components` version 4 the planner component replaces the old task component and no longer supports using Outlook Tasks as a data source.
+> [!IMPORTANT] 
+> With the release of `@microsoft/mgt-components` version 4, the planner component replaces the old task component and no longer supports using Outlook Tasks as a data source.
 
 ## Example
 
