@@ -1,6 +1,6 @@
 ---
 title: "socialIdentitySource resource type"
-description: "The socialIdentitySource type identifies a social identity as an identity source for a connected organization."
+description: "Identifies a social identity as an identity source for a connected organization."
 author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -11,14 +11,14 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Used in the identity sources of an [connectedOrganization](connectedOrganization.md). The `@odata.type` value `#microsoft.graph.socialIdentitySource` indicates that this type identifies a social identity as an identity source for a connected organization.
+Used in the identity sources of an [connectedOrganization](connectedOrganization.md). The `@odata.type` value `#microsoft.graph.socialIdentitySource` identifies a social identity as an identity source for a connected organization.
 
 Inherits from [identitySource](../resources/identitysource.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The name of the identity source. Typically the same as the socialIdentitySourceType.|
+|displayName|String|The name of the identity source. Typically the same value as the **socialIdentitySourceType**.|
 |socialIdentitySourceType|[microsoft.graph.socialIdentitySourceType](./socialidentitysource.md)|The possible values are: `facebook`, `unknownFutureValue`.|
 
 ## Relationships
