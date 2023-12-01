@@ -3719,7 +3719,7 @@
         "ChangeList": [
             {
                 "Id": "73d2da9f-34fb-44ad-9b79-40182c15d671",
-                "ApiChange": "Enum type",
+                "ApiChange": "Property",
                 "ChangedApiName": "type",
                 "ChangeType": "Deprecation",
                 "Description": "Deprecated the **type** property. Going forward, use the **connectionType** instead.",
