@@ -3762,7 +3762,7 @@
                 "ApiChange": "ComplexType",
                 "ChangedApiName": "cloudPcOnPremisesConnectionStatusDetail",
                 "ChangeType": "Addition",
-                "Description": "Added the **cloudPcOnPremisesConnectionStatusDetail** property.",
+                "Description": "Added the **cloudPcOnPremisesConnectionStatusDetail** complex type.",
                 "Target": "cloudPC"
             },
             {
