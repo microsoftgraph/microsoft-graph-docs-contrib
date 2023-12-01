@@ -3771,7 +3771,7 @@
                 "ChangedApiName": "additionalDetails",
                 "ChangeType": "Deprecation",
                 "Description": "Deprecated the **additionalDetails** property. Goind forward, use the **additionalDetail** property.",
-                "Target": "cloudPC"
+                "Target": "cloudPcOnPremisesConnectionHealthCheck"
             },
             {
                 "Id": "73d2da9f-34fb-44ad-9b79-40182c15d671",
