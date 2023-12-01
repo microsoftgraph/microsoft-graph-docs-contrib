@@ -14,6 +14,8 @@ Namespace: microsoft.graph.networkaccess
 
 Delete a [filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) object. 
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -90,7 +92,6 @@ DELETE https://graph.microsoft.com/beta/networkaccess/filteringPolicies/d0187e08
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 The following example shows the response.

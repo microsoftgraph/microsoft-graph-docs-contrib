@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 List application and service principal objects that are assigned an [appManagementPolicy](../resources/appManagementPolicy.md) policy object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
