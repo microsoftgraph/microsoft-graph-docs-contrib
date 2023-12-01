@@ -30,6 +30,7 @@ Represents a Planner task in Microsoft 365. A Planner task is contained in a [pl
 |:---------------|:--------|:----------|
 |activeChecklistItemCount|Int32|Number of checklist items with value set to `false`, representing incomplete items.|
 |appliedCategories|[plannerAppliedCategories](plannerappliedcategories.md)|The categories to which the task has been applied. See [applied Categories](plannerappliedcategories.md) for possible values.|
+|archivalInfo|[plannerArchivalInfo](../resources/plannerarchivalinfo.md)|Contains information about who archived or unarchived the task and why. `null` if the task has never been archived.|
 |assigneePriority|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](planner-order-hint-format.md).|
 |assignments|[plannerAssignments](plannerassignments.md)|The set of assignees the task is assigned to.|
 |bucketId|String|Bucket ID to which the task belongs. The bucket needs to be in the plan that the task is in. It is 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service. |
@@ -43,6 +44,7 @@ Represents a Planner task in Microsoft 365. A Planner task is contained in a [pl
 |dueDateTime|DateTimeOffset|Date and time at which the task is due. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |hasDescription|Boolean|Read-only. Value is `true` if the details object of the task has a nonempty description and `false` otherwise.|
 |id|String|Read-only. ID of the task. It is 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service.|
+|isArchived|Boolean|Read-only. Value is `true` if the task is archived and `false` otherwise. An archived task is read-only.|
 |orderHint|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](planner-order-hint-format.md).|
 |percentComplete|Int32|Percentage of task completion. When set to `100`, the task is considered completed. |
 |priority|Int32|Priority of the task. Valid range of values is between `0` and `10` (inclusive), with increasing value being lower priority (`0` has the highest priority and `10` has the lowest priority).  Currently, Planner interprets values `0` and `1` as "urgent", `2` and `3` and `4` as "important", `5`, `6`, and `7` as "medium", and `8`, `9`, and `10` as "low".  Currently, Planner sets the value `1` for "urgent", `3` for "important", `5` for "medium", and `9` for "low".|
@@ -89,6 +91,9 @@ Here's a JSON representation of the resource.
 {
   "activeChecklistItemCount": "Int32",
   "appliedCategories": {"@odata.type": "microsoft.graph.plannerAppliedCategories"},
+  "archivalInfo": {
+    "@odata.type": "microsoft.graph.plannerArchivalInfo"
+  },
   "assigneePriority": "String",
   "assignments": {"@odata.type": "microsoft.graph.plannerAssignments"},
   "bucketId": "String",
@@ -101,6 +106,7 @@ Here's a JSON representation of the resource.
   "dueDateTime": "String (timestamp)",
   "hasDescription": "Boolean",
   "id": "String (identifier)",
+  "isArchived": "Boolean",
   "orderHint": "String",
   "percentComplete": "Int32",
   "planId": "String",

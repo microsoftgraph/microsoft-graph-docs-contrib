@@ -30,11 +30,13 @@ Represents a plan in Microsoft 365. Either a [group](group.md) or a [user](user.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+|archivalInfo|[plannerArchivalInfo](../resources/plannerarchivalinfo.md)|Contains information about who archived or unarchived the plan and why. `null` if the plan has never been archived.|
 |container|[plannerPlanContainer](../resources/plannerplancontainer.md)|Identifies the container of the plan. Either specify all properties, or specify only the **url**, the **containerId**, and **type**. After it's set, this property can’t be updated. It changes when a plan is moved from one container to another, using [plan move to container](../api/plannerplan-movetocontainer.md). Required.|
 |contexts|[plannerPlanContextCollection](plannerplancontextcollection.md)| Read-only. Other user experiences in which this plan is used, represented as [plannerPlanContext](plannerplancontext.md) entries.|
 |createdBy|[identitySet](identityset.md)|Read-only. The user who created the plan.|
 |createdDateTime|DateTimeOffset|Read-only. Date and time at which the plan is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |id|String| Read-only. ID of the plan. It's 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service.|
+|isArchived|Boolean|Read-only. Value is `true` if the plan is archived and `false` otherwise. An archived plan is read-only.|
 |title|String|Required. Title of the plan.|
 |creationSource|[plannerPlanCreation](plannerplancreation.md)|  Contains information about the origin of the plan.|
 |owner (deprecated) |String| Use the **container** property instead. ID of the [group](group.md) that owns the plan. After it's set, this property can’t be updated. This property doesn't return a valid group ID if the container of the plan isn't a group.|
@@ -63,6 +65,9 @@ Here's a JSON representation of the resource.
 
 ```json
 {
+  "archivalInfo": {
+    "@odata.type": "microsoft.graph.plannerArchivalInfo"
+  },
   "contexts": {
     "48#19%3Ad128c63941b24733951ea7defd81e550%40thread%2Eskype19%3Ad128c63941b24733951ea7defd81e550%40thread%2Eskype": {
         "@odata.type": "#microsoft.graph.plannerPlanContext",
@@ -79,6 +84,7 @@ Here's a JSON representation of the resource.
   "creationSource": {"@odata.type": "#microsoft.graph.plannerPlanCreation"},
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
+  "isArchived": "Boolean",
   "container": {
     "@odata.type": "microsoft.graph.plannerPlanContainer",
     "url": "String",

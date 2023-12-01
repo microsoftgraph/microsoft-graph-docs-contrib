@@ -30,8 +30,10 @@ Represents a bucket (or "custom column") for tasks in a plan in Microsoft 365. I
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+|archivalInfo|[plannerArchivalInfo](../resources/plannerarchivalinfo.md)|Contains information about who archived or unarchived the bucket and why. `null` if the bucket has never been archived.|
 |creationSource|[plannerBucketCreation](plannerbucketcreation.md)|  Contains information about the origin of the bucket.|
 |id|String| Read-only. Unique identifier for the bucket. It is 28 characters long and case-sensitive. The [format validation](tasks-identifiers-disclaimer.md) is done on the service.|
+|isArchived|Boolean|Read-only. Value is `true` if the bucket is archived and `false` otherwise. An archived bucket is read-only.|
 |name|String|Name of the bucket.|
 |orderHint|String|Hint used to order items of this type in a list view. For details about the supported format, see [Using order hints in Planner](../resources/planner-order-hint-format.md).|
 |planId|String|Plan ID to which the bucket belongs.|
@@ -56,11 +58,15 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "archivalInfo": {
+    "@odata.type": "microsoft.graph.plannerArchivalInfo"
+  },
   "creationSource": {"@odata.type": "#microsoft.graph.plannerBucketCreation"},
   "id": "String (identifier)",
+  "isArchived": "Boolean",
   "name": "String",
   "orderHint": "String",
-  "planId": "String"
+  "planId": "String",
 }
 ```
 

@@ -1859,6 +1859,88 @@
       "CreatedDateTime": "2023-11-15T13:40:50.502Z",
       "WorkloadArea": "Tasks and plans",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ce1f410d-fb71-401e-bb59-f66413952ca6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerArchivalInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerArchivalInfo](https://learn.microsoft.com/en-us/graph/api/resources/plannerArchivalInfo?view=graph-rest-beta) resource type.",
+          "Target": "plannerArchivalInfo"
+        },
+        {
+          "Id": "ce1f410d-fb71-401e-bb59-f66413952ca6",
+          "ApiChange": "Property",
+          "ChangedApiName": "archivalInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the `archivalInfo` property to the [plannerBucket](https://learn.microsoft.com/en-us/graph/api/resources/plannerBucket?view=graph-rest-beta) resource.",
+          "Target": "plannerBucket"
+        },
+        {
+          "Id": "ce1f410d-fb71-401e-bb59-f66413952ca6",
+          "ApiChange": "Property",
+          "ChangedApiName": "isArchived",
+          "ChangeType": "Addition",
+          "Description": "Added the `isArchived` property to the [plannerBucket](https://learn.microsoft.com/en-us/graph/api/resources/plannerBucket?view=graph-rest-beta) resource.",
+          "Target": "plannerBucket"
+        },
+        {
+          "Id": "ce1f410d-fb71-401e-bb59-f66413952ca6",
+          "ApiChange": "Property",
+          "ChangedApiName": "archivalInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the `archivalInfo` property to the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerPlan?view=graph-rest-beta) resource.",
+          "Target": "plannerPlan"
+        },
+        {
+          "Id": "ce1f410d-fb71-401e-bb59-f66413952ca6",
+          "ApiChange": "Property",
+          "ChangedApiName": "isArchived",
+          "ChangeType": "Addition",
+          "Description": "Added the `isArchived` property to the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerPlan?view=graph-rest-beta) resource.",
+          "Target": "plannerPlan"
+        },
+        {
+          "Id": "ce1f410d-fb71-401e-bb59-f66413952ca6",
+          "ApiChange": "Property",
+          "ChangedApiName": "archivalInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the `archivalInfo` property to the [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannerTask?view=graph-rest-beta) resource.",
+          "Target": "plannerTask"
+        },
+        {
+          "Id": "ce1f410d-fb71-401e-bb59-f66413952ca6",
+          "ApiChange": "Property",
+          "ChangedApiName": "isArchived",
+          "ChangeType": "Addition",
+          "Description": "Added the `isArchived` property to the [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannerTask?view=graph-rest-beta) resource.",
+          "Target": "plannerTask"
+        },
+        {
+          "Id": "ce1f410d-fb71-401e-bb59-f66413952ca6",
+          "ApiChange": "Method",
+          "ChangedApiName": "archive",
+          "ChangeType": "Addition",
+          "Description": "Added the [archive](https://learn.microsoft.com/en-us/graph/api/plannerPlan?view=graph-rest-beta) method to the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/plannerPlan?view=graph-rest-beta) resource.",
+          "Target": "plannerPlan"
+        },
+        {
+          "Id": "ce1f410d-fb71-401e-bb59-f66413952ca6",
+          "ApiChange": "Method",
+          "ChangedApiName": "unarchive",
+          "ChangeType": "Addition",
+          "Description": "Added the [unarchive](https://learn.microsoft.com/en-us/graph/api/plannerPlan?view=graph-rest-beta) method to the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/plannerPlan?view=graph-rest-beta) resource.",
+          "Target": "plannerPlan"
+        }
+      ],
+      "Id": "ce1f410d-fb71-401e-bb59-f66413952ca6",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2023-11-29T17:13:44.4758634Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
     }
   ]
 }
