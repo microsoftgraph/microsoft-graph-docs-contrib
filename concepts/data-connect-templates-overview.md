@@ -62,7 +62,7 @@ The form contains the following fields:
 - **Destination Storage Account Uri**: A prepopulated field. The URI (distributed file system (DFS) or blob) to use based on the registered application.
 - **Storage Container**: The root container in the Azure Storage destination where the data is written to. 
 
-4) Click the **Review + create** tab to review your settings. After confirming that all details are correct, click the **Create** button to initiate the deployment. A deployment status screen appears to monitor the creation of the resources.
+4) Click the **Review + create** tab to review your settings. After you confirm that all details are correct, click the **Create** button to initiate the deployment. A deployment status screen appears to monitor the creation of the resources.
 
 ![A screenshot that shows the progress of a custom deployment of Azure resources.](images/data-connect-templates-quickstart-4.png)
 
