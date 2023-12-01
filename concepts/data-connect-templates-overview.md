@@ -35,7 +35,7 @@ Quick start templates help you easily set up pipelines for extraction of Microso
 To use the quick start templates, you need the following prerequisites:
 
 - A configured Microsoft Graph Data Connect application. For details on how to create a Microsoft Graph Data Connect application, see [Build your first Data Connect application](/graph/data-connect-quickstart?tabs=AzureSynapsePipeline%2CMicrosoft365).
-- The application secret of the Microsoft Entra application used for the Microsoft Graph Data Connect application registration. For details, see [Set up your Microsoft Entra application](/graph/data-connect-quickstart?tabs=NewConsentFlow%2CPAMMicrosoft365%2CAzureSynapsePipeline&tutorial-step=2).
+- The application secret of the Microsoft Entra application used during the Microsoft Graph Data Connect application registration. For details, see [Set up your Microsoft Entra application](/graph/data-connect-quickstart?tabs=NewConsentFlow%2CPAMMicrosoft365%2CAzureSynapsePipeline&tutorial-step=2).
 - An Azure Storage container to write data to. For details, see [Set up your Azure Storage resource](/graph/data-connect-quickstart?tabs=NewConsentFlow%2CPAMMicrosoft365%2CAzureSynapsePipeline&tutorial-step=3).
 
 ### Setting up a pipeline with a quick start template
@@ -52,15 +52,15 @@ To use the quick start templates, you need the following prerequisites:
 
 ![A screenshot that shows the custom deployment form to setup the Quick Pipeline Set-Up template for Microsoft Graph Data Connect.](images/data-connect-templates-quickstart-3.png)
 
-The form is composed by the following fields:
-- **Resource group**: The resource group where your storage account is located. This would be used for the Azure Data Factory location as well.
+The form contains the following fields:
+- **Resource group**: The resource group where your Azure Storage account is located. The same configuration also applies to the location of the Azure Data Factory.
 - **Service Principal Id**: A prepopulated field that shows the Microsoft Entra application ID used to create an application with Microsoft Graph Data Connect.
 - **Tenant Id**: A prepopulated field that shows the tenant for which data is being extracted.
 - **Application Secret**: The secret value of the Microsoft Entra application used during registration.
-- **Azure Data Factory Name**: This field is *prepopulated* by appending the unique string associated with the resource group ID to the string "datafactory". However, you can also provide an existing Azure Data Factory resource or enter a new unique name for a new Azure Data Factory resource.
+- **Azure Data Factory Name**: This field is prepopulated by concatenating the unique string associated with the resource group ID to *datafactory*. You can also provide an existing Azure Data Factory resource or enter a new unique name for a new Azure Data Factory resource.
 - **Datasets**: A prepopulated field. One pipeline is generated per dataset.
-- **Destination Storage Account Uri**: A prepopulated field. The URI to use (Distributed File System (DFS) or blob) based on the registered application.
-- **Storage Container**: The root container in the Azure Storage destination where data is written to. 
+- **Destination Storage Account Uri**: A prepopulated field. The URI (distributed file system (DFS) or blob) to use based on the registered application.
+- **Storage Container**: The root container in the Azure Storage destination where the data is written to. 
 
 4) Click the **Review + create** tab to review your settings. After confirming that all details are correct, click the **Create** button to initiate the deployment. A deployment status screen appears to monitor the creation of the resources.
 
