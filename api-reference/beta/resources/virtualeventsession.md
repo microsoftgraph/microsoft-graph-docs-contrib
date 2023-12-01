@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents a session in a [virtualEvent](../resources/virtualevent.md)
 
-Inherits from [onlineMeeting](../resources/onlinemeeting.md).
+Inherits from [onlineMeetingBase](../resources/onlinemeetingBase.md).
 
 ## Methods
 
@@ -30,20 +30,20 @@ Currently, only the following properties are filled out on a virtualEventSession
 
 | Property              | Type                                          | Description    |
 | :-------------------- | :-------------------------------------------- | :------------------------------------ |
-| chatInfo              | [chatInfo](chatinfo.md) | The chat information associated with the virtual event session.  |
+| chatInfo              | [chatInfo](chatinfo.md) | The chat information associated with the virtual event session. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | endDateTime           | [DateTimeTimeZone](datetimetimezone.md) | The virtual event session end time.   |
-| id | String | The unique identifier of the virtual event session. Read-only.    |
-| joinInformation | [itemBody](itembody.md) | The join information of the virtual event session. Read-only. |
-| joinMeetingIdSettings | [joinMeetingIdSettings](joinmeetingidsettings.md) | The **joinMeetingId** of the virtual event session. Read-only. |
-| joinWebUrl | String | The join URL of the virtual event session. Read-only. |
+| id | String | The unique identifier of the virtual event session. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md).    |
+| joinInformation | [itemBody](itembody.md) | The join information of the virtual event session. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
+| joinMeetingIdSettings | [joinMeetingIdSettings](joinmeetingidsettings.md) | The **joinMeetingId** of the virtual event session. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
+| joinWebUrl | String | The join URL of the virtual event session. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | startDateTime | [DateTimeTimeZone](datetimetimezone.md) | The virtual event session start time. |
-| subject | String | The subject of the virtual event session. |
+| subject | String | The subject of the virtual event session. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|attendanceReports|[meetingAttendanceReport](../resources/meetingattendancereport.md) collection|Attendance reports of this virtual event session. Inherited from [onlineMeeting](../resources/onlinemeeting.md).|
+|attendanceReports|[meetingAttendanceReport](../resources/meetingattendancereport.md) collection|Attendance reports of this virtual event session. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md).|
 
 ## JSON representation
 
