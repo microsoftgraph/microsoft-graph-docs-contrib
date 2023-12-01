@@ -53,14 +53,6 @@
                 {
                     "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
                     "ApiChange": "Member",
-                    "ChangedApiName": "vmAlreadyAzureAdJoined",
-                    "ChangeType": "Addition",
-                    "Description": "Added the `vmAlreadyAzureAdJoined` member to the **cloudPcDeviceImageStatusDetails** enumeration.",
-                    "Target": "cloudPcDeviceImageStatusDetails"
-                },
-                {
-                    "Id": "33feb870-1a2e-4975-bff4-31dbf2ddd050",
-                    "ApiChange": "Member",
                     "ChangedApiName": "sourceImageSizeExceedsLimitation",
                     "ChangeType": "Addition",
                     "Description": "Added the `sourceImageSizeExceedsLimitation` member to the **cloudPcDeviceImageStatusDetails** enumeration.",
