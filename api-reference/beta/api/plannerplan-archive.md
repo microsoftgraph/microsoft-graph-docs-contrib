@@ -69,6 +69,8 @@ The following table lists the parameters that are required when you call this ac
 
 If successful, this action returns a `204 No Content` response code.
 
+This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400 and 403 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).
+
 ## Examples
 
 ### Request
