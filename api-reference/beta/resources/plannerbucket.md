@@ -30,7 +30,7 @@ Represents a bucket (or "custom column") for tasks in a plan in Microsoft 365. I
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|archivalInfo|[plannerArchivalInfo](../resources/plannerarchivalinfo.md)|Contains information about who archived or unarchived the bucket and why. `null` if the bucket has never been archived.|
+|archivalInfo|[plannerArchivalInfo](../resources/plannerarchivalinfo.md)|Read-only. Nullable. Contains information about who archived or unarchived the bucket and why.|
 |creationSource|[plannerBucketCreation](plannerbucketcreation.md)|  Contains information about the origin of the bucket.|
 |id|String| Read-only. Unique identifier for the bucket. It is 28 characters long and case-sensitive. The [format validation](tasks-identifiers-disclaimer.md) is done on the service.|
 |isArchived|Boolean|Read-only. Value is `true` if the bucket is archived and `false` otherwise. An archived bucket is read-only.|

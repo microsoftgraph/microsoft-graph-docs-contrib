@@ -17901,6 +17901,10 @@ items:
                 href: api/plannerplan-delta.md
               - name: Move to container
                 href: api/plannerplan-movetocontainer.md
+              - name: Archive plan
+                href: api/plannerplan-archive.md
+              - name: Unarchive plan
+                href: api/plannerplan-unarchive.md
           - name: Task
             href: resources/plannertask.md
             items:

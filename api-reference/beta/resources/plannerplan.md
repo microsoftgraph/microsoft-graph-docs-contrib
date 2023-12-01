@@ -32,7 +32,7 @@ Represents a plan in Microsoft 365. Either a [group](group.md) or a [user](user.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|archivalInfo|[plannerArchivalInfo](../resources/plannerarchivalinfo.md)|Contains information about who archived or unarchived the plan and why. `null` if the plan has never been archived.|
+|archivalInfo|[plannerArchivalInfo](../resources/plannerarchivalinfo.md)|Read-only. Nullable. Contains information about who archived or unarchived the plan and why.|
 |container|[plannerPlanContainer](../resources/plannerplancontainer.md)|Identifies the container of the plan. Either specify all properties, or specify only the **url**, the **containerId**, and **type**. After it's set, this property can’t be updated. It changes when a plan is moved from one container to another, using [plan move to container](../api/plannerplan-movetocontainer.md). Required.|
 |contexts|[plannerPlanContextCollection](plannerplancontextcollection.md)| Read-only. Other user experiences in which this plan is used, represented as [plannerPlanContext](plannerplancontext.md) entries.|
 |createdBy|[identitySet](identityset.md)|Read-only. The user who created the plan.|
