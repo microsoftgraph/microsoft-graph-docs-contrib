@@ -3730,7 +3730,7 @@
                 "ApiChange": "Property",
                 "ChangedApiName": "connectionType",
                 "ChangeType": "Addition",
-                "Description": "Added the **connectionType** enumeration type.",
+                "Description": "Added the **connectionType** property.",
                 "Target": "cloudPcOnPremisesConnection"
             },
             {
