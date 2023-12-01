@@ -3751,6 +3751,22 @@
             },
             {
                 "Id": "73d2da9f-34fb-44ad-9b79-40182c15d671",
+                "ApiChange": "ComplexType",
+                "ChangedApiName": "cloudPcOnPremisesConnectionStatusDetails",
+                "ChangeType": "Deprecation",
+                "Description": "Deprecated the **cloudPcOnPremisesConnectionStatusDetails** property. Goind forward, use the **cloudPcOnPremisesConnectionStatusDetail** property.",
+                "Target": "cloudPC"
+            },
+            {
+                "Id": "73d2da9f-34fb-44ad-9b79-40182c15d671",
+                "ApiChange": "ComplexType",
+                "ChangedApiName": "cloudPcOnPremisesConnectionStatusDetail",
+                "ChangeType": "Addition",
+                "Description": "Added the **cloudPcOnPremisesConnectionStatusDetail** property.",
+                "Target": "cloudPC"
+            },
+            {
+                "Id": "73d2da9f-34fb-44ad-9b79-40182c15d671",
                 "ApiChange": "Property",
                 "ChangedApiName": "additionalDetails",
                 "ChangeType": "Deprecation",
