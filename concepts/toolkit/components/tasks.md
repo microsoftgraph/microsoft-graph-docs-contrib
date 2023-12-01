@@ -189,7 +189,7 @@ This control uses the following Microsoft Graph APIs and permissions.
 | `targetId` set                                                                | Group.Read.All      | [/planner/plans/${planId}](/graph/api/plannerplan-get?tabs=http), [/planner/plans/${planId}/buckets](/graph/api/plannerplan-list-buckets?tabs=http), [/planner/buckets/${bucketId}/tasks](/graph/api/plannerplan-list-tasks?tabs=http)                                                                                                                                                                                                 |
 | create, update or delete task                                                 | Group.ReadWrite.All | [/planner/tasks](/graph/api/planner-post-tasks?tabs=http)                                                                                                                                                                                                                                                                                                                                                                              |
 
-When using the mgt-planner component, fetching and reading tasks requires the Groups.Read.All permission. Adding, updating, or removing tasks requires the Groups.ReadWrite.All permission.
+When using the `mgt-planner` component, fetching and reading tasks requires the Groups.Read.All permission. Adding, updating, or removing tasks requires the Groups.ReadWrite.All permission.
 
 ## Authentication
 
