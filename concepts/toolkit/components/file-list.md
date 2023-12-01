@@ -34,7 +34,7 @@ You can use several properties to customize the component.
 | item-id                  | itemId                 | ID of the folder. Default query is `/me/drive/items`. Provide `drive-id`, `group-id`, `site-id`, or `user-id` to query a specific location.                               |
 | item-path                | itemPath               | Item path of the folder (relative to the root). Default query is `/me/drive/root`. Provide `drive-id`, `group-id`, `site-id`, or `user-id` to query a specific location.  |
 | item-view                | itemView               | Sets what data to be rendered (file icon only, oneLine, twoLines threeLines). Default is 'threeLines'                                                                     |
-| page-size                | pageSize               | A number value to indicate the maximum number of files to render on each page. **Note:** `page-size` is not supported with `insight-type`.                                |
+| page-size                | pageSize               | A number value to indicate the maximum number of files to render on each page. **Note:** `page-size` isn't supported with `insight-type`.                                |
 | file-extensions          | fileExtensions         | An array of file extensions used to filter files to show.                                                                                                                 |
 | hide-more-files-button   | hideMoreFilesButton    | Boolean to indicate whether to show a button to render more files.                                                                                                        |
 | enable-file-upload       | enableFileUpload       | Boolean to enable or disable file upload functionality. The default value is `false`.                                                                                     |
@@ -93,13 +93,13 @@ The following example limits the maximum number of files that can be uploaded to
 <mgt-file-list max-upload-file="5" enable-file-upload></mgt-file-list>
 ```
 
-The following example limits the maximum file size that can be uploaded to 10000 KB.
+The following example limits the maximum file size that can be uploaded to 10,000 KB.
 
 ```html
 <mgt-file-list max-file-size="10000" enable-file-upload></mgt-file-list>
 ```
 
-The following example excludes upload of files with file extensions ".doc,.pdf".
+The following example excludes upload of files with file extensions ".doc, .pdf".
 
 ```html
 <mgt-file-list

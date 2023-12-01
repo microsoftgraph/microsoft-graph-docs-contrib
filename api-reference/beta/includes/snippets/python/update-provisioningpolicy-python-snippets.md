@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = CloudPcProvisioningPolicy(
 	odata_type = "#microsoft.graph.cloudPcProvisioningPolicy",
@@ -21,7 +21,7 @@ request_body = CloudPcProvisioningPolicy(
 	),
 )
 
-result = await graph_client.device_management.virtual_endpoint.provisioning_policies.by_provisioning_policie_id('cloudPcProvisioningPolicy-id').patch(request_body = request_body)
+result = await graph_client.device_management.virtual_endpoint.provisioning_policies.by_cloud_pc_provisioning_policy_id('cloudPcProvisioningPolicy-id').patch(request_body)
 
 
 ```

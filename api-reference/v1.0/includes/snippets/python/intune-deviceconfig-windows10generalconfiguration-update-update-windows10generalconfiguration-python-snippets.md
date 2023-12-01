@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Windows10GeneralConfiguration(
 	odata_type = "#microsoft.graph.windows10GeneralConfiguration",
@@ -33,7 +33,7 @@ request_body = Windows10GeneralConfiguration(
 	personalization_lock_screen_image_url = "https://example.com/personalizationLockScreenImageUrl/",
 	bluetooth_allowed_services = [
 		"Bluetooth Allowed Services value",
-	]
+	],
 	bluetooth_block_advertising = True,
 	bluetooth_block_discoverable_mode = True,
 	bluetooth_block_pre_pairing = True,
@@ -87,13 +87,13 @@ request_body = Windows10GeneralConfiguration(
 	),
 	defender_file_extensions_to_exclude = [
 		"Defender File Extensions To Exclude value",
-	]
+	],
 	defender_files_and_folders_to_exclude = [
 		"Defender Files And Folders To Exclude value",
-	]
+	],
 	defender_processes_to_exclude = [
 		"Defender Processes To Exclude value",
-	]
+	],
 	lock_screen_allow_timeout_configuration = True,
 	lock_screen_block_action_center_notifications = True,
 	lock_screen_block_cortana = True,
@@ -168,7 +168,7 @@ request_body = Windows10GeneralConfiguration(
 		address = "Address value",
 		exceptions = [
 			"Exceptions value",
-		]
+		],
 		use_for_local_addresses = True,
 	),
 	accounts_block_adding_non_microsoft_account_email = True,
@@ -194,7 +194,7 @@ request_body = Windows10GeneralConfiguration(
 	),
 	edge_homepage_urls = [
 		"Edge Homepage Urls value",
-	]
+	],
 	edge_block_access_to_about_flags = True,
 	smart_screen_block_prompt_override = True,
 	smart_screen_block_prompt_override_for_files = True,
@@ -241,7 +241,7 @@ request_body = Windows10GeneralConfiguration(
 	tenant_lockdown_require_network_during_out_of_box_experience = True,
 )
 
-result = await graph_client.device_management.device_configurations.by_device_configuration_id('deviceConfiguration-id').patch(request_body = request_body)
+result = await graph_client.device_management.device_configurations.by_device_configuration_id('deviceConfiguration-id').patch(request_body)
 
 
 ```

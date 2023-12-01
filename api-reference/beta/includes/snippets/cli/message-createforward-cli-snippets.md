@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc-beta users messages create-forward post --user-id {user-id} --message-id {message-id} --body '{\
-  "message":{  \
+  "message":{\
     "isDeliveryReceiptRequested": true,\
     "toRecipients":[\
       {\
@@ -17,7 +17,7 @@ mgc-beta users messages create-forward post --user-id {user-id} --message-id {me
       }\
      ]\
   },\
-  "comment": "Dana, just want to make sure you get this; you'll need this if the project gets approved." \
+  "comment": "Dana, just want to make sure you get this; you'll need this if the project gets approved."\
 }\
 '
 

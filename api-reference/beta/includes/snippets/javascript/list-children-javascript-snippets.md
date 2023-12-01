@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let children = await client.api('/drives/{drive-id}/items/{item-id}/children')
+let children = await client.api('/drives/{drive-id}/items/root/children')
 	.version('beta')
 	.get();
 

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = DeviceManagement(
 	odata_type = "#microsoft.graph.deviceManagement",
@@ -39,7 +39,7 @@ request_body = DeviceManagement(
 				distinct_malware_count = 4,
 				last_update_date_time = "2016-12-31T23:58:21.6459442-08:00",
 			),
-		]
+		],
 		malware_severity_summary = [
 			WindowsMalwareSeverityCount(
 				odata_type = "microsoft.graph.windowsMalwareSeverityCount",
@@ -48,7 +48,7 @@ request_body = DeviceManagement(
 				distinct_malware_count = 4,
 				last_update_date_time = "2016-12-31T23:58:21.6459442-08:00",
 			),
-		]
+		],
 		malware_execution_state_summary = [
 			WindowsMalwareExecutionStateCount(
 				odata_type = "microsoft.graph.windowsMalwareExecutionStateCount",
@@ -56,7 +56,7 @@ request_body = DeviceManagement(
 				device_count = 11,
 				last_update_date_time = "2016-12-31T23:58:21.6459442-08:00",
 			),
-		]
+		],
 		malware_category_summary = [
 			WindowsMalwareCategoryCount(
 				odata_type = "microsoft.graph.windowsMalwareCategoryCount",
@@ -66,7 +66,7 @@ request_body = DeviceManagement(
 				distinct_active_malware_count = 10,
 				last_update_date_time = "2016-12-31T23:58:21.6459442-08:00",
 			),
-		]
+		],
 		malware_name_summary = [
 			WindowsMalwareNameCount(
 				odata_type = "microsoft.graph.windowsMalwareNameCount",
@@ -75,7 +75,7 @@ request_body = DeviceManagement(
 				device_count = 11,
 				last_update_date_time = "2016-12-31T23:58:21.6459442-08:00",
 			),
-		]
+		],
 		os_versions_summary = [
 			OsVersionCount(
 				odata_type = "microsoft.graph.osVersionCount",
@@ -83,11 +83,11 @@ request_body = DeviceManagement(
 				device_count = 11,
 				last_update_date_time = "2016-12-31T23:58:21.6459442-08:00",
 			),
-		]
+		],
 	),
 )
 
-result = await graph_client.device_management.patch(request_body = request_body)
+result = await graph_client.device_management.patch(request_body)
 
 
 ```

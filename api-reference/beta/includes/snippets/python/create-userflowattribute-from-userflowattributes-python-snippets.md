@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = IdentityUserFlowAttribute(
 	display_name = "Hobby",
@@ -14,7 +14,7 @@ request_body = IdentityUserFlowAttribute(
 	data_type = IdentityUserFlowAttributeDataType.String,
 )
 
-result = await graph_client.identity.user_flow_attributes.post(request_body = request_body)
+result = await graph_client.identity.user_flow_attributes.post(request_body)
 
 
 ```

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = UpgradePostRequestBody(
 	consented_permission_set = TeamsAppPermissionSet(
@@ -19,11 +19,11 @@ request_body = UpgradePostRequestBody(
 				permission_value = "ChatMember.Read.Chat",
 				permission_type = TeamsAppResourceSpecificPermissionType.Application,
 			),
-		]
+		],
 	),
 )
 
-await graph_client.chats.by_chat_id('chat-id').installed_apps.by_installed_app_id('teamsAppInstallation-id').upgrade.post(request_body = request_body)
+await graph_client.chats.by_chat_id('chat-id').installed_apps.by_teams_app_installation_id('teamsAppInstallation-id').upgrade.post(request_body)
 
 
 ```

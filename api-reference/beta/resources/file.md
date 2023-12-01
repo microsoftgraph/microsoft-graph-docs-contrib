@@ -15,12 +15,12 @@ Namespace: microsoft.graph
 
 The **File** resource groups file-related data items into a single structure.
 
-If a [**DriveItem**](driveitem.md) has a non-null **file** facet, the item represents an file.
-In addition to other properties, files have a **content** relationship which contains the byte stream of the file.
+If a [**DriveItem**](driveitem.md) has a non-null **file** facet, the item represents a file.
+In addition to other properties, files have a **content** relationship that contains the byte stream of the file.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

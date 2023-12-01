@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 $requestBody = new User();
 $onPremisesExtensionAttributes = new OnPremisesExtensionAttributes();
 $onPremisesExtensionAttributes->setExtensionAttribute1('skypeId.adeleVance');
-$OnPremisesExtensionAttributes->setExtensionAttribute13(null);
+$onPremisesExtensionAttributes->setExtensionAttribute13(null);
 $requestBody->setOnPremisesExtensionAttributes($onPremisesExtensionAttributes);
 
 $result = $graphServiceClient->users()->byUserId('user-id')->patch($requestBody)->wait();

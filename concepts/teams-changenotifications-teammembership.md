@@ -13,6 +13,8 @@ Change notifications enable you to subscribe to membership changes (create, upda
 
 Continue with this article about scenarios for the [conversationMember](/graph/api/resources/conversationmember) resource in the **team** or **channel** context. Or, find out about [change notifications for other Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).
 
+> [!NOTE]
+> If you request a subscription **expirationDateTime** that is more than 1 hour in the future, you must subscribe to lifecycle notifications by including a **lifecycleNotificationUrl** property in your subscription request. Otherwise your subscription request will fail with the following error message: *lifecycleNotificationUrl is a required property for subscription creation on this resource when the expirationDateTime value is set to greater than 1 hour*.
 
 ## Subscribe to changes in membership of a particular team
 
@@ -191,7 +193,7 @@ The decrypted notification payload looks like the following. The payload conform
 
 ### Notifications without resource data
 
-Notifications without resource data give you enough information to make GET calls to get the message content. Subscriptions for notifications without resource data don't require an encryption certificate (because actual resource data is not sent over).
+Notifications without resource data give you enough information to make GET calls to get the message content. Subscriptions for notifications without resource data don't require an encryption certificate (because Microsoft Graph doesn't send the actual resource data).
 
 For notifications without resource data, the payload looks like the following. This payload is for a membership change in a team.
 
@@ -213,7 +215,7 @@ For notifications without resource data, the payload looks like the following. T
 
 The payload for the channel membership events is similar to the previous payload except that the **resource** property points to a channel member instead of a team member.
 
-The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload for the message. GET calls will always return the current state of the message. If the message is changed between when the notification is sent and when the message is retrieved, the operation will return the updated message.
+The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload for the message. GET calls always return the current state of the message. If the message is changed between when the notification is sent and when the message is retrieved, the operation returns the updated message.
 
 ## See also
 - [Microsoft Graph change notifications](webhooks.md)

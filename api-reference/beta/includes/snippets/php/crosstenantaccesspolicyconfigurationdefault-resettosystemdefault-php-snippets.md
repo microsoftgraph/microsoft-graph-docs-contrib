@@ -10,6 +10,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$graphServiceClient->policies()->crossTenantAccessPolicy()->default()->resetToSystemDefault()->post()->wait();
+$graphServiceClient->policies()->crossTenantAccessPolicy()->escapedDefault()->resetToSystemDefault()->post()->wait();
 
 ```

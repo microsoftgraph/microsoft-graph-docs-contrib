@@ -5,7 +5,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```bash
 
 // THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
-mgc-beta users planner patch --user-id {user-id} --if-match W/"JzEtVXNlckRldGFpbHMgQEBAQEBAQEBAQEBAQEBIWCc=" --body '{\
+mgc-beta users planner patch --user-id {user-id} --if-match "W/"JzEtVXNlckRldGFpbHMgQEBAQEBAQEBAQEBAQEBIWCc="" --body '{\
   "favoritePlanReferences": {\
     "jd8S5gOaFk2S8aWCIAJz42QAAxtD": {\
       "@odata.type": "#microsoft.graph.plannerFavoritePlanReference",\

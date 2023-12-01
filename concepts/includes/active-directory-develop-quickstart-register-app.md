@@ -17,7 +17,7 @@ ms.workload: identity
 # https://learn.microsoft.com/en-us/graph/auth-register-app-v2
 ---
 
-Get started with the Microsoft identity platform by registering an application in the Azure portal.
+Get started with the Microsoft identity platform by registering an application in the Microsoft Entra admin center.
 
 The Microsoft identity platform performs identity and access management (IAM) only for registered applications. Whether it's a client application like a web or mobile app, or it's a web API that backs a client app, registering it establishes a trust relationship between your application and the identity provider, the Microsoft identity platform.
 
@@ -27,10 +27,10 @@ The Microsoft identity platform performs identity and access management (IAM) on
 ## Prerequisites
 
 - An Azure account that has an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
-- The Azure account must have permission to manage applications in Azure Active Directory (Azure AD). Any of the following Azure AD roles include the required permissions:
-  - [Application administrator](/azure/active-directory/roles/permissions-reference?toc=/graph/toc.json#application-administrator)
-  - [Application developer](/azure/active-directory/roles/permissions-reference?toc=/graph/toc.json#application-developer)
-  - [Cloud application administrator](/azure/active-directory/roles/permissions-reference?toc=/graph/toc.json#cloud-application-administrator)
+- The Azure account must have permission to manage applications in Microsoft Entra ID. Any of the following Microsoft Entra roles include the required permissions:
+  - [Application administrator](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json#application-administrator)
+  - [Application developer](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json#application-developer)
+  - [Cloud application administrator](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json#cloud-application-administrator)
 - Completion of the [Set up a tenant](/azure/active-directory/develop/quickstart-create-new-tenant) quickstart.
 
 ## Register an application
@@ -39,10 +39,9 @@ Registering your application establishes a trust relationship between your app a
 
 Follow these steps to create the app registration:
 
-1. Sign in to the <a href="https://portal.azure.com/" target="_blank">Azure portal</a>.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com).
 1. If you have access to multiple tenants, use the **Directories + subscriptions** filter :::image type="icon" source="../images/portal-directory-subscription-filter.png" border="false"::: in the top menu to switch to the tenant in which you want to register the application.
-1. Search for and select **Azure Active Directory**.
-1. Under **Manage**, select **App registrations** > **New registration**.
+1. Expand the **Identity** menu > expand **Applications**> select **App registrations** > **New registration**.
 1. Enter a display **Name** for your application. Users of your application might see the display name when they use the app, for example during sign-in.
    You can change the display name at any time and multiple app registrations can share the same name. The app registration's automatically generated Application (client) ID, not its display name, uniquely identifies your app within the identity platform.
 1. Specify who can use the application, sometimes called its _sign-in audience_.
@@ -50,23 +49,23 @@ Follow these steps to create the app registration:
    | Supported account types                                                      | Description                                                                                                                                                                                                                                                                                                                                                                                 |
    | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
    | **Accounts in this organizational directory only**                           | Select this option if you're building an application for use only by users (or guests) in _your_ tenant.<br><br>Often called a _line-of-business_ (LOB) application, this app is a _single-tenant_ application in the Microsoft identity platform.                                                                                                                                          |
-   | **Accounts in any organizational directory**                                 | Select this option if you want users in _any_ Azure Active Directory (Azure AD) tenant to be able to use your application. This option is appropriate if, for example, you're building a software-as-a-service (SaaS) application that you intend to provide to multiple organizations.<br><br>This type of app is known as a _multitenant_ application in the Microsoft identity platform. |
+   | **Accounts in any organizational directory**                                 | Select this option if you want users in _any_ Microsoft Entra tenant to be able to use your application. This option is appropriate if, for example, you're building a software-as-a-service (SaaS) application that you intend to provide to multiple organizations.<br><br>This type of app is known as a _multitenant_ application in the Microsoft identity platform. |
    | **Accounts in any organizational directory and personal Microsoft accounts** | Select this option to target the widest set of customers.<br><br>By selecting this option, you're registering a _multitenant_ application that can also support users who have personal _Microsoft accounts_.                                                                                                                                                                               |
    | **Personal Microsoft accounts**                                              | Select this option if you're building an application only for users who have personal Microsoft accounts. Personal Microsoft accounts include Skype, Xbox, Live, and Hotmail accounts.                                                                                                                                                                                                      |
 
 1. Don't enter anything for **Redirect URI (optional)**. You'll configure a redirect URI in the next section.
 1. Select **Register** to complete the initial app registration.
 
-   :::image type="content" source="../images/quickstart-register-app/portal-02-app-reg-01.png" alt-text="Screenshot of the Azure portal in a web browser, showing the Register an application pane.":::
+   :::image type="content" source="../images/quickstart-register-app/portal-02-app-reg-01.png" alt-text="Screenshot of the Microsoft Entra admin center, showing the Register an application pane.":::
 
-When registration finishes, the Azure portal displays the app registration's **Overview** pane. You see the **Application (client) ID**. Also called the _client ID_, this value uniquely identifies your application in the Microsoft identity platform.
+When registration finishes, the Microsoft Entra admin center displays the app registration's **Overview** pane. You see the **Application (client) ID**. Also called the _client ID_, this value uniquely identifies your application in the Microsoft identity platform.
 
 > [!IMPORTANT]
-> New app registrations are hidden to users by default. When you are ready for users to see the app on their [My Apps page](https://support.microsoft.com/account-billing/sign-in-and-start-apps-from-the-my-apps-portal-2f3b1bae-0e5a-4a86-a33e-876fbd2a4510) you can enable it. To enable the app, in the Azure portal navigate to **Azure Active Directory** > **Enterprise applications** and select the app. Then on the **Properties** page toggle **Visible to users?** to Yes.
+> New app registrations are hidden to users by default. When you are ready for users to see the app on their [My Apps page](https://support.microsoft.com/account-billing/sign-in-and-start-apps-from-the-my-apps-portal-2f3b1bae-0e5a-4a86-a33e-876fbd2a4510) you can enable it. To enable the app, in the [Microsoft Entra admin center](https://entra.microsoft.com), expand the **Identity** menu > expand **Applications**> select **Enterprise applications** > select the app. Then on the **Properties** page toggle **Visible to users?** to Yes.
 
 Your application's code, or more typically an authentication library used in your application, also uses the client ID. The ID is used as part of validating the security tokens it receives from the identity platform.
 
-:::image type="content" source="../images/quickstart-register-app/portal-03-app-reg-02.png" alt-text="Screenshot of the Azure portal in a web browser, showing an app registration's Overview pane.":::
+:::image type="content" source="../images/quickstart-register-app/portal-03-app-reg-02.png" alt-text="Screenshot of the Microsoft Entra admin center in a web browser, showing an app registration's Overview pane.":::
 
 ## Add a redirect URI
 
@@ -78,16 +77,17 @@ You add and modify redirect URIs for your registered applications by configuring
 
 ### Configure platform settings
 
-Settings for each application type, including redirect URIs, are configured in **Platform configurations** in the Azure portal. Some platforms, like **Web** and **Single-page applications**, require you to manually specify a redirect URI. For other platforms, like mobile and desktop, you can select from redirect URIs generated for you when you configure their other settings.
+Settings for each application type, including redirect URIs, are configured in **Platform configurations** in the Microsoft Entra admin center. Some platforms, like **Web** and **Single-page applications**, require you to manually specify a redirect URI. For other platforms, like mobile and desktop, you can select from redirect URIs generated for you when you configure their other settings.
 
 To configure application settings based on the platform or device you're targeting, follow these steps:
 
-1. In the Azure portal, in **App registrations**, select your application.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com).
+1. Expand the **Identity** menu > expand **Applications** > **App registrations**, select your application.
 1. Under **Manage**, select **Authentication**.
 1. Under **Platform configurations**, select **Add a platform**.
 1. Under **Configure platforms**, select the tile for your application type (platform) to configure its settings.
 
-   :::image type="content" source="../images/quickstart-register-app/portal-04-app-reg-03-platform-config.png" alt-text="Screenshot of the platform configuration pane in the Azure portal." border="false":::
+   :::image type="content" source="../images/quickstart-register-app/portal-04-app-reg-03-platform-config.png" alt-text="Screenshot of the platform configuration pane in the Microsoft Entra admin center." border="false":::
 
    | Platform                            | Configuration settings                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
    | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -109,13 +109,13 @@ Credentials are used by [confidential client applications](/azure/active-directo
 
 You can add both certificates and client secrets (a string) as credentials to your confidential client app registration.
 
-:::image type="content" source="../images/quickstart-register-app/portal-05-app-reg-04-credentials.png" alt-text="Screenshot of the Azure portal, showing the Certificates and secrets pane in an app registration.":::
+:::image type="content" source="../images/quickstart-register-app/portal-05-app-reg-04-credentials.png" alt-text="Screenshot of the Microsoft Entra admin center, showing the Certificates and secrets pane in an app registration.":::
 
 ### Option 1: Add a certificate
 
 Sometimes called a _public key_, a certificate is the recommended credential type because they're considered more secure than client secrets. For more information about using a certificate as an authentication method in your application, see [Microsoft identity platform application authentication certificate credentials](/azure/active-directory/develop/active-directory-certificate-credentials).
 
-1. In the Azure portal, in **App registrations**, select your application.
+1. In the Microsoft Entra admin center > **Identity** > **Applications**> **App registrations**, select your application.
 1. Select **Certificates & secrets** > **Certificates** > **Upload certificate**.
 1. Select the file you want to upload. It must be one of the following file types: _.cer_, _.pem_, _.crt_.
 1. Select **Add**.
@@ -126,7 +126,7 @@ Sometimes called an _application password_, a client secret is a string value yo
 
 Client secrets are considered less secure than certificate credentials. Application developers sometimes use client secrets during local app development because of their ease of use. However, you should use certificate credentials for any of your applications that are running in production.
 
-1. In the Azure portal, in **App registrations**, select your application.
+1. In the Microsoft Entra admin center > **Identity** > **Applications**> **App registrations**, select your application.
 1. Select **Certificates & secrets** > **Client secrets** > **New client secret**.
 1. Add a description for your client secret.
 1. Select an expiration for the secret or specify a custom lifetime.
@@ -140,11 +140,11 @@ For application security recommendations, see [Microsoft identity platform best 
 
 ### Option 3: Add a federated credential
 
-Federated identity credentials are a type of credential that allows workloads, such as GitHub Actions, workloads running on Kubernetes, or workloads running in compute platforms outside of Azure access Azure AD protected resources without needing to manage secrets using [workload identity federation](/azure/active-directory/develop/workload-identity-federation).
+Federated identity credentials are a type of credential that allows workloads, such as GitHub Actions, workloads running on Kubernetes, or workloads running in compute platforms outside of Azure access Microsoft Entra protected resources without needing to manage secrets using [workload identity federation](/azure/active-directory/develop/workload-identity-federation).
 
 To add a federated credential, follow these steps:
 
-1. In the Azure portal, in **App registrations**, select your application.
+1. In the Microsoft Entra admin center > **Identity** > **Applications** > **App registrations**, select your application.
 1. Select **Certificates & secrets** > **Federated credentials** > **Add a credential**.
 1. In the **Federated credential scenario** drop-down box, select one of the supported scenarios, and follow the corresponding guidance to complete the configuration.
 

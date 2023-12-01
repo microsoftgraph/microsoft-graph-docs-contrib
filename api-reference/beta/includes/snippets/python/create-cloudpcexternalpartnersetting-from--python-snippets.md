@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = CloudPcExternalPartnerSetting(
 	odata_type = "#microsoft.graph.cloudPcExternalPartnerSetting",
@@ -14,7 +14,7 @@ request_body = CloudPcExternalPartnerSetting(
 	enable_connection = True,
 )
 
-result = await graph_client.device_management.virtual_endpoint.external_partner_settings.post(request_body = request_body)
+result = await graph_client.device_management.virtual_endpoint.external_partner_settings.post(request_body)
 
 
 ```

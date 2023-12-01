@@ -15,7 +15,7 @@ $requestBody->setGroupTag('Group Tag value');
 $requestBody->setSerialNumber('Serial Number value');
 $requestBody->setProductKey('Product Key value');
 $requestBody->setImportId('Import Id value');
-$requestBody->setHardwareIdentifier(base64_decode('aGFyZHdhcmVJZGVudGlmaWVy'));
+$requestBody->setHardwareIdentifier(\GuzzleHttp\Psr7\Utils::streamFor(base64_decode('aGFyZHdhcmVJZGVudGlmaWVy')));
 $state = new ImportedWindowsAutopilotDeviceIdentityState();
 $state->setOdataType('microsoft.graph.importedWindowsAutopilotDeviceIdentityState');
 $state->setDeviceImportStatus(new ImportedWindowsAutopilotDeviceIdentityImportStatus('pending'));

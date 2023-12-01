@@ -9,8 +9,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestConfiguration = new IdentityUserFlowAttributeAssignmentRequestBuilderGetRequestConfiguration();
-$queryParameters = IdentityUserFlowAttributeAssignmentRequestBuilderGetRequestConfiguration::createQueryParameters();
+$requestConfiguration = new IdentityUserFlowAttributeAssignmentItemRequestBuilderGetRequestConfiguration();
+$queryParameters = IdentityUserFlowAttributeAssignmentItemRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->expand = ["userAttribute"];
 $requestConfiguration->queryParameters = $queryParameters;
 

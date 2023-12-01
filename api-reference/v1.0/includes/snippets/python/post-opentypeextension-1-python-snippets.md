@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Message(
 	subject = "Annual review",
@@ -20,7 +20,7 @@ request_body = Message(
 				address = "rufus@contoso.com",
 			),
 		),
-	]
+	],
 	extensions = [
 		OpenTypeExtension(
 			odata_type = "microsoft.graph.openTypeExtension",
@@ -31,10 +31,10 @@ request_body = Message(
 					"deal_value" : 10000,
 			}
 		),
-	]
+	],
 )
 
-result = await graph_client.me.messages.post(request_body = request_body)
+result = await graph_client.me.messages.post(request_body)
 
 
 ```

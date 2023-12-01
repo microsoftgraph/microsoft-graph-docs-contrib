@@ -16,7 +16,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 $queryParameters = ServicePrincipalsRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->filter = "owners/$count eq 0 or owners/$count eq 1";
+$queryParameters->filter = "owners/\$count eq 0 or owners/\$count eq 1";
 $queryParameters->count = true;
 $requestConfiguration->queryParameters = $queryParameters;
 

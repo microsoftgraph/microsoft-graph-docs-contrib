@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = CloudPcProvisioningPolicy(
 	odata_type = "#microsoft.graph.cloudPcProvisioningPolicy",
@@ -27,7 +27,7 @@ request_body = CloudPcProvisioningPolicy(
 			on_premises_connection_id = "26e16c71-f210-438b-88ac-d481ccafffff",
 			type = CloudPcDomainJoinType.HybridAzureADJoin,
 		),
-	]
+	],
 	id = "1d164206-bf41-4fd2-8424-a3192d39ffff",
 	enable_single_sign_on = True,
 	image_display_name = "Windows-10 19h1-evd",
@@ -40,7 +40,7 @@ request_body = CloudPcProvisioningPolicy(
 	provisioning_type = CloudPcProvisioningType.Dedicated,
 )
 
-result = await graph_client.device_management.virtual_endpoint.provisioning_policies.post(request_body = request_body)
+result = await graph_client.device_management.virtual_endpoint.provisioning_policies.post(request_body)
 
 
 ```

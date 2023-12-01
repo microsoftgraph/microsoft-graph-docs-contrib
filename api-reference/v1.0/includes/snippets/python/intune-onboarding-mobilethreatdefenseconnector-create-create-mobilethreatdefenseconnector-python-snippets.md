@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = MobileThreatDefenseConnector(
 	odata_type = "#microsoft.graph.mobileThreatDefenseConnector",
@@ -27,7 +27,7 @@ request_body = MobileThreatDefenseConnector(
 	microsoft_defender_for_endpoint_attach_enabled = True,
 )
 
-result = await graph_client.device_management.mobile_threat_defense_connectors.post(request_body = request_body)
+result = await graph_client.device_management.mobile_threat_defense_connectors.post(request_body)
 
 
 ```

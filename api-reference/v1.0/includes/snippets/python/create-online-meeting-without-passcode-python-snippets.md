@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = OnlineMeeting(
 	start_date_time = "2019-07-12T14:30:34.2444915-07:00",
@@ -17,7 +17,7 @@ request_body = OnlineMeeting(
 	),
 )
 
-result = await graph_client.me.online_meetings.post(request_body = request_body)
+result = await graph_client.me.online_meetings.post(request_body)
 
 
 ```

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = FindMeetingTimesPostRequestBody(
 	attendees = [
@@ -17,7 +17,7 @@ request_body = FindMeetingTimesPostRequestBody(
 				address = "alexw@contoso.onmicrosoft.com",
 			),
 		),
-	]
+	],
 	location_constraint = LocationConstraint(
 		is_required = False,
 		suggest_location = False,
@@ -26,7 +26,7 @@ request_body = FindMeetingTimesPostRequestBody(
 				resolve_availability = False,
 				display_name = "Conf room Hood",
 			),
-		]
+		],
 	),
 	time_constraint = TimeConstraint(
 		activity_domain = ActivityDomain.Work,
@@ -41,7 +41,7 @@ request_body = FindMeetingTimesPostRequestBody(
 					time_zone = "Pacific Standard Time",
 				),
 			),
-		]
+		],
 	),
 	is_organizer_optional = False,
 	meeting_duration = "PT1H",
@@ -49,14 +49,11 @@ request_body = FindMeetingTimesPostRequestBody(
 	minimum_attendee_percentage = 100,
 )
 
-request_configuration = FindMeetingTimesRequestBuilder.FindMeetingTimesRequestBuilderPostRequestConfiguration(
-headers = {
-		'Prefer' : "outlook.timezone=\"Pacific Standard Time\"",
-}
+request_configuration = FindMeetingTimesRequestBuilder.FindMeetingTimesRequestBuilderPostRequestConfiguration()
+request_configuration.headers.add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
 
-)
 
-result = await graph_client.me.find_meeting_times.post(request_body = request_body, request_configuration = request_configuration)
+result = await graph_client.me.find_meeting_times.post(request_body, request_configuration = request_configuration)
 
 
 ```

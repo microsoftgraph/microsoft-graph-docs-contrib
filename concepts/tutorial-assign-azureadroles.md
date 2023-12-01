@@ -1,5 +1,5 @@
 ---
-title: "Assign Azure AD roles through Privileged Identity Management (PIM) APIs in Microsoft Graph"
+title: "Assign Microsoft Entra roles through Privileged Identity Management (PIM) APIs in Microsoft Graph"
 description: "Learn how to create a role-assignable security group for IT Helpdesk and use the PIM API to assign the security group eligibility to the User Administrator role."
 author: "FaithOmbongi"
 ms.author: ombongifaith
@@ -9,13 +9,13 @@ ms.prod: "governance"
 ms.date: 12/20/2022
 ---
 
-# Assign Azure AD roles through Privileged Identity Management (PIM) APIs in Microsoft Graph
+# Assign Microsoft Entra roles through Privileged Identity Management (PIM) APIs in Microsoft Graph
 
-Microsoft Graph PIM API enables organizations to manage privileged access to resources in Azure Active Directory (Azure AD). It also helps to manage the risks of privileged access by limiting when access is active, managing the scope of access, and providing an auditable log of privileged access.
+Microsoft Graph PIM API enables organizations to manage privileged access to resources in Microsoft Entra ID. It also helps to manage the risks of privileged access by limiting when access is active, managing the scope of access, and providing an auditable log of privileged access.
 
-In this tutorial, a fictitious company called Contoso Limited wishes to have its IT Helpdesk manage the lifecycle of employees’ access. The company has identified the Azure AD User Administrator role as the appropriate privileged role required by IT Helpdesk, and will use the PIM API to assign the role.
+In this tutorial, a fictitious company called Contoso Limited wishes to have its IT Helpdesk manage the lifecycle of employees' access. The company has identified the Microsoft Entra *User Administrator* role as the appropriate privileged role required by IT Helpdesk, and will use the PIM API to assign the role.
 
-You'll create a role-assignable security group for IT Helpdesk and using the PIM API, assign the security group eligibility to the User Administrator role. By assigning the eligible role to a security group, Contoso has a more efficient way to manage administrator access to resources such as Azure AD roles. For example:
+You'll create a role-assignable security group for IT Helpdesk and using the PIM API, assign the security group eligibility to the User Administrator role. By assigning the eligible role to a security group, Contoso has a more efficient way to manage administrator access to resources such as Microsoft Entra roles. For example:
 
 + Removing existing or adding more group members also removes administrators.
 + Adding more roles to the group members instead of assigning roles to individual users.
@@ -29,7 +29,7 @@ Assigning eligibility instead of a persistently active User Administrator privil
 
 To complete this tutorial, you need the following resources and privileges:
 
-+ A working Azure AD tenant with an Azure AD Premium P2 or EMS E5 license enabled.
++ A working Microsoft Entra tenant with a Microsoft Entra ID P2 or EMS E5 license enabled.
 + Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Global Administrator role.
   + [Optional] Start a new session in another browser. You'll sign in later in this tutorial.
 + Grant yourself the following delegated permissions: `User.ReadWrite.All`, `Group.ReadWrite.All`, `Directory.Read.All`, `RoleEligibilitySchedule.ReadWrite.Directory`, and `RoleAssignmentSchedule.ReadWrite.Directory`, and `RoleManagement.ReadWrite.Directory`.
@@ -37,7 +37,7 @@ To complete this tutorial, you need the following resources and privileges:
 
 ## Step 1: Create a test user
 
-Create a user who must reset their password at first sign in. From this step, record the value of the new user's **id** for use in the next step. After creating the user, visit the Azure portal and enable multifactor authentication (MFA) for the user. For more information about enabling MFA, see the [See also](#see-also) section.
+Create a user who must reset their password at first sign in. From this step, record the value of the new user's **id** for use in the next step. After creating the user, visit the Microsoft Entra admin center and enable multifactor authentication (MFA) for the user. For more information about enabling MFA, see the [See also](#see-also) section.
 
 
 ### Request
@@ -118,9 +118,11 @@ Content-type: application/json
 }
 ```
 
-## Step 2: Create a security group that can be assigned an Azure AD role
+<a name='step-2-create-a-security-group-that-can-be-assigned-an-azure-ad-role'></a>
 
-Create a group that’s assignable to an Azure AD role. Assign yourself as the group owner and both you and Aline (the user created in Step 1) as members.
+## Step 2: Create a security group that can be assigned a Microsoft Entra role
+
+Create a group that's assignable to a Microsoft Entra role. Assign yourself as the group owner and both you and Aline (the user created in Step 1) as members.
 
 ### Request: Create a role-assignable group
 
@@ -219,12 +221,12 @@ Content-type: application/json
 
 Now that you have a security group, assign it as eligible for the User Administrator role. In this step:
 
-+ Create a unifiedRoleEligibilityScheduleRequest object that identifies the group **IT Helpdesk (User)** as eligible for the User Administrator role for one year. Azure AD extends this eligible assignment to the group members, that is, you and Aline.
++ Create a unifiedRoleEligibilityScheduleRequest object that identifies the group **IT Helpdesk (User)** as eligible for the User Administrator role for one year. Microsoft Entra ID extends this eligible assignment to the group members, that is, you and Aline.
 + Scope the eligible assignment to your entire tenant. This allows the user admin to use their privilege against all users in your tenant, except higher privileged users such as the Global Administrator.
 
 ### Request
 
-Replace `e77cbb23-0ff2-4e18-819c-690f58269752` with the value of the **id** of the **IT Helpdesk (User)** security group. This **principalId** identifies the assignee of eligibility to the User Administrator role. The roleDefinitionId `fe930be7-5e62-47db-91af-98c3a49a38b1` is the global template identifier for the User Administrator role in Azure AD.
+Replace `e77cbb23-0ff2-4e18-819c-690f58269752` with the value of the **id** of the **IT Helpdesk (User)** security group. This **principalId** identifies the assignee of eligibility to the User Administrator role. The roleDefinitionId `fe930be7-5e62-47db-91af-98c3a49a38b1` is the global template identifier for the Microsoft Entra *User Administrator* role.
 
 
 # [HTTP](#tab/http)
@@ -396,7 +398,7 @@ Content-type: application/json
 }
 ```
 
-The empty response object shows that Aline has no existing Azure AD roles in Contoso. Aline will now activate their eligible User Administrator role for a limited time.
+The empty response object shows that Aline has no existing Microsoft Entra roles in Contoso. Aline will now activate their eligible User Administrator role for a limited time.
 
 ## Step 5: User self-activates their eligible assignment
 
@@ -738,5 +740,5 @@ HTTP/1.1 204 No Content
 
 ## See also
 
-+ [Tutorial: Assign Azure AD roles in Privileged Identity Management using Microsoft Graph PowerShell](/powershell/microsoftgraph/tutorial-pim)
++ [Tutorial: Assign Microsoft Entra roles in Privileged Identity Management using Microsoft Graph PowerShell](/powershell/microsoftgraph/tutorial-pim)
 + [Overview of role management through PIM](/graph/api/resources/privilegedidentitymanagementv3-overview)

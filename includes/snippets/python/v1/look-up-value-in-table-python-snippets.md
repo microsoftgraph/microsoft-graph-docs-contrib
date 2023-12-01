@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = VlookupPostRequestBody(
 	lookup_value = "pear",
@@ -19,14 +19,11 @@ request_body = VlookupPostRequestBody(
 	range_lookup = False,
 )
 
-request_configuration = VlookupRequestBuilder.VlookupRequestBuilderPostRequestConfiguration(
-headers = {
-		'workbook-session-id' : "{session-id}",
-}
+request_configuration = VlookupRequestBuilder.VlookupRequestBuilderPostRequestConfiguration()
+request_configuration.headers.add("workbook-session-id", "{session-id}")
 
-)
 
-result = await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').workbook.functions.vlookup.post(request_body = request_body, request_configuration = request_configuration)
+result = await graph_client.drives.by_drive_id('drive-id').items.by_drive_item_id('driveItem-id').workbook.functions.vlookup.post(request_body, request_configuration = request_configuration)
 
 
 ```

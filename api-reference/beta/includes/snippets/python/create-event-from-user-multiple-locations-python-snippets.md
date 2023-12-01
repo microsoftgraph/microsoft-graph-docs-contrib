@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Event(
 	subject = "Plan summer company picnic",
@@ -37,7 +37,7 @@ request_body = Event(
 			),
 			type = AttendeeType.Required,
 		),
-	]
+	],
 	location = Location(
 		display_name = "Conf Room 3; Fourth Coffee; Home Office",
 		location_type = LocationType.Default,
@@ -63,18 +63,15 @@ request_body = Event(
 		Location(
 			display_name = "Home Office",
 		),
-	]
+	],
 	allow_new_time_proposals = True,
 )
 
-request_configuration = EventsRequestBuilder.EventsRequestBuilderPostRequestConfiguration(
-headers = {
-		'Prefer' : "outlook.timezone=\"Pacific Standard Time\"",
-}
+request_configuration = EventsRequestBuilder.EventsRequestBuilderPostRequestConfiguration()
+request_configuration.headers.add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
 
-)
 
-result = await graph_client.me.events.post(request_body = request_body, request_configuration = request_configuration)
+result = await graph_client.me.events.post(request_body, request_configuration = request_configuration)
 
 
 ```

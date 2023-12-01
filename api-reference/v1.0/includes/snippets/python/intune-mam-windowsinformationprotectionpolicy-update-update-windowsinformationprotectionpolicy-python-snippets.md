@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = WindowsInformationProtectionPolicy(
 	odata_type = "#microsoft.graph.windowsInformationProtectionPolicy",
@@ -21,9 +21,9 @@ request_body = WindowsInformationProtectionPolicy(
 			display_name = "Display Name value",
 			resources = [
 				"Resources value",
-			]
+			],
 		),
-	]
+	],
 	protection_under_lock_config_required = True,
 	data_recovery_certificate = WindowsInformationProtectionDataRecoveryCertificate(
 		odata_type = "microsoft.graph.windowsInformationProtectionDataRecoveryCertificate",
@@ -45,7 +45,7 @@ request_body = WindowsInformationProtectionPolicy(
 			product_name = "Product Name value",
 			denied = True,
 		),
-	]
+	],
 	exempt_apps = [
 		WindowsInformationProtectionStoreApp(
 			odata_type = "microsoft.graph.windowsInformationProtectionStoreApp",
@@ -55,16 +55,16 @@ request_body = WindowsInformationProtectionPolicy(
 			product_name = "Product Name value",
 			denied = True,
 		),
-	]
+	],
 	enterprise_network_domain_names = [
 		WindowsInformationProtectionResourceCollection(
 			odata_type = "microsoft.graph.windowsInformationProtectionResourceCollection",
 			display_name = "Display Name value",
 			resources = [
 				"Resources value",
-			]
+			],
 		),
-	]
+	],
 	enterprise_proxied_domains = [
 		WindowsInformationProtectionProxiedDomainCollection(
 			odata_type = "microsoft.graph.windowsInformationProtectionProxiedDomainCollection",
@@ -75,9 +75,9 @@ request_body = WindowsInformationProtectionPolicy(
 					ip_address_or_f_q_d_n = "Ip Address Or FQDN value",
 					proxy = "Proxy value",
 				),
-			]
+			],
 		),
-	]
+	],
 	enterprise_i_p_ranges = [
 		WindowsInformationProtectionIPRangeCollection(
 			odata_type = "microsoft.graph.windowsInformationProtectionIPRangeCollection",
@@ -86,9 +86,9 @@ request_body = WindowsInformationProtectionPolicy(
 				IpRange(
 					odata_type = "microsoft.graph.ipRange",
 				),
-			]
+			],
 		),
-	]
+	],
 	enterprise_i_p_ranges_are_authoritative = True,
 	enterprise_proxy_servers = [
 		WindowsInformationProtectionResourceCollection(
@@ -96,18 +96,18 @@ request_body = WindowsInformationProtectionPolicy(
 			display_name = "Display Name value",
 			resources = [
 				"Resources value",
-			]
+			],
 		),
-	]
+	],
 	enterprise_internal_proxy_servers = [
 		WindowsInformationProtectionResourceCollection(
 			odata_type = "microsoft.graph.windowsInformationProtectionResourceCollection",
 			display_name = "Display Name value",
 			resources = [
 				"Resources value",
-			]
+			],
 		),
-	]
+	],
 	enterprise_proxy_servers_are_authoritative = True,
 	neutral_domain_resources = [
 		WindowsInformationProtectionResourceCollection(
@@ -115,9 +115,9 @@ request_body = WindowsInformationProtectionPolicy(
 			display_name = "Display Name value",
 			resources = [
 				"Resources value",
-			]
+			],
 		),
-	]
+	],
 	indexing_encrypted_stores_or_items_blocked = True,
 	smb_auto_encrypted_file_extensions = [
 		WindowsInformationProtectionResourceCollection(
@@ -125,9 +125,9 @@ request_body = WindowsInformationProtectionPolicy(
 			display_name = "Display Name value",
 			resources = [
 				"Resources value",
-			]
+			],
 		),
-	]
+	],
 	is_assigned = True,
 	revoke_on_mdm_handoff_disabled = True,
 	mdm_enrollment_url = "https://example.com/mdmEnrollmentUrl/",
@@ -143,7 +143,7 @@ request_body = WindowsInformationProtectionPolicy(
 	days_without_contact_before_unenroll = 0,
 )
 
-result = await graph_client.device_app_management.window_information_protection_policies.by_window_information_protection_policie_id('windowsInformationProtectionPolicy-id').patch(request_body = request_body)
+result = await graph_client.device_app_management.windows_information_protection_policies.by_windows_information_protection_policy_id('windowsInformationProtectionPolicy-id').patch(request_body)
 
 
 ```

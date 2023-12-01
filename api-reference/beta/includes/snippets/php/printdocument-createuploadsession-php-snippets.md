@@ -16,6 +16,6 @@ $properties->setContentType('application/pdf');
 $properties->setSize(4533322);
 $requestBody->setProperties($properties);
 
-$result = $graphServiceClient->print()->shares()->byPrinterShareId('printerShare-id')->jobs()->byPrintJobId('printJob-id')->documents()->byPrintDocumentId('printDocument-id')->createUploadSession()->post($requestBody)->wait();
+$result = $graphServiceClient->escapedPrint()->shares()->byPrinterShareId('printerShare-id')->jobs()->byPrintJobId('printJob-id')->documents()->byPrintDocumentId('printDocument-id')->createUploadSession()->post($requestBody)->wait();
 
 ```

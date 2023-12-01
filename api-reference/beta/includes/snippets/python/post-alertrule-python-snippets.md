@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AlertRule(
 	id = "215c55cc-b1c9-4d36-a870-be5778101714",
@@ -24,28 +24,33 @@ request_body = AlertRule(
 	notification_channels = [
 		NotificationChannel(
 			notification_channel_type = NotificationChannelType.Portal,
-			receivers = [
-				"",
-			]
 			notification_receivers = [
-			]
+			],
 		),
 		NotificationChannel(
 			notification_channel_type = NotificationChannelType.Email,
-			receivers = [
-				"serena.davis@contoso.com",
-			]
 			notification_receivers = [
 				NotificationReceiver(
 					locale = "en-us",
 					contact_information = "serena.davis@contoso.com",
 				),
-			]
+			],
 		),
-	]
+	],
+	additional_data = {
+			"conditions" : [
+				{
+						"relationship_type" : "or",
+						"condition_category" : "azureNetworkConnectionCheckFailures",
+						"aggregation" : "count",
+						"operator" : "greaterOrEqual",
+						"threshold_value" : "90",
+				},
+			],
+	}
 )
 
-result = await graph_client.device_management.monitoring.alert_rules.post(request_body = request_body)
+result = await graph_client.device_management.monitoring.alert_rules.post(request_body)
 
 
 ```

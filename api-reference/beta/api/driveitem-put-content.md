@@ -1,34 +1,35 @@
 ---
 author: spgraph-docs-team
-description: "The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call. "
+description: "Provide the contents of a new file or update the contents of an existing file in a single API call. "
 ms.date: 09/10/2017
 title: Upload small files
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
-# Upload or replace the contents of a DriveItem
+# Upload or replace the contents of a driveItem
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call.
-This method only supports files up to 4MB in size.
+Provide the contents of a new file or update the contents of an existing file in a single API call.
+This method only supports files up to 250 MB in size.
 
-To upload large files see [Upload large files with an upload session](driveitem-createuploadsession.md).
+To upload large files, see [Upload large files with an upload session](driveitem-createuploadsession.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    |
-|Application | Files.ReadWrite.All, Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "driveitem_put_content" } -->
+[!INCLUDE [permissions-table](../includes/permissions/driveitem-put-content-permissions.md)]
 
-## HTTP request (to replace an existing item)
+## HTTP request
+
+### To replace an existing item
 
 <!-- { "blockType": "ignored" } -->
 
@@ -40,7 +41,7 @@ PUT /sites/{site-id}/drive/items/{item-id}/content
 PUT /users/{user-id}/drive/items/{item-id}/content
 ```
 
-## HTTP request (to upload a new file)
+### To upload a new file
 
 <!-- { "blockType": "ignored" } -->
 

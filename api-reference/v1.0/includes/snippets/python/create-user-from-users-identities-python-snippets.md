@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = User(
 	display_name = "John Smith",
@@ -26,7 +26,7 @@ request_body = User(
 			issuer = "facebook.com",
 			issuer_assigned_id = "5eecb0cd",
 		),
-	]
+	],
 	password_profile = PasswordProfile(
 		password = "password-value",
 		force_change_password_next_sign_in = False,
@@ -34,7 +34,7 @@ request_body = User(
 	password_policies = "DisablePasswordExpiration",
 )
 
-result = await graph_client.users.post(request_body = request_body)
+result = await graph_client.users.post(request_body)
 
 
 ```
