@@ -129,6 +129,24 @@
     {
       "ChangeList": [
         {
+          "Id": "316da0c9-0d1f-4949-a912-0f4d785a5bd0",
+          "ApiChange": "Method",
+          "ChangedApiName": "virtualEventWebinar",
+          "ChangeType": "Addition",
+          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/virtualeventsroot-list-webinars?view=graph-rest-beta) operation to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-beta) resource.",
+          "Target": "virtualEventWebinar"
+        }
+      ],
+      "Id": "316da0c9-0d1f-4949-a912-0f4d785a5bd0",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-11-25T00:00:00Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "840dd994-b26b-48a2-8d7c-1b52ea86a45c",
           "ApiChange": "Property",
           "ChangedApiName": "preferredDisplayName",

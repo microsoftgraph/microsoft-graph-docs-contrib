@@ -13,9 +13,7 @@ var requestBody = new AccessPackageResourceRoleScope
 {
 	Role = new AccessPackageResourceRole
 	{
-		Id = "6646a29e-da03-49f6-bcd9-dec124492de3",
 		DisplayName = "Contributors",
-		Description = null,
 		OriginSystem = "SharePointOnline",
 		OriginId = "4",
 		Resource = new AccessPackageResource
@@ -25,7 +23,6 @@ var requestBody = new AccessPackageResourceRoleScope
 	},
 	Scope = new AccessPackageResourceScope
 	{
-		Id = "5ae0ae7c-d0a5-42aa-ab37-1f15e9a61d33",
 		DisplayName = "Root",
 		Description = "Root Scope",
 		OriginId = "https://contoso.sharepoint.com/portals/Community",
