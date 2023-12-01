@@ -1867,7 +1867,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "plannerArchivalInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [plannerArchivalInfo](https://learn.microsoft.com/en-us/graph/api/resources/plannerArchivalInfo?view=graph-rest-beta) resource type.",
+          "Description": "Added the `plannerArchivalInfo` resource type.",
           "Target": "plannerArchivalInfo"
         },
         {
@@ -1923,7 +1923,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "archive",
           "ChangeType": "Addition",
-          "Description": "Added the [archive](https://learn.microsoft.com/en-us/graph/api/plannerPlan?view=graph-rest-beta) method to the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/plannerPlan?view=graph-rest-beta) resource.",
+          "Description": "Added the `archive` method to **plannerPlan**.",
           "Target": "plannerPlan"
         },
         {
@@ -1931,7 +1931,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "unarchive",
           "ChangeType": "Addition",
-          "Description": "Added the [unarchive](https://learn.microsoft.com/en-us/graph/api/plannerPlan?view=graph-rest-beta) method to the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/plannerPlan?view=graph-rest-beta) resource.",
+          "Description": "Added the `unarchive` method to **plannerPlan**.",
           "Target": "plannerPlan"
         }
       ],
