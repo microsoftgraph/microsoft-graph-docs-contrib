@@ -3754,7 +3754,7 @@
                 "ApiChange": "ComplexType",
                 "ChangedApiName": "cloudPcOnPremisesConnectionStatusDetails",
                 "ChangeType": "Deprecation",
-                "Description": "Deprecated the **cloudPcOnPremisesConnectionStatusDetails** property. Goind forward, use the **cloudPcOnPremisesConnectionStatusDetail** property.",
+                "Description": "Deprecated the **cloudPcOnPremisesConnectionStatusDetails** complex type. Going forward, use the **cloudPcOnPremisesConnectionStatusDetail** complex type.",
                 "Target": "cloudPcOnPremisesConnectionStatusDetails"
             },
             {
