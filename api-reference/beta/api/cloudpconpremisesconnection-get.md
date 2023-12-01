@@ -280,7 +280,7 @@ Content-Type: application/json
     "displayName": "Display Name value",
     "healthCheckStatus": "failed",
     "healthCheckStatusDetails": {
-      "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionStatusDetail",
+      "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionStatusDetails",
       "startDateTime": "2020-11-03T12:43:14Z",
       "endDateTime": "2020-11-03T12:43:32Z",
       "healthChecks": [
