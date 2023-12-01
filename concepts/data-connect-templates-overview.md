@@ -28,7 +28,7 @@ To learn more and get started with the Microsoft Graph Data Connect templates, s
 
 ## Quick start templates
 
-Quick start templates help you easily set up pipelines for extraction of Microsoft Graph Data Connect datasets along with the Azure resources to deploy them. The configuration of data pipelines becomes faster because the details of registered applications are used to increase efficiency. Currently, the quick start templates only support Azure Data Factory as the platform and copy activity as the activity type.
+Quick start templates help you easily set up pipelines for the extraction of Microsoft Graph Data Connect datasets along with the Azure resources to deploy them. The configuration of data pipelines becomes faster because the details of registered applications are used to increase efficiency. Currently, the quick start templates only support Azure Data Factory as the platform and copy activity as the activity type.
 
 ### Prerequisites
 
