@@ -26,7 +26,7 @@ Inherits from [onlineMeeting](../resources/onlinemeeting.md).
 
 ## Properties
 
-Only properties in the below table are being returned in the response.
+Currently, only the following properties are filled out on a virtualEventSession object when it's returned. All other properties on the returned virtualEventSession object are null.
 
 | Property              | Type                                          | Description    |
 | :-------------------- | :-------------------------------------------- | :------------------------------------ |
