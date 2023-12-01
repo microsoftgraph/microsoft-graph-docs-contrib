@@ -7,7 +7,7 @@ ms.prod: "files"
 doc_type: apiPageType
 ---
 
-# filStorageContainer: activate
+# fileStorageContainer: activate
 
 
 Namespace: microsoft.graph
