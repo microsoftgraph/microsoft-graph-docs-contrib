@@ -36,6 +36,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /teams/{team-id}/channels/{channel-id}/unarchive
+POST /groups/{team-id}/team/channels/{channel-id}/unarchive
 ```
 
 ## Request headers
@@ -74,7 +75,7 @@ The following is an example of a response.
 }-->
 ```http
 HTTP/1.1 202 Accepted
-Location: /teams/{team-id}/channels/{channel-id}/operations/{operation-id}
+Location: /teams/{team-id}/operations/{operation-id}
 Content-Type: text/plain
 Content-Length: 0
 ```

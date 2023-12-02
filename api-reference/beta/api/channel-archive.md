@@ -38,6 +38,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /teams/{team-id}/channels/{channel-id}/archive
+POST /groups/{team-id}/team/channels/{channel-id}/archive
 ```
 ## Request headers
 | Header       | Value |
@@ -55,7 +56,7 @@ This optional parameter defines whether to set permissions for team members to r
 
 ## Response
 
-If archiving is started successfully, this method returns a `202 Accepted` response code. The response will also contain a `Content-Location` header, which contains the location of the [teamsAsyncOperation](../resources/teamsasyncoperation.md) that was created to handle archiving of the channel in a team. Check the status of the archiving operation by making a GET request to this location.
+If archiving is started successfully, this method returns a `202 Accepted` response code. The response will also contain a `Location` header, which contains the location of the [teamsAsyncOperation](../resources/teamsasyncoperation.md) that was created to handle archiving of the channel in a team. Check the status of the archiving operation by making a GET request to this location.
 
 ## Example
 ### Request
@@ -67,7 +68,7 @@ The following is an example of a request.
   "name": "archive_channel"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/archive
+POST https://graph.microsoft.com/beta/teams/{team-id}/channels/{channel-id}/archive
 ```
 
 ---
@@ -80,7 +81,7 @@ The following is an example of a response.
 }-->
 ```http
 HTTP/1.1 202 Accepted
-Content-Location: /teams/{team-id}/channels/{channel-id}/operations/{operation-id}
+Location: /teams/{team-id}/operations/{operation-id}
 Content-Type: text/plain
 Content-Length: 0
 ```
