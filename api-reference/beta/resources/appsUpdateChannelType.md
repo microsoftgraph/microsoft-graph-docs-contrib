@@ -20,9 +20,9 @@ Include the `Prefer: include-unknown-enum-members` header to explicitly request 
 
 ## Members
 
-|Member|Value|Description|
-|:---|:---|:---|
-|current|0|New Microsoft 365 features as they become available. Updates are released at least once a month, and there isn't a fixed schedule. |
-|monthlyEnterprise|1|New Microsoft 365 features on a predictable schedule, with updates released on the second Tuesday of every month. |
-|semiAnnual|2|For specific devices that require extensive testing before deploying new Microsoft 365 features due to regulatory, governmental, or organizational requirements. Updates are released on the second Tuesday of every month. |
-|unknownFutureValue|3|Evolvable enumeration sentinel value. Don't use. |
+|Member|Description|
+|:---|:---|
+|current|New Microsoft 365 features as they become available. Updates are released at least once a month, and there isn't a fixed schedule. |
+|monthlyEnterprise|New Microsoft 365 features on a predictable schedule, with updates released on the second Tuesday of every month. |
+|semiAnnual|For specific devices that require extensive testing before deploying new Microsoft 365 features due to regulatory, governmental, or organizational requirements. Updates are released on the second Tuesday of every month. |
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use. |

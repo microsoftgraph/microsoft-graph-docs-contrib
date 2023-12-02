@@ -19,7 +19,7 @@ Represents the tenant-level Microsoft 365 application installation options for a
 |Property|Type|Description|
 |:---|:---|:---|
 | isMicrosoft365AppsEnabled | Boolean | Specifies if users can install Microsoft 365 apps, including Skype for Business, on their Windows devices. The default value is `true`, meaning users with active license assigned can install. |
-| isProjectEnabled| Boolean | Specifies if users can install Project on their Windows devices. The default value is `true`, meaning users with active license assigned can install. |
+| isProjectEnabled| Boolean | Specifies if users can install Microsoft Project on their Windows devices. The default value is `true`, meaning users with active license assigned can install. |
 | isSkypeForBusinessEnabled | Boolean | Specifies if users can install Skype for Business (Standalone) on their Windows devices. The default value is `true`, meaning users with active license assigned can install. |
 | isVisioEnabled | Boolean | Specifies if users can install Visio on their Windows devices. The default value is `true`, meaning users with active license assigned can install. |
 
