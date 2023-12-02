@@ -23,8 +23,8 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | ------ | ----------- | ---------- |
 | [List webinars](../api/virtualeventsroot-list-webinars.md) | [virtualEventWebinar](../resources/virtualeventwebinar.md) collection | Get the list of all [virtualEventWebinar](../resources/virtualeventwebinar.md) objects created in the tenant. |
 | [Get virtualEventWebinar](../api/virtualeventwebinar-get.md) | [virtualEventWebinar](../resources/virtualeventwebinar.md) | Read the properties and relationships of a [virtualEventWebinar](../resources/virtualeventwebinar.md) object. |
-| [List by user role](../api/virtualeventwebinar-getbyuserrole.md) | [virtualEventWebinar](../resources/virtualeventwebinar.md) collection | Get a **virtualEventWebinar** collection where the signed-in user is either the organizer or a coorganizer. |
-| [List by user ID and role](../api/virtualeventwebinar-getbyuseridandrole.md) | [virtualEventWebinar](../resources/virtualeventwebinar.md) collection | Get a **virtualEventWebinar** collection where the specified user is either the organizer or a coorganizer. |
+| [List by user role](../api/virtualeventwebinar-getbyuserrole.md) | [virtualEventWebinar](../resources/virtualeventwebinar.md) collection | Get a **virtualEventWebinar** collection where the signed-in user is either the organizer or a co-organizer. |
+| [List by user ID and role](../api/virtualeventwebinar-getbyuseridandrole.md) | [virtualEventWebinar](../resources/virtualeventwebinar.md) collection | Get a **virtualEventWebinar** collection where the specified user is either the organizer or a co-organizer. |
 
 ## Properties
 
@@ -54,7 +54,7 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | ----- | ----------- |
 | draft | The webinar is in draft and only visible to the organizer. |
 | published | The organizer published the webinar and it's visible to the audience. |
-| canceled | The the organizer canceled the webinar. |
+| canceled | The organizer canceled the webinar. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships

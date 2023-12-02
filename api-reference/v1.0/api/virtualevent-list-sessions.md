@@ -1,6 +1,6 @@
 ---
 title: "List virtualEventSessions"
-description: "Get a list of all virtualEventSession objects under a virtual event."
+description: "Get a list of all virtual event sessions under a virtual event."
 author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -37,7 +37,7 @@ GET /solutions/virtualEvents/webinars/{webinarId}/sessions
 
 ## Optional query parameters
 
-This method does not support the OData query parameters. For general information, see [OData query parameters](/graph/query-parameters).
+This method doesn't support the OData query parameters. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -47,7 +47,7 @@ This method does not support the OData query parameters. For general information
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "list_virtualeventsession"
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/solutions/virtualEv
 
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
