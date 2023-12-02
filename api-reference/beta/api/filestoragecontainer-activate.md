@@ -1,5 +1,5 @@
 ---
-title: "filStorageContainer: activate"
+title: "fileStorageContainer: activate"
 description: "Activate a fileStorageContainer object."
 author: "tonchan-msft"
 ms.localizationpriority: medium
