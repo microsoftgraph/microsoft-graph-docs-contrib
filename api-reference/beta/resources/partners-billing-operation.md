@@ -15,6 +15,8 @@ Namespace: microsoft.graph.partners.billing
 
 Represents an operation to export the billing data of a partner.
 
+Base type of [exportSuccessOperation](../resources/partners-billing-exportsuccessoperation.md), [failedOperation](../resources/partners-billing-failedoperation.md), and [runningOperation](../resources/partners-billing-runningoperation.md).
+
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
