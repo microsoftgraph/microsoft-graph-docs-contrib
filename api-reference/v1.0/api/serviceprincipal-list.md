@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "serviceprincipal_list" } -->
 [!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-list-permissions.md)]
 
-[!INCLUDE [permissions-applicationreadwriteownedby-disclaimer](../../includes/permissions-applicationreadwriteownedby-disclaimer.md)]
+
 
 ## HTTP request
 
