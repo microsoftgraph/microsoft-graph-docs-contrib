@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # unbilledUsage: export
+
 Namespace: microsoft.graph.partners.billing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,6 +16,7 @@ Namespace: microsoft.graph.partners.billing
 Export unbilled usage data.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 <!-- {
@@ -35,32 +37,34 @@ POST /reports/partners/billing/usage/unbilled/export
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
+
 In the request body, supply a JSON representation of the parameters.
 
-The following table shows the parameters that can be used with this action.
+The following table shows the parameters that you can use with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|currencyCode|String|Partner billing currency code. Required.|
-|billingPeriod|microsoft.graph.partners.billing.billingPeriod|Supported values are: `current`and `last`. Choose `current` for current billing period and `last` for last billing period. Required.|
 |attributeSet|microsoft.graph.partners.billing.attributeSet|Supported values are: `full`and `basic`. Default value is `full`. Choose `full` for a complete response or `basic` for a subset of attributes. Optional.|
-
-
+|billingPeriod|microsoft.graph.partners.billing.billingPeriod|Supported values are: `current`and `last`. Choose `current` for current billing period and `last` for last billing period. Required.|
+|currencyCode|String|Partner billing currency code. Required.|
 
 ## Response
 
-If successful, this action returns a `202 Accepted` response code and a [operation](../resources/partners-billing-operation.md) in the **Location** header.
+If successful, this method returns a `202 Accepted` response code and a [operation](../resources/partners-billing-operation.md) in the **Location** header.
 
 ## Examples
 
 ### Request
-The following is an example of a request.
+
+The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "unbilledusagethis.export"
@@ -77,10 +81,10 @@ Content-Type: application/json
 }
 ```
 
-
 ### Response
-The following is an example of the response
->**Note:** The response does not have body.
+
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -90,6 +94,4 @@ The following is an example of the response
 HTTP/1.1 202 Accepted
 Content-Type: application/json
 Location: https://graph.microsoft.com/beta/reports/partners/billing/operations/9ab9cb54-d07f-4f52-9ea6-a09d7de52c14
-
 ```
-
