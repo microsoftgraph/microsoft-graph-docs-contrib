@@ -40,18 +40,16 @@ Customers who want to integrate with Microsoft Graph data and services need to d
 
 Many business scenarios require multiple integration building blocks to implement a solution, for example Data Loss Prevention (DLP) scenarios may need MGDC integration for the initial data collection and malicious behavior patterns analysis and subsequent event streaming integration for near real time data ingestion and processing to recognize a potential security incident as quick as possible. **It is our position that when multiple technologies are available on the Graph platform our customers should be able to choose a solution based on their own constraints and requirements such as complexity, cost, and time to market and accelerate their path to value.** 
 
-
 To explore each of the recommended integration options in more detail, follow the links below for the corresponding patterns:
 
-- [Interactive Applications](https://www.example.com)
+- [Interactive Applications](./patterns/Interactive-applications.md)
 
-- [Augment Search Experiences](https://www.example.com)
+- [Augment Search Experiences](./patterns/Augment-Search-experience-with-customer-data.md)
 
-- [Analyze Graph data](https://www.example.com)
+- [Analyze Graph data](./patterns/Analyse-Graph-data-in-your-data-storage.md)
+  
+- [Receive notifications via webhooks (Push)](./patterns/Observing-events-and-changes-in-your-data.md)
 
-- [Receive notifications via webhooks (Push)](https://www.example.com)
+- [Observe events via Event Hubs (Pull)](./patterns/Observing-events-via-Event-Hubs.md)
 
-- [Observe events via Event Hubs (Pull)](https://www.example.com)
-
-- [Interactive app with notifications](https://www.example.com)
-[title](https://www.example.com)
+- [Interactive app with notifications](./patterns/Interactive-applications-with-notifications.md)
