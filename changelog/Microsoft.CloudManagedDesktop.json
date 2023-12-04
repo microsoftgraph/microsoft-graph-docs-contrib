@@ -23,7 +23,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2023-10-16T06:58:17.7596296Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
       {
@@ -67,7 +67,7 @@
             "CreatedDateTime": "2023-09-29T10:36:40.1525853Z",
             "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
-        },  
+        },
 
       {
             "ChangeList": [
@@ -266,7 +266,7 @@
               "ApiChange": "Resource",
               "ChangedApiName": "frontLineServicePlans",
               "ChangeType": "Addition",
-              "Description": "Added the **frontLineServicePlans** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/intune-virtualEndpoint?view=graph-rest-beta) resource.",
+              "Description": "Added the **frontLineServicePlans** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-beta) resource.",
               "Target": "virtualEndpoint"
             }
           ],
@@ -1594,7 +1594,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "POST",
                     "ChangeType": "Addition",
-                    "Description": "Cloud PC provider supports [create](https://learn.microsoft.com/en-us/graph/rbacapplication-post-roledefinitions?view=graph-rest-beta) operation for [unifiedroledefinition](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroledefinition?view=graph-rest-beta).",
+                    "Description": "Cloud PC provider supports [create](https://learn.microsoft.com/en-us/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-beta) operation for [unifiedroledefinition](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroledefinition?view=graph-rest-beta).",
                     "Target": "unifiedroledefinition"
                 },
                 {
@@ -1602,7 +1602,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "Patch",
                     "ChangeType": "Addition",
-                    "Description": "Cloud PC provider supports [update](https://learn.microsoft.com/en-us/graph/unifiedroledefinition-update?view=graph-rest-beta) operation for [unifiedroledefinition](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroledefinition?view=graph-rest-beta).",
+                    "Description": "Cloud PC provider supports [update](https://learn.microsoft.com/en-us/graph/api/unifiedroledefinition-update?view=graph-rest-beta) operation for [unifiedroledefinition](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroledefinition?view=graph-rest-beta).",
                     "Target": "unifiedroledefinition"
                 },
                 {
@@ -1610,7 +1610,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "DELETE",
                     "ChangeType": "Addition",
-                    "Description": "Cloud PC provider supports [delete](https://learn.microsoft.com/en-us/graph/unifiedroledefinition-delete?view=graph-rest-beta) operation for [unifiedroledefinition](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroledefinition?view=graph-rest-beta).",
+                    "Description": "Cloud PC provider supports [delete](https://learn.microsoft.com/en-us/graph/api/unifiedroledefinition-delete?view=graph-rest-beta) operation for [unifiedroledefinition](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroledefinition?view=graph-rest-beta).",
                     "Target": "unifiedroledefinition"
                 },
                 {
@@ -2436,7 +2436,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "bulkReprovisionCloudPc",
                     "ChangeType": "Addition",
-                    "Description": "Added the [bulkReprovisionCloudPc](https://learn.microsoft.com/en-us/graph/api/manageddevice-bulkreprovisioncloudpc.md?view=graph-rest-beta) method to the [Cloud PC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+                    "Description": "Added the [bulkReprovisionCloudPc](https://learn.microsoft.com/en-us/graph/api/manageddevice-bulkreprovisioncloudpc?view=graph-rest-beta) method to the [Cloud PC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
                     "Target": "managedDevice"
                 },
                 {
@@ -3316,6 +3316,24 @@
         {
             "ChangeList": [
                 {
+                    "Id": "f00b2e02-6946-43f0-a94e-8c290df45986",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "resourceAvailabilityCheckDeploymentQuotaLimitReached",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `resourceAvailabilityCheckDeploymentQuotaLimitReached` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                }
+            ],
+            "Id": "f00b2e02-6946-43f0-a94e-8c290df45986",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2023-11-21T07:25:58.9412735Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "b653c0f4-bbc5-4236-b6a3-e440ac4565ab",
                     "ApiChange": "Property",
                     "ChangedApiName": "enableMEMAutoEnroll",
@@ -3434,7 +3452,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "retryPartnerAgentInstallation",
                     "ChangeType": "Addition",
-                    "Description": "Added the [retryPartnerAgentInstallation](https://review.learn.microsoft.com/en-us/graph/api/cloudpc-retrypartneragentinstallation?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+                    "Description": "Added the [retryPartnerAgentInstallation](https://learn.microsoft.com/en-us/graph/api/cloudpc-retrypartneragentinstallation?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
                     "Target": "cloudPC"
                 },
                 {
@@ -3484,7 +3502,7 @@
             "ApiChange": "Method",
             "ChangedApiName": "getShiftWorkCloudPcAccessState",
             "ChangeType": "Addition",
-            "Description": "Added the [getShiftWorkCloudPcAccessState](https://review.learn.microsoft.com/en-us/graph/api/cloudpc-getShiftWorkCloudPcAccessState?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+            "Description": "Added the [getShiftWorkCloudPcAccessState](https://learn.microsoft.com/en-us/graph/api/cloudpc-getShiftWorkCloudPcAccessState?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
             "Target": "cloudPC"
           },
           {
@@ -3557,7 +3575,7 @@
         "WorkloadArea": "Device and app management",
         "SubArea": "Cloud PC"
     },
-    {   
+    {
         "ChangeList": [
           {
             "Id": "2107ee19-7ed3-4480-936c-61a372e36751",

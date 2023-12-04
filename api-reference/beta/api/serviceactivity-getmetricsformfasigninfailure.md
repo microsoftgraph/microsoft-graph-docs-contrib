@@ -29,7 +29,7 @@ In addition to the delegated permissions, the signed-in user who is accessing th
 + Security Operator
 + Security Reader
 
-To learn more about directory roles, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json)
+To learn more about directory roles, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json)
 
 ## HTTP request
 
@@ -106,7 +106,6 @@ GET https://graph.microsoft.com/beta/reports/serviceActivity/getMetricsForMfaSig
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 The following example shows the response.

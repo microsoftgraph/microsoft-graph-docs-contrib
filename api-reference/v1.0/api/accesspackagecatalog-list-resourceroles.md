@@ -129,3 +129,82 @@ Content-type: application/json
   ]
 }
 ```
+
+### Example 2: Retrieving the roles of a resource for a SharePoint Online site collection
+
+#### Request
+
+The following example shows a request. The value of `resource/id` in the filter, containing the resource ID, can be obtained from the response to [list all resources in a catalog](accesspackagecatalog-list-resources.md#example-1-list-all-resources-in-a-catalog).
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_accesspackageresourceroles_sp"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/catalogs/29db1374-74cc-485d-b21e-506e08b836a5/resourceRoles?$filter=(originSystem+eq+%27SharePointOnline%27+and+resource/id+eq+%27dcc3f966-a73c-48e2-8c1d-bcac775488c3%27)&$expand=resource
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-accesspackageresourceroles-sp-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-accesspackageresourceroles-sp-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-accesspackageresourceroles-sp-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-accesspackageresourceroles-sp-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-accesspackageresourceroles-sp-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-accesspackageresourceroles-sp-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-accesspackageresourceroles-sp-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-accesspackageresourceroles-sp-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.  The collection contains one element for each SharePoint Online role.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRole",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "value": [
+    {
+      "id": "id-value",
+      "displayName": "Woodgrove Visitors",
+      "originId": "5",
+      "originSystem": "SharePointOnline"
+    }
+  ]
+}
+```

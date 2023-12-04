@@ -42,9 +42,9 @@ To list transitive role assignments for a directory provider:
 GET /roleManagement/directory/transitiveRoleAssignments?$filter=principalId eq '{principalId}'
 ```
 
-## Optional query parameters
+## Query parameters
 
-This method supports the `$count`, `$filter` (`eq`), and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). You can filter by the **principalId**, **roleDefinitionId** and **directoryScopeId** to retrieve both direct and transitive role assignments for a principal.
+This method requires the `$filter` (`eq`) OData query parameter to scope the transitive role assignments to a principal. You can narrow the scope of the request by expanding the filter to other supported properties. This method also supports the `$count` and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). 
 
 ## Request headers
 

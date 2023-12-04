@@ -21,12 +21,12 @@ Custom security attributes are supported for users and service principals only. 
 - Create custom security attributes. For more information about how to define and manage custom security attribute definitions, see [Overview of custom security attributes using Microsoft Graph](/graph/api/resources/custom-security-attributes-overview).
 - For delegated scenarios, the calling must be assigned the following permissions and administrative roles.
   - To assign, update, or remove:
-    - Microsoft Entra roles: [Attribute Assignment Administrator](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json#attribute-assignment-administrator)
+    - Microsoft Entra roles: [Attribute Assignment Administrator](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json#attribute-assignment-administrator)
     - Microsoft Graph permissions:
         - Users: CustomSecAttributeAssignment.ReadWrite.All and User.Read.All
         - Service principals: CustomSecAttributeAssignment.ReadWrite.All and Application.Read.All
   - To read:
-      - Microsoft Entra roles: [Attribute Assignment Reader](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json#attribute-reader) or [Attribute Assignment Administrator](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json#attribute-assignment-administrator)
+      - Microsoft Entra roles: [Attribute Assignment Reader](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json#attribute-reader) or [Attribute Assignment Administrator](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json#attribute-assignment-administrator)
       - Microsoft Graph permissions:
           - Users: CustomSecAttributeAssignment.Read.All and User.Read.All
           - Service principals: CustomSecAttributeAssignment.Read.All and Application.Read.All
