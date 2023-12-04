@@ -68,7 +68,7 @@ The [terms of use APIs](/graph/api/resources/agreement) in Microsoft Graph allow
 ## See also
 
 + [What is Microsoft Entra ID Governance?](/azure/active-directory/governance/identity-governance-overview)
-+ [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference)
++ [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json)
 
 
 <!-- {

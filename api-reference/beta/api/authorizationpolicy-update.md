@@ -3,6 +3,7 @@ title: "Update authorizationpolicy"
 description: "Update the properties of authorizationPolicy object."
 ms.localizationpriority: medium
 author: "DougKirschner"
+ms.reviewer: msodsrbac
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -19,15 +20,12 @@ Update the properties of a [authorizationPolicy](../resources/authorizationpolic
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Policy.ReadWrite.Authorization|
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Policy.ReadWrite.Authorization|
+<!-- { "blockType": "permissions", "name": "authorizationpolicy_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/authorizationpolicy-update-permissions.md)]
 
-When calling on behalf of a user, the user needs to have the *Privileged Role Administrator* [Microsoft Entra role](/azure/active-directory/roles/permissions-reference).
+When calling on behalf of a user, the user needs to have the *Privileged Role Administrator* [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 ## HTTP request
 

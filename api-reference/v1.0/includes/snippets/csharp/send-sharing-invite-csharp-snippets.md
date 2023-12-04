@@ -6,9 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Drives.Item.Items.Item.Invite;
+using Microsoft.Graph.Models;
 
-var requestBody = new Microsoft.Graph.Drives.Item.Items.Item.Invite.InvitePostRequestBody
+var requestBody = new InvitePostRequestBody
 {
 	Recipients = new List<DriveRecipient>
 	{
@@ -27,6 +29,8 @@ var requestBody = new Microsoft.Graph.Drives.Item.Items.Item.Invite.InvitePostRe
 	Password = "password123",
 	ExpirationDateTime = "2018-07-15T14:00:00.000Z",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Invite.PostAsync(requestBody);
 
 

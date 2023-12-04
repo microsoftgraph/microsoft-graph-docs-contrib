@@ -3,6 +3,7 @@ title: "Create unifiedRoleAssignment"
 description: "Create a new unifiedRoleAssignment object."
 ms.localizationpriority: medium
 author: "DougKirschner"
+ms.reviewer: msodsrbac
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
@@ -19,12 +20,12 @@ Create a new [unifiedRoleAssignment](../resources/unifiedroleassignment.md) obje
 
 ## Permissions
 
-Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 <a name='for-the-directory-azure-ad-provider'></a>
 
 ### For the directory (Microsoft Entra ID) provider
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  RoleManagement.ReadWrite.Directory   |
@@ -32,7 +33,7 @@ Depending on the RBAC provider and the permission type (delegated or application
 |Application | RoleManagement.ReadWrite.Directory |
 
 ### For the entitlement management provider
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  EntitlementManagement.ReadWrite.All   |
@@ -40,7 +41,7 @@ Depending on the RBAC provider and the permission type (delegated or application
 |Application | Not supported. |
 
 ### For an Exchange Online provider
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  RoleManagement.ReadWrite.Exchange   |
@@ -52,7 +53,6 @@ Depending on the RBAC provider and the permission type (delegated or application
 Create a role assignment for the directory provider:
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
 POST /roleManagement/directory/roleAssignments
 ```
@@ -60,7 +60,6 @@ POST /roleManagement/directory/roleAssignments
 Create a role assignment for the entitlement management provider:
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
 POST /roleManagement/entitlementManagement/roleAssignments
 ```
@@ -68,11 +67,9 @@ POST /roleManagement/entitlementManagement/roleAssignments
 Create a role assignment for the Exchange Online provider:
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
 POST /roleManagement/exchange/roleAssignments
 ```
-
 
 ## Request headers
 
@@ -82,12 +79,16 @@ POST /roleManagement/exchange/roleAssignments
 
 ## Request body
 
-In the request body, supply a JSON representation of a [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object. The request must have either a scope defined in Microsoft Entra ID, such as **directoryScopeId**, or an application-specific scope, such as **appScopeId**. Examples of Microsoft Entra scopes are tenant ("/"), administrative unit, attribute set, or application. Entitlement management uses tenant ("/") and access package catalog scopes. For more information, see [appScope](../resources/appscope.md).
+In the request body, supply a JSON representation of a [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object.
 
-For Exchange Online provider, the `directoryScopeId` in the request body support following formats:
-+ `/`: Tenant wide scope
-+ `/Users/{ObjectId of user}`: scope the role assignment to a specific user
-+ `/AdministrativeUnits/{ObjectId of AU}`: scope the role assignment to an Administrative Unit
+You can specify the following properties when creating a **unifiedRoleAssignment**.
+
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+|appScopeId|String|Required. Identifier of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. App scopes are scopes that are defined and understood by a resource application only. <br/><br/>For the entitlement management provider, use this property to specify a catalog, for example `/AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997`. <br/><br/> Either **appScopeId** or **directoryScopeId** must be specified.|
+|directoryScopeId|String|Required. Identifier of the [directory object](../resources/directoryobject.md) representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications, unlike app scopes that are defined and understood by a resource application only. <br/><br/> For the directory (Microsoft Entra ID) provider, this property supports the following formats: <li> `/` for tenant-wide scope <li> `/administrativeUnits/{administrativeunit-ID}` to scope to an administrative unit <li> `/{application-objectID}` to scope to a resource application <li> `/attributeSets/{attributeSet-ID}` to scope to an attribute set <br/><br/> For entitlement management provider, `/` for tenant-wide scope. To scope to an access package catalog, use the **appScopeId** property. <br/><br/> For Exchange Online provider, this property supports following formats: <li> `/` for tenant-wide scope <li> `/Users/{ObjectId of user}` to scope the role assignment to a specific user <li> `/AdministrativeUnits/{ObjectId of AU}` to scope the role assignment to an administrative unit <br/><br/> Either **appScopeId** or **directoryScopeId** must be specified.|
+|principalId|String|Required. Identifier of the principal to which the assignment is granted. |
+|roleDefinitionId|String| Identifier of the unifiedRoleDefinition the assignment is for. Read-only. Supports `$filter` (`eq`, `in`). |
 
 ## Response
 

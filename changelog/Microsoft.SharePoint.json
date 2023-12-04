@@ -307,7 +307,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "followSite,user",
           "ChangeType": "Addition",
-          "Description": "Added the [followSite](https://learn.microsoft.com/en-us/graph/api/follow-site?view=graph-rest-beta) navigation property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) entity set",
+          "Description": "Added the [followSite](https://learn.microsoft.com/en-us/graph/api/site-follow?view=graph-rest-beta) navigation property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) entity set",
           "Target": "followSite,user"
         },
         {
@@ -315,7 +315,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "unfollowSite,user",
           "ChangeType": "Addition",
-          "Description": "Added the [unfollowSite](https://learn.microsoft.com/en-us/graph/api/unfollow-site?view=graph-rest-beta) navigation property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) entity set",
+          "Description": "Added the [unfollowSite](https://learn.microsoft.com/en-us/graph/api/site-unfollow?view=graph-rest-beta) navigation property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) entity set",
           "Target": "unfollowSite,user"
         }
       ],
@@ -509,7 +509,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "lists by ID,path/URL",
           "ChangeType": "Addition",
-          "Description": "Access to SharePoint sites and [lists by ID](https://learn.microsoft.com/en-us/graph/api/list-get?view=graph-rest-beta) or [path/URL](https://learn.microsoft.com/en-us/graph/api/baseitem-getbyurl?view=graph-rest-beta).",
+          "Description": "Access to SharePoint sites and [lists by ID](https://learn.microsoft.com/en-us/graph/api/list-get?view=graph-rest-beta) or path/URL.",
           "Target": "lists by ID,path/URL"
         },
         {

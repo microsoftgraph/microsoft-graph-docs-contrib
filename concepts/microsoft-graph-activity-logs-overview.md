@@ -26,7 +26,7 @@ This service is available in the following [national cloud deployments](/graph/d
 To access the Microsoft Graph activity logs, you need the following privileges.
 
 - A Microsoft Entra ID P1 or P2 tenant license in your tenant.
-- An administrator with one of the following [Microsoft Entra administrator roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json) listed in the order of least to most privileged role.
+- An administrator with one of the following [Microsoft Entra administrator roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) listed in the order of least to most privileged role.
   - Security Administrator – To configure diagnostic settings
   - Global Administrator – To configure diagnostic settings
 - An Azure subscription with one of the following log destinations are configured, and permissions to access data in the corresponding log destinations.
@@ -123,6 +123,7 @@ MicrosoftGraphActivityLogs
 
 - The Microsoft Graph activity logs feature allows the tenant administrators to collect logs for the resource tenant. This feature doesn't allow you to see the activities of a multitenant application in another tenant.
 - You can't filter Microsoft Graph activity logs through diagnostic settings in Azure Monitor. However, options are available to reduce costs in Azure Log Analytics Workspace. For more information, see [Workspace transformation](/azure/azure-monitor/logs/tutorial-workspace-transformations-portal).
+- In most regions, the events will be available delivered to the configuration destination within 30 minutes. In less common cases, some events might take up to 2 hours to be delivered to the destination.
 
 ## See also
 

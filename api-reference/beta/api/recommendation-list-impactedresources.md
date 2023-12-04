@@ -17,13 +17,10 @@ Get the [impactedResource](../resources/impactedresource.md) objects for a [reco
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|DirectoryRecommendations.Read.All, DirectoryRecommendations.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DirectoryRecommendations.Read.All, DirectoryRecommendations.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "recommendation_list_impactedresources" } -->
+[!INCLUDE [permissions-table](../includes/permissions/recommendation-list-impactedresources-permissions.md)]
 
 [!INCLUDE [rbac-directory-recommendations-apis-read](../includes/rbac-for-apis/rbac-directory-recommendations-apis-read.md)]
 
@@ -38,7 +35,7 @@ GET /directory/recommendations/{recommendationId}/impactedResources
 ```
 
 ## Optional query parameters
-This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. It also supports `$count` as a URL segment to retrieve the raw count of impacted resources. That is, `.../impactedResources/$count`. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
