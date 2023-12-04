@@ -43,7 +43,6 @@ One of the following permissions is required to call this API. To learn more, in
 Get a role assignment for the directory provider:
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
 GET /roleManagement/directory/roleAssignments/{id}
 ```
@@ -51,14 +50,13 @@ GET /roleManagement/directory/roleAssignments/{id}
 Get a role assignment for the entitlement management provider:
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
 GET /roleManagement/entitlementManagement/roleAssignments/{id}
 ```
 
 ## Optional query parameters
 
-This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports th `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -91,7 +89,7 @@ The following example shows a request.
   "sampleKeys": ["lAPpYvVpN0KRkAEhdxReELhrmgjL6CxJqkHAeKoLUSA-11"]
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments/lAPpYvVpN0KRkAEhdxReELhrmgjL6CxJqkHAeKoLUSA-11
 ```
 
@@ -169,7 +167,7 @@ The following is an example of the request with the `$expand` query parameter.
   "sampleKeys": ["lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1"]
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments/lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1?$expand=roleDefinition
 ```
 
