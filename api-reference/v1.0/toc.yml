@@ -9012,7 +9012,6 @@ items:
                   - name: Set user status message
                     href: api/presence-setstatusmessage.md
               - name: Virtual event
-                href: resources/virtualevent.md
                 items:
                   - name: Webinar
                     href: resources/virtualeventwebinar.md
