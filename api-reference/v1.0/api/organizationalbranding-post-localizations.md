@@ -22,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "organizationalbranding_post_localizations" } -->
 [!INCLUDE [permissions-table](../includes/permissions/organizationalbranding-post-localizations-permissions.md)]
 
+[!INCLUDE [rbac-org-branding-apis-write](../includes/rbac-for-apis/rbac-org-branding-apis-write.md)]
+
 ## HTTP request
 This request creates a new localization branding and a default branding if one doesn't already exist. 
 <!-- {
