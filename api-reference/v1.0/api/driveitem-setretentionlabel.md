@@ -15,6 +15,8 @@ Apply (set) a retention label on a [driveItem](../resources/driveitem.md) (files
 
 When a retention label is applied to a folder, all the items in the folder are tagged with the same retention label. For information about conflict resolution for retention labels, see [Will an existing label be overridden or removed](/purview/retention?tabs=table-overriden#will-an-existing-label-be-overridden-or-removed). For information about retention labels from an administrator's perspective, see [Use retention labels to manage the lifecycle of documents stored in SharePoint](/microsoft-365/compliance/auto-apply-retention-labels-scenario).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

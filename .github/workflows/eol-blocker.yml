@@ -9,6 +9,7 @@ jobs:
   check_pull_request_job:
     permissions:
       pull-requests: write  #  to comment on pull-requests
+      contents: read
 
     runs-on: ubuntu-latest
     name: Check files for CRLF
@@ -18,4 +19,4 @@ jobs:
         repoToken: ${{ secrets.GITHUB_TOKEN }}
         excludeFiles: '**/**.{png,PNG,jpg,JPG,jpeg,JPEG,gif,GIF,bmp,BMP}' 
       id: validate
-      uses: microsoftgraph/eol-blocker@v1.0.12
+      uses: microsoftgraph/eol-blocker@v1.0.13
