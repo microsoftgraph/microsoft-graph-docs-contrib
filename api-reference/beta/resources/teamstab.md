@@ -13,11 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A teamsTab is a [tab](../resources/teamstab.md) that's pinned (attached) to a [channel](channel.md) or a [chat](chat.md). 
-
-teamsTab is categorised into two types: static and configurable. 
-1. Static tabs are tabs that do not need to be configured. Static tabs are defined in the app manifest. 
-2. Confgurable tabs are tabs that need to be configured manually by user.
+A teamsTab is a [tab](https://learn.microsoft.com/en-us/microsoftteams/platform/tabs/what-are-tabs) that's pinned (attached) to a [channel](channel.md) or a [chat](chat.md). 
 
 ## Methods
 

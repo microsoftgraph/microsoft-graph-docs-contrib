@@ -49,7 +49,7 @@ POST /chats/{chat-id}/tabs
 In the request body include a JSON representation of a [teamsTab](../resources/teamstab.md).
 
 > [!NOTE] 
-> While pinning static tab, the displayName and configuration would be taken from the app manifest. Error code bad request would be returned if these properties are specified in the request body.
+> While pinning static tab, the displayName and configuration would be taken from the app manifest. HTTP error code 400 Bad Request would be returned if these properties are specified in the request body.
 
 ## Response
 
