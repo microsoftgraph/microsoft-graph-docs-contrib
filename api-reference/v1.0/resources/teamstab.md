@@ -11,9 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-
-
-A teamsTab is a [tab](../resources/teamstab.md) that's pinned (attached) to a [channel](channel.md) within a [team](team.md). 
+A teamsTab is a [tab](https://learn.microsoft.com/en-us/microsoftteams/platform/tabs/what-are-tabs) that's pinned (attached) to a [channel](channel.md) or a [chat](chat.md). 
 
 ## Methods
 

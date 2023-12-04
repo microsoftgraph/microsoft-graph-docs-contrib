@@ -15,6 +15,9 @@ Namespace: microsoft.graph
 Update the properties of the specified [tab](../resources/teamstab.md).
 This can be used to configure the content of the tab.
 
+> [!NOTE] 
+> Updating static tab is not allowed. HTTP error code 400 Bad Request would be returned.
+
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions

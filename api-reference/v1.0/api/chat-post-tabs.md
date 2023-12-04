@@ -16,6 +16,8 @@ The corresponding app must already be [installed in the chat](../api/chat-list-i
 
 > **Note**: If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the tab will get added to the meeting.
 
+> **Note**: For the given appId if there is a static tab in app manifest which matches the current scope(chat/groupchat), static tab will be pinned by default.
+
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
@@ -39,6 +41,9 @@ POST /chats/{chat-id}/tabs
 ## Request body
 
 In the request body include a JSON representation of a [teamsTab](../resources/teamstab.md).
+
+> [!NOTE] 
+> While pinning static tab, the displayName and configuration would be taken from the app manifest. HTTP error code 400 Bad Request would be returned if these properties are specified in the request body.
 
 ## Response
 
