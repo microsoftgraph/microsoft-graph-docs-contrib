@@ -2,6 +2,7 @@
 title: "authorizationSystemTypeService resource type"
 description: "Represents a service in an authorization system that is onboarded to Permissions Management."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
