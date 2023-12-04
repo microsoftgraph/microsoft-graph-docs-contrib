@@ -20,6 +20,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "tenantrelationship_post_delegatedadminrelationships" } -->
 [!INCLUDE [permissions-table](../includes/permissions/tenantrelationship-post-delegatedadminrelationships-permissions.md)]
 
+To access this API using Application permission, you must provision the Service Principal - 2832473f-ec63-45fb-976f-5d45a7d4bb91 (Partner Customer Delegated Administration) in your tenant.
+
 ## HTTP request
 
 <!-- {
