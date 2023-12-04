@@ -1,6 +1,6 @@
 ---
 title: "Get engagementAsyncOperation"
-description: "Read the properties and relationships of an engagementAsyncOperation object."
+description: "Get an engagementAsyncOperation to track a long-running operation request."
 author: "aditijha4"
 ms.localizationpriority: medium
 ms.prod: "employee-engagement"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an [engagementAsyncOperation](../resources/engagementasyncoperation.md) object.
+Get an [engagementAsyncOperation](../resources/engagementasyncoperation.md) to track a long-running operation request.
 
 ## Permissions
 
