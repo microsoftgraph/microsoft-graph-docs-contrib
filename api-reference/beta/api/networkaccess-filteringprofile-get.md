@@ -14,6 +14,8 @@ Namespace: microsoft.graph.networkaccess
 
 Get a [filteringProfile](../resources/networkaccess-filteringprofile.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -93,7 +95,6 @@ GET https://graph.microsoft.com/beta/networkaccess/filteringProfiles/9020f79d-71
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 The following example shows the response.

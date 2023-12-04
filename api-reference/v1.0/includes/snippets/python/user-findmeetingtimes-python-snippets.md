@@ -49,12 +49,9 @@ request_body = FindMeetingTimesPostRequestBody(
 	minimum_attendee_percentage = 100,
 )
 
-request_configuration = FindMeetingTimesRequestBuilder.FindMeetingTimesRequestBuilderPostRequestConfiguration(
-headers = {
-		'Prefer' : "outlook.timezone=\"Pacific Standard Time\"",
-}
+request_configuration = FindMeetingTimesRequestBuilder.FindMeetingTimesRequestBuilderPostRequestConfiguration()
+request_configuration.headers.add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
 
-)
 
 result = await graph_client.me.find_meeting_times.post(request_body, request_configuration = request_configuration)
 

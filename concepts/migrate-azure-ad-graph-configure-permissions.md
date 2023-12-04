@@ -85,7 +85,7 @@ The Microsoft Graph [application](/graph/api/resources/application) API includes
 To complete the following steps, you need the following resources and privileges:
 
 + Run the HTTP requests in a tool of your choice, for example in your app, through [Graph Explorer](https://aka.ms/ge), or Postman.
-+ Run the APIs as a user in a Global Administrator or Application Administrator role, or as owner of the target app registration. For more information about the actions supported by these roles, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json).
++ Run the APIs as a user in a Global Administrator or Application Administrator role, or as owner of the target app registration. For more information about the actions supported by these roles, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 + The app used to make these changes must be granted the `Application.ReadWrite.All` permission.
 
 ### Step 1: Identify the permission IDs for the Azure AD Graph permissions your app requires
@@ -318,7 +318,7 @@ To complete the following steps, the following privileges are required:
 
 + An authenticated PowerShell session (for example, using `Connect-MgGraph`).
 + Microsoft Graph PowerShell must be granted the `Application.ReadWrite.All` permission.
-+ The signed-in user must be granted the Global Administrator or Application Administrator Microsoft Entra directory roles, or be owner of the target app registration. For more information about the actions supported by these roles, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json).
++ The signed-in user must be granted the Global Administrator or Application Administrator Microsoft Entra directory roles, or be owner of the target app registration. For more information about the actions supported by these roles, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 ### Step 1: Identify the permission IDs for the Azure AD Graph permissions your app requires
 
