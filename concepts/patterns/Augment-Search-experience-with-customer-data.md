@@ -1,11 +1,11 @@
 # Augment Search experience with custom data
 
-The **business scenario** requires adding custom enterprise data to the Search and Copilot experiences built-in in Microsoft product canvas. The custom data is ingested into unstructured M365 storage and added to various Search indexes.
+The **business scenario** requires adding custom enterprise data to the Search and Copilot experiences built in in Microsoft product canvas. The custom data is ingested into unstructured Microsoft 365 storage and added to various Search indexes.
 
-This is a non-interactive scenario, and it has the following **architecturally significant requirements**:
+This business scenario describes a non-interactive scenario, and it has the following **architecturally significant requirements**:
 
-- A data integration type, because it only provides custom data and does not use M365 functionality in customer apps.
-- An inbound data flow between the app and the M365 boundaries.
+- A data integration type, because it only provides custom data and doesn't use Microsoft 365 functionality in customer apps.
+- An inbound data flow between the app and the Microsoft 365 boundaries.
 - A high data volume for indexing.
 - Data batching and scheduling for upload and ingestion therefore assuming increased data latency
 
@@ -13,16 +13,16 @@ The only suitable option for this application is to use **Microsoft Graph Connec
 
 A simple **reference architecture** for the app is:
 
-![connectors](Connectors.png)
+![connectors](.././images/graph-arc-center/Connectors.png)
 
 ## Components
 
 The architecture uses the following components:
 
-- Azure App Service, which lets you build and host web apps, scheduled jobs, and RESTful APIs in your preferred programming language, without managing infrastructure. It offers auto-scaling and high availability, supports both Windows and Linux, and enables automated deployments from GitHub, Azure DevOps, or any Git repo.
+- Azure App Service, which lets you build and host web apps, scheduled jobs, and RESTful APIs in your preferred programming language, without managing infrastructure. It offers autoscaling and high availability, supports both Windows and Linux, and enables automated deployments from GitHub, Azure DevOps, or any Git repo.
 - Azure Active Directory, which is required to manage authentication for the Microsoft Graph and supports Delegated and Application permissions to enable OAuth flow.
 - Microsoft Graph AGS, which is a single gateway, <https://graph.microsoft.com>, to access Graph RESTful HTTP APIs including connectors.
-- 3P App, which implements custom logic and API orchestration.
+- Custom App, which implements custom logic and API orchestration.
 
 ## Considerations
 
@@ -32,4 +32,4 @@ The architecture uses the following components:
 
 **Scalability**: The client app is limited by 30 connections with no more than 50,000,000 items per tenant, so scalability is limited. In addition, if the data volume is large, synchronous processing may become a challenge and a roadblock.
 
-**Solution Complexity**: This solution can leverage connectors built by independent software vendors (ISVs), but if it directly accesses Graph SDK or Graph APIs, it needs custom code to serialize custom data into the format required by connectors. This gives it a lot of flexibility, but also increases the complexity for developers. Therefore, this solution can range from low to medium in complexity.
+**Solution Complexity**: This solution can leverage connectors built by independent software vendors (ISVs), but if it directly accesses Graph SDK or Graph APIs, it needs custom code to serialize custom data into the format required by connectors. This gives it many flexibility, but also increases the complexity for developers. Therefore, this solution can range from low to medium in complexity.
