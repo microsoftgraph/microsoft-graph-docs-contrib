@@ -11175,6 +11175,11 @@ items:
                     href: api/employeeexperience-post-communities.md
                   - name: Get
                     href: api/community-get.md
+              - name: Engagement async operation
+                href: resources/engagementasyncoperation.md
+                items:
+                  - name: Get
+                    href: api/engagementasyncoperation-get.md
       - name: Extensions
         items:
           - name: Overview
