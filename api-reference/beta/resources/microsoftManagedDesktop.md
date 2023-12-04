@@ -20,7 +20,8 @@ Represents specific settings for the Microsoft Managed Desktop that enables cust
 |Property|Type|Description|
 |:---|:---|:---|
 |profile|String|The name of the Microsoft Managed Desktop profile that the Windows 365 Cloud PC is associated with.|
-|type|[microsoftManagedDesktopType](#microsoftmanageddesktoptype-values)|Indicates whether the provisioning policy enables Microsoft Managed Desktop. It indicates the type of plan under which the device is managed if the provisioning policy is enabled. Possible values are: `notManaged`, `premiumManaged`, `standardManaged`, `starterManaged`, `unknownFutureValue`.|
+|type|[microsoftManagedDesktopType](#microsoftmanageddesktoptype-values)|Indicates whether the provisioning policy enables Microsoft Managed Desktop. It indicates the type of plan under which the device is managed if the provisioning policy is enabled. Possible values are: `notManaged`, `premiumManaged`, `standardManaged`, `starterManaged`, `unknownFutureValue`.Starting from January 31, 2024, this property will no longer be supported and will be marked as deprecated. Please use managedType instead.|
+|managedType|[microsoftManagedDesktopType](#microsoftmanageddesktoptype-values)|Indicates the provisioning policy associated with Microsoft Managed Desktop settings. Possible values are: `notManaged`, `premiumManaged`, `standardManaged`, `starterManaged`, `unknownFutureValue`. Default is `notManaged`.|
 
 ### microsoftManagedDesktopType values
 
@@ -48,7 +49,7 @@ Here's a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.microsoftManagedDesktop",
-  "type": "String",
+  "managedType": "String",
   "profile": "String"
 }
 ```
