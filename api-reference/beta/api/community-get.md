@@ -36,7 +36,7 @@ GET /employeeExperience/communities/{communityId}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -93,9 +93,6 @@ Content-Type: application/json
     "description": "A community where financial advisors who represent customers from software engineering profession can discuss advice and suggestions for there clients.",
     "privacy": "public",
     "groupId": "9ea43988-ce34-4693-be66-1d43e1f2ff2f",
-    "group": {
-      "@odata.id": "https://graph.microsoft.com/v1.0/groups('9ea43988-ce34-4693-be66-1d43e1f2ff2f')"
-    }
   }
 }
 ```

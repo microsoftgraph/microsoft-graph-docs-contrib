@@ -96,7 +96,7 @@ The following example shows the response.
 ``` http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
-Operation-Location: /employeeExperience/engagementOperations('3a6fdce1-c261-48bc-89de-1cfef658c0d5')
+Operation-Location: https://graph.microsoft.com/beta/employeeExperience/engagementOperations(3a6fdce1-c261-48bc-89de-1cfef658c0d5)
 ```
 
 ### Example 2: Application permissions
@@ -139,5 +139,5 @@ The following example shows the response.
 ``` http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
-Operation-Location: /employeeExperience/engagementOperations('3a6fdce1-c261-48bc-89de-1cfef658c0d5')
+Operation-Location: https://graph.microsoft.com/beta/employeeExperience/engagementOperations(3a6fdce1-c261-48bc-89de-1cfef658c0d5)
 ```
