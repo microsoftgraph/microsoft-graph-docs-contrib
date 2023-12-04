@@ -33,8 +33,8 @@ Inherits from [longRunningOperation](../resources/longrunningoperation.md).
 | id | String | The unique identifier for the operation. Inherited from [longRunningOperation](../resources/longrunningoperation.md). |
 | lastActionDateTime | DateTimeOffset | Date and time when the async operation was last updated. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [longRunningOperation](../resources/longrunningoperation.md). |
 | operationType | [engagementAsyncOperationType](../resources/engagementasyncoperation.md#engagementasyncoperationtype-values) | The type of the long-running operation. The possible values are: `createCommunity`, `unknownFutureValue`. |
-| resourceId | String | The ID of the object that's created or modified as result of this async operation. |
-| resourceLocation |String| The location of the object that's created or modified as result of this async operation. Inherited from [longRunningOperation](../resources/longrunningoperation.md). |
+| resourceId | String | The ID of the object created or modified as a result of this async operation. |
+| resourceLocation |String| The location of the object created or modified as a result of this async operation. Inherited from [longRunningOperation](../resources/longrunningoperation.md). |
 | status | [engagementAsyncOperationStatus](../resources/engagementasyncoperation.md#engagementasyncoperationstatus-values) | The status of the operation. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`.|
 
 ### engagementAsyncOperationStatus values
@@ -46,14 +46,14 @@ Inherits from [longRunningOperation](../resources/longrunningoperation.md).
 | inProgress | The operation is running. |
 | succeeded | The operation succeeded. |
 | failed | The operation failed. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
 
 ### engagementAsyncOperationType values
 
 | Member | Description |
 |:---------------|:----------|
 | createCommunity | Operation to create a Viva Engage community. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
 
 ## JSON representation
 
