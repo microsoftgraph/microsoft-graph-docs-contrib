@@ -11,7 +11,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a session in a [virtualEvent](../resources/virtualevent.md)
+Represents a session in a [virtualEvent](../resources/virtualevent.md).
+
+Inherits from [onlineMeetingBase](../resources/onlinemeetingBase.md).
 
 ## Methods
 
@@ -22,24 +24,24 @@ Represents a session in a [virtualEvent](../resources/virtualevent.md)
 
 ## Properties
 
-Only properties in the below table are being returned in the response.
+Currently, only the following properties are filled out on a virtualEventSession object when it's returned. All other properties on the returned virtualEventSession object are null.
 
 | Property              | Type                                          | Description    |
 | :-------------------- | :-------------------------------------------- | :------------------------------------ |
-| chatInfo              | [chatInfo](chatinfo.md) | The chat information associated with the virtual event session.  |
+| chatInfo              | [chatInfo](chatinfo.md) | The chat information associated with the virtual event session. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | endDateTime           | [DateTimeTimeZone](datetimetimezone.md) | The virtual event session end time.   |
-| id | String | The unique identifier of the virtual event session. Read-only.    |
-| joinInformation | [itemBody](itembody.md) | The join information of the virtual event session. Read-only. |
-| joinMeetingIdSettings | [joinMeetingIdSettings](joinmeetingidsettings.md) | The **joinMeetingId** of the virtual event session. Read-only. |
-| joinWebUrl | String | The join URL of the virtual event session. Read-only. |
+| id | String | The unique identifier of the virtual event session. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md).    |
+| joinInformation | [itemBody](itembody.md) | The join information of the virtual event session. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
+| joinMeetingIdSettings | [joinMeetingIdSettings](joinmeetingidsettings.md) | The **joinMeetingId** of the virtual event session. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
+| joinWebUrl | String | The join URL of the virtual event session. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 | startDateTime | [DateTimeTimeZone](datetimetimezone.md) | The virtual event session start time. |
-| subject | String | The subject of the virtual event session. |
+| subject | String | The subject of the virtual event session. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|attendanceReports|[meetingAttendanceReport](../resources/meetingattendancereport.md) collection|Attendance reports of this virtual event session. Inherited from [onlineMeeting](../resources/onlinemeeting.md).|
+|attendanceReports|[meetingAttendanceReport](../resources/meetingattendancereport.md) collection|Attendance reports of this virtual event session. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).|
 
 ## JSON representation
 The following JSON representation shows the resource type
