@@ -46,7 +46,7 @@ Inherits from [entity](../resources/entity.md).
 | Member | Description |
 |:---------------|:----------|
 | public | Any user from the tenant can join and participate in the community. |
-| private | Tenant users must be added to the community by a community administrator before they can participate. |
+| private | A community administrator must add tenant users to the community before they can participate. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
