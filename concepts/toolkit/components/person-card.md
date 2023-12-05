@@ -148,6 +148,9 @@ The `mgt-person-card` component defines the following CSS custom properties.
   --organization-coworker-hover-color: grey;
   --organization-coworker-border-color: purple;
   --organization-active-org-member-border-color: red;
+  --organization-coworker-person-avatar-size: 50px;
+  --organization-member-person-avatar-size: 60px;
+  --organization-direct-report-person-avatar-size: 80px;
 
   /* Styling the avatar-size in person-card sections */
   --organization-member-person-avatar-size: 60px;
@@ -162,6 +165,13 @@ The `mgt-person-card` component defines the following CSS custom properties.
   --message-from-color: blue;
   --message-color: black;
   --message-hover-color: grey;
+  --message-subject-font-size: 18px;
+  --message-subject-font-weight: 600;
+  --message-subject-line-height: 25px;
+  --message-from-font-size: 40px;
+  --message-from-font-weight: 800;
+  --message-date-color: purple;
+  --message-from-line-height: 25px;
 
   /** Contact */
 
