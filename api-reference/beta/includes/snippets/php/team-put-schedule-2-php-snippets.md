@@ -26,6 +26,11 @@ $timeClockSettingsApprovedLocation->setLatitude(26.13246);
 $timeClockSettingsApprovedLocation->setLongitude(24.34616);
 $timeClockSettings->setApprovedLocation($timeClockSettingsApprovedLocation);
 $requestBody->setTimeClockSettings($timeClockSettings);
+$additionalData = [
+	'startDayOfWeek' => 'Tuesday',
+	'activitiesIncludedWhenCopyingShiftsEnabled' => true,
+];
+$requestBody->setAdditionalData($additionalData);
 
 $result = $graphServiceClient->teams()->byTeamId('team-id')->schedule()->put($requestBody)->wait();
 
