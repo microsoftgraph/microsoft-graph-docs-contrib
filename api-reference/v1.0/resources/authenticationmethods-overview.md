@@ -48,7 +48,6 @@ The following authentication methods are not yet supported in Microsoft Graph v1
 |:---------------------------|:------------|:------------|
 |Default method | Represents the method the user has selected as default for performing multi-factor authentication.| Change a user's default MFA method. <br/> **NOTE:** Managing the details of the default method is currently supported only through the MSOL `Get-MsolUser` and `Set-MsolUser` cmdlets, using the **StrongAuthenticationMethods** property. |
 |Hardware token | Allow users to perform multifactor authentication using a physical device that provides a one-time code. | Get a hardware token assigned to a user.|
-|Password | A password is currently the default primary authentication method in Microsoft Entra ID.|Reset a user's password.|
 |Security questions and answers | Allow users to validate their identity when performing a self-service password reset. |Delete a security question a user registered.|
 
 ## Require re-register multifactor authentication
