@@ -49,6 +49,22 @@
           "ChangeType": "Addition",
           "Description": "Added the **completionRequirements** property to the [plannerTaskDetails](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskDetails?view=graph-rest-beta) resource.",
           "Target": "plannerTaskDetails"
+        },
+        {
+          "Id": "386945e6-5671-43ad-8c17-24dc5f67f4e2",
+          "ApiChange": "Property",
+          "ChangedApiName": "isOnMyDay",
+          "ChangeType": "Addition",
+          "Description": "Added the `isOnMyDay` property to the [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannerTask?view=graph-rest-beta) resource.",
+          "Target": "plannerTask"
+        },
+        {
+          "Id": "386945e6-5671-43ad-8c17-24dc5f67f4e2",
+          "ApiChange": "Property",
+          "ChangedApiName": "isOnMyDayLastModifiedDate",
+          "ChangeType": "Addition",
+          "Description": "Added the `isOnMyDayLastModifiedDate` property to the [plannerTask](https://learn.microsoft.com/en-us/graph/api/resources/plannerTask?view=graph-rest-beta) resource.",
+          "Target": "plannerTask"
         }
       ],
       "Id": "9125b26a-eff1-4f7a-acd0-46c133b934fa",
