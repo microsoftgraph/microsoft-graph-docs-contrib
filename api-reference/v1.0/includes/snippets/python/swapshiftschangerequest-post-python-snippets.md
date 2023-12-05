@@ -15,12 +15,9 @@ request_body = SwapShiftsChangeRequest(
 	recipient_shift_id = "e73408ca-3ea5-4bbf-96a8-2e06c95f7a2c",
 )
 
-request_configuration = SwapShiftsChangeRequestsRequestBuilder.SwapShiftsChangeRequestsRequestBuilderPostRequestConfiguration(
-headers = {
-		'Authorization' : "Bearer {token}",
-}
+request_configuration = SwapShiftsChangeRequestsRequestBuilder.SwapShiftsChangeRequestsRequestBuilderPostRequestConfiguration()
+request_configuration.headers.add("Authorization", "Bearer {token}")
 
-)
 
 result = await graph_client.teams.by_team_id('team-id').schedule.swap_shifts_change_requests.post(request_body, request_configuration = request_configuration)
 

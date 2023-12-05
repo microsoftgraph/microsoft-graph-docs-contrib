@@ -2,6 +2,7 @@
 title: "Get overprovisionedAzureServicePrincipalFinding"
 description: "Read the properties and relationships of an overprovisionedAzureServicePrincipalFinding object."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType

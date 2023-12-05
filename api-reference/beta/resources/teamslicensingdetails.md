@@ -1,6 +1,6 @@
 ---
 title: "TeamsLicensingDetails resource type"
-description: "Contains information about a teams license assigned to a user."
+description: "A container where you can find all the different Microsoft Teams license details for each user in the tenant."
 author: "mea"
 doc_type: resourcePageType
 ms.localizationpriority: high
@@ -13,19 +13,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A container for the range of Microsoft Teams license details that are available per user in the tenant.
+A container where you can find all the different Microsoft Teams license details for each user in the tenant. 
 
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get Teams Licensing Details](../api/user-get-teamslicensingdetails.md)|[teamsLicensingDetails](../resources/teamsLicensingDetails.md) object|Gets the Microsoft Teams licensing details for the specified user.|
+|[Get Teams Licensing Details](../api/user-get-teamslicensingdetails.md)|[teamsLicensingDetails](../resources/teamsLicensingDetails.md) object|Get the Microsoft Teams license details for the specified user.|
 
 ## Properties
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-|hasTeamsLicense| boolean | A field representing whether the user has a valid license to use Microsoft Teams. |
+|hasTeamsLicense| boolean | Represents whether the user has a valid license to use Microsoft Teams. |
 
 ## Relationships
 
@@ -33,7 +33,7 @@ None
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

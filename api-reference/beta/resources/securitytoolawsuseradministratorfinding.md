@@ -2,6 +2,7 @@
 title: "securityToolAwsUserAdministratorFinding resource type"
 description: "View AWS Users that can administer security tools."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
@@ -20,7 +21,7 @@ Inherits from [awsSecurityToolAdministrationFinding](../resources/awssecuritytoo
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List securityToolAwsUserAdministratorFindings](../api/securitytoolawsuseradministratorfinding-list.md)|[securityToolAwsUserAdministratorFinding](../resources/securitytoolawsuseradministratorfinding.md) collection|Get a list of the [securityToolAwsUserAdministratorFinding](../resources/securitytoolawsuseradministratorfinding.md) objects and their properties.|
+|[List securityToolAwsUserAdministratorFinding objects](../api/securitytoolawsuseradministratorfinding-list.md)|[securityToolAwsUserAdministratorFinding](../resources/securitytoolawsuseradministratorfinding.md) collection|Get a list of the [securityToolAwsUserAdministratorFinding](../resources/securitytoolawsuseradministratorfinding.md) objects and their properties.|
 |[Get securityToolAwsUserAdministratorFinding](../api/securitytoolawsuseradministratorfinding-get.md)|[securityToolAwsUserAdministratorFinding](../resources/securitytoolawsuseradministratorfinding.md)|Read the properties and relationships of a [securityToolAwsUserAdministratorFinding](../resources/securitytoolawsuseradministratorfinding.md) object.|
 
 ## Properties

@@ -14,11 +14,9 @@ query_params = AppRoleAssignmentsRequestBuilder.AppRoleAssignmentsRequestBuilder
 
 request_configuration = AppRoleAssignmentsRequestBuilder.AppRoleAssignmentsRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
-headers = {
-			'ConsistencyLevel' : "eventual",
-}
-
 )
+request_configuration.headers.add("ConsistencyLevel", "eventual")
+
 
 result = await graph_client.users.by_user_id('user-id').app_role_assignments.get(request_configuration = request_configuration)
 

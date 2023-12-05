@@ -596,5 +596,6 @@ decryptedPayload += decipher.final('utf8');
 - [Update subscription](/graph/api/subscription-update)
 - [Change notifications for Outlook resources in Microsoft Graph](outlook-change-notifications-overview.md)
 - [Change notifications for online meetings in Microsoft Graph](changenotifications-for-onlinemeeting.md)
+- [Change notifications for presence in Microsoft Graph](changenotifications-for-presence.md)
 - [Meeting notification C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-meeting-notification/csharp)
 - [Meeting notification Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-meeting-notification/nodejs)

@@ -1,6 +1,6 @@
 ---
 title: "Get Microsoft Teams settings for the organization."
-description: "Get the teamwork settings of the organization."
+description: "Get organization settings for teamwork, such as the region and Microsoft Teams enablement status."
 author: "mea"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get [teamwork](../resources/teamwork.md)  settings for the organization, which includes the organization's region and the organization's Microsoft Teams enablement status.
+Get organization settings for [teamwork](../resources/teamwork.md), such as the region and Microsoft Teams enablement status.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -41,7 +41,7 @@ GET /teamwork
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code along with a [teamwo
 
 ### Request
 
-The following is an example of the request.
+The following example shows the request.
 
 <!-- {
   "blockType": "request",
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/teamwork
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
