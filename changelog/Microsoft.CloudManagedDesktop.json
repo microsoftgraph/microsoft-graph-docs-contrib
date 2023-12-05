@@ -20,7 +20,7 @@
                 },
                 {
                     "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
-                    "ApiChange": "Resource",
+                    "ApiChange": "Property",
                     "ChangedApiName": "cloudpcprovisioningpolicy",
                     "ChangeType": "Addition",
                     "Description": "Added new property `domainJoinType` to `cloudPcDomainJoinConfiguration`",
