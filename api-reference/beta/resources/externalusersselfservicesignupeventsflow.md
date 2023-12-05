@@ -20,25 +20,42 @@ Inherits from [authenticationEventsFlow](../resources/authenticationeventsflow.m
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List externalUsersSelfServiceSignUpEventsFlows](../api/externalusersselfservicesignupeventsflow-list.md)|[externalUsersSelfServiceSignUpEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) collection|Get a list of the [externalUsersSelfServiceSignUpEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) objects and their properties.|
-|[Get externalUsersSelfServiceSignUpEventsFlow](../api/externalusersselfservicesignupeventsflow-get.md)|[externalUsersSelfServiceSignUpEventsFlow](../resources/externalusersselfservicesignupeventsflow.md)|Read the properties and relationships of an [externalUsersSelfServiceSignUpEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object.|
-|[Update externalUsersSelfServiceSignUpEventsFlow](../api/externalusersselfservicesignupeventsflow-update.md)|[externalUsersSelfServiceSignUpEventsFlow](../resources/externalusersselfservicesignupeventsflow.md)|Update the properties of an [externalUsersSelfServiceSignUpEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object.|
-|[Delete externalUsersSelfServiceSignUpEventsFlow](../api/externalusersselfservicesignupeventsflow-delete.md)|None|Delete an [externalUsersSelfServiceSignUpEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object.|
+|[List](../api/identitycontainer-list-authenticationeventsflows.md)|[authenticationEventsFlow](../resources/authenticationeventsflow.md) collection|Retrieve a list of the [authenticationEventsFlow](../resources/authenticationeventsflow.md) objects and their properties.  |
+|[Create](../api/identitycontainer-post-authenticationeventsflows.md)|[externalUsersSelfServiceSignUpEventsFlow](../resources/externalusersselfservicesignupeventsflow.md)|Create an external identities self-service sign-up user flow.|
+|[Get](../api/authenticationeventsflow-get.md)|[externalUsersSelfServiceSignUpEventsFlow](../resources/externalusersselfservicesignupeventsflow.md)|Retrieve the properties and relationships of an external identities self-service sign-up user flow.|
+|[Update](../api/authenticationeventsflow-update.md)|None|Update the properties of an external identities self-service sign-up user flow|
+|[Delete](../api/authenticationeventsflow-delete.md)|None|Delete an external identities self-service sign-up user flow.|
+|[List linked applications](../api/authenticationconditionsapplications-list-includeapplications.md)|[authenticationConditionApplication](../resources/authenticationconditionapplication.md) collection|List listeners associated with an external identities self-service sign-up user flow.|
+|[Add linked application](../api/authenticationconditionsapplications-post-includeapplications.md)|None|List listeners associated with an external identities self-service sign-up user flow.|
+|[Remove linked application](../api/authenticationconditionapplication-delete.md)|None|List listeners associated with an external identities self-service sign-up user flow.|
+|[List identity providers](../api/onauthenticationmethodloadstartexternalusersselfservicesignup-list-identityproviders.md)|[identityProvider](../resources/identityproviderbase.md) collection|List identity provider selections associated with an external identities self-service sign-up user flow.|
+|[Add identity providers](../api/onauthenticationmethodloadstartexternalusersselfservicesignup-post-identityproviders.md)|None|Add an identity provider to an external identities self-service sign-up user flow.|
+|[Remove identity providers](../api/onauthenticationmethodloadstartexternalusersselfservicesignup-delete-identityproviders.md)|None|Remove an identity provider from an external identities self-service sign-up user flow.|
+|[List attributes](../api/onattributecollectionexternalusersselfservicesignup-list-attributes.md)|[identityUserFlowAttribute](../resources/identityuserflowattribute.md) collection|Retrieve all user attributes associated with an external identities self-service sign-up user flow.|
+|[Add an attribute](../api/onattributecollectionexternalusersselfservicesignup-post-attributes.md)|None|Retrieve all user attributes associated with an external identities self-service sign-up user flow.|
+|[Delete an attribute](../api/onattributecollectionexternalusersselfservicesignup-delete-attributes.md)|None|Remove a user flow attribute from an external identities self-service sign-up user flow.|
+<!--|[List listeners]()|None|List listeners associated with an External Identities Self-Service-Sign-up User Flow **is this required?**|
+|[Get listener]()|None|List listeners associated with an External Identities Self-Service-Sign-up User Flow **is this required?**|
+|[Create listener]()|None|List listeners associated with an External Identities Self-Service-Sign-up User Flow **is this required?**|
+|[Update listeners]()|None|List listeners associated with an External Identities Self-Service-Sign-up User Flow **is this required?**|
+|[Delete listeners]()|None|List listeners associated with an External Identities Self-Service-Sign-up User Flow **is this required?**|-->
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|conditions|[authenticationConditions](../resources/authenticationconditions.md)|Optional. The conditions representing the context of the authentication request which is used to decide whether the events policy is invoked. Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md).|
-|description|String|Optional. The description of the events policy. Must be unique. Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md).|
-|displayName|String|Required. The display name for the events policy. Must be unique. Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md).|
 |id|String|The unique identifier for the entity. Read-only. Inherited from [entity](../resources/entity.md).|
+|displayName|String|Required. The display name for the events policy. Must be unique. Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md).|
+|description|String|Optional. The description of the events policy. Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md).|
+|conditions|[authenticationConditions](../resources/authenticationconditions.md)|Optional. The conditions representing the context of the authentication request which is used to decide whether the events policy is invoked. Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md).|
+|priority|Int32|Optional. The priority to use for each individual event of the events policy. If multiple competing listeners for an event have the same priority, one is chosen and an error is silently logged. Default is 500. Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md).|
+|onInteractiveAuthFlowStart|[onInteractiveAuthFlowStartHandler](../resources/oninteractiveauthflowstarthandler.md)|Required. The configuration for what to invoke when an authentication flow is ready to be initiated. |
 |onAttributeCollection|[onAttributeCollectionHandler](../resources/onattributecollectionhandler.md)|The configuration for what to invoke when attributes are ready to be collected from the user.||
 |onAttributeCollectionStart|[onAttributeCollectionStartHandler](../resources/onattributecollectionstarthandler.md)|The configuration for what to invoke when attribution collection has started.|
 |onAttributeCollectionSubmit|[onAttributeCollectionSubmitHandler](../resources/onattributecollectionsubmithandler.md)|The configuration for what to invoke when attributes have been submitted at the end of attribution collection.|
 |onAuthenticationMethodLoadStart|[onAuthenticationMethodLoadStartHandler](../resources/onauthenticationmethodloadstarthandler.md)|Required. The configuration for what to invoke when authentication methods are ready to be presented to the user. Must have at least one identity provider linked.|
+|onAttributeCollection|[onAttributeCollectionHandler](../resources/onattributecollectionhandler.md)|The configuration for what to invoke when attributes are ready to be collected from the user.|
 |onInteractiveAuthFlowStart|[onInteractiveAuthFlowStartHandler](../resources/oninteractiveauthflowstarthandler.md)|Required. The configuration for what to invoke when an authentication flow is ready to be initiated. |
 |onUserCreateStart|[onUserCreateStartHandler](../resources/onusercreatestarthandler.md)|The configuration for what to invoke during user creation.|
-|priority|Int32|Optional. The priority to use for each individual event of the events policy. If multiple competing listeners for an event have the same priority, one is chosen and an error is silently logged. Default is 500. Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md).|
 
 ## Relationships
 None.
