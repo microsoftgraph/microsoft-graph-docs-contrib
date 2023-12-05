@@ -1,6 +1,6 @@
 ---
 title: "onAttributeCollectionStartCustomExtensionHandler resource type"
-description: "**TODO: Add Description**"
+description: "Used for creating a new custom extension based on the **onAttributeCollectionStart** event to configure the collection of attributes upon user sign up."
 author: "garrodonnell"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -25,7 +25,7 @@ Inherits from [onAttributeCollectionStartHandler](../resources/onattributecollec
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|customExtension|[onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md)|**TODO: Add Description**|
+|customExtension|[onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md)|Used for creating a new custom extension based on the **onAttributeCollectionStart** event to configure the collection of attributes upon user sign up.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

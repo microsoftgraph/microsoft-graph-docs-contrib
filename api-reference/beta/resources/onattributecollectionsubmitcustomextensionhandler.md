@@ -1,6 +1,6 @@
 ---
 title: "onAttributeCollectionSubmitCustomExtensionHandler resource type"
-description: "**TODO: Add Description**"
+description: "Used for creating a new custom extension based on the **onAttributeCollectionSubmit** event."
 author: "garrodonnell"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
