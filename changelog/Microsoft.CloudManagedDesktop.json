@@ -15,7 +15,7 @@
                     "ApiChange": "ComplexType",
                     "ChangedApiName": "cloudPcWindowsSetting",
                     "ChangeType": "Addition",
-                    "Description": "Added new resource `cloudPcWindowsSetting`",
+                    "Description": "Added new ComplexType `cloudPcWindowsSetting`",
                     "Target": "cloudPcWindowsSetting"
                 },
                 {
