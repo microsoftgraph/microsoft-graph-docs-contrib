@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+A listener for the end of the user attribution collection stage of a sign up flow. This event is triggered when the user submits the attribute collection form. 
 
 Inherits from [authenticationEventListener](../resources/authenticationeventlistener.md).
 
@@ -33,7 +32,7 @@ Inherits from [authenticationEventListener](../resources/authenticationeventlist
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which this authenticationEventListener should trigger. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
 |handler|[onAttributeCollectionSubmitHandler](../resources/onattributecollectionsubmithandler.md)|Configuration for what to invoke if the event resolves to this listener. |
 |id|String|Identifier for this authenticationEventListener. Inherited from [entity](../resources/entity.md).|
-|priority|Int32|The priority of this handler. Between 0 (lower priority) and 1000 (higher priority). Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
+|priority|Int32|The priority of this listener. Between 0 (lower priority) and 1000 (higher priority). Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
 
 ## Relationships
 None.

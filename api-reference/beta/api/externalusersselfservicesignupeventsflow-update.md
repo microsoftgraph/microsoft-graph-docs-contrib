@@ -47,22 +47,18 @@ PATCH /externalUsersSelfServiceSignUpEventsFlow
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md). Required.|
-|description|String|**TODO: Add Description** Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md). Optional.|
-|conditions|[authenticationConditions](../resources/authenticationconditions.md)|**TODO: Add Description** Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md). Optional.|
-|priority|Int32|**TODO: Add Description** Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md). Required.|
-|onInteractiveAuthFlowStart|[onInteractiveAuthFlowStartHandler](../resources/oninteractiveauthflowstarthandler.md)|**TODO: Add Description** Optional.|
-|onAuthenticationMethodLoadStart|[onAuthenticationMethodLoadStartHandler](../resources/onauthenticationmethodloadstarthandler.md)|**TODO: Add Description** Optional.|
-|onAttributeCollection|[onAttributeCollectionHandler](../resources/onattributecollectionhandler.md)|**TODO: Add Description** Optional.|
-|onAttributeCollectionStart|[onAttributeCollectionStartHandler](../resources/onattributecollectionstarthandler.md)|**TODO: Add Description** Optional.|
-|onAttributeCollectionSubmit|[onAttributeCollectionSubmitHandler](../resources/onattributecollectionsubmithandler.md)|**TODO: Add Description** Optional.|
-|onUserCreateStart|[onUserCreateStartHandler](../resources/onusercreatestarthandler.md)|**TODO: Add Description** Optional.|
-
-
+|displayName|String|The display name for the events policy. Must be unique. Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md). Required.|
+|description|String|The description of the events policy. Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md). Optional.|
+|conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions representing the context of the authentication request which is used to decide whether the events policy is invoked. Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md). Optional.|
+|priority|Int32|The priority to use for each individual event of the events policy. If multiple competing listeners for an event have the same priority, one is chosen and an error is silently logged. Default is 500. Inherited from [authenticationEventsFlow](../resources/authenticationeventsflow.md). Required.|
+|onInteractiveAuthFlowStart|[onInteractiveAuthFlowStartHandler](../resources/oninteractiveauthflowstarthandler.md)|The configuration for what to invoke when an authentication flow is ready to be initiated. Optional.|
+|onAuthenticationMethodLoadStart|[onAuthenticationMethodLoadStartHandler](../resources/onauthenticationmethodloadstarthandler.md)|The configuration for what to invoke when authentication methods are ready to be presented to the user. Must have at least one identity provider linked. Optional.|
+|onAttributeCollection|[onAttributeCollectionHandler](../resources/onattributecollectionhandler.md)|The configuration for what to invoke when attributes are ready to be collected from the user. Optional.|
+|onAttributeCollectionStart|[onAttributeCollectionStartHandler](../resources/onattributecollectionstarthandler.md)|The configuration for what to invoke when attribution collection has started. Optional.|
+|onAttributeCollectionSubmit|[onAttributeCollectionSubmitHandler](../resources/onattributecollectionsubmithandler.md)|The configuration for what to invoke when attributes have been submitted at the end of attribution collection. Optional.|
+|onUserCreateStart|[onUserCreateStartHandler](../resources/onusercreatestarthandler.md)|The configuration for what to invoke during user creation. Optional.|
 
 ## Response
 

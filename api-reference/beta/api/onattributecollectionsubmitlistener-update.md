@@ -47,14 +47,12 @@ PATCH /onAttributeCollectionSubmitListener
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|priority|Int32|**TODO: Add Description** Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md). Required.|
-|conditions|[authenticationConditions](../resources/authenticationconditions.md)|**TODO: Add Description** Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md). Optional.|
-|authenticationEventsFlowId|String|**TODO: Add Description** Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md). Optional.|
-|handler|[onAttributeCollectionSubmitHandler](../resources/onattributecollectionsubmithandler.md)|**TODO: Add Description** Optional.|
+|priority|Int32|The priority of this listener. Between 0 (lower priority) and 1000 (higher priority). Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md). Required.|
+|conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which this authenticationEventListener should trigger Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md). Optional.|
+|authenticationEventsFlowId|String|The identifier of the authenticationEventsFlow object. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md). Optional.|
+|handler|[onAttributeCollectionSubmitHandler](../resources/onattributecollectionsubmithandler.md)|Configuration for what to invoke if the event resolves to this listener. Optional.|
 
 
 

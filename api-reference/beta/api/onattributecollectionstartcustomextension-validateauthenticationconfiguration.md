@@ -1,6 +1,6 @@
 ---
 title: "onAttributeCollectionStartCustomExtension: validateAuthenticationConfiguration"
-description: "**TODO: Add Description**"
+description: "Check the validity of the endpoint and authentication configuration for an onAttributeCollectionStartCustomExtension"
 author: "garrodonnell"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Check the validity of the endpoint and authentication configuration for an [onAttributeCollectionStartCustomExtension](..\resources\onattributecollectionstartcustomextension.md).
 
 ## Permissions
 

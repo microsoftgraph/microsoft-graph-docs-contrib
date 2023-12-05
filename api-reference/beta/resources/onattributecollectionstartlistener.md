@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A listener for the start of the user attribution collection stage of a sign up flow.
+A listener for the start of the user attribution collection stage of a sign up flow. This event is triggered when the user clicks the sign up button.
 
 Inherits from [authenticationEventListener](../resources/authenticationeventlistener.md).
 

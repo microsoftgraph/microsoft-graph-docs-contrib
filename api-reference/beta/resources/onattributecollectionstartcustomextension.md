@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used for creating a new custom extension based on the **onAttributeCollectionStart** event. Used for configuring the collection of attributes upon user sign up. This includes which attributes to collect, how to display them, and API connectors for backwards compatiblity.
+Used for creating a new custom extension based on the **onAttributeCollectionStart** event to configure the collection of attributes upon user sign up. This includes which attributes to collect, how to display them, and API connectors for backwards compatiblity.
 
 Inherits from [customAuthenticationExtension](../resources/customauthenticationextension.md).
 
