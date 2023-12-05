@@ -53,9 +53,9 @@ To explore each of the recommended integration options in more detail, follow th
 
 - [Analyze Graph data](./patterns/Analyse-Graph-data-in-your-data-storage.md)
   
-- [Receive notifications via webhooks (Push)](./patterns/Observing-events-and-changes-in-your-data.md)
+- [Receive notifications via webhooks (Push)](./patterns/Observe-events-and-changes-in-your-data.md)
 
-- [Observe events via Event Hubs (Pull)](./patterns/Observing-events-via-Event-Hubs.md)
+- [Observe events via Event Hubs (Pull)](./patterns/Observe-events-via-Event-Hubs.md)
 
 - [Interactive app with notifications](./patterns/Interactive-applications-with-notifications.md)
 
