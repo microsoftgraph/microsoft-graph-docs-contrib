@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the tenant-level Microsoft 365 application installation options for a Windows platform. You can specify whether users can install Microsoft 365 apps on their own Windows devices. If admins choose not to allow this, they can manually deploy apps to users instead.
+Represents the tenant-level Microsoft 365 application installation options for a Windows platform. You can specify whether users can install Microsoft 365 apps on their own Windows devices. If admins choose not to allow it, they can manually deploy apps to users instead.
 
 ## Properties
 |Property|Type|Description|
