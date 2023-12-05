@@ -1,7 +1,7 @@
 ---
 title: "Replace schedulingGroup"
 description: "Replace an existing schedulingGroup."
-author: "aaku"
+author: "shanemalone"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -67,6 +67,7 @@ Prefer: return=representation
 {
   "displayName": "Cashiers",
   "isActive": true,
+  "code": "CashierCode",
   "userIds": [
     "c5d0c76b-80c4-481c-be50-923cd8d680a1",
     "2a4296b3-a28a-44ba-bc66-0274b9b95851"
@@ -104,6 +105,7 @@ Content-type: application/json
   "createdDateTime": "2019-03-12T22:10:38.242Z",
   "lastModifiedDateTime": "2019-03-12T22:10:38.242Z",
   "displayName": "Cashiers",
+  "code": "CashierCode",
   "isActive": true,
   "userIds": [
     "c5d0c76b-80c4-481c-be50-923cd8d680a1",

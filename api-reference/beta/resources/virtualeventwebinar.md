@@ -81,7 +81,7 @@ The following JSON representation shows the resource type.
   "audience": "String",
   "coOrganizers": [{"@odata.type": "microsoft.graph.communicationsUserIdentity"}],
   "createdBy": {"@odata.type": "microsoft.graph.communicationsIdentitySet"},
-  "description": "String",
+  "description": {"@odata.type": "microsoft.graph.itemBody"},
   "displayName": "String",
   "endDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "id": "String (identifier)",
