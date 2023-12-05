@@ -29,8 +29,6 @@ The work or school account needs to belong to one of the following roles:
 * Service Support Administrator
 * Billing Administrator
 * Mailbox Administrator
-* Partner Tier1 Support
-* Partner Tier2 Support
 * Directory Readers
 * Directory Writers
 * AdHoc License Administrator

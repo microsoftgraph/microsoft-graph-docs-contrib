@@ -529,6 +529,14 @@ items:
                   - name: Manage security alerts for Microsoft Entra roles (preview)
                     href: how-to-pim-alerts.md
                     displayName: PIM alerts, privileged identity management
+          - name: Multicloud permissions management (preview)
+            items:
+            - name: AWS authorization systems API operations
+              href: permissions-management-how-to-authorization-system-aws.md
+            - name: Azure authorization systems API operations
+              href: permissions-management-how-to-authorization-system-azure.md
+            - name: GCP authorization systems API operations
+              href: permissions-management-how-to-authorization-system-gcp.md
       - name: Industry data ETL (preview)
         href: industrydata-concept-overview.md
       - name: Mail
@@ -844,7 +852,7 @@ items:
                 href: permissions-reference.md
               - name: Microsoft Entra built-in roles
                 displayName: Microsoft Graph permissions
-                href: /azure/active-directory/roles/permissions-reference?toc=/graph/toc.json
+                href: /entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json
           - name: Manage app access (CSPs)
             href: auth-cloudsolutionprovider.md
           - name: Limit mailbox access
