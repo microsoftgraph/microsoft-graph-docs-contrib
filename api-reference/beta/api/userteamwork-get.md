@@ -1,19 +1,19 @@
 ---
-title: "Get Microsoft Teams settings for the organization."
-description: "Get the teamwork settings of the organization."
+title: "Get the Microsoft Teams settings for user"
+description: "Get user's locale and region properties of user teamwork for a user."
 author: "mea"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get Microsoft Teams settings for the organization
+# Get the Microsoft Teams settings for user
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get [teamwork](../resources/teamwork.md)  settings for the organization, which includes the organization's region and the organization's Microsoft Teams enablement status.
+Get [userTeamwork](../resources/userteamwork.md) settings for the specified [user](../resources/user.md), which includes the user's chosen locale on Microsoft Teams and the user's region.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -23,14 +23,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission Type                        | Permissions (from least to most privileged)  |
 | :------------------------------------- | :------------------------------------------------------------------------------------------------ |
-| Delegated (work or school account)     | Teamwork.Read.All                                                                                 |
+| Delegated (work or school account)     | UserTeamwork.Read                                                                                 |
 | Delegated (personal Microsoft account) | Not supported.                                                                                    |
-| Application                            |  Teamwork.Read.All                                                                            |
+| Application                            | UserTeamwork.Read.All                                                                            |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /teamwork
+GET /users/{user-id}/teamwork
 ```
 
 ## Request headers
@@ -45,7 +45,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code along with a [teamwork](../resources/teamwork.md) object in the response body.
+If successful, this method returns a `200 OK` response code with a [userTeamwork](../resources/userteamwork.md) object in the response body.
 
 ## Examples
 
@@ -55,11 +55,11 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "teamwork_get_region_enablement_status",
+  "name": "user_get_region_locale",
   "sampleKeys": ["2f39ffba-51ca-4d2d-a66f-a020a83ce208"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/teamwork
+GET https://graph.microsoft.com/beta/users/2f39ffba-51ca-4d2d-a66f-a020a83ce208/teamwork
 ```
 
 ### Response
@@ -70,15 +70,15 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.teamwork"
+  "@odata.type": "microsoft.graph.userteamwork"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#teamwork",
-  "id": "teamwork",
-  "isTeamsEnabled": true,
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('2f39ffba-51ca-4d2d-a66f-a020a83ce208')/teamwork",
+  "id": "userTeamwork",
+  "locale": "en-us",
   "region": "Americas"
 }
 ```
@@ -86,4 +86,4 @@ Content-type: application/json
 ## See also
 
 - [Get user's licensing details](user-get-teamslicensingdetails.md)
-- [Get user's settings for Microsoft Teams](userteamwork-get-teamssettingsforuser.md)
+- [Get Microsoft Teams Settings for organization](teamwork-get.md)

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A container for the range of Microsoft Teams license Details that are available per user in the tenant.
+A container for the range of Microsoft Teams license details that are available per user in the tenant.
 
 ## Methods
 
@@ -25,7 +25,7 @@ A container for the range of Microsoft Teams license Details that are available 
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-|hasTeamsLicense| boolean | A field representing whether the user has a valid license to use Microsoft Teams |
+|hasTeamsLicense| boolean | A field representing whether the user has a valid license to use Microsoft Teams. |
 
 ## Relationships
 

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A container with Microsoft Teams licensing details.
+A container for the range of Microsoft Teams functionalities that are available per user in the tenant.
 
 ## Methods
 |Method|Return type|Description|

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Gets whether a [user](../resources/user.md) has a valid teams license. This API specifies the licensing properties of a user.
+Gets whether a [user](../resources/user.md) has a valid Microsoft Teams license. This API specifies the licensing properties of a user.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -83,5 +83,5 @@ Content-type: application/json
 
 ## See also
 
-- [Get user's settings for Microsoft Teams](userteamwork-get-teamssettingsforuser.md)
-- [Get Microsoft Teams Settings for organization](teamwork-get-settingsfororganization.md)
+- [Get user's settings for Microsoft Teams](userteamwork-get.md)
+- [Get Microsoft Teams Settings for organization](teamwork-get.md)
