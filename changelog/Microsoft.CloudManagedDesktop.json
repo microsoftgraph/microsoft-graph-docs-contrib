@@ -7,7 +7,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "windowsSetting",
                     "ChangeType": "Addition",
-                    "Description": "Added the new `cloudPcWindowsSetting` property to the **cloudpcprovisioningpolicy** in order to replace old property `cloudPcWindowsSettings`.",
+                    "Description": "Added the new `windowsSetting` property to the **cloudPcProvisioningPolicy** in order to replace old property `windowsSettings`.",
                     "Target": "cloudpcprovisioningpolicy"
                 },
                 {
