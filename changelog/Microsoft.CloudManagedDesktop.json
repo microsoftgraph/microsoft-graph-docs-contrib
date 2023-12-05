@@ -13,7 +13,7 @@
                 {
                     "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
                     "ApiChange": "Resource",
-                    "ChangedApiName": "cloudpcprovisioningpolicy",
+                    "ChangedApiName": "cloudPcWindowsSetting",
                     "ChangeType": "Addition",
                     "Description": "Added new resource `cloudPcWindowsSetting`",
                     "Target": "cloudPcWindowsSetting"
