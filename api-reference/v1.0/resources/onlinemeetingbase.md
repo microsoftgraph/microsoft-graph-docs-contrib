@@ -24,7 +24,7 @@ Inherits from [entity](../resources/entity.md).
 | :-------------------- | :-------------------------------------------- | :------------------------------------ |
 | allowAttendeeToEnableCamera | Boolean | Indicates whether attendees can turn on their camera. |
 | allowAttendeeToEnableMic | Boolean | Indicates whether attendees can turn on their microphone. |
-| allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Specifies the mode of meeting chat. |
+| allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Specifies the mode of the meeting chat. |
 | allowParticipantsToChangeName | Boolean | Specifies if participants are allowed to rename themselves in an instance of the meeting. |
 | allowTeamworkReactions | Boolean | Indicates if Teams reactions are enabled for the meeting. |
 | allowTranscription | Boolean | Indicates whether transcription is enabled for the meeting. |
@@ -36,7 +36,7 @@ Inherits from [entity](../resources/entity.md).
 | id | String | The default ID associated with the online meeting. Read-only.    |
 | isEntryExitAnnounced  | Boolean | Indicates whether to announce when callers join or leave. |
 | joinInformation | [itemBody](itembody.md) | The join information in the language and locale variant specified in 'Accept-Language' request HTTP header. Read-only. |
-| joinMeetingIdSettings | [joinMeetingIdSettings](joinmeetingidsettings.md) | Specifies the **joinMeetingId**, the meeting passcode, and the requirement for the passcode. Once an **onlineMeeting** is created, the **joinMeetingIdSettings** can't be modified. To make any changes to this property, the meeting needs to be canceled and a new one needs to be created. |
+| joinMeetingIdSettings | [joinMeetingIdSettings](joinmeetingidsettings.md) | Specifies the **joinMeetingId**, the meeting passcode, and the requirement for the passcode. Once an **onlineMeeting** is created, the **joinMeetingIdSettings** can't be modified. To make any changes to this property, you must cancel this meeting and create a new one. |
 | joinWebUrl | String | The join URL of the online meeting. Read-only. |
 | lobbyBypassSettings | [lobbyBypassSettings](lobbyBypassSettings.md) | Specifies which participants can bypass the meeting lobby. |
 | recordAutomatically | Boolean | Indicates whether to record the meeting automatically. |
@@ -51,15 +51,15 @@ Inherits from [entity](../resources/entity.md).
 | everyone           | Everyone is a presenter. Default.                             |
 | organization       | Everyone in organizer’s organization is a presenter.          |
 | roleIsPresenter    | Only the participants whose role is presenter are presenters. |
-| organizer          | Only the organizer  is a presenter.                           |
+| organizer          | Only the organizer is a presenter.                           |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.              |
 
 ### meetingChatMode values
 
 | Value              | Description                                                            |
 | ------------------ | ---------------------------------------------------------------------- |
-| enabled            | Meeting chat is enabled.                                               |
-| disabled           | Meeting chat is disabled.                                              |
+| enabled            | Meeting chat is enabled.                                  |
+| disabled           | Meeting chat is disabled.                                 |
 | limited            | Meeting chat is enabled but only during the meeting call. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                       |
 

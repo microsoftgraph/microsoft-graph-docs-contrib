@@ -24,7 +24,7 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingBase.md).
 
 ## Properties
 
-Currently, only the following properties are filled out on a virtualEventSession object when it's returned. All other properties on the returned virtualEventSession object are null.
+Currently, only the following properties are filled out on a returned virtualEventSession object. All other properties on the returned virtualEventSession object are null.
 
 | Property              | Type                                          | Description    |
 | :-------------------- | :-------------------------------------------- | :------------------------------------ |
