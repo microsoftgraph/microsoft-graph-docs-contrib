@@ -13,6 +13,14 @@
                 {
                     "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
                     "ApiChange": "ComplexType",
+                    "ChangedApiName": "cloudPcRestorePointSetting",
+                    "ChangeType": "Deprecation",
+                    "Description": "Deprecated the `windowsSettings` property. Goind forward, use the new `windowsSetting` property.",
+                    "Target": "cloudPcProvisioningPolicy"
+                },
+                {
+                    "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
+                    "ApiChange": "ComplexType",
                     "ChangedApiName": "cloudPcWindowsSetting",
                     "ChangeType": "Addition",
                     "Description": "Added new ComplexType `cloudPcWindowsSetting`",
@@ -33,6 +41,22 @@
                     "ChangeType": "Addition",
                     "Description": "Added new property `managedType` to `microsoftManagedDesktop`",
                     "Target": "microsoftManagedDesktop"
+                },
+                {
+                    "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
+                    "ApiChange": "Enum",
+                    "ChangedApiName": "cloudPcProvisioningPolicyImageType",
+                    "ChangeType": "Addition",
+                    "Description": "Added new member `unknownFutureValue` to `cloudPcProvisioningPolicyImageType`",
+                    "Target": "cloudPcProvisioningPolicyImageType"
+                },
+                {
+                    "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "frequencyType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the new `frequencyType` property to the **cloudPcRestorePointSetting** in order to replace old property `frequencyInHours`.",
+                    "Target": "cloudPcRestorePointSetting"
                 }
             ],
             "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
