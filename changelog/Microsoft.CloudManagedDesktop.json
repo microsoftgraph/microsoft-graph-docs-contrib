@@ -29,7 +29,7 @@
                 {
                     "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
                     "ApiChange": "Resource",
-                    "ChangedApiName": "cloudpcprovisioningpolicy",
+                    "ChangedApiName": "managedType",
                     "ChangeType": "Addition",
                     "Description": "Added new property `managedType` to `microsoftManagedDesktop`",
                     "Target": "microsoftManagedDesktop"
