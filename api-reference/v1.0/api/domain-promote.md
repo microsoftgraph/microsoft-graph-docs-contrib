@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# domain: promote
+# Promote domain
 
 Namespace: microsoft.graph
 
