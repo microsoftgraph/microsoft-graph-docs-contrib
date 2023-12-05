@@ -51,13 +51,13 @@ To explore each of the recommended integration options in more detail, follow th
 
 - [Augment Search Experiences](./patterns/Augment-Search-experience-with-customer-data.md)
 
-- [Analyze Graph data](./patterns/Analyse-Graph-data-in-your-data-storage.md)
+- [Analyze Graph data](./patterns/Analyze-Graph-data-in-your-data-storage.md)
   
 - [Receive notifications via webhooks (Push)](./patterns/Observe-events-and-changes-in-your-data.md)
 
 - [Observe events via Event Hubs (Pull)](./patterns/Observe-events-via-Event-Hubs.md)
 
-- [Interactive app with notifications](./patterns/Interactive-applications-with-notifications.md)
+- [Interactive app with notifications](./patterns/Interactive-app-with-change-notifications-via-webhooks.md)
 
 
 ## See also
