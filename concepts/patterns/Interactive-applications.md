@@ -46,3 +46,4 @@ Microsoft Graph AGS, which is a single gateway, <https://graph.microsoft.com>, t
 
 - [Best practices in cloud applications]([./../webhooks.md](https://learn.microsoft.com/en-us/azure/architecture/best-practices/index-best-practices))
 - [Microsoft Graph Fundamentals](/training/basics-learn-graph)
+

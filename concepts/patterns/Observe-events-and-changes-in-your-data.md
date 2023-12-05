@@ -49,3 +49,4 @@ Microsoft Graph Notification Services, which manages notification subscriptions 
 - [Change notifications](./../webhooks.md)
 - [Training: Use change notifications and track changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges)
 - [Real-time presence with Microsoft 365](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/presence-microsoft-365-power-platform)
+  

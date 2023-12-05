@@ -48,3 +48,4 @@ The architecture uses the following components:
 
 - [Overview of Microsoft Graph Data Connect](./../data-connect-concept-overview.md)
 - [Training: Build your first Data Connect application](/training/modules/data-connect-quickstart)
+
