@@ -26,7 +26,7 @@ Represents tenant-wide settings to configure the behavior of printers when print
 |:---|:---|:---|
 |show|0|Show printers that aren't compatible with AirPrint.|
 |hide|1|Hide printers that aren't compatible with AirPrint.|
-|unknownFutureValue|2|Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue|2|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 None.
