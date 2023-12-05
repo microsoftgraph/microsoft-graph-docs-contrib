@@ -1,3 +1,10 @@
+---
+title: "Augment Search experience with custom data"
+description: "Microsoft Graph integration pattern for bringing custom data to appear in Microsoft Search experiences."
+author: "OlgaPodo"
+ms.localizationpriority: low
+---
+
 # Augment Search experience with custom data
 
 The **business scenario** requires adding custom enterprise data to the Search and Copilot experiences built in in Microsoft product canvas. The custom data is ingested into unstructured Microsoft 365 storage and added to various Search indexes.
@@ -33,3 +40,8 @@ The architecture uses the following components:
 **Scalability**: The client app is limited by 30 connections with no more than 50,000,000 items per tenant, so scalability is limited. In addition, if the data volume is large, synchronous processing may become a challenge and a roadblock.
 
 **Solution Complexity**: This solution can leverage connectors built by independent software vendors (ISVs), but if it directly accesses Graph SDK or Graph APIs, it needs custom code to serialize custom data into the format required by connectors. This gives it many flexibility, but also increases the complexity for developers. Therefore, this solution can range from low to medium in complexity.
+
+## See also
+
+- [Microsoft Graph connectors overview](./../connecting-external-content-connectors-overview.md)
+- [Training: Build your first Data Connect application](/training/modules/data-connect-quickstart)

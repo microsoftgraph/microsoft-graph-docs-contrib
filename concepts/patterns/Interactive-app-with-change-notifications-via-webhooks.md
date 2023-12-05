@@ -1,3 +1,10 @@
+---
+title: "Build interactive apps with APIs and webhooks"
+description: "Microsoft Graph Integration pattern for interactive app that uses change notifications."
+author: "OlgaPodo"
+ms.localizationpriority: low
+---
+
 # Interactive app with change notifications via webhooks
 
 A **business scenario** needs a mobile email client that lets users read, reply and compose new messages and alerts them of new emails.
@@ -33,3 +40,10 @@ The architecture uses the following components:
 **Scalability**: Microsoft Graph services are highly scalable, geo distributed and support requests and notifications for millions of clients.
 
 **Solution Complexity**: This solution requires custom code to orchestrate APIs, maintain notification subscriptions, and receive change notifications via webhooks. While this solution doesn’t require elasticity, it needs to support users under different network conditions and potentially handle a burst of change notifications. We consider this solution highly complex.
+
+## See also
+
+- [Best practices in cloud applications]([./../webhooks.md](https://learn.microsoft.com/en-us/azure/architecture/best-practices/index-best-practices))
+- [Training: Use change notifications and track changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges)
+- [Microsoft Graph Fundamentals](/training/basics-learn-graph)
+

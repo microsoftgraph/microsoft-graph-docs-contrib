@@ -1,3 +1,10 @@
+---
+title: "Microsoft Architecture Center"
+description: "How to choose integration patterns that fit the business scenarios for solutions built on the Microsoft Graph platform."
+author: "OlgaPodo"
+ms.localizationpriority: low
+---
+
 # Microsoft Graph Architecture Center
 
 Microsoft Graph is a business platform, which allows organizations to connect their business systems with Microsoft 365 SaaS data and services. Interactive APIs, capabilities for data ingress and egress and event-based integration are table stakes expected from a modern cloud integration platform and all these options are available on the Microsoft Graph:
@@ -32,13 +39,11 @@ We explain these architecture requirements in more detail as follows:
 - Volume of data refers to the amount of customer data processed in a critical time period, such as a business day.
 - Data latency is the time difference between when data is created and when it is extracted.
 
-
-
 Customers who want to integrate with Microsoft Graph data and services need to define these architecture significant requirements for their application scenarios. The following decision tree helps customers and API producers choose the most suitable Graph integration option based on these factors:
 
 ![decisionTree](./images/graph-arc-center/DecisionTree.png)
 
-Many business scenarios require multiple integration building blocks to implement a solution, for example Data Loss Prevention (DLP) scenarios may need MGDC integration for the initial data collection and malicious behavior patterns analysis and subsequent event streaming integration for near real time data ingestion and processing to recognize a potential security incident as quick as possible. **It is our position that when multiple technologies are available on the Graph platform our customers should be able to choose a solution based on their own constraints and requirements such as complexity, cost, and time to market and accelerate their path to value.** 
+Many business scenarios require multiple integration building blocks to implement a solution, for example Data Loss Prevention (DLP) scenarios may need MGDC integration for the initial data collection and malicious behavior patterns analysis and subsequent event streaming integration for near real time data ingestion and processing to recognize a potential security incident as quick as possible. **It is our position that when multiple technologies are available on the Graph platform our customers should be able to choose a solution based on their own constraints and requirements such as complexity, cost, and time to market and accelerate their path to value.**
 
 To explore each of the recommended integration options in more detail, follow the links below for the corresponding patterns:
 
@@ -53,3 +58,9 @@ To explore each of the recommended integration options in more detail, follow th
 - [Observe events via Event Hubs (Pull)](./patterns/Observing-events-via-Event-Hubs.md)
 
 - [Interactive app with notifications](./patterns/Interactive-applications-with-notifications.md)
+
+
+## See also
+
+- [Azure and Microsoft 365 scenarios](https://learn.microsoft.com/en-us/azure/architecture/solutions/microsoft-365-scenarios)
+- [Cloud Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/)

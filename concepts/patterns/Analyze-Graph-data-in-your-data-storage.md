@@ -1,3 +1,10 @@
+---
+title: "Analyze Graph data in your data storage"
+description: "Microsoft Graph integration pattern for non-interactive use case that relies on a large amount of extracted Microsoft 365 data."
+author: "OlgaPodo"
+ms.localizationpriority: low
+---
+
 # Analyze Graph data in your data storage
 
 A **business scenario** requires a complex analysis of enterprise collaboration based on the available email and messaging information to improve business processes and productivity.
@@ -36,3 +43,8 @@ The architecture uses the following components:
 - Source or destination data store input/output operations per second (IOPS) and bandwidth.
 
 **Solution Complexity**: This data egress solution is considered to be of low complexity from the integration perspective since it doesn't require custom code, has a few components, and is tolerant to data latency.
+
+## See also
+
+- [Overview of Microsoft Graph Data Connect](./../data-connect-concept-overview.md)
+- [Training: Build your first Data Connect application](/training/modules/data-connect-quickstart)

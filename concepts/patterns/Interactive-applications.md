@@ -1,3 +1,10 @@
+---
+title: "Build interactive apps with APIs"
+description: "Microsoft Graph Integration pattern for interactive apps using Graph APIs."
+author: "OlgaPodo"
+ms.localizationpriority: low
+---
+
 # Interactive applications
 
 A **business scenario** requires a user interface that can create, update, and manage channel messages in real time and that depends on the complex functionality of the Microsoft 365 services, such as sending or receiving messages from different teams.
@@ -34,3 +41,8 @@ Microsoft Graph AGS, which is a single gateway, <https://graph.microsoft.com>, t
 **Scalability**: The client app can scale horizontally by adding more instances to the App Service plan. The Graph APIs can handle a large number of requests, but they also have throttling limits and policies to prevent abuse. The client app should implement retry logic and exponential back off to handle throttling errors gracefully.
 
 **Solution Complexity**: Although this solution might use the Graph SDK, it still requires custom code to poll and process the data. If the data volume is large, sequential processing may not be sufficient and parallel processing may be necessary. For these reasons, we consider this solution to have medium complexity.
+
+## See also
+
+- [Best practices in cloud applications]([./../webhooks.md](https://learn.microsoft.com/en-us/azure/architecture/best-practices/index-best-practices))
+- [Microsoft Graph Fundamentals](/training/basics-learn-graph)

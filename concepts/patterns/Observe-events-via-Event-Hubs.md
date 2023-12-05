@@ -1,3 +1,10 @@
+---
+title: "Observe notifications about changes in your data in pull mode"
+description: "Microsoft Graph Integration pattern for event-based solutions that relies on change notifications in pull mode."
+author: "OlgaPodo"
+ms.localizationpriority: low
+---
+
 # Observe events via Event Hubs
 
 A **business scenario** requires a security analysis of collaboration content to prevent unsafe or inappropriate sharing, transfer, or use of sensitive data, such as in Data Loss Prevention (DLP) scenarios.
@@ -34,3 +41,9 @@ The architecture uses the following components:
 **Scalability**: The Azure Event Hubs provides event storage and retention up-to 90 days depending on the service tier, thus allowing the custom app to consume and process events at its own pace.
 
 **Solution Complexity**: This solution requires custom code to maintain subscriptions, encryption keys and process the data. Because, this solution doesn’t require elasticity and the ability to react to an unexpected burst of events it's considered less complex than integration using webhooks in PUSH mode. We consider this solution to be of medium complexity.
+
+## See also
+
+- [Change notifications](./../webhooks.md)
+- [Training: Use change notifications and track changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges)
+- [Real-time presence with Microsoft 365](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/presence-microsoft-365-power-platform)

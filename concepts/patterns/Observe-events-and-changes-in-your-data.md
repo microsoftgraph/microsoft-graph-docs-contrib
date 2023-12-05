@@ -1,4 +1,11 @@
-# Receive events and changes in your data
+---
+title: "Receive notifications about changes in your data in push mode"
+description: "Microsoft Graph Integration pattern for event-based solutions that relies on change notifications in push mode."
+author: "OlgaPodo"
+ms.localizationpriority: low
+---
+
+# Receive notifications about changes in your data
 
 A **business scenario** offers enterprise collaboration enhancements for mobile apps to receive a read-only feed of shared messages from Microsoft Teams in near-real time.
 
@@ -36,3 +43,9 @@ Microsoft Graph Notification Services, which manages notification subscriptions 
 **Scalability**: The client webhook must be able to scale for bursts of notifications at any time of the day. It can do this by adding more instances to the App Service and instantiating more Function App instances to update the destination service promptly.
 
 **Solution Complexity**: The webhook solution also requires custom code to maintain subscriptions, encryption keys and process the data. This solution is considered highly complex because of the number of components involved and the scalability and availability requirements.
+
+## See also
+
+- [Change notifications](./../webhooks.md)
+- [Training: Use change notifications and track changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges)
+- [Real-time presence with Microsoft 365](https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/presence-microsoft-365-power-platform)
