@@ -7,7 +7,7 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# domain: verify
+# Verify domain
 
 Namespace: microsoft.graph
 
