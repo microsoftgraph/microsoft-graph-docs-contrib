@@ -13,7 +13,7 @@
                 {
                     "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
                     "ApiChange": "ComplexType",
-                    "ChangedApiName": "cloudPcRestorePointSetting",
+                    "ChangedApiName": "windowsSettings",
                     "ChangeType": "Deprecation",
                     "Description": "Deprecated the `windowsSettings` property. Goind forward, use the new `windowsSetting` property.",
                     "Target": "cloudPcProvisioningPolicy"
@@ -56,6 +56,14 @@
                     "ChangedApiName": "frequencyType",
                     "ChangeType": "Addition",
                     "Description": "Added the new `frequencyType` property to the **cloudPcRestorePointSetting** in order to replace old property `frequencyInHours`.",
+                    "Target": "cloudPcRestorePointSetting"
+                },
+                {
+                    "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
+                    "ApiChange": "ComplexType",
+                    "ChangedApiName": "frequencyInHours",
+                    "ChangeType": "Deprecation",
+                    "Description": "Deprecated the `frequencyInHours` property. Goind forward, use the new `frequencyType` property.",
                     "Target": "cloudPcRestorePointSetting"
                 }
             ],
