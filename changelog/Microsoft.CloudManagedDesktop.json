@@ -12,7 +12,7 @@
                 },
                 {
                     "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
-                    "ApiChange": "ComplexType",
+                    "ApiChange": "Property",
                     "ChangedApiName": "windowsSettings",
                     "ChangeType": "Deprecation",
                     "Description": "Deprecated the `windowsSettings` property. Goind forward, use the new `windowsSetting` property.",
@@ -52,6 +52,14 @@
                 },
                 {
                     "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
+                    "ApiChange": "Enum",
+                    "ChangedApiName": "frequencyType",
+                    "ChangeType": "Addition",
+                    "Description": "Added new Enum frequencyType",
+                    "Target": "frequencyType"
+                },
+                {
+                    "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
                     "ApiChange": "Property",
                     "ChangedApiName": "frequencyType",
                     "ChangeType": "Addition",
@@ -60,7 +68,7 @@
                 },
                 {
                     "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
-                    "ApiChange": "ComplexType",
+                    "ApiChange": "Property",
                     "ChangedApiName": "frequencyInHours",
                     "ChangeType": "Deprecation",
                     "Description": "Deprecated the `frequencyInHours` property. Goind forward, use the new `frequencyType` property.",
