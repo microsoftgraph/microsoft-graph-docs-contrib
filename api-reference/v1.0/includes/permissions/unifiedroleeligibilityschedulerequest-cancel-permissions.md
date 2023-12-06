@@ -8,5 +8,5 @@ ms.localizationpriority: medium
 |:---|:---|:---|
 |Delegated (work or school account)|RoleEligibilitySchedule.ReadWrite.Directory|RoleManagement.ReadWrite.Directory|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|RoleManagement.ReadWrite.Directory|Not available.|
+|Application|Not supported.|RoleManagement.ReadWrite.Directory|
 
