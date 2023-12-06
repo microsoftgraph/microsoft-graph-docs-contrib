@@ -24,7 +24,7 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingBase.md).
 
 ## Properties
 
-Currently, only the following properties are filled out on a returned virtualEventSession object. All other properties on the returned virtualEventSession object are null.
+Currently, only the following properties are filled out on a returned *virtualEventSession* object. All other properties on the returned virtualEventSession object are null.
 
 | Property              | Type                                          | Description    |
 | :-------------------- | :-------------------------------------------- | :------------------------------------ |
@@ -44,7 +44,7 @@ Currently, only the following properties are filled out on a returned virtualEve
 |attendanceReports|[meetingAttendanceReport](../resources/meetingattendancereport.md) collection|Attendance reports of this virtual event session. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).|
 
 ## JSON representation
-The following JSON representation shows the resource type
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

@@ -11,18 +11,17 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the answer(s) of a virtual event registration question.
-
+Represents the answer(s) of a [virtualEventRegistrationQuestion](../resources/virtualeventregistrationquestion.md).
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|booleanValue|Boolean|Boolean answer of the virtual event registration question. Only appears when **answerInputType** is `boolean`. |
+|booleanValue|Boolean|Boolean answer of the [virtualEventRegistrationQuestion](../resources/virtualeventregistrationquestion.md). Only appears when **answerInputType** is `boolean`. |
 |displayName|String|Display name of the registration question.|
-|multiChoiceValues|String collection|Collection of text answer of the virtual event registration question. Only appears when **answerInputType** is `multiChoice`.|
-|questionId|String|**id** of the virtual event registration question.|
-|value|String|Text answer of the virtual event registration question. Appears when **answerInputType** is `text`, `multilineText` or `singleChoice`.|
+|multiChoiceValues|String collection|Collection of text answer of the [virtualEventRegistrationQuestion](../resources/virtualeventregistrationquestion.md). Only appears when **answerInputType** is `multiChoice`.|
+|questionId|String|**id** of the [virtualEventRegistrationQuestion](../resources/virtualeventregistrationquestion.md).|
+|value|String|Text answer of the [virtualEventRegistrationQuestion](../resources/virtualeventregistrationquestion.md). Appears when **answerInputType** is `text`, `multilineText` or `singleChoice`.|
 
 ## Relationships
 None.

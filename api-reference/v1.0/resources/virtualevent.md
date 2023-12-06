@@ -13,15 +13,18 @@ Namespace: microsoft.graph
 
 Represents a base virtual event. 
 
-This is an abstract type. Use the derived type [virtualEventWebinar](virtualEventWebinar.md) instead.
+This is an abstract type. The base type of [virtualEventWebinar](virtualEventWebinar.md).
 
 Inherits from [entity](../resources/entity.md).
+
+> [!TIP]
+> This is an abstract type and can't be used directly. Use the derived type [virtualEventWebinar](virtualEventWebinar.md) instead.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[communicationsIdentitySet](communicationsidentityset.md)|Identity information for the creator of the virtual event. Inherited from [virtualEvent](../resources/virtualevent.md).|
+|createdBy|[communicationsIdentitySet](communicationsidentityset.md)|Identity information of who created the virtual event. Inherited from [virtualEvent](../resources/virtualevent.md).|
 |description|[itemBody](../resources/itembody.md)|Description of the virtual event.|
 |displayName|String|Display name of the virtual event.|
 |endDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|End time of the virtual event. The **timeZone** property _can_ be set to any of the [time zones currently supported by Windows](/windows-hardware/manufacture/desktop/default-time-zones).|
