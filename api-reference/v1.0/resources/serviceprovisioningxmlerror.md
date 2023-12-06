@@ -11,7 +11,7 @@ author: "PaulEkirapa"
 
 Namespace: microsoft.graph
 
-Represents information published by a federated service describing a non-transient, service-specific error for the [user](user.md), [group](group.md), or [organizational contact](orgcontact.md) entities regarding the properties or link from an object. These errors are represented as an xml string.
+Represents information published by a federated service that describes a non-transient, service-specific error for the [user](user.md), [group](group.md), or [organizational contact](orgcontact.md) regarding the properties or link from an object, for example, group memberships. These errors are represented as an XML string.
 
 Inherits from [serviceProvisioningError](../resources/serviceprovisioningerror.md).
 
@@ -22,7 +22,7 @@ Inherits from [serviceProvisioningError](../resources/serviceprovisioningerror.m
 | createdDateTime | DateTimeOffset | The date and time at which the error occurred.                                                       |
 | errorDetail     | String         | Error Information published by the Federated Service as an xml string .                              |
 | isResolved      | Boolean        | Indicates whether the Error has been attended to.                                                    |
-| serviceInstance | String         | Qualified service instance (e.g., "SharePoint/Dublin") that published the service error information. |
+| serviceInstance | String         | Qualified service instance (for example "SharePoint/Dublin") that published the service error information. |
 
 ## JSON representation
 
