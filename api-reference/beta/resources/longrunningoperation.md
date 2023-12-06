@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents the status of a long-running operation.
 
-Base type of [attackSimulationOperation](../resources/attacksimulationoperation.md), [engagementAsyncOperation](../resources/engagementasyncoperation.md) and [validateOperation](../resources/industrydata-validateoperation.md).
+Base type of [attackSimulationOperation](../resources/attacksimulationoperation.md), [engagementAsyncOperation](../resources/engagementasyncoperation.md), and [validateOperation](../resources/industrydata-validateoperation.md).
 
 ## Methods
 
