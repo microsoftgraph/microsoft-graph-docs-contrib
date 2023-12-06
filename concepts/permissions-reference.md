@@ -1080,10 +1080,10 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 | Category | Application | Delegated |
 |--|--|--|
-| Identifier | 407f0cce-3212-441f-9f55-3bc91342cf86 | 12ae2e92-14b5-47b2-babb-4e890bbedc0a 
-| DisplayText | Read all Viva Engage communities | Read all Viva Engage communities 
-| Description | Allows the app to list Viva Engage communities, and to read their properties without a signed-in user. | Allows the app to list Viva Engage communities, and to read their properties on behalf of the signed-in user. 
-| AdminConsentRequired | Yes | Yes 
+| Identifier | 407f0cce-3212-441f-9f55-3bc91342cf86 | 12ae2e92-14b5-47b2-babb-4e890bbedc0a |
+| DisplayText | Read all Viva Engage communities | Read all Viva Engage communities |
+| Description | Allows the app to list Viva Engage communities, and to read their properties without a signed-in user. | Allows the app to list Viva Engage communities, and to read their properties on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
 
 ---
 
@@ -1091,10 +1091,10 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 | Category | Application | Delegated |
 |--|--|--|
-| Identifier | 35d59e32-eab5-4553-9345-abb62b4c703c | 9e69467d-e0e2-402b-a926-3d796990197f 
-| DisplayText | Read and write all Viva Engage communities | Read and write all Viva Engage communities 
-| Description | Allows the app to create Viva Engage communities, read all community properties, update community properties, and delete communities without a signed-in user. | Allows the app to create Viva Engage communities and read all community properties on behalf of the signed-in user.
-| AdminConsentRequired | Yes | Yes 
+| Identifier | 35d59e32-eab5-4553-9345-abb62b4c703c | 9e69467d-e0e2-402b-a926-3d796990197f |
+| DisplayText | Read and write all Viva Engage communities | Read and write all Viva Engage communities |
+| Description | Allows the app to create Viva Engage communities, read all community properties, update community properties, and delete communities without a signed-in user. | Allows the app to create Viva Engage communities and read all community properties on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
 
 ---
 
