@@ -6,13 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
-query_params = ChatRequestBuilder.ChatRequestBuilderGetQueryParameters(
+query_params = ChatItemRequestBuilder.ChatItemRequestBuilderGetQueryParameters(
 		expand = ["lastMessagePreview"],
 )
 
-request_configuration = ChatRequestBuilder.ChatRequestBuilderGetRequestConfiguration(
+request_configuration = ChatItemRequestBuilder.ChatItemRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
 )
 

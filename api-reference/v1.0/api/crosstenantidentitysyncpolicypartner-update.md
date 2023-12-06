@@ -15,15 +15,12 @@ Update the user synchronization policy of a partner-specific configuration.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Policy.ReadWrite.CrossTenantAccess|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Policy.ReadWrite.CrossTenantAccess|
+<!-- { "blockType": "permissions", "name": "crosstenantidentitysyncpolicypartner_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/crosstenantidentitysyncpolicypartner-update-permissions.md)]
 
-The signed-in user must also be assigned the following minimum [directory role](/azure/active-directory/roles/permissions-reference):
+The signed-in user must also be assigned the following minimum [directory role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
 * Security Administrator
 
@@ -50,7 +47,7 @@ PATCH /policies/crossTenantAccessPolicy/partners/{id}/identitySynchronization
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Display name for the cross-tenant user synchronization policy. Generally, this should be the tenant name of the partner Azure Active Directory organization. Optional.|
+|displayName|String|Display name for the cross-tenant user synchronization policy. Generally, this should be the tenant name of the partner Microsoft Entra organization. Optional.|
 |userSyncInbound|[crossTenantUserSyncInbound](../resources/crosstenantusersyncinbound.md)|Determines whether users can be synchronized from the partner tenant. `false` causes any current user synchronization from the source tenant to the target tenant to stop. This property has no impact on existing users who have already been synchronized.|
 
 ## Response
@@ -92,7 +89,7 @@ Content-Type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

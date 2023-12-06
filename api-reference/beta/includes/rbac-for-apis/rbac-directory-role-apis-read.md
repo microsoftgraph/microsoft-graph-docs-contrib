@@ -1,9 +1,10 @@
 ---
 author: DougKirschner
+ms.reviewer: msodsrbac
 ms.topic: include
 ---
 
-For delegated scenarios, the calling user must be a member user or have at least one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json):
+For delegated scenarios, the calling user must be a member user or have at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
 - User Administrator
 - Helpdesk Administrator
@@ -11,8 +12,6 @@ For delegated scenarios, the calling user must be a member user or have at least
 - Billing Administrator
 - User
 - Mailbox Administrator
-- Partner Tier1 Support
-- Partner Tier2 Support
 - Directory Readers
 - Directory Writers
 - Application Administrator

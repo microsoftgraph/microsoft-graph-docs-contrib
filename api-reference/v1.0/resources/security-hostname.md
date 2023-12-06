@@ -29,7 +29,7 @@ Inherits from [host](../resources/security-host.md).
 | [List passiveDnsReverse](../api/security-host-list-passivednsreverse.md) | [microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) collection | Get a list of **passiveDnsRecord** resources.                        |
 | [Get reputation](../api/security-host-get-reputation.md)                 | [microsoft.graph.security.hostReputation](../resources/security-hostreputation.md)                | Get the properties and relationships of a **hostReputation** object. |
 | [List trackers](../api/security-host-list-trackers.md)                   | [microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) collection           | Get a list of **hostTracker** resources.                             |
-| [Get whoisRecord for a host](../api/security-host-get-whois.md)          | [microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md)                      | Get the current [whoisRecord](../resources/security-whoisrecord.md) resource for a [host](../resources/security-host.md).    |
+| [Get whoisRecord](../api/security-whoisrecord-get.md)                    | [microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md)                      | Get the specified [whoisRecord](../resources/security-whoisrecord.md) resource. |
 
 ## Properties
 

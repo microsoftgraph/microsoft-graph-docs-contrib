@@ -1,6 +1,6 @@
 ---
-title: "Advanced query capabilities on Azure AD objects"
-description: "Azure AD objects support advanced query capabilities to efficiently access data."
+title: "Advanced query capabilities on Microsoft Entra ID objects"
+description: "Microsoft Entra ID objects support advanced query capabilities to efficiently access data."
 author: "FaithOmbongi"
 ms.author: ombongifaith
 ms.reviewer: Luca.Spolidoro
@@ -10,11 +10,11 @@ ms.custom: graphiamtop20, scenarios:getting-started
 ms.date: 09/28/2023
 ---
 
-# Advanced query capabilities on Azure AD objects
+# Advanced query capabilities on Microsoft Entra ID objects
 
-As Azure Active Directory (Azure AD) continues to deliver more capabilities and improvements in stability, availability, and performance, Microsoft Graph also continues to evolve and scale to efficiently access the data. One way is through Microsoft Graph's increasing support for advanced query capabilities on various Azure Active Directory (Azure AD) objects, also called directory objects, and their properties. For example, the addition of **not** (`not`), **not equals** (`ne`), and **ends with** (`endsWith`) operators on the `$filter` query parameter.
+As Microsoft Entra ID continues to deliver more capabilities and improvements in stability, availability, and performance, Microsoft Graph also continues to evolve and scale to efficiently access the data. One way is through Microsoft Graph's increasing support for advanced query capabilities on various Microsoft Entra ID objects, also called directory objects, and their properties. For example, the addition of **not** (`not`), **not equals** (`ne`), and **ends with** (`endsWith`) operators on the `$filter` query parameter.
 
-The Microsoft Graph query engine uses an index store to fulfill query requests. To add support for additional query capabilities on some properties, these properties are now indexed in a separate store. This separate indexing allows Azure AD to increase support and improve the performance of the query requests. However, these advanced query capabilities aren't available by default but, the requestor must also set the **ConsistencyLevel** header to `eventual` *and*, except for `$search`, use the `$count` query parameter. The **ConsistencyLevel** header and `$count` are referred to as *advanced query parameters*.
+The Microsoft Graph query engine uses an index store to fulfill query requests. To add support for additional query capabilities on some properties, these properties are now indexed in a separate store. This separate indexing allows Microsoft Entra ID to increase support and improve the performance of the query requests. However, these advanced query capabilities aren't available by default but, the requestor must also set the **ConsistencyLevel** header to `eventual` *and*, except for `$search`, use the `$count` query parameter. The **ConsistencyLevel** header and `$count` are referred to as *advanced query parameters*.
 
 For example, to retrieve only inactive user accounts, you can run either of these queries that use the `$filter` query parameter.
 
@@ -109,7 +109,7 @@ ConsistencyLevel: eventual
 
 ---
 
-## Microsoft Graph objects that support advanced query capabilities
+## Microsoft Entra ID (directory) objects that support advanced query capabilities
 
 These advanced query capabilities are supported only on directory objects and their relationships, including the following frequently used objects:
 
@@ -151,7 +151,9 @@ The following table lists query scenarios on directory objects that are supporte
 > + The advanced query capabilities are currently not available for Azure AD B2C tenants.
 > + To use advanced query capabilities in [batch requests](json-batching.md), specify the **ConsistencyLevel** header in the JSON body of the `POST` request.
 
-## Support for filter by properties of Azure AD (directory) objects
+<a name='support-for-filter-by-properties-of-azure-ad-directory-objects'></a>
+
+## Support for filter by properties of Microsoft Entra ID (directory) objects
 
 Properties of directory objects behave differently in their support for query parameters. The following are common scenarios for directory objects:
 
@@ -178,7 +180,9 @@ The following tables summarize support for `$filter` operators by properties of 
 
 [!INCLUDE [filter-directory-objects](includes/filter-directory-objects.md)]
 
-## Support for sorting by properties of Azure AD (directory) objects
+<a name='support-for-sorting-by-properties-of-azure-ad-directory-objects'></a>
+
+## Support for sorting by properties of Microsoft Entra ID (directory) objects
 
 The following table summarizes support for `$orderby` by properties of directory objects and indicates where sorting is supported through advanced query capabilities.
 
@@ -529,7 +533,7 @@ Content-type: application/json
 + [Use query parameters to customize responses](/graph/query-parameters)
 + [Query parameter limitations](https://developer.microsoft.com/en-us/graph/known-issues/?search=13635)
 + [Use the $search query parameter to match a search criterion](/graph/search-query-parameter#using-search-on-directory-object-collections)
-+ [Explore advanced query capabilities for Azure AD objects with the .NET SDK](https://github.com/microsoftgraph/dotnet-aad-query-sample/)
++ [Explore advanced query capabilities for Microsoft Entra ID objects with the .NET SDK](https://github.com/microsoftgraph/dotnet-aad-query-sample/)
 
 [RDS]: ../concepts/images/yesandnosymbols/greencheck.svg
 [AQP]: ../concepts/images/yesandnosymbols/whitecheck-in-greencircle.svg

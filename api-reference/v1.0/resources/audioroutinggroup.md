@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 The audio routing group stores a private audio route between participants in a multiparty conversation. Source is the participant itself and the receivers are a subset of other participants in the multiparty conversation.
 
-> **Note:** [ConfigureMixer](../api/participant-configuremixer.md) does not involve any routes, it is for the entire call for setting the volume levels for source-receiver combinations.
-
 ## Methods
 
 | Method                                                  | Return Type                               | Description                                  |

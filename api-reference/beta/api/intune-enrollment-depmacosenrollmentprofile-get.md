@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [depMacOSEnrollmentProfile](../resources/intune-enrollment-depmacosenrollmentprofile.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -63,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2251
+Content-Length: 2301
 
 {
   "value": {
@@ -100,6 +102,7 @@ Content-Length: 2251
     "enrollmentTimeAzureAdGroupIds": [
       "7f64eb6c-eb6c-7f64-6ceb-647f6ceb647f"
     ],
+    "waitForDeviceConfiguredConfirmation": true,
     "registrationDisabled": true,
     "fileVaultDisabled": true,
     "iCloudDiagnosticsDisabled": true,

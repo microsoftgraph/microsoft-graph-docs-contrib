@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) objects.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -63,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10134
+Content-Length: 10418
 
 {
   "value": [
@@ -220,7 +222,13 @@ Content-Length: 10134
         "bootRevisionListInfo": "Boot Revision List Info value",
         "operatingSystemRevListInfo": "Operating System Rev List Info value",
         "healthStatusMismatchInfo": "Health Status Mismatch Info value",
-        "healthAttestationSupportedStatus": "Health Attestation Supported Status value"
+        "healthAttestationSupportedStatus": "Health Attestation Supported Status value",
+        "memoryIntegrityProtection": "enabled",
+        "memoryAccessProtection": "enabled",
+        "virtualizationBasedSecurity": "enabled",
+        "firmwareProtection": "systemGuardSecureLaunch",
+        "systemManagementMode": "level1",
+        "securedCorePC": "enabled"
       },
       "subscriberCarrier": "Subscriber Carrier value",
       "meid": "Meid value",

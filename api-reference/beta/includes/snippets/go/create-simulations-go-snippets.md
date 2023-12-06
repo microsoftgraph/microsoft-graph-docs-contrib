@@ -18,6 +18,10 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 requestBody := graphmodels.NewSimulation()
 displayName := "Graph Simulation"
 requestBody.SetDisplayName(&displayName) 
+createdBy := graphmodels.NewEmailIdentity()
+email := "john@contoso.com"
+createdBy.SetEmail(&email) 
+requestBody.SetCreatedBy(createdBy)
 durationInDays := int32(3)
 requestBody.SetDurationInDays(&durationInDays) 
 attackTechnique := graphmodels.CREDENTIALHARVESTING_SIMULATIONATTACKTECHNIQUE 

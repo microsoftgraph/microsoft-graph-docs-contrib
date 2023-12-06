@@ -16,7 +16,7 @@ Create a new lists object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|Tasks.ReadWrite|
@@ -43,7 +43,7 @@ POST /users/{id|userPrincipalName}/todo/lists
 ## Request body
 In the request body, supply a JSON representation of the [todoTaskList](../resources/todotasklist.md) object.
 
-The following table shows the properties that are required when you create the [todoTaskList](../resources/todotasklist.md).
+The following table lists the properties that are required when you create the [todoTaskList](../resources/todotasklist.md).
 
 |Property|Type|Description|
 |:---|:---|:---|

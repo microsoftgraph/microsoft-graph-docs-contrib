@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = EvaluateApplicationPostRequestBody(
 	content_info = ContentInfo(
@@ -50,7 +50,7 @@ request_body = EvaluateApplicationPostRequestBody(
 				name = "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ActionId",
 				value = "00000000-0000-0000-0000-000000000000",
 			),
-		]
+		],
 		additional_data = {
 				"format@odata_type" : "#microsoft.graph.contentFormat",
 				"state@odata_type" : "#microsoft.graph.contentState",
@@ -63,7 +63,7 @@ request_body = EvaluateApplicationPostRequestBody(
 		label_id = "97309856-9c28-4ac6-9382-5f8bc20c457b",
 		downgrade_justification = None,
 		extended_properties = [
-		]
+		],
 		additional_data = {
 				"assignment_method@odata_type" : "#microsoft.graph.assignmentMethod",
 				"label_id@odata_type" : "#Guid",
@@ -72,14 +72,11 @@ request_body = EvaluateApplicationPostRequestBody(
 	),
 )
 
-request_configuration = EvaluateApplicationRequestBuilder.EvaluateApplicationRequestBuilderPostRequestConfiguration(
-headers = {
-		'User-Agent' : "ContosoLOBApp/1.0",
-}
+request_configuration = EvaluateApplicationRequestBuilder.EvaluateApplicationRequestBuilderPostRequestConfiguration()
+request_configuration.headers.add("User-Agent", "ContosoLOBApp/1.0")
 
-)
 
-result = await graph_client.information_protection.policy.labels.evaluate_application.post(body = request_body, request_configuration = request_configuration)
+result = await graph_client.information_protection.policy.labels.evaluate_application.post(request_body, request_configuration = request_configuration)
 
 
 ```
