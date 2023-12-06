@@ -19,6 +19,9 @@ Create a new [authenticationEventListener](../resources/authenticationeventliste
 - [onAuthenticationMethodLoadStartListener resource type](../resources/onauthenticationmethodloadstartlistener.md)
 - [onAttributeCollectionListener resource type](../resources/onattributecollectionlistener.md)
 - [onUserCreateStartListener resource type](../resources/onusercreatestartlistener.md)
+- [onAttributeCollectionStartListener](../resources/onattributecollectionstartlistener.md)
+- [onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md)
+
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
