@@ -114,7 +114,6 @@ POST https://graph.microsoft.com/beta/employeeExperience/communities
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.community",
   "displayName": "Financial Advice for Software Engineers",
   "description": "A community where financial advisors who represent customers from software engineering profession can discuss advice and suggestions for there clients.",
   "privacy": "public",
