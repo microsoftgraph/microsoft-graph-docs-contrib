@@ -105,7 +105,7 @@ The following example shows a request.
   "sampleKeys": ["lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1"]
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments/lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1
 ```
 
@@ -182,7 +182,7 @@ The following is an example of the request with the `$expand` query parameter.
   "sampleKeys": ["lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1"]
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments/lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1?$expand=roleDefinition
 ```
 
@@ -273,7 +273,7 @@ The following example shows a request.
   "sampleKeys": ["6f0be5be-49f3-42e6-8086-cdcd67b6eac0"]
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/exchange/roleAssignments/6f0be5be-49f3-42e6-8086-cdcd67b6eac0
 ```
 
