@@ -25,10 +25,10 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-<!--|[List communities](../api/employeeexperience-list-communities.md)|[community](../resources/community.md) collection|Get a list of the [community](../resources/community.md) objects and their properties.|-->
 |[Create community](../api/employeeexperience-post-communities.md)|[engagementAsyncOperation](../resources/engagementasyncoperation.md)|Create a new [community](../resources/community.md) in Viva Engage.|
 |[Get community](../api/community-get.md)|[community](../resources/community.md)|Read the properties and relationships of a [community](../resources/community.md) object.|
-<!--|[Update community](../api/community-update.md)|[community](../resources/community.md)|Update the properties of a [community](../resources/community.md) object.|
+<!--|[List communities](../api/employeeexperience-list-communities.md)|[community](../resources/community.md) collection|Get a list of the [community](../resources/community.md) objects and their properties.|
+|[Update community](../api/community-update.md)|[community](../resources/community.md)|Update the properties of a [community](../resources/community.md) object.|
 |[Delete community](../api/employeeexperience-delete-communities.md)|None|Delete a [community](../resources/community.md) object.|-->
 
 ## Properties
