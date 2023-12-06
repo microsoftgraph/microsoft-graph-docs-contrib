@@ -3,7 +3,7 @@ title: "Use the Microsoft Entra recommendations API to implement Microsoft Entra
 description: "Microsoft Entra recommendations are personalized and actionable insights for you to implement Microsoft Entra ID best practices in your tenant."
 author: "ddeeps2610"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ms.date: 02/10/2023
 ---
@@ -61,6 +61,7 @@ The following are some of the most popular requests for working with the Microso
 | Retrieve details of all impacted resources for a recommendation. | [List impactedResources](../api/recommendation-list-impactedresources.md) |
 | Retrieve details of an impacted resource for a recommendation. | [Get impactedResource](../api/impactedresource-get.md) |
 | Act on a recommendation for an impacted resource | [Dismiss](../api/impactedresource-dismiss.md)  <br/> [Postpone](../api/impactedresource-postpone.md)  <br/> [Complete](../api/impactedresource-complete.md)  <br/> [Reactivate](../api/impactedresource-reactivate.md) |
+| Get the historical Secure Score data for your tenant. | [Get tenantSecureScores](../api/recommendation-tenantsecurescores.md) |
 
 ## License requirements
 

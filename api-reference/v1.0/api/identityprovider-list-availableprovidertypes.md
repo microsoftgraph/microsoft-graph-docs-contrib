@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Retrieves all identity provider types available in a directory.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 

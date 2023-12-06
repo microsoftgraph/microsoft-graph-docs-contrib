@@ -6,14 +6,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models.Search;
 
-var requestBody = new Microsoft.Graph.Beta.Models.Search.Bookmark
+var requestBody = new Bookmark
 {
 	DisplayName = "Contoso Install Site",
 	WebUrl = "http://www.contoso.com/",
 	Description = "Try or buy Contoso for Home or Business and view product information",
-	Keywords = new Microsoft.Graph.Beta.Models.Search.AnswerKeyword
+	Keywords = new AnswerKeyword
 	{
 		Keywords = new List<string>
 		{
@@ -26,8 +27,10 @@ var requestBody = new Microsoft.Graph.Beta.Models.Search.Bookmark
 		},
 		MatchSimilarKeywords = true,
 	},
-	State = Microsoft.Graph.Beta.Models.Search.AnswerState.Published,
+	State = AnswerState.Published,
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Search.Bookmarks.PostAsync(requestBody);
 
 

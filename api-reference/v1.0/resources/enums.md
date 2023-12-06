@@ -3137,3 +3137,10 @@ Possible values for user account types (group membership), per Windows definitio
 | default            |
 | verticalSplit      |
 | unknownFutureValue |
+
+### socialIdentitySourceType values
+
+|Member|
+|:---|
+|facebook|
+|unknownFutureValue|

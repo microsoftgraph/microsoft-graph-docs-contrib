@@ -14,6 +14,8 @@ $params = @{
 		operator = "greaterOrEqual"
 		target = 90
 	}
+	conditions = @(
+	)
 	notificationChannels = @(
 		@{
 			notificationChannelType = "portal"

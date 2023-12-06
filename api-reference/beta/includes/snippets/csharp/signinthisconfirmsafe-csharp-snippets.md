@@ -6,9 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.AuditLogs.SignIns.ConfirmSafe;
 
-var requestBody = new Microsoft.Graph.Beta.AuditLogs.SignIns.ConfirmSafe.ConfirmSafePostRequestBody
+var requestBody = new ConfirmSafePostRequestBody
 {
 	RequestIds = new List<string>
 	{
@@ -17,6 +18,8 @@ var requestBody = new Microsoft.Graph.Beta.AuditLogs.SignIns.ConfirmSafe.Confirm
 		"05020696-4eb8-45a3-918f-8f8bb7ad6015",
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.AuditLogs.SignIns.ConfirmSafe.PostAsync(requestBody);
 
 

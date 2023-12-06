@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [userExperienceAnalyticsBatteryHealthDevicePerformance](../resources/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -63,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 553
+Content-Length: 813
 
 {
   "value": {
@@ -78,6 +80,14 @@ Content-Length: 553
     "batteryAgeInDays": 0,
     "fullBatteryDrainCount": 5,
     "deviceBatteryCount": 2,
+    "deviceBatteriesDetails": [
+      {
+        "@odata.type": "microsoft.graph.userExperienceAnalyticsDeviceBatteryDetail",
+        "batteryId": "Battery Id value",
+        "maxCapacityPercentage": 5,
+        "fullBatteryDrainCount": 5
+      }
+    ],
     "deviceBatteryHealthScore": 8,
     "healthStatus": "insufficientData"
   }

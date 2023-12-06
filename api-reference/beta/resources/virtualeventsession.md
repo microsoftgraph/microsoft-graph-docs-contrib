@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents a session in a [virtualEvent](../resources/virtualevent.md)
 
-Inherits from [onlineMeeting](../resources/onlinemeeting.md).
+Inherits from [onlineMeetingBase](../resources/onlinemeetingBase.md).
 
 ## Methods
 
@@ -26,18 +26,28 @@ Inherits from [onlineMeeting](../resources/onlinemeeting.md).
 
 ## Properties
 
-Reference base type [onlineMeeting](../resources/onlinemeeting.md).
+Currently, only the following properties are filled out on a **virtualEventSession** object when it's returned. All other properties on the returned **virtualEventSession** object are null.
+
+| Property              | Type                                          | Description    |
+| :-------------------- | :-------------------------------------------- | :------------------------------------ |
+| chatInfo              | [chatInfo](chatinfo.md) | The chat information associated with the virtual event session. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
+| endDateTime           | [DateTimeTimeZone](datetimetimezone.md) | The virtual event session end time.   |
+| id | String | The unique identifier of the virtual event session. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md).    |
+| joinInformation | [itemBody](itembody.md) | The join information of the virtual event session. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
+| joinMeetingIdSettings | [joinMeetingIdSettings](joinmeetingidsettings.md) | The **joinMeetingId** of the virtual event session. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
+| joinWebUrl | String | The join URL of the virtual event session. Read-only. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
+| startDateTime | [DateTimeTimeZone](datetimetimezone.md) | The virtual event session start time. |
+| subject | String | The subject of the virtual event session. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md). |
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|attendanceReports|[meetingAttendanceReport](../resources/meetingattendancereport.md) collection|Attendance reports of this virtual event session. Inherited from [onlineMeeting](../resources/onlinemeeting.md).|
-|registrations|[virtualEventRegistration](../resources/meetingattendancereport.md) collection|Registration records of this virtual event session.|
+|attendanceReports|[meetingAttendanceReport](../resources/meetingattendancereport.md) collection|Attendance reports of this virtual event session. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md).|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -57,27 +67,18 @@ The following is a JSON representation of the resource.
   "allowedPresenters": "String",
   "alternativeRecording": "Stream",
   "anonymizeIdentityForRoles": ["String"],
-  "attendeeReport": "Stream",
   "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
-  "broadcastSettings": {"@odata.type": "microsoft.graph.broadcastMeetingSettings"},
-  "capabilities": ["String"],
   "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
-  "creationDateTime": "String (timestamp)",
-  "endDateTime": "String (timestamp)",
-  "externalId": "String",
+  "endDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "id": "String (identifier)",
-  "isBroadcast": "Boolean",
   "isEntryExitAnnounced": "Boolean",
   "joinInformation": {"@odata.type": "microsoft.graph.itemBody"},
   "joinMeetingIdSettings": {"@odata.type": "microsoft.graph.joinMeetingIdSettings"},
-  "joinUrl": "String",
   "joinWebUrl": "String",
   "lobbyBypassSettings": {"@odata.type": "microsoft.graph.lobbyBypassSettings"},
-  "participants": {"@odata.type": "microsoft.graph.meetingParticipants"},
   "recordAutomatically": "Boolean",
-  "recording": "Stream",
   "shareMeetingChatHistoryDefault": "String",
-  "startDateTime": "String (timestamp)",
+  "startDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "subject": "String",
   "videoTeleconferenceId": "String",
   "watermarkProtection": {"@odata.type": "microsoft.graph.watermarkProtectionValues"}

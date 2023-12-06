@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get a [virtualEventWebinar](../resources/virtualeventwebinar.md) collection where the signed-in user is either the organizer or a coorganizer.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -29,12 +31,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /solutions/virtualEvents/webinars/getByUserRole(role={role})
+GET /solutions/virtualEvents/webinars/getByUserRole(role='{role}')
 ```
 
 ## Function parameters
 
-In the request URL, provide the following query parameters with values. 
+In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
@@ -91,6 +93,10 @@ GET https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/getByUserR
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/virtualeventwebinarthisgetbyuserrole-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/virtualeventwebinarthisgetbyuserrole-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
