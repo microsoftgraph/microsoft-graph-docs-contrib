@@ -18,8 +18,6 @@ A listener for when a token is about to be issued to your application.
 Inherits from [authenticationEventListener](../resources/authenticationeventlistener.md).
 
 ## Methods
-
-## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List authenticationEventListeners](../api/identitycontainer-list-authenticationeventlisteners.md)|[authenticationEventListener](../resources/authenticationeventlistener.md) collection|Retrieve a list of the following object types derived from authenticationEventListener: <br/> <li>[onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md) <li>[onInteractiveAuthFlowStartListener](../resources/oninteractiveauthflowstartlistener.md) <li>[onAuthenticationMethodLoadStartListener](../resources/onauthenticationmethodloadstartlistener.md) <li>[onAttributeCollectionListener](../resources/onattributecollectionlistener.md)<li>[onUserCreateStartListener](../resources/onusercreatestartlistener.md)<li>[onAttributeCollectionStartListener](../resources/onattributecollectionstartlistener.md)<li>[onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md)|
