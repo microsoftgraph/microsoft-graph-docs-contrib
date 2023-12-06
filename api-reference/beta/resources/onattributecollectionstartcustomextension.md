@@ -17,15 +17,6 @@ Used for creating a new custom extension based on the **onAttributeCollectionSta
 
 Inherits from [customAuthenticationExtension](../resources/customauthenticationextension.md).
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List onAttributeCollectionStartCustomExtensions](../api/onattributecollectionstartcustomextension-list.md)|[onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) collection|Get a list of the [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) objects and their properties.|
-|[Get onAttributeCollectionStartCustomExtension](../api/onattributecollectionstartcustomextension-get.md)|[onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md)|Read the properties and relationships of an [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) object.|
-|[Update onAttributeCollectionStartCustomExtension](../api/onattributecollectionstartcustomextension-update.md)|[onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md)|Update the properties of an [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) object.|
-|[Delete onAttributeCollectionStartCustomExtension](../api/onattributecollectionstartcustomextension-delete.md)|None|Delete an [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) object.|
-|[validateAuthenticationConfiguration](../api/onattributecollectionstartcustomextension-validateauthenticationconfiguration.md)|[authenticationConfigurationValidation](../resources/authenticationconfigurationvalidation.md)|check validity of the endpoint and and authentication configuration for a [customAuthenticationExtension](../resources/customauthenticationextension.md).|
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

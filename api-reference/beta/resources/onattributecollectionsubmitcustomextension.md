@@ -17,15 +17,6 @@ Used for creating a new custom extension based on the **onAttributeCollectionSub
 
 Inherits from [customAuthenticationExtension](../resources/customauthenticationextension.md).
 
-## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List onAttributeCollectionSubmitCustomExtensions](../api/onattributecollectionsubmitcustomextension-list.md)|[onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) collection|Get a list of the [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) objects and their properties.|
-|[Get onAttributeCollectionSubmitCustomExtension](../api/onattributecollectionsubmitcustomextension-get.md)|[onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md)|Read the properties and relationships of an [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) object.|
-|[Update onAttributeCollectionSubmitCustomExtension](../api/onattributecollectionsubmitcustomextension-update.md)|[onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md)|Update the properties of an [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) object.|
-|[Delete onAttributeCollectionSubmitCustomExtension](../api/onattributecollectionsubmitcustomextension-delete.md)|None|Delete an [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) object.|
-|[validateAuthenticationConfiguration](../api/onattributecollectionsubmitcustomextension-validateauthenticationconfiguration.md)|[authenticationConfigurationValidation](../resources/authenticationconfigurationvalidation.md)|check validity of the endpoint and and authentication configuration for a [customAuthenticationExtension](../resources/customauthenticationextension.md).|
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
