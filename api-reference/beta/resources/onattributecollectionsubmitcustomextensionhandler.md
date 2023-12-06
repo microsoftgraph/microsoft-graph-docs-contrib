@@ -20,12 +20,12 @@ Inherits from [onAttributeCollectionSubmitHandler](../resources/onattributecolle
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|configuration|[customExtensionOverwriteConfiguration](../resources/customextensionoverwriteconfiguration.md)|**TODO: Add Description**|
+|configuration|[customExtensionOverwriteConfiguration](../resources/customextensionoverwriteconfiguration.md)|Configuration regarding properties of the custom extension which are can be overwritten per-event listener.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|customExtension|[onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md)|**TODO: Add Description**|
+|customExtension|[onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md)|Used for creating a new custom extension based on the **onAttributeCollectionSubmit** event to configure the collection of attributes upon user sign up.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

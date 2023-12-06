@@ -20,7 +20,7 @@ Inherits from [onAttributeCollectionStartHandler](../resources/onattributecollec
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|configuration|[customExtensionOverwriteConfiguration](../resources/customextensionoverwriteconfiguration.md)|**TODO: Add Description**|
+|configuration|[customExtensionOverwriteConfiguration](../resources/customextensionoverwriteconfiguration.md)|Configuration regarding properties of the custom extension which are can be overwritten per-event listener.|
 
 ## Relationships
 |Relationship|Type|Description|
