@@ -12,7 +12,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [customAuthenticationExtension](../resources/customauthenticationextension.md) objects and their properties. Currently, only [onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md) objects are returned.
+Get a list of the [customAuthenticationExtension](../resources/customauthenticationextension.md) objects and their properties. The following derived types are supported.
+
+- [onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md) derived type.
+- [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) derived type.
+- [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) derived type.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

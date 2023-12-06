@@ -12,7 +12,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [customAuthenticationExtension](../resources/customauthenticationextension.md) object. Only the **onTokenIssuanceStartCustomExtension** object type is supported.
+Create a new [customAuthenticationExtension](../resources/customauthenticationextension.md) object. The following derived types are currently supported.
+
+- [onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md) derived type.
+- [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) derived type.
+- [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) derived type.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
