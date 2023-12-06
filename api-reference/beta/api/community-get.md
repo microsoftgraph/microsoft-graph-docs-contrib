@@ -80,19 +80,16 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.community"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.community",
-    "@odata.id": "https://graph.microsoft.com/beta/employeeExperience/communities('eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0')",
-    "id": "eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0",
-    "displayName": "Financial Advice for Software Engineers",
-    "description": "A community where financial advisors who represent customers from software engineering profession can discuss advice and suggestions for there clients.",
-    "privacy": "public",
-    "groupId": "9ea43988-ce34-4693-be66-1d43e1f2ff2f"
-  }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#employeeExperience/communities/$entity",
+  "id": "eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0",
+  "displayName": "Financial Advice for Software Engineers",
+  "description": "A community where financial advisors who represent customers from software engineering profession can discuss advice and suggestions for there clients.",
+  "privacy": "public",
+  "groupId": "963da73d-a587-4ef3-aab0-d783e937e9e7"
 }
 ```
