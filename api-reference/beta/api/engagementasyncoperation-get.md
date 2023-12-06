@@ -78,20 +78,19 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.engagementAsyncOperation"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.id": "https://graph.microsoft.com/beta/employeeExperience/engagementOperations('3a6fdce1-c261-48bc-89de-1cfef658c0d5')",
-    "id": "3a6fdce1-c261-48bc-89de-1cfef658c0d5",
-    "createdDateTime": "2015-06-19T12-01-03.45Z",
-    "lastActionDateTime": "2015-06-19T12-06-03.0024Z",
-    "operationType": "createCommunity",
-    "status": "succeeded",
-    "resourceLocation": "https://graph.microsoft.com/beta/employeeExperience/communities('eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0')",
-    "resourceId": "eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0"
-  }
+  "@odata.context": "https://graph.microsoft.com/beta/employeeExperience/engagementOperations/$entity",
+  "id": "eyJfdHlwZSI6IkxvbmdSdW5uaW5nT3BlcmF0aW9uIiwiaWQiOiI0ZmVhMjE5Ni0yZTRjLTQ4MzctYTlhNi1iMTVjOTBhNTM2ODkiLCJvcGVyYXRpb24iOiJDcmVhdGVDb21tdW5pdHkifQ",
+  "createdDateTime": "2023-12-06T09:42:54.367629-08:00", 
+  "lastActionDateTime": "2023-12-06T09:42:54.367663-08:00",
+  "status": "succeeded",
+  "statusDetail": null,
+  "resourceLocation": "https://graph.microsoft.com/beta/employeeExperience/communities('eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0')",
+  "operationType": "createCommunity",
+  "resourceId": "eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0"
 }
 ```
