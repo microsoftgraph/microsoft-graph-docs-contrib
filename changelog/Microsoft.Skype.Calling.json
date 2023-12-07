@@ -3674,7 +3674,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "sendDtmfTones",
           "ChangeType": "Addition",
-          "Description": "Added the [sendDtmfTones](https://learn.microsoft.com/en-us/graph/api/call?view=graph-rest-beta) method to the [call](https://learn.microsoft.com/en-us/graph/api/call?view=graph-rest-1.0) resource.",
+          "Description": "Added the [sendDtmfTones](https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-1.0) method to the [call](https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-1.0) resource.",
           "Target": "call"
         }
       ],
