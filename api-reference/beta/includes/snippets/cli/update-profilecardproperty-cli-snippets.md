@@ -8,10 +8,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 mgc-beta admin people profile-card-properties patch --profile-card-property-id {profileCardProperty-id} --body '{\
   "annotations": [\
     {\
+      "displayName": "Cost Center",\
       "localizations": [\
         {\
-          "languageTag": "no-NB",\
-          "displayName": "Kostnads Senter"\
+          "languageTag": "nb-NO",\
+          "displayName": "Kostnadssenter"\
         }\
       ]\
     }\

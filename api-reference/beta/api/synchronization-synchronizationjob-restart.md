@@ -18,13 +18,10 @@ Restart a stopped synchronization job, forcing it to reprocess all the objects i
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Synchronization.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "synchronization_synchronizationjob_restart" } -->
+[!INCLUDE [permissions-table](../includes/permissions/synchronization-synchronizationjob-restart-permissions.md)]
 
 [!INCLUDE [rbac-synchronization-apis](../includes/rbac-for-apis/rbac-synchronization-apis.md)]
 
@@ -55,7 +52,7 @@ In the request body, provide a JSON object with the following parameter.
 
 ## Response
 
-If successful, returns a `204 No Content` response. It does not return anything in the response body.
+If successful, returns a `204 No Content` response. It doesn't return anything in the response body.
 
 ## Example
 

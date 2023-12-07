@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = DeviceEnrollmentWindowsHelloForBusinessConfiguration(
 	odata_type = "#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration",
@@ -28,7 +28,7 @@ request_body = DeviceEnrollmentWindowsHelloForBusinessConfiguration(
 	enhanced_biometrics_state = Enablement.Enabled,
 )
 
-result = await graph_client.device_management.device_enrollment_configurations.post(body = request_body)
+result = await graph_client.device_management.device_enrollment_configurations.post(request_body)
 
 
 ```

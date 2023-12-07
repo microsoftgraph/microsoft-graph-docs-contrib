@@ -1,8 +1,9 @@
 ---
 title: "countryNamedLocation resource type"
-description: "Represents an Azure Active Directory named location defined by countries and regions. Named locations are custom rules that define network locations which can then be used in a Conditional Access policy."
+description: "Represents a Microsoft Entra ID named location defined by countries and regions. Named locations are custom rules that define network locations which can then be used in a Conditional Access policy."
 ms.localizationpriority: medium
 author: "lisaychuang"
+ms.reviewer: conditionalaccesspm
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
@@ -11,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents an Azure Active Directory named location defined by countries and regions. Named locations are custom rules that define network locations which can then be used in a Conditional Access policy.
+Represents a Microsoft Entra ID named location defined by countries and regions. Named locations are custom rules that define network locations which can then be used in a Conditional Access policy.
 
 Inherits from [namedLocation](../resources/namedLocation.md)
 

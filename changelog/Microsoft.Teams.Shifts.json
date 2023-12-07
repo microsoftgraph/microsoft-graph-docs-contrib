@@ -319,6 +319,48 @@
       "CreatedDateTime": "2023-07-05T01:15:33.264Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Shift management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "be1af9e5-af8c-4e0a-bb46-44f2b24e1cb2",
+          "ApiChange": "Property",
+          "ChangedApiName": "activitiesIncludedWhenCopyingShiftsEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the `activitiesIncludedWhenCopyingShiftsEnabled` property to the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-beta) resource.",
+          "Target": "schedule"
+        },
+        {
+          "Id": "be1af9e5-af8c-4e0a-bb46-44f2b24e1cb2",
+          "ApiChange": "Property",
+          "ChangedApiName": "startDayOfWeek",
+          "ChangeType": "Addition",
+          "Description": "Added the `startDayOfWeek` property to the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-beta) resource.",
+          "Target": "schedule"
+        },
+        {
+          "Id": "be1af9e5-af8c-4e0a-bb46-44f2b24e1cb2",
+          "ApiChange": "Property",
+          "ChangedApiName": "code",
+          "ChangeType": "Addition",
+          "Description": "Added the `code` property to the [schedulingGroup](https://learn.microsoft.com/en-us/graph/api/resources/schedulingGroup?view=graph-rest-beta) resource.",
+          "Target": "schedulingGroup"
+        },
+        {
+          "Id": "be1af9e5-af8c-4e0a-bb46-44f2b24e1cb2",
+          "ApiChange": "Property",
+          "ChangedApiName": "code",
+          "ChangeType": "Addition",
+          "Description": "Added the `code` property to the [timeOffReason](https://learn.microsoft.com/en-us/graph/api/resources/timeOffReason?view=graph-rest-beta) resource.",
+          "Target": "timeOffReason"
+        }
+      ],
+      "Id": "be1af9e5-af8c-4e0a-bb46-44f2b24e1cb2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-12-04T15:45:17.4079567Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
     }
   ]
 }

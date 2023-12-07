@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Set the state of a user's presence session as an application.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ### Presence sessions
 A user can have multiple presence sessions because the user can be on multiple Teams clients (desktop, mobile, and web). Each Teams client has an independent presence session and the user's presence is an aggregated state from all the sessions behind.
@@ -34,13 +34,10 @@ A presence session can time out if the availability is `Available` and the timeo
 The expiration of a presence session is configurable with the `expirationDuration` parameter. When a session expires it becomes `Offline`.
 
 ## Permissions
-The following permission is required to call the API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Presence.ReadWrite                              |
-| Delegated (personal Microsoft account) | Not Supported.                              |
-| Application                            | Presence.ReadWrite.All                      |
+<!-- { "blockType": "permissions", "name": "presence_setpresence" } -->
+[!INCLUDE [permissions-table](../includes/permissions/presence-setpresence-permissions.md)]
 
 ## HTTP Request
 <!-- { "blockType": "ignored" } -->
@@ -62,7 +59,7 @@ In the request body, provide a JSON object with the following parameters.
 | sessionId          | string   | The ID of the application's presence session.                                                          |
 | availability       | string   | The base presence information.                                                                         |
 | activity           | string   | The supplemental information to availability.                                                          |
-| expirationDuration | duration | The expiration of the app presence session. The value is represented in ISO 8601 format for durations.</p>If not provided, a default expiration of 5 minutes will be applied. The valid duration range is 5-240 minutes (PT5M to PT4H)|
+| expirationDuration | duration | The expiration of the app presence session. The value is represented in [ISO 8601 format for durations](http://en.wikipedia.org/wiki/ISO_8601#Durations).</p>If not provided, a default expiration of 5 minutes will be applied. The valid duration range is 5-240 minutes (PT5M to PT4H)|
 
 > [!IMPORTANT]
 >
