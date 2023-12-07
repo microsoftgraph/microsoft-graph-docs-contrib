@@ -2,6 +2,7 @@
 title: "awsStatement resource type"
 description: "Specifies an AWS statement that includes information about a single permission."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
