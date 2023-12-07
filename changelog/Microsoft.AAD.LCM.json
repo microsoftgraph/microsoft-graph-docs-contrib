@@ -367,7 +367,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mover",
           "ChangeType": "Addition",
-          "Description": "Added the `mover` member to the lifecycleWorkflowCategory enum type.",
+          "Description": "Added the `mover` member to the **lifecycleWorkflowCategory** enum type.",
           "Target": "lifecycleWorkflowCategory"
         },
         {
@@ -375,7 +375,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "mover",
           "ChangeType": "Addition",
-          "Description": "Added the `mover` member to the lifecycleTaskCategory enum type.",
+          "Description": "Added the `mover` member to the **lifecycleTaskCategory** enum type.",
           "Target": "lifecycleTaskCategory"
         }
       ],
@@ -393,7 +393,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mover",
           "ChangeType": "Addition",
-          "Description": "Added the `mover` member to the lifecycleWorkflowCategory enum type.",
+          "Description": "Added the `mover` member to the **lifecycleWorkflowCategory** enum type.",
           "Target": "lifecycleWorkflowCategory"
         },
         {
@@ -401,7 +401,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "mover",
           "ChangeType": "Addition",
-          "Description": "Added the `mover` member to the lifecycleTaskCategory enum type.",
+          "Description": "Added the `mover` member to the **lifecycleTaskCategory** enum type.",
           "Target": "lifecycleTaskCategory"
         }
       ],
