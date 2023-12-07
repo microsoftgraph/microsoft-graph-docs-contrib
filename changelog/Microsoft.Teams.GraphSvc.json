@@ -1587,7 +1587,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Addition",
-          "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/user-get?view=graph-rest-beta) operation to the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userTeamwork?view=graph-rest-beta) resource.",
+          "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/user-get?view=graph-rest-beta) operation to the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userteamwork?view=graph-rest-beta) resource.",
           "Target": "userTeamwork"
         },
         {
