@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 List the [authorizationSystem](../resources/authorizationsystem.md) objects onboarded to Permissions Management and their properties.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -102,7 +104,6 @@ GET https://graph.microsoft.com/beta/external/authorizationSystems
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following example shows the response.
@@ -233,7 +234,6 @@ GET https://graph.microsoft.com/beta/external/authorizationSystems?$filter=dataC
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following example shows the response.

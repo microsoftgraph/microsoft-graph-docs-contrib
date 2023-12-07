@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of an [authenticationFlowsPolicy](../resources/authenticationflowspolicy.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 
