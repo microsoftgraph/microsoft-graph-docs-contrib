@@ -25,11 +25,7 @@ The **publicationFacet** resource provides details on the published status of a 
 {
   "level": "published | checkout",
   "versionId": "string",
-  "checkedOutBy": {
-      "user": {
-          "email", "id", "displayName"
-       }
-   }
+  "checkedOutBy": { "@odata.type": "microsoft.graph.identitySet" }
 }
 ```
 
