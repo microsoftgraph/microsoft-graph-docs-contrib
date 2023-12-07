@@ -3,6 +3,7 @@ title: "Create unifiedRoleAssignmentMultiple"
 description: "Create a new unifiedRoleAssignmentMultiple object."
 ms.localizationpriority: medium
 author: "DougKirschner"
+ms.reviewer: msodsrbac
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
@@ -19,27 +20,23 @@ The following RBAC providers are currently supported:
 - Cloud PC 
 - device management (Intune)
 
-For other Microsoft 365 applications (like Azure AD), use [unifiedRoleAssignment](../resources/unifiedroleassignment.md).
+For other Microsoft 365 applications (like Microsoft Entra ID), use [unifiedRoleAssignment](../resources/unifiedroleassignment.md).
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
-Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, see [Permissions](/graph/permissions-reference). 
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### For Cloud PC provider
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  CloudPC.ReadWrite.All   |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | CloudPC.ReadWrite.All  |
+<!-- { "blockType": "permissions", "name": "rbacapplicationmultiple_post_roleassignments" } -->
+[!INCLUDE [permissions-table](../includes/permissions/rbacapplicationmultiple-post-roleassignments-permissions.md)]
 
 ### For Device management (Intune) provider
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  DeviceManagementRBAC.ReadWrite.All   |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | DeviceManagementRBAC.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "rbacapplicationmultiple_post_roleassignments_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/rbacapplicationmultiple-post-roleassignments-2-permissions.md)]
 
 
 ## HTTP request
@@ -68,7 +65,7 @@ POST /roleManagement/deviceManagement/roleAssignments
 
 ## Request body
 
-In the request body, supply a JSON representation of [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) object. The request must have either a scope defined in Azure AD, such as `directoryScopeIds`, or an application-specific scope, such as `appScopeId`. Examples of Azure AD scope are tenant ("/"), administrative units, or applications. 
+In the request body, supply a JSON representation of [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) object. The request must have either a scope defined in Microsoft Entra ID, such as `directoryScopeIds`, or an application-specific scope, such as `appScopeId`. Examples of Microsoft Entra scope are tenant ("/"), administrative units, or applications. 
 
 ## Response
 
@@ -76,11 +73,13 @@ If successful, this method returns a `201 Created` response code and a new [unif
 
 ## Examples
 
-### Example 1: Create a role assignment in Intune over two scope groups (which are Azure AD objects)
+<a name='example-1-create-a-role-assignment-in-intune-over-two-scope-groups-which-are-azure-ad-objects'></a>
+
+### Example 1: Create a role assignment in Intune over two scope groups (which are Microsoft Entra objects)
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 > **Note:** the use of the **roleTemplateId** for **roleDefinitionId**. **roleDefinitionId** can be either the service-wide template ID or the directory-specific **roleDefinitionId**.
 
 
@@ -139,7 +138,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -171,7 +170,7 @@ Use the following information for creating Intune role assignments:
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -229,7 +228,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -312,7 +311,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
@@ -351,5 +350,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

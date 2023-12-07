@@ -13,7 +13,7 @@ $requestBody = new EducationalActivity();
 $institution = new InstitutionData();
 $institutionLocation = new PhysicalAddress();
 $institutionLocation->setType(new PhysicalAddressType('business'));
-$InstitutionLocation->setPostOfficeBox(null);
+$institutionLocation->setPostOfficeBox(null);
 $institutionLocation->setStreet('12000 E Prospect Rd');
 $institutionLocation->setCity('Fort Collins');
 $institutionLocation->setState('Colorado');

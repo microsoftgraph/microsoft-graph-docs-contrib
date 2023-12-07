@@ -1,7 +1,7 @@
 ---
 title: "Create timeOffReason"
 description: "Create a new timeOffReason."
-author: "aaku"
+author: "shanemalone"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [timeOffReason](../resources/timeoffreason.md).
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -53,7 +55,7 @@ If successful, this method returns a `201 Created` response code and a [timeOffR
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -66,6 +68,7 @@ Content-type: application/json
 
 {
   "displayName": "Vacation",
+  "code": "VacationCode",
   "iconType": "plane",
   "isActive": true
 }
@@ -81,10 +84,6 @@ Content-type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/schedule-post-timeoffreasons-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/schedule-post-timeoffreasons-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
@@ -107,7 +106,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -125,6 +124,7 @@ Content-type: application/json
   "createdDateTime": "2019-03-12T22:10:38.242Z",
   "lastModifiedDateTime": "2019-03-12T22:10:38.242Z",
   "displayName": "Vacation",
+  "code": "VacationCode",
   "iconType": "plane",
   "isActive": true,
   "lastModifiedBy": {

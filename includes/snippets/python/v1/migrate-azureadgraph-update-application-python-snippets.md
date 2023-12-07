@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Application(
 	required_resource_access = [
@@ -21,12 +21,12 @@ request_body = Application(
 					id = UUID("3afa6a7d-9b1a-42eb-948e-1650a849e176"),
 					type = "Role",
 				),
-			]
+			],
 		),
-	]
+	],
 )
 
-result = await graph_client.applications.by_application_id('application-id').patch(request_body = request_body)
+result = await graph_client.applications.by_application_id('application-id').patch(request_body)
 
 
 ```

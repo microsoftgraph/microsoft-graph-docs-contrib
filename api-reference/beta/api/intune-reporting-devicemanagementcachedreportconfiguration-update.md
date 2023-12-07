@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Update the properties of a [deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -49,14 +51,14 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique identifier for this entity|
-|reportName|String|Name of the report. This property is read-only.|
+|reportName|String|Name of the report|
 |filter|String|Filters applied on report creation.|
 |select|String collection|Columns selected from the report|
 |orderBy|String collection|Ordering of columns in the report|
 |metadata|String|Caller-managed metadata associated with the report|
-|status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Status of the cached report. This property is read-only. Possible values are: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
-|lastRefreshDateTime|DateTimeOffset|Time that the cached report was last refreshed. This property is read-only.|
-|expirationDateTime|DateTimeOffset|Time that the cached report expires. This property is read-only.|
+|status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Status of the cached report. Possible values are: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
+|lastRefreshDateTime|DateTimeOffset|Time that the cached report was last refreshed|
+|expirationDateTime|DateTimeOffset|Time that the cached report expires|
 
 
 

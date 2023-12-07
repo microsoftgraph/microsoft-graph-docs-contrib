@@ -41,10 +41,10 @@ The following table compares application access policy for online meeting and vi
 
 To configure an application access policy and allow applications to access online meetings with application permissions:
 
-1. Identify the app’s application (client) ID and the user IDs of the users on behalf of which the app will be authorized to access online meetings.
+1. Identify the app's application (client) ID and the user IDs of the users on behalf of which the app will be authorized to access online meetings.
 
-    - Identify the app’s application (client) ID in the [Azure app registration portal](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade).
-    - Identify the user's user (object) ID in the [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)
+    - Identify the app's application (client) ID in the [Microsoft Entra admin center > app registrations page](https://entra.microsoft.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade/).
+    - Identify the user's user (object) ID in the [Microsoft Entra admin center > user management page](https://entra.microsoft.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade).
 
 2. Connect to Skype for Business PowerShell with an administrator account. For details, see [Manage Skype for Business Online with PowerShell](/microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell).
 
@@ -85,6 +85,8 @@ Administrators can use ApplicationAccessPolicy cmdlets to control online meeting
 - OnlineMeetings.Read.All
 - OnlineMeetings.ReadWrite.All
 - OnlineMeetingArtifact.Read.All
+- OnlineMeetingTranscript.Read.All
+- OnlineMeetingRecording.Read.All
 - VirtualEvent.Read.All
 
 For more information about configuring application access policy, see the [PowerShell cmdlet reference for New-ApplicationAccessPolicy](/powershell/module/skype/new-csapplicationaccesspolicy).

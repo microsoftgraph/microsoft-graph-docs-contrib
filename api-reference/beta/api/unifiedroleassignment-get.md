@@ -3,6 +3,7 @@ title: "Get unifiedRoleAssignment"
 description: "Retrieve the properties and relationships of a unifiedRoleAssignment object."
 ms.localizationpriority: medium
 author: "DougKirschner"
+ms.reviewer: msodsrbac
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
@@ -15,20 +16,24 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### For Directory (Azure AD) provider
+<a name='for-directory-azure-ad-provider'></a>
 
+### For directory (Microsoft Entra ID) provider
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All   |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
-### For Entitlement management provider
-
+### For entitlement management provider
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All  |
@@ -36,7 +41,7 @@ Depending on the RBAC provider and the permission type (delegated or application
 |Application | Not supported. |
 
 ### For an Exchange Online provider
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  RoleManagement.Read.Exchange, RoleManagement.Read.All, RoleManagement.ReadWrite.Exchange   |
@@ -48,13 +53,11 @@ Depending on the RBAC provider and the permission type (delegated or application
 Get a role assignment for a directory provider:
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
 GET /roleManagement/directory/roleAssignments/{id}
 ```
 
 Get a role assignment for the entitlement management provider:
-
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -64,14 +67,13 @@ GET /roleManagement/entitlementManagement/roleAssignments/{id}
 Get a role assignment for the Exchange Online provider:
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
 GET /roleManagement/exchange/roleAssignments/{id}
 ```
 
 ## Optional query parameters
 
-This method supports OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports th `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -81,7 +83,7 @@ This method supports OData query parameters to help customize the response. For 
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -93,7 +95,7 @@ If successful, this method returns a `200 OK` response code and the requested [u
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -143,7 +145,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments/lA
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -166,7 +168,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get details of a role assignment with `$expand`
+### Example 2: Get details of a role assignment and expand the role definition
 
 #### Request
 
@@ -220,7 +222,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments/lA
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -256,11 +258,12 @@ Content-type: application/json
     "directoryScopeId": "28ca5a85-489a-49a0-b555-0a6d81e56f0d"
 }
 ```
+
 ### Example 3: Get details of a role assignment from Exchange Online Provider
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -310,7 +313,7 @@ GET https://graph.microsoft.com/beta/roleManagement/exchange/roleAssignments/6f0
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -342,5 +345,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AssignPostRequestBody(
 	assignments = [
@@ -17,10 +17,10 @@ request_body = AssignPostRequestBody(
 				group_id = "64ff06de-9c00-4a5a-98b5-7f5abe26ffff",
 			),
 		),
-	]
+	],
 )
 
-await graph_client.device_management.virtual_endpoint.user_settings.by_user_setting_id('cloudPcUserSetting-id').assign.post(request_body = request_body)
+await graph_client.device_management.virtual_endpoint.user_settings.by_cloud_pc_user_setting_id('cloudPcUserSetting-id').assign.post(request_body)
 
 
 ```

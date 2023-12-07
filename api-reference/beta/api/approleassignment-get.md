@@ -14,11 +14,14 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of an [appRoleAssignment](../resources/approleassignment.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+<!--
 ### For client service principals
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+<!--
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All  |
@@ -26,7 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Application.Read.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ### For resource service principals
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+<!--
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All  |
@@ -34,7 +38,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Application.Read.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ### For groups
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+<!--
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Group.Read.All, Directory.Read.All, AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All  |
@@ -42,12 +47,27 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Group.Read.All, Directory.Read.All, AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All |
 
 ### For users
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+<!--
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | User.Read, User.ReadBasic.All, Directory.Read.All, AppRoleAssignment.ReadWrite.All  |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Directory.Read.All, AppRoleAssignment.ReadWrite.All |
+
+-->
+
+The following table shows the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+
+| Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
+|:-|:-|:-|:-|
+| [group](../resources/group.md) | Group.Read.All | Not supported. | Group.Read.All |
+| [servicePrincipal](../resources/serviceprincipal.md) | Application.Read.All | Not supported. | Application.Read.All |
+| [user](../resources/user.md) | User.Read | Not supported. | Directory.Read.All |
+
+[!INCLUDE [rbac-approleassignments-apis-read](../includes/rbac-for-apis/rbac-approleassignments-apis-read.md)]
 
 ## HTTP request
 
@@ -99,7 +119,7 @@ This method supports the `$select` OData query parameter to help customize the r
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -123,7 +143,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals(appId='00000003-0000-0000
 
 
 #### Response
-The following is an example of the response. It shows a client service principal named **Postman** has been granted an app role with the ID **df021288-bdef-4463-88db-98f22de89214** which is the *User.Read.All* application permission, for the resource service principal named **Microsoft Graph**.
+The following example shows the response. It shows a client service principal named **Postman** has been granted an app role with the ID **df021288-bdef-4463-88db-98f22de89214** which is the *User.Read.All* application permission, for the resource service principal named **Microsoft Graph**.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -166,7 +186,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals(appId='ceb96a54-de95-49a0
 
 
 #### Response
-The following is an example of the response. It shows a client service principal named **Postman** has been granted an app role with the ID **df021288-bdef-4463-88db-98f22de89214** which is the *User.Read.All* application permission, for the resource service principal named **Microsoft Graph**.
+The following example shows the response. It shows a client service principal named **Postman** has been granted an app role with the ID **df021288-bdef-4463-88db-98f22de89214** which is the *User.Read.All* application permission, for the resource service principal named **Microsoft Graph**.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -241,7 +261,7 @@ GET https://graph.microsoft.com/beta/me/appRoleAssignments/Lo6gEKI-4EyAy9X91LBep
 ---
 
 #### Response
-The following is an example of the response. It shows the signed-in user has the default app role for a resource service principal named *Postman*.
+The following example shows the response. It shows the signed-in user has the default app role for a resource service principal named *Postman*.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

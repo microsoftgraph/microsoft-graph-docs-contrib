@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = EducationRubric(
 	display_name = "Example Points Rubric",
@@ -37,7 +37,7 @@ request_body = EducationRubric(
 				max_points = 1,
 			),
 		),
-	]
+	],
 	qualities = [
 		RubricQuality(
 			description = EducationItemBody(
@@ -57,7 +57,7 @@ request_body = EducationRubric(
 						content_type = BodyType.Text,
 					),
 				),
-			]
+			],
 			weight = 50.0,
 		),
 		RubricQuality(
@@ -78,16 +78,16 @@ request_body = EducationRubric(
 						content_type = BodyType.Text,
 					),
 				),
-			]
+			],
 			weight = 50.0,
 		),
-	]
+	],
 	grading = EducationAssignmentPointsGradeType(
 		odata_type = "#microsoft.graph.educationAssignmentPointsGradeType",
 	),
 )
 
-result = await graph_client.education.me.rubrics.post(request_body = request_body)
+result = await graph_client.education.me.rubrics.post(request_body)
 
 
 ```

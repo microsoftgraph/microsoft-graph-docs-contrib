@@ -10,6 +10,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$graphServiceClient->directory()->outboundSharedUserProfiles()->byOutboundSharedUserProfileId('outboundSharedUserProfile-userId')->tenants()->byTenantReferenceId('tenantReference-tenantId')->removePersonalData()->post()->wait();
+$graphServiceClient->directory()->outboundSharedUserProfiles()->byOutboundSharedUserProfileUserId('outboundSharedUserProfile-userId')->tenants()->byTenantReferenceTenantId('tenantReference-tenantId')->removePersonalData()->post()->wait();
 
 ```

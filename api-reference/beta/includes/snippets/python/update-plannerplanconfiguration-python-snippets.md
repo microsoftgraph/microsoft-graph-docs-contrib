@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = PlannerPlanConfiguration(
 	odata_type = "#microsoft.graph.plannerPlanConfiguration",
@@ -24,10 +24,10 @@ request_body = PlannerPlanConfiguration(
 		PlannerPlanConfigurationBucketDefinition(
 			external_bucket_id = "returnProcessingBucket",
 		),
-	]
+	],
 )
 
-result = await graph_client.solutions.busine_scenarios.by_busine_scenario_id('businessScenario-id').planner.plan_configuration.patch(request_body = request_body)
+result = await graph_client.solutions.business_scenarios.by_business_scenario_id('businessScenario-id').planner.plan_configuration.patch(request_body)
 
 
 ```

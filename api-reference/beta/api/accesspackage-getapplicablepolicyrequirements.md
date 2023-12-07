@@ -12,16 +12,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), this action retrieves a list of [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) objects that the currently signed-in user can use to create an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md).  Each requirement object corresponds to an access package assignment policy that the currently signed-in user is allowed to request an assignment for.
+In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), this action retrieves a list of [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) objects that the currently signed-in user can use to create an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md).  Each requirement object corresponds to an access package assignment policy that the currently signed-in user is allowed to request an assignment for.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+<!-- { "blockType": "permissions", "name": "accesspackage_getapplicablepolicyrequirements" } -->
+[!INCLUDE [permissions-table](../includes/permissions/accesspackage-getapplicablepolicyrequirements-permissions.md)]
 
 ## HTTP request
 
@@ -46,7 +45,7 @@ None.
 Do not supply a request body for this method if you wish to retrieve a list of access package requirements as in example 1. If you want to get policy requirements for user scope as in example 2, you must supply a request body.
 
 ## Response
-If successful, this method returns a `200 OK` response code and an [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) collection in the response body, one object for each policy for which the user is an **allowedRequestor**. If there is a policy with no requirements, the **accessPackageAssignmentRequestRequirements** will have `false` and `null` values. If there are no policies where the user is an **allowedRequestor**, an empty collection will be returned instead.
+If successful, this method returns a `200 OK` response code and an [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) collection in the response body, one object for each policy for which the user is an **allowedRequestor**. If there is a policy with no requirements, the **accessPackageAssignmentRequestRequirements** has `false` and `null` values. If there are no policies where the user is an **allowedRequestor**, an empty collection is returned instead.
 
 ## Examples
 
@@ -139,7 +138,7 @@ Content-Type: application/json
         }
     ]
 }
-``` 
+```
 
 ### Example 2: Get policy requirements for a given user scope
 
@@ -311,7 +310,7 @@ Content-Type: application/json
 }
 ```
 
-If the requestor has scanned the QR code or clicked the URL, the verifiableCredentialRequirementStatus will be in the following format.
+If the requestor has scanned the QR code or clicked the URL, the verifiableCredentialRequirementStatus property is in the following format.
 
 ```json
 "verifiableCredentialRequirementStatus": {
@@ -320,7 +319,7 @@ If the requestor has scanned the QR code or clicked the URL, the verifiableCrede
 }
 ```
 
-If the requestor has presented valid credential, the verifiableCredentialRequirementStatus will be in the following format.
+If the requestor has presented valid credential, the verifiableCredentialRequirementStatus property is in the following format.
 
 ```json
 "verifiableCredentialRequirementStatus": {

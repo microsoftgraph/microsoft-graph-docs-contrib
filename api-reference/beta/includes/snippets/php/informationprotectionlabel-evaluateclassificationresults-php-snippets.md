@@ -13,7 +13,7 @@ $requestBody = new EvaluateClassificationResultsPostRequestBody();
 $contentInfo = new ContentInfo();
 $contentInfo->setOdataType('#microsoft.graph.contentInfo');
 $contentInfo->setFormat(new ContentFormat('default'));
-$ContentInfo->setIdentifier(null);
+$contentInfo->setIdentifier(null);
 $contentInfo->setState(new ContentState('rest'));
 $additionalData = [
 	'format@odata.type' => '#microsoft.graph.contentFormat',

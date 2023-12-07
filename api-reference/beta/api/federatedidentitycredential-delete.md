@@ -14,18 +14,17 @@ Namespace: microsoft.graph
 
 Deletes a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object from an application.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Application.ReadWrite.All    |
-|Delegated (personal Microsoft account) |  Application.ReadWrite.All |
-|Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "federatedidentitycredential_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/federatedidentitycredential-delete-permissions.md)]
 
 ## HTTP request
 
-You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal.
+You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
 
 You can also address the federated identity credential with either its **id** or **name**.
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +44,7 @@ DELETE /applications(appId='{appId}')/federatedIdentityCredentials/{federatedIde
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Qna(
 	display_name = "Global Country Holidays",
@@ -22,25 +22,25 @@ request_body = Qna(
 			"labor day",
 			"thanksgiving",
 			"christmas",
-		]
+		],
 		reserved_keywords = [
 			"holidays",
 			"paid days off",
-		]
+		],
 		match_similar_keywords = True,
 	),
 	availability_start_date_time = "2020-09-21T20:01:37Z",
 	availability_end_date_time = "2021-12-31T20:01:37Z",
 	language_tags = [
 		"en-us",
-	]
+	],
 	platforms = [
 		DevicePlatformType.IOS,
-	]
+	],
 	state = AnswerState.Published,
 )
 
-result = await graph_client.search.qnas.post(request_body = request_body)
+result = await graph_client.search.qnas.post(request_body)
 
 
 ```

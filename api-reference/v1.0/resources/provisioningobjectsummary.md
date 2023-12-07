@@ -1,6 +1,6 @@
 ---
 title: "provisioningObjectSummary resource type"
-description: "Represents an action performed by the Azure AD Provisioning service and its associated properties."
+description: "Represents an action performed by the Microsoft Entra provisioning service and its associated properties."
 ms.localizationpriority: medium
 author: "ArvindHarinder1"
 ms.prod: "identity-and-access-reports"
@@ -12,7 +12,7 @@ doc_type: "resourcePageType"
 Namespace: microsoft.graph
 
 
-Represents an action performed by the Azure AD Provisioning service and its associated properties. 
+Represents an action performed by the Microsoft Entra provisioning service and its associated properties. 
 
 ## Methods
 
@@ -33,7 +33,7 @@ Represents an action performed by the Azure AD Provisioning service and its asso
 |initiatedBy|[initiator](initiator.md)|Details of who initiated this provisioning. Supports `$filter` (`eq`, `contains`).|
 |jobId|String|The unique ID for the whole provisioning job. Supports `$filter` (`eq`, `contains`).|
 |modifiedProperties|[modifiedProperty](modifiedproperty.md) collection|Details of each property that was modified in this provisioning action on this object.|
-|provisioningAction|provisioningAction|Indicates the activity name or the operation name. Possible values are: `create`, `update`, `delete`, `stageddelete`, `disable`, `other` and `unknownFutureValue`. For a list of activities logged, refer to Azure AD activity list. Supports `$filter` (`eq`, `contains`).|
+|provisioningAction|provisioningAction|Indicates the activity name or the operation name. Possible values are: `create`, `update`, `delete`, `stageddelete`, `disable`, `other` and `unknownFutureValue`. For a list of activities logged, refer to Microsoft Entra activity list. Supports `$filter` (`eq`, `contains`).|
 |provisioningStatusInfo|[provisioningStatusInfo](provisioningstatusinfo.md)|Details of provisioning status.|
 |provisioningSteps|[provisioningStep](provisioningstep.md) collection|Details of each step in provisioning.|
 |servicePrincipal|[servicePrincipal](provisioningserviceprincipal.md) collection|Represents the service principal used for provisioning. Supports `$filter` (`eq`) for **id** and **name**.|
@@ -41,7 +41,7 @@ Represents an action performed by the Azure AD Provisioning service and its asso
 |sourceSystem|[provisioningSystem](provisioningsystem.md)|Details of source system of the object being provisioned. Supports `$filter` (`eq`, `contains`) for **displayName**.|
 |targetIdentity|[provisionedIdentity](provisionedidentity.md)|Details of target object being provisioned. Supports `$filter` (`eq`, `contains`) for **identityType**, **id**, and **displayName***.|
 |targetSystem|[provisioningSystem](provisioningsystem.md)|Details of target system of the object being provisioned. Supports `$filter` (`eq`, `contains`) for **displayName**.|
-|tenantId|String|Unique Azure AD tenant ID. Supports `$filter` (`eq`, `contains`).|
+|tenantId|String|Unique Microsoft Entra tenant ID. Supports `$filter` (`eq`, `contains`).|
 
 ## Relationships
 
@@ -115,5 +115,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AccessReviewScheduleDefinition(
 	display_name = "Review inactive guests on teams",
@@ -28,13 +28,13 @@ request_body = AccessReviewScheduleDefinition(
 			query = "./owners",
 			query_type = "MicrosoftGraph",
 		),
-	]
+	],
 	fallback_reviewers = [
 		AccessReviewReviewerScope(
 			query = "/users/fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
 			query_type = "MicrosoftGraph",
 		),
-	]
+	],
 	settings = AccessReviewScheduleSettings(
 		mail_notifications_enabled = True,
 		reminder_notifications_enabled = True,
@@ -58,7 +58,7 @@ request_body = AccessReviewScheduleDefinition(
 	),
 )
 
-result = await graph_client.identity_governance.acce_reviews.definitions.post(request_body = request_body)
+result = await graph_client.identity_governance.access_reviews.definitions.post(request_body)
 
 
 ```

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Message(
 	subject = "9/8/2018: concert",
@@ -20,7 +20,7 @@ request_body = Message(
 				address = "AlexW@contoso.OnMicrosoft.com",
 			),
 		),
-	]
+	],
 	internet_message_headers = [
 		InternetMessageHeader(
 			name = "x-custom-header-group-name",
@@ -30,10 +30,10 @@ request_body = Message(
 			name = "x-custom-header-group-id",
 			value = "WA001",
 		),
-	]
+	],
 )
 
-result = await graph_client.me.messages.post(request_body = request_body)
+result = await graph_client.me.messages.post(request_body)
 
 
 ```

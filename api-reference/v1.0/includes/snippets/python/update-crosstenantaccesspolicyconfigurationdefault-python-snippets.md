@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = CrossTenantAccessPolicyConfigurationDefault(
 	b2b_collaboration_outbound = CrossTenantAccessPolicyB2BSetting(
@@ -17,7 +17,7 @@ request_body = CrossTenantAccessPolicyConfigurationDefault(
 					target = "0be493dc-cb56-4a53-936f-9cf64410b8b0",
 					target_type = CrossTenantAccessPolicyTargetType.Group,
 				),
-			]
+			],
 		),
 		applications = CrossTenantAccessPolicyTargetConfiguration(
 			access_type = CrossTenantAccessPolicyTargetConfigurationAccessType.Blocked,
@@ -26,12 +26,12 @@ request_body = CrossTenantAccessPolicyConfigurationDefault(
 					target = "AllApplications",
 					target_type = CrossTenantAccessPolicyTargetType.Application,
 				),
-			]
+			],
 		),
 	),
 )
 
-result = await graph_client.policies.cro_tenant_acce_policy.default.patch(request_body = request_body)
+result = await graph_client.policies.cross_tenant_access_policy.default.patch(request_body)
 
 
 ```

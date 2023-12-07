@@ -31,6 +31,6 @@ $tenantRestrictionsApplications->setTargets($targetsArray);
 $tenantRestrictions->setApplications($tenantRestrictionsApplications);
 $requestBody->setTenantRestrictions($tenantRestrictions);
 
-$result = $graphServiceClient->policies()->crossTenantAccessPolicy()->partners()->byCrossTenantAccessPolicyConfigurationPartnerId('crossTenantAccessPolicyConfigurationPartner-tenantId')->patch($requestBody)->wait();
+$result = $graphServiceClient->policies()->crossTenantAccessPolicy()->partners()->byCrossTenantAccessPolicyConfigurationPartnerTenantId('crossTenantAccessPolicyConfigurationPartner-tenantId')->patch($requestBody)->wait();
 
 ```

@@ -6,9 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Communications.Calls.Item.Redirect;
+using Microsoft.Graph.Models;
 
-var requestBody = new Microsoft.Graph.Communications.Calls.Item.Redirect.RedirectPostRequestBody
+var requestBody = new RedirectPostRequestBody
 {
 	Targets = new List<InvitationParticipantInfo>
 	{
@@ -21,7 +23,7 @@ var requestBody = new Microsoft.Graph.Communications.Calls.Item.Redirect.Redirec
 				AdditionalData = new Dictionary<string, object>
 				{
 					{
-						"phone" , new 
+						"phone" , new Identity
 						{
 							OdataType = "#microsoft.graph.identity",
 							Id = "+12345678901",
@@ -33,6 +35,8 @@ var requestBody = new Microsoft.Graph.Communications.Calls.Item.Redirect.Redirec
 	},
 	CallbackUri = "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Communications.Calls["{call-id}"].Redirect.PostAsync(requestBody);
 
 

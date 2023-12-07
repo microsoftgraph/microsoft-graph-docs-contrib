@@ -10,6 +10,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$graphServiceClient->teams()->byTeamId('team-id')->photo()->value()->get()->wait();
+$graphServiceClient->teams()->byTeamId('team-id')->photo()->content()->get()->wait();
 
 ```

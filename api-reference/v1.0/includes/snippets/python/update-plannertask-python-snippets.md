@@ -6,15 +6,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = PlannerTask(
 	assignments = PlannerAssignments(
 		additional_data = {
-				"fbab97d0-4932-4511-b675-204639209557" : (
-					odata_type = "#microsoft.graph.plannerAssignment",
-					order_hint = "N9917 U2883!",
-				),
+				"fbab97d0-4932-4511-b675-204639209557" : {
+						"@odata_type" : "#microsoft.graph.plannerAssignment",
+						"order_hint" : "N9917 U2883!",
+				},
 		}
 	),
 	applied_categories = PlannerAppliedCategories(
@@ -25,15 +25,12 @@ request_body = PlannerTask(
 	),
 )
 
-request_configuration = PlannerTaskRequestBuilder.PlannerTaskRequestBuilderPatchRequestConfiguration(
-headers = {
-		'Prefer' : "return=representation",
-		'If-Match' : "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"",
-}
+request_configuration = PlannerTaskItemRequestBuilder.PlannerTaskItemRequestBuilderPatchRequestConfiguration()
+request_configuration.headers.add("Prefer", "return=representation")
+request_configuration.headers.add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 
-)
 
-result = await graph_client.planner.tasks.by_task_id('plannerTask-id').patch(request_body = request_body, request_configuration = request_configuration)
+result = await graph_client.planner.tasks.by_planner_task_id('plannerTask-id').patch(request_body, request_configuration = request_configuration)
 
 
 ```

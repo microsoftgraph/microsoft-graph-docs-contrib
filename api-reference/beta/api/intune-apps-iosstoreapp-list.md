@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [iosStoreApp](../resources/intune-apps-iosstoreapp.md) objects.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -60,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1666
+Content-Length: 1690
 
 {
   "value": [
@@ -109,7 +111,8 @@ Content-Length: 1666
         "v13_0": true,
         "v14_0": true,
         "v15_0": true,
-        "v16_0": true
+        "v16_0": true,
+        "v17_0": true
       }
     }
   ]

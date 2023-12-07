@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [managedIOSLobApp](../resources/intune-apps-managedioslobapp.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -63,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1905
+Content-Length: 1927
 
 {
   "value": {
@@ -115,7 +117,8 @@ Content-Length: 1905
       "v13_0": true,
       "v14_0": true,
       "v15_0": true,
-      "v16_0": true
+      "v16_0": true,
+      "v17_0": true
     },
     "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
     "versionNumber": "Version Number value",

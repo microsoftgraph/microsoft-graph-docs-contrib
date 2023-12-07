@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = LearningContent(
 	title = "Manage classes, resources, assessment, and planning in Microsoft Teams with Beedle",
@@ -22,22 +22,22 @@ request_body = LearningContent(
 	last_modified_date_time = "2021-04-01T04:26:06.1995367Z",
 	contributors = [
 		"Scott Simpson",
-	]
+	],
 	additional_tags = [
 		"Create private or public teams",
 		"Add members to teams",
-	]
+	],
 	skill_tags = [
 		"Create teams",
 		"Teams channels",
 		"Teams members",
-	]
+	],
 	is_active = True,
 	is_premium = False,
 	is_searchable = True,
 )
 
-result = await graph_client.employee_experience.learning_providers.by_learning_provider_id('learningProvider-id').learning_contents.by_learning_content_id('learningContent-id').patch(request_body = request_body)
+result = await graph_client.employee_experience.learning_providers.by_learning_provider_id('learningProvider-id').learning_contents.by_learning_content_id('learningContent-id').patch(request_body)
 
 
 ```

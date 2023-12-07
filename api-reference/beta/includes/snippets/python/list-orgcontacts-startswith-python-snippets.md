@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = ContactsRequestBuilder.ContactsRequestBuilderGetQueryParameters(
 		filter = "startswith(displayName,'A')",
@@ -17,11 +17,9 @@ query_params = ContactsRequestBuilder.ContactsRequestBuilderGetQueryParameters(
 
 request_configuration = ContactsRequestBuilder.ContactsRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
-headers = {
-			'ConsistencyLevel' : "eventual",
-}
-
 )
+request_configuration.headers.add("ConsistencyLevel", "eventual")
+
 
 result = await graph_client.contacts.get(request_configuration = request_configuration)
 

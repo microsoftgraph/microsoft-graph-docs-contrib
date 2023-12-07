@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new GenerateKeyPostRequestBody();
-$requestBody->setUse('sig');
+$requestBody->setEscapedUse('sig');
 $requestBody->setKty('RSA');
 $requestBody->setNbf(1508969811);
 $requestBody->setExp(1508969811);

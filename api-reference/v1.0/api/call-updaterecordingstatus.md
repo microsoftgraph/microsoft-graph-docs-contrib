@@ -15,14 +15,13 @@ Update the application's recording status associated with a call. This requires 
 
 > **Additional Restriction**: You may NOT use the Media Access API to record or otherwise persist media content from calls or meetings that your application accesses, or data derived from that media content ("record" or "recording"), without first calling the **updateRecordingStatus** API to indicate that recording has begun, and receiving a success reply from that API. If your application begins recording any meeting, it must end the recording prior to calling the **updateRecordingStatus** API to indicate that the recording has ended.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
-| Permission type                        | Permissions (from least to most privileged)      |
-|:---------------------------------------|:-------------------------------------------------|
-| Delegated (work or school account)     | Not Supported                                    |
-| Delegated (personal Microsoft account) | Not Supported                                    |
-| Application                            | Calls.JoinGroupCalls.All, Calls.AccessMedia.All  |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "call_updaterecordingstatus" } -->
+[!INCLUDE [permissions-table](../includes/permissions/call-updaterecordingstatus-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

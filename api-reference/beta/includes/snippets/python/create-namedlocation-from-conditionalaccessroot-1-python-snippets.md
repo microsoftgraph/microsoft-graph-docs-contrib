@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = IpNamedLocation(
 	odata_type = "#microsoft.graph.ipNamedLocation",
@@ -21,10 +21,10 @@ request_body = IpNamedLocation(
 			odata_type = "#microsoft.graph.iPv6CidrRange",
 			cidr_address = "2001:0:9d38:90d6:0:0:0:0/63",
 		),
-	]
+	],
 )
 
-result = await graph_client.identity.conditional_access.named_locations.post(request_body = request_body)
+result = await graph_client.identity.conditional_access.named_locations.post(request_body)
 
 
 ```

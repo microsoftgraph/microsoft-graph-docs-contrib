@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ExternalItem(
 	acl = [
@@ -20,7 +20,7 @@ request_body = ExternalItem(
 			value = "14m1b9c38qe647f6a",
 			access_type = AccessType.Deny,
 		),
-	]
+	],
 	properties = Properties(
 		additional_data = {
 				"title" : "Error in the payment gateway",
@@ -34,7 +34,7 @@ request_body = ExternalItem(
 	),
 )
 
-result = await graph_client.external.connections.by_connection_id('externalConnection-id').items.by_item_id('externalItem-id').put(request_body = request_body)
+result = await graph_client.external.connections.by_external_connection_id('externalConnection-id').items.by_external_item_id('externalItem-id').put(request_body)
 
 
 ```

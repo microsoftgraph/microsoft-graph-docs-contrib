@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = TimeCard(
 	clock_in_event = TimeCardEvent(
@@ -37,13 +37,13 @@ request_body = TimeCard(
 				),
 			),
 		),
-	]
+	],
 	additional_data = {
 			"on_behalf_of_user_id" : "a3601044-a1b5-438e-b742-f78d01d68a67",
 	}
 )
 
-result = await graph_client.teams.by_team_id('team-id').schedule.time_cards.post(request_body = request_body)
+result = await graph_client.teams.by_team_id('team-id').schedule.time_cards.post(request_body)
 
 
 ```

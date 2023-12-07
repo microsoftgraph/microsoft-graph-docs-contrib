@@ -3,7 +3,7 @@ title: "actionStep resource type"
 description: "Represents a single action to take toward completing a recommendation."
 author: "ddeeps2610"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
@@ -18,7 +18,7 @@ Represents a single action to take toward completing a [recommendation](../resou
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionUrl|[actionUrl](../resources/actionurl.md)|A link to the documentation or Azure portal page that is associated with the action step.|
+|actionUrl|[actionUrl](../resources/actionurl.md)|A link to the documentation or Microsoft Entra admin center page that is associated with the action step.|
 |stepNumber|Int64|Indicates the position for this action in the order of the collection of actions to be taken.|
 |text|String|Friendly description of the action to take.|
 

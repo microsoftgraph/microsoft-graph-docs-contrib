@@ -1,12 +1,12 @@
 ---
 title: "Electron provider"
-description: "The MSAL provider for Electron uses msal-node to sign in users and acquire tokens to use with the Microsoft Graph."
+description: "The MSAL provider for Electron uses MSAL-node to sign in users and acquire tokens to use with the Microsoft Graph."
 ms.localizationpriority: medium
 author: sebastienlevert
 ---
 # Electron provider
 
-The Electron provider uses [msal-node](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-node) to sign in users and acquire tokens to use with Microsoft Graph in an Electron application.
+The Electron provider uses [MSAL-node](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-node) to sign in users and acquire tokens to use with Microsoft Graph in an Electron application.
 
 To learn more about authentication providers, see [providers](./providers.md).
 
@@ -47,7 +47,7 @@ let config: MsalElectronConfig = {
   clientId: '<your_client_id>',
   authority: '<your_authority_url>', //optional
   mainWindow: mainWindow, 
-  scopes: ['user.read'], // We recommend pre-consenting all the required scopes on the Azure portal
+  scopes: ['user.read'], // We recommend pre-consenting all the required scopes on the Microsoft Entra admin center
   baseURL: 'https://graph.microsoft.us' // change this if you want to use a different M365 endpoint
 };
 
@@ -67,18 +67,18 @@ ElectronAuthenticator.initialize(config);
     
 ## Create an app/client ID
 
-### Add new application registration in Azure Active Directory to get a client ID
+<a name='add-new-application-registration-in-azure-active-directory-to-get-a-client-id'></a>
 
-To create an application in Azure Active Directory, add a new application registration, and then configure an app name and redirect URI.
+### Add new application registration in Microsoft Entra ID to get a client ID
 
-To create the app in Azure Active Directory:
+To create an application in Microsoft Entra ID, add a new application registration, and then configure an app name and redirect URI.
 
-1. Go to the [Azure portal](https://portal.azure.com).
-1. From the menu, select **Azure Active Directory**.
-1. From the Azure Active Directory menu, select **App registrations**.
-1. From the top menu, select the **New registration** button.
+To create the app in Microsoft Entra ID:
+
+1. Go to the [Microsoft Entra admin center](https://entra.microsoft.com).
+1. Expand the **Identity** menu > expand **Applications** > select **App registrations** > select the **New registration** button.
 1. Enter the name for your app; for example, `My Electron-App`.
-1. For the type of [supported account types](/azure/active-directory/develop/single-and-multi-tenant-apps#who-can-sign-in-to-your-app), select **Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)**.
+1. For the type of [supported account types](/azure/active-directory/develop/single-and-multi-tenant-apps#who-can-sign-in-to-your-app), select **Accounts in any organizational directory (Any Microsoft Entra directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)**.
 1. In the **Redirect URI** field, in the dropdown, select **Public client/native (mobile & desktop)**, and in the URL field, enter `msal://redirect`.
 1. Confirm changes by selecting the **Register** button.
 

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AccessPackageAssignmentPolicy(
 	access_package_id = "b2eba9a1-b357-42ee-83a8-336522ed6cbf",
@@ -41,9 +41,9 @@ request_body = AccessPackageAssignmentPolicy(
 						odata_type = "#microsoft.graph.externalSponsors",
 						is_backup = False,
 					),
-				]
+				],
 			),
-		]
+		],
 	),
 	questions = [
 		AccessPackageMultipleChoiceQuestion(
@@ -55,7 +55,7 @@ request_body = AccessPackageAssignmentPolicy(
 						text = "¿De qué estado eres?",
 						language_code = "es",
 					),
-				]
+				],
 			),
 			odata_type = "#microsoft.graph.accessPackageMultipleChoiceQuestion",
 			choices = [
@@ -67,7 +67,7 @@ request_body = AccessPackageAssignmentPolicy(
 								text = "Arizona",
 								language_code = "es",
 							),
-						]
+						],
 					),
 				),
 				AccessPackageAnswerChoice(
@@ -78,7 +78,7 @@ request_body = AccessPackageAssignmentPolicy(
 								text = "California",
 								language_code = "es",
 							),
-						]
+						],
 					),
 				),
 				AccessPackageAnswerChoice(
@@ -89,10 +89,10 @@ request_body = AccessPackageAssignmentPolicy(
 								text = "Ohio",
 								language_code = "es",
 							),
-						]
+						],
 					),
 				),
-			]
+			],
 			allows_multiple_selection = False,
 		),
 		AccessPackageTextInputQuestion(
@@ -104,15 +104,15 @@ request_body = AccessPackageAssignmentPolicy(
 						text = "por qué necesita acceso a este paquete",
 						language_code = "es",
 					),
-				]
+				],
 			),
 			odata_type = "#microsoft.graph.accessPackageTextInputQuestion",
 			is_single_line_question = False,
 		),
-	]
+	],
 )
 
-result = await graph_client.identity_governance.entitlement_management.acces_package_assignment_policies.post(request_body = request_body)
+result = await graph_client.identity_governance.entitlement_management.access_package_assignment_policies.post(request_body)
 
 
 ```

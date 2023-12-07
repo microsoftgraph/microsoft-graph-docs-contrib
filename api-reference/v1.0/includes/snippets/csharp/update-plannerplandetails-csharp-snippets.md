@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Models;
 
 var requestBody = new PlannerPlanDetails
 {
@@ -28,6 +29,8 @@ var requestBody = new PlannerPlanDetails
 		Category3 = null,
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Planner.Plans["{plannerPlan-id}"].Details.PatchAsync(requestBody, (requestConfiguration) =>
 {
 	requestConfiguration.Headers.Add("Prefer", "return=representation");

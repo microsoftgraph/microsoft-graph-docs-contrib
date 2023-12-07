@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = B2cIdentityUserFlow(
 	id = "Customer",
@@ -16,17 +16,14 @@ request_body = B2cIdentityUserFlow(
 		IdentityProvider(
 			id = "Facebook-OAuth",
 		),
-	]
+	],
 )
 
-request_configuration = B2cUserFlowsRequestBuilder.B2cUserFlowsRequestBuilderPostRequestConfiguration(
-headers = {
-		'Location' : "https://graph.microsoft.com/beta/identity/b2cUserFlows('B2C_1_Customer')",
-}
+request_configuration = B2cUserFlowsRequestBuilder.B2cUserFlowsRequestBuilderPostRequestConfiguration()
+request_configuration.headers.add("Location", "https://graph.microsoft.com/beta/identity/b2cUserFlows('B2C_1_Customer')")
 
-)
 
-result = await graph_client.identity.b2c_user_flows.post(request_body = request_body, request_configuration = request_configuration)
+result = await graph_client.identity.b2c_user_flows.post(request_body, request_configuration = request_configuration)
 
 
 ```

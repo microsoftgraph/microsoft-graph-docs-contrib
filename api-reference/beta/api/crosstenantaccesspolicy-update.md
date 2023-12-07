@@ -15,15 +15,14 @@ Namespace: microsoft.graph
 
 Update the properties of a [cross-tenant access policy](../resources/crosstenantaccesspolicy.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Policy.ReadWrite.CrossTenantAccess|
-|Delegated (personal Microsoft account)|Not applicable|
-|Application|Policy.ReadWrite.CrossTenantAccess|
+<!-- { "blockType": "permissions", "name": "crosstenantaccesspolicy_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/crosstenantaccesspolicy-update-permissions.md)]
 
 ## HTTP request
 
@@ -55,7 +54,7 @@ PATCH /policies/crossTenantAccessPolicy
 
 If successful, this method returns a `204 No Content` response code.
 
-The [crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md) object size is currently limited to 25KB. This method will return a `400 Bad Request` error code if the size of the policy will exceed 25KB.
+The [crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md) object size is currently limited to 25 KB. This method returns a `400 Bad Request` error code if the size of the policy exceeds 25 KB.
 
 ## Examples
 

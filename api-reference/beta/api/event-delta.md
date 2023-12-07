@@ -29,14 +29,13 @@ The following table lists the differences between the **delta** function on even
 | Applies to events in user calendars but not group calendars. | Applies to events in user and group calendars. |
 | Currently available only in the beta version. | Available in the v1.0 and beta versions. |
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Calendars.ReadBasic, Calendars.Read, Calendars.ReadWrite  |
-|Delegated (personal Microsoft account) | Calendars.ReadBasic, Calendars.Read, Calendars.ReadWrite  |
-|Application | Calendars.ReadBasic, Calendars.Read, Calendars.ReadWrite |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "event_delta" } -->
+[!INCLUDE [permissions-table](../includes/permissions/event-delta-permissions.md)]
 
 ## HTTP request
 

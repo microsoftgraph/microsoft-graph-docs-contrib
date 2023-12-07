@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = IosUpdateConfiguration(
 	odata_type = "#microsoft.graph.iosUpdateConfiguration",
@@ -17,11 +17,11 @@ request_body = IosUpdateConfiguration(
 	active_hours_end = "11:59:00.8990000",
 	scheduled_install_days = [
 		DayOfWeek.Monday,
-	]
+	],
 	utc_time_offset_in_minutes = 6,
 )
 
-result = await graph_client.device_management.device_configurations.post(request_body = request_body)
+result = await graph_client.device_management.device_configurations.post(request_body)
 
 
 ```

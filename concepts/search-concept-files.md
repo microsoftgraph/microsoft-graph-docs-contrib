@@ -356,7 +356,7 @@ In order to be valid, properties restriction should specify a valid, queryable m
 
 ## Example 6: Specify select properties
 
-You can specify the fields you want back in the response, as part of the **fields** sub-property in listItem or an internal **listItem** sub-property in driveItem of a [searchHit](/graph/api/resources/searchhit) object in the response. This is a way to either trim down the response over the wire, or to request some specific properties that are not part of the out-of-the-box schema.
+You can specify the fields you want back in the response, as part of the **fields** subproperty in listItem or an internal **listItem** subproperty in driveItem of a [searchHit](/graph/api/resources/searchhit) object in the response. This is a way to either trim down the response over the wire, or to request some specific properties that are not part of the out-of-the-box schema.
 
 Note that property selection for custom properties in SharePoint is only available for **listItem** or **driveItem** because these are the only two SharePoint entities in Microsoft Graph that support custom properties.
 
@@ -499,7 +499,9 @@ Content-Type: application/json
 
 ## Known limitations
 
-When searching for **drive**, you need to include in the **queryString** a term contained in the name of the document library. Querying `*` is not supported and does not return all available drives.
+- When searching for **drive**, you need to include in the **queryString** a term contained in the name of the document library. Querying `*` is not supported and does not return all available drives.
+
+- The search API doesn't support the site-level [search schema](/sharepoint/manage-search-schema). Use the tenant-level or default [search schema](/sharepoint/manage-search-schema).
 
 ## Next steps
 

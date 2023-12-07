@@ -2,6 +2,7 @@
 title: "Datasets, regions, and sinks supported by Microsoft Graph Data Connect"
 description: "Learn about the supported datasets, Microsoft 365 regions, and sink storage types that you can use with Microsoft Graph Data Connect."
 author: "michaelvenables"
+ms.author: "rimisra"
 ms.localizationpriority: high
 ms.prod: "data-connect"
 ---
@@ -12,67 +13,123 @@ Microsoft Graph Data Connect supports a variety of datasets, data regions, and s
 
 ## Datasets
 
-Microsoft Graph Data Connect currently supports the following datasets. To view the schemas for each dataset, create a new dataset in Azure Synapse or Azure Data Factory and use the Schema tab to view it.
+Microsoft Graph Data Connect currently supports the following datasets. To view the schemas for each dataset, create a new dataset in Azure Synapse or Azure Data Factory and go to the Schema tab.
 
-### Azure Active Directory
+<a name='azure-active-directory'></a>
 
-| Dataset name | Description | Sample and Schema |
+### Call records
+
+| Dataset name | Description | Learn more |
 | --- | --- | --- |
-| BasicDataSet_v0.User_v0 | Contains user information (DisplayName, UserPrincipalName, and other information). | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.User_v0.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/User_v0.md)</li></ul> 
-| BasicDataSet_v0.User_v1 | Contains user information. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.User_v1.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/User_v1.md)</li></ul> 
-| BasicDataSet_v0.Manager_v0 | Contains user information for the manager of each user. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Manager_v0.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/Manager_v0.md)</li></ul> 
-| BasicDataSet_v0.DirectReport_v0 | Contains user information about the employees that directly report to each user. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.DirectReport_v0.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/DirectReport_v0.md)</li></ul>
+| TeamsCallRecords_v1 | Provides activity records from Teams calls and meetings. | [TeamsCallRecords_v1 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-teamscallrecords1.md) |
 
-### Outlook and Exchange Online
+### Channel
 
-| Dataset name | Description | Sample and Schema |
+| Dataset name | Description | Learn more |
 | --- | --- | --- |
-| BasicDataSet_v0.CalendarView_v0 | Contains the events from the Calendar view. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.CalendarView_v0.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/CalendarView_v0.md)</li></ul>
-| BasicDataSet_v0.ConferenceRoomCalendar_v0 | Contains the events from the Calendar view of only the Conference rooms. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.ConferenceRoomCalendar_v0.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/BasicDataSet_v0.ConferenceRoomCalendar_v0.md)</li></ul> | 
-| BasicDataSet_v0.Contact_v0 | Contains the available information from each user’s address book. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Contact_v0.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/Contact_v0.md)</li></ul>
-| BasicDataSet_v0.Contact_v1 | Contains contact information from each user's address book. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Contact_v1.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/Contact_v1.md)</li></ul>
-| BasicDataSet_v0.Event_v0 | Contains the information from a user’s calendar events. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Event_v0.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/Event_v0.md)</li></ul>
-| BasicDataSet_v0.Event_v1 | Contains the events in each user's calendar. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Event_v1.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/Event_v1.md)</li></ul>
-| BasicDataSet_v0.Inbox_v1 | Contains the mail folders from each user's inbox. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Inbox_v1.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/Inbox_v1.md)</li></ul> 
-| BasicDataSet_v0.MailboxSettings_v0 | Contains the mailbox settings of each user. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.MailboxSettings_v0.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/MailboxSettings_v0.md)</li></ul> 
-| BasicDataSet_v0.MailFolder_v0 | Contains the mail folders from each user's mailbox. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.MailFolder_v0.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/MailFolder_v0.md)</li></ul>
-| BasicDataSet_v0.Message_v0 | Contains the email messages from a user’s mailbox. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Message_v0.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/Message_v0.md)</li></ul>
-| BasicDataSet_v0.Message_v1 | Contains the email message in each user's mailbox. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.Message_v1.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/Message_v1.md)</li></ul>
-| BasicDataSet_v0.SentItem_v0 | Contains the messages sent from each user's mailbox. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.SentItem_v0.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/SentItem_v0.md)</li></ul>
-| BasicDataSet_v0.SentItem_v1 | Contains the message sent from each user's mailbox. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.SentItem_v1.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/SentItem_v1.md)</li></ul>
-| BasicDataSet_v0.TodoTaskFolders_v0 | Contains all task folders in the user's mailbox. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.TodoTaskFolders_v0.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/BasicDataSet_v0.TodoTaskFolders_v0.md)</li></ul>
-| BasicDataSet_v0.TodoTasks_v0 | Contains all the tasks in the signed-in user's mailbox. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.TodoTasks_v0.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/BasicDataSet_v0.TodoTasks_v0.md)</li></ul> 
-| BasicDataSet_v0.OutlookGroupConversations_v0  | Contains the message sent from each user's mailbox. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.OutlookGroupConversations_v0%20.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/BasicDataSet_v0.OutlookGroupConversations_v0.md)</li></ul>
+| TeamsChannelDetails_v0 | Generates a list of Microsoft Teams channels. | [TeamsChannelDetails_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-teamschanneldetails.md) |
 
-### Microsoft Teams
+### Contact
 
-| Dataset name | Description | Sample and Schema |
+| Dataset name | Description | Learn more |
 | --- | --- | --- |
-| BasicDataSet_v0.TeamChat_v1 | Contains [Teams chat messages](https://support.microsoft.com/office/first-things-to-know-about-chat-in-microsoft-teams-88ed0a06-6b59-43a3-8cf7-40c01f2f92f2) for one-on-one and group chat messages. This dataset excludes chat messages explicitly deleted by users. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.TeamChat_v1.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/TeamChat_v1.md)</li></ul>
-| BasicDataSet_v0.TeamsCallRecords_v1 | Contains activity records from Teams calls and meetings. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.TeamsCallRecords_v1.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/BasicDataSet_v0.TeamsCallRecords_v1.md)</li></ul>
-| BasicDataSet_v0.TeamsChannelDetails_v0  | Contains details about Channels in a team.  | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.TeamsChannelDetails_v0.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/BasicDataSet_v0.TeamsChannelDetails_v0%20.md)</li></ul>
-| BasicDataSet_v0.TeamsStandardChannelMessages_v0  | Contains channel posts and messages from Standard Channels in Teams.    | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.TeamsStandardChannelMessages_v0.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/BasicDataSet_v0.TeamsStandardChannelMessages_v0%20.md)</li></ul>
-| BasicDataSet_v0.TeamsTranscript_v1 | Contains transcripts from calls and meetings in Teams when the transcript is enabled for a meeting or a call.   | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.TeamsTranscript_v1.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/BasicDataSet_v0.TeamsTranscript_v1.md)</li></ul>
+| Contact_v0 | Provides contact details available from each user’s address book. | [Contact_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-contact.md) |
+| Contact_v1 | Provides the contact details available from each user’s address book. | [Contact_v1 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-contact1.md) |
 
-### Microsoft Groups
-
-| Dataset name | Description | Sample and Schema |
+### Devices and Licenses
+| Dataset name | Description | Learn more |
 | --- | --- | --- |
-| BasicDataSet_v0.GroupDetails_v0 | Contains a Teams Chat Group details. | <ul><li>[Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/GroupDetails_v0.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/GroupDetails_v0.md)</li></ul>
-| BasicDataSet_v0.GroupMembers_v0 | Contains a Teams Chat Group member details. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/GroupMembers_v0.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/GroupMembers_v0.md)</li></ul>
-| BasicDataSet_v0.GroupOwners_v0 | Contains the Teams Chat Group owners' details. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/GroupOwners_v0.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/GroupOwners_v0.md)</li></ul>
+| OwnedDevices_v0 | Provides detailed information related to all the devices that are owned by each user in the organization. | [OwnedDevices_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-owneddevices.md) |
+| RegisteredDevices_v0 | Provides detailed information related to all the devices that a user is registered on in the organization. | [RegisteredDevices_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-registereddevices.md) |
+| LicenseDetails_v0 | Provides details for users' licenses that are directly assigned and those transitively assigned through memberships in licensed groups. | [LicenseDetails_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-licensedetails.md) |
+
+### Event
+
+| Dataset name | Description | Learn more |
+| --- | --- | --- |
+| CalendarView_v0 | Provides occurrences, exceptions and single instances of events, based on the calendar view from users' calendars. | [CalendarView_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-calendarview.md) |
+| ConferenceRoomCalendar_v0 | Provides CalendarView data of the Conference Rooms created for a tenant. | [ConferenceRoomCalendar_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-conferenceroomcalendar.md) |
+| Event_v0 | Provides all the events from users' calendars. | [Event_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-event.md) |
+| Event_v1 | Provides all the events from users' calendars. | [Event_v1 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-event1.md) |
+
+### Group
+
+| Dataset name | Description | Learn more |
+| --- | --- | --- |
+| GroupDetails_v0 | Provides the Microsoft Entra ID (Azure AD) groups data for a tenant. | [GroupDetails_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-groupdetails.md) |
+| GroupMembers_v0 | Generates a list of direct members of all groups. | [GroupMembers_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-groupmembers.md) |
+| GroupOwners_v0 | Retrieves the list of all the group owners. | [GroupOwners_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-groupowners.md) |
+
+### Mail
+
+| Dataset name | Description | Learn more |
+| --- | --- | --- |
+| Message_v0 | Provides a collection of all the messages received by a user in mail folders. | [Message_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-message.md) |
+| Message_v1 | Provides a collection of all the messages received by a user in mail folders. | [Message_v1 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-message1.md) |
+| SentItems_v0 | Provides a collection of all the sent emails by all users of a tenant. | [SentItems_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sentitems.md) |
+| SentItems_v1 | Provides a collection of all the sent emails with some additional fields. | [SentItems_v1 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sentitems1.md) |
+
+### Mail folder
+
+| Dataset name | Description | Learn more |
+| --- | --- | --- |
+| Inbox_v1 | Provides the messages from users' mail folders. | [Inbox_v1 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-inbox.md) |
+| Mailfolder_v0 | Provides information on all the folders created in a user's mailbox. | [Mailfolder_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-mailfolder.md) |
+| Mailfolder_v2 | Provides the information on all mail folders created in a user’s mailbox. | [Mailfolder_v2 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-mailfolder2.md) |
+
+### Mailbox settings
+
+| Dataset name | Description | Learn more |
+| --- | --- | --- |
+| MailboxSettings_v0 | Provides details of all users' mailbox settings. | [MailboxSettings_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-mailboxsettings.md) |
+
+### Message
+
+| Dataset name | Description | Learn more |
+| --- | --- | --- |
+| OutlookGroupConversations_v0 | Provides a collection of group conversations between users of tenant. | [OutlookGroupConversations_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-outlookgroupconversations.md) |
+| TeamChat_v1 | Provides Teams chat messages for one-on-one and group chat messages. | [TeamChat_v1 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-teamchat.md) |
+| TeamChat_v2 | Provides Teams chat messages for one-on-one and group chat messages. | [TeamChat_v2 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-teamchat2.md) |
+| TeamsStandardChannelMessages_v0 | Provides channel posts and messages from standard channels in Teams. | [TeamsStandardChannelMessages_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-teamsstandardchannelmessages.md) |
+
+### Online meetings
+
+| Dataset name | Description | Learn more |
+| --- | --- | --- |
+| TeamsTranscript_v1 | Provides transcripts from calls and meetings in Teams when the transcript is enabled for a meeting or a call. | [TeamsTranscript_v1 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-teamstranscript1.md) |
+
+### Org hierarchy
+
+| Dataset name | Description | Learn more |
+| --- | --- | --- |
+| DirectReport_v0 | Provides details of all the direct reports for your users. | [DirectReport_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-directreport.md) |
+| Manager_v0 | Provides a list of users assigned as managers. | [Manager_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-manager.md) |
+
+### Task
+
+| Dataset name | Description | Learn more |
+| --- | --- | --- |
+| TodoTaskFolders_v0 | Identifies task folders in Microsoft Outlook that track user-level work items. | [TodoTaskFolders_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-todotaskfolders.md) |
+| TodoTasks_v0 | Identifies tasks in Microsoft Outlook that track user-level work items. | [TodoTasks_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-todotasks.md) |
+| PlannerTasks_v0 | Identifies tasks in Planner that track user-level work items. | [PlannerTasks_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-plannertasks.md) |
+
+### User
+
+| Dataset name | Description | Learn more |
+| --- | --- | --- |
+| User_v0 | Provides user details stored for all the Microsoft Entra ID (Azure AD) user accounts that are created for a particular tenant. | [User_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-user.md) |
+| User_v1 | Provides user details stored for all the Microsoft Entra ID (Azure AD) user accounts. | [User_v1 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-user1.md) |
 
 ### OneDrive and SharePoint Online
 
-Please consider that these datasets are available after 48 hours (about two days). For example, you can query data for 07/01 starting on 07/03.  
-
-The data available is from the last 21 days (about three weeks). For example, if you would like to query data for 07/01, you can do so from 07/03 to 07/24. 
-
 | Dataset name | Description | Sample and Schema |
 | --- | --- | --- |
-| BasicDataSet_v0.SharePointPermissions_v1 | Contains information about sharing permissions.(Formerly known as DocumentSharingDataset_v0_Preview)| <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.SharePointPermissions_v1.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/BasicDataSet_v0.SharePointPermissions_v1.md)</li></ul>
-| BasicDataSet_v0.SharePointSites_v1  | Contains information about SharePoint sites.(Formerly known as SharePointSitesDataset_v0_Preview)| <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.SharePointSites_v1.json) </li><li> [Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/BasicDataSet_v0.SharePointSites_v1.md)</li></ul>
-| BasicDataSet_v0.SharePointGroups_v1 | Contains SharePoint group information, including details about group members.(Formerly known as SharePointGroupsDataset_v0_Preview) | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.SharePointGroups_v1.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/BasicDataSet_v0.SharePointGroups_v1.md)</li></ul>
+| SharePointSites_v1  | Contains information about SharePoint sites. (Formerly known as SharePointSitesDataset_v0_Preview)| [SharePointSites_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointsites.md) |
+| SharePointPermissions_v1 | Contains information about sharing permissions. (Formerly DocumentSharingDataset_v0_Preview) | [SharePointPermissions_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointpermissions.md) |
+| SharePointGroups_v1 | Contains SharePoint group information, including details about group members. (Formerly SharePointGroupsDataset_v0_Preview) | [SharePointGroups_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointgroups.md) |
+| SharePointFiles_v1  | Contains information about SharePoint files. (Coming in January 2024.) | [SharePointFiles_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointfiles.md) |
+| SharePointFileActions_v1 | Contains information about SharePoint file actions. (Coming in January 2024.) | [SharePointFileActions_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sharepointfileactions.md) |
+| OneDriveSyncHealth_v1 | Contains information about devices running OneDrive for Business. (Coming in January 2024.) | [OneDriveSyncHealth_v1](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-onedrivesynchealth.md) |
 
 ### Viva Insights
 
@@ -80,12 +137,12 @@ The data available is from the last 21 days (about three weeks). For example, if
 | --- | --- | --- | --- |
 | VivaInsightsDataset_PersonReport_v1 | Contains Viva Insights metrics. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/VivaInsightsDataset_v0.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/VivaInsightsDataSet_v0.md)</li></ul> | Requires Viva Insights license |
 
+
 ## Regions
 
-Microsoft Graph Data Connect supports extracting data from a variety of Microsoft 365 regions. To successfully move data from the Microsoft 365 data center into your Microsoft Azure storage, the Azure Synapse or Azure Data Factory instance and the Azure storage location must both map to a supported region for the location of the Microsoft 365 data. 
+Microsoft Graph Data Connect supports extracting data from a variety of Microsoft 365 regions. To successfully move data from the Microsoft 365 data center into your Microsoft Azure storage, the Azure Synapse or Azure Data Factory instance and the Azure storage location must both map to a supported region for the location of the Microsoft 365 data.
 
 The following table indicates which Microsoft 365 regions are supported and the corresponding Azure regions required for data movement.
-
 
 | Office region | Azure region |
 | ------------- | ------------ |
@@ -109,7 +166,6 @@ The following table indicates which Microsoft 365 regions are supported and the 
 
 Sinks are the output location that Azure Synapse or Azure Data Factory uses to place data in Azure storage. Microsoft Graph Data Connect supports the following sink storage types:
 
-- [Azure Data Lake Storage Gen1](/azure/data-lake-store/data-lake-store-overview)
 - [Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-introduction)
 - [Azure Storage Blob](/azure/storage/blobs/storage-blobs-overview)
 - [Azure SQL DB](https://azure.microsoft.com/products/azure-sql/database/?ef_id=_k_790773b85b8d1e4ef64317867aeee8a0_k_&OCID=AIDcmm5edswduu_SEM__k_790773b85b8d1e4ef64317867aeee8a0_k_&msclkid=790773b85b8d1e4ef64317867aeee8a0) (mapping data flows only)
@@ -123,15 +179,15 @@ The following characteristics apply to sinks:
 - For copy activity, the output files are formatted as JSON. This format is fixed and modifying the format is not supported. However, you can use Azure Synapse or Azure Data Factory to copy the result of a Microsoft Graph Data Connect pipeline into another storage mechanism (such as Azure SQL Database).
 - Mapping data flows: [Copy and transform data from Microsoft 365 (Office 365) - Azure Data Factory & Azure Synapse | Microsoft Learn |](/azure/data-factory/connector-office-365?tabs=data-factory#transform-data-with-the-microsoft-365-connector)
 
-    - Output can be in parquet format. For details about the supported data transformations, see [Flatten transformation in mapping data flow](/azure/data-factory/data-flow-flatten).
+  - Output can be in parquet format. For details about the supported data transformations, see [Flatten transformation in mapping data flow](/azure/data-factory/data-flow-flatten).
 
-    - Microsoft Graph Data Connect on mapping data flows supports direct output of the data into Azure SQL DB.
+  - Microsoft Graph Data Connect on mapping data flows supports direct output of the data into Azure SQL DB.
 
 &nbsp;
 
 The following table indicates the areas that are supported for the corresponding copy activity and mapping data flows.
 
-| Area | Copy Activity | Mapping data flows |
+| Area | Copy activity | Mapping data flows |
 | ---- | ------------- | ------------------------------ |
 | Output data formats supported | JSON | JSON, Parquet  |
 | Data transformation (normalization/flattening/etc.)  | Requires additional transformation step in the ADF/Synapse pipeline | Supports inline transformations |

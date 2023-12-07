@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Update the properties of a [androidDeviceOwnerVpnConfiguration](../resources/intune-deviceconfig-androiddeviceownervpnconfiguration.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -75,7 +77,7 @@ The following table shows the properties that are required when you create the [
 |microsoftTunnelSiteId|String|Microsoft Tunnel site ID.|
 |proxyExclusionList|String collection|List of hosts to exclude using the proxy on connections for. These hosts can use wildcards such as *.example.com.|
 |customData|[keyValue](../resources/intune-deviceconfig-keyvalue.md) collection|Custom data to define key/value pairs specific to a VPN provider. This collection can contain a maximum of 25 elements.|
-|customKeyValueData|[keyValuePair](../resources/intune-deviceconfig-keyvaluepair.md) collection|Custom data to define key/value pairs specific to a VPN provider. This collection can contain a maximum of 25 elements.|
+|customKeyValueData|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|Custom data to define key/value pairs specific to a VPN provider. This collection can contain a maximum of 25 elements.|
 
 
 
