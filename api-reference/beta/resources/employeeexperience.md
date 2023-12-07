@@ -33,7 +33,7 @@ None.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |communities|[community](../resources/community.md) collection| A collection of communities in Viva Engage. |
-|engagementAsyncOperations|[engagementAsyncOperations](../resources/engagementasyncoperation.md) collection| A collection of long-running, asynchronous operations related to Viva Engage. |
+|engagementAsyncOperations|[engagementAsyncOperation](../resources/engagementasyncoperation.md) collection| A collection of long-running, asynchronous operations related to Viva Engage. |
 |goals|[goals](../resources/goals.md) collection|Represents a collection of goals in a Viva Goals organization.|
 |learningProviders|[learningProvider](../resources/learningprovider.md) collection|A collection of learning providers.|
 
