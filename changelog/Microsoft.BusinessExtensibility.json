@@ -107,8 +107,8 @@
           "Cloud": "Prod",
           "Version": "beta",
           "CreatedDateTime": "2023-12-06T12:10:19.8556434Z",
-          "WorkloadArea": "Microsoft.BusinessExtensibility",
-          "SubArea": ""
+          "WorkloadArea": "Tasks and plans",
+          "SubArea": "Business scenarios"
         }
       ]
     }
