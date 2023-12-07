@@ -3,6 +3,174 @@
         {
             "ChangeList": [
                 {
+                  "Id": "cf19be9e-ada7-4107-bea0-37c58bbf84e7",
+                  "ApiChange": "Member",
+                  "ChangedApiName": "default",
+                  "ChangeType": "Addition",
+                  "Description": "Added the `default` member to the **cloudPcRegionGroup** enumeration.",
+                  "Target": "cloudPcRegionGroup"
+                },
+                {
+                  "Id": "cf19be9e-ada7-4107-bea0-37c58bbf84e7",
+                  "ApiChange": "Member",
+                  "ChangedApiName": "australia",
+                  "ChangeType": "Addition",
+                  "Description": "Added the `australia` member to the **cloudPcRegionGroup** enumeration.",
+                  "Target": "cloudPcRegionGroup"
+                },
+                {
+                  "Id": "cf19be9e-ada7-4107-bea0-37c58bbf84e7",
+                  "ApiChange": "Member",
+                  "ChangedApiName": "canada",
+                  "ChangeType": "Addition",
+                  "Description": "Added the `canada` member to the **cloudPcRegionGroup** enumeration.",
+                  "Target": "cloudPcRegionGroup"
+                },
+                {
+                  "Id": "cf19be9e-ada7-4107-bea0-37c58bbf84e7",
+                  "ApiChange": "Member",
+                  "ChangedApiName": "usCentral",
+                  "ChangeType": "Addition",
+                  "Description": "Added the `usCentral` member to the **cloudPcRegionGroup** enumeration.",
+                  "Target": "cloudPcRegionGroup"
+                },
+                {
+                  "Id": "cf19be9e-ada7-4107-bea0-37c58bbf84e7",
+                  "ApiChange": "Member",
+                  "ChangedApiName": "usEast",
+                  "ChangeType": "Addition",
+                  "Description": "Added the `usEast` member to the **cloudPcRegionGroup** enumeration.",
+                  "Target": "cloudPcRegionGroup"
+                },
+                {
+                  "Id": "cf19be9e-ada7-4107-bea0-37c58bbf84e7",
+                  "ApiChange": "Member",
+                  "ChangedApiName": "usWest",
+                  "ChangeType": "Addition",
+                  "Description": "Added the `usWest` member to the **cloudPcRegionGroup** enumeration.",
+                  "Target": "cloudPcRegionGroup"
+                },
+                {
+                  "Id": "cf19be9e-ada7-4107-bea0-37c58bbf84e7",
+                  "ApiChange": "Member",
+                  "ChangedApiName": "france",
+                  "ChangeType": "Addition",
+                  "Description": "Added the `france` member to the **cloudPcRegionGroup** enumeration.",
+                  "Target": "cloudPcRegionGroup"
+                },
+                {
+                  "Id": "cf19be9e-ada7-4107-bea0-37c58bbf84e7",
+                  "ApiChange": "Member",
+                  "ChangedApiName": "germany",
+                  "ChangeType": "Addition",
+                  "Description": "Added the `germany` member to the **cloudPcRegionGroup** enumeration.",
+                  "Target": "cloudPcRegionGroup"
+                },
+                {
+                  "Id": "cf19be9e-ada7-4107-bea0-37c58bbf84e7",
+                  "ApiChange": "Member",
+                  "ChangedApiName": "europeUnion",
+                  "ChangeType": "Addition",
+                  "Description": "Added the `europeUnion` member to the **cloudPcRegionGroup** enumeration.",
+                  "Target": "cloudPcRegionGroup"
+                },
+                {
+                  "Id": "cf19be9e-ada7-4107-bea0-37c58bbf84e7",
+                  "ApiChange": "Member",
+                  "ChangedApiName": "unitedKingdom",
+                  "ChangeType": "Addition",
+                  "Description": "Added the `unitedKingdom` member to the **cloudPcRegionGroup** enumeration.",
+                  "Target": "cloudPcRegionGroup"
+                },
+                {
+                  "Id": "cf19be9e-ada7-4107-bea0-37c58bbf84e7",
+                  "ApiChange": "Member",
+                  "ChangedApiName": "japan",
+                  "ChangeType": "Addition",
+                  "Description": "Added the `japan` member to the **cloudPcRegionGroup** enumeration.",
+                  "Target": "cloudPcRegionGroup"
+                },
+                {
+                  "Id": "cf19be9e-ada7-4107-bea0-37c58bbf84e7",
+                  "ApiChange": "Member",
+                  "ChangedApiName": "asia",
+                  "ChangeType": "Addition",
+                  "Description": "Added the `asia` member to the **cloudPcRegionGroup** enumeration.",
+                  "Target": "cloudPcRegionGroup"
+                },
+                {
+                  "Id": "cf19be9e-ada7-4107-bea0-37c58bbf84e7",
+                  "ApiChange": "Member",
+                  "ChangedApiName": "india",
+                  "ChangeType": "Addition",
+                  "Description": "Added the `india` member to the **cloudPcRegionGroup** enumeration.",
+                  "Target": "cloudPcRegionGroup"
+                },
+                {
+                  "Id": "cf19be9e-ada7-4107-bea0-37c58bbf84e7",
+                  "ApiChange": "Member",
+                  "ChangedApiName": "southAmerica",
+                  "ChangeType": "Addition",
+                  "Description": "Added the `southAmerica` member to the **cloudPcRegionGroup** enumeration.",
+                  "Target": "cloudPcRegionGroup"
+                },
+                {
+                  "Id": "cf19be9e-ada7-4107-bea0-37c58bbf84e7",
+                  "ApiChange": "Member",
+                  "ChangedApiName": "euap",
+                  "ChangeType": "Addition",
+                  "Description": "Added the `euap` member to the **cloudPcRegionGroup** enumeration.",
+                  "Target": "cloudPcRegionGroup"
+                },
+                {
+                  "Id": "cf19be9e-ada7-4107-bea0-37c58bbf84e7",
+                  "ApiChange": "Member",
+                  "ChangedApiName": "usGovernment",
+                  "ChangeType": "Addition",
+                  "Description": "Added the `usGovernment` member to the **cloudPcRegionGroup** enumeration.",
+                  "Target": "cloudPcRegionGroup"
+                },
+                {
+                  "Id": "cf19be9e-ada7-4107-bea0-37c58bbf84e7",
+                  "ApiChange": "Member",
+                  "ChangedApiName": "usGovernmentDOD",
+                  "ChangeType": "Addition",
+                  "Description": "Added the `usGovernmentDOD` member to the **cloudPcRegionGroup** enumeration.",
+                  "Target": "cloudPcRegionGroup"
+                },
+                {
+                  "Id": "cf19be9e-ada7-4107-bea0-37c58bbf84e7",
+                  "ApiChange": "Member",
+                  "ChangedApiName": "unknownFutureValue",
+                  "ChangeType": "Addition",
+                  "Description": "Added the `unknownFutureValue` member to the **cloudPcRegionGroup** enumeration.",
+                  "Target": "cloudPcRegionGroup"
+                },
+                {
+                  "Id": "cf19be9e-ada7-4107-bea0-37c58bbf84e7",
+                  "ApiChange": "Member",
+                  "ChangedApiName": "norway",
+                  "ChangeType": "Addition",
+                  "Description": "Added the `norway` member to the **cloudPcRegionGroup** enumeration.",
+                  "Target": "cloudPcRegionGroup"
+                },
+                {
+                  "Id": "cf19be9e-ada7-4107-bea0-37c58bbf84e7",
+                  "ApiChange": "Member",
+                  "ChangedApiName": "switzerland",
+                  "ChangeType": "Addition",
+                  "Description": "Added the `switzerland` member to the **cloudPcRegionGroup** enumeration.",
+                  "Target": "cloudPcRegionGroup"
+                },
+                {
+                  "Id": "cf19be9e-ada7-4107-bea0-37c58bbf84e7",
+                  "ApiChange": "Member",
+                  "ChangedApiName": "southKorea",
+                  "ChangeType": "Addition",
+                  "Description": "Added the `southKorea` member to the **cloudPcRegionGroup** enumeration.",
+                  "Target": "cloudPcRegionGroup"
+                },
+                {
                     "Id": "5fd3c568-b345-4b52-943b-3e5726ef6ec5",
                     "ApiChange": "Property",
                     "ChangedApiName": "windowsSetting",
