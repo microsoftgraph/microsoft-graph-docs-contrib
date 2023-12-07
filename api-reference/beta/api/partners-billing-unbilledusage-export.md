@@ -1,6 +1,6 @@
 ---
 title: "unbilledUsage: export"
-description: "Export unbilled usage data"
+description: "Export the unbilled Azure usage data for a specific billing period and a given currency"
 author: "abhishek-singh-ms"
 ms.localizationpriority: medium
 ms.prod: "reports"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.partners.billing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Export unbilled usage data.
+Export the unbilled Azure usage data for a specific billing period and a given currency.
 
 ## Permissions
 
@@ -51,13 +51,13 @@ The following table shows the parameters that you can use with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|attributeSet|microsoft.graph.partners.billing.attributeSet|Supported values are: `full`and `basic`. Default value is `full`. Choose `full` for a complete response or `basic` for a subset of attributes. Optional.|
+|attributeSet|microsoft.graph.partners.billing.attributeSet|Attributes that should be exported. Supported values are: `full`and `basic`. Default value is `full`. Choose `full` for a complete response or `basic` for a subset of attributes. Optional.|
 |billingPeriod|microsoft.graph.partners.billing.billingPeriod|Supported values are: `current`and `last`. Choose `current` for current billing period and `last` for last billing period. Required.|
 |currencyCode|String|Partner billing currency code. Required.|
 
 ## Response
 
-If successful, this method returns a `202 Accepted` response code and a [operation](../resources/partners-billing-operation.md) in the **Location** header.
+If successful, this method returns a `202 Accepted` response code and a **Location** header that contains the URL to the long-running operation. You can check the status of the long-running operation by making a GET request to this URL that returns one of the following objects in the response body: [microsoft.graph.partners.billing.runningOperation](../resources/partners-billing-runningoperation.md), [microsoft.graph.partners.billing.exportSuccessOperation](../resources/partners-billing-exportsuccessoperation.md), [microsoft.graph.partners.billing.failedOperation](../resources/partners-billing-failedoperation.md).
 
 ## Examples
 
