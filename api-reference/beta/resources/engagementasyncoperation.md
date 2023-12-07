@@ -66,6 +66,7 @@ The following JSON representation shows the resource type.
   "operationType": "String",
   "resourceId": "String",
   "resourceLocation": "String",
-  "status": "String"
+  "status": "String",
+  "statusDetail": "String"
 }
 ```
