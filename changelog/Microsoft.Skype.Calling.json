@@ -3666,7 +3666,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sendDtmfTonesOperation",
           "ChangeType": "Addition",
-          "Description": "Added the [sendDtmfTonesOperation](https://learn.microsoft.com/en-us/graph/api/resources/sendDtmfTonesOperation?view=graph-rest-beta) resource",
+          "Description": "Added the [sendDtmfTonesOperation](https://learn.microsoft.com/en-us/graph/api/resources/sendDtmfTonesOperation?view=graph-rest-1.0) resource",
           "Target": "sendDtmfTonesOperation"
         },
         {
@@ -3674,14 +3674,14 @@
           "ApiChange": "Method",
           "ChangedApiName": "sendDtmfTones",
           "ChangeType": "Addition",
-          "Description": "Added the [sendDtmfTones](https://learn.microsoft.com/en-us/graph/api/call?view=graph-rest-beta) method to the [call](https://learn.microsoft.com/en-us/graph/api/call?view=graph-rest-beta) resource.",
+          "Description": "Added the [sendDtmfTones](https://learn.microsoft.com/en-us/graph/api/call?view=graph-rest-beta) method to the [call](https://learn.microsoft.com/en-us/graph/api/call?view=graph-rest-1.0) resource.",
           "Target": "call"
         }
       ],
       "Id": "22b8846f-8ca2-4f12-9e51-d4859b5c0ae6",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2023-11-09T18:20:26.249248Z",
+      "CreatedDateTime": "2023-12-06T18:20:26.249248Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
     }
