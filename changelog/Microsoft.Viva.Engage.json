@@ -21,9 +21,17 @@
           {
             "Id": "6ef521a9-141c-48fe-a109-1082be3fb5b3",
             "ApiChange": "Relationship",
-            "ChangedApiName": "employeeExperience",
+            "ChangedApiName": "communities",
             "ChangeType": "Change",
             "Description": "Added the **communities** relationship to the [employeeExperience](https://learn.microsoft.com/en-us/graph/api/resources/employeeExperience?view=graph-rest-beta) resource.",
+            "Target": "employeeExperience"
+          },
+          {
+            "Id": "6ef521a9-141c-48fe-a109-1082be3fb5b3",
+            "ApiChange": "Relationship",
+            "ChangedApiName": "engagementAsyncOperations",
+            "ChangeType": "Change",
+            "Description": "Added the **engagementAsyncOperations** relationship to the [employeeExperience](https://learn.microsoft.com/en-us/graph/api/resources/employeeExperience?view=graph-rest-beta) resource.",
             "Target": "employeeExperience"
           }
         ],
