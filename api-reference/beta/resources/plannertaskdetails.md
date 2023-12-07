@@ -27,6 +27,7 @@ Represents the additional information about a task. Each [task](plannertask.md) 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](plannerchecklistitems.md)|The collection of checklist items on the task.|
+|forms|[plannerFormsDictionary](plannerformsdictionary.md)|The collection of forms on the task.|
 |completionRequirements|[plannerTaskCompletionRequirementDetails](plannertaskcompletionrequirementdetails.md)|Contains detailed information about requirements on the task.|
 |description|String|Description of the task.|
 |id|String| Read-only. ID of the task details. It's 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service.|
@@ -52,6 +53,7 @@ Here's a JSON representation of the resource.
 ```json
 {
   "checklist": {"@odata.type": "microsoft.graph.plannerChecklistItems"},
+  "forms": {"@odata.type": "microsoft.graph.plannerFormsDictionary"},
   "completionRequirements": {"@odata.type": "microsoft.graph.plannerTaskCompletionRequirementDetails"},
   "description": "String",
   "id": "String (identifier)",
