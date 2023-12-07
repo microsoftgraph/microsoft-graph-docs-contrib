@@ -8,5 +8,5 @@ ms.localizationpriority: medium
 |:---|:---|:---|
 |Delegated (work or school account)|CloudPC.Read.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Not supported.|CloudPC.ReadWrite.All|
+|Application|CloudPC.ReadWrite.All|Not available.|
 
