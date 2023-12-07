@@ -36,6 +36,7 @@ Inherits from [longRunningOperation](../resources/longrunningoperation.md).
 | resourceId | String | The ID of the object created or modified as a result of this async operation. |
 | resourceLocation |String| The location of the object created or modified as a result of this async operation. Inherited from [longRunningOperation](../resources/longrunningoperation.md). |
 | status | longRunningOperationStatus | The status of the operation. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `skipped`, `unknownFutureValue`. Inherited from [longRunningOperation](../resources/longrunningoperation.md). |
+|statusDetail|String|Details about the status of the operation. Inherited from [longRunningOperation](../resources/longrunningoperation.md). |
 
 ### engagementAsyncOperationType values
 
