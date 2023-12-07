@@ -35,18 +35,7 @@ Inherits from [longRunningOperation](../resources/longrunningoperation.md).
 | operationType | [engagementAsyncOperationType](../resources/engagementasyncoperation.md#engagementasyncoperationtype-values) | The type of the long-running operation. The possible values are: `createCommunity`, `unknownFutureValue`. |
 | resourceId | String | The ID of the object created or modified as a result of this async operation. |
 | resourceLocation |String| The location of the object created or modified as a result of this async operation. Inherited from [longRunningOperation](../resources/longrunningoperation.md). |
-| status | longRunningOperationStatus | The status of the operation. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`. Inherited from [longRunningOperation](../resources/longrunningoperation.md). |
-
-### engagementAsyncOperationStatus values
-
-| Member | Description |
-|:---------------|:----------|
-| invalid | Invalid value. |
-| notStarted | The operation hasn't started. |
-| inProgress | The operation is running. |
-| succeeded | The operation succeeded. |
-| failed | The operation failed. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
+| status | longRunningOperationStatus | The status of the operation. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `skipped`, `unknownFutureValue`. Inherited from [longRunningOperation](../resources/longrunningoperation.md). |
 
 ### engagementAsyncOperationType values
 
