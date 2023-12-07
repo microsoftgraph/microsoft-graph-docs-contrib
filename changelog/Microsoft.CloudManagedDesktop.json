@@ -55,7 +55,7 @@
                     "ApiChange": "EnumType",
                     "ChangedApiName": "frequencyType",
                     "ChangeType": "Addition",
-                    "Description": "Added new Enum frequencyType",
+                    "Description": "Added new EnumType cloudPcRestorePointFrequencyType",
                     "Target": "cloudPcRestorePointFrequencyType"
                 },
                 {
