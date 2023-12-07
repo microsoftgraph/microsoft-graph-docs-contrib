@@ -57,7 +57,7 @@ If operation is still running, this method returns a 200 OK response code and [o
 The following request is an example.
 <!-- {
   "blockType": "request",
-  "name": "get_billingoperation"
+  "name": "get_billing_operation"
 }
 -->
 ``` http
