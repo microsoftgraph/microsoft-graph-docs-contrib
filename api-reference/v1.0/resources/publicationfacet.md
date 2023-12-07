@@ -37,9 +37,9 @@ The **publicationFacet** resource provides details on the published status of a 
 
 |   Property    |  Type  | Description |
 | :------------ | :----- | :---------- |
-| **level**     | String | The state of publication for this document. Either `published` or `checkout`. Read-only.  |
-| **versionId** | String | The unique identifier for the version that is visible to the current caller. Read-only.  |
-| **checkedOutBy**   | microsoft.graph.identitySet | User who has checked out the file.                               |
+| level     | String | The state of publication for this document. Either `published` or `checkout`. Read-only.  |
+| versionId | String | The unique identifier for the version that is visible to the current caller. Read-only.  |
+| checkedOutBy   | microsoft.graph.identitySet | The user who checked out the file.                               |
 
 
 <!-- {
