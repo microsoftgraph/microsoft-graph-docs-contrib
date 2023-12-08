@@ -54,7 +54,7 @@ If successful, this method returns a `204 No Content`. It does not return anythi
 
 ## Example
 
-<!-- { "blockType": "request", "name": "delete-page", "scopes": "files.readwrite sites.readwrite.all" } -->
+<!-- { "blockType": "request", "name": "delete-page-template", "scopes": "files.readwrite sites.readwrite.all" } -->
 
 ### Request
 
