@@ -61,7 +61,7 @@ A collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md)
 
 ## JSON representation
 
-The following JSON representation shows the resource type
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
