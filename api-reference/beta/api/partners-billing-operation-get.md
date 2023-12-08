@@ -141,7 +141,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Get operation is still running
+### Example 3: Get operation is still running
 
 #### Request
 
@@ -180,5 +180,3 @@ Content-Type: application/json
   "lastActionDateTime": "2023-03-09T08:37:48.5046691Z"
 }
 ```
-
-
