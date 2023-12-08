@@ -1,6 +1,6 @@
 ---
 title: dayNote resource type
-description: A piece of text that communicates a note relevant for a specific day on a teams schedule.
+description: Represents a piece of text that communicates a note relevant for a specific day on a teams schedule.
 author: fmcgurrenw
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A piece of text that communicates a note relevant for a specific day on a teams schedule.
+Represents a piece of text that communicates a note relevant for a specific day on a Teams schedule.
 
 ## Methods
 |Method|Return type|Description|
@@ -27,16 +27,16 @@ A piece of text that communicates a note relevant for a specific day on a teams 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|ID of the dayNote.|
+|id|String|ID of the day note.|
 |dayNoteDate|Date|The date of the day note.|
-|draftDayNote|[itemBody](../resources/itembody.md)|The draft version of this dayNote that is viewable by managers. Only contentType text is supported.|
-|sharedDayNote|[itemBody](../resources/itembody.md)|The shared version of this dayNote that is viewable by both employees and managers. Only contentType text is supported.|
+|draftDayNote|[itemBody](../resources/itembody.md)|The draft version of this day note that is viewable by managers. Only contentType text is supported.|
+|sharedDayNote|[itemBody](../resources/itembody.md)|The shared version of this day note that is viewable by both employees and managers. Only contentType text is supported.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following JSON representation shows the resource type
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
