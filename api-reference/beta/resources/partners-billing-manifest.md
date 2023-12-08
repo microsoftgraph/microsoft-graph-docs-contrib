@@ -58,7 +58,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "blobCount": "Int32",
-  "blobs": [{"@odata.type": "microsoft.graph.partners.billing.blob"}]
+  "blobs": [{"@odata.type": "microsoft.graph.partners.billing.blob"}],
   "createdDateTime": "String (timestamp)",
   "dataFormat": "String",
   "eTag": "String",
