@@ -1,5 +1,5 @@
 ---
-title: "plannerTaskCompletionRequirementDetails resource type"
+title: "plannerApprovalRequirement resource type"
 description: "**TODO: Add Description**"
 author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.
 doc_type: resourcePageType
 ---
 
-# plannerTaskCompletionRequirementDetails resource type
+# plannerApprovalRequirement resource type
 
 Namespace: microsoft.graph
 
@@ -18,8 +18,7 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|approvalRequirement|[plannerApprovalRequirement](../resources/plannerapprovalrequirement.md)|**TODO: Add Description**|
-|checklistRequirement|[plannerChecklistRequirement](../resources/plannerchecklistrequirement.md)|**TODO: Add Description**|
+|isApprovalRequired|Boolean|**TODO: Add Description**|
 
 ## Relationships
 None.
@@ -28,18 +27,13 @@ None.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.plannerTaskCompletionRequirementDetails"
+  "@odata.type": "microsoft.graph.plannerApprovalRequirement"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.plannerTaskCompletionRequirementDetails",
-  "checklistRequirement": {
-    "@odata.type": "microsoft.graph.plannerChecklistRequirement"
-  },
-  "approvalRequirement": {
-    "@odata.type": "microsoft.graph.plannerApprovalRequirement"
-  }
+  "@odata.type": "#microsoft.graph.plannerApprovalRequirement",
+  "isApprovalRequired": "Boolean"
 }
 ```
 

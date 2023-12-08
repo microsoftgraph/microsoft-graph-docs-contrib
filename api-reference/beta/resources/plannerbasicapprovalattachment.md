@@ -1,5 +1,5 @@
 ---
-title: "plannerTaskCompletionRequirementDetails resource type"
+title: "plannerBasicApprovalAttachment resource type"
 description: "**TODO: Add Description**"
 author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.
 doc_type: resourcePageType
 ---
 
-# plannerTaskCompletionRequirementDetails resource type
+# plannerBasicApprovalAttachment resource type
 
 Namespace: microsoft.graph
 
@@ -15,11 +15,14 @@ Namespace: microsoft.graph
 
 **TODO: Add Description**
 
+
+Inherits from [plannerBaseApprovalAttachment](../resources/plannerbaseapprovalattachment.md).
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|approvalRequirement|[plannerApprovalRequirement](../resources/plannerapprovalrequirement.md)|**TODO: Add Description**|
-|checklistRequirement|[plannerChecklistRequirement](../resources/plannerchecklistrequirement.md)|**TODO: Add Description**|
+|approvalId|String|**TODO: Add Description**|
+|status|plannerApprovalStatus|**TODO: Add Description** Inherited from [plannerBaseApprovalAttachment](../resources/plannerbaseapprovalattachment.md).The possible values are: `requested`, `approved`, `rejected`, `cancelled`, `unknownFutureValue`.|
 
 ## Relationships
 None.
@@ -28,18 +31,14 @@ None.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.plannerTaskCompletionRequirementDetails"
+  "@odata.type": "microsoft.graph.plannerBasicApprovalAttachment"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.plannerTaskCompletionRequirementDetails",
-  "checklistRequirement": {
-    "@odata.type": "microsoft.graph.plannerChecklistRequirement"
-  },
-  "approvalRequirement": {
-    "@odata.type": "microsoft.graph.plannerApprovalRequirement"
-  }
+  "@odata.type": "#microsoft.graph.plannerBasicApprovalAttachment",
+  "status": "String",
+  "approvalId": "String"
 }
 ```
 
