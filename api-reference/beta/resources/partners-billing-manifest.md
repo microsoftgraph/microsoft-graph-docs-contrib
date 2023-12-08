@@ -13,7 +13,7 @@ Namespace: microsoft.graph.partners.billing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents metadata for the exported data. Use the metadata to get details of the file you want to download from an Azure Blob Storage.
+Represents metadata for the exported data. Use the metadata to get details of the file you want to download from an Azure Storage Blob.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -27,7 +27,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|blobCount|Int32|Total file count for this partner tenant ID.|
+|blobCount|Int32|The total file count for this partner tenant ID.|
 |blobs|[microsoft.graph.partners.billing.blob](../resources/partners-billing-blob.md) collection|A collection of blob objects that contain details of all the files for the partner tenant ID.|
 |createdDateTime|DateTimeOffset|The date and time when a manifest resource was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |dataFormat|String|The billing data file format. The possible value is: `compressedJSONLines`. Each blob is a compressed file and data in the file is in [JSON lines](https://jsonlines.org/) format. Decompress the file to access the data.|
