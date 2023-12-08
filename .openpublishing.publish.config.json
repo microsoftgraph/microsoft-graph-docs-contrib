@@ -72,6 +72,12 @@
       "branch_mapping": {}
     },
     {
+      "path_to_root": "concepts/sdks/snippets/php",
+      "url": "https://github.com/microsoftgraph/msgraph-snippets-php",
+      "branch": "main",
+      "branch_mapping": {}
+    },
+    {
       "path_to_root": "concepts/sdks/snippets/python",
       "url": "https://github.com/microsoftgraph/msgraph-snippets-python",
       "branch": "main",
