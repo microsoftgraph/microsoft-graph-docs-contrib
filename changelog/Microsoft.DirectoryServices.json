@@ -14953,7 +14953,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "serviceProvisioningErrors",
           "ChangeType": "Addition",
-          "Description": "Added the `serviceProvisioningErrors` property to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0) resource.",
+          "Description": "Added the **serviceProvisioningErrors** property to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0) resource.",
           "Target": "group"
         },
         {
@@ -14961,7 +14961,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "serviceProvisioningErrors",
           "ChangeType": "Addition",
-          "Description": "Added the `serviceProvisioningErrors` property to the [orgContact](https://learn.microsoft.com/en-us/graph/api/resources/orgContact?view=graph-rest-1.0) resource.",
+          "Description": "Added the **serviceProvisioningErrors** property to the [orgContact](https://learn.microsoft.com/en-us/graph/api/resources/orgContact?view=graph-rest-1.0) resource.",
           "Target": "orgContact"
         },
         {
@@ -14969,7 +14969,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "serviceProvisioningErrors",
           "ChangeType": "Addition",
-          "Description": "Added the `serviceProvisioningErrors` property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
+          "Description": "Added the **serviceProvisioningErrors** property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
           "Target": "user"
         },
         {
@@ -15000,7 +15000,7 @@
       "Id": "9bb64b16-cc35-474d-8036-e8d5d1534fa1",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2023-08-08T12:54:51.8497231Z",
+      "CreatedDateTime": "2023-12-07T12:54:51.8497231Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     }
