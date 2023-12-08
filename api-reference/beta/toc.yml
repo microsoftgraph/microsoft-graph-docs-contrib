@@ -18850,7 +18850,7 @@ items:
                     href: api/daynote-get.md
                   - name: List
                     href: api/daynote-list.md
-                  - name: Approve
+                  - name: Update
                     href: api/daynote-update.md
                   - name: Delete
                     href: api/daynote-delete.md
