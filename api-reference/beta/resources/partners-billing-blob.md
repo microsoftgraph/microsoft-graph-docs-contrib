@@ -19,7 +19,7 @@ Represents a billing blob that contains exported data.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|The name of blob.|
+|name|String|The blob name.|
 |partitionValue|String|The partition that contains the file. A large partition is split into multiple files, each with the same **partitionValue**.|
 
 ## Relationships
