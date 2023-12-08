@@ -67,6 +67,6 @@ The following JSON representation shows the resource type.
   "partnerTenantId": "String",
   "rootDirectory": "String",
   "sasToken": "String",
-  "schemaVersion": "String",
+  "schemaVersion": "String"
 }
 ```
