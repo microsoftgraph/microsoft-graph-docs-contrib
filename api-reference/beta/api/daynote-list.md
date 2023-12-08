@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 Retrieve the properties and relationships of all [day notes](../resources/daynote.md) in a team.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 [!INCLUDE [permissions-table](../includes/permissions/daynote-list-permissions.md)]
 
@@ -26,6 +26,8 @@ GET /teams/{teamsId}/schedule/dayNotes
 
 ## Optional query parameters
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+The following example shows how to use the `$filter` parameter.
 
 ``` http
 GET /teams/{teamsId}/schedule/dayNotes?$filter=dayNoteDate eq 2023-11-3
