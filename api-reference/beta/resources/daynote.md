@@ -7,7 +7,7 @@ ms.prod: microsoft-teams
 doc_type: resourcePageType
 ---
 
-# dayNote resource type (preview)
+# dayNote resource type
 
 Namespace: microsoft.graph
 
