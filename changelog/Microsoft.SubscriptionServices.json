@@ -531,17 +531,7 @@
           "ChangeType": "Addition",
           "Description": "Added support for the delegated and application permission `OnlineMeetingRecording.Read.All` to the following operations of the [subscription](https:/learn.microsoft.com/graph/api/resources/subscription?view=graph-rest-1.0) resource: [LIST](https:/learn.microsoft.com/graph/api/subscription-list?view=graph-rest-1.0), [POST](https:/learn.microsoft.com/graph/api/subscription-post-subscriptions?view=graph-rest-1.0), [GET](https:/learn.microsoft.com/graph/api/subscription-get?view=graph-rest-1.0), [UPDATE](https:/learn.microsoft.com/graph/api/subscription-update?view=graph-rest-1.0), [DELETE](https:/learn.microsoft.com/graph/api/subscription-delete?view=graph-rest-1.0), and [reauthorize](https:/learn.microsoft.com/graph/api/subscription-reauthorize?view=graph-rest-1.0).",
           "Target": "subscription"
-        }
-      ],
-      "Id": "9e028122-3fa9-4297-8d3f-dd34a91e4367",
-      "Cloud": "prd",
-      "Version": "v1.0",
-      "CreatedDateTime": "2023-12-08T00:00:00",
-      "WorkloadArea": "Change notifications",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
+        },
         {
           "Id": "d9c669e9-66a4-4453-89e8-2628acdd1fbe",
           "ApiChange": "Permission",
@@ -551,7 +541,7 @@
           "Target": "subscription"
         }
       ],
-      "Id": "d9c669e9-66a4-4453-89e8-2628acdd1fbe",
+      "Id": "9e028122-3fa9-4297-8d3f-dd34a91e4367",
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2023-12-08T00:00:00",
