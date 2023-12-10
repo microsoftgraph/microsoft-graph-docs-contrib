@@ -15,6 +15,7 @@ Create an online meeting on behalf of a user.
 
 > [!TIP]
 > This API creates a standalone meeting that is not associated with any event on the user's calendar; therefore, meetings created via this API will not show on the user's calendar.
+> This doesn't create Teams Live Events
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
