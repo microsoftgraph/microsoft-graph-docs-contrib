@@ -16,11 +16,12 @@ Namespace: microsoft.graph.partners.billing
 Possible values for attributeSet type.
 
 ## Members
+
 |Member|Value|Description|
 |:---|:---|:---|
-|full|1|all attributes in exported data|
-|basic|2|only basic attributes in exported data|
-|unknownFutureValue|3|reserved for future use|
+|full|1|All attributes in the exported data.|
+|basic|2|Only basic attributes in the exported data.|
+|unknownFutureValue|3|Evolvable enumeration sentinel value. Don't use.|
 
 ### Attributes
 The billed or unbilled usage API response with the "full" or "basic" request parameter returns the following attributes:
