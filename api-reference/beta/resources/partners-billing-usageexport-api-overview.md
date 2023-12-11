@@ -31,7 +31,7 @@ Until you receive the success status, keep polling this API at a regular interva
 ## Sequence diagram
 The following diagram depicts the steps needed to download reconciliation data.
 
-![Export data sequence diagram](../../includes/lro_sequencediagram.png)
+![Export data sequence diagram](../includes/lro_sequencediagram.png)
 
 1. [Export billed usage data](../api/partners-billing-billedusage-export.md)
 2. [Export unbilled usage data](../api/partners-billing-unbilledusage-export.md)
