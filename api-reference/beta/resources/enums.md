@@ -4591,3 +4591,12 @@ Possible values for user account types (group membership), per Windows definitio
 |notConfigured|
 |noRecentDataCollected|
 |unknownFutureValue|
+
+### bookingPageAccessControl values 
+
+|Member|
+|:---|
+|unrestricted|
+|restrictedToOrganization|
+|unknownFutureValue|
+

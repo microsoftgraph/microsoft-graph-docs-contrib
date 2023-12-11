@@ -40,13 +40,17 @@ Represents a business in Microsoft Bookings. This is the top level object in the
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |address|[physicalAddress](physicaladdress.md)|The street address of the business. The **address** property, together with **phone** and **webSiteUrl**, appear in the footer of a business scheduling page.|
+|bookingPageSettings|[bookingPageSettings](../resources/bookingpagesettings.md)|**TODO: Add Description**|
 |businessHours|[bookingWorkHours](bookingworkhours.md) collection|The hours of operation for the business.|
 |businessType|String|The type of business.|
+|createdDateTime|DateTimeOffset|**TODO: Add Description**|
 |defaultCurrencyIso|String|The code for the currency that the business operates in on Microsoft Bookings.|
 |displayName|String|The name of the business, which interfaces with customers. This name appears at the top of the business scheduling page.|
 |email|String|The email address for the business.|
 |id|String|A unique programmatic identifier for the business. Read-only.|
 |isPublished|Boolean|The scheduling page has been made available to external customers. Use the **publish** and **unpublish** actions to set this property. Read-only.|
+|languageTag|String|**TODO: Add Description**|
+|lastUpdatedDateTime|DateTimeOffset|**TODO: Add Description**|
 |phone|String|The telephone number for the business. The **phone** property, together with **address** and **webSiteUrl**, appear in the footer of a business scheduling page.|
 |publicUrl|String|The URL for the scheduling page, which is set after you [publish](../api/bookingbusiness-publish.md) or [unpublish](../api/bookingbusiness-unpublish.md) the page. Read-only.|
 |schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|Specifies how bookings can be created for this business.|
@@ -74,22 +78,36 @@ The following is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.bookingBusiness"
 }-->
 
-```json
+``` json
 {
-  "address": {"@odata.type": "microsoft.graph.physicalAddress"},
-  "businessHours": [{"@odata.type": "microsoft.graph.bookingWorkHours"}],
-  "businessType": "String",
-  "defaultCurrencyIso": "String",
-  "displayName": "String",
-  "email": "String",
+  "@odata.type": "#microsoft.graph.bookingBusiness",
   "id": "String (identifier)",
-  "isPublished": true,
+  "displayName": "String",
+  "businessType": "String",
+  "address": {
+    "@odata.type": "microsoft.graph.physicalAddress"
+  },
   "phone": "String",
-  "publicUrl": "String",
-  "schedulingPolicy": {"@odata.type": "microsoft.graph.bookingSchedulingPolicy"},
-  "webSiteUrl": "String"
+  "email": "String",
+  "webSiteUrl": "String",
+  "defaultCurrencyIso": "String",
+  "businessHours": [
+    {
+      "@odata.type": "microsoft.graph.bookingWorkHours"
+    }
+  ],
+  "languageTag": "String",
+  "schedulingPolicy": {
+    "@odata.type": "microsoft.graph.bookingSchedulingPolicy"
+  },
+  "bookingPageSettings": {
+    "@odata.type": "microsoft.graph.bookingPageSettings"
+  },
+  "createdDateTime": "String (timestamp)",
+  "lastUpdatedDateTime": "String (timestamp)",
+  "isPublished": "Boolean",
+  "publicUrl": "String"
 }
-
 ```
 
 ## See also

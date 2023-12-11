@@ -29,9 +29,13 @@ Represents a customer of a [bookingBusiness](bookingbusiness.md).
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+|addresses|[physicalAddress](../resources/physicaladdress.md) collection|**TODO: Add Description**|
+|createdDateTime|DateTimeOffset|**TODO: Add Description**|
 |displayName|String|The name of the customer.|
 |emailAddress|String|The SMTP address of the customer.|
 |id|String| The ID of the customer. Read-only.|
+|lastUpdatedDateTime|DateTimeOffset|**TODO: Add Description**|
+|phones|[phone](../resources/phone.md) collection|**TODO: Add Description**|
 
 ## Relationships
 None
@@ -51,11 +55,23 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "@odata.type": "#microsoft.graph.bookingCustomer",
+  "id": "String (identifier)",
   "displayName": "String",
   "emailAddress": "String",
-  "id": "String (identifier)"
+  "addresses": [
+    {
+      "@odata.type": "microsoft.graph.physicalAddress"
+    }
+  ],
+  "phones": [
+    {
+      "@odata.type": "microsoft.graph.phone"
+    }
+  ],
+  "createdDateTime": "String (timestamp)",
+  "lastUpdatedDateTime": "String (timestamp)"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
