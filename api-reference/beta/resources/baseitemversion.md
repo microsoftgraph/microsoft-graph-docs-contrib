@@ -1,5 +1,5 @@
 ---
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 description: "Represents a previous version of an item or entity."
 title: "baseItemVersion resource type"
 ms.localizationpriority: medium
@@ -20,13 +20,13 @@ Represents a previous version of an item or entity.
 | Property                 | Type                                                 | Description                                                             |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
 | id                   | string                                               | The ID of the version. Read-only.                                       |
-| lastModifiedBy       | [identitySet](../resources/identityset.md)           | Identity of the user which last modified the version. Read-only.        |
+| lastModifiedBy       | [identitySet](../resources/identityset.md)           | Identity of the user that last modified the version. Read-only.        |
 | lastModifiedDateTime | [dateTimeOffset](../resources/timestamp.md)          | Date and time when the version was last modified. Read-only.                 |
 | publication          | [publicationFacet](../resources/publicationfacet.md) | Indicates the publication status of this particular version. Read-only. |
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.baseItemVersion", "@type.aka": "oneDrive.baseItemVersion" } -->
 

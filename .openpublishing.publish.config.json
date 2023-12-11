@@ -37,12 +37,19 @@
   "notification_subscribers": [],
   "sync_notification_subscribers": [],
   "branches_to_filter": [],
+  "git_repository_url_open_to_public_contributors": "https://github.com/microsoftgraph/microsoft-graph-docs-contrib",
   "git_repository_branch_open_to_public_contributors": "main",
   "need_preview_pull_request": true,
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft",
+      "branch": "main",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "azure_docs",
+      "url": "https://github.com/MicrosoftDocs/azure-docs/",
       "branch": "main",
       "branch_mapping": {}
     },
@@ -65,6 +72,12 @@
       "branch_mapping": {}
     },
     {
+      "path_to_root": "concepts/sdks/snippets/php",
+      "url": "https://github.com/microsoftgraph/msgraph-snippets-php",
+      "branch": "main",
+      "branch_mapping": {}
+    },
+    {
       "path_to_root": "concepts/sdks/snippets/python",
       "url": "https://github.com/microsoftgraph/msgraph-snippets-python",
       "branch": "main",
@@ -79,6 +92,12 @@
     {
       "path_to_root": "concepts/includes/connecting-external-content/snippets",
       "url": "https://github.com/microsoftgraph/msgraph-search-connector-sample",
+      "branch": "main",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "azure-reference-other",
+      "url": "https://github.com/MicrosoftDocs/azure-reference-other",
       "branch": "main",
       "branch_mapping": {}
     }
@@ -106,6 +125,7 @@
     "redirects/.openpublishing.redirection.0522.json",
     "redirects/.openpublishing.redirection.0423.json",
     "redirects/.openpublishing.redirection.0523.json",
+    "redirects/.openpublishing.redirection.1023.json",
     "redirects/.openpublishing.redirection.changedapi.json"
   ]
 }

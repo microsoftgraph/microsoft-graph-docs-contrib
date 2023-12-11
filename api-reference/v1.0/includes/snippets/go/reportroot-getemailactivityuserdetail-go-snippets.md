@@ -15,7 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Reports().GetEmailActivityUserDetail(period='{period}')().Get(context.Background(), nil)
+period := "{period}"
+graphClient.Reports().GetEmailActivityUserDetailWithPeriod(&period).Get(context.Background(), nil)
 
 
 ```

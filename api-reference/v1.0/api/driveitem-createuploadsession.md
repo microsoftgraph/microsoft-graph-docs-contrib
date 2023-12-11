@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 title: "driveItem: createUploadSession"
 ms.localizationpriority: high
 ms.prod: "sharepoint"
@@ -11,31 +11,42 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Create an upload session to allow your app to upload files up to the maximum file size.
-An upload session allows your app to upload ranges of the file in sequential API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.
+An upload session allows your app to upload ranges of the file in sequential API requests. Upload sessions also allow the transfer to resume if a connection is dropped while the upload is in progress.
 
-To upload a file using an upload session, there are two steps:
+To upload a file using an upload session:
 
 1. [Create an upload session](#create-an-upload-session)
 2. [Upload bytes to the upload session](#upload-bytes-to-the-upload-session)
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    |
-|Application | Sites.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "driveitem_createuploadsession" } -->
+[!INCLUDE [permissions-table](../includes/permissions/driveitem-createuploadsession-permissions.md)]
 
 ## Create an upload session
 
 To begin a large file upload, your app must first request a new upload session.
-This creates a temporary storage location where the bytes of the file will be saved until the complete file is uploaded.
-Once the last byte of the file has been uploaded the upload session is completed and the final file is shown in the destination folder.
-Alternatively, you can defer final creation of the file in the destination until you explicitly make a request to complete the upload, by setting the `deferCommit` property in the request arguments.
+This request creates a temporary storage location where the bytes of the file are saved until the complete file is uploaded.
+When the last byte of the file is uploaded, the upload session is completed and the final file is shown in the destination folder.
+Alternatively, you can defer final creation of the file in the destination until you explicitly make a request to complete the upload, by setting the **deferCommit** property in the request arguments.
 
 ### HTTP request
+
+To upload a new file, you must provide both the parent ID and the new file name in the request. However, an update only requires the ID of the item that will be updated.
+
+#### Create new file
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST /me/drive/items/{parentItemId}:/{fileName}:/createUploadSession
+```
+
+#### Update existing file
 
 <!-- { "blockType": "ignored" } -->
 
@@ -43,17 +54,23 @@ Alternatively, you can defer final creation of the file in the destination until
 POST /drives/{driveId}/items/{itemId}/createUploadSession
 POST /groups/{groupId}/drive/items/{itemId}/createUploadSession
 POST /me/drive/items/{itemId}/createUploadSession
-POST /me/drive/items/{itemId}:/{fileName}:/createUploadSession
+POST /me/drive/items/{parentItemId}:/{fileName}:/createUploadSession
 POST /sites/{siteId}/drive/items/{itemId}/createUploadSession
 POST /users/{userId}/drive/items/{itemId}/createUploadSession
 ```
 
+### Request headers
+
+| Name       | Value | Description                                                                                                                                                            |
+|:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| *if-match* | etag  | If this request header is included and the eTag (or cTag) provided doesn't match the current etag on the item, a `412 Precondition Failed` error response is returned. |
+| *if-none-match* | etag | If this request header is included and the eTag (or cTag) provided matches the current etag on the item, a `412 Precondition Failed` error response is returned. |
+
 ### Request body
 
-No request body is required.
-However, you can specify properties in the request body providing additional data about the file being uploaded and customizing the semantics of the upload operation.
+No request body is required. However, you can specify properties in the request body to provide more information about the file being uploaded and to customize the semantics of the upload operation.
 
-For example, the `item` property allows setting the following parameters:
+For example, the **item** property allows setting the following parameters:
 <!-- { "blockType": "ignored" } -->
 ```json
 {
@@ -64,7 +81,7 @@ For example, the `item` property allows setting the following parameters:
 }
 ```
 
-The following example controls the behavior if the filename is already taken, and also specifies that the final file should not be created until an explicit completion request is made:
+The following example controls the behavior if the filename is already taken. The example also specifies that the final file shouldn't be created until an explicit completion request is made.
 
 <!-- { "blockType": "ignored" } -->
 ```json
@@ -80,18 +97,18 @@ The following example controls the behavior if the filename is already taken, an
 
 | Name       | Value | Description                                                                                                                                                            |
 |:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *if-match* | etag  | If this request header is included and the eTag (or cTag) provided does not match the current etag on the item, a `412 Precondition Failed` error response is returned. |
+| *if-match* | etag  | If this request header is included and the eTag (or cTag) provided doesn't match the current etag on the item, a `412 Precondition Failed` error response is returned. |
 
 ## Parameters
 
 | Parameter   | Type                                                                           | Description                                                                                           |
 |:------------|:-------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------|
-| deferCommit | Boolean                                                                        | If set to `true`, the final creation of the file in the destination will require an explicit request. |
+| deferCommit | Boolean                                                                        | If set to `true`, the final creation of the file in the destination requires an explicit request. |
 | item        | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | Data about the file being uploaded.                                                                   |
 
 ### Request
 
-The response to this request will provide the details of the newly created [uploadSession](../resources/uploadsession.md), which includes the URL used for uploading the parts of the file. 
+The response to this request provides the details of the newly created [uploadSession](../resources/uploadsession.md), which includes the URL used for uploading the parts of the file.
 
 >**Note:** The {item-path} must contain the name of the item that's specified in the request body.
 
@@ -115,7 +132,7 @@ The response to this request, if successful, will provide the details for where 
 
 This resource provides details about where the byte range of the file should be uploaded and when the upload session expires.
 
-If the `fileSize` parameter is specified and exceeds the available quota, a `507 Insufficent Storage` response will be returned and the upload session will not be created.
+If the `fileSize` parameter is specified and exceeds the available quota, a `507 Insufficent Storage` response is returned and the upload session won't be created.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession",
        "optionalProperties": [ "nextExpectedRanges" ]  } -->
@@ -136,14 +153,15 @@ To upload the file, or a portion of the file, your app makes a PUT request to th
 You can upload the entire file, or split the file into multiple byte ranges, as long as the maximum bytes in any given request is less than 60 MiB.
 
 The fragments of the file must be uploaded sequentially in order.
-Uploading fragments out of order will result in an error.
+Uploading fragments out of order results in an error.
 
-**Note:** If your app splits a file into multiple byte ranges, the size of each byte range **MUST** be a multiple of 320 KiB (327,680 bytes). 
-Using a fragment size that does not divide evenly by 320 KiB will result in errors committing some files.
+>**Note:** If your app splits a file into multiple byte ranges, the size of each byte range **MUST** be a multiple of 320 KiB (327,680 bytes).
+
+Using a fragment size that doesn't divide evenly by 320 KiB results in errors committing some files.
 
 ### Example
 
-In this example, the app is uploading the first 26 bytes of a 128 byte file.
+In this example, the app is uploading the first 26 bytes of a 128-byte file.
 
 * The **Content-Length** header specifies the size of the current request.
 * The **Content-Range** header indicates the range of bytes in the overall file that this request represents.
@@ -164,7 +182,7 @@ Content-Range: bytes 0-25/128
 
 ### Response
 
-When the request is complete, the server will respond with `202 Accepted` if there are more byte ranges that need to be uploaded.
+When the request is complete, the server responds with `202 Accepted` if there are more byte ranges that need to be uploaded.
 
 <!-- { "blockType": "ignored"} -->
 
@@ -179,12 +197,12 @@ Content-Type: application/json
 ```
 
 Your app can use the **nextExpectedRanges** value to determine where to start the next byte range.
-You may see multiple ranges specified, indicating parts of the file that the server has not yet received. 
+You may see multiple ranges specified, indicating parts of the file that the server hasn't yet received.
 This is useful if you need to resume a transfer that was interrupted and your client is unsure of the state on the service.
 
-You should always determine the size of your byte ranges according to the best practices below. 
-Do not assume that **nextExpectedRanges** will return ranges of proper size for a byte range to upload.
-The **nextExpectedRanges** property indicates ranges of the file that have not been received and not a pattern for how your app should upload the file.
+You should always determine the size of your byte ranges according to the best practices below.
+Don't assume that **nextExpectedRanges** will return ranges of proper size for a byte range to upload.
+The **nextExpectedRanges** property indicates ranges of the file that haven't been received and not a pattern for how your app should upload the file.
 
 <!-- { "blockType": "ignored"} -->
 
@@ -203,11 +221,11 @@ Content-Type: application/json
 
 ## Remarks
 
-* The `nextExpectedRanges` property won't always list all of the missing ranges.
-* On successful fragment writes, it will return the next range to start from (eg. "523-").
-* On failures when the client sent a fragment the server had already received, the server will respond with `HTTP 416 Requested Range Not Satisfiable`. 
+* The `nextExpectedRanges` property doesn't always list all of the missing ranges.
+* On successful fragment writes, it will return the next range to start from (for example "523-").
+* On failures when the client sent a fragment the server had already received, the server responds with `HTTP 416 Requested Range Not Satisfiable`.
   You can [request upload status](#resuming-an-in-progress-upload) to get a more detailed list of missing ranges.
-* Including the Authorization header when issuing the `PUT` call may result in a `HTTP 401 Unauthorized` response. The Authorization header and bearer token should only be sent when issuing the `POST` during the first step. It should be not be included when issuing the `PUT`.
+* If you include the Authorization header when issuing the `PUT` call, it may result in an `HTTP 401 Unauthorized` response. Only send the Authorization header and bearer token when issuing the `POST` during the first step. Don't include it when you issue the `PUT` call.
 
 ## Completing a file
 
@@ -218,7 +236,7 @@ If `deferCommit` is true, you can explicitly complete the upload in two ways:
 - After the final byte range of the file is PUT to the upload URL, send a final PUT request in the same way that you would [handle upload errors](#handle-upload-errors) (currently only supported on OneDrive Personal).
 
 
-When the upload is completed, the server will respond to the final request with an `HTTP 201 Created` or `HTTP 200 OK`.
+When the upload is completed, the server responds to the final request with an `HTTP 201 Created` or `HTTP 200 OK`.
 The response body will also include the default property set for the **driveItem** representing the completed file.
 
 <!-- { "blockType": "ignored" } -->
@@ -284,7 +302,7 @@ Content-Type: application/json
 {
   "error":
   {
-    "code": "upload_name_conflict",
+    "code": "nameAlreadyExists",
     "message": "Another file exists with the same name as the uploaded session. You can redirect the upload session to use a new filename by calling PUT with the new metadata and @microsoft.graph.sourceUrl attribute.",
   }
 }
@@ -292,12 +310,12 @@ Content-Type: application/json
 
 ## Cancel the upload session
 
-To cancel an upload session send a DELETE request to the upload URL.
+To cancel an upload session, send a DELETE request to the upload URL.
 This cleans up the temporary file holding the data previously uploaded.
 This should be used in scenarios where the upload is aborted, for example, if the user cancels the transfer.
 
 Temporary files and their accompanying upload session are automatically cleaned up after the **expirationDateTime** has passed.
-Temporary files may not be deleted immedately after the expiration time has elapsed.
+Temporary files might not be deleted immediately after the expiration time has elapsed.
 
 ### Request
 
@@ -337,7 +355,7 @@ Query the status of the upload by sending a GET request to the `uploadUrl`.
 ```http
 GET https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF86633784148bb98a1zjcUhf7b0mpUadahs
 ```
-The server will respond with a list of missing byte ranges that need to be uploaded and the expiration time for the upload session.
+The server responds with a list of missing byte ranges that need to be uploaded and the expiration time for the upload session.
 
 > [!NOTE]
 > * To upload large files using SDKs see [Upload large files using the Microsoft Graph SDKs](/graph/sdks/large-file-upload).
@@ -360,9 +378,9 @@ Now that your app knows where to start the upload from, resume the upload by fol
 
 ## Handle upload errors
 
-When the last byte range of a file is uploaded, it is possible for an error to occur. 
+When the last byte range of a file is uploaded, it's possible for an error to occur.
 This can be due to a name conflict or quota limitation being exceeded.
-The upload session will be preserved until the expiration time, which allows your app to recover the upload by explicitly committing the upload session.
+The upload session is preserved until the expiration time, which allows your app to recover the upload by explicitly committing the upload session.
 
 To explicitly commit the upload session, your app must make a PUT request with a new **driveItem** resource that will be used when committing the upload session.
 This new request should correct the source of error that generated the original upload error.
@@ -385,7 +403,7 @@ If-Match: {etag or ctag}
 
 ### Response
 
-If the file can be committed using the new metadata, an `HTTP 201 Created` or `HTTP 200 OK` response will be returned with the Item metadata for the uploaded file.
+If the file can be committed using the new metadata, an `HTTP 201 Created` or `HTTP 200 OK` response is returned with the Item metadata for the uploaded file.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -409,15 +427,15 @@ Content-Type: application/json
   * `503 Service Unavailable`
   * `504 Gateway Timeout`
 * Use an exponential back off strategy if any 5xx server errors are returned when resuming or retrying upload requests.
-* For other errors, you should not use an exponential back off strategy but limit the number of retry attempts made.
+* For other errors, you shouldn't use an exponential back off strategy but limit the number of retry attempts made.
 * Handle `404 Not Found` errors when doing resumable uploads by starting the entire upload over. This indicates the upload session no longer exists.
 * Use resumable file transfers for files larger than 10 MiB (10,485,760 bytes).
-* A byte range size of 10 MiB for stable high speed connections is optimal. For slower or less reliable connections you may get better results from a smaller fragment size. The recommended fragment size is between 5-10 MiB.
+* A byte range size of 10 MiB for stable high speed connections is optimal. For slower or less reliable connections you might get better results from a smaller fragment size. The recommended fragment size is between 5-10 MiB.
 * Use a byte range size that is a multiple of 320 KiB (327,680 bytes). Failing to use a fragment size that is a multiple of 320 KiB can result in large file transfers failing after the last byte range is uploaded.
 
 ## Error responses
 
-See the [Error Responses][error-response] topic for details about
+See the [Error Responses][error-response] article for details about
 how errors are returned.
 
 [error-response]: /graph/errors

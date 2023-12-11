@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Create a new [macOSLobApp](../resources/intune-apps-macoslobapp.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -78,8 +80,8 @@ The following table shows the properties that are required when you create the m
 |childApps|[macOSLobChildApp](../resources/intune-apps-macoslobchildapp.md) collection|List of ComplexType macOSLobChildApp objects. Represents the apps expected to be installed by the package.|
 |md5HashChunkSize|Int32|The chunk size for MD5 hash. This is '0' or empty if the package was uploaded directly. If the Intune App Wrapping Tool is used to create a .intunemac, this value can be found inside the Detection.xml file.|
 |md5Hash|String collection|The MD5 hash codes. This is empty if the package was uploaded directly. If the Intune App Wrapping Tool is used to create a .intunemac, this value can be found inside the Detection.xml file.|
-|ignoreVersionDetection|Boolean|When TRUE, indicates that the app's version will NOT be used to detect if the app is installed on a device. When FALSE, indicates that the app's version will be used to detect if the app is installed on a device. Set this to true for apps that use a self update feature.|
-|installAsManaged|Boolean|When TRUE, indicates that the app will be installed as managed (requires macOS 11.0 and other managed package restrictions). When FALSE, indicates that the app will be installed as unmanaged.|
+|ignoreVersionDetection|Boolean|When TRUE, indicates that the app's version will NOT be used to detect if the app is installed on a device. When FALSE, indicates that the app's version will be used to detect if the app is installed on a device. Set this to true for apps that use a self update feature. The default value is FALSE.|
+|installAsManaged|Boolean|When TRUE, indicates that the app will be installed as managed (requires macOS 11.0 and other managed package restrictions). When FALSE, indicates that the app will be installed as unmanaged. The default value is FALSE.|
 
 
 
@@ -93,7 +95,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1714
+Content-length: 1734
 
 {
   "@odata.type": "#microsoft.graph.macOSLobApp",
@@ -137,7 +139,8 @@ Content-length: 1714
     "v10_15": true,
     "v11_0": true,
     "v12_0": true,
-    "v13_0": true
+    "v13_0": true,
+    "v14_0": true
   },
   "buildNumber": "Build Number value",
   "versionNumber": "Version Number value",
@@ -163,7 +166,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1886
+Content-Length: 1906
 
 {
   "@odata.type": "#microsoft.graph.macOSLobApp",
@@ -210,7 +213,8 @@ Content-Length: 1886
     "v10_15": true,
     "v11_0": true,
     "v12_0": true,
-    "v13_0": true
+    "v13_0": true,
+    "v14_0": true
   },
   "buildNumber": "Build Number value",
   "versionNumber": "Version Number value",

@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Update the properties of a [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -56,7 +58,7 @@ The following table shows the properties that are required when you create the [
 |certificateUploadStatus|String|The certificate upload status.|
 |certificateUploadFailureReason|String|The reason the certificate upload failed.|
 |certificateSerialNumber|String|Certificate serial number. This property is read-only.|
-|certificate|String|Not yet documented|
+|certificate|String||
 
 
 

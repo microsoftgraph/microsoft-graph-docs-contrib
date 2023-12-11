@@ -4,20 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = OrganizationalBrandingLocalization()
-request_body.background_color = '#00000F'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.id = 'fr-FR'
+request_body = OrganizationalBrandingLocalization(
+	background_color = "#00000F",
+	id = "fr-FR",
+	sign_in_page_text = " ",
+)
 
-request_body.sign_in_page_text = ' '
-
-
-
-
-result = await client.organization.by_organization_id('organization-id').branding.localizations.post(request_body = request_body)
+result = await graph_client.organization.by_organization_id('organization-id').branding.localizations.post(request_body)
 
 
 ```

@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-
-await client.policies.feature_rollout_policies.by_feature_rollout_policie_id('featureRolloutPolicy-id').applie_to.by_applie_to_id('directoryObject-id').ref.delete()
+await graph_client.policies.feature_rollout_policies.by_feature_rollout_policy_id('featureRolloutPolicy-id').applies_to.by_directory_object_id('directoryObject-id').ref.delete()
 
 
 ```

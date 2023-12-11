@@ -1,7 +1,7 @@
 ---
 title: "organizationalBrandingLocalization resource type"
 description: "Contains details of the organization's branding localizations."
-author: "AlexanderMars"
+author: "quievey"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
@@ -44,7 +44,7 @@ Inherits from [organizationalBrandingProperties](../resources/organizationalbran
 | customResetItNowText | String | A string to replace the default "reset it now" hyperlink text on the sign-in form. This text must be in Unicode format and not exceed 256 characters. <br/><br/>**DO NOT USE:** Customization of the "reset it now" hyperlink text is currently not supported. Inherited from [organizationalBrandingProperties](organizationalbrandingproperties.md). |
 | customTermsOfUseText | String | A string to replace the the default "Terms of Use" hyperlink text in the footer. This text must be in Unicode format and not exceed 256 characters. Inherited from [organizationalBrandingProperties](organizationalbrandingproperties.md). |
 | customTermsOfUseUrl | String | A custom URL to replace the default URL of the "Terms of Use" hyperlink in the footer. This URL must be in ASCII format or non-ASCII characters must be URL encoded, and not exceed 128characters. Inherited from [organizationalBrandingProperties](organizationalbrandingproperties.md). |
-| favicon | Stream | A custom icon (favicon) to replace a default Microsoft product favicon on an Azure AD tenant. Inherited from [organizationalBrandingProperties](organizationalbrandingproperties.md). |
+| favicon | Stream | A custom icon (favicon) to replace a default Microsoft product favicon on a Microsoft Entra tenant. Inherited from [organizationalBrandingProperties](organizationalbrandingproperties.md). |
 | faviconRelativeUrl | String | A relative url for the favicon above that is combined with a CDN base URL from the **cdnList** to provide the version served by a CDN. Read-only. Inherited from [organizationalBrandingProperties](organizationalbrandingproperties.md). |
 | headerBackgroundColor | String | The RGB color to apply to customize the color of the header. Inherited from [organizationalBrandingProperties](organizationalbrandingproperties.md). |
 | headerLogo | Stream | A company logo that appears in the header of the sign-in page. The allowed types are PNG or JPEG not larger than 36 × 245 pixels. We recommend using a transparent image with no padding around the logo. Inherited from [organizationalBrandingProperties](organizationalbrandingproperties.md). |

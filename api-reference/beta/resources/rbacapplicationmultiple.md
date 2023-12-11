@@ -3,6 +3,7 @@ title: "rbacApplicationMultiple resource type"
 description: "Role management navigation property"
 ms.localizationpriority: medium
 author: "DougKirschner"
+ms.reviewer: msodsrbac
 ms.prod: "directory-management"
 doc_type: "resourcePageType"
 ---

@@ -4,7 +4,7 @@ description: "The SharePoint API in Microsoft Graph supports the following core 
 ms.localizationpriority: high
 ms.prod: "sharepoint"
 doc_type: conceptualPageType
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 ---
 
 # Working with SharePoint sites in Microsoft Graph

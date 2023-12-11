@@ -4,26 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = EducationFeedbackOutcome()
-request_body.@odata_type = '#microsoft.graph.educationFeedbackOutcome'
+graph_client = GraphServiceClient(credentials, scopes)
 
-feedback = EducationFeedback()
-feedbacktext = EducationItemBody()
-feedbacktext.content = 'This is feedback for the assignment as a whole.'
+request_body = EducationFeedbackOutcome(
+	odata_type = "#microsoft.graph.educationFeedbackOutcome",
+	feedback = EducationFeedback(
+		text = EducationItemBody(
+			content = "This is feedback for the assignment as a whole.",
+			content_type = BodyType.Text,
+		),
+	),
+)
 
-feedbacktext.contenttype(BodyType.Text('bodytype.text'))
-
-
-feedback.text = feedbacktext
-
-request_body.feedback = feedback
-
-
-
-result = await client.education.classes.by_classe_id('educationClass-id').assignments.by_assignment_id('educationAssignment-id').submissions.by_submission_id('educationSubmission-id').outcomes.by_outcome_id('educationOutcome-id').patch(request_body = request_body)
+result = await graph_client.education.classes.by_education_class_id('educationClass-id').assignments.by_education_assignment_id('educationAssignment-id').submissions.by_education_submission_id('educationSubmission-id').outcomes.by_education_outcome_id('educationOutcome-id').patch(request_body)
 
 
 ```

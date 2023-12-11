@@ -13,19 +13,18 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 Copy a file to a default content location in a [content type][contentType]. The file can then be added as a default file or template via a POST operation.
 
-## Permissions  
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+## Permissions
 
-  
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type | Permissions (from least to most privileged) |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All  |
-|Delegated (personal Microsoft account) | Not supported. |
-|Application | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
 
-  
+
+<!-- { "blockType": "permissions", "name": "contenttype_copytodefaultcontentlocation" } -->
+[!INCLUDE [permissions-table](../includes/permissions/contenttype-copytodefaultcontentlocation-permissions.md)]
+
+
 
 ## HTTP request
 
@@ -35,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-POST /sites/id/contentTypes/id/copyToDefaultContentLocation 
+POST /sites/{siteId}/contentTypes/{contentTypeId}/copyToDefaultContentLocation
 ```
 
 ## Request headers
@@ -71,7 +70,7 @@ If successful, this call returns a `204 No Content` response.
 }
 -->
 ```http
-POST https://graph.microsoft.com/beta/sites/{id}/contentTypes/{contentTypeId}/copyToDefaultContentLocation 
+POST https://graph.microsoft.com/beta/sites/{id}/contentTypes/{contentTypeId}/copyToDefaultContentLocation
 Content-Type: application/json
 
 {
@@ -87,6 +86,10 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/contenttype-copytodefaultcontentlocation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/contenttype-copytodefaultcontentlocation-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -124,6 +127,6 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-  
+
 
 [contentType]: ../resources/contentType.md

@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = EntitlementManagementSettings()
-request_body.external_user_lifecycle_action = 'None'
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = EntitlementManagementSettings(
+	external_user_lifecycle_action = "None",
+)
 
-
-
-result = await client.identity_governance.entitlement_management.settings.patch(request_body = request_body)
+result = await graph_client.identity_governance.entitlement_management.settings.patch(request_body)
 
 
 ```

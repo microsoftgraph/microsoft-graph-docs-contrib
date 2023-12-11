@@ -17,14 +17,16 @@ Namespace: microsoft.graph
 
 Create a new [depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -76,6 +78,7 @@ The following table shows the properties that are required when you create the d
 |configurationWebUrl|Boolean|URL for setup assistant login Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |enabledSkipKeys|String collection|enabledSkipKeys contains all the enabled skip keys as strings Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |enrollmentTimeAzureAdGroupIds|Guid collection|EnrollmentTimeAzureAdGroupIds contains list of enrollment time Azure Group Ids to be associated with profile Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|waitForDeviceConfiguredConfirmation|Boolean|Indicates if the device will need to wait for configured confirmation Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md)|Indicates the iTunes pairing mode. Possible values are: `disallow`, `allow`, `requiresCertificate`.|
 |managementCertificates|[managementCertificateWithThumbprint](../resources/intune-enrollment-managementcertificatewiththumbprint.md) collection|Management certificates for Apple Configurator|
 |restoreFromAndroidDisabled|Boolean|Indicates if Restore from Android is disabled|
@@ -118,7 +121,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentProfiles
 Content-type: application/json
-Content-length: 2526
+Content-length: 2574
 
 {
   "@odata.type": "#microsoft.graph.depIOSEnrollmentProfile",
@@ -153,6 +156,7 @@ Content-length: 2526
   "enrollmentTimeAzureAdGroupIds": [
     "7f64eb6c-eb6c-7f64-6ceb-647f6ceb647f"
   ],
+  "waitForDeviceConfiguredConfirmation": true,
   "iTunesPairingMode": "allow",
   "managementCertificates": [
     {
@@ -196,7 +200,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2575
+Content-Length: 2623
 
 {
   "@odata.type": "#microsoft.graph.depIOSEnrollmentProfile",
@@ -232,6 +236,7 @@ Content-Length: 2575
   "enrollmentTimeAzureAdGroupIds": [
     "7f64eb6c-eb6c-7f64-6ceb-647f6ceb647f"
   ],
+  "waitForDeviceConfiguredConfirmation": true,
   "iTunesPairingMode": "allow",
   "managementCertificates": [
     {

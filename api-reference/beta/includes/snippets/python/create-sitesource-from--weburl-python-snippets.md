@@ -4,19 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = SiteSource()
-site = Site()
-site.web_url = 'https://m365x809305.sharepoint.com/sites/Retail'
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = SiteSource(
+	site = Site(
+		web_url = "https://m365x809305.sharepoint.com/sites/Retail",
+	),
+)
 
-request_body.site = site
-
-
-
-result = await client.security.cases.ediscovery_cases.by_ediscovery_case_id('ediscoveryCase-id').legal_holds.by_legal_hold_id('ediscoveryHoldPolicy-id').site_sources.post(request_body = request_body)
+result = await graph_client.security.cases.ediscovery_cases.by_ediscovery_case_id('ediscoveryCase-id').legal_holds.by_ediscovery_hold_policy_id('ediscoveryHoldPolicy-id').site_sources.post(request_body)
 
 
 ```

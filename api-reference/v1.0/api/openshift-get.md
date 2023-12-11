@@ -13,15 +13,14 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of an [openshift](../resources/openshift.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Schedule.Read.All, Group.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Schedule.Read.All, Schedule.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "openshift_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/openshift-get-permissions.md)]
 
 > **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
 
@@ -35,7 +34,7 @@ GET /teams/{id}/schedule/openShifts/{openShiftId}
 
 ## Optional query parameters
 
-This method does not support OData query parameters to customize the response.
+This method doesn't support OData query parameters to customize the response.
  
 ## Request headers
 
@@ -46,7 +45,7 @@ This method does not support OData query parameters to customize the response.
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -56,7 +55,7 @@ If successful, this method returns a `200 OK` response code and the requested [o
 
 ### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -105,7 +104,7 @@ GET https://graph.microsoft.com/v1.0/teams/3d88b7a2-f988-4f4b-bb34-d66df66af126/
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

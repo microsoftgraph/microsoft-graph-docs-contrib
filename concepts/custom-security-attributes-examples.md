@@ -12,7 +12,7 @@ ms.date: 02/14/2023
 
 # Manage custom security attribute assignments
 
-[Custom security attributes](/graph/api/resources/custom-security-attributes-overview) in Azure Active Directory (Azure AD) are business-specific attributes (key-value pairs) that you can define and assign to Azure AD objects. These attributes can be used to store information, categorize objects, or enforce fine-grained access control over specific Azure resources through Azure attribute-based access control (Azure ABAC).
+[Custom security attributes](/graph/api/resources/custom-security-attributes-overview) in Microsoft Entra ID are business-specific attributes (key-value pairs) that you can define and assign to Microsoft Entra objects. These attributes can be used to store information, categorize objects, or enforce fine-grained access control over specific Azure resources through Azure attribute-based access control (Azure ABAC).
 
 Custom security attributes are supported for users and service principals only. This article provides examples of how to assign, update, list, or remove different types of custom security attributes for users and applications using Microsoft Graph.
 
@@ -21,12 +21,12 @@ Custom security attributes are supported for users and service principals only. 
 - Create custom security attributes. For more information about how to define and manage custom security attribute definitions, see [Overview of custom security attributes using Microsoft Graph](/graph/api/resources/custom-security-attributes-overview).
 - For delegated scenarios, the calling must be assigned the following permissions and administrative roles.
   - To assign, update, or remove:
-    - Azure AD roles: [Attribute Assignment Administrator](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json#attribute-assignment-administrator)
+    - Microsoft Entra roles: [Attribute Assignment Administrator](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json#attribute-assignment-administrator)
     - Microsoft Graph permissions:
         - Users: CustomSecAttributeAssignment.ReadWrite.All and User.Read.All
         - Service principals: CustomSecAttributeAssignment.ReadWrite.All and Application.Read.All
   - To read:
-      - Azure AD roles: [Attribute Assignment Reader](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json#attribute-reader) or [Attribute Assignment Administrator](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json#attribute-assignment-administrator)
+      - Microsoft Entra roles: [Attribute Assignment Reader](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json#attribute-reader) or [Attribute Assignment Administrator](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json#attribute-assignment-administrator)
       - Microsoft Graph permissions:
           - Users: CustomSecAttributeAssignment.Read.All and User.Read.All
           - Service principals: CustomSecAttributeAssignment.Read.All and Application.Read.All
@@ -35,7 +35,7 @@ Custom security attributes are supported for users and service principals only. 
 
 ### Example 1: Assign a custom security attribute with a string value to a user
 
-The following example shows how to use the [Update user](/graph/api/user-update?view=graph-rest-beta&preserve-view=true) API to assign a custom security attribute with a string value to a user.
+The following example shows how to use the [Update user](/graph/api/user-update) API to assign a custom security attribute with a string value to a user.
 
 - Attribute set: `Engineering`
 - Attribute: `ProjectDate`
@@ -90,7 +90,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/customsecurityattribute-assign-user-string-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -109,7 +109,7 @@ HTTP/1.1 204 No Content
 
 ### Example 2: Assign a custom security attribute with a string value to a service principal
 
-The following example shows how to use the [Update user](/graph/api/user-update?view=graph-rest-beta&preserve-view=true) API to assign a custom security attribute with a string value to a service principal.
+The following example shows how to use the [Update servicePrincipal](/graph/api/serviceprincipal-update) API to assign a custom security attribute with a string value to a service principal.
 
 - Attribute set: `Engineering`
 - Attribute: `ProjectDate`
@@ -183,7 +183,7 @@ HTTP/1.1 204 No Content
 
 ### Example 3: Assign a custom security attribute with a multi-string value to a user
 
-The following example shows how to use the [Update user](/graph/api/user-update?view=graph-rest-beta&preserve-view=true) API to assign a custom security attribute with a multi-string value to a user.
+The following example shows how to use the [Update user](/graph/api/user-update) API to assign a custom security attribute with a multi-string value to a user.
 
 - Attribute set: `Engineering`
 - Attribute: `Project`
@@ -258,7 +258,7 @@ HTTP/1.1 204 No Content
 
 ### Example 4: Assign a custom security attribute with an integer value to a user
 
-The following example shows how to use the [Update user](/graph/api/user-update?view=graph-rest-beta&preserve-view=true) API to assign a custom security attribute with an integer value to a user.
+The following example shows how to use the [Update user](/graph/api/user-update) API to assign a custom security attribute with an integer value to a user.
 
 - Attribute set: `Engineering`
 - Attribute: `NumVendors`
@@ -333,7 +333,7 @@ HTTP/1.1 204 No Content
 
 ### Example 5: Assign a custom security attribute with a multi-integer value to a user
 
-The following example shows how to use the [Update user](/graph/api/user-update?view=graph-rest-beta&preserve-view=true) API to assign a custom security attribute with a multi-integer value to a user.
+The following example shows how to use the [Update user](/graph/api/user-update) API to assign a custom security attribute with a multi-integer value to a user.
 
 - Attribute set: `Engineering`
 - Attribute: `CostCenter`
@@ -408,7 +408,7 @@ HTTP/1.1 204 No Content
 
 ### Example 6: Assign a custom security attribute with a Boolean value to a user
 
-The following example shows how to use the [Update user](/graph/api/user-update?view=graph-rest-beta&preserve-view=true) API to assign a custom security attribute with a Boolean value to a user.
+The following example shows how to use the [Update user](/graph/api/user-update) API to assign a custom security attribute with a Boolean value to a user.
 
 - Attribute set: `Engineering`
 - Attribute: `Certification`
@@ -484,7 +484,7 @@ HTTP/1.1 204 No Content
 
 ### Example 1: Update a custom security attribute assignment with an integer value for a user
 
-The following example shows how to use the [Update user](/graph/api/user-update?view=graph-rest-beta&preserve-view=true) API to update a custom security attribute assignment with an integer value for a user.
+The following example shows how to use the [Update user](/graph/api/user-update) API to update a custom security attribute assignment with an integer value for a user.
 
 - Attribute set: `Engineering`
 - Attribute: `NumVendors`
@@ -560,7 +560,7 @@ HTTP/1.1 204 No Content
 
 ### Example 2: Update a custom security attribute assignment with a Boolean value for a user
 
-The following example shows how to use the [Update user](/graph/api/user-update?view=graph-rest-beta&preserve-view=true) API to update a custom security attribute assignment with a Boolean value for a user.
+The following example shows how to use the [Update user](/graph/api/user-update) API to update a custom security attribute assignment with a Boolean value for a user.
 
 - Attribute set: `Engineering`
 - Attribute: `Certification`
@@ -636,7 +636,7 @@ HTTP/1.1 204 No Content
 
 ### Example 1: Get the custom security attribute assignments for a user
 
-The following example shows how to use the [Get user](/graph/api/user-get?view=graph-rest-beta&preserve-view=true) API to get the custom security attribute assignments for a user.
+The following example shows how to use the [Get user](/graph/api/user-get) API to get the custom security attribute assignments for a user.
 
 Attribute #1
 
@@ -758,7 +758,7 @@ Content-type: application/json
 
 ### Example 2: List all users with a custom security attribute assignment that equals a value
 
-The following example shows how to use the [List users](/graph/api/user-list?view=graph-rest-beta&preserve-view=true) API to list all users with a custom security attribute assignment that equals a value. The example retrieves users with a custom security attribute named `AppCountry` with a value that equals `Canada`. The filter value is case sensitive. You must add `ConsistencyLevel=eventual` in the request or the header. You must also include `$count=true` to ensure the request is routed correctly.
+The following example shows how to use the [List users](/graph/api/user-list) API to list all users with a custom security attribute assignment that equals a value. The example retrieves users with a custom security attribute named `AppCountry` with a value that equals `Canada`. The filter value is case sensitive. You must add `ConsistencyLevel=eventual` in the request or the header. You must also include `$count=true` to ensure the request is routed correctly.
 
 User #1
 
@@ -875,7 +875,7 @@ HTTP/1.1 200 OK
 
 ### Example 3: List all users with a custom security attribute assignment that starts with a value
 
-The following example shows how to use the [List users](/graph/api/user-list?view=graph-rest-beta&preserve-view=true) API to list all users with a custom security attribute assignment that starts with a value. The example retrieves users with a custom security attribute named `EmployeeId` with a value that starts with `GS`. The filter value is case sensitive. You must add `ConsistencyLevel=eventual` in the request or the header. You must also include `$count=true` to ensure the request is routed correctly.
+The following example shows how to use the [List users](/graph/api/user-list) API to list all users with a custom security attribute assignment that starts with a value. The example retrieves users with a custom security attribute named `EmployeeId` with a value that starts with `GS`. The filter value is case sensitive. You must add `ConsistencyLevel=eventual` in the request or the header. You must also include `$count=true` to ensure the request is routed correctly.
 
 User #1
 
@@ -928,7 +928,7 @@ ConsistencyLevel: eventual
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/customsecurityattribute-filter-users-starts-with-value-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -971,7 +971,7 @@ HTTP/1.1 200 OK
 
 ### Example 4: List all users with a custom security attribute assignment that does not equal a value
 
-The following example shows how to use the [List users](/graph/api/user-list?view=graph-rest-beta&preserve-view=true) API to list all users with a custom security attribute assignment that does not equal a value. The example retrieves users with a custom security attribute named `AppCountry` with a value that does not equal `Canada`. The filter value is case sensitive. You must add `ConsistencyLevel=eventual` in the request or the header. You must also include `$count=true` to ensure the request is routed correctly.
+The following example shows how to use the [List users](/graph/api/user-list) API to list all users with a custom security attribute assignment that does not equal a value. The example retrieves users with a custom security attribute named `AppCountry` with a value that does not equal `Canada`. The filter value is case sensitive. You must add `ConsistencyLevel=eventual` in the request or the header. You must also include `$count=true` to ensure the request is routed correctly.
 
 User #1
 
@@ -1107,7 +1107,7 @@ HTTP/1.1 200 OK
 
 ### Example 1: Remove a single-valued custom security attribute assignment from a user
 
-The following example shows how to use the [Update user](/graph/api/user-update?view=graph-rest-beta&preserve-view=true) API to remove a custom security attribute assignment that supports a single value from a user.
+The following example shows how to use the [Update user](/graph/api/user-update) API to remove a custom security attribute assignment that supports a single value from a user.
 
 - Attribute set: `Engineering`
 - Attribute: `ProjectDate`
@@ -1180,7 +1180,7 @@ HTTP/1.1 204 No Content
 
 ### Example 2: Remove a multi-valued custom security attribute assignment from a user
 
-The following example shows how to use the [Update user](/graph/api/user-update?view=graph-rest-beta&preserve-view=true) API to remove a custom security attribute assignment that supports multiple values from a user.
+The following example shows how to use the [Update user](/graph/api/user-update) API to remove a custom security attribute assignment that supports multiple values from a user.
 
 - Attribute set: `Engineering`
 - Attribute: `Project`
@@ -1253,5 +1253,5 @@ HTTP/1.1 204 No Content
 
 ## Next steps
 
-- [Overview of custom security attributes using the Microsoft Graph API (Preview)](/graph/api/resources/custom-security-attributes-overview)
-- [What are custom security attributes in Azure AD?](/azure/active-directory/fundamentals/custom-security-attributes-overview)
+- [Overview of custom security attributes using the Microsoft Graph API](/graph/api/resources/custom-security-attributes-overview)
+- [What are custom security attributes in Microsoft Entra ID?](/azure/active-directory/fundamentals/custom-security-attributes-overview)

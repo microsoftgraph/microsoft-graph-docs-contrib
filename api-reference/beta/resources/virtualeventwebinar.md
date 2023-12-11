@@ -1,6 +1,6 @@
 ---
 title: "virtualEventWebinar resource type"
-description: "Information about a virtual event webinar."
+description: "Contains information about a virtual event webinar."
 author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -21,50 +21,52 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 
 | Method | Return Type |Description |
 | ------ | ----------- | ---------- |
+| [List webinars](../api/virtualeventsroot-list-webinars.md) | [virtualEventWebinar](../resources/virtualeventwebinar.md) collection | Get the list of all [virtualEventWebinar](../resources/virtualeventwebinar.md) objects created in a tenant. |
 | [Get virtualEventWebinar](../api/virtualeventwebinar-get.md) | [virtualEventWebinar](../resources/virtualeventwebinar.md) | Read the properties and relationships of a [virtualEventWebinar](../resources/virtualeventwebinar.md) object. |
+| [List by user role](../api/virtualeventwebinar-getbyuserrole.md) | [virtualEventWebinar](../resources/virtualeventwebinar.md) collection | Get a **virtualEventWebinar** collection where the signed-in user is either the organizer or a coorganizer. |
+| [List by user ID and role](../api/virtualeventwebinar-getbyuseridandrole.md) | [virtualEventWebinar](../resources/virtualeventwebinar.md) collection | Get a **virtualEventWebinar** collection where the specified user is either the organizer or a coorganizer. |
 
 ## Properties
 
 | Property | Type | Description |
 | -------- | ---- | ----------- |
 | audience | [meetingAudience](#meetingaudience-values) | To whom the webinar is visible. |
-| coOrganizers  | [communicationsUserIdentity](communicationsuseridentity.md) collection | Identity information of co-organizers of the webinar. |
+| coOrganizers  | [communicationsUserIdentity](communicationsuseridentity.md) collection | Identity information of coorganizers of the webinar. |
 | createdBy | [communicationsIdentitySet](communicationsidentityset.md) | Identity information of who created the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
-| description | String | Description of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
-| displayName | String | Display name of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
-| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | End time of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
-| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Start time of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
-| id | String | Unqiue identifier of the webinar. Inherited from [entity](../resources/entity.md).|
+| description | [itemBody](../resources/itembody.md) | Description of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
+| displayName | String | The display name of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
+| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | End time of the webinar. The **timeZone** property _can_ be set to any of the [time zones currently supported by Windows](/windows-hardware/manufacture/desktop/default-time-zones). Inherited from [virtualEvent](../resources/virtualevent.md). |
+| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Start time of the webinar. The **timeZone** property _can_ be set to any of the [time zones currently supported by Windows](/windows-hardware/manufacture/desktop/default-time-zones). Inherited from [virtualEvent](../resources/virtualevent.md). |
+| id | String | Unique identifier of the webinar. Inherited from [entity](../resources/entity.md).|
 | status | [virtualEventStatus](#virtualeventstatus-values) | Status of the webinar. |
 
 ### meetingAudience values
 
 | Value | Description |
 | ----- | ----------- |
-| everyone | This is a public webinar. A public webinar is visible to everyone. |
-| organization | This is a private webinar. A private webinar is visible only to those in the same organization as the organizer. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
+| everyone | The webinar is a public webinar. A public webinar is visible to everyone. |
+| organization | The webinar is a private webinar. A private webinar is visible only within the same organization as the organizer. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ### virtualEventStatus values
 
 | Value | Description |
 | ----- | ----------- |
 | draft | The webinar is in draft and only visible to the organizer. |
-| published | The webinar has been published by the organizer and visible to the audience. |
-| canceled | The webinar has been canceled by the organizer. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
+| published | The organizer published the webinar and it's visible to the audience. |
+| canceled | The organizer canceled the webinar. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 
 | Relationship | Type | Description |
 | ------------ | ---- | ----------- |
-| presenters | [virtualEventPresenter](../resources/virtualeventpresenter.md) collection | Presenters' information of the webinar. Inherited from [microsoft.graph.virtualEvent](../resources/virtualevent.md)|
-| registration | [virtualEventRegistration](../resources/virtualeventregistration.md) | Registration configuration of the webinar. |
-| sessions | [virtualEventSession](../resources/virtualeventsession.md)  collection | Sessions of the webinar. Inherited from [microsoft.graph.virtualEvent](../resources/virtualevent.md) |
+| registrations | [virtualEventRegistration](../resources/virtualeventregistration.md) collection | Registration records of the webinar. |
+| sessions | [virtualEventSession](../resources/virtualeventsession.md)  collection | Sessions of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -76,24 +78,14 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.virtualEventWebinar",
-  "id": "String (identifier)",
-  "status": "String",
-  "displayName": "String",
-  "description": "String",
-  "startDateTime": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
-  },
-  "endDateTime": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
-  },
-  "createdBy": {
-    "@odata.type": "microsoft.graph.communicationsIdentitySet"
-  },
   "audience": "String",
-  "coOrganizers": [
-    {
-      "@odata.type": "microsoft.graph.communicationsUserIdentity"
-    }
-  ]
+  "coOrganizers": [{"@odata.type": "microsoft.graph.communicationsUserIdentity"}],
+  "createdBy": {"@odata.type": "microsoft.graph.communicationsIdentitySet"},
+  "description": {"@odata.type": "microsoft.graph.itemBody"},
+  "displayName": "String",
+  "endDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+  "id": "String (identifier)",
+  "startDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+  "status": "String"
 }
 ```

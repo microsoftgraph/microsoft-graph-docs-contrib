@@ -4,24 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = RemoveMembersPostRequestBody()
-assets_updatable_asset1 = AzureADDevice()
-assets_updatable_asset1.@odata_type = '#microsoft.graph.windowsUpdates.azureADDevice'
+graph_client = GraphServiceClient(credentials, scopes)
 
-assets_updatable_asset1.id = 'String (identifier)'
+request_body = RemoveMembersPostRequestBody(
+	assets = [
+		AzureADDevice(
+			odata_type = "#microsoft.graph.windowsUpdates.azureADDevice",
+			id = "String (identifier)",
+		),
+	],
+)
 
-
-assetsArray []= assetsUpdatableAsset1;
-request_body.assets(assetsArray)
-
-
-
-
-
-await client.admin.windows.updates.updatable_assets.by_updatable_asset_id('updatableAsset-id').microsoft_graph_window_update_remove_members.post(request_body = request_body)
+await graph_client.admin.windows.updates.updatable_assets.by_updatable_asset_id('updatableAsset-id').microsoft_graph_windows_updates_remove_members.post(request_body)
 
 
 ```

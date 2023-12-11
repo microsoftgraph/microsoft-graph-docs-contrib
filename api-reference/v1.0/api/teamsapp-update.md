@@ -1,6 +1,6 @@
 ---
 title: "Update teamsApp"
-description: "Update an app previously published to a Teams app catalog. "
+description: "Update an app previously published to a Teams app catalog."
 author: "nkramer"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -15,19 +15,21 @@ Update an [app](../resources/teamsapp.md) previously published to the Microsoft 
 
 This API specifically updates an app published to your organization's app catalog (the tenant app catalog).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
->**Note:** Only global administrators can call this API.
-
 | Permission Type                        | Permissions (from least to most privileged)|
 |:----------------------------------     |:-------------|
 | Delegated (work or school account)     | AppCatalog.Submit, AppCatalog.ReadWrite.All, Directory.ReadWrite.All** |
-| Delegated (personal Microsoft account) | Not supported|
+| Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
-> **Note**: Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
+> **Note:**
+> * Only Global Administrators can call this API.
+> * Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
 
 ## HTTP request
 
@@ -41,7 +43,7 @@ POST /appCatalogs/teamsApps/{id}/appDefinitions
 
 |Property|Type|Description|
 |----|----|----|
-|requiresReview| Boolean | This optional query parameter triggers the app review process. Users with admin privileges can submit apps without triggering a review. If users want to request a review before publishing, they must set  `requiresReview` to `true`. A user who has admin privileges can opt not to set `requiresReview` or set the value to `false`  and the app will be considered approved and will publish instantly.|
+|requiresReview| Boolean | This optional query parameter triggers the app review process. Users with admin privileges can submit apps without triggering a review. If users want to request a review before publishing, they must set **requiresReview** to `true`. A user who has admin privileges can opt not to set **requiresReview** or set the value to `false` and the app will be considered approved and will publish instantly.|
 
 ## Request headers
 
@@ -65,6 +67,8 @@ If successful, this method returns a `204 No Content` response code.
 ### Example 1: Update an application previously published to the Microsoft Teams app catalog
 
 #### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -97,6 +101,8 @@ For details about the Teams application zip file, see [Create app package](/micr
 
 #### Response
 
+The following example shows the response.
+
 <!-- {
   "blockType": "response"
 }-->
@@ -108,6 +114,7 @@ HTTP/1.1 204 No Content
 
 #### Request
 
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -131,14 +138,14 @@ app.zip
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-teamsapp-v1-e2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 #### Response
 
-If successful, this method returns a `201 Created` response code and the key/value pair `publishingState`: `submitted` in the response body. *See* [teamsappdefinition](../resources/teamsappdefinition.md).
+If successful, this method returns a `201 Created` response code and the key-value pair `"publishingState": "submitted"` in the response body. For details, see [teamsAppDefinition](../resources/teamsappdefinition.md).
 
 <!-- {
   "blockType": "response",

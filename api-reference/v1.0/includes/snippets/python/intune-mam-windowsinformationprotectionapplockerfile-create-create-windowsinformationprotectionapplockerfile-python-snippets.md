@@ -4,24 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = WindowsInformationProtectionAppLockerFile()
-request_body.@odata_type = '#microsoft.graph.windowsInformationProtectionAppLockerFile'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.display_name = 'Display Name value'
+request_body = WindowsInformationProtectionAppLockerFile(
+	odata_type = "#microsoft.graph.windowsInformationProtectionAppLockerFile",
+	display_name = "Display Name value",
+	file_hash = "File Hash value",
+	file = base64.urlsafe_b64decode("ZmlsZQ=="),
+	version = "Version value",
+)
 
-request_body.file_hash = 'File Hash value'
-
-request_body.File(base64_decode('ZmlsZQ=='))
-
-request_body.version = 'Version value'
-
-
-
-
-result = await client.device_app_management.window_information_protection_policies.by_window_information_protection_policie_id('windowsInformationProtectionPolicy-id').exempt_app_locker_files.post(request_body = request_body)
+result = await graph_client.device_app_management.windows_information_protection_policies.by_windows_information_protection_policy_id('windowsInformationProtectionPolicy-id').exempt_app_locker_files.post(request_body)
 
 
 ```

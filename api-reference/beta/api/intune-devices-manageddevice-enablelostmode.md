@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Enable lost mode
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -54,9 +56,9 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|message|String|Not yet documented|
-|phoneNumber|String|Not yet documented|
-|footer|String|Not yet documented|
+|message|String||
+|phoneNumber|String||
+|footer|String||
 
 
 

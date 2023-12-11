@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [managedAppProtection](../resources/intune-mam-managedappprotection.md) objects.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -62,7 +64,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2991
+Content-Length: 3052
 
 {
   "value": [
@@ -126,7 +128,8 @@ Content-Length: 2991
       ],
       "appActionIfUnableToAuthenticateUser": "wipe",
       "dialerRestrictionLevel": "managedApps",
-      "gracePeriodToBlockAppsDuringOffClockHours": "PT2M4.5004762S"
+      "gracePeriodToBlockAppsDuringOffClockHours": "PT2M4.5004762S",
+      "protectedMessagingRedirectAppType": "anyManagedApp"
     }
   ]
 }

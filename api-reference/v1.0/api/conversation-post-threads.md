@@ -18,14 +18,13 @@ to that thread. Or, if you get the post ID, you can also [reply](post-reply.md) 
 
 Note: You can also [start a new conversation by first creating a thread](group-post-threads.md).
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "conversation_post_threads" } -->
+[!INCLUDE [permissions-table](../includes/permissions/conversation-post-threads-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -46,7 +45,7 @@ If successful, this method returns `201 Created` response code and [conversation
 
 ## Example
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -108,7 +107,7 @@ In the request body, supply a JSON representation of [conversationThread](../res
 ### Response
 
 If successful, this method returns `201 Created` response code and the `id` of the new thread in the response body.
-The following is an example of the response. 
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,

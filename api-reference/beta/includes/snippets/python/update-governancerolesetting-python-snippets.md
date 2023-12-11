@@ -4,24 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = GovernanceRoleSetting()
-admin_eligible_settings_governance_rule_setting1 = GovernanceRuleSetting()
-admin_eligible_settings_governance_rule_setting1.rule_identifier = 'ExpirationRule'
+graph_client = GraphServiceClient(credentials, scopes)
 
-admin_eligible_settings_governance_rule_setting1.setting = '{\"permanentAssignment\":false,\"maximumGrantPeriodInMinutes\":129600}'
+request_body = GovernanceRoleSetting(
+	admin_eligible_settings = [
+		GovernanceRuleSetting(
+			rule_identifier = "ExpirationRule",
+			setting = "{\"permanentAssignment\":false,\"maximumGrantPeriodInMinutes\":129600}",
+		),
+	],
+)
 
-
-adminEligibleSettingsArray []= adminEligibleSettingsGovernanceRuleSetting1;
-request_body.admineligiblesettings(adminEligibleSettingsArray)
-
-
-
-
-
-result = await client.privileged_access.by_privileged_acce_id('privilegedAccess-id').role_settings.by_role_setting_id('governanceRoleSetting-id').patch(request_body = request_body)
+result = await graph_client.privileged_access.by_privileged_access_id('privilegedAccess-id').role_settings.by_governance_role_setting_id('governanceRoleSetting-id').patch(request_body)
 
 
 ```

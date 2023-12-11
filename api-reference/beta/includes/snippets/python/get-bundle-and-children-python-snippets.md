@@ -4,19 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-query_params = DriveItemRequestBuilder.DriveItemRequestBuilderGetQueryParameters(
+graph_client = GraphServiceClient(credentials, scopes)
+
+query_params = DriveItemItemRequestBuilder.DriveItemItemRequestBuilderGetQueryParameters(
 		expand = ["children"],
 )
 
-request_configuration = DriveItemRequestBuilder.DriveItemRequestBuilderGetRequestConfiguration(
+request_configuration = DriveItemItemRequestBuilder.DriveItemItemRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
 )
 
-
-result = await client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').get(request_configuration = request_configuration)
+result = await graph_client.drives.by_drive_id('drive-id').items.by_drive_item_id('driveItem-id').get(request_configuration = request_configuration)
 
 
 ```

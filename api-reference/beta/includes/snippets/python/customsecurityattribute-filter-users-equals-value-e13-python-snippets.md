@@ -4,25 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = UsersRequestBuilder.UsersRequestBuilderGetQueryParameters(
-		count = true,
+		count = True,
 		select = ["id","displayName","customSecurityAttributes"],
 		filter = "customSecurityAttributes/Marketing/AppCountry eq 'Canada'",
 )
 
 request_configuration = UsersRequestBuilder.UsersRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
-headers = {
-			'ConsistencyLevel' : "eventual",
-}
-
 )
+request_configuration.headers.add("ConsistencyLevel", "eventual")
 
 
-result = await client.users.get(request_configuration = request_configuration)
+result = await graph_client.users.get(request_configuration = request_configuration)
 
 
 ```

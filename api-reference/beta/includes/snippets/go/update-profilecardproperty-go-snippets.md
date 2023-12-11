@@ -19,12 +19,14 @@ requestBody := graphmodels.NewProfileCardProperty()
 
 
 profileCardAnnotation := graphmodels.NewProfileCardAnnotation()
+displayName := "Cost Center"
+profileCardAnnotation.SetDisplayName(&displayName) 
 
 
 displayNameLocalization := graphmodels.NewDisplayNameLocalization()
-languageTag := "no-NB"
+languageTag := "nb-NO"
 displayNameLocalization.SetLanguageTag(&languageTag) 
-displayName := "Kostnads Senter"
+displayName := "Kostnadssenter"
 displayNameLocalization.SetDisplayName(&displayName) 
 
 localizations := []graphmodels.DisplayNameLocalizationable {
@@ -37,7 +39,7 @@ annotations := []graphmodels.ProfileCardAnnotationable {
 }
 requestBody.SetAnnotations(annotations)
 
-profileCardProperties, err := graphClient.Organization().ByOrganizationId("organization-id").Settings().ProfileCardProperties().ByProfileCardPropertyId("profileCardProperty-id").Patch(context.Background(), requestBody, nil)
+profileCardProperties, err := graphClient.Admin().People().ProfileCardProperties().ByProfileCardPropertyId("profileCardProperty-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

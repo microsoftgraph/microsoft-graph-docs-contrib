@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Perform On Demand Proactive Remediation
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -54,7 +56,7 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|scriptPolicyId|String|Not yet documented|
+|scriptPolicyId|String||
 
 
 

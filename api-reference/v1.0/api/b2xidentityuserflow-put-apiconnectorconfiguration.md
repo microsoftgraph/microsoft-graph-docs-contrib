@@ -11,17 +11,16 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update the [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) property in a [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) to enable or disable an API connector in a user flow. Each relationship of the [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) corresponds to a specific step in the user flow that can be configured to call an API connector. You configure an API connector for a particular step one at a time as shown below.
+Update the [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) property in a [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) to enable or disable an API connector in a user flow. Each relationship of the [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) corresponds to a specific step in the user flow that can be configured to call an API connector. You configure an API connector for a particular step 1 at a time as shown below.
+
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|IdentityUserFlow.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|IdentityUserFlow.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "b2xidentityuserflow_put_apiconnectorconfiguration" } -->
+[!INCLUDE [permissions-table](../includes/permissions/b2xidentityuserflow-put-apiconnectorconfiguration-permissions.md)]
 
 The work or school account needs to belong to one of the following roles:
 
@@ -56,11 +55,11 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1: Enable API connector for Post IDP Federation on sign up
+### Example 1: Enable API connector for Post IDP Federation on sign-up
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -104,6 +103,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/put-b2xuserflows-apiconnectorconfiguration-postfederationsignup-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/put-b2xuserflows-apiconnectorconfiguration-postfederationsignup-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/put-b2xuserflows-apiconnectorconfiguration-postfederationsignup-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -112,7 +115,7 @@ Content-Type: application/json
 
 #### Response 
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -123,11 +126,11 @@ The following is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Enable API connector for Post Attribute Collection on sign up
+### Example 2: Enable API connector for Post Attribute Collection on sign-up
 
 #### Request 
 
-The following is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -171,6 +174,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/put-b2xuserflows-apiconnectorconfiguration-postattributecollection-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/put-b2xuserflows-apiconnectorconfiguration-postattributecollection-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/put-b2xuserflows-apiconnectorconfiguration-postattributecollection-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -179,7 +186,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -190,11 +197,11 @@ The following is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 3: Disable an API connector for Post Attribute Collection on sign up
+### Example 3: Disable an API connector for Post Attribute Collection on sign-up
 
 #### Request 
 
-The following is an example of the request.
+Here's an example of the request.
 
 
 
@@ -237,6 +244,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/put-b2xuserflows-apiconnectorconfiguration-disable-postattributecollection-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/put-b2xuserflows-apiconnectorconfiguration-disable-postattributecollection-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/put-b2xuserflows-apiconnectorconfiguration-disable-postattributecollection-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -245,7 +256,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",

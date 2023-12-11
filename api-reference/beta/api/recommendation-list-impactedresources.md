@@ -1,9 +1,9 @@
 ---
 title: "List impactedResources"
 description: "Get the impacted resources for a recommendation."
-author: "hafowler"
+author: "ddeeps2610"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access"
+ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
 
@@ -14,24 +14,15 @@ Namespace: microsoft.graph
 
 Get the [impactedResource](../resources/impactedresource.md) objects for a [recommendation](../resources/recommendation.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|DirectoryRecommendations.Read.All, DirectoryRecommendations.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|DirectoryRecommendations.Read.All, DirectoryRecommendations.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "recommendation_list_impactedresources" } -->
+[!INCLUDE [permissions-table](../includes/permissions/recommendation-list-impactedresources-permissions.md)]
 
-For delegated scenarios, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
-- Global administrator
-- Global reader
-- Security administrator
-- Security operator
-- Security reader
-- Application administrator
-- Cloud application administrator
-- Reports reader
+[!INCLUDE [rbac-directory-recommendations-apis-read](../includes/rbac-for-apis/rbac-directory-recommendations-apis-read.md)]
 
 ## HTTP request
 
@@ -44,7 +35,7 @@ GET /directory/recommendations/{recommendationId}/impactedResources
 ```
 
 ## Optional query parameters
-This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. It also supports `$count` as a URL segment to retrieve the raw count of impacted resources. That is, `.../impactedResources/$count`. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -52,7 +43,7 @@ This method supports the `$select` OData query parameter to help customize the r
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -75,6 +66,10 @@ GET https://graph.microsoft.com/beta/directory/recommendations/0cb31920-84b9-471
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-impactedresource-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-impactedresource-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -104,7 +99,7 @@ GET https://graph.microsoft.com/beta/directory/recommendations/0cb31920-84b9-471
 ---
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

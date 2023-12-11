@@ -12,14 +12,13 @@ Namespace: microsoft.graph
 
 In PIM, request for a role eligibility for a principal through the [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) object. This operation allows both admins and eligible users to add, revoke, or extend eligible assignments.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|RoleEligibilitySchedule.ReadWrite.Directory|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|RoleManagement.ReadWrite.Directory|
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "rbacapplication_post_roleeligibilityschedulerequests" } -->
+[!INCLUDE [permissions-table](../includes/permissions/rbacapplication-post-roleeligibilityschedulerequests-permissions.md)]
 
 ## HTTP request
 
@@ -48,10 +47,10 @@ You can specify the following properties when creating an **unifiedRoleEligibili
 |appScopeId|String|Identifier of the app-specific scope when the role eligibility is scoped to an app. The scope of a role eligibility determines the set of resources for which the principal is eligible to access. App scopes are scopes that are defined and understood by this application only. Use `/` for tenant-wide app scopes. Use **directoryScopeId** to limit the scope to particular directory objects, for example, administrative units. Either **directoryScopeId** or **appScopeId** is required.|
 |directoryScopeId|String|Identifier of the directory object representing the scope of the role eligibility. The scope of an role eligibility determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use `/` for tenant-wide scope. Use **appScopeId** to limit the scope to an application only. Either **directoryScopeId** or **appScopeId** is required.|
 |isValidationOnly|Boolean|Determines whether the call is a validation or an actual call. Only set this property if you want to check whether an activation is subject to additional rules like MFA before actually submitting the request. Optional.|
-|justification|String|A message provided by users and administrators when create they create the **unifiedRoleEligibilityScheduleRequest** object. Optional when **action** is `adminRemove`. Whether this property is required or optional is also dependent on the [settings for the Azure AD role](../api/unifiedrolemanagementpolicy-list-rules.md).|
+|justification|String|A message provided by users and administrators when create they create the **unifiedRoleEligibilityScheduleRequest** object. Optional when **action** is `adminRemove`. Whether this property is required or optional is also dependent on the [settings for the Microsoft Entra role](../api/unifiedrolemanagementpolicy-list-rules.md).|
 |principalId|String|Identifier of the principal that has been granted the role eligibility. Required.|
 |roleDefinitionId|String|Identifier of the [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object that is being assigned to the principal. Required.|
-|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|The period of the role eligibility. Optional when **action** is `adminRemove`. The period of eligibility is dependent on the [settings of the Azure AD role](../api/unifiedrolemanagementpolicy-list-rules.md).|
+|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|The period of the role eligibility. Optional when **action** is `adminRemove`. The period of eligibility is dependent on the [settings of the Microsoft Entra role](../api/unifiedrolemanagementpolicy-list-rules.md).|
 |ticketInfo|[ticketInfo](../resources/ticketinfo.md)|Ticket details linked to the role eligibility request including details of the ticket number and ticket system. Optional|
 
 
@@ -237,7 +236,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response. The response object shows a previous role eligibility for a principal is `Revoked`. The principal will no longer see their previously eligible role.
+The following example shows the response. The response object shows a previous role eligibility for a principal is `Revoked`. The principal will no longer see their previously eligible role.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

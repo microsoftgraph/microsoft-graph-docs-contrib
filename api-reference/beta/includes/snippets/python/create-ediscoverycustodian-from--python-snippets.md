@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = EdiscoveryCustodian()
-request_body.email = 'AdeleV@contoso.com'
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = EdiscoveryCustodian(
+	email = "AdeleV@contoso.com",
+)
 
-
-
-result = await client.security.cases.ediscovery_cases.by_ediscovery_case_id('ediscoveryCase-id').custodians.post(request_body = request_body)
+result = await graph_client.security.cases.ediscovery_cases.by_ediscovery_case_id('ediscoveryCase-id').custodians.post(request_body)
 
 
 ```

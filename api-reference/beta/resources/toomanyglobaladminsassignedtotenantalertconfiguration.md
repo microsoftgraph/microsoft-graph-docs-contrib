@@ -1,6 +1,6 @@
 ---
 title: "tooManyGlobalAdminsAssignedToTenantAlertConfiguration resource type"
-description: "Represents an alert configuration that is triggered if too many accounts in the tenant are assigned the Global Administrator Azure AD role."
+description: "Represents an alert configuration that is triggered if too many accounts in the tenant are assigned the Global Administrator Microsoft Entra role."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an alert configuration that is triggered if too many accounts in the tenant are assigned the Global Administrator Azure AD role. [Global Administrator](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json#global-administrator) is the highest privileged role in Azure AD. If an account with global administrator privileges is compromised, the malicious actor has permissions for almost all actions in the tenant, which puts the whole system at risk.
+Represents an alert configuration that is triggered if too many accounts in the tenant are assigned the Global Administrator Microsoft Entra role. [Global Administrator](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json#global-administrator) is the highest privileged role in Microsoft Entra ID. If an account with global administrator privileges is compromised, the malicious actor has permissions for almost all actions in the tenant, which puts the whole system at risk.
 
 Triggered if two different criteria are met, and you can configure both of them. First, you need to reach a certain threshold of Global administrator role assignments. Second, a certain percentage of your total role assignments must be Global administrators. If you only meet one of these measurements, the alert doesn't appear.
 
@@ -28,7 +28,7 @@ Inherits from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrole
 |isEnabled|Boolean|`true` if the alert is enabled. Setting it to `false` disables PIM scanning the tenant to identify instances that trigger this alert. Inherited from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).|
 |percentageOfGlobalAdminsOutOfRolesThreshold|Int32|Threshold of the percentage of global administrators out of all the role assignments in the tenant. Triggers an alert if the percentage in the tenant reaches or crosses this threshold value.|
 |scopeId|String|The identifier of the scope to which the alert is related. Only `/` is supported to represent the tenant scope. Inherited from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md). Supports `$filter` (`eq`, `ne`).|
-|scopeType|String|The type of scope where the alert is created. `DirectoryRole` is the only currently supported scope type for Azure AD roles. Inherited from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).|
+|scopeType|String|The type of scope where the alert is created. `DirectoryRole` is the only currently supported scope type for Microsoft Entra roles. Inherited from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -57,4 +57,3 @@ The following is a JSON representation of the resource.
   "percentageOfGlobalAdminsOutOfRolesThreshold": "Integer"
 }
 ```
-

@@ -1,7 +1,8 @@
 ---
 title: "authenticationMethodConfigurations"
 description: "authenticationMethodConfigurations object."
-author: "mmcla"
+author: "jpettere"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
@@ -33,7 +34,7 @@ The following authentication methods are derived from the **authenticationMethod
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

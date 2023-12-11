@@ -4,20 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = UrlThreatSubmission()
-request_body.@odata_type = '#microsoft.graph.urlThreatSubmission'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.category(SubmissionCategory.Phishing('submissioncategory.phishing'))
+request_body = UrlThreatSubmission(
+	odata_type = "#microsoft.graph.urlThreatSubmission",
+	category = SubmissionCategory.Phishing,
+	web_url = "http://phishing.contoso.com",
+)
 
-request_body.web_url = 'http://phishing.contoso.com'
-
-
-
-
-result = await client.security.threat_submission.url_threats.post(request_body = request_body)
+result = await graph_client.security.threat_submission.url_threats.post(request_body)
 
 
 ```

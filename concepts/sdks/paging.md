@@ -11,6 +11,8 @@ author: DarrelMiller
 
 For performance reasons, collections of entities are often split into pages and each page is returned with a URL to the next page. The **PageIterator** class simplifies consuming of paged collections. **PageIterator** handles enumerating the current page and requesting subsequent pages automatically.
 
+Alternatively, you can use the `@odata.nextLink` property to [manually request subsequent pages](#manually-requesting-subsequent-pages).
+
 ## Request headers
 
 If you send any additional request headers in your initial request, those headers are not included by default in subsequent page requests. If those headers need to be sent on subsequent requests, you must set them explicitly.
@@ -35,9 +37,11 @@ The following example shows iterating over all the messages in a user's mailbox.
 ### [Java](#tab/java)
 
 > [!NOTE]
-> The Microsoft Graph Java SDK does not currently have a **PageIterator** class. Instead, you need to request each page as shown in the following code.
+> The Microsoft Graph Java SDK does not currently have a **PageIterator** class. You can [manually request subsequent pages](#manually-requesting-subsequent-pages).
 
-:::code language="java" source="./snippets/java/app/src/main/java/snippets/Paging.java" id="PagingSnippet":::
+### [PHP](#tab/PHP)
+
+:::code language="php" source="./snippets/php/snippets/Paging.php" id="PagingSnippet":::
 
 ### [TypeScript](#tab/typescript)
 
@@ -62,13 +66,46 @@ Some scenarios require stopping the iteration process in order to perform other 
 
 ### [Java](#tab/java)
 
-```java
-// not supported in java SDK
-```
+> [!NOTE]
+> The Microsoft Graph Java SDK does not currently have a **PageIterator** class. You can [manually request subsequent pages](#manually-requesting-subsequent-pages).
+
+### [PHP](#tab/PHP)
+
+:::code language="php" source="./snippets/php/snippets/Paging.php" id="ResumePagingSnippet":::
 
 ### [TypeScript](#tab/typescript)
 
 :::code language="typescript" source="./snippets/typescript/src/snippets/paging.ts" id="ResumePagingSnippet":::
+
+---
+<!-- markdownlint-enable MD024 -->
+
+## Manually requesting subsequent pages
+
+As an alternative to using the **PageIterator** class, you can manually check the response for an `@odata.nextLink` property and request the next page.
+
+<!-- markdownlint-disable MD024 -->
+### [C#](#tab/csharp)
+
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/Paging.cs" id="ManualPagingSnippet":::
+
+### [Go](#tab/go)
+
+:::code language="go" source="./snippets/go/src/snippets/paging.go" id="ImportSnippet":::
+
+:::code language="go" source="./snippets/go/src/snippets/paging.go" id="ManualPagingSnippet":::
+
+### [Java](#tab/java)
+
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/Paging.java" id="ManualPagingSnippet":::
+
+### [PHP](#tab/PHP)
+
+:::code language="php" source="./snippets/php/snippets/Paging.php" id="ManualPagingSnippet":::
+
+### [TypeScript](#tab/typescript)
+
+:::code language="typescript" source="./snippets/typescript/src/snippets/paging.ts" id="ManualPagingSnippet":::
 
 ---
 <!-- markdownlint-enable MD024 -->

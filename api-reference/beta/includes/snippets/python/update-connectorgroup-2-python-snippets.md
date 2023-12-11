@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = ConnectorGroup()
-request_body.name = 'name-value'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.region(ConnectorGroupRegion.Region-value('connectorgroupregion.region-value'))
+request_body = ConnectorGroup(
+	name = "name-value",
+	region = ConnectorGroupRegion.Nam,
+)
 
-
-
-
-result = await client.on_premise_publishing_profiles.by_on_premise_publishing_profile_id('onPremisesPublishingProfile-id').connector_groups.by_connector_group_id('connectorGroup-id').patch(request_body = request_body)
+result = await graph_client.on_premises_publishing_profiles.by_on_premises_publishing_profile_id('onPremisesPublishingProfile-id').connector_groups.by_connector_group_id('connectorGroup-id').patch(request_body)
 
 
 ```
