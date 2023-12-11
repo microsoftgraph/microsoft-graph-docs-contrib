@@ -28,9 +28,9 @@ The Microsoft identity platform performs identity and access management (IAM) on
 
 - An Azure account that has an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 - The Azure account must have permission to manage applications in Microsoft Entra ID. Any of the following Microsoft Entra roles include the required permissions:
-  - [Application administrator](/azure/active-directory/roles/permissions-reference?toc=/graph/toc.json#application-administrator)
-  - [Application developer](/azure/active-directory/roles/permissions-reference?toc=/graph/toc.json#application-developer)
-  - [Cloud application administrator](/azure/active-directory/roles/permissions-reference?toc=/graph/toc.json#cloud-application-administrator)
+  - [Application administrator](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json#application-administrator)
+  - [Application developer](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json#application-developer)
+  - [Cloud application administrator](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json#cloud-application-administrator)
 - Completion of the [Set up a tenant](/azure/active-directory/develop/quickstart-create-new-tenant) quickstart.
 
 ## Register an application

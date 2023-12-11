@@ -3,7 +3,7 @@ title: "recommendation resource type"
 description: "Represents a Microsoft Entra ID best practice or improvement action recommended by Microsoft for your Microsoft Entra tenant."
 author: "ddeeps2610"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
@@ -60,7 +60,7 @@ Inherits from [recommendationBase](../resources/recommendationbase.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|impactedResources|[impactedResource](../resources/impactedresource.md) collection|The list of directory objects associated with the [recommendation](../resources/recommendation.md). Inherited from [recommendationBase](../resources/recommendationbase.md). <br><br> Supports `$expand`.|
+|impactedResources|[impactedResource](../resources/impactedresource.md) collection|The list of directory objects associated with the [recommendation](../resources/recommendation.md). Inherited from [recommendationBase](../resources/recommendationbase.md).|
 
 ## JSON representation
 The following JSON representation shows the resource type.

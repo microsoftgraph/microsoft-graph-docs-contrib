@@ -15,7 +15,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Get the **userProcessingResult** resources for a [workflow](../resources/identitygovernance-workflow.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
