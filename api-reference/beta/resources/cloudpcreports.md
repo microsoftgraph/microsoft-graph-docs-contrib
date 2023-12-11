@@ -42,7 +42,7 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 |exportJobs|[cloudPcExportJob](../resources/cloudpcexportjob.md) collection|The export jobs created for downloading reports.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following example shows a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

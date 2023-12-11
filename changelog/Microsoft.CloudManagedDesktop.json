@@ -7,7 +7,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "getActionStatusReports",
                     "ChangeType": "Addition",
-                    "Description": "Added the [getActionStatusReports](https://learn.microsoft.com/en-us/graph/api/cloudPC-getactionstatusreports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcreports?view=graph-rest-beta) resource.",
+                    "Description": "Added the [getActionStatusReports](https://learn.microsoft.com/en-us/graph/api/cloudPcReports-getactionstatusreports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcreports?view=graph-rest-beta) resource.",
                     "Target": "cloudPC"
                 }
             ],

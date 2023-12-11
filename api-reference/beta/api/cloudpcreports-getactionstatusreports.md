@@ -56,7 +56,7 @@ The following table shows the parameters that can be used with this method.
 | groupBy   | String collection | Specifies how to group the reports. If used, must have the same content as the select parameter.|
 | orderBy   | String collection | Specifies the order by columns name. The default orderBy column is RequestDateTime.        |
 | skip      | Int32             | Number of records to skip.                                                                 |
-| top       | Int32             | The number of top records to return. If not defined the default top is 25 and max is 100.  |
+| top       | Int32             | The number of top records to return, if not defined the default top is 25 and max is 100.  |
 
 ## Response
 
@@ -66,7 +66,7 @@ If successful, this method returns a `200 OK` response code and a Stream object 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "cloudpcreports.getActionStatusReports"
@@ -87,7 +87,7 @@ Content-length: 199
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
