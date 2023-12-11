@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restore an archived [channel](../resources/channel.md). This restores users' ability to send messages and edit the channel. Channels are archived using the [archive](channel-archive.md) API.
+Restore an archived [channel](../resources/channel.md). This restores user's ability to send messages and edit the channel. Channels are archived using the [archive](channel-archive.md) API.
 
 Unarchiving is an async operation. A channel is unarchived once the async operation completes successfully, which may occur subsequent to a response from this API.
 
@@ -61,7 +61,7 @@ The following is an example of a request.
   "name": "unarchive_channel"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{team-id}/channels/{channel-id}/unarchive
+POST https://graph.microsoft.com/beta/teams/5crrrtrd5-e41c-4f18-ab8awfd-f36ca7dd11231de/channels/5ceebed5-o45u-334o-sve3-f36ca7dd31de/unarchive
 ```
 
 ---
@@ -75,7 +75,7 @@ The following is an example of a response.
 }-->
 ```http
 HTTP/1.1 202 Accepted
-Location: /teams/{team-id}/operations/{operation-id}
+Location: /teams/5crrrtrd5-e41c-4f18-ab8awfd-f36ca7dd11231de/operations/5cr4f18ab8awfdf36
 Content-Type: text/plain
 Content-Length: 0
 ```

@@ -15,13 +15,13 @@ Namespace: microsoft.graph
 
 Archive the specified [channel](../resources/channel.md).
 When a channel is archived, users can no longer send or like messages on the channel in the team, edit the channel's name or other settings, or in general make most changes to the channel.
-Membership changes to the channel continue to be allowed. A channel is archived by default if team is archived.
+Membership changes to the channel continue to be allowed. A channel is archived by default if team is archived. Deletion of archived channel is allowed.
 
 Archiving is an async operation. A channel is archived once the async operation completes successfully, which may occur subsequent to a response from this API.
 
 To archive a channel, the channel and [group](../resources/group.md) must have an owner.
 
-To restore a channel from its archived state, use the API to [unarchive](channel-unarchive.md). A channel can not be archived if team is archived.
+To restore a channel from its archived state, use the API to [unarchive](channel-unarchive.md). A channel can not be archived or unarchived if team is archived.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -52,7 +52,7 @@ In the request, you may _optionally_ include the `shouldSetSpoSiteReadOnlyForMem
     "shouldSetSpoSiteReadOnlyForMembers": true
 }
 ```
-This optional parameter defines whether to set permissions for team members to read-only on the SharePoint Online site associated with the team. Setting it to false or omitting the body altogether will result in this step being skipped.
+This optional parameter defines whether to set permissions for channel members to read-only on the SharePoint Online site associated with the team. Setting it to false or omitting the body altogether will result in this step being skipped.
 
 ## Response
 
@@ -68,7 +68,7 @@ The following is an example of a request.
   "name": "archive_channel"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{team-id}/channels/{channel-id}/archive
+POST https://graph.microsoft.com/beta/teams/5crrrtrd5-e41c-4f18-ab8awfd-f36ca7dd11231de/channels/5ceebed5-o45u-334o-sve3-f36ca7dd31de/archive
 ```
 
 ---
@@ -81,7 +81,7 @@ The following is an example of a response.
 }-->
 ```http
 HTTP/1.1 202 Accepted
-Location: /teams/{team-id}/operations/{operation-id}
+Location: /teams/5crrrtrd5-e41c-4f18-ab8awfd-f36ca7dd11231de/operations/5cr4f18ab8a238965287f36
 Content-Type: text/plain
 Content-Length: 0
 ```
