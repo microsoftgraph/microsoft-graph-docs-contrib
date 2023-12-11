@@ -17,8 +17,12 @@ Represents a notification for the creation, update, or deletion of a [participan
 
 | Property       | Type                                     | Description                                |
 |:---------------|:-----------------------------------------|:-------------------------------------------|
-| participants   | [participant](participant.md) collection | The collection of participants that were updated since the last roster update. |
 | sequenceNumber | Int64                                    | The sequence number for the roster update that is used to identify the notification order. |
+
+## Relationships
+| Relationship | Type |Description|
+|:---------------|:--------|:----------|
+| participants   | [participant](participant.md) collection | The collection of participants that were updated since the last roster update. |
 
 ## JSON representation
 
