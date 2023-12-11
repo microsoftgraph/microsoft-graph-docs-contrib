@@ -13,7 +13,7 @@ Namespace: microsoft.graph.partners.billing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an [operation](../resources/operation.md) object.
+Read the properties and relationships of an [operation](../resources/partners-billing-operation.md) object.
 
 ## Permissions
 
