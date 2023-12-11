@@ -30,32 +30,31 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|additionalInformation|String|**TODO: Add Description**|
-|anonymousJoinWebUrl|String|**TODO: Add Description**|
-|appointmentLabel|String|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
+|additionalInformation|String|Additional information that is sent to the customer when an appointment is confirmed.|
+|anonymousJoinWebUrl|String|The URL of the meeting to join anonymously.|
+|appointmentLabel|String|Custom label that can be stamped on this appointment by users|
+|createdDateTime|DateTimeOffset|The date, time and timezone when the appointment was created.	|
 |customerEmailAddress|String|The SMTP address of the [bookingCustomer](bookingcustomer.md) who is booking the appointment.|
 |customerId|String|The ID of the [bookingCustomer](bookingcustomer.md) for this appointment. If no ID is specified when an appointment is created, then a new **bookingCustomer** object is created. Once set, you should consider the **customerId** immutable.|
 |customerLocation|[location](location.md)|Represents location information for the [bookingCustomer](bookingcustomer.md) who is booking the appointment.|
 |customerName|String|The customer's name.|
 |customerNotes|String|Notes from the customer associated with this appointment. You can get the value only when reading this **bookingAppointment** by its ID. <br> You can set this property only when initially creating an appointment with a new customer. After that point, the value is computed from the customer represented by **customerId**.|
 |customerPhone|String|The customer's phone number.|
-|customers|[bookingCustomerInformationBase](../resources/bookingcustomerinformationbase.md) collection|**TODO: Add Description**|
-|customerTimeZone|String|**TODO: Add Description**|
+|customers|[bookingCustomerInformationBase](../resources/bookingcustomerinformationbase.md) collection|Bookings Customer|
+|customerTimeZone|String|The time zone of the customer. For a list of possible values, see [dateTimeTimeZone](dateTimeTimeZone.md).|
 |duration|Duration|The length of the appointment, denoted in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. |
 |end|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the appointment ends.|
-|filledAttendeesCount|Int32|**TODO: Add Description**|
+|filledAttendeesCount|Int32|The current number of customers in the appointment.|
 |id|String| The ID of the **bookingAppointment**. Read-only.|
 |invoiceAmount|Double|The billed amount on the invoice.|
 |invoiceDate|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone of the invoice for this appointment.|
 |invoiceId|String|The ID of the invoice.|
 |invoiceStatus|string| The status of the invoice. Possible values are: `draft`, `reviewing`, `open`, `canceled`, `paid`, `corrective`.|
 |invoiceUrl|String|The URL of the invoice in Microsoft Bookings.|
-|isLocationOnline|Boolean|**TODO: Add Description**|
-|joinWebUrl|String|**TODO: Add Description**|
-|lastUpdatedDateTime|DateTimeOffset|**TODO: Add Description**|
-|maximumAttendeesCount|Int32|**TODO: Add Description**|
-|onlineMeetingUrl|String|**TODO: Add Description**|
+|isLocationOnline|Boolean|True indicates that the appointment will be held online. Default value is false.|
+|joinWebUrl|String|The URL of the online meeting for the appointment.|
+|lastUpdatedDateTime|DateTimeOffset|The date, time and timezone when the booking business was last updated.|
+|maximumAttendeesCount|Int32|The maximum number of customers allowed in an appointment. If **maximumAttendeesCount** of the service is greater than 1, pass valid customer IDs while creating or updating an appointment. To create a customer, use the [Create bookingCustomer](../api/bookingbusiness-post-customers.md) operation.|
 |optOutOfCustomerEmail|Boolean|True indicates that the [bookingCustomer](bookingcustomer.md) for this appointment does not wish to receive a confirmation for this appointment.|
 |postBuffer|Duration|The amount of time to reserve after the appointment ends, for cleaning up, as an example. The value is expressed in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. |
 |preBuffer|Duration|The amount of time to reserve before the appointment begins, for preparation, as an example. The value is expressed in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.|
@@ -67,7 +66,7 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 |serviceLocation|[location](location.md)|The location where the service is delivered.|
 |serviceName|String|The name of the **bookingService** associated with this appointment.<br>This property is optional when creating a new appointment. If not specified, it is computed from the service associated with the appointment by the **serviceId** property.|
 |serviceNotes|String|Notes from a [bookingStaffMember](bookingstaffmember.md). The value of this property is available only when reading this **bookingAppointment** by its ID.|
-|smsNotificationsEnabled|Boolean|**TODO: Add Description**|
+|smsNotificationsEnabled|Boolean|True indicates SMS notifications will be sent to the customers for the appointment. Default value is false.|
 |staffMemberIds|String collection|The ID of each [bookingStaffMember](bookingstaffmember.md) who is scheduled in this appointment.|
 |start|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the appointment begins.|
 
@@ -97,7 +96,6 @@ The following is a JSON representation of the resource.
   "additionalInformation": "String",
   "appointmentLabel": "String",
   "isLocationOnline": "Boolean",
-  "onlineMeetingUrl": "String",
   "joinWebUrl": "String",
   "smsNotificationsEnabled": "Boolean",
   "customerId": "String",

@@ -33,10 +33,10 @@ Inherits from [bookingNamedEntity](../resources/bookingnamedentity.md).
 | :-------------- | :---------------- | :-------------------------------------------------------------------------------------------------------- |
 | answerInputType | answerInputType   | The expected answer type. The possible values are: `text`, `radioButton`, `unknownFutureValue`.     |
 | answerOptions   | String collection | List of possible answer values.                                                                    |
-| createdDateTime|DateTimeOffset|**TODO: Add Description**|
+| createdDateTime|DateTimeOffset|The date, time and timezone when the custom question was created.|
 | displayName     | String            | The question. Inherited from [bookingNamedEntity](../resources/bookingnamedentity.md). |
 | id              | String            | The ID of the custom question. Inherited from [entity](../resources/entity.md).                           |
-| lastUpdatedDateTime|DateTimeOffset|**TODO: Add Description**|
+| lastUpdatedDateTime|DateTimeOffset|The date, time and timezone when the custom question was last updated.|
 
 ## Relationships
 

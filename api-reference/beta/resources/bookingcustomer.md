@@ -29,13 +29,13 @@ Represents a customer of a [bookingBusiness](bookingbusiness.md).
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|addresses|[physicalAddress](../resources/physicaladdress.md) collection|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
+|addresses|[physicalAddress](../resources/physicaladdress.md) collection|Addresses associated with the customer, including home, business and other addresses.|
+|createdDateTime|DateTimeOffset|The date, time and timezone when the customer was created.|
 |displayName|String|The name of the customer.|
 |emailAddress|String|The SMTP address of the customer.|
 |id|String| The ID of the customer. Read-only.|
-|lastUpdatedDateTime|DateTimeOffset|**TODO: Add Description**|
-|phones|[phone](../resources/phone.md) collection|**TODO: Add Description**|
+|lastUpdatedDateTime|DateTimeOffset|The date, time and timezone when the customer was last updated.|
+|phones|[phone](../resources/phone.md) collection|Phone numbers associated with the customer, including home, business and mobile numbers.|
 
 ## Relationships
 None
