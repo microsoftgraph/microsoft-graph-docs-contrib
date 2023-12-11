@@ -11,51 +11,52 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
- [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
- 
-Represents a customer of a [bookingBusiness](bookingbusiness.md).
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+**TODO: Add Description**
+
+
+Inherits from [bookingPerson](../resources/bookingperson.md).
 
 ## Methods
-
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[List customers](../api/bookingbusiness-list-customers.md) | [bookingCustomer](bookingcustomer.md) collection | Get a list of **bookingCustomer** objects. |
-|[Create bookingCustomer](../api/bookingbusiness-post-customers.md) | [bookingCustomer](bookingcustomer.md) | Create a new **bookingCustomer** object. |
-|[Get bookingCustomer](../api/bookingcustomer-get.md) | [bookingCustomer](bookingcustomer.md) |Read the properties and relationships of a **bookingCustomer** object.|
-|[Update](../api/bookingcustomer-update.md) | None	|Update a **bookingCustomer** object. |
-|[Delete](../api/bookingcustomer-delete.md) | None |Delete a **bookingCustomer** object. |
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List bookingCustomer objects](../api/bookingbusiness-list-customers.md)|[bookingCustomer](../resources/bookingcustomer.md) collection|Get a list of the [bookingCustomer](../resources/bookingcustomer.md) objects and their properties.|
+|[Create bookingCustomer](../api/bookingbusiness-post-customers.md)|[bookingCustomer](../resources/bookingcustomer.md)|Create a new [bookingCustomer](../resources/bookingcustomer.md) object.|
+|[Get bookingCustomer](../api/bookingcustomer-get.md)|[bookingCustomer](../resources/bookingcustomer.md)|Read the properties and relationships of a [bookingCustomer](../resources/bookingcustomer.md) object.|
+|[Update bookingCustomer](../api/bookingcustomer-update.md)|[bookingCustomer](../resources/bookingcustomer.md)|Update the properties of a [bookingCustomer](../resources/bookingcustomer.md) object.|
+|[Delete bookingCustomer](../api/bookingbusiness-delete-customers.md)|None|Delete a [bookingCustomer](../resources/bookingcustomer.md) object.|
 
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|addresses|[physicalAddress](../resources/physicaladdress.md) collection|Addresses associated with the customer, including home, business and other addresses.|
-|displayName|String|The name of the customer.|
-|emailAddress|String|The SMTP address of the customer.|
-|id|String| The ID of the customer. Read-only.|
-|phones|[phone](../resources/phone.md) collection|Phone numbers associated with the customer, including home, business and mobile numbers.|
+|Property|Type|Description|
+|:---|:---|:---|
+|addresses|[physicalAddress](../resources/physicaladdress.md) collection|**TODO: Add Description**|
+|createdDateTime|DateTimeOffset|**TODO: Add Description**|
+|displayName|String|**TODO: Add Description** Inherited from [bookingNamedEntity](../resources/bookingnamedentity.md).|
+|emailAddress|String|**TODO: Add Description** Inherited from [bookingPerson](../resources/bookingperson.md).|
+|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
+|lastUpdatedDateTime|DateTimeOffset|**TODO: Add Description**|
+|phones|[phone](../resources/phone.md) collection|**TODO: Add Description**|
 
 ## Relationships
-None
-
+None.
 
 ## JSON representation
-
-The following is a JSON representation of the resource.
-
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.bookingCustomer"
-}-->
-
-```json
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.bookingCustomer",
+  "baseType": "microsoft.graph.bookingPerson",
+  "openType": false
+}
+-->
+``` json
 {
+  "@odata.type": "#microsoft.graph.bookingCustomer",
+  "id": "String (identifier)",
   "displayName": "String",
   "emailAddress": "String",
-  "id": "String (identifier)",
   "addresses": [
     {
       "@odata.type": "microsoft.graph.physicalAddress"
@@ -65,9 +66,10 @@ The following is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.phone"
     }
-  ]
+  ],
+  "createdDateTime": "String (timestamp)",
+  "lastUpdatedDateTime": "String (timestamp)"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
