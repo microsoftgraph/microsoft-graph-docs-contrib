@@ -1,6 +1,6 @@
 ---
 title: "virtualEndpoint: retrieveScopedPermissions"
-description: "Retrieve the authenticated user's effective scoped permissions and scope IDs."
+description: "Get the permissions and corresponding scope IDs for which the authenticated user's has access."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the authenticated user's effective scoped permissions and scope IDs, helping UX hIDe or disable content that the current user doesn't have access to.
+Get the permissions and corresponding scope IDs for which the authenticated user's has access.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -50,8 +50,8 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a collection of [cloudPcScopedPermission](../resources/cloudpcscopedpermission.md) objects in the response body.
-This API supports filter with permission, when no filter, this function returns all effective scoped permissions and scope Tag IDs of the authenticated user.
+If successful, this function returns a `200 OK` response code and a collection of [cloudPcScopedPermission](../resources/cloudpcscopedpermission.md) collection in the response body.
+This API supports filter with permission, when no filter, this function returns all permissions and scope Tag IDs of the authenticated user.
 
 ## Examples 1
 
