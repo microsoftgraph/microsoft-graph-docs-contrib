@@ -121,7 +121,7 @@ The following example shows the response for an operation that failed.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.failedOperation"
+  "@odata.type": "microsoft.graph.partners.billing.failedOperation"
 }
 -->
 ``` http
