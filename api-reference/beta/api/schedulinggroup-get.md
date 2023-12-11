@@ -1,7 +1,7 @@
 ---
 title: "Get schedulingGroup"
 description: "Retrieve the properties and relationships of a [schedulingGroup](../resources/schedulinggroup.md) by ID."
-author: "aaku"
+author: "shanemalone"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -119,6 +119,7 @@ Content-type: application/json
   "createdDateTime": "2019-03-12T22:10:38.242Z",
   "lastModifiedDateTime": "2019-03-12T22:10:38.242Z",
   "displayName": "Cashiers",
+  "code": "CashierCode",
   "isActive": true,
   "userIds": [
     "c5d0c76b-80c4-481c-be50-923cd8d680a1",
