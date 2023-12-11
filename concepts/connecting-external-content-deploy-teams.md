@@ -200,7 +200,7 @@ You will need to submit a PDF in the **Additional certification info** step. Mic
 Create a user account on your demo tenant that Microsoft can use to validate your Microsoft Graph connector. This can be done in the [Users section](https://admin.microsoft.com/Adminportal/Home?#/users/:/adduser) of the Microsoft 365 Admin Center. 
 Ensure that this new user account has a Copilot for Microsoft 365 license. 
 
-In this section of the PDF, provide the credentials and any applicable license keys for this new user account. This nformation is mandatory. To learn more about how to prepare the user account for validation, see [best practices for providing test notes](/microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/submission-checklist?tabs=desktop#compile-testing-instructions).
+In this section of the PDF, provide the credentials and any applicable license keys for this new user account. This information is mandatory. To learn more about how to prepare the user account for validation, see [best practices for providing test notes](/microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/submission-checklist?tabs=desktop#compile-testing-instructions).
 
 After Microsoft validates your app, you can revoke access to the user account.
 

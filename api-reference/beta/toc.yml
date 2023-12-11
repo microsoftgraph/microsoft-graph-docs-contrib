@@ -11847,44 +11847,6 @@ items:
                     href: api/directoryobject-delta.md
                   - name: Validate properties
                     href: api/directoryobject-validateproperties.md
-              - name: Directory recommendations (preview)
-                displayName: Recommendations, Azure AD recommendations
-                href: resources/recommendations-api-overview.md
-                items:
-                  - name: Recommendations
-                    items:
-                      - name: Recommendation
-                        href: resources/recommendation.md
-                      - name: List
-                        href: api/directory-list-recommendation.md
-                      - name: Get
-                        href: api/recommendation-get.md
-                      - name: Complete
-                        href: api/recommendation-complete.md
-                      - name: Dismiss
-                        href: api/recommendation-dismiss.md
-                      - name: Postpone
-                        href: api/recommendation-postpone.md
-                      - name: Reactivate
-                        href: api/recommendation-reactivate.md
-                      - name: Get tenant Secure Score
-                        href: api/recommendation-tenantsecurescores.md
-                  - name: Impacted resources
-                    items:
-                      - name: Impacted resource
-                        href: resources/impactedresource.md
-                      - name: List
-                        href: api/recommendation-list-impactedresources.md
-                      - name: Get
-                        href: api/impactedresource-get.md
-                      - name: Complete
-                        href: api/impactedresource-complete.md
-                      - name: Dismiss
-                        href: api/impactedresource-dismiss.md
-                      - name: Postpone
-                        href: api/impactedresource-postpone.md
-                      - name: Reactivate
-                        href: api/impactedresource-reactivate.md
               - name: Directory role
                 href: resources/directoryrole.md
                 items:
@@ -16130,6 +16092,44 @@ items:
         items:
           - name: Identity and access reports
             items:
+            - name: Microsoft Entra recommendations (preview)
+              displayName: Recommendations, Microsoft Entra recommendations
+              href: resources/recommendations-api-overview.md
+              items:
+                - name: Recommendations
+                  items:
+                    - name: Recommendation
+                      href: resources/recommendation.md
+                    - name: List
+                      href: api/directory-list-recommendation.md
+                    - name: Get
+                      href: api/recommendation-get.md
+                    - name: Complete
+                      href: api/recommendation-complete.md
+                    - name: Dismiss
+                      href: api/recommendation-dismiss.md
+                    - name: Postpone
+                      href: api/recommendation-postpone.md
+                    - name: Reactivate
+                      href: api/recommendation-reactivate.md
+                    - name: Get tenant Secure Score
+                      href: api/recommendation-tenantsecurescores.md
+                - name: Impacted resources
+                  items:
+                    - name: Impacted resource
+                      href: resources/impactedresource.md
+                    - name: List
+                      href: api/recommendation-list-impactedresources.md
+                    - name: Get
+                      href: api/impactedresource-get.md
+                    - name: Complete
+                      href: api/impactedresource-complete.md
+                    - name: Dismiss
+                      href: api/impactedresource-dismiss.md
+                    - name: Postpone
+                      href: api/impactedresource-postpone.md
+                    - name: Reactivate
+                      href: api/impactedresource-reactivate.md
             - name: Microsoft Entra activity reports
               items:
                 - name: Overview
@@ -18417,6 +18417,10 @@ items:
                     items:
                       - name: Get join link
                         href: api/virtualappointment-getvirtualappointmentjoinweburl.md
+                      - name: Send SMS notification
+                        href: api/virtualappointment-sendvirtualappointmentsms.md
+                      - name: Send SMS reminder 
+                        href: api/virtualappointment-sendvirtualappointmentremindersms.md
                       - name: Virtual appointment (deprecated)
                         href: resources/virtualappointment.md
                       - name: Create virtual appointment (deprecated)
@@ -18857,6 +18861,19 @@ items:
                     href: api/teamworktagmember-delete.md
           - name: Shift management
             items:
+              - name: Day note (preview)
+                href: resources/daynote.md
+                items:
+                  - name: Create
+                    href: api/daynote-create.md
+                  - name: Get
+                    href: api/daynote-get.md
+                  - name: List
+                    href: api/daynote-list.md
+                  - name: Update
+                    href: api/daynote-update.md
+                  - name: Delete
+                    href: api/daynote-delete.md
               - name: Offer shift
                 href: resources/offershiftrequest.md
                 items:
