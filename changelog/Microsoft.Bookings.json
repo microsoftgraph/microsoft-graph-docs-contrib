@@ -828,14 +828,6 @@
           },
           {
             "Id": "2fbcc87b-5dd1-41d0-882d-19a8f3651724",
-            "ApiChange": "Resource",
-            "ChangedApiName": "solutionsRoot",
-            "ChangeType": "Addition",
-            "Description": "Added the [solutionsRoot](https://learn.microsoft.com/en-us/graph/api/resources/solutionsRoot?view=graph-rest-beta) resource",
-            "Target": "solutionsRoot"
-          },
-          {
-            "Id": "2fbcc87b-5dd1-41d0-882d-19a8f3651724",
             "ApiChange": "Singleton",
             "ChangedApiName": "solutions",
             "ChangeType": "Addition",
