@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let pageTemplate = await client.api('/sites/{site-id}/pagetemplates/microsoft.graph.pageTemplate')
+let pageTemplate = await client.api('/sites/{site-id}/pagetemplates')
 	.version('beta')
 	.get();
 
