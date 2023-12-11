@@ -70,12 +70,14 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "@odata.type": "microsoft.graph.userteamwork"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('2f39ffba-51ca-4d2d-a66f-a020a83ce208')/teamwork",
   "id": "userTeamwork",
   "locale": "en-us",
   "region": "Americas"

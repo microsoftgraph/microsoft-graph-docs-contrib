@@ -70,12 +70,14 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "@odata.type": "microsoft.graph.teamsLicensingDetails"
 } -->
 ```http
 HTTP/1.1 200 OK
 
 Content-type: application/json
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.teamsLicensingDetails",
   "hasTeamsLicense": true
 }
 ```
