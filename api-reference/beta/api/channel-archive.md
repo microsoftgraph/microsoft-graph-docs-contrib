@@ -85,6 +85,49 @@ Location: /teams/5crrrtrd5-e41c-4f18-ab8awfd-f36ca7dd11231de/operations/5cr4f18a
 Content-Type: text/plain
 Content-Length: 0
 ```
+
+### Request
+The following is an example of a request when **Team is archived**
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "archive_channel"
+}-->
+```http
+POST https://graph.microsoft.com/beta/teams/5crrrtrd5-e41c-4f18-ab8awfd-f36ca7dd11231de/channels/5ceebed5-o45u-334o-sve3-f36ca7dd31de/archive
+```
+
+---
+
+### Response
+The following is an example of a response with 400.
+<!-- {
+  "blockType": "response",
+  "name": "archive_channel"
+}-->
+```http
+http/1.1 400 Bad Request
+Content-Type: application/json
+Content-Length: 193
+
+{
+    "error": {
+        "code": "BadRequest",
+        "message": "Team has to be active, for channel to be archived or unarchived: 5ceebed5-o45u-334o-sve3-f36ca7dd31de",
+        "innerError": {
+            "message": "Team has to be active, for channel to be archived or unarchived: 5ceebed5-o45u-334o-sve3-f36ca7dd31de",
+            "code": "Unknown",
+            "innerError": {},
+            "date": "2023-12-11T04:26:35",
+            "request-id": "8f897345980-f6f3-49dd-83a8-a3064eeecdf8",
+            "client-request-id": "50a0er33-4567-3f6c-01bf-04d144fc8bbe"
+        }
+    }
+}
+
+```
+
 <!-- uuid: e848414b-4669-4484-ac36-1504c58a3fb8
 2015-10-25 14:57:30 UTC -->
 <!--
