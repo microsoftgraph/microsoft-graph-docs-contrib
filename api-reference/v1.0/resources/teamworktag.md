@@ -17,6 +17,8 @@ Tags provide a flexible way for customers to classify users or groups based on a
 
 When a tag is added, users can @mention it in a channel. Everyone who has been assigned that tag receives a notification just as they would if they were @mentioned individually. Users can also use a tag to start a new chat with the members of that tag.
 
+Scheduled tags are now supported in Graph as well. Scheduled tags are created and managed in the Shifts app.  
+
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
