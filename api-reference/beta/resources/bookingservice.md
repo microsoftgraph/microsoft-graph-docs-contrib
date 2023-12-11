@@ -1,6 +1,6 @@
 ---
 title: "bookingService resource type"
-description: "Represents information about a particular service provided by a bookingBusiness, such as the service name, price, and the staff that usually provides such service."
+description: "Represents information about a particular service provided by a booking business, such as the service name, price, and the staff that usually provides such service."
 ms.localizationpriority: medium
 author: "arvindmicrosoft"
 ms.prod: "bookings"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Represents information about a particular service provided by a [bookingBusiness](bookingbusiness.md), such as the service name, price, and the staff that usually provides such service.
+Represents information about a particular service provided by a [booking Business](bookingbusiness.md), such as the service name, price, and the staff that usually provides such service.
 
 Inherits from [bookingNamedEntity](bookingNamedEntity.md).
 
@@ -21,11 +21,11 @@ Inherits from [bookingNamedEntity](bookingNamedEntity.md).
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List services](../api/bookingbusiness-list-services.md) | [bookingService](bookingservice.md) collection | Get a list of **bookingService** objects in the specified [bookingbusiness](../resources/bookingbusiness.md).|
-|[Create bookingService](../api/bookingbusiness-post-services.md) | [bookingService](bookingservice.md) | Create a **bookingService** for the specified [bookingbusiness](../resources/bookingbusiness.md). |
-|[Get bookingService](../api/bookingservice-get.md) | [bookingService](bookingservice.md) |Get the properties and relationships of a **bookingService** object in the specified [bookingbusiness](../resources/bookingbusiness.md).|
-|[Update](../api/bookingservice-update.md) | None	|Update a **bookingService** object in the specified [bookingbusiness](../resources/bookingbusiness.md). |
-|[Delete](../api/bookingservice-delete.md) | None |Delete a **bookingService** object in the specified [bookingbusiness](../resources/bookingbusiness.md). |
+|[List services](../api/bookingbusiness-list-services.md) | [bookingService](bookingservice.md) collection | Get a list of **bookingService** objects in the specified [booking business](../resources/bookingbusiness.md).|
+|[Create bookingService](../api/bookingbusiness-post-services.md) | [bookingService](bookingservice.md) | Create a **bookingService** for the specified [booking business](../resources/bookingbusiness.md). |
+|[Get bookingService](../api/bookingservice-get.md) | [bookingService](bookingservice.md) |Get the properties and relationships of a **bookingService** object in the specified [booking business](../resources/bookingbusiness.md).|
+|[Update](../api/bookingservice-update.md) | None	|Update a **bookingService** object in the specified [booking business](../resources/bookingbusiness.md). |
+|[Delete](../api/bookingservice-delete.md) | None |Delete a **bookingService** object in the specified [booking business](../resources/bookingbusiness.md). |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -41,9 +41,9 @@ Inherits from [bookingNamedEntity](bookingNamedEntity.md).
 |description|String|A text description for the service.|
 |displayName|String|A service name.|
 |id|String|The ID of that service, in a GUID format. Read-only.|
-|isAnonymousJoinEnabled|Boolean|`True` if an anonymousJoinWebUrl(webrtcUrl) will be generated for the appointment booked for this service.
+|isAnonymousJoinEnabled|Boolean|`True` if an anonymousJoinWebUrl(webrtcUrl) is generated for the appointment booked for this service.
 |isHiddenFromCustomers|Boolean|True means this service isn't available to customers for booking.|
-|isLocationOnline|Boolean|True indicates that the appointments for the service will be held online. Default value is false.|
+|isLocationOnline|Boolean|True indicates that the appointments for the service is held online. Default value is false.|
 |languageTag|String|The language of the self service booking page.
 |lastUpdatedDateTime|DateTimeOffset|The date, time and timezone when the Service  was last updated.|
 |maximumAttendeesCount|Int32|The maximum number of customers allowed in a service. If **maximumAttendeesCount** of the service is greater than 1, pass valid customer IDs while creating or updating an appointment.  To create a customer, use the [Create bookingCustomer](../api/bookingbusiness-post-customers.md) operation.  |
