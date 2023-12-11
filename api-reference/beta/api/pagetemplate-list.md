@@ -70,7 +70,7 @@ If successful, this method returns a `200` and a list of [pageTemplate](../resou
 -->
 
 ```msgraph-interactive
-GET /sites/{site-id}/pagetemplates/microsoft.graph.pageTemplate
+GET /sites/{site-id}/pagetemplates
 ```
 
 # [C#](#tab/csharp)
