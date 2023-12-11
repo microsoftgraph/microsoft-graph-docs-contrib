@@ -35,7 +35,7 @@ Inherits from [entity](../resources/entity.md).
 |displayName|String|The name of the tag as it appears to the user in Microsoft Teams.|
 |id|String|The unique identifier for the tag. Inherited from [entity](../resources/entity.md).|
 |memberCount|Int32|The number of users assigned to the tag.|
-|tagType|[teamworkTagType](../resources/teamworktag.md#teamworktagtype-values)|The type of the tag. Default is standard.|
+|tagType|[teamworkTagType](../resources/teamworktag.md#teamworktagtype-values)|The type of the tag. Default is standard, also includes scheduledtags for shift based tags. |
 |teamId|String|ID of the team in which the tag is defined.|
 
 ### teamworkTagType values
@@ -44,6 +44,7 @@ Inherits from [entity](../resources/entity.md).
 |:---------|:----------------------------------------------------------------------------------------------------------|
 | standard | Default type for a tag. Tags of type standard can be managed in the team by members who have permissions. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                                               |
+| scheduledtags | Shift based tag created and managed from the Shifts App.                                               |
 
 ## Relationships
 |Relationship|Type|Description|
