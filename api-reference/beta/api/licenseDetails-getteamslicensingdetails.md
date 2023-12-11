@@ -1,19 +1,19 @@
 ---
-title: "Get the license status."
-description: "Get the license status of the user in Microsoft Teams."
+title: "LicenseDetails: getteamslicensingdetails"
+description: "Get the license status of a user in Microsoft Teams."
 author: "mea"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get the license status
+# LicenseDetails: get teams licensing details
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the license status of the [user](../resources/user.md) in Microsoft Teams.
+Get the license status of a [user](../resources/user.md) in Microsoft Teams.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -83,5 +83,5 @@ Content-type: application/json
 
 ## See also
 
-- [Get user's settings for Microsoft Teams](userteamwork-get.md)
-- [Get Microsoft Teams Settings for organization](teamwork-get.md)
+- [Get the settings of a user for Microsoft Teams](userteamwork-get.md)
+- [Get Microsoft Teams settings for organization](teamwork-get.md)

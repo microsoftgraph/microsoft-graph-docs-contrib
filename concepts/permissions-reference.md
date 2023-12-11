@@ -5526,7 +5526,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | 75bcfbce-a647-4fba-ad51-b63d73b210f4 |  594f4bb6-c083-4cf9-8aa8-213823bdf351
-| DisplayText | Read organizational teamwork settings | Read organizational teamwork settings 
+| DisplayText | Read organizational teamwork settings. | Read organizational teamwork settings. 
 | Description | Allows the app to read all teamwork settings of the organization without a signed-in user. | Allows the app to read the teamwork settings of the organization, on behalf of the signed-in user. 
 | AdminConsentRequired | Yes | No
 
@@ -6032,7 +6032,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | fbcd7ef1-df0d-4e05-bb28-93424a89c6df |  -
-| DisplayText | Read all user teamwork settings | - 
+| DisplayText | Read all user teamwork settings. | - 
 | Description | Allows the app to read all user teamwork settings without a signed-in user. |-
 | AdminConsentRequired | Yes | -
 

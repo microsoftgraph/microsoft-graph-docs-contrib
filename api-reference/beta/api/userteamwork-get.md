@@ -1,19 +1,19 @@
 ---
-title: "Get the Microsoft Teams settings for user"
-description: "Get user's locale and region properties of user teamwork for a user."
+title: "Get Microsoft Teams settings for a user"
+description: "Get user teamwork settings for a user such as user locale and user region."
 author: "mea"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get the Microsoft Teams settings for user
+# Get Microsoft Teams settings for a user
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get [userTeamwork](../resources/userteamwork.md) settings for the specified [user](../resources/user.md), which includes the user's chosen locale on Microsoft Teams and the user's region.
+Get the [userTeamwork](../resources/userteamwork.md) settings for a specified [user](../resources/user.md), which includes the region on Microsoft Teams and the locale chosen by the user.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code with a [userTeamwork
 
 ### Request
 
-The following is an example of the request.
+The following example shows the request.
 
 <!-- {
   "blockType": "request",
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/users/2f39ffba-51ca-4d2d-a66f-a020a83ce208/
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -85,5 +85,5 @@ Content-type: application/json
 
 ## See also
 
-- [Get user's licensing details](user-get-teamslicensingdetails.md)
-- [Get Microsoft Teams Settings for organization](teamwork-get.md)
+- [Get the licensing details of a user](licenseDetails-getteamslicensingdetails.md)
+- [Get Microsoft Teams settings for organization](teamwork-get.md)

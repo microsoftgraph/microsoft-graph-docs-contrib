@@ -1,19 +1,19 @@
 ---
-title: "Get Microsoft Teams settings for the organization."
-description: "Get organization settings for teamwork, such as the region and Microsoft Teams enablement status."
+title: "Get teamwork settings of an organization."
+description: "Get organization settings for teamwork, such as the region of the organization and the Microsoft Teams enablement status."
 author: "mea"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get Microsoft Teams settings for the organization
+# Get teamwork settings of an organization.
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get organization settings for [teamwork](../resources/teamwork.md), such as the region and Microsoft Teams enablement status.
+Get organization settings for [teamwork](../resources/teamwork.md), such as the region of the organization and the Microsoft Teams enablement status.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -85,5 +85,5 @@ Content-type: application/json
 
 ## See also
 
-- [Get user's licensing details](user-get-teamslicensingdetails.md)
-- [Get user's settings for Microsoft Teams](userteamwork-get.md)
+- [Get the licensing details of a user](licenseDetails-getteamslicensingdetails.md)
+- [Get the settings of a user for Microsoft Teams](userteamwork-get.md)
