@@ -56,7 +56,6 @@ The following example shows the request.
 <!-- {
   "blockType": "request",
   "name": "teamwork_get_region_enablement_status",
-  "sampleKeys": ["2f39ffba-51ca-4d2d-a66f-a020a83ce208"]
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/teamwork
@@ -71,11 +70,9 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.teamwork"
 } -->
 ```http
 HTTP/1.1 200 OK
-
 Content-type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#teamwork",
