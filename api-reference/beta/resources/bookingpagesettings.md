@@ -20,7 +20,7 @@ Settings for a published booking page
 |:---|:---|:---|
 |accessControl|bookingPageAccessControl|Controlling access to a published booking page.The possible values are: `unrestricted`, `restrictedToOrganization`, `unknownFutureValue`.|
 |bookingPageColorCode|String|Custom color for bookings page. Value should be in Hex format. Example: `#123456`|
-|businessTimeZone|String|The time zone of the customer. For a list of possible values, see [dateTimeTimeZone](https://learn.microsoft.com/en-us/graph/api/resources/datetimetimezone?view=graph-rest-beta).|
+|businessTimeZone|String|The time zone of the customer. For a list of possible values, see [dateTimeTimeZone](dateTimeTimeZone.md).|
 |customerConsentMessage|String|he personal data collection and usage consent message in the bookings page|
 |enforceOneTimePassword|Boolean|Determines if One Time Password is needed for appointment creation. Set to `false` by default|
 |isBusinessLogoDisplayEnabled|Boolean|Display the business logo in the bookings page. Defaults value is `false`|
