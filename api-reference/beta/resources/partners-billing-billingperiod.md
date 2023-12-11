@@ -16,12 +16,12 @@ Namespace: microsoft.graph.partners.billing
 Possible values for billingPeriod type.
 
 ## Members
+
 |Member|Value|Description|
 |:---|:---|:---|
-|current|1|current billing period|
-|last|2|last month billing period|
-|unknownFutureValue|3|reserved for future use|
-
+|current|1|Current billing period.|
+|last|2|Last month billing period.|
+|unknownFutureValue|3|Evolvable enumeration sentinel value. Don't use.|
 
 <!-- {
   "type": "#page.annotation",
