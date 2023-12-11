@@ -7,10 +7,10 @@ ms.localizationpriority: low
 
 # Microsoft Graph Architecture Center
 
-Microsoft Graph is a business platform, which allows organizations to connect their business systems with Microsoft 365 SaaS data and services. Interactive APIs, capabilities for data ingress and egress and event-based integration are table stakes expected from a modern cloud integration platform and all these options are available on the Microsoft Graph:
+Microsoft Graph is a business platform that allows organizations to connect their business systems with Microsoft 365 SaaS data and services. Interactive APIs, capabilities for data ingress and egress, and event-based integration are table stakes expected from a modern cloud integration platform and all these options are available on Microsoft Graph:
 
 - Transactional RESTful HTTP APIs in Microsoft Graph API provide control and data plane interfaces for various Microsoft 365 SaaS offerings. These APIs support synchronous communication and are granular by nature.  
-- Enhanced RESTful HTTP APIs is a subclass of RESTful HTTP APIs designed to provide extra capabilities for effective data extraction. The Enhanced APIs consist of Teams APIs that enable specialized operations to retrieve large amounts of data. Enhanced APIs also include SharePoint and Exchange APIs, which raise throttling limits for paid apps.
+- Enhanced RESTful HTTP APIs are a subclass of RESTful HTTP APIs designed to provide extra capabilities for effective data extraction. The Enhanced APIs consist of Teams APIs that enable specialized operations to retrieve large amounts of data. Enhanced APIs also include  Microsoft SharePoint and Exchange APIs, which raise throttling limits for paid apps.
 - Bulk data export in Microsoft Graph Data Connect (MGDC). This mechanism follows an ETL (Extract, Transform & Load) pattern with a data gathering phase that stages data before transferring it in bulk to the customers’ provided storage therefore always serving data with high latency.  
 - Event-driven integration in Microsoft Graph API allows client applications to receive notifications of changes or full object data after an event happened in the Microsoft 365 ecosystem. This PUSH mechanism is supported by Webhooks and doesn’t guarantee message delivery or message order. 
 - Event streaming integration in Microsoft Graph API allows client applications react to key happenings in Microsoft 365 at their own pace and guarantees persistence of immutable event data. Graph change notifications with Azure Event Hubs support the described pull mechanism. 
