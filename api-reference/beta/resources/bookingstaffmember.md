@@ -40,13 +40,12 @@ Microsoft Bookings supports a maximum of 100 staff members in a booking calendar
 |:---------------|:--------|:----------|
 |availabilityIsAffectedByPersonalCalendar|Boolean|True means that if the staff member is a Microsoft 365 user, the Bookings API would verify the staff member's availability in their personal calendar in Microsoft 365, before making a booking. |
 |colorIndex|Int32|Identifies a color to represent the staff member. The color corresponds to the color palette in the **Staff details** page in the Bookings app.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
+|createdDateTime|DateTimeOffset|The date, time and timezone when the staff member was created.|
 |displayName|String|The name of the staff member, as displayed to customers. Required.|
 |emailAddress|String|The email address of the staff member. This can be in the same Microsoft 365 tenant as the business, or in a different email domain. This email address can be used if the **sendConfirmationsToOwner** property is set to true in the scheduling policy of the business. Required.|
 |id|String| The ID of the staff member, in a GUID format. Read-only.|
 |isEmailNotificationEnabled|Boolean|`True` indicates that a staff member will be notified via email when a booking assigned to them is created or changed.|
-|lastUpdatedDateTime|DateTimeOffset|**TODO: Add Description**|
-|membershipStatus|bookingStaffMembershipStatus|**TODO: Add Description**.The possible values are: `active`, `pendingAcceptance`, `rejectedByStaff`, `unknownFutureValue`.|
+|lastUpdatedDateTime|DateTimeOffset|The date, time and timezone when the staff member was last updated.|
 |role|bookingStaffRole| The role of the staff member in the business. Possible values are: `guest`, `administrator`, `viewer`, `externalGuest`, `unknownFutureValue`, `scheduler`, `teamMember`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `scheduler`, `teamMember`. Required. |
 |timeZone|String|The time zone of the staff member. For a list of possible values, see [dateTimeTimeZone](datetimetimezone.md).|
 |useBusinessHours|Boolean|True means the staff member's availability is as specified in the **businessHours** property of the business. False means the availability is determined by the staff member's **workingHours** property setting.|
@@ -70,18 +69,24 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "availabilityIsAffectedByPersonalCalendar": "Boolean",
-  "colorIndex": "Int32",
+  "@odata.type": "#microsoft.graph.bookingStaffMember",
+  "id": "String (identifier)",
   "displayName": "String",
   "emailAddress": "String",
-  "id": "String (identifier)",
-  "isEmailNotificationEnabled": "Boolean",
-  "role": {"@odata.type": "microsoft.graph.bookingStaffRole"},
-  "timeZone": "String",
+  "availabilityIsAffectedByPersonalCalendar": "Boolean",
+  "colorIndex": "Integer",
+  "role": "String",
   "useBusinessHours": "Boolean",
-  "workingHours": [{"@odata.type": "microsoft.graph.bookingWorkHours"}]
+  "workingHours": [
+    {
+      "@odata.type": "microsoft.graph.bookingWorkHours"
+    }
+  ],
+  "timeZone": "String",
+  "isEmailNotificationEnabled": "Boolean",
+  "createdDateTime": "String (timestamp)",
+  "lastUpdatedDateTime": "String (timestamp)"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

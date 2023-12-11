@@ -31,7 +31,7 @@ Inherits from [bookingNamedEntity](bookingNamedEntity.md).
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |additionalInformation|String|Additional information that is sent to the customer when an appointment is confirmed.|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
+|createdDateTime|DateTimeOffset|The date, time and timezone when the Service was created.|
 |customQuestions|[bookingQuestionAssignment](../resources/bookingquestionassignment.md) collection| Contains the set of custom questions associated with a particular service. |
 |defaultDuration|Duration|The default length of the service, represented in numbers of days, hours, minutes, and seconds. For example, P11D23H59M59.999999999999S. |
 |defaultLocation|[location](location.md)|The default physical location for the service.|
@@ -45,7 +45,7 @@ Inherits from [bookingNamedEntity](bookingNamedEntity.md).
 |isHiddenFromCustomers|Boolean|True means this service isn't available to customers for booking.|
 |isLocationOnline|Boolean|True indicates that the appointments for the service will be held online. Default value is false.|
 |languageTag|String|The language of the self service booking page.
-|lastUpdatedDateTime|DateTimeOffset|**TODO: Add Description**|
+|lastUpdatedDateTime|DateTimeOffset|The date, time and timezone when the Service  was last updated.|
 |maximumAttendeesCount|Int32|The maximum number of customers allowed in a service. If **maximumAttendeesCount** of the service is greater than 1, pass valid customer IDs while creating or updating an appointment.  To create a customer, use the [Create bookingCustomer](../api/bookingbusiness-post-customers.md) operation.  |
 |notes|String|Additional information about this service.|
 |postBuffer|Duration|The time to buffer after an appointment for this service ends, and before the next customer appointment can be booked.|
