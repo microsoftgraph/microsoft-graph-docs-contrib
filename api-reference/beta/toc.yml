@@ -17403,6 +17403,10 @@ items:
             href: api/channel-delete.md
           - name: Remove incoming channel
             href: api/team-delete-incomingchannels.md
+          - name: Archive Channel
+            href: api/channel-archive.md
+          - name: Unarchive Channel
+            href: api/channel-unarchive.md
           - name: Add member
             href: api/channel-post-members.md
           - name: Complete migration for channel

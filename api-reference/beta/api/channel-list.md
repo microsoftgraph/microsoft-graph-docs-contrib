@@ -130,7 +130,8 @@ Content-type: application/json
       "createdDateTime": "2020-05-27T19:22:25.692Z",
       "displayName": "General",
       "description": "AutoTestTeam_20210311_150740.2550_fim3udfdjen9",
-      "membershipType": "standard"
+      "membershipType": "standard",
+      "isArchived": false,
     }
   ]
 }
@@ -206,7 +207,8 @@ Content-type: application/json
       "createdDateTime": "2020-05-27T19:22:25.692Z",
       "displayName": "General",
       "description": "test private team",
-      "membershipType": "private"
+      "membershipType": "private",
+      "isArchived": false,
     }
   ]
 }
@@ -289,6 +291,7 @@ Content-length: 262
             "email": "",
             "webUrl": "https://teams.microsoft.com/l/channel/19%3ALpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81%40thread.tacv2/shared%20channel-01?groupId=6a720ba5-7373-463b-bc9f-4cd04b5c6742&tenantId=df81db53-c7e2-418a-8803-0e68d4b88607",
             "membershipType": "shared",
+            "isArchived": false,
             "moderationSettings": null
         }
     ]

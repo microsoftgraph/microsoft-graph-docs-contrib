@@ -127,6 +127,7 @@ Content-Type: application/json
       "displayName": "General",
       "description": "AutoTestTeam_20210311_150740.2550_fim3udfdjen9",
       "membershipType": "standard",
+      "isArchived": false,
       "tenantId": "b3246f44-b4gb-4627-96c6-25b18fa2c910"
     },
     {
@@ -135,6 +136,7 @@ Content-Type: application/json
       "createdDateTime": "2020-05-27T19:22:25.692Z",
       "displayName": "Shared channel from Contoso",
       "membershipType": "shared",
+      "isArchived": false,
       "tenantId": "b3246f44-b4gb-5678-96c6-25b18fa2c910"
     }
   ]
@@ -209,6 +211,7 @@ Content-Type: application/json
       "createdDateTime": "2020-05-27T19:22:25.692Z",
       "displayName": "Shared channel from Contoso",
       "membershipType": "shared",
+      "isArchived": false,
       "tenantId": "b3246f44-b4gb-5678-96c6-25b18fa2c910"
     }
   ]
