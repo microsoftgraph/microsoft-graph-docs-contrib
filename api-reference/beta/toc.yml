@@ -18493,21 +18493,21 @@ items:
                     href: api/teamworkdeviceoperation-list.md
                   - name: Get
                     href: api/teamworkdeviceoperation-get.md
-          - name: User teamwork settings
+          - name: User teamwork settings (preview)
             items:
-              - name: User teamwork
-              - href: resources/userteamwork.md
+              - name: UserTeamwork
+                href: resources/userteamwork.md
                 items:
                   - name: Get teamwork settings for the user
                     href: api/userteamwork-get.md
-          - name: Organization teamwork settings
+          - name: Organization teamwork settings (preview)
             items:
               - name: Teamwork
                 href: resources/teamwork.md
                 items:
                 - name: Get teamwork settings for an organization
                   href: api/teamwork-get.md
-          - name: Microsoft Teams licensing details
+          - name: Microsoft Teams licensing details (preview)
             items:
               - name: Get Microsoft Teams licensing details
                 href: api/licenseDetails-getteamslicensingdetails.md
