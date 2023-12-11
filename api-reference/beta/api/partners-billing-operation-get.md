@@ -80,7 +80,7 @@ The following example shows the response for an operation that completed success
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.exportSuccessOperation"
+  "@odata.type": "microsoft.graph.partners.billing.exportSuccessOperation"
 }
 -->
 ``` http
