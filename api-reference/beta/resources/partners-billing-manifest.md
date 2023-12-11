@@ -31,7 +31,7 @@ Inherits from [entity](../resources/entity.md).
 |blobs|[microsoft.graph.partners.billing.blob](../resources/partners-billing-blob.md) collection|A collection of blob objects that contain details of all the files for the partner tenant ID.|
 |createdDateTime|DateTimeOffset|The date and time when a manifest resource was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |dataFormat|String|The billing data file format. The possible value is: `compressedJSONLines`. Each blob is a compressed file and data in the file is in [JSON lines](https://jsonlines.org/) format. Decompress the file to access the data.|
-|eTag|String|Version of data represented by the manifest. Any change in **eTag** indicates new data version.|
+|eTag|String|Version of data represented by the manifest. Any change in **eTag** indicates a new data version.|
 |id|String|The unique identifier for the **manifest**. Inherited from [entity](../resources/entity.md).|
 |partitionType|String|Indicates the division of data. If a given partition has more than the supported number, the data is split into multiple files corresponding to the **partitionValue**. By default, the data in the file is partitioned by the number of line items.|
 |partnerTenantId|String|The Microsoft Entra tenant ID of the partner.|
