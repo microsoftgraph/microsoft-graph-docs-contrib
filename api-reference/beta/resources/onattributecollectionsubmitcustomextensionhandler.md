@@ -1,6 +1,6 @@
 ---
 title: "onAttributeCollectionSubmitCustomExtensionHandler resource type"
-description: "Used for creating a new custom extension based on the onAttributeCollectionSubmit event."
+description: "Used for creating a new custom extension based on the onAttributeCollectionSubmit event to configure the collection of attributes upon user sign up.""
 author: "garrodonnell"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
