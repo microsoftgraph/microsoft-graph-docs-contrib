@@ -62,7 +62,7 @@ Depending on the resource and the permission type (delegated or application) req
 |[team](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All, TeamSettings.Read.All | Not supported | Team.ReadBasic.All, TeamSettings.Read.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
-|[virtualEventWebinar](../resources/virtualeventwebinar.md) | VirtualEvent.Read | Not supported | VirtualEvent.Read.All |
+|virtualEventWebinar | VirtualEvent.Read | Not supported | VirtualEvent.Read.All |
 
 > **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
