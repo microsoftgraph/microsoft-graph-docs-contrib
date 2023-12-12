@@ -1,6 +1,6 @@
 ---
 title: "Update m365AppsInstallationOptions"
-description: "Update the properties of a m365AppsInstallationOptions object."
+description: "Update the properties of an m365AppsInstallationOptions object."
 author: "yan-git"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [m365AppsInstallationOptions](../resources/m365appsInstallationoptions.md) object.
+Update the properties of an [m365AppsInstallationOptions](../resources/m365appsInstallationoptions.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -49,13 +49,13 @@ PATCH /admin/microsoft365Apps/installationOptions
 
 |Property|Type|Description|
 |:---|:---|:---|
-|settings|[microsoft.admin.m365AppsInstallationOptions](../resources/m365appsInstallationoptions.md)|**Company wide settings for apps and services** Required.|
+|settings|[microsoft.admin.m365AppsInstallationOptions](../resources/m365appsInstallationoptions.md)|Company-wide settings for apps and services. Required.|
 
 
 
 ## Response
 
-If successful, this method returns a `204 No Content` and no content is returned.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
