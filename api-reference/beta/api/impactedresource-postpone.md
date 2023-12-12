@@ -3,7 +3,7 @@ title: "impactedResource: postpone"
 description: "Postpone action on an impactedResource object to a specified future date and time."
 author: "ddeeps2610"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
 

@@ -39,12 +39,9 @@ request_body = Event(
 	online_meeting_provider = OnlineMeetingProviderType.TeamsForBusiness,
 )
 
-request_configuration = EventsRequestBuilder.EventsRequestBuilderPostRequestConfiguration(
-headers = {
-		'Prefer' : "outlook.timezone=\"Pacific Standard Time\"",
-}
+request_configuration = EventsRequestBuilder.EventsRequestBuilderPostRequestConfiguration()
+request_configuration.headers.add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
 
-)
 
 result = await graph_client.me.events.post(request_body, request_configuration = request_configuration)
 

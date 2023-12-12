@@ -32,8 +32,8 @@ The following key API scenarios allow you to retrieve details for authorization 
 |--|--|
 | Retrieve authorization systems | [List authorizationSystems](../api/externalconnectors-external-list-authorizationsystems.md) |
 | Get details for an AWS authorization system | [List awsAuthorizationSystems](../api/awsauthorizationsystem-list.md) |
-| Get details for an Azure authorization system | [List awsAuthorizationSystems](../api/azureauthorizationsystem-list.md) |
-| Get details for a GCP authorization system | [List awsAuthorizationSystems](../api/gcpauthorizationsystem-list.md) |
+| Get details for an Azure authorization system | [List azureAuthorizationSystems](../api/azureauthorizationsystem-list.md) |
+| Get details for a GCP authorization system | [List gcpAuthorizationSystems](../api/gcpauthorizationsystem-list.md) |
 
 Discover the API operations quick reference for [AWS authorization systems](/graph/permissions-management-how-to-authorization-system-aws), [Azure authorization systems](/graph/permissions-management-how-to-authorization-system-azure), and [GCP authorization systems](/graph/permissions-management-how-to-authorization-system-gcp).
 
@@ -98,13 +98,14 @@ Other findings include:
 
 ## Permissions and privileges
 
-To call the permissions management APIs, the caller doesn't need any Microsoft Graph permissions. However, they must have appropriate privileges in the Microsoft Entra tenant and also in the external system.
+To call the permissions management APIs, the caller doesn't need any Microsoft Graph permissions. However, they must have appropriate privileges in the Microsoft Entra tenant and in the external system.
 
-For more information, see [Quickstart guide to Microsoft Entra Permissions Management](/entra/permissions-management/permissions-management-quickstart-guide)
+For more information, see [Permissions Management roles and permissions levels](/entra/permissions-management/product-roles-permissions)
 
 ## See also
 
 - [What's Microsoft Entra Permissions Management](/entra/permissions-management/overview)
+- [Quickstart guide to Microsoft Entra Permissions Management](/entra/permissions-management/permissions-management-quickstart-guide)
 - [Microsoft Entra Permissions Management operations reference](/entra/architecture/permissions-manage-ops-guide-intro)
 - Microsoft Entra permissions management API operations quick references:
   - [For AWS authorization systems](/graph/permissions-management-how-to-authorization-system-aws)

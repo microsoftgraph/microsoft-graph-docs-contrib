@@ -180,6 +180,8 @@ items:
                 href: managed-private-endpoints-overview.md
               - name: Microsoft 365 audit logs
                 href: microsoft365-audit-logs.md
+              - name: Custom Encryption
+                href: data-connect-custom-encryption.md
           - name: Data Connect FAQ
             href: data-connect-faq.md
             displayName: Microsoft Graph Data Connect frequently asked questions
@@ -621,20 +623,20 @@ items:
         items:
           - name: Overview
             href: social-intel-concept-overview.md
-          - name: Search people
-            href: search-concept-person.md
-          - name: People insights overview
-            href: people-insights-overview.md
+          - name: Customize item insights privacy (preview)
+            href: insights-customize-item-insights-privacy.md
           - name: Customize people insights privacy (preview)
             href: insights-customize-people-insights-privacy.md
           - name: Customize the profile card
             href: add-properties-profilecard.md
+          - name: Enable or disable pronouns
+            href: pronouns-configure-pronouns-availability.md
           - name: Item insights overview
             href: item-insights-overview.md
-          - name: Customize item insights privacy (preview)
-            href: insights-customize-item-insights-privacy.md
-          - name: Enable or disable pronouns (preview)
-            href: pronouns-configure-pronouns-availability.md
+          - name: People insights overview
+            href: people-insights-overview.md
+          - name: Search people
+            href: search-concept-person.md
       - name: Personal contacts
         items:
           - name: Overview
@@ -852,7 +854,7 @@ items:
                 href: permissions-reference.md
               - name: Microsoft Entra built-in roles
                 displayName: Microsoft Graph permissions
-                href: /azure/active-directory/roles/permissions-reference?toc=/graph/toc.json
+                href: /entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json
           - name: Manage app access (CSPs)
             href: auth-cloudsolutionprovider.md
           - name: Limit mailbox access

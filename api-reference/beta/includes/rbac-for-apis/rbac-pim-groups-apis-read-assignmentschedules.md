@@ -4,7 +4,7 @@ ms.topic: include
 ms.author: ilyalushnikov
 ---
 
-The calling user must also be the owner or member of the group or be assigned at least one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+The calling user must also be the owner or member of the group or be assigned at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 - For role-assignable groups: *Global Reader* or *Privileged Role Administrator*<
 - For non-role-assignable groups: *Global Reader*, *Directory Writer*, *Groups Administrator*, *Identity Governance Administrator*, or *User Administrator*
 

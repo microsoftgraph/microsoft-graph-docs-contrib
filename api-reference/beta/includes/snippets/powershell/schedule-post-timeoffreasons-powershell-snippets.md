@@ -8,6 +8,7 @@ Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	displayName = "Vacation"
+	code = "VacationCode"
 	iconType = "plane"
 	isActive = $true
 }
