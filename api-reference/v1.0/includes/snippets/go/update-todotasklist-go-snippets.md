@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewTodoTaskList()
 displayName := "Vacation Plan"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.Me().Todo().Lists().ByListId("todoTaskList-id").Patch(context.Background(), requestBody, nil)
+lists, err := graphClient.Me().Todo().Lists().ByTodoTaskListId("todoTaskList-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

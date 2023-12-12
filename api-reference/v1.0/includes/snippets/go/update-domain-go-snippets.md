@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewDomain()
@@ -21,11 +21,10 @@ requestBody.SetIsDefault(&isDefault)
 supportedServices := []string {
 	"Email",
 	"OfficeCommunicationsOnline",
-
 }
 requestBody.SetSupportedServices(supportedServices)
 
-result, err := graphClient.Domains().ByDomainId("domain-id").Patch(context.Background(), requestBody, nil)
+domains, err := graphClient.Domains().ByDomainId("domain-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

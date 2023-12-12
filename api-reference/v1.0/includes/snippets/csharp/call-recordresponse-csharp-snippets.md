@@ -6,26 +6,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Communications.Calls.Item.RecordResponse;
+using Microsoft.Graph.Models;
 
-var requestBody = new Microsoft.Graph.Communications.Calls.Item.RecordResponse.RecordResponsePostRequestBody
+var requestBody = new RecordResponsePostRequestBody
 {
 	BargeInAllowed = true,
 	ClientContext = "d45324c1-fcb5-430a-902c-f20af696537c",
 	Prompts = new List<Prompt>
 	{
-		new Prompt
+		new MediaPrompt
 		{
 			OdataType = "#microsoft.graph.mediaPrompt",
-			AdditionalData = new Dictionary<string, object>
+			MediaInfo = new MediaInfo
 			{
-				{
-					"mediaInfo" , new 
-					{
-						Uri = "https://cdn.contoso.com/beep.wav",
-						ResourceId = "1D6DE2D4-CD51-4309-8DAA-70768651088E",
-					}
-				},
+				Uri = "https://cdn.contoso.com/beep.wav",
+				ResourceId = "1D6DE2D4-CD51-4309-8DAA-70768651088E",
 			},
 		},
 	},
@@ -40,6 +37,8 @@ var requestBody = new Microsoft.Graph.Communications.Calls.Item.RecordResponse.R
 		"*",
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Communications.Calls["{call-id}"].RecordResponse.PostAsync(requestBody);
 
 

@@ -6,48 +6,44 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Models.ExternalConnectors;
 
-var requestBody = new Microsoft.Graph.External.Connections.Item.Schema.SchemaPostRequestBody
+var requestBody = new Schema
 {
-	AdditionalData = new Dictionary<string, object>
+	BaseType = "microsoft.graph.externalItem",
+	Properties = new List<Property>
 	{
+		new Property
 		{
-			"baseType" , "microsoft.graph.externalItem"
-		},
-		{
-			"properties" , new List<>
+			Name = "ticketTitle",
+			Type = PropertyType.String,
+			IsSearchable = true,
+			IsRetrievable = true,
+			Labels = new List<Label?>
 			{
-				new 
-				{
-					Name = "ticketTitle",
-					Type = "String",
-					IsSearchable = "true",
-					IsRetrievable = "true",
-					Labels = new List<string>
-					{
-						"title",
-					},
-				},
-				new 
-				{
-					Name = "priority",
-					Type = "String",
-					IsQueryable = "true",
-					IsRetrievable = "true",
-					IsSearchable = "false",
-				},
-				new 
-				{
-					Name = "assignee",
-					Type = "String",
-					IsRetrievable = "true",
-				},
-			}
+				Label.Title,
+			},
+		},
+		new Property
+		{
+			Name = "priority",
+			Type = PropertyType.String,
+			IsQueryable = true,
+			IsRetrievable = true,
+			IsSearchable = false,
+		},
+		new Property
+		{
+			Name = "assignee",
+			Type = PropertyType.String,
+			IsRetrievable = true,
 		},
 	},
 };
-await graphClient.External.Connections["{externalConnection-id}"].Schema.PostAsync(requestBody);
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.External.Connections["{externalConnection-id}"].Schema.PatchAsync(requestBody);
 
 
 ```

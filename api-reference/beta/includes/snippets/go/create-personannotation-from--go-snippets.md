@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewPersonAnnotation()
@@ -25,7 +25,7 @@ requestBody.SetDetail(detail)
 displayName := "About Me"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.Me().Profile().Notes().Post(context.Background(), requestBody, nil)
+notes, err := graphClient.Me().Profile().Notes().Post(context.Background(), requestBody, nil)
 
 
 ```

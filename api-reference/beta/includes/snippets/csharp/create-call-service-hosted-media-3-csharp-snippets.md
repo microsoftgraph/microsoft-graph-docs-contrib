@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
 var requestBody = new Call
 {
@@ -21,7 +22,7 @@ var requestBody = new Call
 			AdditionalData = new Dictionary<string, object>
 			{
 				{
-					"applicationInstance" , new 
+					"applicationInstance" , new Identity
 					{
 						OdataType = "#microsoft.graph.identity",
 						DisplayName = "Calling Bot",
@@ -46,7 +47,7 @@ var requestBody = new Call
 				AdditionalData = new Dictionary<string, object>
 				{
 					{
-						"phone" , new 
+						"phone" , new Identity
 						{
 							OdataType = "#microsoft.graph.identity",
 							Id = "+12345678901",
@@ -60,18 +61,15 @@ var requestBody = new Call
 	{
 		Modality.Audio,
 	},
-	MediaConfig = new MediaConfig
+	MediaConfig = new AppHostedMediaConfig
 	{
 		OdataType = "#microsoft.graph.appHostedMediaConfig",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"blob" , "<Media Session Configuration>"
-			},
-		},
+		Blob = "<Media Session Configuration>",
 	},
 	TenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Communications.Calls.PostAsync(requestBody);
 
 

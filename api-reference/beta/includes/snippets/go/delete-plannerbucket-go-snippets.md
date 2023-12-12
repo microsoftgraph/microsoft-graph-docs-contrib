@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
@@ -23,7 +23,7 @@ configuration := &graphplanner.PlannerBucketItemRequestBuilderDeleteRequestConfi
 	Headers: headers,
 }
 
-graphClient.Planner().Buckets().ByBucketId("plannerBucket-id").Delete(context.Background(), configuration)
+graphClient.Planner().Buckets().ByPlannerBucketId("plannerBucket-id").Delete(context.Background(), configuration)
 
 
 ```

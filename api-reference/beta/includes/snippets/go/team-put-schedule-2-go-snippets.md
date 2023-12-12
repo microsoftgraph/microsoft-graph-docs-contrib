@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewSchedule()
@@ -44,8 +44,14 @@ longitude := float64(24.34616)
 approvedLocation.SetLongitude(&longitude) 
 timeClockSettings.SetApprovedLocation(approvedLocation)
 requestBody.SetTimeClockSettings(timeClockSettings)
+additionalData := map[string]interface{}{
+	"startDayOfWeek" : "Tuesday", 
+	activitiesIncludedWhenCopyingShiftsEnabled := true
+requestBody.SetActivitiesIncludedWhenCopyingShiftsEnabled(&activitiesIncludedWhenCopyingShiftsEnabled) 
+}
+requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Teams().ByTeamId("team-id").Schedule().Put(context.Background(), requestBody, nil)
+schedule, err := graphClient.Teams().ByTeamId("team-id").Schedule().Put(context.Background(), requestBody, nil)
 
 
 ```

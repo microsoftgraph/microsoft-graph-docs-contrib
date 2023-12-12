@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Organization().ByOrganization().Id("organization-id").CertificateBasedAuthConfiguration().ByCertificateBasedAuthConfiguration().Id("certificateBasedAuthConfiguration-id").Delete(context.Background(), nil)
+graphClient.Organization().ByOrganizationId("organization-id").CertificateBasedAuthConfiguration().ByCertificateBasedAuthConfigurationId("certificateBasedAuthConfiguration-id").Delete(context.Background(), nil)
 
 
 ```

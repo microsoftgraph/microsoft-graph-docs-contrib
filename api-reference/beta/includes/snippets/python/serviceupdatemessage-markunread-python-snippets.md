@@ -4,16 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = MarkUnreadPostRequestBody()
-request_body.MessageIds(['MC172851', 'MC167983', ])
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = MarkUnreadPostRequestBody(
+	message_ids = [
+		"MC172851",
+		"MC167983",
+	],
+)
 
-
-
-result = await client.admin.service_announcement.messages.mark_unread.post(request_body = request_body)
+result = await graph_client.admin.service_announcement.messages.mark_unread.post(request_body)
 
 
 ```

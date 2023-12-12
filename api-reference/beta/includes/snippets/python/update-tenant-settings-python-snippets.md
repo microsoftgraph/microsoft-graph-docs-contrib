@@ -4,30 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = SharepointSettings()
-request_body.DeletedUserPersonalSiteRetentionPeriodInDays = 365
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.ExcludedFileExtensionsForSyncApp(['.mp3', ])
+request_body = SharepointSettings(
+	deleted_user_personal_site_retention_period_in_days = 365,
+	excluded_file_extensions_for_sync_app = [
+		".mp3",
+	],
+	image_tagging_option = ImageTaggingChoice.Enhanced,
+	is_legacy_auth_protocols_enabled = True,
+	is_sites_storage_limit_automatic = False,
+	is_sync_button_hidden_on_personal_site = False,
+	is_unmanaged_sync_app_for_tenant_restricted = False,
+	personal_site_default_storage_limit_in_m_b = 120000,
+)
 
-request_body.imagetaggingoption(ImageTaggingChoice.Enhanced('imagetaggingchoice.enhanced'))
-
-request_body.is_legacy_auth_protocols_enabled = True
-
-request_body.is_sites_storage_limit_automatic = False
-
-request_body.is_sync_button_hidden_on_personal_site = False
-
-request_body.is_unmanaged_sync_app_for_tenant_restricted = False
-
-request_body.PersonalSiteDefaultStorageLimitInMB = 120000
-
-
-
-
-result = await client.admin.sharepoint.settings.patch(request_body = request_body)
+result = await graph_client.admin.sharepoint.settings.patch(request_body)
 
 
 ```

@@ -6,9 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Drives.Item.Items.Item.Restore;
+using Microsoft.Graph.Models;
 
-var requestBody = new Microsoft.Graph.Beta.Drives.Item.Items.Item.Restore.RestorePostRequestBody
+var requestBody = new RestorePostRequestBody
 {
 	ParentReference = new ItemReference
 	{
@@ -16,6 +18,8 @@ var requestBody = new Microsoft.Graph.Beta.Drives.Item.Items.Item.Restore.Restor
 	},
 	Name = "String",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Restore.PostAsync(requestBody);
 
 

@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Models;
 
 var requestBody = new EducationRubric
 {
@@ -26,15 +27,10 @@ var requestBody = new EducationRubric
 				Content = "",
 				ContentType = BodyType.Text,
 			},
-			Grading = new EducationAssignmentGradeType
+			Grading = new EducationAssignmentPointsGradeType
 			{
 				OdataType = "#microsoft.graph.educationAssignmentPointsGradeType",
-				AdditionalData = new Dictionary<string, object>
-				{
-					{
-						"maxPoints" , 2
-					},
-				},
+				MaxPoints = 2f,
 			},
 		},
 		new RubricLevel
@@ -45,15 +41,10 @@ var requestBody = new EducationRubric
 				Content = "",
 				ContentType = BodyType.Text,
 			},
-			Grading = new EducationAssignmentGradeType
+			Grading = new EducationAssignmentPointsGradeType
 			{
 				OdataType = "#microsoft.graph.educationAssignmentPointsGradeType",
-				AdditionalData = new Dictionary<string, object>
-				{
-					{
-						"maxPoints" , 1
-					},
-				},
+				MaxPoints = 1f,
 			},
 		},
 	},
@@ -116,11 +107,13 @@ var requestBody = new EducationRubric
 			Weight = 50.0f,
 		},
 	},
-	Grading = new EducationAssignmentGradeType
+	Grading = new EducationAssignmentPointsGradeType
 	{
 		OdataType = "#microsoft.graph.educationAssignmentPointsGradeType",
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Education.Me.Rubrics.PostAsync(requestBody);
 
 

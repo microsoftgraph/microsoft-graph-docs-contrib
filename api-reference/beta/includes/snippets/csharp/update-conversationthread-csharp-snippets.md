@@ -4,15 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var conversationThread = new ConversationThread
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new ConversationThread
 {
-	IsLocked = true
+	IsLocked = true,
 };
 
-await graphClient.Groups["{group-id}"].Threads["{conversationThread-id}"]
-	.Request()
-	.UpdateAsync(conversationThread);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Groups["{group-id}"].Threads["{conversationThread-id}"].PatchAsync(requestBody);
+
 
 ```

@@ -4,44 +4,33 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = SchemaExtension()
-request_body.id = 'courses'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.description = 'Graph Learn training courses extensions'
+request_body = SchemaExtension(
+	id = "courses",
+	description = "Graph Learn training courses extensions",
+	target_types = [
+		"Group",
+	],
+	properties = [
+		ExtensionSchemaProperty(
+			name = "courseId",
+			type = "Integer",
+		),
+		ExtensionSchemaProperty(
+			name = "courseName",
+			type = "String",
+		),
+		ExtensionSchemaProperty(
+			name = "courseType",
+			type = "String",
+		),
+	],
+)
 
-request_body.TargetTypes(['Group', ])
-
-properties_extension_schema_property1 = ExtensionSchemaProperty()
-properties_extension_schema_property1.name = 'courseId'
-
-properties_extension_schema_property1.type = 'Integer'
-
-
-propertiesArray []= propertiesExtensionSchemaProperty1;
-properties_extension_schema_property2 = ExtensionSchemaProperty()
-properties_extension_schema_property2.name = 'courseName'
-
-properties_extension_schema_property2.type = 'String'
-
-
-propertiesArray []= propertiesExtensionSchemaProperty2;
-properties_extension_schema_property3 = ExtensionSchemaProperty()
-properties_extension_schema_property3.name = 'courseType'
-
-properties_extension_schema_property3.type = 'String'
-
-
-propertiesArray []= propertiesExtensionSchemaProperty3;
-request_body.properties(propertiesArray)
-
-
-
-
-
-result = await client.schema_extensions.post(request_body = request_body)
+result = await graph_client.schema_extensions.post(request_body)
 
 
 ```

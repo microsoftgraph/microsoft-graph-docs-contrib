@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 title: video resource type
 ms.localizationpriority: medium
 description: "The video resource groups video-related data items into a single structure."

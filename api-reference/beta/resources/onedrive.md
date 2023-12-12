@@ -4,7 +4,7 @@ description: "You can use Microsoft Graph to create an app that connects with fi
 ms.localizationpriority: high
 ms.prod: "sharepoint"
 doc_type: conceptualPageType
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 ---
 
 # Working with files in Microsoft Graph
@@ -80,7 +80,7 @@ This table provides an example of different ways to use the colon character to a
 | `/me/drive/root:/path/to/folder:/children` | List the children of a **DriveItem** by path relative to the root of the user's OneDrive. |
 | `/me/drive/items/{item-id}:/path/to/folder:/children` | List the children of a **DriveItem** by path relative to another item. |
 
-For more information, see [addressing driveItems](/graph/concepts/onedrive-addressing-driveitems).
+For more information, see [addressing driveItems](/graph/onedrive-addressing-driveitems).
 
 ## Drive resource
 

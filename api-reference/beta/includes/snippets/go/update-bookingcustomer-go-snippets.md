@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewBookingCustomer()
@@ -21,7 +21,7 @@ requestBody.SetDisplayName(&displayName)
 emailAddress := "adele@relecloud.com"
 requestBody.SetEmailAddress(&emailAddress) 
 
-result, err := graphClient.BookingBusinesses().ByBookingBusinesseId("bookingBusiness-id").Customers().ByCustomerId("bookingCustomer-id").Patch(context.Background(), requestBody, nil)
+customers, err := graphClient.BookingBusinesses().ByBookingBusinessId("bookingBusiness-id").Customers().ByBookingCustomerId("bookingCustomer-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

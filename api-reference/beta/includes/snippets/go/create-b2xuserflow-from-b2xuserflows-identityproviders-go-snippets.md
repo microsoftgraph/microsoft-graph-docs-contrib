@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewB2xIdentityUserFlow()
@@ -34,11 +34,10 @@ identityProvider.SetName(&name)
 
 identityProviders := []graphmodels.IdentityProviderable {
 	identityProvider,
-
 }
 requestBody.SetIdentityProviders(identityProviders)
 
-result, err := graphClient.Identity().B2xUserFlows().Post(context.Background(), requestBody, nil)
+b2xUserFlows, err := graphClient.Identity().B2xUserFlows().Post(context.Background(), requestBody, nil)
 
 
 ```

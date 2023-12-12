@@ -19,7 +19,7 @@ In general, the best way to compare the Azure Active Directory (Azure AD) Graph 
 - [Microsoft Graph beta metadata](https://graph.microsoft.com/beta/$metadata)
 - [Microsoft Graph v1.0 metadata](https://graph.microsoft.com/v1.0/$metadata)
 
-This article highlights property differences between resources. If a property is not shown in this list, it is already available in the [v1.0 version](/graph/api/overview) of Microsoft Graph, with exactly the same name as in Azure AD Graph.
+This article highlights property differences between resources. If a property isn't shown in this list, it's already available in the [v1.0 version](/graph/api/overview) of Microsoft Graph, with exactly the same name as in Azure AD Graph.
 
 Because the [user](#user-property-differences) and [group](#group-property-differences) resources are so frequently used, they're listed first. Other resources are listed alphabetically.
 
@@ -29,7 +29,7 @@ The Azure AD Graph **User** resource inherits from **DirectoryObject**; it has b
 
 The Microsoft Graph v1.0 endpoint returns a limited set of user properties by default, while Azure AD Graph returns all properties. To read other properties that aren't returned by default, specify them in a `$select` query. For more information, see the [user resource type](/graph/api/resources/user).
 
-The following table lists the additional property differences.
+The following table lists the more property differences.
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br>property|Comments|
 |---|---|---|
@@ -42,11 +42,11 @@ The following table lists the additional property differences.
 | **mobile** | beta  &nbsp;-&nbsp; **mobilePhone** <br> v1.0 &nbsp;-&nbsp; **mobilePhone** | |
 | **passwordProfile/enforceChangePasswordPolicy** | beta  &nbsp;-&nbsp; **passwordProfile/forceChangePasswordNextSignIn** <br> v1.0 &nbsp;-&nbsp; **passwordProfile/forceChangePasswordNextSignIn** | |
 | **passwordProfile/forceChangePasswordNextLogin** | beta  &nbsp;-&nbsp; **passwordProfile/forceChangePasswordNextSignInWithMfa** <br> v1.0 &nbsp;-&nbsp; **passwordProfile/forceChangePasswordNextSignInWithMfa** | |
-| **provisioningErrors** | beta &nbsp;-&nbsp; _Not available_ <br> v1.0 &nbsp;-&nbsp; _Not available_ | This property and its information is deprecated.  However, a new property describing any AD Connect related provisioning errors can be found in **onPremisesProvisioningErrors** |
+| **provisioningErrors** | beta &nbsp;-&nbsp; _Not available_ <br> v1.0 &nbsp;-&nbsp; _Not available_ | This property and its information are deprecated.  However, a new property describing any AD Connect related provisioning errors can be found in **onPremisesProvisioningErrors** |
 | **refreshTokensValidFromDateTime** | beta&nbsp;-&nbsp;**signinSessionsValidFromDateTime**<br>v1.0&nbsp;-&nbsp;**signinSessionsValidFromDateTime** | |
 | **signinNames** | beta &nbsp;-&nbsp; **identities/signInType** <br> v1.0 &nbsp;-&nbsp; **identities/signInType** | This property is now part of the [objectIdentity](/graph/api/resources/objectIdentity) resource.|
 | **telephoneNumber** | beta  &nbsp;-&nbsp; **businessPhones** <br> v1.0 &nbsp;-&nbsp; **businessPhones** | |
-| **thumbnailPhoto** | beta  &nbsp;-&nbsp; **photo**, photos <br> v1.0 &nbsp;-&nbsp; **photo**, photos | The Azure AD thumbnail photo is not available through Microsoft Graph.  Use the [photo API](/graph/api/resources/profilephoto) instead. |
+| **thumbnailPhoto** | beta  &nbsp;-&nbsp; **photo**, photos <br> v1.0 &nbsp;-&nbsp; **photo**, photos | The Microsoft Entra thumbnail photo isn't available through Microsoft Graph.  Use the [photo API](/graph/api/resources/profilephoto) instead. |
 | **userIdentities** | beta &nbsp;-&nbsp; **identities** <br> v1.0 &nbsp;-&nbsp; **identities** | See [objectIdentity](/graph/api/resources/objectIdentity) resource type for more details.|
 | **userState** | beta  &nbsp;-&nbsp; **externalUserState** <br> v1.0 &nbsp;-&nbsp; **externalUserState** | |
 | **userStateChangedOn** | beta&nbsp;-&nbsp;**externalUserStateChangeDateTime**<br>v1.0&nbsp;-&nbsp;**externalUserStateChangeDateTime** | |
@@ -59,7 +59,7 @@ The Azure AD Graph **Group** resource inherits from **DirectoryObject**; it has 
 |---|---|---|
 | **dirSyncEnabled** | beta &nbsp;-&nbsp;**onPremisesSyncEnabled** <br> v1.0 &nbsp;-&nbsp; **onPremisesSyncEnabled** | |
 | **lastDirSyncDateTime** | beta&nbsp;-&nbsp;**onPremisesLastSyncDateTime**<br>v1.0&nbsp;-&nbsp;**onPremisesLastSyncDateTime** | |
-| **provisioningErrors** | beta &nbsp;-&nbsp; _Not available_ <br> v1.0 &nbsp;-&nbsp; _Not available_ | This property and its information is deprecated.  However, a new property describing any AD Connect related provisioning errors can be found in **onPremisesProvisioningErrors** |
+| **provisioningErrors** | beta &nbsp;-&nbsp; _Not available_ <br> v1.0 &nbsp;-&nbsp; _Not available_ | This property and its information are deprecated.  However, a new property describing any AD Connect related provisioning errors can be found in **onPremisesProvisioningErrors** |
 
 ## Application property differences
 
@@ -68,12 +68,12 @@ The Azure AD Graph **Application** resource inherits from **DirectoryObject**; i
 
 | Azure AD Graph <br>(v1.6) property | Microsoft Graph<br> property                                                                                                                          | Comments                                                                                                                                                                                                                                                                                                                     |
 |------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **acceptMappedClaims**             | beta &nbsp;-&nbsp;**api/acceptMappedClaims** <br> v1.0 &nbsp;-&nbsp; **api/acceptMappedClaims**                                                       | acceptMappedClaims is now part of the new api resource.                                                                                                                                                                                                                                                                      |
+| **acceptMappedClaims**             | beta &nbsp;-&nbsp;**api/acceptMappedClaims** <br> v1.0 &nbsp;-&nbsp; **api/acceptMappedClaims**                                                       | acceptMappedClaims are now part of the new api resource.                                                                                                                                                                                                                                                                      |
 | **availableToOtherTenants**        | beta &nbsp;-&nbsp; **signInAudience** <br> v1.0 &nbsp;-&nbsp; **signInAudience**                                                                      | The default value for availableToOtherTenants is `false` (meaning `AzureADMyOrg`) while for signInAudience is `AzureADandPersonalMicrosoftAccount`.                                                                                                                                                                                                                                                                                                                              |
 | **errorUrl**                       | beta &nbsp;-&nbsp;_not available_ <br> v1.0 &nbsp;-&nbsp;  _not available_                                                                            | This property is deprecated.                                                                                                                                                                                                                                                                                                 |
 | **homepage**                       | beta &nbsp;-&nbsp;**web/homePageUrl** <br> v1.0 &nbsp;-&nbsp; **web/homePageUrl**                                                                     | homepage is now part of the new web resource.                                                                                                                                                                                                                                                                                |
 | **informationalUrls**              | beta &nbsp;-&nbsp;**info** <br> v1.0 &nbsp;-&nbsp; **info**                                                                                           |                                                                                                                                                                                                                                                                                                                              |
-| **knownClientApplications**        | beta&nbsp;-&nbsp;**api/knownClientApplications** <br> v1.0 &nbsp;-&nbsp;**api/knownClientApplications**                                               | knownClientApplications is now part of the new api resource.                                                                                                                                                                                                                                                                 |
+| **knownClientApplications**        | beta&nbsp;-&nbsp;**api/knownClientApplications** <br> v1.0 &nbsp;-&nbsp;**api/knownClientApplications**                                               | knownClientApplications are now part of the new api resource.                                                                                                                                                                                                                                                                 |
 | **logoutUrl**                      | beta &nbsp;-&nbsp;**web/logoutUrl** <br> v1.0 &nbsp;-&nbsp; **web/logoutUrl**                                                                         | logoutUrl is now part of the web resource.                                                                                                                                                                                                                                                                                   |
 | **logoUrl**                        | beta &nbsp;-&nbsp;**info/logoUrl** <br> v1.0 &nbsp;-&nbsp; **info/logoUrl**                                                                           | logoUrl is now part of the new info resource.                                                                                                                                                                                                                                                                                |
 | **mainLogo**                       | beta &nbsp;-&nbsp;**logo** <br> v1.0 &nbsp;-&nbsp;  **logo**                                                                                          |                                                                                                                                                                                                                                                                                                                              |
@@ -81,9 +81,9 @@ The Azure AD Graph **Application** resource inherits from **DirectoryObject**; i
 | **oauth2AllowImplicitFlow**        | beta&nbsp;-&nbsp;**web/implicitGrantSettings/enableAccessTokenIssuance**<br>v1.0 &nbsp;-&nbsp;**web/implicitGrantSettings/enableAccessTokenIssuance** | Renamed, and now part of the new implicitGrantSettings resource.                                                                                                                                                                                                                                                             |
 | **oauth2AllowUrlPathMatching**     | beta &nbsp;-&nbsp;_not available_ <br> v1.0 &nbsp;-&nbsp;  _not available_                                                                            | This property is deprecated.                                                                                                                                                                                                                                                                                                 |
 | **oauth2Permissions**              | beta&nbsp;-&nbsp;**api/oauth2PermissionScopes**<br> v1.0 &nbsp;-&nbsp;**api/oauth2PermissionScopes**                                                  | Renamed and now part of the new api resource.                                                                                                                                                                                                                                                                                |
-| **publicClient**                   | beta &nbsp;-&nbsp; **isFallbackPublicClient** <br> v1.0 &nbsp;-&nbsp; **isFallbackPublicClient**                                                      | This property now has a new meaning &nbsp;-&nbsp; it contains the public client settings like redirectUris. Determining whether the app is a public or confidential client or not is now done automatically, with the isFallbackPublicClient property handling the one special case that cannot be determined automatically. |
+| **publicClient**                   | beta &nbsp;-&nbsp; **isFallbackPublicClient** <br> v1.0 &nbsp;-&nbsp; **isFallbackPublicClient**                                                      | This property now has a new meaning &nbsp;-&nbsp; it contains the public client settings like redirectUris. Determining whether the app is a public or confidential client or not is now done automatically, with the isFallbackPublicClient property handling the one special case that can't be determined automatically. |
 | **recordConsentConditions**        | beta &nbsp;-&nbsp;_not available_ <br> v1.0 &nbsp;-&nbsp;  _not available_                                                                            | This property is deprecated.                                                                                                                                                                                                                                                                                                 |
-| **replyUrls**                      | beta&nbsp;-&nbsp;**web/redirectUris**, **publicClient/redirectUris**<br> v1.0 &nbsp;-&nbsp;**web/redirectUris**, **publicClient/redirectUris**        | As well as being renamed, redirectUris is now part of the new web and publicClient resources. This allows developers to use specific URIs for their web and public clients (such as an installed application on a desktop device).                                                                                           |
+| **replyUrls**                      | beta&nbsp;-&nbsp;**web/redirectUris**, **publicClient/redirectUris**<br> v1.0 &nbsp;-&nbsp;**web/redirectUris**, **publicClient/redirectUris**        | And being renamed, redirectUris is now part of the new web and publicClient resources. This allows developers to use specific URIs for their web and public clients (such as an installed application on a desktop device).                                                                                           |
 | **samlMetadataUrl**                | beta  &nbsp;-&nbsp; **samlMetadataUrl** <br> v1.0 &nbsp;-&nbsp; _Not yet available_                                                                  |                                                                                                                                                                                                                                                                                                                              |
 | **serviceEndpoints**               | beta  &nbsp;-&nbsp; _Not available_  <br> v1.0 &nbsp;-&nbsp; _Not available_                                                                          | This property is deprecated, but is planned for servicePrincipal.                                                                                                                                                                                                                                                            |
 
@@ -106,14 +106,14 @@ The Azure AD Graph **Contact** resource inherits from **DirectoryObject**; it ha
 | **city** | beta&nbsp;-&nbsp;**addresse/city** <br> v1.0 &nbsp;-&nbsp; **addresses/city**  | The **city** property is part of the **addresses** resource collection. |
 | **country** | beta&nbsp;-&nbsp;**addresses/countryOrRegion**<br> v1.0&nbsp;-&nbsp;**addresses/countryOrRegion**  | The **countryOrRegion** property is part of the **addresses** resource collection. |
 | **dirSyncEnabled** | beta &nbsp;-&nbsp;**onPremisesSyncEnabled** <br> v1.0 &nbsp;-&nbsp;**onPremisesSyncEnabled**   | |
-| **facsimileTelephoneNumber** | beta&nbsp;-&nbsp;**phones/businessFax** <br> v1.0 &nbsp;-&nbsp;**phones/businessFax** | Now part of the **phones** collection which supports various phone types. |
+| **facsimileTelephoneNumber** | beta&nbsp;-&nbsp;**phones/businessFax** <br> v1.0 &nbsp;-&nbsp;**phones/businessFax** | Now part of the **phones** collection that supports various phone types. |
 | **physicalDeliveryOfficeName** | beta &nbsp;-&nbsp;**officeLocation** <br> v1.0 &nbsp;-&nbsp; **officeLocation** | |
 | **postalCode** | beta&nbsp;-&nbsp;**addresses/postalCode**<br> v1.0 &nbsp;-&nbsp;**addresses/postalCode** | The **postalCode** property is part of the **addresses** resource collection. |
-| **provisioningErrors** | beta &nbsp;-&nbsp; not available <br> v1.0 &nbsp;-&nbsp; not available | This property and its information is deprecated.  However, a new property describing any AD Connect related provisioning errors can be found in **onPremisesProvisioningErrors**. Currently this is only available in `beta`. |
+| **provisioningErrors** | beta &nbsp;-&nbsp; not available <br> v1.0 &nbsp;-&nbsp; not available | This property and its information are deprecated.  However, a new property describing any AD Connect related provisioning errors can be found in **onPremisesProvisioningErrors**. Currently this is only available in `beta`. |
 | **sipProxyAddress** |  beta &nbsp;-&nbsp;**imAddresses**<br> v1.0 &nbsp;-&nbsp;**imAddresses**  | |
 | **state** | beta &nbsp;-&nbsp;**addresses/state**<br> v1.0 &nbsp;-&nbsp; **addresses/state**  | The **state** property is part of the **addresses** resource collection. |
 | **streetAddress** | beta &nbsp;-&nbsp;**addresses/street**<br> v1.0 &nbsp;-&nbsp;**addresses/street**  | The **street** property is part of the **addresses** resource collection. |
-| **telephoneNumber** | beta&nbsp;-&nbsp;**phones/business** <br> v1.0 &nbsp;-&nbsp;**phones/business** | Now part of the **phones** collection which supports various phone types. |
+| **telephoneNumber** | beta&nbsp;-&nbsp;**phones/business** <br> v1.0 &nbsp;-&nbsp;**phones/business** | Now part of the **phones** collection that supports various phone types. |
 | **thumbnailPhoto** | beta &nbsp;-&nbsp;_Not&nbsp;yet&nbsp;available_&nbsp;<br> v1.0 &nbsp;-&nbsp; _Not yet available_ | |
 
 ## Contract property differences
@@ -144,13 +144,13 @@ The Azure AD Graph **Device** resource inherits from **DirectoryObject**; it has
 
 ## DirectoryObject property differences
 
-The Azure AD Graph **DirectoryObject** resource has been renamed to **directoryObject** in Microsoft Graph. The changes to its properties will also be seen in other resources that inherit from **DirectoryObject**. Here are the property differences:
+The Azure AD Graph **DirectoryObject** resource has been renamed to **directoryObject** in Microsoft Graph. The changes to its properties are seen in other resources that inherit from **DirectoryObject**. Here are the property differences:
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
 | **deletionTimestamp** | beta&nbsp;-&nbsp;**deletedDateTime** <br> v1.0 &nbsp;-&nbsp; **deletedDateTime** | While **deletionTimestamp** was a DateTime type, **deletedDateTime** is a DateTimeOffset type.  |
 | **objectId** | beta&nbsp;-&nbsp;**id** <br> v1.0 &nbsp;-&nbsp; **id** | The **id** property in Microsoft Graph is inherited from the [entity](/graph/api/resources/entity) resource. |
-| **objectType** | beta&nbsp;-&nbsp;*Not available* <br> v1.0 &nbsp;-&nbsp; *Not available* | This property is not used in Microsoft Graph. Instead, Microsoft Graph returns the **@odata.type** property but only for APIs that might return objects of different types or derived types. For example, the [List group members](/graph/api/group-list-members) API might return members who are [users](/graph/api/resources/user), [groups](/graph/api/resources/group), [service principals](/graph/api/resources/serviceprincipal), [organizational contacts](/graph/api/resources/orgcontact), or [devices](/graph/api/resources/device). For users, the **@odata.type** is `#microsoft.graph.user`. |
+| **objectType** | beta&nbsp;-&nbsp;*Not available* <br> v1.0 &nbsp;-&nbsp; *Not available* | This property isn't used in Microsoft Graph. Instead, Microsoft Graph returns the **@odata.type** property but only for APIs that might return objects of different types or derived types. For example, the [List group members](/graph/api/group-list-members) API might return members who are [users](/graph/api/resources/user), [groups](/graph/api/resources/group), [service principals](/graph/api/resources/serviceprincipal), [organizational contacts](/graph/api/resources/orgcontact), or [devices](/graph/api/resources/device). For users, the **@odata.type** is `#microsoft.graph.user`. |
 
 ## DirectoryObjectReference property differences
 
@@ -166,7 +166,7 @@ The Azure AD Graph **Domain** resource has been renamed to **domain** in Microso
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
-| **name** | beta&nbsp;-&nbsp;**id** <br> v1.0 &nbsp;-&nbsp; **id** | In Microsoft Graph, the unique identifier (id) contains the domain name; the `name` property doesn't exist. |
+| **name** | beta&nbsp;-&nbsp;**id** <br> v1.0 &nbsp;-&nbsp; **id** | In Microsoft Graph, the unique identifier (ID) contains the domain name; the `name` property doesn't exist. |
 | **forceDeleteState** |  beta&nbsp;-&nbsp;**state** <br> v1.0 &nbsp;-&nbsp; **state** | In Azure AD Graph, there are separate forceDelete and domain state properties.  In Microsoft Graph, all domain states are handled by the state property. |
 | **isDefaultForCloudRedirections** | beta&nbsp;-&nbsp;_Not&nbsp;yet&nbsp;available_&nbsp;<br> v1.0 &nbsp;-&nbsp; _Not yet available_ | |
 
@@ -176,8 +176,8 @@ The Azure AD Graph **OAuth2PermissionsGrant** resource has been renamed to **oAu
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
-| **expiryTime** | beta&nbsp;-&nbsp;**expiryTime** <br> v1.0&nbsp;-&nbsp;_Removed_ | This property is not used and is removed in Microsoft Graph v1.0. |
-| **startTime** | beta&nbsp;-&nbsp;**startTime** <br> v1.0&nbsp;-&nbsp;_Removed_  | This property is not used and is removed in Microsoft Graph v1.0. |
+| **expiryTime** | beta&nbsp;-&nbsp;**expiryTime** <br> v1.0&nbsp;-&nbsp;_Removed_ | This property isn't used and is removed in Microsoft Graph v1.0. |
+| **startTime** | beta&nbsp;-&nbsp;**startTime** <br> v1.0&nbsp;-&nbsp;_Removed_  | This property isn't used and is removed in Microsoft Graph v1.0. |
 
 ## Policy property differences
 
@@ -214,7 +214,7 @@ The Azure AD Graph **TenantDetail** resource inherits from **DirectoryObject**; 
 |---|---|---|
 | **companyLastDirSyncTime** | beta&nbsp;-&nbsp;**onPremisesLastSyncDateTime** <br> v1.0&nbsp;-&nbsp;**onPremisesLastSyncDateTime** |  |
 | **dirSyncEnabled** | beta&nbsp;-&nbsp;**onPremisesSyncEnabled** <br> v1.0 &nbsp;-&nbsp; **onPremisesSyncEnabled** |  |
-| **provisioningErrors** | beta&nbsp;-&nbsp;_Not available_ <br> v1.0&nbsp;-&nbsp;_Not available_ | This property and its information is deprecated.|
+| **provisioningErrors** | beta&nbsp;-&nbsp;_Not available_ <br> v1.0&nbsp;-&nbsp;_Not available_ | This property and its information are deprecated.|
 | **telephoneNumber** | beta&nbsp;-&nbsp;**businessPhones** <br> v1.0&nbsp;-&nbsp;**businessPhones** |  |
 
 ## TrustedCasForPasswordlessAuth property differences
@@ -238,4 +238,3 @@ The Azure AD Graph **CertificateAuthorityInformation** has been renamed to **cer
 
 - Learn about [method differences](migrate-azure-ad-graph-method-differences.md) between Azure AD Graph and Microsoft Graph.
 - Review the [checklist](migrate-azure-ad-graph-planning-checklist.md) again.
-

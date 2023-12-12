@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewPermissionGrantConditionSet()
@@ -21,7 +21,7 @@ requestBody.SetPermissionType(&permissionType)
 resourceApplication := "00000003-0000-0000-c000-000000000000"
 requestBody.SetResourceApplication(&resourceApplication) 
 
-result, err := graphClient.Policies().PermissionGrantPolicies().ByPermissionGrantPolicieId("permissionGrantPolicy-id").Excludes().Post(context.Background(), requestBody, nil)
+excludes, err := graphClient.Policies().PermissionGrantPolicies().ByPermissionGrantPolicyId("permissionGrantPolicy-id").Excludes().Post(context.Background(), requestBody, nil)
 
 
 ```

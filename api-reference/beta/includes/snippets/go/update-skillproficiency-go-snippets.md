@@ -12,19 +12,18 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewSkillProficiency()
 categories := []string {
 	"Professional",
-
 }
 requestBody.SetCategories(categories)
 proficiency := graphmodels.ADVANCEDPROFESSIONAL_SKILLPROFICIENCYLEVEL 
 requestBody.SetProficiency(&proficiency) 
 
-result, err := graphClient.Me().Profile().Skills().BySkillId("skillProficiency-id").Patch(context.Background(), requestBody, nil)
+skills, err := graphClient.Me().Profile().Skills().BySkillProficiencyId("skillProficiency-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

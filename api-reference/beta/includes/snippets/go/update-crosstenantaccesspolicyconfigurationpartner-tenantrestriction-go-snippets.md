@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewCrossTenantAccessPolicyConfigurationPartner()
@@ -30,7 +30,6 @@ crossTenantAccessPolicyTarget.SetTargetType(&targetType)
 
 targets := []graphmodels.CrossTenantAccessPolicyTargetable {
 	crossTenantAccessPolicyTarget,
-
 }
 usersAndGroups.SetTargets(targets)
 tenantRestrictions.SetUsersAndGroups(usersAndGroups)
@@ -47,13 +46,12 @@ crossTenantAccessPolicyTarget.SetTargetType(&targetType)
 
 targets := []graphmodels.CrossTenantAccessPolicyTargetable {
 	crossTenantAccessPolicyTarget,
-
 }
 applications.SetTargets(targets)
 tenantRestrictions.SetApplications(applications)
 requestBody.SetTenantRestrictions(tenantRestrictions)
 
-result, err := graphClient.Policies().CrossTenantAccessPolicy().Partners().ByPartnerId("crossTenantAccessPolicyConfigurationPartner-tenantId").Patch(context.Background(), requestBody, nil)
+partners, err := graphClient.Policies().CrossTenantAccessPolicy().Partners().ByCrossTenantAccessPolicyConfigurationPartnerTenantId("crossTenantAccessPolicyConfigurationPartner-tenantId").Patch(context.Background(), requestBody, nil)
 
 
 ```

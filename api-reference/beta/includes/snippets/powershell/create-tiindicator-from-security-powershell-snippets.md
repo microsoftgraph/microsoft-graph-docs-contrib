@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Security
+Import-Module Microsoft.Graph.Beta.Security
 
 $params = @{
 	action = "alert"
@@ -28,6 +28,6 @@ $params = @{
 	tlpLevel = "green"
 }
 
-New-MgSecurityTiIndicator -BodyParameter $params
+New-MgBetaSecurityTiIndicator -BodyParameter $params
 
 ```

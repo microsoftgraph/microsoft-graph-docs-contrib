@@ -14,6 +14,7 @@ restorePointSetting.frequencyInHours = 16;
 restorePointSetting.userRestoreEnabled = true;
 cloudPcUserSetting.restorePointSetting = restorePointSetting;
 cloudPcUserSetting.localAdminEnabled = false;
+cloudPcUserSetting.resetEnabled = true;
 
 graphClient.deviceManagement().virtualEndpoint().userSettings("b0c2d35f-3385-46c8-a6f5-6c3dfad7ffff")
 	.buildRequest()

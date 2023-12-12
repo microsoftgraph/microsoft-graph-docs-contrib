@@ -4,51 +4,37 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = Message()
-request_body.subject = 'Annual review'
+graph_client = GraphServiceClient(credentials, scopes)
 
-body = ItemBody()
-body.contenttype(BodyType.HTML('bodytype.html'))
+request_body = Message(
+	subject = "Annual review",
+	body = ItemBody(
+		content_type = BodyType.Html,
+		content = "You should be proud!",
+	),
+	to_recipients = [
+		Recipient(
+			email_address = EmailAddress(
+				address = "rufus@contoso.com",
+			),
+		),
+	],
+	extensions = [
+		OpenTypeExtension(
+			odata_type = "microsoft.graph.openTypeExtension",
+			extension_name = "Com.Contoso.Referral",
+			additional_data = {
+					"company_name" : "Wingtip Toys",
+					"expiration_date" : "2015-12-30T11:00:00.000Z",
+					"deal_value" : 10000,
+			}
+		),
+	],
+)
 
-body.content = 'You should be proud!'
-
-
-request_body.body = body
-to_recipients_recipient1 = Recipient()
-to_recipients_recipient1email_address = EmailAddress()
-to_recipients_recipient1email_address.address = 'rufus@contoso.com'
-
-
-to_recipients_recipient1.email_address = to_recipients_recipient1email_address
-
-toRecipientsArray []= toRecipientsRecipient1;
-request_body.torecipients(toRecipientsArray)
-
-
-extensions_extension1 = Extension()
-extensions_extension1.@odata_type = 'microsoft.graph.openTypeExtension'
-
-additional_data = [
-'extension_name' => 'Com.Contoso.Referral', 
-'company_name' => 'Wingtip Toys', 
-'expiration_date' => '2015-12-30T11:00:00.000Z', 
-'deal_value' => 10000,
-];
-extensions_extension1.additional_data(additional_data)
-
-
-
-extensionsArray []= extensionsExtension1;
-request_body.extensions(extensionsArray)
-
-
-
-
-
-result = await client.me.messages.post(request_body = request_body)
+result = await graph_client.me.messages.post(request_body)
 
 
 ```

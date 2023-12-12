@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Directory().DeletedItems().ByDeletedItemId("directoryObject-id").Restore().Post(context.Background(), nil)
+restore, err := graphClient.Directory().DeletedItems().ByDirectoryObjectId("directoryObject-id").Restore().Post(context.Background(), nil)
 
 
 ```

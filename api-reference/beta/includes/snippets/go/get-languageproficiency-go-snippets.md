@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().Profile().Languages().ByLanguageId("languageProficiency-id").Get(context.Background(), nil)
+languages, err := graphClient.Me().Profile().Languages().ByLanguageProficiencyId("languageProficiency-id").Get(context.Background(), nil)
 
 
 ```

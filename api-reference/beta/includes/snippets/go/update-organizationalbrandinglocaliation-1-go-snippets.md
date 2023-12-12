@@ -14,7 +14,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
@@ -29,7 +29,7 @@ requestBody.SetSignInPageText(&signInPageText)
 usernameHintText := "DefaultHint"
 requestBody.SetUsernameHintText(&usernameHintText) 
 
-result, err := graphClient.Organization().ByOrganization().Id("organization-id").Branding().Patch(context.Background(), requestBody, configuration)
+branding, err := graphClient.Organization().ByOrganizationId("organization-id").Branding().Patch(context.Background(), requestBody, configuration)
 
 
 ```

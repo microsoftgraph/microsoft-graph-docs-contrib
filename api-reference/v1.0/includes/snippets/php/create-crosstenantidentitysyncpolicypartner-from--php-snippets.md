@@ -6,25 +6,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestBody = new IdentitySynchronizationPutRequestBody();
-$additionalData = [
-		'displayName' => 'Fabrikam', 
-		'userSyncInbound' => $requestBody = new UserSyncInbound();
-		$requestBody->setIsSyncAllowed(true);
-
-
+$requestBody = new CrossTenantIdentitySyncPolicyPartner();
+$requestBody->setDisplayName('Fabrikam');
+$userSyncInbound = new CrossTenantUserSyncInbound();
+$userSyncInbound->setIsSyncAllowed(true);
 $requestBody->setUserSyncInbound($userSyncInbound);
 
-];
-$requestBody->setAdditionalData($additionalData);
-
-
-
-
-$graphServiceClient->policies()->crossTenantAccessPolicy()->partners()->byPartnerId('crossTenantAccessPolicyConfigurationPartner-tenantId')->identitySynchronization()->put($requestBody);
-
+$result = $graphServiceClient->policies()->crossTenantAccessPolicy()->partners()->byCrossTenantAccessPolicyConfigurationPartnerTenantId('crossTenantAccessPolicyConfigurationPartner-tenantId')->identitySynchronization()->put($requestBody)->wait();
 
 ```

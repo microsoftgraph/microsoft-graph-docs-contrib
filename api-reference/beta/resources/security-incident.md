@@ -38,24 +38,26 @@ Because piecing the individual alerts together to gain insight into an attack ca
 |comments|[microsoft.graph.security.alertComment](security-alertcomment.md) collection|Array of comments created by the Security Operations (SecOps) team when the incident is managed.|
 |createdDateTime|DateTimeOffset|Time when the incident was first created.|
 |determination|microsoft.graph.security.alertDetermination|Specifies the determination of the incident. Possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `clean`, `insufficientData`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
-|tenantId|String|The Azure Active Directory tenant in which the alert was created.|
+|tenantId|String|The Microsoft Entra tenant in which the alert was created.|
 |incidentWebUrl|String|The URL for the incident page in the Microsoft 365 Defender portal.|
 |lastUpdateDateTime|DateTimeOffset|Time when the incident was last updated.|
 |redirectIncidentId|String|Only populated in case an incident is grouped together with another incident, as part of the logic that processes incidents. In such a case, the **status** property is `redirected`. |
 |severity|alertSeverity|Indicates the possible impact on assets. The higher the severity, the bigger the impact. Typically higher severity items require the most immediate attention. Possible values are: `unknown`, `informational`, `low`, `medium`, `high`, `unknownFutureValue`.|
-|status|[microsoft.graph.security.incidentStatus](#incidentstatus-values)|The status of the incident. Possible values are: `active`, `resolved`, `inProgress`, `redirected`, `unknownFutureValue`.|
+|status|[microsoft.graph.security.incidentStatus](#incidentstatus-values)|The status of the incident. Possible values are: `active`, `resolved`, `inProgress`, `redirected`, `unknownFutureValue`, and `awaitingAction`.|
 |customTags|String collection|Array of custom tags associated with an incident.|
 
 
 ### incidentStatus values 
+The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `awaitingAction`.
 
-| Member              | Description                                                                                                           |
-| :-------------------| :-------------------------------------------------------------------------------------------------------------------- |
-| active			        | The incident is in active state.                                                                                      |
-| resolved            | The incident is in resolved state.                                                                                    |
-| inProgress          | The incident is in mitigation progress.                                                                               |
-| redirected          | The incident was merged with another incident. The target incident ID appears in the **redirectIncidentId** property. |
-| unknownFutureValue  | Evolvable enumeration sentinel value. Do not use.                                                                     |
+| Member              | Description                                                                                                                                  |
+| :-------------------| :------------------------------------------------------------------------------------------------------------------------------------------- |
+| active			        | The incident is in active state.                                                                                                             |
+| resolved            | The incident is in resolved state.                                                                                                           |
+| inProgress          | The incident is in mitigation progress.                                                                                                      |
+| redirected          | The incident was merged with another incident. The target incident ID appears in the **redirectIncidentId** property.                        |
+| unknownFutureValue  | Evolvable enumeration sentinel value. Do not use.                                                                                            |
+| awaitingAction      | This incident has required actions from Defender Experts awaiting your action. This status can only be set by Microsoft 365 Defender experts.|
 
 
 

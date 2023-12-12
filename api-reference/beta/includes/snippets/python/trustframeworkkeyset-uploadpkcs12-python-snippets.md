@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = UploadPkcs12PostRequestBody()
-request_body.key = 'Base64-encoded-pfx-content'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.password = 'password-value'
+request_body = UploadPkcs12PostRequestBody(
+	key = "Base64-encoded-pfx-content",
+	password = "password-value",
+)
 
-
-
-
-result = await client.trust_framework.key_sets.by_key_set_id('trustFrameworkKeySet-id').upload_pkcs12.post(request_body = request_body)
+result = await graph_client.trust_framework.key_sets.by_trust_framework_key_set_id('trustFrameworkKeySet-id').upload_pkcs12.post(request_body)
 
 
 ```

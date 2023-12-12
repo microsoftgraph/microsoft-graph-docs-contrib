@@ -6,9 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Chats.Item.SendActivityNotification;
+using Microsoft.Graph.Beta.Models;
 
-var requestBody = new Microsoft.Graph.Beta.Chats.Item.SendActivityNotification.SendActivityNotificationPostRequestBody
+var requestBody = new SendActivityNotificationPostRequestBody
 {
 	Topic = new TeamworkActivityTopic
 	{
@@ -20,15 +22,10 @@ var requestBody = new Microsoft.Graph.Beta.Chats.Item.SendActivityNotification.S
 	{
 		Content = "New Task Created",
 	},
-	Recipient = new TeamworkNotificationRecipient
+	Recipient = new ChatMembersNotificationRecipient
 	{
 		OdataType = "microsoft.graph.chatMembersNotificationRecipient",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"chatId" , "19:1c3af46e9e0f4a5293343c8813c47619@thread.v2"
-			},
-		},
+		ChatId = "19:1c3af46e9e0f4a5293343c8813c47619@thread.v2",
 	},
 	TemplateParameters = new List<KeyValuePair>
 	{
@@ -39,6 +36,8 @@ var requestBody = new Microsoft.Graph.Beta.Chats.Item.SendActivityNotification.S
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Chats["{chat-id}"].SendActivityNotification.PostAsync(requestBody);
 
 

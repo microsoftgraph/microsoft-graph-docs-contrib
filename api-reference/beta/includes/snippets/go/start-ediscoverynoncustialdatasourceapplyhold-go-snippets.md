@@ -12,14 +12,13 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphsecurity.NewApplyHoldPostRequestBody()
 ids := []string {
 	"39333641443238353535383731453339",
 	"46333131344239353834433430454335",
-
 }
 requestBody.SetIds(ids)
 

@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Function to get the number of remediations by a device health scripts
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -60,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 397
+Content-Length: 436
 
 {
   "value": {
@@ -71,7 +73,8 @@ Content-Length: 397
         "@odata.type": "microsoft.graph.deviceHealthScriptRemediationHistoryData",
         "date": "2016-12-31",
         "remediatedDeviceCount": 5,
-        "noIssueDeviceCount": 2
+        "noIssueDeviceCount": 2,
+        "detectFailedDeviceCount": 7
       }
     ]
   }

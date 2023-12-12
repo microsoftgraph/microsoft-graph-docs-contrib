@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewPrivilegedAccessGroupEligibilityScheduleRequest()
@@ -37,7 +37,7 @@ requestBody.SetScheduleInfo(scheduleInfo)
 justification := "Assign eligible request."
 requestBody.SetJustification(&justification) 
 
-result, err := graphClient.IdentityGovernance().PrivilegedAccess().Group().EligibilityScheduleRequests().Post(context.Background(), requestBody, nil)
+eligibilityScheduleRequests, err := graphClient.IdentityGovernance().PrivilegedAccess().Group().EligibilityScheduleRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

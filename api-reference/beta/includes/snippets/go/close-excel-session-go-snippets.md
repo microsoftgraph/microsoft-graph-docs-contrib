@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
@@ -24,7 +24,7 @@ configuration := &graphdrives.DriveItemItemItemWorkbookCloseSessionRequestBuilde
 }
 requestBody := graphdrives.NewCloseSessionPostRequestBody()
 
-graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().CloseSession().Post(context.Background(), requestBody, configuration)
+graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().CloseSession().Post(context.Background(), requestBody, configuration)
 
 
 ```

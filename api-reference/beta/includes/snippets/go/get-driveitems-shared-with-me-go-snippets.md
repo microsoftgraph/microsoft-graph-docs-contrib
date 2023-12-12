@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Drives().ByDriveId("drive-id").SharedWithMe().Get(context.Background(), nil)
+sharedWithMe, err := graphClient.Drives().ByDriveId("drive-id").SharedWithMe().Get(context.Background(), nil)
 
 
 ```

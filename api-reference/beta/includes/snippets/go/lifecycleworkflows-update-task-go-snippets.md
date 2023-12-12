@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelsidentitygovernance.NewTask()
@@ -21,7 +21,7 @@ requestBody.SetDescription(&description)
 displayName := "Update marketing day 1 add users to Group set up"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.IdentityGovernance().LifecycleWorkflows().Workflows().ByWorkflowId("workflow-id").Tasks().ByTaskId("task-id").Patch(context.Background(), requestBody, nil)
+tasks, err := graphClient.IdentityGovernance().LifecycleWorkflows().Workflows().ByWorkflowId("workflow-id").Tasks().ByTaskId("task-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

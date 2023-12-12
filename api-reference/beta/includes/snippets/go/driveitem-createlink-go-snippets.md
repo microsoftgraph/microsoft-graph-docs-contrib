@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphdrives.NewCreateLinkPostRequestBody()
@@ -27,9 +27,8 @@ requestBody.SetPassword(&password)
 
 driveRecipient := graphmodels.NewDriveRecipient()
 
-recipients := []graphdrives.DriveRecipientable {
+recipients := []graphmodels.DriveRecipientable {
 	driveRecipient,
-
 }
 requestBody.SetRecipients(recipients)
 sendNotification := true
@@ -37,7 +36,7 @@ requestBody.SetSendNotification(&sendNotification)
 retainInheritedPermissions := false
 requestBody.SetRetainInheritedPermissions(&retainInheritedPermissions) 
 
-result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").CreateLink().Post(context.Background(), requestBody, nil)
+createLink, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").CreateLink().Post(context.Background(), requestBody, nil)
 
 
 ```

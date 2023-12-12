@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Print().Printers().ByPrinterId("printer-id").TaskTriggers().Get(context.Background(), nil)
+taskTriggers, err := graphClient.Print().Printers().ByPrinterId("printer-id").TaskTriggers().Get(context.Background(), nil)
 
 
 ```

@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "3fdf4a8e-0ba7-405a-91d1-f7b4b6ac6983",
+          "ApiChange": "Resource",
+          "ChangedApiName": "recycleBin",
+          "ChangeType": "Addition",
+          "Description": "Added the [recycleBin](https://learn.microsoft.com/en-us/graph/api/resources/recycleBin?view=graph-rest-beta) resource type.",
+          "Target": "recycleBin"
+        },
+        {
+          "Id": "3fdf4a8e-0ba7-405a-91d1-f7b4b6ac6983",
+          "ApiChange": "Resource",
+          "ChangedApiName": "recycleBinItem",
+          "ChangeType": "Addition",
+          "Description": "Added the [recycleBinItem](https://learn.microsoft.com/en-us/graph/api/resources/recycleBinItem?view=graph-rest-beta) resource and a supported method.",
+          "Target": "recycleBinItem"
+        },
+        {
+          "Id": "3fdf4a8e-0ba7-405a-91d1-f7b4b6ac6983",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "recycleBin",
+          "ChangeType": "Addition",
+          "Description": "Added the **recycleBin** relationship to the [site](https://learn.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Target": "site"
+        }
+      ],
+      "Id": "3fdf4a8e-0ba7-405a-91d1-f7b4b6ac6983",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-10-05T14:12:57.6672679Z",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "97b40989-8561-4ba0-a28c-24afb01fbeff",
           "ApiChange": "Relationship",
           "ChangedApiName": "operations",
@@ -273,7 +307,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "followSite,user",
           "ChangeType": "Addition",
-          "Description": "Added the [followSite](https://learn.microsoft.com/en-us/graph/api/follow-site?view=graph-rest-beta) navigation property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) entity set",
+          "Description": "Added the [followSite](https://learn.microsoft.com/en-us/graph/api/site-follow?view=graph-rest-beta) navigation property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) entity set",
           "Target": "followSite,user"
         },
         {
@@ -281,7 +315,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "unfollowSite,user",
           "ChangeType": "Addition",
-          "Description": "Added the [unfollowSite](https://learn.microsoft.com/en-us/graph/api/unfollow-site?view=graph-rest-beta) navigation property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) entity set",
+          "Description": "Added the [unfollowSite](https://learn.microsoft.com/en-us/graph/api/site-unfollow?view=graph-rest-beta) navigation property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) entity set",
           "Target": "unfollowSite,user"
         }
       ],
@@ -475,7 +509,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "lists by ID,path/URL",
           "ChangeType": "Addition",
-          "Description": "Access to SharePoint sites and [lists by ID](https://learn.microsoft.com/en-us/graph/api/list-get?view=graph-rest-beta) or [path/URL](https://learn.microsoft.com/en-us/graph/api/baseitem-getbyurl?view=graph-rest-beta).",
+          "Description": "Access to SharePoint sites and [lists by ID](https://learn.microsoft.com/en-us/graph/api/list-get?view=graph-rest-beta) or path/URL.",
           "Target": "lists by ID,path/URL"
         },
         {

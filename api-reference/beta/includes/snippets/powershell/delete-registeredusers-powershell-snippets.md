@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
-Remove-MgDeviceRegisteredUserByRef -DeviceId $deviceId -DirectoryObjectId $directoryObjectId
+Remove-MgBetaDeviceRegisteredUserByRef -DeviceId $deviceId -DirectoryObjectId $directoryObjectId
 
 ```

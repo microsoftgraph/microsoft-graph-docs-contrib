@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Create a new [groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -48,7 +50,7 @@ The following table shows the properties that are required when you create the g
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Not yet documented|
+|id|String||
 |parentId|String|Parent Id of the group policy setting.|
 |childIdList|String collection|List of Child Ids of the group policy setting.|
 |settingName|String|The name of this group policy setting.|

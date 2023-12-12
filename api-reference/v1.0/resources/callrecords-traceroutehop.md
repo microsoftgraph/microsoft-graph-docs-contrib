@@ -2,7 +2,7 @@
 title: "traceRouteHop resource type"
 description: "Represents the network trace route hops collected for a media stream."
 ms.localizationpriority: medium
-author: "williamlooney"
+author: "mcm223"
 ms.prod: "cloud-communications"
 doc_type: "resourcePageType"
 ---

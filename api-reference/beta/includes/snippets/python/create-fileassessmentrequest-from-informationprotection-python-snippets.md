@@ -4,27 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = ThreatAssessmentRequest()
-request_body.@odata_type = '#microsoft.graph.fileAssessmentRequest'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.expectedassessment(ThreatExpectedAssessment.Block('threatexpectedassessment.block'))
+request_body = FileAssessmentRequest(
+	odata_type = "#microsoft.graph.fileAssessmentRequest",
+	expected_assessment = ThreatExpectedAssessment.Block,
+	category = ThreatCategory.Malware,
+	file_name = "test.txt",
+	content_data = "VGhpcyBpcyBhIHRlc3QgZmlsZQ==",
+)
 
-request_body.category(ThreatCategory.Malware('threatcategory.malware'))
-
-additional_data = [
-'file_name' => 'test.txt', 
-'content_data' => 'VGhpcyBpcyBhIHRlc3QgZmlsZQ==', 
-];
-request_body.additional_data(additional_data)
-
-
-
-
-
-result = await client.information_protection.threat_assessment_requests.post(request_body = request_body)
+result = await graph_client.information_protection.threat_assessment_requests.post(request_body)
 
 
 ```

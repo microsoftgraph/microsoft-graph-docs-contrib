@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewMailFolder()
@@ -21,7 +21,7 @@ requestBody.SetDisplayName(&displayName)
 isHidden := true
 requestBody.SetIsHidden(&isHidden) 
 
-result, err := graphClient.Me().MailFolders().Post(context.Background(), requestBody, nil)
+mailFolders, err := graphClient.Me().MailFolders().Post(context.Background(), requestBody, nil)
 
 
 ```

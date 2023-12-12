@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.People
+Import-Module Microsoft.Graph.Beta.People
 
-Remove-MgUserProfileAddress -UserId $userId -ItemAddressId $itemAddressId
+Remove-MgBetaUserProfileAddress -UserId $userId -ItemAddressId $itemAddressId
 
 ```

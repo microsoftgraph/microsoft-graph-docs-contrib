@@ -4,25 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = RetentionEventType()
-request_body.@odata_type = '#microsoft.graph.security.retentionEventType'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.display_name = 'String'
+request_body = RetentionEventType(
+	odata_type = "#microsoft.graph.security.retentionEventType",
+	display_name = "String",
+	description = "String",
+	created_by = IdentitySet(
+		odata_type = "microsoft.graph.identitySet",
+	),
+)
 
-request_body.description = 'String'
-
-created_by = IdentitySet()
-created_by.@odata_type = 'microsoft.graph.identitySet'
-
-
-request_body.created_by = created_by
-
-
-
-result = await client.security.trigger_types.retention_event_types.post(request_body = request_body)
+result = await graph_client.security.trigger_types.retention_event_types.post(request_body)
 
 
 ```

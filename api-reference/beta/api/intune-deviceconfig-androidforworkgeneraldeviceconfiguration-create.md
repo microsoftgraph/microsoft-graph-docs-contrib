@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Create a new [androidForWorkGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -106,6 +108,7 @@ The following table shows the properties that are required when you create the a
 |workProfileBlockPersonalAppInstallsFromUnknownSources|Boolean|Prevent app installations from unknown sources in the personal profile.|
 |workProfileAccountUse|[androidWorkProfileAccountUse](../resources/intune-deviceconfig-androidworkprofileaccountuse.md)|Control user's ability to add accounts in work profile including Google accounts. Possible values are: `allowAllExceptGoogleAccounts`, `blockAll`, `allowAll`, `unknownFutureValue`.|
 |allowedGoogleAccountDomains|String collection|Determine domains allow-list for accounts that can be added to work profile.|
+|blockUnifiedPasswordForWorkProfile|Boolean|Prevent using unified password for unlocking device and work profile.|
 
 
 
@@ -119,7 +122,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 3296
+Content-length: 3343
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkGeneralDeviceConfiguration",
@@ -198,7 +201,8 @@ Content-length: 3296
   "workProfileAccountUse": "blockAll",
   "allowedGoogleAccountDomains": [
     "Allowed Google Account Domains value"
-  ]
+  ],
+  "blockUnifiedPasswordForWorkProfile": true
 }
 ```
 
@@ -207,7 +211,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 3468
+Content-Length: 3515
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkGeneralDeviceConfiguration",
@@ -289,6 +293,7 @@ Content-Length: 3468
   "workProfileAccountUse": "blockAll",
   "allowedGoogleAccountDomains": [
     "Allowed Google Account Domains value"
-  ]
+  ],
+  "blockUnifiedPasswordForWorkProfile": true
 }
 ```

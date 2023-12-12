@@ -4,49 +4,32 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = SendActivityNotificationPostRequestBody()
-topic = TeamworkActivityTopic()
-topic.source(TeamworkActivityTopicSource.EntityUrl('teamworkactivitytopicsource.entityurl'))
+graph_client = GraphServiceClient(credentials, scopes)
 
-topic.value = 'https://graph.microsoft.com/v1.0/chats/{chatId}/messages/{messageId}'
+request_body = SendActivityNotificationPostRequestBody(
+	topic = TeamworkActivityTopic(
+		source = TeamworkActivityTopicSource.EntityUrl,
+		value = "https://graph.microsoft.com/v1.0/chats/{chatId}/messages/{messageId}",
+	),
+	activity_type = "approvalRequired",
+	preview_text = ItemBody(
+		content = "Deployment requires your approval",
+	),
+	recipient = AadUserNotificationRecipient(
+		odata_type = "microsoft.graph.aadUserNotificationRecipient",
+		user_id = "jacob@contoso.com",
+	),
+	template_parameters = [
+		KeyValuePair(
+			name = "approvalTaskId",
+			value = "2020AAGGTAPP",
+		),
+	],
+)
 
-
-request_body.topic = topic
-request_body.activity_type = 'approvalRequired'
-
-preview_text = ItemBody()
-preview_text.content = 'Deployment requires your approval'
-
-
-request_body.preview_text = preview_text
-recipient = TeamworkNotificationRecipient()
-recipient.@odata_type = 'microsoft.graph.aadUserNotificationRecipient'
-
-additional_data = [
-'user_id' => 'jacob@contoso.com', 
-];
-recipient.additional_data(additional_data)
-
-
-
-request_body.recipient = recipient
-template_parameters_key_value_pair1 = KeyValuePair()
-template_parameters_key_value_pair1.name = 'approvalTaskId'
-
-template_parameters_key_value_pair1.value = '2020AAGGTAPP'
-
-
-templateParametersArray []= templateParametersKeyValuePair1;
-request_body.templateparameters(templateParametersArray)
-
-
-
-
-
-await client.chats.by_chat_id('chat-id').send_activity_notification.post(request_body = request_body)
+await graph_client.chats.by_chat_id('chat-id').send_activity_notification.post(request_body)
 
 
 ```

@@ -6,9 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Communications.Calls.Item.Participants.Invite;
+using Microsoft.Graph.Models;
 
-var requestBody = new Microsoft.Graph.Communications.Calls.Item.Participants.Invite.InvitePostRequestBody
+var requestBody = new InvitePostRequestBody
 {
 	Participants = new List<InvitationParticipantInfo>
 	{
@@ -21,7 +23,7 @@ var requestBody = new Microsoft.Graph.Communications.Calls.Item.Participants.Inv
 				AdditionalData = new Dictionary<string, object>
 				{
 					{
-						"phone" , new 
+						"phone" , new Identity
 						{
 							OdataType = "#microsoft.graph.identity",
 							Id = "+12345678901",
@@ -33,6 +35,8 @@ var requestBody = new Microsoft.Graph.Communications.Calls.Item.Participants.Inv
 	},
 	ClientContext = "f2fa86af-3c51-4bc2-8fc0-475452d9764f",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Communications.Calls["{call-id}"].Participants.Invite.PostAsync(requestBody);
 
 

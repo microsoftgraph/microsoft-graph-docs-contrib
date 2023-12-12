@@ -17,7 +17,7 @@ const sitePage = {
   showRecommendedPages: false
 };
 
-await client.api('/sites/{sitesId}/pages/{sitePageId}')
+await client.api('/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage')
 	.version('beta')
 	.update(sitePage);
 

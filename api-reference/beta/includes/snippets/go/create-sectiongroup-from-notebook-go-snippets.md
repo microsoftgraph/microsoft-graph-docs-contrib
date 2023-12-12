@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewSectionGroup()
 displayName := "Section group name"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.Me().Onenote().Notebooks().ByNotebookId("notebook-id").SectionGroups().Post(context.Background(), requestBody, nil)
+sectionGroups, err := graphClient.Me().Onenote().Notebooks().ByNotebookId("notebook-id").SectionGroups().Post(context.Background(), requestBody, nil)
 
 
 ```

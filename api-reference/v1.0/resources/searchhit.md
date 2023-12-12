@@ -19,7 +19,7 @@ Represents a single result within the list of search results.
 |:-------------|:------------|:------------|
 |contentSource|String|The name of the content source that the **externalItem** is part of.|
 |hitId|String|The internal identifier for the item. The format of the identifier varies based on the entity type. For details, see [hitId format](#hitid-format).|
-|isCollapsed|Boolean|Indicates whether the current result is collapsed when the **collapseProperties** property is used.|
+|isCollapsed|Boolean|Indicates whether the current result is collapsed when the **collapseProperties** property in the [searchRequest](searchrequest.md) is used.|
 |rank|Int32|The rank or the order of the result.|
 |resource|[entity](entity.md)|The underlying Microsoft Graph representation of the search result.|
 |resultTemplateId|String|ID of the result template used to render the search result. This ID must map to a display layout in the **resultTemplates** dictionary that is also included in the [searchResponse](searchresponse.md).|

@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewBookingBusiness()
@@ -41,7 +41,7 @@ requestBody.SetWebSiteUrl(&webSiteUrl)
 defaultCurrencyIso := "USD"
 requestBody.SetDefaultCurrencyIso(&defaultCurrencyIso) 
 
-result, err := graphClient.BookingBusinesses().Post(context.Background(), requestBody, nil)
+bookingBusinesses, err := graphClient.BookingBusinesses().Post(context.Background(), requestBody, nil)
 
 
 ```

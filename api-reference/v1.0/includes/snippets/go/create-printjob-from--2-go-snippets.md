@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewPrintJob()
@@ -29,7 +29,6 @@ integerRange.SetEnd(&end)
 
 pageRanges := []graphmodels.IntegerRangeable {
 	integerRange,
-
 }
 configuration.SetPageRanges(pageRanges)
 quality := graphmodels.MEDIUM_PRINTQUALITY 
@@ -76,7 +75,7 @@ fitPdfToPage := false
 configuration.SetFitPdfToPage(&fitPdfToPage) 
 requestBody.SetConfiguration(configuration)
 
-result, err := graphClient.Print().Shares().ByShareId("printerShare-id").Jobs().Post(context.Background(), requestBody, nil)
+jobs, err := graphClient.Print().Shares().ByPrinterShareId("printerShare-id").Jobs().Post(context.Background(), requestBody, nil)
 
 
 ```

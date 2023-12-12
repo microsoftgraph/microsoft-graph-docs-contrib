@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [userExperienceAnalyticsBatteryHealthOsPerformance](../resources/intune-devices-userexperienceanalyticsbatteryhealthosperformance.md) objects.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -60,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 424
+Content-Length: 672
 
 {
   "value": [
@@ -72,7 +74,13 @@ Content-Length: 424
       "osBuildNumber": "Os Build Number value",
       "averageMaxCapacityPercentage": 12,
       "averageEstimatedRuntimeInMinutes": 0,
-      "averageBatteryAgeInDays": 7
+      "averageBatteryAgeInDays": 7,
+      "meanFullBatteryDrainCount": 9,
+      "medianMaxCapacityPercentage": 11,
+      "medianEstimatedRuntimeInMinutes": 15,
+      "medianFullBatteryDrainCount": 11,
+      "osBatteryHealthScore": 4,
+      "osHealthStatus": "insufficientData"
     }
   ]
 }

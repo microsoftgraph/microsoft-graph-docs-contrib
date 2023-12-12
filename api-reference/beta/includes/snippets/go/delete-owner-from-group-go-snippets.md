@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Groups().ByGroupId("group-id").Owners().ByOwnerId("directoryObject-id").Ref().Delete(context.Background(), nil)
+graphClient.Groups().ByGroupId("group-id").Owners().ByDirectoryObjectId("directoryObject-id").Ref().Delete(context.Background(), nil)
 
 
 ```

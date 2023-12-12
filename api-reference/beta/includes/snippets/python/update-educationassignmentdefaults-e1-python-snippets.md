@@ -4,20 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = EducationAssignmentDefaults()
-request_body.addedstudentaction(EducationAddedStudentAction.AssignIfOpen('educationaddedstudentaction.assignifopen'))
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.addtocalendaraction(EducationAddToCalendarOptions.StudentsAndTeamOwners('educationaddtocalendaroptions.studentsandteamowners'))
+request_body = EducationAssignmentDefaults(
+	added_student_action = EducationAddedStudentAction.AssignIfOpen,
+	add_to_calendar_action = EducationAddToCalendarOptions.StudentsAndTeamOwners,
+	notification_channel_url = "https://graph.microsoft.com/beta/teams('id')/channels('id')",
+)
 
-request_body.notification_channel_url = 'https://graph.microsoft.com/beta/teams(\'id\')/channels(\'id\')'
-
-
-
-
-result = await client.education.classes.by_classe_id('educationClass-id').assignment_defaults.patch(request_body = request_body)
+result = await graph_client.education.classes.by_education_class_id('educationClass-id').assignment_defaults.patch(request_body)
 
 
 ```

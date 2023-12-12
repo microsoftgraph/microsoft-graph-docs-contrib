@@ -6,9 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Models;
 
-var requestBody = new ConversationMember
+var requestBody = new AadUserConversationMember
 {
 	OdataType = "#microsoft.graph.aadUserConversationMember",
 	VisibleHistoryStartDateTime = DateTimeOffset.Parse("0001-01-01T00:00:00Z"),
@@ -23,6 +24,8 @@ var requestBody = new ConversationMember
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Chats["{chat-id}"].Members.PostAsync(requestBody);
 
 

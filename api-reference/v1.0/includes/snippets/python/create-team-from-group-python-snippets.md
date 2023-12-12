@@ -4,21 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = Team()
-additional_data = [
-'template@odata_bind' => 'https://graph.microsoft.com/v1.0/teamsTemplates(\'standard\')', 
-'group@odata_bind' => 'https://graph.microsoft.com/v1.0/groups(\'71392b2f-1765-406e-86af-5907d9bdb2ab\')', 
-];
-request_body.additional_data(additional_data)
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = Team(
+	additional_data = {
+			"template@odata_bind" : "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
+			"group@odata_bind" : "https://graph.microsoft.com/v1.0/groups('71392b2f-1765-406e-86af-5907d9bdb2ab')",
+	}
+)
 
-
-
-
-result = await client.teams.post(request_body = request_body)
+result = await graph_client.teams.post(request_body)
 
 
 ```

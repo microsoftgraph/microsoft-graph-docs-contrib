@@ -13,19 +13,18 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphadmin.NewAddMembersPostRequestBody()
 
 
-updatableAsset := graphmodelswindowsupdates.NewUpdatableAsset()
+updatableAsset := graphmodelswindowsupdates.NewAzureADDevice()
 id := "String (identifier)"
 updatableAsset.SetId(&id) 
 
-assets := []graphadmin.Objectable {
+assets := []graphmodelswindowsupdates.updatableAssetable {
 	updatableAsset,
-
 }
 requestBody.SetAssets(assets)
 

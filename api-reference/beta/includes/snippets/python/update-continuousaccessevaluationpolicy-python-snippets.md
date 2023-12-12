@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = ContinuousAccessEvaluationPolicy()
-request_body.@odata_type = '#microsoft.graph.continuousAccessEvaluationPolicy'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.migrate = True
+request_body = ContinuousAccessEvaluationPolicy(
+	odata_type = "#microsoft.graph.continuousAccessEvaluationPolicy",
+	migrate = True,
+)
 
-
-
-
-result = await client.identity.continuou_acces_evaluation_policy.patch(request_body = request_body)
+result = await graph_client.identity.continuous_access_evaluation_policy.patch(request_body)
 
 
 ```

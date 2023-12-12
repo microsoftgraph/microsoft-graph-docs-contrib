@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().Authentication().SoftwareOathMethods().BySoftwareOathMethodId("softwareOathAuthenticationMethod-id").Get(context.Background(), nil)
+softwareOathMethods, err := graphClient.Me().Authentication().SoftwareOathMethods().BySoftwareOathAuthenticationMethodId("softwareOathAuthenticationMethod-id").Get(context.Background(), nil)
 
 
 ```

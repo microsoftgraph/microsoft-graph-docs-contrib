@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphusers.NewSendActivityNotificationPostRequestBody()
@@ -37,9 +37,8 @@ keyValuePair.SetName(&name)
 value := "Task 12322"
 keyValuePair.SetValue(&value) 
 
-templateParameters := []graphusers.KeyValuePairable {
+templateParameters := []graphmodels.KeyValuePairable {
 	keyValuePair,
-
 }
 requestBody.SetTemplateParameters(templateParameters)
 

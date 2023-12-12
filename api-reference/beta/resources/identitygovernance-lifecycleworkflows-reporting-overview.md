@@ -29,17 +29,17 @@ The lifecycle workflows API is defined in the OData subnamespace, microsoft.grap
 
 ## Lifecycle workflows in audit logs
 
-*All* events run in Lifecycle Workflows are logged by Azure AD. These include creating, updating, deleting, or running workflows, and assigning permissions to apps.
+*All* events run in Lifecycle Workflows are logged by Microsoft Entra ID. These include creating, updating, deleting, or running workflows, and assigning permissions to apps.
 
 These auditable logs are represented by the [directoryAudit resource type](/graph/api/resources/directoryaudit) and its associated GET methods in Microsoft Graph.
 
 ## License checks
 
-To preview the Lifecycle Workflows feature, you must have an Azure AD Premium P2 license in your tenant. For more information about the license requirements, see: [Lifecycle Workflows license requirements](/azure/active-directory/governance/lifecycle-workflows-deployment#licenses).
+Using this feature requires Microsoft Entra ID Governance licenses. To find the right license for your requirements, see [Compare generally available features of Micorosft Microsoft Entra ID](https://www.microsoft.com/security/business/identity-access-management/azure-ad-pricing).
 
 ## Role and application permission authorization checks
 
-The following [Azure AD roles](/azure/active-directory/roles/permissions-reference) are required for a calling user to read reports in Lifecycle Workflows.
+The following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) are required for a calling user to read reports in Lifecycle Workflows.
 
 | Operation | Application permissions | Required directory role of the calling user |
 |:------------------|:------------|:--------------------------------------------|
@@ -48,5 +48,5 @@ The following [Azure AD roles](/azure/active-directory/roles/permissions-referen
 
 ## See also
 
-+ [What are Lifecycle Workflows? (Public Preview)](/azure/active-directory/governance/what-are-lifecycle-workflows)
++ [What are Lifecycle Workflows?](/azure/active-directory/governance/what-are-lifecycle-workflows)
 + [Overview of Lifecycle Workflows](identitygovernance-lifecycleworkflows-overview.md)

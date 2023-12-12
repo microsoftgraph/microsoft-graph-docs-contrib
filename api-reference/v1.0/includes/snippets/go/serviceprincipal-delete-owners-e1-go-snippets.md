@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphserviceprincipals.New$refDeleteRequestBody()
@@ -21,7 +21,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").Owners().ByOwnerId("directoryObject-id").Ref().Delete(context.Background(), requestBody, nil)
+graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").Owners().ByDirectoryObjectId("directoryObject-id").Ref().Delete(context.Background(), requestBody, nil)
 
 
 ```

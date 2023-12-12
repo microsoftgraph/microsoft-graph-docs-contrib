@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAccessReview()
@@ -45,7 +45,6 @@ accessReviewReviewer1.SetId(&id)
 reviewers := []graphmodels.AccessReviewReviewerable {
 	accessReviewReviewer,
 	accessReviewReviewer1,
-
 }
 requestBody.SetReviewers(reviewers)
 settings := graphmodels.NewAccessReviewSettings()
@@ -79,7 +78,7 @@ autoReviewSettings.SetNotReviewedResult(&notReviewedResult)
 settings.SetAutoReviewSettings(autoReviewSettings)
 requestBody.SetSettings(settings)
 
-result, err := graphClient.AccessReviews().Post(context.Background(), requestBody, nil)
+accessReviews, err := graphClient.AccessReviews().Post(context.Background(), requestBody, nil)
 
 
 ```

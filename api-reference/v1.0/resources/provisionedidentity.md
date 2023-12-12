@@ -19,13 +19,13 @@ Describes the identity associated with the provisioning object summary event.
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |details|[detailsInfo](detailsinfo.md)|Details of the identity.|
-|displayName|String|Display name of the identity. |
-|id|String|Uniquely identifies the identity.|
-|identityType|String|Type of identity that has been provisioned, such as 'user' or 'group'.|
+|displayName|String|Display name of the identity. Supports `$filter` (`eq`, `contains`). |
+|id|String|Uniquely identifies the identity. Supports `$filter` (`eq`, `contains`).|
+|identityType|String|Type of identity that has been provisioned, such as 'user' or 'group'. Supports `$filter` (`eq`, `contains`).|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

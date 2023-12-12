@@ -12,18 +12,18 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestParameters := &graphsites.SiteItemListItemRequestBuilderGetQueryParameters{
 	Select: [] string {"name","lastModifiedDateTime"},
-	Expand: [] string {"columns(select=name,description)","items",")"},
+	Expand: [] string {"columns(select=name,description)","items(expand=fields(select=Name,Color,Quantity)",")"},
 }
 configuration := &graphsites.SiteItemListItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Sites().BySiteId("site-id").Lists().ByListId("list-id").Get(context.Background(), configuration)
+lists, err := graphClient.Sites().BySiteId("site-id").Lists().ByListId("list-id").Get(context.Background(), configuration)
 
 
 ```
