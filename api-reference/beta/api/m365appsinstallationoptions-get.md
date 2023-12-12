@@ -1,6 +1,6 @@
 ---
 title: "Get m365AppsInstallationOptions"
-description: "Read the properties of a m365AppsInstallationOptions object."
+description: "Read the properties of an m365AppsInstallationOptions object."
 author: "yan-git"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [m365AppsInstallationOptions](../resources/m365appsInstallationoptions.md) object.
+Read the properties and relationships of an [m365AppsInstallationOptions](../resources/m365appsInstallationoptions.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
