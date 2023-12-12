@@ -3,7 +3,7 @@ title: "recommendation: complete"
 description: "Complete a recommendation and update its status to completedByUser"
 author: "ddeeps2610"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
 

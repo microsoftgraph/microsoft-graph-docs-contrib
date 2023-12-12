@@ -50,22 +50,7 @@ The following example configures an [Interactive authentication provider](choose
 
 ### [PHP](#tab/PHP)
 
-```php
-<?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Kiota\Authentication\Oauth\ClientCredentialContext;
-
-// Uses https://graph.microsoft.com/.default scopes if none are specified
-$tokenRequestContext = new ClientCredentialContext(
-    'tenantId',
-    'clientId',
-    'clientSecret'
-);
-$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes, NationalCloud::CHINA);
-
-
-
-```
+:::code language="php" source="./snippets/php/snippets/NationalClouds.php" id="NationalCloudSnippet":::
 
 ### [PowerShell](#tab/powershell)
 

@@ -16,7 +16,7 @@ For a Microsoft Entra tenant, the providers can be [socialIdentityProviders](../
 
 For an Azure AD B2C, the providers can be [socialIdentityProvider](../resources/socialidentityprovider.md), or [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) objects.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 
