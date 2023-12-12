@@ -1,6 +1,8 @@
 items:
   - name: Overview of Microsoft Graph
     href: /graph/overview
+  - name: API changelog
+    href: https://developer.microsoft.com/en-us/graph/changelog
   - name: Authentication and authorization
     items:
       - name: Overview
