@@ -4591,3 +4591,11 @@ Possible values for user account types (group membership), per Windows definitio
 |notConfigured|
 |noRecentDataCollected|
 |unknownFutureValue|
+
+### printReleaseType values 
+
+|Member|
+|:---|
+|direct|
+|qrCode|
+|unknownFutureValue|
