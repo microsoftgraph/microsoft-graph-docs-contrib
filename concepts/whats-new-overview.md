@@ -14,14 +14,19 @@ In addition, find out about new documentation and learning resources for release
 > [!IMPORTANT]
 > Features, including APIs and tools, in _preview_ status may change without notice, and some may never be promoted to generally available (GA) status. Do not use preview features in production apps.
 
+## December 2023: New and generally available
+
+### Teamwork and communications | Calls and online meetings
+- Communications servers can publish [deltaParticipants](/graph/api/resources/deltaParticipants) notifications for the creation, update, or deletion of a [participant](/graph/api/resources/participant) in a [call](/graph/api/resources/call). For more information, see [JSON payload examples](/graph/api/application-post-calls#notification---roster) of notifications with delta roster disabled or enabled.
+
 ## December 2023: New in preview only
 
 ### Employee experience | Employee engagement
 Create and get a Viva Engage community that is a central place for conversations, files, events, and updates for people sharing a common interest or goal. Use the Viva Engage API for the following scenarios:
 
-- [Create a community](/graph/api/employeeexperience-post-communities)
-- [Poll for community creation status](/graph/api/engagementasyncoperation-get)
-- [Get a community](/graph/api/community-get)
+- [Create a community](/graph/api/employeeexperience-post-communities?view=graph-rest-beta&preserve-view=true)
+- [Poll for community creation status](/graph/api/engagementasyncoperation-get?view=graph-rest-beta&preserve-view=true)
+- [Get a community](/graph/api/community-get?view=graph-rest-beta&preserve-view=true)
 
 ## November 2023: New and generally available
 
