@@ -15,9 +15,9 @@ Change notifications in Microsoft Graph support subscriptions to virtual events.
 
 | Permission type                       | Permissions (from least to most privileged)              | Supported versions |
 |:--------------------------------------|:---------------------------------------------------------|:-------------------|
-| Delegated (work or school account)    | VirtualEvent.Read                                        | Beta               |
+| Delegated (work or school account)    | VirtualEvent.Read                                        | v1, Beta           |
 | Delegated (personal Microsoft account)| Not supported.                                           | Not supported.     |
-| Application                           | VirtualEvent.Read.All                                    | Beta               |
+| Application                           | VirtualEvent.Read.All                                    | v1, Beta           |
 
 ## Subscribable virtual events
 
@@ -38,7 +38,7 @@ The following table provides a summary of subscribable virtual event types, the 
 You can specify subscriptions for all events of a unique app and tenant in the subscription payload by using the following syntax: `solutions/virtualEvents/events`. The subscription designates the notification URL to receive all event-created notifications in a tenant for virtual events. Only event-created notifications are supported for this subscription. A tenant can only have one type of subscription per application. User-delegated virtual event permissions are restricted from creating this type of subscription.
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -57,7 +57,7 @@ You can subscribe to all events that include any members of a set of organizers 
 `solutions/virtualEvents/events/getEventsFromOrganizers(organizerIds=['id1', 'id2'])`. These subscriptions receive any created notifications for all virtual events for a set of organizer or coorganizer IDs. This subscription is considered a subscription to all events created in a tenant. User-delegated virtual event permissions are restricted from creating this type of subscription.
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -78,7 +78,7 @@ An application can have only one subscription per webinar inside a tenant.
 A user-delegated token allows you to set up one subscription for receiving webinar update notifications within a tenant, but the subscription is only available for users who have organized or co-organized webinars in the same tenant as the event host.
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -99,7 +99,7 @@ An application can only have a single session level subscription per webinar in 
 A user-delegated token allows you to set up one subscription for receiving webinar update notifications within a tenant, but the subscription is only available for users who have organized or co-organized webinars in the same tenant as the event host.
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -124,7 +124,7 @@ An application can only have a single registration level subscription per webina
 A user-delegated token allows you to set up one subscription for receiving webinar update notifications within a tenant, but the subscription is only available for users who have organized or co-organized webinars in the same tenant as the event host.
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -145,11 +145,11 @@ Notifications include the resource URL of the changed resource. You can send a s
 
 The following table indicates the supported notification and change types for the virtual events resource.
 
-| Notification type                                                                | Resource ID                                                                                    | Change types      |
-|:---------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------|:------------------|
-| [Webinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-beta)         | `solutions/virtualEvents/webinars/{webinarId}`                                                 | created, updated  |
-| [Session](/graph/api/resources/virtualeventsession?view=graph-rest-beta)         | `solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}`                            | created, updated  |
-| [Registration](/graph/api/resources/virtualeventregistrant?view=graph-rest-beta) | `solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}`                  | created, updated  |
+| Notification type                                           | Resource ID                                                                                    | Change types      |
+|:------------------------------------------------------------|:-----------------------------------------------------------------------------------------------|:------------------|
+| [Webinar](/graph/api/resources/virtualeventwebinar)         | `solutions/virtualEvents/webinars/{webinarId}`                                                 | created, updated  |
+| [Session](/graph/api/resources/virtualeventsession)         | `solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}`                            | created, updated  |
+| [Registration](/graph/api/resources/virtualeventregistrant) | `solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}`                  | created, updated  |
 
 ## Event notification examples
 
