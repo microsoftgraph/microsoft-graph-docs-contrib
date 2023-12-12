@@ -61,14 +61,15 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Request
-The following examples show requests to update either specific part or the entire settings.
+### Example 1: Set the Microsoft 365 update channel
+
+#### Request
+The following examples show a requet to set the Microsoft 365 update channel.
 <!-- {
   "blockType": "request",
   "name": "update_m365AppsInstallationOptions"
 }
 -->
-To set the Microsoft 365 apps update Channel:
 ``` http
 PATCH https://graph.microsoft.com/beta/admin/microsoft365Apps/installationOptions
 Content-Type: application/json
@@ -78,7 +79,22 @@ Content-Type: application/json
 }
 ```
 
-or to set the Microsoft 365 apps installation options for a platform:
+#### Response
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+
+```
+### Example 2: Set the Microsoft 365 apps installation options
+
+#### Request
+The follown example shows a request to set the Microsoft 365 apps installation options for a platform.
 
 ``` http
 PATCH https://graph.microsoft.com/beta/admin/microsoft365Apps/installationOptions
@@ -92,7 +108,23 @@ Content-Type: application/json
 }
 ```
 
-or to set Microsoft 365 apps update Channel and installation options simutaneiously:
+#### Response
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+
+```
+
+### Example 3: Update channel and installation options
+
+#### Request
+The following example shows a request to set Microsoft 365 apps update channel and installation options simutaneously.
 
 ``` http
 PATCH https://graph.microsoft.com/beta/admin/microsoft365Apps/installationOptions
@@ -114,7 +146,7 @@ Content-Type: application/json
 ```
 
 
-### Response
+#### Response
 The following example shows the response.
 
 <!-- {
