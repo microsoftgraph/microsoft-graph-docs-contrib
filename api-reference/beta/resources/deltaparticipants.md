@@ -17,11 +17,12 @@ Represents a notification for the creation, update, or deletion of a [participan
 
 ## Properties
 
-| Property       | Type                                     | Description                                |
-|:---------------|:-----------------------------------------|:-------------------------------------------|
-| sequenceNumber | Int64                                    | The sequence number for the roster update that is used to identify the notification order. |
+| Property       | Type        | Description                                |
+|:---------------|:------------|:-------------------------------------------|
+| sequenceNumber | Int64       | The sequence number for the roster update that is used to identify the notification order. |
 
 ## Relationships
+
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
 | participants   | [participant](participant.md) collection | The collection of participants that were updated since the last roster update. |
@@ -37,7 +38,6 @@ The following JSON representation shows the resource type.
 ```json
 {
   "@odata.type": "#microsoft.graph.deltaParticipants",
-  "participants": [{"@odata.type": "#microsoft.graph.participant"}],
   "sequenceNumber": "Int64"
 }
 ```
