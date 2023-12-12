@@ -7405,6 +7405,14 @@ items:
             items:
               - name: Get
                 href: api/peopleadminsettings-get.md
+              - name: Org control for pronouns settings
+                items:
+                  - name: Pronouns settings
+                    href: resources/pronounssettings.md
+                  - name: List
+                    href: api/peopleadminsettings-list-pronouns.md
+                  - name: Update
+                    href: api/pronounssettings-update.md
               - name: Profile card customization
                 items:
                   - name: Profile card property
