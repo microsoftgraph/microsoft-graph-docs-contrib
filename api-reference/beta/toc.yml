@@ -13186,6 +13186,10 @@ items:
                     href: resources/onattributecollectionlistener.md
                   - name: On user create start
                     href: resources/onusercreatestartlistener.md
+                  - name: On attribute collection start
+                    href: resources/onattributecollectionstartlistener.md
+                  - name: On attribute collection submit
+                    href: resources/onattributecollectionsubmitlistener.md    
                   - name: List
                     href: api/identitycontainer-list-authenticationeventlisteners.md
                   - name: Create
@@ -13535,6 +13539,10 @@ items:
                 items:
                   - name: On token issuance start
                     href: resources/ontokenissuancestartcustomextension.md
+                  - name: On attribute collection start custom extension
+                    href: resources/onattributecollectionstartcustomextension.md
+                  - name: On attribute collection submit custom extension
+                    href: resources/onattributecollectionsubmitcustomextension.md
                   - name: List
                     href: api/identitycontainer-list-customauthenticationextensions.md
                   - name: Create
