@@ -16,7 +16,7 @@ In addition, find out about new documentation and learning resources for release
 
 ## December 2023: New in preview only
 
-### Employee experience
+### Employee experience | Employee engagement
 Create and get a Viva Engage community that is a central place for conversations, files, events, and updates for people sharing a common interest or goal. Use the Viva Engage API for the following scenarios:
 
 - [Create a community](/graph/api/employeeexperience-post-communities)
