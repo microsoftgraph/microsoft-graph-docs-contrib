@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/beta/planner/plans/planId/moveToContainer
+POST https://graph.microsoft.com/beta/planner/plans/<planId>/moveToContainer
 ```
 
 ## Request headers
@@ -54,7 +54,7 @@ The following example shows a request to move a plan from a user container to a 
   "name": "plannerplan_move_to_container_"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/planner/plans/planId/moveToContainer
+POST https://graph.microsoft.com/beta/planner/plans/<planId>/moveToContainer
 Content-type: application/json
 If-Match: "string"
 
