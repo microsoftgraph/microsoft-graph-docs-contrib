@@ -1,0 +1,558 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "assignedComputeInstanceDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [assignedComputeInstanceDetails](https://learn.microsoft.com/en-us/graph/api/resources/assignedComputeInstanceDetails?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "assignedComputeInstanceDetails"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "awsExternalSystemAccessFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [awsExternalSystemAccessFinding](https://learn.microsoft.com/en-us/graph/api/resources/awsExternalSystemAccessFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "awsExternalSystemAccessFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "awsExternalSystemAccessRoleFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [awsExternalSystemAccessRoleFinding](https://learn.microsoft.com/en-us/graph/api/resources/awsExternalSystemAccessRoleFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "awsExternalSystemAccessRoleFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "awsIdentityAccessManagementKeyAgeFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [awsIdentityAccessManagementKeyAgeFinding](https://learn.microsoft.com/en-us/graph/api/resources/awsIdentityAccessManagementKeyAgeFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "awsIdentityAccessManagementKeyAgeFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "awsIdentityAccessManagementKeyUsageFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [awsIdentityAccessManagementKeyUsageFinding](https://learn.microsoft.com/en-us/graph/api/resources/awsIdentityAccessManagementKeyUsageFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "awsIdentityAccessManagementKeyUsageFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "awsSecretInformationAccessFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [awsSecretInformationAccessFinding](https://learn.microsoft.com/en-us/graph/api/resources/awsSecretInformationAccessFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "awsSecretInformationAccessFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "awsSecurityToolAdministrationFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [awsSecurityToolAdministrationFinding](https://learn.microsoft.com/en-us/graph/api/resources/awsSecurityToolAdministrationFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "awsSecurityToolAdministrationFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "encryptedAwsStorageBucketFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [encryptedAwsStorageBucketFinding](https://learn.microsoft.com/en-us/graph/api/resources/encryptedAwsStorageBucketFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "encryptedAwsStorageBucketFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "encryptedAzureStorageAccountFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [encryptedAzureStorageAccountFinding](https://learn.microsoft.com/en-us/graph/api/resources/encryptedAzureStorageAccountFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "encryptedAzureStorageAccountFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "encryptedGcpStorageBucketFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [encryptedGcpStorageBucketFinding](https://learn.microsoft.com/en-us/graph/api/resources/encryptedGcpStorageBucketFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "encryptedGcpStorageBucketFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externallyAccessibleAwsStorageBucketFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [externallyAccessibleAwsStorageBucketFinding](https://learn.microsoft.com/en-us/graph/api/resources/externallyAccessibleAwsStorageBucketFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "externallyAccessibleAwsStorageBucketFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externallyAccessibleAzureBlobContainerFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [externallyAccessibleAzureBlobContainerFinding](https://learn.microsoft.com/en-us/graph/api/resources/externallyAccessibleAzureBlobContainerFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "externallyAccessibleAzureBlobContainerFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externallyAccessibleGcpStorageBucketFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [externallyAccessibleGcpStorageBucketFinding](https://learn.microsoft.com/en-us/graph/api/resources/externallyAccessibleGcpStorageBucketFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "externallyAccessibleGcpStorageBucketFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "finding",
+          "ChangeType": "Addition",
+          "Description": "Added the [finding](https://learn.microsoft.com/en-us/graph/api/resources/finding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "finding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [identityFinding](https://learn.microsoft.com/en-us/graph/api/resources/identityFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "identityFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "permissionsAnalytics",
+          "ChangeType": "Addition",
+          "Description": "Added the **permissionsAnalytics** relationship to the [identityGovernance](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance?view=graph-rest-beta) resource.",
+          "Target": "identityGovernance"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "inactiveAwsResourceFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [inactiveAwsResourceFinding](https://learn.microsoft.com/en-us/graph/api/resources/inactiveAwsResourceFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "inactiveAwsResourceFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "inactiveAwsRoleFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [inactiveAwsRoleFinding](https://learn.microsoft.com/en-us/graph/api/resources/inactiveAwsRoleFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "inactiveAwsRoleFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "inactiveAzureServicePrincipalFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [inactiveAzureServicePrincipalFinding](https://learn.microsoft.com/en-us/graph/api/resources/inactiveAzureServicePrincipalFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "inactiveAzureServicePrincipalFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "inactiveGcpServiceAccountFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [inactiveGcpServiceAccountFinding](https://learn.microsoft.com/en-us/graph/api/resources/inactiveGcpServiceAccountFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "inactiveGcpServiceAccountFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "inactiveGroupFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [inactiveGroupFinding](https://learn.microsoft.com/en-us/graph/api/resources/inactiveGroupFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "inactiveGroupFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "inactiveServerlessFunctionFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [inactiveServerlessFunctionFinding](https://learn.microsoft.com/en-us/graph/api/resources/inactiveServerlessFunctionFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "inactiveServerlessFunctionFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "inactiveUserFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [inactiveUserFinding](https://learn.microsoft.com/en-us/graph/api/resources/inactiveUserFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "inactiveUserFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "openAwsSecurityGroupFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [openAwsSecurityGroupFinding](https://learn.microsoft.com/en-us/graph/api/resources/openAwsSecurityGroupFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "openAwsSecurityGroupFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "openNetworkAzureSecurityGroupFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [openNetworkAzureSecurityGroupFinding](https://learn.microsoft.com/en-us/graph/api/resources/openNetworkAzureSecurityGroupFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "openNetworkAzureSecurityGroupFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "overprovisionedAwsResourceFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [overprovisionedAwsResourceFinding](https://learn.microsoft.com/en-us/graph/api/resources/overprovisionedAwsResourceFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "overprovisionedAwsResourceFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "overprovisionedAwsRoleFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [overprovisionedAwsRoleFinding](https://learn.microsoft.com/en-us/graph/api/resources/overprovisionedAwsRoleFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "overprovisionedAwsRoleFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "overprovisionedAzureServicePrincipalFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [overprovisionedAzureServicePrincipalFinding](https://learn.microsoft.com/en-us/graph/api/resources/overprovisionedAzureServicePrincipalFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "overprovisionedAzureServicePrincipalFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "overprovisionedGcpServiceAccountFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [overprovisionedGcpServiceAccountFinding](https://learn.microsoft.com/en-us/graph/api/resources/overprovisionedGcpServiceAccountFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "overprovisionedGcpServiceAccountFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "overprovisionedServerlessFunctionFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [overprovisionedServerlessFunctionFinding](https://learn.microsoft.com/en-us/graph/api/resources/overprovisionedServerlessFunctionFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "overprovisionedServerlessFunctionFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "overprovisionedUserFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [overprovisionedUserFinding](https://learn.microsoft.com/en-us/graph/api/resources/overprovisionedUserFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "overprovisionedUserFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "permissionsAnalytics",
+          "ChangeType": "Addition",
+          "Description": "Added the [permissionsAnalytics](https://learn.microsoft.com/en-us/graph/api/resources/permissionsAnalytics?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "permissionsAnalytics"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "findings",
+          "ChangeType": "Addition",
+          "Description": "Added the **findings** relationship to the [permissionsAnalytics](https://learn.microsoft.com/en-us/graph/api/resources/permissionsAnalytics?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "permissionsAnalytics"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "permissionsAnalyticsAggregation",
+          "ChangeType": "Addition",
+          "Description": "Added the [permissionsAnalyticsAggregation](https://learn.microsoft.com/en-us/graph/api/resources/permissionsAnalyticsAggregation?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "permissionsAnalyticsAggregation"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "permissionsCreepIndexDistribution",
+          "ChangeType": "Addition",
+          "Description": "Added the [permissionsCreepIndexDistribution](https://learn.microsoft.com/en-us/graph/api/resources/permissionsCreepIndexDistribution?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "permissionsCreepIndexDistribution"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegeEscalation",
+          "ChangeType": "Addition",
+          "Description": "Added the [privilegeEscalation](https://learn.microsoft.com/en-us/graph/api/resources/privilegeEscalation?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "privilegeEscalation"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegeEscalationAwsResourceFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [privilegeEscalationAwsResourceFinding](https://learn.microsoft.com/en-us/graph/api/resources/privilegeEscalationAwsResourceFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "privilegeEscalationAwsResourceFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegeEscalationAwsRoleFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [privilegeEscalationAwsRoleFinding](https://learn.microsoft.com/en-us/graph/api/resources/privilegeEscalationAwsRoleFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "privilegeEscalationAwsRoleFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegeEscalationFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [privilegeEscalationFinding](https://learn.microsoft.com/en-us/graph/api/resources/privilegeEscalationFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "privilegeEscalationFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegeEscalationGcpServiceAccountFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [privilegeEscalationGcpServiceAccountFinding](https://learn.microsoft.com/en-us/graph/api/resources/privilegeEscalationGcpServiceAccountFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "privilegeEscalationGcpServiceAccountFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privilegeEscalationUserFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [privilegeEscalationUserFinding](https://learn.microsoft.com/en-us/graph/api/resources/privilegeEscalationUserFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "privilegeEscalationUserFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "secretInformationAccessAwsResourceFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [secretInformationAccessAwsResourceFinding](https://learn.microsoft.com/en-us/graph/api/resources/secretInformationAccessAwsResourceFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "secretInformationAccessAwsResourceFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "secretInformationAccessAwsRoleFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [secretInformationAccessAwsRoleFinding](https://learn.microsoft.com/en-us/graph/api/resources/secretInformationAccessAwsRoleFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "secretInformationAccessAwsRoleFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "secretInformationAccessAwsServerlessFunctionFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [secretInformationAccessAwsServerlessFunctionFinding](https://learn.microsoft.com/en-us/graph/api/resources/secretInformationAccessAwsServerlessFunctionFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "secretInformationAccessAwsServerlessFunctionFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "secretInformationAccessAwsUserFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [secretInformationAccessAwsUserFinding](https://learn.microsoft.com/en-us/graph/api/resources/secretInformationAccessAwsUserFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "secretInformationAccessAwsUserFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "securityToolAwsResourceAdministratorFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [securityToolAwsResourceAdministratorFinding](https://learn.microsoft.com/en-us/graph/api/resources/securityToolAwsResourceAdministratorFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "securityToolAwsResourceAdministratorFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "securityToolAwsRoleAdministratorFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [securityToolAwsRoleAdministratorFinding](https://learn.microsoft.com/en-us/graph/api/resources/securityToolAwsRoleAdministratorFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "securityToolAwsRoleAdministratorFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "securityToolAwsServerlessFunctionAdministratorFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [securityToolAwsServerlessFunctionAdministratorFinding](https://learn.microsoft.com/en-us/graph/api/resources/securityToolAwsServerlessFunctionAdministratorFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "securityToolAwsServerlessFunctionAdministratorFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "securityToolAwsUserAdministratorFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [securityToolAwsUserAdministratorFinding](https://learn.microsoft.com/en-us/graph/api/resources/securityToolAwsUserAdministratorFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "securityToolAwsUserAdministratorFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "superAwsResourceFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [superAwsResourceFinding](https://learn.microsoft.com/en-us/graph/api/resources/superAwsResourceFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "superAwsResourceFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "superAwsRoleFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [superAwsRoleFinding](https://learn.microsoft.com/en-us/graph/api/resources/superAwsRoleFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "superAwsRoleFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "superAzureServicePrincipalFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [superAzureServicePrincipalFinding](https://learn.microsoft.com/en-us/graph/api/resources/superAzureServicePrincipalFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "superAzureServicePrincipalFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "superGcpServiceAccountFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [superGcpServiceAccountFinding](https://learn.microsoft.com/en-us/graph/api/resources/superGcpServiceAccountFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "superGcpServiceAccountFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "superServerlessFunctionFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [superServerlessFunctionFinding](https://learn.microsoft.com/en-us/graph/api/resources/superServerlessFunctionFinding?view=graph-rest-beta) resoresource and its associated methodsurce.",
+          "Target": "superServerlessFunctionFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "superUserFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [superUserFinding](https://learn.microsoft.com/en-us/graph/api/resources/superUserFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "superUserFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unenforcedMfaAwsUserFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [unenforcedMfaAwsUserFinding](https://learn.microsoft.com/en-us/graph/api/resources/unenforcedMfaAwsUserFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "unenforcedMfaAwsUserFinding"
+        },        
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "permissionsAnalyticsAggregatedIdentitySummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [permissionsAnalyticsAggregatedIdentitySummary](https://learn.microsoft.com/en-us/graph/api/resources/permissionsAnalyticsAggregatedIdentitySummary?view=graph-rest-beta) resource.",
+          "Target": "permissionsAnalyticsAggregatedIdentitySummary"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualMachineWithAwsStorageBucketAccessFinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [virtualMachineWithAwsStorageBucketAccessFinding](https://learn.microsoft.com/en-us/graph/api/resources/virtualMachineWithAwsStorageBucketAccessFinding?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "virtualMachineWithAwsStorageBucketAccessFinding"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "authorizationSystemType",
+          "ChangeType": "Addition",
+          "Description": "Added the **authorizationSystemType** enumeration type.",
+          "Target": "authorizationSystemType"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "awsAccessType",
+          "ChangeType": "Addition",
+          "Description": "Added the **awsAccessType** enumeration type.",
+          "Target": "awsAccessType"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "awsSecretInformationWebServices",
+          "ChangeType": "Addition",
+          "Description": "Added the **awsSecretInformationWebServices** enumeration type.",
+          "Target": "awsSecretInformationWebServices"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "awsSecurityToolWebServices",
+          "ChangeType": "Addition",
+          "Description": "Added the **awsSecurityToolWebServices** enumeration type.",
+          "Target": "awsSecurityToolWebServices"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "azureAccessType",
+          "ChangeType": "Addition",
+          "Description": "Added the **azureAccessType** enumeration type.",
+          "Target": "azureAccessType"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "azureEncryption",
+          "ChangeType": "Addition",
+          "Description": "Added the **azureEncryption** enumeration type.",
+          "Target": "azureEncryption"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "externalSystemAccessMethods",
+          "ChangeType": "Addition",
+          "Description": "Added the **externalSystemAccessMethods** enumeration type.",
+          "Target": "externalSystemAccessMethods"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "gcpAccessType",
+          "ChangeType": "Addition",
+          "Description": "Added the **gcpAccessType** enumeration type.",
+          "Target": "gcpAccessType"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "gcpEncryption",
+          "ChangeType": "Addition",
+          "Description": "Added the **gcpEncryption** enumeration type.",
+          "Target": "gcpEncryption"
+        },
+        {
+          "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "iamStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **iamStatus** enumeration type.",
+          "Target": "iamStatus"
+        }
+      ],
+      "Id": "3709be60-8683-4344-85c9-22a42393bf0a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-11-16T00:00:00.8333073Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Multicloud permissions management"
+    }
+  ]
+}

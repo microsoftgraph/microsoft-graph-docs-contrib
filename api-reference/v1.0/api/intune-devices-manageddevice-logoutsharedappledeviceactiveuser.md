@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Logout shared Apple device active user
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -80,6 +82,10 @@ POST https://graph.microsoft.com/v1.0/deviceManagement/managedDevices/{managedDe
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/intune-devices-manageddevice-logoutsharedappledeviceactiveuser-logoutsharedappledeviceactiveuser-action-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-devices-manageddevice-logoutsharedappledeviceactiveuser-logoutsharedappledeviceactiveuser-action-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -15,6 +15,8 @@ Return all the group IDs for the groups that the specified [user](../resources/u
 
 This API returns up to 11,000 group IDs. If more than 11,000 results are available, it returns a `400 Bad Request` error with the `Directory_ResultSizeLimitExceeded` error code. As a workaround, use the [List group transitive memberOf](../api/group-list-transitivememberof.md) API.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -190,7 +192,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/directoryobject-getmembergroups-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -201,7 +203,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

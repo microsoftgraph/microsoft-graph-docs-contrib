@@ -4,35 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = $valuePutRequestBody()
-additional_data = [
-'localized_strings' => localized_strings1 = ()
-		localized_strings1.element_type = 'UxElement'
+graph_client = GraphServiceClient(credentials, scopes)
 
-		localized_strings1.elementId=null
+request_body = $valuePutRequestBody(
+	additional_data = {
+			"localized_strings" : [
+				{
+						"element_type" : "UxElement",
+						"element_id" : None,
+						"string_id" : "alert_message",
+						"override" : True,
+						"value" : "Are you sure that you want to cancel entering your information?",
+				},
+			],
+	}
+)
 
-		localized_strings1.string_id = 'alert_message'
-
-		localized_strings1.override = True
-
-		localized_strings1.value = 'Are you sure that you want to cancel entering your information?'
-
-
-localizedStringsArray []= localizedStrings1;
-request_body.localizedstrings(localizedStringsArray)
-
-
-];
-request_body.additional_data(additional_data)
-
-
-
-
-
-await client.identity.b2x_user_flows.by_b2x_user_flow_id('b2xIdentityUserFlow-id').languages.by_language_id('userFlowLanguageConfiguration-id').override_pages.by_override_page_id('userFlowLanguagePage-id').content.put(request_body = request_body)
+await graph_client.identity.b2x_user_flows.by_b2x_identity_user_flow_id('b2xIdentityUserFlow-id').languages.by_user_flow_language_configuration_id('userFlowLanguageConfiguration-id').overrides_pages.by_user_flow_language_page_id('userFlowLanguagePage-id').content.put(request_body)
 
 
 ```

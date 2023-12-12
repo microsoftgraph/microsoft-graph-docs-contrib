@@ -4,28 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = OpenTypeExtension()
-request_body.@odata_type = '#microsoft.graph.openTypeExtension'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.extension_name = 'com.contoso.socialSettings'
+request_body = OpenTypeExtension(
+	odata_type = "#microsoft.graph.openTypeExtension",
+	extension_name = "com.contoso.socialSettings",
+	id = "com.contoso.socialSettings",
+	additional_data = {
+			"skype_id" : "skypeId.AdeleV",
+			"linked_in_profile" : "www.linkedin.com/in/testlinkedinprofile",
+			"xbox_gamer_tag" : "AwesomeAdele",
+	}
+)
 
-request_body.id = 'com.contoso.socialSettings'
-
-additional_data = [
-'skype_id' => 'skypeId.AdeleV', 
-'linked_in_profile' => 'www.linkedin.com/in/testlinkedinprofile', 
-'xbox_gamer_tag' => 'AwesomeAdele', 
-];
-request_body.additional_data(additional_data)
-
-
-
-
-
-result = await client.users.by_user_id('user-id').extensions.post(request_body = request_body)
+result = await graph_client.users.by_user_id('user-id').extensions.post(request_body)
 
 
 ```

@@ -1,6 +1,6 @@
 ---
 title: "List pronounsSettings"
-description: "Read the properties and relationships of a pronounsSettings object."
+description: "Get the properties of the pronounsSettings resource for an organization."
 author: "aymen-ms"
 ms.localizationpriority: medium
 ms.prod: "people"
@@ -16,14 +16,13 @@ Get the properties of the [pronounsSettings](../resources/pronounssettings.md) r
 
 For more information on settings to manage pronouns support, see [Manage pronouns settings for an organization using the Microsoft Graph API](/graph/pronouns-configure-pronouns-availability).
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-| Delegated (work or school account)     | PeopleSettings.Read.All, PeopleSettings.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application    | Not supported. |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "peopleadminsettings_list_pronouns" } -->
+[!INCLUDE [permissions-table](../includes/permissions/peopleadminsettings-list-pronouns-permissions.md)]
 
 ## HTTP request
 
@@ -35,13 +34,17 @@ One of the following permissions is required to call this API. To learn more, in
 GET /admin/people/pronouns
 ```
 
+## Optional query parameters
+
+This method doesn't support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 ## Request headers
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -50,7 +53,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-The following is an example of a request.
+
+The following example shows a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -63,6 +68,10 @@ GET https://graph.microsoft.com/beta/admin/people/pronouns
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-pronounssettings-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-pronounssettings-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -81,6 +90,10 @@ GET https://graph.microsoft.com/beta/admin/people/pronouns
 [!INCLUDE [sample-code](../includes/snippets/php/list-pronounssettings-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-pronounssettings-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-pronounssettings-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -88,7 +101,9 @@ GET https://graph.microsoft.com/beta/admin/people/pronouns
 ---
 
 ### Response
-The following is an example of the response
+
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

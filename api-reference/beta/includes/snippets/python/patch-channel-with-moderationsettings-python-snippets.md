@@ -4,29 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = Channel()
-request_body.display_name = 'UpdateChannelModeration'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.description = 'Update channel moderation.'
+request_body = Channel(
+	display_name = "UpdateChannelModeration",
+	description = "Update channel moderation.",
+	moderation_settings = ChannelModerationSettings(
+		user_new_message_restriction = UserNewMessageRestriction.Moderators,
+		reply_restriction = ReplyRestriction.Everyone,
+		allow_new_message_from_bots = True,
+		allow_new_message_from_connectors = True,
+	),
+)
 
-moderation_settings = ChannelModerationSettings()
-moderation_settings.usernewmessagerestriction(UserNewMessageRestriction.Moderators('usernewmessagerestriction.moderators'))
-
-moderation_settings.replyrestriction(ReplyRestriction.Everyone('replyrestriction.everyone'))
-
-moderation_settings.allow_new_message_from_bots = True
-
-moderation_settings.allow_new_message_from_connectors = True
-
-
-request_body.moderation_settings = moderation_settings
-
-
-
-result = await client.teams.by_team_id('team-id').channels.by_channel_id('channel-id').patch(request_body = request_body)
+result = await graph_client.teams.by_team_id('team-id').channels.by_channel_id('channel-id').patch(request_body)
 
 
 ```

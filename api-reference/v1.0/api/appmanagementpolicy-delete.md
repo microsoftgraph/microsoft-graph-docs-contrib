@@ -14,15 +14,16 @@ Namespace: microsoft.graph
 
 Delete an [appManagementPolicy](../resources/appmanagementpolicy.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Policy.ReadWrite.ApplicationConfiguration   |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Policy.ReadWrite.ApplicationConfiguration   |
+<!-- { "blockType": "permissions", "name": "appmanagementpolicy_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/appmanagementpolicy-delete-permissions.md)]
+
+[!INCLUDE [rbac-app-auth-method-policy-apis](../includes/rbac-for-apis/rbac-app-auth-method-policy-apis.md)]
 
 ## HTTP request
 
@@ -41,17 +42,17 @@ DELETE /policies/appManagementPolicies/{id}
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
 ### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -99,7 +100,7 @@ DELETE https://graph.microsoft.com/v1.0/policies/appManagementPolicies/{id}
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",

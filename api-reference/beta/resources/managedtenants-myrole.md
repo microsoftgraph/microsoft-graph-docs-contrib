@@ -24,7 +24,7 @@ Represents the role assignments to a signed-in user for a [managed tenant](../re
 |Property|Type|Description|
 |:---|:---|:---|
 |assignments|[microsoft.graph.managedTenants.roleAssignment](../resources/managedtenants-roleassignment.md) collection|A collection of role assignments for the [managed tenant](../resources/managedtenants-tenant.md).|
-|tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md). Optional. Read-only.|
+|tenantId|String|The Microsoft Entra tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md). Optional. Read-only.|
 
 ## Relationships
 None.

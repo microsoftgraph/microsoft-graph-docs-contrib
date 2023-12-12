@@ -4,36 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = Deployment()
-request_body.@odata_type = '#microsoft.graph.windowsUpdates.deployment'
+graph_client = GraphServiceClient(credentials, scopes)
 
-settings = DeploymentSettings()
-settings.@odata_type = 'microsoft.graph.windowsUpdates.deploymentSettings'
+request_body = Deployment(
+	odata_type = "#microsoft.graph.windowsUpdates.deployment",
+	settings = DeploymentSettings(
+		odata_type = "microsoft.graph.windowsUpdates.deploymentSettings",
+		monitoring = MonitoringSettings(
+			monitoring_rules = [
+				MonitoringRule(
+					signal = MonitoringSignal.Rollback,
+					threshold = 5,
+					action = MonitoringAction.PauseDeployment,
+				),
+			],
+		),
+	),
+)
 
-settingsmonitoring = MonitoringSettings()
-monitoring_rules_monitoring_rule1 = MonitoringRule()
-monitoring_rules_monitoring_rule1.signal(MonitoringSignal.Rollback('monitoringsignal.rollback'))
-
-monitoring_rules_monitoring_rule1.Threshold = 5
-
-monitoring_rules_monitoring_rule1.action(MonitoringAction.PauseDeployment('monitoringaction.pausedeployment'))
-
-
-monitoringRulesArray []= monitoringRulesMonitoringRule1;
-settingsmonitoring.monitoringrules(monitoringRulesArray)
-
-
-
-settings.monitoring = settingsmonitoring
-
-request_body.settings = settings
-
-
-
-result = await client.admin.windows.updates.deployments.by_deployment_id('deployment-id').patch(request_body = request_body)
+result = await graph_client.admin.windows.updates.deployments.by_deployment_id('deployment-id').patch(request_body)
 
 
 ```

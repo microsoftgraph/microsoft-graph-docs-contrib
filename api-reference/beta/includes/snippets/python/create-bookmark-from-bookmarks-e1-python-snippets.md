@@ -4,50 +4,40 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = Bookmark()
-request_body.display_name = 'Contoso Install Site'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.web_url = 'http://www.contoso.com/'
+request_body = Bookmark(
+	display_name = "Contoso Install Site",
+	web_url = "http://www.contoso.com/",
+	description = "Try or buy Contoso for Home or Business and view product information",
+	keywords = AnswerKeyword(
+		keywords = [
+			"Contoso",
+			"install",
+		],
+		reserved_keywords = [
+			"Contoso",
+		],
+		match_similar_keywords = True,
+	),
+	availability_start_date_time = None,
+	availability_end_date_time = None,
+	platforms = [
+		DevicePlatformType.Android,
+	],
+	targeted_variations = [
+		AnswerVariant(
+			language_tag = "es-es",
+			display_name = "Sitio de instalación Contoso",
+			description = "Pruebe o compre Contoso hogar o negocios y vea la información del producto",
+		),
+	],
+	state = AnswerState.Published,
+)
 
-request_body.description = 'Try or buy Contoso for Home or Business and view product information'
-
-keywords = AnswerKeyword()
-keywords.Keywords(['Contoso', 'install', ])
-
-keywords.ReservedKeywords(['Contoso', ])
-
-keywords.match_similar_keywords = True
-
-
-request_body.keywords = keywords
-request_body.availabilityStartDateTime=null
-
-request_body.availabilityEndDateTime=null
-
-request_body.Platforms([request_body.deviceplatformtype(DevicePlatformType.Windows('deviceplatformtype.windows'))
-])
-
-targeted_variations_answer_variant1 = AnswerVariant()
-targeted_variations_answer_variant1.language_tag = 'es-es'
-
-targeted_variations_answer_variant1.display_name = 'Sitio de instalación Contoso'
-
-targeted_variations_answer_variant1.description = 'Pruebe o compre Contoso hogar o negocios y vea la información del producto'
-
-
-targetedVariationsArray []= targetedVariationsAnswerVariant1;
-request_body.targetedvariations(targetedVariationsArray)
-
-
-request_body.state(AnswerState.Published('answerstate.published'))
-
-
-
-
-result = await client.search.bookmarks.post(request_body = request_body)
+result = await graph_client.search.bookmarks.post(request_body)
 
 
 ```

@@ -4,24 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = Message()
-single_value_extended_properties_single_value_legacy_extended_property1 = SingleValueLegacyExtendedProperty()
-single_value_extended_properties_single_value_legacy_extended_property1.id = 'String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color'
+graph_client = GraphServiceClient(credentials, scopes)
 
-single_value_extended_properties_single_value_legacy_extended_property1.value = 'Green'
+request_body = Message(
+	single_value_extended_properties = [
+		SingleValueLegacyExtendedProperty(
+			id = "String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color",
+			value = "Green",
+		),
+	],
+)
 
-
-singleValueExtendedPropertiesArray []= singleValueExtendedPropertiesSingleValueLegacyExtendedProperty1;
-request_body.singlevalueextendedproperties(singleValueExtendedPropertiesArray)
-
-
-
-
-
-result = await client.me.messages.by_message_id('message-id').patch(request_body = request_body)
+result = await graph_client.me.messages.by_message_id('message-id').patch(request_body)
 
 
 ```

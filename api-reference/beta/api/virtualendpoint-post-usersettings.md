@@ -15,15 +15,14 @@ Namespace: microsoft.graph
 
 Create a new [cloudPcUserSetting](../resources/cloudpcusersetting.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|CloudPC.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|CloudPC.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "virtualendpoint_post_usersettings" } -->
+[!INCLUDE [permissions-table](../includes/permissions/virtualendpoint-post-usersettings-permissions.md)]
 
 ## HTTP request
 
@@ -47,15 +46,15 @@ POST /deviceManagement/virtualEndpoint/userSettings
 
 In the request body, supply a JSON representation of the [cloudPcUserSetting](../resources/cloudpcusersetting.md) object.
 
-The following table shows the properties that are required when you create the [cloudPcUserSetting](../resources/cloudpcusersetting.md).
+The following table lists the properties that are required when you create the [cloudPcUserSetting](../resources/cloudpcusersetting.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The setting name as it appears in the UI. |
+|lastModifiedDateTime|DateTimeOffset|The last date and time the setting was modified. The timestamp type represents the date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'. |
 |localAdminEnabled|Boolean|To turn on the local admin option, change this setting to `True`.  |
-|selfServiceEnabled|Boolean|To turn on the self service option, change this setting to `True`. |
 |restorePointSetting|[cloudPcRestorePointSetting](../resources/cloudpcrestorepointsetting.md)|Defines how frequently a restore point is created (that is, a snapshot is taken) for users' provisioned Cloud PCs (default is 12 hours), and whether the user is allowed to restore their own Cloud PCs to a backup made at a specific point in time.|
-|lastModifiedDateTime|DateTimeOffset|The last date and time the setting was modified. The Timestamp type represents the date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'. |
+|selfServiceEnabled (deprecated)|Boolean|To turn on the self service option, change this setting to `True`. The **selfServiceEnabled** property is deprecated and will stop returning data on December 1, 2023.|
 
 ## Response
 
@@ -89,6 +88,10 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-cloudpcusersetting-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-cloudpcusersetting-from--cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

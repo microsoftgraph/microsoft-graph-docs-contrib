@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = PronounsSettings()
-request_body.is_enabled_in_organization = True
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = PronounsSettings(
+	is_enabled_in_organization = True,
+)
 
-
-
-result = await client.admin.people.pronouns.patch(request_body = request_body)
+result = await graph_client.admin.people.pronouns.patch(request_body)
 
 
 ```

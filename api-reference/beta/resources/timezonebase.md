@@ -4,7 +4,7 @@ description: "The basic representation of a time zone."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: mail
-author: "abheek-das"
+author: "SuryaLashmiS"
 ---
 
 # timeZoneBase resource type
@@ -24,7 +24,7 @@ The basic representation of a time zone.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

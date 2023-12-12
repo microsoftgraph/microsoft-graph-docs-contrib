@@ -1,9 +1,9 @@
 ---
 title: "reports: entitiesSummaries"
-description: "Provides high-level summaries of entities in the Global Secure Access tenant."
+description: "Get the number of users, devices, and workloads per traffic type in a specified time period."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 
@@ -12,19 +12,17 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides high-level summaries of entities in the Global Secure Access tenant.
+Get the number of users, devices, and workloads per traffic type in a specified time period.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|NetworkAccessPolicy.Read.All, NetworkAccessPolicy.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+<!-- { "blockType": "permissions", "name": "networkaccess_reports_entitiessummaries" } -->
+[!INCLUDE [permissions-table](../includes/permissions/networkaccess-reports-entitiessummaries-permissions.md)]
 
 [!INCLUDE [rbac-global-secure-access-apis-read](../includes/rbac-for-apis/rbac-global-secure-access-apis-read.md)]
-
 
 ## HTTP request
 
@@ -33,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /networkAccess/reports/entitiesSummaries
+GET /networkAccess/reports/entitiesSummaries(startDateTime={startDateTime},endDateTime={endDateTime})
 ```
 
 ## Function parameters
@@ -42,8 +40,8 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|startDateTime|DateTimeOffset|Sets the starting date and time.|
-|endDateTime|DateTimeOffset|Sets the ending date and time.|
+|startDateTime|DateTimeOffset|The date and time when the reporting period starts.|
+|endDateTime|DateTimeOffset|The date and time when the reporting period ends.|
 
 
 ## Request headers
@@ -52,7 +50,7 @@ The following table shows the parameters that can be used with this function.
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -61,7 +59,7 @@ If successful, this function returns a `200 OK` response code and a [microsoft.g
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -69,11 +67,15 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/networkAccess/reports/entitiesSummaries(startDateTime=2023-01-01T00:00:00Z,endDateTime=2023-01-31T00:00:00Z)?$filter=trafficType  eq 'microsoft365'
+GET https://graph.microsoft.com/beta/networkAccess/reports/entitiesSummaries(startDateTime=2023-01-01T00:00:00Z,endDateTime=2023-01-31T00:00:00Z) 
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportsthisentitiessummaries-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/reportsthisentitiessummaries-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -99,7 +101,7 @@ GET https://graph.microsoft.com/beta/networkAccess/reports/entitiesSummaries(sta
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -112,7 +114,14 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.networkaccess.entitiesSummary)",
   "value": [
+    {
+      "trafficType": "internet",
+      "userCount": 1000,
+      "deviceCount": 8000,
+      "workloadCount": 76000
+    },
     {
       "trafficType": "microsoft365",
       "userCount": 100000,

@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = TenantSearchPostRequestBody()
-request_body.tenant_id = 'String'
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = TenantSearchPostRequestBody(
+	tenant_id = "String",
+)
 
-
-
-result = await client.tenant_relationships.managed_tenants.tenant_groups.microsoft_graph_managed_tenant_tenant_search.post(request_body = request_body)
+result = await graph_client.tenant_relationships.managed_tenants.tenant_groups.microsoft_graph_managed_tenants_tenant_search.post(request_body)
 
 
 ```

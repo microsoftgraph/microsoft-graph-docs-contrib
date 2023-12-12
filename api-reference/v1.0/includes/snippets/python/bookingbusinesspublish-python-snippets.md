@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-
-await client.solutions.booking_businesses.by_booking_businesse_id('bookingBusiness-id').publish.post()
+await graph_client.solutions.booking_businesses.by_booking_business_id('bookingBusiness-id').publish.post()
 
 
 ```

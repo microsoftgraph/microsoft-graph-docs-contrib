@@ -4,22 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = ExportPostRequestBody()
-request_body.output_name = 'Export reviewset query via API'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.description = 'Export for the Contoso investigation 2'
+request_body = ExportPostRequestBody(
+	output_name = "Export reviewset query via API",
+	description = "Export for the Contoso investigation 2",
+	export_options = ExportOptions.OriginalFiles | ExportOptions.Tags,
+	export_structure = ExportFileStructure.Directory,
+)
 
-request_body.exportoptions(ExportOptions.OriginalFiles,tags('exportoptions.originalfiles,tags'))
-
-request_body.exportstructure(ExportFileStructure.Directory('exportfilestructure.directory'))
-
-
-
-
-await client.security.cases.ediscovery_cases.by_ediscovery_case_id('ediscoveryCase-id').review_sets.by_review_set_id('ediscoveryReviewSet-id').queries.by_querie_id('ediscoveryReviewSetQuery-id').microsoft_graph_security_export.post(request_body = request_body)
+await graph_client.security.cases.ediscovery_cases.by_ediscovery_case_id('ediscoveryCase-id').review_sets.by_ediscovery_review_set_id('ediscoveryReviewSet-id').queries.by_ediscovery_review_set_query_id('ediscoveryReviewSetQuery-id').microsoft_graph_security_export.post(request_body)
 
 
 ```

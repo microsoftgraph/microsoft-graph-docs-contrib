@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) objects.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -61,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1561
+Content-Length: 1607
 
 {
   "value": [
@@ -92,7 +94,8 @@ Content-Length: 1561
       "deviceAccountPassword": "Device Account Password value",
       "deviceFriendlyName": "Device Friendly Name value",
       "remediationState": "noRemediationRequired",
-      "remediationStateLastModifiedDateTime": "2017-01-01T00:00:10.730021-08:00"
+      "remediationStateLastModifiedDateTime": "2017-01-01T00:00:10.730021-08:00",
+      "userlessEnrollmentStatus": "allowed"
     }
   ]
 }

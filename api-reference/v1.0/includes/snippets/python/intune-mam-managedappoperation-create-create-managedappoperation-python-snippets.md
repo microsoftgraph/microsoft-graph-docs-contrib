@@ -4,22 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = ManagedAppOperation()
-request_body.@odata_type = '#microsoft.graph.managedAppOperation'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.display_name = 'Display Name value'
+request_body = ManagedAppOperation(
+	odata_type = "#microsoft.graph.managedAppOperation",
+	display_name = "Display Name value",
+	state = "State value",
+	version = "Version value",
+)
 
-request_body.state = 'State value'
-
-request_body.version = 'Version value'
-
-
-
-
-result = await client.device_app_management.managed_app_registrations.by_managed_app_registration_id('managedAppRegistration-id').operations.post(request_body = request_body)
+result = await graph_client.device_app_management.managed_app_registrations.by_managed_app_registration_id('managedAppRegistration-id').operations.post(request_body)
 
 
 ```

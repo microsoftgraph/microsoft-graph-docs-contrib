@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get an [app](../resources/teamsappinstallation.md) installed in a [chat](../resources/chat.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,15 +48,17 @@ GET /chats/{chat-id}/installedApps/{app-installation-id}
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [teamsAppInstallation](../resources/teamsappinstallation.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [teamsAppInstallation](../resources/teamsappinstallation.md) object in the response body.
 
 ## Examples
 
-### Example 1 : Get the app installed in the specified chat
+### Example 1: Get the app installed in the specified chat
+
+The following example gets an app installed in the specified chat.
 
 #### Request
 
-The following example gets an app installed in the specified chat.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -70,6 +74,10 @@ GET https://graph.microsoft.com/beta/chats/19:d65713bc498c4a428c71ef9353e6ce20@t
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-installedapps-in-chat-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-installedapps-in-chat-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -100,6 +108,8 @@ GET https://graph.microsoft.com/beta/chats/19:d65713bc498c4a428c71ef9353e6ce20@t
 
 #### Response
 
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -122,6 +132,8 @@ The following example gets the list of any [resource-specific permissions that w
 
 #### Request
 
+The following example shows a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -136,6 +148,10 @@ GET https://graph.microsoft.com/beta/chats/19%5bd86ec7f6b247d3b9e519b0bfef5d03%4
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-installedapps-in-chat-select-consentedpermissionset-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-installedapps-in-chat-select-consentedpermissionset-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -155,7 +171,7 @@ GET https://graph.microsoft.com/beta/chats/19%5bd86ec7f6b247d3b9e519b0bfef5d03%4
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-installedapps-in-chat-select-consentedpermissionset-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -165,6 +181,8 @@ GET https://graph.microsoft.com/beta/chats/19%5bd86ec7f6b247d3b9e519b0bfef5d03%4
 ---
 
 #### Response
+
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

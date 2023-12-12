@@ -13,12 +13,14 @@ Namespace: microsoft.graph
 
 Retrieve the properties of a specific group setting object. The setting can be a tenant-level or group-specific setting.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 ### List tenant-wide settings
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Directory.Read.All, Directory.ReadWrite.All |
@@ -26,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | Directory.Read.All, Directory.ReadWrite.All |
 
 ### List group-specific settings
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Group.Read.All, Group.ReadWrite.All         |
@@ -63,7 +65,7 @@ This method supports the `$select` [OData query parameter](/graph/query-paramete
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -108,6 +110,10 @@ GET https://graph.microsoft.com/v1.0/groups/05aa6a98-956a-45c0-b13b-88076a23f2cd
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-groupsettings-specific-group-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-groupsettings-specific-group-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -179,6 +185,10 @@ GET https://graph.microsoft.com/v1.0/groupSettings/84af2ca5-c274-41bf-86e4-6e374
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-groupsettings-tenantwide-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

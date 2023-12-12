@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-
-result = await client.organization.by_organization_id('organization-id').set_mobile_device_management_authority.post()
+result = await graph_client.organization.by_organization_id('organization-id').set_mobile_device_management_authority.post()
 
 
 ```

@@ -15,20 +15,19 @@ Namespace: microsoft.graph
 
 Retrieve the [hosted content](../resources/teamworkhostedcontent.md) in an [app's icon](../resources/teamsappicon.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### Permissions for app icon in app catalog
-| Permission Type                        | Permissions (from least to most privileged)                      |
-| :------------------------------------- | :--------------------------------------------------------------- |
-| Delegated (work or school account)     | AppCatalog.Read.All, AppCatalog.ReadWrite.All, AppCatalog.Submit |
-| Delegated (personal Microsoft account) | Not supported.                                                   |
-| Application                            | AppCatalog.Read.All, AppCatalog.ReadWrite.All                    |
+<!-- { "blockType": "permissions", "name": "teamworkhostedcontent_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/teamworkhostedcontent-get-permissions.md)]
 
 ## HTTP request
 
-**Get hosted content in app icon in app catalog**
+Get hosted content in app icon in app catalog:
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -50,7 +49,7 @@ This operation supports the `$select` [OData query parameters](/graph/query-para
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -62,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a [teamworkHoste
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -77,6 +76,10 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/teamsappicon-get-hostedcontent-coloricon-value-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/teamsappicon-get-hostedcontent-coloricon-value-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -131,7 +134,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 > **Note:** Requests for the raw value does not support [OData query parameters](/graph/query-parameters) to customize the response.
 
@@ -148,6 +151,10 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/teamsappicon-get-hostedcontentbytes-outlineicon-value-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/teamsappicon-get-hostedcontentbytes-outlineicon-value-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -178,7 +185,7 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96
 
 #### Response
 
-Response contains bytes for the hosted content in the body. `content-type` header specifies the kind of hosted content.
+The following example shows the response that contains bytes for the hosted content in the body. `content-type` header specifies the kind of hosted content.
 
 <!-- {
   "blockType": "response"

@@ -10,9 +10,9 @@ ms.prod: "outlook"
 
 In Outlook, a calendar owner can share the calendar with another user. The owner can specify which information in non-private events is viewable, and can give write access to the calendar to users in the same organization. 
 
-The owner can also delegate another user to manage meetings in the owner's _primary_ calendar. Delegates are sharees who can view all information in and have write access to non-private events. They also receive meeting requests and responses, and respond to meeting requests on behalf of the owner. Additionally, the owner can give explicit permissions to delegates to view the owner's _private_ events on the calendar. 
+The owner can also delegate another user to manage meetings in the owner's _primary_ calendar. Delegates are share recipients who can view all information in and have write access to non-private events. They also receive meeting requests and responses, and respond to meeting requests on behalf of the owner. Additionally, the owner can give explicit permissions to delegates to view the owner's _private_ events on the calendar. 
 
-Before calendar sharing or delegation can take effect, the owner sends a sharee or delegate an invitation, and the sharee or delegate accepts the invitation, or, explicitly adds the shared or delegated calendar for access. The invitation and adding a shared or delegated calendar occur in an Outlook client. 
+Before calendar sharing or delegation can take effect, the owner sends a share recipient or delegate an invitation, and the share recipient or delegate accepts the invitation, or, explicitly adds the shared or delegated calendar for access. The invitation and adding a shared or delegated calendar occur in an Outlook client. 
 
 After sharing or delegation is set up in Outlook, apps can then use the Microsoft Graph API to manage the sharing and delegation.
 
@@ -23,10 +23,10 @@ The rest of this article is based on the following example scenario:
 
 This article describes programmatically carrying out the following tasks with a shared or delegated calendar:
 
-- [Get calendar information about sharees, delegates, and allowed permissions, and update individual permissions](#get-calendar-information-about-sharees-and-delegates-and-update-individual-permissions).
+- [Get calendar information about share recipients, delegates, and allowed permissions, and update individual permissions](#get-calendar-information-about-share-recipients-and-delegates-and-update-individual-permissions)
 - [Get the properties that describe the sharing or delegation of the calendar](#get-properties-of-a-shared-or-delegated-calendar).
 - [Get or set mailbox setting to receive meeting requests and responses for a delegated calendar](#get-or-set-mailbox-setting-to-receive-meeting-requests-and-responses).
-- [Delete a sharee or delegate of a calendar](#delete-a-sharee-or-delegate-of-a-calendar).
+- [Delete a share recipient or delegate of a calendar](#delete-a-sharee-or-delegate-of-a-calendar).
 
 Apps can also do the following using API that is generally available:
 
@@ -36,25 +36,25 @@ Apps can also do the following using API that is generally available:
 > [!NOTE]
 > The properties and API for calendar sharing and delegating as described in this topic are currently available in the v1.0 endpoint, with the exception of the calendar properties **isShared** and **isSharedWithMe**. These two properties are exposed in only the beta endpoint.
 
-## Get calendar information about sharees and delegates, and update individual permissions
+## Get calendar information about share recipients and delegates, and update individual permissions
 
 In this section:
 
 - [Calendar owner: Get sharing or delegation information and permissions](#calendar-owner-get-sharing-or-delegation-information-and-permissions)
-- [Calendar owner: Update permissions for an existing sharee or delegate on a calendar](#calendar-owner-update-permissions-for-an-existing-sharee-or-delegate-on-a-calendar)
+- [Calendar owner: Update permissions for an existing share recipient or delegate on a calendar](#calendar-owner-update-permissions-for-an-existing-share-recipient-or-delegate-on-a-calendar)
 
-Each calendar is associated with a collection of [calendarPermission](/graph/api/resources/calendarpermission) objects, each of which describes a sharee or delegate and the associated permission that the calendar owner has set up. The [calendarRoleType](/graph/api/resources/calendarpermission#calendarroletype-values) enumeration defines the range of permissions that Microsoft Graph supports:
+Each calendar is associated with a collection of [calendarPermission](/graph/api/resources/calendarpermission) objects, each of which describes a share recipient or delegate and the associated permission that the calendar owner has set up. The [calendarRoleType](/graph/api/resources/calendarpermission#calendarroletype-values) enumeration defines the range of permissions that Microsoft Graph supports:
 
 - `none`
-    This value applies to only `My Organization` which does not have any permissions to the calendar. It doesn't apply to individual users, as only users with permissions are associated with a **calendarPermission** object for the calendar.
+    This value applies to only `My Organization` which doesn't have any permissions to the calendar. It doesn't apply to individual users, as only users with permissions are associated with a **calendarPermission** object for the calendar.
 - `freeBusyRead`
-    The sharee can view the owner's free/busy status, but not other details on the calendar.
+    The share recipient can view the owner's free/busy status, but not other details on the calendar.
 - `limitedRead`
-    The sharee can view the owner's free/busy status, and the titles and locations of non-private events on the calendar.
+    The share recipient can view the owner's free/busy status, and the titles and locations of non-private events on the calendar.
 - `read`
-    The sharee can view the owner's free/busy status in private events, and all the details of non-private events on the calendar.
+    The share recipient can view the owner's free/busy status in private events, and all the details of non-private events on the calendar.
 - `write`
-    The sharee can view the owner's free/busy status in private events, and can view all the details and edit (create, update, or delete) non-private events on the calendar.
+    The share recipient can view the owner's free/busy status in private events, and can view all the details and edit (create, update, or delete) non-private events on the calendar.
 - `delegateWithoutPrivateEventAccess`
     The _delegate_ can view the owner's free/busy status in private events, and has `write` access to non-private events on the calendar.
 - `delegateWithPrivateEventAccess`
@@ -84,7 +84,7 @@ This example shows with the consent of Alex or administrator, how to get the **c
 
 **Microsoft Graph permissions**
 
-Use the least privileged delegated or application permission, `Calendars.Read`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
+Use the least privileged delegated or application permission, `Calendars.Read`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -97,6 +97,10 @@ GET https://graph.microsoft.com/beta/users/AlexW@contoso.OnMicrosoft.com/calenda
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/beta/get-calendarperms-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/get-calendarperms-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -178,17 +182,17 @@ Content-type: application/json
 ```
 
 
-### Calendar owner: Update permissions for an existing sharee or delegate on a calendar
+### Calendar owner: Update permissions for an existing share recipient or delegate on a calendar
 
-With the consent of Alex or administrator, you can update the permissions assigned to an existing sharee or delegate (specified by the **role** property), as long as the new permissions are supported by those **allowedRoles** set up initially for the sharee or delegate for that calendar. 
+With the consent of Alex or administrator, you can update the permissions assigned to an existing share recipient or delegate (specified by the **role** property), as long as the new permissions are supported by those **allowedRoles** set up initially for the share recipient or delegate for that calendar. 
 
-Aside from the **role** property, you cannot update other properties of an existing sharee or delegate. Changing the **emailAddress** property value requires deleting the sharee or delegate and setting up a new instance of **calendarPermission** again.
+Aside from the **role** property, you can't update other properties of an existing share recipient or delegate. Changing the **emailAddress** property value requires deleting the share recipient or delegate and setting up a new instance of **calendarPermission** again.
 
-The example in this section updates the **role** property, changing the permission of an existing sharee, Adele, from `read` to `write` for the custom calendar "Kids parties".
+The example in this section updates the **role** property, changing the permission of an existing share recipient, Adele, from `read` to `write` for the custom calendar "Kids parties".
 
 **Microsoft Graph permissions**
 
-Use the least privileged delegated or application permission, `Calendars.ReadWrite`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
+Use the least privileged delegated or application permission, `Calendars.ReadWrite`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -207,6 +211,10 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/beta/update-calendarperm-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/update-calendarperm-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -271,7 +279,7 @@ Content-type: application/json
 In this section:
 
 - [Calendar owner: Get properties of a shared or delegated calendar](#calendar-owner-get-properties-of-a-shared-or-delegated-calendar)
-- [Sharee or delegate: Get properties of shared or delegated calendar](#sharee-or-delegate-get-properties-of-shared-or-delegated-calendar)
+- [share recipient or delegate: Get properties of shared or delegated calendar](#share-recipient-or-delegate-get-properties-of-shared-or-delegated-calendar)
 
 Recalling in this example, Alex has delegated his primary calendar and given the delegate, Megan Bowen, the permission to view calendar items that are marked private.
 This section shows the properties of the delegated calendar, first from the perspective of and with the consent of the owner, Alex, and then from the perspective of and with the consent of the delegate, Megan. Consent from the administrator also works for each case.
@@ -290,7 +298,7 @@ Note the following properties on Alex' behalf:
 
 **Microsoft Graph permissions**
 
-Use the least privileged delegated or application permission, `Calendars.Read`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
+Use the least privileged delegated or application permission, `Calendars.Read`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -304,6 +312,10 @@ GET https://graph.microsoft.com/beta/users/AlexW@contoso.OnMicrosoft.com/calenda
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/beta/get-calendar-props-owner-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/get-calendar-props-owner-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -368,7 +380,7 @@ Content-type: application/json
 ```
 
 
-### Sharee or delegate: Get properties of shared or delegated calendar
+### Share recipient or delegate: Get properties of shared or delegated calendar
 
 The example in this section gets the properties of the same calendar from the perspective of the delegate, Megan. 
 
@@ -387,7 +399,7 @@ Note the following properties:
 
 **Microsoft Graph permissions**
 
-Use the least privileged delegated permission, `Calendars.Read.Shared`, or application permission, `Calendars.Read`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
+Use the least privileged delegated permission, `Calendars.Read.Shared`, or application permission, `Calendars.Read`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -401,6 +413,10 @@ GET https://graph.microsoft.com/beta/users/meganb@contoso.OnMicrosoft.com/calend
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/beta/get-calendar-props-delegate-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/get-calendar-props-delegate-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -420,7 +436,7 @@ GET https://graph.microsoft.com/beta/users/meganb@contoso.OnMicrosoft.com/calend
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/beta/get-calendar-props-delegate-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -494,7 +510,7 @@ The example in this section gets the **mailboxSettings** of a calendar owner who
 
 **Microsoft Graph permissions**
 
-Use the least privileged delegated or application permission, `MailboxSettings.Read`, as appropriate, for this operation. For more information about mailbox permissions, see [mail permissions](permissions-reference.md#mail-permissions).
+Use the least privileged delegated or application permission, `MailboxSettings.Read`, as appropriate, for this operation. For more information about mailbox permissions, see [mail permissions](permissions-reference.md).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -508,6 +524,10 @@ GET https://graph.microsoft.com/beta/users/AlexW@contoso.OnMicrosoft.com/mailbox
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/beta/get-mailboxsettings-owner-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/get-mailboxsettings-owner-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -594,7 +614,7 @@ The example in this section updates the **delegateMeetingMessageDeliveryOptions*
 
 **Microsoft Graph permissions**
 
-Use the least privileged delegated or application permission, `MailboxSettings.ReadWrite`, as appropriate, for this operation. For more information about mailbox permissions, see [mail permissions](permissions-reference.md#mail-permissions).
+Use the least privileged delegated or application permission, `MailboxSettings.ReadWrite`, as appropriate, for this operation. For more information about mailbox permissions, see [mail permissions](permissions-reference.md).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -613,6 +633,10 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/beta/patch-mailboxsettings-owner-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/patch-mailboxsettings-owner-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -664,7 +688,7 @@ In the example below, Alex deletes Megan as a sharee of the "Kids parties" calen
 
 **Microsoft Graph permissions**
 
-Use the least privileged delegated or application permission, `Calendars.ReadWrite`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
+Use the least privileged delegated or application permission, `Calendars.ReadWrite`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -678,6 +702,10 @@ DELETE https://graph.microsoft.com/beta/users/AlexW@contoso.OnMicrosoft.com/cale
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/beta/delete-sharee-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/delete-sharee-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

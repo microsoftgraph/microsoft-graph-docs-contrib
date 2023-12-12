@@ -20,14 +20,13 @@ The following are some examples you can customize for a service:
 - Any time buffer to set up before or finish up after the service
 - [Scheduling policy](../resources/bookingschedulingpolicy.md) parameters, such as minimum notice to book or cancel, and whether customers can select specific staff members for an appointment.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported.  |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "bookingservice_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/bookingservice-update-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -54,7 +53,7 @@ PATCH /solutions/bookingBusinesses/{id}/services/{id}
 |displayName|String|A service name.|
 |id|String| The unique identifier for the **bookingService**. Read-only.|
 |isAnonymousJoinEnabled|Boolean|`True` if the URL to join the appointment anonymously (**anonymousJoinWebUrl**) will be generated for the appointment booked for this service.|
-|isHiddenFromCustomers|Boolean|If `true`, the service is not available to customers for booking.|
+|isHiddenFromCustomers|Boolean|If `true`, the service isn't available to customers for booking.|
 |isLocationOnline|Boolean|If `true` it indicates that the appointments for the service will be held online. Default value is `false`.|
 |languageTag|String|The language of the self-service booking page.|
 |maximumAttendeesCount|Int32|The maximum number of customers allowed in a service.  |
@@ -66,7 +65,7 @@ PATCH /solutions/bookingBusinesses/{id}/services/{id}
 |staffMemberIds|String collection|Represents those [staff members](../resources/bookingstaffmember.md) who provide this service. |
 
 ## Response
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 ## Example
 ### Request
 The following example updates the duration of the specified service.
@@ -86,7 +85,7 @@ Content-type: application/json
 ```
 
 ### Response
-The following is an example of the response.
+The Here's an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

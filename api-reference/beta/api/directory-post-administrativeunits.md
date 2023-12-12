@@ -14,17 +14,17 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use this API to create a new [administrativeUnit](../resources/administrativeunit.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | AdministrativeUnit.ReadWrite.All   |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | AdministrativeUnit.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "directory_post_administrativeunits" } -->
+[!INCLUDE [permissions-table](../includes/permissions/directory-post-administrativeunits-permissions.md)]
 
-To create an administrative unit, the calling principal must be assigned one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
+To create an administrative unit, the calling principal must be assigned one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
 * Privileged Role Administrator
 * Global Administrator
@@ -50,7 +50,7 @@ You can specify the following properties when creating an **administrativeUnit**
 |:---------------|:--------|:----------|
 | description | String | Description for the administrative unit. Optional. |
 | displayName | String | Display name for the administrative unit. Required. |
-| isMemberManagementRestricted | Boolean | `true` if members of this administrative unit should be treated as sensitive, which requires specific permissions to manage. Default value is `false`. Use this property to define administrative units whose roles don't inherit from tenant-level administrators, and management of individual member objects is limited to administrators scoped to a restricted management administrative unit. Immutable, so cannot be changed later. Optional. |
+| isMemberManagementRestricted | Boolean | `true` if members of this administrative unit should be treated as sensitive, which requires specific permissions to manage. Default value is `false`. Use this property to define administrative units whose roles don't inherit from tenant-level administrators, and management of individual member objects is limited to administrators scoped to a restricted management administrative unit. Immutable, so can't be changed later. Optional. |
 | membershipRule | String | Dynamic membership rule for the administrative unit. For more about the rules that you can use for dynamic administrative units and dynamic groups, see [Using attributes to create advanced rules](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/). Optional. |
 | membershipRuleProcessingState | String | Used to control whether the dynamic membership rule is actively processed. Set to `On` when you want the dynamic membership rule to be active and `Paused` if you want to stop updating membership dynamically. Optional. |
 | membershipType | String | Membership type for the administrative unit. Can be `dynamic` or `assigned`. Optional. |
@@ -92,6 +92,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-administrativeunit-from-administrativeunits-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-administrativeunit-from-administrativeunits-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-administrativeunit-from-administrativeunits-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -120,7 +124,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response. 
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -145,7 +149,7 @@ Content-type: application/json
 
 ### Example 2: Create a restricted management administrative unit
 
-The following example creates a new restricted management administrative unit. The `isMemberManagementRestricted` property is immutable, so cannot be changed later.
+The following example creates a new restricted management administrative unit. The `isMemberManagementRestricted` property is immutable, so can't be changed later.
 
 #### Request
 # [HTTP](#tab/http)
@@ -166,6 +170,10 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-administrativeunit-restricted-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-administrativeunit-restricted-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -239,5 +247,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

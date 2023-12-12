@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
 var requestBody = new PlannerUser
 {
@@ -15,7 +16,7 @@ var requestBody = new PlannerUser
 		AdditionalData = new Dictionary<string, object>
 		{
 			{
-				"jd8S5gOaFk2S8aWCIAJz42QAAxtD" , new 
+				"jd8S5gOaFk2S8aWCIAJz42QAAxtD" , new PlannerFavoritePlanReference
 				{
 					OdataType = "#microsoft.graph.plannerFavoritePlanReference",
 					OrderHint = " !",
@@ -32,16 +33,18 @@ var requestBody = new PlannerUser
 		AdditionalData = new Dictionary<string, object>
 		{
 			{
-				"jd8S5gOaFk2S8aWCIAJz42QAAxtD" , new 
+				"jd8S5gOaFk2S8aWCIAJz42QAAxtD" , new PlannerRecentPlanReference
 				{
 					OdataType = "#microsoft.graph.plannerRecentPlanReference",
-					LastAccessedDateTime = "2018-01-02T22:49:46.155Z",
+					LastAccessedDateTime = DateTimeOffset.Parse("2018-01-02T22:49:46.155Z"),
 					PlanTitle = "Next Release Discussion",
 				}
 			},
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Me.Planner.PatchAsync(requestBody, (requestConfiguration) =>
 {
 	requestConfiguration.Headers.Add("Prefer", "return=representation");

@@ -20,6 +20,8 @@ marketingNotificationEmails := []string {
 	"marketing@contoso.com",
 }
 requestBody.SetMarketingNotificationEmails(marketingNotificationEmails)
+onPremisesSyncEnabled := true
+requestBody.SetOnPremisesSyncEnabled(&onPremisesSyncEnabled) 
 privacyProfile := graphmodels.NewPrivacyProfile()
 contactEmail := "alice@contoso.com"
 privacyProfile.SetContactEmail(&contactEmail) 

@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = ReferenceUpdate()
-request_body.@odata_id = 'https://graph.microsoft.com/v1.0/education/me/rubrics/{id}'
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = ReferenceUpdate(
+	odata_id = "https://graph.microsoft.com/v1.0/education/me/rubrics/{id}",
+)
 
-
-
-await client.education.classes.by_classe_id('educationClass-id').assignments.by_assignment_id('educationAssignment-id').rubric.ref.put(request_body = request_body)
+await graph_client.education.classes.by_education_class_id('educationClass-id').assignments.by_education_assignment_id('educationAssignment-id').rubric.ref.put(request_body)
 
 
 ```

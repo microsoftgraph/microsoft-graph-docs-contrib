@@ -18,16 +18,15 @@ Some common uses for this function are to:
 * Resolve IDs returned by functions (that return collections of IDs) such as [getMemberObjects](directoryobject-getmemberobjects.md) or [getMemberGroups](directoryobject-getmembergroups.md)  to their backing directory objects.
 * Resolve IDs persisted in an external store by the application to their backing directory objects.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.Read.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.Read.All |
+<!-- { "blockType": "permissions", "name": "directoryobject_getbyids" } -->
+[!INCLUDE [permissions-table](../includes/permissions/directoryobject-getbyids-permissions.md)]
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -143,13 +142,11 @@ Content-type: application/json
       {
         "@odata.type": "#microsoft.graph.user",
         "id": "84b80893-8749-40a3-97b7-68513b600544",
-        "accountEnabled": true,
         "displayName": "Trevor Jones"
       },
       {
         "@odata.type": "#microsoft.graph.user",
         "id": "5d6059b6-368d-45f8-91e1-8e07d485f1d0",
-        "accountEnabled": true,
         "displayName": "Billy Smith"
       },
       {
