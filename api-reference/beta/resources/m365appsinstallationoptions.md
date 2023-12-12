@@ -26,7 +26,7 @@ Represents the tenant-level installation options for Microsoft 365 apps. You can
 
 | Property       | Type           | Description                                 |
 | -------------- | -------------- | ------------------------------------------- |
-| updateChannel | [appsUpdateChannelType](../resources/appsUpdateChannelType.md) | Specify how often users get feature updates for Microsoft 365 apps installed on devices running Windows. The possible values are: 'current', 'monthlyEnterprise', or 'semiAnnual', with corresponding update frequencies of 'As soon as they're ready', 'Once a month', and 'Every six months'. Include the `Prefer: include-unknown-enum-members` header to explicitly request for enum values beyond `unknownFutureValue`.|
+| updateChannel | [appsUpdateChannelType](../resources/appsUpdateChannelType.md) | Specifies how often users get feature updates for Microsoft 365 apps installed on devices running Windows. The possible values are: `current`, `monthlyEnterprise`, or `semiAnnual`, with corresponding update frequencies of `As soon as they're ready`, `Once a month`, and `Every six months`. Include the `Prefer: include-unknown-enum-members` header to explicitly request for enum values beyond `unknownFutureValue`.|
 | appsForWindows | [appsInstallationOptionsForWindows](../resources/appsInstallationOptionsForWindows.md) | The Microsoft 365 apps installation options container object for a Windows platform. |
 | appsForMac | [appsInstallationOptionsForMac](../resources/appsInstallationOptionsForMac.md) | The Microsoft 365 apps installation options container object for a MAC platform. |
 
