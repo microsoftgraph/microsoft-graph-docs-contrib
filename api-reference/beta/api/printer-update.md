@@ -64,7 +64,7 @@ The following properties can be updated using application permissions.
 |model|String|The model name of the printer.|
 |status|[printerStatus](../resources/printerstatus.md)|The processing status of the printer, including any errors.|
 |isAcceptingJobs|Boolean|Whether the printer is currently accepting new print jobs.|
-|releaseMechanisms|[printReleaseMechanism](../resources/intune-printreleasemechanism.md) collection|The release mechanisms supported by the printer.|
+|releaseMechanisms|[printReleaseMechanism](../resources/intune-printreleasemechanism.md) collection|The release mechanisms supported by the printer. Optional.|
 
 ### Application permissions and IPP payload
 
