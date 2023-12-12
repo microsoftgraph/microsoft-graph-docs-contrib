@@ -204,7 +204,7 @@ configuration:
             Thank you for indicating that your pull request is ready for content review, @${issueAuthor}. It has been added to the **Content Review** project and an available reviewer will be assigned in the next 15 business days, depending on demand.
 
 
-            Check the content review workflow [here](https://dev.azure.com/msazure/One/_wiki/wikis/Microsoft%20Graph%20Partners/211773/Content-workflow?anchor=content-review-process-summary).
+            Check the content review workflow [here](https://dev.azure.com/msazure/One/_wiki/wikis/Microsoft%20Graph%20Partners/614263/Content-workflow?anchor=content-review-process-summary).
     - description: Remove status labels and add reply when pull request is labeled with content review complete
       if:
       - payloadType: Pull_Request
@@ -226,7 +226,7 @@ configuration:
             When the updates in this PR are ready for external customers to use, please replace the **do not merge** label with **ready to merge**.
 
 
-            Check the content review workflow [here](https://dev.azure.com/msazure/One/_wiki/wikis/Microsoft%20Graph%20Partners/211773/Content-workflow?anchor=content-review-process-summary).
+            Check the content review workflow [here](https://dev.azure.com/msazure/One/_wiki/wikis/Microsoft%20Graph%20Partners/614263/Content-workflow?anchor=content-review-process-summary).
       - removeLabel:
           label: content review in progress
     - description: Add prompt for internal users to make requested changes
@@ -247,7 +247,7 @@ configuration:
             If you cannot add labels, please add a comment with `#feedback-addressed` to the pull request.
 
 
-            Check the content review workflow [here](https://dev.azure.com/msazure/One/_wiki/wikis/Microsoft%20Graph%20Partners/211773/Content-workflow?anchor=content-review-process-summary).
+            Check the content review workflow [here](https://dev.azure.com/msazure/One/_wiki/wikis/Microsoft%20Graph%20Partners/614263/Content-workflow?anchor=content-review-process-summary).
       - assignTo:
           author: True
     - description: 'Add review feedback addressed label if author comments #feedback-addressed'
@@ -1117,7 +1117,7 @@ configuration:
             > Pull requests will not be merged until the **ready to merge** label is set.
 
 
-            For details, see the [Content review process summary](https://dev.azure.com/msazure/One/_wiki/wikis/Microsoft%20Graph%20Partners/211773/Content-workflow).
+            For details, see the [Content review process summary](https://dev.azure.com/msazure/One/_wiki/wikis/Microsoft%20Graph%20Partners/614263/Content-workflow).
     - description: Add do not merge label to new pull requests opened by members
       if:
       - payloadType: Pull_Request
@@ -1170,7 +1170,7 @@ configuration:
             > Pull requests will not be merged until the **ready to merge** label is set.
 
 
-            For details, see the [Content review process summary](https://dev.azure.com/msazure/One/_wiki/wikis/Microsoft%20Graph%20Partners/211773/Content-workflow).
+            For details, see the [Content review process summary](https://dev.azure.com/msazure/One/_wiki/wikis/Microsoft%20Graph%20Partners/614263/Content-workflow).
 
 onFailure:
 onSuccess:
