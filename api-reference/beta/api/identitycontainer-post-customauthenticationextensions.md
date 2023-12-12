@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 Create a new [customAuthenticationExtension](../resources/customauthenticationextension.md) object. The following derived types are currently supported.
 
-- [onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md) derived type.
-- [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) derived type.
-- [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) derived type.
+- [onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md) resource type.
+- [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) resource type.
+- [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) resource type.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

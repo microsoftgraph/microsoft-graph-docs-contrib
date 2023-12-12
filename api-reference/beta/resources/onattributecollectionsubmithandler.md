@@ -1,6 +1,6 @@
 ---
 title: "onAttributeCollectionSubmitHandler resource type"
-description: "Represents a step in a multi-event user flow policy defining what happens when attributes are submitted by a user during the attribution collection stage of a sign up flow."
+description: "Represents a step in a user flow defining what happens when the user submits attributes during the attribute collection stage."
 author: "garrodonnell"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used to configure what to invoke when attributes are submitted by a user during the attribution collection stage of a sign up flow as defined in the **onAttributeCollectionSubmitHandler** event in an [externalUsersSelfServiceSignUpEventsFlow](externalUsersSelfServiceSignUpEventsFlow.md) user flow type.
+Used to configure what to invoke when the user submits attributes during the attribute collection stage of an [externalUsersSelfServiceSignUpEventsFlow](externalUsersSelfServiceSignUpEventsFlow.md) object as defined in the **onAttributeCollectionSubmitHandler** event.
+
+The [onAttributeCollectionSubmitCustomExtensionHandler]() object inherits from this type.
 
 ## Properties
 None

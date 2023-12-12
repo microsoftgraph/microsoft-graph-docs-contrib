@@ -1,6 +1,6 @@
 ---
 title: "onAttributeCollectionStartHandler resource type"
-description: "Represents a step in a multi-event user flow policy defining what happens upon the start of the user attribution collection stage of a sign up flow."
+description: "Represents a step in a user flow defining what happens upon the start of the user attribute collection stage."
 author: "garrodonnell"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used to configure what to invoke upon the start of the user attribution collection stage of a sign up flow as defined in the **onAttributeCollectionStartHandler** event in an [externalUsersSelfServiceSignUpEventsFlow](externalUsersSelfServiceSignUpEventsFlow.md) user flow type.
+Used to configure what to invoke upon the start of the user attribute collection stage of an [externalUsersSelfServiceSignUpEventsFlow](externalUsersSelfServiceSignUpEventsFlow.md) object as defined in the **onAttributeCollectionStartHandler** event.
+
+The [onAttributeCollectionStartCustomExtensionHandler]() object inherits from this type.
 
 ## Properties
 None.

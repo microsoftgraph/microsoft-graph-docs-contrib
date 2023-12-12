@@ -1,6 +1,6 @@
 ---
 title: "onAttributeCollectionSubmitCustomExtensionHandler resource type"
-description: "Used for creating a new custom extension based on the **onAttributeCollectionSubmit** event."
+description: "Used for creating a new custom extension based on the onAttributeCollectionSubmit event."
 author: "garrodonnell"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The 'onAttributeCollectionSubmit' event in the Azure AD auth pipeline enables this scenario and verifies sign up attributes when they are submitted. The custom extension can be used to do input validation checks on the attributes or allow the user to choose additional attributes.
+Used for creating a new custom extension based on the **onAttributeCollectionSubmit** event to configure the verification of attributes when they are submitted via the [externalUsersSelfServiceSignUpEventsFlow](../resources/externalUsersSelfServiceSignUpEventsFlow.md) object. The custom extension can be used to do input validation checks on the attributes or allow the user to choose additional attributes.
 
 Inherits from [onAttributeCollectionSubmitHandler](../resources/onattributecollectionsubmithandler.md).
 

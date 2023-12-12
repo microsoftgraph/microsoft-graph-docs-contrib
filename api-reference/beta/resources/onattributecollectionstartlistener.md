@@ -1,6 +1,6 @@
 ---
 title: "onAttributeCollectionStartListener resource type"
-description: "Listener for the onAttributeCollectionStart event."
+description: "A listener for the start of the user attribute collection stage of a sign up flow represented by an externalUsersSelfServiceSignUpEventsFlow object."
 author: "garrodonnell"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A listener for the start of the user attribution collection stage of a sign up flow. This event is triggered when the user clicks the sign up button.
+A listener for the start of the user attribute collection stage of a sign up flow represented by an [externalUsersSelfServiceSignUpEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object. This event is triggered when the user clicks the sign up button.
 
 Inherits from [authenticationEventListener](../resources/authenticationeventlistener.md).
 

@@ -15,9 +15,9 @@ Namespace: microsoft.graph
 
 Custom authentication extensions define interactions with external systems during a user authentication session. This is an abstract type from which the following types are derived.
 
-- [onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md) derived type.
-- [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) derived type.
-- [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) derived type.
+- [onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md) resource type.
+- [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) resource type.
+- [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) resource type.
 
 Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 
