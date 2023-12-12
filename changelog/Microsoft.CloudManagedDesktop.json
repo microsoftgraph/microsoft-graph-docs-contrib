@@ -3700,7 +3700,7 @@
           "SubArea": "Cloud PC"
       },
       {
-      "ChangeList": [ 
+      "ChangeList": [
             {
               "Id": "f7fa2818-6c04-45d4-963e-ec5640b80765",
               "ApiChange": "Property",
@@ -3716,8 +3716,8 @@
           "CreatedDateTime": "2023-08-21T07:28:47.8469126Z",
           "WorkloadArea": "Devices and apps",
           "SubArea": "Cloud PC"
-      }
-        {
+      },
+      {
         "ChangeList": [
             {
                 "Id": "cc0c0a79-a691-485d-b47c-8b0ee543ae6c",
