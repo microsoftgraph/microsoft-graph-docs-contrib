@@ -2773,6 +2773,22 @@
           "ChangeType": "Addition",
           "Description": "Added the [unarchive](https://docs.microsoft.com/en-us/graph/api/channel-unarchive?view=graph-rest-beta) method to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
           "Target": "channel"
+        },
+        {
+          "Id": "35kjn2i8-3b10-4cd3-u890-351a2d9fd678",
+          "ApiChange": "Resource",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Introduced new enum member archiveChannel to teamsAsyncOperationType.",
+          "Target": ""
+        },
+        {
+          "Id": "35kjn2i8-3b10-4cd3-u890-351a2d9fd678",
+          "ApiChange": "Resource",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Introduced new enum member unarchiveChannel to teamsAsyncOperationType.",
+          "Target": ""
         }
       ],
       "Id": "35kjn2i8-3b10-4cd3-u890-351a2d9fd678",
