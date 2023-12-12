@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Deletes an [appRoleAssignment](../resources/approleassignment.md) that a user, group, or client service principal has been granted for a resource service principal.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "serviceprincipal_delete_approleassignedto" } -->
 [!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-delete-approleassignedto-permissions.md)]
+
+[!INCLUDE [rbac-approleassignments-apis-write](../includes/rbac-for-apis/rbac-approleassignments-apis-write.md)]
 
 ## HTTP request
 
