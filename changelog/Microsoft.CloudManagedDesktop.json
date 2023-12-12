@@ -1,6 +1,24 @@
 {
     "changelog": [
         {
+          "ChangeList": [
+            {
+              "Id": "5c60ab9e-28a1-4be3-bea7-e8db01da561d",
+              "ApiChange": "Member",
+              "ChangedApiName": "hp",
+              "ChangeType": "Addition",
+              "Description": "Added the `hp` member to the **cloudPcPartnerAgentName** enumeration.",
+              "Target": "cloudPcPartnerAgentName"
+            }
+          ],
+          "Id": "5c60ab9e-28a1-4be3-bea7-e8db01da561d",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2023-12-11T10:37:44.6523017Z",
+          "WorkloadArea": "Device and app management",
+          "SubArea": "Cloud PC"
+        },
+        {
             "ChangeList": [
                 {
                     "Id": "12f93700-b666-4c5c-b569-7db20691c5b3",
