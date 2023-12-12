@@ -39,6 +39,8 @@ where files are shared, and where tabs are added.
 |[List channel members](../api/channel-list-members.md) | [conversationMember](conversationmember.md) collection | Get the list of members in a channel.|
 |[Add channel member](../api/channel-post-members.md) | [conversationMember](conversationmember.md) | Add a member to a channel. Only supported for channels with a **membershipType** of `private` or `shared`.|
 |[Get channel member](../api/channel-get-members.md) | [conversationMember](conversationmember.md) collection | Get a member in a channel.|
+|[Archive channel](../api/channel-archive.md) | None | Archive a channel.|
+|[Unarchive channel](../api/channel-unarchive.md) | None | Unarchive a channel.|
 |[Update channel member's role](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | Update the properties of a member of the channel. Only supported for channels with a **membershipType** of `private` or `shared`.|
 |[Remove channel member](../api/channel-delete-members.md) | None | Delete a member from a channel. Only supported for channels with a **membershipType** of `private` or `shared`.|
 |[Complete migration](../api/channel-completemigration.md)|[channel](channel.md)| Removes the migration mode from the channel and makes the channel available to users to post and read messages.|
@@ -71,6 +73,7 @@ where files are shared, and where tabs are added.
 |moderationSettings|[channelModerationSettings](../resources/channelmoderationsettings.md)|Settings to configure channel moderation to control who can start new posts and reply to posts in that channel.|
 |summary|[channelSummary](../resources/channelsummary.md)|Contains summary information about the channel, including number of guests, members, owners, and an indicator for members from other tenants. The **summary** property will only be returned if it is specified in the `$select` clause of the [Get channel](../api/channel-get.md) method.|
 |tenantId |string | The ID of the Microsoft Entra tenant. |
+|isArchived| Boolean | Indicates whether the channel is in archived state. Read-only. |
 
 ### channelMembershipType values
 
@@ -126,6 +129,7 @@ The following is a JSON representation of the resource.
   "email": "string",
   "webUrl": "string",
   "membershipType": "String",
+  "isArchived": false,
   "createdDateTime": "string (timestamp)",
   "moderationSettings": { "@odata.type": "microsoft.graph.channelModerationSettings" }
 }
