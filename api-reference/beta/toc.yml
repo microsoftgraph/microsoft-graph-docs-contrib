@@ -11153,8 +11153,8 @@ items:
         displayName: Viva
         items:
           - name: Employee engagement (preview)
-              displayName: Viva Engage
-              items:
+            displayName: Viva Engage
+            items:
               - name: Overview
                 href: resources/engagement-api-overview.md
               - name: Community
