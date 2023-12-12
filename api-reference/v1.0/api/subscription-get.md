@@ -59,6 +59,7 @@ Depending on the resource and the permission type (delegated or application) req
 |[team](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All, TeamSettings.Read.All | Not supported | Team.ReadBasic.All, TeamSettings.Read.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
+|[virtualEventWebinar](../resources/virtualeventwebinar.md) | VirtualEvent.Read | Not supported | VirtualEvent.Read.All |
 
 > **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
@@ -76,6 +77,13 @@ You can subscribe to changes in Outlook **contact**, **event**, or **message** r
 
 [!INCLUDE [outlook-subscription-notes](../../includes/outlook-subscription-notes.md)]
  
+### presence
+
+**presence** subscriptions require [encryption](/graph/webhooks-with-resource-data) for notifications that include resource data. Subscription creation fails if [encryptionCertificate](../resources/subscription.md) and [encryptionCertificateId](../resources/subscription.md) aren't specified when notifications need to include resource data. For details about presence subscriptions, see [Get change notifications for presence updates in Microsoft Teams](/graph/changenotifications-for-presence).
+
+### virtual events
+
+Subscriptions on **virtual events** only support basic notifications with support for limited entities of a virtual event. For more details on the supported types of subscriptions see [Get change notifications for Microsoft Teams virtual event updates](/graph/changenotifications-for-virtual-event).### virtual events
 
 ## HTTP request
 

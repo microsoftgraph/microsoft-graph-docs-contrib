@@ -64,6 +64,7 @@ Depending on the resource and the permission type (delegated or application) req
 |[team](../resources/team.md) (/teams/{id}) | Team.ReadBasic.All, TeamSettings.Read.All | Not supported | Team.ReadBasic.All, TeamSettings.Read.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
+|[virtualEventWebinar](../resources/virtualeventwebinar.md) | VirtualEvent.Read | Not supported | VirtualEvent.Read.All |
 
 We recommend that you use the permissions as documented in the previous table. Due to security restrictions, Microsoft Graph subscriptions will not support write access permissions when only read access permissions are needed.
 
@@ -88,6 +89,10 @@ You can subscribe to changes in Outlook **contact**, **event**, or **message** r
 ### presence
 
 Subscriptions on **presence** require any resource data included in a change notification to be encrypted. Always specify the **encryptionCertificate** parameter when [creating a subscription](/graph/webhooks-with-resource-data#creating-a-subscription) to avoid failure. See more information about [setting up change notifications to include resource data](/graph/webhooks-with-resource-data).
+
+### virtual events
+
+Subscriptions on **virtual events** only support basic notifications with support for limited entities of a virtual event. For more details on the supported types of subscriptions see [Get change notifications for Microsoft Teams virtual event updates](/graph/changenotifications-for-virtual-event).
 
 ## HTTP request
 
