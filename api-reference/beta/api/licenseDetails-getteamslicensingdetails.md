@@ -1,5 +1,5 @@
 ---
-title: "licenseDetails: getteamslicensingdetails"
+title: "licenseDetails: getTeamsLicensingDetails"
 description: "Get the license status of a user in Microsoft Teams."
 author: "mea"
 ms.localizationpriority: high
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# licenseDetails: getteamslicensingdetails
+# licenseDetails: getTeamsLicensingDetails
 
 Namespace: microsoft.graph
 
