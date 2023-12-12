@@ -3,6 +3,7 @@ items:
     href: /graph/overview
   - name: API changelog
     href: https://developer.microsoft.com/en-us/graph/changelog
+    displayName: API changes, API updates, Microsoft Graph API, REST API, REST API updates
   - name: Authentication and authorization
     items:
       - name: Overview
