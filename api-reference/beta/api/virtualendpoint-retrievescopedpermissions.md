@@ -161,7 +161,7 @@ Content-Type: application/json
 
 ### Request
 
-When the IT Admin is assigned Microsoft Entra Global admin, Windows 365 admin or Intune admin via Microsoft Entra ID, it doesn't support scope tag, IT Admin has full access to all Windows 365 resources, the permission is "*". And scopeIds is empty, indicates the user is unscoped admin. In such case, query isn't supported.
+When the logged-in user has the Microsoft Entra Global admin role, the Windows 365 admin role, or the Intune admin role assigned to him/her by Microsoft Entra ID, the returned permission is *\**, and no scope IDs are returned. In these cases, queries aren't supported.
 
 <!-- {
   "blockType": "request",
