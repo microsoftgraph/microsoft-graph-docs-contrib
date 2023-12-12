@@ -25,7 +25,7 @@ The Microsoft Graph .NET SDK is included in the following NuGet packages:
 
 - [Microsoft.Graph](https://github.com/microsoftgraph/msgraph-sdk-dotnet): Contains the models and request builders for accessing the `v1.0` endpoint with the fluent API. Microsoft.Graph has a dependency on Microsoft.Graph.Core.
 - [Microsoft.Graph.Beta](https://github.com/microsoftgraph/msgraph-beta-sdk-dotnet): Contains the models and request builders for accessing the `beta` endpoint with the fluent API. Microsoft.Graph.Beta has a dependency on Microsoft.Graph.Core.
-- [Microsoft.Graph.Core](https://github.com/microsoftgraph/msgraph-sdk-dotnet): The core library for making calls to Microsoft Graph.
+- [Microsoft.Graph.Core](https://github.com/microsoftgraph/msgraph-sdk-dotnet-core): The core library for making calls to Microsoft Graph.
 
 To install the Microsoft.Graph packages into your project, you can use the [dotnet CLI](/nuget/quickstart/install-and-use-a-package-using-the-dotnet-cli), the [Package Manager UI in Visual Studio](/nuget/quickstart/install-and-use-a-package-in-visual-studio#nuget-package-manager) or the [Package Manager Console in Visual Studio](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console). The following commands install the Microsoft.Graph and Microsoft.Graph.Core libraries. Microsoft.Graph.Core is installed as a dependency of Microsoft.Graph.
 
