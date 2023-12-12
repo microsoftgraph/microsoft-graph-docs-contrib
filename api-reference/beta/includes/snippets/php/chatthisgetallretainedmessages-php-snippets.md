@@ -10,6 +10,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$result = $graphServiceClient->users()->byUserId('user-id')->chats()->byChatId('chat-id')->get()->wait();
+$result = $graphServiceClient->users()->byUserId('user-id')->chats()->getAllRetainedMessages()->get()->wait();
 
 ```

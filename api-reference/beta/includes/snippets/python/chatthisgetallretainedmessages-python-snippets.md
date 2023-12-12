@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graph_client = GraphServiceClient(credentials, scopes)
 
 
-result = await graph_client.users.by_user_id('user-id').chats.by_chat_id('chat-id').get()
+result = await graph_client.users.by_user_id('user-id').chats.get_all_retained_messages.get()
 
 
 ```
