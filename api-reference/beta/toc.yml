@@ -11152,9 +11152,20 @@ items:
       - name: Employee experience
         displayName: Viva
         items:
-          - name: Employee engagement (preview)
-            displayName: Viva Engage
+          - name: Employee goals (preview)
             items:
+            - name: Goals export job
+              href: resources/goalsexportjob.md
+              items:
+              - name: List
+                href: api/goals-list-exportjobs.md
+              - name: Create
+                href: api/goals-post-exportjobs.md
+              - name: Get
+                href: api/goalsexportjob-get.md
+            - name: Employee engagement (preview)
+              displayName: Viva Engage
+              items:
               - name: Overview
                 href: resources/engagement-api-overview.md
               - name: Community
@@ -11169,17 +11180,6 @@ items:
                 items:
                   - name: Get
                     href: api/engagementasyncoperation-get.md
-          - name: Employee goals (preview)
-            items:
-            - name: Goals export job
-              href: resources/goalsexportjob.md
-              items:
-              - name: List
-                href: api/goals-list-exportjobs.md
-              - name: Create
-                href: api/goals-post-exportjobs.md
-              - name: Get
-                href: api/goalsexportjob-get.md
       - name: Extensions
         items:
           - name: Overview
