@@ -89,7 +89,11 @@ The following is a JSON representation of the resource.
   "defaults": {"@odata.type": "microsoft.graph.printerDefaults"},
   "capabilities": {"@odata.type": "microsoft.graph.printerCapabilities"},
   "lastSeenDateTime": "String (timestamp)",
-  "releaseMechanisms": [{"@odata.type": "microsoft.graph.printReleaseMechanism"}]
+  "releaseMechanisms": [
+    {
+      "@odata.type": "microsoft.graph.printReleaseMechanism"
+    }
+  ]
 }
 ```
 

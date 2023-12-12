@@ -1,6 +1,6 @@
 ---
-title: printReleaseMechanism resource type
-description: Represents the release mechanism for print jobs.
+title: "printReleaseMechanism resource type"
+description: Represents the print job release mechanism.
 author: jasli-985
 ms.localizationpriority: medium
 ms.prod: cloud-printing
@@ -11,24 +11,26 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the processing status of the printer, including any errors.
+Represents the print job release mechanism.
 
 ## Properties
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|releaseType|[printReleaseType](printreleasetype.md)|The release type of the printer.|
+|Property|Type|Description|
+|:---|:---|:---|
+|releaseType|printReleaseType|The print job release type.The possible values are: `direct`, `qrCode`, `unknownFutureValue`.|
+
+## Relationships
+None.
 
 ## JSON representation
-
-Here's a JSON representation of the resource.
-
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.printReleaseMechanism"
-}-->
-
-```json
+}
+-->
+``` json
 {
-    "releaseType": "String"
+  "@odata.type": "#microsoft.graph.printReleaseMechanism",
+  "releaseType": "String"
 }
 ```

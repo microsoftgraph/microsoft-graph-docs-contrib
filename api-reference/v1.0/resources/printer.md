@@ -49,8 +49,8 @@ Inherits from [printerBase](../resources/printerbase.md).
 |manufacturer|String|The manufacturer reported by the printer. Inherited from [printerBase](../resources/printerbase.md).|
 |model|String|The model name reported by the printer. Inherited from [printerBase](../resources/printerbase.md).|
 |registeredDateTime|DateTimeOffset|The DateTimeOffset when the printer was registered. Read-only.|
+|releaseMechanisms|[printReleaseMechanism](printreleasemechanism.md) collection|The release mechanisms supported by the printer.|
 |status|[printerStatus](printerstatus.md)|The processing status of the printer, including any errors. Inherited from [printerBase](../resources/printerbase.md).|
-|releaseMechanisms|[printerReleaseMechanism](printreleasemechanism.md) collection|The release mechanisms supported by the printer.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -94,7 +94,11 @@ The following is a JSON representation of the resource.
   "isShared": "Boolean",
   "hasPhysicalDevice": "Boolean",
   "lastSeenDateTime": "String (timestamp)",
-  "releaseMechanisms": [{"@odata.type": "microsoft.graph.printReleaseMechanism"}]
+  "releaseMechanisms": [
+    {
+      "@odata.type": "microsoft.graph.printReleaseMechanism"
+    }
+  ]
 }
 ```
 
