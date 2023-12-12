@@ -19,7 +19,6 @@ Configuration regarding properties of the custom extension which can be overwrit
 |Property|Type|Description|
 |:---|:---|:---|
 |clientConfiguration|[customExtensionClientConfiguration](../resources/customextensionclientconfiguration.md)|Optional. Configuration of calling external API, such as timeout, retryCount, retriableResponseCodes.|
-|behaviorOnError|[customExtensionBehaviorOnError](../resources/customextensionbehavioronerror.md)|Optional. Configuration to determine the behavior of custom extension when API call fails, behavior like whether to continue on error or display an error page. |
 
 ## Relationships
 None
@@ -37,9 +36,6 @@ The following is a JSON representation of the resource.
   "configuration": {
     "@odata.type": "microsoft.graph.clientConfiguration"
   },
-  "behaviorOnError": {
-    "@odata.type": "microsoft.graph.customExtensionBehaviorOnError"
-  }
 }
 ```
 
