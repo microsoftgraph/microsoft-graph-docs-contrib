@@ -176,3 +176,128 @@ Content-Type: application/json
 }
 ```
 
+### Request
+The following is an example of a request to create a onAttributeCollectionStartListener object.
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_authenticationeventlistener_from_"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/identity/authenticationEventListeners
+Request Body:
+{
+    "@odata.type": "#microsoft.graph.onAttributeCollectionStartListener",
+    "priority": 500,
+    "conditions": {
+        "applications": {
+            "includeAllApplications": false,
+            "includeApplications": [
+                {
+                    "appId": "a7eed01f-a333-4983-bc6b-d359ec9e5eef"
+                }
+            ]
+        }
+    },
+    "handler": {
+        "@odata.type": "#microsoft.graph.onAttributeCollectionStartCustomExtensionHandler",
+        "customExtension": {
+            "id": "2d9c3e8d-88a9-444e-8c4c-f0c6c4fe1c02"
+        }
+    }
+}
+```
+
+### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authenticationEventListener"
+}
+-->
+``` http
+201 Created
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/authenticationEventListeners/$entity",
+    "@odata.type": "#microsoft.graph.onAttributeCollectionStartListener",
+    "id": "1b025b34-6547-4714-b948-43f79b70c429",
+    "priority": 500,
+    "authenticationEventsFlowId": null,
+    "conditions": {
+        "applications": {
+            "includeAllApplications": false
+        }
+    },
+    "handler": {
+        "@odata.type": "#microsoft.graph.onAttributeCollectionStartCustomExtensionHandler",
+        "configuration": null
+    }
+}
+```
+
+### Request
+
+The following is an example of a request to create a onAttributeCollectionSubmittListener object.
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_authenticationeventlistener_from_"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/identity/authenticationEventListeners
+Request Body:
+{
+    "@odata.type": "#microsoft.graph.onAttributeCollectionSubmitListener",
+    "priority": 500,
+    "conditions": {
+        "applications": {
+            "includeAllApplications": false,
+            "includeApplications": [
+                {
+                    "appId": "a7eed01f-a333-4983-bc6b-d359ec9e5eef"
+                }
+            ]
+        }
+    },
+    "handler": {
+        "@odata.type": "#microsoft.graph.onAttributeCollectionSubmitCustomExtensionHandler",
+        "customExtension": {
+            "id": "66867d1f-7824-4f38-aad1-75da1ad09ee2"
+        }
+    }
+}
+
+Response:
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authenticationEventListener"
+}
+-->
+``` http
+201 Created
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/authenticationEventListeners/$entity",
+    "@odata.type": "#microsoft.graph.onAttributeCollectionSubmitListener",
+    "id": "2066575e-fc31-4ac7-b07c-81b85f074441",
+    "priority": 500,
+    "authenticationEventsFlowId": null,
+    "conditions": {
+        "applications": {
+            "includeAllApplications": false
+        }
+    },
+    "handler": {
+        "@odata.type": "#microsoft.graph.onAttributeCollectionSubmitCustomExtensionHandler",
+        "configuration": null
+    }
+}
+```

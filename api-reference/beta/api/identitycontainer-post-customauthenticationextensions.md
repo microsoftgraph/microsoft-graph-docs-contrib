@@ -180,3 +180,131 @@ Content-Type: application/json
 }
 ```
 
+### Request
+
+The following is an example of a request to create an OnAttributeCollectionStartCustomExtension object type.
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_customauthenticationextension_from_"
+}
+-->
+``` http
+Create 
+POST https://graph.microsoft.com/beta/identity/customAuthenticationExtensions
+Request Body: 
+{
+  "@odata.type": "#microsoft.graph.onAttributeCollectionStartCustomExtension",
+  "displayName": "attributeCollectionStartName",
+  "description": "example description",
+  "authenticationConfiguration": {
+    "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
+    "resourceId": "api://google.com/fb96de85-2abe-4b02-b45f-64ba122c509e"
+  },
+  "endpointConfiguration": {
+    "@odata.type": "#microsoft.graph.httpRequestEndpoint",
+    "targetUrl": "https://google.com"
+  },
+  "clientConfiguration": {
+    "timeoutInMilliseconds": 2000,
+    "maximumRetries": 1
+  }
+}
+
+```
+### Response
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.customAuthenticationExtension"
+}
+-->
+
+``` http
+201 Created
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/customAuthenticationExtensions/$entity",
+    "@odata.type": "#microsoft.graph.onAttributeCollectionStartCustomExtension",
+    "id": "2d9c3e8d-88a9-444e-8c4c-f0c6c4fe1c02",
+    "displayName": "attributeCollectionStartName",
+    "description": "example description",
+    "authenticationConfiguration": {
+        "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
+        "resourceId": "api://google.com/fb96de85-2abe-4b02-b45f-64ba122c509e"
+    },
+    "endpointConfiguration": {
+        "@odata.type": "#microsoft.graph.httpRequestEndpoint",
+        "targetUrl": "https://google.com"
+    },
+    "clientConfiguration": {
+        "timeoutInMilliseconds": 2000,
+        "maximumRetries": 1
+    }
+}
+
+```
+### Request
+
+The following is an example of a request to create an OnAttributeCollectionSubmittCustomExtension object type.
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_customauthenticationextension_from_"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/identity/customAuthenticationExtensions
+Request Body: 
+{
+    "@odata.type": "#microsoft.graph.onAttributeCollectionSubmitCustomExtension",
+    "displayName": "attributeCollectionSubmitName",
+    "description": "example description",
+    "authenticationConfiguration": {
+        "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
+        "resourceId": "api://google.com/fb96de85-2abe-4b02-b45f-64ba122c509e"
+    },
+    "endpointConfiguration": {
+        "@odata.type": "#microsoft.graph.httpRequestEndpoint",
+        "targetUrl": "https://google.com"
+    },
+    "clientConfiguration": {
+        "timeoutInMilliseconds": 2000,
+        "maximumRetries": 1
+    }
+}
+```
+
+### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.customAuthenticationExtension"
+}
+-->
+``` http
+201 Created
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/customAuthenticationExtensions/$entity",
+    "@odata.type": "#microsoft.graph.onAttributeCollectionSubmitCustomExtension",
+    "id": "66867d1f-7824-4f38-aad1-75da1ad09ee2",
+    "displayName": "attributeCollectionSubmitName",
+    "description": "example description",
+    "authenticationConfiguration": {
+        "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
+        "resourceId": "api://google.com/fb96de85-2abe-4b02-b45f-64ba122c509e"
+    },
+    "endpointConfiguration": {
+        "@odata.type": "#microsoft.graph.httpRequestEndpoint",
+        "targetUrl": "https://google.com"
+    },
+    "clientConfiguration": {
+        "timeoutInMilliseconds": 2000,
+        "maximumRetries": 1
+    }
+}
+```
