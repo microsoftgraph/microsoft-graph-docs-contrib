@@ -49,7 +49,9 @@ PATCH /admin/microsoft365Apps/installationOptions
 
 |Property|Type|Description|
 |:---|:---|:---|
-|settings|[microsoft.admin.m365AppsInstallationOptions](../resources/m365appsInstallationoptions.md)|Company-wide settings for apps and services. Required.|
+| updateChannel | [appsUpdateChannelType](../resources/m365appsInstallationoptions.md#appsupdatechanneltype-values) | Specifies how often users get feature updates for Microsoft 365 apps installed on devices running Windows. The possible values are: `current`, `monthlyEnterprise`, or `semiAnnual`, with corresponding update frequencies of `As soon as they're ready`, `Once a month`, and `Every six months`. Include the `Prefer: include-unknown-enum-members` header to explicitly request for enum values beyond `unknownFutureValue`.|
+| appsForWindows | [appsInstallationOptionsForWindows](../resources/appsInstallationOptionsForWindows.md) | The Microsoft 365 apps installation options container object for a Windows platform. |
+| appsForMac | [appsInstallationOptionsForMac](../resources/appsInstallationOptionsForMac.md) | The Microsoft 365 apps installation options container object for a MAC platform. |
 
 
 
