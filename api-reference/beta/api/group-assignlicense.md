@@ -26,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "group_assignlicense" } -->
 [!INCLUDE [permissions-table](../includes/permissions/group-assignlicense-permissions.md)]
 
-For delegated scenarios, the calling user needs one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+For delegated scenarios, the calling user needs one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 - Directory Writers
 - Groups Administrator

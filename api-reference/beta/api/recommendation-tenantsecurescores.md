@@ -3,7 +3,7 @@ title: "recommendation: tenantSecureScores"
 description: "Get historical Secure Score data for your Microsoft Entra tenant."
 author: "sacsai"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access"
+ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
 

@@ -24,7 +24,7 @@ items:
             href: /graph/permissions-reference?context=graph/api/beta
           - name: Microsoft Entra built-in roles
             displayName: Microsoft Graph permissions
-            href: /azure/active-directory/roles/permissions-reference?toc=/graph/toc.json
+            href: /entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json
       - name: Manage app access (CSPs)
         href: /graph/auth-cloudsolutionprovider?context=graph/api/beta
       - name: Limit mailbox access
@@ -11152,10 +11152,27 @@ items:
       - name: Employee experience
         displayName: Viva
         items:
+          - name: Employee engagement (preview)
+            displayName: Viva Engage
+            items:
+              - name: Overview
+                href: resources/engagement-api-overview.md
+              - name: Community
+                href: resources/community.md
+                items:
+                  - name: Create
+                    href: api/employeeexperience-post-communities.md
+                  - name: Get
+                    href: api/community-get.md
+              - name: Engagement async operation
+                href: resources/engagementasyncoperation.md
+                items:
+                  - name: Get
+                    href: api/engagementasyncoperation-get.md
           - name: Employee goals (preview)
             items:
             - name: Goals export job
-              href: resources/goalsExportJob.md
+              href: resources/goalsexportjob.md
               items:
               - name: List
                 href: api/goals-list-exportjobs.md
@@ -11847,44 +11864,6 @@ items:
                     href: api/directoryobject-delta.md
                   - name: Validate properties
                     href: api/directoryobject-validateproperties.md
-              - name: Directory recommendations (preview)
-                displayName: Recommendations, Azure AD recommendations
-                href: resources/recommendations-api-overview.md
-                items:
-                  - name: Recommendations
-                    items:
-                      - name: Recommendation
-                        href: resources/recommendation.md
-                      - name: List
-                        href: api/directory-list-recommendation.md
-                      - name: Get
-                        href: api/recommendation-get.md
-                      - name: Complete
-                        href: api/recommendation-complete.md
-                      - name: Dismiss
-                        href: api/recommendation-dismiss.md
-                      - name: Postpone
-                        href: api/recommendation-postpone.md
-                      - name: Reactivate
-                        href: api/recommendation-reactivate.md
-                      - name: Get tenant Secure Score
-                        href: api/recommendation-tenantsecurescores.md
-                  - name: Impacted resources
-                    items:
-                      - name: Impacted resource
-                        href: resources/impactedresource.md
-                      - name: List
-                        href: api/recommendation-list-impactedresources.md
-                      - name: Get
-                        href: api/impactedresource-get.md
-                      - name: Complete
-                        href: api/impactedresource-complete.md
-                      - name: Dismiss
-                        href: api/impactedresource-dismiss.md
-                      - name: Postpone
-                        href: api/impactedresource-postpone.md
-                      - name: Reactivate
-                        href: api/impactedresource-reactivate.md
               - name: Directory role
                 href: resources/directoryrole.md
                 items:
@@ -14573,7 +14552,7 @@ items:
                       href: api/gcpauthorizationsystem-list-services.md
                     - name: Get
                       href: api/authorizationsystemtypeservice-get.md
-            - name: Permissions on demand
+            - name: Permissions requests
               items:
               - name: Scheduled permissions request
                 href: resources/scheduledpermissionsrequest.md
@@ -15655,7 +15634,7 @@ items:
             items:
               - name: Get
                 href: api/peopleadminsettings-get.md
-              - name: Org control for pronouns settings (preview)
+              - name: Org control for pronouns settings
                 items:
                   - name: Pronouns settings
                     href: resources/pronounssettings.md
@@ -16130,6 +16109,44 @@ items:
         items:
           - name: Identity and access reports
             items:
+            - name: Microsoft Entra recommendations (preview)
+              displayName: Recommendations, Microsoft Entra recommendations
+              href: resources/recommendations-api-overview.md
+              items:
+                - name: Recommendations
+                  items:
+                    - name: Recommendation
+                      href: resources/recommendation.md
+                    - name: List
+                      href: api/directory-list-recommendation.md
+                    - name: Get
+                      href: api/recommendation-get.md
+                    - name: Complete
+                      href: api/recommendation-complete.md
+                    - name: Dismiss
+                      href: api/recommendation-dismiss.md
+                    - name: Postpone
+                      href: api/recommendation-postpone.md
+                    - name: Reactivate
+                      href: api/recommendation-reactivate.md
+                    - name: Get tenant Secure Score
+                      href: api/recommendation-tenantsecurescores.md
+                - name: Impacted resources
+                  items:
+                    - name: Impacted resource
+                      href: resources/impactedresource.md
+                    - name: List
+                      href: api/recommendation-list-impactedresources.md
+                    - name: Get
+                      href: api/impactedresource-get.md
+                    - name: Complete
+                      href: api/impactedresource-complete.md
+                    - name: Dismiss
+                      href: api/impactedresource-dismiss.md
+                    - name: Postpone
+                      href: api/impactedresource-postpone.md
+                    - name: Reactivate
+                      href: api/impactedresource-reactivate.md
             - name: Microsoft Entra activity reports
               items:
                 - name: Overview
@@ -16162,6 +16179,66 @@ items:
                           href: api/reportroot-list-applicationsignindetailedsummary.md
                         - name: Get
                           href: api/applicationsignindetailedsummary-get.md
+                - name: Application user activity (preview)
+                  items:
+                  - name: Daily user insight
+                    href: resources/dailyuserinsightmetricsroot.md
+                  - name: Monthly user insight
+                    href: resources/monthlyuserinsightmetricsroot.md
+                  - name: Active users breakdown
+                    href: resources/activeusersbreakdownmetric.md
+                    items:
+                    - name: List daily
+                      href: api/dailyuserinsightmetricsroot-list-activeusersbreakdown.md
+                    - name: List monthly
+                      href: api/monthlyuserinsightmetricsroot-list-activeusersbreakdown.md
+                  - name: Active users
+                    href: resources/activeusersmetric.md
+                    items:
+                    - name: List daily
+                      href: api/dailyuserinsightmetricsroot-list-activeusers.md
+                    - name: List monthly
+                      href: api/monthlyuserinsightmetricsroot-list-activeusers.md
+                  - name: Authentications
+                    href: resources/authenticationsmetric.md
+                    items:
+                    - name: List daily
+                      href: api/dailyuserinsightmetricsroot-list-authentications.md
+                    - name: List monthly
+                      href: api/monthlyuserinsightmetricsroot-list-authentications.md
+                  - name: Insights summary
+                    href: resources/insightsummary.md
+                    items:
+                    - name: List daily
+                      href: api/dailyuserinsightmetricsroot-list-summary.md
+                    - name: List monthly
+                      href: api/monthlyuserinsightmetricsroot-list-summary.md
+                  - name: MFA completion
+                    href: resources/mfacompletionmetric.md
+                    items:
+                    - name: List daily
+                      href: api/dailyuserinsightmetricsroot-list-mfacompletions.md
+                    - name: List monthly
+                      href: api/monthlyuserinsightmetricsroot-list-mfacompletions.md
+                  - name: User count
+                    href: resources/usercountmetric.md
+                    items:
+                    - name: List daily
+                      href: api/dailyuserinsightmetricsroot-list-usercount.md
+                  - name: User requests
+                    href: resources/userrequestsmetric.md
+                    items:
+                    - name: List daily
+                      href: api/dailyuserinsightmetricsroot-list-requests.md
+                    - name: List monthly
+                      href: api/monthlyuserinsightmetricsroot-list-requests.md
+                  - name: User signup
+                    href: resources/usersignupmetric.md
+                    items:
+                    - name: List daily
+                      href: api/dailyuserinsightmetricsroot-list-signups.md
+                    - name: List monthly
+                      href: api/monthlyuserinsightmetricsroot-list-signups.md
                 - name: Microsoft Entra SLA attainment
                   items:
                     - name: Microsoft Entra authentication
@@ -18341,6 +18418,10 @@ items:
                     items:
                       - name: Get join link
                         href: api/virtualappointment-getvirtualappointmentjoinweburl.md
+                      - name: Send SMS notification
+                        href: api/virtualappointment-sendvirtualappointmentsms.md
+                      - name: Send SMS reminder 
+                        href: api/virtualappointment-sendvirtualappointmentremindersms.md
                       - name: Virtual appointment (deprecated)
                         href: resources/virtualappointment.md
                       - name: Create virtual appointment (deprecated)
@@ -18373,6 +18454,8 @@ items:
                   - name: Webinar
                     href: resources/virtualeventwebinar.md
                     items:
+                      - name: List
+                        href: api/virtualeventsroot-list-webinars.md
                       - name: Get
                         href: api/virtualeventwebinar-get.md
                       - name: List by user role
@@ -18525,6 +18608,8 @@ items:
                     href: api/chatmessage-get.md
                   - name: Get messages across all channels
                     href: api/channel-getallmessages.md
+                  - name: Get retained messages across all channels
+                    href: api/channel-getallretainedmessages.md
                   - name: Get primary channel
                     href: api/team-get-primarychannel.md
                   - name: List channel messages
@@ -18592,6 +18677,8 @@ items:
                     href: api/chatmessage-get.md
                   - name: Get messages across all chats
                     href: api/chats-getallmessages.md
+                  - name: Get retained messages across all chats
+                    href: api/chat-getallretainedmessages.md
                   - name: Send message in chat
                     href: api/chat-post-messages.md
                   - name: Get chat between user and app
@@ -18775,6 +18862,19 @@ items:
                     href: api/teamworktagmember-delete.md
           - name: Shift management
             items:
+              - name: Day note (preview)
+                href: resources/daynote.md
+                items:
+                  - name: Create
+                    href: api/daynote-create.md
+                  - name: Get
+                    href: api/daynote-get.md
+                  - name: List
+                    href: api/daynote-list.md
+                  - name: Update
+                    href: api/daynote-update.md
+                  - name: Delete
+                    href: api/daynote-delete.md
               - name: Offer shift
                 href: resources/offershiftrequest.md
                 items:

@@ -36,7 +36,7 @@ GET /identityProtection/riskDetections
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` and `$select` [OData query parameters](/graph/query-parameters) to customize the query response. The default page size is 20 objects while the maximum with `$top` is 500.
 
 ## Request headers
 |Name|Description|
