@@ -33,19 +33,19 @@ The architecture uses the following components:
 
 ## Considerations
 
-**Availability**: The client ADF can extract data in bulk on their schedule or an ad-hoc basis.
+**Availability**: The client ADF can extract data in bulk on their schedule or on an ad-hoc basis.
 
-**Latency**: Data latency in this scenario can vary depending on the extraction of historical data or the delivery of more recent data to MGDC storage by asynchronous processes that are often performed as scheduled tasks. The performance of the ADF large data extract is faster than granular HTTP APIs due to ADF's ability to use batching and file transfer.
+**Latency**: Data latency in this scenario can vary depending on the extraction of historical data or the delivery of more recent data to Microsoft Graph Data Connect storage by asynchronous processes performed as scheduled tasks. The performance of the ADF large data extract is faster than granular HTTP APIs because ADF uses batching and file transfer.
 
 **Scalability**: This architecture allows you to develop pipelines that maximize data movement throughput for your environment. These pipelines can fully utilize the following resources:
 
-- Network bandwidth between the source and destination data stores
+- Network bandwidth between the source and destination data stores.
 - Source or destination data store input/output operations per second (IOPS) and bandwidth.
 
-**Solution complexity**: This data egress solution is considered to be of low complexity from the integration perspective since it doesn't require custom code, has a few components, and is tolerant to data latency.
+**Solution complexity**: This data egress solution of low complexity from an integration perspective because it doesn't require custom code, has a few components, and is tolerant of data latency.
 
 ## See also
 
 - [Overview of Microsoft Graph Data Connect](./../data-connect-concept-overview.md)
-- [Training: build your first Microsoft Graph Data Connect application](/training/modules/data-connect-quickstart)
+- [Training: Build your first Microsoft Graph Data Connect application](/training/modules/data-connect-quickstart)
 
