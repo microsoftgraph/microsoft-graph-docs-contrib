@@ -1,7 +1,7 @@
 ---
 title: "onAttributeCollectionStartHandler resource type"
 description: "Represents a step in a user flow defining what happens upon the start of the user attribute collection stage."
-author: "garrodonnell"
+author: "nanguil"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

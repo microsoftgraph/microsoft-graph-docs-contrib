@@ -1,7 +1,7 @@
 ---
 title: "externalUsersSelfServiceSignUpEventsFlow resource type"
 description: "Represents a self-service user flow for external identities within a Microsoft Entra workforce tenant or customer tenant."
-author: "garrodonnell"
+author: "nanguil"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

@@ -1,7 +1,7 @@
 ---
 title: "customExtensionOverwriteConfiguration resource type"
 description: "Configuration regarding properties of the custom extension which can be overwritten per-event listener."
-author: "garrodonnell"
+author: "nanguil"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
