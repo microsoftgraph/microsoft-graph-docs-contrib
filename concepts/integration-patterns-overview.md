@@ -1,24 +1,24 @@
 ---
-title: "Microsoft Architecture Center"
-description: "How to choose integration patterns that fit the business scenarios for solutions built on the Microsoft Graph platform."
+title: "Common integration patterns with Microsoft Graph"
+description: "Get an overview of the integration patterns that you can apply to solutions that you build using Microsoft Graph."
 author: "OlgaPodo"
 ms.localizationpriority: low
 ---
 
-# Microsoft Graph Architecture Center
+# Common integration patterns with Microsoft Graph
 
-Microsoft Graph is a technology platform that allows organizations to connect their business systems with Microsoft 365 SaaS data and services. Interactive APIs, capabilities for data ingress and egress, and event-based integration are table stakes expected from a modern cloud integration platform and all these options are available on Microsoft Graph:
+Microsoft Graph is a technology platform that allows organizations to connect their business systems with Microsoft 365 SaaS data and services. Microsoft Graph includes all the options available in modern cloud integration platforms, including interactive APIs, data ingress and egress capabilities, and event-based integration:
 
 - Transactional RESTful HTTP APIs in the Microsoft Graph API provide control and data plane interfaces for various Microsoft 365 SaaS offerings. These APIs support synchronous communication and are granular by nature.  
 - Enhanced RESTful HTTP APIs are a subclass of RESTful HTTP APIs designed to provide extra capabilities for effective data extraction. The enhanced APIs consist of Microsoft Teams APIs that enable specialized operations to retrieve large amounts of data, and  Microsoft SharePoint and Exchange Online APIs, which raise throttling limits for paid apps.
-- Bulk data export in Microsoft Graph Data Connect. This mechanism follows an ETL (Extract, Transform & Load) pattern, with a data gathering phase that stages data before transferring it in bulk to the customers’ provided storage, serving data with high latency.  
+- Bulk data export in Microsoft Graph Data Connect. This mechanism follows an ETL (extract, transform & load) pattern, with a data gathering phase that stages data before transferring it in bulk to the customers’ provided storage, serving data with high latency.  
 - Event-driven integration in Microsoft Graph API allows client applications to receive notifications of changes or full object data after an event in the Microsoft 365 ecosystem. This PUSH mechanism is supported by webhooks and doesn’t guarantee message delivery or message order. 
 - Event streaming integration in the Microsoft Graph API allows client applications to react to activities in Microsoft 365 at their own pace and guarantees the persistence of immutable event data. Microsoft Graph change notifications with Azure Event Hubs support the described pull mechanism. 
 - Microsoft Graph connectors enable the ingestion of large amounts of customer data into Microsoft 365 storage, which enriches Microsoft Copilot, the augmentation loop, and search-based Microsoft 365 experiences. These connectors are available through product-specific connectors, such as the Adobe Graph connector for PDFs, or generic-content REST APIs.
 
-![Integration Options](./images/graph-arc-center/IntegrationOptions.png)
+![Integration options](./images/graph-arc-center/IntegrationOptions.png)
 
-Historically, the API platform was the “catch-all” for transactional use cases and application integration. In the last few years, we developed platform options targeting specific use cases: MGDC was built for bulk data egress into customer environments for data insights and analytics, and Microsoft Graph connectors were built for bulk data ingress to support Copilot and Search scenarios. 
+Historically, the API platform was the “catch-all” for transactional use cases and application integration. In the last few years, we developed platform options targeting specific use cases: Microsoft Graph Data Connect was built for bulk data egress into customer environments for data insights and analytics, and Microsoft Graph connectors were built for bulk data ingress to support Copilot and Search scenarios. 
 
 The wide range of integration options can confuse both customers who have to choose the best option for their needs and product teams who want to offer their data and services to third-party developers. We suggest beginning with a business scenario and identifying its functional and non-functional requirements, then translating them into a set of requirements that are critical for the architecture and that guide the selection of an integration option.  
 
