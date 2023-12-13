@@ -11,6 +11,8 @@ items:
         href: overview.md
       - name: Services in Microsoft Graph
         href: overview-major-services.md
+      - name: Common integration patterns with Microsoft Graph
+        href: integration-patterns-overview.md
       - name: What's new
         expanded: true
         items:
