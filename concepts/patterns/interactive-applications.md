@@ -26,11 +26,11 @@ Simple **reference architecture** for this app:
 
 The architecture uses the following components:
 
-Azure App Service, which lets you build and host web apps, mobile backends, and RESTful APIs in your preferred programming language, without managing infrastructure. It offers auto-scaling and high availability, supports both Windows and Linux, and enables automated deployments from GitHub, Azure DevOps, or any Git repo.
- Azure Active Directory, which is required to manage authentication for the Microsoft Graph APIs and supports delegated and application permissions to enable OAuth flow.
-SQL Database, which is used to store application data and state and is an optional part of the solution.
-Microsoft Graph AGS, which is a single gateway, <https://graph.microsoft.com>, to access Microsoft Graph RESTful HTTP APIs.
-3 P app, which implements custom logic and API orchestration.
+Azure App Service lets you build and host web apps, mobile backends, and RESTful APIs in your preferred programming language, without managing infrastructure. It offers auto-scaling and high availability, supports both Windows and Linux, and enables automated deployments from GitHub, Azure DevOps, or any Git repo.
+Azure Active Directory is required to manage authentication for the Microsoft Graph APIs and supports delegated and application permissions to enable OAuth flow.
+SQL Database is used to store application data and state and is an optional part of the solution.
+Microsoft Graph AGS  is a single gateway, <https://graph.microsoft.com>, to access Microsoft Graph RESTful HTTP APIs.
+3 P app implements custom logic and API orchestration.
 
 ## Considerations
 
