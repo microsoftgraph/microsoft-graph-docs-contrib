@@ -165,7 +165,7 @@ The following example shows the response for an operation that is still running.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.operation"
+  "@odata.type": "microsoft.graph.partners.billing.runningOperation"
 }
 -->
 ``` http
