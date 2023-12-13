@@ -22,9 +22,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "teamsappsettings_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/teamsappsettings-get-permissions.md)]
 
-> [!NOTE]
-> TeamworkAppSettings.* permissions might not be visible in the Azure portal. For details and workarounds, see [known issues](https://developer.microsoft.com/en-us/graph/known-issues/?search=14974).
-
 ## HTTP request
 
 <!-- {

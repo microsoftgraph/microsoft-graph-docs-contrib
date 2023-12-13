@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents a session in a [virtualEvent](../resources/virtualevent.md).
 
 Inherits from [onlineMeetingBase](../resources/onlinemeetingBase.md).
@@ -21,12 +19,12 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingBase.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List virtualEventSessions](../api/virtualeventsession-list.md)|[virtualEventSession](../resources/virtualeventsession.md) collection|Get a list of all [virtualEventSession](../resources/virtualeventsession.md) objects under a virtual event.|
+|[List virtualEventSessions](../api/virtualevent-list-sessions.md)|[virtualEventSession](../resources/virtualeventsession.md) collection|Get a list of all [virtualEventSession](../resources/virtualeventsession.md) objects under a virtual event.|
 |[Get virtualEventSession](../api/virtualeventsession-get.md)|[virtualEventSession](../resources/virtualeventsession.md)|Read the properties and relationships of a [virtualEventSession](../resources/virtualeventsession.md) object.|
 
 ## Properties
 
-Currently, only the following properties are filled out on a virtualEventSession object when it's returned. All other properties on the returned virtualEventSession object are null.
+Currently, only the following properties are filled out on a returned *virtualEventSession* object. All other properties on the returned virtualEventSession object are null.
 
 | Property              | Type                                          | Description    |
 | :-------------------- | :-------------------------------------------- | :------------------------------------ |
@@ -43,47 +41,57 @@ Currently, only the following properties are filled out on a virtualEventSession
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|attendanceReports|[meetingAttendanceReport](../resources/meetingattendancereport.md) collection|Attendance reports of this virtual event session. Inherited from [onlineMeetingBase](../resources/onlineMeetingBase.md).|
+|attendanceReports|[meetingAttendanceReport](../resources/meetingattendancereport.md) collection|Attendance reports of this virtual event session. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).|
 
 ## JSON representation
-
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.virtualEventSession",
-  "baseType": "microsoft.graph.onlineMeeting",
   "openType": false
 }
 -->
 ``` json
 {
   "@odata.type": "#microsoft.graph.virtualEventSession",
-  "allowAttendeeToEnableCamera": "Boolean",
-  "allowAttendeeToEnableMic": "Boolean",
-  "allowMeetingChat": "String",
-  "allowParticipantsToChangeName": "Boolean",
-  "allowTeamworkReactions": "Boolean",
-  "allowedPresenters": "String",
-  "alternativeRecording": "Stream",
-  "anonymizeIdentityForRoles": ["String"],
-  "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
-  "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
-  "endDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "id": "String (identifier)",
-  "isEntryExitAnnounced": "Boolean",
-  "joinInformation": {"@odata.type": "microsoft.graph.itemBody"},
-  "joinMeetingIdSettings": {"@odata.type": "microsoft.graph.joinMeetingIdSettings"},
   "joinWebUrl": "String",
-  "lobbyBypassSettings": {"@odata.type": "microsoft.graph.lobbyBypassSettings"},
-  "recordAutomatically": "Boolean",
-  "shareMeetingChatHistoryDefault": "String",
-  "startDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "subject": "String",
+  "audioConferencing": {
+    "@odata.type": "microsoft.graph.audioConferencing"
+  },
+  "chatInfo": {
+    "@odata.type": "microsoft.graph.chatInfo"
+  },
   "videoTeleconferenceId": "String",
-  "watermarkProtection": {"@odata.type": "microsoft.graph.watermarkProtectionValues"}
+  "joinMeetingIdSettings": {
+    "@odata.type": "microsoft.graph.joinMeetingIdSettings"
+  },
+  "joinInformation": {
+    "@odata.type": "microsoft.graph.itemBody"
+  },
+  "lobbyBypassSettings": {
+    "@odata.type": "microsoft.graph.lobbyBypassSettings"
+  },
+  "isEntryExitAnnounced": "Boolean",
+  "allowedPresenters": "String",
+  "allowAttendeeToEnableMic": "Boolean",
+  "allowAttendeeToEnableCamera": "Boolean",
+  "allowMeetingChat": "String",
+  "allowTeamworkReactions": "Boolean",
+  "shareMeetingChatHistoryDefault": "String",
+  "allowParticipantsToChangeName": "Boolean",
+  "recordAutomatically": "Boolean",
+  "watermarkProtection": {
+    "@odata.type": "microsoft.graph.watermarkProtectionValues"
+  },
+  "startDateTime": {
+    "@odata.type": "microsoft.graph.dateTimeTimeZone"
+  },
+  "endDateTime": {
+    "@odata.type": "microsoft.graph.dateTimeTimeZone"
+  }
 }
 ```
 
-## See also
-[List meetingAttendanceReports](../api/meetingattendancereport-list.md)
