@@ -247,7 +247,7 @@ The following example shows the response.
 ```
 ### Request
 
-The following is an example of a request to create an OnAttributeCollectionSubmittCustomExtension object type.
+The following is an example of a request to create an OnAttributeCollectionSubmitCustomExtension object type.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
