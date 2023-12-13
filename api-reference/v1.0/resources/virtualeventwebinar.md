@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Contains information about a virtual event webinar.
 
 Inherits from [virtualEvent](../resources/virtualevent.md).
@@ -65,7 +63,6 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | sessions | [virtualEventSession](../resources/virtualeventsession.md)  collection | Sessions of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
 
 ## JSON representation
-
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -78,14 +75,27 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.virtualEventWebinar",
-  "audience": "String",
-  "coOrganizers": [{"@odata.type": "microsoft.graph.communicationsUserIdentity"}],
-  "createdBy": {"@odata.type": "microsoft.graph.communicationsIdentitySet"},
-  "description": {"@odata.type": "microsoft.graph.itemBody"},
-  "displayName": "String",
-  "endDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "id": "String (identifier)",
-  "startDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
-  "status": "String"
+  "status": "String",
+  "displayName": "String",
+  "description": {
+    "@odata.type": "microsoft.graph.itemBody"
+  },
+  "startDateTime": {
+    "@odata.type": "microsoft.graph.dateTimeTimeZone"
+  },
+  "endDateTime": {
+    "@odata.type": "microsoft.graph.dateTimeTimeZone"
+  },
+  "createdBy": {
+    "@odata.type": "microsoft.graph.communicationsIdentitySet"
+  },
+  "audience": "String",
+  "coOrganizers": [
+    {
+      "@odata.type": "microsoft.graph.communicationsUserIdentity"
+    }
+  ]
 }
 ```
+
