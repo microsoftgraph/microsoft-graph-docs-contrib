@@ -13,13 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A container where you can find all the different Microsoft Teams license details for each user in the tenant. 
-
-## Methods
-
-|Method|Return type|Description|
-|:---|:---|:---|
-|[LicenseDetails: get teams licensing details](../api/licenseDetails-getteamslicensingdetails.md)|[teamsLicensingDetails](../resources/teamsLicensingDetails.md) object|Get the Microsoft Teams license details for the specified user.|
+A container where you can find all the different Microsoft Teams license details for each user in the tenant.
 
 ## Properties
 
