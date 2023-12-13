@@ -31,13 +31,15 @@ The architecture for this solution includes the following components:
 
 ## Considerations
 
-**Availability**: The client app periodically sends data via Graph APIs. The non-interactive client app will make requests and upload the data at a frequency controlled by the client environment and limited by Connectors throttling.
+The following considerations support the use of this integration pattern:
 
-**Latency**: The client app uses the synchronous Connectors APIs and expects a response, but there may be some latency depending on the network conditions and the load on the Graph service.
+- **Availability**: The client app periodically sends data via Microsoft Graph APIs. The non-interactive client app makes requests and uploads the data at a frequency controlled by the client environment and limited by Microsoft Graph connectors throttling.
 
-**Scalability**: The client app is limited by 30 connections with no more than 50,000,000 items per tenant, so scalability is limited. In addition, if the data volume is large, synchronous processing may become a challenge and a roadblock.
+- **Latency**: The client app uses the synchronous Microsoft Graph connectors APIs and expects a response, but some latency can occur depending on the network conditions and the load on the Microsoft Graph service.
 
-**Solution complexity**: This solution can leverage connectors built by independent software vendors (ISVs), but if it directly accesses Microsoft Graph SDK or Microsoft Graph APIs, it needs custom code to serialize custom data into the format required by connectors. This gives it much flexibility but also increases the complexity for developers. Therefore, this solution can range from low to medium in complexity.
+- **Scalability**: The client app is limited to 30 connections with no more than 50,000,000 items per tenant, so scalability is limited. If the data volume is large, synchronous processing might become a challenge and a roadblock.
+
+- **Solution complexity**: This solution can use connectors built by independent software vendors (ISVs), but if it accesses Microsoft Graph SDKs or Microsoft Graph APIs, it needs to serialize custom data into the required format for connectors. This provides flexibility but also increases the complexity. This solution can therefore range from low to medium complexity.
 
 ## See also
 
