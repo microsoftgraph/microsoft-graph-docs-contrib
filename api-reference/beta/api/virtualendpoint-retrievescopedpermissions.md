@@ -161,7 +161,7 @@ Content-Type: application/json
 
 ### Request
 
-When the logged-in user has the Microsoft Entra Global admin role, the Windows 365 admin role, or the Intune admin role assigned to him/her by Microsoft Entra ID, the returned permission is *\**, and no scope IDs are returned. In these cases, queries aren't supported.
+When the logged-in user has the Microsoft Entra Global admin role, the Windows 365 admin role, or the Intune admin role assigned by Microsoft Entra ID, the returned permission is *\**, and no scope IDs are returned. In these cases, queries aren't supported.
 
 <!-- {
   "blockType": "request",
