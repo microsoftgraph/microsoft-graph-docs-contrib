@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract base type that represents information published by a federated service that describes a non-transient, service-specific error for the [user](user.md), [group](group.md), or [organizational contact](orgcontact.md)  that requires an explicit administrator action to resolve.
+An abstract base type that represents information published by a federated service that describes a nontransient, service specific error for the [user](user.md), [group](group.md), or [organizational contact](orgcontact.md)  that requires an explicit administrator action to resolve.
 
 Base type of [serviceProvisioningXmlError](../resources/serviceprovisioningxmlerror.md).
 
