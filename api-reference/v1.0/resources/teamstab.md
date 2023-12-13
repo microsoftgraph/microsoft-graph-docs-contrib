@@ -1,6 +1,6 @@
 ---
 title: "teamsTab resource type"
-description: "A teamsTab is a tab that's pinned (attached) to a channel within a team. "
+description: "Represents a tab that's pinned (attached) to a channel or a chat."
 ms.localizationpriority: medium
 author: "AkJo"
 ms.prod: "microsoft-teams"
@@ -11,7 +11,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A teamsTab is a [tab](https://learn.microsoft.com/microsoftteams/platform/tabs/what-are-tabs) that's pinned (attached) to a [channel](channel.md) or a [chat](chat.md). 
+Represents a tab that's pinned (attached) to a [channel](channel.md) or a [chat](chat.md).
+
+For more details on tabs, see [Build tabs for Teams](/microsoftteams/platform/tabs/what-are-tabs).
 
 ## Methods
 
