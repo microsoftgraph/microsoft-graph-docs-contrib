@@ -94,8 +94,6 @@ configuration:
           days: 14
       - hasLabel:
           label: changes requested
-      - activitySenderHasAssociation:
-          association: COLLABORATOR
       - isPullRequest
       - isOpen
       - isNotLabeledWith:
@@ -126,8 +124,6 @@ configuration:
           days: 14
       - hasLabel:
           label: content review complete
-      - activitySenderHasAssociation:
-          association: COLLABORATOR
       - isPullRequest
       - isOpen
       - isNotLabeledWith:
