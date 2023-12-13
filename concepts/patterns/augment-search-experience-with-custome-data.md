@@ -1,26 +1,24 @@
 ---
-title: "Augment the Microsoft Search experience with custom data"
-description: "Microsoft Graph integration pattern for bringing custom data to appear in Microsoft Search experiences."
+title: "Use Microsoft Graph to augment the search experience with custom data"
+description: "Learn about the Microsoft Graph integration pattern for bringing custom data into search experiences."
 author: "OlgaPodo"
 ms.localizationpriority: low
 ---
 
-# Augment the Microsoft Search experience with custom data
+# Use Microsoft Graph to augment the search experience with custom data
 
-The **business scenario** requires adding custom enterprise data to the Microsoft Search and Microsoft Copilot experiences built in Microsoft product canvas. The custom data is ingested into unstructured Microsoft 365 storage and added to various Search indexes.
+This article describes a common Microsoft Graph integration pattern for a business scenario that requires adding custom enterprise data to the Microsoft Search and Microsoft Copilot for Microsoft 365 experiences. The custom data is ingested into unstructured Microsoft 365 storage and added to various search indexes.
 
-This business scenario describes a non-interactive scenario, and it has the following **architecturally significant requirements**:
+This non-interactive scenario has the following requirements:
 
 - A data integration type, because it only provides custom data and doesn't use Microsoft 365 functionality in customer apps.
-- An inbound data flow between the app and the Microsoft 365 boundaries.
+- An inbound data flow between the app and Microsoft 365.
 - A high data volume for indexing.
-- Data batching and scheduling for upload and ingestion therefore assuming increased data latency
+- Data batching and scheduling for upload and ingestion, which results in increased data latency.
 
-The only suitable option for this application is to use **Microsoft Graph Connectors**.
+The best option for this scenario is to use Microsoft Graph Connectors. The following diagram shows the architecture for this solution.
 
-A simple **reference architecture** for the app is:
-
-![connectors](.././images/graph-arc-center/Connectors.png)
+![A diagram that shows a third-party app authenticating with Microsoft Entra, connecting to Microsoft Graph, and exporting content to semantic search.](.././images/graph-arc-center/Connectors.png)
 
 ## Components
 
