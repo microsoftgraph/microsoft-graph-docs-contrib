@@ -22,7 +22,7 @@ The report includes:
 - Dial-out calls: Total number of dial-out calls over the selected period
 - Time of use: Total dial-out time (in seconds) over the selected period
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

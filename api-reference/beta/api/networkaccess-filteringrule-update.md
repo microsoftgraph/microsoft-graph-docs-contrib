@@ -14,6 +14,8 @@ Namespace: microsoft.graph.networkaccess
 
 Update the properties of a [filteringRule](../resources/networkaccess-filteringrule.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

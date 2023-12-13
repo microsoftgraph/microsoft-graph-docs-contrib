@@ -14,6 +14,8 @@ Namespace: microsoft.graph.networkaccess
 
 Retrieve a list of remote network health status [microsoft.graph.networkaccess.remoteNetworkHealthStatusEvent](../resources/networkaccess-remotenetworkhealthstatusevent.md) events, providing insights into the health and status of remote networks.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

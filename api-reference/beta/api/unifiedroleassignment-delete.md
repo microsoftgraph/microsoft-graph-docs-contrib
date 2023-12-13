@@ -20,7 +20,7 @@ Delete a [unifiedRoleAssignment](../resources/unifiedRoleAssignment.md) object.
 
 ## Permissions
 
-Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 <a name='for-directory-azure-ad-provider'></a>
 
@@ -53,7 +53,6 @@ Depending on the RBAC provider and the permission type (delegated or application
 Remove a role assignment from a directory provider:
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
 DELETE /roleManagement/directory/roleAssignments/{id}
 ```
@@ -61,7 +60,6 @@ DELETE /roleManagement/directory/roleAssignments/{id}
 Remove a role assignment from the entitlement management provider:
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
 DELETE /roleManagement/entitlementManagement/roleAssignments/{id}
 ```
@@ -69,7 +67,6 @@ DELETE /roleManagement/entitlementManagement/roleAssignments/{id}
 Remove a role assignment from the Exchange Online provider:
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
 DELETE /roleManagement/exchange/roleAssignments/{id}
 ```

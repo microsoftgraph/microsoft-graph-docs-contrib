@@ -183,7 +183,6 @@ Enumeration members of identity source.
 |:----------|:-------------|:----------|
 IS_None |0 |Indicates the default value: Microsoft Entra ID. |
 AzureActiveDirectory |1 |The source of identity is Microsoft Entra ID. |
-External |2 |The source of identity isn't Microsoft Entra ID. |
 
 #### IdentityType enumeration members
 
