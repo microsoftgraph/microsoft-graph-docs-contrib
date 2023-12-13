@@ -494,3 +494,7 @@ Service limits for Planner aren't available.
 
 The preceding information applies to the following resources:
 [!INCLUDE [Tasks and plans throttling documentation](../includes/throttling-tasks-and-plans.md)]
+
+## Viva Engage service limits
+
+Viva Engage API calls are subject to rate limiting, allowing 10 requests per user, per app, within a 30-second time period. When you exceed the rate limit, all subsequent requests return a `429 Too Many Requests` response code. 
