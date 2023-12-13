@@ -16,7 +16,7 @@ This non-interactive scenario has the following requirements:
 - A high data volume for indexing.
 - Data batching and scheduling for upload and ingestion, which results in increased data latency.
 
-The best option for this scenario is to use Microsoft Graph Connectors. The following diagram shows the architecture for this solution.
+The best option for this scenario is to use Microsoft Graph connectors. The following diagram shows the architecture for this solution.
 
 ![A diagram that shows a third-party app authenticating with Microsoft Entra, connecting to Microsoft Graph, and exporting content to semantic search.](.././images/graph-arc-center/Connectors.png)
 
