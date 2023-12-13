@@ -22,7 +22,7 @@ Historically, the API platform was the “catch-all” for transactional use cas
 
 The wide range of integration options can confuse both customers who have to choose the best option for their needs and product teams who want to offer their data and services to third-party developers. We suggest beginning with a business scenario and identifying its functional and non-functional requirements, then translating them into a set of requirements that are critical for the architecture and that guide the selection of an integration option.  
 
-![analysis flow](./images/graph-arc-center/scenarioRequirementsSolution.jpg)
+![analysis flow](./images/graph-arc-center/scenariorequirementssolution.jpg)
 
 Based on many known scenarios in the Microsoft Graph ecosystem, we identified four architecture requirements that have a profound impact on the selection of integration options. These architectural significant requirements are:
 
@@ -41,9 +41,9 @@ We explain these architecture requirements in more detail as follows:
 
 Customers who want to integrate with Microsoft Graph data and services need to define these architecture significant requirements for their application scenarios. The following decision tree helps customers and API producers choose the most suitable Graph integration option based on these factors:
 
-![decisionTree](./images/graph-arc-center/DecisionTree.png)
+![decisionTree](./images/graph-arc-center/decisiontree.png)
 
-Many business scenarios require multiple integration building blocks to implement a solution, for example, Data Loss Prevention (DLP) scenarios may need MGDC integration for the initial data collection and malicious behavior patterns analysis and subsequent event streaming integration for near real-time data ingestion and processing to recognize a potential security incident as quick as possible. **It is our position that when multiple technologies are available on the Microsoft Graph platform our customers should be able to choose a solution based on their constraints and requirements such as complexity, cost, and time to market, and accelerate their path to value.**
+Many business scenarios require multiple integration building blocks to implement a solution, for example, Data Loss Prevention (DLP) scenarios may need Microsoft Graph Data Connect integration for the initial data collection and malicious behavior patterns analysis and subsequent event streaming integration for near real-time data ingestion and processing to recognize a potential security incident as quick as possible. **It is our position that when multiple technologies are available on the Microsoft Graph platform our customers should be able to choose a solution based on their constraints and requirements such as complexity, cost, and time to market, and accelerate their path to value.**
 
 To explore each of the recommended integration options in more detail, follow the links below for the corresponding patterns:
 
