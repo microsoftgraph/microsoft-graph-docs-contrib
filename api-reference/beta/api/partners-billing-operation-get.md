@@ -173,7 +173,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.partners.billing.operation",
+  "@odata.type": "#microsoft.graph.partners.billing.runningOperation",
   "id": "6fe687d7-1e0f-4bd6-9091-4672691f64bc",
   "status": "running",
   "createdDateTime": "2023-03-09T08:12:53",

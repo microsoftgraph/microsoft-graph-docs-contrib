@@ -20,7 +20,7 @@ Possible values for billingPeriod type.
 |Member|Value|Description|
 |:---|:---|:---|
 |current|1|The current billing period.|
-|last|2|Last month billing period.|
+|last|2|The billing period for the last month.|
 |unknownFutureValue|3|Evolvable enumeration sentinel value. Don't use.|
 
 <!-- {
