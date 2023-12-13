@@ -85,7 +85,7 @@ configuration:
       actions:
       - addLabel:
           label: MSTeams-Developer-Support
-    - description: Add reminder for contributors to pull requests with changes requested label with no activity for 14 days
+    - description: Add reminder to pull requests with changes requested label with no activity for 14 days
       frequencies:
       - hourly:
           hour: 6
@@ -103,6 +103,10 @@ configuration:
       actions:
       - addReply:
           reply: >-
+            > [!NOTE]
+
+            > The following guidance is for Microsoft employees only. Community contributors can ignore this message; our content team will manage the status.
+
             Hello, @${issueAuthor}.
 
 
@@ -113,35 +117,7 @@ configuration:
 
 
             Thank you!
-    - description: Add reminder for members to pull requests with changes requested label with no activity for 14 days
-      frequencies:
-      - hourly:
-          hour: 6
-      filters:
-      - noActivitySince:
-          days: 14
-      - hasLabel:
-          label: changes requested
-      - activitySenderHasAssociation:
-          association: MEMBER
-      - isPullRequest
-      - isOpen
-      - isNotLabeledWith:
-          label: blocked
-      actions:
-      - addReply:
-          reply: >-
-            Hello, @${issueAuthor}.
-
-
-            Your PR has been in "Changes requested" state for more than 2 weeks.
-
-
-            Please address the feedback left by your reviewer. Feel free to ping your reviewer on the side if you have any questions.
-
-
-            Thank you!
-    - description: Add reminder for contributors to pull requests with content review complete label with no activity for 14 days
+    - description: Add reminder to pull requests with content review complete label with no activity for 14 days
       frequencies:
       - hourly:
           hour: 6
@@ -159,34 +135,10 @@ configuration:
       actions:
       - addReply:
           reply: >-
-            Hello, @${issueAuthor}.
+            > [!NOTE]
 
+            > The following guidance is for Microsoft employees only. Community contributors can ignore this message; our content team will manage the status.
 
-            Your PR was approved by your reviewer more than 2 weeks ago.
-
-
-            Please add the label "ready to merge" when you are ready to publish your PR.
-
-
-            Thank you!
-    - description: Add reminder for members to pull requests with content review complete label with no activity for 14 days
-      frequencies:
-      - hourly:
-          hour: 6
-      filters:
-      - noActivitySince:
-          days: 14
-      - hasLabel:
-          label: content review complete
-      - activitySenderHasAssociation:
-          association: MEMBER
-      - isPullRequest
-      - isOpen
-      - isNotLabeledWith:
-          label: blocked
-      actions:
-      - addReply:
-          reply: >-
             Hello, @${issueAuthor}.
 
 
