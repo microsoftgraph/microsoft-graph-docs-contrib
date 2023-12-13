@@ -7,7 +7,7 @@ ms.localizationpriority: low
 
 # Microsoft Graph Architecture Center
 
-Microsoft Graph is a business platform that allows organizations to connect their business systems with Microsoft 365 SaaS data and services. Interactive APIs, capabilities for data ingress and egress, and event-based integration are table stakes expected from a modern cloud integration platform and all these options are available on Microsoft Graph:
+Microsoft Graph is a technology platform that allows organizations to connect their business systems with Microsoft 365 SaaS data and services. Interactive APIs, capabilities for data ingress and egress, and event-based integration are table stakes expected from a modern cloud integration platform and all these options are available on Microsoft Graph:
 
 - Transactional RESTful HTTP APIs in the Microsoft Graph API provide control and data plane interfaces for various Microsoft 365 SaaS offerings. These APIs support synchronous communication and are granular by nature.  
 - Enhanced RESTful HTTP APIs are a subclass of RESTful HTTP APIs designed to provide extra capabilities for effective data extraction. The enhanced APIs consist of Microsoft Teams APIs that enable specialized operations to retrieve large amounts of data, and  Microsoft SharePoint and Exchange Online APIs, which raise throttling limits for paid apps.
