@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printReleaseMechanism",
           "ChangeType": "Addition",
-          "Description": "Added the [printReleaseMechanism](https://learn.microsoft.com/en-us/graph/api/resources/intune-printReleaseMechanism?view=graph-rest-beta) resource type.",
+          "Description": "Added the [printReleaseMechanism](https://learn.microsoft.com/en-us/graph/api/resources/printReleaseMechanism?view=graph-rest-beta) resource type.",
           "Target": "printReleaseMechanism"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "releaseMechanisms",
           "ChangeType": "Addition",
-          "Description": "Added the `releaseMechanisms` property to the [printer](https://learn.microsoft.com/en-us/graph/api/resources/intune-printer?view=graph-rest-beta) resource.",
+          "Description": "Added the `releaseMechanisms` property to the [printer](https://learn.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-beta) resource.",
           "Target": "printer"
         }
       ],
@@ -49,7 +49,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "printReleaseMechanism",
           "ChangeType": "Addition",
-          "Description": "Added the [printReleaseMechanism](https://learn.microsoft.com/en-us/graph/api/resources/intune-printReleaseMechanism?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [printReleaseMechanism](https://learn.microsoft.com/en-us/graph/api/resources/printReleaseMechanism?view=graph-rest-1.0) resource type.",
           "Target": "printReleaseMechanism"
         },
         {
@@ -57,7 +57,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "releaseMechanisms",
           "ChangeType": "Addition",
-          "Description": "Added the `releaseMechanisms` property to the [printer](https://learn.microsoft.com/en-us/graph/api/resources/intune-printer?view=graph-rest-1.0) resource.",
+          "Description": "Added the `releaseMechanisms` property to the [printer](https://learn.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-1.0) resource.",
           "Target": "printer"
         }
       ],
