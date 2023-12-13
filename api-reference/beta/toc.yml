@@ -11152,10 +11152,27 @@ items:
       - name: Employee experience
         displayName: Viva
         items:
+          - name: Employee engagement (preview)
+            displayName: Viva Engage
+            items:
+              - name: Overview
+                href: resources/engagement-api-overview.md
+              - name: Community
+                href: resources/community.md
+                items:
+                  - name: Create
+                    href: api/employeeexperience-post-communities.md
+                  - name: Get
+                    href: api/community-get.md
+              - name: Engagement async operation
+                href: resources/engagementasyncoperation.md
+                items:
+                  - name: Get
+                    href: api/engagementasyncoperation-get.md
           - name: Employee goals (preview)
             items:
             - name: Goals export job
-              href: resources/goalsExportJob.md
+              href: resources/goalsexportjob.md
               items:
               - name: List
                 href: api/goals-list-exportjobs.md
@@ -15617,7 +15634,7 @@ items:
             items:
               - name: Get
                 href: api/peopleadminsettings-get.md
-              - name: Org control for pronouns settings (preview)
+              - name: Org control for pronouns settings
                 items:
                   - name: Pronouns settings
                     href: resources/pronounssettings.md

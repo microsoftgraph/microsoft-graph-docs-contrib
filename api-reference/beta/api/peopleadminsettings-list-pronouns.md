@@ -1,6 +1,6 @@
 ---
 title: "List pronounsSettings"
-description: "Read the properties and relationships of a pronounsSettings object."
+description: "Get the properties of the pronounsSettings resource for an organization."
 author: "aymen-ms"
 ms.localizationpriority: medium
 ms.prod: "people"
@@ -34,6 +34,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /admin/people/pronouns
 ```
 
+## Optional query parameters
+
+This method doesn't support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 ## Request headers
 |Name|Description|
 |:---|:---|
@@ -49,7 +53,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-The following is an example of a request.
+
+The following example shows a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -95,7 +101,9 @@ GET https://graph.microsoft.com/beta/admin/people/pronouns
 ---
 
 ### Response
+
 The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
