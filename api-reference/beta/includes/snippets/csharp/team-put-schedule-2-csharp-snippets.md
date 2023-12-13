@@ -29,6 +29,15 @@ var requestBody = new Schedule
 			Longitude = 24.34616d,
 		},
 	},
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"startDayOfWeek" , "Tuesday"
+		},
+		{
+			"activitiesIncludedWhenCopyingShiftsEnabled" , true
+		},
+	},
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

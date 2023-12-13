@@ -44,6 +44,12 @@ longitude := float64(24.34616)
 approvedLocation.SetLongitude(&longitude) 
 timeClockSettings.SetApprovedLocation(approvedLocation)
 requestBody.SetTimeClockSettings(timeClockSettings)
+additionalData := map[string]interface{}{
+	"startDayOfWeek" : "Tuesday", 
+	activitiesIncludedWhenCopyingShiftsEnabled := true
+requestBody.SetActivitiesIncludedWhenCopyingShiftsEnabled(&activitiesIncludedWhenCopyingShiftsEnabled) 
+}
+requestBody.SetAdditionalData(additionalData)
 
 schedule, err := graphClient.Teams().ByTeamId("team-id").Schedule().Put(context.Background(), requestBody, nil)
 
