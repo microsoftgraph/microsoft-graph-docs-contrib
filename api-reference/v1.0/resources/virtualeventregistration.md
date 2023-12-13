@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents an attendee's registration record for a [virtualEventWebinar](../resources/virtualeventwebinar.md).
 
 Inherits from [entity](../resources/entity.md).
@@ -21,7 +19,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List virtualEventRegistrations](../api/virtualeventregistration-list.md)|[virtualEventRegistration](../resources/virtualeventregistration.md) collection|Get a list of all [registration records](../resources/virtualeventregistration.md) of a [webinar](../resources/virtualeventwebinar.md).|
+|[List virtualEventRegistrations](../api/virtualeventwebinar-list-registrations.md)|[virtualEventRegistration](../resources/virtualeventregistration.md) collection|Get a list of all [registration records](../resources/virtualeventregistration.md) of a [webinar](../resources/virtualeventwebinar.md).|
 |[Get virtualEventRegistration](../api/virtualeventregistration-get.md)|[virtualEventRegistration](../resources/virtualeventregistration.md)|Get the properties and relationships of a [virtualEventRegistration](../resources/virtualeventregistration.md) object.|
 
 ## Properties
@@ -49,8 +47,10 @@ Inherits from [entity](../resources/entity.md).
 | rejectedByOrganizer | Manual approval is enabled and the organizer rejected the attendee. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 
-## JSON representation
+## Relationships
+None.
 
+## JSON representation
 The following JSON representation shows the resource type
 <!-- {
   "blockType": "resource",
@@ -63,14 +63,19 @@ The following JSON representation shows the resource type
 ``` json
 {
   "@odata.type": "#microsoft.graph.virtualEventRegistration",
-  "cancelationDateTime": "String (timestamp)",
-  "email": "String",
+  "id": "String (identifier)",
+  "userId": "String",
   "firstName": "String",
-  "id": "String (identifier)",  
   "lastName": "String",
-  "registrationDateTime": "String (timestamp)",
-  "registrationQuestionAnswers": [{"@odata.type": "microsoft.graph.virtualEventRegistrationQuestionAnswer"}],
+  "email": "String",
   "status": "String",
-  "userId": "String"
+  "registrationDateTime": "String (timestamp)",
+  "cancelationDateTime": "String (timestamp)",
+  "registrationQuestionAnswers": [
+    {
+      "@odata.type": "microsoft.graph.virtualEventRegistrationQuestionAnswer"
+    }
+  ]
 }
 ```
+
