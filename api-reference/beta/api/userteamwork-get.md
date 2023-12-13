@@ -55,7 +55,7 @@ The following example shows the request.
 
 <!-- {
   "blockType": "request",
-  "name": "user_get_region_locale",
+  "name": "get_userTeamworkSettings_for_user",
   "sampleKeys": ["2f39ffba-51ca-4d2d-a66f-a020a83ce208"]
 }-->
 ```msgraph-interactive
@@ -70,17 +70,17 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.userteamwork"
+  "@odata.type": "microsoft.graph.userTeamwork"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('2f39ffba-51ca-4d2d-a66f-a020a83ce208')/teamwork",
-  "id": "userTeamwork",
-  "locale": "en-us",
-  "region": "Americas"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('2f39ffba-51ca-4d2d-a66f-a020a83ce208')/teamwork/$entity",
+    "id": "userTeamwork",
+    "locale": "en-us",
+    "region": "Americas"
 }
 ```
 
