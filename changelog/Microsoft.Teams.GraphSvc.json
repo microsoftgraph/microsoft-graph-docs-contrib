@@ -1586,7 +1586,8 @@
           "Id": "09e85d0c-2551-40e7-a037-1f36fade0b07",
           "ApiChange": "Method",
           "ChangedApiName": "GET",
-          "ChangeType": "Addition",          "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/userteamwork-get?view=graph-rest-beta) operation to the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userteamwork?view=graph-rest-beta) resource.",
+          "ChangeType": "Addition",          
+          "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/userteamwork-get?view=graph-rest-beta) operation to the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userteamwork?view=graph-rest-beta) resource.",
           "Target": "userTeamwork"
         },
         {
@@ -1603,7 +1604,7 @@
           "ChangedApiName": "GET",
           "ChangeType": "Addition",
           "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/licenseDetails-getteamslicensingdetails?view=graph-rest-beta) operation to the [licensedetails](https://learn.microsoft.com/en-us/graph/api/resources/licensedetails?view=graph-rest-beta) resource.",
-          "Target": "teamslicensingdetails"
+          "Target": "licensedetails"
         },
         {
           "Id": "5ed0e040-f9ba-4889-9ee0-8b90837f291g",
