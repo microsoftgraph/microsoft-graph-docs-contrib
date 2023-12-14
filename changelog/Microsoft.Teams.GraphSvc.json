@@ -1622,13 +1622,29 @@
         "Description": "Added the **isTeamsEnabled** property to the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",
         "Target": "teamwork"
       },
-           {
+        {
         "Id": "5ed0e040-f9ba-4889-9ee0-8b90837f291g",
         "ApiChange": "Property",
         "ChangedApiName": "region",
         "ChangeType": "Addition",
             "Description": "Added the **region** property to the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",
     "Target": "teamwork"
+      },  
+        {
+        "Id": "5ed0e040-f9ba-4889-9ee0-8b90837f291g",
+        "ApiChange": "Property",
+        "ChangedApiName": "locale",
+        "ChangeType": "Addition",
+            "Description": "Added the **locale** property to the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userTeamwork?view=graph-rest-beta) resource.",
+    "Target": "userTeamwork"
+           }, 
+            {
+        "Id": "5ed0e040-f9ba-4889-9ee0-8b90837f291g",
+        "ApiChange": "Property",
+        "ChangedApiName": "locale",
+        "ChangeType": "Addition",
+            "Description": "Added the **region** property to the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userTeamwork?view=graph-rest-beta) resource.",
+    "Target": "userTeamwork"
       },  
       ],
       "Id": "9f5e8734-31a1-4609-8c8c-590fe58e2852",
