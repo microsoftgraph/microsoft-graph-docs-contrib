@@ -45,19 +45,19 @@ Customers who want to integrate with Microsoft Graph data and services need to d
 
 Many business scenarios require multiple integration building blocks to implement a solution, for example, Data Loss Prevention (DLP) scenarios may need Microsoft Graph Data Connect integration for the initial data collection and malicious behavior patterns analysis and subsequent event streaming integration for near real-time data ingestion and processing to recognize a potential security incident as quick as possible. **It is our position that when multiple technologies are available on the Microsoft Graph platform our customers should be able to choose a solution based on their constraints and requirements such as complexity, cost, and time to market, and accelerate their path to value.**
 
-To explore each of the recommended integration options in more detail, follow the links below for the corresponding patterns:
+To explore each of the integration options in more detail, see the following topics:
 
-- [Interactive applications](./patterns/Interactive-applications.md)
+- [Interactive applications](./patterns/interactive-applications.md)
 
-- [Augment search experiences](./patterns/Augment-Search-experience-with-customer-data.md)
+- [Augment search experiences](./patterns/augment-search-experience-with-customer-data.md)
 
-- [Analyze Microsoft Graph data](./patterns/Analyze-Graph-data-in-your-data-storage.md)
+- [Analyze Microsoft Graph data](./patterns/analyze-graph-data-in-your-data-storage.md)
   
-- [Receive notifications via WebHooks (push)](./patterns/Observe-events-and-changes-in-your-data.md)
+- [Receive notifications via WebHooks (push)](./patterns/observe-events-and-changes-in-your-data.md)
 
-- [Observe events via Azure Event Hubs (Pull)](./patterns/Observe-events-via-Event-Hubs.md)
+- [Observe events via Azure Event Hubs (pull)](./patterns/observe-events-via-event-hubs.md)
 
-- [Interactive app with notifications](./patterns/Interactive-app-with-change-notifications-via-webhooks.md)
+- [Interactive app with notifications](./patterns/interactive-app-with-change-notifications-via-webhooks.md)
 
 
 ## See also
