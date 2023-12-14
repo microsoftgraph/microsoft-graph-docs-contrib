@@ -1587,7 +1587,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Addition",          
-          "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/userteamwork-get?view=graph-rest-beta) operation to the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userteamwork?view=graph-rest-beta) resource.",
+          "Description": "Added the [get](https://learn.microsoft.com/en-us/graph/api/userteamwork-get?view=graph-rest-beta) operation to the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userteamwork?view=graph-rest-beta) resource.",
           "Target": "userTeamwork"
         },
         {
@@ -1595,7 +1595,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Addition",
-          "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/teamwork-get?view=graph-rest-beta) operation to the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",
+          "Description": "Added the [get](https://learn.microsoft.com/en-us/graph/api/teamwork-get?view=graph-rest-beta) operation to the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-beta) resource.",
           "Target": "teamwork"
         },
         {
@@ -1603,7 +1603,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Addition",
-          "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/licenseDetails-getteamslicensingdetails?view=graph-rest-beta) operation to the [licensedetails](https://learn.microsoft.com/en-us/graph/api/resources/licensedetails?view=graph-rest-beta) resource.",
+          "Description": "Added the [get](https://learn.microsoft.com/en-us/graph/api/licenseDetails-getteamslicensingdetails?view=graph-rest-beta) operation to the [licensedetails](https://learn.microsoft.com/en-us/graph/api/resources/licensedetails?view=graph-rest-beta) resource.",
           "Target": "licensedetails"
         },
         {
