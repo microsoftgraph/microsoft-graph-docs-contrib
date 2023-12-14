@@ -1,15 +1,15 @@
 ---
 title: "Analyze Microsoft Graph data in your data storage"
-description: "Microsoft Graph integration patterns for non-interactive use cases that rely on a large amount of extracted Microsoft 365 data."
+description: " Learn about Microsoft Graph integration patterns for non-interactive use cases that rely on a large amount of extracted Microsoft 365 data."
 author: "OlgaPodo"
 ms.localizationpriority: low
 ---
 
 # Analyze Microsoft Graph data in your data storage
 
-A **business scenario** requires a complex analysis of enterprise collaboration based on the available email and messaging information to improve business processes and productivity.
+This article describes a common Microsoft Graph integration pattern for a business scenario that requires a complex analysis of enterprise collaboration data to improve business processes and productivity.
 
-This business scenario describes a non-interactive use case that relies on a large amount of extracted Microsoft 365 data and has the following **architecturally significant requirements**:
+This scenario relies on a large amount of extracted Microsoft 365 data and has the following architecturally significant requirements:
 
 - A data integration type.
 - An outbound data flow from Microsoft 365 boundaries to the app.

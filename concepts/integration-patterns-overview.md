@@ -62,6 +62,6 @@ To explore each of the integration options in more detail, see the following top
 
 ## See also
 
-- [Azure and Microsoft 365 scenarios](https://learn.microsoft.com/en-us/azure/architecture/solutions/microsoft-365-scenarios)
+- [Azure and Microsoft 365 scenarios](./azure/architecture/solutions/microsoft-365-scenarios)
 - [Cloud design patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/)
   
