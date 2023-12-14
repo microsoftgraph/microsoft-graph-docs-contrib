@@ -18914,7 +18914,7 @@ items:
                   - name: Delete
                     href: api/openshift-delete.md
                   - name: Stage for deletion
-                    href: api/openshift-stageforedeletion.md
+                    href: api/openshift-stagefordeletion.md
                   - name: List for all joined teams
                     href: api/team-getopenshifts.md
               - name: Open shift change request
