@@ -9,7 +9,7 @@ ms.localizationpriority: low
 
 This article describes a common Microsoft Graph integration pattern for a business scenario that offers enterprise collaboration enhancements for mobile apps to receive a read-only feed of shared messages from Microsoft Teams in near-real time.
 
-This scenario is a non-interactive use case that relies on data changes triggered by external events, and ha the following architecture requirements:
+This scenario is a non-interactive use case that relies on data changes triggered by external events, and has the following architecture requirements:
 
 - A data integration type.
 - An outbound data flow from Microsoft 365 boundaries to the app.
