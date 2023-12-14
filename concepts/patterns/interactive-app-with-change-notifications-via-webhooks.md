@@ -1,26 +1,26 @@
 ---
 title: "Build interactive apps with APIs and webhooks"
-description: "Microsoft Graph integration pattern for interactive apps that use change notifications."
+description: "Learn how to use the Microsoft Graph integration pattern for interactive apps that use change notifications."
 author: "OlgaPodo"
 ms.localizationpriority: low
 ---
 
-# Interactive apps with change notifications via webhooks
+# Build interactive Microsoft Graph apps with change notifications via webhooks
 
 A **business scenario** needs a mobile email client that lets users read, reply, and compose new messages and alerts them of new emails.
 
-This business scenario describes an interactive use case that relies on data and functionality of the Microsoft 365 email services. It uses Microsoft Graph APIs to read data, call email operations, and receive Microsoft Graph change notifications using webhooks through the web socket channel. This app has the following **architecturally significant requirements**:
+This article describes a common Microsoft Graph integration pattern for a business scenario that relies on Microsoft 365 email service data and functionality. It uses Microsoft Graph APIs to read data, call email operations, and receive Microsoft Graph change notifications using webhooks through the WebSocket channel. This scenario has the following architecture requirements:
 
 - An application integration type.
 - A bidirectional data flow between Microsoft 365 and the app.
 - A low data volume as it serves a single user.
 - A medium data latency acceptable for push notifications.
   
-This app uses multiple Microsoft Graph integration options such as APIs, change notifications, and optionally change tracking API functionality. To receive change notifications via WebSocket the app uses SignalR SDK, which abstracts and simplifies WebSocket management.
+This interaction pattern uses multiple Microsoft Graph integration options such as APIs, change notifications, and, optionally, change tracking APIs. To receive change notifications via WebSocket, the app uses the SignalR SDK, which abstracts and simplifies WebSocket management.
 
-A simple **reference architecture** for this mobile app with a WebSocket webhook:
+The following diagram shows the architecture for this mobile app with a WebSocket webhook.
 
-![hybrid](.././images/graph-arc-center/HybridAPIWebhooks.png)
+![A diagram that shows how the Microsoft Graph notification service interacts with Exchange, Microsoft Graph REST APIs, an app with webhook, and Microsoft Entra for authentication](.././images/graph-arc-center/HybridAPIWebhooks.png)
 
 ## Components
 
