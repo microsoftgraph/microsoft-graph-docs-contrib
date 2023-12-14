@@ -1,19 +1,19 @@
 ---
-title: "Build interactive apps with APIs"
-description: "Microsoft Graph integration pattern for interactive apps using Microsoft Graph APIs."
+title: "Build interactive apps by using Microsoft Graph APIs"
+description: "Learn about the Microsoft Graph integration pattern for using Microsoft Graph APIs to build interactive apps."
 author: "OlgaPodo"
 ms.localizationpriority: low
 ---
 
-# Interactive applications
+# Build interactive apps by using Microsoft Graph APIs
 
-A **business scenario** requires a user interface that can create, update, and manage channel messages in real-time and that depends on the complex functionality of the Microsoft 365 services, such as sending or receiving messages from different teams.
+This article describes a common Microsoft Graph integration pattern for a business scenario that requires a user interface that can create, update, and manage channel messages in real-time, and that depends on Microsoft 365 services such as sending and receiving messages from different teams.
 
-This business scenario describes an interactive scenario, and it has the following **architecturally significant requirements**:
+This scenario has the following architecturally significant requirements:
 
 - An application integration type, because it relies on complex Microsoft 365 functionality.
-- A bidirectional data flow between the app and the Microsoft 365 boundaries.
-- A single human interaction usually creates a low volume of data compared to automated systems; however, if there is a large number of users, then the data volume may become high.
+- A bidirectional data flow between the app and Microsoft 365.
+- A low volume of data compared to automated systems based on single human interations. Depending on the number of users, however, the data volume might be high.
 - A real-time data operation on the app, with some asynchronous server-side operations, such as delivering email to a remote client.
 
 The best and only choice for this application is to use Microsoft Graph RESTful HTTP APIs. The client app responds to user actions and can make requests and process the data at its speed, controlled by the client environment.
