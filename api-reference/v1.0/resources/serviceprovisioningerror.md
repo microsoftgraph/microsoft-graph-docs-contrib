@@ -11,7 +11,7 @@ author: "PaulEkirapa"
 
 Namespace: microsoft.graph
 
-An abstract base type that represents information that is published by a federated service that describes a non-transient, service-specific error. These errors are reported on the [user](user.md), [group](group.md), or [organizational contact](orgcontact.md) entities and require an explicit administrator action to resolve.
+An abstract base type that represents information published by a federated service that describes a nontransient, service specific error for the [user](user.md), [group](group.md), or [organizational contact](orgcontact.md) that requires an explicit administrator action to resolve.
 
 Base type of [serviceProvisioningXmlError](../resources/serviceprovisioningxmlerror.md).
 

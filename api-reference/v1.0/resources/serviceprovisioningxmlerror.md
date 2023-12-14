@@ -11,7 +11,7 @@ author: "PaulEkirapa"
 
 Namespace: microsoft.graph
 
-Represents information that is published by a federated service that describes a non-transient, service-specific error. These errors are reported on the [user](user.md), [group](group.md), or [organizational contact](orgcontact.md) entities and require an explicit administrator action to resolve. These errors are represented as an XML string.
+Represents information published by a federated service that describes a nontransient, service specific error for the [user](user.md), [group](group.md), or [organizational contact](orgcontact.md) entities regarding the properties or links of objects(for example user memberships). These errors are represented as an xml string.
 
 Inherits from [serviceProvisioningError](../resources/serviceprovisioningerror.md).
 
