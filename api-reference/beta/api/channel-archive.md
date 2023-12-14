@@ -1,27 +1,27 @@
 ---
 title: "Archive channel"
-description: "Archive the specified channel in a team. "
+description: "Archive a channel in a team. "
 author: "sumitgupta3"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Archive channel in team
+# Archive channel
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Archive the specified [channel](../resources/channel.md).
-When a channel is archived, users can no longer send or like messages on the channel in the team, edit the channel's name or other settings, or in general make most changes to the channel.
-Membership changes to the channel continue to be allowed. A channel is archived by default if team is archived. Deletion of archived channel is allowed.
+Archive a [channel](../resources/channel.md). When a channel is archived, users can’t send new messages or like existing messages on it. Also, users can't edit the channel's name, edit other settings, nor make almost any other changes to the channel.
 
-Archiving is an async operation. A channel is archived once the async operation completes successfully, which may occur subsequent to a response from this API.
+You can delete an archived channel, or add and remove members from it. If you archive a team, its channels are archived for you.
 
-To archive a channel, the channel and [group](../resources/group.md) must have an owner.
+Archiving is asynchronous; a channel is archived after the asynchronous archiving operation completes successfully, which might occur after the response returns.
 
-To restore a channel from its archived state, use the API to [unarchive](channel-unarchive.md). A channel can not be archived or unarchived if team is archived.
+A channel without an owner, or that belongs to a [group](../resources/group.md) that has no owner, can't be archived.
+
+To restore a channel from its archived state, use the [unarchive](channel-unarchive.md) method. A channel can’t be archived or unarchived if its team is archived.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,21 +46,21 @@ POST /groups/{team-id}/team/channels/{channel-id}/archive
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
-In the request, you may _optionally_ include the `shouldSetSpoSiteReadOnlyForMembers` parameter in a JSON body, as follows.
+In the request, you can optionally include the `shouldSetSpoSiteReadOnlyForMembers` parameter in a JSON body, as follows.
 ```JSON
 {
     "shouldSetSpoSiteReadOnlyForMembers": true
 }
 ```
-This optional parameter defines whether to set permissions for channel members to read-only on the SharePoint Online site associated with the team. Setting it to false or omitting the body altogether will result in this step being skipped.
+This optional parameter defines whether to set permissions for channel members to read-only on the SharePoint Online site associated with the team. Setting it to false or omitting the body altogether results in this step being skipped.
 
 ## Response
 
-If archiving is started successfully, this method returns a `202 Accepted` response code. The response will also contain a `Location` header, which contains the location of the [teamsAsyncOperation](../resources/teamsasyncoperation.md) that was created to handle archiving of the channel in a team. Check the status of the archiving operation by making a GET request to this location.
+If archiving is started successfully, this method returns a `202 Accepted` response code. The response contains a `Location` header, which contains the location of the [teamsAsyncOperation](../resources/teamsasyncoperation.md) that was created to handle archiving of the channel in a team. Check the status of the archiving operation by making a GET request to this location.
 
 ## Example
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -74,7 +74,7 @@ POST https://graph.microsoft.com/beta/teams/5crrrtrd5-e41c-4f18-ab8awfd-f36ca7dd
 ---
 
 ### Response
-The following is an example of a response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "name": "archive_channel"
@@ -87,7 +87,7 @@ Content-Length: 0
 ```
 
 ### Request
-The following is an example of a request when **Team is archived**
+The following example shows a request to archive a channel when the team is already archived.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -101,7 +101,7 @@ POST https://graph.microsoft.com/beta/teams/5crrrtrd5-e41c-4f18-ab8awfd-f36ca7dd
 ---
 
 ### Response
-The following is an example of a response with 400.
+The following example shows the 400 Bad Request response.
 <!-- {
   "blockType": "response",
   "name": "archive_channel"

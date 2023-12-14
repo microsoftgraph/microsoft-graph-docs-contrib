@@ -1,23 +1,23 @@
 ---
 title: "Unarchive team"
-description: "Restore an archived channel in a team. This restores users' ability to send messages and edit the channel. Channels are archived using the archive API."
+description: "Restore an archived channel in a team. Unarchiving restores the ability for users to send messages and edit the channel."
 ms.localizationpriority: medium
 author: "sumitgupta3"
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Unarchive channel in a team
+# Unarchive channel
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restore an archived [channel](../resources/channel.md). This restores user's ability to send messages and edit the channel. Channels are archived using the [archive](channel-archive.md) API.
+Restore an archived [channel](../resources/channel.md). Unarchiving restores the ability for users to send messages and edit the channel. Channels are archived using the [archive](channel-archive.md) API.
 
-Unarchiving is an async operation. A channel is unarchived once the async operation completes successfully, which may occur subsequent to a response from this API.
+Unarchiving is an asynchronous operation; a channel is unarchived once the asynchronous unarchive operation completes successfully, which might occur after this method responds.
 
-> **Note**: If a team is archived and we try to unarchive a channel inside the team, the API will return an error.
+> **Note**: An archived channel that belongs to an archived team cannot be unarchived. Unarchive the team before attempting to unarchinve the channel, otherwise an error will occur.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,15 +45,15 @@ POST /groups/{team-id}/team/channels/{channel-id}/unarchive
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If unarchiving is started successfully, this method returns a `202 Accepted` response code. The response will also contain a `Location` header, which contains the location of the [teamsAsyncOperation](../resources/teamsasyncoperation.md) that was created to handle unarchiving of the channel of team. Check the status of the unarchiving operation by making a GET request to this location.
+If unarchiving is started successfully, this method returns a `202 Accepted` response code. The response contains a `Location` header, which contains the location of the [teamsAsyncOperation](../resources/teamsasyncoperation.md) that was created to handle unarchiving of the channel of team. Check the status of the unarchiving operation by making a GET request to this location.
 
 ## Example
 #### Request
-The following is an example of a request with success.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -68,7 +68,7 @@ POST https://graph.microsoft.com/beta/teams/5crrrtrd5-e41c-4f18-ab8awfd-f36ca7dd
 
 
 #### Response
-The following is an example of a response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "name": "unarchive_channel"
@@ -82,7 +82,7 @@ Content-Length: 0
 
 
 ### Request
-The following is an example of a request when **Team is archived**.
+The following example shows a request to unarchive a channel that belongs to an archived team.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -96,7 +96,7 @@ POST https://graph.microsoft.com/beta/teams/5crrrtrd5-e41c-4f18-ab8awfd-f36ca7dd
 ---
 
 ### Response
-The following is an example of a response with 400.
+The following example shows the 400 Bad Request response.
 <!-- {
   "blockType": "response",
   "name": "archive_channel"

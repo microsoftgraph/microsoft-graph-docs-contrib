@@ -73,7 +73,7 @@ where files are shared, and where tabs are added.
 |moderationSettings|[channelModerationSettings](../resources/channelmoderationsettings.md)|Settings to configure channel moderation to control who can start new posts and reply to posts in that channel.|
 |summary|[channelSummary](../resources/channelsummary.md)|Contains summary information about the channel, including number of guests, members, owners, and an indicator for members from other tenants. The **summary** property will only be returned if it is specified in the `$select` clause of the [Get channel](../api/channel-get.md) method.|
 |tenantId |string | The ID of the Microsoft Entra tenant. |
-|isArchived| Boolean | Indicates whether the channel is in archived state. Read-only. |
+|isArchived| Boolean | Indicates whether the channel is archived. Read-only. |
 
 ### channelMembershipType values
 
