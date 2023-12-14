@@ -18,15 +18,15 @@ This non-interactive scenario has the following requirements:
 
 The best option for this scenario is to use Microsoft Graph connectors. The following diagram shows the architecture for this solution.
 
-![A diagram that shows a third-party app authenticating with Microsoft Entra, connecting to Microsoft Graph, and exporting content to semantic search.](.././images/graph-arc-center/Connectors.png)
+![A diagram that shows a third-party app authenticating with Microsoft Entra ID, connecting to Microsoft Graph, and exporting content to semantic search.](.././images/graph-arc-center/Connectors.png)
 
 ## Solution components
 
 The architecture for this solution includes the following components:
 
 - Azure App Service, which lets you build and host web apps, scheduled jobs, and RESTful APIs in your preferred programming language, without having to manage infrastructure. It offers auto-scaling and high availability, supports both Windows and Linux, and enables automated deployments from GitHub, Azure DevOps, or any Git repo.
-- Microsoft Entra, which is required to manage authentication for Microsoft Graph and supports delegated and application permissions to enable OAuth flow.
-- Microsoft Graph RESTful APIs, including connectors, accessed via a single endpoint, `https://graph.microsoft.com`.
+- Microsoft Entra ID, which is required to manage authentication for Microsoft Graph and supports delegated and application permissions to enable OAuth flow.
+- Microsoft Graph RESTful APIs, including connectors, accessed via a single endpoint: `https://graph.microsoft.com`.
 - A custom app that implements custom logic.
 
 ## Considerations
