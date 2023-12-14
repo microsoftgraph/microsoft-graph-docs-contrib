@@ -1,24 +1,24 @@
 ---
 title: "Build interactive apps with APIs and webhooks"
-description: "Learn how to use the Microsoft Graph interaction pattern for interactive apps that use change notifications."
+description: "Learn how to use the Microsoft Graph integration pattern for interactive apps that use change notifications."
 author: "OlgaPodo"
 ms.localizationpriority: low
 ---
 
 # Build interactive Microsoft Graph apps with change notifications via webhooks
 
-This article describes a common Microsoft Graph interaction pattern for a business scenario that relies on Microsoft 365 email service data and functionality. It uses Microsoft Graph APIs to read data, call email operations, and receive Microsoft Graph change notifications using webhooks through the WebSocket channel. This scenario has the following architecture requirements:
+This article describes a common Microsoft Graph integration pattern for a business scenario that relies on Microsoft 365 email service data and functionality. It uses Microsoft Graph APIs to read data, call email operations, and receive Microsoft Graph change notifications using webhooks through the WebSocket channel. This scenario has the following architecture requirements:
 
 - An application integration type.
 - A bidirectional data flow between Microsoft 365 and the app.
 - A low data volume as it serves a single user.
 - A medium data latency acceptable for push notifications.
   
-This interaction pattern uses multiple Microsoft Graph integration options, including APIs, change notifications, and, optionally, change tracking APIs. To receive change notifications via WebSocket, the app uses the SignalR SDK, which abstracts and simplifies WebSocket management.
+This pattern uses multiple Microsoft Graph integration options, including APIs, change notifications, and, optionally, change tracking APIs. To receive change notifications via WebSocket, the app uses the SignalR SDK, which abstracts and simplifies WebSocket management.
 
-The following diagram shows the architecture for this pattern.
+The following diagram shows the architecture for this solution.
 
-![A diagram that shows how the Microsoft Graph notification service interacts with Exchange, Microsoft Graph REST APIs, an app with webhook, and Microsoft Entra for authentication](.././images/graph-arc-center/HybridAPIWebhooks.png)
+![A diagram that shows how the Microsoft Graph notification service interacts with Exchange, Microsoft Graph REST APIs, an app with webhook, and Microsoft Entra ID for authentication](.././images/graph-arc-center/HybridAPIWebhooks.png)
 
 ## Solution components
 
@@ -26,12 +26,12 @@ The solution architecture includes the following components:
 
 - Microsoft Entra ID, which is required to manage authentication for the Microsoft Graph APIs and supports delegated and application permissions to enable OAuth flow.
 - Microsoft Graph notification services, which manages notification subscriptions and delivers change notifications to client apps.
-- Microsoft Graph RESTful APIs that are accessed via a single endpoint, `https://graph.microsoft.com`.
+- Microsoft Graph RESTful APIs that are accessed via a single endpoint: `https://graph.microsoft.com`.
 - A custom mobile app that implements custom logic and webhooks and communicates with Microsoft Graph. 
 
 ## Considerations
 
-The following considerations support the use of this interaction pattern:
+The following considerations support the use of this integration pattern:
 
 - **Availability**: The custom app should be highly available on the edge device and can support an offline mode whena reliable internet connection isn't available.
 
