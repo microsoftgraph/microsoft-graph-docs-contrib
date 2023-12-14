@@ -19,7 +19,7 @@ A container where you can find all the different Microsoft Teams license details
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-|hasTeamsLicense| boolean | Represents whether the user has a valid license to use Microsoft Teams.|
+|hasTeamsLicense|boolean|Represents whether the user has a valid license to use Microsoft Teams.|
 
 ## Relationships
 
