@@ -14,13 +14,13 @@ This scenario relies on a large amount of extracted Microsoft 365 data and has t
 - A data integration type.
 - An outbound data flow from Microsoft 365 boundaries to the app.
 - A high volume of data spanning multiple months.
-- A relatively high data latency as the initial data extract might include a year-old message.
+- A relatively high data latency, as the initial data extract might include messages up to a year old.
   
-The best option for this application is to use the Microsoft Graph Data Connect product. The client needs to set up high-capacity data storage such as Azure Data Lake or Azure Synapse, enable an Azure subscription, and configure an Azure Data Factory or Azure Synapse pipeline.
+The best option for this scenario is to use Microsoft Graph Data Connect. The client needs to set up high-capacity data storage such as Azure Data Lake or Azure Synapse, enable an Azure subscription, and configure an Azure Data Factory or Azure Synapse pipeline.
 
-A simple **reference architecture** for this type of analytical solution is as follows:
+The following diagram shows the architecture for this solution.
 
-![mgdc](.././images/graph-arc-center/Connectors.png)
+![mgdc](.././images/graph-arc-center/connectors.png)
 
 ## Components
 
