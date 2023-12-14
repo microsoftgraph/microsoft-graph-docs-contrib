@@ -45,7 +45,7 @@ GET /me/onlineMeetings/{meetingId}/meetingAttendanceReport
 GET /users/{userId}/onlineMeetings/{meetingId}/meetingAttendanceReport
 ```
 
-To get an attendance report for a virtual event session by ID:
+To get an attendance report for a webinar session by ID:
 <!-- { "blockType": "ignored" }-->
 ``` http
 GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports/{reportId}
@@ -58,7 +58,7 @@ GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanc
 >- `reportId` is the **id** of an [meetingAttendanceReport](../resources/meetingAttendanceReport.md) object.
 >- `webinarId` is the **id** of an [virtualEventWebinar](../resources/virtualEventWebinar.md) object.
 >- `sessionId` is the **id** of an [virtualEventSession](../resources/virtualEventSession.md) object.
->- Only the meeting organizer or co-organizer can access this API.
+>- Only the meeting/webinar organizer or co-organizer can access this API.
 
 > [!CAUTION]
 >
@@ -317,7 +317,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 3:  Get the attendance report for a virtual event session by ID
+### Example 3:  Get the attendance report for a webinar session by ID
 
 #### Request
 

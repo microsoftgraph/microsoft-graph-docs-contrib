@@ -35,11 +35,19 @@ GET /me/onlineMeetings/{meetingId}/attendanceReports/{reportId}/attendanceRecord
 GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports/{reportId}/attendanceRecords
 ```
 
+To get attendance records of a virtual event session's attendance report:
+<!-- {"blockType": "ignored"}-->
+``` http
+GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports/{reportId}/attendanceRecords
+```
+
 > [!TIP]
 >
 >- **userId** is the object ID of a user in [Microsoft Entra admin center > user management page](https://entra.microsoft.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 >- `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
 >- `reportId` is the **id** of an [meetingAttendanceReport](../resources/meetingAttendanceReport.md) object.
+>- `webinarId` is the **id** of an [virtualEventWebinar](../resources/virtualEventWebinar.md) object.
+>- `sessionId` is the **id** of an [virtualEventSession](../resources/virtualEventSession.md) object.
 
 ## Optional query parameters
 
@@ -61,7 +69,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: List attendance records
+
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -110,7 +120,7 @@ GET https://graph.microsoft.com/v1.0/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 
 ---
 
-### Response
+#### Response
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -148,6 +158,78 @@ Content-Type: application/json
       "emailAddress": "lisa.adkins@contoso.com",
       "totalAttendanceInSeconds": 314,
       "role": "Presenter",
+      "identity": {
+        "id": "57caaef9-5ed0-48d5-8862-e5abfa71b3e9",
+        "displayName": "Lisa Adkins",
+        "tenantId": null
+      },
+      "attendanceIntervals": [
+        {
+          "joinDateTime": "2021-10-04T23:13:43.3776519Z",
+          "leaveDateTime": "2021-10-04T23:18:57.5639338Z",
+          "durationInSeconds": 314
+        }
+      ]
+    }
+  ]
+}
+```
+
+### Example 2: List attendance records of a webinar session's attendance report
+
+#### Request
+
+The following is an example of a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_virtualeventsession_record"
+}
+-->
+``` http
+GET /solutions/virtualEvents/webinars/f8ce2a5f-0e6a-4186-aa90-1f64bc023566@5466a424-aadf-425c-9b24-034ca28d4bdd/sessions/8d62dd52-4dff-4c75-96a9-f905cc3ff942/attendanceReports/b76965d4-0763-496e-9980-b323c5f3aa3b/attendancerecords
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.attendanceRecord)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/virtualEvents/webinars('f8ce2a5f-0e6a-4186-aa90-1f64bc023566@5466a424-aadf-425c-9b24-034ca28d4bdd')/sessions('8d62dd52-4dff-4c75-96a9-f905cc3ff942')/attendanceReports('b76965d4-0763-496e-9980-b323c5f3aa3b')/attendancerecords",
+   "value": [
+    {
+      "emailAddress": "frederick.cormier@contoso.com",
+      "totalAttendanceInSeconds": 322,
+      "role": "Organizer",
+      "registrantId": null,
+      "identity": {
+        "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4623",
+        "displayName": "Frederick Cormier",
+        "tenantId": null
+      },
+      "attendanceIntervals": [
+        {
+          "joinDateTime": "2021-10-05T04:38:27.6027225Z",
+          "leaveDateTime": "2021-10-05T04:43:49.7702391Z",
+          "durationInSeconds": 322
+        }
+      ]
+    },
+    {
+      "emailAddress": "lisa.adkins@contoso.com",
+      "totalAttendanceInSeconds": 314,
+      "role": "Presenter",
+      "registrantId": null,
       "identity": {
         "id": "57caaef9-5ed0-48d5-8862-e5abfa71b3e9",
         "displayName": "Lisa Adkins",
