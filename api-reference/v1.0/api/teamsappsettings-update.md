@@ -124,7 +124,7 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-The following is an example of the request.
+The following example shows the request.
 
 <!-- {
   "blockType": "request",
