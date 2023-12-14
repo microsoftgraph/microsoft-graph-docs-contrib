@@ -16,6 +16,10 @@ In addition, find out about new documentation and learning resources for release
 
 ## December 2023: New in preview only
 
+### Device and app management | Cloud PC
+
+Use the **errorMessage** property in the [cloudPcPartnerAgentInstallResult](/graph/api/resources/cloudpcpartneragentinstallresult) to access a detailed error message for instances where the installation of a partner agent on a Cloud PC fails.
+
 ### Employee experience | Employee engagement
 Create and get a Viva Engage community that is a central place for conversations, files, events, and updates for people sharing a common interest or goal. Use the Viva Engage API for the following scenarios:
 
