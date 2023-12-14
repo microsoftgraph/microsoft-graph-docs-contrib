@@ -1586,8 +1586,7 @@
           "Id": "09e85d0c-2551-40e7-a037-1f36fade0b07",
           "ApiChange": "Method",
           "ChangedApiName": "GET",
-          "ChangeType": "Addition",
-          "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/userteamwork-get?view=graph-rest-beta) operation to the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userTeamwork?view=graph-rest-beta) resource.",
+          "ChangeType": "Addition",          "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/userteamwork-get?view=graph-rest-beta) operation to the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userteamwork?view=graph-rest-beta) resource.",
           "Target": "userTeamwork"
         },
         {
@@ -1645,7 +1644,7 @@
         "ChangeType": "Addition",
             "Description": "Added the **region** property to the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userTeamwork?view=graph-rest-beta) resource.",
     "Target": "userTeamwork"
-      },  
+      }
       ],
       "Id": "9f5e8734-31a1-4609-8c8c-590fe58e2852",
       "Cloud": "Prod",
