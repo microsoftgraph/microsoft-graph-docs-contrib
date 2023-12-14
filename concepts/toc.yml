@@ -11,8 +11,25 @@ items:
         href: overview.md
       - name: Services in Microsoft Graph
         href: overview-major-services.md
-      - name: Common integration patterns with Microsoft Graph
-        href: integration-patterns-overview.md
+      - name: Plan and design
+        expanded: true
+        items:
+          - name: Common integration patterns with Microsoft Graph
+            href: integration-patterns-overview.md
+            expanded: true
+            items:
+              - name: Analyze Microsoft Graph data in your data storage
+                href: analyze-storage-data.md
+              - name: Build interactive apps with APIs and webhooks
+                href: interactive-app-with-change-notifications-via-webhooks.md
+              - name: Build interactive apps using Microsoft Graph APIs
+                href: interactive-applications.md
+              - name: Get push notifications for data changes using Microsoft Graph
+                href: observe-events-and-changes-in-your-data.md
+              - name: Observe notifications about changes in your data in pull mode
+                href: observe-events-via-event-hubs.md
+              - name: Use Microsoft Graph to augment the search experience with custom data
+                href: augment-search-experience-with-custome-data.md
       - name: What's new
         expanded: true
         items:
