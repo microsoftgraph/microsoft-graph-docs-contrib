@@ -44,6 +44,8 @@ The following considerations support the use of this integration pattern:
 
 - **Solution complexity**: Although this solution might use the Microsoft Graph SDK, it still requires custom code to poll and process the data. If the data volume is large, sequential processing might not be sufficient, and parallel processing might be necessary. For this reason, this solution has a medium level of complexity.
 
-- [Best practices in cloud applications]([./../webhooks.md](https://learn.microsoft.com/en-us/azure/architecture/best-practices/index-best-practices))
+## See also
+
+- [Best practices in cloud applications](/azure/architecture/best-practices/index-best-practices)
 - [Microsoft Graph fundamentals](/training/basics-learn-graph)
 
