@@ -27,9 +27,9 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id| string | The default teamwork identifier. |
-|isTeamsEnabled | boolean  | Represents the Microsoft Teams enablement status for the organization. |  
-| region | string  | Represents the region of the organization.|
+|id|string|The default teamwork identifier.|
+|isTeamsEnabled|boolean|Represents the Microsoft Teams enablement status for the organization.|  
+|region|string|Represents the region of the organization.|
 
 ## Relationships
 | Relationship | Type | Description |
