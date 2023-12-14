@@ -22,9 +22,9 @@ The following diagram shows the architecture for this solution.
 
 ![mgdc](.././images/graph-arc-center/connectors.png)
 
-## Components
+## Solution components
 
-The architecture uses the following components:
+The solution architecture includes the following components:
 
 - Microsoft Graph Data Connect, which enables extracting Microsoft 365 data at scale with granular data consent, and supports all Azure-native service capabilities such as encryption, geo-fencing, auditing, and policy enforcement.
 - Azure Data Factory (ADF), which allows easy construction of ETL (extract, transform, and load) and ELT (extract, load, and transform) processes code-free in an intuitive environment, or writing your code.
