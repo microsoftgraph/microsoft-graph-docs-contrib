@@ -22,7 +22,7 @@ Describes installation results for a partner agent on a Cloud PC.
 |errorMessage|String|Indicates a detailed error message when the partner agent installation fails.|
 |installStatus|[cloudPcPartnerAgentInstallStatus](#cloudpcpartneragentinstallstatus-values)|The status of a partner agent installation. Possible values are: `installed`, `installFailed`, `installing`, `uninstalling`, `uninstallFailed`, `licensed`, `unknownFutureValue`. Read-Only.|
 |isThirdPartyPartner|Boolean|Indicates if the partner agent is a third party. If `true`, the agent is a third-party (non-Microsoft) agent; otherwise, the agent is a Microsoft agent or isn't known. The default value is `false`.|
-|partnerAgentName|[cloudPcPartnerAgentName](#cloudpcpartneragentname-values)|The name of the first-party or third-party partner agent. Possible values for third-party partners are `Citrix`, `VMware` and `HP`. Read-Only.|
+|partnerAgentName|[cloudPcPartnerAgentName](#cloudpcpartneragentname-values)|The name of the first-party or third-party partner agent. Possible values for third-party partners are `citrix`, `unknownFutureValue`, `vMware`, `hp`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `vMware`, `hp`. Read-Only.|
 |retriable|Boolean|Indicates if the partner agent is a third party. If `true` the agent is a third-party (non-Microsoft) agent; otherwise, the agent is a Microsoft agent or isn't known. The default value is `false`.|
 
 ### cloudPcPartnerAgentName values
