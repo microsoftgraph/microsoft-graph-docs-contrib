@@ -20,14 +20,14 @@ The best choice for this application is to use Microsoft Graph RESTful HTTP APIs
 
 The following diagram shows the architecture for this solution.
 
-![A diagram that shows a third-party app authenticating with Microsoft Entra and communicating with Microsoft Graph APIs, which interact via HTTP with apps such as Teams, Planner, OneDrive, and SharePoint.](.././images/graph-arc-center/webAppAPI.png)
+![A diagram that shows a third-party app authenticating with Microsoft Entra ID and communicating with Microsoft Graph APIs, which interact via HTTP with apps such as Teams, Planner, OneDrive, and SharePoint.](.././images/graph-arc-center/webAppAPI.png)
 
 ## Solution components
 
 The solution architecture includes the following components:
 
 - Azure App Service, which lets you build and host web apps, mobile backends, and RESTful APIs in your preferred programming language, without managing infrastructure. It offers auto-scaling and high availability, supports both Windows and Linux, and enables automated deployments from GitHub, Azure DevOps, or any Git repo.
-- Microsoft Entra is required to manage authentication for Microsoft Graph APIs and supports delegated and application permissions to enable OAuth flow.
+- Microsoft Entra ID is required to manage authentication for Microsoft Graph APIs and supports delegated and application permissions to enable OAuth flow.
 - SQL Database is used to store application data and state; this component is optional.
 - Microsoft Graph RESTful APIs, accessed via a single endpoint: `https://graph.microsoft.com`.
 - An app that implements custom logic.
