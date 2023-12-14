@@ -11,17 +11,17 @@ author: "PaulEkirapa"
 
 Namespace: microsoft.graph
 
-Represents information published by a federated service that describes a nontransient, service specific error for the [user](user.md), [group](group.md), or [organizational contact](orgcontact.md) entities regarding the properties or links of objects(for example user memberships). These errors are represented as an xml string.
+Represents information that is published by a federated service and describes a nontransient, service specific error that requires an explicit administrator action to resolve. These errors are reported as an xml string on the [user](user.md), [group](group.md), or [organizational contact](orgcontact.md) entities.
 
 Inherits from [serviceProvisioningError](../resources/serviceprovisioningerror.md).
 
 ## Properties
 
-| Property        | Type           | Description                                                                                          |
-| :-------------- | :------------- | :--------------------------------------------------------------------------------------------------- |
-| createdDateTime | DateTimeOffset | The date and time at which the error occurred.                                                       |
-| errorDetail     | String         | Error Information published by the Federated Service as an xml string .                              |
-| isResolved      | Boolean        | Indicates whether the Error has been attended to.                                                    |
+| Property        | Type           | Description                                                                                                |
+| :-------------- | :------------- | :--------------------------------------------------------------------------------------------------------- |
+| createdDateTime | DateTimeOffset | The date and time at which the error occurred.                                                             |
+| errorDetail     | String         | Error Information published by the Federated Service as an xml string.                                     |
+| isResolved      | Boolean        | Indicates whether the Error has been attended to.                                                          |
 | serviceInstance | String         | Qualified service instance (for example "SharePoint/Dublin") that published the service error information. |
 
 ## JSON representation
