@@ -24,7 +24,7 @@ The following diagram shows the architecture for this mobile app with a WebSocke
 
 ## Solution components
 
-The architecture uses the following components:
+The solution architecture includes the following components:
 
 - Microsoft Entra, which is required to manage authentication for the Microsoft Graph APIs and supports delegated and application permissions to enable OAuth flow.
 - Microsoft Graph notification services, which manages notification subscriptions and delivers change notifications to client apps.
