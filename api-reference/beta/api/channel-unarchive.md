@@ -17,7 +17,7 @@ Restore an archived [channel](../resources/channel.md). Unarchiving restores the
 
 Unarchiving is an asynchronous operation; a channel is unarchived once the asynchronous unarchive operation completes successfully, which might occur after this method responds.
 
-> **Note**: An archived channel that belongs to an archived team cannot be unarchived. Unarchive the team before attempting to unarchinve the channel, otherwise an error will occur.
+> **Note**: An archived channel that belongs to an archived team cannot be unarchived. Unarchive the team before attempting to unarchive the channel, otherwise an error will occur.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
