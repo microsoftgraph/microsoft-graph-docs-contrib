@@ -20,7 +20,7 @@ The best integration option for this app is to use the Pub/Sub integration patte
 
 A simple **reference architecture** for a webhook is:
 
-![eventHub](.././images/graph-arc-center/EventHubs.svg)
+![eventHub](.././images/graph-arc-center/EventHubs.png)
 
 ## Components
 
