@@ -29,7 +29,7 @@ The architecture uses the following components:
 - Microsoft Graph Data Connect, which enables extracting Microsoft 365 data at scale with granular data consent, and supports all Azure-native service capabilities such as encryption, geo-fencing, auditing, and policy enforcement.
 - Azure Data Factory (ADF), which allows easy construction of ETL (extract, transform, and load) and ELT (extract, load, and transform) processes code-free in an intuitive environment, or writing your code.
 - Azure Data Lake, which lets you persist large amounts of structured and unstructured data in different formats.
-- Azure Active Directory, which is required to manage authentication for the Microsoft Graph APIs and supports delegated and application permissions to enable OAuth flow.
+- Microsoft Entra, which is required to manage authentication for the Microsoft Graph APIs and supports delegated and application permissions to enable OAuth flow.
 
 ## Considerations
 
