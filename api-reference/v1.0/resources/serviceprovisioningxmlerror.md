@@ -1,6 +1,6 @@
 ---
 title: "serviceProvisioningXmlError resource type"
-description: "Represents information published by a federated service describing a non-transient, service-specific error regarding the properties or link from an object that are represented as an xml string"
+description: "Represents information published by a federated service describing a nontransient, service-specific error regarding the properties or link from an object that is represented as an xml string"
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "directory-management"
@@ -21,7 +21,7 @@ Inherits from [serviceProvisioningError](../resources/serviceprovisioningerror.m
 | :-------------- | :------------- | :--------------------------------------------------------------------------------------------------------- |
 | createdDateTime | DateTimeOffset | The date and time at which the error occurred.                                                             |
 | errorDetail     | String         | Error Information published by the Federated Service as an xml string.                                     |
-| isResolved      | Boolean        | Indicates whether the Error has been attended to.                                                          |
+| isResolved      | Boolean        | Indicates whether the error is resolved.                                                                   |
 | serviceInstance | String         | Qualified service instance (for example "SharePoint/Dublin") that published the service error information. |
 
 ## JSON representation
