@@ -25,9 +25,9 @@ A container for the range of Microsoft Teams functionalities that are available 
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-|id| string | The default userTeamwork identifier. |
-|locale | string  | Represents the chosen locale of a user in Microsoft Teams.|  
-| region | string  | Represents the region of the user in Microsoft Teams.|
+|id| string|The default userTeamwork identifier.|
+|locale|string |Represents the chosen locale of a user in Microsoft Teams.|  
+|region |string|Represents the region of the user in Microsoft Teams.|
 
 ## Relationships
 
