@@ -1,12 +1,11 @@
 ---
-title: "Observe notifications about changes in your data in pull mode"
-description: "Microsoft Graph integration pattern for event-based solutions that rely on change notifications in pull mode."
+title: "Get pull notifications for data changes by using Microsoft Graph"
+description: "Learn about the Microsoft Graph integration pattern for event-based solutions that rely on change notifications in pull mode."
 author: "OlgaPodo"
 ms.localizationpriority: low
 ---
 
-# Observe events via Event Hubs
-
+# Get pull notifications for data changes by using Microsoft Graph
 A **business scenario** requires a security analysis of collaboration content to prevent unsafe or inappropriate sharing, transfer, or use of sensitive data, such as in Data Loss Prevention (DLP) scenarios.
 
 This business scenario describes a non-interactive use case that requires a data feed of changes triggered by users interacting with various messaging systems. It doesn’t rely on Microsoft 365 functional behavior needs only data, and has the following **architecturally significant requirements**:
