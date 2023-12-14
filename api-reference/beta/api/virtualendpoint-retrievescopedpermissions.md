@@ -1,6 +1,6 @@
 ---
 title: "virtualEndpoint: retrieveScopedPermissions"
-description: "Get the permissions and corresponding scope IDs for which the authenticated user's has access."
+description: "Get the permissions and corresponding scope IDs for which the authenticated user has access."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the permissions and corresponding scope IDs for which the authenticated user's has access.
+Get the permissions and corresponding scope IDs for which the authenticated user has access.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -50,12 +50,14 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a collection of [cloudPcScopedPermission](../resources/cloudpcscopedpermission.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and a collection of [cloudPcScopedPermission](../resources/cloudpcscopedpermission.md) objects in the response body.
 This API supports filter with permission, when no filter, this function returns all permissions and scope Tag IDs of the authenticated user.
 
-## Examples 1
+## Examples
 
-### Request
+### Example 1: 
+
+#### Request
 
 The following example shows a request.
 
@@ -69,7 +71,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/retrieveScopedPermissions
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -109,9 +111,9 @@ Content-Type: application/json
 }
 ```
 
-## Examples 2
+### Example 2:
 
-### Request
+#### Request
 
 The following example shows a request with a filter.
 
@@ -125,7 +127,7 @@ The following example shows a request with a filter.
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/retrieveScopedPermissions?$filter=permission in ('Microsoft.CloudPC/ProvisioningPolicies/Update','Microsoft.CloudPC/ProvisioningPolicies/Create')
 ```
 
-### Response
+#### Response
 
 The following example shows a response.
 
@@ -157,9 +159,9 @@ Content-Type: application/json
 }
 ```
 
-## Examples 3
+### Example 3:
 
-### Request
+#### Request
 
 When the logged-in user has the Microsoft Entra Global admin role, the Windows 365 admin role, or the Intune admin role assigned by Microsoft Entra ID, the returned permission is *\**, and no scope IDs are returned. In these cases, queries aren't supported.
 
@@ -173,7 +175,7 @@ When the logged-in user has the Microsoft Entra Global admin role, the Windows 3
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/retrieveScopedPermissions
 ```
 
-### Response
+#### Response
 
 The following example shows a response.
 
