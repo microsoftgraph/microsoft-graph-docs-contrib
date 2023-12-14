@@ -16,6 +16,8 @@ Get the list of [callRecording](../resources/callrecording.md) objects associate
 > [!NOTE]
 > This API works differently in one or more national clouds. For details, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. For more information, including how to choose permissions, see [permissions](/graph/permissions-reference).
@@ -97,6 +99,10 @@ GET  https://graph.microsoft.com/v1.0/users/b935e675-5e67-48b9-8d45-249d5f88e964
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-callrecordings-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-callrecordings-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -16,7 +16,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-requestFilter := "microsoft.graph.countryNamedLocation/countriesAndRegions/any"
+requestFilter := "microsoft.graph.countryNamedLocation/countriesAndRegions/any(c: c eq 'CA')"
 
 requestParameters := &graphidentity.IdentityConditionalAccessNamedLocationsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,

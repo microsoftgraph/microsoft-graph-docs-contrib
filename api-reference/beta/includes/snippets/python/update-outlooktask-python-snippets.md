@@ -15,12 +15,9 @@ request_body = OutlookTask(
 	),
 )
 
-request_configuration = OutlookTaskItemRequestBuilder.OutlookTaskItemRequestBuilderPatchRequestConfiguration(
-headers = {
-		'Prefer' : "outlook.timezone=\"Eastern Standard Time\"",
-}
+request_configuration = OutlookTaskItemRequestBuilder.OutlookTaskItemRequestBuilderPatchRequestConfiguration()
+request_configuration.headers.add("Prefer", "outlook.timezone=\"Eastern Standard Time\"")
 
-)
 
 result = await graph_client.me.outlook.tasks.by_outlook_task_id('outlookTask-id').patch(request_body, request_configuration = request_configuration)
 

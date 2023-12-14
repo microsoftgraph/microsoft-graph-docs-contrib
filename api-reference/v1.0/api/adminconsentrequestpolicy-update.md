@@ -20,7 +20,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "adminconsentrequestpolicy_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/adminconsentrequestpolicy-update-permissions.md)]
 
-When calling on behalf of a user, the user needs to belong to the [Global Administrator](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json) directory role.
+When calling on behalf of a user, the user needs to belong to the [Global Administrator](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) directory role.
 
 ## HTTP request
 
