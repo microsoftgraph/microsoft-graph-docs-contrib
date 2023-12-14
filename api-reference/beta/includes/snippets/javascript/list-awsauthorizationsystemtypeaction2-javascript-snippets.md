@@ -1,0 +1,18 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```javascript
+
+const options = {
+	authProvider,
+};
+
+const client = Client.init(options);
+
+let actions = await client.api('/external/authorizationSystems/{id}/microsoft.graph.awsAuthorizationSystem/actions')
+	.version('beta')
+	.filter('service/id eq \'ec2\'')
+	.get();
+
+```

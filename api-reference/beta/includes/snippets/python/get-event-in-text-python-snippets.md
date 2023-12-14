@@ -14,11 +14,9 @@ query_params = EventItemRequestBuilder.EventItemRequestBuilderGetQueryParameters
 
 request_configuration = EventItemRequestBuilder.EventItemRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
-headers = {
-			'Prefer' : "outlook.body-content-type=\"text\"",
-}
-
 )
+request_configuration.headers.add("Prefer", "outlook.body-content-type=\"text\"")
+
 
 result = await graph_client.me.events.by_event_id('event-id').get(request_configuration = request_configuration)
 

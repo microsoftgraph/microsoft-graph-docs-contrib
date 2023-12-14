@@ -10,7 +10,7 @@ graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = ListItemRequestBuilder.ListItemRequestBuilderGetQueryParameters(
 		select = ["name","lastModifiedDateTime"],
-		expand = ["columns(select=name,description)","items",")"],
+		expand = ["columns(select=name,description)","items(expand=fields(select=Name,Color,Quantity)",")"],
 )
 
 request_configuration = ListItemRequestBuilder.ListItemRequestBuilderGetRequestConfiguration(

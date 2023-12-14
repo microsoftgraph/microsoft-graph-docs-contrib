@@ -41,6 +41,22 @@ var requestBody = new AlertRule
 			},
 		},
 	},
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"conditions" , new List<object>
+			{
+				new 
+				{
+					RelationshipType = "or",
+					ConditionCategory = "azureNetworkConnectionCheckFailures",
+					Aggregation = "count",
+					Operator = "greaterOrEqual",
+					ThresholdValue = "90",
+				},
+			}
+		},
+	},
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

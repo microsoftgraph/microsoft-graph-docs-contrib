@@ -26,7 +26,7 @@ Service communications API also apply the role-based access control (RBAC) to id
 
 For more information about the Microsoft Entra administrator roles, see:
 * [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles)
-* [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json)
+* [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json)
 * [Roles in Microsoft 365, including Microsoft Entra ID, service-specific and cross-service roles](/azure/active-directory/roles/concept-understand-roles#how-azure-ad-roles-are-different-from-other-microsoft-365-roles) 
 
 

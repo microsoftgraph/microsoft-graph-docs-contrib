@@ -32,6 +32,10 @@ offerShiftRequestsEnabled := true
 requestBody.SetOfferShiftRequestsEnabled(&offerShiftRequestsEnabled) 
 timeOffRequestsEnabled := true
 requestBody.SetTimeOffRequestsEnabled(&timeOffRequestsEnabled) 
+startDayOfWeek := graphmodels.TUESDAY_DAYOFWEEK 
+requestBody.SetStartDayOfWeek(&startDayOfWeek) 
+activitiesIncludedWhenCopyingShiftsEnabled := true
+requestBody.SetActivitiesIncludedWhenCopyingShiftsEnabled(&activitiesIncludedWhenCopyingShiftsEnabled) 
 timeClockEnabled := true
 requestBody.SetTimeClockEnabled(&timeClockEnabled) 
 timeClockSettings := graphmodels.NewTimeClockSettings()
