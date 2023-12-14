@@ -24,7 +24,7 @@ The following diagram shows the architecture for this solution.
 
 ## Solution components
 
-The architecture uses the following components:
+The solution architecture includes the following components:
 
 - Azure App Service, which lets you build and host web apps, mobile backends, and RESTful APIs in your preferred programming language, without managing infrastructure. It offers auto-scaling and high availability, supports both Windows and Linux, and enables automated deployments from GitHub, Azure DevOps, or any Git repo.
 - Microsoft Entra is required to manage authentication for Microsoft Graph APIs and supports delegated and application permissions to enable OAuth flow.
