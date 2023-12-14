@@ -1,6 +1,6 @@
 ---
 title: "bookingAppointment resource type"
-description: " "Represents a customer appointment for a bookingService, performed by a set of staff members, provided by a Microsoft Bookings business."
+description: "Represents a customer appointment for a bookingService, performed by a set of staff members, provided by a Microsoft Bookings business."
 ms.localizationpriority: Normal
 author: "arvindmicrosoft"
 ms.prod: "bookings"
@@ -40,7 +40,8 @@ Represents a customer appointment for a [bookingService](bookingservice.md), per
 |customerName|String|The customer's name.|
 |customerNotes|String|Notes from the customer associated with this appointment. You can get the value only when reading this **bookingAppointment** by its ID. <br> You can set this property only when initially creating an appointment with a new customer. After that point, the value is computed from the customer represented by **customerId**.|
 |customerPhone|String|The customer's phone number.|
-|customers|[bookingCustomerInformation](../resources/bookingcustomerinformation.md) collection|A collection of the customer properties for an appointment. An appointment will contain a list of customer information and each unit will indicate the properties of a customer who is part of that appointment. Optional.||customerTimeZone|String|The time zone of the customer. For a list of possible values, see [dateTimeTimeZone](datetimetimezone.md).|
+|customers|[bookingCustomerInformation](../resources/bookingcustomerinformation.md) collection|A collection of the customer properties for an appointment. An appointment will contain a list of customer information and each unit will indicate the properties of a customer who is part of that appointment. Optional.|
+|customerTimeZone|String|The time zone of the customer. For a list of possible values, see [dateTimeTimeZone](datetimetimezone.md).|
 |duration|Duration|The length of the appointment, denoted in [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html) format. |
 |end|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the appointment ends.|
 |filledAttendeesCount|Int32|The current number of customers in the appointment.|
