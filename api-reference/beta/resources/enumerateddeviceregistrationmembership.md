@@ -18,14 +18,14 @@ Indicates that this device registration policy applies to the enumerated users a
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|groups|String collection|List of users that this policy applies to.|
-|users|String collection|List of groups that this policy applies to.|
+|groups|String collection|List of groups that this policy applies to.|
+|users|String collection|List of users that this policy applies to.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.enumeratedDeviceRegistrationMembership"
