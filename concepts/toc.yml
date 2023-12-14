@@ -25,11 +25,11 @@ items:
               - name: Build interactive apps using Microsoft Graph APIs
                 href: interactive-applications.md
               - name: Get push notifications for data changes using Microsoft Graph
-                href: observe-events-and-changes-in-your-data.md
+                href: notifications-in-push-mode.md
               - name: Observe notifications about changes in your data in pull mode
-                href: observe-events-via-event-hubs.md
+                href: notifications-in-pull-mode.md
               - name: Use Microsoft Graph to augment the search experience with custom data
-                href: augment-search-experience-with-custome-data.md
+                href: augment-search-experience-with-custom-data.md
       - name: What's new
         expanded: true
         items:
