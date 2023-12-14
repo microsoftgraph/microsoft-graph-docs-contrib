@@ -48,12 +48,9 @@ request_body = ExtractContentLabelPostRequestBody(
 	),
 )
 
-request_configuration = ExtractContentLabelRequestBuilder.ExtractContentLabelRequestBuilderPostRequestConfiguration(
-headers = {
-		'User-Agent' : "ContosoLOBApp/1.0",
-}
+request_configuration = ExtractContentLabelRequestBuilder.ExtractContentLabelRequestBuilderPostRequestConfiguration()
+request_configuration.headers.add("User-Agent", "ContosoLOBApp/1.0")
 
-)
 
 result = await graph_client.users.by_user_id('user-id').security.information_protection.sensitivity_labels.microsoft_graph_security_extract_content_label.post(request_body, request_configuration = request_configuration)
 

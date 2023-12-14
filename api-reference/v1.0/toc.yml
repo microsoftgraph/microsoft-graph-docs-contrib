@@ -24,7 +24,7 @@ items:
             href: /graph/permissions-reference?context=graph/api/1.0
           - name: Microsoft Entra built-in roles
             displayName: Microsoft Graph permissions
-            href: /azure/active-directory/roles/permissions-reference?toc=/graph/toc.json
+            href: /entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json
       - name: Manage app access (CSPs)
         href: /graph/auth-cloudsolutionprovider?context=graph/api/1.0
       - name: Limit mailbox access

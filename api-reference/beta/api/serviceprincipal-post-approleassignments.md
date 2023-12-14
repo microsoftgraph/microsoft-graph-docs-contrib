@@ -23,7 +23,7 @@ To grant an app role assignment to a client service principal, you need three id
 - `resourceId`: The `id` of the resource `servicePrincipal` (the API) which has defined the app role (the application permission).
 - `appRoleId`: The `id` of the `appRole` (defined on the resource service principal) to assign to the client service principal.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -35,6 +35,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | AppRoleAssignment.ReadWrite.All and Application.Read.All, AppRoleAssignment.ReadWrite.All and Directory.Read.All |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | AppRoleAssignment.ReadWrite.All and Application.Read.All, AppRoleAssignment.ReadWrite.All and Directory.Read.All |
+
+[!INCLUDE [rbac-approleassignments-apis-write](../includes/rbac-for-apis/rbac-approleassignments-apis-write.md)]
 
 ## HTTP request
 

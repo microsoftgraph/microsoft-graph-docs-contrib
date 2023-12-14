@@ -8,7 +8,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.prod: "applications"
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 10/26/2023
+ms.date: 12/01/2023
 ---
 
 # Microsoft Graph permissions reference
@@ -6107,8 +6107,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 ## Delegated permissions supported for personal Microsoft accounts (MSA)
 
 [!INCLUDE [permissions-msa](../includes/permissions-notes/permissions-msa.md)]
-
----
 
 ## Resource-specific consent (RSC) permissions
 

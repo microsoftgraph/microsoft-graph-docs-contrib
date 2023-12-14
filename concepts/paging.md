@@ -1,8 +1,6 @@
 ---
 title: "Paging Microsoft Graph data in your app "
 description: "Use data in the odata.nextLink property in the response to retrieve the next page of results. "
-author: "FaithOmbongi"
-ms.author: ombongifaith
 ms.reviewer: dkershaw
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started

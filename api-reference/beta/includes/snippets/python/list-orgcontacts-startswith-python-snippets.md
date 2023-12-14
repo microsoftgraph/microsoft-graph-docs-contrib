@@ -17,11 +17,9 @@ query_params = ContactsRequestBuilder.ContactsRequestBuilderGetQueryParameters(
 
 request_configuration = ContactsRequestBuilder.ContactsRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
-headers = {
-			'ConsistencyLevel' : "eventual",
-}
-
 )
+request_configuration.headers.add("ConsistencyLevel", "eventual")
+
 
 result = await graph_client.contacts.get(request_configuration = request_configuration)
 
