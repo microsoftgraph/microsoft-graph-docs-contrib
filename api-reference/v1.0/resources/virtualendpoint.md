@@ -1,6 +1,6 @@
 ---
 title: "virtualEndpoint resource type"
-description: "Represents a container for Cloud PC management functionality."
+description: "Represents a container for APIs to manage Cloud PCs."
 author: "RuiHou105"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -19,11 +19,12 @@ Use the Cloud PC API to provision and manage virtual desktops for employees in a
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier (ID) for virtual endpoint. Read-only.|
+|id|String|The unique identifier (ID) for the virtual endpoint. Read-only.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -35,6 +36,6 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.virtualEndpoint",
-  "id": "string"
+  "id": "String"
 }
 ```
