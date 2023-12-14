@@ -49,13 +49,13 @@ To explore each of the integration options in more detail, see the following top
 
 - [Interactive applications](./patterns/interactive-applications.md)
 
-- [Augment search experiences](./patterns/augment-search-experience-with-customer-data.md)
+- [Augment search experiences](./patterns/augment-search-experience-with-custom-data.md)
 
-- [Analyze Microsoft Graph data](./patterns/analyze-graph-data-in-your-data-storage.md)
+- [Analyze Microsoft Graph data](./patterns/analyze-storage-data.md)
   
-- [Receive notifications via WebHooks (push)](./patterns/observe-events-and-changes-in-your-data.md)
+- [Receive notifications via WebHooks (push)](./patterns/notifications-in-push-mode.md)
 
-- [Observe events via Azure Event Hubs (pull)](./patterns/observe-events-via-event-hubs.md)
+- [Observe events via Azure Event Hubs (pull)](./patterns/notifications-in-pull-mode.md)
 
 - [Interactive app with notifications](./patterns/interactive-app-with-change-notifications-via-webhooks.md)
 
