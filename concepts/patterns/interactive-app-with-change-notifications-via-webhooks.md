@@ -22,28 +22,30 @@ The following diagram shows the architecture for this mobile app with a WebSocke
 
 ![A diagram that shows how the Microsoft Graph notification service interacts with Exchange, Microsoft Graph REST APIs, an app with webhook, and Microsoft Entra for authentication](.././images/graph-arc-center/HybridAPIWebhooks.png)
 
-## Components
+## Solution components
 
 The architecture uses the following components:
 
-- Azure Active Directory, which is required to manage authentication for the Microsoft Graph APIs and supports delegated and application permissions to enable OAuth flow.
-- Microsoft Graph Notification Services, which manages notification subscriptions and delivers change notifications to client apps.
-- Microsoft Graph AGS, which is a single gateway, https://graph.microsoft.com, to access Graph RESTful HTTP APIs.
-- Custom Mobile App, which implements custom logic, and webhooks and communicates with the Microsoft Graph platform. 
+- Microsoft Entra, which is required to manage authentication for the Microsoft Graph APIs and supports delegated and application permissions to enable OAuth flow.
+- Microsoft Graph notification services, which manages notification subscriptions and delivers change notifications to client apps.
+- Microsoft Graph RESTful APIs that are accessed via a single endpoint, `https://graph.microsoft.com`.
+- A custom mobile app that implements custom logic and webhooks and communicates with Microsoft Graph. 
 
 ## Considerations
 
-**Availability**: The custom app should be highly available on the edge device and can support an offline mode when there is no reliable internet connection.
+The following considerations support the use of this integration pattern:
 
-**Latency**: Microsoft Graph RESTful HTTP APIs usually respond within a second, but the overall latency depends on the internet connection speed. Microsoft Graph notifications are generated within seconds after the change, but their delivery depends on internet connection, mobile vendor SLAs, and webhook availability.
+- **Availability**: The custom app should be highly available on the edge device and can support an offline mode whena reliable internet connection isn't available.
 
-**Scalability**: Microsoft Graph services are highly scalable, geo-distributed, and support requests and notifications for millions of clients.
+- **Latency**: Microsoft Graph RESTful HTTP APIs usually respond within a second, but the overall latency depends on the internet connection speed. Microsoft Graph notifications are generated within seconds after the change, but their delivery depends on internet connection, mobile vendor SLAs, and webhook availability.
 
-**Solution complexity**: This solution requires custom code to orchestrate APIs, maintain notification subscriptions, and receive change notifications via webhooks. While this solution doesn’t require elasticity, it needs to support users under different network conditions and potentially handle a burst of change notifications. We consider this solution highly complex.
+- **Scalability**: Microsoft Graph services are highly scalable, geo-distributed, and support requests and notifications for millions of clients.
+
+- **Solution complexity**: This solution requires custom code to orchestrate APIs, maintain notification subscriptions, and receive change notifications via webhooks. Although this solution doesn't require elasticity, it needs to support users under different network conditions and potentially handle a burst of change notifications. Therefore, this solution is highly complex.
 
 ## See also
 
 - [Best practices in cloud applications]([./../webhooks.md](https://learn.microsoft.com/en-us/azure/architecture/best-practices/index-best-practices))
-- [Training: use change notifications and track changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges)
+- [Training: Use change notifications and track changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges)
 - [Microsoft Graph fundamentals](/training/basics-learn-graph)
 
