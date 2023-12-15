@@ -48,18 +48,12 @@ Many business scenarios require multiple integration building blocks to implemen
 
 To explore each of the integration options in more detail, see the following topics:
 
-- [Build interactive applications](./patterns/interactive-applications.md)
-
-- [Augment search experiences](./patterns/augment-search-experience-with-custom-data.md)
-
-- [Analyze Microsoft Graph data](./patterns/analyze-storage-data.md)
-  
-- [Get push notifications via webhooks](./patterns/notifications-in-push-mode.md)
-
-- [Get pull notifications](./patterns/notifications-in-pull-mode.md)
-
-- [Build interactive apps with change notifications](./patterns/interactive-app-with-change-notifications-via-webhooks.md)
-
+- [Extract data for analysis](./patterns/analyze-storage-data.md)
+- [Build interactive apps](./patterns/interactive-applications.md)
+- [Build interactive apps with real-time feed](./patterns/interactive-app-with-change-notifications-via-webhooks.md) 
+- [Get real-time data updates](./patterns/notifications-in-push-mode.md)
+- [Retrieve events at your speed](./patterns/notifications-in-pull-mode.md)
+- [Augment Microsoft search](./patterns/augment-search-experience-with-custom-data.md)
 
 ## See also
 
