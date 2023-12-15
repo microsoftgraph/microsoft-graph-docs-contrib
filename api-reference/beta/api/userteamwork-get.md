@@ -1,5 +1,5 @@
 ---
-title: "Get Microsoft Teams settings for a user"
+title: "Get user teamTeamwork."
 description: "Get user teamwork settings for a user such as user locale and user region."
 author: "mea"
 ms.localizationpriority: high
