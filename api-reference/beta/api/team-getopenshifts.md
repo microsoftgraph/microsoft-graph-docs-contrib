@@ -94,50 +94,50 @@ Content-Type: application/json
     {
       "createdDateTime": "2019-03-14T04:32:51.451Z",
       "draftOpenShift": {
-          "activities": [
-              {
-                  "code": "Break",
-                  "displayName": "Lunch",
-                  "endDateTime": "2018-10-04T07:58:45.332Z",
-                  "isPaid": true,
-                  "startDateTime": "2018-10-04T00:58:45.340Z"
-              }
-          ],
-          "displayName": "Day shift",
-          "endDateTime": "2018-10-04T08:58:45.340Z",
-          "notes": "Inventory Management",
-          "openSlotCount": 3,
-          "startDateTime": "2018-10-04T00:58:45.332Z",
-          "theme": "white"
+        "activities": [
+          {
+            "code": "Break",
+            "displayName": "Lunch",
+            "endDateTime": "2018-10-04T07:58:45.332Z",
+            "isPaid": true,
+            "startDateTime": "2018-10-04T00:58:45.340Z"
+          }
+        ],
+        "displayName": "Day shift",
+        "endDateTime": "2018-10-04T08:58:45.340Z",
+        "notes": "Inventory Management",
+        "openSlotCount": 3,
+        "startDateTime": "2018-10-04T00:58:45.332Z",
+        "theme": "white"
       },
       "id": "OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",
       "lastModifiedBy": {
-          "application": null,
-          "conversation": null,
-          "device": null,
-          "user": {
-              "displayName": "John Doe",
-              "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8"
-          }
+        "application": null,
+        "conversation": null,
+        "device": null,
+        "user": {
+          "displayName": "John Doe",
+          "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8"
+        }
       },
       "lastModifiedDateTime": "2019-03-14T05:32:51.451Z",
       "schedulingGroupId": "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
       "sharedOpenShift": {
-          "activities": [
-              {
-                  "code": "",
-                  "displayName": "Lunch",
-                  "endDateTime": "2018-10-04T01:58:45.340Z",
-                  "isPaid": true,
-                  "startDateTime": "2018-10-04T00:58:45.340Z"
-              }
-          ],
-          "displayName": "Day shift",
-          "endDateTime": "2018-10-04T09:50:45.332Z",
-          "notes": "Inventory Management",
-          "openSlotCount": 2,
-          "startDateTime": "2018-10-04T00:58:45.340Z",
-          "theme": "white"
+        "activities": [
+          {
+            "code": "",
+            "displayName": "Lunch",
+            "endDateTime": "2018-10-04T01:58:45.340Z",
+            "isPaid": true,
+            "startDateTime": "2018-10-04T00:58:45.340Z"
+          }
+        ],
+        "displayName": "Day shift",
+        "endDateTime": "2018-10-04T09:50:45.332Z",
+        "notes": "Inventory Management",
+        "openSlotCount": 2,
+        "startDateTime": "2018-10-04T00:58:45.340Z",
+        "theme": "white"
       },
       "schedulingGroupName": "Cashiers",
       "teamId": "228940ed-ff84-4e25-b129-1b395cf78be0",
