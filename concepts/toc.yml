@@ -96,17 +96,17 @@ items:
         - name: Overview
           href: integration-patterns-overview.md
         - name: Analyze data
-          href: analyze-storage-data.md
+          href: patterns/analyze-storage-data.md
         - name: Build interactive apps change notifications
-          href: interactive-app-with-change-notifications-via-webhooks.md
+          href: patterns/interactive-app-with-change-notifications-via-webhooks.md
         - name: Build interactive apps with APIs
-          href: interactive-applications.md
+          href: patterns/interactive-applications.md
         - name: Get push notifications
-          href: notifications-in-push-mode.md
+          href: patterns/notifications-in-push-mode.md
         - name: Get pull notifications
-          href: notifications-in-pull-mode.md
+          href: patterns/notifications-in-pull-mode.md
         - name: Augment search
-          href: augment-search-experience-with-custom-data.md
+          href: patterns/augment-search-experience-with-custom-data.md
   - name: Learn
     expanded: true
     items:
