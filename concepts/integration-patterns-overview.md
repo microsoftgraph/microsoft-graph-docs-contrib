@@ -22,7 +22,7 @@ The following image shows the Microsoft Graph integration patterns, their associ
 
 The wide range of integration options can make it difficult to choose the best option for your needs. We recommend that you start with a business scenario and identify your functional and non-functional requirements. Then you can select an integration option based on those requirements.
 
-![Diagram of the analysis flow which starts with a business scenario, then the definition of architecture requirements, and then the selection of an integration option](./images/graph-arc-center/scenariorequirementssolution.jpg)
+![Diagram of the analysis flow which starts with a business scenario, then the definition of architecture requirements, and then the selection of an integration option](./images/scenariorequirementssolution.jpg)
 
 Based on many known scenarios in the Microsoft Graph ecosystem, we identified four architecture requirements that have a profound impact on the selection of integration options. These architectural significant requirements are:
 
