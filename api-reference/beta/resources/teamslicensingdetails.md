@@ -1,5 +1,5 @@
 ---
-title: "TeamsLicensingDetails resource type"
+title: "teamsLicensingDetails resource type"
 description: "A container where you can find all the different Microsoft Teams license details for each user in the tenant."
 author: "mea"
 doc_type: resourcePageType
@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 ---
 
-# TeamsLicensingDetails resource type
+# teamsLicensingDetails resource type
 
 Namespace: microsoft.graph
 

@@ -7,13 +7,13 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get Microsoft Teams settings for a user
+# Get user teamTeamwork
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [userTeamwork](../resources/userteamwork.md) settings for a specified [user](../resources/user.md), which includes the region on Microsoft Teams and the locale chosen by the user.
+Get the [userTeamwork](../resources/userteamwork.md) settings for a specified [user](../resources/user.md), which includes the Microsoft Teams region and the locale chosen by the user.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
