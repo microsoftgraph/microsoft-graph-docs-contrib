@@ -38,17 +38,20 @@ Inherits from [changeTrackedEntity](../resources/changetrackedentity.md).
 |isStagedForDeletion|Boolean|The open shift is marked for deletion which are finalized when the schedule is [shared](../api/schedule-share.md).|
 |lastModifiedBy|[identitySet](identityset.md)|Identity of the person who last modified the **openShift** object. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md).|
 |lastModifiedDateTime|DateTimeOffset|Date and time when the **openShift** was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md).|
-|schedulingGroupId|String|The ID of the schedule group the open shift is in.|
-|schedulingGroupName|String|The name of the scheduling group the open shift is in.|
+|schedulingGroupId|String|The ID of the scheduling group that contains the open shift.|
+|schedulingGroupName|String|The name of the scheduling group that contains the open shift.|
 |sharedOpenShift|[openShiftItem](../resources/openshiftitem.md)|Published changes in the open shift.|
-|teamId|String|The ID of the team the open shift is in.|
-|teamName|String|The name of the team the open shift is in.|
+|teamId|String|The ID of the team in which the open shift is located.|
+|teamName|String|The name of the team in which the open shift is located.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
