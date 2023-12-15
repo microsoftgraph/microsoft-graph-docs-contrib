@@ -26,15 +26,15 @@ items:
             href: integration-patterns-overview.md
           - name: Extract data for analysis
             href: patterns/analyze-storage-data.md
-          - name: Build interactive apps change notifications
+          - name: Build interactive apps
             href: patterns/interactive-app-with-change-notifications-via-webhooks.md
           - name: Build interactive apps with APIs
             href: patterns/interactive-applications.md
-          - name: Get push notifications
+          - name: Get real-time data updates
             href: patterns/notifications-in-push-mode.md
-          - name: Get pull notifications
+          - name: Retrieve events at your speed
             href: patterns/notifications-in-pull-mode.md
-          - name: Augment search
+          - name: Augment Microsoft search
             href: patterns/augment-search-experience-with-custom-data.md
       - name: Metered APIs
         items:
