@@ -104,83 +104,83 @@ items:
             - name: TypeScript
               href: /graph/tutorials/typescript-app-only
     - name: Use SDKs
-        items:
-          - name: Overview
-            href: sdks/sdks-overview.md
-            displayName: SDK, SDKs, Microsoft Graph SDK
-          - name: Install an SDK
-            href: sdks/sdk-installation.md
-            displayName: install SDK, install SDKs, installation
-          - name: Create a client
-            href: sdks/create-client.md
-          - name: Customize a client
-            href: sdks/customize-client.md
-          - name: Choose an authentication provider
-            href: sdks/choose-authentication-providers.md
-          - name: Connect to national clouds
-            href: sdks/national-clouds.md
-          - name: Create requests
-            href: sdks/create-requests.md
-          - name: Page through a collection
-            href: sdks/paging.md
-          - name: Create a batch request
-            href: sdks/batch-requests.md
-          - name: Upload large files
-            href: sdks/large-file-upload.md
-          - name: Use beta API
-            href: sdks/use-beta.md
-          - name: Use the connectors SDK
-            items:
-              - name: Overview
-                href: custom-connector-sdk-overview.md
-              - name: Contracts
-                items:
-                  - name: Services
-                    href: custom-connector-sdk-contracts-services.md
-                  - name: ConnectorInfo API
-                    href: custom-connector-sdk-contracts-connectorinfo.md
-                  - name: Connection management APIs
-                    href: custom-connector-sdk-contracts-connectionmanagement.md
-                  - name: Connector crawler APIs
-                    href: custom-connector-sdk-contracts-connectorcrawler.md
-                  - name: Connector OAuth APIs
-                    href: custom-connector-sdk-contracts-connectoroauth.md
-                  - name: Common models
-                    href: custom-connector-sdk-contracts-common.md
-              - name: Test utility
-                href: custom-connector-sdk-testapp.md
-              - name: Publish a connector
-                href: custom-connector-sdk-publish.md
-              - name: Develop connectors in other languages
-                href: custom-connector-sdk-other-languages.md
-              - name: Best practices
-                href: custom-connector-sdk-best-practices.md
-              - name: Troubleshooting
-                href: custom-connector-sdk-troubleshooting.md
-          - name: Use PowerShell
-            items:
-              - name: PowerShell overview
-                href: /powershell/microsoftgraph/overview?toc=/graph/toc.json
-              - name: Install PowerShell SDK
-                href: /powershell/microsoftgraph/installation?toc=/graph/toc.json
-              - name: Get started
-                href: /powershell/microsoftgraph/get-started?toc=/graph/toc.json
-              - name: Navigate the PowerShell SDK
-                href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
-              - name: App-only authentication
-                href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
-          - name: Use the CLI (preview)
-            items:
-              - name: CLI overview
-                href: cli/overview.md
-              - name: Install the CLI
-                href: cli/installation.md
-              - name: Get started
-                href: cli/get-started.md
-              - name: Navigate the CLI
-                href: cli/navigating.md
-              - name: App-only authentication
-                href: cli/app-only.md
+      items:
+        - name: Overview
+          href: sdks/sdks-overview.md
+          displayName: SDK, SDKs, Microsoft Graph SDK
+        - name: Install an SDK
+          href: sdks/sdk-installation.md
+          displayName: install SDK, install SDKs, installation
+        - name: Create a client
+          href: sdks/create-client.md
+        - name: Customize a client
+          href: sdks/customize-client.md
+        - name: Choose an authentication provider
+          href: sdks/choose-authentication-providers.md
+        - name: Connect to national clouds
+          href: sdks/national-clouds.md
+        - name: Create requests
+          href: sdks/create-requests.md
+        - name: Page through a collection
+          href: sdks/paging.md
+        - name: Create a batch request
+          href: sdks/batch-requests.md
+        - name: Upload large files
+          href: sdks/large-file-upload.md
+        - name: Use beta API
+          href: sdks/use-beta.md
+        - name: Use the connectors SDK
+          items:
+            - name: Overview
+              href: custom-connector-sdk-overview.md
+            - name: Contracts
+              items:
+                - name: Services
+                  href: custom-connector-sdk-contracts-services.md
+                - name: ConnectorInfo API
+                  href: custom-connector-sdk-contracts-connectorinfo.md
+                - name: Connection management APIs
+                  href: custom-connector-sdk-contracts-connectionmanagement.md
+                - name: Connector crawler APIs
+                  href: custom-connector-sdk-contracts-connectorcrawler.md
+                - name: Connector OAuth APIs
+                  href: custom-connector-sdk-contracts-connectoroauth.md
+                - name: Common models
+                  href: custom-connector-sdk-contracts-common.md
+            - name: Test utility
+              href: custom-connector-sdk-testapp.md
+            - name: Publish a connector
+              href: custom-connector-sdk-publish.md
+            - name: Develop connectors in other languages
+              href: custom-connector-sdk-other-languages.md
+            - name: Best practices
+              href: custom-connector-sdk-best-practices.md
+            - name: Troubleshooting
+              href: custom-connector-sdk-troubleshooting.md
+        - name: Use PowerShell
+          items:
+            - name: PowerShell overview
+              href: /powershell/microsoftgraph/overview?toc=/graph/toc.json
+            - name: Install PowerShell SDK
+              href: /powershell/microsoftgraph/installation?toc=/graph/toc.json
+            - name: Get started
+              href: /powershell/microsoftgraph/get-started?toc=/graph/toc.json
+            - name: Navigate the PowerShell SDK
+              href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
+            - name: App-only authentication
+              href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
+        - name: Use the CLI (preview)
+          items:
+            - name: CLI overview
+              href: cli/overview.md
+            - name: Install the CLI
+              href: cli/installation.md
+            - name: Get started
+              href: cli/get-started.md
+            - name: Navigate the CLI
+              href: cli/navigating.md
+            - name: App-only authentication
+              href: cli/app-only.md
     - name: Use the toolkit
       items:
         - name: Overview
