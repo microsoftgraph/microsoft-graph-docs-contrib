@@ -20,7 +20,7 @@ The best integration option for this scenario is to use Microsoft Graph change n
 
 The following diagram shows the architecture for this solution.
 
-![A diagram that shows the Microsoft Graph notification service interacting with Microsoft Entra ID, applicaton gateway, app services, storage queue, function apps, and the destination service.](.././images/graph-arc-center/webhooks.png)
+![A diagram that shows the Microsoft Graph notification service interacting with Microsoft Entra ID, applicaton gateway, app services, storage queue, function apps, and the destination service.](.././images/webhooks.png)
 
 ## Solution components
 
