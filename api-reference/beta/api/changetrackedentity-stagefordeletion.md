@@ -59,7 +59,8 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "openshiftthis.stagefordeletion"
+  "name": "openshiftthis.stagefordeletion",
+  "sampleKeys": ["OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8"]
 }
 -->
 ``` http
