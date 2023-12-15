@@ -33,7 +33,7 @@ Based on many known scenarios in the Microsoft Graph ecosystem, we identified fo
 
 Use the following decision tree to choose an integration option based on your architecture requirements.
 
-![decisionTree](./images/graph-arc-center/decisiontree.png)
+![decisionTree](./images/decisiontree.png)
 
 - Application integration requirements - Use Microsoft Graph APIs.
 - Data integration scenarios:
