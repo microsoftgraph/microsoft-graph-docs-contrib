@@ -1,5 +1,5 @@
 ---
-title: "Get teamwork settings of an organization."
+title: "Get teamwork."
 description: "Get organization settings for teamwork, such as the region of the organization and the Microsoft Teams enablement status."
 author: "mea"
 ms.localizationpriority: high
@@ -7,13 +7,13 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get teamwork settings of an organization.
+# Get teamwork
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get organization settings for [teamwork](../resources/teamwork.md), such as the region of the organization and the Microsoft Teams enablement status.
+Get the properties and relationships of a [teamwork](../resources/teamwork.md) object, such as the region of the organization and whether Microsoft Teams is enabled.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

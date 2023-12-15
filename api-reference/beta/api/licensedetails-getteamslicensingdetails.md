@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code along with a [teamsL
 
 ### Request
 
-The following example shows the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
