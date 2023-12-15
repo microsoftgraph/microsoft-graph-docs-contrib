@@ -26,7 +26,7 @@ Inherits from [changeTrackedEntity](../resources/changetrackedentity.md).
 |[Update openShift](../api/openshift-update.md)|[openShift](../resources/openshift.md)|Update the properties of an [openShift](../resources/openshift.md) object.|
 |[Delete openShift](../api/openshift-delete.md)|None|Delete an [openShift](../resources/openshift.md) object.|
 |[getOpenShifts](../api/team-getopenshifts.md)|[openShift](../resources/openshift.md) collection|Get a list of openShift objects from across all schedules the user has access to.|
-|[stageForDeletion](../api/openshift-stagefordeletion.md)|None|Stage an [openShift](../resources/openshift.md) for deletion.|
+|[stageForDeletion](../api/changetrackedentity-stagefordeletion.md)|None|Stage an [openShift](../resources/openshift.md) for deletion.|
 
 ## Properties
 |Property|Type|Description|
