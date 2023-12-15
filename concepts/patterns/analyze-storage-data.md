@@ -20,7 +20,7 @@ The best option for this scenario is to use Microsoft Graph Data Connect. The cl
 
 The following diagram shows the architecture for this solution.
 
-![A diagram that shows a third-party app authenticating with Microsoft Entra ID, connecting to Microsoft Graph, and exporting content to Azure Data lake.](.././images/graph-arc-center/mgdc.png)
+![A diagram that shows a third-party app authenticating with Microsoft Entra ID, connecting to Microsoft Graph, and exporting content to Azure Data lake.](.././images/mgdc.png)
 
 ## Solution components
 
