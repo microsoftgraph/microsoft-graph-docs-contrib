@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
   "name": "openshift-stagefordeletion-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/openshift-stagefordeletion-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/changetrackedentity-stagefordeletion-permissions.md)]
 
 ## HTTP request
 
