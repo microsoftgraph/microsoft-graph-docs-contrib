@@ -7,14 +7,10 @@ items:
   - name: Overview of Microsoft Graph
     href: overview.md
   - name: Users you can reach
-    items:
-      - name: Overview
-        href: users-you-can-reach.md
-        displayName: users you can reach
-      - name: National cloud deployments
-        href: deployments.md
-      - name: Hybrid deployments (deprecated)
-        href: hybrid-rest-support.md
+    href: users-you-can-reach.md
+    displayName: users you can reach
+  - name: National cloud deployments
+    href: deployments.md
   - name: Versioning and support
     href: versioning-and-support.md
   - name: Terms of use
@@ -54,6 +50,7 @@ items:
         href: https://developer.microsoft.com/graph/changelog
         displayName: API changes, API updates, Microsoft Graph API, REST API, REST API updates
   - name: Get started
+    expanded: true
     items:
     - name: Try the APIs
       href: graph-explorer/graph-explorer-overview.md
