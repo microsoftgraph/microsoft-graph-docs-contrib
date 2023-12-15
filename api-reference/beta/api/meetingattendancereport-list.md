@@ -39,7 +39,7 @@ GET /me/onlineMeetings/{meetingId}/attendanceReports
 GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports
 ```
 
-To get all attendance reports for a virtual event session:
+To get all attendance reports for a webinar session:
 <!-- { "blockType": "ignored" } -->
 ``` http
 GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports
@@ -77,7 +77,7 @@ If successful, this method returns a `200 OK` response code and a list of [meeti
 
 ### Example 1: List attendance reports for an online meeting
 
-### Request
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -125,7 +125,7 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 
 ---
 
-### Response
+#### Response
 
 > **Note**: The response object shown here might be shortened for readability.
 
@@ -160,7 +160,7 @@ Content-Type: application/json
   ]
 }
 ```
-### Example 2: List attendance reports for a virtual event session
+### Example 2: List attendance reports for a webinar session
 
 #### Request
 
