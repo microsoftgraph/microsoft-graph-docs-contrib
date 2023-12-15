@@ -22,7 +22,7 @@ items:
         items:
           - name: Overview
             href: integration-patterns-overview.md
-          - name: Extract data for analysis
+          - name: Analyze Microsoft Graph data
             href: patterns/analyze-storage-data.md
           - name: Build interactive apps
             href: patterns/interactive-applications.md
