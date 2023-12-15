@@ -92,8 +92,9 @@ items:
     expanded: true
     items:
     - name: Common integration patterns
-      href: integration-patterns-overview.md
       items:
+        - Overview
+          href: integration-patterns-overview.md
         - name: Analyze data
           href: analyze-storage-data.md
         - name: Build interactive apps change notifications
