@@ -19,11 +19,11 @@ A container where you can find all the different Microsoft Teams license details
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-|hasTeamsLicense|boolean|Represents whether the user has a valid license to use Microsoft Teams.|
+|hasTeamsLicense|Boolean|Indicates whether the user has a valid license to use Microsoft Teams.|
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
@@ -37,7 +37,7 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "hasTeamsLicense": "boolean",
+  "hasTeamsLicense": "Boolean",
 }
 
 ```
