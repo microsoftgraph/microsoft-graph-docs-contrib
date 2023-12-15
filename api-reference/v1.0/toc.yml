@@ -1,6 +1,9 @@
 items:
   - name: Overview of Microsoft Graph
     href: /graph/overview
+  - name: API changelog
+    href: https://developer.microsoft.com/en-us/graph/changelog
+    displayName: API changes, API updates, Microsoft Graph API, REST API, REST API updates
   - name: Authentication and authorization
     items:
       - name: Overview
@@ -7420,6 +7423,14 @@ items:
             items:
               - name: Get
                 href: api/peopleadminsettings-get.md
+              - name: Org control for pronouns settings
+                items:
+                  - name: Pronouns settings
+                    href: resources/pronounssettings.md
+                  - name: List
+                    href: api/peopleadminsettings-list-pronouns.md
+                  - name: Update
+                    href: api/pronounssettings-update.md
               - name: Profile card customization
                 items:
                   - name: Profile card property
@@ -9026,6 +9037,33 @@ items:
                     href: api/presence-clearuserpreferredpresence.md
                   - name: Set user status message
                     href: api/presence-setstatusmessage.md
+              - name: Virtual event
+                items:
+                  - name: Webinar
+                    href: resources/virtualeventwebinar.md
+                    items:
+                      - name: List
+                        href: api/virtualeventsroot-list-webinars.md
+                      - name: Get
+                        href: api/virtualeventwebinar-get.md
+                      - name: List by user role
+                        href: api/virtualeventwebinar-getbyuserrole.md
+                      - name: List by user ID and role
+                        href: api/virtualeventwebinar-getbyuseridandrole.md
+                      - name: Registration
+                        href: resources/virtualeventregistration.md
+                        items:
+                          - name: List
+                            href: api/virtualeventwebinar-list-registrations.md
+                          - name: Get
+                            href: api/virtualeventregistration-get.md
+                  - name: Session
+                    href: resources/virtualeventsession.md
+                    items:
+                      - name: List
+                        href: api/virtualevent-list-sessions.md
+                      - name: Get
+                        href: api/virtualeventsession-get.md
           - name: Employee learning
             displayName: Viva Learning
             items:
