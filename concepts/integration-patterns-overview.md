@@ -18,7 +18,7 @@ Microsoft Graph is a technology platform that allows organizations to connect th
 
 The following image shows the Microsoft Graph integration patterns, their associated architectural components, and the types of solutions they map to.
 
-![A diagram that lists integration patterns, the associated architectural components for each, and types of solutions](./images/graph-arc-center/IntegrationOptions.png)
+![A diagram that lists integration patterns, the associated architectural components for each, and types of solutions](./images/integrationoptions.png)
 
 The wide range of integration options can make it difficult to choose the best option for your needs. We recommend that you start with a business scenario and identify your functional and non-functional requirements. Then you can select an integration option based on those requirements.
 
