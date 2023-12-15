@@ -1,5 +1,5 @@
 ---
-title: "openShift: stageForDeletion"
+title: "changeTrackedEntity: stageForDeletion"
 description: "Stage an openShift for deletion."
 author: "raulfernandes"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# openShift: stageForDeletion
+# changeTrackedEntity: stageForDeletion
 
 Namespace: microsoft.graph
 
