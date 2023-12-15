@@ -1,6 +1,6 @@
 ---
 title: "changeTrackedEntity: stageForDeletion"
-description: "Stage an openShift for deletion."
+description: "Stage the deletion of an openShift instance in a schedule in draft mode."
 author: "raulfernandes"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
