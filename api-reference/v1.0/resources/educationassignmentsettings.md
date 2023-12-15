@@ -24,7 +24,7 @@ Specifies class-level assignments settings.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique identifier for the educationAssignmentSettings.|
-|submissionAnimationDisabled|Boolean|Indicates whether turn-in celebration animation will be shown. If `true`, the animation will not be shown. The default value is `false`.|
+|submissionAnimationDisabled|Boolean|Indicates whether to show the turn-in celebration animation. If `true`, indicates to skip the animation. The default value is `false`.|
 
 ## Relationships
 | Relationship | Type	|Description|
