@@ -20,7 +20,7 @@ The best choice for this application is to use Microsoft Graph RESTful HTTP APIs
 
 The following diagram shows the architecture for this solution.
 
-![A diagram that shows a third-party app authenticating with Microsoft Entra ID and communicating with Microsoft Graph APIs, which interact via HTTP with apps such as Teams, Planner, OneDrive, and SharePoint.](.././images/graph-arc-center/webAppAPI.png)
+![A diagram that shows a third-party app authenticating with Microsoft Entra ID and communicating with Microsoft Graph APIs, which interact via HTTP with apps such as Teams, Planner, OneDrive, and SharePoint.](.././images/webappapi.png)
 
 ## Solution components
 
