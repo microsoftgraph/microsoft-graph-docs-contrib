@@ -4,110 +4,292 @@ metadata:
 items:
   - name: Microsoft Graph documentation
     href: index.yml
+  - name: Overview of Microsoft Graph
+    href: overview.md
+  - name: Users you can reach
+    items:
+      - name: Overview
+        href: users-you-can-reach.md
+        displayName: users you can reach
+      - name: National cloud deployments
+        href: deployments.md
+      - name: Hybrid deployments (deprecated)
+        href: hybrid-rest-support.md
+  - name: Versioning and support
+    href: versioning-and-support.md
+  - name: Terms of use
+    href: /legal/microsoft-apis/terms-of-use?context=graph/context
   - name: Explore
     expanded: true
     items:
-      - name: Overview of Microsoft Graph
-        href: overview.md
-      - name: Services in Microsoft Graph
+      - name: Services and features
         href: overview-major-services.md
-      - name: What's new
-        expanded: true
-        items:
-          - name: What's new highlights
-            href: whats-new-overview.md
-            displayName: what's new, updates
-          - name: API changelog
-            href: https://developer.microsoft.com/graph/changelog
-            displayName: API changes, API updates, Microsoft Graph API, REST API, REST API updates
-      - name: Try the APIs
-        href: graph-explorer/graph-explorer-overview.md
-      - name: Quick start
-        href: https://developer.microsoft.com/graph/quick-start
-        displayName: quickstart
-      - name: Tutorials
+      - name: Integration patterns
         items:
           - name: Overview
-            href: tutorials.md
-            displayName: tutorials
-          - name: Delegated (user) auth
-            items:
-              - name: .NET
-                href: /graph/tutorials/dotnet
-              - name: Go
-                href: /graph/tutorials/go
-              - name: Java
-                href: /graph/tutorials/java
-              - name: JavaScript
-                href: /graph/tutorials/javascript
-              - name: PHP
-                href: /graph/tutorials/php
-              - name: Power Automate
-                href: /graph/tutorials/power-automate
-              - name: PowerShell
-                href: /graph/tutorials/powershell
-              - name: Python
-                href: /graph/tutorials/python
-              - name: TypeScript
-                href: /graph/tutorials/typescript
-          - name: App-only auth
-            items:
-              - name: .NET
-                href: /graph/tutorials/dotnet-app-only
-              - name: Go
-                href: /graph/tutorials/go-app-only
-              - name: Java
-                href: /graph/tutorials/java-app-only
-              - name: JavaScript
-                href: /graph/tutorials/javascript-app-only
-              - name: PHP
-                href: /graph/tutorials/php-app-only
-              - name: PowerShell
-                href: /graph/tutorials/powershell-app-only
-              - name: Python
-                href: /graph/tutorials/python-app-only
-              - name: TypeScript
-                href: /graph/tutorials/typescript-app-only
-      - name: Users you can reach
-        items:
-          - name: Overview
-            href: users-you-can-reach.md
-            displayName: users you can reach
-          - name: National cloud deployments
-            href: deployments.md
-          - name: Hybrid deployments (deprecated)
-            href: hybrid-rest-support.md
+            href: integration-patterns-overview.md
+          - name: Analyze data
+            href: patterns/analyze-storage-data.md
+          - name: Build interactive apps change notifications
+            href: patterns/interactive-app-with-change-notifications-via-webhooks.md
+          - name: Build interactive apps with APIs
+            href: patterns/interactive-applications.md
+          - name: Get push notifications
+            href: patterns/notifications-in-push-mode.md
+          - name: Get pull notifications
+            href: patterns/notifications-in-pull-mode.md
+          - name: Augment search
+            href: patterns/augment-search-experience-with-custom-data.md
       - name: Metered APIs
         items:
           - name: Overview
             href: metered-api-overview.md
             displayName: monetize, charge, cost, pricing
           - name: List of metered APIs
-            href: metered-api-list.md
-      - name: Versioning and support
-        href: versioning-and-support.md
-      - name: Terms of use
-        href: /legal/microsoft-apis/terms-of-use?context=graph/context
-  - name: Plan and design
-    expanded: true
+            href: metered-api-list.md   
+      - name: What's new
+        href: whats-new-overview.md
+        displayName: what's new, updates
+      - name: API changelog
+        href: https://developer.microsoft.com/graph/changelog
+        displayName: API changes, API updates, Microsoft Graph API, REST API, REST API updates
+  - name: Get started
     items:
-    - name: Common integration patterns
+    - name: Try the APIs
+      href: graph-explorer/graph-explorer-overview.md
+    - name: Quick start
+      href: https://developer.microsoft.com/graph/quick-start
+      displayName: quickstart
+    - name: Tutorials
       items:
         - name: Overview
-          href: integration-patterns-overview.md
-        - name: Analyze data
-          href: patterns/analyze-storage-data.md
-        - name: Build interactive apps change notifications
-          href: patterns/interactive-app-with-change-notifications-via-webhooks.md
-        - name: Build interactive apps with APIs
-          href: patterns/interactive-applications.md
-        - name: Get push notifications
-          href: patterns/notifications-in-push-mode.md
-        - name: Get pull notifications
-          href: patterns/notifications-in-pull-mode.md
-        - name: Augment search
-          href: patterns/augment-search-experience-with-custom-data.md
-  - name: Learn
+          href: tutorials.md
+          displayName: tutorials
+        - name: Delegated (user) auth
+          items:
+            - name: .NET
+              href: /graph/tutorials/dotnet
+            - name: Go
+              href: /graph/tutorials/go
+            - name: Java
+              href: /graph/tutorials/java
+            - name: JavaScript
+              href: /graph/tutorials/javascript
+            - name: PHP
+              href: /graph/tutorials/php
+            - name: Power Automate
+              href: /graph/tutorials/power-automate
+            - name: PowerShell
+              href: /graph/tutorials/powershell
+            - name: Python
+              href: /graph/tutorials/python
+            - name: TypeScript
+              href: /graph/tutorials/typescript
+        - name: App-only auth
+          items:
+            - name: .NET
+              href: /graph/tutorials/dotnet-app-only
+            - name: Go
+              href: /graph/tutorials/go-app-only
+            - name: Java
+              href: /graph/tutorials/java-app-only
+            - name: JavaScript
+              href: /graph/tutorials/javascript-app-only
+            - name: PHP
+              href: /graph/tutorials/php-app-only
+            - name: PowerShell
+              href: /graph/tutorials/powershell-app-only
+            - name: Python
+              href: /graph/tutorials/python-app-only
+            - name: TypeScript
+              href: /graph/tutorials/typescript-app-only
+    - name: Use SDKs
+        items:
+          - name: Overview
+            href: sdks/sdks-overview.md
+            displayName: SDK, SDKs, Microsoft Graph SDK
+          - name: Install an SDK
+            href: sdks/sdk-installation.md
+            displayName: install SDK, install SDKs, installation
+          - name: Create a client
+            href: sdks/create-client.md
+          - name: Customize a client
+            href: sdks/customize-client.md
+          - name: Choose an authentication provider
+            href: sdks/choose-authentication-providers.md
+          - name: Connect to national clouds
+            href: sdks/national-clouds.md
+          - name: Create requests
+            href: sdks/create-requests.md
+          - name: Page through a collection
+            href: sdks/paging.md
+          - name: Create a batch request
+            href: sdks/batch-requests.md
+          - name: Upload large files
+            href: sdks/large-file-upload.md
+          - name: Use beta API
+            href: sdks/use-beta.md
+          - name: Use the connectors SDK
+            items:
+              - name: Overview
+                href: custom-connector-sdk-overview.md
+              - name: Contracts
+                items:
+                  - name: Services
+                    href: custom-connector-sdk-contracts-services.md
+                  - name: ConnectorInfo API
+                    href: custom-connector-sdk-contracts-connectorinfo.md
+                  - name: Connection management APIs
+                    href: custom-connector-sdk-contracts-connectionmanagement.md
+                  - name: Connector crawler APIs
+                    href: custom-connector-sdk-contracts-connectorcrawler.md
+                  - name: Connector OAuth APIs
+                    href: custom-connector-sdk-contracts-connectoroauth.md
+                  - name: Common models
+                    href: custom-connector-sdk-contracts-common.md
+              - name: Test utility
+                href: custom-connector-sdk-testapp.md
+              - name: Publish a connector
+                href: custom-connector-sdk-publish.md
+              - name: Develop connectors in other languages
+                href: custom-connector-sdk-other-languages.md
+              - name: Best practices
+                href: custom-connector-sdk-best-practices.md
+              - name: Troubleshooting
+                href: custom-connector-sdk-troubleshooting.md
+          - name: Use PowerShell
+            items:
+              - name: PowerShell overview
+                href: /powershell/microsoftgraph/overview?toc=/graph/toc.json
+              - name: Install PowerShell SDK
+                href: /powershell/microsoftgraph/installation?toc=/graph/toc.json
+              - name: Get started
+                href: /powershell/microsoftgraph/get-started?toc=/graph/toc.json
+              - name: Navigate the PowerShell SDK
+                href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
+              - name: App-only authentication
+                href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
+          - name: Use the CLI (preview)
+            items:
+              - name: CLI overview
+                href: cli/overview.md
+              - name: Install the CLI
+                href: cli/installation.md
+              - name: Get started
+                href: cli/get-started.md
+              - name: Navigate the CLI
+                href: cli/navigating.md
+              - name: App-only authentication
+                href: cli/app-only.md
+    - name: Use the toolkit
+      items:
+        - name: Overview
+          href: toolkit/overview.md
+          displayName: Microsoft Graph Toolkit, toolkit
+        - name: Get started
+          items:
+            - name: Get started
+              href: toolkit/get-started/overview.md
+              displayName: Microsoft Graph Toolkit, toolkit
+            - name: Toolkit for React
+              href: toolkit/get-started/mgt-react.md
+            - name: Toolkit for SPFx
+              href: toolkit/get-started/mgt-spfx.md
+        - name: Build your first app
+          items:
+            - name: Register a Microsoft Entra app
+              href: toolkit/get-started/add-aad-app-registration.md
+            - name: Build a web app (JavaScript)
+              href: toolkit/get-started/build-a-web-app.md
+            - name: Build a web app (React)
+              href: toolkit/get-started/use-toolkit-with-react.md
+            - name: Build a web app (Angular)
+              href: toolkit/get-started/use-toolkit-with-angular.md
+            - name: Build a SharePoint web part
+              href: toolkit/get-started/build-a-sharepoint-web-part.md
+            - name: Build a Teams tab
+              href: toolkit/get-started/build-a-microsoft-teams-tab.md
+            - name: Build an Electron app
+              href: toolkit/get-started/build-an-electron-app.md
+            - name: Build a productivity hub app
+              href: /graph/toolkit/get-started/building-one-productivity-hub
+        - name: Providers
+          items:
+            - name: Using the providers
+              href: toolkit/providers/providers.md
+              displayName: Microsoft Graph Toolkit providers, toolkit provider
+            - name: Custom provider
+              href: toolkit/providers/custom.md
+            - name: Electron provider
+              href: toolkit/providers/electron.md
+            - name: MSAL2 provider
+              href: toolkit/providers/msal2.md
+            - name: Proxy provider
+              href: toolkit/providers/proxy.md
+            - name: SharePoint provider
+              href: toolkit/providers/sharepoint.md
+            - name: TeamsFx provider
+              href: toolkit/providers/teamsfx.md
+        - name: Components
+          items:
+            - name: Agenda
+              href: toolkit/components/agenda.md
+            - name: Chat (preview)
+              href: toolkit/components/chat.md
+            - name: File
+              href: toolkit/components/file.md
+            - name: File list
+              href: toolkit/components/file-list.md
+            - name: Get
+              href: toolkit/components/get.md
+            - name: Login
+              href: toolkit/components/login.md
+              displayName: Microsoft Graph toolkit components, toolkit component
+            - name: New chat (preview)
+              href: toolkit/components/new-chat.md
+            - name: People
+              href: toolkit/components/people.md
+            - name: People picker
+              href: toolkit/components/people-picker.md
+            - name: Person
+              href: toolkit/components/person.md
+            - name: Person card
+              href: toolkit/components/person-card.md
+            - name: Picker
+              href: toolkit/components/picker.md
+            - name: Planner tasks
+              href: toolkit/components/tasks.md
+            - name: Search box (preview)
+              href: toolkit/components/search-box.md
+            - name: Search results (preview)
+              href: toolkit/components/search-results.md
+            - name: Taxonomy picker
+              href: toolkit/components/taxonomy-picker.md
+            - name: Teams channel picker
+              href: toolkit/components/teams-channel-picker.md
+            - name: Theme toggle
+              href: toolkit/components/theme-toggle.md
+            - name: To-do tasks
+              href: toolkit/components/todo.md
+        - name: Customize components
+          items:
+            - name: Caching Microsoft Graph calls in components
+              href: toolkit/customize-components/cache.md
+            - name: Handling events
+              href: toolkit/customize-components/events.md
+            - name: Localizing components
+              href: toolkit/customize-components/localization.md
+            - name: Right-to-left support
+              href: toolkit/customize-components/right-to-left.md
+            - name: Styling components
+              href: toolkit/customize-components/style.md
+            - name: Templating components
+              href: toolkit/customize-components/templates.md
+            - name: Disambiguation of components
+              href: toolkit/customize-components/disambiguation.md
+        - name: Upgrading to v3
+          href: toolkit/upgrade.md
+  - name: Services and features
     expanded: true
     items:
       - name: Users
@@ -1000,192 +1182,6 @@ items:
                 href: migrate-exchange-web-services-api-mapping.md
           - name: Outlook REST APIs
             href: /outlook/rest/compare-graph?context=graph/context
-      - name: Use SDKs
-        items:
-          - name: Overview
-            href: sdks/sdks-overview.md
-            displayName: SDK, SDKs, Microsoft Graph SDK
-          - name: Install an SDK
-            href: sdks/sdk-installation.md
-            displayName: install SDK, install SDKs, installation
-          - name: Create a client
-            href: sdks/create-client.md
-          - name: Customize a client
-            href: sdks/customize-client.md
-          - name: Choose an authentication provider
-            href: sdks/choose-authentication-providers.md
-          - name: Connect to national clouds
-            href: sdks/national-clouds.md
-          - name: Create requests
-            href: sdks/create-requests.md
-          - name: Page through a collection
-            href: sdks/paging.md
-          - name: Create a batch request
-            href: sdks/batch-requests.md
-          - name: Upload large files
-            href: sdks/large-file-upload.md
-          - name: Use beta API
-            href: sdks/use-beta.md
-          - name: Use the connectors SDK
-            items:
-              - name: Overview
-                href: custom-connector-sdk-overview.md
-              - name: Contracts
-                items:
-                  - name: Services
-                    href: custom-connector-sdk-contracts-services.md
-                  - name: ConnectorInfo API
-                    href: custom-connector-sdk-contracts-connectorinfo.md
-                  - name: Connection management APIs
-                    href: custom-connector-sdk-contracts-connectionmanagement.md
-                  - name: Connector crawler APIs
-                    href: custom-connector-sdk-contracts-connectorcrawler.md
-                  - name: Connector OAuth APIs
-                    href: custom-connector-sdk-contracts-connectoroauth.md
-                  - name: Common models
-                    href: custom-connector-sdk-contracts-common.md
-              - name: Test utility
-                href: custom-connector-sdk-testapp.md
-              - name: Publish a connector
-                href: custom-connector-sdk-publish.md
-              - name: Develop connectors in other languages
-                href: custom-connector-sdk-other-languages.md
-              - name: Best practices
-                href: custom-connector-sdk-best-practices.md
-              - name: Troubleshooting
-                href: custom-connector-sdk-troubleshooting.md
-          - name: Use PowerShell
-            items:
-              - name: PowerShell overview
-                href: /powershell/microsoftgraph/overview?toc=/graph/toc.json
-              - name: Install PowerShell SDK
-                href: /powershell/microsoftgraph/installation?toc=/graph/toc.json
-              - name: Get started
-                href: /powershell/microsoftgraph/get-started?toc=/graph/toc.json
-              - name: Navigate the PowerShell SDK
-                href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
-              - name: App-only authentication
-                href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
-          - name: Use the CLI (preview)
-            items:
-              - name: CLI overview
-                href: cli/overview.md
-              - name: Install the CLI
-                href: cli/installation.md
-              - name: Get started
-                href: cli/get-started.md
-              - name: Navigate the CLI
-                href: cli/navigating.md
-              - name: App-only authentication
-                href: cli/app-only.md
-      - name: Use the toolkit
-        items:
-          - name: Overview
-            href: toolkit/overview.md
-            displayName: Microsoft Graph Toolkit, toolkit
-          - name: Get started
-            items:
-              - name: Get started
-                href: toolkit/get-started/overview.md
-                displayName: Microsoft Graph Toolkit, toolkit
-              - name: Toolkit for React
-                href: toolkit/get-started/mgt-react.md
-              - name: Toolkit for SPFx
-                href: toolkit/get-started/mgt-spfx.md
-          - name: Build your first app
-            items:
-              - name: Register a Microsoft Entra app
-                href: toolkit/get-started/add-aad-app-registration.md
-              - name: Build a web app (JavaScript)
-                href: toolkit/get-started/build-a-web-app.md
-              - name: Build a web app (React)
-                href: toolkit/get-started/use-toolkit-with-react.md
-              - name: Build a web app (Angular)
-                href: toolkit/get-started/use-toolkit-with-angular.md
-              - name: Build a SharePoint web part
-                href: toolkit/get-started/build-a-sharepoint-web-part.md
-              - name: Build a Teams tab
-                href: toolkit/get-started/build-a-microsoft-teams-tab.md
-              - name: Build an Electron app
-                href: toolkit/get-started/build-an-electron-app.md
-              - name: Build a productivity hub app
-                href: /graph/toolkit/get-started/building-one-productivity-hub
-          - name: Providers
-            items:
-              - name: Using the providers
-                href: toolkit/providers/providers.md
-                displayName: Microsoft Graph Toolkit providers, toolkit provider
-              - name: Custom provider
-                href: toolkit/providers/custom.md
-              - name: Electron provider
-                href: toolkit/providers/electron.md
-              - name: MSAL2 provider
-                href: toolkit/providers/msal2.md
-              - name: Proxy provider
-                href: toolkit/providers/proxy.md
-              - name: SharePoint provider
-                href: toolkit/providers/sharepoint.md
-              - name: TeamsFx provider
-                href: toolkit/providers/teamsfx.md
-          - name: Components
-            items:
-              - name: Agenda
-                href: toolkit/components/agenda.md
-              - name: Chat (preview)
-                href: toolkit/components/chat.md
-              - name: File
-                href: toolkit/components/file.md
-              - name: File list
-                href: toolkit/components/file-list.md
-              - name: Get
-                href: toolkit/components/get.md
-              - name: Login
-                href: toolkit/components/login.md
-                displayName: Microsoft Graph toolkit components, toolkit component
-              - name: New chat (preview)
-                href: toolkit/components/new-chat.md
-              - name: People
-                href: toolkit/components/people.md
-              - name: People picker
-                href: toolkit/components/people-picker.md
-              - name: Person
-                href: toolkit/components/person.md
-              - name: Person card
-                href: toolkit/components/person-card.md
-              - name: Picker
-                href: toolkit/components/picker.md
-              - name: Planner tasks
-                href: toolkit/components/tasks.md
-              - name: Search box (preview)
-                href: toolkit/components/search-box.md
-              - name: Search results (preview)
-                href: toolkit/components/search-results.md
-              - name: Taxonomy picker
-                href: toolkit/components/taxonomy-picker.md
-              - name: Teams channel picker
-                href: toolkit/components/teams-channel-picker.md
-              - name: Theme toggle
-                href: toolkit/components/theme-toggle.md
-              - name: To-do tasks
-                href: toolkit/components/todo.md
-          - name: Customize components
-            items:
-              - name: Caching Microsoft Graph calls in components
-                href: toolkit/customize-components/cache.md
-              - name: Handling events
-                href: toolkit/customize-components/events.md
-              - name: Localizing components
-                href: toolkit/customize-components/localization.md
-              - name: Right-to-left support
-                href: toolkit/customize-components/right-to-left.md
-              - name: Styling components
-                href: toolkit/customize-components/style.md
-              - name: Templating components
-                href: toolkit/customize-components/templates.md
-              - name: Disambiguation of components
-                href: toolkit/customize-components/disambiguation.md
-          - name: Upgrading to v3
-            href: toolkit/upgrade.md
       - name: Microsoft Graph activity logs (preview)
         href: microsoft-graph-activity-logs-overview.md
       - name: Configure Connected Services
