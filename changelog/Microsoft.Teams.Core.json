@@ -6685,7 +6685,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "user",
           "ChangeType": "Addition",
-          "Description": "Added the [List permissionGrants](https://learn.microsoft.com/graph/api/user-list-permissiongrants?view=graph-rest-v1.0) method to the [user](https://learn.microsoft.com/graph/api/resources/user?view=graph-rest-v1.0) resource.",
+          "Description": "Added the [List](https://learn.microsoft.com/graph/api/user-list-permissiongrants?view=graph-rest-v1.0) method to the [user](https://learn.microsoft.com/graph/api/resources/user?view=graph-rest-v1.0) resource.",
           "Target": "user"
         },
         {
