@@ -359,7 +359,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "stageForDeletion",
           "ChangeType": "Addition",
-          "Description": "Added the [stageForDeletion](https://learn.microsoft.com/en-us/graph/api/openshift-stagefordeletion?view=graph-rest-beta) method to the [changeTrackedEntity](https://learn.microsoft.com/en-us/graph/api/resources/changetrackedentity?view=graph-rest-beta) resource.",
+          "Description": "Added the [stageForDeletion](https://learn.microsoft.com/en-us/graph/api/changetrackedentity-stagefordeletion?view=graph-rest-beta) method to the [changeTrackedEntity](https://learn.microsoft.com/en-us/graph/api/resources/changetrackedentity?view=graph-rest-beta) resource.",
           "Target": "changeTrackedEntity"
         },
         {
