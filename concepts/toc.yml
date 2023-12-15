@@ -27,9 +27,9 @@ items:
           - name: Extract data for analysis
             href: patterns/analyze-storage-data.md
           - name: Build interactive apps
-            href: patterns/interactive-app-with-change-notifications-via-webhooks.md
-          - name: Build interactive apps with APIs
             href: patterns/interactive-applications.md
+          - name: Build interactive apps with real-time feed
+            href: patterns/interactive-app-with-change-notifications-via-webhooks.md
           - name: Get real-time data updates
             href: patterns/notifications-in-push-mode.md
           - name: Retrieve events at your speed
