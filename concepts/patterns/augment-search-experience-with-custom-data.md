@@ -18,7 +18,7 @@ This non-interactive scenario has the following requirements:
 
 The best option for this scenario is to use Microsoft Graph connectors. The following diagram shows the architecture for this solution.
 
-![A diagram that shows a third-party app authenticating with Microsoft Entra ID, connecting to Microsoft Graph, and exporting content to semantic search.](.././images/graph-arc-center/Connectors.png)
+![A diagram that shows a third-party app authenticating with Microsoft Entra ID, connecting to Microsoft Graph, and exporting content to semantic search.](.././images/connectors.png)
 
 ## Solution components
 
