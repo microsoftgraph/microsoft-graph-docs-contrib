@@ -11,15 +11,12 @@ items:
         href: overview.md
       - name: Services in Microsoft Graph
         href: overview-major-services.md
-      - name: What's new
-        expanded: true
-        items:
-          - name: What's new highlights
-            href: whats-new-overview.md
-            displayName: what's new, updates
-          - name: API changelog
-            href: https://developer.microsoft.com/graph/changelog
-            displayName: API changes, API updates, Microsoft Graph API, REST API, REST API updates
+      - name: What's new highlights
+        href: whats-new-overview.md
+        displayName: what's new, updates
+      - name: API changelog
+        href: https://developer.microsoft.com/graph/changelog
+        displayName: API changes, API updates, Microsoft Graph API, REST API, REST API updates, what's new
       - name: Try the APIs
         href: graph-explorer/graph-explorer-overview.md
       - name: Quick start
@@ -180,6 +177,8 @@ items:
                 href: managed-private-endpoints-overview.md
               - name: Microsoft 365 audit logs
                 href: microsoft365-audit-logs.md
+              - name: Custom Encryption
+                href: data-connect-custom-encryption.md
           - name: Data Connect FAQ
             href: data-connect-faq.md
             displayName: Microsoft Graph Data Connect frequently asked questions
@@ -621,20 +620,20 @@ items:
         items:
           - name: Overview
             href: social-intel-concept-overview.md
-          - name: Search people
-            href: search-concept-person.md
-          - name: People insights overview
-            href: people-insights-overview.md
+          - name: Customize item insights privacy (preview)
+            href: insights-customize-item-insights-privacy.md
           - name: Customize people insights privacy (preview)
             href: insights-customize-people-insights-privacy.md
           - name: Customize the profile card
             href: add-properties-profilecard.md
+          - name: Enable or disable pronouns
+            href: pronouns-configure-pronouns-availability.md
           - name: Item insights overview
             href: item-insights-overview.md
-          - name: Customize item insights privacy (preview)
-            href: insights-customize-item-insights-privacy.md
-          - name: Enable or disable pronouns (preview)
-            href: pronouns-configure-pronouns-availability.md
+          - name: People insights overview
+            href: people-insights-overview.md
+          - name: Search people
+            href: search-concept-person.md
       - name: Personal contacts
         items:
           - name: Overview
