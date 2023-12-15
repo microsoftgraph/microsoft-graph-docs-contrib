@@ -1,5 +1,5 @@
 ---
-title: "Build interactive apps with APIs and webhooks"
+title: "Build interactive apps with change notifications and webhooks"
 description: "Learn how to use the Microsoft Graph integration pattern for interactive apps that use change notifications."
 author: "OlgaPodo"
 ms.localizationpriority: low
