@@ -16,13 +16,13 @@ Microsoft Graph is a technology platform that allows organizations to connect th
 - Event streaming integration APIs - Allows client applications to react to activities in Microsoft 365 at their own pace and guarantees the persistence of immutable event data. Microsoft Graph change notifications with Azure Event Hubs support this pull mechanism. 
 - Microsoft Graph connectors - Enable the ingestion of large amounts of customer data into Microsoft 365 storage, which enriches Microsoft Copilot for Microsoft 365, the augmentation loop, and search-based Microsoft 365 experiences. These connectors are available through product-specific connectors, such as Microsoft Graph connector for ServiceNow, or generic-content REST APIs.
 
-The following image shows the Microsoft Graph integration patterns, their associated architectural components, and the types of solutions they map to.
+The following image shows the Microsoft Graph integration patterns, their associated architectural characteristic, and the types of solutions they map to.
 
 ![A diagram that lists integration patterns, the associated architectural components for each, and types of solutions](./images/integrationoptions.png)
 
 The wide range of integration options can make it difficult to choose the best option for your needs. We recommend that you start with a business scenario and identify your functional and non-functional requirements. Then you can select an integration option based on those requirements.
 
-![Diagram of the analysis flow which starts with a business scenario, then the definition of architecture requirements, and then the selection of an integration option](./images/scenariorequirementssolution.jpg)
+![Diagram of the analysis flow which starts with a business scenario, then the definition of architecture requirements, and then the selection of an integration option](./images/scenariorequirementssolution.png)
 
 Based on many known scenarios in the Microsoft Graph ecosystem, we identified four architecture requirements that have a profound impact on the selection of integration options. These architectural significant requirements are:
 
