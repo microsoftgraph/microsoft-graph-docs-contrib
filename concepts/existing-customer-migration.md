@@ -25,11 +25,11 @@ If you're an existing Data Connect customer and you want to get started with the
 
 ![A screenshot showing how to enable data connect in the Microsoft 365 admin center.](../concepts/images/data-connect-new-consent-flow-enable-mgdc.png)
 
-This option is available today. If you choose this option, none of your existing Privileged Access Management (PAM) authorizations will be migrated to the new experience. You need to register the apps and work with your tenant admin to get them authorized.
+This option is available today. If you choose this option, none of your existing Privileged Access Management (PAM) authorizations are migrated to the new experience. You need to register the apps and work with your tenant admin to get them authorized.
 
 ## Option 2: One-click automatic migration
 
-Existing Data Connect customers have the option to perform a one-click automatic migration from PAM to the enhanced onboarding experience. This migration is done for each tenant independently and handles the conversion of existing PAM authorizations into app registrations and maintains existing app authorizations. The goal is to enable a smooth migration with no downtime for existing customers.
+Existing Data Connect customers can perform a one-click automatic migration from PAM to the enhanced onboarding experience. This migration is done for each tenant independently and handles the conversion of existing PAM authorizations into app registrations and maintains existing app authorizations. The goal is to enable a smooth migration with no downtime for existing customers.
 
 <!-- This option will be available in late 2023. Stay tuned for more details. -->
 
@@ -41,7 +41,7 @@ For the tenants that comply with these requirements, the migration can be perfor
 
 ### Special case migration
 
-For those tenants with active consents that involve of the below conditions will require a special migration process. 
+If your tenant has active consents with any of the below conditions, the tenant requires a special migration process. 
 - Multiple column sets per dataset 
 - Multiple scopes per dataset 
 - Multiple destination sinks per app registration
@@ -49,10 +49,10 @@ For those tenants with active consents that involve of the below conditions will
 
 This process implies the consolidation of consents to meet the new experience requirements.
 
-These cases will be handled by the Microsoft Graph Data Connect team starting the second quarter of 2024. Please reach out to dataconnect@microsoft.com for any questions.
+These cases will be handled by the Microsoft Graph Data Connect team starting the second quarter of 2024. For any questions, reach out to dataconnect@microsoft.com.
 
 ## Option 3: Automatic migration
 
 <!-- Update 12/15/2023 changed date per developer guidance to mid 2024. -->
 
-Starting in mid-2024, existing Data Connect customers who didn't perform the one-click automatic migration are migrated automatically to the new onboarding experience. Any customer who hasn't migrated by this time will be migrated to the new experience on their first run of Data Connect.
+Starting in mid-2024, existing Data Connect customers who didn't perform the one-click automatic migration are migrated automatically to the new onboarding experience. Any customer who is not migrated by this time will be migrated to the new experience on their first run of Data Connect.
