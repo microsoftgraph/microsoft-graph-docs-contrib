@@ -80,10 +80,11 @@ If successful, this method returns a `200 OK` response code and a [meetingAttend
 
 ## Example
 
+### Example 1: Get the attendance report for an online meeting by ID
+
 The following example shows how to get the attendance report for an online meeting with delegated permission.
 
-### Request
-
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -130,7 +131,7 @@ GET https://graph.microsoft.com/v1.0/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 
 ---
 
-### Response
+#### Response
 
 > **Note**: The response object shown here might be shortened for readability.
 
@@ -183,7 +184,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 3:  Get the attendance report for a webinar session by ID
+### Example 2:  Get the attendance report for a webinar session by ID
 
 #### Request
 
