@@ -18916,7 +18916,7 @@ items:
                   - name: List for all joined teams
                     href: api/team-getopenshifts.md
                   - name: Stage for deletion
-                    href: api/openshift-stagefordeletion.md
+                    href: api/changetrackedentity-stagefordeletion.md
               - name: Open shift change request
                 href: resources/openshiftchangerequest.md
                 items:
