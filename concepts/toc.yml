@@ -11,25 +11,6 @@ items:
         href: overview.md
       - name: Services in Microsoft Graph
         href: overview-major-services.md
-      - name: Plan and design
-        expanded: true
-        items:
-          - name: Common integration patterns with Microsoft Graph
-            href: integration-patterns-overview.md
-            expanded: true
-            items:
-              - name: Analyze Microsoft Graph data in your data storage
-                href: analyze-storage-data.md
-              - name: Build interactive apps with APIs and webhooks
-                href: interactive-app-with-change-notifications-via-webhooks.md
-              - name: Build interactive apps using Microsoft Graph APIs
-                href: interactive-applications.md
-              - name: Get push notifications for data changes using Microsoft Graph
-                href: notifications-in-push-mode.md
-              - name: Observe notifications about changes in your data in pull mode
-                href: notifications-in-pull-mode.md
-              - name: Use Microsoft Graph to augment the search experience with custom data
-                href: augment-search-experience-with-custom-data.md
       - name: What's new
         expanded: true
         items:
@@ -107,6 +88,24 @@ items:
         href: versioning-and-support.md
       - name: Terms of use
         href: /legal/microsoft-apis/terms-of-use?context=graph/context
+  - name: Plan and design
+    expanded: true
+    items:
+    - name: Common integration patterns
+      href: integration-patterns-overview.md
+      items:
+        - name: Analyze data
+          href: analyze-storage-data.md
+        - name: Build interactive apps change notifications
+          href: interactive-app-with-change-notifications-via-webhooks.md
+        - name: Build interactive apps with APIs
+          href: interactive-applications.md
+        - name: Get push notifications
+          href: notifications-in-push-mode.md
+        - name: Get pull notifications
+          href: notifications-in-pull-mode.md
+        - name: Augment search
+          href: augment-search-experience-with-custom-data.md
   - name: Learn
     expanded: true
     items:
