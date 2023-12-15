@@ -93,7 +93,7 @@ items:
     items:
     - name: Common integration patterns
       items:
-        - Overview
+        - name: Overview
           href: integration-patterns-overview.md
         - name: Analyze data
           href: analyze-storage-data.md
