@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code along with a [teamwo
 
 ### Request
 
-The following example shows the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -86,5 +86,5 @@ Content-type: application/json
 
 ## See also
 
-- [Get the licensing details of a user](licenseDetails-getteamslicensingdetails.md)
-- [Get the settings of a user for Microsoft Teams](userteamwork-get.md)
+- [licenseDetails: getTeamsLicensingDetails](licenseDetails-getteamslicensingdetails.md)
+- [Get userTeamwork](userteamwork-get.md)

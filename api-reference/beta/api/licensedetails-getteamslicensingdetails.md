@@ -84,5 +84,5 @@ Content-type: application/json
 
 ## See also
 
-- [Get the settings of a user for Microsoft Teams](userteamwork-get.md)
-- [Get Microsoft Teams settings for organization](teamwork-get.md)
+- [Get userTeamwork](userteamwork-get.md)
+- [Get teamwork](teamwork-get.md)

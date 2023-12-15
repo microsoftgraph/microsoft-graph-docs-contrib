@@ -6179,8 +6179,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | - | Allows the app to report the signed-in user's app activity information to Microsoft Timeline. 
 | AdminConsentRequired | - | No 
 
-
-
 ---
 
 ### VirtualAppointment.Read

@@ -22,7 +22,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |[List deletedTeams](../api/teamwork-list-deletedteams.md)|[deletedTeam](../resources/deletedteam.md) collection|Get a list of the [deletedTeam](../resources/deletedteam.md) objects and their properties.|
 |[List teamTemplates](../api/teamwork-list-teamtemplates.md)|[teamTemplate](../resources/teamtemplate.md) collection|Get the list of [teamTemplate](../resources/teamtemplate.md) objects available for the tenant. |
-|[Get Microsoft Teams settings for the organization](../api/teamwork-get.md)|[teamwork](../resources/teamwork.md)|Get organization settings for teamwork, such as the region and Microsoft Teams enablement status.|
+|[Get teamwork](../api/teamwork-get.md)|[teamwork](../resources/teamwork.md)|Get the properties and relationships of a teamwork object, such as the region of the organization and whether Microsoft Teams is enabled.|
 
 ## Properties
 |Property|Type|Description|

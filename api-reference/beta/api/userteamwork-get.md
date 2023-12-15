@@ -1,5 +1,5 @@
 ---
-title: "Get user teamTeamwork."
+title: "Get userTeamwork."
 description: "Get user teamwork settings for a user such as user locale and user region."
 author: "mea"
 ms.localizationpriority: high
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get user teamTeamwork
+# Get userTeamwork
 
 Namespace: microsoft.graph
 
@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code with a [userTeamwork
 
 ### Request
 
-The following example shows the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -86,5 +86,5 @@ Content-type: application/json
 
 ## See also
 
-- [Get the licensing details of a user](licenseDetails-getteamslicensingdetails.md)
-- [Get Microsoft Teams settings for organization](teamwork-get.md)
+- [licenseDetails: getTeamsLicensingDetails](licenseDetails-getteamslicensingdetails.md)
+- [Get teamwork](teamwork-get.md)

@@ -19,7 +19,7 @@ A container for the range of Microsoft Teams functionalities that are available 
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List installedApps](../api/userteamwork-list-installedapps.md)|[teamsAppInstallation](../resources/teamsappinstallation.md) collection|Retrieve the list of apps installed in the personal scope of the specified user.|
-|[Get the Microsoft Teams settings for user](../api/userteamwork-get.md)|[userTeamwork](../resources/userteamwork.md)|Get userTeamwork settings for the specified [user](../resources/user.md), which includes the user's chosen locale on Microsoft Teams and the user's region.|
+|[Get userTeamwork](../api/userteamwork-get.md)|[userTeamwork](../resources/userteamwork.md)|Get userTeamwork settings for the specified [user](../resources/user.md), which includes the Microsoft Teams region and the locale chosen by the user.|
 
 ## Properties
 
