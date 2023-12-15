@@ -28,7 +28,7 @@ items:
         items:
           - name: Overview
             href: integration-patterns-overview.md
-          - name: Analyze data
+          - name: Extract data for analysis
             href: patterns/analyze-storage-data.md
           - name: Build interactive apps change notifications
             href: patterns/interactive-app-with-change-notifications-via-webhooks.md
