@@ -18,7 +18,7 @@ This pattern uses multiple Microsoft Graph integration options, including APIs, 
 
 The following diagram shows the architecture for this solution.
 
-![A diagram that shows how the Microsoft Graph notification service interacts with Exchange, Microsoft Graph REST APIs, an app with webhook, and Microsoft Entra ID for authentication](.././images/graph-arc-center/HybridAPIWebhooks.png)
+![A diagram that shows how the Microsoft Graph notification service interacts with Exchange, Microsoft Graph REST APIs, an app with webhook, and Microsoft Entra ID for authentication](.././images/hybridapiwebhooks.png)
 
 ## Solution components
 
