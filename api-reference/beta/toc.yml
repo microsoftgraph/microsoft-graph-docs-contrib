@@ -18913,10 +18913,10 @@ items:
                     href: api/openshift-update.md
                   - name: Delete
                     href: api/openshift-delete.md
-                  - name: Stage for deletion
-                    href: api/openshift-stagefordeletion.md
                   - name: List for all joined teams
                     href: api/team-getopenshifts.md
+                  - name: Stage for deletion
+                    href: api/openshift-stagefordeletion.md
               - name: Open shift change request
                 href: resources/openshiftchangerequest.md
                 items:
