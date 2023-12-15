@@ -48,7 +48,7 @@ Many business scenarios require multiple integration building blocks to implemen
 
 To explore each of the integration options in more detail, see the following topics:
 
-- [Extract data for analysis](./patterns/analyze-storage-data.md)
+- [Analyze Microsoft Graph data](./patterns/analyze-storage-data.md)
 - [Build interactive apps](./patterns/interactive-applications.md)
 - [Build interactive apps with real-time feed](./patterns/interactive-app-with-change-notifications-via-webhooks.md) 
 - [Get real-time data updates](./patterns/notifications-in-push-mode.md)
