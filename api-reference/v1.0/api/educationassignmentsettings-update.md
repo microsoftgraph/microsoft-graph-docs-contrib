@@ -43,7 +43,7 @@ The following table shows the properties that are required when you update the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|submissionAnimationDisabled|Boolean|Indicates whether turn-in celebration animation will be shown. A value of `true` indicates that the animation will not be shown. Default value is `false`.|
+|submissionAnimationDisabled|Boolean|Indicates whether to show the turn-in celebration animation. A value of `true` indicates to skip the animation. Default value is `false`.|
 
 
 
@@ -128,7 +128,7 @@ Content-Type: application/json
 
 ### Example 2: Create grading categories
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 <!-- {
@@ -159,7 +159,7 @@ Content-type: application/json
 ```
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -200,7 +200,7 @@ Content-type: application/json
 ### Example 3: Delta payload to delete, modify and add grading categories.
 
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -232,10 +232,10 @@ Content-type: application/json
     ]
 }
 ```
-> **Note:** The purpose of the comments in the Request Body is to clarify each operation.
+> **Note:** You don't need to include the comments that appear in the request body examples in your requests. They are there to clarify each operation for you.
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
