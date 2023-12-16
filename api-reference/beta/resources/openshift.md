@@ -20,13 +20,13 @@ Inherits from [changeTrackedEntity](../resources/changetrackedentity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List openShifts](../api/openshift-list.md)|[openShift](../resources/openshift.md) collection|List [openShift](../resources/openshift.md) objects in a team.|
+|[List openShift](../api/openshift-list.md)|[openShift](../resources/openshift.md) collection|List [openShift](../resources/openshift.md) objects in a team.|
 |[Create openShift](../api/openshift-post.md)|[openShift](../resources/openshift.md)|Create an instance of an [openShift](../resources/openshift.md) object.|
 |[Get openShift](../api/openshift-get.md)|[openShift](../resources/openshift.md)|Retrieve the properties and relationships of an [openShift](../resources/openshift.md) object.|
 |[Update openShift](../api/openshift-update.md)|[openShift](../resources/openshift.md)|Update the properties of an [openShift](../resources/openshift.md) object.|
 |[Delete openShift](../api/openshift-delete.md)|None|Delete an [openShift](../resources/openshift.md) object.|
-|[getOpenShifts](../api/team-getopenshifts.md)|[openShift](../resources/openshift.md) collection|Get a list of openShift objects from across all schedules the user has access to.|
-|[stageForDeletion](../api/changetrackedentity-stagefordeletion.md)|None|Stage the deletion of an [openShift](../resources/openshift.md) instance in a [schedule](../resources/schedule.md) in draft mode.|
+|[Get open shifts across all joined teams](../api/team-getopenshifts.md)|[openShift](../resources/openshift.md) collection|Get a list of openShift objects from across all schedules the user has access to.|
+|[Stage for deletion](../api/changetrackedentity-stagefordeletion.md)|None|Stage the deletion of an [openShift](../resources/openshift.md) instance in a [schedule](../resources/schedule.md) in draft mode.|
 
 ## Properties
 |Property|Type|Description|
