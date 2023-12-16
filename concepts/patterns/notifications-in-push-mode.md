@@ -1,11 +1,11 @@
 ---
-title: "Get push notifications for data changes by using Microsoft Graph"
+title: "Get real-time updates for data changes by using Microsoft Graph"
 description: "Learn about the Microsoft Graph integration pattern for event-based solutions that rely on change notifications in push mode."
 author: "OlgaPodo"
 ms.localizationpriority: low
 ---
 
-# Get push notifications for data changes by using Microsoft Graph
+# Get real-time updates for data changes by using Microsoft Graph
 
 This article describes a common Microsoft Graph integration pattern for a business scenario that offers enterprise collaboration enhancements for mobile apps to receive a read-only feed of shared messages from Microsoft Teams in near-real time.
 

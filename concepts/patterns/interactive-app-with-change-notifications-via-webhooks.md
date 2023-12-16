@@ -1,11 +1,11 @@
 ---
-title: "Build interactive apps with change notifications and webhooks"
+title: "Build interactive Microsoft Graph apps with real-time feed"
 description: "Learn how to use the Microsoft Graph integration pattern for interactive apps that use change notifications."
 author: "OlgaPodo"
 ms.localizationpriority: low
 ---
 
-# Build interactive Microsoft Graph apps with change notifications via webhooks
+# Build interactive Microsoft Graph apps with real-time feed
 
 This article describes a common Microsoft Graph integration pattern for a business scenario that relies on Microsoft 365 email service data and functionality. It uses Microsoft Graph APIs to read data, call email operations, and receive Microsoft Graph change notifications using webhooks through the WebSocket channel. This scenario has the following architecture requirements:
 
