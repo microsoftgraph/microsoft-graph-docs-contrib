@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-channels, err := graphClient.Teams().ByTeamId("team-id").Channels().ByChannelId("channel-id").Get(context.Background(), nil)
+getAllRetainedMessages, err := graphClient.Teams().ByTeamId("team-id").Channels().GetAllRetainedMessages().Get(context.Background(), nil)
 
 
 ```
