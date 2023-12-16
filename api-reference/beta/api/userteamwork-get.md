@@ -1,5 +1,5 @@
 ---
-title: "Get userTeamwork."
+title: "Get userTeamwor."
 description: "Get user teamwork settings for a user such as user locale and user region."
 author: "mea"
 ms.localizationpriority: high
