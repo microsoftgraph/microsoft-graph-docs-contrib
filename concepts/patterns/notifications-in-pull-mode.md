@@ -1,11 +1,11 @@
 ---
-title: "Get pull notifications for data changes by using Microsoft Graph"
+title: "Retrieve events at your speed by using Microsoft Graph"
 description: "Learn about the Microsoft Graph integration pattern for event-based solutions that rely on change notifications in pull mode."
 author: "OlgaPodo"
 ms.localizationpriority: low
 ---
 
-# Get pull notifications for data changes by using Microsoft Graph
+# Retrieve events at your speed by using Microsoft Graph
 
 This article describes a common Microsoft Graph integration pattern for a business scenario that requires a security analysis of collaboration content to prevent unsafe or inappropriate sharing, transfer, or use of sensitive data, such as in Data Loss Prevention (DLP) scenarios.
 
