@@ -25,7 +25,7 @@ Create and get a Viva Engage community that is a central place for conversations
 
 ### Teams
 
-Pricing update for the Teams meeting APIs starting January 1, 2024. For more details, see [Payment models and licensing requirements for Microsoft Teams APIs](/graph/teams-licenses#payment-requirements-for-meeting-apis).
+Pricing update for the Teams meeting APIs starting January 1, 2024. For more information, see [Payment models and licensing requirements for Microsoft Teams APIs](/graph/teams-licenses#payment-requirements-for-meeting-apis).
 
 ## November 2023: New and generally available
 
