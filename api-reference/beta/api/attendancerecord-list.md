@@ -37,7 +37,7 @@ GET /me/onlineMeetings/{meetingId}/attendanceReports/{reportId}/attendanceRecord
 GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports/{reportId}/attendanceRecords
 ```
 
-To get attendance records of a virtual event session's attendance report:
+To get attendance records of a webinar session's attendance report:
 <!-- {"blockType": "ignored"}-->
 ``` http
 GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports/{reportId}/attendanceRecords
@@ -283,7 +283,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 3: List attendance records of a virtual event session's attendance report
+### Example 3: List attendance records of a webinar session's attendance report
 
 #### Request
 
