@@ -48,12 +48,12 @@ Many business scenarios require multiple integration building blocks to implemen
 
 To explore each of the integration options in more detail, see the following topics:
 
-- [Analyze Microsoft Graph data](./patterns/analyze-storage-data.md)
+- [Analyze Microsoft Graph data in your data storage](./patterns/analyze-storage-data.md)
 - [Build interactive apps](./patterns/interactive-applications.md)
-- [Build interactive apps with real-time feed](./patterns/interactive-app-with-change-notifications-via-webhooks.md) 
-- [Get real-time data updates](./patterns/notifications-in-push-mode.md)
-- [Retrieve events at your speed](./patterns/notifications-in-pull-mode.md)
-- [Augment Microsoft search](./patterns/augment-search-experience-with-custom-data.md)
+- [Build interactive Microsoft Graph apps with real-time feed](./patterns/interactive-app-with-change-notifications-via-webhooks.md) 
+- [Get real-time updates for data changes by using Microsoft Graph](./patterns/notifications-in-push-mode.md)
+- [Retrieve events at your speed by using Microsoft Graph](./patterns/notifications-in-pull-mode.md)
+- [Use Microsoft Graph to augment Microsoft Search with custom data](./patterns/augment-search-experience-with-custom-data.md)
 
 ## See also
 
