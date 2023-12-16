@@ -18,7 +18,7 @@ Represents an entity to track changes made to any supported [schedule](schedule.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[stageForDeletion](../api/changetrackedentity-stagefordeletion.md)|None|Stage an [openShift](../resources/openshift.md) for deletion.|
+|[stageForDeletion](../api/changetrackedentity-stagefordeletion.md)|None|Stage the deletion of an [openShift](../resources/openshift.md) instance in a [schedule](../resources/schedule.md) in draft mode.|
 
 ## Properties
 
