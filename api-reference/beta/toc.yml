@@ -18529,24 +18529,27 @@ items:
                     href: api/teamworkdeviceoperation-list.md
                   - name: Get
                     href: api/teamworkdeviceoperation-get.md
-          - name:  Licensing details (preview)
+          - name: Settings (preview)
             items:
-            - name: Get
-              href: api/licenseDetails-getteamslicensingdetails.md
-          - name: Organization teamwork settings (preview)
-            items:
-              - name: Teamwork
-                href: resources/teamwork.md
+              - name: License details
+                href: resources/licensedetails.md
                 items:
                 - name: Get
-                  href: api/teamwork-get.md
-          - name: User teamwork settings (preview)
-            items:
-              - name: User teamwork
-                href: resources/userteamwork.md
+                  href: api/licenseDetails-getteamslicensingdetails.md
+              - name: Organization settings
                 items:
+                - name: Teamwork
+                  href: resources/teamwork.md
+                  items:
                   - name: Get
-                    href: api/userteamwork-get.md
+                    href: api/teamwork-get.md
+              - name: User settings
+                items:
+                - name: User teamwork
+                  href: resources/userteamwork.md
+                  items:
+                    - name: Get
+                      href: api/userteamwork-get.md
           - name: Employee learning
             displayName: Viva Learning
             items:
