@@ -15,6 +15,11 @@ Namespace: microsoft.graph
 
 Represents an entity to track changes made to any supported [schedule](schedule.md) and associated resource.
 
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[stageForDeletion](../api/changetrackedentity-stagefordeletion.md)|None|Stage an [openShift](../resources/openshift.md) for deletion.|
+
 ## Properties
 
 | Property     | Type        | Description |
