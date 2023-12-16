@@ -62,7 +62,7 @@ GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanc
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 > [!TIP]
-> The **attendanceRecords** property is a navigation property that isn't returned by default. To retrieve **attendanceRecords** in line, use the `$expand=attendanceRecords` query option as shown in the [example](#example).
+> The **attendanceRecords** property is a navigation property that isn't returned by default. To retrieve **attendanceRecords** in line, use the `$expand=attendanceRecords` query option as shown in the [example 1](#example-1-get-the-attendance-report-for-an-online-meeting-by-id).
 
 ## Request headers
 
