@@ -18847,6 +18847,8 @@ items:
                     href: api/team-completemigration.md
                   - name: List permission grants
                     href: api/team-list-permissiongrants.md
+                  - name: List for all joined teams
+                    href: api/team-getopenshifts.md
                   - name: Team template
                     items:
                       - name: Team template
