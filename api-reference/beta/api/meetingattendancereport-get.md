@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Get the [meetingAttendanceReport](../resources/meetingAttendanceReport.md) for an [onlineMeeting](../resources/onlinemeeting.md). Each time an online meeting ends, an attendance report will be generated for that session.
 
 > [!WARNING]
-> This method does not support channel meetings.
+> This method doesn't support channel meetings.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -64,14 +64,14 @@ GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanc
 >
 >- The `/meetingAttendanceReport` path is deprecated. Going forward, use the `/attendanceReports` path to retrieve attendance reports for an online meeting.
 >- The `/meetingAttendanceReport` path will remain in beta for backward compatibility. However, to get the same response, you need to add the `expand` query option. For details, see the [Optional query parameters](#optional-query-parameters) section.
->- The **attendanceRecords** property does not return information about a breakout room.
+>- The **attendanceRecords** property doesn't return information about a breakout room.
 
 ## Optional query parameters
 
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 > [!TIP]
-> The **attendanceRecords** property is a navigation property that is not returned by default. To retrieve **attendanceRecords** in line, use the `$expand=attendanceRecords` query option, as shown in [example 2](#example-2-get-the-latest-attendance-report-for-an-online-meeting).
+> The **attendanceRecords** property is a navigation property that isn't returned by default. To retrieve **attendanceRecords** in line, use the `$expand=attendanceRecords` query option, as shown in [example 2](#example-2-get-the-latest-attendance-report-for-an-online-meeting).
 
 ## Request headers
 
@@ -85,13 +85,17 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [meetingAttendanceReport](../resources/meetingAttendanceReport.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [meetingAttendanceReport](../resources/meetingattendancereport.md) object in the response body.
 
-## Example
+## Examples
 
 ### Example 1: Get the attendance report for an online meeting by ID
 
+The following example shows how to get the attendance report for an online meeting with delegated permission.
+
 #### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -140,7 +144,9 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 
 #### Response
 
-> **Note**: The response object shown here might be shortened for readability.
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -197,7 +203,7 @@ The following example shows a request to get a meeting attendance report for the
 
 #### Request
 
-The following request uses delegated permission.
+The following example shows a request that uses delegated permission.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -251,6 +257,8 @@ GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/
 ```
 
 #### Response
+
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability. 
 
@@ -317,11 +325,14 @@ Content-Type: application/json
 }
 ```
 
-### Example 3:  Get the attendance report for a webinar session by ID
+### Example 3: Get the attendance report for a webinar session by ID
+
+The following example shows how to get the attendance report for a webinar session based on its **id**.
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -329,7 +340,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports/{reportId}
+GET https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports/{reportId}
 ```
 
 # [C#](#tab/csharp)
@@ -369,6 +380,7 @@ GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanc
 #### Response
 
 The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
