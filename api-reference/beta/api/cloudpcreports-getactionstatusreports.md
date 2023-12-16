@@ -1,6 +1,6 @@
 ---
 title: "cloudPcReports: getActionStatusReports"
-description: "Get the remote actions status reports including CloudPcId,CloudPCDeviceDisplayName, InitiatedByUserPrincipalName,DeviceOwnerUserPrincipalName, Action, ActionState and so on."
+description: "Get the remote action status reports."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the remote actions status reports including CloudPcId,CloudPCDeviceDisplayName, InitiatedByUserPrincipalName,DeviceOwnerUserPrincipalName, Action, ActionState and so on.
+Get the remote action status reports. This report contains data such as CloudPcId, CloudPCDeviceDisplayName, InitiatedByUserPrincipalName,DeviceOwnerUserPrincipalName, Action, ActionState, and so on.
 
 ## Permissions
 
@@ -50,13 +50,13 @@ The following table shows the parameters that can be used with this method.
 
 | Parameter | Type              | Description                                                                                |
 |:----------|:------------------|:-------------------------------------------------------------------------------------------|
-| filter    | String            | OData `$filter` syntax. Only `and`, `or`, `gt` ,`ge` and `eq` are currently supported.     |
-| select    | String collection | OData `$select` syntax. Represents the selected columns of the reports.                    |
+| filter    | String            | OData `$filter` syntax. Supported filters are: `and`, `or`, `gt` ,`ge`, and `eq`.     |
+| groupBy   | String collection | Specifies how to group the reports. If used, must have the same content as the **select** parameter.|
+| orderBy   | String collection | Specifies the order by columns name. The default **orderBy** column is `RequestDateTime`.        |
 | search    | String            | Specifies a String to search for.                                                          |
-| groupBy   | String collection | Specifies how to group the reports. If used, must have the same content as the select parameter.|
-| orderBy   | String collection | Specifies the order by columns name. The default orderBy column is RequestDateTime.        |
+| select    | String collection | OData `$select` syntax. The selected columns of the reports.                    |
 | skip      | Int32             | Number of records to skip.                                                                 |
-| top       | Int32             | The number of top records to return, if not defined the default top is 25 and max is 100.  |
+| top       | Int32             | The number of top records to return. If not specified, the default limit is 25, with a maximum of 100.  |
 
 ## Response
 
@@ -67,6 +67,7 @@ If successful, this method returns a `200 OK` response code and a Stream object 
 ### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "cloudpcreports.getActionStatusReports"
@@ -78,16 +79,32 @@ Content-Type: application/json
 Content-length: 199
 
 {
-    "filter": "ActionState eq 'failed'",
-    "select":["Id", "CloudPcDeviceDisplayName", "BulkActionId", "BulkActionDisplayName", "CloudPcId", "InitiatedByUserPrincipalName","DeviceOwnerUserPrincipalName", "Action", "ActionState", "RequestDateTime", "LastUpdatedDateTime", "ActionParameters"],
-    "skip": 0,
-    "top": 50
+  "filter": "ActionState eq 'failed'",
+  "select": [
+    "Id",
+    "CloudPcDeviceDisplayName",
+    "BulkActionId",
+    "BulkActionDisplayName",
+    "CloudPcId",
+    "InitiatedByUserPrincipalName",
+    "DeviceOwnerUserPrincipalName",
+    "Action",
+    "ActionState",
+    "RequestDateTime",
+    "LastUpdatedDateTime",
+    "ActionParameters"
+  ],
+  "skip": 0,
+  "top": 50
 }
 ```
 
 ### Response
 
 The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -99,59 +116,74 @@ HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
 {
-    "TotalRowCount": 1,
-    "Schema": [
-        {
-            "Column": "Id",
-            "PropertyType": "String"
-        }
-        {
-            "Column": "CloudPcDeviceDisplayName",
-            "PropertyType": "String"
-        },
-        {
-            "Column": "BulkActionId",
-            "PropertyType": "String"
-        },
-        {
-            "Column": "BulkActionDisplayName",
-            "PropertyType": "String"
-        },
-        {
-            "Column": "CloudPcId",
-            "PropertyType": "String"
-        },
-        {
-            "Column": "InitiatedByUserPrincipalName",
-            "PropertyType": "String"
-        },
-        {
-            "Column": "DeviceOwnerUserPrincipalName",
-            "PropertyType": "String"
-        },
-        {
-            "Column": "Action",
-            "PropertyType": "String"
-        },
-        {
-            "Column": "ActionState",
-            "PropertyType": "String"
-        },
-        {
-            "Column": "RequestDateTime",
-            "PropertyType": "DateTime"
-        },
-        {
-            "Column": "LastUpdatedDateTime",
-            "PropertyType": "DateTime"
-        },
-        {
-            "Column": "ActionParameters",
-            "PropertyType": "Json"
-        }],
-    "Values": [
-        ["662009bc-7732-4f6f-8726-25883518b33e", "CloudPC-Connie", "bdc8e6dd-0455-4412-83d9-c818664fe1f1", "Resize to 64GB RAM - John", "bdc8e6dd-0455-4412-83d9-c818664fe1f1", "john@cpccustomer001.onmicrosoft.com", "connie@cpccustomer001.onmicrosoft.com", "Resize", "failed", "2020-07-23T10:10:57Z", "2023-07-23T18:14:34Z", "{"targetServicePlanId": "3bba9856-7cf2-4396-904a-00de74fba3a4"}"]
+  "TotalRowCount": 1,
+  "Schema": [
+    {
+      "Column": "Id",
+      "PropertyType": "String"
+    },
+    {
+      "Column": "CloudPcDeviceDisplayName",
+      "PropertyType": "String"
+    },
+    {
+      "Column": "BulkActionId",
+      "PropertyType": "String"
+    },
+    {
+      "Column": "BulkActionDisplayName",
+      "PropertyType": "String"
+    },
+    {
+      "Column": "CloudPcId",
+      "PropertyType": "String"
+    },
+    {
+      "Column": "InitiatedByUserPrincipalName",
+      "PropertyType": "String"
+    },
+    {
+      "Column": "DeviceOwnerUserPrincipalName",
+      "PropertyType": "String"
+    },
+    {
+      "Column": "Action",
+      "PropertyType": "String"
+    },
+    {
+      "Column": "ActionState",
+      "PropertyType": "String"
+    },
+    {
+      "Column": "RequestDateTime",
+      "PropertyType": "DateTime"
+    },
+    {
+      "Column": "LastUpdatedDateTime",
+      "PropertyType": "DateTime"
+    },
+    {
+      "Column": "ActionParameters",
+      "PropertyType": "Json"
+    }
+  ],
+  "Values": [
+    [
+      "662009bc-7732-4f6f-8726-25883518b33e",
+      "CloudPC-Connie",
+      "bdc8e6dd-0455-4412-83d9-c818664fe1f1",
+      "Resize to 64GB RAM - John",
+      "bdc8e6dd-0455-4412-83d9-c818664fe1f1",
+      "john@cpccustomer001.onmicrosoft.com",
+      "connie@cpccustomer001.onmicrosoft.com",
+      "Resize",
+      "failed",
+      "2020-07-23T10:10:57Z",
+      "2023-07-23T18:14:34Z",
+      {
+        "targetServicePlanId": "3bba9856-7cf2-4396-904a-00de74fba3a4"
+      }
     ]
+  ]
 }
 ```
-
