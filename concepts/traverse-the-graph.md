@@ -155,10 +155,9 @@ Content-type: application/json
 }
 ```
 
-
-
-
 ## View a specific resource from a collection by ID
+
+For most entities in Microsoft Graph, the **id** is the primary key.
 
 Continuing with using **user** as an example - to view the information about a user, use an HTTPS GET request to get a specific user by the user's ID. For a **user** entity, you can use either the **id** or **userPrincipalName** property as the identifier.
 
@@ -198,6 +197,26 @@ content-length: 982
     ...
 }
 ```
+
+## View a specific resource from a collection by alternate key
+
+Some entities support an alternate key, which you can use to retrieve an object instead of the primary key ID. For example, the [application](/graph/api/resources/application) and [servicePrincipal](/graph/api/resources/serviceprincipal) entities support the **appId** alternate key.
+
+The following example uses the alternate key syntax to retrieve a service principal by its **appId**.
+
+# [HTTP](#tab/http)
+```http
+GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000-c000-000000000000') HTTP/1.1
+Authorization : Bearer {access_token}
+```
+
+# [cURL](#tab/curl)
+```bash
+curl --location 'https://graph.microsoft.com/v1.0/servicePrincipals(appId='\''00000003-0000-0000-c000-000000000000'\'')' \
+--header 'Authorization: Bearer eyJ0eXAiOiJK...gCZooG6A'
+```
+
+---
 
 ## Read specific properties of a resource
 To retrieve only the user's biographical data, such as the user's provided _About me_ description and their skill set, you can add the [$select](query-parameters.md) query parameter to the previous request, as shown in the following example.
@@ -242,6 +261,26 @@ When you make a GET request without using `$select` to limit the amount of prope
 ```html
 "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET groups?$select=appMetadata,assignedLabels",
 ```
+
+## Read only one property of a resource
+
+You can retrieve a single property of a resource without using `$select`, by specifying the property name as a path segment. This query doesn't allow you to retrieve multiple properties, but it can be useful when you only need a single property.
+
+The following example retrieves the **displayName** of a user.
+
+# [HTTP](#tab/http)
+```http
+GET https://graph.microsoft.com/beta/users/8afc02cb-4d62-4dba-b536-9f6d73e9be26/displayName HTTP/1.1
+Authorization : Bearer {access_token}
+```
+
+# [cURL](#tab/curl)
+```bash
+curl --location 'https://graph.microsoft.com/beta/users/8afc02cb-4d62-4dba-b536-9f6d73e9be26/displayName' \
+--header 'Authorization: Bearer eyJ0eXAiO...DZzY1aO3hym0eQ'
+```
+
+---
 
 ## Read specific properties of the resources in a collection
 In addition to reading specific properties of a single resource, you can also apply the similar [$select](query-parameters.md) query parameter to a collection to get back all resources in the collection with just the specific properties returned on each.

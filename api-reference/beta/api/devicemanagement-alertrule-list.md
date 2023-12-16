@@ -130,6 +130,15 @@ Content-Type: application/json
               "operator": "greaterOrEqual",
               "target": 90
           },
+          "conditions": [
+              {
+                "relationshipType": "or",
+                "conditionCategory": "azureNetworkConnectionCheckFailures",
+                "aggregation": "count",
+                "operator": "greaterOrEqual",
+                "thresholdValue": "90"
+              }
+          ],
           "notificationChannels": [
               {
                 "notificationChannelType": "portal",
@@ -159,6 +168,15 @@ Content-Type: application/json
               "operator": "greaterOrEqual",
               "target": 2
           },
+          "conditions": [
+              {
+                "relationshipType": "or",
+                "conditionCategory": "imageUploadFailures",
+                "aggregation": "count",
+                "operator": "greaterOrEqual",
+                "thresholdValue": "2"
+              }
+            ],
           "notificationChannels": [
               {
                 "notificationChannelType": "portal",
@@ -188,6 +206,15 @@ Content-Type: application/json
               "operator": "greaterOrEqual",
               "target": 1
           },
+          "conditions": [
+              {
+                "relationshipType": "or",
+                "conditionCategory": "provisionFailures",
+                "aggregation": "count",
+                "operator": "greaterOrEqual",
+                "thresholdValue": "1"
+              }
+          ],
           "notificationChannels": [
               {
                 "notificationChannelType": "portal",

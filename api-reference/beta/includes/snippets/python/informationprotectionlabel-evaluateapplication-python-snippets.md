@@ -72,12 +72,9 @@ request_body = EvaluateApplicationPostRequestBody(
 	),
 )
 
-request_configuration = EvaluateApplicationRequestBuilder.EvaluateApplicationRequestBuilderPostRequestConfiguration(
-headers = {
-		'User-Agent' : "ContosoLOBApp/1.0",
-}
+request_configuration = EvaluateApplicationRequestBuilder.EvaluateApplicationRequestBuilderPostRequestConfiguration()
+request_configuration.headers.add("User-Agent", "ContosoLOBApp/1.0")
 
-)
 
 result = await graph_client.information_protection.policy.labels.evaluate_application.post(request_body, request_configuration = request_configuration)
 

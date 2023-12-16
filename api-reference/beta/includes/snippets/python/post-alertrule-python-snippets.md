@@ -37,6 +37,17 @@ request_body = AlertRule(
 			],
 		),
 	],
+	additional_data = {
+			"conditions" : [
+				{
+						"relationship_type" : "or",
+						"condition_category" : "azureNetworkConnectionCheckFailures",
+						"aggregation" : "count",
+						"operator" : "greaterOrEqual",
+						"threshold_value" : "90",
+				},
+			],
+	}
 )
 
 result = await graph_client.device_management.monitoring.alert_rules.post(request_body)

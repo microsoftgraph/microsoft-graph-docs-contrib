@@ -16,11 +16,9 @@ query_params = GroupRequestBuilder.GroupRequestBuilderGetQueryParameters(
 
 request_configuration = GroupRequestBuilder.GroupRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
-headers = {
-			'ConsistencyLevel' : "eventual",
-}
-
 )
+request_configuration.headers.add("ConsistencyLevel", "eventual")
+
 
 result = await graph_client.directory.deleted_items.graph_group.get(request_configuration = request_configuration)
 
