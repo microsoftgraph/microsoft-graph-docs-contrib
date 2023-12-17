@@ -59,12 +59,9 @@ request_body = ExtractLabelPostRequestBody(
 	),
 )
 
-request_configuration = ExtractLabelRequestBuilder.ExtractLabelRequestBuilderPostRequestConfiguration(
-headers = {
-		'User-Agent' : "ContosoLOBApp/1.0",
-}
+request_configuration = ExtractLabelRequestBuilder.ExtractLabelRequestBuilderPostRequestConfiguration()
+request_configuration.headers.add("User-Agent", "ContosoLOBApp/1.0")
 
-)
 
 result = await graph_client.information_protection.policy.labels.extract_label.post(request_body, request_configuration = request_configuration)
 
