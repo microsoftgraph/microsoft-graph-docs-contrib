@@ -1,6 +1,6 @@
 ---
 title: "educationAssignment: delta"
-description: "Get a list of newly created or updated assignments without having to perform a full ready of the collection."
+description: "Get a list of newly-created or updated assignments without reading the entire collection."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of newly created or updated [assignments](../resources/educationassignment.md) without having to perform a full ready of the collection.
+Get a list of newly-created or updated [assignments](../resources/educationassignment.md) without reading the entire collection.
 
 A teacher or an application running with application permissions can see all **assignment** objects for the class. Students can only see **assignments** that are assigned to them.
 
@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## Optional query parameters
 
-This method does not support the `$expand`, `$orderby`, `$search`, and `$filter` OData query parameters.
+This method doesn't support the `$expand`, `$orderby`, `$search`, and `$filter` OData query parameters.
 
 This method only supports the `$top` OData query parameter.
 
@@ -67,7 +67,7 @@ If successful, this function returns a `200 OK` response code and an [educationA
 
 The following example shows a request.
 
-Use the `$top` parameter to specify the number of assignments to be returned. The parameter is optional but use it preferably when you have a long list of assignments; otherwise, you will get all the assignments in the class.
+Use the `$top` parameter to specify the number of assignments to be returned. The parameter is optional but use it preferably when you have a long list of assignments. Otherwise, you get all the assignments in the class.
 
 # [HTTP](#tab/http)
 

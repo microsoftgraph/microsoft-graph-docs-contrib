@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of assignment objects. Only teachers, students, and applications with application permissions can perform this operation.
+Retrieve a list of [educationAssignment](../resources/educationassignment.md) objects. Only teachers, students, and applications with application permissions can perform this operation.
 
 A teacher or an application executing with application permissions can see all assignment objects for the class. Students can only see assignments that are assigned to them.
 
@@ -37,7 +37,7 @@ GET /education/classes/{id}/assignments
 
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
-The available `$expand` options for this method are: `categories`, `resources`, `rubric`, `submissions` and `*` which includes all the previous options.
+The available `$expand` options for this method are: `categories`, `resources`, `rubric`, `submissions` and `*`, which includes all the previous options.
 
 All [properties](/graph/api/resources/educationassignment#properties) are supported for the query parameters `$filter` and `$orderby`.
 

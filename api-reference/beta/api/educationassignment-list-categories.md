@@ -1,6 +1,6 @@
 ---
 title: "List categories"
-description: "List all the categories associated with an assignment."
+description: "List all categories for an assignment."
 author: "Sureshpadimi88"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all the categories associated with an [assignment](../resources/educationassignment.md). Only teachers, students, and applications with application permissions can perform this operation.
+List all categories for an [assignment](../resources/educationassignment.md). Only teachers, students, and applications with application permissions can perform this operation.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

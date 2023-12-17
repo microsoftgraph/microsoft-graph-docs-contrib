@@ -1,6 +1,6 @@
 ---
 title: "List submittedResources"
-description: "List the resources that have officially been submitted for grading."
+description: "List the resources that were officially submitted for grading."
 author: "Sureshpadimi88"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -11,9 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-List the [educationSubmissionResource](../resources/educationsubmissionresource.md) objects that have officially been submitted for grading. Only teachers, students, and applications with application permissions can perform this operation.
+List the [educationSubmissionResource](../resources/educationsubmissionresource.md) objects that were officially submitted for grading. Only teachers, students, and applications with application permissions can perform this operation.
 
-The student who owns the submission cannot change the submitted list without resubmitting the assignment. This is a wrapper around the real resource and can contain a pointer back to the actual assignment resource if this resource was copied from the assignment.
+The student who owns the submission can't change the submitted list without resubmitting the assignment. This resource is a wrapper around the real resource and can contain a pointer back to the actual assignment resource if this resource was copied from the assignment.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -33,7 +33,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/submittedResources
 
 ## Optional query parameters
 
-TThis method supports the `$top`, `$filter`, `$orderby`, and `$select` OData query parameters to help customize the response.
+This method supports the `$top`, `$filter`, `$orderby`, and `$select` OData query parameters to help customize the response.
 For general information, see [OData query parameters](/graph/query-parameters).
 
 All [properties](/graph/api/resources/educationsubmissionresource#properties) are supported for the query parameters `$filter` and `$orderby`.

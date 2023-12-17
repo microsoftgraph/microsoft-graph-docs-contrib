@@ -1,6 +1,6 @@
 ---
 title: "List submittedResources"
-description: "List the resources that have officially been submitted for grading. The student who owns the submission cannot change the submitted list without resubmitting the assignment. This is a wrapper around the real resource and can contain a pointer back to the actual assignment resource if this resource was copied from the assignment."
+description: "List the resources that were officially submitted for grading."
 author: "Sureshpadimi88"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the [educationSubmissionResource](../resources/educationsubmissionresource.md) objects that have officially been submitted for grading. Only teachers, students, and applications with application permissions can perform this operation.
+List the [educationSubmissionResource](../resources/educationsubmissionresource.md) objects that were officially submitted for grading. Only teachers, students, and applications with application permissions can perform this operation.
 
-The student who owns the submission cannot change the submitted list without resubmitting the assignment. This is a wrapper around the real resource and can contain a pointer back to the actual assignment resource if this resource was copied from the assignment.
+The student who owns the submission can't change the submitted list without resubmitting the assignment. This resource is a wrapper around the real resource and can contain a pointer back to the actual assignment resource if this resource was copied from the assignment.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

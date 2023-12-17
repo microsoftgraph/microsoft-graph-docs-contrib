@@ -1,6 +1,6 @@
 ---
 title: "educationAssignment: delta"
-description: "Get a list of newly created or updated assignments without having to perform a full read of the collection."
+description: "Get a list of newly-created or updated assignments without reading the whole collection."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get a list of newly created or updated [assignments](../resources/educationassignment.md) without having to perform a full read of the collection.
+Get a list of newly-created or updated [assignments](../resources/educationassignment.md) without reading the whole collection.
 
 A teacher or an application running with application permissions can see all **assignment** objects for the class. Students can only see **assignments** that are assigned to them.
 
@@ -63,7 +63,7 @@ If successful, this function returns a `200 OK` response code and an [educationA
 
 The following example shows a request.
 
-Use the `$top` parameter to specify the number of assignments to be returned. The parameter is optional. Use it when you have a long list of assignments; otherwise, you will get all the assignments in the class.
+Use the `$top` parameter to specify the number of assignments to be returned. The parameter is optional. Use it when you have a long list of assignments. Otherwise, you get all the assignments in the class.
 
 # [HTTP](#tab/http)
 

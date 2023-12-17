@@ -1,6 +1,6 @@
 ---
 title: "List assignment resources"
-description: "Get all the resources associated with an assignment."
+description: "Get all the resources for an assignment."
 author: "Sureshpadimi88"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all the [educationAssignmentResource](../resources/educationassignmentresource.md) objects associated with an [assignment](../resources/educationassignment.md). Only teachers, students, and applications with application permissions can perform this operation.
+Get all the [educationAssignmentResource](../resources/educationassignmentresource.md) objects for an [assignment](../resources/educationassignment.md). Only teachers, students, and applications with application permissions can perform this operation.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -107,9 +107,6 @@ GET https://graph.microsoft.com/beta/education/classes/f4a941ff-9da6-4707-ba5b-0
 ---
 
 ### Response
-
-The following example shows the response.
-
 
 The following example shows the response.
 
