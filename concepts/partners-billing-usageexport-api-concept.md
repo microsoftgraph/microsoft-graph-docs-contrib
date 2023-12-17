@@ -20,13 +20,13 @@ The asynchronous API provides the following advantages:
 
 ·    Improved access speed by splitting the blobs into manageable chunks.
 
-·    No changes are required to the existing data models.
+·    No changes are required to the existing data models. 
 
- 
 
-# Understanding the Asynchronous API Model
+## Sequence diagram
+The following diagram depicts the steps needed to download reconciliation data.
 
- 
+![Export data sequence diagram](../includes/images/lro_sequencediagram.png)
 
 To access the usage data asynchronously, follow these steps using the API endpoints:
 
@@ -38,14 +38,7 @@ To access the usage data asynchronously, follow these steps using the API endpoi
 
 **2. Operation status endpoint** 
 
-•    Poll the URL repeatedly until the manifest URL is returned. 
+•    Poll the URL repeatedly until the manifest is returned. 
 
-•    The API response includes a Retry-After header that indicates the interval between requests.
-
-**3. Manifest endpoint** 
-
-•    Access the storage folder provided by this endpoint to download the actual billing data. 
-
-•    The response partitions the files to enhance throughput and I/O parallelism.
 
  

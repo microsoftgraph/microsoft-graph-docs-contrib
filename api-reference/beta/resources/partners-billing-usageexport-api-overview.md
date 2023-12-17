@@ -28,19 +28,6 @@ Use this API to access billed or unbilled consumption line items. It returns a 2
 ### Operation status endpoint
 Until you receive the success status, keep polling this API at a regular interval. If the requested data is unavailable, the API response includes a Retry-After header indicating how long you should wait before sending another request. When operation has completed successfully, response also provides [manifest](../resources/partners-billing-manifest.md) with details of the generated files. Manifest provides a storage folder from which actual billing data can be downloaded. The response splits or partitions the files to optimize throughput and I/O parallelism
 
-## Sequence diagram
-The following diagram depicts the steps needed to download reconciliation data.
-
-![Export data sequence diagram](../includes/images/lro_sequencediagram.png)
-
-1. [Export billed usage data](../api/partners-billing-billedusage-export.md)
-2. [Export unbilled usage data](../api/partners-billing-unbilledusage-export.md)
-3. [Check status of export operation](../api/partners-billing-operation-get.md)
-4. [Get export manifest to download files](../api/partners-billing-manifest-get.md)
-
-Client should check the status of [Export billed reconciliation data](../api/partners-billing-billedusage-export.md) or [Export unbilled reconciliation data](../api/partners-billing-unbilledusage-export.md) API by polling [Check status of export operation](../api/partners-billing-operation-get.md), 
-until it returns a terminal status of succeeded or failed. The manifest is a "resourceLocation" in the success status.
-
 ## Use cases for reconciliation APIs
 
 This section describes the ways that Microsoft partners can use the billing APIs to programmatically get their billing and reconciliation data.
