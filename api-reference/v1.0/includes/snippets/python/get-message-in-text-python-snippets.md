@@ -14,11 +14,9 @@ query_params = MessageItemRequestBuilder.MessageItemRequestBuilderGetQueryParame
 
 request_configuration = MessageItemRequestBuilder.MessageItemRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
-headers = {
-			'Prefer' : "outlook.body-content-type=\"text\"",
-}
-
 )
+request_configuration.headers.add("Prefer", "outlook.body-content-type=\"text\"")
+
 
 result = await graph_client.me.messages.by_message_id('message-id').get(request_configuration = request_configuration)
 

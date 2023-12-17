@@ -20,6 +20,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "organizationalbranding_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/organizationalbranding-delete-permissions.md)]
 
+[!INCLUDE [rbac-org-branding-apis-write](../includes/rbac-for-apis/rbac-org-branding-apis-write.md)]
+
 ## HTTP request
 
 <!-- {

@@ -77,7 +77,6 @@ GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsof
 
 ---
 
-
 ### Response
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.

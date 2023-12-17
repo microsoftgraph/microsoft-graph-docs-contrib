@@ -15,7 +15,7 @@ Read the properties and relationships of a [userFlowLanguageConfiguration](../re
 
 **Note:** Language customization is enabled by default in [Microsoft Entra user flows](../resources/b2xidentityuserflow.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 

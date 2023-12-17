@@ -47,3 +47,4 @@ When customizing privacy for people insights, you can observe behavioral changes
 * Microsoft 365 [profile card](https://support.microsoft.com/office/profile-cards-in-microsoft-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501)
 * User profile in Delve
 * [Listing relevant people](/graph/api/user-list-people)
+* [Org Explorer](/viva/people-in-viva/introducing-org-explorer)

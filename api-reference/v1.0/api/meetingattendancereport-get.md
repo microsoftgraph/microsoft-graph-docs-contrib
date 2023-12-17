@@ -16,7 +16,7 @@ Get the [meetingAttendanceReport](../resources/meetingAttendanceReport.md) for a
 > [!WARNING]
 > This method does not support channel meetings.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -38,12 +38,20 @@ GET /me/onlineMeetings/{meetingId}/attendanceReports/{reportId}
 GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports/{reportId}
 ```
 
+To get an attendance report for a webinar session by ID:
+<!-- { "blockType": "ignored" }-->
+``` http
+GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports/{reportId}
+```
+
 > [!TIP]
 >
 >- **userId** is the object ID of a user in [Microsoft Entra admin center > user management page](https://entra.microsoft.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 >- `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
 >- `reportId` is the **id** of an [meetingAttendanceReport](../resources/meetingAttendanceReport.md) object.
->- Only the meeting organizer or co-organizer can access this API.
+>- `webinarId` is the **id** of an [virtualEventWebinar](../resources/virtualEventWebinar.md) object.
+>- `sessionId` is the **id** of an [virtualEventSession](../resources/virtualEventSession.md) object.
+>- Only the meeting/webinar organizer or co-organizer can access this API.
 
 > [!CAUTION]
 >
@@ -172,5 +180,42 @@ Content-Type: application/json
       ]
     }
   ]
+}
+```
+
+### Example 3:  Get the attendance report for a webinar session by ID
+
+#### Request
+
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "get_virtualeventattendancereport"
+}
+-->
+``` http
+GET /solutions/virtualEvents/webinars/f8ce2a5f-0e6a-4186-aa90-1f64bc023566@5466a424-aadf-425c-9b24-034ca28d4bdd/sessions/8d62dd52-4dff-4c75-96a9-f905cc3ff942/attendanceReports/b76965d4-0763-496e-9980-b323c5f3aa3b
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.meetingAttendanceReport"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/virtualEvents/webinars('f8ce2a5f-0e6a-4186-aa90-1f64bc023566@5466a424-aadf-425c-9b24-034ca28d4bdd')/sessions('8d62dd52-4dff-4c75-96a9-f905cc3ff942')/attendanceReports('b76965d4-0763-496e-9980-b323c5f3aa3b')",
+  "id": "b76965d4-0763-496e-9980-b323c5f3aa3b",
+  "totalParticipantCount": 2,
+  "meetingStartDateTime": "2021-10-04T23:13:31.658Z",
+  "meetingEndDateTime": "2021-10-04T23:18:57.563Z"
 }
 ```
