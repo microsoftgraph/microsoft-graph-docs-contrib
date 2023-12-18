@@ -108,7 +108,6 @@ GET /identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.privil
 
 ---
 
-
 ### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.

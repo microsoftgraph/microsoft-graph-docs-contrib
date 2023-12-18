@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Beta.Calendar
 
-Get-MgBetaPlaceWorkspace -PlaceId $placeId
+Get-MgBetaPlaceAsRoomListWorkspace -PlaceId $placeId
 
 ```

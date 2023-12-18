@@ -43,6 +43,9 @@ Delegated access requires *delegated permissions*, also referred to as *scopes*.
 
 Because both the app and the user must be authorized to make the request, the resource grants the client app the delegated permissions, for the client app to access data on behalf of the specified user. For the user, the actions that they can perform on the resource rely on the permissions that they have to access the resource. For example, the user might be the owner of the resource, or they might be assigned a particular role through a role-based access control system (RBAC) such as [Microsoft Entra RBAC](/azure/active-directory/roles/custom-overview).
 
+> [!NOTE]
+> Endpoints and APIs with the `/me` alias operate on the signed-in user only and are therefore called in delegated access scenarios.
+
 ### App-only access (access without a user)
 
 In this access scenario, the application can interact with data on its own, without a signed in user. *App-only* access is used in scenarios such as automation and backup, and is mostly used by apps that run as background services or daemons. It's suitable when it's undesirable to have a user signed in, or when the data required can't be scoped to a single user.
@@ -53,7 +56,7 @@ Apps get privileges to call Microsoft Graph with their own identity through one 
 - When the app is assigned ownership of the resource that it intends to manage
 
 > [!NOTE]
-> An app can also get privileges through permissions granted by a role-based access control system such as [Microsoft Entra RBAC](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+> An app can also get privileges through permissions granted by a role-based access control system such as [Microsoft Entra RBAC](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 ## Microsoft Graph permissions
 
