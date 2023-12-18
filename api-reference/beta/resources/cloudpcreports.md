@@ -20,7 +20,7 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[getActionStatusReports](../api/cloudpcreports-getactionstatusreports.md)|Stream|Get the remote actions status reports including CloudPcId,CloudPCDeviceDisplayName, InitiatedByUserPrincipalName,DeviceOwnerUserPrincipalName, Action, ActionState and so on.|
+|[getActionStatusReports](../api/cloudpcreports-getactionstatusreports.md)|Stream|Get the remote action status reports. This report includes data such as the cloud PC ID, cloud PC device display name, initiating user's principal name, device owner's user principal name, action taken, action state, and so on.|
 |[getConnectionQualityReports](../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md)|Stream|Get the overall connection quality reports for all devices within a current tenant during a given period, including metrics like the average round trip time (P50), average available bandwidth, and UDP connection percentage. Get other real-time metrics such as last connection round trip time, last connection client IP, last connection gateway, and last connection protocol.|
 |[getDailyAggregatedRemoteConnectionReports](../api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md)|Stream|Get the daily aggregated remote connection reports like round trip time and available bandwidth in a given period.|
 |[getInaccessibleCloudPcReports](../api/cloudpcreports-getinaccessiblecloudpcreports.md)|Stream|Get inaccessible Cloud PCs with details, including the latest health state, failed connection count, failed health check count, and system status.|
