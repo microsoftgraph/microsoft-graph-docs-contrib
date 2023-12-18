@@ -23,7 +23,6 @@ const onPremisesDirectorySynchronization = {
 };
 
 await client.api('/directory/onPremisesSynchronization/{id}')
-	.version('beta')
 	.update(onPremisesDirectorySynchronization);
 
 ```

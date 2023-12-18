@@ -34,9 +34,9 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | coOrganizers  | [communicationsUserIdentity](communicationsuseridentity.md) collection | Identity information of coorganizers of the webinar. |
 | createdBy | [communicationsIdentitySet](communicationsidentityset.md) | Identity information of who created the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
 | description | String | Description of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
-| displayName | String | Display name of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
-| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | End time of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
-| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Start time of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
+| displayName | String | The display name of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
+| endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | End time of the webinar. The **timeZone** property _can_ be set to any of the [time zones currently supported by Windows](/windows-hardware/manufacture/desktop/default-time-zones). Inherited from [virtualEvent](../resources/virtualevent.md). |
+| startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Start time of the webinar. The **timeZone** property _can_ be set to any of the [time zones currently supported by Windows](/windows-hardware/manufacture/desktop/default-time-zones). Inherited from [virtualEvent](../resources/virtualevent.md). |
 | id | String | Unique identifier of the webinar. Inherited from [entity](../resources/entity.md).|
 | status | [virtualEventStatus](#virtualeventstatus-values) | Status of the webinar. |
 
@@ -53,16 +53,14 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | Value | Description |
 | ----- | ----------- |
 | draft | The webinar is in draft and only visible to the organizer. |
-| published | The webinar has been published by the organizer and visible to the audience. |
-| canceled | The webinar has been canceled by the organizer. |
+| published | The organizer published the webinar and it's visible to the audience. |
+| canceled | The the organizer canceled the webinar. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 
 | Relationship | Type | Description |
 | ------------ | ---- | ----------- |
-| presenters | [virtualEventPresenter](../resources/virtualeventpresenter.md) collection | Presenters' information of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md).|
-| registrationConfiguration | [virtualEventRegistrationConfiguration](../resources/virtualeventregistrationconfiguration.md) | Registration configuration of the webinar. |
 | registrations | [virtualEventRegistration](../resources/virtualeventregistration.md) collection | Registration records of the webinar. |
 | sessions | [virtualEventSession](../resources/virtualeventsession.md)  collection | Sessions of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
 

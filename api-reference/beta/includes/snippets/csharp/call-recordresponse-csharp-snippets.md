@@ -6,9 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Communications.Calls.Item.RecordResponse;
+using Microsoft.Graph.Beta.Models;
 
-var requestBody = new Microsoft.Graph.Beta.Communications.Calls.Item.RecordResponse.RecordResponsePostRequestBody
+var requestBody = new RecordResponsePostRequestBody
 {
 	BargeInAllowed = true,
 	ClientContext = "d45324c1-fcb5-430a-902c-f20af696537c",
@@ -35,6 +37,8 @@ var requestBody = new Microsoft.Graph.Beta.Communications.Calls.Item.RecordRespo
 		"*",
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Communications.Calls["{call-id}"].RecordResponse.PostAsync(requestBody);
 
 

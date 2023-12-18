@@ -35,7 +35,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks). F
 
 > [!CAUTION]
 > 
-> Graph Online Meeting APIs that support Microsoft Teams live event is deprecated and will stop functioning on September 30, 2024. New Graph APIs will replace this in Spring of 2024. For more information see the [blog post](https://devblogs.microsoft.com/microsoft365dev/deprecation-of-teams-live-events-api-on-microsoft-graph/). 
+> Graph Online Meeting APIs that support Microsoft Teams live event is deprecated and will stop functioning on September 30, 2024. New Graph APIs will replace this in Spring of 2024. For more information, see [Retirement of Teams live events API on Microsoft Graph](https://devblogs.microsoft.com/microsoft365dev/deprecation-of-teams-live-events-api-on-microsoft-graph/). 
 
 ## Properties
 
@@ -89,7 +89,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks). F
 | organization       | Everyone in organizer’s organization is a presenter.          |
 | roleIsPresenter    | Only the participants whose role is presenter are presenters. |
 | organizer          | Only the organizer  is a presenter.                           |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use.             |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.             |
 
 > [!TIP]
 >
@@ -102,7 +102,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks). F
 | enabled            | Meeting chat is enabled.                                               |
 | disabled           | Meeting chat is disabled.                                              |
 | limited            | Meeting chat is enabled but only for the duration of the meeting call. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use.                      |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                      |
 
 ### meetingChatHistoryDefaultMode values
 
@@ -110,7 +110,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks). F
 | ------------------ | ---------------------------------------------------------------------- |
 | all                | All meeting chat history is shared.                                    |
 | none               | No meeting chat history is shared.                                     |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use.                      |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                      |
 
 ## Relationships
 
@@ -128,6 +128,8 @@ This resource supports subscribing to [change notifications](/graph/webhooks). F
 >- The type of **registration** can be [meetingRegistration](meetingregistration.md) or [externalMeetingRegistration](externalmeetingregistration.md), both of which inherit from [meetingRegistrationBase](meetingregistrationbase.md).
 
 ## JSON representation
+
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",

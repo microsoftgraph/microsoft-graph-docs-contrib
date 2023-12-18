@@ -28,6 +28,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
+|goals|[goals](../resources/goals.md) collection|Represents a collection of goals in a Viva Goals organization.|
 |learningProviders|[learningProvider](../resources/learningprovider.md) collection|A collection of learning providers.|
 
 ## JSON representation

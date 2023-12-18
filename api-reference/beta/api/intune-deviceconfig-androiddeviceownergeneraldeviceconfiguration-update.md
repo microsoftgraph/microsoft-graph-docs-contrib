@@ -198,6 +198,8 @@ The following table shows the properties that are required when you create the [
 |locateDeviceUserlessDisabled|Boolean|Indicates whether or not LocateDevice for userless (COSU) devices is disabled.|
 |locateDeviceLostModeEnabled|Boolean|Indicates whether or not LocateDevice for devices with lost mode (COBO, COPE) is enabled.|
 |androidDeviceOwnerDelegatedScopeAppSettings|[androidDeviceOwnerDelegatedScopeAppSetting](../resources/intune-deviceconfig-androiddeviceownerdelegatedscopeappsetting.md) collection|Specifies the list of managed apps with app details and its associated delegated scope(s). This collection can contain a maximum of 500 elements.|
+|shareDeviceLocationDisabled|Boolean|Indicates whether or not location sharing is disabled for fully managed devices (COBO), and corporate owned devices with a work profile (COPE)|
+|deviceLocationMode|[androidDeviceOwnerLocationMode](../resources/intune-deviceconfig-androiddeviceownerlocationmode.md)|Indicates the location setting configuration for fully managed devices (COBO) and corporate owned devices with a work profile (COPE). Possible values are: `notConfigured`, `disabled`, `unknownFutureValue`.|
 
 
 
@@ -211,7 +213,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 10640
+Content-length: 10717
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -489,7 +491,9 @@ Content-length: 10640
         "certificateInstall"
       ]
     }
-  ]
+  ],
+  "shareDeviceLocationDisabled": true,
+  "deviceLocationMode": "disabled"
 }
 ```
 
@@ -498,7 +502,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10812
+Content-Length: 10889
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -779,6 +783,8 @@ Content-Length: 10812
         "certificateInstall"
       ]
     }
-  ]
+  ],
+  "shareDeviceLocationDisabled": true,
+  "deviceLocationMode": "disabled"
 }
 ```

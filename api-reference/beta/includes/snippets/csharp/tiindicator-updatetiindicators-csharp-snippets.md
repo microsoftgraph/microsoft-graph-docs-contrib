@@ -6,9 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Security.TiIndicators.UpdateTiIndicators;
+using Microsoft.Graph.Beta.Models;
 
-var requestBody = new Microsoft.Graph.Beta.Security.TiIndicators.UpdateTiIndicators.UpdateTiIndicatorsPostRequestBody
+var requestBody = new UpdateTiIndicatorsPostRequestBody
 {
 	Value = new List<TiIndicator>
 	{
@@ -24,6 +26,8 @@ var requestBody = new Microsoft.Graph.Beta.Security.TiIndicators.UpdateTiIndicat
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Security.TiIndicators.UpdateTiIndicators.PostAsync(requestBody);
 
 

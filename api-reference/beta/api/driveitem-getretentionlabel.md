@@ -37,8 +37,8 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ```http
 GET /driveitem/retentionLabel
-GET /drives/{drive-id}/items/{id}/retentionLabel
-GET /drives/{drive-id}/items/{id}?$expand=retentionLabel
+GET /drives/{drive-id}/items/{item-id}/retentionLabel
+GET /drives/{drive-id}/items/{item-id}?$expand=retentionLabel
 ```
 
 ## Optional query parameters
@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and an [itemRetentio
 
 ### Request
 
-The following shows an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/beta/drives/22e064df-3562-4a3c-98c3-74721ca06aa0
 
 ### Response
 
-The following shows an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

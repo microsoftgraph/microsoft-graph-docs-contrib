@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 import (
 	  "context"
-	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
 
@@ -21,7 +21,7 @@ roles := []string {
 }
 requestBody.SetRoles(roles)
 additionalData := map[string]interface{}{
-	"odataBind" : "https://graph.microsoft.com/beta/users('jacob@contoso.com')", 
+	"odataBind" : "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')", 
 }
 requestBody.SetAdditionalData(additionalData)
 

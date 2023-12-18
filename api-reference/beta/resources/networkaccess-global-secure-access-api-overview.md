@@ -1,5 +1,5 @@
 ---
-title: "Secure access to cloud, public, and private apps using Microsoft Graph network access APIs"
+title: "Secure access to cloud, public, and private apps using Microsoft Graph network access APIs (preview)"
 description: "Learn how to use Microsoft Graph network access APIs to secure access to cloud, public, and private apps using Microsoft Entra Internet Access and Microsoft Entra Private Access."
 author: Moti-ba
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: resourcePageType
 ms.custom: zt-include
 ---
 
-# Secure access to cloud, public, and private apps using Microsoft Graph network access APIs
+# Secure access to cloud, public, and private apps using Microsoft Graph network access APIs (preview)
 
 Microsoft Entra Internet Access and Microsoft Entra Private Access comprise Microsoft's Security Service Edge solution and enable organizations to consolidate controls and configure unified identity and network access policies. Microsoft Entra Internet Access secures access to Microsoft 365, SaaS, and public internet apps while protecting users, devices, and data against internet threats. On the other hand, Microsoft Entra Private Access secures access to private apps hosted on-premises or in the cloud.
 

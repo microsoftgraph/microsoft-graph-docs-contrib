@@ -15,27 +15,39 @@ Read the properties and relationships of an [appRoleAssignment](../resources/app
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 ### For client service principals
-
-<!-- { "blockType": "permissions", "name": "approleassignment_get" } -->
-[!INCLUDE [permissions-table](../includes/permissions/approleassignment-get-permissions.md)]
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All  |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Application.Read.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ### For resource service principals
-
-<!-- { "blockType": "permissions", "name": "approleassignment_get_2" } -->
-[!INCLUDE [permissions-table](../includes/permissions/approleassignment-get-2-permissions.md)]
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All  |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Application.Read.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ### For groups
-
-<!-- { "blockType": "permissions", "name": "approleassignment_get_3" } -->
-[!INCLUDE [permissions-table](../includes/permissions/approleassignment-get-3-permissions.md)]
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Group.Read.All, Directory.Read.All, AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All  |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Group.Read.All, Directory.Read.All, AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All |
 
 ### For users
-
-<!-- { "blockType": "permissions", "name": "approleassignment_get_4" } -->
-[!INCLUDE [permissions-table](../includes/permissions/approleassignment-get-4-permissions.md)]
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | User.Read, User.ReadBasic.All, Directory.Read.All, AppRoleAssignment.ReadWrite.All  |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Directory.Read.All, AppRoleAssignment.ReadWrite.All |
 
 ## HTTP request
 

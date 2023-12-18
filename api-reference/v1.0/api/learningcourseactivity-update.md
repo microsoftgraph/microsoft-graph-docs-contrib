@@ -44,25 +44,25 @@ PATCH /employeeExperience/learningProviders/{registrationId}/learningCourseActiv
 ## Request body
 In the request body, use @odata.type to specify the type of [learningCourseActivity](../resources/learningcourseactivity.md) resource ([learningAssignment](../resources/learningassignment.md) or [learningSelfInitiated](../resources/learningselfinitiatedcourse.md)), and include the properties of that type to update. 
 
-The following table lists the properties that you can change for an assigned learning course activity (**learningAssignment**).
+The following table lists the properties you can change for an assigned learning course activity (**learningAssignment**).
 
 |Property|Type|Description|
 |:---|:---|:---|
 |assignedDateTime|DateTimeOffset|Assigned date for the course activity. Optional.|
 |completedDateTime|DateTimeOffset|Date and time when the assignment was completed. Optional.|
-|completionPercentage|Int32|The percentage of the course completed by the user. If a value is provided, it must be between `0` and `100` (inclusive). Optional.|
-|dueDateTime|DateTimeOffset|Due date for the course activity. Optional.|
+|completionPercentage|Int32|The percentage of the course the user completes. If a value is provided, it must be between `0` and `100` (inclusive). Optional.|
+|dueDateTime|DateTimeOffset|The due date for the course activity. Optional.|
 |notes|String|Notes for the course activity. Optional.|
 |status|courseStatus|The status of the course activity. Possible values are `notStarted`, `inProgress`, `completed`. Required.|
 
-The following table lists the properties that you can change for a self-initiated learning course activity (**learningSelfInitiated**).
+The following table lists the properties you can change for a self-initiated learning course activity (**learningSelfInitiated**).
 
 |Property|Type|Description|
 |:---|:---|:---|
 |completedDateTime|DateTimeOffset|Date and time when the assignment was completed. Optional.|
 |completionPercentage|Int32|The percentage of the course completed by the user. If a value is provided, it must be between `0` and `100` (inclusive). Optional.|
 |status|courseStatus|The status of the course activity. Possible values are: `inProgress`, `completed`. Required.|
-|startedDateTime|DateTimeOffset|The date and time when the self-initiated course was started by the learner.|
+|startedDateTime|DateTimeOffset|The date and time when the learner started the self-initiated course.|
 
 
 ## Response

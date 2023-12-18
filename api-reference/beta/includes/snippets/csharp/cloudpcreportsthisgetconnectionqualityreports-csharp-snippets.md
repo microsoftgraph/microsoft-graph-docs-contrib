@@ -6,9 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.DeviceManagement.VirtualEndpoint.Reports.GetConnectionQualityReports;
 
-var requestBody = new Microsoft.Graph.Beta.DeviceManagement.VirtualEndpoint.Reports.GetConnectionQualityReports.GetConnectionQualityReportsPostRequestBody
+var requestBody = new GetConnectionQualityReportsPostRequestBody
 {
 	Filter = "EventDateTime gt datetime'2023-04-16T07:40:41.694Z'",
 	Search = "",
@@ -32,6 +33,8 @@ var requestBody = new Microsoft.Graph.Beta.DeviceManagement.VirtualEndpoint.Repo
 	{
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.DeviceManagement.VirtualEndpoint.Reports.GetConnectionQualityReports.PostAsync(requestBody);
 
 

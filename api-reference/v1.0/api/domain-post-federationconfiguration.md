@@ -1,5 +1,5 @@
 ---
-title: "Create federationConfiguration"
+title: "Create internalDomainFederation"
 description: "Create a new internalDomainFederation object."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
-# Create federationConfiguration
+# Create internalDomainFederation
 Namespace: microsoft.graph
 
 Create a new [internalDomainFederation](../resources/internaldomainfederation.md) object.

@@ -71,7 +71,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceManagementPartners
 Content-type: application/json
-Content-length: 978
+Content-length: 995
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementPartner",
@@ -87,10 +87,11 @@ Content-length: 978
     {
       "@odata.type": "microsoft.graph.deviceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+        "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
         "deviceAndAppManagementAssignmentFilterType": "include",
-        "collectionId": "Collection Id value"
+        "targetType": "user",
+        "entraObjectId": "Entra Object Id value"
       }
     }
   ]
@@ -102,7 +103,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1027
+Content-Length: 1044
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementPartner",
@@ -119,10 +120,11 @@ Content-Length: 1027
     {
       "@odata.type": "microsoft.graph.deviceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+        "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
         "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
         "deviceAndAppManagementAssignmentFilterType": "include",
-        "collectionId": "Collection Id value"
+        "targetType": "user",
+        "entraObjectId": "Entra Object Id value"
       }
     }
   ]

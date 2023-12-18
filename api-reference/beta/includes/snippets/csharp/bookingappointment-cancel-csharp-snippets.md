@@ -6,12 +6,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.BookingBusinesses.Item.Appointments.Item.Cancel;
 
-var requestBody = new Microsoft.Graph.Beta.BookingBusinesses.Item.Appointments.Item.Cancel.CancelPostRequestBody
+var requestBody = new CancelPostRequestBody
 {
 	CancellationMessage = "Your appointment has been successfully cancelled. Please call us again.",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.BookingBusinesses["{bookingBusiness-id}"].Appointments["{bookingAppointment-id}"].Cancel.PostAsync(requestBody);
 
 

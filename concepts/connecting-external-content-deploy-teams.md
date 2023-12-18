@@ -138,7 +138,7 @@ You will need to send the **connectorTickets** from the payload you received as 
 
 ### Request
 ```
-POST https://graph.microsoft.com/v1.0/external/connectors
+POST https://graph.microsoft.com/v1.0/external/connection
 GraphConnectors-Ticket: {{connectorsTicket}}
 Content-type: application/json
 Authorization: bearer {{accessToken}}
@@ -179,3 +179,47 @@ To validate the experience:
 * Go to your Teams application.
 * On the detail page of the Teams app, you will notice a new **Graph Connector** tab that allows an admin to enable or disable the Microsoft Graph connector.
 * Select the toggle button to send the enable or disable notifications to the notification endpoint of the app, as specified by the **graphConnector.notificationUrl** property in the app manifest.
+
+## Make your Microsoft Graph connector available for other organizations in the Teams admin center
+
+You can submit your Microsoft Graph connector packaged as a Teams app extended across Microsoft 365 to [Microsoft Partner Center](https://partner.microsoft.com/). This will allow Microsoft to validate your Microsoft Graph connector, so that other organizations can discover and deploy it in the [Microsoft Teams admin center](https://admin.teams.microsoft.com).
+
+You can use the [step-by-step submission guide](https://learn.microsoft.com/en-us/partner-center/marketplace/add-in-submission-guide) to learn how to submit your app. Make sure that you submit a **Teams app** in the **Microsoft 365 and Copilot** tab in **Marketplace offers**.
+
+You will need to submit a PDF in the **Additional certification info** step. Microsoft will use the information you provide in this PDF to make sure that your Microsoft Graph connector performs as expected in Copilot for Microsoft 365. Your PDF must have the following sections:
+- Demo Tenant User Name
+- Custom Vertical Name
+- Semantic Labels
+- Sample Prompts
+- Connection Description
+- Activity Settings
+
+### Demo Tenant User Name
+
+Create a user account on your demo tenant that Microsoft can use to validate your Microsoft Graph connector. This can be done in the [Users section](https://admin.microsoft.com/Adminportal/Home?#/users/:/adduser) of the Microsoft 365 Admin Center. 
+Ensure that this new user account has a Copilot for Microsoft 365 license, and the password is sent to **microsoftgraphconnectorappvalidation@service.microsoft.com**. 
+
+In this section of the PDF, provide the username for this new user account. It is mandatory to provide this username.
+
+After Microsoft validates your app, you can revoke access to the user account.
+
+### Custom Vertical Name
+
+Create a custom vertical that only returns results from your custom Microsoft Graph connector. Do this in the [Verticals section](https://admin.microsoft.com/Adminportal/Home?#/MicrosoftSearch/verticals) of the **Customization** tab of the Search & Intelligence Portal.
+In this section of the PDF, provide the name of this custom vertical. A name for the custom vertical is mandatory.
+
+### Semantic Labels
+
+In the Semantic Labels section, indicate which properties from your connection schema have the `title`, `url`, and `iconUrl` semantic labels. This schema mapping is mandatory.
+
+### Sample Prompts
+
+In the Sample Prompts section, provide two sample prompts that Microsoft can use to validate your Microsoft Graph connector in Copilot for Microsoft 365. These prompts should include at least a partial match to the `title` semantic label. These prompts are mandatory.
+
+### Connection Description
+
+In Connection Description section, provide the `description` property for your custom Microsoft Graph connection. Microsoft will use this to ensure that your Microsoft Graph connection has a rich description for Copilot for Microsfot 365. This description is optional.
+
+### Activity Settings
+
+In the Activity Settings section, provide the activity settings for your Microsoft Graph connection with a `urlToItemResolvers` resource. The activity settings are optional but we highly recommend that you provide them.

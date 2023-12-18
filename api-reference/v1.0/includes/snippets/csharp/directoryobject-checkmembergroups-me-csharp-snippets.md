@@ -6,9 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Me.CheckMemberGroups;
 
-var requestBody = new Microsoft.Graph.Me.CheckMemberGroups.CheckMemberGroupsPostRequestBody
+var requestBody = new CheckMemberGroupsPostRequestBody
 {
 	GroupIds = new List<string>
 	{
@@ -16,6 +17,8 @@ var requestBody = new Microsoft.Graph.Me.CheckMemberGroups.CheckMemberGroupsPost
 		"4fe90ae065a-478b9400e0a0e1cbd540",
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Me.CheckMemberGroups.PostAsync(requestBody);
 
 

@@ -171,7 +171,7 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2023-10-18T18:40:00.4103533Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud printing"
     },
     {
@@ -293,7 +293,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-10-18T18:40:00.4103533Z",
-      "WorkloadArea": "Devices and apps",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud printing"
     },
     {
@@ -19637,7 +19637,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-03-05T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management ",
       "SubArea": " Cloud printing"
     },
     {
@@ -20201,7 +20201,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-01-07T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management ",
       "SubArea": "Cloud printing"
     },
     {
@@ -20227,7 +20227,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-12-10T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management ",
       "SubArea": "Cloud printing"
     },
     {
@@ -20245,7 +20245,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-12-16T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management ",
       "SubArea": "Cloud printing"
     },
     {
@@ -20271,7 +20271,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-12-10T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management ",
       "SubArea": "Cloud printing"
     },
     {
@@ -20449,7 +20449,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-01-21T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management ",
       "SubArea": "Cloud printing"
     },
     {
@@ -20483,7 +20483,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-12-02T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management ",
       "SubArea": "Cloud printing"
     },
     {
@@ -20517,7 +20517,7 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2020-10-16T00:00:00",
-      "WorkloadArea": "Devices and apps ",
+      "WorkloadArea": "Device and app management ",
       "SubArea": "Cloud printing"
     }
   ]

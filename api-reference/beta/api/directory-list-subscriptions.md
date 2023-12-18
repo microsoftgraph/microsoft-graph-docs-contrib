@@ -128,8 +128,7 @@ Content-type: application/json
           "appliesTo": "User",
           "provisioningStatus": "Success",
           "servicePlanId": "8b8269e5-f841-416c-ab3a-f5dfb9737986",
-          "servicePlanName": "MyPlanName",
-          "serviceType": "YammerEnterprise"
+          "servicePlanName": "MyPlanName"
         }
       ],
       "skuId": "0816ccb9-3785-4d19-bf78-6c53e2106509",
