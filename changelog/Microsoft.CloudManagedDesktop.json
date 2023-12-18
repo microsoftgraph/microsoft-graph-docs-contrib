@@ -19,22 +19,22 @@
           "SubArea": "Cloud PC"
         },
         {
-            "ChangeList": [
-                {
-                    "Id": "860b04e1-8522-4fe2-8f41-73bad529ea1d",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "virtualEndpoint",
-                    "ChangeType": "Addition",
-                    "Description": "Under API v1.0 reference, added the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-1.0) resource type.",
-                    "Target": "virtualEndpoint"
-                }
-            ],
-            "Id": "860b04e1-8522-4fe2-8f41-73bad529ea1d",
-            "Cloud": "Prod",
-            "Version": "V1.0",
-            "CreatedDateTime": "2023-11-10T08:16:16.7296291Z",
-            "WorkloadArea": "Device and app management",
-            "SubArea": "Cloud PC"
+          "ChangeList": [
+            {
+              "Id": "860b04e1-8522-4fe2-8f41-73bad529ea1d",
+              "ApiChange": "Resource",
+              "ChangedApiName": "virtualEndpoint",
+              "ChangeType": "Addition",
+              "Description": "Added the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-1.0) resource type.",
+              "Target": "virtualEndpoint"
+            }
+          ],
+          "Id": "860b04e1-8522-4fe2-8f41-73bad529ea1d",
+          "Cloud": "Prod",
+          "Version": "V1.0",
+          "CreatedDateTime": "2023-12-10T08:16:16.7296291Z",
+          "WorkloadArea": "Device and app management",
+          "SubArea": "Cloud PC"
         },
         {
             "ChangeList": [
