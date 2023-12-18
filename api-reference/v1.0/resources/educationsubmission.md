@@ -48,6 +48,7 @@ If [setUpResourcesFolder](../api/educationsubmission-setupResourcesFolder.md) ha
 |submittedDateTime|DateTimeOffset|Moment in time when the submission was moved into the submitted state. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |unsubmittedBy|[identitySet](identityset.md)|User who moved the resource from submitted into the working state.|
 |unsubmittedDateTime|DateTimeOffset|Moment in time when the submission was moved from submitted into the working state. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|webUrl|String| The deep link URL for the given **submission**.|
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -71,18 +72,19 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-    "id":"String (identifier)",
-    "recipient":{"@odata.type":"microsoft.graph.educationSubmissionRecipient"},
-    "returnedBy":{"@odata.type":"microsoft.graph.identitySet"},
-    "reassignedBy":{"@odata.type":"microsoft.graph.identitySet"},
-    "reassignedDateTime":"String (timestamp)",
-    "resourcesFolderUrl":"String",
-    "returnedDateTime":"String (timestamp)",
-    "status":"string",
-    "submittedBy":{"@odata.type":"microsoft.graph.identitySet"},
-    "submittedDateTime":"String (timestamp)",
-    "unsubmittedBy":{"@odata.type":"microsoft.graph.identitySet"},
-    "unsubmittedDateTime":"String (timestamp)"
+    "id": "String (identifier)",
+    "reassignedBy": {"@odata.type":"microsoft.graph.identitySet"},
+    "reassignedDateTime": "String (timestamp)",
+    "recipient": {"@odata.type":"microsoft.graph.educationSubmissionRecipient"},
+    "resourcesFolderUrl": "String",
+    "returnedBy": {"@odata.type":"microsoft.graph.identitySet"},
+    "returnedDateTime": "String (timestamp)",
+    "status": "String",
+    "submittedBy": {"@odata.type":"microsoft.graph.identitySet"},
+    "submittedDateTime": "String (timestamp)",
+    "unsubmittedBy": {"@odata.type":"microsoft.graph.identitySet"},
+    "unsubmittedDateTime": "String (timestamp)",
+    "webUrl": "String"
 }
 ```
 
