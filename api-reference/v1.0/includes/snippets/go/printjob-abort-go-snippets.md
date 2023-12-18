@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphprint.NewAbortPostRequestBody()
 reason := "String"
 requestBody.SetReason(&reason) 
 
-graphClient.Print().Printers().ByPrinterId("printer-id").Jobs().ByJobId("printJob-id").Abort().Post(context.Background(), requestBody, nil)
+graphClient.Print().Printers().ByPrinterId("printer-id").Jobs().ByPrintJobId("printJob-id").Abort().Post(context.Background(), requestBody, nil)
 
 
 ```

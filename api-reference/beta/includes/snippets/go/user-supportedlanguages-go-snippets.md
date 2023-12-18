@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().Outlook().SupportedLanguages().Get(context.Background(), nil)
+supportedLanguages, err := graphClient.Me().Outlook().SupportedLanguages().Get(context.Background(), nil)
 
 
 ```

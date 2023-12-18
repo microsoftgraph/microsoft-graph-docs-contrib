@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphdevicemanagement.NewGetSharedUseLicenseUsageReportPostRequestBody()
@@ -26,7 +26,6 @@ select := []string {
 	"LicenseCount",
 	"ClaimedLicenseCount",
 	"DateTimeUTC",
-
 }
 requestBody.SetSelect(select)
 skip := int32(0)

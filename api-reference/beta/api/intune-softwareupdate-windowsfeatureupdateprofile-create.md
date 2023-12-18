@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Create a new [windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -58,6 +60,7 @@ The following table shows the properties that are required when you create the w
 |roleScopeTagIds|String collection|List of Scope Tags for this Feature Update entity.|
 |deployableContentDisplayName|String|Friendly display name of the quality update profile deployable content|
 |endOfSupportDate|DateTimeOffset|The last supported date for a feature update|
+|installLatestWindows10OnWindows11IneligibleDevice|Boolean|If true, the latest Microsoft Windows 10 update will be installed on devices ineligible for Microsoft Windows 11|
 
 
 
@@ -71,7 +74,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsFeatureUpdateProfiles
 Content-type: application/json
-Content-length: 669
+Content-length: 731
 
 {
   "@odata.type": "#microsoft.graph.windowsFeatureUpdateProfile",
@@ -88,7 +91,8 @@ Content-length: 669
     "Role Scope Tag Ids value"
   ],
   "deployableContentDisplayName": "Deployable Content Display Name value",
-  "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00"
+  "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00",
+  "installLatestWindows10OnWindows11IneligibleDevice": true
 }
 ```
 
@@ -97,7 +101,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 841
+Content-Length: 903
 
 {
   "@odata.type": "#microsoft.graph.windowsFeatureUpdateProfile",
@@ -117,6 +121,7 @@ Content-Length: 841
     "Role Scope Tag Ids value"
   ],
   "deployableContentDisplayName": "Deployable Content Display Name value",
-  "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00"
+  "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00",
+  "installLatestWindows10OnWindows11IneligibleDevice": true
 }
 ```

@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewMeetingRegistration()
@@ -39,11 +39,10 @@ meetingSpeaker1.SetBio(&bio)
 speakers := []graphmodels.MeetingSpeakerable {
 	meetingSpeaker,
 	meetingSpeaker1,
-
 }
 requestBody.SetSpeakers(speakers)
 
-result, err := graphClient.Me().OnlineMeetings().ByOnlineMeetingId("onlineMeeting-id").Registration().Patch(context.Background(), requestBody, nil)
+registration, err := graphClient.Me().OnlineMeetings().ByOnlineMeetingId("onlineMeeting-id").Registration().Patch(context.Background(), requestBody, nil)
 
 
 ```

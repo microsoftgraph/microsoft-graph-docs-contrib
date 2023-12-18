@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
 var requestBody = new AccessPackageResourceRequest
 {
@@ -28,30 +29,25 @@ var requestBody = new AccessPackageResourceRequest
 				AttributeName = "extension_2b676109c7c74ae2b41549205f1947ed_personalTitle",
 				IsEditable = true,
 				IsPersistedOnAssignmentRemoval = true,
-				AttributeSource = new AccessPackageResourceAttributeSource
+				AttributeSource = new AccessPackageResourceAttributeQuestion
 				{
 					OdataType = "#microsoft.graph.accessPackageResourceAttributeQuestion",
-					AdditionalData = new Dictionary<string, object>
+					Question = new AccessPackageTextInputQuestion
 					{
+						OdataType = "#microsoft.graph.accessPackageTextInputQuestion",
+						IsRequired = false,
+						Sequence = 0,
+						IsSingleLineQuestion = true,
+						Text = new AccessPackageLocalizedContent
 						{
-							"question" , new 
+							DefaultText = "Title",
+							LocalizedTexts = new List<AccessPackageLocalizedText>
 							{
-								OdataType = "#microsoft.graph.accessPackageTextInputQuestion",
-								IsRequired = false,
-								Sequence = 0,
-								IsSingleLineQuestion = true,
-								Text = new 
-								{
-									DefaultText = "Title",
-									LocalizedTexts = new List<>
-									{
-									},
-								},
-							}
+							},
 						},
 					},
 				},
-				AttributeDestination = new AccessPackageResourceAttributeDestination
+				AttributeDestination = new AccessPackageUserDirectoryAttributeStore
 				{
 					OdataType = "#microsoft.graph.accessPackageUserDirectoryAttributeStore",
 				},
@@ -59,6 +55,8 @@ var requestBody = new AccessPackageResourceRequest
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageResourceRequests.PostAsync(requestBody);
 
 

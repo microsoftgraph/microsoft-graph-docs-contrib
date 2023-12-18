@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
 var requestBody = new Simulation
 {
@@ -15,32 +16,22 @@ var requestBody = new Simulation
 	AttackTechnique = SimulationAttackTechnique.CredentialHarvesting,
 	AttackType = SimulationAttackType.Social,
 	Status = SimulationStatus.Scheduled,
-	IncludedAccountTarget = new AccountTargetContent
+	IncludedAccountTarget = new AddressBookAccountTargetContent
 	{
 		OdataType = "#microsoft.graph.addressBookAccountTargetContent",
 		Type = AccountTargetContentType.AddressBook,
-		AdditionalData = new Dictionary<string, object>
+		AccountTargetEmails = new List<string>
 		{
-			{
-				"accountTargetEmails" , new List<string>
-				{
-					"faiza@contoso.com",
-				}
-			},
+			"faiza@contoso.com",
 		},
 	},
-	ExcludedAccountTarget = new AccountTargetContent
+	ExcludedAccountTarget = new AddressBookAccountTargetContent
 	{
 		OdataType = "#microsoft.graph.addressBookAccountTargetContent",
 		Type = AccountTargetContentType.AddressBook,
-		AdditionalData = new Dictionary<string, object>
+		AccountTargetEmails = new List<string>
 		{
-			{
-				"accountTargetEmails" , new List<string>
-				{
-					"sam@contoso.com",
-				}
-			},
+			"sam@contoso.com",
 		},
 	},
 	AdditionalData = new Dictionary<string, object>
@@ -53,6 +44,8 @@ var requestBody = new Simulation
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Security.AttackSimulation.Simulations["{simulation-id}"].PatchAsync(requestBody);
 
 

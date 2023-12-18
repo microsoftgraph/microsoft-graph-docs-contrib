@@ -6,24 +6,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Models;
 
 var requestBody = new IdentityApiConnector
 {
-	AuthenticationConfiguration = new ApiAuthenticationConfigurationBase
+	AuthenticationConfiguration = new Pkcs12Certificate
 	{
 		OdataType = "#microsoft.graph.pkcs12Certificate",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"pkcs12Value" , "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA"
-			},
-			{
-				"password" , "secret"
-			},
-		},
+		Pkcs12Value = "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA",
+		Password = "secret",
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Identity.ApiConnectors["{identityApiConnector-id}"].PatchAsync(requestBody);
 
 

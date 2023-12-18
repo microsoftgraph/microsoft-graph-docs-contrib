@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = IdentityUserFlowAttributeAssignment()
-request_body.userinputtype(IdentityUserFlowAttributeInputType.TextBox('identityuserflowattributeinputtype.textbox'))
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = IdentityUserFlowAttributeAssignment(
+	user_input_type = IdentityUserFlowAttributeInputType.TextBox,
+)
 
-
-
-result = await client.identity.b2x_user_flows.by_b2x_user_flow_id('b2xIdentityUserFlow-id').user_attribute_assignments.by_user_attribute_assignment_id('identityUserFlowAttributeAssignment-id').patch(request_body = request_body)
+result = await graph_client.identity.b2x_user_flows.by_b2x_identity_user_flow_id('b2xIdentityUserFlow-id').user_attribute_assignments.by_identity_user_flow_attribute_assignment_id('identityUserFlowAttributeAssignment-id').patch(request_body)
 
 
 ```

@@ -12,13 +12,12 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewProjectParticipation()
 categories := []string {
 	"Branding",
-
 }
 requestBody.SetCategories(categories)
 client := graphmodels.NewCompanyDetail()
@@ -50,7 +49,7 @@ summary := "A 6 month project to help Contoso rebrand after they were divested f
 detail.SetSummary(&summary) 
 requestBody.SetDetail(detail)
 
-result, err := graphClient.Me().Profile().Projects().Post(context.Background(), requestBody, nil)
+projects, err := graphClient.Me().Profile().Projects().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
@@ -27,7 +27,7 @@ configuration := &graphusers.ItemContactFolderItemContactsDelta()RequestBuilderG
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().ContactFolders().ByContactFolderId("contactFolder-id").Contacts().Delta().Get(context.Background(), configuration)
+delta, err := graphClient.Me().ContactFolders().ByContactFolderId("contactFolder-id").Contacts().Delta().Get(context.Background(), configuration)
 
 
 ```

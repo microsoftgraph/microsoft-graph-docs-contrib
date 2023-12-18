@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = ItemPhone()
-request_body.display_name = 'Car Phone'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.number = '+7 499 342 22 13'
+request_body = ItemPhone(
+	display_name = "Car Phone",
+	number = "+7 499 342 22 13",
+)
 
-
-
-
-result = await client.me.profile.phones.post(request_body = request_body)
+result = await graph_client.me.profile.phones.post(request_body)
 
 
 ```

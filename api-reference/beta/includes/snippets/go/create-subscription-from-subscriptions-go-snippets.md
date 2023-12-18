@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewSubscription()
@@ -30,7 +30,7 @@ requestBody.SetClientState(&clientState)
 latestSupportedTlsVersion := "v1_2"
 requestBody.SetLatestSupportedTlsVersion(&latestSupportedTlsVersion) 
 
-result, err := graphClient.Subscriptions().Post(context.Background(), requestBody, nil)
+subscriptions, err := graphClient.Subscriptions().Post(context.Background(), requestBody, nil)
 
 
 ```

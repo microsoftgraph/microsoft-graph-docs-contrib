@@ -4,21 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = CrossTenantAccessPolicyConfigurationPartner()
-automatic_user_consent_settings = InboundOutboundPolicyConfiguration()
-automatic_user_consent_settings.inbound_allowed = True
+graph_client = GraphServiceClient(credentials, scopes)
 
-automatic_user_consent_settings.outbound_allowed = True
+request_body = CrossTenantAccessPolicyConfigurationPartner(
+	automatic_user_consent_settings = InboundOutboundPolicyConfiguration(
+		inbound_allowed = True,
+		outbound_allowed = True,
+	),
+)
 
-
-request_body.automatic_user_consent_settings = automatic_user_consent_settings
-
-
-
-result = await client.policies.cro_tenant_acce_policy.partners.by_partner_id('crossTenantAccessPolicyConfigurationPartner-tenantId').patch(request_body = request_body)
+result = await graph_client.policies.cross_tenant_access_policy.partners.by_cross_tenant_access_policy_configuration_partner_tenant_id('crossTenantAccessPolicyConfigurationPartner-tenantId').patch(request_body)
 
 
 ```

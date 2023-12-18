@@ -11,9 +11,8 @@ const options = {
 const client = Client.init(options);
 
 const authoredNote = {
-content: 
-  {
-    content: 'String',
+  content: {
+    content: 'Please take a look at the files tagged with follow up',
     contentType: 'text'
   }
 };

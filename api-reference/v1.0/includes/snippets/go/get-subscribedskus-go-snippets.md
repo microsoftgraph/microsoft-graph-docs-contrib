@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.SubscribedSkus().Get(context.Background(), nil)
+subscribedSkus, err := graphClient.SubscribedSkus().Get(context.Background(), nil)
 
 
 ```

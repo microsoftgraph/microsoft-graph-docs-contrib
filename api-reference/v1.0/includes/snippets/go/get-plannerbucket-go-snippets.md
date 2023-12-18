@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Planner().Buckets().ByBucketId("plannerBucket-id").Get(context.Background(), nil)
+buckets, err := graphClient.Planner().Buckets().ByPlannerBucketId("plannerBucket-id").Get(context.Background(), nil)
 
 
 ```

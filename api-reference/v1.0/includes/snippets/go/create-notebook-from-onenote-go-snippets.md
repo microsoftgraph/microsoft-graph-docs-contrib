@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewNotebook()
 displayName := "My Private notebook"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.Me().Onenote().Notebooks().Post(context.Background(), requestBody, nil)
+notebooks, err := graphClient.Me().Onenote().Notebooks().Post(context.Background(), requestBody, nil)
 
 
 ```

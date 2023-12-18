@@ -6,24 +6,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Models.Security;
+using Microsoft.Graph.Models;
 
-var requestBody = new Microsoft.Graph.Models.Security.EdiscoveryNoncustodialDataSource
+var requestBody = new EdiscoveryNoncustodialDataSource
 {
-	DataSource = new Microsoft.Graph.Models.Security.DataSource
+	DataSource = new SiteSource
 	{
 		OdataType = "microsoft.graph.security.siteSource",
-		AdditionalData = new Dictionary<string, object>
+		Site = new Site
 		{
-			{
-				"site" , new 
-				{
-					WebUrl = "https://m365x809305.sharepoint.com/sites/Design-topsecret",
-				}
-			},
+			WebUrl = "https://m365x809305.sharepoint.com/sites/Design-topsecret",
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].NoncustodialDataSources.PostAsync(requestBody);
 
 

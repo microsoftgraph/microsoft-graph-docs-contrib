@@ -1,6 +1,6 @@
 ---
 title: "onUserCreateStartExternalUsersSelfServiceSignUp resource type"
-description: "Managed handler for user creation step in an external identities self-service sign up user flow."
+description: "Managed handler for user creation step in an external identities self-service sign-up user flow."
 author: "nanguil"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is a managed handler for the user creation step in an external identities self-service sign up user flow on an Azure AD workforce or customer tenant. It defines whether a guest or member user type is created.
+Represents a managed handler for the user creation step in an external identities self-service sign-up user flow on a Microsoft Entra workforce or customer tenant. It defines whether a guest or member user type is created.
 
 Inherits from [onUserCreateStartHandler](../resources/onusercreatestarthandler.md). Complex type.
 
@@ -31,7 +31,7 @@ Inherits from [onUserCreateStartHandler](../resources/onusercreatestarthandler.m
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.onUserCreateStartExternalUsersSelfServiceSignUp"
@@ -43,4 +43,3 @@ The following is a JSON representation of the resource.
   "userTypeToCreate": "String"
 }
 ```
-

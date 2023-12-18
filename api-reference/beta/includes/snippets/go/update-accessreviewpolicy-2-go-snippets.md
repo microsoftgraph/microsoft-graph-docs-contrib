@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAccessReviewPolicy()
 isGroupOwnerManagementEnabled := true
 requestBody.SetIsGroupOwnerManagementEnabled(&isGroupOwnerManagementEnabled) 
 
-result, err := graphClient.IdentityGovernance().AccessReviews().Policy().Patch(context.Background(), requestBody, nil)
+policy, err := graphClient.IdentityGovernance().AccessReviews().Policy().Patch(context.Background(), requestBody, nil)
 
 
 ```

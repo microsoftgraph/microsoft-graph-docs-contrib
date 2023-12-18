@@ -58,6 +58,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |alwaysOn|Boolean|Whether or not to enable always-on VPN connection.|
 |alwaysOnLockdown|Boolean|If always-on VPN connection is enabled, whether or not to lock network traffic when that VPN is disconnected.|
 |microsoftTunnelSiteId|String|Microsoft Tunnel site ID.|
+|proxyExclusionList|String collection|List of hosts to exclude using the proxy on connections for. These hosts can use wildcards such as *.example.com.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -161,6 +162,9 @@ Here is a JSON representation of the resource.
   ],
   "alwaysOn": true,
   "alwaysOnLockdown": true,
-  "microsoftTunnelSiteId": "String"
+  "microsoftTunnelSiteId": "String",
+  "proxyExclusionList": [
+    "String"
+  ]
 }
 ```

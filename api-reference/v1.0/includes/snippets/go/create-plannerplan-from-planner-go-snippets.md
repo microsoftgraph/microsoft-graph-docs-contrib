@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewPlannerPlan()
@@ -23,7 +23,7 @@ requestBody.SetContainer(container)
 title := "title-value"
 requestBody.SetTitle(&title) 
 
-result, err := graphClient.Planner().Plans().Post(context.Background(), requestBody, nil)
+plans, err := graphClient.Planner().Plans().Post(context.Background(), requestBody, nil)
 
 
 ```

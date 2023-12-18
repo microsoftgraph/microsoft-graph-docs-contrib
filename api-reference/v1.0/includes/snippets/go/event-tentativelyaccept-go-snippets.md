@@ -13,10 +13,10 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphusers.NewTentativelyAcceptPostRequestBody()
+requestBody := graphusers.NewItemTentativelyAcceptPostRequestBody()
 comment := "I may not be able to make this week. How about next week?"
 requestBody.SetComment(&comment) 
 sendResponse := true

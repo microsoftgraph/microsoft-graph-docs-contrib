@@ -6,18 +6,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Models;
 
-var requestBody = new AuthenticationMethodConfiguration
+var requestBody = new TemporaryAccessPassAuthenticationMethodConfiguration
 {
 	OdataType = "#microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration",
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"isUsableOnce" , true
-		},
-	},
+	IsUsableOnce = true,
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Policies.AuthenticationMethodsPolicy.AuthenticationMethodConfigurations["{authenticationMethodConfiguration-id}"].PatchAsync(requestBody);
 
 

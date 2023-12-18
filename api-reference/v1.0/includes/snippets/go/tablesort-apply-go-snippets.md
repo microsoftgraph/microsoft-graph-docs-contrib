@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphdrives.NewApplyPostRequestBody()
@@ -37,9 +37,8 @@ index := int32(99)
 icon.SetIndex(&index) 
 workbookSortField.SetIcon(icon)
 
-fields := []graphdrives.WorkbookSortFieldable {
+fields := []graphmodels.WorkbookSortFieldable {
 	workbookSortField,
-
 }
 requestBody.SetFields(fields)
 matchCase := true
@@ -47,7 +46,7 @@ requestBody.SetMatchCase(&matchCase)
 method := "method-value"
 requestBody.SetMethod(&method) 
 
-graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().Tables().ByTableId("workbookTable-id").Sort().Apply().Post(context.Background(), requestBody, nil)
+graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().Tables().ByWorkbookTableId("workbookTable-id").Sort().Apply().Post(context.Background(), requestBody, nil)
 
 
 ```

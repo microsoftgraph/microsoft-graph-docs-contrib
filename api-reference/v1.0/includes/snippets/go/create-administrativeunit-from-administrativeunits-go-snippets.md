@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAdministrativeUnit()
@@ -23,7 +23,7 @@ requestBody.SetDescription(&description)
 visibility := "HiddenMembership"
 requestBody.SetVisibility(&visibility) 
 
-result, err := graphClient.Directory().AdministrativeUnits().Post(context.Background(), requestBody, nil)
+administrativeUnits, err := graphClient.Directory().AdministrativeUnits().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -24,6 +24,14 @@ If you ignore these events, it might break the change notification flow; you can
 
 This article introduces lifecycle notifications in Microsoft Graph change notifications and provides guidance for handling the notifications.
 
+## Supported resources
+
+While you can provide a **lifecycleNotificationUrl** when creating a subscription on any resource type, lifecycle notifications are currently supported only for the following resource types.
+
+- reauthorizationRequired notifications - All resources
+- subscriptionRemoved notifications - Outlook [message][], Outlook [event][], Outlook personal [contact][], Teams [chatMessage][]
+- missed notifications - Outlook [message][], Outlook [event][], Outlook personal [contact][]
+
 ## Configure your subscription to receive lifecycle notifications
 
 To receive lifecycle notifications, you must provide a valid **lifecycleNotificationUrl** endpoint when creating the subscription.
@@ -50,31 +58,35 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/change-notifications-lifecycle-notifications-lifecyclenotificationurl-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/change-notifications-lifecycle-notifications-lifecyclenotificationurl-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/change-notifications-lifecycle-notifications-lifecyclenotificationurl-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/change-notifications-lifecycle-notifications-lifecyclenotificationurl-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/change-notifications-lifecycle-notifications-lifecyclenotificationurl-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/change-notifications-lifecycle-notifications-lifecyclenotificationurl-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/change-notifications-lifecycle-notifications-lifecyclenotificationurl-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/change-notifications-lifecycle-notifications-lifecyclenotificationurl-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/change-notifications-lifecycle-notifications-lifecyclenotificationurl-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/change-notifications-lifecycle-notifications-lifecyclenotificationurl-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/change-notifications-lifecycle-notifications-lifecyclenotificationurl-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/change-notifications-lifecycle-notifications-lifecyclenotificationurl-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/change-notifications-lifecycle-notifications-lifecyclenotificationurl-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/change-notifications-lifecycle-notifications-lifecyclenotificationurl-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/change-notifications-lifecycle-notifications-lifecyclenotificationurl-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -108,14 +120,6 @@ The **lifecycleEvent** can be `subscriptionRemoved`, `missed`, or `reauthorizati
 A lifecycle notification doesn't contain any information about a specific resource, because it isn't related to a resource change, but to the subscription state change. Similar to change notifications, lifecycle notifications can be batched together and received as a collection, each with a possibly different **lifecycleEvent** value. Process each lifecycle notification in the batch accordingly.
 
 When you process the lifecycle notification and resume the flow of change notifications, the change notifications start flowing to the **notificationUrl**.
-
-### Resources that support lifecycle notifications
-
-While you can provide a **lifecycleNotificationUrl** when creating a subscription on any resource type, lifecycle notifications are currently supported only for the following resource types.
-
-- reauthorizationRequired notifications - All resources
-- subscriptionRemoved notifications - Outlook [message][], Outlook [event][], Outlook personal [contact][], Teams [chatMessage][]
-- missed notifications - Outlook [message][], Outlook [event][], Outlook personal [contact][]
 
 ## Responding to reauthorizationRequired notifications
 
@@ -194,12 +198,11 @@ The following steps represent the flow of an authorization challenge for an acti
 ### Additional information
 
 - Authorization challenges don't replace the need to renew a subscription before it expires.
-
-    While you can choose to renew a subscription when you receive an authorization challenge, Microsoft Graph may not challenge all of your subscriptions. For example, a subscription that doesn't have any activity and has no change notifications pending delivery may not signal any reauthorization challenges to your app. Make sure to [renew subscriptions](/graph/api/subscription-update) before they expire.
+    The lifecycles of access tokens and subscription expiration are not the same. Your access token may expire before your subscription. It is important to be prepared to regularly reauthorize your endpoint to refresh your access token. Reauthorizing your endpoint will not renew your subscription. However, [renewing your subscription](/graph/api/subscription-update) will also reauthorize your endpoint.
 
 - The frequency of authorization challenges is subject to change.
 
-    Don't assume the frequency of authorization challenges. These lifecycle notifications tell you when to take actions, saving you from having to track which subscriptions require reauthorization. Be ready to handle authorization challenges from once every few minutes for every subscription to rarely for some of your subscriptions.
+    Don't assume the frequency of authorization challenges. These lifecycle notifications tell you when to take action, saving you from having to track which subscriptions require reauthorization. Be ready to handle authorization challenges from once every few minutes for every subscription to rarely for some of your subscriptions.
 
 ## Responding to subscriptionRemoved notifications
 

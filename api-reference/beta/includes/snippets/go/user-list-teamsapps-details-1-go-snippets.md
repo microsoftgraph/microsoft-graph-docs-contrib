@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestParameters := &graphusers.UserItemTeamworkInstalledAppItemRequestBuilderGetQueryParameters{
@@ -22,7 +22,7 @@ configuration := &graphusers.UserItemTeamworkInstalledAppItemRequestBuilderGetRe
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Users().ByUserId("user-id").Teamwork().InstalledApps().ByInstalledAppId("userScopeTeamsAppInstallation-id").Get(context.Background(), configuration)
+installedApps, err := graphClient.Users().ByUserId("user-id").Teamwork().InstalledApps().ByUserScopeTeamsAppInstallationId("userScopeTeamsAppInstallation-id").Get(context.Background(), configuration)
 
 
 ```

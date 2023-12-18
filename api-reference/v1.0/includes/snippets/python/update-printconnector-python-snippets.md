@@ -4,31 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = PrintConnector()
-request_body.display_name = 'ConnectorName'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.fully_qualified_domain_name = 'CONNECTOR-MACHINE'
+request_body = PrintConnector(
+	display_name = "ConnectorName",
+	fully_qualified_domain_name = "CONNECTOR-MACHINE",
+	operating_system = "Microsoft Windows 10 Enterprise Insider Preview | 10.0.19555",
+	app_version = "0.19.7338.23496",
+	location = PrinterLocation(
+		latitude = 1.1,
+		longitude = 2.2,
+		altitude_in_meters = 3,
+	),
+)
 
-request_body.operating_system = 'Microsoft Windows 10 Enterprise Insider Preview | 10.0.19555'
-
-request_body.app_version = '0.19.7338.23496'
-
-location = PrinterLocation()
-location.Latitude = 1.1
-
-location.Longitude = 2.2
-
-location.AltitudeInMeters = 3
-
-
-request_body.location = location
-
-
-
-result = await client.print.connectors.by_connector_id('printConnector-id').patch(request_body = request_body)
+result = await graph_client.print.connectors.by_print_connector_id('printConnector-id').patch(request_body)
 
 
 ```

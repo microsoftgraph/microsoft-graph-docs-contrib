@@ -13,14 +13,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewSubscription()
 expirationDateTime , err := time.Parse(time.RFC3339, "2016-11-22T18:23:45.9356913Z")
 requestBody.SetExpirationDateTime(&expirationDateTime) 
 
-result, err := graphClient.Subscriptions().BySubscriptionId("subscription-id").Patch(context.Background(), requestBody, nil)
+subscriptions, err := graphClient.Subscriptions().BySubscriptionId("subscription-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

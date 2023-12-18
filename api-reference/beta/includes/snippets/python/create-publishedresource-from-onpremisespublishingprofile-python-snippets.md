@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = PublishedResource()
-request_body.display_name = 'New provisioning'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.resource_name = 'domain1.contoso.com'
+request_body = PublishedResource(
+	display_name = "New provisioning",
+	resource_name = "domain1.contoso.com",
+)
 
-
-
-
-result = await client.on_premise_publishing_profiles.by_on_premise_publishing_profile_id('onPremisesPublishingProfile-id').published_resources.post(request_body = request_body)
+result = await graph_client.on_premises_publishing_profiles.by_on_premises_publishing_profile_id('onPremisesPublishingProfile-id').published_resources.post(request_body)
 
 
 ```

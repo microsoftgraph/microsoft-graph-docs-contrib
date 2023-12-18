@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.TrustFramework().KeySets().ByKeySetId("trustFrameworkKeySet-id").GetActiveKey().Get(context.Background(), nil)
+getActiveKey, err := graphClient.TrustFramework().KeySets().ByTrustFrameworkKeySetId("trustFrameworkKeySet-id").GetActiveKey().Get(context.Background(), nil)
 
 
 ```

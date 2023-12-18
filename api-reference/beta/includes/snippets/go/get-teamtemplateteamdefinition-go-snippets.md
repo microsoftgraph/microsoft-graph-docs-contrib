@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Teamwork().TeamTemplates().ByTeamTemplateId("teamTemplate-id").Definitions().ByDefinitionId("teamTemplateDefinition-id").TeamDefinition().Get(context.Background(), nil)
+teamDefinition, err := graphClient.Teamwork().TeamTemplates().ByTeamTemplateId("teamTemplate-id").Definitions().ByTeamTemplateDefinitionId("teamTemplateDefinition-id").TeamDefinition().Get(context.Background(), nil)
 
 
 ```

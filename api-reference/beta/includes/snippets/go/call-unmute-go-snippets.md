@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphcommunications.NewUnmutePostRequestBody()
 clientContext := "clientContext-value"
 requestBody.SetClientContext(&clientContext) 
 
-result, err := graphClient.Communications().Calls().ByCallId("call-id").Unmute().Post(context.Background(), requestBody, nil)
+unmute, err := graphClient.Communications().Calls().ByCallId("call-id").Unmute().Post(context.Background(), requestBody, nil)
 
 
 ```

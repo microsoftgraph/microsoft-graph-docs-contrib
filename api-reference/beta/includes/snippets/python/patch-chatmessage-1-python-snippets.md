@@ -4,65 +4,45 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = ChatMessage()
-request_body.messagetype(ChatMessageType.Message('chatmessagetype.message'))
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.subject=null
+request_body = ChatMessage(
+	message_type = ChatMessageType.Message,
+	subject = None,
+	summary = None,
+	importance = ChatMessageImportance.Normal,
+	locale = "en-us",
+	from = ChatMessageFromIdentitySet(
+		application = None,
+		device = None,
+		user = Identity(
+			id = "3b102402-813e-4e17-a6b2-f841aef1fdfc",
+			display_name = "Sumit Gupta",
+			additional_data = {
+					"user_identity_type" : "aadUser",
+			}
+		),
+		additional_data = {
+				"conversation" : None,
+		}
+	),
+	body = ItemBody(
+		content_type = BodyType.Text,
+		content = "Edit text only",
+	),
+	attachments = [
+	],
+	mentions = [
+	],
+	reactions = [
+	],
+	message_history = [
+	],
+)
 
-request_body.summary=null
-
-request_body.importance(ChatMessageImportance.Normal('chatmessageimportance.normal'))
-
-request_body.locale = 'en-us'
-
-from = ChatMessageFromIdentitySet()
-from.application=null
-
-from.device=null
-
-fromuser = Identity()
-fromuser.id = '3b102402-813e-4e17-a6b2-f841aef1fdfc'
-
-fromuser.display_name = 'Sumit Gupta'
-
-additional_data = [
-'user_identity_type' => 'aadUser', 
-];
-fromuser.additional_data(additional_data)
-
-
-
-from.user = fromuser
-additional_data = [
-'conversation' => 		null,
-];
-from.additional_data(additional_data)
-
-
-
-request_body.from = from
-body = ItemBody()
-body.contenttype(BodyType.Text('bodytype.text'))
-
-body.content = 'Edit text only'
-
-
-request_body.body = body
-request_body.Attachments([])
-
-request_body.Mentions([])
-
-request_body.Reactions([])
-
-request_body.MessageHistory([])
-
-
-
-
-result = await client.teams.by_team_id('team-id').channels.by_channel_id('channel-id').messages.by_message_id('chatMessage-id').patch(request_body = request_body)
+result = await graph_client.teams.by_team_id('team-id').channels.by_channel_id('channel-id').messages.by_chat_message_id('chatMessage-id').patch(request_body)
 
 
 ```

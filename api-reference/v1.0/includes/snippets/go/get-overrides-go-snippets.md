@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().InferenceClassification().Overrides().Get(context.Background(), nil)
+overrides, err := graphClient.Me().InferenceClassification().Overrides().Get(context.Background(), nil)
 
 
 ```

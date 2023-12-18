@@ -4,66 +4,39 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = AccessPackageAssignmentRequest()
-request_body.@odata_type = '#microsoft.graph.accessPackageAssignmentRequest'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.id = '7a6ab703-0780-4b37-8445-81f679b2d75c'
+request_body = AccessPackageAssignmentRequest(
+	odata_type = "#microsoft.graph.accessPackageAssignmentRequest",
+	id = "7a6ab703-0780-4b37-8445-81f679b2d75c",
+	request_type = AccessPackageRequestType.AdminUpdate,
+	answers = [
+		AccessPackageAnswerString(
+			odata_type = "#microsoft.graph.accessPackageAnswerString",
+			value = "UpdatedAnswerValue",
+			answered_question = AccessPackageMultipleChoiceQuestion(
+				odata_type = "#microsoft.graph.accessPackageMultipleChoiceQuestion",
+				id = "8fe745e7-80b2-490d-bd22-4e708c77288c",
+			),
+		),
+		AccessPackageAnswerString(
+			odata_type = "#microsoft.graph.accessPackageAnswerString",
+			value = "My updated answer.",
+			display_value = "This is my updated answer to the question.",
+			answered_question = AccessPackageTextInputQuestion(
+				odata_type = "#microsoft.graph.accessPackageTextInputQuestion",
+				id = "7aaa18c9-8e4f-440f-bd5a-3a7ce312cbe6",
+			),
+		),
+	],
+	assignment = AccessPackageAssignment(
+		id = "44c741c1-2cf4-40db-83b6-e0112f8e5a83",
+	),
+)
 
-request_body.requesttype(AccessPackageRequestType.AdminUpdate('accesspackagerequesttype.adminupdate'))
-
-answers_access_package_answer1 = AccessPackageAnswer()
-answers_access_package_answer1.@odata_type = '#microsoft.graph.accessPackageAnswerString'
-
-answers_access_package_answer1answered_question = AccessPackageQuestion()
-answers_access_package_answer1answered_question.@odata_type = '#microsoft.graph.accessPackageMultipleChoiceQuestion'
-
-answers_access_package_answer1answered_question.id = '8fe745e7-80b2-490d-bd22-4e708c77288c'
-
-
-answers_access_package_answer1.answered_question = answers_access_package_answer1answered_question
-additional_data = [
-'value' => 'UpdatedAnswerValue', 
-];
-answers_access_package_answer1.additional_data(additional_data)
-
-
-
-answersArray []= answersAccessPackageAnswer1;
-answers_access_package_answer2 = AccessPackageAnswer()
-answers_access_package_answer2.@odata_type = '#microsoft.graph.accessPackageAnswerString'
-
-answers_access_package_answer2.display_value = 'This is my updated answer to the question.'
-
-answers_access_package_answer2answered_question = AccessPackageQuestion()
-answers_access_package_answer2answered_question.@odata_type = '#microsoft.graph.accessPackageTextInputQuestion'
-
-answers_access_package_answer2answered_question.id = '7aaa18c9-8e4f-440f-bd5a-3a7ce312cbe6'
-
-
-answers_access_package_answer2.answered_question = answers_access_package_answer2answered_question
-additional_data = [
-'value' => 'My updated answer.', 
-];
-answers_access_package_answer2.additional_data(additional_data)
-
-
-
-answersArray []= answersAccessPackageAnswer2;
-request_body.answers(answersArray)
-
-
-assignment = AccessPackageAssignment()
-assignment.id = '44c741c1-2cf4-40db-83b6-e0112f8e5a83'
-
-
-request_body.assignment = assignment
-
-
-
-result = await client.identity_governance.entitlement_management.assignment_requests.post(request_body = request_body)
+result = await graph_client.identity_governance.entitlement_management.assignment_requests.post(request_body)
 
 
 ```

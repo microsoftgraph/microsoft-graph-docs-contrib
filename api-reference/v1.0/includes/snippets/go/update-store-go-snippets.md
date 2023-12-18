@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelstermstore.NewStore()
 defaultLanguageTag := "en-US"
 requestBody.SetDefaultLanguageTag(&defaultLanguageTag) 
 
-result, err := graphClient.Sites().BySiteId("site-id").TermStore().Patch(context.Background(), requestBody, nil)
+termStore, err := graphClient.Sites().BySiteId("site-id").TermStore().Patch(context.Background(), requestBody, nil)
 
 
 ```

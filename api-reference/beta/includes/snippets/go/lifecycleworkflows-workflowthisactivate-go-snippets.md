@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphidentitygovernance.NewActivatePostRequestBody()
@@ -26,10 +26,9 @@ user1 := graphmodels.NewUser()
 id := "ea09ac2e-77e3-4134-85f2-25ccf3c33387"
 user1.SetId(&id) 
 
-subjects := []graphidentitygovernance.Objectable {
+subjects := []graphmodels.userable {
 	user,
 	user1,
-
 }
 requestBody.SetSubjects(subjects)
 

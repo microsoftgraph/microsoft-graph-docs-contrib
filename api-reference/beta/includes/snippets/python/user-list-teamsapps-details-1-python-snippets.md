@@ -4,19 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-query_params = UserScopeTeamsAppInstallationRequestBuilder.UserScopeTeamsAppInstallationRequestBuilderGetQueryParameters(
+graph_client = GraphServiceClient(credentials, scopes)
+
+query_params = UserScopeTeamsAppInstallationItemRequestBuilder.UserScopeTeamsAppInstallationItemRequestBuilderGetQueryParameters(
 		expand = ["teamsAppDefinition"],
 )
 
-request_configuration = UserScopeTeamsAppInstallationRequestBuilder.UserScopeTeamsAppInstallationRequestBuilderGetRequestConfiguration(
+request_configuration = UserScopeTeamsAppInstallationItemRequestBuilder.UserScopeTeamsAppInstallationItemRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
 )
 
-
-result = await client.users.by_user_id('user-id').teamwork.installed_apps.by_installed_app_id('userScopeTeamsAppInstallation-id').get(request_configuration = request_configuration)
+result = await graph_client.users.by_user_id('user-id').teamwork.installed_apps.by_user_scope_teams_app_installation_id('userScopeTeamsAppInstallation-id').get(request_configuration = request_configuration)
 
 
 ```

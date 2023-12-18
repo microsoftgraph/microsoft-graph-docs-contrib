@@ -4,28 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = BrowserSharedCookie()
-request_body.@odata_type = '#microsoft.graph.browserSharedCookie'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.host_or_domain = 'www.microsoft.com'
+request_body = BrowserSharedCookie(
+	odata_type = "#microsoft.graph.browserSharedCookie",
+	host_or_domain = "www.microsoft.com",
+	source_environment = BrowserSharedCookieSourceEnvironment.InternetExplorer11,
+	display_name = "Microsoft Cookie",
+	host_only = True,
+	comment = "A cookie for microsoft.com",
+	path = "/",
+)
 
-request_body.sourceenvironment(BrowserSharedCookieSourceEnvironment.InternetExplorer11('browsersharedcookiesourceenvironment.internetexplorer11'))
-
-request_body.display_name = 'Microsoft Cookie'
-
-request_body.host_only = True
-
-request_body.comment = 'A cookie for microsoft.com'
-
-request_body.path = '/'
-
-
-
-
-result = await client.admin.edge.internet_explorer_mode.site_lists.by_site_list_id('browserSiteList-id').shared_cookies.post(request_body = request_body)
+result = await graph_client.admin.edge.internet_explorer_mode.site_lists.by_browser_site_list_id('browserSiteList-id').shared_cookies.post(request_body)
 
 
 ```

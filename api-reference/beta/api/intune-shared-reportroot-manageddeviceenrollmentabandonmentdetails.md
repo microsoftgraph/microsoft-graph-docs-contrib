@@ -48,10 +48,10 @@ The following table shows the parameters that can be used with this function.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|skip|Int32|Not yet documented|
-|top|Int32|Not yet documented|
-|filter|String|Not yet documented|
-|skipToken|String|Not yet documented|
+|skip|Int32||
+|top|Int32||
+|filter|String||
+|skipToken|String||
 
 
 

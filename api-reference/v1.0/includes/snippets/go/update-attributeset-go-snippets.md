@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAttributeSet()
@@ -21,7 +21,7 @@ requestBody.SetDescription(&description)
 maxAttributesPerSet := int32(20)
 requestBody.SetMaxAttributesPerSet(&maxAttributesPerSet) 
 
-result, err := graphClient.Directory().AttributeSets().ByAttributeSetId("attributeSet-id").Patch(context.Background(), requestBody, nil)
+attributeSets, err := graphClient.Directory().AttributeSets().ByAttributeSetId("attributeSet-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

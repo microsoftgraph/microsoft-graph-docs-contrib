@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewDirectorySetting()
@@ -46,11 +46,10 @@ values := []graphmodels.SettingValueable {
 	settingValue1,
 	settingValue2,
 	settingValue3,
-
 }
 requestBody.SetValues(values)
 
-result, err := graphClient.Settings().Post(context.Background(), requestBody, nil)
+settings, err := graphClient.Settings().Post(context.Background(), requestBody, nil)
 
 
 ```

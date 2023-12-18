@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestParameters := &graphsites.SiteItemListItemItemItemVersionItemRequestBuilderGetQueryParameters{
@@ -22,7 +22,7 @@ configuration := &graphsites.SiteItemListItemItemItemVersionItemRequestBuilderGe
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Sites().BySiteId("site-id").Lists().ByListId("list-id").Items().ByItemId("listItem-id").Versions().ByVersionId("listItemVersion-id").Get(context.Background(), configuration)
+versions, err := graphClient.Sites().BySiteId("site-id").Lists().ByListId("list-id").Items().ByListItemId("listItem-id").Versions().ByListItemVersionId("listItemVersion-id").Get(context.Background(), configuration)
 
 
 ```

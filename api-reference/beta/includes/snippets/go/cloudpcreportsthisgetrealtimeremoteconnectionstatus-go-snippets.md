@@ -11,11 +11,12 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.DeviceManagement().VirtualEndpoint().Reports().GetRealTimeRemoteConnectionStatus(cloudPcId='{cloudPcId}')().Get(context.Background(), nil)
+cloudPcId := "{cloudPcId}"
+graphClient.DeviceManagement().VirtualEndpoint().Reports().GetRealTimeRemoteConnectionStatusWithCloudPcId(&cloudPcId).Get(context.Background(), nil)
 
 
 ```

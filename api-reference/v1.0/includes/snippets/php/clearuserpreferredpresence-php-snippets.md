@@ -6,13 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
-
-$requestBody = new ClearUserPreferredPresencePostRequestBody();
+// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$graphServiceClient->users()->byUserId('user-id')->presence()->clearUserPreferredPresence()->post($requestBody);
-
+$graphServiceClient->users()->byUserId('user-id')->presence()->clearUserPreferredPresence()->post()->wait();
 
 ```

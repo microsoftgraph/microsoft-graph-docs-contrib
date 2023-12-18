@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewPrintConnector()
@@ -33,7 +33,7 @@ altitudeInMeters := int32(3)
 location.SetAltitudeInMeters(&altitudeInMeters) 
 requestBody.SetLocation(location)
 
-result, err := graphClient.Print().Connectors().ByConnectorId("printConnector-id").Patch(context.Background(), requestBody, nil)
+connectors, err := graphClient.Print().Connectors().ByPrintConnectorId("printConnector-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

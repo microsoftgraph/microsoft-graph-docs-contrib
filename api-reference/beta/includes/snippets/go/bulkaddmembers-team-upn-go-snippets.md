@@ -13,13 +13,13 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphteams.NewAddPostRequestBody()
 
 
-conversationMember := graphmodels.NewConversationMember()
+conversationMember := graphmodels.NewAadUserConversationMember()
 roles := []string {
 
 }
@@ -28,10 +28,9 @@ additionalData := map[string]interface{}{
 	"odataBind" : "https://graph.microsoft.com/beta/users('jacob@contoso.com')", 
 }
 conversationMember.SetAdditionalData(additionalData)
-conversationMember1 := graphmodels.NewConversationMember()
+conversationMember1 := graphmodels.NewAadUserConversationMember()
 roles := []string {
 	"owner",
-
 }
 conversationMember1.SetRoles(roles)
 additionalData := map[string]interface{}{
@@ -39,14 +38,13 @@ additionalData := map[string]interface{}{
 }
 conversationMember1.SetAdditionalData(additionalData)
 
-values := []graphteams.Objectable {
+values := []graphmodels.conversationMemberable {
 	conversationMember,
 	conversationMember1,
-
 }
 requestBody.SetValues(values)
 
-result, err := graphClient.Teams().ByTeamId("team-id").Members().Add().Post(context.Background(), requestBody, nil)
+add, err := graphClient.Teams().ByTeamId("team-id").Members().Add().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -20,7 +20,7 @@ The user experience analytics insight is the recomendation to improve the user e
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|configurationManagerDataConnectorConfigured|Boolean|True if Tenant attach is configured. If configured then SCCM tenant attached devices will show up in UXA reporting.|
+|configurationManagerDataConnectorConfigured|Boolean|When TRUE, indicates Tenant attach is configured properly and System Center Configuration Manager (SCCM) tenant attached devices will show up in endpoint analytics reporting. When FALSE, indicates Tenant attach is not configured. FALSE by default.|
 
 ## Relationships
 None

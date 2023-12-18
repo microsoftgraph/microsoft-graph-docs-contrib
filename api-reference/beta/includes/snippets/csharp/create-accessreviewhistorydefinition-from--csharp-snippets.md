@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
 var requestBody = new AccessReviewHistoryDefinition
 {
@@ -23,40 +24,24 @@ var requestBody = new AccessReviewHistoryDefinition
 	ReviewHistoryPeriodEndDateTime = DateTimeOffset.Parse("2021-04-30T23:59:59Z"),
 	Scopes = new List<AccessReviewScope>
 	{
-		new AccessReviewScope
+		new AccessReviewQueryScope
 		{
 			OdataType = "#microsoft.graph.accessReviewQueryScope",
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"queryType" , "MicrosoftGraph"
-				},
-				{
-					"query" , "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')"
-				},
-				{
-					"queryRoot" , null
-				},
-			},
+			QueryType = "MicrosoftGraph",
+			Query = "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')",
+			QueryRoot = null,
 		},
-		new AccessReviewScope
+		new AccessReviewQueryScope
 		{
 			OdataType = "#microsoft.graph.accessReviewQueryScope",
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"queryType" , "MicrosoftGraph"
-				},
-				{
-					"query" , "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')"
-				},
-				{
-					"queryRoot" , null
-				},
-			},
+			QueryType = "MicrosoftGraph",
+			Query = "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')",
+			QueryRoot = null,
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.IdentityGovernance.AccessReviews.HistoryDefinitions.PostAsync(requestBody);
 
 

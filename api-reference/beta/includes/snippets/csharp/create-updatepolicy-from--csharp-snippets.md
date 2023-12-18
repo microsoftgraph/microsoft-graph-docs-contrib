@@ -6,47 +6,41 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models.WindowsUpdates;
 
-var requestBody = new Microsoft.Graph.Beta.Models.WindowsUpdates.UpdatePolicy
+var requestBody = new UpdatePolicy
 {
 	OdataType = "#microsoft.graph.windowsUpdates.updatePolicy",
-	Audience = new Microsoft.Graph.Beta.Models.WindowsUpdates.DeploymentAudience
+	Audience = new DeploymentAudience
 	{
 		Id = "8c4eb1eb-d7a3-4633-8e2f-f926e82df08e",
 	},
-	ComplianceChanges = new List<Microsoft.Graph.Beta.Models.WindowsUpdates.ComplianceChange>
+	ComplianceChanges = new List<ComplianceChange>
 	{
-		new Microsoft.Graph.Beta.Models.WindowsUpdates.ComplianceChange
+		new ContentApproval
 		{
 			OdataType = "#microsoft.graph.windowsUpdates.contentApproval",
 		},
 	},
-	ComplianceChangeRules = new List<Microsoft.Graph.Beta.Models.WindowsUpdates.ComplianceChangeRule>
+	ComplianceChangeRules = new List<ComplianceChangeRule>
 	{
-		new Microsoft.Graph.Beta.Models.WindowsUpdates.ComplianceChangeRule
+		new ContentApprovalRule
 		{
 			OdataType = "#microsoft.graph.windowsUpdates.contentApprovalRule",
-			AdditionalData = new Dictionary<string, object>
+			ContentFilter = new DriverUpdateFilter
 			{
-				{
-					"contentFilter" , new 
-					{
-						OdataType = "#microsoft.graph.windowsUpdates.driverUpdateFilter",
-					}
-				},
-				{
-					"durationBeforeDeploymentStart" , "P7D"
-				},
+				OdataType = "#microsoft.graph.windowsUpdates.driverUpdateFilter",
 			},
+			DurationBeforeDeploymentStart = TimeSpan.Parse("P7D"),
 		},
 	},
-	DeploymentSettings = new Microsoft.Graph.Beta.Models.WindowsUpdates.DeploymentSettings
+	DeploymentSettings = new DeploymentSettings
 	{
 		OdataType = "microsoft.graph.windowsUpdates.deploymentSettings",
-		Schedule = new Microsoft.Graph.Beta.Models.WindowsUpdates.ScheduleSettings
+		Schedule = new ScheduleSettings
 		{
-			GradualRollout = new Microsoft.Graph.Beta.Models.WindowsUpdates.GradualRolloutSettings
+			GradualRollout = new RateDrivenRolloutSettings
 			{
 				OdataType = "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
 				DurationBetweenOffers = TimeSpan.Parse("P1D"),
@@ -60,6 +54,8 @@ var requestBody = new Microsoft.Graph.Beta.Models.WindowsUpdates.UpdatePolicy
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Admin.Windows.Updates.UpdatePolicies.PostAsync(requestBody);
 
 

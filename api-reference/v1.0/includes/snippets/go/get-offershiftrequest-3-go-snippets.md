@@ -14,7 +14,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
@@ -31,7 +31,7 @@ requestBody.SetSenderMessage(&senderMessage)
 recipientUserId := "fe278b61-21ac-4872-8b41-1962bbb98e3c"
 requestBody.SetRecipientUserId(&recipientUserId) 
 
-result, err := graphClient.Teams().ByTeamId("team-id").Schedule().OfferShiftRequests().Post(context.Background(), requestBody, configuration)
+offerShiftRequests, err := graphClient.Teams().ByTeamId("team-id").Schedule().OfferShiftRequests().Post(context.Background(), requestBody, configuration)
 
 
 ```

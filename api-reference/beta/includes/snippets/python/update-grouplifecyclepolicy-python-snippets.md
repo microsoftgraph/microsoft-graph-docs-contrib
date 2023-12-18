@@ -4,20 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = GroupLifecyclePolicy()
-request_body.GroupLifetimeInDays = 180
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.managed_group_types = 'Selected'
+request_body = GroupLifecyclePolicy(
+	group_lifetime_in_days = 180,
+	managed_group_types = "Selected",
+	alternate_notification_emails = "admin@contoso.com",
+)
 
-request_body.alternate_notification_emails = 'admin@contoso.com'
-
-
-
-
-result = await client.group_lifecycle_policies.by_group_lifecycle_policie_id('groupLifecyclePolicy-id').patch(request_body = request_body)
+result = await graph_client.group_lifecycle_policies.by_group_lifecycle_policy_id('groupLifecyclePolicy-id').patch(request_body)
 
 
 ```

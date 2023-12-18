@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestParameters := &graphsecurity.SecurityIncidentsRequestBuilderGetQueryParameters{
@@ -22,7 +22,7 @@ configuration := &graphsecurity.SecurityIncidentsRequestBuilderGetRequestConfigu
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Security().Incidents().Get(context.Background(), configuration)
+incidents, err := graphClient.Security().Incidents().Get(context.Background(), configuration)
 
 
 ```

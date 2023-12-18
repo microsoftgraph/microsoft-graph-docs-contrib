@@ -11,11 +11,13 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Communications().CallRecords().ByCallRecordId("callRecord-id").Get(context.Background(), nil)
+fromDateTime , err := time.Parse(time.RFC3339, "{fromDateTime}")
+toDateTime , err := time.Parse(time.RFC3339, "{toDateTime}")
+microsoftGraphCallRecordsGetPstnCalls, err := graphClient.Communications().CallRecords().MicrosoftGraphCallRecordsGetPstnCallsWithFromDateTimeWithToDateTime(&fromDateTime, &toDateTime).Get(context.Background(), nil)
 
 
 ```

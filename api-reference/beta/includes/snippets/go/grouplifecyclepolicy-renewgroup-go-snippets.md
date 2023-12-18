@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphgrouplifecyclepolicies.NewRenewGroupPostRequestBody()
 groupId := "ffffffff-ffff-ffff-ffff-ffffffffffff"
 requestBody.SetGroupId(&groupId) 
 
-result, err := graphClient.GroupLifecyclePolicies().RenewGroup().Post(context.Background(), requestBody, nil)
+renewGroup, err := graphClient.GroupLifecyclePolicies().RenewGroup().Post(context.Background(), requestBody, nil)
 
 
 ```

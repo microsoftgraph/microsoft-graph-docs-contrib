@@ -16,7 +16,7 @@ You can run pipelines on a set of users. The following are the options for user 
 
 - All users within the organization
 - Up to 10 groups of users within the organization
-- A set of users based on a predicate consisting of Azure Active Directory user properties
+- A set of users based on a predicate consisting of Microsoft Entra user properties
 
 Specify your user selection in the SourceDataSet of the Azure Synapse or Azure Data Factory copy activity. To run on a list of groups, add a new field **allowedGroups** under **typeProperties** and set this to a list of up to 10 groups' **Object Ids** separated by commas. If no groups are specified by default, data is extracted for the entire organization.
 

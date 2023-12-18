@@ -12,11 +12,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-requestFilter := " principalIds/any"
+requestFilter := " principalIds/any(x:x eq '564ae70c-73d9-476b-820b-fb61eb7384b9')"
 
 requestParameters := &graphrolemanagement.RoleManagementDeviceManagementRoleAssignmentsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
@@ -25,7 +25,7 @@ configuration := &graphrolemanagement.RoleManagementDeviceManagementRoleAssignme
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.RoleManagement().DeviceManagement().RoleAssignments().Get(context.Background(), configuration)
+roleAssignments, err := graphClient.RoleManagement().DeviceManagement().RoleAssignments().Get(context.Background(), configuration)
 
 
 ```

@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphprint.NewCreateUploadSessionPostRequestBody()
@@ -26,7 +26,7 @@ size := int64(4533322)
 properties.SetSize(&size) 
 requestBody.SetProperties(properties)
 
-result, err := graphClient.Print().Printers().ByPrinterId("printer-id").Jobs().ByJobId("printJob-id").Documents().ByDocumentId("printDocument-id").CreateUploadSession().Post(context.Background(), requestBody, nil)
+createUploadSession, err := graphClient.Print().Printers().ByPrinterId("printer-id").Jobs().ByPrintJobId("printJob-id").Documents().ByPrintDocumentId("printDocument-id").CreateUploadSession().Post(context.Background(), requestBody, nil)
 
 
 ```

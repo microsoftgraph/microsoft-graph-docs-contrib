@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewUnifiedRoleAssignment()
@@ -25,7 +25,7 @@ requestBody.SetDirectoryScopeId(&directoryScopeId)
 appScopeId := null
 requestBody.SetAppScopeId(&appScopeId) 
 
-result, err := graphClient.RoleManagement().Exchange().RoleAssignments().Post(context.Background(), requestBody, nil)
+roleAssignments, err := graphClient.RoleManagement().Exchange().RoleAssignments().Post(context.Background(), requestBody, nil)
 
 
 ```

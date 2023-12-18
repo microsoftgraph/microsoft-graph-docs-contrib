@@ -4,55 +4,36 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = SendMailPostRequestBody()
-message = Message()
-message.subject = 'Meet for lunch?'
+graph_client = GraphServiceClient(credentials, scopes)
 
-messagebody = ItemBody()
-messagebody.contenttype(BodyType.Text('bodytype.text'))
+request_body = SendMailPostRequestBody(
+	message = Message(
+		subject = "Meet for lunch?",
+		body = ItemBody(
+			content_type = BodyType.Text,
+			content = "The new cafeteria is open.",
+		),
+		to_recipients = [
+			Recipient(
+				email_address = EmailAddress(
+					address = "meganb@contoso.onmicrosoft.com",
+				),
+			),
+		],
+		attachments = [
+			FileAttachment(
+				odata_type = "#microsoft.graph.fileAttachment",
+				name = "attachment.txt",
+				content_type = "text/plain",
+				content_bytes = base64.urlsafe_b64decode("SGVsbG8gV29ybGQh"),
+			),
+		],
+	),
+)
 
-messagebody.content = 'The new cafeteria is open.'
-
-
-message.body = messagebody
-to_recipients_recipient1 = Recipient()
-to_recipients_recipient1email_address = EmailAddress()
-to_recipients_recipient1email_address.address = 'meganb@contoso.onmicrosoft.com'
-
-
-to_recipients_recipient1.email_address = to_recipients_recipient1email_address
-
-toRecipientsArray []= toRecipientsRecipient1;
-message.torecipients(toRecipientsArray)
-
-
-attachments_attachment1 = Attachment()
-attachments_attachment1.@odata_type = '#microsoft.graph.fileAttachment'
-
-attachments_attachment1.name = 'attachment.txt'
-
-attachments_attachment1.content_type = 'text/plain'
-
-additional_data = [
-'content_bytes' => 'SGVsbG8gV29ybGQh', 
-];
-attachments_attachment1.additional_data(additional_data)
-
-
-
-attachmentsArray []= attachmentsAttachment1;
-message.attachments(attachmentsArray)
-
-
-
-request_body.message = message
-
-
-
-await client.me.send_mail.post(request_body = request_body)
+await graph_client.me.send_mail.post(request_body)
 
 
 ```

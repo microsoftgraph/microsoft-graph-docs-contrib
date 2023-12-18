@@ -1,6 +1,6 @@
 ---
 title: "resourceData resource type"
-description: "Represents the resouce data attached to the change notification sent to the subscriber."
+description: "Represents the resource data attached to the change notification sent to the subscriber."
 ms.localizationpriority: medium
 author: "keylimesoda"
 doc_type: resourcePageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the resouce data attached to the change notification sent to the subscriber. This resource is an open type and allows other properties to be passed in.
+Represents the resource data attached to the change notification sent to the subscriber. This resource is an open type and allows other properties to be passed in.
 
 For details, see [Use the Microsoft Graph API to get change notifications](webhooks.md).
 
@@ -40,7 +40,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

@@ -4,35 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = CreateReplyAllPostRequestBody()
-message = Message()
-attachments_attachment1 = Attachment()
-attachments_attachment1.@odata_type = '#microsoft.graph.fileAttachment'
+graph_client = GraphServiceClient(credentials, scopes)
 
-attachments_attachment1.name = 'guidelines.txt'
+request_body = CreateReplyAllPostRequestBody(
+	message = Message(
+		attachments = [
+			FileAttachment(
+				odata_type = "#microsoft.graph.fileAttachment",
+				name = "guidelines.txt",
+				content_bytes = base64.urlsafe_b64decode("bWFjIGFuZCBjaGVlc2UgdG9kYXk="),
+			),
+		],
+	),
+	comment = "if the project gets approved, please take a look at the attached guidelines before you decide on the name.",
+)
 
-additional_data = [
-'content_bytes' => 'bWFjIGFuZCBjaGVlc2UgdG9kYXk=', 
-];
-attachments_attachment1.additional_data(additional_data)
-
-
-
-attachmentsArray []= attachmentsAttachment1;
-message.attachments(attachmentsArray)
-
-
-
-request_body.message = message
-request_body.comment = 'if the project gets approved, please take a look at the attached guidelines before you decide on the name.'
-
-
-
-
-result = await client.me.messages.by_message_id('message-id').create_reply_all.post(request_body = request_body)
+result = await graph_client.me.messages.by_message_id('message-id').create_reply_all.post(request_body)
 
 
 ```

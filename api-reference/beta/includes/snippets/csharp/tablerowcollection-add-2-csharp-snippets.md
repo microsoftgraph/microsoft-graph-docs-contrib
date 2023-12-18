@@ -6,20 +6,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Drives.Item.Items.Item.Workbook.Tables.Item.Rows.Add;
 
-var requestBody = new Microsoft.Graph.Beta.Drives.Item.Items.Item.Workbook.Tables.Item.Rows.Add.AddPostRequestBody
+var requestBody = new AddPostRequestBody
 {
 	Index = null,
-	Values = new List<List<1>>
+	Values = new List<List<Number>>
 	{
-		new List<1>
+		new List<Number>
 		{
 			1,
 			2,
 			3,
 		},
-		new List<4>
+		new List<Number>
 		{
 			4,
 			5,
@@ -27,6 +28,8 @@ var requestBody = new Microsoft.Graph.Beta.Drives.Item.Items.Item.Workbook.Table
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].Rows.Add.PostAsync(requestBody);
 
 

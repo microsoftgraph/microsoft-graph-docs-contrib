@@ -12,18 +12,18 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAuthoredNote()
 content := graphmodels.NewItemBody()
-content := "String"
+content := "Please take a look at the files tagged with follow up"
 content.SetContent(&content) 
 contentType := graphmodels.TEXT_BODYTYPE 
 content.SetContentType(&contentType) 
 requestBody.SetContent(content)
 
-result, err := graphClient.Privacy().SubjectRightsRequests().BySubjectRightsRequestId("subjectRightsRequest-id").Notes().Post(context.Background(), requestBody, nil)
+notes, err := graphClient.Privacy().SubjectRightsRequests().BySubjectRightsRequestId("subjectRightsRequest-id").Notes().Post(context.Background(), requestBody, nil)
 
 
 ```

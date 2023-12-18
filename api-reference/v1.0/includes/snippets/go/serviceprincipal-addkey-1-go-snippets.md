@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphserviceprincipals.NewAddKeyPostRequestBody()
@@ -30,7 +30,7 @@ requestBody.SetPasswordCredential(&passwordCredential)
 proof := "eyJ0eXAiOiJ..."
 requestBody.SetProof(&proof) 
 
-result, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").AddKey().Post(context.Background(), requestBody, nil)
+addKey, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").AddKey().Post(context.Background(), requestBody, nil)
 
 
 ```

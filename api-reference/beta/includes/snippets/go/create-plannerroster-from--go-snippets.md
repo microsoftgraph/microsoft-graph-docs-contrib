@@ -12,12 +12,12 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewPlannerRoster()
 
-result, err := graphClient.Planner().Rosters().Post(context.Background(), requestBody, nil)
+rosters, err := graphClient.Planner().Rosters().Post(context.Background(), requestBody, nil)
 
 
 ```

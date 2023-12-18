@@ -2,7 +2,7 @@
 title: "timeZoneBase resource type"
 description: "The basic representation of a time zone."
 ms.localizationpriority: medium
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: outlook
 doc_type: resourcePageType
 ---
@@ -22,7 +22,7 @@ The basic representation of a time zone.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

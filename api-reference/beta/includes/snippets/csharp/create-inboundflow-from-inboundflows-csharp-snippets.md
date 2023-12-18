@@ -6,12 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models.IndustryData;
 
-var requestBody = new Microsoft.Graph.Beta.Models.IndustryData.InboundFlow
+var requestBody = new InboundFileFlow
 {
 	OdataType = "#microsoft.graph.industryData.inboundFileFlow",
-	DataDomain = Microsoft.Graph.Beta.Models.IndustryData.InboundDomain.EducationRostering,
+	DataDomain = InboundDomain.EducationRostering,
 	DisplayName = "Inbound rostering flow",
 	EffectiveDateTime = DateTimeOffset.Parse("2023-03-12T16:40:46.924769+05:30"),
 	ExpirationDateTime = DateTimeOffset.Parse("2023-03-13T16:40:46.924769+05:30"),
@@ -25,6 +26,8 @@ var requestBody = new Microsoft.Graph.Beta.Models.IndustryData.InboundFlow
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.External.IndustryData.InboundFlows.PostAsync(requestBody);
 
 

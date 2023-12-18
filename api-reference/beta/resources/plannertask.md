@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Planner task in Microsoft 365. A Planner task is contained in a [plan](plannerplan.md) and can be assigned to a [bucket](plannerbucket.md) in a plan. Each task object has a [details](plannertaskdetails.md) object which can contain more information about the task. For more information about relationships between group, plan, and task, see [Use the Planner REST API](planner-overview.md)
+Represents a Planner task in Microsoft 365. A Planner task is contained in a [plan](plannerplan.md) and can be assigned to a [bucket](plannerbucket.md) in a plan. Each task object has a [details](plannertaskdetails.md) object that can contain more information about the task. For more information about relationships between group, plan, and task, see [Use the Planner REST API](planner-overview.md)
 
 
 ## Methods
@@ -41,16 +41,16 @@ Represents a Planner task in Microsoft 365. A Planner task is contained in a [pl
 |createdDateTime|DateTimeOffset|Read-only. Date and time at which the task is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |creationSource|[plannerTaskCreation](../resources/plannertaskcreation.md)|Contains information about the origin of the task.|
 |dueDateTime|DateTimeOffset|Date and time at which the task is due. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
-|hasDescription|Boolean|Read-only. Value is `true` if the details object of the task has a non-empty description and `false` otherwise.|
+|hasDescription|Boolean|Read-only. Value is `true` if the details object of the task has a nonempty description and `false` otherwise.|
 |id|String|Read-only. ID of the task. It is 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service.|
 |orderHint|String|Hint used to order items of this type in a list view. The format is defined as outlined [here](planner-order-hint-format.md).|
 |percentComplete|Int32|Percentage of task completion. When set to `100`, the task is considered completed. |
-|specifiedCompletionRequirements|[plannerTaskCompletionRequirements](../resources/plannertask.md#plannertaskcompletionrequirements-values)|Indicates all the requirements specified on the **plannerTask**. Possible values are: `none`, `checklistCompletion`, `unknownFutureValue`. Read-only. The [plannerTaskCompletionRequirementDetails](plannertaskcompletionrequirementdetails.md) in [plannerTaskDetails](plannertaskdetails.md) has details of the requirements specified, if any. |
 |priority|Int32|Priority of the task. Valid range of values is between `0` and `10` (inclusive), with increasing value being lower priority (`0` has the highest priority and `10` has the lowest priority).  Currently, Planner interprets values `0` and `1` as "urgent", `2` and `3` and `4` as "important", `5`, `6`, and `7` as "medium", and `8`, `9`, and `10` as "low".  Currently, Planner sets the value `1` for "urgent", `3` for "important", `5` for "medium", and `9` for "low".|
 |planId|String|Plan ID to which the task belongs.|
 |previewType|String|This sets the type of preview that shows up on the task. Possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`.|
 |recurrence|[plannerTaskRecurrence](../resources/plannertaskrecurrence.md)|Defines active or inactive recurrence for the task. `null` when the recurrence has never been defined for the task.|
 |referenceCount|Int32|Number of external references that exist on the task.|
+|specifiedCompletionRequirements|[plannerTaskCompletionRequirements](../resources/plannertask.md#plannertaskcompletionrequirements-values)|Indicates all the requirements specified on the **plannerTask**. Possible values are: `none`, `checklistCompletion`, `unknownFutureValue`. Read-only. The [plannerTaskCompletionRequirementDetails](plannertaskcompletionrequirementdetails.md) in [plannerTaskDetails](plannertaskdetails.md) has details of the requirements specified, if any. |
 |startDateTime|DateTimeOffset|Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |title|String|Title of the task.|
 
@@ -60,7 +60,7 @@ Represents a Planner task in Microsoft 365. A Planner task is contained in a [pl
 |:--------------------|:---------------------------------------------------------------|
 | none                | No requirement.                                                |
 | checklistCompletion | Some or all of the checklist items are required to be checked. |
-| unknownFutureValue  | Evolvable enumeration sentinel value. Do not use.              |
+| unknownFutureValue  | Evolvable enumeration sentinel value. Don't use.              |
 
 ## Relationships
 
@@ -73,7 +73,7 @@ Represents a Planner task in Microsoft 365. A Planner task is contained in a [pl
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

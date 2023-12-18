@@ -15,8 +15,8 @@ Used in the request, approval, and assignment review settings of an access packa
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|The name of the user in Azure AD. Read only. |
-|userId|String|The ID of the [user](user.md) in Azure AD.|
+|description|String|The name of the user in Microsoft Entra ID. Read only. |
+|userId|String|The ID of the [user](user.md) in Microsoft Entra ID.|
 
 ## Relationships
 None.
@@ -35,6 +35,3 @@ The following is a JSON representation of the resource.
   "description": "String"
 }
 ```
-
-
-

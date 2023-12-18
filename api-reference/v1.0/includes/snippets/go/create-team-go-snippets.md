@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewTeam()
@@ -35,7 +35,7 @@ giphyContentRating := graphmodels.STRICT_GIPHYRATINGTYPE
 funSettings.SetGiphyContentRating(&giphyContentRating) 
 requestBody.SetFunSettings(funSettings)
 
-result, err := graphClient.Groups().ByGroupId("group-id").Team().Put(context.Background(), requestBody, nil)
+team, err := graphClient.Groups().ByGroupId("group-id").Team().Put(context.Background(), requestBody, nil)
 
 
 ```

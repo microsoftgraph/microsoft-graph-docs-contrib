@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestParameters := &graphidentity.IdentityB2cUserFlowsRequestBuilderGetQueryParameters{
@@ -22,7 +22,7 @@ configuration := &graphidentity.IdentityB2cUserFlowsRequestBuilderGetRequestConf
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Identity().B2cUserFlows().Get(context.Background(), configuration)
+b2cUserFlows, err := graphClient.Identity().B2cUserFlows().Get(context.Background(), configuration)
 
 
 ```

@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().Snapshots().BySnapshotId("cloudPcSnapshot-id").Get(context.Background(), nil)
+snapshots, err := graphClient.DeviceManagement().VirtualEndpoint().Snapshots().ByCloudPcSnapshotId("cloudPcSnapshot-id").Get(context.Background(), nil)
 
 
 ```

@@ -4,26 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = ConversationMember()
-request_body.@odata_type = '#microsoft.graph.aadUserConversationMember'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.visibleHistoryStartDateTime = DateTime('0001-01-01T00:00:00Z')
+request_body = AadUserConversationMember(
+	odata_type = "#microsoft.graph.aadUserConversationMember",
+	visible_history_start_date_time = "0001-01-01T00:00:00Z",
+	roles = [
+		"owner",
+	],
+	additional_data = {
+			"user@odata_bind" : "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5",
+	}
+)
 
-request_body.Roles(['owner', ])
-
-additional_data = [
-'user@odata_bind' => 'https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5', 
-];
-request_body.additional_data(additional_data)
-
-
-
-
-
-result = await client.chats.by_chat_id('chat-id').members.post(request_body = request_body)
+result = await graph_client.chats.by_chat_id('chat-id').members.post(request_body)
 
 
 ```

@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewMessage()
@@ -34,7 +34,6 @@ recipient.SetEmailAddress(emailAddress)
 
 toRecipients := []graphmodels.Recipientable {
 	recipient,
-
 }
 requestBody.SetToRecipients(toRecipients)
 
@@ -53,11 +52,10 @@ internetMessageHeader1.SetValue(&value)
 internetMessageHeaders := []graphmodels.InternetMessageHeaderable {
 	internetMessageHeader,
 	internetMessageHeader1,
-
 }
 requestBody.SetInternetMessageHeaders(internetMessageHeaders)
 
-result, err := graphClient.Me().Messages().Post(context.Background(), requestBody, nil)
+messages, err := graphClient.Me().Messages().Post(context.Background(), requestBody, nil)
 
 
 ```

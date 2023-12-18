@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Models;
 
 var requestBody = new AccessPackageAssignmentPolicy
 {
@@ -15,29 +16,26 @@ var requestBody = new AccessPackageAssignmentPolicy
 	AllowedTargetScope = AllowedTargetScope.SpecificDirectoryUsers,
 	SpecificAllowedTargets = new List<SubjectSet>
 	{
-		new SubjectSet
+		new AttributeRuleMembers
 		{
 			OdataType = "#microsoft.graph.attributeRuleMembers",
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"description" , "Membership rule for all users from sales department"
-				},
-				{
-					"membershipRule" , "(user.department -eq \"Sales\")"
-				},
-			},
+			Description = "Membership rule for all users from sales department",
+			MembershipRule = "(user.department -eq \"Sales\")",
 		},
 	},
 	AutomaticRequestSettings = new AccessPackageAutomaticRequestSettings
 	{
 		RequestAccessForAllowedTargets = true,
+		RemoveAccessWhenTargetLeavesAllowedTargets = true,
+		GracePeriodBeforeAccessRemoval = TimeSpan.Parse("P7D"),
 	},
 	AccessPackage = new AccessPackage
 	{
 		Id = "8a36831e-1527-4b2b-aff2-81259a8d8e76",
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.IdentityGovernance.EntitlementManagement.AssignmentPolicies.PostAsync(requestBody);
 
 

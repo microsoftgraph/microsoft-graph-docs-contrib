@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.IdentityGovernance().PrivilegedAccess().Group().AssignmentSchedules().ByAssignmentScheduleId("privilegedAccessGroupAssignmentSchedule-id").Get(context.Background(), nil)
+assignmentSchedules, err := graphClient.IdentityGovernance().PrivilegedAccess().Group().AssignmentSchedules().ByPrivilegedAccessGroupAssignmentScheduleId("privilegedAccessGroupAssignmentSchedule-id").Get(context.Background(), nil)
 
 
 ```

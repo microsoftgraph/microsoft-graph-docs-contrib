@@ -6,50 +6,38 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
-var requestBody = new CustomAuthenticationExtension
+var requestBody = new OnTokenIssuanceStartCustomExtension
 {
 	OdataType = "#microsoft.graph.onTokenIssuanceStartCustomExtension",
 	DisplayName = "onTokenIssuanceStartCustomExtension",
 	Description = "Fetch additional claims from custom user store",
-	EndpointConfiguration = new CustomExtensionEndpointConfiguration
+	EndpointConfiguration = new HttpRequestEndpoint
 	{
 		OdataType = "#microsoft.graph.httpRequestEndpoint",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"targetUrl" , "https://authenticationeventsAPI.contoso.com"
-			},
-		},
+		TargetUrl = "https://authenticationeventsAPI.contoso.com",
 	},
-	AuthenticationConfiguration = new CustomExtensionAuthenticationConfiguration
+	AuthenticationConfiguration = new AzureAdTokenAuthentication
 	{
 		OdataType = "#microsoft.graph.azureAdTokenAuthentication",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"resourceId" , "api://authenticationeventsAPI.contoso.com/a13d0fc1-04ab-4ede-b215-63de0174cbb4"
-			},
-		},
+		ResourceId = "api://authenticationeventsAPI.contoso.com/a13d0fc1-04ab-4ede-b215-63de0174cbb4",
 	},
-	AdditionalData = new Dictionary<string, object>
+	ClaimsForTokenConfiguration = new List<OnTokenIssuanceStartReturnClaim>
 	{
+		new OnTokenIssuanceStartReturnClaim
 		{
-			"claimsForTokenConfiguration" , new List<>
-			{
-				new 
-				{
-					ClaimIdInApiResponse = "DateOfBirth",
-				},
-				new 
-				{
-					ClaimIdInApiResponse = "CustomRoles",
-				},
-			}
+			ClaimIdInApiResponse = "DateOfBirth",
+		},
+		new OnTokenIssuanceStartReturnClaim
+		{
+			ClaimIdInApiResponse = "CustomRoles",
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Identity.CustomAuthenticationExtensions["{customAuthenticationExtension-id}"].PatchAsync(requestBody);
 
 

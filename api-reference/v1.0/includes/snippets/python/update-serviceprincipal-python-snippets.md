@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = ServicePrincipal()
-request_body.app_role_assignment_required = True
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = ServicePrincipal(
+	app_role_assignment_required = True,
+)
 
-
-
-result = await client.service_principals.by_service_principal_id('servicePrincipal-id').patch(request_body = request_body)
+result = await graph_client.service_principals.by_service_principal_id('servicePrincipal-id').patch(request_body)
 
 
 ```

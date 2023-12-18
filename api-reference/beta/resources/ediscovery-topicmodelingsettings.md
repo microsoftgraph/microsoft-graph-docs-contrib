@@ -1,6 +1,6 @@
 ---
 title: "topicModelingSettings resource type"
-description: "Topic modeling settings for an eDiscovery case"
+description: "Article modeling settings for an eDiscovery case"
 author: "mahage-msft"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Topic modeling (Themes) settings for an eDiscovery case. To learn more, see [Configure search and analytics settings in Advanced eDiscovery](/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery).
+Article modeling (Themes) settings for an eDiscovery case. To learn more, see [Configure search and analytics settings in Advanced eDiscovery](/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery).
 
 ## Properties
 
@@ -21,7 +21,7 @@ Topic modeling (Themes) settings for an eDiscovery case. To learn more, see [Con
 |:---|:---|:---|
 |dynamicallyAdjustTopicCount|Boolean|To learn more, see [Adjust maximum number of themes dynamically](/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery#themes).|
 |ignoreNumbers|Boolean|To learn more, see [Include numbers in themes](/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery#themes).|
-|isEnabled|Boolean|Indicates whether themes is enabled for the case.|
+|isEnabled|Boolean|Indicates whether themes are enabled for the case.|
 |topicCount|Int32|To learn more, see [Maximum number of themes](/microsoft-365/compliance/configure-search-and-analytics-settings-in-advanced-ediscovery#themes).|
 
 ## Relationships
@@ -30,7 +30,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.ediscovery.topicModelingSettings"

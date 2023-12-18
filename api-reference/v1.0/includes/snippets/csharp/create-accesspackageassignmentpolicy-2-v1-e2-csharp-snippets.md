@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Models;
 
 var requestBody = new AccessPackageAssignmentPolicy
 {
@@ -47,32 +48,22 @@ var requestBody = new AccessPackageAssignmentPolicy
 				DurationBeforeEscalation = TimeSpan.Parse("PT0S"),
 				PrimaryApprovers = new List<SubjectSet>
 				{
-					new SubjectSet
+					new InternalSponsors
 					{
 						OdataType = "#microsoft.graph.internalSponsors",
 					},
 				},
 				FallbackPrimaryApprovers = new List<SubjectSet>
 				{
-					new SubjectSet
+					new SingleUser
 					{
 						OdataType = "#microsoft.graph.singleUser",
-						AdditionalData = new Dictionary<string, object>
-						{
-							{
-								"userId" , "7deff43e-1f17-44ef-9e5f-d516b0ba11d4"
-							},
-						},
+						UserId = "7deff43e-1f17-44ef-9e5f-d516b0ba11d4",
 					},
-					new SubjectSet
+					new GroupMembers
 					{
 						OdataType = "#microsoft.graph.groupMembers",
-						AdditionalData = new Dictionary<string, object>
-						{
-							{
-								"groupId" , "1623f912-5e86-41c2-af47-39dd67582b66"
-							},
-						},
+						GroupId = "1623f912-5e86-41c2-af47-39dd67582b66",
 					},
 				},
 				EscalationApprovers = new List<SubjectSet>
@@ -93,25 +84,15 @@ var requestBody = new AccessPackageAssignmentPolicy
 				},
 				FallbackPrimaryApprovers = new List<SubjectSet>
 				{
-					new SubjectSet
+					new SingleUser
 					{
 						OdataType = "#microsoft.graph.singleUser",
-						AdditionalData = new Dictionary<string, object>
-						{
-							{
-								"userId" , "46184453-e63b-4f20-86c2-c557ed5d5df9"
-							},
-						},
+						UserId = "46184453-e63b-4f20-86c2-c557ed5d5df9",
 					},
-					new SubjectSet
+					new GroupMembers
 					{
 						OdataType = "#microsoft.graph.groupMembers",
-						AdditionalData = new Dictionary<string, object>
-						{
-							{
-								"groupId" , "1623f912-5e86-41c2-af47-39dd67582b66"
-							},
-						},
+						GroupId = "1623f912-5e86-41c2-af47-39dd67582b66",
 					},
 				},
 				EscalationApprovers = new List<SubjectSet>
@@ -146,7 +127,7 @@ var requestBody = new AccessPackageAssignmentPolicy
 					Interval = 3,
 					Month = 0,
 					DayOfMonth = 0,
-					DaysOfWeek = new List<DayOfWeek>
+					DaysOfWeek = new List<DayOfWeekObject>
 					{
 					},
 				},
@@ -159,15 +140,10 @@ var requestBody = new AccessPackageAssignmentPolicy
 		},
 		PrimaryReviewers = new List<SubjectSet>
 		{
-			new SubjectSet
+			new GroupMembers
 			{
 				OdataType = "#microsoft.graph.groupMembers",
-				AdditionalData = new Dictionary<string, object>
-				{
-					{
-						"groupId" , "1623f912-5e86-41c2-af47-39dd67582b66"
-					},
-				},
+				GroupId = "1623f912-5e86-41c2-af47-39dd67582b66",
 			},
 		},
 		FallbackReviewers = new List<SubjectSet>
@@ -179,6 +155,8 @@ var requestBody = new AccessPackageAssignmentPolicy
 		Id = "a2e1ca1e-4e56-47d2-9daa-e2ba8d12a82b",
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.IdentityGovernance.EntitlementManagement.AssignmentPolicies.PostAsync(requestBody);
 
 

@@ -17,14 +17,14 @@ The walkthrough below uses the example scenario where Alex has delegated his pri
 The walkthrough describes a few subsequent steps:
 1. [Adele gets the calendar that Alex has delegated to her](#step-1-adele-gets-the-delegated-calendar).
 2. [Adele sends a meeting invitation to Christie and Megan on Alex' behalf](#step-2-adele-creates-and-sends-an-invitation-on-alex-behalf). 
-3. [Christie receives the meeting request, and inspects the associated event in her calendar](#step-3-christie-receives-meeting-request-and-inspects-the-associated-event-in-her-calendar).
+3. Christie receives the meeting request, and inspects the associated event in her calenda
 4. [Christie responds tentative to the invitation](#step-4-christie-responds-to-the-meeting-request).
 5. [Adele receives Christie's response message](#step-5-adele-receives-the-response-message).
 6. [Alex checks attendees' responses as part of the event](#step-6-alex-accesses-responses-as-part-of-the-event).
 
 If Alex has shared and not delegated his calendar with Adele:
 
-- Signed in as Adele, an app can [get the calendar that Alex has shared with Adele](outlook-get-shared-events-calendars.md#sharee-get-shared-custom-calendar-or-its-events-from-sharees-mailbox).
+- Signed in as Adele, an app can [get the calendar that Alex has shared with Adele](#step-1-adele-gets-the-delegated-calendar)
 - The app can use the requests and responses in steps 2 to 4 to apply to the shared calendar the same way as the delegated calendar.
 - In step 5, the app can sign in as Alex, instead of Adele, to receive Christie's response message.
 
@@ -34,7 +34,7 @@ Signed in as Adele, get the calendars she has access to and identify the one Ale
 
 **Microsoft Graph permissions**
 
-Use the least privileged delegated permission, `Calendars.Read.Shared`. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
+Use the least privileged delegated permission, `Calendars.Read.Shared`. For more information, see the [Calendars.Read.Shared permission in the permissions reference](permissions-reference.md#calendarsreadshared).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -46,31 +46,35 @@ GET https://graph.microsoft.com/v1.0/me/calendars
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-adele-calendars-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/get-adele-calendars-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-adele-calendars-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-adele-calendars-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/get-adele-calendars-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-adele-calendars-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/get-adele-calendars-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-adele-calendars-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/get-adele-calendars-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/get-adele-calendars-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-adele-calendars-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/get-adele-calendars-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/get-adele-calendars-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-adele-calendars-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/get-adele-calendars-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -134,7 +138,7 @@ Signed in as Adele, use the calendar ID obtained from step 1 to create an [event
 
 **Microsoft Graph permissions**
 
-Use the least privileged delegated permission, `Calendars.ReadWrite.Shared`. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
+Use the least privileged delegated permission, `Calendars.ReadWrite.Shared`. For more information, see [Calendars.ReadWrite.Shared permission in the permissions reference](permissions-reference.md#calendarsreadwriteshared).
 
 <!-- {
   "blockType": "request",
@@ -187,23 +191,27 @@ Content-type: application/json
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-send-invitation-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/create-send-invitation-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
+# [Java](#tab/java)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/create-send-invitation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [PHP](#tab/php)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -408,7 +416,7 @@ Signed in as Christie, reply to the **event** as tentative, and include a reply 
 
 **Microsoft Graph permissions**
 
-Use the least privileged delegated permission, `Calendars.ReadWrite.Shared`. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
+Use the least privileged delegated permission, `Calendars.ReadWrite.Shared`. For more information, see [Calendars.ReadWrite.Shared permission in the permissions reference](permissions-reference.md#calendarsreadwriteshared).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -427,31 +435,35 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/event-reply-tentativelyaccept-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/event-reply-tentativelyaccept-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/event-reply-tentativelyaccept-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/event-reply-tentativelyaccept-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/event-reply-tentativelyaccept-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/event-reply-tentativelyaccept-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/event-reply-tentativelyaccept-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/event-reply-tentativelyaccept-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/event-reply-tentativelyaccept-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/event-reply-tentativelyaccept-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/event-reply-tentativelyaccept-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/event-reply-tentativelyaccept-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/event-reply-tentativelyaccept-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/event-reply-tentativelyaccept-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/event-reply-tentativelyaccept-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -475,7 +487,7 @@ Signed in as Adele, get the [eventMessage](/graph/api/resources/eventmessage) th
 
 **Microsoft Graph permissions**
 
-Use the least privileged delegated permission, `Mail.Read.Shared`. For more information, see [mail permissions](permissions-reference.md#mail-permissions).
+Use the least privileged delegated permission, `Mail.Read.Shared`. For more information, see [Mail.Read.Shared permission in the permissions reference](permissions-reference.md#mailreadshared).
 
 
 # [HTTP](#tab/http)
@@ -489,31 +501,35 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADI4oeRpAABf0HJUAAA=
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/message-get-reply-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/message-get-reply-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/message-get-reply-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/message-get-reply-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/message-get-reply-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/message-get-reply-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/message-get-reply-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/message-get-reply-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/message-get-reply-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/message-get-reply-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/message-get-reply-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/message-get-reply-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/message-get-reply-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/message-get-reply-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/message-get-reply-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -601,7 +617,7 @@ Signed in as Alex, get the [event](/graph/api/resources/event) that Adele create
 
 **Microsoft Graph permissions**
 
-Use the least privileged delegated permission, `Calendars.Read`. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
+Use the least privileged delegated permission, `Calendars.Read`. For more information, see [Calendars.Read permission in the permissions reference](permissions-reference.md#calendarsread).
 
 
 # [HTTP](#tab/http)
@@ -615,31 +631,35 @@ GET https://graph.microsoft.com/v1.0/me/calendar/events/AAMkADJXJGu0AABf02qwAAA=
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/event-get-responses-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/event-get-responses-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/event-get-responses-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/event-get-responses-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/event-get-responses-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/event-get-responses-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/event-get-responses-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/event-get-responses-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/event-get-responses-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/v1/event-get-responses-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/event-get-responses-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/event-get-responses-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/event-get-responses-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

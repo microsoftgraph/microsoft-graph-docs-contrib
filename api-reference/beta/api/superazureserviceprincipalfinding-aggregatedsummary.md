@@ -1,0 +1,90 @@
+---
+title: "superAzureServicePrincipalFinding: aggregatedSummary"
+description: View the count of super Azure service principals in your authorization systems.
+author: "ashyasingh"
+ms.reviewer: ciem_pm
+ms.localizationpriority: medium
+ms.prod: "multicloud-permissions-management"
+doc_type: apiPageType
+---
+
+# superAzureServicePrincipalFinding: aggregatedSummary
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+View the count of super Azure service principals for the specified authorization systems in your Azure environment.
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+ 
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.superAzureServicePrincipalFinding/microsoft.graph.aggregatedSummary(authorizationSystemIds=['azureAuthSystemId'])
+```
+
+## Function parameters
+In the request URL, provide the following query parameters with values.
+The following table shows the parameters that are required with this function.
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|authorizationSystemIds|String collection|The collection of IDs for the authorization systems against which to get the summary of records.|
+
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+
+## Request body
+Don't supply a request body for this method.
+
+## Response
+
+If successful, this function returns a `200 OK` response code and a [permissionsAnalyticsAggregatedIdentitySummary](../resources/permissionsanalyticsaggregatedidentitysummary.md) in the response body.
+
+## Examples
+
+### Request
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "superazureserviceprincipalfindingthis.aggregatedsummary"
+}
+-->
+``` http
+GET GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.superAzureServicePrincipalFinding/aggregatedSummary(authorizationSystemIds=['00f7dcae-97f9-492b-af2e-36eb35b613af'])
+```
+
+
+### Response
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.permissionsAnalyticsAggregatedIdentitySummary"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.permissionsAnalyticsAggregatedIdentitySummary",
+    "totalCount": 7,
+    "findingsCount": 1
+}
+```

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
 	definition = @(
@@ -13,6 +13,6 @@ $params = @{
 	displayName = "Test1234"
 }
 
-New-MgPolicyClaimMappingPolicy -BodyParameter $params
+New-MgBetaPolicyClaimMappingPolicy -BodyParameter $params
 
 ```

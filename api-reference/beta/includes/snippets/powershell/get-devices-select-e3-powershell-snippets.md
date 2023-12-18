@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
-Get-MgDevice -Property "id,extensionAttributes" 
+Get-MgBetaDevice -Property "id,extensionAttributes" 
 
 ```

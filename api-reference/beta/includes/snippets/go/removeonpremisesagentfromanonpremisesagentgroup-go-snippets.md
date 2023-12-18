@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.OnPremisesPublishingProfiles().ByOnPremisesPublishingProfileId("onPremisesPublishingProfile-id").Agents().ByAgentId("onPremisesAgent-id").AgentGroups().ByAgentGroupId("onPremisesAgentGroup-id").Ref().Delete(context.Background(), nil)
+graphClient.OnPremisesPublishingProfiles().ByOnPremisesPublishingProfileId("onPremisesPublishingProfile-id").Agents().ByOnPremisesAgentId("onPremisesAgent-id").AgentGroups().ByOnPremisesAgentGroupId("onPremisesAgentGroup-id").Ref().Delete(context.Background(), nil)
 
 
 ```

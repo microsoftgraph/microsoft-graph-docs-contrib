@@ -4,31 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = WorkforceIntegration()
-request_body.display_name = 'displayName-value'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.ApiVersion = 99
+request_body = WorkforceIntegration(
+	display_name = "displayName-value",
+	api_version = 99,
+	encryption = WorkforceIntegrationEncryption(
+		protocol = WorkforceIntegrationEncryptionProtocol.SharedSecret,
+		secret = "secret-value",
+	),
+	is_active = True,
+	url = "url-value",
+	supported_entities = WorkforceIntegrationSupportedEntities.None,
+)
 
-encryption = WorkforceIntegrationEncryption()
-encryption.protocol(WorkforceIntegrationEncryptionProtocol.Protocol-value('workforceintegrationencryptionprotocol.protocol-value'))
-
-encryption.secret = 'secret-value'
-
-
-request_body.encryption = encryption
-request_body.is_active = True
-
-request_body.url = 'url-value'
-
-request_body.supportedentities(WorkforceIntegrationSupportedEntities.SupportedEntities-value('workforceintegrationsupportedentities.supportedentities-value'))
-
-
-
-
-result = await client.teamwork.workforce_integrations.by_workforce_integration_id('workforceIntegration-id').patch(request_body = request_body)
+result = await graph_client.teamwork.workforce_integrations.by_workforce_integration_id('workforceIntegration-id').patch(request_body)
 
 
 ```

@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelsediscovery.NewCase()
@@ -23,7 +23,7 @@ requestBody.SetDescription(&description)
 externalId := "Updated externalId"
 requestBody.SetExternalId(&externalId) 
 
-result, err := graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").Patch(context.Background(), requestBody, nil)
+cases, err := graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -4,27 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = Attachment()
-request_body.@odata_type = '#microsoft.graph.referenceAttachment'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.name = 'Personal pictures'
+request_body = ReferenceAttachment(
+	odata_type = "#microsoft.graph.referenceAttachment",
+	name = "Personal pictures",
+	source_url = "https://contoso.com/personal/mario_contoso_net/Documents/Pics",
+	provider_type = ReferenceAttachmentProvider.OneDriveConsumer,
+	permission = ReferenceAttachmentPermission.Edit,
+	is_folder = True,
+)
 
-additional_data = [
-'source_url' => 'https://contoso.com/personal/mario_contoso_net/Documents/Pics', 
-'provider_type' => 'oneDriveConsumer', 
-'permission' => 'Edit', 
-'is_folder' => 'True', 
-];
-request_body.additional_data(additional_data)
-
-
-
-
-
-result = await client.me.events.by_event_id('event-id').attachments.post(request_body = request_body)
+result = await graph_client.me.events.by_event_id('event-id').attachments.post(request_body)
 
 
 ```

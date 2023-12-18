@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Admin().Windows().Updates().Deployments().Get(context.Background(), nil)
+deployments, err := graphClient.Admin().Windows().Updates().Deployments().Get(context.Background(), nil)
 
 
 ```

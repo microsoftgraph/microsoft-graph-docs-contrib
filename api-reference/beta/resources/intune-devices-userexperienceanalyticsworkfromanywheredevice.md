@@ -1,6 +1,6 @@
 ---
 title: "userExperienceAnalyticsWorkFromAnywhereDevice resource type"
-description: "The user experience analytics Device for work from anywhere report"
+description: "The user experience analytics device for work from anywhere report."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-The user experience analytics Device for work from anywhere report
+The user experience analytics device for work from anywhere report.
 
 ## Methods
 |Method|Return Type|Description|
@@ -29,41 +29,41 @@ The user experience analytics Device for work from anywhere report
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier of the user experience analytics work from anywhere device.|
-|deviceId|String|The user experience work from anywhere device Id.|
-|deviceName|String|The work from anywhere device's name.|
-|serialNumber|String|The user experience work from anywhere device's serial number.|
-|manufacturer|String|The user experience work from anywhere device's manufacturer.|
-|model|String|The user experience work from anywhere device's model.|
-|ownership|String|The user experience work from anywhere device's ownership.|
-|managedBy|String|The user experience work from anywhere management agent of the device.|
-|autoPilotRegistered|Boolean|The user experience work from anywhere intune device's autopilotRegistered.|
-|autoPilotProfileAssigned|Boolean|The user experience analytics work from anywhere intune device's autopilotProfileAssigned.|
-|azureAdRegistered|Boolean|The user experience work from anywhere device's azureAdRegistered.|
-|azureAdDeviceId|String|The user experience work from anywhere azure Ad device Id.|
-|azureAdJoinType|String|The user experience work from anywhere device's azure Ad joinType.|
-|osDescription|String|The user experience work from anywhere device's OS Description.|
-|osVersion|String|The user experience work from anywhere device's OS Version.|
-|tenantAttached|Boolean|The user experience work from anywhere device's tenantAttached.|
-|compliancePolicySetToIntune|Boolean|The user experience work from anywhere device's compliancePolicySetToIntune.|
-|otherWorkloadsSetToIntune|Boolean|The user experience work from anywhere device's otherWorkloadsSetToIntune.|
-|isCloudManagedGatewayEnabled|Boolean|The user experience work from anywhere device's Cloud Management Gateway for Configuration Manager is enabled.|
-|upgradeEligibility|[operatingSystemUpgradeEligibility](../resources/intune-devices-operatingsystemupgradeeligibility.md)|The user experience work from anywhere windows upgrade eligibility status of device. Possible values are: `upgraded`, `unknown`, `notCapable`, `capable`.|
-|ramCheckFailed|Boolean|Is the user experience analytics work from anywhere device RAM hardware check failed for device to upgrade to the latest version of windows|
-|storageCheckFailed|Boolean|The user experience work from anywhere device, Is storage hardware check failed for device to upgrade to the latest version of windows.|
-|processorCoreCountCheckFailed|Boolean|The user experience work from anywhere device, Is processor hardware core count check failed for device to upgrade to the latest version of windows.|
-|processorSpeedCheckFailed|Boolean|The user experience work from anywhere device, Is processor hardware speed check failed for device to upgrade to the latest version of windows.|
-|tpmCheckFailed|Boolean|The user experience work from anywhere device, Is Trusted Platform Module (TPM) hardware check failed for device to the latest version of upgrade to windows.|
-|secureBootCheckFailed|Boolean|The user experience work from anywhere device, Is secure boot hardware check failed for device to upgrade to the latest version of windows.|
-|processorFamilyCheckFailed|Boolean|The user experience work from anywhere device, Is processor hardware family check failed for device to upgrade to the latest version of windows.|
-|processor64BitCheckFailed|Boolean|The user experience work from anywhere device, Is processor hardware 64-bit architecture check failed for device to upgrade to the latest version of windows.|
-|osCheckFailed|Boolean|The user experience work from anywhere device, Is OS check failed for device to upgrade to the latest version of windows.|
-|workFromAnywhereScore|Double|The user experience work from anywhere per device overall score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
-|windowsScore|Double|The user experience work from anywhere per device windows score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
-|cloudManagementScore|Double|The user experience work from anywhere per device cloud management score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
-|cloudIdentityScore|Double|The user experience work from anywhere per device cloud identity score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
-|cloudProvisioningScore|Double|The user experience work from anywhere per device cloud provisioning score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
-|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The user experience work from anywhere per device health status. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`, `unknownFutureValue`.|
+|id|String|The unique identifier of the user experience analytics work from anywhere device. Supports: $select, $OrderBy. Read-only.|
+|deviceId|String|The Intune device id of the device. Supports: $select, $OrderBy. Read-only.|
+|deviceName|String|The name of the device. Supports: $select, $OrderBy. Read-only.|
+|serialNumber|String|The serial number of the device. Supports: $select, $OrderBy. Read-only.|
+|manufacturer|String|The manufacturer name of the device. Supports: $select, $OrderBy. Read-only.|
+|model|String|The model name of the device. Supports: $select, $OrderBy. Read-only.|
+|ownership|String|Ownership of the device. Supports: $select, $OrderBy. Read-only.|
+|managedBy|String|The management agent of the device. Supports: $select, $OrderBy. Read-only.|
+|autoPilotRegistered|Boolean|When TRUE, indicates the intune device's autopilot is registered. When FALSE, indicates it's not registered. Supports: $select, $OrderBy. Read-only.|
+|autoPilotProfileAssigned|Boolean|When TRUE, indicates the intune device's autopilot profile is assigned. When FALSE, indicates it's not Assigned. Supports: $select, $OrderBy. Read-only.|
+|azureAdRegistered|Boolean|When TRUE, indicates the device's Azure Active Directory (Azure AD) is registered. When False, indicates it's not registered. Supports: $select, $OrderBy. Read-only.|
+|azureAdDeviceId|String|The Azure Active Directory (Azure AD) device Id. Supports: $select, $OrderBy. Read-only.|
+|azureAdJoinType|String|The work from anywhere device's Azure Active Directory (Azure AD) join type. Supports: $select, $OrderBy. Read-only.|
+|osDescription|String|The OS description of the device. Supports: $select, $OrderBy. Read-only.|
+|osVersion|String|The OS version of the device. Supports: $select, $OrderBy. Read-only.|
+|tenantAttached|Boolean|When TRUE, indicates the device is Tenant Attached. When FALSE, indicates it's not Tenant Attached. Supports: $select, $OrderBy. Read-only.|
+|compliancePolicySetToIntune|Boolean|When TRUE, indicates the device's compliance policy is set to intune. When FALSE, indicates it's not set to intune. Supports: $select, $OrderBy. Read-only.|
+|otherWorkloadsSetToIntune|Boolean|When TRUE, indicates the device's other workloads is set to intune. When FALSE, indicates it's not set to intune. Supports: $select, $OrderBy. Read-only.|
+|isCloudManagedGatewayEnabled|Boolean|When TRUE, indicates the device's Cloud Management Gateway for Configuration Manager is enabled. When FALSE, indicates it's not enabled. Supports: $select, $OrderBy. Read-only.|
+|upgradeEligibility|[operatingSystemUpgradeEligibility](../resources/intune-devices-operatingsystemupgradeeligibility.md)|The windows upgrade eligibility status of device. Possible values are: upgraded, unknown, notCapable, capable. Unknown by default. Supports: $select, $OrderBy. Read-only. Possible values are: `upgraded`, `unknown`, `notCapable`, `capable`, `unknownFutureValue`.|
+|ramCheckFailed|Boolean|When TRUE, indicates RAM hardware check failed for device to upgrade to the latest version of windows. When FALSE, indicates the check succeeded. Supports: $select, $OrderBy. Read-only.|
+|storageCheckFailed|Boolean|When TRUE, indicates storage hardware check failed for device to upgrade to the latest version of windows. When FALSE, indicates the check succeeded. Supports: $select, $OrderBy. Read-only.|
+|processorCoreCountCheckFailed|Boolean|When TRUE, indicates processor hardware core count check failed for device to upgrade to the latest version of windows. When FALSE, indicates the check succeeded. Supports: $select, $OrderBy. Read-only.|
+|processorSpeedCheckFailed|Boolean|When TRUE, indicates processor hardware speed check failed for device to upgrade to the latest version of windows. When FALSE, indicates the check succeeded. Supports: $select, $OrderBy. Read-only.|
+|tpmCheckFailed|Boolean|When TRUE, indicates Trusted Platform Module (TPM) hardware check failed for device to the latest version of upgrade to windows. When FALSE, indicates the check succeeded. Supports: $select, $OrderBy. Read-only.|
+|secureBootCheckFailed|Boolean|When TRUE, indicates secure boot hardware check failed for device to upgrade to the latest version of windows. When FALSE, indicates the check succeeded. Supports: $select, $OrderBy. Read-only.|
+|processorFamilyCheckFailed|Boolean|When TRUE, indicates processor hardware family check failed for device to upgrade to the latest version of windows. When FALSE, indicates the check succeeded. Supports: $select, $OrderBy. Read-only.|
+|processor64BitCheckFailed|Boolean|When TRUE, indicates processor hardware 64-bit architecture check failed for device to upgrade to the latest version of windows. When FALSE, indicates the check succeeded. Supports: $select, $OrderBy. Read-only.|
+|osCheckFailed|Boolean|When TRUE, indicates OS check failed for device to upgrade to the latest version of windows. When FALSE, indicates the check succeeded. Supports: $select, $OrderBy. Read-only.|
+|workFromAnywhereScore|Double|Indicates work from anywhere per device overall score. Valid values 0 to 100. Value -1 means associated score is unavailable. Supports: $select, $OrderBy. Read-only. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
+|windowsScore|Double|Indicates per device windows score. Valid values 0 to 100. Value -1 means associated score is unavailable. Supports: $select, $OrderBy. Read-only. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
+|cloudManagementScore|Double|Indicates per device cloud management score. Valid values 0 to 100. Value -1 means associated score is unavailable. Supports: $select, $OrderBy. Read-only. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
+|cloudIdentityScore|Double|Indicates per device cloud identity score. Valid values 0 to 100. Value -1 means associated score is unavailable. Supports: $select, $OrderBy. Read-only. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
+|cloudProvisioningScore|Double|Indicates per device cloud provisioning score. Valid values 0 to 100. Value -1 means associated score is unavailable. Supports: $select, $OrderBy. Read-only. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The health state of the user experience analytics work from anywhere device. Possible values are: unknown, insufficientData, needsAttention, meetingGoals. Unknown by default. Supports: $select, $OrderBy. Read-only. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`, `unknownFutureValue`.|
 
 ## Relationships
 None

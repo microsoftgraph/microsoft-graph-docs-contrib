@@ -8,16 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphusers.NewClearUserPreferredPresencePostRequestBody()
 
-graphClient.Users().ByUserId("user-id").Presence().ClearUserPreferredPresence().Post(context.Background(), requestBody, nil)
+graphClient.Users().ByUserId("user-id").Presence().ClearUserPreferredPresence().Post(context.Background(), nil)
 
 
 ```

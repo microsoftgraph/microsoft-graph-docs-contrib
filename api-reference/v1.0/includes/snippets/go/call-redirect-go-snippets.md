@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphcommunications.NewRedirectPostRequestBody()
@@ -22,7 +22,7 @@ requestBody := graphcommunications.NewRedirectPostRequestBody()
 invitationParticipantInfo := graphmodels.NewInvitationParticipantInfo()
 identity := graphmodels.NewIdentitySet()
 additionalData := map[string]interface{}{
-phone := graphmodels.New()
+phone := graphmodels.NewIdentity()
 id := "+12345678901"
 phone.SetId(&id) 
 	identity.SetPhone(phone)
@@ -30,9 +30,8 @@ phone.SetId(&id)
 identity.SetAdditionalData(additionalData)
 invitationParticipantInfo.SetIdentity(identity)
 
-targets := []graphcommunications.InvitationParticipantInfoable {
+targets := []graphmodels.InvitationParticipantInfoable {
 	invitationParticipantInfo,
-
 }
 requestBody.SetTargets(targets)
 callbackUri := "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039"

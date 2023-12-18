@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.External().IndustryData().Runs().ByRunId("industryDataRun-id").MicrosoftGraphIndustryDataGetStatistics().Get(context.Background(), nil)
+microsoftGraphIndustryDataGetStatistics, err := graphClient.External().IndustryData().Runs().ByIndustryDataRunId("industryDataRun-id").MicrosoftGraphIndustryDataGetStatistics().Get(context.Background(), nil)
 
 
 ```

@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Users().ByUserId("user-id").Presence().Get(context.Background(), nil)
+presence, err := graphClient.Users().ByUserId("user-id").Presence().Get(context.Background(), nil)
 
 
 ```

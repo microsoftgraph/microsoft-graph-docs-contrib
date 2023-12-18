@@ -6,9 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
-
-var result = await graphClient.IdentityGovernance.EntitlementManagement.Assignments["{accessPackageAssignment-id}"].GetAsync((requestConfiguration) =>
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.IdentityGovernance.EntitlementManagement.Assignments.AdditionalAccessWithAccessPackageIdWithIncompatibleAccessPackageId("{accessPackageId}","{incompatibleAccessPackageId}").GetAsync((requestConfiguration) =>
 {
 	requestConfiguration.QueryParameters.Expand = new string []{ "target" };
 });

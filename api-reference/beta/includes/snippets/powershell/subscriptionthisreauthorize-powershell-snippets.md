@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.ChangeNotifications
+Import-Module Microsoft.Graph.Beta.ChangeNotifications
 
-Invoke-MgReauthorizeSubscription -SubscriptionId $subscriptionId
+Invoke-MgBetaReauthorizeSubscription -SubscriptionId $subscriptionId
 
 ```

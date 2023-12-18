@@ -4,21 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = UnifiedGroupSource()
-group = Group()
-group.mail = 'SOCTeam@M365x809305.onmicrosoft.com'
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = UnifiedGroupSource(
+	group = Group(
+		mail = "SOCTeam@M365x809305.onmicrosoft.com",
+	),
+	included_sources = SourceType.Mailbox | SourceType.Site,
+)
 
-request_body.group = group
-request_body.includedsources(SourceType.Mailbox, site('sourcetype.mailbox, site'))
-
-
-
-
-result = await client.security.cases.ediscovery_cases.by_ediscovery_case_id('ediscoveryCase-id').custodians.by_custodian_id('ediscoveryCustodian-id').unified_group_sources.post(request_body = request_body)
+result = await graph_client.security.cases.ediscovery_cases.by_ediscovery_case_id('ediscoveryCase-id').custodians.by_ediscovery_custodian_id('ediscoveryCustodian-id').unified_group_sources.post(request_body)
 
 
 ```

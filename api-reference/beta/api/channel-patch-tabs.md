@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 Update the properties of the specified [tab](../resources/teamstab.md).
 This can be used to configure the content of the tab.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -50,7 +52,7 @@ If successful, this method returns a `200 OK` response code.
 
 ## Example
 #### Request
-The following is an example of the request.
+The following example shows a request.
 ```http
 PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
 Content-type: application/json
@@ -81,7 +83,8 @@ Content-type: application/json
 
 ## See also
 
-[Configuring the built-in tab types](/graph/teams-configuring-builtin-tabs)
+- [Configuring the built-in tab types](/graph/teams-configuring-builtin-tabs)
+- [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -6,20 +6,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
-var requestBody = new ThreatAssessmentRequest
+var requestBody = new UrlAssessmentRequest
 {
 	OdataType = "#microsoft.graph.urlAssessmentRequest",
+	Url = "http://test.com",
 	ExpectedAssessment = ThreatExpectedAssessment.Block,
 	Category = ThreatCategory.Phishing,
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"url" , "http://test.com"
-		},
-	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.InformationProtection.ThreatAssessmentRequests.PostAsync(requestBody);
 
 

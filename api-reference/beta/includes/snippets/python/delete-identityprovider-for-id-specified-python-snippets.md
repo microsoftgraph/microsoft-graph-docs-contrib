@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-
-await client.identity.identity_providers.by_identity_provider_id('identityProviderBase-id').delete()
+await graph_client.identity.identity_providers.by_identity_provider_base_id('identityProviderBase-id').delete()
 
 
 ```

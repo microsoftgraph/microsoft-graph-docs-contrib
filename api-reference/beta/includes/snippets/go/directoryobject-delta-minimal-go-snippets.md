@@ -9,7 +9,7 @@ import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/directoryobjects"
+	  graphdirectoryobjects "github.com/microsoftgraph/msgraph-beta-sdk-go/directoryobjects"
 	  //other-imports
 )
 
@@ -20,18 +20,18 @@ headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "return=minimal")
 
 
-requestFilter := "isof or isof"
+requestFilter := "isof('microsoft.graph.user') or isof('microsoft.graph.group')"
 
-requestParameters := &graphconfig.DirectoryObjectsDelta()RequestBuilderGetQueryParameters{
+requestParameters := &graphdirectoryobjects.DirectoryObjectsDelta()RequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 	Select: [] string {"microsoft.graph.user/surname","microsoft.graph.group/displayName"},
 }
-configuration := &graphconfig.DirectoryObjectsDelta()RequestBuilderGetRequestConfiguration{
+configuration := &graphdirectoryobjects.DirectoryObjectsDelta()RequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.DirectoryObjects().Delta().Get(context.Background(), configuration)
+delta, err := graphClient.DirectoryObjects().Delta().Get(context.Background(), configuration)
 
 
 ```

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.CloudCommunications
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 $params = @{
 	id = "oneToOne"
@@ -17,6 +17,6 @@ $params = @{
 	)
 }
 
-New-MgCommunicationCallAudioRoutingGroup -CallId $callId -BodyParameter $params
+New-MgBetaCommunicationCallAudioRoutingGroup -CallId $callId -BodyParameter $params
 
 ```

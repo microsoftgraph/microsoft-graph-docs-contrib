@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	enabled = $true
 	timeZone = "America/Chicago"
 }
 
-Set-MgTeamSchedule -TeamId $teamId -BodyParameter $params
+Set-MgBetaTeamSchedule -TeamId $teamId -BodyParameter $params
 
 ```

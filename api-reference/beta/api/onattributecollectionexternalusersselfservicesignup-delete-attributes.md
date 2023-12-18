@@ -17,13 +17,10 @@ Remove an attribute from an external identities self-service sign up user flow t
 After this step, [PATCH the user flow](../api/authenticationeventsflow-update.md) to remove the attribute from the attribute collection step.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|EventListener.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|EventListener.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "onattributecollectionexternalusersselfservicesignup_delete_attributes" } -->
+[!INCLUDE [permissions-table](../includes/permissions/onattributecollectionexternalusersselfservicesignup-delete-attributes-permissions.md)]
 
 [!INCLUDE [rbac-user-flows-convergence-apis-write](../includes/rbac-for-apis/rbac-user-flows-convergence-apis-write.md)]
 
@@ -44,16 +41,16 @@ DELETE /identity/authenticationEventsFlows/{authenticationEventsFlow-id}/microso
 |Content-Type|application/json. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.  If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns a `204 No Content` response code.  If unsuccessful, a `4xx` error is returned with specific details.
 
 ## Examples
 
 #### Request
-The following is an example of a request that removes city as an attribute from the attribute collection step of an external identities self-service sign-up user flow. After executing this step, [update the attributes collected in the userflow](../api/authenticationeventsflow-update.md).
+Here's an example of a request that removes city as an attribute from the attribute collection step of an external identities self-service sign-up user flow. After executing this step, [update the attributes collected in the userflow](../api/authenticationeventsflow-update.md).
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -68,18 +65,18 @@ DELETE https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313c
 } 
 ```
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-onattributecollectionexternalusersselfservicesignup-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-onattributecollectionexternalusersselfservicesignup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-onattributecollectionexternalusersselfservicesignup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 #### Response
-The following is an example of the response
+Here's an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = TeamworkTagMember()
-request_body.user_id = '97f62344-57dc-409c-88ad-c4af14158ff5'
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = TeamworkTagMember(
+	user_id = "97f62344-57dc-409c-88ad-c4af14158ff5",
+)
 
-
-
-result = await client.teams.by_team_id('team-id').tags.by_tag_id('teamworkTag-id').members.post(request_body = request_body)
+result = await graph_client.teams.by_team_id('team-id').tags.by_teamwork_tag_id('teamworkTag-id').members.post(request_body)
 
 
 ```

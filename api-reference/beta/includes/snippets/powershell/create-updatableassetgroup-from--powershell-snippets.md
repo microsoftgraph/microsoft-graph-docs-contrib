@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.WindowsUpdates
+Import-Module Microsoft.Graph.Beta.WindowsUpdates
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.windowsUpdates.updatableAssetGroup"
 }
 
-New-MgWindowsUpdatesUpdatableAsset -BodyParameter $params
+New-MgBetaWindowsUpdatesUpdatableAsset -BodyParameter $params
 
 ```

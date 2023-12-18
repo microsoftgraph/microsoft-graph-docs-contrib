@@ -6,17 +6,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new TeamsAppsRequestBuilderGetRequestConfiguration();
 $queryParameters = TeamsAppsRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->expand = ["appDefinitions($expand=bot)"];
+$queryParameters->expand = ["appDefinitions(\$expand=bot)"];
 $queryParameters->filter = "appDefinitions/any(a:a/bot ne null)";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->appCatalogs()->teamsApps()->get($requestConfiguration);
-
+$result = $graphServiceClient->appCatalogs()->teamsApps()->get($requestConfiguration)->wait();
 
 ```

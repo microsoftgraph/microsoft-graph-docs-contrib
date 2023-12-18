@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewEducationClass()
@@ -31,7 +31,7 @@ requestBody.SetExternalSource(&externalSource)
 mailNickname := "fineartschool.net"
 requestBody.SetMailNickname(&mailNickname) 
 
-result, err := graphClient.Education().Classes().Post(context.Background(), requestBody, nil)
+classes, err := graphClient.Education().Classes().Post(context.Background(), requestBody, nil)
 
 
 ```

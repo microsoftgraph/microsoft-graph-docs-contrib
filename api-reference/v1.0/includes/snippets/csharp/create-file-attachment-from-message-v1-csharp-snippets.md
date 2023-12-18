@@ -6,19 +6,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Models;
 
-var requestBody = new Attachment
+var requestBody = new FileAttachment
 {
 	OdataType = "#microsoft.graph.fileAttachment",
 	Name = "smile",
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"contentBytes" , "R0lGODdhEAYEAA7"
-		},
-	},
+	ContentBytes = Convert.FromBase64String("R0lGODdhEAYEAA7"),
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Me.Messages["{message-id}"].Attachments.PostAsync(requestBody);
 
 

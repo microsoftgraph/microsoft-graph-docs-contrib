@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").NoncustodialDataSources().ByNoncustodialDataSourceId("noncustodialDataSource-id").DataSource().Get(context.Background(), nil)
+dataSource, err := graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").NoncustodialDataSources().ByNoncustodialDataSourceId("noncustodialDataSource-id").DataSource().Get(context.Background(), nil)
 
 
 ```

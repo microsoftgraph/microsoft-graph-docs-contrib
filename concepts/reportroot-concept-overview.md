@@ -9,7 +9,7 @@ ms.custom: scenarios:getting-started
 
 # Microsoft Graph reports API overview
 
-The reports API in Microsoft Graph enables you to understand application and resource activity in your Azure Active Directory (Azure AD) tenant.
+The reports API in Microsoft Graph enables you to understand application and resource activity in your Microsoft Entra tenant.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/P6HneRXYdx8]
 
@@ -22,7 +22,7 @@ Many companies have existing reporting solutions that use a reporting applicatio
 You can use the reports API to get the data that's available in all usage reports, including organization-level summaries per service, entity-level (user, sites, accounts) usage information for the last 7/30/90/180 days, and daily activity aggregates. This gives you the option to keep historical usage information for as long as required.
 
 ### Analyze AD FS application activity and configuration
-Provides information about a relying party configured with Active Directory Federation Services (AD FS), its aggregated usage, and whether the relying party configuration can be migrated to Azure Active Directory.
+Provides information about a relying party configured with Active Directory Federation Services (AD FS), its aggregated usage, and whether the relying party configuration can be migrated to Microsoft Entra ID.
 
 ### Monitor application sign-ins
 
@@ -30,11 +30,13 @@ Monitor the usage of your applications and make decisions about usage patterns.
 
 ### Determine who is using your applications and how are they using them
 
-The authentication methods usage reports help you understand how users in your organization use Azure Active Directory (Azure AD) capabilities, such as self-service password rest and multi-factor authentication (MFA). These reports help you determine which authentication methods are more successful for your organization, what types of errors end users are running into, and hat campaign you need to run to help your end users adopt the use of self-service password rest and MFA.
+The authentication methods usage reports help you understand how users in your organization use Microsoft Entra capabilities, such as self-service password rest and multi-factor authentication (MFA). These reports help you determine which authentication methods are more successful for your organization, what types of errors end users are running into, and hat campaign you need to run to help your end users adopt the use of self-service password rest and MFA.
 
-### Monitor activity on an Azure AD tenant
+<a name='monitor-activity-on-an-azure-ad-tenant'></a>
 
-Gain a better understanding of how your users access and use Azure AD services. You can analyze the data to create custom solutions tailored to your organization's specific needs.
+### Monitor activity on a Microsoft Entra tenant
+
+Gain a better understanding of how your users access and use Microsoft Entra services. You can analyze the data to create custom solutions tailored to your organization's specific needs.
 
 ## What data can I access by using the reports API?
 

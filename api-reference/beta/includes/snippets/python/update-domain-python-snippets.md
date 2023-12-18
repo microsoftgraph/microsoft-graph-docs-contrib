@@ -4,18 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = Domain()
-request_body.is_default = True
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.SupportedServices(['Email', 'OfficeCommunicationsOnline', ])
+request_body = Domain(
+	is_default = True,
+	supported_services = [
+		"Email",
+		"OfficeCommunicationsOnline",
+	],
+)
 
-
-
-
-result = await client.domains.by_domain_id('domain-id').patch(request_body = request_body)
+result = await graph_client.domains.by_domain_id('domain-id').patch(request_body)
 
 
 ```

@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -48,18 +48,20 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|azureStorageUri|String|The Azure Storage URI.|
-|isCommitted|Boolean|A value indicating whether the file is committed.|
-|id|String|The File Id.|
-|createdDateTime|DateTimeOffset|The time the file was created.|
-|name|String|the file name.|
-|size|Int64|The size of the file prior to encryption.|
-|sizeEncrypted|Int64|The size of the file after encryption.|
-|azureStorageUriExpirationDateTime|DateTimeOffset|The time the Azure storage Uri expires.|
-|manifest|Binary|The manifest information.|
-|uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|The state of the current upload request. Possible values are: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.|
-|isFrameworkFile|Boolean|A value indicating whether the file is a framework file.|
-|isDependency|Boolean|Whether the content file is a dependency for the main content file.|
+|azureStorageUri|String|Indicates the Azure Storage URI that the file is uploaded to. Created by the service upon receiving a valid mobileAppContentFile. Read-only.|
+|isCommitted|Boolean|A value indicating whether the file is committed. A committed app content file has been fully uploaded and validated by the Intune service. TRUE means that app content file is committed, FALSE means that app content file is not committed. Defaults to FALSE. Read-only.|
+|id|String|The unique identifier for this mobileAppContentFile. This id is assigned during creation of the mobileAppContentFile. Read-only.|
+|createdDateTime|DateTimeOffset|Indicates created date and time associated with app content file, in ISO 8601 format. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only.|
+|name|String|Indicates the name of the file.|
+|size|Int64|The size of the file prior to encryption. To be deprecated, please use sizeInBytes property instead.|
+|sizeEncrypted|Int64|The size of the file after encryption. To be deprecated, please use sizeEncryptedInBytes property instead.|
+|sizeInBytes|Int64|Indicates the original size of the file, in bytes.|
+|sizeEncryptedInBytes|Int64|Indicates the size of the file after encryption, in bytes.|
+|azureStorageUriExpirationDateTime|DateTimeOffset|Indicates the date and time when the Azure storage URI expires, in ISO 8601 format. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only.|
+|manifest|Binary|Indicates the manifest information, containing file metadata.|
+|uploadState|[mobileAppContentFileUploadState](../resources/intune-apps-mobileappcontentfileuploadstate.md)|Indicates the state of the current upload request. Possible values are: success, transientError, error, unknown, azureStorageUriRequestSuccess, azureStorageUriRequestPending, azureStorageUriRequestFailed, azureStorageUriRequestTimedOut, azureStorageUriRenewalSuccess, azureStorageUriRenewalPending, azureStorageUriRenewalFailed, azureStorageUriRenewalTimedOut, commitFileSuccess, commitFilePending, commitFileFailed, commitFileTimedOut. Default value is success. Possible values are: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.|
+|isFrameworkFile|Boolean|A value indicating whether the file is a framework file. To be deprecated.|
+|isDependency|Boolean|Indicates whether this content file is a dependency for the main content file. TRUE means that the content file is a dependency, FALSE means that the content file is not a dependency and is the main content file. Defaults to FALSE.|
 
 
 
@@ -73,7 +75,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/files/{mobileAppContentFileId}
 Content-type: application/json
-Content-length: 395
+Content-length: 447
 
 {
   "@odata.type": "#microsoft.graph.mobileAppContentFile",
@@ -82,6 +84,8 @@ Content-length: 395
   "name": "Name value",
   "size": 4,
   "sizeEncrypted": 13,
+  "sizeInBytes": 11,
+  "sizeEncryptedInBytes": 4,
   "azureStorageUriExpirationDateTime": "2017-01-01T00:00:08.4940464-08:00",
   "manifest": "bWFuaWZlc3Q=",
   "uploadState": "transientError",
@@ -95,7 +99,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 503
+Content-Length: 555
 
 {
   "@odata.type": "#microsoft.graph.mobileAppContentFile",
@@ -106,6 +110,8 @@ Content-Length: 503
   "name": "Name value",
   "size": 4,
   "sizeEncrypted": 13,
+  "sizeInBytes": 11,
+  "sizeEncryptedInBytes": 4,
   "azureStorageUriExpirationDateTime": "2017-01-01T00:00:08.4940464-08:00",
   "manifest": "bWFuaWZlc3Q=",
   "uploadState": "transientError",

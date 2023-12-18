@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestParameters := &graphdevices.DeviceItemRequestBuilderGetQueryParameters{
@@ -22,7 +22,7 @@ configuration := &graphdevices.DeviceItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Devices().ByDeviceId("device-id").Get(context.Background(), configuration)
+devices, err := graphClient.Devices().ByDeviceId("device-id").Get(context.Background(), configuration)
 
 
 ```

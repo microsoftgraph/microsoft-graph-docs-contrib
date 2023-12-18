@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewOnlineMeeting()
@@ -21,7 +21,7 @@ isDialInBypassEnabled := true
 lobbyBypassSettings.SetIsDialInBypassEnabled(&isDialInBypassEnabled) 
 requestBody.SetLobbyBypassSettings(lobbyBypassSettings)
 
-result, err := graphClient.Me().OnlineMeetings().ByOnlineMeetingId("onlineMeeting-id").Patch(context.Background(), requestBody, nil)
+onlineMeetings, err := graphClient.Me().OnlineMeetings().ByOnlineMeetingId("onlineMeeting-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

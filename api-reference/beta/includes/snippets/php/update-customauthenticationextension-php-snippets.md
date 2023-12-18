@@ -6,59 +6,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestBody = new CustomAuthenticationExtension();
-$requestBody->set@odatatype('#microsoft.graph.onTokenIssuanceStartCustomExtension');
-
+$requestBody = new OnTokenIssuanceStartCustomExtension();
+$requestBody->setOdataType('#microsoft.graph.onTokenIssuanceStartCustomExtension');
 $requestBody->setDisplayName('onTokenIssuanceStartCustomExtension');
-
 $requestBody->setDescription('Fetch additional claims from custom user store');
-
-$endpointConfiguration = new CustomExtensionEndpointConfiguration();
-$endpointConfiguration->set@odatatype('#microsoft.graph.httpRequestEndpoint');
-
-$additionalData = [
-		'targetUrl' => 'https://authenticationeventsAPI.contoso.com', 
-];
-$endpointConfiguration->setAdditionalData($additionalData);
-
-
-
+$endpointConfiguration = new HttpRequestEndpoint();
+$endpointConfiguration->setOdataType('#microsoft.graph.httpRequestEndpoint');
+$endpointConfiguration->setTargetUrl('https://authenticationeventsAPI.contoso.com');
 $requestBody->setEndpointConfiguration($endpointConfiguration);
-$authenticationConfiguration = new CustomExtensionAuthenticationConfiguration();
-$authenticationConfiguration->set@odatatype('#microsoft.graph.azureAdTokenAuthentication');
-
-$additionalData = [
-		'resourceId' => 'api://authenticationeventsAPI.contoso.com/a13d0fc1-04ab-4ede-b215-63de0174cbb4', 
-];
-$authenticationConfiguration->setAdditionalData($additionalData);
-
-
-
+$authenticationConfiguration = new AzureAdTokenAuthentication();
+$authenticationConfiguration->setOdataType('#microsoft.graph.azureAdTokenAuthentication');
+$authenticationConfiguration->setResourceId('api://authenticationeventsAPI.contoso.com/a13d0fc1-04ab-4ede-b215-63de0174cbb4');
 $requestBody->setAuthenticationConfiguration($authenticationConfiguration);
-$additionalData = [
-		'claimsForTokenConfiguration' => $claimsForTokenConfiguration1 = new ();
-$		claimsForTokenConfiguration1->setClaimIdInApiResponse('DateOfBirth');
-
-
-$claimsForTokenConfigurationArray []= $claimsForTokenConfiguration1;
-$claimsForTokenConfiguration2 = new ();
-$		claimsForTokenConfiguration2->setClaimIdInApiResponse('CustomRoles');
-
-
-$claimsForTokenConfigurationArray []= $claimsForTokenConfiguration2;
+$claimsForTokenConfigurationOnTokenIssuanceStartReturnClaim1 = new OnTokenIssuanceStartReturnClaim();
+$claimsForTokenConfigurationOnTokenIssuanceStartReturnClaim1->setClaimIdInApiResponse('DateOfBirth');
+$claimsForTokenConfigurationArray []= $claimsForTokenConfigurationOnTokenIssuanceStartReturnClaim1;
+$claimsForTokenConfigurationOnTokenIssuanceStartReturnClaim2 = new OnTokenIssuanceStartReturnClaim();
+$claimsForTokenConfigurationOnTokenIssuanceStartReturnClaim2->setClaimIdInApiResponse('CustomRoles');
+$claimsForTokenConfigurationArray []= $claimsForTokenConfigurationOnTokenIssuanceStartReturnClaim2;
 $requestBody->setClaimsForTokenConfiguration($claimsForTokenConfigurationArray);
 
 
-];
-$requestBody->setAdditionalData($additionalData);
-
-
-
-
-$result = $graphServiceClient->identity()->customAuthenticationExtensions()->byCustomAuthenticationExtensionId('customAuthenticationExtension-id')->patch($requestBody);
-
+$result = $graphServiceClient->identity()->customAuthenticationExtensions()->byCustomAuthenticationExtensionId('customAuthenticationExtension-id')->patch($requestBody)->wait();
 
 ```

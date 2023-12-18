@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = TenantTag()
-request_body.display_name = 'Support'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.description = 'Tenants that have purchased extended support'
+request_body = TenantTag(
+	display_name = "Support",
+	description = "Tenants that have purchased extended support",
+)
 
-
-
-
-result = await client.tenant_relationships.managed_tenants.tenant_tags.post(request_body = request_body)
+result = await graph_client.tenant_relationships.managed_tenants.tenant_tags.post(request_body)
 
 
 ```

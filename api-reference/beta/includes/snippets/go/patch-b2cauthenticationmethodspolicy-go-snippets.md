@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewB2cAuthenticationMethodsPolicy()
@@ -23,7 +23,7 @@ requestBody.SetIsUserNameAuthenticationEnabled(&isUserNameAuthenticationEnabled)
 isPhoneOneTimePasswordAuthenticationEnabled := true
 requestBody.SetIsPhoneOneTimePasswordAuthenticationEnabled(&isPhoneOneTimePasswordAuthenticationEnabled) 
 
-result, err := graphClient.Policies().B2cAuthenticationMethodsPolicy().Patch(context.Background(), requestBody, nil)
+b2cAuthenticationMethodsPolicy, err := graphClient.Policies().B2cAuthenticationMethodsPolicy().Patch(context.Background(), requestBody, nil)
 
 
 ```

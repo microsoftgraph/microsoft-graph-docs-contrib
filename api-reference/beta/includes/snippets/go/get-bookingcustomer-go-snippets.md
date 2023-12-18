@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.BookingBusinesses().ByBookingBusinesseId("bookingBusiness-id").Customers().ByCustomerId("bookingCustomer-id").Get(context.Background(), nil)
+customers, err := graphClient.BookingBusinesses().ByBookingBusinessId("bookingBusiness-id").Customers().ByBookingCustomerId("bookingCustomer-id").Get(context.Background(), nil)
 
 
 ```

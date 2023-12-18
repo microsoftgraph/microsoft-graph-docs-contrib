@@ -6,9 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Communications.Calls.LogTeleconferenceDeviceQuality;
+using Microsoft.Graph.Models;
 
-var requestBody = new Microsoft.Graph.Communications.Calls.LogTeleconferenceDeviceQuality.LogTeleconferenceDeviceQualityPostRequestBody
+var requestBody = new LogTeleconferenceDeviceQualityPostRequestBody
 {
 	Quality = new TeleconferenceDeviceQuality
 	{
@@ -20,7 +22,7 @@ var requestBody = new Microsoft.Graph.Communications.Calls.LogTeleconferenceDevi
 		DeviceDescription = "TestDescription",
 		MediaQualityList = new List<TeleconferenceDeviceMediaQuality>
 		{
-			new TeleconferenceDeviceMediaQuality
+			new TeleconferenceDeviceAudioQuality
 			{
 				OdataType = "#microsoft.graph.teleconferenceDeviceAudioQuality",
 				ChannelIndex = 1,
@@ -45,7 +47,7 @@ var requestBody = new Microsoft.Graph.Communications.Calls.LogTeleconferenceDevi
 				MaximumInboundJitter = TimeSpan.Parse("PT0.023S"),
 				MaximumOutboundJitter = TimeSpan.Parse("PT0.024S"),
 			},
-			new TeleconferenceDeviceMediaQuality
+			new TeleconferenceDeviceVideoQuality
 			{
 				OdataType = "#microsoft.graph.teleconferenceDeviceVideoQuality",
 				ChannelIndex = 1,
@@ -70,7 +72,7 @@ var requestBody = new Microsoft.Graph.Communications.Calls.LogTeleconferenceDevi
 				MaximumInboundJitter = TimeSpan.Parse("PT0.023S"),
 				MaximumOutboundJitter = TimeSpan.Parse("PT0.024S"),
 			},
-			new TeleconferenceDeviceMediaQuality
+			new TeleconferenceDeviceScreenSharingQuality
 			{
 				OdataType = "#microsoft.graph.teleconferenceDeviceScreenSharingQuality",
 				ChannelIndex = 1,
@@ -98,6 +100,8 @@ var requestBody = new Microsoft.Graph.Communications.Calls.LogTeleconferenceDevi
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Communications.Calls.LogTeleconferenceDeviceQuality.PostAsync(requestBody);
 
 

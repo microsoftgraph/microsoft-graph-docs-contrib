@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is a managed handler for the attribute collection step in an external identities user flow on an Azure AD workforce or customer tenant. It defines what attributes to collect from a user and how the attribute collection will be rendered for the user.
+This is a managed handler for the attribute collection step in an external identities user flow on a Microsoft Entra workforce or customer tenant. It defines what attributes to collect from a user and how the attribute collection will be rendered for the user.
 
 Inherits from [onAttributeCollectionHandler](../resources/onattributecollectionhandler.md).
 
@@ -43,4 +43,3 @@ The following is a JSON representation of the resource.
   }
 }
 ```
-

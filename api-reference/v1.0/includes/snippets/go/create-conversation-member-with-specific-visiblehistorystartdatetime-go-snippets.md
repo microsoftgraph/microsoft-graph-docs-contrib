@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewConversationMember()
@@ -21,7 +21,6 @@ visibleHistoryStartDateTime , err := time.Parse(time.RFC3339, "2019-04-18T23:51:
 requestBody.SetVisibleHistoryStartDateTime(&visibleHistoryStartDateTime) 
 roles := []string {
 	"owner",
-
 }
 requestBody.SetRoles(roles)
 additionalData := map[string]interface{}{
@@ -29,7 +28,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Chats().ByChatId("chat-id").Members().Post(context.Background(), requestBody, nil)
+members, err := graphClient.Chats().ByChatId("chat-id").Members().Post(context.Background(), requestBody, nil)
 
 
 ```

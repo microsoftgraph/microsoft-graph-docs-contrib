@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewUserAccountInformation()
@@ -21,7 +21,7 @@ requestBody.SetAllowedAudiences(&allowedAudiences)
 countryCode := "NO"
 requestBody.SetCountryCode(&countryCode) 
 
-result, err := graphClient.Me().Profile().Account().Post(context.Background(), requestBody, nil)
+account, err := graphClient.Me().Profile().Account().Post(context.Background(), requestBody, nil)
 
 
 ```

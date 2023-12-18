@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewProgram()
@@ -21,7 +21,7 @@ requestBody.SetDisplayName(&displayName)
 description := "test description"
 requestBody.SetDescription(&description) 
 
-result, err := graphClient.Programs().Post(context.Background(), requestBody, nil)
+programs, err := graphClient.Programs().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewOrganizationalBrandingLocalization()
@@ -23,7 +23,7 @@ requestBody.SetId(&id)
 signInPageText := " "
 requestBody.SetSignInPageText(&signInPageText) 
 
-result, err := graphClient.Organization().ByOrganization().Id("organization-id").Branding().Localizations().Post(context.Background(), requestBody, nil)
+localizations, err := graphClient.Organization().ByOrganizationId("organization-id").Branding().Localizations().Post(context.Background(), requestBody, nil)
 
 
 ```

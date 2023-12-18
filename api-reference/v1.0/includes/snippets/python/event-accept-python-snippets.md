@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = AcceptPostRequestBody()
-request_body.comment = 'comment-value'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.send_response = True
+request_body = AcceptPostRequestBody(
+	comment = "comment-value",
+	send_response = True,
+)
 
-
-
-
-await client.me.events.by_event_id('event-id').accept.post(request_body = request_body)
+await graph_client.me.events.by_event_id('event-id').accept.post(request_body)
 
 
 ```

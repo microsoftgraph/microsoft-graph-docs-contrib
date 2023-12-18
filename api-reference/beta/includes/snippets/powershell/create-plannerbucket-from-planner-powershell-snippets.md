@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Planner
+Import-Module Microsoft.Graph.Beta.Planner
 
 $params = @{
 	name = "Advertising"
@@ -12,6 +12,6 @@ $params = @{
 	orderHint = " !"
 }
 
-New-MgPlannerBucket -BodyParameter $params
+New-MgBetaPlannerBucket -BodyParameter $params
 
 ```

@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Models;
 
 var requestBody = new AccessPackageAssignmentPolicy
 {
@@ -49,31 +50,19 @@ var requestBody = new AccessPackageAssignmentPolicy
 				DurationBeforeEscalation = TimeSpan.Parse("PT0S"),
 				PrimaryApprovers = new List<SubjectSet>
 				{
-					new SubjectSet
+					new RequestorManager
 					{
 						OdataType = "#microsoft.graph.requestorManager",
-						AdditionalData = new Dictionary<string, object>
-						{
-							{
-								"managerLevel" , 1
-							},
-						},
+						ManagerLevel = 1,
 					},
 				},
 				FallbackPrimaryApprovers = new List<SubjectSet>
 				{
-					new SubjectSet
+					new SingleUser
 					{
 						OdataType = "#microsoft.graph.singleUser",
-						AdditionalData = new Dictionary<string, object>
-						{
-							{
-								"userId" , "e6bf4d7d-6824-4dd0-809d-5bf42d4817c2"
-							},
-							{
-								"description" , "user"
-							},
-						},
+						UserId = "e6bf4d7d-6824-4dd0-809d-5bf42d4817c2",
+						Description = "user",
 					},
 				},
 				EscalationApprovers = new List<SubjectSet>
@@ -90,6 +79,8 @@ var requestBody = new AccessPackageAssignmentPolicy
 		Id = "49d2c59b-0a81-463d-a8ec-ddad3935d8a0",
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.IdentityGovernance.EntitlementManagement.AssignmentPolicies["{accessPackageAssignmentPolicy-id}"].PutAsync(requestBody);
 
 

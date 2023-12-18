@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Chats().ByChatId("chat-id").Operations().ByOperationId("teamsAsyncOperation-id").Get(context.Background(), nil)
+operations, err := graphClient.Chats().ByChatId("chat-id").Operations().ByTeamsAsyncOperationId("teamsAsyncOperation-id").Get(context.Background(), nil)
 
 
 ```

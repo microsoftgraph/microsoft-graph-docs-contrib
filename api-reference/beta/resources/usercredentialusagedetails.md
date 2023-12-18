@@ -2,7 +2,7 @@
 title: "userCredentialUsageDetails resource type"
 description: "Represents the self-service password reset usage for a given tenant."
 ms.localizationpriority: medium
-author: "besiler"
+author: "egreenberg14"
 ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"
 ---

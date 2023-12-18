@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewWorkPosition()
@@ -47,7 +47,7 @@ requestBody.SetDetail(detail)
 isCurrent := true
 requestBody.SetIsCurrent(&isCurrent) 
 
-result, err := graphClient.Me().Profile().Positions().Post(context.Background(), requestBody, nil)
+positions, err := graphClient.Me().Profile().Positions().Post(context.Background(), requestBody, nil)
 
 
 ```

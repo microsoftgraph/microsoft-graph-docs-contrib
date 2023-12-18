@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = SetUpFeedbackResourcesFolderPostRequestBody()
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = SetUpFeedbackResourcesFolderPostRequestBody(
+)
 
-
-result = await client.education.classes.by_classe_id('educationClass-id').assignments.by_assignment_id('educationAssignment-id').set_up_feedback_resource_folder.post(request_body = request_body)
+result = await graph_client.education.classes.by_education_class_id('educationClass-id').assignments.by_education_assignment_id('educationAssignment-id').set_up_feedback_resources_folder.post(request_body)
 
 
 ```

@@ -6,12 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models.Security;
 
-var requestBody = new Microsoft.Graph.Beta.Models.Security.EmailThreatSubmission
+var requestBody = new EmailThreatSubmission
 {
 	OdataType = "#microsoft.graph.emailUrlThreatSubmission",
-	Category = Microsoft.Graph.Beta.Models.Security.SubmissionCategory.Spam,
+	Category = SubmissionCategory.Spam,
 	RecipientEmailAddress = "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
 	AdditionalData = new Dictionary<string, object>
 	{
@@ -20,6 +21,8 @@ var requestBody = new Microsoft.Graph.Beta.Models.Security.EmailThreatSubmission
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Security.ThreatSubmission.EmailThreats.PostAsync(requestBody);
 
 

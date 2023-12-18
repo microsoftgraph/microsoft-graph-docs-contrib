@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Applications().ByApplicationId("application-id").ExtensionProperties().ByExtensionPropertieId("extensionProperty-id").Get(context.Background(), nil)
+extensionProperties, err := graphClient.Applications().ByApplicationId("application-id").ExtensionProperties().ByExtensionPropertyId("extensionProperty-id").Get(context.Background(), nil)
 
 
 ```

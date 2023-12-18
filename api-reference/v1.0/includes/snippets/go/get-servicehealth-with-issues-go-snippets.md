@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestParameters := &graphadmin.AdminServiceAnnouncementHealthOverviewItemRequestBuilderGetQueryParameters{
@@ -22,7 +22,7 @@ configuration := &graphadmin.AdminServiceAnnouncementHealthOverviewItemRequestBu
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Admin().ServiceAnnouncement().HealthOverviews().ByHealthOverviewId("serviceHealth-id").Get(context.Background(), configuration)
+healthOverviews, err := graphClient.Admin().ServiceAnnouncement().HealthOverviews().ByServiceHealthId("serviceHealth-id").Get(context.Background(), configuration)
 
 
 ```

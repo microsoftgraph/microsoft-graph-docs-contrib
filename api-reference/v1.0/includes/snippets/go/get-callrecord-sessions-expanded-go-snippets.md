@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestParameters := &graphcommunications.CommunicationsCallRecordItemSessionsRequestBuilderGetQueryParameters{
@@ -22,7 +22,7 @@ configuration := &graphcommunications.CommunicationsCallRecordItemSessionsReques
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Communications().CallRecords().ByCallRecordId("callRecord-id").Sessions().Get(context.Background(), configuration)
+sessions, err := graphClient.Communications().CallRecords().ByCallRecordId("callRecord-id").Sessions().Get(context.Background(), configuration)
 
 
 ```

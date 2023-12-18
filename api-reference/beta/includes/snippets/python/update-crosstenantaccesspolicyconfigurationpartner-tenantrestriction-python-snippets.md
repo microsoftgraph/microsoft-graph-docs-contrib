@@ -4,47 +4,34 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = CrossTenantAccessPolicyConfigurationPartner()
-tenant_restrictions = CrossTenantAccessPolicyTenantRestrictions()
-tenant_restrictionsusers_and_groups = CrossTenantAccessPolicyTargetConfiguration()
-tenant_restrictionsusers_and_groups.accesstype(CrossTenantAccessPolicyTargetConfigurationAccessType.Allowed('crosstenantaccesspolicytargetconfigurationaccesstype.allowed'))
+graph_client = GraphServiceClient(credentials, scopes)
 
-targets_cross_tenant_access_policy_target1 = CrossTenantAccessPolicyTarget()
-targets_cross_tenant_access_policy_target1.target = 'AllUsers'
+request_body = CrossTenantAccessPolicyConfigurationPartner(
+	tenant_restrictions = CrossTenantAccessPolicyTenantRestrictions(
+		users_and_groups = CrossTenantAccessPolicyTargetConfiguration(
+			access_type = CrossTenantAccessPolicyTargetConfigurationAccessType.Allowed,
+			targets = [
+				CrossTenantAccessPolicyTarget(
+					target = "AllUsers",
+					target_type = CrossTenantAccessPolicyTargetType.User,
+				),
+			],
+		),
+		applications = CrossTenantAccessPolicyTargetConfiguration(
+			access_type = CrossTenantAccessPolicyTargetConfigurationAccessType.Allowed,
+			targets = [
+				CrossTenantAccessPolicyTarget(
+					target = "Office365",
+					target_type = CrossTenantAccessPolicyTargetType.Application,
+				),
+			],
+		),
+	),
+)
 
-targets_cross_tenant_access_policy_target1.targettype(CrossTenantAccessPolicyTargetType.User('crosstenantaccesspolicytargettype.user'))
-
-
-targetsArray []= targetsCrossTenantAccessPolicyTarget1;
-tenant_restrictionsusers_and_groups.targets(targetsArray)
-
-
-
-tenant_restrictions.users_and_groups = tenant_restrictionsusers_and_groups
-tenant_restrictionsapplications = CrossTenantAccessPolicyTargetConfiguration()
-tenant_restrictionsapplications.accesstype(CrossTenantAccessPolicyTargetConfigurationAccessType.Allowed('crosstenantaccesspolicytargetconfigurationaccesstype.allowed'))
-
-targets_cross_tenant_access_policy_target1 = CrossTenantAccessPolicyTarget()
-targets_cross_tenant_access_policy_target1.target = 'Office365'
-
-targets_cross_tenant_access_policy_target1.targettype(CrossTenantAccessPolicyTargetType.Application('crosstenantaccesspolicytargettype.application'))
-
-
-targetsArray []= targetsCrossTenantAccessPolicyTarget1;
-tenant_restrictionsapplications.targets(targetsArray)
-
-
-
-tenant_restrictions.applications = tenant_restrictionsapplications
-
-request_body.tenant_restrictions = tenant_restrictions
-
-
-
-result = await client.policies.cro_tenant_acce_policy.partners.by_partner_id('crossTenantAccessPolicyConfigurationPartner-tenantId').patch(request_body = request_body)
+result = await graph_client.policies.cross_tenant_access_policy.partners.by_cross_tenant_access_policy_configuration_partner_tenant_id('crossTenantAccessPolicyConfigurationPartner-tenantId').patch(request_body)
 
 
 ```

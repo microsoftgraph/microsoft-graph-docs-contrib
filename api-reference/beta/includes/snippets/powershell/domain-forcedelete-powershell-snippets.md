@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 $params = @{
 	disableUserAccounts = $true
 }
 
-Invoke-MgForceDomainDelete -DomainId $domainId -BodyParameter $params
+Invoke-MgBetaForceDomainDelete -DomainId $domainId -BodyParameter $params
 
 ```

@@ -1,6 +1,6 @@
 ---
 title: "Get started with Microsoft Graph Toolkit"
-description: "Learn how to set up your Microsoft 365 tenant and development environment to use Microsoft Graph Toolkit. Install NPM packages for components and providers."
+description: "Learn how to set up your Microsoft 365 tenant and development environment to use Microsoft Graph Toolkit. Install npm packages for components and providers."
 ms.localizationpriority: medium
 author: sebastienlevert
 ---
@@ -21,7 +21,7 @@ To use Microsoft Graph Toolkit to develop an app, you need access to a Microsoft
 
 ## Set up your development environment
 
-To develop with the toolkit, you need the following:
+To develop with the toolkit, you need:
 
 - A text editor or IDE. You can use the editor or IDE of your choice, or you can install and use [Visual Studio Code](https://code.visualstudio.com/download) for free.
 - A modern web browser such as Microsoft Edge, Google Chrome, or Firefox.
@@ -32,40 +32,45 @@ To develop with the toolkit, you need the following:
 You can use Microsoft Graph Toolkit in your application by referencing the loader directly (via `unpkg`) or by installing the `npm` package.
 
 # [unpkg](#tab/html)
+
 To use the toolkit via `mgt-loader`, add the reference in a script to your code:
 
 ```html
-<script src="https://unpkg.com/@microsoft/mgt@2/dist/bundle/mgt-loader.js"></script>
+<script src="https://unpkg.com/@microsoft/mgt@3/dist/bundle/mgt-loader.js"></script>
 
 <mgt-msal2-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal2-provider>
 <mgt-login></mgt-login>
 ```
-# [npm](#tab/npm)
-Using the toolkit via ES6 modules gives you full control of the bundling process and allows you to bundle only the code that you need for your application. To use the ES6 modules, add the `npm` package to your project:
+
+# [package](#tab/package)
+
+Using the toolkit via ES6 modules gives you full control of the bundling process and allows you to bundle only the code that you need for your application. To use the ES6 modules, add the package to your project:
 
 ```cmd
 npm install @microsoft/mgt
 ```
+
 Now you can reference all the components on the page that you're using:
 
 ```html
-<script type="module" src="node_modules/@microsoft/mgt/dist/es6/index.js"></script>
+<script
+  type="module"
+  src="node_modules/@microsoft/mgt/dist/es6/index.js"
+></script>
 
 <mgt-login></mgt-login>
 <mgt-agenda></mgt-agenda>
 ```
 
-
 ---
 
+### Packages
 
-### NPM packages
-
-Microsoft Graph Toolkit is made up of several NPM packages, allowing you to only include the code that you need for your applications.
+Microsoft Graph Toolkit is made up of several packages, allowing you to only include the code that you need for your applications.
 
 <b>@microsoft/mgt-element</b>
 
-The `@microsoft/mgt-element` is the core package that contains only the base classes used for building components and providers. This package exposes all the necessary classes and interfaces that you need to build your own components, and exports the [IProvider interface and SimpleProvider class](../providers/custom.md) for building custom providers.
+The `@microsoft/mgt-element` is the core package that contains only the base classes used for building components and providers. This package exposes all the necessary classes and interfaces that you need to build your own components, and exports the [`IProvider` interface and SimpleProvider class](../providers/custom.md) for building custom providers.
 
 <b>@microsoft/mgt-components</b>
 
@@ -75,51 +80,46 @@ The `@microsoft/mgt-components` package contains all the Microsoft Graph connect
 
 Providers are available via a single package and can be installed as needed. The following provider packages are available:
 
-- <b>@microsoft/mgt-msal-provider</b>
-
-    <code>[@microsoft/mgt-msal-provider](../providers/msal.md)</code> contains the `MsalProvider` and `mgt-msal-provider` component. The MSAL provider uses msal.js for authenticating in web apps and Progressive Web Apps (PWAs).
-
 - <b>@microsoft/mgt-msal2-provider</b>
 
-    <code>[@microsoft/mgt-msal2-provider](../providers/msal2.md)</code> contains the `Msal2Provider` and `mgt-msal2-provider` component. The MSAL2 provider uses msal-browser for authenticating in web apps and PWAs.
-
--  <b>@microsoft/mgt-teams-provider</b>
-
-    <code>[@microsoft/mgt-teams-provider](../providers/teams.md)</code> contains the `TeamsProvider` and `mgt-teams-provider` component. The Microsoft Teams provider enables authentication in the Microsoft Teams tab application.
-
--  <b>@microsoft/mgt-teams-msal2-provider</b>
-
-    <code>[@microsoft/mgt-teams-msal2-provider](../providers/teams.md)</code> contains the `TeamsMsal2Provider` and `mgt-teams-msal2-provider` component. The Microsoft Teams MSAL2 provider enables authentication in the Microsoft Teams tab application.
+  <code>[@microsoft/mgt-msal2-provider](../providers/msal2.md)</code> contains the `Msal2Provider` and `mgt-msal2-provider` component. The MSAL2 provider uses MSAL-browser for authenticating in web apps and PWAs.
 
 - <b>@microsoft/mgt-sharepoint-provider</b>
 
-    <code>[@microsoft/mgt-sharepoint-provider](../providers/sharepoint.md)</code> contains the `SharePointProvider` for authenticating in a SharePoint environment.
+  <code>[@microsoft/mgt-sharepoint-provider](../providers/sharepoint.md)</code> contains the `SharePointProvider` for authenticating in a SharePoint environment.
 
 - <b>@microsoft/mgt-proxy-provider</b>
 
-    <code>[@microsoft/mgt-proxy-provider](../providers/proxy.md)</code> contains the `ProxyProvider` for an application that proxy Graph calls through a backend service.
+  <code>[@microsoft/mgt-proxy-provider](../providers/proxy.md)</code> contains the `ProxyProvider` for an application that proxy Graph calls through a backend service.
 
 <b>@microsoft/mgt</b>
 
-The `@microsoft/mgt` package is the main package that includes all the preceding packages and re-exports them so they are available via a single package that you can install.
+The `@microsoft/mgt` package is the main package that includes all the preceding packages and re-exports them so they're available via a single package that you can install.
 
 <b>@microsoft/mgt-react</b>
 
-The <code>[@microsoft/mgt-react](./mgt-react.md)</code> package contains all the auto-generated React components and takes dependency on the `@microsoft/mgt` package.
+The <code>[@microsoft/mgt-react](./mgt-react.md)</code> package contains all the autogenerated React components and takes dependency on the `@microsoft/mgt` package.
+
+<b>@microsoft/mgt-chat</b>
+
+The <code>[@microsoft/mgt-chat](./mgt-react.md)</code> package contains all the chat React components and takes dependency on the `@microsoft/mgt-react` package.
 
 <b>@microsoft/mgt-spfx</b>
 
-The <code>[@microsoft/mgt-spfx](./mgt-spfx.md)</code> package contains a SharePoint Framework library that's required to use Microsoft Graph Toolkit in SharePoint Framework solutions.
+The <code>[@microsoft/mgt-spfx](./mgt-spfx.md)</code> package contains a SharePoint Framework library to use Microsoft Graph Toolkit in SharePoint Framework solutions.
+
+<b>@microsoft/mgt-spfx-utils</b>
+
+The <code>@microsoft/mgt-spfx-utils</code> package contains a helper function to assist with lazy loading for [disambiguation](../customize-components/disambiguation.md#usage-in-sharepoint-framework-web-parts-with-react) when using Microsoft Graph Toolkit in SharePoint Framework solutions.
 
 ## Next steps
 
 You're now ready to start developing with Microsoft Graph Toolkit! The following guides are available to help you get started:
 
-- [Register an Azure Active Directory (Azure AD) app](./add-aad-app-registration.md)
+- [Register a Microsoft Entra app](./add-aad-app-registration.md)
 - [Build a web app (JavaScript)](./build-a-web-app.md) (vanilla JavaScript)
 - [Build a web app (React)](./use-toolkit-with-react.md)
 - [Build a web app (Angular)](./use-toolkit-with-angular.md)
 - [Build a SharePoint web part](./build-a-sharepoint-web-part.md)
 - [Build a Microsoft Teams tab](./build-a-microsoft-teams-tab.md)
-- [Build a Microsoft Teams SSO tab](./build-a-microsoft-teams-sso-tab.md)
 - [Build an Electron app](./build-an-electron-app.md)

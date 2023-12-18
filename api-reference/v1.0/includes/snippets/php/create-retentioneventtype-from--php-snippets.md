@@ -6,24 +6,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new RetentionEventType();
-$requestBody->set@odatatype('#microsoft.graph.security.retentionEventType');
-
+$requestBody->setOdataType('#microsoft.graph.security.retentionEventType');
 $requestBody->setDisplayName('String');
-
 $requestBody->setDescription('String');
-
 $createdBy = new IdentitySet();
-$createdBy->set@odatatype('microsoft.graph.identitySet');
-
-
+$createdBy->setOdataType('microsoft.graph.identitySet');
 $requestBody->setCreatedBy($createdBy);
 
-
-$result = $graphServiceClient->security()->triggerTypes()->retentionEventTypes()->post($requestBody);
-
+$result = $graphServiceClient->security()->triggerTypes()->retentionEventTypes()->post($requestBody)->wait();
 
 ```

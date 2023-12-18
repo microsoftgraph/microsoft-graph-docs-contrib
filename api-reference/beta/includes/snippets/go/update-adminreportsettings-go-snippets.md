@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAdminReportSettings()
 displayConcealedNames := true
 requestBody.SetDisplayConcealedNames(&displayConcealedNames) 
 
-result, err := graphClient.Admin().ReportSettings().Patch(context.Background(), requestBody, nil)
+reportSettings, err := graphClient.Admin().ReportSettings().Patch(context.Background(), requestBody, nil)
 
 
 ```

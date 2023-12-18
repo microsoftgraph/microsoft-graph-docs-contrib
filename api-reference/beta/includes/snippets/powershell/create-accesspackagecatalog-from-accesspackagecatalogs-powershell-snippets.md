@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.Governance
+Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 $params = @{
 	displayName = "sales"
@@ -12,6 +12,6 @@ $params = @{
 	isExternallyVisible = $true
 }
 
-New-MgEntitlementManagementAccessPackageCatalog -BodyParameter $params
+New-MgBetaEntitlementManagementAccessPackageCatalog -BodyParameter $params
 
 ```

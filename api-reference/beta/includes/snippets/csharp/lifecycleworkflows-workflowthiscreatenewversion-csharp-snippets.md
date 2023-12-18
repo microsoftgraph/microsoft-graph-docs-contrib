@@ -6,42 +6,38 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.IdentityGovernance.LifecycleWorkflows.Workflows.Item.MicrosoftGraphIdentityGovernanceCreateNewVersion;
+using Microsoft.Graph.Beta.Models.IdentityGovernance;
+using Microsoft.Graph.Beta.Models;
 
-var requestBody = new Microsoft.Graph.Beta.IdentityGovernance.LifecycleWorkflows.Workflows.Item.MicrosoftGraphIdentityGovernanceCreateNewVersion.CreateNewVersionPostRequestBody
+var requestBody = new CreateNewVersionPostRequestBody
 {
-	Workflow = new Microsoft.Graph.Beta.Models.IdentityGovernance.Workflow
+	Workflow = new Workflow
 	{
-		Category = Microsoft.Graph.Beta.Models.IdentityGovernance.LifecycleWorkflowCategory.Joiner,
+		Category = LifecycleWorkflowCategory.Joiner,
 		Description = "Configure new hire tasks for onboarding employees on their first day",
 		DisplayName = "Global onboard new hire employee",
 		IsEnabled = true,
 		IsSchedulingEnabled = false,
-		ExecutionConditions = new Microsoft.Graph.Beta.Models.IdentityGovernance.WorkflowExecutionConditions
+		ExecutionConditions = new TriggerAndScopeBasedConditions
 		{
 			OdataType = "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
-			AdditionalData = new Dictionary<string, object>
+			Scope = new RuleBasedSubjectSet
 			{
-				{
-					"scope" , new 
-					{
-						OdataType = "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
-						Rule = "(department eq 'Marketing')",
-					}
-				},
-				{
-					"trigger" , new 
-					{
-						OdataType = "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
-						TimeBasedAttribute = "employeeHireDate",
-						OffsetInDays = 1,
-					}
-				},
+				OdataType = "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+				Rule = "(department eq 'Marketing')",
+			},
+			Trigger = new TimeBasedAttributeTrigger
+			{
+				OdataType = "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
+				TimeBasedAttribute = WorkflowTriggerTimeBasedAttribute.EmployeeHireDate,
+				OffsetInDays = 1,
 			},
 		},
-		Tasks = new List<Microsoft.Graph.Beta.Models.IdentityGovernance.TaskObject>
+		Tasks = new List<TaskObject>
 		{
-			new Microsoft.Graph.Beta.Models.IdentityGovernance.TaskObject
+			new TaskObject
 			{
 				ContinueOnError = false,
 				Description = "Enable user account in the directory",
@@ -52,7 +48,7 @@ var requestBody = new Microsoft.Graph.Beta.IdentityGovernance.LifecycleWorkflows
 				{
 				},
 			},
-			new Microsoft.Graph.Beta.Models.IdentityGovernance.TaskObject
+			new TaskObject
 			{
 				ContinueOnError = false,
 				Description = "Send welcome email to new hire",
@@ -66,6 +62,8 @@ var requestBody = new Microsoft.Graph.Beta.IdentityGovernance.LifecycleWorkflows
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.IdentityGovernance.LifecycleWorkflows.Workflows["{workflow-id}"].MicrosoftGraphIdentityGovernanceCreateNewVersion.PostAsync(requestBody);
 
 

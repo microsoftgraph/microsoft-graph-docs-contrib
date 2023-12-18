@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = ReferenceCreate()
-request_body.@odata_id = 'https://graph.microsoft.com/v1.0/directoryObjects/{id}'
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = ReferenceCreate(
+	odata_id = "https://graph.microsoft.com/v1.0/directoryObjects/{id}",
+)
 
-
-
-await client.applications.by_application_id('application-id').owners.ref.post(request_body = request_body)
+await graph_client.applications.by_application_id('application-id').owners.ref.post(request_body)
 
 
 ```

@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
@@ -23,7 +23,7 @@ configuration := &graphplanner.PlannerTaskItemRequestBuilderDeleteRequestConfigu
 	Headers: headers,
 }
 
-graphClient.Planner().Tasks().ByTaskId("plannerTask-id").Delete(context.Background(), configuration)
+graphClient.Planner().Tasks().ByPlannerTaskId("plannerTask-id").Delete(context.Background(), configuration)
 
 
 ```

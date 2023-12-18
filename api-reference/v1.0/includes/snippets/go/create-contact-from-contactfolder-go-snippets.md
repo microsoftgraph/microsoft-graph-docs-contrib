@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewContact()
@@ -30,7 +30,7 @@ requestBody.SetGivenName(&givenName)
 initials := "initials-value"
 requestBody.SetInitials(&initials) 
 
-result, err := graphClient.Me().ContactFolders().ByContactFolderId("contactFolder-id").Contacts().Post(context.Background(), requestBody, nil)
+contacts, err := graphClient.Me().ContactFolders().ByContactFolderId("contactFolder-id").Contacts().Post(context.Background(), requestBody, nil)
 
 
 ```

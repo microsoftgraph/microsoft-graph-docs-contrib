@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewCustomAppScope()
@@ -29,7 +29,7 @@ customAttributes.SetExclusive(&exclusive)
 customAttributes.SetAdditionalData(additionalData)
 requestBody.SetCustomAttributes(customAttributes)
 
-result, err := graphClient.RoleManagement().Exchange().CustomAppScopes().Post(context.Background(), requestBody, nil)
+customAppScopes, err := graphClient.RoleManagement().Exchange().CustomAppScopes().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Users().ByUserId("user-id").Chats().ByChatId("chat-id").Messages().ByMessageId("chatMessage-id").UndoSoftDelete().Post(context.Background(), nil)
+graphClient.Users().ByUserId("user-id").Chats().ByChatId("chat-id").Messages().ByChatMessageId("chatMessage-id").UndoSoftDelete().Post(context.Background(), nil)
 
 
 ```

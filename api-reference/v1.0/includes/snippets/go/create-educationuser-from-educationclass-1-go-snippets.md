@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewReferenceCreate()
 odataId := "https://graph.microsoft.com/v1.0/education/users/13015"
 requestBody.SetOdataId(&odataId) 
 
-graphClient.Education().Classes().ByClasseId("educationClass-id").Members().Ref().Post(context.Background(), requestBody, nil)
+graphClient.Education().Classes().ByEducationClassId("educationClass-id").Members().Ref().Post(context.Background(), requestBody, nil)
 
 
 ```

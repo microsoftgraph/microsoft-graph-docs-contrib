@@ -2,7 +2,7 @@
 title: "settingValue resource type"
 description: "A setting represented by a name/value pair."
 ms.localizationpriority: medium
-author: "dkershaw10"
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: resourcePageType
 ---

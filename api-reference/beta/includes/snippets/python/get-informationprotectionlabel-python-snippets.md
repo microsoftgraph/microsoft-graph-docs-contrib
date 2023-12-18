@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-
-result = await client.me.information_protection.policy.labels.by_label_id('informationProtectionLabel-id').get()
+result = await graph_client.me.information_protection.policy.labels.by_information_protection_label_id('informationProtectionLabel-id').get()
 
 
 ```

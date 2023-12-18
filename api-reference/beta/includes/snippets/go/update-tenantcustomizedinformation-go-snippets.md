@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelsmanagedtenants.NewTenantCustomizedInformation()
@@ -34,13 +34,12 @@ tenantContactInformation.SetNotes(&notes)
 
 contacts := []graphmodelsmanagedtenants.TenantContactInformationable {
 	tenantContactInformation,
-
 }
 requestBody.SetContacts(contacts)
 website := "String"
 requestBody.SetWebsite(&website) 
 
-result, err := graphClient.TenantRelationships().ManagedTenants().TenantsCustomizedInformation().ByTenantsCustomizedInformation().Id("tenantCustomizedInformation-id").Patch(context.Background(), requestBody, nil)
+tenantsCustomizedInformation, err := graphClient.TenantRelationships().ManagedTenants().TenantsCustomizedInformation().ByTenantCustomizedInformationId("tenantCustomizedInformation-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

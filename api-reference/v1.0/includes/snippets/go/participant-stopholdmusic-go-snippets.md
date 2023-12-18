@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphcommunications.NewStopHoldMusicPostRequestBody()
 clientContext := "d45324c1-fcb5-430a-902c-f20af696537c"
 requestBody.SetClientContext(&clientContext) 
 
-result, err := graphClient.Communications().Calls().ByCallId("call-id").Participants().ByParticipantId("participant-id").StopHoldMusic().Post(context.Background(), requestBody, nil)
+stopHoldMusic, err := graphClient.Communications().Calls().ByCallId("call-id").Participants().ByParticipantId("participant-id").StopHoldMusic().Post(context.Background(), requestBody, nil)
 
 
 ```

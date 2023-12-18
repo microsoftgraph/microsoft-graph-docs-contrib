@@ -32,6 +32,7 @@ Inherits from [entity](../resources/entity.md).
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
 |deletedTeams|[deletedTeam](../resources/deletedteam.md) collection| A collection of deleted teams.|
+|deletedChats|[deletedChat](../resources/deletedchat.md) collection| A collection of deleted chats.|
 |devices|[teamworkDevice](../resources/teamworkdevice.md) collection|The Teams devices provisioned for the tenant.|
 |teamsAppSettings|[teamsAppSettings](../resources/teamsappsettings.md)|Represents tenant-wide settings for all [Teams apps](teamsapp.md) in the tenant.|
 |teamTemplates|[teamtemplate](../resources/teamtemplate.md) collection| The templates associated with a team.|

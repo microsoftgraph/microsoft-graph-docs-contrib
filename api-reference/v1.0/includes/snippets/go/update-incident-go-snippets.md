@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelssecurity.NewIncident()
@@ -22,11 +22,10 @@ determination := graphmodels.MULTISTAGEDATTACK_ALERTDETERMINATION
 requestBody.SetDetermination(&determination) 
 customTags := []string {
 	"Demo",
-
 }
 requestBody.SetCustomTags(customTags)
 
-result, err := graphClient.Security().Incidents().ByIncidentId("incident-id").Patch(context.Background(), requestBody, nil)
+incidents, err := graphClient.Security().Incidents().ByIncidentId("incident-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

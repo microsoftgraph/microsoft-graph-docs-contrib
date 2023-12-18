@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Security().ThreatSubmission().EmailThreats().ByEmailThreatId("emailThreatSubmission-id").Get(context.Background(), nil)
+emailThreats, err := graphClient.Security().ThreatSubmission().EmailThreats().ByEmailThreatSubmissionId("emailThreatSubmission-id").Get(context.Background(), nil)
 
 
 ```

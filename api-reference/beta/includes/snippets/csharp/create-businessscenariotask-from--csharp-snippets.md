@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
 var requestBody = new BusinessScenarioTask
 {
@@ -14,16 +15,11 @@ var requestBody = new BusinessScenarioTask
 	Title = "Customer order #12010",
 	PercentComplete = 0,
 	Priority = 5,
-	Target = new BusinessScenarioTaskTargetBase
+	Target = new BusinessScenarioGroupTarget
 	{
 		OdataType = "microsoft.graph.businessScenarioGroupTarget",
 		TaskTargetKind = PlannerTaskTargetKind.Group,
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"groupId" , "7a339254-4b2b-4410-b295-c890a16776ee"
-			},
-		},
+		GroupId = "7a339254-4b2b-4410-b295-c890a16776ee",
 	},
 	BusinessScenarioProperties = new BusinessScenarioProperties
 	{
@@ -34,6 +30,8 @@ var requestBody = new BusinessScenarioTask
 		ExternalBucketId = "deliveryBucket",
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Solutions.BusinessScenarios["{businessScenario-id}"].Planner.Tasks.PostAsync(requestBody);
 
 

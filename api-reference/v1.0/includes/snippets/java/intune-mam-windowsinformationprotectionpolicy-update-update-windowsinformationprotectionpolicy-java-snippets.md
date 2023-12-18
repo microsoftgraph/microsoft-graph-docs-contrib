@@ -1,0 +1,133 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```java
+
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+
+WindowsInformationProtectionPolicy windowsInformationProtectionPolicy = new WindowsInformationProtectionPolicy();
+windowsInformationProtectionPolicy.displayName = "Display Name value";
+windowsInformationProtectionPolicy.description = "Description value";
+windowsInformationProtectionPolicy.version = "Version value";
+windowsInformationProtectionPolicy.enforcementLevel = WindowsInformationProtectionEnforcementLevel.ENCRYPT_AND_AUDIT_ONLY;
+windowsInformationProtectionPolicy.enterpriseDomain = "Enterprise Domain value";
+LinkedList<WindowsInformationProtectionResourceCollection> enterpriseProtectedDomainNamesList = new LinkedList<WindowsInformationProtectionResourceCollection>();
+WindowsInformationProtectionResourceCollection enterpriseProtectedDomainNames = new WindowsInformationProtectionResourceCollection();
+enterpriseProtectedDomainNames.displayName = "Display Name value";
+LinkedList<String> resourcesList = new LinkedList<String>();
+resourcesList.add("Resources value");
+enterpriseProtectedDomainNames.resources = resourcesList;
+enterpriseProtectedDomainNamesList.add(enterpriseProtectedDomainNames);
+windowsInformationProtectionPolicy.enterpriseProtectedDomainNames = enterpriseProtectedDomainNamesList;
+windowsInformationProtectionPolicy.protectionUnderLockConfigRequired = true;
+WindowsInformationProtectionDataRecoveryCertificate dataRecoveryCertificate = new WindowsInformationProtectionDataRecoveryCertificate();
+dataRecoveryCertificate.subjectName = "Subject Name value";
+dataRecoveryCertificate.description = "Description value";
+dataRecoveryCertificate.expirationDateTime = OffsetDateTimeSerializer.deserialize("2017-01-01T07:57:57.2481234+00:00");
+dataRecoveryCertificate.certificate = Base64.getDecoder().decode("Y2VydGlmaWNhdGU=");
+windowsInformationProtectionPolicy.dataRecoveryCertificate = dataRecoveryCertificate;
+windowsInformationProtectionPolicy.revokeOnUnenrollDisabled = true;
+windowsInformationProtectionPolicy.rightsManagementServicesTemplateId = UUID.fromString("abf7b16f-b16f-abf7-6fb1-f7ab6fb1f7ab");
+windowsInformationProtectionPolicy.azureRightsManagementServicesAllowed = true;
+windowsInformationProtectionPolicy.iconsVisible = true;
+LinkedList<WindowsInformationProtectionApp> protectedAppsList = new LinkedList<WindowsInformationProtectionApp>();
+WindowsInformationProtectionStoreApp protectedApps = new WindowsInformationProtectionStoreApp();
+protectedApps.displayName = "Display Name value";
+protectedApps.description = "Description value";
+protectedApps.publisherName = "Publisher Name value";
+protectedApps.productName = "Product Name value";
+protectedApps.denied = true;
+protectedAppsList.add(protectedApps);
+windowsInformationProtectionPolicy.protectedApps = protectedAppsList;
+LinkedList<WindowsInformationProtectionApp> exemptAppsList = new LinkedList<WindowsInformationProtectionApp>();
+WindowsInformationProtectionStoreApp exemptApps = new WindowsInformationProtectionStoreApp();
+exemptApps.displayName = "Display Name value";
+exemptApps.description = "Description value";
+exemptApps.publisherName = "Publisher Name value";
+exemptApps.productName = "Product Name value";
+exemptApps.denied = true;
+exemptAppsList.add(exemptApps);
+windowsInformationProtectionPolicy.exemptApps = exemptAppsList;
+LinkedList<WindowsInformationProtectionResourceCollection> enterpriseNetworkDomainNamesList = new LinkedList<WindowsInformationProtectionResourceCollection>();
+WindowsInformationProtectionResourceCollection enterpriseNetworkDomainNames = new WindowsInformationProtectionResourceCollection();
+enterpriseNetworkDomainNames.displayName = "Display Name value";
+LinkedList<String> resourcesList1 = new LinkedList<String>();
+resourcesList1.add("Resources value");
+enterpriseNetworkDomainNames.resources = resourcesList1;
+enterpriseNetworkDomainNamesList.add(enterpriseNetworkDomainNames);
+windowsInformationProtectionPolicy.enterpriseNetworkDomainNames = enterpriseNetworkDomainNamesList;
+LinkedList<WindowsInformationProtectionProxiedDomainCollection> enterpriseProxiedDomainsList = new LinkedList<WindowsInformationProtectionProxiedDomainCollection>();
+WindowsInformationProtectionProxiedDomainCollection enterpriseProxiedDomains = new WindowsInformationProtectionProxiedDomainCollection();
+enterpriseProxiedDomains.displayName = "Display Name value";
+LinkedList<ProxiedDomain> proxiedDomainsList = new LinkedList<ProxiedDomain>();
+ProxiedDomain proxiedDomains = new ProxiedDomain();
+proxiedDomains.ipAddressOrFQDN = "Ip Address Or FQDN value";
+proxiedDomains.proxy = "Proxy value";
+proxiedDomainsList.add(proxiedDomains);
+enterpriseProxiedDomains.proxiedDomains = proxiedDomainsList;
+enterpriseProxiedDomainsList.add(enterpriseProxiedDomains);
+windowsInformationProtectionPolicy.enterpriseProxiedDomains = enterpriseProxiedDomainsList;
+LinkedList<WindowsInformationProtectionIPRangeCollection> enterpriseIPRangesList = new LinkedList<WindowsInformationProtectionIPRangeCollection>();
+WindowsInformationProtectionIPRangeCollection enterpriseIPRanges = new WindowsInformationProtectionIPRangeCollection();
+enterpriseIPRanges.displayName = "Display Name value";
+LinkedList<IpRange> rangesList = new LinkedList<IpRange>();
+IpRange ranges = new IpRange();
+rangesList.add(ranges);
+enterpriseIPRanges.ranges = rangesList;
+enterpriseIPRangesList.add(enterpriseIPRanges);
+windowsInformationProtectionPolicy.enterpriseIPRanges = enterpriseIPRangesList;
+windowsInformationProtectionPolicy.enterpriseIPRangesAreAuthoritative = true;
+LinkedList<WindowsInformationProtectionResourceCollection> enterpriseProxyServersList = new LinkedList<WindowsInformationProtectionResourceCollection>();
+WindowsInformationProtectionResourceCollection enterpriseProxyServers = new WindowsInformationProtectionResourceCollection();
+enterpriseProxyServers.displayName = "Display Name value";
+LinkedList<String> resourcesList2 = new LinkedList<String>();
+resourcesList2.add("Resources value");
+enterpriseProxyServers.resources = resourcesList2;
+enterpriseProxyServersList.add(enterpriseProxyServers);
+windowsInformationProtectionPolicy.enterpriseProxyServers = enterpriseProxyServersList;
+LinkedList<WindowsInformationProtectionResourceCollection> enterpriseInternalProxyServersList = new LinkedList<WindowsInformationProtectionResourceCollection>();
+WindowsInformationProtectionResourceCollection enterpriseInternalProxyServers = new WindowsInformationProtectionResourceCollection();
+enterpriseInternalProxyServers.displayName = "Display Name value";
+LinkedList<String> resourcesList3 = new LinkedList<String>();
+resourcesList3.add("Resources value");
+enterpriseInternalProxyServers.resources = resourcesList3;
+enterpriseInternalProxyServersList.add(enterpriseInternalProxyServers);
+windowsInformationProtectionPolicy.enterpriseInternalProxyServers = enterpriseInternalProxyServersList;
+windowsInformationProtectionPolicy.enterpriseProxyServersAreAuthoritative = true;
+LinkedList<WindowsInformationProtectionResourceCollection> neutralDomainResourcesList = new LinkedList<WindowsInformationProtectionResourceCollection>();
+WindowsInformationProtectionResourceCollection neutralDomainResources = new WindowsInformationProtectionResourceCollection();
+neutralDomainResources.displayName = "Display Name value";
+LinkedList<String> resourcesList4 = new LinkedList<String>();
+resourcesList4.add("Resources value");
+neutralDomainResources.resources = resourcesList4;
+neutralDomainResourcesList.add(neutralDomainResources);
+windowsInformationProtectionPolicy.neutralDomainResources = neutralDomainResourcesList;
+windowsInformationProtectionPolicy.indexingEncryptedStoresOrItemsBlocked = true;
+LinkedList<WindowsInformationProtectionResourceCollection> smbAutoEncryptedFileExtensionsList = new LinkedList<WindowsInformationProtectionResourceCollection>();
+WindowsInformationProtectionResourceCollection smbAutoEncryptedFileExtensions = new WindowsInformationProtectionResourceCollection();
+smbAutoEncryptedFileExtensions.displayName = "Display Name value";
+LinkedList<String> resourcesList5 = new LinkedList<String>();
+resourcesList5.add("Resources value");
+smbAutoEncryptedFileExtensions.resources = resourcesList5;
+smbAutoEncryptedFileExtensionsList.add(smbAutoEncryptedFileExtensions);
+windowsInformationProtectionPolicy.smbAutoEncryptedFileExtensions = smbAutoEncryptedFileExtensionsList;
+windowsInformationProtectionPolicy.isAssigned = true;
+windowsInformationProtectionPolicy.revokeOnMdmHandoffDisabled = true;
+windowsInformationProtectionPolicy.mdmEnrollmentUrl = "https://example.com/mdmEnrollmentUrl/";
+windowsInformationProtectionPolicy.windowsHelloForBusinessBlocked = true;
+windowsInformationProtectionPolicy.pinMinimumLength = 0;
+windowsInformationProtectionPolicy.pinUppercaseLetters = WindowsInformationProtectionPinCharacterRequirements.REQUIRE_AT_LEAST_ONE;
+windowsInformationProtectionPolicy.pinLowercaseLetters = WindowsInformationProtectionPinCharacterRequirements.REQUIRE_AT_LEAST_ONE;
+windowsInformationProtectionPolicy.pinSpecialCharacters = WindowsInformationProtectionPinCharacterRequirements.REQUIRE_AT_LEAST_ONE;
+windowsInformationProtectionPolicy.pinExpirationDays = 1;
+windowsInformationProtectionPolicy.numberOfPastPinsRemembered = 10;
+windowsInformationProtectionPolicy.passwordMaximumAttemptCount = 11;
+windowsInformationProtectionPolicy.minutesOfInactivityBeforeDeviceLock = 3;
+windowsInformationProtectionPolicy.daysWithoutContactBeforeUnenroll = 0;
+
+graphClient.deviceAppManagement().windowsInformationProtectionPolicies("{windowsInformationProtectionPolicyId}")
+	.buildRequest()
+	.patch(windowsInformationProtectionPolicy);
+
+```

@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").Tags().MicrosoftGraphEdiscoveryAsHierarchy().Get(context.Background(), nil)
+microsoftGraphEdiscoveryAsHierarchy, err := graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").Tags().MicrosoftGraphEdiscoveryAsHierarchy().Get(context.Background(), nil)
 
 
 ```

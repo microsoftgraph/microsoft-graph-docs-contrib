@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewTeamsAppInstallation()
@@ -33,7 +33,6 @@ teamsAppResourceSpecificPermission1.SetPermissionType(&permissionType)
 resourceSpecificPermissions := []graphmodels.TeamsAppResourceSpecificPermissionable {
 	teamsAppResourceSpecificPermission,
 	teamsAppResourceSpecificPermission1,
-
 }
 consentedPermissionSet.SetResourceSpecificPermissions(resourceSpecificPermissions)
 requestBody.SetConsentedPermissionSet(consentedPermissionSet)
@@ -42,7 +41,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Teams().ByTeamId("team-id").InstalledApps().Post(context.Background(), requestBody, nil)
+installedApps, err := graphClient.Teams().ByTeamId("team-id").InstalledApps().Post(context.Background(), requestBody, nil)
 
 
 ```

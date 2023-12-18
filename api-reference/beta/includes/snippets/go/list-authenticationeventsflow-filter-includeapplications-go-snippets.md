@@ -12,11 +12,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-requestFilter := "microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/conditions/applications/includeApplications/any"
+requestFilter := "microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/conditions/applications/includeApplications/any(appId:appId/appId eq '63856651-13d9-4784-9abf-20758d509e19')"
 
 requestParameters := &graphidentity.IdentityAuthenticationEventsFlowsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
@@ -25,7 +25,7 @@ configuration := &graphidentity.IdentityAuthenticationEventsFlowsRequestBuilderG
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Identity().AuthenticationEventsFlows().Get(context.Background(), configuration)
+authenticationEventsFlows, err := graphClient.Identity().AuthenticationEventsFlows().Get(context.Background(), configuration)
 
 
 ```

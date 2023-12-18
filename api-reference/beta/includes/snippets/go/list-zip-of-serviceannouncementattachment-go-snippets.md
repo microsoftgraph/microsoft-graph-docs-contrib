@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Admin().ServiceAnnouncement().Messages().ByMessageId("serviceUpdateMessage-id").AttachmentsArchive().Get(context.Background(), nil)
+graphClient.Admin().ServiceAnnouncement().Messages().ByServiceUpdateMessageId("serviceUpdateMessage-id").AttachmentsArchive().Get(context.Background(), nil)
 
 
 ```

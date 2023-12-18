@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewWorkPosition()
 isCurrent := true
 requestBody.SetIsCurrent(&isCurrent) 
 
-result, err := graphClient.Me().Profile().Positions().ByPositionId("workPosition-id").Patch(context.Background(), requestBody, nil)
+positions, err := graphClient.Me().Profile().Positions().ByWorkPositionId("workPosition-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

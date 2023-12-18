@@ -6,7 +6,7 @@ ms.prod: "applications"
 author: "FaithOmbongi"
 ms.author: ombongifaith
 ms.reviewer: saurabh.madan
-ms.date: 05/23/2023
+ms.date: 06/22/2023
 ---
 
 # Generate proof of possession tokens for rolling keys
@@ -77,7 +77,17 @@ namespace MicrosoftIdentityPlatformProofTokenGenerator
 ```
 
 # [PowerShell](#tab/powershell)
+
+## Prerequisite
+
+- Have a valid client certificate. This sample uses a self-signed certificate for demonstration purposes. To learn how to create a self-signed certificate, see [Create a self-signed public certificate to authenticate your application](/azure/active-directory/develop/howto-create-self-signed-certificate). From the linked sample:
+   - The **$cert** variable stores the certificate in the current session and allows you to export it.
+   - Export the certificate with a private key in `.pfx` format.
+
 ```powershell
+# $PfxFilePath represents the path to which you exported the .pfx certificate. 
+# $ObjectID is the ID of the service principal or the application for which you are running the addKey or removeKey action that requires this proof of possession token.
+
 param (
     [Parameter(Mandatory = $true)]
     [string]$PfxFilePath,

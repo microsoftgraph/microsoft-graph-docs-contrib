@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DirectoryRoles().ByDirectoryRoleId("directoryRole-id").ScopedMembers().Get(context.Background(), nil)
+scopedMembers, err := graphClient.DirectoryRoles().ByDirectoryRoleId("directoryRole-id").ScopedMembers().Get(context.Background(), nil)
 
 
 ```

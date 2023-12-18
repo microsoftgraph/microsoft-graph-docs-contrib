@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
@@ -25,7 +25,7 @@ configuration := &graphschemaextensions.SchemaExtensionsRequestBuilderGetRequest
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.SchemaExtensions().Get(context.Background(), configuration)
+schemaExtensions, err := graphClient.SchemaExtensions().Get(context.Background(), configuration)
 
 
 ```

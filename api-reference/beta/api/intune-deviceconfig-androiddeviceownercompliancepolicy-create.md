@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Create a new [androidDeviceOwnerCompliancePolicy](../resources/intune-deviceconfig-androiddeviceownercompliancepolicy.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -77,6 +79,7 @@ The following table shows the properties that are required when you create the a
 |passwordPreviousPasswordCountToBlock|Int32|Number of previous passwords to block. Valid values 1 to 24|
 |storageRequireEncryption|Boolean|Require encryption on Android devices.|
 |securityRequireIntuneAppIntegrity|Boolean|If setting is set to true, checks that the Intune app installed on fully managed, dedicated, or corporate-owned work profile Android Enterprise enrolled devices, is the one provided by Microsoft from the Managed Google Playstore. If the check fails, the device will be reported as non-compliant.|
+|requireNoPendingSystemUpdates|Boolean|Require device to have no pending Android system updates.|
 
 
 
@@ -90,7 +93,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies
 Content-type: application/json
-Content-length: 1269
+Content-length: 1311
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerCompliancePolicy",
@@ -121,7 +124,8 @@ Content-length: 1269
   "passwordExpirationDays": 6,
   "passwordPreviousPasswordCountToBlock": 4,
   "storageRequireEncryption": true,
-  "securityRequireIntuneAppIntegrity": true
+  "securityRequireIntuneAppIntegrity": true,
+  "requireNoPendingSystemUpdates": true
 }
 ```
 
@@ -130,7 +134,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1441
+Content-Length: 1483
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerCompliancePolicy",
@@ -164,6 +168,7 @@ Content-Length: 1441
   "passwordExpirationDays": 6,
   "passwordPreviousPasswordCountToBlock": 4,
   "storageRequireEncryption": true,
-  "securityRequireIntuneAppIntegrity": true
+  "securityRequireIntuneAppIntegrity": true,
+  "requireNoPendingSystemUpdates": true
 }
 ```

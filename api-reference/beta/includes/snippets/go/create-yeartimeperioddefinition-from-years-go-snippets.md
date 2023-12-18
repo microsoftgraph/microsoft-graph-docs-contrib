@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelsindustrydata.NewYearTimePeriodDefinition()
@@ -27,7 +27,7 @@ code := "2022"
 year.SetCode(&code) 
 requestBody.SetYear(year)
 
-result, err := graphClient.External().IndustryData().Years().Post(context.Background(), requestBody, nil)
+years, err := graphClient.External().IndustryData().Years().Post(context.Background(), requestBody, nil)
 
 
 ```

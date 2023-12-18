@@ -14,7 +14,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
@@ -28,7 +28,7 @@ requestBody := graphmodels.NewPlannerPlan()
 title := "title-value"
 requestBody.SetTitle(&title) 
 
-result, err := graphClient.Planner().Plans().ByPlanId("plannerPlan-id").Patch(context.Background(), requestBody, configuration)
+plans, err := graphClient.Planner().Plans().ByPlannerPlanId("plannerPlan-id").Patch(context.Background(), requestBody, configuration)
 
 
 ```

@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.IdentityProtection().RiskyUsers().ByRiskyUserId("riskyUser-id").History().ByHistory().Id("riskyUserHistoryItem-id").Get(context.Background(), nil)
+history, err := graphClient.IdentityProtection().RiskyUsers().ByRiskyUserId("riskyUser-id").History().ByRiskyUserHistoryItemId("riskyUserHistoryItem-id").Get(context.Background(), nil)
 
 
 ```

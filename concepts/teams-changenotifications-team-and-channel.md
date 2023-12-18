@@ -13,6 +13,8 @@ Change notifications enable you to subscribe to changes (create, update, and del
 
 Continue with this article about scenarios for the **team** or **channel** resource. Or, find out about [change notifications for other Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).
 
+> [!NOTE]
+> If you request a subscription **expirationDateTime** that is more than 1 hour in the future, you must subscribe to lifecycle notifications by including a **lifecycleNotificationUrl** property in your subscription request. Otherwise your subscription request will fail with the following error message: *lifecycleNotificationUrl is a required property for subscription creation on this resource when the expirationDateTime value is set to greater than 1 hour*.
 
 ## Subscribe to changes in any team at tenant level
 
@@ -117,7 +119,15 @@ Content-Type: application/json
 
 To get change notifications for all changes related to any channel in a particular team, subscribe to `/teams/{team-id}/channels`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
->**Note:** Change notifications for private and shared channels in delegated context are only supported in beta. This is not currently available in v1.0. When you call the v1.0 endpoint, a subscriber to this resource in delegated context will receive notifications only for standard channels under a particular team, not for private and shared channels.
+The following are examples of events that generate notifications for this resource:
+- The display name of a channel is updated in the team.
+- A private channel is created in the team.
+- A shared channel owned by this team is shared or unshared with another team.
+- A shared channel owned by another team is shared with this team.
+- The properties of a channel, such as **isFavoriteByDefault** or **description**, are updated.
+- A channel is deleted.
+
+>**Note:** For delegated context, only the authorized users will receive notifications for private/shared channels. For example, anyone who belongs to the team (except guests) can subscribe to this resource in delegated context, but only the users who have access to private and shared channels will receive notifications for events happening in those channels.
 
 
 ### Permissions
@@ -272,7 +282,7 @@ The decrypted notification payload looks like the following. The payload conform
 
 ### Notifications without resource data
 
-Notifications without resource data give you enough information to make GET calls to get the message content. Subscriptions for notifications without resource data don't require an encryption certificate (because actual resource data is not sent over).
+Notifications without resource data give you enough information to make GET calls to get the message content. Subscriptions for notifications without resource data don't require an encryption certificate (because Microsoft Graph doesn't send the actual resource data).
 
 For notifications without resource data, the payload looks like the following. This payload is for a property change in a team.
 
@@ -292,7 +302,7 @@ For notifications without resource data, the payload looks like the following. T
 }
 ```
 
-The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload for the message. GET calls will always return the current state of the message. If the message is changed between when the notification is sent and when the message is retrieved, the operation will return the updated message.
+The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload for the message. GET calls always return the current state of the message. If the message is changed between when the notification is sent and when the message is retrieved, the operation returns the updated message.
 
 
 >**Note:** Channel email address isn't returned in the payload.

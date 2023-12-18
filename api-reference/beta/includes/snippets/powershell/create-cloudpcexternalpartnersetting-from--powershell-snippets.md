@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.DeviceManagement.Administration
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.cloudPcExternalPartnerSetting"
@@ -12,6 +12,6 @@ $params = @{
 	enableConnection = $true
 }
 
-New-MgDeviceManagementVirtualEndpointExternalPartnerSetting -BodyParameter $params
+New-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting -BodyParameter $params
 
 ```

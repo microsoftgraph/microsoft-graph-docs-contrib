@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphgroups.NewReplyPostRequestBody()
@@ -26,28 +26,27 @@ body.SetContent(&content)
 post.SetBody(body)
 
 
-extension := graphmodels.NewExtension()
+extension := graphmodels.NewOpenTypeExtension()
+extensionName := "Com.Contoso.HR"
+extension.SetExtensionName(&extensionName) 
 additionalData := map[string]interface{}{
-	"extensionName" : "Com.Contoso.HR", 
 	"companyName" : "Contoso", 
 	"expirationDate" : "2015-07-03T13:04:00.000Z", 
 	topPicks := []string {
 		"Employees only",
 		"Add spouse or guest",
 		"Add family",
-
 	}
 }
 extension.SetAdditionalData(additionalData)
 
 extensions := []graphmodels.Extensionable {
 	extension,
-
 }
 post.SetExtensions(extensions)
 requestBody.SetPost(post)
 
-graphClient.Groups().ByGroupId("group-id").Threads().ByThreadId("conversationThread-id").Posts().ByPostId("post-id").Reply().Post(context.Background(), requestBody, nil)
+graphClient.Groups().ByGroupId("group-id").Threads().ByConversationThreadId("conversationThread-id").Posts().ByPostId("post-id").Reply().Post(context.Background(), requestBody, nil)
 
 
 ```

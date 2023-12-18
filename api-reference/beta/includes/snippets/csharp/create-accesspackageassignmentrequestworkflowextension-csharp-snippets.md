@@ -6,44 +6,38 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
-var requestBody = new CustomCalloutExtension
+var requestBody = new AccessPackageAssignmentRequestWorkflowExtension
 {
 	OdataType = "#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension",
 	DisplayName = "test_action_0124_email",
 	Description = "this is for graph testing only",
-	EndpointConfiguration = new CustomExtensionEndpointConfiguration
+	EndpointConfiguration = new LogicAppTriggerEndpointConfiguration
 	{
 		OdataType = "#microsoft.graph.logicAppTriggerEndpointConfiguration",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"subscriptionId" , "38ab2ccc-3747-4567-b36b-9478f5602f0d"
-			},
-			{
-				"resourceGroupName" , "test"
-			},
-			{
-				"logicAppWorkflowName" , "elm-extension-email"
-			},
-		},
+		SubscriptionId = "38ab2ccc-3747-4567-b36b-9478f5602f0d",
+		ResourceGroupName = "test",
+		LogicAppWorkflowName = "elm-extension-email",
 	},
-	AuthenticationConfiguration = new CustomExtensionAuthenticationConfiguration
+	AuthenticationConfiguration = new AzureAdPopTokenAuthentication
 	{
 		OdataType = "#microsoft.graph.azureAdPopTokenAuthentication",
 	},
-	AdditionalData = new Dictionary<string, object>
+	CallbackConfiguration = new CustomExtensionCallbackConfiguration
 	{
+		OdataType = "microsoft.graph.customExtensionCallbackConfiguration",
+		AdditionalData = new Dictionary<string, object>
 		{
-			"callbackConfiguration" , new 
 			{
-				OdataType = "microsoft.graph.customExtensionCallbackConfiguration",
-				DurationBeforeTimeout = "PT1H",
-			}
+				"durationBeforeTimeout" , "PT1H"
+			},
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageCatalogs["{accessPackageCatalog-id}"].AccessPackageCustomWorkflowExtensions.PostAsync(requestBody);
 
 

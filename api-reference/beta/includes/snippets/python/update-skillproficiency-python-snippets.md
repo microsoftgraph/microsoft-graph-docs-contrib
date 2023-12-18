@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = SkillProficiency()
-request_body.Categories(['Professional', ])
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.proficiency(SkillProficiencyLevel.AdvancedProfessional('skillproficiencylevel.advancedprofessional'))
+request_body = SkillProficiency(
+	categories = [
+		"Professional",
+	],
+	proficiency = SkillProficiencyLevel.AdvancedProfessional,
+)
 
-
-
-
-result = await client.me.profile.skills.by_skill_id('skillProficiency-id').patch(request_body = request_body)
+result = await graph_client.me.profile.skills.by_skill_proficiency_id('skillProficiency-id').patch(request_body)
 
 
 ```

@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelsmanagedtenants.NewTenantTag()
@@ -21,7 +21,7 @@ requestBody.SetDisplayName(&displayName)
 description := "Tenants that have purchased extended support"
 requestBody.SetDescription(&description) 
 
-result, err := graphClient.TenantRelationships().ManagedTenants().TenantTags().Post(context.Background(), requestBody, nil)
+tenantTags, err := graphClient.TenantRelationships().ManagedTenants().TenantTags().Post(context.Background(), requestBody, nil)
 
 
 ```

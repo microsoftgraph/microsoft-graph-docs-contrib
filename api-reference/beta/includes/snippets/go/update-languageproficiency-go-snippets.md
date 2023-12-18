@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewLanguageProficiency()
 allowedAudiences := graphmodels.ORGANIZATION_ALLOWEDAUDIENCES 
 requestBody.SetAllowedAudiences(&allowedAudiences) 
 
-result, err := graphClient.Me().Profile().Languages().ByLanguageId("languageProficiency-id").Patch(context.Background(), requestBody, nil)
+languages, err := graphClient.Me().Profile().Languages().ByLanguageProficiencyId("languageProficiency-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

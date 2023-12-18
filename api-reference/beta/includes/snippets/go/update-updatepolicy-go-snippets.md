@@ -12,13 +12,13 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelswindowsupdates.NewUpdatePolicy()
 deploymentSettings := graphmodelswindowsupdates.NewDeploymentSettings()
 schedule := graphmodelswindowsupdates.NewScheduleSettings()
-gradualRollout := graphmodelswindowsupdates.NewGradualRolloutSettings()
+gradualRollout := graphmodelswindowsupdates.NewRateDrivenRolloutSettings()
 durationBetweenOffers , err := abstractions.ParseISODuration("P1D")
 gradualRollout.SetDurationBetweenOffers(&durationBetweenOffers) 
 additionalData := map[string]interface{}{
@@ -29,7 +29,7 @@ schedule.SetGradualRollout(gradualRollout)
 deploymentSettings.SetSchedule(schedule)
 requestBody.SetDeploymentSettings(deploymentSettings)
 
-result, err := graphClient.Admin().Windows().Updates().UpdatePolicies().ByUpdatePolicieId("updatePolicy-id").Patch(context.Background(), requestBody, nil)
+updatePolicies, err := graphClient.Admin().Windows().Updates().UpdatePolicies().ByUpdatePolicyId("updatePolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelssecurity.NewUrlThreatSubmission()
@@ -21,7 +21,7 @@ requestBody.SetCategory(&category)
 webUrl := "http://phishing.contoso.com"
 requestBody.SetWebUrl(&webUrl) 
 
-result, err := graphClient.Security().ThreatSubmission().UrlThreats().Post(context.Background(), requestBody, nil)
+urlThreats, err := graphClient.Security().ThreatSubmission().UrlThreats().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
@@ -25,7 +25,7 @@ configuration := &graphdirectory.DirectoryCustomSecurityAttributeDefinitionsRequ
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Directory().CustomSecurityAttributeDefinitions().Get(context.Background(), configuration)
+customSecurityAttributeDefinitions, err := graphClient.Directory().CustomSecurityAttributeDefinitions().Get(context.Background(), configuration)
 
 
 ```

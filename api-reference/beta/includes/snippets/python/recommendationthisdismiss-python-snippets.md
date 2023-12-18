@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = DismissPostRequestBody()
-request_body.dismiss_reason = 'Recommendations is not relevant for my organization because...'
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = DismissPostRequestBody(
+	dismiss_reason = "Recommendations is not relevant for my organization because...",
+)
 
-
-
-result = await client.directory.recommendations.by_recommendation_id('recommendation-id').dismiss.post(request_body = request_body)
+result = await graph_client.directory.recommendations.by_recommendation_id('recommendation-id').dismiss.post(request_body)
 
 
 ```

@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Chats().ByChatId("chat-id").PinnedMessages().ByPinnedMessageId("pinnedChatMessageInfo-id").Delete(context.Background(), nil)
+graphClient.Chats().ByChatId("chat-id").PinnedMessages().ByPinnedChatMessageInfoId("pinnedChatMessageInfo-id").Delete(context.Background(), nil)
 
 
 ```

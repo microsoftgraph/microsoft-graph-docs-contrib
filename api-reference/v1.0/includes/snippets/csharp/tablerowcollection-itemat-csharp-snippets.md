@@ -6,18 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
-
-var requestBody = new Microsoft.Graph.Drives.Item.Items.Item.Workbook.Tables.Item.Rows.Item.Row
-{
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"index" , 4
-		},
-	},
-};
-await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].Rows["{workbookTableRow-id}"].PostAsync(requestBody);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].Rows.ItemAtWithIndex(1).GetAsync();
 
 
 ```

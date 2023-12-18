@@ -14,7 +14,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
@@ -32,7 +32,7 @@ additionalData := map[string]interface{}{
 orderHintsByAssignee.SetAdditionalData(additionalData)
 requestBody.SetOrderHintsByAssignee(orderHintsByAssignee)
 
-result, err := graphClient.Planner().Tasks().ByTaskId("plannerTask-id").AssignedToTaskBoardFormat().Patch(context.Background(), requestBody, configuration)
+assignedToTaskBoardFormat, err := graphClient.Planner().Tasks().ByPlannerTaskId("plannerTask-id").AssignedToTaskBoardFormat().Patch(context.Background(), requestBody, configuration)
 
 
 ```

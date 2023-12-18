@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphdirectoryobjects.NewCheckMemberGroupsPostRequestBody()
@@ -22,11 +22,10 @@ groupIds := []string {
 	"93670da6-d731-4366-94b5-abed40b6016b",
 	"f5484ab1-4d4d-41ec-a9b8-754b3957bfc7",
 	"c9103f26-f3cf-4004-a611-2a14e81b8f79",
-
 }
 requestBody.SetGroupIds(groupIds)
 
-result, err := graphClient.DirectoryObjects().ByDirectoryObjectId("directoryObject-id").CheckMemberGroups().Post(context.Background(), requestBody, nil)
+checkMemberGroups, err := graphClient.DirectoryObjects().ByDirectoryObjectId("directoryObject-id").CheckMemberGroups().Post(context.Background(), requestBody, nil)
 
 
 ```

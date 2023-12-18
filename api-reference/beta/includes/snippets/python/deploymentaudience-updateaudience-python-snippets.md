@@ -4,24 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = UpdateAudiencePostRequestBody()
-add_members_updatable_asset1 = UpdatableAsset()
-add_members_updatable_asset1.@odata_type = '#microsoft.graph.windowsUpdates.azureADDevice'
+graph_client = GraphServiceClient(credentials, scopes)
 
-add_members_updatable_asset1.id = 'String (identifier)'
+request_body = UpdateAudiencePostRequestBody(
+	add_members = [
+		AzureADDevice(
+			odata_type = "#microsoft.graph.windowsUpdates.azureADDevice",
+			id = "String (identifier)",
+		),
+	],
+)
 
-
-addMembersArray []= addMembersUpdatableAsset1;
-request_body.addmembers(addMembersArray)
-
-
-
-
-
-await client.admin.windows.updates.deployment_audiences.by_deployment_audience_id('deploymentAudience-id').microsoft_graph_window_update_update_audience.post(request_body = request_body)
+await graph_client.admin.windows.updates.deployment_audiences.by_deployment_audience_id('deploymentAudience-id').microsoft_graph_windows_updates_update_audience.post(request_body)
 
 
 ```

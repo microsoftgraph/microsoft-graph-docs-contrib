@@ -6,171 +6,95 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestBody = new AuthenticationEventsFlow();
-$requestBody->set@odatatype('#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow');
-
+$requestBody = new ExternalUsersSelfServiceSignUpEventsFlow();
+$requestBody->setOdataType('#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow');
 $requestBody->setDisplayName('Woodgrove User Flow 2');
-
-$additionalData = [
-		'onAuthenticationMethodLoadStart' => $requestBody = new OnAuthenticationMethodLoadStart();
-$		requestBody->set@odatatype('#microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp');
-
-$identityProviders1 = new ();
-$		identityProviders1->setId('EmailPassword-OAUTH');
-
-
-$identityProvidersArray []= $identityProviders1;
-$identityProviders2 = new ();
-$		identityProviders2->setId('Google-OAUTH');
-
-
-$identityProvidersArray []= $identityProviders2;
-$identityProviders3 = new ();
-$		identityProviders3->setId('Facebook-OAUTH');
-
-
-$identityProvidersArray []= $identityProviders3;
-$requestBody->setIdentityProviders($identityProvidersArray);
-
-
+$onAuthenticationMethodLoadStart = new OnAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp();
+$onAuthenticationMethodLoadStart->setOdataType('#microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp');
+$identityProvidersIdentityProviderBase1 = new IdentityProviderBase();
+$identityProvidersIdentityProviderBase1->setId('EmailPassword-OAUTH');
+$identityProvidersArray []= $identityProvidersIdentityProviderBase1;
+$identityProvidersIdentityProviderBase2 = new IdentityProviderBase();
+$identityProvidersIdentityProviderBase2->setId('Google-OAUTH');
+$identityProvidersArray []= $identityProvidersIdentityProviderBase2;
+$identityProvidersIdentityProviderBase3 = new IdentityProviderBase();
+$identityProvidersIdentityProviderBase3->setId('Facebook-OAUTH');
+$identityProvidersArray []= $identityProvidersIdentityProviderBase3;
+$onAuthenticationMethodLoadStart->setIdentityProviders($identityProvidersArray);
 
 $requestBody->setOnAuthenticationMethodLoadStart($onAuthenticationMethodLoadStart);
-
-	'onInteractiveAuthFlowStart' => $requestBody = new OnInteractiveAuthFlowStart();
-$	requestBody->set@odatatype('#microsoft.graph.onInteractiveAuthFlowStartExternalUsersSelfServiceSignUp');
-
-	$requestBody->setIsSignUpAllowed(true);
-
-
+$onInteractiveAuthFlowStart = new OnInteractiveAuthFlowStartExternalUsersSelfServiceSignUp();
+$onInteractiveAuthFlowStart->setOdataType('#microsoft.graph.onInteractiveAuthFlowStartExternalUsersSelfServiceSignUp');
+$onInteractiveAuthFlowStart->setIsSignUpAllowed(true);
 $requestBody->setOnInteractiveAuthFlowStart($onInteractiveAuthFlowStart);
+$onAttributeCollection = new OnAttributeCollectionExternalUsersSelfServiceSignUp();
+$onAttributeCollection->setOdataType('#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp');
+$attributesIdentityUserFlowAttribute1 = new IdentityUserFlowAttribute();
+$attributesIdentityUserFlowAttribute1->setId('email');
+$attributesIdentityUserFlowAttribute1->setDisplayName('Email Address');
+$attributesIdentityUserFlowAttribute1->setDescription('Email address of the user');
+$attributesIdentityUserFlowAttribute1->setUserFlowAttributeType(new IdentityUserFlowAttributeType('builtIn'));
+$attributesIdentityUserFlowAttribute1->setDataType(new IdentityUserFlowAttributeDataType('string'));
+$attributesArray []= $attributesIdentityUserFlowAttribute1;
+$attributesIdentityUserFlowAttribute2 = new IdentityUserFlowAttribute();
+$attributesIdentityUserFlowAttribute2->setId('displayName');
+$attributesIdentityUserFlowAttribute2->setDisplayName('Display Name');
+$attributesIdentityUserFlowAttribute2->setDescription('Display Name of the User.');
+$attributesIdentityUserFlowAttribute2->setUserFlowAttributeType(new IdentityUserFlowAttributeType('builtIn'));
+$attributesIdentityUserFlowAttribute2->setDataType(new IdentityUserFlowAttributeDataType('string'));
+$attributesArray []= $attributesIdentityUserFlowAttribute2;
+$attributesIdentityUserFlowAttribute3 = new IdentityUserFlowAttribute();
+$attributesIdentityUserFlowAttribute3->setId('extension_6ea3bc85aec24b1c92ff4a117afb6621_Favoritecolor');
+$attributesIdentityUserFlowAttribute3->setDisplayName('Favorite color');
+$attributesIdentityUserFlowAttribute3->setDescription('what is your favorite color');
+$attributesIdentityUserFlowAttribute3->setUserFlowAttributeType(new IdentityUserFlowAttributeType('custom'));
+$attributesIdentityUserFlowAttribute3->setDataType(new IdentityUserFlowAttributeDataType('string'));
+$attributesArray []= $attributesIdentityUserFlowAttribute3;
+$onAttributeCollection->setAttributes($attributesArray);
 
-	'onAttributeCollection' => $requestBody = new OnAttributeCollection();
-$	requestBody->set@odatatype('#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp');
+$onAttributeCollectionAttributeCollectionPage = new AuthenticationAttributeCollectionPage();
+$viewsAuthenticationAttributeCollectionPageViewConfiguration1 = new AuthenticationAttributeCollectionPageViewConfiguration();
+$inputsAuthenticationAttributeCollectionInputConfiguration1 = new AuthenticationAttributeCollectionInputConfiguration();
+$inputsAuthenticationAttributeCollectionInputConfiguration1->setAttribute('email');
+$inputsAuthenticationAttributeCollectionInputConfiguration1->setLabel('Email Address');
+$inputsAuthenticationAttributeCollectionInputConfiguration1->setInputType(new AuthenticationAttributeCollectionInputType('text'));
+$inputsAuthenticationAttributeCollectionInputConfiguration1->setHidden(true);
+$inputsAuthenticationAttributeCollectionInputConfiguration1->setEditable(false);
+$inputsAuthenticationAttributeCollectionInputConfiguration1->setWriteToDirectory(true);
+$inputsAuthenticationAttributeCollectionInputConfiguration1->setRequired(true);
+$inputsAuthenticationAttributeCollectionInputConfiguration1->setValidationRegEx('^[a-zA-Z0-9.!#$%&amp;&#8217;\'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$');
+$inputsArray []= $inputsAuthenticationAttributeCollectionInputConfiguration1;
+$inputsAuthenticationAttributeCollectionInputConfiguration2 = new AuthenticationAttributeCollectionInputConfiguration();
+$inputsAuthenticationAttributeCollectionInputConfiguration2->setAttribute('displayName');
+$inputsAuthenticationAttributeCollectionInputConfiguration2->setLabel('Display Name');
+$inputsAuthenticationAttributeCollectionInputConfiguration2->setInputType(new AuthenticationAttributeCollectionInputType('text'));
+$inputsAuthenticationAttributeCollectionInputConfiguration2->setHidden(false);
+$inputsAuthenticationAttributeCollectionInputConfiguration2->setEditable(true);
+$inputsAuthenticationAttributeCollectionInputConfiguration2->setWriteToDirectory(true);
+$inputsAuthenticationAttributeCollectionInputConfiguration2->setRequired(false);
+$inputsAuthenticationAttributeCollectionInputConfiguration2->setValidationRegEx('^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$');
+$inputsArray []= $inputsAuthenticationAttributeCollectionInputConfiguration2;
+$inputsAuthenticationAttributeCollectionInputConfiguration3 = new AuthenticationAttributeCollectionInputConfiguration();
+$inputsAuthenticationAttributeCollectionInputConfiguration3->setAttribute('extension_6ea3bc85aec24b1c92ff4a117afb6621_Favoritecolor');
+$inputsAuthenticationAttributeCollectionInputConfiguration3->setLabel('Favorite color');
+$inputsAuthenticationAttributeCollectionInputConfiguration3->setInputType(new AuthenticationAttributeCollectionInputType('text'));
+$inputsAuthenticationAttributeCollectionInputConfiguration3->setHidden(false);
+$inputsAuthenticationAttributeCollectionInputConfiguration3->setEditable(true);
+$inputsAuthenticationAttributeCollectionInputConfiguration3->setWriteToDirectory(true);
+$inputsAuthenticationAttributeCollectionInputConfiguration3->setRequired(false);
+$inputsAuthenticationAttributeCollectionInputConfiguration3->setValidationRegEx('^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$');
+$inputsArray []= $inputsAuthenticationAttributeCollectionInputConfiguration3;
+$viewsAuthenticationAttributeCollectionPageViewConfiguration1->setInputs($inputsArray);
 
-$attributes1 = new ();
-$	attributes1->setId('email');
+$viewsArray []= $viewsAuthenticationAttributeCollectionPageViewConfiguration1;
+$onAttributeCollectionAttributeCollectionPage->setViews($viewsArray);
 
-$	attributes1->setDisplayName('Email Address');
-
-$	attributes1->setDescription('Email address of the user');
-
-$	attributes1->setUserFlowAttributeType('builtIn');
-
-$	attributes1->setDataType('string');
-
-
-$attributesArray []= $attributes1;
-$attributes2 = new ();
-$	attributes2->setId('displayName');
-
-$	attributes2->setDisplayName('Display Name');
-
-$	attributes2->setDescription('Display Name of the User.');
-
-$	attributes2->setUserFlowAttributeType('builtIn');
-
-$	attributes2->setDataType('string');
-
-
-$attributesArray []= $attributes2;
-$attributes3 = new ();
-$	attributes3->setId('extension_6ea3bc85aec24b1c92ff4a117afb6621_Favoritecolor');
-
-$	attributes3->setDisplayName('Favorite color');
-
-$	attributes3->setDescription('what is your favorite color');
-
-$	attributes3->setUserFlowAttributeType('custom');
-
-$	attributes3->setDataType('string');
-
-
-$attributesArray []= $attributes3;
-$requestBody->setAttributes($attributesArray);
-
-
-$attributeCollectionPage = new AttributeCollectionPage();
-$views1 = new ();
-$inputs1 = new ();
-$inputs1->setAttribute('email');
-
-$inputs1->setLabel('Email Address');
-
-$inputs1->setInputType('Text');
-
-$inputs1->setHidden(true);
-
-$inputs1->setEditable(false);
-
-$inputs1->setWriteToDirectory(true);
-
-$inputs1->setRequired(true);
-
-$inputs1->setValidationRegEx('^[a-zA-Z0-9.!#$%&amp;&#8217;\'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$');
-
-
-$inputsArray []= $inputs1;
-$inputs2 = new ();
-$inputs2->setAttribute('displayName');
-
-$inputs2->setLabel('Display Name');
-
-$inputs2->setInputType('text');
-
-$inputs2->setHidden(false);
-
-$inputs2->setEditable(true);
-
-$inputs2->setWriteToDirectory(true);
-
-$inputs2->setRequired(false);
-
-$inputs2->setValidationRegEx('^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$');
-
-
-$inputsArray []= $inputs2;
-$inputs3 = new ();
-$inputs3->setAttribute('extension_6ea3bc85aec24b1c92ff4a117afb6621_Favoritecolor');
-
-$inputs3->setLabel('Favorite color');
-
-$inputs3->setInputType('text');
-
-$inputs3->setHidden(false);
-
-$inputs3->setEditable(true);
-
-$inputs3->setWriteToDirectory(true);
-
-$inputs3->setRequired(false);
-
-$inputs3->setValidationRegEx('^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$');
-
-
-$inputsArray []= $inputs3;
-$views1->setInputs($inputsArray);
-
-
-
-$viewsArray []= $views1;
-$attributeCollectionPage->setViews($viewsArray);
-
-
-
-$requestBody->setAttributeCollectionPage($attributeCollectionPage);
-
+$onAttributeCollection->setAttributeCollectionPage($onAttributeCollectionAttributeCollectionPage);
 $requestBody->setOnAttributeCollection($onAttributeCollection);
 
-];
-$requestBody->setAdditionalData($additionalData);
-
-
-
-
-$result = $graphServiceClient->identity()->authenticationEventsFlows()->post($requestBody);
-
+$result = $graphServiceClient->identity()->authenticationEventsFlows()->post($requestBody)->wait();
 
 ```
