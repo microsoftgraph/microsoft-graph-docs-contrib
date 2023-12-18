@@ -58,9 +58,12 @@ This optional parameter defines whether to set permissions for channel members t
 
 If archiving is started successfully, this method returns a `202 Accepted` response code. The response will also contain a `Location` header, which contains the location of the [teamsAsyncOperation](../resources/teamsasyncoperation.md) that was created to handle archiving of the channel in a team. Check the status of the archiving operation by making a GET request to this location.
 
-## Example
-### Request
-The following is an example of a request.
+## Examples
+
+### Example 1:
+The following is an example of a request for archiving a channel.
+
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -73,7 +76,7 @@ POST https://graph.microsoft.com/beta/teams/5crrrtrd5-e41c-4f18-ab8awfd-f36ca7dd
 
 ---
 
-### Response
+#### Response
 The following is an example of a response.
 <!-- {
   "blockType": "response",
@@ -86,8 +89,12 @@ Content-Type: text/plain
 Content-Length: 0
 ```
 
-### Request
-The following is an example of a request when **Team is archived**
+
+### Example 2:
+The following is an example of a request when **Team is archived**.
+
+#### Request
+
 
 # [HTTP](#tab/http)
 <!-- {
@@ -100,7 +107,7 @@ POST https://graph.microsoft.com/beta/teams/5crrrtrd5-e41c-4f18-ab8awfd-f36ca7dd
 
 ---
 
-### Response
+#### Response
 The following is an example of a response with 400.
 <!-- {
   "blockType": "response",
