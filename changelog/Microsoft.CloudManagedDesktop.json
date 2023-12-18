@@ -19,22 +19,22 @@
           "SubArea": "Cloud PC"
         },
         {
-            "ChangeList": [
-                {
-                    "Id": "d23da4c0-bd4c-4f0f-9b1e-76ee7be8d487",
-                    "ApiChange": "Method",
-                    "ChangedApiName": "getActionStatusReports",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [getActionStatusReports](https://learn.microsoft.com/en-us/graph/api/cloudPcReports-getactionstatusreports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcreports?view=graph-rest-beta) resource.",
-                    "Target": "cloudPcReports"
-                }
-            ],
-            "Id": "d23da4c0-bd4c-4f0f-9b1e-76ee7be8d487",
-            "Cloud": "Prod",
-            "Version": "beta",
-            "CreatedDateTime": "2023-08-28T06:58:17.7596296Z",
-            "WorkloadArea": "Device and app management",
-            "SubArea": "Cloud PC"
+          "ChangeList": [
+            {
+              "Id": "d23da4c0-bd4c-4f0f-9b1e-76ee7be8d487",
+              "ApiChange": "Method",
+              "ChangedApiName": "getActionStatusReports",
+              "ChangeType": "Addition",
+              "Description": "Added the [getActionStatusReports](https://learn.microsoft.com/en-us/graph/api/cloudPcReports-getactionstatusreports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcreports?view=graph-rest-beta) resource.",
+              "Target": "cloudPcReports"
+            }
+          ],
+          "Id": "d23da4c0-bd4c-4f0f-9b1e-76ee7be8d487",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2023-08-28T06:58:17.7596296Z",
+          "WorkloadArea": "Device and app management",
+          "SubArea": "Cloud PC"
         },
         {
             "ChangeList": [
