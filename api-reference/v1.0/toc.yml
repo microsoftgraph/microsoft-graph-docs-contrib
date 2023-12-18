@@ -4775,7 +4775,7 @@ items:
                         href: api/intune-tem-devicemanagement-get.md
                       - name: Update
                         href: api/intune-tem-devicemanagement-update.md
-          - name: Cloud PC (V1.0)
+          - name: Cloud PC
             items:
               - name: Overview
                 href: resources/cloudpc-api-overview.md
