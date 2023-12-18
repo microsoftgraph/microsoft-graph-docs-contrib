@@ -1,9 +1,9 @@
 ---
-title: "schedule resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+title: schedule resource type
+description: A collection of schedulingGroups, shifts, timeOffReasons and timesOff within a team.
+author: "shanemalone"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: microsoft-teams
 doc_type: resourcePageType
 ---
 
@@ -13,106 +13,83 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+A collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md) objects, [timeOffReason](timeoffreason.md) objects, and [timeOff](timeoff.md) objects within a [team](../resources/team.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List schedule objects](../api/team-list-schedule.md)|[schedule](../resources/schedule.md) collection|Get a list of the [schedule](../resources/schedule.md) objects and their properties.|
-|[Create schedule](../api/team-post-schedule.md)|[schedule](../resources/schedule.md)|Create a new [schedule](../resources/schedule.md) object.|
-|[Get schedule](../api/schedule-get.md)|[schedule](../resources/schedule.md)|Read the properties and relationships of a [schedule](../resources/schedule.md) object.|
-|[Update schedule](../api/schedule-update.md)|[schedule](../resources/schedule.md)|Update the properties of a [schedule](../resources/schedule.md) object.|
-|[Delete schedule](../api/team-delete-schedule.md)|None|Delete a [schedule](../resources/schedule.md) object.|
-|[share](../api/schedule-share.md)|None|**TODO: Add Description**|
-|[List dayNotes](../api/schedule-list-daynotes.md)|[dayNote](../resources/daynote.md) collection|Get the dayNote resources from the dayNotes navigation property.|
-|[Create dayNote](../api/schedule-post-daynotes.md)|[dayNote](../resources/daynote.md)|Create a new dayNote object.|
-|[List offerShiftRequests](../api/schedule-list-offershiftrequests.md)|[offerShiftRequest](../resources/offershiftrequest.md) collection|Get the offerShiftRequest resources from the offerShiftRequests navigation property.|
-|[Create offerShiftRequest](../api/schedule-post-offershiftrequests.md)|[offerShiftRequest](../resources/offershiftrequest.md)|Create a new offerShiftRequest object.|
-|[List openShiftChangeRequests](../api/schedule-list-openshiftchangerequests.md)|[openShiftChangeRequest](../resources/openshiftchangerequest.md) collection|Get the openShiftChangeRequest resources from the openShiftChangeRequests navigation property.|
-|[Create openShiftChangeRequest](../api/schedule-post-openshiftchangerequests.md)|[openShiftChangeRequest](../resources/openshiftchangerequest.md)|Create a new openShiftChangeRequest object.|
-|[List openShifts](../api/schedule-list-openshifts.md)|[openShift](../resources/openshift.md) collection|Get the openShift resources from the openShifts navigation property.|
-|[Create openShift](../api/schedule-post-openshifts.md)|[openShift](../resources/openshift.md)|Create a new openShift object.|
-|[List schedulingGroups](../api/schedule-list-schedulinggroups.md)|[schedulingGroup](../resources/schedulinggroup.md) collection|Get the schedulingGroup resources from the schedulingGroups navigation property.|
-|[Create schedulingGroup](../api/schedule-post-schedulinggroups.md)|[schedulingGroup](../resources/schedulinggroup.md)|Create a new schedulingGroup object.|
-|[List shifts](../api/schedule-list-shifts.md)|[shift](../resources/shift.md) collection|Get the shift resources from the shifts navigation property.|
-|[Create shift](../api/schedule-post-shifts.md)|[shift](../resources/shift.md)|Create a new shift object.|
-|[List shiftsRoleDefinitions](../api/schedule-list-shiftsroledefinitions.md)|[shiftsRoleDefinition](../resources/shiftsroledefinition.md) collection|Get the shiftsRoleDefinition resources from the shiftsRoleDefinitions navigation property.|
-|[Create shiftsRoleDefinition](../api/schedule-post-shiftsroledefinitions.md)|[shiftsRoleDefinition](../resources/shiftsroledefinition.md)|Create a new shiftsRoleDefinition object.|
-|[List swapShiftsChangeRequests](../api/schedule-list-swapshiftschangerequests.md)|[swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) collection|Get the swapShiftsChangeRequest resources from the swapShiftsChangeRequests navigation property.|
-|[Create swapShiftsChangeRequest](../api/schedule-post-swapshiftschangerequests.md)|[swapShiftsChangeRequest](../resources/swapshiftschangerequest.md)|Create a new swapShiftsChangeRequest object.|
-|[List timeCards](../api/schedule-list-timecards.md)|[timeCard](../resources/timecard.md) collection|Get the timeCard resources from the timeCards navigation property.|
-|[Create timeCard](../api/schedule-post-timecards.md)|[timeCard](../resources/timecard.md)|Create a new timeCard object.|
-|[List timeOffReasons](../api/schedule-list-timeoffreasons.md)|[timeOffReason](../resources/timeoffreason.md) collection|Get the timeOffReason resources from the timeOffReasons navigation property.|
-|[Create timeOffReason](../api/schedule-post-timeoffreasons.md)|[timeOffReason](../resources/timeoffreason.md)|Create a new timeOffReason object.|
-|[List timeOffRequests](../api/schedule-list-timeoffrequests.md)|[timeOffRequest](../resources/timeoffrequest.md) collection|Get the timeOffRequest resources from the timeOffRequests navigation property.|
-|[Create timeOffRequest](../api/schedule-post-timeoffrequests.md)|[timeOffRequest](../resources/timeoffrequest.md)|Create a new timeOffRequest object.|
-|[List timesOff](../api/schedule-list-timesoff.md)|[timeOff](../resources/timeoff.md) collection|Get the timeOff resources from the timesOff navigation property.|
-|[Create timeOff](../api/schedule-post-timesoff.md)|[timeOff](../resources/timeoff.md)|Create a new timeOff object.|
+
+| Method                                                    | Return Type             | Description                                        |
+| :-------------------------------------------------------- | :---------------------- | :------------------------------------------------- |
+| [Create or replace schedule](../api/team-put-schedule.md) | [schedule](schedule.md) | Create or replace a schedule.                      |
+| [Get schedule](../api/schedule-get.md)                    | [schedule](schedule.md) | Get a schedule.                                    |
+| [Share](../api/schedule-share.md)                         | None                    | Share a schedule time range with schedule members. |
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|activitiesIncludedWhenCopyingShiftsEnabled|Boolean|**TODO: Add Description**|
-|enabled|Boolean|**TODO: Add Description**|
-|id|String|**TODO: Add Description**|
-|offerShiftRequestsEnabled|Boolean|**TODO: Add Description**|
-|openShiftsEnabled|Boolean|**TODO: Add Description**|
-|provisionStatus|operationStatus|**TODO: Add Description**.The possible values are: `NotStarted`, `Running`, `Completed`, `Failed`.|
-|provisionStatusCode|String|**TODO: Add Description**|
-|startDayOfWeek|dayOfWeek|**TODO: Add Description**.The possible values are: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
-|swapShiftsRequestsEnabled|Boolean|**TODO: Add Description**|
-|timeClockEnabled|Boolean|**TODO: Add Description**|
-|timeClockSettings|[timeClockSettings](../resources/timeclocksettings.md)|**TODO: Add Description**|
-|timeOffRequestsEnabled|Boolean|**TODO: Add Description**|
-|timeZone|String|**TODO: Add Description**|
-|workforceIntegrationIds|String collection|**TODO: Add Description**|
+
+| Property                  | Type               | Description                                                                                                      |
+| ------------------------- | ------------------ | ---------------------------------------------------------------------------------------------------------------- |
+| activitiesIncludedWhenCopyingShiftsEnabled | Boolean | Indicates whether copied shifts should include the activities.                                             |
+| enabled                   | Boolean            | Indicates whether the schedule is enabled for the team. Required.                                                |
+| id                        | string             | ID of the schedule.                                                                                              |
+| offerShiftRequestsEnabled | Boolean            | Indicates whether offer shift requests are enabled for the schedule.                                             |
+| openShiftsEnabled         | Boolean            | Indicates whether open shifts are enabled for the schedule.                                                      |
+| provisionStatus           | operationStatus    | The status of the schedule provisioning. The possible values are `notStarted`, `running`, `completed`, `failed`. |
+| provisionStatusCode       | string             | Additional information about why schedule provisioning failed.                                                   |
+| startDayOfWeek            | string             | Indicates the start day of the week.                                                                             |
+| swapShiftsRequestsEnabled | Boolean            | Indicates whether swap shifts requests are enabled for the schedule.                                             |
+| timeClockEnabled          | Boolean            | Indicates whether time clock is enabled for the schedule.                                                        |
+| timeClockSettings         | timeClockSettings  | The time clock location settings for this schedule.                                                              |
+| timeOffRequestsEnabled    | Boolean            | Indicates whether time off requests are enabled for the schedule.                                                |
+| timeZone                  | string             | Indicates the time zone of the schedule team using tz database format. Required.                                 |
+| workforceIntegrationIds   | Collection(string) | The Ids for the workforce integrations associated with this schedule.                                            |
 
 ## Relationships
-|Relationship|Type|Description|
-|:---|:---|:---|
-|dayNotes|[dayNote](../resources/daynote.md) collection|**TODO: Add Description**|
-|offerShiftRequests|[offerShiftRequest](../resources/offershiftrequest.md) collection|**TODO: Add Description**|
-|openShiftChangeRequests|[openShiftChangeRequest](../resources/openshiftchangerequest.md) collection|**TODO: Add Description**|
-|openShifts|[openShift](../resources/openshift.md) collection|**TODO: Add Description**|
-|schedulingGroups|[schedulingGroup](../resources/schedulinggroup.md) collection|**TODO: Add Description**|
-|shifts|[shift](../resources/shift.md) collection|**TODO: Add Description**|
-|shiftsRoleDefinitions|[shiftsRoleDefinition](../resources/shiftsroledefinition.md) collection|**TODO: Add Description**|
-|swapShiftsChangeRequests|[swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) collection|**TODO: Add Description**|
-|timeCards|[timeCard](../resources/timecard.md) collection|**TODO: Add Description**|
-|timeOffReasons|[timeOffReason](../resources/timeoffreason.md) collection|**TODO: Add Description**|
-|timeOffRequests|[timeOffRequest](../resources/timeoffrequest.md) collection|**TODO: Add Description**|
-|timesOff|[timeOff](../resources/timeoff.md) collection|**TODO: Add Description**|
+
+|Name                   |Type           |Description                                                                                                                                      |
+|-----------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+|dayNotes|[dayNote](daynote.md) collection|The day notes in the schedule.|
+| offerShiftRequests   |[offerShiftRequest](offershiftrequest.md) collection  | The offer requests for shifts in the schedule. |
+| openShiftChangeRequests   |[openShiftChangeRequest](openshiftchangerequest.md) collection  | The open shift requests in the schedule. |
+| openShifts   |[openShift](openshift.md) collection | The set of open shifts in a scheduling group in the schedule. |
+| schedulingGroups   |[schedulingGroup](schedulinggroup.md) collection  | The logical grouping of users in the schedule (usually by role). |
+| shifts   | [shift](shift.md) collection  | The shifts in the schedule. |
+| shiftsRoleDefinitions|[shiftsRoleDefinition](../resources/shiftsroledefinition.md) collection|The definitions of the roles in the schedule. |
+| swapShiftsChangeRequests   |[swapShiftsChangeRequest](swapshiftschangerequest.md) collection  | The swap requests for shifts in the schedule. |
+| timeCards   |[timeCard](timecard.md) collection  | The time cards in the schedule.       |
+| timesOff   |[timeOff](timeoff.md) collection  | The instances of times off in the schedule. |
+| timeOffReasons   |[timeOffReason](timeoffreason.md) collection  | The set of reasons for a time off in the schedule. |
+| timeOffRequests   |[timeOffRequest](timeoffrequest.md) collection  | The time off requests in the schedule. |
+| workforceIntegrations   |[workforceIntegration](workforceintegration.md) collection  | An instance of a workforce integration per team with outbound data flow on synchronous change notifications (for supported entities). |
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.schedule",
-  "openType": false
-}
--->
-``` json
+  "@odata.type": "microsoft.graph.schedule"
+}-->
+
+```json
 {
-  "@odata.type": "#microsoft.graph.schedule",
-  "id": "String (identifier)",
-  "enabled": "Boolean",
-  "timeZone": "String",
-  "provisionStatus": "String",
-  "provisionStatusCode": "String",
-  "workforceIntegrationIds": [
-    "String"
-  ],
-  "timeClockEnabled": "Boolean",
-  "timeClockSettings": {
-    "@odata.type": "microsoft.graph.timeClockSettings"
-  },
-  "openShiftsEnabled": "Boolean",
-  "swapShiftsRequestsEnabled": "Boolean",
-  "offerShiftRequestsEnabled": "Boolean",
-  "timeOffRequestsEnabled": "Boolean",
-  "startDayOfWeek": "String",
-  "activitiesIncludedWhenCopyingShiftsEnabled": "Boolean"
+  "id": "833fc4df-c88b-4398-992f-d8afcfe41df2",
+  "enabled": true,
+  "timeZone": "America/Chicago",
+  "provisionStatus": "Completed",
+  "provisionStatusCode": null
 }
 ```
 
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+
+<!--
+{
+  "type": "#page.annotation",
+  "description": "schedule resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": []
+}
+-->
