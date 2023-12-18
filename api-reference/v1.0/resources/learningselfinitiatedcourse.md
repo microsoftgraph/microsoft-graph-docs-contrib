@@ -27,7 +27,7 @@ Inherits from [learningCourseActivity](../resources/learningcourseactivity.md).
 |learnerUserId|String|The user ID of the learner who initiated the course. Required. Inherited from [learningCourseActivity](../resources/learningcourseactivity.md).|
 |learningProviderId|String|The registration ID of the provider. Required. Inherited from [learningCourseActivity](../resources/learningcourseactivity.md).|
 |startedDateTime|DateTimeOffset|The date and time on which the self-initiated course was started by the learner. Optional.|
-|status|courseStatus|The status of the course activity. Possible values are `notStarted`, `inProgress`, `completed`. Optional. Inherited from [learningCourseActivity](../resources/learningcourseactivity.md).|
+|status|courseStatus|The status of the course activity. Possible values are `inProgress`, `completed`. Optional. Inherited from [learningCourseActivity](../resources/learningcourseactivity.md).|
 
 ## Relationships
 None.

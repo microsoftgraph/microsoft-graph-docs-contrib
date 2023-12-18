@@ -73,6 +73,7 @@ In the request body, use @odata.type to specify the type of [learningCourseActiv
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [learningCourseActivity](../resources/learningcourseactivity.md) object of type [learningAssignment](../resources/learningassignment.md) or [learningSelfInitiated](../resources/learningselfinitiatedcourse.md) in the response body.
+For more information about errors, see [Error codes and messages](../resources/learningcourseactivity-error-codes.md).
 
 ## Examples
 
@@ -274,17 +275,3 @@ Content-Type: application/json
   "status": "inProgress"
 }
 ```
-
-### Error Conditions
-
-|Scenario|HTTP Code|Code|Message|Details|
-|:---|:---|:---|:---|:---|
-|Forbidden|403|Forbidden|You don't have a service plan adequate for this request.|
-|Bad Request|400|Bad Request|This provider isn't enabled for the given tenant.|
-|Bad Request|400|Bad Request|There was an issue with your request. Make sure the registrationId you entered is valid or registered for your tenant|
-|Internal Server Error|500|Internal Server Error|Internal Server Error|
-|Request throttled|429|Too Many Requests|{"code": "TooManyRequests","message": "Retry after {noOfMinutes} minutes"}|
-|Service Unavailable|503|Service Unavailable|{"code": "ServiceUnavailable","message": "Retry after {noOfMinutes} minutes"}|
-|Multiple Field validations fail|400|BadRequest|BadRequest|{"code": "badRequest","message": "Input field {fieldName}shouldn't be empty"}, {"code": "badRequest","message": "Input Field {fieldName} is required"}, {"code": "badRequest","message": "Input field {fieldName}length exceeded than {expectedLength}"}|
-|Forbidden|403|The provider isn't valid to create course activity for the given learning content|When the registrationId/learningProviderId doesnot match with the provider with which the LearningContent is created|
-|Forbidden|403|User License isn't valid to perform the operation|When the user for which Assignment is being created doesn't have a premium license|

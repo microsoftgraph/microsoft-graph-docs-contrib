@@ -76,6 +76,7 @@ Don't supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a [learningCourseActivity](../resources/learningcourseactivity.md) object in the response body.
+For more information about errors returned, see [Error codes and messages](../resources/learningcourseactivity-error-codes.md).
 
 ## Examples
 
@@ -298,18 +299,3 @@ Content-Type: application/json
   },
   "status": "notStarted"
 }
-```
-
-### Error Conditions
-
-|Scenario|HTTP Code|Code|Message|Details|
-|:---|:---|:---|:---|:---|
-|Method not supported for entity|405|MethodNotAllowed|This method isn't supported for this entity type.  Reference the Microsoft Graph documentation for the methods applicable to this entity|
-|User doesn't have appropriate permission scope|403|Forbidden|Your account doesn't access to this report or data. Please contact your global administrator to request access.|
-|Forbidden|403|Forbidden|You don't have a service plan adequate for this request.|
-|Bad Request|400|Bad Request|This provider isn't enabled for the given tenant.|
-|Bad Request|400|Bad Request|There was an issue with your request. Make sure the registrationId you entered is valid or registered for your tenant|
-|Bad Request|404|Not Found|The requested assignment {id} doesn’t exist.|
-|Internal Server Error|500|Internal Server Error|Internal Server Error|
-|Request throttled|429|Too Many Requests|{"code": "TooManyRequests","message": "Retry after {noOfMinutes} minutes"}|
-|Service Unavailable|503|Service Unavailable|{"code": "ServiceUnavailable","message": "Retry after {noOfMinutes} minutes"}|

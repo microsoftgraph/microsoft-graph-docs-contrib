@@ -48,6 +48,7 @@ Don't supply a request body for this method.
 ## Response
 
 If successful, this method returns a `204 No Content` response code.
+For more information about errors, see [Error codes and messages](../resources/learningcourseactivity-error-codes.md).
 
 ## Examples
 
