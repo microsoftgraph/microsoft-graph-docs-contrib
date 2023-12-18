@@ -52,7 +52,7 @@ A collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md)
 | openShifts   |[openShift](openshift.md) collection | The set of open shifts in a scheduling group in the schedule. |
 | schedulingGroups   |[schedulingGroup](schedulinggroup.md) collection  | The logical grouping of users in the schedule (usually by role). |
 | shifts   | [shift](shift.md) collection  | The shifts in the schedule. |
-| shiftsRoleDefinitions|[shiftsRoleDefinition](../resources/shiftsroledefinition.md) collection|The definitions of the roles in the schedule. |
+| shiftsRoleDefinitions|[shiftsRoleDefinition](shiftsroledefinition.md) collection|The definitions of the roles in the schedule. |
 | swapShiftsChangeRequests   |[swapShiftsChangeRequest](swapshiftschangerequest.md) collection  | The swap requests for shifts in the schedule. |
 | timeCards   |[timeCard](timecard.md) collection  | The time cards in the schedule.       |
 | timesOff   |[timeOff](timeoff.md) collection  | The instances of times off in the schedule. |
