@@ -9097,7 +9097,7 @@ items:
                   - name: Delete
                     href: api/learningcourseactivity-delete.md
                   - name: Error Codes
-                    href: api/learningcourseactivity-error-codes.md
+                    href: resources/learningcourseactivity-error-codes.md
           - name: Messaging
             items:
               - name: Activity feed
