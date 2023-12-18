@@ -114,9 +114,9 @@ Content-type: application/json
       "id": "5182",
       "createdDateTime": "2020-02-04T00:00:00.0000000Z",
       "createdBy": {
-        "id": "",
-        "displayName": "",
-        "userPrincipalName": ""
+        "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd",
+        "displayName": "John Smith",
+        "userPrincipalName": "john.smith@contoso.com"
       },
       "status": {
         "processingState": "completed",
