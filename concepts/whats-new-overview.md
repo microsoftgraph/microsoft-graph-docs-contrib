@@ -14,6 +14,12 @@ In addition, find out about new documentation and learning resources for release
 > [!IMPORTANT]
 > Features, including APIs and tools, in _preview_ status may change without notice, and some may never be promoted to generally available (GA) status. Do not use preview features in production apps.
 
+## December 2023: New and generally available
+
+### Device and app management | Cloud PC
+
+The [virtualEndpoint](/graph/api/resources/virtualendpoint) resource is generally available, laying the foundation for future Cloud PC updates to the `v1.0` path.
+
 ## December 2023: New in preview only
 
 ### Employee experience | Employee engagement
@@ -27,7 +33,7 @@ Create and get a Viva Engage community that is a central place for conversations
 
 ### Files
 [Manage the lifecycle](/purview/auto-apply-retention-labels-scenario) of a [drive item](/graph/api/resources/driveitem) (file or folder) by using retention labels:
-- [Get](/graph/api/driveitem-getretentionlabel) or [set](/graph/api/driveitem-setretentionlabel) a [retention label](/graph/api/resources/itemRetentionLabel).
+- [Get](/graph/api/driveitem-getretentionlabel) or [set](/graph/api/driveitem-setretentionlabel) a [retention label](/graph/api/resources/itemretentionlabel).
 - [Lock or unlock](/graph/api/driveitem-lockorunlockrecord) a file for [record versioning](/purview/record-versioning).
 - [Remove](/graph/api/driveitem-removeretentionlabel) a retention label.
 
