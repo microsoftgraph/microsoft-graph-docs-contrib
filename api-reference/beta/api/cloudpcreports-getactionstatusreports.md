@@ -1,6 +1,6 @@
 ---
 title: "cloudPcReports: getActionStatusReports"
-description: "Get the remote action status reports, including data such as the cloud PC ID, cloud PC device display name, initiating user's principal name, device owner's user principal name, action taken, and action state."
+description: "Get the remote action status reports, including data such as the Cloud PC ID, Cloud PC device display name, initiating user's principal name, device owner's user principal name, action taken, and action state."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the remote action status reports, including data such as the cloud PC ID, cloud PC device display name, initiating user's principal name, device owner's user principal name, action taken, and action state.
+Get the remote action status reports, including data such as the Cloud PC ID, Cloud PC device display name, initiating user's principal name, device owner's user principal name, action taken, and action state.
 
 ## Permissions
 
