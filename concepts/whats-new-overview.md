@@ -18,7 +18,7 @@ In addition, find out about new documentation and learning resources for release
 
 ### Device and app management | Cloud PC
 
-[Get the remote action status reports](/graph/api/cloudpcreports-getactionstatusreports?view=graph-rest-beta&preserve-view=true), including data such as the cloud PC ID, cloud PC device display name, initiating user's principal name, device owner's user principal name, action taken, and action state.
+[Get the remote action status reports](/graph/api/cloudpcreports-getactionstatusreports?view=graph-rest-beta&preserve-view=true), including data such as the Cloud PC ID, Cloud PC device display name, action taken, and action state.
 
 ### Employee experience | Employee engagement
 Create and get a Viva Engage community that is a central place for conversations, files, events, and updates for people sharing a common interest or goal. Use the Viva Engage API for the following scenarios:
