@@ -2763,7 +2763,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "archive",
           "ChangeType": "Addition",
-          "Description": "Added the [archive](https://docs.microsoft.com/en-us/graph/api/channel-archive?view=graph-rest-beta) method to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Description": "Added the [archive](https://learn.microsoft.com/en-us/graph/api/channel-archive?view=graph-rest-beta) method to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
           "Target": "channel"
         },
         {
@@ -2771,7 +2771,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "unarchive",
           "ChangeType": "Addition",
-          "Description": "Added the [unarchive](https://docs.microsoft.com/en-us/graph/api/channel-unarchive?view=graph-rest-beta) method to the [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Description": "Added the [unarchive](https://learn.microsoft.com/en-us/graph/api/channel-unarchive?view=graph-rest-beta) method to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
           "Target": "channel"
         },
         {
