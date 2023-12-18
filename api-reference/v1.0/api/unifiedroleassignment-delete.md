@@ -43,7 +43,6 @@ One of the following permissions is required to call this API. To learn more, in
 Remove a role assignment from the directory provider:
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
 DELETE /roleManagement/directory/roleAssignments/{id}
 ```
@@ -51,7 +50,6 @@ DELETE /roleManagement/directory/roleAssignments/{id}
 Remove a role assignment from the entitlement management provider:
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
 DELETE /roleManagement/entitlementManagement/roleAssignments/{id}
 ```

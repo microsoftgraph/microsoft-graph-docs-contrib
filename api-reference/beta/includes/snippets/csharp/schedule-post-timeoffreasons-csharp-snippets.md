@@ -12,6 +12,7 @@ using Microsoft.Graph.Beta.Models;
 var requestBody = new TimeOffReason
 {
 	DisplayName = "Vacation",
+	Code = "VacationCode",
 	IconType = TimeOffReasonIconType.Plane,
 	IsActive = true,
 };
