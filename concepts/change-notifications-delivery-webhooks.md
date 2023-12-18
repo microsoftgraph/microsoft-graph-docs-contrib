@@ -32,7 +32,7 @@ Once the Microsoft Graph change notifications service receives a 2xx class code 
  - If your service may take more than 3 seconds to process the notification, then you may choose to persist the notification in a queue on your endpoint and return `202 - Accepted` status code to Microsoft Graph.
  - If the notification isn't processed or queued, return a 5xx class code to indicate an error so that Microsoft Graph can retry the notification.
 
-Notifications that fail to deliver will be retried at exponential backoff intervals.  Missed notifications may take up to 4 hours to all re-send once your endpoint comes online.
+Notifications that fail to deliver will be retried at exponential backoff intervals. Missed notifications may take up to 4 hours to resend once your endpoint comes online.
 
 ### Throttling
 For security and performance reasons, Microsoft Graph throttles notifications sent to endpoints that become slow or unresponsive. This may include dropping notifications in a way that they can't be recovered.
