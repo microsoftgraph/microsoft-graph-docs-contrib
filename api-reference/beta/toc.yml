@@ -18545,27 +18545,6 @@ items:
                     href: api/teamworkdeviceoperation-list.md
                   - name: Get
                     href: api/teamworkdeviceoperation-get.md
-          - name: Settings (preview)
-            items:
-              - name: License details
-                href: resources/licensedetails.md
-                items:
-                - name: Get
-                  href: api/licenseDetails-getteamslicensingdetails.md
-              - name: Organization settings
-                items:
-                - name: Teamwork
-                  href: resources/teamwork.md
-                  items:
-                  - name: Get
-                    href: api/teamwork-get.md
-              - name: User settings
-                items:
-                - name: User teamwork
-                  href: resources/userteamwork.md
-                  items:
-                    - name: Get
-                      href: api/userteamwork-get.md
           - name: Employee learning
             displayName: Viva Learning
             items:
@@ -18966,6 +18945,13 @@ items:
                     href: api/openshiftchangerequest-approve.md
                   - name: Decline
                     href: api/openshiftchangerequest-decline.md
+              - name: Role definitions and permissions (preview)
+                href: resources/shiftsroledefinition.md
+                items:
+                  - name: Create or replace
+                    href: api/schedule-post-shiftsroledefinitions.md
+                  - name: Get
+                    href: api/shiftsroledefinition-get.md
               - name: Schedule
                 href: resources/schedule.md
                 items:
