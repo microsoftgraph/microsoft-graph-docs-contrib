@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the remote action status reports. This report contains data such as CloudPcId, CloudPCDeviceDisplayName, InitiatedByUserPrincipalName,DeviceOwnerUserPrincipalName, Action, ActionState, and so on.
+Get the remote action status reports. This report includes data such as the cloud PC ID, cloud PC device display name, initiating user's principal name, device owner's user principal name, action taken, action state, and so on.
 
 ## Permissions
 
