@@ -32,6 +32,7 @@ int skip = 0;
 graphClient.deviceManagement().virtualEndpoint().reports()
 	.getInaccessibleCloudPcReports(CloudPcReportsGetInaccessibleCloudPcReportsParameterSet
 		.newBuilder()
+		.withReportName(null)
 		.withFilter(filter)
 		.withSelect(selectList)
 		.withSearch(null)
