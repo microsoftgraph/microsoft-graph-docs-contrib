@@ -100,7 +100,8 @@ GET https://graph.microsoft.com/v1.0/print/shares/{printerShareId}/jobs
 ---
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -125,12 +126,10 @@ Content-Type: application/json
       "status": {
         "state": "completed",
         "description": "The print job has completed successfully and no further processing will take place.",
-        "details": [          
-        ],
+        "details": [],
         "isAcquiredByPrinter": true
       },
-      "configuration": {        
-      },
+      "configuration": {},
       "redirectedTo": null,
       "redirectedFrom": null,
       "isFetchable": false
