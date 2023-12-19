@@ -14,7 +14,7 @@ ms.date: 12/19/2023
 
 # Configure Azure AD Graph permissions for an app registration
 
-Azure Active Directory (Azure AD) Graph [is deprecated and is on its retirement path](https://techcommunity.microsoft.com/t5/microsoft-entra-blog/important-azure-ad-graph-retirement-and-powershell-module/ba-p/3848270). We recommend that you follow the [App migration planning checklist](migrate-azure-ad-graph-planning-checklist.md) to help you migrate your apps to [Microsoft Graph](/graph/overview).
+Azure Active Directory (Azure AD) Graph [is deprecated and is in its retirement path](https://techcommunity.microsoft.com/t5/microsoft-entra-blog/important-azure-ad-graph-retirement-and-powershell-module/ba-p/3848270). We recommend that you follow the [App migration planning checklist](migrate-azure-ad-graph-planning-checklist.md) to help you migrate your apps to [Microsoft Graph](/graph/overview).
 
 Your app might still temporarily require Azure AD Graph permissions to access resources. You can follow one of four methods described in this article to configure Azure AD Graph permissions for your app registration:
 
