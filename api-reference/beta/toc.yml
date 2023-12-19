@@ -13559,7 +13559,7 @@ items:
                     href: api/onattributecollectionstartcustomextension-update.md
                   - name: Get on attribute collection submit
                     href: api/onattributecollectionsubmitcustomextension-get.md
-                  - name: Update n attribute collection submit
+                  - name: Update on attribute collection submit
                     href: api/onattributecollectionsubmitcustomextension-update.md
               - name: Data policy operation
                 href: resources/datapolicyoperation.md
