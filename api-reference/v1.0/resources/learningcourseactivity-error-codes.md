@@ -64,7 +64,7 @@ This article describes error codes that are returned by the LearningCourseActivi
 |Forbidden|403|Forbidden|You don't have a service plan adequate for this request.|
 |Bad request|400|Bad request|This provider isn't enabled for the given tenant.|
 |Bad Request|400|Bad Request|There was an issue with your request. Make sure the registrationId you entered is valid or registered for your tenant|
-|Bad Request|404|Not Found|The requested assignment {id} doesn’t exist.|
+|Bad request|404|Not found|The assignment ID requested doesn’t exist.|
 |Internal Server Error|500|Internal Server Error|Internal Server Error|
 |Request throttled|429|Too Many Requests|{"code": "tooManyRequests","message": "Retry after {noOfMinutes} minutes"}|
 |Service unavailable|503|Service unavailable|{"code": "serviceUnavailable","message": "Retry after {noOfMinutes} minutes"}.|
