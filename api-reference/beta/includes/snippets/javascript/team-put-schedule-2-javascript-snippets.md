@@ -19,6 +19,8 @@ const schedule = {
    swapShiftsRequestsEnabled: true,
    offerShiftRequestsEnabled: true,
    timeOffRequestsEnabled: true,
+   startDayOfWeek: 'Tuesday',
+   activitiesIncludedWhenCopyingShiftsEnabled: true,
    timeClockEnabled: true,
    timeClockSettings: {
       approvedLocation: {

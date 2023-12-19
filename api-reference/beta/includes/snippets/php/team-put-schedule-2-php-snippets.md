@@ -18,6 +18,8 @@ $requestBody->setOpenShiftsEnabled(true);
 $requestBody->setSwapShiftsRequestsEnabled(true);
 $requestBody->setOfferShiftRequestsEnabled(true);
 $requestBody->setTimeOffRequestsEnabled(true);
+$requestBody->setStartDayOfWeek(new DayOfWeek('tuesday'));
+$requestBody->setActivitiesIncludedWhenCopyingShiftsEnabled(true);
 $requestBody->setTimeClockEnabled(true);
 $timeClockSettings = new TimeClockSettings();
 $timeClockSettingsApprovedLocation = new GeoCoordinates();

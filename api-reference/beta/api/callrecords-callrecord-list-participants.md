@@ -15,6 +15,8 @@ Namespace: microsoft.graph.callRecords
 
 Get the list of [participants](../resources/callrecords-participant.md) associated with a [callRecord](../resources/callrecords-callrecord.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -98,6 +100,10 @@ GET https://graph.microsoft.com/beta/communications/callRecords/614e3ff0-4728-43
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-callrecord-participants-v2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-callrecord-participants-v2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

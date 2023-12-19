@@ -1,4 +1,4 @@
-﻿{
+{
   "changelog": [
     {
       "ChangeList": [
@@ -127,7 +127,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "validateAuthenticationConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [validateAuthenticationConfiguration](https://learn.microsoft.com/en-us/graph/api/validateAuthenticationConfiguration?view=graph-rest-beta) method to the [customAuthenticationExtensions](https://learn.microsoft.com/en-us/graph/api/resources/identityContainer?view=graph-rest-beta) resource.",
+          "Description": "Added the [validateAuthenticationConfiguration](https://learn.microsoft.com/en-us/graph/api/customauthenticationextension-validateauthenticationconfiguration?view=graph-rest-beta) method to the [customAuthenticationExtensions](https://learn.microsoft.com/en-us/graph/api/resources/identityContainer?view=graph-rest-beta) resource.",
           "Target": "customAuthenticationExtensions"
         }
       ],

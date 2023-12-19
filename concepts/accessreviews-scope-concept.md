@@ -327,6 +327,39 @@ To review B2B direct connect users and teams within shared channels, you must sp
 }
 ```
 
+
+### Example 13: Review all users assigned to an application
+
+In this example, the access review scope is all users who are assigned to any of the roles of the application.  The principals whose access is to be reviewed are specified by elements of **principalScope** in the [principalResourceMembershipsScope](/graph/api/resources/principalresourcemembershipsscope). This example has two elements, for the users directly assigned to the [application roles](/graph/api/resources/approleassignment), and the users who are members of groups assigned to the application roles.  The application is specified by the ID of the application's [service principal](/graph/api/resources/serviceprincipal).
+
+```http
+"scope": {
+    "@odata.type": "#microsoft.graph.principalResourceMembershipsScope",
+    "principalScopes": [
+        {
+            "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+            "query": "/v1.0/users",
+            "queryType": "MicrosoftGraph",
+            "queryRoot": null
+        },
+        {
+            "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+            "query": "./members/microsoft.graph.user",
+            "queryType": "MicrosoftGraph",
+            "queryRoot": "/v1.0/groups"
+        }
+    ],
+    "resourceScopes": [
+        {
+            "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+            "query": "/v1.0/servicePrincipals/{servicePrincipalId}",
+            "queryType": "MicrosoftGraph",
+            "queryRoot": null
+        }
+    ]
+}
+```
+
 ## Next steps
 
 + [Assign reviewers to your access review definition](/graph/accessreviews-reviewers-concept)

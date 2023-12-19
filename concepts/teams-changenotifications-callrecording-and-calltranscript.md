@@ -125,9 +125,6 @@ Content-Type: application/json
 
 To get change notifications for any recording available for any online meeting in a tenant, subscribe to `communications/onlineMeetings/getAllRecordings`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting) but not channel meetings.
 
-> [!NOTE]
-> Change notifications for meeting recordings are available on the `/beta` endpoint only.
-
 ### Permissions
 
 One of the following permissions is required to subscribe to `communications/onlineMeetings/getAllRecordings`. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -143,7 +140,7 @@ One of the following permissions is required to subscribe to `communications/onl
 The following example shows how to subscribe to recordings available at the tenant level.
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -162,9 +159,6 @@ Content-Type: application/json
 
 To get change notifications for any recording available for a particular online meeting, subscribe to `communications/onlineMeetings/{onlineMeetingId}/recordings`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting) but not channel meetings.
 
-> [!NOTE]
-> Change notifications for meeting recordings are available only on the `/beta` endpoint.
-
 ### Permissions
 
 One of the following permissions is required to subscribe to `communications/onlineMeetings/{onlineMeetingId}/recordings`. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -180,7 +174,7 @@ One of the following permissions is required to subscribe to `communications/onl
 The following example shows how to subscribe to recordings available for online meetings.
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -322,11 +316,11 @@ For notifications with resource data, the payload looks like the following. This
 ```
 
 The decrypted notification payload looks like the following. The payload conforms to the [recording](/graph/api/resources/callrecording) schema. The payload is similar to the ones returned by GET operations.
+
 ```json
 {
   "id": "VjIjIzE5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgyNDMyYjU3Yi0wYWJkLTQzZGItYWE3Yi0xNmVhZGQxMTVkMzQwNDAwMDAwMDgyMDBFMDAwNzRDNUI3MTAxQTgyRTAwODAwMDAwMDAwMDZhODllMWZkYmJlZDkwMTAwMDAwMDAwMDAwMDAwMDAxMDAwMDAwMDA5NzUzYzg5ZWI3MmJkNDJiYWZjMTVkZDA4NWNmNWJlIyNjZmNjNTBjMy0zODllLTQyOTUtOWRiNy1mMjkwYWY2NDJlNzI=",
   "meetingId": "MSo5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgqMCoqMTk6bWVldGluZ19NMk0zTlRReFkySXRaamsyWmkwME5UTTRMV0l4TTJFdE1EQmtPV1E1TW1Rek0yRXhAdGhyZWFkLnYy",
-  "meetingOrganizerId": "976f4b31-fd01-4e0b-9178-29cc40c14438",
   "createdDateTime": "2023-07-25T09:35:02.85022Z",
   "recordingContentUrl": "communications/onlineMeetings/MSo5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgqMCoqMTk6bWVldGluZ19NMk0zTlRReFkySXRaamsyWmkwME5UTTRMV0l4TTJFdE1EQmtPV1E1TW1Rek0yRXhAdGhyZWFkLnYy/recordings/VjIjIzE5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgyNDMyYjU3Yi0wYWJkLTQzZGItYWE3Yi0xNmVhZGQxMTVkMzQwNDAwMDAwMDgyMDBFMDAwNzRDNUI3MTAxQTgyRTAwODAwMDAwMDAwMDZhODllMWZkYmJlZDkwMTAwMDAwMDAwMDAwMDAwMDAxMDAwMDAwMDA5NzUzYzg5ZWI3MmJkNDJiYWZjMTVkZDA4NWNmNWJlIyNjZmNjNTBjMy0zODllLTQyOTUtOWRiNy1mMjkwYWY2NDJlNzI=/content",
   "meetingOrganizer": {
