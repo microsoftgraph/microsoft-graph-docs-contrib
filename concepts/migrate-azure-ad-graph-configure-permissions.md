@@ -29,7 +29,10 @@ Your app might still temporarily require Azure AD Graph permissions to access re
 
 The steps in this article require you to have privileges to add permissions to an app registration and grant those permissions to the app registration. A user with the *Global Administrator* role can do both, while a user with the *Application Administrator* or *Cloud Application Administrator* role can only add the permissions. To help you enforce separation of duties and least privilege access, separate the tasks of adding permissions and granting permissions to different users. For more information about the actions supported by these roles, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
-## Option 1: Use the Microsoft Entra admin center to find the APIs your organization uses
+<!-- start the entra-portal-api-permissions page -->
+::: zone pivot="entra-portal-api-permissions"
+
+## Use the Microsoft Entra admin center to find the APIs your organization uses
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com).
 1. Expand **Identity** > **Applications** > select **App registrations**.
@@ -42,7 +45,13 @@ The steps in this article require you to have privileges to add permissions to a
 1. Select the **Delegated permissions** or **Application permissions** tab to choose from the list of delegated and application permissions respectively. Select **Add permissions** to add the permission to your app registration.
 1. After adding the permissions you need, back in the **Configured permissions** window, select **Grant admin consent** to grant the Azure AD Graph permissions to your app registration.
 
-## Option 2: Update the application manifest on the Microsoft Entra admin center
+::: zone-end
+
+<!-- end the entra-portal-api-permissions page -->
+<!-- start the entra-portal-app-manifest page -->
+::: zone pivot="entra-portal-app-manifest"
+
+## Update the application manifest on the Microsoft Entra admin center
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com).
 2. Expand the **Identity** menu > **Applications** > select **App registrations**.
@@ -61,7 +70,7 @@ The steps in this article require you to have privileges to add permissions to a
     > C. Refer to the [Azure AD Graph permissions reference](./migrate-azure-ad-graph-permissions-differences.md) for details of Azure AD Graph permission names, IDs, and types.
 
     5.1. If the app isn't assigned any Azure AD Graph permissions, add the **resourceAppId** property and assign the value `00000002-0000-0000-c000-000000000000` representing Azure AD Graph.
-    5.1. Add the **resourceAccess** property and configure the required permissions.
+    5.1. Add the **resourceAccess** property and configure the permissions.
 
     The following JSON snippet shows a **requiredResourceAccess** property with Azure AD Graph as the resource, and assigned the *User.Read* and *Application.Read.All* oauth2PermissionScope (delegated permission) and appRole (application permission) respectively.    
 
@@ -87,9 +96,15 @@ The steps in this article require you to have privileges to add permissions to a
 
 7. Back under the **Manage** menu group, select **API permissions** and in the **Configured permissions** for your app registration, select **Grant admin consent** to grant the Azure AD Graph permissions to your app registration.
 
-## Option 3: Use the Microsoft Graph applications API
+::: zone-end
 
-The Microsoft Graph [application object](/graph/api/resources/application) includes a **requiredResourceAccess** property that is a collection of objects with information about the resource API and permissions. Use this property to configure required Azure AD Graph permissions as described in the following steps.
+<!-- end the entra-portal-api-permissions page -->
+<!-- start the msgraph page-->
+::: zone pivot="msgraph"
+
+## Use the Microsoft Graph applications API
+
+The Microsoft Graph [application object](/graph/api/resources/application) includes a **requiredResourceAccess** property that is a collection of objects with information about the resource API and permissions. Use this property to configure Azure AD Graph permissions as described in the following steps.
 
 ### Prerequisites
 
@@ -221,7 +236,7 @@ Content-type: application/json
 
 From the preceding truncated output, `311a71cc-e848-46a1-bdf8-97ff7156d8e6` is the permission ID for the *User.Read* delegated permission while `3afa6a7d-9b1a-42eb-948e-1650a849e176` is the permission ID for the *Application.Read.All* application permission in Azure AD Graph.
 
-### Step 2: Add required Azure AD Graph permissions to your app
+### Step 2: Add Azure AD Graph permissions to your app
 
 The following example calls the [Update application](/graph/api/application-update) API to add the Azure AD Graph *User.Read* and *Application.Read.All* delegated and application permissions to an app registration identified by object ID `581088ba-83c5-4975-b8af-11d2d7a76e98`.
 
@@ -303,9 +318,9 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Step 3: Verify that the required Azure AD Graph permissions were added to your app
+### Step 3: Verify the Azure AD Graph permissions were added to your app
 
-Verify that your app registration has the required Azure AD Graph API permissions you added in Step 2 by:
+Verify that your app registration has the Azure AD Graph API permissions you added in Step 2 by:
 
 1. Calling the Microsoft Graph GET /application/{id} endpoint and reading the **requiredResourceAccess** property as follows:
 
@@ -319,13 +334,18 @@ Verify that your app registration has the required Azure AD Graph API permission
 
 Though you added Azure AD Graph permissions, you haven't granted these permissions to the app. Many permissions require admin consent before they can be used to access organizational data. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as a global administrator and grant admin consent for the permissions to the app registration.
 
-## Option 4: Use the Microsoft Graph PowerShell SDK
+::: zone-end
 
-The [Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true) cmdlet in Microsoft Graph PowerShell SDK includes a **RequiredResourceAccess** parameter that is a collection of **IMicrosoftGraphRequiredResourceAccess** objects. Use this parameter to configure the required Azure AD Graph permissions as described in the following steps.
+<!-- end the msgraph page -->
+<!-- Hide PS steps because PS snippets are now available on the samples in the MS Graph page
+
+## Use the Microsoft Graph PowerShell SDK
+
+The [Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true) cmdlet in Microsoft Graph PowerShell SDK includes a **RequiredResourceAccess** parameter that is a collection of **IMicrosoftGraphRequiredResourceAccess** objects. Use this parameter to configure the Azure AD Graph permissions as described in the following steps.
 
 ### Prerequisites
 
-To complete the following steps, the following privileges are required:
+To complete the following steps, you require the following privileges:
 
 + An authenticated PowerShell session (for example, using `Connect-MgGraph`).
 + Microsoft Graph PowerShell must be granted the `Application.ReadWrite.All` permission.
@@ -358,7 +378,7 @@ From this output, `311a71cc-e848-46a1-bdf8-97ff7156d8e6` is the permission ID of
 
 ### Step 2: Add Azure AD Graph permissions to your app
 
-Create a new PowerShell script named **updatePermissions.ps1** and add the following code. This code adds the required Azure AD Graph permissions to an app registration identified by object ID `581088ba-83c5-4975-b8af-11d2d7a76e98`. From Step 1, these permissions were *User.Read* and *Application.Read.All* delegated permission and application permission respectively.
+Create a new PowerShell script named **updatePermissions.ps1** and add the following code. This code adds Azure AD Graph permissions to an app registration identified by object ID `581088ba-83c5-4975-b8af-11d2d7a76e98`. From Step 1, these permissions were *User.Read* and *Application.Read.All* delegated permission and application permission respectively.
 
 > [!IMPORTANT]
 > To update the **RequiredResourceAccess** property, you must pass in both existing and new permissions. Passing in only new permissions overwrites and removes the existing permissions.
@@ -391,7 +411,12 @@ Though you added Azure AD Graph permissions, you haven't granted these permissio
 
 ## Grant API permissions without using the consent prompt
 
-When using Microsoft Graph and any related SDKs, you can grant permissions to an app registration without the need to use the Microsoft Entra admin center and selecting the *Grant admin consent for [Company]* button on the API permissions page. For more information, see [Grant or revoke API permissions programmatically](permissions-grant-via-msgraph.md)
+When using Microsoft Graph and any related SDKs, you can grant permissions to an app registration without the need to use the Microsoft Entra admin center and selecting the *Grant admin consent for [Company]* button on the API permissions page. For more information, see [Grant or revoke API permissions programmatically](permissions-grant-via-msgraph.md).
+-->
+
+## Grant API permissions without using the consent prompt
+
+When using Microsoft Graph and any related SDKs, you can grant permissions to an app registration without the need to use the Microsoft Entra admin center and selecting the *Grant admin consent for [Company]* button on the API permissions page. For more information, see [Grant or revoke API permissions programmatically](permissions-grant-via-msgraph.md).
 
 ## See also
 
