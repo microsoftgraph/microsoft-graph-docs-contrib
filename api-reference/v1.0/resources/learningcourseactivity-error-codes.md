@@ -18,7 +18,7 @@ This article describes error codes that are returned by the learningCourseActivi
 |Scenario|HTTP Code|Code|Message|Details|
 |:---|:---|:---|:---|:---|
 |Forbidden|403|Forbidden|You don't have an adequate service plan for this request.|
-|Bad Request|400|Bad Request|This provider isn't enabled for the given tenant.|
+|Bad request|400|Bad request|This provider isn't enabled for the given tenant.|
 |Bad Request|400|Bad Request|There was an issue with your request. Make sure the registrationId you entered is valid or registered for your tenant|
 |Internal Server Error|500|Internal Server Error|Internal Server Error|
 |Request throttled|429|Too many requests|{"code": "tooManyRequests","message": "Retry after {noOfMinutes} minutes"}.|
