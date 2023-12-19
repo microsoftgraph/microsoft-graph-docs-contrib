@@ -66,7 +66,7 @@ This article describes error codes that are returned by the LearningCourseActivi
 |Bad Request|400|Bad Request|There was an issue with your request. Make sure the registrationId you entered is valid or registered for your tenant|
 |Bad request|404|Not found|The assignment ID requested doesn’t exist.|
 |Internal Server Error|500|Internal Server Error|Internal Server Error|
-|Request throttled|429|Too Many Requests|{"code": "tooManyRequests","message": "Retry after {noOfMinutes} minutes"}|
+|Request throttled|429|Too many requests|{"code": "tooManyRequests","message": "Retry after {noOfMinutes} minutes".}|
 |Service unavailable|503|Service unavailable|{"code": "serviceUnavailable","message": "Retry after {noOfMinutes} minutes"}.|
 |Bad request|400|badRequest|Required fields are missing|{"code": "badRequest","message": "Input field {fieldName} is required"}.|
 |Bad request|400|badRequest|Input fields are invalid|{"code": "badRequest","message": "Input field {fieldName} is invalid"}.|
