@@ -87,6 +87,7 @@ Content-Type: application/json
   "createdDateTime": "2021-02-28T16:28:15.3863467Z",
   "lastModifiedDateTime": "2023-05-24T09:26:11.8630516Z",
   "lastModifiedBy": "GlobalAdmin@unifiedrbactest3.ccsctp.net",
+  "detectorId": "67895317-b2a8-4ac3-8f8b-fa6b7765f2fe",
   "queryCondition": {
     "queryText": "DeviceFileEvents\r\n| where Timestamp > ago(1h)\r\n| where FileName == \"ifz30zlx.dll\"",
     "lastModifiedDateTime": null

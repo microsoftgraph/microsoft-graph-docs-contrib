@@ -119,6 +119,7 @@ Content-Type: application/json
   "createdDateTime": "2023-06-25T09:37:28.6149005Z",
   "lastModifiedDateTime": "2023-06-25T09:37:28.6149005Z",
   "lastModifiedBy": "MichaelMekler@winatptestlic06.ccsctp.net",
+  "detectorId": "67aa92a1-b04b-4f2a-a223-236968a3da96",
   "queryCondition": {
     "queryText": "DeviceProcessEvents | take 1",
     "lastModifiedDateTime": null

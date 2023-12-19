@@ -89,6 +89,7 @@ Content-Type: application/json
       "createdDateTime": "2021-02-28T16:28:15.3863467Z",
       "lastModifiedDateTime": "2023-05-24T09:26:11.8630516Z",
       "lastModifiedBy": "GlobalAdmin@unifiedrbactest3.ccsctp.net",
+      "detectorId": "67895317-b2a8-4ac3-8f8b-fa6b7765f2fe",
       "queryCondition": {
         "queryText": "DeviceFileEvents\r\n| where Timestamp > ago(1h)\r\n| where FileName == \"ifz30zlx.dll\"",
         "lastModifiedDateTime": null
@@ -153,6 +154,7 @@ Content-Type: application/json
       "createdDateTime": "2021-11-03T21:32:01.6144651Z",
       "lastModifiedDateTime": "2022-11-03T19:27:14.4187141Z",
       "lastModifiedBy": "InESecAdmin@winatptestlic06.ccsctp.net",
+      "detectorId": "56ef4994-fe31-4ac9-b29f-0ca2f2cc9112",
       "queryCondition": {
         "queryText": "EmailAttachmentInfo\r\n| extend second = datetime_diff('second',now(),Timestamp)\r\n| where second % 300 == 0 ",
         "lastModifiedDateTime": "2022-11-03T19:27:14.4331537Z"
@@ -204,6 +206,7 @@ Content-Type: application/json
       "createdDateTime": "2022-02-02T10:26:01.7708581Z",
       "lastModifiedDateTime": "2022-02-02T10:26:01.7708581Z",
       "lastModifiedBy": "NaderK@winatptestlic06.ccsctp.net",
+      "detectorId": "67aa92a1-b04b-4f2a-a223-236968a3da96",
       "queryCondition": {
         "queryText": "//https://www.spamhaus.org/statistics/tlds/      http://www.surbl.org/tld       https://www.iana.org/domains/root/db      https://unit42.paloaltonetworks.com/top-level-domains-cybercrime/\r\nDeviceNetworkEvents\r\n| where isnotempty(RemoteUrl) and RemoteIPType == \"Public\"\r\n| where InitiatingProcessFileName in~ (\"winword.exe\", \"excel.exe\", \"powerpnt.exe\", \"rundll32.exe\", \"regsvr32.exe\", \"certutil.exe\", \"bitsadmin.exe\", \"wscript.exe\", \"cscript.exe\", \"powershell.exe\", \"pwsh.exe\", \"powershell_ise.exe\")\r\n| extend TopLevelDomain=tolower(extract(@\"([A-Za-z0-9-]{1,63}\\.)+([A-Za-z]{2,10})\", 2, RemoteUrl))\r\n| where TopLevelDomain in (\"xyz\", \"top\", \"live\", \"loan\", \"club\", \"surf\", \"work\", \"biz\", \"ryukyu\", \"press\", \"ltd\", \"bid\", \"vip\", \"online\", \"download\" \"buzz\", \"cam\", \"ru\", \"cn\", \"ci\", \"ga\", \"gq\", \"tk\", \"tw\", \"ml\", \"cf\", \"cfd\", \"icu\", \"cm\")\r\n| extend TimeDiff=datetime_diff(\"Second\", Timestamp, InitiatingProcessCreationTime)\r\n| where TimeDiff < 30\r\n| project-reorder Timestamp, DeviceName, RemoteUrl, TopLevelDomain, TimeDiff, InitiatingProcessCommandLine, *\r\n//| summarize count() by InitiatingProcessFolderPath, TopLevelDomain, RemoteUrl",
         "lastModifiedDateTime": null

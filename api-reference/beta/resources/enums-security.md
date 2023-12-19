@@ -160,6 +160,160 @@ Namespace: microsoft.graph.security
 | critical           |
 | unknownFutureValue |
 
+### deviceAssetIdentifier values
+
+| Member                |
+|:----------------------|
+| deviceId              |
+| deviceName            |
+| remoteDeviceName      |
+| targetDeviceName      |
+| destinationDeviceName |
+| unknownFutureValue    |
+
+### deviceIdEntityIdentifier values
+
+| Member             |
+|:-------------------|
+| deviceId           |
+| unknownFutureValue |
+
+### disableUserEntityIdentifier values
+
+| Member                      |
+|:----------------------------|
+| accountSid                  |
+| initiatingProcessAccountSid |
+| requestAccountSid           |
+| onPremSid                   |
+| unknownFutureValue          |
+
+### emailEntityIdentifier values
+
+| Member                |
+|:----------------------|
+| networkMessageId      |
+| recipientEmailAddress |
+| unknownFutureValue    |
+
+### fileEntityIdentifier values
+
+| Member                  |
+|:------------------------|
+| sha1                    |
+| initiatingProcessSHA1   |
+| sha256                  |
+| initiatingProcessSHA256 |
+| unknownFutureValue      |
+
+### forceUserPasswordResetEntityIdentifier values
+
+| Member                      |
+|:----------------------------|
+| accountSid                  |
+| initiatingProcessAccountSid |
+| requestAccountSid           |
+| onPremSid                   |
+| unknownFutureValue          |
+
+### huntingRuleErrorCode values
+
+| Member                   |
+|:-------------------------|
+| queryExecutionFailed     |
+| queryExecutionThrottling |
+| queryExceededResultSize  |
+| queryLimitsExceeded      |
+| queryTimeout             |
+| alertCreationFailed      |
+| alertReportNotFound      |
+| partialRowsFailed        |
+| unknownFutureValue       |
+| noImpactedEntity         |
+
+### huntingRuleRunStatus values
+
+| Member             |
+|:-------------------|
+| running            |
+| completed          |
+| failed             |
+| partiallyFailed    |
+| unknownFutureValue |
+
+### isolationType values
+
+| Member             |
+|:-------------------|
+| full               |
+| selective          |
+| unknownFutureValue |
+
+### mailboxAssetIdentifier values
+
+| Member                      |
+|:----------------------------|
+| accountUpn                  |
+| fileOwnerUpn                |
+| initiatingProcessAccountUpn |
+| lastModifyingAccountUpn     |
+| targetAccountUpn            |
+| senderFromAddress           |
+| senderDisplayName           |
+| recipientEmailAddress       |
+| senderMailFromAddress       |
+| unknownFutureValue          |
+
+### markUserAsCompromisedEntityIdentifier values
+
+| Member                           |
+|:---------------------------------|
+| accountObjectId                  |
+| initiatingProcessAccountObjectId |
+| servicePrincipalId               |
+| recipientObjectId                |
+| unknownFutureValue               |
+
+### scopeType values
+
+| Member             |
+|:-------------------|
+| deviceGroup        |
+| unknownFutureValue |
+
+### stopAndQuarantineFileEntityIdentifier values
+
+| Member                |
+|:----------------------|
+| deviceId              |
+| sha1                  |
+| initiatingProcessSHA1 |
+| unknownFutureValue    |
+
+### userAssetIdentifier values
+
+| Member                      |
+|:----------------------------|
+| accountObjectId             |
+| accountSid                  |
+| accountUpn                  |
+| accountName                 |
+| accountDomain               |
+| accountId                   |
+| requestAccountSid           |
+| requestAccountName          |
+| requestAccountDomain        |
+| recipientObjectId           |
+| processAccountObjectId      |
+| initiatingAccountSid        |
+| initiatingProcessAccountUpn |
+| initiatingAccountName       |
+| initiatingAccountDomain     |
+| servicePrincipalId          |
+| servicePrincipalName        |
+| targetAccountUpn            |
+| unknownFutureValue          |
+
 <!--
 {
   "type": "#page.annotation",
