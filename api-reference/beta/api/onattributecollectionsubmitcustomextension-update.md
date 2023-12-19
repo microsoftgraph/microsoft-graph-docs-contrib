@@ -1,6 +1,6 @@
 ---
 title: "Update onAttributeCollectionSubmitCustomExtension"
-description: "Update the properties of an onAttributeCollectionSubmitCustomExtension object."
+description: "Associate a custom extension with an onAttributeCollectionSubmitCustomExtension object that's linked to an onAttributeCollectionSubmitListener object."
 author: "nanguil"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) object.
+Associate a custom extension with an [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) object that's linked to an [onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md).
 
 ## Permissions
 
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /onAttributeCollectionSubmitCustomExtension
+PUT /identity/authenticationEventListeners/{listenerId}/microsoft.graph.onAttributeCollectionSubmitListener/handler/microsoft.graph.onAttributeCollectionSubmitCustomExtensionHandler/customExtension/$ref
 ```
 
 ## Request headers
@@ -45,80 +45,40 @@ PATCH /onAttributeCollectionSubmitCustomExtension
 
 ## Request body
 
-[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
-
-|Property|Type|Description|
-|:---|:---|:---|
-|authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|Configuration for securing the API call to the app. For example, using OAuth client credentials flow. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
-|clientConfiguration|[customExtensionClientConfiguration](../resources/customextensionclientconfiguration.md)|HTTP connection settings that define how long Microsoft Entra ID can wait for a connection to an app, how many times you can retry a timed-out connection and the exception scenarios when retries are allowed. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
-|description|String|Description for the customCalloutExtension object. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
-|displayName|String|Display name for the customCalloutExtension object. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
-|endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|The type and details for configuring the endpoint to call the logic app's workflow. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
-
-
+In the request body, supply the **@odata.id** property with the absolute URL of the [customAuthenticationExtension](../resources/customauthenticationextension.md) object that you want to associate with the [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) object that's linked to the [onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md).
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "update_onattributecollectionsubmitcustomextension"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/onAttributeCollectionSubmitCustomExtension
+PUT https://microsoft.graph.microsoft.com/beta/identity/authenticationEventListeners/{listenerId}/microsoft.graph.onAttributeCollectionSubmitListener/handler/microsoft.graph.onAttributeCollectionSubmitCustomExtensionHandler/customExtension/$ref
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.onAttributeCollectionSubmitCustomExtension",
-  "authenticationConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionAuthenticationConfiguration"
-  },
-  "clientConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionClientConfiguration"
-  },
-  "description": "String",
-  "displayName": "String",
-  "endpointConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionEndpointConfiguration"
-  }
+  "@odata.id": "https://graph.microsoft.com/beta/identity/customAuthenticationExtensions/{customExtensionId}"
 }
 ```
 
 
 ### Response
 
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+The following example shows the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true
+  "blockType": "response"
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.onAttributeCollectionSubmitCustomExtension",
-  "id": "a37bd744-f0cd-472d-08d1-c334ec023a3c",
-  "authenticationConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionAuthenticationConfiguration"
-  },
-  "clientConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionClientConfiguration"
-  },
-  "description": "String",
-  "displayName": "String",
-  "endpointConfiguration": {
-    "@odata.type": "microsoft.graph.customExtensionEndpointConfiguration"
-  }
-}
+HTTP/1.1 204 No Content
 ```
 

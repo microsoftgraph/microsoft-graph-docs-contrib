@@ -28,7 +28,7 @@ Inherits from [onAttributeCollectionStartHandler](../resources/onattributecollec
 |customExtension|[onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md)|Used for creating a new custom extension based on the **onAttributeCollectionStart** event to configure the collection of attributes upon user sign up.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.onAttributeCollectionStartCustomExtensionHandler"

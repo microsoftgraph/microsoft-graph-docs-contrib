@@ -28,7 +28,7 @@ Inherits from [onAttributeCollectionSubmitHandler](../resources/onattributecolle
 |customExtension|[onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md)|Used for creating a new custom extension based on the **onAttributeCollectionSubmit** event to configure the collection of attributes upon user sign up.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.onAttributeCollectionSubmitCustomExtensionHandler"

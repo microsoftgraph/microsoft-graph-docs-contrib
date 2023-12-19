@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /onAttributeCollectionSubmitCustomExtension
+GET /identity/authenticationEventListeners/{listenerId}/microsoft.graph.onAttributeCollectionSubmitListener/handler/microsoft.graph.onAttributeCollectionSubmitCustomExtensionHandler/customExtension
 ```
 
 ## Optional query parameters
@@ -58,20 +58,20 @@ If successful, this method returns a `200 OK` response code and an [onAttributeC
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_onattributecollectionsubmitcustomextension"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/onAttributeCollectionSubmitCustomExtension
+GET https://microsoft.graph.microsoft.com/beta/identity/authenticationEventListeners/{listenerId}/microsoft.graph.onAttributeCollectionSubmitListener/handler/microsoft.graph.onAttributeCollectionSubmitCustomExtensionHandler/customExtension
 ```
 
 
 ### Response
 
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -84,21 +84,29 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
+    "@odata.context": "https://microsoft.graph.microsoft.com/beta/$metadata#identity/customAuthenticationExtensions/$entity",
     "@odata.type": "#microsoft.graph.onAttributeCollectionSubmitCustomExtension",
-    "id": "a37bd744-f0cd-472d-08d1-c334ec023a3c",
-    "authenticationConfiguration": {
-      "@odata.type": "microsoft.graph.customExtensionAuthenticationConfiguration"
-    },
-    "clientConfiguration": {
-      "@odata.type": "microsoft.graph.customExtensionClientConfiguration"
-    },
-    "description": "String",
-    "displayName": "String",
+    "id":"3b2ebcd3-3544-4516-aa11-9978a367950b",
+    "displayName":"Demo Test Contoso Template Apps",
+    "description":"Returns values for app-based branding.",
+    "apiSchemaVersion": "10-01-2021-preview",
     "endpointConfiguration": {
-      "@odata.type": "microsoft.graph.customExtensionEndpointConfiguration"
+        "@odata.type": "#microsoft.graph.httpRequestEndpoint",
+        "targetUrl": "https://contoso.com/customextension",
+    },
+    "authenticationConfiguration": {
+        "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
+        "resourceId": "api://contoso.azurewebsites.net/f9c5dc6b-d72b-4226-8ccd-801f7a290428"
+    },
+    "configuration": {
+        "clientConfiguration": {
+          "timeoutInMilliseconds": 1000,
+          "maximumRetries":1
+        },
+        "behaviorOnError": {
+          "@odata.type": "#microsoft.graph.continueOnError"
+        }
     }
-  }
 }
 ```
 

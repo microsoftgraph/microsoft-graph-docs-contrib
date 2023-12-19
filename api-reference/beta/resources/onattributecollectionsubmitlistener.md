@@ -39,7 +39,7 @@ Inherits from [authenticationEventListener](../resources/authenticationeventlist
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -63,3 +63,5 @@ The following is a JSON representation of the resource.
 }
 ```
 
+- [Custom authentication extensions for attribute collection start and submit events](/entra/identity-platform/custom-extension-attribute-collection)
+- [OnAttributeCollectionSubmit event reference](/entra/identity-platform/custom-extension-onattributecollectionsubmit-reference)

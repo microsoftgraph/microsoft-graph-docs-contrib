@@ -17,6 +17,13 @@ Used for creating a new custom extension based on the **onAttributeCollectionSta
 
 Inherits from [customAuthenticationExtension](../resources/customauthenticationextension.md).
 
+## Methods
+
+|Method|Return type|Description|
+|:---|:---|:---|
+|[Get onAttributeCollectionStartCustomExtension](../api/onattributecollectionstartcustomextension-get.md)|[onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md)|Read the properties and relationships of an [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) object.|
+|[Update onAttributeCollectionStartCustomExtension](../api/onattributecollectionstartcustomextension-update.md)|[onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md)|Update the properties of an [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) object.|
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
@@ -31,7 +38,7 @@ Inherits from [customAuthenticationExtension](../resources/customauthenticatione
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -58,3 +65,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
+## See also
+
+- [Custom authentication extensions for attribute collection start and submit events](/entra/identity-platform/custom-extension-attribute-collection)
+- [OnAttributeCollectionStart event reference](/entra/identity-platform/custom-extension-onattributecollectionstart-reference)

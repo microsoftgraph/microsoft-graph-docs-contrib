@@ -15,16 +15,16 @@ Namespace: microsoft.graph
 
 Used to configure what to invoke when the user submits attributes during the attribute collection stage of an [externalUsersSelfServiceSignUpEventsFlow](externalUsersSelfServiceSignUpEventsFlow.md) object as defined in the **onAttributeCollectionSubmitHandler** event.
 
-The [onAttributeCollectionSubmitCustomExtensionHandler]() object inherits from this type.
+The [onAttributeCollectionSubmitCustomExtensionHandler](../resources/onattributecollectionsubmitcustomextensionhandler.md) object inherits from this type.
 
 ## Properties
-None
+None.
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.onAttributeCollectionSubmitHandler"

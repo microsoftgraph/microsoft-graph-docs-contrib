@@ -57,6 +57,8 @@ You can specify the following properties when creating an **authenticationEventL
 |authenticationEventsFlowId|String|The identifier of the authentication events flow. Optional.|
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which this authenticationEventListener should trigger. Optional.|
 |handler|[onAttributeCollectionHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be set for the **onAttributeCollectionListener** listener type.|
+|handler|[onAttributeCollectionStartListener](../resources/onattributecollectionstartlistener.md)|The handler to invoke when conditions are met. Can be set for the **onAttributeCollectionStartListener** listener type.|
+|handler|[onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md)|The handler to invoke when conditions are met. Can be set for the **onAttributeCollectionSubmitListener** listener type.|
 |handler|[onAuthenticationMethodLoadStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be set for the **onAuthenticationMethodLoadStartListener** listener type.|
 |handler|[onInteractiveAuthFlowStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be set for the **onInteractiveAuthFlowStartListener** listener type.|
 |handler|[onTokenIssuanceStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be set for the **onTokenIssuanceStartListener** listener type.|
@@ -69,12 +71,15 @@ If successful, this method returns a `201 Created` response code and an [authent
 
 ## Examples
 
-### Request
-The following is an example of a request to create a onTokenIssuanceStartListener.
+### Example 1: Create an onTokenIssuanceStartListener object
+
+#### Request
+The following example shows a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_authenticationeventlistener_from_"
+  "name": "create_authenticationeventlistener_onTokenIssuanceStartListener"
 }
 -->
 ``` http
@@ -138,7 +143,7 @@ Content-length: 312
 
 ---
 
-### Response
+#### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -175,19 +180,22 @@ Content-Type: application/json
     }
 }
 ```
----
 
-### Request
-The following is an example of a request to create a onAttributeCollectionStartListener object.
-# [HTTP](#tab/http)
+### Example 2: Create an onAttributeCollectionStartListener object
+
+#### Request
+
+The following example shows a request.
+
 <!-- {
   "blockType": "request",
-  "name": "create_authenticationeventlistener_from_"
+  "name": "create_authenticationeventlistener_onAttributeCollectionStartListener"
 }
 -->
 ``` http
 POST https://graph.microsoft.com/beta/identity/authenticationEventListeners
-Request Body:
+Content-Type: application/json
+
 {
     "@odata.type": "#microsoft.graph.onAttributeCollectionStartListener",
     "priority": 500,
@@ -209,41 +217,8 @@ Request Body:
     }
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-authenticationeventlistener-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-authenticationeventlistener-from--cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-authenticationeventlistener-from--go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-authenticationeventlistener-from--java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-authenticationeventlistener-from--javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-authenticationeventlistener-from--php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-authenticationeventlistener-from--powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/create-authenticationeventlistener-from--python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -254,7 +229,9 @@ The following example shows the response.
 }
 -->
 ``` http
-201 Created
+HTTP/1.1 201 Created
+Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/authenticationEventListeners/$entity",
     "@odata.type": "#microsoft.graph.onAttributeCollectionStartListener",
@@ -272,20 +249,21 @@ The following example shows the response.
     }
 }
 ```
----
 
-### Request
+### Example 3: Create an onAttributeCollectionSubmitListener object
 
-The following is an example of a request to create a onAttributeCollectionSubmittListener object.
-# [HTTP](#tab/http)
+#### Request
+The following example shows a request.
+
 <!-- {
   "blockType": "request",
-  "name": "create_authenticationeventlistener_from_"
+  "name": "create_authenticationeventlistener_onAttributeCollectionSubmitListener"
 }
 -->
 ``` http
 POST https://graph.microsoft.com/beta/identity/authenticationEventListeners
-Request Body:
+Content-Type: application/json
+
 {
     "@odata.type": "#microsoft.graph.onAttributeCollectionSubmitListener",
     "priority": 500,
@@ -307,41 +285,8 @@ Request Body:
     }
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-authenticationeventlistener-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-authenticationeventlistener-from--cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-authenticationeventlistener-from--go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-authenticationeventlistener-from--java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-authenticationeventlistener-from--javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-authenticationeventlistener-from--php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-authenticationeventlistener-from--powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/create-authenticationeventlistener-from--python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -351,10 +296,10 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.authenticationEventListener"
 }
 -->
-```
-
 ``` http
-201 Created
+HTTP/1.1 201 Created
+Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/authenticationEventListeners/$entity",
     "@odata.type": "#microsoft.graph.onAttributeCollectionSubmitListener",
@@ -372,4 +317,3 @@ The following example shows the response.
     }
 }
 ```
----

@@ -49,11 +49,11 @@ You can specify the following properties when creating a **customAuthenticationE
 
 |Property|Type|Description|
 |:---|:---|:---|
-|authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|The authentication configuration for this custom extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
-|clientConfiguration|[customExtensionClientConfiguration](../resources/customextensionclientconfiguration.md)|The connection settings for the custom extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
-|description|String|Description for the custom extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
-|displayName|String|Display name for the custom extension. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
-|endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|Configuration for the API endpoint that the custom extension will call. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
+|authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|The authentication configuration for this custom extension. Optional.|
+|clientConfiguration|[customExtensionClientConfiguration](../resources/customextensionclientconfiguration.md)|The connection settings for the custom extension. Optional.|
+|description|String|Description for the custom extension. Optional.|
+|displayName|String|Display name for the custom extension. Optional.|
+|endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|Configuration for the API endpoint that the custom extension will call. Optional.|
 
 
 ## Response
@@ -62,12 +62,16 @@ If successful, this method returns a `201 Created` response code and a [customAu
 
 ## Examples
 
-### Request
-The following is an example of a request to create an onTokenIssuanceStartCustomExtension object type.
+### Example 1: Create an onTokenIssuanceStartCustomExtension object
+
+#### Request
+
+The following example shows a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_customauthenticationextension_from_"
+  "name": "create_customauthenticationextension_onTokenIssuanceStartCustomExtension"
 }
 -->
 ``` http
@@ -136,7 +140,7 @@ Content-length: 468
 
 ---
 
-### Response
+#### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -179,32 +183,33 @@ Content-Type: application/json
     ]
 }
 ```
----
 
-### Request
+### Example 2: Create an onAttributeCollectionStartCustomExtension object
 
-The following is an example of a request to create an OnAttributeCollectionStartCustomExtension object type.
-# [HTTP](#tab/http)
+#### Request
+
+The following example shows a request.
+
 <!-- {
   "blockType": "request",
-  "name": "create_customauthenticationextension_from_"
+  "name": "create_customauthenticationextension_onAttributeCollectionStartCustomExtension"
 }
 -->
 ``` http
-Create 
 POST https://graph.microsoft.com/beta/identity/customAuthenticationExtensions
-Request Body: 
+Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.onAttributeCollectionStartCustomExtension",
   "displayName": "attributeCollectionStartName",
   "description": "example description",
   "authenticationConfiguration": {
     "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
-    "resourceId": "api://google.com/fb96de85-2abe-4b02-b45f-64ba122c509e"
+    "resourceId": "api://contoso.com/fb96de85-2abe-4b02-b45f-64ba122c509e"
   },
   "endpointConfiguration": {
     "@odata.type": "#microsoft.graph.httpRequestEndpoint",
-    "targetUrl": "https://google.com"
+    "targetUrl": "https://contoso.com"
   },
   "clientConfiguration": {
     "timeoutInMilliseconds": 2000,
@@ -212,41 +217,8 @@ Request Body:
   }
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-customauthenticationextension-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-customauthenticationextension-from--cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-customauthenticationextension-from--go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-customauthenticationextension-from--java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-customauthenticationextension-from--javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-customauthenticationextension-from--php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-customauthenticationextension-from--powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/create-customauthenticationextension-from--python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-### Response
+#### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -257,7 +229,9 @@ The following example shows the response.
 -->
 
 ``` http
-201 Created
+HTTP/1.1 201 Created
+Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/customAuthenticationExtensions/$entity",
     "@odata.type": "#microsoft.graph.onAttributeCollectionStartCustomExtension",
@@ -266,44 +240,45 @@ The following example shows the response.
     "description": "example description",
     "authenticationConfiguration": {
         "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
-        "resourceId": "api://google.com/fb96de85-2abe-4b02-b45f-64ba122c509e"
+        "resourceId": "api://contoso.com/fb96de85-2abe-4b02-b45f-64ba122c509e"
     },
     "endpointConfiguration": {
         "@odata.type": "#microsoft.graph.httpRequestEndpoint",
-        "targetUrl": "https://google.com"
+        "targetUrl": "https://contoso.com"
     },
     "clientConfiguration": {
         "timeoutInMilliseconds": 2000,
         "maximumRetries": 1
     }
 }
-
 ```
----
 
-### Request
+### Example 3: Create an onAttributeCollectionSubmitCustomExtension object
 
-The following is an example of a request to create an OnAttributeCollectionSubmitCustomExtension object type.
-# [HTTP](#tab/http)
+#### Request
+
+The following example shows a request.
+
 <!-- {
   "blockType": "request",
-  "name": "create_customauthenticationextension_from_"
+  "name": "create_customauthenticationextension_onAttributeCollectionSubmitCustomExtension"
 }
 -->
 ``` http
 POST https://graph.microsoft.com/beta/identity/customAuthenticationExtensions
-Request Body: 
+Content-Type: application/json
+
 {
     "@odata.type": "#microsoft.graph.onAttributeCollectionSubmitCustomExtension",
     "displayName": "attributeCollectionSubmitName",
     "description": "example description",
     "authenticationConfiguration": {
         "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
-        "resourceId": "api://google.com/fb96de85-2abe-4b02-b45f-64ba122c509e"
+        "resourceId": "api://contoso.com/fb96de85-2abe-4b02-b45f-64ba122c509e"
     },
     "endpointConfiguration": {
         "@odata.type": "#microsoft.graph.httpRequestEndpoint",
-        "targetUrl": "https://google.com"
+        "targetUrl": "https://contoso.com"
     },
     "clientConfiguration": {
         "timeoutInMilliseconds": 2000,
@@ -311,41 +286,8 @@ Request Body:
     }
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-customauthenticationextension-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-customauthenticationextension-from--cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-customauthenticationextension-from--go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-customauthenticationextension-from--java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-customauthenticationextension-from--javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-customauthenticationextension-from--php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-customauthenticationextension-from--powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/create-customauthenticationextension-from--python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -356,7 +298,9 @@ The following example shows the response.
 }
 -->
 ``` http
-201 Created
+HTTP/1.1 201 Created
+Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/customAuthenticationExtensions/$entity",
     "@odata.type": "#microsoft.graph.onAttributeCollectionSubmitCustomExtension",
@@ -365,11 +309,11 @@ The following example shows the response.
     "description": "example description",
     "authenticationConfiguration": {
         "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
-        "resourceId": "api://google.com/fb96de85-2abe-4b02-b45f-64ba122c509e"
+        "resourceId": "api://contoso.com/fb96de85-2abe-4b02-b45f-64ba122c509e"
     },
     "endpointConfiguration": {
         "@odata.type": "#microsoft.graph.httpRequestEndpoint",
-        "targetUrl": "https://google.com"
+        "targetUrl": "https://contoso.com"
     },
     "clientConfiguration": {
         "timeoutInMilliseconds": 2000,
@@ -377,4 +321,3 @@ The following example shows the response.
     }
 }
 ```
----

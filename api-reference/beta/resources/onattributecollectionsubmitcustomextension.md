@@ -17,6 +17,12 @@ Used for creating a new custom extension based on the **onAttributeCollectionSub
 
 Inherits from [customAuthenticationExtension](../resources/customauthenticationextension.md).
 
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[Get onAttributeCollectionSubmitCustomExtension](../api/onattributecollectionsubmitcustomextension-get.md)|[onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md)|Read the properties and relationships of an [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) object.|
+|[Update onAttributeCollectionSubmitCustomExtension](../api/onattributecollectionsubmitcustomextension-update.md)|[onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md)|Update the properties of an [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) object.|
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
@@ -31,7 +37,7 @@ Inherits from [customAuthenticationExtension](../resources/customauthenticatione
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -58,3 +64,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
+## See also
+
+- [Custom authentication extensions for attribute collection start and submit events](/entra/identity-platform/custom-extension-attribute-collection)
+- [OnAttributeCollectionSubmit event reference](/entra/identity-platform/custom-extension-onattributecollectionsubmit-reference)

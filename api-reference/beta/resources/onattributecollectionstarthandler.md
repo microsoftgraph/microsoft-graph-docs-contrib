@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Used to configure what to invoke upon the start of the user attribute collection stage of an [externalUsersSelfServiceSignUpEventsFlow](externalUsersSelfServiceSignUpEventsFlow.md) object as defined in the **onAttributeCollectionStartHandler** event.
 
-The [onAttributeCollectionStartCustomExtensionHandler]() object inherits from this type.
+The [onAttributeCollectionStartCustomExtensionHandler](../resources/onattributecollectionstartcustomextensionhandler.md) object inherits from this type.
 
 ## Properties
 None.
@@ -24,7 +24,7 @@ None.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.onAttributeCollectionStartHandler"

@@ -24,10 +24,10 @@ Configuration regarding properties of the custom extension which can be overwrit
 None
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.onAttributeCollectionSubmitCustomExtensionHandler"
+  "@odata.type": "microsoft.graph.customExtensionOverwriteConfiguration"
 }
 -->
 ``` json
