@@ -63,7 +63,7 @@ This article describes error codes that are returned by the learningCourseActivi
 |User doesn't have appropriate permission scope|403|Forbidden|Your account doesn't have access to this report or data. Please contact your global administrator to request access.|
 |Forbidden|403|Forbidden|You don't have a service plan adequate for this request.|
 |Bad request|400|Bad request|This provider isn't enabled for the given tenant.|
-|Bad Request|400|Bad Request|There was an issue with your request. Make sure the registrationId you entered is valid or registered for your tenant|
+|Bad request|400|Bad request|There was an issue with your request. Make sure the registrationId you entered is valid or registered for your tenant|
 |Bad request|404|Not found|The assignment ID requested doesn’t exist.|
 |Internal server error|500|Internal server error|Internal server error|
 |Request throttled|429|Too many requests|{"code": "tooManyRequests","message": "Retry after {noOfMinutes} minutes".}|
