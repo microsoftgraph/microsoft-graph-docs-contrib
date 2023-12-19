@@ -20,7 +20,7 @@ This article describes error codes that are returned by the learningCourseActivi
 |Forbidden|403|Forbidden|You don't have an adequate service plan for this request.|
 |Bad request|400|Bad request|This provider isn't enabled for the given tenant.|
 |Bad request|400|Bad request|There was an issue with your request. Make sure the registrationId you entered is valid or registered for your tenant.|
-|Internal Server Error|500|Internal Server Error|Internal Server Error|
+|Internal server error|500|Internal server error|Internal server error.|
 |Request throttled|429|Too many requests|{"code": "tooManyRequests","message": "Retry after {noOfMinutes} minutes"}.|
 |Service Unavailable|503|Service Unavailable|{"code": "serviceUnavailable","message": "Retry after {noOfMinutes} minutes"}|
 |Multiple Field validations fail|400|badRequest|badRequest|{"code": "badRequest","message": "Input field {fieldName}shouldn't be empty"}, {"code": "badRequest","message": "Input Field {fieldName} is required"}, {"code": "badRequest","message": "Input field {fieldName}length exceeded than {expectedLength}"}|
