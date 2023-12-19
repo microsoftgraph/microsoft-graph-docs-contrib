@@ -55,7 +55,7 @@ This article describes error codes that are returned by the learningCourseActivi
 |Request throttled|429|Too Many Requests|{"code": "tooManyRequests","message": "Retry after {noOfMinutes} minutes"}|
 |Service Unavailable|503|Service Unavailable|{"code": "serviceUnavailable","message": "Retry after {noOfMinutes} minutes"}|
 
-## Error codes and messages for update request fail
+## Error codes and messages for failed update requests
 
 |Scenario|HTTP Code|Code|Message|Details|
 |:---|:---|:---|:---|:---|
