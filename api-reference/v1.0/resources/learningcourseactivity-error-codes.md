@@ -1,5 +1,5 @@
 ---
-title: "LearningCourseActivity API error responses"
+title: "Error Responses in the LearningCourseActivity API"
 description: "Errors in the Microsoft Graph LearningCourseActivity API returned when a request sent through the API fails."
 author: "jprasad"
 ms.localizationpriority: medium
