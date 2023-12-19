@@ -69,7 +69,7 @@ This article describes error codes that are returned by the LearningCourseActivi
 |Request throttled|429|Too Many Requests|{"code": "tooManyRequests","message": "Retry after {noOfMinutes} minutes"}|
 |Service Unavailable|503|Service Unavailable|{"code": "serviceUnavailable","message": "Retry after {noOfMinutes} minutes"}|
 |Bad Request|400|badRequest|Required fields are missing|{"code": "badRequest","message": "Input Field {fieldName} is required"}|
-|Bad Request|400|badRequest|Input fields are invalid|{"code": "badRequest","message": "Input Field {fieldName} is invalid"}|
+|Bad request|400|badRequest|Input fields are invalid|{"code": "badRequest","message": "Input field {fieldName} is invalid"}.|
 |Bad request|400|badRequest|badRequest|{"code": "badRequest","message": "Input field {fieldName} shouldn't be empty"}.|
 |Forbidden|403|Forbidden|The provider is not valid to create course activity for the given learning content|When the registrationId/learningProviderId doesn't match with the provider with which the learningContent is created.|
 |Forbidden|403|Forbidden|The user license is not valid to perform the operation|When the user for which the assignment is being created does not have a premium license.|
