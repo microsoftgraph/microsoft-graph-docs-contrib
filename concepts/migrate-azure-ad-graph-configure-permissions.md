@@ -7,6 +7,7 @@ ms.reviewer: dkershaw
 ms.localizationpriority: medium
 ms.prod: "applications"
 ms.topic: how-to
+zone_pivot_groups: configure-azure-ad-graph-permissions
 ms.date: 12/19/2023
 #customer intent: As an app developer, I want to grant Azure AD Graph permissions to my app registration, so that my app can continue to function while I plan for migration from Azure AD Graph to Microsoft Graph.
 ---
@@ -17,10 +18,10 @@ Azure Active Directory (Azure AD) Graph [is deprecated and is on its retirement 
 
 Your app might still temporarily require Azure AD Graph permissions to access resources. You can follow one of four methods described in this article to configure Azure AD Graph permissions for your app registration:
 
-1. [Use the Microsoft Entra admin center to find the APIs your organization uses](#option-1-use-the-microsoft-entra-admin-center-to-find-the-apis-your-organization-uses)
-1. [Update the application manifest on the Microsoft Entra admin center](#option-2-update-the-application-manifest-on-the-microsoft-entra-admin-center)
-1. [Use the Microsoft Graph applications API](#option-3-use-the-microsoft-graph-applications-api)
-1. [Use the Microsoft Graph PowerShell SDK](#option-4-use-the-microsoft-graph-powershell-sdk)
+1. [Use the Microsoft Entra admin center to find the APIs your organization uses](#use-the-microsoft-entra-admin-center-to-find-the-apis-your-organization-uses)
+1. [Update the application manifest on the Microsoft Entra admin center](#update-the-application-manifest-on-the-microsoft-entra-admin-center)
+1. [Use the Microsoft Graph applications API](#use-the-microsoft-graph-applications-api)
+<!--1. [Use the Microsoft Graph PowerShell SDK](#option-4-use-the-microsoft-graph-powershell-sdk)-->
 
 > [!CAUTION]
 > Any app using Azure AD Graph will still stop functioning after the API is retired. For more information, see [Migrate Azure AD Graph apps to Microsoft Graph](migrate-azure-ad-graph-overview.md).
