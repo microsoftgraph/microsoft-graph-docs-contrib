@@ -343,6 +343,8 @@
           "SubArea": "Identity and sign-in"
         },
         {
+          "ChangeList": [
+        {
           "Id": "daf1f318-9192-4860-b77b-d8766ac97dd4",
           "ApiChange": "Resource",
           "ChangedApiName": "authenticationEventsFlow",
