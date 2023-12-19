@@ -95,11 +95,11 @@ By default, the `mgt-person` component will pass the person details to the `mgt-
 | Attribute       | Type                                                                       | Description                                                                                                                                                                      |
 | --------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | person-details  | MicrosoftGraph.User <br> MicrosoftGraph.Person <br> MicrosoftGraph.Contact | Person object as defined by Microsoft Graph, containing details related to the user.                                                                                             |
-| person-image    | string                                                                     | Image uri related to the person displayed in the card.                                                                                                                           |
-| inherit-details | None.                                                                      | Allows person-card to walk parent tree for `mgt-person` component to use the same `person-details` and `person-image` data.                                                      |
-| user-id         | string                                                                     | Allows developers to supply user-id to retrieve data shown on person-card component                                                                                              |
-| person-query    | string                                                                     | Allows developers to supply person-query to retrieve data shown on person-card component                                                                                         |
-| person-card     | string                                                                     | Specifies wheter the `person-card` component can be shown as a pop up card when you hover or click on the the `mgt-person` component. The allowed values are `hover` or `click`. |
+| person-image    | String                                                                     | Image uri related to the person displayed in the card.                                                                                                                           |
+| inherit-details | None                                                                       | Allows person-card to walk parent tree for `mgt-person` component to use the same `person-details` and `person-image` data.                                                      |
+| user-id         | String                                                                     | Allows developers to supply user-id to retrieve data shown on person-card component                                                                                              |
+| person-query    | String                                                                     | Allows developers to supply person-query to retrieve data shown on person-card component                                                                                         |
+| person-card     | String                                                                     | Specifies wheter the `person-card` component can be shown as a pop up card when you hover or click on the the `mgt-person` component. The allowed values are `hover` or `click`. |
 
 ## CSS custom properties
 
@@ -152,7 +152,7 @@ The `mgt-person-card` component defines the following CSS custom properties.
   --organization-member-person-avatar-size: 60px;
   --organization-direct-report-person-avatar-size: 80px;
 
-  /* Styling the avatar-size in person-card sections */
+  /** Style for the avatar-size in the person-card sections */
   --organization-member-person-avatar-size: 60px;
   --coworker-person-avatar-size: 50px;
   --direct-report-person-avatar-size: 40px;
