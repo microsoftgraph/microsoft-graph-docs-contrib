@@ -53,7 +53,7 @@ This article describes error codes that are returned by the learningCourseActivi
 |Bad Request|404|Not Found|The requested assignment {id} doesn’t exist.|
 |Internal Server Error|500|Internal Server Error|Internal Server Error|
 |Request throttled|429|Too Many Requests|{"code": "tooManyRequests","message": "Retry after {noOfMinutes} minutes"}|
-|Service Unavailable|503|Service Unavailable|{"code": "serviceUnavailable","message": "Retry after {noOfMinutes} minutes"}|
+|Service unavailable|503|Service unavailable|{"code": "serviceUnavailable","message": "Retry after {noOfMinutes} minutes"}.|
 
 ## Error codes and messages for failed update requests
 
