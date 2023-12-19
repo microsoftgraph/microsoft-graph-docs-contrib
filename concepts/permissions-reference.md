@@ -13,7 +13,7 @@ ms.date: 10/26/2023
 
 # Microsoft Graph permissions reference
 
-For an app to access data in Microsoft Graph, the user or administrator must grant it the permissions it needs. This topic lists the delegated and application permissions exposed by Microsoft Graph. For guidance about how to use the permissions, see the [Overview of Microsoft Graph permissions](permissions-overview.md).
+For an app to access data in Microsoft Graph, the user or administrator must grant it the permissions it needs. This article lists the delegated and application permissions exposed by Microsoft Graph. For guidance about how to use the permissions, see the [Overview of Microsoft Graph permissions](permissions-overview.md).
 
 To read information about all Microsoft Graph permissions programmatically, sign-in to an API client such as Graph Explorer using an account that has at least the *Application.Read.All* permission and run the following request.
 
@@ -144,7 +144,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | - | e03cf23f-8056-446a-8994-7d93dfc8b50e 
 | DisplayText | - | Read user activity statistics 
-| Description | - | Allows the app to read the signed-in user's activity statistics, such as how much time the user has spent on emails, in meetings, or in chat sessions. 
+| Description | - | Allows the app to read the signed-in user's activity statistics, such as how much time the user spent on emails, in meetings, or in chat sessions. 
 | AdminConsentRequired | - | No 
 
 ---
@@ -210,7 +210,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | - | af281d3a-030d-4122-886e-146fb30a0413 
 | DisplayText | - | Read the trusted certificate authority configuration for applications 
-| Description | - | Allows the app to read the trusted certificate authority configuration which can be used to restrict application certificates based on their issuing authority, on behalf of the signed-in user. 
+| Description | - | Allows the app to read the trusted certificate authority configuration, which can be used to restrict application certificates based on their issuing authority, on behalf of the signed-in user. 
 | AdminConsentRequired | - | Yes 
 
 ---
@@ -221,7 +221,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | - | 4bae2ed4-473e-4841-a493-9829cfd51d48 
 | DisplayText | - | Read and write the trusted certificate authority configuration for applications 
-| Description | - | Allows the app to create, read, update and delete the trusted certificate authority configuration which can be used to restrict application certificates based on their issuing authority, on behalf of the signed-in user. 
+| Description | - | Allows the app to create, read, update and delete the trusted certificate authority configuration, which can be used to restrict application certificates based on their issuing authority, on behalf of the signed-in user. 
 | AdminConsentRequired | - | Yes 
 
 ---
@@ -1775,8 +1775,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | - | c0b0103b-c053-4b2e-9973-9f3a544ec9b8 
-| DisplayText | - | Read users' class assignments information without reading any feedback or outcomes 
-| Description | - | Allows the app to read assignments information on behalf of the user without reading any feedback or outcomes. 
+| DisplayText | - | Read users' class assignment information without reading any feedback or outcomes 
+| Description | - | Allows the app to read assignment information on behalf of the user without reading any feedback or outcomes. 
 | AdminConsentRequired | - | Yes 
 
 ---
@@ -1786,8 +1786,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | 6e0a958b-b7fc-4348-b7c4-a6ab9fd3dd0e | - 
-| DisplayText | Read all class assignments information without reading any feedback or outcomes | - 
-| Description | Allows the app to read all class assignments information for all users without a signed-in user without reading any feedback or outcomes. | - 
+| DisplayText | Read all class assignment information without reading any feedback or outcomes | - 
+| Description | Allows the app to read all class assignment information for all users without a signed-in user without reading any feedback or outcomes. | - 
 | AdminConsentRequired | Yes | - 
 
 ---
@@ -1819,8 +1819,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | - | 2ef770a1-622a-47c4-93ee-28d6adbed3a0 
-| DisplayText | - | Read and write users' class assignments information without impacting or reading any feedback or outcomes 
-| Description | - | Allows the app to read and write assignments information on behalf of the user without affecting or reading any feedback or outcomes.
+| DisplayText | - | Read and write users' class assignment information without impacting or reading any feedback or outcomes 
+| Description | - | Allows the app to read and write assignment information on behalf of the user without affecting or reading any feedback or outcomes.
 | AdminConsentRequired | - | Yes 
 
 ---
@@ -1830,8 +1830,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | f431cc63-a2de-48c4-8054-a34bc093af84 | -
-| DisplayText | Create, read, update, and delete all class assignments information without accessing or impacting any feedback or outcomes | - 
-| Allows the app to read and write assignments information on behalf of the user without affecting or reading any feedback or outcomes. | - 
+| DisplayText | Create, read, update, and delete all class assignment information without accessing or impacting any feedback or outcomes | - 
+| Allows the app to read and write assignment information on behalf of the user without affecting or reading any feedback or outcomes. | - 
 | AdminConsentRequired | Yes | - 
 
 ---
