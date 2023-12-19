@@ -114,7 +114,7 @@ The `mgt-people-picker` component defines the following CSS custom properties.
   --people-picker-search-icon-color: yellow;
   --people-picker-remove-selected-close-icon-color: blue;
 
-  /* Styling the avatar-size in people-picker */
+  /** Style for the avatar-size in the people-picker **/
   --people-picker-result-person-avatar-size: 50px;
   --people-picker-selected-person-avatar-size: 30px;
 
@@ -183,7 +183,7 @@ The control uses the global authentication provider described in the [authentica
 | `people`     | List of people | Used when `type` is set to `PersonType.person` or `PersonType.any` |
 | `users`      | List of users  | Used when `groupId` specified                                      |
 
-See [Caching](../customize-components/cache.md) for more details on how to configure the cache.
+For more information on how to configure the cache, see [Caching](../customize-components/cache.md).
 
 ## Extend for more control
 
