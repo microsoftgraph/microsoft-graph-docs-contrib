@@ -27,7 +27,7 @@ This article describes error codes that are returned by the learningCourseActivi
 |Forbidden|403|The provider isn't valid to create course activity for the given learning content|When the registrationId/learningProviderId doesn't match the provider with which the learningContent is created.|
 |Forbidden|403|User License isn't valid to perform the operation|When the user for which Assignment is being created doesn't have a premium license|
 
-## Error codes and messages for delete request fail
+## Error codes and messages for failed delete requests
 
 |Scenario|HTTP code|Code|Message|Details|
 |:---|:---|:---|:---|:---|
