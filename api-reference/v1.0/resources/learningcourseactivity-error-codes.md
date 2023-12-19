@@ -23,7 +23,7 @@ This article describes error codes that are returned by the learningCourseActivi
 |Internal server error|500|Internal server error|Internal server error.|
 |Request throttled|429|Too many requests|{"code": "tooManyRequests","message": "Retry after {noOfMinutes} minutes"}.|
 |Service unavailable|503|Service unavailable|{"code": "serviceUnavailable","message": "Retry after {noOfMinutes} minutes"}.|
-|Multiple Field validations fail|400|badRequest|badRequest|{"code": "badRequest","message": "Input field {fieldName}shouldn't be empty"}, {"code": "badRequest","message": "Input Field {fieldName} is required"}, {"code": "badRequest","message": "Input field {fieldName}length exceeded than {expectedLength}"}|
+|Multiple field validations fail|400|badRequest|badRequest|{"code": "badRequest","message": "Input field {fieldName}shouldn't be empty"}, {"code": "badRequest","message": "Input field {fieldName} is required"}, {"code": "badRequest","message": "Input field {fieldName}length exceeded than {expectedLength}"}.|
 |Forbidden|403|The provider isn't valid to create course activity for the given learning content|When the registrationId/learningProviderId doesnot match with the provider with which the LearningContent is created|
 |Forbidden|403|User License isn't valid to perform the operation|When the user for which Assignment is being created doesn't have a premium license|
 
