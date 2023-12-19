@@ -11,7 +11,7 @@ doc_type: conceptualPageType
 
 Namespace: microsoft.graph
 
-This article describes error codes that are returned by the LearningCourseActivity APIs in Microsoft Graph when a request sent through these APIs fails.
+This article describes error codes that are returned by the learningCourseActivity API in Microsoft Graph whenever a request that is sent through the API fails.
 
 ## Error codes and messages for create request fail
 
