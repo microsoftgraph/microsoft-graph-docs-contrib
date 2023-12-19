@@ -1,7 +1,7 @@
 ---
 title: "Update conversation thread"
 description: "Update a thread object."
-author: "Jordanndahl"
+author: "mikemcleanlive"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType

@@ -1,7 +1,7 @@
 ---
 title: "Create conversation thread"
 description: "Start a new group conversation by first creating a thread. "
-author: "Jordanndahl"
+author: "mikemcleanlive"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType

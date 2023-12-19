@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Delete an [identityApiConnector](../resources/identityapiconnector.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 
