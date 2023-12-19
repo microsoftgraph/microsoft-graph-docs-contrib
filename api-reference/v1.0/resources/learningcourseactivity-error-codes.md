@@ -31,7 +31,7 @@ This article describes error codes that are returned by the learningCourseActivi
 
 |Scenario|HTTP code|Code|Message|Details|
 |:---|:---|:---|:---|:---|
-|Method not supported for entity|405|MethodNotAllowed|This method isn't supported for this entity type.  See the Microsoft Graph documentation for the methods applicable to this entity|
+|Method not supported for entity|405|methodNotAllowed|This method isn't supported for this entity type. See the Microsoft Graph documentation for the methods applicable to this entity.|
 |User doesn't have the appropriate permissions scope|403|Forbidden|Your account doesn't have access to this report or data. Please contact your global administrator to request access.|
 |Forbidden|403|Forbidden|You don't have a service plan adequate for this request.|
 |Bad request|400|Bad Request|This provider isn't enabled for the given tenant.|
