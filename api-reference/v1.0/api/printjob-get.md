@@ -60,8 +60,8 @@ If successful, this method returns a `200 OK` response code and a [printJob](../
 ### Example 1: Get print job
 
 #### Request
-The following is an example of a request to get metadata for a print job.
 
+The following example shows a request to get metadata for a print job.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -107,7 +107,8 @@ GET https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{printJobId
 ---
 
 #### Response
-**Note:** The response object shown here might be shortened for readability.
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -127,13 +128,11 @@ Content-Type: application/json
     "displayName": "John Smith",
     "userPrincipalName": "john.smith@contoso.com"
   },
-  "configuration": {    
-  },
+  "configuration": {},
   "status": {
     "state": "completed",
     "description": "The print job has completed successfully and no further processing will take place.",
-    "details": [      
-    ],
+    "details": [],
     "isAcquiredByPrinter": true
   },
   "redirectedTo": null,
@@ -145,8 +144,8 @@ Content-Type: application/json
 ### Example 2: Get print job with task list
 
 #### Request
-The following is a request to get a print job and any [tasks](../resources/printtask.md) that are executing, or have executed, against it.
 
+The following example shows a request to get a print job and any [tasks](../resources/printtask.md) that are running or have run against it.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -192,7 +191,8 @@ GET https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{printJobId
 ---
 
 #### Response
-**Note:** The response object shown here might be shortened for readability.
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -212,13 +212,11 @@ Content-Type: application/json
     "displayName": "John Smith",
     "userPrincipalName": "john.smith@contoso.com"
   },
-  "configuration": {    
-  },
+  "configuration": {},
   "status": {
     "state": "completed",
     "description": "The print job has completed successfully and no further processing will take place.",
-    "details": [      
-    ],
+    "details": [],
     "isAcquiredByPrinter": true
   },
   "redirectedTo": null,
@@ -240,8 +238,8 @@ Content-Type: application/json
 ### Example 3: Get a print job and its associated document data
 
 #### Request
-The following is an example of a request to get a print job and its associated document data.
 
+The following example shows a request to get a print job and its associated document data.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -287,7 +285,8 @@ GET https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{printJobId
 ---
 
 #### Response
-**Note:** The response object shown here might be shortened for readability.
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -307,13 +306,11 @@ Content-Type: application/json
     "displayName": "John Smith",
     "userPrincipalName": "john.smith@contoso.com"
   },
-  "configuration": {    
-  },
+  "configuration": {},
   "status": {
     "state": "completed",
     "description": "The print job has completed successfully and no further processing will take place.",
-    "details": [      
-    ],
+    "details": [],
     "isAcquiredByPrinter": true
   },
   "redirectedTo": null,
