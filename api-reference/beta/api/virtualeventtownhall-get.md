@@ -1,9 +1,9 @@
 ---
 title: "Get virtualEventTownhall"
 description: "Read the properties and relationships of a virtualEventTownhall object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "awang119"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -22,7 +22,11 @@ One of the following permissions is required to call this API. To learn more, in
   "name": "virtualeventtownhall-get-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/virtualeventtownhall-get-permissions.md)]
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|VirtualEvent.Read.All|
 
 ## HTTP request
 
@@ -31,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Entity URI for microsoft.graph.virtualEventTownhall not found
+GET /solutions/virtualEvents/townhalls/{townhallId}
 ```
 
 ## Optional query parameters
@@ -59,7 +63,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Entity URI for microsoft.graph.virtualEventTownhall not found
+GET https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/{townhallId}
 ```
 
 
