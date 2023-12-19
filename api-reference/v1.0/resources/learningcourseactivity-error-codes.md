@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 This article describes error codes that are returned by the learningCourseActivity API in Microsoft Graph whenever a request that is sent through the API fails.
 
-## Error codes and messages for create request fail
+## Error codes and messages for failed create requests
 
 |Scenario|HTTP Code|Code|Message|Details|
 |:---|:---|:---|:---|:---|
