@@ -1,6 +1,6 @@
 ---
 title: "customExtensionOverwriteConfiguration resource type"
-description: "Configuration regarding properties of the custom extension which can be overwritten per-event listener."
+description: "Configuration regarding properties of the custom extension that can be overwritten per event listener."
 author: "nanguil"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Configuration regarding properties of the custom extension which can be overwritten per-event listener. If no values are provided, the properties on the custom extension are used.
+Configuration regarding properties of the custom extension that can be overwritten per event listener. If no values are provided, the properties on the custom extension are used.
 
 ## Properties
 |Property|Type|Description|
