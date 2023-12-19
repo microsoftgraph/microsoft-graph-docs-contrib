@@ -7,7 +7,7 @@ ms.prod: "employee-learning"
 doc_type: conceptualPageType
 ---
 
-# Microsoft Graph LearningCourseActivity API error responses
+#Error Responses in the LearningCourseActivity API
 
 Namespace: microsoft.graph
 
