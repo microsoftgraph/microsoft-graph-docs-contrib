@@ -33,7 +33,7 @@ GET /riskyUsers
 GET /identityProtection/riskyUsers
 ```
 ## Optional query parameters
-This method supports `$filter` to customize the query response. See the example later in this topic. 
+This method supports the `$filter` and `$select` [OData query parameters](/graph/query-parameters) to customize the query response. The maximum page size with `$top` is 500 objects.
 
 ## Request headers
 | Name      |Description|
