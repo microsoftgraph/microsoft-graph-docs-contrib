@@ -1,6 +1,6 @@
 ---
 title: "Error responses in the learningCourseActivity API"
-description: "This article describes error codes that are returned by the learningCourseActivity API in Microsoft Graph whenever a request that is sent through the API fails."
+description: "This article describes error codes returned by the learningCourseActivity API in Microsoft Graph whenever a request that is sent through the API fails."
 author: "jprasad"
 ms.localizationpriority: medium
 ms.prod: "employee-learning"
@@ -11,7 +11,7 @@ doc_type: conceptualPageType
 
 Namespace: microsoft.graph
 
-This article describes error codes that are returned by the learningCourseActivity API in Microsoft Graph whenever a request that is sent through the API fails.
+This article describes error codes returned by the learningCourseActivity API in Microsoft Graph whenever a request that is sent through the API fails.
 
 ## Error codes and messages for failed create requests
 
@@ -32,7 +32,7 @@ This article describes error codes that are returned by the learningCourseActivi
 |Scenario|HTTP code|Code|Message|Details|
 |:---|:---|:---|:---|:---|
 |Method not supported for entity|405|methodNotAllowed|This method isn't supported for this entity type. See the Microsoft Graph documentation for the methods applicable to this entity.|
-|User doesn't have the appropriate permissions scope|403|Forbidden|Your account doesn't have access to this report or data. Please contact your global administrator to request access.|
+|User doesn't have the appropriate permissions scope|403|Forbidden|Your account doesn't have access to this report or data. Contact your global administrator to request access.|
 |Forbidden|403|Forbidden|You don't have an adequate service plan for this request.|
 |Bad request|400|badRequest|This provider isn't enabled for the given tenant.|
 |Bad request|400|badRequest|There was an issue with your request. Make sure the registrationId you entered is valid or registered for your tenant.|
@@ -46,7 +46,7 @@ This article describes error codes that are returned by the learningCourseActivi
 |Scenario|HTTP Code|Code|Message|Details|
 |:---|:---|:---|:---|:---|
 |Method not supported for entity|405|methodNotAllowed|This method isn't supported for this entity type. See the Microsoft Graph documentation for the methods applicable to this entity.|
-|User doesn't have appropriate permission scope|403|Forbidden|Your account doesn't have access to this report or data. Please contact your global administrator to request access.|
+|User doesn't have appropriate permission scope|403|Forbidden|Your account doesn't have access to this report or data. Contact your global administrator to request access.|
 |Forbidden|403|Forbidden|You don't have an adequate service plan for this request.|
 |Bad request|400|badRequest|This provider isn't enabled for the given tenant.|
 |Bad request|400|badRequest|There was an issue with your request. Make sure the registrationId you entered is valid or registered for your tenant.|
@@ -60,7 +60,7 @@ This article describes error codes that are returned by the learningCourseActivi
 |Scenario|HTTP Code|Code|Message|Details|
 |:---|:---|:---|:---|:---|
 |Method not supported for entity|405|methodNotAllowed|This method isn't supported for this entity type. See the Microsoft Graph documentation for the methods applicable to this entity.|
-|User doesn't have appropriate permission scope|403|Forbidden|Your account doesn't have access to this report or data. Please contact your global administrator to request access.|
+|User doesn't have appropriate permission scope|403|Forbidden|Your account doesn't have access to this report or data. Contact your global administrator to request access.|
 |Forbidden|403|Forbidden|You don't have an adequate service plan for this request.|
 |Bad request|400|badRequest|This provider isn't enabled for the given tenant.|
 |Bad request|400|badRequest|There was an issue with your request. Make sure the registrationId you entered is valid or registered for your tenant|
@@ -71,5 +71,5 @@ This article describes error codes that are returned by the learningCourseActivi
 |Bad request|400|badRequest|Required fields are missing|{"code": "badRequest","message": "Input field {fieldName} is required"}.|
 |Bad request|400|badRequest|Input fields are invalid|{"code": "badRequest","message": "Input field {fieldName} is invalid"}.|
 |Bad request|400|badRequest|badRequest|{"code": "badRequest","message": "Input field {fieldName} shouldn't be empty"}.|
-|Forbidden|403|Forbidden|The provider is not valid to create course activity for the given learning content|When the registrationId/learningProviderId doesn't match with the provider with which the learningContent is created.|
+|Forbidden|403|Forbidden|The provider isn't valid to create course activity for the given learning content|When the registrationId/learningProviderId doesn't match with the provider with which the learningContent is created.|
 |Forbidden|403|Forbidden|The user license is not valid to perform the operation|When the user for which the assignment is being created does not have a premium license.|
