@@ -73,7 +73,7 @@ In the request body, use @odata.type to specify the type of [learningCourseActiv
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [learningCourseActivity](../resources/learningcourseactivity.md) object of type [learningAssignment](../resources/learningassignment.md) or [learningSelfInitiated](../resources/learningselfinitiatedcourse.md) in the response body.
-For more information about errors, see [Error codes and messages](../resources/learningcourseactivity-error-codes.md).
+For more information about errors, see [Error codes and messages](../../../concepts/learningcourseactivity-error-codes.md).
 
 ## Examples
 

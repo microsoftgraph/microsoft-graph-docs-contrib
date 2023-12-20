@@ -76,7 +76,7 @@ Don't supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a [learningCourseActivity](../resources/learningcourseactivity.md) object in the response body.
-For more information about errors returned, see [Error codes and messages](../resources/learningcourseactivity-error-codes.md).
+For more information about errors returned, see [Error codes and messages](../../../concepts/learningcourseactivity-error-codes.md).
 
 ## Examples
 

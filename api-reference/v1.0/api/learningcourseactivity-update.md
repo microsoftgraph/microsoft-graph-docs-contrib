@@ -68,7 +68,7 @@ The following table lists the properties you can change for a self-initiated lea
 ## Response
 
 If successful, this method returns a `204 No Content` response code.
-For more information about errors returned, see [Error codes and messages](../resources/learningcourseactivity-error-codes.md).
+For more information about errors returned, see [Error codes and messages](../../../concepts/learningcourseactivity-error-codes.md).
 
 ## Examples
 
