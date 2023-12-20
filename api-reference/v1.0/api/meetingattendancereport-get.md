@@ -11,10 +11,10 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get the [meetingAttendanceReport](../resources/meetingAttendanceReport.md) for an [onlineMeeting](../resources/onlinemeeting.md). Each time an online meeting ends, an attendance report will be generated for that session.
+Get the [meetingAttendanceReport](../resources/meetingattendancereport.md) for an [onlineMeeting](../resources/onlinemeeting.md). Each time an online meeting ends, an attendance report is generated for that session.
 
 > [!WARNING]
-> This method does not support channel meetings.
+> This method doesn't support channel meetings.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "meetingattendancereport_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/meetingattendancereport-get-permissions.md)]
 
-To use application permission for this API, tenant administrators must create an application access policy and grant it to a user. This authorizes the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
+To use application permission for this API, tenant administrators must create an application access policy and grant it to a user. This authorizes the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more information, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 
 ## HTTP request
 
@@ -38,23 +38,31 @@ GET /me/onlineMeetings/{meetingId}/attendanceReports/{reportId}
 GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports/{reportId}
 ```
 
+To get an attendance report for a webinar session by ID:
+<!-- { "blockType": "ignored" }-->
+``` http
+GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}/attendanceReports/{reportId}
+```
+
 > [!TIP]
 >
 >- **userId** is the object ID of a user in [Microsoft Entra admin center > user management page](https://entra.microsoft.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 >- `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
 >- `reportId` is the **id** of an [meetingAttendanceReport](../resources/meetingAttendanceReport.md) object.
->- Only the meeting organizer or co-organizer can access this API.
+>- `webinarId` is the **id** of an [virtualEventWebinar](../resources/virtualEventWebinar.md) object.
+>- `sessionId` is the **id** of an [virtualEventSession](../resources/virtualEventSession.md) object.
+>- Only the meeting/webinar organizer or co-organizer can access this API.
 
 > [!CAUTION]
 >
->- The **attendanceRecords** property does not return information about a breakout room.
+>- The **attendanceRecords** property doesn't return information about a breakout room.
 
 ## Optional query parameters
 
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 > [!TIP]
-> The **attendanceRecords** property is a navigation property that is not returned by default. To retrieve **attendanceRecords** in line, use the `$expand=attendanceRecords` query option as shown in the [example](#example).
+> The **attendanceRecords** property is a navigation property that isn't returned by default. To retrieve **attendanceRecords** in line, use the `$expand=attendanceRecords` query option as shown in the [example 1](#example-1-get-the-attendance-report-for-an-online-meeting-by-id).
 
 ## Request headers
 
@@ -68,14 +76,17 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [meetingAttendanceReport](../resources/meetingAttendanceReport.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [meetingAttendanceReport](../resources/meetingattendancereport.md) object in the response body.
 
-## Example
+## Examples
+
+### Example 1: Get the attendance report for an online meeting by ID
 
 The following example shows how to get the attendance report for an online meeting with delegated permission.
 
-### Request
+#### Request
 
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -122,9 +133,11 @@ GET https://graph.microsoft.com/v1.0/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZ
 
 ---
 
-### Response
+#### Response
 
-> **Note**: The response object shown here might be shortened for readability.
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -172,5 +185,47 @@ Content-Type: application/json
       ]
     }
   ]
+}
+```
+
+### Example 2: Get the attendance report for a webinar session by ID
+
+The following example shows how to get the attendance report for a webinar session based on its **id**.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_virtualeventattendancereport",
+  "sampleKeys": ["f8ce2a5f-0e6a-4186-aa90-1f64bc023566@5466a424-aadf-425c-9b24-034ca28d4bdd", "8d62dd52-4dff-4c75-96a9-f905cc3ff942", "b76965d4-0763-496e-9980-b323c5f3aa3b"]
+}
+-->
+``` http
+GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/f8ce2a5f-0e6a-4186-aa90-1f64bc023566@5466a424-aadf-425c-9b24-034ca28d4bdd/sessions/8d62dd52-4dff-4c75-96a9-f905cc3ff942/attendanceReports/b76965d4-0763-496e-9980-b323c5f3aa3b
+```
+
+#### Response
+
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.meetingAttendanceReport"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#solutions/virtualEvents/webinars('f8ce2a5f-0e6a-4186-aa90-1f64bc023566@5466a424-aadf-425c-9b24-034ca28d4bdd')/sessions('8d62dd52-4dff-4c75-96a9-f905cc3ff942')/attendanceReports('b76965d4-0763-496e-9980-b323c5f3aa3b')",
+  "id": "b76965d4-0763-496e-9980-b323c5f3aa3b",
+  "totalParticipantCount": 2,
+  "meetingStartDateTime": "2021-10-04T23:13:31.658Z",
+  "meetingEndDateTime": "2021-10-04T23:18:57.563Z"
 }
 ```

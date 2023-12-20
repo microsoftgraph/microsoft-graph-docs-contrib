@@ -17,6 +17,16 @@ Microsoft Graph Data Connect currently supports the following datasets. To view 
 
 <a name='azure-active-directory'></a>
 
+### Activities
+
+| Dataset name | Description | Learn more |
+| --- | --- | --- |
+| OutlookContactActivity_v0 | Provides employees' activity with their contacts in Microsoft Outlook. | [OutlookContactActivity_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-outlookcontactactivity.md) |
+| OutlookMailActivity_v0 | Provides employees' activity with their email in Outlook. | [OutlookMailActivity_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-outlookmailactivity.md) |
+| OutlookMeetingActivity_v0 | Provides employees' activity with their meetings in Outlook. | [OutlookMeetingActivity_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-outlookmeetingactivity.md) |
+| TeamsChannelActivity_v0 | Providesemployees' activity with their channels in Microsoft Teams. | [TeamsChannelActivity_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-teamschannelactivity.md) |
+| TeamsConversationActivity_v0 | Provides employees' activity with their teams and chats in Teams. | [TeamsConversationActivity_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-teamsconversationactivity.md) |
+
 ### Call records
 
 | Dataset name | Description | Learn more |
