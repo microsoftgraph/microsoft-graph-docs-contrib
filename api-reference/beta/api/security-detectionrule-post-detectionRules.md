@@ -44,7 +44,7 @@ POST /security/rules/detectionRules
 |Content-Type|application/json. Required.|
 
 ## Request body
-Within the request body, supply a [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md). Some metadata fields are unnecessary and are be ignored, such as 'createdBy', 'lastModifiedDateTime', etc.
+Within the request body, supply a [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md). Some metadata fields are unnecessary and are be ignored, such as 'createdBy' and 'lastModifiedDateTime'.
 
 ## Response
 
@@ -53,7 +53,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
 ## Examples
 
 ### Request
-The following is an example of a request.
+An example of a request:
 <!-- {
   "blockType": "request",
   "name": "update_detectionrule"
@@ -99,7 +99,7 @@ Content-Type: application/json
 ```
 
 ### Response
-The following is an example of the response
+Example of the response:
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
