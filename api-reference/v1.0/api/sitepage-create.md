@@ -74,7 +74,7 @@ Content-Type: application/json
   "showRecommendedPages": false,
   "titleArea": {
     "enableGradientEffect": true,
-    "imageWebUrl": "/_LAYOUTS/IMAGES/VISUALTEMPLATETITLEIMAGE.JPG",
+    "imageWebUrl": "https://cdn.hubblecontent.osi.office.net/m365content/publish/005292d6-9dcc-4fc5-b50b-b2d0383a411b/image.jpg",
     "layout": "colorBlock",
     "showAuthor": true,
     "showPublishedDate": false,
@@ -174,7 +174,7 @@ Content-type: application/json
     "@odata.type": "microsoft.graph.sitePage",
     "id": "0dd6ddd6-45bd-4acd-b683-de0e6e7231b7",
     "name": "test.aspx",
-    "webUrl": "SitePages/test.aspx",
+    "webUrl": "https://contoso.com/SitePages/test.aspx",
     "title": "test",
     "pageLayout": "article",
     "showComments": true,
@@ -203,7 +203,7 @@ Content-type: application/json
     },
     "titleArea": {
         "enableGradientEffect": true,
-        "imageWebUrl": "/_LAYOUTS/IMAGES/VISUALTEMPLATETITLEIMAGE.JPG",
+        "imageWebUrl": "https://cdn.hubblecontent.osi.office.net/m365content/publish/005292d6-9dcc-4fc5-b50b-b2d0383a411b/image.jpg",
         "layout": "colorBlock",
         "showAuthor": true,
         "showPublishedDate": false,
