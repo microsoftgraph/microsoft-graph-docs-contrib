@@ -8,6 +8,7 @@ ms.topic: "conceptual"
 ms.localizationpriority: medium
 ms.prod: "applications"
 ms.date: 01/11/2022
+#customer intent: As a developer, I want to configure Microsoft Entra application proxy programmatically using Microsoft Graph, so that I can automate the process of providing secure remote access and single sign-on to on-premises web applications for users.
 ---
 
 # Configure Application Proxy using the Microsoft Graph API
@@ -566,7 +567,7 @@ Content-type: appplication/json
     "singleSignOnSettings": {
       "kerberosSignOnSettings": {
         "kerberosServicePrincipalName": "HTTP/iwademo.contoso.com",
-   	    "kerberosSignOnMappingAttributeType": "userPrincipalName"
+           "kerberosSignOnMappingAttributeType": "userPrincipalName"
       },
       "singleSignOnMode": "onPremisesKerberos"
     }
