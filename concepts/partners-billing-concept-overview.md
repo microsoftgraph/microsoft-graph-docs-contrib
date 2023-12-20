@@ -10,8 +10,6 @@ ms.prod: "reports"
 
 The partner billing API in Microsoft Graph allow Microsoft direct partners in the Cloud Solution Provider programs to export a high volume of their billed and unbilled data asynchronously, removing the need to maintain an open connection for hours and loop through millions of transactions iteratively. Asynchronous APIs enable fast, efficient retrieval of billing and reconciliation data in manageable chunks for quicker reconciliation.
 
-The partner billing API is defined in the OData subnamespace `microsoft.graph.partners.billing`.
-
 ## Why use the partner billing API?
 
 The partner billing API uses [valet key](/azure/architecture/patterns/valet-key) and [asynchronous request-reply](/azure/architecture/patterns/async-request-reply) patterns to optimize the efficiency and deliver results asynchronously. API responses contain a token that provides access to reconciliation data, including either all attributes or a selected subset.
