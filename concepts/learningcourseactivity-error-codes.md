@@ -1,5 +1,5 @@
 ---
-title: "Error Responses in the LearningCourseActivity API"
+title: "Error responses in the learningCourseActivity API"
 description: "This article describes error codes that are returned by the learningCourseActivity API in Microsoft Graph whenever a request that is sent through the API fails."
 author: "jprasad"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "employee-learning"
 doc_type: conceptualPageType
 ---
 
-# Error Responses in the LearningCourseActivity API
+# Error responses in the learningCourseActivity API
 
 Namespace: microsoft.graph
 
