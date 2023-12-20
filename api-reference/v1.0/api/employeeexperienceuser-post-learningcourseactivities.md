@@ -19,7 +19,7 @@ A learning course activity can be one of two types:
 
 Use this method to create either type of activity.
 
->**Note**: A provider can only manage Learning course activities when **isCourseAcitvitySyncEnabled** is set to `true`.  To update the value, use the [Update learningProvider](../api/learningprovider-update.md) method.
+>**Note**: A provider can only manage learning course activities when **isCourseAcitvitySyncEnabled** is set to `true`.  To update the value, use the [Update learningProvider](../api/learningprovider-update.md) method.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
