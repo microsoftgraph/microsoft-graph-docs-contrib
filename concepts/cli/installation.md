@@ -17,7 +17,7 @@ The Microsoft Graph command-line interface (CLI) is published on [GitHub](https:
 
 ### [Windows](#tab/windows)
 
-1. Download the .zip file beginning with **msgraph-cli-win-x64** from the **Assets** section of the page.
+1. Download the .zip file beginning with **msgraph-cli-win-x64** from the **Assets** section of the [GitHub Releases page](https://github.com/microsoftgraph/msgraph-cli/releases/latest).
 1. Extract the contents of the file into a directory.
 
 ### Windows environment setup (Optional)
@@ -34,7 +34,7 @@ The Microsoft Graph command-line interface (CLI) is published on [GitHub](https:
 
 ### [Linux](#tab/linux)
 
-1. Download the .tar.gz file beginning with **msgraph-cli-linux-x64** from the **Assets** section of the page.
+1. Download the .tar.gz file beginning with **msgraph-cli-linux-x64** from the **Assets** section of the [GitHub Releases page](https://github.com/microsoftgraph/msgraph-cli/releases/latest).
 1. Extract the contents of the file into a directory.
 
 ### Linux environment setup
@@ -78,7 +78,7 @@ The following steps are required on Linux distributions that do not have a deskt
 
 ### [macOS](#tab/macos)
 
-1. Download the .tar.gz file beginning with **msgraph-cli-osx-x64** (for Intel-based Mac) or **msgraph-cli-osx-arm** (for M1 or M2-based Mac) from the **Assets** section of the page.
+1. Download the .tar.gz file beginning with **msgraph-cli-osx-x64** (for Intel-based Mac) or **msgraph-cli-osx-arm** (for M1 or M2-based Mac) from the **Assets** section of the [GitHub Releases page](https://github.com/microsoftgraph/msgraph-cli/releases/latest).
 1. Extract the contents of the file into a directory.
 
 ### macOS environment setup
