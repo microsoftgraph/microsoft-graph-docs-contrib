@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-chats, err := graphClient.Users().ByUserId("user-id").Chats().ByChatId("chat-id").Get(context.Background(), nil)
+getAllRetainedMessages, err := graphClient.Users().ByUserId("user-id").Chats().GetAllRetainedMessages().Get(context.Background(), nil)
 
 
 ```

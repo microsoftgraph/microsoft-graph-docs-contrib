@@ -323,6 +323,32 @@
     {
       "ChangeList": [
         {
+          "Id": "3f4f3393-4490-462e-9d23-240ba64f5e71",
+          "ApiChange": "Resource",
+          "ChangedApiName": "dayNote",
+          "ChangeType": "Addition",
+          "Description": "Added the [dayNote](https://learn.microsoft.com/en-us/graph/api/resources/dayNote?view=graph-rest-beta) resource type and associated methods.",
+          "Target": "dayNote"
+        },
+        {
+          "Id": "3f4f3393-4490-462e-9d23-240ba64f5e71",
+          "ApiChange": "Resource",
+          "ChangedApiName": "dayNotes",
+          "ChangeType": "Addition",
+          "Description": "Added the **dayNotes** relationship to the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-beta) resource.",
+          "Target": "schedule"
+        }
+      ],
+      "Id": "3f4f3393-4490-462e-9d23-240ba64f5e71",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-12-07T12:54:52.9970774Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Shift management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "be1af9e5-af8c-4e0a-bb46-44f2b24e1cb2",
           "ApiChange": "Property",
           "ChangedApiName": "activitiesIncludedWhenCopyingShiftsEnabled",
@@ -335,7 +361,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "startDayOfWeek",
           "ChangeType": "Addition",
-          "Description": "Added the `startDayOfWeek` property to the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-beta) resource.",
+          "Description": "Added the **startDayOfWeek** property to the [schedule](https://learn.microsoft.com/en-us/graph/api/resources/schedule?view=graph-rest-beta) resource.",
           "Target": "schedule"
         },
         {
@@ -343,7 +369,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "code",
           "ChangeType": "Addition",
-          "Description": "Added the `code` property to the [schedulingGroup](https://learn.microsoft.com/en-us/graph/api/resources/schedulingGroup?view=graph-rest-beta) resource.",
+          "Description": "Added the **code** property to the [schedulingGroup](https://learn.microsoft.com/en-us/graph/api/resources/schedulingGroup?view=graph-rest-beta) resource.",
           "Target": "schedulingGroup"
         },
         {
@@ -351,7 +377,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "code",
           "ChangeType": "Addition",
-          "Description": "Added the `code` property to the [timeOffReason](https://learn.microsoft.com/en-us/graph/api/resources/timeOffReason?view=graph-rest-beta) resource.",
+          "Description": "Added the **code** property to the [timeOffReason](https://learn.microsoft.com/en-us/graph/api/resources/timeOffReason?view=graph-rest-beta) resource.",
           "Target": "timeOffReason"
         }
       ],
@@ -359,7 +385,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-12-04T15:45:17.4079567Z",
-      "WorkloadArea": "Teamwork",
+      "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
     }
   ]
