@@ -8,11 +8,12 @@ ms.localizationpriority: high
 ms.custom: scenarios:getting-started
 ms.prod: applications
 ms.date: 12/08/2022
+#customer intent: As a developer, I want to configure SAML-based single sign-on for my application using Microsoft Graph, so that I can enable secure authentication and authorization for users.
 ---
 
 # Configure SAML-based single sign-on for your application using the Microsoft Graph API
 
-In this article, you'll learn how to create and configure a SAML-based single sign-on (SSO) for your application in Microsoft Entra ID using the Microsoft Graph API. The application configuration includes basic SAML URLs, a claims mapping policy, and using a certificate to add a custom signing key. After the application is created, you assign a user to it to be an administrator. You then can use a URL to obtain Microsoft Entra SAML metadata for additional configuration of the application. 
+In this article, you'll learn how to create and configure a SAML-based single sign-on (SSO) for your application in Microsoft Entra ID using Microsoft Graph. The application configuration includes basic SAML URLs, a claims mapping policy, and using a certificate to add a custom signing key. After the application is created, you assign a user to it to be an administrator. You then can use a URL to obtain Microsoft Entra SAML metadata for additional configuration of the application. 
 
 This article uses an AWS Microsoft Entra application template as an example, but you can use the steps in this article for any SAML-based app in the Microsoft Entra gallery.
 
@@ -990,9 +991,9 @@ Make sure that the keyId for the keyCredential used for "Sign" matches the keyId
 
 # [HTTP](#tab/http)
 <!-- {
-	  "blockType": "request",
-	  "name": "tutorial_configure_saml_sso_add_credentials"
-	}-->
+      "blockType": "request",
+      "name": "tutorial_configure_saml_sso_add_credentials"
+    }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e
 Content-type: application/json
