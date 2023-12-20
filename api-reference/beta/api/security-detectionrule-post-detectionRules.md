@@ -56,7 +56,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
 An example of a request:
 <!-- {
   "blockType": "request",
-  "name": "update_detectionrule"
+  "name": "create_detectionrule"
 }
 -->
 ``` http

@@ -4,6 +4,7 @@ description: "Describes a 'Disable User' response action"
 author: "mmekler"
 ms.prod: "security"
 doc_type: resourcePageType
+ms.localizationpriority: medium
 ---
 
 # disableUserResponseAction resource type

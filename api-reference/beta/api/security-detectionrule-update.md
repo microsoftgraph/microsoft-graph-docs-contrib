@@ -56,7 +56,7 @@ The properties which are updateable are specified in the following table:
 | detectionAction/alertTemplate/severity           | [microsoft.graph.alertSeverity](../resources/enums.md#alertseverity-values)                  | Optional.                                                        |
 | detectionAction/alertTemplate/impactedAssets     | [microsoft.graph.security.impactedAsset](../resources/security-impactedasset.md)             | Optional. Provide 'null' to delete the existing inpacted assets. |
 | detectionAction/responseActions                  | [microsoft.graph.security.responseAction](../resources/security-responseaction.md)           | Optional.                                                        |
-| detectionAction/organizationalScope              | [microsoft.graph.security.organizationalscope](../resources/security-organizationalscope.md) | Optional.                                                        |
+| detectionAction/organizationalScope              | [microsoft.graph.security.organizationalScope](../resources/security-organizationalscope.md) | Optional.                                                        |
 | queryCondition/queryText                         | String                                                                                       | Optional.                                                        |
 | schedule/period                                  | String                                                                                       | Optional.                                                        |
 
