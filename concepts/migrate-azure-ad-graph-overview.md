@@ -6,14 +6,15 @@ ms.author: ombongifaith
 ms.reviewer: dkershaw
 ms.localizationpriority: medium
 ms.prod: "applications"
-ms.date: 06/22/2023
+ms.date: 12/19/2023
+#customer intent: As a developer currently using Azure AD Graph, I want to know why I should migrate my applications to Microsoft Graph.
 ---
 
 # Migrate your apps from Azure AD Graph to Microsoft Graph
 
 
 > [!IMPORTANT]
-> Azure Active Directory (Azure AD) Graph is deprecated. Going forward, we will make no further investment in Azure AD Graph, and Azure AD Graph APIs have no SLA or maintenance commitment beyond security-related fixes. Investments in new features and functionalities will only be made in Microsoft Graph.
+> Azure Active Directory (Azure AD) Graph is deprecated and is in its retirement path. Going forward, we will make no further investment in Azure AD Graph, and Azure AD Graph APIs have no SLA or maintenance commitment beyond security-related fixes. Investments in new features and functionalities will only be made in Microsoft Graph.
 >
 > June 30, 2023 will mark the end of the three-year deprecation period for Azure AD Graph. Before June 30, 2023, existing applications using Azure AD Graph will not be impacted. After June 30, 2023, Azure AD Graph will enter its retirement phase where we will retire it in incremental steps to allow you sufficient time to migrate your applications to Microsoft Graph APIs. The first step in this plan, and at a later date that we will announce, we will block the creation of any new applications using Azure AD Graph.
 >
