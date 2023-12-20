@@ -28,16 +28,16 @@ The following diagram shows the steps needed to download reconciliation data.
 
 ![Export data sequence diagram](../includes/images/lro_sequencediagram.png)
 
-To access the usage data asynchronously, follow these steps using the API endpoints:
+To access the usage data asynchronously, use the following steps with the API endpoints.
 
 ### 1. Usage line-item endpoint
 
-- Retrieve the billed or unbilled usage line items
+- Retrieve the [billed](/graph/api/partners-billing-billedusage-export) or [unbilled](/graph/api/partners-billing-unbilledusage-export) usage line items
 - Receive a `202 Accepted` response code and a URL in the response body
 
 ### 2. Operation status endpoint
 
-Poll the URL repeatedly until the manifest is returned
+Use the [Get operation](/graph/api/partners-billing-operation-get) endpoint to poll the URL repeatedly until the manifest is returned
 
 ## API reference
 
