@@ -34,7 +34,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.customExtensionOverwriteConfiguration",
   "configuration": {
-    "@odata.type": "microsoft.graph.clientConfiguration"
+    "@odata.type": "microsoft.graph.customExtensionClientConfiguration"
   },
 }
 ```
