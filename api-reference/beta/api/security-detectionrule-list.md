@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 Get a list of [Custom Detection Rules](../resources/security-detectionrule.md).
 With custom detections, you can proactively monitor for and respond to various events and system states, including suspected breach activity and misconfigured assets in their organization network.
-Using [Kusto query language (KQL)](/azure/data-explorer/kusto/query/), custom detection rules automatically trigger [alerts](../resources/security-alert.md) as well as response actions once there are events matching their KQL queries.
+Using [Kusto query language (KQL)](/azure/data-explorer/kusto/query/), custom detection rules automatically trigger [alerts](../resources/security-alert.md) and response actions once there are events matching their KQL queries.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,7 +45,7 @@ This method supports some of the OData query parameters to help customize the re
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-The following is an example of a request.
+An example of a request:
 <!-- {
   "blockType": "request",
   "name": "list_detectionrule"
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/security/rules/detectionRules?$top=3
 
 
 ### Response
-The following is an example of the response
+Example of the response:
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
