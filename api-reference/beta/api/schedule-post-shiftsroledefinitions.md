@@ -44,6 +44,12 @@ PATCH /team/{teamId}/schedule/shiftsRoleDefinitions/{roleId}
 |teamId|string|Team Id to set the role definitions.|
 |roleId|string|The affected role. Current supported values are `teamowner` and `scheduleowner`|
 
+### Supported values for roleId
+|Name|Description|
+|:---|:---|
+|scheduleOwner|Sets definitions for a schedule owner.|
+|teamOwner|Sets definitions for a team owner.|
+
 ## Request headers
 
 |Name|Description|
