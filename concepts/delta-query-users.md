@@ -8,6 +8,7 @@ ms.prod: "change-notifications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ms.date: 11/17/2022
+#customer intent: As a developer, I want to track changes to users, so that I can build apps that process the changes according to the business requirements.
 ---
 
 # Get incremental changes for users
