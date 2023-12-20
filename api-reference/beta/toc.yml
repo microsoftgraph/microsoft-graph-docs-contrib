@@ -1,6 +1,9 @@
 items:
   - name: Overview of Microsoft Graph
     href: /graph/overview
+  - name: API changelog
+    href: https://developer.microsoft.com/en-us/graph/changelog
+    displayName: API changes, API updates, Microsoft Graph API, REST API, REST API updates
   - name: Authentication and authorization
     items:
       - name: Overview
@@ -10620,6 +10623,18 @@ items:
                     href: api/windowsupdates-updatepolicy-update.md
                   - name: Delete
                     href: api/windowsupdates-updatepolicy-delete.md
+          - name: Microsoft 365 apps (preview)
+            displayName: Microsoft 365 applications
+            items:
+              - name: Admin Microsoft 365 apps
+                href: resources/adminmicrosoft365apps.md
+              - name: Installation options
+                href: resources/m365appsInstallationoptions.md
+                items:
+                  - name: Get
+                    href: api/m365AppsInstallationOptions-get.md
+                  - name: Update
+                    href: api/m365AppsInstallationOptions-update.md
           - name: Multi-tenant management (preview)
             items:
               - name: Managed tenant
@@ -11154,10 +11169,27 @@ items:
       - name: Employee experience
         displayName: Viva
         items:
+          - name: Employee engagement (preview)
+            displayName: Viva Engage
+            items:
+              - name: Overview
+                href: resources/engagement-api-overview.md
+              - name: Community
+                href: resources/community.md
+                items:
+                  - name: Create
+                    href: api/employeeexperience-post-communities.md
+                  - name: Get
+                    href: api/community-get.md
+              - name: Engagement async operation
+                href: resources/engagementasyncoperation.md
+                items:
+                  - name: Get
+                    href: api/engagementasyncoperation-get.md
           - name: Employee goals (preview)
             items:
             - name: Goals export job
-              href: resources/goalsExportJob.md
+              href: resources/goalsexportjob.md
               items:
               - name: List
                 href: api/goals-list-exportjobs.md
@@ -15619,7 +15651,7 @@ items:
             items:
               - name: Get
                 href: api/peopleadminsettings-get.md
-              - name: Org control for pronouns settings (preview)
+              - name: Org control for pronouns settings
                 items:
                   - name: Pronouns settings
                     href: resources/pronounssettings.md
@@ -16234,7 +16266,7 @@ items:
                       href: api/azureadauthentication-get.md
                 - name: Microsoft Entra service activity
                   items:
-                    - name: Microsoft Entra service activiy
+                    - name: Microsoft Entra service activity
                       href: resources/serviceactivity.md
                     - name: Get MFA sign-in success metrics
                       href: api/serviceactivity-getmetricsformfasigninsuccess.md
@@ -18434,7 +18466,7 @@ items:
                     href: api/presence-clearuserpreferredpresence.md
                   - name: Set user status message
                     href: api/presence-setstatusmessage.md
-              - name: Virtual event (preview)
+              - name: Virtual event
                 items:
                   - name: Webinar
                     href: resources/virtualeventwebinar.md
@@ -18499,6 +18531,27 @@ items:
                     href: api/teamworkdeviceoperation-list.md
                   - name: Get
                     href: api/teamworkdeviceoperation-get.md
+          - name: Settings (preview)
+            items:
+              - name: License details
+                href: resources/licensedetails.md
+                items:
+                - name: Get
+                  href: api/licenseDetails-getteamslicensingdetails.md
+              - name: Organization settings
+                items:
+                - name: Teamwork
+                  href: resources/teamwork.md
+                  items:
+                  - name: Get
+                    href: api/teamwork-get.md
+              - name: User settings
+                items:
+                - name: User teamwork
+                  href: resources/userteamwork.md
+                  items:
+                    - name: Get
+                      href: api/userteamwork-get.md
           - name: Employee learning
             displayName: Viva Learning
             items:
