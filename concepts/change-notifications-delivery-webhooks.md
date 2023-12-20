@@ -8,6 +8,7 @@ ms.prod: "change-notifications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ms.date: 08/15/2023
+#customer intent: As a developer, I want to receive notifications of changes to specific Microsoft Graph resources through webhooks, so that I can build apps that process the changes according to business requirements.
 ---
 
 # Receive change notifications through webhooks
