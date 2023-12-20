@@ -66,7 +66,7 @@ PUT https://microsoft.graph.microsoft.com/beta/identity/authenticationEventListe
 Content-Type: application/json
 
 {
-  "@odata.id": "https://graph.microsoft.com/beta/identity/customAuthenticationExtensions/{customExtensionId}
+  "@odata.id": "https://graph.microsoft.com/beta/identity/customAuthenticationExtensions/{customExtensionId}"
 }
 ```
 
