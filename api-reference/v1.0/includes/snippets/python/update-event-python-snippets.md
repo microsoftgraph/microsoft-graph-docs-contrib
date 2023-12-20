@@ -4,39 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = Event()
-request_body.original_start_time_zone = 'originalStartTimeZone-value'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.original_end_time_zone = 'originalEndTimeZone-value'
+request_body = Event(
+	original_start_time_zone = "originalStartTimeZone-value",
+	original_end_time_zone = "originalEndTimeZone-value",
+	response_status = ResponseStatus(
+		response = ResponseType.None,
+		time = "datetime-value",
+	),
+	recurrence = None,
+	reminder_minutes_before_start = 99,
+	is_online_meeting = True,
+	online_meeting_provider = OnlineMeetingProviderType.TeamsForBusiness,
+	is_reminder_on = True,
+	hide_attendees = False,
+	categories = [
+		"Red category",
+	],
+)
 
-response_status = ResponseStatus()
-response_status.response(ResponseType.None('responsetype.none'))
-
-response_status.time = DateTime('datetime-value')
-
-
-request_body.response_status = response_status
-request_body.recurrence=null
-
-request_body.ReminderMinutesBeforeStart = 99
-
-request_body.is_online_meeting = True
-
-request_body.onlinemeetingprovider(OnlineMeetingProviderType.TeamsForBusiness('onlinemeetingprovidertype.teamsforbusiness'))
-
-request_body.is_reminder_on = True
-
-request_body.hide_attendees = False
-
-request_body.Categories(['Red category', ])
-
-
-
-
-result = await client.me.events.by_event_id('event-id').patch(request_body = request_body)
+result = await graph_client.me.events.by_event_id('event-id').patch(request_body)
 
 
 ```

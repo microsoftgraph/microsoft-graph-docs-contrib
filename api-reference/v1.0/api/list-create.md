@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 title: Create a SharePoint List
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
@@ -12,15 +12,14 @@ Namespace: microsoft.graph
 
 Create a new [list][] in a [site][].
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|            Permission type             | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Sites.Manage.All                            |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Sites.Manage.All                            |
+<!-- { "blockType": "permissions", "name": "list_create" } -->
+[!INCLUDE [permissions-table](../includes/permissions/list-create-permissions.md)]
 
 ## HTTP request
 
@@ -43,7 +42,7 @@ In the request body, supply a JSON representation of a [list][] object.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [list][] object in the response body. 
+If successful, this method returns a `201 Created` response code and a [list][] object in the response body.
 
 ## Examples
 
@@ -118,7 +117,7 @@ Content-Type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object is truncated for clarity. Default properties will be returned from the actual call.
 

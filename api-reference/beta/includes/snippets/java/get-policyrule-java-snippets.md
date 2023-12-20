@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-PolicyRule policyRule = graphClient.networkaccess().forwardingPolicies("{forwardingPolicyId}").policyRules("{RuleId)")
+PolicyRule policyRule = graphClient.networkaccess().forwardingPolicies("{forwardingPolicyId}").policyRules("{ruleId}")
 	.buildRequest()
 	.get();
 

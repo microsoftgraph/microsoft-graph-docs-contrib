@@ -4,27 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = User()
-additional_data = [
-'extkmpdyld2_graph_learn_courses' => request_body = Extkmpdyld2GraphLearnCourses()
-		request_body.course_type = 'Instructor-led'
+graph_client = GraphServiceClient(credentials, scopes)
 
-		request_body.courseId=null
+request_body = User(
+	additional_data = {
+			"extkmpdyld2_graph_learn_courses" : {
+					"course_type" : "Instructor-led",
+					"course_id" : None,
+			},
+	}
+)
 
-
-request_body.extkmpdyld2_graph_learn_courses = extkmpdyld2_graphLearnCourses
-
-];
-request_body.additional_data(additional_data)
-
-
-
-
-
-result = await client.users.by_user_id('user-id').patch(request_body = request_body)
+result = await graph_client.users.by_user_id('user-id').patch(request_body)
 
 
 ```

@@ -19,8 +19,6 @@ graphClient.security().cases().ediscoveryCases("58399dff-cebe-478f-b1af-d3227f1f
 		.newBuilder()
 		.withOutputName(outputName)
 		.withDescription(description)
-		.withAzureBlobContainer(null)
-		.withAzureBlobToken(null)
 		.withExportOptions(exportOptions)
 		.withExportStructure(exportStructure)
 		.build())

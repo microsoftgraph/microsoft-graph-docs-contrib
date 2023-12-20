@@ -1,27 +1,26 @@
 ---
-title: "List policies"
-description: "Retrieve a list of forwarding policy links associated with a specific forwarding profile."
+title: "List forwarding policies"
+description: "Retrieve a list of forwarding policy links that are associated with a specific forwarding profile."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 
-# List policies
+# List forwarding policies
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of forwarding policy links associated with a specific forwarding profile.
+Retrieve a list of forwarding policy links that are associated with a specific forwarding profile.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|NetworkAccessPolicy.Read.All, NetworkAccessPolicy.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+<!-- { "blockType": "permissions", "name": "networkaccess_forwardingprofile_list_policies" } -->
+[!INCLUDE [permissions-table](../includes/permissions/networkaccess-forwardingprofile-list-policies-permissions.md)]
 
 [!INCLUDE [rbac-global-secure-access-apis-read](../includes/rbac-for-apis/rbac-global-secure-access-apis-read.md)]
 
@@ -36,7 +35,7 @@ GET /networkAccess/forwardingProfiles/{forwardingProfileId}/policies/
 ```
 
 ## Optional query parameters
-This method does not support any OData query parameters.
+This method doesn't support any OData query parameters.
 
 ## Request headers
 |Name|Description|
@@ -44,7 +43,7 @@ This method does not support any OData query parameters.
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -53,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -66,6 +65,10 @@ GET https://graph.microsoft.com/beta/networkAccess/forwardingProfiles/{forwardin
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-forwardingpolicylink-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-forwardingpolicylink-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -91,7 +94,7 @@ GET https://graph.microsoft.com/beta/networkAccess/forwardingProfiles/{forwardin
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -116,34 +119,6 @@ Content-Type: application/json
                 "id": "81e6666b-dcf3-4ee6-9212-adb12df18dab",
                 "name": "Exchange Online",
                 "description": "These properties represent Exchange Online endpoints that should be reachable to use the service.",
-                "version": "1.0.0",
-                "trafficForwardingType": "m365"
-            }
-        },
-        {
-            "@odata.type": "#microsoft.graph.networkaccess.forwardingPolicyLink",
-            "id": "c0eea492-85f4-4eab-b03a-3a5abb459096",
-            "state": "enabled",
-            "version": "1.0.0",
-            "policy": {
-                "@odata.type": "#microsoft.graph.networkaccess.forwardingPolicy",
-                "id": "d8929d18-b24a-4a67-8c7b-1483029855a0",
-                "name": "SharePoint Online and OneDrive for Business",
-                "description": "These properties represent SharePoint Online and OneDrive for Business endpoints that should be reachable to use the service.",
-                "version": "1.0.0",
-                "trafficForwardingType": "m365"
-            }
-        },
-        {
-            "@odata.type": "#microsoft.graph.networkaccess.forwardingPolicyLink",
-            "id": "caaa9df8-240c-4db1-ad34-0c9b5ca06918",
-            "state": "enabled",
-            "version": "1.0.0",
-            "policy": {
-                "@odata.type": "#microsoft.graph.networkaccess.forwardingPolicy",
-                "id": "c67e7847-feab-4b13-8163-88c0bac70ad0",
-                "name": "Microsoft 365 Common and Office Online",
-                "description": "These properties represent Microsoft 365 Common and Office Online endpoints that should be reachable to use the service.",
                 "version": "1.0.0",
                 "trafficForwardingType": "m365"
             }

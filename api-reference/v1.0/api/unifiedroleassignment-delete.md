@@ -3,6 +3,7 @@ title: "Delete unifiedRoleAssignment"
 description: "Delete a unifiedRoleAssignment object."
 ms.localizationpriority: medium
 author: "DougKirschner"
+ms.reviewer: msodsrbac
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
@@ -13,12 +14,16 @@ Namespace: microsoft.graph
 
 Delete a [unifiedRoleAssignment](../resources/unifiedRoleAssignment.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### For the directory (Azure AD) provider
+<a name='for-the-directory-azure-ad-provider'></a>
 
+### For the directory (Microsoft Entra ID) provider
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | RoleManagement.ReadWrite.Directory |
@@ -26,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | RoleManagement.ReadWrite.Directory |
 
 ### For the Entitlement management provider
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  EntitlementManagement.ReadWrite.All  |
@@ -38,7 +43,6 @@ One of the following permissions is required to call this API. To learn more, in
 Remove a role assignment from the directory provider:
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
 DELETE /roleManagement/directory/roleAssignments/{id}
 ```
@@ -46,7 +50,6 @@ DELETE /roleManagement/directory/roleAssignments/{id}
 Remove a role assignment from the entitlement management provider:
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
 DELETE /roleManagement/entitlementManagement/roleAssignments/{id}
 ```
@@ -59,17 +62,17 @@ DELETE /roleManagement/entitlementManagement/roleAssignments/{id}
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -107,6 +110,10 @@ DELETE https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments
 [!INCLUDE [sample-code](../includes/snippets/php/delete-unifiedroleassignment-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-unifiedroleassignment-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/delete-unifiedroleassignment-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -115,7 +122,7 @@ DELETE https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -135,4 +142,3 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
-

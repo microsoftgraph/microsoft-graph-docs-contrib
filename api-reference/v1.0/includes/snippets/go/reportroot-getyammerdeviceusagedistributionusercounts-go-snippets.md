@@ -15,7 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Reports().GetYammerDeviceUsageDistributionUserCounts(period='{period}')().Get(context.Background(), nil)
+period := "{period}"
+graphClient.Reports().GetYammerDeviceUsageDistributionUserCountsWithPeriod(&period).Get(context.Background(), nil)
 
 
 ```

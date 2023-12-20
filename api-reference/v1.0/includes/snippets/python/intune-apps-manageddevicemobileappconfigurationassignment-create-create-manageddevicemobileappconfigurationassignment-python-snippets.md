@@ -4,21 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = ManagedDeviceMobileAppConfigurationAssignment()
-request_body.@odata_type = '#microsoft.graph.managedDeviceMobileAppConfigurationAssignment'
+graph_client = GraphServiceClient(credentials, scopes)
 
-target = AllLicensedUsersAssignmentTarget()
-target.@odata_type = 'microsoft.graph.allLicensedUsersAssignmentTarget'
+request_body = ManagedDeviceMobileAppConfigurationAssignment(
+	odata_type = "#microsoft.graph.managedDeviceMobileAppConfigurationAssignment",
+	target = AllLicensedUsersAssignmentTarget(
+		odata_type = "microsoft.graph.allLicensedUsersAssignmentTarget",
+	),
+)
 
-
-request_body.target = target
-
-
-
-result = await client.device_app_management.mobile_app_configurations.by_mobile_app_configuration_id('managedDeviceMobileAppConfiguration-id').assignments.post(request_body = request_body)
+result = await graph_client.device_app_management.mobile_app_configurations.by_managed_device_mobile_app_configuration_id('managedDeviceMobileAppConfiguration-id').assignments.post(request_body)
 
 
 ```

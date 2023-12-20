@@ -4,36 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = RetentionEvent()
-request_body.@odata_type = '#microsoft.graph.security.retentionEvent'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.display_name = 'String'
+request_body = RetentionEvent(
+	odata_type = "#microsoft.graph.security.retentionEvent",
+	display_name = "String",
+	description = "String",
+	event_trigger_date_time = "String (timestamp)",
+	additional_data = {
+			"event_query" : [
+				{
+						"@odata_type" : "microsoft.graph.security.eventQuery",
+				},
+			],
+			"retention_event_type@odata_bind" : "https://graph.microsoft.com/v1.0/security/triggerTypes/retentionEventType/9eecef97-fb3c-4c68-825b-4dd74530863a",
+	}
+)
 
-request_body.description = 'String'
-
-request_body.eventTriggerDateTime = DateTime('String (timestamp)')
-
-additional_data = [
-'event_query' => event_query1 = ()
-		event_query1.@odata_type = 'microsoft.graph.security.eventQuery'
-
-
-eventQueryArray []= eventQuery1;
-request_body.eventquery(eventQueryArray)
-
-
-'retention_event_type@odata_bind' => 'https://graph.microsoft.com/v1.0/security/triggerTypes/retentionEventType/9eecef97-fb3c-4c68-825b-4dd74530863a', 
-];
-request_body.additional_data(additional_data)
-
-
-
-
-
-result = await client.security.triggers.retention_events.post(request_body = request_body)
+result = await graph_client.security.triggers.retention_events.post(request_body)
 
 
 ```

@@ -4,36 +4,32 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = UnifiedRoleManagementPolicyEnablementRule()
-request_body.@odata_type = '#microsoft.graph.unifiedRoleManagementPolicyEnablementRule'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.id = 'Enablement_Admin_Assignment'
+request_body = UnifiedRoleManagementPolicyEnablementRule(
+	odata_type = "#microsoft.graph.unifiedRoleManagementPolicyEnablementRule",
+	id = "Enablement_Admin_Assignment",
+	enabled_rules = [
+		"Justification",
+		"MultiFactorAuthentication",
+	],
+	target = UnifiedRoleManagementPolicyRuleTarget(
+		odata_type = "microsoft.graph.unifiedRoleManagementPolicyRuleTarget",
+		caller = "Admin",
+		operations = [
+			UnifiedRoleManagementPolicyRuleTargetOperations.All,
+		],
+		level = "Assignment",
+		inheritable_settings = [
+		],
+		enforced_settings = [
+		],
+	),
+)
 
-request_body.EnabledRules(['Justification', 'MultiFactorAuthentication', ])
-
-target = UnifiedRoleManagementPolicyRuleTarget()
-target.@odata_type = 'microsoft.graph.unifiedRoleManagementPolicyRuleTarget'
-
-target.caller = 'Admin'
-
-target.Operations([target.unifiedrolemanagementpolicyruletargetoperations(UnifiedRoleManagementPolicyRuleTargetOperations.All('unifiedrolemanagementpolicyruletargetoperations.all'))
-])
-
-target.level = 'Assignment'
-
-target.InheritableSettings([])
-
-target.EnforcedSettings([])
-
-
-request_body.target = target
-
-
-
-result = await client.policies.role_management_policies.by_role_management_policie_id('unifiedRoleManagementPolicy-id').rules.by_rule_id('unifiedRoleManagementPolicyRule-id').patch(request_body = request_body)
+result = await graph_client.policies.role_management_policies.by_unified_role_management_policy_id('unifiedRoleManagementPolicy-id').rules.by_unified_role_management_policy_rule_id('unifiedRoleManagementPolicyRule-id').patch(request_body)
 
 
 ```

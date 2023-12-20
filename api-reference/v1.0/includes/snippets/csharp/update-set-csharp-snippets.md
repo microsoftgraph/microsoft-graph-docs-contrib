@@ -6,12 +6,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Models.TermStore;
 
-var requestBody = new Microsoft.Graph.Models.TermStore.Set
+var requestBody = new Set
 {
 	Description = "mySet",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Sites["{site-id}"].TermStore.Sets["{set-id}"].PatchAsync(requestBody);
 
 

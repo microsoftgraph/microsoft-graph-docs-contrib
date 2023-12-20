@@ -11,40 +11,38 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Use this API to refresh an existing workbook session. 
+Use this API to refresh an existing workbook session.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+<!-- { "blockType": "permissions", "name": "workbook_refreshsession" } -->
+[!INCLUDE [permissions-table](../includes/permissions/workbook-refreshsession-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/drive/items/{id}/workbook/refreshSession
 POST /me/drive/root:/{item-path}:/workbook/refreshSession
-workbook-session-id: {session-id}
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
-| workbook-session-id | Workbook session Id to be refreshed |
+| workbook-session-id | Workbook session Id to be refreshed. Required. |
 
 ## Request body
-This API does not require any request body.
+This API doesn't require any request body.
 
 ## Response
 
 If successful, this method returns `204 No Content` response code.
 
 ## Example
-##### Request
-Here is an example of the request.
+### Request
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -63,6 +61,10 @@ workbook-session-id: {session-id}
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/refresh-excel-session-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/refresh-excel-session-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -87,11 +89,11 @@ workbook-session-id: {session-id}
 
 ---
 
-Note that workbook-session-id header is required. 
+The workbook-session-id header is required. 
 
 
-##### Response
-Here is an example of the response. 
+### Response
+Here's an example of the response. 
 
 <!-- {
   "blockType": "response",
@@ -100,7 +102,7 @@ Here is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",

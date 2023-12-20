@@ -11,7 +11,7 @@ Microsoft Graph Toolkit components work great with web frameworks like Angular i
 
 ## Add the Microsoft Graph Toolkit
 
-First, you need to enable custom elements in your Angular application by adding the `CUSTOM_ELEMENT_SCHEMA` to the `@NgModule() decorator` in `app.module.ts`. The following example shows how to do this:
+First, you need to enable custom elements in your Angular application by adding the `CUSTOM_ELEMENTS_SCHEMA` to the `@NgModule() decorator` in `app.module.ts`. The following example shows how to do this:
 
 ```TypeScript
 import { BrowserModule } from '@angular/platform-browser';
@@ -68,7 +68,7 @@ export class AppComponent implements OnInit {
 
 ### Create an app/client ID
 
-In order to get a client ID, you need to [register your application](../../auth-register-app-v2.md) in Azure AD.
+In order to get a client ID, you need to [register your application](../../auth-register-app-v2.md) in Microsoft Entra ID.
 
 ## Add components
 

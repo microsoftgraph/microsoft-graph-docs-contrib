@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get a user's direct reports.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -41,7 +43,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 | Content-Type   | application/json  |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

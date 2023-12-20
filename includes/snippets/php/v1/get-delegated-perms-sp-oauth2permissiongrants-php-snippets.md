@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new Oauth2PermissionGrantsRequestBuilderGetRequestConfiguration();
@@ -15,7 +15,6 @@ $queryParameters->filter = "clientId eq 'b0d9b9e3-0ecf-4bfd-8dab-9273dd055a94' a
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->oauth2PermissionGrants()->get($requestConfiguration);
-
+$result = $graphServiceClient->oauth2PermissionGrants()->get($requestConfiguration)->wait();
 
 ```

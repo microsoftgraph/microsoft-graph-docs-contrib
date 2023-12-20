@@ -12,7 +12,7 @@ mgc teams send-activity-notification post --team-id {team-id} --body '{\
     },\
     "activityType": "taskCreated",\
     "previewText": {\
-    	"content": "New Task Created"\
+        "content": "New Task Created"\
     },\
     "recipient": {\
         "@odata.type": "microsoft.graph.aadUserNotificationRecipient",\

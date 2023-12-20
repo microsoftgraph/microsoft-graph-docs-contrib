@@ -70,7 +70,7 @@ Lifecycle Workflows supports the following user properties for configuring the r
 | userPrincipalName                                      | String                        | :heavy_check_mark:  | :heavy_check_mark:  |
 | userType                                               | String                        | :heavy_check_mark:  | &nbsp;              |
 
-You can also configure rules using [Directory (Azure AD) extensions](/graph/extensibility-overview#directory-azure-ad-extensions). It is not supported to configure rules with schema extensions, open extensions or [custom security attributes](/graph/api/resources/custom-security-attributes-overview).
+You can also configure rules using [Directory (Microsoft Entra ID) extensions](/graph/extensibility-overview#directory-azure-ad-extensions). It is not supported to configure rules with schema extensions, open extensions or [custom security attributes](/graph/api/resources/custom-security-attributes-overview).
 
 #### Examples of rules
 

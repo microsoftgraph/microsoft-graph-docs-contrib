@@ -4,20 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = AccessPackage()
-request_body.catalog_id = 'cec5d6ab-c75d-47c0-9c1c-92e89f66e384'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.display_name = 'Marketing Campaign'
+request_body = AccessPackage(
+	catalog_id = "cec5d6ab-c75d-47c0-9c1c-92e89f66e384",
+	display_name = "Marketing Campaign",
+	description = "Access to resources for the campaign",
+)
 
-request_body.description = 'Access to resources for the campaign'
-
-
-
-
-result = await client.identity_governance.entitlement_management.acces_packages.post(request_body = request_body)
+result = await graph_client.identity_governance.entitlement_management.access_packages.post(request_body)
 
 
 ```

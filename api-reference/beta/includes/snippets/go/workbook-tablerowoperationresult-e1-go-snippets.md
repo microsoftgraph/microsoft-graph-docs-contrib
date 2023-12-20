@@ -15,7 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-tableRowOperationResult(key='{key}'), err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().TableRowOperationResult(key='{key}')().Get(context.Background(), nil)
+key := "{key}"
+tableRowOperationResult, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().TableRowOperationResultWithKey(&key).Get(context.Background(), nil)
 
 
 ```

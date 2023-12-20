@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Update the properties of a [iosStoreApp](../resources/intune-apps-iosstoreapp.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -85,7 +87,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1277
+Content-length: 1297
 
 {
   "@odata.type": "#microsoft.graph.iosStoreApp",
@@ -129,7 +131,8 @@ Content-length: 1277
     "v13_0": true,
     "v14_0": true,
     "v15_0": true,
-    "v16_0": true
+    "v16_0": true,
+    "v17_0": true
   }
 }
 ```
@@ -139,7 +142,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1449
+Content-Length: 1469
 
 {
   "@odata.type": "#microsoft.graph.iosStoreApp",
@@ -186,7 +189,8 @@ Content-Length: 1449
     "v13_0": true,
     "v14_0": true,
     "v15_0": true,
-    "v16_0": true
+    "v16_0": true,
+    "v17_0": true
   }
 }
 ```

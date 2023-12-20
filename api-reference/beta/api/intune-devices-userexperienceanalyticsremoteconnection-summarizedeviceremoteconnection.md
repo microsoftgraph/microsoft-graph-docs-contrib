@@ -1,6 +1,6 @@
 ---
 title: "summarizeDeviceRemoteConnection function"
-description: ""
+description: "Intune Devices Userexperienceanalyticsremoteconnection Summarizedeviceremoteconnection Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

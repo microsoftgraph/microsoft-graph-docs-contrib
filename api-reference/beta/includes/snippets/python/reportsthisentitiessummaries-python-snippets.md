@@ -4,19 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-query_params = EntitiesSummariesWithStartDateTimeWithEndDateTimeRequestBuilder.EntitiesSummariesWithStartDateTimeWithEndDateTimeRequestBuilderGetQueryParameters(
-		filter = "trafficType  eq 'microsoft365'",
-)
-
-request_configuration = EntitiesSummariesWithStartDateTimeWithEndDateTimeRequestBuilder.EntitiesSummariesWithStartDateTimeWithEndDateTimeRequestBuilderGetRequestConfiguration(
-query_parameters = query_params,
-)
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-result = await client.network_access.reports.microsoft_graph_networkacces_entitie_summaries(start_date_time={start_date_time},end_date_time={end_date_time}.get(request_configuration = request_configuration)
+result = await graph_client.network_access.reports.microsoft_graph_networkaccess_entities_summaries_with_start_date_time_with_end_date_time("{endDateTime}","{startDateTime}").get()
 
 
 ```

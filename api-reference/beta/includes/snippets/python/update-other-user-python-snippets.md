@@ -4,23 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = User()
-request_body.BusinessPhones(['+1 425 555 0109', ])
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.office_location = '18/2111'
+request_body = User(
+	business_phones = [
+		"+1 425 555 0109",
+	],
+	office_location = "18/2111",
+	authorization_info = AuthorizationInfo(
+		certificate_user_ids = [
+			"5432109876543210@mil",
+		],
+	),
+)
 
-authorization_info = AuthorizationInfo()
-authorization_info.CertificateUserIds(['5432109876543210@mil', ])
-
-
-request_body.authorization_info = authorization_info
-
-
-
-result = await client.users.by_user_id('user-id').patch(request_body = request_body)
+result = await graph_client.users.by_user_id('user-id').patch(request_body)
 
 
 ```

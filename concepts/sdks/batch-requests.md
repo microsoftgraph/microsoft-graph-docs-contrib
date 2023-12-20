@@ -38,6 +38,10 @@ This example shows how to send multiple requests in a batch that are not depende
 
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/BatchRequests.java" id="SimpleBatchSnippet":::
 
+### [PHP](#tab/PHP)
+
+:::code language="php" source="./snippets/php/snippets/BatchRequests.php" id="SimpleBatchSnippet":::
+
 ### [TypeScript](#tab/typescript)
 
 :::code language="typescript" source="./snippets/typescript/src/snippets/batchRequests.ts" id="SimpleBatchSnippet":::
@@ -62,6 +66,10 @@ This example shows how to send multiple requests in a batch that are dependent o
 ### [Java](#tab/java)
 
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/BatchRequests.java" id="DependentBatchSnippet":::
+
+### [PHP](#tab/PHP)
+
+:::code language="php" source="./snippets/php/snippets/BatchRequests.php" id="DependentBatchSnippet":::
 
 ### [TypeScript](#tab/typescript)
 

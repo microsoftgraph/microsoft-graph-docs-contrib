@@ -4,30 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = Group()
-request_body.description = 'Marketing department folks'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.display_name = 'Marketing department'
+request_body = Group(
+	description = "Marketing department folks",
+	display_name = "Marketing department",
+	group_types = [
+		"Unified",
+		"DynamicMembership",
+	],
+	mail_enabled = True,
+	mail_nickname = "marketing",
+	security_enabled = False,
+	membership_rule = "user.department -eq \"Marketing\"",
+	membership_rule_processing_state = "on",
+)
 
-request_body.GroupTypes(['Unified', 'DynamicMembership', ])
-
-request_body.mail_enabled = True
-
-request_body.mail_nickname = 'marketing'
-
-request_body.security_enabled = False
-
-request_body.membership_rule = 'user.department -eq \"Marketing\"'
-
-request_body.membership_rule_processing_state = 'on'
-
-
-
-
-result = await client.groups.post(request_body = request_body)
+result = await graph_client.groups.post(request_body)
 
 
 ```

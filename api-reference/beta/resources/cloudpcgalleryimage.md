@@ -45,9 +45,9 @@ Represents the gallery image resource of the current organization that can be us
 |Member|Description|
 |:---|:---|
 |supported|The gallery image is active and ready to be used for provisioning.|
-|supportedWithWarning|The gallery image has expired, but the Cloud PC will continue support for 6 months, after which it will be unsupported and cannot be used.|
+|supportedWithWarning|The gallery image has expired, but the Cloud PC will continue support for six months, after which it will be unsupported and can't be used.|
 |notSupported|The gallery image is out of support. |
-|unknownFutureValue|Evolvable enumeration sentinel value. Do not use. |
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 
@@ -55,7 +55,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

@@ -1,5 +1,5 @@
 ---
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 description: "Get a list of driveItem objects shared with the owner of a drive."
 title: "drive: sharedWithMe"
 ms.localizationpriority: medium
@@ -15,15 +15,14 @@ Get a list of [driveItem](../resources/driveitem.md) objects shared with the own
 
 The **driveItems** returned from the **sharedWithMe** method always include the [**remoteItem**](../resources/remoteitem.md) facet that indicates they are items from a different drive.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                              |
-|:---------------------------------------|:-------------------------------------------------------------------------|
-| Delegated (work or school account)     | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
-| Delegated (personal Microsoft account) | Files.Read.All, Files.ReadWrite.All                                      |
-| Application                            | Not supported. |
+<!-- { "blockType": "permissions", "name": "drive_sharedwithme" } -->
+[!INCLUDE [permissions-table](../includes/permissions/drive-sharedwithme-permissions.md)]
 
 > **Note:**
 >
@@ -47,7 +46,7 @@ GET /me/drive/sharedWithMe
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -225,7 +224,7 @@ GET https://graph.microsoft.com/v1.0/drives/987def/items/987def!654
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

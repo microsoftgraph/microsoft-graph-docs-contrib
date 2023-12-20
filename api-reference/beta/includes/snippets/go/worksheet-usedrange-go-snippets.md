@@ -15,7 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-usedRange(valuesOnly={valuesOnly}), err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().Worksheets().ByWorkbookWorksheetId("workbookWorksheet-id").UsedRange(valuesOnly={valuesOnly})().Get(context.Background(), nil)
+valuesOnly := false
+usedRange, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().Worksheets().ByWorkbookWorksheetId("workbookWorksheet-id").UsedRangeWithValuesOnly(&valuesOnly).Get(context.Background(), nil)
 
 
 ```

@@ -21,7 +21,7 @@ outputName := "Export via API"
 requestBody.SetOutputName(&outputName) 
 description := "Export for the Contoso investigation"
 requestBody.SetDescription(&description) 
-exportOptions := graphmodels.ORIGINALFILES,TAGS_EXPORTOPTIONS 
+exportOptions := graphmodels.ORIGINALFILES,FILEINFO,TAGS_EXPORTOPTIONS 
 requestBody.SetExportOptions(&exportOptions) 
 exportStructure := graphmodels.DIRECTORY_EXPORTFILESTRUCTURE 
 requestBody.SetExportStructure(&exportStructure) 

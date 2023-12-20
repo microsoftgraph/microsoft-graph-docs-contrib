@@ -1,7 +1,7 @@
 ---
 title: "Attach large files to Outlook messages or events"
 description: "Create and use an upload session to add large file attachments over 3 MB to Outlook items. Each step shows the corresponding code for a message and an event."
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.localizationpriority: high
 ms.prod: "outlook"
 ---
@@ -14,9 +14,9 @@ Using the Microsoft Graph API, you can attach files up to 150 MB to an Outlook [
 
 To attach multiple files to a message, choose the approach for each file based on its file size and attach the files individually.
 
-This article illustrates the second approach step by step, creating and using an upload session to add a large file attachment (of size over 3 MB) to an Outlook item. Each step shows the corresponding code for a message and for an event. Upon successfully uploading the entire file, the article shows getting a response header that contains an ID for the file attachment, and then using that attachment ID to get the raw attachment content or attachment metadata. 
+This article illustrates the second approach step by step, creating and using an upload session to add a large file attachment (of size over 3 MB) to an Outlook item. Each step shows the corresponding code for a message and for an event. Upon successfully uploading the entire file, the article shows getting a response header that contains an ID for the file attachment, and then using that attachment ID to get the raw attachment content or attachment metadata.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Be aware of a [known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=13644) if you're attaching large files to a message or event in a shared or delegated mailbox.
 
 ## Step 1: Create an upload session
@@ -28,7 +28,7 @@ A successful operation returns `HTTP 201 Created` and a new [uploadSession](/gra
 The **uploadSession** object in the response also includes the **nextExpectedRanges** property, which indicates the initial upload starting location should be byte 0.
 
 ### Permissions
-Make sure to request `Mail.ReadWrite` permission to create the **uploadSession** for a message, and `Calendars.ReadWrite` for an event. 
+Make sure to request `Mail.ReadWrite` permission to create the **uploadSession** for a message, and `Calendars.ReadWrite` for an event.
 
 The opaque URL, returned in the **uploadUrl** property of the new **uploadSession**, is pre-authenticated and contains the appropriate authorization token for subsequent `PUT` queries in the `https://outlook.office.com` domain. That token expires by **expirationDateTime**. Do not customize this URL for the `PUT` operations.
 
@@ -114,7 +114,7 @@ Content-type: application/json
 ```
 
 ### Example: Create an upload session for an event
-#### Request 
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -161,7 +161,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/walkthrough-create-uploadsession-event-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -373,7 +373,7 @@ However, getting a large file attachment in base64-encoded format affects API pe
 Following the event example and using the attachment ID returned in the `Location` header of the previous step, the example request in this section shows using a `$value` parameter to get the attachment raw content data.
 
 #### Permissions
-Use the least privileged delegated or application permission, `Calendars.Read`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
+Use the least privileged delegated or application permission, `Calendars.Read`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md).
 
 #### Request
 
@@ -406,7 +406,7 @@ Content-type: image/jpeg
 Following the message example, the example request in this section shows using a `$select` parameter to get some of the metadata of a file attachment on a message, excluding **contentBytes**.
 
 #### Permissions
-Use the least privileged delegated or application permission, `Mail.Read`, as appropriate, for this operation. For more information, see [mail permissions](permissions-reference.md#mail-permissions).
+Use the least privileged delegated or application permission, `Mail.Read`, as appropriate, for this operation. For more information, see [mail permissions](permissions-reference.md).
 
 #### Request
 

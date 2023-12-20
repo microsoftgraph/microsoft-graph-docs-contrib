@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graph.room, err := graphClient.Places().GraphRoom().Get(context.Background(), nil)
+graphRoom, err := graphClient.Places().GraphRoom().Get(context.Background(), nil)
 
 
 ```

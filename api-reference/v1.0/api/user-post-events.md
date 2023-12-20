@@ -1,5 +1,5 @@
 ---
-title: "Create Event"
+title: "Create event"
 description: "Create an event in the user's default calendar or specified calendar."
 ms.localizationpriority: high
 doc_type: apiPageType
@@ -7,7 +7,7 @@ author: "iamgirishck"
 ms.prod: "outlook"
 ---
 
-# Create Event
+# Create event
 
 Namespace: microsoft.graph
 
@@ -44,9 +44,11 @@ Additionally, if the meeting location has been set up as a resource, or if the e
 
 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Calendars.ReadWrite    |
@@ -596,7 +598,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/create-event-recurring-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

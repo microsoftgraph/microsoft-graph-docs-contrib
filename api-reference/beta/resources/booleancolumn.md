@@ -1,5 +1,5 @@
 ---
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 description: "Indicates that the column in a columnDefinition holds a boolean value."
 title: "booleanColumn resource type"
 ms.localizationpriority: medium

@@ -4,20 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = AddFormulaLocalPostRequestBody()
-request_body.name = 'test7'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.formula = '=SUM(Sheet2!$A$1+Sheet2!$A$2)'
+request_body = AddFormulaLocalPostRequestBody(
+	name = "test7",
+	formula = "=SUM(Sheet2!$A$1+Sheet2!$A$2)",
+	comment = "Comment for the named item",
+)
 
-request_body.comment = 'Comment for the named item'
-
-
-
-
-result = await client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').workbook.names.add_formula_local.post(request_body = request_body)
+result = await graph_client.drives.by_drive_id('drive-id').items.by_drive_item_id('driveItem-id').workbook.names.add_formula_local.post(request_body)
 
 
 ```

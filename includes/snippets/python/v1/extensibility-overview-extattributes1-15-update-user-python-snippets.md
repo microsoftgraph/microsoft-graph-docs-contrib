@@ -4,21 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = User()
-on_premises_extension_attributes = OnPremisesExtensionAttributes()
-on_premises_extension_attributes.extension_attribute1 = 'skypeId.adeleVance'
+graph_client = GraphServiceClient(credentials, scopes)
 
-on_premises_extension_attributes.extensionAttribute13=null
+request_body = User(
+	on_premises_extension_attributes = OnPremisesExtensionAttributes(
+		extension_attribute1 = "skypeId.adeleVance",
+		extension_attribute13 = None,
+	),
+)
 
-
-request_body.on_premises_extension_attributes = on_premises_extension_attributes
-
-
-
-result = await client.users.by_user_id('user-id').patch(request_body = request_body)
+result = await graph_client.users.by_user_id('user-id').patch(request_body)
 
 
 ```

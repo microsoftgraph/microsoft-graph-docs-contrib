@@ -4,33 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = OnPremisesDirectorySynchronization()
-configuration = OnPremisesDirectorySynchronizationConfiguration()
-configurationaccidental_deletion_prevention = OnPremisesAccidentalDeletionPrevention()
-configurationaccidental_deletion_prevention.synchronizationpreventiontype(OnPremisesDirectorySynchronizationDeletionPreventionType.EnabledForCount('onpremisesdirectorysynchronizationdeletionpreventiontype.enabledforcount'))
+graph_client = GraphServiceClient(credentials, scopes)
 
-configurationaccidental_deletion_prevention.AlertThreshold = 500
+request_body = OnPremisesDirectorySynchronization(
+	configuration = OnPremisesDirectorySynchronizationConfiguration(
+		accidental_deletion_prevention = OnPremisesAccidentalDeletionPrevention(
+			synchronization_prevention_type = OnPremisesDirectorySynchronizationDeletionPreventionType.EnabledForCount,
+			alert_threshold = 500,
+		),
+		synchronization_interval = "PT30M",
+		customer_requested_synchronization_interval = "PT1H",
+	),
+	features = OnPremisesDirectorySynchronizationFeature(
+		group_write_back_enabled = True,
+	),
+)
 
-
-configuration.accidental_deletion_prevention = configurationaccidental_deletion_prevention
-configuration.synchronizationinterval =  \DateInterval('PT30M')
-
-configuration.customerrequestedsynchronizationinterval =  \DateInterval('PT1H')
-
-
-request_body.configuration = configuration
-features = OnPremisesDirectorySynchronizationFeature()
-features.group_write_back_enabled = True
-
-
-request_body.features = features
-
-
-
-result = await client.directory.on_premise_synchronization.by_on_premise_synchronization_id('onPremisesDirectorySynchronization-id').patch(request_body = request_body)
+result = await graph_client.directory.on_premises_synchronization.by_on_premises_directory_synchronization_id('onPremisesDirectorySynchronization-id').patch(request_body)
 
 
 ```

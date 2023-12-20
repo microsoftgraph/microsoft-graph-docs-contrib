@@ -1,6 +1,6 @@
 --- 
 title: "Overview of the access reviews API" 
-description: "Use the access reviews API to programmatically review access to your Azure AD resources to ensure that the right identities have the right access to the right resources." 
+description: "Use the access reviews API to programmatically review access to your Microsoft Entra resources to ensure that the right identities have the right access to the right resources." 
 author: "FaithOmbongi" 
 ms.author: ombongifaith
 ms.reviewer: jgangadhar
@@ -12,13 +12,13 @@ ms.date: 08/24/2022
 
 # Overview of the access reviews API
 
-Azure Active Directory (Azure AD) access reviews is a feature of Azure AD Identity Governance that helps to ensure that the right identities (or principals) have the right access to the right resources in the organization. This review can be implemented programmatically using the [access reviews API](/graph/api/resources/accessreviewsv2-overview) in Microsoft Graph.
+Microsoft Entra access reviews is a feature of Microsoft Entra ID Governance that helps to ensure that the right identities (or principals) have the right access to the right resources in the organization. This review can be implemented programmatically using the [access reviews API](/graph/api/resources/accessreviewsv2-overview) in Microsoft Graph.
 
 ## Participants in an access review
 
 Access reviews are about attesting or recertifying a principal's continued access to a resource. Principals can be individual users, groups, or applications.  
 
-Resources for which access can be reviewed include groups, privileged roles (including Azure AD roles and Azure resource roles), access packages, and applications.
+Resources for which access can be reviewed include groups, privileged roles (including Microsoft Entra roles and Azure resource roles), access packages, and applications.
 
 The reviewers, or attesters, in the access review may include the following users or groups of users:
 
@@ -72,7 +72,7 @@ In an application context, an application calls the access reviews API without a
 ## Next steps 
 
 + [Use the access reviews API](/graph/api/resources/accessreviewsv2-overview)
-+ [Read more about Azure AD access reviews](/azure/active-directory/governance/access-reviews-overview)
++ [Read more about Microsoft Entra access reviews](/azure/active-directory/governance/access-reviews-overview)
 + Try out the following tutorials to manage access reviews:
     + [Use the access reviews API to review access to your security groups](tutorial-accessreviews-securitygroup.md)
     + [Use the access reviews API to review guest access to your Microsoft 365 groups](tutorial-accessreviews-M365group.md)

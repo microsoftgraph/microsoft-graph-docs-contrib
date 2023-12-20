@@ -21,7 +21,7 @@ tenantIds := []string {
 }
 requestBody.SetTenantIds(tenantIds)
 
-microsoft.graph.managedTenants.assignTag, err := graphClient.TenantRelationships().ManagedTenants().TenantTags().ByTenantTagId("tenantTag-id").MicrosoftGraphManagedTenantsAssignTag().Post(context.Background(), requestBody, nil)
+microsoftGraphManagedTenantsAssignTag, err := graphClient.TenantRelationships().ManagedTenants().TenantTags().ByTenantTagId("tenantTag-id").MicrosoftGraphManagedTenantsAssignTag().Post(context.Background(), requestBody, nil)
 
 
 ```

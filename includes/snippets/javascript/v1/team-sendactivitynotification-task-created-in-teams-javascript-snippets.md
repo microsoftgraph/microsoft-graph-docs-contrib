@@ -17,7 +17,7 @@ const sendActivityNotification = {
     },
     activityType: 'taskCreated',
     previewText: {
-    	content: 'New Task Created'
+        content: 'New Task Created'
     },
     recipient: {
         '@odata.type': 'microsoft.graph.aadUserNotificationRecipient',

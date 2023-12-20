@@ -4,22 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = PersonInterest()
-request_body.Categories(['Sports', ])
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.description = 'World\'s greatest football club'
+request_body = PersonInterest(
+	categories = [
+		"Sports",
+	],
+	description = "World's greatest football club",
+	display_name = "Chelsea FC",
+	web_url = "https://www.chelseafc.com",
+)
 
-request_body.display_name = 'Chelsea FC'
-
-request_body.web_url = 'https://www.chelseafc.com'
-
-
-
-
-result = await client.me.profile.interests.post(request_body = request_body)
+result = await graph_client.me.profile.interests.post(request_body)
 
 
 ```

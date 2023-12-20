@@ -4,20 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = EdiscoveryCase()
-request_body.display_name = 'CONTOSO LITIGATION-005'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.description = 'Project Bazooka'
+request_body = EdiscoveryCase(
+	display_name = "CONTOSO LITIGATION-005",
+	description = "Project Bazooka",
+	external_id = "324516",
+)
 
-request_body.external_id = '324516'
-
-
-
-
-result = await client.security.cases.ediscovery_cases.post(request_body = request_body)
+result = await graph_client.security.cases.ediscovery_cases.post(request_body)
 
 
 ```

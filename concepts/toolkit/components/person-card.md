@@ -83,7 +83,7 @@ If the Person-Card component is unable to detect the Teams lib, the component wi
 
 ```ts
 import * as microsoftTeams from "@microsoft/teams-js";
-import { TeamsHelper } from "@microsoft/mgt";
+import { TeamsHelper } from "@microsoft/mgt-element";
 
 TeamsHelper.microsoftTeamsLib = microsoftTeams;
 ```

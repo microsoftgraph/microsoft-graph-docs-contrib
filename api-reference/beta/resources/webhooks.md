@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 author: "keylimesoda"
 doc_type: conceptualPageType
 ms.prod: "change-notifications"
-ms.date: 10/04/2022
 ---
 
 # Use the Microsoft Graph API to get change notifications
@@ -28,9 +27,9 @@ In general, subscription operations require read permission to the resource. For
 
 | Permission type                        | Supported resource types                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| Delegated - work or school account     | [alert][], [callTranscript][], [channel][], [chat][], [contact][], [conversation][], [conversationMember][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [presence][], [chatMessage][] (preview), [team][], [todoTask][], [baseTask][] (deprecated) |
+| Delegated - work or school account     | [alert][], [callRecording][], [callTranscript][], [channel][], [chat][], [contact][], [conversation][], [conversationMember][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [presence][], [chatMessage][] (preview), [team][], [todoTask][], [baseTask][] (deprecated) |
 | Delegated - personal Microsoft account | [baseTask][] (deprecated), [contact][], [driveItem][], [list][], [event][], [message][], [todoTask][]                                   |
-| Application                            | [alert][], [callTranscript][], [channel][], [chat][], [contact][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [callRecord][], [chatMessage][], [conversationMember][], [onlineMeeting][], [printer][], [printTaskDefinition][], [team][] |
+| Application                            | [alert][], [callRecording][], [callTranscript][], [channel][], [chat][], [contact][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [callRecord][], [chatMessage][], [conversationMember][], [onlineMeeting][], [printer][], [printTaskDefinition][], [team][] |
 
 ## See also
 
@@ -49,7 +48,6 @@ In general, subscription operations require read permission to the resource. For
 [channel]: ./channel.md
 [driveItem]: ./driveitem.md
 [list]: ./list.md
-[site]: ./site.md
 [event]: ./event.md
 [group]: ./group.md
 [message]: ./message.md
@@ -62,6 +60,6 @@ In general, subscription operations require read permission to the resource. For
 [team]: ./team.md
 [baseTask]: ./baseTask.md
 [todoTask]: ./todotask.md
-[To Do task]: ./todotask.md
 [onlineMeeting]: ./onlinemeeting.md
 [callTranscript]: ./calltranscript.md
+[callRecording]: ./callrecording.md

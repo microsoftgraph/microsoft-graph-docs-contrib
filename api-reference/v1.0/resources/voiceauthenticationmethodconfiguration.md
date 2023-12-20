@@ -2,6 +2,7 @@
 title: "voiceAuthenticationMethodConfiguration resource type"
 description: "Represents a voice call authenticaiton methods policy"
 author: "luc-msft"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

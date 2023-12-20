@@ -17,13 +17,10 @@ Remove a user's sponsor.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account) | User.ReadWrite.All, Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.ReadWrite.All, Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "user_delete_sponsors" } -->
+[!INCLUDE [permissions-table](../includes/permissions/user-delete-sponsors-permissions.md)]
 
 ## HTTP request
 
@@ -35,8 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 DELETE /users/{id}/sponsors/{id}/$ref
 ```
 
-[!CAUTION]
-> If `/$ref` is not appended to the request and the calling app has permissions to manage the sponsor object type, the sponsor object will also be deleted from Azure Active Directory (Azure AD); otherwise, a `403 Forbidden` error is returned. For example, an app with *User.ReadWrite.All* permissions will delete a user who is a sponsor. You can restore specific objects through the [Restore deleted items API](directory-deleteditems-restore.md)
+> [!CAUTION]
+> If `/$ref` is not appended to the request and the calling app has permissions to manage the sponsor object type, the sponsor object is also deleted from Microsoft Entra ID; otherwise, a `403 Forbidden` error is returned. For example, an app with `User.ReadWrite.All` permissions deletes a user who is a sponsor. You can restore specific objects through the [Restore deleted items API](directory-deleteditems-restore.md).
 
 ## Request headers
 
@@ -46,11 +43,11 @@ DELETE /users/{id}/sponsors/{id}/$ref
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
@@ -79,7 +76,7 @@ DELETE https://graph.microsoft.com/beta/users/{user-id}/sponsors/{directory-obje
 
 ### Response
 
-The following is an example of the response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

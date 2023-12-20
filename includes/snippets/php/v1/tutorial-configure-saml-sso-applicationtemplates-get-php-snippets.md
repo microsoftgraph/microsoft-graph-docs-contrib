@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new ApplicationTemplatesRequestBuilderGetRequestConfiguration();
@@ -15,7 +15,6 @@ $queryParameters->filter = "displayName eq 'AWS IAM Identity Center (successor t
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->applicationTemplates()->get($requestConfiguration);
-
+$result = $graphServiceClient->applicationTemplates()->get($requestConfiguration)->wait();
 
 ```

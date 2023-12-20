@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: The siteCollection resource provides more information about a site collection.
 ms.date: 09/10/2017
 title: SiteCollection

@@ -4,31 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = Bookmark()
-request_body.display_name = 'Contoso Install Site'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.web_url = 'http://www.contoso.com/'
+request_body = Bookmark(
+	display_name = "Contoso Install Site",
+	web_url = "http://www.contoso.com/",
+	description = "Try or buy Contoso for Home or Business and view product information",
+	keywords = AnswerKeyword(
+		keywords = [
+			"Contoso",
+			"install",
+		],
+		reserved_keywords = [
+			"Contoso",
+		],
+		match_similar_keywords = True,
+	),
+	state = AnswerState.Published,
+)
 
-request_body.description = 'Try or buy Contoso for Home or Business and view product information'
-
-keywords = AnswerKeyword()
-keywords.Keywords(['Contoso', 'install', ])
-
-keywords.ReservedKeywords(['Contoso', ])
-
-keywords.match_similar_keywords = True
-
-
-request_body.keywords = keywords
-request_body.state(AnswerState.Published('answerstate.published'))
-
-
-
-
-result = await client.search.bookmarks.post(request_body = request_body)
+result = await graph_client.search.bookmarks.post(request_body)
 
 
 ```

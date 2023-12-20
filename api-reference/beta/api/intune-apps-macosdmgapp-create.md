@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Create a new [macOSDmgApp](../resources/intune-apps-macosdmgapp.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -89,7 +91,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1565
+Content-length: 1585
 
 {
   "@odata.type": "#microsoft.graph.macOSDmgApp",
@@ -142,7 +144,8 @@ Content-length: 1565
     "v10_15": true,
     "v11_0": true,
     "v12_0": true,
-    "v13_0": true
+    "v13_0": true,
+    "v14_0": true
   }
 }
 ```
@@ -152,7 +155,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1737
+Content-Length: 1757
 
 {
   "@odata.type": "#microsoft.graph.macOSDmgApp",
@@ -208,7 +211,8 @@ Content-Length: 1737
     "v10_15": true,
     "v11_0": true,
     "v12_0": true,
-    "v13_0": true
+    "v13_0": true,
+    "v14_0": true
   }
 }
 ```

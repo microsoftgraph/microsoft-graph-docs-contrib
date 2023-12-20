@@ -4,27 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = AddKeyPostRequestBody()
-key_credential = KeyCredential()
-key_credential.type = 'AsymmetricX509Cert'
+graph_client = GraphServiceClient(credentials, scopes)
 
-key_credential.usage = 'Verify'
+request_body = AddKeyPostRequestBody(
+	key_credential = KeyCredential(
+		type = "AsymmetricX509Cert",
+		usage = "Verify",
+		key = base64.urlsafe_b64decode("MIIDYDCCAki..."),
+	),
+	password_credential = None,
+	proof = "eyJ0eXAiOiJ...",
+)
 
-key_credential.Key(base64_decode('MIIDYDCCAki...'))
-
-
-request_body.key_credential = key_credential
-request_body.passwordCredential=null
-
-request_body.proof = 'eyJ0eXAiOiJ...'
-
-
-
-
-result = await client.applications.by_application_id('application-id').add_key.post(request_body = request_body)
+result = await graph_client.applications.by_application_id('application-id').add_key.post(request_body)
 
 
 ```

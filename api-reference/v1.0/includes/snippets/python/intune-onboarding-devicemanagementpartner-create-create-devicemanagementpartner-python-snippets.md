@@ -4,47 +4,32 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = DeviceManagementPartner()
-request_body.@odata_type = '#microsoft.graph.deviceManagementPartner'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.lastHeartbeatDateTime = DateTime('2016-12-31T23:59:37.9174975-08:00')
+request_body = DeviceManagementPartner(
+	odata_type = "#microsoft.graph.deviceManagementPartner",
+	last_heartbeat_date_time = "2016-12-31T23:59:37.9174975-08:00",
+	partner_state = DeviceManagementPartnerTenantState.Unavailable,
+	partner_app_type = DeviceManagementPartnerAppType.SingleTenantApp,
+	single_tenant_app_id = "Single Tenant App Id value",
+	display_name = "Display Name value",
+	is_configured = True,
+	when_partner_devices_will_be_removed_date_time = "2016-12-31T23:56:38.2655023-08:00",
+	when_partner_devices_will_be_marked_as_non_compliant_date_time = "2016-12-31T23:58:42.2131231-08:00",
+	groups_requiring_partner_enrollment = [
+		DeviceManagementPartnerAssignment(
+			odata_type = "microsoft.graph.deviceManagementPartnerAssignment",
+			target = ConfigurationManagerCollectionAssignmentTarget(
+				odata_type = "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+				collection_id = "Collection Id value",
+			),
+		),
+	],
+)
 
-request_body.partnerstate(DeviceManagementPartnerTenantState.Unavailable('devicemanagementpartnertenantstate.unavailable'))
-
-request_body.partnerapptype(DeviceManagementPartnerAppType.SingleTenantApp('devicemanagementpartnerapptype.singletenantapp'))
-
-request_body.single_tenant_app_id = 'Single Tenant App Id value'
-
-request_body.display_name = 'Display Name value'
-
-request_body.is_configured = True
-
-request_body.whenPartnerDevicesWillBeRemovedDateTime = DateTime('2016-12-31T23:56:38.2655023-08:00')
-
-request_body.whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime = DateTime('2016-12-31T23:58:42.2131231-08:00')
-
-groups_requiring_partner_enrollment_device_management_partner_assignment1 = DeviceManagementPartnerAssignment()
-groups_requiring_partner_enrollment_device_management_partner_assignment1.@odata_type = 'microsoft.graph.deviceManagementPartnerAssignment'
-
-groups_requiring_partner_enrollment_device_management_partner_assignment1target = ConfigurationManagerCollectionAssignmentTarget()
-groups_requiring_partner_enrollment_device_management_partner_assignment1target.@odata_type = 'microsoft.graph.configurationManagerCollectionAssignmentTarget'
-
-groups_requiring_partner_enrollment_device_management_partner_assignment1target.collection_id = 'Collection Id value'
-
-
-groups_requiring_partner_enrollment_device_management_partner_assignment1.target = groups_requiring_partner_enrollment_device_management_partner_assignment1target
-
-groupsRequiringPartnerEnrollmentArray []= groupsRequiringPartnerEnrollmentDeviceManagementPartnerAssignment1;
-request_body.groupsrequiringpartnerenrollment(groupsRequiringPartnerEnrollmentArray)
-
-
-
-
-
-result = await client.device_management.device_management_partners.post(request_body = request_body)
+result = await graph_client.device_management.device_management_partners.post(request_body)
 
 
 ```

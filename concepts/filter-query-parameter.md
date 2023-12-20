@@ -322,7 +322,7 @@ Hiding because the latest iteration of the report doesn't include these properti
 
 ## See also
 
-+ [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries)
++ [Advanced query capabilities on directory objects](/graph/aad-advanced-queries)
 
 
 <!-- Links -->

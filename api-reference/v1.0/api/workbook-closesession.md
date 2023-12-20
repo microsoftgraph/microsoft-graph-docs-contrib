@@ -13,37 +13,37 @@ Namespace: microsoft.graph
 
 Use this API to close an existing workbook session.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "workbook_closesession" } -->
+[!INCLUDE [permissions-table](../includes/permissions/workbook-closesession-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/drive/items/{id}/workbook/closeSession
 POST /me/drive/root:/{item-path}:/workbook/closeSession
-workbook-session-id: {session-id}
 ```
+
 ## Request headers
+
 | Name                | Description                      |
 |:--------------------|:---------------------------------|
 | Authorization       | Bearer {token}. Required.        |
-| workbook-session-id | Workbook session Id to be closed |
+| workbook-session-id | Workbook session ID to be closed. Required. |
 
 ## Request body
-This API does not require any request body.
+This API doesn't require any request body.
 
 ## Response
 
 If successful, this method returns `204 No Content` response code.
 
 ## Example
-##### Request
+### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -94,7 +94,7 @@ workbook-session-id: {session-id}
 Note that workbook-session-id header is required.
 
 
-##### Response
+### Response
 Here is an example of the response.
 
 <!-- {

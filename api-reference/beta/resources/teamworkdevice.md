@@ -17,7 +17,7 @@ Represents details about a Microsoft Teams-enabled device that is provisioned fo
 
 Microsoft Teams-enabled devices are Teams-certified collaboration devices. They include Microsoft Teams Rooms (on Windows and Android), Microsoft Teams Phones, panels, Surface Hubs, and SIP devices. These categories are the same as those available on the Teams admin center under the section **Teams devices**.
 
-For more details, see [Manage your devices in Microsoft Teams.](/microsoftteams/devices/device-management)
+For more information, see [Manage your devices in Microsoft Teams.](/microsoftteams/devices/device-management)
 >**Note**:
 > This does not include mobile phones, laptops, computers, tabs, and so on.
 
@@ -63,9 +63,9 @@ Inherits from [entity](../resources/entity.md).
 |touchConsole|6|Touch console devices are the optional peripherals to the Teams Rooms on Android to perform all the device operations.|
 |lowCostPhone|7|Low-cost phone devices are cost-effective Microsoft Teams phones.|
 |teamsPanel|8|Microsoft Teams panels are the compact touchscreen devices that display meeting details scheduled via Teams.|
-|sip|9|Session Initiation Protocol (SIP) devices which support Teams calls with the SIP Gateway from Microsoft.|
+|sip|9|Session Initiation Protocol (SIP) devices that support Teams calls with the SIP Gateway from Microsoft.|
 |sipAnalog|10|Legacy analog endpoints such as elevator phones, parking lot phones, or factory floor devices, which are registered with Microsoft Teams through the SIP Gateway.|
-|unknownFutureValue|11|Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue|11|Evolvable enumeration sentinel value. Don't use.|
 
 
 ### teamworkDeviceHealthStatus values
@@ -73,11 +73,11 @@ Inherits from [entity](../resources/entity.md).
 | Member | Value| Description |
 |:---------------|:--------|:----------|
 |unknown|0|Unknown health status.|
-|offline|1|The device is offline and cannot be used.|
+|offline|1|The device is offline and can't be used.|
 |critical|2|The state requires urgent attention and action as it might have a significant impact on the performance of the device, or make it unusable for calls or meetings.|
 |nonUrgent|3|The state requires attention because of issues or notifications that might have a minimal impact on the performance of an online device.|
 |healthy|4|The device is online and in good condition.|
-|unknownFutureValue|5|Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue|5|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -88,7 +88,7 @@ Inherits from [entity](../resources/entity.md).
 |operations|[teamworkDeviceOperation](../resources/teamworkdeviceoperation.md) collection|The async operations on the device.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

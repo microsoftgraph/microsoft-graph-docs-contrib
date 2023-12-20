@@ -4,32 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = Windows10SecureAssessmentConfiguration()
-request_body.@odata_type = '#microsoft.graph.windows10SecureAssessmentConfiguration'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.description = 'Description value'
+request_body = Windows10SecureAssessmentConfiguration(
+	odata_type = "#microsoft.graph.windows10SecureAssessmentConfiguration",
+	description = "Description value",
+	display_name = "Display Name value",
+	version = 7,
+	launch_uri = "Launch Uri value",
+	configuration_account = "Configuration Account value",
+	allow_printing = True,
+	allow_screen_capture = True,
+	allow_text_suggestion = True,
+)
 
-request_body.display_name = 'Display Name value'
-
-request_body.Version = 7
-
-request_body.launch_uri = 'Launch Uri value'
-
-request_body.configuration_account = 'Configuration Account value'
-
-request_body.allow_printing = True
-
-request_body.allow_screen_capture = True
-
-request_body.allow_text_suggestion = True
-
-
-
-
-result = await client.device_management.device_configurations.post(request_body = request_body)
+result = await graph_client.device_management.device_configurations.post(request_body)
 
 
 ```

@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = ItemAddress()
-request_body.allowedaudiences(AllowedAudiences.Me('allowedaudiences.me'))
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.display_name = 'Secret Hideout'
+request_body = ItemAddress(
+	allowed_audiences = AllowedAudiences.Me,
+	display_name = "Secret Hideout",
+)
 
-
-
-
-result = await client.users.by_user_id('user-id').profile.addresses.by_addresse_id('itemAddress-id').patch(request_body = request_body)
+result = await graph_client.users.by_user_id('user-id').profile.addresses.by_item_address_id('itemAddress-id').patch(request_body)
 
 
 ```

@@ -14,14 +14,13 @@ Namespace: microsoft.graph
 
 List all [teams](../resources/team.md) in an organization.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "teams_list" } -->
+[!INCLUDE [permissions-table](../includes/permissions/teams-list-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +39,7 @@ This method supports the `$filter`, `$select`, `$top`, `$skiptoken`, and `$count
 | Accept  | application/json|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -55,7 +54,7 @@ If successful, this method returns a `200 OK` response code and collection of [t
 
 #### Request
 
-The following is an example of the request.
+Here's an example  of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -103,7 +102,7 @@ GET https://graph.microsoft.com/v1.0/teams
 ---
 
 #### Response
-The following is an example of a response.
+Here's an example  of a response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -141,7 +140,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+Here's an example  of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -191,7 +190,7 @@ GET https://graph.microsoft.com/v1.0/teams?$filter=startswith(displayName, 'A')&
 
 #### Response
 
-The following is an example of a response.
+Here's an example  of a response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -224,7 +223,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+Here's an example  of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -272,7 +271,7 @@ GET https://graph.microsoft.com/v1.0/teams?$filter=displayName eq 'A Contoso Tea
 ---
 
 #### Response
-The following is an example of a response.
+Here's an example  of a response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

@@ -11,6 +11,14 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### fileStorageContainerStatus values
+
+| Member             |
+|:-------------------|
+| inactive           |
+| active             |
+| unknownfuturevalue |
+
 ### userDefaultAuthenticationMethod values
 
 | Member             |
@@ -104,6 +112,14 @@ Namespace: microsoft.graph
 | others             |
 | unknownFutureValue |
 
+### releaseType values 
+
+|Member|
+|:---|
+|preview|
+|generallyAvailable|
+|unknownFutureValue|
+
 ### recommendationCategory values
 
 | Member               |
@@ -180,6 +196,11 @@ Namespace: microsoft.graph
 | managedIdentity             |
 | overprivilegedApps          |
 | unknownFutureValue          |
+| longLivedCredentials        |
+| aadConnectDeprecated        |
+| adalToMsalMigration         |
+| ownerlessApps               |
+| inactiveGuests              |
 
 ### layoutTemplateType values
 
@@ -364,6 +385,59 @@ Namespace: microsoft.graph
 | group  |
 
 
+### multiTenantOrganizationMemberProcessingStatus values
+
+|Member|
+|:---|
+|notStarted|
+|running|
+|succeeded|
+|failed|
+|unknownFutureValue|
+
+### multiTenantOrganizationMemberRole values
+
+|Member|
+|:---|
+|owner|
+|member|
+|unknownFutureValue|
+
+### multiTenantOrganizationMemberState values
+
+|Member|
+|:---|
+|pending|
+|active|
+|removed|
+|unknownFutureValue|
+
+### multiTenantOrganizationState values
+
+|Member|
+|:---|
+|active|
+|inactive|
+|unknownFutureValue|
+
+### templateApplicationLevel values
+
+|Member|
+|:---|
+|none|
+|newPartners|
+|existingPartners|
+|unknownFutureValue|
+
+### approvalFilterByCurrentUserOptions values 
+
+| Member             |
+| :----------------- |
+| target             |
+| createdBy          |
+| approver           |
+| unknownFutureValue |
+
 ### accessPackageFilterByCurrentUserOptions values
 
 | Member             |
@@ -439,16 +513,16 @@ Namespace: microsoft.graph
 | :----------------- | :---- | :------------------------------------------------------------------------------------ |
 | notRequired        | 0     | No multifactor authentication is required for a user to complete device registration. |
 | required           | 1     | Multifactor authentication is required for a user to complete device registration.    |
-| unknownFutureValue | 2     | Evolvable enumeration sentinel value. Do not use.                                     |
+| unknownFutureValue | 2     | Evolvable enumeration sentinel value. Don't use.                                     |
 
 ### policyScope values
 
 | Member             | Value | Description                                                                    |
 | :----------------- | :---- | :----------------------------------------------------------------------------- |
-| none               | 0     | The policy does not apply to any users or groups in the organization.          |
+| none               | 0     | The policy doesn't apply to any users or groups in the organization.          |
 | all                | 1     | The policy applies to all users and groups in the organization. Default value. |
 | selected           | 2     | The policy applies to specific users or groups in the organization.            |
-| unknownFutureValue | 3     | Evolvable enumeration sentinel value. Do not use.                              |
+| unknownFutureValue | 3     | Evolvable enumeration sentinel value. Don't use.                              |
 
 ### appCredentialRestrictionType values
 
@@ -466,6 +540,7 @@ Namespace: microsoft.graph
 | Member                |
 | :-------------------- |
 | asymmetricKeyLifetime |
+| trustedCertificateAuthority |
 | unknownFutureValue    |
 
 ### synchronizationSecret values
@@ -1020,6 +1095,9 @@ Namespace: microsoft.graph
 | unknownFutureValue              |
 | servicePrincipals               |
 | servicePrincipalRisk            |
+| authenticationFlows             |
+| insiderRisk                     |
+
 
 ### conditionalAccessStatus values
 
@@ -1304,6 +1382,17 @@ Namespace: microsoft.graph
 | weak    |
 | unknown |
 
+### authenticationMethodPlatform values
+
+| Member  |
+| :------ |
+| windows |
+| macOS   |
+| iOS     |
+| android |
+| linux   |
+| unknown |
+
 ### authenticationContextDetail values
 
 | Member              |
@@ -1497,12 +1586,30 @@ Namespace: microsoft.graph
 | x509CertificateMultiFactor  |
 | unknownFutureValue          |
 
-### x509CertificateRuleType values
+### x509CertificateAffinityLevel values
+
 | Member             |
 | :----------------- |
-| issuerSubject      |
-| policyOID          |
+| low                |
+| high               |
 | unknownFutureValue |
+
+### x509CertificateRuleType values
+
+| Member                    |
+| :------------------------ |
+| issuerSubject             |
+| policyOID                 |
+| unknownFutureValue        |
+| issuerSubjectAndPolicyOID |
+
+### x509CertificateIssuerHintsState values
+
+|Member|
+|:---|
+|disabled|
+|enabled|
+|unknownFutureValue|
 
 ### anniversaryType values
 
@@ -2513,7 +2620,7 @@ Possible values for user account types (group membership), per Windows definitio
 | passthroughAuthentication | Passthrough Authentication    |
 | seamlessSso               | Seamless Single Sign-on       |
 | passwordHashSync          | Password Hash Synchronization |
-| emailAsAlternateId        | Email as an alternate id      |
+| emailAsAlternateId        | Email as an alternate ID      |
 | unknownFutureValue        | A sentinel member             |
 
 ### tokenIssuerType values
@@ -2551,7 +2658,7 @@ Possible values for user account types (group membership), per Windows definitio
 
 | Member              | Int value | Description                                                                                                        |
 | :------------------ | :-------- | :----------------------------------------------------------------------------------------------------------------- |
-| None                | 0         | Default value. This is the value on a message when the user has not taken an action on the message blocked by DLP. |
+| None                | 0         | Default value. This is the value on a message when the user hasn't taken an action on the message blocked by DLP. |
 | Override            | 1         | Sender has overridden the message verdict and sent the message anyway.                                             |
 | ReportFalsePositive | 2         | Sender has reported the message verdict to the admins as a false positive.                                         |
 
@@ -2559,8 +2666,8 @@ Possible values for user account types (group membership), per Windows definitio
 
 | Member                            | Int value | Description                                                                                                                                                                                                                                                           |
 | :-------------------------------- | :-------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| None                              | 0         | User is not allowed to override the message. User is not allowed to report a message as false positive if policyTip is not provided. In all other scenarios, user can report a message as false positive.                                                             |
-| AllowFalsePositiveOverride        | 1         | User is not allowed to explicitly override the block unless this is combined with `AllowOverrideWithoutJustification` or `AllowOverrideWithJustification` flags. Reporting a false positive on the violation automatically overrides the block and sends the message. |
+| None                              | 0         | User isn't allowed to override the message. User isn't allowed to report a message as false positive if policyTip isn't provided. In all other scenarios, user can report a message as false positive.                                                             |
+| AllowFalsePositiveOverride        | 1         | User isn't allowed to explicitly override the block unless this is combined with `AllowOverrideWithoutJustification` or `AllowOverrideWithJustification` flags. Reporting a false positive on the violation automatically overrides the block and sends the message. |
 | AllowOverrideWithoutJustification | 2         | User is allowed to override the block and send the message. Justification text is not required. Exclusive to `AllowOverrideWithJustification`.                                                                                                                        |
 | AllowOverrideWithJustification    | 4         | User is allowed to override the block and send the message. Justification text is required. Exclusive to `AllowOverrideWithoutJustification`.                                                                                                                         |
 
@@ -2711,6 +2818,9 @@ Possible values for user account types (group membership), per Windows definitio
 | otherExternalUser                 |
 | serviceProvider                   |
 | microsoftAdminPortals             |
+| deviceCodeFlow                    |
+| authenticationTransfer            |
+| insiderRisk                       |
 
 ### signInAccessType values
 
@@ -2722,6 +2832,7 @@ Possible values for user account types (group membership), per Windows definitio
 | microsoftSupport   |
 | serviceProvider    |
 | unknownFutureValue |
+| passthrough        |
 
 ### signinFrequencyType values
 
@@ -2729,6 +2840,24 @@ Possible values for user account types (group membership), per Windows definitio
 | :----- |
 | days   |
 | hours  |
+
+### originalTransferMethods values 
+
+|Member|
+|:---|
+|none|
+|deviceCodeFlow|
+|authenticationTransfer|
+|unknownFutureValue|
+
+### tokenProtectionStatus values 
+
+|Member|
+|:---|
+|none|
+|bound|
+|unbound|
+|unknownFutureValue|
 
 ### persistentBrowserSessionMode values
 
@@ -3008,6 +3137,7 @@ Possible values for user account types (group membership), per Windows definitio
 |roster|
 |project|
 |driveItem|
+|user|
 
 ### plannerPlanContextType values
 
@@ -3389,6 +3519,7 @@ Possible values for user account types (group membership), per Windows definitio
 | contentDeletion    |
 | caseResolved       |
 | unknownFutureValue |
+| approval           |
 
 ### subjectRightsRequestStageStatus values
 
@@ -3598,8 +3729,10 @@ Possible values for user account types (group membership), per Windows definitio
 | Member             |
 | :----------------- |
 | lockForApproval    |
+| approve            |
 | terminate          |
 | unknownFutureValue |
+| reject             |
 
 ### delegatedAdminRelationshipRequestStatus values
 
@@ -3986,6 +4119,130 @@ Possible values for user account types (group membership), per Windows definitio
 |sms|
 |unknownFutureValue|
 
+### endUserNotificationPreference values
+
+|Member|
+|:---|
+|unknown|
+|microsoft|
+|custom|
+|unknownFutureValue|
+
+### endUserNotificationSettingType values
+
+|Member|
+|:---|
+|unknown|
+|noTraining|
+|trainingSelected|
+|noNotification|
+|unknownFutureValue|
+
+### endUserNotificationType values
+
+|Member|
+|:---|
+|unknown|
+|positiveReinforcement|
+|noTraining|
+|trainingAssignment|
+|trainingReminder|
+|unknownFutureValue|
+
+### notificationDeliveryFrequency values
+
+|Member|
+|:---|
+|unknown|
+|weekly|
+|biWeekly|
+|unknownFutureValue|
+
+### notificationDeliveryPreference values
+
+|Member|
+|:---|
+|unknown|
+|deliverImmedietly|
+|deliverAfterCampaignEnd|
+|unknownFutureValue|
+
+### oAuthAppScope values
+
+|Member|
+|:---|
+|unknown|
+|readCalendar|
+|readContact|
+|readMail|
+|readAllChat|
+|readAllFile|
+|readAndWriteMail|
+|sendMail|
+|unknownFutureValue|
+
+### targettedUserType values
+
+|Member|
+|:---|
+|unknown|
+|clicked|
+|compromised|
+|allUsers|
+|unknownFutureValue|
+
+### trainingAssignedTo values
+
+|Member|
+|:---|
+|none|
+|allUsers|
+|clickedPayload|
+|compromised|
+|reportedPhish|
+|readButNotClicked|
+|didNothing|
+|unknownFutureValue|
+
+### trainingAvailabilityStatus values
+
+|Member|
+|:---|
+|unknown|
+|notAvailable|
+|available|
+|archive|
+|delete|
+|unknownFutureValue|
+
+### trainingCompletionDuration values
+
+| Member             |
+| :------------------|
+| week               |
+| fortnite           |
+| month              |
+| unknownFutureValue |
+
+
+### trainingSettingType values
+
+|Member|
+|:---|
+|microsoftCustom|
+|microsoftManaged|
+|noTraining|
+|custom|
+|unknownFutureValue|
+
+### trainingType values
+
+|Member|
+|:---|
+|unknown|
+|phishing|
+|unknownFutureValue|
+
 ### verifiableCredentialPresentationStatusCode values
 
 | Member                |
@@ -3994,6 +4251,32 @@ Possible values for user account types (group membership), per Windows definitio
 | presentation_verified |
 | unknownFutureValue    |
 
+### labelKind values
+
+|Member|
+|:---|
+|all|
+|enumerated|
+|unknownFutureValue|
+
+### permissionKind values
+
+|Member|
+|:---|
+|all|
+|enumerated|
+|allPermissionsOnResourceApp|
+|unknownFutureValue|
+
+### resourceScopeType values
+
+|Member|
+|:---|
+|group|
+|chat|
+|tenant|
+|unknownFutureValue|
+
 ### allowedRolePrincipalTypes values
 
 |Member|
@@ -4001,4 +4284,310 @@ Possible values for user account types (group membership), per Windows definitio
 |user|
 |servicePrincipal|
 |group|
+|unknownFutureValue|
+
+### b2bIdentityProvidersType values
+
+|Member|
+|:-----|
+|azureActiveDirectory|
+|externalFederation|
+|socialIdentityProviders|
+|emailOneTimePasscode|
+|microsoftAccount|
+|defaultConfiguredIdp|
+|unknownFutureValue|
+
+### authorizationSystemActionSeverity values 
+
+|Member|
+|:---|
+|normal|
+|high|
+|unknownFutureValue|
+
+### authorizationSystemActionType values 
+
+|Member|
+|:---|
+|delete|
+|read|
+|unknownFutureValue|
+
+### awsPolicyType values 
+
+|Member|
+|:---|
+|system|
+|custom|
+|unknownFutureValue|
+
+### awsRoleTrustEntityType values 
+
+|Member|
+|:---|
+|none|
+|service|
+|sso|
+|crossAccount|
+|webIdentity|
+|unknownFutureValue|
+
+### awsRoleType values 
+
+|Member|
+|:---|
+|system|
+|custom|
+|unknownFutureValue|
+
+### awsStatementEffect values 
+
+|Member|
+|:---|
+|allow|
+|deny|
+|unknownFutureValue|
+
+### azureRoleDefinitionType values 
+
+|Member|
+|:---|
+|system|
+|custom|
+|unknownFutureValue|
+
+### dataCollectionStatus values 
+
+|Member|
+|:---|
+|online|
+|offline|
+|unknownFutureValue|
+
+### gcpRoleType values 
+
+|Member|
+|:---|
+|system|
+|custom|
+|unknownFutureValue|
+
+### permissionsDefinitionIdentityType values 
+
+|Member|
+|:---|
+|user|
+|role|
+|application|
+|managedIdentity|
+|serviceAccount|
+|unknownFutureValue|
+
+### permissionsModificationCapability values 
+
+|Member|
+|:---|
+|enabled|
+|notConfigured|
+|noRecentDataCollected|
+|unknownFutureValue|
+
+### permissionsRequestOccurrenceStatus values 
+
+|Member|
+|:---|
+|grantingFailed|
+|granted|
+|granting|
+|revoked|
+|revoking|
+|revokingFailed|
+|unknownFutureValue|
+
+### statusDetail values 
+
+|Member|
+|:---|
+|submitted|
+|approved|
+|completed|
+|canceled|
+|rejected|
+|unknownFutureValue|
+
+### socialIdentitySourceType values
+
+|Member|
+|:---|
+|facebook|
+|unknownFutureValue|
+
+### authorizationSystemActionSeverity values 
+
+|Member|
+|:---|
+|normal|
+|high|
+|unknownFutureValue|
+
+### authorizationSystemActionType values 
+
+|Member|
+|:---|
+|delete|
+|read|
+|unknownFutureValue|
+
+### authorizationSystemType values 
+
+|Member|
+|:---|
+|azure|
+|gcp|
+|aws|
+|unknownFutureValue|
+
+### awsAccessType values 
+
+|Member|
+|:---|
+|public|
+|restricted|
+|crossAccount|
+|private|
+|unknownFutureValue|
+
+### awsPolicyType values 
+
+|Member|
+|:---|
+|system|
+|custom|
+|unknownFutureValue|
+
+### awsRoleTrustEntityType values 
+
+|Member|
+|:---|
+|none|
+|service|
+|sso|
+|crossAccount|
+|webIdentity|
+|unknownFutureValue|
+
+### awsRoleType values 
+
+|Member|
+|:---|
+|system|
+|custom|
+|unknownFutureValue|
+
+### awsSecretInformationWebServices values 
+
+|Member|
+|:---|
+|secretsManager|
+|certificateAuthority|
+|cloudHsm|
+|certificateManager|
+|unknownFutureValue|
+
+### awsSecurityToolWebServices values 
+
+|Member|
+|:---|
+|macie|
+|wafShield|
+|cloudTrail|
+|inspector|
+|securityHub|
+|detective|
+|guardDuty|
+|unknownFutureValue|
+
+### azureAccessType values 
+
+|Member|
+|:---|
+|public|
+|private|
+|unknownFutureValue|
+
+### azureEncryption values 
+
+|Member|
+|:---|
+|microsoftStorage|
+|microsoftKeyVault|
+|customer|
+|unknownFutureValue|
+
+### azureRoleDefinitionType values 
+
+|Member|
+|:---|
+|system|
+|custom|
+|unknownFutureValue|
+
+### dataCollectionStatus values 
+
+|Member|
+|:---|
+|online|
+|offline|
+|unknownFutureValue|
+
+### externalSystemAccessMethods values 
+
+|Member|
+|:---|
+|direct|
+|roleChaining|
+|unknownFutureValue|
+
+### gcpAccessType values 
+
+|Member|
+|:---|
+|public|
+|subjectToObjectAcls|
+|private|
+|unknownFutureValue|
+
+### gcpEncryption values 
+
+|Member|
+|:---|
+|google|
+|customer|
+|unknownFutureValue|
+
+### gcpRoleType values 
+
+|Member|
+|:---|
+|system|
+|custom|
+|unknownFutureValue|
+
+### iamStatus values 
+
+|Member|
+|:---|
+|active|
+|inactive|
+|disabled|
+|unknownFutureValue|
+
+### permissionsModificationCapability values 
+
+|Member|
+|:---|
+|enabled|
+|notConfigured|
+|noRecentDataCollected|
 |unknownFutureValue|

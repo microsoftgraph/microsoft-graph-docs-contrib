@@ -1,6 +1,6 @@
 ---
 title: "programControl resource type (deprecated)"
-description: "In the Azure AD access reviews feature, the program control object represents a control, linking an access review to a program."
+description: "In the Microsoft Entra access reviews feature, the program control object represents a control, linking an access review to a program."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-In the Azure AD [access reviews](accessreviews-root.md) feature, the program control object represents a control, linking an access review to a program.
+In the Microsoft Entra [access reviews](accessreviews-root.md) feature, the program control object represents a control, linking an access review to a program.
 
 
 ## Methods
@@ -84,5 +84,3 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

@@ -4,27 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = AdminTodo()
-request_body.@odata_type = '#microsoft.graph.adminTodo'
+graph_client = GraphServiceClient(credentials, scopes)
 
-settings = TodoSettings()
-settings.@odata_type = 'microsoft.graph.todoSettings'
+request_body = AdminTodo(
+	odata_type = "#microsoft.graph.adminTodo",
+	settings = TodoSettings(
+		odata_type = "microsoft.graph.todoSettings",
+		is_push_notification_enabled = True,
+		is_external_join_enabled = False,
+		is_external_share_enabled = True,
+	),
+)
 
-settings.is_push_notification_enabled = True
-
-settings.is_external_join_enabled = False
-
-settings.is_external_share_enabled = True
-
-
-request_body.settings = settings
-
-
-
-result = await client.admin.todo.patch(request_body = request_body)
+result = await graph_client.admin.todo.patch(request_body)
 
 
 ```

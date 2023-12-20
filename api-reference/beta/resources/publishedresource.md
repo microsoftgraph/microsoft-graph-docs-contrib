@@ -2,7 +2,7 @@
 title: "publishedResource resource type"
 description: "publishedResource resource type."
 ms.localizationpriority: medium
-author: "dhruvinshah"
+author: "dhruvinrshah"
 ms.prod: "applications"
 doc_type: "resourcePageType"
 ---

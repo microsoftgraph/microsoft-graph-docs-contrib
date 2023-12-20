@@ -21,7 +21,7 @@ outputName := "Export reviewset query via API"
 requestBody.SetOutputName(&outputName) 
 description := "Export for the Contoso investigation 2"
 requestBody.SetDescription(&description) 
-exportOptions := graphmodels.ORIGINALFILES,TAGS_EXPORTOPTIONS 
+exportOptions := graphmodels.ORIGINALFILES,FILEINFO,TAGS_EXPORTOPTIONS 
 requestBody.SetExportOptions(&exportOptions) 
 exportStructure := graphmodels.DIRECTORY_EXPORTFILESTRUCTURE 
 requestBody.SetExportStructure(&exportStructure) 

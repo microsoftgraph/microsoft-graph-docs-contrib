@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = WorkbookTableRow()
-request_body.Index = 99
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.values = 'values-value'
+request_body = WorkbookTableRow(
+	index = 99,
+	values = "values-value",
+)
 
-
-
-
-result = await client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').workbook.tables.by_table_id('workbookTable-id').rows.by_row_id('workbookTableRow-id').patch(request_body = request_body)
+result = await graph_client.drives.by_drive_id('drive-id').items.by_drive_item_id('driveItem-id').workbook.tables.by_workbook_table_id('workbookTable-id').rows.by_workbook_table_row_id('workbookTableRow-id').patch(request_body)
 
 
 ```

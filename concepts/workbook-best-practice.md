@@ -271,7 +271,7 @@ workbook-session-id: {session-id}
 HTTP/1.1 204 No Content
 ```
 
-For more details, see [Create session](/graph/api/workbook-createsession) and [Close session](/graph/api/workbook-closesession).
+For more information, see [Create session](/graph/api/workbook-createsession) and [Close session](/graph/api/workbook-closesession).
 
 ## Work with APIs that take a long time to complete
 
@@ -279,8 +279,8 @@ You might notice that some operations take an indeterminate amount time to compl
 
 Currently, the session creation Excel API in Microsoft Graph has the long-running operation pattern enabled. This pattern involves the following steps:
 
-1. Add a `Prefer: respond-async` header to the request to indicate that it is a long-running operation when you crate a session.
-2. A long-running operation will return a `202 Accepted` response along with a Location header to retrieve the operation status. If the session creation completes in several seconds, it will return a regular create session response instead of using the long-running operation pattern.
+1. Add a `Prefer: respond-async` header to the request to indicate that it is a long-running operation when you create a session.
+2. A long-running operation returns a `202 Accepted` response along with a Location header to retrieve the operation status. If the session creation completes in several seconds, it returns a regular create session response instead of using the long-running operation pattern.
 3. With the `202 Accepted` response, you can retrieve the operation status at the specified location. Operation status values include `notStarted`, `running`, `succeeded`, and `failed`.
 4. After the operation completes, you can get the session creation result through the specified URL in the succeeded response.
 
@@ -335,7 +335,7 @@ Content-type: application/json
 ---
 
 #### Response
-The long-running operation pattern will return a `202 Accepted` response similar to the following.
+The long-running operation pattern returns a `202 Accepted` response similar to the following.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -456,7 +456,7 @@ Content-type: application/json
 }
 ```
 
-For more details about errors, see [Error codes and messages](workbook-error-codes.md#error-codes-and-messages).
+For more information about errors, see [Error codes and messages](workbook-error-codes.md#error-codes-and-messages).
 
 ### Acquire session information
 

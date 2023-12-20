@@ -1,6 +1,6 @@
 ---
 title: "getMobileAppCount function"
-description: ""
+description: "Intune Shared Mobileapp Getmobileappcount Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

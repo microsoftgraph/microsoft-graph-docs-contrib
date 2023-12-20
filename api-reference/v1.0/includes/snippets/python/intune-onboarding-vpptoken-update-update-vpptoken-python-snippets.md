@@ -4,36 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = VppToken()
-request_body.@odata_type = '#microsoft.graph.vppToken'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.organization_name = 'Organization Name value'
+request_body = VppToken(
+	odata_type = "#microsoft.graph.vppToken",
+	organization_name = "Organization Name value",
+	vpp_token_account_type = VppTokenAccountType.Education,
+	apple_id = "Apple Id value",
+	expiration_date_time = "2016-12-31T23:57:57.2481234-08:00",
+	last_sync_date_time = "2017-01-01T00:02:49.3205976-08:00",
+	token = "Token value",
+	state = VppTokenState.Valid,
+	last_sync_status = VppTokenSyncStatus.InProgress,
+	automatically_update_apps = True,
+	country_or_region = "Country Or Region value",
+)
 
-request_body.vpptokenaccounttype(VppTokenAccountType.Education('vpptokenaccounttype.education'))
-
-request_body.apple_id = 'Apple Id value'
-
-request_body.expirationDateTime = DateTime('2016-12-31T23:57:57.2481234-08:00')
-
-request_body.lastSyncDateTime = DateTime('2017-01-01T00:02:49.3205976-08:00')
-
-request_body.token = 'Token value'
-
-request_body.state(VppTokenState.Valid('vpptokenstate.valid'))
-
-request_body.lastsyncstatus(VppTokenSyncStatus.InProgress('vpptokensyncstatus.inprogress'))
-
-request_body.automatically_update_apps = True
-
-request_body.country_or_region = 'Country Or Region value'
-
-
-
-
-result = await client.device_app_management.vpp_tokens.by_vpp_token_id('vppToken-id').patch(request_body = request_body)
+result = await graph_client.device_app_management.vpp_tokens.by_vpp_token_id('vppToken-id').patch(request_body)
 
 
 ```

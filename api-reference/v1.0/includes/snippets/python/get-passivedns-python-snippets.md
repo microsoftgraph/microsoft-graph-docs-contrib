@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-
-result = await client.security.threat_intelligence.passive_dn_records.by_passive_dn_record_id('passiveDnsRecord-id').get()
+result = await graph_client.security.threat_intelligence.passive_dns_records.by_passive_dns_record_id('passiveDnsRecord-id').get()
 
 
 ```

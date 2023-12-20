@@ -4,43 +4,38 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = ConditionalAccessPolicy()
-request_body.display_name = 'Policy for risky sign-in'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.state(ConditionalAccessPolicyState.Enabled('conditionalaccesspolicystate.enabled'))
+request_body = ConditionalAccessPolicy(
+	display_name = "Policy for risky sign-in",
+	state = ConditionalAccessPolicyState.Enabled,
+	conditions = ConditionalAccessConditionSet(
+		sign_in_risk_levels = [
+			RiskLevel.High,
+			RiskLevel.Medium,
+		],
+		applications = ConditionalAccessApplications(
+			include_applications = [
+				"All",
+			],
+		),
+		users = ConditionalAccessUsers(
+			include_users = [
+				"4628e7df-dff3-407c-a08f-75f08c0806dc",
+			],
+		),
+	),
+	grant_controls = ConditionalAccessGrantControls(
+		operator = "OR",
+		built_in_controls = [
+			ConditionalAccessGrantControl.Mfa,
+		],
+	),
+)
 
-conditions = ConditionalAccessConditionSet()
-conditions.SignInRiskLevels([conditions.risklevel(RiskLevel.High('risklevel.high'))
-conditions.risklevel(RiskLevel.Medium('risklevel.medium'))
-])
-
-conditionsapplications = ConditionalAccessApplications()
-conditionsapplications.IncludeApplications(['All', ])
-
-
-conditions.applications = conditionsapplications
-conditionsusers = ConditionalAccessUsers()
-conditionsusers.IncludeUsers(['4628e7df-dff3-407c-a08f-75f08c0806dc', ])
-
-
-conditions.users = conditionsusers
-
-request_body.conditions = conditions
-grant_controls = ConditionalAccessGrantControls()
-grant_controls.operator = 'OR'
-
-grant_controls.BuiltInControls([grant_controls.conditionalaccessgrantcontrol(ConditionalAccessGrantControl.Mfa('conditionalaccessgrantcontrol.mfa'))
-])
-
-
-request_body.grant_controls = grant_controls
-
-
-
-result = await client.identity.conditional_access.policies.post(request_body = request_body)
+result = await graph_client.identity.conditional_access.policies.post(request_body)
 
 
 ```

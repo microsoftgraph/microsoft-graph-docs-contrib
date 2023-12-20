@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = ChangePasswordPostRequestBody()
-request_body.current_password = 'xWwvJ]6NMw+bWH-d'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.new_password = '0eM85N54wFxWwvJ]'
+request_body = ChangePasswordPostRequestBody(
+	current_password = "xWwvJ]6NMw+bWH-d",
+	new_password = "0eM85N54wFxWwvJ]",
+)
 
-
-
-
-await client.me.change_password.post(request_body = request_body)
+await graph_client.me.change_password.post(request_body)
 
 
 ```

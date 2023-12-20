@@ -14,7 +14,7 @@ const user = {
     accountEnabled: true,
     displayName: 'Adele Vance',
     mailNickname: 'AdeleV',
-    userPrincipalName: 'AdeleV@m365x72712789.onmicrosoft.com',
+    userPrincipalName: 'AdeleV@contoso.com',
     passwordProfile: {
         forceChangePasswordNextSignIn: false,
         password: 'xWwvJ]6NMw+bWH-d'

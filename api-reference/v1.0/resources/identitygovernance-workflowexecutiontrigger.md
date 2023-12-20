@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.identityGovernance
 
-This is an abstract type that represents the workflow execution trigger when the [workflow runs on schedule](../resources/identitygovernance-triggerandscopebasedconditions.md). It is inherited by the following derived types:
+This is an abstract type that represents the workflow execution trigger when the [workflow runs on schedule](../resources/identitygovernance-triggerandscopebasedconditions.md). It's inherited by the following derived types:
 + [timeBasedAttributeTrigger](../resources/identitygovernance-timebasedattributetrigger.md)
 
 ## Properties
@@ -24,7 +24,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.identityGovernance.workflowExecutionTrigger"

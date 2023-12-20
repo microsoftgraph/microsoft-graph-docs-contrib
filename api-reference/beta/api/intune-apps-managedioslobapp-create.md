@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Create a new [managedIOSLobApp](../resources/intune-apps-managedioslobapp.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -93,7 +95,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1606
+Content-length: 1626
 
 {
   "@odata.type": "#microsoft.graph.managedIOSLobApp",
@@ -141,7 +143,8 @@ Content-length: 1606
     "v13_0": true,
     "v14_0": true,
     "v15_0": true,
-    "v16_0": true
+    "v16_0": true,
+    "v17_0": true
   },
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "versionNumber": "Version Number value",
@@ -155,7 +158,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1778
+Content-Length: 1798
 
 {
   "@odata.type": "#microsoft.graph.managedIOSLobApp",
@@ -206,7 +209,8 @@ Content-Length: 1778
     "v13_0": true,
     "v14_0": true,
     "v15_0": true,
-    "v16_0": true
+    "v16_0": true,
+    "v17_0": true
   },
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "versionNumber": "Version Number value",

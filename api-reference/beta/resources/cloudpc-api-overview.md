@@ -24,7 +24,7 @@ With Microsoft Graph, you can provision and manage Cloud PCs in your organizatio
 
 ## Using Microsoft Graph permissions
 
-Microsoft Graph controls access to resources via permissions. As a developer, you must specify the permissions you need to access Windows 365 resources. Typically, you specify the permissions in the Azure Active Directory portal. For more information, see [Microsoft Graph permissions reference](/graph/permissions-reference) and navigate to the [Cloud PC permissions](/graph/permissions-reference#cloud-pc-permissions) section.
+Microsoft Graph controls access to resources via permissions. As a developer, you must specify the permissions you need to access Windows 365 resources. Typically, you specify the permissions in the Microsoft Entra admin center. For more information, see [Microsoft Graph permissions reference](/graph/permissions-reference) and navigate to the [Cloud PC permissions](/graph/permissions-reference#cloud-pc-permissions) section.
 
 ## Common use cases
 

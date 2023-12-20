@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-
-await client.device_management.imported_window_autopilot_device_identities.by_imported_window_autopilot_device_identitie_id('importedWindowsAutopilotDeviceIdentity-id').delete()
+await graph_client.device_management.imported_windows_autopilot_device_identities.by_imported_windows_autopilot_device_identity_id('importedWindowsAutopilotDeviceIdentity-id').delete()
 
 
 ```

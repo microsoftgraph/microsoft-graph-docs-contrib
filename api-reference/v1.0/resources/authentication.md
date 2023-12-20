@@ -1,7 +1,8 @@
 ---
 title: "authentication resource type"
-description: "Exposes relationships that represent the authentication methods supported by Azure AD and that can configured for users."
+description: "Exposes relationships that represent the authentication methods supported by Microsoft Entra ID and that can configured for users."
 author: "jpettere"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
@@ -11,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Exposes relationships that represent the authentication methods supported by Azure AD and that can configured for users.
+Exposes relationships that represent the authentication methods supported by Microsoft Entra ID and that can configured for users.
 
 Inherits from [entity](entity.md).
 
@@ -40,7 +41,7 @@ None.
 
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

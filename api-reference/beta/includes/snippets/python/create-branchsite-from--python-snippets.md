@@ -4,22 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = BranchSite()
-request_body.name = 'test branch - 11:50'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.country = 'United States'
+request_body = BranchSite(
+	name = "test branch - 11:50",
+	country = "United States",
+	region = Region.EastUS,
+	bandwidth_capacity = 500,
+)
 
-request_body.region(Region.East US('region.east us'))
-
-request_body.BandwidthCapacity = 500
-
-
-
-
-result = await client.network_access.connectivity.branches.post(request_body = request_body)
+result = await graph_client.network_access.connectivity.branches.post(request_body)
 
 
 ```

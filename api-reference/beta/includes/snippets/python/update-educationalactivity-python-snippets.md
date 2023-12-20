@@ -4,34 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = EducationalActivity()
-institution = InstitutionData()
-institutionlocation = PhysicalAddress()
-institutionlocation.type(PhysicalAddressType.Business('physicaladdresstype.business'))
+graph_client = GraphServiceClient(credentials, scopes)
 
-institutionlocation.postOfficeBox=null
+request_body = EducationalActivity(
+	institution = InstitutionData(
+		location = PhysicalAddress(
+			type = PhysicalAddressType.Business,
+			post_office_box = None,
+			street = "12000 E Prospect Rd",
+			city = "Fort Collins",
+			state = "Colorado",
+			country_or_region = "USA",
+			postal_code = "80525",
+		),
+	),
+)
 
-institutionlocation.street = '12000 E Prospect Rd'
-
-institutionlocation.city = 'Fort Collins'
-
-institutionlocation.state = 'Colorado'
-
-institutionlocation.country_or_region = 'USA'
-
-institutionlocation.postal_code = '80525'
-
-
-institution.location = institutionlocation
-
-request_body.institution = institution
-
-
-
-result = await client.me.profile.educational_activities.by_educational_activitie_id('educationalActivity-id').patch(request_body = request_body)
+result = await graph_client.me.profile.educational_activities.by_educational_activity_id('educationalActivity-id').patch(request_body)
 
 
 ```

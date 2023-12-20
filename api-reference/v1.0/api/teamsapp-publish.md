@@ -1,21 +1,23 @@
 ---
-title: "Publish teamsapp"
-description: "Publish an app to the Microsoft Teams apps catalog. "
+title: "Publish teamsApp"
+description: "Publish an app to the Microsoft Teams app catalog."
 author: "nkramer"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Publish teamsapp
+# Publish teamsApp
 
 Namespace: microsoft.graph
 
-Publish an [app](../resources/teamsapp.md) to the Microsoft Teams apps catalog.
+Publish an [app](../resources/teamsapp.md) to the Microsoft Teams app catalog.
 Specifically, this API publishes the app to your organization's catalog (the tenant app catalog);
-the created resource will have a **distributionMethod** property value of `organization`.
+the created resource has a **distributionMethod** property value of `organization`.
 
 The **requiresReview** property allows any user to submit an app for review by an administrator. Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -24,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission Type                        | Permissions (from least to most privileged)|
 |:----------------------------------     |:-------------|
 | Delegated (work or school account) | AppCatalog.Submit, AppCatalog.ReadWrite.All, Directory.ReadWrite.All** |
-| Delegated (personal Microsoft account) | Not supported|
+| Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
 > **Note**: Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
@@ -38,14 +40,14 @@ POST /appCatalogs/teamsApps
 To publish an app that requires a review:
 
 ```http
-POST /appCatalogs/teamsApps?requiresReview:{Boolean}
+POST /appCatalogs/teamsApps?requiresReview={Boolean}
 ```
 
 ## Query parameters
 
 |Property|Type|Description|
 |----|----|----|
-|requiresReview| Boolean | This optional query parameter triggers the app review process. Users with admin privileges can submit apps without triggering a review. If users want to request a review before publishing, they must set  `requiresReview` to `true`. A user who has admin privileges can opt not to set `requiresReview` or set the value to `false`  and the app will be considered approved and will publish instantly.|
+|requiresReview| Boolean | This optional query parameter triggers the app review process. Users with admin privileges can submit apps without triggering a review. If users want to request a review before publishing, they must set **requiresReview** to `true`. A user who has admin privileges can opt not to set **requiresReview** or set the value to `false`  and the app will be considered approved and will publish instantly.|
 
 ## Request headers
 
@@ -69,6 +71,8 @@ If successful, this method returns a `200 OK` response code and a [teamsApp](../
 ### Example 1: Publish an app to the app catalog
 
 #### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -117,6 +121,8 @@ For information about how to create a Microsoft Teams application zip file, see 
 
 #### Response
 
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.teamsApp",
@@ -138,6 +144,8 @@ Content-Type: application/json
 ### Example 2: Upload a new application for review to an organization's app catalog
 
 #### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -182,6 +190,8 @@ Content-type: application/zip
 
 #### Response
 
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.teamsApp",
@@ -205,6 +215,8 @@ Location: https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/e3e29acb-8c79-4
 
 #### Request
 
+The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "create_teamsapp_3",
@@ -222,6 +234,8 @@ If-Match: InFtSStsNVJHVWdzWUJRU2ZVWGp4RWc9PSI=
 ```
 
 #### Response
+
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

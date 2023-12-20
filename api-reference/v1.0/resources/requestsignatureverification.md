@@ -1,6 +1,6 @@
 ---
 title: "requestSignatureVerification resource type"
-description: "Specifies whether this application requires Azure AD to verify the signed authentication requests."
+description: "Specifies whether this application requires Microsoft Entra ID to verify the signed authentication requests."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Specifies whether this application requires Azure AD to verify the signed authentication requests.
+Specifies whether this application requires Microsoft Entra ID to verify the signed authentication requests.
 
 ## Properties
 |Property|Type|Description|
@@ -36,4 +36,3 @@ The following is a JSON representation of the resource.
   "allowedWeakAlgorithms": "String"
 }
 ```
-

@@ -4,50 +4,32 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = IosCompliancePolicy()
-request_body.@odata_type = '#microsoft.graph.iosCompliancePolicy'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.description = 'Description value'
+request_body = IosCompliancePolicy(
+	odata_type = "#microsoft.graph.iosCompliancePolicy",
+	description = "Description value",
+	display_name = "Display Name value",
+	version = 7,
+	passcode_block_simple = True,
+	passcode_expiration_days = 6,
+	passcode_minimum_length = 5,
+	passcode_minutes_of_inactivity_before_lock = 5,
+	passcode_previous_passcode_block_count = 2,
+	passcode_minimum_character_set_count = 0,
+	passcode_required_type = RequiredPasswordType.Alphanumeric,
+	passcode_required = True,
+	os_minimum_version = "Os Minimum Version value",
+	os_maximum_version = "Os Maximum Version value",
+	security_block_jailbroken_devices = True,
+	device_threat_protection_enabled = True,
+	device_threat_protection_required_security_level = DeviceThreatProtectionLevel.Secured,
+	managed_email_profile_required = True,
+)
 
-request_body.display_name = 'Display Name value'
-
-request_body.Version = 7
-
-request_body.passcode_block_simple = True
-
-request_body.PasscodeExpirationDays = 6
-
-request_body.PasscodeMinimumLength = 5
-
-request_body.PasscodeMinutesOfInactivityBeforeLock = 5
-
-request_body.PasscodePreviousPasscodeBlockCount = 2
-
-request_body.PasscodeMinimumCharacterSetCount = 0
-
-request_body.passcoderequiredtype(RequiredPasswordType.Alphanumeric('requiredpasswordtype.alphanumeric'))
-
-request_body.passcode_required = True
-
-request_body.os_minimum_version = 'Os Minimum Version value'
-
-request_body.os_maximum_version = 'Os Maximum Version value'
-
-request_body.security_block_jailbroken_devices = True
-
-request_body.device_threat_protection_enabled = True
-
-request_body.devicethreatprotectionrequiredsecuritylevel(DeviceThreatProtectionLevel.Secured('devicethreatprotectionlevel.secured'))
-
-request_body.managed_email_profile_required = True
-
-
-
-
-result = await client.device_management.device_compliance_policies.post(request_body = request_body)
+result = await graph_client.device_management.device_compliance_policies.post(request_body)
 
 
 ```

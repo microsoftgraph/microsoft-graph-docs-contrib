@@ -4,31 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = ValidateCredentialsPostRequestBody()
-credentials_synchronization_secret_key_string_value_pair1 = SynchronizationSecretKeyStringValuePair()
-credentials_synchronization_secret_key_string_value_pair1.key(SynchronizationSecret.UserName('synchronizationsecret.username'))
+graph_client = GraphServiceClient(credentials, scopes)
 
-credentials_synchronization_secret_key_string_value_pair1.value = 'user@domain.com'
+request_body = ValidateCredentialsPostRequestBody(
+	credentials = [
+		SynchronizationSecretKeyStringValuePair(
+			key = SynchronizationSecret.UserName,
+			value = "user@domain.com",
+		),
+		SynchronizationSecretKeyStringValuePair(
+			key = SynchronizationSecret.Password,
+			value = "password-value",
+		),
+	],
+)
 
-
-credentialsArray []= credentialsSynchronizationSecretKeyStringValuePair1;
-credentials_synchronization_secret_key_string_value_pair2 = SynchronizationSecretKeyStringValuePair()
-credentials_synchronization_secret_key_string_value_pair2.key(SynchronizationSecret.Password('synchronizationsecret.password'))
-
-credentials_synchronization_secret_key_string_value_pair2.value = 'password-value'
-
-
-credentialsArray []= credentialsSynchronizationSecretKeyStringValuePair2;
-request_body.credentials(credentialsArray)
-
-
-
-
-
-await client.service_principals.by_service_principal_id('servicePrincipal-id').synchronization.jobs.by_job_id('synchronizationJob-id').validate_credentials.post(request_body = request_body)
+await graph_client.service_principals.by_service_principal_id('servicePrincipal-id').synchronization.jobs.by_synchronization_job_id('synchronizationJob-id').validate_credentials.post(request_body)
 
 
 ```

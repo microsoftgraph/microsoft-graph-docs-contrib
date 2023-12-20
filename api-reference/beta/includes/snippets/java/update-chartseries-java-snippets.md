@@ -9,7 +9,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 WorkbookChartSeries workbookChartSeries = new WorkbookChartSeries();
 workbookChartSeries.name = "name-value";
 
-graphClient.me().drive().items("{id}").workbook().worksheets("{id|name}").charts("{name}").series("{undefined}")
+graphClient.me().drive().items("{id}").workbook().worksheets("{id|name}").charts("{name}").series("{series-id}")
 	.buildRequest()
 	.patch(workbookChartSeries);
 

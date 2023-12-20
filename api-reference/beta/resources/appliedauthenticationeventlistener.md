@@ -1,6 +1,6 @@
 ---
 title: "appliedAuthenticationEventListener resource type"
-description: "Represents the listeners, such as Azure Logic Apps and Azure Functions, that are triggered by the corresponding events in an sign-in event."
+description: "Represents the listeners such as Azure Logic Apps and Azure Functions that are triggered by the corresponding events in a sign-in event."
 author: "soneff"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the [authentication event listeners](authenticationeventlistener.md), such as Azure Logic Apps and Azure Functions, that are triggered by the corresponding events in a [sign-in event](../resources/signin.md).
+Represents the [authentication event listeners](authenticationeventlistener.md) such as Azure Logic Apps and Azure Functions that are triggered by the corresponding events in a [sign-in event](../resources/signin.md).
 
 ## Properties
 |Property|Type|Description|
@@ -26,7 +26,7 @@ Represents the [authentication event listeners](authenticationeventlistener.md),
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.appliedAuthenticationEventListener"

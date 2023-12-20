@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new AppCredentialSignInActivitiesRequestBuilderGetRequestConfiguration();
@@ -15,7 +15,6 @@ $queryParameters->filter = "keyId eq '83f45296-fb8f-4aaa-a399-ac51084e02b7'";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->reports()->appCredentialSignInActivities()->get($requestConfiguration);
-
+$result = $graphServiceClient->reports()->appCredentialSignInActivities()->get($requestConfiguration)->wait();
 
 ```

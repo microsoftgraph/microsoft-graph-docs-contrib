@@ -1,5 +1,5 @@
 ---
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 ms.localizationpriority: high
 ms.prod: "msgraph"
 ms.topic: include

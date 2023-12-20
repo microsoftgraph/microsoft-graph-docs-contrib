@@ -4,32 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = B2xIdentityUserFlow()
-request_body.id = 'Partner'
+graph_client = GraphServiceClient(credentials, scopes)
 
-request_body.userflowtype(UserFlowType.SignUpOrSignIn('userflowtype.signuporsignin'))
+request_body = B2xIdentityUserFlow(
+	id = "Partner",
+	user_flow_type = UserFlowType.SignUpOrSignIn,
+	user_flow_type_version = 1,
+	identity_providers = [
+		IdentityProvider(
+			id = "Facebook-OAuth",
+			type = "Facebook",
+			name = "Facebook",
+		),
+	],
+)
 
-request_body.UserFlowTypeVersion = 1
-
-identity_providers_identity_provider1 = IdentityProvider()
-identity_providers_identity_provider1.id = 'Facebook-OAuth'
-
-identity_providers_identity_provider1.type = 'Facebook'
-
-identity_providers_identity_provider1.name = 'Facebook'
-
-
-identityProvidersArray []= identityProvidersIdentityProvider1;
-request_body.identityproviders(identityProvidersArray)
-
-
-
-
-
-result = await client.identity.b2x_user_flows.post(request_body = request_body)
+result = await graph_client.identity.b2x_user_flows.post(request_body)
 
 
 ```

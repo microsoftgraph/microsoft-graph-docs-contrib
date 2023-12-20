@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = EmailAuthenticationMethod()
-request_body.email_address = 'kim@contoso.com'
+graph_client = GraphServiceClient(credentials, scopes)
 
+request_body = EmailAuthenticationMethod(
+	email_address = "kim@contoso.com",
+)
 
-
-
-result = await client.users.by_user_id('user-id').authentication.email_methods.post(request_body = request_body)
+result = await graph_client.users.by_user_id('user-id').authentication.email_methods.post(request_body)
 
 
 ```

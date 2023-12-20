@@ -3,7 +3,7 @@ title: "policyRuleDelta resource type"
 description: "Defines the action for updating the policy rule."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: resourcePageType
 ---
 

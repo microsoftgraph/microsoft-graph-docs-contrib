@@ -15,7 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-delta(token='{token}'), err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Delta(token='{token}')().Get(context.Background(), nil)
+token := "{token}"
+delta, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").DeltaWithToken(&token).Get(context.Background(), nil)
 
 
 ```

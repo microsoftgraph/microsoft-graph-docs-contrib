@@ -34,6 +34,6 @@ schema.properties = propertiesList;
 
 graphClient.external().connections("contosohr").schema()
 	.buildRequest()
-	.post(schema);
+	.patch(schema);
 
 ```

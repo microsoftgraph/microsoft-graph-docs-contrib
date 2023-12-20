@@ -15,7 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Reports().GetTeamsDeviceUsageDistributionUserCounts(period='{period}')().Get(context.Background(), nil)
+period := "{period}"
+graphClient.Reports().GetTeamsDeviceUsageDistributionUserCountsWithPeriod(&period).Get(context.Background(), nil)
 
 
 ```

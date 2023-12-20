@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-microsoft.graph.industryData.getStatistics(), err := graphClient.External().IndustryData().Runs().ByIndustryDataRunId("industryDataRun-id").MicrosoftGraphIndustryDataGetStatistics().Get(context.Background(), nil)
+microsoftGraphIndustryDataGetStatistics, err := graphClient.External().IndustryData().Runs().ByIndustryDataRunId("industryDataRun-id").MicrosoftGraphIndustryDataGetStatistics().Get(context.Background(), nil)
 
 
 ```

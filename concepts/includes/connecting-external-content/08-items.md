@@ -4,7 +4,7 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD041 -->
 
-In this section you will add methods to [add or delete items](../../connecting-external-content-manage-items.md) to the connector.
+In this section, you'll add methods to [add or delete items](../../connecting-external-content-manage-items.md) to the connector.
 
 ## Upload or delete items
 

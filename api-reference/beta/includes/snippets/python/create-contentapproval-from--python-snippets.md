@@ -4,49 +4,33 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = ContentApproval()
-request_body.@odata_type = '#microsoft.graph.windowsUpdates.contentApproval'
+graph_client = GraphServiceClient(credentials, scopes)
 
-content = CatalogContent()
-content.@odata_type = '#microsoft.graph.windowsUpdates.catalogContent'
+request_body = ContentApproval(
+	odata_type = "#microsoft.graph.windowsUpdates.contentApproval",
+	content = CatalogContent(
+		odata_type = "#microsoft.graph.windowsUpdates.catalogContent",
+		catalog_entry = FeatureUpdateCatalogEntry(
+			odata_type = "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
+			id = "6b7e60db-a8e4-426a-9aed-bd12b5c0b9d4",
+		),
+	),
+	deployment_settings = DeploymentSettings(
+	),
+	additional_data = {
+			"schedule" : {
+					"start_date_time" : "String (timestamp)",
+					"gradual_rollout" : {
+							"@odata_type" : "#microsoft.graph.windowsUpdates.dateDrivenRolloutSettings",
+							"end_date_time" : "String (timestamp)",
+					},
+			},
+	}
+)
 
-contentcatalog_entry = FeatureUpdateCatalogEntry()
-contentcatalog_entry.@odata_type = '#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry'
-
-contentcatalog_entry.id = '6b7e60db-a8e4-426a-9aed-bd12b5c0b9d4'
-
-
-content.catalog_entry = contentcatalog_entry
-
-request_body.content = content
-deployment_settings = DeploymentSettings()
-
-request_body.deployment_settings = deployment_settings
-additional_data = [
-'schedule' => request_body = Schedule()
-		request_body.start_date_time = 'String (timestamp)'
-
-gradual_rollout = GradualRollout()
-		gradual_rollout.@odata_type = '#microsoft.graph.windowsUpdates.dateDrivenRolloutSettings'
-
-		gradual_rollout.end_date_time = 'String (timestamp)'
-
-
-request_body.gradual_rollout = gradual_rollout
-
-request_body.schedule = schedule
-
-];
-request_body.additional_data(additional_data)
-
-
-
-
-
-result = await client.admin.windows.updates.update_policies.by_update_policie_id('updatePolicy-id').compliance_changes.post(request_body = request_body)
+result = await graph_client.admin.windows.updates.update_policies.by_update_policy_id('updatePolicy-id').compliance_changes.post(request_body)
 
 
 ```
