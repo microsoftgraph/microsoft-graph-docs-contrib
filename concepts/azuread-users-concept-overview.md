@@ -8,6 +8,7 @@ ms.localizationpriority: high
 ms.prod: "users"
 ms.custom: scenarios:getting-started
 ms.date: 11/11/2022
+#customer intent: As a developer, I want to understand how to build user-centric apps that call Microsoft Graph.
 ---
 
 # Overview of users in Microsoft Graph
