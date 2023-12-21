@@ -26,7 +26,7 @@ Because the [user](#user-property-differences) and [group](#group-property-diffe
 
 ## User property differences
 
-The Azure AD Graph **User** resource inherits from **DirectoryObject**; it's been renamed to **user** in Microsoft Graph and inherits from **directoryObject**. 
+The Azure AD Graph **User** resource inherits from **DirectoryObject**; it's named **user** in Microsoft Graph and inherits from **directoryObject**. 
 
 The Microsoft Graph v1.0 endpoint returns a limited set of user properties by default, while Azure AD Graph returns all properties. To read other properties that aren't returned by default, specify them in a `$select` query. For more information, see the [user resource type](/graph/api/resources/user).
 
@@ -48,13 +48,13 @@ The following table lists the more property differences.
 | **signinNames** | beta &nbsp;-&nbsp; **identities/signInType** <br> v1.0 &nbsp;-&nbsp; **identities/signInType** | This property is now part of the [objectIdentity](/graph/api/resources/objectIdentity) resource.|
 | **telephoneNumber** | beta  &nbsp;-&nbsp; **businessPhones** <br> v1.0 &nbsp;-&nbsp; **businessPhones** | |
 | **thumbnailPhoto** | beta  &nbsp;-&nbsp; **photo**, photos <br> v1.0 &nbsp;-&nbsp; **photo**, photos | The Microsoft Entra thumbnail photo isn't available through Microsoft Graph.  Use the [photo API](/graph/api/resources/profilephoto) instead. |
-| **userIdentities** | beta &nbsp;-&nbsp; **identities** <br> v1.0 &nbsp;-&nbsp; **identities** | See [objectIdentity](/graph/api/resources/objectIdentity) resource type for more details.|
+| **userIdentities** | beta &nbsp;-&nbsp; **identities** <br> v1.0 &nbsp;-&nbsp; **identities** | For more information, see [objectIdentity](/graph/api/resources/objectIdentity) resource type.|
 | **userState** | beta  &nbsp;-&nbsp; **externalUserState** <br> v1.0 &nbsp;-&nbsp; **externalUserState** | |
 | **userStateChangedOn** | beta&nbsp;-&nbsp;**externalUserStateChangeDateTime**<br>v1.0&nbsp;-&nbsp;**externalUserStateChangeDateTime** | |
 
 ## Group property differences
 
-The Azure AD Graph **Group** resource inherits from **DirectoryObject**; it's been renamed to **group** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
+The Azure AD Graph **Group** resource inherits from **DirectoryObject**; it's named **group** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
@@ -64,7 +64,7 @@ The Azure AD Graph **Group** resource inherits from **DirectoryObject**; it's be
 
 ## Application property differences
 
-The Azure AD Graph **Application** resource inherits from **DirectoryObject**; it's been renamed to **application** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
+The Azure AD Graph **Application** resource inherits from **DirectoryObject**; it's named **application** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
 
 
 | Azure AD Graph <br>(v1.6) property | Microsoft Graph<br> property                                                                                                                          | Comments                                                                                                                                                                                                                                                                                                                     |
@@ -74,14 +74,14 @@ The Azure AD Graph **Application** resource inherits from **DirectoryObject**; i
 | **errorUrl**                       | beta &nbsp;-&nbsp;_not available_ <br> v1.0 &nbsp;-&nbsp;  _not available_                                                                            | This property is deprecated.                                                                                                                                                                                                                                                                                                 |
 | **homepage**                       | beta &nbsp;-&nbsp;**web/homePageUrl** <br> v1.0 &nbsp;-&nbsp; **web/homePageUrl**                                                                     | homepage is now part of the new web resource.                                                                                                                                                                                                                                                                                |
 | **informationalUrls**              | beta &nbsp;-&nbsp;**info** <br> v1.0 &nbsp;-&nbsp; **info**                                                                                           |                                                                                                                                                                                                                                                                                                                              |
-| **knownClientApplications**        | beta&nbsp;-&nbsp;**api/knownClientApplications** <br> v1.0 &nbsp;-&nbsp;**api/knownClientApplications**                                               | knownClientApplications are now part of the new api resource.                                                                                                                                                                                                                                                                 |
+| **knownClientApplications**        | beta&nbsp;-&nbsp;**api/knownClientApplications** <br> v1.0 &nbsp;-&nbsp;**api/knownClientApplications**                                               | knownClientApplications are now part of the new [apiApplication](/graph/api/resources/apiapplication) resource.                                                                                                                                                                                                                                                                 |
 | **logoutUrl**                      | beta &nbsp;-&nbsp;**web/logoutUrl** <br> v1.0 &nbsp;-&nbsp; **web/logoutUrl**                                                                         | logoutUrl is now part of the web resource.                                                                                                                                                                                                                                                                                   |
 | **logoUrl**                        | beta &nbsp;-&nbsp;**info/logoUrl** <br> v1.0 &nbsp;-&nbsp; **info/logoUrl**                                                                           | logoUrl is now part of the new info resource.                                                                                                                                                                                                                                                                                |
 | **mainLogo**                       | beta &nbsp;-&nbsp;**logo** <br> v1.0 &nbsp;-&nbsp;  **logo**                                                                                          |                                                                                                                                                                                                                                                                                                                              |
 | **oauth2AllowIdTokenImplicitFlow** | beta&nbsp;-&nbsp;**web/implicitGrantSettings/enableIdTokenIssuance**<br>v1.0 &nbsp;-&nbsp;**web/implicitGrantSettings/enableIdTokenIssuance**         | Renamed, and now part of the new implicitGrantSettings resource.                                                                                                                                                                                                                                                             |
 | **oauth2AllowImplicitFlow**        | beta&nbsp;-&nbsp;**web/implicitGrantSettings/enableAccessTokenIssuance**<br>v1.0 &nbsp;-&nbsp;**web/implicitGrantSettings/enableAccessTokenIssuance** | Renamed, and now part of the new implicitGrantSettings resource.                                                                                                                                                                                                                                                             |
 | **oauth2AllowUrlPathMatching**     | beta &nbsp;-&nbsp;_not available_ <br> v1.0 &nbsp;-&nbsp;  _not available_                                                                            | This property is deprecated.                                                                                                                                                                                                                                                                                                 |
-| **oauth2Permissions**              | beta&nbsp;-&nbsp;**api/oauth2PermissionScopes**<br> v1.0 &nbsp;-&nbsp;**api/oauth2PermissionScopes**                                                  | Renamed and now part of the new api resource.                                                                                                                                                                                                                                                                                |
+| **oauth2Permissions**              | beta&nbsp;-&nbsp;**api/oauth2PermissionScopes**<br> v1.0 &nbsp;-&nbsp;**api/oauth2PermissionScopes**                                                  | Renamed and now part of the new [apiApplication](/graph/api/resources/apiapplication) resource.                                                                                                                                                                                                                                                                                |
 | **publicClient**                   | beta &nbsp;-&nbsp; **isFallbackPublicClient** <br> v1.0 &nbsp;-&nbsp; **isFallbackPublicClient**                                                      | This property now has a new meaning &nbsp;-&nbsp; it contains the public client settings like redirectUris. Determining whether the app is a public or confidential client or not is now done automatically, with the isFallbackPublicClient property handling the one special case that can't be determined automatically. |
 | **recordConsentConditions**        | beta &nbsp;-&nbsp;_not available_ <br> v1.0 &nbsp;-&nbsp;  _not available_                                                                            | This property is deprecated.                                                                                                                                                                                                                                                                                                 |
 | **replyUrls**                      | beta&nbsp;-&nbsp;**web/redirectUris**, **publicClient/redirectUris**<br> v1.0 &nbsp;-&nbsp;**web/redirectUris**, **publicClient/redirectUris**        | And being renamed, redirectUris is now part of the new web and publicClient resources. This allows developers to use specific URIs for their web and public clients (such as an installed application on a desktop device).                                                                                           |
@@ -90,7 +90,7 @@ The Azure AD Graph **Application** resource inherits from **DirectoryObject**; i
 
 ## AppRoleAssignment differences
 
-The Azure AD Graph **AppRoleAssignment** resource inherits from **DirectoryObject**; it's been renamed to **appRoleAssignment** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
+The Azure AD Graph **AppRoleAssignment** resource inherits from **DirectoryObject**; it's named **appRoleAssignment** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
 
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
@@ -100,7 +100,7 @@ The Azure AD Graph **AppRoleAssignment** resource inherits from **DirectoryObjec
 
 ## Contact property differences
 
-The Azure AD Graph **Contact** resource inherits from **DirectoryObject**; it's been renamed to **orgContact** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
+The Azure AD Graph **Contact** resource inherits from **DirectoryObject**; it's named **orgContact** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
@@ -119,7 +119,7 @@ The Azure AD Graph **Contact** resource inherits from **DirectoryObject**; it's 
 
 ## Contract property differences
 
-The Azure AD Graph **Contract** resource inherits from **DirectoryObject**; it's been renamed to **contract** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
+The Azure AD Graph **Contract** resource inherits from **DirectoryObject**; it's named **contract** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
 
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
@@ -128,7 +128,7 @@ The Azure AD Graph **Contract** resource inherits from **DirectoryObject**; it's
 
 ## Device property differences
 
-The Azure AD Graph **Device** resource inherits from **DirectoryObject**; it's been renamed to **device** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
+The Azure AD Graph **Device** resource inherits from **DirectoryObject**; it's named **device** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
 
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
@@ -155,7 +155,7 @@ The Azure AD Graph **DirectoryObject** resource has been renamed to **directoryO
 
 ## DirectoryObjectReference property differences
 
-The Azure AD Graph **DirectoryObjectReference** resource inherits from **DirectoryObject**; it's been renamed to **directoryObjectPartnerReference** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
+The Azure AD Graph **DirectoryObjectReference** resource inherits from **DirectoryObject**; it's named **directoryObjectPartnerReference** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
@@ -186,7 +186,7 @@ In Microsoft Graph, there are named policy types (such as **tokenIssuancePolicy*
 
 ## ServiceEndpoint property differences
 
-The Azure AD Graph **ServiceEndpoint** resource inherits from **DirectoryObject**; it's been renamed to **endpoint** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
+The Azure AD Graph **ServiceEndpoint** resource inherits from **DirectoryObject**; it's named **endpoint** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
@@ -196,7 +196,7 @@ The Azure AD Graph **ServiceEndpoint** resource inherits from **DirectoryObject*
 
 ## ServicePrincipal property differences
 
-The Azure AD Graph **ServicePrincipal** resource inherits from **DirectoryObject**; it's been renamed to **servicePrincipal** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
+The Azure AD Graph **ServicePrincipal** resource inherits from **DirectoryObject**; it's named **servicePrincipal** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
@@ -209,7 +209,7 @@ The Azure AD Graph **ServicePrincipal** resource inherits from **DirectoryObject
 
 ## TenantDetails property differences
 
-The Azure AD Graph **TenantDetail** resource inherits from **DirectoryObject**; it's been renamed to **organization** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
+The Azure AD Graph **TenantDetail** resource inherits from **DirectoryObject**; it's named **organization** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
