@@ -3,7 +3,7 @@ title: "Set Microsoft 365 group behaviors and provisioning options"
 description: "Use the group resource in Microsoft Graph to set specific group behaviors and resources to provision when creating a Microsoft 365 group."
 author: "FaithOmbongi"
 ms.author: ombongifaith
-ms.reviewer: psaffaie, jodah
+ms.reviewer: jodah
 ms.localizationpriority: high
 ms.date: 08/13/2022
 ---
@@ -37,5 +37,5 @@ The **group** resource exposes two properties, **resourceBehaviorOptions** and *
 
 ## See also
 
-- [Overview of Microsoft 365 groups in Microsoft Graph](office365-groups-concept-overview.md)
+- [Overview of Microsoft 365 groups in Microsoft Graph](microsoft365-groups-concept-overview.md)
 - [Microsoft Teams API overview](teams-concept-overview.md)

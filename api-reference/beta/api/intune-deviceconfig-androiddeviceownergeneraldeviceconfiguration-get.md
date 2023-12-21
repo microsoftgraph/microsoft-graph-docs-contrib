@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -65,7 +67,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10890
+Content-Length: 11470
 
 {
   "value": {
@@ -332,7 +334,24 @@ Content-Length: 10890
     "workProfilePasswordRequiredType": "required",
     "workProfilePasswordRequireUnlock": "daily",
     "locateDeviceUserlessDisabled": true,
-    "locateDeviceLostModeEnabled": true
+    "locateDeviceLostModeEnabled": true,
+    "androidDeviceOwnerDelegatedScopeAppSettings": [
+      {
+        "@odata.type": "microsoft.graph.androidDeviceOwnerDelegatedScopeAppSetting",
+        "appDetail": {
+          "@odata.type": "microsoft.graph.appListItem",
+          "name": "Name value",
+          "publisher": "Publisher value",
+          "appStoreUrl": "https://example.com/appStoreUrl/",
+          "appId": "App Id value"
+        },
+        "appScopes": [
+          "certificateInstall"
+        ]
+      }
+    ],
+    "shareDeviceLocationDisabled": true,
+    "deviceLocationMode": "disabled"
   }
 }
 ```

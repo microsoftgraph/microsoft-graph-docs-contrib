@@ -1,0 +1,32 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```java
+
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+
+CustomTaskExtension customTaskExtension = new CustomTaskExtension();
+customTaskExtension.displayName = "Grant manager access to mailbox and OneDrive";
+customTaskExtension.description = "Grant manager access to mailbox and OneDrive";
+LogicAppTriggerEndpointConfiguration endpointConfiguration = new LogicAppTriggerEndpointConfiguration();
+endpointConfiguration.subscriptionId = "c500b67c-e9b7-4ad2-a90d-77d41385ae55";
+endpointConfiguration.resourceGroupName = "RG-LCM";
+endpointConfiguration.logicAppWorkflowName = "ManagerAccess";
+customTaskExtension.endpointConfiguration = endpointConfiguration;
+AzureAdTokenAuthentication authenticationConfiguration = new AzureAdTokenAuthentication();
+authenticationConfiguration.resourceId = "542dc01a-0b5d-4edc-b3f9-5cfe6393f557";
+customTaskExtension.authenticationConfiguration = authenticationConfiguration;
+CustomExtensionClientConfiguration clientConfiguration = new CustomExtensionClientConfiguration();
+clientConfiguration.maximumRetries = 1;
+clientConfiguration.timeoutInMilliseconds = 1000;
+customTaskExtension.clientConfiguration = clientConfiguration;
+CustomTaskExtensionCallbackConfiguration callbackConfiguration = new CustomTaskExtensionCallbackConfiguration();
+callbackConfiguration.timeoutDuration = DatatypeFactory.newInstance().newDuration("PT5M");
+customTaskExtension.callbackConfiguration = callbackConfiguration;
+
+graphClient.identityGovernance().lifecycleWorkflows().customTaskExtensions()
+	.buildRequest()
+	.post(customTaskExtension);
+
+```

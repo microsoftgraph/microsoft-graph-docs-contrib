@@ -4,19 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodelswindowsupdates "github.com/microsoftgraph/msgraph-beta-sdk-go/models/windowsupdates"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewComplianceChange()
-additionalData := map[string]interface{}{
-content := graphmodels.New()
-catalogEntry := graphmodels.New()
+
+requestBody := graphmodelswindowsupdates.NewComplianceChange()
+content := graphmodelswindowsupdates.NewCatalogContent()
+catalogEntry := graphmodelswindowsupdates.NewFeatureUpdateCatalogEntry()
 id := "6b7e60db-a8e4-426a-9aed-bd12b5c0b9d4"
 catalogEntry.SetId(&id) 
-	content.SetCatalogEntry(catalogEntry)
-	requestBody.SetContent(content)
-deploymentSettings := graphmodels.New()
-	requestBody.SetDeploymentSettings(deploymentSettings)
+content.SetCatalogEntry(catalogEntry)
+requestBody.SetContent(content)
+deploymentSettings := graphmodelswindowsupdates.NewDeploymentSettings()
+requestBody.SetDeploymentSettings(deploymentSettings)
+additionalData := map[string]interface{}{
 schedule := graphmodels.New()
 startDateTime := "String (timestamp)"
 schedule.SetStartDateTime(&startDateTime) 
@@ -28,7 +36,7 @@ gradualRollout.SetEndDateTime(&endDateTime)
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Admin().Windows().Updates().UpdatePoliciesById("updatePolicy-id").ComplianceChanges().Post(context.Background(), requestBody, nil)
+complianceChanges, err := graphClient.Admin().Windows().Updates().UpdatePolicies().ByUpdatePolicyId("updatePolicy-id").ComplianceChanges().Post(context.Background(), requestBody, nil)
 
 
 ```

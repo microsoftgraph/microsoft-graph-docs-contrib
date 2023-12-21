@@ -10,7 +10,7 @@ doc_type: resourcePageType
 # deviceDetail resource type
 
 Namespace: microsoft.graph
-Indicates device details associated with a device used for signing in. Includes information like device browser and  OS info, if device is Azure AD managed.
+Indicates device details associated with a device used for signing in. Includes information like device browser and  OS info, if device is Microsoft Entra ID managed.
 
 
 
@@ -27,7 +27,7 @@ Indicates device details associated with a device used for signing in. Includes 
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -59,5 +59,3 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

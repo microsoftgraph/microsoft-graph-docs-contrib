@@ -1,7 +1,7 @@
 ---
 title: "meetingSpeaker resource type"
 description: "Represents the speaker of an online meeting that has registration enabled."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 ms.date: 09/30/2021

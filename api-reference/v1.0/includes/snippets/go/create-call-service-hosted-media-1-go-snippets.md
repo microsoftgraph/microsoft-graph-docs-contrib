@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewCall()
 callbackUri := "https://bot.contoso.com/callback"
@@ -24,23 +32,21 @@ invitationParticipantInfo.SetIdentity(identity)
 
 targets := []graphmodels.InvitationParticipantInfoable {
 	invitationParticipantInfo,
-
 }
 requestBody.SetTargets(targets)
 requestedModalities := []graphmodels.Modalityable {
 	modality := graphmodels.AUDIO_MODALITY 
-	requestBody.SetModality(&modality) 
-
+	requestBody.SetModality(&modality)
 }
 requestBody.SetRequestedModalities(requestedModalities)
-callOptions := graphmodels.NewCallOptions()
+callOptions := graphmodels.NewOutgoingCallOptions()
 isContentSharingNotificationEnabled := true
 callOptions.SetIsContentSharingNotificationEnabled(&isContentSharingNotificationEnabled) 
 requestBody.SetCallOptions(callOptions)
-mediaConfig := graphmodels.NewMediaConfig()
+mediaConfig := graphmodels.NewServiceHostedMediaConfig()
 requestBody.SetMediaConfig(mediaConfig)
 
-result, err := graphClient.Communications().Calls().Post(context.Background(), requestBody, nil)
+calls, err := graphClient.Communications().Calls().Post(context.Background(), requestBody, nil)
 
 
 ```

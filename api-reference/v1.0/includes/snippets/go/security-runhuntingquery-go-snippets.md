@@ -4,14 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphsecurity "github.com/microsoftgraph/msgraph-sdk-go/security"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewRunHuntingQueryPostRequestBody()
+
+requestBody := graphsecurity.NewRunHuntingQueryPostRequestBody()
 query := "DeviceProcessEvents | where InitiatingProcessFileName =~ \"powershell.exe\" | project Timestamp, FileName, InitiatingProcessFileName | order by Timestamp desc | limit 2"
 requestBody.SetQuery(&query) 
 
-result, err := graphClient.Security().SecurityRunHuntingQuery().Post(context.Background(), requestBody, nil)
+microsoftGraphSecurityRunHuntingQuery, err := graphClient.Security().MicrosoftGraphSecurityRunHuntingQuery().Post(context.Background(), requestBody, nil)
 
 
 ```

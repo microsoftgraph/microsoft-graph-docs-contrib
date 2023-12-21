@@ -1,10 +1,11 @@
 ---
 title: "passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration resource type"
 description: "Represents a Microsoft Authenticator Passwordless Phone Sign-in authentication methods policy."
-author: "mmcla"
+author: "mjsantani"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
-doc_type: "apiPageType"
+doc_type: resourcePageType
 ---
 
 # passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration resource type (deprecated)

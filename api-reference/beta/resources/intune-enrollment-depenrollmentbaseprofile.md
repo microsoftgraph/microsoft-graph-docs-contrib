@@ -37,7 +37,7 @@ Inherits from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofi
 |enableAuthenticationViaCompanyPortal|Boolean|Indicates to authenticate with Apple Setup Assistant instead of Company Portal. Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|Indicates that Company Portal is required on setup assistant enrolled devices Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |isDefault|Boolean|Indicates if this is the default profile|
-|supervisedModeEnabled|Boolean|Supervised mode, True to enable, false otherwise. See hhttps://learn.microsoft.com/mem/intune/enrollment/device-enrollment for additional information.|
+|supervisedModeEnabled|Boolean|Supervised mode, True to enable, false otherwise. See https://learn.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune for additional information.|
 |supportDepartment|String|Support department information|
 |isMandatory|Boolean|Indicates if the profile is mandatory|
 |locationDisabled|Boolean|Indicates if Location service setup pane is disabled|
@@ -56,6 +56,7 @@ Inherits from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofi
 |deviceNameTemplate|String|Sets a literal or name pattern.|
 |configurationWebUrl|Boolean|URL for setup assistant login|
 |enabledSkipKeys|String collection|enabledSkipKeys contains all the enabled skip keys as strings|
+|enrollmentTimeAzureAdGroupIds|Guid collection|EnrollmentTimeAzureAdGroupIds contains list of enrollment time Azure Group Ids to be associated with profile|
 
 ## Relationships
 None
@@ -99,6 +100,9 @@ Here is a JSON representation of the resource.
   "configurationWebUrl": true,
   "enabledSkipKeys": [
     "String"
+  ],
+  "enrollmentTimeAzureAdGroupIds": [
+    "Guid"
   ]
 }
 ```

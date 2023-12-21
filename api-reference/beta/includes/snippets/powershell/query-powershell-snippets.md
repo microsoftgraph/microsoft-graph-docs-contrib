@@ -4,23 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Search
+Import-Module Microsoft.Graph.Beta.Search
 
 $params = @{
-	Requests = @(
+	requests = @(
 		@{
-			EntityTypes = @(
+			entityTypes = @(
 				"externalItem"
 			)
-			ContentSources = @(
+			contentSources = @(
 				"/external/connections/connectionfriendlyname"
 			)
-			Query = @{
-				QueryString = "contoso product"
+			query = @{
+				queryString = "contoso product"
 			}
-			From = 0
-			Size = 25
-			Fields = @(
+			from = 0
+			size = 25
+			fields = @(
 				"title"
 				"description"
 			)
@@ -28,6 +28,6 @@ $params = @{
 	)
 }
 
-Invoke-MgQuerySearch -BodyParameter $params
+Invoke-MgBetaQuerySearch -BodyParameter $params
 
 ```

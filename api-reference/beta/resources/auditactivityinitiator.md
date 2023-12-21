@@ -4,7 +4,7 @@ description: "Identity the resource object that initiates the activity. The init
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "identity-and-access-reports"
-author: "besiler"
+author: "egreenberg14"
 ---
 
 # auditActivityInitiator resource type

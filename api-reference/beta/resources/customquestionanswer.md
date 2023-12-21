@@ -1,7 +1,7 @@
 ---
 title: "customQuestionAnswer resource type"
 description: "Represents a registrant's answer to a custom registration question."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 ms.date: 09/30/2021

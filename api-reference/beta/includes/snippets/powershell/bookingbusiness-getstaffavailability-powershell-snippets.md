@@ -4,22 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Bookings
+Import-Module Microsoft.Graph.Beta.Bookings
 
 $params = @{
-	StaffIds = @(
+	staffIds = @(
 		"311a5454-08b2-4560-ba1c-f715e938cb79"
 	)
-	StartDateTime = @{
-		DateTime = "2022-01-25T00:00:00"
-		TimeZone = "India Standard Time"
+	startDateTime = @{
+		dateTime = "2022-01-25T00:00:00"
+		timeZone = "India Standard Time"
 	}
-	EndDateTime = @{
-		DateTime = "2022-01-26T17:00:00"
-		TimeZone = "Pacific Standard Time"
+	endDateTime = @{
+		dateTime = "2022-01-26T17:00:00"
+		timeZone = "Pacific Standard Time"
 	}
 }
 
-Get-MgBookingBusinessStaffAvailability -BookingBusinessId $bookingBusinessId -BodyParameter $params
+Get-MgBetaBookingBusinessStaffAvailability -BookingBusinessId $bookingBusinessId -BodyParameter $params
 
 ```

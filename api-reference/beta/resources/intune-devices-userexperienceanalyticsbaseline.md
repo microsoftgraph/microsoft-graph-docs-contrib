@@ -30,21 +30,21 @@ The user experience analytics baseline entity contains baseline values against w
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier of the user experience analytics baseline.|
-|displayName|String|The name of the user experience analytics baseline.|
+|displayName|String|The name of the baseline.|
 |overallScore|Int32|The overall score of the user experience analytics baseline.|
-|isBuiltIn|Boolean|Signifies if the current baseline is the commercial median baseline or a custom baseline.|
-|createdDateTime|DateTimeOffset|The date the custom baseline was created.|
+|isBuiltIn|Boolean|When TRUE, indicates the current baseline is the commercial median baseline. When FALSE, indicates it is a custom baseline. FALSE by default.|
+|createdDateTime|DateTimeOffset|The date the custom baseline was created. The value cannot be modified and is automatically populated when the baseline is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Returned by default.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|deviceBootPerformanceMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|The user experience analytics device boot performance metrics.|
-|bestPracticesMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|The user experience analytics best practices metrics.|
-|rebootAnalyticsMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|The user experience analytics reboot analytics metrics.|
-|resourcePerformanceMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|The user experience analytics resource performance metrics.|
-|appHealthMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|The user experience analytics app health metrics.|
-|workFromAnywhereMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|The user experience analytics work from anywhere metrics.|
-|batteryHealthMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|The user experience analytics battery health metrics.|
+|deviceBootPerformanceMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|The scores and insights for the device boot performance metrics.|
+|bestPracticesMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|The scores and insights for the best practices metrics.|
+|rebootAnalyticsMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|The scores and insights for the reboot analytics metrics.|
+|resourcePerformanceMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|The scores and insights for the resource performance metrics.|
+|appHealthMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|The scores and insights for the application health metrics.|
+|workFromAnywhereMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|The scores and insights for the work from anywhere metrics.|
+|batteryHealthMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|The scores and insights for the battery health metrics.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

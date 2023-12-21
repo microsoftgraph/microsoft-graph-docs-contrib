@@ -4,7 +4,7 @@ description: "Provides the sign-in status (Success or Failure) of the sign-in"
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "identity-and-access-reports"
-author: "SarahBar"
+author: "egreenberg14"
 ---
 
 # signInStatus resource type

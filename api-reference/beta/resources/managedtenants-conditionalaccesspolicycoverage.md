@@ -1,6 +1,6 @@
 ---
 title: "conditionalAccessPolicyCoverage resource type"
-description: "Represents information about any Azure Active Directory policy that defines access rules of a resource for a given managed tenant."
+description: "Represents information about any Microsoft Entra policy that defines access rules of a resource for a given managed tenant."
 author: "idwilliams"
 ms.localizationpriority: medium
 ms.prod: "multi-tenant-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents information about any Azure Active Directory policy that defines access rules of a resource for a given managed tenant.
+Represents information about any Microsoft Entra policy that defines access rules of a resource for a given managed tenant.
 
 ## Methods
 |Method|Return type|Description|

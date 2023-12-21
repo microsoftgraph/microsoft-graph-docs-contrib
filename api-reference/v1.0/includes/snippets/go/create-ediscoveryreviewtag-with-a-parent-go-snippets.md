@@ -4,10 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodelssecurity "github.com/microsoftgraph/msgraph-sdk-go/models/security"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewEdiscoveryReviewTag()
+
+requestBody := graphmodelssecurity.NewEdiscoveryReviewTag()
 displayName := "My tag API"
 requestBody.SetDisplayName(&displayName) 
 description := "Use Graph API to create tags"
@@ -19,7 +27,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Security().Cases().EdiscoveryCasesById("ediscoveryCase-id").Tags().Post(context.Background(), requestBody, nil)
+tags, err := graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").Tags().Post(context.Background(), requestBody, nil)
 
 
 ```

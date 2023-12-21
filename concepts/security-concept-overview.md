@@ -15,7 +15,7 @@ The Microsoft Graph security API is an intermediary service (or broker) that pro
 
 ![security_overview_diagram_1.png](./images/security-overview-diagram-1.png)
 
-For information about authorization, see [Authorization and the Microsoft Graph security API](security-authorization.md). For information about permissions, including delegated and application permissions, see [Permissions](permissions-reference.md#security-permissions).
+For information about authorization, see [Authorization and the Microsoft Graph security API](security-authorization.md). For information about permissions, including delegated and application permissions, see [Permissions](permissions-reference.md).
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/oYXPGwH9Ho0]
 
@@ -47,7 +47,7 @@ Tag alerts with additional context or threat intelligence to inform response and
 
 ### Unlock security context to drive investigation
 
-Dive deep into related security-relevant inventory (like users, hosts, and apps), then add organizational context from other Microsoft Graph providers (Azure AD, Microsoft Intune, Microsoft 365) to bring business and security contexts together and improve threat response.
+Dive deep into related security-relevant inventory (like users, hosts, and apps), then add organizational context from other Microsoft Graph providers (Microsoft Entra ID, Microsoft Intune, Microsoft 365) to bring business and security contexts together and improve threat response.
 
 ### Automate security workflows and reporting
 

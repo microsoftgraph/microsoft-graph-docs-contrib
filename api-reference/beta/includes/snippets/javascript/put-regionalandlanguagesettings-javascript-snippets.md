@@ -45,13 +45,13 @@ const regionalAndLanguageSettings = {
         languageOverrides: [
             {
                 languageTag: 'fr',
-                translationBehavior: 'Yes' 
+                translationBehavior: 'Yes'
             }
         ]
      }
 };
 
-await client.api('/me/settings/regionalandlanguagesettings')
+await client.api('/me/settings/regionalAndLanguageSettings')
 	.version('beta')
 	.put(regionalAndLanguageSettings);
 

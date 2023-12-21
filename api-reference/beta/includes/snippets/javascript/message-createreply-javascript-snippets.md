@@ -11,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const message = {
-  message: {  
+  message: {
     toRecipients: [
       {
         emailAddress: {
@@ -27,7 +27,7 @@ const message = {
       }
      ]
   },
-  comment: 'Samantha, Randi, would you name the group if the project is approved, please?' 
+  comment: 'Samantha, Randi, would you name the group if the project is approved, please?'
 };
 
 await client.api('/me/messages/AAMkADA1MTAAAAqldOAAA=/createReply')

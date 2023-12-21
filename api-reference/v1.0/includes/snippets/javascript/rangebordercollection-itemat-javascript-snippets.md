@@ -10,11 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const workbookRangeBorder = {
-  index: 1
-};
-
-await client.api('/me/drive/items/{id}/workbook/names/{name}/range/format/borders/itemAt')
-	.post(workbookRangeBorder);
+let workbookRangeBorder = await client.api('/me/drive/items/{id}/workbook/names/{name}/range/format/borders/itemAt(index=1)')
+	.get();
 
 ```

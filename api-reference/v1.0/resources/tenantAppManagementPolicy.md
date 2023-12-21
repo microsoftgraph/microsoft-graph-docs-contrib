@@ -4,7 +4,7 @@ description: "Tenant-wide application authentication method policy to enforce ap
 author: "madansr7"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
-doc_type: "apiPageType"
+doc_type: resourcePageType
 ---
 
 # tenantAppManagementPolicy resource type

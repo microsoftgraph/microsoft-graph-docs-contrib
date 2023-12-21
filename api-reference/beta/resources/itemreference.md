@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "Provides information necessary to address a driveItem or listItem via the API."
 title: itemReference
 ms.localizationpriority: medium

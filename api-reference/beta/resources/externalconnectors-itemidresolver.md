@@ -15,7 +15,6 @@ Namespace: microsoft.graph.externalConnectors
 
 Defines the rules for resolving a URL to the ID of an [externalItem](externalconnectors-externalitem.md).
 
-
 Inherits from [urlToItemResolverBase](../resources/externalconnectors-urltoitemresolverbase.md).
 
 ## Properties

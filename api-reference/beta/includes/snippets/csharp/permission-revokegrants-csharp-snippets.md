@@ -4,19 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var grantees = new List<DriveRecipient>()
+// Dependencies
+using Microsoft.Graph.Beta.Drives.Item.Items.Item.Permissions.Item.RevokeGrants;
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new RevokeGrantsPostRequestBody
 {
-	new DriveRecipient
+	Grantees = new List<DriveRecipient>
 	{
-		Email = "ryan@contoso.com"
-	}
+		new DriveRecipient
+		{
+			Email = "ryan@contoso.com",
+		},
+	},
 };
 
-await graphClient.Me.Drive.Items["{driveItem-id}"].Permissions["{permission-id}"]
-	.RevokeGrants(grantees)
-	.Request()
-	.PostAsync();
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Permissions["{permission-id}"].RevokeGrants.PostAsync(requestBody);
+
 
 ```

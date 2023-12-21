@@ -1,6 +1,6 @@
 ---
 title: "Deploy a driver update using the Windows Update for Business deployment service"
-description: "Follow these steps to manage driver approvals for devices in an Azure AD tenant by using the Windows Update for Business deployment service."
+description: "Follow these steps to manage driver approvals for devices in a Microsoft Entra tenant by using the Windows Update for Business deployment service."
 author: "Ryan-K-Williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
@@ -9,7 +9,7 @@ doc_type: conceptualPageType
 
 # Manage driver approvals using the Windows Update for Business deployment service
 
-With the Windows Update for Business deployment service, you can deploy Windows updates to devices in an Azure AD tenant. Today, the deployment service supports [deployments](/graph/windowsupdates-deployments) of Windows 10 and Windows 11 feature updates, expedited security updates, and driver updates. This topic focuses on managing the deployments of driver updates. For information about deploying feature updates, see [Deploy a feature update](/graph/windowsupdates-deploy-update). For information about deploying expedited security updates, see [Deploy an expedited security update](/graph/windowsupdates-deploy-expedited-update).
+With the Windows Update for Business deployment service, you can deploy Windows updates to devices in a Microsoft Entra tenant. Today, the deployment service supports [deployments](/graph/windowsupdates-deployments) of Windows 10 and Windows 11 feature updates, expedited security updates, and driver updates. This topic focuses on managing the deployments of driver updates. For information about deploying feature updates, see [Deploy a feature update](/graph/windowsupdates-deploy-update). For information about deploying expedited security updates, see [Deploy an expedited security update](/graph/windowsupdates-deploy-expedited-update).
 
 When devices enrolled in the Windows Update for Business deployment service scan Windows Update, the deployment service collects scan results of applicable drivers that are better than what is currently installed on the device.  The service then catalogs them to be browsed, approved, and scheduled for deployment.  Only content that has been approved using the deployment service will be offered to devices as long as it remains enrolled in driver management.
 
@@ -80,7 +80,7 @@ Content-Type: application/json
 
 After a [deployment audience](/graph/api/resources/windowsupdates-deploymentaudience) is created, you can assign devices to the deployment audience. When the deployment audience is successfully updated, the Windows Update for Business deployment service will start collecting scan results from Windows Update to build a catalog of applicable drivers to be browsed, approved, and scheduled for deployment.
 
-The following example shows how to add Azure AD devices as members of the deployment audience.
+The following example shows how to add Microsoft Entra devices as members of the deployment audience.
 
 ### Request
 
@@ -152,7 +152,7 @@ Content-type: application/json
 
 ## Step 5: Get inventory of driver updates
 
-After devices are added to a deployment audience, you can browse and review a catalog of [applicable content](/graph/api/resources/windowsupdates-applicablecontent) for drivers and firmware that are better than what is currently installed on the collection of devices in a deployment audience. The applicable content also provides a matched devices list of Azure Active Directory devices that are applicable for each driver.
+After devices are added to a deployment audience, you can browse and review a catalog of [applicable content](/graph/api/resources/windowsupdates-applicablecontent) for drivers and firmware that are better than what is currently installed on the collection of devices in a deployment audience. The applicable content also provides a matched devices list of Microsoft Entra devices that are applicable for each driver.
 
 The following example shows how to get the inventory of driver updates available for devices in an existing deployment audience.
 

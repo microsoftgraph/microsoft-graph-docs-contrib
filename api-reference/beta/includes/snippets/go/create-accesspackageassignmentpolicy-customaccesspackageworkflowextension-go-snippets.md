@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewAccessPackageAssignmentPolicy()
 displayName := "extension-policy"
@@ -59,7 +67,6 @@ customExtensionHandler1.SetCustomExtension(customExtension)
 customExtensionHandlers := []graphmodels.CustomExtensionHandlerable {
 	customExtensionHandler,
 	customExtensionHandler1,
-
 }
 requestBody.SetCustomExtensionHandlers(customExtensionHandlers)
 additionalData := map[string]interface{}{
@@ -72,7 +79,7 @@ expiration.SetDuration(&duration)
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentPolicies().Post(context.Background(), requestBody, nil)
+accessPackageAssignmentPolicies, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentPolicies().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -7,17 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-	RegistrationEnforcement = @{
-		AuthenticationMethodsRegistrationCampaign = @{
-			SnoozeDurationInDays = 1
-			State = "enabled"
-			ExcludeTargets = @(
+	registrationEnforcement = @{
+		authenticationMethodsRegistrationCampaign = @{
+			snoozeDurationInDays = 1
+			state = "enabled"
+			excludeTargets = @(
 			)
-			IncludeTargets = @(
+			includeTargets = @(
 				@{
-					Id = "3ee3a9de-0a86-4e12-a287-9769accf1ba2"
-					TargetType = "group"
-					TargetedAuthenticationMethod = "microsoftAuthenticator"
+					id = "3ee3a9de-0a86-4e12-a287-9769accf1ba2"
+					targetType = "group"
+					targetedAuthenticationMethod = "microsoftAuthenticator"
 				}
 			)
 		}

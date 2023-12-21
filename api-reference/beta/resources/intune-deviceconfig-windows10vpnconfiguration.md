@@ -208,7 +208,8 @@ Here is a JSON representation of the resource.
       "appId": "String",
       "appType": "String",
       "routingPolicyType": "String",
-      "claims": "String"
+      "claims": "String",
+      "vpnTrafficDirection": "String"
     }
   ],
   "routes": [

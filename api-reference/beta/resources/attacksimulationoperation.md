@@ -27,15 +27,15 @@ Inherits from [longRunningOperation](../resources/longrunningoperation.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|Operation created date time. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
+|createdDateTime|DateTimeOffset|Operation created date time. The timestamp represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
 |id|String|The unique identifier for the operation. Inherited from [entity](../resources/entity.md).|
-|lastActionDateTime|DateTimeOffset|The time of the last action in the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
+|lastActionDateTime|DateTimeOffset|The time of the last action in the operation. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
 |percentageCompleted|Int32| Percentage of completion of the respective operation.|
 |resourceLocation|String|URI of the resource location. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
 |status|longRunningOperationStatus|Operation status. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
 |statusDetail|String|Status detail of the operation. Inherited from [longRunningOperation](../resources/longrunningoperation.md).|
 |tenantId|String|Tenant identifier.|
-|type|attackSimulationOperationType|The attack simulation operation type. Possible values are: `createSimulation`, `updateSimulation`, `unknownFutureValue`.|
+|type|[attackSimulationOperationType](#attacksimulationoperationtype-values)|The attack simulation operation type. Possible values are: `createSimulation`, `updateSimulation`, `unknownFutureValue`.|
 
 ### attackSimulationOperationType values
 
@@ -51,7 +51,8 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -68,14 +69,10 @@ The following is a JSON representation of the resource.
     "lastActionDateTime": "String (timestamp)",
     "percentageCompleted": "Int32",
     "resourceLocation": "String",
-    "status": {
-        "@odata.type": "microsoft.graph.longRunningOperationStatus"
-    },
+    "status": "String",
     "statusDetail": "String",
     "tenantId": "String",
-    "type": {
-        "@odata.type": "microsoft.graph.attackSimulationOperationType"
-    }
+    "type": "String"
 }
 ```
 

@@ -7,26 +7,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Mail
 
 $params = @{
-	Subject = "9/8/2018: concert"
-	Body = @{
-		ContentType = "HTML"
-		Content = "The group represents Washington."
+	subject = "9/8/2018: concert"
+	body = @{
+		contentType = "HTML"
+		content = "The group represents Washington."
 	}
-	ToRecipients = @(
+	toRecipients = @(
 		@{
-			EmailAddress = @{
-				Address = "AlexW@contoso.OnMicrosoft.com"
+			emailAddress = @{
+				address = "AlexW@contoso.OnMicrosoft.com"
 			}
 		}
 	)
-	InternetMessageHeaders = @(
+	internetMessageHeaders = @(
 		@{
-			Name = "x-custom-header-group-name"
-			Value = "Washington"
+			name = "x-custom-header-group-name"
+			value = "Washington"
 		}
 		@{
-			Name = "x-custom-header-group-id"
-			Value = "WA001"
+			name = "x-custom-header-group-id"
+			value = "WA001"
 		}
 	)
 }

@@ -8,8 +8,8 @@ Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.smsAuthenticationMethodConfiguration"
-	Id = "Sms"
-	State = "enabled"
+	id = "Sms"
+	state = "enabled"
 }
 
 Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId -BodyParameter $params

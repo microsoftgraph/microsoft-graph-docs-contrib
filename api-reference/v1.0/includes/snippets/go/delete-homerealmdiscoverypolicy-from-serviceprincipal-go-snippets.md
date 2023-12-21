@@ -4,11 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-graphClient.ServicePrincipalsById("servicePrincipal-id").HomeRealmDiscoveryPoliciesById("homeRealmDiscoveryPolicy-id").Ref().Delete(context.Background(), nil)
+
+graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").HomeRealmDiscoveryPolicies().ByHomeRealmDiscoveryPolicyId("homeRealmDiscoveryPolicy-id").Ref().Delete(context.Background(), nil)
 
 
 ```

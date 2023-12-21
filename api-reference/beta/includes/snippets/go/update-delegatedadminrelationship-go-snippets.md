@@ -4,13 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  graphtenantrelationships "github.com/microsoftgraph/msgraph-beta-sdk-go/tenantrelationships"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("If-Match", "W/\"JyI0NzAwNjg0NS0wMDAwLTE5MDAtMDAwMC02MGY0Yjg4MzAwMDAiJw==\"")
 
-configuration := &graphconfig.TenantRelationshipsDelegatedAdminRelationshipItemRequestBuilderPatchRequestConfiguration{
+configuration := &graphtenantrelationships.TenantRelationshipsDelegatedAdminRelationshipItemRequestBuilderPatchRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewDelegatedAdminRelationship()
@@ -43,12 +53,13 @@ unifiedRoles := []graphmodels.UnifiedRoleable {
 	unifiedRole1,
 	unifiedRole2,
 	unifiedRole3,
-
 }
 accessDetails.SetUnifiedRoles(unifiedRoles)
 requestBody.SetAccessDetails(accessDetails)
+autoExtendDuration , err := abstractions.ParseISODuration("P180D")
+requestBody.SetAutoExtendDuration(&autoExtendDuration) 
 
-result, err := graphClient.TenantRelationships().DelegatedAdminRelationshipsById("delegatedAdminRelationship-id").Patch(context.Background(), requestBody, configuration)
+delegatedAdminRelationships, err := graphClient.TenantRelationships().DelegatedAdminRelationships().ByDelegatedAdminRelationshipId("delegatedAdminRelationship-id").Patch(context.Background(), requestBody, configuration)
 
 
 ```

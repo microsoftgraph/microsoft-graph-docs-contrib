@@ -32,7 +32,7 @@ If your app uses Azure AD Graph directory extensions, you can continue to use th
 - Update extension values using PATCH
 - Remove extension values using PATCH (set to **null**)
 
-Microsoft Graph provides an enhanced schema extensions developer experience, which today is not backwards compatible with Azure AD Graph directory extensions. To learn more, see [Choose an extension type for your application](extensibility-overview.md#choose-an-extension-type-for-your-application).
+Microsoft Graph provides an enhanced schema extensions developer experience, which today is not backwards compatible with Azure AD Graph directory extensions. To learn more, see [Choose an extension type for your application](extensibility-overview.md#comparison-of-extension-types).
 
 ### Recommended migration approach
 
@@ -52,7 +52,7 @@ To switch to the newer Microsoft Graph schema extension model, you'll need to:
 
 - Define new schema extension definitions using Microsoft Graph.
 - Update the app to support the new schema extension definitions.
-- Migrate the data from the Azure AD schema extension properties to the new Microsoft Graph schema extension properties.  Automatic migration of data is not supported.
+- Migrate the data from the Microsoft Entra ID schema extension properties to the new Microsoft Graph schema extension properties.  Automatic migration of data is not supported.
 
 ## Differential queries
 

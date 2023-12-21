@@ -4,20 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewIdentitySynchronizationPutRequestBody()
-additionalData := map[string]interface{}{
-	"displayName" : "Fabrikam", 
-userSyncInbound := graphmodels.New()
-	isSyncAllowed := true
-userSyncInbound.SetIsSyncAllowed(&isSyncAllowed) 
-	requestBody.SetUserSyncInbound(userSyncInbound)
-}
-requestBody.SetAdditionalData(additionalData)
 
-graphClient.Policies().CrossTenantAccessPolicy().PartnersById("crossTenantAccessPolicyConfigurationPartner-tenantId").IdentitySynchronization().Put(context.Background(), requestBody, nil)
+requestBody := graphmodels.NewCrossTenantIdentitySyncPolicyPartner()
+displayName := "Fabrikam"
+requestBody.SetDisplayName(&displayName) 
+userSyncInbound := graphmodels.NewCrossTenantUserSyncInbound()
+isSyncAllowed := true
+userSyncInbound.SetIsSyncAllowed(&isSyncAllowed) 
+requestBody.SetUserSyncInbound(userSyncInbound)
+
+identitySynchronization, err := graphClient.Policies().CrossTenantAccessPolicy().Partners().ByCrossTenantAccessPolicyConfigurationPartnerTenantId("crossTenantAccessPolicyConfigurationPartner-tenantId").IdentitySynchronization().Put(context.Background(), requestBody, nil)
 
 
 ```

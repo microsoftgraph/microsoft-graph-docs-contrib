@@ -11,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const message = {
-  message: {  
+  message: {
     isDeliveryReceiptRequested: true,
     toRecipients: [
       {
@@ -22,7 +22,7 @@ const message = {
       }
      ]
   },
-  comment: 'Dana, just want to make sure you get this; you\'ll need this if the project gets approved.' 
+  comment: 'Dana, just want to make sure you get this; you\'ll need this if the project gets approved.'
 };
 
 await client.api('/me/messages/AAMkADA1MTAAAH5JaLAAA=/createForward')

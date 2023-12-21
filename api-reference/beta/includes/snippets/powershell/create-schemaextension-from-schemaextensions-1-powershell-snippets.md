@@ -4,30 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.SchemaExtensions
+Import-Module Microsoft.Graph.Beta.SchemaExtensions
 
 $params = @{
-	Id = "graphlearn_courses"
-	Description = "Graph Learn training courses extensions"
-	TargetTypes = @(
+	id = "graphlearn_courses"
+	description = "Graph Learn training courses extensions"
+	targetTypes = @(
 		"Group"
 	)
-	Properties = @(
+	properties = @(
 		@{
-			Name = "courseId"
-			Type = "Integer"
+			name = "courseId"
+			type = "Integer"
 		}
 		@{
-			Name = "courseName"
-			Type = "String"
+			name = "courseName"
+			type = "String"
 		}
 		@{
-			Name = "courseType"
-			Type = "String"
+			name = "courseType"
+			type = "String"
 		}
 	)
 }
 
-New-MgSchemaExtension -BodyParameter $params
+New-MgBetaSchemaExtension -BodyParameter $params
 
 ```

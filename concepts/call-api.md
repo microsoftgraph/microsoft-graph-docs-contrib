@@ -51,7 +51,7 @@ Microsoft Graph API `beta` metadata.
 ```
 
 The metadata allows you to see and understand the data model of Microsoft Graph, including the entity types and sets, complex types, and enums that make up the request and response packets sent to and from Microsoft Graph.
-You can use the metadata to understand the realtionships between entities in Microsoft Graph and establish URLs that navigate between entities.
+You can use the metadata to understand the relationships between entities in Microsoft Graph and establish URLs that navigate between entities.
 This navigation-based interconnectedness gives Microsoft Graph its unique character.
 
 Path URL resource names, query parameters, and action parameters and values are case insensitive. 
@@ -150,7 +150,7 @@ content-length: 152
 ```
 
 Similarly, you can follow a relationship to navigate to related resources.
-For example, the `user => messages` relationship enables traversal from an Azure AD User to a set of Outlook mail messages.
+For example, the `user => messages` relationship enables traversal from a Microsoft Entra user to a set of Outlook mail messages.
 The following example shows how to do this in a REST API call:
 
 

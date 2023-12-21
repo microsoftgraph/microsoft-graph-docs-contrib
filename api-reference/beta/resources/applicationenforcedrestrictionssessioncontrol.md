@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Session control to enforce application restrictions. Inehrits from [Conditional Access Session Control](conditionalaccesssessioncontrol.md).
+Session control to enforce application restrictions. Inherit from [Conditional Access Session Control](conditionalaccesssessioncontrol.md).
 
 ## Properties
 
@@ -27,7 +27,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

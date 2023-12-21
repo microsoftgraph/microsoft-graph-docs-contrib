@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Applications
+Import-Module Microsoft.Graph.Beta.Applications
 
 $params = @{
-	Credentials = @(
+	credentials = @(
 		@{
 			"@odata.type" = "microsoft.graph.synchronizationSecretKeyStringValuePair"
 		}
 	)
 }
 
-Get-MgApplicationSynchronizationAccessToken -ApplicationId $applicationId -BodyParameter $params
+Get-MgBetaApplicationSynchronizationAccessToken -ApplicationId $applicationId -BodyParameter $params
 
 ```

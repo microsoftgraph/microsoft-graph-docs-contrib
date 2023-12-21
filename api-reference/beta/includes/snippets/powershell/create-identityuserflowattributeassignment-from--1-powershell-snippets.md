@@ -4,20 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
-	IsOptional = $false
-	RequiresVerification = $false
-	UserInputType = "TextBox"
-	DisplayName = "Shoe size"
-	UserAttributeValues = @(
+	isOptional = $false
+	requiresVerification = $false
+	userInputType = "TextBox"
+	displayName = "Shoe size"
+	userAttributeValues = @(
 	)
-	UserAttribute = @{
-		Id = "extension_guid_shoeSize"
+	userAttribute = @{
+		id = "extension_guid_shoeSize"
 	}
 }
 
-New-MgIdentityB2CUserFlowUserAttributeAssignment -B2cIdentityUserFlowId $b2cIdentityUserFlowId -BodyParameter $params
+New-MgBetaIdentityB2CUserFlowUserAttributeAssignment -B2cIdentityUserFlowId $b2cIdentityUserFlowId -BodyParameter $params
 
 ```

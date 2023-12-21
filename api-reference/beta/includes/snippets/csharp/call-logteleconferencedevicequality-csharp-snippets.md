@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.Communications.Calls.LogTeleconferenceDeviceQuality.LogTeleconferenceDeviceQualityPostRequestBody
+// Dependencies
+using Microsoft.Graph.Beta.Communications.Calls.LogTeleconferenceDeviceQuality;
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new LogTeleconferenceDeviceQualityPostRequestBody
 {
 	Quality = new TeleconferenceDeviceQuality
 	{
@@ -18,7 +22,7 @@ var requestBody = new Microsoft.Graph.Beta.Communications.Calls.LogTeleconferenc
 		DeviceDescription = "TestDescription",
 		MediaQualityList = new List<TeleconferenceDeviceMediaQuality>
 		{
-			new TeleconferenceDeviceMediaQuality
+			new TeleconferenceDeviceAudioQuality
 			{
 				OdataType = "#microsoft.graph.teleconferenceDeviceAudioQuality",
 				ChannelIndex = 1,
@@ -43,7 +47,7 @@ var requestBody = new Microsoft.Graph.Beta.Communications.Calls.LogTeleconferenc
 				MaximumInboundJitter = TimeSpan.Parse("PT0.023S"),
 				MaximumOutboundJitter = TimeSpan.Parse("PT0.024S"),
 			},
-			new TeleconferenceDeviceMediaQuality
+			new TeleconferenceDeviceVideoQuality
 			{
 				OdataType = "#microsoft.graph.teleconferenceDeviceVideoQuality",
 				ChannelIndex = 1,
@@ -68,7 +72,7 @@ var requestBody = new Microsoft.Graph.Beta.Communications.Calls.LogTeleconferenc
 				MaximumInboundJitter = TimeSpan.Parse("PT0.023S"),
 				MaximumOutboundJitter = TimeSpan.Parse("PT0.024S"),
 			},
-			new TeleconferenceDeviceMediaQuality
+			new TeleconferenceDeviceScreenSharingQuality
 			{
 				OdataType = "#microsoft.graph.teleconferenceDeviceScreenSharingQuality",
 				ChannelIndex = 1,
@@ -96,6 +100,8 @@ var requestBody = new Microsoft.Graph.Beta.Communications.Calls.LogTeleconferenc
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Communications.Calls.LogTeleconferenceDeviceQuality.PostAsync(requestBody);
 
 

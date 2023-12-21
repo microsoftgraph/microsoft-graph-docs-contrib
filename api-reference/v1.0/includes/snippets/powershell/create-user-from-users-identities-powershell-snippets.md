@@ -7,29 +7,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Users
 
 $params = @{
-	DisplayName = "John Smith"
-	Identities = @(
+	displayName = "John Smith"
+	identities = @(
 		@{
-			SignInType = "userName"
-			Issuer = "contoso.onmicrosoft.com"
-			IssuerAssignedId = "johnsmith"
+			signInType = "userName"
+			issuer = "contoso.onmicrosoft.com"
+			issuerAssignedId = "johnsmith"
 		}
 		@{
-			SignInType = "emailAddress"
-			Issuer = "contoso.onmicrosoft.com"
-			IssuerAssignedId = "jsmith@yahoo.com"
+			signInType = "emailAddress"
+			issuer = "contoso.onmicrosoft.com"
+			issuerAssignedId = "jsmith@yahoo.com"
 		}
 		@{
-			SignInType = "federated"
-			Issuer = "facebook.com"
-			IssuerAssignedId = "5eecb0cd"
+			signInType = "federated"
+			issuer = "facebook.com"
+			issuerAssignedId = "5eecb0cd"
 		}
 	)
-	PasswordProfile = @{
-		Password = "password-value"
-		ForceChangePasswordNextSignIn = $false
+	passwordProfile = @{
+		password = "password-value"
+		forceChangePasswordNextSignIn = $false
 	}
-	PasswordPolicies = "DisablePasswordExpiration"
+	passwordPolicies = "DisablePasswordExpiration"
 }
 
 New-MgUser -BodyParameter $params

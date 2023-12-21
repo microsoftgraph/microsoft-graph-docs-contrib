@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewAccessReviewScheduleDefinition()
 displayName := "Group Multi-stage Access Review"
@@ -14,12 +22,11 @@ descriptionForAdmins := "New scheduled access review"
 requestBody.SetDescriptionForAdmins(&descriptionForAdmins) 
 descriptionForReviewers := "If you have any questions, contact jerry@contoso.com"
 requestBody.SetDescriptionForReviewers(&descriptionForReviewers) 
-scope := graphmodels.NewAccessReviewScope()
-additionalData := map[string]interface{}{
-	"query" : "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers", 
-	"queryType" : "MicrosoftGraph", 
-}
-scope.SetAdditionalData(additionalData)
+scope := graphmodels.NewAccessReviewQueryScope()
+query := "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers"
+scope.SetQuery(&query) 
+queryType := "MicrosoftGraph"
+scope.SetQueryType(&queryType) 
 requestBody.SetScope(scope)
 
 
@@ -33,7 +40,6 @@ accessReviewStageSettings.SetRecommendationsEnabled(&recommendationsEnabled)
 decisionsThatWillMoveToNextStage := []string {
 	"NotReviewed",
 	"Approve",
-
 }
 accessReviewStageSettings.SetDecisionsThatWillMoveToNextStage(decisionsThatWillMoveToNextStage)
 
@@ -46,7 +52,6 @@ accessReviewReviewerScope.SetQueryType(&queryType)
 
 reviewers := []graphmodels.AccessReviewReviewerScopeable {
 	accessReviewReviewerScope,
-
 }
 accessReviewStageSettings.SetReviewers(reviewers)
 accessReviewStageSettings1 := graphmodels.NewAccessReviewStageSettings()
@@ -54,7 +59,6 @@ stageId := "2"
 accessReviewStageSettings1.SetStageId(&stageId) 
 dependsOn := []string {
 	"1",
-
 }
 accessReviewStageSettings1.SetDependsOn(dependsOn)
 durationInDays := int32(2)
@@ -73,7 +77,6 @@ accessReviewReviewerScope.SetQueryRoot(&queryRoot)
 
 reviewers := []graphmodels.AccessReviewReviewerScopeable {
 	accessReviewReviewerScope,
-
 }
 accessReviewStageSettings1.SetReviewers(reviewers)
 
@@ -86,27 +89,15 @@ accessReviewReviewerScope.SetQueryType(&queryType)
 
 fallbackReviewers := []graphmodels.AccessReviewReviewerScopeable {
 	accessReviewReviewerScope,
-
 }
 accessReviewStageSettings1.SetFallbackReviewers(fallbackReviewers)
 
 stageSettings := []graphmodels.AccessReviewStageSettingsable {
 	accessReviewStageSettings,
 	accessReviewStageSettings1,
-
 }
 requestBody.SetStageSettings(stageSettings)
 settings := graphmodels.NewAccessReviewScheduleSettings()
-mailNotificationsEnabled := true
-settings.SetMailNotificationsEnabled(&mailNotificationsEnabled) 
-reminderNotificationsEnabled := true
-settings.SetReminderNotificationsEnabled(&reminderNotificationsEnabled) 
-justificationRequiredOnApproval := true
-settings.SetJustificationRequiredOnApproval(&justificationRequiredOnApproval) 
-defaultDecisionEnabled := false
-settings.SetDefaultDecisionEnabled(&defaultDecisionEnabled) 
-defaultDecision := "None"
-settings.SetDefaultDecision(&defaultDecision) 
 instanceDurationInDays := int32(4)
 settings.SetInstanceDurationInDays(&instanceDurationInDays) 
 recurrence := graphmodels.NewPatternedRecurrence()
@@ -127,7 +118,7 @@ decisionHistoriesForReviewersEnabled := true
 settings.SetDecisionHistoriesForReviewersEnabled(&decisionHistoriesForReviewersEnabled) 
 requestBody.SetSettings(settings)
 
-result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(context.Background(), requestBody, nil)
+definitions, err := graphClient.IdentityGovernance().AccessReviews().Definitions().Post(context.Background(), requestBody, nil)
 
 
 ```

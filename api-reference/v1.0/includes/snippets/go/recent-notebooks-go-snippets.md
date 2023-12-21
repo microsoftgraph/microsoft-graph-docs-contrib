@@ -4,11 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-result, err := graphClient.Me().Onenote().NotebooksById("notebook-id").Get(context.Background(), nil)
+
+includePersonalNotebooks := false
+getRecentNotebooks, err := graphClient.Me().Onenote().Notebooks().GetRecentNotebooksWithIncludePersonalNotebooks(&includePersonalNotebooks).Get(context.Background(), nil)
 
 
 ```

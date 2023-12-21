@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.Applications.Item.Synchronization.AcquireAccessToken.AcquireAccessTokenPostRequestBody
+// Dependencies
+using Microsoft.Graph.Beta.Applications.Item.Synchronization.AcquireAccessToken;
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new AcquireAccessTokenPostRequestBody
 {
 	Credentials = new List<SynchronizationSecretKeyStringValuePair>
 	{
@@ -16,6 +20,8 @@ var requestBody = new Microsoft.Graph.Beta.Applications.Item.Synchronization.Acq
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Applications["{application-id}"].Synchronization.AcquireAccessToken.PostAsync(requestBody);
 
 

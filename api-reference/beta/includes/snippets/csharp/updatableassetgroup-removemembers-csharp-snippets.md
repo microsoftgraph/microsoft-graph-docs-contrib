@@ -4,20 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.Admin.Windows.Updates.UpdatableAssets.Item.WindowsUpdatesRemoveMembers.RemoveMembersPostRequestBody
+// Dependencies
+using Microsoft.Graph.Beta.Admin.Windows.Updates.UpdatableAssets.Item.MicrosoftGraphWindowsUpdatesRemoveMembers;
+using Microsoft.Graph.Beta.Models.WindowsUpdates;
+
+var requestBody = new RemoveMembersPostRequestBody
 {
-	Assets = new List<Microsoft.Graph.Beta.Models.WindowsUpdates.UpdatableAsset>
+	Assets = new List<UpdatableAsset>
 	{
-		new Microsoft.Graph.Beta.Models.WindowsUpdates.UpdatableAsset
+		new AzureADDevice
 		{
 			OdataType = "#microsoft.graph.windowsUpdates.azureADDevice",
 			Id = "String (identifier)",
 		},
 	},
 };
-await graphClient.Admin.Windows.Updates.UpdatableAssets["{updatableAsset-id}"].WindowsUpdatesRemoveMembers.PostAsync(requestBody);
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.Admin.Windows.Updates.UpdatableAssets["{updatableAsset-id}"].MicrosoftGraphWindowsUpdatesRemoveMembers.PostAsync(requestBody);
 
 
 ```

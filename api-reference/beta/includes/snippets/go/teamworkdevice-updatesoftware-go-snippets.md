@@ -4,16 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphteamwork "github.com/microsoftgraph/msgraph-beta-sdk-go/teamwork"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewUpdateSoftwarePostRequestBody()
+
+requestBody := graphteamwork.NewUpdateSoftwarePostRequestBody()
 softwareType := graphmodels.TEAMSCLIENT_TEAMWORKSOFTWARETYPE 
 requestBody.SetSoftwareType(&softwareType) 
 softwareVersion := "1.0.96.22"
 requestBody.SetSoftwareVersion(&softwareVersion) 
 
-graphClient.Teamwork().DevicesById("teamworkDevice-id").UpdateSoftware().Post(context.Background(), requestBody, nil)
+graphClient.Teamwork().Devices().ByTeamworkDeviceId("teamworkDevice-id").UpdateSoftware().Post(context.Background(), requestBody, nil)
 
 
 ```

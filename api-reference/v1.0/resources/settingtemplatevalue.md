@@ -2,7 +2,7 @@
 title: "settingTemplateValue resource type"
 description: "Represents an individual template setting definition, including the default value for the setting, if the setting is not instantiated."
 ms.localizationpriority: medium
-author: "dkershaw10"
+author: "Jordanndahl"
 ms.prod: "directory-management"
 doc_type: resourcePageType
 ---

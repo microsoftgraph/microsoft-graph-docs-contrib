@@ -71,7 +71,7 @@ Here is a JSON representation of the resource.
     "historyItems"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.activity"
+  "@odata.type": "microsoft.graph.userActivity"
 }-->
 
 ```json

@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Groups.Item.Threads.Item.Reply.ReplyPostRequestBody
+// Dependencies
+using Microsoft.Graph.Groups.Item.Threads.Item.Reply;
+using Microsoft.Graph.Models;
+
+var requestBody = new ReplyPostRequestBody
 {
 	Post = new Post
 	{
@@ -17,7 +21,7 @@ var requestBody = new Microsoft.Graph.Groups.Item.Threads.Item.Reply.ReplyPostRe
 		},
 		Attachments = new List<Attachment>
 		{
-			new Attachment
+			new ReferenceAttachment
 			{
 				OdataType = "#microsoft.graph.referenceAttachment",
 				Name = "Personal pictures",
@@ -40,6 +44,8 @@ var requestBody = new Microsoft.Graph.Groups.Item.Threads.Item.Reply.ReplyPostRe
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Groups["{group-id}"].Threads["{conversationThread-id}"].Reply.PostAsync(requestBody);
 
 

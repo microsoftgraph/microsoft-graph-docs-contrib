@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Users.Actions
+Import-Module Microsoft.Graph.Beta.Users.Actions
 
 $params = @{
-	Availability = "DoNotDisturb"
-	Activity = "DoNotDisturb"
-	ExpirationDuration = "PT8H"
+	availability = "DoNotDisturb"
+	activity = "DoNotDisturb"
+	expirationDuration = "PT8H"
 }
 
-Set-MgUserPresenceUserPreferredPresence -UserId $userId -BodyParameter $params
+Set-MgBetaUserPresenceUserPreferredPresence -UserId $userId -BodyParameter $params
 
 ```

@@ -4,25 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
+
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
 var requestBody = new AccessReviewScheduleDefinition
 {
 	DisplayName = "Test create",
 	DescriptionForAdmins = "New scheduled access review",
 	DescriptionForReviewers = "If you have any questions, contact jerry@contoso.com",
-	Scope = new AccessReviewScope
+	Scope = new AccessReviewQueryScope
 	{
 		OdataType = "#microsoft.graph.accessReviewQueryScope",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"query" , "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers"
-			},
-			{
-				"queryType" , "MicrosoftGraph"
-			},
-		},
+		Query = "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers",
+		QueryType = "MicrosoftGraph",
 	},
 	Reviewers = new List<AccessReviewReviewerScope>
 	{
@@ -50,26 +46,21 @@ var requestBody = new AccessReviewScheduleDefinition
 		},
 		RecommendationInsightSettings = new List<AccessReviewRecommendationInsightSetting>
 		{
-			new AccessReviewRecommendationInsightSetting
+			new UserLastSignInRecommendationInsightSetting
 			{
 				OdataType = "#microsoft.graph.userLastSignInRecommendationInsightSetting",
-				AdditionalData = new Dictionary<string, object>
-				{
-					{
-						"recommendationLookBackDuration" , "P30D"
-					},
-					{
-						"signInScope" , "tenant"
-					},
-				},
+				RecommendationLookBackDuration = TimeSpan.Parse("P30D"),
+				SignInScope = UserSignInRecommendationScope.Tenant,
 			},
-			new AccessReviewRecommendationInsightSetting
+			new GroupPeerOutlierRecommendationInsightSettings
 			{
 				OdataType = "#microsoft.graph.groupPeerOutlierRecommendationInsightSettings",
 			},
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.IdentityGovernance.AccessReviews.Definitions.PostAsync(requestBody);
 
 

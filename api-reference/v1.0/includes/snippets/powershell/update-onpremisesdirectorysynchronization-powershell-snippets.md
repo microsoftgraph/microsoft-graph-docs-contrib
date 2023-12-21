@@ -7,17 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 $params = @{
-	Configuration = @{
-		AccidentalDeletionPrevention = @{
-			SynchronizationPreventionType = "enabledForCount"
-			AlertThreshold = 500
+	configuration = @{
+		accidentalDeletionPrevention = @{
+			synchronizationPreventionType = "enabledForCount"
+			alertThreshold = 500
 		}
 	}
-	Features = @{
-		GroupWriteBackEnabled = $true
+	features = @{
+		groupWriteBackEnabled = $true
 	}
 }
 
-Update-MgDirectoryOnPremisSynchronization -OnPremisesDirectorySynchronizationId $onPremisesDirectorySynchronizationId -BodyParameter $params
+Update-MgDirectoryOnPremiseSynchronization -OnPremisesDirectorySynchronizationId $onPremisesDirectorySynchronizationId -BodyParameter $params
 
 ```

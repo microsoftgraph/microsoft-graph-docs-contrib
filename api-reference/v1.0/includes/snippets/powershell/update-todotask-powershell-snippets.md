@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Users
 
 $params = @{
-	DueDateTime = @{
-		DateTime = "2020-07-25T16:00:00"
-		TimeZone = "Eastern Standard Time"
+	dueDateTime = @{
+		dateTime = "2020-07-25T16:00:00"
+		timeZone = "Eastern Standard Time"
 	}
 }
 

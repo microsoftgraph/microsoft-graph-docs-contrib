@@ -4,13 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
 
-configuration := &graphconfig.MeEventsRequestBuilderPostRequestConfiguration{
+configuration := &graphusers.ItemEventsRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewEvent()
@@ -50,9 +60,8 @@ attendee.SetEmailAddress(emailAddress)
 type := graphmodels.REQUIRED_ATTENDEETYPE 
 attendee.SetType(&type) 
 
-attendees := []graphmodels.Objectable {
+attendees := []graphmodels.attendeeable {
 	attendee,
-
 }
 requestBody.SetAttendees(attendees)
 allowNewTimeProposals := true
@@ -60,7 +69,7 @@ requestBody.SetAllowNewTimeProposals(&allowNewTimeProposals)
 transactionId := "7E163156-7762-4BEB-A1C6-729EA81755A7"
 requestBody.SetTransactionId(&transactionId) 
 
-result, err := graphClient.Me().Events().Post(context.Background(), requestBody, configuration)
+events, err := graphClient.Me().Events().Post(context.Background(), requestBody, configuration)
 
 
 ```

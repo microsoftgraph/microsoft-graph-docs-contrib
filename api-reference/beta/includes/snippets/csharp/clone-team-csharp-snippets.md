@@ -4,21 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var displayName = "Library Assist";
+// Dependencies
+using Microsoft.Graph.Beta.Teams.Item.Clone;
+using Microsoft.Graph.Beta.Models;
 
-var description = "Self help community for library";
+var requestBody = new ClonePostRequestBody
+{
+	DisplayName = "Library Assist",
+	Description = "Self help community for library",
+	MailNickname = "libassist",
+	PartsToClone = ClonableTeamParts.Apps | ClonableTeamParts.Tabs | ClonableTeamParts.Settings | ClonableTeamParts.Channels | ClonableTeamParts.Members,
+	Visibility = TeamVisibilityType.Public,
+};
 
-var mailNickname = "libassist";
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.Teams["{team-id}"].Clone.PostAsync(requestBody);
 
-var partsToClone = ClonableTeamParts.Apps | ClonableTeamParts.Tabs | ClonableTeamParts.Settings | ClonableTeamParts.Channels | ClonableTeamParts.Members;
-
-var visibility = TeamVisibilityType.Public;
-
-await graphClient.Teams["{team-id}"]
-	.Clone(visibility,partsToClone,displayName,description,mailNickname,null)
-	.Request()
-	.PostAsync();
 
 ```

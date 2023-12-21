@@ -4,12 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.Sites.Item.Lists.Item.ContentTypes.AddCopy.AddCopyPostRequestBody
+// Dependencies
+using Microsoft.Graph.Beta.Sites.Item.Lists.Item.ContentTypes.AddCopy;
+
+var requestBody = new AddCopyPostRequestBody
 {
 	ContentType = "https://graph.microsoft.com/beta/sites/id/contentTypes/0x0101",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Sites["{site-id}"].Lists["{list-id}"].ContentTypes.AddCopy.PostAsync(requestBody);
 
 

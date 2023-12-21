@@ -17,7 +17,7 @@ While planning your migration to Microsoft Graph, take time to review your exist
 
 Compare your list to the known differences.  This helps identify specific changes you'll need to make to migrate your app.  These include simple changes easily resolved using an editor's search-and-replace features or more complicated updates that might require more analysis.
 
-Microsoft Graph supports many of the same features and capabilities of Azure AD graph.  There are a few key differences:
+Microsoft Graph supports many of the same features and capabilities of Azure AD Graph.  There are a few key differences:
 
 - [Request differences](migrate-azure-ad-graph-request-differences.md)
 - [Feature differences](migrate-azure-ad-graph-feature-differences.md)
@@ -34,4 +34,3 @@ To learn more, see [Permissions](permissions-reference.md).
 
 - Learn about [app registration, permissions and consent differences](migrate-azure-ad-graph-app-registration.md) between Azure AD Graph and Microsoft Graph.
 - Review the [checklist](migrate-azure-ad-graph-planning-checklist.md) again.
-

@@ -4,8 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  "time"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewLearningContent()
 title := "Manage classes, resources, assessment, and planning in Microsoft Teams with Beedle"
@@ -33,20 +43,17 @@ requestBody.SetLastModifiedDateTime(&lastModifiedDateTime)
 contributors := []string {
 	"Lina Wagner",
 	"Lisa Richter",
-
 }
 requestBody.SetContributors(contributors)
 additionalTags := []string {
 	"Create private or public teams",
 	"Add members to teams",
-
 }
 requestBody.SetAdditionalTags(additionalTags)
 skillTags := []string {
 	"Create teams",
 	"Teams channels",
 	"Teams members",
-
 }
 requestBody.SetSkillTags(skillTags)
 isActive := true
@@ -56,7 +63,7 @@ requestBody.SetIsPremium(&isPremium)
 isSearchable := true
 requestBody.SetIsSearchable(&isSearchable) 
 
-result, err := graphClient.EmployeeExperience().LearningProvidersById("learningProvider-id").LearningContentsById("learningContent-id").Patch(context.Background(), requestBody, nil)
+learningContents, err := graphClient.EmployeeExperience().LearningProviders().ByLearningProviderId("learningProvider-id").LearningContents().ByLearningContentId("learningContent-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -8,8 +8,8 @@ Import-Module Microsoft.Graph.Calendar
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.fileAttachment"
-	Name = "menu.txt"
-	ContentBytes = "base64bWFjIGFuZCBjaGVlc2UgdG9kYXk="
+	name = "menu.txt"
+	contentBytes = "base64bWFjIGFuZCBjaGVlc2UgdG9kYXk="
 }
 
 # A UPN can also be used as -UserId.

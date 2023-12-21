@@ -4,32 +4,32 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.People
+Import-Module Microsoft.Graph.Beta.People
 
 $params = @{
-	Categories = @(
+	categories = @(
 		"Branding"
 	)
-	Client = @{
-		DisplayName = "Contoso Ltd."
-		Department = "Corporate Marketing"
-		WebUrl = "https://www.contoso.com"
+	client = @{
+		displayName = "Contoso Ltd."
+		department = "Corporate Marketing"
+		webUrl = "https://www.contoso.com"
 	}
-	DisplayName = "Contoso Re-branding Project"
-	Detail = @{
-		Company = @{
-			DisplayName = "Adventureworks Inc."
-			Department = "Consulting"
-			WebUrl = "https://adventureworks.com"
+	displayName = "Contoso Re-branding Project"
+	detail = @{
+		company = @{
+			displayName = "Adventureworks Inc."
+			department = "Consulting"
+			webUrl = "https://adventureworks.com"
 		}
-		Description = "Rebranding of Contoso Ltd."
-		JobTitle = "Lead PM Rebranding"
-		Role = "project management"
-		Summary = "A 6 month project to help Contoso rebrand after they were divested from a parent organization."
+		description = "Rebranding of Contoso Ltd."
+		jobTitle = "Lead PM Rebranding"
+		role = "project management"
+		summary = "A 6 month project to help Contoso rebrand after they were divested from a parent organization."
 	}
 }
 
 # A UPN can also be used as -UserId.
-New-MgUserProfileProject -UserId $userId -BodyParameter $params
+New-MgBetaUserProfileProject -UserId $userId -BodyParameter $params
 
 ```

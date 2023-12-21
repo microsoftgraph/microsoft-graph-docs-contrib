@@ -4,11 +4,33 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-result, err := graphClient.UsersById("user-id").AppRoleAssignments().Get(context.Background(), nil)
+headers := abstractions.NewRequestHeaders()
+headers.Add("ConsistencyLevel", "eventual")
+
+
+requestCount := true
+
+requestParameters := &graphusers.UserItemAppRoleAssignmentsRequestBuilderGetQueryParameters{
+	Count: &requestCount,
+}
+configuration := &graphusers.UserItemAppRoleAssignmentsRequestBuilderGetRequestConfiguration{
+	Headers: headers,
+	QueryParameters: requestParameters,
+}
+
+appRoleAssignments, err := graphClient.Users().ByUserId("user-id").AppRoleAssignments().Get(context.Background(), configuration)
 
 
 ```

@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewItemAddress()
 displayName := "Home"
@@ -27,7 +35,7 @@ postalCode := "E14 3TD"
 detail.SetPostalCode(&postalCode) 
 requestBody.SetDetail(detail)
 
-result, err := graphClient.Me().Profile().Addresses().Post(context.Background(), requestBody, nil)
+addresses, err := graphClient.Me().Profile().Addresses().Post(context.Background(), requestBody, nil)
 
 
 ```

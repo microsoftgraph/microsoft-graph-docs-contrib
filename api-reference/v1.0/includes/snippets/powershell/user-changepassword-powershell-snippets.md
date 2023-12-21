@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Users.Actions
 
 $params = @{
-	CurrentPassword = "xWwvJ]6NMw+bWH-d"
-	NewPassword = "0eM85N54wFxWwvJ]"
+	currentPassword = "xWwvJ]6NMw+bWH-d"
+	newPassword = "0eM85N54wFxWwvJ]"
 }
 
 # A UPN can also be used as -UserId.

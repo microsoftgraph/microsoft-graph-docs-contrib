@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [androidForWorkGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md) objects.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -61,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3679
+Content-Length: 3872
 
 {
   "value": [
@@ -141,7 +143,12 @@ Content-Length: 3679
       "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
       "vpnEnableAlwaysOnLockdownMode": true,
       "workProfileAllowWidgets": true,
-      "workProfileBlockPersonalAppInstallsFromUnknownSources": true
+      "workProfileBlockPersonalAppInstallsFromUnknownSources": true,
+      "workProfileAccountUse": "blockAll",
+      "allowedGoogleAccountDomains": [
+        "Allowed Google Account Domains value"
+      ],
+      "blockUnifiedPasswordForWorkProfile": true
     }
   ]
 }

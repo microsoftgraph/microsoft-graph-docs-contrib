@@ -3,6 +3,7 @@ title: "Known issues with Microsoft Graph"
 description: "This article describes known issues and limitations with Microsoft Graph and provides workarounds when possible."
 author: "MSGraphDocsVTeam"
 ms.localizationpriority: high
+ms.custom: has-azure-ad-ps-ref
 ---
 
 # Known issues with Microsoft Graph
@@ -17,14 +18,14 @@ For information about the latest updates to the Microsoft Graph API, see the [Mi
 
 ### Some limitations apply to the application and servicePrincipal resources
 
-Changes to the [application](/graph/api/resources/application) and [servicePrincipal](/graph/api/resources/serviceprincipal) resources are currently in development. The following is a summary of current limitations and in-development API features.
+Changes to the [application](/graph/api/resources/application) and [servicePrincipal](/graph/api/resources/serviceprincipal) resources are currently in development. Here's a summary of current limitations and in-development API features.
 
 Current limitations:
 
-- Some application properties (such as appRoles and addIns) will not be available until all changes are completed.
-- Only multi-tenant apps can be registered.
+- Some application properties (such as appRoles and addIns) won't be available until all changes are completed.
+- Only multitenant apps can be registered.
 - Updating apps is restricted to apps registered after the initial beta update.
-- Azure Active Directory users can register apps and add additional owners.
+- Microsoft Entra users can register apps and add additional owners.
 - Support for OpenID Connect and OAuth protocols.
 - Policy assignments to an application fail.
 - Operations on ownedObjects that require appId fail (For example, users/{id|userPrincipalName}/ownedObjects/{id}/...).
@@ -33,13 +34,13 @@ In development:
 
 - Ability to register single tenant apps.
 - Updates to servicePrincipal.
-- Migration of existing Azure AD apps to updated model.
+- Migration of existing Microsoft Entra apps to updated model.
 - Support for appRoles, pre-authorized clients, optional claims, group membership claims, and branding
 - Microsoft account (MSA) users can register apps.
 
 ### Azure AD v2.0 endpoint is not supported for CSP apps
 
-Cloud solution provider (CSP) apps must acquire tokens from the Azure AD (v1) endpoints to successfully call Microsoft Graph in their partner-managed customers. Currently, acquiring a token through the newer Azure AD v2.0 endpoint is not supported.
+Cloud solution provider (CSP) apps must acquire tokens from the Microsoft identity platform (v1) endpoints to successfully call Microsoft Graph in their partner-managed customers. Currently, acquiring a token through the newer Azure AD v2.0 endpoint is not supported.
 
 ### Pre-consent for CSP apps doesn't work in some customer tenants
 
@@ -80,11 +81,11 @@ GET /users/{id}/calendars/{id}/events
 
 You may get HTTP 500 with the error code `ErrorInternalServerTransientError`. The error occurs because:
 
-- Historically, there are two ways that calendar sharing has been implemented, which, for the purpose of differentiating them,
+- Historically, there are two ways that calendar sharing has been implemented, which, for differentiating them,
 are referred to as the "old" approach and "new" approach.
 - The new approach is currently available for sharing calendars with view or edit permissions, but not with delegate permissions.
 - You can use the calendar REST API to view or edit shared calendars only if the calendars were shared using the **new** approach.
-- You cannot use the calendar REST API to view or edit such calendars (or their events) if the calendars were shared using the **old** approach.
+- You can't use the calendar REST API to view or edit such calendars (or their events) if the calendars were shared using the **old** approach.
 
 If a calendar was shared with view or edit permissions but using the old approach, you can now work around the error and manually upgrade the calendar sharing to use the new approach.
 Over time, Outlook will automatically upgrade all shared calendars to use the new approach, including calendars shared with delegate permissions.
@@ -93,7 +94,7 @@ To manually upgrade a shared calendar to use the new approach, follow these step
 
 1. The recipient removes the calendar that was previously shared to them.
 2. The calendar owner re-shares the calendar in Outlook on the web, Outlook on iOS, or Outlook on Android.
-3. The recipient re-accepts the shared calendar using Outlook on the web. (It will be possible to use other Outlook clients soon.)
+3. The recipient re-accepts the shared calendar using Outlook on the web. (It is possible to use other Outlook clients soon.)
 4. The recipient verifies that the calendar has been re-shared successfully using the new approach by being able to view the shared calendar in Outlook on iOS or Outlook on Android.
 
 A calendar shared with you in the new approach appears as just another calendar in your mailbox. You can use the calendar REST API to view or edit
@@ -108,14 +109,14 @@ GET /me/calendars/{id}/events
 Currently, calendars based on an Internet Calendar Subscription (ICS) are only partially supported:
 
 - You can add an ICS-based calendar to a user mailbox through the UI, but not through the Microsoft Graph API.
-- [Listing the user's calendars](/graph/api/user-list-calendars) lets you get the **name**, **color** and **id** properties of each [calendar](/graph/api/resources/calendar) in the user's default calendar group, or a specified calendar group, including any ICS-based calendars. You cannot store or access the ICS URL in the calendar resource.
+- [Listing the user's calendars](/graph/api/user-list-calendars) lets you get the **name**, **color** and **id** properties of each [calendar](/graph/api/resources/calendar) in the user's default calendar group, or a specified calendar group, including any ICS-based calendars. You can't store or access the ICS URL in the calendar resource.
 - You can also [list the events](/graph/api/calendar-list-events) of an ICS-based calendar.
 
 ### Error attaching large files to events
 
 An app with delegated permissions returns `HTTP 403 Forbidden` when attempting to [attach large files](outlook-large-attachments.md) to an Outlook message or event that is in a shared or delegated mailbox. With delegated permissions, [createUploadSession](/graph/api/attachment-createuploadsession) succeeds only if the message or event is in the signed-in user's mailbox.
 
-### onlineMeetingUrl property is not supported for Microsoft Teams
+### onlineMeetingUrl property isn't supported for Microsoft Teams
 
 Currently, the **onlineMeetingUrl** property of a Skype meeting [event](/graph/api/resources/event) would indicate the online meeting URL. However, that property for a Microsoft Teams meeting event is set to null.
 
@@ -133,11 +134,11 @@ The beta version offers a workaround, where you can use the **onlineMeetingProvi
 
 ## Contacts
 
-### GET operation does not return default contacts folder
+### GET operation doesn't return default contacts folder
 
-In the `/v1.0` version, `GET /me/contactFolders` does not include the user's default contacts folder.
+In the `/v1.0` version, `GET /me/contactFolders` doesn't include the user's default contacts folder.
 
-A fix will be made available. Meanwhile, you can use the following [list contacts](/graph/api/user-list-contacts) query and the **parentFolderId** property
+A fix is made available. Meanwhile, you can use the following [list contacts](/graph/api/user-list-contacts) query and the **parentFolderId** property
 as a workaround to get the folder ID of the default contacts folder:
 
 ```http
@@ -171,7 +172,7 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contac
 
 The previous example shows one level of nesting, but a contact can be located in a child of a child and so on.
 
-As an alternative, you can simply [get](/graph/api/contact-get?view=graph-rest-beta&preserve-view=true) the contact by specifying its ID as shown,
+As an alternative, you can [get](/graph/api/contact-get?view=graph-rest-beta&preserve-view=true) the contact by specifying its ID as shown,
 because GET /contacts in the `/beta` version applies to all the contacts in the user's mailbox:
 
 ```http
@@ -183,7 +184,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 ### Error when querying bookingBusinesses
 
-Getting the list of `bookingBusinesses` fails with the following error code when an organization has several Bookings businesses and the account making the request is not an administrator:
+Getting the list of `bookingBusinesses` fails with the following error code when an organization has several Bookings businesses and the account making the request isn't an administrator:
 
 ```json
 {
@@ -207,36 +208,36 @@ GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
 
 OData context is sometimes returned incorrectly when tracking changes to relationships.
 
-### Schema extensions are not returned with `select`
+### Schema extensions aren't returned with `select`
 
-Schema extensions (legacy) are not returned with `$select` statement, but are returned without `$select`.
+Schema extensions (legacy) aren't returned with `$select` statement, but are returned without `$select`.
 
-### Clients cannot track changes to open extensions
+### Clients can't track changes to open extensions
 
-Clients cannot track changes to open extensions or registered schema extensions.
+Clients can't track changes to open extensions or registered schema extensions.
 
 ## Devices and apps | Device updates (Windows updates)
 
-### Accessing and updating deployment audiences is not supported
+### Accessing and updating deployment audiences isn't supported
 
-Accessing and updating deployment audiences on **deployment** resources created via Intune is not currently supported.
+Accessing and updating deployment audiences on **deployment** resources created via Intune isn't currently supported.
 
 - [Listing deployment audience members](/graph/api/windowsupdates-deploymentaudience-list-members) and [listing deployment audience exclusions](/graph/api/windowsupdates-deploymentaudience-list-exclusions) returns `404 Not Found`.
-- [Updating deployment audience members and exclusions](/graph/api/windowsupdates-deploymentaudience-updateaudience) or [updating by ID](/graph/api/windowsupdates-deploymentaudience-updateaudiencebyid) returns `202 Accepted` but the audience is not updated.
+- [Updating deployment audience members and exclusions](/graph/api/windowsupdates-deploymentaudience-updateaudience) or [updating by ID](/graph/api/windowsupdates-deploymentaudience-updateaudiencebyid) returns `202 Accepted` but the audience isn't updated.
 
 ## Extensions
 
-### Change tracking is not supported
+### Change tracking isn't supported
 
-Change tracking (delta query) is not supported for open or schema extension properties.
+Change tracking (delta query) isn't supported for open or schema extension properties.
 
 ### Unable to create a resource and open extension at the same time
 
-You cannot specify an open extension at the same time you create an instance of **administrativeUnit**, **device**, **group**, **organization** or **user**. You must first create the instance and then specify the open extension data in a subsequent ``POST`` request on that instance.
+You can't specify an open extension at the same time you create an instance of **administrativeUnit**, **device**, **group**, **organization** or **user**. You must first create the instance and then specify the open extension data in a subsequent ``POST`` request on that instance.
 
 ### Unable to create a resource instance and add schema extension data at the same time
 
-You cannot specify a schema extension in the same operation as creating an instance of **contact**, **event**, **message**, or **post**.
+You can't specify a schema extension in the same operation as creating an instance of **contact**, **event**, **message**, or **post**.
 You must first create the resource instance and then do a `PATCH` to that instance to add a schema extension and custom data.
 
 ### Limit of 100 schema extension property values allowed per resource instance
@@ -245,11 +246,11 @@ Directory resources, such as **device**, **group**, and **user**, currently limi
 
 ### Owner must be specified when updating a schemaExtension definition using Microsoft Graph Explorer
 
-When using `PATCH` to update a schemaExtension using Graph Explorer, you must specify the **owner** property and set it to its current `appId` value (which will need to be an `appId` of an application that you own). This is also the case for any client application the `appId` for which is not the same as the **owner**.
+When using `PATCH` to update a schemaExtension using Graph Explorer, you must specify the **owner** property and set it to its current `appId` value (which will need to be an `appId` of an application that you own). This is also the case for any client application the `appId` for which isn't the same as the **owner**.
 
-### Filtering on schema extension properties is not supported on all entity types
+### Filtering on schema extension properties isn't supported on all entity types
 
-Filtering on schema extension properties (using the `$filter` expression) is not supported for Outlook entity types - **contact**, **event**, **message**, or **post**.
+Filtering on schema extension properties (using the `$filter` expression) isn't supported for Outlook entity types - **contact**, **event**, **message**, or **post**.
 
 ## Files (OneDrive)
 
@@ -290,7 +291,7 @@ Using Microsoft Graph to create and name a Microsoft 365 group bypasses any Micr
 
 ### allowExternalSenders property can only be accessed on unified groups
 
-There is currently an issue that prevents setting the **allowExternalSenders** property of a group in a POST or PATCH operation, in both `/v1.0` and `/beta`.
+There's currently an issue that prevents setting the **allowExternalSenders** property of a group in a POST or PATCH operation, in both `/v1.0` and `/beta`.
 
 The **allowExternalSenders** property can only be accessed on unified groups. Accessing this property on security groups, including via GET operations, will result in an error.
 
@@ -302,7 +303,7 @@ When [DELETE /groups/{id}/owners](/graph/api/group-delete-owners) is called for 
 
 ### Conditional access policy requires consent to permission
 
-The [conditionalAccessPolicy](/graph/api/resources/conditionalaccesspolicy) API currently requires consent to the **Policy.Read.All** permission to call the POST and PATCH methods. In the future, the **Policy.ReadWrite.ConditionalAccess** permission will enable you to read policies from the directory.
+The [conditionalAccessPolicy](/graph/api/resources/conditionalaccesspolicy) API currently requires consent to the **Policy.Read.All** permission to call the POST and PATCH methods. In the future, the **Policy.ReadWrite.ConditionalAccess** permission enables you to read policies from the directory.
 
 ### Claims mapping policy might require consent to permissions
 
@@ -311,7 +312,7 @@ The [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy) API might re
 + If no **claimsMappingPolicy** objects are available to retrieve in a LIST operation, either permission is sufficient to call this method.
 + If there are **claimsMappingPolicy** objects to retrieve, your app must consent to both permissions. If not, a `403 Forbidden` error is returned.
 
-In the future, either permission will be sufficient to call both methods.
+In the future, either permission is sufficient to call both methods.
 
 ### Non-Windows devices can't be updated by an app with application permissions
 
@@ -319,17 +320,17 @@ When an app with application permissions attempts to update any properties of th
 
 ## JSON batching
 
-### Nested batches are not supported
+### Nested batches aren't supported
 
 JSON batch requests must not contain any nested batch requests.
 
 ### All individual requests must be synchronous
 
-All requests contained in a batch request must be run synchronously. If present, the `respond-async` preference will be ignored.
+All requests contained in a batch request must be run synchronously. If present, the `respond-async` preference is ignored.
 
-### Transactional processing of requests is not supported
+### Transactional processing of requests isn't supported
 
-Microsoft Graph does not currently support transactional processing of individual requests. The **atomicityGroup** property on individual requests will be ignored.
+Microsoft Graph doesn't currently support transactional processing of individual requests. The **atomicityGroup** property on individual requests will be ignored.
 
 ### URIs must be relative
 
@@ -350,7 +351,7 @@ Individual requests can depend on other individual requests. Currently, requests
 
 - Parallel - no individual request states a dependency in the **dependsOn** property.
 - Serial - all individual requests depend on the previous individual request.
-- Same - all individual requests that state a dependency in the **dependsOn** property state the same dependency. **Note**: Requests made using this pattern will run sequentially.
+- Same - all individual requests that state a dependency in the **dependsOn** property state the same dependency. **Note**: Requests made using this pattern runs sequentially.
 
 As JSON batching matures, these limitations will be removed.
 
@@ -359,11 +360,11 @@ As JSON batching matures, these limitations will be removed.
 ### Attaching large files to messages with delegated permissions can fail
 An app with delegated permissions returns `HTTP 403 Forbidden` when attempting to [attach large files](outlook-large-attachments.md) to an Outlook message or event that is in a shared or delegated mailbox. With delegated permissions, [createUploadSession](/graph/api/attachment-createuploadsession) succeeds only if the message or event is in the signed-in user's mailbox.
 
-### The comment parameter for creating a draft does not become part of the message body
+### The comment parameter for creating a draft doesn't become part of the message body
 
 The **comment** parameter for creating a reply or forward draft ([createReply](/graph/api/message-createreply),
 [createReplyAll](/graph/api/message-createreplyall), [createForward](/graph/api/message-createforward))
-does not become part of the body of the resultant message draft.
+doesn't become part of the body of the resultant message draft.
 
 ### GET messages returns chats in Microsoft Teams
 
@@ -375,12 +376,12 @@ In both the v1.0 and beta endpoints, the response to `GET /users/id/messages` in
 
 The following limitations apply to query parameters:
 
-- Multiple namespaces are not supported.
-- GET requests on `$ref` with casting are not supported on users, groups, devices, service principals, and applications.
-- `@odata.bind` is not supported. This means that you can't properly set the **acceptedSenders** or **rejectedSenders** navigation property on a group.
+- Multiple namespaces aren't supported.
+- GET requests on `$ref` with casting aren't supported on users, groups, devices, service principals, and applications.
+- `@odata.bind` isn't supported. This means that you can't properly set the **acceptedSenders** or **rejectedSenders** navigation property on a group.
 - `@odata.id` is not present on non-containment navigations (like messages) when using minimal metadata.
 - `$expand`:
-  - For directory objects, returns a maximum of 20 objects.
+  - For directory objects, returns a maximum of 100 objects.
   - No support for `@odata.nextLink`.
   - No support for more than one level of expand.
   - For directory objects, no support for nesting other query parameters such as `$filter` and `$select` in `$expand`.
@@ -395,30 +396,6 @@ The following limitations apply to query parameters:
   - Not supported in Azure AD B2C tenants.
   - When using the `$count=true` query string when querying against directory objects, the `@odata.count` property will be present only in the first page of the paged data.
 - Query parameters specified in a request might fail silently. This can be true for unsupported query parameters as well as for unsupported combinations of query parameters.
-
-## Reports
-
-### License check errors for Azure AD activity reports
-
-When you have a valid Azure AD Premium license and call the [directoryAudit](/graph/api/resources/directoryaudit), [signIn](/graph/api/resources/signin), or [provisioning](/graph/api/resources/provisioningobjectsummary) Azure AD activity reports APIs, you might still encounter an error message similar to the following:
-
-```json
-{
-    "error": {
-        "code": "Authentication_RequestFromNonPremiumTenantOrB2CTenant",
-        "message": "Neither tenant is B2C or tenant doesn't have premium license",
-        "innerError": {
-            "date": "2021-09-02T17:15:30",
-            "request-id": "73badd94-c0ca-4b09-a3e6-20c1f5f9a307",
-            "client-request-id": "73badd94-c0ca-4b09-a3e6-20c1f5f9a307"
-        }
-    }
-}
-```
-
-This error might also occur when retrieving the **signInActivity** property of the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resource; for example, `https://graph.microsoft.com/beta/users?$select=signInActivity`.
-
-This error is due to intermittent license check failures, which we are working to fix. As a temporary workaround, add the **Directory.Read.All** permission. This temporary workaround will not be required when the issue is resolved.
 
 ## Sites and lists (SharePoint)
 
@@ -473,19 +450,11 @@ GET /tenants/{tenant-id}/teams/{team-id}/channels/{channel-id}
 
 To solve this issue, remove the `/tenants/{tenant-id}` part from the URL before you call the API to access the cross-tenant shared [channel](/graph/api/resources/channel).
 
-### TeamworkAppSettings permissions are not visible in the Azure portal
-
-The permissions TeamworkAppSettings.Read.All and TeamworkAppSettings.ReadWrite.All are currently being rolled out and might not be visible in Azure Portal yet. To consent to these permissions, please use an authorize request as follows:
-
-```http
-GET https://login.microsoftonline.com/{tenant-id}/oauth2/v2.0/authorize?client_id={client-app-id}&response_type=code&scope=https://graph.microsoft.com/TeamworkAppSettings.ReadWrite.All
-```
-
 ### Create channel can return an error response
 
 When you create a channel, if you use special characters in your channel name, the [Get filesFolder](/graph/api/channel-get-filesfolder) API will return a `400 Bad Request` error response. When you create a channel, make sure that the **displayName** for the channel does not:
 
-- Include any of the following special characters: ~ # % & * { } + / \ : < > ? | ‘ ”.
+- Include any of the following special characters: ~ # % & * { } + / \ : < > ? | ' ".
 - Start with an underscore (_) or period (.), or end with a period (.).
 
 ### View meeting details menu is not available on Microsoft Teams client
@@ -496,7 +465,7 @@ The Microsoft Teams client does not show the **View Meeting details**  menu for 
 
 ### Encode number (#) symbols in userPrincipalName
 
-The **userPrincipalName** of guest users added through Azure AD B2B often contains the number (#) character. Using `$filter` on a **userPrincipalName** that contains the # symbol, for example, `GET /users?$filter=userPrincipalName eq 'AdeleV_contoso.com#EXT#@fabrikam.com'`, returns a `400 Bad request` HTTP error response. To filter by the **userPrincipalName**, encode the # character using its UTF-8 equivalent (`%23`), for example, `GET /users?$filter=userPrincipalName eq 'AdeleV_contoso.com%23EXT%23@fabrikam.com'`.
+The **userPrincipalName** of guest users added through Microsoft Entra B2B often contains the number (#) character. Using `$filter` on a **userPrincipalName** that contains the # symbol, for example, `GET /users?$filter=userPrincipalName eq 'AdeleV_contoso.com#EXT#@fabrikam.com'`, returns a `400 Bad request` HTTP error response. To filter by the **userPrincipalName**, encode the # character using its UTF-8 equivalent (`%23`), for example, `GET /users?$filter=userPrincipalName eq 'AdeleV_contoso.com%23EXT%23@fabrikam.com'`.
 
 ### Access to user resources is delayed after creation
 
@@ -515,7 +484,7 @@ Users can be created immediately through a POST on the user entity. A Microsoft 
     }
     ```
 
-2. Any photos that *may* have been previously stored using the **thumbnailPhoto** property (using the Azure AD Graph API (deprecated) or through AD Connect synchronization) are no longer accessible through the Microsoft Graph **photo** property of the [user](/graph/api/resources/user) resource.
+2. Any photos that *may* have been previously stored using the **thumbnailPhoto** property (using the Azure AD Graph API (currently in its retirement cycle) or through AD Connect synchronization) are no longer accessible through the Microsoft Graph **photo** property of the [user](/graph/api/resources/user) resource.
 3. Managing users' photos through the [profilePhoto resource](/graph/api/resources/profilephoto) of the Microsoft Graph API is currently not supported in Azure AD B2C tenants.
 
 ### Revoke sign-in sessions returns wrong HTTP code

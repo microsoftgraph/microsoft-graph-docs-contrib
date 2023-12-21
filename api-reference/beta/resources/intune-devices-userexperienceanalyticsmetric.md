@@ -31,7 +31,7 @@ The user experience analytics metric contains the score and units of a metric of
 |:---|:---|:---|
 |id|String|The unique identifier of the user experience analytics metric.|
 |value|Double|The value of the user experience analytics metric.|
-|unit|String|The unit of the user experience analytics metric.|
+|unit|String|The unit of the user experience analytics metric. Examples: none, percentage, count, seconds, score.|
 
 ## Relationships
 None

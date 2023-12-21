@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
-	DisplayName = "Hobby"
-	Description = "Your hobby"
-	DataType = "string"
+	displayName = "Hobby"
+	description = "Your hobby"
+	dataType = "string"
 }
 
-New-MgIdentityUserFlowAttribute -BodyParameter $params
+New-MgBetaIdentityUserFlowAttribute -BodyParameter $params
 
 ```

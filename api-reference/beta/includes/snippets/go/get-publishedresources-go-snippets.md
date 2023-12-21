@@ -4,17 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphonpremisespublishingprofiles "github.com/microsoftgraph/msgraph-beta-sdk-go/onpremisespublishingprofiles"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &graphconfig.OnPremisesPublishingProfileItemPublishedResourcesRequestBuilderGetQueryParameters{
+
+requestParameters := &graphonpremisespublishingprofiles.OnPremisesPublishingProfileItemPublishedResourcesRequestBuilderGetQueryParameters{
 	Expand: [] string {"agentGroups"},
 }
-configuration := &graphconfig.OnPremisesPublishingProfileItemPublishedResourcesRequestBuilderGetRequestConfiguration{
+configuration := &graphonpremisespublishingprofiles.OnPremisesPublishingProfileItemPublishedResourcesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.OnPremisesPublishingProfilesById("onPremisesPublishingProfile-id").PublishedResources().Get(context.Background(), configuration)
+publishedResources, err := graphClient.OnPremisesPublishingProfiles().ByOnPremisesPublishingProfileId("onPremisesPublishingProfile-id").PublishedResources().Get(context.Background(), configuration)
 
 
 ```

@@ -26,11 +26,11 @@ Represents specific settings for the Microsoft Managed Desktop that enables cust
 
 |Member|Description|
 |:---|:---|
-|notManaged|The device is not managed by Microsoft Managed Desktop.|
-|premiumManaged|The device is managed by Microsoft Managed Desktop premium plan.|
-|standardManaged|The device is managed by Microsoft Managed Desktop standard plan.|
-|starterManaged|The device is managed by Microsoft Managed Desktop starter plan.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+|notManaged|Microsoft Managed Desktop doesn't manage this device.|
+|premiumManaged| Microsoft Managed Desktop premium plan manages this device.|
+|standardManaged| Microsoft Managed Desktop standard plan manages this device.|
+|starterManaged| Microsoft Managed Desktop starter plan manages this device.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 
@@ -38,7 +38,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.microsoftManagedDesktop"

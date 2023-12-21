@@ -45,7 +45,7 @@ Namespace: microsoft.graph.externalConnectors
 
 ### connectionState values
 
-|Member
+| Member
 |:--------------
 | draft
 | ready
@@ -54,7 +54,7 @@ Namespace: microsoft.graph.externalConnectors
 | unknownFutureValue
 
 ### contentExperienceType values
-|Member
+| Member
 |:--------------
 | search
 | compliance
@@ -62,13 +62,13 @@ Namespace: microsoft.graph.externalConnectors
 
 ### externalActivityType values
 
-|Member
-|:--------------
-|viewed
-|modified
-|created
-|commented
-|unknownFutureValue
+| Member             |
+|:-------------------|
+| viewed             |
+| modified           |
+| created            |
+| commented          |
+| unknownFutureValue |
 
 ### externalGroupMemberType values
 
@@ -100,6 +100,16 @@ Namespace: microsoft.graph.externalConnectors
 | user
 | group
 | externalGroup
+| unknownFutureValue
+
+### importanceScore values
+
+| Member
+|:--------------
+| low
+| medium
+| high
+| veryHigh
 | unknownFutureValue
 
 ### label values

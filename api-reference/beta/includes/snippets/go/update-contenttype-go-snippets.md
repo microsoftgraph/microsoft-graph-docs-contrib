@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewContentType()
 name := "updatedCt"
@@ -23,7 +31,6 @@ contentTypeInfo.SetName(&name)
 
 allowedContentTypes := []graphmodels.ContentTypeInfoable {
 	contentTypeInfo,
-
 }
 documentSet.SetAllowedContentTypes(allowedContentTypes)
 
@@ -46,7 +53,6 @@ documentSetContent1.SetContentType(contentType)
 defaultContents := []graphmodels.DocumentSetContentable {
 	documentSetContent,
 	documentSetContent1,
-
 }
 documentSet.SetDefaultContents(defaultContents)
 
@@ -65,7 +71,6 @@ columnDefinition1.SetId(&id)
 sharedColumns := []graphmodels.ColumnDefinitionable {
 	columnDefinition,
 	columnDefinition1,
-
 }
 documentSet.SetSharedColumns(sharedColumns)
 
@@ -78,12 +83,11 @@ columnDefinition.SetId(&id)
 
 welcomePageColumns := []graphmodels.ColumnDefinitionable {
 	columnDefinition,
-
 }
 documentSet.SetWelcomePageColumns(welcomePageColumns)
 requestBody.SetDocumentSet(documentSet)
 
-result, err := graphClient.SitesById("site-id").ContentTypesById("contentType-id").Patch(context.Background(), requestBody, nil)
+contentTypes, err := graphClient.Sites().BySiteId("site-id").ContentTypes().ByContentTypeId("contentType-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

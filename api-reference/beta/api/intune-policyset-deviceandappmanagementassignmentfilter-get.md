@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -63,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 774
+Content-Length: 821
 
 {
   "value": {
@@ -86,7 +88,8 @@ Content-Length: 774
         "groupId": "Group Id value",
         "assignmentFilterType": "include"
       }
-    ]
+    ],
+    "assignmentFilterManagementType": "apps"
   }
 }
 ```

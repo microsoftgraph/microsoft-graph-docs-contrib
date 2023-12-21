@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let user = await client.api('/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd')
+let user = await client.api('/users/{id | userPrincipalName}')
 	.select('displayName,givenName,postalCode,identities')
 	.get();
 

@@ -102,6 +102,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |touchIdTimeoutInHours|Int32|Maximum hours after which the user must enter their password to unlock the device instead of using Touch ID. Available for devices running macOS 12 and later. Valid values 0 to 2147483647|
 |iCloudPrivateRelayBlocked|Boolean|iCloud private relay is an iCloud+ service that prevents networks and servers from monitoring a person's activity across the internet. By blocking iCloud private relay, Apple will not encrypt the traffic leaving the device. Available for devices running macOS 12 and later.|
 |iCloudDesktopAndDocumentsBlocked|Boolean|When TRUE the synchronization of cloud desktop and documents is blocked. When FALSE, synchronization of the cloud desktop and documents are allowed. Available for devices running macOS 10.12.4 and later.|
+|activationLockWhenSupervisedAllowed|Boolean|When TRUE, activation lock is allowed when the devices is in the supervised mode. When FALSE, activation lock is not allowed. Default is false.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -262,6 +263,7 @@ Here is a JSON representation of the resource.
   "softwareUpdateNonOSDeferredInstallDelayInDays": 1024,
   "touchIdTimeoutInHours": 1024,
   "iCloudPrivateRelayBlocked": true,
-  "iCloudDesktopAndDocumentsBlocked": true
+  "iCloudDesktopAndDocumentsBlocked": true,
+  "activationLockWhenSupervisedAllowed": true
 }
 ```

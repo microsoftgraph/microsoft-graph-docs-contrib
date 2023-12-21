@@ -4,11 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodelsediscovery "github.com/microsoftgraph/msgraph-beta-sdk-go/models/ediscovery"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewCaseSettings()
-redundancyDetection := graphmodels.NewRedundancyDetectionSettings()
+
+requestBody := graphmodelsediscovery.NewCaseSettings()
+redundancyDetection := graphmodelsediscovery.NewRedundancyDetectionSettings()
 isEnabled := false
 redundancyDetection.SetIsEnabled(&isEnabled) 
 similarityThreshold := int32(70)
@@ -18,7 +26,7 @@ redundancyDetection.SetMinWords(&minWords)
 maxWords := int32(400000)
 redundancyDetection.SetMaxWords(&maxWords) 
 requestBody.SetRedundancyDetection(redundancyDetection)
-topicModeling := graphmodels.NewTopicModelingSettings()
+topicModeling := graphmodelsediscovery.NewTopicModelingSettings()
 isEnabled := false
 topicModeling.SetIsEnabled(&isEnabled) 
 ignoreNumbers := false
@@ -28,14 +36,14 @@ topicModeling.SetTopicCount(&topicCount)
 dynamicallyAdjustTopicCount := false
 topicModeling.SetDynamicallyAdjustTopicCount(&dynamicallyAdjustTopicCount) 
 requestBody.SetTopicModeling(topicModeling)
-ocr := graphmodels.NewOcrSettings()
+ocr := graphmodelsediscovery.NewOcrSettings()
 isEnabled := true
 ocr.SetIsEnabled(&isEnabled) 
 maxImageSize := int32(12000)
 ocr.SetMaxImageSize(&maxImageSize) 
 requestBody.SetOcr(ocr)
 
-result, err := graphClient.Compliance().Ediscovery().CasesById("case-id").Settings().Patch(context.Background(), requestBody, nil)
+settings, err := graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").Settings().Patch(context.Background(), requestBody, nil)
 
 
 ```

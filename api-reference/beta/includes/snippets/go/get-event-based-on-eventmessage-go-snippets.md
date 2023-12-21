@@ -4,17 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &graphconfig.MeMessageItemRequestBuilderGetQueryParameters{
+
+requestParameters := &graphusers.ItemMessageItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"microsoft.graph.eventMessage/event"},
 }
-configuration := &graphconfig.MeMessageItemRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemMessageItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().MessagesById("message-id").Get(context.Background(), configuration)
+messages, err := graphClient.Me().Messages().ByMessageId("message-id").Get(context.Background(), configuration)
 
 
 ```

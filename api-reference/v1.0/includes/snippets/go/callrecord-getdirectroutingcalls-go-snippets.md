@@ -4,11 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-result, err := graphClient.Communications().CallRecordsById("callRecord-id").Get(context.Background(), nil)
+
+fromDateTime , err := time.Parse(time.RFC3339, "{fromDateTime}")
+toDateTime , err := time.Parse(time.RFC3339, "{toDateTime}")
+microsoftGraphCallRecordsGetDirectRoutingCalls, err := graphClient.Communications().CallRecords().MicrosoftGraphCallRecordsGetDirectRoutingCallsWithFromDateTimeWithToDateTime(&fromDateTime, &toDateTime).Get(context.Background(), nil)
 
 
 ```

@@ -1,7 +1,7 @@
 ---
 title: "userConsentRequest resource type"
 description: "Represents the details of the consent request a user creates when they request to access an app or to grant permissions to an app. The details include justification for requesting access, the status of the request, and the approval details."
-author: "psignoret"
+author: "eringreenlee"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
@@ -34,7 +34,7 @@ The user can create a consent request when an app or a permission requires admin
 |customData|String|Free text field to define any custom data for the user consent request. Not used.|
 |id|String|Identifier of the request. |
 |reason|String|The user's justification for requiring access to the app. Supports `$filter` (`eq` only) and `$orderby`.  |
-|status|String|The status of the user's app consent request. Possible values are: `Initializing`, `InProgress`, and `Completed`. Supports `$filter` (`eq` only) and `$orderby`. |
+|status|String|The status of the user's app consent request. Possible values are: `Initializing`, `InProgress`, `Expired`, and `Completed`. Supports `$filter` (`eq` only) and `$orderby`. |
 
 ## Relationships
 |Relationship|Type|Description|

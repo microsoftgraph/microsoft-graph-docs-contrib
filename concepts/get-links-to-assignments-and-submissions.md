@@ -11,7 +11,7 @@ doc_type: conceptualPageType
 
 Education institutions have custom tools for students and users to view details about or complete assignments. You can use education APIs in Microsoft Graph to get deep links to assignments and submissions for use in custom tools. Before you can get links to assignments and submissions, you must get the relevant class and member information.
 
- > **Note:** You can use [Graph Explorer](/graph/graph-explorer) to test the [education APIs](/graph/msgraph-onboarding-graphexplorer) mentioned in this article.
+ > **Note:** You can use [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to test the [education APIs](/graph/msgraph-onboarding-graphexplorer) mentioned in this article.
 
 ## Get class and member information
 

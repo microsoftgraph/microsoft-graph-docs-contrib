@@ -8,23 +8,23 @@ Import-Module Microsoft.Graph.Education
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.educationSchool"
-	DisplayName = "String"
-	Description = "String"
-	ExternalSource = "String"
-	ExternalSourceDetail = "String"
-	PrincipalEmail = "String"
-	PrincipalName = "String"
-	ExternalPrincipalId = "String"
-	LowestGrade = "String"
-	HighestGrade = "String"
-	SchoolNumber = "String"
-	ExternalId = "String"
-	Phone = "String"
-	Fax = "String"
-	CreatedBy = @{
+	displayName = "String"
+	description = "String"
+	externalSource = "String"
+	externalSourceDetail = "String"
+	principalEmail = "String"
+	principalName = "String"
+	externalPrincipalId = "String"
+	lowestGrade = "String"
+	highestGrade = "String"
+	schoolNumber = "String"
+	externalId = "String"
+	phone = "String"
+	fax = "String"
+	createdBy = @{
 		"@odata.type" = "microsoft.graph.identitySet"
 	}
-	Address = @{
+	address = @{
 		"@odata.type" = "microsoft.graph.physicalAddress"
 	}
 }

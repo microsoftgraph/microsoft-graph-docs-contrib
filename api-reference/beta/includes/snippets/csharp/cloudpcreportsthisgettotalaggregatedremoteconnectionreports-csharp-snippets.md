@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.DeviceManagement.VirtualEndpoint.Reports.GetTotalAggregatedRemoteConnectionReports.GetTotalAggregatedRemoteConnectionReportsPostRequestBody
+// Dependencies
+using Microsoft.Graph.Beta.DeviceManagement.VirtualEndpoint.Reports.GetTotalAggregatedRemoteConnectionReports;
+
+var requestBody = new GetTotalAggregatedRemoteConnectionReportsPostRequestBody
 {
 	Top = 25,
 	Skip = 0,
@@ -20,6 +23,8 @@ var requestBody = new Microsoft.Graph.Beta.DeviceManagement.VirtualEndpoint.Repo
 		"DaysSinceLastSignIn",
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.DeviceManagement.VirtualEndpoint.Reports.GetTotalAggregatedRemoteConnectionReports.PostAsync(requestBody);
 
 

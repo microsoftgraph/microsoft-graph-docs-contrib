@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.CloudCommunications
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 
-Get-MgCommunicationOnlineMeeting -Filter "VideoTeleconferenceId eq '123456789'" 
+Get-MgBetaCommunicationOnlineMeeting -Filter "VideoTeleconferenceId eq '123456789'" 
 
 ```

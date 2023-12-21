@@ -4,74 +4,78 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewAuthenticationMethodConfiguration()
 id := "X509Certificate"
 requestBody.SetId(&id) 
 state := graphmodels.ENABLED_AUTHENTICATIONMETHODSTATE 
 requestBody.SetState(&state) 
-additionalData := map[string]interface{}{
 
 
- := graphmodels.New()
+x509CertificateUserBinding := graphmodels.NewX509CertificateUserBinding()
 x509CertificateField := "PrincipalName"
-.SetX509CertificateField(&x509CertificateField) 
+x509CertificateUserBinding.SetX509CertificateField(&x509CertificateField) 
 userProperty := "onPremisesUserPrincipalName"
-.SetUserProperty(&userProperty) 
+x509CertificateUserBinding.SetUserProperty(&userProperty) 
 priority := int32(1)
-.SetPriority(&priority) 
+x509CertificateUserBinding.SetPriority(&priority) 
 
-	certificateUserBindings := []graphmodels.Objectable {
-		,
-
-	}
-authenticationModeConfiguration := graphmodels.New()
-x509CertificateAuthenticationDefaultMode := "x509CertificateMultiFactor"
+certificateUserBindings := []graphmodels.X509CertificateUserBindingable {
+	x509CertificateUserBinding,
+}
+requestBody.SetCertificateUserBindings(certificateUserBindings)
+authenticationModeConfiguration := graphmodels.NewX509CertificateAuthenticationModeConfiguration()
+x509CertificateAuthenticationDefaultMode := graphmodels.X509CERTIFICATEMULTIFACTOR_X509CERTIFICATEAUTHENTICATIONMODE 
 authenticationModeConfiguration.SetX509CertificateAuthenticationDefaultMode(&x509CertificateAuthenticationDefaultMode) 
 
 
- := graphmodels.New()
-x509CertificateRuleType := "issuerSubject"
-.SetX509CertificateRuleType(&x509CertificateRuleType) 
+x509CertificateRule := graphmodels.NewX509CertificateRule()
+x509CertificateRuleType := graphmodels.ISSUERSUBJECT_X509CERTIFICATERULETYPE 
+x509CertificateRule.SetX509CertificateRuleType(&x509CertificateRuleType) 
 identifier := "CN=ContosoCA,DC=Contoso,DC=org "
-.SetIdentifier(&identifier) 
-x509CertificateAuthenticationMode := "x509CertificateMultiFactor"
-.SetX509CertificateAuthenticationMode(&x509CertificateAuthenticationMode) 
- := graphmodels.New()
-x509CertificateRuleType := "policyOID"
-.SetX509CertificateRuleType(&x509CertificateRuleType) 
+x509CertificateRule.SetIdentifier(&identifier) 
+x509CertificateAuthenticationMode := graphmodels.X509CERTIFICATEMULTIFACTOR_X509CERTIFICATEAUTHENTICATIONMODE 
+x509CertificateRule.SetX509CertificateAuthenticationMode(&x509CertificateAuthenticationMode) 
+x509CertificateRule1 := graphmodels.NewX509CertificateRule()
+x509CertificateRuleType := graphmodels.POLICYOID_X509CERTIFICATERULETYPE 
+x509CertificateRule1.SetX509CertificateRuleType(&x509CertificateRuleType) 
 identifier := "1.2.3.4"
-.SetIdentifier(&identifier) 
-x509CertificateAuthenticationMode := "x509CertificateMultiFactor"
-.SetX509CertificateAuthenticationMode(&x509CertificateAuthenticationMode) 
+x509CertificateRule1.SetIdentifier(&identifier) 
+x509CertificateAuthenticationMode := graphmodels.X509CERTIFICATEMULTIFACTOR_X509CERTIFICATEAUTHENTICATIONMODE 
+x509CertificateRule1.SetX509CertificateAuthenticationMode(&x509CertificateAuthenticationMode) 
 
-	rules := []graphmodels.Objectable {
-		,
-		,
-
-	}
-	authenticationModeConfiguration.SetRules(rules)
-	requestBody.SetAuthenticationModeConfiguration(authenticationModeConfiguration)
-
-
- := graphmodels.New()
-targetType := "group"
-.SetTargetType(&targetType) 
-id := "all_users"
-.SetId(&id) 
-isRegistrationRequired := false
-.SetIsRegistrationRequired(&isRegistrationRequired) 
-
-	includeTargets := []graphmodels.Objectable {
-		,
-
-	}
+rules := []graphmodels.X509CertificateRuleable {
+	x509CertificateRule,
+	x509CertificateRule1,
 }
-requestBody.SetAdditionalData(additionalData)
+authenticationModeConfiguration.SetRules(rules)
+requestBody.SetAuthenticationModeConfiguration(authenticationModeConfiguration)
 
-result, err := graphClient.Policies().AuthenticationMethodsPolicy().AuthenticationMethodConfigurationsById("authenticationMethodConfiguration-id").Patch(context.Background(), requestBody, nil)
+
+authenticationMethodTarget := graphmodels.NewAuthenticationMethodTarget()
+targetType := graphmodels.GROUP_AUTHENTICATIONMETHODTARGETTYPE 
+authenticationMethodTarget.SetTargetType(&targetType) 
+id := "all_users"
+authenticationMethodTarget.SetId(&id) 
+isRegistrationRequired := false
+authenticationMethodTarget.SetIsRegistrationRequired(&isRegistrationRequired) 
+
+includeTargets := []graphmodels.AuthenticationMethodTargetable {
+	authenticationMethodTarget,
+}
+requestBody.SetIncludeTargets(includeTargets)
+
+authenticationMethodConfigurations, err := graphClient.Policies().AuthenticationMethodsPolicy().AuthenticationMethodConfigurations().ByAuthenticationMethodConfigurationId("authenticationMethodConfiguration-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

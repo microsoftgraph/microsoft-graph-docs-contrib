@@ -4,33 +4,38 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewNamedLocation()
 displayName := "Untrusted IP named location"
 requestBody.SetDisplayName(&displayName) 
-additionalData := map[string]interface{}{
-	isTrusted := false
+isTrusted := false
 requestBody.SetIsTrusted(&isTrusted) 
 
 
- := graphmodels.New()
+ipRange := graphmodels.NewIPv4CidrRange()
 cidrAddress := "12.34.221.11/22"
-.SetCidrAddress(&cidrAddress) 
- := graphmodels.New()
+ipRange.SetCidrAddress(&cidrAddress) 
+ipRange1 := graphmodels.NewIPv6CidrRange()
 cidrAddress := "2001:0:9d38:90d6:0:0:0:0/63"
-.SetCidrAddress(&cidrAddress) 
+ipRange1.SetCidrAddress(&cidrAddress) 
 
-	ipRanges := []graphmodels.Objectable {
-		,
-		,
-
-	}
+ipRanges := []graphmodels.IpRangeable {
+	ipRange,
+	ipRange1,
 }
-requestBody.SetAdditionalData(additionalData)
+requestBody.SetIpRanges(ipRanges)
 
-result, err := graphClient.Identity().ConditionalAccess().NamedLocations().Post(context.Background(), requestBody, nil)
+namedLocations, err := graphClient.Identity().ConditionalAccess().NamedLocations().Post(context.Background(), requestBody, nil)
 
 
 ```

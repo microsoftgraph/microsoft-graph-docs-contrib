@@ -1,7 +1,8 @@
 ---
 title: "authenticationStrengthUsage resource type"
 description: "Two collections of Conditional Access policies that reference the specified authentication strength. One collection references Conditional Access policies that require an MFA claim; the other collection references Conditional Access policies that don't require such a claim."
-author: "mmcla"
+author: "InbarckMS"
+ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

@@ -4,10 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphgroups "github.com/microsoftgraph/msgraph-sdk-go/groups"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewReplyPostRequestBody()
+
+requestBody := graphgroups.NewReplyPostRequestBody()
 post := graphmodels.NewPost()
 body := graphmodels.NewItemBody()
 contentType := graphmodels.TEXT_BODYTYPE 
@@ -17,22 +26,19 @@ body.SetContent(&content)
 post.SetBody(body)
 
 
-attachment := graphmodels.NewAttachment()
+attachment := graphmodels.NewFileAttachment()
 name := "Another file as attachment"
 attachment.SetName(&name) 
-additionalData := map[string]interface{}{
-	"contentBytes" : "VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu", 
-}
-attachment.SetAdditionalData(additionalData)
+contentBytes := []byte("vGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu")
+attachment.SetContentBytes(&contentBytes) 
 
 attachments := []graphmodels.Attachmentable {
 	attachment,
-
 }
 post.SetAttachments(attachments)
 requestBody.SetPost(post)
 
-graphClient.GroupsById("group-id").ThreadsById("conversationThread-id").Reply().Post(context.Background(), requestBody, nil)
+graphClient.Groups().ByGroupId("group-id").Threads().ByConversationThreadId("conversationThread-id").Reply().Post(context.Background(), requestBody, nil)
 
 
 ```

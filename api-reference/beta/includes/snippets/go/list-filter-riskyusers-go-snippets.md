@@ -4,20 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphidentityprotection "github.com/microsoftgraph/msgraph-beta-sdk-go/identityprotection"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 
 requestFilter := "riskLevel eq microsoft.graph.riskLevel'medium'"
 
-requestParameters := &graphconfig.IdentityProtectionRiskyUsersRequestBuilderGetQueryParameters{
+requestParameters := &graphidentityprotection.IdentityProtectionRiskyUsersRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.IdentityProtectionRiskyUsersRequestBuilderGetRequestConfiguration{
+configuration := &graphidentityprotection.IdentityProtectionRiskyUsersRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityProtection().RiskyUsers().Get(context.Background(), configuration)
+riskyUsers, err := graphClient.IdentityProtection().RiskyUsers().Get(context.Background(), configuration)
 
 
 ```

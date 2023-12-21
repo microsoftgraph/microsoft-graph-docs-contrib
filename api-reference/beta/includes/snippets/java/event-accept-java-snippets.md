@@ -13,8 +13,8 @@ Boolean sendResponse = true;
 graphClient.me().events("{id}")
 	.accept(EventAcceptParameterSet
 		.newBuilder()
-		.withComment(comment)
 		.withSendResponse(sendResponse)
+		.withComment(comment)
 		.build())
 	.buildRequest()
 	.post();

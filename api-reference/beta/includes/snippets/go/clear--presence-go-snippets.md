@@ -4,14 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewClearPresencePostRequestBody()
+
+requestBody := graphusers.NewClearPresencePostRequestBody()
 sessionId := "22553876-f5ab-4529-bffb-cfe50aa89f87"
 requestBody.SetSessionId(&sessionId) 
 
-graphClient.UsersById("user-id").Presence().ClearPresence().Post(context.Background(), requestBody, nil)
+graphClient.Users().ByUserId("user-id").Presence().ClearPresence().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.CloudCommunications
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 $params = @{
-	StartDateTime = [System.DateTime]::Parse("2019-07-12T14:30:34.2444915-07:00")
-	EndDateTime = [System.DateTime]::Parse("2019-07-12T15:00:34.2464912-07:00")
-	Subject = "User meeting in Microsoft Teams channel."
-	JoinMeetingIdSettings = @{
-		IsPasscodeRequired = $false
+	startDateTime = [System.DateTime]::Parse("2019-07-12T14:30:34.2444915-07:00")
+	endDateTime = [System.DateTime]::Parse("2019-07-12T15:00:34.2464912-07:00")
+	subject = "User meeting in Microsoft Teams channel."
+	joinMeetingIdSettings = @{
+		isPasscodeRequired = $false
 	}
 }
 
 # A UPN can also be used as -UserId.
-New-MgUserOnlineMeeting -UserId $userId -BodyParameter $params
+New-MgBetaUserOnlineMeeting -UserId $userId -BodyParameter $params
 
 ```

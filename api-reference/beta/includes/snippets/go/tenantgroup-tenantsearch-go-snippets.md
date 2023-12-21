@@ -4,14 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphtenantrelationships "github.com/microsoftgraph/msgraph-beta-sdk-go/tenantrelationships"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewTenantSearchPostRequestBody()
+
+requestBody := graphtenantrelationships.NewTenantSearchPostRequestBody()
 tenantId := "String"
 requestBody.SetTenantId(&tenantId) 
 
-result, err := graphClient.TenantRelationships().ManagedTenants().TenantGroups().ManagedTenantsTenantSearch().Post(context.Background(), requestBody, nil)
+microsoftGraphManagedTenantsTenantSearch, err := graphClient.TenantRelationships().ManagedTenants().TenantGroups().MicrosoftGraphManagedTenantsTenantSearch().Post(context.Background(), requestBody, nil)
 
 
 ```
