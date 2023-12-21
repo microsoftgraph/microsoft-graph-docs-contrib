@@ -8,6 +8,7 @@ ms.localizationpriority: medium
 ms.topic: how-to
 ms.prod: "governance"
 ms.date: 09/27/2023
+#Customer intent: As a developer, I want to update settings and rules in Privileged Identity Management (PIM) using Microsoft Graph APIs, so that I can manage the activation, approval, and expiration settings for different roles and groups in PIM.
 ---
 
 # Update rules in PIM using Microsoft Graph

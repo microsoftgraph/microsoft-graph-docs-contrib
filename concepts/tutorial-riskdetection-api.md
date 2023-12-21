@@ -7,6 +7,7 @@ ms.reviewer: Etan.Basseri
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 ms.date: 11/01/2022
+#Customer intent: As a developer integrating with Microsoft Graph, I want to use Microsoft Entra ID Protection to identify and remediate identity-based risks, so that I can ensure the security of user accounts and protect against unauthorized access.
 ---
 
 # Identify and remediate risks using Microsoft Graph
