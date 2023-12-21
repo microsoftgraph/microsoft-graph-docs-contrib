@@ -1191,5 +1191,3 @@ items:
       - name: API beta reference
         href: /graph/api/overview?view=graph-rest-beta&preserve-view=true
         displayName: Microsoft Graph beta endpoint reference, Microsoft Graph REST API Beta
-      - name: Error codes in the learning course activity API
-        href: learningcourseactivity-error-codes.md
