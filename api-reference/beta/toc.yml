@@ -438,6 +438,8 @@ items:
           - name: Directory object
             href: resources/directoryobject.md
             items:
+              - name: Delete password single sign-on credential
+                href: api/user-deletepasswordsinglesignoncredentials.md
               - name: Get delta
                 href: api/directoryobject-delta.md
               - name: Assign license
@@ -454,6 +456,8 @@ items:
                 href: api/directoryobject-checkmemberobjects.md
               - name: Get objects by IDs
                 href: api/directoryobject-getbyids.md
+              - name: Get password single sign-on credentials
+                href: api/user-getpasswordsinglesignoncredentials.md
               - name: List created objects
                 href: api/user-list-createdobjects.md
               - name: List license details
