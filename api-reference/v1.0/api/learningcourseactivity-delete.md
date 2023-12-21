@@ -49,7 +49,7 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `204 No Content` response code.
 
-Below are the error codes returned in case of failure
+If unsuccessful, this method returns one of the responses below:
 
 |Scenario|HTTP code|Code|Message|Details|
 |:---|:---|:---|:---|:---|
