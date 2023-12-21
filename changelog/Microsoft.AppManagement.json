@@ -7,7 +7,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "deletePasswordSingleSignOnCredentials",
           "ChangeType": "Addition",
-          "Description": "Added the [deletePasswordSingleSignOnCredentials](https://learn.microsoft.com/en-us/graph/api/user?view=graph-rest-beta) method to the [user](https://learn.microsoft.com/en-us/graph/api/user?view=graph-rest-beta) resource.",
+          "Description": "Add new method to delete a [Password Single Sign-On credential](https://docs.microsoft.com/en-us/graph/api/resources/passwordsinglesignoncredentialset?view=graph-rest-beta) associated to a given [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta)",
           "Target": "user"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getPasswordSingleSignOnCredentials",
           "ChangeType": "Addition",
-          "Description": "Added the [getPasswordSingleSignOnCredentials](https://learn.microsoft.com/en-us/graph/api/user?view=graph-rest-beta) method to the [user](https://learn.microsoft.com/en-us/graph/api/user?view=graph-rest-beta) resource.",
+          "Description": "Add new method to get the list of [Password Single Sign-On credentials](https://docs.microsoft.com/en-us/graph/api/resources/passwordsinglesignoncredentialset?view=graph-rest-beta) for given [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta).",
           "Target": "user"
         },
         {
