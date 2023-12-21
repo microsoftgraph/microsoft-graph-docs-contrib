@@ -9,6 +9,7 @@ ms.topic: reference
 ms.prod: "applications"
 ms.custom: graphiamtop20, scenarios:getting-started
 ms.date: 12/11/2023
+#Customer intent: As a developer, I want to learn more about the permissions that Microsoft Graph exposes, so that I understand the impact of granting specific permissions to my app.
 ---
 
 # Microsoft Graph permissions reference
