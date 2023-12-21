@@ -8,6 +8,7 @@ ms.localizationpriority: high
 ms.prod: "extensions"
 ms.custom: graphiamtop20
 ms.date: 11/29/2023
+#Customer intent: As a developer, I want to learn how to store lightweight data to Microsoft Graph resources and avoid using an external database system, and use the data to customize authentication and other experiences.
 ---
 
 # Add custom data to resources using extensions
