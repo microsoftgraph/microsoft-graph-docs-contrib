@@ -18867,6 +18867,8 @@ items:
                     href: api/team-completemigration.md
                   - name: List permission grants
                     href: api/team-list-permissiongrants.md
+                  - name: Get open shifts across all joined teams
+                    href: api/team-getopenshifts.md
                   - name: Team template
                     items:
                       - name: Team template
@@ -18957,6 +18959,10 @@ items:
                     href: api/openshift-update.md
                   - name: Delete
                     href: api/openshift-delete.md
+                  - name: Stage for deletion
+                    href: api/changetrackedentity-stagefordeletion.md
+                  - name: Get open shifts across all joined teams
+                    href: api/team-getopenshifts.md
               - name: Open shift change request
                 href: resources/openshiftchangerequest.md
                 items:
@@ -19005,6 +19011,8 @@ items:
                     href: api/shift-put.md
                   - name: Delete
                     href: api/shift-delete.md
+                  - name: Stage for deletion
+                    href: api/changetrackedentity-stagefordeletion.md
               - name: Shift preferences
                 href: resources/shiftpreferences.md
                 items:
@@ -19061,6 +19069,8 @@ items:
                     href: api/timeoff-put.md
                   - name: Delete
                     href: api/timeoff-delete.md
+                  - name: Stage for deletion
+                    href: api/changetrackedentity-stagefordeletion.md
               - name: Time off reason
                 href: resources/timeoffreason.md
                 items:

@@ -7,7 +7,9 @@ ms.reviewer: rianakarim
 ms.localizationpriority: medium
 ms.prod: "governance"
 ms.date: 12/20/2022
+#Customer intent: As a developer integrating with Microsoft Graph, I want to learn how to integrate Privileged Identity Management (PIM) APIs for just in time access to Microsoft Entra roles, so that I can strengthen my organization's Zero Trust posture by enforcing the principle of least privilege.
 ---
+
 
 # Assign Microsoft Entra roles through Privileged Identity Management (PIM) APIs in Microsoft Graph
 
