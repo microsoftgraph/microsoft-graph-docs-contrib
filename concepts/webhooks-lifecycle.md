@@ -8,6 +8,7 @@ ms.localizationpriority: high
 ms.prod: "change-notifications"
 ms.custom: graphiamtop20
 ms.date: 04/20/2023
+#customer intent: As a developer, I want to manage the lifecycle events for change notifications, so that I can build resilient and "always on" apps that receive notifications of all changes.
 ---
 
 # Reduce missing subscriptions and change notifications
