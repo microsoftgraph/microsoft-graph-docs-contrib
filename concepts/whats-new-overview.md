@@ -30,8 +30,8 @@ Create and get a Viva Engage community that is a central place for conversations
 - [Get a community](/graph/api/community-get?view=graph-rest-beta&preserve-view=true)
 
 ### Teamwork and communications | Shift management
-- Get all [openShift](/graph/api/resources/openshift.md) objects across all teams a user is a direct member of, removing the need to specify a team ID in the request. For more information, see [team: getOpenShifts](/graph/api/team-getopenshifts?view=graph-rest-beta&preserve-view=true).
-- [Stage the deletion](/graph/api/changetrackedentity-stagefordeletion?view=graph-rest-beta&preserve-view=true) of an [openShift](/graph/api/resources/openshift.md), [shift](/graph/api/resources/shift.md), or [timeOff](/graph/api/resources/timeoff.md) instance in a [schedule](../resources/schedule.md) in draft mode.
+- Get all [openShift](/graph/api/resources/openshift) objects across all teams a user is a direct member of, removing the need to specify a team ID in the request. For more information, see [team: getOpenShifts](/graph/api/team-getopenshifts?view=graph-rest-beta&preserve-view=true).
+- [Stage the deletion](/graph/api/changetrackedentity-stagefordeletion?view=graph-rest-beta&preserve-view=true) of an [openShift](/graph/api/resources/openshift), [shift](/graph/api/resources/shift), or [timeOff](/graph/api/resources/timeoff) instance in a [schedule](/graph/api/resources/schedule) in draft mode.
 
 ## November 2023: New and generally available
 
