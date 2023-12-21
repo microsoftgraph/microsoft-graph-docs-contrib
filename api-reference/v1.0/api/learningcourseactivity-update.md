@@ -69,17 +69,17 @@ The following table lists the properties you can change for a self-initiated lea
 
 If successful, this method returns a `204 No Content` response code.
 
-Below are error codes returned in case of failure
+If unsuccessful, this method returns one of the responses below:
 
-|Scenario|HTTP Code|Code|Message|Details|
+|Scenario|HTTP code|Code|Message|Details|
 |:---|:---|:---|:---|:---|
 |Method not supported for entity|405|methodNotAllowed|This method isn't supported for this entity type. See the Microsoft Graph documentation for the methods applicable to this entity.|
 |User doesn't have appropriate permission scope|403|Forbidden|Your account doesn't have access to this report or data. Contact your global administrator to request access.|
 |Forbidden|403|Forbidden|You don't have an adequate service plan for this request.|
 |Bad request|400|badRequest|This provider isn't enabled for the given tenant.|
-|Bad request|400|badRequest|There was an issue with your request. Make sure the registrationId you entered is valid or registered for your tenant|
+|Bad request|400|badRequest|There was an issue with your request. Make sure the registrationId you entered is valid or registered for your tenant.|
 |Bad request|404|notFound|The assignment ID requested doesn’t exist.|
-|Internal server error|500|internalServerError|Internal server error|
+|Internal server error|500|internalServerError|Internal server error.|
 |Request throttled|429|tooManyRequests|{"code": "tooManyRequests","message": "Retry after {noOfMinutes} minutes".}|
 |Service unavailable|503|serviceUnavailable|{"code": "serviceUnavailable","message": "Retry after {noOfMinutes} minutes"}.|
 |Bad request|400|badRequest|Required fields are missing|{"code": "badRequest","message": "Input field {fieldName} is required"}.|
