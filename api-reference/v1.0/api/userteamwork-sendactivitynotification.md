@@ -10,7 +10,7 @@ doc_type: apiPageType
 # userTeamwork: sendActivityNotification
 Namespace: microsoft.graph
 
-Send an activity feed notification to a user. For more details about sending notifications and the requirements for doing so, see [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
+Send an activity feed notification to a user. For more information, see [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -19,6 +19,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "userteamwork_sendactivitynotification" } -->
 [!INCLUDE [permissions-table](../includes/permissions/userteamwork-sendactivitynotification-permissions.md)]
+
+>**Note:** The `TeamsActivity.Send.User` permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 
@@ -44,9 +46,9 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|Topic of the notification. Specifies the resource being talked about.|
-|activityType|String|Activity type. This must be declared in the [Teams app manifest](/microsoftteams/platform/overview).|
+|activityType|String|Activity type. It must be declared in the [Teams app manifest](/microsoftteams/platform/overview).|
 |chainId|Int64|Optional. Used to override a previous notification. Use the same `chainId` in subsequent requests to override the previous notification.|
-|previewText|[itemBody](../resources/itembody.md)|Preview text for the notification. Microsoft Teams will only show first 150 characters.|
+|previewText|[itemBody](../resources/itembody.md)|Preview text for the notification. Microsoft Teams only shows the first 150 characters.|
 |templateParameters|[keyValuePair](../resources/keyvaluepair.md) collection|Values for template variables defined in the activity feed entry corresponding to `activityType` in [Teams app manifest](/microsoftteams/platform/overview).|
 
 The following resources are supported when setting the `source` value of the **topic** property to `entityUrl`:
@@ -137,9 +139,9 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Notify a user about an event using custom topic
+### Example 2: Notify a user about an event using a custom topic
 
-If you want to link an aspect that is not represented by Microsoft Graph, or you want to customize the name, you can set the source of the `topic` to `text` and pass in a custom value for it. `webUrl` is required when using `topic` source as `text`.
+If you want to link an aspect that Microsoft Graph does not represent, or you want to customize the name, you can set the source of the `topic` to `text` and pass in a custom value for it. `webUrl` is required when using `topic` source as `text`.
 
 #### Request
 

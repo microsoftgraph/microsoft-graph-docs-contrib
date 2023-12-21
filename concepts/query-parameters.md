@@ -8,6 +8,8 @@ ms.prod: "applications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
 ms.date: 08/22/2023
+#Customer intent: As a developer building apps that consume Microsoft Graph APIs, I want to learn how to use OData query parameters, so that I can control the data retrieval and optimize data usage.
+
 ---
 
 # Use query parameters to customize responses
