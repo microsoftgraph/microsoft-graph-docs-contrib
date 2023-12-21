@@ -1,6 +1,6 @@
 ---
 title: "changeTrackedEntity: stageForDeletion"
-description: "Stage the deletion of an openShift instance in a schedule in draft mode."
+description: "Stage the deletion of a shift, openShift or timeOff instance in a schedule in draft mode."
 author: "raulfernandes"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Stage the deletion of an [openShift](../resources/openshift.md) instance in a [schedule](../resources/schedule.md) in draft mode.
+Stage the deletion of a [shift](../resources/shift.md), [openShift](../resources/openshift.md) or [timesOff](../resources/timeoff.md) instance in a [schedule](../resources/schedule.md) in draft mode.
+
+Draft changes are only visible to managers. Team members are not sent notification for draft changes. The deletion is finalized when the schedule is [shared](../api/schedule-share.md).
 
 ## Permissions
 
@@ -21,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- {
   "blockType": "permissions",
-  "name": "openshift-stagefordeletion-permissions"
+  "name": "changetrackedentity-stagefordeletion-permissions"
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/changetrackedentity-stagefordeletion-permissions.md)]
@@ -33,7 +35,23 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+POST /teams/{teamsId}/schedule/shifts/{shiftId}/stageForDeletion
+```
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
 POST /teams/{teamsId}/schedule/openShifts/{openShiftId}/stageForDeletion
+```
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /teams/{teamsId}/schedule/timesOff/{timeOffId}/stageForDeletion
 ```
 
 ## Request headers
@@ -59,12 +77,32 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "openshiftthis.stagefordeletion",
+  "name": "shift.stagefordeletion",
+  "sampleKeys": ["SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8"]
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/teams/3d88b7a2-f988-4f4b-bb34-d66df66af126/schedule/shifts/SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8/stageForDeletion
+```
+
+<!-- {
+  "blockType": "request",
+  "name": "openshift.stagefordeletion",
   "sampleKeys": ["OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8"]
 }
 -->
 ``` http
 POST https://graph.microsoft.com/beta/teams/3d88b7a2-f988-4f4b-bb34-d66df66af126/schedule/openShifts/OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8/stageForDeletion
+```
+
+<!-- {
+  "blockType": "request",
+  "name": "timeoff.stagefordeletion",
+  "sampleKeys": ["SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8"]
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/teams/3d88b7a2-f988-4f4b-bb34-d66df66af126/schedule/timesOff/SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8/stageForDeletion
 ```
 
 ### Response

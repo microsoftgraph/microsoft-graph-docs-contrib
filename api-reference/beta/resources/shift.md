@@ -19,24 +19,26 @@ The duration of a shift can't be less than 1 minute or longer than 24 hours.
 
 ## Methods
 
-| Method                                         | Return Type                  | Description                                |
-| :--------------------------------------------- | :--------------------------- | :----------------------------------------- |
-| [Create shift](../api/schedule-post-shifts.md) | [shift](shift.md)            | Create a new **shift**.                      |
-| [List shifts](../api/schedule-list-shifts.md)  | [shift](shift.md) collection | Get the list of **shifts** in this schedule. |
-| [Get shift](../api/shift-get.md)               | [shift](shift.md)            | Get a **shift** by ID.                       |
-| [Replace shift](../api/shift-put.md)           | [shift](shift.md)            | Replace a **shift**.                         |
-| [Delete shift](../api/shift-delete.md)         | None                         | Delete a **shift** from the schedule.        |
+| Method                                                              | Return Type                  | Description                                                                                                  |
+| :------------------------------------------------------------------ | :--------------------------- | :----------------------------------------------------------------------------------------------------------- |
+| [Create shift](../api/schedule-post-shifts.md)                      | [shift](shift.md)            | Create a new **shift**.                                                                                      |
+| [List shifts](../api/schedule-list-shifts.md)                       | [shift](shift.md) collection | Get the list of **shifts** in this schedule.                                                                 |
+| [Get shift](../api/shift-get.md)                                    | [shift](shift.md)            | Get a **shift** by ID.                                                                                       |
+| [Replace shift](../api/shift-put.md)                                | [shift](shift.md)            | Replace a **shift**.                                                                                         |
+| [Delete shift](../api/shift-delete.md)                              | None                         | Delete a **shift** from the schedule.                                                                        |
+| [Stage for deletion](../api/changetrackedentity-stagefordeletion.md)| None                         | Stage the deletion of a [shift](shift.md) in this [schedule](../resources/schedule.md) in draft mode.        |
 
 ## Properties
 
 | Property             | Type                          | Description                                                                                                                                                                                                                         |
 | -------------------- | ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | createdDateTime      | DateTimeOffset              | The timestamp on which this **shift** was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
-| draftShift           | [shiftItem](shiftitem.md)     | The draft version of this **shift** that is viewable by managers. Required.                                                                                                                                                           |
+| draftShift           | [shiftItem](shiftitem.md)     | Draft changes in the **shift** are only visible to managers until they are [shared](../api/schedule-share.md). |
 | id                   | String                      | ID of the **shift**.                                                                                                                                                                                                                  |
-| lastModifiedBy       | [identitySet](identityset.md) | The identity that last updated this **shift**.                                                                                                                                                                                        |
+| isStagedForDeletion   | Boolean                           | The **shift** is marked for deletion, a process that is finalized when the schedule is [shared](../api/schedule-share.md).     |
+| lastModifiedBy       | [identitySet](identityset.md) | The identity that last updated this **shift**. |
 | lastModifiedDateTime | DateTimeOffset              | The timestamp on which this **shift** was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.  |
-| sharedShift          | [shiftItem](shiftitem.md)     | The shared version of this **shift** that is viewable by both employees and managers. Required.                                                                                                                                       |
+| sharedShift          | [shiftItem](shiftitem.md)     | The shared version of this **shift** that is viewable by both employees and managers.  |
 | schedulingGroupId    | String                      | ID of the scheduling group the **shift** is part of. Required.                                                                                                                                                                        |
 | userId               | String                      | ID of the user assigned to the **shift**. Required.                                                                                                                                                                                   |
 
@@ -47,7 +49,8 @@ Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.shift"
+  "@odata.type": "microsoft.graph.shift",
+   "baseType":"microsoft.graph.changeTrackedEntity"
 }-->
 
 ```json
@@ -55,6 +58,7 @@ Here's a JSON representation of the resource.
   "createdDateTime": "DateTimeOffset",
   "draftShift": { "@odata.type": "microsoft.graph.shiftItem" },
   "id": "String",
+  "isStagedForDeletion": "Boolean",
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "DateTimeOffset",
   "schedulingGroupId": "String",

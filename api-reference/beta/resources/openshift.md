@@ -18,31 +18,31 @@ Represents an unassigned open shift in a [schedule](../resources/schedule.md).
 Inherits from [changeTrackedEntity](../resources/changetrackedentity.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List openShift](../api/openshift-list.md)|[openShift](../resources/openshift.md) collection|List [openShift](../resources/openshift.md) objects in a team.|
-|[Create openShift](../api/openshift-post.md)|[openShift](../resources/openshift.md)|Create an instance of an [openShift](../resources/openshift.md) object.|
-|[Get openShift](../api/openshift-get.md)|[openShift](../resources/openshift.md)|Retrieve the properties and relationships of an [openShift](../resources/openshift.md) object.|
-|[Update openShift](../api/openshift-update.md)|[openShift](../resources/openshift.md)|Update the properties of an [openShift](../resources/openshift.md) object.|
-|[Delete openShift](../api/openshift-delete.md)|None|Delete an [openShift](../resources/openshift.md) object.|
-|[Get open shifts across all joined teams](../api/team-getopenshifts.md)|[openShift](../resources/openshift.md) collection|Get a list of openShift objects from across all schedules the user has access to.|
-|[Stage for deletion](../api/changetrackedentity-stagefordeletion.md)|None|Stage the deletion of an [openShift](../resources/openshift.md) instance in a [schedule](../resources/schedule.md) in draft mode.|
+| Method                                                                  | Return Type                           | Description                                                                                       |
+| :---------------------------------------------------------------------- | :------------------------------------ | :------------------------------------------------------------------------------------------------ |
+| [List openShifts](../api/openshift-list.md)                             | [openShift](openshift.md) collection  | Get the list of **openShift** in a schedule.                                                      |
+| [Create openShift](../api/openshift-post.md)                            | [openShift](openshift.md)             | Create a new **openShift**.                                                                       |
+| [Get openShift](../api/openshift-get.md)                                | [openShift](openshift.md)             | Get an **openShift** by ID.                                                                       |
+| [Update openShift](../api/openshift-update.md)                          | [openShift](openshift.md)             | Update an **openShift**.                                                                          |
+| [Delete openShift](../api/openshift-delete.md)                          | None                                  | Delete an **openShift** from the schedule.                                                        |
+| [Get open shifts across all joined teams](../api/team-getopenshifts.md) | [openShift](openshift.md) collection  | Get all **openShifts** across all teams a user is a direct member of.                             |
+| [Stage for deletion](../api/changetrackedentity-stagefordeletion.md)    | None                                  | Stage the deletion of an [openShift](openshift.md) in a [schedule](schedule.md) in draft mode.    |
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|createdBy|[identitySet](identityset.md)|Identity of the person who created the **openShift** object. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md).|
-|createdDateTime|DateTimeOffset|Date and time when the **openShift** was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md).|
-|draftOpenShift|[openShiftItem](../resources/openshiftitem.md)|Draft changes in the open shift which are only visible to managers until [shared](../api/schedule-share.md).|
-|id|String| Unique identifier for the **openShift** object. Read-only. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md).|
-|isStagedForDeletion|Boolean|The open shift is marked for deletion which are finalized when the schedule is [shared](../api/schedule-share.md).|
-|lastModifiedBy|[identitySet](identityset.md)|Identity of the person who last modified the **openShift** object. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md).|
-|lastModifiedDateTime|DateTimeOffset|Date and time when the **openShift** was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md).|
-|schedulingGroupId|String|The ID of the scheduling group that contains the open shift.|
-|schedulingGroupName|String|The name of the scheduling group that contains the open shift.|
-|sharedOpenShift|[openShiftItem](../resources/openshiftitem.md)|Published changes in the open shift.|
-|teamId|String|The ID of the team in which the open shift is located.|
-|teamName|String|The name of the team in which the open shift is located.|
+| Property              | Type                              | Description                                                   |
+|:----------------------|:----------------------------------|:--------------------------------------------------------------|
+| createdBy             | [identitySet](identityset.md)     | Identity of the person who created the **openShift** object. Inherited from [changeTrackedEntity](changetrackedentity.md).      |
+| createdDateTime       | DateTimeOffset                    | Date and time when the **openShift** was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [changeTrackedEntity](changetrackedentity.md).                               |
+| draftOpenShift        | [openShiftItem](openshiftitem.md) | Draft changes in the **openShift** are only visible to managers until they are [shared](../api/schedule-share.md).              |
+| id                    | String                            | Unique identifier for the **openShift** object. Read-only. Inherited from [changeTrackedEntity](changetrackedentity.md).        |
+| isStagedForDeletion   | Boolean                           | The **openShift** is marked for deletion, a process that is finalized when the schedule is [shared](../api/schedule-share.md).     |
+| lastModifiedBy        | [identitySet](identityset.md)     | Identity of the person who last modified the **openShift** object. Inherited from [changeTrackedEntity](changetrackedentity.md).|
+| lastModifiedDateTime  | DateTimeOffset                    | Date and time when the **openShift** was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [changeTrackedEntity](changetrackedentity.md).|
+| schedulingGroupId     | String                            | The ID of the [schedulingGroup](schedulinggroup.md) that contains the **openShift**.  |
+| schedulingGroupName   | String                            | The name of the [schedulingGroup](schedulinggroup.md) that contains the **openShift**.|
+| sharedOpenShift       | [openShiftItem](openshiftitem.md) | The shared version of this **openShift** that is viewable by both employees and managers.                         |
+| teamId                | String                            | The ID of the [team](team.md) in which the **openShift** is located.        |
+| teamName              | String                            | The name of the [team](team.md) in which the **openShift** is located.      |
 
 ## Relationships
 

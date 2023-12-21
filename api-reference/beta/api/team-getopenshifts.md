@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [openShift](../resources/openshift.md) objects from across all schedules a user has access to.
+Get all [openShifts](../resources/openshift.md) across all teams a user is a direct member of.
 
 ## Permissions
 
@@ -39,10 +39,10 @@ GET /users/{id | user-principal-name}/joinedTeams/getOpenShifts
 
 ## Optional query parameters
 
-This method supports the `$filter` [OData query parameter](/graph/query-parameters) to help customize the response.
+This method supports the `$top` and `$filter` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 > [!NOTE]
-> The `$filter` parameter doesn't support the use of the same property more than once in a query. For example, the following query doesn't work: `sharedOpenShift/startDateTime ge 2024-05-09T00:00:00Z and sharedOpenShift/startDateTime le 2024-05-09T23:59:59Z`; however, the following query works: `sharedOpenShift/startDateTime ge 2024-05-09T00:00:00Z and sharedOpenShift/endDateTime le 2024-05-09T23:59:59Z`.
+> The `$filter` parameter supports the `sharedOpenShift/startDateTime`, `sharedOpenShift/endDateTime`, and `teamId` properties. It doesn't support the use of the same property more than once in a query. For example, the following query doesn't work: `sharedOpenShift/startDateTime ge 2024-05-09T00:00:00Z and sharedOpenShift/startDateTime le 2024-05-09T23:59:59Z`; however, the following query works: `sharedOpenShift/startDateTime ge 2024-05-09T00:00:00Z and sharedOpenShift/endDateTime le 2024-05-09T23:59:59Z`.
 
 ## Request headers
 
