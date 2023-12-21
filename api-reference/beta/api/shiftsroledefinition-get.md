@@ -99,8 +99,8 @@ Content-Type: application/json
 
 {
   "id": "scheduleowner",
-  "displayName": "Schedule owner"
-  "description": "A person who creates and manages schedules for their teams in Shifts."
+  "displayName": "Schedule owner",
+  "description": "A person who creates and manages schedules for their teams in Shifts.",
   "shiftsRolePermissions": [
     {
       "allowedResourceActions": [

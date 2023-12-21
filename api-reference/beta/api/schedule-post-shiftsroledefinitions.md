@@ -65,7 +65,7 @@ You can specify the following properties when creating/updating a **shiftsRoleDe
 
 |Property|Type|Description|
 |:---|:---|:---|
-|shiftsRolePermissions|[Microsoft.Teams.Shifts.shiftsRolePermission](../resources/shiftsrolepermission.md) collection|Contains the definition for role permissions within a role. Required.|
+|shiftsRolePermissions|[microsoft.graph.shiftsRolePermission](../resources/shiftsrolepermission.md) collection|Contains the definition for role permissions within a role. Required.|
 
 
 
