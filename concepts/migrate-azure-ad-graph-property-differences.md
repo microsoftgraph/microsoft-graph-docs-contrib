@@ -26,7 +26,7 @@ Because the [user](#user-property-differences) and [group](#group-property-diffe
 
 ## User property differences
 
-The Azure AD Graph **User** resource inherits from **DirectoryObject**; it has been renamed to **user** in Microsoft Graph and inherits from **directoryObject**. 
+The Azure AD Graph **User** resource inherits from **DirectoryObject**; it's been renamed to **user** in Microsoft Graph and inherits from **directoryObject**. 
 
 The Microsoft Graph v1.0 endpoint returns a limited set of user properties by default, while Azure AD Graph returns all properties. To read other properties that aren't returned by default, specify them in a `$select` query. For more information, see the [user resource type](/graph/api/resources/user).
 
@@ -54,7 +54,7 @@ The following table lists the more property differences.
 
 ## Group property differences
 
-The Azure AD Graph **Group** resource inherits from **DirectoryObject**; it has been renamed to **group** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
+The Azure AD Graph **Group** resource inherits from **DirectoryObject**; it's been renamed to **group** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
@@ -64,7 +64,7 @@ The Azure AD Graph **Group** resource inherits from **DirectoryObject**; it has 
 
 ## Application property differences
 
-The Azure AD Graph **Application** resource inherits from **DirectoryObject**; it has been renamed to **application** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
+The Azure AD Graph **Application** resource inherits from **DirectoryObject**; it's been renamed to **application** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
 
 
 | Azure AD Graph <br>(v1.6) property | Microsoft Graph<br> property                                                                                                                          | Comments                                                                                                                                                                                                                                                                                                                     |
@@ -90,7 +90,7 @@ The Azure AD Graph **Application** resource inherits from **DirectoryObject**; i
 
 ## AppRoleAssignment differences
 
-The Azure AD Graph **AppRoleAssignment** resource inherits from **DirectoryObject**; it has been renamed to **appRoleAssignment** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
+The Azure AD Graph **AppRoleAssignment** resource inherits from **DirectoryObject**; it's been renamed to **appRoleAssignment** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
 
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
@@ -100,7 +100,7 @@ The Azure AD Graph **AppRoleAssignment** resource inherits from **DirectoryObjec
 
 ## Contact property differences
 
-The Azure AD Graph **Contact** resource inherits from **DirectoryObject**; it has been renamed to **orgContact** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
+The Azure AD Graph **Contact** resource inherits from **DirectoryObject**; it's been renamed to **orgContact** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
@@ -119,7 +119,7 @@ The Azure AD Graph **Contact** resource inherits from **DirectoryObject**; it ha
 
 ## Contract property differences
 
-The Azure AD Graph **Contract** resource inherits from **DirectoryObject**; it has been renamed to **contract** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
+The Azure AD Graph **Contract** resource inherits from **DirectoryObject**; it's been renamed to **contract** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
 
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
@@ -128,7 +128,7 @@ The Azure AD Graph **Contract** resource inherits from **DirectoryObject**; it h
 
 ## Device property differences
 
-The Azure AD Graph **Device** resource inherits from **DirectoryObject**; it has been renamed to **device** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
+The Azure AD Graph **Device** resource inherits from **DirectoryObject**; it's been renamed to **device** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
 
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
@@ -155,7 +155,7 @@ The Azure AD Graph **DirectoryObject** resource has been renamed to **directoryO
 
 ## DirectoryObjectReference property differences
 
-The Azure AD Graph **DirectoryObjectReference** resource inherits from **DirectoryObject**; it has been renamed to **directoryObjectPartnerReference** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
+The Azure AD Graph **DirectoryObjectReference** resource inherits from **DirectoryObject**; it's been renamed to **directoryObjectPartnerReference** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
@@ -186,7 +186,7 @@ In Microsoft Graph, there are named policy types (such as **tokenIssuancePolicy*
 
 ## ServiceEndpoint property differences
 
-The Azure AD Graph **ServiceEndpoint** resource inherits from **DirectoryObject**; it has been renamed to **endpoint** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
+The Azure AD Graph **ServiceEndpoint** resource inherits from **DirectoryObject**; it's been renamed to **endpoint** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
@@ -196,7 +196,7 @@ The Azure AD Graph **ServiceEndpoint** resource inherits from **DirectoryObject*
 
 ## ServicePrincipal property differences
 
-The Azure AD Graph **ServicePrincipal** resource inherits from **DirectoryObject**; it has been renamed to **servicePrincipal** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
+The Azure AD Graph **ServicePrincipal** resource inherits from **DirectoryObject**; it's been renamed to **servicePrincipal** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
@@ -209,7 +209,7 @@ The Azure AD Graph **ServicePrincipal** resource inherits from **DirectoryObject
 
 ## TenantDetails property differences
 
-The Azure AD Graph **TenantDetail** resource inherits from **DirectoryObject**; it has been renamed to **organization** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
+The Azure AD Graph **TenantDetail** resource inherits from **DirectoryObject**; it's been renamed to **organization** in Microsoft Graph and inherits from **directoryObject**. Here are the property differences:
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
@@ -228,7 +228,7 @@ The Azure AD Graph **CertificateAuthorityInformation** has been renamed to **cer
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
-| **authorityType** | beta&nbsp;-&nbsp;**isRootAuthority**<br> v1.0 &nbsp;-&nbsp;**isRootAuthority** | This property's type has also changed into a Boolean. Previously this property had to be set to either "RootAuthority" or "IntermediateAuthority". Setting the new property to **true** is equivalent to "RootAuthority". |
+| **authorityType** | beta&nbsp;-&nbsp;**isRootAuthority**<br> v1.0 &nbsp;-&nbsp;**isRootAuthority** | This property's is now a Boolean. Previously this property had to be set to either "RootAuthority" or "IntermediateAuthority". Setting the new property to **true** is equivalent to "RootAuthority". |
 | **crlDistributionPoint** | beta&nbsp;-&nbsp;**certificateRevocationListUrl** <br> v1.0&nbsp;-&nbsp;**certificateRevocationListUrl** | |
 | **deltaCrlDistributionPoint** | beta&nbsp;-&nbsp;**deltaCertificateRevocationListUrl** <br> v1.0&nbsp;-&nbsp;**deltaCertificateRevocationListUrl** | |
 | **trustedCertificate** | beta&nbsp;-&nbsp;**certificate** <br> v1.0&nbsp;-&nbsp;**deltaCertificateRevocationListUrl** | |
