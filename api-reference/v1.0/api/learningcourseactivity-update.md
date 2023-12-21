@@ -94,7 +94,7 @@ If unsuccessful, this method returns one of the responses below:
 
 #### Request
 
-The following example shows the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -176,7 +176,7 @@ HTTP/1.1 204 No Content
 
 ### Request
 
-The following example shows the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
