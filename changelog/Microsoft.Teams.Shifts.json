@@ -327,7 +327,23 @@
           "ApiChange": "Property",
           "ChangedApiName": "isStagedForDeletion",
           "ChangeType": "Addition",
-          "Description": "Added the **isStagedForDeletion** property to the [shift](https://learn.microsoft.com/en-us/graph/api/resources/shift?view=graph-rest-beta), [openShift](https://learn.microsoft.com/en-us/graph/api/resources/openShift?view=graph-rest-beta), and [timeOff](https://learn.microsoft.com/en-us/graph/api/resources/timeOff?view=graph-rest-beta) resource.",
+          "Description": "Added the **isStagedForDeletion** property to the [shift](https://learn.microsoft.com/en-us/graph/api/resources/shift?view=graph-rest-beta) resource.",
+          "Target": "shift"
+        },
+        {
+          "Id": "958cb6cc-4eb0-4dec-a19d-7fe3da86b3ec",
+          "ApiChange": "Property",
+          "ChangedApiName": "isStagedForDeletion",
+          "ChangeType": "Addition",
+          "Description": "Added the **isStagedForDeletion** property to the [timeOff](https://learn.microsoft.com/en-us/graph/api/resources/timeOff?view=graph-rest-beta) resource.",
+          "Target": "timeOff"
+        },
+        {
+          "Id": "958cb6cc-4eb0-4dec-a19d-7fe3da86b3ec",
+          "ApiChange": "Property",
+          "ChangedApiName": "isStagedForDeletion",
+          "ChangeType": "Addition",
+          "Description": "Added the **isStagedForDeletion** property to the [openShift](https://learn.microsoft.com/en-us/graph/api/resources/openShift?view=graph-rest-beta) resource.",
           "Target": "openShift"
         },
         {
