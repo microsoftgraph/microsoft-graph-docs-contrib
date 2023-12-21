@@ -79,7 +79,7 @@ If successful, this method returns a `200 OK` response code and a [learningCours
 
 If unsuccessful, this method returns one of the responses below:
 
-|Scenario|HTTP code|Code|Message|Details|
+|Scenario|HTTP code|Code|Message|
 |:---|:---|:---|:---|:---|
 |Method not supported for entity|405|methodNotAllowed|This method isn't supported for this entity type. See the Microsoft Graph documentation for the methods applicable to this entity.|
 |User doesn't have appropriate permission scope|403|Forbidden|Your account doesn't have access to this report or data. Contact your global administrator to request access.|
