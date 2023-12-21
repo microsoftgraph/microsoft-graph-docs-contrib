@@ -133,14 +133,12 @@ These APIs support an [evaluation mode](#evaluation-mode-default-requirements) t
 | Not configured | Evaluation mode capacity is available for download. Beyond that, the API fails with error code `402` (Payment Required). |
 | Configured | Unlimited meeting content is available for download and priced based on per minute of content, as described in the following table. Engineering RPS limits still apply. |
 
-The following table lists the price for use for Teams meeting APIs.
+The following table lists the prices for using Teams meeting APIs, applicable to both beta and v1.0 endpoints.
 
-| APIs | [Seeded capacity](#seeded-capacity) | [Price for use](#payment-and-billing) | Notes |
+| APIs | [Seeded capacity](#seeded-capacity) | [Price for use](#payment-and-billing) from Jan 1, 2024 | [Price for use](#payment-and-billing) before Jan 1, 2024 | Notes |
 |:---------------------------------------------------------------|:----------------|:-------|:------|
-| Teams meeting transcript APIs: <ul><li>[GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content](/graph/api/calltranscript-get#example-2-get-a-calltranscript-content)</li><li>[GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/metadataContent](/graph/api/calltranscript-get#example-4-get-a-calltranscript-metadatacontent)</li></ul>  | None |  $0.024* per minute | The duration is rounded down to nearest minute. |
-| Teams meeting recording APIs: <ul><li>[GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}/content](/graph/api/callrecording-get#example-2-get-callrecording-content)</li></ul>  | None | $0.03* per minute | The duration is rounded down to nearest minute. |
-
-*The price for use is applicable starting October 3, 2023. The price for use is subject to change in the future.
+| Teams meeting recording APIs: <ul><li>[GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}/content](/graph/api/callrecording-get#example-2-get-callrecording-content)</li></ul>  | None | $0.003 per minute | $0.03 per minute | The duration is rounded down to nearest minute. |
+| Teams meeting transcript APIs: <ul><li>[GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content](/graph/api/calltranscript-get#example-2-get-a-calltranscript-content)</li><li>[GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/metadataContent](/graph/api/calltranscript-get#example-4-get-a-calltranscript-metadatacontent)</li></ul>  | None |  $0.0022 per minute | $0.024 per minute | The duration is rounded down to nearest minute. |
 
 
 ## Payment and billing

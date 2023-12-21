@@ -19,6 +19,9 @@ Get a list of the [authenticationEventListener](../resources/authenticationevent
 - [onAuthenticationMethodStartListener](../resources/onauthenticationmethodloadstartlistener.md)
 - [onAttributeCollectionListener](../resources/onattributecollectionlistener.md)
 - [onUserCreateStartListener](../resources/onusercreatestartlistener.md)
+- [onAttributeCollectionStartListener](../resources/onattributecollectionstartlistener.md)
+- [onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md)
+
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
