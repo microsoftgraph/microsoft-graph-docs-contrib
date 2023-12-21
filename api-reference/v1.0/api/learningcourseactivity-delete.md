@@ -51,7 +51,7 @@ If successful, this method returns a `204 No Content` response code.
 
 If unsuccessful, this method returns one of the responses below:
 
-|Scenario|HTTP code|Code|Message|Details|
+|Scenario|HTTP code|Code|Message|
 |:---|:---|:---|:---|:---|
 |Method not supported for entity|405|methodNotAllowed|This method isn't supported for this entity type. See the Microsoft Graph documentation for the methods applicable to this entity.|
 |User doesn't have the appropriate permissions scope|403|Forbidden|Your account doesn't have access to this report or data. Contact your global administrator to request access.|
