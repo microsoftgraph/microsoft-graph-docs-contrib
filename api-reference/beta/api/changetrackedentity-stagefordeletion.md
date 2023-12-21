@@ -1,6 +1,6 @@
 ---
 title: "changeTrackedEntity: stageForDeletion"
-description: "Stage the deletion of a openShift, shift, or timesOff instance in a [schedule](../resources/schedule.md) in draft mode."
+description: "Stage the deletion of an openShift, shift, or timeOff instance in a [schedule](../resources/schedule.md) in draft mode."
 author: "raulfernandes"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Stage the deletion of an [openShift](../resources/openshift.md), [shift](../resources/shift.md), or [timesOff](../resources/timeoff.md) instance in a [schedule](../resources/schedule.md) in draft mode.
+Stage the deletion of an [openShift](../resources/openshift.md), [shift](../resources/shift.md), or [timeOff](../resources/timeoff.md) instance in a [schedule](../resources/schedule.md) in draft mode.
 
 Draft changes are only visible to managers. Team members are not sent notification for draft changes. The deletion is finalized when the schedule is [shared](../api/schedule-share.md).
 
@@ -48,7 +48,7 @@ For a **shift**:
 POST /teams/{teamsId}/schedule/shifts/{shiftId}/stageForDeletion
 ```
 
-For a **timesOff**:
+For a **timeOff**:
 <!-- {
   "blockType": "ignored"
 }
@@ -116,7 +116,7 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "openshift.stagefordeletion",
-  "sampleKeys": ["OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8"]
+  "sampleKeys": ["3d88b7a2-f988-4f4b-bb34-d66df66af126", "OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8"]
 }
 -->
 ``` http
@@ -136,9 +136,9 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 3: Stage the deletion of a timesOff
+### Example 3: Stage the deletion of a timeOff
 
-The following example shows how to stage the deletion of a **timesOff** in a **schedule** in draft mode.
+The following example shows how to stage the deletion of a **timeOff** in a **schedule** in draft mode.
 
 #### Request
 
@@ -147,7 +147,7 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "timeoff.stagefordeletion",
-  "sampleKeys": ["SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8"]
+  "sampleKeys": ["3d88b7a2-f988-4f4b-bb34-d66df66af126", "SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8"]
 }
 -->
 ``` http
