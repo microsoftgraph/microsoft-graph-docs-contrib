@@ -82,7 +82,7 @@ If successful, this method returns a `204 No Content` response code. It does not
 The following example shows a request enabling the modification of scheduling groups and time off reasons by schedule owners.
 <!-- {
   "blockType": "request",
-  "name": "create_shiftsroledefinition_from_"
+  "name": "patch-shiftsRoleDefinitions-example"
 }
 -->
 ``` http
@@ -107,8 +107,7 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "Microsoft.Teams.Shifts.shiftsRoleDefinition"
+  "truncated": false
 }
 -->
 ``` http
@@ -122,7 +121,7 @@ HTTP/1.1 204 No Content
 The following example shows a request disabling all permissions by passing an empty collection as the value for `allowedResourceActions`.
 <!-- {
   "blockType": "request",
-  "name": "create_shiftsroledefinition_from_"
+  "name": "patch-shiftsRoleDefinitions-example2"
 }
 -->
 ``` http
@@ -144,8 +143,7 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "Microsoft.Teams.Shifts.shiftsRoleDefinition"
+  "truncated": false
 }
 -->
 ``` http

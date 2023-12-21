@@ -90,7 +90,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.Teams.Shifts.shiftsRoleDefinition"
+  "@odata.type": "microsoft.graph.shiftsRoleDefinition"
 }
 -->
 ``` http
