@@ -1874,7 +1874,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | - | c0b0103b-c053-4b2e-9973-9f3a544ec9b8 
-| DisplayText | - | Read users' class assignment information without reading any feedback or outcomes 
+| DisplayText | - | Read users' class assignment information without reading any feedback or outcomes.
 | Description | - | Allows the app to read assignment information on behalf of the user without reading any feedback or outcomes. 
 | AdminConsentRequired | - | Yes 
 
@@ -1885,7 +1885,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | 6e0a958b-b7fc-4348-b7c4-a6ab9fd3dd0e | - 
-| DisplayText | Read all class assignment information without reading any feedback or outcomes | - 
+| DisplayText | Read all class assignment information without reading any feedback or outcomes. | - 
 | Description | Allows the app to read all class assignment information for all users without a signed-in user without reading any feedback or outcomes. | - 
 | AdminConsentRequired | Yes | - 
 
@@ -1918,7 +1918,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | - | 2ef770a1-622a-47c4-93ee-28d6adbed3a0 
-| DisplayText | - | Read and write users' class assignment information without impacting or reading any feedback or outcomes 
+| DisplayText | - | Read and write users' class assignment information without impacting or reading any feedback or outcomes.
 | Description | - | Allows the app to read and write assignment information on behalf of the user without affecting or reading any feedback or outcomes.
 | AdminConsentRequired | - | Yes 
 
@@ -1929,7 +1929,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | f431cc63-a2de-48c4-8054-a34bc093af84 | -
-| DisplayText | Create, read, update, and delete all class assignment information without accessing or impacting any feedback or outcomes | - 
+| DisplayText | Create, read, update, and delete all class assignment information without accessing or impacting any feedback or outcomes. | - 
 | Allows the app to read and write assignment information on behalf of the user without affecting or reading any feedback or outcomes. | - 
 | AdminConsentRequired | Yes | - 
 
