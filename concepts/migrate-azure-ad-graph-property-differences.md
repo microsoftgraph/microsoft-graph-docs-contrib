@@ -7,6 +7,7 @@ ms.reviewer: dkershaw
 ms.localizationpriority: medium
 ms.prod: "applications"
 ms.date: 11/11/2022
+#Customer intent: As a developer, I want to to understand how properties differ between Azure AD Graph and Microsoft Graph, so that I can update my code accordingly as I migrate my app from Azure AD Graph to Microsoft Graph.
 ---
 
 # Property differences between Azure AD Graph and Microsoft Graph

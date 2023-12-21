@@ -7,6 +7,7 @@ ms.reviewer: dkershaw
 ms.localizationpriority: medium
 ms.prod: "applications"
 ms.date: 11/11/2022
+#Customer intent: As a developer, what are some of the things I need to consider when migrating my app from Azure AD Graph to Microsoft Graph?
 ---
 
 # Azure AD Graph app migration planning checklist
