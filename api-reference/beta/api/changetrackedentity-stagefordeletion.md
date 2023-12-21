@@ -1,6 +1,6 @@
 ---
 title: "changeTrackedEntity: stageForDeletion"
-description: "Stage the deletion of a shift, openShift or timeOff instance in a schedule in draft mode."
+description: "Stage the deletion of a openShift, shift, or timesOff instance in a [schedule](../resources/schedule.md) in draft mode."
 author: "raulfernandes"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Stage the deletion of a [shift](../resources/shift.md), [openShift](../resources/openshift.md) or [timesOff](../resources/timeoff.md) instance in a [schedule](../resources/schedule.md) in draft mode.
+Stage the deletion of an [openShift](../resources/openshift.md), [shift](../resources/shift.md), or [timesOff](../resources/timeoff.md) instance in a [schedule](../resources/schedule.md) in draft mode.
 
 Draft changes are only visible to managers. Team members are not sent notification for draft changes. The deletion is finalized when the schedule is [shared](../api/schedule-share.md).
 
@@ -30,14 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
-POST /teams/{teamsId}/schedule/shifts/{shiftId}/stageForDeletion
-```
-
+For an **openShift**:
 <!-- {
   "blockType": "ignored"
 }
@@ -46,6 +39,16 @@ POST /teams/{teamsId}/schedule/shifts/{shiftId}/stageForDeletion
 POST /teams/{teamsId}/schedule/openShifts/{openShiftId}/stageForDeletion
 ```
 
+For a **shift**:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /teams/{teamsId}/schedule/shifts/{shiftId}/stageForDeletion
+```
+
+For a **timesOff**:
 <!-- {
   "blockType": "ignored"
 }
@@ -71,19 +74,44 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Request
+### Example 1: Stage the deletion of an openShift
+
+The following example shows how to stage the deletion of an **openShift** in a **schedule** in draft mode.
+
+#### Request
 
 The following example shows a request.
 
 <!-- {
   "blockType": "request",
   "name": "shift.stagefordeletion",
-  "sampleKeys": ["SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8"]
+  "sampleKeys": ["3d88b7a2-f988-4f4b-bb34-d66df66af126", "SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8"]
 }
 -->
 ``` http
 POST https://graph.microsoft.com/beta/teams/3d88b7a2-f988-4f4b-bb34-d66df66af126/schedule/shifts/SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8/stageForDeletion
 ```
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 2: Stage the deletion of a shift
+
+The following example shows how to stage the deletion of a **shift** in a **schedule** in draft mode.
+
+#### Request
+
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -95,6 +123,27 @@ POST https://graph.microsoft.com/beta/teams/3d88b7a2-f988-4f4b-bb34-d66df66af126
 POST https://graph.microsoft.com/beta/teams/3d88b7a2-f988-4f4b-bb34-d66df66af126/schedule/openShifts/OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8/stageForDeletion
 ```
 
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 3: Stage the deletion of a timesOff
+
+The following example shows how to stage the deletion of a **timesOff** in a **schedule** in draft mode.
+
+#### Request
+
+The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "timeoff.stagefordeletion",
@@ -105,7 +154,7 @@ POST https://graph.microsoft.com/beta/teams/3d88b7a2-f988-4f4b-bb34-d66df66af126
 POST https://graph.microsoft.com/beta/teams/3d88b7a2-f988-4f4b-bb34-d66df66af126/schedule/timesOff/SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8/stageForDeletion
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 
