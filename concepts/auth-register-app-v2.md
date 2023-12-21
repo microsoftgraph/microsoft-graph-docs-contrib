@@ -8,6 +8,7 @@ ms.localizationpriority: high
 ms.prod: "applications"
 ms.custom: graphiamtop20
 ms.date: 12/09/2022
+#customer intent: As a developer, I want to register an application with the Microsoft identity platform, so that I can add core identity and access management features to my applications.
 ---
 
 # Register an application with the Microsoft identity platform
