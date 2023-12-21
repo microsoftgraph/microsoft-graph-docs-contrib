@@ -1,6 +1,6 @@
 ---
 title: "team: getOpenShifts"
-description: "Get a list of openShift objects from across all schedules the user has access to."
+description: "Get all openShift objects across all teams a user is a direct member of."
 author: "raulfernandes"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all [openShifts](../resources/openshift.md) across all teams a user is a direct member of.
+Get all [openShift](../resources/openshift.md) objects across all teams a user is a direct member of.
 
 ## Permissions
 
@@ -42,7 +42,7 @@ GET /users/{id | user-principal-name}/joinedTeams/getOpenShifts
 This method supports the `$top` and `$filter` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 > [!NOTE]
-> The `$filter` parameter supports the `sharedOpenShift/startDateTime`, `sharedOpenShift/endDateTime`, and `teamId` properties. It doesn't support the use of the same property more than once in a query. For example, the following query doesn't work: `sharedOpenShift/startDateTime ge 2024-05-09T00:00:00Z and sharedOpenShift/startDateTime le 2024-05-09T23:59:59Z`; however, the following query works: `sharedOpenShift/startDateTime ge 2024-05-09T00:00:00Z and sharedOpenShift/endDateTime le 2024-05-09T23:59:59Z`.
+> The `$filter` parameter supports the **sharedOpenShift/startDateTime**, **sharedOpenShift/endDateTime**, and **teamId** properties. It doesn't support the use of the same property more than once in a query. For example, the following query doesn't work: `sharedOpenShift/startDateTime ge 2024-05-09T00:00:00Z and sharedOpenShift/startDateTime le 2024-05-09T23:59:59Z`; however, the following query works: `sharedOpenShift/startDateTime ge 2024-05-09T00:00:00Z and sharedOpenShift/endDateTime le 2024-05-09T23:59:59Z`.
 
 ## Request headers
 
@@ -52,6 +52,7 @@ This method supports the `$top` and `$filter` [OData query parameters](/graph/qu
 | MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
 ## Request body
+
 Don't supply a request body for this method.
 
 ## Response
@@ -72,7 +73,6 @@ The following example shows a request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/joinedTeams/getOpenShifts
 ```
-
 
 ### Response
 
