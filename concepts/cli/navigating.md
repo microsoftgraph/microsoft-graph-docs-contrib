@@ -9,8 +9,6 @@ author: jasonjoh
 
 The Microsoft Graph API is huge, and it's growing all the time. Therefore, the number of commands in the Microsoft Graph command-line interface (CLI) is also large. Finding the right command for what you want to achieve can be challenging, especially if you're not already familiar with Microsoft Graph. This topic looks at some ways to help find a particular command.
 
-[!INCLUDE [cli-preview](../../includes/cli-preview.md)]
-
 [!INCLUDE [aad-advanced-queries-note](../../includes/aad-advanced-queries-note.md)]
 
 ## Command naming conventions
