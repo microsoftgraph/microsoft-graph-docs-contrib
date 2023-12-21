@@ -74,9 +74,9 @@ In the request body, use @odata.type to specify the type of [learningCourseActiv
 
 If successful, this method returns a `201 Created` response code and a [learningCourseActivity](../resources/learningcourseactivity.md) object of type [learningAssignment](../resources/learningassignment.md) or [learningSelfInitiated](../resources/learningselfinitiatedcourse.md) in the response body.
 
-Below are the error codes returned in case of failure
+If unsuccessful, this method returns one of the responses below:
 
-|Scenario|HTTP Code|Code|Message|Details|
+|Scenario|HTTP code|Code|Message|Details|
 |:---|:---|:---|:---|:---|
 |Forbidden|403|Forbidden|You don't have an adequate service plan for this request.|
 |Bad request|400|badRequest|This provider isn't enabled for the given tenant.|
