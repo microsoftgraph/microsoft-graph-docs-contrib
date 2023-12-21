@@ -9,6 +9,7 @@ ms.prod: "applications"
 zone_pivot_groups: grant-api-permissions
 ms.custom: template-how-to
 ms.date: 07/25/2023
+#Customer intent: As a developer, I want to learn how to grant and revoke API permissions for an app using Microsoft Graph, and bypass the interactive consent prompt available on the Microsoft Entra portal.
 ---
 
 # Grant or revoke API permissions programmatically

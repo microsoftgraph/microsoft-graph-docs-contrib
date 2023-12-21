@@ -7,13 +7,14 @@ ms.reviewer: dkershaw
 ms.localizationpriority: medium
 ms.prod: "applications"
 ms.date: 11/11/2022
+#Customer intent: As a developer, I want to to understand how API methods that differ between Azure AD Graph and Microsoft Graph, so that I can update my code accordingly as I migrate my app from Azure AD Graph to Microsoft Graph.
 ---
 
 # Method differences between Azure AD Graph and Microsoft Graph
 
 This article is part of *step 1: review API differences* of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).
 
-A handful of Azure Active Directory (Azure AD) Graph methods have also changed.  If a method is **not** shown in this list, it is already available in the [v1.0 version](/graph/api/overview) of Microsoft Graph, with exactly the same name as in Azure AD Graph.
+A handful of Azure Active Directory (Azure AD) Graph methods have changed.  If a method is **not** shown in this list, it's already available in the [v1.0 version](/graph/api/overview) of Microsoft Graph, with exactly the same name as in Azure AD Graph.
 
 |Azure AD Graph <br>(v1.6) method |Microsoft Graph<br>(resource/method)|Comments|
 |---|---|---|
