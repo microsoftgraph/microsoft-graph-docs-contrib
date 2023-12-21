@@ -220,13 +220,13 @@ The following is an example of the response when `Prefer: include-unknown-enum-m
 HTTP/1.1 200 OK
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#educationSubmission",
+    "@odata.context": "https://canary.graph.microsoft.com/testprodv1.0eduasg_local_sub-weburl/$metadata#educationSubmission",
     "@odata.type": "#microsoft.graph.educationSubmission",
-    "status": "returned",
-    "submittedDateTime": "2023-12-14T17:00:07.4647384Z",
-    "unsubmittedDateTime": null,
-    "returnedDateTime": "2023-12-18T12:54:37.9204966Z",
-    "reassignedDateTime": "2023-12-18T12:54:37.9204966Z",
+    "status": "reassigned",
+    "submittedDateTime": "2023-12-20T16:35:56.8904304Z",
+    "unsubmittedDateTime": "2023-12-18T13:07:52.9958996Z",
+    "returnedDateTime": "2023-12-18T13:03:04.3785597Z",
+    "reassignedDateTime": "2023-12-20T16:37:51.4559008Z",
     "resourcesFolderUrl": null,
     "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2237d99af7-cfc5-4e3b-8566-f7d40e4a2070%5C%22,%5C%22assignmentIds%5C%22%3A%5B%5C%224cc928e3-666c-4360-8688-a15776ce53b4%5C%22%5D,%5C%22submissionId%5C%22%3A%5C%225883eaeb-9760-f8e0-6832-a122c4f020be%5C%22%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22speed-grader%5C%22,%5C%22appId%5C%22%3A%5C%22de8bc8b5-d9f9-48b1-a8ad-b748da725064%5C%22%7D%22,%22channelId%22%3Anull%7D",
     "id": "5883eaeb-9760-f8e0-6832-a122c4f020be",
@@ -246,7 +246,7 @@ HTTP/1.1 200 OK
         "application": null,
         "device": null,
         "user": {
-            "id": null,
+            "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
             "displayName": null
         }
     },
