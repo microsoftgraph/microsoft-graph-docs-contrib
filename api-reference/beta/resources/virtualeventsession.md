@@ -34,6 +34,7 @@ Reference base type [onlineMeeting](../resources/onlinemeeting.md).
 |:---|:---|:---|
 |attendanceReports|[meetingAttendanceReport](../resources/meetingattendancereport.md) collection|Attendance reports of this virtual event session. Inherited from [onlineMeeting](../resources/onlinemeeting.md).|
 |registrations|[virtualEventRegistration](../resources/meetingattendancereport.md) collection|Registration records of this virtual event session.|
+|townhalls|[virtualEventTownhall](../resources/virtualeventtownhall.md) collection|Virtual event session for townhalls.|
 
 ## JSON representation
 
