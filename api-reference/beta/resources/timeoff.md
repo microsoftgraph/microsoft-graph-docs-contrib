@@ -1,6 +1,6 @@
 ---
 title: "timeOff resource type"
-description: "Represents a unit of non-work in a schedule."
+description: "Represents a unit of nonwork in a schedule."
 author: "aaku"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a unit of non-work in a [schedule](../resources/schedule.md).
+Represents a unit of nonwork in a [schedule](../resources/schedule.md).
 
 Inherits from [changeTrackedEntity](../resources/changetrackedentity.md).
 
@@ -33,12 +33,12 @@ Inherits from [changeTrackedEntity](../resources/changetrackedentity.md).
 | Property             | Type                          | Description                 |
 |:---------------------|:------------------------------|:----------------------------|
 | createdBy             | [identitySet](identityset.md)     | Identity of the user who created the **timeOff** object. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md). |
-| createdDateTime      | DateTimeOffset                | The timestamp at which this **timeOff** was first created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md). |
-| draftTimeOff         | [timeOffItem](timeoffitem.md) | Draft changes in the **timeOff** are only visible to managers until they are [shared](../api/schedule-share.md).|
+| createdDateTime      | DateTimeOffset                | The date and time when this **timeOff** was first created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md). |
+| draftTimeOff         | [timeOffItem](timeoffitem.md) | Draft changes in the **timeOff** are only visible to managers until they're [shared](../api/schedule-share.md).|
 | id                   | String                        | The unique identifier for the **timeOff**. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md). |
 | isStagedForDeletion   | Boolean                      | The **timeOff** is marked for deletion, a process that is finalized when the schedule is [shared](../api/schedule-share.md).     |
 | lastModifiedBy       | [identitySet](identityset.md) | The identity of the user who last updated this **timeOff**. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md). |
-| lastModifiedDateTime | DateTimeOffset                | The timestamp at which this **timeOff** was last updated. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md). |
+| lastModifiedDateTime | DateTimeOffset                | The date and time when this **timeOff** was last updated. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md). |
 | sharedTimeOff        | [timeOffItem](timeoffitem.md) | The shared version of this **timeOff** that is viewable by both employees and managers. |
 | userId               | String                        | ID of the user assigned to the **timeOff**. Required. |
 
