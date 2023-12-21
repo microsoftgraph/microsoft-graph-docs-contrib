@@ -1,5 +1,5 @@
 ---
-title: "Error Codes in the learningCourseActivity API"
+title: "Error codes in the learningCourseActivity API"
 description: "This article describes error codes returned by the learningCourseActivity API in Microsoft Graph whenever a request that is sent through the API fails."
 author: "jprasad"
 ms.localizationpriority: medium
