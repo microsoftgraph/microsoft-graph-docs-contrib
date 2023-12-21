@@ -96,7 +96,7 @@ If unsuccessful, this method returns one of the responses below:
 The following example shows how to create a [learningAssignment](../resources/learningassignment.md) activity.
 
 #### Request
-The following example shows the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -206,7 +206,7 @@ The following example creates a [learningSelfInitiated](../resources/learningsel
 
 #### Request
 
-The following example shows the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
