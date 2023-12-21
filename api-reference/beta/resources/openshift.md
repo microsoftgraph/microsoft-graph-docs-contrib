@@ -26,7 +26,7 @@ Inherits from [changeTrackedEntity](../resources/changetrackedentity.md).
 | [Get openShift](../api/openshift-get.md)                                | [openShift](openshift.md)             | Get an **openShift** by ID.                                                                       |
 | [Update openShift](../api/openshift-update.md)                          | [openShift](openshift.md)             | Update an **openShift**.                                                                          |
 | [Delete openShift](../api/openshift-delete.md)                          | None                                  | Delete an **openShift** from the schedule.                                                        |
-| [Get open shifts across all joined teams](../api/team-getopenshifts.md) | [openShift](openshift.md) collection  | Get all **openShifts** across all teams a user is a direct member of.                             |
+| [Get open shifts across all joined teams](../api/team-getopenshifts.md) | [openShift](openshift.md) collection  | Get all **openShift** objects across all teams a user is a direct member of. |
 | [Stage for deletion](../api/changetrackedentity-stagefordeletion.md)    | None                                  | Stage the deletion of an [openShift](../resources/openshift.md) instance in a [schedule](../resources/schedule.md) in draft mode.    |
 
 ## Properties
