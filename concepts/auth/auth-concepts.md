@@ -7,7 +7,8 @@ ms.reviewer: jackson.woods
 ms.localizationpriority: high
 ms.prod: "applications"
 ms.custom: graphiamtop20
-ms.date: 05/25/2023
+ms.date: 12/21/2023
+#Customer intent: As a developer, I want to understand how to authenticate and authorize my app to call Microsoft Graph.
 ---
 
 # Authentication and authorization basics
