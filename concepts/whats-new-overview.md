@@ -19,13 +19,17 @@ In addition, find out about new documentation and learning resources for release
 ### Employee experience | Employee engagement
 Create and get a Viva Engage community that is a central place for conversations, files, events, and updates for people sharing a common interest or goal. Use the Viva Engage API for the following scenarios:
 
-- [Create a community](/graph/api/employeeexperience-post-communities)
-- [Poll for community creation status](/graph/api/engagementasyncoperation-get)
-- [Get a community](/graph/api/community-get)
+- [Create a community](/graph/api/employeeexperience-post-communities?view=graph-rest-beta&preserve-view=true)
+- [Poll for community creation status](/graph/api/engagementasyncoperation-get?view=graph-rest-beta&preserve-view=true)
+- [Get a community](/graph/api/community-get?view=graph-rest-beta&preserve-view=true)
 
 ### Teams
 
 Pricing update for the Teams meeting APIs starting January 1, 2024. For more information, see [Payment models and licensing requirements for Microsoft Teams APIs](/graph/teams-licenses#payment-requirements-for-meeting-apis).
+
+### Teamwork and communications | Shift management
+- Get all [openShift](../resources/openshift.md) objects across all teams a user is a direct member of, removing the need to specify a team ID in the request. For more information, see [team: getOpenShifts](/graph/api/team-getopenshifts?view=graph-rest-beta&preserve-view=true).
+- [Stage the deletion](/graph/api/changetrackedentity-stagefordeletion?view=graph-rest-beta&preserve-view=true) of an [openShift](../resources/openshift.md), [shift](../resources/shift.md), or [timeOff](../resources/timeoff.md) instance in a [schedule](../resources/schedule.md) in draft mode.
 
 ## November 2023: New and generally available
 
@@ -56,7 +60,7 @@ Delete the [profile photo](/graph/api/resources/profilephoto) of a signed-in use
 ## November 2023: New in preview only
 
 ### Device and app management | Cloud PC
-[Get the access state of a Frontline Cloud PC](/graph/api/cloudPC-getFrontlineCloudPcAccessState?view=graph-rest-beta&preserve-view=true) to determine whether the Frontline Cloud PC is accessible to a user. _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=cc0c0a79-a691-485d-b47c-8b0ee543ae6c)_.
+[Get the access state of a Frontline Cloud PC](/graph/api/cloudPC-getfrontlinecloudpcaccessstate?view=graph-rest-beta&preserve-view=true) to determine whether the Frontline Cloud PC is accessible to a user. _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=cc0c0a79-a691-485d-b47c-8b0ee543ae6c)_.
 
 ### Reports | Identity and access reports
 As a [best practice recommended for a Microsoft Entra tenant](/graph/api/resources/recommendation?view=graph-rest-beta&preserve-view=true), [get](/graph/api/recommendation-tenantsecurescores?view=graph-rest-beta&preserve-view=true) historical [Secure Score data for the tenant](/graph/api/resources/tenantsecurescore?view=graph-rest-beta&preserve-view=true). _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=514fea21-1d51-46d0-847e-9c2cce1d6c58)_.
