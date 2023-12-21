@@ -26,24 +26,25 @@ Inherits from [changeTrackedEntity](../resources/changetrackedentity.md).
 | [Get timeOff](../api/timeoff-get.md)               | [timeOff](timeoff.md)            | Get a **timeOff** object by ID.                       |
 | [Replace timeOff](../api/timeoff-put.md)           | [timeOff](timeoff.md)            | Replace a **timeOff** object.                         |
 | [Delete timeOff](../api/timeoff-delete.md)         | None                             | Delete a **timeOff** object from the schedule.        |
-| [Stage for deletion](../api/changetrackedentity-stagefordeletion.md)| None    |Stage the deletion of a **timeOff** instance in a [schedule](schedule.md) in draft mode.|
+| [Stage for deletion](../api/changetrackedentity-stagefordeletion.md)| None    |Stage the deletion of a [timeOff](timeoff.md) in a [schedule](schedule.md) in draft mode.|
 
 ## Properties
 
 | Property             | Type                          | Description                 |
 |:---------------------|:------------------------------|:----------------------------|
-| createdDateTime      | DateTimeOffset                | The time stamp at which this **timeOff** was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
+| createdBy             | [identitySet](identityset.md)     | Identity of the user who created the **timeOff** object. Inherited from [changeTrackedEntity](changetrackedentity.md). |
+| createdDateTime      | DateTimeOffset                | The timestamp at which this **timeOff** was first created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [changeTrackedEntity](changetrackedentity.md). |
 | draftTimeOff         | [timeOffItem](timeoffitem.md) | Draft changes in the **timeOff** are only visible to managers until they are [shared](../api/schedule-share.md).|
-| id                   | String                        | ID of the **timeOff**. |
+| id                   | String                        | The unique identifier for the **timeOff**. |
 | isStagedForDeletion   | Boolean                      | The **timeOff** is marked for deletion, a process that is finalized when the schedule is [shared](../api/schedule-share.md).     |
-| lastModifiedBy       | [identitySet](identityset.md) | The identity that last updated this **timeOff**. |
-| lastModifiedDateTime | DateTimeOffset                | The time stamp at which this **timeOff** was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.  |
+| lastModifiedBy       | [identitySet](identityset.md) | The identity of the user who last updated this **timeOff**. Inherited from [changeTrackedEntity](changetrackedentity.md). |
+| lastModifiedDateTime | DateTimeOffset                | The timestamp at which this **timeOff** was last updated. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [changeTrackedEntity](changetrackedentity.md). |
 | sharedTimeOff        | [timeOffItem](timeoffitem.md) | The shared version of this **timeOff** that is viewable by both employees and managers. |
 | userId               | String                        | ID of the user assigned to the **timeOff**. Required. |
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -55,6 +56,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.timeOff",
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "draftTimeOff": {"@odata.type": "microsoft.graph.timeOffItem"},
   "id": "String (identifier)",
