@@ -1,0 +1,46 @@
+{
+  "changelog": [
+    {
+    "ChangeList": [
+      {
+      "Id": "95da9b0a-04da-4dc5-be44-eed390298791",
+      "ApiChange": "Resource",
+      "ChangedApiName": "auditLogQuery",
+      "ChangeType": "Addition",
+      "Description": "Added the [auditLogQuery](https://learn.microsoft.com/en-us/graph/api/resources/security-auditlogquery?view=graph-rest-beta) resource and supported methods to the microsoft.graph.security subnamespace.",
+      "Target": "auditLogQuery"
+      },
+      {
+      "Id": "95da9b0a-04da-4dc5-be44-eed390298791",
+      "ApiChange": "Resource",
+      "ChangedApiName": "auditLogRecord",
+      "ChangeType": "Addition",
+      "Description": "Added the [auditLogRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-auditlogrecord?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
+      "Target": "auditLogRecord"
+      },
+      {
+      "Id": "95da9b0a-04da-4dc5-be44-eed390298791",
+      "ApiChange": "Resource",
+      "ChangedApiName": "auditData",
+      "ChangeType": "Addition",
+      "Description": "Added the [auditData](https://learn.microsoft.com/en-us/graph/api/resources/security-auditdata?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
+      "Target": "auditData"
+      },
+      {
+      "Id": "95da9b0a-04da-4dc5-be44-eed390298791",
+      "ApiChange": "Resource",
+      "ChangedApiName": "defaultAuditData",
+      "ChangeType": "Addition",
+      "Description": "Added the [defaultAuditData](https://learn.microsoft.com/en-us/graph/api/resources/security-defaultauditdata?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
+      "Target": "defaultAuditData"
+      }
+      ],
+      "Id": "b4937176-8221-4bc7-83a4-6e84c4ee02d1",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-12-22T15:48:54.3649155Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Security"
+    }
+  ]
+  }
