@@ -4,7 +4,7 @@
       "ChangeList": [
         {
           "Id": "5ce5e1de-e07b-4994-9098-329cab21b268",
-          "ApiChange": "Relationship",
+          "ApiChange": "Resource",
           "ChangedApiName": "passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration",
           "ChangeType": "Removal",
           "Description": "Removed the previously deprecated and retired **passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration** resource and its associated methods. Please use the [microsoftAuthenticatorAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethodconfiguration?view=graph-rest-beta) resource and its associated methods instead.",
