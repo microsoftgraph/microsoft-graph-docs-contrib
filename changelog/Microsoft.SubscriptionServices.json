@@ -7,7 +7,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "VirtualEvent.Read",
           "ChangeType": "Addition",
-          "Description": "Added support for the delegated permission `VirtualEvent.Read` to the following operations of the [subscription](https:/learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta) resource: [POST](https:/learn.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta), [GET](https:/learn.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-beta), [UPDATE](https:/learn.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-beta), and [DELETE](https:/learn.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-beta).",
+          "Description": "Added support for the delegated permission `VirtualEvent.Read` to the following operations of the [subscription](https:/learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta) resource: [CREATE](https:/learn.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta), [GET](https:/learn.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-beta), [UPDATE](https:/learn.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-beta), and [DELETE](https:/learn.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-beta).",
           "Target": "subscription"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "VirtualEvent.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `VirtualEvent.Read.All` to the following operations of the [subscription](https:/learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta) resource: [POST](https:/learn.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta), [GET](https:/learn.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-beta), [UPDATE](https:/learn.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-beta), and [DELETE](https:/learn.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-beta).",
+          "Description": "Added support for the application permission `VirtualEvent.Read.All` to the following operations of the [subscription](https:/learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta) resource: [CREATE](https:/learn.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta), [GET](https:/learn.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-beta), [UPDATE](https:/learn.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-beta), and [DELETE](https:/learn.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-beta).",
           "Target": "subscription"
         },
       ],
@@ -33,7 +33,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "VirtualEvent.Read",
           "ChangeType": "Addition",
-          "Description": "Added support for the delegated permission `VirtualEvent.Read` to the following operations of the [subscription](https:/learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta) resource: [POST](https:/learn.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-1.0), [GET](https:/learn.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-1.0), [UPDATE](https:/learn.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-1.0), and [DELETE](https:/learn.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-1.0).",
+          "Description": "Added support for the delegated permission `VirtualEvent.Read` to the following operations of the [subscription](https:/learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta) resource: [CREATE](https:/learn.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-1.0), [GET](https:/learn.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-1.0), [UPDATE](https:/learn.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-1.0), and [DELETE](https:/learn.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-1.0).",
           "Target": "subscription"
         },
         {
@@ -41,7 +41,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "VirtualEvent.Read.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `VirtualEvent.Read.All` to the following operations of the [subscription](https:/learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta) resource: [POST](https:/learn.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-1.0), [GET](https:/learn.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-1.0), [UPDATE](https:/learn.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-1.0), and [DELETE](https:/learn.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-1.0).",
+          "Description": "Added support for the application permission `VirtualEvent.Read.All` to the following operations of the [subscription](https:/learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta) resource: [CREATE](https:/learn.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-1.0), [GET](https:/learn.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-1.0), [UPDATE](https:/learn.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-1.0), and [DELETE](https:/learn.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-1.0).",
           "Target": "subscription"
         },
       ],
