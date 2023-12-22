@@ -7,6 +7,7 @@ ms.reviewer: dkershaw
 ms.localizationpriority: medium
 ms.prod: "applications"
 ms.date: 11/11/2022
+#Customer intent: As a developer migrating apps to Microsoft Graph, I want to understand some best practices for confidently deploying changes to my app, so that I can ensure a smooth transition from Azure AD Graph to Microsoft Graph.
 ---
 
 # Deploy, test, and extend
