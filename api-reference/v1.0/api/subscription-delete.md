@@ -84,7 +84,7 @@ Subscriptions on **presence** subscriptions require [encryption](/graph/webhooks
 
 ### virtualEventWebinar
 
-Subscriptions on virtual events support only basic notifications and are limited to a few entities of a virtual event. For more information on the supported subscription types, see [Get change notifications for Microsoft Teams virtual event updates](/graph/changenotifications-for-virtual-event).
+Subscriptions on virtual events support only basic notifications and are limited to a few entities of a virtual event. For more information on the supported subscription types, see [Get change notifications for Microsoft Teams virtual event updates](/graph/changenotifications-for-virtualevent).
 
 ## HTTP request
 
