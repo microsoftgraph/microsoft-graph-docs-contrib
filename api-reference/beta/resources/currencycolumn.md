@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: The currencyColumn on a columnDefinition resource indicates that the column's values represent currency.
 ms.date: 09/11/2017
 title: CurrencyColumn

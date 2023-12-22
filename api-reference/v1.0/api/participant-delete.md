@@ -11,14 +11,13 @@ doc_type: apiPageType
 
 Delete a specific participant in a call. In some situations, it is appropriate for an application to remove a participant from an active call. This action can be done before or after the participant answers the call. When an active caller is removed, they are immediately dropped from the call with no pre- or post-removal notification. When an invited participant is removed, any outstanding add participant request is canceled. 
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not Supported                               |
-| Delegated (personal Microsoft account) | Not Supported                               |
-| Application                            | Calls.JoinGroupCallsasGuest.All or Calls.JoinGroupCalls.All |
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "participant_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/participant-delete-permissions.md)]
 
 Tenant-level application meeting configuration is required to allow an application to call this API. The tenant admin should call the following cmdlet on the tenant remote PowerShell to grant the permission to the application to call this API. For more information, see [Set-CsApplicationMeetingConfiguration](https://github.com/MicrosoftDocs/office-docs-powershell/blob/master/skype/skype-ps/skype/Set-CsApplicationMeetingConfiguration.md).
 ```
@@ -37,10 +36,10 @@ DELETE /communications/calls/{id}/participants/{id}
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
@@ -55,11 +54,15 @@ The following example shows the request.
   "name": "delete-participant_active"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/communications/calls/{id}/participants/{id}
+DELETE https://graph.microsoft.com/v1.0/communications/calls/112f7296-5fa4-42ca-bae8-6a692b15d4b8/participants/a7ebfb2d-871e-419c-87af-27290b22e8db
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-participant-active-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-participant-active-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -80,6 +83,10 @@ DELETE https://graph.microsoft.com/v1.0/communications/calls/{id}/participants/{
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-participant-active-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-participant-active-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -110,6 +117,7 @@ HTTP/1.1 204 No Content
 
 #### Invite a participant to an existing call
 
+> **Note:** Provide a value for the `participantId` member of the [invitationParticipantInfo](../resources/invitationparticipantinfo.md) so that you can use it to cancel the invitation later.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -117,7 +125,7 @@ HTTP/1.1 204 No Content
   "name": "participant-invite-nonactive-participant"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/communications/calls/{id}/participants/invite
+POST https://graph.microsoft.com/v1.0/communications/calls/112f7296-5fa4-42ca-bae8-6a692b15d4b8/participants/invite
 Content-Type: application/json
 Content-Length: 464
 
@@ -125,7 +133,6 @@ Content-Length: 464
   "participants": [
     {
       "@odata.type": "#microsoft.graph.invitationParticipantInfo",
-      "replacesCallId": "a7ebfb2d-871e-419c-87af-27290b22e8db",
       "identity": {
         "@odata.type": "#microsoft.graph.identitySet",
         "user": {
@@ -133,7 +140,8 @@ Content-Length: 464
           "id": "278405a3-f568-4b3e-b684-009193463064",
           "identityProvider": "AAD"
         }
-      }
+      },
+      "participantId": "a7ebfb2d-871e-419c-87af-27290b22e8db"
     }
   ],
   "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f"
@@ -142,6 +150,10 @@ Content-Length: 464
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/participant-invite-nonactive-participant-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/participant-invite-nonactive-participant-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -162,6 +174,10 @@ Content-Length: 464
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/participant-invite-nonactive-participant-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/participant-invite-nonactive-participant-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -189,7 +205,7 @@ Content-Type: application/json
     {
       "endpointType": null,
       "id": null,
-      "replacesCallId": "a7ebfb2d-871e-419c-87af-27290b22e8db",
+      "participantId": "a7ebfb2d-871e-419c-87af-27290b22e8db",
       "identity": {
         "user": {
           "id": "278405a3-f568-4b3e-b684-009193463064",
@@ -213,11 +229,15 @@ Content-Type: application/json
   "name": "delete-participant_before-added-to-roster"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/communications/calls/{id}/participants/{id}
+DELETE https://graph.microsoft.com/v1.0/communications/calls/112f7296-5fa4-42ca-bae8-6a692b15d4b8/participants/a7ebfb2d-871e-419c-87af-27290b22e8db
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-participant-before-added-to-roster-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-participant-before-added-to-roster-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -238,6 +258,10 @@ DELETE https://graph.microsoft.com/v1.0/communications/calls/{id}/participants/{
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-participant-before-added-to-roster-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-participant-before-added-to-roster-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

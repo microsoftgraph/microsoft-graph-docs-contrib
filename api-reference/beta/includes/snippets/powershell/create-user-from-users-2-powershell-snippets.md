@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Users
+Import-Module Microsoft.Graph.Beta.Users
 
 $params = @{
 	accountEnabled = $true
@@ -17,6 +17,6 @@ $params = @{
 	}
 }
 
-New-MgUser -BodyParameter $params
+New-MgBetaUser -BodyParameter $params
 
 ```

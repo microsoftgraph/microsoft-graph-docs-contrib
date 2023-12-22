@@ -13,15 +13,14 @@ Namespace: microsoft.graph
 
 Decline a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) object.
 
+>**Note:** Only the recipient of the request can decline a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md).
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Schedule.ReadWrite.All, Group.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Schedule.ReadWrite.All                      |
+<!-- { "blockType": "permissions", "name": "swapshiftschangerequest_decline" } -->
+[!INCLUDE [permissions-table](../includes/permissions/swapshiftschangerequest-decline-permissions.md)]
 
 > **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
 
@@ -39,6 +38,7 @@ POST /teams/{teamId}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId
 |:--------------|:--------------|
 | Authorization | Bearer {token}. Required. |
 | Content-type | application/json. Required. |
+| MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
 ## Request body
 
@@ -50,7 +50,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code. It does not return anything in the response body.
+If successful, this method returns a `200 OK` response code. It doesn't return anything in the response body.
 
 ## Examples
 
@@ -88,7 +88,7 @@ Content-type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -107,4 +107,3 @@ HTTP/1.1 204 NO CONTENT
   "section": "documentation",
   "tocPath": ""
 }-->
-

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -21,7 +21,7 @@ requestBody.SetDisplayName(&displayName)
 type := graphmodels.WORK_EMAILTYPE 
 requestBody.SetType(&type) 
 
-result, err := graphClient.Users().ByUserId("user-id").Profile().Emails().ByEmailId("itemEmail-id").Patch(context.Background(), requestBody, nil)
+emails, err := graphClient.Users().ByUserId("user-id").Profile().Emails().ByItemEmailId("itemEmail-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

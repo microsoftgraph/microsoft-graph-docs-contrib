@@ -18,7 +18,7 @@ Represents an error that occurred during the synchronization process.
 ## Properties
 
 <!-- Add descriptions for the properties. Fill in the examples. -->
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |code|String| The error code. For example, `AzureDirectoryB2BManagementPolicyCheckFailure`. |
 |message|String| The error message. For example, `Policy permitting auto-redemption of invitations not configured`.  |
@@ -40,7 +40,7 @@ The following is a JSON representation of the resource.
 {
   "code": "String",
   "message": "String",
-  "tenantActionable": true
+  "tenantActionable": "Boolean"
 }
 
 ```

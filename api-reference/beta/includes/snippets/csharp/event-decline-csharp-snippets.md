@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.Me.Events.Item.Decline.DeclinePostRequestBody
+// Dependencies
+using Microsoft.Graph.Beta.Me.Events.Item.Decline;
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new DeclinePostRequestBody
 {
 	Comment = "I won't be able to make this week. How about next week?",
 	SendResponse = true,
@@ -24,6 +28,8 @@ var requestBody = new Microsoft.Graph.Beta.Me.Events.Item.Decline.DeclinePostReq
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Me.Events["{event-id}"].Decline.PostAsync(requestBody);
 
 

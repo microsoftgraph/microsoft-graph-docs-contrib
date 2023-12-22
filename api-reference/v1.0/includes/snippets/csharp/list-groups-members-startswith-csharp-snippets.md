@@ -4,12 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Groups["{group-id}"].Members.GetAsync((requestConfiguration) =>
 {
 	requestConfiguration.QueryParameters.Count = true;
-	requestConfiguration.QueryParameters.Filter = "startswith(displayName,%20'a')";
+	requestConfiguration.QueryParameters.Filter = "startswith(displayName, 'a')";
 	requestConfiguration.Headers.Add("ConsistencyLevel", "eventual");
 });
 

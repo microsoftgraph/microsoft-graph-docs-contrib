@@ -30,14 +30,14 @@ Represents a group of functionalities provided by the Privileged Identity Manage
 |:---------------|:---------------------------------------------|:----------|
 |resources       |[governanceResource](../resources/governanceresource.md) collection            |A collection of resources for the provider.|
 |roleAssignments |[governanceRoleAssignment](../resources/governanceroleassignment.md) collection|A collection of role assignments for the provider.|
-|roleDefinitions |[governanceRoleDefinition](../resources/governanceroledefinition.md) collection|A collection of role defintions for the provider.|
+|roleDefinitions |[governanceRoleDefinition](../resources/governanceroledefinition.md) collection|A collection of role definitions for the provider.|
 |roleAssignmentRequests |[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) collection|A collection of role assignment requests for the provider.|
 |roleSettings |[governanceRoleSetting](../resources/governancerolesetting.md) collection|A collection of role settings for the provider.|
 
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

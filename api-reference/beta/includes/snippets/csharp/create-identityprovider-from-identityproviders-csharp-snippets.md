@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
+
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
 var requestBody = new IdentityProvider
 {
@@ -14,6 +17,8 @@ var requestBody = new IdentityProvider
 	ClientId = "56433757-cadd-4135-8431-2c9e3fd68ae8",
 	ClientSecret = "000000000000",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.IdentityProviders.PostAsync(requestBody);
 
 

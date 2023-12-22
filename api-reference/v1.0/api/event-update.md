@@ -14,6 +14,9 @@ Namespace: microsoft.graph
 Update the properties of the [event](../resources/event.md) object.
 
 <!-- markdownlint-disable MD001 -->
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ### Notes for updating specific properties
 
 Note the following behaviors or recommendations when updating the corresponding properties:
@@ -33,7 +36,7 @@ Note the following behaviors or recommendations when updating the corresponding 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:------------------------------------|
 | Delegated (work or school account)     | Calendars.ReadWrite                 |
@@ -140,6 +143,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-event-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-event-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-event-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -158,6 +165,10 @@ Content-type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/update-event-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-event-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

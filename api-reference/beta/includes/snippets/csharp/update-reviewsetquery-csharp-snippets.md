@@ -4,12 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.Models.Ediscovery.ReviewSetQuery
+// Dependencies
+using Microsoft.Graph.Beta.Models.Ediscovery;
+
+var requestBody = new ReviewSetQuery
 {
 	DisplayName = "My Query 1 - Renamed",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Compliance.Ediscovery.Cases["{case-id}"].ReviewSets["{reviewSet-id}"].Queries["{reviewSetQuery-id}"].PatchAsync(requestBody);
 
 

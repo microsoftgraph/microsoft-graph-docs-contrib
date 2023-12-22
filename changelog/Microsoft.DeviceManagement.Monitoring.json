@@ -1,6 +1,96 @@
 {
     "changelog": [
         {
+          "ChangeList": [
+            {
+              "Id": "931b4c70-9941-46b8-8afd-59138523c03e",
+              "ApiChange": "Property",
+              "ChangedApiName": "receivers",
+              "ChangeType": "Deletion",
+              "Description": "Removed the **receivers** property from the [notificationChannel](https://learn.microsoft.com/en-us/graph/api/resources/deviceManagement-notificationChannel?view=graph-rest-beta) resource. Going forward, use the **notificationReceivers** property instead.",
+              "Target": "notificationChannel"
+            }
+          ],
+          "Id": "931b4c70-9941-46b8-8afd-59138523c03e",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2023-10-09T10:40:03.4590295Z",
+          "WorkloadArea": "Device and app management",
+          "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "bb31a0d7-b8c1-a268-b18d-c19ccf68f9d2",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "ruleCondition",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [ruleCondition](https://learn.microsoft.com/graph/api/resources/devicemanagement-rulecondition?view=graph-rest-beta) resource type",
+                    "Target": "ruleCondition"
+                },
+                {
+                    "Id": "bb31a0d7-b8c1-a268-b18d-c19ccf68f9d2",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "conditionCategory",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **conditionCategory** enumeration type",
+                    "Target": "conditionCategory"
+                    
+                },
+                {
+                    "Id": "bb31a0d7-b8c1-a268-b18d-c19ccf68f9d2",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "relationshipType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **relationshipType** enumeration type",
+                    "Target": "relationshipType"
+                    
+                },
+                {
+                    "Id": "bb31a0d7-b8c1-a268-b18d-c19ccf68f9d2",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "conditions",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **conditions** property to the [alertRule](https://learn.microsoft.com/graph/api/resources/devicemanagement-alertrule?view=graph-rest-beta) resource type and supported methods.",
+                    "Target": "relationshipType"
+                    
+                },
+                {
+                    "Id": "bb31a0d7-b8c1-a268-b18d-c19ccf68f9d2",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "cloudPcInaccessibleScenario",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `cloudPcInaccessibleScenario` member to the **alertRuleTemplate** enumeration.",
+                    "Target": "alertRuleTemplate"
+                    
+                }
+            ],
+            "Id": "bb31a0d7-b8c1-a268-b18d-c19ccf68f9d2",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-11-13T06:35:09.9640775Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "b023fd62-6131-49c4-bd7d-12b3f84e2317",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "cloudPcInGracePeriodScenario",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `cloudPcInGracePeriodScenario` member to the **alertRuleTemplate** enumeration.",
+                    "Target": "alertRuleTemplate"
+                }
+            ],
+            "Id": "b023fd62-6131-49c4-bd7d-12b3f84e2317",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-08-02T06:35:09.9640775Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
             "ChangeList": [
                 {
                     "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
@@ -119,7 +209,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2022-10-11T06:35:09.9640775Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         }
     ]

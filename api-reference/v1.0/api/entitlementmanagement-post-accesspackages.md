@@ -14,15 +14,14 @@ Create a new [accessPackage](../resources/accesspackage.md) object.
 
 The access package will be added to an existing [accessPackageCatalog](../resources/accesspackagecatalog.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | EntitlementManagement.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | EntitlementManagement.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "entitlementmanagement_post_accesspackages" } -->
+[!INCLUDE [permissions-table](../includes/permissions/entitlementmanagement-post-accesspackages-permissions.md)]
 
 ## HTTP request
 
@@ -48,10 +47,10 @@ You can specify the following properties when creating an **accessPackage**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name of the access package.|
-|description|String|The description of the access package.|
-|isHidden|Boolean|Whether the access package is hidden from the requestor.|
-
+|catalog|[accessPackageCatalog](../resources/accesspackagecatalog.md)| Required. The catalog that's linked to this access package. Only the **id** property is required.|
+|displayName|String|Required. The display name of the access package.|
+|description|String|Optional. The description of the access package.|
+|isHidden|Boolean|Optional. Whether the access package is hidden from the requestor.|
 
 
 ## Response
@@ -86,6 +85,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackage-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-accesspackage-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-accesspackage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -104,6 +107,10 @@ Content-Type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-accesspackage-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-accesspackage-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

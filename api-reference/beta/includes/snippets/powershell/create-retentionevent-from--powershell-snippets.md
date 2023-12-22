@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Security
+Import-Module Microsoft.Graph.Beta.Security
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.security.retentionEvent"
@@ -30,6 +30,6 @@ $params = @{
 	lastStatusUpdateDateTime = [System.DateTime]::Parse("String (timestamp)")
 }
 
-New-MgSecurityTriggerRetentionEvent -BodyParameter $params
+New-MgBetaSecurityTriggerRetentionEvent -BodyParameter $params
 
 ```

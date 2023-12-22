@@ -4,14 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Drives.Item.Items.Item.Workbook.Worksheets.Item.Charts.Add.AddPostRequestBody
+// Dependencies
+using Microsoft.Graph.Drives.Item.Items.Item.Workbook.Worksheets.Item.Charts.Add;
+
+var requestBody = new AddPostRequestBody
 {
 	Type = "ColumnStacked",
 	SourceData = "A1:B1",
 	SeriesBy = "Auto",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Charts.Add.PostAsync(requestBody);
 
 

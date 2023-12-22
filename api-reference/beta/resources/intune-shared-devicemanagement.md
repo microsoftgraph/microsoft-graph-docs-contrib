@@ -34,7 +34,7 @@ The deviceManagement resource represents a container whose contents vary accordi
 - Remote assistance partners
 - Role-based access control (RBAC) policies
 - Reporting
-- Telecom expanse management partners
+
 - Troubleshooting events
 - Windows Information Protection summaries
 
@@ -186,8 +186,6 @@ The deviceManagement resource represents a container whose contents vary accordi
 |reports|[deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md)|Reports singleton|
 |**Software Update**|
 |windowsFeatureUpdateProfiles|[windowsFeatureUpdateProfile](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) collection|A collection of windows feature update profiles|
-|**Telecom expense management (TEM)**|
-|telecomExpenseManagementPartners|[telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) collection|The telecom expense management partners.|
 |**Troubleshooting**|
 |troubleshootingEvents|[deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) collection|The list of troubleshooting events for the tenant.|
 |**Windows Information Protection**|

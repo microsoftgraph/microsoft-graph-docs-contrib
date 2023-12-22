@@ -15,7 +15,7 @@ const phoneAuthenticationMethod = {
   phoneType: 'mobile'
 };
 
-await client.api('/me/authentication/phoneMethods')
+await client.api('/users/kim@contoso.com/authentication/phoneMethods')
 	.post(phoneAuthenticationMethod);
 
 ```

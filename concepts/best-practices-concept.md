@@ -115,6 +115,12 @@ For example, when retrieving the messages of the signed-in user, you can specify
 GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 ```
 
+When you make a GET request without using `$select` to limit the amount of properties data, Microsoft Graph includes a **@microsoft.graph.tips** property that provides a best practice recommendation for using `$select` similar to the following message:
+
+```html
+"@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET groups?$select=appMetadata,assignedLabels",
+```
+
 ### Getting minimal responses
 
 For some operations, such as PUT and PATCH (and in some cases POST), if your application doesn't need to make use of a response payload, you can ask the API to return minimal data. Note that some services already return a `204 No Content` response for PUT and PATCH operations.
@@ -152,4 +158,4 @@ To ensure reliability and facilitate support for your application:
 - Open connections to all advertised DNS answers.
 - Generate a unique GUID and send it on each Microsoft Graph REST request. This will help Microsoft investigate any errors more easily if you need to report an issue with Microsoft Graph.
   - On every request to Microsoft Graph, generate a unique GUID, send it in the `client-request-id` HTTP request header, and also log it in your application's logs.
-  - Always log the `request-id`, `Date` and `x-ms-ags-diagnostic` from the HTTP response headers. These, together with the `client-request-id`, are required when reporting issues in [Microsoft Q&A](/answers/products/m365#microsoft-graph) or to Microsoft Support.
+  - Always log the `request-id` and `Date` from the HTTP response headers. These, together with the `client-request-id`, are required when reporting issues in [Microsoft Q&A](/answers/products/m365#microsoft-graph) or to Microsoft Support.

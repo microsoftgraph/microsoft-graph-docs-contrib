@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -29,7 +29,7 @@ requestBody.SetHostOnly(&hostOnly)
 comment := "Updating source environment."
 requestBody.SetComment(&comment) 
 
-result, err := graphClient.Admin().Edge().InternetExplorerMode().SiteLists().BySiteListId("browserSiteList-id").SharedCookies().BySharedCookieId("browserSharedCookie-id").Patch(context.Background(), requestBody, nil)
+sharedCookies, err := graphClient.Admin().Edge().InternetExplorerMode().SiteLists().ByBrowserSiteListId("browserSiteList-id").SharedCookies().ByBrowserSharedCookieId("browserSharedCookie-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

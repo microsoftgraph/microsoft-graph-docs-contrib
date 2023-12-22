@@ -4,20 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new ThreatAssessmentRequest
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new UrlAssessmentRequest
 {
 	OdataType = "#microsoft.graph.urlAssessmentRequest",
+	Url = "http://test.com",
 	ExpectedAssessment = ThreatExpectedAssessment.Block,
 	Category = ThreatCategory.Phishing,
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"url" , "http://test.com"
-		},
-	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.InformationProtection.ThreatAssessmentRequests.PostAsync(requestBody);
 
 

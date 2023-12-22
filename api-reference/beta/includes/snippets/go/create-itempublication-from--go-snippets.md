@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -29,7 +29,7 @@ requestBody.SetThumbnailUrl(&thumbnailUrl)
 webUrl := "https://www.iabm.io"
 requestBody.SetWebUrl(&webUrl) 
 
-result, err := graphClient.Me().Profile().Publications().Post(context.Background(), requestBody, nil)
+publications, err := graphClient.Me().Profile().Publications().Post(context.Background(), requestBody, nil)
 
 
 ```

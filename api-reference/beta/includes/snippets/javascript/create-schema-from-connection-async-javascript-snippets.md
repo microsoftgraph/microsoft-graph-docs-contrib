@@ -39,6 +39,6 @@ const schema = {
 
 await client.api('/external/connections/contosohr/schema')
 	.version('beta')
-	.post(schema);
+	.update(schema);
 
 ```

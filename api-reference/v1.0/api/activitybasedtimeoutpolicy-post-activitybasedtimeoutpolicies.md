@@ -15,15 +15,14 @@ Namespace: microsoft.graph
 
 Create a new [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Policy.ReadWrite.ApplicationConfiguration |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Policy.ReadWrite.ApplicationConfiguration |
+<!-- { "blockType": "permissions", "name": "activitybasedtimeoutpolicy_post_activitybasedtimeoutpolicies" } -->
+[!INCLUDE [permissions-table](../includes/permissions/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies-permissions.md)]
 
 ## HTTP request
 
@@ -52,7 +51,7 @@ If successful, this method returns a `201 Created` response code and a new [acti
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -78,6 +77,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-activitybasedtimeoutpolicy-from-activitybasedtimeoutpolicies-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-activitybasedtimeoutpolicy-from-activitybasedtimeoutpolicies-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-activitybasedtimeoutpolicy-from-activitybasedtimeoutpolicies-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -98,11 +101,15 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-activitybasedtimeoutpolicy-from-activitybasedtimeoutpolicies-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-activitybasedtimeoutpolicy-from-activitybasedtimeoutpolicies-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

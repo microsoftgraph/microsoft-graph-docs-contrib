@@ -14,14 +14,13 @@ Namespace: microsoft.graph
 
 Update the properties of a [learningProvider](../resources/learningprovider.md) object.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|LearningProvider.ReadWrite|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "learningprovider_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/learningprovider-update-permissions.md)]
 
 ## HTTP request
 
@@ -46,12 +45,12 @@ PATCH /employeeExperience/learningProviders/{learningProviderId}
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The display name that appears in Viva Learning. Required.|
+|isCourseActivitySyncEnabled|Boolean|Indicates whether a provider can ingest [learningCourseActivity](../resources/learningcourseactivity.md). The default value is `false`. Set to `true` to make learningCourseActivities available for this provider.|
 |loginWebUrl|String|Authentication URL to access the courses for the provider. Optional.|
 |longLogoWebUrlForDarkTheme|String|The long logo URL for the dark mode that needs to be a publicly accessible image. This image would be saved to the blob storage of Viva Learning for rendering within the Viva Learning app. Required.|
 |longLogoWebUrlForLightTheme|String|The long logo URL for the light mode that needs to be a publicly accessible image. This image would be saved to the blob storage of Viva Learning for rendering  within the Viva Learning app. Required.|
 |squareLogoWebUrlForDarkTheme|String|The square logo URL for the dark mode that needs to be a publicly accessible image. This image would be saved to the blob storage of Viva Learning for rendering within the Viva Learning app. Required.|
 |squareLogoWebUrlForLightTheme|String|The square logo URL for the light mode that needs to be a publicly accessible image. This image would be saved to the blob storage of Viva Learning for rendering within the Viva Learning app. Required.|
-
 
 ## Response
 
@@ -78,12 +77,17 @@ Content-Type: application/json
     "longLogoWebUrlForDarkTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
     "squareLogoWebUrlForLightTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
     "longLogoWebUrlForLightTheme": "https://support.content.office.net/en-us/media/4c531d12-4c13-4782-a6e4-4b8f991801a3.png",
-    "loginWebUrl": "https://www.linkedin.com/learning-login/teams"
+    "loginWebUrl": "https://www.linkedin.com/learning-login/teams",
+    "isCourseActivitySyncEnabled": true
 }
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-learningprovider-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-learningprovider-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -102,10 +106,14 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/update-learningprovider-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-learningprovider-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

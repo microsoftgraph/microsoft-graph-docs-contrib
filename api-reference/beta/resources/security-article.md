@@ -13,13 +13,15 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
+
 Represents an article, which is a narrative that provides insight into threat actors, tooling, attacks, and vulnerabilities. Articles are not blog posts about threat intelligence; while they summarize different threats, they also link to actionable content and key indicators of compromise to help users take action.
 
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List articles](../api/security-article-list.md)|[article](../resources/security-article.md) collection|Get a list of the [microsoft.graph.security.article](../resources/security-article.md) objects and their properties.|
+|[List articles](../api/security-threatintelligence-list-articles.md)|[article](../resources/security-article.md) collection|Get a list of the [microsoft.graph.security.article](../resources/security-article.md) objects and their properties.|
 |[Get article](../api/security-article-get.md)|[article](../resources/security-article.md)|Read the properties and relationships of a [microsoft.graph.security.article](../resources/security-article.md) object.|
 |[List indicators](../api/security-article-list-indicators.md)|[articleIndicator](../resources/security-articleindicator.md) collection|Get the articleIndicator resources from the indicators navigation property.|
 

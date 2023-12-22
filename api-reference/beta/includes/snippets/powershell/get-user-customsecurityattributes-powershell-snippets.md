@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Users
+Import-Module Microsoft.Graph.Beta.Users
 
-Get-MgUser -UserId $userId -Property "customSecurityAttributes" 
+Get-MgBetaUser -UserId $userId -Property "customSecurityAttributes" 
 
 ```

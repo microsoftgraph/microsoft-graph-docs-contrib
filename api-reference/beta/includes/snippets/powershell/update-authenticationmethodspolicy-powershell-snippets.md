@@ -4,12 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
 	registrationEnforcement = @{
 		authenticationMethodsRegistrationCampaign = @{
 			snoozeDurationInDays = 1
+			enforceRegistrationAfterAllowedSnoozes = $true
 			state = "enabled"
 			excludeTargets = @(
 			)
@@ -22,8 +23,16 @@ $params = @{
 			)
 		}
 	}
+	reportSuspiciousActivitySettings = @{
+		state = "enabled"
+		includeTarget = @{
+			targetType = "group"
+			id = "all_users"
+		}
+		voiceReportingCode = 0
+	}
 }
 
-Update-MgPolicyAuthenticationMethodPolicy -BodyParameter $params
+Update-MgBetaPolicyAuthenticationMethodPolicy -BodyParameter $params
 
 ```

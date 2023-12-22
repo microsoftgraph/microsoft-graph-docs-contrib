@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.Teamwork.SendActivityNotificationToRecipients.SendActivityNotificationToRecipientsPostRequestBody
+// Dependencies
+using Microsoft.Graph.Beta.Teamwork.SendActivityNotificationToRecipients;
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new SendActivityNotificationToRecipientsPostRequestBody
 {
 	Topic = new TeamworkActivityTopic
 	{
@@ -29,38 +33,25 @@ var requestBody = new Microsoft.Graph.Beta.Teamwork.SendActivityNotificationToRe
 	},
 	Recipients = new List<TeamworkNotificationRecipient>
 	{
-		new TeamworkNotificationRecipient
+		new AadUserNotificationRecipient
 		{
 			OdataType = "microsoft.graph.aadUserNotificationRecipient",
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"userId" , "569363e2-4e49-4661-87f2-16f245c5d66a"
-				},
-			},
+			UserId = "569363e2-4e49-4661-87f2-16f245c5d66a",
 		},
-		new TeamworkNotificationRecipient
+		new AadUserNotificationRecipient
 		{
 			OdataType = "microsoft.graph.aadUserNotificationRecipient",
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"userId" , "ab88234e-0874-477c-9638-d144296ed04f"
-				},
-			},
+			UserId = "ab88234e-0874-477c-9638-d144296ed04f",
 		},
-		new TeamworkNotificationRecipient
+		new AadUserNotificationRecipient
 		{
 			OdataType = "microsoft.graph.aadUserNotificationRecipient",
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"userId" , "01c64f53-69aa-42c7-9b7f-9f75195d6bfc"
-				},
-			},
+			UserId = "01c64f53-69aa-42c7-9b7f-9f75195d6bfc",
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Teamwork.SendActivityNotificationToRecipients.PostAsync(requestBody);
 
 

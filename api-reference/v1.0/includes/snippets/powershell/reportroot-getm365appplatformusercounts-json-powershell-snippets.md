@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Reports
 
-Get-MgReportM365AppPlatformUserCount -Format "application/json" 
+Get-MgReportM365AppPlatformUserCount -Format "application/json"  -Period $periodId 
 
 ```

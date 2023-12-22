@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Calendar
+Import-Module Microsoft.Graph.Beta.Calendar
 
 $params = @{
 	originalStartTimeZone = "originalStartTimeZone-value"
@@ -18,6 +18,6 @@ $params = @{
 	isReminderOn = $true
 }
 
-Update-MgGroupEvent -GroupId $groupId -EventId $eventId -BodyParameter $params
+Update-MgBetaGroupEvent -GroupId $groupId -EventId $eventId -BodyParameter $params
 
 ```

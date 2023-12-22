@@ -1,7 +1,7 @@
 ---
 title: "List timeOffReasons"
 description: "Get the list of timeOffReasons in a schedule."
-author: "aaku"
+author: "shanemalone"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 Get the list of [timeOffReasons](../resources/timeoffreason.md) in a [schedule](../resources/schedule.md).
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -41,9 +43,10 @@ GET /teams/{teamId}/schedule/timeOffReasons
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
+| MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -53,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -66,6 +69,10 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/schedule-list-timeoffreasons-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/schedule-list-timeoffreasons-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -88,11 +95,15 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons
 [!INCLUDE [sample-code](../includes/snippets/powershell/schedule-list-timeoffreasons-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/schedule-list-timeoffreasons-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
 
-The following is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -113,6 +124,7 @@ Content-type: application/json
       "createdDateTime": "2019-03-12T22:10:38.242Z",
       "lastModifiedDateTime": "2019-03-12T22:10:38.242Z",
       "displayName": "Vacation",
+      "code": "VacationCode",
       "iconType": "plane",
       "isActive": true,
       "lastModifiedBy": {

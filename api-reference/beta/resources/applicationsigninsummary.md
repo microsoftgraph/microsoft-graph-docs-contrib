@@ -2,7 +2,7 @@
 title: "applicationSignInDetailedSummary resource type"
 description: "Represents an application sign-in summary."
 ms.localizationpriority: medium
-author: "besiler"
+author: "egreenberg14"
 ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"
 ---

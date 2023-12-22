@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -27,7 +27,7 @@ requestBody.SetIsEnabled(&isEnabled)
 isAppliedToOrganization := false
 requestBody.SetIsAppliedToOrganization(&isAppliedToOrganization) 
 
-result, err := graphClient.Policies().FeatureRolloutPolicies().Post(context.Background(), requestBody, nil)
+featureRolloutPolicies, err := graphClient.Policies().FeatureRolloutPolicies().Post(context.Background(), requestBody, nil)
 
 
 ```

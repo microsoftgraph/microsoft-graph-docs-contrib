@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 $params = @{
 	displayName = "Seattle District Technical Schools"
@@ -14,6 +14,6 @@ $params = @{
 	membershipRuleProcessingState = "On"
 }
 
-New-MgAdministrativeUnit -BodyParameter $params
+New-MgBetaAdministrativeUnit -BodyParameter $params
 
 ```

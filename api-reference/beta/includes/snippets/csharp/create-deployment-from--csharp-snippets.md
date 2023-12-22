@@ -4,31 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.Models.WindowsUpdates.Deployment
+// Dependencies
+using Microsoft.Graph.Beta.Models.WindowsUpdates;
+
+var requestBody = new Deployment
 {
 	OdataType = "#microsoft.graph.windowsUpdates.deployment",
-	Content = new Microsoft.Graph.Beta.Models.WindowsUpdates.DeployableContent
+	Content = new CatalogContent
 	{
 		OdataType = "#microsoft.graph.windowsUpdates.catalogContent",
-		AdditionalData = new Dictionary<string, object>
+		CatalogEntry = new FeatureUpdateCatalogEntry
 		{
-			{
-				"catalogEntry" , new 
-				{
-					OdataType = "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
-					Id = "f341705b-0b15-4ce3-aaf2-6a1681d78606",
-				}
-			},
+			OdataType = "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
+			Id = "f341705b-0b15-4ce3-aaf2-6a1681d78606",
 		},
 	},
-	Settings = new Microsoft.Graph.Beta.Models.WindowsUpdates.DeploymentSettings
+	Settings = new DeploymentSettings
 	{
 		OdataType = "microsoft.graph.windowsUpdates.deploymentSettings",
-		Schedule = new Microsoft.Graph.Beta.Models.WindowsUpdates.ScheduleSettings
+		Schedule = new ScheduleSettings
 		{
-			GradualRollout = new Microsoft.Graph.Beta.Models.WindowsUpdates.GradualRolloutSettings
+			GradualRollout = new RateDrivenRolloutSettings
 			{
 				OdataType = "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
 				DurationBetweenOffers = TimeSpan.Parse("P7D"),
@@ -40,20 +38,22 @@ var requestBody = new Microsoft.Graph.Beta.Models.WindowsUpdates.Deployment
 				},
 			},
 		},
-		Monitoring = new Microsoft.Graph.Beta.Models.WindowsUpdates.MonitoringSettings
+		Monitoring = new MonitoringSettings
 		{
-			MonitoringRules = new List<Microsoft.Graph.Beta.Models.WindowsUpdates.MonitoringRule>
+			MonitoringRules = new List<MonitoringRule>
 			{
-				new Microsoft.Graph.Beta.Models.WindowsUpdates.MonitoringRule
+				new MonitoringRule
 				{
-					Signal = Microsoft.Graph.Beta.Models.WindowsUpdates.MonitoringSignal.Rollback,
+					Signal = MonitoringSignal.Rollback,
 					Threshold = 5,
-					Action = Microsoft.Graph.Beta.Models.WindowsUpdates.MonitoringAction.PauseDeployment,
+					Action = MonitoringAction.PauseDeployment,
 				},
 			},
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Admin.Windows.Updates.Deployments.PostAsync(requestBody);
 
 

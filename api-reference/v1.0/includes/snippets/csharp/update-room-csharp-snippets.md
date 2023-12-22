@@ -4,30 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Place
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new Room
 {
 	OdataType = "microsoft.graph.room",
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"nickname" , "Conf Room"
-		},
-		{
-			"building" , "1"
-		},
-		{
-			"label" , "100"
-		},
-		{
-			"capacity" , 50
-		},
-		{
-			"isWheelChairAccessible" , false
-		},
-	},
+	Nickname = "Conf Room",
+	Building = "1",
+	Label = "100",
+	Capacity = 50,
+	IsWheelChairAccessible = false,
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Places["{place-id}"].PatchAsync(requestBody);
 
 

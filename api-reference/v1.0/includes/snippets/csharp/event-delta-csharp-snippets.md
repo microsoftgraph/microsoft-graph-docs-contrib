@@ -4,12 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Me.CalendarView.Delta.GetAsync((requestConfiguration) =>
 {
-	requestConfiguration.QueryParameters.Startdatetime = "{start_datetime}";
-	requestConfiguration.QueryParameters.Enddatetime = "{end_datetime}";
+	requestConfiguration.QueryParameters.StartDateTime = "{start_datetime}";
+	requestConfiguration.QueryParameters.EndDateTime = "{end_datetime}";
 	requestConfiguration.Headers.Add("Prefer", "odata.maxpagesize=2");
 });
 

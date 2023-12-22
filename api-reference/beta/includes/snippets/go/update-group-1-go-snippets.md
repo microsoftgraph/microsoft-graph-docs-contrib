@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -21,7 +21,7 @@ requestBody.SetDescription(&description)
 displayName := "Contoso Life Renewed"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.Groups().ByGroupId("group-id").Patch(context.Background(), requestBody, nil)
+groups, err := graphClient.Groups().ByGroupId("group-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Education
+Import-Module Microsoft.Graph.Beta.Education
 
 $params = @{
 	dueDateTime = [System.DateTime]::Parse("2022-09-16T00:00:00Z")
@@ -24,6 +24,6 @@ $params = @{
 	allowStudentsToAddResourcesToSubmission = $true
 }
 
-New-MgEducationClassAssignment -EducationClassId $educationClassId -BodyParameter $params
+New-MgBetaEducationClassAssignment -EducationClassId $educationClassId -BodyParameter $params
 
 ```

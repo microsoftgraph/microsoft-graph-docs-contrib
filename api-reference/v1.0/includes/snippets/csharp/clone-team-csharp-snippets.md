@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Teams.Item.Clone.ClonePostRequestBody
+// Dependencies
+using Microsoft.Graph.Teams.Item.Clone;
+using Microsoft.Graph.Models;
+
+var requestBody = new ClonePostRequestBody
 {
 	DisplayName = "Library Assist",
 	Description = "Self help community for library",
@@ -14,6 +18,8 @@ var requestBody = new Microsoft.Graph.Teams.Item.Clone.ClonePostRequestBody
 	PartsToClone = ClonableTeamParts.Apps | ClonableTeamParts.Tabs | ClonableTeamParts.Settings | ClonableTeamParts.Channels | ClonableTeamParts.Members,
 	Visibility = TeamVisibilityType.Public,
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Teams["{team-id}"].Clone.PostAsync(requestBody);
 
 

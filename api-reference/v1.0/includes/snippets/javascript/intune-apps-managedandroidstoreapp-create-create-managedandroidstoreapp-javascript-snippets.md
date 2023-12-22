@@ -1,0 +1,58 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```javascript
+
+const options = {
+	authProvider,
+};
+
+const client = Client.init(options);
+
+const mobileApp = {
+  '@odata.type': '#microsoft.graph.managedAndroidStoreApp',
+  displayName: 'Display Name value',
+  description: 'Description value',
+  publisher: 'Publisher value',
+  largeIcon: {
+    '@odata.type': 'microsoft.graph.mimeContent',
+    type: 'Type value',
+    value: 'dmFsdWU='
+  },
+  isFeatured: true,
+  privacyInformationUrl: 'https://example.com/privacyInformationUrl/',
+  informationUrl: 'https://example.com/informationUrl/',
+  owner: 'Owner value',
+  developer: 'Developer value',
+  notes: 'Notes value',
+  publishingState: 'processing',
+  appAvailability: 'lineOfBusiness',
+  version: 'Version value',
+  packageId: 'Package Id value',
+  appStoreUrl: 'https://example.com/appStoreUrl/',
+  minimumSupportedOperatingSystem: {
+    '@odata.type': 'microsoft.graph.androidMinimumOperatingSystem',
+    v4_0: true,
+    v4_0_3: true,
+    v4_1: true,
+    v4_2: true,
+    v4_3: true,
+    v4_4: true,
+    v5_0: true,
+    v5_1: true,
+    v6_0: true,
+    v7_0: true,
+    v7_1: true,
+    v8_0: true,
+    v8_1: true,
+    v9_0: true,
+    v10_0: true,
+    v11_0: true
+  }
+};
+
+await client.api('/deviceAppManagement/mobileApps')
+	.post(mobileApp);
+
+```

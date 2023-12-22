@@ -1,6 +1,6 @@
 ---
 title: "cloudPcAuditActor resource type"
-description: "The audit actor represented by the Azure AD user and application associated with the audit event."
+description: "The audit actor represented by the Microsoft Entra user and application associated with the audit event."
 author: "ecmadao"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The audit actor represented by the Azure AD user and application associated with the audit event.
+The audit actor represented by the Microsoft Entra user and application associated with the audit event.
 
 ## Properties
 
@@ -21,12 +21,12 @@ The audit actor represented by the Azure AD user and application associated with
 |:---|:---|:---|
 |type|[cloudPcAuditActorType](#cloudpcauditactortype-values)|The actor type. Possible values include `ItPro`, `Application`, `Partner` and `Unknown`.|
 |userPermissions|String collection|List of user permissions and application permissions when the audit event was performed.|
-|applicationId|String|Azure AD application ID.|
+|applicationId|String|Microsoft Entra application ID.|
 |applicationDisplayName|String|Name of the application.|
 |userPrincipalName|String|User Principal Name (UPN).|
 |servicePrincipalName|String|Service Principal Name (SPN).|
 |ipAddress|String|IP address.|
-|userId|String|Azure AD user ID.|
+|userId|String|Microsoft Entra user ID.|
 |userRoleScopeTags|[cloudPcUserRoleScopeTagInfo](../resources/cloudpcuserrolescopetaginfo.md) collection|List of role scope tags.|
 |remoteTenantId|String|The delegated partner tenant ID.|
 |remoteUserId|String|The delegated partner user ID.|

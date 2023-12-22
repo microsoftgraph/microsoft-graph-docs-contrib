@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Drives.Item.Items.Item.Workbook.Tables.Item.Columns.Item.Filter.Apply.ApplyPostRequestBody
+// Dependencies
+using Microsoft.Graph.Drives.Item.Items.Item.Workbook.Tables.Item.Columns.Item.Filter.Apply;
+using Microsoft.Graph.Models;
+
+var requestBody = new ApplyPostRequestBody
 {
 	Criteria = new WorkbookFilterCriteria
 	{
@@ -28,6 +32,8 @@ var requestBody = new Microsoft.Graph.Drives.Item.Items.Item.Workbook.Tables.Ite
 		FilterOn = "filterOn-value",
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].Columns["{workbookTableColumn-id}"].Filter.Apply.PostAsync(requestBody);
 
 

@@ -4,15 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.Models.ManagedTenants.TenantCustomizedInformation
+// Dependencies
+using Microsoft.Graph.Beta.Models.ManagedTenants;
+
+var requestBody = new TenantCustomizedInformation
 {
 	OdataType = "#microsoft.graph.managedTenants.tenantCustomizedInformation",
 	TenantId = "String",
-	Contacts = new List<Microsoft.Graph.Beta.Models.ManagedTenants.TenantContactInformation>
+	Contacts = new List<TenantContactInformation>
 	{
-		new Microsoft.Graph.Beta.Models.ManagedTenants.TenantContactInformation
+		new TenantContactInformation
 		{
 			OdataType = "microsoft.graph.managedTenants.tenantContactInformation",
 			Name = "String",
@@ -24,6 +27,8 @@ var requestBody = new Microsoft.Graph.Beta.Models.ManagedTenants.TenantCustomize
 	},
 	Website = "String",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.TenantRelationships.ManagedTenants.TenantsCustomizedInformation["{tenantCustomizedInformation-id}"].PatchAsync(requestBody);
 
 

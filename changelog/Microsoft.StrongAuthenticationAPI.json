@@ -1,4 +1,4 @@
-﻿{
+{
   "changelog": [
     {
       "ChangeList": [
@@ -109,6 +109,58 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-02-24T19:28:15.6913807Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b5ed3b76-66eb-4d12-94a0-badc3d6a592a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "userDefaultAuthenticationMethodType",
+          "ChangeType": "Addition",
+          "Description": "Added the **userDefaultAuthenticationMethodType** enumeration type.",
+          "Target": "userDefaultAuthenticationMethodType"
+        },
+        {
+          "Id": "b5ed3b76-66eb-4d12-94a0-badc3d6a592a",
+          "ApiChange": "Property",
+          "ChangedApiName": "userPreferredMethodForSecondaryAuthentication",
+          "ChangeType": "Addition",
+          "Description": "Added the **userPreferredMethodForSecondaryAuthentication** property to the [signInPreferences](https://learn.microsoft.com/en-us/graph/api/resources/signInPreferences?view=graph-rest-beta) resource.",
+          "Target": "signInPreferences"
+        }
+      ],
+      "Id": "b5ed3b76-66eb-4d12-94a0-badc3d6a592a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-06-09T23:01:46.0380108Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "bbb70cce-5252-40be-a7ca-7c29f99cb089",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "authenticationMethodPlatform",
+          "ChangeType": "Addition",
+          "Description": "Added the **authenticationMethodPlatform** enumeration type.",
+          "Target": "authenticationMethodPlatform"
+        },
+        {
+          "Id": "bbb70cce-5252-40be-a7ca-7c29f99cb089",
+          "ApiChange": "Resource",
+          "ChangedApiName": "platformCredentialAuthenticationMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the [platformCredentialAuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/platformCredentialAuthenticationMethod?view=graph-rest-beta) resource and associated methods.",
+          "Target": "platformCredentialAuthenticationMethod"
+        }
+      ],
+      "Id": "bbb70cce-5252-40be-a7ca-7c29f99cb089",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-11-03T19:56:04.1105537Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     }

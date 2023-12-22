@@ -4,15 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.ServicePrincipals.Item.Synchronization.Jobs.Item.Restart.RestartPostRequestBody
+// Dependencies
+using Microsoft.Graph.Beta.ServicePrincipals.Item.Synchronization.Jobs.Item.Restart;
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new RestartPostRequestBody
 {
 	Criteria = new SynchronizationJobRestartCriteria
 	{
 		ResetScope = SynchronizationJobRestartScope.Watermark | SynchronizationJobRestartScope.Escrows | SynchronizationJobRestartScope.QuarantineState,
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.ServicePrincipals["{servicePrincipal-id}"].Synchronization.Jobs["{synchronizationJob-id}"].Restart.PostAsync(requestBody, (requestConfiguration) =>
 {
 	requestConfiguration.Headers.Add("Authorization", "Bearer <token>");

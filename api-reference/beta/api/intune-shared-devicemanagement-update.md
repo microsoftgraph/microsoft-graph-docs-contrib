@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Update the properties of a [deviceManagement](../resources/intune-shared-devicemanagement.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,6 +36,7 @@ Note that the permission vary according to workflow.
 | &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; **Electronic SIM** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp; &nbsp; **Enrollment** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; **Fencing** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp; &nbsp; **Notification** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Odj** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Onboarding** | DeviceManagementServiceConfig.ReadWrite.All |
@@ -55,6 +58,7 @@ Note that the permission vary according to workflow.
 | &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; **Electronic SIM** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp; &nbsp; **Enrollment** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; **Fencing** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp; &nbsp; **Notification** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Odj** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Onboarding** | DeviceManagementServiceConfig.ReadWrite.All |

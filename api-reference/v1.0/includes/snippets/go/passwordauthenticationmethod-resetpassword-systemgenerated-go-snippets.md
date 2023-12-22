@@ -4,18 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
+requestBody := graphusers.NewResetPasswordPostRequestBody()
 
-result, err := graphClient.Users().ByUserId("user-id").Authentication().Methods().ByMethodId("authenticationMethod-id").ResetPassword().Post(context.Background(), nil)
+resetPassword, err := graphClient.Users().ByUserId("user-id").Authentication().Methods().ByAuthenticationMethodId("authenticationMethod-id").ResetPassword().Post(context.Background(), requestBody, nil)
 
 
 ```

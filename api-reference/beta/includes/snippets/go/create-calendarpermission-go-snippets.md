@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -29,7 +29,7 @@ requestBody.SetIsRemovable(&isRemovable)
 role := graphmodels.READ_CALENDARROLETYPE 
 requestBody.SetRole(&role) 
 
-result, err := graphClient.Users().ByUserId("user-id").Calendar().CalendarPermissions().Post(context.Background(), requestBody, nil)
+calendarPermissions, err := graphClient.Users().ByUserId("user-id").Calendar().CalendarPermissions().Post(context.Background(), requestBody, nil)
 
 
 ```

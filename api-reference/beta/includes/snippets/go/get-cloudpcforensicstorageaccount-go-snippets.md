@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -15,7 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().Snapshots().BySnapshotId("cloudPcSnapshot-id").Get(context.Background(), nil)
+subscriptionId := "{subscriptionId}"
+getStorageAccounts, err := graphClient.DeviceManagement().VirtualEndpoint().Snapshots().GetStorageAccountsWithSubscriptionId(&subscriptionId).Get(context.Background(), nil)
 
 
 ```

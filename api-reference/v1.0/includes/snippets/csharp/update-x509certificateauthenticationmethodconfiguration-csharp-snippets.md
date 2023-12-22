@@ -4,60 +4,56 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new AuthenticationMethodConfiguration
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new X509CertificateAuthenticationMethodConfiguration
 {
 	OdataType = "#microsoft.graph.x509CertificateAuthenticationMethodConfiguration",
 	Id = "X509Certificate",
 	State = AuthenticationMethodState.Enabled,
-	AdditionalData = new Dictionary<string, object>
+	CertificateUserBindings = new List<X509CertificateUserBinding>
 	{
+		new X509CertificateUserBinding
 		{
-			"certificateUserBindings" , new List<>
-			{
-				new 
-				{
-					X509CertificateField = "PrincipalName",
-					UserProperty = "onPremisesUserPrincipalName",
-					Priority = 1,
-				},
-			}
+			X509CertificateField = "PrincipalName",
+			UserProperty = "onPremisesUserPrincipalName",
+			Priority = 1,
 		},
+	},
+	AuthenticationModeConfiguration = new X509CertificateAuthenticationModeConfiguration
+	{
+		X509CertificateAuthenticationDefaultMode = X509CertificateAuthenticationMode.X509CertificateMultiFactor,
+		Rules = new List<X509CertificateRule>
 		{
-			"authenticationModeConfiguration" , new 
+			new X509CertificateRule
 			{
-				X509CertificateAuthenticationDefaultMode = "x509CertificateMultiFactor",
-				Rules = new List<>
-				{
-					new 
-					{
-						X509CertificateRuleType = "issuerSubject",
-						Identifier = "CN=ContosoCA,DC=Contoso,DC=org ",
-						X509CertificateAuthenticationMode = "x509CertificateMultiFactor",
-					},
-					new 
-					{
-						X509CertificateRuleType = "policyOID",
-						Identifier = "1.2.3.4",
-						X509CertificateAuthenticationMode = "x509CertificateMultiFactor",
-					},
-				},
-			}
+				X509CertificateRuleType = X509CertificateRuleType.IssuerSubject,
+				Identifier = "CN=ContosoCA,DC=Contoso,DC=org ",
+				X509CertificateAuthenticationMode = X509CertificateAuthenticationMode.X509CertificateMultiFactor,
+			},
+			new X509CertificateRule
+			{
+				X509CertificateRuleType = X509CertificateRuleType.PolicyOID,
+				Identifier = "1.2.3.4",
+				X509CertificateAuthenticationMode = X509CertificateAuthenticationMode.X509CertificateMultiFactor,
+			},
 		},
+	},
+	IncludeTargets = new List<AuthenticationMethodTarget>
+	{
+		new AuthenticationMethodTarget
 		{
-			"includeTargets" , new List<>
-			{
-				new 
-				{
-					TargetType = "group",
-					Id = "all_users",
-					IsRegistrationRequired = false,
-				},
-			}
+			TargetType = AuthenticationMethodTargetType.Group,
+			Id = "all_users",
+			IsRegistrationRequired = false,
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Policies.AuthenticationMethodsPolicy.AuthenticationMethodConfigurations["{authenticationMethodConfiguration-id}"].PatchAsync(requestBody);
 
 

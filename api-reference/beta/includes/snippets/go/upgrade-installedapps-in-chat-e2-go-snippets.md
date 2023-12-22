@@ -4,18 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Chats/Item/InstalledApps/Item/Upgrade"
+	  graphchats "github.com/microsoftgraph/msgraph-beta-sdk-go/chats"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewUpgradePostRequestBody()
+requestBody := graphchats.NewUpgradePostRequestBody()
 consentedPermissionSet := graphmodels.NewTeamsAppPermissionSet()
 
 
@@ -33,12 +34,11 @@ teamsAppResourceSpecificPermission1.SetPermissionType(&permissionType)
 resourceSpecificPermissions := []graphmodels.TeamsAppResourceSpecificPermissionable {
 	teamsAppResourceSpecificPermission,
 	teamsAppResourceSpecificPermission1,
-
 }
 consentedPermissionSet.SetResourceSpecificPermissions(resourceSpecificPermissions)
 requestBody.SetConsentedPermissionSet(consentedPermissionSet)
 
-graphClient.Chats().ByChatId("chat-id").InstalledApps().ByInstalledAppId("teamsAppInstallation-id").Upgrade().Post(context.Background(), requestBody, nil)
+graphClient.Chats().ByChatId("chat-id").InstalledApps().ByTeamsAppInstallationId("teamsAppInstallation-id").Upgrade().Post(context.Background(), requestBody, nil)
 
 
 ```

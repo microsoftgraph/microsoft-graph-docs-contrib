@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -21,7 +21,7 @@ extensionAttribute1 := "BYOD-Device"
 extensionAttributes.SetExtensionAttribute1(&extensionAttribute1) 
 requestBody.SetExtensionAttributes(extensionAttributes)
 
-result, err := graphClient.Devices().ByDeviceId("device-id").Patch(context.Background(), requestBody, nil)
+devices, err := graphClient.Devices().ByDeviceId("device-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -21,7 +21,7 @@ requestBody.SetDescription(&description)
 maxAttributesPerSet := int32(20)
 requestBody.SetMaxAttributesPerSet(&maxAttributesPerSet) 
 
-result, err := graphClient.Directory().AttributeSets().ByAttributeSetId("attributeSet-id").Patch(context.Background(), requestBody, nil)
+attributeSets, err := graphClient.Directory().AttributeSets().ByAttributeSetId("attributeSet-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

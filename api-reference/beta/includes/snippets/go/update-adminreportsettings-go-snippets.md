@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -19,7 +19,7 @@ requestBody := graphmodels.NewAdminReportSettings()
 displayConcealedNames := true
 requestBody.SetDisplayConcealedNames(&displayConcealedNames) 
 
-result, err := graphClient.Admin().ReportSettings().Patch(context.Background(), requestBody, nil)
+reportSettings, err := graphClient.Admin().ReportSettings().Patch(context.Background(), requestBody, nil)
 
 
 ```

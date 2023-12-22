@@ -4,7 +4,7 @@ description: "Contains information about a license assigned to a user."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "users"
-author: "jconley76"
+author: "frank-masuelli"
 ---
 
 # licenseDetails resource type
@@ -20,6 +20,7 @@ Contains information about a license assigned to a user.
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[List licenseDetails](../api/user-list-licensedetails.md) | licenseDetails collection |Retrieve a list of licenseDetails objects for a user.|
+|[getTeamsLicensingDetails](../api/licensedetails-getteamslicensingdetails.md)|[teamsLicensingDetails](../resources/teamsLicensingDetails.md) object|Get the Microsoft Teams license details for the specified user.|
 
 <!--|[Get licenseDetails](../api/licensedetails-get.md) | licenseDetails |Read properties and relationships of a licenseDetails object.|-->
 

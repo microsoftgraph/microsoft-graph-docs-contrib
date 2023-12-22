@@ -17,14 +17,16 @@ Namespace: microsoft.graph
 
 Create a new [win32LobApp](../resources/intune-apps-win32lobapp.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -102,7 +104,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 3487
+Content-length: 3518
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -192,6 +194,7 @@ Content-length: 3487
   "installExperience": {
     "@odata.type": "microsoft.graph.win32LobAppInstallExperience",
     "runAsAccount": "user",
+    "maxRunTimeInMinutes": 3,
     "deviceRestartBehavior": "allow"
   },
   "returnCodes": [
@@ -223,7 +226,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 3659
+Content-Length: 3690
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -316,6 +319,7 @@ Content-Length: 3659
   "installExperience": {
     "@odata.type": "microsoft.graph.win32LobAppInstallExperience",
     "runAsAccount": "user",
+    "maxRunTimeInMinutes": 3,
     "deviceRestartBehavior": "allow"
   },
   "returnCodes": [

@@ -24,7 +24,7 @@ Defines how certain containers, such as organizational units, should be consider
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.containerFilter"

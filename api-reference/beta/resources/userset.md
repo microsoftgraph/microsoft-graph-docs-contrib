@@ -20,6 +20,7 @@ Used in the request, approval, and assignment review settings of an [access pack
 + [requestorManager](requestormanager.md)
 + [internalSponsors](internalsponsors.md)
 + [externalSponsors](externalsponsors.md)
++ [targetUserSponsors](targetusersponsors.md)
 
 ## Properties
 

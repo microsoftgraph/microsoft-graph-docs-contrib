@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/groups"
+	  graphgroups "github.com/microsoftgraph/msgraph-sdk-go/groups"
 	  //other-imports
 )
 
@@ -21,19 +21,19 @@ headers.Add("ConsistencyLevel", "eventual")
 
 
 requestCount := true
-requestFilter := "startswith(displayName,%20'a')"
+requestFilter := "startswith(displayName, 'a')"
 
-requestParameters := &graphconfig.GroupItemTransitiveMembersGraph.userRequestBuilderGetQueryParameters{
+requestParameters := &graphgroups.GroupItemTransitiveMembersGraph.userRequestBuilderGetQueryParameters{
 	Count: &requestCount,
 	Orderby: [] string {"displayName"},
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.GroupItemTransitiveMembersGraph.userRequestBuilderGetRequestConfiguration{
+configuration := &graphgroups.GroupItemTransitiveMembersGraph.userRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Groups().ByGroupId("group-id").TransitiveMembers().GraphUser().Get(context.Background(), configuration)
+graphUser, err := graphClient.Groups().ByGroupId("group-id").TransitiveMembers().GraphUser().Get(context.Background(), configuration)
 
 
 ```

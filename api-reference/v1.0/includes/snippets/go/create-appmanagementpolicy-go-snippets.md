@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -59,7 +59,6 @@ passwordCredentials := []graphmodels.PasswordCredentialConfigurationable {
 	passwordCredentialConfiguration1,
 	passwordCredentialConfiguration2,
 	passwordCredentialConfiguration3,
-
 }
 restrictions.SetPasswordCredentials(passwordCredentials)
 
@@ -74,12 +73,11 @@ keyCredentialConfiguration.SetRestrictForAppsCreatedAfterDateTime(&restrictForAp
 
 keyCredentials := []graphmodels.KeyCredentialConfigurationable {
 	keyCredentialConfiguration,
-
 }
 restrictions.SetKeyCredentials(keyCredentials)
 requestBody.SetRestrictions(restrictions)
 
-result, err := graphClient.Policies().AppManagementPolicies().Post(context.Background(), requestBody, nil)
+appManagementPolicies, err := graphClient.Policies().AppManagementPolicies().Post(context.Background(), requestBody, nil)
 
 
 ```

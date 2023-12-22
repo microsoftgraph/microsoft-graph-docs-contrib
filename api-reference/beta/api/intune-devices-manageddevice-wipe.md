@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Wipe a device
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -54,12 +56,12 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|keepEnrollmentData|Boolean|Not yet documented|
-|keepUserData|Boolean|Not yet documented|
-|macOsUnlockCode|String|Not yet documented|
-|obliterationBehavior|[obliterationBehavior](../resources/intune-devices-obliterationbehavior.md)|Not yet documented|
-|persistEsimDataPlan|Boolean|Not yet documented|
-|useProtectedWipe|Boolean|Not yet documented|
+|keepEnrollmentData|Boolean||
+|keepUserData|Boolean||
+|macOsUnlockCode|String||
+|obliterationBehavior|[obliterationBehavior](../resources/intune-devices-obliterationbehavior.md)||
+|persistEsimDataPlan|Boolean||
+|useProtectedWipe|Boolean||
 
 
 

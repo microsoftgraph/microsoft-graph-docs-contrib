@@ -17,19 +17,18 @@ Retrieves changes to objects that the user is [subscribed](../resources/planner-
 
 This method allows your application to track changes to objects that the user can access from within Planner over time.
 
-The return value of this method might contain hetergenous types of objects from Planner.
+The return value of this method might contain heterogeneous types of objects from Planner.
 
 For more information about tracking changes in Microsoft Graph data, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Tasks.Read, Tasks.ReadWrite, Group.Read.All, Group.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+<!-- { "blockType": "permissions", "name": "planneruser_list_delta" } -->
+[!INCLUDE [permissions-table](../includes/permissions/planneruser-list-delta-permissions.md)]
 
 ## HTTP request
 
@@ -50,15 +49,15 @@ No additional query parameters (such as `$select`, `$expand`, or `$filter`) are 
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of changes to be applied to objects in the response body, and a Delta Sync link to follow.
 
-If the `@odata.deltaLink` that the caller uses is malformed, this endpoint will return HTTP 400.
+If the `@odata.deltaLink` that the caller uses is malformed, this endpoint returns HTTP 400.
 
-If the `@odata.deltaLink` that the caller uses is too old, this endpoint will return HTTP 410.
+If the `@odata.deltaLink` that the caller uses is too old, this endpoint returns HTTP 410.
 
 This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).
 
@@ -66,7 +65,7 @@ This method can return any of the [HTTP status codes](/graph/errors). The most c
 
 ##### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -81,6 +80,10 @@ GET https://graph.microsoft.com/beta/me/planner/all/delta
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-delta-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-delta-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -99,10 +102,18 @@ GET https://graph.microsoft.com/beta/me/planner/all/delta
 [!INCLUDE [sample-code](../includes/snippets/php/get-delta-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-delta-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-delta-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
-Here is an example of the response.
+Here's an example of the response.
 
 >**Note:** The response object shown might be shortened for readability. All the changed properties will be returned from an actual call.
 

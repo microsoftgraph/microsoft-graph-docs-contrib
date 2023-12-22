@@ -23,13 +23,13 @@ Specifies class-level assignments settings.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique identifier for the educationAssignmentSettings.|
-|submissionAnimationDisabled|Boolean|Indicates whether turn-in celebration animation will be shown. A value of `true` indicates that the animation will not be shown. Default value is `false`.|
+|submissionAnimationDisabled|Boolean|Indicates whether turn-in celebration animation is shown. A value of `true` indicates that the animation isn't shown. Default value is `false`.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

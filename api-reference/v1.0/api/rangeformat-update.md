@@ -13,13 +13,10 @@ Namespace: microsoft.graph
 
 Update the properties of rangeformat object.
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+<!-- { "blockType": "permissions", "name": "rangeformat_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/rangeformat-update-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -38,13 +35,13 @@ PATCH /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/r
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintains their previous values or are recalculated based on changes to other property values. For best performance, you shouldn't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|columnWidth|double|Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be returned.|
+|columnWidth|double|Gets or sets the width of all columns within the range. If the column widths aren't uniform, null is returned.|
 |horizontalAlignment|string|Represents the horizontal alignment for the specified object. The possible values are: `General`, `Left`, `Center`, `Right`, `Fill`, `Justify`, `CenterAcrossSelection`, `Distributed`.|
-|rowHeight|double|Gets or sets the height of all rows in the range. If the row heights are not uniform null will be returned.|
+|rowHeight|double|Gets or sets the height of all rows in the range. If the row heights aren't uniform null will be returned.|
 |verticalAlignment|string|Represents the vertical alignment for the specified object. The possible values are: `Top`, `Center`, `Bottom`, `Justify`, `Distributed`.|
 |wrapText|boolean|Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting|
 
@@ -62,7 +59,7 @@ The result of this set of requests is a table with three cells formatted like th
 ![Excel chart table with three cells whose format, fill, and font properties have been updated.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/ExcelRangeFormatting.png)
 
 ##### Request
-This request updates the vertical alignment, row height, and column height of the first cell. 
+This request updates the vertical alignment, row height, and column height of the first cell.
 
 
 # [HTTP](#tab/http)
@@ -93,7 +90,7 @@ Content-type: application/json
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+Here's an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -113,7 +110,7 @@ Content-type: application/json
 ```
 
 ##### Request
-This request updates the font style, size, and color of the first cell. 
+This request updates the font style, size, and color of the first cell.
 
 
 # [HTTP](#tab/http)
@@ -145,7 +142,7 @@ Content-type: application/json
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+Here's an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -166,7 +163,7 @@ Content-type: application/json
 ```
 
 ##### Request
-This request updates the background color of the first cell. 
+This request updates the background color of the first cell.
 
 
 # [HTTP](#tab/http)
@@ -194,7 +191,7 @@ Content-type: application/json
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+Here's an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -209,7 +206,7 @@ Content-type: application/json
 }
 ```
 ##### Request
-This request updates the vertical alignment, horizontal alignment, row height, and column height of the second cell. 
+This request updates the vertical alignment, horizontal alignment, row height, and column height of the second cell.
 
 
 # [HTTP](#tab/http)
@@ -243,7 +240,7 @@ Content-type: application/json
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+Here's an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -263,7 +260,7 @@ Content-type: application/json
 ```
 
 ##### Request
-This request updates the font style and size of the second cell. 
+This request updates the font style and size of the second cell.
 
 
 # [HTTP](#tab/http)
@@ -292,7 +289,7 @@ Content-type: application/json
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+Here's an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -313,7 +310,7 @@ Content-type: application/json
 ```
 
 ##### Request
-This request updates the background color of the second cell. 
+This request updates the background color of the second cell.
 
 
 # [HTTP](#tab/http)
@@ -341,7 +338,7 @@ Content-type: application/json
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+Here's an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -357,7 +354,7 @@ Content-type: application/json
 ```
 
 ##### Request
-This request updates the horizontal alignment, vertical alignment, row height, and column height of the third cell. 
+This request updates the horizontal alignment, vertical alignment, row height, and column height of the third cell.
 
 
 # [HTTP](#tab/http)
@@ -389,7 +386,7 @@ Content-type: application/json
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+Here's an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -409,7 +406,7 @@ Content-type: application/json
 ```
 
 ##### Request
-This request updates the font style, size, and color of the third cell. Note that the underline property takes **Single** or **Double** as values.
+This request updates the font style, size, and color of the third cell. The underline property takes **Single** or **Double** as values.
 
 
 # [HTTP](#tab/http)
@@ -441,7 +438,7 @@ Content-type: application/json
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+Here's an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -462,7 +459,7 @@ Content-type: application/json
 ```
 
 ##### Request
-This request updates the background color of the third cell. 
+This request updates the background color of the third cell.
 
 
 # [HTTP](#tab/http)
@@ -490,7 +487,7 @@ Content-type: application/json
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+Here's an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -513,7 +510,7 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-    "Error: update_font_rangeformat/underline:
+    "Error: updatefontrangeformat/underline:
       Expected type String but actual was Single. Property: underline, actual value: 'Single'"
   ],
   "tocPath": ""

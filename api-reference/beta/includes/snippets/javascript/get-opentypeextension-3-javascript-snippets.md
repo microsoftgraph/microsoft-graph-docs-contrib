@@ -12,7 +12,7 @@ const client = Client.init(options);
 
 let message = await client.api('/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/')
 	.version('beta')
-	.expand('extensions($filter=id%20eq%20\'Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral\')')
+	.expand('extensions($filter=id eq \'Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral\')')
 	.get();
 
 ```

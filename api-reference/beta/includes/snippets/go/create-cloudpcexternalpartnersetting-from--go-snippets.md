@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -21,7 +21,7 @@ requestBody.SetPartnerId(&partnerId)
 enableConnection := true
 requestBody.SetEnableConnection(&enableConnection) 
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().ExternalPartnerSettings().Post(context.Background(), requestBody, nil)
+externalPartnerSettings, err := graphClient.DeviceManagement().VirtualEndpoint().ExternalPartnerSettings().Post(context.Background(), requestBody, nil)
 
 
 ```

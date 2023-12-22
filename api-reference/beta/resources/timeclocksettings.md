@@ -18,12 +18,12 @@ Represents timeclock settings for a [schedule](schedule.md).
 ## Properties
 |Property               |Type           |Description                                                                |
 |-----------------------|---------------|---------------------------------------------------------------------------|
-| approvedLocation | [geoCoordinates](geocoordinates.md)  |The aprroved location of the **timeClock**. |
+| approvedLocation | [geoCoordinates](geocoordinates.md)  |The approved location of the **timeClock**. |
 
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

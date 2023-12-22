@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.Me.Calendar.GetSchedule.GetSchedulePostRequestBody
+// Dependencies
+using Microsoft.Graph.Beta.Me.Calendar.GetSchedule;
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new GetSchedulePostRequestBody
 {
 	Schedules = new List<string>
 	{
@@ -25,6 +29,8 @@ var requestBody = new Microsoft.Graph.Beta.Me.Calendar.GetSchedule.GetSchedulePo
 	},
 	AvailabilityViewInterval = 60,
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Me.Calendar.GetSchedule.PostAsync(requestBody, (requestConfiguration) =>
 {
 	requestConfiguration.Headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"");

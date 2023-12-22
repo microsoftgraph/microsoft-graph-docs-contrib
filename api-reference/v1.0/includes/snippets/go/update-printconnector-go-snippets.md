@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -33,7 +33,7 @@ altitudeInMeters := int32(3)
 location.SetAltitudeInMeters(&altitudeInMeters) 
 requestBody.SetLocation(location)
 
-result, err := graphClient.Print().Connectors().ByConnectorId("printConnector-id").Patch(context.Background(), requestBody, nil)
+connectors, err := graphClient.Print().Connectors().ByPrintConnectorId("printConnector-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -4,17 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.Security.Cases.EdiscoveryCases.Item.ReviewSets.Item.SecurityAddToReviewSet.AddToReviewSetPostRequestBody
+// Dependencies
+using Microsoft.Graph.Beta.Security.Cases.EdiscoveryCases.Item.ReviewSets.Item.MicrosoftGraphSecurityAddToReviewSet;
+using Microsoft.Graph.Beta.Models.Security;
+
+var requestBody = new AddToReviewSetPostRequestBody
 {
-	Search = new Microsoft.Graph.Beta.Models.Security.EdiscoverySearch
+	Search = new EdiscoverySearch
 	{
 		Id = "c17e91d6-6bc0-4ecb-b388-269ea3d4ffb7",
 	},
-	AdditionalDataOptions = Microsoft.Graph.Beta.Models.Security.AdditionalDataOptions.LinkedFiles,
+	AdditionalDataOptions = AdditionalDataOptions.LinkedFiles,
 };
-await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].ReviewSets["{ediscoveryReviewSet-id}"].SecurityAddToReviewSet.PostAsync(requestBody);
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].ReviewSets["{ediscoveryReviewSet-id}"].MicrosoftGraphSecurityAddToReviewSet.PostAsync(requestBody);
 
 
 ```

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.SchemaExtensions
+Import-Module Microsoft.Graph.Beta.SchemaExtensions
 
 $params = @{
 	id = "graphlearn_courses"
@@ -28,6 +28,6 @@ $params = @{
 	)
 }
 
-New-MgSchemaExtension -BodyParameter $params
+New-MgBetaSchemaExtension -BodyParameter $params
 
 ```

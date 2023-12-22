@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
+
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
 var requestBody = new AuthenticationMethodsPolicy
 {
@@ -13,6 +16,7 @@ var requestBody = new AuthenticationMethodsPolicy
 		AuthenticationMethodsRegistrationCampaign = new AuthenticationMethodsRegistrationCampaign
 		{
 			SnoozeDurationInDays = 1,
+			EnforceRegistrationAfterAllowedSnoozes = true,
 			State = AdvancedConfigState.Enabled,
 			ExcludeTargets = new List<ExcludeTarget>
 			{
@@ -28,7 +32,19 @@ var requestBody = new AuthenticationMethodsPolicy
 			},
 		},
 	},
+	ReportSuspiciousActivitySettings = new ReportSuspiciousActivitySettings
+	{
+		State = AdvancedConfigState.Enabled,
+		IncludeTarget = new IncludeTarget
+		{
+			TargetType = AuthenticationMethodTargetType.Group,
+			Id = "all_users",
+		},
+		VoiceReportingCode = 0,
+	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Policies.AuthenticationMethodsPolicy.PatchAsync(requestBody);
 
 

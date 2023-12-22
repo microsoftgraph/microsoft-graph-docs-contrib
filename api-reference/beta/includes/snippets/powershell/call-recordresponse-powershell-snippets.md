@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.CloudCommunications
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 $params = @{
 	bargeInAllowed = $true
@@ -25,6 +25,6 @@ $params = @{
 	)
 }
 
-Invoke-MgRecordCommunicationCallResponse -CallId $callId -BodyParameter $params
+Invoke-MgBetaRecordCommunicationCallResponse -CallId $callId -BodyParameter $params
 
 ```

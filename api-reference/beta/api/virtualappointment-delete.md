@@ -7,25 +7,22 @@ ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Delete virtualAppointment
+# Delete virtualAppointment (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!CAUTION]
-  > The Virtual appointment resource and supporting methods are deprecated and will stop returning data on May 31, 2023.
+> The **virtualAppointment** resource and supporting methods are deprecated and will stop returning data on June 30, 2023. We recommend that you update existing apps that use this API to use the new [Get join link](../api/virtualappointment-getvirtualappointmentjoinweburl.md) function.
 
 Delete a [virtualAppointment](../resources/virtualappointment.md) object.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                            |
-|:---------------------------------------|:---------------------------------------------------------------------------------------|
-| Delegated (work or school account)     | VirtualAppointment.ReadWrite, OnlineMeetings.ReadWrite                                  |
-| Delegated (personal Microsoft account) | Not supported.                                                                         |
-| Application                            | VirtualAppointment.ReadWrite.All
+<!-- { "blockType": "permissions", "name": "virtualappointment_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/virtualappointment-delete-permissions.md)]
 
 > [!NOTE]
 > Virtual appointment will transition from online meeting permissions to more specific virtual appointment permissions during the preview period. This will give developers more granular control over virtual appointment permissions. We'll provide additional details on when online meeting permissions will no longer be supported before the preview period ends.
@@ -48,7 +45,7 @@ DELETE /users/{userId}/onlineMeetings/{onlineMeetingId}/virtualAppointment
 | Accept-Language | Language. Optional.       |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -67,7 +64,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/me/onlineMeeting/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/virtualAppointment
+DELETE https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/virtualAppointment
 ```
 
 # [Java](#tab/java)
@@ -81,7 +78,7 @@ DELETE https://graph.microsoft.com/beta/me/onlineMeeting/MSpkYzE3Njc0Yy04MWQ5LTR
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
