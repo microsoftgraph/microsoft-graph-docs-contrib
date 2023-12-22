@@ -118,6 +118,8 @@ GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f
 
 The following example shows the response.
 
+> **Note:** The response object shown here might be shortened for readability.
+
 > **Note:** Take the `@odata.nextLink` from the response to make another call and get the next set of assignments.
 
 <!-- {
@@ -158,50 +160,6 @@ Content-length: 344
             "id": "3b870c07-21fe-47fb-8562-cdd6f2c281d6",
             "instructions": {
                 "content": "follow up",
-                "contentType": "text"
-            },
-            "assignTo": {
-                "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
-            },
-            "createdBy": {
-                "application": null,
-                "device": null,
-                "user": {
-                    "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
-                    "displayName": null
-                }
-            },
-            "lastModifiedBy": {
-                "application": null,
-                "device": null,
-                "user": {
-                    "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
-                    "displayName": null
-                }
-            }
-        },
-        {
-            "@odata.type": "#microsoft.graph.educationAssignment",
-            "classId": "72a7baec-c3e9-4213-a850-f62de0adad5f",
-            "displayName": "Expand options 4",
-            "closeDateTime": null,
-            "dueDateTime": "2021-11-12T07:59:00Z",
-            "assignDateTime": null,
-            "assignedDateTime": null,
-            "allowLateSubmissions": true,
-            "resourcesFolderUrl": null,
-            "createdDateTime": "2021-11-10T23:58:29.2670914Z",
-            "lastModifiedDateTime": "2021-11-10T23:58:39.6191021Z",
-            "allowStudentsToAddResourcesToSubmission": true,
-            "status": "draft",
-            "notificationChannelUrl": null,
-            "webUrl": null,
-            "addToCalendarAction": "none",
-            "addedStudentAction": "none",
-            "grading": null,
-            "id": "34ab8c17-eaae-4996-9c04-53696934e6ff",
-            "instructions": {
-                "content": "",
                 "contentType": "text"
             },
             "assignTo": {
@@ -285,6 +243,8 @@ GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/delta?$s
 
 The following example shows the response.
 
+> **Note:** The response object shown here might be shortened for readability.
+
 > **Note:** You must continue using the `@odata.nextLink` value for the consequent calls until you get the `@odata.deltaLink` property in the response.
 
 <!-- {
@@ -323,50 +283,6 @@ Content-length: 344
             "addedStudentAction": "none",
             "grading": null,
             "id": "efa3b9a8-b41f-4263-adc5-738c01912153",
-            "instructions": {
-                "content": "",
-                "contentType": "text"
-            },
-            "assignTo": {
-                "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
-            },
-            "createdBy": {
-                "application": null,
-                "device": null,
-                "user": {
-                    "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
-                    "displayName": null
-                }
-            },
-            "lastModifiedBy": {
-                "application": null,
-                "device": null,
-                "user": {
-                    "id": "AAAAAAAA-0123-4567-89AB-1B4BB48C3119",
-                    "displayName": null
-                }
-            }
-        },
-        {
-            "@odata.type": "#microsoft.graph.educationAssignment",
-            "classId": "72a7baec-c3e9-4213-a850-f62de0adad5f",
-            "displayName": "Expand options in publish",
-            "closeDateTime": null,
-            "dueDateTime": "2021-11-12T07:59:00Z",
-            "assignDateTime": null,
-            "assignedDateTime": "2021-11-10T23:48:03.9134549Z",
-            "allowLateSubmissions": true,
-            "resourcesFolderUrl": null,
-            "createdDateTime": "2021-11-10T23:42:37.2869391Z",
-            "lastModifiedDateTime": "2021-11-10T23:48:06.490359Z",
-            "allowStudentsToAddResourcesToSubmission": true,
-            "status": "assigned",
-            "notificationChannelUrl": null,
-            "webUrl": null,
-            "addToCalendarAction": "none",
-            "addedStudentAction": "none",
-            "grading": null,
-            "id": "5cf13354-0156-4483-8c19-3185c6252188",
             "instructions": {
                 "content": "",
                 "contentType": "text"

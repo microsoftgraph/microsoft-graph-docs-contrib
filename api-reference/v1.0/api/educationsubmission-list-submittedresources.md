@@ -281,33 +281,6 @@ Content-type: application/json
                     }
                 }
             }
-        },
-        {
-            "assignmentResourceUrl": null,
-            "id": "4df04ce7-1443-4c2a-8f6d-a5807b297b4b",
-            "resource": {
-                "@odata.type": "#microsoft.graph.educationWordResource",
-                "displayName": "Reading Progress KT_2023-04-21.docx",
-                "createdDateTime": "2023-09-07T15:46:18.7652542Z",
-                "lastModifiedDateTime": "2023-09-07T15:46:28.7052498Z",
-                "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!IDwAYNkmlUucm64fxXxnzYYTuh2luKRDvUVGQBLOmvYqism21WrdQ4Aijx5lDIKE/items/0173CEVEPIQNUEHE2FA5DIYJNDTFR4V4HK",
-                "createdBy": {
-                    "application": null,
-                    "device": null,
-                    "user": {
-                        "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
-                        "displayName": null
-                    }
-                },
-                "lastModifiedBy": {
-                    "application": null,
-                    "device": null,
-                    "user": {
-                        "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
-                        "displayName": null
-                    }
-                }
-            }
         }
     ]
 }

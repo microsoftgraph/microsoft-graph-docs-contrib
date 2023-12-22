@@ -147,33 +147,6 @@ Content-type: application/json
                     }
                 }
             }
-        },
-        {
-            "distributeForStudentWork": false,
-            "id": "ceb3a7e7-158e-4164-9f80-104d14884389",
-            "resource": {
-                "@odata.type": "#microsoft.graph.educationPowerPointResource",
-                "displayName": "state diagram.pptx",
-                "createdDateTime": "2021-08-27T14:42:04.8778499Z",
-                "lastModifiedDateTime": "2021-08-27T14:42:04.8778499Z",
-                "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!DPA6q59Tw0mtgmyXRUmrQRqBZTesG-lMkl1cBmvvMeU6BLWBcGc_R6UgCKyYyTin/items/016XPCQEGRJFHRKPSI6RB3XQ6HGTB4L4FV",
-                "createdBy": {
-                    "application": null,
-                    "device": null,
-                    "user": {
-                        "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
-                        "displayName": null
-                    }
-                },
-                "lastModifiedBy": {
-                    "application": null,
-                    "device": null,
-                    "user": {
-                        "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
-                        "displayName": null
-                    }
-                }
-            }
         }
     ]
 }
@@ -293,60 +266,6 @@ Content-type: application/json
                 "createdDateTime": "2023-09-07T13:03:14.8070185Z",
                 "lastModifiedDateTime": "2023-09-07T13:03:14.8070418Z",
                 "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!IDwAYNkmlUucm64fxXxnzYYTuh2luKRDvUVGQBLOmvYGIrNA3ZPMS4f7fGlHPato/items/0173CEVEP5WXB7SESQPFF3VM2DR7VA4KUD",
-                "createdBy": {
-                    "application": null,
-                    "device": null,
-                    "user": {
-                        "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
-                        "displayName": null
-                    }
-                },
-                "lastModifiedBy": {
-                    "application": null,
-                    "device": null,
-                    "user": {
-                        "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
-                        "displayName": null
-                    }
-                }
-            }
-        },
-        {
-            "distributeForStudentWork": false,
-            "id": "b6f15112-dd9d-4841-befd-75d3df5cb28f",
-            "resource": {
-                "@odata.type": "#microsoft.graph.educationWordResource",
-                "displayName": "ad.docx",
-                "createdDateTime": "2023-09-07T13:03:15.8433922Z",
-                "lastModifiedDateTime": "2023-09-07T13:03:15.8434186Z",
-                "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!IDwAYNkmlUucm64fxXxnzYYTuh2luKRDvUVGQBLOmvYGIrNA3ZPMS4f7fGlHPato/items/0173CEVEM3MHQL4F5XLNFKRHNXRW4PPJIV",
-                "createdBy": {
-                    "application": null,
-                    "device": null,
-                    "user": {
-                        "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
-                        "displayName": null
-                    }
-                },
-                "lastModifiedBy": {
-                    "application": null,
-                    "device": null,
-                    "user": {
-                        "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
-                        "displayName": null
-                    }
-                }
-            }
-        },
-        {
-            "distributeForStudentWork": false,
-            "id": "4288e8ea-1f90-4a0f-b915-b69fc823ce59",
-            "resource": {
-                "@odata.type": "#microsoft.graph.educationLinkResource",
-                "displayName": "https://dfgdrgdt",
-                "createdDateTime": "2023-09-07T15:41:08.9008331Z",
-                "lastModifiedDateTime": "2023-09-07T15:41:08.9008543Z",
-                "link": "https://dfgdrgdt",
                 "createdBy": {
                     "application": null,
                     "device": null,
