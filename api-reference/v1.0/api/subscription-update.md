@@ -84,9 +84,9 @@ You can subscribe to changes in Outlook **contact**, **event**, or **message** r
 
 **presence** subscriptions require [encryption](/graph/webhooks-with-resource-data) for notifications that include resource data. Subscription creation fails if [encryptionCertificate](../resources/subscription.md) and [encryptionCertificateId](../resources/subscription.md) aren't specified when notifications need to include resource data. For details about presence subscriptions, see [Get change notifications for presence updates in Microsoft Teams](/graph/changenotifications-for-presence).
 
-### virtual events
+### virtualEventWebinar
 
-Subscriptions on **virtual events** only support basic notifications with support for limited entities of a virtual event. For more details on the supported types of subscriptions see [Get change notifications for Microsoft Teams virtual event updates](/graph/changenotifications-for-virtual-event).
+Subscriptions on virtual events support only basic notifications and are limited to a few entities of a virtual event. For more information on the supported subscription types, see [Get change notifications for Microsoft Teams virtual event updates](/graph/changenotifications-for-virtual-event).
 
 ## HTTP request
 
