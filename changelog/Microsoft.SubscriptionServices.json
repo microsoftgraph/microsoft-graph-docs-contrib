@@ -29,7 +29,7 @@
     {
       "ChangeList": [
         {
-          "Id": "46c87d5f-963e-4d74-80c1-b2be283b84cb",
+          "Id": "e5c4873b-bb4c-45a7-8949-56e634bfb543",
           "ApiChange": "Permission",
           "ChangedApiName": "VirtualEvent.Read",
           "ChangeType": "Addition",
@@ -37,7 +37,7 @@
           "Target": "subscription"
         },
         {
-          "Id": "46c87d5f-963e-4d74-80c1-b2be283b84cb",
+          "Id": "e5c4873b-bb4c-45a7-8949-56e634bfb543",
           "ApiChange": "Permission",
           "ChangedApiName": "VirtualEvent.Read.All",
           "ChangeType": "Addition",
