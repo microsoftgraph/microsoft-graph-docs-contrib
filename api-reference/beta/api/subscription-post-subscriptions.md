@@ -79,7 +79,7 @@ Depending on the resource and the permission type (delegated or application) req
 |[team](../resources/team.md) <br />`/teams/{id}` <br />A particular team. | Team.ReadBasic.All, TeamSettings.Read.All | Not supported.  | Team.ReadBasic.All, TeamSettings.Read.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported.  |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
-|[virtualEventWebinar](../resources/virtualeventwebinar.md) | VirtualEvent.Read | Not supported | VirtualEvent.Read.All |
+|[virtualEventWebinar](../resources/virtualeventwebinar.md) | VirtualEvent.Read | Not supported. | VirtualEvent.Read.All |
 |[baseTask](../resources/basetask.md) (deprecated) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported.  |
 
 [!INCLUDE [teams-subscription-notes](../../includes/teams-subscription-notes.md)]
