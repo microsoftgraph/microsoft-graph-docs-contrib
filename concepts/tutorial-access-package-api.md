@@ -22,7 +22,7 @@ In this tutorial, you learn how to develop code to create a package of resources
 ## Prerequisites
 
 To successfully complete this tutorial, make sure that you have the required prerequisites:
-- Microsoft Entra entitlement management requires specific licenses. For more information, see [License requirements](/azure/active-directory/governance/entitlement-management-overview#license-requirements). For this tutorial, one of the following licenses are required in your tenant:
+- Microsoft Entra entitlement management requires specific licenses. For more information, see [License requirements](/azure/active-directory/governance/entitlement-management-overview#license-requirements). For this tutorial, one of the following licenses is required in your tenant:
     - Microsoft Entra ID P2
     - Microsoft Entra ID Governance
 - Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Global Administrator role.
