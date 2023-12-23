@@ -7,6 +7,7 @@ ms.reviewer: jgangadhar
 ms.localizationpriority: medium
 ms.prod: "governance"
 ms.date: 11/01/2022
+#Customer intent: As a developer integrating with Microsoft Graph, I want to use the access reviews APIs to review and attest to the privileged admin roles that principals in my organization, so that I can ensure proper security and compliance in my organization.
 ---
 
 # Review access to privileged roles using the access reviews API in Microsoft Graph

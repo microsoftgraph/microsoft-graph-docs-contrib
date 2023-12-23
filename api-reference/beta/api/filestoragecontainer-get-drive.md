@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get the properties of a [drive](../resources/drive.md) associated with a [fileStorageContainer](../resources/filestoragecontainer.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see the [permissions reference](/graph/permissions-reference).

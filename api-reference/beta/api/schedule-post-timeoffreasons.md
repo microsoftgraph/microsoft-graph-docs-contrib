@@ -1,7 +1,7 @@
 ---
 title: "Create timeOffReason"
 description: "Create a new timeOffReason."
-author: "aaku"
+author: "shanemalone"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -68,6 +68,7 @@ Content-type: application/json
 
 {
   "displayName": "Vacation",
+  "code": "VacationCode",
   "iconType": "plane",
   "isActive": true
 }
@@ -127,6 +128,7 @@ Content-type: application/json
   "createdDateTime": "2019-03-12T22:10:38.242Z",
   "lastModifiedDateTime": "2019-03-12T22:10:38.242Z",
   "displayName": "Vacation",
+  "code": "VacationCode",
   "iconType": "plane",
   "isActive": true,
   "lastModifiedBy": {

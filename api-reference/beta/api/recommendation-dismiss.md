@@ -3,7 +3,7 @@ title: "recommendation: dismiss"
 description: "Dismiss a recommendation object and updates its status to dismissed."
 author: "ddeeps2610"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
 

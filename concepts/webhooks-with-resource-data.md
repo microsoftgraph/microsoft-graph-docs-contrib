@@ -7,6 +7,7 @@ ms.reviewer: keylimesoda
 ms.prod: "change-notifications"
 ms.localizationpriority: high
 ms.date: 06/23/2023
+#customer intent: As a developer, I want to receive notifications of changed data for specific Microsoft Graph resources, so that I can build apps that process the changes according to the business requirements.
 ---
 
 # Set up change notifications that include resource data
@@ -596,5 +597,6 @@ decryptedPayload += decipher.final('utf8');
 - [Update subscription](/graph/api/subscription-update)
 - [Change notifications for Outlook resources in Microsoft Graph](outlook-change-notifications-overview.md)
 - [Change notifications for online meetings in Microsoft Graph](changenotifications-for-onlinemeeting.md)
+- [Change notifications for presence in Microsoft Graph](changenotifications-for-presence.md)
 - [Meeting notification C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-meeting-notification/csharp)
 - [Meeting notification Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-meeting-notification/nodejs)

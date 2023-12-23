@@ -73,8 +73,34 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-11-06T20:26:18.8331804Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+      {
+      "ChangeList": [
+        {
+          "Id": "d9e91351-f112-461c-9979-f37aefda3571",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastSuccessfulSignInDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastSuccessfulSignInDateTime** property to the [signInActivity](https://learn.microsoft.com/en-us/graph/api/resources/signInActivity?view=graph-rest-beta) resource.",
+          "Target": "signInActivity"
+        },
+        {
+          "Id": "d9e91351-f112-461c-9979-f37aefda3571",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastSuccessfulSignInRequestId",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastSuccessfulSignInRequestId** property to the [signInActivity](https://learn.microsoft.com/en-us/graph/api/resources/signInActivity?view=graph-rest-beta) resource.",
+          "Target": "signInActivity"
+        }
+      ],
+      "Id": "d9e91351-f112-461c-9979-f37aefda3571",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-12-05T20:31:40.7734069Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
     },
     {
       "ChangeList": [
@@ -123,8 +149,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-11-06T22:08:03.357469Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
     },
     {
       "ChangeList": [
@@ -1959,6 +1985,112 @@
     {
       "ChangeList": [
         {
+          "Id": "921c584a-25cb-4561-936f-966ba933cccd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "activeUsersBreakdownMetric",
+          "ChangeType": "Addition",
+          "Description": "Added the [activeUsersBreakdownMetric](https://learn.microsoft.com/en-us/graph/api/resources/activeUsersBreakdownMetric?view=graph-rest-beta) resource and supported methods.",
+          "Target": "activeUsersBreakdownMetric"
+        },
+        {
+          "Id": "921c584a-25cb-4561-936f-966ba933cccd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "activeUsersMetric",
+          "ChangeType": "Addition",
+          "Description": "Added the [activeUsersMetric](https://learn.microsoft.com/en-us/graph/api/resources/activeUsersMetric?view=graph-rest-beta) resource and supported methods.",
+          "Target": "activeUsersMetric"
+        },
+        {
+          "Id": "921c584a-25cb-4561-936f-966ba933cccd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationsMetric",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationsMetric](https://learn.microsoft.com/en-us/graph/api/resources/authenticationsMetric?view=graph-rest-beta) resource and supported methods.",
+          "Target": "authenticationsMetric"
+        },
+        {
+          "Id": "921c584a-25cb-4561-936f-966ba933cccd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "dailyUserInsightMetricsRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [dailyUserInsightMetricsRoot](https://learn.microsoft.com/en-us/graph/api/resources/dailyUserInsightMetricsRoot?view=graph-rest-beta) resource type.",
+          "Target": "dailyUserInsightMetricsRoot"
+        },
+        {
+          "Id": "921c584a-25cb-4561-936f-966ba933cccd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "insightSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [insightSummary](https://learn.microsoft.com/en-us/graph/api/resources/insightSummary?view=graph-rest-beta) resource and supported methods.",
+          "Target": "insightSummary"
+        },
+        {
+          "Id": "921c584a-25cb-4561-936f-966ba933cccd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mfaCompletionMetric",
+          "ChangeType": "Addition",
+          "Description": "Added the [mfaCompletionMetric](https://learn.microsoft.com/en-us/graph/api/resources/mfaCompletionMetric?view=graph-rest-beta) resource and supported methods.",
+          "Target": "mfaCompletionMetric"
+        },
+        {
+          "Id": "921c584a-25cb-4561-936f-966ba933cccd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "monthlyUserInsightMetricsRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [monthlyUserInsightMetricsRoot](https://learn.microsoft.com/en-us/graph/api/resources/monthlyUserInsightMetricsRoot?view=graph-rest-beta) resource type.",
+          "Target": "monthlyUserInsightMetricsRoot"
+        },
+        {
+          "Id": "921c584a-25cb-4561-936f-966ba933cccd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userCountMetric",
+          "ChangeType": "Addition",
+          "Description": "Added the [userCountMetric](https://learn.microsoft.com/en-us/graph/api/resources/userCountMetric?view=graph-rest-beta) resource and a supported method.",
+          "Target": "userCountMetric"
+        },
+        {
+          "Id": "921c584a-25cb-4561-936f-966ba933cccd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userInsightsRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [userInsightsRoot](https://learn.microsoft.com/en-us/graph/api/resources/userInsightsRoot?view=graph-rest-beta) resource type.",
+          "Target": "userInsightsRoot"
+        },
+        {
+          "Id": "921c584a-25cb-4561-936f-966ba933cccd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userRequestsMetric",
+          "ChangeType": "Addition",
+          "Description": "Added the [userRequestsMetric](https://learn.microsoft.com/en-us/graph/api/resources/userRequestsMetric?view=graph-rest-beta) resource and supported methods.",
+          "Target": "userRequestsMetric"
+        },
+        {
+          "Id": "921c584a-25cb-4561-936f-966ba933cccd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userSignUpMetric",
+          "ChangeType": "Addition",
+          "Description": "Added the [userSignUpMetric](https://learn.microsoft.com/en-us/graph/api/resources/userSignUpMetric?view=graph-rest-beta) resource and supported methods.",
+          "Target": "userSignUpMetric"
+        },
+        {
+          "Id": "921c584a-25cb-4561-936f-966ba933cccd",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "userInsights",
+          "ChangeType": "Addition",
+          "Description": "Added the **userInsights** relationship to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
+          "Target": "reportRoot"
+        }
+      ],
+      "Id": "921c584a-25cb-4561-936f-966ba933cccd",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-11-27T00:00:00.8389425Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "1748a700-32f6-42aa-8cfe-f190c0f27b21",
           "ApiChange": "Resource",
           "ChangedApiName": "relyingPartyDetailedSummary,listing",
@@ -2913,8 +3045,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-08-31T19:58:45.348003Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
     },
     {
       "ChangeList": [
@@ -2939,7 +3071,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "serviceActivity",
           "ChangeType": "Addition",
-          "Description": "Added the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource",
+          "Description": "Added the [serviceActivity](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivity?view=graph-rest-beta) resource.",
           "Target": "serviceActivity"
         },
         {

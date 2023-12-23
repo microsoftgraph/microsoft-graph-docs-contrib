@@ -8,6 +8,7 @@ ms.localizationpriority: high
 ms.prod: "applications"
 ms.date: 10/26/2023
 ms.custom: graphiamtop20, scenarios:getting-started
+#Customer-intent: As a developer integrating with Microsoft Graph, I want to learn about using Microsoft Graph permissions, so that I can properly request and manage permissions for my app.
 ---
 
 # Overview of Microsoft Graph permissions
@@ -47,7 +48,7 @@ In a delegated access scenario, an app may allow users to sign in with their per
 When a user signs in to an app they, or, in some cases, an administrator, are given a chance to consent to the delegated permissions. If they grant consent, the app can access resources and APIs within the boundaries of the user's permissions.
 
 > [!NOTE]
-> Permissions granted through [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference?toc=/graph/toc.json) don't limit the app to calling Microsoft Graph APIs only.
+> Permissions granted through [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json) don't limit the app to calling Microsoft Graph APIs only.
 
 ### Application permissions
 
@@ -61,7 +62,7 @@ Apart from being assigned Microsoft Graph application permissions, an app may al
 - When the app is assigned a Microsoft Entra built-in or custom administrative roles.
 
 > [!NOTE]
-> Permissions granted through [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference?toc=/graph/toc.json) don't limit the app to calling Microsoft Graph APIs only.
+> Permissions granted through [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json) don't limit the app to calling Microsoft Graph APIs only.
 
 ### Comparison of delegated and application permissions
 

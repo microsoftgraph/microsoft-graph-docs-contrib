@@ -8,6 +8,7 @@ ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: conceptualPageType
 ms.date: 06/30/2022
+#customer intent: As a developer, I want to understand how to configure the scope of Microsoft Entra access reviews through Microsoft Graph, so that I can automate the process of reviewing and managing access to Microsoft Entra resources.
 ---
 
 # Configure the scope of your access review using the Microsoft Graph API
@@ -22,7 +23,7 @@ The resources to review are configured in the **scope** property of the [accessR
 |[accessReviewInactiveUsersQueryScope](/graph/api/resources/accessreviewinactiveusersqueryscope)|Inherits from **accessReviewQueryScope**. Used when only inactive users are reviewed. Their inactive status is specified by the **inactiveDuration** property. |<ul><li>Group membership of only inactive users.</li><ul>|
 |[principalResourceMembershipsScope](/graph/api/resources/principalResourceMembershipsScope)|Inherits from **accessReviewScope**. Best applicable to review principals' access to resources where you configure unique pools of principals and resources.|<ul><li>Reviewing access of three specific principals across one Microsoft 365 group *and* one privileged Microsoft Entra role.</li><ul>|
 
-In this article, you'll learn how to scope your access review using these three derived resource types.
+In this article, you learn how to scope your access review using these three derived resource types.
 
 ## Use accessReviewQueryScope and accessReviewInactiveUsersQueryScope to configure scope
 
@@ -42,7 +43,7 @@ The following example scopes the review to both direct and transitive members of
 }
 ```
 
-**Example scenario:** Suppose group A has three direct members - users AU1 and AU2 and group G1. Group G1 on the other hand has two members - users GU1 and GU2. Users GU1 and GU2 are therefore transitive members of the nested group G1. Four objects will be included in the review: users AU1, AU2, GU1, and GU2.
+**Example scenario:** Suppose group A has three direct members - users AU1 and AU2 and group G1. Group G1 on the other hand has two members - users GU1 and GU2. Users GU1 and GU2 are therefore transitive members of the nested group G1. Four objects are included in the review: users AU1, AU2, GU1, and GU2.
 
 To review *only inactive users* assigned to the group:
 
@@ -158,7 +159,7 @@ The following example scopes the review to direct members of all teams who are g
     
 Additionally, because this review is applied on all Teams-enabled Microsoft 365 groups, configure the **instanceEnumerationScope** to specify the Teams-enabled Microsoft 365 groups to review. Dynamic groups and role-assignable groups aren't included in this review.
 
-This review won't include B2B direct connect users in teams with shared channels. To include B2B direct connect users in teams with shared channels, see [Example 11: Review all users assigned to a team, including B2B direct connect users in a team with shared channels](#example-11-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels).
+This review doesn't include B2B direct connect users in teams with shared channels. To include B2B direct connect users in teams with shared channels, see [Example 11: Review all users assigned to a team, including B2B direct connect users in a team with shared channels](#example-11-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels).
 
 #### Review all inactive guest users assigned to all Teams
 
@@ -179,7 +180,7 @@ The following example scopes the review to direct members of all teams who are i
 
 Additionally, because this review is applied on all teams, configure the **instanceEnumerationScope** property to specify all teams. Dynamic groups and role-assignable groups aren't included in this review.
 
-This review won't include B2B direct connect users in teams with shared channels. To include B2B direct connect users in teams with shared channels, see [Example 11: Review all users assigned to a team, including B2B direct connect users in a team with shared channels](#example-11-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels).
+This review doesn't include B2B direct connect users in teams with shared channels. To include B2B direct connect users in teams with shared channels, see [Example 11: Review all users assigned to a team, including B2B direct connect users in a team with shared channels](#example-11-review-all-users-assigned-to-a-team-including-b2b-direct-connect-users-in-a-team-with-shared-channels).
 
 ---
 
@@ -300,7 +301,7 @@ In this example, the access review scope is all users who are members of a team,
 }
 ```
 
-To review B2B direct connect users and teams within shared channels, you must specify the `/teams/{groupId}/channels?$filter=(membershipType eq 'shared')` **query** pattern in the **resourceScopes** object. An *all teams* review, such as [Example 6](#review-all-inactive-guest-users-assigned-to-all-teams), won't include B2B direct connect users and teams within shared channels.
+To review B2B direct connect users and teams within shared channels, you must specify the `/teams/{groupId}/channels?$filter=(membershipType eq 'shared')` **query** pattern in the **resourceScopes** object. An *all teams* review, such as [Example 6](#review-all-inactive-guest-users-assigned-to-all-teams), doesn't include B2B direct connect users and teams within shared channels.
 
 > [!NOTE]
 > Access review of B2B direct connect users and teams is only supported in single-stage access reviews and not in multi-stage access reviews.
@@ -322,6 +323,39 @@ To review B2B direct connect users and teams within shared channels, you must sp
             "@odata.type": "#microsoft.graph.accessReviewQueryScope",
             "query": "/roleManagement/directory/roleDefinitions/{role id}",
             "queryType": "MicrosoftGraph"
+        }
+    ]
+}
+```
+
+
+### Example 13: Review all users assigned to an application
+
+In this example, the access review scope is all users who are assigned to any of the roles of the application.  The principals whose access is to be reviewed are specified by elements of **principalScope** in the [principalResourceMembershipsScope](/graph/api/resources/principalresourcemembershipsscope). This example has two elements, for the users directly assigned to the [application roles](/graph/api/resources/approleassignment), and the users who are members of groups assigned to the application roles.  The application is specified by the ID of the application's [service principal](/graph/api/resources/serviceprincipal).
+
+```http
+"scope": {
+    "@odata.type": "#microsoft.graph.principalResourceMembershipsScope",
+    "principalScopes": [
+        {
+            "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+            "query": "/v1.0/users",
+            "queryType": "MicrosoftGraph",
+            "queryRoot": null
+        },
+        {
+            "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+            "query": "./members/microsoft.graph.user",
+            "queryType": "MicrosoftGraph",
+            "queryRoot": "/v1.0/groups"
+        }
+    ],
+    "resourceScopes": [
+        {
+            "@odata.type": "#microsoft.graph.accessReviewQueryScope",
+            "query": "/v1.0/servicePrincipals/{servicePrincipalId}",
+            "queryType": "MicrosoftGraph",
+            "queryRoot": null
         }
     ]
 }
