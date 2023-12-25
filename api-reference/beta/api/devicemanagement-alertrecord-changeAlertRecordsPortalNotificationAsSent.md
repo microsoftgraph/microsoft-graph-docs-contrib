@@ -1,7 +1,7 @@
 ---
 title: "alertRecord: changeAlertRecordsPortalNotificationAsSent"
 description: "Set a list of alert records' notification status to sent via setting isPortalNotificationSent property to true for current user."
-author: "huicongzhou"
+author: "abbyzhccc"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
