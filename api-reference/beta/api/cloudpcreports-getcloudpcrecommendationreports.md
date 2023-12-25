@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # cloudPcReports: getCloudPcRecommendationReports
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -17,6 +18,7 @@ Get the device recommendation related reports for Cloud PCs, it can be the usage
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -36,12 +38,14 @@ POST /deviceManagement/virtualEndpoint/reports/getCloudPcRecommendationReports
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
+
 In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
@@ -57,8 +61,6 @@ The following table shows the parameters that can be used with this action.
 |skip|Int32|Number of records to skip.|
 |top|Int32|The number of top records to return.|
 
-
-
 ## Response
 
 If successful, this action returns a `200 OK` response code and a Stream in the response body.
@@ -68,8 +70,10 @@ If successful, this action returns a `200 OK` response code and a Stream in the 
 ### Example 1: List recommendation reports by device
 
 #### Request
+
 The following example is to list top 50 devices reports.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "cloudpcreportsthis.getcloudpcrecommendationreports"
@@ -102,8 +106,8 @@ Content-length: 262
 }
 ```
 
-
 #### Response
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -193,12 +197,13 @@ Content-Type: application/octet-stream
 ### Example 2: get summary reports by usage insight
 
 #### Request
+
 The following example is to summarize the report by usage insight.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "cloudpcreportsthis.getcloudpcrecommendationreports"
+  "name": "cloudpcreportsthis.getcloudpcrecommendationreports_byusageinsight"
 }
 -->
 ``` http
@@ -218,8 +223,8 @@ Content-length: 262
 }
 ```
 
-
 #### Response
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
