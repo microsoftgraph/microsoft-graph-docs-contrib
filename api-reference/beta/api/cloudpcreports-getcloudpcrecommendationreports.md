@@ -193,7 +193,7 @@ Content-Type: application/octet-stream
 }
 ```
 
-### Example 2: get summary reports by usage insight
+### Example 2: Get summary reports by usage insight
 
 #### Request
 
