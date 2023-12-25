@@ -73,7 +73,6 @@ If successful, this action returns a `200 OK` response code and a Stream in the 
 
 The following example is to list top 50 devices reports.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "cloudpcreportsthis.getcloudpcrecommendationreports"
@@ -200,7 +199,6 @@ Content-Type: application/octet-stream
 
 The following example is to summarize the report by usage insight.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "cloudpcreportsthis.getcloudpcrecommendationreports_byusageinsight"
