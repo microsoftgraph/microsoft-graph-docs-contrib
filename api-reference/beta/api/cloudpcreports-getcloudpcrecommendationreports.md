@@ -1,6 +1,6 @@
 ---
 title: "cloudPcReports: getCloudPcRecommendationReports"
-description: "Get the device recommendation related reports for CloudPCs, it can be the usage category report which categorize the cloudPC with `Undersized`, `Oversized`, `Rightsized`, `Underutilized`, and also provide the recommended SKU if current Cloud PC is not `Rightsized`."
+description: "Get the device recommendation related reports for Cloud PCs, it can be the usage category report, which categorizes the Cloud PC with `Undersized`, `Oversized`, `Rightsized`, `Underutilized`, and also provide the recommended SKU if current Cloud PC isn't `Rightsized`."
 author: "XiaolouT"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the device recommendation related reports for CloudPCs, it can be the usage category report which categorize the cloudPC with `Undersized`, `Oversized`, `Rightsized`, `Underutilized`, and also provide the recommended SKU if current Cloud PC is not `Rightsized`.
+Get the device recommendation related reports for Cloud PCs, it can be the usage category report, which categorizes the Cloud PC with `Undersized`, `Oversized`, `Rightsized`, `Underutilized`, and also provide the recommended SKU if current Cloud PC isn't `Rightsized`.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -68,7 +68,7 @@ If successful, this action returns a `200 OK` response code and a Stream in the 
 ### Example 1: List recommendation reports by device
 
 #### Request
-The following is an example of a request.
+The following example is to list top 50 devices reports.
 
 <!-- {
   "blockType": "request",
@@ -104,7 +104,6 @@ Content-length: 262
 
 
 #### Response
-The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -194,7 +193,7 @@ Content-Type: application/octet-stream
 ### Example 2: get summary reports by usage insight
 
 #### Request
-The following is an example of a request.
+The following example is to summarize the report by usage insight.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -221,7 +220,6 @@ Content-length: 262
 
 
 #### Response
-The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
