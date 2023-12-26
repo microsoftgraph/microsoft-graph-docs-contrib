@@ -4,6 +4,7 @@ description: "Use data in the odata.nextLink property in the response to retriev
 ms.reviewer: dkershaw
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
+#Customer intent: As a developer, I want to learn how to effeciently apply both server-side and client-side paging to my Microsoft Graph queries.
 ---
 
 # Paging Microsoft Graph data in your app
