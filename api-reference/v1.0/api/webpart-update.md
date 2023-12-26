@@ -49,6 +49,26 @@ In the request body, supply a JSON representation of the [textWebPart](../resour
 
 To ensure successful parsing of the request body, the `@odata.type=#microsoft.graph.textwebpart` or `@odata.type=#microsoft.graph.standardwebpart` must be included in the request body.
 
+### Supported standard web parts
+
+Only the following web parts are supported when updating a standard web part using the Microsoft Graph API. Attempting to update an unsupported web parts will result in a failure or exception.
+
+| #   | Web Part       | Type                                   |
+| --- | -------------- | -------------------------------------- |
+| 1   | Bing Maps      | `e377ea37-9047-43b9-8cdb-a761be2f8e09` |
+| 2   | Button         | `0f087d7f-520e-42b7-89c0-496aaf979d58` |
+| 3   | Call To Action | `df8e44e7-edd5-46d5-90da-aca1539313b8` |
+| 4   | Divider        | `2161a1c6-db61-4731-b97c-3cdb303f7cbb` |
+| 5   | Document Embed | `b7dd04e1-19ce-4b24-9132-b60a1c2b910d` |
+| 6   | Image          | `d1d91016-032f-456d-98a4-721247c305e8` |
+| 7   | Image Gallery  | `af8be689-990e-492a-81f7-ba3e4cd3ed9c` |
+| 8   | Link Preview   | `6410b3b6-d440-4663-8744-378976dc041e` |
+| 9   | Org Chart      | `e84a8ca2-f63c-4fb9-bc0b-d8eef5ccb22b` |
+| 10  | People         | `7f718435-ee4d-431c-bdbf-9c4ff326f46e` |
+| 11  | Quick Links    | `c70391ea-0b10-4ee9-b2b4-006d3fcad0cd` |
+| 12  | Spacer         | `8654b779-4886-46d4-8ffb-b5ed960ee986` |
+| 13  | Youtube Embed  | `544dd15b-cf3c-441b-96da-004d5a8cea1d` |
+
 ## Response
 
 If successful, this method returns a `200 OK` response code and an updated [webPart](../resources/webpart.md) object in the response body.

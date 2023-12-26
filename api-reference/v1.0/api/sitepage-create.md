@@ -49,6 +49,28 @@ In the request body, supply a JSON representation of the [sitePage](../resources
 > **Notes:** :
 > 1. To ensure successful parsing of the request body, the `@odata.type=#microsoft.graph.sitePage` must be included in the request body.
 > 2. If you're using the response from the [Get sitepage](../api/sitepage-get.md) operation to create a **sitePage**, we recommend that you add the HTTP header `Accept: application/json;odata.metadata=none`. This will remove all OData metadata from the response. You can also manually remove all OData metadata.
+> 3. Only the web part listed in the [Supported web parts](#supported-web-parts) section are supported when creating a [sitePage](../resources/sitepage.md) using the Microsoft Graph API. Attempting to add unsupported web parts will result in a failure or exception.
+
+### Supported web parts
+
+There are two kinds of web parts that can be added to a [sitePage](../resources/sitepage.md): [standardWebParts](../resources/standardwebpart.md) and [textWebPart](../resources/textwebpart.md). The following table lists the supported web parts for standard web parts.
+
+| #   | Web Part       | Type                                   |
+| --- | -------------- | -------------------------------------- |
+| 1   | Bing Maps      | `e377ea37-9047-43b9-8cdb-a761be2f8e09` |
+| 2   | Button         | `0f087d7f-520e-42b7-89c0-496aaf979d58` |
+| 3   | Call To Action | `df8e44e7-edd5-46d5-90da-aca1539313b8` |
+| 4   | Divider        | `2161a1c6-db61-4731-b97c-3cdb303f7cbb` |
+| 5   | Document Embed | `b7dd04e1-19ce-4b24-9132-b60a1c2b910d` |
+| 6   | Image          | `d1d91016-032f-456d-98a4-721247c305e8` |
+| 7   | Image Gallery  | `af8be689-990e-492a-81f7-ba3e4cd3ed9c` |
+| 8   | Link Preview   | `6410b3b6-d440-4663-8744-378976dc041e` |
+| 9   | Org Chart      | `e84a8ca2-f63c-4fb9-bc0b-d8eef5ccb22b` |
+| 10  | People         | `7f718435-ee4d-431c-bdbf-9c4ff326f46e` |
+| 11  | Quick Links    | `c70391ea-0b10-4ee9-b2b4-006d3fcad0cd` |
+| 12  | Spacer         | `8654b779-4886-46d4-8ffb-b5ed960ee986` |
+| 13  | Youtube Embed  | `544dd15b-cf3c-441b-96da-004d5a8cea1d` |
+
 ## Response
 
 If successful, this method returns a `201` and the created [sitePage](../resources/baseSitePage.md) object.
