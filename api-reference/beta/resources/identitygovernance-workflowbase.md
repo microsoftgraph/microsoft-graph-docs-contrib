@@ -25,7 +25,7 @@ None.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|category|microsoft.graph.identityGovernance.lifecycleWorkflowCategory|The category of the workflow. The possible values are: `joiner`, `leaver`, `unknownFutureValue`.|
+|category|microsoft.graph.identityGovernance.lifecycleWorkflowCategory|The category of the workflow. The possible values are: `joiner`, `leaver`, `mover`, `unknownFutureValue`.|
 |createdDateTime|DateTimeOffset|When a workflow was created.|
 |description|String|A string that describes the purpose of the workflow.|
 |displayName|String|A string to identify the workflow.|

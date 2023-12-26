@@ -2,6 +2,7 @@
 title: "inactiveGroupFinding resource type"
 description: "Contains analytic information for an inactive group in an authorization system, including actions granted to the group and its members in the last 90 days."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
@@ -21,7 +22,7 @@ Inherits from [finding](../resources/finding.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List inactiveGroupFindings](../api/inactivegroupfinding-list.md)|[inactiveGroupFinding](../resources/inactivegroupfinding.md) collection|Get a list of the [inactiveGroupFinding](../resources/inactivegroupfinding.md) objects and their properties.|
+|[List inactiveGroupFinding objects](../api/inactivegroupfinding-list.md)|[inactiveGroupFinding](../resources/inactivegroupfinding.md) collection|Get a list of the [inactiveGroupFinding](../resources/inactivegroupfinding.md) objects and their properties.|
 |[Get inactiveGroupFinding](../api/inactivegroupfinding-get.md)|[inactiveGroupFinding](../resources/inactivegroupfinding.md)|Read the properties and relationships of an [inactiveGroupFinding](../resources/inactivegroupfinding.md) object.|
 
 ## Properties

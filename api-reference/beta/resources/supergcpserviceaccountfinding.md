@@ -2,6 +2,7 @@
 title: "superGcpServiceAccountFinding resource type"
 description: "Represents the super GCP service accounts."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
@@ -20,7 +21,7 @@ Inherits from [identityFinding](../resources/identityfinding.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List superGcpServiceAccountFindings](../api/supergcpserviceaccountfinding-list.md)|[superGcpServiceAccountFinding](../resources/supergcpserviceaccountfinding.md) collection|Get a list of the [superGcpServiceAccountFinding](../resources/supergcpserviceaccountfinding.md) objects and their properties.|
+|[List superGcpServiceAccountFinding objects](../api/supergcpserviceaccountfinding-list.md)|[superGcpServiceAccountFinding](../resources/supergcpserviceaccountfinding.md) collection|Get a list of the [superGcpServiceAccountFinding](../resources/supergcpserviceaccountfinding.md) objects and their properties.|
 |[Get superGcpServiceAccountFinding](../api/supergcpserviceaccountfinding-get.md)|[superGcpServiceAccountFinding](../resources/supergcpserviceaccountfinding.md)|Read the properties and relationships of a [superGcpServiceAccountFinding](../resources/supergcpserviceaccountfinding.md) object.|
 |[aggregatedSummary](../api/supergcpserviceaccountfinding-aggregatedsummary.md)|[permissionsAnalyticsAggregatedIdentitySummary](../resources/permissionsanalyticsaggregatedidentitysummary.md)|Return the total number of an identity type and the total number of a specific finding for that identity in an authorization system.|
 

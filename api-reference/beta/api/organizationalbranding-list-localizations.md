@@ -22,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "organizationalbranding_list_localizations" } -->
 [!INCLUDE [permissions-table](../includes/permissions/organizationalbranding-list-localizations-permissions.md)]
 
+[!INCLUDE [rbac-org-branding-apis-read](../includes/rbac-for-apis/rbac-org-branding-apis-read.md)]
+
 ## HTTP request
 
 <!-- {

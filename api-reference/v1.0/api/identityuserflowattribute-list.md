@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of [identityUserFlowAttribute](../resources/identityuserflowattribute.md) objects.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 

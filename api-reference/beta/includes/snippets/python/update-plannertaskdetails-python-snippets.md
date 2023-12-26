@@ -42,13 +42,10 @@ request_body = PlannerTaskDetails(
 	description = "Updated task details properties:\nUpdated checklist:Sub items\nUpdated references:Related links",
 )
 
-request_configuration = DetailsRequestBuilder.DetailsRequestBuilderPatchRequestConfiguration(
-headers = {
-		'Prefer' : "return=representation",
-		'If-Match' : "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"",
-}
+request_configuration = DetailsRequestBuilder.DetailsRequestBuilderPatchRequestConfiguration()
+request_configuration.headers.add("Prefer", "return=representation")
+request_configuration.headers.add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 
-)
 
 result = await graph_client.planner.tasks.by_planner_task_id('plannerTask-id').details.patch(request_body, request_configuration = request_configuration)
 

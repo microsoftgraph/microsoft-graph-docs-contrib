@@ -2,6 +2,7 @@
 title: "Get azureAuthorizationSystemResource"
 description: "Read the properties and relationships of an azureAuthorizationSystemResource object for a provided Azure authorization system."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
@@ -57,6 +58,7 @@ If successful, this method returns a `200 OK` response code and an [azureAuthori
 
 ### Request
 The following example shows a request to get an Azure resource for a provided Azure authorization system.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_azureauthorizationsystemresource"
@@ -65,6 +67,16 @@ The following example shows a request to get an Azure resource for a provided Az
 ``` http
 GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.azureAuthorizationSystem/resources/L3N1YnNjcmlwdGlvbnMvMmM0N2FiYjctYWRlNi00NzAwLTlhMTktYWM4YzE5MWEyYWI4L3Jlc291cmNlR3JvdXBzLzJlUmVzb3VyY2VHcm91cC9wcm92aWRlcnMvTWljcm9zb2Z0Lk5ldHdvcmsvdmlydHVhbE5ldHdvcmtzLzJlUmVzb3VyY2VHcm91cC12bmV0
 ```
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-azureauthorizationsystemresource-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-azureauthorizationsystemresource-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 The following example shows the response.

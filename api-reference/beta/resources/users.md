@@ -35,7 +35,7 @@ One of the following [permissions](/graph/permissions-reference) is required to 
 - Directory.ReadWrite.All
 - Directory.AccessAsUser.All
 
-In addition to the required permissions, the user operations that the calling user can perform are bounded to the privileges granted to the calling user via specific [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json). For more information, see the *Who can reset passwords?* and *Who can update sensitive attributes?* sections.
+In addition to the required permissions, the user operations that the calling user can perform are bounded to the privileges granted to the calling user via specific [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json). For more information, see the *Who can reset passwords?* and *Who can update sensitive attributes?* sections.
 
 ### Default user permissions
 

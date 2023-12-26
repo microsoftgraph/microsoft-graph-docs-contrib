@@ -2,6 +2,7 @@
 title: "accountsWithAccess resource type"
 description: "Contains information on external AWS accounts that have access to a storage bucket."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
@@ -15,17 +16,19 @@ Namespace: microsoft.graph
 
 Contains information on external AWS accounts that have access to a storage bucket.
 
-This is an abstract type.
+This is an abstract type from which the following types inherit.
+
+- [allAccountsWithAccess](../resources/allaccountswithaccess.md)
+- [enumeratedAccountsWithAccess](../resources/enumeratedaccountswithaccess.md)
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accountsWithAccess"

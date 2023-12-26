@@ -2,6 +2,7 @@
 title: "awsExternalSystemAccessRoleFinding resource type"
 description: "Represents the findings for roles that allow for external system access."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
@@ -20,7 +21,7 @@ Inherits from [finding](../resources/finding.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List awsExternalSystemAccessRoleFindings](../api/awsexternalsystemaccessrolefinding-list.md)|[awsExternalSystemAccessRoleFinding](../resources/awsexternalsystemaccessrolefinding.md) collection|Get a list of the [awsExternalSystemAccessRoleFinding](../resources/awsexternalsystemaccessrolefinding.md) objects and their properties.|
+|[List awsExternalSystemAccessRoleFinding objects](../api/awsexternalsystemaccessrolefinding-list.md)|[awsExternalSystemAccessRoleFinding](../resources/awsexternalsystemaccessrolefinding.md) collection|Get a list of the [awsExternalSystemAccessRoleFinding](../resources/awsexternalsystemaccessrolefinding.md) objects and their properties.|
 |[Get awsExternalSystemAccessRoleFinding](../api/awsexternalsystemaccessrolefinding-get.md)|[awsExternalSystemAccessRoleFinding](../resources/awsexternalsystemaccessrolefinding.md)|Read the properties and relationships of an [awsExternalSystemAccessRoleFinding](../resources/awsexternalsystemaccessrolefinding.md) object.|
 
 
@@ -38,7 +39,7 @@ Inherits from [finding](../resources/finding.md).
 |role|[awsRole](../resources/awsrole.md)|The role that has access to external accounts. Supports `$orderby` (for `role/displayName`) and `$filter` as follows: `$filter=role/authorizationSystem/authorizationSystemId IN ['authorizationSystemIds']` and `$filter=role/authorizationSystem/authorizationSystemName eq 'authsystemname'`. Autoexpanded by default.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

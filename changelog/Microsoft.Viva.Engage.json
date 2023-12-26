@@ -1,0 +1,46 @@
+﻿{
+    "changelog": [
+      {
+        "ChangeList": [
+          {
+            "Id": "6ef521a9-141c-48fe-a109-1082be3fb5b3",
+            "ApiChange": "Resource",
+            "ChangedApiName": "community",
+            "ChangeType": "Addition",
+            "Description": "Added the [community](https://learn.microsoft.com/en-us/graph/api/resources/community?view=graph-rest-beta) resource and supported methods.",
+            "Target": "community"
+          },
+          {
+            "Id": "6ef521a9-141c-48fe-a109-1082be3fb5b3",
+            "ApiChange": "Resource",
+            "ChangedApiName": "engagementAsyncOperation",
+            "ChangeType": "Addition",
+            "Description": "Added the [engagementAsyncOperation](https://learn.microsoft.com/en-us/graph/api/resources/engagementAsyncOperation?view=graph-rest-beta) resource and a supported method.",
+            "Target": "engagementAsyncOperation"
+          },
+          {
+            "Id": "6ef521a9-141c-48fe-a109-1082be3fb5b3",
+            "ApiChange": "Relationship",
+            "ChangedApiName": "communities",
+            "ChangeType": "Change",
+            "Description": "Added the **communities** relationship to the [employeeExperience](https://learn.microsoft.com/en-us/graph/api/resources/employeeExperience?view=graph-rest-beta) resource.",
+            "Target": "employeeExperience"
+          },
+          {
+            "Id": "6ef521a9-141c-48fe-a109-1082be3fb5b3",
+            "ApiChange": "Relationship",
+            "ChangedApiName": "engagementAsyncOperations",
+            "ChangeType": "Change",
+            "Description": "Added the **engagementAsyncOperations** relationship to the [employeeExperience](https://learn.microsoft.com/en-us/graph/api/resources/employeeExperience?view=graph-rest-beta) resource.",
+            "Target": "employeeExperience"
+          }
+        ],
+        "Id": "6ef521a9-141c-48fe-a109-1082be3fb5b3",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2023-12-11T17:39:23.6974548Z",
+        "WorkloadArea": "Employee experience",
+        "SubArea": "Employee engagement"
+      }
+    ]
+  }
