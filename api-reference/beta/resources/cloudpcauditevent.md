@@ -48,7 +48,7 @@ Represents the audit event entity.
 |create|Create operation.|
 |delete|Delete operation.|
 |patch|Patch operation.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ### cloudPcAuditActivityResult values
 
@@ -58,14 +58,14 @@ Represents the audit event entity.
 |clientError|Operation failed with client error.|
 |failure|Operation failed.|
 |timeout|Operation failed with timeout.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ### cloudPcAuditCategory values
 
 |Member|Description|
 |:---|:---|
 |cloudPC|Cloud PC category.|
-|unknownFutureValue |Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue |Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 
