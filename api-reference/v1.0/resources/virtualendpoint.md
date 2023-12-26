@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a container for APIs to manage Cloud PCs. All resources under virtualEndpoint are for V1.0 which are not subject to change.
+Represents a container for APIs to manage Cloud PCs.
 
 Use the Cloud PC API to provision and manage virtual desktops for employees in an organization, or along with the [Intune API](../resources/intune-graph-overview.md) to manage physical and virtual endpoints.
 
