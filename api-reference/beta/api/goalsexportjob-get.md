@@ -109,7 +109,6 @@ GET https://graph.microsoft.com/beta/employeeExperience/goals/exportJobs/j!eyJfd
 
 ---
 
-
 #### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -180,7 +179,6 @@ GET https://graph.microsoft.com/beta/employeeExperience/goals/exportJobs/j!eyJfd
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following example shows the response.
@@ -254,7 +252,6 @@ GET https://graph.microsoft.com/beta/employeeExperience/goals/exportJobs/j!eyJfd
 
 ---
 
-
 #### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -324,7 +321,6 @@ GET https://graph.microsoft.com/beta/employeeExperience/goals/exportJobs/j!eyJfd
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following example shows the response.
@@ -397,7 +393,6 @@ GET https://graph.microsoft.com/beta/employeeExperience/goals/exportJobs/j!eyJfd
 
 ---
 
-
 #### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -468,7 +463,6 @@ GET https://graph.microsoft.com/beta/employeeExperience/goals/exportJobs/j!eyJfd
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following example shows the response.

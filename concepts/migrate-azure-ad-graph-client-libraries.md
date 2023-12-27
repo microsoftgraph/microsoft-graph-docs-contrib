@@ -7,6 +7,7 @@ ms.reviewer: dkershaw
 ms.localizationpriority: medium
 ms.prod: "applications"
 ms.date: 11/11/2022
+#Customer intent: As a developer of an app currently using the Azure AD Graph .NET client library, I want to migrate my app to use the Microsoft Graph .NET client library, as I migrate my app from Azure AD Graph to Microsoft Graph.
 ---
 
 # Migrate .NET client library use to Microsoft Graph

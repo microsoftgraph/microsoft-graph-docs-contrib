@@ -98,7 +98,6 @@ GET https://graph.microsoft.com/beta/employeeExperience/goals/exportJobs
 
 ---
 
-
 #### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -171,7 +170,6 @@ GET https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs?$filter
 
 ---
 
-
 #### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -243,7 +241,6 @@ GET https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs?$filter
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following example shows the response.
