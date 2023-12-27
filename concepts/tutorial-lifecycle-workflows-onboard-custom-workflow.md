@@ -7,6 +7,7 @@ ms.reviewer: Alexander.Filipin
 ms.localizationpriority: medium
 ms.prod: "governance"
 ms.date: 11/01/2022
+#Customer intent: As a developer integrating with Microsoft Graph, I want to use Lifecycle Workflows APIs to automate employee onboarding tasks, so that I can ensure proper security, efficient lifecycle management, and compliance in my organization.
 ---
 
 # Automate employee onboarding tasks before their first day of work using Lifecycle Workflows APIs
