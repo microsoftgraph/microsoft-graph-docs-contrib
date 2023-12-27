@@ -13968,15 +13968,6 @@ items:
                             href: api/x509certificateauthenticationmethodconfiguration-update.md
                           - name: Delete
                             href: api/x509certificateauthenticationmethodconfiguration-delete.md
-                      - name: Microsoft Authenticator Passwordless Phone Sign-in policy (deprecated)
-                        href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
-                        items:
-                          - name: Get
-                            href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-get.md
-                          - name: Update
-                            href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-update.md
-                          - name: Delete
-                            href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-delete.md
                   - name: Authorization policy
                     href: resources/authorizationpolicy.md
                     items:
