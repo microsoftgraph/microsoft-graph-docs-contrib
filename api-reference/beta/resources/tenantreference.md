@@ -1,6 +1,6 @@
 ---
 title: "tenantReference resource type"
-description: "Represents the information used to identify an Azure AD tenant."
+description: "Represents the information used to identify a Microsoft Entra tenant."
 author: "jkdouglas"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the information used to identify an Azure AD tenant. This type is only used in the context of an [outboundSharedUserProfile](../resources/outboundshareduserprofile.md).
+Represents the information used to identify a Microsoft Entra tenant. This type is only used in the context of an [outboundSharedUserProfile](../resources/outboundshareduserprofile.md).
 
 ## Methods
 
@@ -23,7 +23,7 @@ None.
 
 |Property|Type|Description|
 |:---|:---|:---|
-| tenantId | String | The identifier of the Azure AD tenant. Read-only. Key. |
+| tenantId | String | The identifier of the Microsoft Entra tenant. Read-only. Key. |
 
 ## Relationships
 

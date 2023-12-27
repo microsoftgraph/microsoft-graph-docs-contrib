@@ -13,6 +13,9 @@ Namespace: microsoft.graph
 
 Create a new [team](../resources/team.md).
 
+> [!NOTE]
+> When you create a team, the SharePoint site of the general channel might fail to provision. If the site fails to provision after 5 minutes, use the [Get filesFolder](/graph/api/channel-get-filesfolder) API to trigger provisioning.
+
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
@@ -522,6 +525,9 @@ Base template types are special templates that Microsoft created for specific in
 To create a team from a non-standard base template, you want to change the `template@odata.bind` property in the request body from `standard` to point to the specific base template you’d like to create.
 
 To learn more about supported base template types, see [Get started with Teams templates](/MicrosoftTeams/get-started-with-teams-templates).
+
+> [!Note]
+> It can take up to 24 hours for Teams users to see a custom template change in the gallery.
 
 #### Request
 

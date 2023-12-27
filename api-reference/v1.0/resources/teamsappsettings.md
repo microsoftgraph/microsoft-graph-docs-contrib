@@ -1,6 +1,6 @@
 ---
 title: "teamsAppSettings resource type"
-description: "Represents Teams App Settings"
+description: "Represents tenant-wide settings for all Teams apps in the tenant."
 author: "sthapliyal"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -25,12 +25,14 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |allowUserRequestsForAppAccess|Boolean|Indicates whether users are allowed to request access to the unavailable Teams apps.|
+|id|String|Unique identifier for the **teamsAppSettings** object. Inherited from [entity](../resources/entity.md).|
+|isUserPersonalScopeResourceSpecificConsentEnabled|Boolean|Indicates whether resource-specific consent for personal scope in Teams apps is enabled for the tenant. `True` indicates that Teams apps that are allowed in the tenant and require resource-specific permissions can be installed in the personal scope. `False` blocks the installation of any Teams app that requires resource-specific permissions in the personal scope.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -42,9 +44,9 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamsAppSettings",
-  "id": "String (identifier)",
   "allowUserRequestsForAppAccess": "Boolean",
-  "isChatResourceSpecificConsentEnabled": "Boolean"
+  "id": "String (identifier)",
+  "isUserPersonalScopeResourceSpecificConsentEnabled": "Boolean"
 }
 ```
 

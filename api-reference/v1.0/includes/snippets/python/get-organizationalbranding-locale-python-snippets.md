@@ -6,15 +6,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-request_configuration = BrandingRequestBuilder.BrandingRequestBuilderGetRequestConfiguration(
-headers = {
-		'Accept-Language' : "fr-FR",
-}
+request_configuration = BrandingRequestBuilder.BrandingRequestBuilderGetRequestConfiguration()
+request_configuration.headers.add("Accept-Language", "fr-FR")
 
-)
 
 result = await graph_client.organization.by_organization_id('organization-id').branding.get(request_configuration = request_configuration)
 

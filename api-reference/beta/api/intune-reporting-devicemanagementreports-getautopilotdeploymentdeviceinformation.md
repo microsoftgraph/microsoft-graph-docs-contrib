@@ -1,6 +1,6 @@
 ---
 title: "getAutopilotDeploymentDeviceInformation action"
-description: ""
+description: "Intune Reporting Devicemanagementreports Getautopilotdeploymentdeviceinformation Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

@@ -6,13 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
-query_params = UserRequestBuilder.UserRequestBuilderGetQueryParameters(
+query_params = UserItemRequestBuilder.UserItemRequestBuilderGetQueryParameters(
 		select = ["customSecurityAttributes"],
 )
 
-request_configuration = UserRequestBuilder.UserRequestBuilderGetRequestConfiguration(
+request_configuration = UserItemRequestBuilder.UserItemRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
 )
 

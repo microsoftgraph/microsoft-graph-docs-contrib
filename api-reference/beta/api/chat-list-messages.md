@@ -64,7 +64,7 @@ The other [OData query parameters](/graph/query-parameters) are not currently su
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

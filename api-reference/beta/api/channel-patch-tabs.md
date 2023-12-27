@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code.
 
 ## Example
 #### Request
-The following is an example of the request.
+The following example shows a request.
 ```http
 PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
 Content-type: application/json

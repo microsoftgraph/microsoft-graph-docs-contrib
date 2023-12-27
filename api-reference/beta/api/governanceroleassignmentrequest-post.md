@@ -36,7 +36,7 @@ The following table shows the least privileged permission or permissions require
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-|:-|:-|:-|
-| Azure AD | PrivilegedAccess.ReadWrite.AzureAD | Not supported. | Not supported. |
+| Microsoft Entra ID | PrivilegedAccess.ReadWrite.AzureAD | Not supported. | Not supported. |
 | Azure resources | PrivilegedAccess.ReadWrite.AzureResources | Not supported. | Not supported. |
 | [group](../resources/group.md) | PrivilegedAccess.ReadWrite.AzureADGroup | Not supported. | Not supported. |
 
@@ -836,5 +836,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

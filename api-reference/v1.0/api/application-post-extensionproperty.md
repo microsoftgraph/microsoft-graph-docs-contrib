@@ -17,13 +17,10 @@ Create a new directory extension definition, represented by an [extensionPropert
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Application.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Application.ReadWrite.All |
-|Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "application_post_extensionproperty" } -->
+[!INCLUDE [permissions-table](../includes/permissions/application-post-extensionproperty-permissions.md)]
 
 ## HTTP request
 
@@ -49,6 +46,7 @@ In the request body, provide an [extensionProperty](../resources/extensionproper
 |:-------------|:------------|:------------|
 |dataType|String| Specifies the data type of the value the extension property can hold. Following values are supported. Not nullable. <ul><li>`Binary` - 256 bytes maximum</li><li>`Boolean`</li><li>`DateTime` - Must be specified in ISO 8601 format. Will be stored in UTC.</li><li>`Integer` - 32-bit value.</li><li>`LargeInteger` - 64-bit value.</li><li>`String` - 256 characters maximum</li></ul>|
 |name|String| Name of the extension property. Not nullable. |
+|isMultiValued|Boolean| Defines the directory extension as a multi-valued property. When `true`, the directory extension property can store a collection of objects of the **dataType**; for example, a collection of integers. The default value is `false`.|
 |targetObjects|String collection| The Microsoft Graph resources that can use the extension property. All values must be in PascalCase. The following values are supported. Not nullable. <ul><li>`User`</li><li>`Group`</li><li>`AdministrativeUnit`</li><li>`Application`</li><li>`Device`</li><li>`Organization`</li></ul>|
 
 
@@ -60,7 +58,7 @@ If successful, this method returns a `201 Created` response code and a new [exte
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -75,6 +73,7 @@ Content-type: application/json
 {
     "name": "jobGroup",
     "dataType": "String",
+    "isMultiValued": true,
     "targetObjects": [
         "User"
     ]
@@ -135,6 +134,7 @@ Content-type: application/json
     "deletedDateTime": null,
     "appDisplayName": "b2c-extensions-app. Do not modify. Used by AADB2C for storing user data.",
     "dataType": "String",
+    "isMultiValued": true,
     "isSyncedFromOnPremises": false,
     "name": "extension_25883231668a43a780b25685c3f874bc_jobGroup",
     "targetObjects": [

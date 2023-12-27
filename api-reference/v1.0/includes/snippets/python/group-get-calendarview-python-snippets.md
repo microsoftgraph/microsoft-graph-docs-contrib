@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = CalendarViewRequestBuilder.CalendarViewRequestBuilderGetQueryParameters(
 		start_date_time = "2017-01-01T19:00:00-08:00",
@@ -15,11 +15,9 @@ query_params = CalendarViewRequestBuilder.CalendarViewRequestBuilderGetQueryPara
 
 request_configuration = CalendarViewRequestBuilder.CalendarViewRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
-headers = {
-			'Prefer' : "outlook.body-content-type=\"text\"",
-}
-
 )
+request_configuration.headers.add("Prefer", "outlook.body-content-type=\"text\"")
+
 
 result = await graph_client.groups.by_group_id('group-id').calendar_view.get(request_configuration = request_configuration)
 

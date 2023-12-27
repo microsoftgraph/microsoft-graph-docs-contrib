@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = BrandingDeleteRequestBody(
 	additional_data = {
@@ -14,7 +14,7 @@ request_body = BrandingDeleteRequestBody(
 	}
 )
 
-await graph_client.organization.by_organization_id('organization-id').branding.delete(body = request_body)
+await graph_client.organization.by_organization_id('organization-id').branding.delete(request_body)
 
 
 ```

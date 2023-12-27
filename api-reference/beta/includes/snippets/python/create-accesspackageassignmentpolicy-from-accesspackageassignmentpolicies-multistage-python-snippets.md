@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AccessPackageAssignmentPolicy(
 	access_package_id = "string (identifier)",
@@ -19,7 +19,7 @@ request_body = AccessPackageAssignmentPolicy(
 		scope_type = "AllExistingConnectedOrganizationSubjects",
 		accept_requests = True,
 		allowed_requestors = [
-		]
+		],
 	),
 	request_approval_settings = ApprovalSettings(
 		is_approval_required = True,
@@ -43,7 +43,7 @@ request_body = AccessPackageAssignmentPolicy(
 						odata_type = "#microsoft.graph.externalSponsors",
 						is_backup = False,
 					),
-				]
+				],
 				escalation_approvers = [
 					SingleUser(
 						odata_type = "#microsoft.graph.singleUser",
@@ -51,7 +51,7 @@ request_body = AccessPackageAssignmentPolicy(
 						id = "string (identifier)",
 						description = "user if the external sponsor does not respond",
 					),
-				]
+				],
 			),
 			ApprovalStage(
 				approval_stage_time_out_in_days = 14,
@@ -69,7 +69,7 @@ request_body = AccessPackageAssignmentPolicy(
 						odata_type = "#microsoft.graph.internalSponsors",
 						is_backup = False,
 					),
-				]
+				],
 				escalation_approvers = [
 					SingleUser(
 						odata_type = "#microsoft.graph.singleUser",
@@ -77,9 +77,9 @@ request_body = AccessPackageAssignmentPolicy(
 						id = "string (identifier)",
 						description = "user if the internal sponsor does not respond",
 					),
-				]
+				],
 			),
-		]
+		],
 	),
 	access_review_settings = AssignmentReviewSettings(
 		is_enabled = True,
@@ -88,11 +88,11 @@ request_body = AccessPackageAssignmentPolicy(
 		start_date_time = "2020-04-01T07:59:59.998Z",
 		duration_in_days = 25,
 		reviewers = [
-		]
+		],
 	),
 )
 
-result = await graph_client.identity_governance.entitlement_management.acces_package_assignment_policies.post(body = request_body)
+result = await graph_client.identity_governance.entitlement_management.access_package_assignment_policies.post(request_body)
 
 
 ```

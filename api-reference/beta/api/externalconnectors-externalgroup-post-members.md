@@ -19,13 +19,10 @@ Create a new [externalGroupMember](../resources/externalconnectors-externalgroup
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | ExternalItem.ReadWrite.OwnedBy, ExternalItem.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "externalconnectors_externalgroup_post_members" } -->
+[!INCLUDE [permissions-table](../includes/permissions/externalconnectors-externalgroup-post-members-permissions.md)]
 
 ## HTTP request
 
@@ -53,7 +50,7 @@ You can specify the following properties when creating an **externalGroupMember*
 
 | Property       | Type                    | Description                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|
-| id             | String                  | The unique `id` of the member. It would be the objectId in case of Azure Active Directory users or groups and the externalGroupId in case of external groups. Required.                                   |
+| id             | String                  | The unique `id` of the member. It would be the objectId in case of Microsoft Entra users or groups and the externalGroupId in case of external groups. Required.                                   |
 | type           | microsoft.graph.externalConnectors.externalGroupMemberType | The type of member added to the external group. Possible values are: `user` or `group` when the identitySource is `azureActiveDirectory` and just `group` when the identitySource is `external`. Required. |
 | identitySource | microsoft.graph.externalConnectors.identitySourceType      | The identity source that the member belongs to. Possible values are: `azureActiveDirectory`, `external`. Required.                                                                                       |
 
@@ -63,7 +60,9 @@ If successful, this method returns a `201 Created` response code and an **extern
 
 ## Examples
 
-### Example 1: Add an Azure Active Directory user as a member
+<a name='example-1-add-an-azure-active-directory-user-as-a-member'></a>
+
+### Example 1: Add a Microsoft Entra user as a member
 
 ### Request
 
@@ -141,7 +140,9 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Add an Azure Active Directory group as a member
+<a name='example-2-add-an-azure-active-directory-group-as-a-member'></a>
+
+### Example 2: Add a Microsoft Entra group as a member
 
 ### Request
 

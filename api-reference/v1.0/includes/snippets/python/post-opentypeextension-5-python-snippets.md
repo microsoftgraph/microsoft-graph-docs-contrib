@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Conversation(
 	topic = "Does anyone have a second?",
@@ -29,17 +29,17 @@ request_body = Conversation(
 										"Employees only",
 										"Add spouse or guest",
 										"Add family",
-									]
+									],
 							}
 						),
-					]
+					],
 				),
-			]
+			],
 		),
-	]
+	],
 )
 
-result = await graph_client.groups.by_group_id('group-id').conversations.post(body = request_body)
+result = await graph_client.groups.by_group_id('group-id').conversations.post(request_body)
 
 
 ```

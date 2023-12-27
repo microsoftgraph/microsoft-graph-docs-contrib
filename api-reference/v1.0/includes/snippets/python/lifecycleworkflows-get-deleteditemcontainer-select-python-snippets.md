@@ -6,13 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
-query_params = WorkflowRequestBuilder.WorkflowRequestBuilderGetQueryParameters(
+query_params = WorkflowItemRequestBuilder.WorkflowItemRequestBuilderGetQueryParameters(
 		select = ["id","category","displayName","description","version","executionConditions"],
 )
 
-request_configuration = WorkflowRequestBuilder.WorkflowRequestBuilderGetRequestConfiguration(
+request_configuration = WorkflowItemRequestBuilder.WorkflowItemRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
 )
 

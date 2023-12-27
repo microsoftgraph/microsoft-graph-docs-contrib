@@ -1,6 +1,6 @@
 ---
 title: "getRelatedAppStates function"
-description: ""
+description: "Intune Shared Mobileapp Getrelatedappstates Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

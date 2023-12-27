@@ -17,13 +17,10 @@ Create a new [group](../resources/termstore-group.md) object.
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account) |TermStore.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+<!-- { "blockType": "permissions", "name": "termstore_group_post" } -->
+[!INCLUDE [permissions-table](../includes/permissions/termstore-group-post-permissions.md)]
 
 ## HTTP request
 
@@ -45,7 +42,7 @@ POST /termStore/groups
 ## Request body
 In the request body, supply a JSON representation of the [group](../resources/termstore-group.md) object.
 
-The following table shows the properties that are required when you create the [group](../resources/termstore-group.md).
+The following table lists the properties that are required when you create the [group](../resources/termstore-group.md).
 
 |Property|Type|Description|
 |:---|:---|:---|

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ConditionalAccessSettings(
 	signaling_status = Status.Disabled,
@@ -15,7 +15,7 @@ request_body = ConditionalAccessSettings(
 	}
 )
 
-result = await graph_client.network_access.settings.conditional_access.patch(body = request_body)
+result = await graph_client.network_access.settings.conditional_access.patch(request_body)
 
 
 ```

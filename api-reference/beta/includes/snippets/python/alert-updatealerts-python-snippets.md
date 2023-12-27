@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = UpdateAlertsPostRequestBody(
 	value = [
@@ -15,7 +15,7 @@ request_body = UpdateAlertsPostRequestBody(
 			closed_date_time = "String (timestamp)",
 			comments = [
 				"String",
-			]
+			],
 			feedback = AlertFeedback(
 				additional_data = {
 						"@odata_type" : "microsoft.graph.alertFeedback",
@@ -29,16 +29,16 @@ request_body = UpdateAlertsPostRequestBody(
 			),
 			tags = [
 				"String",
-			]
+			],
 			vendor_information = SecurityVendorInformation(
 				provider = "String",
 				vendor = "String",
 			),
 		),
-	]
+	],
 )
 
-result = await graph_client.security.alerts.update_alerts.post(body = request_body)
+result = await graph_client.security.alerts.update_alerts.post(request_body)
 
 
 ```

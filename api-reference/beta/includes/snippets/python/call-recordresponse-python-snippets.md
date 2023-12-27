@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = RecordResponsePostRequestBody(
 	barge_in_allowed = True,
@@ -19,7 +19,7 @@ request_body = RecordResponsePostRequestBody(
 				resource_id = "1D6DE2D4-CD51-4309-8DAA-70768651088E",
 			),
 		),
-	]
+	],
 	max_record_duration_in_seconds = 10,
 	initial_silence_timeout_in_seconds = 5,
 	max_silence_timeout_in_seconds = 2,
@@ -28,10 +28,10 @@ request_body = RecordResponsePostRequestBody(
 		"#",
 		"1",
 		"*",
-	]
+	],
 )
 
-result = await graph_client.communications.calls.by_call_id('call-id').record_response.post(body = request_body)
+result = await graph_client.communications.calls.by_call_id('call-id').record_response.post(request_body)
 
 
 ```

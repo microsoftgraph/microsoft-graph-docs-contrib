@@ -6,21 +6,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = PlannerBucket(
 	name = "Development",
 )
 
-request_configuration = PlannerBucketRequestBuilder.PlannerBucketRequestBuilderPatchRequestConfiguration(
-headers = {
-		'Prefer' : "return=representation",
-		'If-Match' : "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"",
-}
+request_configuration = PlannerBucketItemRequestBuilder.PlannerBucketItemRequestBuilderPatchRequestConfiguration()
+request_configuration.headers.add("Prefer", "return=representation")
+request_configuration.headers.add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 
-)
 
-result = await graph_client.planner.buckets.by_bucket_id('plannerBucket-id').patch(body = request_body, request_configuration = request_configuration)
+result = await graph_client.planner.buckets.by_planner_bucket_id('plannerBucket-id').patch(request_body, request_configuration = request_configuration)
 
 
 ```

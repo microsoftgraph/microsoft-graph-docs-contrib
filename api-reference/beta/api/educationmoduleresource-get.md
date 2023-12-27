@@ -18,13 +18,10 @@ Get the properties of a [resource](../resources/educationmoduleresource.md) asso
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | EduCurricula.Read, EduCurricula.ReadWrite   |
-|Delegated (personal Microsoft account) |  Not supported.  |
-|Application |  EduCurricula.Read.All, EduCurricula.ReadWrite.All  | 
+<!-- { "blockType": "permissions", "name": "educationmoduleresource_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/educationmoduleresource-get-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +48,7 @@ If successful, this method returns a `200 OK` response code and an [educationMod
 ## Examples
 ### Example 1: Get an educationWordResource
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -97,7 +94,7 @@ GET https://graph.microsoft.com/beta/education/classes/cff47bf3-791b-4b0a-ad6b-9
 ---
 
 #### Response
-The following is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -142,7 +139,7 @@ Content-type: application/json
 
 ### Example 2: Get an educationLinkResource
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -188,7 +185,7 @@ GET https://graph.microsoft.com/beta/education/classes/cff47bf3-791b-4b0a-ad6b-9
 ---
 
 #### Response
-The following is an example of the response. 
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -230,7 +227,7 @@ Content-type: application/json
 
 ### Example 3: Get an educationExcelResource
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -276,7 +273,7 @@ GET https://graph.microsoft.com/beta/education/classes/cff47bf3-791b-4b0a-ad6b-9
 ---
 
 #### Response
-The following is an example of the response. 
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -318,7 +315,7 @@ Content-type: application/json
 
 ### Example 4: Get an educationPowerPointResource
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -364,7 +361,7 @@ GET https://graph.microsoft.com/beta/education/classes/cff47bf3-791b-4b0a-ad6b-9
 ---
 
 #### Response
-The following is an example of the response. 
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -406,7 +403,7 @@ Content-type: application/json
 
 ### Example 5: Get an educationFileResource
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -452,7 +449,7 @@ GET https://graph.microsoft.com/beta/education/classes/cff47bf3-791b-4b0a-ad6b-9
 ---
 
 #### Response
-The following is an example of the response. 
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -494,7 +491,7 @@ Content-type: application/json
 
 ### Example 6: Get an educationMediaResource
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -540,7 +537,7 @@ GET https://graph.microsoft.com/beta/education/classes/cff47bf3-791b-4b0a-ad6b-9
 ---
 
 #### Response
-The following is an example of the response. 
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -582,7 +579,7 @@ Content-type: application/json
 
 ### Example 7: Get an educationChannelResource
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -628,7 +625,7 @@ GET https://graph.microsoft.com/beta/education/classes/cff47bf3-791b-4b0a-ad6b-9
 ---
 
 #### Response
-The following is an example of the response. 
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -670,7 +667,7 @@ Content-type: application/json
 
 ### Example 8: Get an educationLinkedAssignmentResource
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -716,7 +713,7 @@ GET https://graph.microsoft.com/beta/education/classes/cff47bf3-791b-4b0a-ad6b-9
 ---
 
 #### Response
-The following is an example of the response. 
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

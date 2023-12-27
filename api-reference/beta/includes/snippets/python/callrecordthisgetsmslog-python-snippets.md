@@ -6,10 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-result = await graph_client.communications.call_records.microsoft_graph_call_record_get_sm_log(from_date_time={from_date_time},to_date_time={to_date_time}.get()
+result = await graph_client.communications.call_records.microsoft_graph_call_records_get_sms_log_with_from_date_time_with_to_date_time("{fromDateTime}","{toDateTime}").get()
 
 
 ```

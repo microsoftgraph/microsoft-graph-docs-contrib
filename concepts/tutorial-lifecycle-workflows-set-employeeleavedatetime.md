@@ -8,6 +8,7 @@ ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: conceptualPageType
 ms.date: 12/08/2022
+#Customer intent: As a developer integrating with Microsoft Graph, I want programmatically configure the employeeLeaveDateTime property for a user, so that I can trigger scheduled "leaver" workflows using Lifecycle Workflows.
 ---
 
 # Configure the employeeLeaveDateTime property for a user
@@ -24,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|User.Read.All and User-LifeCycleInfo.ReadWrite.All|
 
-For delegated scenarios, the admin must also have the Global Administrator [Azure AD role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+For delegated scenarios, the admin must also have the Global Administrator [Microsoft Entra role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
 ## Request
 

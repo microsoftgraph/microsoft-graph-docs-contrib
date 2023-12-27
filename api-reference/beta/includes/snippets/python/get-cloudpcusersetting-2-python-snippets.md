@@ -6,17 +6,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
-query_params = CloudPcUserSettingRequestBuilder.CloudPcUserSettingRequestBuilderGetQueryParameters(
+query_params = CloudPcUserSettingItemRequestBuilder.CloudPcUserSettingItemRequestBuilderGetQueryParameters(
 		expand = ["assignments"],
 )
 
-request_configuration = CloudPcUserSettingRequestBuilder.CloudPcUserSettingRequestBuilderGetRequestConfiguration(
+request_configuration = CloudPcUserSettingItemRequestBuilder.CloudPcUserSettingItemRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
 )
 
-result = await graph_client.device_management.virtual_endpoint.user_settings.by_user_setting_id('cloudPcUserSetting-id').get(request_configuration = request_configuration)
+result = await graph_client.device_management.virtual_endpoint.user_settings.by_cloud_pc_user_setting_id('cloudPcUserSetting-id').get(request_configuration = request_configuration)
 
 
 ```

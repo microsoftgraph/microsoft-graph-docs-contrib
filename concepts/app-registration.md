@@ -8,7 +8,7 @@ ms.custom: scenarios:getting-started
 
 # Microsoft Graph Data Connect app registration
 
-This article provides best practice guidance for using the Azure portal experience to register an Azure Active Directory (Azure AD) app with Microsoft Graph Data Connect.
+This article provides best practice guidance for using the Azure portal experience to register a Microsoft Entra app with Microsoft Graph Data Connect.
 
 ## Azure portal experience
 
@@ -26,7 +26,7 @@ The first screen of the Azure portal experience prompts you to register your fir
 The table includes the following column fields:
 
 - **Name** — The app registration name
-- **App ID** — The Azure AD application ID
+- **App ID** — The Microsoft Entra application ID
 - **Registered On** — The date the app was registered
 - **Developer** — The developer who registered the application
 - **Multi-tenant** — Whether the app is multi-tenant or single tenant
@@ -40,7 +40,16 @@ When adding a new app registration with Data Connect, follow the add wizard to c
 
 ### Registration Info page
 
-The Registration Info page outlines standard requirements for app registrations. First, specify the project details—a process that's similar to creating a resource in Azure. The following are the project detail fields:
+The Registration Info page outlines standard requirements for app registrations. App registration requires you to select entries that affect default behaviors, such as the following fields:
+
+- **Application ID** (required) - Select from Microsoft Entra apps in the tenant, or create a new one.
+- **Description** (required) - Provide details in the text field for app registration such as project goal, unique identifier, and organization project name.
+- **Publish Type** (required) - Select from multi-tenant or single-tenant fields.
+- **Key Vault** (required **only** for multi-tenant app registrations) - Specify the key vault that will enable communication between tenants.
+- **Compute Type** (required) - Select the Azure product offering for this application.
+- **Activity Type** (required) - Select the Data Factory/Synapse/Fabric activity that will be used to copy over the data.
+
+Then specify the project details—a process that's similar to creating a resource in Azure. The following are the project detail fields: 
 
 - **Subscription** (required) - Select a subscription in the tenant that will be used exclusively to filter the next four sections that relate to data destination configuration.
 - **Resource Group** (required) - Select the group location for the data storage.
@@ -56,14 +65,15 @@ The Registration Info page outlines standard requirements for app registrations.
 
 If you select SQL for **Storage Account**, the **Uri** project detail field is disabled.
 
-App registration requires you to select entries for the **Instance Details** that affect default behaviors, such as the following fields:
+![Screenshot of the registration page for adding applications on Data Connect, including fields related to the Project Details and Instance Details sections.](images/app-registration-create-registration-info-including-compute-type.png)
 
-- **Application ID** (required) - Select from Azure AD apps in the tenant, or create a new one.
-- **Description** (required) - Provide details in the text field for app registration such as project goal, unique identifier, and organization project name.
-- **Publish Type** (required) - Select from multi-tenant or single-tenant fields.
-- **Key Vault** (required **only** for multi-tenant app registrations) - Specify the key vault that will enable communication between tenants.
+> [!NOTE]
+> If you select Microsoft Fabric as the Compute Type, the app will only support Copy Activity type.
 
-![Screenshot of the registration page for adding applications on Data Connect, including fields related to the Project Details and Instance Details sections.](images/app-registration-create-registration-info.png)
+- **Workspace** (required) - Select the Fabric workspace for your application. For more information, see [Fabric Workspaces](/fabric/get-started/workspaces). 
+- **Lakehouse** (required) - Select the OneLake instance to copy the data into. For more information, see [Fabric OneLake](/fabric/onelake/onelake-overview).
+
+![Screenshot of the registration page for adding applications on Data Connect, including fields related to Lakehouse and its workspace.](images/app-registration-create-registration-info-including-lakehouse-workspace.png)
 
 #### Datasets
 

@@ -7,6 +7,7 @@ ms.reviewer: dkershaw
 ms.localizationpriority: medium
 ms.prod: "applications"
 ms.date: 11/11/2022
+#Customer intent: As a developer, I want to understand how REST API endpoints differ between Azure AD Graph and Microsoft Graph, so that I can update my code accordingly as I migrate my app from Azure AD Graph to Microsoft Graph.
 ---
 
 # Request differences between Azure AD Graph and Microsoft Graph
@@ -63,7 +64,7 @@ Here:
 
 - The version is `v1.0`.
 - The tenant ID is inferred from the access token (not shown).
-- The resource and `$filter` query parameter are the same as the Azure AD query.
+- The resource and `$filter` query parameter are the same as the Microsoft Entra ID query.
 
 > **NOTE**: If you're using the Azure AD Graph .NET client library, see [.NET client libraries](migrate-azure-ad-graph-client-libraries.md) for more specific strategies and assistance to move to the Microsoft Graph .NET client library.
 
@@ -112,11 +113,11 @@ Azure AD Graph requests use `$links` to indicate relationships between resources
 
 The following table shows several examples:
 
-| Task | Azure AD Graph | Microsoft Graph |
-|------|----------------|-----------------|
+| Task              | Azure AD Graph                            | Microsoft Graph                         |
+|-------------------|-------------------------------------------|-----------------------------------------|
 | Add member        | `POST /groups/{id}/$links/members`        | `POST /groups/{id}/members/$ref`        |
 | List member links | `GET /groups/{id}/$links/members`         | `GET /groups/{id}/members/$ref`         |
-| List members      | `GET /groups/{id}/members`                | `GET /groups/{id}/members`               |
+| List members      | `GET /groups/{id}/members`                | `GET /groups/{id}/members`              |
 | Remove member     | `DELETE /groups/{id}/$links/members/{id}` | `DELETE /groups/{id}/members/{id}/$ref` |
 
 When migrating your apps to Microsoft Graph, look for requests that use `$links` to associate resources; change these to use `$ref` instead.

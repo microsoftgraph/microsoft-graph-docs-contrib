@@ -27,10 +27,10 @@ The Microsoft identity platform performs identity and access management (IAM) on
 ## Prerequisites
 
 - An Azure account that has an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
-- The Azure account must have permission to manage applications in Azure Active Directory (Azure AD). Any of the following Azure AD roles include the required permissions:
-  - [Application administrator](/azure/active-directory/roles/permissions-reference?toc=/graph/toc.json#application-administrator)
-  - [Application developer](/azure/active-directory/roles/permissions-reference?toc=/graph/toc.json#application-developer)
-  - [Cloud application administrator](/azure/active-directory/roles/permissions-reference?toc=/graph/toc.json#cloud-application-administrator)
+- The Azure account must have permission to manage applications in Microsoft Entra ID. Any of the following Microsoft Entra roles include the required permissions:
+  - [Application administrator](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json#application-administrator)
+  - [Application developer](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json#application-developer)
+  - [Cloud application administrator](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json#cloud-application-administrator)
 - Completion of the [Set up a tenant](/azure/active-directory/develop/quickstart-create-new-tenant) quickstart.
 
 ## Register an application
@@ -49,7 +49,7 @@ Follow these steps to create the app registration:
    | Supported account types                                                      | Description                                                                                                                                                                                                                                                                                                                                                                                 |
    | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
    | **Accounts in this organizational directory only**                           | Select this option if you're building an application for use only by users (or guests) in _your_ tenant.<br><br>Often called a _line-of-business_ (LOB) application, this app is a _single-tenant_ application in the Microsoft identity platform.                                                                                                                                          |
-   | **Accounts in any organizational directory**                                 | Select this option if you want users in _any_ Azure Active Directory (Azure AD) tenant to be able to use your application. This option is appropriate if, for example, you're building a software-as-a-service (SaaS) application that you intend to provide to multiple organizations.<br><br>This type of app is known as a _multitenant_ application in the Microsoft identity platform. |
+   | **Accounts in any organizational directory**                                 | Select this option if you want users in _any_ Microsoft Entra tenant to be able to use your application. This option is appropriate if, for example, you're building a software-as-a-service (SaaS) application that you intend to provide to multiple organizations.<br><br>This type of app is known as a _multitenant_ application in the Microsoft identity platform. |
    | **Accounts in any organizational directory and personal Microsoft accounts** | Select this option to target the widest set of customers.<br><br>By selecting this option, you're registering a _multitenant_ application that can also support users who have personal _Microsoft accounts_.                                                                                                                                                                               |
    | **Personal Microsoft accounts**                                              | Select this option if you're building an application only for users who have personal Microsoft accounts. Personal Microsoft accounts include Skype, Xbox, Live, and Hotmail accounts.                                                                                                                                                                                                      |
 
@@ -140,7 +140,7 @@ For application security recommendations, see [Microsoft identity platform best 
 
 ### Option 3: Add a federated credential
 
-Federated identity credentials are a type of credential that allows workloads, such as GitHub Actions, workloads running on Kubernetes, or workloads running in compute platforms outside of Azure access Azure AD protected resources without needing to manage secrets using [workload identity federation](/azure/active-directory/develop/workload-identity-federation).
+Federated identity credentials are a type of credential that allows workloads, such as GitHub Actions, workloads running on Kubernetes, or workloads running in compute platforms outside of Azure access Microsoft Entra protected resources without needing to manage secrets using [workload identity federation](/azure/active-directory/develop/workload-identity-federation).
 
 To add a federated credential, follow these steps:
 

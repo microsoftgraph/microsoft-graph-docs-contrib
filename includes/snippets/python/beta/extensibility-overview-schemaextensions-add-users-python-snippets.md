@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = User(
 	account_enabled = True,
@@ -18,15 +18,15 @@ request_body = User(
 		password = "xWwvJ]6NMw+bWH-d",
 	),
 	additional_data = {
-			"extkmpdyld2_graph_learn_courses" : (
-				course_id = 100,
-				course_name = "Explore Microsoft Graph",
-				course_type = "Online",
-			),
+			"extkmpdyld2_graph_learn_courses" : {
+					"course_id" : 100,
+					"course_name" : "Explore Microsoft Graph",
+					"course_type" : "Online",
+			},
 	}
 )
 
-result = await graph_client.users.post(body = request_body)
+result = await graph_client.users.post(request_body)
 
 
 ```

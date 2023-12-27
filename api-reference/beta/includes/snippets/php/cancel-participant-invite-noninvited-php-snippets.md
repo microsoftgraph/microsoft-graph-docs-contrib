@@ -12,7 +12,6 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 $requestBody = new InvitePostRequestBody();
 $participantsInvitationParticipantInfo1 = new InvitationParticipantInfo();
 $participantsInvitationParticipantInfo1->setOdataType('#microsoft.graph.invitationParticipantInfo');
-$participantsInvitationParticipantInfo1->setReplacesCallId('a7ebfb2d-871e-419c-87af-27290b22e8db');
 $participantsInvitationParticipantInfo1Identity = new IdentitySet();
 $participantsInvitationParticipantInfo1Identity->setOdataType('#microsoft.graph.identitySet');
 $participantsInvitationParticipantInfo1IdentityUser = new Identity();
@@ -24,6 +23,7 @@ $additionalData = [
 $participantsInvitationParticipantInfo1IdentityUser->setAdditionalData($additionalData);
 $participantsInvitationParticipantInfo1Identity->setUser($participantsInvitationParticipantInfo1IdentityUser);
 $participantsInvitationParticipantInfo1->setIdentity($participantsInvitationParticipantInfo1Identity);
+$participantsInvitationParticipantInfo1->setParticipantId('a7ebfb2d-871e-419c-87af-27290b22e8db');
 $participantsArray []= $participantsInvitationParticipantInfo1;
 $requestBody->setParticipants($participantsArray);
 

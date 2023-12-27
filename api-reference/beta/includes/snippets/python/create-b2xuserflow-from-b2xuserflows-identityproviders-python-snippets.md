@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = B2xIdentityUserFlow(
 	id = "Partner",
@@ -18,10 +18,10 @@ request_body = B2xIdentityUserFlow(
 			type = "Facebook",
 			name = "Facebook",
 		),
-	]
+	],
 )
 
-result = await graph_client.identity.b2x_user_flows.post(body = request_body)
+result = await graph_client.identity.b2x_user_flows.post(request_body)
 
 
 ```

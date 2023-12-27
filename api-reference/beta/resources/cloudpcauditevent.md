@@ -32,7 +32,7 @@ Represents the audit event entity.
 |activityOperationType|[cloudPcAuditActivityOperationType](#cloudpcauditactivityoperationtype-values)|The HTTP operation type of the activity. Possible values include `create`, `delete`, `patch` and `other`. Read-only.|
 |activityResult|[cloudPcAuditActivityResult](#cloudpcauditactivityresult-values)|The result of the activity. Read-only.|
 |activityType|String|The type of activity that was performed. Read-only.|
-|actor|[cloudPcAuditActor](../resources/cloudpcauditactor.md)|Azure AD user and application associated with the audit event. Read-only.|
+|actor|[cloudPcAuditActor](../resources/cloudpcauditactor.md)|Microsoft Entra user and application associated with the audit event. Read-only.|
 |category|[cloudPcAuditCategory](#cloudpcauditcategory-values)|Audit category. Read-only.|
 |componentName|String|Component name. Read-only.|
 |correlationId|String|The client request identifier, used to correlate activity within the system. Read-only.|

@@ -6,13 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
-query_params = SourceCollectionRequestBuilder.SourceCollectionRequestBuilderGetQueryParameters(
+query_params = SourceCollectionItemRequestBuilder.SourceCollectionItemRequestBuilderGetQueryParameters(
 		expand = ["addToReviewSetOperation","custodianSources","lastEstimateStatisticsOperation"],
 )
 
-request_configuration = SourceCollectionRequestBuilder.SourceCollectionRequestBuilderGetRequestConfiguration(
+request_configuration = SourceCollectionItemRequestBuilder.SourceCollectionItemRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
 )
 

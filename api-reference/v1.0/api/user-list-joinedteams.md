@@ -48,7 +48,7 @@ This method does not currently support the [OData query parameters](/graph/query
 | Accept  | application/json|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

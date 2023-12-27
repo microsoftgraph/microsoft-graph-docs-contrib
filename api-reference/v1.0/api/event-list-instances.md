@@ -13,19 +13,16 @@ Namespace: microsoft.graph
 
 Get the instances (occurrences) of an event for a specified time range. 
 
-If the event is a `seriesMaster` type, this returns the 
+If the event is a `seriesMaster` type, this API returns the 
 occurrences and exceptions of the event in the specified time range.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Calendars.ReadBasic, Calendars.Read        |
-|Delegated (personal Microsoft account) | Calendars.ReadBasic, Calendars.Read    |
-|Application | Calendars.ReadBasic, Calendars.Read                               |
+<!-- { "blockType": "permissions", "name": "event_list_instances" } -->
+[!INCLUDE [permissions-table](../includes/permissions/event-list-instances-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -61,14 +58,14 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 | Prefer: outlook.timezone  | string | Use this to specify the time zone for start and end times in the response. If not specified, those time values are returned in UTC. Optional. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and collection of [Event](../resources/event.md) objects in the response body.
 ## Example
 ##### Request
-The following example gets within the specified time range the occurrences and exceptions of an event which is the master event of a recurring series.
+The following example gets the occurrences and exceptions of a master event for a recurring series, within a specified time range.
 
 # [HTTP](#tab/http)
 <!-- {

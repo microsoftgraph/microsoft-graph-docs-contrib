@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ProgramControl(
 	control_id = "7e59d237-2fb0-4e5d-b7bb-d4f9f9129213",
@@ -14,7 +14,7 @@ request_body = ProgramControl(
 	program_id = "7e59d237-2fb0-4e5d-b7bb-d4f9f9129213",
 )
 
-result = await graph_client.program_controls.post(body = request_body)
+result = await graph_client.program_controls.post(request_body)
 
 
 ```

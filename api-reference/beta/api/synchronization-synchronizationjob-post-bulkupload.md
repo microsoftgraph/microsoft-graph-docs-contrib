@@ -13,23 +13,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Perform a new bulk upload using the synchronization job. Use this API endpoint to ingest data into the Azure AD synchronization service. The synchronization service will apply the mappings associated with the synchronization job and process the incoming data. The rate limit for this API is 40 requests per second. Each request can contain a maximum of 50 user operations in the bulk request **Operations** array.
+Perform a new bulk upload using the synchronization job. Use this API endpoint to ingest data into the Microsoft Entra synchronization service. The synchronization service will apply the mappings associated with the synchronization job and process the incoming data. The rate limit for this API is 40 requests per second. Each request can contain a maximum of 50 user operations in the bulk request **Operations** array.
 
 > [!NOTE]
 > This API is in public preview and available for use only with [API-driven inbound provisioning apps](/azure/active-directory/app-provisioning/inbound-provisioning-api-configure-app).
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|SynchronizationData-User.Upload|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|SynchronizationData-User.Upload|
+<!-- { "blockType": "permissions", "name": "synchronization_synchronizationjob_post_bulkupload" } -->
+[!INCLUDE [permissions-table](../includes/permissions/synchronization-synchronizationjob-post-bulkupload-permissions.md)]
 
 > [!NOTE]
-> This API is primarily meant for use within an application or service responsible for processing authoritative identity data and uploading it to Azure AD. Tenant admins can either [configure a service principal or managed identity](/azure/active-directory/app-provisioning/inbound-provisioning-api-grant-access) to grant permission to perform the upload. There is no separate user-assignable Azure AD built-in directory role for this API. Outside of applications that have acquired `SynchronizationData-User.Upload` permission with admin consent, only admin users with *Global Administrator* role can invoke the API.
+> This API is primarily meant for use within an application or service responsible for processing authoritative identity data and uploading it to Microsoft Entra ID. Tenant admins can either [configure a service principal or managed identity](/azure/active-directory/app-provisioning/inbound-provisioning-api-grant-access) to grant permission to perform the upload. There is no separate user-assignable Microsoft Entra built-in directory role for this API. Outside of applications that have acquired `SynchronizationData-User.Upload` permission with admin consent, only admin users with *Global Administrator* role can invoke the API.
 
 ## HTTP request
 
@@ -69,10 +66,10 @@ In the request body, supply a [bulkUpload](../resources/synchronization-bulkuplo
 * [Example 1: Bulk upload using SCIM Core user and Enterprise User schema](#example-1-bulk-upload-using-scim-core-user-and-enterprise-user-schema)
 * [Example 2: Bulk upload using SCIM custom schema namespace](#example-2-bulk-upload-using-scim-custom-schema-namespace)
 * [Example 3: Bulk upload for updating an existing user](#example-3-bulk-upload-for-updating-an-existing-user)
-* [Example 4: Bulk upload for deleting an existing user](#example-4-bulk-upload-for-deleting-an-existing-user)
 
 ### Example 1: Bulk upload using SCIM Core user and Enterprise User schema
 
+#### Request
 The following bulk request uses the SCIM standard Core User and Enterprise User schema. It has two user operations in the **Operations** array. You can send a maximum of 50 user operations in each bulk request.
 
 **Processing details:** The provisioning service will read the two user records. It will use the matching attribute (`userName` / `externalId`) configured in the attribute mapping of the provisioning job to determine whether to create, update, enable, or disable the user account in the directory. It will resolve the manager reference using the `manager.value` field. Specify the `externalId` of the user's manager in this field. In the example below, the provisioning service will assign *Barbara Jensen* as the manager for *Kathy Jensen*.
@@ -228,7 +225,7 @@ Content-Type: application/scim+json
 
 ---
 
-### Response
+#### Response
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -251,6 +248,7 @@ Content-Type: application/json
 
 ### Example 2: Bulk upload using SCIM custom schema namespace
 
+#### Request
 The following bulk request uses the SCIM standard Core User and Enterprise User schema. It also has an additional custom schema namespace called `urn:contoso:employee` with two attributes `HireDate` and `JobCode`. The `schemas` array in the data object is updated to include the custom schema namespace.
 
 **Processing details:** The provisioning service will read the two user records. It will use the matching attribute (`userName` / `externalId`) configured in the attribute mapping of the provisioning job to determine whether to create, update, enable, or disable the user account in the directory. If you have included the two custom attributes `urn:contoso:employee:HireDate` and `urn:contoso:employee:JobCode` in your provisioning job attribute mapping, it will be processed, and the corresponding target attributes will be set.
@@ -417,7 +415,7 @@ Content-Type: application/scim+json
 
 ---
 
-### Response
+#### Response
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -440,7 +438,9 @@ Content-Type: application/json
 
 ### Example 3: Bulk upload for updating an existing user
 
-The following bulk request illustrates how to update attributes of an existing Azure AD user, to change the user's department and set that the user cannot sign in.  This example assumes you have configured a mapping for the **externalId**, **department** and **active** fields, and you have an existing Azure AD user that has attribute matching the **externalId**.  
+#### Request
+
+The following bulk request illustrates how to update attributes of an existing Microsoft Entra user, to change the user's department and set that the user cannot sign in.  This example assumes you have configured a mapping for the **externalId**, **department** and **active** fields, and you have an existing Microsoft Entra user that has attribute matching the **externalId**.  
 
 # [HTTP](#tab/http)
 <!-- {
@@ -481,7 +481,7 @@ Content-Type: application/scim+json
 
 ---
 
-### Response
+#### Response
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -501,75 +501,6 @@ Content-Type: application/json
     "request-id": "beec9ea0-f7e4-4fe7-8507-cd834c88f18b"
 }
 ```
-
-### Example 4: Bulk upload for deleting an existing user
-
-The following bulk request illustrates how to delete an existing Azure AD or on-premises AD user.  This example assumes you have configured a mapping that uses **externalId** as the matching identifier.  
-
-> [!NOTE]
-> If the target directory for the operation is Azure AD, then the matched user is soft-deleted. The user can be seen on the Microsoft Entra admin center **Deleted users** page for the next 30 days and can be restored during that time.
-> If the target directory for the operation is on-premises Active Directory, then the matched user is hard-deleted. If the **Active Directory Recycle Bin** is enabled, you can restore the deleted on-premises AD user object.
-> To prevent and recover from accidental deletions, we recommend [configuring accidental deletion threshold](/azure/active-directory/app-provisioning/accidental-deletions) in the provisioning app and [enabling the on-premises Active Directory recycle bin](/azure/active-directory/hybrid/connect/how-to-connect-sync-recycle-bin).
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "bulk_upload_for_delete"
-} 
--->
-```http
-POST https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/bulkUpload
-Authorization: Bearer <token>
-Content-Type: application/scim+json
-
-{
-    "schemas": [
-        "urn:ietf:params:scim:api:messages:2.0:BulkRequest"
-    ],
-    "Operations": [
-        {
-            "method": "DELETE",
-            "bulkId": "7172023",
-            "path": "/Users",
-            "data": {
-                "schemas": [
-                    "urn:ietf:params:scim:schemas:core:2.0:User",
-                    "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User"
-                ],
-                "externalId": "7172023"
-            }
-        }
-    ]
-}
-```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/bulk-upload-for-delete-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-### Response
-
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.bulkUpload"
-}
--->
-``` http
-HTTP/1.1 202 Accepted
-Content-Type: application/json
-
-{
-    "client-request-id": "92cd30f6-fcc3-5d61-098e-a6dd35e460ef",
-    "content-length": "0",
-    "location": "https://graph.microsoft.com/beta/auditLogs/provisioning/?$filter=jobid%20eq%20'API2AAD.b16687d38faf42adb29892cdcaf01c6e.1a03de52-b9c3-4e2c-a1e3-9145aaa8e530'",
-    "request-id": "beec9ea0-f7e3-4fe7-8507-cd834c88f18b"
-}
-```
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2023-06-27 16:57:30 UTC -->

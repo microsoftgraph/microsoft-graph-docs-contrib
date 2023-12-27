@@ -6,10 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-result = await graph_client.reports.get_user_archived_print_jobs(user_id='{user_id}',start_date_time={start_date_time},end_date_time={end_date_time}.get()
+result = await graph_client.reports.get_user_archived_print_jobs_with_user_id_with_start_date_time_with_end_date_time("{endDateTime}","{startDateTime}","{userId}").get()
 
 
 ```

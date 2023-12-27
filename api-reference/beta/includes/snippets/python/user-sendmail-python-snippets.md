@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = SendMailPostRequestBody(
 	message = Message(
@@ -21,19 +21,19 @@ request_body = SendMailPostRequestBody(
 					address = "samanthab@contoso.onmicrosoft.com",
 				),
 			),
-		]
+		],
 		cc_recipients = [
 			Recipient(
 				email_address = EmailAddress(
 					address = "danas@contoso.onmicrosoft.com",
 				),
 			),
-		]
+		],
 	),
 	save_to_sent_items = False,
 )
 
-await graph_client.me.send_mail.post(body = request_body)
+await graph_client.me.send_mail.post(request_body)
 
 
 ```

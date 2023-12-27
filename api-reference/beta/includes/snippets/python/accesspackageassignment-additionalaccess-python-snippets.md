@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = AdditionalAccessWithAccessPackageIdWithIncompatibleAccessPackageIdRequestBuilder.AdditionalAccessWithAccessPackageIdWithIncompatibleAccessPackageIdRequestBuilderGetQueryParameters(
 		expand = ["target"],
@@ -16,7 +16,7 @@ request_configuration = AdditionalAccessWithAccessPackageIdWithIncompatibleAcces
 query_parameters = query_params,
 )
 
-result = await graph_client.identity_governance.entitlement_management.acce_package_assignments.additional_access(acces_package_id='{acces_package_id}',incompatible_acces_package_id='{incompatible_acces_package_id}'.get(request_configuration = request_configuration)
+result = await graph_client.identity_governance.entitlement_management.access_package_assignments.additional_access_with_access_package_id_with_incompatible_access_package_id("{accessPackageId}","{incompatibleAccessPackageId}").get(request_configuration = request_configuration)
 
 
 ```

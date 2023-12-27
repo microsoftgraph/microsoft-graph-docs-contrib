@@ -35,6 +35,9 @@ $rulesArray []= $rulesX509CertificateRule2;
 $authenticationModeConfiguration->setRules($rulesArray);
 
 $requestBody->setAuthenticationModeConfiguration($authenticationModeConfiguration);
+$issuerHintsConfiguration = new X509CertificateIssuerHintsConfiguration();
+$issuerHintsConfiguration->setState(new X509CertificateIssuerHintsState('disabled'));
+$requestBody->setIssuerHintsConfiguration($issuerHintsConfiguration);
 $includeTargetsAuthenticationMethodTarget1 = new AuthenticationMethodTarget();
 $includeTargetsAuthenticationMethodTarget1->setTargetType(new AuthenticationMethodTargetType('group'));
 $includeTargetsAuthenticationMethodTarget1->setId('all_users');

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = LogTeleconferenceDeviceQualityPostRequestBody(
 	quality = TeleconferenceDeviceQuality(
@@ -89,11 +89,11 @@ request_body = LogTeleconferenceDeviceQualityPostRequestBody(
 				maximum_inbound_jitter = "PT0.023S",
 				maximum_outbound_jitter = "PT0.024S",
 			),
-		]
+		],
 	),
 )
 
-await graph_client.communications.calls.log_teleconference_device_quality.post(body = request_body)
+await graph_client.communications.calls.log_teleconference_device_quality.post(request_body)
 
 
 ```

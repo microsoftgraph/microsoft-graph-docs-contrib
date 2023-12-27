@@ -3,6 +3,7 @@ title: "directoryRoleTemplate resource type"
 description: "Represents a directory role template. A directory role template specifies the property values of a directory role (directoryRole). There's an associated directory role template object for each of the directory roles that may be activated in a tenant."
 ms.localizationpriority: medium
 author: "DougKirschner"
+ms.reviewer: msodsrbac
 ms.prod: "directory-management"
 doc_type: resourcePageType
 ---

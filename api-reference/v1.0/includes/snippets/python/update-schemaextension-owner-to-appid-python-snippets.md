@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = SchemaExtension(
 	owner = "ef4cb9a8-97c3-4ca7-854b-5cb5ced376fa",
@@ -27,10 +27,10 @@ request_body = SchemaExtension(
 			name = "courseSupervisors",
 			type = "String",
 		),
-	]
+	],
 )
 
-result = await graph_client.schema_extensions.by_schema_extension_id('schemaExtension-id').patch(body = request_body)
+result = await graph_client.schema_extensions.by_schema_extension_id('schemaExtension-id').patch(request_body)
 
 
 ```

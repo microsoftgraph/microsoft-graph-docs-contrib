@@ -241,7 +241,7 @@ DELETE https://graph.microsoft.com/beta/users/6f9a2a92-8527-4d64-837e-b5312852f3
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "ignored"

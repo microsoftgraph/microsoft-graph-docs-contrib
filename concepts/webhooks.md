@@ -8,6 +8,7 @@ ms.prod: "change-notifications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ms.date: 08/17/2023
+#customer intent: As a developer, I want to receive notifications of changes to specific Microsoft Graph resources, so that I can build apps that process the changes according to the business requirements.
 ---
 
 # Set up notifications for changes in resource data

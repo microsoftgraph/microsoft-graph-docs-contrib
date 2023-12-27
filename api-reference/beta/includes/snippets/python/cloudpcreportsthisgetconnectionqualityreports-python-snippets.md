@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = GetConnectionQualityReportsPostRequestBody(
 	filter = "EventDateTime gt datetime'2023-04-16T07:40:41.694Z'",
@@ -23,14 +23,14 @@ request_body = GetConnectionQualityReportsPostRequestBody(
 		"LastConnectionGateway",
 		"LastConnectionProtocol",
 		"EventDateTime",
-	]
+	],
 	skip = 0,
 	top = 25,
 	order_by = [
-	]
+	],
 )
 
-await graph_client.device_management.virtual_endpoint.reports.get_connection_quality_reports.post(body = request_body)
+await graph_client.device_management.virtual_endpoint.reports.get_connection_quality_reports.post(request_body)
 
 
 ```

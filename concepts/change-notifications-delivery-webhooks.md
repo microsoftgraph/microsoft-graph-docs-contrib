@@ -8,6 +8,7 @@ ms.prod: "change-notifications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ms.date: 08/15/2023
+#customer intent: As a developer, I want to receive notifications of changes to specific Microsoft Graph resources through webhooks, so that I can build apps that process the changes according to business requirements.
 ---
 
 # Receive change notifications through webhooks
@@ -31,6 +32,8 @@ Once the Microsoft Graph change notifications service receives a 2xx class code 
  - If you're able to process the notification within a 3-second window, you should return a `200 - OK` status code to Microsoft Graph
  - If your service may take more than 3 seconds to process the notification, then you may choose to persist the notification in a queue on your endpoint and return `202 - Accepted` status code to Microsoft Graph.
  - If the notification isn't processed or queued, return a 5xx class code to indicate an error so that Microsoft Graph can retry the notification.
+
+Notifications that fail to deliver will be retried at exponential backoff intervals. Missed notifications may take up to 4 hours to resend once your endpoint comes online.
 
 ### Throttling
 For security and performance reasons, Microsoft Graph throttles notifications sent to endpoints that become slow or unresponsive. This may include dropping notifications in a way that they can't be recovered.
@@ -144,6 +147,9 @@ Each subscription has a unique **subscriptionId**, even if you have multiple sub
 
 > [!NOTE]
 > Any query string parameter included in the **notificationUrl** property will be included in the HTTP POST request when notifications are being delivered to your service.
+
+> [!NOTE]
+> Duplicate subscriptions are not allowed. When a subscription request contains the same values for **changeType** and **resource** as an existing subscription, the request fails with an HTTP error code `409 Conflict`, and the error message `Subscription Id <> already exists for the requested combination`.
 
 #### notificationUrl validation
 

@@ -8,7 +8,7 @@ ms.prod: "data-connect"
 
 # Troubleshoot Microsoft Graph Data Connect
 
-Microsoft Graph Data Connect enbles you to extend Microsoft 365 data into Azure in order to create applications for analytics, intelligence, and business process optimization. This article provides troubleshooting information for working with Microsoft Graph Data Connect.
+Microsoft Graph Data Connect enables you to extend Microsoft 365 data into Azure in order to create applications for analytics, intelligence, and business process optimization. This article provides troubleshooting information for working with Microsoft Graph Data Connect.
 
 For more questions, reach out to the [Data Connect team](mailto:dataconnect@microsoft.com).
 
@@ -27,7 +27,7 @@ If you're having issues running your pipelines for the first time, verify that y
 
     - Because Data Connect uses the Privilege Access Management system to generate consent requests, E5 licenses are required. For details, see [Integrate with PAM](/graph/data-connect-pam) and [Get started with privileged access management](/microsoft-365/compliance/privileged-access-management-configuration).
 
-- If the owning member is no longer valid in a tenant's system, pipelines will fail this check unless a current valid user within the tenant owns the account. If there is a change in ownership, make sure that the owning account is updated to another member who meets the requirements. 
+- If the owning member is no longer valid in a tenant's system, pipelines fail this check unless a current valid user within the tenant owns the account. If there is a change in ownership, make sure that the owning account is updated to another member who meets the requirements. 
 
 ## PAM approver issues
 
@@ -37,12 +37,12 @@ If you're having issues approving jobs within your tenant for your specified pip
 
 - The user account must have an Office 365 or Microsoft 365 E5 license with Exchange Online capabilities and a mailbox.
 
-- If approvers want to approve jobs through the Microsoft 365 admin center, they will need global admin privileges. Global admin privileges are not needed when approving jobs via [PowerShell script](/graph/data-connect-pam#approve-deny-and-revoke-requests-by-using-powershell) .
+- If approvers want to approve jobs through the Microsoft 365 admin center, they need global admin privileges. Global admin privileges are not needed when approving jobs via [PowerShell script](/graph/data-connect-pam#approve-deny-and-revoke-requests-by-using-powershell) .
 
 
 ## Multi-geo tenant extraction issues
 
-Sometimes, customers might want to add other regions to their pipelines, especially larger customers with multi-geo tenants. While multi-geo tenants can still use Microsoft Graph Data Connect, be aware that when customers request data, they can only extract data for one region. Customers cannot use one pipeline to extract data from multiple regrions. Data Connect enforces this rule for the privacy and security of a customer's tenant users. 
+Sometimes, customers might want to add other regions to their pipelines, especially larger customers with multi-geo tenants. While multi-geo tenants can still use Microsoft Graph Data Connect, be aware that when customers request data, they can only extract data for one region. Customers cannot use one pipeline to extract data from multiple regions. Data Connect enforces this rule for the privacy and security of a customer's tenant users. 
 
 Keep the following in mind when customers with multi-geo tenants extract data:
 

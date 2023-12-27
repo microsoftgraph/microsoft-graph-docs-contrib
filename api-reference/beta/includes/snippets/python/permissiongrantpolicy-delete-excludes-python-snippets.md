@@ -6,10 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-await graph_client.policies.permission_grant_policies.by_permission_grant_policie_id('permissionGrantPolicy-id').excludes.by_exclude_id('permissionGrantConditionSet-id').delete()
+await graph_client.policies.permission_grant_policies.by_permission_grant_policy_id('permissionGrantPolicy-id').excludes.by_permission_grant_condition_set_id('permissionGrantConditionSet-id').delete()
 
 
 ```

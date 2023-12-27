@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AndroidManagedAppProtection(
 	odata_type = "#microsoft.graph.androidManagedAppProtection",
@@ -32,7 +32,7 @@ request_body = AndroidManagedAppProtection(
 	period_before_pin_reset = "PT3M29.6631862S",
 	allowed_data_storage_locations = [
 		ManagedAppDataStorageLocation.SharePoint,
-	]
+	],
 	contact_sync_blocked = True,
 	print_blocked = True,
 	fingerprint_blocked = True,
@@ -53,7 +53,7 @@ request_body = AndroidManagedAppProtection(
 	custom_browser_display_name = "Custom Browser Display Name value",
 )
 
-result = await graph_client.device_app_management.android_managed_app_protections.by_android_managed_app_protection_id('androidManagedAppProtection-id').patch(body = request_body)
+result = await graph_client.device_app_management.android_managed_app_protections.by_android_managed_app_protection_id('androidManagedAppProtection-id').patch(request_body)
 
 
 ```

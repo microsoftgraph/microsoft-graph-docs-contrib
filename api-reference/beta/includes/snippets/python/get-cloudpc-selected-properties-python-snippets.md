@@ -6,13 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
-query_params = CloudPCRequestBuilder.CloudPCRequestBuilderGetQueryParameters(
+query_params = CloudPCItemRequestBuilder.CloudPCItemRequestBuilderGetQueryParameters(
 		select = ["id","displayName","imageDisplayName","lastModifiedDateTime","lastRemoteActionResult","lastLoginResult","connectivityResult"],
 )
 
-request_configuration = CloudPCRequestBuilder.CloudPCRequestBuilderGetRequestConfiguration(
+request_configuration = CloudPCItemRequestBuilder.CloudPCItemRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
 )
 

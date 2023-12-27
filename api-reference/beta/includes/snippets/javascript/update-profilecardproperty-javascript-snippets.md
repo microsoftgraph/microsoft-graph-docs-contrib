@@ -13,10 +13,11 @@ const client = Client.init(options);
 const profileCardProperty = {
   annotations: [
     {
+      displayName: 'Cost Center',
       localizations: [
         {
-          languageTag: 'no-NB',
-          displayName: 'Kostnads Senter'
+          languageTag: 'nb-NO',
+          displayName: 'Kostnadssenter'
         }
       ]
     }

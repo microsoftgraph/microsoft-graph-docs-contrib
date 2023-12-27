@@ -1,6 +1,6 @@
 ---
 title: "getOmaSettingPlainTextValue function"
-description: ""
+description: "Intune Deviceconfig Deviceconfiguration Getomasettingplaintextvalue Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

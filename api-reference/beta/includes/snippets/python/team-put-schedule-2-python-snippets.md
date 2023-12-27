@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Schedule(
 	enabled = True,
@@ -17,6 +17,8 @@ request_body = Schedule(
 	swap_shifts_requests_enabled = True,
 	offer_shift_requests_enabled = True,
 	time_off_requests_enabled = True,
+	start_day_of_week = DayOfWeek.Tuesday,
+	activities_included_when_copying_shifts_enabled = True,
 	time_clock_enabled = True,
 	time_clock_settings = TimeClockSettings(
 		approved_location = GeoCoordinates(
@@ -27,7 +29,7 @@ request_body = Schedule(
 	),
 )
 
-result = await graph_client.teams.by_team_id('team-id').schedule.put(body = request_body)
+result = await graph_client.teams.by_team_id('team-id').schedule.put(request_body)
 
 
 ```

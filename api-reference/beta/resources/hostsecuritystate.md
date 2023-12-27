@@ -20,8 +20,8 @@ Contains stateful information about the host (including devices, computers, and 
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
 |fqdn|String|Host FQDN (Fully Qualified Domain Name) (for example, machine.company.com).|
-|isAzureAadJoined|Boolean|True if the host is domain joined to Azure Active Directory Domain Services.|
-|isAzureAadRegistered|Boolean|True if the host registered with Azure Active Directory Device Registration (BYOD devices - that is, not fully managed by enterprise).|
+|isAzureAadJoined|Boolean|True if the host is domain joined to Microsoft Entra Domain Services.|
+|isAzureAadRegistered|Boolean|True if the host registered with Microsoft Entra Device Registration (BYOD devices - that is, not fully managed by enterprise).|
 |isHybridAzureDomainJoined|Boolean|True if the host is domain joined to an on-premises Active Directory domain.|
 |netBiosName|String|The local host name, without the DNS domain name.|
 |os|String|Host Operating System. (For example, Windows 10, macOS, RHEL, etc.).|
@@ -68,5 +68,3 @@ Here's a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

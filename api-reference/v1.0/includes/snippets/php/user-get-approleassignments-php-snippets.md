@@ -9,7 +9,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
+$requestConfiguration = new AppRoleAssignmentsRequestBuilderGetRequestConfiguration();
+$headers = [
+		'ConsistencyLevel' => 'eventual',
+	];
+$requestConfiguration->headers = $headers;
 
-$result = $graphServiceClient->users()->byUserId('user-id')->appRoleAssignments()->get()->wait();
+$queryParameters = AppRoleAssignmentsRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->count = true;
+$requestConfiguration->queryParameters = $queryParameters;
+
+
+$result = $graphServiceClient->users()->byUserId('user-id')->appRoleAssignments()->get($requestConfiguration)->wait();
 
 ```

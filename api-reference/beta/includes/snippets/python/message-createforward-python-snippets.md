@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = CreateForwardPostRequestBody(
 	message = Message(
@@ -18,12 +18,12 @@ request_body = CreateForwardPostRequestBody(
 					name = "Dana Swope",
 				),
 			),
-		]
+		],
 	),
 	comment = "Dana, just want to make sure you get this; you'll need this if the project gets approved.",
 )
 
-result = await graph_client.me.messages.by_message_id('message-id').create_forward.post(body = request_body)
+result = await graph_client.me.messages.by_message_id('message-id').create_forward.post(request_body)
 
 
 ```

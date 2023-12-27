@@ -14,7 +14,7 @@ doc_type: resourcePageType
 Defines the settings on creation of school data profile identities. These identities include students and teachers. Based on these settings, the users will be created in the directory.
 
 > [!WARNING]
-> If you have directory sync turned on to sync between on-premises Active Directory and Azure Active Directory (Azure AD), use the [educationIdentityMatchingConfiguration](educationidentitymatchingconfiguration.md) resource instead.
+> If you have directory sync turned on to sync between on-premises Active Directory and Microsoft Entra ID, use the [educationIdentityMatchingConfiguration](educationidentitymatchingconfiguration.md) resource instead.
 
 Derived from [educationIdentitySynchronizationConfiguration](educationidentitysynchronizationconfiguration.md).
 
@@ -44,5 +44,3 @@ Derived from [educationIdentitySynchronizationConfiguration](educationidentitysy
   ]
 }
 ```
-
-

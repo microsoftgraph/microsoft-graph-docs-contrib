@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 Represents an identity of an _actor_. For example, an actor can be a user, device, or application.
 
 In some circumstances, the unique identifier for the actor might not be available.
-In this case, the **displayName** property for the identity will be returned, but the **id** property will be missing from the resource.
+In this case, the **displayName** property for the identity is returned, but the **id** property will be missing from the resource.
 
 ## Properties
 

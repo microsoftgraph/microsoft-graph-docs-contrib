@@ -20,7 +20,7 @@ Use the delegated permissions, `Mail.Read.Shared` or `Mail.ReadWrite.Shared`, to
 
 Note that those two permissions do not support [subscribing to change notifications](webhooks.md) on items in shared or delegated folders. To set up change notification subscriptions on messages in a shared, delegated, or any other user's mail folder in the tenant, use the application permission, `Mail.Read`.
 
-For more information, see [mail permissions](permissions-reference.md#mail-permissions).
+For more information, see [mail permissions](permissions-reference.md).
 
 ## Get a message in the shared folder
 

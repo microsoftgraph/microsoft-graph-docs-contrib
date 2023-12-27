@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = UnhideForUserPostRequestBody(
 	user = TeamworkUserIdentity(
@@ -17,7 +17,7 @@ request_body = UnhideForUserPostRequestBody(
 	),
 )
 
-await graph_client.chats.by_chat_id('chat-id').unhide_for_user.post(body = request_body)
+await graph_client.chats.by_chat_id('chat-id').unhide_for_user.post(request_body)
 
 
 ```

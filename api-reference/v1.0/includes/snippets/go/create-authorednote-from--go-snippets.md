@@ -17,7 +17,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewAuthoredNote()
 content := graphmodels.NewItemBody()
-content := "String"
+content := "Please take a look at the files tagged with follow up"
 content.SetContent(&content) 
 contentType := graphmodels.TEXT_BODYTYPE 
 content.SetContentType(&contentType) 

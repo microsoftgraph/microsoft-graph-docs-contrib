@@ -3,7 +3,7 @@ title: "bgpConfiguration resource type"
 description: "The border gateway protocol (BGP) specifies the IP address and ASN to route traffic from a link to the edge."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: resourcePageType
 ---
 
