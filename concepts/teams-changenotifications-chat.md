@@ -49,7 +49,7 @@ Content-Type: application/json
 ## Subscribe to changes in a particular chat
 
 
-To get change notifications for all changes related to a particular chat, subscribe to `/chats/{id}`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for all changes related to a particular chat, subscribe to `/chats/{id}`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
 
 ### Permissions
 
@@ -109,7 +109,7 @@ For notifications with resource data, the payload looks like the following. This
 }
 ```
 
-For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](webhooks-with-resource-data.md).
+For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](change-notifications-with-resource-data.md).
 
 The decrypted notification payload looks like the following. The payload conforms to the [chats](/graph/api/resources/chat?preserve-view=true) schema. The payload is similar to that returned by GET operations.
 
@@ -152,7 +152,7 @@ The decrypted notification payload looks like the following. The payload conform
 
 ## Subscribe to changes in any chat in a tenant where a Teams app is installed
 
-To get change notifications for all changes related to any chat in a tenant where a specific Teams app is installed, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installedToChats`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for all changes related to any chat in a tenant where a specific Teams app is installed, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installedToChats`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
 
 [!INCLUDE [teams-model-B-disclaimer](../includes/teams-model-B-disclaimer.md)]
 
@@ -206,7 +206,7 @@ The **resource** and **@odata.id** properties can be used to make calls to Micro
 
 ## See also
 
-- [Microsoft Graph change notifications](webhooks.md)
+- [Microsoft Graph change notifications](change-notifications-overview.md)
 - [Get change notifications for teams and channels using Microsoft Graph](teams-changenotifications-team-and-channel.md)
 - [Get change notifications for membership changes in teams and channels using Microsoft Graph](teams-changenotifications-teammembership.md)
 - [Get change notifications for messages in Teams channels and chats using Microsoft Graph](teams-changenotifications-chatmessage.md)

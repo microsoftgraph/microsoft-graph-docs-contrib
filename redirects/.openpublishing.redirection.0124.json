@@ -1,12 +1,12 @@
 {
   "redirections": [
     {
-      "source_path_from_root": "/api-reference/beta/resources/webhooks.md",
+      "source_path_from_root": "api-reference/beta/resources/webhooks.md",
       "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/change-notifications-api-overview?view=graph-rest-beta",
       "redirect_document_id": true
     },
     {
-      "source_path_from_root": "/api-reference/v1.0/resources/webhooks.md",
+      "source_path_from_root": "api-reference/v1.0/resources/webhooks.md",
       "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/change-notifications-api-overview?view=graph-rest-1.0",
       "redirect_document_id": true
     },
