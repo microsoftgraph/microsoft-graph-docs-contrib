@@ -173,7 +173,7 @@ This topic contains archived changelog entries for Microsoft Graph. For current 
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | v1.0 | Change tracking through [delta queries](/graph/api/event-delta) is available for Microsoft Graph for US Government. |
 | Deletion | Beta | Removed the **includeProperties** property from the [subscription](/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true) entity. This property is replaced by the **includeResourceData** property. |
-| Addition | Beta | Added the ability to get [change notifications delivered via Event Hub](change-notifications-delivery.md). |
+| Addition | Beta | Added the ability to get [change notifications delivered via Event Hubs](change-notifications-delivery.md). |
 
 ### Cloud communications
 
@@ -304,11 +304,11 @@ This topic contains archived changelog entries for Microsoft Graph. For current 
 
 ### Cloud communications | Call records
 
-Adding PSTN and direct routing call reports to Microsoft Graph (beta).
+Adding PSTN and Direct Routing call reports to Microsoft Graph (beta).
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Addition| beta |Added APIs to [get PSTN call report](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta&preserve-view=true) and [get a direct routing report](/graph/api/callrecords-callrecord-getdirectroutingcalls?view=graph-rest-beta&preserve-view=true).|
+|Addition| beta |Added APIs to [get PSTN call report](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta&preserve-view=true) and [get a Direct Routing report](/graph/api/callrecords-callrecord-getdirectroutingcalls?view=graph-rest-beta&preserve-view=true).|
 |Addition| beta |Added new entities:<br /><li>[pstnCallLogRow](/graph/api/resources/callrecords-pstncalllogrow?view=graph-rest-beta&preserve-view=true)</li> <li>[directRoutingLogRow](/graph/api/resources/callrecords-directroutinglogrow?view=graph-rest-beta&preserve-view=true).</li>|
 
 ### Compliance | eDiscovery
@@ -810,7 +810,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 |:---|:---|:---|
 | Addition | beta | Added [unifiedRoleAssignmentMultiple](/graph/api/resources/unifiedroleassignmentmultiple?view=graph-rest-beta&preserve-view=true), [rbacApplicationMultiple](/graph/api/resources/rbacapplicationmultiple?view=graph-rest-beta&preserve-view=true), and [appScope](/graph/api/resources/appscope?view=graph-rest-beta&preserve-view=true) and the following actions:<br><li>[List unifiedRoleAssignmentMultiple](/graph/api/rbacapplicationmultiple-list-roleassignments?view=graph-rest-beta&preserve-view=true)</li><li>[Get unifiedRoleAssignmentMultiple](/graph/api/unifiedroleassignmentmultiple-get?view=graph-rest-beta&preserve-view=true)</li><li>[Create unifiedRoleAssignmentMultiple](/graph/api/rbacapplicationmultiple-post-roleassignments?view=graph-rest-beta&preserve-view=true)</li><li>[Update unifiedRoleAssignmentMultiple](/graph/api/unifiedroleassignmentmultiple-update?view=graph-rest-beta&preserve-view=true)</li><li>[Delete unifiedRoleAssignmentMultiple](/graph/api/unifiedroleassignmentmultiple-delete?view=graph-rest-beta&preserve-view=true)</li>. |
 | Addition | v1.0 | Added support for [delta queries for application](/graph/api/application-delta?view=graph-rest-1.0&preserve-view=true).|
-| Addition | beta | Added support for [delta queries for administrativeUnits](/graph/api/administrativeunit-delta?view=graph-rest-beta&preserve-view=true).|
+| Addition | beta | Added support for [delta queries for administrativeUnit](/graph/api/administrativeunit-delta?view=graph-rest-beta&preserve-view=true).|
 | Addition | beta | Added support for [delta queries for oAuth2PermissionGrant](/graph/api/oauth2permissiongrant-delta?view=graph-rest-beta&preserve-view=true).|
 | Addition | v1.0 | Typed policy resources are grouped under the [policies](/graph/api/resources/policy-overview?view=graph-rest-1.0&preserve-view=true) URL segment. This update adds five typed policy resources: <br> <li>[activityBasedTimeoutPolicies](/graph/api/resources/activityBasedTimeoutPolicy?view=graph-rest-1.0&preserve-view=true)</li> <li>[claimsMappingPolicies](/graph/api/resources/claimsMappingPolicy?view=graph-rest-1.0&preserve-view=true) </li> <li>[homeRealmDiscoveryPolicies](/graph/api/resources/homeRealmDiscoveryPolicy?view=graph-rest-1.0&preserve-view=true) </li> <li>[tokenLifetimePolicies](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-1.0&preserve-view=true) and </li> <li>[tokenIssuancePolicies](/graph/api/resources/tokenissuancepolicy?view=graph-rest-1.0&preserve-view=true)</li>|
 | Addition | v1.0 | Added [activityBasedTimeoutPolicy](/graph/api/resources/activityBasedTimeoutPolicy?view=graph-rest-1.0&preserve-view=true) resource type, which controls automatic sign-out for web sessions after a period of inactivity, for applications that support activity-based timeout functionality.|
@@ -940,7 +940,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 
 | **Change type** | **Version**   | **Description** |
 |:---|:---|:---|
-| Addition | beta and v1.0 | Added the **authenticationRequirement** property and the **riskEventTypes_v2** property to the [signin](/graph/api/resources/signin?view=graph-rest-1.0&preserve-view=true) entity. |
+| Addition | beta and v1.0 | Added the **authenticationRequirement** property and the **riskEventTypes_v2** property to the [signIn](/graph/api/resources/signin?view=graph-rest-1.0&preserve-view=true) entity. |
 | Addition | beta and v1.0 | Added support for [delta queries for orgContact](/graph/api/orgcontact-delta?view=graph-rest-1.0&preserve-view=true).|
 | Addition | v1.0 | Added new user permission [User.ManageIdentities.All](./permissions-reference.md).|
 | Addition | beta | Added the PrivilegedAccess.Read.AzureResources application permission for [Privileged Identity Management - Azure resources](/graph/api/resources/privilegedidentitymanagement-resources?view=graph-rest-beta&preserve-view=true). |
@@ -1278,7 +1278,7 @@ Introduced version 1.1 of the Microsoft Graph Toolkit.
 | Addition | Beta | Added [notifications](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&preserve-view=true) for new and edited channel messages, and new and edited chat messages. |
 | Addition | Beta | Added the [shiftpreferences](/graph/api/resources/shiftpreferences?view=graph-rest-beta&preserve-view=true) resource and associated methods.|
 | Addition | Beta | Added new relationship `shiftPreferences` to [userSettings](/graph/api/resources/usersettings?view=graph-rest-beta&preserve-view=true) entity. |
-| Change | Beta | Updated the application permissions required to perform read and write operations for shifts resources, including [schedule](/graph/api/resources/schedule?view=graph-rest-beta&preserve-view=true), [schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta&preserve-view=true), [shift](/graph/api/resources/shift?view=graph-rest-beta&preserve-view=true), [timeOff](/graph/api/resources/timeoff?view=graph-rest-beta&preserve-view=true), [timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta&preserve-view=true), [timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta&preserve-view=true), [swapShiftChangeRequest](/graph/api/resources/swapshiftschangerequest), and [openShiftChangeRequest](/graph/api/resources/openshiftchangerequest?view=graph-rest-beta&preserve-view=true). **Note:** Applications permissions are currently in private preview and are not available for public use.|
+| Change | Beta | Updated the application permissions required to perform read and write operations for shifts resources, including [schedule](/graph/api/resources/schedule?view=graph-rest-beta&preserve-view=true), [schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta&preserve-view=true), [shift](/graph/api/resources/shift?view=graph-rest-beta&preserve-view=true), [timeOff](/graph/api/resources/timeoff?view=graph-rest-beta&preserve-view=true), [timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta&preserve-view=true), [timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta&preserve-view=true), [swapShiftChangeRequest](/graph/api/resources/swapshiftschangerequest), and [openShiftChangeRequest](/graph/api/resources/openshiftchangerequest?view=graph-rest-beta&preserve-view=true).|
 
 ## November 2019
 
