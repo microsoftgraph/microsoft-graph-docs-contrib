@@ -7,7 +7,7 @@ ms.reviewer: keylimesoda
 ms.localizationpriority: high
 ms.prod: "change-notifications"
 ms.custom: graphiamtop20
-ms.date: 04/20/2023
+ms.date: 12/27/2023
 #customer intent: As a developer, I want to manage the lifecycle events for change notifications, so that I can build resilient and "always on" apps that receive notifications of all changes.
 ---
 
@@ -174,7 +174,7 @@ The following steps represent the flow of an authorization challenge for an acti
           "name": "change-notifications-lifecycle-notifications-reauthorize"
         }-->
         ```http
-        POST  https://graph.microsoft.com/beta/subscriptions/{id}/reauthorize
+        POST  https://graph.microsoft.com/v1.0/subscriptions/{id}/reauthorize
         ```
 
     - Perform a regular "renew" action to reauthorize *and* renew the subscription at the same time.
@@ -184,7 +184,7 @@ The following steps represent the flow of an authorization challenge for an acti
           "name": "change-notifications-lifecycle-notifications-renew"
         }-->
         ```http
-        PATCH https://graph.microsoft.com/beta/subscriptions/{id}
+        PATCH https://graph.microsoft.com/v1.0/subscriptions/{id}
         Content-Type: application/json
 
         {
