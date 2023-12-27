@@ -1,6 +1,9 @@
 items:
   - name: Overview of Microsoft Graph
     href: /graph/overview
+  - name: API changelog
+    href: https://developer.microsoft.com/en-us/graph/changelog
+    displayName: API changes, API updates, Microsoft Graph API, REST API, REST API updates
   - name: Authentication and authorization
     items:
       - name: Overview
@@ -706,7 +709,7 @@ items:
                 href: api/userteamwork-get-installedapps.md
               - name: List apps for user
                 href: api/userteamwork-list-installedapps.md
-              - name: List permission grants for user (preview)
+              - name: List permission grants for user
                 href: api/user-list-permissiongrants.md
               - name: Remove app for user
                 href: api/userteamwork-delete-installedapps.md
@@ -10618,6 +10621,18 @@ items:
                     href: api/windowsupdates-updatepolicy-update.md
                   - name: Delete
                     href: api/windowsupdates-updatepolicy-delete.md
+          - name: Microsoft 365 apps (preview)
+            displayName: Microsoft 365 applications
+            items:
+              - name: Admin Microsoft 365 apps
+                href: resources/adminmicrosoft365apps.md
+              - name: Installation options
+                href: resources/m365appsInstallationoptions.md
+                items:
+                  - name: Get
+                    href: api/m365AppsInstallationOptions-get.md
+                  - name: Update
+                    href: api/m365AppsInstallationOptions-update.md
           - name: Multi-tenant management (preview)
             items:
               - name: Managed tenant
@@ -11152,10 +11167,27 @@ items:
       - name: Employee experience
         displayName: Viva
         items:
+          - name: Employee engagement (preview)
+            displayName: Viva Engage
+            items:
+              - name: Overview
+                href: resources/engagement-api-overview.md
+              - name: Community
+                href: resources/community.md
+                items:
+                  - name: Create
+                    href: api/employeeexperience-post-communities.md
+                  - name: Get
+                    href: api/community-get.md
+              - name: Engagement async operation
+                href: resources/engagementasyncoperation.md
+                items:
+                  - name: Get
+                    href: api/engagementasyncoperation-get.md
           - name: Employee goals (preview)
             items:
             - name: Goals export job
-              href: resources/goalsExportJob.md
+              href: resources/goalsexportjob.md
               items:
               - name: List
                 href: api/goals-list-exportjobs.md
@@ -13138,16 +13170,20 @@ items:
               - name: Authentication event listeners (preview)
                 href: resources/authenticationeventlistener.md
                 items:
-                  - name: On token issuance start
-                    href: resources/ontokenissuancestartlistener.md
-                  - name: On interactive authentication flow start
-                    href: resources/oninteractiveauthflowstartlistener.md
-                  - name: On authentication method load start
-                    href: resources/onauthenticationmethodloadstartlistener.md
                   - name: On attribute collection
                     href: resources/onattributecollectionlistener.md
+                  - name: On attribute collection start
+                    href: resources/onattributecollectionstartlistener.md
+                  - name: On attribute collection submit
+                    href: resources/onattributecollectionsubmitlistener.md 
+                  - name: On authentication method load start
+                    href: resources/onauthenticationmethodloadstartlistener.md
+                  - name: On interactive authentication flow start
+                    href: resources/oninteractiveauthflowstartlistener.md
+                  - name: On token issuance start
+                    href: resources/ontokenissuancestartlistener.md
                   - name: On user create start
-                    href: resources/onusercreatestartlistener.md
+                    href: resources/onusercreatestartlistener.md   
                   - name: List
                     href: api/identitycontainer-list-authenticationeventlisteners.md
                   - name: Create
@@ -13495,18 +13531,30 @@ items:
               - name: Custom authentication extensions (preview)
                 href: resources/customauthenticationextension.md
                 items:
+                  - name: On attribute collection start
+                    href: resources/onattributecollectionstartcustomextension.md
+                  - name: On attribute collection submit
+                    href: resources/onattributecollectionsubmitcustomextension.md
                   - name: On token issuance start
                     href: resources/ontokenissuancestartcustomextension.md
-                  - name: List
+                  - name: List custom authentication extensions
                     href: api/identitycontainer-list-customauthenticationextensions.md
-                  - name: Create
+                  - name: Create custom authentication extension
                     href: api/identitycontainer-post-customauthenticationextensions.md
-                  - name: Get
+                  - name: Get custom authentication extension
                     href: api/customauthenticationextension-get.md
-                  - name: Update
+                  - name: Update custom authentication extension
                     href: api/customauthenticationextension-update.md
-                  - name: Delete
+                  - name: Delete custom authentication extension
                     href: api/customauthenticationextension-delete.md
+                  - name: Get on attribute collection start
+                    href: api/onattributecollectionstartcustomextension-get.md
+                  - name: Update on attribute collection start
+                    href: api/onattributecollectionstartcustomextension-update.md
+                  - name: Get on attribute collection submit
+                    href: api/onattributecollectionsubmitcustomextension-get.md
+                  - name: Update on attribute collection submit
+                    href: api/onattributecollectionsubmitcustomextension-update.md
               - name: Data policy operation
                 href: resources/datapolicyoperation.md
                 items:
@@ -13920,15 +13968,6 @@ items:
                             href: api/x509certificateauthenticationmethodconfiguration-update.md
                           - name: Delete
                             href: api/x509certificateauthenticationmethodconfiguration-delete.md
-                      - name: Microsoft Authenticator Passwordless Phone Sign-in policy (deprecated)
-                        href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
-                        items:
-                          - name: Get
-                            href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-get.md
-                          - name: Update
-                            href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-update.md
-                          - name: Delete
-                            href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-delete.md
                   - name: Authorization policy
                     href: resources/authorizationpolicy.md
                     items:
@@ -15617,7 +15656,7 @@ items:
             items:
               - name: Get
                 href: api/peopleadminsettings-get.md
-              - name: Org control for pronouns settings (preview)
+              - name: Org control for pronouns settings
                 items:
                   - name: Pronouns settings
                     href: resources/pronounssettings.md
@@ -16232,7 +16271,7 @@ items:
                       href: api/azureadauthentication-get.md
                 - name: Microsoft Entra service activity
                   items:
-                    - name: Microsoft Entra service activiy
+                    - name: Microsoft Entra service activity
                       href: resources/serviceactivity.md
                     - name: Get MFA sign-in success metrics
                       href: api/serviceactivity-getmetricsformfasigninsuccess.md
@@ -18401,6 +18440,10 @@ items:
                     items:
                       - name: Get join link
                         href: api/virtualappointment-getvirtualappointmentjoinweburl.md
+                      - name: Send SMS notification
+                        href: api/virtualappointment-sendvirtualappointmentsms.md
+                      - name: Send SMS reminder 
+                        href: api/virtualappointment-sendvirtualappointmentremindersms.md
                       - name: Virtual appointment (deprecated)
                         href: resources/virtualappointment.md
                       - name: Create virtual appointment (deprecated)
@@ -18428,7 +18471,7 @@ items:
                     href: api/presence-clearuserpreferredpresence.md
                   - name: Set user status message
                     href: api/presence-setstatusmessage.md
-              - name: Virtual event (preview)
+              - name: Virtual event
                 items:
                   - name: Webinar
                     href: resources/virtualeventwebinar.md
@@ -18493,6 +18536,27 @@ items:
                     href: api/teamworkdeviceoperation-list.md
                   - name: Get
                     href: api/teamworkdeviceoperation-get.md
+          - name: Settings (preview)
+            items:
+              - name: License details
+                href: resources/licensedetails.md
+                items:
+                - name: Get
+                  href: api/licenseDetails-getteamslicensingdetails.md
+              - name: Organization settings
+                items:
+                - name: Teamwork
+                  href: resources/teamwork.md
+                  items:
+                  - name: Get
+                    href: api/teamwork-get.md
+              - name: User settings
+                items:
+                - name: User teamwork
+                  href: resources/userteamwork.md
+                  items:
+                    - name: Get
+                      href: api/userteamwork-get.md
           - name: Employee learning
             displayName: Viva Learning
             items:
@@ -18790,6 +18854,8 @@ items:
                     href: api/team-completemigration.md
                   - name: List permission grants
                     href: api/team-list-permissiongrants.md
+                  - name: Get open shifts across all joined teams
+                    href: api/team-getopenshifts.md
                   - name: Team template
                     items:
                       - name: Team template
@@ -18841,6 +18907,19 @@ items:
                     href: api/teamworktagmember-delete.md
           - name: Shift management
             items:
+              - name: Day note (preview)
+                href: resources/daynote.md
+                items:
+                  - name: Create
+                    href: api/daynote-create.md
+                  - name: Get
+                    href: api/daynote-get.md
+                  - name: List
+                    href: api/daynote-list.md
+                  - name: Update
+                    href: api/daynote-update.md
+                  - name: Delete
+                    href: api/daynote-delete.md
               - name: Offer shift
                 href: resources/offershiftrequest.md
                 items:
@@ -18867,6 +18946,10 @@ items:
                     href: api/openshift-update.md
                   - name: Delete
                     href: api/openshift-delete.md
+                  - name: Stage for deletion
+                    href: api/changetrackedentity-stagefordeletion.md
+                  - name: Get open shifts across all joined teams
+                    href: api/team-getopenshifts.md
               - name: Open shift change request
                 href: resources/openshiftchangerequest.md
                 items:
@@ -18915,6 +18998,8 @@ items:
                     href: api/shift-put.md
                   - name: Delete
                     href: api/shift-delete.md
+                  - name: Stage for deletion
+                    href: api/changetrackedentity-stagefordeletion.md
               - name: Shift preferences
                 href: resources/shiftpreferences.md
                 items:
@@ -18971,6 +19056,8 @@ items:
                     href: api/timeoff-put.md
                   - name: Delete
                     href: api/timeoff-delete.md
+                  - name: Stage for deletion
+                    href: api/changetrackedentity-stagefordeletion.md
               - name: Time off reason
                 href: resources/timeoffreason.md
                 items:
