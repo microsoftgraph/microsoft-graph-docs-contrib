@@ -12,7 +12,7 @@ ms.date: 09/10/2022
 
 Namespace: microsoft.graph
 
-The Microsoft Graph REST API can deliver change notifications to clients through various endpoints, including webhooks, Event Hubs, and Event Grid. To learn how to subscribe and receive notifications for your application, see [Set up notifications for changes in user data](/graph/webhooks).
+The Microsoft Graph REST API can deliver change notifications to clients through various endpoints, including webhooks, Event Hubs, and Event Grid. To learn how to subscribe and receive notifications for your application, see [Set up notifications for changes in user data](/graph/change-notifications-overview).
 
 [!INCLUDE [change-notifications-supported-resources-expanded](../../../concepts/includes/change-notifications-supported-resources-expanded.md)]
 
@@ -32,7 +32,7 @@ In general, subscription operations require read permission to the resource. For
 
 - [subscription resource type](./subscription.md)
 - [Training module: Use change notifications and track changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges)
-- [Lifecycle notifications](/graph/webhooks-lifecycle)
+- [Lifecycle notifications](/graph/change-notifications-lifecycle-events)
 - [Change notification C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-change-notification/csharp)
 - [Change notification Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-change-notification/nodejs)
 
