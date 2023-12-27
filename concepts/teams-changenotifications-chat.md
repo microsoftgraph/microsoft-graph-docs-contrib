@@ -18,7 +18,7 @@ Continue with this article about scenarios for the **chat** resource. Or, find o
 
 ## Subscribe to changes in any chat at tenant level
 
-To get change notifications for all changes (create and update) related to any chat in a tenant, subscribe to `/chats`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for all changes (create and update) related to any chat in a tenant, subscribe to `/chats`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
 
 ### Permissions
 

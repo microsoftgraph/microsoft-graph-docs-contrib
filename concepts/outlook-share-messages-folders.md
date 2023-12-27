@@ -18,7 +18,7 @@ As an example, Garth has shared with John and given read access to Garth's Inbox
 
 Use the delegated permissions, `Mail.Read.Shared` or `Mail.ReadWrite.Shared`, to respectively read or write messages in a shared or delegated folder.
 
-Note that those two permissions do not support [subscribing to change notifications](webhooks.md) on items in shared or delegated folders. To set up change notification subscriptions on messages in a shared, delegated, or any other user's mail folder in the tenant, use the application permission, `Mail.Read`.
+Note that those two permissions do not support [subscribing to change notifications](change-notifications-overview.md) on items in shared or delegated folders. To set up change notification subscriptions on messages in a shared, delegated, or any other user's mail folder in the tenant, use the application permission, `Mail.Read`.
 
 For more information, see [mail permissions](permissions-reference.md).
 
@@ -57,7 +57,7 @@ On successful completion, you'll get HTTP 200 OK and a [mailFolder](/graph/api/r
 
 The same GET capabilities apply if Garth had delegated John further access to Garth's Inbox, or if Garth had delegated John his entire mailbox.
 
-If Garth has not shared his Inbox with John, nor has he delegated his mailbox to John, specifying Garth’s user ID or user principal name in those GET operations will return an error.
+If Garth has not shared his Inbox with John, nor has he delegated his mailbox to John, specifying Garth's user ID or user principal name in those GET operations will return an error.
 
 
 ## Next steps
