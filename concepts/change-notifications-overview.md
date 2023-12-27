@@ -7,7 +7,7 @@ ms.reviewer: keylimesoda
 ms.prod: "change-notifications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.date: 08/17/2023
+ms.date: 12/27/2023
 #customer intent: As a developer, I want to receive notifications of changes to specific Microsoft Graph resources, so that I can build apps that process the changes according to the business requirements.
 ---
 
@@ -32,8 +32,8 @@ Change notifications follow an event-driven model where customers receive alerts
 Microsoft Graph supports three types of change notifications:
 
 - **Basic notifications**: Change notifications that don't contain resource data other than the **id** of the resource that changed. When an app receives a basic notification, the service can use the **id** to query to changed object.
-- **Rich notifications**: Change notifications that include the resource data of the object that changed. For more information about rich notifications, see [Rich notifications](./webhooks-with-resource-data.md).
-- **Lifecycle notifications**: Notifications that alert the customer when they are at risk of missing change notifications due to the lifecycle of their subscription. For more information about lifecycle notifications, see [Lifecycle notifications](./webhooks-lifecycle.md).
+- **Rich notifications**: Change notifications that include the resource data of the object that changed. For more information about rich notifications, see [Rich notifications](./change-notifications-with-resource-data.md).
+- **Lifecycle notifications**: Notifications that alert the customer when they are at risk of missing change notifications due to the lifecycle of their subscription. For more information about lifecycle notifications, see [Lifecycle notifications](./change-notifications-lifecycle-events.md).
 
 ## Receiving change notifications
 
@@ -77,8 +77,8 @@ The following code samples are available on GitHub.
 
 
 ## Deployment resources
-- [Rich notifications (notifications with resource data)](./webhooks-with-resource-data.md)
-- [Lifecycle notifications](./webhooks-lifecycle.md)
+- [Rich notifications (notifications with resource data)](./change-notifications-with-resource-data.md)
+- [Lifecycle notifications](./change-notifications-lifecycle-events.md)
 - Tutorials
     - [Change notifications for cloud printing](./universal-print-webhook-notifications.md)
     - [Change notifications for Outlook resources](./outlook-change-notifications-overview.md)

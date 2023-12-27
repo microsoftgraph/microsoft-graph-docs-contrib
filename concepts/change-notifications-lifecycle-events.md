@@ -127,7 +127,7 @@ When you process the lifecycle notification and resume the flow of change notifi
 `reauthorizationRequired` lifecycle events alert you when Microsoft Graph requires the app to reauthorize the subscription, for example in the following cases:
 
 - When the access token is about to expire.
-- When a [subscription is about to expire](./webhooks.md#subscription-lifetime).
+- When a [subscription is about to expire](./change-notifications-overview.md#subscription-lifetime).
 - When a tenant administrator has revoked your app's permissions to read a resource.
 
 Before any of these conditions become true, Microsoft Graph sends an authorization challenge to the **lifecycleNotificationUrl**. 

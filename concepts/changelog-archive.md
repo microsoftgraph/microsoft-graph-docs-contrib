@@ -21,7 +21,7 @@ This topic contains archived changelog entries for Microsoft Graph. For current 
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | v1.0 | Added [chatMessage](/graph/api/resources/presence) to the resources supported for [change notifications](./webhooks.md). |
+| Addition | v1.0 | Added [chatMessage](/graph/api/resources/presence) to the resources supported for [change notifications](./change-notifications-overview.md). |
 
 ### Cloud communications
 | **Change type** | **Version**   | **Description**                          |
@@ -293,14 +293,14 @@ This topic contains archived changelog entries for Microsoft Graph. For current 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Removal | beta and v1.0 | Removed the erronously introduced **sequenceNumber** property from the [changeNotification](/graph/api/resources/changenotification) type.|
-| Addition | beta | Adds [presence](/graph/api/resources/presence) to the resources supported for [change notifications](./webhooks.md). |
+| Addition | beta | Adds [presence](/graph/api/resources/presence) to the resources supported for [change notifications](./change-notifications-overview.md). |
 
 ### Cloud communications
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the [Update onlineMeeting](/graph/api/onlinemeeting-update?view=graph-rest-beta&preserve-view=true) operation for meeting updates.|
-| Addition | beta | The [presence](/graph/api/resources/presence) resource now supports [change notifications](./webhooks.md). |
+| Addition | beta | The [presence](/graph/api/resources/presence) resource now supports [change notifications](./change-notifications-overview.md). |
 
 ### Cloud communications | Call records
 
@@ -447,7 +447,7 @@ Adding PSTN and direct routing call reports to Microsoft Graph (beta).
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition | v1.0 | Added the [changeNotification](/graph/api/resources/changenotification), [changeNotificationCollection](/graph/api/resources/changenotificationcollection), and [resourceData](/graph/api/resources/resourcedata) resources to the [change notification](/graph/webhooks) API. |
+| Addition | v1.0 | Added the [changeNotification](/graph/api/resources/changenotification), [changeNotificationCollection](/graph/api/resources/changenotificationcollection), and [resourceData](/graph/api/resources/resourcedata) resources to the [change notification](/graph/change-notifications-overview) API. |
 
 ### Cloud communications
 | **Change type** | **Version**   | **Description**                          |
@@ -630,7 +630,7 @@ Adding PSTN and direct routing call reports to Microsoft Graph (beta).
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition | beta | Added the [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta&preserve-view=true), [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta&preserve-view=true), and [changeNotificationEncryptedContent](/graph/api/resources/changenotificationencryptedcontent?view=graph-rest-beta&preserve-view=true) resources for the [change notification](webhooks.md) API. |
+| Addition | beta | Added the [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta&preserve-view=true), [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta&preserve-view=true), and [changeNotificationEncryptedContent](/graph/api/resources/changenotificationencryptedcontent?view=graph-rest-beta&preserve-view=true) resources for the [change notification](change-notifications-overview.md) API. |
 | Addition | v1.0 | Added support for [subscription](/graph/api/resources/subscription) in [Microsoft Cloud for US Government](deployments.md). |
 
 
@@ -643,7 +643,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 | Addition | v1.0 | Added [Get callRecord](/graph/api/callrecords-callrecord-get?view=graph-rest-1.0&preserve-view=true) API.|
 | Addition | v1.0 | Added new entities:<br /><li>[callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-1.0&preserve-view=true)</li> <li>[session](/graph/api/resources/callrecords-session?view=graph-rest-1.0&preserve-view=true)</li> <li>[segment](/graph/api/resources/callrecords-segment?view=graph-rest-1.0&preserve-view=true)</li>|
 | Addition | v1.0 | Added new complex types:<br /><li>[endpoint](/graph/api/resources/callrecords-endpoint?view=graph-rest-1.0&preserve-view=true)</li> <li>[participantEndpoint](/graph/api/resources/callrecords-participantendpoint?view=graph-rest-1.0&preserve-view=true)</li> <li>[serviceEndpoint](/graph/api/resources/callrecords-serviceendpoint?view=graph-rest-1.0&preserve-view=true)</li> <li>[userAgent](/graph/api/resources/callrecords-useragent?view=graph-rest-1.0&preserve-view=true)</li> <li>[serviceUserAgent](/graph/api/resources/callrecords-serviceuseragent?view=graph-rest-1.0&preserve-view=true)</li> <li>[clientUserAgent](/graph/api/resources/callrecords-clientuseragent?view=graph-rest-1.0&preserve-view=true)</li> <li>[userfeedback](/graph/api/resources/callrecords-userfeedback?view=graph-rest-1.0&preserve-view=true)</li> <li>[feedbackTokenSet](/graph/api/resources/callrecords-feedbacktokenset?view=graph-rest-1.0&preserve-view=true)</li> <li>[media](/graph/api/resources/callrecords-media?view=graph-rest-1.0&preserve-view=true)</li> <li>[mediaStream](/graph/api/resources/callrecords-mediastream?view=graph-rest-1.0&preserve-view=true)</li> <li>[networkInfo](/graph/api/resources/callrecords-networkinfo?view=graph-rest-1.0&preserve-view=true)</li> <li>[deviceInfo](/graph/api/resources/callrecords-deviceinfo?view=graph-rest-1.0&preserve-view=true)</li> <li>[failureInfo](/graph/api/resources/callrecords-failureinfo?view=graph-rest-1.0&preserve-view=true)</li> |
-| Addition | v1.0 | Added support for [webhook](webhooks.md) subscriptions to call records.|
+| Addition | v1.0 | Added support for [webhook](change-notifications-overview.md) subscriptions to call records.|
 | Change | v1.0 | Added `frequency60GHz` and `unknownFutureValue` to the **microsoft.graph.callRecords.wifiBand** enum.|
 | Change | v1.0 | Added `voicemail` to the **microsoft.graph.callRecords.serviceRole** enum.|
 | Addition | v1.0 | Added the [List sessions](/graph/api/callrecords-session-list?view=graph-rest-beta&preserve-view=true) API. |
@@ -1031,7 +1031,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 | Addition | beta | Added [Get callRecord](/graph/api/callrecords-callrecord-get?view=graph-rest-beta&preserve-view=true) API.|
 | Addition | beta | Added new entities:<br /><li>[callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta&preserve-view=true)</li> <li>[session](/graph/api/resources/callrecords-session?view=graph-rest-beta&preserve-view=true)</li> <li>[segment](/graph/api/resources/callrecords-segment?view=graph-rest-beta&preserve-view=true)</li>|
 | Addition | beta | Added new complex types:<br /><li>[endpoint](/graph/api/resources/callrecords-endpoint?view=graph-rest-beta&preserve-view=true)</li> <li>[participantEndpoint](/graph/api/resources/callrecords-participantendpoint?view=graph-rest-beta&preserve-view=true)</li> <li>[serviceEndpoint](/graph/api/resources/callrecords-serviceendpoint?view=graph-rest-beta&preserve-view=true)</li> <li>[userAgent](/graph/api/resources/callrecords-useragent?view=graph-rest-beta&preserve-view=true)</li> <li>[serviceUserAgent](/graph/api/resources/callrecords-serviceuseragent?view=graph-rest-beta&preserve-view=true)</li> <li>[clientUserAgent](/graph/api/resources/callrecords-clientuseragent?view=graph-rest-beta&preserve-view=true)</li> <li>[userfeedback](/graph/api/resources/callrecords-userfeedback?view=graph-rest-beta&preserve-view=true)</li> <li>[feedbackTokenSet](/graph/api/resources/callrecords-feedbacktokenset?view=graph-rest-beta&preserve-view=true)</li> <li>[media](/graph/api/resources/callrecords-media?view=graph-rest-beta&preserve-view=true)</li> <li>[mediaStream](/graph/api/resources/callrecords-mediastream?view=graph-rest-beta&preserve-view=true)</li> <li>[networkInfo](/graph/api/resources/callrecords-networkinfo?view=graph-rest-beta&preserve-view=true)</li> <li>[deviceInfo](/graph/api/resources/callrecords-deviceinfo?view=graph-rest-beta&preserve-view=true)</li> <li>[failureInfo](/graph/api/resources/callrecords-failureinfo?view=graph-rest-beta&preserve-view=true)</li> |
-| Addition | beta | Added support for [webhook](webhooks.md) subscriptions to call records.|
+| Addition | beta | Added support for [webhook](change-notifications-overview.md) subscriptions to call records.|
 
 ### Devices and apps | Corporate management
 
@@ -1164,7 +1164,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added support for subscribing to notifications that include resource data. Currently supported resources are [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) resources in Microsoft Teams channels and chats. Subscribing apps will have to implement additional authorization and decryption code to benefit from this feature. For more details, see [Set up change notifications for chat messages, including message properties (preview)](webhooks-with-resource-data.md).|
+| Addition | beta | Added support for subscribing to notifications that include resource data. Currently supported resources are [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) resources in Microsoft Teams channels and chats. Subscribing apps will have to implement additional authorization and decryption code to benefit from this feature. For more details, see [Set up change notifications for chat messages, including message properties (preview)](change-notifications-with-resource-data.md).|
 
 ### Cloud communications
 
@@ -3009,7 +3009,7 @@ Debut of the places API which provides rich details for locations in apps.
 ### Change notifications
 | Change type | Version | Description                              |
 |:------------|:--------|:-----------------------------------------|
-| Breaking change | Beta and v1.0 | Reduced [webhooks](/graph/api/resources/webhooks?view=graph-rest-1.0&preserve-view=true) [maximum length of subscription expiration time](/graph/api/resources/subscription?view=graph-rest-1.0&preserve-view=true#maximum-length-of-subscription-per-resource-type) for drive root items to 3 days. |
+| Breaking change | Beta and v1.0 | Reduced [webhooks](/graph/api/resources/change-notifications-api-overview?view=graph-rest-1.0&preserve-view=true) [maximum length of subscription expiration time](/graph/api/resources/subscription?view=graph-rest-1.0&preserve-view=true#maximum-length-of-subscription-per-resource-type) for drive root items to 3 days. |
 
 ### Identity and access
 
@@ -3346,7 +3346,7 @@ Debut of the places API which provides rich details for locations in apps.
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | v1.0        | Added the **privacyProfile** complex type to the [organization](/graph/api/resources/organization?view=graph-rest-1.0&preserve-view=true) entity. |
 | Addition        | v1.0        | Added the **legalAgeGroup, ageGroup and consentProvidedForMinor** complex type to the [user](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true) entity. |
-| Addition        | v1.0        | Added users and groups support to [webhook](/graph/api/resources/webhooks?view=graph-rest-1.0&preserve-view=true) notification subscriptions. |
+| Addition        | v1.0        | Added users and groups support to [webhook](/graph/api/resources/change-notifications-api-overview?view=graph-rest-1.0&preserve-view=true) notification subscriptions. |
 | Addition        | beta        | Added [List deleted items owned by a user](/graph/api/directory-deleteditems-user-owned?view=graph-rest-beta&preserve-view=true) action to [directory (deleted items)](/graph/api/resources/directory?view=graph-rest-beta&preserve-view=true) resource |
 | Addition        | v1.0        | Added the new **masterCategories** navigation property to the [outlookUser](/graph/api/resources/outlookuser?view=graph-rest-1.0&preserve-view=true) entity. **masterCategories** is a collection of [outlookCategory](/graph/api/resources/outlookcategory?view=graph-rest-1.0&preserve-view=true) objects. |
 | Addition        | v1.0        | Added the [outlookCategory](/graph/api/resources/outlookcategory?view=graph-rest-1.0&preserve-view=true) entity. |
@@ -3814,7 +3814,7 @@ Debut of the places API which provides rich details for locations in apps.
 
 | Change type | Version | Description                              |
 |:------------|:--------|:-----------------------------------------|
-| Breaking change | Beta and v1.0 | Reduced [webhooks](/graph/api/resources/webhooks?view=graph-rest-1.0&preserve-view=true) [maximum length of subscription expiration time](/graph/api/resources/subscription?view=graph-rest-1.0&preserve-view=true#maximum-length-of-subscription-per-resource-type) for drive root items. The new value is the supported maximum expiration time for drive root items. |
+| Breaking change | Beta and v1.0 | Reduced [webhooks](/graph/api/resources/change-notifications-api-overview?view=graph-rest-1.0&preserve-view=true) [maximum length of subscription expiration time](/graph/api/resources/subscription?view=graph-rest-1.0&preserve-view=true#maximum-length-of-subscription-per-resource-type) for drive root items. The new value is the supported maximum expiration time for drive root items. |
 
 ### Devices and apps | Corporate management
 |Change type|Version|Description|
@@ -4394,7 +4394,7 @@ Debut of the places API which provides rich details for locations in apps.
 
 |**Change type**|**Version**|**Description**|
 |:--------------|:-----------|:--------------|
-| Change        | Beta       | Added support to [webhooks](/graph/api/resources/webhooks?view=graph-rest-beta&preserve-view=true) for users and groups.
+| Change        | Beta       | Added support to [webhooks](/graph/api/resources/change-notifications-api-overview?view=graph-rest-beta&preserve-view=true) for users and groups.
 
 ### Change tracking
 
