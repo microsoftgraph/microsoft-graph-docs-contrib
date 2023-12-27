@@ -7,6 +7,7 @@ ms.reviewer: Mark.Wahl
 ms.localizationpriority: medium
 ms.prod: "governance"
 ms.date: 11/01/2022
+#Customer intent: As a developer integrating with Microsoft Graph, I want to understand how to use entitlement management APIs to manage access to resources.
 ---
 
 # Manage access to resources using the entitlement management APIs in Microsoft Graph
