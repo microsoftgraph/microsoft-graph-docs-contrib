@@ -70,13 +70,13 @@ If you select SQL for **Storage Account**, the **Uri** project detail field is d
 > [!NOTE]
 > If you select Microsoft Fabric as the Compute Type, the app will only support Copy Activity type.  
 
-> [!IMPORTANT]
-> If you select Microsoft Fabric as the Compute Type, you will need to register a **Microsoft.GraphServices** resource provider in your Azure subscription. For more information, see [Resource Providers](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/resource-providers-and-types).
-
 - **Workspace** (required) - Select the Fabric workspace for your application. For more information, see [Fabric Workspaces](/fabric/get-started/workspaces).
 - **Lakehouse** (required) - Select the OneLake instance to copy the data into. For more information, see [Fabric OneLake](/fabric/onelake/onelake-overview).
 
 ![Screenshot of the registration page for adding applications on Data Connect, including fields related to Lakehouse and its workspace.](images/app-registration-create-registration-info-including-lakehouse-workspace.png)
+
+> [!IMPORTANT]
+> If you select Microsoft Fabric as the Compute Type, you will need to register a **Microsoft.GraphServices** resource provider in your Azure subscription. For more information, see [Resource Providers](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/resource-providers-and-types).
 
 #### Datasets
 
