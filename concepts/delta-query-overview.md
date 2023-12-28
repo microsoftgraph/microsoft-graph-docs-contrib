@@ -163,7 +163,7 @@ Delta queries for supported resources are available for customers hosted on the 
 
 Some resources contain properties that are stored outside the main data store for the resource. For example, the [user](/graph/api/resources/user) resource data is mostly stored in Microsoft Entra ID, but some of its properties, like **skills**, are stored in SharePoint Online. Currently, only the properties stored in the main data store trigger changes in the delta query; properties stored outside the main data store aren't supported as part of change tracking. Therefore, a change to any of these properties doesn't result in an object showing up in the delta query response.
 
-For more information about properties stored outside of the main data store, see the [users](/graph/api/resources/users.md) and [groups](/graph/api/resources/groups-overview.md) documentation.
+For more information about properties stored outside of the main data store, see the [users](/graph/api/resources/users) and [groups](/graph/api/resources/groups-overview) documentation.
 
 ### Processing delays
 
