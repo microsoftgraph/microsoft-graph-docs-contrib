@@ -49,7 +49,7 @@ The Registration Info page outlines standard requirements for app registrations.
 - **Compute Type** (required) - Select the Azure product offering for this application.
 - **Activity Type** (required) - Select the Data Factory/Synapse/Fabric activity that will be used to copy over the data.
 
-Then specify the project details—a process that's similar to creating a resource in Azure. The following are the project detail fields: 
+Then specify the project details—a process that's similar to creating a resource in Azure. The following are the project detail fields:
 
 - **Subscription** (required) - Select a subscription in the tenant that will be used exclusively to filter the next four sections that relate to data destination configuration.
 - **Resource Group** (required) - Select the group location for the data storage.
@@ -69,9 +69,11 @@ If you select SQL for **Storage Account**, the **Uri** project detail field is d
 
 > [!NOTE]
 > If you select Microsoft Fabric as the Compute Type, the app will only support Copy Activity type.  
-> Also, you need to register the Microsoft.GraphServices resource provider in your subscription.
 
-- **Workspace** (required) - Select the Fabric workspace for your application. For more information, see [Fabric Workspaces](/fabric/get-started/workspaces). 
+> [!IMPORTANT]
+> If you select Microsoft Fabric as the Compute Type, you will need to register a **Microsoft.GraphServices** resource provider in your Azure subscription. For more information, see [Resource Providers](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/resource-providers-and-types).
+
+- **Workspace** (required) - Select the Fabric workspace for your application. For more information, see [Fabric Workspaces](/fabric/get-started/workspaces).
 - **Lakehouse** (required) - Select the OneLake instance to copy the data into. For more information, see [Fabric OneLake](/fabric/onelake/onelake-overview).
 
 ![Screenshot of the registration page for adding applications on Data Connect, including fields related to Lakehouse and its workspace.](images/app-registration-create-registration-info-including-lakehouse-workspace.png)
