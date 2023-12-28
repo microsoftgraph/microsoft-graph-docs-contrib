@@ -15,6 +15,8 @@ ms.date: 12/28/2023
 
 Delta query, also called *change tracking*, enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request. Microsoft Graph applications can use delta query to efficiently synchronize changes with a local data store.
 
+Using delta query helps you avoid constantly polling Microsoft Graph, as the app requests only data that changed since the last request. This pattern allows the application to reduce the amount of data  it requests, thereby reducing the cost of the request and as such, likely limit the chances of the requests being [throttled](throttling.md).
+
 ## Use delta query to track changes in a resource collection
 
 The typical call pattern is as follows:
@@ -186,6 +188,12 @@ Delta tokens are only valid for a specific period before the client application 
 - For Outlook entities (**message**, **mailFolder**, **event**, **contact**, **contactFolder**, **todoTask**, and **todoTaskList**), the upper limit isn't fixed; it's dependent on the size of the internal delta token cache. While new delta tokens are continuously added in the cache, after the cache capacity is exceeded, the older delta tokens are deleted.
 
 In case the token expires, the service should respond with a 40X-series error with error codes such as `syncStateNotFound`. For more information, see [Error codes in Microsoft Graph](/graph/errors#code-property).
+
+## Combine delta query and change notifications
+
+An app can use Microsoft Graph [change notifications](./webhooks.md) to subscribe to be notified when a specific resource changes. The application can then use delta query to request all changes since the last time it made the request.
+
+Applications can use this strategy to nearly eliminate (only for supported resources) the need to frequently poll Microsoft Graph and process those changes to keep a local data store in sync, greatly reducing the chances for their requests to be throttled.
 
 ## Delta query request examples
 
