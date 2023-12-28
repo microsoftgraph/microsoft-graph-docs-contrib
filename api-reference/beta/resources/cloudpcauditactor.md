@@ -35,10 +35,10 @@ The audit actor represented by the Microsoft Entra user and application associat
 
 |Member|Description|
 |:---|:---|
-|itPro|The operation was performed by an IT pro.|
-|application|The operation was performed by the application.|
-|partner|The operation was performed by a partner.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+|itPro|An IT pro performed the operation.|
+|application|The application performed the operation.|
+|partner|A partner performed the operation.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 
@@ -46,7 +46,7 @@ None.
 
 ## JSON Representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.cloudPcAuditActor"
