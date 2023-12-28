@@ -40,7 +40,7 @@ Represents a business in Microsoft Bookings. This is the top level object in the
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |address|[physicalAddress](physicaladdress.md)|The street address of the business. The **address** property, together with **phone** and **webSiteUrl**, appear in the footer of a business scheduling page.|
-|bookingPageSettings|[bookingPageSettings](../resources/bookingpagesettings.md)|Settings for the published booking page|
+|bookingPageSettings|[bookingPageSettings](../resources/bookingpagesettings.md)|Settings for the published booking page.|
 |businessHours|[bookingWorkHours](bookingworkhours.md) collection|The hours of operation for the business.|
 |businessType|String|The type of business.|
 |createdDateTime|DateTimeOffset|The date, time and timezone when the booking business was created.|
