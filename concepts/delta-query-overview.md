@@ -98,8 +98,9 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 
   - `changed` indicates the item was deleted and can be restored from [deletedItems](/graph/api/directory-deleteditems-list).
   - `deleted` indicates the item is deleted and can't be restored.
+    - Items [deleted from the deletedItems store](/graph/api/directory-deleteditems-delete) also show as `deleted`.
 
-    The **@removed** object can be returned in the initial delta query response and in tracked (`@odata.nextLink`) responses. Clients using delta query requests should be designed to handle these objects in the responses.
+    The **@removed** object can be returned in the initial delta query response and in tracked (`@odata.nextLink`) responses. For example, a directory object that's deleted but can still be restored from deleted items will show as `"@removed": {"reason": "changed"}`. Clients using delta query requests should be designed to handle these objects in the responses.
 
 > [!NOTE]
 > A single entity can be contained multiple times in the response, if that entity was changed multiple times and under certain conditions. Delta queries enable your application to list all the changes, but can't ensure that entities are unified in a single response.
