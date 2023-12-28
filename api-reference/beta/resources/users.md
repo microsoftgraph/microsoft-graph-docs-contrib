@@ -138,17 +138,15 @@ With the appropriate permissions, the app can read the profiles of users or grou
 
 For more information about search limitations for guest users, see [Compare member and guest default permissions](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context#compare-member-and-guest-default-permissions).
 
-## Common properties
+## Properties not returned by default
 
-| Property | Description |
-|----------|-------------|
-| displayName | The name displayed in the address book for the user.|
-|givenName| The first name of the user. |
-|surname| The last name of the user. |
-|mail| The user's email address. |
-|photo| The user's profile photo. |
+Some properties of the user object aren't returned by default and must be specified in a `$select` query parameter. For example, **bithday** and **skills**. Refer to the [properties table of the user entity](user.md#properties) to identify properties that are returned only on `$select`.
 
-For details and a list of all the properties, see the [user](user.md) object.
+## Properties stored outside of the main data store
+
+While the user resource data is mostly stored in Microsoft Entra ID, some of its properties, like **skills**, are stored in SharePoint Online. In most instances, you can't specify these properties in the same Create or Update request body as other user properties.
+
+Properties stored outside the main data store also aren't supported as part of change tracking. Therefore, a change to any of these properties doesn't result in an object showing up in the delta query response.
 
 ## Common operations
 
