@@ -38,7 +38,7 @@ The typical call pattern is as follows:
 4. Microsoft Graph returns a response describing changes to the resource since the previous request, and either a `@odata.nextLink` URL or a `@odata.deltaLink` URL.
 
 > [!NOTE]
-> - Resources stored in Microsoft Entra ID (such as users and groups) support "sync from now" scenarios. This allows you to skip steps 1 and 2 (if you're not interested in retrieving the full state of the resource) and ask for the latest `@odata.deltaLink` instead. Append `$deltaToken=latest` to the `delta` function and the response will contain a `@odata.deltaLink` and no resource data. Resources in OneDrive and SharePoint also support this feature. For resources in OneDrive and SharePoint, append `token=latest` instead.
+> - Resources stored in Microsoft Entra ID (such as users and groups) support "sync from now" scenarios. This allows you to skip steps 1 and 2 (if you're not interested in retrieving the full state of the resource) and ask for the latest `@odata.deltaLink` instead. Append `$deltaToken=latest` to the `delta` function and the response will contain a `@odata.deltaLink` and no resource data. Resources in OneDrive and SharePoint also support this feature but require `token=latest` instead.
 > - `$select` and `$deltaLink` query parameters are supported for some Microsoft Entra resources so that customers can change the properties they want to track for an existing `@odata.deltaLink`. Delta queries with both `$select` and `$skipToken` aren't supported.
 
 ### State tokens
@@ -100,7 +100,7 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
   - `deleted` indicates the item is deleted and can't be restored.
     - Items [deleted from the deletedItems store](/graph/api/directory-deleteditems-delete) also show as `deleted`.
 
-    The **@removed** object can be returned in the initial delta query response and in tracked (`@odata.nextLink`) responses. For example, a directory object that's deleted but can still be restored from deleted items will show as `"@removed": {"reason": "changed"}`. Clients using delta query requests should be designed to handle these objects in the responses.
+    The **@removed** object can be returned in the initial delta query response and in tracked (`@odata.nextLink`) responses. For example, a deleted directory object that can still be restored from deleted items shows up as `"@removed": {"reason": "changed"}`. Clients using delta query requests should be designed to handle these objects in the responses.
 
 - Instances [restored from deletedItems](/graph/api/directory-deleteditems-list) show up as newly created instances in the delta query response.
 
