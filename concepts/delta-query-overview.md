@@ -92,7 +92,7 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 - Updated instances are represented by their **id** with *at least* the updated properties, but other properties might be included.
 
 - Relationships on users and groups are represented as annotations on the standard resource representation. These annotations use the format **propertyName@delta**. The annotations are included in the response of the initial delta query request.
-   - Changes to relationships stored outside the main data store aren't supported as part of change tracking. For more information, see [Changes to properties stored outside the main data store aren't tracked](#changes-to-properties-stored-outside-the-main-data-store-arent-tracked).
+  - Changes to relationships stored outside the main data store aren't supported as part of change tracking. For more information, see [Changes to properties stored outside the main data store aren't tracked](#changes-to-properties-stored-outside-the-main-data-store-arent-tracked).
 
 - Removed instances are represented by their **id** and an **@removed** object. The **@removed** object might include additional information about why the instance was removed. For example,  `"@removed": {"reason": "changed"}`. Possible **@removed** reasons can be `changed` or `deleted`.
 
@@ -101,6 +101,8 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
     - Items [deleted from the deletedItems store](/graph/api/directory-deleteditems-delete) also show as `deleted`.
 
     The **@removed** object can be returned in the initial delta query response and in tracked (`@odata.nextLink`) responses. For example, a directory object that's deleted but can still be restored from deleted items will show as `"@removed": {"reason": "changed"}`. Clients using delta query requests should be designed to handle these objects in the responses.
+
+- Instances [restored from deletedItems](/graph/api/directory-deleteditems-list) show up as newly created instances in the delta query response.
 
 > [!NOTE]
 > A single entity can be contained multiple times in the response, if that entity was changed multiple times and under certain conditions. Delta queries enable your application to list all the changes, but can't ensure that entities are unified in a single response.
