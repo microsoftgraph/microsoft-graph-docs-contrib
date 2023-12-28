@@ -33,7 +33,7 @@ To access the usage data asynchronously, use the following steps with the API en
 ### 1. Usage line-item endpoint
 
 - Retrieve the [billed](/graph/api/partners-billing-billedusage-export) or [unbilled](/graph/api/partners-billing-unbilledusage-export) usage line items
-- Receive a `202 Accepted` response code and a URL in the response body
+- Receive a `202 Accepted` response code and a URL in the response body to check the status of the operation.
 
 ### 2. Operation status endpoint
 
