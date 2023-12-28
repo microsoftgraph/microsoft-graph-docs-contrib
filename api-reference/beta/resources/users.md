@@ -142,7 +142,7 @@ For more information about search limitations for guest users, see [Compare memb
 
 Some properties of the user object aren't returned by default and must be specified in a `$select` query parameter. For example, **bithday** and **skills**. Refer to the [properties table of the user entity](user.md#properties) to identify properties that are returned only on `$select`.
 
-## Properties stored outside of the main data store
+## Properties stored outside the main data store
 
 While the user resource data is mostly stored in Microsoft Entra ID, some of its properties, like **skills**, are stored in SharePoint Online. In most instances, you can't specify these properties in the same Create or Update request body as other user properties.
 
