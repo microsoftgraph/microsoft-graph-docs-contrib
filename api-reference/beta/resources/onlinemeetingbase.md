@@ -40,6 +40,7 @@ Inherits from [entity](../resources/entity.md).
 | joinInformation | [itemBody](itembody.md) | The join information in the language and locale variant specified in 'Accept-Language' request HTTP header. Read-only. |
 | joinMeetingIdSettings | [joinMeetingIdSettings](joinmeetingidsettings.md) | Specifies the **joinMeetingId**, the meeting passcode, and the requirement for the passcode. Once an **onlineMeeting** is created, the **joinMeetingIdSettings** can't be modified. To make any changes to this property, the meeting needs to be canceled and a new one needs to be created. |
 | joinWebUrl | String | The join URL of the online meeting. Read-only. |
+| meetingTemplateId | String | The id of the [meeting template](https://learn.microsoft.com/en-us/microsoftteams/create-custom-meeting-template). |
 | lobbyBypassSettings | [lobbyBypassSettings](lobbyBypassSettings.md) | Specifies which participants can bypass the meeting lobby. |
 | recordAutomatically | Boolean | Indicates whether to record the meeting automatically. |
 | subject | String | The subject of the online meeting. |
