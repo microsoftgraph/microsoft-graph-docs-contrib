@@ -1,6 +1,6 @@
 ---
 title: "impactedAsset resource type"
-description: "Describes an asset that was impacted based on the alert triggered by the custom detection rule"
+description: "Describes an asset that was impacted based on the alert triggered by the custom detection rule."
 author: "mmekler"
 ms.localizationpriority: medium
 ROBOTS: NOINDEX
@@ -14,8 +14,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes an asset that was impacted based on the alert triggered by a [Custom Detection Rule](../resources/security-detectionrule.md)..
-It's an abstract type, and has multiple different impacted asset types that are derived from it:
+Describes an asset that was impacted based on the alert triggered by a [Custom Detection Rule](../resources/security-detectionrule.md).
+This type is abstract, and serves as the base type for the following asset types.
 
 * [User](../resources/security-impacteduserasset.md)
 * [Device](../resources/security-impacteddeviceasset.md)

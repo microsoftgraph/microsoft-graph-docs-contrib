@@ -1,6 +1,6 @@
 ---
 title: "hardDeleteResponseAction resource type"
-description: "Describes a 'Hard Delete' email response action"
+description: "Describes a response action that performs a hard delete of an email message."
 author: "mmekler"
 ms.localizationpriority: medium
 ROBOTS: NOINDEX
@@ -14,8 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes a 'Hard Delete' email response action.
-Deletes the email message.
+Describes a response action that performs a hard delete of an email message.
 
 Inherits from [microsoft.graph.security.responseAction](../resources/security-responseaction.md).
 
