@@ -19,12 +19,15 @@ A container for the range of Microsoft Teams functionalities that are available 
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List installedApps](../api/userteamwork-list-installedapps.md)|[teamsAppInstallation](../resources/teamsappinstallation.md) collection|Retrieve the list of apps installed in the personal scope of the specified user.|
+|[Get userTeamwork](../api/userteamwork-get.md)|[userTeamwork](../resources/userteamwork.md)|Get userTeamwork settings for the specified [user](../resources/user.md), which includes the Microsoft Teams region and the locale chosen by the user.|
 
 ## Properties
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-|id|string| A unique identifier. |
+|id| string|The default userTeamwork identifier.|
+|locale|string |Represents the chosen locale of a user in Microsoft Teams.|  
+|region |string|Represents the region of the user in Microsoft Teams.|
 
 ## Relationships
 
@@ -45,7 +48,9 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "string"
+  "id": "string",
+  "locale" : "string",
+  "region" : "string",
 }
 
 ```
