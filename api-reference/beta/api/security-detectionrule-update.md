@@ -1,6 +1,6 @@
 ---
 title: "Update detectionRule"
-description: "Update the properties of a microsoft.graph.security.detectionRule object."
+description: "Update the properties of a custom detection rule."
 author: "mmekler"
 ms.localizationpriority: medium
 ROBOTS: NOINDEX
@@ -42,8 +42,8 @@ PATCH /security/rules/detectionRules/{ruleId}
 
 ## Request body
 
-Provide the properties of a [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md) which are to be updated, and those properties only.
-The properties which are updateable are specified in the following table:
+Provide the properties of a [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md) to update, and those properties only.
+The properties that are updateable are specified in the following table:
 
 | Property                                         | Type                                                                                         | Description                                                      |
 |:-------------------------------------------------|:---------------------------------------------------------------------------------------------|:-----------------------------------------------------------------|
@@ -54,7 +54,7 @@ The properties which are updateable are specified in the following table:
 | detectionAction/alertTemplate/description        | String                                                                                       | Optional.                                                        |
 | detectionAction/alertTemplate/recommendedActions | String                                                                                       | Optional. Provide 'null' to delete the existing response actions |
 | detectionAction/alertTemplate/severity           | [microsoft.graph.alertSeverity](../resources/enums.md#alertseverity-values)                  | Optional.                                                        |
-| detectionAction/alertTemplate/impactedAssets     | [microsoft.graph.security.impactedAsset](../resources/security-impactedasset.md)             | Optional. Provide 'null' to delete the existing inpacted assets. |
+| detectionAction/alertTemplate/impactedAssets     | [microsoft.graph.security.impactedAsset](../resources/security-impactedasset.md)             | Optional. Provide 'null' to delete the existing impacted assets. |
 | detectionAction/responseActions                  | [microsoft.graph.security.responseAction](../resources/security-responseaction.md)           | Optional.                                                        |
 | detectionAction/organizationalScope              | [microsoft.graph.security.organizationalScope](../resources/security-organizationalscope.md) | Optional.                                                        |
 | queryCondition/queryText                         | String                                                                                       | Optional.                                                        |
@@ -67,7 +67,7 @@ If successful, this method returns a `200 OK` response code and an updated [micr
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "ignored"
 }
@@ -89,7 +89,7 @@ Content-Type: application/json
 
 
 ### Response
-The following is an example of the response
+The following example shows the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

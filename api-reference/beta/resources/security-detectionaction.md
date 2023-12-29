@@ -1,6 +1,6 @@
 ---
 title: "detectionAction resource type"
-description: "Describes the actions that will be taken after a detection is made by the custom detection rule"
+description: "Describes the actions that will be taken after a detection is made by the custom detection rule."
 author: "mmekler"
 ms.localizationpriority: medium
 ROBOTS: NOINDEX
@@ -19,7 +19,7 @@ Describes the actions that will be taken after a detection is made by a [Custom 
 ## Properties
 | Property            | Type                                                                                          | Description                                                           |
 |:--------------------|:----------------------------------------------------------------------------------------------|:----------------------------------------------------------------------|
-| alertTemplate       | [microsoft.graph.security.alertTemplate](../resources/security-alerttemplate.md)              | Template for the generates alert.                                     |
+| alertTemplate       | [microsoft.graph.security.alertTemplate](../resources/security-alerttemplate.md)              | Template for the generated alert.                                     |
 | organizationalScope | [microsoft.graph.security.organizationalScope](../resources/security-organizationalscope.md)  | Groups to which the custom detection rule applies.                    |
 | responseActions     | [microsoft.graph.security.responseAction](../resources/security-responseaction.md) collection | Actions taken on impacted assets as set in the custom detection rule. |
 
@@ -27,7 +27,7 @@ Describes the actions that will be taken after a detection is made by a [Custom 
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.detectionAction"

@@ -1,6 +1,6 @@
 ---
 title: "allowFileResponseAction resource type"
-description: "Describes a 'Allow File' response action."
+description: "Describes a response action that allows a file to run."
 author: "mmekler"
 ms.localizationpriority: medium
 ROBOTS: NOINDEX
@@ -14,8 +14,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes a 'Allow File' response action.
-Allows the file to run on devices controlled by Microsoft Defender for Endpoint.
+Describes response action that allows a file to run.
+This response action allows the file to run on devices controlled by Microsoft Defender for Endpoint.
 
 Inherits from [microsoft.graph.security.responseAction](../resources/security-responseaction.md).
 
@@ -24,14 +24,14 @@ Inherits from [microsoft.graph.security.responseAction](../resources/security-re
 | Property         | Type                                                                                                        | Description                                                                                                                                                     |
 |------------------|-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | identifier       | [microsoft.graph.security.fileEntityIdentifier](../resources/enums-security.md#fileentityidentifier-values) | Unique identifier for the response action. The possible values are: `sha1`, `initiatingProcessSHA1`, `sha256`, `initiatingProcessSHA256`, `unknownFutureValue`. |
-| deviceGroupNames | String collection                                                                                           | Device groups to which the actions set in the custom detection rule are applied. [Additional info](/microsoft-365/security/defender-endpoint/machine-groups)    |
+| deviceGroupNames | String collection                                                                                           | Device groups to which the actions set in the custom detection rule are applied. [More information](/microsoft-365/security/defender-endpoint/machine-groups)    |
 
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.allowFileResponseAction"

@@ -1,6 +1,6 @@
 ---
 title: "detectionRule resource type"
-description: "Custom detection rules are types of protection rules you can design and tweak using advanced hunting queries"
+description: "Custom detection rules are types of protection rules you can design and tweak using advanced hunting queries."
 author: "mmekler"
 ms.localizationpriority: medium
 ROBOTS: NOINDEX
@@ -49,7 +49,7 @@ Inherits from [microsoft.graph.security.protectionRule](../resources/security-pr
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

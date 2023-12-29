@@ -26,7 +26,7 @@ The scope to specify which devices are covered by a [custom detection rule's](..
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.organizationalScope"

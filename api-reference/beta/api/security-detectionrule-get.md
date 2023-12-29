@@ -1,6 +1,6 @@
 ---
 title: "Get detectionRule"
-description: "Read the properties and relationships of a microsoft.graph.security.detectionRule object."
+description: "Read the properties and relationships of a custom detection rule."
 author: "mmekler"
 ms.localizationpriority: medium
 ROBOTS: NOINDEX
@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 Gets a [Custom Detection Rule](../resources/security-detectionrule.md).
 With custom detections, you can proactively monitor for and respond to various events and system states, including suspected breach activity and misconfigured assets in their organization network. 
-Using [Kusto query language (KQL)](/azure/data-explorer/kusto/query/), custom detection rules automatically trigger [alerts](../resources/security-alert.md) and response actions once there are events matching their KQL queries.
+Custom detection rules, which are written in [Kusto query language (KQL)](/azure/data-explorer/kusto/query/), automatically trigger [alerts](../resources/security-alert.md) and response actions when events occur that match a KQL query.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

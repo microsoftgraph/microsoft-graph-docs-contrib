@@ -1,6 +1,6 @@
 ---
 title: "collectInvestigationPackageResponseAction resource type"
-description: "Describes a 'Collect Investigation Package' response action"
+description: "Describes a response action that collects device information in a ZIP file."
 author: "mmekler"
 ms.localizationpriority: medium
 ROBOTS: NOINDEX
@@ -14,8 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes a 'Collect Investigation Package' response action.
-Collects device information in a ZIP file.
+"Describes a response action that collects device information in a ZIP file.
 
 Inherits from [microsoft.graph.security.responseAction](../resources/security-responseaction.md).
 
@@ -28,7 +27,7 @@ Inherits from [microsoft.graph.security.responseAction](../resources/security-re
 None.
 
 ## JSON representation
-The JSON representation of the resource:
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.collectInvestigationPackageResponseAction"

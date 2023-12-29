@@ -1,6 +1,6 @@
 ---
 title: "alertTemplate resource type"
-description: "Describes the alert that will be generated following a detection"
+description: "Describes the alert that is generated in response to a detection."
 author: "mmekler"
 ms.localizationpriority: medium
 ROBOTS: NOINDEX
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the alert that will be generated following a detection by a [Custom Detection Rule](../resources/security-detectionrule.md).
+Describes the alert that is generated in response to a detection by a [Custom Detection Rule](../resources/security-detectionrule.md).
 
 ## Properties
 
@@ -33,7 +33,7 @@ Describes the alert that will be generated following a detection by a [Custom De
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.alertTemplate"
