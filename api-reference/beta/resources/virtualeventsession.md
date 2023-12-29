@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a session in a [virtualEvent](../resources/virtualevent.md)
+Represents a session in a [virtualEvent](../resources/virtualevent.md).
 
 Inherits from [onlineMeetingBase](../resources/onlinemeetingBase.md).
 
@@ -26,7 +26,7 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingBase.md).
 
 ## Properties
 
-Currently, only the following properties are filled out on a **virtualEventSession** object when it's returned. All other properties on the returned **virtualEventSession** object are null.
+Currently, only the following properties are filled out on a virtualEventSession object when it's returned. All other properties on the returned virtualEventSession object are null.
 
 | Property              | Type                                          | Description    |
 | :-------------------- | :-------------------------------------------- | :------------------------------------ |

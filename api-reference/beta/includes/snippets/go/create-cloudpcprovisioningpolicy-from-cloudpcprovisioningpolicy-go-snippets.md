@@ -21,12 +21,10 @@ requestBody.SetDescription(&description)
 displayName := "Display Name value"
 requestBody.SetDisplayName(&displayName) 
 domainJoinConfiguration := graphmodels.NewCloudPcDomainJoinConfiguration()
+domainJoinType := graphmodels.HYBRIDAZUREADJOIN_CLOUDPCDOMAINJOINTYPE 
+domainJoinConfiguration.SetDomainJoinType(&domainJoinType) 
 onPremisesConnectionId := "16ee6c71-fc10-438b-88ac-daa1ccafffff"
 domainJoinConfiguration.SetOnPremisesConnectionId(&onPremisesConnectionId) 
-additionalData := map[string]interface{}{
-	"domainJoinType" : "hybridAzureADJoin", 
-}
-domainJoinConfiguration.SetAdditionalData(additionalData)
 requestBody.SetDomainJoinConfiguration(domainJoinConfiguration)
 
 

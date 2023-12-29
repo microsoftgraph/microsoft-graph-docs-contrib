@@ -1,6 +1,6 @@
 ---
 title: "List webinars"
-description: "Get the list of all virtualEventWebinar objects created in a tenant."
+description: "Get the list of all virtual event webinars created in a tenant."
 author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of all [virtualEventWebinar](../resources/virtualeventwebinar.md) objects created in a tenant.
+Get the list of all [virtualEventWebinar](../resources/virtualeventwebinar.md) objects created in the tenant.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -26,7 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 > [!NOTE]
 >
-> When used with application permissions, this API returns only the events whose organizers have been assigned an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
+> This API returns only webinars whose organizer has been assigned an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
 
 ## HTTP request
 
@@ -34,8 +34,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-
-To list all webinars of a tenant:
 
 ``` http
 GET /solutions/virtualEvents/webinars

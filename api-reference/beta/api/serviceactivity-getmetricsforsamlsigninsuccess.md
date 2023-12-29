@@ -101,6 +101,10 @@ GET https://graph.microsoft.com/beta/reports/serviceActivity/getMetricsForSamlSi
 [!INCLUDE [sample-code](../includes/snippets/php/serviceactivitythisgetmetricsforsamlsigninsuccess-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/serviceactivitythisgetmetricsforsamlsigninsuccess-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/serviceactivitythisgetmetricsforsamlsigninsuccess-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
