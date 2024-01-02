@@ -8,6 +8,7 @@ ms.prod: "change-notifications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ms.date: 08/12/2022
+#customer intent: As a developer, I want to learn how to track changes to specific Microsoft Graph resources, so that I can build apps that process the changes according to the business requirements.
 ---
 
 # Use delta query to track changes in Microsoft Graph data
