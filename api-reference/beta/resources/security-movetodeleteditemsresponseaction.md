@@ -1,6 +1,6 @@
 ---
 title: "moveToDeletedItemsResponseAction resource type"
-description: "Describes a 'Move To Deleted Items' email response action"
+description: "Describes an email response action that moves the email message to the end user's Deleted items folder."
 author: "mmekler"
 ms.localizationpriority: medium
 ROBOTS: NOINDEX
@@ -14,8 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes a 'Move To Deleted Items' email response action.
-Moves the email message to the end user's Deleted items folder.
+Describes an email response action that moves the email message to the end user's Deleted items folder.
 
 Inherits from [microsoft.graph.security.responseAction](../resources/security-responseaction.md).
 

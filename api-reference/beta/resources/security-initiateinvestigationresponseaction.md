@@ -1,6 +1,6 @@
 ---
 title: "initiateInvestigationResponseAction resource type"
-description: "Describes a 'Initiate Investigation' response action"
+description: "Describes a response action that starts an automated investigation of a device."
 author: "mmekler"
 ms.localizationpriority: medium
 ROBOTS: NOINDEX
@@ -14,8 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes a 'Initiate Investigation' response action.
-Initiates an automated investigation on the device.
+Describes a response action that starts an automated investigation of a device.
 
 Inherits from [microsoft.graph.security.responseAction](../resources/security-responseaction.md).
 

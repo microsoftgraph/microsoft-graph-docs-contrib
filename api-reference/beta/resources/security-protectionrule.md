@@ -1,6 +1,6 @@
 ---
 title: "protectionRule resource type"
-description: "Represents an abstract rule, which contains basic properties like ID, name, etc."
+description: "Represents an abstract rule, which contains basic properties such as ID, name, and so on."
 author: "mmekler"
 ms.localizationpriority: medium
 ROBOTS: NOINDEX
@@ -14,8 +14,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an abstract rule, which contains basic properties like ID, name, etc.
-This is an abstract type.
+Represents an abstract rule, which contains basic properties such as ID, name, and so on.
+This type is abstract.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
@@ -26,8 +26,8 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 | createdDateTime      | DateTimeOffset | Timestamp of rule creation.                            |
 | displayName          | String         | Name of the rule.                                      |
 | id                   | String         | Unique identifier to represent the rule.               |
-| isEnabled            | Boolean        | Indicates whether rule is turned on for the tenant.    |
-| lastModifiedBy       | String         | Name of user or application who last updated the rule. |
+| isEnabled            | Boolean        | Whether rule is turned on for the tenant.              |
+| lastModifiedBy       | String         | Name of the user or application who last updated the rule. |
 | lastModifiedDateTime | DateTimeOffset | Timestamp of when the rule was last updated.           |
 
 ## Relationships

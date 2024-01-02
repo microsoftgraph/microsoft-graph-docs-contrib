@@ -1,6 +1,6 @@
 ---
 title: "isolateDeviceResponseAction resource type"
-description: "Describes a 'Isolate Device' response action"
+description: "Describes a response action that uses Microsoft Defender to apply full network isolation to a device."
 author: "mmekler"
 ms.localizationpriority: medium
 ROBOTS: NOINDEX
@@ -14,8 +14,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes a 'Isolate Device' response action.
-Uses Microsoft Defender for Endpoint to apply full network isolation, preventing the device from connecting to any application or service.
+Describes a response action that uses Microsoft Defender to apply full network isolation to a device.
+This response action prevents the device from connecting to any application or service.
 
 Inherits from [microsoft.graph.security.responseAction](../resources/security-responseaction.md).
 

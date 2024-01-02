@@ -1,6 +1,6 @@
 ---
 title: "moveToJunkResponseAction resource type"
-description: "Describes a 'Move To Junk' email response action"
+description: "Describes an email response action that moves the email message to the user's Junk folder."
 author: "mmekler"
 ms.localizationpriority: medium
 ROBOTS: NOINDEX
@@ -14,8 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes a 'Move To Junk' email response action.
-Moves the email message to the Junk.
+Describes an email response action that moves the email message to the user's Junk folder.
 
 Inherits from [microsoft.graph.security.responseAction](../resources/security-responseaction.md).
 

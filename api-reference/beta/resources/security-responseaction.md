@@ -16,7 +16,7 @@ Namespace: microsoft.graph.security
 
 Describes an action taken on [impacted assets](../resources/security-impactedasset.md) as set in a [Custom Detection Rule](../resources/security-detectionrule.md). [More about response actions](/microsoft-365/security/defender/custom-detection-rules#4-specify-actions)
 
-This is an abstract type, and has multiple different response action types that are derived from it:
+This type is abstract and has multiple response action types that are derived from it:
 
 * [Stop and Quarantine File](../resources/security-stopandquarantinefileresponseaction.md)
 * [Disable User](../resources/security-disableuserresponseaction.md)

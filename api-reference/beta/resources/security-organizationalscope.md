@@ -1,6 +1,6 @@
 ---
 title: "organizationalScope resource type"
-description: "The scope to specify which devices are covered by a custom detection rule's detection action"
+description: "Represents a scope that specifies which devices are covered by a custom detection rule's detection action."
 author: "mmekler"
 ms.localizationpriority: medium
 ROBOTS: NOINDEX
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The scope to specify which devices are covered by a [custom detection rule's](../resources/security-detectionrule.md) [detection action](../resources/security-detectionaction.md).
+Represents a scope that specifies which devices are covered by a [custom detection rule's](../resources/security-detectionrule.md) [detection action](../resources/security-detectionaction.md).
 
 ## Properties
 | Property   | Type                                                                                  | Description                                                                                         |

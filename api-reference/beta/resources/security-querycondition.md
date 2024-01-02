@@ -1,6 +1,6 @@
 ---
 title: "queryCondition resource type"
-description: "Describes the advanced hunting query behind the custom detection rule"
+description: "Describes the advanced hunting query that defines the behavior of a custom detection rule."
 author: "mmekler"
 ms.localizationpriority: medium
 ROBOTS: NOINDEX
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the advanced hunting query behind a [Custom Detection Rule](../resources/security-detectionrule.md).
+Describes the advanced hunting query that defines the behavior of a [Custom Detection Rule](../resources/security-detectionrule.md).
 
 ## Properties
 | Property             | Type           | Description                                                                |
