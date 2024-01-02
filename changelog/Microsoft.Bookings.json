@@ -711,7 +711,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "isMeetingInviteToCustomersEnabled",
             "ChangeType": "Addition",
-            "Description": "Added the `isMeetingInviteToCustomersEnabled` property to the [bookingSchedulingPolicy](https://learn.microsoft.com/en-us/graph/api/resources/bookingSchedulingPolicy?view=graph-rest-beta) resource.",
+            "Description": "Added the `**isMeetingInviteToCustomersEnabled** property to the [bookingSchedulingPolicy](https://learn.microsoft.com/en-us/graph/api/resources/bookingSchedulingPolicy?view=graph-rest-beta) resource.",
             "Target": "bookingSchedulingPolicy"
           },
           {
