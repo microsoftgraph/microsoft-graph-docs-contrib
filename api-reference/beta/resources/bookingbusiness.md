@@ -22,7 +22,7 @@ Represents a business in Microsoft Bookings. This is the top level object in the
 |[List bookingBusinesses](../api/bookingbusiness-list.md) | [bookingBusiness](bookingbusiness.md) collection |Get a collection of bookingbusiness objects in the tenant. |
 |[Create bookingBusiness](../api/bookingbusiness-post-bookingbusinesses.md) | [bookingBusiness](bookingbusiness.md) | Create a new Microsoft Bookings business. |
 |[Get bookingBusiness](../api/bookingbusiness-get.md) | [bookingBusiness](bookingbusiness.md) |Read properties and relationships of bookingBusiness object.|
-|[Update](../api/bookingbusiness-update.md) | [bookingBusiness](bookingbusiness.md)	|Update properties in a **bookingBusiness** object. |
+|[Update](../api/bookingbusiness-update.md) | [bookingBusiness](bookingbusiness.md)	|Update the properties of a  **bookingBusiness** object. |
 |[Delete](../api/bookingbusiness-delete.md) | None |Delete a **bookingBusiness** object. |
 |[Create bookingAppointment](../api/bookingbusiness-post-appointments.md) |[bookingAppointment](bookingappointment.md)| Create a new bookingAppointment by posting to the appointments collection.|
 |[List appointments](../api/bookingbusiness-list-appointments.md) |[bookingAppointment](bookingappointment.md) collection| Get a bookingAppointment object collection.|
