@@ -275,7 +275,7 @@ The Person-Card control uses the global authentication provider described in the
 | `presence`   | Person's presence         | Used, when `showPresence` is set to `true`                                |
 | `users`      | Person's user information | Used when `userId` is specified or the `personQuery` is set to `me`       |
 
-See [Caching](../customize-components/cache.md) for more details on how to configure the cache.
+For more information on how to configure the cache, see [Caching](../customize-components/cache.md).
 
 ## Localization
 
@@ -293,3 +293,59 @@ The control exposes the following variables that can be localized. For details a
 | chatButtonLabel            | `Chat`                    |
 | videoButtonLabel           | `Video`                   |
 | closeCardLabel             | `Close card`              |
+
+You can also localize the following variables in the person-card sections.
+
+### Contact
+
+| String name                | Default value             |
+| -------------------------- | ------------------------- |
+| contactSectionTitle        | `Contact`                 |
+| emailTitle                 | `Email`                   |
+| chatTitle                  | `Teams`                   |
+| businessPhoneTitle         | `Business Phone`          |
+| cellPhoneTitle             | `Mobile Phone`            |
+| departmentTitle            | `Department`              |
+| personTitle                | `Email`                   |
+| officeLocationTitle        | `Office Location`         |
+| copyToClipboardButton      | `Copy to clipboard`       |
+
+### Files
+
+| String name        | Default value     |
+| ------------------ | ----------------- |
+| showMoreSubtitle   | `Show more items` |
+| filesSectionTitle  | `Files`           |
+| sharedTextSubtitle | `Shared`          |
+
+### Messages
+
+| String name                | Default value             |
+| -------------------------- | ------------------------- |
+| emailsSectionTitle         | `Emails`                  |
+
+### Organization
+
+| String name                    | Default value             |
+| ------------------------------ | ------------------------- |
+| reportsToSectionTitle          | `Reports to`              |
+| directReportsSectionTitle      | `Direct reports`          |
+| organizationSectionTitle       | `Organization`            |
+| youWorkWithSubSectionTitle     | `You work with`           |
+| userWorksWithSubSectionTitle   | `works with`              |
+
+### Profile
+
+| String name                          | Default value             |
+| -----------------------------------  | ------------------------- |
+| SkillsAndExperienceSectionTitle      | `Skills & Experience`     |
+| AboutCompactSectionTitle             | `About`                   |
+| SkillsSubSectionTitle                | `Skills`                  |
+| LanguagesSubSectionTitle             | `Languages`               |
+| WorkExperienceSubSectionTitle        | `Work Experience`         |
+| EducationSubSectionTitle             | `Education`               |
+| professionalInterestsSubSectionTitle | `Professional Interests`  |
+| personalInterestsSubSectionTitle     | `Personal Interests`      |
+| birthdaySubSectionTitle              | `Birthday`                |
+| currentYearSubtitle                  | `Current`                 |
+| socialMediaSubSectionTitle           | `Social Media`            |
