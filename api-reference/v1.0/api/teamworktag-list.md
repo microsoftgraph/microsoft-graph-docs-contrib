@@ -132,6 +132,15 @@ Content-Type: application/json
       "description": "Legal experts, ask us your legal questions",
       "memberCount": 4,
       "tagType": "standard"
+    },
+    {
+      "@odata.type": "#microsoft.graph.teamworkTag",
+      "id": "MjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyNlYjY1M2Y5Mi04MzczLTRkZTYtYmZlYy01YjRkMjE2YjZhZGUjIzk3ZjYyMzQ0LTU3ZGMtNDA5Yy04OGFkLWM0YWYxNDE1OGZmNQ==",
+      "teamId": "53c53217-fe77-4383-bc5a-ed4937a1aecd",
+      "displayName": "EveningShift",
+      "description": null,
+      "memberCount": 5,
+      "tagType": "scheduled"
     }
   ]
 }
