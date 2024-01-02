@@ -262,6 +262,12 @@ This control uses the following Microsoft Graph APIs and permissions.
 | `showPresence` set to `true` and `personQuery` set to a value other than `me` | Presence.Read.All | [/users/{id}/presence](/graph/api/presence-get) |
 | `personCardInteraction` set to a value other than `PersonCardInteraction.none` | See [person card permissions](/graph/toolkit/components/person-card#microsoft-graph-permissions) | See [person card API calls](/graph/toolkit/components/person-card#microsoft-graph-permissions) |
 
+## Components used
+
+This component is composed of other components. These subcomponents might require other permissions than the ones listed for this component. For more information, see each subcomponents documentation.
+
+- [mgt-person-card](person-card.md)
+
 ## Authentication
 
 The control uses the global authentication provider described in the [authentication documentation](../providers/providers.md) to fetch the required data.
