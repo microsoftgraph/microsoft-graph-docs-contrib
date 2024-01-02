@@ -95,11 +95,11 @@ By default, the `mgt-person` component will pass the person details to the `mgt-
 | Attribute       | Type                                                                       | Description                                                                                                                                                                      |
 | --------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | person-details  | MicrosoftGraph.User <br> MicrosoftGraph.Person <br> MicrosoftGraph.Contact | Person object as defined by Microsoft Graph, containing details related to the user.                                                                                             |
-| person-image    | string                                                                     | Image URI related to the person displayed in the card.                                                                                                                           |
-| inherit-details | None.                                                                      | Allows person-card to walk parent tree for `mgt-person` component to use the same `person-details` and `person-image` data.                                                      |
-| user-id         | string                                                                     | Allows developers to supply user-id to retrieve data shown on person-card component                                                                                              |
-| person-query    | string                                                                     | Allows developers to supply person-query to retrieve data shown on person-card component                                                                                         |
-| person-card     | string                                                                     | Specifies whether the `person-card` component can be shown as a pop up card when you hover or click on the `mgt-person` component. The allowed values are `hover` or `click`. |
+| person-image    | String                                                                     | Image uri related to the person displayed in the card.                                                                                                                           |
+| inherit-details | None                                                                       | Allows person-card to walk parent tree for `mgt-person` component to use the same `person-details` and `person-image` data.                                                      |
+| user-id         | String                                                                     | Allows developers to supply user-id to retrieve data shown on person-card component                                                                                              |
+| person-query    | String                                                                     | Allows developers to supply person-query to retrieve data shown on person-card component                                                                                         |
+| person-card     | String                                                                     | Specifies wheter the `person-card` component can be shown as a pop up card when you hover or click on the the `mgt-person` component. The allowed values are `hover` or `click`. |
 
 ## CSS custom properties
 
@@ -148,6 +148,14 @@ The `mgt-person-card` component defines the following CSS custom properties.
   --organization-coworker-hover-color: grey;
   --organization-coworker-border-color: purple;
   --organization-active-org-member-border-color: red;
+  --organization-coworker-person-avatar-size: 50px;
+  --organization-member-person-avatar-size: 60px;
+  --organization-direct-report-person-avatar-size: 80px;
+
+  /** Style for the avatar-size in the person-card sections */
+  --organization-member-person-avatar-size: 60px;
+  --coworker-person-avatar-size: 50px;
+  --direct-report-person-avatar-size: 40px;
 
   /** Files: Uses custom css properties for mgt-file-list and mgt-file */
 
@@ -157,6 +165,13 @@ The `mgt-person-card` component defines the following CSS custom properties.
   --message-from-color: blue;
   --message-color: black;
   --message-hover-color: grey;
+  --message-subject-font-size: 18px;
+  --message-subject-font-weight: 600;
+  --message-subject-line-height: 25px;
+  --message-from-font-size: 40px;
+  --message-from-font-weight: 800;
+  --message-date-color: purple;
+  --message-from-line-height: 25px;
 
   /** Contact */
 
