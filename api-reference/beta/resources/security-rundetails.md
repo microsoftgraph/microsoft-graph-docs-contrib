@@ -1,6 +1,6 @@
 ---
 title: "runDetails resource type"
-description: "Describes a run of a custom detection rule"
+description: "Describes a run of a custom detection rule."
 author: "mmekler"
 ms.localizationpriority: medium
 ROBOTS: NOINDEX
@@ -20,7 +20,7 @@ Describes a run of a [Custom Detection Rule](../resources/security-detectionrule
 | Property        | Type                                                                                                        | Description                                                                                                                                                                                                                                                                                          |
 |:----------------|:------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | errorCode       | [microsoft.graph.security.huntingRuleErrorCode](../resources/enums-security.md#huntingruleerrorcode-values) | Error code of the most recent run that encountered an error. The possible values are: `queryExecutionFailed`, `queryExecutionThrottling`, `queryExceededResultSize`, `queryLimitsExceeded`, `queryTimeout`, `alertCreationFailed`, `alertReportNotFound`, `partialRowsFailed`, `unknownFutureValue`. |
-| failureReason   | String                                                                                                      | Reason for failure when the custom detection last run and failed. See the table below                                                                                                                                                                                                                |
+| failureReason   | String                                                                                                      | Reason for failure when the custom detection last ran and failed. See the table below.                                                                                                                                                                                                                |
 | lastRunDateTime | DateTimeOffset                                                                                              | Timestamp when the custom detection was last run.                                                                                                                                                                                                                                                    |
 | status          | [microsoft.graph.security.huntingRuleRunStatus](../resources/enums-security.md#huntingrulerunstatus-values) | Status of custom detection when it was last run. The possible values are: `running`, `completed`, `failed`, `partiallyFailed`, `unknownFutureValue`.                                                                                                                                                 |
 
@@ -34,7 +34,7 @@ Describes a run of a [Custom Detection Rule](../resources/security-detectionrule
 | queryLimitsExceeded      | Query execution was preempted. This could possibly be due to high CPU and/or memory resource consumption. Optimize your query by following best practices and try again. |
 | queryTimeout             | Query execution took longer than the assigned timeout and has been aborted.                                                                                              |
 | alertCreationFailed      | An unexpected error occurred while generating alerts from query results. Contact support if this reoccurs.                                                               |
-| alertReportNotFound      | An event could not be matched to the given Timestamp, DeviceId, ReportId. Check the query for aggregation expressions on those columns.                                  |
+| alertReportNotFound      | An event could not be matched to the given Timestamp, DeviceId, or ReportId. Check the query for aggregation expressions on those columns.                                  |
 | partialRowsFailed        | Only a subset of query results could be processed to alerts. Contact support if this reoccurs.                                                                           |
 
 

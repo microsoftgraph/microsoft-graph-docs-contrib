@@ -1,6 +1,6 @@
 ---
 title: "runAntivirusScanResponseAction resource type"
-description: "Describes a 'Run Antivirus Scan' response action"
+description: "Describes a response action that performs a full Microsoft Defender Antivirus scan on the device."
 author: "mmekler"
 ms.localizationpriority: medium
 ROBOTS: NOINDEX
@@ -14,8 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes a 'Run Antivirus Scan' response action.
-Performs a full Microsoft Defender Antivirus scan on the device.
+Describes a response action that performs a full Microsoft Defender Antivirus scan on the device.
 
 Inherits from [microsoft.graph.security.responseAction](../resources/security-responseaction.md).
 

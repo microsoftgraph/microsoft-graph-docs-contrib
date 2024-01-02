@@ -1,6 +1,6 @@
 ---
 title: "restrictAppExecutionResponseAction resource type"
-description: "Describes a 'Restrict App Execution' response action"
+description: "Describes a response action that sets restrictions on device to allow only files that are signed with a Microsoft-issued certificate to run."
 author: "mmekler"
 ms.localizationpriority: medium
 ROBOTS: NOINDEX
@@ -14,8 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes a 'Restrict App Execution' response action.
-Sets restrictions on device to allow only files that are signed with a Microsoft-issued certificate to run.
+Describes a response action that sets restrictions on device to allow only files that are signed with a Microsoft-issued certificate to run.
 
 Inherits from [microsoft.graph.security.responseAction](../resources/security-responseaction.md).
 
