@@ -14,7 +14,7 @@ Windows 365 is a cloud-based service that automatically creates a new type of Wi
 The Microsoft Graph API enables programmatic access to Cloud PC information and management actions on your organization. The API performs the same operations as those available through Microsoft Endpoint Manager.
 
 > [!IMPORTANT]
-> * Currently, only the [virtualEndpoint](/graph/api/resources/virtualendpoint) resource is generally available. All other Cloud PC endpoints are currently in beta only.
+> * Currently, only the [virtualEndpoint](/graph/api/resources/virtualendpoint) resource is generally available. All other Cloud PC endpoints are in beta only.
 > * Using the Microsoft Graph API for Cloud PCs requires an active [Windows 365 license](https://www.microsoft.com/windows-365) for the organization. Currently, the Microsoft Graph API is available for both Windows 365 Enterprise and Windows 365 Business.
 
 ## Using the Microsoft Graph API for Cloud PCs
