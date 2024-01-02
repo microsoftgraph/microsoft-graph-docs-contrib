@@ -13691,48 +13691,6 @@
           "ApiChange": "Resource",
           "ChangedApiName": "AlternateIdLogin",
           "ChangeType": "Addition",
-          "Description": "Added the **AlternateIdLogin** field to the [homeRealmDiscoveryPolicy](https://learn.microsoft.com/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-beta) policy definition.",
-          "Target": "homeRealmDiscoveryPolicy"
-        },
-        {
-          "Id": "bfd56b1b-1c1f-445d-ba7e-0280fd1fad7c",
-          "ApiChange": "Resource",
-          "ChangedApiName": "fido2AuthenticationMethodConfiguration",
-          "ChangeType": "Addition",
-          "Description": "Added the [fido2AuthenticationMethodConfiguration](https://learn.microsoft.com/graph/api/resources/fido2AuthenticationMethodConfiguration?view=graph-rest-beta) entity for managing users\u0027 FIDO2 Security Keys authentication method policy.",
-          "Target": "fido2AuthenticationMethodConfiguration"
-        },
-        {
-          "Id": "bfd56b1b-1c1f-445d-ba7e-0280fd1fad7c",
-          "ApiChange": "Resource",
-          "ChangedApiName": "passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration",
-          "ChangeType": "Addition",
-          "Description": "Added the [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](https://learn.microsoft.com/graph/api/resources/passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-beta) entity for managing users\u0027 Microsoft Authenticator Passwordless Phone Sign-in authentication method policy.",
-          "Target": "passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration"
-        },
-        {
-          "Id": "bfd56b1b-1c1f-445d-ba7e-0280fd1fad7c",
-          "ApiChange": "Resource",
-          "ChangedApiName": "emailauthenticationmethod",
-          "ChangeType": "Addition",
-          "Description": "Added the [emailauthenticationmethod](https://learn.microsoft.com/graph/api/resources/emailauthenticationmethod?view=graph-rest-beta) entity for managing users\u0027 email authentication method.",
-          "Target": "emailauthenticationmethod"
-        }
-      ],
-      "Id": "bfd56b1b-1c1f-445d-ba7e-0280fd1fad7c",
-      "Cloud": "prd",
-      "Version": "beta",
-      "CreatedDateTime": "2020-10-15T00:00:00",
-      "WorkloadArea": "Applications",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "bfd56b1b-1c1f-445d-ba7e-0280fd1fad7c",
-          "ApiChange": "Resource",
-          "ChangedApiName": "AlternateIdLogin",
-          "ChangeType": "Addition",
           "Description": "Added the **AlternateIdLogin** field to the [homeRealmDiscoveryPolicy](https://learn.microsoft.com/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-1.0) policy definition.",
           "Target": "homeRealmDiscoveryPolicy"
         },
