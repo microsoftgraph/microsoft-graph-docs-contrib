@@ -7,8 +7,6 @@ author: sebastienlevert
 
 # Search results component in Microsoft Graph Toolkit
 
-[!INCLUDE [preview-disclaimer](./includes/preview-disclaimer.md)]
-
 You can use `mgt-search-results` to make search queries to Microsoft Graph directly in your HTML. The component provides some default result type renderings but also offers full customization of the templates.
 
 ## Example

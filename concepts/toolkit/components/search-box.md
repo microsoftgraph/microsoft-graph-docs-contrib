@@ -7,8 +7,6 @@ author: sebastienlevert
 
 # Search box component in the Microsoft Graph Toolkit
 
-[!INCLUDE [preview-disclaimer](./includes/preview-disclaimer.md)]
-
 The Search box component renders an input control allowing searching for capabilities. This component is not connected to Microsoft Graph and should be used in collaboration with the [search results component](search-results.md).
 
 ## Example
