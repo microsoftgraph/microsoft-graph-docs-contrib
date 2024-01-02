@@ -1,6 +1,6 @@
 ---
 title: Get printer
-description: Retrieve the properties and relationships of a printer object.
+description: "Retrieve the properties and relationships of a printer object."
 author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing

@@ -1,6 +1,6 @@
 ---
 title: Update printer
-description: Update the properties of a printer object.
+description: "Update the properties of a printer object."
 author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing

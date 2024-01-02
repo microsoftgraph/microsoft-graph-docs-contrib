@@ -1,6 +1,6 @@
 ---
 title: printer resource type
-description: Represents a physical printer device that has been registered with the Universal Print service. Printer resources can be used to manage print jobs, printer settings, printer metadata and registration status.
+description: "Represents a physical printer device that has been registered with the Universal Print service. Printer resources can be used to manage print jobs, printer settings, printer metadata and registration status."
 author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: cloud-printing
