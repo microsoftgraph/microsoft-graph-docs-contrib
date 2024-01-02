@@ -743,7 +743,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "bookingPageSettings",
             "ChangeType": "Addition",
-            "Description": "Added the `bookingPageSettings` property to the [bookingBusiness](https://learn.microsoft.com/en-us/graph/api/resources/bookingBusiness?view=graph-rest-beta) resource.",
+            "Description": "Added the **bookingPageSettings** property to the [bookingBusiness](https://learn.microsoft.com/en-us/graph/api/resources/bookingBusiness?view=graph-rest-beta) resource.",
             "Target": "bookingBusiness"
           },
           {
@@ -751,7 +751,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "createdDateTime",
             "ChangeType": "Addition",
-            "Description": "Added the `createdDateTime` property to the [bookingBusiness](https://learn.microsoft.com/en-us/graph/api/resources/bookingBusiness?view=graph-rest-beta) resource.",
+            "Description": "Added the **createdDateTime** property to the [bookingBusiness](https://learn.microsoft.com/en-us/graph/api/resources/bookingBusiness?view=graph-rest-beta) resource.",
             "Target": "bookingBusiness"
           },
           {
@@ -759,7 +759,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "lastUpdatedDateTime",
             "ChangeType": "Addition",
-            "Description": "Added the `lastUpdatedDateTime` property to the [bookingBusiness](https://learn.microsoft.com/en-us/graph/api/resources/bookingBusiness?view=graph-rest-beta) resource.",
+            "Description": "Added the **lastUpdatedDateTime** property to the [bookingBusiness](https://learn.microsoft.com/en-us/graph/api/resources/bookingBusiness?view=graph-rest-beta) resource.",
             "Target": "bookingBusiness"
           },
           {
