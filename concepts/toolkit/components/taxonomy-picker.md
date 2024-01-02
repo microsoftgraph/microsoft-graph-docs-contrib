@@ -181,3 +181,7 @@ The control exposes the following variables that can be localized. For details a
 | String name         | Default value   |
 | ------------------- | --------------- |
 | comboboxPlaceholder | `Select a term` |
+| loadingMessage | `Loading...` |
+| noTermsFound | `No terms found` |
+| termsetIdRequired   | `The termsetId property or termset-id attribute is required` |
+

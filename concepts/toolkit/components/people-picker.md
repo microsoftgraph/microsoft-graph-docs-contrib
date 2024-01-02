@@ -45,7 +45,7 @@ By default, the `mgt-people-picker` component fetches people from the `/me/peopl
 | group-ids                  | groupIds                | A string of comma-separated group IDs. The available results should be limited to the specified groups. Users that appear on the dropdown menu and via the search experience should only come from the specified group IDs. For example, `02bd9fd6-8f93-4758-87c3-1fb73740a315,06f62f70-9827-4e6e-93ef-8e0f2d9b7b23` will only display users belonging to these groups. When you type a search text, it returns results that match the users in the two group IDs only. This property is not used if `group-id` is defined. If the property is set, the `type` is `group` by default and `transitive-search` is `true` by default. If the `group-type` is set with the property, the `type` can be `any` or `group`. If the `type` is `person`, the property is not used. |
 | aria-label                 | ariaLabel               | A string provided to help assistive technologies provide context for the people picker.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 
-The following is a `show-max` example.
+The following example shows the `show-max` attribute.
 
 ```html
 <mgt-people-picker show-max="4"> </mgt-people-picker>
@@ -179,7 +179,7 @@ The control uses the global authentication provider described in the [authentica
 | `people`     | List of people | Used when `type` is set to `PersonType.person` or `PersonType.any` |
 | `users`      | List of users  | Used when `groupId` specified                                      |
 
-See [Caching](../customize-components/cache.md) for more details on how to configure the cache.
+For more information on how to configure the cache, see [Caching](../customize-components/cache.md).
 
 ## Extend for more control
 
@@ -201,14 +201,14 @@ For more complex scenarios or a truly custom UX, this component exposes several 
 
 The control exposes the following variables that can be localized. For details about localization, see [Localizing components](../customize-components/localization.md).
 
-| String name              | Default value                  |
-| ------------------------ | ------------------------------ |
-| inputPlaceholderText     | `Start typing a name`          |
-| maxSelectionsPlaceHolder | `Maxiumum reached`             |
-| maxSelectionsAriaLabel   | `You can only select 1 person` |
-| noResultsFound           | `We didn't find any matches.`  |
-| loadingMessage           | `Loading...`                   |
-| selected                 | `selected`                     |
-| removeSelectedUser       | `Remove `                      |
-| selectContact            | `select a contact`             |
-| suggestionsTitle         | `Suggested contacts`           |
+| String name              | Default value                        |
+| ------------------------ | ------------------------------------ |
+| inputPlaceholderText     | `Search for a name`                  |
+| maxSelectionsPlaceHolder | `Max contacts added`                 |
+| maxSelectionsAriaLabel   | `Maximum contact selections reached` |
+| noResultsFound           | `We didn't find any matches.`        |
+| loadingMessage           | `Loading...`                         |
+| selected                 | `selected`                           |
+| removeSelectedUser       | `Remove `                            |
+| selectContact            | `select a contact`                   |
+| suggestionsTitle         | `Suggested contacts`                 |
