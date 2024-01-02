@@ -24,8 +24,8 @@ You can use several properties to customize the component.
 | Attribute                | Property               | Description                                                                                                                                                               |
 | ------------------------ | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | file-list-query          | fileListQuery          | The full query or path to the drive or site that contains the list of files to render.                                                                                    |
-| file-queries             | fileQueries            | An array of file queries to be rendered by the component.                                                                                                                 |
-| -                        | files                  | An array of files to get or set the list of files rendered by the component. Use this to access the files loaded by the component. Set this value to load your own files. |
+| file-queries             | fileQueries            | An array of file queries rendered by the component.                                                                                                                 |
+| -                        | files                  | An array of files to get or set the list of files rendered by the component. Use this peoperty to access the files loaded by the component. Set this value to load your own files. |
 | insight-type             | insightType            | Set to show the user’s trending, used, or shared files.                                                                                                                   |
 | drive-id                 | driveId                | ID of the drive the folder belongs to. Must also provide either `item-id` or `item-path`.                                                                                 |
 | group-id                 | groupId                | ID of the group the folder belongs to. Must also provide either `item-id` or `item-path`.                                                                                 |
@@ -50,13 +50,13 @@ The following example changes the behavior of the component to fetch a file list
 ></mgt-file-list>
 ```
 
-The following example changes the behavior of the component to fetch a file list from a folder by providing the folder id.
+The following example changes the behavior of the component to fetch a file list from a folder by providing the folder ID.
 
 ```html
 <mgt-file-list item-id="01BYE5RZYJ43UXGBP23BBIFPISHHMCDTOY"></mgt-file-list>
 ```
 
-The following example changes the behavior of the component to fetch file list from a group by providing the group id and folder path.
+The following example changes the behavior of the component to fetch file list from a group by providing the group ID and folder path.
 
 ```html
 <mgt-file-list
@@ -65,7 +65,7 @@ The following example changes the behavior of the component to fetch file list f
 ></mgt-file-list>
 ```
 
-The following example changes the behavior of the component to fetch file list from a user by providing the user id and folder id.
+The following example changes the behavior of the component to fetch file list from a user by providing the user ID and folder ID.
 
 ```html
 <mgt-file-list
@@ -209,7 +209,7 @@ document.getElementById("reload-btn").addEventListener("click", () => {
 
 | Event       | When is it emitted                 | Custom data                                     | Cancelable | Bubbles |     Works with custom template     |
 | ----------- | ---------------------------------- | ----------------------------------------------- | :--------: | :-----: | :--------------------------------: |
-| `itemClick` | Fired when the user clicks a file. | Selected [file](/graph/api/resources/driveItem) |     No     |   No    | Yes, with custom **file** template |
+| `itemClick` | Fired when the user selects a file. | Selected [file](/graph/api/resources/driveItem) |     No     |   No    | Yes, with custom **file** template |
 
 For more information about handling events, see [events](../customize-components/events.md).
 
@@ -275,7 +275,7 @@ The `mgt-file-list` component supports several [templates](../customize-componen
 
 ## Components used
 
-This component is composed of other components. These subcomponents might require other permissions than the ones specifically listed for this component. See the documentation for each subcomponent for more information.
+This component is composed of other components. These subcomponents might require other permissions than the ones listed for this component. For more information, see each subcomponents documentation.
 
 - [mgt-file](file.md)
 

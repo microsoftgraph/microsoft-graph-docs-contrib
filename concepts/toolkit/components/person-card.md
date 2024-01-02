@@ -261,7 +261,7 @@ const neededScopes = MgtPersonCard.getScopes();
 
 ## Components used
 
-This component is composed of other components. These subcomponents might require other permissions than the ones specifically listed for this component. See the documentation for each subcomponent for more information.
+This component is composed of other components. These subcomponents might require other permissions than the ones listed for this component. For more information, see each subcomponents documentation.
 
 - [mgt-person](person.md)
 - [mgt-file-list](file-list.md)
