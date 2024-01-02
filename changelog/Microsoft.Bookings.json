@@ -719,7 +719,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "appointmentLabel",
             "ChangeType": "Addition",
-            "Description": "Added the `appointmentLabel` property to the [bookingAppointment](https://learn.microsoft.com/en-us/graph/api/resources/bookingAppointment?view=graph-rest-beta) resource.",
+            "Description": "Added the **appointmentLabel** property to the [bookingAppointment](https://learn.microsoft.com/en-us/graph/api/resources/bookingAppointment?view=graph-rest-beta) resource.",
             "Target": "bookingAppointment"
           },
           {
@@ -727,7 +727,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "createdDateTime",
             "ChangeType": "Addition",
-            "Description": "Added the `createdDateTime` property to the [bookingAppointment](https://learn.microsoft.com/en-us/graph/api/resources/bookingAppointment?view=graph-rest-beta) resource.",
+            "Description": "Added the **createdDateTime** property to the [bookingAppointment](https://learn.microsoft.com/en-us/graph/api/resources/bookingAppointment?view=graph-rest-beta) resource.",
             "Target": "bookingAppointment"
           },
           {
@@ -735,7 +735,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "lastUpdatedDateTime",
             "ChangeType": "Addition",
-            "Description": "Added the `lastUpdatedDateTime` property to the [bookingAppointment](https://learn.microsoft.com/en-us/graph/api/resources/bookingAppointment?view=graph-rest-beta) resource.",
+            "Description": "Added the **lastUpdatedDateTime** property to the [bookingAppointment](https://learn.microsoft.com/en-us/graph/api/resources/bookingAppointment?view=graph-rest-beta) resource.",
             "Target": "bookingAppointment"
           },
           {
