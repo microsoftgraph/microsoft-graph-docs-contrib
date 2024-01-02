@@ -155,6 +155,10 @@ The control exposes the following variables that can be localized. For details a
 
 | String name          | Default value                 |
 | -------------------- | ----------------------------- |
+| closeButtonAriaLabel | `remove the selected channel` |
 | inputPlaceholderText | `Select a channel`            |
-| noResultsFound       | `We didn't find any matches.` |
 | loadingMessage       | `Loading...`                  |
+| noResultsFound       | `We didn't find any matches.` |
+| photoFor             | `Teams photo for`             |
+| teamsChannels        | `Teams and channels results`  |
+
