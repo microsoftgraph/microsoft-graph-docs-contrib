@@ -15,11 +15,13 @@ Represents a container for APIs to manage Cloud PCs.
 
 Use the Cloud PC API to provision and manage virtual desktops for employees in an organization, or along with the [Intune API](../resources/intune-graph-overview.md) to manage physical and virtual endpoints.
 
+Inherits from [entity](../resources/entity.md).
+
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier (ID) for the virtual endpoint. Read-only.|
+|id|String|The unique identifier (ID) for the virtual endpoint. Read-only. Inherited from [entity](../resources/entity.md).|
 
 ## JSON representation
 
@@ -36,6 +38,6 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.virtualEndpoint",
-  "id": "String"
+  "id": "String (identifier)"
 }
 ```
