@@ -1,6 +1,6 @@
 ---
 title: "detectionRule resource type"
-description: "Custom detection rules are types of protection rules you can design and tweak using advanced hunting queries."
+description: "Represents a custom detection rule that uses an advanced hunting query to automatically recognize security events when they occur, and trigger alerts and response actions."
 author: "mmekler"
 ms.localizationpriority: medium
 ROBOTS: NOINDEX
@@ -16,6 +16,7 @@ Namespace: microsoft.graph.security
 
 Custom detection rules are types of protection rules you can design and tweak using advanced hunting queries.
 These rules let you proactively monitor various events and system states, including suspected breach activity and misconfigured endpoints.
+A custom detection rule automatically recognize security events when they occur, and triggers alerts and response actions.
 You can set them to run at regular intervals, generating alerts and taking response actions whenever there are matches.
 
 Inherits from [microsoft.graph.security.protectionRule](../resources/security-protectionrule.md).
