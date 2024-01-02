@@ -193,6 +193,13 @@ This control uses the following Microsoft Graph APIs and permissions.
 
 For the Microsoft Planner data source, fetching and reading tasks requires the Groups.Read.All permission. Adding, updating, or removing tasks requires the Groups.ReadWrite.All permission.
 
+## Components used
+
+This component is composed of other components. These subcomponents might require other permissions than the ones specifically listed for this component. See the documentation for each subcomponent for more information.
+
+- [mgt-people](people.md)
+- [mgt-people-picker](people-picker.md)
+
 ## Authentication
 
 The tasks component uses the global authentication provider described in the [authentication documentation](../providers/providers.md).

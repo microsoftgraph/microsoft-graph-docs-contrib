@@ -93,6 +93,13 @@ The `mgt-search-results` component supports several [templates](../customize-com
 
 Permissions required by this component depend on the data that you want to retrieve with it from Microsoft Graph. For more information about permissions, see the [Search API Overview](/graph/api/resources/search-api-overview#scope-search-based-on-entity-types).
 
+## Components used
+
+This component is composed of other components. These subcomponents might require other permissions than the ones specifically listed for this component. See the documentation for each subcomponent for more information.
+
+- [mgt-file](people.md)
+- [mgt-person](person.md)
+
 ## Authentication
 
 The control uses the global authentication provider described in the [authentication documentation](../providers/providers.md) to fetch the required data.

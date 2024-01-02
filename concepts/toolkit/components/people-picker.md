@@ -171,6 +171,12 @@ This component uses the following Microsoft Graph APIs and permissions.
 | `default-selected-user-ids` set                                                 | User.ReadBasic.All                               | [/users](/graph/api/user-list)                                            |
 | searching for users and `type` set to `Person` or `any`                         | People.Read, User.ReadBasic.All                  | [/me/people](/graph/api/user-list-people), [/users](/graph/api/user-list) |
 
+## Components used
+
+This component is composed of other components. These subcomponents might require other permissions than the ones specifically listed for this component. See the documentation for each subcomponent for more information.
+
+- [mgt-person](person.md)
+
 ## Authentication
 
 The control uses the global authentication provider described in the [authentication documentation](../providers/providers.md).

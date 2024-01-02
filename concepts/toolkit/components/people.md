@@ -108,6 +108,12 @@ This component uses the following Microsoft Graph APIs and permissions:
 
 When using the default templates, additional APIs and permissions are required. The default template for this component uses a [mgt-person](person.md) component. See its documentation for the list of required permissions.
 
+## Components used
+
+This component is composed of other components. These subcomponents might require other permissions than the ones specifically listed for this component. See the documentation for each subcomponent for more information.
+
+- [mgt-person](person.md)
+
 ## Authentication
 
 The control uses the global authentication provider described in the [authentication documentation](../providers/providers.md).

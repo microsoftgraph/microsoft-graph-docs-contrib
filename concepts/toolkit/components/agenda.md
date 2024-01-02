@@ -140,7 +140,11 @@ This component uses the following Microsoft Graph APIs and permissions:
 
 The component allows you to specify a different Microsoft Graph query to call (such as `/groups/{id}/calendar/calendarView`). In this case, append the permission to the end of the string, delimited by `|`.
 
-When using the default template and default `renderAttendees` template, additional APIs and permissions are required. The default template for this component uses a [mgt-people](people.md) component for events that have attendees, and inherits all permissions.
+## Components used
+
+This component is composed of other components. These subcomponents might require other permissions than the ones specifically listed for this component. See the documentation for each subcomponent for more information.
+
+- [mgt-people](people.md)
 
 ## Authentication
 

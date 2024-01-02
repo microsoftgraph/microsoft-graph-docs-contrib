@@ -117,7 +117,11 @@ This component uses the following Microsoft Graph APIs and permissions:
 | ------------- | ---------- | --------------------------------- |
 | default       | User.Read  | [/users/me/](/graph/api/user-get) |
 
-When using the default `signed-in-button-content` and `flyout-person-details` templates, this component uses the [Person component](./person.md) to display the user and inherits all permissions.
+## Components used
+
+This component is composed of other components. These subcomponents might require other permissions than the ones specifically listed for this component. See the documentation for each subcomponent for more information.
+
+- [mgt-person](person.md)
 
 ## Authentication
 
