@@ -807,7 +807,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "lastUpdatedDateTime",
             "ChangeType": "Addition",
-            "Description": "Added the `lastUpdatedDateTime` property to the [bookingService](https://learn.microsoft.com/en-us/graph/api/resources/bookingService?view=graph-rest-beta) resource.",
+            "Description": "Added the **lastUpdatedDateTime** property to the [bookingService](https://learn.microsoft.com/en-us/graph/api/resources/bookingService?view=graph-rest-beta) resource.",
             "Target": "bookingService"
           },
           {
