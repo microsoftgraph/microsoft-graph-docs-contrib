@@ -18,7 +18,7 @@ Represents the print job release mechanism.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|releaseType|printReleaseType|The print job release type. The possible values are: `direct`, `qrCode`, `unknownFutureValue`.|
+|releaseType|printReleaseType|The print job release type. The possible values are: `direct`, `qrCode`, and `unknownFutureValue`.|
 
 ## Relationships
 None.

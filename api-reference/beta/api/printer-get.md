@@ -51,7 +51,7 @@ GET /print/printers/{id}?$select=id,displayName,capabilities
 Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and a [printer](../resources/printer.md) object in the response body.
-By default, the response won't contain [printerCapabilities](../resources/printerCapabilities.md). To get **printerCapabilities**, use the `$select` query parameter. 
+By default, the response doesn't contain [printerCapabilities](../resources/printerCapabilities.md). To get **printerCapabilities**, use the `$select` query parameter. 
 
 ## Example
 ### Request
