@@ -37,7 +37,7 @@ For details about how to trigger a task, see [Enable pull printing](./universal-
 
 ### Create an application to listen to notifications
 
-For information about how to listen for Microsoft Graph notifications, see [Use change notifications and track changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges/) and [Set up notifications for changes in user data – Code Samples](./webhooks.md#code-samples).
+For information about how to listen for Microsoft Graph notifications, see [Use change notifications and track changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges/) and [Set up notifications for changes in user data – Code Samples](./change-notifications-overview.md#code-samples).
 
 
 ### Permission scopes
@@ -202,7 +202,7 @@ For details, see [Notification endpoint validation](./change-notifications-deliv
 Applications should process and acknowledge every change notification they receive. For details, see [Processing the change notification](./change-notifications-delivery-webhooks.md#processing-the-change-notification).
 
 ### How can I validate the authenticity of notifications?
-The authenticity of notifications can either be validated using **clientState** value as described in [Processing the change notification](./change-notifications-delivery-webhooks.md#processing-the-change-notification) or [validating tokens in the change notification](./webhooks-with-resource-data.md#validation-tokens-in-the-change-notification).
+The authenticity of notifications can either be validated using **clientState** value as described in [Processing the change notification](./change-notifications-delivery-webhooks.md#processing-the-change-notification) or [validating tokens in the change notification](./change-notifications-with-resource-data.md#validation-tokens-in-the-change-notification).
 
 ### How can I get a list of active subscriptions?
 For details about how to retrieve a list of webhook subscriptions, see [List subscriptions](/graph/api/subscription-list).

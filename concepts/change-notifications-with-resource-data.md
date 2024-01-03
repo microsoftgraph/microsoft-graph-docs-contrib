@@ -12,7 +12,7 @@ ms.date: 06/23/2023
 
 # Set up change notifications that include resource data
 
-Microsoft Graph allows apps to subscribe to and receive change notifications for resources through [different delivery channels](./webhooks.md#receiving-change-notifications). You can set up subscriptions to include the changed resource data (such as the content of a Microsoft Teams chat message or Microsoft Teams presence information) in change notifications. Change notifications that include the resource change data are called rich notifications. Your app can use rich notifications to run your business logic without having to make a separate API call to fetch the changed resource.
+Microsoft Graph allows apps to subscribe to and receive change notifications for resources through [different delivery channels](./change-notifications-overview.md#receiving-change-notifications). You can set up subscriptions to include the changed resource data (such as the content of a Microsoft Teams chat message or Microsoft Teams presence information) in change notifications. Change notifications that include the resource change data are called rich notifications. Your app can use rich notifications to run your business logic without having to make a separate API call to fetch the changed resource.
 
 This article will guide you through the process for setting up rich notifications in your application.
 
@@ -84,7 +84,7 @@ Content-Type: application/json
 
 Certain events can interfere with change notification flow in an existing subscription. Subscription lifecycle notifications inform you actions to take in order to maintain an uninterrupted flow. Unlike a resource change notification which informs a change to a resource instance, a lifecycle notification is about the subscription itself, and its current state in the lifecycle.
 
-For more information about how to receive and respond to lifecycle notifications, see [Reduce missing subscriptions and change notifications)](webhooks-lifecycle.md)
+For more information about how to receive and respond to lifecycle notifications, see [Reduce missing subscriptions and change notifications)](change-notifications-lifecycle-events.md)
 
 ## Validating the authenticity of notifications
 
@@ -590,7 +590,7 @@ decryptedPayload += decipher.final('utf8');
 
 ## See also
 
-- [Set up notifications for changes in user data](webhooks.md)
+- [Set up notifications for changes in user data](change-notifications-overview.md)
 - [Subscription resource type](/graph/api/resources/subscription)
 - [Get subscription](/graph/api/subscription-get)
 - [Create subscription](/graph/api/subscription-post-subscriptions)
