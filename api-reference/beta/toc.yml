@@ -13523,6 +13523,8 @@ items:
                         href: resources/authenticationcombinationconfiguration.md
                       - name: FIDO2 combination configuration
                         href: resources/fido2combinationconfiguration.md
+                      - name: x509 certificate combination configuration
+                        href: resources/x509certificatecombinationconfiguration.md
                       - name: Create
                         href: api/authenticationstrengthpolicy-post-combinationconfigurations.md
                       - name: List
