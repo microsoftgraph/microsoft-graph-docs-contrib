@@ -207,15 +207,15 @@ document.getElementById("reload-btn").addEventListener("click", () => {
 
 ## Events
 
-| Event       | When is it emitted                 | Custom data                                     | Cancelable | Bubbles |     Works with custom template     |
-| ----------- | ---------------------------------- | ----------------------------------------------- | :--------: | :-----: | :--------------------------------: |
-| `itemClick` | Fired when the user selects a file. | Selected [file](/graph/api/resources/driveItem) |     No     |   No    | Yes, with custom **file** template |
+| Event       | When is it emitted                  | Custom data                                     | Cancelable | Bubbles |     Works with custom template        |
+| ----------- | ----------------------------------- | ----------------------------------------------- | ---------- | ------- | ------------------------------------- |
+| `itemClick` | Fired when the user selects a file. | Selected [file](/graph/api/resources/driveItem) |     No     |   No    | Yes, with a custom **file** template. |
 
 For more information about handling events, see [events](../customize-components/events.md).
 
 ## Templates
 
-The `mgt-file-list` component supports several [templates](../customize-components/templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` value to one of the data types listed in the following table.
+The `mgt-file-list` component supports many [templates](../customize-components/templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` value to one of the data types listed in the following table.
 
 | Data type | Data context                  | Description                                                       |
 | --------- | ----------------------------- | ----------------------------------------------------------------- |
@@ -273,11 +273,9 @@ The `mgt-file-list` component supports several [templates](../customize-componen
 | `insight-type` is set to shared                                    | Sites.Read.All                                                                                        | `GET /me/insights/shared`                                                                                                                                                                                                  |
 | Provide `{user-id or upn}` AND `insight-type` is set to `shared`   | Sites.Read.All                                                                                        | `GET /users/{id or userPrincipalName}/insights/shared?$filter=((lastshared/sharedby/id eq '${user-id}') and (resourceReference/type eq 'microsoft.graph.driveItem'))`                                                      |
 
-## Components used
+### Subcomponents
 
-This component is composed of other components. These subcomponents might require other permissions than the ones listed for this component. For more information, see each subcomponents documentation.
-
-- [mgt-file](file.md)
+The `mgt-file-list` component consists of one or more subcomponents that might require other permissions than the ones listed previously. For more information, see the documentation for each subcomponent: [mgt-file](file.md).
 
 ## Authentication
 
