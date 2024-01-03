@@ -31,7 +31,7 @@ Assigning eligibility instead of a persistently active User Administrator privil
 
 To complete this tutorial, you need the following resources and privileges:
 
-+ A working Microsoft Entra tenant with a Microsoft Entra ID P2 or EMS E5 license enabled.
++ A working Microsoft Entra tenant with a Microsoft Entra ID P2 or Microsoft Entra ID Governance license enabled.
 + Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Global Administrator role.
   + [Optional] Start a new session in another browser. You'll sign in later in this tutorial.
 + Grant yourself the following delegated permissions: `User.ReadWrite.All`, `Group.ReadWrite.All`, `Directory.Read.All`, `RoleEligibilitySchedule.ReadWrite.Directory`, and `RoleAssignmentSchedule.ReadWrite.Directory`, and `RoleManagement.ReadWrite.Directory`.
@@ -408,7 +408,7 @@ An incident ticket CONTOSO: Security-012345 has been raised in Contoso's inciden
 
 First, start the Authenticator app on your phone and open Aline Dupuy's account.
 
-Sign in to Graph Explorer as Aline. You may use the another browser for this step. By doing so, you won't interrupt your current session as a user in the Global Administrator role. Alternatively, you can interrupt your current session by signing out of Graph Explorer and signing back in as Aline.
+Sign in to Graph Explorer as Aline. You may use another browser for this step. By doing so, you won't interrupt your current session as a user in the Global Administrator role. Alternatively, you can interrupt your current session by signing out of Graph Explorer and signing back in as Aline.
 
 Signed in as Aline, you'll first change your password because this was specified during account creation. Then, because the administrator configured your account for MFA, you'll be prompted to set up your account in the Authenticator app and be challenged for MFA sign-in. This is because PIM requires that MFA for all active role assignments.
 

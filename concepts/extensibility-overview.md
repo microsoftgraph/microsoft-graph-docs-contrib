@@ -284,6 +284,7 @@ Content-type: application/json
     "deletedDateTime": null,
     "appDisplayName": "HR-sync-app",
     "dataType": "String",
+    "isMultiValued": false,
     "isSyncedFromOnPremises": false,
     "name": "extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroupTracker",
     "targetObjects": [

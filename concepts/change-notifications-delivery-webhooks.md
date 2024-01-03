@@ -55,7 +55,7 @@ Your endpoint must be prepared to regularly reauthorize with Microsoft Graph to 
 
 If an access token expires, notifications won't be delivered.  However, this doesn't trigger endpoint throttling behavior and Microsoft Graph will continue to retry sending each notification for up to 4 hours. So if the access token is refreshed within 4 hours of expiration, unsent notifications will be delivered.
 
-It's recommended that you add [lifecycle notifications](.\webhooks-lifecycle.md) to your subscription to receive warning about token expiration so you can reauthorize your endpoint in a timely manner.
+It's recommended that you add [lifecycle notifications](.\change-notifications-lifecycle-events.md) to your subscription to receive warning about token expiration so you can reauthorize your endpoint in a timely manner.
 
 When you [renew your subscription](#renew-a-subscription), your access token is also refreshed.
 
@@ -84,7 +84,7 @@ To start receiving Microsoft Graph change notifications, you must create a subsc
 
 ### Subscription request
 
-The client app sends a **POST** request to the `/subscriptions` endpoint. The following example shows a basic request to subscribe to changes to a specific mail folder on behalf of the signed-in user. For more information about other Microsoft Graph resources that support change notifications, see [supported resources](/graph/webhooks#supported-resources).
+The client app sends a **POST** request to the `/subscriptions` endpoint. The following example shows a basic request to subscribe to changes to a specific mail folder on behalf of the signed-in user. For more information about other Microsoft Graph resources that support change notifications, see [supported resources](/graph/change-notifications-overview#supported-resources).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -159,7 +159,7 @@ Each subscription has a unique **subscriptionId**, even if you have multiple sub
 
 While the subscription is valid and there are changes to the resource that you subscribed to, Microsoft Graph sends a `POST` request to the **notificationUrl** with details of the changes. This payload is the **change notification**.
 
-For most subscriptions, Microsoft Graph doesn't delay sending notifications but [delivers all notifications within the SLA unless the service is experiencing an incident](./webhooks.md#latency).
+For most subscriptions, Microsoft Graph doesn't delay sending notifications but [delivers all notifications within the SLA unless the service is experiencing an incident](./change-notifications-overview.md#latency).
 
 A change notification payload sent to your endpoint can contain a collection of change notifications relating to your subscriptions.
 
@@ -321,7 +321,7 @@ When you subscribe to lifecycle notifications, Microsoft Graph alerts you:
 > [!NOTE]
 > If an access token expires, notifications will not be delivered the endpoint. But Microsoft Graph will continue to retry sending each notification for up to 4 hours. So if the access token is refreshed within 4 hours of expiration, unsent notifications will be delivered.
 
-For more information on how to utilize lifecycle notifications for your subscription, see [lifecycle notifications](/graph/webhooks-lifecycle).
+For more information on how to utilize lifecycle notifications for your subscription, see [lifecycle notifications](/graph/change-notifications-lifecycle-events).
 
 ## Summary
 
@@ -337,4 +337,4 @@ In this article, you learned how to receive change notifications through webhook
 - [Training module: Use change notifications and track changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges)
 - [subscription resource type](/graph/api/resources/subscription)
 - [changeNotificationCollection](/graph/api/resources/changenotificationcollection) resource type
-- [Lifecycle notifications](./webhooks-lifecycle.md)
+- [Lifecycle notifications](./change-notifications-lifecycle-events.md)
