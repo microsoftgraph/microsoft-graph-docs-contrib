@@ -277,9 +277,9 @@ items:
             href: /graph/toolkit/components/picker?context=graph/api/1.0
           - name: Planner tasks
             href: /graph/toolkit/components/tasks?context=graph/api/1.0
-          - name: Search box (preview)
+          - name: Search box
             href: /graph/toolkit/components/search-box?context=graph/api/1.0
-          - name: Search results (preview)
+          - name: Search results
             href: /graph/toolkit/components/search-results?context=graph/api/1.0
           - name: Taxonomy picker
             href: /graph/toolkit/components/taxonomy-picker?context=graph/api/1.0
