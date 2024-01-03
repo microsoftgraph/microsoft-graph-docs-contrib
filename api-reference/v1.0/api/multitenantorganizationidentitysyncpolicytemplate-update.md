@@ -1,6 +1,6 @@
 ---
 title: "Update multiTenantOrganizationIdentitySyncPolicyTemplate"
-description: "Update the cross-tenant access policy template with user synchronization settings for a multi-tenant organization."
+description: "Update the cross-tenant access policy template with user synchronization settings for a multitenant organization."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Update multiTenantOrganizationIdentitySyncPolicyTemplate
 Namespace: microsoft.graph
 
-Update the cross-tenant access policy template with user synchronization settings for a multi-tenant organization.
+Update the cross-tenant access policy template with user synchronization settings for a multitenant organization.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

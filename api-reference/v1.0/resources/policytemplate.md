@@ -1,6 +1,6 @@
 ---
 title: "policyTemplate resource type"
-description: "Represents the base policy in the directory for multi-tenant organization settings."
+description: "Represents the base policy in the directory for multitenant organization settings."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the base policy in the directory for multi-tenant organization settings.
+Represents the base policy in the directory for multitenant organization settings.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -29,8 +29,8 @@ None.
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|multiTenantOrganizationIdentitySynchronization|[multiTenantOrganizationIdentitySyncPolicyTemplate](../resources/multitenantorganizationidentitysyncpolicytemplate.md)|Defines an optional cross-tenant access policy template with user synchronization settings for a multi-tenant organization.|
-|multiTenantOrganizationPartnerConfiguration|[multiTenantOrganizationPartnerConfigurationTemplate](../resources/multitenantorganizationpartnerconfigurationtemplate.md)|Defines an optional cross-tenant access policy template with inbound and outbound partner configuration settings for a multi-tenant organization.|
+|multiTenantOrganizationIdentitySynchronization|[multiTenantOrganizationIdentitySyncPolicyTemplate](../resources/multitenantorganizationidentitysyncpolicytemplate.md)|Defines an optional cross-tenant access policy template with user synchronization settings for a multitenant organization.|
+|multiTenantOrganizationPartnerConfiguration|[multiTenantOrganizationPartnerConfigurationTemplate](../resources/multitenantorganizationpartnerconfigurationtemplate.md)|Defines an optional cross-tenant access policy template with inbound and outbound partner configuration settings for a multitenant organization.|
 
 ## JSON representation
 

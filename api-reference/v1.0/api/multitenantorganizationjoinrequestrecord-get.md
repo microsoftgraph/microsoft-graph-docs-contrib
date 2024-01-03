@@ -1,6 +1,6 @@
 ---
 title: "Get multiTenantOrganizationJoinRequestRecord"
-description: "Get the status of a tenant joining a multi-tenant organization."
+description: "Get the status of a tenant joining a multitenant organization."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Get multiTenantOrganizationJoinRequestRecord
 Namespace: microsoft.graph
 
-Get the status of a tenant joining a multi-tenant organization.
+Get the status of a tenant joining a multitenant organization.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -49,7 +49,7 @@ If successful, this method returns a `200 OK` response code and a [multiTenantOr
 
 ## Examples
 
-The following example gets the status of a tenant joining a multi-tenant organization.
+The following example gets the status of a tenant joining a multitenant organization.
 
 ### Request
 
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/v1.0/tenantRelationships/multiTenantOrganization
 
 ### Response
 
-The following example shows the response before an added tenant joins a multi-tenant organization.
+The following example shows the response before an added tenant joins a multitenant organization.
 
 <!-- {
   "blockType": "response",
@@ -86,7 +86,7 @@ Content-Type: application/json
 }
 ```
 
-The following example shows the response after an added tenant [requests to join a multi-tenant organization](multitenantorganizationjoinrequestrecord-update.md) and the state is still `pending`.
+The following example shows the response after an added tenant [requests to join a multitenant organization](multitenantorganizationjoinrequestrecord-update.md) and the state is still `pending`.
 
 ``` http
 HTTP/1.1 200 OK
@@ -106,7 +106,7 @@ Content-Type: application/json
 }
 ```
 
-The following example shows the response after an added tenant successfully joins a multi-tenant organization and the state is changed to `active`.
+The following example shows the response after an added tenant successfully joins a multitenant organization and the state is changed to `active`.
 
 ``` http
 HTTP/1.1 200 OK
@@ -122,7 +122,7 @@ Content-Type: application/json
 }
 ```
 
-The following example shows the response when an added tenant fails to join a multi-tenant organization. To reset a failed join request, see [Update multiTenantOrganizationJoinRequestRecord](multitenantorganizationjoinrequestrecord-update.md).
+The following example shows the response when an added tenant fails to join a multitenant organization. To reset a failed join request, see [Update multiTenantOrganizationJoinRequestRecord](multitenantorganizationjoinrequestrecord-update.md).
 
 ``` http
 HTTP/1.1 200 OK

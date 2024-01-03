@@ -1,6 +1,6 @@
 ---
 title: "Update multiTenantOrganization"
-description: "Update the properties of a multi-tenant organization."
+description: "Update the properties of a multitenant organization."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Update multiTenantOrganization
 Namespace: microsoft.graph
 
-Update the properties of a multi-tenant organization.
+Update the properties of a multitenant organization.
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -42,8 +42,8 @@ PATCH /tenantRelationships/multiTenantOrganization
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Display name of the multi-tenant organization. Optional.|
-|description|String|Description of the multi-tenant organization. Optional.|
+|displayName|String|Display name of the multitenant organization. Optional.|
+|description|String|Description of the multitenant organization. Optional.|
 
 
 
@@ -53,7 +53,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-The following example updates the description and display name for a multi-tenant organization.
+The following example updates the description and display name for a multitenant organization.
 
 ### Request
 
@@ -68,7 +68,7 @@ Content-Type: application/json
 
 {
   "displayName": "Contoso organization",
-  "description": "Multi-tenant organization between Contoso, Fabrikam, and Woodgrove Bank"
+  "description": "Multitenant organization between Contoso, Fabrikam, and Woodgrove Bank"
 }
 ```
 

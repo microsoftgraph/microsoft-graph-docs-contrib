@@ -1,6 +1,6 @@
 ---
 title: "Create multiTenantOrganization"
-description: "Create a new multi-tenant organization."
+description: "Create a new multitenant organization."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -10,9 +10,9 @@ doc_type: apiPageType
 # Create multiTenantOrganization
 Namespace: microsoft.graph
 
-Create a new multi-tenant organization. By default, the creator tenant becomes an owner tenant upon successful creation. Only owner tenants can manage a multi-tenant organization.
+Create a new multitenant organization. By default, the creator tenant becomes an owner tenant upon successful creation. Only owner tenants can manage a multitenant organization.
 
-To allow for asynchronous processing, you must wait a **minimum of 2 hours** between creation and joining a multi-tenant organization.
+To allow for asynchronous processing, you must wait a **minimum of 2 hours** between creation and joining a multitenant organization.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -47,8 +47,8 @@ You can specify the following properties when creating a **multiTenantOrganizati
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Display name of the multi-tenant organization. Required.|
-|description|String|Description of the multi-tenant organization. Optional.|
+|displayName|String|Display name of the multitenant organization. Required.|
+|description|String|Description of the multitenant organization. Optional.|
 
 
 
@@ -58,7 +58,7 @@ If successful, this method returns a `201 Created` response code and a [multiTen
 
 ## Examples
 
-The following example creates a new multi-tenant organization.
+The following example creates a new multitenant organization.
 
 ### Request
 
@@ -74,7 +74,7 @@ Content-Type: application/json
 
 {
   "displayName": "Contoso organization",
-  "description": "Multi-tenant organization between Contoso, Fabrikam, and Woodgrove Bank"
+  "description": "Multitenant organization between Contoso, Fabrikam, and Woodgrove Bank"
 }
 ```
 
@@ -105,7 +105,7 @@ Content-Type: application/json
     "id": "6d8b39e5-039a-4034-bf3a-e0b4f8cd60b6",
     "createdDateTime": "2023-05-26T22:05:23Z",
     "displayName": "Contoso organization",
-    "description": "Multi-tenant organization between Contoso, Fabrikam, and Woodgrove Bank",
+    "description": "Multitenant organization between Contoso, Fabrikam, and Woodgrove Bank",
     "state": "active"
 }
 ```

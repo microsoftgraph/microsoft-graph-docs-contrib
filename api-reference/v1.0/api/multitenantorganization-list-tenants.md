@@ -1,6 +1,6 @@
 ---
 title: "List multiTenantOrganizationMembers"
-description: "List the tenants and their properties in the multi-tenant organization."
+description: "List the tenants and their properties in the multitenant organization."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # List multiTenantOrganizationMembers
 Namespace: microsoft.graph
 
-List the tenants and their properties in the multi-tenant organization.
+List the tenants and their properties in the multitenant organization.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-The following example lists the tenants and their properties in the multi-tenant organization.
+The following example lists the tenants and their properties in the multitenant organization.
 
 ### Request
 

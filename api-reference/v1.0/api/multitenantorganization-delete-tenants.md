@@ -15,7 +15,7 @@ Remove a tenant from a multitenant organization. A tenant can be removed in the 
 * An active member tenant can remove itself.
 * An active owner tenant can remove any other tenant.
 * An active owner tenant can remove itself as long as there is another active owner tenant remaining.
-* An active owner tenant can remove itself as long as there is no other active tenant remaining, thereby deleting the entire multi-tenant organization.
+* An active owner tenant can remove itself as long as there is no other active tenant remaining, thereby deleting the entire multitenant organization.
 
 To allow for asynchronous processing, you must wait for **up to 2 hours** before removal of a tenant is completed.
 
@@ -53,7 +53,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-The following example removes a tenant from a multi-tenant organization.
+The following example removes a tenant from a multitenant organization.
 
 ### Request
 

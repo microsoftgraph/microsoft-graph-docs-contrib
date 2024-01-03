@@ -65,7 +65,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "multiTenantOrganization",
           "ChangeType": "Addition",
-          "Description": "Added the [multiTenantOrganization](https://learn.microsoft.com/en-us/graph/api/resources/multitenantorganization?view=graph-rest-1.0) resource type. Use this resource and its associated methods to manage a multi-tenant organization.",
+          "Description": "Added the [multiTenantOrganization](https://learn.microsoft.com/en-us/graph/api/resources/multitenantorganization?view=graph-rest-1.0) resource type. Use this resource and its associated methods to manage a multitenant organization.",
           "Target": "multiTenantOrganization"
         },
         {
@@ -81,7 +81,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "multiTenantOrganizationMember",
           "ChangeType": "Addition",
-          "Description": "Added the [multiTenantOrganizationMember](https://learn.microsoft.com/en-us/graph/api/resources/multitenantorganizationmember?view=graph-rest-1.0) resource type. Use this resource and its associated methods to manage the membership of tenants in a multi-tenant organization.",
+          "Description": "Added the [multiTenantOrganizationMember](https://learn.microsoft.com/en-us/graph/api/resources/multitenantorganizationmember?view=graph-rest-1.0) resource type. Use this resource and its associated methods to manage the membership of tenants in a multitenant organization.",
           "Target": "multiTenantOrganizationMember"
         },
         {

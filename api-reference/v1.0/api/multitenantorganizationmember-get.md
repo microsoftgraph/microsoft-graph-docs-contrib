@@ -1,6 +1,6 @@
 ---
 title: "Get multiTenantOrganizationMember"
-description: "Get a tenant and its properties in the multi-tenant organization."
+description: "Get a tenant and its properties in the multitenant organization."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Get multiTenantOrganizationMember
 Namespace: microsoft.graph
 
-Get a tenant and its properties in the multi-tenant organization.
+Get a tenant and its properties in the multitenant organization.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a [multiTenantOr
 
 ## Examples
 
-The following example gets a tenant and its properties in the multi-tenant organization.
+The following example gets a tenant and its properties in the multitenant organization.
 
 ### Request
 

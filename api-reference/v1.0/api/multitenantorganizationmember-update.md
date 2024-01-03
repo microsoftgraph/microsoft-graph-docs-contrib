@@ -1,6 +1,6 @@
 ---
 title: "Update multiTenantOrganizationMember"
-description: "Update the properties of a tenant in a multi-tenant organization."
+description: "Update the properties of a tenant in a multitenant organization."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Update multiTenantOrganizationMember
 Namespace: microsoft.graph
 
-Update the properties of a tenant in a multi-tenant organization. Only owner tenants can call this API.
+Update the properties of a tenant in a multitenant organization. Only owner tenants can call this API.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -44,7 +44,7 @@ PATCH /tenantRelationships/multiTenantOrganization/tenants/{tenantId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|role|multiTenantOrganizationMemberRole|Role of the tenant in the multi-tenant organization. The possible values are: `owner`, `member` (default), `unknownFutureValue`. Optional.|
+|role|multiTenantOrganizationMemberRole|Role of the tenant in the multitenant organization. The possible values are: `owner`, `member` (default), `unknownFutureValue`. Optional.|
 
 
 ## Response
@@ -53,7 +53,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-The following example changes the role of a tenant in a multi-tenant organization from member to owner.
+The following example changes the role of a tenant in a multitenant organization from member to owner.
 
 ### Request
 
