@@ -50,9 +50,9 @@ This control uses the following Microsoft Graph APIs and permissions.
 | - | - | - |
 | `chatId` is set | Chat.ReadBasic, Chat.Read, ChatMessage.Read, Chat.ReadWrite, ChatMember.ReadWrite | [/chats/{id}/messages](/graph/api/chat-list-messages), [/chats/{id}/messages](/graph/api/chat-post-messages), [/chats/{id}/messages/{messageId}](/graph/api/chatmessage-update), [/me/chats/{id}/messages/{messageId}/softDelete](/graph/api/chatmessage-softdelete), [/chats/{id}/members/{membershipId}](/graph/api/chat-delete-members), [/chats/{id}/members](/graph/api/chat-post-members), [/chats/{id}/messages/{messageId}/hostedContents/{hostedContentId}](/graph/api/chatmessagehostedcontent-get), [/chats/{id}](/graph/api/chat-patch) |
 
-## Components used
+### Subcomponents
 
-This component is composed of other components. These subcomponents might require other permissions than the ones listed for this component. For more information, see each subcomponents documentation.
+The `mgt-chat` component consists of one or more subcomponents that might require other permissions than the ones listed previously. For more information, see the documentation for each subcomponent:
 
 - [mgt-person](person.md)
 - [mgt-people-picker](people-picker.md)
