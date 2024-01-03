@@ -38,5 +38,5 @@ If you need to increase these limits, you can submit a support request using the
 
 ## Next steps
 
-+ [What is a multitenant organization in Microsoft Entra ID?](/azure/active-directory/multi-tenant-organizations/overview)
++ [What is a multitenant organization in Microsoft Entra ID?](/entra/identity/multi-tenant-organizations/overview)
 + [multiTenantOrganization resource type](../resources/multitenantorganization.md)
