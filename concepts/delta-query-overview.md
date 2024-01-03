@@ -113,7 +113,7 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 
 Delta query is currently supported for the following resources. Some resources that are available in v1.0 have their corresponding **delta** functions still in preview status, as indicated.
 
-> Note: The delta function for resources marked with an asterisk (*) are only available on the `/beta`` endpoint.
+> Note: The delta function for resources marked with an asterisk (*) are only available on the `/beta` endpoint.
 
 | Resource collection                                                 | API                                                                             |
 |:--------------------------------------------------------------------|:--------------------------------------------------------------------------------|
@@ -125,7 +125,7 @@ Delta query is currently supported for the following resources. Some resources t
 | [device](/graph/api/resources/device)                               | [device: delta](/graph/api/device-delta) function                               |
 | [directoryRole](/graph/api/resources/directoryrole)                 | [directoryRole: delta](/graph/api/directoryrole-delta) function                 |
 | [directoryObject](/graph/api/resources/directoryObject)             | [directoryObject: delta](/graph/api/directoryobject-delta) function             |
-| [driveItem](/graph/api/resources/driveitem) <sup>1<sup>             | [driveItem: delta](/graph/api/driveitem-delta) function                         |
+| [driveItem](/graph/api/resources/driveitem) <sup>1</sup>             | [driveItem: delta](/graph/api/driveitem-delta) function                         |
 | [educationAssignment](/graph/api/resources/educationassignment)     | [educationAssignment: delta](/graph/api/educationassignment-delta) function     |
 | [educationCategory](/graph/api/resources/educationcategory)         | [educationCategory: delta](/graph/api/educationcategory-delta) function         |
 | [educationClass](/graph/api/resources/educationclass)               | [educationClass: delta](/graph/api/educationclass-delta) function               |
@@ -133,7 +133,7 @@ Delta query is currently supported for the following resources. Some resources t
 | [educationUser](/graph/api/resources/educationuser)                 | [educationUser: delta](/graph/api/educationuser-delta) function                 |
 | [event](/graph/api/resources/event)                                 | [event: delta](/graph/api/event-delta) function                                 |
 | [group](/graph/api/resources/group)                                 | [group: delta](/graph/api/group-delta) function                                 |
-| [listItem](/graph/api/resources/listitem) <sup>1<sup>               | [listItem: delta](/graph/api/listitem-delta) function                           |
+| [listItem](/graph/api/resources/listitem) <sup>1</sup>               | [listItem: delta](/graph/api/listitem-delta) function                           |
 | [mailFolder](/graph/api/resources/mailfolder)                       | [mailFolder: delta](/graph/api/mailfolder-delta) function                       |
 | [message](/graph/api/resources/message)                             | [message: delta](/graph/api/message-delta) function                             |
 | [orgContact](/graph/api/resources/orgcontact)                       | [orgContact: delta](/graph/api/orgcontact-delta) function                       |
@@ -141,17 +141,17 @@ Delta query is currently supported for the following resources. Some resources t
 | [contactFolder](/graph/api/resources/contactfolder)                 | [contactFolder: delta](/graph/api/contactfolder-delta) function                 |
 | [contact](/graph/api/resources/contact) resource                    | [contact: delta](/graph/api/contact-delta) function                             |
 | [plannerBucket](/graph/api/resources/plannerbucket) *               | [plannerBucket: delta](/graph/api/plannerbucket-delta) function                 |
-| [plannerUser](/graph/api/resources/planneruser) <sup>2<sup>         | [plannerUser: delta](/graph/api/planneruser-list-delta) function                |
+| [plannerUser](/graph/api/resources/planneruser) <sup>2</sup>         | [plannerUser: delta](/graph/api/planneruser-list-delta) function                |
 | [servicePrincipal](/graph/api/resources/serviceprincipal)           | [servicePrincipal: delta](/graph/api/serviceprincipal-delta) function           |
 | [todoTask](/graph/api/resources/todotask)                           | [todoTask: delta](/graph/api/todotask-delta) function                           |
 | [todoTaskList](/graph/api/resources/todotasklist)                   | [todoTaskList: delta](/graph/api/todotasklist-delta) function                   |
 | [user](/graph/api/resources/user)                                   | [user: delta](/graph/api/user-delta) function                                   |
 
 > [!NOTE]
-> <sup>1<sup> The usage pattern for OneDrive and SharePoint resources is similar to the other supported resources with some minor syntax differences. For more information about the current syntax, see
+> <sup>1</sup> The usage pattern for OneDrive and SharePoint resources is similar to the other supported resources with some minor syntax differences. For more information about the current syntax, see
 [driveItem: delta](/graph/api/driveitem-delta) and [listItem: delta](/graph/api/listitem-delta).
 >
-> <sup>2<sup> The usage pattern for Planner resources is similar to other supported resources with a few differences. For more information, see [planner: delta](/graph/api/planneruser-list-delta).
+> <sup>2</sup> The usage pattern for Planner resources is similar to other supported resources with a few differences. For more information, see [planner: delta](/graph/api/planneruser-list-delta).
 
 ### National clouds
 
