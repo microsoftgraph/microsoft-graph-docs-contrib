@@ -138,6 +138,13 @@ Namespace: microsoft.graph
 | user   |
 | group  |
 
+### synchronizationInfoCreationType values
+
+|Member|
+|:---|
+|tenantToTenantSync|
+|unknownFutureValue|
+
 ### multiTenantOrganizationMemberProcessingStatus values
 
 |Member|
