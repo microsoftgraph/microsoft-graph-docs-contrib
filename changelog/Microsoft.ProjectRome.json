@@ -7,7 +7,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "manufacturer",
           "ChangeType": "Deletion",
-          "Description": "Removed the `manufacturer` property from the [device](https://learn.microsoft.com/en-us/graph/api/resources/projectrome-device?view=graph-rest-beta) resource.",
+          "Description": "Removed the `manufacturer` property from the [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource.",
           "Target": "device"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "model",
           "ChangeType": "Deletion",
-          "Description": "Removed the `model` property from the [device](https://learn.microsoft.com/en-us/graph/api/resources/projectrome-device?view=graph-rest-beta) resource.",
+          "Description": "Removed the `model` property from the [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource.",
           "Target": "device"
         }
       ],
