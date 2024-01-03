@@ -23,8 +23,8 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|allowedIssuerSkis|String collection|A list of allowed SubjectkeyIdentifier that are in the certificate propreties and can be used for  authentication|
-|allowedPolicyOIDs|String collection|A list of allowed policy OIDs that are in the certificate propreties and can be used for  authentication|
+|allowedIssuerSkis|String collection|A list of allowed SubjectkeyIdentifier.|
+|allowedPolicyOIDs|String collection|A list of allowed policy OIDs.|
 |appliesToCombinations|authenticationMethodModes collection| Which authentication method combinations this configuration applies to. The possible value for x509certificatecombinationconfiguration are `"x509CertificateSingleFactor"` or `"x509CertificateMultiFactor"`.|
 |id|String|A system-generated identifier. Inherited from [entity](../resources/entity.md).|
 
