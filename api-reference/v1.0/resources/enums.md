@@ -3136,6 +3136,33 @@ Possible values for user account types (group membership), per Windows definitio
 | verticalSplit      |
 | unknownFutureValue |
 
+### meetingAudience values 
+
+|Member|
+|:---|
+|everyone|
+|organization|
+|unknownFutureValue|
+
+### virtualEventAttendeeRegistrationStatus values 
+
+|Member|
+|:---|
+|registered|
+|canceled|
+|waitlisted|
+|pendingApproval|
+|rejectedByOrganizer|
+|unknownFutureValue|
+
+### virtualEventStatus values 
+
+|Member|
+|:---|
+|draft|
+|published|
+|canceled|
+
 ### socialIdentitySourceType values
 
 |Member|

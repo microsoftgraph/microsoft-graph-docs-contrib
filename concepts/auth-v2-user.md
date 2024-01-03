@@ -8,6 +8,7 @@ ms.localizationpriority: high
 ms.prod: "applications"
 ms.custom: graphiamtop20
 ms.date: 09/08/2023
+#customer intent: As a developer, I want to understand how my app can run with it's own identity, without a signed in user, and call Microsoft Graph to access resources in a tenant.
 ---
 
 # Get access on behalf of a user

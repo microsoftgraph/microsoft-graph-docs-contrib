@@ -1,6 +1,6 @@
 ---
 title: "List webinars"
-description: "Get the list of all virtualEventWebinar objects created in a tenant."
+description: "Get the list of all virtual event webinars created in a tenant."
 author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,23 +13,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of all [virtualEventWebinar](../resources/virtualeventwebinar.md) objects created in a tenant.
+Get the list of all [virtualEventWebinar](../resources/virtualeventwebinar.md) objects created in the tenant.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Not supported.|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|VirtualEvent.Read.All|
+<!-- { "blockType": "permissions", "name": "virtualeventsroot_list_webinars" } -->
+[!INCLUDE [permissions-table](../includes/permissions/virtualeventsroot-list-webinars-permissions.md)]
 
 > [!NOTE]
 >
-> When used with application permissions, this API returns only the events whose organizers have been assigned an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
+> This API returns only webinars whose organizer has been assigned an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
 
 ## HTTP request
 
@@ -37,8 +34,6 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-
-To list all webinars of a tenant:
 
 ``` http
 GET /solutions/virtualEvents/webinars
