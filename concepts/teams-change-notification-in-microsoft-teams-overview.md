@@ -9,7 +9,7 @@ ms.custom: scenarios:getting-started
 
 # Change notifications for Microsoft Teams resources
 
-Change notifications for Microsoft Teams resources using Microsoft Graph enable you to subscribe to a resource's changes (create, update, and delete). Change notifications provide a low latency model, allowing you to maintain a [subscription](/graph/api/resources/webhooks). You can also get the resource data in the notifications and avoid calling the API to get the payload.
+Change notifications for Microsoft Teams resources using Microsoft Graph enable you to subscribe to a resource's changes (create, update, and delete). Change notifications provide a low latency model, allowing you to maintain a [subscription](/graph/api/resources/change-notifications-api-overview). You can also get the resource data in the notifications and avoid calling the API to get the payload.
 
 > [!NOTE]
 > The maximum time a subscription can last is 60 minutes; however, subscriptions can be renewed until the caller has permission to access the resource.
@@ -22,7 +22,7 @@ Microsoft Teams supports two types of change notifications:
 
 * **Change notification to track all changes for a specific resource:** For example, you can subscribe to changes in messages in a particular channel and get notified whenever a message is created, updated, or deleted.
 
-For details about which resources support which types of change notifications, see [Microsoft Graph change notifications](webhooks.md).
+For details about which resources support which types of change notifications, see [Microsoft Graph change notifications](change-notifications-overview.md).
 
 ## Supported resources
 
@@ -73,7 +73,7 @@ For notifications with resource data, the payload looks like the following.  Thi
 }
 ```
 
-For details about validating tokens and decrypting the payload, see [Set up change notifications that include resource data](webhooks-with-resource-data.md).
+For details about validating tokens and decrypting the payload, see [Set up change notifications that include resource data](change-notifications-with-resource-data.md).
 
 The decrypted notification payload looks like the following. The decrypted payload for the previous example conforms to the [chatMessage](/graph/api/resources/chatMessage) schema. The payload is similar to that returned by GET operations.
 
@@ -146,7 +146,7 @@ The previous example shows a notification corresponding to a chat message resour
 
 ## See also
 
-* [Microsoft Graph change notifications](webhooks.md)
+* [Microsoft Graph change notifications](change-notifications-overview.md)
 * [Get change notifications for teams and channels using Microsoft Graph](teams-changenotifications-team-and-channel.md)
 * [Get change notifications for membership changes in teams and channels using Microsoft Graph](teams-changenotifications-teammembership.md)
 * [Get change notifications for messages in Teams channels and chats using Microsoft Graph](teams-changenotifications-chatmessage.md)
