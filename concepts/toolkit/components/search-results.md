@@ -29,7 +29,7 @@ You can use several attributes to change the behavior of the component. The requ
 | entity-types              | entityTypes             | One or more types of resources expected in the response. Possible values are: list, site, listItem, message, event, drive, driveItem, person, externalItem, acronym, bookmark, chatMessage. Default is `driveItem`, `listItem`, `site`.   |
 | content-sources           | contentSources          | Content sources to use with external items.                                                                                                                                                                                               |
 | paging-max                | pagingMax               | The maximum number of pages to be clickable in the paging control. Default is `7`.                                                                                                                                                        |
-| query-template            | queryTemplate           | Query template to use in complex search scenarios. Query Templates are currently supported only on the beta endpoint.                                                                                                                     |
+| query-template            | queryTemplate           | Query template to use in complex search scenarios. Query templates are currently supported only on the beta endpoint.                                                                                                                     |
 | fetch-thumbnail           | fetchThumbnail          | Sets whether the result thumbnail should be fetched from the Microsoft Graph. Default is `false`.                                                                                                                                         |
 | enable-top-results        | enableTopResults        | This triggers hybrid sort for messages: the first three messages are the most relevant. This property is only applicable to `entityType=message`. Default is `false`.                                                                         |
 | scopes                    | scopes                  | Optional array of strings if using the property or a comma delimited scope if using the attribute. The component uses these scopes (with a supported provider) to ensure that the user consents to the right permission.         |
@@ -91,11 +91,11 @@ The `mgt-search-results` component supports several [templates](../customize-com
 
 ## Microsoft Graph permissions
 
-Permissions required by this component depend on the data that you want to retrieve with it from Microsoft Graph. For more information about permissions, see the [Search API Overview](/graph/api/resources/search-api-overview#scope-search-based-on-entity-types).
+Permissions required by this component depend on the data that you want to retrieve with it from Microsoft Graph. For more information about permissions, see [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview#scope-search-based-on-entity-types).
 
-## Components used
+### Subcomponents
 
-This component is composed of other components. These subcomponents might require other permissions than the ones listed for this component. For more information, see each subcomponents documentation.
+The `mgt-search-results` component consists of one or more subcomponents that might require other permissions than the ones required for this component. For more information, see the documentation for each subcomponent:
 
 - [mgt-file](people.md)
 - [mgt-person](person.md)
