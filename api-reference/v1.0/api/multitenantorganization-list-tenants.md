@@ -10,8 +10,6 @@ doc_type: apiPageType
 # List multiTenantOrganizationMembers
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 List the tenants and their properties in the multi-tenant organization.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -64,7 +62,7 @@ The following example lists the tenants and their properties in the multi-tenant
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganization/tenants
+GET https://graph.microsoft.com/v1.0/tenantRelationships/multiTenantOrganization/tenants
 ```
 
 # [C#](#tab/csharp)
@@ -114,7 +112,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#tenantRelationships/multiTenantOrganization/tenants",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#tenantRelationships/multiTenantOrganization/tenants",
     "value": [
         {
             "tenantId": "1fd6544e-e994-4de2-9f1b-787b51c7d325",

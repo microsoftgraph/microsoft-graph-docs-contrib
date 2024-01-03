@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Defines the status of a tenant joining a multi-tenant organization. Before a tenant added to a multi-tenant organization can participate in the multi-tenant organization, the administrator of the tenant must join the multi-tenant organization.
 
 ## Methods

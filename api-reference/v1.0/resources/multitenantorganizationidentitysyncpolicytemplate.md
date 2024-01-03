@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Defines an optional cross-tenant access policy template with user synchronization settings for multitenant organization tenants. Each tenant has its own template. For more information, see [crossTenantIdentitySyncPolicyPartner resource type](crosstenantidentitysyncpolicypartner.md).
 
 * If your tenant is joining a multitenant organization, the template is applicable to the user synchronization settings for all multitenant organization tenants.

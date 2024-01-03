@@ -10,8 +10,6 @@ doc_type: apiPageType
 # multiTenantOrganizationPartnerConfigurationTemplate: resetToDefaultSettings
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Reset the cross-tenant access policy template with inbound and outbound partner configuration settings for a multitenant organization to the default values.
 
 In its reset state, the template has no impact on partner configuration settings, other than that an unconfigured partner configuration is created if needed, for every multitenant organization tenant.
@@ -61,7 +59,7 @@ The following example resets the inbound and outbound partner configuration sett
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/templates/multiTenantOrganizationPartnerConfiguration/resetToDefaultSettings
+POST https://graph.microsoft.com/v1.0/policies/crossTenantAccessPolicy/templates/multiTenantOrganizationPartnerConfiguration/resetToDefaultSettings
 ```
 
 # [C#](#tab/csharp)

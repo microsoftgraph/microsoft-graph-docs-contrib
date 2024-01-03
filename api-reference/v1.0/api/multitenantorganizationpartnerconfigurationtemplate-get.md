@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Get multiTenantOrganizationPartnerConfigurationTemplate
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get the cross-tenant access policy template with inbound and outbound partner configuration settings for a multitenant organization.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -62,7 +60,7 @@ The following example gets the partner configuration settings of the template.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/templates/multiTenantOrganizationPartnerConfiguration
+GET https://graph.microsoft.com/v1.0/policies/crossTenantAccessPolicy/templates/multiTenantOrganizationPartnerConfiguration
 ```
 
 # [C#](#tab/csharp)
@@ -114,7 +112,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/crossTenantAccessPolicy/templates/multiTenantOrganizationPartnerConfiguration/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/crossTenantAccessPolicy/templates/multiTenantOrganizationPartnerConfiguration/$entity",
     "id": "75b1889b-6f42-4cc5-8e62-e774b8db243c",
     "templateApplicationLevel": "newPartners,existingPartners",
     "inboundTrust": null,
@@ -136,7 +134,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/crossTenantAccessPolicy/templates/multiTenantOrganizationPartnerConfiguration/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/crossTenantAccessPolicy/templates/multiTenantOrganizationPartnerConfiguration/$entity",
     "id": "8d253b1b-1798-434a-8e77-bec3774d1512",
     "templateApplicationLevel": "newPartners,existingPartners",
     "b2bCollaborationOutbound": null,

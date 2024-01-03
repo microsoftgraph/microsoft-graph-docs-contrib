@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Get multiTenantOrganizationIdentitySyncPolicyTemplate
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get the cross-tenant access policy template with user synchronization settings for a multitenant organization.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -62,7 +60,7 @@ The following example gets the user synchronization settings of the template.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/templates/multiTenantOrganizationIdentitySynchronization
+GET https://graph.microsoft.com/v1.0/policies/crossTenantAccessPolicy/templates/multiTenantOrganizationIdentitySynchronization
 ```
 
 # [C#](#tab/csharp)
@@ -114,7 +112,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/crossTenantAccessPolicy/templates/multiTenantOrganizationIdentitySynchronization/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/crossTenantAccessPolicy/templates/multiTenantOrganizationIdentitySynchronization/$entity",
     "templateApplicationLevel": "newPartners,existingPartners",
     "id": "0e7aad84-cb46-4b8e-a881-522ef25939f1",
     "userSyncInbound": {
@@ -130,7 +128,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/crossTenantAccessPolicy/templates/multiTenantOrganizationIdentitySynchronization/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/crossTenantAccessPolicy/templates/multiTenantOrganizationIdentitySynchronization/$entity",
     "id": "e1a11ff3-01f1-4c48-9784-b9d931571474",
     "templateApplicationLevel": "newPartners,existingPartners",
     "userSyncInbound": {

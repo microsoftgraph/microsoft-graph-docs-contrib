@@ -5,14 +5,12 @@ author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: conceptualPageType
-ms.date: 07/30/2023
+ms.date: 01/15/2024
 ---
 
 # Multitenant organization API overview
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The multitenant organization feature allows you to define an organization with more than one instance of Microsoft Entra ID. A multitenant organization enables multiple tenants to collaborate like a single entity.
 

@@ -10,8 +10,6 @@ doc_type: apiPageType
 # multiTenantOrganizationIdentitySyncPolicyTemplate: resetToDefaultSettings
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Reset the cross-tenant access policy template with user synchronization settings for a multitenant organization to the default values.
 
 In its reset state, the template has no impact on user synchronization settings, other than that unconfigured user synchronization settings are created if needed, for every multitenant organization tenant.
@@ -61,7 +59,7 @@ The following example resets the user synchronization settings of the template t
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/templates/multiTenantOrganizationIdentitySynchronization/resetToDefaultSettings
+POST https://graph.microsoft.com/v1.0/policies/crossTenantAccessPolicy/templates/multiTenantOrganizationIdentitySynchronization/resetToDefaultSettings
 ```
 
 # [C#](#tab/csharp)

@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Get multiTenantOrganizationJoinRequestRecord
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get the status of a tenant joining a multi-tenant organization.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -62,7 +60,7 @@ The following example gets the status of a tenant joining a multi-tenant organiz
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganization/joinRequest
+GET https://graph.microsoft.com/v1.0/tenantRelationships/multiTenantOrganization/joinRequest
 ```
 
 # [C#](#tab/csharp)
@@ -114,7 +112,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#tenantRelationships/multiTenantOrganization/joinRequest/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#tenantRelationships/multiTenantOrganization/joinRequest/$entity",
     "id": "7149c406-fac5-4be9-ad4b-f46fac7fe60c",
     "addedByTenantId": "00000000-0000-0000-0000-000000000000",
     "memberState": null,
@@ -130,7 +128,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#tenantRelationships/multiTenantOrganization/joinRequest/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#tenantRelationships/multiTenantOrganization/joinRequest/$entity",
     "id": "3e536776-7489-43e9-9637-742d62ec3fc5",
     "addedByTenantId": "1fd6544e-e994-4de2-9f1b-787b51c7d325",
     "memberState": "pending",
@@ -150,7 +148,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#tenantRelationships/multiTenantOrganization/joinRequest/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#tenantRelationships/multiTenantOrganization/joinRequest/$entity",
     "id": "3e536776-7489-43e9-9637-742d62ec3fc5",
     "addedByTenantId": "1fd6544e-e994-4de2-9f1b-787b51c7d325",
     "memberState": "active",
@@ -166,7 +164,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#tenantRelationships/multiTenantOrganization/joinRequest/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#tenantRelationships/multiTenantOrganization/joinRequest/$entity",
     "id": "3e536776-7489-43e9-9637-742d62ec3fc5",
     "addedByTenantId": "1fd6544e-e994-4de2-9f1b-787b51c7d325",
     "memberState": "pending",

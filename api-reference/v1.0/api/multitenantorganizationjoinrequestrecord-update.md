@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Update multiTenantOrganizationJoinRequestRecord
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Join a multi-tenant organization, after the owner of the multi-tenant organization has added your tenant to the multi-tenant organization as pending.
 
 Before a tenant added to a multi-tenant organization can participate in the multi-tenant organization, the administrator of the joining tenant must submit a join request.
@@ -81,7 +79,7 @@ The following example shows a request by the current tenant to join a multi-tena
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganization/joinRequest
+PATCH https://graph.microsoft.com/v1.0/tenantRelationships/multiTenantOrganization/joinRequest
 Content-Type: application/json
 
 {
@@ -147,7 +145,7 @@ The following example shows a request by the current tenant to reset a failed jo
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganization/joinRequest
+PATCH https://graph.microsoft.com/v1.0/tenantRelationships/multiTenantOrganization/joinRequest
 Content-Type: application/json
 
 {

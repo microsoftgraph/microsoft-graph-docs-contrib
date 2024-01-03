@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Update multiTenantOrganizationPartnerConfigurationTemplate
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Update the cross-tenant access policy template with inbound and outbound partner configuration settings for a multitenant organization.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -73,7 +71,7 @@ The following example configures the inbound trust settings to accept MFA, compl
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/templates/multiTenantOrganizationPartnerConfiguration
+PATCH https://graph.microsoft.com/v1.0/policies/crossTenantAccessPolicy/templates/multiTenantOrganizationPartnerConfiguration
 Content-Type: application/json
 
 {

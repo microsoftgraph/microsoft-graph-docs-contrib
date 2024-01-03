@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Create multiTenantOrganization
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Create a new multi-tenant organization. By default, the creator tenant becomes an owner tenant upon successful creation. Only owner tenants can manage a multi-tenant organization.
 
 To allow for asynchronous processing, you must wait a **minimum of 2 hours** between creation and joining a multi-tenant organization.
@@ -71,7 +69,7 @@ The following example creates a new multi-tenant organization.
 }
 -->
 ``` http
-PUT https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganization
+PUT https://graph.microsoft.com/v1.0/tenantRelationships/multiTenantOrganization
 Content-Type: application/json
 
 {
@@ -103,7 +101,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#tenantRelationships/multiTenantOrganization/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#tenantRelationships/multiTenantOrganization/$entity",
     "id": "6d8b39e5-039a-4034-bf3a-e0b4f8cd60b6",
     "createdDateTime": "2023-05-26T22:05:23Z",
     "displayName": "Contoso organization",

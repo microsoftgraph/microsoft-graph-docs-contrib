@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Update multiTenantOrganizationMember
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Update the properties of a tenant in a multi-tenant organization. Only owner tenants can call this API.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -65,7 +63,7 @@ The following example changes the role of a tenant in a multi-tenant organizatio
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganization/tenant/5036a0a0-a7a4-4933-9086-5dd54535dd6e
+PATCH https://graph.microsoft.com/v1.0/tenantRelationships/multiTenantOrganization/tenant/5036a0a0-a7a4-4933-9086-5dd54535dd6e
 Content-Type: application/json
 
 {

@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Update multiTenantOrganization
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Update the properties of a multi-tenant organization.
 
 ## Permissions
@@ -66,7 +64,7 @@ The following example updates the description and display name for a multi-tenan
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganization
+PATCH https://graph.microsoft.com/v1.0/tenantRelationships/multiTenantOrganization
 Content-Type: application/json
 
 {

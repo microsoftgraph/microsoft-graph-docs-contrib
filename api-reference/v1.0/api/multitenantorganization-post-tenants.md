@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Add multiTenantOrganizationMember
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Add a tenant to a multitenant organization. The administrator of an owner tenant has the permissions to add tenants to the multitenant organization. The added tenant is in the pending state until the administrator of the added tenant joins the multitenant organization by submitting a join request. A tenant can be part of only one multitenant organization.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -69,7 +67,7 @@ The following example adds the Fabrikam tenant to the multitenant organization.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganization/tenants
+POST https://graph.microsoft.com/v1.0/tenantRelationships/multiTenantOrganization/tenants
 Content-Type: application/json
 
 {
@@ -125,7 +123,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#tenantRelationships/multiTenantOrganization/tenants/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#tenantRelationships/multiTenantOrganization/tenants/$entity",
     "tenantId": "4a12efe6-aa14-4d03-8dff-88fc89e2e2ad",
     "displayName": "Fabrikam",
     "addedDateTime": "2023-05-27T19:24:29Z",

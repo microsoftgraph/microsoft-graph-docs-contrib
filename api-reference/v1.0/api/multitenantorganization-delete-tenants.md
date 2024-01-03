@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Remove multiTenantOrganizationMember
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Remove a tenant from a multitenant organization. A tenant can be removed in the following scenarios:
 
 * An active member tenant can remove itself.
@@ -66,7 +64,7 @@ The following example removes a tenant from a multi-tenant organization.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganization/tenants/5036a0a0-a7a4-4933-9086-5dd54535dd6e
+DELETE https://graph.microsoft.com/v1.0/tenantRelationships/multiTenantOrganization/tenants/5036a0a0-a7a4-4933-9086-5dd54535dd6e
 ```
 
 # [C#](#tab/csharp)

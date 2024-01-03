@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Get multiTenantOrganization
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get properties of the multitenant organization.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -62,7 +60,7 @@ The following example gets properties of the multitenant organization.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganization
+GET https://graph.microsoft.com/v1.0/tenantRelationships/multiTenantOrganization
 ```
 
 # [C#](#tab/csharp)
@@ -112,7 +110,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#tenantRelationships/multiTenantOrganization/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#tenantRelationships/multiTenantOrganization/$entity",
     "id": "6d8b39e5-039a-4034-bf3a-e0b4f8cd60b6",
     "createdDateTime": "2023-05-26T22:05:23Z",
     "displayName": "Contoso organization",

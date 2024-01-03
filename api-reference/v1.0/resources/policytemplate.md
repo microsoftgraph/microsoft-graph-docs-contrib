@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents the base policy in the directory for multi-tenant organization settings.
 
 Inherits from [entity](../resources/entity.md).

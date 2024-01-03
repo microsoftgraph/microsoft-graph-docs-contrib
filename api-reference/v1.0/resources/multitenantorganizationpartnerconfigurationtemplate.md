@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Defines an optional cross-tenant access policy template with inbound and outbound partner configuration settings for multitenant organization tenants. Each tenant has its own template. For more information, see [crossTenantAccessPolicyConfigurationPartner resource type](../resources/crosstenantaccesspolicyconfigurationpartner.md).
 
 * If your tenant is joining a multitenant organization, the template is applicable to the partner configuration settings for all multitenant organization tenants.

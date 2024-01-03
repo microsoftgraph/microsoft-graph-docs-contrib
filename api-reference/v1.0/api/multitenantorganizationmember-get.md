@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Get multiTenantOrganizationMember
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get a tenant and its properties in the multi-tenant organization.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -64,7 +62,7 @@ The following example gets a tenant and its properties in the multi-tenant organ
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganization/tenants/1fd6544e-e994-4de2-9f1b-787b51c7d325
+GET https://graph.microsoft.com/v1.0/tenantRelationships/multiTenantOrganization/tenants/1fd6544e-e994-4de2-9f1b-787b51c7d325
 ```
 
 # [C#](#tab/csharp)
@@ -114,7 +112,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#tenantRelationships/multiTenantOrganization/tenants/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#tenantRelationships/multiTenantOrganization/tenants/$entity",
     "tenantId": "1fd6544e-e994-4de2-9f1b-787b51c7d325",
     "displayName": "Contoso",
     "addedDateTime": "2023-05-26T22:05:23Z",
@@ -133,7 +131,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#tenantRelationships/multiTenantOrganization/tenants/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#tenantRelationships/multiTenantOrganization/tenants/$entity",
     "tenantId": "5036a0a0-a7a4-4933-9086-5dd54535dd6e",
     "displayName": "Woodgrove Bank",
     "addedDateTime": "2023-05-27T21:52:40Z",

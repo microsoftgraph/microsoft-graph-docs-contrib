@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Update multiTenantOrganizationIdentitySyncPolicyTemplate
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Update the cross-tenant access policy template with user synchronization settings for a multi-tenant organization.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -67,7 +65,7 @@ The following example updates the user synchronization settings of the template.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/templates/multiTenantOrganizationIdentitySynchronization
+PATCH https://graph.microsoft.com/v1.0/policies/crossTenantAccessPolicy/templates/multiTenantOrganizationIdentitySynchronization
 Content-Type: application/json
 
 {
