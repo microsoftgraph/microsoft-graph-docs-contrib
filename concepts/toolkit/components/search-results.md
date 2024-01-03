@@ -71,7 +71,7 @@ To learn more, see [styling components](../customize-components/style.md).
 
 | Event        | When is it emitted                         | Custom data                                                                                                                                                                              | Cancelable | Bubbles | Works with custom template |
 | ------------ | ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------: | :-----: | :------------------------: |
-| `dataChange` | Fired after the component loaded its data. | `{ response: any, error: any }`. The `response` property contains the response retrieved from Microsoft Graph. The `error` property contains information about the error if one occurred |     No     |   No    |            Yes             |
+| `dataChange` | Fired after the component loaded its data. | `{ response: any, error: any }`. The `response` property contains the response retrieved from Microsoft Graph. The `error` property contains information about the error if one occurred. |     No     |   No    |            Yes             |
 
 For more information about handling events, see [events](../customize-components/events.md).
 
