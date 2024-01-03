@@ -65,7 +65,7 @@ Sections are loaded by default, but they can be disabled globally via the `MgtPe
 | mailMessages        | `boolean` - Indicates whether the person card messages section is shown. Default value is `true`.                                   |
 | files               | `boolean` - Indicates whether the person card files section is shown. Default value is `true`.                                      |
 | profile             | `boolean` - Indicates whether the person card profile section is shown. Default value is `true`.                                    |
-| lock-tab-navigation | `boolean` - Allows the locking of navigation using tabs so that it does not flow out of the card section. Default value is `false`. |
+| lock-tab-navigation | `boolean` - Allows the locking of navigation using tabs so that it doesn't flow out of the card section. Default value is `false`. |
 
 To disable a section, simply set the property to `false` in your app initialization code:
 
@@ -90,7 +90,7 @@ TeamsHelper.microsoftTeamsLib = microsoftTeams;
 
 ## Properties
 
-By default, the `mgt-person` component will pass the person details to the `mgt-person-card` component. However, you can use these attributes to change this when templating the `mgt-person` component or when using the `mgt-person-card` component as a standalone component.
+By default, the `mgt-person` component passes the person details to the `mgt-person-card` component. However, you can use these attributes to change this when templating the `mgt-person` component or when using the `mgt-person-card` component as a standalone component.
 
 | Attribute       | Type                                                                       | Description                                                                                                                                                                      |
 | --------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -259,12 +259,12 @@ import { MgtPersonCard } from `@microsoft/mgt`;
 const neededScopes = MgtPersonCard.getScopes();
 ```
 
-## Components used
+### Subcomponents
 
-This component is composed of other components. These subcomponents might require other permissions than the ones listed for this component. For more information, see each subcomponents documentation.
+The `mgt-person-card` component consists of one or more subcomponents that might require other permissions than the ones listed previously. For more information, see the documentation for each subcomponent:
 
-- [mgt-person](person.md)
 - [mgt-file-list](file-list.md)
+- [mgt-person](person.md)
 
 ## Authentication
 
@@ -273,7 +273,7 @@ The Person-Card control uses the global authentication provider described in the
 ## Cache
 
 > [!IMPORTANT]
-> The `mgt-person-card` component retrieves the basic person data from the parent `mgt-person` component without calling Microsoft Graph. When `mgt-person-card` is used separately, it will retrieve the necessary data itself and cache it. The data displayed in card's sections is retrieved separately and is not cached.
+> The `mgt-person-card` component retrieves the basic person data from the parent `mgt-person` component without calling Microsoft Graph. When `mgt-person-card` is used separately, it will retrieve the necessary data itself and cache it. The data displayed in card's sections is retrieved separately and isn't cached.
 
 | Object store | Cached data               | Remarks                                                                   |
 | ------------ | ------------------------- | ------------------------------------------------------------------------- |
