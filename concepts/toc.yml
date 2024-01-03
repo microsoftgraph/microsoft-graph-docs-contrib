@@ -1052,10 +1052,8 @@ items:
       - name: Change notifications
         items:
           - name: Overview
-            href: webhooks.md
-            displayName: change notifications, rich notifications, basic notifications, subscriptions, webhooks, Azure Event Hubs, Azure Event Grids
-          - name: "Training: Use change notifications"
-            href: /training/modules/msgraph-changenotifications-trackchanges
+            href: change-notifications-overview.md
+            displayName: change notifications, rich notifications, basic notifications, subscriptions, webhooks, Azure Event Hub, Azure Event Grid
           - name: Notifications delivery channels
             items:
               - name: Notifications through webhooks
@@ -1065,9 +1063,9 @@ items:
               - name: Notifications through Azure Event Grid (preview)
                 href: /azure/event-grid/subscribe-to-graph-api-events?context=graph%2Fcontext
           - name: Lifecycle notifications for subscriptions
-            href: webhooks-lifecycle.md
+            href: change-notifications-lifecycle-events.md
           - name: Rich notifications
-            href: webhooks-with-resource-data.md
+            href: change-notifications-with-resource-data.md
           - name: Notifications for cloud printing
             href: universal-print-webhook-notifications.md
           - name: Notifications for Microsoft Teams resources
