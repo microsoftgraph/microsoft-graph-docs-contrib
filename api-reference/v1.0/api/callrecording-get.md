@@ -20,15 +20,14 @@ For a recording, this API returns the metadata of the single recording associate
 > * This is a metered API. For more information, see [payment models for meeting APIs](/graph/teams-licenses#payment-models-for-meeting-apis).
 > * This API works differently in one or more national clouds. For details, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. For more information, including how to choose permissions, see [permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                        |
-|:---------------------------------------|:-------------------------------------------------------------------|
-| Delegated (work or school account)     | OnlineMeetingRecording.Read.All                                    |
-| Delegated (personal Microsoft account) | Not supported.                                                     |
-| Application                            | OnlineMeetingRecording.Read.All, OnlineMeetingRecording.Read.Chat |
+<!-- { "blockType": "permissions", "name": "callrecording_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/callrecording-get-permissions.md)]
 
 > **Notes:**
 >
@@ -119,6 +118,10 @@ GET https://graph.microsoft.com/v1.0/users/b935e675-5e67-48b9-8d45-249d5f88e964/
 [!INCLUDE [sample-code](../includes/snippets/php/get-callrecording-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-callrecording-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-callrecording-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -202,6 +205,10 @@ GET  https://graph.microsoft.com/v1.0/users/b935e675-5e67-48b9-8d45-249d5f88e964
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-callrecording-content-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-callrecording-content-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -26,7 +26,7 @@ This service is available in the following [national cloud deployments](/graph/d
 To access the Microsoft Graph activity logs, you need the following privileges.
 
 - A Microsoft Entra ID P1 or P2 tenant license in your tenant.
-- An administrator with one of the following [Microsoft Entra administrator roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json) listed in the order of least to most privileged role.
+- An administrator with one of the following [Microsoft Entra administrator roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) listed in the order of least to most privileged role.
   - Security Administrator – To configure diagnostic settings
   - Global Administrator – To configure diagnostic settings
 - An Azure subscription with one of the following log destinations are configured, and permissions to access data in the corresponding log destinations.

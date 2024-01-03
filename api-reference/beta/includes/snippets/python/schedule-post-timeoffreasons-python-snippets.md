@@ -10,6 +10,7 @@ graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = TimeOffReason(
 	display_name = "Vacation",
+	code = "VacationCode",
 	icon_type = TimeOffReasonIconType.Plane,
 	is_active = True,
 )

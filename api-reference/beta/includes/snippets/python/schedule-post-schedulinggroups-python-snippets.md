@@ -11,6 +11,7 @@ graph_client = GraphServiceClient(credentials, scopes)
 request_body = SchedulingGroup(
 	display_name = "Cashiers",
 	is_active = True,
+	code = "CashierCode",
 	user_ids = [
 		"c5d0c76b-80c4-481c-be50-923cd8d680a1",
 		"2a4296b3-a28a-44ba-bc66-0274b9b95851",

@@ -2,6 +2,7 @@
 title: "permissionsManagement resource type"
 description: "The base container for the relationships that define the requests for permissions in an authorization system onboarded to Microsoft Entra Permissions Management."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType

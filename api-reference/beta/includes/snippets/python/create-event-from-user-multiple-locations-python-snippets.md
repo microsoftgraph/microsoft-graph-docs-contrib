@@ -67,12 +67,9 @@ request_body = Event(
 	allow_new_time_proposals = True,
 )
 
-request_configuration = EventsRequestBuilder.EventsRequestBuilderPostRequestConfiguration(
-headers = {
-		'Prefer' : "outlook.timezone=\"Pacific Standard Time\"",
-}
+request_configuration = EventsRequestBuilder.EventsRequestBuilderPostRequestConfiguration()
+request_configuration.headers.add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
 
-)
 
 result = await graph_client.me.events.post(request_body, request_configuration = request_configuration)
 

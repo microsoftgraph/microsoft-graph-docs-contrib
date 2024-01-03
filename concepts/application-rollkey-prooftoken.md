@@ -7,6 +7,7 @@ author: "FaithOmbongi"
 ms.author: ombongifaith
 ms.reviewer: saurabh.madan
 ms.date: 06/22/2023
+#customer ntent: As a developer, I want my app to generate proof of possession tokens for rolling keys programmatically, so that I can then use Microsoft Graph to automate the process of rolling keys for applications.
 ---
 
 # Generate proof of possession tokens for rolling keys

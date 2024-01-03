@@ -63,7 +63,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "query",
           "ChangeType": "Addition",
-          "Description": "Added the [query](https://learn.microsoft.com/en-us/graph/api/searchEntity-query?view=graph-rest-1.0) method to the [searchEntity](https://learn.microsoft.com/en-us/graph/api/resources/searchEntity?view=graph-rest-1.0) resource",
+          "Description": "Added the [query](https://learn.microsoft.com/en-us/graph/api/search-query?view=graph-rest-1.0) method to the [searchEntity](https://learn.microsoft.com/en-us/graph/api/resources/searchEntity?view=graph-rest-1.0) resource",
           "Target": "searchEntity"
         }
       ],
@@ -385,7 +385,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "query",
           "ChangeType": "Change",
-          "Description": "Updated the [query](https://learn.microsoft.com/en-us/graph/api/query?view=graph-rest-beta) method to return a collection of [searchResponse](https://learn.microsoft.com/en-us/graph/api/resources/searchresponse?view=graph-rest-beta) objects.",
+          "Description": "Updated the [query](https://learn.microsoft.com/en-us/graph/api/search-query?view=graph-rest-beta) method to return a collection of [searchResponse](https://learn.microsoft.com/en-us/graph/api/resources/searchresponse?view=graph-rest-beta) objects.",
           "Target": "query"
         }
       ],
