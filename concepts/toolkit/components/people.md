@@ -95,7 +95,7 @@ The following examples show how to use the `person` template.
 
 ## Microsoft Graph permissions
 
-This component uses the following Microsoft Graph APIs and permissions:
+This component uses the following Microsoft Graph APIs and permissions.
 
 | Configuration         | Permission                        | API                                                                                         |
 | --------------------- | --------------------------------- | ------------------------------------------------------------------------------------------- |
@@ -106,11 +106,9 @@ This component uses the following Microsoft Graph APIs and permissions:
 | default configuration | People.Read                       | [/me/people](/graph/api/user-list-people)                                                   |
 | `showPresence` set    | Presence.Read.All                 | [/communications/getPresencesByUserId](/graph/api/cloudcommunications-getpresencesbyuserid) |
 
-## Components used
+### Subcomponents
 
-This component is composed of other components. These subcomponents might require other permissions than the ones listed for this component. For more information, see each subcomponents documentation.
-
-- [mgt-person](person.md)
+The `mgt-people` component consists of one or more subcomponents that might require other permissions than the ones listed previously. For more information, see the documentation for each subcomponent: [mgt-person](person.md).
 
 ## Authentication
 
