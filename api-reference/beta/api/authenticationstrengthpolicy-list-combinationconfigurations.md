@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) objects for an [authentication strength policy](../resources/authenticationstrengthpolicy.md). authenticationCombinationConfiguration represents requirements placed on specific authentication method combinations that require specified variants of those authentication methods to be used when authenticating. Both [fido2combinationConfigurations](../resources/fido2combinationconfiguration.md) objects are supported and CBA.
+Get the [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) objects for an [authentication strength policy](../resources/authenticationstrengthpolicy.md). authenticationCombinationConfiguration represents requirements placed on specific authentication method combinations that require specified variants of those authentication methods to be used when authenticating. Both [fido2combinationConfigurations](../resources/fido2combinationconfiguration.md) and [x509certificatecombinationconfiguration](../resources/x509certificatecombinationconfiguration.md) objects are supported.
 
 authenticationCombinationConfiguration objects are supported only for custom authentication strengths.
 
