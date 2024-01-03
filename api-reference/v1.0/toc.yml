@@ -287,7 +287,7 @@ items:
             href: /graph/toolkit/components/teams-channel-picker?context=graph/api/1.0
           - name: Theme toggle
             href: /graph/toolkit/components/theme-toggle?context=graph/api/1.0
-          - name: To-do tasks
+          - name: To Do tasks
             href: /graph/toolkit/components/todo?context=graph/api/1.0
       - name: Customize components
         items:
