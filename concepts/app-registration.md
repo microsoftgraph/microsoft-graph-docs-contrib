@@ -98,7 +98,7 @@ The last step in the wizard shows a summary page for you to review the specified
 ![Graphic showing datasets selection for app registration while running the Data Connect app registration wizard.](images/app-registration-create-review.png)
 
 > [!IMPORTANT]
-> If you previously selected Microsoft Fabric as the compute type, a resource of type *Microsoft.GraphServices* and name *mgdc-<your_app_id>* is registered under the selected subscription and resource group. This resource is used fo billing. For more information about how to enable the **Microsoft.GraphServices** resource provider, see [Resource Providers](/azure/azure-resource-manager/management/resource-providers-and-types).
+> If you previously selected Microsoft Fabric as the compute type, a resource of type *Microsoft.GraphServices* and name *mgdc-<your_app_id>* is registered under the selected subscription and resource group. This resource is used for billing. For more information about how to enable the **Microsoft.GraphServices** resource provider, see [Resource Providers](/azure/azure-resource-manager/management/resource-providers-and-types).
 
 ### View app registration details
 
