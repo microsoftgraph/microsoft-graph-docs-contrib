@@ -140,11 +140,9 @@ This component uses the following Microsoft Graph APIs and permissions:
 
 The component allows you to specify a different Microsoft Graph query to call (such as `/groups/{id}/calendar/calendarView`). In this case, append the permission to the end of the string, delimited by `|`.
 
-## Components used
+### Subcomponents
 
-This component is composed of other components. These subcomponents might require other permissions than the ones listed for this component. For more information, see each subcomponents documentation.
-
-- [mgt-people](people.md)
+This component consists of one or more subcomponents that might require other permissions than the ones listed for the main component. For more information, see the documentation for each subcomponent: [mgt-people](people.md).
 
 ## Authentication
 
