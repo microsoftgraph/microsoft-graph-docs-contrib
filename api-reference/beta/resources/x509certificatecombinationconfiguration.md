@@ -1,11 +1,13 @@
 ---
 title: "x509CertificateCombinationConfiguration resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Configuration to require a specific certificate in an authentication strength"
+author: "InbarckMS"
+ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
-doc_type: resourcePageType
+ms.prod: "identity-and-sign-in"
+doc_type: apiPageType
 ---
+
 
 # x509CertificateCombinationConfiguration resource type
 
