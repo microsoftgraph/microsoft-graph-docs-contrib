@@ -1,6 +1,6 @@
 ---
 title: "To Do component in Microsoft Graph Toolkit"
-description: "The To Do component enables the user to view, add, remove, complete, or edit todo tasks. It works with any tasks in Microsoft To-Do."
+description: "The To Do component enables the user to view, add, remove, complete, or edit todo tasks. It works with any tasks in Microsoft To Do."
 ms.localizationpriority: medium
 author: sebastienlevert
 ---
@@ -80,8 +80,8 @@ The `todo` component supports several [templates](../customize-components/templa
 
 | Data type     | Data context              | Description                                                       |
 | ---------     | ------------------------- | ----------------------------------------------------------------- |
-| task     | task: a to-do task object | Replaces the whole default task. |
-| task-details | task: a to-do task object | Template replaces the details section of the task. |
+| task     | task: a To Do task object | Replaces the whole default task. |
+| task-details | task: a To Do task object | Template replaces the details section of the task. |
 
 The following example defines a template for the tasks component.
 
