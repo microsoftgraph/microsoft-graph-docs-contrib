@@ -76,7 +76,7 @@ If you select SQL for **Storage Account**, the **Uri** project detail field is d
 ![Screenshot of the registration page for adding applications on Data Connect, including fields related to Lakehouse and its workspace.](images/app-registration-create-registration-info-including-lakehouse-workspace.png)
 
 > [!IMPORTANT]
-> If you select Microsoft Fabric as the compute type, you will need to register a **Microsoft.GraphServices** resource provider for the selected Azure subscription. The selected subscription and resource group will be used for billing. For more information, see [Resource Providers](/azure/azure-resource-manager/management/resource-providers-and-types).
+> If you select Microsoft Fabric as the compute type, you need to register a **Microsoft.GraphServices** resource provider for the selected Azure subscription. The selected subscription and resource group is used for billing. For more information, see [Resource Providers](/azure/azure-resource-manager/management/resource-providers-and-types).
 
 #### Datasets
 
@@ -98,7 +98,7 @@ The last step in the wizard shows a summary page for you to review the specified
 ![Graphic showing datasets selection for app registration while running the Data Connect app registration wizard.](images/app-registration-create-review.png)
 
 > [!IMPORTANT]
-> If you previously selected Microsoft Fabric as the compute type, we will register a resource of type *Microsoft.GraphServices* and name *mgdc-<your_app_id>* under the selected subscription and resource group. This resource will be used fo billing. For more information on how to enable **Microsoft.GraphServices** resource provider, see [Resource Providers](/azure/azure-resource-manager/management/resource-providers-and-types).
+> If you previously selected Microsoft Fabric as the compute type, a resource of type *Microsoft.GraphServices* and name *mgdc-<your_app_id>* is registered under the selected subscription and resource group. This resource is used fo billing. For more information about how to enable the **Microsoft.GraphServices** resource provider, see [Resource Providers](/azure/azure-resource-manager/management/resource-providers-and-types).
 
 ### View app registration details
 
@@ -115,7 +115,7 @@ Access update functionality from the individual app overview page. Either the ap
 ![Screenshot of the app registration Update Datasets page.](images/app-registration-details-datasets-update.png)
 
 > [!IMPORTANT]
-> For Microsoft Fabric compute type, we will register a resource of type *Microsoft.GraphServices* and name *mgdc-<your_app_id>* under the selected subscription and resource group, if not created previously.
+> For Microsoft Fabric compute type, a resource of type *Microsoft.GraphServices* and name *mgdc-<your_app_id>* is registered under the selected subscription and resource group, if it wasn't created previously.
 
 #### Delete an app registration entry
 
