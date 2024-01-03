@@ -39,6 +39,8 @@ Create and get a Viva Engage community that is a central place for conversations
 - [Poll for community creation status](/graph/api/engagementasyncoperation-get?view=graph-rest-beta&preserve-view=true)
 - [Get a community](/graph/api/community-get?view=graph-rest-beta&preserve-view=true)
 
+_See the [related changelog section](https://developer.microsoft.com/graph/changelog/?search=6ef521a9-141c-48fe-a109-1082be3fb5b3)_.
+
 ### Identity and access | Identity and sign-in
 
 - Customize user authentication experiences in Microsoft Entra External ID for customers by configuring actions to run before or after you collect attributes from a user. You can configure the following Microsoft Graph entities:
