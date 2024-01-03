@@ -134,6 +134,7 @@ The following example shows a request.
 ```http
 PUT https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
 Content-type: application/json
+
 {
     "directories": [
         {
