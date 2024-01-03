@@ -35,7 +35,7 @@ The following example displays the signed-in user's Microsoft Planner tasks usin
 | -                                 | isNewTaskVisible | Determines whether new task view is visible at render.                                                 |
 | -                                 | taskFilter       | An optional function to filter which tasks are shown to the user.                                      |
 
-The following example shows only tasks from Planner with ID _12345_ and does not allow the user to create new tasks.
+The following example shows only tasks from Planner with ID _12345_ and doesn't allow the user to create new tasks.
 
 ```html
 <mgt-tasks read-only initial-id="12345"></mgt-tasks>
@@ -192,6 +192,13 @@ This control uses the following Microsoft Graph APIs and permissions.
 | `addTask` set to `true` and `dataSource` set to `TasksSource.todo`            | Tasks.ReadWrite     | [/me/outlook/taskFolders/${parentFolderId}/tasks](/graph/api/outlookuser-post-tasks?view=graph-rest-beta&preserve-view=true&tabs=csharp)                                                                                                                                                                                                                                                                                               |
 
 For the Microsoft Planner data source, fetching and reading tasks requires the Groups.Read.All permission. Adding, updating, or removing tasks requires the Groups.ReadWrite.All permission.
+
+### Subcomponents
+
+The `mgt-tasks` component consists of one or more subcomponents that might require other permissions than the ones listed previously. For more information, see the documentation for each subcomponent: 
+
+- [mgt-people](people.md)
+- [mgt-people-picker](people-picker.md)
 
 ## Authentication
 

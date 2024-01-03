@@ -132,7 +132,7 @@ For more information about handling events, see [events](../customize-components
 
 ## Microsoft Graph permissions
 
-This component uses the following Microsoft Graph APIs and permissions:
+This component uses the following Microsoft Graph APIs and permissions.
 
 | Configuration | Permission     | API                                                       |
 | ------------- | -------------- | --------------------------------------------------------- |
@@ -140,7 +140,9 @@ This component uses the following Microsoft Graph APIs and permissions:
 
 The component allows you to specify a different Microsoft Graph query to call (such as `/groups/{id}/calendar/calendarView`). In this case, append the permission to the end of the string, delimited by `|`.
 
-When using the default template and default `renderAttendees` template, additional APIs and permissions are required. The default template for this component uses a [mgt-people](people.md) component for events that have attendees, and inherits all permissions.
+### Subcomponents
+
+The `mgt-agenda` component consists of one or more subcomponents that might require other permissions than the ones listed previously. For more information, see the documentation for each subcomponent: [mgt-people](people.md).
 
 ## Authentication
 

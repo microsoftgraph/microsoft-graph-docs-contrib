@@ -24,8 +24,8 @@ You can use several properties to customize the component.
 | Attribute                | Property               | Description                                                                                                                                                               |
 | ------------------------ | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | file-list-query          | fileListQuery          | The full query or path to the drive or site that contains the list of files to render.                                                                                    |
-| file-queries             | fileQueries            | An array of file queries to be rendered by the component.                                                                                                                 |
-| -                        | files                  | An array of files to get or set the list of files rendered by the component. Use this to access the files loaded by the component. Set this value to load your own files. |
+| file-queries             | fileQueries            | An array of file queries rendered by the component.                                                                                                                 |
+| -                        | files                  | An array of files to get or set the list of files rendered by the component. Use this property to access the files loaded by the component. Set this value to load your own files. |
 | insight-type             | insightType            | Set to show the user’s trending, used, or shared files.                                                                                                                   |
 | drive-id                 | driveId                | ID of the drive the folder belongs to. Must also provide either `item-id` or `item-path`.                                                                                 |
 | group-id                 | groupId                | ID of the group the folder belongs to. Must also provide either `item-id` or `item-path`.                                                                                 |
@@ -50,13 +50,13 @@ The following example changes the behavior of the component to fetch a file list
 ></mgt-file-list>
 ```
 
-The following example changes the behavior of the component to fetch a file list from a folder by providing the folder id.
+The following example changes the behavior of the component to fetch a file list from a folder by providing the folder ID.
 
 ```html
 <mgt-file-list item-id="01BYE5RZYJ43UXGBP23BBIFPISHHMCDTOY"></mgt-file-list>
 ```
 
-The following example changes the behavior of the component to fetch file list from a group by providing the group id and folder path.
+The following example changes the behavior of the component to fetch file list from a group by providing the group ID and folder path.
 
 ```html
 <mgt-file-list
@@ -65,7 +65,7 @@ The following example changes the behavior of the component to fetch file list f
 ></mgt-file-list>
 ```
 
-The following example changes the behavior of the component to fetch file list from a user by providing the user id and folder id.
+The following example changes the behavior of the component to fetch file list from a user by providing the user ID and folder ID.
 
 ```html
 <mgt-file-list
@@ -205,7 +205,42 @@ document.getElementById("reload-btn").addEventListener("click", () => {
 });
 ```
 
-## Microsoft Graph APIs and permissions
+## Events
+
+| Event       | When is it emitted                  | Custom data                                     | Cancelable | Bubbles |     Works with custom template        |
+| ----------- | ----------------------------------- | ----------------------------------------------- | ---------- | ------- | ------------------------------------- |
+| `itemClick` | Fired when the user selects a file. | Selected [file](/graph/api/resources/driveItem) |     No     |   No    | Yes, with a custom **file** template. |
+
+For more information about handling events, see [events](../customize-components/events.md).
+
+## Templates
+
+The `mgt-file-list` component supports many [templates](../customize-components/templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` value to one of the data types listed in the following table.
+
+| Data type | Data context                  | Description                                                       |
+| --------- | ----------------------------- | ----------------------------------------------------------------- |
+| default   | `files`: list of file objects | The default template replaces the entire component with your own. |
+| file      | `file`: file object           | The template used to render each file.                            |
+| no-data   | No data context is passed     | The template used when no data is available.                      |
+| loading   | No data context is passed     | The template used while the component loads state.                |
+
+### Template usage example
+
+```html
+<mgt-file-list insight-type="shared">
+  <template data-type="loading">
+    <p>Getting files</p>
+  </template>
+  <template data-type="no-data">
+    <p>No files found</p>
+  </template>
+  <template data-type="file">
+    <p>File name{{file.name}}</p>
+  </template>
+</mgt-file-list>
+```
+
+## Microsoft Graph permissions
 
 | Configuration                                                      | Permissions                                                                                           | API                                                                                                                                                                                                                        |
 | ------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -238,40 +273,9 @@ document.getElementById("reload-btn").addEventListener("click", () => {
 | `insight-type` is set to shared                                    | Sites.Read.All                                                                                        | `GET /me/insights/shared`                                                                                                                                                                                                  |
 | Provide `{user-id or upn}` AND `insight-type` is set to `shared`   | Sites.Read.All                                                                                        | `GET /users/{id or userPrincipalName}/insights/shared?$filter=((lastshared/sharedby/id eq '${user-id}') and (resourceReference/type eq 'microsoft.graph.driveItem'))`                                                      |
 
-## Events
+### Subcomponents
 
-| Event       | When is it emitted                 | Custom data                                     | Cancelable | Bubbles |     Works with custom template     |
-| ----------- | ---------------------------------- | ----------------------------------------------- | :--------: | :-----: | :--------------------------------: |
-| `itemClick` | Fired when the user clicks a file. | Selected [file](/graph/api/resources/driveItem) |     No     |   No    | Yes, with custom **file** template |
-
-For more information about handling events, see [events](../customize-components/events.md).
-
-## Templates
-
-The `mgt-file-list` component supports several [templates](../customize-components/templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` value to one of the data types listed in the following table.
-
-| Data type | Data context                  | Description                                                       |
-| --------- | ----------------------------- | ----------------------------------------------------------------- |
-| default   | `files`: list of file objects | The default template replaces the entire component with your own. |
-| file      | `file`: file object           | The template used to render each file.                            |
-| no-data   | No data context is passed     | The template used when no data is available.                      |
-| loading   | No data context is passed     | The template used while the component loads state.                |
-
-### Template usage example
-
-```html
-<mgt-file-list insight-type="shared">
-  <template data-type="loading">
-    <p>Getting files</p>
-  </template>
-  <template data-type="no-data">
-    <p>No files found</p>
-  </template>
-  <template data-type="file">
-    <p>File name{{file.name}}</p>
-  </template>
-</mgt-file-list>
-```
+The `mgt-file-list` component consists of one or more subcomponents that might require other permissions than the ones listed previously. For more information, see the documentation for each subcomponent: [mgt-file](file.md).
 
 ## Authentication
 
