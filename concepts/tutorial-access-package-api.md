@@ -7,6 +7,7 @@ ms.reviewer: Mark.Wahl
 ms.localizationpriority: medium
 ms.prod: "governance"
 ms.date: 11/01/2022
+#Customer intent: As a developer integrating with Microsoft Graph, I want to understand how to use entitlement management APIs to manage access to resources.
 ---
 
 # Manage access to resources using the entitlement management APIs in Microsoft Graph
@@ -21,9 +22,9 @@ In this tutorial, you learn how to develop code to create a package of resources
 ## Prerequisites
 
 To successfully complete this tutorial, make sure that you have the required prerequisites:
-- Microsoft Entra entitlement management requires specific licenses. For more information, see [License requirements](/azure/active-directory/governance/entitlement-management-overview#license-requirements). The following licenses are required in your tenant:
+- Microsoft Entra entitlement management requires specific licenses. For more information, see [License requirements](/azure/active-directory/governance/entitlement-management-overview#license-requirements). For this tutorial, one of the following licenses is required in your tenant:
     - Microsoft Entra ID P2
-    - Enterprise Mobility + Security (EMS) E5 license
+    - Microsoft Entra ID Governance
 - Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Global Administrator role.
 - Grant yourself the following delegated permissions: `User.ReadWrite.All`, `Group.ReadWrite.All`, and `EntitlementManagement.ReadWrite.All`.
 

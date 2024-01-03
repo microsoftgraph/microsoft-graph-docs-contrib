@@ -3,6 +3,7 @@ title: "Microsoft Graph throttling guidance"
 description: "Find best practices for maintaining optimal performance of the Microsoft Graph service if an overwhelming number of requests occurs."
 ms.localizationpriority: high
 ms.custom: graphiamtop20
+#Customer intent: As a developer integrating with Microsoft Graph, I want to understand how to avoid throttling and how to handle throttling when it occurs.
 ---
 
 # Microsoft Graph throttling guidance
@@ -84,7 +85,7 @@ For a broader discussion of throttling in the Microsoft Cloud, see [Throttling p
 
 ## Best practices to avoid throttling
 
-Programming patterns like continuously polling a resource to check for updates and regularly scanning resource collections to check for new or deleted resources are more likely to lead to applications being throttled and degrade overall performances. You should instead leverage [change tracking](delta-query-overview.md) and [change notifications](webhooks.md) when available.
+Programming patterns like continuously polling a resource to check for updates and regularly scanning resource collections to check for new or deleted resources are more likely to lead to applications being throttled and degrade overall performances. You should instead leverage [change tracking](delta-query-overview.md) and [change notifications](change-notifications-overview.md) when available.
 
 >[!NOTE]
 >[Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance) describes best practices in details.
