@@ -7,9 +7,9 @@ author: sebastienlevert
 
 # People component in Microsoft Graph Toolkit
 
-You can use the `mgt-people` web component to display a group of people or contacts by using their photos or initials. By default, it will display the most frequent contacts for the signed in user.
+You can use the `mgt-people` web component to display a group of people or contacts by using their photos or initials. By default, it displays the most frequent contacts for the signed in user.
 
-This component uses multiple [mgt-person](./person.md) controls, but it can be bound to a set of people descriptors. If there are more people to display than the `show-max` value, a number will be added to indicate the number of additional contacts.
+This component uses multiple [mgt-person](./person.md) controls, but it can be bound to a set of people descriptors. If there are more people to display than the `show-max` value, a number is added to indicate the number of other contacts.
 
 ## Example
 
@@ -27,14 +27,14 @@ By default, the `mgt-people` component fetches events from the `/me/people` endp
 | ---------------- | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | show-max         | showMax               | Indicates the maximum number of people to show. Default value is 3.                                                                                                    |
 | people           | people                | An array of Microsoft Graph person objects. Use this property to access the people loaded by the component. Set this value to load your own people onto the component. |
-| group-id         | groupId               | The ID of a Microsoft Graph AAD group. This is used to retrieve the direct members of the group. This is optional.                                                     |
-| user-ids         | userIds               | An array of user IDs to display. This is optional.                                                                                                                     |
+| group-id         | groupId               | The ID of a Microsoft Entra ID group. This property is used to retrieve the direct members of the group. This property is optional.                                                     |
+| user-ids         | userIds               | An array of user IDs to display. This property is optional.                                                                                                                     |
 | people-queries   | peopleQueries         | Microsoft Graph queries for customizing the people query response.                                                                                                     |
-| person-card      | personCardInteraction | Sets the behaviour to show the person card on a rendered person. Default value is set to show the person card on hover(PersonCardInteraction.hover).                   |
+| person-card      | personCardInteraction | Sets the behavior to show the person card on a rendered person. Default value is set to show the person card on hover(PersonCardInteraction.hover).                   |
 | show-presence    | showPresence          | Determines if a person component should render the presence badge. Default value is false.                                                                             |
 | resource         | resource              | The resource URL to get from Microsoft Graph (for example, `/me/people`).                                                                                              |
-| scopes           | scopes                | A comma delimited string with permissions to be granted to the component. This is optional.                                                                            |
-| version          | version               | The API version to use when making the GET request. Default value is `v1.0`.                                                                                           |
+| scopes           | scopes                | A comma delimited string with permissions to be granted to the component. This property is optional.                                                                            |
+| version          | version               | The API version to use when making the request. Default value is `v1.0`.                                                                                           |
 | fallback-details | fallbackDetails       | Array of Microsoft Graph person objects representing a person or multiple people when no user/person/contact is found in the graph.                                    |
 
 The following example sets the maximum number of people to show.
@@ -76,7 +76,7 @@ The `mgt-people` supports several [templates](../customize-components/templates.
 | `no-data`  | No data context is passed                                                                                | The template used when no data is available.                                              |
 | `loading`  | No data context is passed                                                                                | The template used while the component loads state.                                        |
 
-The following examples shows how to use the `person` template.
+The following examples show how to use the `person` template.
 
 ```html
 <mgt-people>
@@ -95,7 +95,7 @@ The following examples shows how to use the `person` template.
 
 ## Microsoft Graph permissions
 
-This component uses the following Microsoft Graph APIs and permissions:
+This component uses the following Microsoft Graph APIs and permissions.
 
 | Configuration         | Permission                        | API                                                                                         |
 | --------------------- | --------------------------------- | ------------------------------------------------------------------------------------------- |
@@ -106,7 +106,9 @@ This component uses the following Microsoft Graph APIs and permissions:
 | default configuration | People.Read                       | [/me/people](/graph/api/user-list-people)                                                   |
 | `showPresence` set    | Presence.Read.All                 | [/communications/getPresencesByUserId](/graph/api/cloudcommunications-getpresencesbyuserid) |
 
-When using the default templates, additional APIs and permissions are required. The default template for this component uses a [mgt-person](person.md) component. See its documentation for the list of required permissions.
+### Subcomponents
+
+The `mgt-people` component consists of one or more subcomponents that might require other permissions than the ones listed previously. For more information, see the documentation for each subcomponent: [mgt-person](person.md).
 
 ## Authentication
 
@@ -139,4 +141,4 @@ For more complex scenarios or a truly custom UX, this component exposes several 
 
 ## Localization
 
-The control does not expose any localization variables.
+The control doesn't expose any localization variables.
