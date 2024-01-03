@@ -27,6 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                                                                                    |
 | Application                            | UserTeamwork.Read.All                                                                            |
 
+[!INCLUDE [supported-regions](../../includes/teamwork-supported-regions.md)]
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
