@@ -17,11 +17,6 @@ Represents a unit of scheduled work in a [schedule](schedule.md).
 
 The duration of a shift can't be less than 1 minute or longer than 24 hours.
 
-When you replace a shift, the **sharedShift** property is visible to all team members, but the **draftShift** property is only visible to team owners. It would need to be shared with team members for visibility. Sharing changes to the **draftShift** property copies those changes to the **sharedShift** property.
-
-You can't update the **sharedShift** property if you're updating the **draftShift** property. The **draftShift** property must be empty to update the **sharedShift** property.
-
-Updates to the **sharedShift** property send notifications to users in the Teams client. To streamline the user experience, update the **draftShift** property and then use the [schedule share](/graph/api/schedule-share) API to publish all pending changes within a date range as a single action.
 Inherits from [changeTrackedEntity](../resources/changetrackedentity.md).
 
 ## Methods
@@ -41,13 +36,13 @@ Inherits from [changeTrackedEntity](../resources/changetrackedentity.md).
 | -------------------- | ----------------------------- | ----------- |
 | createdBy             | [identitySet](identityset.md)     | Identity of the user who created the **shift** object. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md). |
 | createdDateTime      | DateTimeOffset              | The timestamp on which this **shift** was first created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md). |
-| draftShift           | [shiftItem](shiftitem.md)     | Draft changes in the **shift** are only visible to managers until they are [shared](../api/schedule-share.md). |
+| draftShift           | [shiftItem](shiftitem.md)     | Draft changes in the **shift** are only visible to managers until they are [shared](../api/schedule-share.md). It would need to be shared with team members for visibility. Sharing changes to the **draftShift** property copies those changes to the **sharedShift** property. You can't update the **sharedShift** property if you're updating the **draftShift** property. The **draftShift** property must be empty to update the **sharedShift** property. To streamline the user experience, update the **draftShift** property and then use the [schedule share](/graph/api/schedule-share) API to publish all pending changes within a date range as a single action.|
 | id                   | String                      | The unique identifier for the **shift**. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md). |
 | isStagedForDeletion   | Boolean                           | The **shift** is marked for deletion, a process that is finalized when the schedule is [shared](../api/schedule-share.md). |
 | lastModifiedBy       | [identitySet](identityset.md) | The identity of the user who last updated this **shift**. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md). |
 | lastModifiedDateTime | DateTimeOffset              | The timestamp on which this **shift** was last updated. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md). |
 | schedulingGroupId    | String                      | ID of the scheduling group the **shift** is part of. Required. |
-| sharedShift          | [shiftItem](shiftitem.md)     | The shared version of this **shift** that is viewable by both employees and managers. |
+| sharedShift          | [shiftItem](shiftitem.md)     | The shared version of this **shift** that is viewable by both employees and managers. You can't update the **sharedShift** property if you're updating the **draftShift** property. Updates to the **sharedShift** property send notifications to users in the Teams client.|
 | userId               | String                      | ID of the user assigned to the **shift**. Required. |
 
 ## JSON representation

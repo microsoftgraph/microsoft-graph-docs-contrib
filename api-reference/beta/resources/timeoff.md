@@ -17,12 +17,6 @@ Represents a unit of nonwork in a [schedule](../resources/schedule.md).
 
 Inherits from [changeTrackedEntity](../resources/changetrackedentity.md).
 
-When you replace a shift, the **sharedTimeOff** property is visible to all team members, but the **draftTimeOff** property is only visible to team owners and would need to be shared with team members for visibility. Sharing changes to the **draftTimeOff** property copies those changes to the **sharedTimeOff** property.
-
-You can't update the **sharedTimeOff** property if you're updating the **draftTimeOff** property. The **draftTimeOff** property must be empty to update the **sharedTimeOff** property.
-
-Updates to the **sharedTimeOff** property send notifications to users in the Teams client. To streamline the user experience, update the **draftTimeOff** property and then use the [schedule share](/graph/api/schedule-share) API to publish all pending changes within a date range as a single action.
-
 ## Methods
 
 | Method                                     | Return type                      | Description                                           |
@@ -40,12 +34,12 @@ Updates to the **sharedTimeOff** property send notifications to users in the Tea
 |:---------------------|:------------------------------|:----------------------------|
 | createdBy             | [identitySet](identityset.md)     | Identity of the user who created the **timeOff** object. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md). |
 | createdDateTime      | DateTimeOffset                | The date and time when this **timeOff** was first created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md). |
-| draftTimeOff         | [timeOffItem](timeoffitem.md) | Draft changes in the **timeOff** are only visible to managers until they're [shared](../api/schedule-share.md).|
+| draftTimeOff		| [timeOffItem](timeoffitem.md)        |The draft version of this **timeOff** that is viewable by managers. It would need to be shared with team members for visibility. Sharing changes to the **draftTimeOff** property copies those changes to the **sharedTimeOff** property. The **draftTimeOff** property must be empty in order to update the **sharedTimeOff** property. To streamline the user experience, update the **draftTimeOff** property, and then use the [schedule share](/graph/api/schedule-share) API to publish all pending changes within a date range as a single action. Required.|
 | id                   | String                        | The unique identifier for the **timeOff**. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md). |
 | isStagedForDeletion   | Boolean                      | The **timeOff** is marked for deletion, a process that is finalized when the schedule is [shared](../api/schedule-share.md).     |
 | lastModifiedBy       | [identitySet](identityset.md) | The identity of the user who last updated this **timeOff**. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md). |
 | lastModifiedDateTime | DateTimeOffset                | The date and time when this **timeOff** was last updated. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md). |
-| sharedTimeOff        | [timeOffItem](timeoffitem.md) | The shared version of this **timeOff** that is viewable by both employees and managers. |
+| sharedTimeOff 	| [timeOffItem](timeoffitem.md)  |The shared version of this **timeOff** that is viewable by both employees and managers. You can't update the **sharedTimeOff** property if you're updating the **draftTimeOff** property. Updates to the **sharedTimeOff** property send notifications to users in the Teams client. Required.|
 | userId               | String                        | ID of the user assigned to the **timeOff**. Required. |
 
 ## JSON representation
