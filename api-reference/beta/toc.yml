@@ -1,6 +1,9 @@
 items:
   - name: Overview of Microsoft Graph
     href: /graph/overview
+  - name: API changelog
+    href: https://developer.microsoft.com/en-us/graph/changelog
+    displayName: API changes, API updates, Microsoft Graph API, REST API, REST API updates
   - name: Authentication and authorization
     items:
       - name: Overview
@@ -24,7 +27,7 @@ items:
             href: /graph/permissions-reference?context=graph/api/beta
           - name: Microsoft Entra built-in roles
             displayName: Microsoft Graph permissions
-            href: /azure/active-directory/roles/permissions-reference?toc=/graph/toc.json
+            href: /entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json
       - name: Manage app access (CSPs)
         href: /graph/auth-cloudsolutionprovider?context=graph/api/beta
       - name: Limit mailbox access
@@ -74,7 +77,7 @@ items:
             href: /training/modules/optimize-network-traffic
       - name: Change notifications
         displayName: change notifications, rich notifications, basic notifications, subscriptions, webhooks, Azure Event Hubs, Azure Event Grids
-        href: /graph/webhooks?context=graph/api/beta
+        href: /graph/change-notifications-overview?context=graph/api/beta
       - name: Change tracking
         displayName: delta query
         href: /graph/delta-query-overview?context=graph/api/beta
@@ -706,7 +709,7 @@ items:
                 href: api/userteamwork-get-installedapps.md
               - name: List apps for user
                 href: api/userteamwork-list-installedapps.md
-              - name: List permission grants for user (preview)
+              - name: List permission grants for user
                 href: api/user-list-permissiongrants.md
               - name: Remove app for user
                 href: api/userteamwork-delete-installedapps.md
@@ -1655,7 +1658,7 @@ items:
         items:
           - name: Overview
             displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
-            href: resources/webhooks.md
+            href: resources/change-notifications-api-overview.md
           - name: Subscription
             items:
               - name: Subscription
@@ -10618,6 +10621,18 @@ items:
                     href: api/windowsupdates-updatepolicy-update.md
                   - name: Delete
                     href: api/windowsupdates-updatepolicy-delete.md
+          - name: Microsoft 365 apps (preview)
+            displayName: Microsoft 365 applications
+            items:
+              - name: Admin Microsoft 365 apps
+                href: resources/adminmicrosoft365apps.md
+              - name: Installation options
+                href: resources/m365appsInstallationoptions.md
+                items:
+                  - name: Get
+                    href: api/m365AppsInstallationOptions-get.md
+                  - name: Update
+                    href: api/m365AppsInstallationOptions-update.md
           - name: Multi-tenant management (preview)
             items:
               - name: Managed tenant
@@ -11149,6 +11164,37 @@ items:
             items:
               - name: Get
                 href: api/educationsynchronizationerrors-get.md
+      - name: Employee experience
+        displayName: Viva
+        items:
+          - name: Employee engagement (preview)
+            displayName: Viva Engage
+            items:
+              - name: Overview
+                href: resources/engagement-api-overview.md
+              - name: Community
+                href: resources/community.md
+                items:
+                  - name: Create
+                    href: api/employeeexperience-post-communities.md
+                  - name: Get
+                    href: api/community-get.md
+              - name: Engagement async operation
+                href: resources/engagementasyncoperation.md
+                items:
+                  - name: Get
+                    href: api/engagementasyncoperation-get.md
+          - name: Employee goals (preview)
+            items:
+            - name: Goals export job
+              href: resources/goalsexportjob.md
+              items:
+              - name: List
+                href: api/goals-list-exportjobs.md
+              - name: Create
+                href: api/goals-post-exportjobs.md
+              - name: Get
+                href: api/goalsexportjob-get.md
       - name: Extensions
         items:
           - name: Overview
@@ -11389,6 +11435,39 @@ items:
                 href: api/permission-update.md
               - name: Delete permission
                 href: api/permission-delete.md
+          - name: File storage containers
+            href: resources/filestoragecontainer.md
+            items:
+              - name: List file storage containers
+                href: api/filestorage-list-containers.md
+              - name: Create file storage container
+                href: api/filestoragecontainer-post.md
+              - name: Get file storage container
+                href: api/filestoragecontainer-get.md
+              - name: Get drive
+                href: api/filestoragecontainer-get-drive.md
+              - name: Update file storage containers
+                href: api/filestoragecontainer-update.md
+              - name: Delete file storage container
+                href: api/filestorage-delete-containers.md
+              - name: Activate file storage container
+                href: api/filestoragecontainer-activate.md
+              - name: List permissions
+                href: api/filestoragecontainer-list-permissions.md
+              - name: Add permissions
+                href: api/filestoragecontainer-post-permissions.md
+              - name: Update permissions
+                href: api/filestoragecontainer-update-permissions.md
+              - name: Delete permissions
+                href: api/filestoragecontainer-delete-permissions.md
+              - name: List custom property
+                href: api/filestoragecontainer-list-customproperty.md
+              - name: Add custom property
+                href: api/filestoragecontainer-post-customproperty.md
+              - name: Update custom property
+                href: api/filestoragecontainer-update-customproperty.md
+              - name: Delete custom property
+                href: api/filestoragecontainer-delete-customproperty.md
       - name: Financials (preview)
         items:
           - name: Overview
@@ -11800,44 +11879,6 @@ items:
                     href: api/directoryobject-delta.md
                   - name: Validate properties
                     href: api/directoryobject-validateproperties.md
-              - name: Directory recommendations (preview)
-                displayName: Recommendations, Azure AD recommendations
-                href: resources/recommendations-api-overview.md
-                items:
-                  - name: Recommendations
-                    items:
-                      - name: Recommendation
-                        href: resources/recommendation.md
-                      - name: List
-                        href: api/directory-list-recommendation.md
-                      - name: Get
-                        href: api/recommendation-get.md
-                      - name: Complete
-                        href: api/recommendation-complete.md
-                      - name: Dismiss
-                        href: api/recommendation-dismiss.md
-                      - name: Postpone
-                        href: api/recommendation-postpone.md
-                      - name: Reactivate
-                        href: api/recommendation-reactivate.md
-                      - name: Get tenant Secure Score
-                        href: api/recommendation-tenantsecurescores.md
-                  - name: Impacted resources
-                    items:
-                      - name: Impacted resource
-                        href: resources/impactedresource.md
-                      - name: List
-                        href: api/recommendation-list-impactedresources.md
-                      - name: Get
-                        href: api/impactedresource-get.md
-                      - name: Complete
-                        href: api/impactedresource-complete.md
-                      - name: Dismiss
-                        href: api/impactedresource-dismiss.md
-                      - name: Postpone
-                        href: api/impactedresource-postpone.md
-                      - name: Reactivate
-                        href: api/impactedresource-reactivate.md
               - name: Directory role
                 href: resources/directoryrole.md
                 items:
@@ -12194,230 +12235,6 @@ items:
                       href: api/certificateauthorityasentity-update.md
                     - name: Delete
                       href: api/certificateauthorityasentity-delete.md
-          - name: Network access
-            items:
-              - name: Overview
-                displayName: ZTNA, Global Secure Access, Microsoft Entra Internet Access, Microsoft Entra Private Access
-                href: resources/networkaccess-global-secure-access-api-overview.md
-              - name: Tenant status
-                href: resources/networkaccess-tenantstatus.md
-                items:
-                  - name: Onboard
-                    href: api/networkaccess-networkaccessroot-onboard.md
-                  - name: Get
-                    href: api/networkaccess-tenantstatus-get.md
-              - name: Settings
-                href: resources/networkaccess-settings.md
-                items:
-                  - name: Cross-tenant access settings
-                    href: resources/networkaccess-crosstenantaccesssettings.md
-                    items:
-                      - name: Get
-                        href: api/networkaccess-crosstenantaccesssettings-get.md
-                      - name: Update
-                        href: api/networkaccess-crosstenantaccesssettings-update.md
-                  - name: Conditional Access Settings
-                    href: resources/networkaccess-conditionalaccesssettings.md
-                    items:
-                      - name: Get
-                        href: api/networkaccess-conditionalaccesssettings-get.md
-                      - name: Update
-                        href: api/networkaccess-conditionalaccesssettings-update.md
-                  - name: Forwarding options
-                    href: resources/networkaccess-forwardingoptions.md
-                    items:
-                      - name: Get
-                        href: api/networkaccess-forwardingoptions-get.md
-                      - name: Update
-                        href: api/networkaccess-forwardingoptions-update.md
-              - name: Forwarding traffic
-                items:
-                  - name: Forwarding profile
-                    href: resources/networkaccess-forwardingprofile.md
-                    items:
-                      - name: List
-                        href: api/networkaccess-networkaccessroot-list-forwardingprofiles.md
-                      - name: Get
-                        href: api/networkaccess-forwardingprofile-get.md
-                      - name: Update
-                        href: api/networkaccess-forwardingprofile-update.md
-                  - name: Forwarding policy
-                    href: resources/networkaccess-forwardingpolicy.md
-                    items:
-                      - name: List
-                        href: api/networkaccess-networkaccessroot-list-forwardingpolicies.md
-                      - name: Get
-                        href: api/networkaccess-forwardingpolicy-get.md
-                      - name: Update policy rules
-                        href: api/networkaccess-forwardingpolicy-updatepolicyrules.md
-                  - name: Forwarding policy link
-                    href: resources/networkaccess-forwardingpolicylink.md
-                    items:
-                      - name: List
-                        href: api/networkaccess-forwardingprofile-list-policies.md
-                      - name: Get
-                        href: api/networkaccess-forwardingpolicy-get.md
-                      - name: Update
-                        href: api/networkaccess-forwardingpolicylink-update.md
-                      - name: Delete
-                        href: api/networkaccess-forwardingpolicylink-delete.md
-                  - name: Forwarding policy rule
-                    href: resources/networkaccess-policyrule.md
-                    items:
-                      - name: Forwarding rule
-                        href: resources/networkaccess-forwardingrule.md
-                        items:
-                          - name: Microsoft 365 forwarding rule
-                            href: resources/networkaccess-m365forwardingrule.md
-                          - name: Private access forwarding rule
-                            href: resources/networkaccess-privateaccessforwardingrule.md
-                          - name: List
-                            href: api/networkaccess-policy-list-policyrules.md
-                          - name: Get
-                            href: api/networkaccess-policyrule-get.md
-                          - name: Update
-                            href: api/networkaccess-policyrule-update.md
-              - name: Filtering traffic
-                items:
-                  - name: Filtering profile
-                    href: resources/networkaccess-filteringprofile.md
-                    items:
-                      - name: List
-                        href: api/networkaccess-filteringprofile-list.md
-                      - name: Get
-                        href: api/networkaccess-filteringprofile-get.md
-                      - name: Update
-                        href: api/networkaccess-filteringprofile-update.md
-                      - name: Create policyLink
-                        href: api/networkaccess-filteringpolicy-post-policyrules.md
-                  - name: Filtering policy
-                    href: resources/networkaccess-filteringpolicy.md
-                    items:
-                      - name: List
-                        href: api/networkaccess-networkaccessroot-list-filteringpolicies.md
-                      - name: Create
-                        href: api/networkaccess-filteringpolicy-post-policyrules.md 
-                      - name: Get
-                        href: api/networkaccess-filteringpolicy-get.md
-                      - name: Update
-                        href: api/networkaccess-filteringprofile-update.md
-                      - name: Delete
-                        href: api/networkaccess-filteringprofile-delete-policies.md
-                      - name: List policyRules
-                        href: api/networkaccess-policy-list-policyrules.md
-                      - name: Create policyRule
-                        href: api/networkaccess-filteringpolicy-post-policyrules.md
-                  - name: Filtering policy link
-                    href: resources/networkaccess-filteringpolicylink.md
-                    items:
-                      - name: List
-                        href: api/networkaccess-filteringpolicylink-list.md
-                      - name: Get
-                        href: api/networkaccess-filteringpolicylink-get.md 
-                      - name: Update
-                        href: api/networkaccess-filteringpolicylink-update.md
-                      - name: Delete
-                        href: api/networkaccess-filteringpolicylink-delete.md
-                      - name: List policy
-                        href: api/networkaccess-policylink-list-policy.md 
-                      - name: Add policy
-                        href: api/networkaccess-filteringpolicy-post-policyrules.md
-                      - name: Remove policy
-                        href: api/networkaccess-filteringpolicylink-delete-policy.md
-                  - name: Filtering rule
-                    href: resources/networkaccess-filteringrule.md
-                    items:
-                      - name: List
-                        href: api/networkaccess-filteringrule-list.md
-                      - name: Get
-                        href: api/networkaccess-filteringrule-get.md 
-                      - name: Create
-                        href: api/networkaccess-filteringrule-post.md
-                      - name: Update
-                        href: api/networkaccess-filteringrule-update.md
-                      - name: Delete
-                        href: api/networkaccess-filteringrule-delete.md                      
-              - name: Branch site
-                href: resources/networkaccess-branchsite.md
-                items:
-                  - name: List
-                    href: api/networkaccess-connectivity-list-branches.md
-                  - name: Create
-                    href: api/networkaccess-connectivity-post-branches.md
-                  - name: Get
-                    href: api/networkaccess-branchsite-get.md
-                  - name: Update
-                    href: api/networkaccess-branchsite-update.md
-                  - name: Delete
-                    href: api/networkaccess-branchsite-delete.md
-                  - name: Device link
-                    href: resources/networkaccess-devicelink.md
-                    items:
-                      - name: List
-                        href: api/networkaccess-branchsite-list-devicelinks.md
-                      - name: Get
-                        href: api/networkaccess-devicelink-get.md
-                      - name: Create
-                        href: api/networkaccess-branchsite-post-devicelinks.md
-                      - name: Update
-                        href: api/networkaccess-devicelink-update.md
-                      - name: Delete
-                        href: api/networkaccess-branchsite-delete-devicelinks.md
-                  - name: Connectivity configuration
-                    href: resources/networkaccess-connectivityconfigurationlink.md
-                    items:
-                      - name: Get
-                        href: api/networkaccess-branchconnectivityconfiguration-get.md 
-                  - name: Forwarding profile
-                    items:
-                      - name: List
-                        href: api/networkaccess-branchsite-list-forwardingprofiles.md
-                      - name: Create
-                        href: api/networkaccess-branchsite-post-forwardingprofiles.md
-                      - name: Update forwarding profile for branch
-                        href: api/networkaccess-forwardingprofile-update.md
-              - name: Traffic logs
-                href: resources/networkaccess-logs.md
-                items:
-                  - name: Network access traffic
-                    href: resources/networkaccess-networkaccesstraffic.md
-                  - name: List
-                    href: api/networkaccess-logs-list-traffic.md
-              - name: Enriched Microsoft 365 logs
-                href: resources/networkaccess-enrichedauditlogs.md
-                items:
-                  - name: List
-                    href: api/networkaccess-settings-list-enrichedauditlogs.md
-                  - name: Update
-                    href: api/networkaccess-enrichedauditlogs-update.md
-              - name: Traffic reports
-                href: resources/networkaccess-reports.md
-                items:
-                  - name: Get entities summary
-                    href: api/networkaccess-reports-entitiessummaries.md
-                  - name: Get cross-tenant access summary
-                    href: api/networkaccess-reports-getcrosstenantsummary.md
-                  - name: Get cross-tenant access report
-                    href: api/networkaccess-reports-crosstenantaccessreport.md
-                  - name: Get destination summary
-                    href: api/networkaccess-reports-getdestinationsummaries.md
-                  - name: Get destination report
-                    href: api/networkaccess-reports-destinationreport.md
-                  - name: Get device usage summary
-                    href: api/networkaccess-reports-getdeviceusagesummary.md
-                  - name: Get device usage report
-                    href: api/networkaccess-reports-devicereport.md  
-                  - name: Get user usage report
-                    href: api/networkaccess-reports-userreport.md    
-                  - name: Get transaction summaries
-                    href: api/networkaccess-reports-transactionsummaries.md
-              - name: Remote network reports
-                items:
-                  - name: Remote network health status event
-                    href: resources/networkaccess-remotenetworkhealthstatusevent.md
-                    items:
-                      - name: List
-                        href: api/networkaccess-remotenetworkhealthstatusevent-list.md
           - name: Governance
             href: resources/identitygovernance-overview.md
             displayName: Identity Governance, Access reviews, Entitlement Management, Terms of Use, Privileged Identity Management
@@ -13353,16 +13170,20 @@ items:
               - name: Authentication event listeners (preview)
                 href: resources/authenticationeventlistener.md
                 items:
-                  - name: On token issuance start
-                    href: resources/ontokenissuancestartlistener.md
-                  - name: On interactive authentication flow start
-                    href: resources/oninteractiveauthflowstartlistener.md
-                  - name: On authentication method load start
-                    href: resources/onauthenticationmethodloadstartlistener.md
                   - name: On attribute collection
                     href: resources/onattributecollectionlistener.md
+                  - name: On attribute collection start
+                    href: resources/onattributecollectionstartlistener.md
+                  - name: On attribute collection submit
+                    href: resources/onattributecollectionsubmitlistener.md 
+                  - name: On authentication method load start
+                    href: resources/onauthenticationmethodloadstartlistener.md
+                  - name: On interactive authentication flow start
+                    href: resources/oninteractiveauthflowstartlistener.md
+                  - name: On token issuance start
+                    href: resources/ontokenissuancestartlistener.md
                   - name: On user create start
-                    href: resources/onusercreatestartlistener.md
+                    href: resources/onusercreatestartlistener.md   
                   - name: List
                     href: api/identitycontainer-list-authenticationeventlisteners.md
                   - name: Create
@@ -13710,18 +13531,30 @@ items:
               - name: Custom authentication extensions (preview)
                 href: resources/customauthenticationextension.md
                 items:
+                  - name: On attribute collection start
+                    href: resources/onattributecollectionstartcustomextension.md
+                  - name: On attribute collection submit
+                    href: resources/onattributecollectionsubmitcustomextension.md
                   - name: On token issuance start
                     href: resources/ontokenissuancestartcustomextension.md
-                  - name: List
+                  - name: List custom authentication extensions
                     href: api/identitycontainer-list-customauthenticationextensions.md
-                  - name: Create
+                  - name: Create custom authentication extension
                     href: api/identitycontainer-post-customauthenticationextensions.md
-                  - name: Get
+                  - name: Get custom authentication extension
                     href: api/customauthenticationextension-get.md
-                  - name: Update
+                  - name: Update custom authentication extension
                     href: api/customauthenticationextension-update.md
-                  - name: Delete
+                  - name: Delete custom authentication extension
                     href: api/customauthenticationextension-delete.md
+                  - name: Get on attribute collection start
+                    href: api/onattributecollectionstartcustomextension-get.md
+                  - name: Update on attribute collection start
+                    href: api/onattributecollectionstartcustomextension-update.md
+                  - name: Get on attribute collection submit
+                    href: api/onattributecollectionsubmitcustomextension-get.md
+                  - name: Update on attribute collection submit
+                    href: api/onattributecollectionsubmitcustomextension-update.md
               - name: Data policy operation
                 href: resources/datapolicyoperation.md
                 items:
@@ -14135,15 +13968,6 @@ items:
                             href: api/x509certificateauthenticationmethodconfiguration-update.md
                           - name: Delete
                             href: api/x509certificateauthenticationmethodconfiguration-delete.md
-                      - name: Microsoft Authenticator Passwordless Phone Sign-in policy (deprecated)
-                        href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
-                        items:
-                          - name: Get
-                            href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-get.md
-                          - name: Update
-                            href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-update.md
-                          - name: Delete
-                            href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-delete.md
                   - name: Authorization policy
                     href: resources/authorizationpolicy.md
                     items:
@@ -14556,7 +14380,7 @@ items:
                         href: api/authenticationconditionsapplications-post-includeapplications.md
                       - name: Remove applications
                         href: api/authenticationconditionapplication-delete.md
-          - name: Multicloud permissions management 
+          - name: Multicloud permissions management (preview) 
             items:
             - name: Overview
               href: resources/permissions-management-api-overview.md
@@ -14750,7 +14574,7 @@ items:
                       href: api/gcpauthorizationsystem-list-services.md
                     - name: Get
                       href: api/authorizationsystemtypeservice-get.md
-            - name: Permissions on demand
+            - name: Permissions requests
               items:
               - name: Scheduled permissions request
                 href: resources/scheduledpermissionsrequest.md
@@ -14766,6 +14590,590 @@ items:
                   href: api/permissionsmanagement-list-permissionsrequestchanges.md
                 - name: Get
                   href: api/permissionsrequestchange-get.md  
+            - name: Permissions analytics
+              items:
+              - name: Permissions creep index distribution
+                href: resources/permissionscreepindexdistribution.md
+                items:
+                - name: List
+                  href: api/permissionsanalytics-list-permissionscreepindexdistributions.md
+                - name: Get
+                  href: api/permissionscreepindexdistribution-get.md
+              - name: Identity findings
+                items:
+                - name: Inactive user finding
+                  href: resources/inactiveuserfinding.md
+                  items:
+                  - name: List
+                    href: api/inactiveuserfinding-list.md
+                  - name: Get
+                    href: api/inactiveuserfinding-get.md
+                  - name: Aggregated summary
+                    href: api/inactiveuserfinding-aggregatedsummary.md
+                - name: Inactive group finding
+                  href: resources/inactivegroupfinding.md
+                  items:
+                  - name: List
+                    href: api/inactivegroupfinding-list.md
+                  - name: Get
+                    href: api/inactivegroupfinding-get.md
+                - name: Inactive serverless functions
+                  href: resources/inactiveserverlessfunctionfinding.md
+                  items:
+                  - name: List
+                    href: api/inactiveserverlessfunctionfinding-list.md
+                  - name: Get
+                    href: api/inactiveserverlessfunctionfinding-get.md
+                  - name: Aggregated summary
+                    href: api/inactiveserverlessfunctionfinding-aggregatedsummary.md
+                - name: Inactive AWS role
+                  href: resources/inactiveawsrolefinding.md
+                  items:
+                  - name: List
+                    href: api/inactiveawsrolefinding-list.md
+                  - name: Get
+                    href: api/inactiveawsrolefinding-get.md
+                  - name: Aggregated summary
+                    href: api/inactiveawsrolefinding-aggregatedsummary.md
+                - name: Inactive AWS resource
+                  href: resources/inactiveawsresourcefinding.md
+                  items:
+                  - name: List
+                    href: api/inactiveawsresourcefinding-list.md
+                  - name: Get
+                    href: api/inactiveawsresourcefinding-get.md
+                  - name: Aggregated summary
+                    href: api/inactiveawsresourcefinding-aggregatedsummary.md
+                - name: Inactive Azure service principal
+                  href: resources/inactiveazureserviceprincipalfinding.md
+                  items:
+                  - name: List
+                    href: api/inactiveazureserviceprincipalfinding-list.md
+                  - name: Get
+                    href: api/inactiveazureserviceprincipalfinding-get.md
+                  - name: Aggregated summary
+                    href: api/inactiveazureserviceprincipalfinding-aggregatedsummary.md
+                - name: Inactive GCP service account
+                  href: resources/inactivegcpserviceaccountfinding.md
+                  items:
+                  - name: List
+                    href: api/inactivegcpserviceaccountfinding-list.md
+                  - name: Get
+                    href: api/inactivegcpserviceaccountfinding-get.md
+                  - name: Aggregated summary
+                    href: api/inactivegcpserviceaccountfinding-aggregatedsummary.md
+                - name: Super user
+                  href: resources/superuserfinding.md
+                  items:
+                    - name: List
+                      href: api/superuserfinding-list.md
+                    - name: Get
+                      href: api/superuserfinding-get.md
+                    - name: Aggregated summary
+                      href: api/superuserfinding-aggregatedsummary.md
+                - name: Super serverless functions
+                  href: resources/superserverlessfunctionfinding.md
+                  items:
+                  - name: List
+                    href: api/superserverlessfunctionfinding-list.md
+                  - name: Get
+                    href: api/superserverlessfunctionfinding-get.md
+                  - name: Aggregated summary
+                    href: api/superserverlessfunctionfinding-aggregatedsummary.md
+                - name: Super AWS role
+                  href: resources/superawsrolefinding.md
+                  items:
+                  - name: List
+                    href: api/superawsrolefinding-list.md
+                  - name: Get
+                    href: api/superawsrolefinding-get.md
+                  - name: Aggregated summary
+                    href: api/superawsrolefinding-aggregatedsummary.md
+                - name: Super AWS resource
+                  href: resources/superawsresourcefinding.md
+                  items:
+                  - name: List
+                    href: api/superawsresourcefinding-list.md
+                  - name: Get
+                    href: api/superawsresourcefinding-get.md
+                  - name: Aggregated summary
+                    href: api/superawsresourcefinding-aggregatedsummary.md
+                - name: Super Azure service principal
+                  href: resources/superazureserviceprincipalfinding.md
+                  items:
+                    - name: List
+                      href: api/superazureserviceprincipalfinding-list.md
+                    - name: Get
+                      href: api/superazureserviceprincipalfinding-get.md
+                    - name: Aggregated summary
+                      href: api/superazureserviceprincipalfinding-aggregatedsummary.md
+                - name: Super GCP service account
+                  href: resources/supergcpserviceaccountfinding.md
+                  items:
+                  - name: List
+                    href: api/supergcpserviceaccountfinding-list.md
+                  - name: Get
+                    href: api/supergcpserviceaccountfinding-get.md
+                  - name: Aggregated summary
+                    href: api/supergcpserviceaccountfinding-aggregatedsummary.md
+                - name: Overprovisioned user
+                  href: resources/overprovisioneduserfinding.md
+                  items:
+                  - name: List
+                    href: api/overprovisioneduserfinding-list.md
+                  - name: Get
+                    href: api/overprovisioneduserfinding-get.md
+                - name: Overprovisioned serverless functions
+                  href: resources/overprovisionedserverlessfunctionfinding.md
+                  items:
+                  - name: List
+                    href: api/overprovisionedserverlessfunctionfinding-list.md
+                  - name: Get
+                    href: api/overprovisionedserverlessfunctionfinding-get.md
+                - name: Overprovisioned AWS role
+                  href: resources/overprovisionedawsrolefinding.md
+                  items:
+                  - name: List
+                    href: api/overprovisionedawsrolefinding-list.md
+                  - name: Get
+                    href: api/overprovisionedawsrolefinding-get.md
+                - name: Overprovisioned AWS resource
+                  href: resources/overprovisionedawsresourcefinding.md
+                  items:
+                  - name: List
+                    href: api/overprovisionedawsresourcefinding-list.md
+                  - name: Get
+                    href: api/overprovisionedawsresourcefinding-get.md
+                - name: Overprovisioned Azure service principal
+                  href: resources/overprovisionedazureserviceprincipalfinding.md
+                  items:
+                  - name: List
+                    href: api/overprovisionedazureserviceprincipalfinding-list.md
+                  - name: Get
+                    href: api/overprovisionedazureserviceprincipalfinding-get.md
+                - name: Overprovisioned GCP service account
+                  href: resources/overprovisionedgcpserviceaccountfinding.md
+                  items:
+                  - name: List
+                    href: api/overprovisionedgcpserviceaccountfinding-list.md
+                  - name: Get
+                    href: api/overprovisionedgcpserviceaccountfinding-get.md
+                - name: AWS users with unenforced MFA
+                  href: resources/unenforcedmfaawsuserfinding.md
+                  items:
+                  - name: List
+                    href: api/unenforcedmfaawsuserfinding-list.md
+                  - name: Get
+                    href: api/unenforcedmfaawsuserfinding-get.md
+                  - name: Aggregated summary
+                    href: api/unenforcedmfaawsuserfinding-aggregatedsummary.md
+              - name: Privilege escalation findings
+                items:
+                - name: Privilege escalation user
+                  href: resources/privilegeescalationuserfinding.md
+                  items:
+                  - name: List
+                    href: api/privilegeescalationuserfinding-list.md
+                  - name: Get
+                    href: api/privilegeescalationuserfinding-get.md
+                - name: Privilege escalation AWS role
+                  href: resources/privilegeescalationawsrolefinding.md
+                  items:
+                  - name: List
+                    href: api/privilegeescalationawsrolefinding-list.md
+                  - name: Get
+                    href: api/privilegeescalationawsrolefinding-get.md
+                - name: Privilege escalation AWS resource
+                  href: resources/privilegeescalationawsresourcefinding.md
+                  items:
+                  - name: List
+                    href: api/privilegeescalationawsresourcefinding-list.md
+                  - name: Get
+                    href: api/privilegeescalationawsresourcefinding-get.md
+                - name: Privilege escalation GCP service account
+                  href: resources/privilegeescalationgcpserviceaccountfinding.md
+                  items:
+                  - name: List
+                    href: api/privilegeescalationgcpserviceaccountfinding-list.md
+                  - name: Get
+                    href: api/privilegeescalationgcpserviceaccountfinding-get.md
+              - name: Encrypted AWS S3 buckets
+                href: resources/encryptedawsstoragebucketfinding.md
+                items:
+                - name: List
+                  href: api/encryptedawsstoragebucketfinding-list.md
+                - name: Get
+                  href: api/encryptedawsstoragebucketfinding-get.md
+              - name: Encrypted Azure storage accounts
+                href: resources/encryptedazurestorageaccountfinding.md
+                items:
+                - name: List
+                  href: api/encryptedazurestorageaccountfinding-list.md
+                - name: Get
+                  href: api/encryptedazurestorageaccountfinding-get.md
+              - name: Encrypted GCP storage buckets
+                href: resources/encryptedgcpstoragebucketfinding.md
+                items:
+                - name: List
+                  href: api/encryptedgcpstoragebucketfinding-list.md
+                - name: Get
+                  href: api/encryptedgcpstoragebucketfinding-get.md
+              - name: Externally accessible AWS S3 buckets
+                href: resources/externallyaccessibleawsstoragebucketfinding.md
+                items:
+                - name: List
+                  href: api/externallyaccessibleawsstoragebucketfinding-list.md
+                - name: Get
+                  href: api/externallyaccessibleawsstoragebucketfinding-get.md
+              - name: Externally accessible Azure blob containers
+                href: resources/externallyaccessibleazureblobcontainerfinding.md
+                items:
+                - name: List
+                  href: api/externallyaccessibleawsstoragebucketfinding-list.md
+                - name: Get
+                  href: api/externallyaccessibleawsstoragebucketfinding-get.md
+              - name: Externally accessible GCP storage buckets
+                href: resources/externallyaccessiblegcpstoragebucketfinding.md
+                items:
+                - name: List
+                  href: api/externallyaccessibleawsstoragebucketfinding-list.md
+                - name: Get
+                  href: api/externallyaccessibleawsstoragebucketfinding-get.md   
+              - name: Open AWS security group
+                href: resources/openawssecuritygroupfinding.md
+                items:
+                - name: List
+                  href: api/openawssecuritygroupfinding-list.md
+                - name: Get
+                  href: api/openawssecuritygroupfinding-get.md
+                - name: List assignedComputeInstanceDetails
+                  href: api/openawssecuritygroupfinding-list-assignedcomputeinstancesdetails.md
+                - name: Get assignedComputeInstanceDetails
+                  href: api/assignedcomputeinstancedetails-get.md
+              - name: Open network Azure security group
+                href: resources/opennetworkazuresecuritygroupfinding.md
+                items:
+                - name: List
+                  href: api/opennetworkazuresecuritygroupfinding-list.md
+                - name: Get
+                  href: api/opennetworkazuresecuritygroupfinding-get.md
+              - name: AWS identities that can access secret information
+                href: resources/openawssecuritygroupfinding.md
+                items:
+                - name: Users
+                  href: resources/secretinformationaccessawsuserfinding.md
+                  items:
+                  - name: List
+                    href: api/secretinformationaccessawsuserfinding-list.md
+                  - name: Get
+                    href: api/secretinformationaccessawsuserfinding-get.md
+                - name: Roles
+                  href: resources/secretinformationaccessawsuserfinding.md
+                  items:
+                  - name: List
+                    href: api/secretinformationaccessawsuserfinding-list.md
+                  - name: Get
+                    href: api/secretinformationaccessawsuserfinding-get.md
+                - name: Resources
+                  href: resources/secretinformationaccessawsresourcefinding.md
+                  items:
+                  - name: List
+                    href: api/secretinformationaccessawsresourcefinding-list.md
+                  - name: Get
+                    href: api/secretinformationaccessawsresourcefinding-get.md
+                - name: Serverless functions
+                  href: resources/secretinformationaccessawsserverlessfunctionfinding.md
+                  items:
+                  - name: List
+                    href: api/secretinformationaccessawsserverlessfunctionfinding-list.md
+                  - name: Get
+                    href: api/secretinformationaccessawsserverlessfunctionfinding-get.md
+              - name: AWS administrators that can use secruity tools
+                items:
+                - name: Users
+                  href: resources/securitytoolawsuseradministratorfinding.md
+                  items:
+                  - name: List
+                    href: api/securitytoolawsuseradministratorfinding-list.md
+                  - name: Get
+                    href: api/securitytoolawsuseradministratorfinding-get.md
+                - name: Roles
+                  href: resources/securitytoolawsroleadministratorfinding.md
+                  items:
+                  - name: List
+                    href: api/securitytoolawsroleadministratorfinding-list.md
+                  - name: Get
+                    href: api/securitytoolawsroleadministratorfinding-get.md
+                - name: Resources
+                  href: resources/securitytoolawsresourceadministratorfinding.md
+                  items:
+                  - name: List
+                    href: api/securitytoolawsresourceadministratorfinding-list.md
+                  - name: Get
+                    href: api/securitytoolawsresourceadministratorfinding-get.md
+                - name: Serverless functions
+                  href: resources/securitytoolawsserverlessfunctionadministratorfinding.md
+                  items:
+                  - name: List
+                    href: api/securitytoolawsserverlessfunctionadministratorfinding-list.md
+                  - name: Get
+                    href: api/securitytoolawsserverlessfunctionadministratorfinding-get.md
+              - name: AWS cross-account access
+                href: resources/awsexternalsystemaccessfinding.md
+                items:
+                - name: List
+                  href: api/awsexternalsystemaccessfinding-list.md
+                - name: Get
+                  href: api/awsexternalsystemaccessfinding-get.md
+              - name: AWS roles that can access accounts
+                href: resources/awsexternalsystemaccessrolefinding.md
+                items:
+                - name: List
+                  href: api/awsexternalsystemaccessrolefinding-list.md
+                - name: Get
+                  href: api/awsexternalsystemaccessrolefinding-get.md
+              - name: AWS IAM access key age
+                href: resources/awsidentityaccessmanagementkeyagefinding.md
+                items:
+                - name: List 
+                  href: api/awsidentityaccessmanagementkeyagefinding-list.md
+                - name: Get
+                  href: api/awsidentityaccessmanagementkeyagefinding-get.md
+                - name: Aggregated summary
+                  href: api/awsidentityaccessmanagementkeyagefinding-aggregatedsummary.md
+              - name: AWS IAM access key usage
+                href: resources/awsidentityaccessmanagementkeyusagefinding.md
+                items:
+                - name: List
+                  href: api/awsidentityaccessmanagementkeyusagefinding-list.md
+                - name: Get
+                  href: api/awsidentityaccessmanagementkeyusagefinding-get.md
+                - name: Aggregated summary
+                  href: api/awsidentityaccessmanagementkeyusagefinding-aggregatedsummary.md
+          - name: Network access (preview)
+            items:
+              - name: Overview
+                displayName: ZTNA, Global Secure Access, Microsoft Entra Internet Access, Microsoft Entra Private Access
+                href: resources/networkaccess-global-secure-access-api-overview.md
+              - name: Tenant status
+                href: resources/networkaccess-tenantstatus.md
+                items:
+                  - name: Onboard
+                    href: api/networkaccess-networkaccessroot-onboard.md
+                  - name: Get
+                    href: api/networkaccess-tenantstatus-get.md
+              - name: Settings
+                href: resources/networkaccess-settings.md
+                items:
+                  - name: Cross-tenant access settings
+                    href: resources/networkaccess-crosstenantaccesssettings.md
+                    items:
+                      - name: Get
+                        href: api/networkaccess-crosstenantaccesssettings-get.md
+                      - name: Update
+                        href: api/networkaccess-crosstenantaccesssettings-update.md
+                  - name: Conditional Access Settings
+                    href: resources/networkaccess-conditionalaccesssettings.md
+                    items:
+                      - name: Get
+                        href: api/networkaccess-conditionalaccesssettings-get.md
+                      - name: Update
+                        href: api/networkaccess-conditionalaccesssettings-update.md
+                  - name: Forwarding options
+                    href: resources/networkaccess-forwardingoptions.md
+                    items:
+                      - name: Get
+                        href: api/networkaccess-forwardingoptions-get.md
+                      - name: Update
+                        href: api/networkaccess-forwardingoptions-update.md
+              - name: Forwarding traffic
+                items:
+                  - name: Forwarding profile
+                    href: resources/networkaccess-forwardingprofile.md
+                    items:
+                      - name: List
+                        href: api/networkaccess-networkaccessroot-list-forwardingprofiles.md
+                      - name: Get
+                        href: api/networkaccess-forwardingprofile-get.md
+                      - name: Update
+                        href: api/networkaccess-forwardingprofile-update.md
+                  - name: Forwarding policy
+                    href: resources/networkaccess-forwardingpolicy.md
+                    items:
+                      - name: List
+                        href: api/networkaccess-networkaccessroot-list-forwardingpolicies.md
+                      - name: Get
+                        href: api/networkaccess-forwardingpolicy-get.md
+                      - name: Update policy rules
+                        href: api/networkaccess-forwardingpolicy-updatepolicyrules.md
+                  - name: Forwarding policy link
+                    href: resources/networkaccess-forwardingpolicylink.md
+                    items:
+                      - name: List
+                        href: api/networkaccess-forwardingprofile-list-policies.md
+                      - name: Get
+                        href: api/networkaccess-forwardingpolicy-get.md
+                      - name: Update
+                        href: api/networkaccess-forwardingpolicylink-update.md
+                      - name: Delete
+                        href: api/networkaccess-forwardingpolicylink-delete.md
+                  - name: Forwarding policy rule
+                    href: resources/networkaccess-policyrule.md
+                    items:
+                      - name: Forwarding rule
+                        href: resources/networkaccess-forwardingrule.md
+                        items:
+                          - name: Microsoft 365 forwarding rule
+                            href: resources/networkaccess-m365forwardingrule.md
+                          - name: Private access forwarding rule
+                            href: resources/networkaccess-privateaccessforwardingrule.md
+                          - name: List
+                            href: api/networkaccess-policy-list-policyrules.md
+                          - name: Get
+                            href: api/networkaccess-policyrule-get.md
+                          - name: Update
+                            href: api/networkaccess-policyrule-update.md
+              - name: Filtering traffic
+                items:
+                  - name: Filtering profile
+                    href: resources/networkaccess-filteringprofile.md
+                    items:
+                      - name: List
+                        href: api/networkaccess-filteringprofile-list.md
+                      - name: Get
+                        href: api/networkaccess-filteringprofile-get.md
+                      - name: Update
+                        href: api/networkaccess-filteringprofile-update.md
+                      - name: Create policyLink
+                        href: api/networkaccess-filteringpolicy-post-policyrules.md
+                  - name: Filtering policy
+                    href: resources/networkaccess-filteringpolicy.md
+                    items:
+                      - name: List
+                        href: api/networkaccess-networkaccessroot-list-filteringpolicies.md
+                      - name: Create
+                        href: api/networkaccess-filteringpolicy-post-policyrules.md 
+                      - name: Get
+                        href: api/networkaccess-filteringpolicy-get.md
+                      - name: Update
+                        href: api/networkaccess-filteringprofile-update.md
+                      - name: Delete
+                        href: api/networkaccess-filteringprofile-delete-policies.md
+                      - name: List policyRules
+                        href: api/networkaccess-policy-list-policyrules.md
+                      - name: Create policyRule
+                        href: api/networkaccess-filteringpolicy-post-policyrules.md
+                  - name: Filtering policy link
+                    href: resources/networkaccess-filteringpolicylink.md
+                    items:
+                      - name: List
+                        href: api/networkaccess-filteringpolicylink-list.md
+                      - name: Get
+                        href: api/networkaccess-filteringpolicylink-get.md 
+                      - name: Update
+                        href: api/networkaccess-filteringpolicylink-update.md
+                      - name: Delete
+                        href: api/networkaccess-filteringpolicylink-delete.md
+                      - name: List policy
+                        href: api/networkaccess-policylink-list-policy.md 
+                      - name: Add policy
+                        href: api/networkaccess-filteringpolicy-post-policyrules.md
+                      - name: Remove policy
+                        href: api/networkaccess-filteringpolicylink-delete-policy.md
+                  - name: Filtering rule
+                    href: resources/networkaccess-filteringrule.md
+                    items:
+                      - name: List
+                        href: api/networkaccess-filteringrule-list.md
+                      - name: Get
+                        href: api/networkaccess-filteringrule-get.md 
+                      - name: Create
+                        href: api/networkaccess-filteringrule-post.md
+                      - name: Update
+                        href: api/networkaccess-filteringrule-update.md
+                      - name: Delete
+                        href: api/networkaccess-filteringrule-delete.md                      
+              - name: Branch site
+                href: resources/networkaccess-branchsite.md
+                items:
+                  - name: List
+                    href: api/networkaccess-connectivity-list-branches.md
+                  - name: Create
+                    href: api/networkaccess-connectivity-post-branches.md
+                  - name: Get
+                    href: api/networkaccess-branchsite-get.md
+                  - name: Update
+                    href: api/networkaccess-branchsite-update.md
+                  - name: Delete
+                    href: api/networkaccess-branchsite-delete.md
+                  - name: Device link
+                    href: resources/networkaccess-devicelink.md
+                    items:
+                      - name: List
+                        href: api/networkaccess-branchsite-list-devicelinks.md
+                      - name: Get
+                        href: api/networkaccess-devicelink-get.md
+                      - name: Create
+                        href: api/networkaccess-branchsite-post-devicelinks.md
+                      - name: Update
+                        href: api/networkaccess-devicelink-update.md
+                      - name: Delete
+                        href: api/networkaccess-branchsite-delete-devicelinks.md
+                  - name: Connectivity configuration
+                    href: resources/networkaccess-connectivityconfigurationlink.md
+                    items:
+                      - name: Get
+                        href: api/networkaccess-branchconnectivityconfiguration-get.md 
+                  - name: Forwarding profile
+                    items:
+                      - name: List
+                        href: api/networkaccess-branchsite-list-forwardingprofiles.md
+                      - name: Create
+                        href: api/networkaccess-branchsite-post-forwardingprofiles.md
+                      - name: Update forwarding profile for branch
+                        href: api/networkaccess-forwardingprofile-update.md
+              - name: Traffic logs
+                href: resources/networkaccess-logs.md
+                items:
+                  - name: Network access traffic
+                    href: resources/networkaccess-networkaccesstraffic.md
+                  - name: List
+                    href: api/networkaccess-logs-list-traffic.md
+              - name: Enriched Microsoft 365 logs
+                href: resources/networkaccess-enrichedauditlogs.md
+                items:
+                  - name: List
+                    href: api/networkaccess-settings-list-enrichedauditlogs.md
+                  - name: Update
+                    href: api/networkaccess-enrichedauditlogs-update.md
+              - name: Traffic reports
+                href: resources/networkaccess-reports.md
+                items:
+                  - name: Get entities summary
+                    href: api/networkaccess-reports-entitiessummaries.md
+                  - name: Get cross-tenant access summary
+                    href: api/networkaccess-reports-getcrosstenantsummary.md
+                  - name: Get cross-tenant access report
+                    href: api/networkaccess-reports-crosstenantaccessreport.md
+                  - name: Get destination summary
+                    href: api/networkaccess-reports-getdestinationsummaries.md
+                  - name: Get destination report
+                    href: api/networkaccess-reports-destinationreport.md
+                  - name: Get device usage summary
+                    href: api/networkaccess-reports-getdeviceusagesummary.md
+                  - name: Get device usage report
+                    href: api/networkaccess-reports-devicereport.md  
+                  - name: Get user usage report
+                    href: api/networkaccess-reports-userreport.md    
+                  - name: Get transaction summaries
+                    href: api/networkaccess-reports-transactionsummaries.md
+              - name: Remote network reports
+                items:
+                  - name: Remote network health status event
+                    href: resources/networkaccess-remotenetworkhealthstatusevent.md
+                    items:
+                      - name: List
+                        href: api/networkaccess-remotenetworkhealthstatusevent-list.md
           - name: Partner customer administration
             items:
               - name: Granular delegated admin privileges
@@ -15248,7 +15656,7 @@ items:
             items:
               - name: Get
                 href: api/peopleadminsettings-get.md
-              - name: Org control for pronouns settings (preview)
+              - name: Org control for pronouns settings
                 items:
                   - name: Pronouns settings
                     href: resources/pronounssettings.md
@@ -15723,6 +16131,44 @@ items:
         items:
           - name: Identity and access reports
             items:
+            - name: Microsoft Entra recommendations (preview)
+              displayName: Recommendations, Microsoft Entra recommendations
+              href: resources/recommendations-api-overview.md
+              items:
+                - name: Recommendations
+                  items:
+                    - name: Recommendation
+                      href: resources/recommendation.md
+                    - name: List
+                      href: api/directory-list-recommendation.md
+                    - name: Get
+                      href: api/recommendation-get.md
+                    - name: Complete
+                      href: api/recommendation-complete.md
+                    - name: Dismiss
+                      href: api/recommendation-dismiss.md
+                    - name: Postpone
+                      href: api/recommendation-postpone.md
+                    - name: Reactivate
+                      href: api/recommendation-reactivate.md
+                    - name: Get tenant Secure Score
+                      href: api/recommendation-tenantsecurescores.md
+                - name: Impacted resources
+                  items:
+                    - name: Impacted resource
+                      href: resources/impactedresource.md
+                    - name: List
+                      href: api/recommendation-list-impactedresources.md
+                    - name: Get
+                      href: api/impactedresource-get.md
+                    - name: Complete
+                      href: api/impactedresource-complete.md
+                    - name: Dismiss
+                      href: api/impactedresource-dismiss.md
+                    - name: Postpone
+                      href: api/impactedresource-postpone.md
+                    - name: Reactivate
+                      href: api/impactedresource-reactivate.md
             - name: Microsoft Entra activity reports
               items:
                 - name: Overview
@@ -15755,6 +16201,66 @@ items:
                           href: api/reportroot-list-applicationsignindetailedsummary.md
                         - name: Get
                           href: api/applicationsignindetailedsummary-get.md
+                - name: Application user activity (preview)
+                  items:
+                  - name: Daily user insight
+                    href: resources/dailyuserinsightmetricsroot.md
+                  - name: Monthly user insight
+                    href: resources/monthlyuserinsightmetricsroot.md
+                  - name: Active users breakdown
+                    href: resources/activeusersbreakdownmetric.md
+                    items:
+                    - name: List daily
+                      href: api/dailyuserinsightmetricsroot-list-activeusersbreakdown.md
+                    - name: List monthly
+                      href: api/monthlyuserinsightmetricsroot-list-activeusersbreakdown.md
+                  - name: Active users
+                    href: resources/activeusersmetric.md
+                    items:
+                    - name: List daily
+                      href: api/dailyuserinsightmetricsroot-list-activeusers.md
+                    - name: List monthly
+                      href: api/monthlyuserinsightmetricsroot-list-activeusers.md
+                  - name: Authentications
+                    href: resources/authenticationsmetric.md
+                    items:
+                    - name: List daily
+                      href: api/dailyuserinsightmetricsroot-list-authentications.md
+                    - name: List monthly
+                      href: api/monthlyuserinsightmetricsroot-list-authentications.md
+                  - name: Insights summary
+                    href: resources/insightsummary.md
+                    items:
+                    - name: List daily
+                      href: api/dailyuserinsightmetricsroot-list-summary.md
+                    - name: List monthly
+                      href: api/monthlyuserinsightmetricsroot-list-summary.md
+                  - name: MFA completion
+                    href: resources/mfacompletionmetric.md
+                    items:
+                    - name: List daily
+                      href: api/dailyuserinsightmetricsroot-list-mfacompletions.md
+                    - name: List monthly
+                      href: api/monthlyuserinsightmetricsroot-list-mfacompletions.md
+                  - name: User count
+                    href: resources/usercountmetric.md
+                    items:
+                    - name: List daily
+                      href: api/dailyuserinsightmetricsroot-list-usercount.md
+                  - name: User requests
+                    href: resources/userrequestsmetric.md
+                    items:
+                    - name: List daily
+                      href: api/dailyuserinsightmetricsroot-list-requests.md
+                    - name: List monthly
+                      href: api/monthlyuserinsightmetricsroot-list-requests.md
+                  - name: User signup
+                    href: resources/usersignupmetric.md
+                    items:
+                    - name: List daily
+                      href: api/dailyuserinsightmetricsroot-list-signups.md
+                    - name: List monthly
+                      href: api/monthlyuserinsightmetricsroot-list-signups.md
                 - name: Microsoft Entra SLA attainment
                   items:
                     - name: Microsoft Entra authentication
@@ -15765,7 +16271,7 @@ items:
                       href: api/azureadauthentication-get.md
                 - name: Microsoft Entra service activity
                   items:
-                    - name: Microsoft Entra service activiy
+                    - name: Microsoft Entra service activity
                       href: resources/serviceactivity.md
                     - name: Get MFA sign-in success metrics
                       href: api/serviceactivity-getmetricsformfasigninsuccess.md
@@ -17069,8 +17575,6 @@ items:
                 href: api/itemactivity-getbyinterval.md
               - name: Get applicable content types for list
                 href: api/site-getapplicablecontenttypesforlist.md
-              - name: Get delta
-                href: api/site-delta.md
               - name: Get lists
                 href: api/list-list.md
               - name: Get lists
@@ -17936,6 +18440,10 @@ items:
                     items:
                       - name: Get join link
                         href: api/virtualappointment-getvirtualappointmentjoinweburl.md
+                      - name: Send SMS notification
+                        href: api/virtualappointment-sendvirtualappointmentsms.md
+                      - name: Send SMS reminder 
+                        href: api/virtualappointment-sendvirtualappointmentremindersms.md
                       - name: Virtual appointment (deprecated)
                         href: resources/virtualappointment.md
                       - name: Create virtual appointment (deprecated)
@@ -17963,17 +18471,18 @@ items:
                     href: api/presence-clearuserpreferredpresence.md
                   - name: Set user status message
                     href: api/presence-setstatusmessage.md
-              - name: Virtual event (preview)
-                href: resources/virtualevent.md
+              - name: Virtual event
                 items:
                   - name: Webinar
                     href: resources/virtualeventwebinar.md
                     items:
+                      - name: List
+                        href: api/virtualeventsroot-list-webinars.md
                       - name: Get
                         href: api/virtualeventwebinar-get.md
                       - name: List by user role
                         href: api/virtualeventwebinar-getbyuserrole.md
-                      - name: List by user ID/role
+                      - name: List by user ID and role
                         href: api/virtualeventwebinar-getbyuseridandrole.md
                       - name: Registration
                         href: resources/virtualeventregistration.md
@@ -18027,6 +18536,27 @@ items:
                     href: api/teamworkdeviceoperation-list.md
                   - name: Get
                     href: api/teamworkdeviceoperation-get.md
+          - name: Settings (preview)
+            items:
+              - name: License details
+                href: resources/licensedetails.md
+                items:
+                - name: Get
+                  href: api/licenseDetails-getteamslicensingdetails.md
+              - name: Organization settings
+                items:
+                - name: Teamwork
+                  href: resources/teamwork.md
+                  items:
+                  - name: Get
+                    href: api/teamwork-get.md
+              - name: User settings
+                items:
+                - name: User teamwork
+                  href: resources/userteamwork.md
+                  items:
+                    - name: Get
+                      href: api/userteamwork-get.md
           - name: Employee learning
             displayName: Viva Learning
             items:
@@ -18121,6 +18651,8 @@ items:
                     href: api/chatmessage-get.md
                   - name: Get messages across all channels
                     href: api/channel-getallmessages.md
+                  - name: Get retained messages across all channels
+                    href: api/channel-getallretainedmessages.md
                   - name: Get primary channel
                     href: api/team-get-primarychannel.md
                   - name: List channel messages
@@ -18188,6 +18720,8 @@ items:
                     href: api/chatmessage-get.md
                   - name: Get messages across all chats
                     href: api/chats-getallmessages.md
+                  - name: Get retained messages across all chats
+                    href: api/chat-getallretainedmessages.md
                   - name: Send message in chat
                     href: api/chat-post-messages.md
                   - name: Get chat between user and app
@@ -18320,6 +18854,8 @@ items:
                     href: api/team-completemigration.md
                   - name: List permission grants
                     href: api/team-list-permissiongrants.md
+                  - name: Get open shifts across all joined teams
+                    href: api/team-getopenshifts.md
                   - name: Team template
                     items:
                       - name: Team template
@@ -18371,6 +18907,19 @@ items:
                     href: api/teamworktagmember-delete.md
           - name: Shift management
             items:
+              - name: Day note (preview)
+                href: resources/daynote.md
+                items:
+                  - name: Create
+                    href: api/daynote-create.md
+                  - name: Get
+                    href: api/daynote-get.md
+                  - name: List
+                    href: api/daynote-list.md
+                  - name: Update
+                    href: api/daynote-update.md
+                  - name: Delete
+                    href: api/daynote-delete.md
               - name: Offer shift
                 href: resources/offershiftrequest.md
                 items:
@@ -18397,6 +18946,10 @@ items:
                     href: api/openshift-update.md
                   - name: Delete
                     href: api/openshift-delete.md
+                  - name: Stage for deletion
+                    href: api/changetrackedentity-stagefordeletion.md
+                  - name: Get open shifts across all joined teams
+                    href: api/team-getopenshifts.md
               - name: Open shift change request
                 href: resources/openshiftchangerequest.md
                 items:
@@ -18445,6 +18998,8 @@ items:
                     href: api/shift-put.md
                   - name: Delete
                     href: api/shift-delete.md
+                  - name: Stage for deletion
+                    href: api/changetrackedentity-stagefordeletion.md
               - name: Shift preferences
                 href: resources/shiftpreferences.md
                 items:
@@ -18501,6 +19056,8 @@ items:
                     href: api/timeoff-put.md
                   - name: Delete
                     href: api/timeoff-delete.md
+                  - name: Stage for deletion
+                    href: api/changetrackedentity-stagefordeletion.md
               - name: Time off reason
                 href: resources/timeoffreason.md
                 items:
@@ -18989,3 +19546,4 @@ items:
                 href: api/workbookdocumenttask-list-changes.md
               - name: Get
                 href: api/workbookdocumenttaskchange-get.md
+

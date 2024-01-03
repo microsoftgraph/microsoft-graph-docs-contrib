@@ -10,7 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 var result = await graphClient.Sites["{site-id}"].Lists["{list-id}"].GetAsync((requestConfiguration) =>
 {
 	requestConfiguration.QueryParameters.Select = new string []{ "name","lastModifiedDateTime" };
-	requestConfiguration.QueryParameters.Expand = new string []{ "columns(select=name,description)","items",")" };
+	requestConfiguration.QueryParameters.Expand = new string []{ "columns(select=name,description)","items(expand=fields(select=Name,Color,Quantity)",")" };
 });
 
 

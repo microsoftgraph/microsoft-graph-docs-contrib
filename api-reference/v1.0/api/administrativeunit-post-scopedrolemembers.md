@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "administrativeunit_post_scopedrolemembers" } -->
 [!INCLUDE [permissions-table](../includes/permissions/administrativeunit-post-scopedrolemembers-permissions.md)]
 
-To assign Microsoft Entra roles with an administrative unit scope, the calling principal must be assigned one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json):
+To assign Microsoft Entra roles with an administrative unit scope, the calling principal must be assigned one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
 * Privileged Role Administrator
 * Global Administrator
