@@ -277,9 +277,9 @@ items:
             href: /graph/toolkit/components/picker?context=graph/api/beta
           - name: Planner tasks
             href: /graph/toolkit/components/tasks?context=graph/api/beta
-          - name: Search box (preview)
+          - name: Search box
             href: /graph/toolkit/components/search-box?context=graph/api/beta
-          - name: Search results (preview)
+          - name: Search results
             href: /graph/toolkit/components/search-results?context=graph/api/beta
           - name: Taxonomy picker
             href: /graph/toolkit/components/taxonomy-picker?context=graph/api/beta
@@ -287,7 +287,7 @@ items:
             href: /graph/toolkit/components/teams-channel-picker?context=graph/api/beta
           - name: Theme toggle
             href: /graph/toolkit/components/theme-toggle?context=graph/api/beta
-          - name: To-do tasks
+          - name: To Do tasks
             href: /graph/toolkit/components/todo?context=graph/api/beta
       - name: Customize components
         items:
