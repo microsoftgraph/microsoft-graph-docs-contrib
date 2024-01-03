@@ -111,17 +111,15 @@ The `mgt-login` component supports several [templates](../customize-components/t
 
 ## Microsoft Graph permissions
 
-This component uses the following Microsoft Graph APIs and permissions:
+This component uses the following Microsoft Graph APIs and permissions.
 
 | Configuration | Permission | API                               |
 | ------------- | ---------- | --------------------------------- |
 | default       | User.Read  | [/users/me/](/graph/api/user-get) |
 
-## Components used
+### Subcomponents
 
-This component is composed of other components. These subcomponents might require other permissions than the ones listed for this component. For more information, see each subcomponents documentation.
-
-- [mgt-person](person.md)
+The `mgt-login` component consists of one or more subcomponents that might require other permissions than the ones listed previously. For more information, see the documentation for each subcomponent: [mgt-person](person.md).
 
 ## Authentication
 
