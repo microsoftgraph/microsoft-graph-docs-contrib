@@ -29,9 +29,9 @@ You can use several attributes to change the behavior of the component.
 
 ## Events
 
-| Event               | When is it emitted                    | Custom data | Cancelable | Bubbles | Works with custom template |
-| ------------------- | ------------------------------------- | ----------- | :--------: | :-----: | :------------------------: |
-| `searchTermChanged` | Fired when the search term is changed | `string`.   |     No     |   Yes   |             No             |
+| Event               | When is it emitted                     | Custom data | Cancelable | Bubbles | Works with custom template |
+| ------------------- | -------------------------------------- | ----------- | :--------: | :-----: | :------------------------: |
+| `searchTermChanged` | Fired when the search term is changed. | `string`    |     No     |   Yes   |             No             |
 
 For more information about handling events, see [events](../customize-components/events.md).
 
