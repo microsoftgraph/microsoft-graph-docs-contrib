@@ -221,7 +221,6 @@ The same [permissions](./permissions-reference.md) that are required to read a s
 
 ## Delta query request examples
 
-- [Training module: Use change notifications and track changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges)
 - [Get incremental changes to events in a calendar view](delta-query-events.md)
 - [Get incremental changes to messages in a folder](./delta-query-messages.md)
 - [Get incremental changes to groups](./delta-query-groups.md)
