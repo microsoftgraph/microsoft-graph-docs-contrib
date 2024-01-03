@@ -6,7 +6,9 @@ ms.author: ombongifaith
 ms.reviewer: dkershaw
 ms.localizationpriority: medium
 ms.prod: "applications"
+ms.topic: faq
 ms.date: 06/22/2023
+#Customer intent: As a developer, I want to understand more about why I should migrate my app from Azure AD Graph to Microsoft Graph.
 ---
 
 # Azure AD Graph to Microsoft Graph migration FAQ

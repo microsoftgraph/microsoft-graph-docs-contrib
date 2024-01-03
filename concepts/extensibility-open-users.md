@@ -8,13 +8,14 @@ ms.prod: "extensions"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
 ms.date: 02/02/2023
+#Customer intent: As a developer, I want to learn how to store lightweight data to Microsoft Entra users through Microsoft Graph, and avoid using an external database system.
 ---
 
 # Add custom data to users using open extensions
 
 This article demonstrates how to use *open extensions*.
 
-Imagine you're building an application that is available on multiple client platforms, such as desktop and mobile. You want to let users configure their UI experience so it’s consistent no matter which device they use to sign in to your app.
+Imagine you're building an application that is available on multiple client platforms, such as desktop and mobile. You want to let users configure their UI experience so it's consistent no matter which device they use to sign in to your app.
 
 For this scenario, this article will show you how to:
 

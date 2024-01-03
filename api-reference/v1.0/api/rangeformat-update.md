@@ -59,7 +59,7 @@ The result of this set of requests is a table with three cells formatted like th
 ![Excel chart table with three cells whose format, fill, and font properties have been updated.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/ExcelRangeFormatting.png)
 
 ##### Request
-This request updates the vertical alignment, row height, and column height of the first cell. 
+This request updates the vertical alignment, row height, and column height of the first cell.
 
 
 # [HTTP](#tab/http)
@@ -110,7 +110,7 @@ Content-type: application/json
 ```
 
 ##### Request
-This request updates the font style, size, and color of the first cell. 
+This request updates the font style, size, and color of the first cell.
 
 
 # [HTTP](#tab/http)
@@ -163,7 +163,7 @@ Content-type: application/json
 ```
 
 ##### Request
-This request updates the background color of the first cell. 
+This request updates the background color of the first cell.
 
 
 # [HTTP](#tab/http)
@@ -206,7 +206,7 @@ Content-type: application/json
 }
 ```
 ##### Request
-This request updates the vertical alignment, horizontal alignment, row height, and column height of the second cell. 
+This request updates the vertical alignment, horizontal alignment, row height, and column height of the second cell.
 
 
 # [HTTP](#tab/http)
@@ -260,7 +260,7 @@ Content-type: application/json
 ```
 
 ##### Request
-This request updates the font style and size of the second cell. 
+This request updates the font style and size of the second cell.
 
 
 # [HTTP](#tab/http)
@@ -310,7 +310,7 @@ Content-type: application/json
 ```
 
 ##### Request
-This request updates the background color of the second cell. 
+This request updates the background color of the second cell.
 
 
 # [HTTP](#tab/http)
@@ -354,7 +354,7 @@ Content-type: application/json
 ```
 
 ##### Request
-This request updates the horizontal alignment, vertical alignment, row height, and column height of the third cell. 
+This request updates the horizontal alignment, vertical alignment, row height, and column height of the third cell.
 
 
 # [HTTP](#tab/http)
@@ -459,7 +459,7 @@ Content-type: application/json
 ```
 
 ##### Request
-This request updates the background color of the third cell. 
+This request updates the background color of the third cell.
 
 
 # [HTTP](#tab/http)
@@ -510,7 +510,7 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-    "Error: update_font_rangeformat/underline:
+    "Error: updatefontrangeformat/underline:
       Expected type String but actual was Single. Property: underline, actual value: 'Single'"
   ],
   "tocPath": ""

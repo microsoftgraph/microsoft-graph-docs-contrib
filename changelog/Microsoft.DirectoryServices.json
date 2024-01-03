@@ -6837,7 +6837,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration",
           "ChangeType": "Change",
-          "Description": "Deprecated the [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-beta) resource and associated methods. Please use the new [microsoftAuthenticatorAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethodconfiguration?view=graph-rest-beta) resource",
+          "Description": "Deprecated the **passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration** resource and associated methods. Please use the new [microsoftAuthenticatorAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethodconfiguration?view=graph-rest-beta) resource",
           "Target": "passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration"
         },
         {
@@ -7481,7 +7481,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-beta) entity for managing users\u0027 Microsoft Authenticator Passwordless Phone Sign-in authentication method policy.",
+          "Description": "Added the **passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration** entity for managing users\u0027 Microsoft Authenticator Passwordless Phone Sign-in authentication method policy.",
           "Target": "passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration"
         },
         {
@@ -14929,6 +14929,80 @@
       "CreatedDateTime": "2023-08-16T00:52:03Z",
       "WorkloadArea": "Applications",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "9bb64b16-cc35-474d-8036-e8d5d1534fa1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "serviceProvisioningError",
+          "ChangeType": "Addition",
+          "Description": "Added the [serviceProvisioningError](https://learn.microsoft.com/en-us/graph/api/resources/serviceProvisioningError?view=graph-rest-1.0) resource type.",
+          "Target": "serviceProvisioningError"
+        },
+        {
+          "Id": "9bb64b16-cc35-474d-8036-e8d5d1534fa1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "serviceProvisioningXmlError",
+          "ChangeType": "Addition",
+          "Description": "Added the [serviceProvisioningXmlError](https://learn.microsoft.com/en-us/graph/api/resources/serviceProvisioningXmlError?view=graph-rest-1.0) resource type.",
+          "Target": "serviceProvisioningXmlError"
+        },
+        {
+          "Id": "9bb64b16-cc35-474d-8036-e8d5d1534fa1",
+          "ApiChange": "Property",
+          "ChangedApiName": "serviceProvisioningErrors",
+          "ChangeType": "Addition",
+          "Description": "Added the **serviceProvisioningErrors** property to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0) resource.",
+          "Target": "group"
+        },
+        {
+          "Id": "9bb64b16-cc35-474d-8036-e8d5d1534fa1",
+          "ApiChange": "Property",
+          "ChangedApiName": "serviceProvisioningErrors",
+          "ChangeType": "Addition",
+          "Description": "Added the **serviceProvisioningErrors** property to the [orgContact](https://learn.microsoft.com/en-us/graph/api/resources/orgContact?view=graph-rest-1.0) resource.",
+          "Target": "orgContact"
+        },
+        {
+          "Id": "9bb64b16-cc35-474d-8036-e8d5d1534fa1",
+          "ApiChange": "Property",
+          "ChangedApiName": "serviceProvisioningErrors",
+          "ChangeType": "Addition",
+          "Description": "Added the **serviceProvisioningErrors** property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "9bb64b16-cc35-474d-8036-e8d5d1534fa1",
+          "ApiChange": "Method",
+          "ChangedApiName": "retryServiceProvisioning",
+          "ChangeType": "Addition",
+          "Description": "Added the [retryServiceProvisioning](https://learn.microsoft.com/en-us/graph/api/group-retryserviceprovisioning?view=graph-rest-1.0) method to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0) resource.",
+          "Target": "group"
+        },
+        {
+          "Id": "9bb64b16-cc35-474d-8036-e8d5d1534fa1",
+          "ApiChange": "Method",
+          "ChangedApiName": "retryServiceProvisioning",
+          "ChangeType": "Addition",
+          "Description": "Added the [retryServiceProvisioning](https://learn.microsoft.com/en-us/graph/api/orgContact-retryserviceprovisioning?view=graph-rest-1.0) method to the [orgContact](https://learn.microsoft.com/en-us/graph/api/resources/orgContact?view=graph-rest-1.0) resource.",
+          "Target": "orgContact"
+        },
+        {
+          "Id": "9bb64b16-cc35-474d-8036-e8d5d1534fa1",
+          "ApiChange": "Method",
+          "ChangedApiName": "retryServiceProvisioning",
+          "ChangeType": "Addition",
+          "Description": "Added the [retryServiceProvisioning](https://learn.microsoft.com/en-us/graph/api/user-retryserviceprovisioning?view=graph-rest-1.0) method to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "9bb64b16-cc35-474d-8036-e8d5d1534fa1",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-12-07T12:54:51.8497231Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     }
   ]
 }
