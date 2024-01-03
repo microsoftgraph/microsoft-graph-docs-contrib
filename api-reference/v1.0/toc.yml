@@ -1,6 +1,9 @@
 items:
   - name: Overview of Microsoft Graph
     href: /graph/overview
+  - name: API changelog
+    href: https://developer.microsoft.com/en-us/graph/changelog
+    displayName: API changes, API updates, Microsoft Graph API, REST API, REST API updates
   - name: Authentication and authorization
     items:
       - name: Overview
@@ -24,7 +27,7 @@ items:
             href: /graph/permissions-reference?context=graph/api/1.0
           - name: Microsoft Entra built-in roles
             displayName: Microsoft Graph permissions
-            href: /azure/active-directory/roles/permissions-reference?toc=/graph/toc.json
+            href: /entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json
       - name: Manage app access (CSPs)
         href: /graph/auth-cloudsolutionprovider?context=graph/api/1.0
       - name: Limit mailbox access
@@ -351,6 +354,8 @@ items:
                 href: api/user-delta.md
               - name: Get delta for directory object
                 href: api/directoryobject-delta.md
+              - name: Retry service provisioning
+                href: api/user-retryserviceprovisioning.md
           - name: App role assignment
             href: resources/approleassignment.md
             items:
@@ -453,6 +458,8 @@ items:
                 href: api/user-list-memberof.md
               - name: List transitive member of
                 href: api/user-list-transitivememberof.md
+              - name: Retry service provisioning
+                href: api/group-retryserviceprovisioning.md
           - name: Insights
             items:
               - name: Office Graph insights
@@ -581,6 +588,8 @@ items:
                 href: resources/teamsappinstallation.md
               - name: List apps for user
                 href: api/userteamwork-list-installedapps.md
+              - name: List permission grants for user
+                href: api/user-list-permissiongrants.md
               - name: Add app for user
                 href: api/userteamwork-post-installedapps.md
               - name: Gets installed app for user
@@ -5527,6 +5536,8 @@ items:
                     href: api/orgcontact-delta.md
                   - name: Get delta for directory object
                     href: api/directoryobject-delta.md
+                  - name: Retry service provisioning
+                    href: api/orgcontact-retryserviceprovisioning.md
                   - name: Groups
                     href: resources/group.md
                     items:
@@ -7405,6 +7416,14 @@ items:
             items:
               - name: Get
                 href: api/peopleadminsettings-get.md
+              - name: Org control for pronouns settings
+                items:
+                  - name: Pronouns settings
+                    href: resources/pronounssettings.md
+                  - name: List
+                    href: api/peopleadminsettings-list-pronouns.md
+                  - name: Update
+                    href: api/pronounssettings-update.md
               - name: Profile card customization
                 items:
                   - name: Profile card property
@@ -8800,6 +8819,8 @@ items:
                     href: api/team-list-permissiongrants.md
                   - name: List for chat
                     href: api/chat-list-permissiongrants.md
+                  - name: List for user
+                    href: api/user-list-permissiongrants.md
               - name: Tab
                 href: resources/teamstab.md
                 items:
@@ -9011,6 +9032,33 @@ items:
                     href: api/presence-clearuserpreferredpresence.md
                   - name: Set user status message
                     href: api/presence-setstatusmessage.md
+              - name: Virtual event
+                items:
+                  - name: Webinar
+                    href: resources/virtualeventwebinar.md
+                    items:
+                      - name: List
+                        href: api/virtualeventsroot-list-webinars.md
+                      - name: Get
+                        href: api/virtualeventwebinar-get.md
+                      - name: List by user role
+                        href: api/virtualeventwebinar-getbyuserrole.md
+                      - name: List by user ID and role
+                        href: api/virtualeventwebinar-getbyuseridandrole.md
+                      - name: Registration
+                        href: resources/virtualeventregistration.md
+                        items:
+                          - name: List
+                            href: api/virtualeventwebinar-list-registrations.md
+                          - name: Get
+                            href: api/virtualeventregistration-get.md
+                  - name: Session
+                    href: resources/virtualeventsession.md
+                    items:
+                      - name: List
+                        href: api/virtualevent-list-sessions.md
+                      - name: Get
+                        href: api/virtualeventsession-get.md
           - name: Employee learning
             displayName: Viva Learning
             items:

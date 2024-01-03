@@ -24,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "serviceprincipal_delete_approleassignedto" } -->
 [!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-delete-approleassignedto-permissions.md)]
 
+[!INCLUDE [rbac-approleassignments-apis-write](../includes/rbac-for-apis/rbac-approleassignments-apis-write.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
