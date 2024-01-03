@@ -173,7 +173,7 @@ This component uses the following Microsoft Graph APIs and permissions.
 
 ### Subcomponents
 
-The `mgt-people-picker` component consists of one or more subcomponents that might require other permissions than the ones listed previously. For more information, see the documentation for each subcomponent:[mgt-person](person.md).
+The `mgt-people-picker` component consists of one or more subcomponents that might require other permissions than the ones listed previously. For more information, see the documentation for each subcomponent: [mgt-person](person.md).
 
 ## Authentication
 
