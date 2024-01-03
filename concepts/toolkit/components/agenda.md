@@ -132,7 +132,7 @@ For more information about handling events, see [events](../customize-components
 
 ## Microsoft Graph permissions
 
-This component uses the following Microsoft Graph APIs and permissions:
+This component uses the following Microsoft Graph APIs and permissions.
 
 | Configuration | Permission     | API                                                       |
 | ------------- | -------------- | --------------------------------------------------------- |
@@ -142,7 +142,7 @@ The component allows you to specify a different Microsoft Graph query to call (s
 
 ### Subcomponents
 
-This component consists of one or more subcomponents that might require other permissions than the ones listed for the main component. For more information, see the documentation for each subcomponent: [mgt-people](people.md).
+The `mgt-agenda` component consists of one or more subcomponents that might require other permissions than the ones listed previously. For more information, see the documentation for each subcomponent: [mgt-people](people.md).
 
 ## Authentication
 
