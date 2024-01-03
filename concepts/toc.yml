@@ -254,9 +254,9 @@ items:
               href: toolkit/components/picker.md
             - name: Planner tasks
               href: toolkit/components/tasks.md
-            - name: Search box (preview)
+            - name: Search box
               href: toolkit/components/search-box.md
-            - name: Search results (preview)
+            - name: Search results
               href: toolkit/components/search-results.md
             - name: Taxonomy picker
               href: toolkit/components/taxonomy-picker.md
