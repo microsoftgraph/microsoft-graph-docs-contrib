@@ -67,7 +67,7 @@ To learn more, see [styling components](../customize-components/style.md).
 
 | Method                  | Description                                                                                                                                 |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| refresh(force?: boolean) | Call the method to refresh the data. By default, the UI updated only if the data changes. Pass `true` to force the component to update. |
+| refresh(force?: boolean) | Call the method to refresh the data. By default, the UI only updates if the data changes. Pass `true` to force the component to update. |
 
 ## Events
 
