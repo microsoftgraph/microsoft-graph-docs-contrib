@@ -1505,7 +1505,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 1138cb37-bd11-4084-a2b7-9f71582aeddb | - 
 | DisplayText | Read and write devices | - 
-| Description | Allows the app to read and write all device properties without a signed-in user.  It doesn't allow device creation, device deletion or update of device alternative security identifiers. | - 
+| Description | Allows the app to read and write all device properties without a signed-in user. | - 
 | AdminConsentRequired | Yes | - 
 
 [!INCLUDE [Device.ReadWrite.All](../includes/permissions-notes/Device.ReadWrite.All.md)]
