@@ -58,9 +58,6 @@ items:
           - name: Advanced query capabilities
             displayName: OData query parameters, OData
             href: /graph/aad-advanced-queries?context=graph/api/beta
-          - name: Optimize requests with query parameters
-            displayName: OData query parameters, OData
-            href: /training/modules/optimize-data-usage
       - name: Batching
         href: /graph/json-batching?context=graph/api/beta
         displayName: Batch request
@@ -72,9 +69,6 @@ items:
           - name: Service-specific limits
             href: /graph/throttling-limits?context=graph/api/beta
             displayName: throttling
-          - name: Optimize network traffic
-            displayName: throttling
-            href: /training/modules/optimize-network-traffic
       - name: Change notifications
         displayName: change notifications, rich notifications, basic notifications, subscriptions, webhooks, Azure Event Hubs, Azure Event Grids
         href: /graph/change-notifications-overview?context=graph/api/beta
