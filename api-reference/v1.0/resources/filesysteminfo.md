@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 The **fileSystemInfo** resource contains properties that are reported by the device's local file system for the local version of an item.
 This facet can be used to specify the last modified date or created date of the item as it was on the local device.
 
-It is available on the fileSystemInfo property of [driveItem][driveitem.md] resources.
+It is available on the fileSystemInfo property of [driveItem](driveitem.md) resources.
 
 ## Properties
 
