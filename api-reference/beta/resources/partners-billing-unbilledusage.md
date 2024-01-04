@@ -25,7 +25,7 @@ Represents details for unbilled Azure usage data.
 
 None.
 
-### billingPeriod enum type
+### billingPeriod values
 
 | Member             | Description                                      |
 |:-------------------|:-------------------------------------------------|
