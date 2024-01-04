@@ -65,6 +65,3 @@ Looking for the API reference for this service?
 - [Users API in Microsoft Graph v1.0](/graph/api/resources/users?view=graph-rest-1.0&preserve-view=true)
 - [Users API in Microsoft Graph beta](/graph/api/resources/users?view=graph-rest-beta&preserve-view=true)
 
-## Next steps
-
-- The [user resource type](/graph/api/resources/user).
