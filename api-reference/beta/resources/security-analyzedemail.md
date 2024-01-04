@@ -32,7 +32,7 @@ Namespace: microsoft.graph.security
 |bulkComplaintLevel|String|**TODO: Add Description**|
 |contexts|String collection|**TODO: Add Description**|
 |detectionMethods|String collection|**TODO: Add Description**|
-|directionality|[antispamDirectionality](#antispamDirectionality-values)|**TODO: Add Description**.The possible values are: `unknown`, `inbound`, `outbound`, `intraOrg`, `unknownFutureValue`.|
+|directionality|[antispamDirectionality](#antispamdirectionality-values)|**TODO: Add Description**.The possible values are: `unknown`, `inbound`, `outbound`, `intraOrg`, `unknownFutureValue`.|
 |distributionList|String|**TODO: Add Description**|
 |emailClusterId|String|**TODO: Add Description**|
 |exchangeTransportRules|[microsoft.graph.security.analyzedEmailExchangeTransportRuleInfo](../resources/security-analyzedemailexchangetransportruleinfo.md) collection|**TODO: Add Description**|
