@@ -1,6 +1,6 @@
 ---
 title: "billedUsage resource type"
-description: "billed azure usage details"
+description: "Represents details for billed Azure usage data."
 author: "abhishek-singh-ms"
 ms.localizationpriority: medium
 ms.prod: "reports"
@@ -13,24 +13,26 @@ Namespace: microsoft.graph.partners.billing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-provides details for billed azure usage.
-
-
-Inherits from [microsoft.graph.entity](../resources/entity.md).
+Represents details for billed Azure usage data.
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
-|[export](../api/partners-billing-billedusage-export.md)|[microsoft.graph.partners.billing.operation](partners-billing-operation.md)|export billed azure usage data|
+|[export](../api/partners-billing-billedusage-export.md)|[microsoft.graph.partners.billing.operation](partners-billing-operation.md)|Export the billed Azure usage data.|
 
 ## Properties
-None
+
+None.
 
 ## Relationships
+
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -41,8 +43,6 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.partners.billing.billedUsage",
-  "id": "String (identifier)"
+  "@odata.type": "#microsoft.graph.partners.billing.billedUsage"
 }
 ```
-
