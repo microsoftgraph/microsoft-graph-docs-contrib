@@ -16643,19 +16643,31 @@ items:
           - name: Partner billing reports (preview)
             items:
               - name: Overview
-                href: resources/partners-billing-usageexport-api-overview.md
-              - name: Billed usage report
+                href: resources/partners-billing-api-overview.md
+              - name: Billed usage
                 items:
-                  - name: Export data
+                  - name: Billed usage
+                    href: resources/partners-billing-billedusage.md
+                  - name: Export
                     href: api/partners-billing-billedusage-export.md
-                  - name: Check export status
-                    href: api/partners-billing-operation-get.md
-              - name: Unbilled usage report
+              - name: Manifest
                 items:
-                  - name: Export data
+                  - name: Manifest
+                    href: resources/partners-billing-manifest.md
+                  - name: Get
+                    href: api/partners-billing-manifest-get.md
+              - name: Operation
+                items:
+                  - name: Operation
+                    href: resources/partners-billing-operation.md
+                  - name: Get
+                    href: api/partners-billing-operation-get.md
+              - name: Unbilled usage
+                items:
+                  - name: Unbilled usage
+                    href: resources/partners-billing-unbilledusage.md
+                  - name: Export
                     href: api/partners-billing-unbilledusage-export.md
-                  - name: Check export status
-                    href: api/partners-billing-operation-get.md                  
       - name: Search
         items:
           - name: Query
