@@ -1,6 +1,32 @@
 {
     "changelog": [
         {
+            "ChangeList": [
+              {
+                "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
+                "ApiChange": "Resource",
+                "ChangedApiName": "cloudPcDeviceImage",
+                "ChangeType": "Addition",
+                "Description": "Added the cloudPcDeviceImage resource type.",
+                "Target": "cloudPcDeviceImage"
+              },
+              {
+                "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
+                "ApiChange": "Resource",
+                "ChangedApiName": "cloudPcGalleryImage",
+                "ChangeType": "Addition",
+                "Description": "Added the cloudPcGalleryImage resource type.",
+                "Target": "cloudPcGalleryImage"
+              }
+            ],
+            "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
+            "Cloud": "Prod",
+            "Version": "v1.0",
+            "CreatedDateTime": "2024-02-03T08:15:15.7315291Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
           "ChangeList": [
             {
               "Id": "5c60ab9e-28a1-4be3-bea7-e8db01da561d",
