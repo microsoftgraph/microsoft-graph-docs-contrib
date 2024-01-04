@@ -53,8 +53,8 @@ The following table lists the parameters that are required when you call this ac
 |:---|:---|:---|
 |displayName|String|**TODO: Add Description**|
 |description|String|**TODO: Add Description**|
-|severity|[remediationSeverity](#remediationseverity-values)|**TODO: Add Description**|
-|action|[remediationAction](#remediationaction-values)|**TODO: Add Description**|
+|severity|[microsoft.graph.security.remediationSeverity](#remediationseverity-values)|**TODO: Add Description**|
+|action|[microsoft.graph.security.remediationAction](#remediationaction-values)|**TODO: Add Description**|
 |approverUpn|String|**TODO: Add Description**|
 |remediateSendersCopy|Boolean|**TODO: Add Description**|
 |analyzedEmails|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) collection|**TODO: Add Description**|

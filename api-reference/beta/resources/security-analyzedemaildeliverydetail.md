@@ -18,8 +18,8 @@ Namespace: microsoft.graph.security
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|action|[deliveryAction](#deliveryaction-values)microsoft.graph.security.deliveryAction|**TODO: Add Description**.The possible values are: `unknown`, `deliveredToJunk`, `delivered`, `blocked`, `replaced`, `unknownFutureValue`.|
-|location|[deliveryLocation](#deliverylocation-values)microsoft.graph.security.deliveryLocation|**TODO: Add Description**.The possible values are: `unknown`, `inbox_folder`, `junkFolder`, `deletedFolder`, `quarantine`, `onprem_external`, `failed`, `dropped`, `others`, `unknownFutureValue`.|
+|action|[microsoft.graph.security.deliveryAction](#deliveryaction-values)microsoft.graph.security.deliveryAction|**TODO: Add Description**.The possible values are: `unknown`, `deliveredToJunk`, `delivered`, `blocked`, `replaced`, `unknownFutureValue`.|
+|location|[microsoft.graph.security.deliveryLocation](#deliverylocation-values)microsoft.graph.security.deliveryLocation|**TODO: Add Description**.The possible values are: `unknown`, `inbox_folder`, `junkFolder`, `deletedFolder`, `quarantine`, `onprem_external`, `failed`, `dropped`, `others`, `unknownFutureValue`.|
 
 ### deliveryAction values
 
