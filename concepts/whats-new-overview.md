@@ -33,13 +33,14 @@ Pricing update for the Teams meeting APIs starting January 1, 2024. For more inf
 ## December 2023: New in preview only
 
 ### Employee experience | Employee engagement
+
 Create and get a Viva Engage community that is a central place for conversations, files, events, and updates for people sharing a common interest or goal. Use the Viva Engage API for the following scenarios:
 
 - [Create a community](/graph/api/employeeexperience-post-communities?view=graph-rest-beta&preserve-view=true)
 - [Poll for community creation status](/graph/api/engagementasyncoperation-get?view=graph-rest-beta&preserve-view=true)
 - [Get a community](/graph/api/community-get?view=graph-rest-beta&preserve-view=true)
 
-_See the [related changelog section](https://developer.microsoft.com/graph/changelog/?search=6ef521a9-141c-48fe-a109-1082be3fb5b3)_.
+_See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=6ef521a9-141c-48fe-a109-1082be3fb5b3)_.
 
 ### Identity and access | Identity and sign-in
 
@@ -52,8 +53,11 @@ _See the [related changelog section](https://developer.microsoft.com/graph/chang
 - We have refined how you can programmatically define the [tenant-wide policy for registering new devices](/graph/api/resources/deviceregistrationpolicy?view=graph-rest-beta&preserve-view=true) using Microsoft Entra join and Microsoft Entra register within your organization. This update introduces breaking changes that require you to update your app logic to ensure continued functionality. _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=6bd09a97-53a9-401e-b0c5-266b9db06a1b)_.
 
 ### Teamwork and communications | Shift management
+
 - Get all [openShift](/graph/api/resources/openshift) objects across all teams a user is a direct member of, removing the need to specify a team ID in the request. For more information, see [team: getOpenShifts](/graph/api/team-getopenshifts?view=graph-rest-beta&preserve-view=true).
 - [Stage the deletion](/graph/api/changetrackedentity-stagefordeletion?view=graph-rest-beta&preserve-view=true) of an [openShift](/graph/api/resources/openshift), [shift](/graph/api/resources/shift), or [timeOff](/graph/api/resources/timeoff) instance in a [schedule](/graph/api/resources/schedule) in draft mode.
+
+_See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=958cb6cc-4eb0-4dec-a19d-7fe3da86b3ec)_.
 
 ## November 2023: New and generally available
 
