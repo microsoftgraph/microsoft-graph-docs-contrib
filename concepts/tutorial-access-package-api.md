@@ -12,9 +12,9 @@ ms.date: 11/01/2022
 
 # Manage access to resources using the entitlement management APIs in Microsoft Graph
 
-Managing access to all the resources that employees need, such as groups, applications, and sites, is an important function for organizations. You want to grant employees the right level of access they need to be productive and remove their access when it is no longer needed. [Microsoft Entra entitlement management](/azure/active-directory/governance/entitlement-management-overview) using Microsoft Graph APIs enables you to manage this type of access.
+Managing access to all the resources that employees need, such as groups, applications, and sites, is an important function for organizations. You want to grant employees the right level of access they need to be productive and remove their access when it is no longer needed. [Microsoft Entra entitlement management](/entra/id-governance/entitlement-management-overview) using Microsoft Graph APIs enables you to manage this type of access.
 
-In this tutorial, you learn how to develop code to create a package of resources for a marketing campaign that internal users can self-service request. Requests do not require approval and user's access expires after 30 days. For this tutorial, the marketing campaign resources are just membership in a single group, but it could be a collection of groups, applications, or SharePoint Online sites.
+In this tutorial, you learn how to develop code to create a package of resources for a marketing campaign that internal users can self-service request. Requests do not require approval and user's access expires after 30 days. For this tutorial, the marketing campaign resources are just membership in a single group, but it could be a collection of groups, applications, or SharePoint Online sites.  This tutorial uses the [entitlement management beta APIs](/graph/api/resources/entitlementmanagement-overview?view=graph-rest-beta); entitlement management also has [v1.0 APIs](/graph/api/resources/entitlementmanagement-overview?view=graph-rest-1.0).
 
 > [!NOTE]
 > The response objects shown in this tutorial might be shortened for readability.
@@ -22,7 +22,7 @@ In this tutorial, you learn how to develop code to create a package of resources
 ## Prerequisites
 
 To successfully complete this tutorial, make sure that you have the required prerequisites:
-- Microsoft Entra entitlement management requires specific licenses. For more information, see [License requirements](/azure/active-directory/governance/entitlement-management-overview#license-requirements). For this tutorial, one of the following licenses is required in your tenant:
+- Microsoft Entra entitlement management requires specific licenses. For more information, see [License requirements](/entra/id-governance/entitlement-management-overview#license-requirements). For this tutorial, one of the following licenses is required in your tenant:
     - Microsoft Entra ID P2
     - Microsoft Entra ID Governance
 - Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Global Administrator role.
