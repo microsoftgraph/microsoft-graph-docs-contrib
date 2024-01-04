@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Configure to require a specific certificate proprerties. An administrator may use this entity to specify which certificate issuer or policy OID are allowed, as part of ceritifcate-based authentication, in an [authentication strength](authenticationstrengthpolicy.md) policy.
+Configure to require specific certificate properties. An administrator may use this entity to specify which certificate issuer or policy OID are allowed, as part of ceritifcate-based authentication, in an [authentication strength](authenticationstrengthpolicy.md) policy.
 
 Inherits from [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md).
 
