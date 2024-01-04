@@ -53,7 +53,7 @@ Namespace: microsoft.graph.security
 |sizeInBytes|Int32|**TODO: Add Description**|
 |spamConfidenceLevel|String|**TODO: Add Description**|
 |subject|String|**TODO: Add Description**|
-|threatType|microsoft.graph.security.threatType|**TODO: Add Description**.The possible values are: `unknown`, `spam`, `malware`, `phishing`, `none`, `unknownFutureValue`.|
+|threatType|[threatType](#threattype-values)|**TODO: Add Description**.The possible values are: `unknown`, `spam`, `malware`, `phishing`, `none`, `unknownFutureValue`.|
 |urls|[microsoft.graph.security.analyzedEmailUrl](../resources/security-analyzedemailurl.md) collection|**TODO: Add Description**|
 |urlsCount|Int32|**TODO: Add Description**|
 
@@ -65,6 +65,17 @@ Namespace: microsoft.graph.security
 |inbound|
 |outbound|
 |intraOrg|
+|unknownFutureValue|
+
+### threatType values
+
+|Member|
+|:---|
+|unknown|
+|spam|
+|malware|
+|phishing|
+|none|
 |unknownFutureValue|
 
 ## Relationships

@@ -20,8 +20,19 @@ Namespace: microsoft.graph.security
 |:---|:---|:---|
 |detectionMethod|String|**TODO: Add Description**|
 |detonationDetails|[microsoft.graph.security.detonationDetails](../resources/security-detonationdetails.md)|**TODO: Add Description**|
-|threatType|microsoft.graph.security.threatType|**TODO: Add Description**.The possible values are: `unknown`, `spam`, `malware`, `phishing`, `none`, `unknownFutureValue`.|
+|threatType|[threatType](#threattype-values)|**TODO: Add Description**.The possible values are: `unknown`, `spam`, `malware`, `phishing`, `none`, `unknownFutureValue`.|
 |url|String|**TODO: Add Description**|
+
+### threatType values
+
+|Member|
+|:---|
+|unknown|
+|spam|
+|malware|
+|phishing|
+|none|
+|unknownFutureValue|
 
 ## Relationships
 None.
