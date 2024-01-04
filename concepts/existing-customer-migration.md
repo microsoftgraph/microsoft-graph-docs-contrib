@@ -41,15 +41,27 @@ For the tenants that comply with these requirements, the migration can be perfor
 
 ### Special case migration
 
-If your tenant has active consents with any of the below conditions, the tenant requires a special migration process. 
+If your tenant has active consents with any of the below conditions, the tenant requires a special attention. 
 - Multiple column sets per dataset 
 - Multiple scopes per dataset 
 - Multiple destination sinks per app registration
 - Combinations of the above 
 
-This process implies the consolidation of consents to meet the new experience requirements.
+Upon one-click migration, the active consents would merge under the concept of one app, one dataset, one sink. 
 
-These cases will be handled by the Microsoft Graph Data Connect team starting the second quarter of 2024. For any questions, reach out to dataconnect@microsoft.com.
+For example, consider the following consents:
+
+1. Application: Productivity_Analysis; Dataset: Message_v1; Columns: [SentTime]; Scope: [Legal]  
+2. Application: Productivity_Analysis; Dataset: Message_v1; Columns: [Message]; Scope: [Engineering] 
+3. Application: Productivity_Analysis; Dataset: TeamsChats_v2; Columns: [id]; Scope: [HR] 
+
+After migration, the consents will merge since they are under the same application: 
+
+1. Application: Productivity_Analysis; [Dataset: Message_v1; Columns: [SentTime, Message], Scope: [Legal, Engineering] , Dataset: TeamsChats_v2; Columns: [id], Scope: [HR]]
+ 
+Note that consent for extracting Columns [Message] data for the group [Legal] has been introduced. Likewise for [SentTime] data of the group [Engineering]. 
+
+For any questions, reach out to dataconnect@microsoft.com.
 
 ## Option 3: Automatic migration
 
