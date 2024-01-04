@@ -21,26 +21,6 @@
             "redirect_document_id": false
         },
         {
-            "source_path_from_root": "/api-reference/v1.0/api/entitlementmanagement-post-accesspackageresourcerequests.md",
-            "redirect_url": "/graph/api/entitlementmanagement-post-resourcerequests?view=graph-rest-1.0",
-            "redirect_document_id": false
-        },
-        {
-            "source_path_from_root": "/api-reference/beta/api/entitlementmanagement-post-resourcerequests.md",
-            "redirect_url": "/graph/api/entitlementmanagement-post-accesspackageresourcerequests?view=graph-rest-beta",
-            "redirect_document_id": false
-        },
-        {
-            "source_path_from_root": "/api-reference/v1.0/api/entitlementmanagement-list-accesspackageresourcerequests.md",
-            "redirect_url": "/graph/api/entitlementmanagement-list-resourcerequests?view=graph-rest-1.0",
-            "redirect_document_id": false
-        },
-        {
-            "source_path_from_root": "/api-reference/beta/api/entitlementmanagement-list-resourcerequests.md",
-            "redirect_url": "/graph/api/entitlementmanagement-list-accesspackageresourcerequests?view=graph-rest-beta",
-            "redirect_document_id": false
-        },
-        {
             "source_path_from_root": "/api-reference/v1.0/api/entitlementmanagement-post-accesspackageassignmentpolicies.md",
             "redirect_url": "/graph/api/entitlementmanagement-post-assignmentpolicies?view=graph-rest-1.0",
             "redirect_document_id": false
@@ -88,6 +68,56 @@
         {
             "source_path_from_root": "/api-reference/beta/api/entitlementmanagement-list-assignments.md",
             "redirect_url": "/graph/api/entitlementmanagement-list-accesspackageassignments?view=graph-rest-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/v1.0/api/entitlementmanagement-list-accesspackageresourceenvironment.md",
+            "redirect_url": "/graph/api/entitlementmanagement-list-resourceenvironments?view=graph-rest-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/api/entitlementmanagement-list-resourceenvironments.md",
+            "redirect_url": "/graph/api/entitlementmanagement-list-accesspackageresourceenvironment?view=graph-rest-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/v1.0/api/entitlementmanagement-post-accesspackageresourcerequests.md",
+            "redirect_url": "/graph/api/entitlementmanagement-post-resourcerequests?view=graph-rest-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/api/entitlementmanagement-post-resourcerequests.md",
+            "redirect_url": "/graph/api/entitlementmanagement-post-accesspackageresourcerequests?view=graph-rest-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/v1.0/api/entitlementmanagement-list-accesspackageresourcerequests.md",
+            "redirect_url": "/graph/api/entitlementmanagement-list-resourcerequests?view=graph-rest-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/api/entitlementmanagement-list-resourcerequests.md",
+            "redirect_url": "/graph/api/entitlementmanagement-list-accesspackageresourcerequests?view=graph-rest-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/v1.0/api/accesspackagecatalog-list-accesspackageresources.md",
+            "redirect_url": "/graph/api/accesspackagecatalog-list-resources?view=graph-rest-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/api/accesspackagecatalog-list-resources.md",
+            "redirect_url": "/graph/api/accesspackagecatalog-list-accesspackageresources?view=graph-rest-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/v1.0/api/accesspackagecatalog-list-accesspackageresourceroles.md",
+            "redirect_url": "/graph/api/accesspackagecatalog-list-resourceroles?view=graph-rest-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/api/accesspackagecatalog-list-resourceroles.md",
+            "redirect_url": "/graph/api/accesspackagecatalog-list-accesspackageresourceroles?view=graph-rest-beta",
             "redirect_document_id": false
         },
         {
