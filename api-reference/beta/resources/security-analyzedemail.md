@@ -78,6 +78,26 @@ Namespace: microsoft.graph.security
 |none|
 |unknownFutureValue|
 
+### remediationSeverity values
+
+|Member|
+|:---|
+|low|
+|medium|
+|high|
+|unknownFutureValue|
+
+### remediationAction values
+
+|Member|
+|:---|
+|moveToJunk|
+|moveToInbox|
+|hardDelete|
+|softDelete|
+|moveToDeletedItems|
+|unknownFutureValue|
+
 ## Relationships
 None.
 

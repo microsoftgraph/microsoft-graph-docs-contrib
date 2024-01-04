@@ -59,26 +59,6 @@ The following table lists the parameters that are required when you call this ac
 |remediateSendersCopy|Boolean|**TODO: Add Description**|
 |analyzedEmails|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) collection|**TODO: Add Description**|
 
-### remediationSeverity values
-
-|Member|
-|:---|
-|low|
-|medium|
-|high|
-|unknownFutureValue|
-
-### remediationAction values
-
-|Member|
-|:---|
-|moveToJunk|
-|moveToInbox|
-|hardDelete|
-|softDelete|
-|moveToDeletedItems|
-|unknownFutureValue|
-
 ## Response
 
 If successful, this action returns a `204 No Content` response code.
