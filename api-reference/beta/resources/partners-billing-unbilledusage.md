@@ -25,6 +25,14 @@ Represents details for unbilled Azure usage data.
 
 None.
 
+### billingPeriod enum type
+
+| Member             | Description                                      |
+|:-------------------|:-------------------------------------------------|
+| current            | The current billing period.                      |
+| last               | The billing period for the last month.           |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
+
 ## Relationships
 
 None.
