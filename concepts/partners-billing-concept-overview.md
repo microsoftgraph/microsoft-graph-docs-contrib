@@ -47,5 +47,5 @@ Looking for the API reference for this service?
 
 ## Next steps
 
-- To learn more about the partner billing APIs, see [Partner billing invoicing and reconciliation data API overview](/graph/api/resources/partners-billing-usageexport-api-overview?view=graph-rest-beta&preserve-view=true).
+- To learn more about the partner billing APIs, see [Partner billing invoicing and reconciliation data API overview](/graph/api/resources/partners-billing-api-overview?view=graph-rest-beta&preserve-view=true).
 - Try the partner billing APIs in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
