@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of an [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) object. 
-Can be used to update the [fido2combinationConfigurations](../resources/fido2combinationconfiguration.md) or [x509certificatecombinationconfiguration](../resources/x509certificatecombinationconfiguration.md) objects, as part of custom authentication strength policies.
+The proprties can be one of the following types that are derived from the `authenticationCombinationConfiguration` object:
+* [fido2combinationConfigurations](../resources/fido2combinationconfiguration.md)
+* [x509certificatecombinationconfiguration](../resources/x509certificatecombinationconfiguration.md)
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

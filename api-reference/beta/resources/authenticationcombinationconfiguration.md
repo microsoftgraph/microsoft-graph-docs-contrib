@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An authentication combination configuration sets restrictions on specific types, modes, versions, etc. of an authentication method that is tied to specific auth method combinations used in an [authentication strength](authenticationstrengths-overview.md).
-
-`authenticationCombinationConfiguration` is an abstract type. In use, [fido2combinationConfigurations](fido2combinationconfiguration.md) or [x509certificatecombinationconfiguration](x509certificatecombinationconfiguration.md) may be created and managed as described below.
+An abstract type that defines an authentication combination configuration sets restrictions on specific types, modes, versions, etc. of an authentication method that is tied to specific auth method combinations used in an [authentication strength](authenticationstrengths-overview.md). This abstract type is inherited by the following resources that define the various types of combination configuration:
+* [fido2combinationConfigurations](fido2combinationconfiguration.md) 
+* [x509certificatecombinationconfiguration](x509certificatecombinationconfiguration.md)
 
 Inherits from [entity](../resources/entity.md).
 

@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new authenticationCombinationConfiguration object. Can be created for [fido2combinationConfigurations](../resources/fido2combinationconfiguration.md) or [x509certificatecombinationconfiguration](../resources/x509certificatecombinationconfiguration.md) objects, as part of custom authentication strength policies.
+Create a new authenticationCombinationConfiguration object. The following types that are derived from the `authenticationCombinationConfiguration` object:
+* [fido2combinationConfigurations](../resources/fido2combinationconfiguration.md)
+* [x509certificatecombinationconfiguration](../resources/x509certificatecombinationconfiguration.md)
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -52,7 +54,7 @@ You can specify the following properties when creating an **authenticationCombin
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [fido2CombinationConfiguration](../resources/fido2CombinationConfiguration.md) or [x509certificatecombinationconfiguration](../resources/x509certificatecombinationconfiguration.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) object in the response body.
 
 ## Examples
 
