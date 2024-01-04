@@ -53,9 +53,6 @@ The following table lists some of the common uses for the cloud communications A
 | presence | [presence properties](/graph/api/resources/presence?view=graph-rest-beta&preserve-view=true#properties) |
 | callRecord | [callRecord properties](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta&preserve-view=true#properties) |
 
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
-
 ## See also
 
 - [Cloud communications API samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples/)

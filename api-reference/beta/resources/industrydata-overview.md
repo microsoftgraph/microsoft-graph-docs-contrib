@@ -165,10 +165,6 @@ Uploaded data files must be validated before an inbound flow can process the dat
 
 The **validate** action creates a long-running [fileValidateOperation](industrydata-filevalidateoperation.md). The URI for the **fileValidateOperation** is provided in the `Location` header of the response. You can use this URI to track the status of the long-running operation, and any errors or warnings created during validation.
 
-## What's new
-
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
-
 ## Next steps
 
 Use the Microsoft Graph industry data APIs as an extract, transform, and load (ETL) engine. To learn more:

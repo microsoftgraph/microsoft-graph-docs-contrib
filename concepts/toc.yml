@@ -294,8 +294,6 @@ items:
             displayName: users
           - name: Default user permissions
             href: /azure/active-directory/fundamentals/users-default-permissions?context=graph/context
-          - name: "Training: Access user data"
-            href: /training/modules/msgraph-access-user-data
       - name: Groups
         items:
           - name: Overview
@@ -307,8 +305,6 @@ items:
             href: group-set-options.md
           - name: Microsoft 365 group settings
             href: group-directory-settings.md
-          - name: "Training: Manage group lifecycle"
-            href: /training/modules/msgraph-access-group-data
       - name: Applications
         items:
           - name: Overview
@@ -1020,9 +1016,6 @@ items:
               - name: Advanced query capabilities
                 displayName: OData query parameters, OData
                 href: aad-advanced-queries.md
-              - name: "Training: Optimize requests with query parameters"
-                displayName: OData query parameters, OData
-                href: /training/modules/optimize-data-usage
           - name: Batching
             href: json-batching.md
             displayName: Batch request
@@ -1034,9 +1027,6 @@ items:
               - name: Service-specific limits
                 displayName: throttling
                 href: throttling-limits.md
-              - name: "Training: Optimize network traffic"
-                href: /training/modules/optimize-network-traffic
-                displayName: throttling
           - name: Enable metered APIs
             href: metered-api-setup.md
           - name: Work with Graph Explorer
