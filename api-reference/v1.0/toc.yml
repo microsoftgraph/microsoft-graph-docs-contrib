@@ -77,7 +77,7 @@ items:
             displayName: throttling
       - name: Change notifications
         displayName: change notifications, rich notifications, basic notifications, subscriptions, webhooks, Azure Event Hubs, Azure Event Grids
-        href: /graph/webhooks?context=graph/api/1.0
+        href: /graph/change-notifications-overview?context=graph/api/1.0
       - name: Change tracking
         displayName: delta query
         href: /graph/delta-query-overview?context=graph/api/1.0
@@ -1489,7 +1489,7 @@ items:
         displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
         items:
           - name: Overview
-            href: resources/webhooks.md
+            href: resources/change-notifications-api-overview.md
           - name: Subscription
             items:
               - name: Subscription
