@@ -7,6 +7,7 @@ ms.reviewer: dkershaw
 ms.localizationpriority: medium
 ms.prod: "applications"
 ms.date: 11/11/2022
+#Customer intent: As a developer, I want to learn what to review in my app registration, so that I can update my code accordingly as I migrate my app from Azure AD Graph to Microsoft Graph.
 ---
 
 # Review app registration, permissions, and consent
@@ -17,7 +18,7 @@ For any app update, there are three areas to consider:
 
 - **App registration**: You can continue to use your existing app registration (`appId`) in your application code.  
 
-    You do **not** have to re-register your app to migrate to Microsoft Graph. Simply update the code, test heavily, and then deploy your update.  
+    You do **not** have to re-register your app to migrate to Microsoft Graph. Update the code, test heavily, and then deploy your update.  
 
 - **Permissions**: You should change your configured permissions to the equivalent Microsoft Graph permissions. Delegated permissions which were granted for Azure Active Directory (Azure AD) Graph will be implicitly considered granted for Microsoft Graph also. Application permissions (app roles) will need to be granted again.
 
