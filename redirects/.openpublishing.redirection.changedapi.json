@@ -121,6 +121,36 @@
             "redirect_document_id": false
         },
         {
+            "source_path_from_root": "/api-reference/v1.0/api/accesspackage-list-accesspackageresourcerolescopes.md",
+            "redirect_url": "/graph/api/accesspackage-list-resourcerolescopes?view=graph-rest-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/api/accesspackage-list-resourcerolescopes.md",
+            "redirect_url": "/graph/api/accesspackage-list-accesspackageresourcerolescopes?view=graph-rest-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/v1.0/api/accesspackage-post-accesspackageresourcerolescopes.md",
+            "redirect_url": "/graph/api/accesspackage-post-resourcerolescopes?view=graph-rest-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/api/accesspackage-post-resourcerolescopes.md",
+            "redirect_url": "/graph/api/accesspackage-post-accesspackageresourcerolescopes?view=graph-rest-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/v1.0/api/accesspackage-delete-accesspackageresourcerolescopes.md",
+            "redirect_url": "/graph/api/accesspackage-delete-resourcerolescopes?view=graph-rest-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/api/accesspackage-delete-resourcerolescopes.md",
+            "redirect_url": "/graph/api/accesspackage-delete-accesspackageresourcerolescopes?view=graph-rest-beta",
+            "redirect_document_id": false
+        },
+        {
             "source_path_from_root": "/api-reference/v1.0/api/conditionalaccessroot-post-authenticationcontextclassreferences.md",
             "redirect_url": "/graph/api/authenticationcontextclassreference-update?view=graph-rest-1.0",
             "redirect_document_id": false
