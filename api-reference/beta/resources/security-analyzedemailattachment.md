@@ -23,18 +23,7 @@ Namespace: microsoft.graph.security
 |fileType|String|**TODO: Add Description**|
 |sha256|String|**TODO: Add Description**|
 |threatName|String|**TODO: Add Description**|
-|threatType|[microsoft.graph.security.threatType](#threattype-values)|**TODO: Add Description**.The possible values are: `unknown`, `spam`, `malware`, `phishing`, `none`, `unknownFutureValue`.|
-
-### threatType values
-
-|Member|
-|:---|
-|unknown|
-|spam|
-|malware|
-|phishing|
-|none|
-|unknownFutureValue|
+|threatType|microsoft.graph.security.threatType|**TODO: Add Description**.The possible values are: `unknown`, `spam`, `malware`, `phishing`, `none`, `unknownFutureValue`.|
 
 ## Relationships
 None.
