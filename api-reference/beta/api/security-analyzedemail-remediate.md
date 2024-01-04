@@ -53,8 +53,8 @@ The following table lists the parameters that are required when you call this ac
 |:---|:---|:---|
 |displayName|String|**TODO: Add Description**|
 |description|String|**TODO: Add Description**|
-|severity|[microsoft.graph.security.remediationSeverity]|**TODO: Add Description**.The possible values are: `low`, `medium`, `high`, `unknownFutureValue`.|
-|action|[microsoft.graph.security.remediationAction]|**TODO: Add Description**.The possible values are: `moveToJunk`, `moveToInbox`, `hardDelete`, `softDelete`, `moveToDeletedItems`, `unknownFutureValue`.|
+|severity|microsoft.graph.security.remediationSeverity|**TODO: Add Description**.The possible values are: `low`, `medium`, `high`, `unknownFutureValue`.|
+|action|microsoft.graph.security.remediationAction|**TODO: Add Description**.The possible values are: `moveToJunk`, `moveToInbox`, `hardDelete`, `softDelete`, `moveToDeletedItems`, `unknownFutureValue`.|
 |approverUpn|String|**TODO: Add Description**|
 |remediateSendersCopy|Boolean|**TODO: Add Description**|
 |analyzedEmails|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) collection|**TODO: Add Description**|
