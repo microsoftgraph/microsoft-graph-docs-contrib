@@ -19,10 +19,7 @@ Namespace: microsoft.graph.security
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List analyzedEmail objects](../api/security-collaborationroot-list-analyzedemails.md)|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) collection|Get a list of the [microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) objects and their properties.|
-|[Create analyzedEmail](../api/security-collaborationroot-post-analyzedemails.md)|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md)|Create a new [microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) object.|
 |[Get analyzedEmail](../api/security-analyzedemail-get.md)|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md)|Read the properties and relationships of a [microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) object.|
-|[Update analyzedEmail](../api/security-analyzedemail-update.md)|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md)|Update the properties of a [microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) object.|
-|[Delete analyzedEmail](../api/security-collaborationroot-delete-analyzedemails.md)|None|Delete a [microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) object.|
 |[remediate](../api/security-analyzedemail-remediate.md)|None|**TODO: Add Description**|
 
 ## Properties
