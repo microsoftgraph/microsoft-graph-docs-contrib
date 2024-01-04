@@ -21,6 +21,26 @@
             "redirect_document_id": false
         },
         {
+            "source_path_from_root": "/api-reference/v1.0/api/entitlementmanagement-post-accesspackageresourcerequests.md",
+            "redirect_url": "/graph/api/entitlementmanagement-post-resourcerequests?view=graph-rest-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/api/entitlementmanagement-post-resourcerequests.md",
+            "redirect_url": "/graph/api/entitlementmanagement-post-accesspackageresourcerequests?view=graph-rest-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/v1.0/api/entitlementmanagement-list-accesspackageresourcerequests.md",
+            "redirect_url": "/graph/api/entitlementmanagement-list-resourcerequests?view=graph-rest-1.0",
+            "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/api-reference/beta/api/entitlementmanagement-list-resourcerequests.md",
+            "redirect_url": "/graph/api/entitlementmanagement-list-accesspackageresourcerequests?view=graph-rest-beta",
+            "redirect_document_id": false
+        },
+        {
             "source_path_from_root": "/api-reference/v1.0/api/entitlementmanagement-post-accesspackageassignmentpolicies.md",
             "redirect_url": "/graph/api/entitlementmanagement-post-assignmentpolicies?view=graph-rest-1.0",
             "redirect_document_id": false
