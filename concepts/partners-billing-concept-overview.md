@@ -43,7 +43,7 @@ Use the [Get operation](/graph/api/partners-billing-operation-get) endpoint to p
 
 Looking for the API reference for this service?
 
-- [Partner billing API in Microsoft Graph beta](/graph/api/resources/partners-billing-usageexport-api-overview?view=graph-rest-beta&preserve-view=true)
+- [Partner billing API in Microsoft Graph beta](/graph/api/resources/partners-billing-api-overview?view=graph-rest-beta&preserve-view=true)
 
 ## Next steps
 
