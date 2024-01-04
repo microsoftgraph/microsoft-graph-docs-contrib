@@ -32,7 +32,7 @@ Namespace: microsoft.graph.security
 |bulkComplaintLevel|String|**TODO: Add Description**|
 |contexts|String collection|**TODO: Add Description**|
 |detectionMethods|String collection|**TODO: Add Description**|
-|directionality|microsoft.graph.security.antispamDirectionality|**TODO: Add Description**.The possible values are: `unknown`, `inbound`, `outbound`, `intraOrg`, `unknownFutureValue`.|
+|directionality|[antispamDirectionality](#antispamDirectionality-values)|**TODO: Add Description**.The possible values are: `unknown`, `inbound`, `outbound`, `intraOrg`, `unknownFutureValue`.|
 |distributionList|String|**TODO: Add Description**|
 |emailClusterId|String|**TODO: Add Description**|
 |exchangeTransportRules|[microsoft.graph.security.analyzedEmailExchangeTransportRuleInfo](../resources/security-analyzedemailexchangetransportruleinfo.md) collection|**TODO: Add Description**|
@@ -56,6 +56,16 @@ Namespace: microsoft.graph.security
 |threatType|microsoft.graph.security.threatType|**TODO: Add Description**.The possible values are: `unknown`, `spam`, `malware`, `phishing`, `none`, `unknownFutureValue`.|
 |urls|[microsoft.graph.security.analyzedEmailUrl](../resources/security-analyzedemailurl.md) collection|**TODO: Add Description**|
 |urlsCount|Int32|**TODO: Add Description**|
+
+### antispamDirectionality values
+
+|Member|
+|:---|
+|unknown|
+|inbound|
+|outbound|
+|intraOrg|
+|unknownFutureValue|
 
 ## Relationships
 None.
