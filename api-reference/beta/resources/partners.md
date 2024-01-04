@@ -1,6 +1,6 @@
 ---
 title: "partners resource type"
-description: "Partner details"
+description: "Represents billing details for a Microsoft direct partner."
 author: "abhishek-singh-ms"
 ms.localizationpriority: medium
 ms.prod: "reports"
@@ -13,24 +13,27 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides billing details for partner.
-
-
-Inherits from [entity](../resources/entity.md).
+Represents billing details for a Microsoft direct partner.
 
 ## Methods
-None
+
+None.
 
 ## Properties
-None
+
+None.
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
-|billing|[billing](partners-billing-billing.md)|Provides billing details for partner.|
+|billing|[microsoft.graph.partners.billing.billing](partners-billing-billing.md)|Represents billing details for billed and unbilled data.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+
+The following JSON representation shows the resource type.
+
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -41,8 +44,6 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.partners",
-  "id": "String (identifier)"
+  "@odata.type": "#microsoft.graph.partners"
 }
 ```
-
