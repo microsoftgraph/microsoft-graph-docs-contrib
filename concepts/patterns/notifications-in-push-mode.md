@@ -49,6 +49,5 @@ The following considerations support the use of this integration pattern:
 ## See also
 
 - [Change notifications](./../change-notifications-overview.md)
-- [Training: use change notifications and track changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges)
 - [Real-time presence with Microsoft 365](/azure/architecture/solution-ideas/articles/presence-microsoft-365-power-platform)
   
