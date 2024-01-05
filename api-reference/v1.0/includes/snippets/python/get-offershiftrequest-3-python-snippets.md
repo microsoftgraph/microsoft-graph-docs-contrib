@@ -14,12 +14,9 @@ request_body = OfferShiftRequest(
 	recipient_user_id = "fe278b61-21ac-4872-8b41-1962bbb98e3c",
 )
 
-request_configuration = OfferShiftRequestsRequestBuilder.OfferShiftRequestsRequestBuilderPostRequestConfiguration(
-headers = {
-		'Authorization' : "Bearer {token}",
-}
+request_configuration = OfferShiftRequestsRequestBuilder.OfferShiftRequestsRequestBuilderPostRequestConfiguration()
+request_configuration.headers.add("Authorization", "Bearer {token}")
 
-)
 
 result = await graph_client.teams.by_team_id('team-id').schedule.offer_shift_requests.post(request_body, request_configuration = request_configuration)
 

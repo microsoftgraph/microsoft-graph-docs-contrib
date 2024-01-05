@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of [connectedOrganization](../resources/connectedorganization.md) objects.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

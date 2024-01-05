@@ -73,6 +73,7 @@
       "CreatedDateTime": "2023-05-03T16:31:23.725417Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
+   
     },
     {
       "ChangeList": [
@@ -1031,7 +1032,7 @@
         "ApiChange": "Method",
         "ChangedApiName": "usage",
         "ChangeType": "Addition",
-        "Description": "Added the [usage](https://learn.microsoft.com/en-us/graph/api/resources/authenticationStrengthPolicy-usage?view=graph-rest-1.0) method to the [authenticationStrengthPolicy](https://learn.microsoft.com/en-us/graph/api/resources/authenticationStrengthPolicy?view=graph-rest-1.0) resource.",
+        "Description": "Added the [usage](https://learn.microsoft.com/en-us/graph/api/authenticationStrengthPolicy-usage?view=graph-rest-1.0) method to the [authenticationStrengthPolicy](https://learn.microsoft.com/en-us/graph/api/resources/authenticationStrengthPolicy?view=graph-rest-1.0) resource.",
         "Target": "authenticationStrengthPolicy"
         }
       ],

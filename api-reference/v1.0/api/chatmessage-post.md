@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Send a new [chatMessage](../resources/chatmessage.md) in the specified [channel](../resources/channel.md) or a [chat](../resources/chat.md).
 
-> **Note**: We don't recommend that you use this API for data migration. It does not have the throughput necessary for a typical migration.
+> **Note**: We don't recommend using this API for data migration. It does not have the throughput necessary for a typical migration.
 
 > **Note**: It is a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file. Only send messages that people will read.
 
@@ -21,7 +21,7 @@ Send a new [chatMessage](../resources/chatmessage.md) in the specified [channel]
 
 ## Permissions
 
-The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request the least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### Permissions for channel
 | Permission type                        | Permissions (from least to most privileged) |
@@ -30,9 +30,9 @@ The following tables show the least privileged permission or permissions require
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Teamwork.Migrate.All |
 
-> **Note**: Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
+> **Note**: Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use the alternative permissions listed in the table.
 
-> **Note**: Application permissions are *only* supported for [migration](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams). In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data imported.
+> **Note**: Application permissions are *only* supported for [migration](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams). In the future, Microsoft might require you or your customers to pay additional fees based on the amount of data imported.
 
 ### Permissions for chat
 <!-- { "blockType": "permissions", "name": "chatmessage_post_2" } -->
@@ -334,7 +334,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Send message containing cards
+### Example 3: Send a message containing cards
 
 #### Request
 The following example shows a request.
@@ -608,9 +608,9 @@ Content-type: application/json
 #### Request
 The following example shows a request.
 
-> **Note:** The **temporaryId** in the **hostedContents** collection is a random ID, but must be same across the **body** and **hostedContents** elements. (Notice the **temporaryId** set to `1` and the reference in body as `../hostedContents/1/$value`.)
+> **Note:** The **temporaryId** in the **hostedContents** collection is a random ID but must be the same across the **body** and **hostedContents** elements. (Notice the **temporaryId** set to `1` and the reference in the body as `../hostedContents/1/$value`.)
 
-**contentBytes** must be set to binary string Base64-encoded bytes. You can do this in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`. Microsoft .NET SDK users do not need to perform the conversion to Base64 encoded bytes as the SDK handles it for you.
+**contentBytes** must be set to binary string Base64-encoded bytes. You can do it in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`. Microsoft .NET SDK users don't need to convert to Base64 encoded bytes as the SDK handles it for you.
 
 
 # [HTTP](#tab/http)
@@ -731,10 +731,10 @@ Content-type: application/json
 The following example shows a request.
 
 > **Notes:** 
-> * The **temporaryId** in the **hostedContents** collection is a random ID, but must be same across the **content** (in **attachments**) and **hostedContents** elements. (Notice the **temporaryId** set to `1` and the reference in content as `../hostedContents/1/$value`.).
+> * The **temporaryId** in the **hostedContents** collection is a random ID, but must be the same across the **content** (in **attachments**) and **hostedContents** elements. (Notice the **temporaryId** set to `1` and the reference in content as `../hostedContents/1/$value`.).
 > * The maximum possible size of hosted content is 4 MB.
 
-**contentBytes** must be set to binary string Base64-encoded bytes. You can do this in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`. Microsoft .NET SDK users do not need to perform the conversion to Base64 encoded bytes as the SDK handles it for you.
+**contentBytes** must be set to binary string Base64-encoded bytes. You can do it in C# by using `Convert.ToBase64String(File.ReadAllBytes("image.png"));`. Microsoft .NET SDK users don't need to convert to Base64 encoded bytes as the SDK handles it for you.
 
 
 # [HTTP](#tab/http)
@@ -1175,7 +1175,7 @@ The following example shows a request.
 
 > **Note:** When specifying a Teams app to attribute a card to, the Microsoft Entra app ID used to make the call must match the Microsoft Entra app ID of the Teams app. The Microsoft Entra app ID of the Teams app can be specified in the *webApplicationInfo* section of the app's manifest. Refer to the following documentation on the current [Teams app manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
 >
-> Furthermore, the app specified in the payload must be installed either for the user sending the message or in the chat or channel in which the message is being sent.
+> Furthermore, the app specified in the payload must be installed for the user sending the message or in the chat or channel in which the message is being sent.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -1564,7 +1564,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "html",
-        "content": "<span contenteditable=\"false\" title=\"Face in clouds\" type=\"(faceinclouds)\" class=\"animated-emoticon-50-faceinclouds\"><img itemscope=\"\" itemtype=\"http://schema.skype.com/Emoji\" itemid=\"faceinclouds\" src=\"https://statics.teams.cdn.office.net/evergreen-assets/personal-expressions/v2/assets/emoticons/faceinclouds/default/50_f.png\" title=\"Face in clouds\" alt=\"😶‍🌫️\" style=\"width:50px;height:50px;\"></span>"
+        "content": "<emoji id=\"faceinclouds\" alt=\"😶‍🌫️\" title=\"Face in clouds\"></emoji>"
     },
     "attachments": [],
     "mentions": [],

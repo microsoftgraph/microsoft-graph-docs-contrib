@@ -59,7 +59,6 @@ If successful, this method returns a `200 OK` response code and a [crossTenantAc
   "name": "get_crosstenantaccesspolicyconfigurationdefault"
 }
 -->
-
 ``` http
 GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/default
 ```
@@ -241,6 +240,15 @@ Content-Type: application/json
         }
       ]
     }
+  },
+  "invitationRedemptionIdentityProviderConfiguration": 
+  { 
+        "primaryIdentityProviderPrecedenceOrder": [ 
+            "externalFederation", 
+            "azureActiveDirectory", 
+            "socialIdentityProviders" 
+        ],
+        "fallbackIdentityProvider": "defaultConfiguredIdp" 
   }
 }
 ```

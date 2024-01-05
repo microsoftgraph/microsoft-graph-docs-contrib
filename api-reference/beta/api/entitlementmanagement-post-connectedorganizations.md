@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Create a new [connectedOrganization](../resources/connectedorganization.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

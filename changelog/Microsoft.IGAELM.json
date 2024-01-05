@@ -261,6 +261,58 @@
     {
       "ChangeList": [
         {
+          "Id": "5ac2f3fa-1a74-47cf-ad36-ea236d08f631",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "socialIdentitySourceType",
+          "ChangeType": "Addition",
+          "Description": "Added the **socialIdentitySourceType** enumeration type.",
+          "Target": "socialIdentitySourceType"
+        },
+        {
+          "Id": "5ac2f3fa-1a74-47cf-ad36-ea236d08f631",
+          "ApiChange": "Resource",
+          "ChangedApiName": "socialIdentitySource",
+          "ChangeType": "Addition",
+          "Description": "Added the [socialIdentitySource](https://learn.microsoft.com/en-us/graph/api/resources/socialIdentitySource?view=graph-rest-beta) resource type.",
+          "Target": "socialIdentitySource"
+        }
+      ],
+      "Id": "5ac2f3fa-1a74-47cf-ad36-ea236d08f631",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-12-01T15:29:30.5673692Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4515e0c4-a406-4d9c-bfa8-a6ffdf7aa2f4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "socialIdentitySourceType",
+          "ChangeType": "Addition",
+          "Description": "Added the **socialIdentitySourceType** enumeration type.",
+          "Target": "socialIdentitySourceType"
+        },
+        {
+          "Id": "4515e0c4-a406-4d9c-bfa8-a6ffdf7aa2f4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "socialIdentitySource",
+          "ChangeType": "Addition",
+          "Description": "Added the [socialIdentitySource](https://learn.microsoft.com/en-us/graph/api/resources/socialIdentitySource?view=graph-rest-1.0) resource type.",
+          "Target": "socialIdentitySource"
+        }
+      ],
+      "Id": "4515e0c4-a406-4d9c-bfa8-a6ffdf7aa2f4",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-12-04T15:29:30.5677461Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "04180ef2-a3fe-4dcb-9c30-b8675845d392",
           "ApiChange": "Method",
           "ChangedApiName": "Get",

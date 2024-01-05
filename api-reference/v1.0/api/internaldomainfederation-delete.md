@@ -20,7 +20,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "internaldomainfederation_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/internaldomainfederation-delete-permissions.md)]
 
-The calling user must be assigned one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json):
+The calling user must be assigned one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
 - Security Administrator
 - External Identity Provider Administrator

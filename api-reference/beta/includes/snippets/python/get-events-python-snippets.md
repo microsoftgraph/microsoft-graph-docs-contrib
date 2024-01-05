@@ -14,11 +14,9 @@ query_params = EventsRequestBuilder.EventsRequestBuilderGetQueryParameters(
 
 request_configuration = EventsRequestBuilder.EventsRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
-headers = {
-			'Prefer' : "outlook.timezone=\"Pacific Standard Time\"",
-}
-
 )
+request_configuration.headers.add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
+
 
 result = await graph_client.me.events.get(request_configuration = request_configuration)
 

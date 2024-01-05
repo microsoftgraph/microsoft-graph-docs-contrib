@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Delete an [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 

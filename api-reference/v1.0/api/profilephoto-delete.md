@@ -13,6 +13,9 @@ Namespace: microsoft.graph
 
 Delete the photo for the signed-in user or the specified group. 
 
+> [!NOTE]
+> 
+> The delete operation supports only user or group photos, but _not Outlook contact nor Teams photos_.
 
 ## Permissions
 
@@ -75,6 +78,7 @@ If successful, this method returns a `200 OK` response code.
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_profilephoto"
@@ -82,6 +86,17 @@ The following example shows a request.
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/photo/$value
 ```
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-profilephoto-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-profilephoto-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 The following example shows the response.

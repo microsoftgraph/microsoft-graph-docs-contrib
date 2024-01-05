@@ -6,28 +6,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models.ExternalConnectors;
 
-var requestBody = new Microsoft.Graph.Beta.Models.ExternalConnectors.ExternalItem
+var requestBody = new ExternalItem
 {
-	Acl = new List<Microsoft.Graph.Beta.Models.ExternalConnectors.Acl>
+	Acl = new List<Acl>
 	{
-		new Microsoft.Graph.Beta.Models.ExternalConnectors.Acl
+		new Acl
 		{
-			Type = Microsoft.Graph.Beta.Models.ExternalConnectors.AclType.User,
+			Type = AclType.User,
 			Value = "e811976d-83df-4cbd-8b9b-5215b18aa874",
-			AccessType = Microsoft.Graph.Beta.Models.ExternalConnectors.AccessType.Grant,
-			IdentitySource = Microsoft.Graph.Beta.Models.ExternalConnectors.IdentitySourceType.AzureActiveDirectory,
+			AccessType = AccessType.Grant,
+			IdentitySource = IdentitySourceType.AzureActiveDirectory,
 		},
-		new Microsoft.Graph.Beta.Models.ExternalConnectors.Acl
+		new Acl
 		{
-			Type = Microsoft.Graph.Beta.Models.ExternalConnectors.AclType.Group,
+			Type = AclType.Group,
 			Value = "14m1b9c38qe647f6a",
-			AccessType = Microsoft.Graph.Beta.Models.ExternalConnectors.AccessType.Deny,
-			IdentitySource = Microsoft.Graph.Beta.Models.ExternalConnectors.IdentitySourceType.External,
+			AccessType = AccessType.Deny,
+			IdentitySource = IdentitySourceType.External,
 		},
 	},
-	Properties = new Microsoft.Graph.Beta.Models.ExternalConnectors.Properties
+	Properties = new Properties
 	{
 		AdditionalData = new Dictionary<string, object>
 		{
@@ -42,12 +43,14 @@ var requestBody = new Microsoft.Graph.Beta.Models.ExternalConnectors.ExternalIte
 			},
 		},
 	},
-	Content = new Microsoft.Graph.Beta.Models.ExternalConnectors.ExternalItemContent
+	Content = new ExternalItemContent
 	{
 		Value = "Error in payment gateway...",
-		Type = Microsoft.Graph.Beta.Models.ExternalConnectors.ExternalItemContentType.Text,
+		Type = ExternalItemContentType.Text,
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.External.Connections["{externalConnection-id}"].Items["{externalItem-id}"].PutAsync(requestBody);
 
 

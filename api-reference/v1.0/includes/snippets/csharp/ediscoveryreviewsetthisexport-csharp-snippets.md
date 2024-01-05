@@ -6,15 +6,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Security.Cases.EdiscoveryCases.Item.ReviewSets.Item.MicrosoftGraphSecurityExport;
+using Microsoft.Graph.Models.Security;
 
-var requestBody = new Microsoft.Graph.Security.Cases.EdiscoveryCases.Item.ReviewSets.Item.MicrosoftGraphSecurityExport.ExportPostRequestBody
+var requestBody = new ExportPostRequestBody
 {
 	OutputName = "Export via API",
 	Description = "Export for the Contoso investigation",
-	ExportOptions = Microsoft.Graph.Models.Security.ExportOptions.OriginalFiles | Microsoft.Graph.Models.Security.ExportOptions.Tags,
-	ExportStructure = Microsoft.Graph.Models.Security.ExportFileStructure.Directory,
+	ExportOptions = ExportOptions.OriginalFiles | ExportOptions.Tags,
+	ExportStructure = ExportFileStructure.Directory,
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].ReviewSets["{ediscoveryReviewSet-id}"].MicrosoftGraphSecurityExport.PostAsync(requestBody);
 
 

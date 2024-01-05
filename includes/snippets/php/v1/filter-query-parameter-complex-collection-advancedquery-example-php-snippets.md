@@ -16,7 +16,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 $queryParameters = UsersRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->filter = "NOT)";
+$queryParameters->filter = "NOT(imAddresses/any(i:i eq 'admin@contoso.com'))";
 $queryParameters->count = true;
 $requestConfiguration->queryParameters = $queryParameters;
 

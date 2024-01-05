@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), delete an [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

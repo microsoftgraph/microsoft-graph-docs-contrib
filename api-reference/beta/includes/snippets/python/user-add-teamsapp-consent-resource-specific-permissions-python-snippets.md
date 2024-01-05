@@ -18,7 +18,7 @@ request_body = UserScopeTeamsAppInstallation(
 		],
 	),
 	additional_data = {
-			"teams_app@odata_bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/12345678-9abc-def0-123456789a",
+			"teams_app@odata_bind" : "https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a",
 	}
 )
 
