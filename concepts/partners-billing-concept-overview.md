@@ -8,7 +8,7 @@ ms.prod: "reports"
 
 # Use the partner billing API in Microsoft Graph to access billing data (preview)
 
-The partner billing API in Microsoft Graph allow Microsoft direct partners in the Cloud Solution Provider programs to export their high volume billed and unbilled data asynchronously, removing the need to maintain an open connection for hours and loop through millions of transactions iteratively. Asynchronous APIs enable fast, efficient retrieval of billing and reconciliation data in manageable chunks for quicker reconciliation.
+The partner billing API in Microsoft Graph allow Microsoft direct partners in the Cloud Solution Provider programs to export their high-volume billed and unbilled data asynchronously, removing the need to maintain an open connection for hours and loop through millions of transactions iteratively. Asynchronous APIs enable fast, efficient retrieval of billing and reconciliation data in manageable chunks for quicker reconciliation.
 
 ## Why use the partner billing API?
 
@@ -32,20 +32,20 @@ To access the usage data asynchronously, use the following steps with the API en
 
 ### 1. Usage line-item endpoint
 
-- Retrieve the [billed](/graph/api/partners-billing-billedusage-export) or [unbilled](/graph/api/partners-billing-unbilledusage-export) usage line items
+- Retrieve the [billed](/graph/api/partners-billing-billedusage-export) or [unbilled](/graph/api/partners-billing-unbilledusage-export) usage line items.
 - Receive a `202 Accepted` response code and a URL in the response body to check the status of the operation.
 
 ### 2. Operation status endpoint
 
-Use the [Get operation](/graph/api/partners-billing-operation-get) endpoint to poll the URL repeatedly until the manifest is returned
+Use the [Get operation](/graph/api/partners-billing-operation-get) endpoint to poll the URL repeatedly until the [manifest](/graph/api/resources/partners-billing-manifest) is returned.
 
 ## API reference
 
 Looking for the API reference for this service?
 
-- [Partner billing API in Microsoft Graph beta](/graph/api/resources/partners-billing-usageexport-api-overview?view=graph-rest-beta&preserve-view=true)
+[Partner billing API in Microsoft Graph beta](/graph/api/resources/partners-billing-api-overview?view=graph-rest-beta&preserve-view=true)
 
 ## Next steps
 
-- To learn more about the partner billing APIs, see [Partner billing invoicing and reconciliation data API overview](/graph/api/resources/partners-billing-usageexport-api-overview?view=graph-rest-beta&preserve-view=true).
-- Try the partner billing APIs in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+- To learn more about the partner billing API, see [Use the Microsoft Graph API to export partner billing data (preview)](/graph/api/resources/partners-billing-api-overview?view=graph-rest-beta&preserve-view=true).
+- Try the partner billing API in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).

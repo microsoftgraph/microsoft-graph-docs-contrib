@@ -1,6 +1,6 @@
 ---
 title: "azureUsage resource type"
-description: "azure usage billing details"
+description: "Represents details for billed and unbilled Azure usage data."
 author: "abhishek-singh-ms"
 ms.localizationpriority: medium
 ms.prod: "reports"
@@ -13,25 +13,27 @@ Namespace: microsoft.graph.partners.billing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-provides details for billed and unbilled azure usage.
-
-
-Inherits from [microsoft.graph.entity](../resources/entity.md).
+Represents details for billed and unbilled Azure usage data.
 
 ## Methods
-None
+
+None.
 
 ## Properties
-None
+
+None.
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
-|billed|[billedUsage](partners-billing-billedusage.md)|Provides details for the billed azure usage.|
-|unbilled|[unbilledUsage](partners-billing-unbilledusage.md)|Provides details for the unbilled azure usage.|
+|billed|[microsoft.graph.partners.billing.billedUsage](partners-billing-billedusage.md)|Represents details for billed Azure usage data.|
+|unbilled|[microsoft.graph.partners.billing.unbilledUsage](partners-billing-unbilledusage.md)|Represents details for unbilled Azure usage data.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -42,8 +44,6 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.partners.billing.azureUsage",
-  "id": "String (identifier)"
+  "@odata.type": "#microsoft.graph.partners.billing.azureUsage"
 }
 ```
-
