@@ -52,9 +52,6 @@ Microsoft Graph includes two sets of APIs that you can use to manage Windows upd
 
 You can use either API to manage Windows updates; however, these two APIs are not compatible with each other. Each can overwrite the configurations made by the other without providing visibility into that action. Use of both APIs to manage updates can result in unexpected behaviors, including what appears to be temporary configurations for update deployments that are canceled or modified without an identified cause.   
 
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
-
 ## Next Steps
 
 - Learn [how to use Azure AD](/intune/intune-graph-apis) to access the Microsoft Graph API for Intune.  
