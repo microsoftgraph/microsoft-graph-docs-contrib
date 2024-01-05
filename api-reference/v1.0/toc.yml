@@ -58,9 +58,6 @@ items:
           - name: Advanced query capabilities
             displayName: OData query parameters, OData
             href: /graph/aad-advanced-queries?context=graph/api/1.0
-          - name: Optimize requests with query parameters
-            displayName: OData query parameters, OData
-            href: /training/modules/optimize-data-usage
       - name: Batching
         href: /graph/json-batching?context=graph/api/1.0
         displayName: Batch request
@@ -71,9 +68,6 @@ items:
             displayName: throttling
           - name: Service-specific limits
             href: /graph/throttling-limits?context=graph/api/1.0
-            displayName: throttling
-          - name: Optimize network traffic
-            href: /training/modules/optimize-network-traffic
             displayName: throttling
       - name: Change notifications
         displayName: change notifications, rich notifications, basic notifications, subscriptions, webhooks, Azure Event Hubs, Azure Event Grids
@@ -1714,6 +1708,12 @@ items:
                     href: api/browsersharedcookie-update.md
                   - name: Delete
                     href: api/browsersitelist-delete-sharedcookies.md
+          - name: Cloud PC
+            items:
+              - name: Overview
+                href: resources/cloudpc-api-overview.md
+              - name: Virtual endpoint
+                href: resources/virtualendpoint.md
           - name: Cloud printing
             items:
               - name: Print
@@ -4784,7 +4784,6 @@ items:
                         href: api/intune-tem-devicemanagement-get.md
                       - name: Update
                         href: api/intune-tem-devicemanagement-update.md
-
           - name: Service health and communications
             items:
               - name: Overview
@@ -9156,7 +9155,7 @@ items:
                   - name: Get message reply
                     href: api/chatmessage-get.md
                   - name: Get primary channel
-                    href: api/team-get-primarychannel.md  
+                    href: api/team-get-primarychannel.md
                   - name: List channel messages
                     href: api/channel-list-messages.md
                   - name: List members
