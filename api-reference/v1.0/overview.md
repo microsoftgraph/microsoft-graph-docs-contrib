@@ -58,6 +58,8 @@ For details, see [Use the Microsoft Graph API](/graph/use-the-api).
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) in the v1.0 endpoint.
 
+Explore the [changelog](https://developer.microsoft.com/en-us/graph/changelog) for more details about changes to Microsoft Graph APIs.
+
 ## Connect with us
 
 Are there additional APIs or features you'd like to see in Microsoft Graph? Post new feature requests on the [Microsoft 365 Developer Platform ideas forum](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
