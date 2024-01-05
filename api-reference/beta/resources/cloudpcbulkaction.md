@@ -7,7 +7,7 @@ ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---
 
-# CloudPcBulkAction resource type
+# cloudPcBulkAction resource type
 
 Namespace: microsoft.graph
 

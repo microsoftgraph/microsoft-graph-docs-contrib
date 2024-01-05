@@ -12,7 +12,7 @@ namespace: microsoft.graph
 
 [!include [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [cloudpcbulkaction](../resources/intune-cloudpcbulkaction.md) object.
+Create a new [cloudpcbulkaction](../resources/cloudpcbulkaction.md) object.
 
 ## permissions
 One of the following permissions is required to call this api. to learn more, including how to choose permissions, see [permissions](/graph/permissions-reference).
@@ -63,17 +63,17 @@ The following is an example of a request.
 }
 -->
 ``` http
-post https://graph.microsoft.com/beta/devicemanagement/virtualendpoint/bulkactions
+POST https://graph.microsoft.com/beta/devicemanagement/virtualendpoint/bulkactions
 content-type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.cloudpcbulkaction",
+  "@odata.type": "#microsoft.graph.cloudPcBulkAction",
   "displayname": "string",
   "cloudpcids": [
     "guid"
   ],
   "actionsummary": {
-    "@odata.type": "microsoft.graph.cloudpcbulkactionsummary"
+    "@odata.type": "microsoft.graph.cloudPcBulkActionSummary"
   }
 }
 ```
@@ -100,7 +100,7 @@ content-type: application/json
     "guid"
   ],
   "actionsummary": {
-    "@odata.type": "microsoft.graph.cloudpcbulkactionsummary"
+    "@odata.type": "microsoft.graph.cloudPcBulkActionSummary"
   },
   "createddatetime": "string (timestamp)"
 }
