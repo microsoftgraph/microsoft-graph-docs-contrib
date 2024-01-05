@@ -3,7 +3,6 @@ title: "protectionRule resource type"
 description: "Represents an abstract rule, which contains basic properties such as ID, name, and so on."
 author: "mmekler"
 ms.localizationpriority: medium
-ROBOTS: NOINDEX
 ms.prod: "security"
 doc_type: resourcePageType
 ---

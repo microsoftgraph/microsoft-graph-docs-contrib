@@ -3,7 +3,6 @@ title: "detectionRule resource type"
 description: "Represents a custom detection rule that uses an advanced hunting query to automatically recognize security events when they occur, and trigger alerts and response actions."
 author: "mmekler"
 ms.localizationpriority: medium
-ROBOTS: NOINDEX
 ms.prod: "security"
 doc_type: resourcePageType
 ---

@@ -3,7 +3,6 @@ title: "softDeleteResponseAction resource type"
 description: "Describes an email response action that moves the email message to a deleted folder in the cloud."
 author: "mmekler"
 ms.localizationpriority: medium
-ROBOTS: NOINDEX
 ms.prod: "security"
 doc_type: resourcePageType
 ---

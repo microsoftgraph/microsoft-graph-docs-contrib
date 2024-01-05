@@ -3,7 +3,6 @@ title: "collectInvestigationPackageResponseAction resource type"
 description: "Describes a response action that collects device information in a ZIP file."
 author: "mmekler"
 ms.localizationpriority: medium
-ROBOTS: NOINDEX
 ms.prod: "security"
 doc_type: resourcePageType
 ---

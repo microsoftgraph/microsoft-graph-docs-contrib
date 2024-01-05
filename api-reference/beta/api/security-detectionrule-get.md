@@ -3,7 +3,6 @@ title: "Get detectionRule"
 description: "Read the properties and relationships of a custom detection rule."
 author: "mmekler"
 ms.localizationpriority: medium
-ROBOTS: NOINDEX
 ms.prod: "security"
 doc_type: apiPageType
 ---

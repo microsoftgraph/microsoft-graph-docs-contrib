@@ -3,7 +3,6 @@ title: "impactedMailboxAsset resource type"
 description: "Describes a mailbox type asset that was impacted by an event that was detected by a custom detection rule."
 author: "mmekler"
 ms.localizationpriority: medium
-ROBOTS: NOINDEX
 ms.prod: "security"
 doc_type: resourcePageType
 ---

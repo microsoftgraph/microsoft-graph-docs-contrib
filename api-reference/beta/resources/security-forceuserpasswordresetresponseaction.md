@@ -3,7 +3,6 @@ title: "forceUserPasswordResetResponseAction resource type"
 description: "Describes a response action that forces a user to reset their password."
 author: "mmekler"
 ms.localizationpriority: medium
-ROBOTS: NOINDEX
 ms.prod: "security"
 doc_type: resourcePageType
 ---

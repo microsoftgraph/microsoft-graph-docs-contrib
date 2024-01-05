@@ -3,7 +3,6 @@ title: "ruleSchedule resource type"
 description: "Describes how often the custom detection rule runs, and when it next runs."
 author: "mmekler"
 ms.localizationpriority: medium
-ROBOTS: NOINDEX
 ms.prod: "security"
 doc_type: resourcePageType
 ---

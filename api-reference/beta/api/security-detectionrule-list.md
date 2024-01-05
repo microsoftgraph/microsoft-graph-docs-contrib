@@ -3,7 +3,6 @@ title: "List detectionRules"
 description: "Get a list of the custom detection rules and their properties."
 author: "mmekler"
 ms.localizationpriority: medium
-ROBOTS: NOINDEX
 ms.prod: "security"
 doc_type: apiPageType
 ---

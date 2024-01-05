@@ -3,7 +3,6 @@ title: "markUserAsCompromisedResponseAction resource type"
 description: "Describes a response action that sets the users risk level to 'high' in Azure Active Directory."
 author: "mmekler"
 ms.localizationpriority: medium
-ROBOTS: NOINDEX
 ms.prod: "security"
 doc_type: resourcePageType
 ---

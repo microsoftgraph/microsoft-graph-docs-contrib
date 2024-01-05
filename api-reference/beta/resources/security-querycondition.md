@@ -3,7 +3,6 @@ title: "queryCondition resource type"
 description: "Describes the advanced hunting query that defines the behavior of a custom detection rule."
 author: "mmekler"
 ms.localizationpriority: medium
-ROBOTS: NOINDEX
 ms.prod: "security"
 doc_type: resourcePageType
 ---

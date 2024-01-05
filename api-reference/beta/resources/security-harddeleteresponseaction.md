@@ -3,7 +3,6 @@ title: "hardDeleteResponseAction resource type"
 description: "Describes a response action that performs a hard delete of an email message."
 author: "mmekler"
 ms.localizationpriority: medium
-ROBOTS: NOINDEX
 ms.prod: "security"
 doc_type: resourcePageType
 ---

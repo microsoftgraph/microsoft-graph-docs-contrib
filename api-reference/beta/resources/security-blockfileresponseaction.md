@@ -3,7 +3,6 @@ title: "blockFileResponseAction resource type"
 description: "Describes a response action that blocks a file from running."
 author: "mmekler"
 ms.localizationpriority: medium
-ROBOTS: NOINDEX
 ms.prod: "security"
 doc_type: resourcePageType
 ---
