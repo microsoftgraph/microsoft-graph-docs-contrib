@@ -1349,7 +1349,7 @@ Content-Type: application/json
 Either the requestor or an administrator can cancel an approved request, while only the requestor can cancel a pending (**statusDetail** of `submitted`) request.
 
 ```http
-POST https://graph.microsoft.com/beta/permissionsManagement/scheduledPermissionsRequests/{id}/cancelAll
+POST https://graph.microsoft.com/beta/identityGovernance/permissionsManagement/scheduledPermissionsRequests/{id}/cancelAll
 ```
 
 ## List details of all permission requests
