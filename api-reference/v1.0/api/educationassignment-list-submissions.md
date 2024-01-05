@@ -57,7 +57,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["f4a941ff-9da6-4707-ba5b-0eae93cad0b4","3c77de7f-539b-49e1-9c96-1274f2f0ee3b"],
+  "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070","4cc928e3-666c-4360-8688-a15776ce53b4"],
   "name": "get_submissions"
 }-->
 ```msgraph-interactive
@@ -173,7 +173,7 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["72a7baec-c3e9-4213-a850-f62de0adad5f","efcdf80b-a5de-42ac-8579-e40b0223d48b"],
+  "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070","4cc928e3-666c-4360-8688-a15776ce53b4"],
   "name": "get_submissions_expand"
 }-->
 ```msgraph-interactive
