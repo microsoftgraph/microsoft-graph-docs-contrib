@@ -33,9 +33,9 @@ Existing Data Connect customers can perform a one-click automatic migration from
 
 <!-- This option will be available in late 2023. Stay tuned for more details. -->
 
-The new experience involves the requirements of each consent to have **one column set per dataset**, **one scope per dataset**, and **one destination sink per app registration**. 
+The new experience involves the requirement of each app to be consented for **one** list of datasets, and each dataset should be mapped to **one** set of columns and **one** scope. 
 
-For the tenants that comply with these requirements, the migration can be performed by the tenant admin in the Microsoft 365 admin portal. Similarly to the self-serve migration, the process is done by clicking the following checkbox.
+For the tenants that comply with these requirement, the migration can be performed by the tenant admin in the Microsoft 365 admin portal. Similarly to the self-serve migration, the process is done by clicking the following checkbox.
 
 ![A screenshot showing how to enable the new experience for data connect in the Microsoft 365 admin center.](../concepts/images/data-connect-new-consent-flow-one-click-enable-mgdc.png)
 
@@ -47,21 +47,19 @@ If your tenant has active consents with any of the below conditions, the tenant 
 - Multiple destination sinks per app registration
 - Combinations of the above 
 
-Upon one-click migration, the active consents would merge under the concept of one app, one dataset, one sink. 
+Upon one-click migration, the active consents would merge under the concept of **one** app with **one** list of datasets and each dataset mapped to **one** set columns and **one** scope. 
 
 For example, consider the following consents:
 
-1. Application: Productivity_Analysis; Dataset: Message_v1; Columns: [SentTime]; Scope: [Legal]  
-2. Application: Productivity_Analysis; Dataset: Message_v1; Columns: [Message]; Scope: [Engineering] 
-3. Application: Productivity_Analysis; Dataset: TeamsChats_v2; Columns: [id]; Scope: [HR] 
+1. **Application**: `Productivity_Analysis`; **Sink**: `Storage_Account_1`; **Dataset**: `Message_v1`; **Columns**: [SentTime]; **Scope**: [Legal]  
+2. **Application**: `Productivity_Analysis`; **Sink**: `Storage_Account_2`; **Dataset**: `Message_v1`; **Columns**: [Message]; **Scope**: [Engineering] 
 
 After migration, the consents will merge since they are under the same application: 
 
-1. Application: Productivity_Analysis; [Dataset: Message_v1; Columns: [SentTime, Message], Scope: [Legal, Engineering] , Dataset: TeamsChats_v2; Columns: [id], Scope: [HR]]
+**Application**: `Productivity_Analysis`; **Sink**: [`Storage_Account_1`, `Storage_Account_2`]; **Dataset**: `Message_v1`; **Columns**: [SentTime, Message], **Scope**: [Legal, Engineering]
  
-Note that consent for extracting Columns [Message] data for the group [Legal] has been introduced. Likewise for [SentTime] data of the group [Engineering]. 
-
-For any questions, reach out to dataconnect@microsoft.com.
+> [!NOTE]
+> When merging consents, new consents could be introduced. In the example above, the consent for extracting Columns [Message] data for the group [Legal] has been introduced. Likewise for [SentTime] data of the group [Engineering]. If this is not the desired state, review the consents and revoke those that would be conflicting. For any questions, reach out to dataconnect@microsoft.com.
 
 ## Option 3: Automatic migration
 
