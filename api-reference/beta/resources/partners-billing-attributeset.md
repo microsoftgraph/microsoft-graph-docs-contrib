@@ -13,7 +13,7 @@ Namespace: microsoft.graph.partners.billing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents attributes for exported data sets in the Microsoft Graph partners billing API. The default value is `full`. Choose `full` for a complete response or `basic` for a subset of attributes.
+Represents attributes for exported data sets in the Microsoft Graph partner billing API. The default value is `full`. Choose `full` for a complete response or `basic` for a subset of attributes.
 
 ## Members
 
