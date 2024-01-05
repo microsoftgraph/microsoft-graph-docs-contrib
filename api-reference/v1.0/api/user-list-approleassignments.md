@@ -17,8 +17,8 @@ Retrieve the list of [appRoleAssignments](../resources/approleassignment.md) tha
 > [!IMPORTANT]
 > To ensure complete results for users with many indirect app role assignments, use the **ConsistencyLevel** header set to `eventual` and `$count`, as described in [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries#group-properties). For an example, see [Example 1](#example-1-list-approleassignments-granted-to-a-user).
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

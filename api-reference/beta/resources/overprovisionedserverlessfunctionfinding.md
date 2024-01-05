@@ -2,6 +2,7 @@
 title: "overprovisionedServerlessFunctionFinding resource type"
 description: "Represents over-provisioned serverless functions in AWS, Azure, or GCP."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
@@ -21,7 +22,7 @@ Inherits from [identityFinding](../resources/identityfinding.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List overprovisionedServerlessFunctionFindings](../api/overprovisionedserverlessfunctionfinding-list.md)|[overprovisionedServerlessFunctionFinding](../resources/overprovisionedserverlessfunctionfinding.md) collection|Get a list of the [overprovisionedServerlessFunctionFinding](../resources/overprovisionedserverlessfunctionfinding.md) objects and their properties.|
+|[List overprovisionedServerlessFunctionFinding objects](../api/overprovisionedserverlessfunctionfinding-list.md)|[overprovisionedServerlessFunctionFinding](../resources/overprovisionedserverlessfunctionfinding.md) collection|Get a list of the [overprovisionedServerlessFunctionFinding](../resources/overprovisionedserverlessfunctionfinding.md) objects and their properties.|
 |[Get overprovisionedServerlessFunctionFinding](../api/overprovisionedserverlessfunctionfinding-get.md)|[overprovisionedServerlessFunctionFinding](../resources/overprovisionedserverlessfunctionfinding.md)|Read the properties and relationships of an [overprovisionedServerlessFunctionFinding](../resources/overprovisionedserverlessfunctionfinding.md) object.|
 |
 

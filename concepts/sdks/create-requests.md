@@ -31,7 +31,7 @@ To read information from Microsoft Graph, you first need to create a request obj
 
 # [PHP](#tab/PHP)
 
-[!INCLUDE [sample-code](includes/snippets/php/create-requests-read.md)]
+:::code language="php" source="./snippets/php/snippets/CreateRequests.php" id="ReadRequestSnippet":::
 
 # [PowerShell](#tab/powershell)
 
@@ -66,7 +66,7 @@ When retrieving an entity, not all properties are automatically retrieved; somet
 
 # [PHP](#tab/PHP)
 
-[!INCLUDE [sample-code](includes/snippets/php/create-requests-select.md)]
+:::code language="php" source="./snippets/php/snippets/CreateRequests.php" id="SelectRequestSnippet":::
 
 # [PowerShell](#tab/powershell)
 
@@ -102,7 +102,7 @@ Retrieving a list of entities is similar to retrieving a single entity, except o
 
 # [PHP](#tab/PHP)
 
-[!INCLUDE [sample-code](includes/snippets/php/create-requests-list.md)]
+:::code language="php" source="./snippets/php/snippets/CreateRequests.php" id="ListRequestSnippet":::
 
 # [PowerShell](#tab/powershell)
 
@@ -138,7 +138,7 @@ For SDKs that support a fluent style, collections of entities can be accessed us
 
 # [PHP](#tab/PHP)
 
-[!INCLUDE [sample-code](includes/snippets/php/create-requests-index.md)]
+:::code language="php" source="./snippets/php/snippets/CreateRequests.php" id="ItemByIdRequestSnippet":::
 
 # [PowerShell](#tab/powershell)
 
@@ -172,7 +172,7 @@ You can use the `$expand` filter to request a related entity or collection of en
 
 # [PHP](#tab/PHP)
 
-[!INCLUDE [sample-code](includes/snippets/php/create-requests-expand.md)]
+:::code language="php" source="./snippets/php/snippets/CreateRequests.php" id="ExpandRequestSnippet":::
 
 # [PowerShell](#tab/powershell)
 
@@ -206,7 +206,7 @@ Delete requests are constructed in the same way as requests to retrieve an entit
 
 # [PHP](#tab/PHP)
 
-[!INCLUDE [sample-code](includes/snippets/php/create-requests-delete.md)]
+:::code language="php" source="./snippets/php/snippets/CreateRequests.php" id="DeleteRequestSnippet":::
 
 # [PowerShell](#tab/powershell)
 
@@ -240,13 +240,14 @@ For SDKs that support a fluent style, new items can be added to collections with
 
 # [PHP](#tab/PHP)
 
-[!INCLUDE [sample-code](includes/snippets/php/create-requests-create.md)]
+:::code language="php" source="./snippets/php/snippets/CreateRequests.php" id="CreateRequestSnippet":::
 
 # [PowerShell](#tab/powershell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-create.md)]
 
 # [Python](#tab/python)
+
 :::code language="python" source="./snippets/python/src/snippets/create_requests.py" id="CreateRequestSnippet":::
 
 # [TypeScript](#tab/typescript)
@@ -273,7 +274,7 @@ Most updates in Microsoft Graph are performed using a `PATCH` method; therefore,
 
 # [PHP](#tab/PHP)
 
-[!INCLUDE [sample-code](includes/snippets/php/create-requests-update.md)]
+:::code language="php" source="./snippets/php/snippets/CreateRequests.php" id="UpdateRequestSnippet":::
 
 # [PowerShell](#tab/powershell)
 
@@ -307,7 +308,7 @@ You can attach custom headers to a request using a `Header()` function. For Powe
 
 # [PHP](#tab/PHP)
 
-[!INCLUDE [sample-code](includes/snippets/php/create-requests-headers.md)]
+:::code language="php" source="./snippets/php/snippets/CreateRequests.php" id="HeadersRequestSnippet":::
 
 # [PowerShell](#tab/powershell)
 
@@ -341,7 +342,7 @@ For SDKs that support a fluent style, you can provide custom query parameter val
 
 # [PHP](#tab/PHP)
 
-[!INCLUDE [sample-code](includes/snippets/php/create-requests-queryparams.md)]
+:::code language="php" source="./snippets/php/snippets/CreateRequests.php" id="QueryParametersRequestSnippet":::
 
 # [PowerShell](#tab/powershell)
 

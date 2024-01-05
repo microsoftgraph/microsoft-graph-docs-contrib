@@ -2,6 +2,7 @@
 title: "Get inactiveServerlessFunctionFinding"
 description: "Read the properties and relationships of inactive serverless functions in your AWS, Azure, and GCP environments."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
@@ -16,13 +17,10 @@ Read the properties and relationships of an [inactiveServerlessFunctionFinding](
 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
  
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Not supported.|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+<!-- { "blockType": "permissions", "name": "inactiveserverlessfunctionfinding_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/inactiveserverlessfunctionfinding-get-permissions.md)]
 
 ## HTTP request
 
@@ -73,14 +71,25 @@ If successful, this method returns a `200 OK` response code and an [inactiveServ
 
 ### Request
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_inactiveserverlessfunctionfinding"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/MSxJbmFjdGl2ZVNlcnZlcmxlc3NGdW5jdGlvbkZpbmRpbmcsNTA2MjM/microsoft.graph.inactiveServerlessFunctionFinding
 ```
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-inactiveserverlessfunctionfinding-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-inactiveserverlessfunctionfinding-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 The following example shows the response.

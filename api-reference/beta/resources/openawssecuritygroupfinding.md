@@ -2,6 +2,7 @@
 title: "openAwsSecurityGroupFinding resource type"
 description: "View AWS open security groups."
 author: "ashyasingh"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
@@ -20,7 +21,7 @@ Inherits from [finding](../resources/finding.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List openAwsSecurityGroupFindings](../api/openawssecuritygroupfinding-list.md)|[openAwsSecurityGroupFinding](../resources/openawssecuritygroupfinding.md) collection|Get a list of the [openAwsSecurityGroupFinding](../resources/openawssecuritygroupfinding.md) objects and their properties.|
+|[List openAwsSecurityGroupFinding objects](../api/openawssecuritygroupfinding-list.md)|[openAwsSecurityGroupFinding](../resources/openawssecuritygroupfinding.md) collection|Get a list of the [openAwsSecurityGroupFinding](../resources/openawssecuritygroupfinding.md) objects and their properties.|
 |[Get openAwsSecurityGroupFinding](../api/openawssecuritygroupfinding-get.md)|[openAwsSecurityGroupFinding](../resources/openawssecuritygroupfinding.md)|Read the properties and relationships of an [openAwsSecurityGroupFinding](../resources/openawssecuritygroupfinding.md) object.|
 
 ## Properties

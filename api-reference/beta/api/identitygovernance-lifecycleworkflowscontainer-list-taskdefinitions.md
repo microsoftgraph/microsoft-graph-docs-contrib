@@ -15,7 +15,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Get a list of the [taskDefinition](../resources/identitygovernance-taskdefinition.md) objects and their properties.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

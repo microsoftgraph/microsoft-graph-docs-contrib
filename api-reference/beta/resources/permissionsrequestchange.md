@@ -2,6 +2,7 @@
 title: "permissionsRequestChange resource type"
 description: "Represents a change event relating to requests for permissions by identities."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType

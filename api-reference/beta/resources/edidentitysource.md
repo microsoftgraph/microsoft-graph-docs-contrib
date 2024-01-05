@@ -2,6 +2,7 @@
 title: "edIdentitySource resource type"
 description: "Represents an permissionsDefinitionIdentitySource for a configured identity provider."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType

@@ -2,6 +2,7 @@
 title: "awsAuthorizationSystemResource resource type"
 description: "Represents an AWS resource in an AWS authorization system."
 author: "mrudulahg01"
+ms.reviewer: ciem_pm
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
