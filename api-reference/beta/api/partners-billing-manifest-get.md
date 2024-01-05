@@ -37,7 +37,8 @@ GET /reports/partners/billing/manifests/{id}
 ```
 
 ## Optional query parameters
-This method doesn't support any OData query parameters to help customize the response. For general information, see [OData query parameters](https://learn.microsoft.com/en-us/graph/query-parameters?tabs=http).
+
+This method doesn't support any OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
