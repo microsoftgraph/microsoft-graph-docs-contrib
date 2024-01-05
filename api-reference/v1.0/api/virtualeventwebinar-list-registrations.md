@@ -99,7 +99,6 @@ GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/f4b39f1c-5
 
 ---
 
-
 ### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
