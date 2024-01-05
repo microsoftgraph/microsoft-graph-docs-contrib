@@ -33,13 +33,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-To get the frontline Cloud PC access state of the specified user (who is the signed-in user) using delegated permission:
+To get the frontline Cloud PC access state of the signed-in user using delegated permission:
 
 ``` http
 GET /me/cloudPCs/{cloudPCId}/getFrontlineCloudPcAccessState
 ```
 
-To get the frontline Cloud PC access state (the signed-in user should be the administrator) using delegated permission or application permission:
+To get the frontline Cloud PC access state of a signed-in administrator using delegated permission or application permission:
 
 ``` http
 GET /deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/getFrontlineCloudPcAccessState
