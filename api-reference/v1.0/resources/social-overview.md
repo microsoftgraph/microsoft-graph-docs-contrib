@@ -20,7 +20,7 @@ about a person from across mail, contacts, and social networks. The results are 
 relevance based on multiple communication and collaboration patterns and business relationships. The API
 lets you browse, sort, select, filter, or search for persons based on your criteria.
 
-For scenarios and examples, see [Get information about relevant people](/graph/people-example).
+For scenarios and examples, see [Get information about relevant people](/graph/people-insights-overview).
 
 To use the API, see the following:
 

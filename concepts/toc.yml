@@ -1173,9 +1173,9 @@ items:
           - name: Microsoft Entra service limits
             displayName: Azure AD service limits and restrictions
             href: /azure/active-directory/enterprise-users/directory-service-limits-restrictions?toc=/graph/toc.json
-      - name: API v1.0 reference
-        href: /graph/api/overview?view=graph-rest-1.0&preserve-view=true
-        displayName: Microsoft Graph REST API v1.0 reference
-      - name: API beta reference
-        href: /graph/api/overview?view=graph-rest-beta&preserve-view=true
-        displayName: Microsoft Graph beta endpoint reference, Microsoft Graph REST API Beta
+  - name: API v1.0 reference
+    href: /graph/api/overview?view=graph-rest-1.0&preserve-view=true
+    displayName: Microsoft Graph REST API v1.0 reference
+  - name: API beta reference
+    href: /graph/api/overview?view=graph-rest-beta&preserve-view=true
+    displayName: Microsoft Graph beta endpoint reference, Microsoft Graph REST API Beta
