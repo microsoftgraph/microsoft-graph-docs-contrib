@@ -59,7 +59,7 @@ The following key API scenarios allow you to implement permissions on demand cap
 |--|--|
 |Request permissions; grant or reject a request |[Create scheduledPermissionsRequest](../api/permissionsmanagement-post-scheduledpermissionsrequests.md)|
 |Cancel a permissions request|[scheduledPermissionsRequest: cancelAll](../api/scheduledpermissionsrequest-cancelall.md)|
-|Discover permissions requests|[List permissionsRequestChanges](../api/permissionsmanagement-list-permissionsrequestchanges.md)|
+|Track permissions requests and their status|[List permissionsRequestChanges](../api/permissionsmanagement-list-permissionsrequestchanges.md)|
 
 ## Permissions analytics
 
