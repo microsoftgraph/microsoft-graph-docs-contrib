@@ -24,7 +24,7 @@ The [virtualEndpoint](/graph/api/resources/virtualendpoint) resource is generall
 
 ### Reports | Partner billing reports
 
-The new partner billing API in Microsoft Graph offers Microsoft direct partners a faster, more efficient way to export their high volume billed and unbilled Azure usage data. Partners can quickly create export operations, monitor their status, and retrieve manifests using the following APIs:
+The new partner billing API in Microsoft Graph offers Microsoft direct partners a faster, more efficient way to export their high-volume billed and unbilled Azure usage data. Partners can quickly create export operations, monitor their status, and retrieve manifests using the following APIs:
 
 - [billedUsage: export](/graph/api/partners-billing-billedusage-export?view=graph-rest-beta&preserve-view=true)
 - [unbilledUsage: export](/graph/api/partners-billing-unbilledusage-export?view=graph-rest-beta&preserve-view=true)
