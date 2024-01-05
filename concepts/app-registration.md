@@ -79,9 +79,19 @@ If you select SQL for **Storage Account**, the **Uri** project detail field is d
 
 After you complete the **Registration Info** page, specify the datasets that the app registration needs to query. This step is crucial for authorization. Only the datasets that you select are transferred for administrator authorization. For details about datasets, see [Datasets, regions, and sinks](./data-connect-datasets.md).
 
-The wizard shows a table that allows the entry of multiple datasets, the selection of columns in the datasets, and more details if applicable, such as scope and scope options. For details about scopes, see [User selection and filtering capabilities in Microsoft Graph Data Connect](./data-connect-filtering.md). You can select each dataset that the app will request for authorization, and all or several columns from the dataset, depending on the level of granularity and privacy required.
+The wizard shows a table that allows the entry of multiple datasets, the selection of columns in the datasets, and more details if applicable, such as scope and scope options. You can select each dataset that the app will request for authorization, and all or several columns from the dataset, depending on the level of granularity and privacy required.
 
 ![Screenshot showing the Datasets column selected while running the Data Connect app registration wizard.](images/app-registration-create-datasets.png)
+
+##### Scope Selection
+
+There are three ways to configure the scope for each dataset:
+
+1. **All information**: This is the default option. By leaving the field blank, all of the dataset's scope will be registered.
+2. **Select users or groups within the organization**: Enter the object Ids of the users or groups separated by commas. Learn more about (Entra Groups)[https://learn.microsoft.com/en-us/entra/fundamentals/groups-view-azure-portal]
+3. **Specific predicates**: Follow the filtering mechanism as for Microsoft Graph APIs to specify a scope within a column of the dataset. [Learn more](./data-connect-filtering.md#user-selection).
+
+For details about scopes, see [User selection and filtering capabilities in Microsoft Graph Data Connect](./data-connect-filtering.md).
 
 When you're finished, choose **Next : Review + create**.
 
