@@ -8,6 +8,7 @@ ms.localizationpriority: high
 ms.prod: "applications"
 ms.custom: scenarios:getting-started
 ms.date: 06/15/2022
+#customer intent: As a developer, I want to understand the capabilities available to manage a Microsoft Entra application programmatically using Microsoft Graph.
 ---
 
 # Applications API overview
