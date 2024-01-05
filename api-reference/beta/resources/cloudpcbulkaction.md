@@ -1,6 +1,6 @@
 ---
 title: "cloudPcBulkAction resource type"
-description: "Represents the bulk action applied to cloudPCs specified in a parameter."
+description: "Represents the bulk action applied to Cloud PCs specified in a parameter."
 author: "Guoan-Tang"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the bulk action applied to cloudPCs specified in a parameter. This resource is an abstract type.
+Represents the bulk action applied to Cloud PCs specified in a parameter. This resource is an abstract type.
 
 ## Methods
 |Method|Return type|Description|
@@ -26,16 +26,16 @@ Represents the bulk action applied to cloudPCs specified in a parameter. This re
 |Property|Type|Description|
 |:---|:---|:---|
 |actionSummary|[cloudPcBulkActionSummary](../resources/cloudpcbulkactionsummary.md)|Run summary of this bulk action|
-|cloudPcIDs|Guid collection|ID of cloudPcs the bulk action applies to.|
+|cloudPcIDs|Guid collection|ID of Cloud PCs the bulk action applies to.|
 |createdDateTime|DateTimeOffset|Time when the bulk action was created.|
 |displayName|String|Name of the bulk action.|
-|iD|Guid|ID of the bulk action.|
+|id|Guid|ID of the bulk action.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following content is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
