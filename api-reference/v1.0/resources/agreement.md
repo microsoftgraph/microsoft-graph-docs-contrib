@@ -26,12 +26,12 @@ Represents a tenant's customizable terms of use agreement that is created and ma
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|displayName|String|Display name of the agreement. The display name is used for internal tracking of the agreement but is not shown to end users who view the agreement. Supports `$filter` (`eq`).|
+|displayName|String|Display name of the agreement. The display name is used for internal tracking of the agreement but isn't shown to end users who view the agreement. Supports `$filter` (`eq`).|
 |id|String| The identifier of the agreement. Read-only. Supports `$filter` (`eq`).|
 |isPerDeviceAcceptanceRequired|Boolean|Indicates whether end users are required to accept this agreement on every device that they access it from. The end user is required to register their device in Microsoft Entra ID, if they haven't already done so. Supports `$filter` (`eq`).|
 |isViewingBeforeAcceptanceRequired|Boolean|Indicates whether the user has to expand the agreement before accepting. Supports `$filter` (`eq`).|
 |termsExpiration|[termsExpiration](termsexpiration.md)| Expiration schedule and frequency of agreement for all users. Supports `$filter` (`eq`).|
-|userReacceptRequiredFrequency|Duration|The duration after which the user must re-accept the terms of use. The value is represented in ISO 8601 format for durations. Supports `$filter` (`eq`).|
+|userReacceptRequiredFrequency|Duration|The duration after which the user must reaccept the terms of use. The value is represented in ISO 8601 format for durations. Supports `$filter` (`eq`).|
 
 
 ## Relationships
@@ -44,7 +44,7 @@ Represents a tenant's customizable terms of use agreement that is created and ma
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
