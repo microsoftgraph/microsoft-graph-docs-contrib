@@ -1,6 +1,6 @@
 ---
 title: "agreement resource type"
-description: "Represents a tenant's customizable terms of use agreement that is created and managed with Microsoft Entra ID."
+description: "Represents a tenant's customizable terms of use agreement that is created and managed with Microsoft Entra ID Governance."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a tenant's customizable terms of use agreement that is created and managed with Microsoft Entra ID. You can use the following methods to create and manage the [Microsoft Entra Terms of Use feature](#see-also) according to your scenario.
+Represents a tenant's customizable terms of use agreement that is created and managed with Microsoft Entra ID Governance. You can use the following methods to create and manage the [Microsoft Entra Terms of Use feature](#see-also) according to your scenario.
 
 ## Methods
 
@@ -24,12 +24,6 @@ Represents a tenant's customizable terms of use agreement that is created and ma
 | [Get](../api/agreement-get.md) | [agreement](agreement.md) | Read properties and relationships of an agreement object. |
 | [Update](../api/agreement-update.md) | None | Update an agreement object. |
 | [Delete](../api/agreement-delete.md) | None | Delete an agreement object. |
-|[List acceptances](../api/agreement-list-acceptances.md)|[agreementAcceptance](../resources/agreementacceptance.md) collection|Get the details about the acceptance records for a specific agreement.|
-|[List agreementAcceptances](../api/user-list-agreementacceptances.md)|[agreementAcceptance](../resources/agreementacceptance.md) collection|Get the agreement acceptances for the signed-in user.|
-|[Get agreementFile](../api/agreementfile-get.md)|[agreementFile](../resources/agreementfile.md) collection|Retrieve the details of the default file for an agreement, including the language and version information.|
-|[List files](../api/agreement-list-files.md)|[agreementFileLocalization](../resources/agreementfilelocalization.md) collection|Retrieve all localized files related to an agreement.|
-|[Create agreementFileLocalization](../api/agreement-post-files.md)|[agreementFileLocalization](../resources/agreementfilelocalization.md)|Create a new localized agreement file.|
-
 
 ## Properties
 | Property     | Type        | Description |
