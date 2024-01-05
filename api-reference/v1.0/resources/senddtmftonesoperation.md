@@ -31,7 +31,7 @@ Inherits from [commsOperation](commsoperation.md).
 | unknown | Completion reason with unknown error. |
 | completedSuccessfully | Successful completion. |
 | mediaOperationCanceled | Media operation was canceled. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 None.
