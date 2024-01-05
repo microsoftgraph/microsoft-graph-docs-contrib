@@ -85,7 +85,7 @@ The following is an example of the response.
 <!-- {
   "blocktype": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.cloudpcbulkaction"
+  "@odata.type": "microsoft.graph.cloudPcBulkAction"
 }
 -->
 ``` http
@@ -93,7 +93,7 @@ http/1.1 201 created
 content-type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.cloudpcbulkaction",
+  "@odata.type": "#microsoft.graph.cloudPcBulkAction",
   "id": "231ad98f-41b3-872b-dd37-c70bf22cbdac",
   "displayname": "string",
   "cloudpcids": [

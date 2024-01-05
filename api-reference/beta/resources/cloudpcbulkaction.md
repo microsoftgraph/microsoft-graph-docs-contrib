@@ -39,20 +39,20 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.CloudPcBulkAction",
+  "@odata.type": "microsoft.graph.cloudPcBulkAction",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.CloudPcBulkAction",
+  "@odata.type": "#microsoft.graph.cloudPcBulkAction",
   "displayName": "String",
   "id": "String (identifier)",
   "cloudPcIds": [
     "Guid"
   ],
   "actionSummary": {
-    "@odata.type": "microsoft.graph.CloudPcBulkActionSummary"
+    "@odata.type": "microsoft.graph.cloudPcBulkActionSummary"
   },
   "createdDateTime": "String (timestamp)"
 }
