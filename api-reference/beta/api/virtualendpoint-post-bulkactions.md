@@ -15,7 +15,7 @@ namespace: microsoft.graph
 Create a new [cloudpcbulkaction](../resources/cloudpcbulkaction.md) object.
 
 ## permissions
-One of the following permissions is required to call this api. to learn more, including how to choose permissions, see [permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. to learn more, including how to choose permissions, see [permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
@@ -47,7 +47,7 @@ You can specify the following properties when creating a **cloudpcbulkaction**.
 |property|type|description|
 |:---|:---|:---|
 |displayname|string|Name of this bulk action, required.|
-|cloudpcids|guid collection|Id of cloudPcs this bulk action will apply to, required.|
+|cloudpcids|guid collection|ID of Cloud PCs this bulk action applies to, required.|
 
 ## response
 
@@ -56,7 +56,7 @@ If successful, this method returns a `201 created` response code and a [cloudpcb
 ## examples
 
 ### request
-The following is an example of a request.
+The following content is an example of a request.
 <!-- {
   "blocktype": "request",
   "name": "create_cloudpcbulkaction_from_"
@@ -80,7 +80,7 @@ content-type: application/json
 
 
 ### response
-The following is an example of the response.
+The following content is an example of the response.
 >**note:** the response object shown here might be shortened for readability.
 <!-- {
   "blocktype": "response",

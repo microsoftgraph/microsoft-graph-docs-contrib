@@ -18,17 +18,17 @@ Represents a run summary of bulk actions.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|failedCount|Int32|The number of cloudPcs where the action failed.|
-|inProgressCount|Int32|The number of cloudPcs where the action is in progress.|
-|notSupportedCount|Int32|The number of cloudPcs where the action is not supported.|
-|pendingCount|Int32|The number of cloudPcs where the action is pending.|
-|successfulCount|Int32|The number of cloudPcs where the action is successful.|
+|failedCount|Int32|The number of Cloud PCs where the action failed.|
+|inProgressCount|Int32|The number of Cloud PCs where the action is in progress.|
+|notSupportedCount|Int32|The number of Cloud PCs where the action isn't supported.|
+|pendingCount|Int32|The number of Cloud PCs where the action is pending.|
+|successfulCount|Int32|The number of Cloud PCs where the action is successful.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following content is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.cloudPcBulkActionSummary"

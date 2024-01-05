@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the entity that performs a bulk restore action with the executeAction API. Perform a bulk restore for a set of Cloud PCs with associated cloud PC ID and restore point date time. If some of the devices don't have any snapshots to restore, they will be set as restore failed, while the others with snapshots will still be triggered restore.
+Represents the entity that performs a bulk restore action with the executeAction API. Perform a bulk restore for a set of Cloud PCs with associated Cloud PC ID and restore point date time. If some of the devices don't have any snapshots to restore, they are set as restore failed, while the others with snapshots still be triggered restore.
 
 Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 
@@ -34,7 +34,7 @@ Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following content is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
