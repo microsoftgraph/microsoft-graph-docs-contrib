@@ -1,6 +1,6 @@
 ---
 title: "attributeSet enum type"
-description: "Attributes that should be exported"
+description: "Represents attributes for exported data sets in the Microsoft Graph partners billing API."
 author: "abhishek-singh-ms"
 ms.localizationpriority: medium
 ms.prod: "reports"
@@ -13,75 +13,76 @@ Namespace: microsoft.graph.partners.billing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Possible values for attributeSet type.
+Represents attributes for exported data sets in the Microsoft Graph partners billing API. The default value is `full`. Choose `full` for a complete response or `basic` for a subset of attributes.
 
 ## Members
 
-|Member|Value|Description|
-|:---|:---|:---|
-|full|1|All attributes in the exported data.|
-|basic|2|Only basic attributes in the exported data.|
-|unknownFutureValue|3|Evolvable enumeration sentinel value. Don't use.|
+| Member             | Value | Description                                      |
+|:-------------------|:------|:-------------------------------------------------|
+| full               | 1     | All attributes in the exported data.             |
+| basic              | 2     | Only basic attributes in the exported data.      |
+| unknownFutureValue | 3     | Evolvable enumeration sentinel value. Don't use. |
 
 ### Attributes
-The billed or unbilled usage API response with the "full" or "basic" request parameter returns the following attributes:
 
-|attribute|full|basic|
-|:---|:---|:---|
-|PartnerId|yes|yes|
-|PartnerName|yes|yes|
-|CustomerId|yes|yes|
-|CustomerName|yes|yes|
-|CustomerDomainName|yes|no|
-|CustomerCountry|yes|no|
-|MpnId|yes|no|
-|Tier2MpnId|yes|no|
-|InvoiceNumber|yes|yes|
-|ProductId|yes|yes|
-|SkuId|yes|yes|
-|AvailabilityId|yes|no|
-|SkuName|yes|yes|
-|ProductName|yes|no|
-|PublisherName|yes|yes|
-|PublisherId|yes|no|
-|SubscriptionDescription|yes|no|
-|SubscriptionId|yes|yes|
-|ChargeStartDate|yes|yes|
-|ChargeEndDate|yes|yes|
-|UsageDate|yes|yes|
-|MeterType|yes|no|
-|MeterCategory|yes|no|
-|MeterId|yes|no|
-|MeterSubCategory|yes|no|
-|MeterName|yes|no|
-|MeterRegion|yes|no|
-|Unit|yes|no|
-|ResourceLocation|yes|no|
-|ConsumedService|yes|no|
-|ResourceGroup|yes|no|
-|ResourceURI|yes|yes|
-|ChargeType|yes|yes|
-|UnitPrice|yes|yes|
-|Quantity|yes|yes|
-|UnitType|yes|yes|
-|BillingPreTaxTotal|yes|yes|
-|BillingCurrency|yes|yes|
-|PricingPreTaxTotal|yes|yes|
-|PricingCurrency|yes|yes|
-|ServiceInfo1|yes|no|
-|ServiceInfo2|yes|no|
-|Tags|yes|no|
-|AdditionalInfo|yes|yes|
-|EffectiveUnitPrice|yes|yes|
-|PCToBCExchangeRate|yes|yes|
-|EntitlementId|yes|yes|
-|EntitlementDescription|yes|no|
-|PartnerEarnedCreditPercentage|yes|no|
-|CreditPercentage|yes|yes|
-|CreditType|yes|yes|
-|BenefitOrderID|yes|yes|
-|BenefitID|yes|no|
-|BenefitType|yes|yes|
+The [billedUsage: export](../api/partners-billing-billedusage-export.md) or [unbilledUsage: export](../api/partners-billing-unbilledusage-export.md) API response with the `full` or `basic` request parameter returns the following attributes.
+
+| Attribute                     | Full | Basic |
+|:------------------------------|:-----|:------|
+| PartnerId                     | Yes  | Yes   |
+| PartnerName                   | Yes  | Yes   |
+| CustomerId                    | Yes  | Yes   |
+| CustomerName                  | Yes  | Yes   |
+| CustomerDomainName            | Yes  | No    |
+| CustomerCountry               | Yes  | No    |
+| MpnId                         | Yes  | No    |
+| Tier2MpnId                    | Yes  | No    |
+| InvoiceNumber                 | Yes  | Yes   |
+| ProductId                     | Yes  | Yes   |
+| SkuId                         | Yes  | Yes   |
+| AvailabilityId                | Yes  | No    |
+| SkuName                       | Yes  | Yes   |
+| ProductName                   | Yes  | No    |
+| PublisherName                 | Yes  | Yes   |
+| PublisherId                   | Yes  | No    |
+| SubscriptionDescription       | Yes  | No    |
+| SubscriptionId                | Yes  | Yes   |
+| ChargeStartDate               | Yes  | Yes   |
+| ChargeEndDate                 | Yes  | Yes   |
+| UsageDate                     | Yes  | Yes   |
+| MeterType                     | Yes  | No    |
+| MeterCategory                 | Yes  | No    |
+| MeterId                       | Yes  | No    |
+| MeterSubCategory              | Yes  | No    |
+| MeterName                     | Yes  | No    |
+| MeterRegion                   | Yes  | No    |
+| Unit                          | Yes  | No    |
+| ResourceLocation              | Yes  | No    |
+| ConsumedService               | Yes  | No    |
+| ResourceGroup                 | Yes  | No    |
+| ResourceURI                   | Yes  | Yes   |
+| ChargeType                    | Yes  | Yes   |
+| UnitPrice                     | Yes  | Yes   |
+| Quantity                      | Yes  | Yes   |
+| UnitType                      | Yes  | Yes   |
+| BillingPreTaxTotal            | Yes  | Yes   |
+| BillingCurrency               | Yes  | Yes   |
+| PricingPreTaxTotal            | Yes  | Yes   |
+| PricingCurrency               | Yes  | Yes   |
+| ServiceInfo1                  | Yes  | No    |
+| ServiceInfo2                  | Yes  | No    |
+| Tags                          | Yes  | No    |
+| AdditionalInfo                | Yes  | Yes   |
+| EffectiveUnitPrice            | Yes  | Yes   |
+| PCToBCExchangeRate            | Yes  | Yes   |
+| EntitlementId                 | Yes  | Yes   |
+| EntitlementDescription        | Yes  | No    |
+| PartnerEarnedCreditPercentage | Yes  | No    |
+| CreditPercentage              | Yes  | Yes   |
+| CreditType                    | Yes  | Yes   |
+| BenefitOrderID                | Yes  | Yes   |
+| BenefitID                     | Yes  | No    |
+| BenefitType                   | Yes  | Yes   |
 
 <!-- {
   "type": "#page.annotation",
