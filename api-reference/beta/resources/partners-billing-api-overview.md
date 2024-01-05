@@ -15,7 +15,7 @@ As part of the Microsoft Partner Center ecosystem, Microsoft direct partners in 
 The partner billing API is defined in the OData subnamespace `microsoft.graph.partners.billing`.
 
 > [!NOTE]
-> Daily-rated usage normally takes 24 hours to appear in the Microsoft Partner Center or to be accessed through the API.
+> Daily-rated usage normally takes 24 hours to appear in the Microsoft Partner Center or to be available through the API.
 
 ## Authorization
 
