@@ -36,6 +36,10 @@ One of the following permissions is required to call this API. To learn more, in
 GET /reports/partners/billing/operations/{id}
 ```
 
+## Optional query parameters
+This method doesn't support any OData query parameters to help customize the response. For general information, see [OData query parameters](https://learn.microsoft.com/en-us/graph/query-parameters?tabs=http).
+
+
 ## Request headers
 
 |Name|Description|
