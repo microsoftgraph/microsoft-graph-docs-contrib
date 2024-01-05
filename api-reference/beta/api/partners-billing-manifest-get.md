@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 
 ### Request
 
-The following request shows an example.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_manifest"
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/reports/partners/billing/manifests/6fe687d7
 
 ### Response
 
-The following request shows the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
