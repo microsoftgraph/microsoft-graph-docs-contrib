@@ -1,5 +1,5 @@
 ---
-title: "call: senddtmftones"
+title: "call: sendDtmfTones"
 description: "Send DTMF tones in a call."
 author: "jackry2023"
 ms.localizationpriority: medium
