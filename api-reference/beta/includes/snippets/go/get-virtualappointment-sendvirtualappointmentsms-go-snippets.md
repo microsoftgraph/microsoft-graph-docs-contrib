@@ -16,12 +16,11 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphusers.NewItemSendVirtualAppointmentSmsPostRequestBody()
-phoneNumbers := []string {
-	"+13129224122",
-	"+1242421412",
-}
-requestBody.SetPhoneNumbers(phoneNumbers)
 additionalData := map[string]interface{}{
+	phoneNumbers := []string {
+		"+13129224122",
+		"+1242421412",
+	}
 	"virtualAppointmentSmsType" : "confirmation", 
 }
 requestBody.SetAdditionalData(additionalData)
