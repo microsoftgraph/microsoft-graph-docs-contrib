@@ -51,13 +51,13 @@ In the request body, provide a JSON object with the following parameters.
 ## Response
 If successful, this method returns a `200 OK` response code and a [sendDtmfTonesOperation](../resources/senddtmftonesoperation.md) object in the response body.
 
-## Example
+## Examples
 
 The following example shows how to send DTMF tones in a call.
 
 ### Request
 
-The following example shows the request.
+The following example shows a request.
 
 
 <!-- {
