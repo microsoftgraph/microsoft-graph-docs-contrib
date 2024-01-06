@@ -61,7 +61,7 @@ If the Cloud PC was provisioned as a dedicated device, this method returns a `40
 
 ## Examples
 
-### Example 1: Get the frontline cloud PC access state for the signed-in user
+### Example 1: Get the frontline Cloud PC access state for the signed-in user
 
 #### Request
 
@@ -131,7 +131,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Get the frontline cloud PC access state for the administrator
+### Example 2: Get the frontline Cloud PC access state for the administrator
 
 #### Request
 
