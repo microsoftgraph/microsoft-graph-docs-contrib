@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /permissionsManagement/scheduledPermissionsRequests/{scheduledPermissionsRequestId}/cancelAll
+POST /identityGovernance/permissionsManagement/scheduledPermissionsRequests/{scheduledPermissionsRequestId}/cancelAll
 ```
 
 ## Request headers
@@ -53,7 +53,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/permissionsManagement/scheduledPermissionsRequests/{scheduledPermissionsRequestId}/cancelAll
+POST https://graph.microsoft.com/beta/identityGovernance/permissionsManagement/scheduledPermissionsRequests/{scheduledPermissionsRequestId}/cancelAll
 ```
 
 
