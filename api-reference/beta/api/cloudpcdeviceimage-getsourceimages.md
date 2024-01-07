@@ -1,6 +1,6 @@
 ---
 title: "cloudPcDeviceImage: getSourceImages"
-description: "View a list of all managed image resources from your Azure subscriptions. These source images can be uploaded and used on Cloud PCs."
+description: "Get cloudPcSourceDeviceImage objects that can be uploaded and used on Cloud PCs."
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) objects. View a list of all the managed image resources from your Microsoft Entra subscriptions.
+Get [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) objects that can be uploaded and used on Cloud PCs. View a list of all the managed image resources from your Microsoft Entra subscriptions.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
