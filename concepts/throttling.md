@@ -85,7 +85,7 @@ For a broader discussion of throttling in the Microsoft Cloud, see [Throttling p
 
 ## Best practices to avoid throttling
 
-Programming patterns like continuously polling a resource to check for updates and regularly scanning resource collections to check for new or deleted resources are more likely to lead to applications being throttled and degrade overall performances. You should instead leverage [change tracking](delta-query-overview.md) and [change notifications](webhooks.md) when available.
+Programming patterns like continuously polling a resource to check for updates and regularly scanning resource collections to check for new or deleted resources are more likely to lead to applications being throttled and degrade overall performances. You should instead leverage [change tracking](delta-query-overview.md) and [change notifications](change-notifications-overview.md) when available.
 
 >[!NOTE]
 >[Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance) describes best practices in details.
@@ -99,4 +99,3 @@ If SDKs retry throttled requests automatically when they are not batched, thrott
 ## Next steps
 
 - Identify the [throttling limits](throttling-limits.md) that apply for each Microsoft Graph resource.
-- [Training module: Optimize network traffic with Microsoft Graph](/training/modules/optimize-network-traffic)

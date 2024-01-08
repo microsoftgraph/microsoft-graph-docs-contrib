@@ -63,5 +63,3 @@ The following To Do API resources support delta query:
 * [baseTask](./basetask.md) collection in a task list
 * [baseTaskList](./basetasklist.md)
 
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

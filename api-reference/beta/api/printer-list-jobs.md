@@ -100,8 +100,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.printJob",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.printJob)"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -113,7 +112,11 @@ Content-type: application/json
     {
       "id": "5182",
       "createdDateTime": "2020-02-04T00:00:00.0000000Z",
-      "createdBy": {},
+      "createdBy": {
+        "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd",
+        "displayName": "John Smith",
+        "userPrincipalName": "john.smith@contoso.com"
+      },
       "status": {
         "processingState": "completed",
         "processingStateDescription": "The print job has completed successfully and no further processing will take place."
