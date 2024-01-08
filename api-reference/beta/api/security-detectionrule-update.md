@@ -42,7 +42,7 @@ PATCH /security/rules/detectionRules/{ruleId}
 ## Request body
 
 Provide the properties of a [microsoft.graph.security.detectionRule](../resources/security-detectionrule.md) to update, and those properties only.
-The properties that are updateable are specified in the following table:
+The properties which can be updated are specified in the following table:
 
 | Property                                         | Type                                                                                         | Description                                                      |
 |:-------------------------------------------------|:---------------------------------------------------------------------------------------------|:-----------------------------------------------------------------|

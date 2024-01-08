@@ -1,6 +1,6 @@
 ---
 title: "allowFileResponseAction resource type"
-description: "Describes a response action that allows a file to run."
+description: "Describes a response action to allow a file."
 author: "mmekler"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes response action that allows a file to run.
+Describes a response action to allow a file.
 This response action allows the file to run on devices controlled by Microsoft Defender for Endpoint.
 
 Inherits from [microsoft.graph.security.responseAction](../resources/security-responseaction.md).
