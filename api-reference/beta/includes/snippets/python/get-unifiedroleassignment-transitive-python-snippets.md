@@ -15,11 +15,9 @@ query_params = TransitiveRoleAssignmentsRequestBuilder.TransitiveRoleAssignments
 
 request_configuration = TransitiveRoleAssignmentsRequestBuilder.TransitiveRoleAssignmentsRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
-headers = {
-			'ConsistencyLevel' : "eventual",
-}
-
 )
+request_configuration.headers.add("ConsistencyLevel", "eventual")
+
 
 result = await graph_client.role_management.directory.transitive_role_assignments.get(request_configuration = request_configuration)
 

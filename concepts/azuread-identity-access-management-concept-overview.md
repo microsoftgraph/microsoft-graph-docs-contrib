@@ -8,6 +8,7 @@ ms.localizationpriority: high
 ms.prod: "identity-and-access"
 ms.custom: scenarios:getting-started
 ms.date: 06/22/2022
+#customer intent: As a developer, I want to understand how I can use Microsoft Graph to integrate Microsoft Entra for identity and access management, and build custom apps that access services on-premises, hybrid, and in the cloud.
 ---
 
 # Microsoft Entra identity and access management API overview
@@ -62,11 +63,11 @@ Microsoft Entra APIs for tenant management allow you to:
 
 ### Monitor identity risks
 
-Most security breaches are the result of attackers stealing a user’s identity, and attackers have become terrifyingly effective in taking advantage of third-party breaches, password spray attacks, and sophisticated phishing attacks. This means you need to protect all your user accounts from these attacks and proactively prevent compromised identities from being abused.
+Most security breaches are the result of attackers stealing a user's identity, and attackers have become terrifyingly effective in taking advantage of third-party breaches, password spray attacks, and sophisticated phishing attacks. This means you need to protect all your user accounts from these attacks and proactively prevent compromised identities from being abused.
 
 Microsoft Entra ID uses adaptive machine learning algorithms and heuristics to detect anomalies that indicate potentially compromised accounts. Using this data, Microsoft Entra ID Protection protects your users with risk-based conditional access policies and generates reports and alerts on its detections.
 
-Today, Microsoft Graph gives easy access to customers of Microsoft Entra ID P2 to [query risk events detected by Identity Protection](/graph/api/resources/identityprotectionroot), including the risk event’s type, severity, date, time, location, impacted user, and more. Customers can then use those events in SIEM systems and security applications.
+Today, Microsoft Graph gives easy access to customers of Microsoft Entra ID P2 to [query risk events detected by Identity Protection](/graph/api/resources/identityprotectionroot), including the risk event's type, severity, date, time, location, impacted user, and more. Customers can then use those events in SIEM systems and security applications.
 
 ### Review access to organizational resources
 

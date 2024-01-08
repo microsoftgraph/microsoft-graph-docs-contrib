@@ -128,7 +128,7 @@ Content-type: application/json
     {
       "id": "-2_GRUg2-HYz6_1YG4YRAQ2",
       "displayName": "Red key",
-      "creationDateTime": "2020-08-10T06:44:09Z",
+      "createdDateTime": "2020-08-10T06:44:09Z",
       "aaGuid": "2fc0579f-8113-47ea-b116-555a8db9202a",
       "model": "NFC key",
       "attestationCertificates": [
@@ -139,7 +139,7 @@ Content-type: application/json
     {
       "id": "_jpuR-TGZgk6aQCLF3BQjA2",
       "displayName": "Blue key",
-      "creationDateTime": "2020-08-10T06:25:38Z",
+      "createdDateTime": "2020-08-10T06:25:38Z",
       "aaGuid": "c5ef55ff-ad9a-4b9f-b580-ababafe026d0",
       "model": "USB key",
       "attestationCertificates": [

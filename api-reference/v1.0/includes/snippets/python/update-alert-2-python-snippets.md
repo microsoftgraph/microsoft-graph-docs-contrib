@@ -25,12 +25,9 @@ request_body = Alert(
 	),
 )
 
-request_configuration = AlertItemRequestBuilder.AlertItemRequestBuilderPatchRequestConfiguration(
-headers = {
-		'Prefer' : "return=representation",
-}
+request_configuration = AlertItemRequestBuilder.AlertItemRequestBuilderPatchRequestConfiguration()
+request_configuration.headers.add("Prefer", "return=representation")
 
-)
 
 result = await graph_client.security.alerts.by_alert_id('alert-id').patch(request_body, request_configuration = request_configuration)
 

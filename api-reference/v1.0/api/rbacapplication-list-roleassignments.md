@@ -16,7 +16,7 @@ Get a list of [unifiedRoleAssignment](../resources/unifiedroleassignment.md) obj
 
 The following RBAC providers are currently supported:
 - directory (Microsoft Entra ID)
-- entitlement management (Microsoft Entra Entitlement Management)
+- entitlement management (Microsoft Entra entitlement management)
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -47,34 +47,20 @@ One of the following permissions is required to call this API. To learn more, in
 To list role assignments for the directory provider:
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
-GET /roleManagement/directory/roleAssignments?$filter=principalId eq '{principal id}'
-
-GET /roleManagement/directory/roleAssignments?$filter=roleDefinitionId eq '{roleDefinition id}'
+GET /roleManagement/directory/roleAssignments
 ```
 
 To list role assignments for the entitlement management provider:
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
-GET /roleManagement/entitlementManagement/roleAssignments?$filter=principalId eq '{principal id}'
-
-GET /roleManagement/entitlementManagement/roleAssignments?$filter=roleDefinitionId eq '{roleDefinition id}'
-
-GET /roleManagement/entitlementManagement/roleAssignments?$filter=appScopeId eq '/AccessPackageCatalog/{catalog id}'
+GET /roleManagement/entitlementManagement/roleAssignments
 ```
 
-## Query parameters
+## Optional query parameters
 
-This operation requires the `$filter` query parameter to query role assignments for the supported RBAC providers.
-
-For the directory provider, you must filter on either the **roleDefinitionId** or **principalId** properties. The **roleDefinitionId** property can be either a role object ID or a value for the **templateId** property.
-
-For the entitlement management provider, you must filter on either the **roleDefinitionId**, **principalId** or **appScopeId** properties.
-
-For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter`, `$expand`, and `$select` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -197,7 +183,7 @@ Content-type: application/json
                 "displayName": "Kalyan Krishna",
                 "imAddresses": [],
                 "userType": "Guest",
-	
+    
             }
         },
         {
@@ -213,10 +199,10 @@ Content-type: application/json
                 "displayName": "Markie Downing",
                 "imAddresses": [],
                 "userType": "Guest",
-		
+        
             }
         }
-	]
+    ]
 }
 ```
 

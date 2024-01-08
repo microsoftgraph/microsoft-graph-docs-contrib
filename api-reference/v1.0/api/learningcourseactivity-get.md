@@ -77,13 +77,28 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [learningCourseActivity](../resources/learningcourseactivity.md) object in the response body.
 
+If unsuccessful, this method returns one of the responses below:
+
+|Scenario|HTTP code|Code|Message|
+|:---|:---|:---|:---|:---|
+|Method not supported for entity|405|methodNotAllowed|This method isn't supported for this entity type. See the Microsoft Graph documentation for the methods applicable to this entity.|
+|User doesn't have appropriate permission scope|403|Forbidden|Your account doesn't have access to this report or data. Contact your global administrator to request access.|
+|Forbidden|403|Forbidden|You don't have an adequate service plan for this request.|
+|Bad request|400|badRequest|This provider isn't enabled for the given tenant.|
+|Bad request|400|badRequest|There was an issue with your request. Make sure the registrationId you entered is valid or registered for your tenant.|
+|Bad request|404|notFound|The requested assignment ID doesn’t exist.|
+|Internal server error|500|internalServerError|Internal server error.|
+|Request throttled|429|tooManyRequests|{"code": "tooManyRequests","message": "Retry after {noOfMinutes} minutes"}.|
+|Service unavailable|503|serviceUnavailable|{"code": "serviceUnavailable","message": "Retry after {noOfMinutes} minutes"}.|
+
+
 ## Examples
 
 ### Example 1: Get a learning course activity based on its ID
 
 #### Request
 
-The following examples shows a request to get an learning course activity using an ID.
+The following examples show a request to get a learning course activity using an ID.
 
 # [HTTP](#tab/http)
 <!-- {
