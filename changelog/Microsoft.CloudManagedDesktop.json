@@ -3858,11 +3858,19 @@
           "ChangeList": [
           {
             "Id": "992e35d4-a0ce-4504-90c0-1c86f7656221",
-            "ApiChange": "Method",
-            "ChangedApiName": "getFrontlineCloudPcAccessState",
+            "ApiChange": "Permission",
+            "ChangedApiName": "CloudPC.Read.All",
             "ChangeType": "Addition",
-            "Description": "Add getFrontlineCloudPcAccessState API for administrator",
-            "Target": "getshiftworkcloudpcaccessstate"
+            "Description": "Added support for the CloudPC.Read.All application permissions to the getFrontlineCloudPcAccessState method.",
+            "Target": "getFrontlineCloudPcAccessState"
+          },
+          {
+            "Id": "992e35d4-a0ce-4504-90c0-1c86f7656221",
+            "ApiChange": "Permission",
+            "ChangedApiName": "CloudPC.ReadWrite.All",
+            "ChangeType": "Addition",
+            "Description": "Added support for the CloudPC.ReadWrite.All application permissions to the getFrontlineCloudPcAccessState method.",
+            "Target": "getFrontlineCloudPcAccessState"
           }
         ],
         "Id": "992e35d4-a0ce-4504-90c0-1c86f7656221",
