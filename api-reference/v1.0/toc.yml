@@ -6291,9 +6291,9 @@ items:
                   - name: Agreement acceptances
                     href: resources/agreementacceptance.md
                     items:
-                      - name: List acceptances
+                      - name: List agreement acceptances for a user
                         href: api/user-list-agreementacceptances.md
-                      - name: List acceptance status
+                      - name: List acceptances
                         href: api/agreement-list-acceptances.md
                   - name: Agreement file
                     items:
@@ -8913,6 +8913,8 @@ items:
                         href: api/call-cancelmediaprocessing.md
                       - name: Subscribe to tone
                         href: api/call-subscribetotone.md
+                      - name: Send DTMF tone
+                        href: api/call-senddtmftones.md
                   - name: Large gallery view operation
                     items:
                       - name: Add large gallery view
