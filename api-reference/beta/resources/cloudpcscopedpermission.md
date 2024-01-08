@@ -1,6 +1,6 @@
 ---
 title: "cloudPcScopedPermission resource type"
-description: "The scoped permission and related scope IDs. "
+description: "Represents a scoped permission and related scope IDs. "
 author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The scoped permission and related scope IDs.
+Represents a scoped permission and related scope IDs.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|permission|String|	The authenticated users allowed operations on scoped resources.|
+|permission|String|	The operations allowed on scoped resources for the authenticated user. Such as "Microsoft.CloudPC/ProvisioningPolicies/Create". |
 |scopeIds|Collection(String)|The scope IDs of corresponding permission. Currently, it is Intune scope tag ID.|
 
 ## Relationships

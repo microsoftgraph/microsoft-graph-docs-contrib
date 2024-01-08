@@ -53,9 +53,13 @@ Don't supply a request body for this method.
 If successful, this function returns a `200 OK` response code and a collection of [cloudPcScopedPermission](../resources/cloudpcscopedpermission.md) objects in the response body.
 This API supports filter with permission, when no filter, this function returns all permissions and scope Tag IDs of the authenticated user.
 
+## Optional query parameters
+This method supports the $filter OData query parameter to customize the response. If the $filter parameter is not included, the function returns all permissions and scope IDs of the authenticated user.
+
 ## Examples
 
-### Example 1: 
+### Example 1:
+The request without the $filter query to get the whole permissions and scope IDs of the authenticated user. 
 
 #### Request
 
@@ -112,7 +116,7 @@ Content-Type: application/json
 ```
 
 ### Example 2:
-
+The request with the specific $filter query to get a list of permissions and scope IDs of the authenticated user. 
 #### Request
 
 The following example shows a request with a filter.
