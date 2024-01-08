@@ -170,5 +170,3 @@ For more information about search limitations for guest users, see [Compare memb
 |[`/users/{id}/memberOf`](../api/user-list-memberof.md)| Lists the groups that the user is a member of. |
 |[`/users/{id}/permissionGrants`](../api/user-list-permissiongrants.md)| List all resource-specific permission grants of a user. |
 
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
