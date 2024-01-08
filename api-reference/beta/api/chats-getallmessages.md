@@ -32,7 +32,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 GET /users/{id | user-principal-name}/chats/getAllMessages
 ```
-</br>
 
 ## Optional query parameters
 
