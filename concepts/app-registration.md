@@ -98,7 +98,7 @@ The last step in the wizard shows a summary page for you to review the specified
 ![Graphic showing datasets selection for app registration while running the Data Connect app registration wizard.](images/app-registration-create-review.png)
 
 > [!IMPORTANT]
-> If you previously selected Microsoft Fabric as the compute type, a resource of type *Microsoft.GraphServices* and name *mgdc-<your_app_id>* is registered under the selected subscription and resource group. This resource is used for billing. For more information about how to enable the **Microsoft.GraphServices** resource provider, see [Resource Providers](/azure/azure-resource-manager/management/resource-providers-and-types).
+> If you previously selected Microsoft Fabric as the compute type, a resource of type *Microsoft.GraphServices* and name *mgdc-<your_app_id>* is registered under the selected subscription and resource group. This resource is used for billing. For more information about how to enable the **Microsoft.GraphServices** resource provider, see [Resource Providers](/azure/azure-resource-manager/management/resource-providers-and-types) and the [Troubleshooting](./app-registration-troubleshooting.md) page.
 
 ### View app registration details
 
@@ -115,7 +115,7 @@ Access update functionality from the individual app overview page. Either the ap
 ![Screenshot of the app registration Update Datasets page.](images/app-registration-details-datasets-update.png)
 
 > [!IMPORTANT]
-> For Microsoft Fabric compute type, a resource of type *Microsoft.GraphServices* and name *mgdc-<your_app_id>* is registered under the selected subscription and resource group, if it wasn't created previously.
+> For Microsoft Fabric compute type, a resource of type *Microsoft.GraphServices* and name *mgdc-<your_app_id>* is registered under the selected subscription and resource group, if it wasn't created previously. For common issues, see the [Troubleshooting](./app-registration-troubleshooting.md) page.
 
 #### Delete an app registration entry
 
