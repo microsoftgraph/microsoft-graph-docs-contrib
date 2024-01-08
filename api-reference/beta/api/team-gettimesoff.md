@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# team: getShifts
+# team: getTimesOff
 
 Namespace: microsoft.graph
 

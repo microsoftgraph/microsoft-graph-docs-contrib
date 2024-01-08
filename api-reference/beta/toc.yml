@@ -18994,6 +18994,8 @@ items:
                     href: api/shift-delete.md
                   - name: Stage for deletion
                     href: api/changetrackedentity-stagefordeletion.md
+                  - name: Get shifts across all joined teams
+                    href: api/team-getshifts.md
               - name: Shift preferences
                 href: resources/shiftpreferences.md
                 items:
@@ -19052,6 +19054,8 @@ items:
                     href: api/timeoff-delete.md
                   - name: Stage for deletion
                     href: api/changetrackedentity-stagefordeletion.md
+                  - name: Get times off across all joined teams
+                    href: api/team-gettimesoff.md
               - name: Time off reason
                 href: resources/timeoffreason.md
                 items:
