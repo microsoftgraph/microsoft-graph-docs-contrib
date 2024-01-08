@@ -3,6 +3,42 @@
     {
       "ChangeList": [
         {
+          "Id": "c691ef0b-866c-4b62-8a12-65dc2109a655",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "getAllMessages",
+          "ChangeType": "Change",
+          "Description": "Added description of the supported filtering scenarios for getAllMessages api.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "c691ef0b-866c-4b62-8a12-65dc2109a655",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-01-08T22:24:27.0548997Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "797420ec-837e-4dfa-ad2d-084a4b194a04",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "getAllMessages",
+          "ChangeType": "Change",
+          "Description": "Added description of the supported filtering scenarios for getAllMessages api.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "797420ec-837e-4dfa-ad2d-084a4b194a04",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-01-08T22:24:27.0548997Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "97796aeb-ce8a-4650-ad43-6872cee08c4d",
           "ApiChange": "Method",
           "ChangedApiName": "removeAllAccessForUser",
