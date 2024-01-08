@@ -1,0 +1,116 @@
+---
+title: "Create bookmark"
+description: "Create a new bookmark object."
+author: "jakeost-msft"
+ms.localizationpriority: medium
+ms.prod: "search"
+doc_type: apiPageType
+---
+
+# Create bookmark
+Namespace: microsoft.graph.search
+
+Create a new [bookmark](../resources/search-bookmark.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "search_searchentity_post_bookmarks" } -->
+[!INCLUDE [permissions-table](../includes/permissions/search-searchentity-post-bookmarks-permissions.md)]
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}-->
+```http
+POST /search/bookmarks
+```
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
+
+## Request body
+In the request body, supply a JSON representation of the [bookmark](../resources/search-bookmark.md) object.
+
+The following table shows the properties that are available when you create a [bookmark](../resources/search-bookmark.md).
+
+|Property|Type|Description|
+|:---|:---|:---|
+|displayName|String|Bookmark name displayed in search results. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
+|description|String|Bookmark description shown on search results page. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
+|webUrl|String|Bookmark URL link. When users click this bookmark in search results, they will go to this URL. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
+|categories|String collection|Categories commonly used to describe this bookmark. For example, IT and HR.|
+|availabilityStartDateTime|DateTimeOffset|Timestamp of when the bookmark will start to appear as a search result. Set as `null` for always available.|
+|availabilityEndDateTime|DateTimeOffset|Timestamp of when the bookmark will stop to appear as a search result. Set as `null` for always available.|
+|languageTags|String collection|List of countries or regions able to view this bookmark.|
+|platforms|microsoft.graph.devicePlatformType collection|List of devices and operating systems able to view this bookmark. Possible values are: `unknown`, `android`, `androidForWork`, `ios`, `macOS`, `windowsPhone81`, `windowsPhone81AndLater`, `windows10AndLater`, `androidWorkProfile`, `androidASOP`.|
+|targetedVariations|[microsoft.graph.search.answerVariant](../resources/search-answerVariant.md) collection|Variations of a bookmark for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings will apply to all variations.|
+|powerAppIds|String collection|List of Power Apps associated with this bookmark. If users add existing Power Apps to a bookmark, they can complete tasks, such as to enter vacation time or to report expenses on the search results page.|
+|keywords|[microsoft.graph.search.answerKeyword](../resources/search-answerKeyword.md)|Keywords that trigger this bookmark to appear in search results.|
+|state|microsoft.graph.search.answerState|State of the bookmark. Possible values are: `published`, `draft`, `excluded`, or `unknownFutureValue`.|
+|groupIds|String collection|List of security groups able to view this bookmark.|
+
+
+
+## Response
+
+If successful, this method returns a `201 Created` response code with the ID of the bookmark created.
+
+## Examples
+
+### Request
+<!-- {
+  "blockType": "request",
+  "name": "create_bookmark_from_bookmarks_e1"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/search/bookmarks
+Content-Type: application/json
+
+{
+  "displayName": "Contoso Install Site",
+  "webUrl": "http://www.contoso.com/",
+  "description": "Try or buy Contoso for Home or Business and view product information",
+  "keywords":  {
+    "keywords": ["Contoso", "install"],
+    "reservedKeywords": ["Contoso"],
+    "matchSimilarKeywords": true
+  },
+  "availabilityStartDateTime": null,
+  "availabilityEndDateTime": null,
+  "platforms": ["windows"],
+  "targetedVariations": [
+    {
+      "languageTag": "es-es",
+      "displayName": "Sitio de instalación Contoso",
+      "description": "Pruebe o compre Contoso hogar o negocios y vea la información del producto"
+    }
+  ],
+  "state": "published"
+}
+```
+
+
+### Response
+Here is an example of the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.search.bookmark"
+}-->
+```http
+HTTP/1.1 201 CREATED
+Location: /733b26d5-af76-4eea-ac69-1a0ce8716897
+Content-Type: application/json
+
+{
+  "id": "733b26d5-af76-4eea-ac69-1a0ce8716897"
+}
+```
+
