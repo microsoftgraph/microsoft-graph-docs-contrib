@@ -1,7 +1,7 @@
 ---
 title: "shift resource type"
 description: "Represents a unit of scheduled work in a schedule."
-author: "aaku"
+author: "shanemalone"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
@@ -42,8 +42,12 @@ Inherits from [changeTrackedEntity](../resources/changetrackedentity.md).
 | lastModifiedBy       | [identitySet](identityset.md) | The identity of the user who last updated this **shift**. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md). |
 | lastModifiedDateTime | DateTimeOffset              | The timestamp on which this **shift** was last updated. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [changeTrackedEntity](../resources/changetrackedentity.md). |
 | schedulingGroupId    | String                      | ID of the scheduling group the **shift** is part of. Required. |
+| schedulingGroupName  | String                      | Display name of the scheduling group the **shift** is part of. |
 | sharedShift          | [shiftItem](shiftitem.md)     | The shared version of this **shift** that is viewable by both employees and managers. |
+| teamId               | String                      | ID of the team that the **shift** is in. |
+| teamName             | String                      | Display name of the team that the **shift** is in. |
 | userId               | String                      | ID of the user assigned to the **shift**. Required. |
+| userName             | String                      | Display name of the user assigned to the **shift**. |
 
 ## JSON representation
 
@@ -66,8 +70,12 @@ The following JSON representation shows the resource type.
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "String (timestamp)",
   "schedulingGroupId": "String",
+  "schedulingGroupName": "String",
   "sharedShift": { "@odata.type": "microsoft.graph.shiftItem" },
-  "userId": "String"
+  "teamId": "String",
+  "teamName": "String",
+  "userId": "String",
+  "userName": "String"
 }
 ```
 
