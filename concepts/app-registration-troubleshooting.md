@@ -24,4 +24,4 @@ If you see the above message, this means you don't have the _Microsoft.GraphServ
 
 If you see the bellow error message, this means someone already created a resource of type _Microsoft.GraphServices_ for that app manually, with a different name. In that case, the already existent resource will be used for billing purposes and no action is needed.
 
-![Screenshot showing an error while creating a billing resource.](images/app-registration-already-premium-usage.png)
+![Screenshot showing an error for already existent billing resource.](images/app-registration-already-premium-usage.png)
