@@ -7,6 +7,7 @@ ms.reviewer: jgangadhar
 ms.localizationpriority: medium
 ms.prod: "governance"
 ms.date: 11/01/2022
+#Customer intent: As a developer integrating with Microsoft Graph, I want to use the access reviews APIs to review and attest to the access that principals have to resources in my organization, so that I can ensure proper security and compliance in my organization.
 ---
 
 # Review access to your security groups using the access reviews API in Microsoft Graph
@@ -21,7 +22,7 @@ This tutorial guides you to use the access reviews API to review access to a sec
 
 To complete this tutorial, you need the following resources and privileges:
 
-+ A working Microsoft Entra tenant with a Microsoft Entra ID P2 or EMS E5 license enabled.
++ A working Microsoft Entra tenant with a Microsoft Entra ID P2 or Microsoft Entra ID Governance license enabled.
 + Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Global Administrator or Identity Governance Administrator role.
   + [Optional] Open a new **incognito**, **anonymous**, or **InPrivate browser** window. You'll sign in later in this tutorial.
 + Grant yourself the following delegated permissions: `AccessReview.ReadWrite.All`, `Group.ReadWrite.All`.

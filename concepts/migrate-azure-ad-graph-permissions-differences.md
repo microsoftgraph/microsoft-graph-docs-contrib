@@ -7,6 +7,7 @@ ms.reviewer: jackson.woods
 ms.localizationpriority: medium
 ms.prod: "applications"
 ms.date: 11/11/2022
+#Customer intent: As a developer migrating apps from Azure AD Graph to Microsoft Graph, I want to understand the differences in permissions between the two APIs, so that I can grant the rightly scoped Microsoft Graph permissions to my app.
 ---
 
 # Permissions differences between Azure AD Graph and Microsoft Graph
