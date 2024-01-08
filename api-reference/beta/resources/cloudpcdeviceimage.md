@@ -30,18 +30,42 @@ Represents the image resource on a Cloud PC.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name of the associated device image. Device Image Display Name and Version is used to uniquely identify Cloud PC device image. Read-Only.|
-|expirationDate|Date|The date the image became unavailable. Read-Only.|
-|id|String|The unique identifier (ID) of the image resource on Cloud PC. Read-Only.|
-|lastModifiedDateTime|DateTimeOffset|The data and time that the image was last modified. The time is shown in ISO 8601 format and  Coordinated Universal Time (UTC) time. For example, midnight UTC on Jan 1, 2014 appears as `2014-01-01T00:00:00Z`. Read-Only.|
-|operatingSystem|String|The operating system of the image. For example, `Windows 10 Enterprise`. Read-Only.|
-|osBuildNumber|String|The OS build version of the image. For example, `1909`. Read-Only.|
-|osStatus|[cloudPcDeviceImageOsStatus](#cloudpcdeviceimageosstatus-values)|The OS status of this image. Possible values are: `supported`, `supportedWithWarning`, `unknown`, `unknownFutureValue`. Default value is unknown. Read-Only.|
-|sourceImageResourceId|String|The unique identifier (ID) of the source image resource on Azure. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}". Read-Only.|
-|status|[cloudPcDeviceImageStatus](#cloudpcdeviceimagestatus-values)|The status of the image on Cloud PC. Possible values are: `pending`, `ready`, `failed`,`unknownFutureValue`. Read-Only.|
-|statusDetails|cloudPcDeviceImageStatusDetails|The details of the status of the image that indicates why the upload failed, if applicable. Possible values are: `internalServerError`, `sourceImageNotFound`, `osVersionNotSupported`, `sourceImageInvalid`, `sourceImageNotGeneralized`, `unknownFutureValue`, `vmAlreadyAzureAdJoined`, `paidSourceImageNotSupport`, `sourceImageNotSupportCustomizeVMName`,`sourceImageSizeExceedsLimitation`. Read-Only. (Starting from January 31, 2024, this property will no longer be supported and will be marked as deprecated. Use errorCode instead.)|
-|errorCode|cloudPcDeviceImageErrorCode|The error code of the image's status, which indicates why the upload failed if applicable. Possible values include: `internalServerError`, `sourceImageNotFound`, `osVersionNotSupported`, `sourceImageInvalid`, `sourceImageNotGeneralized`, `vmAlreadyAzureAdJoined`, `paidSourceImageNotSupport`, `sourceImageNotSupportCustomizeVMName`,`sourceImageSizeExceedsLimitation`. Read-Only.|
-|version|String|The image version. For example, `0.0.1` and `1.5.13`. Read-Only.|
+|displayName|String|The display name of the associated device image. The device image display name and the version are used to uniquely identify the Cloud PC device image. Read-only.|
+|errorCode|[cloudPcDeviceImageErrorCode](#cloudpcdeviceimageerrorcode-values)|The error code of the status of the image that indicates why the upload failed, if applicable. Possible values are: `internalServerError`, `sourceImageNotFound`, `osVersionNotSupported`, `sourceImageInvalid`, `sourceImageNotGeneralized`, `unknownFutureValue`, `vmAlreadyAzureAdJoined`, `paidSourceImageNotSupport`, `sourceImageNotSupportCustomizeVMName`, `sourceImageSizeExceedsLimitation`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `vmAlreadyAzureAdJoined`, `paidSourceImageNotSupport`, `sourceImageNotSupportCustomizeVMName`, `sourceImageSizeExceedsLimitation`. Read-only.|
+|expirationDate|Date|The date when the image became unavailable. Read-only.|
+|id|String|The unique identifier (ID) of the image resource on the Cloud PC. Read-only.|
+|lastModifiedDateTime|DateTimeOffset|The data and time when the image was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
+|operatingSystem|String|The operating system of the image. For example, `Windows 10 Enterprise`. Read-only.|
+|osBuildNumber|String|The OS build version of the image. For example, `1909`. Read-only.|
+|osStatus|[cloudPcDeviceImageOsStatus](#cloudpcdeviceimageosstatus-values)|The OS status of this image. Possible values are: `supported`, `supportedWithWarning`, `unknown`, `unknownFutureValue`. The default value is `unknown`. Read-only.|
+|sourceImageResourceId|String|The unique identifier (ID) of the source image resource on Azure. The required ID format is: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}". Read-only.|
+|status|[cloudPcDeviceImageStatus](#cloudpcdeviceimagestatus-values)|The status of the image on the Cloud PC. Possible values are: `pending`, `ready`, `failed`, `unknownFutureValue`. Read-only.|
+|version|String|The image version. For example, `0.0.1` and `1.5.13`. Read-only.|
+|statusDetails (deprecated)|[cloudPcDeviceImageStatusDetails](cloudpcdeviceimagestatusdetails-values-deprecated)|The details of the status of the image that indicates why the upload failed, if applicable. Possible values are: `internalServerError`, `sourceImageNotFound`, `osVersionNotSupported`, `sourceImageInvalid`, `sourceImageNotGeneralized`, `unknownFutureValue`, `vmAlreadyAzureAdJoined`, `paidSourceImageNotSupport`, `sourceImageNotSupportCustomizeVMName`, `sourceImageSizeExceedsLimitation`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `vmAlreadyAzureAdJoined`, `paidSourceImageNotSupport`, `sourceImageNotSupportCustomizeVMName`, `sourceImageSizeExceedsLimitation`. Read-only. The **statusDetails** property is deprecated and will stop returning data on January 31, 2024. Going forward, use the **errorCode** property.|
+
+### cloudPcDeviceImageErrorCode values
+
+|Member|Description|
+|:---|:---|
+|internalServerError|An internal server error occurred during the processing of the image.|
+|sourceImageNotFound|The source image is inaccessible or not found.|
+|osVersionNotSupported|The OS version isn't supported.|
+|sourceImageInvalid|The source image is invalid for provisioning a Windows virtual machine (VM).|
+|sourceImageNotGeneralized|The uploaded image hasn’t been generalized. Reupload the image after running the sysprep/generalize command. To learn more, see [Remove machine specific information by deprovisioning or generalizing a VM before creating an image](/azure/virtual-machines/generalize).|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
+|vmAlreadyAzureAdJoined|The VM that generates a source image for creating device image has already been Microsoft Entra joined. So, validation process blocks create device image with such source image.|
+|paidSourceImageNotSupport|This source image is built from another paid image from the Azure Marketplace and isn't supported; use another source to proceed.|
+|sourceImageNotSupportCustomizeVMName|A computer name setting issue exists on the resultant generalized image, preventing the customization of the VM name with the provided image.|
+|sourceImageSizeExceedsLimitation|The size of the customer-uploaded source image exceeds the shared image gallery (SIG) limitations, resulting in image creation failure.|
+
+### cloudPcDeviceImageOsStatus values
+
+|Member|Description|
+|:---|:---|
+|supported|Indicates the Cloud PC device image operating system is active and ready to be used for provisioning.|
+|supportedWithWarning|Indicates that the Cloud PC device image operating system is expired, but Cloud PC continues support. If users continue to use, they may not be able to get security updates.|
+|unknown|Default. Indicates that the status of the operating system image for the Cloud PC device is unknown.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ### cloudPcDeviceImageStatus values
 
@@ -52,45 +76,20 @@ Represents the image resource on a Cloud PC.
 |failed|The image couldn’t be uploaded. |
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
-### cloudPcDeviceImageStatusDetails values
+### cloudPcDeviceImageStatusDetails values (deprecated)
 
 |Member|Description|
 |:---|:---|
-|internalServerError|There was an internal server error while processing the image.|
-|sourceImageNotFound|Source image is inaccessible or not found.|
-|osVersionNotSupported| OS version isn't supported.|
-|sourceImageInvalid|The source image isn't valid for provisioning a Windows VM with it.|
-|sourceImageNotGeneralized|The uploaded image isn’t been generalized. Reupload the image after running the sysprep/generalize command. To learn more, see [Remove machine specific information by generalizing a VM before creating an image](/azure/virtual-machines/generalize).|
+|internalServerError|An internal server error occurred during the processing of the image.|
+|sourceImageNotFound|The source image is inaccessible or not found.|
+|osVersionNotSupported|The OS version isn't supported.|
+|sourceImageInvalid|The source image is invalid for provisioning a Windows virtual machine (VM).|
+|sourceImageNotGeneralized|The uploaded image isn’t been generalized. Reupload the image after running the sysprep/generalize command. To learn more, see [Remove machine specific information by deprovisioning or generalizing a VM before creating an image](/azure/virtual-machines/generalize).|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
-|vmAlreadyAzureAdJoined|The virtual machine (VM) which is used to generate a source image for creating device image has already been Azure Active Directory joined. So, validation process blocks create device image with such source image.|
-|paidSourceImageNotSupport|This source image is built from another paid image from Azure marketplace and isn't supported, use another source to proceed.|
-|sourceImageNotSupportCustomizeVMName|There's a computer name setting issue on the resultant generalized image. It's not able to customize VM name with the provided image.|
-|sourceImageSizeExceedsLimitation|Customer upload source image size exceeds SIG (Shared Image Gallery) limitation, which causes image creation failure.|
-
-
-### cloudPcDeviceImageErrorCode values
-
-|Member|Description|
-|:---|:---|
-|internalServerError|There was an internal server error while processing the image.|
-|sourceImageNotFound|Source image is inaccessible or not found.|
-|osVersionNotSupported| OS version isn't supported.|
-|sourceImageInvalid|The source image isn't valid for provisioning a Windows VM with it.|
-|sourceImageNotGeneralized|The uploaded image hasn’t been generalized. Reupload the image after running the sysprep/generalize command. To learn more, see [Remove machine specific information by generalizing a VM before creating an image](/azure/virtual-machines/generalize).|
-|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
-|vmAlreadyAzureAdJoined|The virtual machine (VM) which is used to generate a source image for creating device image has already been Azure Active Directory joined. So, validation process blocks create device image with such source image.|
-|paidSourceImageNotSupport|This source image is built from another paid image from Azure marketplace and isn't supported, use another source to proceed.|
-|sourceImageNotSupportCustomizeVMName|There's a computer name setting issue on the resultant generalized image. It's not able to customize VM name with the provided image.|
-|sourceImageSizeExceedsLimitation|Customer upload source image size exceeds SIG (Shared Image Gallery) limitation, which causes image creation failure.|
-
-### cloudPcDeviceImageOsStatus values
-
-|Member|Description|
-|:---|:---|
-|supported|Indicates the Cloud PC device image operating system is active and ready to be used for provisioning.|
-|supportedWithWarning|Indicates the Cloud PC device image operating system is expired, but Cloud PC continues support. If users continue to use, they may not be able to get security updates.|
-|unknown|Default. Indicates the Cloud PC device operating system image status is unknown.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
+|vmAlreadyAzureAdJoined|The VM that generates a source image for creating device image has already been Microsoft Entra joined. So, validation process blocks create device image with such source image.|
+|paidSourceImageNotSupport|This source image is built from another paid image from the Azure Marketplace and isn't supported; use another source to proceed.|
+|sourceImageNotSupportCustomizeVMName|A computer name setting issue exists on the resultant generalized image, preventing the customization of the VM name with the provided image.|
+|sourceImageSizeExceedsLimitation|The size of the customer-uploaded source image exceeds the shared image gallery (SIG) limitations, resulting in image creation failure.|
 
 ## Relationships
 
@@ -98,7 +97,8 @@ None.
 
 ## JSON representation
 
-The following content is a JSON representation of the resource.
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -107,11 +107,11 @@ The following content is a JSON representation of the resource.
   "openType": false
 }
 -->
-
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcDeviceImage",
   "displayName": "String",
+  "errorCode": "String",
   "expirationDate": "String (timestamp)",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
@@ -121,7 +121,6 @@ The following content is a JSON representation of the resource.
   "sourceImageResourceId": "String",
   "status": "String",
   "statusDetails": "String",
-  "errorCode": "String",
   "version": "String"
 }
 ```
