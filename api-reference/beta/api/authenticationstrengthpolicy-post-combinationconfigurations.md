@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new authenticationCombinationConfiguration object. The following types that are derived from the `authenticationCombinationConfiguration` object:
+Create a new authenticationCombinationConfiguration object which can be of one of the following derived types:
 * [fido2combinationConfigurations](../resources/fido2combinationconfiguration.md)
 * [x509certificatecombinationconfiguration](../resources/x509certificatecombinationconfiguration.md)
 
@@ -50,7 +50,7 @@ You can specify the following properties when creating an **authenticationCombin
 
 |Property|Type|Description|
 |:---|:---|:---|
-|appliesToCombinations|authenticationMethodModes collection|The combinations where this configuration applies. For **fido2combinationConfigurations** use `"fido2"`, for **x509certificatecombinationconfiguration** use `"x509CertificateSingleFactor"` or `"x509CertificateMultiFactor"`.Required.|
+|appliesToCombinations|authenticationMethodModes collection|The combinations where this configuration applies. For **fido2combinationConfigurations** use `"fido2"`, for **x509certificatecombinationconfiguration** use `"x509CertificateSingleFactor"` or `"x509CertificateMultiFactor"`. Required.|
 
 ## Response
 

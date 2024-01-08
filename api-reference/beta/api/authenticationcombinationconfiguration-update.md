@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of an [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) object. 
-The proprties can be one of the following types that are derived from the `authenticationCombinationConfiguration` object:
+The properties can be for one of the following derived types:
 * [fido2combinationConfigurations](../resources/fido2combinationconfiguration.md)
 * [x509certificatecombinationconfiguration](../resources/x509certificatecombinationconfiguration.md)
 
@@ -50,7 +50,7 @@ PATCH /identity/conditionalAccess/authenticationStrength/policies/{authenticatio
 
 |Property|Type|Description|
 |:---|:---|:---|
-|appliesToCombinations|authenticationMethodModes collection|The combinations where this configuration applies. For **fido2combinationConfigurations** use `"fido2"`, for **x509certificatecombinationconfiguration** use `"x509CertificateSingleFactor"` or `"x509CertificateMultiFactor"`.Required.|
+|appliesToCombinations|authenticationMethodModes collection|The combinations where this configuration applies. For **fido2combinationConfigurations** use `"fido2"`, for **x509certificatecombinationconfiguration** use `"x509CertificateSingleFactor"` or `"x509CertificateMultiFactor"`. Required.|
 
 ## Response
 

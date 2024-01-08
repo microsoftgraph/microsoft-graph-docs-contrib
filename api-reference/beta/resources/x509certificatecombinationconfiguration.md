@@ -1,6 +1,6 @@
 ---
 title: "x509CertificateCombinationConfiguration resource type"
-description: "Configuration to require a specific certificate in an authentication strength"
+description: "Configuration to require a specific certificate in an authentication strength policy."
 author: "InbarckMS"
 ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Configure to require specific certificate properties. An administrator may use this entity to specify which certificate issuer or policy OID are allowed, as part of ceritifcate-based authentication, in an [authentication strength](authenticationstrengthpolicy.md) policy.
+Configuration to require specific certificate properties. You can use this entity to specify the certificate issuer or policy OID that are allowed, as part of certificate-based authentication, in an [authentication strength policy](authenticationstrengthpolicy.md).
 
 Inherits from [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md).
 
@@ -25,9 +25,9 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|allowedIssuerSkis|String collection|A list of allowed SubjectkeyIdentifier.|
+|allowedIssuerSkis|String collection|A list of allowed subject key identifier values.|
 |allowedPolicyOIDs|String collection|A list of allowed policy OIDs.|
-|appliesToCombinations|authenticationMethodModes collection| Which authentication method combinations this configuration applies to. The possible values for x509certificatecombinationconfiguration are `"x509CertificateSingleFactor"` or `"x509CertificateMultiFactor"`.|
+|appliesToCombinations|authenticationMethodModes collection| Which authentication method combinations this configuration applies to. The possible values for x509certificatecombinationconfiguration are `"x509CertificateSingleFactor"` or `"x509CertificateMultiFactor"`. Inherited from [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md).|
 |id|String|A system-generated identifier. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
