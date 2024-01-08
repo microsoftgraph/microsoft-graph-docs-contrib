@@ -4,20 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var itemPublication = new ItemPublication
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new ItemPublication
 {
 	Description = "One persons journey to the top of the branding management field.",
 	DisplayName = "Got Brands? The story of Innocenty Popov and his journey to the top.",
-	PublishedDate = new Date(1900,1,1),
+	PublishedDate = new Date(DateTime.Parse("Date")),
 	Publisher = "International Association of Branding Management Publishing",
 	ThumbnailUrl = "https://iabm.io/sdhdfhsdhshsd.jpg",
-	WebUrl = "https://www.iabm.io"
+	WebUrl = "https://www.iabm.io",
 };
 
-await graphClient.Me.Profile.Publications
-	.Request()
-	.AddAsync(itemPublication);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Me.Profile.Publications.PostAsync(requestBody);
+
 
 ```

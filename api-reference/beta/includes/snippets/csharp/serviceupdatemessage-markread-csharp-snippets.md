@@ -4,17 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var messageIds = new List<String>()
+// Dependencies
+using Microsoft.Graph.Beta.Admin.ServiceAnnouncement.Messages.MarkRead;
+
+var requestBody = new MarkReadPostRequestBody
 {
-	"MC172851",
-	"MC167983"
+	MessageIds = new List<string>
+	{
+		"MC172851",
+		"MC167983",
+	},
 };
 
-await graphClient.Admin.ServiceAnnouncement.Messages
-	.MarkRead(messageIds)
-	.Request()
-	.PostAsync();
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Admin.ServiceAnnouncement.Messages.MarkRead.PostAsync(requestBody);
+
 
 ```

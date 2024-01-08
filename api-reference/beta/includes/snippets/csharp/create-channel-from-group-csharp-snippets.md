@@ -4,17 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var channel = new Channel
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new Channel
 {
 	DisplayName = "Architecture Discussion",
 	Description = "This channel is where we debate all future architecture plans",
-	MembershipType = ChannelMembershipType.Standard
+	MembershipType = ChannelMembershipType.Standard,
 };
 
-await graphClient.Teams["{team-id}"].Channels
-	.Request()
-	.AddAsync(channel);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Teams["{team-id}"].Channels.PostAsync(requestBody);
+
 
 ```

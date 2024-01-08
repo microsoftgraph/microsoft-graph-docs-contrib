@@ -4,31 +4,34 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var message = new Message
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new Message
 {
 	Subject = "Did you see last night's game?",
 	Importance = Importance.Low,
 	Body = new ItemBody
 	{
 		ContentType = BodyType.Html,
-		Content = "They were <b>awesome</b>!"
+		Content = "They were <b>awesome</b>!",
 	},
-	ToRecipients = new List<Recipient>()
+	ToRecipients = new List<Recipient>
 	{
 		new Recipient
 		{
 			EmailAddress = new EmailAddress
 			{
-				Address = "AdeleV@contoso.onmicrosoft.com"
-			}
-		}
-	}
+				Address = "AdeleV@contoso.onmicrosoft.com",
+			},
+		},
+	},
 };
 
-await graphClient.Me.Messages
-	.Request()
-	.AddAsync(message);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Me.Messages.PostAsync(requestBody);
+
 
 ```

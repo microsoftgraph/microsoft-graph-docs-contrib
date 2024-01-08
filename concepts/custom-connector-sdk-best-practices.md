@@ -1,16 +1,16 @@
 ---
-title: "Microsoft Graph connectors SDK (preview) best practices"
+title: "Microsoft Graph connectors SDK best practices"
 author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.prod: search
-description: "Apply best practices when you use the Microsoft Graph connectors SDK (preview)."
+description: "Apply best practices when you use the Microsoft Graph connectors SDK."
 ---
 
-# Microsoft Graph connectors SDK (preview) best practices
+# Microsoft Graph connectors SDK best practices
 
-This article provides best practices to follow when you use the Microsoft Graph connectors SDK (preview) to implement a custom connector.
+This article provides best practices to follow when you use the Microsoft Graph connectors SDK to implement a custom connector.
 
 ## Using the crawl progress marker
 
@@ -25,7 +25,8 @@ Both periodic full and incremental crawls have their crawl progress markers.
 ### Usage of the crawl progress marker during periodic full crawls
 
 The SDK sends the crawl progress marker if the previous crawl crashed or a scheduled crawl was missed due to the Microsoft Graph connector agent being offline during periodic full crawls.
-If no previous crawl crashed occurred, you have to crawl the data source from the beginning.
+
+If the previous crawl did not crash, you have to crawl the data source from the beginning.
 
 ### Usage of the crawl progress marker during incremental crawls
 

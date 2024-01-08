@@ -4,15 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var memberId = "319b41e8-d9e4-42f8-bdc9-741113f48b33";
+// Dependencies
+using Microsoft.Graph.Beta.Groups.EvaluateDynamicMembership;
 
-var membershipRule = "(user.displayName -startsWith \"EndTestUser\")";
+var requestBody = new EvaluateDynamicMembershipPostRequestBody
+{
+	MemberId = "319b41e8-d9e4-42f8-bdc9-741113f48b33",
+	MembershipRule = "(user.displayName -startsWith \"EndTestUser\")",
+};
 
-await graphClient.Groups
-	.EvaluateDynamicMembership(memberId,membershipRule)
-	.Request()
-	.PostAsync();
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Groups.EvaluateDynamicMembership.PostAsync(requestBody);
+
 
 ```

@@ -8,42 +8,42 @@ Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
-	CallbackUri = "https://bot.contoso.com/callback"
-	Source = @{
+	callbackUri = "https://bot.contoso.com/callback"
+	source = @{
 		"@odata.type" = "#microsoft.graph.participantInfo"
-		Identity = @{
+		identity = @{
 			"@odata.type" = "#microsoft.graph.identitySet"
-			ApplicationInstance = @{
+			applicationInstance = @{
 				"@odata.type" = "#microsoft.graph.identity"
-				DisplayName = "Calling Bot"
-				Id = "3d913abb-aec0-4964-8fa6-3c6850c4f278"
+				displayName = "Calling Bot"
+				id = "3d913abb-aec0-4964-8fa6-3c6850c4f278"
 			}
 		}
-		CountryCode = $null
-		EndpointType = $null
-		Region = $null
-		LanguageId = $null
+		countryCode = $null
+		endpointType = $null
+		region = $null
+		languageId = $null
 	}
-	Targets = @(
+	targets = @(
 		@{
 			"@odata.type" = "#microsoft.graph.invitationParticipantInfo"
-			Identity = @{
+			identity = @{
 				"@odata.type" = "#microsoft.graph.identitySet"
-				Phone = @{
+				phone = @{
 					"@odata.type" = "#microsoft.graph.identity"
-					Id = "+12345678901"
+					id = "+12345678901"
 				}
 			}
 		}
 	)
-	RequestedModalities = @(
+	requestedModalities = @(
 		"audio"
 	)
-	MediaConfig = @{
+	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		Blob = "<Media Session Configuration>"
+		blob = "<Media Session Configuration>"
 	}
-	TenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
+	tenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
 
 New-MgCommunicationCall -BodyParameter $params

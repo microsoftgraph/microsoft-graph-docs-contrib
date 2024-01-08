@@ -4,24 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var cloudPcOnPremisesConnection = new CloudPcOnPremisesConnection
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new CloudPcOnPremisesConnection
 {
 	DisplayName = "test-canary-02",
 	Type = CloudPcOnPremisesConnectionType.HybridAzureADJoin,
 	SubscriptionId = "0ac520ee-14c0-480f-b6c9-0a90c585ffff",
-	SubscriptionName = "CPC customer 001 test subscription",
 	AdDomainName = "contoso001.com",
 	AdDomainUsername = "dcadmin",
 	OrganizationalUnit = "OU=Domain Controllers, DC=contoso001, DC=com",
 	ResourceGroupId = "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG",
 	VirtualNetworkId = "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET",
-	SubnetId = "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET/subnets/canary01-Subnet"
+	SubnetId = "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET/subnets/canary01-Subnet",
 };
 
-await graphClient.DeviceManagement.VirtualEndpoint.OnPremisesConnections
-	.Request()
-	.AddAsync(cloudPcOnPremisesConnection);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.DeviceManagement.VirtualEndpoint.OnPremisesConnections.PostAsync(requestBody);
+
 
 ```

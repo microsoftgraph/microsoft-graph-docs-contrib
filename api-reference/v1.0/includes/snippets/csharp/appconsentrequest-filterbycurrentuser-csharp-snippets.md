@@ -4,12 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var filterByCurrentUser = await graphClient.IdentityGovernance.AppConsent.AppConsentRequests
-	.FilterByCurrentUser(ConsentRequestFilterByCurrentUserOptions.Reviewer)
-	.Request()
-	.Filter("userConsentRequests/any(u:u/status eq 'InProgress')")
-	.GetAsync();
+// Dependencies
+using Microsoft.Graph.Models;
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.IdentityGovernance.AppConsent.AppConsentRequests.FilterByCurrentUserWithOn("reviewer").GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Filter = "userConsentRequests/any(u:u/status eq 'InProgress')";
+});
+
 
 ```

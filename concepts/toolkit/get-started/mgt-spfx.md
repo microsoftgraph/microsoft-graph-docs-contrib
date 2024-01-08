@@ -9,10 +9,14 @@ author: sebastienlevert
 
 Use the SharePoint Framework library for Microsoft Graph Toolkit to use Microsoft Graph Toolkit in SharePoint Framework solutions.
 
+> [!IMPORTANT]
+> If you're building on Microsoft Graph Toolkit v3.0.0 or higher, we recommend that you consider using [Disambiguation](../customize-components/disambiguation.md) for your SharePoint Framework web parts. 
+
 To prevent multiple components from registering their own set of Microsoft Graph Toolkit components on the page, you should deploy this library to your tenant and reference Microsoft Graph Toolkit components that you use in your solution from this library.
 
 > [!CAUTION]
 > The SharePoint Framework library for Microsoft Graph Toolkit is meant to be used with **SharePoint Framework extensions and non-isolated web parts**. If you're building isolated web parts, don't use the SharePoint Framework library for Microsoft Graph Toolkit. Instead, load Microsoft Graph Toolkit directly from the @microsoft/mgt (or @microsoft/mgt-react if you use React) package. SharePoint Framework doesn't support referencing library components from isolated web parts and doing so will cause runtime errors in the isolated web part.
+
 
 ## Prerequisites
 
@@ -108,3 +112,4 @@ export default class MgtReact extends React.Component<IMgtReactProps, {}> {
 
 * [Build a SharePoint web part with the Microsoft Graph Toolkit](./build-a-sharepoint-web-part.md)
 * [Learn about authentication providers](../providers/providers.md)
+* [Disambiguation of Microsoft Graph Toolkit components](../customize-components/disambiguation.md) 

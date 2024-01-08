@@ -4,15 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var tag = new Microsoft.Graph.Ediscovery.Tag
+// Dependencies
+using Microsoft.Graph.Beta.Models.Ediscovery;
+
+var requestBody = new Tag
 {
-	Description = "This is an updated description."
+	Description = "This is an updated description.",
 };
 
-await graphClient.Compliance.Ediscovery.Cases["{ediscovery.case-id}"].Tags["{ediscovery.tag-id}"]
-	.Request()
-	.UpdateAsync(tag);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Compliance.Ediscovery.Cases["{case-id}"].Tags["{tag-id}"].PatchAsync(requestBody);
+
 
 ```

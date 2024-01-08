@@ -4,22 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var educationOutcome = new EducationFeedbackOutcome
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new EducationFeedbackOutcome
 {
+	OdataType = "#microsoft.graph.educationFeedbackOutcome",
 	Feedback = new EducationFeedback
 	{
 		Text = new EducationItemBody
 		{
 			Content = "This is feedback for the assignment as a whole.",
-			ContentType = BodyType.Text
-		}
-	}
+			ContentType = BodyType.Text,
+		},
+	},
 };
 
-await graphClient.Education.Classes["{educationClass-id}"].Assignments["{educationAssignment-id}"].Submissions["{educationSubmission-id}"].Outcomes["{educationOutcome-id}"]
-	.Request()
-	.UpdateAsync(educationOutcome);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Education.Classes["{educationClass-id}"].Assignments["{educationAssignment-id}"].Submissions["{educationSubmission-id}"].Outcomes["{educationOutcome-id}"].PatchAsync(requestBody);
+
 
 ```

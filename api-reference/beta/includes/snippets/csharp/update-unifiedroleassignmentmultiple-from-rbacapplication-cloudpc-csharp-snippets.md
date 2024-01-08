@@ -4,16 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var unifiedRoleAssignmentMultiple = new UnifiedRoleAssignmentMultiple
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new UnifiedRoleAssignmentMultiple
 {
 	DisplayName = "NewName",
-	Description = "A new roleAssignment"
+	Description = "A new roleAssignment",
 };
 
-await graphClient.RoleManagement.CloudPC.RoleAssignments["{unifiedRoleAssignmentMultiple-id}"]
-	.Request()
-	.UpdateAsync(unifiedRoleAssignmentMultiple);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.RoleManagement.CloudPC.RoleAssignments["{unifiedRoleAssignmentMultiple-id}"].PatchAsync(requestBody);
+
 
 ```

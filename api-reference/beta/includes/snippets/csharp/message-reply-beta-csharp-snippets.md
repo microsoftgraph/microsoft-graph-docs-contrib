@@ -4,36 +4,41 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var message = new Message
+// Dependencies
+using Microsoft.Graph.Beta.Me.Messages.Item.Reply;
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new ReplyPostRequestBody
 {
-	ToRecipients = new List<Recipient>()
+	Message = new Message
 	{
-		new Recipient
+		ToRecipients = new List<Recipient>
 		{
-			EmailAddress = new EmailAddress
+			new Recipient
 			{
-				Address = "samanthab@contoso.onmicrosoft.com",
-				Name = "Samantha Booth"
-			}
+				EmailAddress = new EmailAddress
+				{
+					Address = "samanthab@contoso.onmicrosoft.com",
+					Name = "Samantha Booth",
+				},
+			},
+			new Recipient
+			{
+				EmailAddress = new EmailAddress
+				{
+					Address = "randiw@contoso.onmicrosoft.com",
+					Name = "Randi Welch",
+				},
+			},
 		},
-		new Recipient
-		{
-			EmailAddress = new EmailAddress
-			{
-				Address = "randiw@contoso.onmicrosoft.com",
-				Name = "Randi Welch"
-			}
-		}
-	}
+	},
+	Comment = "Samantha, Randi, would you name the group please?",
 };
 
-var comment = "Samantha, Randi, would you name the group please?";
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.Me.Messages["{message-id}"].Reply.PostAsync(requestBody);
 
-await graphClient.Me.Messages["{message-id}"]
-	.Reply(message,comment)
-	.Request()
-	.PostAsync();
 
 ```

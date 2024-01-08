@@ -4,34 +4,46 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var contentInfo = new ContentInfo
+// Dependencies
+using Microsoft.Graph.Beta.InformationProtection.Policy.Labels.EvaluateClassificationResults;
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new EvaluateClassificationResultsPostRequestBody
 {
-	Format = ContentFormat.Default,
-	Identifier = null,
-	State = ContentState.Rest,
-	AdditionalData = new Dictionary<string, object>()
+	ContentInfo = new ContentInfo
 	{
-		{"format@odata.type", "#microsoft.graph.contentFormat"},
-		{"state@odata.type", "#microsoft.graph.contentState"}
-	}
+		OdataType = "#microsoft.graph.contentInfo",
+		Format = ContentFormat.Default,
+		Identifier = null,
+		State = ContentState.Rest,
+		AdditionalData = new Dictionary<string, object>
+		{
+			{
+				"format@odata.type" , "#microsoft.graph.contentFormat"
+			},
+			{
+				"state@odata.type" , "#microsoft.graph.contentState"
+			},
+		},
+	},
+	ClassificationResults = new List<ClassificationResult>
+	{
+		new ClassificationResult
+		{
+			SensitiveTypeId = "cb353f78-2b72-4c3c-8827-92ebe4f69fdf",
+			Count = 4,
+			ConfidenceLevel = 75,
+		},
+	},
 };
 
-var classificationResults = new List<ClassificationResult>()
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.InformationProtection.Policy.Labels.EvaluateClassificationResults.PostAsync(requestBody, (requestConfiguration) =>
 {
-	new ClassificationResult
-	{
-		SensitiveTypeId = "cb353f78-2b72-4c3c-8827-92ebe4f69fdf",
-		Count = 4,
-		ConfidenceLevel = 75
-	}
-};
+	requestConfiguration.Headers.Add("User-Agent", "ContosoLOBApp/1.0");
+});
 
-await graphClient.InformationProtection.Policy.Labels
-	.EvaluateClassificationResults(contentInfo,classificationResults)
-	.Request()
-	.Header("User-Agent","ContosoLOBApp/1.0")
-	.PostAsync();
 
 ```

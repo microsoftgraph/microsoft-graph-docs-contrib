@@ -4,20 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var tokenIssuancePolicy = new TokenIssuancePolicy
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new TokenIssuancePolicy
 {
-	Definition = new List<String>()
+	Definition = new List<string>
 	{
-		"definition-value"
+		"definition-value",
 	},
 	DisplayName = "displayName-value",
-	IsOrganizationDefault = true
+	IsOrganizationDefault = true,
 };
 
-await graphClient.Policies.TokenIssuancePolicies["{tokenIssuancePolicy-id}"]
-	.Request()
-	.UpdateAsync(tokenIssuancePolicy);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Policies.TokenIssuancePolicies["{tokenIssuancePolicy-id}"].PatchAsync(requestBody);
+
 
 ```

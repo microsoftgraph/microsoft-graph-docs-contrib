@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the payload coachmark detail of a payload.
+Represents the payload coachmark detail of a payload. A coachmark is an indicator to educate users in learning how to verify the authenticity of the payload in an attack simulation training campaign.
 
 ## Properties
 
@@ -32,7 +32,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.payloadCoachmark"

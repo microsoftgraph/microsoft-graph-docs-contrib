@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -65,7 +67,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5014
+Content-Length: 5057
 
 {
   "value": {
@@ -184,7 +186,8 @@ Content-Length: 5014
         "appId": "App Id value",
         "appType": "desktop",
         "routingPolicyType": "splitTunnel",
-        "claims": "Claims value"
+        "claims": "Claims value",
+        "vpnTrafficDirection": "inbound"
       }
     ],
     "routes": [

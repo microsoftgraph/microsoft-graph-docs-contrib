@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var accessPackageResourceRequest = new AccessPackageResourceRequestObject
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new AccessPackageResourceRequest
 {
 	CatalogId = "26ac0c0a-08bc-4a7b-a313-839f58044ba5",
 	RequestType = "AdminAdd",
@@ -19,7 +22,7 @@ var accessPackageResourceRequest = new AccessPackageResourceRequestObject
 		ResourceType = "Application",
 		OriginId = "2f1099a6-d4fc-4cc9-a0ef-ddd3f1bf0b7e",
 		OriginSystem = "AadApplication",
-		Attributes = new List<AccessPackageResourceAttribute>()
+		Attributes = new List<AccessPackageResourceAttribute>
 		{
 			new AccessPackageResourceAttribute
 			{
@@ -28,30 +31,33 @@ var accessPackageResourceRequest = new AccessPackageResourceRequestObject
 				IsPersistedOnAssignmentRemoval = true,
 				AttributeSource = new AccessPackageResourceAttributeQuestion
 				{
+					OdataType = "#microsoft.graph.accessPackageResourceAttributeQuestion",
 					Question = new AccessPackageTextInputQuestion
 					{
+						OdataType = "#microsoft.graph.accessPackageTextInputQuestion",
 						IsRequired = false,
 						Sequence = 0,
 						IsSingleLineQuestion = true,
 						Text = new AccessPackageLocalizedContent
 						{
 							DefaultText = "Title",
-							LocalizedTexts = new List<AccessPackageLocalizedText>()
+							LocalizedTexts = new List<AccessPackageLocalizedText>
 							{
-							}
-						}
-					}
+							},
+						},
+					},
 				},
 				AttributeDestination = new AccessPackageUserDirectoryAttributeStore
 				{
-				}
-			}
-		}
-	}
+					OdataType = "#microsoft.graph.accessPackageUserDirectoryAttributeStore",
+				},
+			},
+		},
+	},
 };
 
-await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageResourceRequests
-	.Request()
-	.AddAsync(accessPackageResourceRequest);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageResourceRequests.PostAsync(requestBody);
+
 
 ```

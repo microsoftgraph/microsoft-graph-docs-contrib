@@ -4,31 +4,34 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var alert = new Alert
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new Alert
 {
 	AssignedTo = "String",
 	ClosedDateTime = DateTimeOffset.Parse("String (timestamp)"),
-	Comments = new List<String>()
+	Comments = new List<string>
 	{
-		"String"
+		"String",
 	},
 	Feedback = AlertFeedback.Unknown,
 	Status = AlertStatus.Unknown,
-	Tags = new List<String>()
+	Tags = new List<string>
 	{
-		"String"
+		"String",
 	},
 	VendorInformation = new SecurityVendorInformation
 	{
 		Provider = "String",
-		Vendor = "String"
-	}
+		Vendor = "String",
+	},
 };
 
-await graphClient.Security.Alerts["{alert-id}"]
-	.Request()
-	.UpdateAsync(alert);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Security.Alerts["{alert-id}"].PatchAsync(requestBody);
+
 
 ```

@@ -2,6 +2,7 @@
 title: "softwareOathAuthenticationMethodConfiguration resource type"
 description: "Represents the authentication policy for a third-party software OATH authentication method."
 author: "jpettere"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
@@ -15,6 +16,7 @@ Namespace: microsoft.graph
 
 Represents the authentication policy for a third-party software OATH authentication method. Authentication methods policies define configuration settings and users or groups that are enabled to use the authentication method.
 
+Inherits from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).
 
 ## Methods
 |Method|Return type|Description|

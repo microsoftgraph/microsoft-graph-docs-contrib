@@ -15,7 +15,7 @@ UpdatableAssetCollectionResponse updatableAssetCollectionResponse = new Updatabl
 updatableAssetCollectionResponse.value = assetsList;
 UpdatableAssetCollectionPage updatableAssetCollectionPage = new UpdatableAssetCollectionPage(updatableAssetCollectionResponse, null);
 
-graphClient.admin().windows().updates().updatableAssets("{updatableAssetGroupId}")
+graphClient.admin().windows().updates().updatableAssets("f5ba7065-7065-f5ba-6570-baf56570baf5")
 	.addMembers(UpdatableAssetAddMembersParameterSet
 		.newBuilder()
 		.withAssets(assetsList)

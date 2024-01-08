@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Deployment deployment = new Deployment();
-WindowsDeploymentSettings settings = new WindowsDeploymentSettings();
+DeploymentSettings settings = new DeploymentSettings();
 MonitoringSettings monitoring = new MonitoringSettings();
 LinkedList<MonitoringRule> monitoringRulesList = new LinkedList<MonitoringRule>();
 MonitoringRule monitoringRules = new MonitoringRule();

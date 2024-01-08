@@ -4,13 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var bookingCustomer = new BookingCustomer
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new BookingCustomer
 {
 	DisplayName = "Joni Sherman",
 	EmailAddress = "jonis@relecloud.com",
-	Addresses = new List<PhysicalAddress>()
+	Addresses = new List<PhysicalAddress>
 	{
 		new PhysicalAddress
 		{
@@ -20,7 +23,7 @@ var bookingCustomer = new BookingCustomer
 			State = "NY",
 			CountryOrRegion = "USA",
 			PostalCode = "98052",
-			Type = PhysicalAddressType.Home
+			Type = PhysicalAddressType.Home,
 		},
 		new PhysicalAddress
 		{
@@ -30,26 +33,26 @@ var bookingCustomer = new BookingCustomer
 			State = "NY",
 			CountryOrRegion = "USA",
 			PostalCode = "98054",
-			Type = PhysicalAddressType.Business
-		}
+			Type = PhysicalAddressType.Business,
+		},
 	},
-	Phones = new List<Phone>()
+	Phones = new List<Phone>
 	{
 		new Phone
 		{
 			Number = "206-555-0100",
-			Type = PhoneType.Home
+			Type = PhoneType.Home,
 		},
 		new Phone
 		{
 			Number = "206-555-0200",
-			Type = PhoneType.Business
-		}
-	}
+			Type = PhoneType.Business,
+		},
+	},
 };
 
-await graphClient.BookingBusinesses["{bookingBusiness-id}"].Customers
-	.Request()
-	.AddAsync(bookingCustomer);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.BookingBusinesses["{bookingBusiness-id}"].Customers.PostAsync(requestBody);
+
 
 ```

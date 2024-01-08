@@ -4,45 +4,54 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var externalItem = new Microsoft.Graph.ExternalConnectors.ExternalItem
+// Dependencies
+using Microsoft.Graph.Beta.Models.ExternalConnectors;
+
+var requestBody = new ExternalItem
 {
-	Acl = new List<Microsoft.Graph.ExternalConnectors.Acl>()
+	Acl = new List<Acl>
 	{
-		new Microsoft.Graph.ExternalConnectors.Acl
+		new Acl
 		{
-			Type = Microsoft.Graph.ExternalConnectors.AclType.User,
+			Type = AclType.User,
 			Value = "e811976d-83df-4cbd-8b9b-5215b18aa874",
-			AccessType = Microsoft.Graph.ExternalConnectors.AccessType.Grant,
-			IdentitySource = Microsoft.Graph.ExternalConnectors.IdentitySourceType.AzureActiveDirectory
+			AccessType = AccessType.Grant,
+			IdentitySource = IdentitySourceType.AzureActiveDirectory,
 		},
-		new Microsoft.Graph.ExternalConnectors.Acl
+		new Acl
 		{
-			Type = Microsoft.Graph.ExternalConnectors.AclType.Group,
+			Type = AclType.Group,
 			Value = "14m1b9c38qe647f6a",
-			AccessType = Microsoft.Graph.ExternalConnectors.AccessType.Deny,
-			IdentitySource = Microsoft.Graph.ExternalConnectors.IdentitySourceType.External
-		}
+			AccessType = AccessType.Deny,
+			IdentitySource = IdentitySourceType.External,
+		},
 	},
-	Properties = new Microsoft.Graph.ExternalConnectors.Properties
+	Properties = new Properties
 	{
-		AdditionalData = new Dictionary<string, object>()
+		AdditionalData = new Dictionary<string, object>
 		{
-			{"title", "Error in the payment gateway"},
-			{"priority", "1"},
-			{"assignee", "john@contoso.com"}
-		}
+			{
+				"title" , "Error in the payment gateway"
+			},
+			{
+				"priority" , 1
+			},
+			{
+				"assignee" , "john@contoso.com"
+			},
+		},
 	},
-	Content = new Microsoft.Graph.ExternalConnectors.ExternalItemContent
+	Content = new ExternalItemContent
 	{
 		Value = "Error in payment gateway...",
-		Type = Microsoft.Graph.ExternalConnectors.ExternalItemContentType.Text
-	}
+		Type = ExternalItemContentType.Text,
+	},
 };
 
-await graphClient.External.Connections["{externalConnectors.externalConnection-id}"].Items["{externalConnectors.externalItem-id}"]
-	.Request()
-	.PutAsync(externalItem);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.External.Connections["{externalConnection-id}"].Items["{externalItem-id}"].PutAsync(requestBody);
+
 
 ```

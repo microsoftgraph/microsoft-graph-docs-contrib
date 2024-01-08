@@ -4,19 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var accessPackageAssignmentRequest = new AccessPackageAssignmentRequestObject
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new AccessPackageAssignmentRequest
 {
 	RequestType = AccessPackageRequestType.AdminRemove,
 	Assignment = new AccessPackageAssignment
 	{
-		Id = "a6bb6942-3ae1-4259-9908-0133aaee9377"
-	}
+		Id = "a6bb6942-3ae1-4259-9908-0133aaee9377",
+	},
 };
 
-await graphClient.IdentityGovernance.EntitlementManagement.AssignmentRequests
-	.Request()
-	.AddAsync(accessPackageAssignmentRequest);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.IdentityGovernance.EntitlementManagement.AssignmentRequests.PostAsync(requestBody);
+
 
 ```

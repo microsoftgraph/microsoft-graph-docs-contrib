@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [payloadCompatibleAssignmentFilter](../resources/intune-policyset-payloadcompatibleassignmentfilter.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -63,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 815
+Content-Length: 862
 
 {
   "value": {
@@ -87,6 +89,7 @@ Content-Length: 815
         "assignmentFilterType": "include"
       }
     ],
+    "assignmentFilterManagementType": "apps",
     "payloadType": "enrollmentRestrictions"
   }
 }

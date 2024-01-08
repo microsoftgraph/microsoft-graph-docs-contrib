@@ -1,6 +1,6 @@
 ---
 title: "office365GroupsActivityDetail resource type"
-description: "The following is a JSON representation of the resource."
+description: "Here's a JSON representation of the resource."
 ms.localizationpriority: medium
 ms.prod: "reports"
 author: "sarahwxy"
@@ -26,11 +26,13 @@ Namespace: microsoft.graph
 | groupType                         | String  | The group type. Possible values are: **Public** or **Private**. |
 | memberCount                       | Int64   | The group member count.                  |
 | externalMemberCount               | Int64   | The group external member count.         |
-| exchangeReceivedEmailCount        | Int64   | The number of email that the group mailbox received. |
+| exchangeReceivedEmailCount        | Int64   | The number of emails that the group mailbox received. |
 | sharePointActiveFileCount         | Int64   | The number of active files in SharePoint Group site. |
 | yammerPostedMessageCount          | Int64   | The number of messages posted to Yammer groups. |
 | yammerReadMessageCount            | Int64   | The number of messages read in Yammer groups. |
 | yammerLikedMessageCount           | Int64   | The number of messages liked in Yammer groups. |
+| teamsChannelMessagesCount         | Int64   | The number of channel messages in Teams team. |
+| teamsMeetingsOrganizedCount       | Int64   | The number of meetings organized in Teams team. |
 | exchangeMailboxTotalItemCount     | Int64   | The number of items in the group mailbox. |
 | exchangeMailboxStorageUsedInBytes | Int64   | The storage used of the group mailbox.   |
 | sharePointTotalFileCount          | Int64   | The total number of files in SharePoint Group site. |
@@ -39,7 +41,7 @@ Namespace: microsoft.graph
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -62,6 +64,8 @@ The following is a JSON representation of the resource.
   "yammerPostedMessageCount": 1024, 
   "yammerReadMessageCount": 1024, 
   "yammerLikedMessageCount": 1024, 
+  "teamsChannelMessagesCount": 1024,
+  "teamsMeetingsOrganizedCount": 1024,
   "exchangeMailboxTotalItemCount": 1024, 
   "exchangeMailboxStorageUsedInBytes": 1024, 
   "sharePointTotalFileCount": 1024, 

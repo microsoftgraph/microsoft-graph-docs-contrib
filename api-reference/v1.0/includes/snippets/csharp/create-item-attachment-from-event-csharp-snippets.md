@@ -4,34 +4,39 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var attachment = new ItemAttachment
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new ItemAttachment
 {
+	OdataType = "#microsoft.graph.itemAttachment",
 	Name = "Holiday event",
 	Item = new Event
 	{
+		OdataType = "microsoft.graph.event",
 		Subject = "Discuss gifts for children",
 		Body = new ItemBody
 		{
 			ContentType = BodyType.Html,
-			Content = "Let's look for funding!"
+			Content = "Let's look for funding!",
 		},
 		Start = new DateTimeTimeZone
 		{
 			DateTime = "2016-12-02T18:00:00",
-			TimeZone = "Pacific Standard Time"
+			TimeZone = "Pacific Standard Time",
 		},
 		End = new DateTimeTimeZone
 		{
 			DateTime = "2016-12-02T19:00:00",
-			TimeZone = "Pacific Standard Time"
-		}
-	}
+			TimeZone = "Pacific Standard Time",
+		},
+	},
 };
 
-await graphClient.Me.Events["{event-id}"].Attachments
-	.Request()
-	.AddAsync(attachment);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Me.Events["{event-id}"].Attachments.PostAsync(requestBody);
+
 
 ```

@@ -17,17 +17,16 @@ Get details about Microsoft 365 groups activity by group.
 
 > **Note:** For details about different report views and names, see [Microsoft 365 reports - Microsoft 365 groups](https://support.office.com/client/Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40).
 
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :--------------------------------------- |
-| Delegated (work or school account)     | Reports.Read.All                         |
-| Delegated (personal Microsoft account) | Not supported.                           |
-| Application                            | Reports.Read.All                         |
+<!-- { "blockType": "permissions", "name": "reportroot_getoffice365groupsactivitydetail" } -->
+[!INCLUDE [permissions-table](../includes/permissions/reportroot-getoffice365groupsactivitydetail-permissions.md)]
 
-**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
+**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Microsoft Entra ID limited administrator role. For more information, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
 
@@ -63,7 +62,7 @@ This method supports the `$format`, `$top`, and `$skipToken` [OData query parame
 
 If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report. That URL can be found in the `Location` header in the response.
 
-Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.
+Preauthenticated download URLs are only valid for a short period of time (a few minutes) and don't require an `Authorization` header.
 
 The CSV file has the following headers for columns.
 
@@ -80,6 +79,8 @@ The CSV file has the following headers for columns.
 - Yammer Posted Message Count
 - Yammer Read Message Count
 - Yammer Liked Message Count
+- Teams Channel Messages Count
+- Teams Meetings Organized Count
 - Exchange Mailbox Total Item Count
 - Exchange Mailbox Storage Used (Byte)
 - SharePoint Total File Count
@@ -87,21 +88,25 @@ The CSV file has the following headers for columns.
 - Group Id
 - Report Period
 
-The following columns are not supported in Microsoft Graph China operated by 21Vianet:
+The following columns aren't supported in Microsoft Graph China operated by 21Vianet:
 
 - Yammer Posted Message Count
 - Yammer Read Message Count
 - Yammer Liked Message Count
+- Teams Channel Messages Count
+- Teams Meetings Organized Count
 
 ### JSON
 
 If successful, this method returns a `200 OK` response code and an **[office365GroupsActivityDetail](../resources/office365groupsactivitydetail.md)** object in the response body.
 
-The following properties in **[office365GroupsActivityDetail](../resources/office365groupsactivitydetail.md)** object are not supported in Microsoft Graph China operated by 21Vianet:
+The following properties in **[office365GroupsActivityDetail](../resources/office365groupsactivitydetail.md)** object aren't supported in Microsoft Graph China operated by 21Vianet:
 
 - yammerPostedMessageCount
 - yammerReadMessageCount
 - yammerLikedMessageCount
+- teamsChannelMessagesCount
+- teamsMeetingsOrganizedCount
 
 The default page size for this request is 200 items.
 
@@ -109,11 +114,11 @@ The default page size for this request is 200 items.
 
 ### CSV
 
-The following is an example that outputs CSV.
+Here's an example  that outputs CSV.
 
 #### Request
 
-The following is an example of the request.
+Here's an example  of the request.
 
 
 <!-- {
@@ -128,7 +133,7 @@ GET https://graph.microsoft.com/beta/reports/getOffice365GroupsActivityDetail(pe
 
 #### Response
 
-The following is an example of the response.
+Here's an example  of the response.
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -138,7 +143,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-Follow the 302 redirection and the CSV file that downloads will have the following schema.
+Follow the 302 redirection and the CSV file that downloads have the following schema.
 
 <!-- {
   "blockType": "response",
@@ -150,16 +155,16 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Group Display Name,Is Deleted,Owner Principal Name,Last Activity Date,Group Type,Member Count,External Member Count,Exchange Received Email Count,SharePoint Active File Count,Yammer Posted Message Count,Yammer Read Message Count,Yammer Liked Message Count,Exchange Mailbox Total Item Count,Exchange Mailbox Storage Used (Byte),SharePoint Total File Count,SharePoint Site Storage Used (Byte),Group Id,Report Period
+Report Refresh Date,Group Display Name,Is Deleted,Owner Principal Name,Last Activity Date,Group Type,Member Count,External Member Count,Exchange Received Email Count,SharePoint Active File Count,Yammer Posted Message Count,Yammer Read Message Count,Yammer Liked Message Count,Teams Channel Messages Count,Teams Meetings Organized Count,Exchange Mailbox Total Item Count,Exchange Mailbox Storage Used (Byte),SharePoint Total File Count,SharePoint Site Storage Used (Byte),Group Id,Report Period
 ```
 
 ### JSON
 
-The following is an example that returns JSON.
+Here's an example  that returns JSON.
 
 #### Request
 
-The following is an example of the request.
+Here's an example  of the request.
 
 
 <!-- {
@@ -174,7 +179,7 @@ GET https://graph.microsoft.com/beta/reports/getOffice365GroupsActivityDetail(pe
 
 #### Response
 
-The following is an example of the response.
+Here's an example  of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -207,6 +212,8 @@ Content-Length: 674
       "yammerPostedMessageCount": 0, 
       "yammerReadMessageCount": 0, 
       "yammerLikedMessageCount": 0, 
+      "teamsChannelMessagesCount": 0,
+      "teamsMeetingsOrganizedCount": 0,
       "exchangeMailboxTotalItemCount": 343, 
       "exchangeMailboxStorageUsedInBytes": 3724609, 
       "sharePointTotalFileCount": 0, 
@@ -227,5 +234,3 @@ Content-Length: 674
   "suppressions": [
   ]
 }-->
-
-

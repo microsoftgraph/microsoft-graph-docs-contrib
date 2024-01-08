@@ -4,18 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var authenticationCombinationConfiguration = new AuthenticationCombinationConfiguration
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new AuthenticationCombinationConfiguration
 {
-	AppliesToCombinations = new List<AuthenticationMethodModes>()
+	AppliesToCombinations = new List<AuthenticationMethodModes?>
 	{
-		AuthenticationMethodModes.Fido2
-	}
+		AuthenticationMethodModes.Fido2,
+	},
 };
 
-await graphClient.Identity.ConditionalAccess.AuthenticationStrengths.Policies["{authenticationStrengthPolicy-id}"].CombinationConfigurations["{authenticationCombinationConfiguration-id}"]
-	.Request()
-	.UpdateAsync(authenticationCombinationConfiguration);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Identity.ConditionalAccess.AuthenticationStrength.Policies["{authenticationStrengthPolicy-id}"].CombinationConfigurations["{authenticationCombinationConfiguration-id}"].PatchAsync(requestBody);
+
 
 ```

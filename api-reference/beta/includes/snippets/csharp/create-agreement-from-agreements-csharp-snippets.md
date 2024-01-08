@@ -4,13 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var agreement = new Agreement
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new Agreement
 {
 	DisplayName = "Contoso ToU for guest users",
 	IsViewingBeforeAcceptanceRequired = true,
-	Files = new AgreementFilesCollectionPage()
+	Files = new List<AgreementFileLocalization>
 	{
 		new AgreementFileLocalization
 		{
@@ -19,14 +22,14 @@ var agreement = new Agreement
 			IsDefault = true,
 			FileData = new AgreementFileData
 			{
-				Data = Convert.FromBase64String("SGVsbG8gd29ybGQ=//truncated-binary")
-			}
-		}
-	}
+				Data = Convert.FromBase64String("SGVsbG8gd29ybGQ=//truncated-binary"),
+			},
+		},
+	},
 };
 
-await graphClient.IdentityGovernance.TermsOfUse.Agreements
-	.Request()
-	.AddAsync(agreement);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.IdentityGovernance.TermsOfUse.Agreements.PostAsync(requestBody);
+
 
 ```

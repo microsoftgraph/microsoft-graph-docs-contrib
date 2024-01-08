@@ -4,16 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var @event = new Event
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new Event
 {
 	OriginalStartTimeZone = "originalStartTimeZone-value",
 	OriginalEndTimeZone = "originalEndTimeZone-value",
 	ResponseStatus = new ResponseStatus
 	{
 		Response = ResponseType.None,
-		Time = DateTimeOffset.Parse("2016-10-19T10:37:00Z")
+		Time = DateTimeOffset.Parse("2016-10-19T10:37:00Z"),
 	},
 	Recurrence = null,
 	Uid = "iCalUId-value",
@@ -22,14 +25,14 @@ var @event = new Event
 	OnlineMeetingProvider = OnlineMeetingProviderType.TeamsForBusiness,
 	IsReminderOn = true,
 	HideAttendees = false,
-	Categories = new List<String>()
+	Categories = new List<string>
 	{
-		"Red category"
-	}
+		"Red category",
+	},
 };
 
-await graphClient.Me.Events["{event-id}"]
-	.Request()
-	.UpdateAsync(@event);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Me.Events["{event-id}"].PatchAsync(requestBody);
+
 
 ```

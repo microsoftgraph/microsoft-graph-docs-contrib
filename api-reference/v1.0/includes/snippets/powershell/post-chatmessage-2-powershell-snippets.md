@@ -7,19 +7,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
-	Body = @{
-		ContentType = "html"
-		Content = "Hello World <at id="0">Jane Smith</at>"
+	body = @{
+		contentType = "html"
+		content = "Hello World <at id="0">Jane Smith</at>"
 	}
-	Mentions = @(
+	mentions = @(
 		@{
-			Id = 0
-			MentionText = "Jane Smith"
-			Mentioned = @{
-				User = @{
-					DisplayName = "Jane Smith"
-					Id = "ef1c916a-3135-4417-ba27-8eb7bd084193"
-					UserIdentityType = "aadUser"
+			id = 0
+			mentionText = "Jane Smith"
+			mentioned = @{
+				user = @{
+					displayName = "Jane Smith"
+					id = "ef1c916a-3135-4417-ba27-8eb7bd084193"
+					userIdentityType = "aadUser"
 				}
 			}
 		}

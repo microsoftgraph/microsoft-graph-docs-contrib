@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var chatMessage = new ChatMessage
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new ChatMessage
 {
 	MessageType = ChatMessageType.Message,
 	DeletedDateTime = null,
@@ -22,22 +25,29 @@ var chatMessage = new ChatMessage
 		{
 			Id = "6b3f3c54-d09c-4fdd-b146-9b514a8a4f40",
 			DisplayName = "Lam Cong",
-			UserIdentityType = TeamworkUserIdentityType.AadUser
+			AdditionalData = new Dictionary<string, object>
+			{
+				{
+					"userIdentityType" , "aadUser"
+				},
+			},
 		},
-		AdditionalData = new Dictionary<string, object>()
+		AdditionalData = new Dictionary<string, object>
 		{
-			{"conversation", "null"}
-		}
+			{
+				"conversation" , null
+			},
+		},
 	},
 	Body = new ItemBody
 	{
 		ContentType = BodyType.Html,
-		Content = "<div><div>\n<div>\n<div>\n<div>\n<div><at id=\"0\">Raghav</at><at id=\"1\">TestGlobalBot</at> YEAH"
+		Content = "<div><div>\n<div>\n<div>\n<div>\n<div><at id=\"0\">Raghav</at><at id=\"1\">TestGlobalBot</at> YEAH",
 	},
-	Attachments = new List<ChatMessageAttachment>()
+	Attachments = new List<ChatMessageAttachment>
 	{
 	},
-	Mentions = new List<ChatMessageMention>()
+	Mentions = new List<ChatMessageMention>
 	{
 		new ChatMessageMention
 		{
@@ -52,9 +62,14 @@ var chatMessage = new ChatMessage
 				{
 					Id = "f1b66449-b46d-49b0-9c3c-53c10234c818e",
 					DisplayName = "Lam Cong",
-					UserIdentityType = TeamworkUserIdentityType.AadUser
-				}
-			}
+					AdditionalData = new Dictionary<string, object>
+					{
+						{
+							"userIdentityType" , "aadUser"
+						},
+					},
+				},
+			},
 		},
 		new ChatMessageMention
 		{
@@ -66,21 +81,29 @@ var chatMessage = new ChatMessage
 				{
 					Id = "03a02232-d8f5-4970-a77e-6e8c76ce7a4e",
 					DisplayName = "TestGlobalBot",
-					ApplicationIdentityType = TeamworkApplicationIdentityType.Bot
+					AdditionalData = new Dictionary<string, object>
+					{
+						{
+							"applicationIdentityType" , "bot"
+						},
+					},
 				},
 				Device = null,
 				Conversation = null,
-				User = null
-			}
-		}
+				User = null,
+			},
+		},
 	},
-	Reactions = new List<ChatMessageReaction>()
+	Reactions = new List<ChatMessageReaction>
 	{
-	}
+	},
+	MessageHistory = new List<ChatMessageHistoryItem>
+	{
+	},
 };
 
-await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Messages["{chatMessage-id}"]
-	.Request()
-	.UpdateAsync(chatMessage);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Messages["{chatMessage-id}"].PatchAsync(requestBody);
+
 
 ```

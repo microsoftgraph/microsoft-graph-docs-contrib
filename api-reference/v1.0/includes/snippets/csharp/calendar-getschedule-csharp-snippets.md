@@ -4,32 +4,37 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var schedules = new List<String>()
+// Dependencies
+using Microsoft.Graph.Me.Calendar.GetSchedule;
+using Microsoft.Graph.Models;
+
+var requestBody = new GetSchedulePostRequestBody
 {
-	"adelev@contoso.onmicrosoft.com",
-	"meganb@contoso.onmicrosoft.com"
+	Schedules = new List<string>
+	{
+		"adelev@contoso.onmicrosoft.com",
+		"meganb@contoso.onmicrosoft.com",
+	},
+	StartTime = new DateTimeTimeZone
+	{
+		DateTime = "2019-03-15T09:00:00",
+		TimeZone = "Pacific Standard Time",
+	},
+	EndTime = new DateTimeTimeZone
+	{
+		DateTime = "2019-03-15T18:00:00",
+		TimeZone = "Pacific Standard Time",
+	},
+	AvailabilityViewInterval = 60,
 };
 
-var startTime = new DateTimeTimeZone
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Me.Calendar.GetSchedule.PostAsync(requestBody, (requestConfiguration) =>
 {
-	DateTime = "2019-03-15T09:00:00",
-	TimeZone = "Pacific Standard Time"
-};
+	requestConfiguration.Headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"");
+});
 
-var endTime = new DateTimeTimeZone
-{
-	DateTime = "2019-03-15T18:00:00",
-	TimeZone = "Pacific Standard Time"
-};
-
-var availabilityViewInterval = 60;
-
-await graphClient.Me.Calendar
-	.GetSchedule(schedules,endTime,startTime,availabilityViewInterval)
-	.Request()
-	.Header("Prefer","outlook.timezone=\"Pacific Standard Time\"")
-	.PostAsync();
 
 ```

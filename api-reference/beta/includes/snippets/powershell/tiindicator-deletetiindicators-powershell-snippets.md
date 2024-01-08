@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Security
+Import-Module Microsoft.Graph.Beta.Security
 
 $params = @{
-	Value = @(
+	value = @(
 		"id-value1"
 		"id-value2"
 	)
 }
 
-Remove-MgSecurityTiIndicatorMultiple -BodyParameter $params
+Remove-MgBetaSecurityTiIndicatorMultiple -BodyParameter $params
 
 ```

@@ -4,15 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var address = "Sheet1!A1:D5";
+// Dependencies
+using Microsoft.Graph.Drives.Item.Items.Item.Workbook.Tables.Add;
 
-var hasHeaders = true;
+var requestBody = new AddPostRequestBody
+{
+	Address = "Sheet1!A1:D5",
+	HasHeaders = true,
+};
 
-await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Tables
-	.Add(hasHeaders,address)
-	.Request()
-	.PostAsync();
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Tables.Add.PostAsync(requestBody);
+
 
 ```

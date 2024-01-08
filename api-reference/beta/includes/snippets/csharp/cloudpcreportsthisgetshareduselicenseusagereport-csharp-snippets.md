@@ -4,27 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var reportName = CloudPcReportName.SharedUseLicenseUsageReport;
+// Dependencies
+using Microsoft.Graph.Beta.DeviceManagement.VirtualEndpoint.Reports.GetSharedUseLicenseUsageReport;
+using Microsoft.Graph.Beta.Models;
 
-var filter = "ServicePlanId eq '2d1d344e-d10c-41bb-953b-b3a47521dca0' and DateTimeUTC gt datetime'2022-11-30'";
-
-var select = new List<String>()
+var requestBody = new GetSharedUseLicenseUsageReportPostRequestBody
 {
-	"ServicePlanId",
-	"LicenseCount",
-	"ClaimedLicenseCount",
-	"DateTimeUTC"
+	ReportName = CloudPcReportName.SharedUseLicenseUsageReport,
+	Filter = "ServicePlanId eq '2d1d344e-d10c-41bb-953b-b3a47521dca0' and DateTimeUTC gt datetime'2022-11-30'",
+	Select = new List<string>
+	{
+		"ServicePlanId",
+		"LicenseCount",
+		"ClaimedLicenseCount",
+		"DateTimeUTC",
+	},
+	Skip = 0,
+	Top = 100,
 };
 
-var skip = 0;
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.DeviceManagement.VirtualEndpoint.Reports.GetSharedUseLicenseUsageReport.PostAsync(requestBody);
 
-var top = 100;
-
-await graphClient.DeviceManagement.VirtualEndpoint.Reports
-	.GetSharedUseLicenseUsageReport(reportName,filter,select,null,null,null,skip,top)
-	.Request()
-	.PostAsync();
 
 ```

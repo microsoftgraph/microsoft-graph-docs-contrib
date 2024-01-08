@@ -1,0 +1,27 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```go
+
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphidentitygovernance "github.com/microsoftgraph/msgraph-beta-sdk-go/identitygovernance"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphidentitygovernance.NewRefreshPostRequestBody()
+scopeId := "/"
+requestBody.SetScopeId(&scopeId) 
+scopeType := "DirectoryRole"
+requestBody.SetScopeType(&scopeType) 
+
+graphClient.IdentityGovernance().RoleManagementAlerts().Alerts().Refresh().Post(context.Background(), requestBody, nil)
+
+
+```

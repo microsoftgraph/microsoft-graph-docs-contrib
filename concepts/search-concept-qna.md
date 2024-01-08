@@ -74,9 +74,8 @@ Content-type: application/json
 
 ## Known issues
 
-- Sorting, aggregation, and pagination are not supported for [qna]((/graph/api/resources/search-qna) searches.
-- Combination search with other entity types is not supported. 
-- Markdown is currently not supported for the **qna** description. Instead, use plain text.
+- Sorting, aggregation, and pagination aren't supported for [qna]((/graph/api/resources/search-qna) searches.
+- Combination search with non-Answer entityTypes (that is, driveItem, list) isn't supported. Only combination search with the other Answer entityTypes bookmarks, qna and acronym is supported.
 
 ## Next steps
 

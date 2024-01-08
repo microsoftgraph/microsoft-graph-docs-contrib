@@ -24,18 +24,18 @@ by providing a [delta](../api/contactfolder-delta.md) function.
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[Get contactFolder](../api/contactfolder-get.md) | [contactFolder](contactfolder.md) |Get a contact folder by using the contact folder ID.|
-|[Update](../api/contactfolder-update.md) | [contactFolder](contactfolder.md) |Update contactFolder object. |
-|[Delete](../api/contactfolder-delete.md) | None |Delete contactFolder object. |
+|[Update](../api/contactfolder-update.md) | [contactFolder](contactfolder.md) |Update **contactFolder** object. |
+|[Delete](../api/contactfolder-delete.md) | None |Delete a **contactFolder** object. |
 |[List childFolders](../api/contactfolder-list-childfolders.md) |[contactFolder](contactfolder.md) collection| Get a collection of child folders under the specified contact folder.|
-|[Create child contactFolder](../api/contactfolder-post-childfolders.md) |[contactFolder](contactfolder.md)| Create a new contactFolder as a child of a specified folder.|
+|[Create child contactFolder](../api/contactfolder-post-childfolders.md) |[contactFolder](contactfolder.md)| Create a new **contactFolder** as a child of a specified folder.|
 |[delta](../api/contact-delta.md)|[contact](contact.md) collection| Get a set of contact folders that have been added, deleted, or removed from the user's mailbox.|
-|[List contacts in folder](../api/contactfolder-list-contacts.md) |[contact](contact.md) collection| Get a contact collection from the default Contacts folder of the signed-in user (`.../me/contacts`), or from the specified contact folder.|
-|[Create contact in folder](../api/contactfolder-post-contacts.md) |[contact](contact.md)| Add a contact to the root Contacts folder or to the `contacts` endpoint of another contact folder.|
+|[List contacts in folder](../api/contactfolder-list-contacts.md) |[contact](contact.md) collection| Get a contact collection from the default contacts folder of the signed-in user (`.../me/contacts`), or from the specified contact folder.|
+|[Create contact in folder](../api/contactfolder-post-contacts.md) |[contact](contact.md)| Add a contact to the root contacts folder or to the `contacts` endpoint of another contact folder.|
 |**Extended properties**| | |
-|[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[contactFolder](contactfolder.md)  |Create one or more single-value extended properties in a new or existing contactFolder.   |
-|[Get contactFolder with single-value extended property](../api/singlevaluelegacyextendedproperty-get.md)  | [contactFolder](contactfolder.md) | Get contactFolders that contain a single-value extended property by using `$expand` or `$filter`. |
-|[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [contactFolder](contactfolder.md) | Create one or more multi-value extended properties in a new or existing contactFolder.  |
-|[Get contactFolder with multi-value extended property](../api/multivaluelegacyextendedproperty-get.md)  | [contactFolder](contactfolder.md) | Get a contactFolder that contains a multi-value extended property by using `$expand`. |
+|[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[contactFolder](contactfolder.md)  |Create one or more single-value extended properties in a new or existing **contactFolder**.   |
+|[Get contactFolder with single-value extended property](../api/singlevaluelegacyextendedproperty-get.md)  | [contactFolder](contactfolder.md) | Get **contactFolders** that contain a single-value extended property by using `$expand` or `$filter`. |
+|[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [contactFolder](contactfolder.md) | Create one or more multi-value extended properties in a new or existing **contactFolder**.  |
+|[Get contactFolder with multi-value extended property](../api/multivaluelegacyextendedproperty-get.md)  | [contactFolder](contactfolder.md) | Get a **contactFolder** that contains a multi-value extended property by using `$expand`. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -48,14 +48,14 @@ by providing a [delta](../api/contactfolder-delta.md) function.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|childFolders|[ContactFolder](contactfolder.md) collection|The collection of child folders in the folder. Navigation property. Read-only. Nullable.|
-|contacts|[Contact](contact.md) collection|The contacts in the folder. Navigation property. Read-only. Nullable.|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the contactFolder. Read-only. Nullable.|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the contactFolder. Read-only. Nullable.|
+|childFolders|[contactFolder](contactfolder.md) collection|The collection of child folders in the folder. Navigation property. Read-only. Nullable.|
+|contacts|[contact](contact.md) collection|The contacts in the folder. Navigation property. Read-only. Nullable.|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the **contactFolder**. Read-only. Nullable.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the **contactFolder**. Read-only. Nullable.|
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -71,12 +71,11 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "displayName": "string",
-  "id": "string (identifier)",
-  "parentFolderId": "string",
-  "wellKnownName": "string"
+  "displayName": "String",
+  "id": "String (identifier)",
+  "parentFolderId": "String",
+  "wellKnownName": "String"
 }
-
 ```
 
 ## See also

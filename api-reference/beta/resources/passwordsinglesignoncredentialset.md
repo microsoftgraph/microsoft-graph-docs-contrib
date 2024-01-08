@@ -2,7 +2,7 @@
 title: "passwordSingleSignOnCredentialSet resource type"
 description: "Indicates a set of credentials that completely define a sign in flow for a user or group to an application."
 ms.localizationpriority: medium
-author: "bharathramh92"
+author: "sureshja"
 ms.prod: "applications"
 doc_type: "resourcePageType"
 ---

@@ -1,0 +1,54 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "3e69c76c-3bf7-4008-b81b-d82849f4adab",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [get](https://learn.microsoft.com/en-us/graph/api/servicestoragequotabreakdown-get?view=graph-rest-beta) operation to the [serviceStorageQuotaBreakdown](https://learn.microsoft.com/en-us/graph/api/resources/serviceStorageQuotaBreakdown?view=graph-rest-beta) resource.",
+          "Target": "serviceStorageQuotaBreakdown"
+        },
+        {
+          "Id": "3e69c76c-3bf7-4008-b81b-d82849f4adab",
+          "ApiChange": "Method",
+          "ChangedApiName": "LIST",
+          "ChangeType": "Addition",
+          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/unifiedstoragequota-list-services?view=graph-rest-beta) method to the [serviceStorageQuotaBreakdown](https://learn.microsoft.com/en-us/graph/api/resources/serviceStorageQuotaBreakdown?view=graph-rest-beta) resource.",
+          "Target": "serviceStorageQuotaBreakdown"
+        },
+        {
+          "Id": "3e69c76c-3bf7-4008-b81b-d82849f4adab",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [get](https://learn.microsoft.com/en-us/graph/api/unifiedstoragequota-get?view=graph-rest-beta) operation to the [unifiedStorageQuota](https://learn.microsoft.com/en-us/graph/api/resources/unifiedStorageQuota?view=graph-rest-beta) resource.",
+          "Target": "unifiedstoragequota"
+        },
+        {
+          "Id": "3e69c76c-3bf7-4008-b81b-d82849f4adab",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedStorageQuota",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedStorageQuota](https://learn.microsoft.com/en-us/graph/api/resources/unifiedStorageQuota?view=graph-rest-beta) resource.",
+          "Target": "unifiedStorageQuota"
+        },
+        {
+          "Id": "3e69c76c-3bf7-4008-b81b-d82849f4adab",
+          "ApiChange": "Resource",
+          "ChangedApiName": "serviceStorageQuotaBreakdown",
+          "ChangeType": "Addition",
+          "Description": "Added the [serviceStorageQuotaBreakdown](https://learn.microsoft.com/en-us/graph/api/resources/serviceStorageQuotaBreakdown?view=graph-rest-beta) resource.",
+          "Target": "unifiedStorageQuota"
+        }
+      ],
+      "Id": "3e69c76c-3bf7-4008-b81b-d82849f4adab",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-03-16T16:49:52.2813343Z",
+      "WorkloadArea": "UnifiedStorageQuota",
+      "SubArea": ""
+    }
+  ]
+}

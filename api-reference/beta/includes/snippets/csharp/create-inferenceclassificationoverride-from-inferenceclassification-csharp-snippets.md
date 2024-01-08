@@ -4,20 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var inferenceClassificationOverride = new InferenceClassificationOverride
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new InferenceClassificationOverride
 {
 	ClassifyAs = InferenceClassificationType.Focused,
 	SenderEmailAddress = new EmailAddress
 	{
 		Name = "Samantha Booth",
-		Address = "samanthab@adatum.onmicrosoft.com"
-	}
+		Address = "samanthab@adatum.onmicrosoft.com",
+	},
 };
 
-await graphClient.Me.InferenceClassification.Overrides
-	.Request()
-	.AddAsync(inferenceClassificationOverride);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Me.InferenceClassification.Overrides.PostAsync(requestBody);
+
 
 ```

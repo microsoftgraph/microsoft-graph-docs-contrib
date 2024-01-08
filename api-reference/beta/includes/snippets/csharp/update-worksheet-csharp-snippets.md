@@ -4,17 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var workbookWorksheet = new WorkbookWorksheet
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new WorkbookWorksheet
 {
 	Position = 99,
 	Name = "name-value",
-	Visibility = "visibility-value"
+	Visibility = "visibility-value",
 };
 
-await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"]
-	.Request()
-	.UpdateAsync(workbookWorksheet);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].PatchAsync(requestBody);
+
 
 ```

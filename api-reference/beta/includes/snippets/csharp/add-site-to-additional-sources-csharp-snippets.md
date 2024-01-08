@@ -4,18 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var dataSource = new SiteSource
+// Dependencies
+using Microsoft.Graph.Beta.Models.Ediscovery;
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new SiteSource
 {
+	OdataType = "microsoft.graph.ediscovery.siteSource",
 	Site = new Site
 	{
-		WebUrl = "https://contoso.sharepoint.com/sites/SecretSite"
-	}
+		WebUrl = "https://contoso.sharepoint.com/sites/SecretSite",
+	},
 };
 
-await graphClient.Compliance.Ediscovery.Cases["{ediscovery.case-id}"].SourceCollections["{ediscovery.sourceCollection-id}"].AdditionalSources
-	.Request()
-	.AddAsync(dataSource);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Compliance.Ediscovery.Cases["{case-id}"].SourceCollections["{sourceCollection-id}"].AdditionalSources.PostAsync(requestBody);
+
 
 ```

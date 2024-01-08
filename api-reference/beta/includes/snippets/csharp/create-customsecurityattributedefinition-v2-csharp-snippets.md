@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var customSecurityAttributeDefinition = new CustomSecurityAttributeDefinition
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new CustomSecurityAttributeDefinition
 {
 	AttributeSet = "Engineering",
 	Description = "Active projects for user",
@@ -15,11 +18,11 @@ var customSecurityAttributeDefinition = new CustomSecurityAttributeDefinition
 	Name = "Project",
 	Status = "Available",
 	Type = "String",
-	UsePreDefinedValuesOnly = true
+	UsePreDefinedValuesOnly = true,
 };
 
-await graphClient.Directory.CustomSecurityAttributeDefinitions
-	.Request()
-	.AddAsync(customSecurityAttributeDefinition);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Directory.CustomSecurityAttributeDefinitions.PostAsync(requestBody);
+
 
 ```

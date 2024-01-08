@@ -4,10 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewClonePostRequestBody()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphteams "github.com/microsoftgraph/msgraph-beta-sdk-go/teams"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+requestBody := graphteams.NewClonePostRequestBody()
 displayName := "Library Assist"
 requestBody.SetDisplayName(&displayName) 
 description := "Self help community for library"
@@ -19,7 +28,7 @@ requestBody.SetPartsToClone(&partsToClone)
 visibility := graphmodels.PUBLIC_TEAMVISIBILITYTYPE 
 requestBody.SetVisibility(&visibility) 
 
-graphClient.TeamsById("team-id").Clone().Post(context.Background(), requestBody, nil)
+graphClient.Teams().ByTeamId("team-id").Clone().Post(context.Background(), requestBody, nil)
 
 
 ```

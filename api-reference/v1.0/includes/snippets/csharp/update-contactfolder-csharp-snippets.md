@@ -4,16 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var contactFolder = new ContactFolder
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new ContactFolder
 {
 	ParentFolderId = "parentFolderId-value",
-	DisplayName = "displayName-value"
+	DisplayName = "displayName-value",
 };
 
-await graphClient.Me.ContactFolders["{contactFolder-id}"]
-	.Request()
-	.UpdateAsync(contactFolder);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Me.ContactFolders["{contactFolder-id}"].PatchAsync(requestBody);
+
 
 ```

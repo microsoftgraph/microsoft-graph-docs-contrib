@@ -4,15 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var oAuth2PermissionGrant = new OAuth2PermissionGrant
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new OAuth2PermissionGrant
 {
-	Scope = "User.ReadBasic.All Group.ReadWrite.All"
+	Scope = "User.ReadBasic.All Group.ReadWrite.All",
 };
 
-await graphClient.Oauth2PermissionGrants["{oAuth2PermissionGrant-id}"]
-	.Request()
-	.UpdateAsync(oAuth2PermissionGrant);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Oauth2PermissionGrants["{oAuth2PermissionGrant-id}"].PatchAsync(requestBody);
+
 
 ```

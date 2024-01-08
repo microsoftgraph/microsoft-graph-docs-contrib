@@ -4,15 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var accessPackageCatalog = new AccessPackageCatalog
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new AccessPackageCatalog
 {
-	DisplayName = "Catalog One"
+	DisplayName = "Catalog One",
 };
 
-await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageCatalogs["{accessPackageCatalog-id}"]
-	.Request()
-	.UpdateAsync(accessPackageCatalog);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageCatalogs["{accessPackageCatalog-id}"].PatchAsync(requestBody);
+
 
 ```

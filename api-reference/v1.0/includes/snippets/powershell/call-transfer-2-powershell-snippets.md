@@ -7,18 +7,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
-	TransferTarget = @{
+	transferTarget = @{
 		"@odata.type" = "#microsoft.graph.invitationParticipantInfo"
-		EndpointType = "default"
-		Identity = @{
+		endpointType = "default"
+		identity = @{
 			"@odata.type" = "#microsoft.graph.identitySet"
-			User = @{
+			user = @{
 				"@odata.type" = "#microsoft.graph.identity"
-				Id = "550fae72-d251-43ec-868c-373732c2704f"
-				DisplayName = "Heidi Steen"
+				id = "550fae72-d251-43ec-868c-373732c2704f"
+				displayName = "Heidi Steen"
 			}
 		}
-		ReplacesCallId = "e5d39592-99bd-4db8-bca8-30fb894ec51d"
+		replacesCallId = "e5d39592-99bd-4db8-bca8-30fb894ec51d"
 	}
 }
 

@@ -4,15 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var sourceCollection = new Microsoft.Graph.Ediscovery.SourceCollection
+// Dependencies
+using Microsoft.Graph.Beta.Models.Ediscovery;
+
+var requestBody = new SourceCollection
 {
-	DisplayName = "Quarterly Financials search"
+	DisplayName = "Quarterly Financials search",
 };
 
-await graphClient.Compliance.Ediscovery.Cases["{ediscovery.case-id}"].SourceCollections["{ediscovery.sourceCollection-id}"]
-	.Request()
-	.UpdateAsync(sourceCollection);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Compliance.Ediscovery.Cases["{case-id}"].SourceCollections["{sourceCollection-id}"].PatchAsync(requestBody);
+
 
 ```

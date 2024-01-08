@@ -4,19 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var unifiedGroupSource = new Microsoft.Graph.Ediscovery.UnifiedGroupSource
+// Dependencies
+using Microsoft.Graph.Beta.Models.Ediscovery;
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new UnifiedGroupSource
 {
 	Group = new Group
 	{
-		Mail = "SecretGroup@contoso.com"
+		Mail = "SecretGroup@contoso.com",
 	},
-	IncludedSources = Microsoft.Graph.Ediscovery.SourceType.Mailbox | Microsoft.Graph.Ediscovery.SourceType.Site
+	IncludedSources = SourceType.Mailbox | SourceType.Site,
 };
 
-await graphClient.Compliance.Ediscovery.Cases["{ediscovery.case-id}"].Custodians["{ediscovery.custodian-id}"].UnifiedGroupSources
-	.Request()
-	.AddAsync(unifiedGroupSource);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Compliance.Ediscovery.Cases["{case-id}"].Custodians["{custodian-id}"].UnifiedGroupSources.PostAsync(requestBody);
+
 
 ```

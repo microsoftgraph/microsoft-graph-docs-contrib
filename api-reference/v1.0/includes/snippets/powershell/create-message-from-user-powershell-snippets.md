@@ -7,16 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Mail
 
 $params = @{
-	Subject = "Did you see last night's game?"
-	Importance = "Low"
-	Body = @{
-		ContentType = "HTML"
-		Content = "They were <b>awesome</b>!"
+	subject = "Did you see last night's game?"
+	importance = "Low"
+	body = @{
+		contentType = "HTML"
+		content = "They were <b>awesome</b>!"
 	}
-	ToRecipients = @(
+	toRecipients = @(
 		@{
-			EmailAddress = @{
-				Address = "AdeleV@contoso.onmicrosoft.com"
+			emailAddress = @{
+				address = "AdeleV@contoso.onmicrosoft.com"
 			}
 		}
 	)

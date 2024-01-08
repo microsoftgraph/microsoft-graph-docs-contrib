@@ -1,9 +1,9 @@
 ---
-title: Get paymentTerms 
-description: Gets a payment term object in Dynamics 365 Business Central.
-services: project-madeira
-documentationcenter: ''
-author: SusanneWindfeldPedersen
+title: "Get paymentTerms" 
+description: "Retrieve the properties and relationships of a paymentTerms object for Dynamics 365 Business Central."
+services: "project-madeira"
+documentationcenter: ""
+author: "SusanneWindfeldPedersen"
 ms.localizationpriority: medium
 ms.prod: "dynamics-365-business-central"
 doc_type: apiPageType
@@ -15,16 +15,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a payment terms object for Dynamics 365 Business Central.
+Retrieve the properties and relationships of a [paymentTerms](../resources/dynamics-paymentterms.md) object for Dynamics 365 Business Central.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type |Permissions (from least to most privileged)|
-|:---------------|:------------------------------------------|
-|Delegated (work or school account)|Financials.ReadWrite.All |
-|Delegated (personal Microsoft account|Not supported.|
-|Application|Financials.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "dynamics_paymentterms_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/dynamics-paymentterms-get-permissions.md)]
 
 ## HTTP request
 
@@ -33,7 +32,7 @@ GET /financials/companies/{id}/paymentTerms/{id}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header         |Value                     |
@@ -41,23 +40,23 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 |Authorization  |Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a `200 OK` response code and a **paymentTerms** object in the response body.
 
-## Example
+## Examples
 
-**Request**
+### Request
 
-Here is an example of the request.
+The following example shows a request.
 ```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/paymentTerms/{id}
 ```
 
-**Response**
+### Response
 
-Here is an example of the response. 
+The following example shows the response.
 
 > **Note**: The response object shown here might be shortened for readability.
 

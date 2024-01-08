@@ -4,15 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var queryOptions = new List<QueryOption>()
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Thumbnails.GetAsync((requestConfiguration) =>
 {
-	new QueryOption("select", "c300x400_crop")
-};
+	requestConfiguration.QueryParameters.Select = new string []{ "c300x400_crop" };
+});
 
-var thumbnails = await graphClient.Me.Drive.Items["{driveItem-id}"].Thumbnails
-	.Request( queryOptions )
-	.GetAsync();
 
 ```

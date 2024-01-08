@@ -1,9 +1,9 @@
 ---
-title: currencies resource type 
-description: A currency object in Dynamics 365 Business Central 
-services: project-madeira
-documentationcenter: ''
-author: SusanneWindfeldPedersen
+title: "currencies resource type" 
+description: "Represents a currency used in Dynamics 365 Business Central." 
+services: "project-madeira"
+documentationcenter: ""
+author: "SusanneWindfeldPedersen"
 ms.localizationpriority: medium
 ms.prod: "dynamics-365-business-central"
 doc_type: resourcePageType
@@ -20,21 +20,21 @@ Represents a currency used in Dynamics 365 Business Central.
 ## Methods
 | Method                                                  |Return Type|Description       |
 |:--------------------------------------------------------|:----------|:-----------------|
-|[Get currencies](../api/dynamics-currencies-get.md)      |currencies |Get a Currency.   |
-|[Post currencies](../api/dynamics-create-currencies.md)  |currencies |Create a Currency.|
-|[Patch currencies](../api/dynamics-currencies-update.md) |currencies |Update a Currency.|
-|[Delete currencies](../api/dynamics-currencies-delete.md)|none       |Delete a Currency.|
+|[Get currencies](../api/dynamics-currencies-get.md)      |[currencies](dynamics-currencies.md) |Get a currency.   |
+|[Create currencies](../api/dynamics-create-currencies.md)  |[currencies](dynamics-currencies.md) |Create a currency.|
+|[Update currencies](../api/dynamics-currencies-update.md) |[currencies](dynamics-currencies.md) |Update a currency.|
+|[Delete currencies](../api/dynamics-currencies-delete.md)|None       |Delete a currency.|
 
 ## Properties
 | Property	            | Type	 |Description                                                   |
 |:----------------------|:-------|:-------------------------------------------------------------|
-|id                     |GUID    |The unique ID of the currency. Non-editable.                  |
-|code                   |string  |Specifies the currency code.                                  |
-|displayName            |string  |Specifies the currency display name.                          |
-|symbol                 |string  |Specifies the symbol for this currency that appears on checks.|
-|amountDecimalPlaces    |string  |Specifies the number of decimal places the system will display on amounts for this currency.|
-|amountRoundingPrecision|decimal |Specifies the size of the interval to be used when rounding amounts for this currency.|
-|lastModifiedDateTime   |datetime|The last datetime the currency was modified. Read-Only.       |  
+|amountDecimalPlaces    |String  |The number of decimal places the system displays on amounts for this currency.|
+|amountRoundingPrecision|Decimal |The size of the interval to be used when rounding amounts for this currency.|
+|code                   |String  |The currency code.                                  |
+|displayName            |String  |The display name for the currency.                          |
+|id                     |String    |The unique identifier of the currency. Non-editable.                  |
+|lastModifiedDateTime   |Datetime|The date and time the currency was last modified. Read-Only.       |  
+|symbol                 |String  |The symbol for this currency that appears on checks.|
 
 
 ## Relationships
@@ -42,20 +42,16 @@ None.
 
 ## JSON representation
 
-Here is a JSON representation of the currencies.
-
+The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "GUID",
-  "code": "string",
-  "displayName": "string",
-  "symbol": "string",
-  "amountDecimalPlaces": "string",
-  "amountRoundingPrecision": "decimal",
-  "lastModifiedDateTime": "datetime"
+  "amountDecimalPlaces": "String",
+  "amountRoundingPrecision": "Decimal",
+  "code": "String",
+  "displayName": "String",
+  "id": "String (identifier)",
+  "lastModifiedDateTime": "Datetime",
+  "symbol": "String"
 }
 ```
-
-
-

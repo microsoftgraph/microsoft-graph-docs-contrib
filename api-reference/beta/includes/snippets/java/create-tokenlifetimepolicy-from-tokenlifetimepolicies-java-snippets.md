@@ -8,9 +8,9 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 TokenLifetimePolicy tokenLifetimePolicy = new TokenLifetimePolicy();
 LinkedList<String> definitionList = new LinkedList<String>();
-definitionList.add("definition-value");
+definitionList.add("{"TokenLifetimePolicy":{"Version":1,"AccessTokenLifetime":"8:00:00"}}");
 tokenLifetimePolicy.definition = definitionList;
-tokenLifetimePolicy.displayName = "displayName-value";
+tokenLifetimePolicy.displayName = "Contoso token lifetime policy";
 tokenLifetimePolicy.isOrganizationDefault = true;
 
 graphClient.policies().tokenLifetimePolicies()

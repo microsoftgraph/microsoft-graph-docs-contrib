@@ -11,8 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const crossTenantAccessPolicyConfigurationPartner = {
-  automaticUserConsentSettings: 
-  {
+  automaticUserConsentSettings: {
     inboundAllowed: true,
     outboundAllowed: true
   }

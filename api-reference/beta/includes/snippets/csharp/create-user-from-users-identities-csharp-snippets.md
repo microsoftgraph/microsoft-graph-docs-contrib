@@ -4,42 +4,45 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var user = new User
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new User
 {
 	DisplayName = "John Smith",
-	Identities = new List<ObjectIdentity>()
+	Identities = new List<ObjectIdentity>
 	{
 		new ObjectIdentity
 		{
 			SignInType = "userName",
 			Issuer = "contoso.onmicrosoft.com",
-			IssuerAssignedId = "johnsmith"
+			IssuerAssignedId = "johnsmith",
 		},
 		new ObjectIdentity
 		{
 			SignInType = "emailAddress",
 			Issuer = "contoso.onmicrosoft.com",
-			IssuerAssignedId = "jsmith@yahoo.com"
+			IssuerAssignedId = "jsmith@yahoo.com",
 		},
 		new ObjectIdentity
 		{
 			SignInType = "federated",
 			Issuer = "facebook.com",
-			IssuerAssignedId = "5eecb0cd"
-		}
+			IssuerAssignedId = "5eecb0cd",
+		},
 	},
 	PasswordProfile = new PasswordProfile
 	{
 		Password = "password-value",
-		ForceChangePasswordNextSignIn = false
+		ForceChangePasswordNextSignIn = false,
 	},
-	PasswordPolicies = "DisablePasswordExpiration"
+	PasswordPolicies = "DisablePasswordExpiration",
 };
 
-await graphClient.Users
-	.Request()
-	.AddAsync(user);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Users.PostAsync(requestBody);
+
 
 ```

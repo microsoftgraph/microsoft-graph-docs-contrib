@@ -4,17 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var queryOptions = new List<QueryOption>()
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Teamwork.TeamTemplates.GetAsync((requestConfiguration) =>
 {
-	new QueryOption("filter", "definitions/any(a:a/languageTag eq 'en-US')")
-};
+	requestConfiguration.QueryParameters.Expand = new string []{ "definitions" };
+	requestConfiguration.QueryParameters.Filter = "definitions/any(a:a/languageTag eq 'en-US')";
+});
 
-var teamTemplates = await graphClient.Teamwork.TeamTemplates
-	.Request( queryOptions )
-	.Filter("definitions/any(a:a/languageTag eq 'en-US')")
-	.Expand("definitions")
-	.GetAsync();
 
 ```

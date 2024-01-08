@@ -4,36 +4,45 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var retentionEvent = new Microsoft.Graph.Security.RetentionEvent
+// Dependencies
+using Microsoft.Graph.Beta.Models.Security;
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new RetentionEvent
 {
+	OdataType = "#microsoft.graph.security.retentionEvent",
 	DisplayName = "String",
 	Description = "String",
-	EventQueries = new List<Microsoft.Graph.Security.EventQuery>()
+	EventQueries = new List<EventQuery>
 	{
-		new EventQueries
+		new EventQuery
 		{
-		}
+			OdataType = "microsoft.graph.security.eventQueries",
+		},
 	},
 	EventTriggerDateTime = DateTimeOffset.Parse("String (timestamp)"),
 	CreatedBy = new IdentitySet
 	{
+		OdataType = "microsoft.graph.identitySet",
 	},
-	EventPropagationResults = new List<Microsoft.Graph.Security.EventPropagationResult>()
+	EventPropagationResults = new List<EventPropagationResult>
 	{
 		new EventPropagationResult
 		{
-		}
+			OdataType = "microsoft.graph.security.eventPropagationResult",
+		},
 	},
 	EventStatus = new RetentionEventStatus
 	{
+		OdataType = "microsoft.graph.security.retentionEventStatus",
 	},
-	LastStatusUpdateDateTime = DateTimeOffset.Parse("String (timestamp)")
+	LastStatusUpdateDateTime = DateTimeOffset.Parse("String (timestamp)"),
 };
 
-await graphClient.Security.Triggers.RetentionEvents
-	.Request()
-	.AddAsync(retentionEvent);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Security.Triggers.RetentionEvents.PostAsync(requestBody);
+
 
 ```

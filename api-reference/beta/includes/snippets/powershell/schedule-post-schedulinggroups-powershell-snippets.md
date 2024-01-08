@@ -4,17 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
-	DisplayName = "Cashiers"
-	IsActive = $true
-	UserIds = @(
+	displayName = "Cashiers"
+	isActive = $true
+	code = "CashierCode"
+	userIds = @(
 		"c5d0c76b-80c4-481c-be50-923cd8d680a1"
 		"2a4296b3-a28a-44ba-bc66-0274b9b95851"
 	)
 }
 
-New-MgTeamScheduleSchedulingGroup -TeamId $teamId -BodyParameter $params
+New-MgBetaTeamScheduleSchedulingGroup -TeamId $teamId -BodyParameter $params
 
 ```

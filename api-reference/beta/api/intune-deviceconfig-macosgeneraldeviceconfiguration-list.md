@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md) objects.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -61,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5775
+Content-Length: 5827
 
 {
   "value": [
@@ -204,7 +206,8 @@ Content-Length: 5775
       "softwareUpdateNonOSDeferredInstallDelayInDays": 13,
       "touchIdTimeoutInHours": 5,
       "iCloudPrivateRelayBlocked": true,
-      "iCloudDesktopAndDocumentsBlocked": true
+      "iCloudDesktopAndDocumentsBlocked": true,
+      "activationLockWhenSupervisedAllowed": true
     }
   ]
 }

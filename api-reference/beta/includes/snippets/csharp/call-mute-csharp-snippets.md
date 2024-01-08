@@ -4,13 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var clientContext = "clientContext-value";
+// Dependencies
+using Microsoft.Graph.Beta.Communications.Calls.Item.Mute;
 
-await graphClient.Communications.Calls["{call-id}"]
-	.Mute(clientContext)
-	.Request()
-	.PostAsync();
+var requestBody = new MutePostRequestBody
+{
+	ClientContext = "clientContext-value",
+};
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Communications.Calls["{call-id}"].Mute.PostAsync(requestBody);
+
 
 ```

@@ -34,6 +34,6 @@ Not yet documented
 |regEx|11|Indicates a string that is expected to be a valid Regex string.|
 |json|12|Indicates a string that is expected to be a valid JSON string.|
 |dateTime|13|Indicates a string that is expected to be a valid Datetime.|
-|surfaceHub|14|Not yet documented|
+|surfaceHub|14|Indicates a Windows SKU applicability value that maps to Intune.|
 |bashScript|19|String whose value is a bash script|
 |unknownFutureValue|20|Sentinel member for cases where the client cannot handle the new enum values.|

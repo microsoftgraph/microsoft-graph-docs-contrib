@@ -7,9 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
-	DisplayName = "Vacation"
-	IconType = "plane"
-	IsActive = $true
+	displayName = "Vacation"
+	iconType = "plane"
+	isActive = $true
 }
 
 New-MgTeamScheduleTimeOffReason -TeamId $teamId -BodyParameter $params

@@ -4,15 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var personWebsite = new PersonWebsite
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new PersonWebsite
 {
-	Description = "Lyn Damer play in the Women's 1st Division (Toppserien) in Norway"
+	Description = "Lyn Damer play in the Women's 1st Division (Toppserien) in Norway",
 };
 
-await graphClient.Me.Profile.Websites["{personWebsite-id}"]
-	.Request()
-	.UpdateAsync(personWebsite);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Me.Profile.Websites["{personWebsite-id}"].PatchAsync(requestBody);
+
 
 ```

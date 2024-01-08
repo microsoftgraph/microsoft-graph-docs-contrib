@@ -1,7 +1,8 @@
 ---
 title: "microsoftAuthenticatorAuthenticationMethod resource type"
 description: "A representation of the Microsoft Authenticator app registered to a user. Microsoft Authenticator is an authentication method."
-author: "mmcla"
+author: "mjsantani"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
@@ -32,6 +33,7 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 |id|String|A unique identifier for this authentication method. Inherited from [authenticationMethod](../resources/authenticationmethod.md)|
 |deviceTag|String|Tags containing app metadata.|
 |phoneAppVersion|String|Numerical version of this instance of the Authenticator app.|
+|clientAppName|microsoftAuthenticatorAuthenticationMethodClientAppName|The app that the user has registered to use to approve push notifications. The possible values are: `microsoftAuthenticator`, `outlookMobile`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -39,7 +41,7 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 |device|[device](../resources/device.md)|The registered device on which Microsoft Authenticator resides. This property is null if the device is not registered for passwordless Phone Sign-In.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -55,6 +57,7 @@ The following is a JSON representation of the resource.
   "displayName": "String",
   "deviceTag": "String",
   "phoneAppVersion": "String",
-  "createdDateTime": "DateTimeOffset"
+  "createdDateTime": "DateTimeOffset",
+  "clientAppName": "microsoftAuthenticator"
 }
 ```

@@ -7,16 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Sites
 
 $params = @{
-	Description = "test"
-	EnforceUniqueValues = $false
-	Hidden = $false
-	Indexed = $false
-	Name = "Title"
-	Text = @{
-		AllowMultipleLines = $false
-		AppendChangesToExistingText = $false
-		LinesForEditing = 0
-		MaxLength = 255
+	description = "test"
+	enforceUniqueValues = $false
+	hidden = $false
+	indexed = $false
+	name = "Title"
+	text = @{
+		allowMultipleLines = $false
+		appendChangesToExistingText = $false
+		linesForEditing = 0
+		maxLength = 255
 	}
 }
 

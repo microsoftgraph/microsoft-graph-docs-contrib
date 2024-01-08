@@ -19,7 +19,7 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List simulationAutomations](../api/attacksimulationroot-list-simulationautomations.md)|[simulationAutomation](../resources/simulationautomation.md) collection|Get a list of attack simulation automations for a tenant.|
-|[Get simulationAutomation](../api/attacksimulationroot-get-simulationautomations.md)|[simulationAutomation](../resources/simulationautomation.md)|Get an attack simulation automation for a tenant.|
+|[Get simulationAutomation](../api/simulationautomation-get.md)|[simulationAutomation](../resources/simulationautomation.md)|Get an attack simulation automation for a tenant.|
 |[List runs](../api/simulationautomation-list-runs.md)|[simulationAutomationRun](../resources/simulationautomationrun.md) collection|Get a list of the attack simulation automation runs for a tenant.|
 
 ## Properties
@@ -40,12 +40,12 @@ Inherits from [entity](../resources/entity.md).
 
 |Member|Description |
 |:---|:---|
-|unknown| The status of the simulation automation is not defined. |
+|unknown| The status of the simulation automation isn't defined. |
 |draft| The simulation automation is in draft mode. |
-|notRunning| The simulation automation is not running. |
+|notRunning| The simulation automation isn't running. |
 |running| The simulation automation is running. |
 |completed| The simulation automation has completed. |
-|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
+|unknownFutureValue| Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 |Relationship|Type|Description|
@@ -53,7 +53,7 @@ Inherits from [entity](../resources/entity.md).
 |runs|[simulationAutomationRun](../resources/simulationautomationrun.md) collection|A collection of simulation automation runs. |
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

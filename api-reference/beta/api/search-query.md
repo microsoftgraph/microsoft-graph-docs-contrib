@@ -17,15 +17,14 @@ Run a specified search query. Search results are provided in the response.
 
 [!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference). 
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Mail.Read, Calendars.Read, Files.Read.All, Sites.Read.All, ExternalItem.Read.All, Acronym.Read.All, Bookmark.Read.All, ChannelMessage.Read.All, Chat.Read, QnA.Read.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Files.Read.All, Sites.Read.All |
+<!-- { "blockType": "permissions", "name": "search_query" } -->
+[!INCLUDE [permissions-table](../includes/permissions/search-query-permissions.md)]
 
 ## HTTP request
 
@@ -55,14 +54,17 @@ If successful, this method returns an `HTTP 200 OK` response code and a collecti
 
 ## Examples
 
-### Request
+### Example 1: Basic call to perform a search request
 
-The following is an example of the request.
+The following example shows how to perform a search to get expected connector items.
+
+#### Request
+
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "search_query"
+  "name": "query"
 }-->
 
 ```HTTP
@@ -93,35 +95,42 @@ Content-type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/search-query-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/query-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/search-query-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/search-query-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/query-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/search-query-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/query-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/search-query-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/query-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/query-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/search-query-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/query-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/query-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/query-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -161,6 +170,77 @@ Content-type: application/json
 }
 ```
 
+### Example 2: Basic call to use queryTemplate
+
+The following example shows how to use the queryable property **createdBy** to retrieve all files created by a user.
+
+#### Request
+
+```HTTP
+POST https://graph.microsoft.com/beta/search/query
+Content-type: application/json
+
+{
+  "requests": [
+    {
+      "entityTypes": [
+        "listItem"
+      ],
+      "query": {
+        "queryString": "contoso",
+        "queryTemplate":"{searchTerms} CreatedBy:Bob"
+      },
+      "from": 0,
+      "size": 25
+    }
+  ]
+}
+```
+
+### Response
+
+The following example shows the response.
+
+```HTTP
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "value": [
+        {
+            "searchTerms": [
+                "contoso"
+            ],
+            "hitsContainers": [
+                {
+                    "hits": [
+                        {
+                            "hitId": "1",
+                            "rank": 1,
+                            "summary": "_summary-value",
+                            "resource": {
+                                "@odata.type": "#microsoft.graph.listItem",
+                                "id": "c23c7035-73d6-4bad-8901-9e2930d4be8e",
+                                "createdBy": {
+                                    "user": {
+                                        "displayName": "Bob",
+                                        "email": "Bob@contoso.com"
+                                    }
+                                },
+                                "createdDateTime": "2021-11-19T17:04:18Z",
+                                "lastModifiedDateTime": "2023-03-09T18:52:26Z"
+                            }
+                        }
+                    ],
+                    "total": 1,
+                    "moreResultsAvailable": false
+                }
+            ]
+        }
+    ]
+}
+```
+
 ## See also
 
 - Search [mail messages](/graph/search-concept-messages)
@@ -168,8 +248,9 @@ Content-type: application/json
 - Search [person](/graph/search-concept-person)
 - Search content in SharePoint and OneDrive ([files, lists and sites](/graph/search-concept-files))
 - Search [custom types (Graph Connectors)](/graph/search-concept-custom-types) data
+- Search with [queryTemplate](/graph/search-concept-query-template)
 - [Sort](/graph/search-concept-sort) search results
-- Use [aggregations](/graph/search-concept-aggregations) to refine search results
+- Use [aggregations](/graph/search-concept-aggregation) to refine search results
 - Enable [spell corrections](/graph/search-concept-speller) in search results
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

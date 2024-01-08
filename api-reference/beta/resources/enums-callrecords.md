@@ -209,6 +209,14 @@ Namespace: microsoft.graph.callRecords
 | xrtvc1             |
 | unknownFutureValue |
 
+### pstnUserBlockMode values 
+
+|Member|
+|:---|
+|blocked|
+|unblocked|
+|unknownFutureValue|
+
 <!--
 {
   "type": "#page.annotation",

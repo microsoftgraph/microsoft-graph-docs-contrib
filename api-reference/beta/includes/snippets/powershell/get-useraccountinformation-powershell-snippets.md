@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.People
+Import-Module Microsoft.Graph.Beta.People
 
 # A UPN can also be used as -UserId.
-Get-MgUserProfileAccount -UserId $userId -UserAccountInformationId $userAccountInformationId
+Get-MgBetaUserProfileAccount -UserId $userId -UserAccountInformationId $userAccountInformationId
 
 ```

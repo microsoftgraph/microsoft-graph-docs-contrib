@@ -23,9 +23,9 @@ proposedNewTime.end = end;
 graphClient.me().events("{id}")
 	.decline(EventDeclineParameterSet
 		.newBuilder()
-		.withComment(comment)
-		.withSendResponse(sendResponse)
 		.withProposedNewTime(proposedNewTime)
+		.withSendResponse(sendResponse)
+		.withComment(comment)
 		.build())
 	.buildRequest()
 	.post();

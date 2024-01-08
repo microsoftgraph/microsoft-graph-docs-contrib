@@ -34,7 +34,7 @@ The rich features and APIs for Microsoft Teams, Shifts, and Viva Learning open u
 
 [Cultivate workforce](#cultivate-workforce)
 - [Manage shifts and staff schedules](#manage-shifts-and-staff-schedules)
-- [Enable employee learning using the collaborative capabilities in Teams (preview)](#enable-employee-learning-using-the-collaborative-capabilities-in-teams-preview)
+- [Enable employee learning using the collaborative capabilities in Teams](#enable-employee-learning-using-the-collaborative-capabilities-in-teams)
 
 
 ## Automate workflows
@@ -62,9 +62,8 @@ Microsoft Teams APIs can enhance apps inside and outside of Teams:
 | [Messaging extensions](/microsoftteams/platform/concepts/messaging-extensions) |Allow users to query and share information in conversations.|
 |Websites| Surface enhanced content in your webpages.|
 |Services|Enhance your client applications with Microsoft Graph data via your web service.|
-| [Activity feed](/microsoftteams/platform/concepts/activity-feed)|Engage users via feed notifications.|
+| [Activity feed](/graph/teams-send-activityfeednotifications) |Engage users via feed notifications.|
 | [Calling and online meetings (preview)](/graph/api/resources/communications-api-overview) |Create Microsoft Teams apps with bots that can initiate and participate in audio/video calls, route/transfer calls based on interactive voice response (IVR) flows, and participate in online meetings.|
-
 
 ### Automate team lifecycles
 
@@ -110,9 +109,9 @@ Automatically create teams for classes at the beginning of the school year, and 
 ### Create teams linked to your app
 
 Let customers create new [teams](/graph/api/resources/team) and [channels](/graph/api/resources/channel). 
-[Install](/graph/api/teamsappinstallation-add) your 
+[Install](/graph/api/resources/teamsappinstallation) your 
 [Teams app](/microsoftteams/platform/#pivot=home&panel=home-all) in the new teams. 
-[Pin your app to a tab](/graph/api/teamstab-add) in the new channel. 
+[Pin your app to a tab](/graph/api/resources/teamstab) in the new channel. 
 [Send messages](/graph/api/chatmessage-post) to the channel linking back to your website.
 
 
@@ -170,18 +169,20 @@ Whether scheduling a meeting between a doctor and a patient or between a user an
 - [Join an online meeting](/graph/api/application-post-calls#example-5-join-scheduled-meeting-with-service-hosted-media).
 
 
-## Cultivate workforce 
+## Cultivate workforce
 
 ### Manage shifts and staff schedules
+
 Available on Teams, the Microsoft Shifts app manages shifts, staff scheduling, and time tracking. Being integrated with Teams, Shifts provides users the convenience of dedicated channels and teams, streamlining communications to connect the workforce and fostering community building. Use the [Shifts API](/graph/api/resources/shift) to pull shift data into your staffing systems, provide frontline workers with shift information they need in one place, and empower them to own their schedules, request shift in a schedule, and swap or offer shifts.
 
-### Enable employee learning using the collaborative capabilities in Teams (preview)
-Viva Learning built for Microsoft Teams and Microsoft 365 brings employee learning into the flow of work. Viva Learning lets employers register learning providers, upload and manage content metadata, learner assignments, and completion records. Employees can share learning content in Teams messages, meeting chats, or emails, encouraging peer learning and mentoring conversations. 
+### Enable employee learning using the collaborative capabilities in Teams
 
-Use the employee learning APIs for Viva Learning to: 
+Viva Learning built for Microsoft Teams and Microsoft 365 brings employee learning into the flow of work. Viva Learning lets employers register learning providers, upload and manage content metadata, learner assignments, and completion records. Employees can share learning content in Teams messages, meeting chats, or emails, encouraging peer learning and mentoring conversations.
+
+Use the employee learning APIs for Viva Learning to:
+
 - Register and manage a [learning provider](/graph/api/resources/learningprovider).
 - Insert, update, retrieve, and delete [learning content](/graph/api/resources/learningcontent) metadata.
-
 
 ## API reference
 
@@ -191,17 +192,18 @@ Looking for the API reference for Teams, Shift, and Viva Learning?
 - [Teams API in Microsoft Graph beta](/graph/api/resources/teams-api-overview?view=graph-rest-beta&preserve-view=true)
 - [Shifts API in Microsoft Graph v1.0](/graph/api/resources/shift)
 - [Shifts API in Microsoft Graph beta](/graph/api/resources/shift?view=graph-rest-beta&preserve-view=true)
-- [Use the employee learning API to integrate with Viva Learning (preview)](/graph/api/resources/viva-learning-api-overview)
+- [Employee learning API to integrate with Viva Learning in Microsoft Graph v1.0](/graph/api/resources/viva-learning-api-overview)
+- [Employee learning API to integrate with Viva Learning in Microsoft Graph beta](/graph/api/resources/viva-learning-api-overview?view=graph-rest-beta&preserve-view=true)
 
 ## Next steps
 
-- [Calls permissions](./permissions-reference.md#calls-permissions)
+- [Calls permissions](./permissions-reference.md)
 - [Communications API samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples)
 - [Delegated and application permissions](/azure/active-directory/develop/v1-permissions-and-consent)
 - Drill down on the methods, properties, and relationships of the [team](/graph/api/resources/team), [channel](/graph/api/resources/channel), and [group](/graph/api/resources/group) resources.
 - Get a jump-start with sample code: [Contoso Airlines](https://github.com/microsoftgraph/contoso-airlines-teams-sample), [C# mini-samples](https://github.com/microsoftgraph/csharp-teams-sample-graph)
 - Learn how to [use the Microsoft Teams API](/graph/api/resources/teams-api-overview).
-- [Online meeting permissions](./permissions-reference.md#online-meetings-permissions)
+- [Online meeting permissions](./permissions-reference.md)
 - Read more about the [Microsoft Teams programming model](/microsoftteams/platform/concepts/concepts-overview).
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Watch the [overview video](https://aka.ms/teamsgraph/v1/video).

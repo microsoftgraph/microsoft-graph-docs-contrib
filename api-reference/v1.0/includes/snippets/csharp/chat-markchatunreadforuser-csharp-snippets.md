@@ -4,22 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var user = new TeamworkUserIdentity
+// Dependencies
+using Microsoft.Graph.Chats.Item.MarkChatUnreadForUser;
+using Microsoft.Graph.Models;
+
+var requestBody = new MarkChatUnreadForUserPostRequestBody
 {
-	Id = "d864e79f-a516-4d0f-9fee-0eeb4d61fdc2",
-	AdditionalData = new Dictionary<string, object>()
+	User = new TeamworkUserIdentity
 	{
-		{"tenantId", "2a690434-97d9-4eed-83a6-f5f13600199a"}
-	}
+		Id = "d864e79f-a516-4d0f-9fee-0eeb4d61fdc2",
+		AdditionalData = new Dictionary<string, object>
+		{
+			{
+				"tenantId" , "2a690434-97d9-4eed-83a6-f5f13600199a"
+			},
+		},
+	},
+	LastMessageReadDateTime = DateTimeOffset.Parse("2021-05-27T22:13:01.577Z"),
 };
 
-var lastMessageReadDateTime = DateTimeOffset.Parse("2021-05-27T22:13:01.577Z");
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.Chats["{chat-id}"].MarkChatUnreadForUser.PostAsync(requestBody);
 
-await graphClient.Chats["{chat-id}"]
-	.MarkChatUnreadForUser(user,lastMessageReadDateTime)
-	.Request()
-	.PostAsync();
 
 ```

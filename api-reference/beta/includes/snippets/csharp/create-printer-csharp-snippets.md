@@ -4,29 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var displayName = "Test Printer";
+// Dependencies
+using Microsoft.Graph.Beta.Print.Printers.Create;
+using Microsoft.Graph.Beta.Models;
 
-var manufacturer = "Test Printer Manufacturer";
-
-var model = "Test Printer Model";
-
-String physicalDeviceId = null;
-
-var hasPhysicalDevice = false;
-
-var certificateSigningRequest = new PrintCertificateSigningRequestObject
+var requestBody = new CreatePostRequestBody
 {
-	Content = "{content}",
-	TransportKey = "{sampleTransportKey}"
+	DisplayName = "Test Printer",
+	Manufacturer = "Test Printer Manufacturer",
+	Model = "Test Printer Model",
+	PhysicalDeviceId = null,
+	HasPhysicalDevice = false,
+	CertificateSigningRequest = new PrintCertificateSigningRequest
+	{
+		Content = "{content}",
+		TransportKey = "{sampleTransportKey}",
+	},
+	ConnectorId = null,
 };
 
-String connectorId = null;
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.Print.Printers.Create.PostAsync(requestBody);
 
-await graphClient.Print.Printers
-	.Create(displayName,manufacturer,model,certificateSigningRequest,physicalDeviceId,hasPhysicalDevice,connectorId)
-	.Request()
-	.PostAsync();
 
 ```

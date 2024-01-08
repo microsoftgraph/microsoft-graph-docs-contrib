@@ -5,7 +5,7 @@ manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.prod: search
-description: "Follow the steps in this article to test the custom connector you built using the Microsoft Graph connectors SDK (preview)."
+description: "Follow the steps in this article to test the custom connector you built using the Microsoft Graph connectors SDK."
 ---
 
 # Test your Microsoft Graph connector
@@ -37,8 +37,8 @@ Use the following steps to test your connector:
         },
         "CredentialData": {
           "Path": "D:\\ApplianceParts.csv",
-          "AuthenticationKind": "Anonymous", // Authentication kind which connector supports eg: basic, windows, anonymous
-          "CredentialDetails": null
+          "AuthenticationKind": "Anonymous", // Authentication kind which connector supports eg: basic, windows, anonymous, oauth2.client_credentials
+          "CredentialDetails": null // If AuthenticationKind is set to something different, use { "loginId": "", "loginSecret": "" } here
     
         },
         "ProviderParameters": null // This parameter will have the data/configuration given during connection creation time. Will be present in JSON serialized format
@@ -47,22 +47,36 @@ Use the following steps to test your connector:
 
     ```
 
+
 2. Update the CustomConnectorPortMap.json file with the port mapping of the connector. This file located in the following folder C:\Program Files\Graph connector agent. Update this file with an entry for the connector ID (which you identified in the ConnectorInfoServiceImpl.cs file in the previous step) and the port, which is defined in the ConnectorServer.cs file.
 
 ![Screenshot of the ConnectorServer.cs file showing the port location](images/connectors-sdk/portmap.png)
 
-    ```json
+```json
     {
       "a1c127ed-29ce-47fb-ad4a-8836871922ea": "30303" //Update your ConnectorUniqueId and Port information
     }
 
-    ```
+```
 
-3. Run GraphConnectorAgentTest.exe, which is located in the C:\Program Files\Graph connector agent\TestApp folder.
+3. Update the manifest.json file located in the following folder: C:\Program Files\Graph connector agent\TestApp\Config:
 
-4. Make sure the connector is running.
+```json
+    {
+    // This is your unique connector ID/provider ID.
+    "connectorId": "a1c127ed-29ce-47fb-ad4a-8836871922ea", //Update your ConnectorUniqueId here
+    
+    // This is a list of all supported auth types. Remove the ones that the connector does not support.
+    "authTypes": [ "Anonymous" ]   
+    }
 
-5. Test the connector using options 1, 2, and 3 in GraphConnectorAgentTest.exe.
+```
+
+4. Run GraphConnectorAgentTest.exe, which is located in the C:\Program Files\Graph connector agent\TestApp folder.
+
+5. Make sure the connector is running.
+
+6. Test the connector using options all the options (1, 2, 3, 4, 5) in GraphConnectorAgentTest.exe.
 
 ## Next steps
 

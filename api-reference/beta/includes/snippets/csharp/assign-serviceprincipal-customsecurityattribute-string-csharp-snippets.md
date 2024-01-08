@@ -4,21 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var servicePrincipal = new ServicePrincipal
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new ServicePrincipal
 {
 	CustomSecurityAttributes = new CustomSecurityAttributeValue
 	{
-		AdditionalData = new Dictionary<string, object>()
+		AdditionalData = new Dictionary<string, object>
 		{
-			{"Engineering", "{\"@odata.type\":\"#Microsoft.DirectoryServices.CustomSecurityAttributeValue\",\"ProjectDate\":\"2022-10-01\"}"}
-		}
-	}
+			{
+				"Engineering" , new 
+				{
+					OdataType = "#Microsoft.DirectoryServices.CustomSecurityAttributeValue",
+					ProjectDate = "2022-10-01",
+				}
+			},
+		},
+	},
 };
 
-await graphClient.ServicePrincipals["{servicePrincipal-id}"]
-	.Request()
-	.UpdateAsync(servicePrincipal);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.ServicePrincipals["{servicePrincipal-id}"].PatchAsync(requestBody);
+
 
 ```

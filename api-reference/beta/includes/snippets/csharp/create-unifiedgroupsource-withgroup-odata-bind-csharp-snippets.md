@@ -4,19 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var unifiedGroupSource = new Microsoft.Graph.Security.UnifiedGroupSource
+// Dependencies
+using Microsoft.Graph.Beta.Models.Security;
+
+var requestBody = new UnifiedGroupSource
 {
-	IncludedSources = Microsoft.Graph.Security.SourceType.Mailbox,
-	AdditionalData = new Dictionary<string, object>()
+	IncludedSources = SourceType.Mailbox,
+	AdditionalData = new Dictionary<string, object>
 	{
-		{"group@odata.bind", "https://graph.microsoft.com/v1.0/groups/93f90172-fe05-43ea-83cf-ff785a40d610"}
-	}
+		{
+			"group@odata.bind" , "https://graph.microsoft.com/v1.0/groups/93f90172-fe05-43ea-83cf-ff785a40d610"
+		},
+	},
 };
 
-await graphClient.Security.Cases.EdiscoveryCases["{security.ediscoveryCase-id}"].Custodians["{security.ediscoveryCustodian-id}"].UnifiedGroupSources
-	.Request()
-	.AddAsync(unifiedGroupSource);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].Custodians["{ediscoveryCustodian-id}"].UnifiedGroupSources.PostAsync(requestBody);
+
 
 ```

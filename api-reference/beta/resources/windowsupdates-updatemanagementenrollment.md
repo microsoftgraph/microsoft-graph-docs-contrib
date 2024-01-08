@@ -1,7 +1,7 @@
 ---
 title: "updateManagementEnrollment resource type"
 description: "Represents enrollment into management by the service of a certain update category."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: resourcePageType
@@ -20,7 +20,7 @@ Inherits from [updatableAssetEnrollment](../resources/windowsupdates-updatableas
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|updateCategory|microsoft.graph.windowsUpdates.updateCategory|The category of updates that the service manages. Supports a subset of the values for **updateCategory**. Possible values are: `feature`, `unknownFutureValue`.|
+|updateCategory|microsoft.graph.windowsUpdates.updateCategory|The category of updates that the service manages. Supports a subset of the values for **updateCategory**. Possible values are: `driver`, `feature`, `quality`, `unknownFutureValue`.|
 
 ## Relationships
 None.
@@ -38,4 +38,3 @@ The following is a JSON representation of the resource.
   "updateCategory": "String"
 }
 ```
-

@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
-	DisplayName = "sales"
-	Description = "for employees working with sales and outside sales partners"
-	State = "published"
-	IsExternallyVisible = $true
+	displayName = "sales"
+	description = "for employees working with sales and outside sales partners"
+	state = "published"
+	isExternallyVisible = $true
 }
 
 New-MgEntitlementManagementCatalog -BodyParameter $params

@@ -4,25 +4,32 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var clientContext = "d45324c1-fcb5-430a-902c-f20af696537c";
+// Dependencies
+using Microsoft.Graph.Communications.Calls.Item.PlayPrompt;
+using Microsoft.Graph.Models;
 
-var prompts = new List<Prompt>()
+var requestBody = new PlayPromptPostRequestBody
 {
-	new MediaPrompt
+	ClientContext = "d45324c1-fcb5-430a-902c-f20af696537c",
+	Prompts = new List<Prompt>
 	{
-		MediaInfo = new MediaInfo
+		new MediaPrompt
 		{
-			Uri = "https://cdn.contoso.com/beep.wav",
-			ResourceId = "1D6DE2D4-CD51-4309-8DAA-70768651088E"
-		}
-	}
+			OdataType = "#microsoft.graph.mediaPrompt",
+			MediaInfo = new MediaInfo
+			{
+				OdataType = "#microsoft.graph.mediaInfo",
+				Uri = "https://cdn.contoso.com/beep.wav",
+				ResourceId = "1D6DE2D4-CD51-4309-8DAA-70768651088E",
+			},
+		},
+	},
 };
 
-await graphClient.Communications.Calls["{call-id}"]
-	.PlayPrompt(prompts,clientContext)
-	.Request()
-	.PostAsync();
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Communications.Calls["{call-id}"].PlayPrompt.PostAsync(requestBody);
+
 
 ```

@@ -1,7 +1,7 @@
 --- 
 title: "stopHoldMusicOperation resource type"
 description: "Represents the status of a stopHoldMusic operation, triggered by a call to the stopHoldMusic API."
-author: "mkhribech"
+author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType

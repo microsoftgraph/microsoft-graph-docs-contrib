@@ -4,17 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var notifyTeam = true;
+// Dependencies
+using Microsoft.Graph.Teams.Item.Schedule.Share;
 
-var startDateTime = DateTimeOffset.Parse("2018-10-08T00:00:00Z");
+var requestBody = new SharePostRequestBody
+{
+	NotifyTeam = true,
+	StartDateTime = DateTimeOffset.Parse("2018-10-08T00:00:00.000Z"),
+	EndDateTime = DateTimeOffset.Parse("2018-10-15T00:00:00.000Z"),
+};
 
-var endDateTime = DateTimeOffset.Parse("2018-10-15T00:00:00Z");
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.Teams["{team-id}"].Schedule.Share.PostAsync(requestBody);
 
-await graphClient.Teams["{team-id}"].Schedule
-	.Share(notifyTeam,startDateTime,endDateTime)
-	.Request()
-	.PostAsync();
 
 ```

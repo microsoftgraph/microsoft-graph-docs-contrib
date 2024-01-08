@@ -4,20 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var printerShare = new PrinterShare
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new PrinterShare
 {
 	DisplayName = "ShareName",
 	AllowAllUsers = true,
-	AdditionalData = new Dictionary<string, object>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		{"printer@odata.bind", "https://graph.microsoft.com/beta/print/printers/{id}"}
-	}
+		{
+			"printer@odata.bind" , "https://graph.microsoft.com/beta/print/printers/{id}"
+		},
+	},
 };
 
-await graphClient.Print.Shares["{printerShare-id}"]
-	.Request()
-	.UpdateAsync(printerShare);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Print.Shares["{printerShare-id}"].PatchAsync(requestBody);
+
 
 ```

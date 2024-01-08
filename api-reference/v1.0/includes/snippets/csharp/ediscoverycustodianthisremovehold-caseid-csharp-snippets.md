@@ -4,17 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var ids = new List<String>()
+// Dependencies
+using Microsoft.Graph.Security.Cases.EdiscoveryCases.Item.NoncustodialDataSources.MicrosoftGraphSecurityRemoveHold;
+
+var requestBody = new RemoveHoldPostRequestBody
 {
-	"39333641443238353535383731453339",
-	"46333131344239353834433430454335"
+	Ids = new List<string>
+	{
+		"39333641443238353535383731453339",
+		"46333131344239353834433430454335",
+	},
 };
 
-await graphClient.Security.Cases.EdiscoveryCases["{security.ediscoveryCase-id}"].NoncustodialDataSources
-	.RemoveHold(ids)
-	.Request()
-	.PostAsync();
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].NoncustodialDataSources.MicrosoftGraphSecurityRemoveHold.PostAsync(requestBody);
+
 
 ```

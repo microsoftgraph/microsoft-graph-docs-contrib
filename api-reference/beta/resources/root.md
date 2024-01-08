@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "The Root facet indicates that an object is the top-most one in its hierarchy."
 ms.date: 09/10/2017
 title: Root

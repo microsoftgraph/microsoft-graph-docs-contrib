@@ -1,16 +1,16 @@
 ---
-title: "Microsoft Graph connectors SDK (preview) contracts connector crawler API and models"
+title: "Microsoft Graph connectors SDK contracts connector crawler API and models"
 author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.prod: search
-description: "Learn about the contracts connector crawler API and models in the Microsoft Graph connectors SDK (preview)."
+description: "Learn about the contracts connector crawler API and models in the Microsoft Graph connectors SDK."
 ---
 
-# Microsoft Graph connectors SDK (preview) contracts connector crawler API and models
+# Microsoft Graph connectors SDK contracts connector crawler API and models
 
-The Microsoft Graph connectors SDK (preview) contracts connector crawler API and models are called during a crawl.
+The Microsoft Graph connectors SDK contracts connector crawler API and models are called during a crawl.
 
 ## Connector crawler API
 
@@ -181,9 +181,8 @@ Enumeration members of identity source.
 
 |Member |Value |Description |
 |:----------|:-------------|:----------|
-IS_None |0 |Indicates the default value: Azure Active Directory (Azure AD). |
-AzureActiveDirectory |1 |The source of identity is Azure AD. |
-External |2 |The source of identity isn't Azure AD. |
+IS_None |0 |Indicates the default value: Microsoft Entra ID. |
+AzureActiveDirectory |1 |The source of identity is Microsoft Entra ID. |
 
 #### IdentityType enumeration members
 

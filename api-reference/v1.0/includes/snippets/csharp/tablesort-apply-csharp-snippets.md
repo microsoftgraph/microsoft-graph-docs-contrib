@@ -4,32 +4,36 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var fields = new List<WorkbookSortField>()
+// Dependencies
+using Microsoft.Graph.Drives.Item.Items.Item.Workbook.Tables.Item.Sort.Apply;
+using Microsoft.Graph.Models;
+
+var requestBody = new ApplyPostRequestBody
 {
-	new WorkbookSortField
+	Fields = new List<WorkbookSortField>
 	{
-		Key = 99,
-		SortOn = "sortOn-value",
-		Ascending = true,
-		Color = "color-value",
-		DataOption = "dataOption-value",
-		Icon = new WorkbookIcon
+		new WorkbookSortField
 		{
-			Set = "set-value",
-			Index = 99
-		}
-	}
+			Key = 99,
+			SortOn = "sortOn-value",
+			Ascending = true,
+			Color = "color-value",
+			DataOption = "dataOption-value",
+			Icon = new WorkbookIcon
+			{
+				Set = "set-value",
+				Index = 99,
+			},
+		},
+	},
+	MatchCase = true,
+	Method = "method-value",
 };
 
-var matchCase = true;
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].Sort.Apply.PostAsync(requestBody);
 
-var method = "method-value";
-
-await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].Sort
-	.Apply(matchCase,method,fields)
-	.Request()
-	.PostAsync();
 
 ```

@@ -4,21 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Groups
+Import-Module Microsoft.Graph.Beta.Groups
 
 $params = @{
-	Topic = "New Conversation Thread Topic"
-	Posts = @(
+	topic = "New Conversation Thread Topic"
+	posts = @(
 		@{
-			Body = @{
-				ContentType = "html"
-				Content = "this is body content"
+			body = @{
+				contentType = "html"
+				content = "this is body content"
 			}
-			NewParticipants = @(
+			newParticipants = @(
 				@{
-					EmailAddress = @{
-						Name = "Alex Darrow"
-						Address = "alexd@contoso.com"
+					emailAddress = @{
+						name = "Alex Darrow"
+						address = "alexd@contoso.com"
 					}
 				}
 			)
@@ -26,6 +26,6 @@ $params = @{
 	)
 }
 
-New-MgGroupThread -GroupId $groupId -BodyParameter $params
+New-MgBetaGroupThread -GroupId $groupId -BodyParameter $params
 
 ```

@@ -26,7 +26,7 @@ const updateAudienceById = {
   ]
 };
 
-await client.api('/admin/windows/updates/deployments/{deploymentId}/audience/updateAudienceById')
+await client.api('/admin/windows/updates/deployments/b5171742-1742-b517-4217-17b5421717b5/audience/updateAudienceById')
 	.version('beta')
 	.post(updateAudienceById);
 

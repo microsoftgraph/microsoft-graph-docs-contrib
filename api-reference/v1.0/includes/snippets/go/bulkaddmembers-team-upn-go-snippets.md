@@ -4,40 +4,47 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestBody := graphmodels.NewAddPostRequestBody()
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphteams "github.com/microsoftgraph/msgraph-sdk-go/teams"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-conversationMember := graphmodels.NewConversationMember()
+requestBody := graphteams.NewAddPostRequestBody()
+
+
+conversationMember := graphmodels.NewAadUserConversationMember()
 roles := []string {
 
 }
 conversationMember.SetRoles(roles)
 additionalData := map[string]interface{}{
-	"user@odata.bind" : "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')", 
+	"odataBind" : "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')", 
 }
 conversationMember.SetAdditionalData(additionalData)
-conversationMember1 := graphmodels.NewConversationMember()
+conversationMember1 := graphmodels.NewAadUserConversationMember()
 roles := []string {
 	"owner",
-
 }
 conversationMember1.SetRoles(roles)
 additionalData := map[string]interface{}{
-	"user@odata.bind" : "https://graph.microsoft.com/v1.0/users('alex@contoso.com')", 
+	"odataBind" : "https://graph.microsoft.com/v1.0/users('alex@contoso.com')", 
 }
 conversationMember1.SetAdditionalData(additionalData)
 
-values := []graphmodels.Objectable {
+values := []graphmodels.conversationMemberable {
 	conversationMember,
 	conversationMember1,
-
 }
 requestBody.SetValues(values)
 
-result, err := graphClient.TeamsById("team-id").Members().Add().Post(context.Background(), requestBody, nil)
+add, err := graphClient.Teams().ByTeamId("team-id").Members().Add().Post(context.Background(), requestBody, nil)
 
 
 ```

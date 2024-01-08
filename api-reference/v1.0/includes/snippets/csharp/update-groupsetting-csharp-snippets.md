@@ -4,22 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var groupSetting = new GroupSetting
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new GroupSetting
 {
-	Values = new List<SettingValue>()
+	Values = new List<SettingValue>
 	{
 		new SettingValue
 		{
 			Name = "AllowToAddGuests",
-			Value = "true"
-		}
-	}
+			Value = "true",
+		},
+	},
 };
 
-await graphClient.Groups["{group-id}"].Settings["{groupSetting-id}"]
-	.Request()
-	.UpdateAsync(groupSetting);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Groups["{group-id}"].Settings["{groupSetting-id}"].PatchAsync(requestBody);
+
 
 ```

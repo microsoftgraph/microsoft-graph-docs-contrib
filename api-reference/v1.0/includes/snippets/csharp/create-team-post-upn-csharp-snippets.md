@@ -4,34 +4,42 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var team = new Team
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new Team
 {
 	DisplayName = "My Sample Team",
 	Description = "My Sample Team’s Description",
-	Members = new TeamMembersCollectionPage()
+	Members = new List<ConversationMember>
 	{
 		new AadUserConversationMember
 		{
-			Roles = new List<String>()
+			OdataType = "#microsoft.graph.aadUserConversationMember",
+			Roles = new List<string>
 			{
-				"owner"
+				"owner",
 			},
-			AdditionalData = new Dictionary<string, object>()
+			AdditionalData = new Dictionary<string, object>
 			{
-				{"user@odata.bind", "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')"}
-			}
-		}
+				{
+					"user@odata.bind" , "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')"
+				},
+			},
+		},
 	},
-	AdditionalData = new Dictionary<string, object>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		{"template@odata.bind", "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"}
-	}
+		{
+			"template@odata.bind" , "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
+		},
+	},
 };
 
-await graphClient.Teams
-	.Request()
-	.AddAsync(team);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Teams.PostAsync(requestBody);
+
 
 ```

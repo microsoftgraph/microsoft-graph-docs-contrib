@@ -4,15 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var subscription = new Subscription
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new Subscription
 {
-	ExpirationDateTime = DateTimeOffset.Parse("2016-11-22T18:23:45.9356913Z")
+	ExpirationDateTime = DateTimeOffset.Parse("2016-11-22T18:23:45.9356913Z"),
 };
 
-await graphClient.Subscriptions["{subscription-id}"]
-	.Request()
-	.UpdateAsync(subscription);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Subscriptions["{subscription-id}"].PatchAsync(requestBody);
+
 
 ```

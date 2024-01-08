@@ -15,7 +15,6 @@ Namespace: microsoft.graph
 
 Represents a logical container for all the definitions and versions of the same team template.
 
-> **Note**: This API is currently in private preview only. When it reaches public preview, we will publish a blog post announcement on the [Microsoft 365 Developer blog](https://devblogs.microsoft.com/microsoft365dev/).
 
 
 ## Methods
@@ -39,6 +38,7 @@ Represents a logical container for all the definitions and versions of the same 
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.teamtemplate",
 }-->
 

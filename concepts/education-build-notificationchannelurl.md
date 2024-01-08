@@ -135,7 +135,7 @@ You have now successfully built the url, it's time to assign the value to the pr
 #### Example 1: Update an educationAssignment
 
 ##### Request
-The following is an example of the request.
+The following example shows a request.
 
 ```http
 PATCH https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/4679bc1b-90c5-45af-ae1a-d5357672ed39
@@ -148,7 +148,7 @@ Content-type: application/json
 ```
 
 ##### Response
-The following is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

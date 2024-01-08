@@ -4,27 +4,40 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var targets = new List<InvitationParticipantInfo>()
+// Dependencies
+using Microsoft.Graph.Communications.Calls.Item.Redirect;
+using Microsoft.Graph.Models;
+
+var requestBody = new RedirectPostRequestBody
 {
-	new InvitationParticipantInfo
+	Targets = new List<InvitationParticipantInfo>
 	{
-		Identity = new IdentitySet
+		new InvitationParticipantInfo
 		{
-			AdditionalData = new Dictionary<string, object>()
+			OdataType = "#microsoft.graph.invitationParticipantInfo",
+			Identity = new IdentitySet
 			{
-				{"phone", "{\"@odata.type\":\"#microsoft.graph.identity\",\"id\":\"+12345678901\"}"}
-			}
-		}
-	}
+				OdataType = "#microsoft.graph.identitySet",
+				AdditionalData = new Dictionary<string, object>
+				{
+					{
+						"phone" , new Identity
+						{
+							OdataType = "#microsoft.graph.identity",
+							Id = "+12345678901",
+						}
+					},
+				},
+			},
+		},
+	},
+	CallbackUri = "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039",
 };
 
-var callbackUri = "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039";
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.Communications.Calls["{call-id}"].Redirect.PostAsync(requestBody);
 
-await graphClient.Communications.Calls["{call-id}"]
-	.Redirect(targets,null,callbackUri)
-	.Request()
-	.PostAsync();
 
 ```

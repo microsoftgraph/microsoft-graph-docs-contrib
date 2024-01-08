@@ -4,21 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var tenantGroupId = "String";
+// Dependencies
+using Microsoft.Graph.Beta.TenantRelationships.ManagedTenants.ManagementActionTenantDeploymentStatuses.MicrosoftGraphManagedTenantsChangeDeploymentStatus;
 
-var tenantId = "String";
+var requestBody = new ChangeDeploymentStatusPostRequestBody
+{
+	TenantGroupId = "String",
+	TenantId = "String",
+	ManagementActionId = "String",
+	ManagementTemplateId = "String",
+	Status = "String",
+};
 
-var managementActionId = "String";
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.TenantRelationships.ManagedTenants.ManagementActionTenantDeploymentStatuses.MicrosoftGraphManagedTenantsChangeDeploymentStatus.PostAsync(requestBody);
 
-var managementTemplateId = "String";
-
-var status = "String";
-
-await graphClient.TenantRelationships.ManagedTenants.ManagementActionTenantDeploymentStatuses
-	.ChangeDeploymentStatus(null,tenantGroupId,tenantId,managementActionId,managementTemplateId,status)
-	.Request()
-	.PostAsync();
 
 ```

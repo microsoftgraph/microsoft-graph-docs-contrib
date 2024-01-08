@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 $params = @{
-	DisplayName = "Seattle District Technical Schools"
-	Description = "Seattle district technical schools administration"
-	MembershipType = "Dynamic"
-	MembershipRule = "(user.country -eq "United States")"
-	MembershipRuleProcessingState = "On"
+	displayName = "Seattle District Technical Schools"
+	description = "Seattle district technical schools administration"
+	membershipType = "Dynamic"
+	membershipRule = "(user.country -eq "United States")"
+	membershipRuleProcessingState = "On"
 }
 
-New-MgAdministrativeUnit -BodyParameter $params
+New-MgBetaAdministrativeUnit -BodyParameter $params
 
 ```

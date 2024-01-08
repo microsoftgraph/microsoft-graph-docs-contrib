@@ -4,23 +4,32 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var listItem = new ListItem
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new ListItem
 {
 	Fields = new FieldValueSet
 	{
-		AdditionalData = new Dictionary<string, object>()
+		AdditionalData = new Dictionary<string, object>
 		{
-			{"Title", "Widget"},
-			{"Color", "Purple"},
-			{"Weight", "32"}
-		}
-	}
+			{
+				"Title" , "Widget"
+			},
+			{
+				"Color" , "Purple"
+			},
+			{
+				"Weight" , 32
+			},
+		},
+	},
 };
 
-await graphClient.Sites["{site-id}"].Lists["{list-id}"].Items
-	.Request()
-	.AddAsync(listItem);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Sites["{site-id}"].Lists["{list-id}"].Items.PostAsync(requestBody);
+
 
 ```

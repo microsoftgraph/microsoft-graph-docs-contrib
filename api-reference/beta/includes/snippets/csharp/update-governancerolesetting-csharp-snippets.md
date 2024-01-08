@@ -4,22 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var governanceRoleSetting = new GovernanceRoleSetting
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new GovernanceRoleSetting
 {
-	AdminEligibleSettings = new List<GovernanceRuleSetting>()
+	AdminEligibleSettings = new List<GovernanceRuleSetting>
 	{
 		new GovernanceRuleSetting
 		{
 			RuleIdentifier = "ExpirationRule",
-			Setting = "{\"permanentAssignment\":false,\"maximumGrantPeriodInMinutes\":129600}"
-		}
-	}
+			Setting = "{\"permanentAssignment\":false,\"maximumGrantPeriodInMinutes\":129600}",
+		},
+	},
 };
 
-await graphClient.PrivilegedAccess["{privilegedAccess-id}"].RoleSettings["{governanceRoleSetting-id}"]
-	.Request()
-	.UpdateAsync(governanceRoleSetting);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.PrivilegedAccess["{privilegedAccess-id}"].RoleSettings["{governanceRoleSetting-id}"].PatchAsync(requestBody);
+
 
 ```

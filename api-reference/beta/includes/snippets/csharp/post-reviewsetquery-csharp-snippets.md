@@ -4,16 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var reviewSetQuery = new Microsoft.Graph.Ediscovery.ReviewSetQuery
+// Dependencies
+using Microsoft.Graph.Beta.Models.Ediscovery;
+
+var requestBody = new ReviewSetQuery
 {
 	DisplayName = "My Query 1",
-	Query = "(subject:\"Quarterly Financials\")"
+	Query = "(subject:\"Quarterly Financials\")",
 };
 
-await graphClient.Compliance.Ediscovery.Cases["{ediscovery.case-id}"].ReviewSets["{ediscovery.reviewSet-id}"].Queries
-	.Request()
-	.AddAsync(reviewSetQuery);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Compliance.Ediscovery.Cases["{case-id}"].ReviewSets["{reviewSet-id}"].Queries.PostAsync(requestBody);
+
 
 ```

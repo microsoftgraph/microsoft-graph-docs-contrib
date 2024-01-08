@@ -4,8 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+import (
+	  "context"
+	  "time"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewSubjectRightsRequest()
 type := graphmodels.EXPORT_SUBJECTRIGHTSREQUESTTYPE 
@@ -42,13 +51,22 @@ pauseAfterEstimate := true
 requestBody.SetPauseAfterEstimate(&pauseAfterEstimate) 
 regulations := []string {
 	"CCPA",
-
 }
 requestBody.SetRegulations(regulations)
-siteLocations := graphmodels.NewSubjectRightsRequestSiteLocation()
+siteLocations := graphmodels.NewSubjectRightsRequestAllSiteLocation()
 requestBody.SetSiteLocations(siteLocations)
 
-result, err := graphClient.Privacy().SubjectRightsRequests().Post(context.Background(), requestBody, nil)
+
+user := graphmodels.NewUser()
+id := "1B761ED2-AA7E-4D82-9CF5-C09D737B6167"
+user.SetId(&id) 
+
+approvers := []graphmodels.Userable {
+	user,
+}
+requestBody.SetApprovers(approvers)
+
+subjectRightsRequests, err := graphClient.Privacy().SubjectRightsRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

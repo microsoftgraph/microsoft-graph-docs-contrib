@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewShiftPreferences()
 id := "SHPR_eeab4fb1-20e5-48ca-ad9b-98119d94bee7"
@@ -23,8 +31,7 @@ daysOfWeek := []graphmodels.DayOfWeekable {
 	dayOfWeek := graphmodels.WEDNESDAY_DAYOFWEEK 
 	pattern.SetDayOfWeek(&dayOfWeek) 
 	dayOfWeek := graphmodels.FRIDAY_DAYOFWEEK 
-	pattern.SetDayOfWeek(&dayOfWeek) 
-
+	pattern.SetDayOfWeek(&dayOfWeek)
 }
 pattern.SetDaysOfWeek(daysOfWeek)
 interval := int32(1)
@@ -42,15 +49,14 @@ shiftAvailability.SetTimeSlots(&timeSlots)
 
 availability := []graphmodels.ShiftAvailabilityable {
 	shiftAvailability,
-
 }
 requestBody.SetAvailability(availability)
 additionalData := map[string]interface{}{
-	"@odata.etag" : "1a371e53-f0a6-4327-a1ee-e3c56e4b38aa", 
+	"odataEtag" : "1a371e53-f0a6-4327-a1ee-e3c56e4b38aa", 
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.UsersById("user-id").Settings().ShiftPreferences().Patch(context.Background(), requestBody, nil)
+shiftPreferences, err := graphClient.Users().ByUserId("user-id").Settings().ShiftPreferences().Patch(context.Background(), requestBody, nil)
 
 
 ```

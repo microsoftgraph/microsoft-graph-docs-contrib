@@ -4,11 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var educationUser = new EducationUser
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new EducationUser
 {
-	RelatedContacts = new List<RelatedContact>()
+	RelatedContacts = new List<RelatedContact>
 	{
 		new RelatedContact
 		{
@@ -16,7 +19,7 @@ var educationUser = new EducationUser
 			EmailAddress = "father@time.com",
 			MobilePhone = "4251231234",
 			Relationship = ContactRelationship.Guardian,
-			AccessConsent = true
+			AccessConsent = true,
 		},
 		new RelatedContact
 		{
@@ -24,13 +27,13 @@ var educationUser = new EducationUser
 			EmailAddress = "mother@nature.co.uk",
 			MobilePhone = "3251231234",
 			Relationship = ContactRelationship.Parent,
-			AccessConsent = true
-		}
-	}
+			AccessConsent = true,
+		},
+	},
 };
 
-await graphClient.Education.Users["{educationUser-id}"]
-	.Request()
-	.UpdateAsync(educationUser);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Education.Users["{educationUser-id}"].PatchAsync(requestBody);
+
 
 ```

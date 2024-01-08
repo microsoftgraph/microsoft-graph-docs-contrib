@@ -4,16 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var attachment = new FileAttachment
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new FileAttachment
 {
+	OdataType = "#microsoft.graph.fileAttachment",
 	Name = "menu.txt",
-	ContentBytes = Convert.FromBase64String("bWFjIGFuZCBjaGVlc2UgdG9kYXk=")
+	ContentBytes = Convert.FromBase64String("bWFjIGFuZCBjaGVlc2UgdG9kYXk="),
 };
 
-await graphClient.Me.Outlook.Tasks["{outlookTask-id}"].Attachments
-	.Request()
-	.AddAsync(attachment);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Me.Outlook.Tasks["{outlookTask-id}"].Attachments.PostAsync(requestBody);
+
 
 ```

@@ -4,15 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var groupId = "groupId-value";
+// Dependencies
+using Microsoft.Graph.Beta.Me.Onenote.Notebooks.Item.CopyNotebook;
 
-var renameAs = "renameAs-value";
+var requestBody = new CopyNotebookPostRequestBody
+{
+	GroupId = "groupId-value",
+	RenameAs = "renameAs-value",
+};
 
-await graphClient.Me.Onenote.Notebooks["{notebook-id}"]
-	.CopyNotebook(groupId,renameAs,null,null,null)
-	.Request()
-	.PostAsync();
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Me.Onenote.Notebooks["{notebook-id}"].CopyNotebook.PostAsync(requestBody);
+
 
 ```

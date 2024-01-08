@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var workPosition = new WorkPosition
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new WorkPosition
 {
 	Detail = new PositionDetail
 	{
@@ -21,18 +24,18 @@ var workPosition = new WorkPosition
 				Street = "123 Patriachy Ponds",
 				City = "Moscow",
 				CountryOrRegion = "Russian Federation",
-				PostalCode = "RU-34621"
+				PostalCode = "RU-34621",
 			},
-			WebUrl = "https://www.adventureworks.com"
+			WebUrl = "https://www.adventureworks.com",
 		},
 		JobTitle = "Senior Product Branding Manager II",
-		Role = "consulting"
+		Role = "consulting",
 	},
-	IsCurrent = true
+	IsCurrent = true,
 };
 
-await graphClient.Me.Profile.Positions
-	.Request()
-	.AddAsync(workPosition);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Me.Profile.Positions.PostAsync(requestBody);
+
 
 ```

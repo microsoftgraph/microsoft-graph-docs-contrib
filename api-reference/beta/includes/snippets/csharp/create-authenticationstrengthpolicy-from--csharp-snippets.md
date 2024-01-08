@@ -4,21 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var authenticationStrengthPolicy = new AuthenticationStrengthPolicy
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new AuthenticationStrengthPolicy
 {
+	OdataType = "#microsoft.graph.authenticationStrengthPolicy",
 	DisplayName = "Contoso authentication level",
 	Description = "The only authentication level allowed to access our secret apps",
-	AllowedCombinations = new List<AuthenticationMethodModes>()
+	AllowedCombinations = new List<AuthenticationMethodModes?>
 	{
 		AuthenticationMethodModes.Password | AuthenticationMethodModes.HardwareOath,
-		AuthenticationMethodModes.Password | AuthenticationMethodModes.Sms
-	}
+		AuthenticationMethodModes.Password | AuthenticationMethodModes.Sms,
+	},
 };
 
-await graphClient.Policies.AuthenticationStrengthPolicies
-	.Request()
-	.AddAsync(authenticationStrengthPolicy);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Policies.AuthenticationStrengthPolicies.PostAsync(requestBody);
+
 
 ```

@@ -4,43 +4,48 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var message = new Message
+// Dependencies
+using Microsoft.Graph.Beta.Me.SendMail;
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new SendMailPostRequestBody
 {
-	Subject = "Meet for lunch?",
-	Body = new ItemBody
+	Message = new Message
 	{
-		ContentType = BodyType.Text,
-		Content = "The new cafeteria is open."
-	},
-	ToRecipients = new List<Recipient>()
-	{
-		new Recipient
+		Subject = "Meet for lunch?",
+		Body = new ItemBody
 		{
-			EmailAddress = new EmailAddress
-			{
-				Address = "samanthab@contoso.onmicrosoft.com"
-			}
-		}
-	},
-	CcRecipients = new List<Recipient>()
-	{
-		new Recipient
+			ContentType = BodyType.Text,
+			Content = "The new cafeteria is open.",
+		},
+		ToRecipients = new List<Recipient>
 		{
-			EmailAddress = new EmailAddress
+			new Recipient
 			{
-				Address = "danas@contoso.onmicrosoft.com"
-			}
-		}
-	}
+				EmailAddress = new EmailAddress
+				{
+					Address = "samanthab@contoso.onmicrosoft.com",
+				},
+			},
+		},
+		CcRecipients = new List<Recipient>
+		{
+			new Recipient
+			{
+				EmailAddress = new EmailAddress
+				{
+					Address = "danas@contoso.onmicrosoft.com",
+				},
+			},
+		},
+	},
+	SaveToSentItems = false,
 };
 
-var saveToSentItems = false;
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.Me.SendMail.PostAsync(requestBody);
 
-await graphClient.Me
-	.SendMail(message,saveToSentItems)
-	.Request()
-	.PostAsync();
 
 ```

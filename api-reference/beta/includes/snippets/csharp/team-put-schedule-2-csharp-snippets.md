@@ -4,29 +4,37 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-using var schedule = new System.IO.MemoryStream(Encoding.UTF8.GetBytes(@"{
-   ""enabled"":true,
-   ""timeZone"":""America/Chicago"",
-   ""provisionStatus"":""Completed"",
-   ""provisionStatusCode"":null,
-   ""openShiftsEnabled"":true,
-   ""swapShiftsRequestsEnabled"":true,
-   ""offerShiftRequestsEnabled"":true,
-   ""timeOffRequestsEnabled"":true,
-   ""timeClockEnabled"":true,
-   ""timeClockSettings"":{
-      ""approvedLocation"":{
-         ""altitude"":1024.13,
-         ""latitude"":26.13246,
-         ""longitude"":24.34616
-      }
-   }
-}"));
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
-await graphClient.Teams["{team-id}"].Schedule
-	.Request()
-	.PutAsync<Team>(schedule);
+var requestBody = new Schedule
+{
+	Enabled = true,
+	TimeZone = "America/Chicago",
+	ProvisionStatus = OperationStatus.Completed,
+	ProvisionStatusCode = null,
+	OpenShiftsEnabled = true,
+	SwapShiftsRequestsEnabled = true,
+	OfferShiftRequestsEnabled = true,
+	TimeOffRequestsEnabled = true,
+	StartDayOfWeek = DayOfWeekObject.Tuesday,
+	ActivitiesIncludedWhenCopyingShiftsEnabled = true,
+	TimeClockEnabled = true,
+	TimeClockSettings = new TimeClockSettings
+	{
+		ApprovedLocation = new GeoCoordinates
+		{
+			Altitude = 1024.13d,
+			Latitude = 26.13246d,
+			Longitude = 24.34616d,
+		},
+	},
+};
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Teams["{team-id}"].Schedule.PutAsync(requestBody);
+
 
 ```

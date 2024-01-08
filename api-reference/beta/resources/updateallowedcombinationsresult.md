@@ -1,7 +1,8 @@
 ---
 title: "updateAllowedCombinationsResult resource type"
 description: "The results of an attempt to update an authentication strength's allowed authentication method combinations."
-author: "mmcla"
+author: "InbarckMS"
+ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var bookingBusiness = new BookingBusiness
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new BookingBusiness
 {
 	DisplayName = "Fourth Coffee",
 	Address = new PhysicalAddress
@@ -16,16 +19,16 @@ var bookingBusiness = new BookingBusiness
 		City = "Buffalo",
 		State = "NY",
 		CountryOrRegion = "USA",
-		PostalCode = "98052"
+		PostalCode = "98052",
 	},
 	Phone = "206-555-0100",
 	Email = "manager@fourthcoffee.com",
 	WebSiteUrl = "https://www.fourthcoffee.com",
-	DefaultCurrencyIso = "USD"
+	DefaultCurrencyIso = "USD",
 };
 
-await graphClient.BookingBusinesses
-	.Request()
-	.AddAsync(bookingBusiness);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.BookingBusinesses.PostAsync(requestBody);
+
 
 ```

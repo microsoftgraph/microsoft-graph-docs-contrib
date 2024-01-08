@@ -1,16 +1,16 @@
 ---
-title: "Microsoft Graph connectors SDK (preview) common models"
+title: "Microsoft Graph connectors SDK common models"
 author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.prod: search
-description: "Learn about the common models used in the Microsoft Graph connectors SDK (preview)."
+description: "Learn about the common models used in the Microsoft Graph connectors SDK."
 ---
 
-# Microsoft Graph connectors SDK (preview) common models
+# Microsoft Graph connectors SDK common models
 
-This article describes the common models used in the Microsoft Graph connectors SDK (preview).
+This article describes the common models used in the Microsoft Graph connectors SDK.
 
 ## CustomConfiguration
 
@@ -99,6 +99,7 @@ The **OperationResult** enumeration contains the possible values for operation r
 |NetworkError |5 |Network operation error. |
 |Canceled |6 |The cancellation token canceled the operation. |
 |TokenExpired |7 |To be used in OAuth flow when the token sent to the connector by the platform has expired. During the crawl, on receiving this status, the platform will trigger the refresh token flow and call the **RefreshAccessToken** method in **ConnectorOAuthService**. |
+|SkipItem |8 |To be used in the crawl flow when item is to be skipped. |
 
 ## OperationStatus
 

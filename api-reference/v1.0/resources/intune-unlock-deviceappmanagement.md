@@ -1,7 +1,7 @@
 ---
 title: "deviceAppManagement resource type"
 description: "Singleton entity that acts as a container for all device and app management functionality."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -27,7 +27,9 @@ Singleton entity that acts as a container for all device and app management func
 |id|String|Key of the entity.|
 
 ## Relationships
-None
+|Relationship|Type|Description|
+|:---|:---|:---|
+|wdacSupplementalPolicies|[windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md) collection|The collection of Windows Defender Application Control Supplemental Policies.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -43,6 +45,3 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)"
 }
 ```
-
-
-

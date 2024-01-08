@@ -4,15 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var subjectRightsRequest = new SubjectRightsRequestObject
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new SubjectRightsRequest
 {
-	InternalDueDateTime = DateTimeOffset.Parse("2021-08-30T00:00:00Z")
+	OdataType = "#microsoft.graph.subjectRightsRequest",
+	InternalDueDateTime = DateTimeOffset.Parse("2021-08-30T00:00:00Z"),
 };
 
-await graphClient.Privacy.SubjectRightsRequests["{subjectRightsRequest-id}"]
-	.Request()
-	.UpdateAsync(subjectRightsRequest);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Privacy.SubjectRightsRequests["{subjectRightsRequest-id}"].PatchAsync(requestBody);
+
 
 ```

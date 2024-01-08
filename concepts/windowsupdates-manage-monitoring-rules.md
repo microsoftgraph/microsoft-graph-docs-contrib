@@ -1,7 +1,7 @@
 ---
 title: "Manage monitoring rules using the Windows Update for Business deployment service"
 description: "Use the Windows Update for Business deployment service to create a monitoring rule or resume deployments paused by a monitoring rule."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: conceptualPageType
@@ -15,14 +15,14 @@ Monitoring rules are compatible with deployments of Windows 10 feature updates.
 
 ## Step 1: Create a monitoring rule
 
-You can create a [monitoring rule](/graph/api/resources/windowsupdates-monitoringrule) for a deployment by configuring the [monitoring settings](/graph/api/resources/windowsupdates-monitoringsettings). Each [deployment](/graph/api/resources/windowsupdates-deployments) can have one active monitoring rule at a time.
+You can create a [monitoring rule](/graph/api/resources/windowsupdates-monitoringrule) for a deployment by configuring the [monitoring settings](/graph/api/resources/windowsupdates-monitoringsettings). Each [deployment](/graph/api/resources/windowsupdates-deployment) can have one active monitoring rule at a time.
 
 Monitoring rules consist of three components:
 * **signal**: The type of update issue to be monitored by the deployment service.
 * **threshold**: When this percentage of devices emit the specified signal, the monitoring rule is triggered.
 * **action**: The action to take when the monitoring rule is triggered.
 
-Below is an example of creating a monitoring rule for a deployment at the same time as creating the deployment.
+The following example shows how to create a monitoring rule for a deployment at the same time as creating the deployment.
 
 ### Request
 
@@ -33,11 +33,14 @@ Content-type: application/json
 {
     "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
     "content": {
-        "@odata.type": "microsoft.graph.windowsUpdates.featureUpdateReference",
-        "version": "20H2"
+        "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
+        "catalogEntry": {
+            "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
+            "id": "catalog/entries/1"
+        }
     },
     "settings": {
-        "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
         "monitoring": {
             "monitoringRules": [
                 {
@@ -73,11 +76,11 @@ Content-Type: application/json
         "effectiveSinceDate": "String (timestamp)"
     },
     "content": {
-        "@odata.type": "microsoft.graph.windowsUpdates.featureUpdateReference",
-        "version": "20H2"
+        "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent"
+        }
     },
     "settings": {
-        "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
         "monitoring": {
             "monitoringRules": [
                 {
@@ -88,9 +91,8 @@ Content-Type: application/json
                 }
             ]
         },
-        "rollout": null,
-        "userExperience": null,
-        "safeguard": null
+        "schedule": null,
+        "userExperience": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"
@@ -103,7 +105,7 @@ When a monitoring rule triggers, it provides the opportunity to investigate upda
 ### Example: Resume deployment by removing a monitoring rule
 When a monitoring rule that pauses the deployment is triggered, one way to resume the deployment is to remove the rule.
 
-Below is an example of resuming the deployment by removing the rule.
+The following example shows how to resume the deployment by removing the rule.
 
 #### Request
 
@@ -114,7 +116,7 @@ Content-Type: application/json
 {
     "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
     "settings": {
-        "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
         "monitoring": {
             "monitoringRules": []
         }
@@ -144,17 +146,16 @@ Content-Type: application/json
         "effectiveSinceDate": "String (timestamp)"
     },
     "content": {
-        "@odata.type": "microsoft.graph.windowsUpdates.featureUpdateReference",
-        "version": "20H2"
+        "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
+        }
     },
     "settings": {
-        "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
         "monitoring": {
             "monitoringRules": []
         },
-        "rollout": null,
-        "userExperience": null,
-        "safeguard": null
+        "schedule": null,
+        "userExperience": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"
@@ -164,7 +165,7 @@ Content-Type: application/json
 ### Example: Resume deployment by updating a monitoring rule threshold
 Another way to resume the deployment is to change the threshold of the relevant monitoring rule. When the new threshold is reached, the action (in this case, `pauseDeployment`) will be triggered again. 
 
-Below is an example of resuming the deployment by changing the monitoring rule threshold. This example also illustrates how to edit any existing monitoring rule, even if its threshold has not yet been met, as well as how to create a monitoring rule on a deployment that does not have one.
+The following example shows how to resume the deployment by changing the monitoring rule threshold. This example also illustrates how to edit any existing monitoring rule, even if its threshold has not yet been met, as well as how to create a monitoring rule on a deployment that does not have one.
 
 #### Request
 
@@ -175,7 +176,7 @@ Content-Type: application/json
 {
     "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
     "settings": {
-        "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
         "monitoring": {
             "monitoringRules": [
                 {
@@ -211,11 +212,11 @@ Content-Type: application/json
         "effectiveSinceDate": "String (timestamp)"
     },
     "content": {
-        "@odata.type": "microsoft.graph.windowsUpdates.featureUpdateReference",
-        "version": "20H2"
+        "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
+        }
     },
     "settings": {
-        "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
         "monitoring": {
             "monitoringRules": [
                 {
@@ -226,9 +227,8 @@ Content-Type: application/json
                 }
             ]
         },
-        "rollout": null,
-        "userExperience": null,
-        "safeguard": null
+        "schedule": null,
+        "userExperience": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"

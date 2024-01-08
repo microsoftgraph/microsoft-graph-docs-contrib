@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Users
 
 $params = @{
-	Color = "preset15"
+	color = "preset15"
 }
 
 # A UPN can also be used as -UserId.

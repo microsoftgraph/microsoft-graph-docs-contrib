@@ -4,28 +4,32 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var profileCardProperty = new ProfileCardProperty
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new ProfileCardProperty
 {
-	Annotations = new List<ProfileCardAnnotation>()
+	Annotations = new List<ProfileCardAnnotation>
 	{
 		new ProfileCardAnnotation
 		{
-			Localizations = new List<DisplayNameLocalization>()
+			DisplayName = "Cost Center",
+			Localizations = new List<DisplayNameLocalization>
 			{
 				new DisplayNameLocalization
 				{
-					LanguageTag = "no-NB",
-					DisplayName = "Kostnads Senter"
-				}
-			}
-		}
-	}
+					LanguageTag = "nb-NO",
+					DisplayName = "Kostnadssenter",
+				},
+			},
+		},
+	},
 };
 
-await graphClient.Organization["{organization-id}"].Settings.ProfileCardProperties["{profileCardProperty-id}"]
-	.Request()
-	.UpdateAsync(profileCardProperty);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Admin.People.ProfileCardProperties["{profileCardProperty-id}"].PatchAsync(requestBody);
+
 
 ```

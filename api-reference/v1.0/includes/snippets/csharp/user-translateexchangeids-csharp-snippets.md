@@ -4,21 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var inputIds = new List<String>()
+// Dependencies
+using Microsoft.Graph.Me.TranslateExchangeIds;
+using Microsoft.Graph.Models;
+
+var requestBody = new TranslateExchangeIdsPostRequestBody
 {
-	"{rest-formatted-id-1}",
-	"{rest-formatted-id-2}"
+	InputIds = new List<string>
+	{
+		"{rest-formatted-id-1}",
+		"{rest-formatted-id-2}",
+	},
+	SourceIdType = ExchangeIdFormat.RestId,
+	TargetIdType = ExchangeIdFormat.RestImmutableEntryId,
 };
 
-var sourceIdType = ExchangeIdFormat.RestId;
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Me.TranslateExchangeIds.PostAsync(requestBody);
 
-var targetIdType = ExchangeIdFormat.RestImmutableEntryId;
-
-await graphClient.Me
-	.TranslateExchangeIds(inputIds,targetIdType,sourceIdType)
-	.Request()
-	.PostAsync();
 
 ```

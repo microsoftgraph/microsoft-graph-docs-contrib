@@ -14,14 +14,13 @@ Namespace: microsoft.graph.security
 
 Update the properties of a [retentionEventType](../resources/security-retentioneventtype.md) object.
 
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|RecordsManagement.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "security_retentioneventtype_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/security-retentioneventtype-update-permissions.md)]
 
 ## HTTP request
 
@@ -47,10 +46,7 @@ PATCH /security/triggers/retentionEvents/{retentionEventId}/retentionEventType
 |:---|:---|:---|
 |displayName|String|Name of the event type. Optional.|
 |description|String|Information about the event type. Optional.|
-|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The user who created the retentionEventType. Optional.|
-|createdDateTime|DateTimeOffset|The date time when the retentionEventType was created. Optional.|
-|lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The user who last modified the retentionEventType.|
-|lastModifiedDateTime|DateTimeOffset|The latest date time when the retentionEventType was modified. Optional.|
+
 
 ## Response
 
@@ -74,9 +70,6 @@ Content-length: 199
   "@odata.type": "#microsoft.graph.security.retentionEventType",
   "displayName": "String",
   "description": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  }
 }
 ```
 
@@ -99,13 +92,5 @@ Content-Type: application/json
   "id": "dd689e79-9e79-dd68-799e-68dd799e68dd",
   "displayName": "String",
   "description": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "lastModifiedDateTime": "String (timestamp)"
 }
 ```

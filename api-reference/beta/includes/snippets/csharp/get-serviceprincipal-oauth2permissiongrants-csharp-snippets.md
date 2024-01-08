@@ -4,10 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var oauth2PermissionGrants = await graphClient.ServicePrincipals["{servicePrincipal-id}"].Oauth2PermissionGrants
-	.Request()
-	.GetAsync();
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.ServicePrincipals["{servicePrincipal-id}"].Oauth2PermissionGrants.GetAsync();
+
 
 ```

@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: The numberColumn on a columnDefinition resource indicates that the column's values are numbers.
 ms.date: 09/11/2017
 title: NumberColumn

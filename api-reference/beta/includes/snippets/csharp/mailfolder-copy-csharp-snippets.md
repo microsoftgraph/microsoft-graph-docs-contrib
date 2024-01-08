@@ -4,13 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var destinationId = "destinationId-value";
+// Dependencies
+using Microsoft.Graph.Beta.Me.MailFolders.Item.Copy;
 
-await graphClient.Me.MailFolders["{mailFolder-id}"]
-	.Copy(destinationId)
-	.Request()
-	.PostAsync();
+var requestBody = new CopyPostRequestBody
+{
+	DestinationId = "destinationId-value",
+};
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Me.MailFolders["{mailFolder-id}"].Copy.PostAsync(requestBody);
+
 
 ```

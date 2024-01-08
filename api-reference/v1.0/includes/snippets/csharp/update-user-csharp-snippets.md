@@ -4,19 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var user = new User
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new User
 {
-	BusinessPhones = new List<String>()
+	BusinessPhones = new List<string>
 	{
-		"+1 425 555 0109"
+		"+1 425 555 0109",
 	},
-	OfficeLocation = "18/2111"
+	OfficeLocation = "18/2111",
 };
 
-await graphClient.Me
-	.Request()
-	.UpdateAsync(user);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Me.PatchAsync(requestBody);
+
 
 ```

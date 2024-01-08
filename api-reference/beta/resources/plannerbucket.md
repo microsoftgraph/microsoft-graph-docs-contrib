@@ -25,6 +25,7 @@ Represents a bucket (or "custom column") for tasks in a plan in Microsoft 365. I
 |[Create](../api/planner-post-buckets.md) | [plannerBucket](plannerbucket.md)	| Create a new **plannerBucket** object. |
 |[Update](../api/plannerbucket-update.md) | [plannerBucket](plannerbucket.md)	|Update **plannerBucket** object. |
 |[Delete](../api/plannerbucket-delete.md) | None |Delete **plannerBucket** object. |
+|[Get delta](../api/plannerbucket-delta.md)|[plannerBucket](../resources/plannerbucket.md) collection| Get newly created, updated, or deleted **plannerBucket** objects in a Planner plan without having to perform a full read of the entire resource collection.|
 
 ## Properties
 | Property	   | Type	|Description|

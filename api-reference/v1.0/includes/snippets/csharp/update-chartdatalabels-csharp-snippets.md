@@ -4,19 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var workbookChartDataLabels = new WorkbookChartDataLabels
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new WorkbookChartDataLabels
 {
 	Position = "position-value",
 	ShowValue = true,
 	ShowSeriesName = true,
 	ShowCategoryName = true,
-	ShowLegendKey = true
+	ShowLegendKey = true,
 };
 
-await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Charts["{workbookChart-id}"].DataLabels
-	.Request()
-	.UpdateAsync(workbookChartDataLabels);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Charts["{workbookChart-id}"].DataLabels.PatchAsync(requestBody);
+
 
 ```

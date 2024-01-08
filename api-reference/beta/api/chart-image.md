@@ -14,14 +14,14 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite    |
-|Delegated (personal Microsoft account) | Files.ReadWrite    |
-|Application | Not supported. |
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
+## Permissions
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "chart_image" } -->
+[!INCLUDE [permissions-table](../includes/permissions/chart-image-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -76,11 +76,12 @@ You can display the base-64 string inside an HTML image tag: `<img src="data:ima
 
 For default behavior, use `Image(width=0,height=0,fittingMode='fit')`. Here is an example of a chart image returned with the default parameters.
 
-![Screenshot of an Excel chart image displayed with the default height and width.](https://cdn.graph.office.net/prod/GraphDocuments/concepts/images/GetChart-default.png)
+:::image type="content" source="images/GetChart-default.png" alt-text="Screenshot of an Excel chart image displayed with the default height and width." loc-scope="third-party":::
+
 
 If you want to customize the display of the image, specify a height, width, and a fitting mode. Here is what the same chart image looks like if you retrieve it with these parameters: `Image(width=500,height=500,fittingMode='Fill')`.
 
-![Screenshot of an Excel chart image displayed with the specified height and width.](https://github.com/microsoftgraph/microsoft-graph-docs/blob/main/concepts/images/GetChart-fill.png)
+:::image type="content" source="images/GetChart-fill.png" alt-text="Screenshot of an Excel chart image displayed with the specified height and width." loc-scope="third-party":::
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

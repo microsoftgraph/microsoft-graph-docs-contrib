@@ -1,7 +1,7 @@
 ---
 title: "onDemandExecutionOnly resource type"
 description: "Represents the setting for a workflow running on-demand only."
-author: "owinfreyATL"
+author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
@@ -30,7 +30,8 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.identityGovernance.onDemandExecutionOnly"
+  "@odata.type": "microsoft.graph.identityGovernance.onDemandExecutionOnly",
+  "baseType": "microsoft.graph.identityGovernance.workflowExecutionConditions"
 }
 -->
 ``` json

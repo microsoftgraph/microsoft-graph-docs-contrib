@@ -2,7 +2,7 @@
 title: "changeNotification resource type"
 description: "Represents the change notification sent to the subscriber."
 ms.localizationpriority: medium
-author: "jumasure"
+author: "keylimesoda"
 doc_type: resourcePageType
 ms.prod: "change-notifications"
 ---
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Represents the notification sent to the subscriber. All the properties of this resource are read-only.
 
-For details, see [Use the Microsoft Graph API to get change notifications](webhooks.md).
+For details, see [Use Microsoft Graph to get change notifications](change-notifications-api-overview.md).
 
 ## Methods
 

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-await client.api('/me/outlook/tasks('AAMkADA1MT15rfAAA=')/complete')
+await client.api('/me/outlook/tasks/AAMkADA1MT15rfAAA=/complete')
 	.version('beta')
 	.post();
 

@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var chatMessage = new ChatMessage
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new ChatMessage
 {
 	MessageType = ChatMessageType.Message,
 	Subject = null,
@@ -21,34 +24,41 @@ var chatMessage = new ChatMessage
 		{
 			Id = "3b102402-813e-4e17-a6b2-f841aef1fdfc",
 			DisplayName = "Sumit Gupta",
-			UserIdentityType = TeamworkUserIdentityType.AadUser
+			AdditionalData = new Dictionary<string, object>
+			{
+				{
+					"userIdentityType" , "aadUser"
+				},
+			},
 		},
-		AdditionalData = new Dictionary<string, object>()
+		AdditionalData = new Dictionary<string, object>
 		{
-			{"conversation", "null"}
-		}
+			{
+				"conversation" , null
+			},
+		},
 	},
 	Body = new ItemBody
 	{
 		ContentType = BodyType.Text,
-		Content = "Edit text only"
+		Content = "Edit text only",
 	},
-	Attachments = new List<ChatMessageAttachment>()
+	Attachments = new List<ChatMessageAttachment>
 	{
 	},
-	Mentions = new List<ChatMessageMention>()
+	Mentions = new List<ChatMessageMention>
 	{
 	},
-	Reactions = new List<ChatMessageReaction>()
+	Reactions = new List<ChatMessageReaction>
 	{
 	},
-	MessageHistory = new List<ChatMessageHistoryItem>()
+	MessageHistory = new List<ChatMessageHistoryItem>
 	{
-	}
+	},
 };
 
-await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Messages["{chatMessage-id}"]
-	.Request()
-	.UpdateAsync(chatMessage);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Messages["{chatMessage-id}"].PatchAsync(requestBody);
+
 
 ```

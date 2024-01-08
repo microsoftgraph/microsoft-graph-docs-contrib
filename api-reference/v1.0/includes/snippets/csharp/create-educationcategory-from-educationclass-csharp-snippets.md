@@ -4,15 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var educationCategory = new EducationCategory
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new EducationCategory
 {
-	DisplayName = "Quizzes"
+	DisplayName = "Quizzes",
 };
 
-await graphClient.Education.Classes["{educationClass-id}"].AssignmentCategories
-	.Request()
-	.AddAsync(educationCategory);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Education.Classes["{educationClass-id}"].AssignmentCategories.PostAsync(requestBody);
+
 
 ```

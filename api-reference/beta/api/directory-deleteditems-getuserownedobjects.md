@@ -15,17 +15,14 @@ Retrieve a list of recently deleted [application](../resources/application.md) a
 
 This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn
-more, including how to choose permissions, see
-[Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type | Permissions (from least to most privileged) |
-| --- | --- |
-| Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All |
-| Delegated (personal Microsoft account) |  Not supported. |
-| Application | Group.Read.All, Group.ReadWrite.All  |
+<!-- { "blockType": "permissions", "name": "directory_deleteditems_getuserownedobjects" } -->
+[!INCLUDE [permissions-table](../includes/permissions/directory-deleteditems-getuserownedobjects-permissions.md)]
 
 ## HTTP request
 
@@ -55,10 +52,15 @@ Successful requests return `200 OK` response codes; the response object includes
 
 ## Example
 
-##### Request
+### Request
 
 Here is an example of the request.
 
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_directory_deleteditem_getuserownedobjects"
+}-->
 ``` http
 POST https://graph.microsoft.com/beta/directory/deletedItems/getUserOwnedObjects
 Content-type: application/json
@@ -69,43 +71,59 @@ Content-type: application/json
 }
 ```
 
-###### Response
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-directory-deleteditem-getuserownedobjects-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-Here is an example of the response. Note: This response object may be truncated for brevity. All supported properties are returned
-from actual calls.
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-directory-deleteditem-getuserownedobjects-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
+
+### Response
+
+Here is an example of the response. 
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject",
+  "isCollection": true
+} -->
 ``` http
-HTTP/1.1 200
+HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-"value": [
-          {
-              "@odata.type": "#microsoft.graph.group",
-              "id": "bfa7033a-7367-4644-85f5-95aaf385cbd7",
-              "deletedDateTime": "2018-04-01T12:39:16Z",
-              "classification": null,
-              "createdDateTime": "2017-03-22T12:39:16Z",
-              "description": null,
-              "displayName": "Test",
-              "groupTypes": [
-                  "Unified"
-              ],
-              "mail": "Test@contoso.com",
-              "mailEnabled": true,
-              "mailNickname": "Test",
-              "membershipRule": null,
-              "membershipRuleProcessingState": null,
-              "preferredDataLocation": null,
-              "preferredLanguage": null,
-              "proxyAddresses": [
-                  "SMTP:Test@contoso.com"
-              ],
-              "renewedDateTime": "2017-09-22T22:30:39Z",
-              "securityEnabled": false,
-              "theme": null,
-              "visibility": "Public"
-          } 
-        ]
- }
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.group",
+      "id": "bfa7033a-7367-4644-85f5-95aaf385cbd7",
+      "deletedDateTime": "2018-04-01T12:39:16Z",
+      "classification": null,
+      "createdDateTime": "2017-03-22T12:39:16Z",
+      "description": null,
+      "displayName": "Test",
+      "groupTypes": [
+        "Unified"
+      ],
+      "mail": "Test@contoso.com",
+      "mailEnabled": true,
+      "mailNickname": "Test",
+      "membershipRule": null,
+      "membershipRuleProcessingState": null,
+      "preferredDataLocation": null,
+      "preferredLanguage": null,
+      "proxyAddresses": [
+        "SMTP:Test@contoso.com"
+      ],
+      "renewedDateTime": "2017-09-22T22:30:39Z",
+      "securityEnabled": false,
+      "theme": null,
+      "visibility": "Public"
+    }
+  ]
+}
 ```

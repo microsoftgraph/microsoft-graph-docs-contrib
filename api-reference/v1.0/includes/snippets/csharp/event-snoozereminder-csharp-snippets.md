@@ -4,17 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var newReminderTime = new DateTimeTimeZone
+// Dependencies
+using Microsoft.Graph.Me.Events.Item.SnoozeReminder;
+using Microsoft.Graph.Models;
+
+var requestBody = new SnoozeReminderPostRequestBody
 {
-	DateTime = "dateTime-value",
-	TimeZone = "timeZone-value"
+	NewReminderTime = new DateTimeTimeZone
+	{
+		DateTime = "dateTime-value",
+		TimeZone = "timeZone-value",
+	},
 };
 
-await graphClient.Me.Events["{event-id}"]
-	.SnoozeReminder(newReminderTime)
-	.Request()
-	.PostAsync();
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.Me.Events["{event-id}"].SnoozeReminder.PostAsync(requestBody);
+
 
 ```

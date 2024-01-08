@@ -4,17 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var groupIds = new List<String>()
+// Dependencies
+using Microsoft.Graph.Me.CheckMemberGroups;
+
+var requestBody = new CheckMemberGroupsPostRequestBody
 {
-	"fee2c45b-915a-4a64b130f4eb9e75525e",
-	"4fe90ae065a-478b9400e0a0e1cbd540"
+	GroupIds = new List<string>
+	{
+		"fee2c45b-915a-4a64b130f4eb9e75525e",
+		"4fe90ae065a-478b9400e0a0e1cbd540",
+	},
 };
 
-await graphClient.Me
-	.CheckMemberGroups(groupIds)
-	.Request()
-	.PostAsync();
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Me.CheckMemberGroups.PostAsync(requestBody);
+
 
 ```

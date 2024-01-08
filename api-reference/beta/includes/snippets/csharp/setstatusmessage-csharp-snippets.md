@@ -4,25 +4,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var statusMessage = new PresenceStatusMessage
+// Dependencies
+using Microsoft.Graph.Beta.Users.Item.Presence.SetStatusMessage;
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new SetStatusMessagePostRequestBody
 {
-	Message = new ItemBody
+	StatusMessage = new PresenceStatusMessage
 	{
-		Content = "Hey I'm currently in a meeting.",
-		ContentType = BodyType.Text
+		Message = new ItemBody
+		{
+			Content = "Hey I'm currently in a meeting.",
+			ContentType = BodyType.Text,
+		},
+		ExpiryDateTime = new DateTimeTimeZone
+		{
+			DateTime = "2022-10-18T17:05:33.2079781",
+			TimeZone = "Pacific Standard Time",
+		},
 	},
-	ExpiryDateTime = new DateTimeTimeZone
-	{
-		DateTime = "2022-10-18T17:05:33.2079781",
-		TimeZone = "Pacific Standard Time"
-	}
 };
 
-await graphClient.Users["{user-id}"].Presence
-	.SetStatusMessage(statusMessage)
-	.Request()
-	.PostAsync();
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.Users["{user-id}"].Presence.SetStatusMessage.PostAsync(requestBody);
+
 
 ```

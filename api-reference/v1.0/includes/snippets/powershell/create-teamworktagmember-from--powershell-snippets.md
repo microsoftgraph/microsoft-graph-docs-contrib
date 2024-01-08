@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
-	UserId = "97f62344-57dc-409c-88ad-c4af14158ff5"
+	userId = "97f62344-57dc-409c-88ad-c4af14158ff5"
 }
 
 New-MgTeamTagMember -TeamId $teamId -TeamworkTagId $teamworkTagId -BodyParameter $params

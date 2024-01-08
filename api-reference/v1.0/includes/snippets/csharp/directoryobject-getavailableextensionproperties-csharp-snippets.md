@@ -4,11 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-await graphClient.DirectoryObjects
-	.GetAvailableExtensionProperties(null)
-	.Request()
-	.PostAsync();
+// Dependencies
+using Microsoft.Graph.DirectoryObjects.GetAvailableExtensionProperties;
+
+var requestBody = new GetAvailableExtensionPropertiesPostRequestBody
+{
+};
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.DirectoryObjects.GetAvailableExtensionProperties.PostAsync(requestBody);
+
 
 ```

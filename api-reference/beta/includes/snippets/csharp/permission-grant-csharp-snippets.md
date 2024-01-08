@@ -4,28 +4,33 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var recipients = new List<DriveRecipient>()
+// Dependencies
+using Microsoft.Graph.Beta.Shares.Item.Permission.Grant;
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new GrantPostRequestBody
 {
-	new DriveRecipient
+	Recipients = new List<DriveRecipient>
 	{
-		Email = "john@contoso.com"
+		new DriveRecipient
+		{
+			Email = "john@contoso.com",
+		},
+		new DriveRecipient
+		{
+			Email = "ryan@external.com",
+		},
 	},
-	new DriveRecipient
+	Roles = new List<string>
 	{
-		Email = "ryan@external.com"
-	}
+		"read",
+	},
 };
 
-var roles = new List<String>()
-{
-	"read"
-};
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Shares["{sharedDriveItem-id}"].Permission.Grant.PostAsync(requestBody);
 
-await graphClient.Shares["{sharedDriveItem-id}"].Permission
-	.Grant(roles,recipients)
-	.Request()
-	.PostAsync();
 
 ```

@@ -4,10 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var place = new RoomList
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new RoomList
 {
+	OdataType = "microsoft.graph.roomList",
 	DisplayName = "Building 1",
 	Phone = "555-555-0100",
 	Address = new PhysicalAddress
@@ -16,20 +20,20 @@ var place = new RoomList
 		City = "Buffalo",
 		State = "NY",
 		PostalCode = "98052",
-		CountryOrRegion = "USA"
+		CountryOrRegion = "USA",
 	},
 	GeoCoordinates = new OutlookGeoCoordinates
 	{
 		Altitude = null,
-		Latitude = 47,
-		Longitude = -122,
+		Latitude = 47d,
+		Longitude = -122d,
 		Accuracy = null,
-		AltitudeAccuracy = null
-	}
+		AltitudeAccuracy = null,
+	},
 };
 
-await graphClient.Places["{place-id}"]
-	.Request()
-	.UpdateAsync(place);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Places["{place-id}"].PatchAsync(requestBody);
+
 
 ```

@@ -4,22 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var calendarPermission = new CalendarPermission
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new CalendarPermission
 {
 	EmailAddress = new EmailAddress
 	{
 		Name = "Samantha Booth",
-		Address = "samanthab@adatum.onmicrosoft.com"
+		Address = "samanthab@adatum.onmicrosoft.com",
 	},
 	IsInsideOrganization = true,
 	IsRemovable = true,
-	Role = CalendarRoleType.Read
+	Role = CalendarRoleType.Read,
 };
 
-await graphClient.Users["{user-id}"].Calendar.CalendarPermissions
-	.Request()
-	.AddAsync(calendarPermission);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Users["{user-id}"].Calendar.CalendarPermissions.PostAsync(requestBody);
+
 
 ```

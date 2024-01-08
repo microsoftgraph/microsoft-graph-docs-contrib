@@ -4,17 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var value = new List<String>()
+// Dependencies
+using Microsoft.Graph.Beta.Security.TiIndicators.DeleteTiIndicators;
+
+var requestBody = new DeleteTiIndicatorsPostRequestBody
 {
-	"id-value1",
-	"id-value2"
+	Value = new List<string>
+	{
+		"id-value1",
+		"id-value2",
+	},
 };
 
-await graphClient.Security.TiIndicators
-	.DeleteTiIndicators(value)
-	.Request()
-	.PostAsync();
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Security.TiIndicators.DeleteTiIndicators.PostAsync(requestBody);
+
 
 ```

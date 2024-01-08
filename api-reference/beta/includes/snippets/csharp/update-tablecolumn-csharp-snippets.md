@@ -4,17 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var workbookTableColumn = new WorkbookTableColumn
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new WorkbookTableColumn
 {
 	Name = "name-value",
 	Index = 99,
-	Values = JsonDocument.Parse(@"""values-value""")
+	Values = "values-value",
 };
 
-await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].Columns["{workbookTableColumn-id}"]
-	.Request()
-	.UpdateAsync(workbookTableColumn);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].Columns["{workbookTableColumn-id}"].PatchAsync(requestBody);
+
 
 ```

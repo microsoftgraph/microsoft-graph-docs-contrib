@@ -4,20 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var domain = new Domain
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new Domain
 {
 	IsDefault = true,
-	SupportedServices = new List<String>()
+	SupportedServices = new List<string>
 	{
 		"Email",
-		"OfficeCommunicationsOnline"
-	}
+		"OfficeCommunicationsOnline",
+	},
 };
 
-await graphClient.Domains["{domain-id}"]
-	.Request()
-	.UpdateAsync(domain);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Domains["{domain-id}"].PatchAsync(requestBody);
+
 
 ```

@@ -4,21 +4,45 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var secrets = new SynchronizationSecretKeyStringValuePair
+// Dependencies
+using Microsoft.Graph.Beta.ServicePrincipals.Item.Synchronization.Secrets;
+
+var requestBody = new SynchronizationSecretKeyStringValuePair
 {
-	Value = new List<String>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		"",
-		"",
-		"",
-		""
-	}
+		{
+			"value" , new List<object>
+			{
+				new 
+				{
+					Key = "BaseAddress",
+					Value = "user@domain.com",
+				},
+				new 
+				{
+					Key = "SecretToken",
+					Value = "password-value",
+				},
+				new 
+				{
+					Key = "SyncNotificationSettings",
+					Value = "{\"Enabled\":false,\"DeleteThresholdEnabled\":false}",
+				},
+				new 
+				{
+					Key = "SyncAll",
+					Value = "false",
+				},
+			}
+		},
+	},
 };
 
-await graphClient.ServicePrincipals["{servicePrincipal-id}"].Synchronization
-	.Request()
-	.PutAsync(secrets);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.ServicePrincipals["{servicePrincipal-id}"].Synchronization.Secrets.PutAsync(requestBody);
+
 
 ```

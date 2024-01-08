@@ -4,20 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var browserSharedCookie = new BrowserSharedCookie
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new BrowserSharedCookie
 {
 	HostOrDomain = "www.microsoft.com",
 	SourceEnvironment = BrowserSharedCookieSourceEnvironment.MicrosoftEdge,
 	DisplayName = "Microsoft Cookie",
 	Path = "/",
 	HostOnly = true,
-	Comment = "Updating source environment."
+	Comment = "Updating source environment.",
 };
 
-await graphClient.Admin.Edge.InternetExplorerMode.SiteLists["{browserSiteList-id}"].SharedCookies["{browserSharedCookie-id}"]
-	.Request()
-	.UpdateAsync(browserSharedCookie);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Admin.Edge.InternetExplorerMode.SiteLists["{browserSiteList-id}"].SharedCookies["{browserSharedCookie-id}"].PatchAsync(requestBody);
+
 
 ```

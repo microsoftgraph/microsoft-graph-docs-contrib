@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var unifiedRoleEligibilityScheduleRequest = new UnifiedRoleEligibilityScheduleRequestObject
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new UnifiedRoleEligibilityScheduleRequest
 {
 	Action = UnifiedRoleScheduleRequestActions.AdminAssign,
 	Justification = "Assign Attribute Assignment Admin eligibility to restricted user",
@@ -19,13 +22,13 @@ var unifiedRoleEligibilityScheduleRequest = new UnifiedRoleEligibilityScheduleRe
 		Expiration = new ExpirationPattern
 		{
 			Type = ExpirationPatternType.AfterDateTime,
-			EndDateTime = DateTimeOffset.Parse("2024-04-10T00:00:00Z")
-		}
-	}
+			EndDateTime = DateTimeOffset.Parse("2024-04-10T00:00:00Z"),
+		},
+	},
 };
 
-await graphClient.RoleManagement.Directory.RoleEligibilityScheduleRequests
-	.Request()
-	.AddAsync(unifiedRoleEligibilityScheduleRequest);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.RoleManagement.Directory.RoleEligibilityScheduleRequests.PostAsync(requestBody);
+
 
 ```

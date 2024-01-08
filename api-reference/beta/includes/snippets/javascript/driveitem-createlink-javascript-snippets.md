@@ -18,7 +18,9 @@ const permission = {
     {
       '@odata.type': 'microsoft.graph.driveRecipient'
     }
-  ]
+  ],
+  sendNotification: true,
+  retainInheritedPermissions: false
 };
 
 await client.api('/me/drive/items/{itemId}/createLink')

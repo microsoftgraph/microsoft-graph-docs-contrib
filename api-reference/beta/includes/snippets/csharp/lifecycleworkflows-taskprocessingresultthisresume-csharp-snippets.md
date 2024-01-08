@@ -4,20 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var data = new Microsoft.Graph.IdentityGovernance.CustomTaskExtensionCallbackData
+// Dependencies
+using Microsoft.Graph.Beta.IdentityGovernance.LifecycleWorkflows.Workflows.Item.Tasks.Item.TaskProcessingResults.Item.MicrosoftGraphIdentityGovernanceResume;
+using Microsoft.Graph.Beta.Models.IdentityGovernance;
+
+var requestBody = new ResumePostRequestBody
 {
-	OperationStatus = Microsoft.Graph.IdentityGovernance.CustomTaskExtensionOperationStatus.Completed
+	Data = new CustomTaskExtensionCallbackData
+	{
+		OperationStatus = CustomTaskExtensionOperationStatus.Completed,
+	},
+	Source = "sample",
+	Type = "lifecycleEvent",
 };
 
-var source = "sample";
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.IdentityGovernance.LifecycleWorkflows.Workflows["{workflow-id}"].Tasks["{task-id}"].TaskProcessingResults["{taskProcessingResult-id}"].MicrosoftGraphIdentityGovernanceResume.PostAsync(requestBody);
 
-var type = "lifecycleEvent";
-
-await graphClient.IdentityGovernance.LifecycleWorkflows.Workflows["{identityGovernance.workflow-id}"].Tasks["{identityGovernance.task-id}"].TaskProcessingResults["{identityGovernance.taskProcessingResult-id}"]
-	.Resume(data,source,type)
-	.Request()
-	.PostAsync();
 
 ```

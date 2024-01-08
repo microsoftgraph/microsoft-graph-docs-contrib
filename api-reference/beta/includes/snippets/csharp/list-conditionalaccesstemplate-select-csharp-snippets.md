@@ -4,12 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var templates = await graphClient.Identity.ConditionalAccess.Templates
-	.Request()
-	.Filter("scenarios has 'secureFoundation'")
-	.Select("name,description,id,scenarios")
-	.GetAsync();
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Identity.ConditionalAccess.Templates.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Select = new string []{ "name","description","id","scenarios" };
+	requestConfiguration.QueryParameters.Filter = "scenarios has 'secureFoundation'";
+});
+
 
 ```

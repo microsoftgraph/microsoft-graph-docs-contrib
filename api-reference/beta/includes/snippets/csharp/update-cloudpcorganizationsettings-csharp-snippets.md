@@ -4,21 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var cloudPcOrganizationSettings = new CloudPcOrganizationSettings
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new CloudPcOrganizationSettings
 {
+	OdataType = "#microsoft.graph.cloudPcOrganizationSettings",
 	EnableMEMAutoEnroll = true,
 	OsVersion = CloudPcOperatingSystem.Windows11,
 	UserAccountType = CloudPcUserAccountType.StandardUser,
 	WindowsSettings = new CloudPcWindowsSettings
 	{
-		Language = "en-US"
-	}
+		Language = "en-US",
+	},
 };
 
-await graphClient.DeviceManagement.VirtualEndpoint.OrganizationSettings
-	.Request()
-	.UpdateAsync(cloudPcOrganizationSettings);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.DeviceManagement.VirtualEndpoint.OrganizationSettings.PatchAsync(requestBody);
+
 
 ```

@@ -4,19 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var printTask = new PrintTask
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new PrintTask
 {
 	Status = new PrintTaskStatus
 	{
 		State = PrintTaskProcessingState.Completed,
-		Description = "completed"
-	}
+		Description = "completed",
+	},
 };
 
-await graphClient.Print.TaskDefinitions["{printTaskDefinition-id}"].Tasks["{printTask-id}"]
-	.Request()
-	.UpdateAsync(printTask);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Print.TaskDefinitions["{printTaskDefinition-id}"].Tasks["{printTask-id}"].PatchAsync(requestBody);
+
 
 ```

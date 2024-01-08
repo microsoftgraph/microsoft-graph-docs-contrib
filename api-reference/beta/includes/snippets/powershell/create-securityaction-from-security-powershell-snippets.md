@@ -4,23 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Security
+Import-Module Microsoft.Graph.Beta.Security
 
 $params = @{
-	Name = "BlockIp"
-	ActionReason = "Test"
-	Parameters = @(
+	name = "BlockIp"
+	actionReason = "Test"
+	parameters = @(
 		@{
-			Name = "IP"
-			Value = "1.2.3.4"
+			name = "IP"
+			value = "1.2.3.4"
 		}
 	)
-	VendorInformation = @{
-		Provider = "Windows Defender ATP"
-		Vendor = "Microsoft"
+	vendorInformation = @{
+		provider = "Windows Defender ATP"
+		vendor = "Microsoft"
 	}
 }
 
-New-MgSecurityAction -BodyParameter $params
+New-MgBetaSecurityAction -BodyParameter $params
 
 ```

@@ -21,6 +21,7 @@ Describes the status for a single FOTA deployment.
 |Property|Type|Description|
 |:---|:---|:---|
 |state|[zebraFotaDeploymentState](../resources/intune-androidfotaservice-zebrafotadeploymentstate.md)|See zebraFotaDeploymentState enum for possible values. Possible values are: `pendingCreation`, `createFailed`, `created`, `inProgress`, `completed`, `pendingCancel`, `canceled`, `unknownFutureValue`.|
+|errorCode|[zebraFotaErrorCode](../resources/intune-androidfotaservice-zebrafotaerrorcode.md)|An error code indicating the failure reason, when the deployment state is `createFailed`. Possible values: See zebraFotaErrorCode enum. Possible values are: `success`, `noDevicesFoundInSelectedAadGroups`, `noIntuneDevicesFoundInSelectedAadGroups`, `noZebraFotaEnrolledDevicesFoundForCurrentTenant`, `noZebraFotaEnrolledDevicesFoundInSelectedAadGroups`, `noZebraFotaDevicesFoundForSelectedDeviceModel`, `zebraFotaCreateDeploymentRequestFailure`, `unknownFutureValue`.|
 |totalDevices|Int32|An integer that indicates the total number of devices in the deployment.|
 |totalCreated|Int32|An integer that indicates the total number of devices that have a job in the CREATED state. Typically indicates jobs that did not reach the devices. |
 |totalScheduled|Int32|An integer that indicates the total number of devices that received the json and are scheduled. |
@@ -49,6 +50,7 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.zebraFotaDeploymentStatus",
   "state": "String",
+  "errorCode": "String",
   "totalDevices": 1024,
   "totalCreated": 1024,
   "totalScheduled": 1024,

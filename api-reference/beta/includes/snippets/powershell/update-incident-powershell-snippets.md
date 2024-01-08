@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Security
+Import-Module Microsoft.Graph.Beta.Security
 
 $params = @{
-	Classification = "TruePositive"
-	Determination = "MultiStagedAttack"
-	CustomTags = @(
+	classification = "TruePositive"
+	determination = "MultiStagedAttack"
+	customTags = @(
 		"Demo"
 	)
 }
 
-Update-MgSecurityIncident -IncidentId $incidentId -BodyParameter $params
+Update-MgBetaSecurityIncident -IncidentId $incidentId -BodyParameter $params
 
 ```

@@ -10,8 +10,12 @@ const options = {
 
 const client = Client.init(options);
 
+const archive = {
+
+};
+
 await client.api('/teams/{id}/archive')
 	.version('beta')
-	.post();
+	.post(archive);
 
 ```

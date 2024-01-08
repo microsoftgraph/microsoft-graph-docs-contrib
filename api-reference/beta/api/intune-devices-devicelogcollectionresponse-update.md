@@ -48,16 +48,17 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier in the form of tenantId_deviceId_requestId|
-|status|String|The status of the log collection request|
-|managedDeviceId|Guid|The device Id|
+|id|String|The unique identifier in the form of tenantId_deviceId_requestId.|
+|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Indicates the status for the app log collection request if it is pending, completed or failed, Default is pending. Possible values are: `pending`, `completed`, `failed`, `unknownFutureValue`.|
+|managedDeviceId|Guid|Indicates Intune device unique identifier.|
 |errorCode|Int64|The error code, if any. Valid values -9.22337203685478E+18 to 9.22337203685478E+18|
-|requestedDateTimeUTC|DateTimeOffset|The DateTime of the request|
-|receivedDateTimeUTC|DateTimeOffset|The DateTime the request was received|
-|initiatedByUserPrincipalName|String|The UPN for who initiated the request|
-|expirationDateTimeUTC|DateTimeOffset|The DateTime of the expiration of the logs|
+|requestedDateTimeUTC|DateTimeOffset|The DateTime of the request.|
+|receivedDateTimeUTC|DateTimeOffset|The DateTime the request was received.|
+|initiatedByUserPrincipalName|String|The UPN for who initiated the request.|
+|expirationDateTimeUTC|DateTimeOffset|The DateTime of the expiration of the logs.|
 |size|Double|The size of the logs. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
-|enrolledByUser|String|The User Principal Name (UPN) of the user that enrolled the device|
+|sizeInKB|Double|The size of the logs in KB. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
+|enrolledByUser|String|The User Principal Name (UPN) of the user that enrolled the device.|
 
 
 
@@ -71,11 +72,11 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/logCollectionRequests/{deviceLogCollectionResponseId}
 Content-type: application/json
-Content-length: 526
+Content-length: 558
 
 {
   "@odata.type": "#microsoft.graph.deviceLogCollectionResponse",
-  "status": "Status value",
+  "status": "completed",
   "managedDeviceId": "3b336f00-6f00-3b33-006f-333b006f333b",
   "errorCode": 9,
   "requestedDateTimeUTC": "2016-12-31T23:57:40.7845755-08:00",
@@ -83,6 +84,7 @@ Content-length: 526
   "initiatedByUserPrincipalName": "Initiated By User Principal Name value",
   "expirationDateTimeUTC": "2017-01-01T00:02:49.2157996-08:00",
   "size": 1.3333333333333333,
+  "sizeInKB": 2.6666666666666665,
   "enrolledByUser": "Enrolled By User value"
 }
 ```
@@ -92,12 +94,12 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 575
+Content-Length: 607
 
 {
   "@odata.type": "#microsoft.graph.deviceLogCollectionResponse",
   "id": "05fb97dc-97dc-05fb-dc97-fb05dc97fb05",
-  "status": "Status value",
+  "status": "completed",
   "managedDeviceId": "3b336f00-6f00-3b33-006f-333b006f333b",
   "errorCode": 9,
   "requestedDateTimeUTC": "2016-12-31T23:57:40.7845755-08:00",
@@ -105,6 +107,7 @@ Content-Length: 575
   "initiatedByUserPrincipalName": "Initiated By User Principal Name value",
   "expirationDateTimeUTC": "2017-01-01T00:02:49.2157996-08:00",
   "size": 1.3333333333333333,
+  "sizeInKB": 2.6666666666666665,
   "enrolledByUser": "Enrolled By User value"
 }
 ```

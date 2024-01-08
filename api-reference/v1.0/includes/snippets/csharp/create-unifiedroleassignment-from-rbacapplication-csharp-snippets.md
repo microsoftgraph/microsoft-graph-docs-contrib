@@ -4,17 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var unifiedRoleAssignment = new UnifiedRoleAssignment
+// Dependencies
+using Microsoft.Graph.Models;
+
+var requestBody = new UnifiedRoleAssignment
 {
+	OdataType = "#microsoft.graph.unifiedRoleAssignment",
 	RoleDefinitionId = "c2cf284d-6c41-4e6b-afac-4b80928c9034",
 	PrincipalId = "f8ca5a85-489a-49a0-b555-0a6d81e56f0d",
-	DirectoryScopeId = "/"
+	DirectoryScopeId = "/",
 };
 
-await graphClient.RoleManagement.Directory.RoleAssignments
-	.Request()
-	.AddAsync(unifiedRoleAssignment);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.RoleManagement.Directory.RoleAssignments.PostAsync(requestBody);
+
 
 ```

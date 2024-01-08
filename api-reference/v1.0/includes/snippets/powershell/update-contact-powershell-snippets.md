@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.PersonalContacts
 
 $params = @{
-	HomeAddress = @{
-		Street = "123 Some street"
-		City = "Seattle"
-		State = "WA"
-		PostalCode = "98121"
+	homeAddress = @{
+		street = "123 Some street"
+		city = "Seattle"
+		state = "WA"
+		postalCode = "98121"
 	}
-	Birthday = [System.DateTime]::Parse("1974-07-22")
+	birthday = [System.DateTime]::Parse("1974-07-22")
 }
 
 # A UPN can also be used as -UserId.

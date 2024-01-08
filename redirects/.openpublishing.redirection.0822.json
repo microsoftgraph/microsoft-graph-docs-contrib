@@ -1,0 +1,9 @@
+{
+  "redirections": [
+    {
+      "source_path_from_root": "/api-reference/beta/resources/userpurpose.md",
+      "redirect_url": "/graph/api/resources/mailboxsettings?view=graph-rest-beta#userpurpose-values",
+      "redirect_document_id": false
+    }
+  ]
+}

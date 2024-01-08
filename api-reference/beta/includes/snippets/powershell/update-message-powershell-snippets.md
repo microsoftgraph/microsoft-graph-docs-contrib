@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Mail
+Import-Module Microsoft.Graph.Beta.Mail
 
 $params = @{
-	Subject = "subject-value"
-	Body = @{
-		ContentType = ""
-		Content = "content-value"
+	subject = "subject-value"
+	body = @{
+		contentType = ""
+		content = "content-value"
 	}
-	InferenceClassification = "other"
+	inferenceClassification = "other"
 }
 
 # A UPN can also be used as -UserId.
-Update-MgUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
+Update-MgBetaUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
 
 ```

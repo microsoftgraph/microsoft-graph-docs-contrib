@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains the accidental deletion prevention configuration for a tenant. This configuration is geared at administrators who accidentally make an on-premises Active Directory change which results in deleting a large number of items on Azure Active Directory.
+Contains the accidental deletion prevention configuration for a tenant. This configuration is geared at administrators who accidentally make an on-premises Active Directory change which results in deleting a large number of items on Microsoft Entra ID.
 
 ## Properties
 
 | Property                      | Type                                                     | Description                                                                                                                                             |
 | :---------------------------- | :------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | alertThreshold                | Int32                                                    | Threshold value which triggers accidental deletion prevention. The threshold is either an absolute number of objects or a percentage number of objects. |
-| synchronizationPreventionType | onPremisesDirectorySynchronizationDeletionPreventionType | The status of the accidental deletion prevention feature. The possible values are: `disabled`, `enabledForCount`, `enabledForPercentage`.               |
+| synchronizationPreventionType | onPremisesDirectorySynchronizationDeletionPreventionType | The status of the accidental deletion prevention feature. The possible values are: `disabled`, `enabledForCount`, `enabledForPercentage`, `unknownFutureValue`.               |
 
 ## Relationships
 
@@ -41,4 +41,3 @@ The following is a JSON representation of the resource.
   "alertThreshold": "Integer"
 }
 ```
-

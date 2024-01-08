@@ -4,23 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var meetingRegistrationQuestion = new MeetingRegistrationQuestion
+// Dependencies
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new MeetingRegistrationQuestion
 {
 	AnswerInputType = AnswerInputType.RadioButton,
-	AnswerOptions = new List<String>()
+	AnswerOptions = new List<string>
 	{
 		"Software Engineer",
 		"Software Development Manager",
 		"Product Manager",
 		"Data scientist",
-		"Other"
-	}
+		"Other",
+	},
 };
 
-await graphClient.Me.OnlineMeetings["{onlineMeeting-id}"].Registration.CustomQuestions["{meetingRegistrationQuestion-id}"]
-	.Request()
-	.UpdateAsync(meetingRegistrationQuestion);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Me.OnlineMeetings["{onlineMeeting-id}"].Registration.CustomQuestions["{meetingRegistrationQuestion-id}"].PatchAsync(requestBody);
+
 
 ```

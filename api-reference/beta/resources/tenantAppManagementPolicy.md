@@ -4,7 +4,7 @@ description: "Application auth method tenant default policy enforces app managem
 author: "madansr7"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
-doc_type: "apiPageType"
+doc_type: resourcePageType
 ---
 
 # tenantAppManagementPolicy resource type

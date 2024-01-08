@@ -4,29 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var retentionLabel = new Microsoft.Graph.Security.RetentionLabel
+// Dependencies
+using Microsoft.Graph.Beta.Models.Security;
+
+var requestBody = new RetentionLabel
 {
-	DisplayName = "String",
-	BehaviorDuringRetentionPeriod = Microsoft.Graph.Security.BehaviorDuringRetentionPeriod.DoNotRetain,
-	ActionAfterRetentionPeriod = Microsoft.Graph.Security.ActionAfterRetentionPeriod.None,
-	RetentionTrigger = Microsoft.Graph.Security.RetentionTrigger.DateLabeled,
+	OdataType = "#microsoft.graph.security.retentionLabel",
 	RetentionDuration = new RetentionDuration
 	{
+		OdataType = "microsoft.graph.security.retentionDuration",
 	},
-	IsInUse = false,
 	DescriptionForAdmins = "String",
 	DescriptionForUsers = "String",
-	CreatedBy = new IdentitySet
-	{
-	},
 	LabelToBeApplied = "String",
-	DefaultRecordBehavior = Microsoft.Graph.Security.DefaultRecordBehavior.StartLocked
+	DefaultRecordBehavior = DefaultRecordBehavior.StartLocked,
 };
 
-await graphClient.Security.Labels.RetentionLabels["{security.retentionLabel-id}"]
-	.Request()
-	.UpdateAsync(retentionLabel);
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Security.Labels.RetentionLabels["{retentionLabel-id}"].PatchAsync(requestBody);
+
 
 ```

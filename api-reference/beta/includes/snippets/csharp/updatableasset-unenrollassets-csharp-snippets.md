@@ -4,21 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var updateCategory = Microsoft.Graph.WindowsUpdates.UpdateCategory.Feature;
+// Dependencies
+using Microsoft.Graph.Beta.Admin.Windows.Updates.UpdatableAssets.MicrosoftGraphWindowsUpdatesUnenrollAssets;
+using Microsoft.Graph.Beta.Models.WindowsUpdates;
 
-var assets = new List<Microsoft.Graph.WindowsUpdates.UpdatableAsset>()
+var requestBody = new UnenrollAssetsPostRequestBody
 {
-	new Microsoft.Graph.WindowsUpdates.AzureADDevice
+	UpdateCategory = UpdateCategory.Feature,
+	Assets = new List<UpdatableAsset>
 	{
-		Id = "String (identifier)"
-	}
+		new AzureADDevice
+		{
+			OdataType = "#microsoft.graph.windowsUpdates.azureADDevice",
+			Id = "String (identifier)",
+		},
+	},
 };
 
-await graphClient.Admin.Windows.Updates.UpdatableAssets
-	.UnenrollAssets(updateCategory,assets)
-	.Request()
-	.PostAsync();
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+await graphClient.Admin.Windows.Updates.UpdatableAssets.MicrosoftGraphWindowsUpdatesUnenrollAssets.PostAsync(requestBody);
+
 
 ```
