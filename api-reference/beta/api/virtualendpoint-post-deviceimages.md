@@ -51,7 +51,7 @@ The following table lists the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The display name of this image.|
-|sourceImageResourceId|String|The ID of the source image resource on Azure. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
+|sourceImageResourceId|String|The ID of the source image resource on Azure. The required ID format is: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
 |operatingSystem|String|The operating system of this image. For example, `Windows 10 Enterprise`.|
 |osBuildNumber|String|The OS build version of this image. For example, `1909`.|
 |version|String|The image version. For example, `0.0.1` and `1.5.13`.|
@@ -64,6 +64,7 @@ If successful, this method returns a `201 Created` response code and a [cloudPcD
 
 ### Request
 
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -122,7 +123,9 @@ Content-Type: application/json
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
