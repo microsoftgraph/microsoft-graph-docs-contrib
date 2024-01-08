@@ -32,78 +32,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 GET /users/{id | user-principal-name}/chats/getAllMessages
 ```
-
-Get messages sent by **application type**
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{id}/chats/getAllMessages?$filter=from/application/applicationIdentityType eq '{appType}' 
-```
-
-Get messages sent by **user id**
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{id}/chats/getAllMessages?$filter=from/user/id eq '{oid}'
-```
-
-Get messages sent by **anonymous guest users**
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{id}/chats/getAllMessages?$filter=from/user/userIdentityType eq 'anonymousGuest'  
-```
-
-Get messages sent by **external/federated users**
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{id}/chats/getAllMessages?$filter=from/user/userIdentityType eq 'federatedUser'
-```
-
-Get **control(system event)** messages
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{id}/chats/getAllMessages?$filter=messageType eq 'systemEventMessage'
-```
-
-Get messages sent by **application type** or **user id**
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{id}/chats/getAllMessages?$filter=from/application/applicationIdentityType eq '{appType}' or from/user/id eq '{oid}'
-```
-
-Get messages sent by **application type** or **anonymous guest users**
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{id}/chats/getAllMessages?$filter=from/application/applicationIdentityType eq '{appType}' or from/user/userIdentityType eq 'anonymousGuest' 
-```
-
-Get messages sent by **application type** or **external/federated users**
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{id}/chats/getAllMessages?$filter=from/application/applicationIdentityType eq '{appType}' or from/user/userIdentityType eq 'federatedUser'
-```
-
-Get messages sent by **application type**, **anonymous guest users** or **external/federated users**
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{id}/chats/getAllMessages?$filter=from/application/applicationIdentityType eq '{appType}' or from/user/userIdentityType eq 'anonymousGuest' or from/user/userIdentityType eq 'federatedUser'
-```
-
-Get messages sent by **user id** or **anonymous guest users**
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{id}/chats/getAllMessages?$filter=from/user/id eq '{oid}' or from/user/userIdentityType eq 'anonymousGuest'
-```
-
-Get messages sent by **user id** or **external/federated users**
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{id}/chats/getAllMessages?$filter=from/user/id eq '{oid}' or from/user/userIdentityType eq 'federatedUser'
-```
-
-Get messages sent by **application type**, **user id**, **anonymous guest users** or **external/federated users**
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{id}/chats/getAllMessages?$filter=from/application/applicationIdentityType eq '{appType}' or from/user/id eq '{oid}' or from/user/userIdentityType eq 'anonymousGuest' or from/user/userIdentityType eq 'federatedUser'
-```
 </br>
 
 ## Optional query parameters
@@ -120,6 +48,17 @@ GET /users/{id | user-principal-name}/chats/getAllMessages?model=A
 GET /users/{id | user-principal-name}/chats/getAllMessages?model=B
 ```
 >**Note:** If you don't specify a payment model in your query, the default [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
+
+This method supports different filtering scenarios:
+
+|Scenario                                  | Filter parameter                                                                       |Possible values                                                                                             |
+|:-----------------------------------------|:---------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
+|Get messages sent by user identity type   |$filter=from/user/userIdentityType eq '{teamworkUserIdentityType}'                      |aadUser, onPremiseAadUser, anonymousGuest, federatedUser, personalMicrosoftAccountUser, skypeUser, phoneUser|
+|Get messages sent by application type     |$filter=from/application/applicationIdentityType eq '{teamworkApplicationIdentity}'     |aadApplication, bot, tenantBot, office365Connector, outgoingWebhook                                         |
+|Get messages sent by user id              |$filter=from/user/id eq '{oid}'                                                         ||
+|Get control(system event) messages        |$filter=messageType eq 'systemEventMessage'                                             ||
+|Exclude control (system event) messages   |$filter=messageType ne 'systemEventMessage'                                             ||
+>**Note:** These filter clauses can be joined using the `or` operator as well as been defined multiple times with different values.
 
 ## Request headers
 | Header       | Value |
