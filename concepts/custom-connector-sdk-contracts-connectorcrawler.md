@@ -224,13 +224,6 @@ Enumeration members of content type.
 |None |0 |Default value |
 |Text |1 |Text content type |
 |Html |2 |Html content type |
-|Binary |3 |Binary content type |
-|Bmp |4 |Bmp content type |
-|Jpg |5 |Jpg content type |
-|Pdf |6 |Pdf content type |
-|Png |7 |Png content type |
-|Tif |8 |Tif content type |
-|UnknownFutureValue |9 |For future-proofing, following Microsoft Graph enumerations. All new enumerations will be added below until a major API version change. |
 
 #### Content
 
