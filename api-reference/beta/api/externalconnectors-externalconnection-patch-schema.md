@@ -54,11 +54,9 @@ If successful, this method returns a `202 Accepted` response code and a URL in t
 
 ## Examples
 
-### Example: Register custom schema asynchronously
+### Request
 
-#### Request
-
-The following example shows a request.
+The following example shows a request to register a custom schema asynchronously.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -134,7 +132,7 @@ Content-type: application/json
 ---
 
 <!-- markdownlint-disable MD024 -->
-#### Response
+### Response
 <!-- markdownlint-enable MD024 -->
 
 The following example shows the response.
