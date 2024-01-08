@@ -1,6 +1,6 @@
 ---
 title: "blockFileResponseAction resource type"
-description: "Describes a response action that blocks a file from running."
+description: "Describes a response action to block a file."
 author: "mmekler"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes a response action that blocks a file from running.
+Describes a response action to block a file.
 This response action blocks the file from running on devices controlled by Microsoft Defender for Endpoint.
 
 Inherits from [microsoft.graph.security.responseAction](../resources/security-responseaction.md).

@@ -1,6 +1,6 @@
 ---
 title: "impactedUserAsset resource type"
-description: "Describes a user type asset that was impacted by an event that was detected by a custom detection rule."
+description: "Describes an impacted user asset based on the alert triggered by a custom detection rule."
 author: "mmekler"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes an asset of a user type that was impacted based on the alert triggered by a [custom detection rule](../resources/security-detectionrule.md).
+Describes an impacted user asset based on the alert triggered by a [custom detection rule](../resources/security-detectionrule.md).
 
 Inherits from [microsoft.graph.security.impactedAsset](../resources/security-impactedasset.md).
 

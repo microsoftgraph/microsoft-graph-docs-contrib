@@ -1,6 +1,6 @@
 ---
 title: "markUserAsCompromisedResponseAction resource type"
-description: "Describes a response action that sets the users risk level to 'high' in Azure Active Directory."
+description: "Describes a response action that sets the user's risk level to 'high' in Azure Active Directory."
 author: "mmekler"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes a response action that sets the users risk level to "high" in Microsoft Entra ID.
+Describes a response action that sets the user's risk level to "high" in Microsoft Entra ID.
 This response action sets the user's risk level to `high` in Microsoft Entra ID, which triggers the identity protection policies for a `high` risk level.
 
 Inherits from [microsoft.graph.security.responseAction](../resources/security-responseaction.md).
