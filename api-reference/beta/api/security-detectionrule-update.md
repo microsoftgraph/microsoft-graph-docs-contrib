@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [Custom Detection Rule](../resources/security-detectionrule.md).
+Update the properties of a [custom detection rule](../resources/security-detectionrule.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

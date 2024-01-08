@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
- Describes how often the [Custom Detection Rule](../resources/security-detectionrule.md) runs, and when it next runs.
+ Describes how often the [custom detection rule](../resources/security-detectionrule.md) runs, and when it next runs.
 
 ## Properties
 | Property        | Type           | Description                                                                                                                                       |

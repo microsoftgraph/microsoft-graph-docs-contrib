@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [Custom Detection Rules](../resources/security-detectionrule.md).
+Get a list of [custom detection rules](../resources/security-detectionrule.md).
 With custom detections, you can proactively monitor for and respond to various events and system states, including suspected breach activity and misconfigured assets in their organization network.
 Custom detection rules, which are written in [Kusto query language (KQL)](/azure/data-explorer/kusto/query/), automatically trigger [alerts](../resources/security-alert.md) and response actions once there are events matching their KQL queries.
 

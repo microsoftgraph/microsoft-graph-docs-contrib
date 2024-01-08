@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes an asset of a mailbox type that was impacted based on the alert triggered by a [Custom Detection Rule](../resources/security-detectionrule.md).
+Describes an asset of a mailbox type that was impacted based on the alert triggered by a [custom detection rule](../resources/security-detectionrule.md).
 
 Inherits from [microsoft.graph.security.impactedAsset](../resources/security-impactedasset.md).
 

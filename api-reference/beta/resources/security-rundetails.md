@@ -1,6 +1,6 @@
 ---
 title: "runDetails resource type"
-description: "Describes a run of a custom detection rule."
+description: "Describes an instance of a custom detection rule run."
 author: "mmekler"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes a run of a [Custom Detection Rule](../resources/security-detectionrule.md).
+Describes an instance of a [custom detection rule](../resources/security-detectionrule.md) run.
 
 ## Properties
 | Property        | Type                                                                                                        | Description                                                                                                                                                                                                                                                                                          |

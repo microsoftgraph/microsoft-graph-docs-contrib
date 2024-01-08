@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the alert that is generated in response to a detection by a [Custom Detection Rule](../resources/security-detectionrule.md).
+Describes the alert that is generated in response to a detection by a [custom detection rule](../resources/security-detectionrule.md).
 
 ## Properties
 

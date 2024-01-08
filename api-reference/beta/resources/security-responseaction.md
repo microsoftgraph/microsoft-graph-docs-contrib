@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes an action taken on [impacted assets](../resources/security-impactedasset.md) as set in a [Custom Detection Rule](../resources/security-detectionrule.md). [More about response actions](/microsoft-365/security/defender/custom-detection-rules#4-specify-actions)
+Describes an action taken on [impacted assets](../resources/security-impactedasset.md) as set in a [custom detection rule](../resources/security-detectionrule.md). [More about response actions](/microsoft-365/security/defender/custom-detection-rules#4-specify-actions)
 
 This type is abstract and has multiple response action types that are derived from it:
 

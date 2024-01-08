@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the actions that will be taken after a detection is made by a [Custom Detection Rule](../resources/security-detectionrule.md).
+Describes the actions that will be taken after a detection is made by a [custom detection rule](../resources/security-detectionrule.md).
 
 ## Properties
 | Property            | Type                                                                                          | Description                                                           |

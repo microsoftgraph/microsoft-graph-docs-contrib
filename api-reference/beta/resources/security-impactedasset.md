@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes an asset that was impacted based on the alert triggered by a [Custom Detection Rule](../resources/security-detectionrule.md).
+Describes an asset that was impacted based on the alert triggered by a [custom detection rule](../resources/security-detectionrule.md).
 This type is abstract, and serves as the base type for the following asset types.
 
 * [User](../resources/security-impacteduserasset.md)
