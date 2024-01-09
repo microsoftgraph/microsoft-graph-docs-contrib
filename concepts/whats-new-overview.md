@@ -26,6 +26,10 @@ The [virtualEndpoint](/graph/api/resources/virtualendpoint) resource is generall
 
 [Get the remote action status reports](/graph/api/cloudpcreports-getactionstatusreports?view=graph-rest-beta&preserve-view=true), including data such as the Cloud PC ID, Cloud PC device display name, action taken, and action state.
 
+### Identity and access | Directory management
+
+Updated the descriptions of the **model** and **manufacturer** properties in the [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true) resource to clarify their read-only status, replacing the outdated descriptions related to Project Rome sign-ins.
+
 ## December 2023: New and generally available
 
 ### Identity and access | Directory management
