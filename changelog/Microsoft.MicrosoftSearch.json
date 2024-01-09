@@ -795,7 +795,7 @@
           "ChangeType": "Addition",
           "Description": "Added the **qna** member to the **entityType** enumeration.",
           "Target": "entityType"
-        },
+        }
       ],
       "Id": "65c699bb-49cf-4a9d-bee0-7e2950d966a4",
       "Cloud": "Prod",
