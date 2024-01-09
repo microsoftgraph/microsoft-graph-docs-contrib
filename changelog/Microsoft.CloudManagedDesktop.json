@@ -99,6 +99,32 @@
         {
             "ChangeList": [
                 {
+                    "Id": "aacbebc4-62eb-4fde-a030-381e3359a7ad",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcScopedPermission",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcScopedPermission](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcScopedPermission?view=graph-rest-beta) resource type.",
+                    "Target": "cloudPcScopedPermission"
+                },
+                {
+                    "Id": "aacbebc4-62eb-4fde-a030-381e3359a7ad",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "retrieveScopedPermissions",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [retrieveScopedPermissions](https://learn.microsoft.com/en-us/graph/api/virtualendpoint-retrievescopedpermissions?view=graph-rest-beta) method to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-beta) resource.",
+                    "Target": "virtualEndpoint"
+                }
+            ],
+            "Id": "aacbebc4-62eb-4fde-a030-381e3359a7ad",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2024-01-08T06:58:17.7596296Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "12f93700-b666-4c5c-b569-7db20691c5b3",
                     "ApiChange": "Member",
                     "ChangedApiName": "rawRemoteConnectionReports",

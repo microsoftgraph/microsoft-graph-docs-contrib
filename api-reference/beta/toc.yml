@@ -2051,6 +2051,8 @@ items:
                 items:
                   - name: Get effective permissions
                     href: api/virtualendpoint-geteffectivepermissions.md
+                  - name: Retrieve scoped permissions
+                    href: api/virtualendpoint-retrievescopedpermissions.md
               - name: Cloud PC
                 items:
                   - name: Cloud PC
