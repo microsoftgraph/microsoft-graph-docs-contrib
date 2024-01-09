@@ -17,13 +17,14 @@ Delete a [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|PendingExternalUserProfile.ReadWrite.All|
-|Delegated (personal Microsoft account)| Not supported.|
-|Application|PendingExternalUserProfile.ReadWrite.All|
+<!-- {
+  "blockType": "permissions",
+  "name": "directory-delete-pendingexternaluserprofiles-permissions"
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/directory-delete-pendingexternaluserprofiles-permissions.md)]
 
 The work or school account needs to belong to one of the following roles:
 
@@ -55,7 +56,7 @@ If successful, this method returns `204 No Content` response code.
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -69,7 +70,7 @@ DELETE https://graph.microsoft.com/beta/directory/pendingExternalUserProfiles/{i
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 **Note:** To permanently delete the pendingExternalUserProfile, follow [permanently delete an item](directory-deleteditems-delete.md). To restore a pendingExternalUserProfile, follow [restore a deleted item](directory-deleteditems-restore.md).
 
