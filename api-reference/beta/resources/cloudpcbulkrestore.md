@@ -27,14 +27,14 @@ Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 |createdDateTime|DateTimeOffset|Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
 |displayName|String|Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
 |id|String|Inherited from [entity](../resources/entity.md).|
-|restorePointDateTime|DateTimeOffset|The UTC point for the selected Cloud PCs to restore. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, would look like this: '2014-01-01T00:00:00Z'.|
+|restorePointDateTime|DateTimeOffset|The UTC point for the selected Cloud PCs to restore. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, would look like this: '2014-01-01T00:00:00Z'.|
 |timeRange|restoreTimeRange|The time range of the restore point. The possible values are: `before`, `after`, or `beforeOrAfter`. The default value is `before`.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following content is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
