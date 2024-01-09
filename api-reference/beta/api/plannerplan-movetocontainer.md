@@ -16,18 +16,15 @@ Namespace: microsoft.graph
 Move a [planner plan](../resources/plannerplan.md) object from one [planner plan container](../resources/plannerplancontainer.md) to another. Planner plans can only be moved from a user container to a group container.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Tasks.Read, Tasks.ReadWrite    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Tasks.Read.All, Tasks.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "plannerplan_movetocontainer" } -->
+[!INCLUDE [permissions-table](../includes/permissions/plannerplan-movetocontainer-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/beta/planner/plans/planId/moveToContainer
+POST /planner/plans/{planId}/moveToContainer
 ```
 
 ## Request headers
@@ -54,7 +51,7 @@ The following example shows a request to move a plan from a user container to a 
   "name": "plannerplan_move_to_container_"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/planner/plans/planId/moveToContainer
+POST https://graph.microsoft.com/beta/planner/plans/{planId}/moveToContainer
 Content-type: application/json
 If-Match: "string"
 
