@@ -25,7 +25,6 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |[Create auditLogQuery](../api/security-auditcoreroot-post-auditlogqueries.md)|[microsoft.graph.security.auditLogQuery](../resources/security-auditlogquery.md)|Create a new [microsoft.graph.security.auditLogQuery](../resources/security-auditlogquery.md) object.|
 |[Get auditLogQuery](../api/security-auditlogquery-get.md)|[microsoft.graph.security.auditLogQuery](../resources/security-auditlogquery.md)|Read the properties and relationships of a [microsoft.graph.security.auditLogQuery](../resources/security-auditlogquery.md) object.|
 |[List records](../api/security-auditlogquery-list-records.md)|[microsoft.graph.security.auditLogRecord](../resources/security-auditlogrecord.md) collection|Get the auditLogRecord resources from the records navigation property.|
-|[Create auditLogRecord](../api/security-auditlogquery-post-records.md)|[microsoft.graph.security.auditLogRecord](../resources/security-auditlogrecord.md)|Create a new auditLogRecord object.|
 
 ## Properties
 |Property|Type|Description|
