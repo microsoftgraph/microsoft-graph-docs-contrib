@@ -22,7 +22,7 @@
       "Id": "46c87d5f-963e-4d74-80c1-b2be283b84cb",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2023-09-01T00:00:00",
+      "CreatedDateTime": "2024-01-08T00:00:00",
       "WorkloadArea": "Change notifications",
       "SubArea": ""
     },
@@ -48,7 +48,7 @@
       "Id": "e5c4873b-bb4c-45a7-8949-56e634bfb543",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2023-09-01T00:00:00",
+      "CreatedDateTime": "2024-01-08T00:00:00",
       "WorkloadArea": "Change notifications",
       "SubArea": ""
     },
