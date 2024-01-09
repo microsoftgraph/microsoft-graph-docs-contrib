@@ -27,13 +27,13 @@ Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 |createdDateTime|DateTimeOffset|Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
 |displayName|String|Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
 |id|String|Inherited from [entity](../resources/entity.md).|
-|targetServicePlanId|String|The target service plan id of the resize configuration with new vCPU and storage size.|
+|targetServicePlanId|String|The target service plan ID of the resize configuration with new vCPU and storage size.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
