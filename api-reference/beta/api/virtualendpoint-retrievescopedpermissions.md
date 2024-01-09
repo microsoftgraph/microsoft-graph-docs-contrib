@@ -58,12 +58,12 @@ This method supports the $filter OData query parameter to customize the response
 
 ## Examples
 
-### Example 1:
-The request without the $filter query to get the whole permissions and scope IDs of the authenticated user. 
+### Example 1: Get all the permissions and scope IDs of the authenticated user
+The following example shows a request without the `$filter` query to get the permissions and scope IDs of the authenticated user. 
 
 #### Request
 
-The following example shows a request.
+The following example shows the request.
 
 <!-- {
   "blockType": "request",
@@ -115,8 +115,9 @@ Content-Type: application/json
 }
 ```
 
-### Example 2:
-The request with the specific $filter query to get a list of permissions and scope IDs of the authenticated user. 
+### Example 2: Get a filtered list of permissions and scope IDs of the authenticated user
+The following example shows a request with the specific `$filter` query to get a list of permissions and scope IDs of the authenticated user. 
+
 #### Request
 
 The following example shows a request with a filter.
@@ -133,7 +134,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/retrieveSc
 
 #### Response
 
-The following example shows a response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -163,11 +164,11 @@ Content-Type: application/json
 }
 ```
 
-### Example 3:
+### Example 3: No scope IDs are returned
 
 #### Request
 
-When the logged-in user has the Microsoft Entra Global admin role, the Windows 365 admin role, or the Intune admin role assigned by Microsoft Entra ID, the returned permission is *\**, and no scope IDs are returned. In these cases, queries aren't supported.
+When the signed-in user has the Microsoft Entra Global admin role, the Windows 365 admin role, or the Intune admin role assigned by Microsoft Entra ID, the returned permission is *\**, and no scope IDs are returned. In these cases, queries aren't supported.
 
 <!-- {
   "blockType": "request",
@@ -181,7 +182,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/retrieveSc
 
 #### Response
 
-The following example shows a response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
