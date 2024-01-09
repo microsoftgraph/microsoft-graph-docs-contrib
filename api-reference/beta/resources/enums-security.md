@@ -7,6 +7,10 @@ ms.prod: "security"
 author: "BenAlfasi"
 ---
 
+Namespace: microsoft.graph.security
+
+# Security enum values
+
 ### auditLogQueryStatus values 
 
 
