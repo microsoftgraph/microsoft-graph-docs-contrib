@@ -12017,14 +12017,6 @@ items:
               - name: Organization settings
                 href: resources/organizationSettings.md
                 items:
-                  - name: App settings for Microsoft 365 data (preview)
-                    items:
-                      - name: App data access settings
-                        href: resources/microsoftapplicationdataaccesssettings.md
-                      - name: List
-                        href: api/organizationsettings-list-microsoftapplicationdataaccess.md
-                      - name: Update
-                        href: api/microsoftapplicationdataaccesssettings-update.md
                   - name: Org control for contact insights (preview)
                     items:
                       - name: Insights settings
