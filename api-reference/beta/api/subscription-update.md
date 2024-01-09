@@ -99,7 +99,7 @@ For details about presence and online meeting subscriptions, see [Get change not
 
 ### virtualEventWebinar
 
-Subscriptions on virtual events support only basic notifications and are limited to a few entities of a virtual event. For more information on the supported subscription types, see [Get change notifications for Microsoft Teams virtual event updates](/graph/changenotifications-for-virtualevent).
+Subscriptions on virtual events support only basic notifications and are limited to a few entities of a virtual event. For more information about the supported subscription types, see [Get change notifications for Microsoft Teams virtual event updates](/graph/changenotifications-for-virtualevent).
 
 ## HTTP request
 
