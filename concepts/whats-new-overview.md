@@ -20,6 +20,12 @@ In addition, find out about new documentation and learning resources for release
 
 The [virtualEndpoint](/graph/api/resources/virtualendpoint) resource is generally available, laying the foundation for future Cloud PC updates to the `v1.0` path.
 
+## January 2024: New in preview only
+
+### Device and app management | Cloud PC
+
+[Get the remote action status reports](/graph/api/cloudpcreports-getactionstatusreports?view=graph-rest-beta&preserve-view=true), including data such as the Cloud PC ID, Cloud PC device display name, action taken, and action state.
+
 ## December 2023: New and generally available
 
 ### Identity and access | Directory management

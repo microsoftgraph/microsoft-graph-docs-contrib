@@ -2215,6 +2215,8 @@ items:
                 items:
                   - name: Cloud PC reports
                     href: resources/cloudpcreports.md
+                  - name: Get remote action status reports
+                    href: api/cloudpcreports-getactionstatusreports.md
                   - name: Get raw remote connection reports
                     href: api/cloudpcreports-getrawremoteconnectionreports.md
                   - name: Get connection quality reports
