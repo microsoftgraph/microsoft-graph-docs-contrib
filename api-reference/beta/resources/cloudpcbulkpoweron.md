@@ -1,6 +1,6 @@
 ---
 title: "cloudPcBulkPowerOn resource type"
-description: "Defines the entity for performing bulk power on the action with executeAction API. Only Cloud PC IDs are the input parameter for bulk power on the action."
+description: "Defines the entity for performing a bulk power-on action with the executeAction API. Only Cloud PC IDs are the input parameter for bulk power on action."
 author: "Guoan-Tang"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -32,7 +32,7 @@ Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource typ.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
