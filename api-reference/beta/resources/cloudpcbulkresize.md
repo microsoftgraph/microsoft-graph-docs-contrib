@@ -1,6 +1,6 @@
 ---
 title: "cloudPcBulkResize resource type"
-description: "Represents the entity that performs a bulk resize action with executeAction API."
+description: "Represents the entity that performs a bulk resize action with the executeAction API."
 author: "Guoan-Tang"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
