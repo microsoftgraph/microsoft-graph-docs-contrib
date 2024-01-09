@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents an audit log record containing both common audit properties and auditData specific to the Microsoft 365 service.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
