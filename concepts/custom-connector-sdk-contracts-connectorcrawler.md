@@ -219,11 +219,11 @@ Map of the source property key and its value in the data source. It stores the p
 
 Enumeration members of content type.
 
-| Member | Value | Description       |
-|:-------|:------|:------------------|
-| None   | 0     | Default value     |
-| Text   | 1     | Text content type |
-| Html   | 2     | HTML content type |
+| Member | Value | Description        |
+|:-------|:------|:-------------------|
+| None   | 0     | Default value.     |
+| Text   | 1     | Text content type. |
+| Html   | 2     | HTML content type. |
 
 #### Content
 
