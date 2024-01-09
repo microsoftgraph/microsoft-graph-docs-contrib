@@ -181,7 +181,7 @@ items:
             href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
           - name: App-only authentication
             href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
-      - name: Use the CLI (preview)
+      - name: Use the CLI
         items:
           - name: CLI overview
             href: /graph/cli/overview?context=graph/api/beta
@@ -2071,6 +2071,8 @@ items:
                 items:
                   - name: Get effective permissions
                     href: api/virtualendpoint-geteffectivepermissions.md
+                  - name: Retrieve scoped permissions
+                    href: api/virtualendpoint-retrievescopedpermissions.md
               - name: Cloud PC
                 items:
                   - name: Cloud PC
@@ -2235,6 +2237,8 @@ items:
                 items:
                   - name: Cloud PC reports
                     href: resources/cloudpcreports.md
+                  - name: Get remote action status reports
+                    href: api/cloudpcreports-getactionstatusreports.md
                   - name: Get raw remote connection reports
                     href: api/cloudpcreports-getrawremoteconnectionreports.md
                   - name: Get connection quality reports

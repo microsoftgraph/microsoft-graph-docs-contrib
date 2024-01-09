@@ -20,6 +20,12 @@ In addition, find out about new documentation and learning resources for release
 
 The [virtualEndpoint](/graph/api/resources/virtualendpoint) resource is generally available, laying the foundation for future Cloud PC updates to the `v1.0` path.
 
+## January 2024: New in preview only
+
+### Device and app management | Cloud PC
+
+[Get the remote action status reports](/graph/api/cloudpcreports-getactionstatusreports?view=graph-rest-beta&preserve-view=true), including data such as the Cloud PC ID, Cloud PC device display name, action taken, and action state.
+
 ## December 2023: New and generally available
 
 ### Identity and access | Directory management
@@ -35,6 +41,9 @@ _See the [related changelog section](https://developer.microsoft.com/en-us/graph
 ### Teams
 
 Pricing update for the Teams meeting APIs starting January 1, 2024. For more information, see [Payment models and licensing requirements for Microsoft Teams APIs](/graph/teams-licenses#payment-requirements-for-meeting-apis).
+
+### Teamwork and communications | Calls and online meetings
+Manage change notifications for virtual events using the [Create](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0&preserve-view=true), [Get](/graph/api/subscription-get?view=graph-rest-1.0&preserve-view=true), [Update](/graph/api/subscription-update?view=graph-rest-1.0&preserve-view=true), and [Delete](/graph/api/subscription-delete?view=graph-rest-1.0&preserve-view=true) operations of the [subscription](/graph/api/resources/subscription?view=graph-rest-1.0&preserve-view=true) resource.
 
 ## December 2023: New in preview only
 
@@ -57,6 +66,9 @@ _See the [related changelog section](https://developer.microsoft.com/en-us/graph
   _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=4badb014-c277-4c08-b593-8ed808b11baa)_.
 
 - We have refined how you can programmatically define the [tenant-wide policy for registering new devices](/graph/api/resources/deviceregistrationpolicy?view=graph-rest-beta&preserve-view=true) using Microsoft Entra join and Microsoft Entra register within your organization. This update introduces breaking changes that require you to update your app logic to ensure continued functionality. _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=6bd09a97-53a9-401e-b0c5-266b9db06a1b)_.
+
+### Teamwork and communications | Calls and online meetings
+Manage change notifications for virtual events using the [Create](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&preserve-view=true), [Get](/graph/api/subscription-get?view=graph-rest-beta&preserve-view=true), [Update](/graph/api/subscription-update?view=graph-rest-beta&preserve-view=true), and [Delete](/graph/api/subscription-delete?view=graph-rest-beta&preserve-view=true) operations of the [subscription](/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true) resource.
 
 ### Teamwork and communications | Shift management
 
