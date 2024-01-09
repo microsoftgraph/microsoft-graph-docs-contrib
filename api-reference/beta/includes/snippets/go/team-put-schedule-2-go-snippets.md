@@ -32,6 +32,10 @@ offerShiftRequestsEnabled := true
 requestBody.SetOfferShiftRequestsEnabled(&offerShiftRequestsEnabled) 
 timeOffRequestsEnabled := true
 requestBody.SetTimeOffRequestsEnabled(&timeOffRequestsEnabled) 
+startDayOfWeek := graphmodels.TUESDAY_DAYOFWEEK 
+requestBody.SetStartDayOfWeek(&startDayOfWeek) 
+activitiesIncludedWhenCopyingShiftsEnabled := true
+requestBody.SetActivitiesIncludedWhenCopyingShiftsEnabled(&activitiesIncludedWhenCopyingShiftsEnabled) 
 timeClockEnabled := true
 requestBody.SetTimeClockEnabled(&timeClockEnabled) 
 timeClockSettings := graphmodels.NewTimeClockSettings()
@@ -44,12 +48,6 @@ longitude := float64(24.34616)
 approvedLocation.SetLongitude(&longitude) 
 timeClockSettings.SetApprovedLocation(approvedLocation)
 requestBody.SetTimeClockSettings(timeClockSettings)
-additionalData := map[string]interface{}{
-	"startDayOfWeek" : "Tuesday", 
-	activitiesIncludedWhenCopyingShiftsEnabled := true
-requestBody.SetActivitiesIncludedWhenCopyingShiftsEnabled(&activitiesIncludedWhenCopyingShiftsEnabled) 
-}
-requestBody.SetAdditionalData(additionalData)
 
 schedule, err := graphClient.Teams().ByTeamId("team-id").Schedule().Put(context.Background(), requestBody, nil)
 
