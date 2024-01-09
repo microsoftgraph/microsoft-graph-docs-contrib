@@ -1,7 +1,7 @@
 ---
-title: "Enum values"
-description: "Microsoft Graph enumeration values"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+title: "Security enum values"
+description: "Microsoft Graph security subnamespace enumeration values"
+doc_type: enumPageType"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 doc_type: enumTypes
