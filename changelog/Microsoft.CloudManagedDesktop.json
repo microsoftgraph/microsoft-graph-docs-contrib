@@ -3853,6 +3853,72 @@
         "CreatedDateTime": "2023-10-09T11:36:16.0017333Z",
         "WorkloadArea": "Device and app management",
         "SubArea": "Cloud PC"
+      },
+      {
+        "ChangeList": [
+            {
+                "Id": "985cc036-9a25-4cbe-8a52-a1225fa9ec79",
+                "ApiChange": "Relationship",
+                "ChangedApiName": "onPremisesConnections",
+                "ChangeType": "Addition",
+                "Description": "Added the **onPremisesConnections** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-1.0) resource.",
+                "Target": "virtualEndpoint"
+            },
+            {
+                "Id": "985cc036-9a25-4cbe-8a52-a1225fa9ec79",
+                "ApiChange": "Method",
+                "ChangedApiName": "onPremisesConnections",
+                "ChangeType": "Addition",
+                "Description": "Added the [List](https://learn.microsoft.com/en-us/graph/api/virtualendpoint-list-onpremisesconnections?view=graph-rest-v1.0) method to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-beta) resource.",
+                "Target": "virtualEndpoint"
+            },
+            {
+                "Id": "985cc036-9a25-4cbe-8a52-a1225fa9ec79",
+                "ApiChange": "Method",
+                "ChangedApiName": "onPremisesConnections",
+                "ChangeType": "Addition",
+                "Description": "Added the [Create](https://learn.microsoft.com/en-us/graph/api/virtualendpoint-post-onpremisesconnections?view=graph-rest-v1.0) method to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-beta) resource.",
+                "Target": "virtualEndpoint"
+            },
+            {
+            "Id": "985cc036-9a25-4cbe-8a52-a1225fa9ec79",
+            "ApiChange": "Resource",
+            "ChangedApiName": "cloudPcOnPremisesConnection",
+            "ChangeType": "Addition",
+            "Description": "Added the [cloudPcOnPremisesConnection](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcOnPremisesConnection?view=graph-rest-1.0) resource type.",
+            "Target": "cloudPcOnPremisesConnection"
+            },
+            {
+            "Id": "985cc036-9a25-4cbe-8a52-a1225fa9ec79",
+            "ApiChange": "Resource",
+            "ChangedApiName": "cloudPcOnPremisesConnectionStatusDetail",
+            "ChangeType": "Addition",
+            "Description": "Added the [cloudPcOnPremisesConnectionStatusDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcOnPremisesConnectionStatusDetail?view=graph-rest-1.0) resource type.",
+            "Target": "cloudPcOnPremisesConnectionStatusDetail"
+            },
+            {
+            "Id": "4e8d5c34-8a3e-46b5-a83f-3bd0eb7c2db3",
+            "ApiChange": "Resource",
+            "ChangedApiName": "cloudPcOnPremisesConnectionHealthCheck",
+            "ChangeType": "Addition",
+            "Description": "Added the [cloudPcOnPremisesConnectionHealthCheck](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcOnPremisesConnectionHealthCheck?view=graph-rest-1.0) resource type.",
+            "Target": "cloudPcOnPremisesConnectionHealthCheck"
+            },
+            {
+                "Id": "4e8d5c34-8a3e-46b5-a83f-3bd0eb7c2db3",
+                "ApiChange": "Method",
+                "ChangedApiName": "runHealthChecks",
+                "ChangeType": "Addition",
+                "Description": "Added the [runHealthChecks](https://learn.microsoft.com/en-us/graph/api/cloudpconpremisesconnection-runhealthcheck?view=graph-rest-beta) method to the [cloudPcOnPremisesConnection](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta) resource.",
+                "Target": "cloudPcOnPremisesConnection"
+            }
+        ],
+            "Id": "985cc036-9a25-4cbe-8a52-a1225fa9ec79",
+            "Cloud": "Prod",
+            "Version": "v1.0",
+            "CreatedDateTime": "2024-01-09T09:24:41.3424906Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
       }
     ]
 }
