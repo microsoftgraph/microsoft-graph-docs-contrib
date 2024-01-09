@@ -1,7 +1,7 @@
 ---
 title: "auditLogRecord resource type"
 description: "Represents an audit log record containing both common audit properties and auditData specific to the Microsoft 365 service."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "arishojaswi"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 doc_type: resourcePageType
