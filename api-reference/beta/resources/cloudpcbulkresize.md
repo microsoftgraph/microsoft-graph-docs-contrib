@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the entity that performs a bulk resize action with executeAction API. When IT admins want to upgrade or downgrade Cloud PC devices, they can use this API to trigger a resize remote action for Cloud PC. This API needs a parameter to indicate the target service plan ID to tell the service to resize this CloudPC to what configuration.
+Represents the entity that performs a bulk resize action with the executeAction API. When IT admins want to upgrade or downgrade Cloud PC devices, they can use this API to trigger a resize remote action for Cloud PC. This API needs a parameter to indicate the target service plan ID to tell the service to resize this CloudPC to what configuration.
 
 Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 
