@@ -76,7 +76,7 @@ Represents the image resource on a Cloud PC.
 |failed|The image couldn’t be uploaded. |
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
-### cloudPcDeviceImageStatusDetails values (deprecated)
+### cloudPcDeviceImageStatusDetails values
 
 |Member|Description|
 |:---|:---|
