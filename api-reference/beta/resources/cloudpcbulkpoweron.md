@@ -32,7 +32,7 @@ Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 None.
 
 ## JSON representation
-The following JSON representation shows the resource typ.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
