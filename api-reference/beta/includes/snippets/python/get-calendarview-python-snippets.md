@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = CalendarViewRequestBuilder.CalendarViewRequestBuilderGetQueryParameters(
 		start_date_time = "2017-01-01T19:00:00-08:00",

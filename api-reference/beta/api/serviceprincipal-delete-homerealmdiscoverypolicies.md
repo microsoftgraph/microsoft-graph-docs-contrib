@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Remove a [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) from a [servicePrincipal](../resources/servicePrincipal.md).
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -46,7 +46,7 @@ DELETE /servicePrincipals(appId='{appId}')/homeRealmDiscoveryPolicies/{policyId}
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -56,7 +56,7 @@ If successful, this method returns `204 No Content` response code.
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -104,7 +104,7 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/19c308f2-e088-464d-8cc
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

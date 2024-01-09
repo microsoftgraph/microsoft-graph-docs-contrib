@@ -14,12 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **baseItem** resource is an abstract resource that contains a common set of properties shared among several other resources types.
-Resources that derive from **baseItem** include:
 
-* [drive](drive.md)
-* [driveItem](driveitem.md)
-* [site](site.md)
-* [sharedDriveItem](shareddriveitem.md)
+Base type of [drive](drive.md), [driveItem](driveitem.md), [recycleBin](../resources/recyclebin.md), [recycleBinItem](../resources/recyclebinitem.md), [site](site.md), and [sharedDriveItem](shareddriveitem.md).
 
 ## JSON representation
 

@@ -1,6 +1,6 @@
 ---
 title: "reportRoot resource type"
-description: "Represents a container for Azure Active Directory (Azure AD) reporting resources."
+description: "Represents a container for Microsoft Entra reporting resources."
 author: "kvenkit"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a container for Azure Active Directory (Azure AD) reporting resources.
+Represents a container for Microsoft Entra reporting resources.
 
 ## Methods
 
@@ -28,7 +28,7 @@ None.
 
 | Relationship            | Type                                                                          | Description                                                        |
 |:------------------------|:------------------------------------------------------------------------------|:-------------------------------------------------------------------|
-| authenticationMethods   | [authenticationMethodsRoot](../resources/authenticationmethodsroot.md)                            | Container for navigation properties for Azure AD authentication methods resources.                                  |
+| authenticationMethods   | [authenticationMethodsRoot](../resources/authenticationmethodsroot.md)                            | Container for navigation properties for Microsoft Entra authentication methods resources.                                  |
 | dailyPrintUsageByPrinter | [printUsageByPrinter](../resources/printusagebyprinter.md) collection | Retrieve a list of daily print usage summaries, grouped by printer. | 
 | dailyPrintUsageByUser | [printUsageByUser](../resources/printusagebyuser.md) collection | Retrieve a list of daily print usage summaries, grouped by user. |
 | monthlyPrintUsageByPrinter | [printUsageByPrinter](../resources/printusagebyprinter.md) collection | Retrieve a list of monthly print usage summaries, grouped by printer. |

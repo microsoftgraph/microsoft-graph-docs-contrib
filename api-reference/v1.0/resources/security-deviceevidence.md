@@ -19,7 +19,7 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|azureAdDeviceId|String|A unique identifier assigned to a device by Azure Active Directory (Azure AD) when device is Azure AD-joined.|
+|azureAdDeviceId|String|A unique identifier assigned to a device by Microsoft Entra ID when device is Microsoft Entra joined.|
 |defenderAvStatus|[microsoft.graph.security.defenderAvStatus](#defenderavstatus-values)|State of the Defender AntiMalware engine. The possible values are: `notReporting`, `disabled`, `notUpdated`, `updated`, `unknown`, `notSupported`, `unknownFutureValue`.|
 |deviceDnsName|String|The fully qualified domain name (FQDN) for the device.|
 |firstSeenDateTime|DateTimeOffset|The date and time when the device was first seen.|

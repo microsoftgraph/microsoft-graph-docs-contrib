@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Team(
 	visibility = TeamVisibilityType.Private,
@@ -42,7 +42,7 @@ request_body = Team(
 							"teams_app@odata_bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.youtube')",
 					}
 				),
-			]
+			],
 		),
 		Channel(
 			display_name = "Planning 📅 ",
@@ -53,7 +53,7 @@ request_body = Team(
 			display_name = "Issues and Feedback 🐞",
 			description = "This is a sample of a channel that is not favorited by default, these channels will appear in the more channels overflow menu.",
 		),
-	]
+	],
 	member_settings = TeamMemberSettings(
 		allow_create_update_channels = True,
 		allow_delete_channels = True,
@@ -92,13 +92,13 @@ request_body = Team(
 					"teams_app@odata_bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')",
 			}
 		),
-	]
+	],
 	additional_data = {
 			"template@odata_bind" : "https://graph.microsoft.com/beta/teamsTemplates('standard')",
 	}
 )
 
-result = await graph_client.teams.post(body = request_body)
+result = await graph_client.teams.post(request_body)
 
 
 ```

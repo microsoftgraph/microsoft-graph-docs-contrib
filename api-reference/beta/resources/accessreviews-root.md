@@ -1,13 +1,13 @@
 ---
-title: "Azure AD access reviews (deprecated)"
-description: "You can use Azure AD access reviews to configure one-time or recurring access reviews for attestation of user's access rights. This documentation serves the legacy APIs."
+title: "Microsoft Entra access reviews (deprecated)"
+description: "You can use Microsoft Entra access reviews to configure one-time or recurring access reviews for attestation of user's access rights. This documentation serves the legacy APIs."
 ms.localizationpriority: medium
 author: "shubhamguptacal"
 ms.prod: "governance"
 doc_type: conceptualPageType
 ---
 
-# Azure AD access reviews (deprecated)
+# Microsoft Entra access reviews (deprecated)
 
 Namespace: microsoft.graph
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-You can use [Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) to configure one-time or recurring access reviews for attestation of user's access rights.
+You can use [Microsoft Entra access reviews](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) to configure one-time or recurring access reviews for attestation of user's access rights.
 
 Typical customer scenarios for access reviews of group memberships and application access are:
 
@@ -25,11 +25,11 @@ Typical customer scenarios for access reviews of group memberships and applicati
 
 - Customers can collect access review controls into programs that are relevant for your organization to track reviews for compliance or risk-sensitive applications.
 
-There is also a related capability for customers to review and certify the role assignments of administrative users who are assigned to Azure AD roles such as Global Administrator or Azure subscription roles.  This capability is included in [Azure AD Privileged Identity Management](privilegedidentitymanagement-root.md).
+There is also a related capability for customers to review and certify the role assignments of administrative users who are assigned to Microsoft Entra roles such as Global Administrator or Azure subscription roles.  This capability is included in [Microsoft Entra Privileged Identity Management](privilegedidentitymanagement-root.md).
 
 The tenant where an access review is being created or managed via the API must have sufficient purchased or trial licenses. For more information about the license requirements, see [Access reviews license requirements](/azure/active-directory/governance/access-reviews-overview#license-requirements).
 
-Prior to creating an access review, program or program control, an administrator must have previously onboarded in order to prepare the [programControlType](programcontroltype.md) and [businessFlowTemplate](businessflowtemplate.md) resources. The organization can onboard to Azure AD access reviews or, in the case of access reviews of Azure AD roles or Azure subscription roles, Azure AD PIM.
+Prior to creating an access review, program or program control, an administrator must have previously onboarded in order to prepare the [programControlType](programcontroltype.md) and [businessFlowTemplate](businessflowtemplate.md) resources. The organization can onboard to Microsoft Entra access reviews or, in the case of access reviews of Microsoft Entra roles or Azure subscription roles, Microsoft Entra PIM.
 
 
 ## Methods
@@ -69,8 +69,8 @@ The following directory roles are required for a calling user to manage access r
 
 | Target resource | Operation | Application permissions | Required directory role of the calling user |
 |:----------------|:------------------|:------------|:--------------------------------------------|
-|[accessReview](accessreview.md) of an Azure AD role | Read | AccessReview.Read.All or AccessReview.ReadWrite.All | Global Administrator, Global Reader, Security Administrator, Security Reader or Privileged Role Administrator |
-|[accessReview](accessreview.md) of an Azure AD role | Create, Update or Delete | AccessReview.ReadWrite.All | Global Administrator or Privileged Role Administrator |
+|[accessReview](accessreview.md) of a Microsoft Entra role | Read | AccessReview.Read.All or AccessReview.ReadWrite.All | Global Administrator, Global Reader, Security Administrator, Security Reader or Privileged Role Administrator |
+|[accessReview](accessreview.md) of a Microsoft Entra role | Create, Update or Delete | AccessReview.ReadWrite.All | Global Administrator or Privileged Role Administrator |
 |[accessReview](accessreview.md) of a group or app | Read | AccessReview.Read.All, AccessReview.ReadWrite.Membership or AccessReview.ReadWrite.All | Global Administrator, Global Reader, Security Administrator, Security Reader or User Administrator |
 |[accessReview](accessreview.md) of a group or app | Create, Update or Delete | AccessReview.ReadWrite.Membership or AccessReview.ReadWrite.All | Global Administrator or User Administrator |
 | [program](program.md) and [programControl](programcontrol.md)| Read | ProgramControl.Read.All or ProgramControl.ReadWrite.All |  Global Administrator, Global Reader, Security Administrator, Security Reader or User Administrator |
@@ -80,9 +80,9 @@ In addition, a user who is an assigned reviewer of an access review can manage t
 
 ## See also
 
-- [How an administrator can manage user access with Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-manage-user-access-with-access-reviews)
-- [How an administrator can manage guest access with Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-manage-guest-access-with-access-reviews)
-- [How an administrator can manage programs and controls for Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-manage-programs-controls)
+- [How an administrator can manage user access with Microsoft Entra access reviews](/azure/active-directory/active-directory-azure-ad-controls-manage-user-access-with-access-reviews)
+- [How an administrator can manage guest access with Microsoft Entra access reviews](/azure/active-directory/active-directory-azure-ad-controls-manage-guest-access-with-access-reviews)
+- [How an administrator can manage programs and controls for Microsoft Entra access reviews](/azure/active-directory/active-directory-azure-ad-controls-manage-programs-controls)
 
 
 <!--
@@ -95,5 +95,3 @@ In addition, a user who is an assigned reviewer of an access review can manage t
   "suppressions": []
 }
 -->
-
-

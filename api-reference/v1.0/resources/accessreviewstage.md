@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a stage of an Azure AD [access review](accessreviewsv2-overview.md). If the parent [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) has defined the **stageSettings** property, the [accessReviewInstance](accessReviewInstance.md) is comprised of up to three subsequent stages. Each stage may have a different set of reviewers who can act on the stage decisions, and settings determining which decisions pass from stage to stage.
+Represents a stage of a Microsoft Entra [access review](accessreviewsv2-overview.md). If the parent [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) has defined the **stageSettings** property, the [accessReviewInstance](accessReviewInstance.md) is comprised of up to three subsequent stages. Each stage may have a different set of reviewers who can act on the stage decisions, and settings determining which decisions pass from stage to stage.
 
 Every **accessReviewStage** contains a list of [decision items](accessreviewinstancedecisionitem.md) for reviewers. There's only one decision per identity being reviewed.
 
@@ -70,4 +70,3 @@ Here's a JSON representation of the resource.
   
 }
 ```
-

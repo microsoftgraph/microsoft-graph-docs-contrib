@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = EducationAssignment(
 	due_date_time = "2022-09-16T00:00:00Z",
@@ -26,7 +26,7 @@ request_body = EducationAssignment(
 	allow_students_to_add_resources_to_submission = True,
 )
 
-result = await graph_client.education.classes.by_classe_id('educationClass-id').assignments.post(body = request_body)
+result = await graph_client.education.classes.by_education_class_id('educationClass-id').assignments.post(request_body)
 
 
 ```

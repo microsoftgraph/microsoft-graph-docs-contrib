@@ -40,7 +40,7 @@ If you prefer to download a completed project, you can do so from one of the fol
 In the app-only authentication tutorials, you create a basic command-line application that has the following features:
 
 - Enables app-only authentication to [get access without a user](auth-v2-service.md)
-- Lists users in Azure Active Directory
+- Lists users in Microsoft Entra ID
 
 If you prefer to download a completed project, you can do so from the project's corresponding GitHub repository. Instructions for registering an application and configuring the sample are located in each repository.
 

@@ -11,12 +11,12 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.externalConnectors
 
-An item added to a Microsoft Graph [connection](externalconnectors-externalconnection.md). 
+An item added to a Microsoft Graph [connection](externalconnectors-externalconnection.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-| [Create externalItem](../api/externalconnectors-externalitem-create.md)  | [externalItem](../resources/externalconnectors-externalitem.md)  | Create a new [externalItem](../resources/externalconnectors-externalitem.md) object.|
+| [Create externalItem](../api/externalconnectors-externalconnection-put-items.md)  | [externalItem](../resources/externalconnectors-externalitem.md)  | Create a new [externalItem](../resources/externalconnectors-externalitem.md) object.|
 | [Get externalItem](../api/externalconnectors-externalitem-get.md)        | [externalItem](../resources/externalconnectors-externalitem.md)|Read the properties and relationships of an [externalItem](../resources/externalconnectors-externalitem.md) object.|
 | [Update externalItem](../api/externalconnectors-externalitem-update.md)  | [externalItem](../resources/externalconnectors-externalitem.md)|Update the properties of an [externalItem](../resources/externalconnectors-externalitem.md) object.|
 | [Delete externalItem](../api/externalconnectors-externalitem-delete.md)  | None |Delete an [externalItem](../resources/externalconnectors-externalitem.md) object.|

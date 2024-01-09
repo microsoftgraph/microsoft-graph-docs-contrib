@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Planner
 
-Remove-MgPlannerTask -PlannerTaskId $plannerTaskId-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=" 
+Remove-MgPlannerTask -PlannerTaskId $plannerTaskId -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="' 
 
 
 ```

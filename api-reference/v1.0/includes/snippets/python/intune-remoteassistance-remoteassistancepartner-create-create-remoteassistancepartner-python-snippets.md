@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = RemoteAssistancePartner(
 	odata_type = "#microsoft.graph.remoteAssistancePartner",
@@ -16,7 +16,7 @@ request_body = RemoteAssistancePartner(
 	last_connection_date_time = "2016-12-31T23:58:36.6670033-08:00",
 )
 
-result = await graph_client.device_management.remote_assistance_partners.post(body = request_body)
+result = await graph_client.device_management.remote_assistance_partners.post(request_body)
 
 
 ```

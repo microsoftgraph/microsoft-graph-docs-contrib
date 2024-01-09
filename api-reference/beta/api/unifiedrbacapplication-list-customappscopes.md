@@ -21,15 +21,10 @@ Currently only the Exchange Online RBAC provider is supported.
 
 ## Permissions
 
-Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!--### For an Exchange Online provider-->
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  RoleManagement.Read.Exchange, RoleManagement.Read.All, RoleManagement.ReadWrite.Exchange   |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+<!-- { "blockType": "permissions", "name": "unifiedrbacapplication_list_customappscopes" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedrbacapplication-list-customappscopes-permissions.md)]
 
 ## HTTP request
 
@@ -53,7 +48,7 @@ This method supports the `$filter` and `$count` [OData query parameters](/graph/
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -109,7 +104,7 @@ GET https://graph.microsoft.com/beta/roleManagement/exchange/customAppScopes
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

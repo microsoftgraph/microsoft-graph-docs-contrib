@@ -11,15 +11,15 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents information about a detected risk in an Azure AD tenant. 
+Represents information about a detected risk in a Microsoft Entra tenant. 
 
-Azure AD continually evaluates [user risks](riskyuser.md) and app or user [sign-in](signin.md) risks based on various signals and machine learning. This API provides programmatic access to all risk detections in your Azure AD environment.
+Microsoft Entra ID continually evaluates [user risks](riskyuser.md) and app or user [sign-in](signin.md) risks based on various signals and machine learning. This API provides programmatic access to all risk detections in your Microsoft Entra environment.
 
-For more information about risk events, see [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection).
+For more information about risk events, see [Microsoft Entra ID Protection](/azure/active-directory/identity-protection/overview-identity-protection).
 
 >[!NOTE]
-> 1. You must have an Azure AD Premium P1 or P2 license to use the risk detection API.
-> 2. The availability of risk detection data is governed by the [Azure AD data retention policies](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
+> 1. You must have a Microsoft Entra ID P1 or P2 license to use the risk detection API.
+> 2. The availability of risk detection data is governed by the [Microsoft Entra data retention policies](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
 
 ## Methods
 |Method|Return type|Description|
@@ -62,8 +62,8 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 | unfamiliarFeatures | Unfamiliar sign-in properties | Indicates sign-ins with characteristics that deviate from past sign-in properties. |
 | malwareInfectedIPAddress | Malware linked IP address | Indicates sign-ins from IP addresses infected with malware. Deprecated and no longer generated for new detections. |
 | suspiciousIPAddress | Malicious IP address | Identifies logins from IP addresses that are known to be malicious at the time of the sign in. |
-| leakedCredentials | Leaked credentials | Indicates that the user's valid credentials have been leaked. This sharing is typically done by posting publicly on the dark web, paste sites, or by trading and selling the credentials on the black market. When the Microsoft leaked credentials service acquires user credentials from the dark web, paste sites, or other sources, they are checked against Azure AD users' current valid credentials to find valid matches. |
-| investigationsThreatIntelligence | Azure AD threat intelligence | Indicates a sign-in activity that is unusual for the given user or is consistent with known attack patterns based on Microsoft's internal and external threat intelligence sources. |
+| leakedCredentials | Leaked credentials | Indicates that the user's valid credentials have been leaked. This sharing is typically done by posting publicly on the dark web, paste sites, or by trading and selling the credentials on the black market. When the Microsoft leaked credentials service acquires user credentials from the dark web, paste sites, or other sources, they are checked against Microsoft Entra users' current valid credentials to find valid matches. |
+| investigationsThreatIntelligence | Microsoft Entra threat intelligence | Indicates a sign-in activity that is unusual for the given user or is consistent with known attack patterns based on Microsoft's internal and external threat intelligence sources. |
 | generic | Additional risk detected | Indicates that the user was not enabled for Identity Protection. |
 | adminConfirmedUserCompromised | Admin confirmed user compromised | Indicates that an administrator has [confirmed the user is compromised](../api/riskyuser-confirmcompromised.md). |
 | passwordSpray | Password spray | Indicates that multiple usernames are attacked using common passwords in a unified brute force manner to gain unauthorized access. |

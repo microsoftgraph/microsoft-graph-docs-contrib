@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = OnTokenIssuanceStartCustomExtension(
 	odata_type = "#microsoft.graph.onTokenIssuanceStartCustomExtension",
@@ -27,10 +27,10 @@ request_body = OnTokenIssuanceStartCustomExtension(
 		OnTokenIssuanceStartReturnClaim(
 			claim_id_in_api_response = "CustomRoles",
 		),
-	]
+	],
 )
 
-result = await graph_client.identity.custom_authentication_extensions.by_custom_authentication_extension_id('customAuthenticationExtension-id').patch(body = request_body)
+result = await graph_client.identity.custom_authentication_extensions.by_custom_authentication_extension_id('customAuthenticationExtension-id').patch(request_body)
 
 
 ```

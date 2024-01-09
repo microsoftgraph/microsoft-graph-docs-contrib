@@ -27,7 +27,7 @@ Together, the Microsoft Graph API, connectors, and Data Connect power the Micros
 Microsoft Graph exposes REST APIs and client libraries to access data on the following Microsoft cloud services:
 
 - **Microsoft 365 core services:** Bookings, Calendar, Delve, Excel, Microsoft 365 compliance eDiscovery, Microsoft Search, OneDrive, OneNote, Outlook/Exchange, People (Outlook contacts), Planner, SharePoint, Teams, To Do, Viva Insights
-- **Enterprise Mobility + Security services:** Advanced Threat Analytics, Advanced Threat Protection, Azure Active Directory, Identity Manager, and Intune
+- **Enterprise Mobility + Security services:** Advanced Threat Analytics, Advanced Threat Protection, Microsoft Entra ID, Identity Manager, and Intune
 - **Windows services:** activities, devices, notifications, Universal Print
 - **Dynamics 365 Business Central services**
 
@@ -52,7 +52,7 @@ Use Microsoft Graph to build experiences around the user's unique context to hel
 Pick the first scenario about researching meeting attendees as an example. With the Microsoft Graph API, you can:
 
 1. Get the email addresses of the [meeting event](/graph/api/resources/event) attendees.
-2. Look them up individually as a [user](/graph/api/resources/user) in Azure Active Directory to [get their profile information](/graph/api/user-get).
+2. Look them up individually as a [user](/graph/api/resources/user) in Microsoft Entra ID to [get their profile information](/graph/api/user-get).
 
 You can then navigate to other resources using relationships:
 
@@ -62,6 +62,8 @@ You can then navigate to other resources using relationships:
 - Extend the scenario to get to the user's groups through a [memberOf](/graph/api/user-list-memberof) relationship.
 - [Reach other members in each group](/graph/api/group-list-members).
 - Tap into other scenarios enabled by [groups](microsoft365-groups-concept-overview.md), such as [education](education-concept-overview.md) and [teamwork](teams-concept-overview.md).
+
+To find out more, see [Integration patterns](integration-patterns-overview.md).
 
 Microsoft Graph continues to open up the Microsoft 365 platform for developers, and always only with the appropriate permissions.
 
@@ -125,7 +127,8 @@ Microsoft Graph Data Connect provides a new way for you to interact with the dat
 - Check out some [partner solutions](https://developer.microsoft.com/graph/partners).
 - Try a sample request in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Use the [quick start](https://developer.microsoft.com/graph/quick-start) to set up a ready-to-run sample app.
-- Look under **Learn** in the table of contents to read about services and features that you can use in your scenarios.
+- Explore the [services and features](overview-major-services.md) that you can use in your scenarios.
+- See [what's new](whats-new-overview.md) in Microsoft Graph.
 - Learn about [metered APIs and services in Microsoft Graph](metered-api-overview.md).
 - Find out how to [get an auth token](auth/auth-concepts.md) in your app.
 - Start [using the API](use-the-api.md).

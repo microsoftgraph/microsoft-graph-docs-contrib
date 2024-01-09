@@ -74,7 +74,7 @@ The `$orderby` OData query parameter is supported on the **deletedDateTime**, **
 | Accept  | application/json |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

@@ -1,6 +1,6 @@
 ---
 title: "synchronization resource type"
-description: "Represents the capability for Azure Active Directory (Azure AD) identity synchronization through the Microsoft Graph API."
+description: "Represents the capability for Microsoft Entra identity synchronization through the Microsoft Graph API."
 author: "ArvindHarinder1"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the capability for Azure Active Directory (Azure AD) identity synchronization through the Microsoft Graph API. Identity synchronization (also called *provisioning*) allows you to automate the provisioning (creation, maintenance) and de-provisioning (removal) of user identities and roles from Azure AD to supported cloud applications. For more information, see [How Application Provisioning works in Azure Active Directory](/azure/active-directory/app-provisioning/how-provisioning-works)
+Represents the capability for Microsoft Entra identity synchronization through the Microsoft Graph API. Identity synchronization (also called *provisioning*) allows you to automate the provisioning (creation, maintenance) and de-provisioning (removal) of user identities and roles from Microsoft Entra ID to supported cloud applications. For more information, see [How Application Provisioning works in Microsoft Entra ID](/azure/active-directory/app-provisioning/how-provisioning-works)
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[acquireAccessToken](../api/synchronization-synchronization-acquireaccesstoken.md)|None| Acquire an OAuth Access token to authorize the Azure AD provisioning service to provision users into an application. |
+|[acquireAccessToken](../api/synchronization-synchronization-acquireaccesstoken.md)|None| Acquire an OAuth Access token to authorize the Microsoft Entra provisioning service to provision users into an application. |
 |[Add secrets](../api/synchronization-serviceprincipal-put-synchronization.md)|None| Provide credentials for establishing connectivity with the target system. |
 
 ## Properties
@@ -51,4 +51,3 @@ The following is a JSON representation of the resource.
   ]
 }
 ```
-

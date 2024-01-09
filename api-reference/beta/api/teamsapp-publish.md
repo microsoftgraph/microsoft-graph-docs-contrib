@@ -76,7 +76,7 @@ If successful, this method returns a `200 OK` response code and a [teamsApp](../
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -126,7 +126,7 @@ For information about how to create a Microsoft Teams application zip file, see 
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -150,7 +150,7 @@ Content-Type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 
@@ -196,7 +196,7 @@ Content-type: application/zip
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -221,7 +221,7 @@ Location: https://graph.microsoft.com/beta/appCatalogs/teamsApps/e3e29acb-8c79-4
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -241,7 +241,7 @@ If-Match: InFtSStsNVJHVWdzWUJRU2ZVWGp4RWc9PSI=
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

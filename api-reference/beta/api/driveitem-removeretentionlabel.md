@@ -39,7 +39,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ```http
 DELETE /driveitem/retentionLabel
-DELETE /drives/{drive-id}/items/{id}/retentionLabel
+DELETE /drives/{drive-id}/items/{item-id}/retentionLabel
 ```
 
 ## Request headers
@@ -60,7 +60,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ### Request
 
-The following shows an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -110,7 +110,7 @@ DELETE https://graph.microsoft.com/beta/drives/22e064df-3562-4a3c-98c3-74721ca06
 
 ### Response
 
-The following shows an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

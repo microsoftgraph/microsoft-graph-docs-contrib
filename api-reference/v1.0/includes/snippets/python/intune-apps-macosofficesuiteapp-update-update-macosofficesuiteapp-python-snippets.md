@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = MacOSOfficeSuiteApp(
 	odata_type = "#microsoft.graph.macOSOfficeSuiteApp",
@@ -27,7 +27,7 @@ request_body = MacOSOfficeSuiteApp(
 	publishing_state = MobileAppPublishingState.Processing,
 )
 
-result = await graph_client.device_app_management.mobile_apps.by_mobile_app_id('mobileApp-id').patch(body = request_body)
+result = await graph_client.device_app_management.mobile_apps.by_mobile_app_id('mobileApp-id').patch(request_body)
 
 
 ```

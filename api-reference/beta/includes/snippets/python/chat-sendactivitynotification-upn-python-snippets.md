@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = SendActivityNotificationPostRequestBody(
 	topic = TeamworkActivityTopic(
@@ -26,10 +26,10 @@ request_body = SendActivityNotificationPostRequestBody(
 			name = "approvalTaskId",
 			value = "2020AAGGTAPP",
 		),
-	]
+	],
 )
 
-await graph_client.chats.by_chat_id('chat-id').send_activity_notification.post(body = request_body)
+await graph_client.chats.by_chat_id('chat-id').send_activity_notification.post(request_body)
 
 
 ```

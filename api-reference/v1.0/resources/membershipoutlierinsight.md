@@ -1,6 +1,6 @@
 ---
 title: "membershipoutlierinsight resource type"
-description: "In the Azure AD access reviews, the membershipoutlierinsight resource represents insights provided to reviewers based on whether a user has low affiliation with other users within the group."
+description: "In the Microsoft Entra access reviews, the membershipoutlierinsight resource represents insights provided to reviewers based on whether a user has low affiliation with other users within the group."
 author: "shubhamguptacal"
 ms.localizationpriority: medium
 ms.prod: "governance"

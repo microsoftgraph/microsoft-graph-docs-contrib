@@ -6,10 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-result = await graph_client.users.by_user_id('user-id').authentication.temporary_acce_pa_methods.by_temporary_acces_pas_method_id('temporaryAccessPassAuthenticationMethod-id').get()
+result = await graph_client.users.by_user_id('user-id').authentication.temporary_access_pass_methods.by_temporary_access_pass_authentication_method_id('temporaryAccessPassAuthenticationMethod-id').get()
 
 
 ```

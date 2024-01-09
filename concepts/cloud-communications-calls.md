@@ -35,4 +35,4 @@ Currently, bots are able to:
 ## See also
 
 - [Teams API overview](teams-concept-overview.md)
-- [Permissions for calls](./permissions-reference.md#calls-permissions)
+- [Permissions for calls](./permissions-reference.md)

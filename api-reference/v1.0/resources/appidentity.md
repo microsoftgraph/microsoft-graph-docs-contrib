@@ -17,9 +17,9 @@ Indicates the identity of the application that performed the action or was chang
 
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
-|appId|String|Refers to the Unique GUID representing Application Id in the Azure Active Directory.|
+|appId|String|Refers to the unique ID representing application in Microsoft Entra ID.|
 |displayName|String|Refers to the application name displayed in the Microsoft Entra admin center.|
-|servicePrincipalId|String|Refers to the Unique GUID indicating Service Principal Id in Azure Active Directory for the corresponding App.|
+|servicePrincipalId|String|Refers to the unique ID for the service principal in Microsoft Entra ID.|
 |servicePrincipalName|String|Refers to the Service Principal Name is the Application name in the tenant. |
 
 ## JSON representation
@@ -53,4 +53,3 @@ Here's a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

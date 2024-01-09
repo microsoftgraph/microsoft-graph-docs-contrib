@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ManagedDeviceMobileAppConfigurationUserSummary(
 	odata_type = "#microsoft.graph.managedDeviceMobileAppConfigurationUserSummary",
@@ -19,7 +19,7 @@ request_body = ManagedDeviceMobileAppConfigurationUserSummary(
 	configuration_version = 4,
 )
 
-result = await graph_client.device_app_management.mobile_app_configurations.by_mobile_app_configuration_id('managedDeviceMobileAppConfiguration-id').user_statu_summary.patch(body = request_body)
+result = await graph_client.device_app_management.mobile_app_configurations.by_managed_device_mobile_app_configuration_id('managedDeviceMobileAppConfiguration-id').user_status_summary.patch(request_body)
 
 
 ```

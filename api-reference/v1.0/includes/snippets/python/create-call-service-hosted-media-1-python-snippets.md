@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Call(
 	odata_type = "#microsoft.graph.call",
@@ -23,10 +23,10 @@ request_body = Call(
 				),
 			),
 		),
-	]
+	],
 	requested_modalities = [
 		Modality.Audio,
-	]
+	],
 	call_options = OutgoingCallOptions(
 		odata_type = "#microsoft.graph.outgoingCallOptions",
 		is_content_sharing_notification_enabled = True,
@@ -36,7 +36,7 @@ request_body = Call(
 	),
 )
 
-result = await graph_client.communications.calls.post(body = request_body)
+result = await graph_client.communications.calls.post(request_body)
 
 
 ```

@@ -6,10 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-result = await graph_client.admin.service_announcement.messages.by_message_id('serviceUpdateMessage-id').attachments.by_attachment_id('serviceAnnouncementAttachment-id').get()
+result = await graph_client.admin.service_announcement.messages.by_service_update_message_id('serviceUpdateMessage-id').attachments.by_service_announcement_attachment_id('serviceAnnouncementAttachment-id').get()
 
 
 ```

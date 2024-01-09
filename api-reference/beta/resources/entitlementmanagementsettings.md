@@ -1,6 +1,6 @@
 ---
 title: "entitlementManagementSettings resource type"
-description: "Represents tenant-wide settings for Azure AD entitlement management."
+description: "Represents tenant-wide settings for Microsoft Entra entitlement management."
 ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents settings that control the behavior of [Azure AD entitlement management](entitlementmanagement-overview.md).  This resource doesn't include the catalog creators setting; to view or change the catalog creators role membership, use the [role assignments](unifiedroleassignment.md) API with the entitlement management RBAC provider.
+Represents settings that control the behavior of [Microsoft Entra entitlement management](entitlementmanagement-overview.md).  This resource doesn't include the catalog creators setting; to view or change the catalog creators role membership, use the [role assignments](unifiedroleassignment.md) API with the entitlement management RBAC provider.
 
 ## Methods
 
@@ -62,5 +62,3 @@ Here's a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

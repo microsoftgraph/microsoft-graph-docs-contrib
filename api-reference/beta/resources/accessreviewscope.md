@@ -1,6 +1,6 @@
 ---
 title: "accessReviewScope resource type"
-description: "In the Azure AD access reviews feature, the `accessReviewScope` represents what entities will be reviewed in an access review.  "
+description: "In the Microsoft Entra access reviews feature, the `accessReviewScope` represents what entities will be reviewed in an access review.  "
 author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"

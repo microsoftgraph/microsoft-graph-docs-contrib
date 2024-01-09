@@ -25,7 +25,7 @@ $recentPlanReferences = new PlannerRecentPlanReferenceCollection();
 $additionalData = [
 	'jd8S5gOaFk2S8aWCIAJz42QAAxtD' => [
 		'@odata.type' => '#microsoft.graph.plannerRecentPlanReference',
-		'lastAccessedDateTime' => '2018-01-02T22:49:46.155Z',
+		'lastAccessedDateTime' => new \DateTime('2018-01-02T22:49:46.155Z'),
 		'planTitle' => 'Next Release Discussion',
 	],
 ];

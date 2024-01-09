@@ -6,10 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-await graph_client.booking_businesses.by_booking_businesse_id('bookingBusiness-id').custom_questions.by_custom_question_id('bookingCustomQuestion-id').delete()
+await graph_client.booking_businesses.by_booking_business_id('bookingBusiness-id').custom_questions.by_booking_custom_question_id('bookingCustomQuestion-id').delete()
 
 
 ```

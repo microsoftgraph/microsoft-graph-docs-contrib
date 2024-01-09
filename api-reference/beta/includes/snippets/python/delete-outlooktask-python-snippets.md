@@ -6,10 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-await graph_client.me.outlook.tasks.by_task_id('outlookTask-id').delete()
+await graph_client.me.outlook.tasks.by_outlook_task_id('outlookTask-id').delete()
 
 
 ```

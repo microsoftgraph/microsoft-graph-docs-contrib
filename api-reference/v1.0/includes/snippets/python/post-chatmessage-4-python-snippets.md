@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ChatMessage(
 	body = ItemBody(
@@ -20,10 +20,10 @@ request_body = ChatMessage(
 			content_url = "https://m365x987948.sharepoint.com/sites/test/Shared%20Documents/General/test%20doc.docx",
 			name = "Budget.docx",
 		),
-	]
+	],
 )
 
-result = await graph_client.teams.by_team_id('team-id').channels.by_channel_id('channel-id').messages.post(body = request_body)
+result = await graph_client.teams.by_team_id('team-id').channels.by_channel_id('channel-id').messages.post(request_body)
 
 
 ```

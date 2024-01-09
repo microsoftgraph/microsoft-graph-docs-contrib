@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = OAuth2PermissionGrant(
 	client_id = "b0d9b9e3-0ecf-4bfd-8dab-9273dd055a94",
@@ -16,7 +16,7 @@ request_body = OAuth2PermissionGrant(
 	scope = "User.Read.All Group.Read.All",
 )
 
-result = await graph_client.oauth2_permission_grants.post(body = request_body)
+result = await graph_client.oauth2_permission_grants.post(request_body)
 
 
 ```

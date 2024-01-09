@@ -22,7 +22,7 @@ and the [chatInfo](./chatinfo.md) resource types, or the [tokenMeetingInfo](./to
 
 | Property                     | Type                          | Description                                     |
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
-| organizer                    | [identitySet](identityset.md) | The organizer Azure Active Directory identity.  |
+| organizer                    | [identitySet](identityset.md) | The organizer Microsoft Entra identity.  |
 
 ## JSON representation
 
@@ -53,5 +53,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

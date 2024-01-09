@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Users
 
-Get-MgUserCount-ConsistencyLevel eventual 
+Get-MgUserCount -ConsistencyLevel eventual 
 
 
 ```

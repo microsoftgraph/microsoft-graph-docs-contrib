@@ -15,7 +15,7 @@
              }
      :scores {
               ;;:terminology 100
-              ;;:qualityscore 20 ;; Confirmed with Hugo that you just comment out the single score and leave the structure in place
+              :qualityscore 80
               ;;:correctness 40
              }
    }
@@ -28,7 +28,7 @@
 
 ## Acrolinx Scorecards
 
-**The minimum Acrolinx topic score of 20 is required for all Microsoft Graph content merged to the default branch.**
+**The minimum Acrolinx topic score of 80 is required for all Microsoft Graph content merged to the default branch.**
 
 If you need a scoring exception for content in this PR, add the *ready for content review* and the *acrolinx exception* labels to the PR. The content review team will review the exception request and may take one or more of the following actions:
 

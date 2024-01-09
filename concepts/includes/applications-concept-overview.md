@@ -6,25 +6,25 @@ ms.topic: include
 ms.localizationpriority: high
 ---
 
-In order to delegate identity and access management functions to Azure AD, an application must be registered with an Azure AD tenant. When you register your application with Azure AD, you're creating an identity configuration for your application that allows it to integrate with Azure AD.
+In order to delegate identity and access management functions to Microsoft Entra ID, an application must be registered with a Microsoft Entra tenant. When you register your application with Microsoft Entra ID, you're creating an identity configuration for your application that allows it to integrate with Microsoft Entra ID.
 
 ## Why use applications and associated resources?
 
-The Microsoft Graph APIs enable you to manage these resources and actions related to applications in Azure Active Directory:
-- **Application management** - Azure AD must be configured to integrate with an application. In other words, it needs to know what applications are using it as an identity system. The process of keeping Azure AD aware of these applications, and how it should handle them, is known as application management.
+The Microsoft Graph APIs enable you to manage these resources and actions related to applications in Microsoft Entra ID:
+- **Application management** - Microsoft Entra ID must be configured to integrate with an application. In other words, it needs to know what applications are using it as an identity system. The process of keeping Microsoft Entra aware of these applications, and how it should handle them, is known as application management.
 - **On-premises publishing** - On-premises agents (or connectors for Application Proxy) installed by a tenant administrator can be configured to route requests to a particular published resource.
 - **Service principal management** - The local representation, or application instance, of a global application object in a single tenant or directory. A service principal is a concrete instance created from the application object and inherits certain properties from that application object.
-- **Synchronization** - Azure Active Directory (Azure AD) identity synchronization (also called *provisioning*) allows you to automate the creation, maintenance, and removal of identities in the cloud.
+- **Synchronization** - Microsoft Entra identity synchronization (also called *provisioning*) allows you to automate the creation, maintenance, and removal of identities in the cloud.
 
 ## Application management
 
-Application registration involves telling Azure AD about your application, including the URL where it's located, the URL to send replies after authentication, the URI to identify your application, and more. You can use the [application APIs](/graph/api/resources/application) in Microsoft Graph to manage applications programmatically.
+Application registration involves telling Microsoft Entra ID about your application, including the URL where it's located, the URL to send replies after authentication, the URI to identify your application, and more. You can use the [application APIs](/graph/api/resources/application) in Microsoft Graph to manage applications programmatically.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/93j0MmRruFo]
 
 For more information about applications, see the following articles:
 - [Application model](/azure/active-directory/develop/application-model)
-- [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals)
+- [Application and service principal objects in Microsoft Entra ID](/azure/active-directory/develop/app-objects-and-service-principals)
 - [Application types for Microsoft identity platform](/azure/active-directory/develop/v2-app-types)
 
 For more information about application management, see the following articles:
@@ -36,8 +36,8 @@ For more information about application management, see the following articles:
 Create and manage on-premises publishing profiles, which includes the creation of on-premises agents and agent groups. You can use the [on-premises publishing APIs](/graph/api/resources/onpremisespublishingprofile-root) in Microsoft Graph to manage on-premises publishing profiles programmatically.
 
 For more information about on-premises publishing, see the following articles:
-- [Remote access to on-premises applications through Azure Active Directory's Application Proxy](/azure/active-directory/manage-apps/application-proxy)
-- [Using Azure AD Application Proxy to publish on-premises apps for remote users](/azure/active-directory/manage-apps/what-is-application-proxy)
+- [Remote access to on-premises applications through Microsoft Entra application proxy](/azure/active-directory/manage-apps/application-proxy)
+- [Using Microsoft Entra application proxy to publish on-premises apps for remote users](/azure/active-directory/manage-apps/what-is-application-proxy)
 
 To learn about using the on-premises publishing APIs, see the following tutorial and its associated APIs:
 - [Automate the configuration of Application Proxy using the Microsoft Graph API](/graph/application-proxy-configure-api)
@@ -50,9 +50,9 @@ To learn about using the on-premises publishing APIs, see the following tutorial
 
 ## Service principal management
 
-To access resources that are secured by an Azure AD tenant, the entity that requires access must be represented by a security principal. You can use the [service principal APIs](/graph/api/resources/serviceprincipal) in Microsoft Graph to manage service principals programmatically.
+To access resources that are secured by a Microsoft Entra tenant, the entity that requires access must be represented by a security principal. You can use the [service principal APIs](/graph/api/resources/serviceprincipal) in Microsoft Graph to manage service principals programmatically.
 
-For more information about service principals, see [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals).
+For more information about service principals, see [Application and service principal objects in Microsoft Entra ID](/azure/active-directory/develop/app-objects-and-service-principals).
 
 ## Synchronization
 
@@ -62,7 +62,7 @@ You can use the [synchronization APIs](/graph/api/resources/synchronization-over
 - Verify the current synchronization status
 
 For more information about synchronization, see the following articles:
-- [Automate user provisioning and deprovisioning to applications with Azure AD](/azure/active-directory/app-provisioning/user-provisioning)
+- [Automate user provisioning and deprovisioning to applications with Microsoft Entra ID](/azure/active-directory/app-provisioning/user-provisioning)
 - [How provisioning works](/azure/active-directory/app-provisioning/how-provisioning-works)
 
 To learn about using the synchronization APIs, see the following tutorials and their associated APIs:

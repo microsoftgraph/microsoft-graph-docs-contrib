@@ -3,7 +3,7 @@ title: "Delete delegatedAdminAccessAssignment"
 description: "Delete a delegatedAdminAccessAssignment object."
 author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: "customer-relationship-management"
+ms.prod: partner-customer-administration
 doc_type: apiPageType
 ---
 
@@ -15,13 +15,10 @@ Delete a [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassig
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)| DelegatedAdminRelationship.ReadWrite.All |
-|Delegated (personal Microsoft account)| Not supported. |
-|Application| Not supported. |
+<!-- { "blockType": "permissions", "name": "delegatedadminaccessassignment_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/delegatedadminaccessassignment-delete-permissions.md)]
 
 ## HTTP request
 
@@ -40,7 +37,7 @@ DELETE /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelations
 |If-Match|If-match: {etag}. Last known ETag value for the **delegatedAdminAccessAssignment** to be deleted. Required. Retrieve the ETag value from a LIST or GET operation.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

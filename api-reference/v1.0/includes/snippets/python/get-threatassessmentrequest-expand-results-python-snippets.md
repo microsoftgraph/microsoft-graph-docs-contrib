@@ -6,13 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
-query_params = ThreatAssessmentRequestRequestBuilder.ThreatAssessmentRequestRequestBuilderGetQueryParameters(
+query_params = ThreatAssessmentRequestItemRequestBuilder.ThreatAssessmentRequestItemRequestBuilderGetQueryParameters(
 		expand = ["results"],
 )
 
-request_configuration = ThreatAssessmentRequestRequestBuilder.ThreatAssessmentRequestRequestBuilderGetRequestConfiguration(
+request_configuration = ThreatAssessmentRequestItemRequestBuilder.ThreatAssessmentRequestItemRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
 )
 

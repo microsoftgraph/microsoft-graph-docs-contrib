@@ -12,7 +12,7 @@ ms.date: 02/14/2023
 
 # Manage custom security attribute assignments
 
-[Custom security attributes](/graph/api/resources/custom-security-attributes-overview) in Azure Active Directory (Azure AD) are business-specific attributes (key-value pairs) that you can define and assign to Azure AD objects. These attributes can be used to store information, categorize objects, or enforce fine-grained access control over specific Azure resources through Azure attribute-based access control (Azure ABAC).
+[Custom security attributes](/graph/api/resources/custom-security-attributes-overview) in Microsoft Entra ID are business-specific attributes (key-value pairs) that you can define and assign to Microsoft Entra objects. These attributes can be used to store information, categorize objects, or enforce fine-grained access control over specific Azure resources through Azure attribute-based access control (Azure ABAC).
 
 Custom security attributes are supported for users and service principals only. This article provides examples of how to assign, update, list, or remove different types of custom security attributes for users and applications using Microsoft Graph.
 
@@ -21,12 +21,12 @@ Custom security attributes are supported for users and service principals only. 
 - Create custom security attributes. For more information about how to define and manage custom security attribute definitions, see [Overview of custom security attributes using Microsoft Graph](/graph/api/resources/custom-security-attributes-overview).
 - For delegated scenarios, the calling must be assigned the following permissions and administrative roles.
   - To assign, update, or remove:
-    - Azure AD roles: [Attribute Assignment Administrator](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json#attribute-assignment-administrator)
+    - Microsoft Entra roles: [Attribute Assignment Administrator](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json#attribute-assignment-administrator)
     - Microsoft Graph permissions:
         - Users: CustomSecAttributeAssignment.ReadWrite.All and User.Read.All
         - Service principals: CustomSecAttributeAssignment.ReadWrite.All and Application.Read.All
   - To read:
-      - Azure AD roles: [Attribute Assignment Reader](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json#attribute-reader) or [Attribute Assignment Administrator](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json#attribute-assignment-administrator)
+      - Microsoft Entra roles: [Attribute Assignment Reader](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json#attribute-reader) or [Attribute Assignment Administrator](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json#attribute-assignment-administrator)
       - Microsoft Graph permissions:
           - Users: CustomSecAttributeAssignment.Read.All and User.Read.All
           - Service principals: CustomSecAttributeAssignment.Read.All and Application.Read.All
@@ -1254,4 +1254,4 @@ HTTP/1.1 204 No Content
 ## Next steps
 
 - [Overview of custom security attributes using the Microsoft Graph API](/graph/api/resources/custom-security-attributes-overview)
-- [What are custom security attributes in Azure AD?](/azure/active-directory/fundamentals/custom-security-attributes-overview)
+- [What are custom security attributes in Microsoft Entra ID?](/azure/active-directory/fundamentals/custom-security-attributes-overview)

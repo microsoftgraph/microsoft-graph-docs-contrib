@@ -13,18 +13,19 @@ Namespace: microsoft.graph
 
 Get the [presence](../resources/presence.md) information for multiple users.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+> **Note:**
+> This API allows users to subscribe only to another user's presence. If an application wants to subscribe to presence information for all users, it uses fictitious users to create the subscription to collect the required data.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call these APIs. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type | Permissions (from least to most privileged)                  |
-| :-------------- | :----------------------------------------------------------- |
-| Delegated (work or school account)     | Presence.Read.All                         |
-| Delegated (personal Microsoft account) | Not Supported.                         |
-| Application                            | Not Supported.                                  |
+<!-- { "blockType": "permissions", "name": "cloudcommunications_getpresencesbyuserid" } -->
+[!INCLUDE [permissions-table](../includes/permissions/cloudcommunications-getpresencesbyuserid-permissions.md)]
 
 > **Note:**
+>
 > * Maximum of 650 user IDs are supported per API request.
 > * The maximum request rate of this API is 1500 API requests in a 30 second period, per application per tenant.
 
@@ -155,4 +156,5 @@ Content-Length: 1574
 }
 -->
 
-
+## See also
+- [Get change notifications for presence updates in Microsoft Teams](/graph/changenotifications-for-presence)

@@ -23,7 +23,7 @@ None.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|category|microsoft.graph.identityGovernance.lifecycleWorkflowCategory|The category of the workflow. The possible values are: `joiner`, `leaver`, `unknownFutureValue`.|
+|category|microsoft.graph.identityGovernance.lifecycleWorkflowCategory|The category of the workflow. The possible values are: `joiner`, `leaver`, `mover`, `unknownFutureValue`.|
 |createdDateTime|DateTimeOffset|When a workflow was created.|
 |description|String|A string that describes the purpose of the workflow.|
 |displayName|String|A string to identify the workflow.|
@@ -37,7 +37,7 @@ None.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |createdBy|[user](../resources/user.md)|The user who created the workflow.|
-|lastModifiedBy|[user](../resources/user.md)|The unique identifier of the Azure Active Directory identity that last modified the workflow.|
+|lastModifiedBy|[user](../resources/user.md)|The unique identifier of the Microsoft Entra identity that last modified the workflow.|
 |tasks|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|The tasks in the workflow.|
 
 ## JSON representation

@@ -18,17 +18,10 @@ Retrieve a list of print jobs associated with the [printerShare](../resources/pr
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, a permission that grants [Get printerShare](printershare-get.md) access, and one of the permissions listed in the following table. 
-
-To read print jobs from another user, the signed in user needs to be a print administrator and have the PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic.All, or PrintJob.ReadWrite.All permission.
-
-|Permission type | Permissions (from least to most privileged) |
-|:---------------|:--------------------------------------------|
-|Delegated (work or school account)| PrintJob.ReadBasic, PrintJob.Read, PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
-|Delegated (personal Microsoft account)|Not Supported.|
-|Application| PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "printershare_list_jobs" } -->
+[!INCLUDE [permissions-table](../includes/permissions/printershare-list-jobs-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -51,12 +44,12 @@ Some operators are not supported: `$count`, `$search`.
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and collection of [printJob](../resources/printjob.md) objects in the response body.
 ## Example
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -102,13 +95,12 @@ GET https://graph.microsoft.com/beta/print/shares/{id}/jobs
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.printJob",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.printJob)"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -120,7 +112,11 @@ Content-type: application/json
     {
       "id": "103",
       "createdDateTime": "2020-02-04T00:00:00.0000000Z",
-      "createdBy": {},
+      "createdBy": {
+        "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd",
+        "displayName": "John Smith",
+        "userPrincipalName": "john.smith@contoso.com"
+      },
       "status": {
         "state": "completed",
         "description": "The print job has completed successfully and no further processing will take place.",

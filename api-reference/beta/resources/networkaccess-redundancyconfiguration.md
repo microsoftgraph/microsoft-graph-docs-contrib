@@ -3,7 +3,7 @@ title: "redundancyConfiguration resource type"
 description: "The redundancy option for a device link specifies the specific details and configuration settings related to redundancy. "
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: resourcePageType
 ---
 

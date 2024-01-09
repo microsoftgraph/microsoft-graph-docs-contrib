@@ -35,13 +35,10 @@ There are two scenarios where an app can get messages in another user's mail fol
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
-|Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
-|Application | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
+<!-- { "blockType": "permissions", "name": "user_list_messages" } -->
+[!INCLUDE [permissions-table](../includes/permissions/user-list-messages-permissions.md)]
 
 ## HTTP request
 
@@ -93,7 +90,7 @@ Failing to do this results in the following error:
 | Prefer: outlook.body-content-type | string | The format of the **body** and **uniqueBody** properties to be returned in. Values can be "text" or "html". If the header is not specified, the **body** and **uniqueBody** properties are returned in HTML format. Optional. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -148,7 +145,7 @@ GET https://graph.microsoft.com/beta/me/messages?$select=sender,subject
 ---
 
 #### Response
-The following is an example of the response. To get the next page of messages, apply the URL returned in `@odata.nextLink` to a subsequent GET request.
+The following example shows the response. To get the next page of messages, apply the URL returned in `@odata.nextLink` to a subsequent GET request.
 
 <!-- {
   "blockType": "response",
@@ -228,7 +225,7 @@ GET https://graph.microsoft.com/beta/me/messages?$filter=MentionsPreview/IsMenti
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -312,7 +309,7 @@ Prefer: outlook.body-content-type="text"
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 
 <!--
 Note: The response includes a `Preference-Applied: outlook.body-content-type` header to acknowledge the `Prefer: outlook.body-content-type` request header.

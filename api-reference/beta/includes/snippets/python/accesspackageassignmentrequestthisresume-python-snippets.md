@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ResumePostRequestBody(
 	source = "Contoso.SodCheckProcess",
@@ -19,7 +19,7 @@ request_body = ResumePostRequestBody(
 	),
 )
 
-await graph_client.identity_governance.entitlement_management.acce_package_assignment_requests.by_acce_package_assignment_request_id('accessPackageAssignmentRequest-id').resume.post(body = request_body)
+await graph_client.identity_governance.entitlement_management.access_package_assignment_requests.by_access_package_assignment_request_id('accessPackageAssignmentRequest-id').resume.post(request_body)
 
 
 ```

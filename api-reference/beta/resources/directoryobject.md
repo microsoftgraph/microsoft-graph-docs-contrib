@@ -1,6 +1,6 @@
 ---
 title: "directoryObject resource type"
-description: "Represents an Azure Active Directory object."
+description: "Represents a Microsoft Entra object."
 ms.localizationpriority: high
 author: "keylimesoda"
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an Azure Active Directory object. The **directoryObject** type is the base type for the following directory entity types generally referred to as directory objects:
+Represents a Microsoft Entra object. The **directoryObject** type is the base type for the following directory entity types generally referred to as directory objects:
 
 + [application](application.md)
 + [administrativeUnit](administrativeunit.md)
@@ -88,5 +88,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = CheckMemberObjectsPostRequestBody(
 	ids = [
@@ -14,10 +14,10 @@ request_body = CheckMemberObjectsPostRequestBody(
 		"62e90394-69f5-4237-9190-012177145e10",
 		"86a64f51-3a64-4cc6-a8c8-6b8f000c0f52",
 		"ac38546e-ddf3-437a-ac5c-27a94cd7a0f1",
-	]
+	],
 )
 
-result = await graph_client.me.check_member_objects.post(body = request_body)
+result = await graph_client.me.check_member_objects.post(request_body)
 
 
 ```

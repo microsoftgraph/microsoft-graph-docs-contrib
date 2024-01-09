@@ -12,7 +12,7 @@ doc_type: "resourcePageType"
 Namespace: microsoft.graph
 
 
-Represents the system that a user was provisioned to or from. For example, when provisioning a user from Azure Active Directory (Azure AD) to ServiceNow, the source system is Azure AD, and the target system is ServiceNow.
+Represents the system that a user was provisioned to or from. For example, when provisioning a user from Microsoft Entra ID to ServiceNow, the source system is Microsoft Entra ID, and the target system is ServiceNow.
 
 ## Properties
 
@@ -54,5 +54,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

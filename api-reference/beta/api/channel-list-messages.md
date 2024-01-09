@@ -19,7 +19,7 @@ To get the replies for a message, call the [list message replies](chatmessage-li
 
 This method supports federation. To list channel messages in application context, the request must be made from the tenant that the channel owner belongs to (represented by the **tenantId** property on the channel).
 
-> **Note**: This API supports subscribing to changes (create, update, and delete) using [change notifications](../resources/webhooks.md). This allows callers to subscribe and get changes in real time. For details, see [Get notifications for messages](/graph/teams-changenotifications-chatmessage).
+> **Note**: This API supports subscribing to changes (create, update, and delete) using [change notifications](../resources/change-notifications-api-overview.md). This allows callers to subscribe and get changes in real time. For details, see [Get notifications for messages](/graph/teams-changenotifications-chatmessage).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -63,7 +63,7 @@ The other [OData query parameters](/graph/query-parameters) are not currently su
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -296,7 +296,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

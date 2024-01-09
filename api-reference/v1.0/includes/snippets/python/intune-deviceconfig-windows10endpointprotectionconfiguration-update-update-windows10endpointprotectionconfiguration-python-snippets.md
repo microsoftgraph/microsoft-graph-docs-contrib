@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Windows10EndpointProtectionConfiguration(
 	odata_type = "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -70,13 +70,13 @@ request_body = Windows10EndpointProtectionConfiguration(
 	),
 	defender_attack_surface_reduction_excluded_paths = [
 		"Defender Attack Surface Reduction Excluded Paths value",
-	]
+	],
 	defender_guarded_folders_allowed_app_paths = [
 		"Defender Guarded Folders Allowed App Paths value",
-	]
+	],
 	defender_additional_guarded_folders = [
 		"Defender Additional Guarded Folders value",
-	]
+	],
 	defender_exploit_protection_xml = base64.urlsafe_b64decode("ZGVmZW5kZXJFeHBsb2l0UHJvdGVjdGlvblhtbA=="),
 	defender_exploit_protection_xml_file_name = "Defender Exploit Protection Xml File Name value",
 	defender_security_center_block_exploit_protection_override = True,
@@ -104,7 +104,7 @@ request_body = Windows10EndpointProtectionConfiguration(
 	),
 )
 
-result = await graph_client.device_management.device_configurations.by_device_configuration_id('deviceConfiguration-id').patch(body = request_body)
+result = await graph_client.device_management.device_configurations.by_device_configuration_id('deviceConfiguration-id').patch(request_body)
 
 
 ```

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 query_params = GroupsRequestBuilder.GroupsRequestBuilderGetQueryParameters(
 		count = True,
@@ -16,11 +16,9 @@ query_params = GroupsRequestBuilder.GroupsRequestBuilderGetQueryParameters(
 
 request_configuration = GroupsRequestBuilder.GroupsRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
-headers = {
-			'ConsistencyLevel' : "eventual",
-}
-
 )
+request_configuration.headers.add("ConsistencyLevel", "eventual")
+
 
 result = await graph_client.groups.get(request_configuration = request_configuration)
 

@@ -6,10 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-await graph_client.acce_reviews.by_acce_review_id('accessReview-id').reviewers.by_reviewer_id('accessReviewReviewer-id').delete()
+await graph_client.access_reviews.by_access_review_id('accessReview-id').reviewers.by_access_review_reviewer_id('accessReviewReviewer-id').delete()
 
 
 ```

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ExternalUsersSelfServiceSignUpEventsFlow(
 	odata_type = "#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow",
@@ -30,7 +30,7 @@ request_body = ExternalUsersSelfServiceSignUpEventsFlow(
 							required = True,
 							validation_reg_ex = "^[a-zA-Z0-9.!#$%&amp;&#8217;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$",
 							options = [
-							]
+							],
 						),
 						AuthenticationAttributeCollectionInputConfiguration(
 							attribute = "displayName",
@@ -43,7 +43,7 @@ request_body = ExternalUsersSelfServiceSignUpEventsFlow(
 							required = False,
 							validation_reg_ex = "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$",
 							options = [
-							]
+							],
 						),
 						AuthenticationAttributeCollectionInputConfiguration(
 							attribute = "city",
@@ -56,7 +56,7 @@ request_body = ExternalUsersSelfServiceSignUpEventsFlow(
 							required = False,
 							validation_reg_ex = "^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$",
 							options = [
-							]
+							],
 						),
 						AuthenticationAttributeCollectionInputConfiguration(
 							attribute = "extension_6ea3bc85aec24b1c92ff4a117afb6621_Favoritecolor",
@@ -69,16 +69,16 @@ request_body = ExternalUsersSelfServiceSignUpEventsFlow(
 							required = False,
 							validation_reg_ex = "^.*",
 							options = [
-							]
+							],
 						),
-					]
+					],
 				),
-			]
+			],
 		),
 	),
 )
 
-result = await graph_client.identity.authentication_event_flows.by_authentication_event_flow_id('authenticationEventsFlow-id').patch(body = request_body)
+result = await graph_client.identity.authentication_events_flows.by_authentication_events_flow_id('authenticationEventsFlow-id').patch(request_body)
 
 
 ```

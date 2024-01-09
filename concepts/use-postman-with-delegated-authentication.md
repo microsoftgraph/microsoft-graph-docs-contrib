@@ -36,7 +36,7 @@ The **Delegated** folder contains many requests for Microsoft Graph workloads th
 
 You have now successfully run a Microsoft Graph request using delegated authentication.
 
-You can repeat these steps to run other requests to Microsoft Graph. Note that you have to add [permissions](permissions-reference.md) to your Azure Active Directory application for other requests to work; otherwise, you get permission denied errors in your responses. To find the right permissions, check the **Permissions** section of the relevant API and look for the delegated permission type.
+You can repeat these steps to run other requests to Microsoft Graph. Note that you have to add [permissions](permissions-reference.md) to your Microsoft Entra application for other requests to work; otherwise, you get permission denied errors in your responses. To find the right permissions, check the **Permissions** section of the relevant API and look for the delegated permission type.
 
 ## Next steps
 

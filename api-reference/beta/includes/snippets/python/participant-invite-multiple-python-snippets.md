@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = InvitePostRequestBody(
 	participants = [
@@ -38,11 +38,11 @@ request_body = InvitePostRequestBody(
 				),
 			),
 		),
-	]
+	],
 	client_context = "f2fa86af-3c51-4bc2-8fc0-475452d9764f",
 )
 
-result = await graph_client.communications.calls.by_call_id('call-id').participants.invite.post(body = request_body)
+result = await graph_client.communications.calls.by_call_id('call-id').participants.invite.post(request_body)
 
 
 ```

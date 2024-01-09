@@ -49,7 +49,7 @@ POST /compliance/ediscovery/cases/{caseId}/legalHolds
 
 In the request body, supply a JSON representation of the [legalHold](../resources/ediscovery-legalhold.md) object.
 
-The following table shows the properties that are required when you create the [legalHold](../resources/ediscovery-legalhold.md).
+The following table lists the properties that are required when you create the [legalHold](../resources/ediscovery-legalhold.md).
 
 |Property|Type|Description|
 |:---|:---|:---|

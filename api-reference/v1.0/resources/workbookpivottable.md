@@ -24,7 +24,7 @@ Represents an Excel PivotTable.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String| Id of the PivotTable.	Read-only.|
+|id|String| ID of the PivotTable.	Read-only.|
 |name|String|Name of the PivotTable.	|
 
 ## Relationships

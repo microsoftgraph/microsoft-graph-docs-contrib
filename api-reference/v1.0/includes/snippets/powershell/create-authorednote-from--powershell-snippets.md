@@ -8,7 +8,7 @@ Import-Module Microsoft.Graph.Compliance
 
 $params = @{
 	content = @{
-		content = "String"
+		content = "Please take a look at the files tagged with follow up"
 		contentType = "text"
 	}
 }

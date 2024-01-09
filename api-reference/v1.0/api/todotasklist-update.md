@@ -15,13 +15,10 @@ Update the properties of a [todoTaskList](../resources/todotasklist.md) object.
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Tasks.ReadWrite|
-|Delegated (personal Microsoft account)|Tasks.ReadWrite|
-|Application|Tasks.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "todotasklist_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/todotasklist-update-permissions.md)]
 
 ## HTTP request
 
@@ -43,7 +40,7 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 ## Request body
 In the request body, supply a JSON representation of the [todoTaskList](../resources/todotasklist.md) object.
 
-The following table shows the properties that are required when you create the [todoTaskList](../resources/todotasklist.md).
+The following table lists the properties that are required when you create the [todoTaskList](../resources/todotasklist.md).
 
 |Property|Type|Description|
 |:---|:---|:---|

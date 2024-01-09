@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = RetentionEvent(
 	odata_type = "#microsoft.graph.security.retentionEvent",
@@ -16,7 +16,7 @@ request_body = RetentionEvent(
 		EventQuery(
 			odata_type = "microsoft.graph.security.eventQueries",
 		),
-	]
+	],
 	event_trigger_date_time = "String (timestamp)",
 	created_by = IdentitySet(
 		odata_type = "microsoft.graph.identitySet",
@@ -25,14 +25,14 @@ request_body = RetentionEvent(
 		EventPropagationResult(
 			odata_type = "microsoft.graph.security.eventPropagationResult",
 		),
-	]
+	],
 	event_status = RetentionEventStatus(
 		odata_type = "microsoft.graph.security.retentionEventStatus",
 	),
 	last_status_update_date_time = "String (timestamp)",
 )
 
-result = await graph_client.security.triggers.retention_events.post(body = request_body)
+result = await graph_client.security.triggers.retention_events.post(request_body)
 
 
 ```

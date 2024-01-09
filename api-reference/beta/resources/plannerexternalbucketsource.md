@@ -22,10 +22,10 @@ This type is derived from [plannerBucketCreation](plannerBucketCreation.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|creationSourceKind|plannerCreationSourceKind|Specifies what kind of creation source the bucket is created with. The possible values are: `external`, `publication` and `unknownFutureValue`. The value of this property will be `external`. Inherited from [plannerBucketCreation](plannerBucketCreation.md).|
+|creationSourceKind|plannerCreationSourceKind|Specifies what kind of creation source the bucket is created with. The possible values are: `external`, `publication` and `unknownFutureValue`. The value of this property is `external`. Inherited from [plannerBucketCreation](plannerBucketCreation.md).|
 |contextScenarioId|String| Nullable. An identifier for the scenario associated with this external source. This should be in reverse DNS format. For example, Contoso company owned application for customer support would have a value like "com.constoso.customerSupport".|
-|externalObjectId|String| Nullable. The id of the entity that an external service associates with a bucket.|
-|externalContextId|String| Nullable. The id of the external entity's containing entity or context.|
+|externalObjectId|String| Nullable. The ID of the entity that an external service associates with a bucket.|
+|externalContextId|String| Nullable. The ID of the external entity's containing entity or context.|
 
 ## Relationships
 None.

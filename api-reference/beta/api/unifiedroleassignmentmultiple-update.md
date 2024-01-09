@@ -3,6 +3,7 @@ title: "Update unifiedRoleAssignmentMultiple"
 description: "Update a new unifiedRoleAssignmentMultiple object."
 ms.localizationpriority: medium
 author: "DougKirschner"
+ms.reviewer: msodsrbac
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
@@ -25,23 +26,17 @@ In contrast, [unifiedRoleAssignment](../resources/unifiedroleassignment.md) does
 
 ## Permissions
 
-Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, see [Permissions](/graph/permissions-reference). 
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 ### For Cloud PC provider
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  CloudPC.ReadWrite.All   |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | CloudPC.ReadWrite.All  |
+<!-- { "blockType": "permissions", "name": "unifiedroleassignmentmultiple_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedroleassignmentmultiple-update-permissions.md)]
 
 ### For Device management (Intune) provider
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  DeviceManagementRBAC.ReadWrite.All   |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | DeviceManagementRBAC.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "unifiedroleassignmentmultiple_update_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/unifiedroleassignmentmultiple-update-2-permissions.md)]
 
 
 ## HTTP request
@@ -80,7 +75,7 @@ If successful, this method returns a `200 OK` response code and an updated [unif
 ### Example 1: Update an existing unfiedRoleAssignmentMultiple in an Intune provider
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -135,7 +130,7 @@ Content-type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {

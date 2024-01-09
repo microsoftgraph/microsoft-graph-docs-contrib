@@ -6,14 +6,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Call(
 	odata_type = "#microsoft.graph.call",
 	callback_uri = "https://bot.contoso.com/callback",
 	requested_modalities = [
 		Modality.Audio,
-	]
+	],
 	media_config = ServiceHostedMediaConfig(
 		odata_type = "#microsoft.graph.serviceHostedMediaConfig",
 		pre_fetch_media = [
@@ -25,7 +25,7 @@ request_body = Call(
 				uri = "https://cdn.contoso.com/cool.wav",
 				resource_id = "86dc814b-c172-4428-9112-60f8ecae1edb",
 			),
-		]
+		],
 	),
 	chat_info = ChatInfo(
 		odata_type = "#microsoft.graph.chatInfo",
@@ -49,7 +49,7 @@ request_body = Call(
 	),
 )
 
-result = await graph_client.communications.calls.post(body = request_body)
+result = await graph_client.communications.calls.post(request_body)
 
 
 ```

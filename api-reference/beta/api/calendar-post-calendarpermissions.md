@@ -72,7 +72,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -128,7 +128,7 @@ POST https://graph.microsoft.com/beta/users/458d4c95-124e-49da-ba9d-1dd0387e682e
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

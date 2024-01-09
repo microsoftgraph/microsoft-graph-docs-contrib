@@ -14,16 +14,13 @@ Namespace: microsoft.graph
 
 Retrieve all decision items on an instance of an access review or a stage of an instance of a multi-stage access review, for which the calling user is the reviewer. The decision items are presented by a [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects on a given [accessReviewInstance](../resources/accessreviewinstance.md) or [accessReviewStage](../resources/accessReviewStage.md) for which the calling user is the reviewer.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|AccessReview.Read.All, AccessReview.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|AccessReview.Read.All, AccessReview.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "accessreviewinstancedecisionitem_filterbycurrentuser" } -->
+[!INCLUDE [permissions-table](../includes/permissions/accessreviewinstancedecisionitem-filterbycurrentuser-permissions.md)]
 
 ## HTTP request
 
@@ -67,7 +64,7 @@ The default page size for this API is 100 **accessReviewInstanceDecisionItem** o
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -111,6 +108,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/accessreviewinstancedecisionitem-filterbycurrentuser-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/accessreviewinstancedecisionitem-filterbycurrentuser-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -212,6 +213,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/accessreviewinstancedecisionitem-filterbycurrentuser-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/accessreviewinstancedecisionitem-filterbycurrentuser-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

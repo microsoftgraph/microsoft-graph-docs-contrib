@@ -15,7 +15,7 @@ For details about the settings that govern identification/de-identification of i
 
 ## Authorization
 
-Microsoft Graph controls access to resources via permissions. You must specify the permissions you need in order to access Reports resources. Typically, you specify permissions in the Azure Active Directory (Azure AD) portal. For more information, see [Microsoft Graph permissions reference](/graph/permissions-reference) and [Reports permissions](/graph/permissions-reference#reports-permissions).
+Microsoft Graph controls access to resources via permissions. You must specify the permissions you need in order to access Reports resources. Typically, you specify permissions in the Microsoft Entra admin center. For more information, see [Microsoft Graph permissions reference](/graph/permissions-reference) and [Reports permissions](/graph/permissions-reference#reports-permissions).
 
 ## Cloud deployments
 
@@ -45,9 +45,6 @@ The following table shows the availability for each API across all cloud deploym
 | [Yammer activity](/graph/api/resources/yammer-activity-reports?view=graph-rest-1.0&preserve-view=true) | ✔                              | ➖                                     | ➖                                              |
 | [Yammer device usage](/graph/api/resources/yammer-device-usage-reports?view=graph-rest-1.0&preserve-view=true) | ✔                              | ➖                                     | ➖                                              |
 | [Yammer groups activity](/graph/api/resources/yammer-groups-activity-reports?view=graph-rest-1.0&preserve-view=true) | ✔                              | ➖                                     | ➖                                              |
-
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 
 ## Next steps
 

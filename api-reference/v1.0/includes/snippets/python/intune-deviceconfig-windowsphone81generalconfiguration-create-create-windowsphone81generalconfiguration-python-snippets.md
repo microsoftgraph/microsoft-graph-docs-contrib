@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = WindowsPhone81GeneralConfiguration(
 	odata_type = "#microsoft.graph.windowsPhone81GeneralConfiguration",
@@ -26,7 +26,7 @@ request_body = WindowsPhone81GeneralConfiguration(
 			app_store_url = "https://example.com/appStoreUrl/",
 			app_id = "App Id value",
 		),
-	]
+	],
 	compliant_app_list_type = AppListType.AppsInListCompliant,
 	diagnostic_data_block_submission = True,
 	email_block_adding_accounts = True,
@@ -52,7 +52,7 @@ request_body = WindowsPhone81GeneralConfiguration(
 	windows_store_blocked = True,
 )
 
-result = await graph_client.device_management.device_configurations.post(body = request_body)
+result = await graph_client.device_management.device_configurations.post(request_body)
 
 
 ```

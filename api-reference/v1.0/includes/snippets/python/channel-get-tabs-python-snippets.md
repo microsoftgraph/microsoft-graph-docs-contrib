@@ -6,17 +6,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
-query_params = TeamsTabRequestBuilder.TeamsTabRequestBuilderGetQueryParameters(
+query_params = TeamsTabItemRequestBuilder.TeamsTabItemRequestBuilderGetQueryParameters(
 		expand = ["teamsApp"],
 )
 
-request_configuration = TeamsTabRequestBuilder.TeamsTabRequestBuilderGetRequestConfiguration(
+request_configuration = TeamsTabItemRequestBuilder.TeamsTabItemRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
 )
 
-result = await graph_client.teams.by_team_id('team-id').channels.by_channel_id('channel-id').tabs.by_tab_id('teamsTab-id').get(request_configuration = request_configuration)
+result = await graph_client.teams.by_team_id('team-id').channels.by_channel_id('channel-id').tabs.by_teams_tab_id('teamsTab-id').get(request_configuration = request_configuration)
 
 
 ```

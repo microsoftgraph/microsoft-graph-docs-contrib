@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = RetentionEventType(
 	odata_type = "#microsoft.graph.security.retentionEventType",
@@ -17,7 +17,7 @@ request_body = RetentionEventType(
 	),
 )
 
-result = await graph_client.security.trigger_types.retention_event_types.post(body = request_body)
+result = await graph_client.security.trigger_types.retention_event_types.post(request_body)
 
 
 ```

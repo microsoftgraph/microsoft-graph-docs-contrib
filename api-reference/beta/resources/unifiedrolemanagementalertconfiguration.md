@@ -1,6 +1,6 @@
 ---
 title: "unifiedRoleManagementAlertConfiguration resource type"
-description: "An abstract type that exposes the tenant-specific configurations of a security alert that can be updated or modified in Privileged Identity Management (PIM) for Azure AD roles."
+description: "An abstract type that exposes the tenant-specific configurations of a security alert that can be updated or modified in Privileged Identity Management (PIM) for Microsoft Entra roles."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract type that exposes the tenant-specific configurations of a [security alert](unifiedrolemanagementalert.md) that can be updated or modified in [Privileged Identity Management (PIM) for Azure AD roles](privilegedidentitymanagementv3-overview.md).
+An abstract type that exposes the tenant-specific configurations of a [security alert](unifiedrolemanagementalert.md) that can be updated or modified in [Privileged Identity Management (PIM) for Microsoft Entra roles](privilegedidentitymanagementv3-overview.md).
 
 This abstract type is inherited by the following derived types:
 
@@ -27,7 +27,7 @@ This abstract type is inherited by the following derived types:
 
 Inherits from [entity](../resources/entity.md).
 
-For more information about working with security alerts for Azure AD roles using PIM APIs, see [Manage security alerts for Azure AD roles using PIM APIs in Microsoft Graph](/graph/how-to-pim-alerts).
+For more information about working with security alerts for Microsoft Entra roles using PIM APIs, see [Manage security alerts for Microsoft Entra roles using PIM APIs in Microsoft Graph](/graph/how-to-pim-alerts).
 
 ## Methods
 |Method|Return type|Description|
@@ -43,7 +43,7 @@ For more information about working with security alerts for Azure AD roles using
 |id|String|The identifier of the alert configuration. Inherited from [entity](../resources/entity.md).|
 |isEnabled|Boolean|`true` if the alert is enabled. Setting it to `false` disables PIM scanning the tenant to identify instances that trigger the alert.|
 |scopeId|String|The identifier of the scope to which the alert is related. Only `/` is supported to represent the tenant scope. Supports `$filter` (`eq`, `ne`).|
-|scopeType|String|The type of scope where the alert is created. `DirectoryRole` is the only currently supported scope type for Azure AD roles. |
+|scopeType|String|The type of scope where the alert is created. `DirectoryRole` is the only currently supported scope type for Microsoft Entra roles. |
 
 ## Relationships
 |Relationship|Type|Description|
@@ -72,5 +72,4 @@ The following is a JSON representation of the resource.
 ```
 
 ## See also
-+ [Manage security alerts for Azure AD roles using PIM APIs in Microsoft Graph](/graph/how-to-pim-alerts).
-
++ [Manage security alerts for Microsoft Entra roles using PIM APIs in Microsoft Graph](/graph/how-to-pim-alerts).

@@ -6,17 +6,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-request_configuration = PlannerBucketRequestBuilder.PlannerBucketRequestBuilderDeleteRequestConfiguration(
-headers = {
-		'If-Match' : "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"",
-}
+request_configuration = PlannerBucketItemRequestBuilder.PlannerBucketItemRequestBuilderDeleteRequestConfiguration()
+request_configuration.headers.add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 
-)
 
-await graph_client.planner.buckets.by_bucket_id('plannerBucket-id').delete(request_configuration = request_configuration)
+await graph_client.planner.buckets.by_planner_bucket_id('plannerBucket-id').delete(request_configuration = request_configuration)
 
 
 ```

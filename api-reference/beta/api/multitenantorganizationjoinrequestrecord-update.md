@@ -23,13 +23,10 @@ Furthermore, to allow for asynchronous processing, you must wait **up to 4 hours
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|MultiTenantOrganization.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|MultiTenantOrganization.ReadWrite.All|
+<!-- { "blockType": "permissions", "name": "multitenantorganizationjoinrequestrecord_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/multitenantorganizationjoinrequestrecord-update-permissions.md)]
 
 [!INCLUDE [rbac-multitenantorganization-apis-write](../includes/rbac-for-apis/rbac-multitenantorganization-apis-write.md)]
 
@@ -55,7 +52,7 @@ PATCH /tenantRelationships/multiTenantOrganization/joinRequest
 
 |Property|Type|Description|
 |:---|:---|:---|
-|addedByTenantId|String|Tenant ID of the Azure Active Directory tenant that added the current tenant to the multi-tenant organization. To reset a failed join request, set `addedByTenantId` to `00000000-0000-0000-0000-000000000000`. Required.|
+|addedByTenantId|String|Tenant ID of the Microsoft Entra tenant that added the current tenant to the multi-tenant organization. To reset a failed join request, set `addedByTenantId` to `00000000-0000-0000-0000-000000000000`. Required.|
 
 
 ## Response
@@ -202,4 +199,3 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 204 No Content
 ```
-

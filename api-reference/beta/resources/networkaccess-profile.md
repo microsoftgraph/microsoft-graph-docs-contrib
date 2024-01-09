@@ -3,7 +3,7 @@ title: "network access profile resource type"
 description: "A profile serves as a container for forwarding policies."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: resourcePageType
 ---
 

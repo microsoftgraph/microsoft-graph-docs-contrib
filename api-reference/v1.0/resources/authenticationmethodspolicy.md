@@ -1,7 +1,8 @@
 ---
 title: "authenticationMethodsPolicy resource type"
-description: "Defines authentication methods and the users that are allowed to use them to sign in and perform multi-factor authentication (MFA)."
+description: "Defines authentication methods and the users that are allowed to use them to sign in and perform multifactor authentication (MFA)."
 author: "jpettere"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
@@ -11,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Defines authentication methods and the users that are allowed to use them to sign in and perform multi-factor authentication (MFA) in Azure Active Directory (Azure AD).
+Defines authentication methods and the users that are allowed to use them to sign in and perform multifactor authentication (MFA) in Microsoft Entra ID.
 
 ## Methods
 |Method|Return type|Description|

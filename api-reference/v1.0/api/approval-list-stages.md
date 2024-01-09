@@ -11,26 +11,46 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), list the [approvalStage](../resources/approvalstage.md) objects associated with an [approval](../resources/approval.md) object. This call can be made by an approver, providing the identifier of the [access package assignment request](../resources/accesspackageassignmentrequest.md).
+List the [approvalStage](../resources/approvalstage.md) objects associated with an [approval](../resources/approval.md). This API request is made by an approver in the following scenarios:
+
+In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), providing the identifier of the [access package assignment request](../resources/accesspackageassignmentrequest.md).
+In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), providing the identifier of the [assignment schedule request](../resources/privilegedaccessgroupassignmentschedulerequest.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+### For entitlement management
 
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
+### For PIM for groups
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | PrivilegedAssignmentSchedule.Read.AzureADGroup, PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | Not supported. |
+
 ## HTTP request
 
+To list the approval stages in entitlement management:
 <!-- { "blockType": "ignored" } -->
-
 ```http
 GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{accessPackageAssignmentRequestId}/stages
+```
+
+To list the approval stages in PIM for groups:
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /identityGovernance/privilegedAccess/group/assignmentApprovals/{privilegedaccessgroupassignmentschedulerequestId}/stages
 ```
 
 ## Request headers
@@ -41,7 +61,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -98,7 +118,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/ac
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -137,5 +157,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

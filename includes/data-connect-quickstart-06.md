@@ -14,7 +14,7 @@ We recommend that you use Azure Synapse because it has more in-built capabilitie
 
 1. Open a browser and go to your [Azure portal](https://portal.azure.com/#home).
 
-1. Sign in to the portal using an account with an [Application Administrator](/azure/active-directory/roles/permissions-reference#application-administrator) or [Application Developer](/azure/active-directory/roles/permissions-reference#application-developer) role. Ensure that you are signed-in with your developer account that has privileges to create Azure resources within your subscription.
+1. Sign in to the portal using an account with an [Application Administrator](/entra/identity/role-based-access-control/permissions-reference#application-administrator) or [Application Developer](/entra/identity/role-based-access-control/permissions-reference#application-developer) role. Ensure that you are signed-in with your developer account that has privileges to create Azure resources within your subscription.
 
 1. On the left pane, select **Create a resource**.
 
@@ -76,7 +76,7 @@ We recommend that you use Azure Synapse because it has more in-built capabilitie
 
         ![A screenshot of the Set properties pane with New highlighted.](../concepts/images/data-connect-synapse-linked-service.png)
 
-    1. In the dialog box, from the **Connect via integration runtime** dropdown, select the integration runtime you created, enter the **Application ID** and **client secret value** of the Azure Active Directory (Azure AD) application in the **Service principal ID** and **Service principal key** fields respectively, and choose **Create**.  
+    1. In the dialog box, from the **Connect via integration runtime** dropdown, select the integration runtime you created, enter the **Application ID** and **client secret value** of the Microsoft Entra application in the **Service principal ID** and **Service principal key** fields respectively, and choose **Create**.  
 
         ![A screenshot of the New linked service pane.](../concepts/images/data-connect-synapse-service-id.png)
 
@@ -108,8 +108,8 @@ We recommend that you use Azure Synapse because it has more in-built capabilitie
             - **Authentication type:** Service Principal
             - **Azure subscription:** Select all.
             - **Storage account name:** mgdcm365datastore. This is the storage account created earlier in this exercise.
-            - **Service principal ID:** Enter the ID of the Azure AD application you created.
-            - **Service principal key:** Enter the hashed key of the Azure AD application you created.
+            - **Service principal ID:** Enter the ID of the Microsoft Entra application you created.
+            - **Service principal key:** Enter the hashed key of the Microsoft Entra application you created.
 
         ![A screenshot of the New linked service pane with the pane highlighted.](../concepts/images/data-connect-synapse-new-linked-service.png)
 
@@ -160,7 +160,7 @@ Now that you've created the pipeline, it's time to run it.
 
 1. Open a browser and go to your [Azure portal](https://portal.azure.com/).
 
-1. Sign in to the Azure portal with an account that has either the [Application administrator](/azure/active-directory/roles/permissions-reference#application-administrator) or [Application developer](/azure/active-directory/roles/permissions-reference#application-developer) role. Make sure you are using your **developer** account, which has the necessary privileges to create Azure resources within your subscription.
+1. Sign in to the Azure portal with an account that has either the [Application administrator](/entra/identity/role-based-access-control/permissions-reference#application-administrator) or [Application developer](/entra/identity/role-based-access-control/permissions-reference#application-developer) role. Make sure you are using your **developer** account, which has the necessary privileges to create Azure resources within your subscription.
 
 1. On the home page, select **Create a resource**.
 
@@ -221,7 +221,7 @@ Now that you've created the pipeline, it's time to run it.
         ![A screenshot of the Azure portal Data Factory service page with New linked service pane highlight selecting new.](../concepts/images/dataconnect-adf-source-newlinkedservice.png)
 
     1. In the dialog that appears, select the integration runtime you previously created in the **Connect via integration runtime** dropdown.
-    1. Enter the previously created **Application ID** and **Client Secret Value** of the Azure AD application in the **Service principal ID** and **Service principal key** fields respectively.
+    1. Enter the previously created **Application ID** and **Client Secret Value** of the Microsoft Entra application in the **Service principal ID** and **Service principal key** fields respectively.
     1. Then click **Create**.  
 
         ![A screenshot of the Azure portal Data Factory service page with the service principal key configured.](../concepts/images/data-connect-adf-linked-service.png)
@@ -251,8 +251,8 @@ Now that you've created the pipeline, it's time to run it.
             - **Azure subscription**: Select all
             - **Storage account name**: Select the storage account you previously created
             - **Tenant**: Enter the ID of your Azure tenant
-            - **Service principal ID**: Enter the ID of the Azure AD application you previously created
-            - **Service principal key**: Enter the client secret value of the Azure AD application you previously created
+            - **Service principal ID**: Enter the ID of the Microsoft Entra application you previously created
+            - **Service principal key**: Enter the client secret value of the Microsoft Entra application you previously created
         1. Click **Create**
 
     1. In the Set **properties** pane, next to the **File path** field, click the folder icon to Browse.

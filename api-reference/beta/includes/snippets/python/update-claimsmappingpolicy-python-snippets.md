@@ -6,13 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ClaimsMappingPolicy(
 	display_name = "UpdateClaimsPolicy",
 )
 
-result = await graph_client.policies.claim_mapping_policies.by_claim_mapping_policie_id('claimsMappingPolicy-id').patch(body = request_body)
+result = await graph_client.policies.claims_mapping_policies.by_claims_mapping_policy_id('claimsMappingPolicy-id').patch(request_body)
 
 
 ```

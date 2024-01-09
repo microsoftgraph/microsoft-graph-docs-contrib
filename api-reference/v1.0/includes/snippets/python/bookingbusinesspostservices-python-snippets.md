@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = BookingService(
 	odata_type = "#microsoft.graph.bookingService",
@@ -50,7 +50,7 @@ request_body = BookingService(
 					"recipients@odata_type" : "#microsoft.graph.bookingReminderRecipients",
 			}
 		),
-	]
+	],
 	description = "Individual bento box lunch delivery",
 	display_name = "Bento",
 	is_location_online = True,
@@ -71,7 +71,7 @@ request_body = BookingService(
 	staff_member_ids = [
 		"d90d1e8c-5cfe-48cf-a2d5-966267375b6a",
 		"2f5f8794-0b29-45b5-b56a-2eb5ff7aa880",
-	]
+	],
 	is_anonymous_join_enabled = False,
 	additional_data = {
 			"default_price_type@odata_type" : "#microsoft.graph.bookingPriceType",
@@ -80,7 +80,7 @@ request_body = BookingService(
 	}
 )
 
-result = await graph_client.solutions.booking_businesses.by_booking_businesse_id('bookingBusiness-id').services.post(body = request_body)
+result = await graph_client.solutions.booking_businesses.by_booking_business_id('bookingBusiness-id').services.post(request_body)
 
 
 ```

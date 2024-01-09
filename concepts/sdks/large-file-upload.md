@@ -21,6 +21,10 @@ A number of entities in Microsoft Graph support [resumable file uploads](/graph/
 
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/LargeFileUpload.java" id="LargeFileUploadSnippet":::
 
+## [PHP](#tab/PHP)
+
+:::code language="php" source="./snippets/php/snippets/LargeFileUpload.php" id="LargeFileUploadSnippet":::
+
 ## [TypeScript](#tab/typescript)
 
 :::code language="typescript" source="./snippets/typescript/src/snippets/largeFileUpload.ts" id="LargeFileUploadSnippet":::
@@ -40,6 +44,10 @@ The Microsoft Graph SDKs support [resuming in-progress uploads](/graph/api/drive
 > [!NOTE]
 > The Java SDK does not currently support resuming in-progress downloads.
 
+### [PHP](#tab/PHP)
+
+:::code language="php" source="./snippets/php/snippets/LargeFileUpload.php" id="ResumeSnippet":::
+
 ### [TypeScript](#tab/typescript)
 
 :::code language="typescript" source="./snippets/typescript/src/snippets/largeFileUpload.ts" id="ResumeSnippet":::
@@ -55,6 +63,10 @@ The Microsoft Graph SDKs support [resuming in-progress uploads](/graph/api/drive
 ### [Java](#tab/java)
 
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/LargeFileUpload.java" id="UploadAttachmentSnippet":::
+
+### [PHP](#tab/PHP)
+
+:::code language="php" source="./snippets/php/snippets/LargeFileUpload.php" id="UploadAttachmentSnippet":::
 
 ### [TypeScript](#tab/typescript)
 

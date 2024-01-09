@@ -13,13 +13,10 @@ Namespace: microsoft.graph
 
 Update the properties of rangeformat object.
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.ReadWrite    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+<!-- { "blockType": "permissions", "name": "rangeformat_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/rangeformat-update-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -62,7 +59,7 @@ The result of this set of requests is a table with three cells formatted like th
 ![Excel chart table with three cells whose format, fill, and font properties have been updated.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/ExcelRangeFormatting.png)
 
 ##### Request
-This request updates the vertical alignment, row height, and column height of the first cell. 
+This request updates the vertical alignment, row height, and column height of the first cell.
 
 
 # [HTTP](#tab/http)
@@ -113,7 +110,7 @@ Content-type: application/json
 ```
 
 ##### Request
-This request updates the font style, size, and color of the first cell. 
+This request updates the font style, size, and color of the first cell.
 
 
 # [HTTP](#tab/http)
@@ -166,7 +163,7 @@ Content-type: application/json
 ```
 
 ##### Request
-This request updates the background color of the first cell. 
+This request updates the background color of the first cell.
 
 
 # [HTTP](#tab/http)
@@ -209,7 +206,7 @@ Content-type: application/json
 }
 ```
 ##### Request
-This request updates the vertical alignment, horizontal alignment, row height, and column height of the second cell. 
+This request updates the vertical alignment, horizontal alignment, row height, and column height of the second cell.
 
 
 # [HTTP](#tab/http)
@@ -263,7 +260,7 @@ Content-type: application/json
 ```
 
 ##### Request
-This request updates the font style and size of the second cell. 
+This request updates the font style and size of the second cell.
 
 
 # [HTTP](#tab/http)
@@ -313,7 +310,7 @@ Content-type: application/json
 ```
 
 ##### Request
-This request updates the background color of the second cell. 
+This request updates the background color of the second cell.
 
 
 # [HTTP](#tab/http)
@@ -357,7 +354,7 @@ Content-type: application/json
 ```
 
 ##### Request
-This request updates the horizontal alignment, vertical alignment, row height, and column height of the third cell. 
+This request updates the horizontal alignment, vertical alignment, row height, and column height of the third cell.
 
 
 # [HTTP](#tab/http)
@@ -462,7 +459,7 @@ Content-type: application/json
 ```
 
 ##### Request
-This request updates the background color of the third cell. 
+This request updates the background color of the third cell.
 
 
 # [HTTP](#tab/http)
@@ -513,7 +510,7 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-    "Error: update_font_rangeformat/underline:
+    "Error: updatefontrangeformat/underline:
       Expected type String but actual was Single. Property: underline, actual value: 'Single'"
   ],
   "tocPath": ""
