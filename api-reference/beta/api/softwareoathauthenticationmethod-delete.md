@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Delete a user's [Software OATH token authentication method](../resources/softwareoathauthenticationmethod.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 
