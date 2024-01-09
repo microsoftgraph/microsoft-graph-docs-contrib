@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|PlaceDevice.ReadWrite.All|
 
-For an app with delegated permissions to write workplace devices, the signed-in user must be a member of one of the following Azure AD administrator roles: Global Administrator or Exchange Online management roles: TenantPlacesManagement.
+For an app with delegated permissions to write workplace devices, the signed-in user must be a member of one of the following Microsoft Entra administrator roles: Global Administrator or Exchange Online management roles: TenantPlacesManagement.
 
 ## HTTP request
 
@@ -55,7 +55,7 @@ You can specify the following properties when creating a **workplaceSensorDevice
 |ipV6Address|String|The IPv6 Address of the device. Optional.|
 |macAddress|String|The MAC address of the device. Optional.|
 |manufacturer|String|The manufacturer of the device. Required.|
-|placeId|String|The unique identifier of the place where the device is located. If the device is installed in a room featuring a mailbox, this property should match the ExternalDirectoryObjectId or Entra ID object Id of the room mailbox. Optional.|
+|placeId|String|The unique identifier of the place where the device is located. If the device is installed in a room featuring a mailbox, this property should match the ExternalDirectoryObjectId or Microsoft Entra object Id of the room mailbox. Optional.|
 |sensors|[workplaceSensor](../resources/workplacesensor.md) collection|A list of sensors associated with the device that collect and report data about physical or environmental conditions, such as occupancy, people count, inferred occupancy, temperature etc. Required.|
 |tags|String collection|A list of custom tags associated with the device. Supports $filter. Optional.|
 
