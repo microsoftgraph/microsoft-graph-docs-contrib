@@ -17,6 +17,13 @@ Use the Cloud PC API to provision and manage virtual desktops for employees in a
 
 Inherits from [entity](../resources/entity.md).
 
+## Methods
+
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List onPremisesConnections](../api/virtualendpoint-list-onpremisesconnections.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) collection|List properties and relationships of the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) objects.|
+|[Create cloudPcOnPremisesConnection](../api/virtualendpoint-post-onpremisesconnections.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|Create a new [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.|
+
 ## Properties
 
 |Property|Type|Description|
