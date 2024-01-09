@@ -23,7 +23,7 @@ Represents a pending external profile in Azure Active Directory. Inherits from t
 |[List pendingExternalUserProfiles](../api/directory-list-pendingexternaluserprofile.md) |[pendingExternalUserProfile](pendingexternaluserprofile.md) collection| Gets a list of all pending external user profiles. |
 |[Create pendingExternalUserProfile](../api/directory-post-pendingexternaluserprofile.md) |[pendingExternalUserProfile](pendingexternaluserprofile.md)| Creates a new pending external user profile. |
 |[Update pendingExternalUserProfile](../api/pendingexternaluserprofile-update.md) | None | Update a pending external user profile. |
-|[Delete pendingExternalUserProfile](../api/pendingexternaluserprofile-delete.md) | None | Delete a pending external user profile. |
+|[Delete pendingExternalUserProfile](../api/directory-delete-pendingexternaluserprofiles.md) | None | Delete a pending external user profile. |
 
 ## Properties
 

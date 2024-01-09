@@ -22,7 +22,7 @@ Represents an external profile in Azure Active Directory. Inherits from the [ext
 |[Get externalUserProfile](../api/externaluserprofile-get.md) | [externalUserProfile](externaluserprofile.md) | Gets the properties of an external user profile. |
 |[List externalUserProfiles](../api/directory-list-externaluserprofile.md) |[externalUserProfile](externaluserprofile.md) collection| Gets a list of all external user profiles. |
 |[Update externalUserProfile](../api/externaluserprofile-update.md) | None | Update an external user profile. |
-|[Delete externalUserProfile](../api/externaluserprofile-delete.md) | None | Delete an external user profile. |
+|[Delete externalUserProfile](../api/directory-delete-externaluserprofiles.md) | None | Delete an external user profile. |
 
 ## Properties
 

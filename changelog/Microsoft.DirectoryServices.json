@@ -1003,7 +1003,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "externalProfile",
           "ChangeType": "Addition",
-          "Description": "Added the [externalProfile](https://learn.microsoft.com/en-us/graph/api/resources/externalprofile?view=graph-rest-beta) resource. This entity exposes basic information used to represent an external profile in your Azure Active Directory tenant.",
+          "Description": "Added the [externalProfile](https://learn.microsoft.com/graph/api/resources/externalprofile?view=graph-rest-beta) resource. This entity exposes basic information used to represent an external profile in your Azure Active Directory tenant.",
           "Target": "externalProfile"
         },
         {
@@ -1011,7 +1011,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "pendingExternalUserProfiles",
           "ChangeType": "Addition",
-          "Description": "Added the [pendingExternalUserProfile](https://learn.microsoft.com/en-us/graph/api/resources/pendingexternaluserprofile?view=graph-rest-beta) resource and associated methods. This entity exposes basic information used to represent a pending external user profile in your Azure Active Directory tenant.",
+          "Description": "Added the [pendingExternalUserProfile](https://learn.microsoft.com/graph/api/resources/pendingexternaluserprofile?view=graph-rest-beta) resource and associated methods. This entity exposes basic information used to represent a pending external user profile in your Azure Active Directory tenant.",
           "Target": "pendingExternalUserProfile"
         },
         {
@@ -1019,7 +1019,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "externalUserProfiles",
           "ChangeType": "Addition",
-          "Description": "Added the [externalUserProfile](https://learn.microsoft.com/en-us/graph/api/resources/externaluserprofile?view=graph-rest-beta) resource and associated methods. This entity exposes basic information used to represent an external user profile in your Azure Active Directory tenant.",
+          "Description": "Added the [externalUserProfile](https://learn.microsoft.com/graph/api/resources/externaluserprofile?view=graph-rest-beta) resource and associated methods. This entity exposes basic information used to represent an external user profile in your Azure Active Directory tenant.",
           "Target": "externalUserProfile"
         },
         {

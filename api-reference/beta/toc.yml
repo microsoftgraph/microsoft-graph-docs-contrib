@@ -11966,7 +11966,7 @@ items:
                   - name: Update
                     href: api/externaluserprofile-update.md
                   - name: Delete
-                    href: api/externaluserprofile-delete.md
+                    href: api/directory-delete-externaluserprofiles.md
                 - name: Pending external user profile
                   href: resources/pendingexternaluserprofile.md
                   items:
@@ -11979,7 +11979,7 @@ items:
                   - name: Update
                     href: api/pendingexternaluserprofile-update.md
                   - name: Delete
-                    href: api/pendingexternaluserprofile-delete.md
+                    href: api/directory-delete-pendingexternaluserprofiles.md
               - name: Feature rollout policy
                 href: resources/featurerolloutpolicy.md
                 items:
