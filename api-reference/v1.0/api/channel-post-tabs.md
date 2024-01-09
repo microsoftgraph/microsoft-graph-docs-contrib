@@ -1,6 +1,6 @@
 ---
 title: "Add tab to channel"
-description: "Adds (pins) a tab to the specified channel within a team. "
+description: "Add (pin) a tab to the specified channel within a team. "
 author: "nkramer"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
@@ -11,14 +11,12 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-
-
-Adds (pins) a [tab](../resources/teamstab.md) to the specified [channel](../resources/channel.md) within a [team](../resources/team.md). 
-The corresponding app must already be [installed in the team](../api/team-list-installedapps.md).
+Add (pin) a [tab](../resources/teamstab.md) to the specified [channel](../resources/channel.md) within a [team](../resources/team.md). The app must be [preinstalled in the team](../api/team-list-installedapps.md) and have the [configurableTabs](/microsoftteams/platform/resources/schema/manifest-schema#configurabletabs) property defined in the app manifest.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -52,7 +50,7 @@ If successful, this method returns a `201 Created` response code.
 
 ## Example
 
-#### Request
+### Request
 
 The following example shows a request.
 # [HTTP](#tab/http)
@@ -106,9 +104,10 @@ POST https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs
 
 ---
 
-#### Response
+### Response
 
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

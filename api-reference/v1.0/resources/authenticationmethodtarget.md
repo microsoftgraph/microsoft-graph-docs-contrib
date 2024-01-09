@@ -2,6 +2,7 @@
 title: "authenticationMethodTarget resource type"
 description: "A collection of groups that are enabled to use an authentication method as part of an authentication method policy."
 author: "jpettere"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

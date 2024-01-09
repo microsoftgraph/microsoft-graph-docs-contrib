@@ -32,7 +32,7 @@ Inherits from [trainingSetting](../resources/trainingsetting.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.microsoftTrainingAssignmentMapping"
@@ -42,8 +42,6 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.microsoftTrainingAssignmentMapping",
   "assignedTo": ["String"],
-  "completionDateTime": "String (timestamp)",
-  "settingType": "String",
-  "trainingCompletionDuration": "String"
+  "settingType": "String"
 }
 ```

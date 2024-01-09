@@ -3,6 +3,7 @@ title: "directoryRole resource type"
 description: "Represents a Microsoft Entra directory role. Microsoft Entra directory roles are also known as *administrator roles*."
 ms.localizationpriority: medium
 author: "DougKirschner"
+ms.reviewer: msodsrbac
 ms.prod: "directory-management"
 doc_type: resourcePageType
 ---

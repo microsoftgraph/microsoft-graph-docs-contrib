@@ -19,14 +19,14 @@ Inherits from [identity](identity.md).
 
 ## Properties
 
-| Property                       | Type                        | Description                                                                                                                                       |
-| :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id | String | Inherited from **identity**. A unique guid identifying the guest user. |
-| displayName | String | Inherited from **identity**. The display name associated with the guest user. |
+| Property                       | Type                        | Description         |
+| :----------------------------- | :---------------------------| :-------------------|
+| displayName | String | The display name associated with the guest user. Inherited from **identity**. |
+| id | String | The unique identifier for the guest user. Inherited from **identity**.  |
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
@@ -37,7 +37,7 @@ Here's a JSON representation of the resource.
 } -->
 ```json
 {
-  "id": "String",
-  "displayName": "String"
+  "displayName": "String",
+  "id": "String"
 }
 ```

@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 $requestConfiguration = new ListItemRequestBuilderGetRequestConfiguration();
 $queryParameters = ListItemRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->select = ["id","name","lastModifiedDateTime"];
-$queryParameters->expand = ["columns(select=name,description)","items",")"];
+$queryParameters->expand = ["columns(select=name,description)","items(expand=fields(select=Name,Color,Quantity)",")"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 

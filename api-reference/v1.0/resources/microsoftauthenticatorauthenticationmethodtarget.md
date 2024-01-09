@@ -2,6 +2,7 @@
 title: "microsoftAuthenticatorAuthenticationMethodTarget resource type"
 description: "A collection of groups enabled to use Microsoft Authenticator authentication methods policy."
 author: "mjsantani"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

@@ -2,6 +2,7 @@
 title: "authentication resource type"
 description: "Exposes relationships that represent the authentication methods supported by Microsoft Entra ID that can be configured for users."
 author: "jpettere"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
@@ -28,7 +29,7 @@ Inherits from [entity](entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique identifier for the **authentication**.|
-|signInPreferences|[signInPreferences](../resources/signinpreferences.md)|The settings and preferences for to the sign-in experience of a user.|
+|signInPreferences|[signInPreferences](../resources/signinpreferences.md)|The settings and preferences for to the sign-in experience of a user. Use this property to configure the user's default multifactor authentication (MFA) method.|
 
 ## Relationships
 

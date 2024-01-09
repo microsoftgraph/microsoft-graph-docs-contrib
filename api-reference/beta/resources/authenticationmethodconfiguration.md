@@ -2,6 +2,7 @@
 title: "authenticationMethodConfigurations"
 description: "authenticationMethodConfigurations object."
 author: "jpettere"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

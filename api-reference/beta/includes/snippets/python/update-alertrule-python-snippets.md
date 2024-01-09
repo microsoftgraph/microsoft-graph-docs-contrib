@@ -16,6 +16,15 @@ request_body = AlertRule(
 		operator = OperatorType.GreaterOrEqual,
 		target = 90,
 	),
+	conditions = [
+		RuleCondition(
+			relationship_type = RelationshipType.Or,
+			condition_category = ConditionCategory.AzureNetworkConnectionCheckFailures,
+			aggregation = AggregationType.Count,
+			operator = OperatorType.GreaterOrEqual,
+			threshold_value = "90",
+		),
+	],
 	notification_channels = [
 		NotificationChannel(
 			notification_channel_type = NotificationChannelType.Portal,

@@ -11,6 +11,9 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Simulation();
 $requestBody->setDisplayName('Graph Simulation');
+$createdBy = new EmailIdentity();
+$createdBy->setEmail('john@contoso.com');
+$requestBody->setCreatedBy($createdBy);
 $requestBody->setDurationInDays(3);
 $requestBody->setAttackTechnique(new SimulationAttackTechnique('credentialHarvesting'));
 $requestBody->setStatus(new SimulationStatus('scheduled'));

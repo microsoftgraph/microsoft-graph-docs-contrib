@@ -17,7 +17,7 @@ Lock or unlock a retention label on a [driveItem](../resources/driveitem.md) tha
 
 For information about retention labels from an administrator's perspective, see [Use retention labels to manage the lifecycle of documents stored in SharePoint](/microsoft-365/compliance/auto-apply-retention-labels-scenario).
 
-For information about how you can lock and unlock retention labels, see [Use record versioning to update records stored in SharePoint or OneDrive](/microsoft-365/compliance/record-versioning).
+For more information about how you can lock and unlock retention labels, see [Use record versioning to update records stored in SharePoint or OneDrive](/microsoft-365/compliance/record-versioning).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -39,7 +39,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ```http
 PATCH /driveitem/retentionLabel
-PATCH /drives/{drive-id}/items/{id}/retentionLabel
+PATCH /drives/{drive-id}/items/{item-id}/retentionLabel
 ```
 
 ## Request headers
@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and an updated [item
 
 ### Request
 
-The following shows an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -122,7 +122,7 @@ Content-Type: application/json
 
 ### Response
 
-The following shows an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

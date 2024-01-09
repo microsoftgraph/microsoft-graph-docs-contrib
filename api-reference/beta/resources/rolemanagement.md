@@ -3,6 +3,7 @@ title: "roleManagement resource type"
 description: "RBAC role management resource"
 ms.localizationpriority: medium
 author: "DougKirschner"
+ms.reviewer: msodsrbac
 ms.prod: "directory-management"
 doc_type: "resourcePageType"
 ---

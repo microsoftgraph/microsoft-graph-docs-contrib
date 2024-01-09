@@ -16,11 +16,9 @@ query_params = ServicePrincipalsRequestBuilder.ServicePrincipalsRequestBuilderGe
 
 request_configuration = ServicePrincipalsRequestBuilder.ServicePrincipalsRequestBuilderGetRequestConfiguration(
 query_parameters = query_params,
-headers = {
-			'ConsistencyLevel' : "eventual",
-}
-
 )
+request_configuration.headers.add("ConsistencyLevel", "eventual")
+
 
 result = await graph_client.service_principals.get(request_configuration = request_configuration)
 

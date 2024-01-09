@@ -3,6 +3,7 @@ title: "Delete unifiedRoleAssignment"
 description: "Delete a unifiedRoleAssignment object."
 ms.localizationpriority: medium
 author: "DougKirschner"
+ms.reviewer: msodsrbac
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
@@ -22,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 <a name='for-the-directory-azure-ad-provider'></a>
 
 ### For the directory (Microsoft Entra ID) provider
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | RoleManagement.ReadWrite.Directory |
@@ -30,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | RoleManagement.ReadWrite.Directory |
 
 ### For the Entitlement management provider
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  EntitlementManagement.ReadWrite.All  |
@@ -42,7 +43,6 @@ One of the following permissions is required to call this API. To learn more, in
 Remove a role assignment from the directory provider:
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
 DELETE /roleManagement/directory/roleAssignments/{id}
 ```
@@ -50,7 +50,6 @@ DELETE /roleManagement/directory/roleAssignments/{id}
 Remove a role assignment from the entitlement management provider:
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
 DELETE /roleManagement/entitlementManagement/roleAssignments/{id}
 ```
