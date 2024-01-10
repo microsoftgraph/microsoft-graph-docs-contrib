@@ -10,7 +10,7 @@ graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Community(
 	display_name = "Financial Advice for Software Engineers",
-	description = "A community where financial advisors who represent customers from software engineering profession can discuss advice and suggestions for there clients.",
+	description = "A community where financial advisors who represent customers from software engineering profession can discuss advice and suggestions for their clients.",
 	privacy = CommunityPrivacy.Public,
 )
 
