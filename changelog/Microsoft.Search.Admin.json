@@ -103,22 +103,6 @@
               {
                 "Id": "d0e8ec33-2937-4e30-9d3c-f0e73089bfdf",
                 "ApiChange": "Resource",
-                "ChangedApiName": "identity",
-                "ChangeType": "Addition",
-                "Description": "Added the [identity](https://learn.microsoft.com/en-us/graph/api/resources/search-identity?view=graph-rest-1.0) resource type.",
-                "Target": "identity"
-              },
-              {
-                "Id": "d0e8ec33-2937-4e30-9d3c-f0e73089bfdf",
-                "ApiChange": "Resource",
-                "ChangedApiName": "identitySet",
-                "ChangeType": "Addition",
-                "Description": "Added the [identitySet](https://learn.microsoft.com/en-us/graph/api/resources/search-identitySet?view=graph-rest-1.0) resource type.",
-                "Target": "identitySet"
-              },
-              {
-                "Id": "d0e8ec33-2937-4e30-9d3c-f0e73089bfdf",
-                "ApiChange": "Resource",
                 "ChangedApiName": "acronym",
                 "ChangeType": "Addition",
                 "Description": "Added the [acronym](https://learn.microsoft.com/en-us/graph/api/resources/search-acronym?view=graph-rest-1.0) resource",
