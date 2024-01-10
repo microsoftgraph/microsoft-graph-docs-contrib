@@ -11,7 +11,9 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-A top level object representing the Microsoft Search API endpoint. It does not behave as any other resource in Graph, but serves as an anchor to the [query](../api/search-query.md) action. 
+A top level object that represents the Microsoft Search API endpoint.
+
+It serves as an anchor to the [query](../api/search-query.md) action and search answer relationships such as [acronyms](../resources/search-acronym.md), [bookmarks](../resources/search-bookmark.md), and [qnas](../resources/search-qna.md). 
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -24,7 +26,11 @@ A top level object representing the Microsoft Search API endpoint. It does not b
 None.
 
 ## Relationships
-None.
+| Relationship | Type |Description|
+|:---------------|:--------|:----------|
+| acronyms | [microsoft.graph.search.acronym](../resources/search-acronym.md) collection | Administrative answer in Microsoft Search results to define common acronyms in a organization.  |
+| bookmarks | [microsoft.graph.search.bookmark](../resources/search-bookmark.md) collection | Administrative answer in Microsoft Search results for common search queries in an organization. |
+| qnas | [microsoft.graph.search.qna](../resources/search-qna.md) collection | Administrative answer in Microsoft Search results which provide answers for specific search keywords in an organization. |
 
 ## JSON representation
 The following is a JSON representation of the resource.
