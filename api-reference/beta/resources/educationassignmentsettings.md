@@ -30,7 +30,7 @@ Specifies class-level assignments settings.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|grading categories|[educationGradingCategory](educationgradingcategory.md) collection| When set, enables users to weight assignments differently when computing a class average grade.|
+|gradingCategories|[educationGradingCategory](educationgradingcategory.md) collection| When set, enables users to weight assignments differently when computing a class average grade.|
 
 ## JSON representation
 Here's a JSON representation of the resource.
