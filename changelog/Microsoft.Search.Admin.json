@@ -75,6 +75,14 @@
                 "ChangeType": "Addition",
                 "Description": "Added the **answerState** enumeration type.",
                 "Target": "answerState"
+              },              
+              {
+                "Id": "d0e8ec33-2937-4e30-9d3c-f0e73089bfdf",
+                "ApiChange": "Resource",
+                "ChangedApiName": "searchEntity",
+                "ChangeType": "Addition",
+                "Description": "Added the [searchEntity](https://learn.microsoft.com/en-us/graph/api/resources/searchEntity?view=graph-rest-1.0) resource",
+                "Target": "searchEntity"
               },
               {
                 "Id": "d0e8ec33-2937-4e30-9d3c-f0e73089bfdf",
@@ -123,6 +131,14 @@
                 "ChangeType": "Addition",
                 "Description": "Added the [searchAnswer](https://learn.microsoft.com/en-us/graph/api/resources/search-searchAnswer?view=graph-rest-1.0) resource",
                 "Target": "searchAnswer"
+              },
+              {
+                "Id": "d0e8ec33-2937-4e30-9d3c-f0e73089bfdf",
+                "ApiChange": "Enumeration",
+                "ChangedApiName": "devicePlatformType",
+                "ChangeType": "Addition",
+                "Description": "Added the **devicePlatformType** enumeration type.",
+                "Target": "devicePlatformType"
               }
             ],
             "Id": "d0e8ec33-2937-4e30-9d3c-f0e73089bfdf",
