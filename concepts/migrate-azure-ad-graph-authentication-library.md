@@ -7,13 +7,14 @@ ms.reviewer: dkershaw
 ms.localizationpriority: medium
 ms.prod: "applications"
 ms.date: 11/11/2022
+#Customer intent: As a developer, I want to learn what authentication libraries to use, so that I can update my code accordingly as I migrate my app from Azure AD Graph to Microsoft Graph.
 ---
 
 # Review app authentication library changes
 
 This article is part of *step 3: review app details* of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).
 
-Most apps use an authentication library to acquire and manage access tokens to call Microsoft Graph.  Microsoft offers two authentication libraries:
+Most apps use an authentication library to acquire and manage access tokens to call Microsoft Graph. Microsoft offers two authentication libraries:
 
 - [Azure Active Directory Authentication Library](/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL)
 - [Microsoft Authentication Library](/azure/active-directory/develop/reference-v2-libraries) (MSAL)
