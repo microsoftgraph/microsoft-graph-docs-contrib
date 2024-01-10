@@ -53,6 +53,48 @@
     {
       "ChangeList": [
         {
+          "Id": "d2feea77-731c-488b-b1c2-4d1ec0f7bb8f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "migrationStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **migrationStatus** enumeration type.",
+          "Target": "migrationStatus"
+        },
+        {
+          "Id": "d2feea77-731c-488b-b1c2-4d1ec0f7bb8f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "keyValuePair",
+          "ChangeType": "Addition",
+          "Description": "Added the [keyValuePair](https://learn.microsoft.com/en-us/graph/api/resources/keyValuePair?view=graph-rest-1.0) resource type.",
+          "Target": "keyValuePair"
+        },
+        {
+          "Id": "d2feea77-731c-488b-b1c2-4d1ec0f7bb8f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "relyingPartyDetailedSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [relyingPartyDetailedSummary](https://learn.microsoft.com/en-us/graph/api/resources/relyingPartyDetailedSummary?view=graph-rest-1.0) resource",
+          "Target": "relyingPartyDetailedSummary"
+        },
+        {
+          "Id": "d2feea77-731c-488b-b1c2-4d1ec0f7bb8f",
+          "ApiChange": "Method",
+          "ChangedApiName": "getRelyingPartyDetailedSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [getRelyingPartyDetailedSummary](https://learn.microsoft.com/en-us/graph/api/reportRoot?view=graph-rest-1.0) method to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/reportRoot?view=graph-rest-1.0) resource.",
+          "Target": "reportRoot"
+        }
+      ],
+      "Id": "d2feea77-731c-488b-b1c2-4d1ec0f7bb8f",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-01-02T23:45:05.2808371Z",
+      "WorkloadArea": "Reports and audit",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "514fea21-1d51-46d0-847e-9c2cce1d6c58",
           "ApiChange": "Resource",
           "ChangedApiName": "tenantSecureScore",
