@@ -1677,7 +1677,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamsAppDashboardCardBotConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [teamsAppDashboardCardBotConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDashboardCardBotConfiguration?view=graph-rest-beta) resource type.",
+          "Description": "Added the [teamsAppDashboardCardBotConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-beta) resource type.",
           "Target": "teamsAppDashboardCardBotConfiguration"
         },
         {
@@ -1685,7 +1685,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamsAppDashboardCardContentSource",
           "ChangeType": "Addition",
-          "Description": "Added the [teamsAppDashboardCardContentSource](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDashboardCardContentSource?view=graph-rest-beta) resource type.",
+          "Description": "Added the [teamsAppDashboardCardContentSource](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-beta) resource type.",
           "Target": "teamsAppDashboardCardContentSource"
         },
         {
@@ -1693,7 +1693,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamsAppDashboardCardIconUrl",
           "ChangeType": "Addition",
-          "Description": "Added the [teamsAppDashboardCardIconUrl](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDashboardCardIconUrl?view=graph-rest-beta) resource type.",
+          "Description": "Added the [teamsAppDashboardCardIconUrl](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-beta) resource type.",
           "Target": "teamsAppDashboardCardIconUrl"
         },
         {
@@ -1701,7 +1701,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamsAppDashboardCardDefinition",
           "ChangeType": "Addition",
-          "Description": "Added the [teamsAppDashboardCardDefinition](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDashboardCardDefinition?view=graph-rest-beta) resource",
+          "Description": "Added the [teamsAppDashboardCardDefinition](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-beta) resource",
           "Target": "teamsAppDashboardCardDefinition"
         },
         {
