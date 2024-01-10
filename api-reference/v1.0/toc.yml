@@ -5007,7 +5007,7 @@ items:
                   - name: Update
                     href: api/educationgradingcategory-update.md
                   - name: Delete
-                    href: educationassignment-delete-gradingcategory.md
+                    href: api/educationassignment-delete-gradingcategory.md
           - name: Rubric
             href: resources/educationrubric.md
             items:
