@@ -76,7 +76,7 @@ Inherits from [entity](../resources/entity.md).
 |resources|[educationAssignmentResource](educationassignmentresource.md) collection| Learning objects that are associated with this assignment.  Only teachers can modify this list. Nullable.|
 |rubric|[educationRubric](educationrubric.md)|When set, the grading rubric attached to this **assignment**.|
 |submissions|[educationSubmission](educationsubmission.md) collection| Once published, there's a **submission** object for each student representing their work and grade.  Read-only. Nullable.|
-|grading category|[educationGradingCategory](educationgradingcategory.md) collection| When set, enables users to weight assignments differently when computing a class average grade.|
+|gradingCategory|[educationGradingCategory](educationgradingcategory.md) collection| When set, enables users to weight assignments differently when computing a class average grade.|
 
 ## JSON representation
 
