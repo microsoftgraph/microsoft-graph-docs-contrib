@@ -3608,6 +3608,39 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### PlaceDevice.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 8b724a84-ceac-4fd9-897e-e31ba8f2d7a3 | 4c7f93d2-6b0b-4e05-91aa-87842f0a2142
+| DisplayText | Read all workplace devices | Read all workplace devices 
+| Description | Allows the app to read all workplace devices, without a signed-in user. | Allows the app to read all workplace devices, on behalf of the signed-in user. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
+### PlaceDevice.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 2d510721-5c4e-43cd-bfdb-ac0f8819fb92 | eafd6a71-e95a-4f8a-bb6e-fb84ab7fbd9e
+| DisplayText | Read and write all workplace devices | Read and write all workplace devices 
+| Description | Allows the app to read and write all workplace devices, without a signed-in user. | Allows the app to read and write all workplace devices, on behalf of the signed-in user. 
+| AdminConsentRequired | Yes | Yes 
+
+---
+
+### PlaceDeviceTelemetry.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 27fc435f-44e2-4b30-bf3c-e0ce74aed618 | -
+| DisplayText | Read and write telemetry for all workplace devices. | -
+| Description | Allows the app to read and write telemetry for all workplace devices, without a signed-in user. | - 
+| AdminConsentRequired | Yes | - 
+
+---
+
 ### Policy.Read.All
 
 | Category | Application | Delegated |
