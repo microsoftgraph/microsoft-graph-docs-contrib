@@ -51,9 +51,9 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |filter|String|OData `$filter` syntax. Supported filters are: `and`, `or`, `lt`, `le`, `gt`, `ge`, and `eq`.|
-|groupBy|String collection|Specifies how to group the reports. f used, must have the same content as the **select** parameter.|
+|groupBy|String collection|Specifies how to group the reports. If used, must have the same content as the **select** parameter.|
 |orderBy|String collection|Specifies how to sort the reports.|
-|reportName|String|Specifies the report name. Supported report names are: `cloudPcUsageCategoryReports`.|
+|reportName|[cloudPcReportName](../resources/cloudpcexportjob.md#cloudpcreportname-values)|Specifies the report name. Supports a subset of the values for **cloudPcReportName**. Supported values are: `cloudPcUsageCategoryReports`.|
 |search|String|Specifies a String to search.|
 |select|String collection|OData `$select` syntax. The selected columns of the reports. |
 |skip|Int32|Number of records to skip.|
