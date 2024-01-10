@@ -22,11 +22,11 @@ Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionSummary|[cloudPcBulkActionSummary](../resources/cloudpcbulkactionsummary.md)|Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
-|cloudPcIds|String collection|Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
-|createdDateTime|DateTimeOffset|Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
-|displayName|String|Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).|
-|id|String|Inherited from [entity](../resources/entity.md).|
+|actionSummary|[cloudPcBulkActionSummary](../resources/cloudpcbulkactionsummary.md)|Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md). Run summary of this bulk action.|
+|cloudPcIds|Guid collection|Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md). ID of Cloud PCs the bulk action applies to.|
+|createdDateTime|DateTimeOffset|Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md). Time when the bulk action was created.|
+|displayName|String|Inherited from [cloudPcBulkAction](../resources/cloudpcbulkaction.md). Name of the bulk action.|
+|id|String|Inherited from [entity](../resources/entity.md). ID of the bulk action.|
 |targetServicePlanId|String|The target service plan ID of the resize configuration with new vCPU and storage size.|
 
 ## Relationships
