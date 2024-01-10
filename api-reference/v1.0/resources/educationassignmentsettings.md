@@ -18,7 +18,7 @@ Specifies class-level assignments settings.
 |:---|:---|:---|
 |[Get educationAssignmentSettings](../api/educationassignmentsettings-get.md)|[educationAssignmentSettings](../resources/educationassignmentsettings.md)|Read the properties and relationships of an [educationAssignmentSettings](../resources/educationassignmentsettings.md) object.|
 |[Update educationAssignmentSettings](../api/educationassignmentsettings-update.md)|[educationAssignmentSettings](../resources/educationassignmentsettings.md)|Update the properties of an [educationAssignmentSettings](../resources/educationassignmentsettings.md) object.|
-|[Update educationGradingCategory](../api/educationgradingcategory-update.md)|[educationGradingCategory](../resources/educationgradingcategory.md)|Update the  gradingCategory on the assignment settings.|
+|[Update educationGradingCategory](../api/educationgradingcategory-update.md)|[educationGradingCategory](../resources/educationgradingcategory.md)|Update the gradingCategory on the assignment settings.|
 
 ## Properties
 |Property|Type|Description|
@@ -29,7 +29,7 @@ Specifies class-level assignments settings.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|grading categories|[educationGradingCategory](educationgradingcategory.md) collection| When set, enables users to weight assignments differently when computing a class average grade.|
+|gradingCategories|[educationGradingCategory](educationgradingcategory.md) collection| When set, enables users to weight assignments differently when computing a class average grade.|
 
 ## JSON representation
 Here's a JSON representation of the resource.
