@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Add grading categories to the existing class-wide settings to weight assignments differently when computing a class average grade.
 
-**Note:** Configure grading categories using [Assignment settings](../resources/educationassignmentsettings.md).
+>**Note:** Configure grading categories by using [Assignment settings](../resources/educationassignmentsettings.md).
 
 ## Methods
 
@@ -28,7 +28,7 @@ Add grading categories to the existing class-wide settings to weight assignments
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String|The grading category's ID. This separate ID allows teachers to rename a grading category without losing the link to each assignment. Inherited from [entity](../resources/entity.md). Read-only.|
+|id|String|The ID of the grading category ID. This separate ID allows teachers to rename a grading category without losing the link to each assignment. Inherited from [entity](../resources/entity.md). Read-only.|
 |displayName|String|The name of the grading category.|
 |percentageWeight|Int32|The weight of the category; an integer between 0 and 100.|
 
