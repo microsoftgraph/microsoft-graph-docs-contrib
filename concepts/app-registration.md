@@ -49,7 +49,7 @@ The Registration Info page outlines standard requirements for app registrations.
 - **Compute Type** (required) - Select the Azure product offering for this application.
 - **Activity Type** (required) - Select the Data Factory/Synapse/Fabric activity that will be used to copy over the data.
 
-Then specify the project details—a process that's similar to creating a resource in Azure. The following are the project detail fields: 
+Then specify the project details—a process that's similar to creating a resource in Azure. The following are the project detail fields:
 
 - **Subscription** (required) - Select a subscription in the tenant that will be used exclusively to filter the next four sections that relate to data destination configuration.
 - **Resource Group** (required) - Select the group location for the data storage.
@@ -70,10 +70,13 @@ If you select SQL for **Storage Account**, the **Uri** project detail field is d
 > [!NOTE]
 > If you select Microsoft Fabric as the Compute Type, the app will only support Copy Activity type.
 
-- **Workspace** (required) - Select the Fabric workspace for your application. For more information, see [Fabric Workspaces](/fabric/get-started/workspaces). 
+- **Workspace** (required) - Select the Fabric workspace for your application. For more information, see [Fabric Workspaces](/fabric/get-started/workspaces).
 - **Lakehouse** (required) - Select the OneLake instance to copy the data into. For more information, see [Fabric OneLake](/fabric/onelake/onelake-overview).
 
 ![Screenshot of the registration page for adding applications on Data Connect, including fields related to Lakehouse and its workspace.](images/app-registration-create-registration-info-including-lakehouse-workspace.png)
+
+> [!IMPORTANT]
+> If you select Microsoft Fabric as the compute type, you need to register a **Microsoft.GraphServices** resource provider for the selected Azure subscription. The selected subscription and resource group is used for billing. For more information, see [Resource Providers](/azure/azure-resource-manager/management/resource-providers-and-types).
 
 #### Datasets
 
@@ -94,6 +97,9 @@ The last step in the wizard shows a summary page for you to review the specified
 
 ![Graphic showing datasets selection for app registration while running the Data Connect app registration wizard.](images/app-registration-create-review.png)
 
+> [!IMPORTANT]
+> If you previously selected Microsoft Fabric as the compute type, a resource of type *Microsoft.GraphServices* and name *mgdc-<your_app_id>* is registered under the selected subscription and resource group. This resource is used for billing. For more information about how to enable the **Microsoft.GraphServices** resource provider, see [Resource Providers](/azure/azure-resource-manager/management/resource-providers-and-types).
+
 ### View app registration details
 
 After you create your app registration entry, to view the details that you specified, select the app name on the landing page. All details specified in creation are shown.
@@ -107,6 +113,9 @@ Access update functionality from the individual app overview page. Either the ap
 ![Screenshot of the app registration Update Properties page.](images/app-registration-details-properties-update.png)
 
 ![Screenshot of the app registration Update Datasets page.](images/app-registration-details-datasets-update.png)
+
+> [!IMPORTANT]
+> For Microsoft Fabric compute type, a resource of type *Microsoft.GraphServices* and name *mgdc-<your_app_id>* is registered under the selected subscription and resource group, if it wasn't created previously.
 
 #### Delete an app registration entry
 
