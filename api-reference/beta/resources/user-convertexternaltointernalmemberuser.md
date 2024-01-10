@@ -1,9 +1,9 @@
 ---
 title: "user: convertExternalToInternalMemberUser"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Converts an external user to an internal member"
+author: "yyuank"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 
@@ -33,6 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
+POST /me/convertExternalToInternalMemberUser
 POST /users/{usersId}/convertExternalToInternalMemberUser
 ```
 
@@ -70,7 +71,7 @@ If successful, this method returns a `200 OK` response code and the id, displayN
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "userthis.convertexternaltointernalmemberuser"
+  "name": "userthis.convertexternaltointernalmemberuser-cloudonly"
 }
 -->
 ```http
@@ -91,7 +92,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.DirectoryServices.user"
+  "@odata.type": "microsoft.graph.user"
 }
 -->
 ```http
@@ -114,15 +115,16 @@ Content-Type: application/json
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "userthis.convertexternaltointernalmemberuser"
+  "name": "userthis.convertexternaltointernalmemberuser-cloudonly-with-mail"
 }
 -->
 ```http
 POST https://graph.microsoft.com/beta/users/id/convertExternalToInternalMemberUser
 Content-type: application/json
+
 {
     "userprincipalName": "newUpn@contoso.com"
-    "passwordProfile": { "password": "te$tPassw0rd", "forceChangePasswordNextLogin": "true" },
+    "passwordProfile": { "password": "te$tPassw0rd", "forceChangePasswordNextLogin": true },
     "mail": "newMail@contoso.com"
 }
 ```
@@ -134,12 +136,13 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.DirectoryServices.user"
+  "@odata.type": "microsoft.graph.user"
 }
 -->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
     "id": "ddbc5871-cc95-4b99-a162-ecdc91ece43e"
     "displayName" : "user1Name",
@@ -156,12 +159,11 @@ Content-Type: application/json
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "userthis.convertexternaltointernalmemberuser"
+  "name": "userthis.convertexternaltointernalmemberuser-synceduser"
 }
 -->
 ```http
 POST https://graph.microsoft.com/beta/users/id/convertExternalToInternalMemberUser
-Content-type: application/json
 
 ```
 
@@ -172,7 +174,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.DirectoryServices.user"
+  "@odata.type": "microsoft.graph.user"
 }
 -->
 ``` http
