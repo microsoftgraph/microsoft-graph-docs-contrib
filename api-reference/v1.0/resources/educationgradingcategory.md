@@ -12,7 +12,7 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 
-Add grading categories to the existing class-wide settings to weight assignments differently when computing a class average grade.
+Represents the weighted contribution of an assignment to a class average grade.
 
 >**Note:** Configure grading categories by using [Assignment settings](../resources/educationassignmentsettings.md).
 
