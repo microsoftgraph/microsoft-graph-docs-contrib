@@ -1653,6 +1653,72 @@
       "CreatedDateTime": "2023-12-15T18:15:55.2254479Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Settings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "fc817b49-2a13-4e90-b00d-ae172d6e3594",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "teamsAppDashboardCardSize",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamsAppDashboardCardSize** enumeration type.",
+          "Target": "teamsAppDashboardCardSize"
+        },
+        {
+          "Id": "fc817b49-2a13-4e90-b00d-ae172d6e3594",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "teamsAppDashboardCardSourceType",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamsAppDashboardCardSourceType** enumeration type.",
+          "Target": "teamsAppDashboardCardSourceType"
+        },
+        {
+          "Id": "fc817b49-2a13-4e90-b00d-ae172d6e3594",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsAppDashboardCardBotConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamsAppDashboardCardBotConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDashboardCardBotConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "teamsAppDashboardCardBotConfiguration"
+        },
+        {
+          "Id": "fc817b49-2a13-4e90-b00d-ae172d6e3594",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsAppDashboardCardContentSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamsAppDashboardCardContentSource](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDashboardCardContentSource?view=graph-rest-beta) resource type.",
+          "Target": "teamsAppDashboardCardContentSource"
+        },
+        {
+          "Id": "fc817b49-2a13-4e90-b00d-ae172d6e3594",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsAppDashboardCardIconUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamsAppDashboardCardIconUrl](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDashboardCardIconUrl?view=graph-rest-beta) resource type.",
+          "Target": "teamsAppDashboardCardIconUrl"
+        },
+        {
+          "Id": "fc817b49-2a13-4e90-b00d-ae172d6e3594",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsAppDashboardCardDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamsAppDashboardCardDefinition](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDashboardCardDefinition?view=graph-rest-beta) resource",
+          "Target": "teamsAppDashboardCardDefinition"
+        },
+        {
+          "Id": "fc817b49-2a13-4e90-b00d-ae172d6e3594",
+          "ApiChange": "Resource",
+          "ChangedApiName": "dashboardCards",
+          "ChangeType": "Addition",
+          "Description": "Added the **dashboardCards** relationship to the [teamsAppDefinition](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-beta) resource.",
+          "Target": "teamsAppDefinition"
+        }
+      ],
+      "Id": "fc817b49-2a13-4e90-b00d-ae172d6e3594",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-01-10T04:07:57.4956807Z",
+      "WorkloadArea": "Teamwork and Communications",
+      "SubArea": ""
     }
   ]
 }
