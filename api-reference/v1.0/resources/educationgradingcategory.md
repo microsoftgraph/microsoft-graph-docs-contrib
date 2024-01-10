@@ -1,6 +1,6 @@
 ---
 title: "educationGradingCategory resource type"
-description: "Add grading categories to the existing class-wide settings to weight assignments differently when computing a class average grade."
+description: "Represents the weighted contribution of an assignment to a class average grade."
 author: "v-rmanda"
 ms.localizationpriority: medium
 ms.prod: "education"
