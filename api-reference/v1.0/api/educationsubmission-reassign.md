@@ -220,7 +220,7 @@ The following is an example of the response when `Prefer: include-unknown-enum-m
 HTTP/1.1 200 OK
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodv1.0eduasg_local_sub-weburl/$metadata#educationSubmission",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#educationSubmission",
     "@odata.type": "#microsoft.graph.educationSubmission",
     "status": "reassigned",
     "submittedDateTime": "2023-12-20T16:35:56.8904304Z",
