@@ -65,6 +65,104 @@
             "CreatedDateTime": "2022-02-28T21:05:19.767Z",
             "WorkloadArea": "Search",
             "SubArea": ""
-        }
+        },
+        {
+            "ChangeList": [
+              {
+                "Id": "d0e8ec33-2937-4e30-9d3c-f0e73089bfdf",
+                "ApiChange": "Resource",
+                "ChangedApiName": "searchEntity",
+                "ChangeType": "Addition",
+                "Description": "Added the [searchEntity](https://learn.microsoft.com/en-us/graph/api/resources/searchEntity?view=graph-rest-1.0) resource",
+                "Target": "searchEntity"
+              },
+              {
+                "Id": "d0e8ec33-2937-4e30-9d3c-f0e73089bfdf",
+                "ApiChange": "Enumeration",
+                "ChangedApiName": "answerState",
+                "ChangeType": "Addition",
+                "Description": "Added the **answerState** enumeration type.",
+                "Target": "answerState"
+              },
+              {
+                "Id": "d0e8ec33-2937-4e30-9d3c-f0e73089bfdf",
+                "ApiChange": "Resource",
+                "ChangedApiName": "answerKeyword",
+                "ChangeType": "Addition",
+                "Description": "Added the [answerKeyword](https://learn.microsoft.com/en-us/graph/api/resources/search-answerKeyword?view=graph-rest-1.0) resource type.",
+                "Target": "answerKeyword"
+              },
+              {
+                "Id": "d0e8ec33-2937-4e30-9d3c-f0e73089bfdf",
+                "ApiChange": "Resource",
+                "ChangedApiName": "answerVariant",
+                "ChangeType": "Addition",
+                "Description": "Added the [answerVariant](https://learn.microsoft.com/en-us/graph/api/resources/search-answerVariant?view=graph-rest-1.0) resource type.",
+                "Target": "answerVariant"
+              },
+              {
+                "Id": "d0e8ec33-2937-4e30-9d3c-f0e73089bfdf",
+                "ApiChange": "Resource",
+                "ChangedApiName": "identity",
+                "ChangeType": "Addition",
+                "Description": "Added the [identity](https://learn.microsoft.com/en-us/graph/api/resources/search-identity?view=graph-rest-1.0) resource type.",
+                "Target": "identity"
+              },
+              {
+                "Id": "d0e8ec33-2937-4e30-9d3c-f0e73089bfdf",
+                "ApiChange": "Resource",
+                "ChangedApiName": "identitySet",
+                "ChangeType": "Addition",
+                "Description": "Added the [identitySet](https://learn.microsoft.com/en-us/graph/api/resources/search-identitySet?view=graph-rest-1.0) resource type.",
+                "Target": "identitySet"
+              },
+              {
+                "Id": "d0e8ec33-2937-4e30-9d3c-f0e73089bfdf",
+                "ApiChange": "Resource",
+                "ChangedApiName": "acronym",
+                "ChangeType": "Addition",
+                "Description": "Added the [acronym](https://learn.microsoft.com/en-us/graph/api/resources/search-acronym?view=graph-rest-1.0) resource",
+                "Target": "acronym"
+              },
+              {
+                "Id": "d0e8ec33-2937-4e30-9d3c-f0e73089bfdf",
+                "ApiChange": "Resource",
+                "ChangedApiName": "bookmark",
+                "ChangeType": "Addition",
+                "Description": "Added the [bookmark](https://learn.microsoft.com/en-us/graph/api/resources/search-bookmark?view=graph-rest-1.0) resource",
+                "Target": "bookmark"
+              },
+              {
+                "Id": "d0e8ec33-2937-4e30-9d3c-f0e73089bfdf",
+                "ApiChange": "Resource",
+                "ChangedApiName": "qna",
+                "ChangeType": "Addition",
+                "Description": "Added the [qna](https://learn.microsoft.com/en-us/graph/api/resources/search-qna?view=graph-rest-1.0) resource",
+                "Target": "qna"
+              },
+              {
+                "Id": "d0e8ec33-2937-4e30-9d3c-f0e73089bfdf",
+                "ApiChange": "Resource",
+                "ChangedApiName": "searchAnswer",
+                "ChangeType": "Addition",
+                "Description": "Added the [searchAnswer](https://learn.microsoft.com/en-us/graph/api/resources/search-searchAnswer?view=graph-rest-1.0) resource",
+                "Target": "searchAnswer"
+              },
+              {
+                "Id": "d0e8ec33-2937-4e30-9d3c-f0e73089bfdf",
+                "ApiChange": "Enumeration",
+                "ChangedApiName": "devicePlatformType",
+                "ChangeType": "Addition",
+                "Description": "Added the **devicePlatformType** enumeration type.",
+                "Target": "devicePlatformType"
+              }
+            ],
+            "Id": "d0e8ec33-2937-4e30-9d3c-f0e73089bfdf",
+            "Cloud": "Review",
+            "Version": "v1.0",
+            "CreatedDateTime": "2024-01-10T02:21:22.6993295Z",
+            "WorkloadArea": "Microsoft.Search.Admin",
+            "SubArea": ""
+          }
     ]
 }
