@@ -165,5 +165,3 @@ Properties stored outside the main data store also aren't supported as part of c
 |[`/users/{id}/joinedTeams`](../api/user-list-joinedteams.md)| Lists the Microsoft Teams that the user is a member of. |
 |[`/users/{id}/permissionGrants`](../api/user-list-permissiongrants.md)| List all resource-specific permission grants of a user. |
 
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

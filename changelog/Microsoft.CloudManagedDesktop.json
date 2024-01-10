@@ -2,6 +2,24 @@
     "changelog": [
         {
           "ChangeList": [
+              {
+                "Id": "d23da4c0-bd4c-4f0f-9b1e-76ee7be8d487",
+                "ApiChange": "Method",
+                "ChangedApiName": "getActionStatusReports",
+                "ChangeType": "Addition",
+                "Description": "Added the [getActionStatusReports](https://learn.microsoft.com/en-us/graph/api/cloudPcReports-getactionstatusreports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcreports?view=graph-rest-beta) resource.",
+                "Target": "cloudPcReports"
+              }
+            ],
+            "Id": "d23da4c0-bd4c-4f0f-9b1e-76ee7be8d487",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2024-01-08T06:58:17.7596296Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+          "ChangeList": [
             {
               "Id": "5c60ab9e-28a1-4be3-bea7-e8db01da561d",
               "ApiChange": "Member",
@@ -101,6 +119,32 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2023-11-02T06:07:56.2470117Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "aacbebc4-62eb-4fde-a030-381e3359a7ad",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcScopedPermission",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcScopedPermission](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcScopedPermission?view=graph-rest-beta) resource type.",
+                    "Target": "cloudPcScopedPermission"
+                },
+                {
+                    "Id": "aacbebc4-62eb-4fde-a030-381e3359a7ad",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "retrieveScopedPermissions",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [retrieveScopedPermissions](https://learn.microsoft.com/en-us/graph/api/virtualendpoint-retrievescopedpermissions?view=graph-rest-beta) method to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualendpoint?view=graph-rest-beta) resource.",
+                    "Target": "virtualEndpoint"
+                }
+            ],
+            "Id": "aacbebc4-62eb-4fde-a030-381e3359a7ad",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2024-01-08T06:58:17.7596296Z",
             "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
