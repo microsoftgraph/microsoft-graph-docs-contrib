@@ -2,7 +2,7 @@
 title: "devicePlatformType enum type"
 description: "Supported platform types."
 author: "yuanrui"
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: "search"
 doc_type: enumPageType
 ---
