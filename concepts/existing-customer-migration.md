@@ -47,19 +47,23 @@ If your tenant has active consents with any of the below conditions, the tenant 
 - Multiple destination sinks per app registration
 - Combinations of the above 
 
-Upon one-click migration, the active consents would merge under the concept of **one** app with **one** list of datasets and each dataset mapped to **one** set columns and **one** scope. 
+Upon one-click migration, the active consents will merge under each corresponding app and dataset. An app can have multiple datasets, and each dataset has a set of consented Columns and Scopes. All sinks consented for an app previously will continue to be consented for the app after migration.
 
 For example, consider the following consents:
 
 1. **Application**: `Productivity_Analysis`; **Sink**: `Storage_Account_1`; **Dataset**: `Message_v1`; **Columns**: [SentTime]; **Scope**: [Legal]  
-2. **Application**: `Productivity_Analysis`; **Sink**: `Storage_Account_2`; **Dataset**: `Message_v1`; **Columns**: [Message]; **Scope**: [Engineering] 
+2. **Application**: `Productivity_Analysis`; **Sink**: `Storage_Account_2`; **Dataset**: `Message_v1`; **Columns**: [Message]; **Scope**: [Engineering]
+3. **Application**: `Productivity_Analysis`; **Sink**: `Storage_Account_2`; **Dataset**: `DirectReports_v1`; **Columns**: [Direct Report]; **Scope**: [Engineering] 
 
 After migration, the consents will merge since they are under the same application: 
 
-**Application**: `Productivity_Analysis`; **Sink**: [`Storage_Account_1`, `Storage_Account_2`]; **Dataset**: `Message_v1`; **Columns**: [SentTime, Message], **Scope**: [Legal, Engineering]
+**Application**: `Productivity_Analysis`; **Sink**: [`Storage_Account_1`, `Storage_Account_2`]; 
+  [ **Dataset**: `Message_v1`; **Columns**: [SentTime, Message], 
+  **Dataset**: `DirectReports_v1`; **Columns**: [Direct Report] ]; 
+  **Scope**: [Legal, Engineering]
  
 > [!NOTE]
-> When merging consents, new consents could be introduced. In the example above, the consent for extracting Columns [Message] data for the group [Legal] has been introduced. Likewise for [SentTime] data of the group [Engineering]. If this is not the desired state, review the consents and revoke those that would be conflicting. For any questions, reach out to dataconnect@microsoft.com.
+> When merging consents, new consents could be introduced. In the example above, the consent for extracting Columns [Message] data for the group [Legal] has been introduced. Likewise for [SentTime] data of the group [Engineering]. Similarly, both sinks will have consent to the datasets, columns, and scopes. If this is not the desired state, review the consents and revoke those that would be conflicting. For any questions, reach out to dataconnect@microsoft.com.
 
 ## Option 3: Automatic migration
 
