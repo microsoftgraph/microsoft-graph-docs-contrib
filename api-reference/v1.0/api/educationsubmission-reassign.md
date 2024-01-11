@@ -15,7 +15,7 @@ Reassign the [submission](../resources/educationsubmission.md) to the student wi
 
 Only teachers can perform this action. 
 
-Include the `Prefer: include-unknown-enum-members` header when you call this method; otherwise, a reassigned submission will be treated as a returned submission. This means that the `reassigned` status will be mapped to the `returned` status, and **reassignedDateTime** and **reassignedBy** properties will be mapped to **returnedDateTime** and **returnedBy** respectively.
+Include the `Prefer: include-unknown-enum-members` header when you call this method; otherwise, a reassigned submission is treated as a returned submission. This means that the `reassigned` status is mapped to the `returned` status, and **reassignedDateTime** and **reassignedBy** properties are mapped to **returnedDateTime** and **returnedBy** respectively.
 
 If the header `Prefer: include-unknown-enum-members` is provided, a reassigned submission retains the `reassigned` status. For details, see the examples section.
 
@@ -59,7 +59,7 @@ The following example shows a request.
 }-->
 
 ```http
-POST /education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/4cc928e3-666c-4360-8688-a15776ce53b4/submissions/5883eaeb-9760-f8e0-6832-a122c4f020be/reassign
+POST https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/4cc928e3-666c-4360-8688-a15776ce53b4/submissions/5883eaeb-9760-f8e0-6832-a122c4f020be/reassign
 ```
 
 # [C#](#tab/csharp)
@@ -97,7 +97,7 @@ POST /education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/4cc928e
 ---
 
 #### Response
-The following is an example of the response when `Prefer: include-unknown-enum-members` is NOT provided in the request header and the submission hasn't been returned before.
+The following is an example of the response when `Prefer: include-unknown-enum-members` isn't provided in the request header and the submission hasn't been returned before.
 
 <!-- {
   "blockType": "response",
@@ -171,7 +171,7 @@ The following example shows a request.
 }-->
 
 ```http
-POST /education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/4cc928e3-666c-4360-8688-a15776ce53b4/submissions/5883eaeb-9760-f8e0-6832-a122c4f020be/reassign
+POST https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/4cc928e3-666c-4360-8688-a15776ce53b4/submissions/5883eaeb-9760-f8e0-6832-a122c4f020be/reassign
 Prefer: include-unknown-enum-members
 ```
 
@@ -271,7 +271,7 @@ HTTP/1.1 200 OK
 
 ## See also
 
-* [States, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-states-transition)
+[States, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-states-transition).
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
