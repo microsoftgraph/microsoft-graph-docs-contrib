@@ -28,7 +28,7 @@ For your app to use the identity and access management (IAM) capabilities of Mic
 Registering your application establishes a trust relationship between your app and the Microsoft identity platform. The trust is unidirectional: your app trusts the Microsoft identity platform, and not the other way around. Once created, the application object can't be moved between different tenants.
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com).
-1. If you have access to multiple tenants, use the **Settings** icon :::image type="icon" source="../../media/common/admin-center-settings-icon.png" border="false"::: in the top menu to switch to the tenant in which you want to register the application from the **Directories + subscriptions** menu.
+1. If you have access to multiple tenants, use the **Settings** icon in the top menu to switch to the tenant in which you want to register the application from the **Directories + subscriptions** menu.
 1. Browse to **Identity** > **Applications** > **App registrations** and select **New registration**.
 1. Enter a display **Name** for your application.
 1. Specify who can use the application, in the **Supported account types** section.
@@ -52,7 +52,7 @@ When registration finishes, the Microsoft Entra admin center displays the app re
 
 :::image type="content" source="../images/quickstart-register-app/portal-03-app-reg-02.png" alt-text="Screenshot of the Microsoft Entra admin center in a web browser, showing an app registration's Overview pane.":::
 
-### Configure platform settings
+## Configure platform settings
 
 Platform settings include redirect URIs, specific authentication settings, or fields specific to the application's platform, for example, **Web** and **Single-page applications**.
 
