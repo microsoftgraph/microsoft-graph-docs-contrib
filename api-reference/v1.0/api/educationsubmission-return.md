@@ -37,7 +37,7 @@ POST /education/classes/{class-id}/assignments/{assignment-id}/submissions/{subm
 Don't supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 Ok` response code and an [educationSubmission](../resources/educationsubmission.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [educationSubmission](../resources/educationsubmission.md) object in the response body.
 
 ## Example
 The following example shows how to call this API.
@@ -100,7 +100,7 @@ The following example shows the response.
 } -->
 
 ```http
-HTTP/1.1 200 Ok
+HTTP/1.1 200 OK
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#educationSubmission",
@@ -154,7 +154,7 @@ HTTP/1.1 200 Ok
 
 ## See also
 
-* [States, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-states-transition)
+[States, transitions, and limitations for assignments and submissions](/graph/assignments-submissions-states-transition).
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
