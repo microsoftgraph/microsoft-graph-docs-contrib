@@ -45,19 +45,19 @@ The Registration Info page outlines standard requirements for app registrations.
 - **Application ID** (required) - Select from Microsoft Entra apps in the tenant, or create a new one.
 - **Description** (required) - Provide details in the text field for app registration such as project goal, unique identifier, and organization project name.
 - **Publish Type** (required) - Select from multi-tenant or single-tenant fields.
-- **Key Vault** (required **only** for multi-tenant app registrations) - Specify the key vault that will enable communication between tenants.
+- **Key Vault** (required **only** for multi-tenant app registrations) - Specify the key vault that enables communication between tenants.
 - **Compute Type** (required) - Select the Azure product offering for this application.
-- **Activity Type** (required) - Select the Data Factory/Synapse/Fabric activity that will be used to copy over the data.
+- **Activity Type** (required) - Select the Data Factory/Synapse/Fabric activity that is used to copy over the data.
 
 Then specify the project details—a process that's similar to creating a resource in Azure. The following are the project detail fields: 
 
-- **Subscription** (required) - Select a subscription in the tenant that will be used exclusively to filter the next four sections that relate to data destination configuration.
+- **Subscription** (required) - Select a subscription in the tenant that is used exclusively to filter the next four sections that relate to data destination configuration.
 - **Resource Group** (required) - Select the group location for the data storage.
 - **Destination Type** - Select the type of storage from Azure Storage Account or Azure SQL Database Server.
 
   >**Note:** If you select SQL Database Server, the app only supports `Mapping Data Flows` types. For more information, see [Mapping Data Flows in Azure Data Factory](/azure/data-factory/concepts-data-flow-overview).
 
-- **Storage Account** (required) - Select the storage account where the data to provision with Data Connect will be located, or create a new Azure Storage Account.
+- **Storage Account** (required) - Select the storage account where the data to provision with Data Connect is located, or create a new Azure Storage Account.
 - **Storage Account Uri** (required) - From the storage account you selected, select the URI to use (Distributed File System (DFS) or blob).
 
 > [!NOTE]
@@ -68,7 +68,7 @@ If you select SQL for **Storage Account**, the **Uri** project detail field is d
 ![Screenshot of the registration page for adding applications on Data Connect, including fields related to the Project Details and Instance Details sections.](images/app-registration-create-registration-info-including-compute-type.png)
 
 > [!NOTE]
-> If you select Microsoft Fabric as the Compute Type, the app will only support Copy Activity type.
+> If you select Microsoft Fabric as the Compute Type, the app only supports Copy Activity type.
 
 - **Workspace** (required) - Select the Fabric workspace for your application. For more information, see [Fabric Workspaces](/fabric/get-started/workspaces). 
 - **Lakehouse** (required) - Select the OneLake instance to copy the data into. For more information, see [Fabric OneLake](/fabric/onelake/onelake-overview).
@@ -79,7 +79,7 @@ If you select SQL for **Storage Account**, the **Uri** project detail field is d
 
 After you complete the **Registration Info** page, specify the datasets that the app registration needs to query. This step is crucial for authorization. Only the datasets that you select are transferred for administrator authorization. For more information about datasets, see [Datasets, regions, and sinks](./data-connect-datasets.md).
 
-The wizard shows a table that allows the entry of multiple datasets, the selection of columns in the datasets, and more details if applicable, such as scope and scope options. You can select each dataset that the app will request for authorization, and all or several columns from the dataset, depending on the level of granularity and privacy required.
+The wizard shows a table that allows the entry of multiple datasets, the selection of columns in the datasets, and more details if applicable, such as scope and scope options. You can select each dataset that the app requests for authorization, and all or several columns from the dataset, depending on the level of granularity and privacy required.
 
 ![Screenshot that shows the Datasets column selected while running the Data Connect app registration wizard.](images/app-registration-create-datasets.png)
 
