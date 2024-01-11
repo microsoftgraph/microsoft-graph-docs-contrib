@@ -25,12 +25,12 @@ The first screen of the Azure portal experience prompts you to register your fir
 
 The table includes the following column fields:
 
-- **Name** — The app registration name
-- **App ID** — The Microsoft Entra application ID
-- **Registered On** — The date the app was registered
-- **Developer** — The developer who registered the application
-- **Multi-tenant** — Whether the app is multi-tenant or single tenant
-- **Last modified** — The most recent date when the application was changed
+- **Name**:The app registration name
+- **App ID**: The Microsoft Entra application ID
+- **Registered On**: The date the app was registered
+- **Developer**: The developer who registered the application
+- **Multi-tenant**: Whether the app is multi-tenant or single tenant
+- **Last modified**: The most recent date when the application was changed
 
 At the top of the table, three buttons are enabled by default: **Add**, **Refresh**, and **Delete**. **Add** starts an action for a new app registration. **Refresh** queries existing app registrations in the tenant again, and refreshes the table. **Delete** is only enabled for single selections, and initiates a deletion process.
 
@@ -42,23 +42,23 @@ When adding a new app registration with Data Connect, follow the add wizard to c
 
 The Registration Info page outlines standard requirements for app registrations. App registration requires you to select entries that affect default behaviors, such as the following fields:
 
-- **Application ID** (required) - Select from Microsoft Entra apps in the tenant, or create a new one.
-- **Description** (required) - Provide details in the text field for app registration such as project goal, unique identifier, and organization project name.
-- **Publish Type** (required) - Select from multi-tenant or single-tenant fields.
-- **Key Vault** (required **only** for multi-tenant app registrations) - Specify the key vault that enables communication between tenants.
-- **Compute Type** (required) - Select the Azure product offering for this application.
-- **Activity Type** (required) - Select the Data Factory/Synapse/Fabric activity that is used to copy over the data.
+- **Application ID** (required): Select from Microsoft Entra apps in the tenant, or create a new one.
+- **Description** (required): Provide details in the text field for app registration such as project goal, unique identifier, and organization project name.
+- **Publish Type** (required): Select from multi-tenant or single-tenant fields.
+- **Key Vault** (required **only** for multi-tenant app registrations): Specify the key vault that enables communication between tenants.
+- **Compute Type** (required): Select the Azure product offering for this application.
+- **Activity Type** (required): Select the Data Factory/Synapse/Fabric activity that is used to copy over the data.
 
 Then specify the project details—a process that's similar to creating a resource in Azure. The following are the project detail fields: 
 
-- **Subscription** (required) - Select a subscription in the tenant that is used exclusively to filter the next four sections that relate to data destination configuration.
-- **Resource Group** (required) - Select the group location for the data storage.
-- **Destination Type** - Select the type of storage from Azure Storage Account or Azure SQL Database Server.
+- **Subscription** (required): Select a subscription in the tenant that is used exclusively to filter the next four sections that relate to data destination configuration.
+- **Resource Group** (required): Select the group location for the data storage.
+- **Destination Type**: Select the type of storage from Azure Storage Account or Azure SQL Database Server.
 
   >**Note:** If you select SQL Database Server, the app only supports `Mapping Data Flows` types. For more information, see [Mapping Data Flows in Azure Data Factory](/azure/data-factory/concepts-data-flow-overview).
 
-- **Storage Account** (required) - Select the storage account where the data to provision with Data Connect is located, or create a new Azure Storage Account.
-- **Storage Account Uri** (required) - From the storage account you selected, select the URI to use (Distributed File System (DFS) or blob).
+- **Storage Account** (required): Select the storage account where the data to provision with Data Connect is located, or create a new Azure Storage Account.
+- **Storage Account Uri** (required): From the storage account you selected, select the URI to use (Distributed File System (DFS) or blob).
 
 > [!NOTE]
 > The linked service that you create during pipeline setup should align with what you selected in previous steps on the Registration Info page. If you choose DFS, use an Azure Data Lake Storage Gen2 Linked Service, and if you choose blob, use Azure Blob Storage Linked Service.
@@ -70,8 +70,8 @@ If you select SQL for **Storage Account**, the **Uri** project detail field is d
 > [!NOTE]
 > If you select Microsoft Fabric as the Compute Type, the app only supports Copy Activity type.
 
-- **Workspace** (required) - Select the Fabric workspace for your application. For more information, see [Fabric Workspaces](/fabric/get-started/workspaces). 
-- **Lakehouse** (required) - Select the OneLake instance to copy the data into. For more information, see [Fabric OneLake](/fabric/onelake/onelake-overview).
+- **Workspace** (required): Select the Fabric workspace for your application. For more information, see [Fabric Workspaces](/fabric/get-started/workspaces). 
+- **Lakehouse** (required): Select the OneLake instance to copy the data into. For more information, see [Fabric OneLake](/fabric/onelake/onelake-overview).
 
 ![Screenshot of the registration page for adding applications on Data Connect, including fields related to Lakehouse and its workspace.](images/app-registration-create-registration-info-including-lakehouse-workspace.png)
 
