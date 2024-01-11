@@ -1,5 +1,5 @@
 ---
-title: "Archive channel"
+title: "channel: archive"
 description: "Archive a channel in a team. "
 author: "sumitgupta3"
 ms.localizationpriority: medium
@@ -7,13 +7,13 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Archive channel
+# channel: archive
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Archive a [channel](../resources/channel.md). When a channel is archived, users can’t send new messages or like existing messages on it. Also, users can't edit the channel's name, edit other settings, nor make almost any other changes to the channel.
+Archive a [channel](../resources/channel.md) in a team. When a channel is archived, users can't send new messages or react to existing messages in the channel, edit the channel settings, or make other changes to the channel.
 
 You can delete an archived channel, or add and remove members from it. If you archive a team, its channels are archived for you.
 
@@ -60,12 +60,12 @@ If archiving is started successfully, this method returns a `202 Accepted` respo
 
 ## Examples
 
-### Example 1:
+### Example 1: Archive a channel
+
 The following is an example of a request for archiving a channel.
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "archive_channel"
@@ -74,9 +74,8 @@ The following is an example of a request for archiving a channel.
 POST https://graph.microsoft.com/beta/teams/5crrrtrd5-e41c-4f18-ab8awfd-f36ca7dd11231de/channels/5ceebed5-o45u-334o-sve3-f36ca7dd31de/archive
 ```
 
----
-
 #### Response
+
 The following is an example of a response.
 <!-- {
   "blockType": "response",
@@ -89,14 +88,12 @@ Content-Type: text/plain
 Content-Length: 0
 ```
 
+### Example 2: Archive a channel when the team is archived
 
-### Example 2:
 The following is an example of a request when **Team is archived**.
 
 #### Request
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "archive_channel"
@@ -105,9 +102,8 @@ The following is an example of a request when **Team is archived**.
 POST https://graph.microsoft.com/beta/teams/5crrrtrd5-e41c-4f18-ab8awfd-f36ca7dd11231de/channels/5ceebed5-o45u-334o-sve3-f36ca7dd31de/archive
 ```
 
----
-
 #### Response
+
 The following is an example of a response with 400.
 <!-- {
   "blockType": "response",

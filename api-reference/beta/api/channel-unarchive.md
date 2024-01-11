@@ -1,5 +1,5 @@
 ---
-title: "Unarchive team"
+title: "channel: unarchive"
 description: "Restore an archived channel in a team. Unarchiving restores the ability for users to send messages and edit the channel."
 ms.localizationpriority: medium
 author: "sumitgupta3"
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Unarchive channel
+# channel: unarchive
 
 Namespace: microsoft.graph
 
@@ -20,6 +20,7 @@ Unarchiving is an asynchronous operation; a channel is unarchived once the async
 > **Note**: An archived channel that belongs to an archived team cannot be unarchived. Unarchive the team before attempting to unarchive the channel, otherwise an error will occur.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -40,11 +41,13 @@ POST /groups/{team-id}/team/channels/{channel-id}/unarchive
 ```
 
 ## Request headers
+
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
+
 Don't supply a request body for this method.
 
 ## Response
@@ -53,12 +56,12 @@ If unarchiving is started successfully, this method returns a `202 Accepted` res
 
 ## Example
 
-### Example 1:
+### Example 1: Unarchive a channel
+
 The following is an example of a request with success for unarchiving a channel.
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "unarchive_channel"
@@ -67,10 +70,8 @@ The following is an example of a request with success for unarchiving a channel.
 POST https://graph.microsoft.com/beta/teams/5crrrtrd5-e41c-4f18-ab8awfd-f36ca7dd11231de/channels/5ceebed5-o45u-334o-sve3-f36ca7dd31de/unarchive
 ```
 
----
-
-
 #### Response
+
 The following example shows the response.
 <!-- {
   "blockType": "response",
@@ -83,12 +84,12 @@ Content-Type: text/plain
 Content-Length: 0
 ```
 
-### Example 2:
+### Example 2: Unarchive a channel when the team is archived team
+
 The following is an example of a request when **Team is archived**.
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "archive_channel"
@@ -96,8 +97,6 @@ The following is an example of a request when **Team is archived**.
 ```http
 POST https://graph.microsoft.com/beta/teams/5crrrtrd5-e41c-4f18-ab8awfd-f36ca7dd11231de/channels/5ceebed5-o45u-334o-sve3-f36ca7dd31de/unarchive
 ```
-
----
 
 #### Response
 The following is an example of a response with 400.
