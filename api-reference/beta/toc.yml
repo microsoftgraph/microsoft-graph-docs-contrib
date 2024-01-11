@@ -8,6 +8,8 @@ items:
     displayName: API changes, API updates, Microsoft Graph API, REST API, REST API updates
   - name: Authentication and authorization
     href: /graph/auth/index?context=graph/api/beta
+  - name: Permissions reference
+    href: /graph/permissions-reference
   - name: Use the API
     href: /graph/use-the-api?context=graph/api/beta
   - name: Use SDKs
