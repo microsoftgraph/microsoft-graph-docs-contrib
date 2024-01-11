@@ -22,6 +22,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 The [virtualEndpoint](/graph/api/resources/virtualendpoint) resource is generally available, laying the foundation for future Cloud PC updates to the `v1.0` path.
 
+### Education
+
+Use the **webURL** property to get the deep link URL of an [educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest-beta&preserve-view=true).
+
 ## January 2024: New in preview only
 
 ### Device and app management | Cloud PC
