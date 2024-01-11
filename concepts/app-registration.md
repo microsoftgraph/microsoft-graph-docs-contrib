@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Graph Data Connect app registration"
-description: "Learn how to register your Microsoft Graph Data Connect app"
+description: "Learn how to register your Microsoft Graph Data Connect app."
 author: "michaelvenables"
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
@@ -17,7 +17,7 @@ In the [Azure portal](https://aka.ms/mgdcinazure) experience, developers and ten
 ### Landing page
 
 > [!IMPORTANT]
-> If Microsoft Graph Data Connect hasn't been enabled by your admin, the portal experience is disabled. For details about how global administrators can enable Data Connect, see [Enable Microsoft Graph Data Connect in your Microsoft 365 tenant](https://github.com/microsoftgraph/microsoft-graph-docs/blob/45b4b22b5db4a87be256b59130e74bf49c2e7fd1/includes/data-connect-quickstart-02.md?plain=1#L45)
+> If Microsoft Graph Data Connect hasn't been enabled by your admin, the portal experience is disabled. For more information about how global administrators can enable Data Connect, see [Enable Microsoft Graph Data Connect in your Microsoft 365 tenant](https://github.com/microsoftgraph/microsoft-graph-docs/blob/45b4b22b5db4a87be256b59130e74bf49c2e7fd1/includes/data-connect-quickstart-02.md?plain=1#L45)
 
 The first screen of the Azure portal experience prompts you to register your first app with Data Connect, or load existing registrations into a summary table view.
 
@@ -55,7 +55,7 @@ Then specify the project details—a process that's similar to creating a resour
 - **Resource Group** (required) - Select the group location for the data storage.
 - **Destination Type** - Select the type of storage from Azure Storage Account or Azure SQL Database Server.
 
-  >**Note:** If you select SQL Database Server, the app will only support `Mapping Data Flows` types. For details, see [Mapping Data Flows in Azure Data Factory](/azure/data-factory/concepts-data-flow-overview).
+  >**Note:** If you select SQL Database Server, the app only supports `Mapping Data Flows` types. For more information, see [Mapping Data Flows in Azure Data Factory](/azure/data-factory/concepts-data-flow-overview).
 
 - **Storage Account** (required) - Select the storage account where the data to provision with Data Connect will be located, or create a new Azure Storage Account.
 - **Storage Account Uri** (required) - From the storage account you selected, select the URI to use (Distributed File System (DFS) or blob).
@@ -77,21 +77,21 @@ If you select SQL for **Storage Account**, the **Uri** project detail field is d
 
 #### Datasets
 
-After you complete the **Registration Info** page, specify the datasets that the app registration needs to query. This step is crucial for authorization. Only the datasets that you select are transferred for administrator authorization. For details about datasets, see [Datasets, regions, and sinks](./data-connect-datasets.md).
+After you complete the **Registration Info** page, specify the datasets that the app registration needs to query. This step is crucial for authorization. Only the datasets that you select are transferred for administrator authorization. For more information about datasets, see [Datasets, regions, and sinks](./data-connect-datasets.md).
 
 The wizard shows a table that allows the entry of multiple datasets, the selection of columns in the datasets, and more details if applicable, such as scope and scope options. You can select each dataset that the app will request for authorization, and all or several columns from the dataset, depending on the level of granularity and privacy required.
 
-![Screenshot showing the Datasets column selected while running the Data Connect app registration wizard.](images/app-registration-create-datasets.png)
+![Screenshot that shows the Datasets column selected while running the Data Connect app registration wizard.](images/app-registration-create-datasets.png)
 
-##### Scope Selection
+##### Scope selection
 
-There are three ways to configure the scope for each dataset:
+You can configure the scope for each dataset in three ways:
 
-1. **All information**: This is the default option. By leaving the field blank, all of the dataset's scope will be registered.
-2. **Select users or groups within the organization**: Enter the object Ids of the users or groups separated by commas. Learn more about (Entra Groups)[https://learn.microsoft.com/en-us/entra/fundamentals/groups-view-azure-portal]
-3. **Specific predicates**: Follow the filtering mechanism as for Microsoft Graph APIs to specify a scope within a column of the dataset. [Learn more](./data-connect-filtering.md#user-selection).
+- **All information**: The default option. By leaving the field blank, the entire scope of the dataset is registered.
+- **Select users or groups within the organization**: Enter the object IDs of the users or groups separated by commas. Learn more about [Microsoft Entra groups](/entra/fundamentals/groups-view-azure-portal).
+- **Specific predicates**: Use the filtering mechanism similar to that of Microsoft Graph APIs to specify a scope within a column of the dataset. Learn more about [user selection](./data-connect-filtering.md#user-selection).
 
-For details about scopes, see [User selection and filtering capabilities in Microsoft Graph Data Connect](./data-connect-filtering.md).
+For more information about scopes, see [User selection and filtering capabilities in Microsoft Graph Data Connect](./data-connect-filtering.md).
 
 When you're finished, choose **Next : Review + create**.
 
