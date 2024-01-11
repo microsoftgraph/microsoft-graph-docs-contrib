@@ -1,6 +1,6 @@
 ---
 title: "cloudPcBulkPowerOff resource type"
-description: "Defines the bulk power off action using the executeAction API with Cloud PC IDs as the only input parameter for bulk power on the action."
+description: "Defines bulk power-off action using the executeAction API, with Cloud PC IDs as the only input parameter for the bulk power-off operation."
 author: "Guoan-Tang "
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the bulk power off action using the executeAction API with Cloud PC IDs as the only input parameter for bulk power on the action. Only Cloud PC IDs are the input parameter for bulk power on the action.
+Defines bulk power-off action using the executeAction API, with Cloud PC IDs as the only input parameter for the bulk power-off operation.
 
 Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 
