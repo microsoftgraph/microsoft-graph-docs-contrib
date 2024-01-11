@@ -25,7 +25,7 @@ The first screen of the Azure portal experience prompts you to register your fir
 
 The table includes the following column fields:
 
-- **Name**:The app registration name
+- **Name**: The app registration name
 - **App ID**: The Microsoft Entra application ID
 - **Registered On**: The date the app was registered
 - **Developer**: The developer who registered the application
