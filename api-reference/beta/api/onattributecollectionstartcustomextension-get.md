@@ -79,7 +79,6 @@ GET https://microsoft.graph.microsoft.com/beta/identity/authenticationEventListe
 
 ---
 
-
 ### Response
 
 The following example shows the response.
