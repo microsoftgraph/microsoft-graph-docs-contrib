@@ -39,7 +39,7 @@
       ],
       "Id": "1e116d73-1e8d-4e45-a7d1-694158841327",
       "Cloud": "Prod",
-      "Version": "beta",
+      "Version": "v1.0",
       "CreatedDateTime": "2024-01-11T00:00:00.8755943Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
