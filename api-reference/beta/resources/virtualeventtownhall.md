@@ -27,6 +27,7 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 |[Delete virtualEventTownhall](../api/virtualeventtownhall-delete.md)|None|Delete a [virtualEventTownhall](../resources/virtualeventtownhall.md) object.|
 |[getByUserIdAndRole](../api/virtualeventtownhall-getbyuseridandrole.md)|[virtualEventTownhall](../resources/virtualeventtownhall.md) collection|**TODO: Add Description**|
 |[getByUserRole](../api/virtualeventtownhall-getbyuserrole.md)|[virtualEventTownhall](../resources/virtualeventtownhall.md) collection|**TODO: Add Description**|
+|[Get presenter](../api/virtualeventtownhall-get-presenter.md)|[virtualEventPresenter](../resources/virtualeventpresenter.md)|Read the properties and relationships of a [virtualEventPresenter](../resources/virtualeventpresenter.md) object.|
 |[List presenters](../api/virtualeventtownhall-list-presenters.md)|[virtualEventPresenter](../resources/virtualeventpresenter.md) collection|Get the virtualEventPresenter resources from the presenters navigation property.|
 |[Create virtualEventPresenter](../api/virtualeventtownhall-post-presenters.md)|[virtualEventPresenter](../resources/virtualeventpresenter.md)|Create a new virtualEventPresenter object.|
 |[List sessions](../api/virtualeventtownhall-list-sessions.md)|[virtualEventSession](../resources/virtualeventsession.md) collection|Get the virtualEventSession resources from the sessions navigation property.|
