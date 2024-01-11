@@ -108,7 +108,7 @@ POST https://graph.microsoft.com/beta/teams/5crrrtrd5-e41c-4f18-ab8awfd-f36ca7dd
 ---
 
 #### Response
-The following is an example of a response with 400.
+The following example shows the `400` error response.
 <!-- {
   "blockType": "response",
   "name": "archive_channel"
