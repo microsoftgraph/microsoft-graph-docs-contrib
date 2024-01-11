@@ -40,7 +40,6 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and an [educationSubmission](../resources/educationsubmission.md) object in the response body.
 
 ## Example
-The following example shows how to call this API.
 
 ### Request
 The following example shows a request.
