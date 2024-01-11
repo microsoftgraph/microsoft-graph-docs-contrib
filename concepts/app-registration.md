@@ -87,7 +87,7 @@ The wizard shows a table that allows the entry of multiple datasets, the selecti
 
 You can configure the scope for each dataset in three ways:
 
-- **All information**: The default option. By leaving the field blank, the entire scope of the dataset is registered.
+- **All information**: The default option. If you leave the field blank, the entire scope of the dataset is registered.
 - **Select users or groups within the organization**: Enter the object IDs of the users or groups separated by commas. Learn more about [Microsoft Entra groups](/entra/fundamentals/groups-view-azure-portal).
 - **Specific predicates**: Use the filtering mechanism similar to that of Microsoft Graph APIs to specify a scope within a column of the dataset. Learn more about [user selection](./data-connect-filtering.md#user-selection).
 
