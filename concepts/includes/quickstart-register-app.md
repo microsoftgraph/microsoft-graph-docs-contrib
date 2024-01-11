@@ -9,7 +9,7 @@ ms.topic: include
 ms.prod: applications
 #Customer intent: As developer, I want to know how to register my client application with the Microsoft identity platform so it can be authorized to access data in the Microsoft cloud.
 
-# This include file is currently referenced in the following documentation:
+# Content in this cinlude file is largely duplicated from https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app
 - 
 ---
 
