@@ -116,8 +116,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.educationSubmission",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.educationSubmission)"
 } -->
 
 ```http
@@ -237,8 +236,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.educationSubmission",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.educationSubmission)"
 } -->
 
 ```http
@@ -384,9 +382,9 @@ Content-length: 4492
 }
 ```
 
-### Example 3: Using `$filter` to get submissions
+### Example 3: Use `$filter` to get submissions
 
-### Request
+#### Request
 
 The following example shows a request.
 
@@ -400,7 +398,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/a3cce0ba-2008-4c4d-bf62-079408562d96/submissions?$filter=id eq 'ff2c7fe6-91cd-57a4-aa62-5b9c6b73222a'
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -409,8 +407,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.educationSubmission",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.educationSubmission)"
 } -->
 
 ```http
@@ -470,9 +467,9 @@ Content-type: application/json
 }
 ```
 
-### Example 4: Using `$orderby` to get submissions
+### Example 4: Use `$orderby` to get submissions
 
-### Request
+#### Request
 
 The following example shows a request.
 
@@ -486,7 +483,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/v1.0/education/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/131eeaaa-829e-4c6c-9cf3-491b1320fe4d/submissions?$orderby=submittedDateTime
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -495,8 +492,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.educationSubmission",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.educationSubmission)"
 } -->
 
 ```http
