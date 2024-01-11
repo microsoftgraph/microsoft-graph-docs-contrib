@@ -101,7 +101,7 @@ The following example shows the response.
 >**Notes:** 
 >The response object shown here might be shortened for readability. 
 >
->If [setUpResourcesFolder](educationsubmission-setupResourcesFolder.md) has not been called on this [educationSubmission](../resources/educationsubmission.md) resource yet, the **resourcesFolderUrl** property is `null`.
+>If [setUpResourcesFolder](educationsubmission-setupResourcesFolder.md) hasn't been called on this [educationSubmission](../resources/educationsubmission.md) resource yet, the **resourcesFolderUrl** property is `null`.
 
 <!-- {
   "blockType": "response",
