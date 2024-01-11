@@ -1,6 +1,9 @@
 items:
   - name: Overview of Microsoft Graph
     href: /graph/overview
+  - name: API changelog
+    href: https://developer.microsoft.com/en-us/graph/changelog
+    displayName: API changes, API updates, Microsoft Graph API, REST API, REST API updates
   - name: Authentication and authorization
     items:
       - name: Overview
@@ -55,9 +58,6 @@ items:
           - name: Advanced query capabilities
             displayName: OData query parameters, OData
             href: /graph/aad-advanced-queries?context=graph/api/1.0
-          - name: Optimize requests with query parameters
-            displayName: OData query parameters, OData
-            href: /training/modules/optimize-data-usage
       - name: Batching
         href: /graph/json-batching?context=graph/api/1.0
         displayName: Batch request
@@ -69,12 +69,9 @@ items:
           - name: Service-specific limits
             href: /graph/throttling-limits?context=graph/api/1.0
             displayName: throttling
-          - name: Optimize network traffic
-            href: /training/modules/optimize-network-traffic
-            displayName: throttling
       - name: Change notifications
         displayName: change notifications, rich notifications, basic notifications, subscriptions, webhooks, Azure Event Hubs, Azure Event Grids
-        href: /graph/webhooks?context=graph/api/1.0
+        href: /graph/change-notifications-overview?context=graph/api/1.0
       - name: Change tracking
         displayName: delta query
         href: /graph/delta-query-overview?context=graph/api/1.0
@@ -184,7 +181,7 @@ items:
             href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
           - name: App-only authentication
             href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
-      - name: Use the CLI (preview)
+      - name: Use the CLI
         items:
           - name: CLI overview
             href: /graph/cli/overview?context=graph/api/1.0
@@ -351,6 +348,8 @@ items:
                 href: api/user-delta.md
               - name: Get delta for directory object
                 href: api/directoryobject-delta.md
+              - name: Retry service provisioning
+                href: api/user-retryserviceprovisioning.md
           - name: App role assignment
             href: resources/approleassignment.md
             items:
@@ -453,6 +452,8 @@ items:
                 href: api/user-list-memberof.md
               - name: List transitive member of
                 href: api/user-list-transitivememberof.md
+              - name: Retry service provisioning
+                href: api/group-retryserviceprovisioning.md
           - name: Insights
             items:
               - name: Office Graph insights
@@ -581,6 +582,8 @@ items:
                 href: resources/teamsappinstallation.md
               - name: List apps for user
                 href: api/userteamwork-list-installedapps.md
+              - name: List permission grants for user
+                href: api/user-list-permissiongrants.md
               - name: Add app for user
                 href: api/userteamwork-post-installedapps.md
               - name: Gets installed app for user
@@ -1480,7 +1483,7 @@ items:
         displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
         items:
           - name: Overview
-            href: resources/webhooks.md
+            href: resources/change-notifications-api-overview.md
           - name: Subscription
             items:
               - name: Subscription
@@ -1705,6 +1708,12 @@ items:
                     href: api/browsersharedcookie-update.md
                   - name: Delete
                     href: api/browsersitelist-delete-sharedcookies.md
+          - name: Cloud PC
+            items:
+              - name: Overview
+                href: resources/cloudpc-api-overview.md
+              - name: Virtual endpoint
+                href: resources/virtualendpoint.md
           - name: Cloud printing
             items:
               - name: Print
@@ -4775,7 +4784,6 @@ items:
                         href: api/intune-tem-devicemanagement-get.md
                       - name: Update
                         href: api/intune-tem-devicemanagement-update.md
-
           - name: Service health and communications
             items:
               - name: Overview
@@ -4959,7 +4967,13 @@ items:
               - name: Remove rubric from assignment
                 href: api/educationassignment-delete-rubric.md
               - name: Get delta
-                href: api/educationassignment-delta.md
+                href: api/educationassignment-delta.md              
+              - name: Add grading category
+                href: api/educationassignment-post-gradingcategory.md
+              - name: Update grading category
+                href: api/educationgradingcategory-update.md
+              - name: Remove grading category
+                href: api/educationassignment-delete-gradingcategory.md
           - name: Assignment settings
             href: resources/educationassignmentsettings.md
             items:
@@ -4985,6 +4999,15 @@ items:
                 href: api/educationcategory-delete.md
               - name: Get delta
                 href: api/educationcategory-delta.md
+              - name: Grading category
+                href: resources/educationgradingcategory.md
+                items:
+                  - name: Add
+                    href: api/educationassignment-post-gradingcategory.md
+                  - name: Update
+                    href: api/educationgradingcategory-update.md
+                  - name: Delete
+                    href: educationassignment-delete-gradingcategory.md
           - name: Rubric
             href: resources/educationrubric.md
             items:
@@ -5527,6 +5550,8 @@ items:
                     href: api/orgcontact-delta.md
                   - name: Get delta for directory object
                     href: api/directoryobject-delta.md
+                  - name: Retry service provisioning
+                    href: api/orgcontact-retryserviceprovisioning.md
                   - name: Groups
                     href: resources/group.md
                     items:
@@ -6281,9 +6306,9 @@ items:
                   - name: Agreement acceptances
                     href: resources/agreementacceptance.md
                     items:
-                      - name: List acceptances
+                      - name: List agreement acceptances for a user
                         href: api/user-list-agreementacceptances.md
-                      - name: List acceptance status
+                      - name: List acceptances
                         href: api/agreement-list-acceptances.md
                   - name: Agreement file
                     items:
@@ -8808,6 +8833,8 @@ items:
                     href: api/team-list-permissiongrants.md
                   - name: List for chat
                     href: api/chat-list-permissiongrants.md
+                  - name: List for user
+                    href: api/user-list-permissiongrants.md
               - name: Tab
                 href: resources/teamstab.md
                 items:
@@ -8901,6 +8928,8 @@ items:
                         href: api/call-cancelmediaprocessing.md
                       - name: Subscribe to tone
                         href: api/call-subscribetotone.md
+                      - name: Send DTMF tone
+                        href: api/call-senddtmftones.md
                   - name: Large gallery view operation
                     items:
                       - name: Add large gallery view
@@ -9141,7 +9170,7 @@ items:
                   - name: Get message reply
                     href: api/chatmessage-get.md
                   - name: Get primary channel
-                    href: api/team-get-primarychannel.md  
+                    href: api/team-get-primarychannel.md
                   - name: List channel messages
                     href: api/channel-list-messages.md
                   - name: List members

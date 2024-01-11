@@ -7,17 +7,17 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# channel: unarchive
+# Channel: unarchive
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restore an archived [channel](../resources/channel.md). Unarchiving restores the ability for users to send messages and edit the channel. Channels are archived using the [archive](channel-archive.md) API.
+Restore an archived [channel](../resources/channel.md). Unarchiving restores the ability for users to send messages and edit the channel. Channels are archived via the [archive](channel-archive.md) API.
 
-Unarchiving is an asynchronous operation; a channel is unarchived once the asynchronous unarchive operation completes successfully, which might occur after this method responds.
+Unarchiving is an asynchronous operation; a channel is unarchived when the asynchronous unarchive operation completes successfully, which might occur after this method responds.
 
-> **Note**: An archived channel that belongs to an archived team cannot be unarchived. Unarchive the team before attempting to unarchive the channel, otherwise an error will occur.
+> **Note**: An archived channel that belongs to an archived team cannot be unarchived. Unarchive the team before you unarchive the channel; otherwise, an error will occur.
 
 ## Permissions
 
@@ -25,9 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | ChannelSettings.ReadWrite.All | |
+|Delegated (work or school account) | ChannelSettings.ReadWrite.All | 
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | ChannelSettings.ReadWrite.All | |
+|Application | ChannelSettings.ReadWrite.All | 
 
 [!INCLUDE [teamwork-permissions-note](../../../includes/teamwork-permissions-note.md)]
 
@@ -52,13 +52,12 @@ Don't supply a request body for this method.
 
 ## Response
 
-If unarchiving is started successfully, this method returns a `202 Accepted` response code. The response contains a `Location` header, which contains the location of the [teamsAsyncOperation](../resources/teamsasyncoperation.md) that was created to handle unarchiving of the channel of team. Check the status of the unarchiving operation by making a GET request to this location.
+If unarchiving is started successfully, this method returns a `202 Accepted` response code. The response contains a `Location` header, which contains the location of the [teamsAsyncOperation](../resources/teamsasyncoperation.md) that was created to handle unarchiving of the channel of the team. Check the status of the unarchiving operation by making a GET request to this location.
 
 ## Example
 
 ### Example 1: Unarchive a channel
-
-The following is an example of a request with success for unarchiving a channel.
+The following is an example of a request to unarchive a channel.
 
 #### Request
 
@@ -99,7 +98,8 @@ POST https://graph.microsoft.com/beta/teams/5crrrtrd5-e41c-4f18-ab8awfd-f36ca7dd
 ```
 
 #### Response
-The following is an example of a response with 400.
+The following is an example of the `400` error response.
+
 <!-- {
   "blockType": "response",
   "name": "archive_channel"

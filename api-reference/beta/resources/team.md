@@ -51,6 +51,7 @@ Every team is associated with a [Microsoft 365 group](../resources/group.md). Th
 |[Upgrade app installed in team](../api/team-teamsappinstallation-upgrade.md) | None | Upgrade the app installed in a team to the latest version.|
 |[Remove app from team](../api/team-delete-installedapps.md) | None | Remove (uninstall) an app from a team.|
 |[List permission grants](../api/team-list-permissiongrants.md) | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection | List permissions that have been granted to apps to access the team.|
+|[Get open shifts across all joined teams](../api/team-getopenshifts.md)|[openShift](../resources/openshift.md) collection|Get all [openShift](../resources/openshift.md) objects across all teams a user is a direct member of.|
 
 ## Properties
 

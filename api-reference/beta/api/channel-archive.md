@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# channel: archive
+# Channel: archive
 
 Namespace: microsoft.graph
 
@@ -40,12 +40,15 @@ One of the following permissions is required to call this API. To learn more, in
 POST /teams/{team-id}/channels/{channel-id}/archive
 POST /groups/{team-id}/team/channels/{channel-id}/archive
 ```
+
 ## Request headers
+
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
+
 In the request, you can optionally include the `shouldSetSpoSiteReadOnlyForMembers` parameter in a JSON body, as follows.
 ```JSON
 {
@@ -103,8 +106,7 @@ POST https://graph.microsoft.com/beta/teams/5crrrtrd5-e41c-4f18-ab8awfd-f36ca7dd
 ```
 
 #### Response
-
-The following is an example of a response with 400.
+The following example shows the `400` error response.
 <!-- {
   "blockType": "response",
   "name": "archive_channel"

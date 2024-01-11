@@ -49,9 +49,6 @@ The following are current known limitations:
 - Maximum size of an `externalItem` entity is 4 MB.
 - Sorting results is not supported.
 
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
-
 ## Next steps
 
 - See the [Microsoft Search API overview](/graph/search-concept-overview).
