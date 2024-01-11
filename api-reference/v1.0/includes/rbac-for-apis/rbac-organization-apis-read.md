@@ -3,7 +3,7 @@ author: adimitui
 ms.topic: include
 ---
 
-For delegated scenarios, the signed-in user must have at least one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+For delegated scenarios, the signed-in user must have at least one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 - AdHoc License Administrator
 - Application Administrator
@@ -30,9 +30,7 @@ For delegated scenarios, the signed-in user must have at least one of the follow
 - Mailbox Administrator
 - Microsoft Managed Desktop Administrator
 - Microsoft Store for Business User
-- Modern Commerce User
-- Partner Tier1 Support
-- Partner Tier2 Support
+- Modern Commerce Administrator
 - Power BI Administrator
 - Power BI Administrator
 - Privileged Authentication Administrator

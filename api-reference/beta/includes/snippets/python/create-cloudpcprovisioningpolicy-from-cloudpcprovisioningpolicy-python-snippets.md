@@ -13,10 +13,8 @@ request_body = CloudPcProvisioningPolicy(
 	description = "Description value",
 	display_name = "Display Name value",
 	domain_join_configuration = CloudPcDomainJoinConfiguration(
+		domain_join_type = CloudPcDomainJoinType.HybridAzureADJoin,
 		on_premises_connection_id = "16ee6c71-fc10-438b-88ac-daa1ccafffff",
-		additional_data = {
-				"domain_join_type" : "hybridAzureADJoin",
-		}
 	),
 	domain_join_configurations = [
 		CloudPcDomainJoinConfiguration(

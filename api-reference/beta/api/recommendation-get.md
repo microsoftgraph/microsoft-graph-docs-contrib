@@ -3,7 +3,7 @@ title: "Get recommendation"
 description: "Read the properties and relationships of a recommendation object."
 author: "ddeeps2610"
 ms.localizationpriority: medium
-ms.prod: "directory-management"
+ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
 

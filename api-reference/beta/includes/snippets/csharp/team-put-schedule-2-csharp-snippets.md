@@ -19,6 +19,8 @@ var requestBody = new Schedule
 	SwapShiftsRequestsEnabled = true,
 	OfferShiftRequestsEnabled = true,
 	TimeOffRequestsEnabled = true,
+	StartDayOfWeek = DayOfWeekObject.Tuesday,
+	ActivitiesIncludedWhenCopyingShiftsEnabled = true,
 	TimeClockEnabled = true,
 	TimeClockSettings = new TimeClockSettings
 	{

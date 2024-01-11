@@ -104,7 +104,6 @@ GET https://graph.microsoft.com/v1.0/chats/{id}/members/{id}
 
 ---
 
-
 ### Response
 
 Here is an example of the response.

@@ -20,6 +20,14 @@
           "LICENSE-CODE",
           "ThirdPartyNotices"
         ]
+      },
+      {
+        "files": [
+          "**.md",
+          "**.yml"
+        ],
+        "src": "breadcrumb",
+        "dest": "concepts/breadcrumb"
       }
     ],
     "resource": [
