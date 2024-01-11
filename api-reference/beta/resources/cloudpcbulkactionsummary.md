@@ -1,6 +1,6 @@
 ---
 title: "cloudPcBulkActionSummary resource type"
-description: "Represents a run summary of bulk actions"
+description: "Represents a run summary of bulk actions."
 author: "Guoan-Tang"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -28,7 +28,7 @@ Represents a run summary of bulk actions.
 None.
 
 ## JSON representation
-The following content is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.cloudPcBulkActionSummary"

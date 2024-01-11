@@ -26,7 +26,7 @@ Represents the bulk action applied to Cloud PCs specified in a parameter. This r
 |Property|Type|Description|
 |:---|:---|:---|
 |actionSummary|[cloudPcBulkActionSummary](../resources/cloudpcbulkactionsummary.md)|Run summary of this bulk action.|
-|cloudPcIDs|Guid collection|ID of Cloud PCs the bulk action applies to.|
+|cloudPcIDs|Guid collection|ID of the Cloud PCs the bulk action applies to. |
 |createdDateTime|DateTimeOffset|Time when the bulk action was created.|
 |displayName|String|Name of the bulk action.|
 |id|Guid|ID of the bulk action.|
@@ -35,7 +35,7 @@ Represents the bulk action applied to Cloud PCs specified in a parameter. This r
 None.
 
 ## JSON representation
-The following content is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
