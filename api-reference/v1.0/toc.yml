@@ -181,7 +181,7 @@ items:
             href: /powershell/microsoftgraph/navigating?toc=/graph/toc.json
           - name: App-only authentication
             href: /powershell/microsoftgraph/app-only?toc=/graph/toc.json
-      - name: Use the CLI (preview)
+      - name: Use the CLI
         items:
           - name: CLI overview
             href: /graph/cli/overview?context=graph/api/1.0
@@ -4967,7 +4967,13 @@ items:
               - name: Remove rubric from assignment
                 href: api/educationassignment-delete-rubric.md
               - name: Get delta
-                href: api/educationassignment-delta.md
+                href: api/educationassignment-delta.md              
+              - name: Add grading category
+                href: api/educationassignment-post-gradingcategory.md
+              - name: Update grading category
+                href: api/educationgradingcategory-update.md
+              - name: Remove grading category
+                href: api/educationassignment-delete-gradingcategory.md
           - name: Assignment settings
             href: resources/educationassignmentsettings.md
             items:
@@ -4993,6 +4999,15 @@ items:
                 href: api/educationcategory-delete.md
               - name: Get delta
                 href: api/educationcategory-delta.md
+              - name: Grading category
+                href: resources/educationgradingcategory.md
+                items:
+                  - name: Add
+                    href: api/educationassignment-post-gradingcategory.md
+                  - name: Update
+                    href: api/educationgradingcategory-update.md
+                  - name: Delete
+                    href: educationassignment-delete-gradingcategory.md
           - name: Rubric
             href: resources/educationrubric.md
             items:
@@ -6291,9 +6306,9 @@ items:
                   - name: Agreement acceptances
                     href: resources/agreementacceptance.md
                     items:
-                      - name: List acceptances
+                      - name: List agreement acceptances for a user
                         href: api/user-list-agreementacceptances.md
-                      - name: List acceptance status
+                      - name: List acceptances
                         href: api/agreement-list-acceptances.md
                   - name: Agreement file
                     items:
@@ -8913,6 +8928,8 @@ items:
                         href: api/call-cancelmediaprocessing.md
                       - name: Subscribe to tone
                         href: api/call-subscribetotone.md
+                      - name: Send DTMF tone
+                        href: api/call-senddtmftones.md
                   - name: Large gallery view operation
                     items:
                       - name: Add large gallery view
