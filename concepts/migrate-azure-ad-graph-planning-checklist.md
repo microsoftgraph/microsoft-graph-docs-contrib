@@ -2,7 +2,6 @@
 title: "Azure Active Directory (Azure AD) Graph app migration checklist"
 description: "Use this checklist to migrate your apps from Azure Active Directory (Azure AD) Graph to Microsoft Graph."
 author: "FaithOmbongi"
-ms.author: ombongifaith
 ms.reviewer: dkershaw
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -52,4 +51,4 @@ After switching to Microsoft Graph, you unlock many more datasets and features t
 ## Next step
 
 > [!div class="nextstepaction"]
-> Learn about [request call syntax](migrate-azure-ad-graph-request-differences.md) to start step 1: reviewing API differences.
+> [Learn about the request call syntax](migrate-azure-ad-graph-request-differences.md)
