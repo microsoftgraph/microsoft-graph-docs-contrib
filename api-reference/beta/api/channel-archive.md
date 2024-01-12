@@ -74,7 +74,7 @@ The following is an example of a request for archiving a channel.
   "name": "archive_channel"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/5crrrtrd5-e41c-4f18-ab8awfd-f36ca7dd11231de/channels/5ceebed5-o45u-334o-sve3-f36ca7dd31de/archive
+POST https://graph.microsoft.com/beta/teams/{team-id}/channels/{channel-id}/archive
 ```
 
 #### Response
@@ -86,7 +86,7 @@ The following is an example of a response.
 }-->
 ```http
 HTTP/1.1 202 Accepted
-Location: /teams/5crrrtrd5-e41c-4f18-ab8awfd-f36ca7dd11231de/operations/5cr4f18ab8a238965287f36
+Location: /teams/{team-id}/operations/{operation-id}
 Content-Type: text/plain
 Content-Length: 0
 ```
@@ -102,7 +102,7 @@ The following is an example of a request when **Team is archived**.
   "name": "archive_channel"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/5crrrtrd5-e41c-4f18-ab8awfd-f36ca7dd11231de/channels/5ceebed5-o45u-334o-sve3-f36ca7dd31de/archive
+POST https://graph.microsoft.com/beta/teams/{team-id}/channels/{channel-id}/archive
 ```
 
 #### Response
@@ -119,9 +119,9 @@ Content-Length: 193
 {
     "error": {
         "code": "BadRequest",
-        "message": "Team has to be active, for channel to be archived or unarchived: 5ceebed5-o45u-334o-sve3-f36ca7dd31de",
+        "message": "Team has to be active, for channel to be archived or unarchived: {channel-id}",
         "innerError": {
-            "message": "Team has to be active, for channel to be archived or unarchived: 5ceebed5-o45u-334o-sve3-f36ca7dd31de",
+            "message": "Team has to be active, for channel to be archived or unarchived: {channel-id}",
             "code": "Unknown",
             "innerError": {},
             "date": "2023-12-11T04:26:35",
