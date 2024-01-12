@@ -29,7 +29,7 @@ Communications servers can publish [deltaParticipants](/graph/api/resources/delt
 
 ### Applications
 
-- For Azure AD Connect cloud sync scenarios, you can now specify organizational units and groups that are in scope of a [synchronizationRule](/graph/api/resources/synchronization-synchronizationrule?view=graph-rest-beta&preserve-view=true). For details, see the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=d9c34227-2a99-49e5-ac9c-e8444f685ce5).
+For Azure AD Connect cloud sync scenarios, you can now specify organizational units and groups that are in scope of a [synchronizationRule](/graph/api/resources/synchronization-synchronizationrule?view=graph-rest-beta&preserve-view=true). For details, see the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=d9c34227-2a99-49e5-ac9c-e8444f685ce5).
 
 ### Device and app management | Cloud PC
 
