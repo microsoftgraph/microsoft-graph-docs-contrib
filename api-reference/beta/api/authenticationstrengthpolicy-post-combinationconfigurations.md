@@ -54,7 +54,7 @@ You can specify the following properties when creating an **authenticationCombin
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [fido2combinationConfigurations](fido2combinationconfiguration.md) or an [x509certificatecombinationconfiguration](x509certificatecombinationconfiguration.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [fido2combinationConfigurations](../resources/fido2combinationconfiguration.md) or an [x509certificatecombinationconfiguration](../resources/x509certificatecombinationconfiguration.md) object in the response body.
 
 ## Examples
 
