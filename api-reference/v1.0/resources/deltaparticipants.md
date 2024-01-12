@@ -11,15 +11,13 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents a notification for the creation, update, or deletion of a [participant](participant.md) in a meeting. This resource is published by communications servers as a notification of participant changes since the last update.
 
 ## Properties
 
-| Property       | Type        | Description                                |
-|:---------------|:------------|:-------------------------------------------|
-| sequenceNumber | Int64       | The sequence number for the roster update that is used to identify the notification order. |
+| Property       | Type         | Description                                |
+|:---------------|:-------------|:-------------------------------------------|
+| sequenceNumber | Int64        | The sequence number for the roster update that is used to identify the notification order. |
 
 ## Relationships
 
