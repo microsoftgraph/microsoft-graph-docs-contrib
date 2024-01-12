@@ -2,7 +2,6 @@
 title: "Review app authentication library changes"
 description: "Describes how to update authentication library use in order to migrate an app from Azure AD Graph to Microsoft Graph."
 author: "FaithOmbongi"
-ms.author: ombongifaith
 ms.reviewer: dkershaw
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -51,11 +50,11 @@ The expression above limits the permission scopes request to the scopes configur
 
 Learn [.NET client library](migrate-azure-ad-graph-client-libraries.md) differences between Azure Active Directory (Azure AD) Graph and Microsoft Graph.
 
-See [Migrate applications to the Microsoft Authentication Library (MSAL)](https://learn.microsoft.com/en-us/entra/identity-platform/msal-migration) for direct and extensive help with the process, including troubleshooting and help with common errors.
+See [Migrate applications to the Microsoft Authentication Library (MSAL)](/entra/identity-platform/msal-migration) for direct and extensive help with the process, including troubleshooting and help with common errors.
 
 Once you migrate to MSAL, you can request more scopes dynamically, and users are prompted to provide incremental consent the next time they use your app.
 
 ## Next step
 
 > [!div class="nextstepaction"]
-> Review the [migration checklist](migrate-azure-ad-graph-planning-checklist.md) again.
+> [Review the migration checklist again](migrate-azure-ad-graph-planning-checklist.md)
