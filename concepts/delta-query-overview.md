@@ -7,7 +7,7 @@ ms.reviewer: keylimesoda
 ms.prod: "change-notifications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.date: 12/28/2023
+ms.date: 01/12/2024
 #customer intent: As a developer, I want to learn how to track changes to specific Microsoft Graph resources, so that I can build apps that process the changes according to the business requirements.
 ---
 
@@ -28,7 +28,7 @@ The typical call pattern is as follows:
 
 2. Microsoft Graph responds with the requested resource and a [state token](#state-tokens).
 
-     a.  If Microsoft Graph returns a `@odata.nextLink` URL, there are more pages of data to retrieve in the session, even if the current response contains an empty result. The apskipTokenplication uses the `@odata.nextLink` URL to continue making requests to retrieve all pages of data until Microsoft Graph returns a `@odata.deltaLink` URL in the response.
+     a.  If Microsoft Graph returns a `@odata.nextLink` URL, there are more pages of data to retrieve in the session, even if the current response contains an empty result. The application uses the `@odata.nextLink` URL to continue making requests to retrieve all pages of data until Microsoft Graph returns a `@odata.deltaLink` URL in the response.
 
      b.  If Microsoft Graph returns a `@odata.deltaLink` URL, there's no more data about the existing state of the resource to return in the current session. For future requests, the application uses the `@odata.deltaLink` URL to learn about changes to the resource.
 
