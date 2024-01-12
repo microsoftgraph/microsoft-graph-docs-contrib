@@ -107,10 +107,12 @@ POST https://graph.microsoft.com/beta/teams/{team-id}/channels/{channel-id}/arch
 
 #### Response
 The following example shows the `400` error response.
+
 <!-- {
   "blockType": "response",
-  "name": "archivechannelteam_archived"
-}-->
+  "truncated": true
+} -->
+
 ```http
 http/1.1 400 Bad Request
 Content-Type: application/json
