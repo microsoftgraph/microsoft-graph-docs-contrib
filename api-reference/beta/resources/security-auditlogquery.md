@@ -29,7 +29,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|administrativeUnitIdFilters|String collection|Administrative Units tagged to an audit log record.|
+|administrativeUnitIdFilters|String collection|The administrative units tagged to an audit log record.|
 |displayName|String|Display name for the saved audit log query|
 |filterEndDateTime|DateTimeOffset|End date of the date range in the query|
 |filterStartDateTime|DateTimeOffset|Start date of the date range in the query|
