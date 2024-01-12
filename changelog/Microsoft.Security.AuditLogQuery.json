@@ -15,7 +15,7 @@
       "ApiChange": "Resource",
       "ChangedApiName": "auditLogRecord",
       "ChangeType": "Addition",
-      "Description": "Added the [auditLogRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-auditlogrecord?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
+      "Description": "Added the [auditLogRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-auditlogrecord?view=graph-rest-beta) resource.",
       "Target": "auditLogRecord"
       },
       {
