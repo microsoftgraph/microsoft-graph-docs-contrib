@@ -297,7 +297,6 @@ Namespace: microsoft.graph.security
 |partnerTechnician|
 |guest|
 |unknownFutureValue|
-```suggestion
 ### actionAfterRetentionPeriod values
 
 | Member                 |
