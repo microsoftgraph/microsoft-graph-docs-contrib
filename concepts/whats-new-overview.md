@@ -24,7 +24,10 @@ The [virtualEndpoint](/graph/api/resources/virtualendpoint) resource is generall
 
 ### Education
 
-Use the **webURL** property to get the deep link URL of an [educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest-beta&preserve-view=true).
+Use the **webURL** property to get the deep link URL of an [educationSubmission](/graph/api/resources/educationsubmission).
+
+### Teamwork and communications | Calls and online meetings
+Communications servers can publish [deltaParticipants](/graph/api/resources/deltaParticipants) notifications for the creation, update, or deletion of a [participant](/graph/api/resources/participant) in a [call](/graph/api/resources/call). For more information, see [JSON payload examples](/graph/api/application-post-calls#notification---roster) of notifications with delta roster disabled or enabled.
 
 ## January 2024: New in preview only
 
