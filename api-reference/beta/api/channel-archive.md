@@ -99,7 +99,7 @@ The following is an example of a request when **Team is archived**.
 
 <!-- {
   "blockType": "request",
-  "name": "archive_channel_team_archived"
+  "name": "archivechannelteam_archived"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/teams/{team-id}/channels/{channel-id}/archive
@@ -109,7 +109,7 @@ POST https://graph.microsoft.com/beta/teams/{team-id}/channels/{channel-id}/arch
 The following example shows the `400` error response.
 <!-- {
   "blockType": "response",
-  "name": "archive_channel_team_archived"
+  "name": "archivechannelteam_archived"
 }-->
 ```http
 http/1.1 400 Bad Request

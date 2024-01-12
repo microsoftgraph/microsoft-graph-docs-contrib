@@ -91,7 +91,7 @@ The following example shows a request to unarchive a channel in an archived team
 
 <!-- {
   "blockType": "request",
-  "name": "unarchive_channel_team_archived"
+  "name": "unarchivechannelteam_archived"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/teams/{team-id}/channels/{channel-id}/unarchive
@@ -102,7 +102,7 @@ The following example shows the `400` error response.
 
 <!-- {
   "blockType": "response",
-  "name": "unarchive_channel_team_archived"
+  "name": "unarchivechannelteam_archived"
 }-->
 ```http
 http/1.1 400 Bad Request
