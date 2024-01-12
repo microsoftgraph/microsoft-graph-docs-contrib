@@ -45,7 +45,7 @@ You can use three properties to set the person details. Use only one of the foll
 
   If no image is provided, one will be fetched (if available).
 
-* By default, the person component will only request the standard Microsoft Graph user set of [properties](/graph/api/user-get?&tabs=http#optional-query-parameters). In order to request additional properties, declare them as any part of the `line(x)Property`.
+* By default, the person component only requests the standard Microsoft Graph user set of [properties](/graph/api/user-get?&tabs=http#optional-query-parameters). In order to request additional properties, declare them as any part of the `line(x)Property`.
 
 
 ## Properties
@@ -63,7 +63,7 @@ You can use several properties to customize the component.
 | fetch-image     | fetchImage     | Set flag to fetch `personImage` automatically from Microsoft Graph based on the `personDetails` object provided by the user. |
 | disable-image-fetch | disableImageFetch | Set flag to disable fetching of person image. Can be used to avoid unnecessary fetching from Microsoft Graph when specifying `personImage` property.
 | avatar-type     | avatarType     | Set to `initials` or `photo` to render either display state - default is photo. |
-| avatar-size     | avatarSize     | Set the avatar size to `small`, `large`, or `auto` to determine the correct size for the presence badge. The default value is `auto`. If the `view` attribute is set to `threelines` or `fourlines`, `avatar-size` is automatically treated as `large`, regardless of its actual value. |
+| avatar-size     | avatarSize     | Set the avatar size to `small`, `large`, or `auto` to help determine the correct size for the presence badge. The default value is `auto`. If the `view` attribute is set to `threelines` or `fourlines`, `avatar-size` is automatically treated as `large`, regardless of its actual value. |
 | vertical-layout | verticalLayout | Set the component layout to vertical.|
 | view            | view           | Set to control how the person is rendered. Default is `image`. <br /> `image` - show only avatar <br /> `oneline` - show avatar and first line (`displayName` by default) <br /> `twolines` - show avatar and two lines of text (`displayName` and `jobTitle` by default) <br /> `threelines` - show avatar and three lines of text (`displayName`, `jobTitle` and `department` by default) <br /> `fourlines` - show avatar and four lines of text (`displayName`, `jobTitle`, `department` and `email` by default) <br /> In `vertical-layout`, view changes. <br /> `twolines` - show avatar and two lines of text (`displayName` and `email` by default) <br /> `threelines` - show avatar and three lines of text (`displayName` , `email` and `department` by default) |
 | line1-property  | line1Property  | Sets the property of the personDetails to use for the first line of text. Default is `displayName`.|
