@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an audit log query, which is used to query and retrieve relevant audit log records.
+Represents an audit log query that is used to query and retrieve relevant audit log records.
 
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
