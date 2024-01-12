@@ -32,7 +32,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |administrativeUnitIdFilters|String collection|The administrative units tagged to an audit log record.|
 |displayName|String|The display name of the saved audit log query.|
 |filterEndDateTime|DateTimeOffset|End date of the date range in the query|
-|filterStartDateTime|DateTimeOffset|Start date of the date range in the query|
+|filterStartDateTime|DateTimeOffset|The start date of the date range in the query.|
 |id|String|Unique identifier for the audit log query. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |ipAddressFilters|String collection|The IP address of the device that was used when the activity was logged.|
 |keywordFilter|String|Free text field to search non-indexed properties of the audit log.|
