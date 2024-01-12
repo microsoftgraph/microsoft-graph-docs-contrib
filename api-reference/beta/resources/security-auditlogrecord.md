@@ -1,6 +1,6 @@
 ---
 title: "auditLogRecord resource type"
-description: "Represents an audit log record containing both common audit properties and auditData specific to the Microsoft 365 service."
+description: "Represents an audit log entry that contains standard audit attributes as well as auditData specific to the Microsoft 365 service."
 author: "arishojaswi"
 ms.localizationpriority: medium
 ms.prod: "auditlogquery"
