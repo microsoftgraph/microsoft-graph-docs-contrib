@@ -150,7 +150,7 @@ The threat intelligence APIs (preview) allow you to operationalize intelligence 
 
 Threat indicators, also referred to as indicators of compromise (IoCs), represent data about known threats, such as malicious files, URLs, domains, and IP addresses. Customers can generate indicators through internal threat intelligence gathering or acquire indicators from threat intelligence communities, licensed feeds, and other sources. These indicators are then used in various security tools to defend against related threats.
 
-The [tiIndicators](tiindicator.md) entity allows customers to feed threat indicators to Microsoft security solutions to enable block and alert actions on malicious activity or allow, which suppresses actions for indicators determined not to be relevant to an organization. When sending indicators, both the Microsoft solution that will utilize the indicator and the action to be taken on that indicator are specified.
+The [tiIndicator](tiindicator.md) entity allows customers to feed threat indicators to Microsoft security solutions to take a block or alert action on a malicious activity, or to allow the activity that has been determined to be irrelevant to the organization and suppress actions for the indicator. To send an indicator, specify the Microsoft security solution intended to utilize the indicator and the action to take for that indicator.
 
 You can integrate the [tiIndicator](tiindicator.md) entity into your application or use one of the following integrated threat intelligence platforms (TIP):
 
