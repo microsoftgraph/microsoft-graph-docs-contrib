@@ -41,6 +41,22 @@
       "ChangeType": "Addition",
       "Description": "Added the **auditLogQueryStatus** enumeration.",
       "Target": "auditLogQueryStatus"
+      },
+      {
+      "Id": "95da9b0a-04da-4dc5-be44-eed390298791",
+      "ApiChange": "Enumeration",
+      "ChangedApiName": "auditLogRecordType",
+      "ChangeType": "Addition",
+      "Description": "Added the **auditLogRecordType** enumeration.",
+      "Target": "auditLogRecordType"
+      },
+      {
+      "Id": "95da9b0a-04da-4dc5-be44-eed390298791",
+      "ApiChange": "Enumeration",
+      "ChangedApiName": "auditLogUserType",
+      "ChangeType": "Addition",
+      "Description": "Added the **auditLogUserType** enumeration.",
+      "Target": "auditLogUserType"
       }
       ],
       "Id": "b4937176-8221-4bc7-83a4-6e84c4ee02d1",
