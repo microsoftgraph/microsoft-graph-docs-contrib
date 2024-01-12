@@ -362,7 +362,9 @@ GET https://graph.microsoft.com/v1.0/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1
 
 ---
 
-### deltaLink response with an empty array
+### deltaLink response
+
+#### deltaLink response with an empty array
 
 If there are no changes, a `@odata.deltaLink` is returned with no results - the **value** property is an empty array. Make sure to replace the previous link in the application with the new one for use in future calls.
 
@@ -382,7 +384,7 @@ Content-type: application/json
 }
 ```
 
-### deltaLink response with changes
+#### deltaLink response with changes
 
 If there are changes, a collection of changed groups is included. The response also contains either a `@odata.nextLink` - in case there are multiple pages of changes to retrieve - or a `@odata.deltaLink`. Implement the same pattern of following the `@odata.nextLink` and persist the final `@odata.deltaLink` for future calls.
 
