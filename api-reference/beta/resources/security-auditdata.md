@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-auditData is an abstract type that supports the audit logs of various Microsoft 365 services like defaultAuditData which contains the JSON files of these Microsoft 365 services.
+An abstract type that supports the audit logs of various Microsoft 365 services like defaultAuditData which contains the JSON files of these Microsoft 365 services.
 
 
 ## Relationships
