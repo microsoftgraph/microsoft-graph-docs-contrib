@@ -27,7 +27,7 @@ Inherits from [entity](../resources/entity.md).
 |[Create](../api/authenticationstrengthpolicy-post-combinationconfigurations.md)|[authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md)| Create a new [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) |
 |[Get](../api/authenticationcombinationconfiguration-get.md)|[authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md)|Read the properties and relationships of a [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) object.|
 |[Update](../api/authenticationcombinationconfiguration-update.md)|[authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md)|Update the properties of an [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) object.|
-|[Delete](../api/authenticationstrengthpolicy-delete-combinationconfigurations.md)|None|Deletes an [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) obejct.|
+|[Delete](../api/authenticationstrengthpolicy-delete-combinationconfigurations.md)|None|Delete an [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) obejct.|
 
 ## Properties
 |Property|Type|Description|
