@@ -57,7 +57,7 @@ If unarchiving is started successfully, this method returns a `202 Accepted` res
 ## Example
 
 ### Example 1: Unarchive a channel
-The following is an example of a request to unarchive a channel.
+The following example shows a request to unarchive a channel.
 
 #### Request
 
@@ -83,26 +83,26 @@ Content-Type: text/plain
 Content-Length: 0
 ```
 
-### Example 2: Unarchive a channel when the team is archived team
+### Example 2: Unarchive a channel when the team is archived
 
-The following is an example of a request when **Team is archived**.
+The following example shows a request to unarchive a channel in an archived team.
 
 #### Request
 
 <!-- {
   "blockType": "request",
-  "name": "archive_channel"
+  "name": "unarchive_channel_team_archived"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/teams/5crrrtrd5-e41c-4f18-ab8awfd-f36ca7dd11231de/channels/5ceebed5-o45u-334o-sve3-f36ca7dd31de/unarchive
 ```
 
 #### Response
-The following is an example of the `400` error response.
+The following example shows the `400` error response.
 
 <!-- {
   "blockType": "response",
-  "name": "archive_channel"
+  "name": "archive_channel_team_archived"
 }-->
 ```http
 http/1.1 400 Bad Request
