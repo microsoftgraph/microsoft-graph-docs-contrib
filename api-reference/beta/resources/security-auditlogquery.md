@@ -1,6 +1,6 @@
 ---
 title: "auditLogQuery resource type"
-description: "Represents an audit log query, which is used to query and retrieve relevant audit log records."
+description: "Represents an audit log query that is used to query and retrieve relevant audit log records."
 author: "arishojaswi"
 ms.localizationpriority: medium
 ms.prod: "auditlogquery"
