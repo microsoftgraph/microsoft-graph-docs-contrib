@@ -3807,5 +3807,41 @@
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
     }
+  ],
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "29615f9c-c662-4e67-b4a0-aa90be732267",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "sendDtmfCompletionReason",
+          "ChangeType": "Addition",
+          "Description": "Added the **sendDtmfCompletionReason** enumeration type.",
+          "Target": "sendDtmfCompletionReason"
+        },
+        {
+          "Id": "29615f9c-c662-4e67-b4a0-aa90be732267",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sendDtmfTonesOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [sendDtmfTonesOperation](https://learn.microsoft.com/en-us/graph/api/resources/sendDtmfTonesOperation?view=graph-rest-1.0) resource.",
+          "Target": "sendDtmfTonesOperation"
+        },
+        {
+          "Id": "29615f9c-c662-4e67-b4a0-aa90be732267",
+          "ApiChange": "Method",
+          "ChangedApiName": "sendDtmfTones",
+          "ChangeType": "Addition",
+          "Description": "Added the [sendDtmfTones](https://learn.microsoft.com/en-us/graph/api/call-senddtmftones?view=graph-rest-1.0) method to the [call](https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-1.0) resource.",
+          "Target": "call"
+        }
+      ],
+      "Id": "29615f9c-c662-4e67-b4a0-aa90be732267",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2024-01-05T18:20:26.249248Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    }
   ]
 }

@@ -8,6 +8,7 @@ ms.localizationpriority: high
 ms.prod: "extensions"
 ms.custom: graphiamtop20
 ms.date: 11/29/2023
+#Customer intent: As a developer, I want to learn how to store lightweight data to Microsoft Graph resources and avoid using an external database system, and use the data to customize authentication and other experiences.
 ---
 
 # Add custom data to resources using extensions
@@ -283,6 +284,7 @@ Content-type: application/json
     "deletedDateTime": null,
     "appDisplayName": "HR-sync-app",
     "dataType": "String",
+    "isMultiValued": false,
     "isSyncedFromOnPremises": false,
     "name": "extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroupTracker",
     "targetObjects": [

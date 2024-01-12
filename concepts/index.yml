@@ -71,7 +71,10 @@ conceptualContent:
       links:
         - url: ./whats-new-overview.md
           itemType: whats-new
-          text: Discover new and updated Microsoft Graph APIs. 
+          text: Discover new and updated Microsoft Graph APIs.
+        - url: https://developer.microsoft.com/en-us/graph/changelog
+          itemType: whats-new
+          text: Explore the API changelog. 
     - title: All services and features
       links:
         - url: ./overview-major-services.md
