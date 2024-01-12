@@ -1,8 +1,8 @@
 items:
   - name: Overview of Microsoft Graph
-    href: /graph/overview
+    href: /graph/overview?context=graph/api/beta
   - name: What's new
-    href: /graph/whats-new-overview
+    href: /graph/whats-new-overview?context=graph/api/beta
   - name: API changelog
     href: https://developer.microsoft.com/en-us/graph/changelog
     displayName: API changes, API updates, Microsoft Graph API, REST API, REST API updates
