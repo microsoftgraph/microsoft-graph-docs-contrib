@@ -102,7 +102,7 @@ The following example shows the `400` error response.
 
 <!-- {
   "blockType": "response",
-  "name": "archive_channel_team_archived"
+  "name": "unarchive_channel_team_archived"
 }-->
 ```http
 http/1.1 400 Bad Request
