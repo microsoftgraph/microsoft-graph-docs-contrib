@@ -31,7 +31,7 @@
       "ApiChange": "Resource",
       "ChangedApiName": "defaultAuditData",
       "ChangeType": "Addition",
-      "Description": "Added the [defaultAuditData](https://learn.microsoft.com/en-us/graph/api/resources/security-defaultauditdata?view=graph-rest-beta) resource to the microsoft.graph.security subnamespace.",
+      "Description": "Added the [defaultAuditData](https://learn.microsoft.com/en-us/graph/api/resources/security-defaultauditdata?view=graph-rest-beta) resource.",
       "Target": "defaultAuditData"
       },
       {
