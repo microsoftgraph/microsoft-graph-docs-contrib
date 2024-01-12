@@ -14,7 +14,7 @@ ms.date: 01/12/2024
 
 The [delta query](./delta-query-overview.md) in Microsoft Graph lets you query for additions, deletions, or updates to [supported resources](delta-query-overview.md#supported-resources), through a series of [delta](/graph/api/group-delta?) requests. For groups, the delta query enables you to discover changes without fetching the entire set of groups to compare changes.
 
-Clients that synchronize groups with a local profile store can use the delta query for both their initial full synchronization along with subsequent incremental synchronizations. Typically, a client does an initial full synchronization of all the groups in a tenant, and then, get incremental changes to groups periodically.
+Clients that synchronize groups with a local profile store can use the delta query for both their initial full synchronization along with subsequent incremental synchronizations. Typically, a client does an initial full synchronization of all the groups in a tenant, and then gets incremental changes to groups periodically.
 
 ## Track changes to groups
 
@@ -22,6 +22,7 @@ Track user changes through one or more GET requests with the **delta** function.
 
 - The **delta** function prepended to the URL path.
 - A [state token](./delta-query-overview.md) (_deltatoken_ or _skiptoken_) from the previous GET **delta** function call.
+- [Optional] Any supported query parameters
 
 ## Example
 
