@@ -9,7 +9,7 @@ ms.topic: include
 ms.prod: applications
 #Customer intent: As developer, I want to know how to register my client application with the Microsoft identity platform so it can be authorized to access data in the Microsoft cloud.
 
-# Content in this cinlude file is largely duplicated from https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app
+# Content in this include file is largely duplicated from https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app
 - 
 ---
 
@@ -31,7 +31,7 @@ Registering your application establishes a trust relationship between your app a
 1. If you have access to multiple tenants, use the **Settings** icon in the top menu to switch to the tenant in which you want to register the application from the **Directories + subscriptions** menu.
 1. Browse to **Identity** > **Applications** > **App registrations** and select **New registration**.
 1. Enter a display **Name** for your application.
-1. Specify who can use the application, in the **Supported account types** section.
+1. Specify who can use the application in the **Supported account types** section.
 
    | Supported account types                                                      | Description                                                                                                                                                                                                                                                                                                                                                                                 |
    | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -125,4 +125,4 @@ To add a federated credential, follow these steps:
    - **Kubernetes accessing Azure resources** to configure a [Kubernetes service account](/entra/workload-id/workload-identity-federation-create-trust?pivots=identity-wif-apps-methods-azp#kubernetes) to get tokens for your application and access Azure resources.
    - **Other issuer** to configure an identity managed by an external [OpenID Connect provider](/entra/workload-id/workload-identity-federation-create-trust?pivots=identity-wif-apps-methods-azp#other-identity-providers) to get tokens for your application and access Azure resources.
     
-For more information, how to get an access token with a federated credential, check out the [Microsoft identity platform and the OAuth 2.0 client credentials flow](/entra/identity-platform/v2-oauth2-client-creds-grant-flow#third-case-access-token-request-with-a-federated-credential) article.
+For more information about how to get an access token with a federated credential, see [Microsoft identity platform and the OAuth 2.0 client credentials flow](/entra/identity-platform/v2-oauth2-client-creds-grant-flow#third-case-access-token-request-with-a-federated-credential).
