@@ -8665,6 +8665,8 @@ items:
                     items:
                       - name: Call record
                         href: resources/callrecords-callrecord.md
+                      - name: List
+                        href: api/callrecords-callrecord-list.md 
                       - name: Get call record
                         href: api/callrecords-callrecord-get.md
                   - name: Direct routing calls
@@ -8679,6 +8681,12 @@ items:
                         href: resources/callrecords-pstncalllogrow.md
                       - name: List PSTN calls
                         href: api/callrecords-callrecord-getpstncalls.md
+                  - name: Participants
+                    items:
+                      - name: Participant
+                        href: resources/callrecords-participant.md
+                      - name: List
+                        href: api/callrecords-callrecord-list-participants.md
                   - name: Session
                     items:
                       - name: Session
