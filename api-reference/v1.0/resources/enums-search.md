@@ -15,9 +15,9 @@ Namespace: microsoft.graph.search
 
 |Member|
 |:---|
-|Published|
-|Draft|
-|Excluded|
+|published|
+|draft|
+|excluded|
 |unknownFutureValue|
 
 <!--
