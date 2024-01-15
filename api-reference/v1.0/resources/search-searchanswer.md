@@ -1,6 +1,6 @@
 ---
 title: "searchAnswer resource type"
-description: "Represents a base type for other search answers."
+description: "Represents the base type for other search answers."
 author: "jakeost-msft"
 ms.localizationpriority: medium
 ms.prod: "search"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.search
 
-Represents a base type for other search answers.
+Represents the base type for other search answers.
 
 Base type of [acronym](../resources/search-acronym.md), [bookmark](../resources/search-bookmark.md), and [QnA](../resources/search-qna.md).
 
