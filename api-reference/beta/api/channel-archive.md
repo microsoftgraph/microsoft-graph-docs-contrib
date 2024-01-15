@@ -65,7 +65,7 @@ If archiving is started successfully, this method returns a `202 Accepted` respo
 
 ### Example 1: Archive a channel
 
-The following is an example of a request for archiving a channel.
+The following example shows a request to archive a channel.
 
 #### Request
 
@@ -79,7 +79,7 @@ POST https://graph.microsoft.com/beta/teams/{team-id}/channels/{channel-id}/arch
 
 #### Response
 
-The following is an example of a response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "name": "archive_channel"
@@ -93,7 +93,7 @@ Content-Length: 0
 
 ### Example 2: Archive a channel when the team is archived
 
-The following is an example of a request when **Team is archived**.
+The following example shows a request when the **team is archived**.
 
 #### Request
 

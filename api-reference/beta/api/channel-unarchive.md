@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Channel: unarchive
+# channel: unarchive
 
 Namespace: microsoft.graph
 
