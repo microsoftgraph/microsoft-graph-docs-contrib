@@ -1,6 +1,6 @@
 ---
 title: "cloudPcPartnerAgentInstallResult resource type"
-description: "Provides installation results for a partner agent on a Cloud PC."
+description: "Describes installation results for a partner agent on a Cloud PC."
 author: "JannyMa"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describe installation result details for a partner agent on a Cloud PC.
+Describes installation results for a partner agent on a Cloud PC.
 
 ## Properties
 
@@ -39,7 +39,7 @@ Describe installation result details for a partner agent on a Cloud PC.
 |Member|Description|
 |:---|:---|
 |installed|The partner agent is installed.|
-|installFailed|The partner agent installation failed although the license is assigned.|
+|installFailed|The partner agent installation failed, although the license is assigned.|
 |installing|The partner agent is installing.|
 |uninstalling|The partner agent is removed when there's no third-party-partner license but the third-party-partner agent was previously installed.|
 |uninstallFailed|Indicates the partner agent uninstallation failed, although a license was already unassigned.|
@@ -52,7 +52,8 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.cloudPcPartnerAgentInstallResult"
@@ -62,10 +63,10 @@ Here's a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcPartnerAgentInstallResult",
-  "partnerAgentName": "String",
+  "errorMessage": "String",
   "installStatus": "String",
   "isThirdPartyPartner": "Boolean",
-  "retriable": "Boolean",
-  "errorMessage": "String"
+  "partnerAgentName": "String",
+  "retriable": "Boolean"
 }
 ```
