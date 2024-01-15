@@ -8,11 +8,12 @@ ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: conceptualPageType
 ms.date: 11/01/2022
+#Customer intent: As a developer integrating with Microsoft Graph, I want to use Lifecycle Workflows APIs to automate employee offboarding tasks, so that I can ensure proper security, efficient lifecycle management, and compliance in my organization.
 ---
 
 # Automate employee offboarding tasks after their last day of work using Lifecycle Workflows APIs
 
-This tutorial provides step-by-step guidance for configuring offboarding tasks for employees after their last day of work using Lifecycle workflows APIs in Microsoft Graph.
+This tutorial provides step-by-step guidance for configuring offboarding tasks for employees after their last day of work using Lifecycle workflows APIs in Microsoft Graph. In this scenario, the employee termination is scheduled, possibly including a notice period. See [Complete employee offboarding tasks in real-time on their last day of work using Lifecycle Workflows APIs](/graph/tutorial-lifecycle-workflows-offboard-custom-workflow) for an unscheduled, real-time termination scenario.
 
 This post off-boarding scenario will run a scheduled workflow and accomplish the following tasks:
 
