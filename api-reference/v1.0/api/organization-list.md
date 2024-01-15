@@ -1,5 +1,5 @@
 ---
-title: "List organization"
+title: "List organizations"
 description: "Retrieve a list of organization objects."
 ms.localizationpriority: medium
 author: "adimitui"
@@ -7,23 +7,24 @@ ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
-# List organization
+# List organizations
 
 Namespace: microsoft.graph
 
+Retrieve a list of organization objects. There's only one organization object in the collection.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-Retrieve a list of organization objects.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | User.Read, Directory.Read.All, Directory.ReadWrite.All   |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Directory.Read.All, Directory.ReadWrite.All |
 
-> Note: Applications granted the User.Read permission are able to read only the *id*, *displayName*, and *verifiedDomains* properties of the organization.  All other properties will return with `null` values. To read all properties, use Directory.Read.All.
+[!INCLUDE [rbac-organization-apis-read](../includes/rbac-for-apis/rbac-organization-apis-read.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -31,18 +32,18 @@ One of the following permissions is required to call this API. To learn more, in
 GET /organization
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response.
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [organization](../resources/organization.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [organization](../resources/organization.md) objects in the response body. Only one object is returned in the collection.
 ## Example
 ##### Request
 Here is an example of the request.
@@ -58,6 +59,10 @@ GET https://graph.microsoft.com/v1.0/organization
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-organization-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-organization-2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -78,6 +83,10 @@ GET https://graph.microsoft.com/v1.0/organization
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-organization-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-organization-2-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

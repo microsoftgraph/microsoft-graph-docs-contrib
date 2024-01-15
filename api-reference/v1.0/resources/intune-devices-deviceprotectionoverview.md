@@ -19,16 +19,16 @@ Hardware information of a given device.
 |Property|Type|Description|
 |:---|:---|:---|
 |totalReportedDeviceCount|Int32|Total device count.|
-|inactiveThreatAgentDeviceCount|Int32|Device with inactive threat agent count|
-|unknownStateThreatAgentDeviceCount|Int32|Device with threat agent state as unknown count.|
-|pendingSignatureUpdateDeviceCount|Int32|Device with old signature count.|
-|cleanDeviceCount|Int32|Clean device count.|
-|pendingFullScanDeviceCount|Int32|Pending full scan device count.|
-|pendingRestartDeviceCount|Int32|Pending restart device count.|
-|pendingManualStepsDeviceCount|Int32|Pending manual steps device count.|
-|pendingOfflineScanDeviceCount|Int32|Pending offline scan device count.|
-|criticalFailuresDeviceCount|Int32|Critical failures device count.|
-|pendingQuickScanDeviceCount|Int32|Pending quick scan device count. Valid values -2147483648 to 2147483647|
+|inactiveThreatAgentDeviceCount|Int32|Indicates number of devices with inactive threat agent|
+|unknownStateThreatAgentDeviceCount|Int32|Indicates number of devices with threat agent state as unknown|
+|pendingSignatureUpdateDeviceCount|Int32|Indicates number of devices with an old signature|
+|cleanDeviceCount|Int32|Indicates number of devices reporting as clean|
+|pendingFullScanDeviceCount|Int32|Indicates number of devices pending full scan|
+|pendingRestartDeviceCount|Int32|Indicates number of devices pending restart|
+|pendingManualStepsDeviceCount|Int32|Indicates number of devices with pending manual steps|
+|pendingOfflineScanDeviceCount|Int32|Indicates number of pending offline scan devices|
+|criticalFailuresDeviceCount|Int32|Indicates number of devices with critical failures|
+|pendingQuickScanDeviceCount|Int32|Indicates the number of devices that have a pending full scan. Valid values -2147483648 to 2147483647|
 
 ## Relationships
 None

@@ -4,25 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
+
+// Dependencies
+using Microsoft.Graph.Models;
 
 var requestBody = new AccessReviewScheduleDefinition
 {
 	DisplayName = "Test create",
 	DescriptionForAdmins = "New scheduled access review",
 	DescriptionForReviewers = "If you have any questions, contact jerry@contoso.com",
-	Scope = new AccessReviewScope
+	Scope = new AccessReviewQueryScope
 	{
 		OdataType = "#microsoft.graph.accessReviewQueryScope",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"query" , "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers"
-			},
-			{
-				"queryType" , "MicrosoftGraph"
-			},
-		},
+		Query = "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers",
+		QueryType = "MicrosoftGraph",
 	},
 	Reviewers = new List<AccessReviewReviewerScope>
 	{
@@ -56,6 +52,8 @@ var requestBody = new AccessReviewScheduleDefinition
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.IdentityGovernance.AccessReviews.Definitions.PostAsync(requestBody);
 
 

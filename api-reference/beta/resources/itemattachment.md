@@ -4,7 +4,7 @@ description: "A contact, event, or message that's attached to another event,"
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "outlook"
-author: "abheek-das"
+author: "SuryaLashmiS"
 ---
 
 # itemAttachment resource type
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
 A contact, event, or message that's attached to a user [event](../resources/event.md),
-[message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md).  
+[message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md).
 
 Derived from [attachment](attachment.md).
 

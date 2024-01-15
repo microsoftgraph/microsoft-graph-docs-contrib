@@ -4,13 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.Models.IdentityGovernance.TaskObject
+// Dependencies
+using Microsoft.Graph.Beta.Models.IdentityGovernance;
+
+var requestBody = new TaskObject
 {
 	Description = "Add user to selected groups",
 	DisplayName = "Update marketing day 1 add users to Group set up",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.IdentityGovernance.LifecycleWorkflows.Workflows["{workflow-id}"].Tasks["{task-id}"].PatchAsync(requestBody);
 
 

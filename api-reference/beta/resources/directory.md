@@ -1,6 +1,6 @@
 ---
 title: "directory resource type (deleted items)"
-description: ". Deleted items will remain available to restore for up to 30 days. After 30 days, the items are permanently deleted."
+description: ". Deleted items remain available to restore for up to 30 days. After 30 days, the items are permanently deleted."
 ms.localizationpriority: medium
 author: "keylimesoda"
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a deleted item in the directory. When an item is deleted, it is added to the deleted items "container". Deleted items will remain available to restore for up to 30 days. After 30 days, the items are permanently deleted.
+Represents a deleted item in the directory. When an item is deleted, it's added to the deleted items "container". Deleted items remain available to restore for up to 30 days. After 30 days, the items are permanently deleted.
 
 Currently, deleted items functionality is only supported for the [application](application.md), [group](group.md), and [user](user.md) resources.
 
@@ -43,16 +43,18 @@ Inherits from [entity](entity.md).
 | attributeSets                      | [attributeSet](attributeset.md) collection                                               | Group of related custom security attribute definitions.                                                                   |
 | customSecurityAttributeDefinitions | [customSecurityAttributeDefinition](customsecurityattributedefinition.md) collection     | Schema of a custom security attributes (key-value pairs).                                                                 |
 | deleteditems                       | [directoryObject](directoryobject.md) collection                                         | Recently deleted items. Read-only. Nullable.                                                                              |
+| deviceLocalCredentials             | [deviceLocalCredential](../resources/devicelocalcredential.md) collection                | The credentials of the device's local administrator account backed up to Microsoft Entra ID.                            |
 | featureRolloutPolicies             | [featureRolloutPolicy](featurerolloutpolicy.md) collection                               | Nullable.                                                                                                                 |
 | federationConfigurations           | [identityProviderBase](../resources/identityproviderbase.md) collection                  | Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol. |
-| inboundSharedUserProfiles             | [inboundSharedUserProfile](inboundshareduserprofile.md) collection                               | A collection of external Azure AD users whose profile data has been shared with the Azure AD tenant. Nullable.                                                                                                                 |
-| onPremisesSynchronization          | [onPremisesDirectorySynchronization](../resources/onpremisesdirectorysynchronization.md) | A container for on-premises directory synchronization functionalities that are available for the organization.            |
-| outboundSharedUserProfile             | [outboundSharedUserProfile](outboundshareduserprofile.md) collection                               | A collection of Azure AD users whose profile data has been shared with an external Azure AD tenant. Nullable.                                                                                                                 |
-| recommendations                    | [recommendation](../resources/recommendation.md) collection                              | List of recommended improvements to improve tenant posture.             |
+| inboundSharedUserProfiles          | [inboundSharedUserProfile](inboundshareduserprofile.md) collection                       | A collection of external Azure AD users whose profile data has been shared with the Azure AD tenant. Nullable.           |
+| onPremisesSynchronization          | [onPremisesDirectorySynchronization](../resources/onpremisesdirectorysynchronization.md) | A container for on-premises directory synchronization functionalities that are available for the organization.      |         |
+| outboundSharedUserProfile          | [outboundSharedUserProfile](outboundshareduserprofile.md) collection                     | A collection of Microsoft Entra users whose profile data has been shared with an external Microsoft Entra tenant. Nullable.             |
+| recommendations                    | [recommendation](../resources/recommendation.md) collection                              | List of recommended improvements to improve tenant posture.                                                               |
+| subscriptions                      | [companySubscription](companysubscription.md) collection                                 | List of commercial subscriptions that an organization has acquired.                                                       |
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -79,5 +81,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

@@ -52,7 +52,7 @@ The following table shows the properties that are required when you create the o
 |displayName|String|The display name of this OperationApprovalPolicy|
 |description|String|The description of this OperationApprovalPolicy|
 |lastModifiedDateTime|DateTimeOffset|The last modified date and time of this OperationApprovalPolicy. This property is read-only.|
-|policyType|[operationApprovalPolicyType](../resources/intune-rbac-operationapprovalpolicytype.md)|The policy type for this OperationApprovalPolicy. Possible values are: `deviceActions`, `deviceWipe`, `deviceRetire`, `deviceRetireNonCompliant`, `deviceDelete`, `deviceLock`, `deviceErase`, `deviceDisableActivationLock`, `windowsEnrollment`, `compliancePolicies`, `configurationPolicies`, `appProtectionPolicies`, `policySets`, `filters`, `endpointSecurity`, `apps`, `scripts`, `roles`, `deviceResetPasscode`, `unknownFutureValue`.|
+|policyType|[operationApprovalPolicyType](../resources/intune-rbac-operationapprovalpolicytype.md)|The policy type for this OperationApprovalPolicy. Possible values are: `deviceActions`, `deviceWipe`, `deviceRetire`, `deviceRetireNonCompliant`, `deviceDelete`, `deviceLock`, `deviceErase`, `deviceDisableActivationLock`, `windowsEnrollment`, `compliancePolicies`, `configurationPolicies`, `appProtectionPolicies`, `policySets`, `filters`, `endpointSecurity`, `apps`, `scripts`, `roles`, `deviceResetPasscode`, `organizationalMessages`, `unknownFutureValue`.|
 |approverGroupIds|String collection|The group IDs for the approvers for this OperationApprovalPolicy|
 
 

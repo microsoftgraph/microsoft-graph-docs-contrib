@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.Chats.Item.InstalledApps.Item.Upgrade.UpgradePostRequestBody
+// Dependencies
+using Microsoft.Graph.Beta.Chats.Item.InstalledApps.Item.Upgrade;
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new UpgradePostRequestBody
 {
 	ConsentedPermissionSet = new TeamsAppPermissionSet
 	{
@@ -25,6 +29,8 @@ var requestBody = new Microsoft.Graph.Beta.Chats.Item.InstalledApps.Item.Upgrade
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Chats["{chat-id}"].InstalledApps["{teamsAppInstallation-id}"].Upgrade.PostAsync(requestBody);
 
 

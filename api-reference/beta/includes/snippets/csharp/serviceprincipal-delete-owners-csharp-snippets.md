@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.ServicePrincipals.Item.Owners.Item.Ref.$refDeleteRequestBody
+// Dependencies
+using Microsoft.Graph.ServicePrincipals.Item.Owners.Item.Ref;
+
+var requestBody = new $refDeleteRequestBody
 {
 	AdditionalData = new Dictionary<string, object>
 	{
@@ -15,6 +18,8 @@ var requestBody = new Microsoft.Graph.ServicePrincipals.Item.Owners.Item.Ref.$re
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.ServicePrincipals["{servicePrincipal-id}"].Owners["{directoryObject-id}"].Ref.DeleteAsync(requestBody);
 
 

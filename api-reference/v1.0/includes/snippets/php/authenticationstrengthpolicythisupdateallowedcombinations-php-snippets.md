@@ -6,16 +6,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new UpdateAllowedCombinationsPostRequestBody();
-$requestBody->setAllowedCombinations([$requestBody->setAuthenticationMethodModes(new AuthenticationMethodModes('password, voice'));
-]);
+$requestBody->setAllowedCombinations([new AuthenticationMethodModes('password, voice'),	]);
 
-
-
-$result = $graphServiceClient->policies()->authenticationStrengthPoliciesById('authenticationStrengthPolicy-id')->updateAllowedCombinations()->post($requestBody);
-
+$result = $graphServiceClient->policies()->authenticationStrengthPolicies()->byAuthenticationStrengthPolicyId('authenticationStrengthPolicy-id')->updateAllowedCombinations()->post($requestBody)->wait();
 
 ```

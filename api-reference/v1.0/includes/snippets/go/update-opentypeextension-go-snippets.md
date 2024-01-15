@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -25,12 +25,11 @@ additionalData := map[string]interface{}{
 		"Employees only",
 		"Add spouse or guest",
 		"Add family",
-
 	}
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Groups().ByGroupId("group-id").Threads().ByThreadId("conversationThread-id").Posts().ByPostId("post-id").Extensions().ByExtensionId("extension-id").Patch(context.Background(), requestBody, nil)
+extensions, err := graphClient.Groups().ByGroupId("group-id").Threads().ByConversationThreadId("conversationThread-id").Posts().ByPostId("post-id").Extensions().ByExtensionId("extension-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

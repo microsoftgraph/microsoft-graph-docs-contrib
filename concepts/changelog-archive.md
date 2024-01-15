@@ -21,7 +21,7 @@ This topic contains archived changelog entries for Microsoft Graph. For current 
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | v1.0 | Added [chatMessage](/graph/api/resources/presence) to the resources supported for [change notifications](./webhooks.md). |
+| Addition | v1.0 | Added [chatMessage](/graph/api/resources/presence) to the resources supported for [change notifications](./change-notifications-overview.md). |
 
 ### Cloud communications
 | **Change type** | **Version**   | **Description**                          |
@@ -173,7 +173,7 @@ This topic contains archived changelog entries for Microsoft Graph. For current 
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | v1.0 | Change tracking through [delta queries](/graph/api/event-delta) is available for Microsoft Graph for US Government. |
 | Deletion | Beta | Removed the **includeProperties** property from the [subscription](/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true) entity. This property is replaced by the **includeResourceData** property. |
-| Addition | Beta | Added the ability to get [change notifications delivered via Event Hub](change-notifications-delivery.md). |
+| Addition | Beta | Added the ability to get [change notifications delivered via Event Hubs](change-notifications-delivery.md). |
 
 ### Cloud communications
 
@@ -186,8 +186,8 @@ This topic contains archived changelog entries for Microsoft Graph. For current 
 
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
-| Addition | beta | Added new [Delegated permissions](./permissions-reference.md#universal-print-permissions): <br/><ul><li>Printer.Create</li><li>Printer.FullControl.All</li><li>Printer.Read.All</li><li>Printer.ReadWrite.All</li><li>PrinterShare.Read.All</li><li>PrinterShare.ReadWrite.All</li><li>PrintJob.Read</li><li>PrintJob.Read.All</li><li>PrintJob.ReadBasic</li><li>PrintJob.ReadBasic.All</li><li>PrintJob.ReadWrite</li><li>PrintJob.ReadWrite.All</li><li>PrintJob.ReadWriteBasic</li><li>PrintJob.ReadWriteBasic.All</li></ul> |
-| Addition | beta | Added new [App-only permissions](./permissions-reference.md#universal-print-permissions): <br/><ul><li>Printer.Read.All</li><li>Printer.ReadWrite.All</li><li>PrintJob.Manage.All</li><li>PrintJob.Read.All</li><li>PrintJob.ReadBasic.All</li><li>PrintJob.ReadWrite.All</li><li>PrintJob.ReadWriteBasic.All</li><li>PrintTaskDefinition.ReadWrite.All</li></ul> |
+| Addition | beta | Added new delegated permissions: <br/><ul><li>Printer.Create</li><li>Printer.FullControl.All</li><li>Printer.Read.All</li><li>Printer.ReadWrite.All</li><li>PrinterShare.Read.All</li><li>PrinterShare.ReadWrite.All</li><li>PrintJob.Read</li><li>PrintJob.Read.All</li><li>PrintJob.ReadBasic</li><li>PrintJob.ReadBasic.All</li><li>PrintJob.ReadWrite</li><li>PrintJob.ReadWrite.All</li><li>PrintJob.ReadWriteBasic</li><li>PrintJob.ReadWriteBasic.All</li></ul> |
+| Addition | beta | Added new app-only permissions: <br/><ul><li>Printer.Read.All</li><li>Printer.ReadWrite.All</li><li>PrintJob.Manage.All</li><li>PrintJob.Read.All</li><li>PrintJob.ReadBasic.All</li><li>PrintJob.ReadWrite.All</li><li>PrintJob.ReadWriteBasic.All</li><li>PrintTaskDefinition.ReadWrite.All</li></ul> |
 | Change | beta | Added new permission requirements to: <ul><li>[List printers](/graph/api/print-list-printers?view=graph-rest-beta&preserve-view=true)</li><li>[Get printer](/graph/api/printer-get?view=graph-rest-beta&preserve-view=true)</li><li>[Update printer](/graph/api/printer-update?view=graph-rest-beta&preserve-view=true)</li><li>[Delete printer](/graph/api/printer-delete?view=graph-rest-beta&preserve-view=true)</li><li>[List allowedGroups (printer)](/graph/api/printer-list-allowedgroups?view=graph-rest-beta&preserve-view=true)</li><li>[List allowedUsers (printer)](/graph/api/printershare-list-allowedusers)</li><li>[Create allowedGroup (printer)](/graph/api/printershare-list-allowedgroups)</li><li>[Create allowedUser (printer)](/graph/api/printershare-post-allowedusers?view=graph-rest-1.0&tabs=http&preserve-view=true)</li><li>[Delete allowedGroup (printer)](/graph/api/printershare-delete-allowedgroup)</li><li>[Delete allowedUser (printer)](/graph/api/user-delete?view=graph-rest-1.0&tabs=http&preserve-view=true)</li><li>[getCapabilities (printer)](/graph/api/printer-getcapabilities?view=graph-rest-beta&preserve-view=true)</li><li>[List connectors (printer)](/graph/api/printer-list-connectors?view=graph-rest-beta&preserve-view=true)</li><li>[List jobs (printer)](/graph/api/printer-list-jobs?view=graph-rest-beta&preserve-view=true)</li><li>[Create job (printer)](/graph/api/printer-post-jobs?view=graph-rest-beta&preserve-view=true)</li><li>[resetDefaults (printer)](/graph/api/printer-restorefactorydefaults)</li><li>[List shares](/graph/api/print-list-shares?view=graph-rest-beta&preserve-view=true)</li><li>[Get printerShare](/graph/api/printershare-get?view=graph-rest-beta&preserve-view=true)</li><li>[Create printerShare](/graph/api/print-post-shares?view=graph-rest-beta&preserve-view=true)</li><li>[Update printerShare](/graph/api/printershare-update?view=graph-rest-beta&preserve-view=true)</li><li>[Delete printerShare](/graph/api/printershare-delete?view=graph-rest-beta&preserve-view=true)</li><li>[List allowedGroups (printerShare)](/graph/api/printershare-list-allowedgroups?view=graph-rest-beta&preserve-view=true)</li><li>[List allowedUsers (printerShare)](/graph/api/printershare-list-allowedusers?view=graph-rest-beta&preserve-view=true)</li><li>[Create allowedGroup (printerShare)](/graph/api/printershare-post-allowedgroups?view=graph-rest-beta&preserve-view=true)</li><li>[Create allowedUser (printerShare)](/graph/api/printershare-post-allowedusers?view=graph-rest-beta&preserve-view=true)</li><li>[Delete allowedGroup (printerShare)](/graph/api/printershare-delete-allowedgroup?view=graph-rest-beta&preserve-view=true)</li><li>[Delete allowedUser (printerShare)](/graph/api/printershare-delete-alloweduser?view=graph-rest-beta&preserve-view=true)</li><li>[Create printJob](/graph/api/printer-post-jobs?view=graph-rest-beta&preserve-view=true)</li><li>[Get printJob](/graph/api/printjob-get?view=graph-rest-beta&preserve-view=true)</li><li>[uploadData (printDocument)](/graph/api/printdocument-uploaddata?view=graph-rest-beta&preserve-view=true)</li><li>[startPrintJob (printJob)](/graph/api/printjob-startprintjob?view=graph-rest-beta&preserve-view=true)</li><li>[cancelPrintJob (printJob)](/graph/api/printjob-cancel)</li></ul> |
 | Change | beta | Added the **allowAllUsers** property to the [printerShare](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true) resource. |
 
@@ -293,22 +293,22 @@ This topic contains archived changelog entries for Microsoft Graph. For current 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Removal | beta and v1.0 | Removed the erronously introduced **sequenceNumber** property from the [changeNotification](/graph/api/resources/changenotification) type.|
-| Addition | beta | Adds [presence](/graph/api/resources/presence) to the resources supported for [change notifications](./webhooks.md). |
+| Addition | beta | Adds [presence](/graph/api/resources/presence) to the resources supported for [change notifications](./change-notifications-overview.md). |
 
 ### Cloud communications
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the [Update onlineMeeting](/graph/api/onlinemeeting-update?view=graph-rest-beta&preserve-view=true) operation for meeting updates.|
-| Addition | beta | The [presence](/graph/api/resources/presence) resource now supports [change notifications](./webhooks.md). |
+| Addition | beta | The [presence](/graph/api/resources/presence) resource now supports [change notifications](./change-notifications-overview.md). |
 
 ### Cloud communications | Call records
 
-Adding PSTN and direct routing call reports to Microsoft Graph (beta).
+Adding PSTN and Direct Routing call reports to Microsoft Graph (beta).
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Addition| beta |Added APIs to [get PSTN call report](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta&preserve-view=true) and [get a direct routing report](/graph/api/callrecords-callrecord-getdirectroutingcalls?view=graph-rest-beta&preserve-view=true).|
+|Addition| beta |Added APIs to [get PSTN call report](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta&preserve-view=true) and [get a Direct Routing report](/graph/api/callrecords-callrecord-getdirectroutingcalls?view=graph-rest-beta&preserve-view=true).|
 |Addition| beta |Added new entities:<br /><li>[pstnCallLogRow](/graph/api/resources/callrecords-pstncalllogrow?view=graph-rest-beta&preserve-view=true)</li> <li>[directRoutingLogRow](/graph/api/resources/callrecords-directroutinglogrow?view=graph-rest-beta&preserve-view=true).</li>|
 
 ### Compliance | eDiscovery
@@ -322,7 +322,7 @@ Adding PSTN and direct routing call reports to Microsoft Graph (beta).
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Change | beta | The [Update printer](/graph/api/printer-update) method now supports application permissions and IPP encoding.|
-| Addition | beta | The following permission scopes have been added:<ul><li>Printer.ReadWrite.All</li><li>PrintJob.ReadBasic.All</li><li>PrintJob.Read.All</li><li>PrintJob.ReadWriteBasic.All</li><li>PrintJob.ReadWrite.All</li></ul>See the [permissions reference](./permissions-reference.md#universal-print-permissions) for details. |
+| Addition | beta | The following permission scopes have been added:<ul><li>Printer.ReadWrite.All</li><li>PrintJob.ReadBasic.All</li><li>PrintJob.Read.All</li><li>PrintJob.ReadWriteBasic.All</li><li>PrintJob.ReadWrite.All</li></ul>See the [permissions reference](./permissions-reference.md) for details. |
 | Addition | beta | Added the following resources to the Universal Print API: <ul><li>[printTask](/graph/api/resources/printtask?view=graph-rest-beta&preserve-view=true)</li><li>[printTaskDefinition](/graph/api/resources/printtaskdefinition?view=graph-rest-beta&preserve-view=true)</li><li>[printTaskStatus](/graph/api/resources/printtaskstatus?view=graph-rest-beta&preserve-view=true)</li><li>[printTaskTrigger](/graph/api/resources/printtasktrigger?view=graph-rest-beta&preserve-view=true)</li></ul> |
 | Change | beta | [Get printJob](/graph/api/printjob-get?view=graph-rest-beta&preserve-view=true) now supports application permissions, and `$expand=tasks`. |
 | Addition | beta | Added the [Redirect printJob](/graph/api/printjob-redirect?view=graph-rest-beta&preserve-view=true) method. |
@@ -427,7 +427,7 @@ Adding PSTN and direct routing call reports to Microsoft Graph (beta).
 ### Teamwork
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition | beta, v1.0 | Added new permissions [TeamsAppInstallation.ReadForTeam](./permissions-reference.md#teams-app-installation-permissions), [TeamsAppInstallation.ReadWriteForTeam](./permissions-reference.md#teams-app-installation-permissions), [TeamsAppInstallation.ReadForTeam.All](./permissions-reference.md#teams-app-installation-permissions), [TeamsAppInstallation.ReadWriteForTeam.All](./permissions-reference.md#teams-app-installation-permissions). |
+| Addition | beta, v1.0 | Added new permissions TeamsAppInstallation.ReadForTeam, TeamsAppInstallation.ReadWriteForTeam, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All. |
 | Addition | beta | Added delegated permissions support for [notifications](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&preserve-view=true) for channel and chat messages. |
 
 ### Workbooks and charts
@@ -447,7 +447,7 @@ Adding PSTN and direct routing call reports to Microsoft Graph (beta).
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition | v1.0 | Added the [changeNotification](/graph/api/resources/changenotification), [changeNotificationCollection](/graph/api/resources/changenotificationcollection), and [resourceData](/graph/api/resources/resourcedata) resources to the [change notification](/graph/webhooks) API. |
+| Addition | v1.0 | Added the [changeNotification](/graph/api/resources/changenotification), [changeNotificationCollection](/graph/api/resources/changenotificationcollection), and [resourceData](/graph/api/resources/resourcedata) resources to the [change notification](/graph/change-notifications-overview) API. |
 
 ### Cloud communications
 | **Change type** | **Version**   | **Description**                          |
@@ -592,8 +592,8 @@ Adding PSTN and direct routing call reports to Microsoft Graph (beta).
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition | beta, v1.0 | Added new delegated permissions [AppCatalog.Read.All](./permissions-reference.md#appcatalog-resource-permissions), [ChatMessage.Send](./permissions-reference.md#chatmessage-permissions), [Teams.Create](./permissions-reference.md#teams-permissions), [TeamsAppInstallation.ReadForUser](./permissions-reference.md#teams-app-installation-permissions), [TeamsAppInstallation.ReadWriteForUser](./permissions-reference.md#teams-app-installation-permissions), [TeamsAppInstallation.ReadWriteSelfForUser](./permissions-reference.md#teams-app-installation-permissions). |
-| Addition | beta, v1.0 | Added new application permissions [Teams.Create](./permissions-reference.md#teams-permissions), [TeamsAppInstallation.ReadForUser.All](./permissions-reference.md#teams-app-installation-permissions), [TeamsAppInstallation.ReadWriteForUser.All](./permissions-reference.md#teams-app-installation-permissions), [TeamsAppInstallation.ReadWriteSelfForUser.All](./permissions-reference.md#teams-app-installation-permissions). |
+| Addition | beta, v1.0 | Added new delegated permissions AppCatalog.Read.All, ChatMessage.Send, Teams.Create, TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteForUser, TeamsAppInstallation.ReadWriteSelfForUser. |
+| Addition | beta, v1.0 | Added new application permissions Teams.Create, TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All. |
 | Addition | beta, v1.0 | Added support for getting the [filesFolder](/graph/api/channel-get-filesfolder?view=graph-rest-1.0&preserve-view=true) of a [channel](/graph/api/resources/channel?view=graph-rest-1.0&preserve-view=true).|
 |Addition | beta, v1.0 | Added [primaryChannel](/graph/api/team-get-primarychannel?view=graph-rest-1.0&preserve-view=true) navigation property to [team](/graph/api/resources/team?view=graph-rest-1.0&preserve-view=true) resource type.|
 |Addition | beta | Added [members](/graph/api/team-post-members?view=graph-rest-beta&preserve-view=true) navigation property to [team](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) resource type, enabling members to be added with increased reliability and lower latency.|
@@ -615,8 +615,8 @@ Adding PSTN and direct routing call reports to Microsoft Graph (beta).
 
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
-| Addition | beta | Added new [Delegated permissions](./permissions-reference.md#universal-print-permissions): <br/><ul><li>Printer.Create</li><li>Printer.FullControl.All</li><li>Printer.Read.All</li><li>Printer.ReadWrite.All</li><li>PrinterShare.Read.All</li><li>PrinterShare.ReadWrite.All</li><li>PrintJob.Read</li><li>PrintJob.Read.All</li><li>PrintJob.ReadBasic</li><li>PrintJob.ReadBasic.All</li><li>PrintJob.ReadWrite</li><li>PrintJob.ReadWrite.All</li><li>PrintJob.ReadWriteBasic</li><li>PrintJob.ReadWriteBasic.All</li></ul> |
-| Addition | beta | Added new [App only permissions](./permissions-reference.md#universal-print-permissions): <br/><ul><li>Printer.Read.All</li><li>Printer.ReadWrite.All</li><li>PrintJob.Manage.All</li><li>PrintJob.Read.All</li><li>PrintJob.ReadBasic.All</li><li>PrintJob.ReadWrite.All</li><li>PrintJob.ReadWriteBasic.All</li><li>PrintTaskDefinition.ReadWrite.All</li></ul> |
+| Addition | beta | Added new delegated permissions: <br/><ul><li>Printer.Create</li><li>Printer.FullControl.All</li><li>Printer.Read.All</li><li>Printer.ReadWrite.All</li><li>PrinterShare.Read.All</li><li>PrinterShare.ReadWrite.All</li><li>PrintJob.Read</li><li>PrintJob.Read.All</li><li>PrintJob.ReadBasic</li><li>PrintJob.ReadBasic.All</li><li>PrintJob.ReadWrite</li><li>PrintJob.ReadWrite.All</li><li>PrintJob.ReadWriteBasic</li><li>PrintJob.ReadWriteBasic.All</li></ul> |
+| Addition | beta | Added new app only permissions: <br/><ul><li>Printer.Read.All</li><li>Printer.ReadWrite.All</li><li>PrintJob.Manage.All</li><li>PrintJob.Read.All</li><li>PrintJob.ReadBasic.All</li><li>PrintJob.ReadWrite.All</li><li>PrintJob.ReadWriteBasic.All</li><li>PrintTaskDefinition.ReadWrite.All</li></ul> |
 
 ## May 2020
 
@@ -630,7 +630,7 @@ Adding PSTN and direct routing call reports to Microsoft Graph (beta).
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition | beta | Added the [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta&preserve-view=true), [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta&preserve-view=true), and [changeNotificationEncryptedContent](/graph/api/resources/changenotificationencryptedcontent?view=graph-rest-beta&preserve-view=true) resources for the [change notification](webhooks.md) API. |
+| Addition | beta | Added the [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta&preserve-view=true), [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta&preserve-view=true), and [changeNotificationEncryptedContent](/graph/api/resources/changenotificationencryptedcontent?view=graph-rest-beta&preserve-view=true) resources for the [change notification](change-notifications-overview.md) API. |
 | Addition | v1.0 | Added support for [subscription](/graph/api/resources/subscription) in [Microsoft Cloud for US Government](deployments.md). |
 
 
@@ -643,7 +643,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 | Addition | v1.0 | Added [Get callRecord](/graph/api/callrecords-callrecord-get?view=graph-rest-1.0&preserve-view=true) API.|
 | Addition | v1.0 | Added new entities:<br /><li>[callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-1.0&preserve-view=true)</li> <li>[session](/graph/api/resources/callrecords-session?view=graph-rest-1.0&preserve-view=true)</li> <li>[segment](/graph/api/resources/callrecords-segment?view=graph-rest-1.0&preserve-view=true)</li>|
 | Addition | v1.0 | Added new complex types:<br /><li>[endpoint](/graph/api/resources/callrecords-endpoint?view=graph-rest-1.0&preserve-view=true)</li> <li>[participantEndpoint](/graph/api/resources/callrecords-participantendpoint?view=graph-rest-1.0&preserve-view=true)</li> <li>[serviceEndpoint](/graph/api/resources/callrecords-serviceendpoint?view=graph-rest-1.0&preserve-view=true)</li> <li>[userAgent](/graph/api/resources/callrecords-useragent?view=graph-rest-1.0&preserve-view=true)</li> <li>[serviceUserAgent](/graph/api/resources/callrecords-serviceuseragent?view=graph-rest-1.0&preserve-view=true)</li> <li>[clientUserAgent](/graph/api/resources/callrecords-clientuseragent?view=graph-rest-1.0&preserve-view=true)</li> <li>[userfeedback](/graph/api/resources/callrecords-userfeedback?view=graph-rest-1.0&preserve-view=true)</li> <li>[feedbackTokenSet](/graph/api/resources/callrecords-feedbacktokenset?view=graph-rest-1.0&preserve-view=true)</li> <li>[media](/graph/api/resources/callrecords-media?view=graph-rest-1.0&preserve-view=true)</li> <li>[mediaStream](/graph/api/resources/callrecords-mediastream?view=graph-rest-1.0&preserve-view=true)</li> <li>[networkInfo](/graph/api/resources/callrecords-networkinfo?view=graph-rest-1.0&preserve-view=true)</li> <li>[deviceInfo](/graph/api/resources/callrecords-deviceinfo?view=graph-rest-1.0&preserve-view=true)</li> <li>[failureInfo](/graph/api/resources/callrecords-failureinfo?view=graph-rest-1.0&preserve-view=true)</li> |
-| Addition | v1.0 | Added support for [webhook](webhooks.md) subscriptions to call records.|
+| Addition | v1.0 | Added support for [webhook](change-notifications-overview.md) subscriptions to call records.|
 | Change | v1.0 | Added `frequency60GHz` and `unknownFutureValue` to the **microsoft.graph.callRecords.wifiBand** enum.|
 | Change | v1.0 | Added `voicemail` to the **microsoft.graph.callRecords.serviceRole** enum.|
 | Addition | v1.0 | Added the [List sessions](/graph/api/callrecords-session-list?view=graph-rest-beta&preserve-view=true) API. |
@@ -711,8 +711,8 @@ Added new APIs and resources for subscribing to and retrieving call records from
 | Addition | beta | Added Application.Read.All and Application.ReadWrite.All permissions to [application-list](/graph/api/application-list?view=graph-rest-beta&preserve-view=true)<br>Added support for `$count`, `$search`, and `$filter` query parameters to: <br><ul><li>[List applications](/graph/api/application-list?view=graph-rest-beta&preserve-view=true)</li><li>[List device groups](/graph/api/device-list-memberof?view=graph-rest-beta&preserve-view=true)</li><li>[List device transitive groups](/graph/api/device-list-transitivememberof?view=graph-rest-beta&preserve-view=true)</li><li>[List devices](/graph/api/device-list?view=graph-rest-beta&preserve-view=true)</li><li>[List group memberOf](/graph/api/group-list-memberof?view=graph-rest-beta&preserve-view=true)</li><li>[List group members](/graph/api/group-list-members?view=graph-rest-beta&preserve-view=true)</li><li>[List group transitive memberOf](/graph/api/group-list-transitivememberof?view=graph-rest-beta&preserve-view=true)</li><li>[List group transitive members](/graph/api/group-list-transitivemembers?view=graph-rest-beta&preserve-view=true)</li><li>[List groups](/graph/api/group-list?view=graph-rest-beta&preserve-view=true)</li><li>[List orgContacts](/graph/api/orgcontact-list?view=graph-rest-beta&preserve-view=true)</li><li>[List servicePrincipal memberOf](/graph/api/serviceprincipal-list-memberof?view=graph-rest-beta&preserve-view=true)</li><li>[List servicePrincipal transitive memberOf](/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-beta&preserve-view=true)</li><li>[List servicePrincipals](/graph/api/serviceprincipal-list?view=graph-rest-beta&preserve-view=true)</li><li>[List user memberOf](/graph/api/user-list-memberof?view=graph-rest-beta&preserve-view=true)</li><li>[List user transitive memberOf](/graph/api/user-list-transitivememberof?view=graph-rest-beta&preserve-view=true)</li><li>[List users](/graph/api/user-list?view=graph-rest-beta&preserve-view=true)</li></ul><br>Added examples for using OData cast to: <ul><li>[List group memberOf](/graph/api/group-list-memberof?view=graph-rest-beta&preserve-view=true)</li><li>[List group members](/graph/api/group-list-members?view=graph-rest-beta&preserve-view=true)</li><li>[List group transitive memberOf](/graph/api/group-list-transitivememberof?view=graph-rest-beta&preserve-view=true)</li><li>[List servicePrincipal memberOf](/graph/api/serviceprincipal-list-memberof?view=graph-rest-beta&preserve-view=true)</li><li>[List servicePrincipal transitive memberOf](/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-beta&preserve-view=true)</li><li>[List user memberOf](/graph/api/user-list-memberof?view=graph-rest-beta&preserve-view=true)</li><li>[List user transitive memberOf](/graph/api/user-list-transitivememberof?view=graph-rest-beta&preserve-view=true)</li></ul> |
 | Addition | v1.0 | Added new entity type: [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0&preserve-view=true).|
 | Addition | v1.0 | Added new entity type: [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-1.0&preserve-view=true).|
-| Addition | beta, v1.0 | Added app-only and delegated permissions [AppRoleAssignment.ReadWrite.All](permissions-reference.md#application-resource-permissions). |
-| Addition | beta | Added delegated permission [EntitlementManagement.Read.All](permissions-reference.md#entitlement-management-permissions). |
+| Addition | beta, v1.0 | Added app-only and delegated permissions [AppRoleAssignment.ReadWrite.All](permissions-reference.md). |
+| Addition | beta | Added delegated permission [EntitlementManagement.Read.All](permissions-reference.md). |
 | Addition | beta | Added the [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta&preserve-view=true) resource type which controls authorization settings in Azure AD. |
 
 ### Teamwork
@@ -721,7 +721,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition | v1.0 | Added support for sending [channel messages](/graph/api/resources/chatmessage?view=graph-rest-1.0&preserve-view=true) and channel message replies.|
 | Addition | beta | Added the **azureADAppId** property to [teamsAppDefinition](/graph/api/resources/teamsAppDefinition?view=graph-rest-beta&preserve-view=true).|
-| Addition | beta | Added permissions for [resource-specific consent](./permissions-reference.md#team-resource-specific-consent-permissions).|
+| Addition | beta | Added permissions for [resource-specific consent](./permissions-reference.md).|
 
 ### Teamwork | Shifts
 
@@ -810,7 +810,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 |:---|:---|:---|
 | Addition | beta | Added [unifiedRoleAssignmentMultiple](/graph/api/resources/unifiedroleassignmentmultiple?view=graph-rest-beta&preserve-view=true), [rbacApplicationMultiple](/graph/api/resources/rbacapplicationmultiple?view=graph-rest-beta&preserve-view=true), and [appScope](/graph/api/resources/appscope?view=graph-rest-beta&preserve-view=true) and the following actions:<br><li>[List unifiedRoleAssignmentMultiple](/graph/api/rbacapplicationmultiple-list-roleassignments?view=graph-rest-beta&preserve-view=true)</li><li>[Get unifiedRoleAssignmentMultiple](/graph/api/unifiedroleassignmentmultiple-get?view=graph-rest-beta&preserve-view=true)</li><li>[Create unifiedRoleAssignmentMultiple](/graph/api/rbacapplicationmultiple-post-roleassignments?view=graph-rest-beta&preserve-view=true)</li><li>[Update unifiedRoleAssignmentMultiple](/graph/api/unifiedroleassignmentmultiple-update?view=graph-rest-beta&preserve-view=true)</li><li>[Delete unifiedRoleAssignmentMultiple](/graph/api/unifiedroleassignmentmultiple-delete?view=graph-rest-beta&preserve-view=true)</li>. |
 | Addition | v1.0 | Added support for [delta queries for application](/graph/api/application-delta?view=graph-rest-1.0&preserve-view=true).|
-| Addition | beta | Added support for [delta queries for administrativeUnits](/graph/api/administrativeunit-delta?view=graph-rest-beta&preserve-view=true).|
+| Addition | beta | Added support for [delta queries for administrativeUnit](/graph/api/administrativeunit-delta?view=graph-rest-beta&preserve-view=true).|
 | Addition | beta | Added support for [delta queries for oAuth2PermissionGrant](/graph/api/oauth2permissiongrant-delta?view=graph-rest-beta&preserve-view=true).|
 | Addition | v1.0 | Typed policy resources are grouped under the [policies](/graph/api/resources/policy-overview?view=graph-rest-1.0&preserve-view=true) URL segment. This update adds five typed policy resources: <br> <li>[activityBasedTimeoutPolicies](/graph/api/resources/activityBasedTimeoutPolicy?view=graph-rest-1.0&preserve-view=true)</li> <li>[claimsMappingPolicies](/graph/api/resources/claimsMappingPolicy?view=graph-rest-1.0&preserve-view=true) </li> <li>[homeRealmDiscoveryPolicies](/graph/api/resources/homeRealmDiscoveryPolicy?view=graph-rest-1.0&preserve-view=true) </li> <li>[tokenLifetimePolicies](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-1.0&preserve-view=true) and </li> <li>[tokenIssuancePolicies](/graph/api/resources/tokenissuancepolicy?view=graph-rest-1.0&preserve-view=true)</li>|
 | Addition | v1.0 | Added [activityBasedTimeoutPolicy](/graph/api/resources/activityBasedTimeoutPolicy?view=graph-rest-1.0&preserve-view=true) resource type, which controls automatic sign-out for web sessions after a period of inactivity, for applications that support activity-based timeout functionality.|
@@ -940,11 +940,11 @@ Added new APIs and resources for subscribing to and retrieving call records from
 
 | **Change type** | **Version**   | **Description** |
 |:---|:---|:---|
-| Addition | beta and v1.0 | Added the **authenticationRequirement** property and the **riskEventTypes_v2** property to the [signin](/graph/api/resources/signin?view=graph-rest-1.0&preserve-view=true) entity. |
+| Addition | beta and v1.0 | Added the **authenticationRequirement** property and the **riskEventTypes_v2** property to the [signIn](/graph/api/resources/signin?view=graph-rest-1.0&preserve-view=true) entity. |
 | Addition | beta and v1.0 | Added support for [delta queries for orgContact](/graph/api/orgcontact-delta?view=graph-rest-1.0&preserve-view=true).|
-| Addition | v1.0 | Added new user permission [User.ManageIdentities.All](./permissions-reference.md#user-permissions).|
+| Addition | v1.0 | Added new user permission [User.ManageIdentities.All](./permissions-reference.md).|
 | Addition | beta | Added the PrivilegedAccess.Read.AzureResources application permission for [Privileged Identity Management - Azure resources](/graph/api/resources/privilegedidentitymanagement-resources?view=graph-rest-beta&preserve-view=true). |
-| Addition | beta | Added the [AuditLog.Read.All](./permissions-reference.md#user-permissions) permission for listing the sign-in activity of a user.|
+| Addition | beta | Added the [AuditLog.Read.All](./permissions-reference.md) permission for listing the sign-in activity of a user.|
 | Addition | beta | Added the [identitySecurityDefaultsEnforcementPolicy API](/graph/api/resources/identitysecuritydefaultsenforcementpolicy?view=graph-rest-beta&preserve-view=true), which represents Azure Active Directory security defaults policy.|
 | Addition | beta | Added support for the `$top` and `$skiptoken` filters to support pagination on the [List provisioningObjectSummary](/api-reference/beta/api/provisioningobjectsummary-list) method. |
 
@@ -1031,7 +1031,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 | Addition | beta | Added [Get callRecord](/graph/api/callrecords-callrecord-get?view=graph-rest-beta&preserve-view=true) API.|
 | Addition | beta | Added new entities:<br /><li>[callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta&preserve-view=true)</li> <li>[session](/graph/api/resources/callrecords-session?view=graph-rest-beta&preserve-view=true)</li> <li>[segment](/graph/api/resources/callrecords-segment?view=graph-rest-beta&preserve-view=true)</li>|
 | Addition | beta | Added new complex types:<br /><li>[endpoint](/graph/api/resources/callrecords-endpoint?view=graph-rest-beta&preserve-view=true)</li> <li>[participantEndpoint](/graph/api/resources/callrecords-participantendpoint?view=graph-rest-beta&preserve-view=true)</li> <li>[serviceEndpoint](/graph/api/resources/callrecords-serviceendpoint?view=graph-rest-beta&preserve-view=true)</li> <li>[userAgent](/graph/api/resources/callrecords-useragent?view=graph-rest-beta&preserve-view=true)</li> <li>[serviceUserAgent](/graph/api/resources/callrecords-serviceuseragent?view=graph-rest-beta&preserve-view=true)</li> <li>[clientUserAgent](/graph/api/resources/callrecords-clientuseragent?view=graph-rest-beta&preserve-view=true)</li> <li>[userfeedback](/graph/api/resources/callrecords-userfeedback?view=graph-rest-beta&preserve-view=true)</li> <li>[feedbackTokenSet](/graph/api/resources/callrecords-feedbacktokenset?view=graph-rest-beta&preserve-view=true)</li> <li>[media](/graph/api/resources/callrecords-media?view=graph-rest-beta&preserve-view=true)</li> <li>[mediaStream](/graph/api/resources/callrecords-mediastream?view=graph-rest-beta&preserve-view=true)</li> <li>[networkInfo](/graph/api/resources/callrecords-networkinfo?view=graph-rest-beta&preserve-view=true)</li> <li>[deviceInfo](/graph/api/resources/callrecords-deviceinfo?view=graph-rest-beta&preserve-view=true)</li> <li>[failureInfo](/graph/api/resources/callrecords-failureinfo?view=graph-rest-beta&preserve-view=true)</li> |
-| Addition | beta | Added support for [webhook](webhooks.md) subscriptions to call records.|
+| Addition | beta | Added support for [webhook](change-notifications-overview.md) subscriptions to call records.|
 
 ### Devices and apps | Corporate management
 
@@ -1164,7 +1164,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added support for subscribing to notifications that include resource data. Currently supported resources are [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) resources in Microsoft Teams channels and chats. Subscribing apps will have to implement additional authorization and decryption code to benefit from this feature. For more details, see [Set up change notifications for chat messages, including message properties (preview)](webhooks-with-resource-data.md).|
+| Addition | beta | Added support for subscribing to notifications that include resource data. Currently supported resources are [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) resources in Microsoft Teams channels and chats. Subscribing apps will have to implement additional authorization and decryption code to benefit from this feature. For more details, see [Set up change notifications for chat messages, including message properties (preview)](change-notifications-with-resource-data.md).|
 
 ### Cloud communications
 
@@ -1278,7 +1278,7 @@ Introduced version 1.1 of the Microsoft Graph Toolkit.
 | Addition | Beta | Added [notifications](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&preserve-view=true) for new and edited channel messages, and new and edited chat messages. |
 | Addition | Beta | Added the [shiftpreferences](/graph/api/resources/shiftpreferences?view=graph-rest-beta&preserve-view=true) resource and associated methods.|
 | Addition | Beta | Added new relationship `shiftPreferences` to [userSettings](/graph/api/resources/usersettings?view=graph-rest-beta&preserve-view=true) entity. |
-| Change | Beta | Updated the application permissions required to perform read and write operations for shifts resources, including [schedule](/graph/api/resources/schedule?view=graph-rest-beta&preserve-view=true), [schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta&preserve-view=true), [shift](/graph/api/resources/shift?view=graph-rest-beta&preserve-view=true), [timeOff](/graph/api/resources/timeoff?view=graph-rest-beta&preserve-view=true), [timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta&preserve-view=true), [timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta&preserve-view=true), [swapShiftChangeRequest](/graph/api/resources/swapshiftschangerequest), and [openShiftChangeRequest](/graph/api/resources/openshiftchangerequest?view=graph-rest-beta&preserve-view=true). **Note:** Applications permissions are currently in private preview and are not available for public use.|
+| Change | Beta | Updated the application permissions required to perform read and write operations for shifts resources, including [schedule](/graph/api/resources/schedule?view=graph-rest-beta&preserve-view=true), [schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta&preserve-view=true), [shift](/graph/api/resources/shift?view=graph-rest-beta&preserve-view=true), [timeOff](/graph/api/resources/timeoff?view=graph-rest-beta&preserve-view=true), [timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta&preserve-view=true), [timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta&preserve-view=true), [swapShiftChangeRequest](/graph/api/resources/swapshiftschangerequest), and [openShiftChangeRequest](/graph/api/resources/openshiftchangerequest?view=graph-rest-beta&preserve-view=true).|
 
 ## November 2019
 
@@ -1357,10 +1357,10 @@ Introduced version 1.1 of the Microsoft Graph Toolkit.
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Addition | v1.0 | Added new entity type: [application](/graph/api/resources/application?view=graph-rest-1.0&preserve-view=true).|
-| Addition | v1.0 | Added new delegated permissions [Application.Read.All](./permissions-reference.md#application-resource-permissions), [Application.ReadWrite.All](./permissions-reference.md#application-resource-permissions).|
-| Addition | v1.0 | Added new application permission [Application.Read.All](./permissions-reference.md#application-resource-permissions).|
-| Addition | v1.0 | Added new delegated and application permissions [GroupMember.Read.All](permissions-reference.md#group-permissions) and [GroupMember.ReadWrite.All](permissions-reference.md#group-permissions) to get and update the [group](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true) resource.
-| Addition | v1.0 | Added new application permission [Group.Create](permissions-reference.md#group-permissions) to create the **group** resource.
+| Addition | v1.0 | Added new delegated permissions [Application.Read.All](./permissions-reference.md), [Application.ReadWrite.All](./permissions-reference.md).|
+| Addition | v1.0 | Added new application permission [Application.Read.All](./permissions-reference.md).|
+| Addition | v1.0 | Added new delegated and application permissions [GroupMember.Read.All](permissions-reference.md) and [GroupMember.ReadWrite.All](permissions-reference.md) to get and update the [group](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true) resource.
+| Addition | v1.0 | Added new application permission [Group.Create](permissions-reference.md) to create the **group** resource.
 | Addition | beta and v1.0 | Added the **creationType** property to the [user](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true) resource.|
 | Addition | v1.0 | Added the [checkMemberObjects](/graph/api/device-checkmemberobjects?view=graph-rest-1.0&preserve-view=true) operation for the [device](/graph/api/resources/device?view=graph-rest-1.0&preserve-view=true) resource. |
 | Addition | v1.0 | Added the [checkMemberObjects](/graph/api/group-checkmemberobjects?view=graph-rest-1.0&preserve-view=true) operation for the [group](/graph/api/resources/group?view=graph-rest-1.0&preserve-view=true) resource. |
@@ -1378,14 +1378,14 @@ Introduced version 1.1 of the Microsoft Graph Toolkit.
 
 | **Change type** | **Version** | **Description**              |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | beta        | Added new delegated and application permissions [ThreatAssessment.ReadWrite.All](permissions-reference.md#threat-assessment-permissions) and [ThreatAssessment.Read.All](permissions-reference.md#threat-assessment-permissions) to Read and write threat assessment requests |
+| Addition        | beta        | Added new delegated and application permissions [ThreatAssessment.ReadWrite.All](permissions-reference.md) and [ThreatAssessment.Read.All](permissions-reference.md) to Read and write threat assessment requests |
 
 ### Mail
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | v1.0 | Added the **conversationIndex** property to [message](/graph/api/resources/message?view=graph-rest-1.0&preserve-view=true) and its derived type [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0&preserve-view=true).|
-| Addition | Beta | Added support for the [Mail.ReadBasic](./permissions-reference.md#mail-permissions) delegated permission and [Mail.ReadBasic.All](./permissions-reference.md#mail-permissions) application permission to [create](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&preserve-view=true), [get](/graph/api/subscription-get?view=graph-rest-beta&preserve-view=true), [update](/graph/api/subscription-update?view=graph-rest-beta&preserve-view=true), and [delete](/graph/api/subscription-delete?view=graph-rest-beta&preserve-view=true) subscriptions for change notifications on message. |
+| Addition | Beta | Added support for the [Mail.ReadBasic](./permissions-reference.md) delegated permission and [Mail.ReadBasic.All](./permissions-reference.md) application permission to [create](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&preserve-view=true), [get](/graph/api/subscription-get?view=graph-rest-beta&preserve-view=true), [update](/graph/api/subscription-update?view=graph-rest-beta&preserve-view=true), and [delete](/graph/api/subscription-delete?view=graph-rest-beta&preserve-view=true) subscriptions for change notifications on message. |
 | Addition | v1.0 | Added support for the Mail.ReadBasic delegated permission and Mail.ReadBasic.All application permission to:<br />- [List messages](/graph/api/user-list-messages?view=graph-rest-1.0&preserve-view=true)<br />- [Get message](/graph/api/message-get?view=graph-rest-1.0&preserve-view=true) <br />- [List mail folders](/graph/api/user-list-mailfolders?view=graph-rest-1.0&preserve-view=true)<br />- [Get mail folder](/graph/api/mailfolder-get?view=graph-rest-1.0&preserve-view=true)<br />- [List child folders](/graph/api/mailfolder-list-childfolders?view=graph-rest-1.0&preserve-view=true)<br />- [List messages in folder](/graph/api/mailfolder-list-childfolders?view=graph-rest-1.0&preserve-view=true)<br />- [Get message delta](/graph/api/message-delta?view=graph-rest-1.0&preserve-view=true)<br />- [Get mail folder delta](/graph/api/mailfolder-delta?view=graph-rest-1.0&preserve-view=true) <br />- [Create](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0&preserve-view=true), [get](/graph/api/subscription-get?view=graph-rest-1.0&preserve-view=true), [update](/graph/api/subscription-update?view=graph-rest-1.0&preserve-view=true), and [delete](/graph/api/subscription-delete?view=graph-rest-1.0&preserve-view=true) subscriptions for change notifications on message|
 
 
@@ -1817,7 +1817,7 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 | Addition | Beta | Added the [checkMemberObjects](/graph/api/group-checkmemberobjects?view=graph-rest-beta&preserve-view=true) operation for the [group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) resource. |
 | Addition | Beta | Added the [checkMemberObjects](/graph/api/serviceprincipal-checkmemberobjects?view=graph-rest-beta&preserve-view=true) operation for the [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) resource. |
 | Addition | Beta | Added the [checkMemberObjects](/graph/api/user-checkmemberobjects?view=graph-rest-beta&preserve-view=true) operation for the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resource. |
-| Addition | Beta | Added delegated and application [permissions for reading organizational contacts](permissions-reference.md#organizational-contact-permissions): OrgContact.Read.All |
+| Addition | Beta | Added delegated and application [permissions for reading organizational contacts](permissions-reference.md): OrgContact.Read.All |
 | Addition | beta | Added new entity [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-beta&preserve-view=true). |
 | Addition | beta | Added new complex type [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-beta&preserve-view=true). |
 | Addition | beta | Added new relationship for **certificateBasedAuthConfiguration** on the [organization](/graph/api/resources/organization?view=graph-rest-beta&preserve-view=true) resource. This enables [certificate-based authentication in Azure Active Directory](/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)|
@@ -1867,7 +1867,7 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition        | Beta  | Added the [room list](/graph/api/resources/roomlist?view=graph-rest-beta&preserve-view=true) resource|
 | Addition        | Beta  | Added the [room](/graph/api/resources/room?view=graph-rest-beta&preserve-view=true) resource|
 | Addition        | Beta  | Added the [place](/graph/api/resources/place?view=graph-rest-beta&preserve-view=true) resource|
-|Addition         | Beta  | Added delegated and application [permissions for the places API](permissions-reference.md#places-permissions): Place.Read.All |
+|Addition         | Beta  | Added delegated and application [permissions for the places API](permissions-reference.md): Place.Read.All |
 
 ### Devices and apps | Corporate management
 
@@ -1910,14 +1910,14 @@ Debut of the places API which provides rich details for locations in apps.
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
-| Addition | v1.0 | Added [new delegated and application permissions](./permissions-reference.md#organization-permissions) _Organization.Read.All_ and _Organization.ReadWrite.All_ to get and update the [organization API](/graph/api/resources/organization?view=graph-rest-1.0&preserve-view=true) resource and get the [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-1.0&preserve-view=true) resource. |
-| Addition | Beta | Added [new delegated and application permissions](./permissions-reference.md#organization-permissions) _Organization.Read.All_ and _Organization.ReadWrite.All_ to get and update the [organization API](/graph/api/resources/organization?view=graph-rest-beta&preserve-view=true) resource and get the [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition | v1.0 | Added [new delegated and application permissions](./permissions-reference.md) _Organization.Read.All_ and _Organization.ReadWrite.All_ to get and update the [organization API](/graph/api/resources/organization?view=graph-rest-1.0&preserve-view=true) resource and get the [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-1.0&preserve-view=true) resource. |
+| Addition | Beta | Added [new delegated and application permissions](./permissions-reference.md) _Organization.Read.All_ and _Organization.ReadWrite.All_ to get and update the [organization API](/graph/api/resources/organization?view=graph-rest-beta&preserve-view=true) resource and get the [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-beta&preserve-view=true) resource. |
 | Addition | v1.0 | Added the [group:validateProperties function](/graph/api/group-validateproperties?view=graph-rest-1.0&preserve-view=true) and [directoryobject:validateProperties function](/graph/api/group-validateproperties?view=graph-rest-1.0&preserve-view=true) on [groups](/graph/api/group-delta?view=graph-rest-1.0&preserve-view=true), which validates that a Microsoft 365 group's display name or mail nickname complies with naming policies. |
 | Addition | Beta |Added 'version', 'discoveryDateTime', 'discoverabilities' properties to resource type [directoryDefinition](/graph/api/resources/synchronization-directorydefinition?view=graph-rest-beta&preserve-view=true).|
 | Addition | Beta |Added the [directoryDefinition: discover](/graph/api/directorydefinition-discover?view=graph-rest-beta&preserve-view=true) method.|
-| Addition | Beta | Added [new delegated and application permissions](./permissions-reference.md#organization-permissions) _AdministrativeUnit.Read.All_ and _AdministrativeUnit.ReadWrite.All_ to get and update the [administrative unit API](/graph/api/resources/administrativeunit?view=graph-rest-beta&preserve-view=true) resource. |
-| Addition | v1.0 | Added [new delegated and application permissions](./permissions-reference.md#organization-permissions) _RoleManagement.Read.Directory_ and _RoleManagement.ReadWrite.Directory_ to get and update the [directory role API](/graph/api/resources/directoryRole?view=graph-rest-1.0&preserve-view=true) resource and get the [directory role template API](/graph/api/resources/directoryRoleTemplate?view=graph-rest-1.0&preserve-view=true) resource. |
-| Addition | Beta | Added [new application permission](./permissions-reference.md#access-reviews-permissions) _AccessReview.ReadWrite.Membership_ to get, create, update and delete in the [access reviews API](/graph/api/resources/accessreviews-root?view=graph-rest-beta&preserve-view=true). |
+| Addition | Beta | Added [new delegated and application permissions](./permissions-reference.md) _AdministrativeUnit.Read.All_ and _AdministrativeUnit.ReadWrite.All_ to get and update the [administrative unit API](/graph/api/resources/administrativeunit?view=graph-rest-beta&preserve-view=true) resource. |
+| Addition | v1.0 | Added [new delegated and application permissions](./permissions-reference.md) _RoleManagement.Read.Directory_ and _RoleManagement.ReadWrite.Directory_ to get and update the [directory role API](/graph/api/resources/directoryRole?view=graph-rest-1.0&preserve-view=true) resource and get the [directory role template API](/graph/api/resources/directoryRoleTemplate?view=graph-rest-1.0&preserve-view=true) resource. |
+| Addition | Beta | Added [new application permission](./permissions-reference.md) _AccessReview.ReadWrite.Membership_ to get, create, update and delete in the [access reviews API](/graph/api/resources/accessreviews-root?view=graph-rest-beta&preserve-view=true). |
 | Addition | Beta | Added new resource type [**featureRolloutPolicy**](/graph/api/resources/featureRolloutPolicy?view=graph-rest-beta&preserve-view=true) to the [directory](/graph/api/resources/directory?view=graph-rest-beta&preserve-view=true) resource. Feature rollout policy helps tenant administrators to pilot features to specific groups before enabling them for entire organization.|
 
 
@@ -2232,7 +2232,7 @@ Debut of the places API which provides rich details for locations in apps.
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition        | Beta          | Added support for a new [Mail.ReadBasic (preview) permission](permissions-reference.md#mail-permissions) for [List Messages](/graph/api/user-list-messages?view=graph-rest-beta&preserve-view=true) and [Get Message](/graph/api/message-get?view=graph-rest-beta&preserve-view=true).            |
+| Addition        | Beta          | Added support for a new [Mail.ReadBasic (preview) permission](permissions-reference.md) for [List Messages](/graph/api/user-list-messages?view=graph-rest-beta&preserve-view=true) and [Get Message](/graph/api/message-get?view=graph-rest-beta&preserve-view=true).            |
 | Addition        | Beta          | Added the capability to [get the MIME content of a message](outlook-get-mime-message.md). |
 | Addition        | Beta          | Added the capability to [get the raw contents of a file or item attachment](/graph/api/attachment-get?view=graph-rest-beta&preserve-view=true#get-the-raw-contents-of-a-file-or-item-attachment) to an event, message, Outlook task, or group post. |
 
@@ -3009,7 +3009,7 @@ Debut of the places API which provides rich details for locations in apps.
 ### Change notifications
 | Change type | Version | Description                              |
 |:------------|:--------|:-----------------------------------------|
-| Breaking change | Beta and v1.0 | Reduced [webhooks](/graph/api/resources/webhooks?view=graph-rest-1.0&preserve-view=true) [maximum length of subscription expiration time](/graph/api/resources/subscription?view=graph-rest-1.0&preserve-view=true#maximum-length-of-subscription-per-resource-type) for drive root items to 3 days. |
+| Breaking change | Beta and v1.0 | Reduced [webhooks](/graph/api/resources/change-notifications-api-overview?view=graph-rest-1.0&preserve-view=true) [maximum length of subscription expiration time](/graph/api/resources/subscription?view=graph-rest-1.0&preserve-view=true#maximum-length-of-subscription-per-resource-type) for drive root items to 3 days. |
 
 ### Identity and access
 
@@ -3123,7 +3123,7 @@ Debut of the places API which provides rich details for locations in apps.
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | All | New application permissions _Application.ReadWrite.All_ and _Application.ReadWrite.OwnedBy_ that allows a client app to create, read, update, and delete applications and service principals as described in the [permissions topic](permissions-reference.md#application-resource-permissions). |
+| Addition | All | New application permissions _Application.ReadWrite.All_ and _Application.ReadWrite.OwnedBy_ that allows a client app to create, read, update, and delete applications and service principals as described in the [permissions topic](permissions-reference.md). |
 | Addition | v1.0 | Added **ageGroup**, **legalAgeGroupClassification**, and **ConsentRequiredForMinor** properties to [user](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true) resource
 
 ### Identity and access | Governance
@@ -3346,7 +3346,7 @@ Debut of the places API which provides rich details for locations in apps.
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | v1.0        | Added the **privacyProfile** complex type to the [organization](/graph/api/resources/organization?view=graph-rest-1.0&preserve-view=true) entity. |
 | Addition        | v1.0        | Added the **legalAgeGroup, ageGroup and consentProvidedForMinor** complex type to the [user](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true) entity. |
-| Addition        | v1.0        | Added users and groups support to [webhook](/graph/api/resources/webhooks?view=graph-rest-1.0&preserve-view=true) notification subscriptions. |
+| Addition        | v1.0        | Added users and groups support to [webhook](/graph/api/resources/change-notifications-api-overview?view=graph-rest-1.0&preserve-view=true) notification subscriptions. |
 | Addition        | beta        | Added [List deleted items owned by a user](/graph/api/directory-deleteditems-user-owned?view=graph-rest-beta&preserve-view=true) action to [directory (deleted items)](/graph/api/resources/directory?view=graph-rest-beta&preserve-view=true) resource |
 | Addition        | v1.0        | Added the new **masterCategories** navigation property to the [outlookUser](/graph/api/resources/outlookuser?view=graph-rest-1.0&preserve-view=true) entity. **masterCategories** is a collection of [outlookCategory](/graph/api/resources/outlookcategory?view=graph-rest-1.0&preserve-view=true) objects. |
 | Addition        | v1.0        | Added the [outlookCategory](/graph/api/resources/outlookcategory?view=graph-rest-1.0&preserve-view=true) entity. |
@@ -3814,7 +3814,7 @@ Debut of the places API which provides rich details for locations in apps.
 
 | Change type | Version | Description                              |
 |:------------|:--------|:-----------------------------------------|
-| Breaking change | Beta and v1.0 | Reduced [webhooks](/graph/api/resources/webhooks?view=graph-rest-1.0&preserve-view=true) [maximum length of subscription expiration time](/graph/api/resources/subscription?view=graph-rest-1.0&preserve-view=true#maximum-length-of-subscription-per-resource-type) for drive root items. The new value is the supported maximum expiration time for drive root items. |
+| Breaking change | Beta and v1.0 | Reduced [webhooks](/graph/api/resources/change-notifications-api-overview?view=graph-rest-1.0&preserve-view=true) [maximum length of subscription expiration time](/graph/api/resources/subscription?view=graph-rest-1.0&preserve-view=true#maximum-length-of-subscription-per-resource-type) for drive root items. The new value is the supported maximum expiration time for drive root items. |
 
 ### Devices and apps | Corporate management
 |Change type|Version|Description|
@@ -4394,7 +4394,7 @@ Debut of the places API which provides rich details for locations in apps.
 
 |**Change type**|**Version**|**Description**|
 |:--------------|:-----------|:--------------|
-| Change        | Beta       | Added support to [webhooks](/graph/api/resources/webhooks?view=graph-rest-beta&preserve-view=true) for users and groups.
+| Change        | Beta       | Added support to [webhooks](/graph/api/resources/change-notifications-api-overview?view=graph-rest-beta&preserve-view=true) for users and groups.
 
 ### Change tracking
 
@@ -4913,7 +4913,7 @@ Debut of the places API which provides rich details for locations in apps.
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | Beta        | Added resources and method APIs for Microsoft Intune. This is a large set of resources and methods to support the public preview of Intune on Azure Portal. For information about the Intune service, see the [Intune documentation](/mem/intune/). For information about the Intune resources and APIs, see [Working with Intune in Microsoft Graph](/graph/api/resources/intune-graph-overview?view=graph-rest-beta&preserve-view=true). |
+| Addition        | Beta        | Added resources and method APIs for Microsoft Intune. This is a large set of resources and methods to support the public preview of Intune on Azure portal. For information about the Intune service, see the [Intune documentation](/mem/intune/). For information about the Intune resources and APIs, see [Working with Intune in Microsoft Graph](/graph/api/resources/intune-graph-overview?view=graph-rest-beta&preserve-view=true). |
 
 ## October 2016
 

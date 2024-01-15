@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "The hashes resource groups available hashes into a single structure for an item."
 ms.date: 09/10/2017
 title: Hashes

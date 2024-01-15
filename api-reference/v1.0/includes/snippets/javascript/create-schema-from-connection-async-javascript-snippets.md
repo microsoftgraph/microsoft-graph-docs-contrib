@@ -38,6 +38,6 @@ const schema = {
 };
 
 await client.api('/external/connections/contosohr/schema')
-	.post(schema);
+	.update(schema);
 
 ```

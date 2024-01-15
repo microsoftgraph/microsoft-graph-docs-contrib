@@ -4,26 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
+
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
 var requestBody = new IdentityApiConnector
 {
 	DisplayName = "Test API",
 	TargetUrl = "https://someapi.com/api",
-	AuthenticationConfiguration = new ApiAuthenticationConfigurationBase
+	AuthenticationConfiguration = new BasicAuthentication
 	{
 		OdataType = "#microsoft.graph.basicAuthentication",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"username" , "<USERNAME>"
-			},
-			{
-				"password" , "<PASSWORD>"
-			},
-		},
+		Username = "<USERNAME>",
+		Password = "<PASSWORD>",
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Identity.ApiConnectors.PostAsync(requestBody);
 
 

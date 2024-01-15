@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -19,7 +19,7 @@ requestBody := graphmodels.NewReferenceCreate()
 odataId := "https://graph.microsoft.com/beta/education/classes/11006"
 requestBody.SetOdataId(&odataId) 
 
-graphClient.Education().Schools().BySchoolId("educationSchool-id").Classes().Ref().Post(context.Background(), requestBody, nil)
+graphClient.Education().Schools().ByEducationSchoolId("educationSchool-id").Classes().Ref().Post(context.Background(), requestBody, nil)
 
 
 ```

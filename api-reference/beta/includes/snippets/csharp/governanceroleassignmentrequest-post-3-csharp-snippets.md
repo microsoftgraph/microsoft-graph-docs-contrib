@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
+
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
 var requestBody = new GovernanceRoleAssignmentRequest
 {
@@ -16,6 +19,8 @@ var requestBody = new GovernanceRoleAssignmentRequest
 	Reason = "Deactivate the role",
 	LinkedEligibleRoleAssignmentId = "cb8a533e-02d5-42ad-8499-916b1e4822ec",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.PrivilegedAccess["{privilegedAccess-id}"].RoleAssignmentRequests.PostAsync(requestBody);
 
 

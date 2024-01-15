@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  "time"
@@ -28,7 +28,7 @@ isPasscodeRequired := true
 joinMeetingIdSettings.SetIsPasscodeRequired(&isPasscodeRequired) 
 requestBody.SetJoinMeetingIdSettings(joinMeetingIdSettings)
 
-result, err := graphClient.Me().OnlineMeetings().Post(context.Background(), requestBody, nil)
+onlineMeetings, err := graphClient.Me().OnlineMeetings().Post(context.Background(), requestBody, nil)
 
 
 ```

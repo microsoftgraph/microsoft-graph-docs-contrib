@@ -4,25 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/drives"
+	  graphdrives "github.com/microsoftgraph/msgraph-beta-sdk-go/drives"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.DriveItemItemItemChildrenRequestBuilderGetQueryParameters{
+requestParameters := &graphdrives.DriveItemItemItemChildrenRequestBuilderGetQueryParameters{
 	Expand: [] string {"thumbnails"},
 }
-configuration := &graphconfig.DriveItemItemItemChildrenRequestBuilderGetRequestConfiguration{
+configuration := &graphdrives.DriveItemItemItemChildrenRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Children().Get(context.Background(), configuration)
+children, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Children().Get(context.Background(), configuration)
 
 
 ```

@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Users.Item.Teamwork.SendActivityNotification.SendActivityNotificationPostRequestBody
+// Dependencies
+using Microsoft.Graph.Users.Item.Teamwork.SendActivityNotification;
+using Microsoft.Graph.Models;
+
+var requestBody = new SendActivityNotificationPostRequestBody
 {
 	Topic = new TeamworkActivityTopic
 	{
@@ -28,6 +32,8 @@ var requestBody = new Microsoft.Graph.Users.Item.Teamwork.SendActivityNotificati
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Users["{user-id}"].Teamwork.SendActivityNotification.PostAsync(requestBody);
 
 

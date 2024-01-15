@@ -18,6 +18,6 @@ $params = @{
 	}
 }
 
-Update-MgDirectoryOnPremisSynchronization -OnPremisesDirectorySynchronizationId $onPremisesDirectorySynchronizationId -BodyParameter $params
+Update-MgDirectoryOnPremiseSynchronization -OnPremisesDirectorySynchronizationId $onPremisesDirectorySynchronizationId -BodyParameter $params
 
 ```

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -23,7 +23,7 @@ requestBody.SetDiscoveryUrl(&discoveryUrl)
 termsOfUseUrl := "https://portal.uem.contoso.com/TermsofUse.aspx"
 requestBody.SetTermsOfUseUrl(&termsOfUseUrl) 
 
-result, err := graphClient.Policies().MobileDeviceManagementPolicies().ByMobileDeviceManagementPolicieId("mobilityManagementPolicy-id").Patch(context.Background(), requestBody, nil)
+mobileDeviceManagementPolicies, err := graphClient.Policies().MobileDeviceManagementPolicies().ByMobilityManagementPolicyId("mobilityManagementPolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -4,38 +4,34 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
+
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
 var requestBody = new AccessReviewScheduleDefinition
 {
 	DisplayName = "Review employee access to LinkedIn",
 	DescriptionForAdmins = "Review employee access to LinkedIn",
-	Scope = new AccessReviewScope
+	Scope = new PrincipalResourceMembershipsScope
 	{
 		OdataType = "#microsoft.graph.principalResourceMembershipsScope",
-		AdditionalData = new Dictionary<string, object>
+		PrincipalScopes = new List<AccessReviewScope>
 		{
+			new AccessReviewQueryScope
 			{
-				"principalScopes" , new List<>
-				{
-					new 
-					{
-						OdataType = "#microsoft.graph.accessReviewQueryScope",
-						Query = "/users",
-						QueryType = "MicrosoftGraph",
-					},
-				}
+				OdataType = "#microsoft.graph.accessReviewQueryScope",
+				Query = "/users",
+				QueryType = "MicrosoftGraph",
 			},
+		},
+		ResourceScopes = new List<AccessReviewScope>
+		{
+			new AccessReviewQueryScope
 			{
-				"resourceScopes" , new List<>
-				{
-					new 
-					{
-						OdataType = "#microsoft.graph.accessReviewQueryScope",
-						Query = "/servicePrincipals/bae11f90-7d5d-46ba-9f55-8112b59d92ae",
-						QueryType = "MicrosoftGraph",
-					},
-				}
+				OdataType = "#microsoft.graph.accessReviewQueryScope",
+				Query = "/servicePrincipals/bae11f90-7d5d-46ba-9f55-8112b59d92ae",
+				QueryType = "MicrosoftGraph",
 			},
 		},
 	},
@@ -91,6 +87,8 @@ var requestBody = new AccessReviewScheduleDefinition
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.IdentityGovernance.AccessReviews.Definitions.PostAsync(requestBody);
 
 

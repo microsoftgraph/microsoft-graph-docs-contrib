@@ -15,16 +15,13 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a print job.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-In addition to the following permissions, the user or app's tenant must have an active Universal Print subscription.
-
-|Permission type | Permissions (from least to most privileged) |
-|:---------------|:--------------------------------------------|
-|Delegated (work or school account)| PrintJob.ReadBasic, PrintJob.Read, PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
-|Delegated (personal Microsoft account)|Not supported.|
-|Application| PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "printjob_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/printjob-get-permissions.md)]
 
 For an app with delegated permissions to retrieve other users' jobs, the signed-in user must be a member of one of the following administrator roles:
 - Global Administrator
@@ -54,7 +51,7 @@ This method supports some of the OData query parameters to help customize the re
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and a [printJob](../resources/printjob.md) object in the response body.
 ## Examples
@@ -62,7 +59,8 @@ If successful, this method returns a `200 OK` response code and a [printJob](../
 ### Example 1: Get print job
 
 #### Request
-The following is an example of a request to get metadata for a print job.
+
+The following example shows a request to get metadata for a print job.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -76,6 +74,10 @@ GET https://graph.microsoft.com/beta/print/printers/c05f3726-0d4b-4aa1-8fe9-2eb9
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-printjob-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-printjob-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -94,10 +96,18 @@ GET https://graph.microsoft.com/beta/print/printers/c05f3726-0d4b-4aa1-8fe9-2eb9
 [!INCLUDE [sample-code](../includes/snippets/php/get-printjob-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-printjob-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-printjob-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -111,14 +121,17 @@ Content-type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb')/jobs/$entity",
   "id": "5182",
-  "displayName": "testjob", 
+  "displayName": "testjob",
   "createdDateTime": "2020-02-04T00:00:00.0000000Z",
-  "createdBy": {},
+  "createdBy": {
+    "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd",
+    "displayName": "John Smith",
+    "userPrincipalName": "john.smith@contoso.com"
+  },
   "status": {
     "state": "completed",
     "description": "The print job has completed successfully and no further processing will take place.",
-    "details": [      
-    ]
+    "details": []
   },
   "redirectedTo": null,
   "redirectedFrom": null,
@@ -129,8 +142,8 @@ Content-type: application/json
 ### Example 2: Get print job with task list
 
 #### Request
-The following is a request to get a print job and any [tasks](../resources/printtask.md) that are executing, or have executed, against it.
 
+The following example shows a request to get a print job and any [tasks](../resources/printtask.md) that are running or have run against it.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -144,6 +157,10 @@ GET https://graph.microsoft.com/beta/print/printers/c05f3726-0d4b-4aa1-8fe9-2eb9
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-printjob-withtasks-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-printjob-withtasks-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -162,10 +179,18 @@ GET https://graph.microsoft.com/beta/print/printers/c05f3726-0d4b-4aa1-8fe9-2eb9
 [!INCLUDE [sample-code](../includes/snippets/php/get-printjob-withtasks-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-printjob-withtasks-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-printjob-withtasks-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -179,24 +204,22 @@ Content-type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb')/jobs(tasks())/$entity",
   "id": "5182",
-  "displayName": "testjob", 
+  "displayName": "testjob",
   "createdDateTime": "2020-06-30T17:18:52.3930472Z",
   "createdBy": {
-    "id": "",
-    "displayName": "",
-    "userPrincipalName": ""
+    "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd",
+    "displayName": "John Smith",
+    "userPrincipalName": "john.smith@contoso.com"
   },
   "status": {
     "state": "completed",
     "description": "The print job has completed successfully and no further processing will take place.",
-    "details": [      
-    ]
+    "details": []
   },
   "redirectedTo": null,
   "redirectedFrom": null,
   "isFetchable": false,
-  "configuration": {    
-  },
+  "configuration": {},
   "tasks": [
     {
       "id": "d036638b-1272-4bba-9227-732463823ed3",
@@ -213,7 +236,9 @@ Content-type: application/json
 ### Example 3: Get a print job and its associated document data
 
 #### Request
-The following is an example of a request to get a print job and its associated document data.
+
+The following example shows a request to get a print job and its associated document data.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -226,6 +251,10 @@ GET https://graph.microsoft.com/beta/print/printers/86b6d420-7e6b-4797-a05c-af4e
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-printjob-withdocumentdata-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-printjob-withdocumentdata-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -244,10 +273,18 @@ GET https://graph.microsoft.com/beta/print/printers/86b6d420-7e6b-4797-a05c-af4e
 [!INCLUDE [sample-code](../includes/snippets/php/get-printjob-withdocumentdata-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-printjob-withdocumentdata-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-printjob-withdocumentdata-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -261,26 +298,22 @@ Content-type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('86b6d420-7e6b-4797-a05c-af4e56cd81bd')/jobs(documents())/$entity",
   "id": "31216",
-  "displayName": "testjob",   
+  "displayName": "testjob",
   "createdDateTime": "2020-06-26T04:20:06.5715544Z",
   "createdBy": {
-    "id": "",
-    "displayName": "",
-    "ipAddress": null,
-    "userPrincipalName": "",
-    "oDataType": null
+    "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd",
+    "displayName": "John Smith",
+    "userPrincipalName": "john.smith@contoso.com"
   },
   "status": {
-  "state": "completed",
+    "state": "completed",
     "description": "The print job has completed successfully and no further processing will take place.",
-    "details": [      
-    ]
+    "details": []
   },
   "redirectedTo": null,
   "redirectedFrom": null,
   "isFetchable": false,
-  "configuration": {    
-  },
+  "configuration": {},
   "documents": [
     {
       "id": "ca96c367-c3ad-478a-bbce-fbd1cd856e73",
@@ -301,5 +334,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

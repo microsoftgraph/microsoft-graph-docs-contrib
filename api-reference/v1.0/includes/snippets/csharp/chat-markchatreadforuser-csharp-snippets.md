@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Chats.Item.MarkChatReadForUser.MarkChatReadForUserPostRequestBody
+// Dependencies
+using Microsoft.Graph.Chats.Item.MarkChatReadForUser;
+using Microsoft.Graph.Models;
+
+var requestBody = new MarkChatReadForUserPostRequestBody
 {
 	User = new TeamworkUserIdentity
 	{
@@ -19,6 +23,8 @@ var requestBody = new Microsoft.Graph.Chats.Item.MarkChatReadForUser.MarkChatRea
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Chats["{chat-id}"].MarkChatReadForUser.PostAsync(requestBody);
 
 

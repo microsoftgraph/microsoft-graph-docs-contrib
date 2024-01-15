@@ -32,7 +32,7 @@ The user experience analytics device event entity contains NRT device event deta
 |id|String|The unique identifier of the user experience analytics NRT device timeline event object.|
 |deviceId|String|The id of the device where the event occurred.|
 |eventDateTime|DateTimeOffset|The time the event occured.|
-|eventLevel|[deviceEventLevel](../resources/intune-devices-deviceeventlevel.md)|The severity level of the event enum. Possible values are: `none`, `verbose`, `information`, `warning`, `error` ,`critical`. Default value: `none`. Possible values are: `none`, `verbose`, `information`, `warning`, `error`, `critical`, `unknownFutureValue`.|
+|eventLevel|[deviceEventLevel](../resources/intune-devices-deviceeventlevel.md)|The severity level of the event enum. Possible values are: none, verbose, information, warning, error ,critical. Default value: none. Possible values are: `none`, `verbose`, `information`, `warning`, `error`, `critical`, `unknownFutureValue`.|
 |eventSource|String|The source of the event. Examples include: Intune, Sccm.|
 |eventName|String|The name of the event. Examples include: BootEvent, LogonEvent, AppCrashEvent, AppHangEvent.|
 |eventDetails|String|The details provided by the event, format depends on event type.|

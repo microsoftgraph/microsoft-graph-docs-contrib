@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Print.Printers.Item.Jobs.Item.Redirect.RedirectPostRequestBody
+// Dependencies
+using Microsoft.Graph.Print.Printers.Item.Jobs.Item.Redirect;
+using Microsoft.Graph.Models;
+
+var requestBody = new RedirectPostRequestBody
 {
 	DestinationPrinterId = "9a3b3956-ce5b-4d06-a605-5b0bd3e9ddea",
 	Configuration = new PrintJobConfiguration
@@ -45,6 +49,8 @@ var requestBody = new Microsoft.Graph.Print.Printers.Item.Jobs.Item.Redirect.Red
 		FitPdfToPage = false,
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Print.Printers["{printer-id}"].Jobs["{printJob-id}"].Redirect.PostAsync(requestBody);
 
 

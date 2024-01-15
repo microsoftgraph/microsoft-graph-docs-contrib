@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.Governance
+Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 $params = @{
 	displayName = "Contoso ToU for guest users"
@@ -21,6 +21,6 @@ $params = @{
 	)
 }
 
-New-MgIdentityGovernanceTermOfUseAgreement -BodyParameter $params
+New-MgBetaIdentityGovernanceTermsOfUseAgreement -BodyParameter $params
 
 ```

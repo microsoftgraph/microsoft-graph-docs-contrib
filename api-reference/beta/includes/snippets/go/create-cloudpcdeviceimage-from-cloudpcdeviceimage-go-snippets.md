@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -27,7 +27,7 @@ requestBody.SetVersion(&version)
 sourceImageResourceId := "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/Example/providers/Microsoft.Compute/images/exampleImage"
 requestBody.SetSourceImageResourceId(&sourceImageResourceId) 
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().DeviceImages().Post(context.Background(), requestBody, nil)
+deviceImages, err := graphClient.DeviceManagement().VirtualEndpoint().DeviceImages().Post(context.Background(), requestBody, nil)
 
 
 ```

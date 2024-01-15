@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
+
+// Dependencies
+using Microsoft.Graph.Models;
 
 var requestBody = new EducationAssignment
 {
@@ -15,23 +18,20 @@ var requestBody = new EducationAssignment
 		ContentType = BodyType.Text,
 		Content = "Read chapter 4",
 	},
-	Grading = new EducationAssignmentGradeType
+	Grading = new EducationAssignmentPointsGradeType
 	{
 		OdataType = "#microsoft.graph.educationAssignmentPointsGradeType",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"maxPoints" , 50
-			},
-		},
+		MaxPoints = 50f,
 	},
-	AssignTo = new EducationAssignmentRecipient
+	AssignTo = new EducationAssignmentClassRecipient
 	{
 		OdataType = "#microsoft.graph.educationAssignmentClassRecipient",
 	},
 	Status = EducationAssignmentStatus.Draft,
 	AllowStudentsToAddResourcesToSubmission = true,
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Education.Classes["{educationClass-id}"].Assignments.PostAsync(requestBody);
 
 

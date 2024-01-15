@@ -4,15 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.Policies.AuthenticationStrengthPolicies.Item.UpdateAllowedCombinations.UpdateAllowedCombinationsPostRequestBody
+// Dependencies
+using Microsoft.Graph.Beta.Policies.AuthenticationStrengthPolicies.Item.UpdateAllowedCombinations;
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new UpdateAllowedCombinationsPostRequestBody
 {
 	AllowedCombinations = new List<AuthenticationMethodModes?>
 	{
 		AuthenticationMethodModes.Password | AuthenticationMethodModes.Voice,
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Policies.AuthenticationStrengthPolicies["{authenticationStrengthPolicy-id}"].UpdateAllowedCombinations.PostAsync(requestBody);
 
 

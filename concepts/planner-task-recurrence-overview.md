@@ -439,7 +439,7 @@ GET https://graph.microsoft.com/beta/planner/tasks/Q7SNdWp5ekeJTpRRSCcZ3pUAD6kV
 
 #### Response
 
-The following is an example of the request. Because **nextInSeriesTaskId** is assigned, this task can no longer have _active recurrence_ configured.
+The following example shows a request. Because **nextInSeriesTaskId** is assigned, this task can no longer have _active recurrence_ configured.
 
 ```json
 HTTP/1.1 200 OK

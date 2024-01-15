@@ -14,7 +14,7 @@ const workbookChartSeries = {
   name: 'name-value'
 };
 
-await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{undefined}')
+await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{series-id}')
 	.version('beta')
 	.update(workbookChartSeries);
 

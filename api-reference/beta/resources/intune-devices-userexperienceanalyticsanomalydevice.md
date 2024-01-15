@@ -39,6 +39,8 @@ The user experience analytics anomaly entity contains device details.
 |anomalyId|String|The unique identifier of the anomaly.|
 |anomalyOnDeviceFirstOccurrenceDateTime|DateTimeOffset|Indicates the first occurance date and time for the anomaly on the device.|
 |anomalyOnDeviceLatestOccurrenceDateTime|DateTimeOffset|Indicates the latest occurance date and time for the anomaly on the device.|
+|correlationGroupId|String|The unique identifier of the correlation group.|
+|deviceStatus|[userExperienceAnalyticsDeviceStatus](../resources/intune-devices-userexperienceanalyticsdevicestatus.md)|Indicates the device status with respect to the correlation group. At risk devices are devices that share correlation group features but may not yet be affected by an anomaly, such as when a device is experiencing crashes on an application but that application has not been used on the device but is currently installed. This could lead to the device becoming anomalous if the application in question were to be used. Possible values are: anomolous, affected or atRisk. Possible values are: `anomalous`, `affected`, `atRisk`, `unknownFutureValue`.|
 
 ## Relationships
 None
@@ -63,6 +65,8 @@ Here is a JSON representation of the resource.
   "osVersion": "String",
   "anomalyId": "String",
   "anomalyOnDeviceFirstOccurrenceDateTime": "String (timestamp)",
-  "anomalyOnDeviceLatestOccurrenceDateTime": "String (timestamp)"
+  "anomalyOnDeviceLatestOccurrenceDateTime": "String (timestamp)",
+  "correlationGroupId": "String",
+  "deviceStatus": "String"
 }
 ```

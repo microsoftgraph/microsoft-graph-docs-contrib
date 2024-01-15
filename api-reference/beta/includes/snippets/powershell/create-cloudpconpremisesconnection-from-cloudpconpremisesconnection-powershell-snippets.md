@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.DeviceManagement.Administration
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 
 $params = @{
 	displayName = "test-canary-02"
@@ -18,6 +18,6 @@ $params = @{
 	subnetId = "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ad47/resourceGroups/CustomerRG/providers/Microsoft.Network/virtualNetworks/canary01-MyVNET/subnets/canary01-Subnet"
 }
 
-New-MgDeviceManagementVirtualEndpointOnPremisesConnection -BodyParameter $params
+New-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection -BodyParameter $params
 
 ```

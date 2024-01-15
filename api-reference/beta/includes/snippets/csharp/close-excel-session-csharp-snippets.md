@@ -4,11 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.Drives.Item.Items.Item.Workbook.CloseSession.CloseSessionPostRequestBody
+// Dependencies
+using Microsoft.Graph.Beta.Drives.Item.Items.Item.Workbook.CloseSession;
+
+var requestBody = new CloseSessionPostRequestBody
 {
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.CloseSession.PostAsync(requestBody, (requestConfiguration) =>
 {
 	requestConfiguration.Headers.Add("workbook-session-id", "{session-id}");

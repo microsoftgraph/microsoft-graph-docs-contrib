@@ -13,6 +13,8 @@ Namespace: microsoft.graph.externalConnectors
 
 Append additional instances of [externalActivity](../resources/externalconnectors-externalactivity.md) objects on an [externalItem](../resources/externalconnectors-externalitem.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /connections/{connectionsId}/items/{externalItemId}/addActivities
+POST external/connections/{connectionsId}/items/{externalItemId}/addActivities
 ```
 
 ## Request headers
@@ -62,6 +64,7 @@ A `207 Multi-Status` response code indicates that only some of the added **exter
 
 The following is an example of a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "externalitemthis.addactivities",
@@ -69,7 +72,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/connections/contosohr/items/TSP228082938/addActivities
+POST https://graph.microsoft.com/v1.0/external/connections/contosohr/items/TSP228082938/addActivities
 Content-Type: application/json
 Content-length: 190
 
@@ -87,6 +90,40 @@ Content-length: 190
   ]
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/externalitemthisaddactivities-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/externalitemthisaddactivities-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/externalitemthisaddactivities-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/externalitemthisaddactivities-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/externalitemthisaddactivities-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/externalitemthisaddactivities-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/externalitemthisaddactivities-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/externalitemthisaddactivities-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

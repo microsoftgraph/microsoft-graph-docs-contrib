@@ -14,7 +14,7 @@ const pronounsSettings = {
   isEnabledInOrganization: true
 };
 
-await client.api('/organization/{organizationId}/settings/pronouns')
+await client.api('/admin/people/pronouns')
 	.version('beta')
 	.update(pronounsSettings);
 

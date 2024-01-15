@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -36,11 +36,10 @@ agreementFileLocalization.SetFileData(fileData)
 
 files := []graphmodels.AgreementFileLocalizationable {
 	agreementFileLocalization,
-
 }
 requestBody.SetFiles(files)
 
-result, err := graphClient.IdentityGovernance().TermsOfUse().Agreements().Post(context.Background(), requestBody, nil)
+agreements, err := graphClient.IdentityGovernance().TermsOfUse().Agreements().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -41,50 +41,24 @@ The following example shows only tasks from the folder with ID *12345* and does 
 
 The `mgt-todo` component defines the following CSS custom properties.
 
+```html
+<mgt-todo class="todo"></mgt-todo>
+```
+
 ````css
-mgt-todo {
-  --tasks-background-color
-  --tasks-header-padding
-  --tasks-title-padding
-  --tasks-plan-title-font-size
-  --tasks-plan-title-padding
-
-  --tasks-new-button-width
-  --tasks-new-button-height
-  --tasks-new-button-color
-  --tasks-new-button-background
-  --tasks-new-button-border
-  --tasks-new-button-hover-background
-  --tasks-new-button-active-background
-
-  --task-margin
-  --task-background
-  --task-border
-  --task-header-color
-  --task-header-margin
-
-  --task-new-margin
-  --task-new-border
-  --task-new-input-margin
-  --task-new-input-padding
-  --task-new-input-font-size
-  --task-new-select-border
-
-  --task-new-add-button-background
-  --task-new-add-button-disabled-background
-  --task-new-cancel-button-color
-
-  --task-complete-background
-  --task-complete-border
-
-  --task-icon-alignment: flex-start (default) | center | flex-end
-  --task-icon-background
-  --task-icon-background-completed
-  --task-icon-border
-  --task-icon-border-completed
-  --task-icon-border-radius
-  --task-icon-color
-  --task-icon-color-completed
+.todo {
+    --task-new-cancel-button-color: blue;
+    --task-detail-color: purple;
+    --task-color: black;
+    --task-background-color: white;
+    --task-complete-background-color: grey;
+    --task-date-input-active-color: blue;
+    --task-date-input-hover-color: green;
+    --task-background-color-hover: grey;
+    --task-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    --task-border: 1px solid black;
+    --task-border-completed: 1px solid grey;
+    --task-radio-background-color: green;
 }
 ````
 
@@ -102,7 +76,7 @@ For more information about handling events, see [events](../customize-components
 
 ## Templates
 
-The `tasks` component supports several [templates](../customize-components/templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following.
+The `todo` component supports several [templates](../customize-components/templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following.
 
 | Data type     | Data context              | Description                                                       |
 | ---------     | ------------------------- | ----------------------------------------------------------------- |
@@ -133,8 +107,24 @@ This control uses the following Microsoft Graph APIs and permissions.
 
 ## Authentication
 
-The tasks component uses the global authentication provider described in the [authentication documentation](../providers/providers.md).
+The todo component uses the global authentication provider described in the [authentication documentation](../providers/providers.md).
 
 ## Cache
 
 The `mgt-todo` component doesn't cache any data.
+
+## Localization
+
+The control exposes the following variables that can be localized. For more information, see [Localizing components](../customize-components/localization.md).
+
+| String name                 | Default value                |
+| --------------------------- | -----------------------------|
+| cancelNewTaskSubtitle       | `Cancel`                     |
+| newTaskPlaceholder          | `Add a task`                 |
+| newTaskLabel                | `New Task Input`             |
+| addTaskButtonSubtitle       | `Add`                        |
+| deleteTaskLabel             | `Delete Task`                |
+| dueDate                     | `Due date`                   |
+| newTaskDateInputLabel       | `New Task Date Input`        |
+| newTaskNameInputLabel       | `New Task Name Input`        |
+| cancelAddingTask            | `Cancel adding a new task`  |

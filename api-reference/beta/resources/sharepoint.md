@@ -4,7 +4,7 @@ description: "The SharePoint API in Microsoft Graph supports the following core 
 ms.localizationpriority: high
 ms.prod: "sharepoint"
 doc_type: conceptualPageType
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 ---
 
 # Working with SharePoint sites in Microsoft Graph
@@ -164,10 +164,6 @@ The following example returns information about the `SPListItem` with integer ID
 ```http
 GET https://graph.microsoft.com/beta/sites/contoso.sharepoint.com:/teams/hr/benefits:/lists/5771e865-4e91-48b8-a0de-35a25d4e52fe/items/42
 ```
-
-## What's new
-
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 
 [site]: site.md
 [list]: list.md

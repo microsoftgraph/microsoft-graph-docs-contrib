@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -21,7 +21,7 @@ requestBody.SetAllowedAudiences(&allowedAudiences)
 countryCode := "NO"
 requestBody.SetCountryCode(&countryCode) 
 
-result, err := graphClient.Me().Profile().Account().Post(context.Background(), requestBody, nil)
+account, err := graphClient.Me().Profile().Account().Post(context.Background(), requestBody, nil)
 
 
 ```

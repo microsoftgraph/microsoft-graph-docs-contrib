@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  "time"
@@ -30,7 +30,7 @@ requestBody.SetStartTime(&startTime)
 expiryTime , err := time.Parse(time.RFC3339, "2023-03-17T00:00:00Z")
 requestBody.SetExpiryTime(&expiryTime) 
 
-result, err := graphClient.Oauth2PermissionGrants().Post(context.Background(), requestBody, nil)
+oauth2PermissionGrants, err := graphClient.Oauth2PermissionGrants().Post(context.Background(), requestBody, nil)
 
 
 ```

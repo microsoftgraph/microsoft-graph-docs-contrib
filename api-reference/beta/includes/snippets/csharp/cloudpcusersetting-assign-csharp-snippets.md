@@ -4,28 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.DeviceManagement.VirtualEndpoint.UserSettings.Item.Assign.AssignPostRequestBody
+// Dependencies
+using Microsoft.Graph.Beta.DeviceManagement.VirtualEndpoint.UserSettings.Item.Assign;
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new AssignPostRequestBody
 {
 	Assignments = new List<CloudPcUserSettingAssignment>
 	{
 		new CloudPcUserSettingAssignment
 		{
 			Id = "b0c2d35f-3385-46c8-a6f5-6c3dfad7708b_64ff06de-9c00-4a5a-98b5-7f5abe26ffff",
-			Target = new CloudPcManagementAssignmentTarget
+			Target = new CloudPcManagementGroupAssignmentTarget
 			{
 				OdataType = "microsoft.graph.cloudPcManagementGroupAssignmentTarget",
-				AdditionalData = new Dictionary<string, object>
-				{
-					{
-						"groupId" , "64ff06de-9c00-4a5a-98b5-7f5abe26ffff"
-					},
-				},
+				GroupId = "64ff06de-9c00-4a5a-98b5-7f5abe26ffff",
 			},
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.DeviceManagement.VirtualEndpoint.UserSettings["{cloudPcUserSetting-id}"].Assign.PostAsync(requestBody);
 
 

@@ -102,6 +102,6 @@ Looking for the API reference for this service?
 ## See also
 
 - [Delegated and application permissions](/azure/active-directory/develop/v1-permissions-and-consent)
-- [Calls permissions](./permissions-reference.md#calls-permissions)
-- [Online meeting permissions](./permissions-reference.md#online-meetings-permissions)
+- [Calls permissions](./permissions-reference.md)
+- [Online meeting permissions](./permissions-reference.md)
 - [Cloud communications API samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples)

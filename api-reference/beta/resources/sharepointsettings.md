@@ -61,7 +61,7 @@ Inherits from [entity](../resources/entity.md).
 | disabled                        | The image tagging option for the tenant is disabled.                                                                  |
 | basic                           | Allows users within the tenant to add basic tags to images to make them accessible through search.                    |
 | enhanced                        | Allows users to tag images with custom tags and enhanced features.                                                    |
-| unknownFutureValue              | Evolvable enumeration sentinel value. Do not use.                                                                     |
+| unknownFutureValue              | Evolvable enumeration sentinel value. Don't use.                                                                     |
 
 ### sharingCapabilities values
 | Member                          | Description                                                                                                           |
@@ -70,18 +70,18 @@ Inherits from [entity](../resources/entity.md).
 | externalUserSharingOnly         | Users can share with new and existing guests. Guests must sign in or provide a verification code.                     |
 | externalUserAndGuestSharing     | Users can share with anyone by using links that don't require sign-in.                                                |
 | existingExternalUserSharingOnly | Users can share with existing guests (those already in the directory of the organization).                            |
-| unknownFutureValue              | Evolvable enumeration sentinel value. Do not use.                                                                     |
+| unknownFutureValue              | Evolvable enumeration sentinel value. Don't use.                                                                     |
 
 ### sharingDomainRestrictionMode values
 | Member                          | Description                                                                                                           |
 |---------------------------------|-----------------------------------------------------------------------------------------------------------------------|
 | none                            | No restrictions apply.                                                                                                |
-| allowList                       | Users will be able to share with external collaborators coming only from the list of allowed email domains.           |
-| blockList                       | Users will be able to share with all external collaborators apart from the ones on the list of blocked email domains. |
-| unknownFutureValue              | Evolvable enumeration sentinel value. Do not use.                                                                     |
+| allowList                       | Users are able to share with external collaborators coming only from the list of allowed email domains.           |
+| blockList                       | Users are able to share with all external collaborators apart from the ones on the list of blocked email domains. |
+| unknownFutureValue              | Evolvable enumeration sentinel value. Don't use.                                                                     |
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.sharepointSettings",

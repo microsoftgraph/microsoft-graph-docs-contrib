@@ -4,13 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
+
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
 var requestBody = new Group
 {
 	Description = "Group with designated owner and members",
 	DisplayName = "Operations group",
-	GroupTypes = new List<String>
+	GroupTypes = new List<string>
 	{
 	},
 	MailEnabled = false,
@@ -33,6 +36,8 @@ var requestBody = new Group
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Groups.PostAsync(requestBody);
 
 

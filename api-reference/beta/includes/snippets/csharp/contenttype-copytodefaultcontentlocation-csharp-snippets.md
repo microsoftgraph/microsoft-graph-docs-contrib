@@ -4,9 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.Sites.Item.ContentTypes.Item.CopyToDefaultContentLocation.CopyToDefaultContentLocationPostRequestBody
+// Dependencies
+using Microsoft.Graph.Beta.Sites.Item.ContentTypes.Item.CopyToDefaultContentLocation;
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new CopyToDefaultContentLocationPostRequestBody
 {
 	SourceFile = new ItemReference
 	{
@@ -18,6 +22,8 @@ var requestBody = new Microsoft.Graph.Beta.Sites.Item.ContentTypes.Item.CopyToDe
 	},
 	DestinationFileName = "newname.txt",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Sites["{site-id}"].ContentTypes["{contentType-id}"].CopyToDefaultContentLocation.PostAsync(requestBody);
 
 

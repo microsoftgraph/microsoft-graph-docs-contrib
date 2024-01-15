@@ -21,7 +21,7 @@ Inherits from [managedTenantOperationError](../resources/managedtenants-managedt
 |Property|Type|Description|
 |:---|:---|:---|
 |error|String|The error message for the exception. Inherited from [managedTenantOperationError](../resources/managedtenants-managedtenantoperationerror.md). Required. Read-only.|
-|tenantId|String|The Azure Active Directory tenant identifier for the managed tenant. Inherited from [managedTenantOperationError](../resources/managedtenants-managedtenantoperationerror.md). Optional. Read-only.|
+|tenantId|String|The Microsoft Entra tenant identifier for the managed tenant. Inherited from [managedTenantOperationError](../resources/managedtenants-managedtenantoperationerror.md). Optional. Read-only.|
 
 ## Relationships
 None.

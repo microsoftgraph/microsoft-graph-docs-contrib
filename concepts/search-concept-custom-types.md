@@ -85,7 +85,7 @@ Content-type: application/json
               "summary": "<ddd/>",
               "contentSource": "/external/connections/azuresqlconnector",
               "resource": {
-                "@odata.type": "#microsoft.graph.externalItem",
+                "@odata.type": "#microsoft.graph.externalConnectors.externalItem",
                 "properties": {
                   "businessEntityID": 20704,
                   "firstName": "Amy",
@@ -99,7 +99,7 @@ Content-type: application/json
               "summary": "<ddd/>",
               "contentSource": "/external/connections/azuresqlconnector2",
               "resource": {
-                "@odata.type": "#microsoft.graph.externalItem",
+                "@odata.type": "#microsoft.graph.externalConnectors.externalItem",
                 "properties": {
                   "businessEntityID": 20704,
                   "shortDescription": "Contoso maintenance guidelines",
@@ -173,7 +173,7 @@ Content-type: application/json
                 "_score": 1,
                 "_summary": "<c0>Test</c0> component to move data files and messages between the gateway and internal <ddd/>",
                 "_source": {
-                  "@odata.type": "#microsoft.graph.externalItem",
+                  "@odata.type": "#microsoft.graph.externalConnectors.externalItem",
                   "properties": {
                     "label_Title": "SONIC Operations support and test Guide for the month of March",
                     "label_URL": "D:\\\\ConnectorsEcho\\\\New\\\\MSW06SecondSet\\\\teams\\\\Enterprise_Platforms\\\\CCO\\\\Projects\\\\BTSi Modernization\\\\SONIC Retirement\\\\SONIC_Operations_Support_Guide.docx",
@@ -191,7 +191,7 @@ Content-type: application/json
                 "_score": 2,
                 "_summary": "File Transfer Workbench A <c0>test</c0> File transfer Management Solution File Transfer the number <ddd/>",
                 "_source": {
-                  "@odata.type": "#microsoft.graph.externalItem",
+                  "@odata.type": "#microsoft.graph.externalConnectors.externalItem",
                   "properties": {
                     "label_Title": "Test File Transfer Workbench for the month of January",
                     "label_URL": "D:\\\\ConnectorsEcho\\\\New\\\\MSW06SecondSet\\\\teams\\\\IssueLog\\\\FCAGA Organisation\\\\NSN CO CCA Infra YBCFTPAR entry\\\\File Transfer Workbench.ppt",
@@ -209,7 +209,7 @@ Content-type: application/json
                 "_score": 3,
                 "_summary": "document and the associated <c0>test</c0> software are the sole property of Express Logic.<ddd/>",
                 "_source": {
-                  "@odata.type": "#microsoft.graph.externalItem",
+                  "@odata.type": "#microsoft.graph.externalConnectors.externalItem",
                   "properties": {
                     "label_Title": "System User Guide Express Logic 858.613.6640",
                     "label_URL": "D:\\\\ConnectorsEcho\\\\New\\\\MSW06FirstSet\\\\teams\\\\AzureIoTMarketing\\\\Shared Documents\\\\Whitepapers\\\\RTOS Whitepapers\\\\User Guides\\\\Azure_RTOS_FileX_User_Guide.pdf",

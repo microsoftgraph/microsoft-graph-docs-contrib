@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 title: remoteItem
 ms.localizationpriority: medium
 description: "The remoteItem resource indicates that a driveItem references an item that exists in another drive."
@@ -20,8 +20,8 @@ This resource provides the unique IDs of the source drive and target item.
 
 ## JSON representation
 
-<!-- { "blockType": "resource", 
-       "@odata.type": "microsoft.graph.remoteItem", 
+<!-- { "blockType": "resource",
+       "@odata.type": "microsoft.graph.remoteItem",
        "optionalProperties": ["name", "fileSystemInfo", "file", "folder"] } -->
 
 ```json

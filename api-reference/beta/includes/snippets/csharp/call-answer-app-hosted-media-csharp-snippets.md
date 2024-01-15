@@ -4,26 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.Communications.Calls.Item.Answer.AnswerPostRequestBody
+// Dependencies
+using Microsoft.Graph.Beta.Communications.Calls.Item.Answer;
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new AnswerPostRequestBody
 {
 	CallbackUri = "https://bot.contoso.com/api/calls",
 	AcceptedModalities = new List<Modality?>
 	{
 		Modality.Audio,
 	},
-	MediaConfig = new MediaConfig
+	MediaConfig = new AppHostedMediaConfig
 	{
 		OdataType = "#microsoft.graph.appHostedMediaConfig",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"blob" , "<Media Session Configuration Blob>"
-			},
-		},
+		Blob = "<Media Session Configuration Blob>",
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Communications.Calls["{call-id}"].Answer.PostAsync(requestBody);
 
 

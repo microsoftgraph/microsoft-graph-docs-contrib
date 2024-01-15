@@ -4,15 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.Me.AssignLicense.AssignLicensePostRequestBody
+// Dependencies
+using Microsoft.Graph.Beta.Me.AssignLicense;
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new AssignLicensePostRequestBody
 {
 	AddLicenses = new List<AssignedLicense>
 	{
 		new AssignedLicense
 		{
-			DisabledPlans = new List<8a256a2b-b617-496d-b51b-e76466e88db0>
+			DisabledPlans = new List<Guid?>
 			{
 				Guid.Parse("8a256a2b-b617-496d-b51b-e76466e88db0"),
 			},
@@ -20,16 +24,18 @@ var requestBody = new Microsoft.Graph.Beta.Me.AssignLicense.AssignLicensePostReq
 		},
 		new AssignedLicense
 		{
-			DisabledPlans = new List<String>
+			DisabledPlans = new List<string>
 			{
 			},
 			SkuId = Guid.Parse("f30db892-07e9-47e9-837c-80727f46fd3d"),
 		},
 	},
-	RemoveLicenses = new List<String>
+	RemoveLicenses = new List<string>
 	{
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Me.AssignLicense.PostAsync(requestBody);
 
 

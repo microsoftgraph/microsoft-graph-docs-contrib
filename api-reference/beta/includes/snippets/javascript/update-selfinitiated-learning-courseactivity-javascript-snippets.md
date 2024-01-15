@@ -21,7 +21,7 @@ const learningCourseActivity = {
   status: 'inProgress'
 };
 
-await client.api('/employeeExperience/learningCourseActivities/8ba2228a-e020-11ec-9d64-0242ac120004')
+await client.api('/employeeExperience/learningProviders/01e8f81b-3060-4dec-acf0-0389665a0a38/learningCourseActivities/8ba2228a-e020-11ec-9d64-0242ac120003')
 	.version('beta')
 	.update(learningCourseActivity);
 

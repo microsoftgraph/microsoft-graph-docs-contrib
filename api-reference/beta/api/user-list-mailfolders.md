@@ -1,11 +1,13 @@
 ---
-title: "List mailFolders"
-description: "Get all the mail folders in the signed-in user's mailbox."
+title: List mailFolders
+description: Get the mail folder collection under the root folder of the signed-in user.
 ms.localizationpriority: medium
 doc_type: apiPageType
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: "outlook"
 ---
+
+<!-- markdownlint-disable MD001 MD022 MD024 MD025 MD051-->
 
 # List mailFolders
 
@@ -13,22 +15,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all the mail folders in the specified user's mailbox, including any [mail search folders](../resources/mailsearchfolder.md).
+Get the mail folder collection directly under the root folder of the signed-in user. The returned collection includes any [mail search folders](../resources/mailsearchfolder.md) directly under the root.
 
-By default, this operation does not return hidden folders. Use a query parameter _includeHiddenFolders_ to include them in the response.
+By default, this operation does not return hidden folders. Use a query parameter `includeHiddenFolders` to include them in the response. This operation does not return all mail folders in a mailbox, only the child folders of the root folder. To return all mail folders in a mailbox, each child folder must be [traversed separately](mailfolder-list-childfolders.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
-|Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
-|Application | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "user_list_mailfolders" } -->
+[!INCLUDE [permissions-table](../includes/permissions/user-list-mailfolders-permissions.md)]
 
 ## HTTP request
 
-To get all the mail folders in the specified user's mailbox, excluding those that are hidden:
+To get all the mail folders in the root folder in the specified user's mailbox, excluding those that are hidden:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders
@@ -42,23 +44,26 @@ GET /me/mailFolders/?includeHiddenFolders=true
 GET /users/{id | userPrincipalName}/mailFolders/?includeHiddenFolders=true
 ```
 
-## Query parameters
-To return a list of all mailFolders including those that are hidden (their **isHidden** property is true), in the request URL, specify the 
-`includeHiddenFolders` query parameter as `true`, as shown in the [HTTP request](#http-request) section.
+## Optional query parameters
 
-This method also supports [OData query parameters](/graph/query-parameters) to help customize the response.
+To return a list of all mailFolders including those that are hidden (their **isHidden** property is true), in the request URL, specify the `includeHiddenFolders` query parameter as `true`, as shown in the [HTTP request](#http-request) section.
+
+This method supports [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+
+| Header        | Value                     |
+|:--------------|:--------------------------|
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [mailFolder](../resources/mailfolder.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [mailFolder](../resources/mailfolder.md) objects in the response body.
+
 ## Examples
 
 ### Example 1: List mail folders in the signed-in user's mailbox
@@ -66,7 +71,8 @@ If successful, this method returns a `200 OK` response code and collection of [m
 This example includes a **mailSearchFolder** object in the response. The mail search folder is a child folder under the Inbox with the display name "Weekly digests".
 
 #### Request
-The following is an example of the request.
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -79,6 +85,10 @@ GET https://graph.microsoft.com/beta/me/mailFolders
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-mailfolders-e1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-mailfolders-e1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -101,12 +111,17 @@ GET https://graph.microsoft.com/beta/me/mailFolders
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-mailfolders-e1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-mailfolders-e1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
-The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. 
+The following is an example of the response, which includes a **mailSearchFolder** that is a child folder under the Inbox.
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -217,13 +232,16 @@ Content-type: application/json
 }
 ```
 
+> [!TIP]
+> If a collection exceeds the default page size (10 items), the **\@odata.nextLink** property is returned in the response to indicate more items are available and provide the request URL for the next page of items.
+>
+> You can control the page size through [optional query string parameters](/graph/query-parameters)
 
 ### Example 2: Include hidden folders in the signed-in user's mailbox
 
-The next example uses the `includeHiddenFolders` query parameter to get a list of mail folders including hidden mail folders. The response includes the "Clutters" folder that has the **isHidden** set to true.
+This example uses the `includeHiddenFolders` query parameter to get a list of mail folders including hidden mail folders. The response includes the "Clutter" folder that has the **isHidden** set to `true`.
 
 #### Request
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -236,6 +254,10 @@ GET https://graph.microsoft.com/beta/me/mailFolders/?includeHiddenFolders=true
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-hiddenmailfolders-e2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-hiddenmailfolders-e2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -258,10 +280,15 @@ GET https://graph.microsoft.com/beta/me/mailFolders/?includeHiddenFolders=true
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-hiddenmailfolders-e2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-hiddenmailfolders-e2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
-The following is an example of the response.
+
+The following example shows the response.
 
 >**Note:** The response object shown here is shortened for readability, and doesn't include all the default folders in a user mailbox.
 <!-- {
@@ -279,7 +306,7 @@ Content-type: application/json
     "value": [
         {
             "id": "AAMkADg3NTY5MDg4LWMzYmQtNDQzNi05OTgwLWAAA=",
-            "displayName": "Clutters",
+            "displayName": "Clutter",
             "parentFolderId": "AAMkADg3NTY5MDg4LWMzYmQtEIAAA=",
             "childFolderCount": 0,
             "unreadItemCount": 0,

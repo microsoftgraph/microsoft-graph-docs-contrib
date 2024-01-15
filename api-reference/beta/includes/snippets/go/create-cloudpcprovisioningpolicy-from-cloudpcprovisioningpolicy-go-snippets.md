@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -21,12 +21,10 @@ requestBody.SetDescription(&description)
 displayName := "Display Name value"
 requestBody.SetDisplayName(&displayName) 
 domainJoinConfiguration := graphmodels.NewCloudPcDomainJoinConfiguration()
+domainJoinType := graphmodels.HYBRIDAZUREADJOIN_CLOUDPCDOMAINJOINTYPE 
+domainJoinConfiguration.SetDomainJoinType(&domainJoinType) 
 onPremisesConnectionId := "16ee6c71-fc10-438b-88ac-daa1ccafffff"
 domainJoinConfiguration.SetOnPremisesConnectionId(&onPremisesConnectionId) 
-additionalData := map[string]interface{}{
-	"domainJoinType" : "hybridAzureADJoin", 
-}
-domainJoinConfiguration.SetAdditionalData(additionalData)
 requestBody.SetDomainJoinConfiguration(domainJoinConfiguration)
 
 
@@ -44,7 +42,6 @@ cloudPcDomainJoinConfiguration1.SetType(&type)
 domainJoinConfigurations := []graphmodels.CloudPcDomainJoinConfigurationable {
 	cloudPcDomainJoinConfiguration,
 	cloudPcDomainJoinConfiguration1,
-
 }
 requestBody.SetDomainJoinConfigurations(domainJoinConfigurations)
 id := "1d164206-bf41-4fd2-8424-a3192d39ffff"
@@ -66,7 +63,7 @@ requestBody.SetWindowsSettings(windowsSettings)
 provisioningType := graphmodels.DEDICATED_CLOUDPCPROVISIONINGTYPE 
 requestBody.SetProvisioningType(&provisioningType) 
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPolicies().Post(context.Background(), requestBody, nil)
+provisioningPolicies, err := graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPolicies().Post(context.Background(), requestBody, nil)
 
 
 ```

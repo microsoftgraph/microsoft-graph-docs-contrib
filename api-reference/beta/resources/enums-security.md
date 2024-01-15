@@ -11,14 +11,42 @@ author: "BenAlfasi"
 
 Namespace: microsoft.graph.security
 
-### contentFormat values
 
-|Member|
-|:---|
-|text|
-|html|
-|markdown|
-|unknownFutureValue|
+### actionAfterRetentionPeriod values
+
+| Member                 |
+| :--------------------- |
+| none                   |
+| delete                 |
+| startDispositionReview |
+| unknownFutureValue     |
+
+### behaviorDuringRetentionPeriod values
+
+| Member                   |
+| :----------------------- |
+| doNotRetain              |
+| retain                   |
+| retainAsRecord           |
+| retainAsRegulatoryRecord |
+| unknownFutureValue       |
+
+## contentFormat values
+
+| Member             |
+| :----------------- |
+| text               |
+| html               |
+| markdown           |
+| unknownFutureValue |
+
+### defaultRecordBehavior values
+
+| Member             |
+| :----------------- |
+| startLocked        |
+| startUnlocked      |
+| unknownFutureValue |
 
 ### detectionStatus values
 
@@ -29,136 +57,108 @@ Namespace: microsoft.graph.security
 | prevented
 | unknownFutureValue
 
-### actionAfterRetentionPeriod values 
+### eventPropagationStatus values
 
+| Member             |
+| :----------------- |
+| none               |
+| inProcessing       |
+| failed             |
+| success            |
+| unknownFutureValue |
 
+### eventStatusType values
 
-|Member|
-|:---|
-|none|
-|delete|
-|startDispositionReview|
-|unknownFutureValue|
+| Member             |
+| :----------------- |
+| pending            |
+| error              |
+| success            |
+| notAvaliable       |
+| unknownFutureValue |
 
-### behaviorDuringRetentionPeriod values 
+### hostPortProtocol values
 
+| Member             |
+| :----------------- |
+| tcp                |
+| udp                |
+| unknownFutureValue |
 
+### hostPortStatus values
 
-|Member|
-|:---|
-|doNotRetain|
-|retain|
-|retainAsRecord|
-|retainAsRegulatoryRecord|
-|unknownFutureValue|
-
-
-### defaultRecordBehavior values 
-
-
-
-|Member|
-|:---|
-|startLocked|
-|startUnlocked|
-|unknownFutureValue|
-
-
-### eventPropagationStatus values 
-
-
-
-|Member|
-|:---|
-|none|
-|inProcessing|
-|failed|
-|success|
-|unknownFutureValue|
-
-### eventStatusType values 
-
-
-
-|Member|
-|:---|
-|pending|
-|error|
-|success|
-|notAvaliable|
-|unknownFutureValue|
+| Member             |
+| :----------------- |
+| open               |
+| filtered           |
+| closed             |
+| unknownFutureValue |
 
 ### hostReputationClassification values
 
-|Member|
-|:---|
-|unknown|
-|neutral|
-|suspicious|
-|malicious|
-|unknownFutureValue|
+| Member             |
+| :----------------- |
+| unknown            |
+| neutral            |
+| suspicious         |
+| malicious          |
+| unknownFutureValue |
 
 ### hostReputationRuleSeverity values
 
-|Member|
-|:---|
-|unknown|
-|low|
-|medium|
-|high|
-|unknownFutureValue|
+| Member             |
+| :----------------- |
+| unknown            |
+| low                |
+| medium             |
+| high               |
+| unknownFutureValue |
 
 ### indicatorSource values
 
-|Member|
-|:---|
-|microsoftDefenderThreatIntelligence|
-|openSourceIntelligence|
-|public|
-|unknownFutureValue|
+| Member             |
+| :----------------- |
+| microsoft          |
+| osint              |
+| public             |
+| unknownFutureValue |
 
 ### intelligenceProfileKind values
 
-|Member|
-|:---|
-|actor|
-|tool|
-|unknownFutureValue|
+| Member             |
+| :----------------- |
+| actor              |
+| tool               |
+| unknownFutureValue |
 
-### queryType values 
+### queryType values
 
+| Member             |
+| :----------------- |
+| files              |
+| messages           |
+| unknownFutureValue |
 
+### retentionTrigger values
 
-|Member|
-|:---|
-|files|
-|messages|
-|unknownFutureValue|
-
-
-
-### retentionTrigger values 
-
-
-
-|Member|
-|:---|
-|dateLabeled|
-|dateCreated|
-|dateModified|
-|dateOfEvent|
-|unknownFutureValue|
+| Member             |
+| :----------------- |
+| dateLabeled        |
+| dateCreated        |
+| dateModified       |
+| dateOfEvent        |
+| unknownFutureValue |
 
 ### vulnerabilitySeverity values
 
-|Member|
-|:---|
-|none|
-|low|
-|medium|
-|high|
-|critical|
-|unknownFutureValue|
+| Member             |
+| :----------------- |
+| none               |
+| low                |
+| medium             |
+| high               |
+| critical           |
+| unknownFutureValue |
 
 <!--
 {

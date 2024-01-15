@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 548
+Content-Length: 604
 
 {
   "value": {
@@ -75,6 +75,8 @@ Content-Length: 548
     "name": "Name value",
     "size": 4,
     "sizeEncrypted": 13,
+    "sizeInBytes": 11,
+    "sizeEncryptedInBytes": 4,
     "azureStorageUriExpirationDateTime": "2017-01-01T00:00:08.4940464-08:00",
     "manifest": "bWFuaWZlc3Q=",
     "uploadState": "transientError",

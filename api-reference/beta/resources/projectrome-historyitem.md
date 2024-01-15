@@ -42,7 +42,7 @@ When an app creates a session, a **historyItem** object should be added to the *
 
 |Relationship | Type | Description|
 |:------------|:-----|:-----------|
-|activity| [activity](../resources/projectrome-activity.md) | Optional. NavigationProperty/Containment; navigation property to the associated activity.|
+|activity| [userActivity](../resources/projectrome-activity.md) | Optional. NavigationProperty/Containment; navigation property to the associated activity.|
 
 ## JSON representation
 

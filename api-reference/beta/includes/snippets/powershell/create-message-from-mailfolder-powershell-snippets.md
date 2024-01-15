@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Mail
+Import-Module Microsoft.Graph.Beta.Mail
 
 $params = @{
 	receivedDateTime = [System.DateTime]::Parse("2016-10-19T10:37:00Z")
@@ -19,6 +19,6 @@ $params = @{
 }
 
 # A UPN can also be used as -UserId.
-New-MgUserMailFolderMessage -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
+New-MgBetaUserMailFolderMessage -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
 
 ```

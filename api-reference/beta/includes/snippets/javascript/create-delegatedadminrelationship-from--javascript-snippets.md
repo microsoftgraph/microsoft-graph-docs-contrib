@@ -26,7 +26,8 @@ const delegatedAdminRelationship = {
         roleDefinitionId: '3a2c62db-5318-420d-8d74-23affee5d9d5'
       }
     ]
-  }
+  },
+  autoExtendDuration: 'P180D'
 };
 
 await client.api('/tenantRelationships/delegatedAdminRelationships')

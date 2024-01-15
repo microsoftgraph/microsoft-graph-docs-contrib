@@ -4,9 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.Security.Cases.EdiscoveryCases.Item.NoncustodialDataSources.MicrosoftGraphSecurityRemoveHold.RemoveHoldPostRequestBody
+// Dependencies
+using Microsoft.Graph.Beta.Security.Cases.EdiscoveryCases.Item.NoncustodialDataSources.MicrosoftGraphSecurityRemoveHold;
+
+var requestBody = new RemoveHoldPostRequestBody
 {
 	Ids = new List<string>
 	{
@@ -14,6 +17,8 @@ var requestBody = new Microsoft.Graph.Beta.Security.Cases.EdiscoveryCases.Item.N
 		"46333131344239353834433430454335",
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].NoncustodialDataSources.MicrosoftGraphSecurityRemoveHold.PostAsync(requestBody);
 
 

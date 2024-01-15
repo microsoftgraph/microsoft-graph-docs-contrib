@@ -4,40 +4,37 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.Models.IdentityGovernance.Workflow
+// Dependencies
+using Microsoft.Graph.Beta.Models.IdentityGovernance;
+using Microsoft.Graph.Beta.Models;
+
+var requestBody = new Workflow
 {
-	Category = Microsoft.Graph.Beta.Models.IdentityGovernance.LifecycleWorkflowCategory.Joiner,
+	Category = LifecycleWorkflowCategory.Joiner,
 	Description = "Configure new hire tasks for onboarding employees on their first day",
 	DisplayName = "Australia Onboard new hire employee",
 	IsEnabled = true,
-	IsSchedulingEnabled = false,
-	ExecutionConditions = new Microsoft.Graph.Beta.Models.IdentityGovernance.WorkflowExecutionConditions
+	IsSchedulingEnabled = true,
+	ExecutionConditions = new TriggerAndScopeBasedConditions
 	{
 		OdataType = "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
-		AdditionalData = new Dictionary<string, object>
+		Scope = new RuleBasedSubjectSet
 		{
-			{
-				"scope" , new 
-				{
-					OdataType = "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
-					Rule = "(country eq 'Australia')",
-				}
-			},
-			{
-				"trigger" , new 
-				{
-					OdataType = "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
-					TimeBasedAttribute = "employeeHireDate",
-					OffsetInDays = 0,
-				}
-			},
+			OdataType = "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+			Rule = "(country eq 'Australia')",
+		},
+		Trigger = new TimeBasedAttributeTrigger
+		{
+			OdataType = "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
+			TimeBasedAttribute = WorkflowTriggerTimeBasedAttribute.EmployeeHireDate,
+			OffsetInDays = 0,
 		},
 	},
-	Tasks = new List<Microsoft.Graph.Beta.Models.IdentityGovernance.TaskObject>
+	Tasks = new List<TaskObject>
 	{
-		new Microsoft.Graph.Beta.Models.IdentityGovernance.TaskObject
+		new TaskObject
 		{
 			ContinueOnError = false,
 			Description = "Enable user account in the directory",
@@ -48,7 +45,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.IdentityGovernance.Workflow
 			{
 			},
 		},
-		new Microsoft.Graph.Beta.Models.IdentityGovernance.TaskObject
+		new TaskObject
 		{
 			ContinueOnError = false,
 			Description = "Send welcome email to new hire",
@@ -61,6 +58,8 @@ var requestBody = new Microsoft.Graph.Beta.Models.IdentityGovernance.Workflow
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.IdentityGovernance.LifecycleWorkflows.Workflows.PostAsync(requestBody);
 
 

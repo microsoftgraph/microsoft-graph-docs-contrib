@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -15,7 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.DeviceManagement().VirtualEndpoint().Reports().GetRealTimeRemoteConnectionLatency(cloudPcId='{cloudPcId}')().Get(context.Background(), nil)
+cloudPcId := "{cloudPcId}"
+graphClient.DeviceManagement().VirtualEndpoint().Reports().GetRealTimeRemoteConnectionLatencyWithCloudPcId(&cloudPcId).Get(context.Background(), nil)
 
 
 ```

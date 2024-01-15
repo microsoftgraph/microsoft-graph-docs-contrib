@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
+
+// Dependencies
+using Microsoft.Graph.Models;
 
 var requestBody = new EducationAssignment
 {
@@ -17,6 +20,8 @@ var requestBody = new EducationAssignment
 	DueDateTime = DateTimeOffset.Parse("2021-09-10T00:00:00Z"),
 	AddedStudentAction = EducationAddedStudentAction.None,
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Education.Classes["{educationClass-id}"].Assignments["{educationAssignment-id}"].PatchAsync(requestBody);
 
 

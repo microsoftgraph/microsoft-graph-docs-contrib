@@ -18,6 +18,8 @@ specificAllowedTargetsList.add(specificAllowedTargets);
 accessPackageAssignmentPolicy.specificAllowedTargets = specificAllowedTargetsList;
 AccessPackageAutomaticRequestSettings automaticRequestSettings = new AccessPackageAutomaticRequestSettings();
 automaticRequestSettings.requestAccessForAllowedTargets = true;
+automaticRequestSettings.removeAccessWhenTargetLeavesAllowedTargets = true;
+automaticRequestSettings.gracePeriodBeforeAccessRemoval = DatatypeFactory.newInstance().newDuration("P7D");
 accessPackageAssignmentPolicy.automaticRequestSettings = automaticRequestSettings;
 AccessPackage accessPackage = new AccessPackage();
 accessPackage.id = "8a36831e-1527-4b2b-aff2-81259a8d8e76";

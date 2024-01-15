@@ -19,7 +19,7 @@ You can access users through Microsoft Graph in two ways:
 - By their ID, `/users/{id}`
 - By using the `/me` alias for the signed-in user, which is the same as `/users/{signed-in user's id}`
 
-There are two types of users in Azure AD - members and guest users. Guest users join the organization through redeeming their invitation. Guest users can be converted to members to enjoy all the privileges of members.
+There are two types of users in Microsoft Entra ID - members and guest users. Guest users join the organization through redeeming their invitation. Guest users can be converted to members to enjoy all the privileges of members.
 
 ## Authorization and privileges
 
@@ -35,11 +35,11 @@ One of the following [permissions](/graph/permissions-reference) is required to 
 - Directory.ReadWrite.All
 - Directory.AccessAsUser.All
 
-In addition to the required permissions, the user operations that the calling user can perform are bounded to the privileges granted to the calling user via specific [Azure AD roles](/azure/active-directory/roles/permissions-reference). For more information, see the *Who can reset passwords?* and *Who can update sensitive attributes?* sections.
+In addition to the required permissions, the user operations that the calling user can perform are bounded to the privileges granted to the calling user via specific [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json). For more information, see the *Who can reset passwords?* and *Who can update sensitive attributes?* sections.
 
 ### Default user permissions
 
-The set of default permissions depends on whether the user is a native member of the tenant (member user) or whether the user is brought over from another directory as a business-to-business (B2B) collaboration guest (guest user). Azure AD defines a set of default permissions for member users and guest users. For more information about what member users and guest users can do, see [What are the default user permissions in Azure Active Directory?](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context)
+The set of default permissions depends on whether the user is a native member of the tenant (member user) or whether the user is brought over from another directory as a business-to-business (B2B) collaboration guest (guest user). Microsoft Entra ID defines a set of default permissions for member users and guest users. For more information about what member users and guest users can do, see [What are the default user permissions in Microsoft Entra ID?](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context)
 
 ### Sensitive actions for users
 
@@ -138,17 +138,15 @@ With the appropriate permissions, the app can read the profiles of users or grou
 
 For more information about search limitations for guest users, see [Compare member and guest default permissions](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context#compare-member-and-guest-default-permissions).
 
-## Common properties
+## Properties not returned by default
 
-| Property | Description |
-|----------|-------------|
-| displayName | The name displayed in the address book for the user.|
-|givenName| The first name of the user. |
-|surname| The last name of the user. |
-|mail| The user's email address. |
-|photo| The user's profile photo. |
+Some properties of the user object aren't returned by default and must be specified in a `$select` query parameter. For example, **bithday** and **skills**. Refer to the [properties table of the user entity](user.md#properties) to identify properties that are returned only on `$select`.
 
-For details and a list of all the properties, see the [user](user.md) object.
+## Properties stored outside the main data store
+
+While the user resource data is mostly stored in Microsoft Entra ID, some of its properties, like **skills**, are stored in SharePoint Online. In most instances, you can't specify these properties in the same Create or Update request body as other user properties.
+
+Properties stored outside the main data store also aren't supported as part of change tracking. Therefore, a change to any of these properties doesn't result in an object showing up in the delta query response.
 
 ## Common operations
 
@@ -165,6 +163,5 @@ For details and a list of all the properties, see the [user](user.md) object.
 |[`/users/{id}/drive`](../api/drive-get.md)| Gets the user's OneDrive file store. |
 |[`/users/{id}/memberOf`](../api/user-list-memberof.md)| Lists the groups that the user is a member of. |
 |[`/users/{id}/joinedTeams`](../api/user-list-joinedteams.md)| Lists the Microsoft Teams that the user is a member of. |
+|[`/users/{id}/permissionGrants`](../api/user-list-permissiongrants.md)| List all resource-specific permission grants of a user. |
 
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

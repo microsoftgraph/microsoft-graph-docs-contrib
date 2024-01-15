@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -35,7 +35,7 @@ giphyContentRating := graphmodels.STRICT_GIPHYRATINGTYPE
 funSettings.SetGiphyContentRating(&giphyContentRating) 
 requestBody.SetFunSettings(funSettings)
 
-result, err := graphClient.Groups().ByGroupId("group-id").Team().Put(context.Background(), requestBody, nil)
+team, err := graphClient.Groups().ByGroupId("group-id").Team().Put(context.Background(), requestBody, nil)
 
 
 ```

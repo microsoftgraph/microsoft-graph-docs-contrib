@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get all provisioning events that occurred in your tenant, such as the deletion of a group in a target application or the creation of a user when provisioning user accounts from your HR system. 
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -36,42 +38,7 @@ GET /auditLogs/provisioning
 
 ## Optional query parameters
 
-This method supports the following OData query parameters to help customize the response. Note that the filters are all case sensitive except for status. 
-
-|Name     |Description                            |Example|
-|:--------------------|----------------|------------------------------------------------------------------------|
-|[$filter](/graph/query-parameters#filter-parameter)|Filters results (rows). |/`auditLogs/provisioning?$filter=id eq '74c3b0ae-9cc5-850e-e0a5-7r6a4231de87'`
-|[$top](/graph/query-parameters#top-parameter)|Sets the page size of results.|`/auditLogs/provisioning?$top=20`|
-|[$skiptoken](/graph/query-parameters#skiptoken-parameter)|Retrieves the next page of results from result sets that span multiple pages. You must pass the top filter in the query to generate the token. You cannot specify the number of results to be skipped.|`/auditLogs/provisioning?$top=20&$skiptoken=g822a72df43b19c8ce94b71d153981b680a08800bc3e35f239dffb378ff72c25"`|
-
-For general information, see [OData query parameters](/graph/query-parameters).
-
-### Attributes supported by the $filter parameter
-
-|Attribute name |Supported operators|
-|:----------------|:------|
-|id| eq, contains|
-|activityDateTime| eq|
-|tenantid|eq, contains|
-|jobid|eq, contains|
-|changeid|eq, contains|
-|cycleid|eq, contains|
-|action|eq, contains|
-|provisioningAction|eq, contains|
-|durationInMilliseconds|eq, gt, lt|
-|provisioningStatusInfo/status|eq, contains|
-|statusInfo/status|eq, contains|
-|sourceSystem/displayName|eq, contains|
-|targetSystem/displayName|eq, contains|
-|sourceIdentity/identityType|eq, contains|
-|targetIdentity/identityType|eq, contains|
-|sourceIdentity/id|eq, contains|
-|servicePrincipal/id|eq|
-|servicePrincipal/name|eq|
-|targetIdentity/id|eq, contains|
-|sourceIdentity/displayName|eq, contains|
-|targetIdentity/displayName|eq, contains|
-|initiatedBy/displayName|eq, contains|
+This method supports the `$filter` (`eq`, `contains`, `gt`, `lt`), `$orderby`, `$top`, `$skiptoken` OData query parameters to help customize the response. The filters are all case sensitive. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -81,7 +48,7 @@ For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -93,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -107,6 +74,10 @@ GET https://graph.microsoft.com/beta/auditLogs/provisioning
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-provisioningobjectsummary-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-provisioningobjectsummary-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -127,6 +98,10 @@ GET https://graph.microsoft.com/beta/auditLogs/provisioning
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-provisioningobjectsummary-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-provisioningobjectsummary-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -258,7 +233,7 @@ Content-type: application/json
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -272,6 +247,10 @@ GET https://graph.microsoft.com/beta/auditLogs/provisioning
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-provisioningobjectsummary-error-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-provisioningobjectsummary-error-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -292,6 +271,10 @@ GET https://graph.microsoft.com/beta/auditLogs/provisioning
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-provisioningobjectsummary-error-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-provisioningobjectsummary-error-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

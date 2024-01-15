@@ -4,20 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var requestBody = new Microsoft.Graph.Beta.Drives.Item.Items.Item.Workbook.Tables.Item.Columns.Add.AddPostRequestBody
+// Dependencies
+using Microsoft.Graph.Beta.Drives.Item.Items.Item.Workbook.Tables.Item.Columns.Add;
+
+var requestBody = new AddPostRequestBody
 {
 	Index = new IndexObject
 	{
 	},
-	Values = new List<>
+	Values = new List<Json>
 	{
-		new 
+		new Json
 		{
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].Columns.Add.PostAsync(requestBody);
 
 

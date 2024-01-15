@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//industryData"
+	  graphmodelsindustrydata "github.com/microsoftgraph/msgraph-beta-sdk-go/models/industrydata"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewIndustryDataConnector()
+requestBody := graphmodelsindustrydata.NewIndustryDataConnector()
 displayName := "CSV connector"
 requestBody.SetDisplayName(&displayName) 
 additionalData := map[string]interface{}{
@@ -23,7 +23,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.External().IndustryData().DataConnectors().Post(context.Background(), requestBody, nil)
+dataConnectors, err := graphClient.External().IndustryData().DataConnectors().Post(context.Background(), requestBody, nil)
 
 
 ```

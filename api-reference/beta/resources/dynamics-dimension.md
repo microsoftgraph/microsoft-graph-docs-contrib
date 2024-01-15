@@ -26,13 +26,13 @@ Represents a dimension in Dynamics 365 Business Central.
 |:-------------------|:----------------------|:-------------------------|
 |id                  |GUID                   |The unique ID of the item.|
 |code                |string, maximum size 20|The dimension code.       |
-|displayName         |string                 |Specifies the dimension's name. This name will appear where the dimension is used.|
+|displayName         |string                 |Specifies the dimension's name. This name appears where the dimension is used.|
 |lastModifiedDateTime|datetime               |The last datetime the dimension was modified.|  
 
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 
 ```json

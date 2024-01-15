@@ -26,7 +26,7 @@ To access the School Data Sync admin portal, launch a private web browser, go to
 
 4. Choose a future stop date, and then choose **Next**.
    - In a production scenario, you would choose to sync existing users.
-   - For more details about the sync process, see [How to deploy School Data Sync by using CSV files](/SchoolDataSync/how-to-deploy-school-data-sync-by-using-csv-files).
+   - For more information about the sync process, see [How to deploy School Data Sync by using CSV files](/SchoolDataSync/how-to-deploy-school-data-sync-by-using-csv-files).
 
 5. On the **Teacher options** page, make sure that faculty licenses are selected and choose **Next**.
 
@@ -34,7 +34,7 @@ To access the School Data Sync admin portal, launch a private web browser, go to
 
 7. On the **Review** page, verify that you made the appropriate selections, and choose **Create profile**.
 
-8. After you create a sync profile, SDS will begin a pre-sync validation process. During this process, SDS will verify that there are no obvious errors with your CSV files.
+8. After you create a sync profile, SDS begins a presync validation process. During this process, SDS verifies that there are no obvious errors with your CSV files.
 
    - If any errors are found during the pre-sync validation process, you will have the option to fix them and re-upload the files before you resume the sync. 
    - If errors occur and you choose not to update the CSV files, you can still choose to resume sync. Just be aware that SDS can only sustain up to 15,000 errors before the profile enters a quarantine status.

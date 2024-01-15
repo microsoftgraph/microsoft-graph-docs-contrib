@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -23,7 +23,7 @@ requestBody.SetPlanId(&planId)
 orderHint := " !"
 requestBody.SetOrderHint(&orderHint) 
 
-result, err := graphClient.Planner().Buckets().Post(context.Background(), requestBody, nil)
+buckets, err := graphClient.Planner().Buckets().Post(context.Background(), requestBody, nil)
 
 
 ```

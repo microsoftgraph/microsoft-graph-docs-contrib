@@ -15,16 +15,15 @@ Namespace: microsoft.graph
 
 Delete an existing user activity for your app.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | UserActivity.ReadWrite.CreatedByApp    |
-|Delegated (personal Microsoft account) | UserActivity.ReadWrite.CreatedByApp    |
-|Application | Not supported. |
+<!-- { "blockType": "permissions", "name": "projectrome_delete_activity" } -->
+[!INCLUDE [permissions-table](../includes/permissions/projectrome-delete-activity-permissions.md)]
 
 ## HTTP request
 
@@ -52,7 +51,7 @@ If successful, this method returns the `204 No Content` response code if the act
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -68,6 +67,10 @@ DELETE https://graph.microsoft.com/beta/me/activities/13881113971988980728
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-activity-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-activity-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -90,11 +93,15 @@ DELETE https://graph.microsoft.com/beta/me/activities/13881113971988980728
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-activity-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-activity-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

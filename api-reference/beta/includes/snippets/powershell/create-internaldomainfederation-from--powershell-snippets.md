@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.internalDomainFederation"
@@ -22,6 +22,6 @@ $params = @{
 	federatedIdpMfaBehavior = "rejectMfaByFederatedIdp"
 }
 
-New-MgDomainFederationConfiguration -DomainId $domainId -BodyParameter $params
+New-MgBetaDomainFederationConfiguration -DomainId $domainId -BodyParameter $params
 
 ```

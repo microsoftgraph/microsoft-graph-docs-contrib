@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.DeviceManagement.Actions
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
 
-Invoke-MgReprovisionDeviceManagementManagedDeviceCloudPc -ManagedDeviceId $managedDeviceId
+Invoke-MgBetaReprovisionDeviceManagementManagedDeviceCloudPc -ManagedDeviceId $managedDeviceId
 
 ```

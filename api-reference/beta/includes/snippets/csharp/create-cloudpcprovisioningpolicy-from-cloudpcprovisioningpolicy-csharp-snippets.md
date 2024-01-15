@@ -4,7 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Code snippets are only available for the latest version. Current version is 5.x
+
+// Dependencies
+using Microsoft.Graph.Beta.Models;
 
 var requestBody = new CloudPcProvisioningPolicy
 {
@@ -13,13 +16,8 @@ var requestBody = new CloudPcProvisioningPolicy
 	DisplayName = "Display Name value",
 	DomainJoinConfiguration = new CloudPcDomainJoinConfiguration
 	{
+		DomainJoinType = CloudPcDomainJoinType.HybridAzureADJoin,
 		OnPremisesConnectionId = "16ee6c71-fc10-438b-88ac-daa1ccafffff",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"domainJoinType" , "hybridAzureADJoin"
-			},
-		},
 	},
 	DomainJoinConfigurations = new List<CloudPcDomainJoinConfiguration>
 	{
@@ -46,6 +44,8 @@ var requestBody = new CloudPcProvisioningPolicy
 	},
 	ProvisioningType = CloudPcProvisioningType.Dedicated,
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.DeviceManagement.VirtualEndpoint.ProvisioningPolicies.PostAsync(requestBody);
 
 

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -24,7 +24,7 @@ ext55gb1l09_msLearnCourses.SetCourseType(&courseType)
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Users().ByUserId("user-id").Patch(context.Background(), requestBody, nil)
+users, err := graphClient.Users().ByUserId("user-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

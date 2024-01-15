@@ -26,7 +26,7 @@ notes.content = "required assignment added for user";
 learningCourseActivity.notes = notes;
 learningCourseActivity.status = CourseStatus.IN_PROGRESS;
 
-graphClient.employeeExperience().learningCourseActivities("8ba2228a-e020-11ec-9d64-0242ac120003")
+graphClient.employeeExperience().learningProviders("01e8f81b-3060-4dec-acf0-0389665a0a38").learningCourseActivities("8ba2228a-e020-11ec-9d64-0242ac120003")
 	.buildRequest()
 	.patch(learningCourseActivity);
 

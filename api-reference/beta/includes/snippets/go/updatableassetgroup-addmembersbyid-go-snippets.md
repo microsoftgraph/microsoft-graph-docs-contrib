@@ -4,23 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Admin/Windows/Updates/UpdatableAssets/Item/MicrosoftGraphWindowsUpdatesAddMembersById"
+	  graphadmin "github.com/microsoftgraph/msgraph-beta-sdk-go/admin"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewAddMembersByIdPostRequestBody()
+requestBody := graphadmin.NewAddMembersByIdPostRequestBody()
 ids := []string {
 	"String",
 	"String",
 	"String",
-
 }
 requestBody.SetIds(ids)
 memberEntityType := "#microsoft.graph.windowsUpdates.azureADDevice"

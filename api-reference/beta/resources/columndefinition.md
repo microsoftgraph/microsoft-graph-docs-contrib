@@ -1,5 +1,5 @@
 ---
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 description: "Represents a column in a site, a list, or a contentType."
 title: "columnDefinition resource type"
 ms.localizationpriority: medium
