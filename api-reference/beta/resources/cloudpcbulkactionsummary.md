@@ -1,6 +1,6 @@
 ---
 title: "cloudPcBulkActionSummary resource type"
-description: "Represents a run summary of bulk actions."
+description: "Represents a run summary of the bulk actions."
 author: "Guoan-Tang"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a run summary of bulk actions.
+Represents a run summary of the bulk actions.
 
 ## Properties
 |Property|Type|Description|

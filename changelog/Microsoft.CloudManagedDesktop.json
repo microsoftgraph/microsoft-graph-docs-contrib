@@ -241,7 +241,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "cloudPcBulkAction",
                     "ChangeType": "Addition",
-                    "Description": "Added the [cloudPcBulkAction](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkAction?view=graph-rest-beta) resource",
+                    "Description": "Added the [cloudPcBulkAction](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkAction?view=graph-rest-beta) resource and its methods.",
                     "Target": "cloudPcBulkAction"
                 },
                 {
