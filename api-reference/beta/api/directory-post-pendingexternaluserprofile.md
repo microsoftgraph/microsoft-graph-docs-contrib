@@ -26,10 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/directory-post-pendingexternaluserprofiles-permissions.md)]
 
-The work or school account needs to belong to one of the following roles:
-
-* Global administrator
-* Teams service administrator
+[!INCLUDE [rbac-externaluserprofiles-apis-write](../includes/rbac-for-apis/rbac-externaluserprofiles-apis-write.md)]
 
 ## HTTP request
 

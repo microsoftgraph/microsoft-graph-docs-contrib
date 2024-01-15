@@ -49,34 +49,36 @@ None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource
-
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.externalUserProfile",
+  "baseType": "microsoft.graph.externalProfile",
   "openType": true
-}-->
-
-```json
+}
+-->
+``` json
 {
-  "id": "string (identifier)",
-  "address": "microsoft.graph.physicalOfficeAddress",
-  "createdBy": "string",
-  "createdDateTime": "dateTimeOffset",
-  "companyName": "string",
-  "deletedDateTime": "dateTimeOffset",
-  "department": "string",
-  "displayName": "string",
-  "epoch": "int",
-  "isDiscoverable": "boolean",
-  "isEnabled": "boolean",
-  "jobTitle": "string",
-  "phoneNumber": "string",
-  "supervisorId": "string"
+  "@odata.type": "#microsoft.graph.externalUserProfile",
+  "id": "String (identifier)",
+  "deletedDateTime": "String (timestamp)",
+  "createdDateTime": "String (timestamp)",
+  "createdBy": "String",
+  "companyName": "String",
+  "displayName": "String",
+  "jobTitle": "String",
+  "isDiscoverable": "Boolean",
+  "isEnabled": "Boolean",
+  "department": "String",
+  "phoneNumber": "String",
+  "address": {
+    "@odata.type": "microsoft.graph.physicalOfficeAddress"
+  },
+  "supervisorId": "String",
+  "epoch": "Integer",
+  "puid": "String",
+  "remoteTenantId": "String"
 }
 ```
 

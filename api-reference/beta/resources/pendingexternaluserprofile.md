@@ -50,46 +50,33 @@ None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource
-
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.pendingExternalUserProfile",
+  "baseType": "microsoft.graph.externalProfile",
   "openType": true
-}-->
-
-```json
-{
-  "id": "string (identifier)",
-  "address": "microsoft.graph.physicalOfficeAddress",
-  "createdBy": "string",
-  "createdDateTime": "dateTimeOffset",
-  "companyName": "string",
-  "deletedDateTime": "dateTimeOffset",
-  "department": "string",
-  "displayName": "string",
-  "epoch": "int",
-  "isDiscoverable": "boolean",
-  "isEnabled": "boolean",
-  "jobTitle": "string",
-  "phoneNumber": "string",
-  "supervisorId": "string"
-}
-```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "pendingExternalUserProfile resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": []
 }
 -->
+``` json
+{
+  "@odata.type": "#microsoft.graph.pendingExternalUserProfile",
+  "id": "String (identifier)",
+  "deletedDateTime": "String (timestamp)",
+  "createdDateTime": "String (timestamp)",
+  "createdBy": "String",
+  "companyName": "String",
+  "displayName": "String",
+  "jobTitle": "String",
+  "isDiscoverable": "Boolean",
+  "isEnabled": "Boolean",
+  "department": "String",
+  "phoneNumber": "String",
+  "address": {
+    "@odata.type": "microsoft.graph.physicalOfficeAddress"
+  },
+  "supervisorId": "String",
+  "epoch": "Integer"
+}
+```
