@@ -12,12 +12,17 @@ using Microsoft.Graph.Beta.Models;
 
 var requestBody = new SendVirtualAppointmentReminderSmsPostRequestBody
 {
-	PhoneNumbers = new List<string>
-	{
-		"+13129224122",
-		"+1242421412",
-	},
 	RemindBeforeTimeInMinutesType = RemindBeforeTimeInMinutesType.Mins15,
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"phoneNumbers" , new List<string>
+			{
+				"+13129224122",
+				"+1242421412",
+			}
+		},
+	},
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

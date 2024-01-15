@@ -6837,7 +6837,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration",
           "ChangeType": "Change",
-          "Description": "Deprecated the [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-beta) resource and associated methods. Please use the new [microsoftAuthenticatorAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethodconfiguration?view=graph-rest-beta) resource",
+          "Description": "Deprecated the **passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration** resource and associated methods. Please use the new [microsoftAuthenticatorAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethodconfiguration?view=graph-rest-beta) resource",
           "Target": "passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration"
         },
         {
@@ -7481,7 +7481,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-beta) entity for managing users\u0027 Microsoft Authenticator Passwordless Phone Sign-in authentication method policy.",
+          "Description": "Added the **passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration** entity for managing users\u0027 Microsoft Authenticator Passwordless Phone Sign-in authentication method policy.",
           "Target": "passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration"
         },
         {
