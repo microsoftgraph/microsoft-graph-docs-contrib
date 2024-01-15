@@ -1,6 +1,6 @@
 ---
 title: "recommendedHuntingQuery resource type"
-description: "Hunting kql query related to the incdient"
+description: "Hunting kql query related to the incident"
 ms.date: 01/29/2023
 author: "AviadHasidof"
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Hunting kql query related to the incdient
+Hunting kql query related to the incident
 
 ## Properties
 |Property|Type|Description|
@@ -25,7 +25,7 @@ Hunting kql query related to the incdient
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following template is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.recommendedHuntingQuery"

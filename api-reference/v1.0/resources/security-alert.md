@@ -68,7 +68,7 @@ When detecting a threat, a security provider creates an alert in the system. Mic
 | falsePositive                      | The alert is a false positive and didn't detect malicious activity.                                                                 |
 | truePositive                       | The alert is true positive and detected malicious activity.                                                                         |
 | informationalExpectedActivity      | The alert is benign positive and detected potentially malicious activity by a trusted/internal user, for example, security testing. |
-| unknownFutureValue                 | Evolvable enumeration sentinel value. Do not use.                                                                                   |
+| unknownFutureValue                 | Evolvable enumeration sentinel value. Don't  use.                                                                                   |
 
 ### alertDetermination values 
 
@@ -86,10 +86,10 @@ When detecting a threat, a security provider creates an alert in the system. Mic
 | maliciousUserActivity      | A true positive alert that detected that the logged-on user performs malicious activities.                                   |
 | notMalicious               | A false alert, no suspicious activity.                                                                                       |
 | notEnoughDataToValidate    | A false alert, without enough information to prove otherwise.                                                                |
-| confirmedActivity          | The alert caught a true suspicious activity that is considered OK because it is a known user activity.                       |
-| lineOfBusinessApplication  | The alert caught a true suspicious activity that is considered OK because it is a known and confirmed internal application.  |
+| confirmedActivity          | The alert caught a true suspicious activity that is considered OK because it's a known user activity.                       |
+| lineOfBusinessApplication  | The alert caught a true suspicious activity that is considered OK because it's a known and confirmed internal application.  |
 | other                      | Other determination.                                                                                                         |
-| unknownFutureValue         | Evolvable enumeration sentinel value. Do not use.                                                                            |
+| unknownFutureValue         | Evolvable enumeration sentinel value. Don't  use.                                                                            |
 
 ### alertSeverity values 
 
@@ -98,9 +98,9 @@ When detecting a threat, a security provider creates an alert in the system. Mic
 | unknown		     | Unknown severity.       |
 | informational		 | Alerts that may not be actionable or considered harmful to the network but can drive organizational security awareness on potential security issues.     |
 | low                | Alerts on threats associated with prevalent malware. For example, hack-tools, non-malware hack tools, such as running exploration commands and clearing logs, that often don't indicate an advanced threat that targets the organization. It can also come from an isolated security tool that is tested by a user in your organization.  |
-| medium             | Alerts generated from detections and response post-breach behaviors that might be a part of an advanced persistent threat (APT). This includes observed behaviors typical of attack stages, anomalous registry change, execution of suspicious files, and so forth. Although some might be due to internal security testing, they are valid detections and require investigation as they may be a part of an advanced attack. |
+| medium             | Alerts generated from detections and response post-breach behaviors that might be a part of an advanced persistent threat (APT). This includes observed behaviors typical of attack stages, anomalous registry change, execution of suspicious files, and so forth. Although some might be due to internal security testing, they're valid detections and require investigation as they may be a part of an advanced attack. |
 | high               | Alerts commonly seen associated with advanced persistent threats (APT). These alerts indicate a high risk because of the severity of damage they can inflict on assets. Some examples are: credential theft tools activities, ransomware activities not associated with any group, tampering with security sensors, or any malicious activities indicative of a human adversary. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't  use. |
 
 
 ### alertStatus values 
@@ -111,7 +111,7 @@ When detecting a threat, a security provider creates an alert in the system. Mic
 | new                 | New alert.                                            |
 | inProgress          | The alert is in mitigation progress.                  |
 | resolved            | The alert is in resolved state.                       |
-| unknownFutureValue  | Evolvable enumeration sentinel value. Do not use.     |
+| unknownFutureValue  | Evolvable enumeration sentinel value. Don't  use.     |
 
 
 ### serviceSource values 
@@ -126,7 +126,7 @@ When detecting a threat, a security provider creates an alert in the system. Mic
 | microsoft365Defender         | Microsoft 365 Defender.                        |
 | microsoftAppGovernance       | Microsoft app governance.                      |
 | microsoftDataLossPrevention  | Microsoft Purview Data Loss Prevention.        |
-| unknownFutureValue           | Evolvable enumeration sentinel value. Do not use.|
+| unknownFutureValue           | Evolvable enumeration sentinel value. Don't  use.|
 
 
 ### detectionSource values 
@@ -150,7 +150,7 @@ When detecting a threat, a security provider creates an alert in the system. Mic
 | microsoftDataLossPrevention    | Microsoft Purview Data Loss Prevention.                      |
 | appGovernancePolicy            | App governance policy.                                       |
 | appGovernanceDetection         | App governance detection.                                    |
-| unknownFutureValue             | Evolvable enumeration sentinel value. Do not use.            |
+| unknownFutureValue             | Evolvable enumeration sentinel value. Don't  use.            |
 
 
 ## Relationships
