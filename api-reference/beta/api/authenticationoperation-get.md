@@ -23,7 +23,7 @@ Retrieve the properties and relationships of an [operation](../resources/operati
 
 `Succeeded` and `Failed` are terminal states.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
