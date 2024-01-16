@@ -58,7 +58,7 @@ You can specify the following properties when creating a **auditLogQuery**.
 |keywordFilter|String|Free text field to search non-indexed properties of the audit log. Optional.|
 |serviceFilter|String|The Office 365 service where the activity occurred. Optional.|
 |operationFilters|String collection|The name of the user or admin activity. For a description of the most common operations/activities, see [Search the audit log in the Office 365 Protection Center](https://go.microsoft.com/fwlink/p/?LinkId=708432). Optional.|
-|userPrincipalNameFilters|String collection|The UPN (User Principal Name) of the user who performed the action (specified in the Operation property) that resulted in the record being logged; for example, _my_name@my_domain_name_. Optional.|
+|userPrincipalNameFilters|String collection|The UPN (user principal name) of the user who performed the action (specified in the operation property) that resulted in the record being logged; for example, _my_name@my_domain_name_. Optional.|
 |ipAddressFilters|String collection|The IP address of the device that was used when the activity was logged. Optional.|
 |objectIdFilters|String collection|For SharePoint and OneDrive for Business activity, the full path name of the file or folder accessed by the user. For Exchange admin audit logging, the name of the object that was modified by the cmdlet. Optional.|
 |administrativeUnitIdFilters|String collection|Administrative Units tagged to an audit log record. Optional.|
