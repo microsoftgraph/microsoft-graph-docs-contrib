@@ -21,7 +21,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List auditLogQueries](../api/security-auditcoreroot-list-auditlogqueries.md)|[microsoft.graph.security.auditLogQuery](../resources/security-auditlogquery.md) collection|Get a list of the [microsoft.graph.security.auditLogQuery](../resources/security-auditlogquery.md) objects and their properties.|
+|[List auditLogQueries](../api/security-auditcoreroot-list-auditlogqueries.md)|[auditLogQuery](../resources/security-auditlogquery.md) collection|Get a list of the [auditLogQuery](../resources/security-auditlogquery.md) objects and their properties.|
 |[Create auditLogQuery](../api/security-auditcoreroot-post-auditlogqueries.md)|[microsoft.graph.security.auditLogQuery](../resources/security-auditlogquery.md)|Create a new [microsoft.graph.security.auditLogQuery](../resources/security-auditlogquery.md) object.|
 |[Get auditLogQuery](../api/security-auditlogquery-get.md)|[microsoft.graph.security.auditLogQuery](../resources/security-auditlogquery.md)|Read the properties and relationships of a [microsoft.graph.security.auditLogQuery](../resources/security-auditlogquery.md) object.|
 |[List records](../api/security-auditlogquery-list-records.md)|[microsoft.graph.security.auditLogRecord](../resources/security-auditlogrecord.md) collection|Get the auditLogRecord resources from the records navigation property.|
