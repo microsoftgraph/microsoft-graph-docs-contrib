@@ -40,7 +40,7 @@ DELETE /policies/federatedTokenValidationPolicy/$ref
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -49,7 +49,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+This is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "delete_federatedtokenvalidationpolicy"
@@ -61,7 +61,7 @@ DELETE https://graph.microsoft.com/beta/policies/federatedTokenValidationPolicy
 
 
 ### Response
-The following is an example of the response
+This is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
