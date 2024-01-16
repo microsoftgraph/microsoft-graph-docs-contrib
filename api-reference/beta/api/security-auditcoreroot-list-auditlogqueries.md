@@ -1,6 +1,6 @@
 ---
 title: "List auditLogQueries"
-description: "Get a list of the microsoft.graph.security.auditLogQuery objects and their properties."
+description: "Get a list of the auditLogQuery objects and their properties."
 author: "arishojaswi"
 ms.localizationpriority: medium
 ms.prod: "auditlogquery"
