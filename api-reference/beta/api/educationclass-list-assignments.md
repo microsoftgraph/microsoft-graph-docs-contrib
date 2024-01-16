@@ -292,7 +292,7 @@ Content-length: 344
             }
         ]
     }
-    ```
+```
 
 ### Example 3: Using `$filter` to get assignments
 
