@@ -16,11 +16,12 @@ Namespace: microsoft.graph
 Represents supported platform types.
 
 ## Members
+
 |Member|Value|Description|
 |:---|:---|:---|
-|unknown|0|Unknown device platform|
-|ios|1|IOS device platform|
-|android|2|Android device platform|
-|windows|3|Windows device platform|
-|windowsMobile|4|WindowsMobile device platform|
-|macOS|5|Mac device platform|
+|unknown|0|Unknown device platform.|
+|ios|1|IOS device platform.|
+|android|2|Android device platform.|
+|windows|3|Windows device platform.|
+|windowsMobile|4|Windows Mobile device platform.|
+|macOS|5|Mac device platform.|
