@@ -1,6 +1,6 @@
 ---
 title: "List auditLogRecords"
-description: "Get a list of the microsoft.graph.security.auditLogRecord objects and their properties."
+description: "Get a list of auditLogRecord objects and their properties."
 author: "arishojaswi"
 ms.localizationpriority: medium
 ms.prod: "auditlogquery"
