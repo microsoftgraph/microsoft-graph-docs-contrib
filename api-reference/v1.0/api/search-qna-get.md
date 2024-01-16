@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a [qna](../resou
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/search/qnas/{qnaId}
+GET https://graph.microsoft.com/v1.0/search/qnas/733b26d5-af76-4eea-ac69-1a0ce8716897
 ```
 
 

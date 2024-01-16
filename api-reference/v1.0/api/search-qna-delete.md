@@ -54,7 +54,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/v1.0/search/qnas/{qnaId}
+DELETE https://graph.microsoft.com/v1.0/search/qnas/733b26d5-af76-4eea-ac69-1a0ce8716897
 ```
 
 

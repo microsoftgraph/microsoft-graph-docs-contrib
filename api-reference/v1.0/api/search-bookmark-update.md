@@ -75,7 +75,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/v1.0/search/bookmarks/{bookmarksId}
+PATCH https://graph.microsoft.com/v1.0/search/bookmarks/733b26d5-af76-4eea-ac69-1a0ce8716897
 Content-Type: application/json
 
 {

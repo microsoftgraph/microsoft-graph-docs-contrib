@@ -70,7 +70,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/v1.0/search/acronyms/{acronymsId}
+PATCH https://graph.microsoft.com/v1.0/search/acronyms/733b26d5-af76-4eea-ac69-1a0ce8716897
 Content-Type: application/json
 
 {

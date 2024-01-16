@@ -59,7 +59,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/v1.0/search/acronyms/{acronymsId}
+DELETE https://graph.microsoft.com/v1.0/search/acronyms/733b26d5-af76-4eea-ac69-1a0ce8716897
 ```
 
 ### Response

@@ -63,7 +63,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/search/acronyms/{acronymsId}
+GET https://graph.microsoft.com/v1.0/search/acronyms/733b26d5-af76-4eea-ac69-1a0ce8716897
 ```
 
 ### Response
