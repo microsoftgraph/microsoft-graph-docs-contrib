@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [microsoft.graph.security.auditLogQuery](../resources/security-auditlogquery.md) objects and their properties.
+Get a list of [auditLogQuery](../resources/security-auditlogquery.md) objects and their properties.
 
 ## Permissions
 Through the Audit Search Graph API, auditing data can be accessed using the following permissions which are classified at a Microsoft 365 service level. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
