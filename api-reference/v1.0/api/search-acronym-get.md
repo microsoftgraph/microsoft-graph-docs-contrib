@@ -8,13 +8,13 @@ doc_type: apiPageType
 ---
 
 # Get acronym
+
 Namespace: microsoft.graph.search
 
 Read the properties and relationships of an [acronym](../resources/search-acronym.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -34,14 +34,17 @@ GET /search/acronyms/{acronymsId}
 ```
 
 ## Optional query parameters
-This method supports the `select`, `expand`, `filter`, `orderBy`, `maxTop`, and `count` [OData Query Parameters](/graph/query-parameters) to help customize the response.
+
+This method supports the `select`, `expand`, `filter`, `orderBy`, `maxTop`, and `count` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Don't supply a request body for this method.
 
 ## Response
@@ -51,6 +54,9 @@ If successful, this method returns a `200 OK` response code and an [acronym](../
 ## Examples
 
 ### Request
+
+The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "get_acronym"
@@ -60,8 +66,10 @@ If successful, this method returns a `200 OK` response code and an [acronym](../
 GET https://graph.microsoft.com/v1.0/search/acronyms/{acronymsId}
 ```
 
-
 ### Response
+
+The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -83,10 +91,9 @@ Content-Type: application/json
   "lastModifiedDateTime": "2016-03-21T20:01:37Z",
   "lastModifiedBy": {
     "user": {
-        "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-        "displayName": "Amalie Larsen"
+      "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+      "displayName": "Amalie Larsen"
     }
   }
 }
 ```
-
