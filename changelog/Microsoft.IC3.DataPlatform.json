@@ -706,55 +706,81 @@
             "WorkloadArea": "Teamwork and communications",
             "SubArea": "Calls and online meetings"
           },
-          {
-            "ChangeList": [
-                {
-                    "Id": "d8a9644c-28b9-4125-83bc-c1c0138c1744",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "cpuCoresCount",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **cpuCoresCount** property to the [participantEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participantEndpoint?view=graph-rest-1.0) resource.",
-                    "Target": "participantEndpoint"
-                },
-                {
-                    "Id": "d8a9644c-28b9-4125-83bc-c1c0138c1744",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "cpuName",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **cpuName** property to the [participantEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participantEndpoint?view=graph-rest-1.0) resource.",
-                    "Target": "participantEndpoint"
-                },
-                {
-                    "Id": "d8a9644c-28b9-4125-83bc-c1c0138c1744",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "cpuProcessorSpeedInMhz",
-                    "ChangeType": "Addition",
-                    "Description": "Added the `cpuProcessorSpeedInMhz` property to the [participantEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participantEndpoint?view=graph-rest-1.0) resource.",
-                    "Target": "participantEndpoint"
-                },
-                {
-                    "Id": "d8a9644c-28b9-4125-83bc-c1c0138c1744",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "name",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **name** property to the [participantEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participantEndpoint?view=graph-rest-1.0) resource.",
-                    "Target": "participantEndpoint"
-                },
-                {
-                    "Id": "d8a9644c-28b9-4125-83bc-c1c0138c1744",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "isTest",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **isTest** property to the [session](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-session?view=graph-rest-1.0) resource.",
-                    "Target": "session"
-                }
-            ],
-            "Id": "d8a9644c-28b9-4125-83bc-c1c0138c1744",
-            "Cloud": "Prod",
-            "Version": "v1.0",
-            "CreatedDateTime": "2023-06-13T17:09:21.7467939Z",
-            "WorkloadArea": "Teamwork and communications",
-            "SubArea": "Calls and online meetings"
+        {
+          "ChangeList": [
+            {
+              "Id": "d8a9644c-28b9-4125-83bc-c1c0138c1744",
+              "ApiChange": "Property",
+              "ChangedApiName": "cpuCoresCount",
+              "ChangeType": "Addition",
+              "Description": "Added the **cpuCoresCount** property to the [participantEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participantEndpoint?view=graph-rest-1.0) resource.",
+              "Target": "participantEndpoint"
+            },
+            {
+              "Id": "d8a9644c-28b9-4125-83bc-c1c0138c1744",
+              "ApiChange": "Property",
+              "ChangedApiName": "cpuName",
+              "ChangeType": "Addition",
+              "Description": "Added the **cpuName** property to the [participantEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participantEndpoint?view=graph-rest-1.0) resource.",
+              "Target": "participantEndpoint"
+            },
+            {
+              "Id": "d8a9644c-28b9-4125-83bc-c1c0138c1744",
+              "ApiChange": "Property",
+              "ChangedApiName": "cpuProcessorSpeedInMhz",
+              "ChangeType": "Addition",
+              "Description": "Added the `cpuProcessorSpeedInMhz` property to the [participantEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participantEndpoint?view=graph-rest-1.0) resource.",
+              "Target": "participantEndpoint"
+            },
+            {
+              "Id": "d8a9644c-28b9-4125-83bc-c1c0138c1744",
+              "ApiChange": "Property",
+              "ChangedApiName": "name",
+              "ChangeType": "Addition",
+              "Description": "Added the **name** property to the [participantEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participantEndpoint?view=graph-rest-1.0) resource.",
+              "Target": "participantEndpoint"
+            },
+            {
+              "Id": "d8a9644c-28b9-4125-83bc-c1c0138c1744",
+              "ApiChange": "Property",
+              "ChangedApiName": "isTest",
+              "ChangeType": "Addition",
+              "Description": "Added the **isTest** property to the [session](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-session?view=graph-rest-1.0) resource.",
+              "Target": "session"
+            }
+          ],
+          "Id": "d8a9644c-28b9-4125-83bc-c1c0138c1744",
+          "Cloud": "Prod",
+          "Version": "v1.0",
+          "CreatedDateTime": "2023-06-13T17:09:21.7467939Z",
+          "WorkloadArea": "Teamwork and communications",
+          "SubArea": "Calls and online meetings"
+        },
+        {
+          "ChangeList": [
+            {
+              "Id": "edef20ed-4fde-4e6e-88b4-5b726bcf3750",
+              "ApiChange": "Enumeration",
+              "ChangedApiName": "endpointType",
+              "ChangeType": "Addition",
+              "Description": "Added the **endpointType** enumeration type.",
+              "Target": "endpointType"
+            },
+            {
+              "Id": "edef20ed-4fde-4e6e-88b4-5b726bcf3750",
+              "ApiChange": "Resource",
+              "ChangedApiName": "communicationsIdentitySet",
+              "ChangeType": "Addition",
+              "Description": "Added the [communicationsIdentitySet](https://learn.microsoft.com/en-us/graph/api/resources/communicationsIdentitySet?view=graph-rest-beta) resource.",
+              "Target": "communicationsIdentitySet"
+            }
+          ],
+          "Id": "edef20ed-4fde-4e6e-88b4-5b726bcf3750",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2024-01-16T17:34:10.7097114Z",
+          "WorkloadArea": "Teamwork and communications",
+          "SubArea": "Calls and online meetings"
         }
     ]
 }
