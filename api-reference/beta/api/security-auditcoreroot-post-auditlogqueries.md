@@ -1,6 +1,6 @@
 ---
 title: "Create auditLogQuery"
-description: "Create a new microsoft.graph.security.auditLogQuery object."
+description: "Create a new auditLogQuery object."
 author: "arishojaswi"
 ms.localizationpriority: medium
 ms.prod: "auditlogquery"
