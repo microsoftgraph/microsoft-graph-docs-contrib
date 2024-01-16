@@ -8,13 +8,13 @@ doc_type: apiPageType
 ---
 
 # Update bookmark
+
 Namespace: microsoft.graph.search
 
 Update the properties of a [bookmark](../resources/search-bookmark.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -34,6 +34,7 @@ PATCH /search/bookmarks/{bookmarksId}
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
@@ -43,7 +44,7 @@ PATCH /search/bookmarks/{bookmarksId}
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
->**Note:** Updates to collection properties will update the entire collection. Any updates to a collection, such as keywords or categories, will replace the collection entirely.
+>**Note:** Updates to collection properties update the entire collection. Any updates to a collection, such as keywords or categories, replace the collection entirely.
 
 |Property|Type|Description|
 |:---|:---|:---|
