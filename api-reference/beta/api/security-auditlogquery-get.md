@@ -1,6 +1,6 @@
 ---
 title: "Get auditLogQuery"
-description: "Read the properties and relationships of a microsoft.graph.security.auditLogQuery object."
+description: "Read the properties and relationships of an auditLogQuery object."
 author: "arishojaswi"
 ms.localizationpriority: medium
 ms.prod: "auditlogquery"
