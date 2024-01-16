@@ -1,22 +1,24 @@
 ---
-title: "Delete acronym"
-description: "Deletes an acronym object."
+title: "delete acronym"
+description: "Delete an acronym object."
 author: "jakeost-msft"
 ms.localizationpriority: medium
 ms.prod: "search"
 doc_type: apiPageType
 ---
 
-# Delete acronym
+# delete acronym
+
 Namespace: microsoft.graph.search
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes an [acronym](../resources/search-acronym.md) object.
+Delete an [acronym](../resources/search-acronym.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
+
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "search_acronym_delete" } -->
@@ -33,11 +35,13 @@ DELETE /search/acronyms/{acronymsId}
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Don't supply a request body for this method.
 
 ## Response
@@ -47,6 +51,8 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -93,6 +99,9 @@ DELETE https://graph.microsoft.com/beta/search/acronyms/{acronymsId}
 ---
 
 ### Response
+
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -101,4 +110,3 @@ DELETE https://graph.microsoft.com/beta/search/acronyms/{acronymsId}
 ``` http
 HTTP/1.1 204 No Content
 ```
-
