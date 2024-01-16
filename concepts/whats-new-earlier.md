@@ -1,11 +1,13 @@
 ---
-title: "Highlights of earlier releases in Microsoft Graph"
-description: "What was new earlier in Microsoft Graph"
-author: "angelgolfer-ms"
-ms.localizationpriority: high
+title: "Microsoft Graph what's new history"
+description: "Find information about previous additions and updates to Microsoft Graph APIs, documentation, SDKs, and other resources."
+author: "lauragra"
+ms.localizationpriority: medium
 ---
 
-# Highlights of earlier releases
+# Microsoft Graph what's new history
+
+Find information about previous additions and updates to Microsoft Graph APIs, documentation, SDKs, and other resources.
 
 ## November 2023: New and generally available
 
