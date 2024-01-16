@@ -23,22 +23,6 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/policyroot-list-federatedtokenvalidationpolicy-permissions.md)]
-# List federatedTokenValidationPolicies
-Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Get a list of the [federatedTokenValidationPolicy](../resources/federatedtokenvalidationpolicy.md) objects and their properties.
-
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
-<!-- {
-  "blockType": "permissions",
-  "name": "policyroot-list-federatedtokenvalidationpolicy-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/policyroot-list-federatedtokenvalidationpolicy-permissions.md)]
 
 ## HTTP request
 
