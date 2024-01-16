@@ -70,18 +70,50 @@
             "ChangeList": [
               {
                 "Id": "d0e8ec33-2937-4e30-9d3c-f0e73089bfdf",
-                "ApiChange": "Enumeration",
+                "ApiChange": "Enum type",
                 "ChangedApiName": "answerState",
                 "ChangeType": "Addition",
                 "Description": "Added the **answerState** enumeration type.",
                 "Target": "answerState"
-              },              
+              },
               {
                 "Id": "d0e8ec33-2937-4e30-9d3c-f0e73089bfdf",
-                "ApiChange": "Resource",
-                "ChangedApiName": "searchEntity",
+                "ApiChange": "Enum type",
+                "ChangedApiName": "devicePlatformType",
                 "ChangeType": "Addition",
-                "Description": "Added the [searchEntity](https://learn.microsoft.com/en-us/graph/api/resources/searchEntity?view=graph-rest-1.0) resource",
+                "Description": "Added the **devicePlatformType** enumeration type.",
+                "Target": "devicePlatformType"
+              },  
+              {
+                "Id": "d0e8ec33-2937-4e30-9d3c-f0e73089bfdf",
+                "ApiChange": "Enum type",
+                "ChangedApiName": "platform",
+                "ChangeType": "Addition",
+                "Description": "Added the **platform** enumeration type.",
+                "Target": "platform"
+              }, 
+              {
+                "Id": "d0e8ec33-2937-4e30-9d3c-f0e73089bfdf",
+                "ApiChange": "Relationship",
+                "ChangedApiName": "acronyms",
+                "ChangeType": "Addition",
+                "Description": "Added the **acronyms** relationship to the [searchEntity](https://learn.microsoft.com/en-us/graph/api/resources/searchEntity?view=graph-rest-1.0) resource",
+                "Target": "searchEntity"
+              },
+              {
+                "Id": "d0e8ec33-2937-4e30-9d3c-f0e73089bfdf",
+                "ApiChange": "Relationship",
+                "ChangedApiName": "bookmarks",
+                "ChangeType": "Addition",
+                "Description": "Added the **bookmarks** relationship to the [searchEntity](https://learn.microsoft.com/en-us/graph/api/resources/searchEntity?view=graph-rest-1.0) resource",
+                "Target": "searchEntity"
+              },
+              {
+                "Id": "d0e8ec33-2937-4e30-9d3c-f0e73089bfdf",
+                "ApiChange": "Relationship",
+                "ChangedApiName": "qnas",
+                "ChangeType": "Addition",
+                "Description": "Added the **qnas** relationship to the [searchEntity](https://learn.microsoft.com/en-us/graph/api/resources/searchEntity?view=graph-rest-1.0) resource",
                 "Target": "searchEntity"
               },
               {
@@ -105,7 +137,7 @@
                 "ApiChange": "Resource",
                 "ChangedApiName": "acronym",
                 "ChangeType": "Addition",
-                "Description": "Added the [acronym](https://learn.microsoft.com/en-us/graph/api/resources/search-acronym?view=graph-rest-1.0) resource",
+                "Description": "Added the [acronym](https://learn.microsoft.com/en-us/graph/api/resources/search-acronym?view=graph-rest-1.0) resource and supported methods.",
                 "Target": "acronym"
               },
               {
@@ -113,7 +145,7 @@
                 "ApiChange": "Resource",
                 "ChangedApiName": "bookmark",
                 "ChangeType": "Addition",
-                "Description": "Added the [bookmark](https://learn.microsoft.com/en-us/graph/api/resources/search-bookmark?view=graph-rest-1.0) resource",
+                "Description": "Added the [bookmark](https://learn.microsoft.com/en-us/graph/api/resources/search-bookmark?view=graph-rest-1.0) resource and supported methods.",
                 "Target": "bookmark"
               },
               {
@@ -121,7 +153,7 @@
                 "ApiChange": "Resource",
                 "ChangedApiName": "qna",
                 "ChangeType": "Addition",
-                "Description": "Added the [qna](https://learn.microsoft.com/en-us/graph/api/resources/search-qna?view=graph-rest-1.0) resource",
+                "Description": "Added the [qna](https://learn.microsoft.com/en-us/graph/api/resources/search-qna?view=graph-rest-1.0) resource and supported methods.",
                 "Target": "qna"
               },
               {
@@ -129,24 +161,16 @@
                 "ApiChange": "Resource",
                 "ChangedApiName": "searchAnswer",
                 "ChangeType": "Addition",
-                "Description": "Added the [searchAnswer](https://learn.microsoft.com/en-us/graph/api/resources/search-searchAnswer?view=graph-rest-1.0) resource",
+                "Description": "Added the [searchAnswer](https://learn.microsoft.com/en-us/graph/api/resources/search-searchAnswer?view=graph-rest-1.0) resource type.",
                 "Target": "searchAnswer"
-              },
-              {
-                "Id": "d0e8ec33-2937-4e30-9d3c-f0e73089bfdf",
-                "ApiChange": "Enumeration",
-                "ChangedApiName": "devicePlatformType",
-                "ChangeType": "Addition",
-                "Description": "Added the **devicePlatformType** enumeration type.",
-                "Target": "devicePlatformType"
               }
             ],
             "Id": "d0e8ec33-2937-4e30-9d3c-f0e73089bfdf",
-            "Cloud": "Review",
+            "Cloud": "Prod",
             "Version": "v1.0",
-            "CreatedDateTime": "2024-01-10T02:21:22.6993295Z",
-            "WorkloadArea": "Microsoft.Search.Admin",
-            "SubArea": ""
-          }
+            "CreatedDateTime": "2024-01-16T02:21:22.6993295Z",
+            "WorkloadArea": "Search",
+            "SubArea": "Answer"
+        }
     ]
 }
