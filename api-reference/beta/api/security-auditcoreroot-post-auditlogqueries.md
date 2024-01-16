@@ -45,7 +45,7 @@ POST /security/auditCore/auditLogQueries
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [microsoft.graph.security.auditLogQuery](../resources/security-auditlogquery.md) object.
+In the request body, supply a JSON representation of the [auditLogQuery](../resources/security-auditlogquery.md) object.
 
 You can specify the following properties when creating a **auditLogQuery**.
 
