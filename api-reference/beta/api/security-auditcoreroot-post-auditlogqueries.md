@@ -12,7 +12,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [microsoft.graph.security.auditLogQuery](../resources/security-auditlogquery.md) object.
+Create a new [auditLogQuery](../resources/security-auditlogquery.md) object.
 
 ## Permissions
 Through the Audit Search Graph API, auditing data can be accessed using the following permissions which are classified at a Microsoft 365 service level. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
