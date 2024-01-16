@@ -3184,6 +3184,9 @@ Possible values for user account types (group membership), per Windows definitio
 | androidWorkProfile |
 | unknown            |
 | androidAOSP        |
+| androidMobileApplicationManagement|
+| iOSMobileApplicationManagement|
+| unknownFutureValue|
 
 ### platform values
 
