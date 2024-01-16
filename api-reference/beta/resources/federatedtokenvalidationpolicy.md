@@ -1,6 +1,6 @@
 ---
 title: "federatedTokenValidationPolicy resource type"
-description: "Represents a policy to control enabling/disabling federation token auth validation - matching on-premises federated account and mapped Microsoft Entra ID account's root domains."
+description: "Represents a policy to control enabling or disabling validation of federation authentication tokens, thereby matching an on-premises federated account and a mapped Microsoft Entra ID account's root domain."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -14,7 +14,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a policy to control enabling or disabling validation of federation authentication tokens, thereby matching an on-premises federated account and a mapped Microsoft Entra ID account's root domain. When enabled, Microsoft Entra ID rejects an authentication request if the on-premises federated account and the mapped Microsoft Entra ID account's root domain don't match.
-Represents a policy to control enabling/disabling federation token auth validation - matching on-premises federated account and mapped Microsoft Entra ID account's root domains. When enabled Microsoft Entra ID rejects auth request if on-premises federated account and mapped Microsoft Entra ID account's root domains don't match.
 
 Inherits from [directoryObject](../resources/directoryobject.md).
 
@@ -27,11 +26,14 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 |[Get federatedTokenValidationPolicy](../api/federatedtokenvalidationpolicy-get.md)|[federatedTokenValidationPolicy](../resources/federatedtokenvalidationpolicy.md)|Read the properties and relationships of a [federatedTokenValidationPolicy](../resources/federatedtokenvalidationpolicy.md) object.|
 |[Update federatedTokenValidationPolicy](../api/federatedtokenvalidationpolicy-update.md)|[federatedTokenValidationPolicy](../resources/federatedtokenvalidationpolicy.md)|Update the properties of a [federatedTokenValidationPolicy](../resources/federatedtokenvalidationpolicy.md) object.|
 |[Delete federatedTokenValidationPolicy](../api/policyroot-delete-federatedtokenvalidationpolicy.md)|None|Delete a [federatedTokenValidationPolicy](../resources/federatedtokenvalidationpolicy.md) object.|
+
+<!-- comment
 |[checkMemberGroups](../api/federatedtokenvalidationpolicy-checkmembergroups.md)|String collection|Check for membership in a specified list of groups, and return from that list those groups of which the specified user, group, service principal, organizational contact, or directory object is a member. The check is transitive.|
 |[checkMemberObjects](../api/federatedtokenvalidationpolicy-checkmemberobjects.md)|String collection|Check for membership in a list of group, administrative units, or directory roles for the specified user, group, device, organizational contact, or directory object. This method is transitive.|
 |[getMemberGroups](../api/federatedtokenvalidationpolicy-getmembergroups.md)|String collection|Return all groups that the user, group, service principal, organizational contact, device, or directory object is a member of. The check is transitive.|
 |[getMemberObjects](../api/federatedtokenvalidationpolicy-getmemberobjects.md)|String collection|Return all groups, administrative units, and directory roles that the user, group, device, organizational contact, or directory object is a member of. The check is transitive.|
 |[restore](../api/federatedtokenvalidationpolicy-restore.md)|[directoryObject](../resources/directoryobject.md)|**TODO: Add Description**|
+-->
 
 ## Properties
 |Property|Type|Description|
