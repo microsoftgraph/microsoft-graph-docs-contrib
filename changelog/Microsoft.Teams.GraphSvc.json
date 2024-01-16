@@ -1691,10 +1691,10 @@
         {
           "Id": "fc817b49-2a13-4e90-b00d-ae172d6e3594",
           "ApiChange": "Resource",
-          "ChangedApiName": "teamsAppDashboardCardIconUrl",
+          "ChangedApiName": "teamsAppDashboardCardIcon",
           "ChangeType": "Addition",
-          "Description": "Added the [teamsAppDashboardCardIconUrl](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-beta) resource type.",
-          "Target": "teamsAppDashboardCardIconUrl"
+          "Description": "Added the [teamsAppDashboardCardIcon](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-beta) resource type.",
+          "Target": "teamsAppDashboardCardIcon"
         },
         {
           "Id": "fc817b49-2a13-4e90-b00d-ae172d6e3594",
