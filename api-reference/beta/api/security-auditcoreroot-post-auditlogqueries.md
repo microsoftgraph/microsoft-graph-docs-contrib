@@ -61,7 +61,7 @@ You can specify the following properties when creating a **auditLogQuery**.
 |userPrincipalNameFilters|String collection|The UPN (user principal name) of the user who performed the action (specified in the operation property) that resulted in the record being logged; for example, _my_name@my_domain_name_. Optional.|
 |ipAddressFilters|String collection|The IP address of the device that was used when the activity was logged. Optional.|
 |objectIdFilters|String collection|For SharePoint and OneDrive for Business activity, the full path name of the file or folder accessed by the user. For Exchange admin audit logging, the name of the object that was modified by the cmdlet. Optional.|
-|administrativeUnitIdFilters|String collection|Administrative Units tagged to an audit log record. Optional.|
+|administrativeUnitIdFilters|String collection|Administrative units tagged to an audit log record. Optional.|
 |status|microsoft.graph.security.auditLogQueryStatus|Current status of the query. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `cancelled`, `unknownFutureValue`. Optional.|
 
 
