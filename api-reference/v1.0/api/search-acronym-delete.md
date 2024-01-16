@@ -1,6 +1,6 @@
 ---
 title: "Delete acronym"
-description: "Deletes an acronym object."
+description: "Delete an acronym object."
 author: "jakeost-msft"
 ms.localizationpriority: medium
 ms.prod: "search"
@@ -8,13 +8,13 @@ doc_type: apiPageType
 ---
 
 # Delete acronym
+
 Namespace: microsoft.graph.search
 
-Deletes an [acronym](../resources/search-acronym.md) object.
-
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+Delete an [acronym](../resources/search-acronym.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -34,11 +34,13 @@ DELETE /search/acronyms/{acronymsId}
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Don't supply a request body for this method.
 
 ## Response
@@ -48,6 +50,9 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+
+The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "delete_acronym"
@@ -57,8 +62,10 @@ If successful, this method returns a `204 No Content` response code.
 DELETE https://graph.microsoft.com/v1.0/search/acronyms/{acronymsId}
 ```
 
-
 ### Response
+
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -67,4 +74,3 @@ DELETE https://graph.microsoft.com/v1.0/search/acronyms/{acronymsId}
 ``` http
 HTTP/1.1 204 No Content
 ```
-
