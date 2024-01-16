@@ -4,7 +4,7 @@ description: Represents a page template in the templates folder
 author: Yadong1106
 ms.localizationpriority: medium
 ms.prod: sharepoint
-doc_type: resourcePageTemplateType
+doc_type: resourcePageType
 ---
 
 # page template resource type
@@ -59,7 +59,7 @@ Inherits from [baseSitePage](../resources/basesitepage.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
