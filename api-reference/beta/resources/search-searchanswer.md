@@ -15,7 +15,7 @@ Namespace: microsoft.graph.search
 
 Represents the base type for other search answers.
 
-Base type of [acronym](../resources/search-acronym.md), [bookmark](../resources/search-bookmark.md), and [QnA](../resources/search-qna.md).
+Base type of [acronym](../resources/search-acronym.md), [bookmark](../resources/search-bookmark.md), and [qna](../resources/search-qna.md).
 
 Inherits from [entity](../resources/entity.md).
 
