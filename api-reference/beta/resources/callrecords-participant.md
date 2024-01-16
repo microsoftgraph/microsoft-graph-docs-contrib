@@ -28,7 +28,7 @@ Inherits from [participantBase](callrecords-participantbase.md).
 | Property | Type                       | Description                                             |
 |:---------|:------------------------------|:--------------------------------------------------------|
 | id       | String                        | Unique identifier for the call participant. Inherited from [participantBase](callrecords-participantbase.md). |
-| identity | [identitySet](identityset.md) | The identity of the call participant. Inherited from [participantBase](callrecords-participantbase.md). |
+| identity | [communicationsIdentitySet](communicationsidentityset.md) | The identity of the call participant. Inherited from [participantBase](callrecords-participantbase.md). |
 
 ## JSON representation
 
@@ -46,7 +46,7 @@ The following JSON representation shows the resource type.
 ```json
 {
   "id": "String (identifier)",
-  "identity": {"@odata.type": "microsoft.graph.identitySet"}
+  "identity": {"@odata.type": "microsoft.graph.communicationsIdentitySet"}
 }
 ```
 
