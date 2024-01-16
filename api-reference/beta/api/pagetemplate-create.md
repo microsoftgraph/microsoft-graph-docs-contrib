@@ -5,7 +5,7 @@ ms.date: 05/07/2018
 title: Create a new page template in a site
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
-doc_type: apiPageTemplateType
+doc_type: apiPageType
 ---
 
 # Create a page template in a site
@@ -243,7 +243,7 @@ Content-type: application/json
 }
 ```
 
-**Note:** The response object is truncated for clarity. Default properties will be returned from the actual call.
+**Note:** The response object is truncated for clarity. Default properties are returned from the actual call.
 
 [list]: ../resources/list.md
 [listitem]: ../resources/listitem.md
