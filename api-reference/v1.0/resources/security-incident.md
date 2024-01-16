@@ -45,8 +45,6 @@ Because piecing the individual alerts together to gain insight into an attack ca
 |tenantId|String|The Microsoft Entra tenant in which the alert was created.|
 |systemTags|Collection(String)|The system tags accocisted with the incident|
 |description|String|A reach text string describing the incident (could be an HTML)|
-|recommendedActions|String|A reach text string that represents the actions that are reccomnded to take in order to resolve the incident (could be an HTML)|
-|recommendedHuntingQueries|Collection(microsoft.graph.security.recommendedHuntingQuery)|List of hunting kql queries related to the incdient|
 
 
 
@@ -105,12 +103,7 @@ The following is a JSON representation of the resource.
   "systemTags" : [
     "String"
   ],
-  "description" : "String",
-  "recommendedActions" : "String",
-  "recommendedHuntingQueries" : [
-  {
-    "@odata.type": "microsoft.graph.security.recommendedHuntingQuery"
-  }
+  "description" : "String"
 ]
 }
 ```

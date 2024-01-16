@@ -162,14 +162,7 @@ Content-Type: application/json
         "systemTags" : [
             "Defender Experts"
         ],
-        "description" : "Microsoft observed Raspberry Robin worm activity spreading through infected USB on multiple devices in your environment. From available intel, these infections could be a potential precursor activity to ransomware deployment. ...",
-        "recommendedActions" : "Immediate Recommendations: 1.    Block untrusted and unsigned processes that run from USB (ASR Rule) 2.    Verify if the ASR rule is turned on for the devices and evaluate whether the ASR . ...",
-        "recommendedHuntingQueries" : [
-            {
-                "@odata.type": "#microsoft.graph.security.recommendedHuntingQuery",
-                "kqlText" : "AlertInfo   | where Timestamp >= datetime(2022-10-20 06:00:52.9644915)   | where Title == 'Potential Raspberry Robin worm command'  | join AlertEvidence on AlertId   | distinct DeviceId"
-            }
-		]
+        "description" : "Microsoft observed Raspberry Robin worm activity spreading through infected USB on multiple devices in your environment. From available intel, these infections could be a potential precursor activity to ransomware deployment. ..."
     }
   ]
 }
@@ -266,13 +259,6 @@ Content-Type: application/json
             "Defender Experts"
         ],
         "description" : "Microsoft observed Raspberry Robin worm activity spreading through infected USB on multiple devices in your environment. From available intel, these infections could be a potential precursor activity to ransomware deployment. ...",
-        "recommendedActions" : "Immediate Recommendations:  1.    Block untrusted and unsigned processes that run from USB (ASR Rule) 2.    Verify if the ASR rule is turned on for the devices and evaluate whether the ASR . ...",
-        "recommendedHuntingQueries" : [
-            {
-                "@odata.type": "#microsoft.graph.security.recommendedHuntingQuery",
-                "kqlText" : "//Run this query to identify the devices having Raspberry Robin worm alerts  AlertInfo  | where Timestamp >= datetime(2022-10-20 06:00:52.9644915)  | where Title == 'Potential Raspberry Robin worm command'  | join AlertEvidence on AlertId   | distinct DeviceId"
-            }
-        ],
         "alerts": [
             {
                 "@odata.type": "#microsoft.graph.security.alert",
