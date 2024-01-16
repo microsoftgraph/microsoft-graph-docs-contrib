@@ -6,11 +6,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models.Networkaccess;
 
-var requestBody = new Microsoft.Graph.Beta.Models.Networkaccess.ConditionalAccessSettings
+var requestBody = new ConditionalAccessSettings
 {
-	SignalingStatus = Microsoft.Graph.Beta.Models.Networkaccess.Status.Disabled,
+	SignalingStatus = Status.Disabled,
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
@@ -18,6 +19,8 @@ var requestBody = new Microsoft.Graph.Beta.Models.Networkaccess.ConditionalAcces
 		},
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.NetworkAccess.Settings.ConditionalAccess.PatchAsync(requestBody);
 
 

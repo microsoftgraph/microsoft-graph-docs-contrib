@@ -1,4 +1,4 @@
-﻿{
+{
   "changelog": [
     {
       "ChangeList": [
@@ -221,7 +221,7 @@
       "CreatedDateTime": "2023-03-02T23:37:17.6340671Z",
       "WorkloadArea": "Compliance",
       "SubArea": "Subject rights request"
-    },    
+    },
     {
       "ChangeList": [
         {
@@ -415,7 +415,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getFinalAttachment",
           "ChangeType": "Addition",
-          "Description": "Added the [getFinalAttachment](https://learn.microsoft.com/en-us/graph/api/getFinalAttachment?view=graph-rest-beta) method to the [subjectRightsRequest](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
+          "Description": "Added the [getFinalAttachment](https://learn.microsoft.com/en-us/graph/api/subjectrightsrequest-getfinalattachment?view=graph-rest-beta) method to the [subjectRightsRequest](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
           "Target": "getFinalAttachment"
         },
         {
@@ -423,7 +423,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getFinalReport",
           "ChangeType": "Addition",
-          "Description": "Added the [getFinalReport](https://learn.microsoft.com/en-us/graph/api/getFinalReport?view=graph-rest-beta) method to the [subjectRightsRequest](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
+          "Description": "Added the [getFinalReport](https://learn.microsoft.com/en-us/graph/api/subjectrightsrequest-getfinalreport?view=graph-rest-beta) method to the [subjectRightsRequest](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-beta) resource.",
           "Target": "getFinalReport"
         }
       ],
@@ -513,7 +513,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getFinalAttachment",
           "ChangeType": "Addition",
-          "Description": "Added the [getFinalAttachment](https://learn.microsoft.com/en-us/graph/api/getFinalAttachment?view=graph-rest-1.0) method to the [subjectRightsRequest](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-1.0) resource.",
+          "Description": "Added the [getFinalAttachment](https://learn.microsoft.com/en-us/graph/api/subjectrightsrequest-getfinalattachment?view=graph-rest-1.0) method to the [subjectRightsRequest](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-1.0) resource.",
           "Target": "getFinalAttachment"
         },
         {
@@ -521,7 +521,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getFinalReport",
           "ChangeType": "Addition",
-          "Description": "Added the [getFinalReport](https://learn.microsoft.com/en-us/graph/api/getFinalReport?view=graph-rest-beta) method to the [subjectRightsRequest](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-1.0) resource.",
+          "Description": "Added the [getFinalReport](https://learn.microsoft.com/en-us/graph/api/subjectrightsrequest-getfinalreport?view=graph-rest-beta) method to the [subjectRightsRequest](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-1.0) resource.",
           "Target": "getFinalReport"
         }
       ],

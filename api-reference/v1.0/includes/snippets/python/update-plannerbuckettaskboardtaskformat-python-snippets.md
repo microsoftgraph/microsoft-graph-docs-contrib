@@ -12,13 +12,10 @@ request_body = PlannerBucketTaskBoardTaskFormat(
 	order_hint = "A6673H Ejkl!",
 )
 
-request_configuration = BucketTaskBoardFormatRequestBuilder.BucketTaskBoardFormatRequestBuilderPatchRequestConfiguration(
-headers = {
-		'Prefer' : "return=representation",
-		'If-Match' : "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"",
-}
+request_configuration = BucketTaskBoardFormatRequestBuilder.BucketTaskBoardFormatRequestBuilderPatchRequestConfiguration()
+request_configuration.headers.add("Prefer", "return=representation")
+request_configuration.headers.add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 
-)
 
 result = await graph_client.planner.tasks.by_planner_task_id('plannerTask-id').bucket_task_board_format.patch(request_body, request_configuration = request_configuration)
 

@@ -27,20 +27,7 @@ The following code examples show how to create an instance of a Microsoft Graph 
 
 # [PHP](#tab/php)
 
-```php
-<?php
-use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Kiota\Abstractions\ApiException;
-use Microsoft\Kiota\Authentication\Oauth\ClientCredentialContext;
-
-$tokenRequestContext = new ClientCredentialContext(
-    'tenantID',
-    'clientID',
-    'clientSecret'
-);
-$graphServiceClient = new GraphServiceClient($tokenRequestContext);
-
-```
+:::code language="php" source="./snippets/php/snippets/CreateClients.php" id="AuthorizationCodeSnippet":::
 
 # [Python](#tab/python)
 

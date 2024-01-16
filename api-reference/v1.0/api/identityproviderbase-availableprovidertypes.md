@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 Get all identity providers supported in a directory.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 

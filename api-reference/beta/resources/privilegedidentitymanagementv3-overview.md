@@ -10,7 +10,7 @@ ms.date: 10/12/2023
 
 # Manage Microsoft Entra role assignments using PIM APIs
 
-[Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-configure) is a feature of Microsoft Entra ID Governance that enables you to manage, control, and monitor access to important resources in your organization. One method through which principals such as users, groups, and service principals (applications) are granted access to important resources is through assignment of [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+[Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-configure) is a feature of Microsoft Entra ID Governance that enables you to manage, control, and monitor access to important resources in your organization. One method through which principals such as users, groups, and service principals (applications) are granted access to important resources is through assignment of [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 The PIM for Microsoft Entra roles APIs allow you to govern privileged access and limit excessive access to Microsoft Entra roles. This article introduces the governance capabilities of PIM for Microsoft Entra roles APIs in Microsoft Graph.
 
@@ -125,7 +125,7 @@ All activities made through PIM for Microsoft Entra roles are logged in Microsof
 
 <!-- Start of: Link to ZT guidance: H2 section -->
 
-[!INCLUDE [zero-trust](~/../azure_docs/includes/active-directory-zero-trust.md)]
+[!INCLUDE [zero-trust](~/../entra_docs/docs/includes/entra-zero-trust.md)]
 
 <!-- End of: Link to ZT guidance -->
 
