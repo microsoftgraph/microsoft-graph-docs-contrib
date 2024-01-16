@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [microsoft.graph.security.auditLogRecord](../resources/security-auditlogrecord.md) objects and their properties.
+Get a list of the [auditLogRecord](../resources/security-auditlogrecord.md) objects and their properties.
 
 ## Permissions
 
