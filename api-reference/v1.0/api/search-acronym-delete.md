@@ -1,5 +1,5 @@
 ---
-title: "Delete acronym"
+title: "delete acronym"
 description: "Delete an acronym object."
 author: "jakeost-msft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "search"
 doc_type: apiPageType
 ---
 
-# Delete acronym
+# delete acronym
 
 Namespace: microsoft.graph.search
 
