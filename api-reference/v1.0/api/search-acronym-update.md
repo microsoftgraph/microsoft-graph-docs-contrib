@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # Update acronym
+
 Namespace: microsoft.graph.search
 
 Update the properties of an [acronym](../resources/search-acronym.md) object.
@@ -15,6 +16,7 @@ Update the properties of an [acronym](../resources/search-acronym.md) object.
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -34,23 +36,23 @@ PATCH /search/acronyms/{acronymsId}
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [acronym](../resources/search-acronym.md) object. Supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|A brief description of the acronym that gives users more info about the acronym and what it stands for. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
-|displayName|String|The actual short form or acronym. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
+|description|String|A brief description of the acronym that gives users more information about the acronym and what it stands for. Inherited from [searchAnswer](../resources/search-searchanswer.md).|
+|displayName|String|The actual short form or acronym. Inherited from [searchAnswer](../resources/search-searchanswer.md).|
 |standsFor|String collection|What the acronym stands for.|
-|state|microsoft.graph.search.answerState|State of the acronym. Possible values are: `published`, `draft`, `excluded`, or `unknownFutureValue`.|
-|webUrl|String|The URL of the page or website where users can go for more information about the acronym. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
-
-
+|state|microsoft.graph.search.answerState|State of the acronym. Possible values are: `published`, `draft`, `excluded`, `unknownFutureValue`.|
+|webUrl|String|The URL of the page or website where users can go for more information about the acronym. Inherited from [searchAnswer](../resources/search-searchanswer.md).|
 
 ## Response
 
@@ -59,6 +61,9 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+
+The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "update_acronym"
@@ -75,6 +80,9 @@ Content-Type: application/json
 
 
 ### Response
+
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -83,4 +91,3 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 204 No Content
 ```
-
