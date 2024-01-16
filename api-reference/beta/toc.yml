@@ -13768,10 +13768,16 @@ items:
                     items:
                     - name: Federated Token Validation Policy
                       href: resources/federatedtokenvalidationpolicy.md
+                    - name: List
+                      href: api/policyroot-list-federatedtokenvalidationpolicy.md
+                    - name: Create
+                      href: api/policyroot-post-federatedtokenvalidationpolicy.md
                     - name: Get
                       href: api/federatedtokenvalidationpolicy-get.md
-                    - name: Post
-                      href: api/federatedtokenvalidationpolicy-post.md
+                    - name: Update
+                      href: api/federatedtokenvalidationpolicy-update.md
+                    - name: Delete
+                      href: api/policyroot-delete-federatedtokenvalidationpolicy.md
               - name: Identity provider (deprecated)
                 items:
                   - name: Identity provider type
