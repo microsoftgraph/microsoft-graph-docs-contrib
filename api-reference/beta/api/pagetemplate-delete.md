@@ -12,10 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [pageTemplate][] from the templates folder in a [site][].
-
-[pageTemplate]: ../resources/pagetemplate.md
-[site]: ../resources/site.md
+Delete a [pageTemplate](../resources/pagetemplate.md) from the templates folder in a [site](../resources/site.md).
 
 ## Permissions
 
@@ -42,15 +39,15 @@ DELETE /sites/{site-id}/pagetemplates/{page-template-id}
 | Name       | Value | Description
 |:-----------|:------|:--------------------------------------------------------
 |Authorization|Bearer {token}.| Required|
-| _if-match_ | etag  | If this request header is included and the eTag provided doesn't match the current tag on the item, a `412 Precondition Failed` response is returned and the item isn't deleted.
+| _if-match_ | etag  | If this request header is included and the eTag provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.
 
 ## Request body
 
-Don't supply a request body with this method.
+Do not supply a request body with this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content`. It doesn't return anything in the response body.
+If successful, this method returns a `204 No Content`. It does not return anything in the response body.
 
 ## Example
 
@@ -58,14 +55,14 @@ If successful, this method returns a `204 No Content`. It doesn't return anythin
 
 ### Request
 
-The following example shows a request.
+The following is an example of the request.
 
 ```http
 DELETE /sites/{site-id}/pagetemplates/{page-template-id}
 ```
 ### Response
 
-The following example shows the response.
+The following is an example of the response.
 
 <!-- { "blockType": "response" } -->
 

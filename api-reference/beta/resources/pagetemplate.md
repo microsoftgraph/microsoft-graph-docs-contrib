@@ -21,11 +21,11 @@ Inherits from [baseSitePage](../resources/basesitepage.md).
 
 | Method                                                                                           | Return type                                     | Description                                                                                                                         |
 | :----------------------------------------------------------------------------------------------- | :---------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
-| [List pageTemplates](../api/pagetemplate-list.md)                                                        | [pagetemplate](../resources/pagetemplate.md) collection | Get a list of the [pagetemplate](../resources/pagetemplate.md) objects and their properties.                                                |
-| [Create pageTemplate](../api/pagetemplate-create.md)                                                     | [pagetemplate](../resources/pagetemplate.md)            | Create a new [pagetemplate](../resources/pagetemplate.md) object.                                                                           |
-| [Get pagetemplate](../api/pagetemplate-get.md)                                                           | [pagetemplate](../resources/pagetemplate.md)            | Read the properties and relationships of a [pagetemplate](../resources/pagetemplate.md) object.                                             |
-| [Update pagetemplate](../api/pagetemplate-update.md)                                                     | [pagetemplate](../resources/pagetemplate.md)            | Update the properties of a [pagetemplate](../resources/pagetemplate.md) object.                                                             |
-| [Delete pagetemplate](../api/pagetemplate-delete.md)                                                     | None                                            | Deletes a [pagetemplate](../resources/pagetemplate.md) object.                                                                              |
+| [List pageTemplates](../api/pagetemplate-list.md)                                                | [pagetemplate](../resources/pagetemplate.md)    | Get a list of the [pagetemplate](../resources/pagetemplate.md) objects and their properties.                                        |
+| [Create pageTemplate](../api/pagetemplate-create.md)                                             | [pagetemplate](../resources/pagetemplate.md)    | Create a new [pagetemplate](../resources/pagetemplate.md) object.                                                                   |
+| [Get pageTemplate](../api/pagetemplate-get.md)                                                   | [pagetemplate](../resources/pagetemplate.md)    | Get a [pagetemplate](../resources/pagetemplate.md) object and properties.                                                           |
+| [Update pageTemplate](../api/pagetemplate-update.md)                                             | [pagetemplate](../resources/pagetemplate.md)    | Update the properties of a [pagetemplate](../resources/pagetemplate.md) object.                                                     |
+| [Delete pageTemplate](../api/pagetemplate-delete.md)                                             | None                                            | Deletes a [pagetemplate](../resources/pagetemplate.md) object.                                                                      |
 
 ## Properties
 
@@ -59,7 +59,7 @@ Inherits from [baseSitePage](../resources/basesitepage.md).
 
 ## JSON representation
 
-The following JSON representation shows the resource type.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

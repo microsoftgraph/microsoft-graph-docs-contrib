@@ -4,7 +4,7 @@ description: "Update the properties of a pageTemplate object."
 author: Yadong1106
 ms.localizationpriority: medium
 ms.prod: sharepoint
-doc_type: apiPageTemplateType
+doc_type: apiPageType
 ---
 
 # Update page template
@@ -57,7 +57,7 @@ These fields and be used in update requests.
 | thumbnailWebUrl                | String                                       | Url of the page template's thumbnail image. Optional.                                                                                                                                                                                  |
 | title                | String                                       | Title of the page template. Optional.                                                                                                                                                                                  |
 | titleArea            | [titleArea](../resources/titlearea.md)       | Title area on the page template. Optional.                                                                                                                                                                       |
-| canvasLayout         | [canvasLayout](../resources/canvaslayout.md) | The layout of the content in a page template, including horizontal sections and vertical section. A content of the entire page layout needs to be provided, the update function doesn't support partial updates. Optional. |
+| canvasLayout         | [canvasLayout](../resources/canvaslayout.md) | The layout of the content in a page template, including horizontal sections and vertical section. A content of the entire page layout needs to be provided, the update function does not support partial updates. Optional. |
 
 ## Response
 
@@ -67,7 +67,7 @@ If successful, this method returns a `200 OK` response code and an updated [page
 
 ### Request
 
-The following example shows a request.
+The following is an example of a request.
 
 
 # [HTTP](#tab/http)
@@ -87,11 +87,15 @@ Content-Type: application/json
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-pagetemplate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following example shows the response
+The following is an example of the response
 
 > **Note:** The response object shown here might be shortened for readability.
 

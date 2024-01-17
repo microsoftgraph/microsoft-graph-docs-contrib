@@ -5,7 +5,7 @@ ms.date: 03/15/2018
 title: Get page template
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
-doc_type: apiPageTemplateType
+doc_type: apiPageType
 ---
 
 # Get page template
@@ -14,10 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns the metadata for a [pageTemplate][] in the templates folder in a [site][].
-
-[pageTemplate]: ../resources/pagetemplate.md
-[site]: ../resources/site.md
+Returns the metadata for a [pageTemplate](../resources/pagetemplate.md) in the templates folder in a [site](../resources/site.md).
 
 ## Permissions
 
@@ -51,11 +48,11 @@ You can use the `$expand=canvasLayout` query string parameter to include the con
 |:---------------|:--------|
 |Authorization|Bearer {token}. Required.|
 | Content-Type  | application/json. Required. |
-| Accept |application/json;odata.metadata=none. Optional. Removes all OData metadata from the response. We recommend including this header if the response will be used in another request. |
+| Accept |application/json;odata.metadata=none. Optional. Removes all OData metadata from the response. We recommend including this header when the response will be used in another request. |
 
 ## Request body
 
-Don't supply a request body for this method.
+Do not supply a request body for this method.
 
 ## Response
 
@@ -74,6 +71,14 @@ If successful, this method returns a `200` and a [pageTemplate](../resources/pag
 ```msgraph-interactive
 GET /sites/{site-id}/pagetemplates/{page-template-id}
 ```
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-pagetemplate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-pagetemplate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
