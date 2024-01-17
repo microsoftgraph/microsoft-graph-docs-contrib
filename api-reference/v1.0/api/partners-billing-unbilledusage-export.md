@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.partners.billing
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Export the unbilled Azure usage data for a specific billing period and a given currency.
 
 ## Permissions
@@ -71,7 +69,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/reports/partners/billing/usage/unbilled/export
+POST https://graph.microsoft.com/v1.0/reports/partners/billing/usage/unbilled/export
 Content-Type: application/json
 
 {
@@ -93,5 +91,5 @@ The following example shows the response.
 ``` http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
-Location: https://graph.microsoft.com/beta/reports/partners/billing/operations/9ab9cb54-d07f-4f52-9ea6-a09d7de52c14
+Location: https://graph.microsoft.com/v1.0/reports/partners/billing/operations/9ab9cb54-d07f-4f52-9ea6-a09d7de52c14
 ```

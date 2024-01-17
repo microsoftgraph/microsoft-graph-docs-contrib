@@ -11,7 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.partners.billing
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Read the properties and relationships of a [manifest](../resources/partners-billing-manifest.md) object.
 
@@ -65,7 +64,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/reports/partners/billing/manifests/6fe687d7-1e0f-4bd6-9091-4672691f64bc
+GET https://graph.microsoft.com/v1.0/reports/partners/billing/manifests/6fe687d7-1e0f-4bd6-9091-4672691f64bc
 ```
 
 ### Response

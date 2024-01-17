@@ -11,7 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.partners.billing
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Read the properties and relationships of an [operation](../resources/partners-billing-operation.md) object.
 
@@ -72,7 +71,7 @@ The following example shows a request that returns a [microsoft.graph.partners.b
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/reports/partners/billing/operations/6fe687d7-1e0f-4bd6-9091-4672691f64bc
+GET https://graph.microsoft.com/v1.0/reports/partners/billing/operations/6fe687d7-1e0f-4bd6-9091-4672691f64bc
 ```
 
 #### Response
@@ -97,7 +96,7 @@ Content-Type: application/json
   "status": "succeeded",
   "createdDateTime": "2023-03-09T08:12:53",
   "lastActionDateTime": "2023-03-09T08:37:48.5046691Z",
-  "resourceLocation@odata.navigationLink": "https://graph.microsoft.com/beta/reports/partners/billing/manifests/8fe347d7-1e0f-4bd6-9091-4672691f32db"
+  "resourceLocation@odata.navigationLink": "https://graph.microsoft.com/v1.0/reports/partners/billing/manifests/8fe347d7-1e0f-4bd6-9091-4672691f32db"
 }
 ```
 
@@ -113,7 +112,7 @@ The following example shows a request that returns a [microsoft.graph.partners.b
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/reports/partners/billing/operations/6fe687d7-1e0f-4bd6-9091-4672691f64bc
+GET https://graph.microsoft.com/v1.0/reports/partners/billing/operations/6fe687d7-1e0f-4bd6-9091-4672691f64bc
 ```
 
 #### Response
@@ -157,7 +156,7 @@ The following example shows a request that returns a [microsoft.graph.partners.b
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/reports/partners/billing/operations/6fe687d7-1e0f-4bd6-9091-4672691f64bc
+GET https://graph.microsoft.com/v1.0/reports/partners/billing/operations/6fe687d7-1e0f-4bd6-9091-4672691f64bc
 ```
 
 #### Response

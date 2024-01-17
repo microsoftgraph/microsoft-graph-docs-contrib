@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.partners.billing
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Export the billed Azure usage data.
 
 ## Permissions
@@ -70,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/reports/partners/billing/usage/billed/export
+POST https://graph.microsoft.com/v1.0/reports/partners/billing/usage/billed/export
 Content-Type: application/json
 
 {
@@ -90,5 +88,5 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 202 OK
-Location: https://graph.microsoft.com/beta/reports/partners/billing/operations/9ab9cb54-d07f-4f52-9ea6-a09d7de52c14
+Location: https://graph.microsoft.com/v1.0/reports/partners/billing/operations/9ab9cb54-d07f-4f52-9ea6-a09d7de52c14
 ```

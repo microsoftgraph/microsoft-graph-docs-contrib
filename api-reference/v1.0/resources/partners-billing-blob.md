@@ -11,7 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.partners.billing
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a billing blob that contains exported data.
 

@@ -11,7 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.partners.billing
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an export operation that is still running, which indicates that the files aren't ready yet.
 
