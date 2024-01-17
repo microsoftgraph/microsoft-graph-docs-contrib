@@ -32,10 +32,12 @@ Represents a business in Microsoft Bookings. This is the top level object in the
 |[List services](../api/bookingbusiness-list-services.md) |[bookingService](bookingservice.md) collection| Get a bookingService object collection.|
 |[Create bookingStaffMember](../api/bookingbusiness-post-staffmembers.md) |[bookingStaffMember](bookingstaffmember.md)| Create a new bookingStaffMember by posting to the staffMembers collection.|
 |[List staffMembers](../api/bookingbusiness-list-staffmembers.md) |[bookingStaffMember](bookingstaffmember.md) collection| Get a bookingStaffMember object collection.|
+|[List customQuestions](../api/bookingbusiness-list-customquestions.md)|[bookingCustomQuestion](../resources/bookingcustomquestion.md) collection|Get the **bookingCustomQuestion** resources from the **customQuestions** navigation property.|
+|[Create bookingCustomQuestion](../api/bookingbusiness-post-customquestions.md)|[bookingCustomQuestion](../resources/bookingcustomquestion.md)|Create a new **bookingCustomQuestion** object.|
 |[List calendarView](../api/bookingbusiness-list-calendarview.md)|[bookingAppointment](bookingappointment.md) collection|Get the collection of **bookingAppointment** objects that occurs in the specified date range.|
 |[publish](../api/bookingbusiness-publish.md)|None|Make the scheduling page of this business available to external customers. Set the **isPublished** property to true, and **publicUrl** property to the URL of the scheduling page.|
 |[unpublish](../api/bookingbusiness-unpublish.md)|None| Make the scheduling page of this business not available to external customers. Set the **isPublished** property to false, and **publicUrl** property to null.|
-
+|[Get staff availability](../api/bookingbusiness-getstaffavailability.md) |[staffAvailabilityItem](staffavailabilityitem.md) collection| Get the availability information of staff members of a Microsoft Bookings calendar.|
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
