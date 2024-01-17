@@ -33,19 +33,19 @@ Existing Data Connect customers can perform a one-click automatic migration from
 
 <!-- This option will be available in late 2023. Stay tuned for more details. -->
 
-The new experience involves the requirement of each app to be consented for **one** list of datasets, and each dataset should be mapped to **one** set of columns and **one** scope. 
+The new experience requires that each app consents to only one list of datasets, and each dataset be mapped to only one set of columns and one scope.
 
-For the tenants that comply with these requirement, the migration can be performed by the tenant admin in the Microsoft 365 admin portal. Similarly to the self-serve migration, the process is done by clicking the following checkbox.
+For tenants that meet this requirement, the tenant admin can complete the migration in the Microsoft 365 admin portal by selecting the **Enable new Microsoft Graph Data Connect authorization experience** checkbox. 
 
 ![A screenshot showing how to enable the new experience for data connect in the Microsoft 365 admin center.](../concepts/images/data-connect-new-consent-flow-one-click-enable-mgdc.png)
 
 ### Special case migration
 
-If your tenant has active consents with any of the below conditions, the tenant requires a special attention. 
+Your tenant requires special attention if it has active consents with any of the following conditions: 
 - Multiple column sets per dataset 
 - Multiple scopes per dataset 
 - Multiple destination sinks per app registration
-- Combinations of the above 
+- A combination of any of these
 
 Upon one-click migration, the active consents will merge under each corresponding app and dataset. An app can have multiple datasets, and each dataset has a set of consented Columns and Scopes. All sinks consented for an app previously will continue to be consented for the app after migration.
 
@@ -55,7 +55,7 @@ For example, consider the following consents:
 2. **Application**: `Productivity_Analysis`; **Sink**: `Storage_Account_2`; **Dataset**: `Message_v1`; **Columns**: [Message]; **Scope**: [Engineering]
 3. **Application**: `Productivity_Analysis`; **Sink**: `Storage_Account_2`; **Dataset**: `DirectReports_v1`; **Columns**: [Direct Report]; **Scope**: [Engineering] 
 
-After migration, the consents will merge since they are under the same application: 
+After migration, the consents will merge because they are under the same application: 
 
 **Application**: `Productivity_Analysis`; **Sink**: [`Storage_Account_1`, `Storage_Account_2`]; 
   [ **Dataset**: `Message_v1`; **Columns**: [SentTime, Message], 
@@ -63,10 +63,10 @@ After migration, the consents will merge since they are under the same applicati
   **Scope**: [Legal, Engineering]
  
 > [!NOTE]
-> When merging consents, new consents could be introduced. In the example above, the consent for extracting Columns [Message] data for the group [Legal] has been introduced. Likewise for [SentTime] data of the group [Engineering]. Similarly, both sinks will have consent to the datasets, columns, and scopes. If this is not the desired state, review the consents and revoke those that would be conflicting. For any questions, reach out to dataconnect@microsoft.com.
+> When merging consents, new consents can be introduced. In this example, the consent for extracting Columns [Message] data for the group [Legal] has been introduced and for [SentTime] data of the group [Engineering]. Similarly, both sinks will have consent to the datasets, columns, and scopes. If this is not the desired state, review the consents and revoke those that would conflict. For any questions, reach out to dataconnect@microsoft.com.
 
 ## Option 3: Automatic migration
 
 <!-- Update 12/15/2023 changed date per developer guidance to mid 2024. -->
 
-Starting in mid-2024, existing Data Connect customers who didn't perform the one-click automatic migration are migrated automatically to the new onboarding experience. Any customer who is not migrated by this time will be migrated to the new experience on their first run of Data Connect.
+Starting in mid-2024, existing Microsoft Graph Data Connect customers who didn't perform the one-click automatic migration will be migrated automatically to the new onboarding experience. Any customer who is not migrated by this time will be migrated to the new experience on their first run of Microsoft Graph Data Connect.
