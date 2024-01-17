@@ -1,6 +1,6 @@
 ---
 title: "pendingExternalUserProfile resource type"
-description: "Represents a pending external user profile in Azure Active Directory. Inherits from the externalProfile base type."
+description: "Represents a user profile for an external user in the Microsoft Entra tenant who hasn't redeemed their invitation."
 ms.localizationpriority: high
 author: "jkdouglas"
 ms.prod: "directory-management"
@@ -30,18 +30,18 @@ Represents a pending external profile in Azure Active Directory. Inherits from t
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
 |address|[physicalOfficeAddress](physicalofficeaddress.md)|The office address of the pending external user profile.|
-|createdBy|String|The object id of the user who created the pending external user profile. Read-only. Not nullable. |
+|createdBy|String|The object ID of the user or principal who created the pending external user profile or invited the external user. Read-only. Not nullable. |
 |createdDateTime|DateTimeOffset|Date and time when this pending external user profile was created. Not nullable. Read-only. |
 |companyName|String|The company name of the pending external user profile. |
 |deletedDateTime|DateTimeOffset|Date and time when the pending external user profile was deleted. Always `null` when the object hasn't been deleted. |
 |department|String|The department of the pending external user profile. |
 |displayName|String|The display name of the pending external user profile.|
 |epoch|Int|The version number of the pending external user profile. Incremented with each update to the entity. Read-only. Not nullable.|
-|id|String|The unique identifier for the pending external user profile. For example, 12345678-9abc-def0-1234-56789abcde. The value of the **id** property is often but not exclusively in the form of a GUID; treat it as an opaque identifier and do not rely on it being a GUID. Key. Not nullable. Read-only.|
+|id|String|The unique identifier for the pending external user profile. For example, 12345678-9abc-def0-1234-56789abcde. Not nullable. Read-only.|
 |isDiscoverable|Boolean|Represents whether the pending external user profile is discoverable in the directory.|
 |isEnabled|Boolean|Represents whether the pending external user profile is enabled in the directory.|
 |jobTitle|String|The job title of the external user profile.|
-|phoneNumber|String|The phone number of the pending external user profile. Must be in E164 format.|
+|phoneNumber|String|The phone number of the pending external user profile. Must be in E.164 format.|
 |supervisorId|String|The object id of the supervisor of the pending external user profile.|
 
 ## Relationships

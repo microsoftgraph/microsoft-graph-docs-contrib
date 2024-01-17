@@ -1,6 +1,6 @@
 ---
 title: "externalUserProfile resource type"
-description: "Represents an external user profile in Azure Active Directory. Inherits from the externalProfile base type."
+description: "Represents the profile of an external or guest user in a Microsoft Entra tenant. Inherits from the externalProfile base type."
 ms.localizationpriority: high
 author: "jkdouglas"
 ms.prod: "directory-management"
