@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes a 'Stop and Quarantine File' response action.
+Describes response action stops and quarantines a file.
 Deletes the file from its current location and places a copy in quarantine.
 
 Inherits from [microsoft.graph.security.responseAction](../resources/security-responseaction.md).

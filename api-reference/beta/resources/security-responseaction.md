@@ -17,22 +17,22 @@ Describes an action taken on [impacted assets](../resources/security-impactedass
 
 This type is abstract and has multiple response action types that are derived from it:
 
-* [Stop and Quarantine File](../resources/security-stopandquarantinefileresponseaction.md)
-* [Disable User](../resources/security-disableuserresponseaction.md)
-* [Force User Password Reset](../resources/security-forceuserpasswordresetresponseaction.md)
-* [Mark User As Compromised](../resources/security-markuserascompromisedresponseaction.md)
-* [Collect Investigation Package](../resources/security-collectinvestigationpackageresponseaction.md)
-* [Initiate Investigation](../resources/security-initiateinvestigationresponseaction.md)
-* [Isolate Device](../resources/security-isolatedeviceresponseaction.md)
-* [Restrict App Execution](../resources/security-restrictappexecutionresponseaction.md)
-* [Run Antivirus Scan](../resources/security-runantivirusscanresponseaction.md)
-* [Allow File](../resources/security-allowfileresponseaction.md)
-* [Block File](../resources/security-blockfileresponseaction.md)
-* [Hard Delete Email](../resources/security-harddeleteresponseaction.md)
-* [Soft Delete Email](../resources/security-softdeleteresponseaction.md)
-* [Move To Inbox](../resources/security-movetoinboxresponseaction.md)
-* [Move To Deleted Items](../resources/security-movetodeleteditemsresponseaction.md)
-* [Move To Junk](../resources/security-movetojunkresponseaction.md)
+* [Stop and quarantine file](../resources/security-stopandquarantinefileresponseaction.md)
+* [Disable user](../resources/security-disableuserresponseaction.md)
+* [Force user password reset](../resources/security-forceuserpasswordresetresponseaction.md)
+* [Mark user as compromised](../resources/security-markuserascompromisedresponseaction.md)
+* [Collect investigation package](../resources/security-collectinvestigationpackageresponseaction.md)
+* [Initiate investigation](../resources/security-initiateinvestigationresponseaction.md)
+* [Isolate device](../resources/security-isolatedeviceresponseaction.md)
+* [Restrict app execution](../resources/security-restrictappexecutionresponseaction.md)
+* [Run antivirus scan](../resources/security-runantivirusscanresponseaction.md)
+* [Allow file](../resources/security-allowfileresponseaction.md)
+* [Block file](../resources/security-blockfileresponseaction.md)
+* [Hard delete email](../resources/security-harddeleteresponseaction.md)
+* [Soft delete email](../resources/security-softdeleteresponseaction.md)
+* [Move to inbox](../resources/security-movetoinboxresponseaction.md)
+* [Move to deleted items](../resources/security-movetodeleteditemsresponseaction.md)
+* [Move to junk](../resources/security-movetojunkresponseaction.md)
 
 
 ## Properties
