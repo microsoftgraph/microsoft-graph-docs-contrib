@@ -16625,6 +16625,34 @@ items:
                     href: resources/attacksimulationtrainingusercoverage.md
                   - name: Get training coverage for users
                     href: api/securityreportsroot-getattacksimulationtrainingusercoverage.md
+          - name: Partner billing reports (preview)
+            items:
+              - name: Overview
+                href: resources/partners-billing-api-overview.md
+              - name: Billed usage
+                items:
+                  - name: Billed usage
+                    href: resources/partners-billing-billedusage.md
+                  - name: Export
+                    href: api/partners-billing-billedusage-export.md
+              - name: Manifest
+                items:
+                  - name: Manifest
+                    href: resources/partners-billing-manifest.md
+                  - name: Get
+                    href: api/partners-billing-manifest-get.md
+              - name: Operation
+                items:
+                  - name: Operation
+                    href: resources/partners-billing-operation.md
+                  - name: Get
+                    href: api/partners-billing-operation-get.md
+              - name: Unbilled usage
+                items:
+                  - name: Unbilled usage
+                    href: resources/partners-billing-unbilledusage.md
+                  - name: Export
+                    href: api/partners-billing-unbilledusage-export.md
       - name: Search
         items:
           - name: Query
