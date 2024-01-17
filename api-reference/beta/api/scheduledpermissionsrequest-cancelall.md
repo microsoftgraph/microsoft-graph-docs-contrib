@@ -67,7 +67,6 @@ POST https://graph.microsoft.com/beta/identityGovernance/permissionsManagement/s
 
 ---
 
-
 ### Response
 The following example shows the response.
 <!-- {

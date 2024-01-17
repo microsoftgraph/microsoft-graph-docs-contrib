@@ -277,7 +277,6 @@ Content-type: application/json
     ]
 }
 ```
->**Note:** You don't need to include the comments that appear in the request body examples in your requests. They are there to clarify each operation for you.
 
 # [C#](#tab/csharp)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
