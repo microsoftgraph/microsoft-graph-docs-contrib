@@ -1,6 +1,6 @@
 ---
 title: "pendingExternalUserProfile resource type"
-description: "Represents a user profile for an external user in the Microsoft Entra tenant who hasn't redeemed their invitation."
+description: "Represents an external user profile for an external user in the Microsoft Entra tenant that the external user has not yet consented to."
 ms.localizationpriority: high
 author: "jkdouglas"
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a pending external profile in Azure Active Directory. Inherits from the [externalProfile](externalprofile.md) base type.
+Represents an external user profile for an external user in the Microsoft Entra tenant that the external user has not yet consented to.
 
 ## Methods
 
@@ -32,17 +32,17 @@ Represents a pending external profile in Azure Active Directory. Inherits from t
 |address|[physicalOfficeAddress](physicalofficeaddress.md)|The office address of the pending external user profile.|
 |createdBy|String|The object ID of the user or principal who created the pending external user profile or invited the external user. Read-only. Not nullable. |
 |createdDateTime|DateTimeOffset|Date and time when this pending external user profile was created. Not nullable. Read-only. |
-|companyName|String|The company name of the pending external user profile. |
+|companyName|String|The company name of the pending external user profile. Supports the `$filter` (eq, ge, le, startswith) query parameter. |
 |deletedDateTime|DateTimeOffset|Date and time when the pending external user profile was deleted. Always `null` when the object hasn't been deleted. |
 |department|String|The department of the pending external user profile. |
 |displayName|String|The display name of the pending external user profile.|
 |epoch|Int|The version number of the pending external user profile. Incremented with each update to the entity. Read-only. Not nullable.|
 |id|String|The unique identifier for the pending external user profile. For example, 12345678-9abc-def0-1234-56789abcde. Not nullable. Read-only.|
-|isDiscoverable|Boolean|Represents whether the pending external user profile is discoverable in the directory.|
+|isDiscoverable|Boolean|Represents whether the pending external user profile is discoverable in the directory. When `true`, this external profile will show up in Teams search. When `false`, this external profile will not show up in Teams search.|
 |isEnabled|Boolean|Represents whether the pending external user profile is enabled in the directory.|
 |jobTitle|String|The job title of the external user profile.|
 |phoneNumber|String|The phone number of the pending external user profile. Must be in E.164 format.|
-|supervisorId|String|The object id of the supervisor of the pending external user profile.|
+|supervisorId|String|The object id of the supervisor of the pending external user profile. Supports the `$filter` (eq, ge, le, startswith) query parameter.|
 
 ## Relationships
 

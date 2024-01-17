@@ -38,12 +38,7 @@ GET /directory/pendingExternalUserProfiles/{id}
 
 ## Optional query parameters
 
-You can use `$filter` to only return specific pending external user profiles. The following properties can be used to `$filter`:
-
-* companyName
-* supervisorId
-
-For more information, see [OData query parameters](/graph/query-parameters).
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

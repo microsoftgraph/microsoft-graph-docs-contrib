@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Delete a [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md) object.
 
+**Note:** To permanently delete the pendingExternalUserProfile, follow [permanently delete an item](directory-deleteditems-delete.md). To restore a pendingExternalUserProfile, follow [restore a deleted item](directory-deleteditems-restore.md).
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -68,8 +70,6 @@ DELETE https://graph.microsoft.com/beta/directory/pendingExternalUserProfiles/{i
 ### Response
 
 The following example shows the response.
-
-**Note:** To permanently delete the pendingExternalUserProfile, follow [permanently delete an item](directory-deleteditems-delete.md). To restore a pendingExternalUserProfile, follow [restore a deleted item](directory-deleteditems-restore.md).
 
 <!-- {
   "blockType": "response",

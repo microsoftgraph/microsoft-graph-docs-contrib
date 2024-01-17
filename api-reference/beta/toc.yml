@@ -11952,7 +11952,7 @@ items:
                     href: api/domain-verify.md
                   - name: Promote domain
                     href: api/domain-promote.md
-              - name: Extended directory
+              - name: External user profiles
                 items:
                 - name: Overview
                   href: resources/extendeddirectory-overview.md
