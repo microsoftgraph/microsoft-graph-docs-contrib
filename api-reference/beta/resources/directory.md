@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a deleted item in the directory. When an item is deleted, it's added to the deleted items "container". Deleted items remain available to restore for up to 30 days. After 30 days, the items are permanently deleted.
+Represents a deleted item in the directory. When an item is deleted, it's sent to the deleted items "container". Deleted items remain available to restore for up to 30 days. After 30 days, the items are permanently deleted.
 
 Currently, deleted items functionality is only supported for the [application](application.md), [group](group.md), and [user](user.md) resources.
 
@@ -47,12 +47,12 @@ Inherits from [entity](entity.md).
 | externalUserProfiles               | [externalUserProfile](externaluserprofile.md) collection                                 | Collection of external user profiles that represent collaborators in the directory.                                         |
 | featureRolloutPolicies             | [featureRolloutPolicy](featurerolloutpolicy.md) collection                               | Nullable.                                                                                                                   |
 | federationConfigurations           | [identityProviderBase](../resources/identityproviderbase.md) collection                  | Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.   |
-| inboundSharedUserProfiles          | [inboundSharedUserProfile](inboundshareduserprofile.md) collection                       | A collection of external Azure AD users whose profile data has been shared with the Azure AD tenant. Nullable.              |
+| inboundSharedUserProfiles          | [inboundSharedUserProfile](inboundshareduserprofile.md) collection                       | A collection of external Azure AD users whose profile data is shared with the Azure AD tenant. Nullable.              |
 | onPremisesSynchronization          | [onPremisesDirectorySynchronization](../resources/onpremisesdirectorysynchronization.md) | A container for on-premises directory synchronization functionalities that are available for the organization.              |
-| outboundSharedUserProfile          | [outboundSharedUserProfile](outboundshareduserprofile.md) collection                     | A collection of Microsoft Entra users whose profile data has been shared with an external Microsoft Entra tenant. Nullable. |
-| pendingExternalUserProfiles        | [pendingExternalUserProfile](pendingexternaluserprofile.md) collection                   | Collection of pending external user profiles representing collaborators in the directory that have not yet redeemed their invitations.        |
+| outboundSharedUserProfile          | [outboundSharedUserProfile](outboundshareduserprofile.md) collection                     | A collection of Microsoft Entra users whose profile data is shared with an external Microsoft Entra tenant. Nullable. |
+| pendingExternalUserProfiles        | [pendingExternalUserProfile](pendingexternaluserprofile.md) collection                   | Collection of pending external user profiles representing collaborators in the directory that haven't redeemed their invitations.        |
 | recommendations                    | [recommendation](../resources/recommendation.md) collection                              | List of recommended improvements to improve tenant posture.                                                                 |
-| subscriptions                      | [companySubscription](companysubscription.md) collection                                 | List of commercial subscriptions that an organization has acquired.                                                         |
+| subscriptions                      | [companySubscription](companysubscription.md) collection                                 | List of commercial subscriptions that an organization has.                                                         |
 
 ## JSON representation
 

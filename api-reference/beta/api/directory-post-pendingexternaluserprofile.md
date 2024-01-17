@@ -53,7 +53,7 @@ In the request body, provide a JSON representation of a [pendingExternalUserProf
 |createdBy|String|The object id of the user who created the pending external user profile. Read-only. Not nullable. |
 |createdDateTime|DateTimeOffset|Date and time when this pending external user profile was created. Not nullable. Read-only. |
 |companyName|String|The company name of the pending external user profile. |
-|deletedDateTime|DateTimeOffset|Date and time when the pending external user profile was deleted. Always `null` when the object hasn't been deleted. |
+|deletedDateTime|DateTimeOffset|Date and time when the pending external user profile was deleted. Always `null` when the object isn't deleted. |
 |department|String|The department of the pending external user profile. |
 |displayName|String|The display name of the pending external user profile. **Required**.|
 |epoch|Int|The version number of the pending external user profile. Incremented with each update to the entity. Read-only. Not nullable.|
@@ -66,7 +66,7 @@ In the request body, provide a JSON representation of a [pendingExternalUserProf
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md) object. If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns a `201 Created` response code and a [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md) object. If unsuccessful, a `4xx` error is returned with specific details.
 
 ## Example
 
