@@ -59,10 +59,12 @@ It includes the following capabilities:
 > - Graph-based data source traversal during crawls; for example, traversing through folder structures.
 > - The ability to manage search permissions based on access control from your data source.
 
-You can get started in C# with our sample connector or in other supported languages using the contracts from the [Microsoft Graph connectors SDK page in GitHub](https://github.com/microsoftgraph/msgraph-connectors-sdk).
+You can get started in C# with our [sample connectors](https://github.com/microsoftgraph/msgraph-connectors-sdk/tree/main/C%23%20samples) or in other supported languages using the contracts from the [Microsoft Graph connectors SDK page in GitHub](https://github.com/microsoftgraph/msgraph-connectors-sdk).
 
 ## Next steps
 
 * [Learn more about the contracts](/graph/custom-connector-sdk-contracts-services).
 * [Develop your first custom connector in C#](/graph/custom-connector-sdk-sample-overview).
 * [Develop your custom connector in other languages](/graph/custom-connector-sdk-other-languages).
+* [Download a CSV connector sample with simple use cases](https://github.com/microsoftgraph/msgraph-connectors-sdk/tree/main/C%23%20samples/CsvConnector)
+* [Download a GitHub connector sample with advanced use cases](https://github.com/microsoftgraph/msgraph-connectors-sdk/tree/main/C%23%20samples/GithubConnector)
