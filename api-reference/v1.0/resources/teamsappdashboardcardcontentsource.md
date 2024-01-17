@@ -17,8 +17,8 @@ Namespace: microsoft.graph
 
 | Property | Type | Description |
 | -------- | ---- | ----------- |
-| `sourceType` | `dashboardCardContentSourceType` | Represents the type of source that powers the content of the dashboard card. |
-| `botConfiguration` | `dashboardCardBotConfiguration` | The configuration for the bot source. Required if `sourceType` is set to `bot`. |
+| `sourceType` | `teamsAppDashboardCardContentSourceType` | Represents the type of source that powers the content of the dashboard card. |
+| `botConfiguration` | [teamsAppdashboardCardBotConfiguration](../resources/teamsappdashboardcardbotconfiguration.md) | The configuration for the bot source. Required if `sourceType` is set to `bot`. |
 
 ## Relationships
 
