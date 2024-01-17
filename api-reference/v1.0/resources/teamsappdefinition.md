@@ -25,6 +25,7 @@ Represents the details of a version of a [teamsApp](teamsapp.md).
 | teamsAppId          | string   | The ID from the Teams app manifest. |
 | version             | string   | The version number of the application. |
 |authorization|[teamsAppAuthorization](../resources/teamsappauthorization.md)|Authorization requirements specified in the Teams app manifest.|
+|dashboardCards|[teamsAppDashboardCardDefinition](../resources/teamsappdashboardcarddefinition.md)|Dashboard Cards specified in the Teams app manifest.|
 
 ## Relationships
 
@@ -46,7 +47,8 @@ Represents the details of a version of a [teamsApp](teamsapp.md).
   "teamsAppId": "string",
   "displayName": "string",
   "version": "string",
-  "authorization": "#microsoft.graph.teamsAppAuthorization"
+  "authorization": "#microsoft.graph.teamsAppAuthorization",
+  "dashboardCards": "#microsoft.graph.teamsAppDashboardCardDefinition"
 }
 ```
 
