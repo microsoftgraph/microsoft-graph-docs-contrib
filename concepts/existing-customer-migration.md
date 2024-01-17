@@ -33,7 +33,7 @@ Existing Data Connect customers can perform a one-click automatic migration from
 
 <!-- This option will be available in late 2023. Stay tuned for more details. -->
 
-The new experience requires that each app consents to only one list of datasets, and each dataset be mapped to only one set of columns and one scope.
+The new experience requires that each app consents to one list of datasets, and each dataset be mapped to only one set of columns and one scope.
 
 For tenants that meet this requirement, the tenant admin can complete the migration in the Microsoft 365 admin portal by selecting the **Enable new Microsoft Graph Data Connect authorization experience** checkbox. 
 
