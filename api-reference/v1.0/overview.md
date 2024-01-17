@@ -64,4 +64,4 @@ Explore the [changelog](https://developer.microsoft.com/en-us/graph/changelog) f
 
 Are there additional APIs or features you'd like to see in Microsoft Graph? Post new feature requests on the [Microsoft 365 Developer Platform ideas forum](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
 
-Have feedback for existing Microsoft Graph APIs? Connect with us on [GitHub](https://github.com/microsoftgraph/microsoft-graph-docs/issues).
+Have feedback for existing Microsoft Graph APIs? Connect with us on [GitHub](https://github.com/microsoftgraph/microsoft-graph-docs-contrib/issues).
