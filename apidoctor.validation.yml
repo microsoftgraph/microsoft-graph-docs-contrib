@@ -10,8 +10,16 @@ trigger:
     - main
   paths:
     include:
-    - api-reference/beta/*
-    - api-reference/includes/*
+    - api-reference/*
+    
+pr:
+  branches:
+    include:
+    - live
+    - main
+  paths:
+    include:
+    - api-reference/*
     
 pool:
     vmImage: 'windows-latest'
