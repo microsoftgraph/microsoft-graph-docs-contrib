@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve a count of transitive reports for an organizational contact.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

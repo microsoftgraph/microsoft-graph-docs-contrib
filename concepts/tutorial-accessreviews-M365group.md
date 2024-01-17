@@ -23,7 +23,7 @@ Let's assume that you've granted access to external users (also called *guest us
 
 To complete this tutorial, you need the following resources and privileges:
 
-+ A working Microsoft Entra tenant with a Microsoft Entra ID P2 or EMS E5 license enabled. 
++ A working Microsoft Entra tenant with a Microsoft Entra ID P2 or Microsoft Entra ID Governance license enabled. 
 + An account in a different Microsoft Entra tenant or a social identity that you can invite as a guest user (B2B user).
 + Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Global Administrator role.
 + Grant yourself the following delegated permissions: `User.Invite.All`, `AccessReview.ReadWrite.All`, `Group.ReadWrite.All`, `User.ReadWrite.All`.

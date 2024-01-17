@@ -69,9 +69,6 @@ The following table lists the language tags, locales, and the corresponding coun
 |`en-us`| English (United States) | United States - English |
 |`es-us`| Spanish (United States) | United States - Spanish |
 
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
-
 ## Next steps
 
 - Learn about [setting up administrative search answers for users in an organization](/graph/search-concept-answers).

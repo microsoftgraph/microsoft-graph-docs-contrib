@@ -11,13 +11,15 @@ using Microsoft.Graph.Beta.Me.OnlineMeetings.Item.SendVirtualAppointmentSms;
 
 var requestBody = new SendVirtualAppointmentSmsPostRequestBody
 {
-	PhoneNumbers = new List<string>
-	{
-		"+13129224122",
-		"+1242421412",
-	},
 	AdditionalData = new Dictionary<string, object>
 	{
+		{
+			"phoneNumbers" , new List<string>
+			{
+				"+13129224122",
+				"+1242421412",
+			}
+		},
 		{
 			"virtualAppointmentSmsType" , "confirmation"
 		},
