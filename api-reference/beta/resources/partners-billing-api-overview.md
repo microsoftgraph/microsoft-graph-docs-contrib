@@ -10,7 +10,7 @@ ms.custom: zt-include
 
 # Use the Microsoft Graph API to export partner billing data (preview)
 
-As part of the Microsoft Partner Center ecosystem, Microsoft direct partners in the Cloud Solution Provider programs can request to export their billed and unbilled data to Azure Blob Storage asynchronously, removing the need to maintain an open connection for hours and loop through millions of transactions iteratively. The asynchronous API is a novel method for quickly accessing billing and reconciliation data in manageable chunks.
+As part of the Microsoft Partner Center ecosystem, Microsoft direct partners in the Cloud Solution Provider programs can request to export their billed and unbilled data to Azure Blob Storage asynchronously. this removes the need to maintain an open connection for hours and loop through millions of transactions iteratively. The asynchronous API provides a way to quickly access billing and reconciliation data in manageable chunks.
 
 The partner billing API is defined in the OData subnamespace `microsoft.graph.partners.billing`.
 
