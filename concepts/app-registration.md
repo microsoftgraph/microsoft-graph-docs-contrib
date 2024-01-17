@@ -81,7 +81,7 @@ After you complete the **Registration Info** page, specify the datasets that the
 
 The wizard shows a table that allows the entry of multiple datasets, the selection of columns in the datasets, and more details if applicable, such as scope and scope options. You can select each dataset that the app requests for authorization, and all or several columns from the dataset, depending on the level of granularity and privacy required.
 
-![Screenshot that shows the Datasets column selected while running the Data Connect app registration wizard.](images/app-registration-create-datasets.png)
+![Screenshot that shows the Datasets column selected during the operation of the Data Connect app registration wizard.](images/app-registration-create-datasets.png)
 
 ##### Scope selection
 
