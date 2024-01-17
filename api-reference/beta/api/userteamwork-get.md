@@ -27,8 +27,6 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                                                                                    |
 | Application                            | UserTeamwork.Read.All                                                                            |
 
-[!INCLUDE [supported-regions](../../includes/teamwork-supported-regions.md)]
-
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -48,6 +46,8 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code with a [userTeamwork](../resources/userteamwork.md) object in the response body.
+
+[!INCLUDE [supported-regions](../../includes/teamwork-supported-regions.md)]
 
 ## Examples
 
