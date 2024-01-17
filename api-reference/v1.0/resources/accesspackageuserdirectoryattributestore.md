@@ -1,6 +1,6 @@
 ---
 title: "accessPackageUserDirectoryAttributeStore resource type"
-description: "The type used for objects that expose the Microsoft Entra ID end system to which the user configured values will be saved to."
+description: "The type used to indicate that values will be saved to the user object."
 author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A child of **accessPackageAttributeDestination** that is the type of attribute store for the Microsoft Entra ID end system. Inherits from [accessPackageResourceAttributeDestination](../resources/accesspackageresourceattributedestination.md).
+A subtype of **accessPackageAttributeDestination**, this indicates that entitlement management is to store attribute onto the user object. Inherits from [accessPackageResourceAttributeDestination](../resources/accesspackageresourceattributedestination.md).
 
 ## Properties
 None.
@@ -20,7 +20,7 @@ None.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessPackageUserDirectoryAttributeStore",
