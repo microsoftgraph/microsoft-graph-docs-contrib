@@ -1,6 +1,6 @@
 ---
 title: "runningOperation resource type"
-description: "Represents an export operation that is still running, indicating that the files aren't ready yet."
+description: "Represents an export operation that is still running, which indicates that the files aren't ready yet."
 author: "abhishek-singh-ms"
 ms.localizationpriority: medium
 ms.prod: "reports"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.partners.billing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an export operation that is still running, indicating that the files aren't ready yet.
+Represents an export operation that is still running, which indicates that the files aren't ready yet.
 
 Inherits from [operation](../resources/partners-billing-operation.md).
 
