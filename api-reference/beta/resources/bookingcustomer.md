@@ -1,6 +1,6 @@
 ---
 title: "bookingCustomer resource type"
-description: " > Represents a customer of a bookingBusiness."
+description: "Represents a customer of a bookingBusiness."
 ms.localizationpriority: Normal
 author: "arvindmicrosoft"
 ms.prod: "bookings"

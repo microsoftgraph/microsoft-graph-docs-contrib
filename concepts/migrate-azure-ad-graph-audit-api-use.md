@@ -7,6 +7,7 @@ ms.reviewer: dkershaw
 ms.localizationpriority: medium
 ms.prod: "applications"
 ms.date: 11/11/2022
+#Customer intent: As a developer, I want to learn what to investigate in my app code and logic, so that I can migrate my app from Azure AD Graph to Microsoft Graph.
 ---
 
 # Examine Azure AD Graph APIs app usage

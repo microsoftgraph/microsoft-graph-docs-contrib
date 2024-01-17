@@ -101,6 +101,10 @@ configuration:
       actions:
       - addReply:
           reply: >-
+            > [!NOTE]
+
+            > The following guidance is for Microsoft employees only. Community contributors can ignore this message; our content team will manage the status.
+
             Hello, @${issueAuthor}.
 
 
@@ -127,6 +131,10 @@ configuration:
       actions:
       - addReply:
           reply: >-
+            > [!NOTE]
+
+            > The following guidance is for Microsoft employees only. Community contributors can ignore this message; our content team will manage the status.
+
             Hello, @${issueAuthor}.
 
 

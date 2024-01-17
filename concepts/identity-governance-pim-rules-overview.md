@@ -1,5 +1,5 @@
 ---
-title: "Working with rules in privileged identity management (PIM)"
+title: "Rules in PIM - mapping guide"
 description: "Learn how rules in PIM are structured in Microsoft Graph and how they map with the descriptions on the Microsoft Entra admin center."
 author: "FaithOmbongi"
 ms.author: ombongifaith
@@ -8,9 +8,10 @@ ms.localizationpriority: medium
 ms.topic: conceptual
 ms.prod: "governance"
 ms.date: 06/08/2023
+#Customer intent: As a developer, I want to understand how to map PIM settings in the Microsoft Entra admin center to the corresponding rules in Microsoft Graph, so that I can configure and update the rules effectively.
 ---
 
-# Working with rules in PIM using Microsoft Graph
+# Rules in PIM - mapping guide
 
 Privileged Identity Management (PIM) exposes role settings or rules for the resources that can be managed. In Microsoft Graph, these resources are Microsoft Entra roles and groups and they are managed through [PIM for Microsoft Entra roles](/graph/api/resources/privilegedidentitymanagementv3-overview) and [PIM for groups](/graph/api/resources/privilegedidentitymanagement-for-groups-api-overview) respectively.
 

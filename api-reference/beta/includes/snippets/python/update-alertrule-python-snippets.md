@@ -16,6 +16,15 @@ request_body = AlertRule(
 		operator = OperatorType.GreaterOrEqual,
 		target = 90,
 	),
+	conditions = [
+		RuleCondition(
+			relationship_type = RelationshipType.Or,
+			condition_category = ConditionCategory.AzureNetworkConnectionCheckFailures,
+			aggregation = AggregationType.Count,
+			operator = OperatorType.GreaterOrEqual,
+			threshold_value = "90",
+		),
+	],
 	notification_channels = [
 		NotificationChannel(
 			notification_channel_type = NotificationChannelType.Portal,
@@ -32,17 +41,6 @@ request_body = AlertRule(
 			],
 		),
 	],
-	additional_data = {
-			"conditions" : [
-				{
-						"relationship_type" : "or",
-						"condition_category" : "azureNetworkConnectionCheckFailures",
-						"aggregation" : "count",
-						"operator" : "greaterOrEqual",
-						"threshold_value" : "90",
-				},
-			],
-	}
 )
 
 result = await graph_client.device_management.monitoring.alert_rules.by_alert_rule_id('alertRule-id').patch(request_body)

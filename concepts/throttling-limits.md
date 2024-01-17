@@ -3,6 +3,7 @@ title: "Microsoft Graph service-specific throttling limits"
 description: "Identify the throttling limits for each Microsoft Graph service to apply best practices to manage throttling in your application."
 ms.localizationpriority: high
 ms.custom: graphiamtop20
+#Customer intent: As a developer using Microsoft Graph to access multiple services, I want to understand the throttling limits imposed by each service, so that I can ensure my application stays within the allowed limits and avoids being throttled.
 ---
 
 # Microsoft Graph service-specific throttling limits
@@ -494,3 +495,7 @@ Service limits for Planner aren't available.
 
 The preceding information applies to the following resources:
 [!INCLUDE [Tasks and plans throttling documentation](../includes/throttling-tasks-and-plans.md)]
+
+## Viva Engage service limits
+
+Viva Engage API calls are subject to rate limiting, allowing 10 requests per user, per app, within a 30-second time period. When you exceed the rate limit, all subsequent requests return a `429 Too Many Requests` response code. 

@@ -63,6 +63,8 @@ You can then navigate to other resources using relationships:
 - [Reach other members in each group](/graph/api/group-list-members).
 - Tap into other scenarios enabled by [groups](microsoft365-groups-concept-overview.md), such as [education](education-concept-overview.md) and [teamwork](teams-concept-overview.md).
 
+To find out more, see [Integration patterns](integration-patterns-overview.md).
+
 Microsoft Graph continues to open up the Microsoft 365 platform for developers, and always only with the appropriate permissions.
 
 > [!NOTE]

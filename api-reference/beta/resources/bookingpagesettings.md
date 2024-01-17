@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Settings for a published booking page
+Settings for a published booking page.
 
 ## Properties
 |Property|Type|Description|

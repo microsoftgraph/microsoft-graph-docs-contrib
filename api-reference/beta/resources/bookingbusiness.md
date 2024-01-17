@@ -22,7 +22,7 @@ Represents a business in Microsoft Bookings. This is the top level object in the
 |[List bookingBusinesses](../api/bookingbusiness-list.md) | [bookingBusiness](bookingbusiness.md) collection |Get a collection of bookingbusiness objects in the tenant. |
 |[Create bookingBusiness](../api/bookingbusiness-post-bookingbusinesses.md) | [bookingBusiness](bookingbusiness.md) | Create a new Microsoft Bookings business. |
 |[Get bookingBusiness](../api/bookingbusiness-get.md) | [bookingBusiness](bookingbusiness.md) |Read properties and relationships of bookingBusiness object.|
-|[Update](../api/bookingbusiness-update.md) | [bookingBusiness](bookingbusiness.md)	|Update properties in a **bookingBusiness** object. |
+|[Update](../api/bookingbusiness-update.md) | [bookingBusiness](bookingbusiness.md)	|Update the properties of a  **bookingBusiness** object. |
 |[Delete](../api/bookingbusiness-delete.md) | None |Delete a **bookingBusiness** object. |
 |[Create bookingAppointment](../api/bookingbusiness-post-appointments.md) |[bookingAppointment](bookingappointment.md)| Create a new bookingAppointment by posting to the appointments collection.|
 |[List appointments](../api/bookingbusiness-list-appointments.md) |[bookingAppointment](bookingappointment.md) collection| Get a bookingAppointment object collection.|
@@ -42,7 +42,7 @@ Represents a business in Microsoft Bookings. This is the top level object in the
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |address|[physicalAddress](physicaladdress.md)|The street address of the business. The **address** property, together with **phone** and **webSiteUrl**, appear in the footer of a business scheduling page.|
-|bookingPageSettings|[bookingPageSettings](../resources/bookingpagesettings.md)|Settings for the published booking page|
+|bookingPageSettings|[bookingPageSettings](../resources/bookingpagesettings.md)|Settings for the published booking page.|
 |businessHours|[bookingWorkHours](bookingworkhours.md) collection|The hours of operation for the business.|
 |businessType|String|The type of business.|
 |createdDateTime|DateTimeOffset|The date, time and timezone when the booking business was created.|
