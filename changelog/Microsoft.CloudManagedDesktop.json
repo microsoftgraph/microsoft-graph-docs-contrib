@@ -7,7 +7,39 @@
                 "ApiChange": "Resource",
                 "ChangedApiName": "cloudPcDeviceImage",
                 "ChangeType": "Addition",
-                "Description": "Added the cloudPcDeviceImage resource type.",
+                "Description": "Added the cloudPcDeviceImage resource type under virtualEndpoint.",
+                "Target": "virtualEndpoint"
+              },
+              {
+                "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
+                "ApiChange": "ComplexType",
+                "ChangedApiName": "cloudPcSourceDeviceImage ",
+                "ChangeType": "Addition",
+                "Description": "Added the cloudPcSourceDeviceImage resource type under cloudPcDeviceImage.",
+                "Target": "cloudPcDeviceImage"
+              },
+              {
+                "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
+                "ApiChange": "Enum type",
+                "ChangedApiName": "cloudPcDeviceImageErrorCode",
+                "ChangeType": "Addition",
+                "Description": "Added the cloudPcDeviceImageErrorCode enumeration.",
+                "Target": "cloudPcDeviceImage"
+              },
+              {
+                "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
+                "ApiChange": "Enum type",
+                "ChangedApiName": "cloudPcDeviceImageOsStatus",
+                "ChangeType": "Addition",
+                "Description": "Added the cloudPcDeviceImageOsStatus enumeration.",
+                "Target": "cloudPcDeviceImage"
+              },
+              {
+                "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
+                "ApiChange": "Enum type",
+                "ChangedApiName": "cloudPcDeviceImageStatus",
+                "ChangeType": "Addition",
+                "Description": "Added the cloudPcDeviceImageStatus enumeration.",
                 "Target": "cloudPcDeviceImage"
               },
               {
@@ -15,7 +47,15 @@
                 "ApiChange": "Resource",
                 "ChangedApiName": "cloudPcGalleryImage",
                 "ChangeType": "Addition",
-                "Description": "Added the cloudPcGalleryImage resource type.",
+                "Description": "Added the cloudPcGalleryImage resource type under virtualEndpoint.",
+                "Target": "virtualEndpoint"
+              },
+              {
+                "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
+                "ApiChange": "Enum type",
+                "ChangedApiName": "cloudPcGalleryImageStatus",
+                "ChangeType": "Addition",
+                "Description": "Added the cloudPcGalleryImageStatus enumeration.",
                 "Target": "cloudPcGalleryImage"
               }
             ],
