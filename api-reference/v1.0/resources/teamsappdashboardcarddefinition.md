@@ -65,7 +65,7 @@ None.
 ## JSON representation
 
 The following is a JSON representation of the resource.
-<!-- {
+<-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamsAppDashboardCardDefinition"
 }
@@ -73,9 +73,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamsAppDashboardCardDefinition",
-  "requiredPermissionSet": {
-    "@odata.type": "microsoft.graph.teamsAppPermissionSet"
-  }
+ 
 }
 ```
 
