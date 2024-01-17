@@ -26,7 +26,7 @@ The partner billing API provides the following advantages:
 
 The following diagram shows the steps needed to download reconciliation data.
 
-![Export data sequence diagram](../includes/images/lro_sequencediagram.png)
+![Export data sequence diagram](images/lro_sequencediagram.png)
 
 To access the usage data asynchronously, use the following steps with the API endpoints.
 
