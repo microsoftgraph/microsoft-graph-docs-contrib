@@ -78,11 +78,8 @@ POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceIma
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.cloudPcDeviceImage",
-  "displayName": "Display Name value",
-  "osBuildNumber": "OS Build Number value",
-  "operatingSystem": "Operating System value",
-  "version": "Version value",
+  "displayName": "ImageForDev",
+  "version": "0.0.1",
   "sourceImageResourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/Example/providers/Microsoft.Compute/images/exampleImage"
 }
 ```
@@ -138,18 +135,18 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.cloudPcDeviceImage",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/virtualEndpoint/deviceImages/$entity",
   "id": "eda7ed64-7705-4079-9d08-c2bd883fffff",
-  "displayName": "Display Name value",
-  "osBuildNumber": "OS Build Number value",
-  "operatingSystem": "Operating System value",
-  "version": "Version value",
-  "sourceImageResourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/Example/providers/Microsoft.Compute/images/exampleImage",
-  "lastModifiedDateTime": "2020-11-03T07:03:44.97Z",
+  "displayName": "ImageForDev",
+  "osBuildNumber": null,
+  "operatingSystem": null,
+  "version": "0.0.1",
+  "sourceImageResourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/Example/providers/Microsoft.Compute/images/exampleImageForDev",
+  "lastModifiedDateTime": "2023-11-03T07:03:44.97Z",
   "status": "pending",
   "statusDetails": null,
   "errorCode": null,
-  "osStatus":"supported",
-  "expirationDate":"2022-11-10"
+  "osStatus":null,
+  "expirationDate":"null
 }
 ```

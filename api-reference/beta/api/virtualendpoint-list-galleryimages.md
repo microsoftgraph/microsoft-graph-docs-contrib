@@ -120,7 +120,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#cloudPcGalleryImage",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/virtualEndpoint/galleryImages",
   "value": [
     {
       "id": "MicrosoftWindowsDesktop_windows-ent-cpc_19h2-ent-cpc-os",
@@ -128,8 +128,11 @@ Content-Type: application/json
       "offerDisplayName": "Windows 10 Enterprise + OS Optimizations",
       "skuDisplayName": "1909",
       "publisher": "MicrosoftWindowsDesktop",
+      "publisherName": "MicrosoftWindowsDesktop",
       "offer": "windows-ent-cpc",
+      "offerName": "windows-ent-cpc",
       "sku": "19h2-ent-cpc-os",
+      "skuName": "19h2-ent-cpc-os",
       "recommendedSku": "light",
       "status": "supported",
       "sizeInGB": 64,
@@ -143,8 +146,11 @@ Content-Type: application/json
       "offerDisplayName": "Windows 10 Enterprise + OS Optimizations",
       "skuDisplayName": "2004",
       "publisher": "MicrosoftWindowsDesktop",
+      "publisherName": "MicrosoftWindowsDesktop",
       "offer": "windows-ent-cpc",
+      "offerName": "windows-ent-cpc",
       "sku": "20h1-ent-cpc-os",
+      "skuName": "20h1-ent-cpc-os",
       "recommendedSku": "light",
       "status": "supported",
       "sizeInGB": 64,

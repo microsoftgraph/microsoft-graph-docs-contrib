@@ -114,14 +114,14 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.cloudPcSourceDeviceImage)",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.cloudPcSourceDeviceImage",
-      "id": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Compute/images/ExampleImage",
-      "resourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Compute/images/ExampleImage",
-      "displayName": "Display Name value",
+      "id": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/Example/providers/Microsoft.Compute/images/exampleImageForDev",
+      "resourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/Example/providers/Microsoft.Compute/images/exampleImageForDev",
+      "displayName": "exampleImageForDev",
       "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",
-      "subscriptionDisplayName": "Subscription Display Name value"
+      "subscriptionDisplayName": "Reserved for IT"
     }
   ]
 }
