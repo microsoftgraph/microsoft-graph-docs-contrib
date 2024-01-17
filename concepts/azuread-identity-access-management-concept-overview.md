@@ -23,7 +23,7 @@ Enterprise developers, for example, can use Microsoft Graph to automate administ
 
 ## Manage user identities and control access to your apps, data, and resources
 
-Millions of customers and organizations subscribe to Microsoft cloud services like Microsoft 365, Microsoft Azure, and the Enterprise Mobile + Security suite of products. These services use Microsoft Entra ID as their identity and access management solution.
+Millions of customers and organizations subscribe to Microsoft cloud services like Microsoft 365, Microsoft Azure, and the Enterprise Mobile + Security suite of products. These services use Microsoft Entra ID as their identity and access management solution. You can also integrate Microsoft Entra ID into your custom applications.
 
 Some Microsoft Entra ID capabilities that you can integrate to your apps using Microsoft Graph include:
 
