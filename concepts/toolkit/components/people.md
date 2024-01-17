@@ -95,16 +95,16 @@ The following examples show how to use the `person` template.
 
 ## Microsoft Graph permissions
 
-This component uses the following Microsoft Graph APIs and permissions.
+This component uses the following Microsoft Graph APIs and permissions. For each API called the user must have at least one of the listed permissions.
 
-| Configuration         | Permission                        | API                                                                                         |
-| --------------------- | --------------------------------- | ------------------------------------------------------------------------------------------- |
-| `groupId` set         | GroupMember.Read.All              | [/groups/\${groupId}/members](/graph/api/group-list-members)                                |
-| `userIds` set         | User.ReadBasic.All                | [/users/${userId}](/graph/api/user-get)                                                     |
-| `peopleQueries` set   | People.Read                       | [/me/people](/graph/api/user-list-people)                                                   |
-| `resource` set        | Permissions specified in `scopes` | Specified in `resource`                                                                     |
-| default configuration | People.Read                       | [/me/people](/graph/api/user-list-people)                                                   |
-| `showPresence` set    | Presence.Read.All                 | [/communications/getPresencesByUserId](/graph/api/cloudcommunications-getpresencesbyuserid) |
+| Configuration         | Permission                                                                                                | API                                                                                         |
+| --------------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| default configuration | People.Read, People.Read.All                                                                              | [/me/people](/graph/api/user-list-people)                                                   |
+| `group-id` set        | GroupMember.Read.All, Group.Read.All, Directory.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All  | [/groups/${groupId}/members/microsoft.graph.user](/graph/api/group-list-members)            |
+| `user-ids` set        | User.ReadBasic.All, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All        | [/users/$({userId}](/graph/api/user-get)                                                    |
+| `people-queries` set  | People.Read, People.Read.All                                                                              | [/me/people](/graph/api/user-list-people)                                                   |
+| `resource` set        | Permissions specified in `scopes`                                                                         | Specified in `resource`                                                                     |
+| `show-presence` set   | Presence.Read.All                                                                                         | [/communications/getPresencesByUserId](/graph/api/cloudcommunications-getpresencesbyuserid) |
 
 ### Subcomponents
 
