@@ -17,13 +17,10 @@ Create a new [accessPackageResourceRoleScope](../resources/accesspackageresource
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | EntitlementManagement.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | EntitlementManagement.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "accesspackage_post_resourcerolescopes" } -->
+[!INCLUDE [permissions-table](../includes/permissions/accesspackage-post-resourcerolescopes-permissions.md)]
 
 ## HTTP request
 
@@ -56,7 +53,7 @@ If successful, this method returns a 200-series response code and a new [accessP
 
 The following is an example of the request adding a SharePoint Online site role to an access package's list of resource roles.  The access package resource for the site must already have been added to the access package catalog containing this access package.
 
-The request contains an [accessPackageResourceRole](../resources/accesspackageresourcerole.md) object. Each type of resource defines the format of the originId field in a resource role. For a SharePoint Online site, the originId will be the sequence number of the role in the site.
+The request contains an [accessPackageResourceRole](../resources/accesspackageresourcerole.md) object. Each type of resource defines the format of the originId field in a resource role. For a SharePoint Online site, the originId will be the sequence number of the role in the site.  The resource role can be obtained from a request to [retrieve the roles of a resource for a SharePoint Online site collection](accesspackagecatalog-list-resourceroles.md#example-2-retrieving-the-roles-of-a-resource-for-a-sharepoint-online-site-collection).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -70,9 +67,7 @@ Content-type: application/json
 
 {
     "role": {
-        "id": "6646a29e-da03-49f6-bcd9-dec124492de3",
         "displayName": "Contributors",
-        "description": null,
         "originSystem": "SharePointOnline",
         "originId": "4",
         "resource": {
@@ -80,7 +75,6 @@ Content-type: application/json
         }
     },
     "scope": {
-        "id": "5ae0ae7c-d0a5-42aa-ab37-1f15e9a61d33",
         "displayName": "Root",
         "description": "Root Scope",
         "originId": "https://contoso.sharepoint.com/portals/Community",

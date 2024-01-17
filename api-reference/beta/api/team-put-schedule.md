@@ -1,7 +1,7 @@
 ---
 title: "Create or replace schedule"
 description: "Create or replace a **schedule** object."
-author: "nkramer"
+author: "shanemalone"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -27,13 +27,10 @@ Clients can also inspect the configuration of the schedule.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Schedule.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "team_put_schedule" } -->
+[!INCLUDE [permissions-table](../includes/permissions/team-put-schedule-permissions.md)]
 
 ## HTTP request
 
@@ -141,7 +138,9 @@ Content-type: application/json
   "openShiftsEnabled": true,
   "swapShiftsRequestsEnabled": true,
   "offerShiftRequestsEnabled": true,
-  "timeOffRequestsEnabled": true
+  "timeOffRequestsEnabled": true,
+  "startDayOfWeek": "Sunday",
+  "activitiesIncludedWhenCopyingShiftsEnabled": true
 }
 ```
 
@@ -169,6 +168,8 @@ PUT https://graph.microsoft.com/beta/teams/871dbd5c-3a6a-4392-bfe1-042452793a50/
    "swapShiftsRequestsEnabled":true,
    "offerShiftRequestsEnabled":true,
    "timeOffRequestsEnabled":true,
+   "startDayOfWeek": "Tuesday",
+   "activitiesIncludedWhenCopyingShiftsEnabled": true,
    "timeClockEnabled":true,
    "timeClockSettings":{
       "approvedLocation":{
@@ -238,6 +239,8 @@ Content-type: application/json
    "swapShiftsRequestsEnabled":true,
    "offerShiftRequestsEnabled":true,
    "timeOffRequestsEnabled":true,
+   "startDayOfWeek": "Tuesday",
+   "activitiesIncludedWhenCopyingShiftsEnabled": true,
    "timeClockEnabled":true,
    "timeClockSettings":{
       "approvedLocation":{

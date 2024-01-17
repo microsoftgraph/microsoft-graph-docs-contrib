@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <a name='for-pim-for-azure-ad-roles'></a>
 
 ### For PIM for Microsoft Entra roles
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
@@ -38,7 +38,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
 
 ### For PIM for groups
-
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|RoleManagementPolicy.ReadWrite.AzureADGroup|

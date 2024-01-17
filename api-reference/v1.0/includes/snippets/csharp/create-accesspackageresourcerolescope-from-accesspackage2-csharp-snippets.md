@@ -6,15 +6,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Models;
 
 var requestBody = new AccessPackageResourceRoleScope
 {
 	Role = new AccessPackageResourceRole
 	{
-		Id = "6646a29e-da03-49f6-bcd9-dec124492de3",
 		DisplayName = "Contributors",
-		Description = null,
 		OriginSystem = "SharePointOnline",
 		OriginId = "4",
 		Resource = new AccessPackageResource
@@ -24,7 +23,6 @@ var requestBody = new AccessPackageResourceRoleScope
 	},
 	Scope = new AccessPackageResourceScope
 	{
-		Id = "5ae0ae7c-d0a5-42aa-ab37-1f15e9a61d33",
 		DisplayName = "Root",
 		Description = "Root Scope",
 		OriginId = "https://contoso.sharepoint.com/portals/Community",
@@ -32,6 +30,8 @@ var requestBody = new AccessPackageResourceRoleScope
 		IsRootScope = true,
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackages["{accessPackage-id}"].ResourceRoleScopes.PostAsync(requestBody);
 
 

@@ -2,6 +2,7 @@
 title: "authentication resource type"
 description: "Exposes relationships that represent the authentication methods supported by Microsoft Entra ID and that can configured for users."
 author: "jpettere"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

@@ -3,6 +3,7 @@ title: "List transitiveRoleAssignment"
 description: "List direct and transitive role assignments for a specific principal."
 ms.localizationpriority: medium
 author: "DougKirschner"
+ms.reviewer: msodsrbac
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
@@ -24,13 +25,10 @@ For more information, see [Use Microsoft Entra groups to manage role assignments
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "rbacapplication_list_transitiveroleassignments" } -->
+[!INCLUDE [permissions-table](../includes/permissions/rbacapplication-list-transitiveroleassignments-permissions.md)]
 
 ## HTTP request
 
@@ -44,9 +42,9 @@ To list transitive role assignments for a directory provider:
 GET /roleManagement/directory/transitiveRoleAssignments?$filter=principalId eq '{principalId}'
 ```
 
-## Optional query parameters
+## Query parameters
 
-This method supports the `$count`, `$filter` (`eq`), and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). You can filter by the **principalId**, **roleDefinitionId** and **directoryScopeId** to retrieve both direct and transitive role assignments for a principal.
+This method requires the `$filter` (`eq`) OData query parameter to scope the transitive role assignments to a principal. You can narrow the scope of the request by expanding the filter to other supported properties. This method also supports the `$count` and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). 
 
 ## Request headers
 

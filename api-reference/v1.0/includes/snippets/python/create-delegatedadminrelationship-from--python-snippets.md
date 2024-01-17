@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+
 
 graph_client = GraphServiceClient(credentials, scopes)
 
@@ -25,6 +25,7 @@ request_body = DelegatedAdminRelationship(
 			),
 		],
 	),
+	auto_extend_duration = "P180D",
 )
 
 result = await graph_client.tenant_relationships.delegated_admin_relationships.post(request_body)

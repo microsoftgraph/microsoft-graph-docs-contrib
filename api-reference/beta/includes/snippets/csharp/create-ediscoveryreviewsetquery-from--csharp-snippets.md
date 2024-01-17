@@ -6,13 +6,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Models.Security;
 
-var requestBody = new Microsoft.Graph.Beta.Models.Security.EdiscoveryReviewSetQuery
+var requestBody = new EdiscoveryReviewSetQuery
 {
 	DisplayName = "My Query 1",
 	ContentQuery = "(Author=\"edison\")",
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].ReviewSets["{ediscoveryReviewSet-id}"].Queries.PostAsync(requestBody);
 
 

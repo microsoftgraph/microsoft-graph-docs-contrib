@@ -6,9 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Code snippets are only available for the latest version. Current version is 5.x
 
-var graphClient = new GraphServiceClient(requestAdapter);
+// Dependencies
+using Microsoft.Graph.Beta.Me.CheckMemberObjects;
 
-var requestBody = new Microsoft.Graph.Beta.Me.CheckMemberObjects.CheckMemberObjectsPostRequestBody
+var requestBody = new CheckMemberObjectsPostRequestBody
 {
 	Ids = new List<string>
 	{
@@ -18,6 +19,8 @@ var requestBody = new Microsoft.Graph.Beta.Me.CheckMemberObjects.CheckMemberObje
 		"ac38546e-ddf3-437a-ac5c-27a94cd7a0f1",
 	},
 };
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Me.CheckMemberObjects.PostAsync(requestBody);
 
 

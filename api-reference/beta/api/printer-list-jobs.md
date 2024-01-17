@@ -18,17 +18,10 @@ Retrieve a list of print jobs associated with the [printer](../resources/printer
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, a permission that grants [Get printer](printer-get.md) access, and one of the permissions listed in the following table. The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
-
-To read print jobs from another user, the signed in user needs to be a print administrator and have the PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic.All, or PrintJob.ReadWrite.All permission.
-
-|Permission type | Permissions (from least to most privileged) |
-|:---------------|:--------------------------------------------|
-|Delegated (work or school account)| PrintJob.ReadBasic, PrintJob.Read, PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
-|Delegated (personal Microsoft account)|Not Supported.|
-|Application| PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "printer_list_jobs" } -->
+[!INCLUDE [permissions-table](../includes/permissions/printer-list-jobs-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -107,8 +100,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.printJob",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.printJob)"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -120,7 +112,11 @@ Content-type: application/json
     {
       "id": "5182",
       "createdDateTime": "2020-02-04T00:00:00.0000000Z",
-      "createdBy": {},
+      "createdBy": {
+        "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd",
+        "displayName": "John Smith",
+        "userPrincipalName": "john.smith@contoso.com"
+      },
       "status": {
         "processingState": "completed",
         "processingStateDescription": "The print job has completed successfully and no further processing will take place."

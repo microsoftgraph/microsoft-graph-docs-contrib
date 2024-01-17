@@ -2,6 +2,7 @@
 title: "conditionalAccessPolicyDetail resource type"
 description: "Represents the configuration of a Microsoft recommended best-practice template for a Microsoft Entra Conditional Access policy."
 author: "lisaychuang"
+ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

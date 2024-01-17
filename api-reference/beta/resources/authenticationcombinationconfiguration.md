@@ -2,6 +2,7 @@
 title: "authenticationCombinationConfiguration resource type"
 description: "An abstract configuration for a given auth method applied to certain combinations. "
 author: "InbarckMS"
+ms.reviewer: conditionalaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

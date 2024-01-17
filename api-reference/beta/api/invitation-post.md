@@ -24,13 +24,10 @@ The following options are available for creating an invitation:
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "invitation_post" } -->
+[!INCLUDE [permissions-table](../includes/permissions/invitation-post-permissions.md)]
 
 > [!IMPORTANT]
 > Application permissions (app-only) do not work if B2B invitations are disabled on the tenant or if B2B invitations are restricted to administrators.
@@ -132,28 +129,31 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#invitations/$entity",
-  "id": "7b92124c-9fa9-406f-8b8e-225df8376ba9",
-  "inviteRedeemUrl": "https://invitations.microsoft.com/redeem/?tenant=04dcc6ab-388a-4559-b527-fbec656300ea&user=7b92124c-9fa9-406f-8b8e-225df8376ba9&ticket=VV9dmiExBsfRIVNFjb9ITj9VXAd07Ypv4gTg%2f8PiuJs%3d&lc=1033&ver=2.0",
-  "invitedUserDisplayName": "Fabrikam Admin",
-  "invitedUserEmailAddress": "admin@fabrikam.com",
-  "resetRedemption": false,
-  "sendInvitationMessage": false,
-  "invitedUserMessageInfo": {
-     "messageLanguage": null,
-     "ccRecipients": [
-          {
-             "emailAddress": {
-                 "name": null,
-                 "address": null
-              }
-          }
-     ],
-     "customizedMessageBody": null
-  },
-  "inviteRedirectUrl": "https://myapp.contoso.com/",
-  "status": "Completed",
-  "invitedUser":  [ {  "id": "243b1de4-ad9f-421c-a933-d55305fb165d" } ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#invitations/$entity",
+    "id": "9071bfde-35e0-47d2-a582-d244ab1b4af6",
+    "inviteRedeemUrl": "https://login.microsoftonline.com/redeem?rd=https%3a%2f%2finvitations.microsoft.com%2fredeem%2f%3ftenant%3d69997834-fa40-45da-xxxx-382c3bdc66c3%26user%3d9071bfde-35e0-47d2-a582-d244ab1b4af6%26ticket%3dwCFIFW%25252frzl2A%25252fpZFZk5fCLJprpDxtcjR8s%25252fo1QZA0yQ%25253d%26ver%3d2.0",
+    "invitedUserDisplayName": null,
+    "invitedUserType": "Guest",
+    "invitedUserEmailAddress": "admin@fabrikam.com",
+    "sendInvitationMessage": false,
+    "resetRedemption": false,
+    "inviteRedirectUrl": "https://myapp.contoso.com",
+    "status": "PendingAcceptance",
+    "invitedUserMessageInfo": {
+        "messageLanguage": null,
+        "customizedMessageBody": null,
+        "ccRecipients": [
+            {
+                "emailAddress": {
+                    "name": null,
+                    "address": null
+                }
+            }
+        ]
+    },
+    "invitedUser": {
+        "id": "cbb896f9-8306-49d0-b56b-b8e39cd28825"
+    }
 }
 ```
 

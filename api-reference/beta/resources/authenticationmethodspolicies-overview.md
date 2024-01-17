@@ -3,9 +3,10 @@ title: "Microsoft Entra authentication methods policy API overview"
 description: "Authentication methods policies define which authentication methods can be used by users in Azure AD."
 ms.localizationpriority: medium
 author: "jpettere"
+ms.reviewer: intelligentaccesspm
 ms.prod: "identity-and-sign-in"
 doc_type: "conceptualPageType"
-ms.date: 02/05/2022
+ms.date: 12/22/2023
 ---
 
 # Microsoft Entra authentication methods policies API overview
@@ -35,7 +36,6 @@ The authentication method policies APIs are used to manage policy settings. For 
 |[temporaryaccesspassauthenticationmethodconfiguration](temporaryaccesspassauthenticationmethodconfiguration.md)|Define users who can use Temporary Access Pass to sign in to Microsoft Entra ID.|
 |[voiceAuthenticationMethodConfiguration](voiceAuthenticationMethodConfiguration.md)|Define users or groups that are enabled to use the voice call authentication method.|
 |[x509CertificateAuthenticationMethodConfiguration](x509CertificateAuthenticationMethodConfiguration.md)|Define users who can use X.509 certificate to sign in to Microsoft Entra ID.|
-|[passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration](passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) (deprecated)|Define users who can use Passwordless Phone Sign-in to sign in to Microsoft Entra ID.|
 
 ## Policies available to push users to set up authentication methods:
 |Policy       | Description |

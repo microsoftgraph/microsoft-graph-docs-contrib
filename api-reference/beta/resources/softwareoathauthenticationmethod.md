@@ -2,6 +2,7 @@
 title: "softwareOathAuthenticationMethod resource type"
 description: "A representation of a Software OATH token registered to a user. Software OATH is a multifactor authentication method."
 author: "jpettere"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

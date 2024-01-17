@@ -19,13 +19,10 @@ Get a set of [baseTask](../resources/basetask.md) resources that have been added
 A **delta** function call for **baseTask** resources in a **baseTaskList** is similar to a GET request, except that by appropriately applying [state tokens](/graph/delta-query-overview) in one or more of these calls, you can query for incremental changes in the **baseTask** in that **baseTaskList**. This allows you to maintain and synchronize a local store of a user's **baseTask** resources without having to fetch the entire set from the server every time.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|Tasks.Read, Tasks.ReadWrite|
-|Delegated (personal Microsoft account)|Tasks.Read, Tasks.ReadWrite|
-|Application|Not supported|
+<!-- { "blockType": "permissions", "name": "basetask_delta" } -->
+[!INCLUDE [permissions-table](../includes/permissions/basetask-delta-permissions.md)]
 
 ## HTTP request
 

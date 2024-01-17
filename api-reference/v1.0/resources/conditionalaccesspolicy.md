@@ -3,6 +3,7 @@ title: "conditionalAccessPolicy resource type"
 description: "Represents a Microsoft Entra Conditional Access policy. Conditional access policies are custom rules that define an access scenario."
 ms.localizationpriority: medium
 author: "lisaychuang"
+ms.reviewer: conditionalaccesspm
 ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---

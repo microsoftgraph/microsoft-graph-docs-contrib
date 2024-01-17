@@ -2,6 +2,7 @@
 title: "passwordResetResponse resource type"
 description: "Represents the new system-generated password after a password reset operation."
 author: "zhvolosh"
+ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
