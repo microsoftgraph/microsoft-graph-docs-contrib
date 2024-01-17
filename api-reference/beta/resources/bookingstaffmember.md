@@ -44,7 +44,7 @@ Microsoft Bookings supports a maximum of 100 staff members in a booking calendar
 |displayName|String|The name of the staff member, as displayed to customers. Required.|
 |emailAddress|String|The email address of the staff member. This email address can be in the same Microsoft 365 tenant as the business, or in a different email domain. This email address can be used if the **sendConfirmationsToOwner** property is set to true in the scheduling policy of the business. Required.|
 |id|String| The ID of the staff member, in a GUID format. Read-only.|
-|isEmailNotificationEnabled|Boolean|`True` indicates that a staff member is notified via email when a booking assigned to them is created or changed.|
+|isEmailNotificationEnabled|Boolean|Indicates that a staff members are  notified via email when a booking assigned to them is created or changed. The default value is `true`|
 |lastUpdatedDateTime|DateTimeOffset|The date, time and timezone when the staff member was last updated.|
 |role|bookingStaffRole| The role of the staff member in the business. Possible values are: `guest`, `administrator`, `viewer`, `externalGuest`, `unknownFutureValue`, `scheduler`, `teamMember`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `scheduler`, `teamMember`. Required. |
 |timeZone|String|The time zone of the staff member. For a list of possible values, see [dateTimeTimeZone](datetimetimezone.md).|

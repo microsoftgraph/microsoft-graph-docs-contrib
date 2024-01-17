@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Represents information about a particular service provided by a [booking Business](bookingbusiness.md), such as the service name, price, and the staff that usually provides such service.
+Represents information about a particular service provided by a [booking business](bookingbusiness.md), such as the service name, price, and the staff that usually provides such service.
 
 Inherits from [bookingNamedEntity](bookingNamedEntity.md).
 
@@ -41,9 +41,9 @@ Inherits from [bookingNamedEntity](bookingNamedEntity.md).
 |description|String|A text description for the service.|
 |displayName|String|A service name.|
 |id|String|The ID of that service, in a GUID format. Read-only.|
-|isAnonymousJoinEnabled|Boolean|`True` if an anonymousJoinWebUrl(webrtcUrl) is generated for the appointment booked for this service.
+|isAnonymousJoinEnabled|Boolean|Indicates if an anonymousJoinWebUrl(webrtcUrl) is generated for the appointment booked for this service. The default value is `false`. |
 |isHiddenFromCustomers|Boolean|True means this service isn't available to customers for booking.|
-|isLocationOnline|Boolean|True indicates that the appointments for the service is held online. Default value is false.|
+|isLocationOnline|Boolean|Indicates that the appointments for the service are held online. The default value is `false`.|
 |languageTag|String|The language of the self service booking page.
 |lastUpdatedDateTime|DateTimeOffset|The date, time and timezone when the Service  was last updated.|
 |maximumAttendeesCount|Int32|The maximum number of customers allowed in a service. If **maximumAttendeesCount** of the service is greater than 1, pass valid customer IDs while creating or updating an appointment.  To create a customer, use the [Create bookingCustomer](../api/bookingbusiness-post-customers.md) operation.  |
