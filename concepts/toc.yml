@@ -337,6 +337,8 @@ items:
                 href: synchronization-configure-with-custom-target-attributes.md
               - name: Synchronize directory extension attributes
                 href: synchronization-configure-with-directory-extension-attributes.md
+              - name: Configure cross-tenant synchronization
+                href: /entra/identity/multi-tenant-organizations/cross-tenant-synchronization-configure-graph?tabs=ms-graph&toc=/graph/toc.json
       - name: Accessing data at scale
         items:
           - name: Microsoft Graph Data Connect overview
