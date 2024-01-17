@@ -11,16 +11,16 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Resource that defines the [question](accesspackagequestion.md) provided to an end user, for the purpose of obtaining an attribute value to be passed to the end system or the request approver.
+Resource that references the [question](accesspackagequestion.md) provided to an end user making a request, for the purpose of obtaining an attribute value to be put onto the user.
 
-This type inherits from [accessPackageResourceAttributeSource](../resources/accesspackageresourceattributesource.md) and is used in the **attributeSource** property of an [accessPackageResourceAttribute](accesspackageresourceattribute.md).
+This type inherits from [accessPackageResourceAttributeSource](../resources/accesspackageresourceattributesource.md) and is used in the **source** property of an [accessPackageResourceAttribute](accesspackageresourceattribute.md).
 
 The only property is **question**, which could be an [accessPackageTextInputQuestion](accesspackagetextinputquestion.md) or a [accessPackageMultipleChoiceQuestion](accesspackagemultiplechoicequestion.md) object type.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|question|accessPackageQuestion|The question asked in order to get the value of the attribute|
+|question|[accessPackageQuestion](accesspackagequestion.md)|The question asked in order to get the value of the attribute|
 
 ## Relationships
 None.

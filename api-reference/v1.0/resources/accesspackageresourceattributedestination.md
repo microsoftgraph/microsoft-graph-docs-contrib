@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-An abstract type used for the **attributeDestination** property of an [accessPackageResourceAttribute](accesspackageresourceattribute.md). The actual destination will be a subtype of this complex type.
+An abstract type used for the **destination** property of an [accessPackageResourceAttribute](accesspackageresourceattribute.md). The actual destination will be a subtype of this complex type.
 
 Currently, the only supported subtype is [accessPackageUserDirectoryAttributeStore](../resources/accesspackageuserdirectoryattributestore.md).  
 
