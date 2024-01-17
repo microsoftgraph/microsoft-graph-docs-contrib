@@ -30,6 +30,8 @@ For details, see [Use the Microsoft Graph API](/graph/use-the-api).
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) in the beta endpoint.
 
+Explore the [changelog](https://developer.microsoft.com/en-us/graph/changelog) for more details about changes to Microsoft Graph APIs.
+
 ## See also
 
 - [Overview of Microsoft Graph](/graph/overview)
