@@ -1,5 +1,5 @@
 ---
-title: "teamsAppDashBoardCardContentSource resource type"
+title: "teamsAppDashboardCardContentSource resource type"
 description: "Represents a configuration for the source of the dashboard card's content of Teams App"
 author: "ashish-goel"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
 
-# teamsAppDashBoardCardContentSource resource type
+# teamsAppDashboardCardContentSource resource type
 
 Namespace: microsoft.graph
 
@@ -29,12 +29,12 @@ None.
 The following is a JSON representation of the resource.
 <-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.teamsAppDashBoardCardContentSource"
+  "@odata.type": "microsoft.graph.teamsAppDashboardCardContentSource"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.teamsAppDashBoardCardContentSource",
+  "@odata.type": "#microsoft.graph.teamsAppDashboardCardContentSource",
  
 }
 ```
