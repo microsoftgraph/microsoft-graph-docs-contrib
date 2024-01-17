@@ -88,10 +88,6 @@ Manage change notifications for virtual events using the [Create](/graph/api/sub
 
 For details, see the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=958cb6cc-4eb0-4dec-a19d-7fe3da86b3ec)_.
 
-## Want to stay in the loop?
-
-Here are some ways we can engage:
-
 ## Contribute to Microsoft Graph
 
 Are there scenarios you'd like Microsoft Graph to support? 
@@ -99,6 +95,8 @@ Are there scenarios you'd like Microsoft Graph to support?
 - Suggest and vote for new features by using the [Microsoft Graph Feedback Portal](https://aka.ms/graphfeedback). Some new features originate as popular requests from the developer community. The Microsoft Graph team regularly evaluates customer needs and releases new features to the beta (`https://graph.microsoft.com/beta`) and v1.0 (`https://graph.microsoft.com/v1.0`) endpoints.
 
 - [Join](https://aka.ms/m365-dev-call) the weekly Microsoft 365 platform community call and become an active member of the Microsoft Graph community.
+
+- [Join](https://ux.microsoft.com/Panel/M365Devs?utm_source=graphDocs) our research panel to provide your input on our developer experiences.
 
 ## See also
 - [Microsoft Graph developer blog](https://devblogs.microsoft.com/microsoft365dev/category/microsoft-graph/)
