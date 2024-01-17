@@ -5,7 +5,7 @@ ms.localizationpriority: high
 author: "angelgolfer-ms"
 ms.prod: "non-product-specific"
 doc_type: conceptualPageType
-ms.topic: 
+ms.topic: overview
 ---
 
 # Microsoft Graph REST API v1.0 endpoint reference
