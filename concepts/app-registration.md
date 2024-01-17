@@ -12,12 +12,12 @@ This article provides best practice guidance for using the Azure portal experien
 
 ## Azure portal experience
 
-In the [Azure portal](https://aka.ms/mgdcinazure) experience, developers and tenant global administrators can review all registered applications, authorize apps, and manage app registrations.
+In the [Azure portal](https://aka.ms/mgdcinazure) experience, developers and tenant Global Administrators can review all registered applications, authorize apps, and manage app registrations.
 
 ### Landing page
 
 > [!IMPORTANT]
-> If Microsoft Graph Data Connect hasn't been enabled by your admin, the portal experience is disabled. For more information about how global administrators can enable Data Connect, see [Enable Microsoft Graph Data Connect in your Microsoft 365 tenant](https://github.com/microsoftgraph/microsoft-graph-docs/blob/45b4b22b5db4a87be256b59130e74bf49c2e7fd1/includes/data-connect-quickstart-02.md?plain=1#L45)
+> If Microsoft Graph Data Connect hasn't been enabled by your admin, the portal experience is disabled. For details about how Global Administrators can enable Data Connect, see [Enable Microsoft Graph Data Connect in your Microsoft 365 tenant](https://github.com/microsoftgraph/microsoft-graph-docs/blob/45b4b22b5db4a87be256b59130e74bf49c2e7fd1/includes/data-connect-quickstart-02.md?plain=1#L45)
 
 The first screen of the Azure portal experience prompts you to register your first app with Data Connect, or load existing registrations into a summary table view.
 
@@ -25,12 +25,12 @@ The first screen of the Azure portal experience prompts you to register your fir
 
 The table includes the following column fields:
 
-- **Name**: The app registration name
-- **App ID**: The Microsoft Entra application ID
-- **Registered On**: The date the app was registered
-- **Developer**: The developer who registered the application
-- **Multi-tenant**: Whether the app is multi-tenant or single tenant
-- **Last modified**: The most recent date when the application was changed
+- **Name**: The app registration name.
+- **App ID**: The Microsoft Entra application ID.
+- **Registered On**: The date the app was registered.
+- **Developer**: The developer who registered the application.
+- **Multi-tenant**: Whether the app is multi-tenant or single tenant.
+- **Last modified**: The most recent date when the application was changed.
 
 At the top of the table, three buttons are enabled by default: **Add**, **Refresh**, and **Delete**. **Add** starts an action for a new app registration. **Refresh** queries existing app registrations in the tenant again, and refreshes the table. **Delete** is only enabled for single selections, and initiates a deletion process.
 
@@ -112,7 +112,7 @@ After you create your app registration entry, to view the details that you speci
 
 #### Update app registration entry
 
-Access update functionality from the individual app overview page. Either the app owner or global admin can update properties or datasets associated with a Data Connect application. As shown in the following images, any updates to the destination storage for the app or the datasets, schema, or scopes associated with the app invalidate the previous authorization, and require the global admin to approve the app again from the Microsoft 365 admin center.
+Access update functionality from the individual app overview page. Either the app owner or Global Administrator can update properties or datasets associated with a Data Connect application. As shown in the following images, any updates to the destination storage for the app or the datasets, schema, or scopes associated with the app invalidate the previous authorization, and require the Global Administrator to approve the app again from the Microsoft 365 admin center.
 
 ![Screenshot of the app registration Update Properties page.](images/app-registration-details-properties-update.png)
 
@@ -120,7 +120,7 @@ Access update functionality from the individual app overview page. Either the ap
 
 #### Delete an app registration entry
 
-You can delete an app registration entry from either the individual app overview page, or from the landing page. Currently, either app owners or global administrators can delete app registration entries. When you delete an app registration entry, you need to type the name of the app to confirm the deletion. After the app is deleted, any dependency or pipeline that uses it becomes unusable, specifically:
+You can delete an app registration entry from either the individual app overview page, or from the landing page. Currently, either app owners or Global Administrators can delete app registration entries. When you delete an app registration entry, you need to type the name of the app to confirm the deletion. After the app is deleted, any dependency or pipeline that uses it becomes unusable, specifically:
 
 - Every pipeline goes through multiple phases. In the first phase of the pipeline, we validate the consent. Any pipeline past the consent validation stage continues and succeeds.
 - Any pipeline before the authorization validation phase fails because the application is missing.
