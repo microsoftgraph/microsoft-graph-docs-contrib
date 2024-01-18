@@ -69,7 +69,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.DirectoryServices.federatedTokenValidationPolicy"
+  "@odata.type": "microsoft.graph.federatedTokenValidationPolicy"
 }
 -->
 ``` http
@@ -78,7 +78,7 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#Microsoft.DirectoryServices.federatedTokenValidationPolicy",
+    "@odata.type": "#microsoft.graph.federatedTokenValidationPolicy",
     "id": "932b8f7f-68c1-6fe5-59ab-56e1ff752f30",
     "deletedDateTime": "String (timestamp)",
     "validatingDomains": {

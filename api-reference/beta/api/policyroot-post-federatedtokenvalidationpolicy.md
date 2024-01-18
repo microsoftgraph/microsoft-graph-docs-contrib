@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST ** Collection URI for Microsoft.DirectoryServices.federatedTokenValidationPolicy not found
+POST ** Collection URI for microsoft.graph.federatedTokenValidationPolicy not found
 ```
 
 ## Request headers
@@ -47,7 +47,7 @@ You can specify the following properties when creating a **federatedTokenValidat
 
 |Property|Type|Description|
 |:---|:---|:---|
-|validatingDomains|[Microsoft.DirectoryServices.validatingDomains](../resources/validatingdomains.md)|Verified Microsoft Entra ID domains for which Microsoft Entra validates that federated account's root domain matches with mapped Microsoft Entra account's root domain. Required.|
+|validatingDomains|[microsoft.graph.validatingDomains](../resources/validatingdomains.md)|Verified Microsoft Entra ID domains for which Microsoft Entra validates that federated account's root domain matches with mapped Microsoft Entra account's root domain. Required.|
 
 ## Response
 
@@ -63,11 +63,11 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta** Collection URI for Microsoft.DirectoryServices.federatedTokenValidationPolicy not found
+POST https://graph.microsoft.com/beta** Collection URI for microsoft.graph.federatedTokenValidationPolicy not found
 Content-Type: application/json
 
 {
-  "@odata.type": "#Microsoft.DirectoryServices.federatedTokenValidationPolicy",
+  "@odata.type": "#microsoft.graph.federatedTokenValidationPolicy",
   "validatingDomains": {
     "@odata.type": "microsoft.graph.validatingDomains"
   }
@@ -81,7 +81,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.DirectoryServices.federatedTokenValidationPolicy"
+  "@odata.type": "microsoft.graph.federatedTokenValidationPolicy"
 }
 -->
 ``` http
@@ -89,7 +89,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#Microsoft.DirectoryServices.federatedTokenValidationPolicy",
+  "@odata.type": "#microsoft.graph.federatedTokenValidationPolicy",
   "id": "932b8f7f-68c1-6fe5-59ab-56e1ff752f30",
   "validatingDomains": {
     "@odata.type": "microsoft.graph.validatingDomains"

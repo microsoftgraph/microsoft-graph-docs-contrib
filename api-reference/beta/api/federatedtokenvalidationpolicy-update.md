@@ -45,7 +45,7 @@ PATCH /policies/federatedTokenValidationPolicy
 
 |Property|Type|Description|
 |:---|:---|:---|
-|validatingDomains|[Microsoft.DirectoryServices.validatingDomains](../resources/validatingdomains.md)|Verified Microsoft Entra ID domains for which Microsoft Entra validates that federated account's root domain matches with mapped Microsoft Entra account's root domain. Required.|
+|validatingDomains|[microsoft.graph.validatingDomains](../resources/validatingdomains.md)|Verified Microsoft Entra ID domains for which Microsoft Entra validates that federated account's root domain matches with mapped Microsoft Entra account's root domain. Required.|
 
 
 
@@ -81,7 +81,8 @@ The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.federatedTokenValidationPolicy"
 }
 -->
 ``` http

@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for Microsoft.DirectoryServices.federatedTokenValidationPolicy not found
+GET ** Collection URI for microsoft.graph.federatedTokenValidationPolicy not found
 ```
 
 ## Optional query parameters
@@ -59,7 +59,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for Microsoft.DirectoryServices.federatedTokenValidationPolicy not found
+GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.federatedTokenValidationPolicy not found
 ```
 
 ### Response
@@ -68,7 +68,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.DirectoryServices.federatedTokenValidationPolicy)"
+  "@odata.type": "Collection(microsoft.graph.federatedTokenValidationPolicy)"
 }
 -->
 ``` http
@@ -78,7 +78,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#Microsoft.DirectoryServices.federatedTokenValidationPolicy",
+      "@odata.type": "#microsoft.graph.federatedTokenValidationPolicy",
       "id": "932b8f7f-68c1-6fe5-59ab-56e1ff752f30",
       "deletedDateTime": "String (timestamp)",
       "validatingDomains": {

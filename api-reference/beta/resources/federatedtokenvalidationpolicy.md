@@ -51,7 +51,7 @@ This is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.federatedTokenValidationPolicy",
-  "baseType": "Microsoft.DirectoryServices.directoryObject",
+  "baseType": "microsoft.graph.directoryObject",
   "openType": false
 }
 -->
