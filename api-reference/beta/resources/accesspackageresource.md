@@ -20,6 +20,7 @@ In [Microsoft Entra Entitlement Management](entitlementmanagement-overview.md), 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [List accessPackageCatalog resources](../api/accesspackagecatalog-list-accesspackageresources.md) | [accessPackageResource](accesspackageresource.md) collection | Retrieve a list of accessPackageResource objects in a catalog. |
+| [Refresh](../api/accesspackageresource-refresh.md)|None|Refresh the resource information from the originSystem.|
 
 ## Properties
 
