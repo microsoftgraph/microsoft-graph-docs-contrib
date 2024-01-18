@@ -6,8 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-EducationAssignmentCollectionPage assignments = graphClient.education().classes("acdefc6b-2dc6-4e71-b1e9-6d9810ab1793").assignments()
+EducationAssignmentCollectionPage assignments = graphClient.education().classes("37d99af7-cfc5-4e3b-8566-f7d40e4a2070").assignments()
 	.buildRequest()
+	.filter("status eq 'assigned'")
 	.get();
 
 ```
