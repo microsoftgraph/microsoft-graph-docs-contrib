@@ -354,7 +354,7 @@
         "ChangedApiName": "LIST",
         "ChangeType": "Addition",
         "Description": "Added the **LIST** method to the [accessPackageAssignmentRequest]https://learn.microsoft.com/en-us/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) resource.",
-        "Target": "accessPackageSubject"
+        "Target": "accessPackageAssignmentRequest"
       },
 {
         "Id": "dba9ed86-78b9-4f17-9e83-879aa5269959",
@@ -362,7 +362,7 @@
         "ChangedApiName": "POST",
         "ChangeType": "Addition",
         "Description": "Added the **POST** method to the [accessPackageAssignmentRequest](https://learn.microsoft.com/en-us/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) resource.",
-        "Target": "accessPackageSubject"
+        "Target": "accessPackageAssignmentRequest"
       }
       ],
       "Id": "dba9ed86-78b9-4f17-9e83-879aa5269959",
