@@ -71,7 +71,7 @@ You can now start using the API. In this scenario, you use the APIs to manage Ca
   "name": "authenticationmethods-get-started-list-methods"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/users/CameronW@M365x56085806.OnMicrosoft.com/authentication/methods
+GET https://graph.microsoft.com/v1.0/users/CameronW@Contoso.com/authentication/methods
 ```
 
 ### Response
@@ -110,7 +110,7 @@ In this step, you add a new *mobile* phone number for Cameron to use.
   "name": "authenticationmethods-get-started-add-phonemethod"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/users/CameronW@M365x56085806.OnMicrosoft.com/authentication/phoneMethods
+POST https://graph.microsoft.com/v1.0/users/CameronW@Contoso.com/authentication/phoneMethods
 Content-Type: application/json
 
 {
@@ -150,7 +150,7 @@ Run the same request, adding an *office* phoneType.
   "name": "authenticationmethods-get-started-list-methods-2"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/users/CameronW@M365x56085806.OnMicrosoft.com/authentication/methods
+GET https://graph.microsoft.com/v1.0/users/CameronW@Contoso.com/authentication/methods
 ```
 
 ### Response
@@ -207,7 +207,7 @@ Cameron is now working from home so you need to remove their office number from 
   "name": "authenticationmethods-get-started-remove-phonemethod"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/users/CameronW@M365x56085806.OnMicrosoft.com/authentication/phoneMethods/e37fc753-ff3b-4958-9484-eaa9425c82bc
+DELETE https://graph.microsoft.com/v1.0/users/CameronW@Contoso.com/authentication/phoneMethods/e37fc753-ff3b-4958-9484-eaa9425c82bc
 ```
 
 The request returns a `204 No Content` response code. To verify that the method was removed from Cameron's account, rerun the request in Step 4. The user should now have only the mobile phone and password authentication methods.
@@ -226,7 +226,7 @@ In both methods, the response includes a *Location* header with a URL you can us
   "name": "authenticationmethods-get-started-reset-password-1"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/users/CameronW@M365x56085806.OnMicrosoft.com/authentication/passwordMethods/28c10230-6103-485e-b985-444c60001490/resetPassword
+POST https://graph.microsoft.com/v1.0/users/CameronW@Contoso.com/authentication/passwordMethods/28c10230-6103-485e-b985-444c60001490/resetPassword
 Content-Type: application/json
 
 {
@@ -255,7 +255,7 @@ In this request, you don't provide a new password and instead let Microsoft Entr
   "name": "authenticationmethods-get-started-reset-password-1"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/users/CameronW@M365x56085806.OnMicrosoft.com/authentication/passwordMethods/28c10230-6103-485e-b985-444c60001490/resetPassword
+POST https://graph.microsoft.com/v1.0/users/CameronW@Contoso.com/authentication/passwordMethods/28c10230-6103-485e-b985-444c60001490/resetPassword
 ```
 
 #### Response
