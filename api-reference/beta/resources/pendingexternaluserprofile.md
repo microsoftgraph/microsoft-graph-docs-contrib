@@ -1,6 +1,6 @@
 ---
 title: "pendingExternalUserProfile resource type"
-description: "Represents an external user profile for an external user in the Microsoft Entra tenant that the external user hasn't consented to."
+description: "Represents an external user profile for an external user in the Microsoft Entra tenant that is unredeemed."
 ms.localizationpriority: high
 author: "jkdouglas"
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an external user profile for an external user in the Microsoft Entra tenant that the external user hasn't yet consented to.
+Represents an external user profile for an external user in the Microsoft Entra tenant that is unredeemed.
 
 ## Methods
 
@@ -42,7 +42,7 @@ Represents an external user profile for an external user in the Microsoft Entra 
 |isEnabled|Boolean|Represents whether the pending external user profile is enabled in the directory.|
 |jobTitle|String|The job title of the external user profile.|
 |phoneNumber|String|The phone number of the pending external user profile. Must be in E.164 format.|
-|supervisorId|String|The object id of the supervisor of the pending external user profile. Supports the `$filter` (eq, startswith) query parameter.|
+|supervisorId|String|The object ID of the supervisor of the pending external user profile. Supports the `$filter` (eq, startswith) query parameter.|
 
 ## Relationships
 

@@ -29,7 +29,7 @@ Represents the profile of an external user in a Microsoft Entra tenant. This pro
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
 |address|[physicalOfficeAddress](physicalofficeaddress.md)|The office address of the external user profile.|
-|createdBy|String|The object id of the user who created the external user profile. Read-only. Not nullable. |
+|createdBy|String|The object ID of the user who created the external user profile. Read-only. Not nullable. |
 |createdDateTime|DateTimeOffset|Date and time when this external user was created. Not nullable. Read-only. |
 |companyName|String|The company name of the external user profile. Supports the `$filter` (eq, startswith) query parameter. |
 |deletedDateTime|DateTimeOffset|Date and time when this external user profile was deleted. Always `null` when the object isn't deleted. |
@@ -41,7 +41,7 @@ Represents the profile of an external user in a Microsoft Entra tenant. This pro
 |isEnabled|Boolean|Represents whether the external user profile is enabled in the directory. This property is peer to the `accountEnabled` property on the [User](user.md) object. |
 |jobTitle|String|The job title of the external user profile.|
 |phoneNumber|String|The phone number of the external user profile. Must be in E164 format.|
-|supervisorId|String|The object id of the supervisor of the external user profile. Supports the `$filter` (eq, startswith) query parameter.|
+|supervisorId|String|The object ID of the supervisor of the external user profile. Supports the `$filter` (eq, startswith) query parameter.|
 
 ## Relationships
 
