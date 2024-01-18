@@ -19,9 +19,9 @@ Represents an answer variant that can be used to change certain properties of a 
 |:---|:---|:---|
 |description|String|The answer variation description that is shown on the search results page.|
 |displayName|String|The answer variation name that is displayed in search results.|
-|webUrl|String|The URL link for the answer variation. When users select this answer variation from the search results, they are directed to the specified URL.|
 |languageTags|String collection|The list of countries or regions that are able to view this search answer.|
 |platforms|microsoft.graph.platform collection|The list of devices and operating systems that are able to view this answer variation. Possible values are: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
+|webUrl|String|The URL link for the answer variation. When users select this answer variation from the search results, they're directed to the specified URL.|
 
 ## Relationships
 
