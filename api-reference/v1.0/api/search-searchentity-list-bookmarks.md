@@ -74,8 +74,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.search.bookmark",
-  "isCollection": true
+  "@odata.type": "Collection(microsoft.graph.search.bookmark)"
 }
 -->
 ``` http
