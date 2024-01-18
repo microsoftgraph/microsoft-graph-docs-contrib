@@ -44,7 +44,7 @@ PATCH /search/bookmarks/{bookmarksId}
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
->**Note:** Updates to the collection properties update the entire collection. Any updates to a collection, such as keywords or categories, replace the collection entirely.
+>**Note:** Any updates to the properties of a collection, such as keywords or categories, replace the entire collection.
 
 |Property|Type|Description|
 |:---|:---|:---|
