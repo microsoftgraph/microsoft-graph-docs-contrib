@@ -29,21 +29,21 @@ Inherits from [searchAnswer](../resources/search-searchanswer.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|availabilityEndDateTime|DateTimeOffset|Date and time when the **qna** stops appearing as a search result. Set as `null` for always available. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|availabilityStartDateTime|DateTimeOffset|Date and time when the **qna** starts to appear as a search result. Set as `null` for always available. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|availabilityEndDateTime|DateTimeOffset|Date and time when the QnA stops appearing as a search result. Set as `null` for always available. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|availabilityStartDateTime|DateTimeOffset|Date and time when the QnA starts to appear as a search result. Set as `null` for always available. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |description|String|Answer that is displayed in search results. Inherited from [searchAnswer](../resources/search-searchanswer.md).|
 |displayName|String|Question that is displayed in search results. Inherited from [searchAnswer](../resources/search-searchanswer.md).|
-|groupIds|String collection|The list of security groups that are able to view this **qna**.|
-|id|String|The unique identifier (GUID) for the **qna**. Inherited from [searchAnswer](../resources/search-searchanswer.md).|
-|isSuggested|Boolean| `True` if a user or Microsoft suggested this **qna** to the admin. Read-only.|
-|keywords|[microsoft.graph.search.answerKeyword](../resources/search-answerkeyword.md)|Keywords that trigger this **qna** to appear in search results.|
-|languageTags|String collection|A list of geographically specific language names in which this **qna** can be viewed. Each language tag value follows the pattern {language}-{region}. For example, `en-us` is English as used in the United States. For the list of possible values, see [Supported language tags](search-api-answers-overview.md#supported-language-tags). |
-|lastModifiedBy|[microsoft.graph.identitySet](../resources/identityset.md)|Details of the user who created or last modified the **qna**. Inherited from [searchAnswer](../resources/search-searchanswer.md). Read-only. |
-|lastModifiedDateTime|DateTimeOffset| Date and time when the **qna** was created or last edited. Inherited from [searchAnswer](../resources/search-searchanswer.md). Read-only.|
-|platforms|microsoft.graph.devicePlatformType collection|List of devices and operating systems that are able to view this **qna**. Possible values are: `android`, `androidForWork`, `ios`, `macOS`, `windowsPhone81`, `windowsPhone81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`, `androidASOP`.|
-|state|microsoft.graph.search.answerState|State of the **qna**. Possible values are: `published`, `draft`, `excluded`, `unknownFutureValue`.|
-|targetedVariations|[microsoft.graph.search.answerVariant](../resources/search-answervariant.md) collection|Variations of a **qna** for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings apply to all variations.|
-|webUrl|String|The URL link for the **qna**. When users select this **qna** from the search results, they are directed to the specified URL. Inherited from [searchAnswer](../resources/search-searchanswer.md).|
+|groupIds|String collection|The list of security groups that are able to view this QnA.|
+|id|String|The unique identifier (GUID) for the QnA. Inherited from [searchAnswer](../resources/search-searchanswer.md).|
+|isSuggested|Boolean| `True` if a user or Microsoft suggested this QnA to the admin. Read-only.|
+|keywords|[microsoft.graph.search.answerKeyword](../resources/search-answerkeyword.md)|Keywords that trigger this QnA to appear in search results.|
+|languageTags|String collection|A list of geographically specific language names in which this QnA can be viewed. Each language tag value follows the pattern {language}-{region}. For example, `en-us` is English as used in the United States. For the list of possible values, see [Supported language tags](search-api-answers-overview.md#supported-language-tags). |
+|lastModifiedBy|[microsoft.graph.identitySet](../resources/identityset.md)|Details of the user who created or last modified the QnA. Inherited from [searchAnswer](../resources/search-searchanswer.md). Read-only. |
+|lastModifiedDateTime|DateTimeOffset| Date and time when the QnA was created or last edited. Inherited from [searchAnswer](../resources/search-searchanswer.md). Read-only.|
+|platforms|microsoft.graph.devicePlatformType collection|List of devices and operating systems that are able to view this QnA. Possible values are: `android`, `androidForWork`, `ios`, `macOS`, `windowsPhone81`, `windowsPhone81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`, `androidASOP`, `androidMobileApplicationManagement`, `iOSMobileApplicationManagement`, `unknownFutureValue`.|
+|state|microsoft.graph.search.answerState|State of the QnA. Possible values are: `published`, `draft`, `excluded`, `unknownFutureValue`.|
+|targetedVariations|[microsoft.graph.search.answerVariant](../resources/search-answervariant.md) collection|Variations of a QnA for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings apply to all variations.|
+|webUrl|String|The URL link for the QnA. When users select this QnA from the search results, they're directed to the specified URL. Inherited from [searchAnswer](../resources/search-searchanswer.md).|
 
 ## Relationships
 
