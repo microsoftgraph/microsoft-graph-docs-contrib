@@ -760,19 +760,19 @@
           "ChangeList": [
             {
               "Id": "edef20ed-4fde-4e6e-88b4-5b726bcf3750",
-              "ApiChange": "Enumeration",
-              "ChangedApiName": "endpointType",
-              "ChangeType": "Addition",
-              "Description": "Added the **endpointType** enumeration type.",
-              "Target": "endpointType"
+              "ApiChange": "Property",
+              "ChangedApiName": "associatedIdentity",
+              "ChangeType": "Change",
+              "Description": "Changed the **associatedIdentity** property to the [participantEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participantEndpoint?view=graph-rest-1.0) resource.",
+              "Target": "participantEndpoint"
             },
             {
               "Id": "edef20ed-4fde-4e6e-88b4-5b726bcf3750",
-              "ApiChange": "Resource",
-              "ChangedApiName": "communicationsIdentitySet",
-              "ChangeType": "Addition",
-              "Description": "Added the [communicationsIdentitySet](https://learn.microsoft.com/en-us/graph/api/resources/communicationsIdentitySet?view=graph-rest-beta) resource.",
-              "Target": "communicationsIdentitySet"
+              "ApiChange": "Property",
+              "ChangedApiName": "identity",
+              "ChangeType": "Change",
+              "Description": "Changed the **identity** property to the [participantBase](https://learn.microsoft.com/en-us/graph/api/resources/callRecords-participantBase?view=graph-rest-1.0) resource.",
+              "Target": "participantBase"
             }
           ],
           "Id": "edef20ed-4fde-4e6e-88b4-5b726bcf3750",
