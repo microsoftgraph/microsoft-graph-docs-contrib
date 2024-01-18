@@ -10,8 +10,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new SendVirtualAppointmentSmsPostRequestBody();
-$requestBody->setPhoneNumbers(['+13129224122', '+1242421412', 	]);
 $additionalData = [
+	'phoneNumbers' => [
+'+13129224122', '+1242421412', ],
 	'virtualAppointmentSmsType' => 'confirmation',
 ];
 $requestBody->setAdditionalData($additionalData);

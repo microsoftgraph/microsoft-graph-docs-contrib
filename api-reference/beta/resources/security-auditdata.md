@@ -1,6 +1,6 @@
 ---
 title: "auditData resource type"
-description: "auditData is an abstract type which supports the audit logs of various Microsoft 365 services. It supports defaultAuditData which contains the JSON of these Microsoft 365 services."
+description: "Abstract type that supports the audit logs of various Microsoft 365 services."
 author: "arishojaswi"
 ms.localizationpriority: medium
 ms.prod: "auditlogquery"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-auditData is an abstract type which supports the audit logs of various Microsoft 365 services. It supports defaultAuditData which contains the JSON of these Microsoft 365 services.
+An abstract type that supports the audit logs of various Microsoft 365 services like defaultAuditData which contains the JSON files of these Microsoft 365 services.
 
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.auditData"

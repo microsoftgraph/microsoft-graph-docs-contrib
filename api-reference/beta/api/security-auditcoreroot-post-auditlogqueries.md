@@ -1,6 +1,6 @@
 ---
 title: "Create auditLogQuery"
-description: "Create a new microsoft.graph.security.auditLogQuery object."
+description: "Create a new auditLogQuery object."
 author: "arishojaswi"
 ms.localizationpriority: medium
 ms.prod: "auditlogquery"
@@ -12,19 +12,19 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [microsoft.graph.security.auditLogQuery](../resources/security-auditlogquery.md) object.
+Create a new [auditLogQuery](../resources/security-auditlogquery.md) object.
 
 ## Permissions
-Through the Audit Search Graph API, auditing data can be accessed using the following permissions which are classified at a Microsoft 365 service level. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Through the Microsoft Purview Audit Search Graph API, auditing data can be accessed using the following permissions which are classified at a Microsoft 365 service level. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Microsoft 365 Service|Delegated (work or school account)|Delegated (personal Microsoft account)|Application
+|Microsoft 365 service|Delegated (work or school account)|Delegated (personal Microsoft account)|Application
 |:---|:---|:---|:---|
-|OneDrive|AuditLogsQuery-OneDrive.Read.All|Not supported|AuditLogsQuery-OneDrive.Read.All|
-|Exchange|AuditLogsQuery-Exchange.Read.All|Not supported|AuditLogsQuery-Exchange.Read.All|
-|SharePoint|AuditLogsQuery-SharePoint.Read.All|Not supported|AuditLogsQuery-SharePoint.Read.All|
-|Endpoint|AuditLogsQuery-Endpoint.Read.All|Not supported|AuditLogsQuery-Endpoint.Read.All|
-|Dynamics CRM|AuditLogsQuery-CRM.Read.All|Not supported|AuditLogsQuery-CRM.Read.All|
-|Entra|AuditLogsQuery-Entra.Read.All|Not supported|AuditLogsQuery-Entra.Read.All|
+|Microsoft OneDrive|AuditLogsQuery-OneDrive.Read.All|Not supported|AuditLogsQuery-OneDrive.Read.All|
+|Microsoft Exchange|AuditLogsQuery-Exchange.Read.All|Not supported|AuditLogsQuery-Exchange.Read.All|
+|Microsoft SharePoint|AuditLogsQuery-SharePoint.Read.All|Not supported|AuditLogsQuery-SharePoint.Read.All|
+|Microsoft Intune|AuditLogsQuery-Endpoint.Read.All|Not supported|AuditLogsQuery-Endpoint.Read.All|
+|Microsoft Dynamics CRM|AuditLogsQuery-CRM.Read.All|Not supported|AuditLogsQuery-CRM.Read.All|
+|Microsoft Entra|AuditLogsQuery-Entra.Read.All|Not supported|AuditLogsQuery-Entra.Read.All|
 |All Audit Logs|AuditLogsQuery.Read.All|Not supported|AuditLogsQuery.Read.All|
 
 
@@ -45,7 +45,7 @@ POST /security/auditCore/auditLogQueries
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [microsoft.graph.security.auditLogQuery](../resources/security-auditlogquery.md) object.
+In the request body, supply a JSON representation of the [auditLogQuery](../resources/security-auditlogquery.md) object.
 
 You can specify the following properties when creating a **auditLogQuery**.
 
@@ -58,22 +58,22 @@ You can specify the following properties when creating a **auditLogQuery**.
 |keywordFilter|String|Free text field to search non-indexed properties of the audit log. Optional.|
 |serviceFilter|String|The Office 365 service where the activity occurred. Optional.|
 |operationFilters|String collection|The name of the user or admin activity. For a description of the most common operations/activities, see [Search the audit log in the Office 365 Protection Center](https://go.microsoft.com/fwlink/p/?LinkId=708432). Optional.|
-|userPrincipalNameFilters|String collection|The UPN (User Principal Name) of the user who performed the action (specified in the Operation property) that resulted in the record being logged; for example, _my_name@my_domain_name_. Optional.|
+|userPrincipalNameFilters|String collection|The UPN (user principal name) of the user who performed the action (specified in the operation property) that resulted in the record being logged; for example, _my_name@my_domain_name_. Optional.|
 |ipAddressFilters|String collection|The IP address of the device that was used when the activity was logged. Optional.|
 |objectIdFilters|String collection|For SharePoint and OneDrive for Business activity, the full path name of the file or folder accessed by the user. For Exchange admin audit logging, the name of the object that was modified by the cmdlet. Optional.|
-|administrativeUnitIdFilters|String collection|Administrative Units tagged to an audit log record. Optional.|
+|administrativeUnitIdFilters|String collection|Administrative units tagged to an audit log record. Optional.|
 |status|microsoft.graph.security.auditLogQueryStatus|Current status of the query. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `cancelled`, `unknownFutureValue`. Optional.|
 
 
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [microsoft.graph.security.auditLogQuery](../resources/security-auditlogquery.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [auditLogQuery](../resources/security-auditlogquery.md) object in the response body.
 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "create_auditlogquery_from_"
@@ -112,7 +112,7 @@ Content-Type: application/json
 
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

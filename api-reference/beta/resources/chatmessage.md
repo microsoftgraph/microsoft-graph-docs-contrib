@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents an individual chat message within a [channel](channel.md) or [chat](chat.md). The message can be a root message or part of a thread that is defined by the **replyToId** property in the message.
 
-> **Note**: This resource supports subscribing to changes (create, update, and delete) using [change notifications](../resources/webhooks.md). This allows callers to subscribe and get changes in real time. For details, see [Get notifications for messages](/graph/teams-changenotifications-chatMessage).
+> **Note**: This resource supports subscribing to changes (create, update, and delete) using [change notifications](../resources/change-notifications-api-overview.md). This allows callers to subscribe and get changes in real time. For details, see [Get notifications for messages](/graph/teams-changenotifications-chatMessage).
 
 ## Methods
 
