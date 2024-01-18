@@ -48,10 +48,9 @@ The following example shows how to call this API.
 ### Request
 Here's an example of a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070","ba8e4215-4fb2-4dba-abe7-a8f2585177d3"],
+  "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070","24eda3bf-32e5-4c70-a14d-831e606a2e4f"],
   "name": "educationmodule_publish_1"
 }-->
 

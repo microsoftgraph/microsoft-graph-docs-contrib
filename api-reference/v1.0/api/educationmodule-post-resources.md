@@ -141,17 +141,17 @@ The following example shows a request.
   "name": "create_educationwordresource_from_educationmodule"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/74b318fa-e882-4dad-8e1c-dab091b12fe7/resources
+POST https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/97acf4f0-d62f-4b98-8827-6ac805fb6949/resources
 Content-type: application/json
 
-{ 
+{
     "resource": {
         "@odata.type": "#microsoft.graph.educationWordResource",
-        "displayName": "test_word_file.docx",
-        "file" :{
-            "odataid":"https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F2UVvTgEnTKi0GO59dbCL/items/01VANVJQ23DHK5BYNOKJCZOUJZJBOAOUZP"
+        "displayName": "Word_file.docx",
+        "file": {
+            "odataid": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F2UVvTgEnTKi0GO59dbCL/items/01VANVJQ3XYXSBRKMQM5GISQGPVO6BNO27"
         }
-     }
+    }
 }
 ```
 
@@ -170,19 +170,19 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/modules('74b318fa-e882-4dad-8e1c-dab091b12fe7')/resources/$entity",
-    "id": "151c668c-6c77-495e-a28e-c02fa155375a",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/modules('97acf4f0-d62f-4b98-8827-6ac805fb6949')/resources/$entity",
+    "id": "2d8a475d-918e-4992-b8fe-97ab613c1c49",
     "resource": {
         "@odata.type": "#microsoft.graph.educationWordResource",
-        "displayName": "test_word_file.docx",
-        "createdDateTime": "2023-07-25T21:22:53.549826Z",
-        "lastModifiedDateTime": "2023-07-25T21:22:53.5498285Z",
-        "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F2UVvTgEnTKi0GO59dbCL/items/01VANVJQ23DHK5BYNOKJCZOUJZJBOAOUZP",
+        "displayName": "Word_file.docx",
+        "createdDateTime": "2024-01-18T17:05:34.3789404Z",
+        "lastModifiedDateTime": "2024-01-18T17:05:34.378942Z",
+        "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F2UVvTgEnTKi0GO59dbCL/items/01VANVJQ3XYXSBRKMQM5GISQGPVO6BNO27",
         "createdBy": {
             "application": null,
             "device": null,
             "user": {
-                "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+                "id": "fadaae59-b18c-44d1-993f-fe8a281bd69c",
                 "displayName": null
             }
         },
@@ -190,7 +190,7 @@ Content-type: application/json
             "application": null,
             "device": null,
             "user": {
-                "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+                "id": "fadaae59-b18c-44d1-993f-fe8a281bd69c",
                 "displayName": null
             }
         }
@@ -273,15 +273,15 @@ The following example shows a request.
   "name": "create_educationexcelresource_from_educationmodule"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/74b318fa-e882-4dad-8e1c-dab091b12fe7/resources
+POST https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/6a8242df-f2b6-4fdb-9b80-66b847ef8e75/resources
 Content-type: application/json
 
 {
     "resource": {
         "@odata.type": "#microsoft.graph.educationExcelResource",
         "displayName": "test_excel_file.xlsx",
-        "file" :{
-          "odataid":"https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F2UVvTgEnTKi0GO59dbCL/items/01VANVJQZLIO353OYQOBCIFCJGKBSLB4DK"
+        "file": {
+            "odataid": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F2UVvTgEnTKi0GO59dbCL/items/01VANVJQ5DL55LC4M35VEZWBZFJCX5V4QO"
         }
     }
 }
@@ -302,19 +302,19 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/modules('74b318fa-e882-4dad-8e1c-dab091b12fe7')/resources/$entity",
-    "id": "13544dd3-7f42-42f6-a1d5-62da1885d7bc",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/modules('6a8242df-f2b6-4fdb-9b80-66b847ef8e75')/resources/$entity",
+    "id": "eaac58ad-a085-4696-82b4-2a5669da4ef0",
     "resource": {
         "@odata.type": "#microsoft.graph.educationExcelResource",
         "displayName": "test_excel_file.xlsx",
-        "createdDateTime": "2023-07-25T21:22:56.6099823Z",
-        "lastModifiedDateTime": "2023-07-25T21:22:56.6099861Z",
-        "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F2UVvTgEnTKi0GO59dbCL/items/01VANVJQZLIO353OYQOBCIFCJGKBSLB4DK",
+        "createdDateTime": "2024-01-18T17:11:21.3773789Z",
+        "lastModifiedDateTime": "2024-01-18T17:11:21.3773812Z",
+        "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F2UVvTgEnTKi0GO59dbCL/items/01VANVJQ5DL55LC4M35VEZWBZFJCX5V4QO",
         "createdBy": {
             "application": null,
             "device": null,
             "user": {
-                "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+                "id": "fadaae59-b18c-44d1-993f-fe8a281bd69c",
                 "displayName": null
             }
         },
@@ -322,7 +322,7 @@ Content-type: application/json
             "application": null,
             "device": null,
             "user": {
-                "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+                "id": "fadaae59-b18c-44d1-993f-fe8a281bd69c",
                 "displayName": null
             }
         }
@@ -339,14 +339,14 @@ The following example shows a request.
   "name": "create_educationpowerpointresource_from_educationmodule"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/74b318fa-e882-4dad-8e1c-dab091b12fe7/resources
+POST https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/c75c2706-f352-47b4-a11e-f1292305c1d1/resources
 Content-type: application/json
 
 {
     "resource": {
         "@odata.type": "#microsoft.graph.educationPowerPointResource",
-        "displayName":"ppt_test.pptx",
-        "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F2UVvTgEnTKi0GO59dbCL/items/01VANVJQZEG2AM23OQ5NA2LFTHERBABBK6"
+        "displayName": "ppt_file.pptx",
+        "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F2UVvTgEnTKi0GO59dbCL/items/01VANVJQ2GE3EYXUX6NJEI6UWOKBM74MHA"
     }
 }
 ```
@@ -367,19 +367,19 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/modules('74b318fa-e882-4dad-8e1c-dab091b12fe7')/resources/$entity",
-    "id": "4d112f68-0351-40ae-8adc-adfd14f320b3",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/modules('c75c2706-f352-47b4-a11e-f1292305c1d1')/resources/$entity",
+    "id": "2596ad63-56f4-4a05-bf3e-8918dca4aaa4",
     "resource": {
         "@odata.type": "#microsoft.graph.educationPowerPointResource",
-        "displayName": "ppt_test.pptx",
-        "createdDateTime": "2023-07-25T21:22:58.1097081Z",
-        "lastModifiedDateTime": "2023-07-25T21:22:58.1097107Z",
-        "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F2UVvTgEnTKi0GO59dbCL/items/01VANVJQZEG2AM23OQ5NA2LFTHERBABBK6",
+        "displayName": "ppt_file.pptx",
+        "createdDateTime": "2024-01-18T17:15:38.6453797Z",
+        "lastModifiedDateTime": "2024-01-18T17:15:38.6453821Z",
+        "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F2UVvTgEnTKi0GO59dbCL/items/01VANVJQ2GE3EYXUX6NJEI6UWOKBM74MHA",
         "createdBy": {
             "application": null,
             "device": null,
             "user": {
-                "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+                "id": "fadaae59-b18c-44d1-993f-fe8a281bd69c",
                 "displayName": null
             }
         },
@@ -387,7 +387,7 @@ Content-type: application/json
             "application": null,
             "device": null,
             "user": {
-                "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+                "id": "fadaae59-b18c-44d1-993f-fe8a281bd69c",
                 "displayName": null
             }
         }
@@ -410,8 +410,8 @@ Content-type: application/json
 {
     "resource": {
         "@odata.type": "#microsoft.graph.educationMediaResource",
-        "displayName":"ModulePicture.png.PNG",
-        "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!jo4FZwieH0egqMcb0kzLto2dHnCI_HtGqojoskVNzAQFu19Poy_4Q5qORceBrNTg/items/01HJDNPWPSLNYWHWA5HVE37XZXZTS2NDCI"
+        "displayName": "ModulePicture.PNG",
+        "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F2UVvTgEnTKi0GO59dbCL/items/01VANVJQ56XC3M4V7F5JEK3NLECZH4HWGP"
     }
 }
 ```
@@ -431,19 +431,19 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/modules('74b318fa-e882-4dad-8e1c-dab091b12fe7')/resources/$entity",
-    "id": "17d1ed4d-ba9e-483e-82d2-c0e1826a288f",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/modules('0655c191-0252-4077-b446-8882e8817831')/resources/$entity",
+    "id": "ebe34956-9beb-460a-be13-eae70ac0fe29",
     "resource": {
         "@odata.type": "#microsoft.graph.educationMediaResource",
-        "displayName": "media-resource.PNG",
-        "createdDateTime": "2023-07-25T21:22:59.0845073Z",
-        "lastModifiedDateTime": "2023-07-25T21:22:59.0845089Z",
-        "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F2UVvTgEnTKi0GO59dbCL/items/01VANVJQ3IYW2FOZYQNBELS7N4RRREIMVK",
+        "displayName": "ModulePicture.PNG",
+        "createdDateTime": "2024-01-18T17:19:38.0361989Z",
+        "lastModifiedDateTime": "2024-01-18T17:19:38.0361999Z",
+        "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F2UVvTgEnTKi0GO59dbCL/items/01VANVJQ56XC3M4V7F5JEK3NLECZH4HWGP",
         "createdBy": {
             "application": null,
             "device": null,
             "user": {
-                "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+                "id": "fadaae59-b18c-44d1-993f-fe8a281bd69c",
                 "displayName": null
             }
         },
@@ -451,7 +451,7 @@ Content-type: application/json
             "application": null,
             "device": null,
             "user": {
-                "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+                "id": "fadaae59-b18c-44d1-993f-fe8a281bd69c",
                 "displayName": null
             }
         }
