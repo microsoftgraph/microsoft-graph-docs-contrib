@@ -60,7 +60,7 @@ Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) with an acc
 
 Next, grant the app the *UserAuthenticationMethod.ReadWrite.All* permission. You need this permission to perform both the read and write operations in this scenario.
 
-You can now start using the API. In this scenario, you use the APIs to manage Cameron White's authentication methods.
+You can now start using the APIs. In this scenario, you use the APIs to manage Cameron White's authentication methods.
 
 ## Step 2: Check the user's authentication methods
 
@@ -200,7 +200,7 @@ Confirm that you can see both numbers as expected. The IDs of the different phon
 
 ## Step 5: Remove a phone number from the user
 
-Cameron is now working from home so you need to remove their office number from their account.
+Cameron is now working from home so you need to remove the *office* number from his account.
 
 <!-- {
   "blockType": "request",
@@ -210,11 +210,11 @@ Cameron is now working from home so you need to remove their office number from 
 DELETE https://graph.microsoft.com/v1.0/users/CameronW@Contoso.com/authentication/phoneMethods/e37fc753-ff3b-4958-9484-eaa9425c82bc
 ```
 
-The request returns a `204 No Content` response code. To verify that the method was removed from Cameron's account, rerun the request in Step 4. The user should now have only the mobile phone and password authentication methods.
+The request returns a `204 No Content` response code. To verify that the *office* phone method was removed from Cameron's account, rerun the request in Step 4. Cameron should now have only the mobile phone and password authentication methods.
 
 ## Step 6: Reset the user's password
 
-Cameron has forgotten their password and you need to reset it for them. You can reset a user's password and specify a temporary password, or you can let Microsoft Entra ID generate a temporary password for you.
+Cameron has forgotten their password and you need to reset it for them. You can reset a user's password and specify a temporary password, or you can let Microsoft Entra ID generate a temporary password.
 
 In both methods, the response includes a *Location* header with a URL you can use to check the status of the operation via a GET operation. The reset operation doesn't complete immediately as Microsoft Entra ID needs to sync the password, including down to Active Directory in the tenant's on-premises infrastructure (for on-premises users). The URL is valid for 24 hours.
 
@@ -296,6 +296,7 @@ GET https://graph.microsoft.com/v1.0/users/a87cc624-b550-4559-b934-3bc0325a4808/
 } -->
 ```http
 HTTP/1.1 202 Accepted
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('a87cc624-b550-4559-b934-3bc0325a4808')/authentication/operations/$entity",
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET users('<guid>')/authentication/operations('<guid>')?$select=createdDateTime,lastActionDateTime",
