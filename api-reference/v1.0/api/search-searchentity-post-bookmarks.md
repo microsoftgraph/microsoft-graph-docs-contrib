@@ -113,7 +113,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.search.bookmark"
 }-->
 ```http
-HTTP/1.1 201 CREATED
+HTTP/1.1 201 Created
 Location: /733b26d5-af76-4eea-ac69-1a0ce8716897
 Content-Type: application/json
 
