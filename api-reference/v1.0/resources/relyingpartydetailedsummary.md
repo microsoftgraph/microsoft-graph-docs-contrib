@@ -27,12 +27,12 @@ Inherits from [entity](../resources/entity.md).
 |[Delete relyingPartyDetailedSummary](../api/relyingpartydetailedsummary-delete.md)|None|Delete a [relyingPartyDetailedSummary](../resources/relyingpartydetailedsummary.md) object.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |failedSignInCount|Int64|# of failed sign ins on AD FS in the period specified.|
 |id|String|Unique Identifier generated at API. Inherited from [entity](../resources/entity.md).|
 |migrationStatus|migrationStatus|Indication of whether we believe the app can be easily moved to AAD. The possible values are: `ready`, `needsReview`, `additionalStepsRequired`, `unknownFutureValue`.|
-<!--|migrationValidationDetails|[keyValuePair](../resources/intune-keyvaluepair.md) collection|**TODO: Add Description**|-->
 |relyingPartyId|String|This identifier is used to identify the relying party to this Federation Service. It is used when issuing claims to the relying party.|
 |relyingPartyName|String|Name of website or other entity on the Internet that uses an identity provider to authenticate a user who wants to log in.|
 |replyUrls|String collection|Specifies where the relying party expects to receive the token.|
@@ -41,6 +41,7 @@ Inherits from [entity](../resources/entity.md).
 |successfulSignInCount|Int64|# of successful sign ins on AD FS.|
 |totalSignInCount|Int64|# of successful + failed sign ins failed sign ins on AD FS in the period specified.|
 |uniqueUserCount|Int64|# of unique users that have signed into the application. |
+<!--|migrationValidationDetails|[keyValuePair](../resources/intune-keyvaluepair.md) collection|**TODO: Add Description**|-->
 
 ## Relationships
 None.

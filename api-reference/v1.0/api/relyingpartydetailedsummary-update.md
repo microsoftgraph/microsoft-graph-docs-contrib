@@ -47,21 +47,20 @@ PATCH /relyingPartyDetailedSummary
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
-**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|relyingPartyId|String|**TODO: Add Description** Required.|
-|serviceId|String|**TODO: Add Description** Required.|
-|relyingPartyName|String|**TODO: Add Description** Required.|
-|successfulSignInCount|Int64|**TODO: Add Description** Required.|
-|failedSignInCount|Int64|**TODO: Add Description** Required.|
-|totalSignInCount|Int64|**TODO: Add Description** Required.|
-|signInSuccessRate|Double|**TODO: Add Description** Required.|
-|uniqueUserCount|Int64|**TODO: Add Description** Required.|
-|migrationStatus|migrationStatus|**TODO: Add Description**. The possible values are: `ready`, `needsReview`, `additionalStepsRequired`, `unknownFutureValue`. Required.|
+|relyingPartyId|String|This identifier is used to identify the relying party to this Federation Service. It is used when issuing claims to the relying party. Required.|
+|serviceId|String|Uniquely identifies the AD forest. Required.|
+|relyingPartyName|String|Name of website or other entity on the Internet that uses an identity provider to authenticate a user who wants to log in. Required.|
+|successfulSignInCount|Int64|# of successful sign ins on AD FS. Required.|
+|failedSignInCount|Int64|# of failed sign ins on AD FS in the period specified. Required.|
+|totalSignInCount|Int64|# of successful + failed sign ins failed sign ins on AD FS in the period specified. Required.|
+|signInSuccessRate|Double|# of successful / (# Successful + #failed sign ins) on AD FS in the period specified. Required.|
+|uniqueUserCount|Int64|# of unique users that have signed into the application. Required.|
+|migrationStatus|migrationStatus|Indication of whether we believe the app can be easily moved to AAD. The possible values are: `ready`, `needsReview`, `additionalStepsRequired`, `unknownFutureValue`. Required.|
+|replyUrls|String collection|Specifies where the relying party expects to receive the token. Required.|
+
 <!--|migrationValidationDetails|[keyValuePair](../resources/intune-keyvaluepair.md) collection|**TODO: Add Description** Required.|-->
-|replyUrls|String collection|**TODO: Add Description** Required.|
 
 
 

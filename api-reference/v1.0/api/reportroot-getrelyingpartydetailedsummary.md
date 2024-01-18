@@ -1,6 +1,6 @@
 ---
 title: "reportRoot: getRelyingPartyDetailedSummary"
-description: "Enables customers to get the summary of ADFS relying Parties Information on Daily/Weekly/Monthly."
+description: "Get a summary of ADFS relying Parties Information."
 author: "gmcnamara-microsoft"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
