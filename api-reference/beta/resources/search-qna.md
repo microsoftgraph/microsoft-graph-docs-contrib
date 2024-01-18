@@ -45,7 +45,7 @@ Inherits from [searchAnswer](../resources/search-searchanswer.md).
 |platforms|microsoft.graph.devicePlatformType collection|List of devices and operating systems that are able to view this **qna**. Possible values are: `android`, `androidForWork`, `ios`, `macOS`, `windowsPhone81`, `windowsPhone81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`, `androidASOP`.|
 |state|microsoft.graph.search.answerState|State of the **qna**. Possible values are: `published`, `draft`, `excluded`, `unknownFutureValue`.|
 |targetedVariations|[microsoft.graph.search.answerVariant](../resources/search-answervariant.md) collection|Variations of a **qna** for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings apply to all variations.|
-|webUrl|String|The URL link for the **qna**. When users select this **qna** from the search results, they are directed to the specified URL. Inherited from [searchAnswer](../resources/search-searchanswer.md).|
+|webUrl|String|The URL link for the **qna**. When users select this **qna** from the search results, they're directed to the specified URL. Inherited from [searchAnswer](../resources/search-searchanswer.md).|
 
 ## Relationships
 
