@@ -8,13 +8,13 @@ doc_type: apiPageType
 ---
 
 # Update qna
+
 Namespace: microsoft.graph.search
 
 Update the properties of a [qna](../resources/search-qna.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -34,30 +34,31 @@ PATCH /search/qnas/{qnaId}
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [qna](../resources/search-qna.md) object. Supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintains their previous values or are recalculated based on changes to other property values. For best performance, you shouldn't include existing values that haven't changed.
->**Note:** Updates to collection properties will update the entire collection. Any updates to a collection, such as keywords or categories, will replace the collection entirely.
+
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+
+>**Note:** Any updates to the properties of a collection, such as keywords, replace the entire collection.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Question displayed in search results. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
-|description|String|Answer displayed in search results. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
-|webUrl|String|Qna URL link. When users select this qna in search results, they go to this URL. Inherited from [searchAnswer](../resources/search-searchAnswer.md).|
-|availabilityStartDateTime|DateTimeOffset|Timestamp of when the qna starts to appear as a search result. Set as `null` for always available.|
-|availabilityEndDateTime|DateTimeOffset|Timestamp of when the qna stops to appear as a search result. Set as `null` for always available.|
-|languageTags|String collection|List of countries or regions able to view this qna.|
-|platforms|microsoft.graph.devicePlatformType collection|List of devices and operating systems able to view this qna. Possible values are: `unknown`, `android`, `androidForWork`, `ios`, `macOS`, `windowsPhone81`, `windowsPhone81AndLater`, `windows10AndLater`, `androidWorkProfile`, `androidASOP`.|
-|targetedVariations|[microsoft.graph.search.answerVariant](../resources/search-answerVariant.md) collection|Variations of a qna for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings apply to all variations.|
-|keywords|[microsoft.graph.search.answerKeyword](../resources/search-answerKeyword.md)|Keywords that trigger this qna to appear in search results.|
-|state|microsoft.graph.search.answerState|State of the qna. Possible values are: `published`, `draft`, `excluded`, or `unknownFutureValue`.|
-|groupIds|String collection|List of security groups able to view this qna.|
-
-
+|availabilityEndDateTime|DateTimeOffset|Date and time when the Q&A stops appearing as a search result. Set as `null` for always available. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|availabilityStartDateTime|DateTimeOffset|Date and time when the Q&A starts to appear as a search result. Set as `null` for always available. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|description|String|Answer that is displayed in search results. Inherited from [searchAnswer](../resources/search-searchanswer.md).|
+|displayName|String|Question that is displayed in search results. Inherited from [searchAnswer](../resources/search-searchanswer.md).|
+|groupIds|String collection|The list of security groups that are able to view this Q&A.|
+|keywords|[microsoft.graph.search.answerKeyword](../resources/search-answerkeyword.md)|Keywords that trigger this Q&A to appear in search results.|
+|languageTags|String collection|A list of geographically specific language names in which this Q&A can be viewed. Each language tag value follows the pattern {language}-{region}. For example, `en-us` is English as used in the United States. For the list of possible values, see [Supported language tags](search-api-answers-overview.md#supported-language-tags). |
+|platforms|microsoft.graph.devicePlatformType collection|List of devices and operating systems that are able to view this Q&A. Possible values are: `android`, `androidForWork`, `ios`, `macOS`, `windowsPhone81`, `windowsPhone81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`, `androidASOP`, `androidMobileApplicationManagement`, `iOSMobileApplicationManagement`, `unknownFutureValue`.|
+|state|microsoft.graph.search.answerState|State of the Q&A. Possible values are: `published`, `draft`, `excluded`, `unknownFutureValue`.|
+|targetedVariations|[microsoft.graph.search.answerVariant](../resources/search-answervariant.md) collection|Variations of a Q&A for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings apply to all variations.|
+|webUrl|String|The URL link for the Q&A. When users select this Q&A from the search results, they are directed to the specified URL. Inherited from [searchAnswer](../resources/search-searchanswer.md).|
 
 ## Response
 
@@ -66,6 +67,9 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
+
+The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "update_qna"
@@ -75,12 +79,14 @@ PATCH https://graph.microsoft.com/v1.0/search/qnas/733b26d5-af76-4eea-ac69-1a0ce
 Content-Type: application/json
 
 {
-    "description": "The dates that Contoso offices will be closed to observe holidays. These dates may differ from the actual date of the holiday in cases where the holiday falls on a wee​kend."
+  "description": "The dates that Contoso offices will be closed to observe holidays. These dates may differ from the actual date of the holiday in cases where the holiday falls on a wee​kend."
 }
 ```
 
-
 ### Response
+
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -88,4 +94,3 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 204 No Content
 ```
-
