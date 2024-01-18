@@ -18,7 +18,7 @@ The least privileged permission for a specific scenario might be different betwe
 
 For example, on Azure AD Graph, reading users in app-only scenarios requires the *Directory.Read.All* permission. This permission also allows your app to read all the groups, apps, and some policies in your tenant. However, on Microsoft Graph, reading users in app-only scenarios requires only the *User.Read.All* permission.
 
-While the permission strings might be the same in both Azure AD Graph and Microsoft Graph, they have different identifiers. However, similar to Azure AD Graph, Microsoft Graph also exposes both application and delegated permissions. Admin consent is always required for application permissions.
+While the permission strings might be the same in both Azure AD Graph and Microsoft Graph, they have different identifiers. However, similar to Azure AD Graph, Microsoft Graph also exposes both application and delegated permissions. Administrator consent is always required for application permissions.
 
 The article provides a mapping of Azure AD Graph to Microsoft Graph permissions to help you migrate your apps.
 
