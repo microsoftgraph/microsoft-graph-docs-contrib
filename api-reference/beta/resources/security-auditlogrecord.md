@@ -21,7 +21,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 
 | Method                                                                   | Return type                                                                                   | Description                                                                                                                           |
 | :----------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------ |
-| [List auditLogRecords](../api/security-auditlogquery-list-records.md)    | [microsoft.graph.security.auditLogRecord](../resources/security-auditlogrecord.md) collection | Get a list of the [microsoft.graph.security.auditLogRecord](../resources/security-auditlogrecord.md) objects and their properties.    |
+| [List auditLogRecords](../api/security-auditlogquery-list-records.md)    | [auditLogRecord](../resources/security-auditlogrecord.md) collection | Get a list of the [auditLogRecord](../resources/security-auditlogrecord.md) objects and their properties.    |
 
 ## Properties
 
