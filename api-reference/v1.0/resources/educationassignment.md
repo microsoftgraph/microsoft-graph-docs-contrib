@@ -64,6 +64,7 @@ Inherits from [entity](../resources/entity.md).
 |instructions|[itemBody](itembody.md)| Instructions for the assignment.  The instructsions and the display name tell the student what to do. |
 |lastModifiedBy|[identitySet](identityset.md)| Who last modified the **assignment**. |
 |lastModifiedDateTime|DateTimeOffset|Moment when the **assignment** was last modified.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|moduleUrl|string| The URL of the module from which to access the **assignment**.|
 |notificationChannelUrl|String|Optional field to specify the URL of the [channel](channel.md) to post the **assignment** publish notification. If not specified or null, defaults to the `General` channel. This field only applies to **assignments** where the **assignTo** value is [educationAssignmentClassRecipient](educationassignmentclassrecipient.md). Updating the **notificationChannelUrl** isn't allowed after the assignment has been published.|
 |resourcesFolderUrl|string| Folder URL where all the file resources for this **assignment** are stored.|
 |status|string| Status of the **Assignment**.  You can't PATCH this value.  Possible values are: `draft`, `scheduled`, `published`, `assigned`.|
@@ -112,6 +113,7 @@ The following JSON representation shows the resource type.
   "instructions": {"@odata.type": "microsoft.graph.itemBody"},
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
+  "moduleUrl": "String",
   "notificationChannelUrl": "String",
   "resourcesFolderUrl": "String",
   "status": "String",  

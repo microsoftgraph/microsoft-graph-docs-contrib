@@ -1,4 +1,4 @@
-`---
+---
 title: "List class modules"
 description: "Retrieve a list of module objects."
 author: "v-rmanda"

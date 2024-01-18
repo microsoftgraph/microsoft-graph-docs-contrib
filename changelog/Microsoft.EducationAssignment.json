@@ -3,6 +3,96 @@
     {
       "ChangeList": [
         {
+          "Id": "197ba34c-9687-455e-9033-b4de319b8bf4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationModule",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationModule](https://learn.microsoft.com/en-us/graph/api/resources/educationModule?view=graph-rest-beta) resource and supported methods.",
+          "Target": "educationModule"
+        },
+        {
+          "Id": "197ba34c-9687-455e-9033-b4de319b8bf4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationModuleResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationModuleResource](https://learn.microsoft.com/en-us/graph/api/resources/educationModuleResource?view=graph-rest-beta) resource and supported methods.",
+          "Target": "educationModuleResource"
+        },
+        {
+          "Id": "197ba34c-9687-455e-9033-b4de319b8bf4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationChannelResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationChannelResource](https://learn.microsoft.com/en-us/graph/api/resources/educationChannelResource?view=graph-rest-beta) resource and supported methods.",
+          "Target": "educationChannelResource"
+        },
+        {
+          "Id": "197ba34c-9687-455e-9033-b4de319b8bf4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationLinkedAssignmentResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationLinkedAssignmentResource](https://learn.microsoft.com/en-us/graph/api/resources/educationLinkedAssignmentResource?view=graph-rest-beta) resource and supported methods.",
+          "Target": "educationLinkedAssignmentResource"
+        },
+        {
+          "Id": "197ba34c-9687-455e-9033-b4de319b8bf4",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "educationModuleStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **educationModuleStatus** enumeration type.",
+          "Target": "educationModuleStatus"
+        },
+        {
+          "Id": "197ba34c-9687-455e-9033-b4de319b8bf4",
+          "ApiChange": "Property",
+          "ChangedApiName": "moduleUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **moduleUrl** property to the [educationAssignment](https://learn.microsoft.com/graph/api/resources/educationAssignment?view=graph-rest-beta) resource.",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "197ba34c-9687-455e-9033-b4de319b8bf4",
+          "ApiChange": "Method",
+          "ChangedApiName": "publish",
+          "ChangeType": "Addition",
+          "Description": "Added the [publish](https://learn.microsoft.com/graph/api/educationmodule-publish?view=graph-rest-beta) method to the [educationModule](https://learn.microsoft.com/en-us/graph/api/resources/educationModule?view=graph-rest-beta) resource.",
+          "Target": "educationModule"
+        },
+        {
+          "Id": "197ba34c-9687-455e-9033-b4de319b8bf4",
+          "ApiChange": "Method",
+          "ChangedApiName": "pin",
+          "ChangeType": "Addition",
+          "Description": "Added the [pin](https://learn.microsoft.com/graph/api/educationmodule-pin?view=graph-rest-beta) method to the [educationModule](https://learn.microsoft.com/en-us/graph/api/resources/educationModule?view=graph-rest-beta) resource.",          
+          "Target": "educationModule"
+        },
+        {
+          "Id": "197ba34c-9687-455e-9033-b4de319b8bf4",
+          "ApiChange": "Method",
+          "ChangedApiName": "unpin",
+          "ChangeType": "Addition",
+          "Description": "Added the [unpin](https://learn.microsoft.com/graph/api/educationmodule-unpin?view=graph-rest-beta) method to the [educationModule](https://learn.microsoft.com/en-us/graph/api/resources/educationModule?view=graph-rest-beta) resource.",          
+          "Target": "educationModule"
+        },
+        {
+          "Id": "197ba34c-9687-455e-9033-b4de319b8bf4",
+          "ApiChange": "Method",
+          "ChangedApiName": "setUpResourcesFolder",
+          "ChangeType": "Addition",
+          "Description": "Added the [setUpResourcesFolder](https://learn.microsoft.com/graph/api/educationmodule-setupresourcesfolder?view=graph-rest-beta) method to the [educationModule](https://learn.microsoft.com/en-us/graph/api/resources/educationModule?view=graph-rest-beta) resource.",
+          "Target": "educationModule"
+        }
+      ],
+      "Id": "197ba34c-9687-455e-9033-b4de319b8bf4",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-08-11T17:22:42.5007887Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },      
+    {    
+      "ChangeList": [
+        {
           "Id": "cf879894-1649-4065-8cf4-1f105766f478",
           "ApiChange": "Method",
           "ChangedApiName": "GET",
