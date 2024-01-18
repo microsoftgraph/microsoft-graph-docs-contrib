@@ -1,7 +1,7 @@
 ---
 title: "reportRoot resource type"
 description: "Represents a container for Microsoft Entra reporting resources."
-author: "kvenkit"
+author: "gmcnamara-microsoft"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
@@ -19,6 +19,7 @@ Represents a container for Microsoft Entra reporting resources.
 | :---------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [List userRegistrationDetails](../api/authenticationmethodsroot-list-userregistrationdetails.md)               | [userRegistrationDetails](../resources/userregistrationdetails.md) collection               | Get the state of authentication methods of all users in the tenant. |
 | [Get userRegistrationDetails](../api/userregistrationdetails-get.md) | [userRegistrationDetails](../resources/userregistrationdetails.md) collection               | Get the state of authentication methods of a user in the tenant. |
+|[getRelyingPartyDetailedSummary](../api/reportroot-getrelyingpartydetailedsummary.md)|[relyingPartyDetailedSummary](../resources/relyingpartydetailedsummary.md) collection|Get a list of Relying Parties on AD FS.|
 
 ## Properties
 

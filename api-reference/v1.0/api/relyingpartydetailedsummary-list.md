@@ -1,19 +1,18 @@
 ---
-title: "List relyingPartyDetailedSummary"
-description: "Retrieve a list of relyingPartyDetailedSummary objects."
+title: "List relyingPartyDetailedSummary objects"
+description: "Get a list of the relyingPartyDetailedSummary objects and their properties."
 ms.localizationpriority: medium
 author: "gmcnamara-microsoft"
 ms.prod: "identity-and-access-reports"
 doc_type: "apiPageType"
 ---
 
-# List relyingPartyDetailedSummary
+# List relyingPartyDetailedSummary objects
 
 Namespace: microsoft.graph
 
 Retrieve a list of **relyingPartyDetailedSummary** objects.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -72,42 +71,8 @@ The following example shows a request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/getRelyingPartyDetailedSummary(period='period_value')
+GET https://graph.microsoft.com/v1.0/reports/getRelyingPartyDetailedSummary(period='period_value')
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-relyingpartydetailedsummary-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-relyingpartydetailedsummary-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-relyingpartydetailedsummary-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-relyingpartydetailedsummary-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-relyingpartydetailedsummary-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-relyingpartydetailedsummary-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-relyingpartydetailedsummary-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-relyingpartydetailedsummary-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -126,24 +91,28 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "1fec2821-6c43-4919-9560-ce36c820faa5",
-  "relyingPartyId": "https://contosoorg-dev-ed.my.contoso.com",
-  "serviceId": "287ed092-c182-4748-99a9-9ef3b5a0a0f9",
-  "relyingPartyName": "contoso",
-  "successfulSignInCount": 90,
-  "failedSignInCount": 10,
-  "totalSignInCount": 100,
-  "signInSuccessRate":90.0,
-  "uniqueUserCount": 10,
-  "migrationStatus": "ready",
-  "replyUrls": [
-      "https://contosoorg-dev-ed.my.contoso.com"
-  ],
-  "migrationValidationDetails": [
-      {
-          "name": "AdditionalWSFedEndpointCheckResult",
-          "value": "{\"result\": 0, \"message\": \"No additional WS-Federation endpoints were found.\"}"
-      }
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.relyingPartyDetailedSummary",
+      "id": "bff5a169-eeb4-5159-b7f6-c5bb9464a6ca",
+      "relyingPartyId": "String",
+      "serviceId": "String",
+      "relyingPartyName": "String",
+      "successfulSignInCount": "Integer",
+      "failedSignInCount": "Integer",
+      "totalSignInCount": "Integer",
+      "signInSuccessRate": "Double",
+      "uniqueUserCount": "Integer",
+      "migrationStatus": "String",
+      "migrationValidationDetails": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair"
+        }
+      ],
+      "replyUrls": [
+        "String"
+      ]
+    }
   ]
 }
 ```
