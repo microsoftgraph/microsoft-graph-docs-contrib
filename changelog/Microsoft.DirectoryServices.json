@@ -8966,6 +8966,72 @@
     },
     {
       "ChangeList": [
+          {
+              "Id": "2803ca0f-2e02-4a42-9a4b-859ea3760c8f",
+              "ApiChange": "Resource",
+              "ChangedApiName": "federatedTokenValidationPolicy",
+              "ChangeType": "Addition",
+              "Description": "Added the [federatedTokenValidationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/federatedTokenValidationPolicy?view=graph-rest-beta) resource type and associated methods.",
+              "Target": "federatedTokenValidationPolicy"
+          },
+          {
+              "Id": "2803ca0f-2e02-4a42-9a4b-859ea3760c8f",
+              "ApiChange": "Property",
+              "ChangedApiName": "validatingDomains",
+              "ChangeType": "Addition",
+              "Description": "Added the `validatingDomains` property to the [federatedTokenValidationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/federatedTokenValidationPolicy?view=graph-rest-beta) resource.",
+              "Target": "federatedTokenValidationPolicy"
+          },
+          {
+              "Id": "2803ca0f-2e02-4a42-9a4b-859ea3760c8f",
+              "ApiChange": "Method",
+              "ChangedApiName": "LIST",
+              "ChangeType": "Addition",
+              "Description": "Added the [LIST](https://learn.microsoft.com/en-us/graph/api/policyroot-list-federatedtokenvalidationpolicy?view=graph-rest-beta) operation to the [federatedTokenValidationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/federatedTokenValidationPolicy?view=graph-rest-beta).",
+              "Target": "federatedTokenValidationPolicy"
+          },
+          {
+              "Id": "2803ca0f-2e02-4a42-9a4b-859ea3760c8f",
+              "ApiChange": "Method",
+              "ChangedApiName": "CREATE",
+              "ChangeType": "Addition",
+              "Description": "Added the [CREATE](https://learn.microsoft.com/en-us/graph/api/policyroot-post-federatedtokenvalidationpolicy?view=graph-rest-beta) operation to the [federatedTokenValidationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/federatedTokenValidationPolicy?view=graph-rest-beta).",
+              "Target": "federatedTokenValidationPolicy"
+          },
+          {
+              "Id": "2803ca0f-2e02-4a42-9a4b-859ea3760c8f",
+              "ApiChange": "Method",
+              "ChangedApiName": "GET",
+              "ChangeType": "Addition",
+              "Description": "Added the [GET](https://learn.microsoft.com/en-us/graph/api/federatedtokenvalidationpolicy-get?view=graph-rest-beta) operation to the [federatedTokenValidationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/federatedTokenValidationPolicy?view=graph-rest-beta).",
+              "Target": "federatedTokenValidationPolicy"
+          },
+          {
+              "Id": "2803ca0f-2e02-4a42-9a4b-859ea3760c8f",
+              "ApiChange": "Method",
+              "ChangedApiName": "UPDATE",
+              "ChangeType": "Addition",
+              "Description": "Added the [UPDATE](https://learn.microsoft.com/en-us/graph/api/federatedtokenvalidationpolicy-update?view=graph-rest-beta) operation to the [federatedTokenValidationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/federatedTokenValidationPolicy?view=graph-rest-beta).",
+              "Target": "federatedTokenValidationPolicy"
+          },
+          {
+              "Id": "2803ca0f-2e02-4a42-9a4b-859ea3760c8f",
+              "ApiChange": "Method",
+              "ChangedApiName": "DELETE",
+              "ChangeType": "Addition",
+              "Description": "Added the [DELETE](https://learn.microsoft.com/en-us/graph/api/policyroot-delete-federatedtokenvalidationpolicy?view=graph-rest-beta) operation to the [federatedTokenValidationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/federatedTokenValidationPolicy?view=graph-rest-beta).",
+              "Target": "federatedTokenValidationPolicy"
+          }
+      ],
+      "Id": "2803ca0f-2e02-4a42-9a4b-859ea3760c8f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-01-02T23:45:05.2808371Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
         {
           "Id": "6e001793-456f-405b-bd99-6d4e44339f72",
           "ApiChange": "Property",
