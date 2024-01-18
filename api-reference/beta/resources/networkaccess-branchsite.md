@@ -34,7 +34,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |bandwidthCapacity|Int64|Determines the maximum allowed Mbps (megabits per second) bandwidth from a branch site. The possible values are:`250`,`500`,`750`,`1000`.|
-|country|String|The branch site is created in the specified country. **DO NOT USE. To be deprecated soon."|
+|country|String|The branch site is created in the specified country. **DO NOT USE. To be deprecated soon.**|
 |connectivityState|microsoft.graph.networkaccess.connectivityState|Determines the branch site status. The possible values are: `pending`, `connected`, `inactive`, `error`.|
 |id|String|Identifier for the branch. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|last modified time.|
