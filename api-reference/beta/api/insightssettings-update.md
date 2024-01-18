@@ -28,11 +28,15 @@ The following tables show the least privileged permission or permissions require
 <!-- { "blockType": "permissions", "name": "insightssettings_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/insightssettings-update-permissions.md)]
 
-To update settings for item insights or people insights, one of the following permissions is required to call this API. To learn more, including how to choose permissions, see [permissions](/graph/permissions-reference).
+To update settings for **item insights**, one of the following permissions is required to call this API. To learn more, including how to choose permissions, see [permissions](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "insightssettings_update_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/peopleadminsettings-post-iteminsights-permissions.md)]
+
+To update settings for **people insights**, one of the following permissions is required to call this API. To learn more, including how to choose permissions, see [permissions](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "insightssettings_update_2" } -->
 [!INCLUDE [permissions-table](../includes/permissions/insightssettings-update-2-permissions.md)]
-
 
 >**Note:** Using delegated permissions for this operation to update insights for contacts, item, or people requires the signed-in user to have a Global Administrator role.
 
@@ -50,7 +54,7 @@ To update settings for item insights:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /organization/{organizationId}/settings/itemInsights
+PATCH /admin/people/itemInsights
 ```
 
 To update settings for people insights:
@@ -175,7 +179,7 @@ The following example shows how an admin updates the **disabledForGroup** privac
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/itemInsights
+PATCH https://graph.microsoft.com/beta/admin/people/itemInsights
 Content-type: application/json
 
 {

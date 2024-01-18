@@ -46,7 +46,7 @@ While existing apps could continue to use **officeGraphInsights**, these apps sh
 
 Item insights settings provide flexibility for administrators to use Microsoft Entra tools. Administrators can disable item insights for an entire organization, or for only members of a specified Microsoft Entra group. They can configure item insights in the Microsoft 365 admin center, or by using the PowerShell SDK or Microsoft Graph REST API with due permissions. Keep in mind that the _global administrator role_ is required.
 
-The next section describes using the admin center, and is followed by the section about PowerShell cmdlets. If you're using the REST API, skip the next two sections and continue with [Configure item insights settings using the REST API](#configure-item-insights-settings-using-the-rest-api). Then refer to the [read](/graph/api/organizationsettings-list-iteminsights?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/insightssettings-update?view=graph-rest-beta&preserve-view=true) REST operations for more information.
+The next section describes using the admin center, and is followed by the section about PowerShell cmdlets. If you're using the REST API, skip the next two sections and continue with [Configure item insights settings using the REST API](#configure-item-insights-settings-using-the-rest-api). Then refer to the [read](/graph/api/peopleadminsettings-list-iteminsights?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/insightssettings-update?view=graph-rest-beta&preserve-view=true) REST operations for more information.
 
 ### Configure item insights settings via Microsoft 365 admin center
 
@@ -99,7 +99,7 @@ Alternatively, you can change the default and disable item insights for a specif
 
 ### Configure item insights settings using the REST API
 
-As stated earlier, by default, item insights privacy settings are enabled for the entire organization. These settings are exposed through a navigation property named **itemInsights** in [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta&preserve-view=true). You can change the default in one of two ways:
+As stated earlier, by default, item insights privacy settings are enabled for the entire organization. These settings are exposed through a navigation property named **itemInsights** in [peopleAdminSettings](/graph/api/resources/peopleadminsettings?view=graph-rest-beta&preserve-view=true). You can change the default in one of two ways:
 
 - Disable item insights for all users in the organization, by setting the **isEnabledInOrganization** property of the [insightsSettings](/graph/api/resources/insightssettings?view=graph-rest-beta&preserve-view=true) resource to `false`. 
 - Disable item insights for a _subset_ of users, by assigning these users in a Microsoft Entra group, and setting the **disabledForGroup** property to the ID of that group. Find out more about [creating a group and adding users as members](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). 
