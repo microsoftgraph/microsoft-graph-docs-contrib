@@ -33,7 +33,7 @@ In [Microsoft Entra Entitlement Management](entitlementmanagement-overview.md), 
 |displayName|String|The display name of the resource, such as the application name, group name or site name.|
 |id|String| Read-only.|
 |isPendingOnboarding|Boolean|True if the resource is not yet available for assignment. Read-only. |
-|originId|String|The unique identifier of the resource in the origin system. In the case of a Microsoft Entra group, this is the identifier of the group. |
+|originId|String|The unique identifier of the resource in the origin system. In the case of a Microsoft Entra group, originId is the identifier of the group. |
 |originSystem|String|The type of the resource in the origin system, such as `SharePointOnline`, `AadApplication` or `AadGroup`.|
 |resourceType|String|The type of the resource, such as `Application` if it is a Microsoft Entra connected application, or `SharePoint Online Site` for a SharePoint Online site.|
 |url|String|A unique resource locator for the resource, such as the URL for signing a user into an application.|
@@ -42,13 +42,13 @@ In [Microsoft Entra Entitlement Management](entitlementmanagement-overview.md), 
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|accessPackageResourceEnvironment|[accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md)|Contains the environment information for the resource. This can be set using either the `@odata.bind` annotation or the environment's *originId*.Supports `$expand`.|
+|accessPackageResourceEnvironment|[accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md)|Contains the environment information for the resource. This environment can be set using either the `@odata.bind` annotation or the environment's *originId*.Supports `$expand`.|
 |accessPackageResourceRoles|[accessPackageResourceRole](accesspackageresourcerole.md) collection| Read-only. Nullable. Supports `$expand`.|
 |accessPackageResourceScopes|[accessPackageResourceScope](accesspackageresourcescope.md) collection| Read-only. Nullable. Supports `$expand`.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following is an example of the resource.
 
 <!-- {
   "blockType": "resource",
