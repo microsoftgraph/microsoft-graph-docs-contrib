@@ -1,7 +1,7 @@
 ---
 title: "runningOperation resource type"
 description: "Represents an export operation that is still running, which indicates that the files aren't ready yet."
-author: "abhishek-singh-ms"
+author: "sourishdeb"
 ms.localizationpriority: medium
 ms.prod: "reports"
 doc_type: resourcePageType

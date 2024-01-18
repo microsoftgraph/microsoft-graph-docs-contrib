@@ -1,7 +1,7 @@
 ---
 title: "blob resource type"
 description: "Represents a billing blob that contains exported data."
-author: "abhishek-singh-ms"
+author: "sourishdeb"
 ms.localizationpriority: medium
 ms.prod: "reports"
 doc_type: resourcePageType

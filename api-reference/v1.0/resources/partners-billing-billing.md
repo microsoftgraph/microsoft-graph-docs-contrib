@@ -1,7 +1,7 @@
 ---
 title: "billing resource type"
 description: "Represents billing details for billed and unbilled data."
-author: "abhishek-singh-ms"
+author: "sourishdeb"
 ms.localizationpriority: medium
 ms.prod: "reports"
 doc_type: resourcePageType

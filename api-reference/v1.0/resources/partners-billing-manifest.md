@@ -1,7 +1,7 @@
 ---
 title: "manifest resource type"
 description: "Represents metadata for the exported data."
-author: "abhishek-singh-ms"
+author: "sourishdeb"
 ms.localizationpriority: medium
 ms.prod: "reports"
 doc_type: resourcePageType

@@ -1,7 +1,7 @@
 ---
 title: "operation resource type"
 description: "Represents an operation to export the billing data of a partner."
-author: "abhishek-singh-ms"
+author: "sourishdeb"
 ms.localizationpriority: medium
 ms.prod: "reports"
 doc_type: resourcePageType
