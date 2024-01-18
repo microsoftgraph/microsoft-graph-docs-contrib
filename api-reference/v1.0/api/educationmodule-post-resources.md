@@ -207,15 +207,15 @@ The following example shows a request.
   "name": "create_educationfileresource_from_educationmodule"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/74b318fa-e882-4dad-8e1c-dab091b12fe7/resources
+POST https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/1babf0b0-c885-4f9d-b008-5b0de0cb835d/resources
 Content-type: application/json
 
 {
     "resource": {
         "@odata.type": "#microsoft.graph.educationFileResource",
-        "displayName": "test_pdf_file.pdf",
-        "file" :{
-          "odataid":"https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F2UVvTgEnTKi0GO59dbCL/items/01VANVJQZLJG2P74OLQ5FL5EXU3VY6BFSQ"
+        "displayName": "csv_file.csv",
+        "file": {
+            "odataid": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F2UVvTgEnTKi0GO59dbCL/items/01VANVJQ7A2QVVORGJNVBIC4LLM3XQ6UTS"
         }
     }
 }
@@ -236,19 +236,19 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/modules('74b318fa-e882-4dad-8e1c-dab091b12fe7')/resources/$entity",
-    "id": "fdf9d241-4737-4966-8914-90f832135ed7",
+    "@odata.context": "https://canary.graph.microsoft.com/testprodv1.0eduasg_local_classworkv1/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/modules('1babf0b0-c885-4f9d-b008-5b0de0cb835d')/resources/$entity",
+    "id": "a6f82f08-3819-435b-b5ac-e286dfe14f9f",
     "resource": {
         "@odata.type": "#microsoft.graph.educationFileResource",
-        "displayName": "test_pdf_file.pdf",
-        "createdDateTime": "2023-07-25T21:22:55.4340491Z",
-        "lastModifiedDateTime": "2023-07-25T21:22:55.4340527Z",
-        "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F2UVvTgEnTKi0GO59dbCL/items/01VANVJQZLJG2P74OLQ5FL5EXU3VY6BFSQ",
+        "displayName": "csv_file.csv",
+        "createdDateTime": "2024-01-18T18:02:05.3312223Z",
+        "lastModifiedDateTime": "2024-01-18T18:02:05.3312242Z",
+        "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F2UVvTgEnTKi0GO59dbCL/items/01VANVJQ7A2QVVORGJNVBIC4LLM3XQ6UTS",
         "createdBy": {
             "application": null,
             "device": null,
             "user": {
-                "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+                "id": "fadaae59-b18c-44d1-993f-fe8a281bd69c",
                 "displayName": null
             }
         },
@@ -256,7 +256,7 @@ Content-type: application/json
             "application": null,
             "device": null,
             "user": {
-                "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+                "id": "fadaae59-b18c-44d1-993f-fe8a281bd69c",
                 "displayName": null
             }
         }
@@ -468,14 +468,14 @@ The following example shows a request.
   "name": "create_educationChannelResource_from_educationmodule"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/modules/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/resources
+POST https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/fe180ab6-4070-40e7-9e9c-eda234fe126a/resources
 Content-type: application/json
 
 {
     "resource": {
-         "@odata.type": "#microsoft.graph.educationChannelResource",
-         "url": "https://graph.microsoft.com/v1.0/teams/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/channels/19:4gSkXJRlsCMnZvBzAcyXGdsGtcQV0AJWtfvQp_a6Fi81@thread.tacv2",
-         "displayName": "General"
+        "@odata.type": "#microsoft.graph.educationChannelResource",
+        "url": "https://graph.microsoft.com/v1.0/teams/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/channels/19:4gSkXJRlsCMnZvBzAcyXGdsGtcQV0AJWtfvQp_a6Fi81@thread.tacv2",
+        "displayName": "General"
     }
 }
 ```
@@ -495,19 +495,19 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/modules('74b318fa-e882-4dad-8e1c-dab091b12fe7')/resources/$entity",
-    "id": "360e073a-89ef-4f2f-835f-3b060a96f62d",
+    "@odata.context": "https://canary.graph.microsoft.com/testprodv1.0eduasg_local_classworkv1/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/modules('fe180ab6-4070-40e7-9e9c-eda234fe126a')/resources/$entity",
+    "id": "00fb5e7d-6d2e-4d7d-9deb-cd9d8be4af41",
     "resource": {
         "@odata.type": "#microsoft.graph.educationChannelResource",
         "displayName": "General",
-        "createdDateTime": "2023-07-25T21:23:01.6740431Z",
-        "lastModifiedDateTime": "2023-07-25T21:23:01.6740457Z",
+        "createdDateTime": "2024-01-18T17:52:10.3067568Z",
+        "lastModifiedDateTime": "2024-01-18T17:52:10.3067579Z",
         "url": "https://graph.microsoft.com/v1.0/teams/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/channels/19:4gSkXJRlsCMnZvBzAcyXGdsGtcQV0AJWtfvQp_a6Fi81@thread.tacv2",
         "createdBy": {
             "application": null,
             "device": null,
             "user": {
-                "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+                "id": "fadaae59-b18c-44d1-993f-fe8a281bd69c",
                 "displayName": null
             }
         },
@@ -515,7 +515,7 @@ Content-type: application/json
             "application": null,
             "device": null,
             "user": {
-                "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+                "id": "fadaae59-b18c-44d1-993f-fe8a281bd69c",
                 "displayName": null
             }
         }
@@ -532,15 +532,15 @@ The following example shows a request.
   "name": "create_educationLinkedAssignmentResource_from_educationmodule"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/74b318fa-e882-4dad-8e1c-dab091b12fe7/resources
+POST https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/modules/1babf0b0-c885-4f9d-b008-5b0de0cb835d/resources
 Content-type: application/json
 
 {
     "resource": {
-         "@odata.type": "#microsoft.graph.educationLinkedAssignmentResource",
-         "displayName":"Existing_Assignment",
-         "url": "https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/b563da70-710e-4a9b-ba86-94a4d73e5d21"
-     }
+        "@odata.type": "#microsoft.graph.educationLinkedAssignmentResource",
+        "displayName": "2024-01-19T17_54_38_711Z",
+        "url": "https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/b6a1d277-fed7-4345-940e-3f2ce13eb737"
+    }
 }
 ```
 
@@ -559,19 +559,19 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/modules('74b318fa-e882-4dad-8e1c-dab091b12fe7')/resources/$entity",
-    "id": "bfbf27cb-2316-47f0-81d4-7bb028f01964",
+    "@odata.context": "https://canary.graph.microsoft.com/testprodv1.0eduasg_local_classworkv1/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/modules('1babf0b0-c885-4f9d-b008-5b0de0cb835d')/resources/$entity",
+    "id": "de9018cb-6445-40bf-a425-3f150e059dd6",
     "resource": {
         "@odata.type": "#microsoft.graph.educationLinkedAssignmentResource",
-        "displayName": "Existing_Assignment",
-        "createdDateTime": "2023-07-25T21:22:49.2808156Z",
-        "lastModifiedDateTime": "2023-07-25T21:22:49.2808174Z",
-        "url": "https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/b563da70-710e-4a9b-ba86-94a4d73e5d21/",
+        "displayName": "2024-01-19T17_54_38_711Z",
+        "createdDateTime": "2024-01-18T17:56:19.8568259Z",
+        "lastModifiedDateTime": "2024-01-18T17:56:19.856827Z",
+        "url": "https://canary.graph.microsoft.com/testprodv1.0eduasg_local_classworkv1/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/b6a1d277-fed7-4345-940e-3f2ce13eb737/",
         "createdBy": {
             "application": null,
             "device": null,
             "user": {
-                "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+                "id": "fadaae59-b18c-44d1-993f-fe8a281bd69c",
                 "displayName": null
             }
         },
@@ -579,7 +579,7 @@ Content-type: application/json
             "application": null,
             "device": null,
             "user": {
-                "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+                "id": "fadaae59-b18c-44d1-993f-fe8a281bd69c",
                 "displayName": null
             }
         }
