@@ -52,8 +52,6 @@ The following table lists the properties that are required when you create the [
 |:---|:---|:---|
 |displayName|String|The display name of this image.|
 |sourceImageResourceId|String|The ID of the source image resource on Azure. The required ID format is: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
-|operatingSystem|String|The operating system of this image. For example, `Windows 10 Enterprise`.|
-|osBuildNumber|String|The OS build version of this image. For example, `1909`.|
 |version|String|The image version. For example, `0.0.1` and `1.5.13`.|
 
 ## Response
