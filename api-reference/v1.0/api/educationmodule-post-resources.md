@@ -68,8 +68,8 @@ In the request body, supply a JSON representation of one of the following resour
 If successful, this method returns a `201 Created` response code and an [educationModuleResource](../resources/educationmoduleresource.md) object in the response body.
 
 ## Examples
-### Example 1: Create an educationLinkResource
-#### Request
+## Example 1: Create an educationLinkResource
+### Request
 The following example shows a request.
 
 <!-- {
@@ -89,7 +89,7 @@ Content-type: application/json
 }
 ```
 
-#### Response
+### Response
 The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -132,8 +132,8 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Create an educationWordResource
-#### Request
+## Example 2: Create an educationWordResource
+### Request
 The following example shows a request.
 
 <!-- {
@@ -155,7 +155,7 @@ Content-type: application/json
 }
 ```
 
-#### Response
+### Response
 The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -198,8 +198,8 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Create an educationFileResource
-#### Request
+## Example 3: Create an educationFileResource
+### Request
 The following example shows a request.
 
 <!-- {
@@ -221,7 +221,7 @@ Content-type: application/json
 }
 ```
 
-#### Response
+### Response
 The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -264,8 +264,8 @@ Content-type: application/json
 }
 ```
 
-### Example 4: Create an educationExcelResource
-#### Request
+## Example 4: Create an educationExcelResource
+### Request
 The following example shows a request.
 
 <!-- {
@@ -287,7 +287,7 @@ Content-type: application/json
 }
 ```
 
-#### Response
+### Response
 The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -330,11 +330,10 @@ Content-type: application/json
 }
 ```
 
-### Example 5: Create an educationPowerPointResource
-#### Request
+## Example 5: Create an educationPowerPointResource
+### Request
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_educationpowerpointresource_from_educationmodule"
@@ -352,7 +351,7 @@ Content-type: application/json
 }
 ```
 
-#### Response
+### Response
 The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -396,11 +395,10 @@ Content-type: application/json
 }
 ```
 
-### Example 6: Create an educationMediaResource
-#### Request
+## Example 6: Create an educationMediaResource
+### Request
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_educationmediaresource_from_educationmodule"
@@ -418,7 +416,7 @@ Content-type: application/json
 }
 ```
 
-#### Response
+### Response
 The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -461,11 +459,10 @@ Content-type: application/json
 }
 ```
 
-### Example 7: Create an educationChannelResource
-#### Request
+## Example 7: Create an educationChannelResource
+### Request
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_educationChannelResource_from_educationmodule"
@@ -483,41 +480,7 @@ Content-type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-educationchannelresource-from-educationmodule-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-educationchannelresource-from-educationmodule-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-educationchannelresource-from-educationmodule-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-educationchannelresource-from-educationmodule-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-educationchannelresource-from-educationmodule-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-educationchannelresource-from-educationmodule-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-educationchannelresource-from-educationmodule-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/create-educationchannelresource-from-educationmodule-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-#### Response
+### Response
 The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -560,11 +523,10 @@ Content-type: application/json
 }
 ```
 
-### Example 8: Create an educationLinkedAssignmentResource
-#### Request
+## Example 8: Create an educationLinkedAssignmentResource
+### Request
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_educationLinkedAssignmentResource_from_educationmodule"
@@ -582,41 +544,7 @@ Content-type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-educationlinkedassignmentresource-from-educationmodule-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-educationlinkedassignmentresource-from-educationmodule-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-educationlinkedassignmentresource-from-educationmodule-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-educationlinkedassignmentresource-from-educationmodule-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-educationlinkedassignmentresource-from-educationmodule-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-educationlinkedassignmentresource-from-educationmodule-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-educationlinkedassignmentresource-from-educationmodule-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/create-educationlinkedassignmentresource-from-educationmodule-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-#### Response
+### Response
 The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
