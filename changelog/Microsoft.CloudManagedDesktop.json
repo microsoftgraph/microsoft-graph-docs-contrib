@@ -44,6 +44,14 @@
               },
               {
                 "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
+                "ApiChange": "Method",
+                "ChangedApiName": "getSourceImages",
+                "ChangeType": "Addition",
+                "Description": "Added the getSourceImages method to the cloudPcDeviceImage resource.",
+                "Target": "cloudPcDeviceImage"
+              },
+              {
+                "Id": "1e84472c-a7da-44e2-9239-bf663ba70150",
                 "ApiChange": "Resource",
                 "ChangedApiName": "cloudPcGalleryImage",
                 "ChangeType": "Addition",

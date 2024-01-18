@@ -1721,7 +1721,7 @@ items:
                     href: api/cloudpcdeviceimage-get.md
                   - name: List
                     href: api/virtualendpoint-list-deviceimages.md
-                  - name: Post
+                  - name: Create
                     href: api/virtualendpoint-post-deviceimages.md
                   - name: Delete
                     href: api/cloudpcdeviceimage-delete.md

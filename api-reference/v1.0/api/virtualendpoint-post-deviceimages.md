@@ -1,7 +1,7 @@
 ---
 title: "Create cloudPcDeviceImage"
 description: "Upload a custom OS image that you can later provision on Cloud PCs."
-author: "AshleyYangSZ"
+author: "ChyouChyou"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
@@ -14,13 +14,6 @@ Namespace: microsoft.graph
 Create a new [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object. Upload a custom OS image that you can later provision on Cloud PCs.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
-
-## Permissions
-
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
-
-<!-- { "blockType": "permissions", "name": "virtualendpoint_post_deviceimages" } -->
-[!INCLUDE [permissions-table](../includes/permissions/virtualendpoint-post-deviceimages-permissions.md)]
 
 ## HTTP request
 

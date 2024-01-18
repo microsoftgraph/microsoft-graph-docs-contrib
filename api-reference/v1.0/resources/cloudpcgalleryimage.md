@@ -1,7 +1,7 @@
 ---
 title: "cloudPcGalleryImage resource type"
 description: "Represents the gallery image resource of the current organization that can be used to provision a Cloud PC."
-author: "AshleyYangSZ"
+author: "ChyouChyou"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: resourcePageType
@@ -17,8 +17,8 @@ Represents the gallery image resource of the current organization that can be us
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List galleryImages](../api/virtualendpoint-list-deviceimages.md)|[cloudPcDeviceImage](../resources/cloudpcgalleryimage.md) collection|List the properties and relationships of [cloudPcDeviceImage](../resources/cloudpcgalleryimage.md) objects.|
-|[Get cloudPcGalleryImage](../api/cloudpcgalleryimage-get.md)|[cloudPcDeviceImage](../resources/cloudpcgalleryimage.md)|Read the properties and relationships of a [cloudPcDeviceImage](../resources/cloudpcgalleryimage.md) object.|
+|[List galleryImages](../api/virtualendpoint-list-galleryimages.md)|[cloudPcGalleryImage](../resources/cloudpcgalleryimage.md) collection|List the properties and relationships of [cloudPcGalleryImage](../resources/cloudpcgalleryimage.md) objects.|
+|[Get cloudPcGalleryImage](../api/cloudpcgalleryimage-get.md)|[cloudPcGalleryImage](../resources/cloudpcgalleryimage.md)|Read the properties and relationships of a [cloudPcGalleryImage](../resources/cloudpcgalleryimage.md) object.|
 
 ## Properties
 
@@ -34,15 +34,14 @@ Represents the gallery image resource of the current organization that can be us
 |skuName|String|The SKU name of this image that is passed to ARM to retrieve the image resource. Read-only.|
 |startDate|Date| The date when the Cloud PC image is available for provisioning new Cloud PCs. For example, `2022-09-20`. Read-only.|
 |status|cloudPcGalleryImageStatus|The status of the gallery image on the Cloud PC. Possible values are: `supported`, `supportedWithWarning`, `notSupported`, `unknownFutureValue`. The default value is `supported`. Read-only.|
-|offer (deprecated)|String|The offer name of this gallery image that is passed to ARM to retrieve the image resource. Read-only. The **offer** property is deprecated and will stop returning data on January 31, 2024. Going forward, use the **offerName** property.|
 
 ### cloudPcGalleryImageStatus values
 
 |Member|Description|
 |:---|:---|
-|supported|The gallery image is active and ready to be used for provisioning.|
-|supportedWithWarning|The gallery image has expired, but the Cloud PC will continue support for six months, after which it will be unsupported and can't be used.|
-|notSupported|The gallery image is out of support. |
+|supported|Indicates that the gallery image is active and ready to be used for provisioning.|
+|supportedWithWarning|Indicates that the gallery image has expired, but the Cloud PC will continue support for six months, after which it will be unsupported and can't be used.|
+|notSupported|Indicates that the gallery image is out of support. |
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
@@ -63,7 +62,7 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.cloudPcDeviceImage",
+  "@odata.type": "#microsoft.graph.cloudPcGalleryImage",
   "displayName": "String",
   "endDate": "String (Date)",
   "expiredDate": "String (Date)",

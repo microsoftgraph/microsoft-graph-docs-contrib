@@ -1,7 +1,7 @@
 ---
 title: "cloudPcDeviceImage resource type"
 description: "Represents the image resource on Cloud PC."
-author: "AshleyYangSZ"
+author: "ChyouChyou"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: resourcePageType
@@ -43,22 +43,22 @@ Represents the image resource on a Cloud PC.
 
 |Member|Description|
 |:---|:---|
-|internalServerError|An internal server error occurred during the processing of the image.|
-|sourceImageNotFound|The source image is inaccessible or not found.|
-|osVersionNotSupported|The OS version isn't supported.|
-|sourceImageInvalid|The source image is invalid for provisioning a Windows virtual machine (VM).|
-|sourceImageNotGeneralized|The uploaded image hasn’t been generalized. Reupload the image after running the sysprep/generalize command. To learn more, see [Remove machine specific information by deprovisioning or generalizing a VM before creating an image](/azure/virtual-machines/generalize).|
+|internalServerError|Indicates that an internal server error occurred during the processing of the image.|
+|sourceImageNotFound|Indicates that the source image is inaccessible or not found.|
+|osVersionNotSupported|Indicates that the OS version isn't supported.|
+|sourceImageInvalid|Indicates that the source image is invalid for provisioning a Windows virtual machine (VM).|
+|sourceImageNotGeneralized|Indicates that the uploaded image hasn’t been generalized. Reupload the image after running the sysprep/generalize command. To learn more, see [Remove machine specific information by deprovisioning or generalizing a VM before creating an image](/azure/virtual-machines/generalize).|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
-|vmAlreadyAzureAdJoined|The VM that generates a source image for creating a device image has already been joined to Microsoft Entra. This prevents the validation process from allowing the creation of a device image using such a source image.|
-|paidSourceImageNotSupport|This source image is built from another paid image from the Azure Marketplace and isn't supported; use another source to proceed.|
-|sourceImageNotSupportCustomizeVMName|A computer name setting issue exists on the resultant generalized image, which prevents the customization of the VM name with the provided image.|
-|sourceImageSizeExceedsLimitation|The size of the customer-uploaded source image exceeds the shared image gallery (SIG) limitations, which results in image creation failure.|
+|vmAlreadyAzureAdJoined|Indicates that the VM that generates a source image for creating a device image has already been joined to Microsoft Entra. This prevents the validation process from allowing the creation of a device image using such a source image.|
+|paidSourceImageNotSupport|Indicates that this source image is built from another paid image from the Azure Marketplace and isn't supported; use another source to proceed.|
+|sourceImageNotSupportCustomizeVMName|Indicates that a computer name setting issue exists on the resultant generalized image, which prevents the customization of the VM name with the provided image.|
+|sourceImageSizeExceedsLimitation|Indicates that the size of the customer-uploaded source image exceeds the shared image gallery (SIG) limitations, which results in image creation failure.|
 
 ### cloudPcDeviceImageOsStatus values
 
 |Member|Description|
 |:---|:---|
-|supported|Indicates the Cloud PC device image operating system is active and ready to be used for provisioning.|
+|supported|Indicates that the Cloud PC device image operating system is active and ready to be used for provisioning.|
 |supportedWithWarning|Indicates that the Cloud PC device image operating system is expired, but Cloud PC continues support. If users continue to use, they may not be able to get security updates.|
 |unknown|Default. Indicates that the status of the operating system image for the Cloud PC device is unknown.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
@@ -67,9 +67,9 @@ Represents the image resource on a Cloud PC.
 
 |Member|Description|
 |:---|:---|
-|pending|The image upload is in progress.|
-|ready|The image is ready for use on Cloud PCs.|
-|failed|The image couldn’t be uploaded. |
+|pending|Indicates that the image upload is in progress.|
+|ready|Indicates that the image is ready for use on Cloud PCs.|
+|failed|Indicates that the image couldn’t be uploaded. |
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
