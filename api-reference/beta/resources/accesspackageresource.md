@@ -48,7 +48,7 @@ In [Microsoft Entra Entitlement Management](entitlementmanagement-overview.md), 
 
 ## JSON representation
 
-The following is an example of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
