@@ -45,6 +45,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |Relationship|Type|Description|
 |:---|:---|:---|
 |connectivityConfiguration|[microsoft.graph.networkaccess.branchConnectivityConfiguration](../resources/networkaccess-branchconnectivityconfiguration.md) collection|Specifies the connectivity details of all device links associated with a branch.|
+|country|String|The branch site is created in the specified country. **DO NOT USE. To be deprecated soon."|
 |deviceLinks|[microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md) collection|Each unique CPE device associated with a branch is specified. Supports `$expand`.|
 |forwardingProfiles|[microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) collection|Each forwarding profile associated with a branch site is specified. Supports `$expand`.|
 
