@@ -477,7 +477,7 @@ The following example shows a request.
 
 >**Note:** 
 > * The file must already be in SharePoint. To find the file properties, GET the **driveItem** for the file. For example, /drives/{id}/items/{id}. Your attachment ID is the GUID in the **eTag** of the **driveItem**, your attachment **contentURL** is the **webUrl** of the **driveItem**'s folder plus the **driveItem**'s name, and your attachment name is the **driveItem**'s name.
-> * The Graph API supports the `OpenUrl` card action whereas other card actions require bots.
+> * Graph API supports the `OpenUrl` card action while bots are required for other card actions.
 
 
 # [HTTP](#tab/http)
