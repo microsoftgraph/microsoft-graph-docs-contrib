@@ -8,14 +8,13 @@ doc_type: apiPageType
 ---
 
 # List bookmarks
-Namespace: microsoft.graph.search
 
+Namespace: microsoft.graph.search
 
 Get a list of [bookmark](../resources/search-bookmark.md) objects and their properties.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -35,14 +34,17 @@ GET /search/bookmarks
 ```
 
 ## Optional query parameters
+
 This method supports the `select`, `expand`, `filter`, `orderBy`, `maxTop`, and `count` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Don't supply a request body for this method.
 
 ## Response
@@ -52,6 +54,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
+
+The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "list_bookmark"
@@ -61,8 +66,10 @@ If successful, this method returns a `200 OK` response code and a collection of 
 GET https://graph.microsoft.com/v1.0/search/bookmarks
 ```
 
-
 ### Response
+
+The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -106,4 +113,3 @@ Content-Type: application/json
   }
 ]
 ```
-
