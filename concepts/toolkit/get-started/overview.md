@@ -29,7 +29,63 @@ To develop with the toolkit, you need:
 
 ## Use Microsoft Graph Toolkit
 
-You can use Microsoft Graph Toolkit in your application by referencing the loader directly (via `unpkg`) or by installing the `npm` package.
+You can use Microsoft Graph Toolkit in your application by installing the `npm` packages or referencing the loader directly (via `unpkg`).
+
+# [package](#tab/package)
+
+Using the toolkit via ES6 modules gives you full control of the bundling process and allows you to bundle only the code that you need for your application. To use the ES6 modules, add the package to your project:
+
+```cmd
+npm install @microsoft/mgt
+```
+
+To use the components as a custom element in HTML they must be registered, importing and executing the necessary component registration function will set allow you to use them in your code. Here's how you do that for the agenda and login components:
+
+```html
+<script type="module">
+  import { registerMgtMsal2Provider } from 'node_modules/@microsoft/mgt-msal2-provider/dist/es6/index.js';
+  import { registerMgtLoginComponent, registerMgtAgendaComponent } from 'node_modules/@microsoft/mgt-components/dist/es6/index.js';
+  registerMgtMsal2Provider();
+  registerMgtLoginComponent();
+  registerMgtAgendaComponent();
+</script>
+
+<mgt-msal2-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal2-provider>
+<mgt-login></mgt-login>
+<mgt-agenda></mgt-agenda>
+```
+
+As a shortcut if you wish to register all the components from `@microsoft/mgt-components` you can use the `registerMgtComponents()` helper method. Declarative usage of providers still requires the appropriate provider is separately registered as they are sourced from different packages. 
+
+```html
+<script type="module">
+  import { registerMgtMsal2Provider } from 'node_modules/@microsoft/mgt-msal2-provider/dist/es6/index.js';
+  import { registerMgtComponents } from 'node_modules/@microsoft/mgt-components/dist/es6/index.js';
+  registerMgtMsal2Provider();
+  registerMgtComponents();
+</script>
+
+<mgt-msal2-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal2-provider>
+<mgt-login></mgt-login>
+<mgt-agenda></mgt-agenda>
+```
+
+> [!IMPORTANT]
+> When working with a tree-shaking supporting bundler such as Webpack or Rollup, you will want to import and register the individual components. This will ensure that any unused components are tree-shaken out of your builds.
+
+You may also configure the provider imperatively:
+
+```html
+<script type="module">
+  import { Providers } from 'node_modules/@microsoft/mgt-element/dist/es6/index.js';
+  import { Msal2Provider } from 'node_modules/@microsoft/mgt-msal2-provider/dist/es6/index.js';
+  import { registerMgtComponents } from 'node_modules/@microsoft/mgt-components/dist/es6/index.js';
+  Providers.globalProvider = new Msal2Provider({clientId: '<YOUR_CLIENT_ID>'});
+  registerMgtComponents();
+</script>
+<mgt-login></mgt-login>
+<mgt-agenda></mgt-agenda>
+```
 
 # [unpkg](#tab/html)
 
@@ -40,26 +96,6 @@ To use the toolkit via `mgt-loader`, add the reference in a script to your code:
 
 <mgt-msal2-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal2-provider>
 <mgt-login></mgt-login>
-```
-
-# [package](#tab/package)
-
-Using the toolkit via ES6 modules gives you full control of the bundling process and allows you to bundle only the code that you need for your application. To use the ES6 modules, add the package to your project:
-
-```cmd
-npm install @microsoft/mgt
-```
-
-Now you can reference all the components on the page that you're using:
-
-```html
-<script
-  type="module"
-  src="node_modules/@microsoft/mgt/dist/es6/index.js"
-></script>
-
-<mgt-login></mgt-login>
-<mgt-agenda></mgt-agenda>
 ```
 
 ---
@@ -94,7 +130,7 @@ Providers are available via a single package and can be installed as needed. The
 
 <b>@microsoft/mgt</b>
 
-The `@microsoft/mgt` package is the main package that includes all the preceding packages and re-exports them so they're available via a single package that you can install.
+The `@microsoft/mgt` package is a wrapper package that includes all the preceding packages and re-exports them so they're available via a single package that you can install. This package also includes the `mgt-loader.js` script which will load and register all the components into a web page.
 
 <b>@microsoft/mgt-react</b>
 
