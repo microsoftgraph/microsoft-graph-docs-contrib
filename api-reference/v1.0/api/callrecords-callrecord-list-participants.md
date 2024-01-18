@@ -1,5 +1,5 @@
 ---
-title: "List participants"
+title: "List callRecord participants"
 description: "Get the list of participants associated with a callRecord."
 ms.localizationpriority: medium
 author: "mcm223"
@@ -7,7 +7,7 @@ ms.prod: "cloud-communications"
 doc_type: "apiPageType"
 ---
 
-# List participants
+# List callRecord participants
 
 Namespace: microsoft.graph.callRecords
 

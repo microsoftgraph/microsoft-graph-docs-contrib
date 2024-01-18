@@ -18,8 +18,6 @@ There are two ways to get the **id** of a **callRecord**:
 * Subscribe to [change notifications](/graph/api/resources/webhooks?view=graph-rest-1.0&preserve-view=true) to the `/communications/callRecords` endpoint.
 * Use the **callChainId** property of a [call](../resources/call.md). The call record is available only after the associated call is completed.
 
-You can use the `$expand` query parameter to optionally include session and segment details, as shown in the [Get full details](#example-2-get-full-details) example. When you expand session details, the maximum page size is 60 sessions.
-
 > [!WARNING]
 >
 > A call record is created after a call or meeting ends and remains available for **30 days**. Requests for call records older than 30 days will receive a `404 Not Found` response.
@@ -130,7 +128,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get full details
+### Example 2: Get session and segment details
 
 The following example shows how to get the full session and segment details from a [callRecord](../resources/callrecords-callrecord.md).
 
