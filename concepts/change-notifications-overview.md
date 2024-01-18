@@ -84,9 +84,7 @@ The following code samples are available on GitHub.
     - [Change notifications for Outlook resources](./outlook-change-notifications-overview.md)
     - [Change notifications for Microsoft Teams resources](./teams-change-notification-in-microsoft-teams-overview.md)
 
-## See also
-
-- [Training: Use change notifications and track changes with Microsoft Graph](/training/modules/msgraph-changenotifications-trackchanges)
+<!-- ## See also -->
 
 [contact]: /graph/api/resources/contact
 [conversation]: /graph/api/resources/conversation
