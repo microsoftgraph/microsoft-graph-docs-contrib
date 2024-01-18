@@ -348,6 +348,32 @@
     },
     {
       "ChangeList": [
+      {
+        "Id": "dba9ed86-78b9-4f17-9e83-879aa5269959",
+        "ApiChange": "Method",
+        "ChangedApiName": "LIST",
+        "ChangeType": "Addition",
+        "Description": "Added the **LIST** method to the [accessPackageAssignmentRequest]https://learn.microsoft.com/en-us/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) resource.",
+        "Target": "accessPackageSubject"
+      },
+{
+        "Id": "dba9ed86-78b9-4f17-9e83-879aa5269959",
+        "ApiChange": "method",
+        "ChangedApiName": "POST",
+        "ChangeType": "Addition",
+        "Description": "Added the **POST** method to the [accessPackageAssignmentRequest](https://learn.microsoft.com/en-us/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) resource.",
+        "Target": "accessPackageSubject"
+      }
+      ],
+      "Id": "dba9ed86-78b9-4f17-9e83-879aa5269959",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-01-17T19:42:28.7370581Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
         {
           "Id": "d54d764d-2587-46f9-9fd5-1cc4df27be97",
           "ApiChange": "Method",
