@@ -305,6 +305,8 @@ items:
             href: /graph/toolkit/customize-components/templates?context=graph/api/beta
           - name: Disambiguation of components
             href: /graph/toolkit/customize-components/disambiguation?context=graph/api/beta
+      - name: Permissions
+        href: /graph/toolkit/permissions.md?context=graph/api/beta
       - name: Upgrading to v3
         href: /graph/toolkit/upgrade?context=graph/api/beta
   - name: Microsoft Graph activity logs (preview)
