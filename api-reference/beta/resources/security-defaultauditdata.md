@@ -16,7 +16,7 @@ Namespace: microsoft.graph.security
 Represents a JSON object containing the actual audit log data.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [auditData](../resources/security-auditdata.md).
 
 ## Properties
 None.
