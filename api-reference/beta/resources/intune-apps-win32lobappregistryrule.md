@@ -27,7 +27,7 @@ Inherits from [win32LobAppRule](../resources/intune-apps-win32lobapprule.md)
 |check32BitOn64System|Boolean|A value indicating whether to search the 32-bit registry on 64-bit systems.|
 |keyPath|String|The full path of the registry entry containing the value to detect.|
 |valueName|String|The name of the registry value to detect.|
-|operationType|[win32LobAppRegistryRuleOperationType](../resources/intune-apps-win32lobappregistryruleoperationtype.md)|The registry operation type. Possible values are: `notConfigured`, `exists`, `doesNotExist`, `string`, `integer`, `version`.|
+|operationType|[win32LobAppRegistryRuleOperationType](../resources/intune-apps-win32lobappregistryruleoperationtype.md)|The registry operation type. Possible values are: `notConfigured`, `exists`, `doesNotExist`, `string`, `integer`, `version`, `appVersion`, `unknownFutureValue`.|
 |operator|[win32LobAppRuleOperator](../resources/intune-apps-win32lobappruleoperator.md)|The operator for registry detection. Possible values are: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
 |comparisonValue|String|The registry comparison value.|
 

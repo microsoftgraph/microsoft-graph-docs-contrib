@@ -17,8 +17,6 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md) objects.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -62,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 593
+Content-Length: 626
 
 {
   "value": [
@@ -77,6 +75,7 @@ Content-Length: 593
       "format": "pdf",
       "snapshotId": "Snapshot Id value",
       "localizationType": "replaceLocalizableValues",
+      "search": "Search value",
       "status": "notStarted",
       "url": "Url value",
       "requestDateTime": "2017-01-01T00:03:07.1589002-08:00",

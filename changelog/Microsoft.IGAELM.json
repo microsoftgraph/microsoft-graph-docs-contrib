@@ -2,6 +2,24 @@
   "changelog": [
       {
         "ChangeList": [
+          {
+            "Id": "43e8b399-4f23-42a9-9e6d-b1c809f035de",
+            "ApiChange": "Property",
+            "ChangedApiName": "attributes",
+            "ChangeType": "Addition",
+            "Description": "Added the **attributes** property to the [accessPackageResource](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageResource?view=graph-rest-1.0) resource.",
+            "Target": "accessPackageResource"
+          }
+         ],
+         "Id": "43e8b399-4f23-42a9-9e6d-b1c809f035de",
+         "Cloud": "Prod",
+         "Version": "v1.0",
+         "CreatedDateTime": "2024-01-17T22:22:46.6246683Z",
+         "WorkloadArea": "Identity and access",
+         "SubArea": "Governance"
+      },
+      {
+        "ChangeList": [
         {
           "Id": "800896d9-7cab-47e8-a9af-7d9e23addbeb",
           "ApiChange": "Resource",
@@ -1141,6 +1159,24 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-07-18T00:00:00.2731454Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b8581264-8a60-40c9-93a9-717cf70f2922",
+          "ApiChange": "Method",
+          "ChangedApiName": "refresh",
+          "ChangeType": "Addition",
+          "Description": "Added the [refresh](https://learn.microsoft.com/en-us/graph/api/accesspackageresource-refresh?view=graph-rest-beta) method to the [accessPackageResource](https://learn.microsoft.com/en-us/graph/api/resources/accesspackageresource?view=graph-rest-beta) resource.",
+          "Target": "accessPackageResource"
+        }
+      ],
+      "Id": "b8581264-8a60-40c9-93a9-717cf70f2922",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-01-18T00:00:00.115598Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     }
